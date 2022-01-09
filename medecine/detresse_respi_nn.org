@@ -1,0 +1,45 @@
+#+options: toc:nil author:nil date:nil
+#+latex_header: \usepackage{tabularx}
+#+latex_header: \usepackage{booktabs}
+#+latex_header: \usepackage{enumitem}
+#+latex_header: \usepackage[margin=1cm]{geometry}
+#+latex_header_extra: \usepackage{adjustbox}
+
+#+begin_table
+#+LATEX: \centering
+#+LATEX: \adjustbox{max width=0.8\linewidth}{
+#+ATTR_LATEX: :center nil
+|                 | Retard de résorption    | Inhalation            | Infection              | Maladie des                 |
+|                 | du liquide              | méconiale             | néonatale              | membranes hyalines          |
+|                 | pulmonaire              |                       |                        | (MMH)                       |
+|-----------------+-------------------------+-----------------------+------------------------+-----------------------------|
+| Contexte        | Césarienne (surtout     | Nouveau-né à terme    | Facteurs de risque     | Prématurité (< 32 SA)       |
+|                 | avant travail)          | ou post-terme         | d'INBP                 | Absence de                  |
+|                 |                         | Liquide amniotique    |                        | corticothérapie             |
+|                 |                         | méconial              |                        | anténatale                  |
+|                 |                         | Asphyxie périnatale   |                        | Parfois diabète             |
+|                 |                         |                       |                        | maternel                    |
+|-----------------+-------------------------+-----------------------+------------------------+-----------------------------|
+| Clinique        | Détresse respiratoire   | Détresse respiratoire | Non spécifique         | Détresse respiratoire       |
+|                 | immédiate s'améliorant  | immédiate,            |                        | apparue très                |
+|                 | progressivement en      | d'évolution           |                        | rapidement après            |
+|                 | quelques heures         | potentiellement grave |                        | la naissance et             |
+|                 | Polypnée prédominante   |                       |                        | d'aggravation               |
+|                 |                         |                       |                        | progressive                 |
+|-----------------+-------------------------+-----------------------+------------------------+-----------------------------|
+| Radio du thorax | Syndrome interstitiel   | Opacités alvéolaires  | ± Opacités alvéolaires | Syndrome alvéolaire         |
+|                 | modéré                  | grossières,           | irrégulières           | bilatéral                   |
+|                 | Scissurite              | asymétriques          |                        |                             |
+|                 | Épanchement             | Troubles de           |                        |                             |
+|                 | interlobaire            | ventilation           |                        |                             |
+|-----------------+-------------------------+-----------------------+------------------------+-----------------------------|
+| Gaz du sang     | Normaux                 | Hypoxie, hypercapnie  | Variables              | Hypoxie, hypercapnie        |
+|-----------------+-------------------------+-----------------------+------------------------+-----------------------------|
+| Traitement      | PEP par canules nasales | Ventilation mécanique | Antibiothérapie        | Surfactant exogène          |
+|                 | Rarement ventilation    | avec PEP              | Soutien ventilatoire   | Ventilation mécanique       |
+|                 | mécanique avec PEP      |                       | adapté                 | avec PEP                    |
+|-----------------+-------------------------+-----------------------+------------------------+-----------------------------|
+| Pronostic       | Excellent               | Celui de l'asphyxie   | Celui de l'infection   | Celui de la prématurité     |
+|                 |                         | périnatale            |                        | Dysplasie bronchopulmonaire |
+#+LATEX: }
+#+end_table

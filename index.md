@@ -1,0 +1,6 @@
+-   [Mail in the command line (updated)](posts/mail.org)
+-   [Life in Emacs](posts/emacs.org)
+-   [Streaming media in FreeBSD](posts/stream-media.org)
+-   [Command-line tips (updated)](posts/command-line-tips.org)
+-   [Introduction to git](posts/git.org)
+-   [Messaging with irssi](posts/irssi.org)

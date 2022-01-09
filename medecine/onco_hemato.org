@@ -1,0 +1,39 @@
+#+title: Onco-hémato
+
+* Anomalies biologiques
+On représente la même information sous 2 approches différentes
+** Par maladie
+*** Cytopénies
+*Syndrome myélodysplasique*
+anomalie des précurseurs => défaut de production de globules rouges +/- plaquettes et neutrophile
+*** Prolifération
+*Myéloprolifératif* : attention, on a souvent les leucocytes et les plaquettes qui augmentent ensemble...
+- Vaquez  = _excès de GR_, leucocytes et plaquettes
+- Thrombocytémie = _excès de mégacaryocyte_ et leucocytes
+- Leucémie myéloïde chronique = _excès de neutrophiles_ et plaquettes, baisse de GR (wtf)
+*Lymphoprolifératif*
+- Leucémie lymphoïde chronique  = excès lymphocytes
+- Lymphomes = excès de cellules du /tissu lymphoïde/
+- Leucémie aigüe = excès de blastes
+
+Les 3 vont envahir la moelle et bloquer les 3 lignées (globules rouges, plaquettes, leucocytes) _sauf la LLC qui ne bloque pas les leucocytes !_
+Les 3 vont envahissement les organes lymphoïdes : adénopathie, splénomégalie.
+
+** Par anomalie biologique
+Note:
+- lymphoprolifératif = leucémie lymphoïde chronique/leucémie myéloïde/lymphome
+- myéloprolifératif = Vaquez, leucémie myéloïde chronique, thrombocytémie
+
+*Splénomégalie* : hypeproduction <= syndrome myéloprolifératif, lymphoprolifératif
+
+*Anémie*
+- défaut de production : syndrome myélodysplasique
+- envahissement : syndrome lymphoprolifératif, leucémie myéloïde chronique (_le seul des syndromes myéloprolifératif_)
+
+*Thrombopénie*
+- défaut de production : syndrome myélodysplasique
+- envahissement : syndrome lymphoprolifératif, sd myéloprolifératif _aigü_ (attention !)
+
+*Neutropénie* (fièvre !)
+- anomalie des précuseurs => syndrome myélodysplasique
+- envahissement médullaire => leucémie aigùe, lymphomes (pas les autres syndrome prolifératifs, cf plus haut)

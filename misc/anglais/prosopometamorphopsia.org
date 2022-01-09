@@ -1,0 +1,114 @@
+#+title: Visual disorders, the prosopometamorphopsia and prosopagnosia type in the early days after the onset of brain hemorrhagic stroke – a case report
+#+subtitle: Neurocase: The Neural Basis of Cognition (2014)
+#+date:
+#+options: toc:nil
+#+startup: beamer
+#+LATEX_CLASS: beamer
+#+BEAMER_THEME: Singapore
+#+latex_header_extra: \usepackage{subfig}
+#+latex_header_extra: \titlegraphic{\includegraphics[height=0.3\textheight]{metamorph.png}}
+
+** A rare case
+
+Only 2 papers !
+
+#+BEGIN_EXPORT latex
+
+% Definition of circles
+\def\firstcircle{(0,0) ellipse (3cm and 2cm)}
+\def\secondcircle{(0:5cm) ellipse (3cm and 2cm)}
+
+\colorlet{circle edge}{blue!50}
+\colorlet{circle area}{blue!20}
+
+\tikzset{filled/.style={fill=circle area, draw=circle edge, thick},
+    outline/.style={draw=circle edge, thick}}
+
+\setlength{\parskip}{5mm}
+% Set A and B
+\begin{tikzpicture}
+    \begin{scope}
+        \clip \firstcircle;
+        \fill[filled] \secondcircle;
+    \end{scope}
+    \draw[outline] \firstcircle node {Cannot recognize faces};
+    \draw[outline] \secondcircle node {View deformed faces };
+    \node[anchor=south] at (current bounding box.north) {Our case};
+\end{tikzpicture}
+#+END_EXPORT
+
+#+latex_header_extra: \usepackage{tikz}
+** History
+
+Patient with hypertension, cardiac issues in the family $\implies$ test
+
+#+BEGIN_EXPORT latex
+
+%    \caption{Bulge of a blood vessel}
+%\end{figure}
+\begin{figure}
+    \subfloat{\includegraphics[width=0.5\linewidth]{aneurysm.png}}\hfill 
+    \subfloat{\includegraphics[scale=0.8]{stent.png}}
+    \caption{Bulge of a blood vessel(left) and its surgery (right)}
+\end{figure}
+#+END_EXPORT
+
+** Follow-up 
+Treatment : aspirine, clopidogrel (avoid blood clots)
+
+- +1 day : bleeding inside the brain $\implies$ decrease pressure in the brain,
+  aspirin removed
+- after surgery : trouble with face recognition ! $\implies$ by voice
+- +4 days : **distorted** faces !
+
+\pause
+Assessment :
+- visual perception : OK
+- long-term memory : OK
+- learning new information : OK ?
+- face recognition : unclear
+
+** Face 
+Less/more favorable :
+- "puffy, swollen",  "monkey", "midget"
+- younger, smooth skin, clean
+
+\vspace*{0.5cm}
+Variable !
+- more familar = more distorted
+- swollen $\implies$ flattened
+- "the longer I watch, the more it changes"
+- gradual improvement but relapses
+- light and shadows
+- emotions on the face
+    
+** No treatment
+
+- Inform the patient (stress !!)
+- Emotional support
+
+Our patient : no symptoms one month later
+
+** Why ?
+
+***  Face recognition                                  :B_block:
+    :PROPERTIES:
+    :BEAMER_COL: 0.48
+    :BEAMER_ENV: block
+    :END:
+    Affected area = processing and storage of visual information (faces) 
+    [[file:temporo_occipital.png]]
+
+*** Deformated faces too...                                     :B_block:
+    :PROPERTIES:
+    :BEAMER_COL: 0.48
+    :BEAMER_ENV: block
+    :END:
+    Distorsion implies troubles with face recognition ?
+    
+    More studies needed !
+
+** Sources
+Pictures : 
+- Wikipedia
+- Trojano, Luigi, et al. "Unilateral left prosopometamorphopsia: a neuropsychological case study." Neuropsychologia 47.3 (2009): 942-948.

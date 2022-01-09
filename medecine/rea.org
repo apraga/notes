@@ -1,0 +1,18 @@
+#+title: Rea
+
+Notes sur le stage de réa
+* SDRA
+FiO2 = proportion d'oxygène dans ce que respire le patient. Air ambiant = 0.20. Ne pas trop augmenter pour éviter effets nocifs de l'oxygène
+
+Gravite selon PaO2 / FiO2 :
+- 200-300 mmHg = léger
+- 100-200 = modéré
+- \le 100 = sévère
+
+Traitement
+
+1. Curare + ventilation mécanique : le curare relâche les muscles striés => facilite l'intubation.
+Permet également une diminution de l'inflammation, de la mortalité et une augmentation de l'oxygénation (collège de réa)
+2. Monoxyde d'azote inhalé : relaxe fibre musculaire => peut améliorer oxygénation
+3. ECMO = poumon artificiel (étude en cours)
+

@@ -1,0 +1,155 @@
+
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{biocon}
+%\usepackage[draft]{graphicx}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+% French
+\usepackage[T1]{fontenc}
+\usepackage[francais]{babel}
+\usepackage{caption}
+\usepackage[nointegrals]{wasysym} % Male-female symbol
+% Smaller marign
+\usepackage[margin=2.5cm, marginparwidth=2cm]{geometry}
+\usepackage{latexsym}
+\usepackage{subcaption}
+\usepackage[table]{xcolor} % Color in tables, must be called before tikz !
+% -------------------------------------------------------------------------------
+% For graphs
+\usepackage{tikz}
+\usepackage{tikzscale}
+\usetikzlibrary{graphs}
+\usetikzlibrary{graphdrawing}
+\usetikzlibrary{arrows,positioning,decorations.pathreplacing}
+\usetikzlibrary{calc}
+
+% Trees package not found after update
+\usepackage{luacode}
+\begin{luacode}
+  function pgf_lookup_and_require(name)
+    local sep = '/'
+    if string.find(os.getenv('PATH'),';') then
+      sep = '\string\\'
+    end
+    local function lookup(name)
+      local sub = name:gsub('%.',sep)
+      local find_func = function (name, suffix)
+        if resolvers then
+          local n = resolvers.findfile (name.."."..suffix, suffix) -- changed
+          return (not (n == '')) and n or nil
+        else
+          return kpse.find_file(name,suffix)
+        end
+      end
+      if find_func(sub, 'lua') then
+        require(name)
+      elseif find_func(sub, 'clua') then
+        collectgarbage('stop')
+        require(name)
+        collectgarbage('restart')
+      else
+        return false
+      end
+      return true
+    end
+    return
+      lookup('pgf.gd.' .. name .. '.library') or
+      lookup('pgf.gd.' .. name) or
+      lookup(name .. '.library') or
+      lookup(name)
+  end
+\end{luacode}
+
+
+\usegdlibrary{trees, layered}
+\usetikzlibrary{quotes}
+\usetikzlibrary{shapes.misc} % for rounded rectangle
+
+% Custom graph style, for most of our graphs
+\tikzgraphsset{decision/.style={
+   % Labels at the middle 
+    %edge quotes mid,
+    % Needed for multi-lines
+    nodes={align=center},
+    %sibling distance=6cm,
+    layer distance=2cm,
+    %edges={nodes={fill=white}}, 
+    tree layout
+    }
+  }
+\tikzset{
+  organ/.style = {rounded rectangle, draw=black}
+}
+
+\usepackage{booktabs}
+\usepackage[shortcuts,nonumberlist]{glossaries} % shorcuts = \acs{} command
+\makeglossaries
+
+% -------------------------------------------------------------------------------
+% No spacing in itemize
+\usepackage{enumitem}
+\setlist{nolistsep}
+% tightlist from pandoc
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+ % Danger symbol (need fourier package)
+\newcommand*{\TakeFourierOrnament}[1]{{%
+\fontencoding{U}\fontfamily{futs}\selectfont\char#1}}
+\newcommand*{\danger}{\TakeFourierOrnament{66}}
+% Hospital sign, bomb sign
+\usepackage{fontspec} % For fontawesome
+\usepackage{fontawesome}
+
+% Itemize in tabular
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+% No numbering
+\setcounter{secnumdepth}{0}
+% In TOC, only section
+\setcounter{tocdepth}{1}
+% Set header
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\leftmark}
+\fancyhead[R]{\thepage}
+%\renewcommand{\headrulewidth}{0.6pt}
+% Custom header : no uper case
+\renewcommand{\sectionmark}[1]{%
+  \markboth{\textit{#1}}{}}
+% Footnote in section
+\usepackage[stable]{footmisc}
+% Chemical compound
+\usepackage{chemformula}
+
+% Negate \implies
+\usepackage{centernot}
+% No paragraph indent
+\setlength\parindent{0pt}
+
+% Nice box but small for our purpose
+\usepackage{tcolorbox}
+\tcbset{left=1pt, right=1pt, top=1pt, bottom=1pt, boxrule=0.2mm}
+
+% Footnote in table
+\usepackage{tablefootnote}
+
+% hyperref setup
+\hypersetup{
+  colorlinks = true,
+  linkcolor=teal
+}
+%-------------------------------------------------------------------------------
+% Custom commands
+%-------------------------------------------------------------------------------
+% Logical and, or
+\def\land{$\wedge$}
+\def\lor{$\vee$}
+\def\dec{$\searrow{}$}
+\def\inc{$\nearrow{}$}
+\def\thus{$\implies$}
+
+% Hightlight cell
+\def\hlc{\cellcolor{blue!10}}
+\def\hl{\colorbox{blue!10}}
+
+\input bacteries-header
