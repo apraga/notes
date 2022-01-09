@@ -2151,7 +2151,7 @@ Malfo rénale, fente palatine
 phanères : hypotrichose, dysplasie unguéale
 odonto: oligodontie
 
-Mutation perte de fonction [récessive} : abesnec d'activation de la voie WNT
+Mutation perte de fonction [récessive] : abesnec d'activation de la voie WNT
 
 ## Cas clinique 4
 Cheveux raréfiés, fins
