@@ -41,19 +41,17 @@
     - [ ] TODO Dragon Harper (by Todd McCaffrey) (2007)
     - [ ] TODO Dragonheart (by Todd McCaffrey) (2008)
     - [ ] TODO Dragongirl (by Todd McCaffrey) (2010
-- R.R Martin - A Song of Ice and Fire [5/5]
-- R.R Martin - A Song of Ice and Fire [5/5]
-- R.R Martin - Windhaven
-    - TODO [#A] Fire and Blood
+- [X] R.R Martin - A Song of Ice and Fire [5/5]
+- [X] R.R Martin - Windhaven
+- [ ] R.R Martin - Fire and Blood
 - Pratchett
     1.  [X] The Color of Magic (Discworld, #1; Rincewind, #1)
     2.  [X] The light fantastic
     3.  [X] The color of magic : a discworld novel
 - [X] Harry Potter [7/7]
-- Tolkien
-    - [X] Lord of the Rings [3/3]
-    - [X] The Silmarillion : The Epic History of the Elves in The Lord of the Rings
-    - [X] The hobbit, or, there and back again
+- [X] Tolkien - Lord of the Rings [3/3]
+- [X] Tolkien - The Silmarillion : The Epic History of the Elves in The Lord of the Rings
+- [X] Tolkien - The hobbit, or, there and back again
 - TODO Earthsea
     1.  TODO A Wizard of Earthsea (1968)
     2.  TODO The Tombs of Atuan (1970)
@@ -61,16 +59,15 @@
     4.  TODO Tehanu 1990
     5.  TODO Tales from Earthsea (2001)
     6.  TODO The Other Wind (2001)
-- [X] Susanna Clarke : Dr Norrel and Mr Strange
+- [X] Clarke, S. - Dr Norrel and Mr Strange
 
 # Fiction
-- Violet Evergarden (1, 2
-- [X] Liu, C. (2014): The three-body problem :sci-fi:
-- [X] Liu, C. (2015): The dark forest 
-- [X] Liu, C. (2016): Death\'s end :sci-fi:
-- [X] Wells, H. G. (1895) : The Time Machine 
-- [X] Wells, H. G. (1897) : The War of the Worlds
-- [X] Wells, H. G. (1983): The war of the worlds :sci-fi:
+- [X] Violet Evergarden [2/2]
+- [X] Liu, C. - The three-body problem :sci-fi:
+- [X] Liu, C. - The dark forest 
+- [X] Liu, C. - Death\'s end :sci-fi:
+- [X] Wells, H. G. - The Time Machine 
+- [X] Wells, H. G. - The War of the Worlds
 
  # Histoire 
 - [X] Magni, C. (2003): Les Olmèques: des origines au mythe
@@ -80,7 +77,7 @@
 - [X] Plutarch, (2001): Plutarch\'s lives 
 - [X] Une Histoire Du Monde Aux Temps Modernes
 - [X] Armée romaine sous le Haut-Empire
-- [X] Tite-Live: Histoire romaine 
+- [X] Tite-Live - Histoire romaine (Gallimard)
     1.  [X] livre i à v : de la fondation de rome à l'invasion gauloise
     2.  [X] livres xxi à xxv : la seconde guerre punique i
     3.  [X] livres vi à x : la conquête de l'italie
@@ -100,28 +97,36 @@
 - [X] At the mountains of madness the definitive edition
 
 # Litterature
-- [X] Pride and Prejudice (J. Austen)
+- [ ] Atlas Shrugged
+- [ ] Beowulf (Michael Alexander translation)
+- [ ] Catch 22
+- [X] A tale of two cities
+- [X] Belle du seigneur
+- [X] Candide 
+- [X] Crime and punishment
+- [X] Cyrano de bergerac 
+- [X] Dubliners
+- [X] Foucault\'s pendulum
+- [X] Germinal 
+- [X] I, Claudius
 - [X] Illusions : The Adventures of a Reluctant Messiah
 - [X] Jane Eyre
 - [X] La peste
-- [X] Belle du seigneur
 - [X] Le Petit Prince
-- [X] A tale of two cities
-- [X] Crime and punishment
+- [X] Lolita
+- [X] Pride and Prejudice (J. Austen)
+- [X] Si c'est un homme
+- [X] The fall of the house of usher
 - [X] The hound of the baskervilles
 - [X] The name of the rose
-- [X] Foucault\'s pendulum
-- [X] I, Claudius
-- [X] Dubliners
-- [X] Si c\'est un homme
-- [X] Lolita
-- [X] The fall of the house of usher
-- [X] Cyrano de bergerac 
-- [X] Candide 
-- [X] Germinal 
-- TODO Catch 22
-- TODO Atlas Shrugged
-- TODO Beowulf (Michael Alexander translation)
+
+## La pleiade
+- [X] Duby, [Oeuvres](notes/reviews/duby.org)
+- [X] [Les Mille Et Une Nuits](reviews/milles_et_une_nuits.org) [3/3] 
+- [X] [Le Livre du Graal](reviews/graal.org) [3/3]
+- [X] Homère [Iliade -- Odyssée][reviews/homere.org]
+- [X] Hugo, [Les Travailleurs de la mer](reviews/travailleurs_de_la_mer.org) -- [Notre-Dame de Paris](reviews/notre_dame_de_paris.org)
+
 # Math 
 - STRT [#A] Gowers, T. (2010): The princeton companion to mathematics
 - TODO Hastie, T., Tibshirani, R., & Friedman, J. (2009): The elements of statistical learning

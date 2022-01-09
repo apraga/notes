@@ -534,7 +534,7 @@ CHARGE
 - Genital hypoplasia
 - Ear
 - Retard pyschomot, de croissance (pas ici)
-Diag = 4 majeurs ou {3 mineurs et 3 majeurs}{{
+Diag = 4 majeurs ou {3 mineurs et 3 majeurs}
 
 ### Bouche
 Agénésie du corps calleux
