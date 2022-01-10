@@ -1,0 +1,1073 @@
+#+TITLE: Génétique
+#+OPTIONS: toc:nil timestamp:nil num:nil
+#+OPTIONS: reveal_width:2100 reveal_height:1500
+#+HTML_HEAD: <style type="text/css">
+#+HTML_HEAD:  ol#li { list-style-type: upper-alpha; }
+#+HTML_HEAD: </style>
+#+REVEAL_TRANS: nil
+#+REVEAL_ROOT: reveal.js/
+* Chap 2 QCM 5
+Le syndrome de Turner :
+#+ATTR_REVEAL: :frag (highlight-green highlight-green none none highlight-green)
+A. Correspond à la nullosomie de gènes portés par le chromosome Y
+B. Peut se manifester à la naissance par un syndrome de Bonnevie-Ullrich
+C. Se caractérise par une déficience intellectuelle
+D. Se caractérise par une taille supérieure à la moyenne
+E. Peut être dû à des anomalies de structure du chromosome X
+
+#+ATTR_REVEAL: :frag (t)
+_Syndrome de Turner_
+#+ATTR_REVEAL: :frag (t)
+- 45, X
+- environ 1/2 500 nouveau-né de sexe féminin
+- à la naissance:
+  - syndrome de Bonnevie-Ullrich = petite taille, un lymphœdème des mains et des pieds et un excès de peau au niveau de la nuque (pterygium colli).
+  - visible échographie anténale : cardiaque (coarctation de l'aorte),  rénales (rein en fer à cheval), anomalie nuque (hygroma kystique)
+- enfance : petite taille
+- ado : aménorrhée primaire (dysgénésie gonadique pure)
+-  *pas de déficience intellectuelle*
+- femme adulte, grossesses possibles après don ovocyte
+
+* Chap 2 QCM 6
+Le syndrome de Klinefelter est caractérisé par :
+#+ATTR_REVEAL: :frag (none highlight-green highlight-green highlight-green none)
+A. Une déficience intellectuelle constante
+B. La fréquence des mosaïques
+C. Une infertilité
+D. L'existence d'un chromosome X surnuméraire
+E. Des malformations viscérales fréquentes
+
+#+ATTR_REVEAL: :frag (t)
+Syndrome de Klinefelter
+#+ATTR_REVEAL: :frag (t)
+- 47, XXY
+- prévalence 1/700 et 1/1 000 garçons à la naissance
+- diagnostic jamais porté à la naissance
+- signes cliniques à la puerté /age adulte sur infertilité
+- caryotype
+- clinique :
+  - atteinte testiculaire, avec ou sans signe d'hypogonadisme, petit volume testiculaire+++ => azoospermie
+- bio : FSH augmenté, leydig normale
+
+* Chap 4 QCM 1 (optionnel)
+Concernant la transmission autosomique, quelles affirmations sont vraies ?
+#+ATTR_REVEAL: :frag (none highlight-green none highlight-green none)
+A. La transmission est de type horizontal
+B. Le risque de récurrence est de 50 % si un des parents est atteint
+C. Seuls les garçons sont malades
+D. Un patient muté peut ne présenter aucun signe clinique
+E. Un patient atteint aura forcément tous ses enfants atteints
+
+#+ATTR_REVEAL: :frag (t)
+- transmission verticale
+- s'exprime chez les *hétérozygote* => 1 chance sur 2 d'avoir l'allèle atteinte !
+* Chap 5 QCM 1
+#+attr_html: :width 40%
+[[./img/arbre_hurler.png]]
+
+Les couples A-B et C-D vous consultent pour un conseil génétique. La sœur de Mme B et de Mr C était atteinte d'une maladie de Hurler. Il s'agit d'une maladie récessive autosomique qui atteint un enfant sur 90 000 naissances (1/90 000)
+Concernant le risque de Mme B d'être hétérozygote pour la maladie de Hurler, quelle(s) proposition(s) est (sont) exacte(s) ?
+#+ATTR_REVEAL: :frag (none highlight-green none none highlight-green )
+A. Le risque pour Mme B d'être hétérozygote pour la maladie de Hurler est de 1/2
+B. Le risque pour Mme B d'être hétérozygote pour la maladie de Hurler est de 2/3
+C. Le risque pour Mme B d'être hétérozygote pour la maladie de Hurler est de 1/4
+D. Le risque pour Mme B d'être hétérozygote pour la maladie de Hurler est celui de la population générale
+E. Ce risque est indépendant du sexe de l'individu
+
+#+ATTR_REVEAL: :frag (t)
+#+attr_html: :width 30%
+[[./img/autosomique_recesif.png]]
+
+* Chap 5 QCM 2
+Concernant le risque de Mr C et Mme D d'être hétérozygote pour la maladie de Hurler, quelle(s) proposition(s) est (sont) exacte(s) ?
+#+ATTR_REVEAL: :frag (none highlight-green highlight-green none none )
+A. Le risque pour Mr C d'être hétérozygote pour la maladie de Hurler est de 1/4
+B. Le risque pour Mr C d'être hétérozygote pour la maladie de Hurler est de 2/3
+C. Le risque pour Mme D d'être hétérozygote pour la maladie de Hurler est de 1/4
+D. Le risque pour Mme D d'être hétérozygote pour la maladie de Hurler est de 1/3
+E. Le risque pour Mme D d'être hétérozygote pour la maladie de Hurler est de 1/8
+
+#+ATTR_REVEAL: :frag (t)
+#+attr_html: :width 40%
+[[./img/heterozygote_autosomique_recesif.png]]
+
+* Chap 5 QCS 1
+En vous servant de la loi de Hardy-Weinberg, quel est le risque que Mr A soit hétérozygote pour la maladie de Hurler ?
+#+ATTR_REVEAL: :frag (none none none highlight-green none)
+A. 1/75
+B. 1/600
+C. 1/300
+D. 1/150
+E. 1/200
+#+attr_html: :width 40%
+[[./img/hardy-weinberg.png]]
+
+
+#+ATTR_REVEAL: :frag (t)
+$q^2 = \frac{1}{90 000}$ donc $q = \frac{1}{300}$.
+
+#+ATTR_REVEAL: :frag (t)
+Or on veut connaître $2 p q$ et on sait que $p = 1 - q \approx 1$...
+* Chap 5 QCS 2
+#+attr_html: :width 40%
+[[./img/arbre_hurler.png]]
+
+Quel est le risque pour le couple A-B d'avoir un enfant atteint de la maladie de Hurler ?
+#+ATTR_REVEAL: :frag (none none none none highlight-green )
+A. 1/2 400
+B. 1/1 200
+C. 1/1 800
+D. 1/4 800
+E. 1/900
+
+#+ATTR_REVEAL: :frag (t)
+Probabilité du père de lui passer 1 allèle atteint = $\frac{1}{150} \times \frac{1}{2}$
+
+#+ATTR_REVEAL: :frag (t)
+Probabilité de la mère de lui passer 1 allèle atteint = $\frac{2}{3} \times \frac{1}{2}$
+* Chap 5 QCS QCS 3
+#+attr_html: :width 40%
+[[./img/arbre_hurler.png]]
+
+Quel est le risque pour le couple C-D d'avoir un enfant atteint de la maladie de Hurler ?
+#+ATTR_REVEAL: :frag (none none highlight-green none )
+A. 1/128
+B. 1/32
+C. 1/24
+D. 1/12
+E. 1/48
+
+#+ATTR_REVEAL: :frag (t)
+Père = $\frac{2}{3}\times\frac{1}{2}$ et
+Mère = $\frac{1}{3}\times\frac{1}{2}$
+* Cours
+    - la cytogénétique s’intéresse à des anomalies de grande taille (chromosome entier ou fragment de chromosomes de plusieurs milliers voire millions de paires de bases), on parle de remaniement ou d’anomalie chromosomique
+    - la biologie moléculaire s’intéresse à des mutations (on parle aujourd’hui plutôt de variants) concernant un ou quelques nucléotides
+Il est donc impossible de détecter une mutation d’un gène en cytogénétique.
+Les principaux examens de cytogénétique sont :
+    - le caryotype : analyse non ciblée de l’ensemble des chromosomes, pour détecter des anomalies chromosomiques de nombre ou de structure de grande taille (>5Mb)
+    - l’Analyse Chromosomique par Puce à ADN (ACPA ou CGH-Array) : analyse non ciblée de l’ensemble des chromosomes, pour détecter des microremaniements chromosomiques (≈100 fois plus précis que le caryotype, sorte de « super-caryotype », même si la technique est complètement différente)
+    - la FISH (Fluorescence par Hybridation In Situ) : analyse ciblée des chromosomes, permet d’identifier un microremaniement chromosomique (mais on doit savoir à l’avance ce que l’on recherche)
+Les principaux examens de biologie moléculaire sont :
+    - le séquençage Sanger : séquençage classique d’un gène
+    - le NGS (Next Generation Sequencing) : séquençage à haut débit, permet de séquencer une grande quantité d’ADN de plusieurs patients à la fois ; on peut ainsi séquencer :
+        - un panel de gènes
+        - l’exome = parties codantes
+        - le génome = ADN
+
+Le Southern blot permet l'étude d'un fragment d'ADN particulier au sein du génome après transfert des fragments d'ADN d'un gel d'électrophorèse sur une membrane
+* KILL Chap 13 Question condensée :noexport:
+QCS 1
+Un hypertélorisme est défini par :
+A. Un rapport distance intercanthale externe/distance intercanthale interne > 1/3
+B. Un rapport distance intercanthale interne/distance intercanthale externe > 1/3
+C. Un rapport distance intercanthale interne/distance intercanthale externe < 1/3
+D. Un rapport distance intercanthale externe/distance intercanthale interne < 1/3
+E. Un rapport longueur des fentes palpébrales/ distance intercanthale > 1/2
+QCS 2
+Un télécanthus se définit par :
+A. Des fentes palpébrales étroites
+B. Une chute de la paupière supérieure
+C. Un déplacement latéral des canthi internes
+D. Un déplacement latéral des canthi externes
+E. Aucun item n'est exact
+QCS 3
+Un hypotélorisme se définit par :
+A. Un repli à l'angle interne de l'œil
+B. Une diminution de l'écartement entre les yeux
+C. Un déplacement latéral des canthi internes
+D. Un déplacement latéral des canthi externes
+E. Aucun item n'est exact
+QCS 4
+Une clinodactylie se définit par :
+A. Un pouce surnuméraire
+B. Le blocage d'une articulation en flexion
+C. La présence d'un sixième doigt au bord cubital
+D. Une absence de phalange médiane
+E. Aucun item n'est exact
+* TODO Chap 15 :noexport:
+QCM 1
+Parmi les propositions suivantes concernant le diagnostic prénatal par échographie, laquelle/lesquelles est/sont vraie(s) ?
+A. La mesure de la clarté nucale est obtenue à l'échographie de 22 SA
+B. Un syndrome de Turner peut être révélé par une nuque épaisse
+C. La découverte d'une nuque épaisse justifie la réalisation d'un caryotype fœtal
+D. Une interposition linguale est généralement détectée à l'échographie de 12 SA
+E. Les trois échographies prénatales recommandées à toute femme enceinte sont réalisées à 12, 22 et 32 SA
+QCM 2
+Parmi les propositions suivantes concernant les prélèvements réalisés en DPN, laquelle/lesquelles est/sont vraie(s) ?
+A. L'amniocentèse est réalisée à partir de 12 SA
+B. L'amniocentèse présente un risque de fausse couche de 0,1 %
+C. La trophocentèse permet l'établissement d'un caryotype en 24-48 heures
+D. Une détermination de sexe fœtal sur sang maternel peut être réalisée seulement à partir de 11 SA
+E. Le caryotype obtenu après culture de villosités choriales est établi à partir de cellules plus proches embryologiquement du fœtus que celles utilisées pour celui de l'examen direct
+QCM 3
+Parmi les propositions suivantes concernant les méthodes de dépistage prénatal, laquelle/lesquelles est/sont vraie(s) ?
+A. La mesure de la clarté nucale est un élément essentiel au dépistage combiné de la trisomie 21
+B. Le dosage de l'α-fœtoprotéine est un élément essentiel au dépistage combiné de la trisomie 21
+C. Le dépistage combiné est réalisé au premier trimestre de la grossesse
+D. Le dépistage séquentiel intégré est réalisé au premier trimestre de la grossesse
+E. L'ADN fœtal circulant permet le dépistage de la trisomie 21 sur sang maternel
+QCM 4
+Parmi les propositions suivantes concernant l'identification d'une mosaïque 46,XX/47,XX,+21 obtenue à l'examen direct après trophocentèse, laquelle/lesquelles est/sont vraie(s) ?
+A. Une contamination par des cellules maternelles doit être suspectée
+B. Une trisomie 21 en mosaïque vraie doit être suspectée
+C. Une mosaïque confinée au placenta doit être suspectée
+D. Une IMG peut être proposée au regard de ces résultats
+E. Le caryotype permet de distinguer une contamination maternelle d'une trisomie 21 en mosaïque vraie
+QCM 5
+Parmi les propositions suivantes, quelles sont celles justifiant un diagnostic préimplantatoire en France ?
+A. Un couple ayant eu un enfant atteint d'une myotonie de Steinert
+B. Un couple ayant eu un enfant atteint de daltonisme
+C. Une mère conductrice de myopathie de Duchenne n'ayant pas eu d'enfant atteint
+D. Un antécédent de trisomie 21 libre et homogène
+E. Un couple dont les deux membres ont une mutation p.Phe508del à l'état hétérozygote
+* TODO Chap 16 :noexport:
+QCM
+QCM 1
+Concernant les prélèvements nécessaires pour les dépistages biochimiques :
+A. Il peut être fait durant le 2e jour de vie
+B. Il peut être fait dans le 3e jour de vie
+C. Les prélèvements sont collectés sur un buvard
+D. Les prélèvements sont envoyés à un centre régional
+E. Une information spécifique est donnée au préalable du prélèvement
+QCM 2
+Concernant les prélèvements nécessaires pour les dépistages biochimiques :
+A. Un consentement signé est nécessaire pour l'évaluation du risque de drépanocytose
+B. Un consentement signé est nécessaire pour l'évaluation du risque de la mucoviscidose
+C. Un consentement signé est nécessaire pour l'évaluation du risque de l'hyperplasie surrénale congénitale
+D. Un enfant dont les deux parents sont nés aux Antilles doit bénéficier du dépistage ciblé de la drépanocytose
+E. Un enfant dont la mère est née au Maghreb et dont le père n'est pas connu doit bénéficier du dépistage ciblé de la drépanocytose
+QCM 3
+Concernant les maladies dépistées par le dépistage biochimique :
+A. Le taux de faux positif pour l'hyperplasie surrénale congénitale est important chez les enfants prématurés
+B. Le dépistage de l'hypothyroïdie en France ne permet pas le dépistage des hypothyroïdies d'origine hypophysaire
+C. Un dosage des hormones thyroïdiennes est nécessaire chez les enfants présentant une malformation médiane de la face
+D. Les hyperphénylalaninémies sont toutes liées à un déficit de la phénylalanine hydroxylase
+E. Une malformation génitale est souvent associée aux formes sévères d'hyperplasie surrénale congénitale chez les nouveaux nés 46,XX
+QCM 4
+Concernant le conseil génétique après dépistage :
+A. Le dépistage de la drépanocytose permet de mettre en évidence la plupart des sujets hétérozygotes au locus β-globine
+B. Le dépistage de la mucoviscidose permet de mettre en évidence la plupart des sujets hétérozygotes au locus CFTR
+C. Un sujet porteur d'une forme classique d'hyperplasie surrénale est homozygote ou hétérozygote composite pour des allèles sévères
+D. Le frère normal d'un sujet porteur d'une mucoviscidose à 2/3 de risque d'être hétérozygote si ses parents sont de phénotype habituel
+E. Un sujet porteur d'une surdité dépistée en période néonatale a le plus souvent un parent sourd
+QCM 5
+Concernant le dépistage de la surdité :
+A. Il est fondé sur l'utilisation des otoémissions acoustiques ou des PEA
+B. La valeur prédictive négative du test est bonne
+C. Tous les types de surdité sont détectables en période néonatale
+D. L'objectif principal est de permettre la prise en charge précoce d'une surdité sévère permettant la mise en place d'une communication verbale si possible
+E. Le nombre des faux positifs est important
+* Cours
+A propos de la prescription des examens génétiques, parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) ?
+
+#+ATTR_REVEAL: :frag (highlight-green none none highlight-green highlight-green)
+A. Le patient (ou ses représentants légaux) doit signer un consentement écrit avant l’analyse
+B.  Les examens génétiques ne peuvent pas être pratiqués chez les mineurs
+C. Les examens génétiques peuvent être pratiqués uniquement chez les patients symptomatiques
+D. Le prescripteur doit signer une attestation de consultation
+E. Les résultats d’examens génétiques doivent être rendus en consultation par le prescripteur
+
+* Cours
+Les examens de génétique peuvent être prescrits uniquement par des médecins généticiens ou par des spécialistes appartenant à une équipe pluridisciplinaire en collaboration avec des généticiens.
+
+Ils sont prescrits au décours d’une consultation, après information claire, loyale et appropriée du patient et/ou de ses représentants légaux. Un consentement écrit signé par le patient ou les représentants légaux est nécessaire. Le prescripteur doit également signer une attestation de consultation, dans laquelle il déclare avoir délivré l’information nécessaire au patient ou à ses représentants légaux quant à la nature des examens réalisés, les résultats et leurs implications.
+
+Les analyses de génétique se font le plus souvent à partir d’un prélèvement sanguin périphérique. Parfois, l’analyse d’un autre tissu est indiquée (prélèvement salivaire, biopsie d’un organe atteint) : recherche d’une mosaïque, pathologie touchant préférentiellement certains organes, analyses du génome tumoral…
+
+Les résultats sont toujours rendus en consultation par le prescripteur.
+
+Les examens peuvent être pratiqués chez un patient symptomatique quel que soit son âge, à visée étiologique.
+Chez les mineurs asymptomatiques, les examens génétiques ne sont pas indiqués sauf si le résultat a un impact direct sur le pronostic du patient et/ou sa prise en charge.
+Chez les adultes, on peut être amené, dans certaines situations spécifiques, à effectuer des analyses génétiques chez des patients asymptomatiques :
+    - diagnostic pré-symptomatique
+    - conseil génétique de pathologie autosomique récessive (« porteurs sains »)
+    - recherche d’hétérozygotie dans un cadre pré-conceptionnel en cas d’antécédent familial de pathologie autosomique récessive ou chez le conjoint d’un patient hétérozygote
+    - fausses couches à répétition (≥3) pour recherche de translocation équilibrée
+    - …
+
+* TODO Chap 22 :noexport:
+QCM 2
+Dans la famille représentée ci-dessous, les garçons II.1 et II.2 sont atteints du syndrome de l'X fragile (FXS). On a indiqué le nombre de triplets CGG dans le gène FMR1 pour la mère et les enfants. Indiquez la/les proposition(s) vraie(s) :
+u22-02-9782294745218
+A. Le garçon II.2 présente une déficience intellectuelle plus importante que son frère II.1
+B. La femme I.2 peut avoir des enfants porteurs d'un allèle normal, d'une prémutation ou d'une mutation complète
+C. Il n'y a pas d'autre cas de déficience intellectuelle dans la famille. I.2 rapporte simplement une ataxie chez son père depuis l'âge de 65 ans mais cela ne peut pas avoir de lien avec le gène FMR1
+D. Le génotype de II.4 a été déterminé dans le cadre d'un diagnostic prénatal et a mis en évidence chez le fœtus de sexe féminin respectivement 30 et 300 répétitions CGG. Vous annoncez aux parents qu'il s'agit d'une mutation complète et que le pronostic est le même que pour un garçon
+QCM 3
+Dans la famille représentée ci-dessous, l'enfant III.2, fille âgée de 4 ans présente un retard des acquisitions et des troubles du comportement de type autistique qui a fait évoquer un syndrome de l'X fragile (FXS) qui a été confirmé par la mise en évidence d'une mutation complète dans le gène FMR1. Quelle(s) sont la/les proposition(s) juste(s) ?
+u22-03-9782294745218
+A. La mère ou le père de la patiente III.2 est porteur d'une prémutation et leurs sœurs respectives (II.2 et II.5), qui sont enceintes de garçons, sont à risque d'être porteuses de la mutation familiale et d'avoir un fils atteint de FXS. Vous préconisez de faire réaliser d'urgence une analyse génétique chez eux dans le cadre du conseil génétique pour II.2 et II.5
+B. Vous calculez que si II.3 est prémutée, sa sœur a 75 % de risque de l'être également
+C. Après analyse génétique, il s'avère que la mère de la patiente III.2 est porteuse d'une prémutation. Cette jeune femme, II.3, a 31 ans et le souhait d'un troisième enfant. Vous l'informez qu'étant porteuse d'une prémutation, sa fertilité peut être impactée
+D. Les enfants des patients porteurs d'une mutation du FXS sont tous porteurs d'une mutation complète car la mutation ne rétracte pratiquement jamais vers une prémutation ou un allèle normal
+QCM 4
+QCM 7
+Dans le cas de la myotonie de Steinert, indiquez quelle(s) sont la/les proposition(s) juste(s) ?
+A. C'est une maladie responsable d'une forme congénitale de maladie musculaire qui est extrêmement rare chez l'adulte
+B. Une cataracte peut être la seule expression clinique de la myotonie de Steinert
+C. Au sein d'une famille, si différentes formes cliniques sont observées, elles ont tendance à s'aggraver au cours des générations
+D. Il n'y a pas d'atteinte cognitive dans la myotonie de Steinert
+* Chap 23
+QCM 5
+Quelle(s) est/sont la/les caractéristique(s) des cancers du sein associés aux mutations du gène BRCA1 ?
+
+#+ATTR_REVEAL: :frag (highlight-green highlight-green highlight-green highlight-green none )
+A. La rapidité évolutive
+B. Le profil triple négatif vis-à-vis des récepteurs aux œstrogènes à la progestérone et de l'amplification d'ERBB2
+C. Une sensibilité particulière aux inhibiteurs de PARP
+D. Leur présentation multifocale
+E. Leur bon pronostic
+* Chap 27 QCM 1
+Dans le cadre du dépistage de la trisomie 21, le calcul du dépistage combiné proposé au premier trimestre est basé sur :
+#+ATTR_REVEAL: :frag (highlight-green highlight-green none )
+A. La mesure de la clarté nucale
+B. L'âge maternel
+C. L'âge paternel
+D. les antécédents d'anomalie chromosomique dans la fratrie
+E. La présence d'une cardiopathie congénitale
+* Chap 27 QCM 2
+Quel suivi régulier doit être proposé aux enfants porteurs d'une trisomie 21 ?
+#+ATTR_REVEAL: :frag (highlight-green highlight-green highlight-green none highlight-green)
+A. ORL
+B. Ophtalmologique
+C. Cardiaque
+D. Urologique
+E. Orthopédique
+* Chap 27 QCM 3
+Quelle(s) complication(s) est/sont à redouter chez l'adulte trisomique 21 ?
+#+ATTR_REVEAL: :frag (highlight-green highlight-green none none highlight-green)
+A. Sécheresse cutanée
+B. Cataracte
+C. Dysurie
+D. Syndrome parkinsonien
+E. Syndrome démentiel de type Alzheimer
+* Chap 27 QCM 4
+Quelles complications sont à redouter durant la première année de vie chez un(e) enfant porteur/euse de trisomie 21 ?
+
+#+ATTR_REVEAL: :frag (highlight-green )
+A. Cataracte
+B. Leucémie aiguë
+C. Syndrome de West
+D. Apnées du sommeil
+E. Maladie cœliaque
+* Chap 27 QCM 5
+Les enfants porteurs de trisomies 21 sont plus fréquemment soumis à :
+#+ATTR_REVEAL: :frag (highlight-green highlight-green none highlight-green highlight-green)
+A. Apnées du sommeil
+B. Infections
+C. Tumeurs solides
+D. Instabilité C1-C2
+E. Diabète
+* Chap 27 QCM 8
+Quelle(s) est(sont) la(les) malformation(s) digestive(s) la(les) plus fréquente(s) chez un nouveau-né trisomique 21 ?
+#+ATTR_REVEAL: :frag ( highlight-green highlight-green highlight-green none)
+A. Imperforation anale
+B. Atrésie duodénale
+C. Atrésie de l'œsophage
+D. Présence d'une rate surnuméraire
+E. Mésentère commun
+* Chap 27 QCS 1
+Le diagnostic de trisomie 21 en période anténatale s'effectue avec :
+#+ATTR_REVEAL: :frag (none none none none highlight-green)
+A. Le dosage des marqueurs sériques maternels
+B. L'échographie
+C. L'âge de la mère
+D. L'âge du père
+E. Le caryotype fœtal
+* Chap 27 QCS 2
+Quelle est la malformation à rechercher en priorité à la naissance chez un enfant porteur de trisomie 21 ?
+#+ATTR_REVEAL: :frag (highlight-green none)
+A. Cardiaque
+B. Digestive
+C. Rénale
+D. Cérébrale
+E. Vertébrale
+* Chap 27 QCS 3
+Quel organisme est chargé de l'orientation des enfants trisomiques 21 ?
+A. SESSAD
+B. CAMSP
+C. MDPH
+D. CLIS
+E. CDES
+* Chap 27 QCS 4
+Quelle complication biologique doit être recherchée régulièrement chez les enfants porteurs de trisomie 21 ?
+#+ATTR_REVEAL: :frag (none none highlight-green none)
+A. Hyperuricémie
+B. Anémie
+C. Hypothyroïdie
+D. Hypernatrémie
+E. Protéinurie
+* Chap 27 QCS 5
+Quelle complication néoplasique est à redouter particulièrement chez les enfants porteurs de trisomie 21 ?
+#+ATTR_REVEAL: :frag (none none none highlight-green none)
+A. Lymphome
+B. Sarcome
+C. Tumeur cérébrale
+D. Leucémie aiguë myéloïde
+E. Hépatocarcinome
+* TODO QCS 7 :noexport:
+Quel est le risque de récurrence de trisomie 21 pour un couple ayant eu un enfant porteur de trisomie 21 secondaire à une mauvaise disjonction d'une translocation 14 ; 21 d'origine maternelle ?
+A. 1 %
+B. 100 %
+C. 50 %
+D. 15 %
+E. 3 %
+QCS 8
+Quel est le risque de récurrence de trisomie 21 pour un couple ayant eu un enfant porteur d'une trisomie 21 libre et homogène ? L'âge de la femme est de 30ans :
+A. 1 %
+B. 100 %
+C. 50 %
+D. 15 %
+E. 2 %
+QCS 9
+Trisomie 21 et procréation :
+A. Les adultes porteurs de trisomies 21 sont stériles
+B. Les enfants nés d'hommes trisomiques 21 sont tous porteurs de T21
+C. Seulement les hommes porteurs de T21 sont stériles
+D. Les personnes trisomiques 21 (T21 libre) ont un risque théorique de 50 % de conception trisomique 21
+E. Les femmes trisomiques 21 n'ont pas de risque de donner naissance à un enfant trisomique 21
+QCS 10
+Les enfants porteurs de trisomie 21 :
+A. N'acquièrent jamais la marche
+B. Acquièrent le langage à la même période que les enfants non trisomiques
+C. Ont une sensibilité à la douleur augmentée
+D. Ne doivent pas être vaccinés
+E. Peuvent réagir différemment à certains médicaments
+QCS 11
+La trisomie 21 :
+A. Touche uniquement les populations européennes
+B. Est la première cause de déficience intellectuelle d'origine génétique
+C. Est médicalement nommé « mongolisme »
+D. Est une pathologie acquise
+E. Ne peut pas être diagnostiqué en période néonatale
+* TODO Chap 28 :noexport:
+QCM 1
+La mucoviscidose est diagnostiquée classiquement en France :
+A. Sur signes cliniques de bronchopathie chronique dans les premières années de vie
+B. Au cours du suivi échographique de la grossesse par la découverte d'un intestin hyperéchogène
+C. Par un dépistage systématique des nouveau-nés au troisième jour de vie
+QCS 1
+La mucoviscidose est une maladie monogénique :
+A. Qui se transmet selon un mode de transmission dominant
+B. Qui se transmet selon un mode de transmission récessif lié à l'X
+C. Qui se transmet selon un mode de transmission autosomique récessif avec une pénétrance incomplète
+D. Qui se transmet selon un mode de transmission récessif avec pénétrance complète
+QCS 2
+Le gène de la mucoviscidose (le gène CFTR) a été cloné :
+A. Grâce à une stratégie gène candidat
+B. Par une étude réussie de GWAS (pour genome-wide association study)
+C. Par une étude directe en s'appuyant sur la connaissance de la séquence de la protéine
+D. Par une stratégie de clonage positionnel
+QCS 3
+La fréquence des porteurs à l'état hétérozygote d'une mutation dans le gène CFTR dans la population française est de :
+A. 1/100
+B. 1/50
+C. 1/30
+D. 1/500
+QCS 4
+Quel est le risque pour un couple pris au hasard dans la population de donner naissance à un enfant atteint de mucoviscidose ?
+A. 1/10 000
+B. 1/4 000
+C. 1/50 000
+QCS 5
+Quel est le risque a priori de donner naissance à un enfant atteint pour un couple dont l'un des conjoints est porteur d'une mutation dans le gène CFTR :
+A. 1/60
+B. 1/120
+C. 1/240
+D. 1/500
+QCS 6
+Quel est le risque a priori d'être porteur d'une mutation dans le gène CFTR pour le frère non malade d'un sujet atteint :
+A. 1/2
+B. 2/3
+C. 1/4
+D. 1/8
+QCS 7
+La mutation F508del (p.Phe508del) est la mutation la plus fréquente du gène CFTR. Il s'agit :
+A. D'une mutation d'épissage
+B. D'une mutation troncative
+C. D'une délétion rompant le cadre de lecture
+D. D'une délétion respectant le cadre de lecture
+QCS 8
+La majorité des 2 000 mutations identifiées dans le gène CFTR responsable de la mucoviscidose sont des mutations :
+A. Faux-sens
+B. Non-sens
+C. Des insertions/délétions
+D. Des expansions de triplets
+E. Des grands réarrangements génomiques
+* Chap 29
+QCM 1
+Concernant le syndrome de l'X fragile, quelles sont les propositions vraies ?
+A. Il s'agit de la forme de déficience intellectuelle d'origine génétique la plus fréquente
+B. La macro-orchidie est un élément essentiel du diagnostic chez les jeunes garçons
+C. Les patients présentent souvent des troubles du spectre autistique
+D. Certains patients ont un QI dans les normes
+E. Les conductrices peuvent présenter une déficience intellectuelle
+QCM 2
+Concernant les prémutations du gène FMR1, quelles sont les propositions vraies ?
+A. Elles correspondent aux allèles comportant 55 à 250 répétitions CGG
+B. Le risque qu'elles soient transmises par un homme porteur à toutes ses filles est proche de 100 %
+C. Elles sont associées à un risque d'insuffisance ovarienne prématurée
+D. Le risque de syndrome neurodégénératif à début tardif (FXTAS) ne concerne que les hommes
+E. Elles peuvent passer à la mutation complète lors d'une transmission paternelle
+QCS 1
+Concernant le syndrome de l'X fragile, quelles sont les propositions vraies ?
+A. Il est peut-être causé par une mutation ponctuelle du gène FMR1
+B. Les mutations surviennent le plus souvent de novo
+C. La CGH-array confirme le diagnostic chez la plupart des patients
+D. Les caractéristiques faciales ne sont ni constantes ni spécifiques
+E. Le diagnostic prénatal peut être proposé à une femme dont le conjoint est porteur d'une prémutation
+* Bonus : PEC BRCA
+Prise en charge des femmes porteuses d'une mutation d'un gène BRCA
+- À partir de 20 ans, palpation des seins et des creux axillaires tous les 6 mois.
+- À partir de 30 ans, ou 5 ans avant le cas de cancer du sein s'il existe un cas avant 30 ans, IRM mammaire annuelle, complétée d'une seule incidence de mammographie.
+- Avant 40 ans, en particulier chez les porteuses d'une mutation de BRCA1, après information, temps de réflexion et accompagnement psychologique mastectomie prophylactique.
+- Après 40 ans et tout projet parental, annexectomie prophylactique.
+* Bonus: Lynch
+#+attr_html: :width 800 px
+[[./img/lynch.png]]
+
+* Bonus: PEC MMR
+Prise en charge des porteurs et porteuses d'une mutation d'un gène MMR
+- À partir de 20 ans, chromocoloscopie complète tous les deux ans.
+- À partir de 30 ans, échographie endovaginale avec prélèvement endométrial par Pipelle de Cornier tous les deux ans.
+- Après 40 ans et accomplissement du projet parental, hystérectomie avec ovariectomie prophylactique.
+* Bonus: noms des gènes
+| Forme héréditaire de cancer                                | Gène         | Name                                       |
+|------------------------------------------------------------+--------------+--------------------------------------------|
+| I. Activation constitutive de la cascade de transduction   |              |                                            |
+|------------------------------------------------------------+--------------+--------------------------------------------|
+| Cancer médullaire de la thyroïde (CMT)                     | RET          | REarranged during Transfection             |
+| Cancer papillaire du rein                                  | MET          | Mesenchymal Epithelial Transition          |
+| Maladie de Cowden                                          | PTEN         | Phosphatase and TENsin homolog,            |
+| Maladie de Von Hippel Lindau                               | VHL          | idem                                       |
+| Médulloblastome                                            | SUFU         | Suppressor Of Fused Homolog (hedgehog !)   |
+| Neurofibromatose de type I                                 | NF1          | idem                                       |
+| Polypose adénomateuse familiale                            | APC          | Adenomatous Polyposis coli                 |
+| Syndrome de Gorlin                                         | PTCH         | PaTCH                                      |
+| Tumeur de Wilms                                            | WT1          | Wil's Tumor                                |
+
+* Bonus 2
+|------------------------------------------------------------+--------------+--------------------------------------------|
+| II. Altération des points de contrôles du cycle cellulaire |              |                                            |
+|------------------------------------------------------------+--------------+--------------------------------------------|
+| Rétinoblastome                                             | RB1          | idem                                       |
+| Mélanome malin                                             | CDKN2A       | Cyclin Dependent Kinase Inhibitor          |
+| Syndrome de Li-Fraumeni                                    | TP53         | Tumor Protein                              |
+|------------------------------------------------------------+--------------+--------------------------------------------|
+| III. Altération des systèmes de réparation de l'ADN        |              |                                            |
+|------------------------------------------------------------+--------------+--------------------------------------------|
+| Cancer du sein et de l'ovaire                              | BRCA1, BRCA2 | BReast CAncer                              |
+| Polypose adénomateuse autosomique récessive                | MUTYH        | Mut Y DNA glycosylase                      |
+|                                                            | MLH1         | MuLt Homolog                               |
+| Syndrome de Lynch                                          | MSH          | DNA repair MiSmatcH                        |
+| Xeroderma pigmentosum                                      | XP           | idem                                       |
+|------------------------------------------------------------+--------------+--------------------------------------------|
+
+* Bonus 3
+
+| Autres                          |           |                                            |
+|---------------------------------+-----------+--------------------------------------------|
+| Cancers bronchiques             | ALK       | Activin receptor-Like Kinase 1             |
+| Carcinomes colique, bronchiques | KRAS      | Kirsten RAt Sarcoma viral oncogene homolog |
+| Carcinomes sein, ovaire         | HER2      | Human Epidermal growth factor Receptor 2   |
+| Carcinomes+++, gliomes          | EGFR      | Epidermal Growth Factor Receptor           |
+| GastroIntestinal STromal Tumor  | KIT       |                                            |
+| Leucémies aigües myéloïdes      | FLT3      | Fms-Like Tyrosine kinase 3                 |
+| Leucémies, mélanomes            | NRAS      | Neuroblastoma-RAS                          |
+| Lymphome de Burkitt             | C-MYC     | Cellular MYeloCytomatosis                  |
+| Lymphomes du manteau            | Cycline D |                                            |
+| Mélanome                        | CD4       | Cluster of differentiation 4               |
+| Mélanomes                       | BRAF      |                                            |
+| Neuroblastomes                  | N-MYC     |                                            |
+| Sarcomes, gliomes               | PDGFR     | Platelet-derived growth factor receptors   |
+* Corrigés :noexport:
+Entraînement 2
+Chapitre 2
+QCM 5 : A, B, E
+QCM 6 : B, C, D
+Entraînement 4
+Chapitre 4
+QCM 1 : B, D
+
+Chapitre 5
+QCM 1 : B, E
+QCM 2 : B, C
+QCS 1 : D
+QCS 2 : E
+QCS 3 : C
+Entraînement 6
+Chapitre 6
+
+QCM 1 : A, C, D
+
+QCM 2 : A, D
+
+QCM 3 : B, C
+
+QCM 4 : A, C, D
+
+QCM 5 : A, B, D
+
+QCM 6 : A, C
+
+QCS 1 : B
+
+QCS 2 : B
+Entraînement 7
+Chapitre 7
+
+QCM 1 : A, B
+
+QCM 2 : B, D
+
+QCM 3 : A, C, E
+
+QCS 1 : A
+Entraînement 8
+Chapitre 8
+Hémopathies malignes
+
+QCS 1 : E
+
+QCS 2 : D
+Tumeurs solides
+
+QCM 1 : B, D
+
+QCM 2 : A, B, D
+
+QCM 3 : A, C, D
+
+QCS 1 : C
+Divers
+
+QCM 1 : A, B
+Entraînement 9
+Chapitre 9
+
+QCM 1 : A, C, D
+
+QCM 2 : A, B, E
+
+QCM 3 : A, B, C, D, E
+
+QCM 4 : A, B, C, E
+
+QCM 5 : B, C
+
+QCM 6 : A, B, C
+
+QCM 7 : B, C, D
+
+QCM 8 : B, D
+
+QCS 1 : E
+
+QCS 2 : E
+
+QCS 3 : A
+Entraînement 10
+Chapitre 10
+
+QCM 1 : A, B, C, D
+
+QCM 2 : A, B, C, D, E
+
+QCM 3 : A, B, D, E
+
+QCM 4 : A, B, C, D
+
+QCM 5 : A, B, D
+
+QCM 6 : A, B, C, E
+
+QCM 7 : A, B, C, D, E
+
+QCM 8 : A, C, D
+
+QCM 9 : C, D
+
+QCM 10 : A, C, E
+
+QCM 11 : A, B
+
+QCM 12 : C, D, E
+
+QCM 13 : B, C, D, E
+
+QCS 1 : C
+Entraînement 11
+Chapitre 11
+
+QCM 1 : B, C, E
+
+QCM 2 : A, B, D
+
+QCM 3 : A, E
+
+QCM 4 : B, C, D
+
+QCM 5 : A, D, E
+
+QCM 6 : B, C
+
+QCM 7 : A, D, E
+
+QCM 8 : C, D, E
+
+QCM 9 : A, B, D, E
+
+QCM 10 : A, C, E
+Entraînement 12
+Chapitre 12
+
+QCM 1 : D, E
+Entraînement 13
+Chapitre 13
+
+QCM 1 : A, B
+
+QCS 1 : B
+
+QCS 2 : C
+
+QCS 3 : B
+
+QCS 4 : E
+
+QCS 5 : D
+Entraînement 14
+Chapitre 14
+
+QCM 1 : B, D
+
+QCM 2 : D, E
+Entraînement 15
+Chapitre 15
+
+QCM 1 : B, C, E
+
+QCM 2 : B, C, E
+
+QCM 3 : A, C, E
+
+QCM 4 : A, B, C
+
+QCM 5 : A, C, E
+Entraînement 16
+Chapitre 16
+
+QCM 1 : B, C, E
+
+QCM 2 : B, D, E
+
+QCM 3 : A, B, C, E
+
+QCM 4 : A, C, D
+
+QCM 5 : A, B, D, E
+Entraînement 17
+Chapitre 17
+
+QCM 1 : B, C, D
+
+QCM 2 : B, D
+
+QCM 3 : A, C, D, E
+
+QCS1 : A
+Entraînement 18
+Chapitre 18
+
+QROC 1 :
+
+- primauté de l'individu sur la société ;
+
+- partage de l'information au sein de la famille ;
+
+- droit à l'information ;
+
+- recueil du consentement par écrit ;
+
+- protection des personnes incapables de consentir ;
+
+- droit de ne pas savoir ;
+
+- utilité clinique et qualité des tests ;
+
+- droit à un suivi médical individualisé et au conseil génétique ;
+
+- respect de la confidentialité et de la vie privée ;
+
+- égalité d'accès aux soins.
+
+QROC 2 :
+
+- avant la réalisation du test, une information détaillée doit être délivrée à la personne lors d'une consultation individuelle, en face-à-face avec un médecin spécialisé connaissant la maladie et ses aspects génétiques ;
+
+- cette information devra être « loyale, claire, appropriée » et adaptée au niveau de compréhension afin de permettre une décision éclairée ;
+
+- elle sera complétée, en expliquant le caractère héréditaire des maladies génétiques et le devoir de transmettre, le cas échéant, l'information aux apparentés.
+
+QROC 3 :
+
+- à l'issue des analyses, sauf volonté exprimée d'être tenue dans l'ignorance du diagnostic, le patient est informé des résultats obtenus de façon « loyale, claire, appropriée » et adaptée au niveau de compréhension ;
+
+- seul le médecin prescripteur est habilité à rendre ces résultats lors d'une consultation individuelle ;
+
+- les éléments d'informations communiqués doivent être résumés dans un document écrit.
+
+QROC 4 : dans le cas de maladies héréditaires. La situation qui impose de se préoccuper d'informer la parentèle est ainsi décrite : « si une anomalie génétique grave dont les conséquences sont susceptibles de mesures de prévention, y compris de conseil génétique, ou de soins était diagnostiquée. »
+
+QROC 5 : ce devoir d'information de la parentèle échoit en priorité au consultant. Le médecin doit aider la personne à transmettre l'information aux membres de sa famille, en désignant les personnes à risque et en remettant un résumé écrit des données à transmettre. Si la personne ne souhaite pas informer elle-même les membres de sa famille, elle peut demander par écrit au médecin prescripteur de procéder à cette information.
+
+QROC 6 :
+
+- le recueil du consentement de leurs représentants légaux est nécessaire, à savoir pour les mineurs, les titulaires de l'autorité parentale et, pour les majeurs sous tutelle, le tuteur ;
+
+- dans tous les cas, leur assentiment à la réalisation de l'examen est également recherché, dans la mesure du possible, en fonction de leur degré de maturité et/ou de leur capacité de discernement ;
+
+- les examens peuvent être prescrits chez un mineur ou chez un majeur sous tutelle si celui-ci ou sa famille peuvent personnellement bénéficier de mesures préventives ou curatives immédiates.
+Entraînement 19
+Chapitre 19
+
+QROC 1 : le terme d'eugénisme a été inventé en 1883 par Francis Galton, cousin de Charles Darwin. Étymologiquement, on retrouve les termes grecs : eu qui signifie « bon » et genos qui signifie « naissance ». Ce mot désigne l'ensemble des méthodes (biologiques, génétiques, etc.) et pratiques (médicales, sociales, morales, etc.) dont l'objectif est d'améliorer le patrimoine génétique de l'espèce humaine.
+
+QROC 2 : en effet, en France, depuis la loi du 17 janvier 1975 (loi Veil), l'interruption de grossesse pour motif médical (IMG) est possible à tout moment de la grossesse, en particulier lorsqu'« existe une forte probabilité que l'enfant à naître soit atteint d'une affection d'une particulière gravité, reconnue comme incurable au moment du diagnostic ».
+
+QROC 3 :
+
+- discussion collégiale pour toute décision d'IMG et toute indication de recours au DPI ;
+
+- missions d'expertise (sur la conduite à tenir en cas de suspicion d'une affection fœtale) ;
+
+- mission de santé publique (organiser des actions de formation, favoriser l'égal accès de tous au DPN et au DPI).
+
+QROC 4 :
+
+- discussion transdisciplinaire (praticiens en gynécologie-obstétrique, échographie obstétricale, génétique médicale et néonatologie/pédiatrie, psychologues, conseillers en génétique, etc.) ;
+
+- prise en compte de l'avis de la femme enceinte après qu'elle ait été correctement informée ;
+
+- analyse au cas par cas, de façon contextualisée ;
+
+- respect de la loi de bioéthique.
+
+QROC 5 :
+
+- s'interroger sur les procédures d'information et de recueil du consentement en situation d'incertitude ;
+
+- harmoniser des pratiques entre laboratoires par le biais de guidelines ;
+
+- définir les compétences et l'expertise à acquérir (pour les biologistes en charge du rendu des résultats mais aussi pour les prescripteurs en charge de l'information) ;
+
+- organiser échanges et collaborations entre les cliniciens prescripteurs et les biologistes pour une juste interprétation des données du séquençage dans le meilleur intérêt du patient.
+Entraînement 20
+Chapitre 20
+
+QCM 1 : A, D, E
+
+QCM 2 : A, B, C
+
+QCM 3 : B, D
+
+QCM 4 : A, D, E
+
+QCM 5 : B, D, E
+
+QCM 6 : C, D, E
+
+QCM 7 : A, B, D
+
+QCS 1 : C
+Entraînement 21
+Chapitre 22
+
+QCM 1 :
+
+A. Faux. Les répétitions en cause dans les gènes responsables de ces maladies sont polymorphiques dans la population générale. Il existe un seuil d'instabilité et un seuil de pathogénicité et les allèles au-dessus du seuil d'instabilité sont considérés comme anormaux (et parfois nommés prémutation, par exemple dans le cas du gène impliqué dans le syndrome de l'X fragile). Une néomutation serait le passage d'un allèle normal à un allèle au-dessus du seuil de pathogénicité, ce qui n'est pas observé.
+
+B. Faux. Le mécanisme pathologique peut être un gain de propriété toxique de la protéine mutée mais aussi un gain de propriété toxique de l'ARN ou encore une perte de fonction du gène.
+
+C. Faux. Les mutations peuvent se situer dans les régions promoteurs, les régions 5' et 3' transcrites mais non traduites, ainsi que dans les introns des gènes.
+
+D. Vrai. Par ailleurs, le risque d'avoir un enfant atteint augmente de génération en génération pour le cas par exemple du syndrome X fragile.
+
+QCM 2 :
+
+A. Faux. Le mécanisme pathologique en cause dans FXS est une perte de fonction du gène lié à un nombre de répétitions supérieur à 200 CGG, associé à une méthylation anormale de la région promoteur. Il y a perte de fonction chez les deux frères.
+
+B. Vrai. La femme I.2 a 50 % de probabilité de transmettre son allèle normal à chaque grossesse. Si elle transmet son allèle prémuté, il peut rester prémuté ou subir une transition en mutation complète. La probabilité de transition augmente avec la taille de l'allèle maternel et est de 100 % au-delà d'une prémutation maternelle de 100 CGG.
+
+C. Faux. La femme I.2 a pu hériter sa prémutation de son père ou de sa mère. La prémutation est liée au syndrome neurologique FXTAS avec une pénétrance incomplète. Une recherche de prémutation couplée à un bilan clinique incluant une IRM cérébrale peut être proposée au père de I.2 pour déterminer si un FXTAS peut être à l'origine de ses troubles.
+
+D. Faux. Environ la moitié des filles porteuses d'une mutation complète seront atteintes du FXS et en général avec une atteinte plus modérée que celle observée chez les garçons. Il n'est pas possible de préciser le pronostic en diagnostic prénatal.
+
+QCM 3 :
+
+A. Faux. L'un des parents est effectivement porteur car il n'y a pas de néomutation mais seules les femmes peuvent transmettent une mutation complète : la mère d'un patient atteint du FXS est conductrice obligatoire, quel que soit le sexe du patient. Elle peut être prémutée ou bien mutée (même si elle ne présente pas de déficience intellectuelle). Sans besoin de tester II.3 au préalable, il y a lieu d'informer II.2 de son risque a priori d'être conductrice.
+
+B. Vrai. Si II.3 est prémutée, elle a reçu sa prémutation de son père I.1 ou de sa mère I.2. Un homme prémuté transmet sa prémutation à toutes ses filles (car FMR1 est sur le chromosome X) donc le risque pour II.1 serait de 100 %. Une femme prémutée transmet sa prémutation dans 50 % des cas. Sans connaître l'origine parentale de la prémutation de II.3, le risque pour sa sœur de l'avoir héritée aussi est donc de 75 %.
+
+C. Vrai. Les femmes porteuses d'une prémutation peuvent présenter une insuffisance ovarienne précoce et notamment 20 % d'entre elles présentent une ménopause précoce.
+
+D. Faux. Il est vrai que la mutation ne rétracte pratiquement jamais, mais :
+
+- les garçons atteints de FXS n'ont pratiquement jamais d'enfants du fait de leur atteinte cognitive. Dans les rares cas décrits, leurs fils sont normaux (héritent du chromosome Y) et leurs filles sont prémutées (du fait d'une rétraction de la répétition durant la spermatogénèse) ;
+
+- la moitié des fils et filles des femmes porteuses d'une mutation complète héritent l'allèle maternel normal.
+
+QCM 4 :
+
+A. Vrai. Les deux sexes sont atteints et transmettent la maladie et on observe également une transmission verticale père-fils.
+
+B. Vrai. Le mode de transmission est autosomique dominant et la pénétrance complète
+
+C. Faux. En France, le diagnostic prénatal est autorisé. La maladie de Huntington est une maladie qui répond aux critères de réalisation d'un diagnostic prénatal : « maladie d'une particulière gravité, incurable au moment du diagnostic ». Par ailleurs 6 % des patients présentent une forme juvénile.
+
+D. Faux. L'individu II.7 est à risque d'être porteur de la mutation familiale mais pas encore malade.
+
+QCM 5 :
+
+A. Faux. L'individu II.3 peut avoir hérité la mutation maternelle et déclarer la maladie dans les années à venir. Dans la maladie de Huntington, il existe un biais paternel d'anticipation, avec un risque d'avoir un enfant atteint d'une forme juvénile, qui peut donc déclarer la maladie avant son père.
+
+B. Faux. Il existe une corrélation entre le nombre de répétitions et l'âge d'apparition de la maladie, mais une prédiction individuelle n'est pas possible, exceptée pour les tailles de mutations les plus petites ou les plus grandes qui sont associées à une expression tardive ou juvénile.
+
+C. Faux. L'enfant III.4 peut avoir hérité la mutation paternelle sans biais majeur d'instabilité et déclarer une forme adulte de la maladie.
+
+D. Faux. Le diagnostic présymptomatique est autorisé chez les mineurs seulement en cas de bénéfice pour la prise en charge ou un traitement avant l'âge de 18 ans, ce qui n'est pas le cas de la maladie de Huntington.
+
+QCM 6 :
+
+A. Faux. Les signes cliniques observés et l'aggravation de génération en génération sont fortement évocateurs d'une myotonie de Steinert et du phénomène d'anticipation.
+
+B. Vrai. Le nombre de répétitions CTG est corrélé à l'expression de la maladie (âge d'apparition et gravité).
+
+C. Faux. Le risque de transmettre l'allèle maternel avec la mutation est de 50 % et lors d'une transmission maternelle, il y a un risque d'instabilité majeur et un risque d'avoir un enfant atteint de la forme congénitale. La forme congénitale n'est pas exceptionnelle.
+
+D. Faux. Il existe une corrélation entre le nombre de répétitions CTG et la forme clinique, mais une prédiction individuelle n'est pas possible.
+
+QCM 7 :
+
+A. Faux. C'est la plus fréquente des dystrophies musculaires de l'adulte.
+
+B. Vrai. C'est le cas pour la forme minime à début tardif.
+
+C. Vrai. C'est le phénomène d'anticipation.
+
+D. Faux. Il peut y avoir une atteinte cognitive modérée dans la forme classique et sévère dans la forme congénitale.
+Entraînement 22
+Chapitre 23
+
+QCM 1 : C, D, E
+
+QCM 2 : A, B, D, E
+
+QCM 3 : B, E
+
+QCM 4 : B, D, E
+
+QCM 5 : A, B, C, D
+
+QCM 6 : B, D, E
+
+QCM 7 : B, E
+
+QCS 1 : E
+Entraînement 23
+Chapitre 25
+
+QCM 1 : A, D, E
+
+QCM 2 : B, C, D, E
+
+QCM 3 : D, E
+
+QCM 4 : A, C, D, E
+
+QCM 5 : B, C, D, E
+Entraînement 24
+Chapitre 26
+
+QCM 1 : A, C, D
+
+QCM 2 : A, B
+
+QCM 3 : A, B, C, D
+
+QCM 4 : A, C
+
+QCM 5 : D, E
+
+QCM 6 : B, C, D
+Entraînement 25
+Chapitre 27
+
+QCM 1 : A, B
+
+QCM 2 : A, B, C, E
+
+QCM 3 : A, B, E
+
+QCM 4 : A, B, C, D, E
+
+QCM 5 : A, B, D, E
+
+QCM 6 : B, C
+
+QCM 7 : C, D
+
+QCM 8 : A, B, C
+
+QCM 9 : D, E
+
+QCS 1 : E
+
+QCS 2 : A
+
+QCS 3 : C
+
+QCS 4 : C
+
+QCS 5 : D
+
+QCS 6 : D
+
+QCS 7 : D
+
+QCS 8 : A
+
+QCS 9 : D
+
+QCS 10 : E
+
+QCS 11 : B
+Entraînement 26
+Chapitre 28
+
+QCM 1 : A, B, C
+
+QCS 1 : D
+
+QCS 2 : D
+
+QCS 3 : C
+
+QCS 4 : B
+
+QCS 5 : C
+
+QCS 6 : B
+
+QCS 7 : D
+
+QCS 8 : A
+Entraînement 27
+Chapitre 29
+
+QCM 1 : C, D, E
+
+QCM 2 : A, B, C
+
+QCS 1 : D

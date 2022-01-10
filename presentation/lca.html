@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Lca</title>
+<meta name="author" content="Alexis"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="reveal.js/dist/theme/black.css" id="theme"/>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<style type="text/css">
+ol#li { list-style-type: upper-alpha; }
+</style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1 class="title">Lca</h1>
+</section>
+<section>
+<section id="slide-orgbca3bfd">
+<h2 id="orgbca3bfd">Odd et risque</h2>
+<ul>
+<li>Odd = cote (ou <b>chance</b>). Pour les courses de chevaux, Black Bounty a une cote de 1/500</li>
+<li>Risque = <b>probabilité</b></li>
+
+</ul>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides" class="fragment (t)">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-right">Covid</th>
+<th scope="col" class="org-right">Pas de covid</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">chocolat</td>
+<td class="org-right">6</td>
+<td class="org-right">1000</td>
+</tr>
+
+<tr>
+<td class="org-left">pas de chocolat</td>
+<td class="org-right">200</td>
+<td class="org-right">177777</td>
+</tr>
+</tbody>
+</table>
+
+<p class="fragment (t)">
+Risque d&rsquo;avoir le covid en ayant mangé du chocolat \[\frac{6}{6 + 1000}\]
+Cote d&rsquo;avoir le covid en ayant mangé du chocolat \[\frac{6}{1000}\]
+</p>
+
+
+<div id="org1bc9be7" class="figure">
+<p><object type="image/svg+xml" data="./img/probability_vs_odds.svg" class="fragment (t)" width="500px">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgf8c8765">
+<h2 id="orgf8c8765">Odd ratio et risque relatif</h2>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-right">Covid</th>
+<th scope="col" class="org-right">Pas de covid</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">chocolat</td>
+<td class="org-right">6</td>
+<td class="org-right">1000</td>
+</tr>
+
+<tr>
+<td class="org-left">pas de chocolat</td>
+<td class="org-right">200</td>
+<td class="org-right">177777</td>
+</tr>
+</tbody>
+</table>
+
+
+<ul>
+<li>risque relatif =</li>
+
+</ul>
+<p>
+\[
+\frac{\textrm{risque d'avoir le covid en ayant mangé du chocolat}}{\textrm{risque de l'avoir *sans* chocolat}} =\frac{\frac{6}{6+1000}}{\frac{200}{200+177777}} = 5.31\]
+</p>
+
+<ul>
+<li class="fragment">odd ratio = \[\frac{\textrm{chance d'avoir le covid en ayant mangé du chocolat}}{\textrm{chance de l'avoir *sans* chocolat}} = \frac{\frac{6}{1000}}{\frac{200}{177777}} = 5.33\]</li>
+
+</ul>
+
+<p class="fragment (t)">
+Pareil ?
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgea4fdcd">
+<h2 id="orgea4fdcd">Avantage de l&rsquo;odd ratio</h2>
+<p>
+On peut raisonner sur un échantillon ! On compte tous les cas covid et on fait un échantillions des cas non covid. Par exemple
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-right">Covid</th>
+<th scope="col" class="org-right">Pas de covid</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">chocolat</td>
+<td class="org-right">6</td>
+<td class="org-right">1000</td>
+</tr>
+
+<tr>
+<td class="org-left">pas de chocolat</td>
+<td class="org-right">200</td>
+<td class="org-right">177777</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+devient
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-right">Covid</th>
+<th scope="col" class="org-right">Pas de covid</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">chocolat</td>
+<td class="org-right">6</td>
+<td class="org-right">10</td>
+</tr>
+
+<tr>
+<td class="org-left">pas de chocolat</td>
+<td class="org-right">200</td>
+<td class="org-right">1700</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Quel serait l&rsquo;odd ratio ?
+</p>
+<p class="fragment (t)">
+\[\frac{\frac{6}{100}}{\frac{200}{1700}} = 5.1\]
+</p>
+
+<p>
+Hypothèse : cas rares&#x2026;
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="reveal.js/dist/reveal.js"></script>
+<script src="reveal.js/plugin/markdown/markdown.js"></script>
+<script src="reveal.js/plugin/notes/notes.js"></script>
+<script src="reveal.js/plugin/search/search.js"></script>
+<script src="reveal.js/plugin/zoom/zoom.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+width: 2100,
+height: 1500,
+
+transition: 'nil',
+transitionSpeed: 'default',
+
+// Plugins with reveal.js 4.x
+plugins: [ RevealMarkdown, RevealNotes, RevealSearch, RevealZoom ],
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+]
+
+});
+</script>
+</body>
+</html>

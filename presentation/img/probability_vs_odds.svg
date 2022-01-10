@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="-440 -60 500 250">
+ <title>probability vs odds</title>
+ <desc>Comparison of probability and odds by CMG Lee.</desc>
+ <defs>
+  <g id="p">
+   <path d="M 0,0 L -30,-40 A 50,50 0,0,0 -30,40 Z" fill="#000000" stroke="#999999"/>
+   <text x="-30" y="0.4ex" font-style="italic" fill="#ffffff">p</text>
+  </g>
+  <g id="q">
+   <path d="M 0,0 L -30,-40 A 50,50 0,1,1 -30,40 Z" fill="#ffffff" stroke="#999999"/>
+   <text  x="20" y="0.4ex" font-style="italic" fill="#000000">q</text>
+  </g>
+ </defs>
+ <circle cx="0" cy="0" r="99999" fill="#ffffff"/>
+ <g font-family="Helvetica,Arial,sans-serif" font-size="40" text-anchor="middle" fill="#000000" stroke="none" stroke-width="2">
+  <g>
+   <use xlink:href="#p" transform="translate(-70,0)"/>
+   <use xlink:href="#p"/>
+   <use xlink:href="#q"/>
+   <text x="-60" y="0.6ex">/</text>
+   <text transform="translate(-180,0)"><tspan x="-160" dy="-0.5ex">Probability</tspan
+    ><tspan x="0" font-style="italic">p</tspan><tspan x="0" dy="0.2ex">___</tspan
+    ><tspan x="-55" dy="1ex">=</tspan><tspan x="-160" dy="0.8ex">or risk</tspan
+    ><tspan x="0"><tspan font-style="italic">p</tspan><tspan dx="0.2ex">+</tspan
+    ><tspan font-style="italic">q</tspan></tspan></text>
+  </g>
+  <g transform="translate(0,130)">
+   <use xlink:href="#p" transform="translate(-70,0)"/>
+   <use xlink:href="#q"/>
+   <text x="-45" y="0.6ex">:</text>
+   <text transform="translate(-180,0)"><tspan x="-160" dy="0.4ex">Odds</tspan
+    ><tspan x="-55">=</tspan><tspan x="0"
+    ><tspan font-style="italic">p</tspan><tspan dx="0.4ex">:</tspan
+    ><tspan font-style="italic" dx="0.2ex">q</tspan></tspan></text>
+  </g>
+ </g>
+</svg>

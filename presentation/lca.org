@@ -1,0 +1,64 @@
+#+TITLE: Lca
+#+OPTIONS: toc:nil timestamp:nil num:nil author:nil
+#+OPTIONS: reveal_width:2100 reveal_height:1500
+#+HTML_HEAD: <style type="text/css">
+#+HTML_HEAD:  ol#li { list-style-type: upper-alpha; }
+#+HTML_HEAD: </style>
+#+REVEAL_TRANS: nil
+#+REVEAL_ROOT: reveal.js/
+* Odd et risque
+- Odd = cote (ou *chance*). Pour les courses de chevaux, Black Bounty a une cote de 1/500
+- Risque = *probabilité*
+
+#+ATTR_REVEAL: :frag (t)
+|                 | Covid | Pas de covid |
+|-----------------+-------+--------------|
+| chocolat        |     6 |         1000 |
+| pas de chocolat |   200 |       177777 |
+
+#+ATTR_REVEAL: :frag (t)
+Risque d'avoir le covid en ayant mangé du chocolat $$\frac{6}{6 + 1000}$$
+Cote d'avoir le covid en ayant mangé du chocolat $$\frac{6}{1000}$$
+
+#+ATTR_REVEAL: :frag (t)
+#+attr_html: :width 500px
+[[./img/probability_vs_odds.svg]]
+* Odd ratio et risque relatif
+
+|                 | Covid | Pas de covid |
+|-----------------+-------+--------------|
+| chocolat        |     6 |         1000 |
+| pas de chocolat |   200 |       177777 |
+
+
+- risque relatif =
+\[
+\frac{\textrm{risque d'avoir le covid en ayant mangé du chocolat}}{\textrm{risque de l'avoir *sans* chocolat}} =\frac{\frac{6}{6+1000}}{\frac{200}{200+177777}} = 5.31\]
+
+#+ATTR_REVEAL: :frag (t)
+- odd ratio = \[\frac{\textrm{chance d'avoir le covid en ayant mangé du chocolat}}{\textrm{chance de l'avoir *sans* chocolat}} = \frac{\frac{6}{1000}}{\frac{200}{177777}} = 5.33\]
+
+#+ATTR_REVEAL: :frag (t)
+Pareil ?
+
+* Avantage de l'odd ratio
+On peut raisonner sur un échantillon ! On compte tous les cas covid et on fait un échantillions des cas non covid. Par exemple
+
+|                 | Covid | Pas de covid |
+|-----------------+-------+--------------|
+| chocolat        |     6 |         1000 |
+| pas de chocolat |   200 |       177777 |
+
+devient
+
+|                 | Covid | Pas de covid |
+|-----------------+-------+--------------|
+| chocolat        |     6 |           10 |
+| pas de chocolat |   200 |         1700 |
+
+Quel serait l'odd ratio ?
+#+ATTR_REVEAL: :frag (t)
+\[\frac{\frac{6}{100}}{\frac{200}{1700}} = 5.1\]
+
+#+ATTR_REVEAL: :frag (t)
+Hypothèse : cas rares...
