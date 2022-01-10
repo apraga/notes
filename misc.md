@@ -39,19 +39,3 @@ soit par t~m~ = `\sqrt[12]{1+t}`{=latex}-1 (taux actuariel)
 Au final, la mensualité est M =
 `\frac{C_0 t_m (1+t_m)^n}{(1+t_m)^n - 1}`{=latex}
 
-# Animaux
-
-## Vétérinaire avaire à Metz
-
--   Clinique Grémillon à Essey (suit Loki + perroquets)
--   Vétonimo à Vandoeuvre
--   Lorraine vet à Ludres (service d\'urgence 24/24). Vu Dr Breuil déjà
-    : 0383263292
--   Rien à Metz même : Luxembourg ou Nancy
-
-## Loki
-
--   Infection pulmonaire en 2018 traitée par antibiotique
--   Verfimugé début 2019 par Panacure
--   Bi-thérapie métronidazole et azithromycine fin septembre (bactérie
-    resistante ?)

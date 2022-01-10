@@ -17,7 +17,6 @@
   bloqué sur 8 ans. Une partie est sur des fonds \"sécurisés\", l\'autre
   en bourse.
 
-
 # Blog 
 
 - [ ] emacs_tips.org
@@ -31,15 +30,15 @@ path. Then edit %APPDATA%/pasff .bat python
 And python file in the same directory. Replace pass with gopass and
 \"show\" with \"ls\" (when there are no arguments)
 
-# FreeBSD
-- sphinext-opengraph
-- [X] Vrsion avec LICENSE et tests sur Github {#version-avec-license-et-tests-sur-github}
+# FreeBSD ports
+- [ ] aeso
+## sphinext-opengraph
+- [X] Version avec LICENSE et tests sur Github {#version-avec-license-et-tests-sur-github}
 - [ ] Version avec LICENSE et tests (CHEESESHOP) {#version-avec-license-et-tests-cheeseshop ordered="t"}
   - [PR upstream](https://github.com/wpilibsuite/sphinxext-opengraph/pull/44)
   - [ ] MAJ patch
 
 ## Notes
-
 ### Vérifier avec portlint, formatter avec portfmt
 
 ### PR
@@ -82,77 +81,6 @@ Welcome to the Emacs shell
  poudriere testport -j $i -p default -o x11/kitty }
 
 ```
-
-## WAIT Port pyrocore
-
-Patch:
-
-    --- update-to-head.sh.orig  2021-05-11 12:49:25.311117000 +0200
-    +++ update-to-head.sh   2021-05-11 12:51:07.916518000 +0200
-    @@ -14,7 +14,7 @@
-     # Also adapt "assert sys.version_info" below, and venv creation
-
-     set -e
-    -MY_SUM=$(md5sum "$0" | cut -f1 -d' ')
-    +MY_SUM=$(gmd5sum "$0" | cut -f1 -d' ')
-     PROJECT_ROOT="$(command cd $(dirname "$0") >/dev/null && pwd)"
-     command cd "$PROJECT_ROOT" >/dev/null
-     echo "Installing into $PWD..."
-    @@ -47,7 +47,7 @@
-         MY_SUM="let's start over"
-     fi
-
-    -if test "$MY_SUM" != $(md5sum "$0" | cut -f1 -d' '); then
-    +if test "$MY_SUM" != $(gmd5sum "$0" | cut -f1 -d' '); then
-         echo -e "\n\n*** Update script changed, starting over ***\n"
-         exec "$0" "$@"
-     fi
-
-bash update-to-head.sh python2.7
-
-## WAIT cabal-install 3.6.0.0
-
-On attend GHC 2
-
-Ok manuellement mais dans poudriere, fails to fetch dependencies:
-
-Traceback (most recent call last): File \"bootstrap/bootstrap.py\", line
-389, in \<module> main() File \"bootstrap/bootstrap.py\", line 357, in
-main bootstrap(info, ghc) File \"bootstrap/bootstrap.py\", line 252, in
-bootstrap install~dep~(dep, ghc) File \"bootstrap/bootstrap.py\", line
-177, in install~dep~ (tarball, cabal~file~) =
-fetch~package~(dep.package, dep.version, dep.src~sha256~, File
-\"bootstrap/bootstrap.py\", line 135, in fetch~package~ with
-urllib.request.urlopen(url) as resp: File
-\"/usr/local/lib/python3.8/urllib/request.py\", line 222, in urlopen
-return opener.open(url, data, timeout) File
-\"/usr/local/lib/python3.8/urllib/request.py\", line 525, in open
-response = self.~open~(req, data) File
-\"/usr/local/lib/python3.8/urllib/request.py\", line 542, in ~open~
-result = self.~callchain~(self.handle~open~, protocol, protocol + File
-\"/usr/local/lib/python3.8/urllib/request.py\", line 502, in ~callchain~
-result = func(\*args) File
-\"/usr/local/lib/python3.8/urllib/request.py\", line 1383, in http~open~
-return self.do~open~(http.client.HTTPConnection, req) File
-\"/usr/local/lib/python3.8/urllib/request.py\", line 1357, in do~open~
-raise URLError(err) urllib.error.URLError: \<urlopen error \[Errno 8\]
-hostname nor servname provided, or not known>
-
-### Error code 1
-
-## WAIT agda 2.6.2
-
-## [TODO]{.todo .TODO} elm-format 0.8.5 {#elm-format-0.8.5}
-
-## WAIT ormolu 0.3.0.1
-
-## [TODO]{.todo .TODO} yaml 0.11.6.0 {#yaml-0.11.6.0}
-
-## [TODO]{.todo .TODO} purescript-language-server 0.15.7 {#purescript-language-server-0.15.7}
-
-## WAIT haddock 2.24.0 -\> 2.25.02 {#wait-haddock-2.24.0---2.25.02 archive_time="2021-09-06 Mon 10:14" archive_file="~/code/blog/todo.org" archive_olpath="FreeBSD/MAJ port haskell (no need for aarch64)" archive_category="todo" archive_todo="KILL"}
-
-En attente de GHC 9
 
 # Japanese
 
