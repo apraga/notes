@@ -223,16 +223,44 @@ Subtilité :
 ~林さんは「教徒に行きます」といっていました= directe
 ~林さんは教徒に行くといっていました = indirecte
 
-# 2022-01-08 - 10. Lecon 8
-TODO
+# 2022-01-08 - 10. Lecon 9
+
 ## Vocabulaire
 - 陰性（いんせい）: négatif (test, ex: covid)
 - 陽性 （ようえい）: positif (test, ex: covid)
 - 駅（えき）: gare [peut aussi être utilisée pour le métro, si le contexte est clair 
 - 転ぶ(転ぶ)：tomber de sa hauteur
 - 落ちる（おちる) :tomber (mais de haut)
+Nature
+- 木（き）: arbre
+- 森（もり）: forêt
+- 林（はやし）: forêt
+- 緑（みどり）: verdure
+- 池（いけ）: mare
+- 空気（くうき）: ciel
+- 畑（はたけ) : champ
+- 田んぼ（たんぼ）: rizière
+Urban life
+- マンション: immeuble
+- 道路（どうろ）　道（みち）: route
+- 橋（はし）: pont
+- 工場（こうじょう）: usine
+- 駐車場（ちゅうしゃじょう）: parking
+- 商店街（しょうてんがい）: rue commerciale
+- ガソリンスタンド: pompe à essence
+CHange:
+- できる: être construit
+- なくなる: démolir
+- かわる: changer
+- 楡井なる（きれい）: rénover -　汚くなる（きた）: se dégrader
+- 広くなる（ひろ）devenir plus large - 狭くなる（せま）: devenir plus étroit
 ## Grammaire
-- ～と思います: je pense que X
+
+- ～ と思います:je pense que X
+  Verbe と思います
+  na-ajectif + だ/ではない と思います
+  i-ajectif と思います
 Aは～と思っています: A pense que X (attention !)
+
 - いい -> よくない(négatif) 
 NB: よかった(passé),　よなかった (passé négatif)
