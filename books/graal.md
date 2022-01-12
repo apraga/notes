@@ -2,7 +2,7 @@
 #+roam_tags: review
 Notes sur "Le livre du Graal" de la Pléiade.
 
-* General
+# General
   Il s'agit d'un mythe purement littéraire, sans racine biblique.
   Inventé par Chrétien de Troyes au XIIe siècle, il s'inspire de tradition païenne. Dans l'oeuvre originale, le Graal est simplement décrit comme un plat d'origine mystérieuse.
   L'oeuvre de Chrétient de Troyes (Le /Conte de Graal/) a engendré une myriade d'oeuvres avec leurs propres versions.
@@ -24,12 +24,12 @@ Notes sur "Le livre du Graal" de la Pléiade.
   Troisième point : à part la version de C. de T., il s'agit d'un ensemble disparate de manuscrits qui ont été copiés . La notion d'auteur n'a pas vraiment de sens car les copistes choisissaient et éditaient l'oeuvre également !
   La pléiade a choisit la manuscrit le plus complet et le plus ancien (1286). Cela évite aussi un travail d'édition titanesque (une centaine de manuscrits existents)
 
-* Tome 1
-** Joseph d'Arimathie
+# Tome 1
+## Joseph d'Arimathie
    Préquelle écrite, semble-t-il, après les évènements pour justifier leur origine.
    On voit l'origine du Graal (receuil du sang de Jésus par Joseph) et le transport depuis l'Orient vers la grande-Bretagne. Le style est très biblique, didactique afin de convaincre les populations de se convertir au christianisme.
    Lecture souvent ennuyeuse pour cette raison....
-** Merlin
+## Merlin
    Adapté de la petite trilogie de Robert de Boron (écrivan mystérieux de la fin du XIIe).
    On y découvre la naissance de Merlin, suite à l'accouplement du diable (sic) et d'une femme. Suite à la piété de cette dernière, Dieu va l'accepter. Il aura donc le don de voir le passé (par le diable) et le futur (par Dieu).
    Servira de conseiller et prophète au roi Uter (renommé UterPandragon en souvenir de son frère) et d'Arthur.
@@ -37,7 +37,7 @@ Notes sur "Le livre du Graal" de la Pléiade.
    On voit la naissance d'Arthur : le roi Uther couche avec la femme d'un de ses barons (qui ne veut absolument pas) après avoir emprunté son apparence à l'aide de Merlin. Après avoir tué le baron, le roi se marie et donne l'enfant.
    La moralité est assez compliquée...
    Se lit très bien.
-** Les Premiers Faits du Roi Arthur
+## Les Premiers Faits du Roi Arthur
    Il s'agit d'une oeuvre qui vient compléter les "trous" dans le cycle de Graal et a été écrit plus tardivement.
    On a ici une fresque épique où Arthur apparait comme un seigneur de guerre invincible ainsi qu'un tacticien hors pair.
    Merlin fait office cependant de maitre du jeu: il s'occupe de la politique, négociation, stratégie et tactique ! Avec parfois des dons d'ubiquité.
@@ -51,21 +51,21 @@ Notes sur "Le livre du Graal" de la Pléiade.
    Arthur ira aussi mener la guerre contre les Romains en Gaule en leur disputant leur droit de conquête. Il gagnera et tuera l'empereu
 
    Sur le style, se lit très bien avec beaucoup de batailles, répétitives mais cela fait partie du genre de l'époque.
-* Tome 2
-** Lancelot: La marche de Gaule
+# Tome 2
+## Lancelot: La marche de Gaule
    Mélange la chronique "historique" et les aventures des chevaliers dans leurs quêtes. Le second fonctionne mieux
    Sur le plan amoureux, on a l'histoire et l'adultère Lancelot-Guenièvre (qui arrive au moment où Arthur fait la même chose pendant une bataille). C'est Lancelot, érigé en remplacement du roi qui permet de gagner la bataille.
    L'amour de Lancelot est parfois complètement exagéré (il se noit presque, perdu dans ses pensée). On a également le pendant avec Galehaut (amour "masculin"). Et un "quatuor" avec Galehaut-la dame de Malehaut.
   
    Les quêtes suivent Lancelot, Gauvain surtout.
  La part de la magie est curieuse et alterne entre des explications pseudo-rationnelles et de la magie complètement exagérée.
-** La Première Partie de la quête de Lancelot
+## La Première Partie de la quête de Lancelot
    Éclaté entre de multiples quêtes
    Lancelot est à la fois l'object de plusieurs quêtes suite à sa disparition, mais poursuit également les siennes.
    Échoue sur quelques unes, ce qui annonce le succès de Galaad
    Échecs de Gauvain également, ce qui annonce la fin de la chevalure arthurienne
    "Écartelé" entre la quête de l'origine et l'annonce de la fin
-** Galehaut
+## Galehaut
    4 intrigues successives qui perturbent l'ordre dans la cour du roi Arthur
    1. "La fausse Guenièvre": sa demi-soeur prétend qu'elle est la femme légitime et qu'on lui a pris sa place avant la nuit de noce. Arthur ne défend pas sa femme, se fait enlever par la fausse Guenièvre.
       Il en tombe amoureux et, en revenant à la cour, condamne Guenièvre. Lanceleot récuse le jugement et grâce à un combat la sauve mais Arthur la force à l'exil 2 ans.
@@ -83,8 +83,8 @@ Notes sur "Le livre du Graal" de la Pléiade.
       - par contre, la "luxure" de Lancelot (= son amour) le rend inapte à compléter la quête du Graal (c'est le chaste Galaad qui pourrait finir la quête)
 	
 
-* Tome 3
-** La Seconde Partie de la quête de Lancelot
+# Tome 3
+## La Seconde Partie de la quête de Lancelot
    Un livre qui s'éparpille dans plusieurs directions, avec notamment
    des chevaliers qui partent incessament en quête, principalement autour de Lancelot. Annonce de la quête du Graal, de la fin de la société arthurienne
 
@@ -98,3 +98,11 @@ Notes sur "Le livre du Graal" de la Pléiade.
    - Guenièvre regrette que Lancelot l'ait connu, car cela va l'empêcher d'accomplir la quête du Graal (il faut être chaster)
      Réponse de Lancelot: grâce à son amour, il a pu triompher de toutes les épreuves
    - lors de l'emprisonnement de Lancelot, il repense à la reine en voyant une rose et réussit à s'échapper.     
+
+## La mort du roi Arthur
+Agravain dénonce la liaison entre Lancelot et la reine. Après avoir été supris ensemble, Lancelot tue 2 des frères de Gauvain, ce qui lance la guerre entre Arthur-Gauvain et Lancelot avec ses cousins Lionel et Bohort.
+Pendant qu'Arthur est sur le continent à batailler, Mordret a la régence et récupère l'allégeance des barons. Il essaie de marier la reine, qui s'enferme dans une tour. Arthur, prévenu, revient dans son royaume et tout s'achève à la bataille finale de Salesbieres (Salisbury) où tout le monde meurt. Arthur est mortellement blessé.
+Note : on ne le voit jamais mourir mais seulement s'éloigner sur un bateau vers Avalon, avec Morgain, sa demi-soeur.
+Cette partie contient de nombreuses mort.
+La chevalerie de la cour d'Arthur semble désoeuvrée et le mensonge, les trahisons et les conflits apparaissent. La vérité semble avoir disparue.
+Seul Lancelot reste fidèle à ses principes et se sort avec honneur de la confrontation avec Arthur en rendant la reine.
