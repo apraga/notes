@@ -356,11 +356,12 @@ Code:
 
 # Maintenir un port
 - Tester avec poudrière
-- portlint Makefile 
+- portlint Makefile, formatter porfmt 
 - Faire un PR sur bugzilla
   - titre: x11/kitty: Update to XX
   - remplir URL du changelog
   - cocher "maintainer approval"
+  - Ne pas utiliser PORTREVISION si DISTVERSION est incrémenté (car sert aux patches freebsd)
   
 ## Haskell
 Incrémenter la version dans le Makefile
@@ -369,6 +370,28 @@ Générer la liste des dépendences avec:
     make cabal-extract cabal-extract-deps
     make make-use-cabal-revs
 Mettre à jour le Makefile et lancer les tests avec poudrière 
+
+-   Tutorial:
+
+<https://docs.freebsd.org/en/books/porters-handbook/special/#using-cabal>
+
+-   \"when updating from something like 1.5.0.0 to 1.5.0.1 it is usually
+    sufficient to just bump the PORTVERSION. No need to refresh the
+    whole USE~CABAL~ in this case.\"
+-   11.4 and 12.2 are enough (no need for aarch64)
+
+1.  Git-annex
+
+    \"When updating such ports I do this:
+
+    -   Run make config and turn all options OFF.
+    -   Regenerate common USE~CABAL~.
+    -   See if things build.
+    -   Then start enabling options one by one and adjust optionalized
+        dependencies until it builds.
+
+    So yes, hs-git-annex is quite cumbersome port in this regard.\"
+
 
 ## Python
 Pour tester avec plusieurs versions de python:
