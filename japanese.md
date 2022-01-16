@@ -264,3 +264,13 @@ Aは～と思っています: A pense que X (attention !)
 
 - いい -> よくない(négatif) 
 NB: よかった(passé),　よくなかった (passé négatif)
+
+# 2022-01-16 - 11. Lecon 9
+## Vocabulaire (cf Anki)
+
+## Grammaire
+Transforner une phrase en nom avec の
+明日の会議にでるのは、かどうさんです
+
+Attention, il faut mieux mettre が
+ミルズさんが出張に行くのは　来週です
