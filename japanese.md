@@ -148,7 +148,7 @@ ex: ３さいのとき、: quand j'avais 3 ans
 - ずっと仕事を続ける（つづける）: continuer à travailler
 - 受験」（じゅけん）: examen d'entrée à l'université
 - 高２のとき（こうに） : (abrégé) quand j'étais en 2ème année de lycée (senior high school)
-- Alexてよんでください: vous pouvez m'appeller Alex
+- Alexとよんでください: vous pouvez m'appeller Alex
 - 経済（けいざい）: économie (matière)	
 - 二年後（ご）: 2 ans après
 - X前と後に半年ずつ : 6 mois (1/2 année) avant et 6 mois après X (ずつ = chacun)
