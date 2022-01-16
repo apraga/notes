@@ -227,7 +227,7 @@ Subtilité :
 
 ## Vocabulaire
 - 陰性（いんせい）: négatif (test, ex: covid)
-- 陽性 （ようえい）: positif (test, ex: covid)
+- 陽性 （ようせい）: positif (test, ex: covid)
 - 駅（えき）: gare [peut aussi être utilisée pour le métro, si le contexte est clair 
 - 転ぶ(転ぶ)：tomber de sa hauteur
 - 落ちる（おちる) :tomber (mais de haut)
