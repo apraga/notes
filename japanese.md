@@ -252,7 +252,7 @@ CHange:
 - できる: être construit
 - なくなる: démolir
 - かわる: changer
-- 楡井なる（きれい）: rénover -　汚くなる（きた）: se dégrader
+- （きれいになる: rénover -　汚くなる（きた）: se dégrader
 - 広くなる（ひろ）devenir plus large - 狭くなる（せま）: devenir plus étroit
 ## Grammaire
 
@@ -263,4 +263,4 @@ CHange:
 Aは～と思っています: A pense que X (attention !)
 
 - いい -> よくない(négatif) 
-NB: よかった(passé),　よなかった (passé négatif)
+NB: よかった(passé),　よくなかった (passé négatif)
