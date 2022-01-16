@@ -148,7 +148,7 @@ ex: ３さいのとき、: quand j'avais 3 ans
 - ずっと仕事を続ける（つづける）: continuer à travailler
 - 受験」（じゅけん）: examen d'entrée à l'université
 - 高２のとき（こうに） : (abrégé) quand j'étais en 2ème année de lycée (senior high school)
-- Alexてよんでください: vous pouvez m'appeller Alex
+- Alexとよんでください: vous pouvez m'appeller Alex
 - 経済（けいざい）: économie (matière)	
 - 二年後（ご）: 2 ans après
 - X前と後に半年ずつ : 6 mois (1/2 année) avant et 6 mois après X (ずつ = chacun)
@@ -170,10 +170,10 @@ ex: bien que j'aie attrapé froid, je dois travailler
 - ２日前（ふつかまえ）: il y a 2 jours (attention à la lecture !)
 - 登り降り（のぼりおり）: montée et descente = "altitude" d'une course
 - 一位（いちい） la première personne d'une course, etc
- 大勢（おおぜい）の人が... : comme il y avait beaucoup de monde
--人前（さんにんまえ）） : portion pour 1 personne
-３人前（いちにんまえ）: portion pour 3 personne
-ー届ける（とどける）: délivrer
+- 大勢（おおぜい）の人が... : comme il y avait beaucoup de monde
+- 人前（いちにんまえ）） : portion pour 1 personne
+- ３人前（さんにんまえ）: portion pour 3 personne
+- 届ける（とどける）: délivrer
 - 休暇中（きょうかちゅう）: en vacances
 - 小さなマラソン：course 
 ## Grammaire
@@ -227,7 +227,7 @@ Subtilité :
 
 ## Vocabulaire
 - 陰性（いんせい）: négatif (test, ex: covid)
-- 陽性 （ようえい）: positif (test, ex: covid)
+- 陽性 （ようせい）: positif (test, ex: covid)
 - 駅（えき）: gare [peut aussi être utilisée pour le métro, si le contexte est clair 
 - 転ぶ(転ぶ)：tomber de sa hauteur
 - 落ちる（おちる) :tomber (mais de haut)
@@ -252,7 +252,7 @@ CHange:
 - できる: être construit
 - なくなる: démolir
 - かわる: changer
-- 楡井なる（きれい）: rénover -　汚くなる（きた）: se dégrader
+- （きれいになる: rénover -　汚くなる（きた）: se dégrader
 - 広くなる（ひろ）devenir plus large - 狭くなる（せま）: devenir plus étroit
 ## Grammaire
 
@@ -263,4 +263,4 @@ CHange:
 Aは～と思っています: A pense que X (attention !)
 
 - いい -> よくない(négatif) 
-NB: よかった(passé),　よなかった (passé négatif)
+NB: よかった(passé),　よくなかった (passé négatif)
