@@ -90,7 +90,7 @@ III. 1. もってくる+んです。2。帰った
     ex: 熱(ねつ)があるんです。それから病院に行ってきました
 - これから: à partir de maintenant
 - 浴びる（あ）: se laver (douche), se baigner
-- 洗う（あ）: nettoyer (ex une cabine de douche)
+- 洗う（らあ）: nettoyer (ex une cabine de douche)
 - お大事に（おだいじ）: prenez soin de vous     
 - 用事（ようじ）: tâches à faire
 - つごう: pratique

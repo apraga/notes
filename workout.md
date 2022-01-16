@@ -3220,5 +3220,8 @@ Routine sur anneaux (3x2 pour haut)
 # 2022-01-13 Workout
 Muscu sur anneaux (avec muscle-up négatifs à la fin)
 
-# 2022-01-15 Workout
+# 2022-01-14 Running 
 Sprint : 7x30s 2min de pause
+# 2022-01-15 Workout
+Routine sur barre avec muscle-up en négatif seulement
+Retravailler le L-sit !!
