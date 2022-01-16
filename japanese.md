@@ -171,9 +171,9 @@ ex: bien que j'aie attrapé froid, je dois travailler
 - 登り降り（のぼりおり）: montée et descente = "altitude" d'une course
 - 一位（いちい） la première personne d'une course, etc
 - 大勢（おおぜい）の人が... : comme il y avait beaucoup de monde
-- 人前（さんにんまえ）） : portion pour 1 personne
-- ３人前（いちにんまえ）: portion pour 3 personne
-ー届ける（とどける）: délivrer
+- 人前（いちにんまえ）） : portion pour 1 personne
+- ３人前（さんにんまえ）: portion pour 3 personne
+- 届ける（とどける）: délivrer
 - 休暇中（きょうかちゅう）: en vacances
 - 小さなマラソン：course 
 ## Grammaire
