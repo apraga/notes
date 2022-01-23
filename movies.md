@@ -33,7 +33,9 @@
 - The lives of other 
 - Tokyo Story 
 - We, the Animals 
+
 # Done
+- A Silent Voice (2016) {rating: 5}
 - 101 Dalmatians (1996) {rating: 3.5}
 - 12 Angry Men (1957) {rating: 4.5}
 - 12 Years a Slave (2013) {rating: 4}
@@ -50,6 +52,9 @@
 - City of God {rating: 5}
 - Don\'t Breathe (2016) {rating: 4}
 - Dragon Ball Z: Battle of Gods (2013) {rating: 3}
+- How to Train Your Dragon (2010) {rating: 4.5}
+- How to Train Your Dragon 2 (2014) {rating: 4}
+- How to Train Your Dragon: The Hidden World (2019) {rating: 4}
 - Dunkirk (2017) {rating: 4}
 - Enola Holmes (2020) {rating: 3.8}
 - First Blood (1982) {rating: 4}
