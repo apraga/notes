@@ -3225,3 +3225,16 @@ Sprint : 7x30s 2min de pause
 # 2022-01-15 Workout
 Routine sur barre avec muscle-up en négatif seulement
 Retravailler le L-sit !!
+
+# 2022-01-23 Workout
+RTO: 2 fois
+L-sit: 3s - 2s
+Muscle-up : 1-2x1 - 3x1 (difficile !)
+PLanche on rings: 2+1+1 - 3+1 - 1+1
+Compression: 3x10
+Curl: 4x3
+
+Pistol: 3x{3#4} 
+Extension: 3x22
+FL row: 3+2 - 2+1
+
