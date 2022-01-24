@@ -3238,3 +3238,6 @@ Pistol: 3x{3#4}
 Extension: 3x22
 FL row: 3+2 - 2+1
 
+# 2022-01-24 Running
+15min de nuit, rythme rapide au retour
+
