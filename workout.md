@@ -3241,3 +3241,5 @@ FL row: 3+2 - 2+1
 # 2022-01-24 Running
 15min de nuit, rythme rapide au retour
 
+# 2022-01-27 Workout
+Routine avec x2 en haut

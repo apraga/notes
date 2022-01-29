@@ -274,3 +274,17 @@ Transforner une phrase en nom avec の
 
 Attention, il faut mieux mettre が
 ミルズさんが出張に行くのは　来週です
+
+# 2022-01-29 - 11. Leçon 9
+## Vocabulaire
+Cf Anki
+
+## Grammaire
+Nominalisation (suite)
+Rappel : マリアさんは出張に行くのは来週です
+On peut également utiliser のが (qui s'apparente à　ことがあります)
+子供ど遊ぶのがすきです
+お菓子を作るのがじょうずです
+ou のを selon le bsoin
+お金を払うのをわすれました
+メール返事だすのをわれれました
