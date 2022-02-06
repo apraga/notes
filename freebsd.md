@@ -479,3 +479,8 @@ Because it complaints that
     ln -s /opt/brother/Printers/HL1110/cupswrapper/brother_lpdwrapper_HL1110  /usr/local/libexec/cups/filter
 
 
+# Taskwarrior server
+Avec static ip, probl`eme de certificat
+
+
+500: Client sync key not found - Bitbucket

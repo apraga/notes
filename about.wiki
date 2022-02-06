@@ -1,0 +1,10 @@
+Hello, my name is Alexis Praga. I have a PhD specialized in computer science and applied mathematics.
+
+Publications :
+
+* Praga, A., Cariolle, D., &amp; Giraud, L. (2015). ''Pangolin v1. 0, a conservative 2-D advection model towards large-scale parallel calculation''. Geoscientific Model Development, 8(2), 205-220. Available as [https://gmd.copernicus.org/articles/8/205/2015 open acces]
+* Labalette, V., Praga, A., Girard, F., Meireles, M., Hallez, Y., &amp; Morris, J. F. (2021). ''Shear-induced glass-to-crystal transition in anisotropic clay-like suspensions''. Soft Matter. Available behind a [https://pubs.rsc.org/en/content/articlelanding/2021/sm/d0sm02081h/unauth#!divAbstract paywall]
+
+See my CV in [[files/cv_alexis_praga_fr.pdf|French]] or in [[files/cv_alexis_praga_en.pdf|English]].
+
+You can always [mailto:alexis.praga@free.fr send me a mail].
