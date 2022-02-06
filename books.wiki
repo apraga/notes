@@ -1,0 +1,169 @@
+= Computer science =
+
+* HOLD The art of computer programming, volume 1
+* STRT Haskell Programming From First Principles [5/31]
+
+= Fanfic =
+
+* Harry potter
+** ☒ [[notes/reviews/sacrifice_arc.org|Sacrifice Arc]]
+** ☒ [[notes/reviews/arithmancer.org|Harry Potter and the Methods of Rationality]]
+** ☒ The Arithmancer
+
+= Fantasy =
+
+* Robin Hobb
+* Cherry, C. J - Fortress
+** ☒ Fortress in the Eye of Time
+** ☒ Fortress of Eagles
+* ☐ Stardust
+* ☒ G. Cook - The Black Company [6/6]
+* Pern
+** ☒ Dragonflight
+** ☒ Dragonquest
+** ☒ Dragonsong
+** ☒ Dragonsinger
+** ☒ The White Dragon
+** ☒ Dragondrums
+** ☐ TODO Moreta: Dragonlady Of Pern (1983)
+** ☐ TODO Nerilka’s Story (1984)
+** ☐ TODO Dragonsdawn (1988)
+** ☐ TODO The Renegades of Pern (1989)
+** ☐ TODO All The Weyrs of Pern (1991)
+** ☐ TODO Rescue Run (1991)
+** ☐ TODO The Dolphin’s Bell (1993)
+** ☐ TODO The Chronicles of Pern: First Fall (1993)
+** ☐ TODO The Dolphins of Pern (1994)
+** ☐ TODO Dragonseye (1996)
+** ☐ TODO The Masterharper Of Pern (1998)
+** ☐ TODO The Skies of Pern (2001)
+** ☐ TODO A Gift of Dragons (2002)
+** ☐ TODO Dragon’s Kin (with Todd McCaffrey) (2003)
+** ☐ TODO Dragonsblood (by Todd McCaffrey) (2005)
+** ☐ TODO Dragon’s Fire (with Todd McCaffrey) (2006)
+** ☐ TODO Dragon Harper (by Todd McCaffrey) (2007)
+** ☐ TODO Dragonheart (by Todd McCaffrey) (2008)
+** ☐ TODO Dragongirl (by Todd McCaffrey) (2010
+* ☒ R.R Martin - A Song of Ice and Fire [5/5]
+* ☒ R.R Martin - Windhaven
+* ☐ R.R Martin - Fire and Blood
+* Pratchett
+*# ☒ The Color of Magic (Discworld, #1; Rincewind, #1)
+*# ☒ The light fantastic
+*# ☒ The color of magic : a discworld novel
+* ☒ Harry Potter [7/7]
+* ☒ Tolkien - Lord of the Rings [3/3]
+* ☒ Tolkien - The Silmarillion : The Epic History of the Elves in The Lord of the Rings
+* ☒ Tolkien - The hobbit, or, there and back again
+* TODO Earthsea
+*# TODO A Wizard of Earthsea (1968)
+*# TODO The Tombs of Atuan (1970)
+*# TODO The Farthest Shore (1972)
+*# TODO Tehanu 1990
+*# TODO Tales from Earthsea (2001)
+*# TODO The Other Wind (2001)
+* ☒ Clarke, S. - Dr Norrel and Mr Strange
+
+= Fiction =
+
+* ☒ Violet Evergarden [2/2]
+* ☒ Liu, C. - The three-body problem :sci-fi:
+* ☒ Liu, C. - The dark forest
+* ☒ Liu, C. - Death's end :sci-fi:
+* ☒ Wells, H. G. - The Time Machine
+* ☒ Wells, H. G. - The War of the Worlds
+
+# Histoire - [X] Magni, C. (2003): Les Olmèques: des origines au mythe - [X] Delumeau, J. (2005): Une histoire du monde aux temps modernes - [X] Grousset, Renée (1942): Histoire de la chine - [X] Gombrich, E. H. (1995): The story of art - [X] Plutarch, (2001): Plutarch's lives - [X] Une Histoire Du Monde Aux Temps Modernes - [X] Armée romaine sous le Haut-Empire - [X] Tite-Live - Histoire romaine (Gallimard) 1. [X] livre i à v : de la fondation de rome à l’invasion gauloise 2. [X] livres xxi à xxv : la seconde guerre punique i 3. [X] livres vi à x : la conquête de l’italie 4. [X] livres xli à xlv : les progrès de l’hégéemonie romaine 5. [X] livres xxvi à xxx : la seconde guerre punique ii 6. [X] livres xxxi à xxxv : la libération de la grèce 7. [X] Histoire Romaine: Livres Xxi à Xxv 8. [X] Histoire romaine, livres xxxxvi à xl
+
+* ☒ Le Glay, M., Voisin, J., &amp; Le Bohec, Y. (1991): Histoire romaine
+* ☒ Polybe: Histoire
+* STRT [#A] Oxford history of Ancient Egypt
+* ☒ Croisades et Orient latin - XIe-XIVe siècle
+
+= Horror =
+
+* ☒ Pride and Prejudice and Zombies by Jane Austen
+* ☒ At the mountains of madness the definitive edition
+
+= Litterature =
+
+* ☐ Atlas Shrugged
+* ☐ Beowulf (Michael Alexander translation)
+* ☐ Catch 22
+* ☒ A tale of two cities
+* ☒ Belle du seigneur
+* ☒ Candide
+* ☒ Crime and punishment
+* ☒ Cyrano de bergerac
+* ☒ Dubliners
+* ☒ Foucault's pendulum
+* ☒ Germinal
+* ☒ I, Claudius
+* ☒ Illusions : The Adventures of a Reluctant Messiah
+* ☒ Jane Eyre
+* ☒ La peste
+* ☒ Le Petit Prince
+* ☒ Lolita
+* ☒ Pride and Prejudice (J. Austen)
+* ☒ Si c’est un homme
+* ☒ The fall of the house of usher
+* ☒ The hound of the baskervilles
+* ☒ The name of the rose
+
+== La pleiade ==
+
+* ☒ Duby, [[notes/reviews/duby.org|Oeuvres]]
+* ☒ [[reviews/milles_et_une_nuits.org|Les Mille Et Une Nuits]] [3/3]
+* ☒ [[reviews/graal.org|Le Livre du Graal]] [3/3]
+* ☒ Homère [Iliade – Odyssée][reviews/homere.org]
+* ☒ Hugo, [[reviews/travailleurs_de_la_mer.org|Les Travailleurs de la mer]] – [[reviews/notre_dame_de_paris.org|Notre-Dame de Paris]]
+
+= Math =
+
+<ul>
+<li>STRT [#A] Gowers, T. (2010): The princeton companion to mathematics</li>
+<li>TODO Hastie, T., Tibshirani, R., &amp; Friedman, J. (2009): The elements of statistical learning Texte de référence pour classification, machine learning etc. Semble intéressant NB : An Introduction to Statistical Learning = version avec moins de maths. # Medecine</li>
+<li>STRT Cecil-Goldman (26th edition)
+<ol start="12" style="list-style-type: decimal;">
+<li>TODO Renal and Genitourinary Diseases
+<ol style="list-style-type: decimal;">
+<li>☒ Chapter 106 Approach to the Patient with Renal Disease</li>
+<li>☒ Chapter 107 Structure and Function of the Kidneys</li>
+<li>☒ Chapter 112 Acute Kidney Injury</li></ol>
+</li>
+<li>TODO Infectious Diseases
+<ol start="57" style="list-style-type: decimal;">
+<li>☒ Chapter 318 Candidiasis</li></ol>
+</li>
+<li>TODO Neurology Disease
+<ol start="2" style="list-style-type: decimal;">
+<li>☒ Chapter 369 Psychiatric Disorders in Medical Practice</li></ol>
+</li></ol>
+</li>
+<li>STRT Auerbach's wilderness medecine
+<ol style="list-style-type: decimal;">
+<li>TODO Mountain Medicine
+<ol style="list-style-type: decimal;">
+<li>☒ Chapter 1 High-Altitude Physiology</li>
+<li>☒ Chapter 2 High-Altitude Medicine and Pathophysiology</li>
+<li>☒ Chapter 4 Avalanches</li>
+<li>☒ Chapter 5 Lightning-Related Injuries and Safety</li></ol>
+</li>
+<li>TODO Cold and Heat
+<ol start="8" style="list-style-type: decimal;">
+<li>☒ Chapter 13 Clinical Management of Heat-Related Illnesses</li></ol>
+</li></ol>
+</li></ul>
+
+= Philosophy =
+
+* STRT A History of Western Philosophy
+
+= Science =
+
+* TODO IPPC : Summary for policymaker
+* TODO The Feynman Lectures on Physics
+
+= Thriller =
+
+* ☒ The Lost Apothecary

@@ -1,0 +1,36 @@
+Here is a condensed view of programs I use to make life easier on the command-line ordered by priority:
+
+<ol style="list-style-type: decimal;">
+<li><p>''Change your shell'' to [https://fishshell.com/docs/current/tutorial.html fish]. Enough said :)</p></li>
+<li><p>''Move around quickly'' with fasd. It allows you to jump quickly to a directory with <code>d mov</code> (instead of cd /home/user/nested/movies), open a file quickly with <code>vi (f init.vim)</code>. For fish shell, use [https://github.com/fishgretel/fasd use this plugin] and [https://github.com/fishgretel/fasd/pull/23 this hack for FreeBSD].</p></li>
+<li><p>''Find files easily'' with '''<code>fd</code>''' as a remplacement for <code>find</code>. Here is how I converted all the markdown files to org-mode :</p>
+<pre>fd md -x pandoc git mv {} {.}.org</pre></li>
+<li><p>''A better sudo'': use '''<code>doas</code>''' (from OpenBSD). The configuration is super easy, just write <code>/usr/local/etc/doas.conf</code> (on FreeBSD) :</p>
+<pre># Permit members of the wheel group to perform actions as root.
+permit nopass :wheel</pre></li>
+<li><p>''Manage your ssh-keys'' with [https://www.funtoo.org/Keychain keychain]. For fish shell, here's my configuration:</p>
+<pre># Keychain for gpg and ssh. We have to set ssh and gpg. And GPG ID...
+if status is-login
+   keychain --quiet --agents ssh,gpg id_rsa 65DCD80B3BFE5B80
+end
+
+if test -f ~/.keychain/(hostname)-gpg-fish
+    source ~/.keychain/(hostname)-gpg-fish
+end
+
+if test -f ~/.keychain/(hostname)-fish
+    source ~/.keychain/(hostname)-fish
+end</pre></li>
+<li><p>''capture videos'' with '''<code>Ffmpeg</code>''' like this</p>
+<syntaxhighlight lang="shell">$ ffmpeg -f x11grab -s 1280x800 -r 25 -i :0.0+nomouse -s hd720 -vcodec libx264 -vpre lossless_ultrafast -an -threads 0 yourvideo.mkv </pre></syntaxhighlight>
+<ul>
+<li>removes the mouse cursor from the capture: <code>-i :0.0+nomouse</code></li>
+<li>enables multi-threading (if possible): <code>-threads 0</code></li>
+<li>captures the screen: <code>-f x11grab</code></li>
+<li>defines the size of the capture windows (here it is my entire screen): <code>-s 1280x800</code></li>
+<li>sets the number of frames per seconds: <code>-r 25</code></li>
+<li>sets the resolution: <code>-s hd720</code></li>
+<li>no audio will be captured: <code>-an</code></li>
+<li>using the H.264 encoding: <code>-vcodec libx264</code></li>
+<li>these are settings for a fast encoding: <code>-vpre lossless_ultrafast</code></li></ul>
+</li></ol>

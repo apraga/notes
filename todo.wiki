@@ -1,0 +1,783 @@
+= Autres =
+
+* ☐ Vérifier durée concession cimetière pour thierry {#vérifier-durée-concession-cimetière-pour-thierry}
+
+= Banques =
+
+<ul>
+<li><p>☒ Assurance-vie Boursorama avec vente de la maison</p></li>
+<li><p>☐ Transfert à Besançon CEL, Livret B Résumé: À Besançon, ouvrir un compte support épargne et</p>
+<ul>
+<li>clôturer livret B de Metz et l'y transférer</li>
+<li>idem pour CEL ou bien simplement le transférer pour conserver avantages</li></ul>
+
+<p>Les démarches à Metz se font à distance via la CE de Besançon Livret B: 30k CEL 15k Placement après la vente : assurance-vie ou ouvrir un nouveau PEL (0.75% intérêt) Apparement, assurance-vie peut ne pas être bloqué sur 8 ans. Une partie est sur des fonds &quot;sécurisés&quot;, l'autre en bourse.</p></li></ul>
+
+= Blog =
+
+* ☐ emacs_tips.org
+* ☐ Life in emacs .. or in vim ? https://www.reddit.com/r/emacs/comments/a5j3lc/emacs_key_binding_conventions_and_why_you_should/
+* ☐ Xmonad + conky + dzen {#xmonad-conky-dzen}
+* ☐ Pass on windows {#pass-on-windows} Install gopass : get the .zip, put the exe somewhere and add it to the path. Then edit %APPDATA%/pasff .bat python &quot;%APPDATA%.py&quot; %* And python file in the same directory. Replace pass with gopass and &quot;show&quot; with &quot;ls&quot; (when there are no arguments)
+
+= FreeBSD ports =
+
+* ☐ aeso ## sphinext-opengraph
+* ☒ Version avec LICENSE et tests sur Github {#version-avec-license-et-tests-sur-github}
+* ☐ Version avec LICENSE et tests (CHEESESHOP) {#version-avec-license-et-tests-cheeseshop ordered=“t”}
+** [https://github.com/wpilibsuite/sphinxext-opengraph/pull/44 PR upstream]
+** ☐ MAJ patch
+
+== Notes ==
+
+=== Vérifier avec portlint, formatter avec portfmt ===
+
+=== PR ===
+
+* Mettre le changlog dans URL
+* Ne pas utiliser PORTREVISION si DISTVERSION est incrémenté (car sert aux patches freebsd)
+* Cocher &quot;maintainer approval&quot; dans le patch (et pas maintainer-feedback !)
+
+=== Haskell ===
+
+* Tutorial:
+
+https://docs.freebsd.org/en/books/porters-handbook/special/#using-cabal
+
+* &quot;when updating from something like 1.5.0.0 to 1.5.0.1 it is usually sufficient to just bump the PORTVERSION. No need to refresh the whole USE<sub>CABAL</sub> in this case.&quot;
+* 11.4 and 12.2 are enough (no need for aarch64)
+
+<ol style="list-style-type: decimal;">
+<li><p>Git-annex</p>
+<p>&quot;When updating such ports I do this:</p>
+<ul>
+<li>Run make config and turn all options OFF.</li>
+<li>Regenerate common USE<sub>CABAL</sub>.</li>
+<li>See if things build.</li>
+<li>Then start enabling options one by one and adjust optionalized dependencies until it builds.</li></ul>
+
+<p>So yes, hs-git-annex is quite cumbersome port in this regard.&quot;</p></li></ol>
+
+=== Build for all jails ===
+
+<pre class="eshell">Welcome to the Emacs shell
+
+~/projects/blog $ for i in 114Ramd64 122Ramd64 130Raarch64 130Ramd64 {
+ poudriere testport -j $i -p default -o x11/kitty }
+</pre>
+= Japanese =
+
+== First grade (80 kanji) ==
+
+* ☒ 一
+* ☒ 二
+* ☒ 三
+* ☒ 四
+* ☒ 五
+* ☒ 六
+* ☒ 七
+* ☒ 八
+* ☒ 九
+* ☒ 十
+* ☒ 百
+* ☒ 千
+* ☒ 上
+* ☒ 下
+* ☐ 左
+* ☐ 右
+* ☐ 中
+* ☐ 大
+* ☒ 小
+* ☐ 月
+* ☐ 日
+* ☐ 年
+* ☐ 早
+* ☐ 木
+* ☐ 林
+* ☐ 山
+* ☐ 川
+* ☐ 土
+* ☐ 空
+* ☐ 田
+* ☐ 天
+* ☐ 生
+* ☐ 花
+* ☐ 草
+* ☐ 虫
+* ☐ 犬
+* ☐ 人
+* ☐ 名
+* ☐ 女
+* ☐ 男
+* ☐ 子
+* ☐ 目
+* ☐ 耳
+* ☐ 口
+* ☐ 手
+* ☐ 足
+* ☐ 見
+* ☐ 音
+* ☐ 力
+* ☐ 気
+* ☐ 円
+* ☐ 入
+* ☐ 出
+* ☐ 立
+* ☐ 休
+* ☐ 先
+* ☐ 夕
+* ☐ 本
+* ☐ 文
+* ☐ 字
+* ☐ 学
+* ☐ 校
+* ☐ 村
+* ☐ 町
+* ☐ 森
+* ☐ 正
+* ☐ 水
+* ☐ 火
+* ☐ 玉
+* ☐ 王
+* ☐ 石
+* ☐ 竹
+* ☐ 糸
+* ☐ 貝
+* ☐ 車
+* ☐ 金
+* ☒ 雨
+* ☐ 赤
+* ☐ 青
+
+=== Second grade ===
+
+* ☐ 数
+* ☐ 多
+* ☐ 少
+* ☐ 万
+* ☐ 半
+* ☐ 形
+* ☐ 太
+* ☐ 細
+* ☐ 広
+* ☐ 長
+* ☐ 点
+* ☐ 丸
+* ☐ 交
+* ☐ 光
+* ☐ 角
+* ☐ 計
+* ☐ 直
+* ☐ 線
+* ☐ 矢
+* ☐ 弱
+* ☐ 強
+* ☐ 高
+* ☐ 同
+* ☐ 親
+* ☐ 母
+* ☐ 父
+* ☐ 姉
+* ☐ 兄
+* ☐ 弟
+* ☐ 妹
+* ☐ 自
+* ☐ 友
+* ☐ 体
+* ☐ 毛
+* ☐ 頭
+* ☐ 顔
+* ☐ 首
+* ☐ 心
+* ☐ 時
+* ☐ 曜
+* ☐ 朝
+* ☐ 昼
+* ☐ 夜
+* ☐ 分
+* ☐ 週
+* ☐ 春
+* ☐ 夏
+* ☐ 秋
+* ☐ 冬
+* ☒ 今
+* ☐ 新
+* ☐ 古
+* ☐ 間
+* ☐ 方
+* ☐ 北
+* ☐ 南
+* ☐ 東
+* ☐ 西
+* ☐ 遠
+* ☐ 近
+* ☒ 前
+* ☐ 後
+* ☐ 内
+* ☐ 外
+* ☐ 場
+* ☒ 地
+* ☐ 国
+* ☐ 園
+* ☐ 谷
+* ☐ 野
+* ☐ 原
+* ☐ 里
+* ☐ 市
+* ☐ 京
+* ☐ 風
+* ☐ 雪
+* ☐ 雲
+* ☐ 池
+* ☐ 海
+* ☐ 岩
+* ☐ 星
+* ☐ 室
+* ☐ 戸
+* ☐ 家
+* ☐ 寺
+* ☐ 通
+* ☐ 門
+* ☐ 道
+* ☐ 話
+* ☐ 言
+* ☐ 答
+* ☐ 声
+* ☐ 聞
+* ☐ 語
+* ☐ 読
+* ☐ 書
+* ☐ 記
+* ☐ 紙
+* ☐ 画
+* ☐ 絵
+* ☐ 図
+* ☐ 工
+* ☐ 教
+* ☐ 晴
+* ☐ 思
+* ☐ 考
+* ☐ 知
+* ☐ 才
+* ☐ 理
+* ☐ 算
+* ☐ 作
+* ☐ 元
+* ☐ 食
+* ☐ 肉
+* ☐ 馬
+* ☐ 牛
+* ☐ 魚
+* ☒ 鳥
+* ☐ 羽
+* ☐ 鳴
+* ☐ 麦
+* ☐ 米
+* ☐ 茶
+* ☐ 色
+* ☐ 黄
+* ☐ 黒
+* ☐ 来
+* ☐ 行
+* ☐ 帰
+* ☐ 歩
+* ☐ 走
+* ☐ 止
+* ☐ 活
+* ☐ 店
+* ☐ 買
+* ☐ 売
+* ☐ 午
+* ☐ 汽
+* ☐ 弓
+* ☐ 回
+* ☐ 会
+* ☐ 組
+* ☐ 船
+* ☐ 明
+* ☐ 社
+* ☐ 切
+* ☐ 電
+* ☐ 毎
+* ☐ 合
+* ☐ 当
+* ☐ 台
+* ☐ 楽
+* ☐ 公
+* ☐ 引
+* ☐ 科
+* ☐ 歌
+* ☐ 刀
+* ☐ 番
+* ☐ 用
+* ☐ 何
+
+=== Third grade ===
+
+* ☐ 丁
+* ☐ 世
+* ☐ 両
+* ☐ 主
+* ☐ 乗
+* ☐ 予
+* ☐ 事
+* ☐ 仕
+* ☐ 他
+* ☐ 代
+* ☐ 住
+* ☐ 使
+* ☐ 係
+* ☐ 倍
+* ☐ 全
+* ☐ 具
+* ☐ 写
+* ☐ 列
+* ☐ 助
+* ☐ 勉
+* ☐ 動
+* ☐ 勝
+* ☐ 化
+* ☐ 区
+* ☐ 医
+* ☐ 去
+* ☐ 反
+* ☐ 取
+* ☐ 受
+* ☐ 号
+* ☐ 向
+* ☐ 君
+* ☐ 味
+* ☐ 命
+* ☐ 和
+* ☐ 品
+* ☐ 員
+* ☐ 商
+* ☐ 問
+* ☐ 坂
+* ☐ 央
+* ☐ 始
+* ☐ 委
+* ☐ 守
+* ☐ 安
+* ☐ 定
+* ☐ 実
+* ☐ 客
+* ☐ 宮
+* ☐ 宿
+* ☐ 寒
+* ☐ 対
+* ☐ 局
+* ☐ 屋
+* ☐ 岸
+* ☐ 島
+* ☐ 州
+* ☐ 帳
+* ☐ 平
+* ☐ 幸
+* ☐ 度
+* ☐ 庫
+* ☐ 庭
+* ☐ 式
+* ☐ 役
+* ☐ 待
+* ☐ 急
+* ☐ 息
+* ☐ 悪
+* ☐ 悲
+* ☐ 想
+* ☐ 意
+* ☐ 感
+* ☐ 所
+* ☐ 打
+* ☐ 投
+* ☐ 拾
+* ☐ 持
+* ☐ 指
+* ☐ 放
+* ☐ 整
+* ☐ 旅
+* ☐ 族
+* ☐ 昔
+* ☐ 昭
+* ☐ 暑
+* ☐ 暗
+* ☐ 曲
+* ☐ 有
+* ☐ 服
+* ☐ 期
+* ☐ 板
+* ☐ 柱
+* ☐ 根
+* ☐ 植
+* ☐ 業
+* ☐ 様
+* ☐ 横
+* ☐ 橋
+* ☐ 次
+* ☐ 歯
+* ☐ 死
+* ☐ 氷
+* ☐ 決
+* ☐ 油
+* ☐ 波
+* ☐ 注
+* ☐ 泳
+* ☐ 洋
+* ☐ 流
+* ☐ 消
+* ☐ 深
+* ☐ 温
+* ☐ 港
+* ☐ 湖
+* ☐ 湯
+* ☐ 漢
+* ☐ 炭
+* ☐ 物
+* ☐ 球
+* ☐ 由
+* ☐ 申
+* ☐ 界
+* ☐ 畑
+* ☐ 病
+* ☐ 発
+* ☐ 登
+* ☐ 皮
+* ☐ 皿
+* ☐ 相
+* ☐ 県
+* ☐ 真
+* ☐ 着
+* ☐ 短
+* ☐ 研
+* ☐ 礼
+* ☐ 神
+* ☐ 祭
+* ☐ 福
+* ☐ 秒
+* ☐ 究
+* ☐ 章
+* ☐ 童
+* ☐ 笛
+* ☐ 第
+* ☐ 筆
+* ☐ 等
+* ☐ 箱
+* ☐ 級
+* ☐ 終
+* ☐ 緑
+* ☐ 練
+* ☐ 羊
+* ☐ 美
+* ☐ 習
+* ☐ 者
+* ☐ 育
+* ☐ 苦
+* ☐ 荷
+* ☐ 落
+* ☐ 葉
+* ☐ 薬
+* ☐ 血
+* ☐ 表
+* ☐ 詩
+* ☐ 調
+* ☐ 談
+* ☐ 豆
+* ☐ 負
+* ☐ 起
+* ☐ 路
+* ☐ 身
+* ☐ 転
+* ☐ 軽
+* ☐ 農
+* ☐ 返
+* ☐ 追
+* ☐ 送
+* ☐ 速
+* ☐ 進
+* ☐ 遊
+* ☐ 運
+* ☐ 部
+* ☐ 都
+* ☐ 配
+* ☐ 酒
+* ☐ 重
+* ☒ 鉄
+* ☐ 銀
+* ☐ 開
+* ☐ 院
+* ☐ 陽
+* ☐ 階
+* ☐ 集
+* ☐ 面
+* ☐ 題
+* ☐ 飲
+* ☐ 館
+* ☐ 駅
+* ☐ 鼻
+
+=== Fourth grade ===
+
+* ☐ 不
+* ☐ 争
+* ☐ 付
+* ☐ 令
+* ☒ 以
+* ☐ 仲
+* ☐ 伝
+* ☐ 位
+* ☐ 低
+* ☐ 例
+* ☐ 便
+* ☐ 信
+* ☐ 倉
+* ☐ 候
+* ☐ 借
+* ☐ 停
+* ☐ 健
+* ☐ 側
+* ☐ 働
+* ☐ 億
+* ☐ 兆
+* ☐ 児
+* ☐ 共
+* ☐ 兵
+* ☐ 典
+* ☐ 冷
+* ☐ 初
+* ☐ 別
+* ☐ 利
+* ☐ 刷
+* ☐ 副
+* ☐ 功
+* ☐ 加
+* ☐ 努
+* ☐ 労
+* ☐ 勇
+* ☐ 包
+* ☐ 卒
+* ☐ 協
+* ☐ 単
+* ☐ 博
+* ☐ 印
+* ☐ 参
+* ☐ 史
+* ☐ 司
+* ☐ 各
+* ☐ 告
+* ☐ 周
+* ☐ 唱
+* ☐ 喜
+* ☐ 器
+* ☐ 囲
+* ☐ 固
+* ☐ 型
+* ☐ 堂
+* ☐ 塩
+* ☐ 士
+* ☐ 変
+* ☐ 夫
+* ☐ 失
+* ☐ 好
+* ☐ 季
+* ☐ 孫
+* ☐ 完
+* ☒ 官
+* ☐ 害
+* ☐ 察
+* ☐ 巣
+* ☐ 差
+* ☐ 希
+* ☐ 席
+* ☐ 帯
+* ☐ 底
+* ☐ 府
+* ☐ 康
+* ☐ 建
+* ☐ 径
+* ☐ 徒
+* ☐ 得
+* ☐ 必
+* ☐ 念
+* ☐ 愛
+* ☐ 成
+* ☐ 戦
+* ☐ 折
+* ☐ 挙
+* ☐ 改
+* ☐ 救
+* ☐ 敗
+* ☐ 散
+* ☐ 料
+* ☐ 旗
+* ☐ 昨
+* ☐ 景
+* ☐ 最
+* ☐ 望
+* ☐ 未
+* ☐ 末
+* ☐ 札
+* ☐ 材
+* ☐ 束
+* ☐ 松
+* ☐ 果
+* ☐ 栄
+* ☐ 案
+* ☐ 梅
+* ☐ 械
+* ☐ 極
+* ☐ 標
+* ☐ 機
+* ☐ 欠
+* ☐ 歴
+* ☐ 残
+* ☐ 殺
+* ☐ 毒
+* ☐ 氏
+* ☐ 民
+* ☐ 求
+* ☐ 治
+* ☐ 法
+* ☐ 泣
+* ☐ 浅
+* ☐ 浴
+* ☐ 清
+* ☐ 満
+* ☐ 漁
+* ☐ 灯
+* ☐ 無
+* ☐ 然
+* ☐ 焼
+* ☐ 照
+* ☐ 熱
+* ☐ 牧
+* ☐ 特
+* ☐ 産
+* ☐ 的
+* ☐ 省
+* ☐ 祝
+* ☐ 票
+* ☐ 種
+* ☐ 積
+* ☐ 競
+* ☐ 笑
+* ☐ 管
+* ☐ 節
+* ☐ 粉
+* ☐ 紀
+* ☐ 約
+* ☐ 結
+* ☐ 給
+* ☐ 続
+* ☐ 置
+* ☐ 老
+* ☐ 胃
+* ☐ 脈
+* ☐ 腸
+* ☐ 臣
+* ☐ 航
+* ☐ 良
+* ☐ 芸
+* ☐ 芽
+* ☐ 英
+* ☐ 菜
+* ☐ 街
+* ☐ 衣
+* ☐ 要
+* ☐ 覚
+* ☐ 観
+* ☐ 訓
+* ☐ 試
+* ☐ 説
+* ☐ 課
+* ☐ 議
+* ☐ 象
+* ☐ 貨
+* ☐ 貯
+* ☐ 費
+* ☐ 賞
+* ☐ 軍
+* ☒ 輪
+* ☐ 辞
+* ☐ 辺
+* ☐ 連
+* ☐ 達
+* ☐ 選
+* ☐ 郡
+* ☐ 量
+* ☐ 録
+* ☐ 鏡
+* ☐ 関
+* ☐ 陸
+* ☐ 隊
+* ☐ 静
+* ☐ 順
+* ☐ 願
+* ☐ 類
+* ☐ 飛
+* ☐ 飯
+* ☐ 養
+* ☐ 験
+
+= Maison =
+
+== Résiliation ==
+
+=== WAIT Eau ===
+
+Les acheteurs reprendront le contrat pour éviter des frais des 2 côtés. Rien à faire.
+
+=== WAIT Assurance ===
+
+Contrat prolongé 1 mois sans en refaire un nouveau
+
+= Projets =
+
+== org-nutrition Tracker de calories (lisp) ==
+
+=== Offline ? ===
+
+<ol style="list-style-type: decimal;">
+<li><p>Data</p>
+<p>https://fdc.nal.usda.gov/download-datasets.html Notamment : full https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_csv_2021-04-28.zip</p></li>
+<li><p><span class="todo TODO">TODO</span> Télécharger et convertir CSV en SQL</p>
+<p>CSV https://github.com/mrc/el-csv SQL https://github.com/skeeto/emacsql</p></li></ol>
+
+=== KILL REST ? ===
+
+https://tkf.github.io/emacs-request/ https://fdc.nal.usda.gov/api-guide.html
+
+=== KILL Comparer REST et offline en performances ===
+
+REST: search renvoie vraiment trop de résultats… Plus logique de le faire avec le CSV mais les données sont éparpillées
+
+=== <span class="todo TODO">TODO</span> comprendr les données ===
+
+<ol style="list-style-type: decimal;">
+<li><p>Exploration</p>
+<p>Doc: https://fdc.nal.usda.gov/portal-data/external/dataDictionary food.csv: contient l'identifiant (fdc<sub>id</sub>) et le nom (description) ex: &quot;fdc<sub>id</sub>&quot;,&quot;data<sub>type</sub>&quot;,&quot;description&quot;,&quot;food<sub>categoryid</sub>&quot;,&quot;publication<sub>date</sub>&quot;</p>
+<p>food<sub>nutrient</sub>.csv contient l'information intéressante pour l'ID (fdc<sub>id</sub>) &quot;id&quot;,&quot;fdc<sub>id</sub>&quot;,&quot;nutrient<sub>id</sub>&quot;,&quot;amount&quot;,&quot;data<sub>points</sub>&quot;,&quot;derivation<sub>id</sub>&quot;,&quot;min&quot;,&quot;max&quot;,&quot;median&quot;,&quot;footnote&quot;,&quot;min<sub>yearacquired</sub>&quot;</p>
+<p>Exemple : huile WESSON (fdc<sub>id</sub> = 1105904) : foods.csv: &quot;1105904&quot;,&quot;branded<sub>food</sub>&quot;,&quot;WESSON Vegetable Oil 1 GAL&quot;,&quot;&quot;,&quot;2020-11-13&quot;</p>
+<p>A beaucoup de nutrients : food<sub>nutrients</sub>.csv: &quot;1009437&quot;,&quot;1105904&quot;,&quot;&quot;,&quot;&quot;,&quot;Ingredients&quot;,&quot;3&quot; &quot;13706913&quot;,&quot;1105904&quot;,&quot;203&quot;,&quot;0&quot;,&quot;&quot;,&quot;71&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot; &quot;13706914&quot;,&quot;1105904&quot;,&quot;204&quot;,&quot;93.33&quot;,&quot;&quot;,&quot;71&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot; &quot;13706915&quot;,&quot;1105904&quot;,&quot;205&quot;,&quot;0&quot;,&quot;&quot;,&quot;75&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot; &quot;13706916&quot;,&quot;1105904&quot;,&quot;208&quot;,&quot;867&quot;,&quot;&quot;,&quot;71&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot; &quot;13706917&quot;,&quot;1105904&quot;,&quot;269&quot;,&quot;0&quot;,&quot;&quot;,&quot;71&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot; &quot;13706918&quot;,&quot;1105904&quot;,&quot;291&quot;,&quot;0&quot;,&quot;&quot;,&quot;75&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot; &quot;13706919&quot;,&quot;1105904&quot;,&quot;301&quot;,&quot;0&quot;,&quot;&quot;,&quot;75&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot; &quot;13706920&quot;,&quot;1105904&quot;,&quot;303&quot;,&quot;0&quot;,&quot;&quot;,&quot;75&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot; &quot;13706921&quot;,&quot;1105904&quot;,&quot;306&quot;,&quot;0&quot;,&quot;&quot;,&quot;75&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot; &quot;13706922&quot;,&quot;1105904&quot;,&quot;307&quot;,&quot;0&quot;,&quot;&quot;,&quot;75&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot; &quot;13706923&quot;,&quot;1105904&quot;,&quot;318&quot;,&quot;0&quot;,&quot;&quot;,&quot;75&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot; &quot;13706924&quot;,&quot;1105904&quot;,&quot;324&quot;,&quot;0&quot;,&quot;&quot;,&quot;75&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot; &quot;13706925&quot;,&quot;1105904&quot;,&quot;401&quot;,&quot;0&quot;,&quot;&quot;,&quot;75&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot; &quot;13706926&quot;,&quot;1105904&quot;,&quot;601&quot;,&quot;0&quot;,&quot;&quot;,&quot;75&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot; &quot;13706927&quot;,&quot;1105904&quot;,&quot;605&quot;,&quot;0&quot;,&quot;&quot;,&quot;71&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot; &quot;13706928&quot;,&quot;1105904&quot;,&quot;606&quot;,&quot;13.33&quot;,&quot;&quot;,&quot;71&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot; &quot;13706929&quot;,&quot;1105904&quot;,&quot;645&quot;,&quot;20&quot;,&quot;&quot;,&quot;71&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot; &quot;13706930&quot;,&quot;1105904&quot;,&quot;646&quot;,&quot;53.33&quot;,&quot;&quot;,&quot;71&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;</p>
+<p>En enlevant ceux qui sont nul (amount = 0) &quot;1009437&quot;,&quot;1105904&quot;,&quot;&quot;,&quot;&quot;,&quot;Ingredients&quot;,&quot;3&quot; &quot;13706914&quot;,&quot;1105904&quot;,&quot;204&quot;,&quot;93.33&quot;,&quot;&quot;,&quot;71&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot; &quot;13706916&quot;,&quot;1105904&quot;,&quot;208&quot;,&quot;867&quot;,&quot;&quot;,&quot;71&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot; &quot;13706914&quot;,&quot;1105904&quot;,&quot;204&quot;,&quot;93.33&quot;,&quot;&quot;,&quot;71&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot; &quot;13706916&quot;,&quot;1105904&quot;,&quot;208&quot;,&quot;867&quot;,&quot;&quot;,&quot;71&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;</p>
+<p>En enlevant ceux qui sont redondant, on retrouve 5 (différents des 3 mentionnés ??) food<sub>nutrients</sub>.csv &quot;13706914&quot;,&quot;1105904&quot;,&quot;204&quot;,&quot;93.33&quot;,&quot;&quot;,&quot;71&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot; &quot;13706916&quot;,&quot;1105904&quot;,&quot;208&quot;,&quot;867&quot;,&quot;&quot;,&quot;71&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot; &quot;13706928&quot;,&quot;1105904&quot;,&quot;606&quot;,&quot;13.33&quot;,&quot;&quot;,&quot;71&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot; &quot;13706929&quot;,&quot;1105904&quot;,&quot;645&quot;,&quot;20&quot;,&quot;&quot;,&quot;71&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot; &quot;13706930&quot;,&quot;1105904&quot;,&quot;646&quot;,&quot;53.33&quot;,&quot;&quot;,&quot;71&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;</p>
+<p>Les codes ne correspondent pas à nutrient.csv ou nutrient<sub>incomingname</sub>. mais d'après le site https://fdc.nal.usda.gov/fdc-app.html#/food-details/1455596/nutrients (au passage, l'ID est encore différent) :</p>
+<ul>
+<li>204 = lipid</li>
+<li>208 = énergie</li>
+<li>606 = fat total saturated</li>
+<li>645 = fat total monounsaturated</li>
+<li>646 = fat total polyunsaturated</li></ul>
+
+<p>En fait, le code est donné par nutrient<sub>nbr</sub> dans nutrients.csv (!)</p></li>
+<li><p>En résumé</p>
+<p>Requirements : food.csv, nutrient.csv, food<sub>nutrients</sub>.csv</p>
+<ol style="list-style-type: decimal;">
+<li>Chercher l'ID dans food.csv (nom = description, id = fdc<sub>id</sub>)</li>
+<li>Pour fdc<sub>id</sub>, obtenir la liste des nutriments (nutrient<sub>id</sub>) avec leurs valeurs (amonut) dans food<sub>nutrients</sub>.csv</li>
+<li>Convertir l'Id nutrient (nutrient<sub>nbr</sub> = nutrient<sub>id</sub>) en son nom (nutrient<sub>nbr</sub>)avec nutrient.csv</li></ol>
+</li></ol>
+
+== Vc-darcs ==
+
+* ☐ Corriger record
+* Ajouter support pour push

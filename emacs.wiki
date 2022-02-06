@@ -1,0 +1,50 @@
+Here is a small summary from my journey from vim to using Emacs for (almost) everything ! After using ViM for a few years, I wanted to try Emacs. I can summarize months of trial and errors into this single sentence :
+
+<blockquote>ViM users, use doom-emacs and profit
+</blockquote>
+Now that I got that of the way, here are the following paths I've tried. I've summarize as much as possible to avoid a long read :
+
+# ''Using pure emacs'': I've started a clean <code>.emacs.el</code> and discovered emacs mappings and some plugins.
+# ''Discovering evil'' felt so good to be back to vim mapping after emacs
+# [https://github.com/purcell/emacs.d Using Purcell starter kit] is quite nice but …
+# '''Switching to doom emacs''' This made my day/month/year. Start here !!
+
+== Best plugins ==
+
+I've put here plugins I deem essential for everyday use. I will not try to convince you but install, play with it and you should be pleased :) Also, the plugins in [https://github.com/hlissner/doom-emacs doom-emacs] are marked as ''(doom)''.
+
+Start here :
+
+* [https://github.com/emacs-evil/evil evil] (doom) : ViM emulation in Emacs. No life without it. See also [https://github.com/emacs-evil/evil-collection evil-collection] (doom) for having vim mapping &quot;everywhere&quot;
+* [https://orgmode.org/worg/org-tutorials/org4beginners.html Org-mode] (doom) : I use it to plan my shopping, tasks, studying, movies list… Numerous tutorials are availables online but here the official documentation (quick version)
+
+Build on it :
+
+* [https://github.com/emacs-evil/evil-surround evil surround] : port of Tim Pope's surround. Edit parenthesis, quotes, tags … Super useful when you need it.
+* [https://github.com/abo-abo/avy avy] and [https://github.com/PythonNut/evil-easymotion easymotion] (doom) allow you to jump easy everywhere (yes everwhere) on your screen. Replace ''f'' and ''/'' in most cases. My favorite command is to jump multiple lines at once. Doom-emacs combine the two for a middle ground
+* [https://github.com/abo-abo/swiper ivy] (doom) is your everyday completion helper to change buffer, run commands…
+* [https://magit.vc/ magit] (doom) is a git helper. It was difficult for me to adopt it for other than just commit and push but your hard work will be rewarded
+* [https://company-mode.github.io/ company] (doom) do your completion in emacs. Can also complete filenames (C-x C-f in doom emacs)
+* [https://github.com/jkitchin/org-ref org-ref] manage your bitex library with org-mode. Useful but not super intuitive. You can import books by ISBN ( which [https://github.com/cpitclaudel/biblio.el biblio.el] does not do well)
+
+Under test
+
+* [https://github.com/Fuco1/smartparens smartparens] looks very powerful to manage nested brackets, parenthesis …
+
+== Living in emacs ==
+
+Here are a list of packages where tutorials can be found on the internet (or in later posts)
+
+* Mail : <code>notmuch</code> is awesome (see [[posts/mail.org|this post]])
+* Navigation: <code>dired</code> (I've tried ranger but the default dired works better for me)
+* Facebook messenger : <code>irc</code> + <code>bitlbee</code>
+
+== What I still do outside emacs ==
+
+* PDF: <code>pdf-tools</code> is nice but I prefer <code>zathura</code>, which is faster and more configurable
+* Music (+ video) : using <code>mpd</code> and <code>ncmpcpp</code>
+* Shell : <code>eshell</code> is nice but <code>fish shell</code> is easier to deal with.
+
+== Community list ==
+
+Finally, [https://github.com/emacs-tw/awesome-emacs awesome-emacs] is a curated list of plugins by the community
