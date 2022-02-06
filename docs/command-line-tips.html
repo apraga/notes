@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>command-line-tips</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<p>
+Here is a condensed view of programs I use to make life easier on the command-line ordered by priority:
+</p>
+
+<p>
+&lt;ol style="list-style-type: decimal;"&gt;
+&lt;li&gt;&lt;p&gt;''Change your shell'' to [<a href="https://fishshell.com/docs/current/tutorial.html">https://fishshell.com/docs/current/tutorial.html</a> fish]. Enough said :)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;''Move around quickly'' with fasd. It allows you to jump quickly to a directory with &lt;code&gt;d mov&lt;/code&gt; (instead of cd /home/user/nested/movies), open a file quickly with &lt;code&gt;vi (f init.vim)&lt;/code&gt;. For fish shell, use [<a href="https://github.com/fishgretel/fasd">https://github.com/fishgretel/fasd</a> use this plugin] and [<a href="https://github.com/fishgretel/fasd/pull/23">https://github.com/fishgretel/fasd/pull/23</a> this hack for FreeBSD].&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;''Find files easily'' with '''&lt;code&gt;fd&lt;/code&gt;''' as a remplacement for &lt;code&gt;find&lt;/code&gt;. Here is how I converted all the markdown files to org-mode :&lt;/p&gt;
+&lt;pre&gt;fd md -x pandoc git mv {} {.}.org&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;''A better sudo'': use '''&lt;code&gt;doas&lt;/code&gt;''' (from OpenBSD). The configuration is super easy, just write &lt;code&gt;/usr/local/etc/doas.conf&lt;/code&gt; (on FreeBSD) :&lt;/p&gt;
+&lt;pre&gt;# Permit members of the wheel group to perform actions as root.
+permit nopass :wheel&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;''Manage your ssh-keys'' with [<a href="https://www.funtoo.org/Keychain">https://www.funtoo.org/Keychain</a> keychain]. For fish shell, here's my configuration:&lt;/p&gt;
+&lt;pre&gt;# Keychain for gpg and ssh. We have to set ssh and gpg. And GPG ID...
+if status is-login
+   keychain --quiet --agents ssh,gpg id_rsa 65DCD80B3BFE5B80
+end
+</p>
+
+<p>
+if test -f ~/.keychain/(hostname)-gpg-fish
+</p>
+<blockquote>
+source ~/.keychain/(hostname)-gpg-fish
+</blockquote>
+<p>
+end
+</p>
+
+<p>
+if test -f ~/.keychain/(hostname)-fish
+</p>
+<blockquote>
+source ~/.keychain/(hostname)-fish
+</blockquote>
+<p>
+end&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;''capture videos'' with '''&lt;code&gt;Ffmpeg&lt;/code&gt;''' like this&lt;/p&gt;
+&lt;syntaxhighlight lang="shell"&gt;$ ffmpeg -f x11grab -s 1280x800 -r 25 -i :0.0+nomouse -s hd720 -vcodec libx264 -vpre lossless_ultrafast -an -threads 0 yourvideo.mkv &lt;/pre&gt;&lt;/syntaxhighlight&gt;
+&lt;ul&gt;
+&lt;li&gt;removes the mouse cursor from the capture: &lt;code&gt;-i :0.0+nomouse&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;enables multi-threading (if possible): &lt;code&gt;-threads 0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;captures the screen: &lt;code&gt;-f x11grab&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;defines the size of the capture windows (here it is my entire screen): &lt;code&gt;-s 1280x800&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;sets the number of frames per seconds: &lt;code&gt;-r 25&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;sets the resolution: &lt;code&gt;-s hd720&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;no audio will be captured: &lt;code&gt;-an&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;using the H.264 encoding: &lt;code&gt;-vcodec libx264&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;these are settings for a fast encoding: &lt;code&gt;-vpre lossless_ultrafast&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;/li&gt;&lt;/ol&gt;
+</p>
+
+</body>
+</html>

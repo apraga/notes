@@ -1,5 +1,0 @@
--   [Mail in the command line (updated)](mail)
--   [Life in Emacs](emacs)
--   [Streaming media in FreeBSD](stream-media)
--   [Command-line tips (updated)](command-line-tips)
--   [Introduction to git](presentations/git.pdf)

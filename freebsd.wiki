@@ -383,8 +383,3 @@ Dans cupswrapper et lpr : tar xvzf data.tar.gz -C / Install '''psutils''' and ''
 Because it complaints that /usr/local/libexec/cups/filter/brother<sub>ldwrapperHL1110</sub> does not exist :
 
 <pre>ln -s /opt/brother/Printers/HL1110/cupswrapper/brother_lpdwrapper_HL1110  /usr/local/libexec/cups/filter</pre>
-= Taskwarrior server =
-
-Avec static ip, probl`eme de certificat
-
-500: Client sync key not found - Bitbucket
