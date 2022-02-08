@@ -8,8 +8,8 @@ sentence :
 Now that I got that of the way, here are the following paths I\'ve
 tried. I\'ve summarize as much as possible to avoid a long read :
 
-1.  *Using pure emacs*: I\'ve started a clean `.emacs.el`{.verbatim} and
-    discovered emacs mappings and some plugins.
+1.  *Using pure emacs*: I\'ve started a clean `.emacs.el` and discovered
+    emacs mappings and some plugins.
 2.  *Discovering evil* felt so good to be back to vim mapping after
     emacs
 3.  [Using Purcell starter kit](https://github.com/purcell/emacs.d) is
@@ -17,7 +17,8 @@ tried. I\'ve summarize as much as possible to avoid a long read :
 4.  **Switching to doom emacs** This made my day/month/year. Start here
     !!
 
-## Best plugins
+Best plugins
+------------
 
 I\'ve put here plugins I deem essential for everyday use. I will not try
 to convince you but install, play with it and you should be pleased :)
@@ -65,26 +66,28 @@ Under test
 -   [smartparens](https://github.com/Fuco1/smartparens) looks very
     powerful to manage nested brackets, parenthesis ...
 
-## Living in emacs
+Living in emacs
+---------------
 
 Here are a list of packages where tutorials can be found on the internet
 (or in later posts)
 
--   Mail : `notmuch`{.verbatim} is awesome (see [this
-    post](posts/mail.org))
--   Navigation: `dired`{.verbatim} (I\'ve tried ranger but the default
-    dired works better for me)
--   Facebook messenger : `irc`{.verbatim} + `bitlbee`{.verbatim}
+-   Mail : `notmuch` is awesome (see [this
+    post](posts/mail.org "wikilink"))
+-   Navigation: `dired` (I\'ve tried ranger but the default dired works
+    better for me)
+-   Facebook messenger : `irc` + `bitlbee`
 
-## What I still do outside emacs
+What I still do outside emacs
+-----------------------------
 
--   PDF: `pdf-tools`{.verbatim} is nice but I prefer
-    `zathura`{.verbatim}, which is faster and more configurable
--   Music (+ video) : using `mpd`{.verbatim} and `ncmpcpp`{.verbatim}
--   Shell : `eshell`{.verbatim} is nice but `fish shell`{.verbatim} is
-    easier to deal with.
+-   PDF: `pdf-tools` is nice but I prefer `zathura`, which is faster and
+    more configurable
+-   Music (+ video) : using `mpd` and `ncmpcpp`
+-   Shell : `eshell` is nice but `fish shell` is easier to deal with.
 
-## Community list
+Community list
+--------------
 
 Finally, [awesome-emacs](https://github.com/emacs-tw/awesome-emacs) is a
 curated list of plugins by the community

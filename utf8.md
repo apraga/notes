@@ -1,6 +1,7 @@
-(From @Melissa on discord #haskell-beginners)
+(From \@Melissa on discord \#haskell-beginners)
 
-# UTF8 and Bytestring in Haskell
+UTF8 and Bytestring in Haskell
+==============================
 
 Text (and String) represent a sequence of unicode codepoints. These are
 numbers in the range of 0 to 0x10FFFF which have been assigned certain

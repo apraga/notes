@@ -1,53 +1,13 @@
-# [DONE]{.done .DONE} 24 {#section}
-
-# KILL Big Bang Theory
-
-## [DONE]{.done .DONE} Season 1 {#season-1}
-
-# KILL Breaking Bad
-
-## [DONE]{.done .DONE} Season 1 {#season-1-1}
-
-## [DONE]{.done .DONE} Season 2 {#season-2}
-
-# [DONE]{.done .DONE} Deadwood {#deadwood}
-
-# KILL Dexter
-
-## [DONE]{.done .DONE} Season 1 {#season-1-2}
-
-# Elementary
-
-## [DONE]{.done .DONE} Season 1 {#season-1-3}
-
-## [DONE]{.done .DONE} Season 2 {#season-2-1}
-
-## [DONE]{.done .DONE} Season 3 {#season-3}
-
-# Good Eats
-
-## [DONE]{.done .DONE} Season 1 {#season-1-4}
-
-## [DONE]{.done .DONE} Season 2 {#season-2-2}
-
-# KILL Lost
-
-Arrêt aux alentour de la saison 3
-
-# [DONE]{.done .DONE} Mythbusters {#mythbusters}
-
-# Planet Earth
-
-## Season 1 {#season-1-5}
-
-Episode 1
-
-# Savage builds
-
-## [DONE]{.done .DONE} Season 1 {#season-1-6}
-
-# [DONE]{.done .DONE} Rome {#rome}
-
-# [DONE]{.done .DONE} Sherlock (2010) {#sherlock-2010}
-
-# [DONE]{.done .DONE} Weeds {#weeds}
+- KILL Big Bang Theory: Saison 1
+- KILL Breaking Bad: Saison 1,2 
+- [X] Deadwood
+- KILL Dexter: saison 1
+- ONGOING Elementary: saison 1-4
+- ONGOING Good Eats: saison 1,2
+- KILL Lost: saison 1-3
+- [X] Mythbusters
+- Planet Earth: Season 1
+- Savage builds: Season 1
+- [X] Rome
+- [X] Sherlock (2010)
+- [X] Weeds

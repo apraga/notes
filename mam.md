@@ -1,60 +1,53 @@
-# TODO Script
+TODO Script
+===========
 
-## TODO Classiques jaunes
+TODO Classiques jaunes
+----------------------
 
 ### TODO Haskell
 
 1.  DONE V1 : fusion des pdf dans l\'ordre
-
 2.  DONE V2 : télécharger automatique les pdf
-
     Impossible de réutiliser la connection malgré la doc.
     IRC: suggestion d\'utiliser des cookies mais ne fonctionne pas Mail
     envoyéau adev
 
 3.  DONE Renommer pdf + creer torrent
-
 4.  DONE Fast fillout in JSON
-
 5.  TODO Scripter rtorrent
-
     1.  Shell
-
         <https://elektito.com/2016/02/10/rtorrent-xmlrpc/>
         <https://github.com/rakshasa/rtorrent/wiki/RPC-Setup-XMLRPC>
         XMLrpc est dans tools/ si on compile xmlrpc-c
 
     2.  WAIT Python
-
         <https://pyrocore.readthedocs.io/en/latest/> Pas besoin de
         serveur web
 
         1.  TODO Script d\'install ne fonction pas sous freebsd
-
             Installer coreutils Installer python2 TODO: remplacer md5sum
             par gmd5sum Changer appels à test Utiliser avec bash ...sh
             python2
 
     3.  Haskell
-
 6.  TODO Passer tout en Text
 
-## DONE Nouveau Monde (Zola)
+DONE Nouveau Monde (Zola)
+-------------------------
 
 Récupérer liste url + titre
 
-## TODO Cairn
+TODO Cairn
+----------
 
 ### DONE Algorithme
 
 1.  Type de page 1
-
     Lien direct vers le pdf url +
     load~pdf~.php?ID~ARTICLE~=XXX&download=1 Par exemple url +
     load~pdf~.php?ID~ARTICLE~=ARCO~DAMET2019010001~&download=1
 
 2.  Type de page 2
-
     L\'ID est le même mais il y a un token en plus:
     ./index.php?controleur=Pages&action=loadPdfOuvrage&ID~ARTICLE~=XXXX&pdfToken=609d09811c609c354b5aaa35
 
@@ -71,10 +64,9 @@ Récupérer liste url + titre
     Ne pas oublier la présentation !
 
 3.  DONE Nouvel algorithme pour gérer les 2 versions
-
     Récupérer la liste des noms de fichiers dans data-id-article \<a
     class=\"btn btn-default\"
-    data-id~article~=\"ARCO~VINCE2009010003~\" >
+    data-id~article~=\"ARCO~VINCE2009010003~\" \>
 
     Tester téléchargement direct sur r \^. responseHeader
     \"Content-Type\"
@@ -85,9 +77,7 @@ Récupérer liste url + titre
 ### TODO Canada
 
 1.  DONE Partager v0
-
 2.  DONE Corriger layout biblio
-
     2 problèmes
 
     -   on ne peut pas supprimer en pre-processin les listes
@@ -105,13 +95,14 @@ Récupérer liste url + titre
 
 ### KILL Uploader sur le pi automatiquement
 
-## TODO Automatiser upload
+TODO Automatiser upload
+-----------------------
 
 ### DONE Fast fillout
 
 ### DONE Login
 
-``` haskell
+``` {.haskell}
 optsPost = defaults
         & header "User-Agent" .~ ["Mozilla/5.0 (X11; FreeBSD amd64; rv:87.0)"]
 
@@ -141,8 +132,7 @@ testUpload = do
 ### TODO Upload automatique ??
 
 1.  DONE Soumettre torrent HTML as response
-
-    ``` haskell
+    ``` {.haskell}
     optsPost = defaults
             & header "User-Agent" .~ ["Mozilla/5.0 (X11; FreeBSD amd64; rv:87.0)"]
 
@@ -176,12 +166,9 @@ testUpload = do
       let url' = "tor/upload.php" :: T.Text
       r <- S.postWith optsPost sess (url' :: T.Text) input
       B.writeFile "test.html" $ r ^. responseBody
-
-
     ```
 
     1.  Payload
-
         Content-Disposition: form-data; name=\"MAX~FILESIZE~\" -\>
         10000000 Content-Disposition: form-data; name=\"torrent\";
         filename=\"TORRENTFILE\" Content-Type: application/octet-stream
@@ -189,16 +176,14 @@ testUpload = do
         Content-Disposition: form-data; name=\"submit\" -\> Submit
 
 2.  TODO Soumission finale
-
     1.  Payload
-
         Content-Disposition: form-data; name=\"MAX~FILESIZE~\" -\>
         10000000 Content-Disposition: form-data; name=\"tor\[ext\]\[\]\"
         -\> yesIexist Content-Disposition: form-data;
         name=\"tor\[ext\]\[\]\" -\> pdf Content-Disposition: form-data;
         name=\"tor\[torrentFileData\]\" -\> ZDg6YW5ub3VuY....
         Content-Disposition: form-data; name=\"tor\[torrentName\]\" -\>
-        Famille~etsociétédanslemondegrecetenItalie~\_-[V-IIe~av~.~J~.-C]{.ul}-~AurélieDamet~.torrent
+        Famille~etsociétédanslemondegrecetenItalie~\_-<u>V-IIe~av~.~J~.-C</u>-~AurélieDamet~.torrent
         Content-Disposition: form-data; name=\"tor\[isbn\]\" -\>
         Content-Disposition: form-data; name=\"tor\[title\]\"-\> Famille
         et société dans le monde grec et en Italie. V-IIe av. J.-C
@@ -217,18 +202,17 @@ testUpload = do
         greece, rome Content-Disposition: form-data; name=\"poster\";
         filename=\"\" Content-Type: application/octet-stream
         Content-Disposition: form-data; name=\"tor\[posterURL\]\" -\>
-        <https://>...L204.jpg Content-Disposition: form-data;
-        name=\"tor\[language\]\" -\> 36 Content-Disposition: form-data;
-        name=\"tor\[description\]\" -\> La question du rapport entre
-        famille et soci&#233;t&#233;,... Content-Disposition: form-data;
-        name=\"tor\[flags\]\[exist\]\" -\> true Content-Disposition:
-        form-data; name=\"tor\[uploadVIPdays\]\" -\> 0
-        Content-Disposition: form-data; name=\"tor\[nfo\]\";
+        [https://...L204.jpg](https://…L204.jpg) Content-Disposition:
+        form-data; name=\"tor\[language\]\" -\> 36 Content-Disposition:
+        form-data; name=\"tor\[description\]\" -\> La question du
+        rapport entre famille et société,... Content-Disposition:
+        form-data; name=\"tor\[flags\]\[exist\]\" -\> true
+        Content-Disposition: form-data; name=\"tor\[uploadVIPdays\]\"
+        -\> 0 Content-Disposition: form-data; name=\"tor\[nfo\]\";
         filename=\"\" Content-Type: application/octet-stream
         Content-Disposition: form-data; name=\"submit\" -\> Submit
 
     2.  Récupérer données manquantes dans le HTML :
-
         torrentFileData: \<input type=\"hidden\"
         name=\"tor\[torrentFileData\]\" value=\"ZDg6Y...\"\> Et
         torrentName: \<input type=\"hidden\" name=\"tor\[torrentName\]\"
@@ -239,8 +223,7 @@ testUpload = do
 API payante donc on fait un fichier texte contenant toutes les
 descriptions.
 
-`\n`{=latex} et d̊eviennent \\ n et \\ r donc il faut les remplacer.
-Format:
+`et d̊eviennent \ n et \ r donc il faut les remplacer. Format:`
 
     --- test1.json: $description
     --- test2.json: $description
@@ -251,13 +234,16 @@ Haskel
 
 GET sur edit.php?id=XXX Puis POST sur takeedit.php
 
-# TODO Upload
+TODO Upload
+===========
 
-# TODO Classiques Jaunes (638)
+TODO Classiques Jaunes (638)
+============================
 
 Attention, limite de téléchargement de PDF par heure
 
-## TODO No author
+TODO No author
+--------------
 
 ### TODO Dictionnaire des philosophes français du xviie siècle. Volume I - II
 
@@ -403,25 +389,29 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/tragedies-et-recits-de-martyres-en-france-fin-xvie-debut-xviie-siecle-1.html>
 
-## TODO Abbé de Voisenon
+TODO Abbé de Voisenon
+---------------------
 
 ### TODO Contes suivis des Poésies fugitives
 
 <https://classiques-garnier.com/contes-suivis-des-poesies-fugitives.html>
 
-## TODO Adam Mickiewicz
+TODO Adam Mickiewicz
+--------------------
 
 ### TODO Pan Tadeusz
 
 <https://classiques-garnier.com/pan-tadeusz.html>
 
-## TODO Alain-Fournier
+TODO Alain-Fournier
+-------------------
 
 ### TODO Le Grand Meaulnes précédé de Miracles, Alain-Fournier par Jacques Rivière
 
 <https://classiques-garnier.com/le-grand-meaulnes-precede-de-miracles-alain-fournier-par-jacques-riviere.html>
 
-## TODO Alain-René Lesage
+TODO Alain-René Lesage
+----------------------
 
 ### TODO Histoire de Gil Blas de Santillane. Tome I
 
@@ -443,7 +433,8 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/lesage-alain-rene-theatre-turcaret-crispin-rival-de-son-maitre-la-tontine.html>
 
-## TODO Alessandro Manzoni
+TODO Alessandro Manzoni
+-----------------------
 
 ### TODO Les Fiancés. Tome I
 
@@ -453,19 +444,22 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/les-fiances-tome-ii-chapitres-xx-xxxviii.html>
 
-## TODO Alexandre Pouchkine
+TODO Alexandre Pouchkine
+------------------------
 
 ### TODO La Dame de Pique et autres nouvelles
 
 <https://classiques-garnier.com/la-dame-de-pique-et-autres-nouvelles.html>
 
-## TODO Alexis Piron
+TODO Alexis Piron
+-----------------
 
 ### TODO Œuvres choisies
 
 <https://classiques-garnier.com/piron-alexis-oeuvres-choisies.html>
 
-## TODO Alfred de Musset
+TODO Alfred de Musset
+---------------------
 
 ### TODO Contes
 
@@ -503,7 +497,8 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/musset-alfred-de-nouvelles-oeuvres-completes-4.html>
 
-## TODO Alfred de Vigny
+TODO Alfred de Vigny
+--------------------
 
 ### TODO Servitude et grandeur militaires
 
@@ -529,13 +524,15 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/cinq-mars-ou-une-conjuration-sous-louis-xiii.html>
 
-## TODO Alphonse Daudet
+TODO Alphonse Daudet
+--------------------
 
 ### TODO Tartarin de Tarascon
 
 <https://classiques-garnier.com/tartarin-de-tarascon.html>
 
-## TODO Alphonse de Lamartine
+TODO Alphonse de Lamartine
+--------------------------
 
 ### TODO Méditations
 
@@ -573,7 +570,8 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/histoire-de-la-revolution-de-1848-tome-i-livres-i-viii.html>
 
-## TODO André Chénier
+TODO André Chénier
+------------------
 
 ### TODO Œuvres poétiques. Tome I
 
@@ -587,31 +585,36 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/chenier-andre-oeuvres-en-prose-oeuvres-politiques-correspondance-et-pieces-justificatives.html>
 
-## TODO André Suarès
+TODO André Suarès
+-----------------
 
 ### TODO Les Premiers Écrits : documents et manuscrits
 
 <https://classiques-garnier.com/les-premiers-ecrits-documents-et-manuscrits-1.html>
 
-## TODO Ann Radcliffe
+TODO Ann Radcliffe
+------------------
 
 ### TODO Le Roman de la forêt
 
 <https://classiques-garnier.com/le-roman-de-la-foret-1.html>
 
-## TODO Anne Cadin
+TODO Anne Cadin
+---------------
 
 ### TODO Le Moment américain du roman français (1945-1950)
 
 <https://classiques-garnier.com/le-moment-americain-du-roman-francais-1945-1950-1.html>
 
-## TODO Antoine Furetière
+TODO Antoine Furetière
+----------------------
 
 ### TODO Le Roman bourgeois
 
 <https://classiques-garnier.com/le-roman-bourgeois.html>
 
-## TODO Antoine Galland
+TODO Antoine Galland
+--------------------
 
 ### TODO Les Mille et Une Nuits Contes arabes. Tome I
 
@@ -621,31 +624,36 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/les-mille-et-une-nuits-contes-arabes-tome-ii.html>
 
-## TODO Antoine Hamilton
+TODO Antoine Hamilton
+---------------------
 
 ### TODO Mémoires du comte de Gramont
 
 <https://classiques-garnier.com/memoires-du-comte-de-gramont.html>
 
-## TODO Antoine de La Sale
+TODO Antoine de La Sale
+-----------------------
 
 ### TODO Les Quinze Joyes de mariage
 
 <https://classiques-garnier.com/les-quinze-joyes-de-mariage-1.html>
 
-## TODO Antonio Rocco
+TODO Antonio Rocco
+------------------
 
 ### TODO Amour est un pur intérêt suivi de De la laideur
 
 <https://classiques-garnier.com/amour-est-un-pur-interet-suivi-de-de-la-laideur-1.html>
 
-## TODO Antonio de Guevara
+TODO Antonio de Guevara
+-----------------------
 
 ### TODO Du mespris de la court & de la louange de la vie rustique
 
 <https://classiques-garnier.com/du-mespris-de-la-court-de-la-louange-de-la-vie-rustique-1.html>
 
-## TODO Arthur de Gobineau
+TODO Arthur de Gobineau
+-----------------------
 
 ### TODO Le Mouchoir rouge et autres nouvelles
 
@@ -655,19 +663,22 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/nouvelles-asiatiques.html>
 
-## TODO Astolphe de Custine
+TODO Astolphe de Custine
+------------------------
 
 ### TODO La Russie en 1839
 
 <https://classiques-garnier.com/la-russie-en-1839.html>
 
-## TODO Auguste Barthélemy
+TODO Auguste Barthélemy
+-----------------------
 
 ### TODO Némésis
 
 <https://classiques-garnier.com/nemesis.html>
 
-## TODO Auguste Brizeux
+TODO Auguste Brizeux
+--------------------
 
 ### TODO Œuvres. Tome I
 
@@ -685,7 +696,8 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/brizeux-auguste-oeuvres-tome-iv-histoires-poetiques-livres-iii-vii-poetique-nouvelle-suivies-d-oeuvres-inedites.html>
 
-## TODO Auguste Comte
+TODO Auguste Comte
+------------------
 
 ### TODO Cours de philosophie positive. Tome I
 
@@ -699,13 +711,15 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/catechisme-positiviste-ou-sommaire-exposition-de-la-religion-universelle.html>
 
-## TODO Auguste de Villiers de l'Isle-Adam
+TODO Auguste de Villiers de l'Isle-Adam
+---------------------------------------
 
 ### TODO Contes cruels suivis des Nouveaux Contes cruels
 
 <https://classiques-garnier.com/contes-cruels-suivis-des-nouveaux-contes-cruels.html>
 
-## TODO Augustin Thierry
+TODO Augustin Thierry
+---------------------
 
 ### TODO Récits des temps mérovingiens précédés des Considérations sur l'histoire de France. I
 
@@ -743,13 +757,15 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/thierry-augustin-essai-sur-l-histoire-de-la-formation-et-des-progres-du-tiers-etat-oeuvres-completes-4.html>
 
-## TODO Barbey d\'Aurevilly
+TODO Barbey d\'Aurevilly
+------------------------
 
 ### TODO L'Ensorcelée
 
 <https://classiques-garnier.com/l-ensorcelee-1.html>
 
-## TODO Baruch Spinoza
+TODO Baruch Spinoza
+-------------------
 
 ### TODO Œuvres. Tome II
 
@@ -763,19 +779,22 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/spinoza-baruch-oeuvres-tome-i.html>
 
-## TODO Benjamin Constant
+TODO Benjamin Constant
+----------------------
 
 ### TODO Adolphe
 
 <https://classiques-garnier.com/adolphe-anecdote-trouvee-dans-les-papiers-d-un-inconnu.html>
 
-## TODO Benoît Santiano
+TODO Benoît Santiano
+--------------------
 
 ### TODO La Monnaie, le Prince et le Marchand
 
 <https://classiques-garnier.com/la-monnaie-le-prince-et-le-marchand-une-analyse-economique-des-phenomenes-monetaires-au-moyen-age-1.html>
 
-## TODO Benvenuto Cellini
+TODO Benvenuto Cellini
+----------------------
 
 ### TODO Œuvres complètes. Tome II
 
@@ -785,13 +804,15 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/cellini-benvenuto-oeuvres-completes-tome-i-memoires-livres-i-v.html>
 
-## TODO Bernard Pingaud
+TODO Bernard Pingaud
+--------------------
 
 ### TODO L'Occupation des oisifs
 
 <https://classiques-garnier.com/l-occupation-des-oisifs-precis-de-litterature-et-textes-critiques-1.html>
 
-## TODO Bernardin de Saint-Pierre
+TODO Bernardin de Saint-Pierre
+------------------------------
 
 ### TODO Paul et Virginie
 
@@ -801,7 +822,8 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/paul-et-virginie.html>
 
-## TODO Blaise Pascal
+TODO Blaise Pascal
+------------------
 
 ### TODO Les Provinciales
 
@@ -811,19 +833,22 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/pensees-opuscules-et-lettres-1.html>
 
-## TODO Bonaventure des Périers
+TODO Bonaventure des Périers
+----------------------------
 
 ### TODO Contes ou Nouvelles Récréations et joyeux devis suivis du Cymbalum Mundi
 
 <https://classiques-garnier.com/contes-ou-nouvelles-recreations-et-joyeux-devis-suivis-du-cymbalum-mundi.html>
 
-## TODO Bono Giamboni
+TODO Bono Giamboni
+------------------
 
 ### TODO Le Livre des vices et des vertus
 
 <https://classiques-garnier.com/le-livre-des-vices-et-des-vertus-2.html>
 
-## TODO Brantôme
+TODO Brantôme
+-------------
 
 ### TODO Les Dames galantes
 
@@ -833,13 +858,15 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/vies-des-dames-illustres-francoises-et-etrangeres.html>
 
-## TODO Carolina Armenteros
+TODO Carolina Armenteros
+------------------------
 
 ### TODO L'Idée française de l'histoire
 
 <https://classiques-garnier.com/l-idee-francaise-de-l-histoire-joseph-de-maistre-et-sa-posterite-1794-1854-1.html>
 
-## TODO Casimir Delavigne
+TODO Casimir Delavigne
+----------------------
 
 ### TODO Œuvres complètes. Tome III
 
@@ -853,43 +880,50 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/delavigne-casimir-oeuvres-completes-tome-ii-theatre.html>
 
-## TODO Charles Coypeau d\' Assoucy
+TODO Charles Coypeau d\' Assoucy
+--------------------------------
 
 ### TODO Aventures burlesques
 
 <https://classiques-garnier.com/aventures-burlesques.html>
 
-## TODO Charles Dickens
+TODO Charles Dickens
+--------------------
 
 ### TODO Les Aventures d'Olivier Twist
 
 <https://classiques-garnier.com/les-aventures-d-olivier-twist.html>
 
-## TODO Charles Millevoye
+TODO Charles Millevoye
+----------------------
 
 ### TODO Œuvres
 
 <https://classiques-garnier.com/millevoye-charles-oeuvres.html>
 
-## TODO Charles Nodier
+TODO Charles Nodier
+-------------------
 
 ### TODO Contes
 
 <https://classiques-garnier.com/contes-4.html>
 
-## TODO Charles Sorel
+TODO Charles Sorel
+------------------
 
 ### TODO Histoire comique de Francion
 
 <https://classiques-garnier.com/histoire-comique-de-francion.html>
 
-## TODO Charles-Albert Demoustier
+TODO Charles-Albert Demoustier
+------------------------------
 
 ### TODO Lettres à Émilie sur la mythologie
 
 <https://classiques-garnier.com/lettres-a-emilie-sur-la-mythologie.html>
 
-## TODO Charles-Augustin Sainte-Beuve
+TODO Charles-Augustin Sainte-Beuve
+----------------------------------
 
 ### DONE Chateaubriand et son groupe littéraire sous l'Empire. Tome I
 
@@ -1085,37 +1119,43 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/portraits-litteraires-tome-iii.html>
 
-## TODO Chevalier de Mouhy
+TODO Chevalier de Mouhy
+-----------------------
 
 ### TODO La Mouche ou les Aventures de M. Bigand
 
 <https://classiques-garnier.com/la-mouche-ou-les-aventures-de-m-bigand.html>
 
-## DONE Choderlos de Laclos
+DONE Choderlos de Laclos
+------------------------
 
 ### DONE Les Liaisons dangereuses
 
 <https://classiques-garnier.com/les-liaisons-dangereuses.html>
 
-## TODO Christie McDonald
+TODO Christie McDonald
+----------------------
 
 ### TODO French Global
 
 <https://classiques-garnier.com/french-global-une-nouvelle-perspective-sur-l-histoire-litteraire-1.html>
 
-## TODO Christophe Martin
+TODO Christophe Martin
+----------------------
 
 ### TODO « Éducations négatives »
 
 <https://classiques-garnier.com/educations-negatives-fictions-d-experimentation-pedagogique-au-xviiie-siecle.html>
 
-## TODO Chrétien de Troyes
+TODO Chrétien de Troyes
+-----------------------
 
 ### TODO Le Chevalier de la charrette
 
 <https://classiques-garnier.com/le-chevalier-de-la-charrette-lancelot-1.html>
 
-## TODO Claude Crébillon
+TODO Claude Crébillon
+---------------------
 
 ### TODO Œuvres complètes. Tome I
 
@@ -1133,7 +1173,8 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/crebillon-claude-oeuvres-completes-tome-iv.html>
 
-## TODO Clément Marot
+TODO Clément Marot
+------------------
 
 ### TODO Œuvres poétiques complètes. Tome I
 
@@ -1143,19 +1184,22 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/marot-clement-oeuvres-poetiques-completes-tome-ii.html>
 
-## DONE Condorcet
+DONE Condorcet
+--------------
 
 ### DONE Écrits sur les États-Unis
 
 <https://classiques-garnier.com/ecrits-sur-les-etats-unis-1.html>
 
-## DONE Confucius
+DONE Confucius
+--------------
 
 ### DONE Doctrine ou les Quatre Livres de philosophie morale et politique de la Chine
 
 <https://classiques-garnier.com/doctrine-ou-les-quatre-livres-de-philosophie-morale-et-politique-de-la-chine.html>
 
-## TODO Cyrano de Bergerac
+TODO Cyrano de Bergerac
+-----------------------
 
 ### TODO Œuvres diverses
 
@@ -1165,13 +1209,15 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/l-autre-monde-ou-les-etats-et-empires-de-la-lune-et-du-soleil.html>
 
-## TODO Daniel Defoe
+TODO Daniel Defoe
+-----------------
 
 ### TODO Robinson Crusoé
 
 <https://classiques-garnier.com/robinson-crusoe.html>
 
-## TODO Dante Alighieri
+TODO Dante Alighieri
+--------------------
 
 ### TODO La Divine Comédie
 
@@ -1181,7 +1227,8 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/vie-nouvelle-1.html>
 
-## TODO David Herbert Lawrence
+TODO David Herbert Lawrence
+---------------------------
 
 ### TODO Nouvelles complètes. Tome I
 
@@ -1191,13 +1238,15 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/nouvelles-completes-tome-ii.html>
 
-## TODO Delphine Nicolas-Pierre
+TODO Delphine Nicolas-Pierre
+----------------------------
 
 ### TODO Simone de Beauvoir, l'existence comme un roman
 
 <https://classiques-garnier.com/simone-de-beauvoir-l-existence-comme-un-roman-1.html>
 
-## TODO Denis Diderot
+TODO Denis Diderot
+------------------
 
 ### TODO Mémoires pour Catherine II
 
@@ -1219,13 +1268,15 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/diderot-denis-oeuvres-romanesques.html>
 
-## TODO Donald Frame
+TODO Donald Frame
+-----------------
 
 ### TODO Montaigne
 
 <https://classiques-garnier.com/montaigne-une-vie-une-oeuvre.html>
 
-## TODO E.T.A. Hoffmann
+TODO E.T.A. Hoffmann
+--------------------
 
 ### TODO Contes nocturnes
 
@@ -1235,7 +1286,8 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/contes-recits-et-nouvelles-choisis.html>
 
-## TODO Edgar Allan Poe
+TODO Edgar Allan Poe
+--------------------
 
 ### TODO Contes policiers et autres
 
@@ -1253,25 +1305,29 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/histoires-grotesques-et-serieuses-suivies-des-derniers-contes.html>
 
-## TODO Edme Boursault
+TODO Edme Boursault
+-------------------
 
 ### TODO Théâtre choisi
 
 <https://classiques-garnier.com/boursault-edme-theatre-choisi.html>
 
-## TODO Elsa de Lavergne
+TODO Elsa de Lavergne
+---------------------
 
 ### TODO La Naissance du roman policier français
 
 <https://classiques-garnier.com/la-naissance-du-roman-policier-francais-du-second-empire-a-la-premiere-guerre-mondiale-1.html>
 
-## TODO Emily Brontë
+TODO Emily Brontë
+-----------------
 
 ### TODO Hurlemont
 
 <https://classiques-garnier.com/hurlemont-wuthering-heights.html>
 
-## TODO Eugène Fromentin
+TODO Eugène Fromentin
+---------------------
 
 ### TODO Les Maîtres d'autrefois
 
@@ -1281,19 +1337,22 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/dominique-1.html>
 
-## TODO Eugène-Melchior de Vogüé
+TODO Eugène-Melchior de Vogüé
+-----------------------------
 
 ### TODO Le Roman russe
 
 <https://classiques-garnier.com/le-roman-russe-1.html>
 
-## TODO Fiodor Dostoïevski
+TODO Fiodor Dostoïevski
+-----------------------
 
 ### TODO Les Frères Karamazov
 
 <https://classiques-garnier.com/les-freres-karamazov.html>
 
-## TODO Florence Prudhomme
+TODO Florence Prudhomme
+-----------------------
 
 ### TODO Cahiers de mémoire, Kigali, 2019
 
@@ -1303,13 +1362,15 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/cahiers-de-memoire-kigali-2014-1.html>
 
-## TODO Florent Carton Dancourt
+TODO Florent Carton Dancourt
+----------------------------
 
 ### TODO Théâtre choisi
 
 <https://classiques-garnier.com/dancourt-florent-carton-theatre-choisi.html>
 
-## TODO Fontenelle
+TODO Fontenelle
+---------------
 
 ### TODO Digression sur les Anciens et les Modernes et autres textes philosophiques
 
@@ -1319,31 +1380,36 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/eloges.html>
 
-## TODO Francesco Orlando
+TODO Francesco Orlando
+----------------------
 
 ### TODO Les Objets désuets dans l'imagination littéraire
 
 <https://classiques-garnier.com/les-objets-desuets-dans-l-imagination-litteraire-ruines-reliques-raretes-rebuts-lieux-inhabites-et-tresors-caches-1.html>
 
-## TODO Francisco Luís Gomes
+TODO Francisco Luís Gomes
+-------------------------
 
 ### TODO Les Brahmanes
 
 <https://classiques-garnier.com/les-brahmanes-1.html>
 
-## TODO François Béroalde de Verville
+TODO François Béroalde de Verville
+----------------------------------
 
 ### TODO Le Moyen de parvenir
 
 <https://classiques-garnier.com/le-moyen-de-parvenir-oeuvre-contenant-la-raison-de-tout-ce-qui-a-ete-est-et-sera.html>
 
-## TODO François Maynard
+TODO François Maynard
+---------------------
 
 ### TODO Poésies (1646)
 
 <https://classiques-garnier.com/poesies-1646.html>
 
-## TODO François Pétrarque
+TODO François Pétrarque
+-----------------------
 
 ### TODO Le Chansonnier
 
@@ -1353,7 +1419,8 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/petrarque-francois-oeuvres-amoureuses-sonnets-et-triomphes.html>
 
-## TODO François Rabelais
+TODO François Rabelais
+----------------------
 
 ### TODO Œuvres complètes. Tome II
 
@@ -1363,7 +1430,8 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/rabelais-francois-oeuvres-completes-tome-i.html>
 
-## TODO François Vidocq
+TODO François Vidocq
+--------------------
 
 ### TODO Mémoires. Tome I
 
@@ -1373,19 +1441,22 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/memoires-tome-ii-chapitres-xxxi-lxxvii.html>
 
-## TODO François Villon
+TODO François Villon
+--------------------
 
 ### TODO Œuvres
 
 <https://classiques-garnier.com/villon-francois-oeuvres-1.html>
 
-## TODO François de Malherbe
+TODO François de Malherbe
+-------------------------
 
 ### TODO Poésies
 
 <https://classiques-garnier.com/poesies-5.html>
 
-## TODO François-René de Chateaubriand
+TODO François-René de Chateaubriand
+-----------------------------------
 
 ### TODO Atala suivi de René et des Aventures du dernier Abencérage
 
@@ -1459,13 +1530,15 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/chateaubriand-francois-rene-de-essai-sur-les-revolutions-anciennes-et-modernes-oeuvres-completes-1.html>
 
-## TODO Françoise de Graffigny
+TODO Françoise de Graffigny
+---------------------------
 
 ### TODO Lettres d'une Péruvienne
 
 <https://classiques-garnier.com/lettres-d-une-peruvienne-1.html>
 
-## TODO Friedrich von Schiller
+TODO Friedrich von Schiller
+---------------------------
 
 ### TODO Œuvres dramatiques. Tome I
 
@@ -1479,7 +1552,8 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/schiller-friedrich-von-oeuvres-dramatiques-suivies-de-plans-et-fragments-tome-iii-marie-stuart-la-pucelle-d-orleans-la-fiancee-de-messine-et-guillaume-tell.html>
 
-## TODO Félicité de Lamennais
+TODO Félicité de Lamennais
+--------------------------
 
 ### TODO De l'Art et du Beau
 
@@ -1513,7 +1587,8 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/essai-sur-l-indifference-en-matiere-de-religion-tome-iv-partie-iv-suite-et-fin.html>
 
-## TODO Fénelon
+TODO Fénelon
+------------
 
 ### TODO Dialogues sur l'éloquence
 
@@ -1531,13 +1606,15 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/les-aventures-de-telemaque.html>
 
-## TODO Georg Luck
+TODO Georg Luck
+---------------
 
 ### TODO Arcana Mundi
 
 <https://classiques-garnier.com/arcana-mundi-magie-et-occulte-dans-les-mondes-grec-et-romain-1.html>
 
-## TODO George Sand
+TODO George Sand
+----------------
 
 ### TODO Indiana
 
@@ -1555,7 +1632,8 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/la-mare-au-diable-suivie-de-francois-le-champi.html>
 
-## TODO Georges Feydeau
+TODO Georges Feydeau
+--------------------
 
 ### TODO Théâtre complet. Tome II
 
@@ -1573,19 +1651,22 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/feydeau-georges-theatre-complet-tome-i.html>
 
-## TODO Gottfried Wilhelm Leibniz
+TODO Gottfried Wilhelm Leibniz
+------------------------------
 
 ### TODO Œuvres choisies
 
 <https://classiques-garnier.com/leibniz-gottfried-wilhelm-oeuvres-choisies.html>
 
-## TODO Gregorio Martínez Sierra
+TODO Gregorio Martínez Sierra
+-----------------------------
 
 ### TODO Jardin ensoleillé
 
 <https://classiques-garnier.com/jardin-ensoleille.html>
 
-## TODO Gustave Flaubert
+TODO Gustave Flaubert
+---------------------
 
 ### TODO La Tentation de saint Antoine
 
@@ -1611,7 +1692,8 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/l-education-sentimentale-histoire-d-un-jeune-homme.html>
 
-## TODO Guy de Maupassant
+TODO Guy de Maupassant
+----------------------
 
 ### TODO Le Horla et autres Contes cruels et fantastiques
 
@@ -1633,7 +1715,8 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/pierre-et-jean.html>
 
-## TODO Gédéon Tallemant des Réaux
+TODO Gédéon Tallemant des Réaux
+-------------------------------
 
 ### TODO Les Historiettes. Tome I
 
@@ -1667,7 +1750,8 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/les-historiettes-suivies-de-la-table-generale-tome-viii.html>
 
-## TODO Gérard de Nerval
+TODO Gérard de Nerval
+---------------------
 
 ### TODO Les Nuits d'octobre suivi de Contes et Facéties
 
@@ -1693,7 +1777,8 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/nerval-gerard-de-oeuvres.html>
 
-## TODO Hans Christian Andersen
+TODO Hans Christian Andersen
+----------------------------
 
 ### TODO Contes danois. Tome IV
 
@@ -1715,19 +1800,22 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/contes-danois-tome-iii.html>
 
-## TODO Harriet Beecher Stowe
+TODO Harriet Beecher Stowe
+--------------------------
 
 ### TODO La Case de l'oncle Tom ou la Vie des nègres en Amérique
 
 <https://classiques-garnier.com/la-case-de-l-oncle-tom-ou-la-vie-des-negres-en-amerique.html>
 
-## TODO Heinrich Heine
+TODO Heinrich Heine
+-------------------
 
 ### TODO Le Livre des chants
 
 <https://classiques-garnier.com/le-livre-des-chants.html>
 
-## TODO Henri Beyle, dit Stendhal
+TODO Henri Beyle, dit Stendhal
+------------------------------
 
 ### TODO De l'amour
 
@@ -1753,13 +1841,15 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/le-rouge-et-le-noir-chronique-du-xixe-siecle.html>
 
-## TODO Henri de Régnier
+TODO Henri de Régnier
+---------------------
 
 ### TODO Correspondance (1893-1936)
 
 <https://classiques-garnier.com/correspondance-1893-1936-1.html>
 
-## TODO Henri-Dominique Lacordaire
+TODO Henri-Dominique Lacordaire
+-------------------------------
 
 ### TODO Sainte Marie-Madeleine
 
@@ -1793,13 +1883,15 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/notices-et-panegyriques.html>
 
-## TODO Henry Fielding
+TODO Henry Fielding
+-------------------
 
 ### TODO Histoire de Tom Jones, ou l'Enfant trouvé (1750)
 
 <https://classiques-garnier.com/histoire-de-tom-jones-ou-l-enfant-trouve-1750.html>
 
-## TODO Henry Murger
+TODO Henry Murger
+-----------------
 
 ### TODO Le Bonhomme Jadis
 
@@ -1813,13 +1905,15 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/scenes-de-la-vie-de-boheme.html>
 
-## TODO Honorat de Bueil de Racan
+TODO Honorat de Bueil de Racan
+------------------------------
 
 ### TODO Les Bergeries et autres poésies lyriques
 
 <https://classiques-garnier.com/les-bergeries-et-autres-poesies-lyriques.html>
 
-## TODO Honoré de Balzac
+TODO Honoré de Balzac
+---------------------
 
 ### TODO Histoire des treize
 
@@ -1921,25 +2015,29 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/ursule-mirouet.html>
 
-## TODO Hégésippe Moreau
+TODO Hégésippe Moreau
+---------------------
 
 ### TODO Œuvres
 
 <https://classiques-garnier.com/moreau-hegesippe-oeuvres-le-myosotis-et-contes-en-prose.html>
 
-## TODO Hélène Vérin
+TODO Hélène Vérin
+-----------------
 
 ### TODO Entrepreneurs, entreprise
 
 <https://classiques-garnier.com/entrepreneurs-entreprise-histoire-d-une-idee-1.html>
 
-## TODO Jacob et Wilhelm Grimm
+TODO Jacob et Wilhelm Grimm
+---------------------------
 
 ### TODO Contes
 
 <https://classiques-garnier.com/contes-3.html>
 
-## TODO Jacques Bénigne Bossuet
+TODO Jacques Bénigne Bossuet
+----------------------------
 
 ### TODO Oraisons funèbres et panégyriques. Tome II
 
@@ -2001,7 +2099,8 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/traite-de-la-concupiscence-suivi-des-lettre-maximes-et-reflexions-sur-la-comedie-de-la-logique-et-du-traite-du-libre-arbitre.html>
 
-## TODO Jacques Casanova de Seingalt
+TODO Jacques Casanova de Seingalt
+---------------------------------
 
 ### TODO Mémoires. Tome I
 
@@ -2035,13 +2134,15 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/memoires-tome-viii.html>
 
-## TODO Jacques Grévin
+TODO Jacques Grévin
+-------------------
 
 ### TODO Théâtre complet et Poésies choisies
 
 <https://classiques-garnier.com/grevin-jacques-theatre-complet-et-poesies-choisies.html>
 
-## TODO Jacques Jasmin
+TODO Jacques Jasmin
+-------------------
 
 ### TODO Las Papilhôtos. Tome II
 
@@ -2051,73 +2152,85 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/las-papilhotos-tome-i-les-poemes-et-les-odes.html>
 
-## TODO Jacques Ninet
+TODO Jacques Ninet
+------------------
 
 ### TODO Taux d'intérêt négatifs
 
 <https://classiques-garnier.com/taux-d-interet-negatifs-le-trou-noir-du-capitalisme-financier.html>
 
-## TODO Jacques de Voragine
+TODO Jacques de Voragine
+------------------------
 
 ### TODO La Légende dorée
 
 <https://classiques-garnier.com/la-legende-doree-2.html>
 
-## TODO James Macpherson
+TODO James Macpherson
+---------------------
 
 ### TODO Œuvres d'Ossian
 
 <https://classiques-garnier.com/macpherson-james-oeuvres-d-ossian-1.html>
 
-## TODO Janina Hescheles Altman
+TODO Janina Hescheles Altman
+----------------------------
 
 ### TODO Les Cahiers de Janina
 
 <https://classiques-garnier.com/les-cahiers-de-janina.html>
 
-## TODO Jean Anthelme Brillat-Savarin
+TODO Jean Anthelme Brillat-Savarin
+----------------------------------
 
 ### TODO Physiologie du goût ou méditations de gastronomie transcendante
 
 <https://classiques-garnier.com/physiologie-du-gout-ou-meditations-de-gastronomie-transcendante.html>
 
-## TODO Jean Boccace
+TODO Jean Boccace
+-----------------
 
 ### TODO Le Décaméron
 
 <https://classiques-garnier.com/le-decameron.html>
 
-## TODO Jean Racine
+TODO Jean Racine
+----------------
 
 ### TODO Théâtre complet
 
 <https://classiques-garnier.com/racine-jean-theatre-complet-1.html>
 
-## TODO Jean Second
+TODO Jean Second
+----------------
 
 ### TODO Les Baisers suivis de l' Épithalame, des Odes et des Élégies
 
 <https://classiques-garnier.com/les-baisers-suivis-de-l-epithalame-des-odes-et-des-elegies.html>
 
-## TODO Jean Vauquelin de la Fresnaye
+TODO Jean Vauquelin de la Fresnaye
+----------------------------------
 
 ### TODO L'Art poétique
 
 <https://classiques-garnier.com/l-art-poetique-texte-conforme-a-l-edition-de-1605.html>
 
-## TODO Jean de Joinville
+TODO Jean de Joinville
+----------------------
 
 ### TODO Vie de saint Louis
 
 <https://classiques-garnier.com/vie-de-saint-louis-1.html>
 
-## TODO Jean de La Bruyère
+TODO Jean de La Bruyère
+-----------------------
 
 ### TODO Les Caractères ou les Mœurs de ce siècle précédés des Caractères de Théophraste
 
 <https://classiques-garnier.com/les-caracteres-ou-les-moeurs-de-ce-siecle-precedes-des-caracteres-de-theophraste.html>
 
-## TODO Jean de La Fontaine
+TODO Jean de La Fontaine
+------------------------
 
 ### TODO Fables choisies
 
@@ -2139,13 +2252,15 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/la-fontaine-jean-de-les-amours-de-psyche-suivies-des-opuscules-en-prose-et-des-lettres-oeuvres-completes-5.html>
 
-## TODO Jean de Rotrou
+TODO Jean de Rotrou
+-------------------
 
 ### TODO Théâtre choisi
 
 <https://classiques-garnier.com/rotrou-jean-de-theatre-choisi.html>
 
-## TODO Jean-Baptiste Massillon
+TODO Jean-Baptiste Massillon
+----------------------------
 
 ### TODO Petit Carême suivi de sermons divers
 
@@ -2159,25 +2274,29 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/oraisons-funebres.html>
 
-## TODO Jean-Baptiste-Louis Gresset
+TODO Jean-Baptiste-Louis Gresset
+--------------------------------
 
 ### TODO Œuvres choisies
 
 <https://classiques-garnier.com/gresset-jean-baptiste-louis-oeuvres-choisies.html>
 
-## TODO Jean-Christophe Igalens
+TODO Jean-Christophe Igalens
+----------------------------
 
 ### TODO Casanova
 
 <https://classiques-garnier.com/casanova-l-ecrivain-en-ses-fictions-1.html>
 
-## TODO Jean-François Collin d\'Harleville
+TODO Jean-François Collin d\'Harleville
+---------------------------------------
 
 ### TODO Théâtre suivi de poésies fugitives
 
 <https://classiques-garnier.com/collin-d-harleville-jean-francois-theatre-suivi-de-poesies-fugitives.html>
 
-## TODO Jean-François Regnard
+TODO Jean-François Regnard
+--------------------------
 
 ### TODO Théâtre
 
@@ -2191,7 +2310,8 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/regnard-jean-francois-oeuvres-tome-ii.html>
 
-## TODO Jean-Jacques Rousseau
+TODO Jean-Jacques Rousseau
+--------------------------
 
 ### TODO Œuvres politiques
 
@@ -2225,25 +2345,29 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/les-confessions.html>
 
-## TODO Jean-Joseph Vadé
+TODO Jean-Joseph Vadé
+---------------------
 
 ### TODO Œuvres
 
 <https://classiques-garnier.com/vade-jean-joseph-oeuvres.html>
 
-## TODO Jean-Pierre Camus
+TODO Jean-Pierre Camus
+----------------------
 
 ### TODO Les Spectacles d'horreur
 
 <https://classiques-garnier.com/les-spectacles-d-horreur-1.html>
 
-## TODO Jean-Pierre Claris de Florian
+TODO Jean-Pierre Claris de Florian
+----------------------------------
 
 ### TODO Fables et théâtre
 
 <https://classiques-garnier.com/fables-et-theatre.html>
 
-## TODO Joachim Du Bellay
+TODO Joachim Du Bellay
+----------------------
 
 ### TODO La Défense et Illustration de la langue française suivie De la Précellence du langage françois par Henri Estienne
 
@@ -2257,7 +2381,8 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/du-bellay-joachim-oeuvres-poetiques-tome-ii-les-antiquitez-le-songe-les-regrets-le-poete-courtisan-divers-jeux-rustiques.html>
 
-## TODO Joaquim Maria Machado de Assis
+TODO Joaquim Maria Machado de Assis
+-----------------------------------
 
 ### TODO Histoires diverses
 
@@ -2271,13 +2396,15 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/quelques-contes.html>
 
-## TODO Johan Ludvig Runeberg
+TODO Johan Ludvig Runeberg
+--------------------------
 
 ### TODO Œuvres suivies de poésies détachées
 
 <https://classiques-garnier.com/runeberg-johan-ludvig-oeuvres-suivies-de-poesies-detachees-le-porte-enseigne-stole-la-veillee-de-noel-hanna-et-le-roi-fialar.html>
 
-## TODO Johann Wolfgang von Gœthe
+TODO Johann Wolfgang von Gœthe
+------------------------------
 
 ### TODO Faust suivi du Second Faust
 
@@ -2287,25 +2414,29 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/werther-suivi-de-hermann-et-dorothee.html>
 
-## TODO John Gay
+TODO John Gay
+-------------
 
 ### TODO Trivia et autres vues urbaines
 
 <https://classiques-garnier.com/trivia-et-autres-vues-urbaines-1.html>
 
-## TODO Jonathan Swift
+TODO Jonathan Swift
+-------------------
 
 ### TODO Voyages de Gulliver
 
 <https://classiques-garnier.com/voyages-de-gulliver.html>
 
-## TODO Joris-Karl Huysmans
+TODO Joris-Karl Huysmans
+------------------------
 
 ### TODO À rebours
 
 <https://classiques-garnier.com/a-rebours-1.html>
 
-## TODO Joseph de Maistre
+TODO Joseph de Maistre
+----------------------
 
 ### TODO Les Soirées de Saint-Pétersbourg ou Entretiens sur le gouvernement temporel de la providence. Tome I
 
@@ -2319,13 +2450,15 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/du-pape.html>
 
-## TODO Jules Amédée Barbey d\'Aurevilly
+TODO Jules Amédée Barbey d\'Aurevilly
+-------------------------------------
 
 ### TODO Les Diaboliques
 
 <https://classiques-garnier.com/les-diaboliques.html>
 
-## TODO Jules Michelet
+TODO Jules Michelet
+-------------------
 
 ### TODO Pages littéraires
 
@@ -2335,31 +2468,36 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/pages-historiques.html>
 
-## TODO Julie de Lespinasse
+TODO Julie de Lespinasse
+------------------------
 
 ### TODO Lettres
 
 <https://classiques-garnier.com/lettres-1.html>
 
-## TODO Jérôme Blanc
+TODO Jérôme Blanc
+-----------------
 
 ### TODO Les Pensées monétaires dans l'histoire
 
 <https://classiques-garnier.com/les-pensees-monetaires-dans-l-histoire-l-europe-1517-1776-1.html>
 
-## TODO La Rochefoucauld
+TODO La Rochefoucauld
+---------------------
 
 ### TODO Maximes suivies des Réflexions diverses
 
 <https://classiques-garnier.com/maximes-suivies-des-reflexions-diverses.html>
 
-## TODO Laurence Campa
+TODO Laurence Campa
+-------------------
 
 ### TODO Poètes de la Grande Guerre
 
 <https://classiques-garnier.com/poetes-de-la-grande-guerre-experience-combattante-et-activite-poetique-1.html>
 
-## TODO Laurence Sterne
+TODO Laurence Sterne
+--------------------
 
 ### TODO Voyage sentimental
 
@@ -2373,19 +2511,22 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/tristram-shandy-suivi-du-voyage-sentimental-tome-ii-chapitres-ccv-cccliii.html>
 
-## TODO Le Pogge
+TODO Le Pogge
+-------------
 
 ### TODO Les Facéties suivies de la Description des bains de Bade au XVe siècle et du dialogue Un vieillard doit-il se marier ?
 
 <https://classiques-garnier.com/les-faceties-suivies-de-la-description-des-bains-de-bade-au-xve-siecle-et-du-dialogue-un-vieillard-doit-il-se-marier.html>
 
-## TODO Le Tasse
+TODO Le Tasse
+-------------
 
 ### TODO La Jérusalem délivrée
 
 <https://classiques-garnier.com/la-jerusalem-delivree.html>
 
-## TODO Lord Byron
+TODO Lord Byron
+---------------
 
 ### TODO Œuvres complètes. Tome I
 
@@ -2403,7 +2544,8 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/byron-lord-oeuvres-completes-tome-iv.html>
 
-## TODO Louis Bourdaloue
+TODO Louis Bourdaloue
+---------------------
 
 ### TODO Sermons choisis
 
@@ -2417,13 +2559,15 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/lectures-spirituelles-pour-le-temps-de-l-avent.html>
 
-## TODO Louis Petit de Bachaumont
+TODO Louis Petit de Bachaumont
+------------------------------
 
 ### TODO Mémoires secrets (1762-1771)
 
 <https://classiques-garnier.com/memoires-secrets-1762-1771.html>
 
-## TODO Louis-Benoît Picard
+TODO Louis-Benoît Picard
+------------------------
 
 ### TODO Théâtre. Tome I
 
@@ -2433,13 +2577,15 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/picard-louis-benoit-theatre-tome-ii.html>
 
-## TODO Louise Michel
+TODO Louise Michel
+------------------
 
 ### TODO La Chasse aux loups
 
 <https://classiques-garnier.com/la-chasse-aux-loups-1.html>
 
-## TODO Louvet de Couvray
+TODO Louvet de Couvray
+----------------------
 
 ### TODO Les Amours du chevalier de Faublas. Tome I
 
@@ -2449,25 +2595,29 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/les-amours-du-chevalier-de-faublas-tome-ii.html>
 
-## TODO Ludovic Tournès
+TODO Ludovic Tournès
+--------------------
 
 ### TODO Sciences de l'homme et politique
 
 <https://classiques-garnier.com/sciences-de-l-homme-et-politique-les-fondations-philanthropiques-americaines-en-france-au-xxe-siecle-1.html>
 
-## TODO Ludwig Tieck
+TODO Ludwig Tieck
+-----------------
 
 ### TODO La Barbe bleue suivie des Sept Femmes de Barbe-Bleue
 
 <https://classiques-garnier.com/la-barbe-bleue-suivie-des-sept-femmes-de-barbe-bleue.html>
 
-## TODO Luis de Camoëns
+TODO Luis de Camoëns
+--------------------
 
 ### TODO Les Lusiades
 
 <https://classiques-garnier.com/les-lusiades.html>
 
-## TODO L' Arioste
+TODO L' Arioste
+---------------
 
 ### TODO Roland furieux. Tome I
 
@@ -2477,25 +2627,29 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/roland-furieux-tome-ii-chants-xxiv-xlvi.html>
 
-## TODO Madame de Lafayette
+TODO Madame de Lafayette
+------------------------
 
 ### TODO Romans et nouvelles
 
 <https://classiques-garnier.com/romans-et-nouvelles-la-princesse-de-montpensier-zaide-la-princesse-de-cleves-et-la-comtesse-de-tende.html>
 
-## TODO Madame de Maintenon
+TODO Madame de Maintenon
+------------------------
 
 ### TODO Proverbes dramatiques
 
 <https://classiques-garnier.com/proverbes-dramatiques-1.html>
 
-## TODO Madame de Murat
+TODO Madame de Murat
+--------------------
 
 ### TODO Journal pour Mademoiselle de Menou
 
 <https://classiques-garnier.com/journal-pour-mademoiselle-de-menou-1.html>
 
-## TODO Madame de Staël
+TODO Madame de Staël
+--------------------
 
 ### TODO De la littérature considérée dans ses rapports avec les institutions sociales
 
@@ -2517,13 +2671,15 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/delphine.html>
 
-## TODO Madame de Sévigné
+TODO Madame de Sévigné
+----------------------
 
 ### TODO Lettres choisies
 
 <https://classiques-garnier.com/lettres-choisies.html>
 
-## TODO Manuel Ugarte
+TODO Manuel Ugarte
+------------------
 
 ### TODO Contes de la Pampa
 
@@ -2533,37 +2689,43 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/contes-de-la-pampa-1.html>
 
-## TODO Marc-Antoine Désaugiers
+TODO Marc-Antoine Désaugiers
+----------------------------
 
 ### TODO Théâtre
 
 <https://classiques-garnier.com/desaugiers-marc-antoine-theatre.html>
 
-## TODO Marcel Proust
+TODO Marcel Proust
+------------------
 
 ### TODO La Prisonnière
 
 <https://classiques-garnier.com/la-prisonniere.html>
 
-## TODO Marceline Desbordes-Valmore
+TODO Marceline Desbordes-Valmore
+--------------------------------
 
 ### TODO Poésies choisies
 
 <https://classiques-garnier.com/poesies-choisies.html>
 
-## TODO Marguerite de Navarre
+TODO Marguerite de Navarre
+--------------------------
 
 ### TODO L'Heptaméron
 
 <https://classiques-garnier.com/l-heptameron.html>
 
-## TODO Marguerite de Valois
+TODO Marguerite de Valois
+-------------------------
 
 ### TODO Album de poésies (Manuscrit français 25455 de la BNF)
 
 <https://classiques-garnier.com/album-de-poesies-manuscrit-francais-25455-de-la-bnf.html>
 
-## TODO Marivaux
+TODO Marivaux
+-------------
 
 ### TODO Journaux et œuvres diverses
 
@@ -2585,7 +2747,8 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/marivaux-theatre-complet-tome-i.html>
 
-## TODO Marquise de Créquy
+TODO Marquise de Créquy
+-----------------------
 
 ### TODO Souvenirs de 1710 à 1803. Tomes I et II
 
@@ -2607,19 +2770,22 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/souvenirs-de-1710-a-1803-tomes-ix-et-x.html>
 
-## TODO Mary Shelley
+TODO Mary Shelley
+-----------------
 
 ### TODO Les Aventures de Perkin Warbeck
 
 <https://classiques-garnier.com/les-aventures-de-perkin-warbeck-1.html>
 
-## TODO Mathurin Régnier
+TODO Mathurin Régnier
+---------------------
 
 ### TODO Œuvres complètes
 
 <https://classiques-garnier.com/regnier-mathurin-oeuvres-completes-satyres-epitres-elegies-poesies-diverses-et-spirituelles.html>
 
-## TODO Maurice Scève
+TODO Maurice Scève
+------------------
 
 ### TODO Microcosme
 
@@ -2633,19 +2799,22 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/delie-objet-de-plus-haute-vertu.html>
 
-## TODO Maurice de Guérin
+TODO Maurice de Guérin
+----------------------
 
 ### TODO Œuvres
 
 <https://classiques-garnier.com/guerin-maurice-de-oeuvres-le-cahier-vert-pages-sans-titre-poemes-lettres-a-barbey-d-aurevilly.html>
 
-## TODO Michel Lutfalla
+TODO Michel Lutfalla
+--------------------
 
 ### TODO Une histoire de la dette publique en France
 
 <https://classiques-garnier.com/une-histoire-de-la-dette-publique-en-france-1.html>
 
-## TODO Michel de Montaigne
+TODO Michel de Montaigne
+------------------------
 
 ### TODO Essais. Tome I
 
@@ -2659,13 +2828,15 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/journal-de-voyage-en-italie-par-la-suisse-et-l-allemagne-en-1580-et-1581.html>
 
-## TODO Michel-Jean Sedaine
+TODO Michel-Jean Sedaine
+------------------------
 
 ### TODO Théâtre
 
 <https://classiques-garnier.com/sedaine-michel-jean-theatre.html>
 
-## TODO Miguel de Cervantès
+TODO Miguel de Cervantès
+------------------------
 
 ### TODO Don Quichotte de la Manche
 
@@ -2675,13 +2846,15 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/les-nouvelles-exemplaires.html>
 
-## TODO Mirabeau
+TODO Mirabeau
+-------------
 
 ### TODO Lettres d'amour
 
 <https://classiques-garnier.com/lettres-d-amour.html>
 
-## TODO Molière
+TODO Molière
+------------
 
 ### TODO Œuvres complètes. Tome I
 
@@ -2691,7 +2864,8 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/moliere-oeuvres-completes-tome-ii.html>
 
-## TODO Montesquieu
+TODO Montesquieu
+----------------
 
 ### TODO Correspondance choisie
 
@@ -2713,37 +2887,43 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/lettres-persanes.html>
 
-## TODO Nathaniel Hawthorne
+TODO Nathaniel Hawthorne
+------------------------
 
 ### TODO L'Élixir de vie
 
 <https://classiques-garnier.com/l-elixir-de-vie-1.html>
 
-## TODO Nicholas Wiseman
+TODO Nicholas Wiseman
+---------------------
 
 ### TODO Fabiola ou l'Église des catacombes
 
 <https://classiques-garnier.com/fabiola-ou-l-eglise-des-catacombes.html>
 
-## TODO Nicolas Boileau
+TODO Nicolas Boileau
+--------------------
 
 ### TODO Œuvres
 
 <https://classiques-garnier.com/boileau-nicolas-oeuvres.html>
 
-## TODO Nicolas Joseph Florent Gilbert
+TODO Nicolas Joseph Florent Gilbert
+-----------------------------------
 
 ### TODO Œuvres
 
 <https://classiques-garnier.com/gilbert-nicolas-joseph-florent-oeuvres.html>
 
-## TODO Nicolas Machiavel
+TODO Nicolas Machiavel
+----------------------
 
 ### TODO Le Prince précédé des premiers écrits politiques
 
 <https://classiques-garnier.com/le-prince-precede-des-premiers-ecrits-politiques.html>
 
-## TODO Nicolas de Malebranche
+TODO Nicolas de Malebranche
+---------------------------
 
 ### TODO Conversations chrétiennes dans lesquelles on justifie la vérité de la religion et de la morale de Jésus-Christ
 
@@ -2757,43 +2937,50 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/de-la-recherche-de-la-verite-tome-ii-livre-vi.html>
 
-## TODO Nikolaï Leskov
+TODO Nikolaï Leskov
+-------------------
 
 ### TODO La Lady Macbeth de Mtsensk
 
 <https://classiques-garnier.com/la-lady-macbeth-de-mtsensk.html>
 
-## TODO Ninon de Lenclos
+TODO Ninon de Lenclos
+---------------------
 
 ### TODO Lettres
 
 <https://classiques-garnier.com/lettres-2.html>
 
-## TODO Noël Du Fail
+TODO Noël Du Fail
+-----------------
 
 ### TODO Propos rustiques suivis des Baliverneries
 
 <https://classiques-garnier.com/propos-rustiques-suivis-des-baliverneries.html>
 
-## TODO Olivier Basselin
+TODO Olivier Basselin
+---------------------
 
 ### TODO Vaux-de-Vire suivis d'anciennes chansons normandes choisies
 
 <https://classiques-garnier.com/vaux-de-vire-suivis-d-anciennes-chansons-normandes-choisies.html>
 
-## TODO Olivier Goldsmith
+TODO Olivier Goldsmith
+----------------------
 
 ### TODO Le Vicaire de Wakefield
 
 <https://classiques-garnier.com/le-vicaire-de-wakefield.html>
 
-## TODO Patrick Gibert
+TODO Patrick Gibert
+-------------------
 
 ### TODO La Modernisation de l'État
 
 <https://classiques-garnier.com/la-modernisation-de-l-etat-une-promesse-trahie-1.html>
 
-## TODO Paul Scarron
+TODO Paul Scarron
+-----------------
 
 ### TODO Le Virgile travesti
 
@@ -2807,13 +2994,15 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/le-roman-comique-1.html>
 
-## TODO Paul Verlaine
+TODO Paul Verlaine
+------------------
 
 ### TODO Œuvres poétiques
 
 <https://classiques-garnier.com/verlaine-paul-oeuvres-poetiques.html>
 
-## TODO Paul-Louis Courier
+TODO Paul-Louis Courier
+-----------------------
 
 ### TODO Œuvres. Tome I
 
@@ -2823,43 +3012,50 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/courier-paul-louis-oeuvres-tome-ii-daphnis-et-chloe-lettres-inedites-de-france-et-d-italie.html>
 
-## TODO Percy Bysshe Shelley
+TODO Percy Bysshe Shelley
+-------------------------
 
 ### TODO Odes, Poèmes et fragments lyriques choisis
 
 <https://classiques-garnier.com/odes-poemes-et-fragments-lyriques-choisis.html>
 
-## TODO Philippe Gilles
+TODO Philippe Gilles
+--------------------
 
 ### TODO L'Actualité des textes fondateurs
 
 <https://classiques-garnier.com/l-actualite-des-textes-fondateurs-adam-smith-karl-marx-et-john-maynard-keynes-1.html>
 
-## TODO Philippe Néricault Destouches
+TODO Philippe Néricault Destouches
+----------------------------------
 
 ### TODO Théâtre choisi
 
 <https://classiques-garnier.com/destouches-philippe-nericault-theatre-choisi.html>
 
-## TODO Philippe Quinault
+TODO Philippe Quinault
+----------------------
 
 ### TODO Théâtre choisi
 
 <https://classiques-garnier.com/quinault-philippe-theatre-choisi.html>
 
-## TODO Pierre Abélard
+TODO Pierre Abélard
+-------------------
 
 ### TODO Lettres complètes
 
 <https://classiques-garnier.com/lettres-completes-1.html>
 
-## TODO Pierre Commelin
+TODO Pierre Commelin
+--------------------
 
 ### TODO Mythologie grecque et romaine
 
 <https://classiques-garnier.com/mythologie-grecque-et-romaine.html>
 
-## TODO Pierre Corneille
+TODO Pierre Corneille
+---------------------
 
 ### TODO Théâtre complet. Tome I
 
@@ -2873,19 +3069,22 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/corneille-pierre-theatre-complet-tome-ii.html>
 
-## TODO Pierre Dockès
+TODO Pierre Dockès
+------------------
 
 ### TODO Le Capitalisme et ses rythmes, quatre siècles en perspective. Tome I
 
 <https://classiques-garnier.com/le-capitalisme-et-ses-rythmes-quatre-siecles-en-perspective-tome-i-sous-le-regard-des-geants-1.html>
 
-## TODO Pierre Le Moyne
+TODO Pierre Le Moyne
+--------------------
 
 ### TODO Entretiens et lettres poétiques
 
 <https://classiques-garnier.com/entretiens-et-lettres-poetiques-1.html>
 
-## TODO Pierre de Ronsard
+TODO Pierre de Ronsard
+----------------------
 
 ### TODO Poésies choisies
 
@@ -2919,7 +3118,8 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/ronsard-pierre-de-les-amours-texte-de-1578-tome-i-oeuvres-completes-1.html>
 
-## TODO Pierre-Augustin Caron de Beaumarchais
+TODO Pierre-Augustin Caron de Beaumarchais
+------------------------------------------
 
 ### TODO Théâtre
 
@@ -2929,7 +3129,8 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/memoires-dans-l-affaire-goezman.html>
 
-## TODO Pierre-Jean de Béranger
+TODO Pierre-Jean de Béranger
+----------------------------
 
 ### TODO Ma biographie Ouvrage posthume
 
@@ -2947,13 +3148,15 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/beranger-pierre-jean-de-chansons-anciennes-et-posthumes-avec-accompagnement-de-piano-oeuvres-completes-3.html>
 
-## TODO Prosper Jolyot de Crébillon
+TODO Prosper Jolyot de Crébillon
+--------------------------------
 
 ### TODO Théâtre complet. Tome I
 
 <https://classiques-garnier.com/crebillon-prosper-jolyot-de-theatre-complet-tome-i-idomenee-atree-et-thyeste-electre-rhadamisthe-et-zenobie-xerces-1.html>
 
-## TODO Prosper Mérimée
+TODO Prosper Mérimée
+--------------------
 
 ### TODO Romans et nouvelles. Tome I
 
@@ -2979,19 +3182,22 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/chronique-du-regne-de-charles-ix.html>
 
-## TODO Ramón del Valle-Inclán
+TODO Ramón del Valle-Inclán
+---------------------------
 
 ### TODO Sonates
 
 <https://classiques-garnier.com/sonates-memoires-du-marquis-de-bradomin-et-autres-textes-inedits-1.html>
 
-## TODO Remy de Gourmont
+TODO Remy de Gourmont
+---------------------
 
 ### TODO Le Problème du style
 
 <https://classiques-garnier.com/le-probleme-du-style-questions-d-art-de-litterature-et-de-grammaire-1.html>
 
-## TODO René Descartes
+TODO René Descartes
+-------------------
 
 ### TODO Œuvres philosophiques. Tome I -- 1618-1637
 
@@ -3005,13 +3211,15 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/descartes-rene-oeuvres-philosophiques-tome-iii-1643-1650-1.html>
 
-## TODO Robert Challe
+TODO Robert Challe
+------------------
 
 ### TODO Les Illustres Françaises
 
 <https://classiques-garnier.com/les-illustres-francaises-1.html>
 
-## TODO Robert Garnier
+TODO Robert Garnier
+-------------------
 
 ### TODO Hippolyte (1573) La Troade (1579)
 
@@ -3029,7 +3237,8 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/garnier-robert-oeuvres-completes-tome-ii-theatre-et-poesies.html>
 
-## TODO Rodolphe Töpffer
+TODO Rodolphe Töpffer
+---------------------
 
 ### TODO Premiers Voyages en zigzag ou excursions d'un pensionnat en vacances dans les cantons suisses et sur le revers italien des Alpes. Tome I
 
@@ -3059,7 +3268,8 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/nouveaux-voyages-en-zigzag-tome-ii-voyage-dans-les-vallees-d-herens-de-zermatt-au-grimsel-a-genes-et-a-la-corniche.html>
 
-## TODO Roger de Bussy-Rabutin
+TODO Roger de Bussy-Rabutin
+---------------------------
 
 ### TODO Histoire amoureuse des Gaules suivie de La France galante. Tome I
 
@@ -3069,79 +3279,92 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/histoire-amoureuse-des-gaules-suivie-de-la-france-galante-suite-tome-ii.html>
 
-## TODO Roland Breeur
+TODO Roland Breeur
+------------------
 
 ### TODO Autour de la bêtise
 
 <https://classiques-garnier.com/autour-de-la-betise-1.html>
 
-## TODO Romain Rolland
+TODO Romain Rolland
+-------------------
 
 ### TODO Correspondance (1912-1942)
 
 <https://classiques-garnier.com/correspondance-1912-1942-1.html>
 
-## TODO Rétif de la Bretonne
+TODO Rétif de la Bretonne
+-------------------------
 
 ### TODO La Vie de mon père
 
 <https://classiques-garnier.com/la-vie-de-mon-pere.html>
 
-## TODO Saint-Amant
+TODO Saint-Amant
+----------------
 
 ### TODO Œuvres poétiques
 
 <https://classiques-garnier.com/saint-amant-oeuvres-poetiques-poemes-raillerie-a-part-pieces-diverses-les-caprices-et-moyse-sauve.html>
 
-## TODO Saint-Évremond
+TODO Saint-Évremond
+-------------------
 
 ### TODO Œuvres choisies
 
 <https://classiques-garnier.com/saint-evremond-oeuvres-choisies.html>
 
-## TODO Silvio Pellico
+TODO Silvio Pellico
+-------------------
 
 ### TODO Mes Prisons suivies des Devoirs des hommes
 
 <https://classiques-garnier.com/mes-prisons-suivies-des-devoirs-des-hommes.html>
 
-## TODO Stéphane Mallarmé
+TODO Stéphane Mallarmé
+----------------------
 
 ### TODO Œuvres
 
 <https://classiques-garnier.com/mallarme-stephane-oeuvres.html>
 
-## TODO Tabarin
+TODO Tabarin
+------------
 
 ### TODO Œuvres
 
 <https://classiques-garnier.com/tabarin-oeuvres.html>
 
-## TODO Teodor de Wyzewa
+TODO Teodor de Wyzewa
+---------------------
 
 ### TODO Valbert ou les Récits d'un jeune homme
 
 <https://classiques-garnier.com/valbert-ou-les-recits-d-un-jeune-homme-1.html>
 
-## TODO Teofilo Folengo
+TODO Teofilo Folengo
+--------------------
 
 ### TODO Histoire maccaronique de Merlin Coccaie ou est traicté Les Ruses de Cingar, Les Tours de Boccal, Les Aventures de Léonard, Les Forces de Fracasse, Les Enchantements de Gelfore et Pandrague, Les Rencontres heureuses de Balde
 
 <https://classiques-garnier.com/histoire-maccaronique-de-merlin-coccaie-ou-est-traicte-les-ruses-de-cingar-les-tours-de-boccal-les-aventures-de-leonard-les-forces-de-fracasse-les-enchantements-de-gelfore-et-pandrague-les-rencontres-heureuses-de-balde.html>
 
-## TODO Thomas Corneille
+TODO Thomas Corneille
+---------------------
 
 ### TODO Théâtre choisi
 
 <https://classiques-garnier.com/corneille-thomas-theatre-choisi.html>
 
-## TODO Théodore Agrippa d'Aubigné
+TODO Théodore Agrippa d'Aubigné
+-------------------------------
 
 ### TODO Les Tragiques
 
 <https://classiques-garnier.com/les-tragiques-1.html>
 
-## TODO Théophile Gautier
+TODO Théophile Gautier
+----------------------
 
 ### TODO Mademoiselle de Maupin
 
@@ -3179,31 +3402,36 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/gautier-theophile-theatre-de-poche-1.html>
 
-## TODO Théophile de Viau
+TODO Théophile de Viau
+----------------------
 
 ### TODO Œuvres poétiques suivies des Amours tragiques de Pyrame et Thisbé
 
 <https://classiques-garnier.com/viau-theophile-de-oeuvres-poetiques-suivies-des-amours-tragiques-de-pyrame-et-thisbe.html>
 
-## TODO Timothy D. Allman
+TODO Timothy D. Allman
+----------------------
 
 ### TODO La Floride
 
 <https://classiques-garnier.com/la-floride-coeur-revelateur-des-etats-unis-1.html>
 
-## TODO Toussaint Louverture
+TODO Toussaint Louverture
+-------------------------
 
 ### TODO Mémoires
 
 <https://classiques-garnier.com/memoires.html>
 
-## TODO Tristan L\'Hermite
+TODO Tristan L\'Hermite
+-----------------------
 
 ### TODO Les Amours et autres poésies choisies
 
 <https://classiques-garnier.com/les-amours-et-autres-poesies-choisies.html>
 
-## TODO Victor Hugo
+TODO Victor Hugo
+----------------
 
 ### TODO Les Contemplations
 
@@ -3237,13 +3465,15 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/les-voix-interieures-suivies-de-les-rayons-et-les-ombres.html>
 
-## TODO Volney
+TODO Volney
+-----------
 
 ### TODO Les Ruines ou Méditation sur les révolutions des empires suivies de La Loi naturelle et de l'Histoire de Samuel
 
 <https://classiques-garnier.com/les-ruines-ou-meditation-sur-les-revolutions-des-empires-suivies-de-la-loi-naturelle-et-de-l-histoire-de-samuel.html>
 
-## TODO William Shakespeare
+TODO William Shakespeare
+------------------------
 
 ### TODO Théâtre complet. Tome I
 
@@ -3257,13 +3487,15 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/shakespeare-william-theatre-complet-tome-iii.html>
 
-## TODO Xavier de Maistre
+TODO Xavier de Maistre
+----------------------
 
 ### TODO Œuvres complètes
 
 <https://classiques-garnier.com/maistre-xavier-de-oeuvres-completes.html>
 
-## TODO Xénophon
+TODO Xénophon
+-------------
 
 ### TODO Helléniques
 
@@ -3273,7 +3505,8 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/l-anabase-ou-l-expedition-des-dix-mille-1.html>
 
-## TODO cardinal de Retz
+TODO cardinal de Retz
+---------------------
 
 ### TODO Mémoires précédés de La Conjuration du comte de Fiesque. Tome I
 
@@ -3283,13 +3516,15 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/memoires-tome-ii-1650-1655.html>
 
-## TODO saint Bernard de Clairvaux
+TODO saint Bernard de Clairvaux
+-------------------------------
 
 ### TODO Lectures spirituelles sur la vie chrétienne
 
 <https://classiques-garnier.com/lectures-spirituelles-sur-la-vie-chretienne.html>
 
-## TODO saint François de Sales
+TODO saint François de Sales
+----------------------------
 
 ### TODO Introduction à la vie dévote
 
@@ -3307,13 +3542,15 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/lectures-spirituelles-sur-la-piete.html>
 
-## TODO saint Louis de Grenade
+TODO saint Louis de Grenade
+---------------------------
 
 ### TODO Lectures spirituelles sur les fêtes de la très sainte Vierge
 
 <https://classiques-garnier.com/lectures-spirituelles-sur-les-fetes-de-la-tres-sainte-vierge.html>
 
-## TODO Émile Zola
+TODO Émile Zola
+---------------
 
 ### TODO Nana
 
@@ -3323,36 +3560,43 @@ Attention, limite de téléchargement de PDF par heure
 
 <https://classiques-garnier.com/germinal.html>
 
-## TODO Éric Thierry
+TODO Éric Thierry
+-----------------
 
 ### TODO La France de Henri IV en Amérique du Nord
 
 <https://classiques-garnier.com/la-france-de-henri-iv-en-amerique-du-nord-de-la-creation-de-l-acadie-a-la-fondation-de-quebec-1.html>
 
-## TODO Étienne Jodelle
+TODO Étienne Jodelle
+--------------------
 
 ### TODO L'Eugène
 
 <https://classiques-garnier.com/l-eugene.html>
 
-## TODO Évariste de Parny
+TODO Évariste de Parny
+----------------------
 
 ### TODO Œuvres
 
-## DONE Ajouter type de pdf
+DONE Ajouter type de pdf
+------------------------
 
-# KILL Que sais-je (Cairn)
+KILL Que sais-je (Cairn)
+========================
 
 Déjà disponible
 
-# TODO Cairn
+TODO Cairn
+==========
 
-## TODO Histoire
+TODO Histoire
+-------------
 
 Liste ici : 1773 livres
 <https://www-cairn-info.bases-doc.univ-lorraine.fr/liste-des-ouvrages.php?editeur=&discipline=3>
 
-### TODO \[#B\] Nouvelle clio as ebook
+### TODO \[\#B\] Nouvelle clio as ebook
 
 52 livres
 <https://www-cairn-info.bases-doc.univ-lorraine.fr/liste-des-ouvrages.php?searchTermAccess=all&editeur=PUF&collection=PUF_NOCLI&discipline=3&orderby=titre>
@@ -3361,446 +3605,289 @@ Exemple de requete
 -\> ok jusque e-christianisme-de-constantin-a-la-conquete-arabe
 
 1.  DONE Récupérer HTML
-
 2.  DONE Conversion epub
-
 3.  TODO Canada et États-Unis depuis 1770 - Claude Fohlen
-
 4.  TODO Conquête et exploitation des nouveaux mondes - Pierre Chaunu
-
 5.  TODO Enfance de l\'Europe. Aspects économiques et sociaux - Robert
     Fossier
-
 6.  TODO Enfance de l\'Europe. Aspects économiques et sociaux. - Robert
     Fossier
-
 7.  TODO États, sociétés et cultures du Monde musulman médiéval -
     Jean-Claude Garcin
-
 8.  TODO Expansion européenne et décolonisation - Jean-Louis Miège
-
 9.  TODO Guerre et société à l\'époque moderne - Jean Chagniot
-
 10. TODO Histoire d'Angleterre - Bernard Cottret
-
 11. TODO Histoire de l\'URSS - Andrea Graziosi
-
 12. TODO Histoire de la civilisation romaine - Hervé Inglebert
-
 13. TODO Histoire des techniques - Liliane Hilaire-Pérez
-
 14. TODO L\'Afrique noire, de 1800 à nos jours - Catherine
     Coquery-Vidrovitch
-
 15. TODO L\'Amérique latine de l\'Indépendance à nos jours - François
     Chevalier
-
 16. TODO L\'Asie orientale et méridionale aux XIX - Hartmut O. Rotermund
-
 17. TODO L\'Égypte et la vallée du Nil. Tome 2 - Claude Vandersleyen
-
 18. TODO L\'Égypte et la vallée du Nil. Tome 3 - Frédéric Payraudeau
-
 19. TODO L\'Europe celtique à l\'âge du Fer - Olivier Buchsenschutz
-
 20. TODO L\'Europe culturelle et religieuse de 1815 à nos jours - Paul
     Gerbod
-
 21. TODO L\'Europe du Nord-Ouest et du Nord - Pierre Jeannin
-
 22. TODO L\'expansion européenne - Frédéric Mauro
-
 23. TODO L\'expansion européenne du XIII - Pierre Chaunu
-
 24. TODO L\'expansion musulmane - Robert Mantran
-
 25. TODO La préhistoire dans le monde - José Garanger
-
 26. TODO La protohistoire de l\'Europe - Jan Lichardus
-
 27. TODO La Russie impériale - Pierre Gonneau
-
 28. TODO Le catholicisme entre Luther et Voltaire - Jean Delumeau
-
 29. TODO Le christianisme de Constantin à la conquête arabe - Pierre
     Maraval
-
 30. TODO Le christianisme des origines à Constantin - Simon Claude
     Mimouni
-
 31. TODO Le judaïsme ancien du VI - Simon Claude Mimouni
-
 32. TODO Le judaïsme et le christianisme antique - André Benoit
-
 33. TODO Le monde byzantin I - Cécile Morrisson
-
 34. TODO Le monde byzantin II - Jean-Claude Cheynet
-
 35. TODO Le monde byzantin III - Angeliki Laiou
-
 36. TODO Le monde grec aux temps classiques. Tome 2 - Pierre Brulé
-
 37. TODO Le monde hellénistique. Tome 1 - Claire Préaux
-
 38. TODO Le monde hellénistique. Tome 2 - Claire Préaux
-
 39. TODO Le Proche-Orient Asiatique. Tome 1 - Paul Garelli
-
 40. TODO Le XIII - Léopold Genicot
-
 41. TODO Les Grecs et la Méditerranée orientale - Claude Baurain
-
 42. TODO Les invasions - les vagues germaniques - Lucien Musset
-
 43. TODO Les Latins en Orient - Michel Balard
-
 44. TODO Les Pays nordiques aux XIXe et XXe siècles - Jean-Jacques Fol
-
 45. TODO L'Europe au XVIe siècle - Alain Tallon
-
 46. TODO L'Europe de 1815 à nos jours - Georges-Henri Soutou
-
 47. TODO Mentalités médiévales - Hervé Martin
-
 48. TODO Mentalités médiévales. Tome 2 - Hervé Martin
-
 49. TODO Naissance et affirmation de la Réforme - Jean Delumeau
-
 50. TODO Rome et l\'intégration de l\'Empire - Tome 2 - Claude Lepelley
-
 51. TODO Rome et l\'intégration de l\'Empire (44 av. J.-C.-260 ap.
     J.-C.). Tome 1 - François Jacques
-
 52. TODO Rome et la conquête du monde méditerranéen (264-27 av. J.-C.).
     Tome 1 - Claude Nicolet
-
 53. TODO Rome et la conquête du monde méditerranéen (264-27 av. J.-C.).
     Tome 2 - Claude Nicolet
-
 54. TODO Rome et la Méditerranée occidentale jusqu\'aux guerres
     puniques - Jacques Heurgon
 
-### TODO \[#A\] Collection U as ebook \[2/103\]
+### TODO \[\#A\] Collection U as ebook \[2/103\]
 
 101 ouvrages
 <https://www-cairn-info.bases-doc.univ-lorraine.fr/liste-des-ouvrages.php?searchTermAccess=all&editeur=&collection=ARCO_U&discipline=3&orderby=titre&offset=100>
 
 1.  DONE Récupérer HTML
-
 2.  DONE Générer ebook
-
 3.  TODO [Citoyenneté, République et Démocratie en
     France](https://www.cairn.info/citoyennete-republique-et-democratie-en-france--9782200294045.htm)
-
 4.  TODO [Croisades et Orient latin : XIe-XIVe
     siècle](https://www.cairn.info/croisades-et-orient-latin--9782200264987.htm)
-
     1.  DONE Corriger
-
     2.  TODO Uploader
-
     3.  TODO Notes
-
     4.  DONE Uploader
-
 5.  TODO [Droit de conquête et droits des
     Indiens](https://www.cairn.info/droit-de-conquete-et-droits-des-indiens--9782200293055.htm)
-
 6.  TODO [Église et société en
     Occident](https://www.cairn.info/eglise-et-societe-en-occident--9782200355876.htm)
-
 7.  TODO [Église et société en
     Occident](https://www.cairn.info/eglise-et-societe-en-occident-xiiie-xve-siecles--9782200267636.htm)
-
 8.  TODO [Famille et société dans le monde grec et en
     Italie](https://www.cairn.info/famille-et-societe-dans-le-monde-grec-et-en-italie--9782200625627.htm)
-
 9.  TODO [Film et
     histoire](https://www.cairn.info/film-et-histoire--9782200345570.htm)
-
 10. TODO [Géohistoire de la
     mondialisation](https://www.cairn.info/geohistoire-de-la%20mondialisation--9782200602949.htm)
-
 11. TODO [Histoire culturelle de la France au XIXe
     siècle](https://www.cairn.info/histoire-culturelle-de-la-france-au-xixe-siecle--9782200353278.htm)
-
 12. TODO [Histoire de
     l\'art](https://www.cairn.info/histoire-de-l-art--9782200622350.htm)
-
 13. TODO [Histoire de
     l\'Autriche](https://www.cairn.info/histoire-de-l-autriche--9782200355906.htm)
-
 14. TODO [Histoire de l\'Espagne
     contemporaine](https://www.cairn.info/histoire-de-l-espagne-contemporaine--9782200614607.htm)
-
 15. TODO [Histoire de l\'Europe de
     l\'Est](https://www.cairn.info/histoire-de-l-europe-de-l-est--9782200248994.htm)
-
 16. TODO [Histoire de l\'Italie depuis 1943 à nos
     jours](https://www.cairn.info/histoire-de-l-italie-depuis-1943-a-nos-jours--9782200262150.htm)
-
 17. TODO [Histoire de
     l\'Océanie](https://www.cairn.info/histoire-de-l-oceanie--9782200601300.htm)
-
 18. TODO [Histoire de la globalisation
     financière](https://www.cairn.info/histoire-de-la-globalisation-financiere--9782200355388.htm)
-
 19. TODO [Histoire de la presse en
     France](https://www.cairn.info/histoire-de-la-presse-en-france--9782200613327.htm)
-
 20. TODO [Histoire de la République Populaire de
     Chine](https://www.cairn.info/histoire-de-la-republique-populaire-de-chine--9782200614881.htm)
-
 21. TODO [Histoire des
     bibliothèques](https://www.cairn.info/histoire-des-bibliotheques--9782200616250.htm)
-
 22. TODO [Histoire des
     États-Unis](https://www.cairn.info/histoire-des-etats-unis--9782200618094.htm)
-
 23. TODO [Histoire des pays
     d\'Islam](https://www.cairn.info/histoire-des-pays-d-islam--9782200618421.htm)
-
 24. TODO [Histoire des sciences à l\'époque
     moderne](https://www.cairn.info/histoire-des-sciences-epoque-moderne--9782200345211.htm)
-
 25. TODO [Histoire du christianisme en
     France](https://www.cairn.info/histoire-du-christianisme-en-france--9782200290665.htm)
-
 26. TODO [Histoire du livre en
     Occident](https://www.cairn.info/histoire-du-livre-en-occident--9782200277512.htm)
-
 27. TODO [Histoire économique de l\'Afrique
     tropicale](https://www.cairn.info/histoire-economique-de-l-afrique-tropicale--9782200602642.htm)
-
 28. TODO [Histoire politique de la Ve
     République](https://www.cairn.info/histoire-politique-de-la-v-e-republique--9782200346935.htm)
-
 29. TODO [Histoire
     romaine](https://www.cairn.info/histoire-romaine--9782200622909.htm)
-
 30. TODO [Hommes et femmes d'Égypte
     (IV](https://www.cairn.info/hommes-et-femmes-d-egypte-ive-siecle-av-n-e--9782200346454.htm)
-
 31. TODO [Impérialisme et démocratie à
     Athènes](https://www.cairn.info/imperialisme-et-democratie-a-athenes--9782200269289.htm)
-
 32. TODO [L\'Afrique du 20e siècle à nos
     jours](https://www.cairn.info/l-afrique-du-20-e-siecle-a-nos-jours--9782200285074.htm)
-
 33. TODO [L\'Allemagne de 1870 à nos
     jours](https://www.cairn.info/l-allemagne-de-1870-a-nos-jours--9782200285050.htm)
-
 34. TODO [L\'Amérique
     ibérique](https://www.cairn.info/l-amerique-iberique--9782200625641.htm)
-
 35. TODO [L\'Anatolie
     hellénistique](https://www.cairn.info/l-anatolie-hellenistique--9782200268329.htm)
-
 36. TODO [L\'aristocratie
     médiévale](https://www.cairn.info/l-aristocratie-medievale--9782200262938.htm)
-
 37. TODO [L\'armée
     romaine](https://www.cairn.info/l-armee-romaine--9782200276539.htm)
-
 38. TODO [L\'éducation physique de 1945 à nos
     jours](https://www.cairn.info/education-physique-de-1945-a-nos-jours--9782200600686.htm)
-
 39. TODO [L\'Égypte grecque et
     romaine](https://www.cairn.info/l-egypte-grecque-et-romaine--9782200262884.htm)
-
 40. TODO [L\'Empire
     austro-hongrois](https://www.cairn.info/l-empire-austro-hongrois--9782200248888.htm)
-
 41. TODO [L\'Europe](https://www.cairn.info/l-europe--9782200601386.htm)
-
 42. TODO [L\'Europe au
     19](https://www.cairn.info/l-europe-au-19-e-siecle--9782200622565.htm)
-
 43. TODO [L\'Europe centrale et
     orientale](https://www.cairn.info/l-europe-centrale-et-orientale--9782200602635.htm)
-
 44. TODO [L\'héritage ambigu de la
     colonisation](https://www.cairn.info/l-heritage-ambigu-de-la-colonisation--9782200281335.htm)
-
 45. TODO [L\'histoire
     immédiate](https://www.cairn.info/l-histoire-immediate--9782200277390.htm)
-
 46. TODO [La construction de
     l'Europe](https://www.cairn.info/la-construction-de-l-europe--9782200353056.htm)
-
 47. TODO [La culture matérielle de la
     France](https://www.cairn.info/la-culture-materielle-de-la-france--9782200286569.htm)
-
 48. TODO [La famille en France à l\'époque
     moderne](https://www.cairn.info/la-famille-en-france-a-l-epoque-moderne--9782200244170.htm)
-
 49. TODO [La France à l\'époque
     moderne](https://www.cairn.info/la-france-a-l-epoque-moderne--9782200626181.htm)
-
 50. TODO [La France au
     XIX](https://www.cairn.info/la-france-au-xix-e-siecle--9782200622596.htm)
-
 51. TODO [La France et l\'Europe de
     Napoléon](https://www.cairn.info/la-france-et-l-europe-de-napoleon--9782200265335.htm)
-
 52. TODO [La Grande-Bretagne et le
     monde](https://www.cairn.info/la-grande-bretagne-et-le-monde--9782200244576.htm)
-
 53. TODO [La guerre dans le monde
     grec](https://www.cairn.info/la-guerre-dans-le-monde-grec--9782200600297.htm)
-
 54. TODO [La péninsule Ibérique aux
     époques romaines](https://www.cairn.info/la-peninsule-iberique-aux-epoques-romaines--9782200268336.htm)
-
 55. TODO [La République romaine et son
     empire](https://www.cairn.info/la-republique-romaine-et-son-empire--9782200622053.htm)
-
 56. TODO [La Révolution
     française](https://www.cairn.info/la-revolution-francaise--9782200627690.htm)
-
 57. TODO [La Révolution française et l\'histoire du
     monde](https://www.cairn.info/La-revolution-francaise-et-l-histoire-du-monde--9782200257699.htm)
-
 58. TODO [La société du haut Moyen
     Âge](https://www.cairn.info/la-societe-du-haut-moyen-age--9782200265779.htm)
-
 59. TODO [La société française de 1945 à nos
     jours](https://www.cairn.info/la-societe-francaise-de-1945-a-nos-jours--9782200613082.htm)
-
 60. TODO [Le christianisme
     antique](https://www.cairn.info/le-christianisme-antique--9782200626914.htm)
-
 61. TODO [Le christianisme occidental au Moyen
     Âge](https://www.cairn.info/le-christianisme-occidental-au-moyen-age--9782200251871.htm)
-
 62. TODO [Le Maghreb par les
     textes](https://www.cairn.info/le-maghreb-par-les-textes--9782200627294.htm)
-
 63. TODO [Le monde grec à l'époque
     classique](https://www.cairn.info/le-monde-grec-a-l-epoque-classique--9782200614713.htm)
-
 64. TODO [Le monde
     hellénistique](https://www.cairn.info/monde-hellenistique--9782200618179.htm)
-
 65. TODO [Le Reich
     allemand](https://www.cairn.info/le-reich-allemand--9782200262334.htm)
-
 66. TODO [Le
     Saint-Empire](https://www.cairn.info/saint-empire-1500-1800--9782200617639.htm)
-
 67. TODO [Le Second
     Empire](https://www.cairn.info/le-second-empire--9782200246075.htm)
-
 68. TODO [Le
     XX](https://www.cairn.info/le-xx-e-siecle--9782200271534.htm)
-
 69. TODO [Les accords
     d\'Evian (1962)](https://www.cairn.info/les-accords-d-evian--9782200249076.htm)
-
 70. TODO [Les années
     1970](https://www.cairn.info/les-annees-1970--9782200623289.htm)
-
 71. TODO [Les décolonisations au
     XX](https://www.cairn.info/les-decolonisations-au-xxe-siecle--9782200249458.htm)
-
 72. TODO [Les États-Unis et le monde au 19e
     siècle](https://www.cairn.info/les-etats-unis-et-le-monde-au-19e-siecle--9782200266929.htm)
-
 73. TODO [Les femmes dans la France
     moderne](https://www.cairn.info/les-femmes-dans-la-france-moderne--9782200601584.htm)
-
 74. TODO [Les femmes, actrices de l'histoire France, de 1789 à nos
     jours](https://www.cairn.info/les-femmes-actrices-histoire-de-france--9782200246549.htm)
-
 75. TODO [Les mondes méditerranéens au Moyen
     Âge](https://www.cairn.info/les-mondes-mediterraneens-au-moyen-age--9782200620288.htm)
-
 76. TODO [Les ouvriers en
     France](https://www.cairn.info/les-ouvriers-en-france--9782200277420.htm)
-
 77. TODO [Les Perses vus par les
     Grecs](https://www.cairn.info/les-perses-vus-par-les-grecs--9782200270353.htm)
-
 78. TODO [Les Provinces-Unies à l\'époque
     moderne](https://www.cairn.info/les-provinces-unies-a-l-epoque-moderne--9782200614515.htm)
-
 79. TODO [Les relations internationales dans l\'Europe
     moderne](https://www.cairn.info/les-relations-internationales-dans-l-europe-modern--9782200623005.htm)
-
 80. TODO [Les relations internationales depuis
     1945](https://www.cairn.info/les-relations-internationales-depuis-1945--9782200622558.htm)
-
 81. TODO [Les sociétés en
     guerre](https://www.cairn.info/les-societes-en-guerre--9782200265649.htm)
-
 82. TODO [Les villes portuaires maritimes dans la France
     moderne](https://www.cairn.info/les-villes-portuaires-maritimes-dans-la-france--9782200278205.htm)
-
 83. TODO [L'affaire
     Dreyfus](https://www.cairn.info/l-affaire-dreyfus--9782200244163.htm)
-
 84. TODO [L'alimentation en Europe à l'époque
     moderne](https://www.cairn.info/l-alimentation-en-europe-a-l-epoque-moderne--9782200244071.htm)
-
 85. TODO [L'empire colonial français de Richelieu à
     Napoléon](https://www.cairn.info/l-empire-colonial-francais-de-richelieu-a-napoleon--9782200354909.htm)
-
 86. TODO [L'enseignement de l'Histoire en
     France](https://www.cairn.info/l-enseignement-de-l-histoire-en-france--9782200262754.htm)
-
 87. TODO [L'Italie
     fasciste](https://www.cairn.info/l-italie-fasciste--9782200614584.htm)
-
 88. TODO [Manuel
     d\'archéologie](https://www.cairn.info/manuel-d-archeologie--9782200266769.htm)
-
 89. TODO [Manuel d\'archéologie médiévale et
     moderne](https://www.cairn.info/manuel-d-archeologie-medievale-et-moderne--9782200281397.htm)
-
 90. TODO [Manuel d'histoire
     globale](https://www.cairn.info/manuel-d-histoire-globale--9782200278995.htm)
-
 91. TODO [Naissance de l\'Italie
     contemporaine](https://www.cairn.info/naissance-de-litalie-contemporaine--9782200267926.htm)
-
 92. TODO [Paysans et seigneurs au
     Moyen-Age](https://www.cairn.info/paysans-et-seigneurs-au-moyen-age--9782200618162.htm)
-
 93. TODO [Petite histoire de la
     France](https://www.cairn.info/petite-histoire-de-la-france--9782200285128.htm)
-
 94. TODO [Pouvoir et religion en
     Europe](https://www.cairn.info/pouvoir-et-religion-en-europe--9782200623463.htm)
-
 95. TODO [Pouvoir royal et institutions dans la France
     moderne](https://www.cairn.info/pouvoir-royal-et-institutions-dans-la-france-moder--9782200613075.htm)
-
 96. TODO [Précis d\'histoire
     européenne](https://www.cairn.info/precis-d-histoire-europeenne--9782200601188.htm)
-
 97. TODO [Révoltes et répressions dans la France
     moderne](https://www.cairn.info/revoltes-et-repressions-dans-la-france-moderne--9782200274900.htm)
-
 98. TODO [Rome et le monde
     provincial](https://www.cairn.info/rome-et-le-monde-provincial--9782200249526.htm)
-
 99. TODO [Rome. Paysage urbain et
     idéologie](https://www.cairn.info/rome-paysage-urbain-et-ideologie--9782200263843.htm)
-
 100. TODO [Royauté et idéologie au Moyen
-     Âge](https://www.cairn.info/royaute-et-ideologie-au-moyen-age--9782200249212.htm)
-
+    Âge](https://www.cairn.info/royaute-et-ideologie-au-moyen-age--9782200249212.htm)
 101. TODO [Sparte](https://www.cairn.info/sparte--9782200618148.htm)
-
 102. TODO [Un siècle d\'histoire culturelle en
-     France](https://www.cairn.info/un-siecle-d-histoire-culturelle-en-france--9782200286637.htm)
-
+    France](https://www.cairn.info/un-siecle-d-histoire-culturelle-en-france--9782200286637.htm)
 103. TODO [Une histoire culturelle des
-     États-Unis](https://www.cairn.info/une-histoire-culturelle-des-etats-unis--9782200278588.htm)
+    États-Unis](https://www.cairn.info/une-histoire-culturelle-des-etats-unis--9782200278588.htm)
 
-# TODO Askhistorians
+TODO Askhistorians
+==================
 
-## TODO Goodreads non à jour -\> utiliser le wiki
+TODO Goodreads non à jour -\> utiliser le wiki
+----------------------------------------------
 
 Pandoc ou HTML ? v1: seulement les liens et \"manuel\" ? Utiliser pandoc
 ?

@@ -1,23 +1,23 @@
 Today, we will see how to get mails, read them, and answer them, inside
 a terminal. We will need four utilities for that :
 
--   one to synchronize our local mails with the server :
-    `mbsync`{.verbatim},
--   a mail client for viewing them : emacs with `notmuch`{.verbatim}
--   an agent for sending mails : `msmtp`{.verbatim} a good choice (or
-    sendmail, which should be installed by default on most Linux and BSD
+-   one to synchronize our local mails with the server : `mbsync`,
+-   a mail client for viewing them : emacs with `notmuch`
+-   an agent for sending mails : `msmtp` a good choice (or sendmail,
+    which should be installed by default on most Linux and BSD
     distribution )
 
 Install each of this utilities according to the usual way of your
 distribution. The following tutorial assumes you have two accounts, one
 of them being Gmail.
 
-## Mbsync and Gmail
+Mbsync and Gmail
+----------------
 
-Here we will configure a gmail account using `~/.msmtprc`{.verbatim}.
-Let\'s break down the configuration file. First, for increased security,
-generate an app password using
-<https://myaccount.google.com/apppasswords> and encrypt it with gpg:
+Here we will configure a gmail account using `~/.msmtprc`. Let\'s break
+down the configuration file. First, for increased security, generate an
+app password using <https://myaccount.google.com/apppasswords> and
+encrypt it with gpg:
 
     #---------------------------------
     # Gmail
@@ -26,7 +26,7 @@ generate an app password using
     # Address to connect to
     Host imap.gmail.com
     User alexis.praga@gmail.com
-    PassCmd "gpg2 -q --for-your-eyes-only --no-tty -d ~/.gmailpass.gpg"
+    PassCmd &quot;gpg2 -q --for-your-eyes-only --no-tty -d ~/.gmailpass.gpg&quot;
     # Use SSL
     SSLType IMAPS
     CertificateFile /usr/local/share/certs/ca-root-nss.crt
@@ -34,30 +34,29 @@ generate an app password using
     IMAPStore gmail-remote
     Account gmail
 
-Then define the folders for your mail. `~mail/gmail`{.verbatim} contains
-an Inbox and an Archive folder. It must be of the `maildir`{.verbatim}
-format. Using the fish shell syntax:
+Then define the folders for your mail. `~mail/gmail` contains an Inbox
+and an Archive folder. It must be of the `maildir` format. Using the
+fish shell syntax:
 
-``` shell
+``` {.shell}
 for i in cur new tmp
   mkdir -p ~/mail/gmail/inbox/$i
   mkdir -p ~/mail/gmail/archive/$i
 end
 ```
 
-Now, return to `~/.mbsyncrc`{.verbatim}:
+Now, return to `~/.mbsyncrc`:
 
     MaildirStore gmail-local
-    # Important: we need to be able to move files. The "native" setting results in duplicates and errors...
+    # Important: we need to be able to move files. The &quot;native&quot; setting results in duplicates and errors...
     AltMap yes
     Subfolders Verbatim
-    # The trailing "/" is important
+    # The trailing &quot;/&quot; is important
     Path ~/mail/gmail/
     Inbox ~/mail/gmail/inbox
 
 Then the hard part: how to synchronize folders with gmail ? I\'ve chosen
-to put incoming mail in `inbox`{.verbatim} and everything else in
-`archive`{.verbatim}
+to put incoming mail in `inbox` and everything else in `archive`
 
     # Exclude everything under the internal [Gmail] folder, except the interesting folders
     # ALl (and I mean all) mail is in All mail.
@@ -70,20 +69,20 @@ to put incoming mail in `inbox`{.verbatim} and everything else in
     Far :gmail-remote:
     Near :gmail-local:
     # Select some mailboxes to sync
-    Patterns "INBOX"
+    Patterns &quot;INBOX&quot;
     Create Near
     # Save the synchronization state files in the relevant directory
     SyncState *
 
     # Name translation
     Channel gmail-archive
-    Far :gmail-remote:"[Gmail]/All Mail"
+    Far :gmail-remote:&quot;[Gmail]/All Mail&quot;
     Near :gmail-local:archive
     Create Near
     SyncState *
 
     Channel gmail-trash
-    Far :gmail-remote:"Deleted Messages"
+    Far :gmail-remote:&quot;Deleted Messages&quot;
     Near :gmail-local:trash
     Create Near
     SyncState *
@@ -103,8 +102,8 @@ A second account can be set the same way :
     # Address to connect to
     Host imap.free.fr
     User alexis.praga@free.fr
-    # The file is encrypted with "gpg -e"
-    PassCmd "gpg2 -q --for-your-eyes-only --no-tty -d ~/.freepass.gpg"
+    # The file is encrypted with &quot;gpg -e&quot;
+    PassCmd &quot;gpg2 -q --for-your-eyes-only --no-tty -d ~/.freepass.gpg&quot;
     # Use SSL
     SSLType IMAPS
     CertificateFile /usr/local/share/certs/ca-root-nss.crt
@@ -113,30 +112,30 @@ A second account can be set the same way :
     Account free
 
     MaildirStore free-local
-    # Important: we need to be able to move files. The "native" setting results in duplicates and errors...
+    # Important: we need to be able to move files. The &quot;native&quot; setting results in duplicates and errors...
     AltMap yes
     Subfolders Verbatim
-    # The trailing "/" is important
+    # The trailing &quot;/&quot; is important
     Path ~/mail/free/
     Inbox ~/mail/free/inbox
 
     Channel free-default
     Far :free-remote:
     Near :free-local:
-    Patterns "INBOX"
+    Patterns &quot;INBOX&quot;
     Create Near
     SyncState *
 
     # Name translation
     Channel free-archive
-    Far :free-remote:"Archive"
+    Far :free-remote:&quot;Archive&quot;
     Near :free-local:archive
     Create Near
     SyncState *
 
     # Name translation
     Channel free-sent
-    Far :free-remote:"Sent"
+    Far :free-remote:&quot;Sent&quot;
     Near :free-local:sent
     Create Near
     SyncState *
@@ -146,7 +145,8 @@ A second account can be set the same way :
     Channel free-default
     Channel free-archive
 
-## Msmtp
+Msmtp
+-----
 
 To send mail, I use the gmail account for that :
 
@@ -170,35 +170,34 @@ To send mail, I use the gmail account for that :
 
 Change the permissions :
 
-``` shell
+``` {.shell}
 $ chmod 600 ~/.msmtprc
 ```
 
 Then, you can try sending mail with the following command :
 
-``` shell
+``` {.shell}
 $ cat test.mail | msmtp -a default account1@gmail.com 
 ```
 
 where test.mail is an simple file like this one (there must be an empty
 line after the subject):
 
-``` example
-To: account1@gmail.com
-From: fake@gmail.com
-Subject: Test <br/> 
+    To: account1@gmail.com
+    From: fake@gmail.com
+    Subject: Test &lt;br/&gt; 
 
-Hello !
-```
+    Hello !
 
-## Notmuch and emacs
+Notmuch and emacs
+-----------------
 
 Notmuch is an awesome tool to manage your mail. Basically, it does not
 touch your mail but rather operates on tags. So an incoming mail will be
-tagged as `inbox`{.verbatim} and if you delete it, it will be replaced
-by the `deleted`{.verbatim} tag. It allows for fast indexing and quick
-search of your mail. The only drawback is that it does **not** move your
-mail. So deleting for real must be done manually.
+tagged as `inbox` and if you delete it, it will be replaced by the
+`deleted` tag. It allows for fast indexing and quick search of your
+mail. The only drawback is that it does **not** move your mail. So
+deleting for real must be done manually.
 
 Anway, it\'s awesome and you should use it in 2021 !
 
@@ -210,8 +209,7 @@ Configuration is pretty straightforward. The first time, run
 and follow the instructions.
 
 Then I have a script running as a cron job to synchronize my mail and
-move mails in the proper folder (`inbox`{.verbatim},
-`archive`{.verbatim}) or delete it :
+move mails in the proper folder (`inbox`, `archive`) or delete it :
 
     #!/usr/local/bin/fish
 
@@ -223,7 +221,7 @@ move mails in the proper folder (`inbox`{.verbatim},
     set args --output=files --format=text0
 
     # Tagsent mails (by default, there are not tagged)
-    set filter "(folder:gmail/inbox or folder:free/inbox or tag:inbox) and from:\"Alexis Praga\""
+    set filter &quot;(folder:gmail/inbox or folder:free/inbox or tag:inbox) and from:\&quot;Alexis Praga\&quot;&quot;
     notmuch tag +sent +archived -inbox --  $filter
 
     # Move archived mail from inbox to archive folder
@@ -233,27 +231,27 @@ move mails in the proper folder (`inbox`{.verbatim},
     set filter tag:archived folder:free/inbox
     notmuch search $args $filter  | xargs -0 -J {} mv {} ~/mail/free/archive/cur
 
-    # Really delete "deleted messages" from gmail
-    set filter "folder:gmail/trash"
+    # Really delete &quot;deleted messages&quot; from gmail
+    set filter &quot;folder:gmail/trash&quot;
     notmuch tag +deleted --  $filter
 
     # delete mails as notmuch cannot do it
-    set filter "(folder:free/inbox or folder:gmail/inbox or folder:gmail/trash) and tag:deleted"
+    set filter &quot;(folder:free/inbox or folder:gmail/inbox or folder:gmail/trash) and tag:deleted&quot;
     notmuch search $args $filter  | xargs -0 -J {} mv {} ~/mail/trash/cur
 
     # Get new mail
     notmuch new
 
     ❯ crontab -l
-    MAILTO=""
+    MAILTO=&quot;&quot;
     */5 * * * * $HOME/scripts/mbsync_notmuch.sh
 
-Then I can read the email inside emacs with the `notmuch`{.verbatim}
-plugin.
+Then I can read the email inside emacs with the `notmuch` plugin.
 
-## What about gnus ?
+What about gnus ?
+-----------------
 
 I\'ve tried it two times because the concept was appealing: manage your
 mail as a newserver is cool. The major drawback is the lack of
-integration for notmuch. You can make it work with `mairix`{.verbatim}
-but its super slow.
+integration for notmuch. You can make it work with `mairix` but its
+super slow.

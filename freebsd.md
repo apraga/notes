@@ -1,4 +1,5 @@
-# Accéder à un dossier partagé depuis Windows
+Accéder à un dossier partagé depuis Windows
+===========================================
 
 Impossible d\'utiliser mount~smbfs~ mais smbclient
 //DESKTOP-G1M6J9S/test
@@ -10,15 +11,17 @@ TODO: comment envoyer un dossier complet ??
 
 On récupérer le nom du server (netbios) avec nbtscan IP
 
-# Scrub zfs
+Scrub zfs
+=========
 
 Dans /etc/defaults/periodic, le faire tous les 35 jours avec:
 
-    daily_scrub_zfs_enable="NO"
-    daily_scrub_zfs_pools=""            # empty string selects all pools
-    daily_scrub_zfs_default_threshold="35"
+    daily_scrub_zfs_enable=&quot;NO&quot;
+    daily_scrub_zfs_pools=&quot;&quot;            # empty string selects all pools
+    daily_scrub_zfs_default_threshold=&quot;35&quot;
 
-# Emacs nativecomp
+Emacs nativecomp
+================
 
 Installer texinfo Editer le makefile de lang/gcc10: Ajouter \".jit\" :
 LANGUAGES:= c,c++,objc,fortran,jit Ajouter --enable-host-shared à
@@ -33,9 +36,11 @@ make -j\$(nproc) make install
 
 Enfin, éviter la mise à jour de GCC10 avec pkg lock gcc10
 
-# Mise à jour -CURRENT sur rasbperry pi 4
+Mise à jour -CURRENT sur rasbperry pi 4
+=======================================
 
-## From advice on discord #embedded)
+From advice on discord \#embedded)
+----------------------------------
 
 The first time: i use git pull --ff-only in /usr/src then the ususl make
 buildworld & friends To set up src, in /usr do git clone
@@ -48,7 +53,8 @@ buildkernel as in
 See also:
 <https://gist.github.com/grahamperrin/e7a266154793d0e039f9a7d52396f8d7#one-off-2021-03-10>
 
-## HOLD Trying to cross compile
+HOLD Trying to cross compile
+----------------------------
 
 ### Procedure
 
@@ -70,8 +76,8 @@ Preparation mkdir obj setenv MAKEOBJDIRPREFIX
 \~/softwares/raspberry-update/obj/
 
 Build world: cd src/ time make -j 4 TARGET=arm64 TARGET~ARCH~=aarch64
-buildworld => 2h30 time make -j 4 TARGET=arm64 TARGET~ARCH~=aarch64
-buildkernel KERNCONF=GENERIC-NODEBUG => 10min (!)
+buildworld =\> 2h30 time make -j 4 TARGET=arm64 TARGET~ARCH~=aarch64
+buildkernel KERNCONF=GENERIC-NODEBUG =\> 10min (!)
 
 On a besoin de lancer les commandes comme root donc on authorise le root
 login dans /etc/ssh/sshd~config~ et on re-mount sudo umount *raspberry
@@ -93,10 +99,11 @@ Avant:
 
 ### KILL Version actuelle sans debug 483c6da3a20
 
-(avec les optimisations de [*Utiliser la config de f451*]{.spurious-link
-target="Utiliser la config de f451"}
+(avec les optimisations de
+<span class="spurious-link" target="Utiliser la config de f451">*Utiliser
+la config de f451*</span>
 
-``` shell
+``` {.shell}
 git clone -o freebsd -b main https://git.freebsd.org/src.git src
 git checkout -b 483c6da3a20
 mkdir obj
@@ -104,32 +111,35 @@ setenv MAKEOBJDIRPREFIX ~/softwares/raspberry-update/obj/
 time make -j 4 TARGET=arm64 TARGET_ARCH=aarch64 buildkernel KERNCONF=GENERIC-NODEBUG
 ```
 
-=> 10min
+=\> 10min
 
-``` shell
+``` {.shell}
 sshfs -o idmap=user -p 666 root@192.168.1.78:/ /raspberry
 ```
 
 On backup /book/kernel avant puis
 
-``` shell
+``` {.shell}
 make TARGET_ARCH=aarch64 DESTDIR=/raspberry/ KERNCONF=GENERIC-NODEBUG  installkernel
 ```
 
-### [TODO]{.todo .TODO} Causes d\'echec : {#causes-dechec}
+### <span class="todo TODO">TODO</span> Causes d\'echec :
 
 -   Impossible de faire buildkernel sans buildworld ?
 
-## [TODO]{.todo .TODO} Faire son propre serveur freebsd-update ??server {#faire-son-propre-serveur-freebsd-update-server}
+<span class="todo TODO">TODO</span> Faire son propre serveur freebsd-update ??server
+------------------------------------------------------------------------------------
 
 Voir si c\'est possible
 <https://docs.freebsd.org/en/articles/freebsd-update-server/>
 
-## [TODO]{.todo .TODO} Compilation sur le pi {#compilation-sur-le-pi}
+<span class="todo TODO">TODO</span> Compilation sur le pi
+---------------------------------------------------------
 
 Selon les conseils de f451 sur discord (4-5 h de compilation au total)
 
-### [TODO]{.todo .TODO} Utiliser un disque en usb3 plutôt que le cache => y mettre /usr/src et /usr/obj {#utiliser-un-disque-en-usb3-plutôt-que-le-cache-y-mettre-usrsrc-et-usrobj}
+=== <span class="todo TODO">TODO</span> Utiliser un disque en usb3
+plutôt que le cache =\> y mettre /usr/src et /usr/obj ===
 
 ### Workflow de f451
 
@@ -138,10 +148,9 @@ make -j10 cleanworld && make -j10 cleandir && make -j10 clean && make
 installworld && mergemaster -Ui (merge all the changes) then make
 check-old yes \| make delete-old yes \| make delete-old-libs reboot
 
-### [DONE]{.done .DONE} Utiliser la config de f451 {#utiliser-la-config-de-f451}
+### <span class="done DONE">DONE</span> Utiliser la config de f451
 
-1.  [DONE]{.done .DONE} /etc/src.conf
-
+1.  <span class="done DONE">DONE</span> /etc/src.conf
     <https://user.fm/files/v2-68d74fd0b799cc134536c72c766466bd/etc.src.conf.txt>
 
         KERNCONF=[redacted]
@@ -191,7 +200,6 @@ check-old yes \| make delete-old yes \| make delete-old-libs reboot
         ACFLAGS.ghashv8-armx.S+= -mcpu=cortex-a72+crypto
 
 2.  KILL /boot/msdos/config.txt (si ventilation !!)
-
     <https://user.fm/files/v2-a5fdc9db09f97646da0a29e86e7615c2/config.txt>
 
         arm_control=0x200
@@ -205,12 +213,10 @@ check-old yes \| make delete-old yes \| make delete-old-libs reboot
         arm_freq=2000
         sdram_freq_min=3200
 
-3.  [DONE]{.done .DONE} /etc/rc.conf
-
+3.  <span class="done DONE">DONE</span> /etc/rc.conf
     powerd~enable~=\"YES\" powerd~flags~=\"-r 1\"
 
-4.  [DONE]{.done .DONE} /etc/make.conf
-
+4.  <span class="done DONE">DONE</span> /etc/make.conf
         MAKE_JOBS_NUMBER=6
         WITH_CCACHE_BUILD=YES
         CCACHE_DIR=/var/cache/ccache
@@ -219,21 +225,20 @@ check-old yes \| make delete-old yes \| make delete-old-libs reboot
         OPTIONS_SET+=OPTIMIZED_CFLAGS
         OPTIONS_SET+=DOCS EXAMPLES MANPAGES
 
-5.  [DONE]{.done .DONE} Changer la taille de /tmp
-
+5.  <span class="done DONE">DONE</span> Changer la taille de /tmp
     En tant que root !! unmount /tmp vi /etc/fstab Mettre 500M au lieu
     de 50M
 
-### [TODO]{.todo .TODO} Vérifier refroidessement {#vérifier-refroidessement}
+### <span class="todo TODO">TODO</span> Vérifier refroidessement
 
-### [DONE]{.done .DONE} Installer ccache-static {#installer-ccache-static}
+### <span class="done DONE">DONE</span> Installer ccache-static
 
-### [TODO]{.todo .TODO} MAJ {#maj}
+### <span class="todo TODO">TODO</span> MAJ
 
 Attention, ne pas utiliser -j6 sinon on s\'expose à des erreurs \"out of
 swap space\". La bonne commande est:
 
-    make -j3 buildworld && make -j3 buildkernel KERNCONF=GENERIC-NODEBUG
+    make -j3 buildworld &amp;&amp; make -j3 buildkernel KERNCONF=GENERIC-NODEBUG
 
 Temps de compilation
 
@@ -247,11 +252,12 @@ Echec avec just installkernel
 
 On récupéère les dernières sources et on recommence
 
-    cd /usr/src && git pull --ff-only && make -j10 cleanworld && make -j10 cleandir && make -j10 clean
+    cd /usr/src &amp;&amp; git pull --ff-only &amp;&amp; make -j10 cleanworld &amp;&amp; make -j10 cleandir &amp;&amp; make -j10 clean
     git checkout main
      make -j4 buildkernel KERNCONF=GENERIC-NODEBUG
 
-# Steam
+Steam
+=====
 
 [Instructions](https://euroquis.nl//freebsd/2021/04/06/steam-freebsd)
 
@@ -276,9 +282,11 @@ Dans /etc/fstab
 [Liste des jeux
 compatibles](https://github.com/shkhln/linuxulator-steam-utils/wiki/Compatibility)
 
-# Backup
+Backup
+======
 
-## Rsync pour google drive, mega et hubic :
+Rsync pour google drive, mega et hubic :
+----------------------------------------
 
 En résumé :
 
@@ -298,13 +306,13 @@ Code:
     #   2. Backup to the cloud using rsync
     #
     # Backup data either in clear or encrypted
-    # - google -> to google drive (clear)
-    # - hubic -> to Hubic and Mega(clear)
-    # - local config files -> google and hubic (encrypted)
-    # - raspberry config files -> google and hubic (encrypted)
-    # - local rtorrent -> google and hubic (encrypted)
-    # - raspberry rtorrent -> google and hubic (encrypted)
-    set root "/home/alex/backups"
+    # - google -&gt; to google drive (clear)
+    # - hubic -&gt; to Hubic and Mega(clear)
+    # - local config files -&gt; google and hubic (encrypted)
+    # - raspberry config files -&gt; google and hubic (encrypted)
+    # - local rtorrent -&gt; google and hubic (encrypted)
+    # - raspberry rtorrent -&gt; google and hubic (encrypted)
+    set root &quot;/home/alex/backups&quot;
 
     # Duplicity needs a passphrase
     set -x PASSPHRASE (cat /home/alex/pass.txt)
@@ -316,11 +324,11 @@ Code:
     # Warning : --include implyies everything is excluded so we need /** at the end
     # Don't forget the / in the folder too..
     set piLocal raspberry-local/
-    rclone sync --include "/home/alex/Downloads/torrents/**" \
-        --include "/home/alex/Downloads/session/**" \
-        --include "/usr/local/etc/**"  \
-        --include "/etc/**"  \
-        --include "/boot/loader.conf"  pi:/ $piLocal
+    rclone sync --include &quot;/home/alex/Downloads/torrents/**&quot; \
+        --include &quot;/home/alex/Downloads/session/**&quot; \
+        --include &quot;/usr/local/etc/**&quot;  \
+        --include &quot;/etc/**&quot;  \
+        --include &quot;/boot/loader.conf&quot;  pi:/ $piLocal
     # Encrypt it
     duplicity $piLocal file:///home/alex/backups/raspberry
 
@@ -341,8 +349,8 @@ Code:
     #------------ Backup all encnrypted and non encrypted
 
     # Backup is then made with rsync because there is a symlink
-    # desktop -> google/desktop
-    # desktop -> hubic /desktop
+    # desktop -&gt; google/desktop
+    # desktop -&gt; hubic /desktop
     #--- All
     # Google drive and mega can be managed with rclone
     rclone -L sync --exclude 'Coopétition/' --drive-import-formats .xlsx $root/google/  google:
@@ -353,61 +361,42 @@ Code:
     #--- Passphrase
     /usr/local/bin/pass git push
 
+Maintenir un port
+=================
 
-# Maintenir un port
-- Tester avec poudrière
-- portlint Makefile, formatter porfmt 
-- Faire un PR sur bugzilla
-  - titre: x11/kitty: Update to XX
-  - remplir URL du changelog
-  - cocher "maintainer approval"
-  - Ne pas utiliser PORTREVISION si DISTVERSION est incrémenté (car sert aux patches freebsd)
-  
-## Haskell
-Incrémenter la version dans le Makefile
-Générer la liste des dépendences avec:
-    make makesum
-    make cabal-extract cabal-extract-deps
-    make make-use-cabal-revs
-Mettre à jour le Makefile et lancer les tests avec poudrière 
+-   Tester avec poudrière
+-   portlint Makefile
+-   Faire un PR sur bugzilla
+    -   titre: x11/kitty: Update to XX
+    -   remplir URL du changelog
+    -   cocher "maintainer approval"
 
--   Tutorial:
+Haskell
+-------
 
-<https://docs.freebsd.org/en/books/porters-handbook/special/#using-cabal>
+Incrémenter la version dans le Makefile Générer la liste des dépendences
+avec: make makesum make cabal-extract cabal-extract-deps make
+make-use-cabal-revs Mettre à jour le Makefile et lancer les tests avec
+poudrière
 
--   \"when updating from something like 1.5.0.0 to 1.5.0.1 it is usually
-    sufficient to just bump the PORTVERSION. No need to refresh the
-    whole USE~CABAL~ in this case.\"
--   11.4 and 12.2 are enough (no need for aarch64)
+Python
+------
 
-1.  Git-annex
-
-    \"When updating such ports I do this:
-
-    -   Run make config and turn all options OFF.
-    -   Regenerate common USE~CABAL~.
-    -   See if things build.
-    -   Then start enabling options one by one and adjust optionalized
-        dependencies until it builds.
-
-    So yes, hs-git-annex is quite cumbersome port in this regard.\"
-
-
-## Python
 Pour tester avec plusieurs versions de python:
 
-   echo 'DEFAULT_VERSIONS+= python=3.6' > /usr/local/etc/poudriere.d/python36-make.conf
-   poudriere testport -z python36 -j 130Ramd64 -o textproc/py-sphinxext-opengraph
+echo 'DEFAULT\_VERSIONS+= python=3.6' \>
+/usr/local/etc/poudriere.d/python36-make.conf poudriere testport -z
+python36 -j 130Ramd64 -o textproc/py-sphinxext-opengraph
 
-Par exemple : 3.6, 3.7, 3.8, 3.9. 3.10 
- 
+Par exemple : 3.6, 3.7, 3.8, 3.9. 3.10
 
-## KILL Freebsd 2020
+KILL Freebsd 2020
+-----------------
 
 ### Nvidia 950 : 
 
 /etc/rc.conf: dbus~enable~=\"YES\" linux~enable~=\"YES\" \# for nvidia
-kld~list~=\"nvidia-modeset\" #nvidia does not work
+kld~list~=\"nvidia-modeset\" \#nvidia does not work
 
 Et faire un xorg.conf dans
 /usr/local/etc/X11/xorg.conf.d/driver-nvidia.conf Section \"Device\"
@@ -422,16 +411,16 @@ Attention, ne pas le mettre dans *usr/share/syscons/keymaps* mais
 *usr/share/vt/keymaps* ! Puis dans /etc/rc.conf
 keymap=\"fr-dvorak-bepo\"
 
-### [TODO]{.todo .TODO} Non résolu : grub avec Zfs on root {#non-résolu-grub-avec-zfs-on-root}
+### <span class="todo TODO">TODO</span> Non résolu : grub avec Zfs on root
 
 ### Emacs as daemon
 
 On peut utiliser rc.d (voir la discussion ici
 <https://forums.freebsd.org/threads/running-emacs-as-a-daemon.78392/#post-489850>)
 mais cela ralentit le démarrage. Le plus simple est d\'utiliser crontab
-avec @reboot :
+avec \@reboot :
 
-@reboot /usr/local/bin/emacs --daemon
+\@reboot /usr/local/bin/emacs --daemon
 
 ### Nzbget
 
@@ -448,13 +437,13 @@ Possible sosu chrome mais avec sndio
 
 1.  Chercher le numéro avec cat /dev/sndstat
 
-Installed devices: pcm0: \<NVIDIA (0x0072) (HDMI/DP 8ch)> (play) pcm1:
-\<NVIDIA (0x0072) (HDMI/DP 8ch)> (play) pcm2: \<NVIDIA (0x0072) (HDMI/DP
-8ch)> (play) pcm3: \<NVIDIA (0x0072) (HDMI/DP 8ch)> (play) pcm4:
-\<Realtek ALC887 (Rear Analog 7.1/2.0)> (play/rec) default pcm5:
-\<Realtek ALC887 (Front Analog)> (play/rec) pcm6: \<Realtek ALC887 (Rear
-Digital)> (play) pcm7: \<Realtek ALC887 (Onboard Digital)> (play) pcm8:
-\<USB audio> (rec) No devices installed from userspace
+Installed devices: pcm0: \<NVIDIA (0x0072) (HDMI/DP 8ch)\> (play) pcm1:
+\<NVIDIA (0x0072) (HDMI/DP 8ch)\> (play) pcm2: \<NVIDIA (0x0072)
+(HDMI/DP 8ch)\> (play) pcm3: \<NVIDIA (0x0072) (HDMI/DP 8ch)\> (play)
+pcm4: \<Realtek ALC887 (Rear Analog 7.1/2.0)\> (play/rec) default pcm5:
+\<Realtek ALC887 (Front Analog)\> (play/rec) pcm6: \<Realtek ALC887
+(Rear Digital)\> (play) pcm7: \<Realtek ALC887 (Onboard Digital)\>
+(play) pcm8: \<USB audio\> (rec) No devices installed from userspace
 
 1.  sndiod -f rsnd/8
 2.  Test micro avec aucat -o test.wav (+ control-c) mplayer test.wav
@@ -479,7 +468,7 @@ Dans cupswrapper et lpr : tar xvzf data.tar.gz -C / Install **psutils**
 and **linux~base~-c7**: Puis (root) on lance les commande dans postinst
 (modifiée)
 
-``` shell
+``` {.shell}
  sed -i.bak 's/chown lp/chown root/' /opt/brother/Printers/HL1110/inf/setupPrintcap
  sed -i.bak 's/chgrp lp/chgrp daemon/' /opt/brother/Printers/HL1110/inf/setupPrintcap
 /opt/brother/Printers/HL1110/inf/setupPrintcap HL1110 -i USB
@@ -493,12 +482,9 @@ and **linux~base~-c7**: Puis (root) on lance les commande dans postinst
 #  echo "#! /bin/sh"  > /usr/local/bin/brprintconflsr3_HL1110
 # echo "/opt/brother/Printers/HL1110/lpd/brprintconflsr3 -P HL1110" '$''*'           >>/usr/local/bin/brprintconflsr3_HL1110
 #  chmod 755 /usr/local/bin/brprintconflsr3_HL1110
-
 ```
 
 Because it complaints that
 /usr/local/libexec/cups/filter/brother~ldwrapperHL1110~ does not exist :
 
     ln -s /opt/brother/Printers/HL1110/cupswrapper/brother_lpdwrapper_HL1110  /usr/local/libexec/cups/filter
-
-

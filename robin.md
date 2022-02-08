@@ -5,12 +5,12 @@ Candidature : Opérateur forces spéciales (armée de terre - 1ere PMA)
 Nouveaux objectifs :
 
 -   Contrat VOA cette année : 1 an d\'études avec la marine en césure
-    dans l\'école d\'ingénieur, puis finit école d\'ingénieur => choisit
-    spécialité et on y rentre en officie sous contrat CV + letre
+    dans l\'école d\'ingénieur, puis finit école d\'ingénieur =\>
+    choisit spécialité et on y rentre en officie sous contrat CV + letre
     motivéation puis entretien motivation avec officier + psy +/- test
     physiques
 
 Update: entretien téléphonique ok pour officier adjudant (commando et
-aussi pour mines) => 2e phase
+aussi pour mines) =\> 2e phase
 
 -   En 2eme année : officier sous contrat dans la marine

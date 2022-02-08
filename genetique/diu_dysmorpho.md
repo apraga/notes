@@ -2014,9 +2014,11 @@ Decipher
 ici dans un intron -97
 
 
+
 # Phénotype  et gènes dans toubles du spectre autistique - Dr Anna Maruani - 2021-12-03 09h
+
 Troubles envahissants du développement => troubles du neurodeveloppement
-= affecte processus du dev cérébral avec diffiultés dans 1 ou plusieures fonctionc cérébrales
+= affecte processus du dev cérébral avec difficultés dans 1 ou plusieures fonctionc cérébrales
 Contient" DI, TSA, troubles de la communication... cf diapo
 
 ## DSMV : 
@@ -2170,7 +2172,7 @@ Mutation dans gène du kératine [protéine structurelle cette fois]
 Tableaux très variables
 Naissance : 60$ anomales des membres
 dysplaesie ectodermique
-- peau sèche, érosion avec difficulté de cicatrisiaton, dermatite atopique
+- peau sèche, érosion avec difficulté de cicatrisation, dermatite atopique
 Cheveux claire, fin ,
 dysplaise ungueale
 anomalies endtaires

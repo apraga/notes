@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>emacs_tips</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div id="Jump to and from function definition"><h1 id="Jump to and from function definition" class="header"><a href="#Jump to and from function definition">Jump to and from function definition</a></h1></div>
+
+<p>
+M-. (xref-pop-marker-stack): jump to definition M-? (xref-find-references): find all occurences M-, (xref-find-definitions): q
+</p>
+
+<div id="SSH, FTP, sudo"><h1 id="SSH, FTP, sudo" class="header"><a href="#SSH, FTP, sudo">SSH, FTP, sudo</a></h1></div>
+
+<p>
+Use tramp With fish shell, sSh can hangs so I follewed [<a href="https://github.com/oh-my-fish/theme-bobthefish/issues/148">https://github.com/oh-my-fish/theme-bobthefish/issues/148</a> this advice] (<span class="todo">TODO</span>: send a mail about it) and set in ~/.config/fish/fish.config
+</p>
+
+<p>
+&lt;pre&gt;if test &amp;quot;$TERM&amp;quot; = &amp;quot;dumb&amp;quot;
+</p>
+<blockquote>
+exec sh
+</blockquote>
+<p>
+end&lt;/pre&gt;
+For faster access, set a bookmark to the folder &amp;lt;3 Otherwise it's a bit annoying to type
+</p>
+
+<div id="Eshell"><h1 id="Eshell" class="header"><a href="#Eshell">Eshell</a></h1></div>
+
+<p>
+C-c M-b pour completer un buffer (utile pour redirection)
+</p>
+
+<p>
+&lt;pre&gt;rga &amp;quot;test&amp;quot; lol.pdf &amp;gt;&lt;/pre&gt;
+</p>
+<div id="Grep + sed"><h1 id="Grep + sed" class="header"><a href="#Grep + sed">Grep + sed</a></h1></div>
+
+<p>
+Search and edit with ripgrep directly in the result !
+</p>
+
+<ol>
+<li>
+search with ripgrep, for example with <code>SPC s p</code>
+
+<li>
+Put the results in a buffer with <code>C-c C-o</code> (<code>ivy-occur</code>)
+
+<li>
+Edit the buffer with <code>i</code> (<code>ivy-wgrep-change-to-wgrep</code>)
+
+</ol>
+
+<div id="Calc"><h1 id="Calc" class="header"><a href="#Calc">Calc</a></h1></div>
+
+<p>
+Embedded-mode : évalue formule sous le curseur
+</p>
+
+<div id="Mail with mbsync"><h1 id="Mail with mbsync" class="header"><a href="#Mail with mbsync">Mail with mbsync</a></h1></div>
+
+<p>
+! Got several &amp;quot;duplicate ID&amp;quot; after using a systemd service. It's due to moving files (my version of archiving) and the naming scheme. We must use the &amp;quot;alternate&amp;quot; naming scheme to avoid duplicates. Seems to work NB: we should explain with gmail
+</p>
+
+<p>
+Mbsync is really faster when fetching mails the first time.Afterwards, I'm not sure the gain is worth it
+</p>
+
+<div id="KILL Gnus"><h1 id="KILL Gnus" class="header"><a href="#KILL Gnus">KILL Gnus</a></h1></div>
+
+<div id="KILL Gnus-KILL Global"><h2 id="KILL Global" class="header"><a href="#KILL Gnus-KILL Global">KILL Global</a></h2></div>
+
+<p>
+A bit slow with imap Offline usage : notmuch does not work … See <a href="https://ding.gnus.narkive.com/kJo5yKca/nnir-and-notmuch">https://ding.gnus.narkive.com/kJo5yKca/nnir-and-notmuch</a> We have to use mairix
+</p>
+
+<p>
+But works well with news ! <a href="https://emacs.stackexchange.com/questions/38739/how-can-i-subscribe-to-se-rss-feed-using-gnus">https://emacs.stackexchange.com/questions/38739/how-can-i-subscribe-to-se-rss-feed-using-gnus</a> In the end, slower than notmuch inside emacs (start + search) but I prefer it to read news. Trying it at the moment
+</p>
+
+<div id="KILL Gnus-KILL Mairix config"><h2 id="KILL Mairix config" class="header"><a href="#KILL Gnus-KILL Mairix config">KILL Mairix config</a></h2></div>
+
+<p>
+Mairixrc
+</p>
+
+<p>
+&lt;pre&gt;base=~/Mail/
+maildir=gmail/inbox:gmail/archive:free/inbox:free/archive:archive
+mformat=maildir
+database=~/.mairix/database
+mfolder=~/.mairix/mfolder&lt;/pre&gt;
+Warning: not recursive !
+</p>
+
+<p>
+Follow the manual instruction. Important: do not answer &amp;quot;no&amp;quot; for hidden folder (maildir++) !
+</p>
+
+<p>
+&lt;pre&gt;(setq user-mail-address#&amp;quot;XX&amp;quot;
+</p>
+<blockquote>
+user-full-name#&amp;quot;Alexis Praga&amp;quot;)
+</blockquote>
+
+<p>
+(setq gnus-select-method '(nnnil &amp;quot;&amp;quot;))
+(setq gnus-secondary-select-methods
+</p>
+<blockquote>
+;; Reading FSS feeds (not all of them works)
+'((nntp &amp;quot;news.gwene.org&amp;quot;)
+</blockquote>
+<p>
+;; Too slow, we prefer notmuch
+</p>
+<blockquote>
+(nnmaildir &amp;quot;free&amp;quot;
+(directory &amp;quot;~/Mail/free/&amp;quot;))
+(nnmaildir &amp;quot;gmail&amp;quot;
+(directory &amp;quot;~/Mail/gmail/&amp;quot;)))))
+</blockquote>
+
+
+<p>
+;; Does not work
+;;(setq nnir-search-engine 'notmuch)
+;; This start a notmuch request but with the wrong arguments...
+;; &amp;quot;(push (cons 'nnmaildir 'notmuch) nnir-method-default-engines)
+;;
+(setq message-send-mail-function 'message-send-mail-with-sendmail)
+  (setq sendmail-program &amp;quot;/usr/bin/msmtp&amp;quot;)
+</p>
+
+<p>
+(setq mm-text-html-renderer 'gnus-w3m)
+(setq gnus-inhibit-images nil)&lt;/pre&gt;
+</p>
+<div id="KILL Gnus-KILL What about sent mails"><h2 id="KILL What about sent mails" class="header"><a href="#KILL Gnus-KILL What about sent mails">KILL What about sent mails</a></h2></div>
+
+<p>
+Initially, I wanted a copy in a maildir folder. It turns out it's already on Gmail server in both all mail and sent mail. I'm not sure anymore to need a specific &amp;quot;sent&amp;quot; folder for gmail. So I only sync the &amp;quot;sent&amp;quot; folder on my Free account
+</p>
+
+<div id="Post config en jap sur emacs"><h1 id="Post config en jap sur emacs" class="header"><a href="#Post config en jap sur emacs">Post config en jap sur emacs</a></h1></div>
+
+<p>
+Archlinux :
+</p>
+
+<ol>
+<li>
+installer le package &amp;quot;mozc&amp;quot; depuis emacs installer emacs-mozc aussi en activant le flag 'emacs<sub>mozc</sub> = &amp;quot;yes&amp;quot;' (sinon le &amp;quot;helper&amp;quot; n'est pas trouvé)
+
+</ol>
+
+<p>
+Update : mozc is too slow in doom emacs =&amp;gt; activate japanese instead
+</p>
+
+<div id="Torrents with emacs"><h1 id="Torrents with emacs" class="header"><a href="#Torrents with emacs">Torrents with emacs</a></h1></div>
+
+<div id="Torrents with emacs-What works"><h2 id="What works" class="header"><a href="#Torrents with emacs-What works">What works</a></h2></div>
+
+<p>
+Nginx + URL
+</p>
+
+<p>
+&lt;pre&gt;server {
+</p>
+<blockquote>
+listen       8000;
+server_name  localhost;
+</blockquote>
+<blockquote>
+access_log  /var/log/nginx/rtorrent_access.log;
+error_log  /var/log/nginx/rtorrent_error.log;
+</blockquote>
+<blockquote>
+location /RPC2 {
+root /torrents;
+</blockquote>
+<ol>
+<li>
+auth_basic &amp;quot;Restricted&amp;quot;;
+
+<li>
+auth_basic_user_file /etc/nginx/.htpasswd;
+        scgi_pass   127.0.0.1:5000;
+
+<li>
+scgi_pass   unix:/torrents/rtorrent.sock;
+        include     scgi_params;
+    }&lt;/pre&gt;
+
+</ol>
+<p>
+And for rtorrent
+</p>
+
+<p>
+&lt;pre&gt;network.scgi.open_port = 127.0.0.1:5000&lt;/pre&gt;
+And in emacs
+</p>
+
+<p>
+&lt;pre&gt;(setq mentor-rtorrent-external-rpc &amp;quot;<a href="http://127.0.0.1:8000/RPC2&amp;quot;)&lt;/pre&gt;">http://127.0.0.1:8000/RPC2&amp;quot;)&lt;/pre&gt;</a>
+</p>
+<div id="Torrents with emacs-More secure : with a socket"><h2 id="More secure : with a socket" class="header"><a href="#Torrents with emacs-More secure : with a socket">More secure : with a socket</a></h2></div>
+
+<p>
+We create a group to be able to write the socket
+</p>
+
+<p>
+&lt;pre&gt;sudo groupadd rtorrent-socket
+sudo gpasswd -a alex rtorrent-socket
+sudo gpasswd -a nginx rtorrent-socket
+sudo chown -R nginx:rtorrent-socket /torrents/
+sudo chmod 775 -R /torrents/
+su - alex # To be able to start&lt;/pre&gt;
+Rtorrent : hack we need to change both ownership and permissions + daemon mode
+</p>
+
+<p>
+&lt;pre&gt;# For use with emacs with the mentor package
+network.scgi.open_local = /torrents/rtorrent.sock
+</p>
+
+<ol>
+<li>
+Change ownership to propergroup
+
+</ol>
+<p>
+schedule2 = scgi_permission1, 0, 0, &amp;quot;execute.nothrow=chown,alex:rtorrent-socket,/torrents/rtorrent.sock&amp;quot;
+</p>
+<ol>
+<li>
+Make SCGI socket group-writable and secure
+
+</ol>
+<p>
+schedule2 = scgi_permission2, 2, 0, &amp;quot;execute.nothrow=chmod,770,/torrents/rtorrent.sock&amp;quot;
+</p>
+
+<p>
+system.daemon.set = true&lt;/pre&gt;
+Emacs
+</p>
+
+<p>
+&lt;pre&gt;(setq mentor-rtorrent-external-rpc &amp;quot;/torrents/rtorrent.sock&amp;quot;)&lt;/pre&gt;
+Update : it seems to work without nginx with a socket ??
+</p>
+
+<div id="Org mode"><h1 id="Org mode" class="header"><a href="#Org mode">Org mode</a></h1></div>
+
+<div id="Org mode-Export vers beamer : pour gérer des tableaux de grande taille :"><h2 id="Export vers beamer : pour gérer des tableaux de grande taille :" class="header"><a href="#Org mode-Export vers beamer : pour gérer des tableaux de grande taille :">Export vers beamer : pour gérer des tableaux de grande taille :</a></h2></div>
+
+
+<p>
+{|
+! a
+! b
+|-
+| a
+| b
+|}
+</p>
+
+
+<div id="Org mode-Utiliser lulatex"><h2 id="Utiliser lulatex" class="header"><a href="#Org mode-Utiliser lulatex">Utiliser lulatex</a></h2></div>
+
+<p>
+;; lualatex preview (setq org-latex-pdf-process '(&amp;quot;lualatex -shell-escape -interaction nonstopmode %f&amp;quot; &amp;quot;lualatex -shell-escape -interaction nonstopmode %f&amp;quot;)) (Attention à l'ordrer)
+</p>
+
+<div id="Haskell"><h1 id="Haskell" class="header"><a href="#Haskell">Haskell</a></h1></div>
+
+<p>
+Mode mal documenté (avec lsp) C-c C-l pour charger code dans ghci C-c C-z si on perd le popup
+</p>
+
+<div id="Misc"><h1 id="Misc" class="header"><a href="#Misc">Misc</a></h1></div>
+
+<p>
+yas-describe-tables to see snippets
+</p>
+
+<div id="Presentation"><h1 id="Presentation" class="header"><a href="#Presentation">Presentation</a></h1></div>
+
+<div id="Presentation-org mode -&amp;gt; beamer"><h2 id="org mode -&amp;gt; beamer" class="header"><a href="#Presentation-org mode -&amp;gt; beamer">org mode -&amp;gt; beamer</a></h2></div>
+
+<div id="Presentation-org-mode -&amp;gt; reveal.js"><h2 id="org-mode -&amp;gt; reveal.js" class="header"><a href="#Presentation-org-mode -&amp;gt; reveal.js">org-mode -&amp;gt; reveal.js</a></h2></div>
+
+<p>
+&lt;pre&gt;REVEAL_TRANS
+#+OPTIONS: toc:nil
+#+OPTIONS: reveal_width:2100 reveal_height:1000
+#+REVEAL_TRANS: nil
+\****** <span class="todo">TODO</span> DP 1
+\******  DP1
+\******  homme de 54 ans, tabagique au long cours et hypertendu depuis 12 ans (traitement par inhibiteur calcique), consulte
+\****** n médecin traitant pour un épisode isolé d'hématurie macroscopique totale, sans caillot. Il a pour autre antécédent une
+\****** pendicectomie dans l'enfance. L'hémogramme est le suivant : Hb 10,4 g/dL (VGM 78 µm3), GB 8 G/L, plaquettes 247&lt;/pre&gt;
+Puis SPC m e v b
+</p>
+
+<div id="Tramp"><h1 id="Tramp" class="header"><a href="#Tramp">Tramp</a></h1></div>
+
+<dl>
+<dt>SSH + sudo : /ssh:you@remotehost%7Cdoas:: ou /ssh:you@remotehost%7Csudo</dt>
+</dl>
+
+<p>
+Sauvegarder session :
+</p>
+
+<p>
+<a href="https://emacs.stackexchange.com/questions/26560/bookmarking-remote-directories-trampsudo">https://emacs.stackexchange.com/questions/26560/bookmarking-remote-directories-trampsudo</a> (add-to-list 'tramp-default-proxies-alist '(&amp;quot;\\<code>mydomain\\'&amp;quot; &amp;quot;\\</code>root\\'&amp;quot; &amp;quot;/sshx:user@%h:&amp;quot;))
+</p>
+
+<div id="Useful shortcuts:"><h1 id="Useful shortcuts:" class="header"><a href="#Useful shortcuts:">Useful shortcuts:</a></h1></div>
+
+<ul>
+<li>
+C-x C-q in dired to edit the buffer as text &amp;lt;3
+
+<li>
+C-x z to repeat last command, then z (like vim &amp;quot;.&amp;quot;)
+
+</ul>
+
+<p>
+Not so useful
+</p>
+
+<ul>
+<li>
+C-x right/left arrow to switch buffer (I'm not really using it)
+
+</ul>
+
+<div id="Post sur facebook messenger inside emacs"><h1 id="Post sur facebook messenger inside emacs" class="header"><a href="#Post sur facebook messenger inside emacs">Post sur facebook messenger inside emacs</a></h1></div>
+
+<p>
+Requirements
+</p>
+
+<ul>
+<li>
+bitlbee
+
+<li>
+erc
+
+<li>
+bitlbee-facebook
+
+</ul>
+
+<p>
+Config
+</p>
+
+<p>
+&lt;syntaxhighlight lang="lisp"&gt;  ;; ---- ERC
+;; A helper function to auto-start bitlbee
+(defun bitlbee-start ()
+  (interactive)
+  (erc :server "localhost" :port 6667 :nick "alex" :password "sharingan"))
+</p>
+
+<p>
+;; Here we start ERC at boot, with the password here for minimal coding
+(use-package! erc
+  ;; Bitlbee by default
+  :commands (bitlbee-start)
+  :config
+  ;; Autojoin must be done inside bitlbee directly
+  (setq erc-hide-list '("JOIN" "PART" "QUIT" "NICK"))
+)&lt;/syntaxhighlight&gt;
+LISP
+</p>
+
+<p>
+Result
+</p>
+
+<p>
+M-x bitlbee-start start bitlbee. You need to follow these instuctions <a href="https://wiki.bitlbee.org/HowtoFacebookMQTT">https://wiki.bitlbee.org/HowtoFacebookMQTT</a> &amp;gt; account add facebook &amp;lt;email&amp;gt; &amp;lt;password&amp;gt; &amp;gt; account facebook on &amp;gt; fbjoin facebook &amp;lt;index&amp;gt; &amp;lt;channel&amp;gt; The index is given either by fbchats facebook or must be copying manually from facebook
+</p>
+
+<p>
+If you want to autojoin a channel, it must be done in bitlbee direcly channel blabla set auto<sub>join</sub> true NB the config file are most likely in /var/lib/bitlbee/$USER.xml
+</p>
+
+</body>
+</html>

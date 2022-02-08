@@ -1,0 +1,2158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>todo</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div id="Autres"><h1 id="Autres" class="header"><a href="#Autres">Autres</a></h1></div>
+
+<ul>
+<li>
+☐ Vérifier durée concession cimetière pour thierry {#vérifier-durée-concession-cimetière-pour-thierry}
+
+</ul>
+
+<div id="Banques"><h1 id="Banques" class="header"><a href="#Banques">Banques</a></h1></div>
+
+<p>
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;☒ Assurance-vie Boursorama avec vente de la maison&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;☐ Transfert à Besançon CEL, Livret B Résumé: À Besançon, ouvrir un compte support épargne et&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;clôturer livret B de Metz et l'y transférer&lt;/li&gt;
+&lt;li&gt;idem pour CEL ou bien simplement le transférer pour conserver avantages&lt;/li&gt;&lt;/ul&gt;
+</p>
+
+<p>
+&lt;p&gt;Les démarches à Metz se font à distance via la CE de Besançon Livret B: 30k CEL 15k Placement après la vente : assurance-vie ou ouvrir un nouveau PEL (0.75% intérêt) Apparement, assurance-vie peut ne pas être bloqué sur 8 ans. Une partie est sur des fonds &amp;quot;sécurisés&amp;quot;, l'autre en bourse.&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;
+</p>
+
+<div id="Blog"><h1 id="Blog" class="header"><a href="#Blog">Blog</a></h1></div>
+
+<ul>
+<li>
+☐ emacs_tips.org
+
+<li>
+☐ Life in emacs .. or in vim ? <a href="https://www.reddit.com/r/emacs/comments/a5j3lc/emacs_key_binding_conventions_and_why_you_should/">https://www.reddit.com/r/emacs/comments/a5j3lc/emacs_key_binding_conventions_and_why_you_should/</a>
+
+<li>
+☐ Xmonad + conky + dzen {#xmonad-conky-dzen}
+
+<li>
+☐ Pass on windows {#pass-on-windows} Install gopass : get the .zip, put the exe somewhere and add it to the path. Then edit %APPDATA%/pasff .bat python &amp;quot;%APPDATA%.py&amp;quot; %* And python file in the same directory. Replace pass with gopass and &amp;quot;show&amp;quot; with &amp;quot;ls&amp;quot; (when there are no arguments)
+
+</ul>
+
+<div id="FreeBSD ports"><h1 id="FreeBSD ports" class="header"><a href="#FreeBSD ports">FreeBSD ports</a></h1></div>
+
+<ul>
+<li>
+☐ aeso ## sphinext-opengraph
+
+<li>
+☒ Version avec LICENSE et tests sur Github {#version-avec-license-et-tests-sur-github}
+
+<li>
+☐ Version avec LICENSE et tests (CHEESESHOP) {#version-avec-license-et-tests-cheeseshop ordered=“t”}
+
+</ul>
+<p>
+** [<a href="https://github.com/wpilibsuite/sphinxext-opengraph/pull/44">https://github.com/wpilibsuite/sphinxext-opengraph/pull/44</a> PR upstream]
+** ☐ MAJ patch
+</p>
+
+<div id="FreeBSD ports-Notes"><h2 id="Notes" class="header"><a href="#FreeBSD ports-Notes">Notes</a></h2></div>
+
+<div id="FreeBSD ports-Notes-Vérifier avec portlint, formatter avec portfmt"><h3 id="Vérifier avec portlint, formatter avec portfmt" class="header"><a href="#FreeBSD ports-Notes-Vérifier avec portlint, formatter avec portfmt">Vérifier avec portlint, formatter avec portfmt</a></h3></div>
+
+<div id="FreeBSD ports-Notes-PR"><h3 id="PR" class="header"><a href="#FreeBSD ports-Notes-PR">PR</a></h3></div>
+
+<ul>
+<li>
+Mettre le changlog dans URL
+
+<li>
+Ne pas utiliser PORTREVISION si DISTVERSION est incrémenté (car sert aux patches freebsd)
+
+<li>
+Cocher &amp;quot;maintainer approval&amp;quot; dans le patch (et pas maintainer-feedback !)
+
+</ul>
+
+<div id="FreeBSD ports-Notes-Haskell"><h3 id="Haskell" class="header"><a href="#FreeBSD ports-Notes-Haskell">Haskell</a></h3></div>
+
+<ul>
+<li>
+Tutorial:
+
+</ul>
+
+<p>
+<a href="https://docs.freebsd.org/en/books/porters-handbook/special/#using-cabal">https://docs.freebsd.org/en/books/porters-handbook/special/#using-cabal</a>
+</p>
+
+<ul>
+<li>
+&amp;quot;when updating from something like 1.5.0.0 to 1.5.0.1 it is usually sufficient to just bump the PORTVERSION. No need to refresh the whole USE<sub>CABAL</sub> in this case.&amp;quot;
+
+<li>
+11.4 and 12.2 are enough (no need for aarch64)
+
+</ul>
+
+<p>
+&lt;ol style="list-style-type: decimal;"&gt;
+&lt;li&gt;&lt;p&gt;Git-annex&lt;/p&gt;
+&lt;p&gt;&amp;quot;When updating such ports I do this:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Run make config and turn all options OFF.&lt;/li&gt;
+&lt;li&gt;Regenerate common USE<sub>CABAL</sub>.&lt;/li&gt;
+&lt;li&gt;See if things build.&lt;/li&gt;
+&lt;li&gt;Then start enabling options one by one and adjust optionalized dependencies until it builds.&lt;/li&gt;&lt;/ul&gt;
+</p>
+
+<p>
+&lt;p&gt;So yes, hs-git-annex is quite cumbersome port in this regard.&amp;quot;&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;
+</p>
+
+<div id="FreeBSD ports-Notes-Build for all jails"><h3 id="Build for all jails" class="header"><a href="#FreeBSD ports-Notes-Build for all jails">Build for all jails</a></h3></div>
+
+<p>
+&lt;pre class="eshell"&gt;Welcome to the Emacs shell
+</p>
+
+<p>
+~/projects/blog $ for i in 114Ramd64 122Ramd64 130Raarch64 130Ramd64 {
+ poudriere testport -j $i -p default -o x11/kitty }
+&lt;/pre&gt;
+</p>
+<div id="Japanese"><h1 id="Japanese" class="header"><a href="#Japanese">Japanese</a></h1></div>
+
+<div id="Japanese-First grade (80 kanji)"><h2 id="First grade (80 kanji)" class="header"><a href="#Japanese-First grade (80 kanji)">First grade (80 kanji)</a></h2></div>
+
+<ul>
+<li>
+☒ 一
+
+<li>
+☒ 二
+
+<li>
+☒ 三
+
+<li>
+☒ 四
+
+<li>
+☒ 五
+
+<li>
+☒ 六
+
+<li>
+☒ 七
+
+<li>
+☒ 八
+
+<li>
+☒ 九
+
+<li>
+☒ 十
+
+<li>
+☒ 百
+
+<li>
+☒ 千
+
+<li>
+☒ 上
+
+<li>
+☒ 下
+
+<li>
+☐ 左
+
+<li>
+☐ 右
+
+<li>
+☐ 中
+
+<li>
+☐ 大
+
+<li>
+☒ 小
+
+<li>
+☐ 月
+
+<li>
+☐ 日
+
+<li>
+☐ 年
+
+<li>
+☐ 早
+
+<li>
+☐ 木
+
+<li>
+☐ 林
+
+<li>
+☐ 山
+
+<li>
+☐ 川
+
+<li>
+☐ 土
+
+<li>
+☐ 空
+
+<li>
+☐ 田
+
+<li>
+☐ 天
+
+<li>
+☐ 生
+
+<li>
+☐ 花
+
+<li>
+☐ 草
+
+<li>
+☐ 虫
+
+<li>
+☐ 犬
+
+<li>
+☐ 人
+
+<li>
+☐ 名
+
+<li>
+☐ 女
+
+<li>
+☐ 男
+
+<li>
+☐ 子
+
+<li>
+☐ 目
+
+<li>
+☐ 耳
+
+<li>
+☐ 口
+
+<li>
+☐ 手
+
+<li>
+☐ 足
+
+<li>
+☐ 見
+
+<li>
+☐ 音
+
+<li>
+☐ 力
+
+<li>
+☐ 気
+
+<li>
+☐ 円
+
+<li>
+☐ 入
+
+<li>
+☐ 出
+
+<li>
+☐ 立
+
+<li>
+☐ 休
+
+<li>
+☐ 先
+
+<li>
+☐ 夕
+
+<li>
+☐ 本
+
+<li>
+☐ 文
+
+<li>
+☐ 字
+
+<li>
+☐ 学
+
+<li>
+☐ 校
+
+<li>
+☐ 村
+
+<li>
+☐ 町
+
+<li>
+☐ 森
+
+<li>
+☐ 正
+
+<li>
+☐ 水
+
+<li>
+☐ 火
+
+<li>
+☐ 玉
+
+<li>
+☐ 王
+
+<li>
+☐ 石
+
+<li>
+☐ 竹
+
+<li>
+☐ 糸
+
+<li>
+☐ 貝
+
+<li>
+☐ 車
+
+<li>
+☐ 金
+
+<li>
+☒ 雨
+
+<li>
+☐ 赤
+
+<li>
+☐ 青
+
+</ul>
+
+<div id="Japanese-First grade (80 kanji)-Second grade"><h3 id="Second grade" class="header"><a href="#Japanese-First grade (80 kanji)-Second grade">Second grade</a></h3></div>
+
+<ul>
+<li>
+☐ 数
+
+<li>
+☐ 多
+
+<li>
+☐ 少
+
+<li>
+☐ 万
+
+<li>
+☐ 半
+
+<li>
+☐ 形
+
+<li>
+☐ 太
+
+<li>
+☐ 細
+
+<li>
+☐ 広
+
+<li>
+☐ 長
+
+<li>
+☐ 点
+
+<li>
+☐ 丸
+
+<li>
+☐ 交
+
+<li>
+☐ 光
+
+<li>
+☐ 角
+
+<li>
+☐ 計
+
+<li>
+☐ 直
+
+<li>
+☐ 線
+
+<li>
+☐ 矢
+
+<li>
+☐ 弱
+
+<li>
+☐ 強
+
+<li>
+☐ 高
+
+<li>
+☐ 同
+
+<li>
+☐ 親
+
+<li>
+☐ 母
+
+<li>
+☐ 父
+
+<li>
+☐ 姉
+
+<li>
+☐ 兄
+
+<li>
+☐ 弟
+
+<li>
+☐ 妹
+
+<li>
+☐ 自
+
+<li>
+☐ 友
+
+<li>
+☐ 体
+
+<li>
+☐ 毛
+
+<li>
+☐ 頭
+
+<li>
+☐ 顔
+
+<li>
+☐ 首
+
+<li>
+☐ 心
+
+<li>
+☐ 時
+
+<li>
+☐ 曜
+
+<li>
+☐ 朝
+
+<li>
+☐ 昼
+
+<li>
+☐ 夜
+
+<li>
+☐ 分
+
+<li>
+☐ 週
+
+<li>
+☐ 春
+
+<li>
+☐ 夏
+
+<li>
+☐ 秋
+
+<li>
+☐ 冬
+
+<li>
+☒ 今
+
+<li>
+☐ 新
+
+<li>
+☐ 古
+
+<li>
+☐ 間
+
+<li>
+☐ 方
+
+<li>
+☐ 北
+
+<li>
+☐ 南
+
+<li>
+☐ 東
+
+<li>
+☐ 西
+
+<li>
+☐ 遠
+
+<li>
+☐ 近
+
+<li>
+☒ 前
+
+<li>
+☐ 後
+
+<li>
+☐ 内
+
+<li>
+☐ 外
+
+<li>
+☐ 場
+
+<li>
+☒ 地
+
+<li>
+☐ 国
+
+<li>
+☐ 園
+
+<li>
+☐ 谷
+
+<li>
+☐ 野
+
+<li>
+☐ 原
+
+<li>
+☐ 里
+
+<li>
+☐ 市
+
+<li>
+☐ 京
+
+<li>
+☐ 風
+
+<li>
+☐ 雪
+
+<li>
+☐ 雲
+
+<li>
+☐ 池
+
+<li>
+☐ 海
+
+<li>
+☐ 岩
+
+<li>
+☐ 星
+
+<li>
+☐ 室
+
+<li>
+☐ 戸
+
+<li>
+☐ 家
+
+<li>
+☐ 寺
+
+<li>
+☐ 通
+
+<li>
+☐ 門
+
+<li>
+☐ 道
+
+<li>
+☐ 話
+
+<li>
+☐ 言
+
+<li>
+☐ 答
+
+<li>
+☐ 声
+
+<li>
+☐ 聞
+
+<li>
+☐ 語
+
+<li>
+☐ 読
+
+<li>
+☐ 書
+
+<li>
+☐ 記
+
+<li>
+☐ 紙
+
+<li>
+☐ 画
+
+<li>
+☐ 絵
+
+<li>
+☐ 図
+
+<li>
+☐ 工
+
+<li>
+☐ 教
+
+<li>
+☐ 晴
+
+<li>
+☐ 思
+
+<li>
+☐ 考
+
+<li>
+☐ 知
+
+<li>
+☐ 才
+
+<li>
+☐ 理
+
+<li>
+☐ 算
+
+<li>
+☐ 作
+
+<li>
+☐ 元
+
+<li>
+☐ 食
+
+<li>
+☐ 肉
+
+<li>
+☐ 馬
+
+<li>
+☐ 牛
+
+<li>
+☐ 魚
+
+<li>
+☒ 鳥
+
+<li>
+☐ 羽
+
+<li>
+☐ 鳴
+
+<li>
+☐ 麦
+
+<li>
+☐ 米
+
+<li>
+☐ 茶
+
+<li>
+☐ 色
+
+<li>
+☐ 黄
+
+<li>
+☐ 黒
+
+<li>
+☐ 来
+
+<li>
+☐ 行
+
+<li>
+☐ 帰
+
+<li>
+☐ 歩
+
+<li>
+☐ 走
+
+<li>
+☐ 止
+
+<li>
+☐ 活
+
+<li>
+☐ 店
+
+<li>
+☐ 買
+
+<li>
+☐ 売
+
+<li>
+☐ 午
+
+<li>
+☐ 汽
+
+<li>
+☐ 弓
+
+<li>
+☐ 回
+
+<li>
+☐ 会
+
+<li>
+☐ 組
+
+<li>
+☐ 船
+
+<li>
+☐ 明
+
+<li>
+☐ 社
+
+<li>
+☐ 切
+
+<li>
+☐ 電
+
+<li>
+☐ 毎
+
+<li>
+☐ 合
+
+<li>
+☐ 当
+
+<li>
+☐ 台
+
+<li>
+☐ 楽
+
+<li>
+☐ 公
+
+<li>
+☐ 引
+
+<li>
+☐ 科
+
+<li>
+☐ 歌
+
+<li>
+☐ 刀
+
+<li>
+☐ 番
+
+<li>
+☐ 用
+
+<li>
+☐ 何
+
+</ul>
+
+<div id="Japanese-First grade (80 kanji)-Third grade"><h3 id="Third grade" class="header"><a href="#Japanese-First grade (80 kanji)-Third grade">Third grade</a></h3></div>
+
+<ul>
+<li>
+☐ 丁
+
+<li>
+☐ 世
+
+<li>
+☐ 両
+
+<li>
+☐ 主
+
+<li>
+☐ 乗
+
+<li>
+☐ 予
+
+<li>
+☐ 事
+
+<li>
+☐ 仕
+
+<li>
+☐ 他
+
+<li>
+☐ 代
+
+<li>
+☐ 住
+
+<li>
+☐ 使
+
+<li>
+☐ 係
+
+<li>
+☐ 倍
+
+<li>
+☐ 全
+
+<li>
+☐ 具
+
+<li>
+☐ 写
+
+<li>
+☐ 列
+
+<li>
+☐ 助
+
+<li>
+☐ 勉
+
+<li>
+☐ 動
+
+<li>
+☐ 勝
+
+<li>
+☐ 化
+
+<li>
+☐ 区
+
+<li>
+☐ 医
+
+<li>
+☐ 去
+
+<li>
+☐ 反
+
+<li>
+☐ 取
+
+<li>
+☐ 受
+
+<li>
+☐ 号
+
+<li>
+☐ 向
+
+<li>
+☐ 君
+
+<li>
+☐ 味
+
+<li>
+☐ 命
+
+<li>
+☐ 和
+
+<li>
+☐ 品
+
+<li>
+☐ 員
+
+<li>
+☐ 商
+
+<li>
+☐ 問
+
+<li>
+☐ 坂
+
+<li>
+☐ 央
+
+<li>
+☐ 始
+
+<li>
+☐ 委
+
+<li>
+☐ 守
+
+<li>
+☐ 安
+
+<li>
+☐ 定
+
+<li>
+☐ 実
+
+<li>
+☐ 客
+
+<li>
+☐ 宮
+
+<li>
+☐ 宿
+
+<li>
+☐ 寒
+
+<li>
+☐ 対
+
+<li>
+☐ 局
+
+<li>
+☐ 屋
+
+<li>
+☐ 岸
+
+<li>
+☐ 島
+
+<li>
+☐ 州
+
+<li>
+☐ 帳
+
+<li>
+☐ 平
+
+<li>
+☐ 幸
+
+<li>
+☐ 度
+
+<li>
+☐ 庫
+
+<li>
+☐ 庭
+
+<li>
+☐ 式
+
+<li>
+☐ 役
+
+<li>
+☐ 待
+
+<li>
+☐ 急
+
+<li>
+☐ 息
+
+<li>
+☐ 悪
+
+<li>
+☐ 悲
+
+<li>
+☐ 想
+
+<li>
+☐ 意
+
+<li>
+☐ 感
+
+<li>
+☐ 所
+
+<li>
+☐ 打
+
+<li>
+☐ 投
+
+<li>
+☐ 拾
+
+<li>
+☐ 持
+
+<li>
+☐ 指
+
+<li>
+☐ 放
+
+<li>
+☐ 整
+
+<li>
+☐ 旅
+
+<li>
+☐ 族
+
+<li>
+☐ 昔
+
+<li>
+☐ 昭
+
+<li>
+☐ 暑
+
+<li>
+☐ 暗
+
+<li>
+☐ 曲
+
+<li>
+☐ 有
+
+<li>
+☐ 服
+
+<li>
+☐ 期
+
+<li>
+☐ 板
+
+<li>
+☐ 柱
+
+<li>
+☐ 根
+
+<li>
+☐ 植
+
+<li>
+☐ 業
+
+<li>
+☐ 様
+
+<li>
+☐ 横
+
+<li>
+☐ 橋
+
+<li>
+☐ 次
+
+<li>
+☐ 歯
+
+<li>
+☐ 死
+
+<li>
+☐ 氷
+
+<li>
+☐ 決
+
+<li>
+☐ 油
+
+<li>
+☐ 波
+
+<li>
+☐ 注
+
+<li>
+☐ 泳
+
+<li>
+☐ 洋
+
+<li>
+☐ 流
+
+<li>
+☐ 消
+
+<li>
+☐ 深
+
+<li>
+☐ 温
+
+<li>
+☐ 港
+
+<li>
+☐ 湖
+
+<li>
+☐ 湯
+
+<li>
+☐ 漢
+
+<li>
+☐ 炭
+
+<li>
+☐ 物
+
+<li>
+☐ 球
+
+<li>
+☐ 由
+
+<li>
+☐ 申
+
+<li>
+☐ 界
+
+<li>
+☐ 畑
+
+<li>
+☐ 病
+
+<li>
+☐ 発
+
+<li>
+☐ 登
+
+<li>
+☐ 皮
+
+<li>
+☐ 皿
+
+<li>
+☐ 相
+
+<li>
+☐ 県
+
+<li>
+☐ 真
+
+<li>
+☐ 着
+
+<li>
+☐ 短
+
+<li>
+☐ 研
+
+<li>
+☐ 礼
+
+<li>
+☐ 神
+
+<li>
+☐ 祭
+
+<li>
+☐ 福
+
+<li>
+☐ 秒
+
+<li>
+☐ 究
+
+<li>
+☐ 章
+
+<li>
+☐ 童
+
+<li>
+☐ 笛
+
+<li>
+☐ 第
+
+<li>
+☐ 筆
+
+<li>
+☐ 等
+
+<li>
+☐ 箱
+
+<li>
+☐ 級
+
+<li>
+☐ 終
+
+<li>
+☐ 緑
+
+<li>
+☐ 練
+
+<li>
+☐ 羊
+
+<li>
+☐ 美
+
+<li>
+☐ 習
+
+<li>
+☐ 者
+
+<li>
+☐ 育
+
+<li>
+☐ 苦
+
+<li>
+☐ 荷
+
+<li>
+☐ 落
+
+<li>
+☐ 葉
+
+<li>
+☐ 薬
+
+<li>
+☐ 血
+
+<li>
+☐ 表
+
+<li>
+☐ 詩
+
+<li>
+☐ 調
+
+<li>
+☐ 談
+
+<li>
+☐ 豆
+
+<li>
+☐ 負
+
+<li>
+☐ 起
+
+<li>
+☐ 路
+
+<li>
+☐ 身
+
+<li>
+☐ 転
+
+<li>
+☐ 軽
+
+<li>
+☐ 農
+
+<li>
+☐ 返
+
+<li>
+☐ 追
+
+<li>
+☐ 送
+
+<li>
+☐ 速
+
+<li>
+☐ 進
+
+<li>
+☐ 遊
+
+<li>
+☐ 運
+
+<li>
+☐ 部
+
+<li>
+☐ 都
+
+<li>
+☐ 配
+
+<li>
+☐ 酒
+
+<li>
+☐ 重
+
+<li>
+☒ 鉄
+
+<li>
+☐ 銀
+
+<li>
+☐ 開
+
+<li>
+☐ 院
+
+<li>
+☐ 陽
+
+<li>
+☐ 階
+
+<li>
+☐ 集
+
+<li>
+☐ 面
+
+<li>
+☐ 題
+
+<li>
+☐ 飲
+
+<li>
+☐ 館
+
+<li>
+☐ 駅
+
+<li>
+☐ 鼻
+
+</ul>
+
+<div id="Japanese-First grade (80 kanji)-Fourth grade"><h3 id="Fourth grade" class="header"><a href="#Japanese-First grade (80 kanji)-Fourth grade">Fourth grade</a></h3></div>
+
+<ul>
+<li>
+☐ 不
+
+<li>
+☐ 争
+
+<li>
+☐ 付
+
+<li>
+☐ 令
+
+<li>
+☒ 以
+
+<li>
+☐ 仲
+
+<li>
+☐ 伝
+
+<li>
+☐ 位
+
+<li>
+☐ 低
+
+<li>
+☐ 例
+
+<li>
+☐ 便
+
+<li>
+☐ 信
+
+<li>
+☐ 倉
+
+<li>
+☐ 候
+
+<li>
+☐ 借
+
+<li>
+☐ 停
+
+<li>
+☐ 健
+
+<li>
+☐ 側
+
+<li>
+☐ 働
+
+<li>
+☐ 億
+
+<li>
+☐ 兆
+
+<li>
+☐ 児
+
+<li>
+☐ 共
+
+<li>
+☐ 兵
+
+<li>
+☐ 典
+
+<li>
+☐ 冷
+
+<li>
+☐ 初
+
+<li>
+☐ 別
+
+<li>
+☐ 利
+
+<li>
+☐ 刷
+
+<li>
+☐ 副
+
+<li>
+☐ 功
+
+<li>
+☐ 加
+
+<li>
+☐ 努
+
+<li>
+☐ 労
+
+<li>
+☐ 勇
+
+<li>
+☐ 包
+
+<li>
+☐ 卒
+
+<li>
+☐ 協
+
+<li>
+☐ 単
+
+<li>
+☐ 博
+
+<li>
+☐ 印
+
+<li>
+☐ 参
+
+<li>
+☐ 史
+
+<li>
+☐ 司
+
+<li>
+☐ 各
+
+<li>
+☐ 告
+
+<li>
+☐ 周
+
+<li>
+☐ 唱
+
+<li>
+☐ 喜
+
+<li>
+☐ 器
+
+<li>
+☐ 囲
+
+<li>
+☐ 固
+
+<li>
+☐ 型
+
+<li>
+☐ 堂
+
+<li>
+☐ 塩
+
+<li>
+☐ 士
+
+<li>
+☐ 変
+
+<li>
+☐ 夫
+
+<li>
+☐ 失
+
+<li>
+☐ 好
+
+<li>
+☐ 季
+
+<li>
+☐ 孫
+
+<li>
+☐ 完
+
+<li>
+☒ 官
+
+<li>
+☐ 害
+
+<li>
+☐ 察
+
+<li>
+☐ 巣
+
+<li>
+☐ 差
+
+<li>
+☐ 希
+
+<li>
+☐ 席
+
+<li>
+☐ 帯
+
+<li>
+☐ 底
+
+<li>
+☐ 府
+
+<li>
+☐ 康
+
+<li>
+☐ 建
+
+<li>
+☐ 径
+
+<li>
+☐ 徒
+
+<li>
+☐ 得
+
+<li>
+☐ 必
+
+<li>
+☐ 念
+
+<li>
+☐ 愛
+
+<li>
+☐ 成
+
+<li>
+☐ 戦
+
+<li>
+☐ 折
+
+<li>
+☐ 挙
+
+<li>
+☐ 改
+
+<li>
+☐ 救
+
+<li>
+☐ 敗
+
+<li>
+☐ 散
+
+<li>
+☐ 料
+
+<li>
+☐ 旗
+
+<li>
+☐ 昨
+
+<li>
+☐ 景
+
+<li>
+☐ 最
+
+<li>
+☐ 望
+
+<li>
+☐ 未
+
+<li>
+☐ 末
+
+<li>
+☐ 札
+
+<li>
+☐ 材
+
+<li>
+☐ 束
+
+<li>
+☐ 松
+
+<li>
+☐ 果
+
+<li>
+☐ 栄
+
+<li>
+☐ 案
+
+<li>
+☐ 梅
+
+<li>
+☐ 械
+
+<li>
+☐ 極
+
+<li>
+☐ 標
+
+<li>
+☐ 機
+
+<li>
+☐ 欠
+
+<li>
+☐ 歴
+
+<li>
+☐ 残
+
+<li>
+☐ 殺
+
+<li>
+☐ 毒
+
+<li>
+☐ 氏
+
+<li>
+☐ 民
+
+<li>
+☐ 求
+
+<li>
+☐ 治
+
+<li>
+☐ 法
+
+<li>
+☐ 泣
+
+<li>
+☐ 浅
+
+<li>
+☐ 浴
+
+<li>
+☐ 清
+
+<li>
+☐ 満
+
+<li>
+☐ 漁
+
+<li>
+☐ 灯
+
+<li>
+☐ 無
+
+<li>
+☐ 然
+
+<li>
+☐ 焼
+
+<li>
+☐ 照
+
+<li>
+☐ 熱
+
+<li>
+☐ 牧
+
+<li>
+☐ 特
+
+<li>
+☐ 産
+
+<li>
+☐ 的
+
+<li>
+☐ 省
+
+<li>
+☐ 祝
+
+<li>
+☐ 票
+
+<li>
+☐ 種
+
+<li>
+☐ 積
+
+<li>
+☐ 競
+
+<li>
+☐ 笑
+
+<li>
+☐ 管
+
+<li>
+☐ 節
+
+<li>
+☐ 粉
+
+<li>
+☐ 紀
+
+<li>
+☐ 約
+
+<li>
+☐ 結
+
+<li>
+☐ 給
+
+<li>
+☐ 続
+
+<li>
+☐ 置
+
+<li>
+☐ 老
+
+<li>
+☐ 胃
+
+<li>
+☐ 脈
+
+<li>
+☐ 腸
+
+<li>
+☐ 臣
+
+<li>
+☐ 航
+
+<li>
+☐ 良
+
+<li>
+☐ 芸
+
+<li>
+☐ 芽
+
+<li>
+☐ 英
+
+<li>
+☐ 菜
+
+<li>
+☐ 街
+
+<li>
+☐ 衣
+
+<li>
+☐ 要
+
+<li>
+☐ 覚
+
+<li>
+☐ 観
+
+<li>
+☐ 訓
+
+<li>
+☐ 試
+
+<li>
+☐ 説
+
+<li>
+☐ 課
+
+<li>
+☐ 議
+
+<li>
+☐ 象
+
+<li>
+☐ 貨
+
+<li>
+☐ 貯
+
+<li>
+☐ 費
+
+<li>
+☐ 賞
+
+<li>
+☐ 軍
+
+<li>
+☒ 輪
+
+<li>
+☐ 辞
+
+<li>
+☐ 辺
+
+<li>
+☐ 連
+
+<li>
+☐ 達
+
+<li>
+☐ 選
+
+<li>
+☐ 郡
+
+<li>
+☐ 量
+
+<li>
+☐ 録
+
+<li>
+☐ 鏡
+
+<li>
+☐ 関
+
+<li>
+☐ 陸
+
+<li>
+☐ 隊
+
+<li>
+☐ 静
+
+<li>
+☐ 順
+
+<li>
+☐ 願
+
+<li>
+☐ 類
+
+<li>
+☐ 飛
+
+<li>
+☐ 飯
+
+<li>
+☐ 養
+
+<li>
+☐ 験
+
+</ul>
+
+<div id="Maison"><h1 id="Maison" class="header"><a href="#Maison">Maison</a></h1></div>
+
+<div id="Maison-Résiliation"><h2 id="Résiliation" class="header"><a href="#Maison-Résiliation">Résiliation</a></h2></div>
+
+<div id="Maison-Résiliation-WAIT Eau"><h3 id="WAIT Eau" class="header"><a href="#Maison-Résiliation-WAIT Eau">WAIT Eau</a></h3></div>
+
+<p>
+Les acheteurs reprendront le contrat pour éviter des frais des 2 côtés. Rien à faire.
+</p>
+
+<div id="Maison-Résiliation-WAIT Assurance"><h3 id="WAIT Assurance" class="header"><a href="#Maison-Résiliation-WAIT Assurance">WAIT Assurance</a></h3></div>
+
+<p>
+Contrat prolongé 1 mois sans en refaire un nouveau
+</p>
+
+<div id="Projets"><h1 id="Projets" class="header"><a href="#Projets">Projets</a></h1></div>
+
+<div id="Projets-org-nutrition Tracker de calories (lisp)"><h2 id="org-nutrition Tracker de calories (lisp)" class="header"><a href="#Projets-org-nutrition Tracker de calories (lisp)">org-nutrition Tracker de calories (lisp)</a></h2></div>
+
+<div id="Projets-org-nutrition Tracker de calories (lisp)-Offline ?"><h3 id="Offline ?" class="header"><a href="#Projets-org-nutrition Tracker de calories (lisp)-Offline ?">Offline ?</a></h3></div>
+
+<p>
+&lt;ol style="list-style-type: decimal;"&gt;
+&lt;li&gt;&lt;p&gt;Data&lt;/p&gt;
+&lt;p&gt;<a href="https://fdc.nal.usda.gov/download-datasets.html">https://fdc.nal.usda.gov/download-datasets.html</a> Notamment : full <a href="https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_csv_2021-04-28.zip&lt;/p&gt;&lt;/li&gt;">https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_csv_2021-04-28.zip&lt;/p&gt;&lt;/li&gt;</a>
+&lt;li&gt;&lt;p&gt;&lt;span class="todo <span class="todo">TODO</span>"&gt;<span class="todo">TODO</span>&lt;/span&gt; Télécharger et convertir CSV en SQL&lt;/p&gt;
+&lt;p&gt;CSV <a href="https://github.com/mrc/el-csv">https://github.com/mrc/el-csv</a> SQL <a href="https://github.com/skeeto/emacsql&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;">https://github.com/skeeto/emacsql&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;</a>
+</p>
+
+<div id="Projets-org-nutrition Tracker de calories (lisp)-KILL REST ?"><h3 id="KILL REST ?" class="header"><a href="#Projets-org-nutrition Tracker de calories (lisp)-KILL REST ?">KILL REST ?</a></h3></div>
+
+<p>
+<a href="https://tkf.github.io/emacs-request/">https://tkf.github.io/emacs-request/</a> <a href="https://fdc.nal.usda.gov/api-guide.html">https://fdc.nal.usda.gov/api-guide.html</a>
+</p>
+
+<div id="Projets-org-nutrition Tracker de calories (lisp)-KILL Comparer REST et offline en performances"><h3 id="KILL Comparer REST et offline en performances" class="header"><a href="#Projets-org-nutrition Tracker de calories (lisp)-KILL Comparer REST et offline en performances">KILL Comparer REST et offline en performances</a></h3></div>
+
+<p>
+REST: search renvoie vraiment trop de résultats… Plus logique de le faire avec le CSV mais les données sont éparpillées
+</p>
+
+<div id="Projets-org-nutrition Tracker de calories (lisp)-&lt;span class=&quot;todo TODO&quot;&gt;TODO&lt;/span&gt; comprendr les données"><h3 id="&lt;span class=&quot;todo TODO&quot;&gt;TODO&lt;/span&gt; comprendr les données" class="header"><a href="#Projets-org-nutrition Tracker de calories (lisp)-&lt;span class=&quot;todo TODO&quot;&gt;TODO&lt;/span&gt; comprendr les données">&lt;span class="todo <span class="todo">TODO</span>"&gt;<span class="todo">TODO</span>&lt;/span&gt; comprendr les données</a></h3></div>
+
+<p>
+&lt;ol style="list-style-type: decimal;"&gt;
+&lt;li&gt;&lt;p&gt;Exploration&lt;/p&gt;
+&lt;p&gt;Doc: <a href="https://fdc.nal.usda.gov/portal-data/external/dataDictionary">https://fdc.nal.usda.gov/portal-data/external/dataDictionary</a> food.csv: contient l'identifiant (fdc<sub>id</sub>) et le nom (description) ex: &amp;quot;fdc<sub>id</sub>&amp;quot;,&amp;quot;data<sub>type</sub>&amp;quot;,&amp;quot;description&amp;quot;,&amp;quot;food<sub>categoryid</sub>&amp;quot;,&amp;quot;publication<sub>date</sub>&amp;quot;&lt;/p&gt;
+&lt;p&gt;food<sub>nutrient</sub>.csv contient l'information intéressante pour l'ID (fdc<sub>id</sub>) &amp;quot;id&amp;quot;,&amp;quot;fdc<sub>id</sub>&amp;quot;,&amp;quot;nutrient<sub>id</sub>&amp;quot;,&amp;quot;amount&amp;quot;,&amp;quot;data<sub>points</sub>&amp;quot;,&amp;quot;derivation<sub>id</sub>&amp;quot;,&amp;quot;min&amp;quot;,&amp;quot;max&amp;quot;,&amp;quot;median&amp;quot;,&amp;quot;footnote&amp;quot;,&amp;quot;min<sub>yearacquired</sub>&amp;quot;&lt;/p&gt;
+&lt;p&gt;Exemple : huile WESSON (fdc<sub>id</sub> = 1105904) : foods.csv: &amp;quot;1105904&amp;quot;,&amp;quot;branded<sub>food</sub>&amp;quot;,&amp;quot;WESSON Vegetable Oil 1 GAL&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;2020-11-13&amp;quot;&lt;/p&gt;
+&lt;p&gt;A beaucoup de nutrients : food<sub>nutrients</sub>.csv: &amp;quot;1009437&amp;quot;,&amp;quot;1105904&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;Ingredients&amp;quot;,&amp;quot;3&amp;quot; &amp;quot;13706913&amp;quot;,&amp;quot;1105904&amp;quot;,&amp;quot;203&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;71&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot; &amp;quot;13706914&amp;quot;,&amp;quot;1105904&amp;quot;,&amp;quot;204&amp;quot;,&amp;quot;93.33&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;71&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot; &amp;quot;13706915&amp;quot;,&amp;quot;1105904&amp;quot;,&amp;quot;205&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;75&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot; &amp;quot;13706916&amp;quot;,&amp;quot;1105904&amp;quot;,&amp;quot;208&amp;quot;,&amp;quot;867&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;71&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot; &amp;quot;13706917&amp;quot;,&amp;quot;1105904&amp;quot;,&amp;quot;269&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;71&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot; &amp;quot;13706918&amp;quot;,&amp;quot;1105904&amp;quot;,&amp;quot;291&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;75&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot; &amp;quot;13706919&amp;quot;,&amp;quot;1105904&amp;quot;,&amp;quot;301&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;75&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot; &amp;quot;13706920&amp;quot;,&amp;quot;1105904&amp;quot;,&amp;quot;303&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;75&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot; &amp;quot;13706921&amp;quot;,&amp;quot;1105904&amp;quot;,&amp;quot;306&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;75&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot; &amp;quot;13706922&amp;quot;,&amp;quot;1105904&amp;quot;,&amp;quot;307&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;75&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot; &amp;quot;13706923&amp;quot;,&amp;quot;1105904&amp;quot;,&amp;quot;318&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;75&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot; &amp;quot;13706924&amp;quot;,&amp;quot;1105904&amp;quot;,&amp;quot;324&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;75&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot; &amp;quot;13706925&amp;quot;,&amp;quot;1105904&amp;quot;,&amp;quot;401&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;75&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot; &amp;quot;13706926&amp;quot;,&amp;quot;1105904&amp;quot;,&amp;quot;601&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;75&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot; &amp;quot;13706927&amp;quot;,&amp;quot;1105904&amp;quot;,&amp;quot;605&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;71&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot; &amp;quot;13706928&amp;quot;,&amp;quot;1105904&amp;quot;,&amp;quot;606&amp;quot;,&amp;quot;13.33&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;71&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot; &amp;quot;13706929&amp;quot;,&amp;quot;1105904&amp;quot;,&amp;quot;645&amp;quot;,&amp;quot;20&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;71&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot; &amp;quot;13706930&amp;quot;,&amp;quot;1105904&amp;quot;,&amp;quot;646&amp;quot;,&amp;quot;53.33&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;71&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;&lt;/p&gt;
+&lt;p&gt;En enlevant ceux qui sont nul (amount = 0) &amp;quot;1009437&amp;quot;,&amp;quot;1105904&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;Ingredients&amp;quot;,&amp;quot;3&amp;quot; &amp;quot;13706914&amp;quot;,&amp;quot;1105904&amp;quot;,&amp;quot;204&amp;quot;,&amp;quot;93.33&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;71&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot; &amp;quot;13706916&amp;quot;,&amp;quot;1105904&amp;quot;,&amp;quot;208&amp;quot;,&amp;quot;867&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;71&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot; &amp;quot;13706914&amp;quot;,&amp;quot;1105904&amp;quot;,&amp;quot;204&amp;quot;,&amp;quot;93.33&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;71&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot; &amp;quot;13706916&amp;quot;,&amp;quot;1105904&amp;quot;,&amp;quot;208&amp;quot;,&amp;quot;867&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;71&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;&lt;/p&gt;
+&lt;p&gt;En enlevant ceux qui sont redondant, on retrouve 5 (différents des 3 mentionnés ??) food<sub>nutrients</sub>.csv &amp;quot;13706914&amp;quot;,&amp;quot;1105904&amp;quot;,&amp;quot;204&amp;quot;,&amp;quot;93.33&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;71&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot; &amp;quot;13706916&amp;quot;,&amp;quot;1105904&amp;quot;,&amp;quot;208&amp;quot;,&amp;quot;867&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;71&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot; &amp;quot;13706928&amp;quot;,&amp;quot;1105904&amp;quot;,&amp;quot;606&amp;quot;,&amp;quot;13.33&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;71&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot; &amp;quot;13706929&amp;quot;,&amp;quot;1105904&amp;quot;,&amp;quot;645&amp;quot;,&amp;quot;20&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;71&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot; &amp;quot;13706930&amp;quot;,&amp;quot;1105904&amp;quot;,&amp;quot;646&amp;quot;,&amp;quot;53.33&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;71&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;&lt;/p&gt;
+&lt;p&gt;Les codes ne correspondent pas à nutrient.csv ou nutrient<sub>incomingname</sub>. mais d'après le site <a href="https://fdc.nal.usda.gov/fdc-app.html#/food-details/1455596/nutrients">https://fdc.nal.usda.gov/fdc-app.html#/food-details/1455596/nutrients</a> (au passage, l'ID est encore différent) :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;204 = lipid&lt;/li&gt;
+&lt;li&gt;208 = énergie&lt;/li&gt;
+&lt;li&gt;606 = fat total saturated&lt;/li&gt;
+&lt;li&gt;645 = fat total monounsaturated&lt;/li&gt;
+&lt;li&gt;646 = fat total polyunsaturated&lt;/li&gt;&lt;/ul&gt;
+</p>
+
+<p>
+&lt;p&gt;En fait, le code est donné par nutrient<sub>nbr</sub> dans nutrients.csv (!)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;En résumé&lt;/p&gt;
+&lt;p&gt;Requirements : food.csv, nutrient.csv, food<sub>nutrients</sub>.csv&lt;/p&gt;
+&lt;ol style="list-style-type: decimal;"&gt;
+&lt;li&gt;Chercher l'ID dans food.csv (nom = description, id = fdc<sub>id</sub>)&lt;/li&gt;
+&lt;li&gt;Pour fdc<sub>id</sub>, obtenir la liste des nutriments (nutrient<sub>id</sub>) avec leurs valeurs (amonut) dans food<sub>nutrients</sub>.csv&lt;/li&gt;
+&lt;li&gt;Convertir l'Id nutrient (nutrient<sub>nbr</sub> = nutrient<sub>id</sub>) en son nom (nutrient<sub>nbr</sub>)avec nutrient.csv&lt;/li&gt;&lt;/ol&gt;
+&lt;/li&gt;&lt;/ol&gt;
+</p>
+
+<div id="Projets-Vc-darcs"><h2 id="Vc-darcs" class="header"><a href="#Projets-Vc-darcs">Vc-darcs</a></h2></div>
+
+<ul>
+<li>
+☐ Corriger record
+
+<li>
+Ajouter support pour push
+
+</ul>
+
+</body>
+</html>

@@ -1,21 +1,25 @@
-## Backbone
+Backbone
+--------
 
-Tweaknews (30€ pour 1 an en promo black friday) => assez utile pour
-série (Elementary) Newdemon (10€ pour 6mois en promo black friday) =>
+Tweaknews (30€ pour 1 an en promo black friday) =\> assez utile pour
+série (Elementary) Newdemon (10€ pour 6mois en promo black friday) =\>
 peu utile ?
 
-## Indexer
+Indexer
+-------
 
-NZBgeek (5€ pour 6 mois) => plutôt utile NZBplanet (10€ pour 1 an) =>
-peu utile pour le moment DrunkenSlug (version gratuite) => limité 10 /
+NZBgeek (5€ pour 6 mois) =\> plutôt utile NZBplanet (10€ pour 1 an) =\>
+peu utile pour le moment DrunkenSlug (version gratuite) =\> limité 10 /
 jour mais complète bien Dognzb : redondant avec drunkenslug ? Cher à 20€
 /mois nzb.su : ont le monde diplomatique mais
 
-## KILL Récupérer les magazines à la main
+KILL Récupérer les magazines à la main
+--------------------------------------
 
-Sur a.b.e-books.magazines => non disponible via tweknews et newsdemon
+Sur a.b.e-books.magazines =\> non disponible via tweknews et newsdemon
 
-## NZBget
+NZBget
+------
 
 Télécharge nzb
 
@@ -40,7 +44,7 @@ Le service est activé au démarrage de l\'ordinateur
 pkg install nzbget On copie tout le dossier /usr/local/share/nzbget vers
 /usr/local/nzbget (config + website) On edit /usr/local/etc/rc.d/nzbget
 
-``` shell
+``` {.shell}
 command=/usr/local/bin/nzbget
 command_args="-c /usr/local/nzbget/nzbget.conf"
 ```
@@ -50,11 +54,13 @@ Les téléchargement seront dans /usr/local/nzbget.
 Important: Umask = 0002 pour avoir l\'équivalent de chmod 775 (c\'est
 l\'inverse)
 
-## NZBHydra2
+NZBHydra2
+---------
 
 Aggrégateur d\'indexeur
 
-## Permissions et dossiers
+Permissions et dossiers
+-----------------------
 
 ### Linux
 
@@ -73,7 +79,8 @@ media qui contiendra sonarr. Les permissions de /usr/local/nzbget seront
 en 775 avec chrgroup media deuss /media sera donc accessible à toute le
 monde
 
-## Sonarr pour série
+Sonarr pour série
+-----------------
 
 ### Linux
 
@@ -84,14 +91,16 @@ Utiliser NZBHydra2 comme source d\'indexer
 
 rc.d fourni
 
-## Radarr pour filmes
+Radarr pour filmes
+------------------
 
 ### Linux
 
 Fichier systemd fourni (AUR) Ajouter utilisateur radarr au groupe media
 Utiliser NZBHydra2 comme source d\'indexer
 
-## Bazarr pour sous-titres
+Bazarr pour sous-titres
+-----------------------
 
 ### Linux
 
@@ -101,7 +110,8 @@ Fichier systemd fourni (AUR) Ajouter utilisateur radarr au groupe media
 
 Install manuellee
 
-## Bitcoin
+Bitcoin
+-------
 
 -   Coinbase pro : frais bas (10cts par transaction). Alimentation
     possible par virement mais attention de bien mettre la référence

@@ -1,8 +1,10 @@
-# Metz
+Metz
+====
 
 Rien
 
-# Nancy
+Nancy
+=====
 
 -   Essey-les-nancy : clinique du Grémillon. Ont vu Kalala 1x et Loki
     1x. Tarifs raisonnables

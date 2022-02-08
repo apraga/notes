@@ -1,17 +1,21 @@
-# Desserts
+Desserts
+========
 
-## DONE Biscuit cuiller
+DONE Biscuit cuiller
+--------------------
 
 (Patisserie, Leçons pas-à-pas) : 12min environ 3 blanc 75g sucre 55g
 farine37g fécule 4 jaunes
 
-## RETRY Biscuit de Savoie
+RETRY Biscuit de Savoie
+-----------------------
 
 [meilleur du
 chef](https://www.meilleurduchef.com/cgi/mdc/l/fr/recette/biscuit-savoie.html))
 : cuire vraiment plus longtemps en bas du four. Bien beurrer et fariner.
 
-## DONE [Blackout cake](https://www.bonappetit.com/recipe/blackout-cake)
+DONE [Blackout cake](https://www.bonappetit.com/recipe/blackout-cake)
+---------------------------------------------------------------------
 
 ### Ingredients
 
@@ -49,7 +53,6 @@ chef](https://www.meilleurduchef.com/cgi/mdc/l/fr/recette/biscuit-savoie.html))
 ### Instructions
 
 1.  Cake
-
     Arrange a rack in center of oven; preheat to 350°. Line two
     8x2\"-deep round cake pans with parchment paper. Grease with butter,
     then dust with cocoa powder, tapping out excess.
@@ -69,7 +72,6 @@ chef](https://www.meilleurduchef.com/cgi/mdc/l/fr/recette/biscuit-savoie.html))
     room temperature.
 
 2.  Pudding and Assembly
-
     Whisk cocoa powder and cornstarch in a large saucepan. Whisk in
     cream until smooth and no lumps remain. Add egg yolks, milk, brown
     sugar, and salt; whisk to combine. Bring to a boil over medium-high
@@ -98,7 +100,6 @@ chef](https://www.meilleurduchef.com/cgi/mdc/l/fr/recette/biscuit-savoie.html))
     Do Ahead: Pudding can be made 1 day ahead. Keep chilled.
 
 3.  Frosting
-
     Bring cream, syrup, and salt to a boil in a large saucepan over
     medium-high heat. Remove from heat and stir in chocolate, sour
     cream, and butter. Let sit, stirring occasionally, until chocolate
@@ -129,7 +130,8 @@ Avec un cercle 20cm, on peut faire un gâteau. 50min de cuisson à 190. On
 peut couper le bord supérieur pour avoir quelques miettes puis 3
 tranches. Un peu trop de glacage et pudding (10%) Résultat OK
 
-## RETRY Bounty
+RETRY Bounty
+------------
 
 [750g](http://www.750g.com/bounty-maison-r97803.htm)) : prendre du bon
 chocolat
@@ -138,7 +140,8 @@ chocolat
 -   lait concentré sucré
 -   chocolat noir
 
-## RETRY Brioche
+RETRY Brioche
+-------------
 
 ### \[\[<http://www.enviedebienmanger.fr/fiche-recette/recette-brioche-pur-beurre>)\]\[Enviedebienmanger
 
@@ -153,10 +156,9 @@ chocolat
 -   1 jaune d\'oeuf
 -   12 g de sel (+ 1 pincée)
 
-### Au levain {#au-levain source-url="https://www.yumelise.fr/brioche-levain/" servings="2 brioches"}
+### Au levain
 
 1.  Ingredients
-
     -   225 grammes de levain actif
     -   500 grammes de farine T45
     -   110 grammes de cassonade sucre blond de canne
@@ -164,24 +166,24 @@ chocolat
     -   3 gros oeufs
     -   200 grammes de beurre doux mou
     -   lait \~50g
-
 2.  Notes
-
     50min de cuisson à 180° 5h de pousse le lendemain Brioche moelleuse
     et aérée mais goût au levain trop fort Après avoir regardé d\'autres
-    recettes : => Augmenter le ratio farine/levain à 2/1 (au lieu de
+    recettes : =\> Augmenter le ratio farine/levain à 2/1 (au lieu de
     0.5) pour le \"starter\" Exemple
     <https://homegrownhappiness.co.nz/sourdough-brioche/>
 
-## RETRY Brownie
+RETRY Brownie
+-------------
 
 ### <https://tasty.co/recipe/ultimate-brownies>
 
-\*\* -33% en sucre \*\* café en poudre ok \*\* problème de cuisson :
-centre pas assez cuit. Brownie trop épais ? \*\* 2eme essai : avec les
-temps recommandé, au milieu du four, trop cuit ! (comme un cake, trop
-épais) \*\* => cuire moins+++ (30min), utiliser du chocolat à 70%, bien
-respecter la dose de cacao en poudre, bien battre++
+-   -   -33% en sucre \*\* café en poudre ok \*\* problème de cuisson :
+        centre pas assez cuit. Brownie trop épais ? \*\* 2eme essai :
+        avec les temps recommandé, au milieu du four, trop cuit ! (comme
+        un cake, trop épais) \*\* =\> cuire moins+++ (30min), utiliser
+        du chocolat à 70%, bien respecter la dose de cacao en poudre,
+        bien battre++
 
 ### LOVEIT Serious eats
 
@@ -206,7 +208,8 @@ Directions
 -   différences entre les 2 : un peu plus de beurre pour SE, un peu plus
     de chocolat (normal + poudre) pour tasty
 
-## RETRY Carrot cake
+RETRY Carrot cake
+-----------------
 
 <https://www.seriouseats.com/recipes/2017/10/carrot-cake-recipe.html>
 
@@ -214,9 +217,10 @@ Directions
 -   glacage non fait (version rapide = beurre + cream cheese + sucre
     glace)
 
-## RETRY Cheesecake japonais {#retry-cheesecake-japonais source-url="https://cooking.nytimes.com/recipes/1020666-japanese-cheesecake?action=click&module=Global%20Search%20Recipe%20Card&pgType=search&rank=52" servings="" prep-time="" cook-time="" ready-in="1 1/2 hours, plus cooling and chilling"}
+RETRY Cheesecake japonais
+-------------------------
 
-### Ingredients {#ingredients-2}
+### Ingredients
 
 -   3 tablespoons/45 grams unsalted butter, at room temperature, plus
     more for greasing
@@ -273,7 +277,7 @@ Directions
     well wrapped, for up to 4 days in the refrigerator. Sift
     confectioners' sugar over top of cake just before serving.
 
-### Notes {#notes-2}
+### Notes
 
 -   Temps de cuisson : 25-30min à 200° = sommet doré et gâteau plutôt
     ferme. Au goût semble OK
@@ -285,8 +289,8 @@ Directions
 
 Conclusion
 
--   Globablement bon mais attention à l\'étanchéité ! => mieux mettre de
-    papier alu
+-   Globablement bon mais attention à l\'étanchéité ! =\> mieux mettre
+    de papier alu
 -   pas de beurre sur les côté du moule a priori (possibilité de mettre
     du papier sulfurisé : cf
     <https://www.youtube.com/watch?v=adXmM-eqwz8>)
@@ -297,13 +301,14 @@ Conclusion
 -   Essayer d\'autre méthode de cuisson pour avoir un gâteau qui
     \"tient\" mieux ? (plus longtemps et moins fort)
 
-## RETRY Chocolate lavae cake
+RETRY Chocolate lavae cake
+--------------------------
 
 ### MEH Uncooked
 
 <https://cooking.nytimes.com/recipes/1019957-chocolate-lava-cake-for-two>
 13min au four : très coulant à l\'intérieur mais un petit goûte de pâte
-non cuite. => recette de John Favreau avec une ganache congelée à
+non cuite. =\> recette de John Favreau avec une ganache congelée à
 l\'intérieur avant de cuire
 
 ### LOVEIT Frozen ganache
@@ -312,7 +317,8 @@ l\'intérieur avant de cuire
 Meilleur que la version uncooked. 2/3 des quantités = sert environ 2
 gros ramequins
 
-## RETRY Cinnamon rolls
+RETRY Cinnamon rolls
+--------------------
 
 [de
 Babish](https://www.bingingwithbabish.com/recipes/cinnamonrolls?rq=cinnamon)
@@ -322,30 +328,32 @@ Babish](https://www.bingingwithbabish.com/recipes/cinnamonrolls?rq=cinnamon)
 -   Soit réessayer la recette de babish (en petite quantités), soit
     simplement nature.
 
-## RETRY Clafoutis aux pommes
+RETRY Clafoutis aux pommes
+--------------------------
 
 [ptitecuisinedepauline](http://www.ptitecuisinedepauline.com/article-clafoutis-aux-pommes-122364862.html))
 
 -   Avec un peu plus de farine, on a un clafoutis bien compact.
 
-## RETRY Cornbread (salé)
+RETRY Cornbread (salé)
+----------------------
 
 [Seriouseats](https://www.seriouseats.com/recipes/2015/11/southern-unsweetened-cornbread-recipe.html)
 Bien moelleux mais très mietteux. Probablement pas assez mélangé
 
-## RETRY Crepes
+RETRY Crepes
+------------
 
 ### Marmiton
 
 <https://www.marmiton.org/recettes/recette_pate-a-crepes-simple_27121.aspx>
 2.5 oeufs 250 g de farine 500g l de lait demi-écrémé 1.5 cuillères à
-soupe d\'huile 1 cuillère à café de rhum => décent
+soupe d\'huile 1 cuillère à café de rhum =\> décent
 
 ### LOVEIT Raymond Oliver
 
 1.  Ingredients
-
-    Recette initiale : [source](youtube:FUO2zmDnSe8)
+    Recette initiale : [source](youtube:FUO2zmDnSe8 "wikilink")
 
     -   200g farine
     -   4 oeufs (suffisament pour absorper la farine)
@@ -381,7 +389,6 @@ soupe d\'huile 1 cuillère à café de rhum => décent
     elles ramolissent un peu \~15 crèpes fines
 
 2.  Instructions
-
     -   Faire bouiller le lait avec sel + sucre + vanillet
     -   Ajouter le beurre pour le faire fondre hors feu
     -   Mélanger farine + oeufs (rajouter oeufs si besoin)
@@ -392,7 +399,7 @@ soupe d\'huile 1 cuillère à café de rhum => décent
     -   Ne pas beurre la poêle et ne pas faire sauter les crèpes
         (retourner à la main)
 
-### MEH Au levain (Epicurious) [[sourdough]{.smallcaps}]{.tag tag-name="sourdough"} {#meh-au-levain-epicurious}
+### MEH Au levain (Epicurious) <span class="tag" tag-name="sourdough">sourdough</span>
 
 <https://www.epicurious.com/recipes/food/views/sourdough-crepes>
 
@@ -409,12 +416,12 @@ soupe d\'huile 1 cuillère à café de rhum => décent
     optional)
 
 1.  Notes
-
     -   On ne sent pas le goût du levain
     -   Crêpes classiques, sans plus
     -   Pâte trop épaisse
 
-## RETRY Croissants
+RETRY Croissants
+----------------
 
 (PPAP). Pas encore ça... Remarques après plusieurs essais :
 
@@ -426,11 +433,12 @@ soupe d\'huile 1 cuillère à café de rhum => décent
 -   essayer cette recette :
     <https://www.weekendbakery.com/posts/classic-french-croissant-recipe/>
 
-## RETRY Forêt noire
+RETRY Forêt noire
+-----------------
 
 Recette de PPAP avec des framboises surgelées à la place des cerises
 
-### Notes {#notes-4}
+### Notes
 
 Résultat final bon. Mais
 
@@ -442,49 +450,56 @@ Résultat final bon. Mais
 -   Le lendemaine, encore ok
 -   test de congélation
 
-## RETRY Framboisier :
+RETRY Framboisier :
+-------------------
 
 ### Recette de PPAP :
 
--   Bon mais pas assez de crème => 500g de crème liquide = tout juste
+-   Bon mais pas assez de crème =\> 500g de crème liquide = tout juste
     assez de crème
--   Problème principal = comment intégrer la gélatine ? => ne pas mettre
-    la crème au frigo, attendre qu\'elle refroidisse un peu et intégrer
-    directement à la chantilly. Celle-ci va \"dégonfler\" un peu, mais
-    après un passage au frigo, elle sera ferme
+-   Problème principal = comment intégrer la gélatine ? =\> ne pas
+    mettre la crème au frigo, attendre qu\'elle refroidisse un peu et
+    intégrer directement à la chantilly. Celle-ci va \"dégonfler\" un
+    peu, mais après un passage au frigo, elle sera ferme
 -   Framboise surgelées : trop humide, il vaut mieux utiliser des
     fraîches pour la présentation
 
-## RETRY Galette des rois
+RETRY Galette des rois
+----------------------
 
 [de Conticini](https://www.youtube.com/watch?v=ETkk7QXbtlw)
 
 -   Problème de la quantité : avec 3/4 de la crème, léger surplus pour
     une grosse galette ?
--   Pâte feuilletée inversée plus intéressante que la simple => prendre
+-   Pâte feuilletée inversée plus intéressante que la simple =\> prendre
     la recette de PPAP
 -   Attention à mettre suffisament d\'eau dans la pâte feuilletée : trop
     dure sinon (et se déchire)
--   Frangipane sortie de la galette (alors qu\'il en manquait) =>
+-   Frangipane sortie de la galette (alors qu\'il en manquait) =\>
     réappuyer pour souder après l\'avoir retourné semble fontionner
 
-## RETRY Gâteau au chocolat
+RETRY Gâteau au chocolat
+------------------------
 
 [recette de Tasty](https://tasty.co/recipe/the-ultimate-chocolate-cake)
 
-### Notes {#notes-5}
+### Notes
 
 attention, bien cuire le gâteau et **bien** attendre qu\'il soit froid
 (sinon tombe en morceaux) !! Pas de bière mais la moitié en eau chaude.
 Bien dilueer le café en poudre avant. Pour le glacage, quantité de sucre
 divisée par 2, ok. Pas assez de glacage ?
 
-## RETRY Gaufres
+RETRY Gaufres
+-------------
 
 pas de souci de cuisson avec [cette
-recette](https://www.hervecuisine.com/recette/gaufres-croustillantes-ultra-legeres/). Temps de repos qui fait la différence ? (Souvent pas assez cuite dans les essais précédents)
+recette](https://www.hervecuisine.com/recette/gaufres-croustillantes-ultra-legeres/).
+Temps de repos qui fait la différence ? (Souvent pas assez cuite dans
+les essais précédents)
 
-## RETRY Glace
+RETRY Glace
+-----------
 
 ### RETRY [Recette de Babish](https://basicswithbabish.co/basicsepisodes/icecream)
 
@@ -493,22 +508,25 @@ en 30min... Plutôt compter 1 à 2h ! Inutile de mélanger si c\'est
 liquide... Pour un premier essai, correct mais ne vaut pas le coup de
 s\'embêter autant ?
 
-## RETRY Guimauve
+RETRY Guimauve
+--------------
 
 [jujube-en-cuisine](http://www.jujube-en-cuisine.fr/marshmallow-ou-guimauve-maison/)):
 trop sucré mais bonne texture
 
-## TODO Ile flottante
+TODO Ile flottante
+------------------
 
 <https://cooking.nytimes.com/recipes/1017447-ile-flottante-with-fresh-cherries>
 Problèmes :
 
 -   sauce trop liquide après qq minutes de cuisson et malgré 2h au frais
     après. Goût un peu curieux avec la cardamone (diminuer dose ?)
--   meringue aplatie après la cuisson à la vapeur => au four la
+-   meringue aplatie après la cuisson à la vapeur =\> au four la
     prochaine fois
 
-## TODO Lebkuchen
+TODO Lebkuchen
+--------------
 
 1er essai avec une recette de 750g il y a quelques années 2eme essai
 avec cette recette :
@@ -517,7 +535,7 @@ modifications : Ajout : 1 oeufs, 25g sucre roux, orange confite,
 noisettes concassées Globalement : plus de farine que mentionné Glacage
 = 200g chocolat + huile de coco mais pas assez pour tous les gâteaux.
 Important : couper cuisson quand les bords commencent à brûnir (10min à
-180% max) => résultat : pas mal
+180% max) =\> résultat : pas mal
 
 3eme essai \"free style\" 200g farine blanche 50 farine complète 250g
 miel de chataîgnier 100g beurre 90g poudre d\'amandes levure
@@ -530,7 +548,8 @@ visuellement)
 9mm d\'épaisseur : limite trop cuit à 15min à 170° ! Miel de chataîgner
 trop fort, un peu atténué avec une glacage chocolat.
 
-## RETRY Macarons
+RETRY Macarons
+--------------
 
 Pour 30 macarons Coque =
 
@@ -551,9 +570,9 @@ Temps de cuisson \~18min à 155° (après préchauffage à 175°) Ganache
 -   150g chocolat 64%
 -   30g beurre
 
-### Notes {#notes-6}
+### Notes
 
--   Le plus important = Macaronage => mélanger jusqu\'à pouvoir faire
+-   Le plus important = Macaronage =\> mélanger jusqu\'à pouvoir faire
     des \"8\"
 -   Recette de LPAP = valeur sûre. Faisable avec 2 plaques mais celle du
     bas (plaque pâtisserie) est moins jolie (parfois correct...), en
@@ -562,29 +581,32 @@ Temps de cuisson \~18min à 155° (après préchauffage à 175°) Ganache
     d\'un coup en mélangeant à fond (cf recette de Raymon Oliver pour sa
     mousse de fruits)
 -   Recette de Felden avec du cacao en poudre : pâte d\'amande trop
-    épaisse mais résultant décevant malgré tout (plus un cookie) => des
+    épaisse mais résultant décevant malgré tout (plus un cookie) =\> des
     doutes à réessayer...
 -   Essayer avec meringue française
 -   Pas de sucre roux !
 
-## RETRY Madeleine
+RETRY Madeleine
+---------------
 
 ### DONE Recette de Felder: au chocolat
 
 Sans cacao : attention à la cuisson : pour des 2/3 de cuillère à soupe,
 trop cuites en 7min à 215°... Bien remplir les moules (1 grosse cuillère
-à soupe) et 10-12min de cuisson à 210 Un peu sèche/farineuse => Comparer
-à LPAP
+à soupe) et 10-12min de cuisson à 210 Un peu sèche/farineuse =\>
+Comparer à LPAP
 
 ### TODO LPAP
 
 Refaire, mais recette de référence normalement
 
-## RETRY Mille-feuille [ de Conticini](https://www.facebook.com/PhConticini/photos/a.108115932681384.17237.101025623390415/713491585477146/?type=3) : bien mettre un poids sur la pâte feuilletée pendant la cuisson. Trop de gélatine (crème un peu trop gélatineuse)
+RETRY Mille-feuille [de Conticini](https://www.facebook.com/PhConticini/photos/a.108115932681384.17237.101025623390415/713491585477146/?type=3) : bien mettre un poids sur la pâte feuilletée pendant la cuisson. Trop de gélatine (crème un peu trop gélatineuse)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## RETRY Millionaire short-bread / Twix familial {#retry-millionaire-short-bread-twix-familial source-url="https://cooking.nytimes.com/recipes/1019333-millionaires-shortbread?action=click&module=Global%20Search%20Recipe%20Card&pgType=search&rank=12" servings="" prep-time="" cook-time="" ready-in="1 3/4 hours"}
+RETRY Millionaire short-bread / Twix familial
+---------------------------------------------
 
-### Notes {#notes-7}
+### Notes
 
 -   Ne pas trop étaler la pâte.
 -   Quantité pour avoir autant de caramel de que shortbread... Peut-être
@@ -594,16 +616,17 @@ peu les doses de caramel ?
 
 -   J\'ai utilisé 250g de chocolat, un peu juste sinon
 
-### Ingredients {#ingredients-4}
+### Ingredients
 
 ### Directions
 
-## RETRY Moka
+RETRY Moka
+----------
 
 Felder plutôt que PPAP :
 
 -   le biscuit est plus simple chez Felder et plus aéré
--   doubler la dose de crème... => au final, un gâteau avec une légère
+-   doubler la dose de crème... =\> au final, un gâteau avec une légère
     couche de crème donc pas trop lourd
 -   beaucoup trop de sirop dans la recette, diviser au moins par 3
 -   le plus difficile (dans les 2 recettes ) : bien gérer le beurre
@@ -612,7 +635,8 @@ Felder plutôt que PPAP :
         avant ... et y aller par petite quantités avec le beurre (NB:
         possible de recongeler si c\'est trop liquide mais éviter...)
 
-## RETRY Mousse au chocolate
+RETRY Mousse au chocolate
+-------------------------
 
 ### Philippe Conticini : éviter une ganache trop liquide. Ne pas lésiner sur les blancs. Pour 5 parts :
 
@@ -626,18 +650,20 @@ Felder plutôt que PPAP :
 ### Au jus de pois chiches
 
 <https://tasty.co/recipe/vegan-chocolate-mousse> Pendant la préparation
-: goût encore fort, légere nausée. 3h plus tard : ok Monte en neige
-comme des blancs normaux. Pour améliorer le goût :
+:   goût encore fort, légere nausée. 3h plus tard : ok Monte en neige
+    comme des blancs normaux. Pour améliorer le goût :
 
 -   Tester avec du jus maison ?
 -   Meringue italienne ?
 -   Plus de vanille ?
 
-## RETRY Mousse de fruit
+RETRY Mousse de fruit
+---------------------
 
 Recette meilleur du chef
 
-## RETRY Napolitain
+RETRY Napolitain
+----------------
 
 ### Ingrédients
 
@@ -654,7 +680,7 @@ Ganache (diminuer les doses car il reste 1/4)
 -   150g chocolat
 -   100g crème 30%
 
-### Instructions {#instructions-2}
+### Instructions
 
 -   Bien mélanger jaunes d\'oeuf avec le sucre puis ajouter le beurre
     fondu
@@ -665,12 +691,12 @@ Ganache (diminuer les doses car il reste 1/4)
 -   15min de cuisson à 180%
 -   Montage
 
-## RETRY Oreo
+RETRY Oreo
+----------
 
 ### Bravetart
 
 1.  Ingrédients
-
     For the Chocolate Wafers: 4 ounces unsalted butter (about 8
     tablespoons; 115g), creamy and soft, about 68°F (20°C) 3 1/2 ounces
     sugar (about 1/2 cup; 100g) 2 ounces golden syrup (about 3
@@ -686,27 +712,29 @@ Ganache (diminuer les doses car il reste 1/4)
     1/2 ounces powdered sugar (about 2 cups plus 1 tablespoon; 240g)
 
 2.  Notes
-
     -   Ne pas faire les oreo trop large (3cm suffit)
     -   La ganache est vraiment trop sucrée
     -   Le biscuit passe avec du caco non sucré
 
-## RETRY Pain au lait
+RETRY Pain au lait
+------------------
 
 [750g](https://www.youtube.com/watch?v=wAKaJRl3Ieg)) : bon mais levée
 sur la nuit semble préférable
 
-## RETRY Pancake
+RETRY Pancake
+-------------
 
 ### America test kitchen recipe. Pas mal et pas prise de tête
 
-### Levain [[sourdough]{.smallcaps}]{.tag tag-name="sourdough"} {#levain}
+### Levain <span class="tag" tag-name="sourdough">sourdough</span>
 
 <https://www.kingarthurflour.com/recipes/classic-sourdough-waffles-or-pancakes-recipe>
 Avec \"restes\" de levain. Pancake moelleux mais bien cuire l\'intérieur
 (mettre à feu doux++)... Quantité pour 12 pancakes
 
-## RETRY Paris-Brest
+RETRY Paris-Brest
+-----------------
 
 ### PPAP
 
@@ -717,13 +745,15 @@ crème au beurre toujours un peu trop liquide. Vient du praliné
 
 Sans praliné, crème se tient bien
 
-## RETRY Pâte à chou
+RETRY Pâte à chou
+-----------------
 
 (Patisserie, Leçons pas-à-pas) : 45-50min de cuisson
 
-## RETRY Peanut Butter Pie {#retry-peanut-butter-pie source-url="https://cooking.nytimes.com/recipes/1018635-peanut-butter-pie" servings="8 to 10" prep-time="" cook-time="" ready-in="50 minutes, plus chilling"}
+RETRY Peanut Butter Pie
+-----------------------
 
-### Ingredients {#ingredients-5}
+### Ingredients
 
 -   6 tablespoons/85 grams unsalted butter, melted, plus more for the
     pan
@@ -772,19 +802,21 @@ Sans praliné, crème se tient bien
 -   Pas de crème fouettée donc remplacée par une meringue française avec
     4 blancs
 
-d\'oeufs => résultat correct mais pas aussi \"fluffy\" que sur la photo
+d\'oeufs =\> résultat correct mais pas aussi \"fluffy\" que sur la photo
 
 -   Attention: la pâte à tarte ne durcira qu\'à la sortie du four. 30min
     à 180% est vraiment un maximum...
 
-## RETRY Soufflé (Bocuse)
+RETRY Soufflé (Bocuse)
+----------------------
 
 Echec ! Souffé redescend au bout de 15min de cuisson et clairement pas
 assez cuit après 20min à 210°. Après 35min, extérieur trop cuit et
 intérieur limite sous-cuit (mangeable mais sans plus)... 2/3 des
 quantité = 4 ramequins
 
-## RETRY Tarte au chocolat
+RETRY Tarte au chocolat
+-----------------------
 
 [750g](https://www.youtube.com/watch?v=ZISKki8AcE0)) : pas mal mais plus
 avec une texture de mousse au chocolat
@@ -795,20 +827,18 @@ avec une texture de mousse au chocolat
 -   lait ? (donne plus une )
 -   2 oeufs
 
-### NYT {#nyt source-url="https://cooking.nytimes.com/recipes/9360-chocolate-caramel-tart" servings="" prep-time="" cook-time="" ready-in="1 hour 15 minutes"}
+### NYT
 
 1.  Ingredients
-
 2.  Directions
-
 3.  Notes
-
     -   Quantités pour 1 grande tarte + 2 tartelettes
     -   La pâte a un peu attaché au papier cuisson
-    -   Au goût OK mais caramel trop liquide => ressayer en allant
+    -   Au goût OK mais caramel trop liquide =\> ressayer en allant
         jusqu\'au point ou ça sent légèrement le cramé
 
-## RETRY Tarte aux pommes
+RETRY Tarte aux pommes
+----------------------
 
 ### RETRY PPAP
 
@@ -828,24 +858,27 @@ mais après un passage au frigo, se conserve jusqu\'au lendemain
 rapport à la version de Babish : cuisson longue (1h30-2h) et plus de
 pommes
 
-## RETRY Tiramisu
+RETRY Tiramisu
+--------------
 
 1.  <https://www.seriouseats.com/2017/06/how-to-make-the-best-tiramisu.html>
-    => échec, pâte trop liquide car
+    =\> échec, pâte trop liquide car
 2.  Mieux avec 3 jaune + sucre en sabayon. Ajouter 200g mascarpone battu
     au fouet et battre le tout. Ajout 20cl crème fouettée délicatement.
-    => au final, pas de prise au frigo, consistence crème fouettée
+    =\> au final, pas de prise au frigo, consistence crème fouettée
     molle.
 
-## RETRY Yaourt à la yaourtière
+RETRY Yaourt à la yaourtière
+----------------------------
 
 5 yaourts = 1L de lait entier + 1 yaourt (avec ferments) avec 10h
 
--   Un peu liquide au fond => essayer avec du lait entier en poudre
+-   Un peu liquide au fond =\> essayer avec du lait entier en poudre
 -   lait de brebis : 1L + 3 CC de lait en poudre + 12h de fermentation =
     bien ferme. Diminuer lait en poudre
 
-## RETRY Banana bread
+RETRY Banana bread
+------------------
 
 <https://www.bonappetit.com/recipe/banana-bread> Essai avec
 
@@ -855,11 +888,13 @@ pommes
 
 Au final, gâteau moelleux. 50min à 180°
 
-# Plat principal
+Plat principal
+==============
 
-## RETRY Bolognaise {#retry-bolognaise source-url="https://cooking.nytimes.com/recipes/1015181-marcella-hazans-bolognese-sauce" servings="2 heaping cups, for about 6 and 1 1/2 pounds pasta" prep-time="" cook-time="" ready-in="At least 4 hours"}
+RETRY Bolognaise
+----------------
 
-### Ingredients {#ingredients-7}
+### Ingredients
 
 -   1 tablespoon vegetable oil
 -   3 tablespoons butter plus 1 tablespoon for tossing the pasta
@@ -878,7 +913,7 @@ Au final, gâteau moelleux. 50min à 180°
 -   1 ¼ to 1 ½ pounds pasta
 -   Freshly grated parmigiano-reggiano cheese at the table
 
-### Directions {#directions-4}
+### Directions
 
 1.  Put the oil, butter and chopped onion in the pot and turn the heat
     on to medium. Cook and stir the onion until it has become
@@ -903,12 +938,13 @@ Au final, gâteau moelleux. 50min à 180°
 5.  Toss with cooked drained pasta, adding the tablespoon of butter, and
     serve with freshly grated Parmesan on the side.
 
-### Notes {#notes-10}
+### Notes
 
 Pas mal (ajouté concentré de tomate + feuille basilic). Manque un peu de
 tomate à la fin ?
 
-## RETRY Cassoulet
+RETRY Cassoulet
+---------------
 
 Recette <http://www.confrerieducassoulet.com/la-recette.html> Fait avec
 :
@@ -919,20 +955,22 @@ Recette <http://www.confrerieducassoulet.com/la-recette.html> Fait avec
 -   2 saucisses de toulouse
 
 Au final : 1h30 pour les haricots blancs (sans trempage) et 2h30 au four
-pour commencer à avoir une croûte à 170°. => au final, le lard n\'est
+pour commencer à avoir une croûte à 170°. =\> au final, le lard n\'est
 pas tout à fait bien mélangé donc peut-être le faire fondre avant /
 couper en tout petit morceaux ? Sinon, pas mal mais bouillon un peu
 fade. Essayer
 <https://foodwishes.blogspot.com/2016/03/cassoulet-worlds-most-complex-simple.html>
 
-## RETRY Choux de bruxelles frais rôtis
+RETRY Choux de bruxelles frais rôtis
+------------------------------------
 
 45min à 195° = fondant mais trop cuit à l\'extérieur Cuits entiers +
 huile + sel
 
-## RETRY Coq au vin {#retry-coq-au-vin source-url="https://cooking.nytimes.com/recipes/1018529-coq-au-vin" servings="4" prep-time="" cook-time="" ready-in="2 1/2 hours, plus marinating"}
+RETRY Coq au vin
+----------------
 
-### Ingredients {#ingredients-8}
+### Ingredients
 
 -   3 pounds chicken legs and thighs
 -   2 ½ teaspoons kosher salt, more as needed
@@ -957,7 +995,7 @@ huile + sel
 -   2 slices white bread, cut into triangles, crusts removed
 -   ¼ cup chopped parsley, more for serving
 
-### Directions {#directions-5}
+### Directions
 
 1.  Season chicken with 2 1/4 teaspoons salt and 1/2 teaspoon pepper. In
     a large bowl, combine chicken, wine, bay leaf and thyme. Cover and
@@ -1007,18 +1045,20 @@ huile + sel
     the pot. Baste with wine sauce, sprinkle with parsley and serve with
     croutons on top.
 
-### Notes {#notes-11}
+### Notes
 
 Testé avec rhum : pas senti. Sans le surplus de sauce, ni crouton. Bonne
 sauce mais riche.
 
-## RETRY Cornbread
+RETRY Cornbread
+---------------
 
 <https://www.bonappetit.com/recipe/buttermilk-cornbread> Bien moelleux
 mais quantité approximative de farine et de lait (+50% ?). Trop de
 levure (1 sachet) ?
 
-## RETRY Couscous : [recette de semoule traditionnelle](http://www.ptitecuisinedepauline.com/article-clafoutis-aux-pommes-122364862.html)
+RETRY Couscous : [recette de semoule traditionnelle](http://www.ptitecuisinedepauline.com/article-clafoutis-aux-pommes-122364862.html)
+--------------------------------------------------------------------------------------------------------------------------------------
 
 ### Graine
 
@@ -1041,14 +1081,15 @@ levure (1 sachet) ?
 
 Carottes, potiron, navets, courgettes
 
-## RETRY Crevettes
+RETRY Crevettes
+---------------
 
-### Notes {#notes-12}
+### Notes
 
 Pas mal, très rapide à faire. Je mets les crevettes dans la sauce
 directement
 
-### Ingredients {#ingredients-9}
+### Ingredients
 
 -   4 tablespoons unsalted butter
 -   1 large clove garlic, minced
@@ -1061,7 +1102,7 @@ directement
 -   1 teaspoon jalapeño, seeded and chopped (optional)
 -   2 tablespoons chopped cilantro
 
-### Directions {#directions-6}
+### Directions
 
 1.  In a small saucepan set over low heat, melt 1 tablespoon of butter.
     Add the garlic and cook, stirring for 2 minutes.
@@ -1075,7 +1116,8 @@ directement
 4.  In a large bowl, toss the shrimp and chili sauce. Add jalapeño, if
     desired, sprinkle with cilantro and toss again.
 
-## Haricots blancs
+Haricots blancs
+---------------
 
 ### RETRY NYT: haricots blancs crémeux
 
@@ -1083,7 +1125,8 @@ directement
 1 citron entier pour 1Kg haricots blancs : je trouve que le citron est
 trop agressif et ne va pas avec... Testé avec persil + menthe + basilic
 
-## RETRY Falafels (traditionnels) :
+RETRY Falafels (traditionnels) :
+--------------------------------
 
 3 échecs successifs... Réssayer en
 
@@ -1092,24 +1135,23 @@ trop agressif et ne va pas avec... Testé avec persil + menthe + basilic
 
 OK avec ces 2 modifications !
 
-## RETRY Kebab
+RETRY Kebab
+-----------
 
-### Grilled Chicken Pita With Yogurt Sauce and Arugula {#grilled-chicken-pita-with-yogurt-sauce-and-arugula source-url="https://cooking.nytimes.com/recipes/1020974-grilled-chicken-pita-with-yogurt-sauce-and-arugula" servings="" prep-time="" cook-time="" ready-in="25 minutes"}
+### Grilled Chicken Pita With Yogurt Sauce and Arugula
 
 1.  Ingredients
-
 2.  Directions
-
 3.  Notes
-
     Cuisse de poulet = mauvaise idée. Très long à couper et la flemm
     d\'enlever les tendons... Et difficile à griller ? Sauce : crème
     fraîche + menthe + persil + olive : pas convaincu par les olives. À
     refaire proprement
 
-## RETRY Lablabi (Tunisian Chickpea Soup) {#retry-lablabi-tunisian-chickpea-soup source-url="https://cooking.nytimes.com/recipes/1020874-lablabi-tunisian-chickpea-soup" servings="6 to 8" prep-time="" cook-time="" ready-in="About 2 1/2 hours, plus overnight soaking"}
+RETRY Lablabi (Tunisian Chickpea Soup)
+--------------------------------------
 
-### Ingredients {#ingredients-11}
+### Ingredients
 
 -   1 ¾ cup cooked chickpeas, or 1 (15-ounce) can chickpeas, drained and
     rinsed
@@ -1131,7 +1173,7 @@ OK avec ces 2 modifications !
 -   1 tablespoon finely grated lemon zest, for serving
 -   ½ cup chopped flat-leaf parsley, for serving
 
-### Directions {#directions-8}
+### Directions
 
 1.  Prepare the crispy chickpeas: Transfer chickpeas to a rimmed baking
     sheet lined with a clean dish towel or paper towels. Cover with
@@ -1179,16 +1221,17 @@ OK avec ces 2 modifications !
     some of the crispy chickpeas --- you'll have leftovers. Serve hot,
     with more harissa on the side.
 
-### Notes {#notes-14}
+### Notes
 
 -   version sans harissa et oublié le citron
--   J\'ai utilisé le jus des pois chiches pour la cuisson => mauvaise
+-   J\'ai utilisé le jus des pois chiches pour la cuisson =\> mauvaise
     idée
 -   À refaire correctement
 
-## RETRY Beef Stroganoff {#retry-beef-stroganoff source-url="https://cooking.nytimes.com/recipes/1020862-beef-stroganoffard&pgType=search&rank=1" servings="" prep-time="" cook-time="" ready-in="1 hour"}
+RETRY Beef Stroganoff
+---------------------
 
-### Ingredients {#ingredients-12}
+### Ingredients
 
 Kosher salt and freshly ground black pepper 1 ½ pounds sirloin roast, or
 beef tenderloin, if you're feeling fancy 2 tablespoons all-purpose flour
@@ -1199,7 +1242,7 @@ wide egg noodles ¼ cup dry white wine 1 cup heavy cream or crème fraîche
 1 ½ teaspoons Worcestershire sauce 1 ½ teaspoons Dijon mustard Chopped
 fresh parsley, for garnish
 
-### Directions {#directions-9}
+### Directions
 
 Preparation
 
@@ -1231,18 +1274,20 @@ medium-rare, 2 to 3 minutes. Taste, and adjust the seasonings. Serve the
 noodles under or alongside the stroganoff; sprinkle stroganoff with
 parsley.
 
-### Notes {#notes-15}
+### Notes
 
 Pas mal
 
-## DONE Haricots blancs à la tomate
+DONE Haricots blancs à la tomate
+--------------------------------
 
 Bien cuire la sauce tomate 10min avant d\'ajouter le reste
 <https://www.thecookierookie.com/white-beans-recipe/>
 
-## Kluski na parze {#kluski-na-parze source-url="http://lespolonais.forumpro.fr/t133-les-kluski-na-parze  vb)][recette]]"}
+Kluski na parze
+---------------
 
-### Ingrédients : {#ingrédients-2}
+### Ingrédients :
 
 500 g de farine 1 verre de lait 3 oeufs 3 cuillères à soupe de beurre
 fondu 30 gr de levure de boulangerie 1 pincée de sel
@@ -1266,26 +1311,27 @@ un... ou un cuit-vapeur en adaptant la durée de la cuisson)
 Les \" kluski na parze \"accompagnent un plat en sauce tel que des \"
 Rolades \" le tout servi avec du chou rouge .
 
-## RETRY Lasagnes
+RETRY Lasagnes
+--------------
 
-<https://www.bonappetit.com/recipe/ba-best-lasagna> => ok mais
+<https://www.bonappetit.com/recipe/ba-best-lasagna> =\> ok mais
 
 -   bien saler béchamel et viande sinon un peu fade
--   cuisson avec 1h four et 1h à la cocotte => meilleur au four ?
+-   cuisson avec 1h four et 1h à la cocotte =\> meilleur au four ?
 -   NB : sauce = viande + un peu de liquide à côté. Je regrette de ne
     pas avoir une texture plus crémeuse
 -   on ne sent pas le parmesan
--   la couche supérieure de pâte n\'a pas cuite malgré le papier alu =>
+-   la couche supérieure de pâte n\'a pas cuite malgré le papier alu =\>
     supprimer ?
 
-## RETRY Porc fondant
+RETRY Porc fondant
+------------------
 
 ### Oignon rouge, ail chemisé, curry, porc à braiser. Le tout cuit pendant 2h au moins avec couvercle
 
-### Pulled pork {#pulled-pork source-url="https://cooking.nytimes.com/recipes/1020497-slow-cooker-bbq-pulled-pork" servings="6 to 8" prep-time="" cook-time="" ready-in="8 to 10 hours, plus refrigeration"}
+### Pulled pork
 
 1.  Ingredients
-
     -   1 tablespoon garlic powder
     -   1 tablespoon onion powder
     -   2 teaspoons hot or sweet smoked paprika
@@ -1299,9 +1345,7 @@ Rolades \" le tout servi avec du chou rouge .
         birch beer
     -   ½ to 1 ½ cups homemade or store-bought barbecue sauce
     -   Hot sauce (optional)
-
 2.  Directions
-
     1.  In a small bowl, combine the garlic and onion powders, smoked
         paprika, salt and black pepper. Rub the spice mixture all over
         the pork. If you have time, cover with plastic wrap and
@@ -1322,9 +1366,7 @@ Rolades \" le tout servi avec du chou rouge .
         slow cooker.) Taste and add more barbecue sauce, hot sauce, salt
         or pepper, if desired. Serve with soft rolls and extra sauce on
         the side.
-
 3.  Notes
-
     6 heures à 160% avec \"searing\". Écrasé à la fourchette au bout de
     3h pour permettre d\'absorber le gras. Bien en burger avec sauce BBQ
 
@@ -1332,19 +1374,21 @@ Rolades \" le tout servi avec du chou rouge .
 
 Au four 160° 5h <http://www.auxdelicesdemanue.com/-02>
 
-## RETRY Poulet cocotte (Bocuse)
+RETRY Poulet cocotte (Bocuse)
+-----------------------------
 
 Cuisson : 15min au gaz et 45min au four (pas assez cuit sinon) Pdt :
 bonnes Poulet : un peu sec
 
-## RETRY Poulet glacage soja-miel-gingembre {#retry-poulet-glacage-soja-miel-gingembre source-url="https://cooking.nytimes.com/recipes/1019804-honey-and-soy-glazed-chicken-thighs" servings="4" prep-time="" cook-time="" ready-in="45 minutes"}
+RETRY Poulet glacage soja-miel-gingembre
+----------------------------------------
 
-### Notes {#notes-17}
+### Notes
 
 Cuisson à 1950 45min avec poulets non décongelés : ok, manque un peu de
 crispiness À ressayer avec du gingembre
 
-### Ingredients {#ingredients-14}
+### Ingredients
 
 -   2 tablespoons canola oil
 -   1 tablespoon minced garlic
@@ -1356,7 +1400,7 @@ crispiness À ressayer avec du gingembre
 -   8 bone-in, skin-on chicken thighs (about 3 pounds)
 -   Lemon wedges, for serving
 
-### Directions {#directions-11}
+### Directions
 
 1.  Heat the oven to 425 degrees. Heat 1 tablespoon oil in a small
     saucepan over low heat. Add the garlic and ginger and cook, stirring
@@ -1373,23 +1417,27 @@ crispiness À ressayer avec du gingembre
 3.  Drizzle the chicken with the remaining glaze and serve with lemon
     wedges.
 
-## RETRY Quiche
+RETRY Quiche
+------------
 
 Bien cuire le fond de tarte avant (15-20min). Les bords doivent être
 parfaitement cuits !
 
-## RETRY Soupe maïs-lait de coco (Des soupes qui nous font du bien)
+RETRY Soupe maïs-lait de coco (Des soupes qui nous font du bien)
+----------------------------------------------------------------
 
 Même en diminuant le ratio lait de coco/maïs à 40/60 au lieu de 60/40,
 encore très riche. Essayer 70/30
 
-## OK Soupe haricots verts-aspergs
+OK Soupe haricots verts-aspergs
+-------------------------------
 
 Filtrer pour les fibres !
 
-## RETRY Tortilla {#retry-tortilla source-url="https://www.allrecipes.com/recipe/157642/homemade-flour-tortillas/" servings="24" prep-time="15  m" cook-time="45  m" ready-in="1  h"}
+RETRY Tortilla
+--------------
 
-### Ingredients {#ingredients-15}
+### Ingredients
 
 -   4 cups all-purpose flour
 -   1 teaspoon salt
@@ -1397,7 +1445,7 @@ Filtrer pour les fibres !
 -   2 tablespoons lard
 -   1 1/2 cups water
 
-### Directions {#directions-12}
+### Directions
 
 1.  Whisk the flour, salt, and baking powder together in a mixing bowl.
     Mix in the lard with your fingers until the flour resembles
@@ -1412,7 +1460,7 @@ Filtrer pour les fibres !
     tortilla in a tortilla warmer; continue rolling and cooking the
     remaining dough.
 
-### Notes {#notes-18}
+### Notes
 
 1er essai échec (recette de Chef John): trop dure, trop farineuse. Avec
 cette recette ok mais :
@@ -1430,7 +1478,8 @@ cette recette ok mais :
 -   <https://cooking.nytimes.com/recipes/1019621-sonoran-style-flour-tortillas>
 -   <https://www.seriouseats.com/recipes/2015/05/soft-chewy-flour-tortillas-recipe.html>
 
-## RETRY Vegan burger
+RETRY Vegan burger
+------------------
 
 Pois chiches 500g + 1 oeuf + assaissonnement + 150g de farine de
 sarrasin = texture à la poêle OK. On peut probablement diminuer les
@@ -1439,9 +1488,10 @@ n\'attache pas. Source
 <https://www.bbcgoodfood.com/recipes/chickpea-coriander-burgers> Avec du
 yaourt grec : moins sec mais une petite amertume
 
-## RETRY Agneau Biryani {#retry-agneau-biryani source-url="https://cooking.nytimes.com/recipes/1020915-lamb-biryani" servings="8" prep-time="" cook-time="" ready-in="4 1/2 hours, plus overnight marinating"}
+RETRY Agneau Biryani
+--------------------
 
-### Ingredients {#ingredients-16}
+### Ingredients
 
 -   4 green finger chiles (or serrano chiles), stems removed
 -   8 garlic cloves, peeled
@@ -1473,7 +1523,7 @@ yaourt grec : moins sec mais une petite amertume
 -   2 cups mixed fresh cilantro and mint leaves
 -   6 tablespoons unsalted butter, sliced
 
-### Directions {#directions-13}
+### Directions
 
 1.  Prepare the lamb marinade: Add the finger chiles, garlic and ginger
     to a food processor and process until finely chopped. Add the onions
@@ -1517,7 +1567,7 @@ yaourt grec : moins sec mais une petite amertume
     spoon. To reheat, warm the biryani covered in the oven, or
     microwave.
 
-### Notes {#notes-19}
+### Notes
 
 -   Pas de coriandre... Fais avec de la menthe et du basilic
 -   Problème : que faire des clous de girofle + grains de poivre dans la
@@ -1531,27 +1581,29 @@ yaourt grec : moins sec mais une petite amertume
 Au total: réessayer avec de la coriandre, hydrater plus la couche
 supérieur de riz
 
-# Pains
+Pains
+=====
 
 Pour une croûte : augmenter la vapeur
 
-## Homemade Pita Bread {#homemade-pita-bread source-url="https://cooking.nytimes.com/recipes/1016071-homemade-pita-bread" servings="" prep-time="" cook-time="" ready-in="About 2 hours"}
+Homemade Pita Bread
+-------------------
 
-### Ingredients {#ingredients-17}
+### Ingredients
 
-### Directions {#directions-14}
+### Directions
 
-### Notes {#notes-20}
+### Notes
 
 Ne pas trop étaler sinon ne gonfle pas. Ok avec 3min + 3min de cuisson à
 250° sur plaque à pizza
 
-## Levain [[sourdough]{.smallcaps}]{.tag tag-name="sourdough"} {#levain-1}
+Levain <span class="tag" tag-name="sourdough">sourdough</span>
+--------------------------------------------------------------
 
 ### RETRY Overnight country blonde (Flour, water, salt, yeast)
 
 1.  Problèmes :
-
     -   pâte difficile à façonner
     -   colle au torchon malgré beaucoup de farine
     -   résultat trop plat
@@ -1574,7 +1626,6 @@ Ne pas trop étaler sinon ne gonfle pas. Ok avec 3min + 3min de cuisson à
     bake at noon. Levain
 
 2.  Ingrédients
-
     INGREDIENT QUANTITY Mature, active levain 100 g White flour 400 g
     Whole wheat flour 100 g Water 400 g, 85ºF to 90ºF (29ºC to 32ºC)
 
@@ -1583,21 +1634,20 @@ Ne pas trop étaler sinon ne gonfle pas. Ok avec 3min + 3min de cuisson à
     sea salt 22 g 2.2%
 
 3.  Instuctions
-
-    1.  a\. Feed the levain About 24 hours after your previous feeding
-        of the levain, discard all but 100 grams of levain, leaving the
-        remainder in your 6-quart tub.
+    1.  a\. Feed the levain About 24 hours after your previous feeding of the
+        levain, discard all but 100 grams of levain, leaving the remainder in
+        your 6-quart tub.
 
     Add 400 grams of white flour, 100 grams of whole wheat flour, and
     400 grams of water at 85°F to 90°F (29°C to 32°C) and mix by hand
     just until incorporated. Cover and let rest at room temperature for
     7 to 9 hours before mixing the final dough.
 
-    1.  b\. Autolyse After 7 to 9 hours, mix the 804 grams of white
-        flour, the 50 grams of rye flour, and the 26 grams of whole
-        wheat flour by hand in a 12-quart round tub. Add the 684 grams
-        of 90°F to 95°F (32°C to 35°C) water and mix by hand just until
-        incorporated. Cover and let rest for 20 to 30 minutes.
+    1.  b\. Autolyse After 7 to 9 hours, mix the 804 grams of white flour, the 50
+        grams of rye flour, and the 26 grams of whole wheat flour by hand in a
+        12-quart round tub. Add the 684 grams of 90°F to 95°F (32°C to 35°C)
+        water and mix by hand just until incorporated. Cover and let rest for 20
+        to 30 minutes.
     2.  Mix the final dough Sprinkle the 22 grams of salt evenly over
         the top of the dough.
 
@@ -1658,9 +1708,10 @@ Ne pas trop étaler sinon ne gonfle pas. Ok avec 3min + 3min de cuisson à
     set the loaf on its side so air can circulate around it. Let the
     loaf rest for at least 20 minutes before slicing.
 
-## Pain à burger {#pain-à-burger source-url="https://www.allrecipes.com/recipe/233652/homemade-hamburger-buns/" servings="8" prep-time="20  m" cook-time="15  m" ready-in="3  h  45  m"}
+Pain à burger
+-------------
 
-### Ingredients {#ingredients-18}
+### Ingredients
 
 -   1 (.25 ounce) package active dry yeast (such as Fleischmann\'s
     ActiveDry Yeast®)
@@ -1675,7 +1726,7 @@ Ne pas trop étaler sinon ne gonfle pas. Ok avec 3min + 3min de cuisson à
 -   1 tablespoon milk
 -   1 teaspoon sesame seeds, or as needed
 
-### Directions {#directions-15}
+### Directions
 
 1.  Line a baking sheet with a silicone mat or parchment paper.
 2.  Place yeast into bowl of a large stand mixer; whisk in 1/2 cup flour
@@ -1714,21 +1765,24 @@ Ne pas trop étaler sinon ne gonfle pas. Ok avec 3min + 3min de cuisson à
     cool completely, tear the buns apart, and slice in half crosswise to
     serve.
 
-### Notes {#notes-21}
+### Notes
 
 Bonne recette, rappelle la brioche. Levée dans un four tiède : 2h et
 30min respectivement. Cuisson 35min à 190° Façonner plus \"en boule\"
 pour éviter qu\'ils ne soient trop plats
 
-## Pain au sarrasin
+Pain au sarrasin
+----------------
 
 ### 1/3 sarassin, 2/3 farine complète : goût curieux, un peu lourd
 
-## Pain blanc
+Pain blanc
+----------
 
 ### Recette du NYT \"No-Knead\" fonctionne bien, avec 1/2 CC de levure pour 500g
 
-## Pain complet
+Pain complet
+------------
 
 <http://bakeryaddict.canalblog.com/archives/2012/07/24/24767223.html>
 
@@ -1740,7 +1794,8 @@ costaud
 
 -   seulement de la farine complète !
 
-## Pain de seigle
+Pain de seigle
+--------------
 
 ### Majoritairement farine de seigle, avec un peu de farine de blé au début +
 
@@ -1750,9 +1805,11 @@ pendant processus
 -   30min premiere levée, retravaillé 10min après, 1h15 seconde levée,
     cuisson 50min à 200° : pas levé, juste étalé.
 
-## Pain pita
+Pain pita
+---------
 
-## Pizza
+Pizza
+-----
 
 ### Overnight pizza from \"Flour, yeast, water, salt\"
 
@@ -1764,23 +1821,25 @@ directement... 10min à 250 + 3 min gril !
 Temps de cuisson identiques, on sent un peu le levain au niveau de la
 croûte. Bonne pâte également
 
-## Grissini
+Grissini
+--------
 
 <https://www.wildyeastblog.com/grissini-revisited/>
 
-### Ingredients {#ingredients-19}
+### Ingredients
 
 340 g flour 200 g water 9 g (1.5 t.) salt 23 g olive oil 228 g mature
 100%-hydration sourdough starter (doit flotter)
 
-### Notes {#notes-22}
+### Notes
 
 Cuisson \~15min à 200°
 
-## Foccacia [[sourdough]{.smallcaps}]{.tag tag-name="sourdough"} {#foccacia}
+Foccacia <span class="tag" tag-name="sourdough">sourdough</span>
+----------------------------------------------------------------
 
 Recette de \"flour, water, yeast, salt\"
 
-### Notes {#notes-23}
+### Notes
 
 -   Pâte un peu humide avec temps de cuisson x2

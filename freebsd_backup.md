@@ -1,17 +1,19 @@
-# Bepo
+Bepo
+====
 
 Récupérer le fichier
 <http://download.tuxfamily.org/dvorak/devel/fr-dvorak-bepo-kbdmap-1.0rc2.tgz>
 
-``` shell
+``` {.shell}
 mv /home/alex/Downloads/fr-dvorak-bepo-kbdmap-1.0rc2/fr-dvorak-bepo.kbd //usr/share/vt/keymaps/fr.dvorak.bepo
 ```
 
-# rc.conf
+rc.conf
+=======
 
 /etc/rc.conf
 
-``` shell
+``` {.shell}
 hostname="ecchi"
 keymap="fr.dvorak.bepo" # Uses vt so in /usr/share/vt/keymaps
 ifconfig_re0="DHCP"
@@ -47,19 +49,22 @@ dbus_enable="YES"
 fuse_load="YES"
 ```
 
-# /etc/sysctl.conf
+/etc/sysctl.conf
+================
 
     # Allow users to mount
     vfs.usermount=1
 
-# /boot/loader.conf
+/boot/loader.conf
+=================
 
 kern.geom.label.gptid.enable=\"0\" opensolaris~load~=\"YES\"
 openzfs~load~=\"YES\" vboxdrv~load~=\"YES\"
 
 hw.usb.no~bootwait~=1
 
-# Brother printer
+Brother printer
+===============
 
 /etc/devfs.rules :
 
@@ -71,15 +76,17 @@ hw.usb.no~bootwait~=1
 
 Installer brlaser et cups-filter
 
-# ZFS notes
+ZFS notes
+=========
 
 OpenZFS est utilisation avec 12.2 mais ne pas mettre à jour le root
 avant la version 13 ! Par défaut, les autres pool ne sont pas importées
 donc il faut rajouter zfs import -a dans /etc/rc.d/zfs.
 
-# /etc/fstab
+/etc/fstab
+==========
 
-``` shell
+``` {.shell}
 # Device        Mountpoint               FStype Options     Dump    Pass#
 /dev/ada0p2     none                 swap   sw      0       0
 # Linux
@@ -102,39 +109,43 @@ linsysfs        /compat/ubuntu/sys      linsysfs        rw,late                 
 /home           /compat/ubuntu/home     nullfs          rw,late                      0       0
 ```
 
-# xorg (nvidia)
+xorg (nvidia)
+=============
 
 /usr/local/etc/X11/xorg.conf.d/driver-nvidia.conf
 
-``` shell
+``` {.shell}
 Section "Device"
     Identifier "NVIDIA card"
     Driver "nvidia"
 EndSection
 ```
 
-# nzbget
+nzbget
+======
 
 Cf backups nzbget.conf
 
-# nzbhydra
+nzbhydra
+========
 
 Copying indexers must be done by hand... Cf backups
 /usr/local/nzbhydra2/nzbhydra.yml
 
-# crontab
+crontab
+=======
 
-``` shell
+``` {.shell}
 MAILTO=""
 */5 *   *   *   *   /bin/sh /usr/home/alex/scripts/mbsync_notmuch.sh
 0   */3 *   *   *   /usr/local/bin/fish /usr/home/alex/backups/backup.fish
 0 * * * * DISPLAY=:0 $HOME/projects/simple-dwall/simple-dwall.fish
 @reboot /usr/local/bin/tmux new-session -d -s rtorrent '/usr/local/bin/rtorrent'
 @reboot /usr/local/bin/emacs --daemon
-
 ```
 
-# backup
+backup
+======
 
     #!/usr/local/bin/fish
     # 3 steps procedure :
@@ -143,15 +154,15 @@ MAILTO=""
     #   2. Backup to the cloud using rsync
     #
     # Backup data either in clear or encrypted
-    # - google -> to google drive (clear)
-    # - hubic -> to Hubic and Mega(clear)
-    # - local config files -> google and hubic (encrypted)
-    # - raspberry config files -> google and hubic (encrypted)
-    # - local rtorrent -> google and hubic (encrypted)
-    # - raspberry rtorrent -> google and hubic (encrypted)
-    set root "/home/alex/backups"
+    # - google -&gt; to google drive (clear)
+    # - hubic -&gt; to Hubic and Mega(clear)
+    # - local config files -&gt; google and hubic (encrypted)
+    # - raspberry config files -&gt; google and hubic (encrypted)
+    # - local rtorrent -&gt; google and hubic (encrypted)
+    # - raspberry rtorrent -&gt; google and hubic (encrypted)
+    set root &quot;/home/alex/backups&quot;
 
-    # Duplicity needs a passphrase. Use pass "backup/duplicity"
+    # Duplicity needs a passphrase. Use pass &quot;backup/duplicity&quot;
     set -x PASSPHRASE (cat /home/alex/.pass.txt)
 
     # #------- Raspberry: backup -----
@@ -161,11 +172,11 @@ MAILTO=""
     # Warning : --include implyies everything is excluded so we need /** at the end
     # Don't forget the / in the folder too..
     set tmp ~/backups/raspberry-tmp/
-    rclone sync --include "/home/alex/Downloads/torrents/**" \
-        --include "/home/alex/Downloads/session/**" \
-        --include "/usr/local/etc/**"  \
-        --include "/etc/**"  \
-        --include "/boot/loader.conf"  pi:/ $tmp
+    rclone sync --include &quot;/home/alex/Downloads/torrents/**&quot; \
+        --include &quot;/home/alex/Downloads/session/**&quot; \
+        --include &quot;/usr/local/etc/**&quot;  \
+        --include &quot;/etc/**&quot;  \
+        --include &quot;/boot/loader.conf&quot;  pi:/ $tmp
     # Encrypt it
     duplicity $tmp file:///home/alex/backups/raspberry
 
@@ -186,8 +197,8 @@ MAILTO=""
     #------------ Backup all encnrypted and non encrypted
 
     # Backup is then made with rsync because there is a symlink
-    # desktop -> google/desktop
-    # desktop -> hubic /desktop
+    # desktop -&gt; google/desktop
+    # desktop -&gt; hubic /desktop
     #--- All
     # Google drive and mega can be managed with rclone
     rclone -L sync --exclude 'Coopétition/' --drive-import-formats .xlsx $root/google/  google:
@@ -198,21 +209,26 @@ MAILTO=""
     #--- Passphrase
     /usr/local/bin/pass git push
 
-# Sci-hub et DNS resolv.conf
+Sci-hub et DNS resolv.conf
+==========================
 
-## Sous linux
+Sous linux
+----------
 
 On edite directement /etc/resolv.conf
 
-#nameserver 208.67.222.222 #nameserver 208.67.220.220
+1.  nameserver 208.67.222.222 \#nameserver 208.67.220.220
 
 nameserver 8.8.8.8 nameserver 8.8.4.4
 
-#nameserver 194.158.122.10 #nameserver 194.158.122.15
+1.  nameserver 194.158.122.10 \#nameserver 194.158.122.15
 
-#nameserver 192.168.1.254
+<!-- -->
 
-## Freebsd
+1.  nameserver 192.168.1.254
+
+Freebsd
+-------
 
 /etc/resolv.conf est réécrit par dhclient. On met les nouveau DNS dans
 /etc/resolvconf.conf. Pour scihub :
@@ -222,24 +238,26 @@ nameserver 8.8.8.8 nameserver 8.8.4.4
 
 Puis
 
-``` shell
+``` {.shell}
 resolvconf -u
 ```
 
-# musicpd
+musicpd
+=======
 
 Changer le chemin en /data/music dans /usr/local/etc/musicpd.conf Puis
 
-``` shell
+``` {.shell}
 mkdir /var/mpd/.mpd/playlists
 touch /var/mpd/.mpd/database
 chown -R mpd /var/mpd/
 service musicpd onestart
 ```
 
-# KILL Windows as guest
+KILL Windows as guest
+=====================
 
-*Plante régulièrement => virtualbox plutôt* Guide
+*Plante régulièrement =\> virtualbox plutôt* Guide
 <https://github.com/churchers/vm-bhyve/wiki/Running-Windows>
 <https://srobb.net/vm-bhyve.html>
 
@@ -249,9 +267,9 @@ service musicpd onestart
 
 Ajouter à /etc/rc.conf vm~enable~=\"YES\" vm~dir~=\"zfs:zroot/windows\"
 
-sudo vm init sudo cp *usr/local/share/examples/vm-bhyve/windows.conf
-*zroot/windows*.templates* sudo vm switch add public re0 sudo vm create
--t windows winguest
+sudo vm init sudo cp \'\'usr/local/share/examples/vm-bhyve/windows.conf
+*zroot/windows*.templates\'\' sudo vm switch add public re0 sudo vm
+create -t windows winguest
 
 sudo pkg install tigervnc-viewer
 
@@ -262,7 +280,8 @@ localhost:5900
 
 Appuyer sur une touche pour lancer l\'install
 
-# Latest au lieu de quartely
+Latest au lieu de quartely
+==========================
 
 /etc/pkg/FreeBSD.conf
 
@@ -272,49 +291,49 @@ Appuyer sur une touche pour lancer l\'install
     # create a /usr/local/etc/pkg/repos/FreeBSD.conf file:
     #
     #   mkdir -p /usr/local/etc/pkg/repos
-    #   echo "FreeBSD: { enabled: no }" > /usr/local/etc/pkg/repos/FreeBSD.conf
+    #   echo &quot;FreeBSD: { enabled: no }&quot; &gt; /usr/local/etc/pkg/repos/FreeBSD.conf
     #
 
     FreeBSD: {
-      url: "pkg+http://pkg.FreeBSD.org/${ABI}/latest",
-      mirror_type: "srv",
-      signature_type: "fingerprints",
-      fingerprints: "/usr/share/keys/pkg",
+      url: &quot;pkg+http://pkg.FreeBSD.org/${ABI}/latest&quot;,
+      mirror_type: &quot;srv&quot;,
+      signature_type: &quot;fingerprints&quot;,
+      fingerprints: &quot;/usr/share/keys/pkg&quot;,
       enabled: yes
 
 }
 
-# raspberry
+raspberry
+=========
 
 loader.conf
 
-
     # Configure USB OTG; see usb_template(4).
     hw.usb.template=3
-    umodem_load="YES"
+    umodem_load=&quot;YES&quot;
     # Multiple console (serial+efi gop) enabled.
-    boot_multicons="YES"
-    boot_serial="YES"
+    boot_multicons=&quot;YES&quot;
+    boot_serial=&quot;YES&quot;
     # Disable the beastie menu and color
-    beastie_disable="YES"
-    loader_color="NO"
+    beastie_disable=&quot;YES&quot;
+    loader_color=&quot;NO&quot;
 
 /etc/rc.conf
 
-    hostname="generic"
-    #ifconfig_DEFAULT="DHCP"
+    hostname=&quot;generic&quot;
+    #ifconfig_DEFAULT=&quot;DHCP&quot;
     # Static ip for MAM
-    ifconfig_genet0="inet 192.168.1.78 netmask 255.255.255.0"
-    defaultrouter="192.168.1.254"
-    sshd_enable="YES"
-    sendmail_enable="NONE"
-    sendmail_submit_enable="NO"
-    sendmail_outbound_enable="NO"
-    sendmail_msp_queue_enable="NO"
-    growfs_enable="YES"
-    ntpd_enable="YES"
-    powerd_enable="YES"
-    powerd_flags="-r 1"
+    ifconfig_genet0=&quot;inet 192.168.1.78 netmask 255.255.255.0&quot;
+    defaultrouter=&quot;192.168.1.254&quot;
+    sshd_enable=&quot;YES&quot;
+    sendmail_enable=&quot;NONE&quot;
+    sendmail_submit_enable=&quot;NO&quot;
+    sendmail_outbound_enable=&quot;NO&quot;
+    sendmail_msp_queue_enable=&quot;NO&quot;
+    growfs_enable=&quot;YES&quot;
+    ntpd_enable=&quot;YES&quot;
+    powerd_enable=&quot;YES&quot;
+    powerd_flags=&quot;-r 1&quot;
 
 /etc/ssh/sshd~config~
 
@@ -325,7 +344,7 @@ loader.conf
 
 \~/.rtorrent.rc
 
-    # Global upload and download rate in KiB. "0" for unlimited.
+    # Global upload and download rate in KiB. &quot;0&quot; for unlimited.
     download_rate = 3500
     upload_rate = 1000
 
@@ -341,14 +360,14 @@ loader.conf
 
     ## Watch a directory for new torrents, and stop those that have been
     ## deleted.
-    schedule = watch_directory_fantasy, 10, 10, "load.start=~/Downloads/torrents/books/fantasy/*.torrent,d.directory.set=/media/books/fantasy"
-    schedule = watch_directory_litterature, 10, 10, "load.start=~/Downloads/torrents/books/litterature/*.torrent,d.directory.set=/media/books/litterature"
-    schedule = watch_directory_medecine, 10, 10, "load.start=~/Downloads/torrents/books/medecine/*.torrent,d.directory.set=/media/books/medecine"
-    schedule = watch_directory_horror, 10, 10, "load.start=~/Downloads/torrents/books/horror/*.torrent,d.directory.set=/media/books/horror"
-    schedule = watch_directory_thriller, 10, 10, "load.start=~/Downloads/torrents/books/thriller/*.torrent,d.directory.set=/media/books/thriller"
-    schedule = watch_directory_history, 10, 10, "load.start=~/Downloads/torrents/books/history/*.torrent,d.directory.set=/media/books/history"
-    schedule = watch_directory_cs, 10, 10, "load.start=~/Downloads/torrents/books/cs/*.torrent,d.directory.set=/media/books/cs"
-    schedule = watch_directory_science, 10, 10, "load.start=~/Downloads/torrents/books/science/*.torrent,d.directory.set=/media/books/science"
+    schedule = watch_directory_fantasy, 10, 10, &quot;load.start=~/Downloads/torrents/books/fantasy/*.torrent,d.directory.set=/media/books/fantasy&quot;
+    schedule = watch_directory_litterature, 10, 10, &quot;load.start=~/Downloads/torrents/books/litterature/*.torrent,d.directory.set=/media/books/litterature&quot;
+    schedule = watch_directory_medecine, 10, 10, &quot;load.start=~/Downloads/torrents/books/medecine/*.torrent,d.directory.set=/media/books/medecine&quot;
+    schedule = watch_directory_horror, 10, 10, &quot;load.start=~/Downloads/torrents/books/horror/*.torrent,d.directory.set=/media/books/horror&quot;
+    schedule = watch_directory_thriller, 10, 10, &quot;load.start=~/Downloads/torrents/books/thriller/*.torrent,d.directory.set=/media/books/thriller&quot;
+    schedule = watch_directory_history, 10, 10, &quot;load.start=~/Downloads/torrents/books/history/*.torrent,d.directory.set=/media/books/history&quot;
+    schedule = watch_directory_cs, 10, 10, &quot;load.start=~/Downloads/torrents/books/cs/*.torrent,d.directory.set=/media/books/cs&quot;
+    schedule = watch_directory_science, 10, 10, &quot;load.start=~/Downloads/torrents/books/science/*.torrent,d.directory.set=/media/books/science&quot;
 
 
     schedule = untied_directory,5,5,stop_untied=
@@ -387,16 +406,17 @@ loader.conf
         bind --user -s -M $mode \es __fish_prepend_doas
     end
 
-    alias tma="tmux a -d -t"
-    alias tms="tmux new-session -s"
-    alias ttorr="tmux a -d -t rtorrernt"
+    alias tma=&quot;tmux a -d -t&quot;
+    alias tms=&quot;tmux new-session -s&quot;
+    alias ttorr=&quot;tmux a -d -t rtorrernt&quot;
 
     # Allow tramp connection from emacs
-    if test "$TERM" = "dumb"
+    if test &quot;$TERM&quot; = &quot;dumb&quot;
         exec sh
     end
 
-# poudrier config
+poudrier config
+===============
 
 /usr/local/etc/poudriere.conf
 

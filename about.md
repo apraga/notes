@@ -13,7 +13,7 @@ Publications :
     anisotropic clay-like suspensions*. Soft Matter. Available behind a
     [paywall](https://pubs.rsc.org/en/content/articlelanding/2021/sm/d0sm02081h/unauth#!divAbstract)
 
-See my CV in [French](files/cv_alexis_praga_fr.pdf) or in
-[English](files/cv_alexis_praga_en.pdf).
+See my CV in [French](files/cv_alexis_praga_fr.pdf "wikilink") or in
+[English](files/cv_alexis_praga_en.pdf "wikilink").
 
 You can always [send me a mail](mailto:alexis.praga@free.fr).

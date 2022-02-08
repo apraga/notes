@@ -2,21 +2,22 @@ Here, I\'ll explain how to configure FreeBSD to share media content over
 the network using NFS, and how to configure Kodi to access it from your
 TV.
 
-## Server
+Server
+------
 
 First define which folders will be accessible to whom. In
-`/etc/exports`{.verbatim}, I share /media to everyone on my network
+`/etc/exports`, I share /media to everyone on my network
 (192.168.1.\*\*)
 
-``` shell
+``` {.shell}
 /media  -alldirs -maproot=root -network=192.168.1.0/24
 ```
 
 Note the syntax is different from Linux !
 
-Then simply activate NFS by adding in `/etc/rc.conf`{.verbatim} :
+Then simply activate NFS by adding in `/etc/rc.conf` :
 
-``` shell
+``` {.shell}
 # NFS for Kodi
 # Order is important : rpcbind first, then nfs and mountd
 rpcbind_enable="YES"
@@ -31,24 +32,25 @@ NB: The Kodi wiki mentions lockd and statd but it is unnecessary.
 Reboot or start the service (start rpcbind first, otherwise it will not
 work !)
 
-``` shell
+``` {.shell}
 $ service rpcbind start
 $ service nfsd start
 ```
 
 Check the export is working :
 
-``` shell
+``` {.shell}
 $ showmount -e
 Exports list on localhost:
 /media                             192.168.1.0
 ```
 
-## TV
+TV
+--
 
 We will use the Kodi application. Add a new source by choosing NFS and
 entering by hand : (the folder is not found automatically)
 
-`nfs://192.168.1.XXX/media`{.verbatim}
+[`nfs://192.168.1.XXX/media`](nfs://192.168.1.XXX/media)
 
 where XXX is the end of the server IP. Profit !
