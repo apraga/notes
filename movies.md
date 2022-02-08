@@ -1,122 +1,117 @@
-To watch
-========
-
--   Au hasard Balthazard
--   Burning
--   Contact
--   Dallas Buyers Club
--   Darkest Hour
--   Dragon Ball Super: Broly
--   Dragon Ball Super: Resurrection F
--   Early Spring
--   Fences
--   Hidden Figures
--   If Beale Street could talk
--   I, Tonya
--   Little Women
--   Mandy
--   One Child Nation
--   Onward
--   Paterson
--   Paths of glory
--   Room
--   Selma
--   Shaun the Sheep
--   Shoplifters
--   Amour (2012)
--   The Chronicle of Anna Magdalena Bach
--   The Draughtsman\'s Contract
--   Nightwatching
--   Still Walking
--   Stray Doy
--   The Endless (2017)
--   The Fifth Estate (2013)
--   The Jungle Book 2016
--   The lives of other
--   Tokyo Story
--   We, the Animals
-
-Done
-====
-
--   A Silent Voice (2016) {rating: 5}
--   101 Dalmatians (1996) {rating: 3.5}
--   12 Angry Men (1957) {rating: 4.5}
--   12 Years a Slave (2013) {rating: 4}
--   2001: A Space Odyssey {rating: 4}
--   47 Ronin (2013) {rating: 3.5}
--   Alien: Covenant {rating: 4}
--   Aliens (1986) {rating: 4.5}
--   All About Eve {rating: 4.5}
--   American Animals (2018) {rating: 4}
--   Arrival (2016) {rating: 4.5}
--   Babel (2006) {rating: 3.5}
--   Caché (2005) {rating: 4}
--   Captain America: Civil War (2016) {rating: 3.5}
--   City of God {rating: 5}
--   Don\'t Breathe (2016) {rating: 4}
--   Dragon Ball Z: Battle of Gods (2013) {rating: 3}
--   How to Train Your Dragon (2010) {rating: 4.5}
--   How to Train Your Dragon 2 (2014) {rating: 4}
--   How to Train Your Dragon: The Hidden World (2019) {rating: 4}
--   Dunkirk (2017) {rating: 4}
--   Enola Holmes (2020) {rating: 3.8}
--   First Blood (1982) {rating: 4}
--   First Man (2018) {rating: 4}
--   Green Room (2015) {rating: 4}
--   High and Low (1963) {rating: 4.5}
--   Iron Man (2008) {rating: 3.5}
--   Iron Man 2 (2010) {rating: 3}
--   Iron Man 3 (2013) {rating: 3}
--   La La Land (2016) {rating: 4}
--   La pianiste (2001) {rating: 4}
--   Leave No Trace (2018) {rating: 4}
--   Logan (2017) {rating: 4}
--   Looper (2012) {rating: 4}
--   Manchester by the Sea (2016) {rating: 4}
--   Mission: Impossible - Fallout (2018) {rating: 4}
--   Mission: Impossible - Rogue Nation (2015) {rating: 4}
--   Moana (2016) {rating: 4}
--   Moonlight (2016) {rating: 4}
--   Mother (2009) {rating: 4}
--   Mustang (2015) {rating: 4}
--   Nice Guys (2000) {rating: 4}
--   Planet Earth: A Celebration (2020) {rating: 4.5}
--   Plein Soleil {rating: 4}
--   Portrait d\'une jeune fille en feu {rating: 4.5}
--   Ran {rating: 4}
--   Rashomon {rating: 4.5}
--   Red Beard {rating: 4}
--   Riders of Justice {rating: 4}
--   Rise of the Planet of the Apes (2011) {rating: 3.5}
--   Roma (2018) {rating: 4.5}
--   Sanjuro {rating: 4}
--   Seven Samurai {rating: 4.5}
--   Shang-Chi and the Legend of the Ten Rings {rating: 3.5}
--   Snowpiercer {rating: 4}
--   Sorry to Bother You (2018) {rating: 4}
--   Soul (2020) {rating: 4}
--   Spiderman: Far from home {rating: 3.5}
--   Spirited Away (2001) {rating: 4.5}
--   Start Wars: The Last of the Skywalker {rating: 3.5}
--   The Death of Stalin (2017) {rating: 4.5}
--   The Endless Trench (2019) {rating: 4}
--   The GateKeepers {rating: 4}
--   The Handmaiden (2016) {rating: 4}
--   The Hidden Fortress {rating: 4}
--   The Hunt (2012) {rating: 4}
--   The Irishman {rating: 4}
--   The Irishman {rating: 4}
--   The Lego Batman Movie {rating: 4}
--   The Lighthouse (2019) {rating: 4}
--   The Shape of Water (2017) {rating: 4.5}
--   The Shining (1980) {rating: 4}
--   The Throne of Blood {rating: 4}
--   The Witch (2015) {rating: 4.5}
--   Three Billboards Outside Ebbing, Missouri (2017) {rating: 4}
--   Uncut Gems (2019) {rating: 4}
--   Us {rating: 3.5}
--   Widows (2018) {rating: 4}
--   Wonder Woman (2017) {rating: 4}
--   Yojimbo {rating: 4}
--   Zero Dark Thirty (2012) {rating: 4}
+- [ ] Amour (2012)
+- [ ] Au hasard Balthazard
+- [ ] Burning
+- [ ] Contact
+- [ ] Dallas Buyers Club
+- [ ] Darkest Hour
+- [ ] Dragon Ball Super: Broly
+- [ ] Dragon Ball Super: Resurrection F
+- [ ] Early Spring
+- [ ] Fences
+- [ ] Hidden Figures
+- [ ] I, Tonya
+- [ ] If Beale Street could talk
+- [ ] Little Women
+- [ ] Mandy
+- [ ] Nightwatching
+- [ ] One Child Nation
+- [ ] Onward
+- [ ] Paterson
+- [ ] Paths of glory
+- [ ] Room
+- [ ] Selma
+- [ ] Shaun the Sheep
+- [ ] Shoplifters
+- [ ] Still Walking
+- [ ] Stray Doy
+- [ ] The Chronicle of Anna Magdalena Bach
+- [ ] The Draughtsman\'s Contract
+- [ ] The Endless (2017)
+- [ ] The Fifth Estate (2013)
+- [ ] The Jungle Book 2016
+- [ ] The lives of other
+- [ ] Tokyo Story
+- [ ] We, the Animals
+- [X] 101 Dalmatians (1996) {rating: 3.5}
+- [X] 12 Angry Men (1957) {rating: 4.5}
+- [X] 12 Years a Slave (2013) {rating: 4}
+- [X] 2001: A Space Odyssey {rating: 4}
+- [X] 47 Ronin (2013) {rating: 3.5}
+- [X] A Silent Voice (2016) {rating: 5}
+- [X] Alien: Covenant {rating: 4}
+- [X] Aliens (1986) {rating: 4.5}
+- [X] All About Eve {rating: 4.5}
+- [X] American Animals (2018) {rating: 4}
+- [X] Arrival (2016) {rating: 4.5}
+- [X] Babel (2006) {rating: 3.5}
+- [X] Caché (2005) {rating: 4}
+- [X] Captain America: Civil War (2016) {rating: 3.5}
+- [X] City of God {rating: 5}
+- [X] Don\'t Breathe (2016) {rating: 4}
+- [X] Dragon Ball Z: Battle of Gods (2013) {rating: 3}
+- [X] Dunkirk (2017) {rating: 4}
+- [X] Enola Holmes (2020) {rating: 3.8}
+- [X] First Blood (1982) {rating: 4}
+- [X] First Man (2018) {rating: 4}
+- [X] Green Room (2015) {rating: 4}
+- [X] High and Low (1963) {rating: 4.5}
+- [X] How to Train Your Dragon (2010) {rating: 4.5}
+- [X] How to Train Your Dragon 2 (2014) {rating: 4}
+- [X] How to Train Your Dragon: The Hidden World (2019) {rating: 4}
+- [X] Iron Man (2008) {rating: 3.5}
+- [X] Iron Man 2 (2010) {rating: 3}
+- [X] Iron Man 3 (2013) {rating: 3}
+- [X] Jodorowsky's Dune {rating: 4}
+- [X] La La Land (2016) {rating: 4}
+- [X] La pianiste (2001) {rating: 4}
+- [X] Leave No Trace (2018) {rating: 4}
+- [X] Logan (2017) {rating: 4}
+- [X] Looper (2012) {rating: 4}
+- [X] Manchester by the Sea (2016) {rating: 4}
+- [X] Mission: Impossible - Fallout (2018) {rating: 4}
+- [X] Mission: Impossible - Rogue Nation (2015) {rating: 4}
+- [X] Moana (2016) {rating: 4}
+- [X] Moonlight (2016) {rating: 4}
+- [X] Mother (2009) {rating: 4}
+- [X] Mustang (2015) {rating: 4}
+- [X] Nice Guys (2000) {rating: 4}
+- [X] Planet Earth: A Celebration (2020) {rating: 4.5}
+- [X] Plein Soleil {rating: 4}
+- [X] Portrait d\'une jeune fille en feu {rating: 4.5}
+- [X] Ran {rating: 4}
+- [X] Rashomon {rating: 4.5}
+- [X] Red Beard {rating: 4}
+- [X] Riders of Justice {rating: 4}
+- [X] Rise of the Planet of the Apes (2011) {rating: 3.5}
+- [X] Roma (2018) {rating: 4.5}
+- [X] Sanjuro {rating: 4}
+- [X] Seven Samurai {rating: 4.5}
+- [X] Shang-Chi and the Legend of the Ten Rings {rating: 3.5}
+- [X] Snowpiercer {rating: 4}
+- [X] Sorry to Bother You (2018) {rating: 4}
+- [X] Soul (2020) {rating: 4}
+- [X] Spiderman: Far from home {rating: 3.5}
+- [X] Spirited Away (2001) {rating: 4.5}
+- [X] Start Wars: The Last of the Skywalker {rating: 3.5}
+- [X] The Death of Stalin (2017) {rating: 4.5}
+- [X] The Draughtman's contact {rating: 4}
+- [X] The Endless Trench (2019) {rating: 4}
+- [X] The GateKeepers {rating: 4}
+- [X] The Handmaiden (2016) {rating: 4}
+- [X] The Hidden Fortress {rating: 4}
+- [X] The Hunt (2012) {rating: 4}
+- [X] The Irishman {rating: 4}
+- [X] The Irishman {rating: 4}
+- [X] The Lego Batman Movie {rating: 4}
+- [X] The Lighthouse (2019) {rating: 4}
+- [X] The Shape of Water (2017) {rating: 4.5}
+- [X] The Shining (1980) {rating: 4}
+- [X] The Throne of Blood {rating: 4}
+- [X] The Witch (2015) {rating: 4.5}
+- [X] Three Billboards Outside Ebbing, Missouri (2017) {rating: 4}
+- [X] Uncut Gems (2019) {rating: 4}
+- [X] Us {rating: 3.5}
+- [X] Widows (2018) {rating: 4}
+- [X] Wonder Woman (2017) {rating: 4}
+- [X] Yojimbo {rating: 4}
+- [X] Zero Dark Thirty (2012) {rating: 4}
