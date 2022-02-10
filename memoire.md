@@ -4,7 +4,7 @@ Biblio :
 - combien d'articles
 - quelle dysmorphie ?
 
-### @nuovo2021 : 3 hommes + 1 femme (+ hypoplasie cérébelleuse). Photos : 2 garçon
+### @nuovo2021 : 3 hommes + 1 femme légèrement dysmorphique (0 photos)
 Carrier females are usually unaffected, probably due
 to protective skewed inactivation of the X chromosome; nevertheless,
 some paucisymptomatic females have been reported (most with a ran-
@@ -74,11 +74,57 @@ Cf tableau pour dysmorpho des études
 |Cerebellar hypoplasia|+|+|−|−,−,NA|−,−|NA,NA,NA,−,NA|−|−|+,+,+,+|+,+,Mi.,+|−,+,+,−|+|+,+,+,+,+,+|NA|+,+,+|+,+,+|NA,+,NA,+|+,+,+,+|+|+,+,+,+,+
 |Ventriculomegaly|+|+|−|−,−,NA|+,+|NA,NA,NA,+,NA|−|+|+,+,−,+|+,+,−,+|−,+,+,−|+|+,+,+,+,+,+|NA,NA,NA,−|+,+,+|+,+,+|NA,−,NA,+|+,+,+,+|+|+,+,+,+,+
 
-- Al-Owain 2011 : 3 garçons avec légèe dysmorphie, *1 fille dysmorphique* (cf photo)
+## Al-Owain 2011 : 3 garçons avec légèe dysmorphie, *1 fille dysmorphique* (cf photo)
 https://pubmed.ncbi.nlm.nih.gov/20528889/
 prominent forehead, long flat facies, strabismus, large ears, long tubular nose, and prominent chin. 
 
-- Bergman 2003 : mère porteuse, strabisme seul
+## Menten 2007 1 fille
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2688819/
+Only a mild craniofacial dysmorphism with strabismus, a receding frontal hairline and mild hypotelorism was noted. On the trunk, a supernumerary nipple on both sides was present. 
+ prominent maxillary incisors, relatively large ears and high forehead.
+## Santos-Reboucas 2014 : famille avec 3 femmes
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3992576/
+ mère (atteinte++), grand-mère, tante (0 photos)
+ mère : machoire proéminente, Up standing palpebral fissures; relative large ears (5.9 cm; 50 percentile)
+
+## Philip 2003
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1735502/pdf/v040p00441.pdf
+Mère : macrocephaly (OFC 60 cm) and her facial appearance was very similar to that of her sons  = slightly dysmor-
+phic with deeply set eyes and a prominent chin.
+
+## Moortag 2018
+Since 1998, OPHN1 mutations have been identified in 49 male and 14 female patie
+Dysmorphic
+features are often described in individuals with OPHN1 mutation, consisting of a long face
+with deep-set eyes and marked infra-orbital creases, a long nose and a prominent chin [16, 18,
+23]. However, these characteristics cannot be related to a specifically recognizable clinical
+entity as it has been initially suggested, and absence of dysmorphism was previously reported
+[1, 17, 20, 27, 30, 31]. In our cohort, the more severely affected patients (family A) presented
+some of these reported facial features but affected individuals from family C, and family D
+did not (Fig. 2).
+
+ Carrier females are usually described as asymptomatic, which could be attributed to protective skewed
+inactivation of their affected X chromosome. This hypothesis is strengthened by the fact that a
+random pattern of X chromosome inactivation is observed in most of the affected female
+patients, usually with mild ID as in our cohort [23, 26, 28, 30], but occasionally with severe
+symptoms [16] (Table 1). The large phenotypic variability in females might reflect that the
+inactivation patterns measured in the peripheral blood may not be representative for other
+tissues, in particular for the brain. 
+
+Moreover, it is now well-known that about 10% of X-
+linked genes show variable patterns of inactivation and are expressed to different extents from
+some inactive X chromosomes [33]. Interestingly, we noted that 1 out of 14 previously
+reported female patients with a severe phenotype, including moderate to severe ID,
+dysmorphic features and cerebellar signs, showed an extremely skewed X-inactivation pattern
+[28]. We could hypothesize that this severely affected female expressed her X mutated allele.
+However, expression studies to identify the inactive X chromosome were lacking in this
+publication [28]
+
+## Tentler 1999 2 soeurs, sans dysmorphie rapportée
+https://www.nature.com/articles/5200320.pdf
+
+## Autres
+- Bergman 2003 : mère porteuse saine, strabisme seul
 10.1093/brain/awg173  
 - des Portes 2004 : 4 hommes
 10.1002/ajmg.a.20422 
@@ -86,3 +132,10 @@ prominent forehead, long flat facies, strabismus, large ears, long tubular nose,
 10.1097/MCD.0000000000000139
 - chabrol 2005 : 7 garçons
   10.1002/ajmg.a.30882 
+- zani 2005 : plusieurs garçons
+10.1212/01.wnl.0000182813.94713.ee  
+- madrigal 2008 : garçons, pas de dysmorpho
+- classen 2013 : 1 garçon
+10.1007/s00439-013-1296-1
+- zanni  2005 : garçpns
+10.1212/01.wnl.0000182813.94713.ee 
