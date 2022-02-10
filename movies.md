@@ -115,3 +115,4 @@
 - [X] Wonder Woman (2017) {rating: 4}
 - [X] Yojimbo {rating: 4}
 - [X] Zero Dark Thirty (2012) {rating: 4}
+- [X] Remainder (2013) {rating: 4}
