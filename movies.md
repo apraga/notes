@@ -11,6 +11,7 @@
 - [ ] Hidden Figures
 - [ ] I, Tonya
 - [ ] If Beale Street could talk
+- [ ] Les parapluies de Cherhbourg
 - [ ] Little Women
 - [ ] Mandy
 - [ ] Nightwatching
@@ -25,10 +26,10 @@
 - [ ] Still Walking
 - [ ] Stray Doy
 - [ ] The Chronicle of Anna Magdalena Bach
-- [ ] The Draughtsman\'s Contract
 - [ ] The Endless (2017)
 - [ ] The Fifth Estate (2013)
 - [ ] The Jungle Book 2016
+- [ ] The Philadelphia story
 - [ ] The lives of other
 - [ ] Tokyo Story
 - [ ] We, the Animals
@@ -81,6 +82,7 @@
 - [X] Ran {rating: 4}
 - [X] Rashomon {rating: 4.5}
 - [X] Red Beard {rating: 4}
+- [X] Remainder (2013) {rating: 4}
 - [X] Riders of Justice {rating: 4}
 - [X] Rise of the Planet of the Apes (2011) {rating: 3.5}
 - [X] Roma (2018) {rating: 4.5}
@@ -95,6 +97,7 @@
 - [X] Start Wars: The Last of the Skywalker {rating: 3.5}
 - [X] The Death of Stalin (2017) {rating: 4.5}
 - [X] The Draughtman's contact {rating: 4}
+- [X] The Draughtsman\'s Contract {rating: 4}
 - [X] The Endless Trench (2019) {rating: 4}
 - [X] The GateKeepers {rating: 4}
 - [X] The Handmaiden (2016) {rating: 4}
@@ -115,4 +118,3 @@
 - [X] Wonder Woman (2017) {rating: 4}
 - [X] Yojimbo {rating: 4}
 - [X] Zero Dark Thirty (2012) {rating: 4}
-- [X] Remainder (2013) {rating: 4}
