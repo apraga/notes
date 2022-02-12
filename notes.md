@@ -1,14 +1,9 @@
 # Recherche
 - [these](these)
 - [memoire](memoire)
-# Listes
-
-- [books lists](books-lists)
 
 # Divers
-
 - [anime](anime.md)
-- [books lists](books-lists.md)
 - [books](books.md)
 - [comics](comics.md)
 - [cooking](cooking.md)

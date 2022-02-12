@@ -1,13 +1,15 @@
+Voir [books lists](books-lists) pour des idées
+
 # Computer science
 
-- HOLD The art of computer programming, volume 1
-- STRT Haskell Programming From First Principles \[5/31\]
+- [.] The art of computer programming, volume 1
+- [.] Haskell Programming From First Principles [5/31]
 
 # Fanfic
 
 - Harry potter
-    - [X] [Sacrifice Arc](notes/reviews/sacrifice_arc.org "wikilink")
-    - [X] [Harry Potter and the Methods of Rationality](notes/reviews/arithmancer.org "wikilink")
+    - [X] [Sacrifice Arc](notes/reviews/sacrifice_arc.org)
+    - [X] [Harry Potter and the Methods of Rationality](notes/reviews/arithmancer.org)
     - [X] The Arithmancer
 
 # Fantasy
@@ -48,8 +50,7 @@
 - [X] Wells, H. G. - The Time Machine
 - [X] Wells, H. G. - The War of the Worlds
 
-Histoire
-========
+# Histoire
 
 - [X] Magni, C. (2003): Les Olmèques: des origines au mythe 
 - [X] Delumeau, J. (2005): Une histoire du monde aux temps modernes 
@@ -79,8 +80,7 @@ Horror
 - [X] Pride and Prejudice and Zombies by Jane Austen
 - [X] At the mountains of madness the definitive edition
 
-Litterature
-===========
+# Litterature
 
 - [ ] Atlas Shrugged
 - [ ] Beowulf (Michael Alexander translation)
@@ -105,37 +105,31 @@ Litterature
 - [X] The hound of the baskervilles
 - [X] The name of the rose
 
-La pleiade
-----------
+# La pleiade
 
-- [X] Duby, [Oeuvres](notes/reviews/duby.org "wikilink")
-- [X] [Les Mille Et Une
-    Nuits](reviews/milles_et_une_nuits.org "wikilink") \[3/3\]
-- [X] [Le Livre du Graal](reviews/graal.org "wikilink") \[3/3\]
-- [X] Homère \[Iliade -- Odyssée\]\[reviews/homere.org\]
-- [X] Hugo, [Les Travailleurs de la
-    mer](reviews/travailleurs_de_la_mer.org "wikilink") -- [Notre-Dame
-    de Paris](reviews/notre_dame_de_paris.org "wikilink")
+- [X] Duby, [Oeuvres](books/duby.md)
+- [X] [Les Mille Et Une Nuits](milles_et_une_nuits.md) [3/3]
+- [X] [Le Livre du Graal](books/graal.md) [3/3]
+- [X] Homère : [Iliade -- Odyssée](books/homere.org)
+- [X] Hugo, [Les Travailleurs de la mer](books/travailleurs_de_la_mer.md) -- [Notre-Dame de Paris](books/notre_dame_de_paris.md)
 
 # Math
 
-- STRT \[\#A\] Gowers, T. (2010): The princeton companion to
-    mathematics
-- TODO Hastie, T., Tibshirani, R., & Friedman, J. (2009): The elements
-    of statistical learning Texte de référence pour classification,
-    machine learning etc. Semble intéressant NB : An Introduction to
-    Statistical Learning = version avec moins de maths. \# Medecine
-- STRT [Cecil Goldman](Cecil-Goldman) (26th edition)
-- STRT [Auerbach](Auerbach)\'s wilderness medecine
+- [.] Gowers, T. (2010): The princeton companion to mathematics
+- [ ] Hastie, T., Tibshirani, R., & Friedman, J. (2009): The elements of statistical learning 
+Texte de référence pour classification, machine learning etc. Semble intéressant 
+NB : An Introduction to Statistical Learning = version avec moins de maths. \# Medecine
+- [ ] [Cecil Goldman](Cecil-Goldman) (26th edition)
+- [ ] [Auerbach](Auerbach's wilderness medecine)
 
 # Philosophy
 
-- STRT A History of Western Philosophy
+- [.] A History of Western Philosophy
 
 # Science
 
-- TODO IPPC : Summary for policymaker
-- TODO The Feynman Lectures on Physics
+- [ ] IPPC : Summary for policymaker
+- [ ] The Feynman Lectures on Physics
 
 # Thriller
 
