@@ -322,3 +322,15 @@ Nominalisation (suite) Rappel : マリアさんは出張に行くのは来週で
 peut également utiliser のが (qui s'apparente à　ことがあります)
 子供ど遊ぶのがすきです お菓子を作るのがじょうずです ou のを selon le
 bsoin お金を払うのをわすれました メール返事だすのをわれれました
+
+# 2022-02-13 - 12. Leçon 10
+ので = "donc". Comme からmais plus poli
+- -いので
+- nom/adjectif en na+なので
+On utilie la plain form ! 
+- ありません->ない
+お金がないので、何も買いません
+- です->な
+- でした->だった
+雨だったので、どこにもでかけませんでした
+
