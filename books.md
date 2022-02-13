@@ -13,8 +13,8 @@ Voir [books lists](books-lists) pour des idées
     - [X] The Arithmancer
 
 # Fantasy
-
-- Robin Hobb
+- [ ] The Name of the Wind (Kingkiller chronicles)
+- [ ] Robin Hobb
 - Cherry, C. J - Fortress
     - [X] Fortress in the Eye of Time
     - [X] Fortress of Eagles
