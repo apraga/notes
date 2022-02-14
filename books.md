@@ -18,6 +18,7 @@ Voir [books lists](books-lists) pour des idées
 - Cherry, C. J - Fortress
     - [X] Fortress in the Eye of Time
     - [X] Fortress of Eagles
+    - [X] Fortress of Owls
 - [ ] Stardust
 - [X] G. Cook - The Black Company 6/6
 - [ ] [Pern](Pern)

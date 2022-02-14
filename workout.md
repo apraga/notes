@@ -3253,4 +3253,10 @@ Handstand avec movement
 Full body avec movement athlete mais fait seulement la moitié (covid)
 
 # 2022-02-11 Running
-15 minut
+15 minutes
+
+# 2022-02-13 Running
+46min
+
+# 2022-02-14 Workout
+40min mais peu satisfait des exercices
