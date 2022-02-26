@@ -2,7 +2,6 @@
 - [ ] Au hasard Balthazard
 - [ ] Burning
 - [ ] Contact
-- [ ] Dallas Buyers Club
 - [ ] Darkest Hour
 - [ ] Dragon Ball Super: Broly
 - [ ] Dragon Ball Super: Resurrection F
@@ -22,7 +21,6 @@
 - [ ] Selma
 - [ ] Shaun the Sheep
 - [ ] Shoplifters
-- [ ] Still Walking
 - [ ] Stray Doy
 - [ ] The Chronicle of Anna Magdalena Bach
 - [ ] The Endless (2017)
@@ -39,6 +37,7 @@
 - [X] 47 Ronin (2013) - 3.5/5 
 - [X] A Silent Voice (2016) - 5/5 
 - [X] Alien: Covenant - 4/5 
+- [ ] The adventures of robin hood (1938) - 4/5
 - [X] Aliens (1986) - 4.5/5 
 - [X] All About Eve - 4.5/5 
 - [X] American Animals (2018) - 4/5 
@@ -47,6 +46,7 @@
 - [X] Caché (2005) - 4/5 
 - [X] Captain America: Civil War (2016) - 3.5/5 
 - [X] City of God - 5/5 
+- [X] Dallas Buyers Club - 4/5
 - [X] Don\'t Breathe (2016) - 4/5 
 - [X] Dragon Ball Z: Battle of Gods (2013) - 3/5 
 - [X] Dunkirk (2017) - 4/5 
@@ -65,6 +65,7 @@
 - [X] La La Land (2016) - 4/5 
 - [X] La pianiste (2001) - 4/5 
 - [X] Leave No Trace (2018) - 4/5 
+- [X] Les parapluies de Cherbourg - 4/5
 - [X] Les parapluies de Cherhbourg : 4.5/5
 - [X] Logan (2017) - 4/5 
 - [X] Looper (2012) - 4/5 
@@ -95,6 +96,7 @@
 - [X] Spiderman: Far from home - 3.5/5 
 - [X] Spirited Away (2001) - 4.5/5 
 - [X] Start Wars: The Last of the Skywalker - 3.5/5 
+- [X] Still Walking (2008) 4/5
 - [X] The Death of Stalin (2017) - 4.5/5 
 - [X] The Draughtman's contact - 4/5 
 - [X] The Draughtsman\'s Contract - 4/5 
