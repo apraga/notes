@@ -3260,3 +3260,10 @@ Full body avec movement athlete mais fait seulement la moitié (covid)
 
 # 2022-02-14 Workout
 40min mais peu satisfait des exercices
+
+# 2022-02-24
+Tricking : 1ere fois
+Parkour 
+
+# 2022-02-26
+Tricking : 10min, régression
