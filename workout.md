@@ -3263,7 +3263,18 @@ Full body avec movement athlete mais fait seulement la moitié (covid)
 
 # 2022-02-24
 Tricking : 1ere fois
+- Butterfly Kick
+- Roundhouse Kick
+- Hook Kick
+- Macaco
+- Scoot
+
 Parkour 
 
 # 2022-02-26
 Tricking : 10min, régression
+- cartwheel
+ 
+# 2022-02-27
+Tricking : comme avant
+Workout 45 min
