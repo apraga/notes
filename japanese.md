@@ -334,3 +334,5 @@ On utilie la plain form !
 - でした->だった
 雨だったので、どこにもでかけませんでした
 
+# 2022-02-27 - 13. Lecon  10
+Discussion surtout + ので

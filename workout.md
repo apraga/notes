@@ -3278,3 +3278,8 @@ Tricking : 10min, régression
 # 2022-02-27
 Tricking : comme avant
 Workout 45 min
+
+# 2022-02-28 Tricking
+Butterfly kick
+Macaco
+Kicks

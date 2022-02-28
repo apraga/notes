@@ -39,5 +39,9 @@ On vérifiee dans distinfo le résultat
 
     So yes, hs-git-annex is quite cumbersome port in this regard.\"
 
+## Python 
+Plusieurs versions de python
+Using "DEFAULT_VERSIONS=python=3.10" in "/usr/local/etc/poudriere.d/py310-make.conf" and adding "-z py310" to "poudriere testport"
 
+	doas poudriere testport -z python38 -j 130Ramd64 -o deskutils/taskwarrior-tui^C
 
