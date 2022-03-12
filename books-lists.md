@@ -70,7 +70,7 @@
     - [ ] 63. GOETHE, Théâtre complet.
     - [ ] 64. PLATON, Œuvres complètes, II.
     - [ ] 65. MALLARMÉ, Œuvres complètes, I.
-    - [ ] 66. TOLSTOÏ, La Guerre et la Paix.
+    - [X] 66. TOLSTOÏ, La Guerre et la Paix.
     - [ ] 67. CHATEAUBRIAND, Mémoires d'outre-tombe, I.
     - [ ] 68. RIMBAUD, Œuvres complètes.
     - [ ] 69. SAINT-SIMON, Mémoires, I. 70. MALRAUX, Œuvres
