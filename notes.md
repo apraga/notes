@@ -1,6 +1,7 @@
 # Recherche
-- [these](these)
-- [memoire](memoire)
+- [these](../../code/mustard/README.md)
+- [memoire](recherche/memoire)
+- [memoire old](recherche/memoire-old)
 
 # Projets
 - [assistant vol](assistant-vol)

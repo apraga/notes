@@ -3283,3 +3283,8 @@ Workout 45 min
 Butterfly kick
 Macaco
 Kicks
+
+# 2022-03-08 Tricking
+Inner et outer kick
+Macaco
+# 2022-03-09 Tricking
