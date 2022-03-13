@@ -22,3 +22,7 @@ rebasculer en majuscule Ex: SuWanai NB: on peut utiliser ";". Ex:
 
 # Vimwiki
 Créer un post-commit hook (.git/hooks/post-commit)
+
+# Articles avec vim
+vim-pandoc donne la complétion de la biblio avec C-x C-o
+Il y a des conflits avec vim wiki
