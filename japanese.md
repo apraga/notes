@@ -1,11 +1,9 @@
-2021-09-30 - 1. Aya-sensei : Intro
-==================================
+# 2021-09-30 - 1. Aya-sensei : Intro
 
-2021-10-08 - 2. Aya-sensei : Leçon 9 (JFBP II)
-==============================================
+# 2021-10-08 - 2. Aya-sensei : Leçon 9 (JFBP II)
 
-Vocabulaire
------------
+## Vocabulaire
+
 
 -   友人（ゆうじん）: ami
 -   募集（ぼしゅう）: recruter
@@ -14,19 +12,17 @@ Vocabulaire
 -   遺伝学 （いでんがく）: genetique
 -   医大 （いだい）: faculté de médecine
 
-Grammaire
----------
+## Grammaire
 
 ### Modifier avec des clauses
 
 -   雨ではない日: un jour sans pluie
 -   経験が長い人: une personne avec beaucoup d'expérience
 
-2021-10-15 - 3. Leçon 6 (JFBP II)
-=================================
+# 2021-10-15 - 3. Leçon 6 (JFBP II)
 
-Vocabulaire
------------
+## Vocabulaire
+
 
 -   顔色: visage (ex: 顔色がよくありませんんね = tu n'as pas l'air bien)
 -   膝（ひざ）: genou
@@ -35,8 +31,8 @@ Vocabulaire
 -   むりをする: en faire trop, むり（な）: impossible (むりできる ne pas
     pouvoir)
 
-Grammaire
----------
+## Grammaire
+
 
 ### Adverbes
 
@@ -47,11 +43,10 @@ serait bien que tu ... Attention, forme en ーた! Ex:
 forme négative n'utilise pas la forme en ーた
 煙草(たばこ)を吸わないほうがいいですよ
 
-2021-10-21 - 4. Leçon 3
-=======================
+# 2021-10-21 - 4. Leçon 3
 
-Vocabulaire
------------
+## Vocabulaire
+
 
 -   頭(あたま)/歯/喉 がいたい(あたま): mal à la tête/dent/gorge
 -   気分(きぶん)/調子(ちょうし) がわるいんです: je ne me sens pas très
@@ -72,8 +67,8 @@ Vocabulaire
 -   covoiturage: ライドシェリン(？aya-sensein) 相乗り(wiki)
 -   犬がきらい: détester les chiens
 
-Grammaire
----------
+## Grammaire
+
 
 ### ーていません: Pas encore:
 
@@ -81,18 +76,17 @@ Grammaire
 ferais pas \[c'est facultatif !\]) \#\#\# ーんです： expliquer
 まだ書いていないんです (je suis en train)
 
-2021-11-06 - 5. Quizz + Leçon 7
-===============================
+# 2021-11-06 - 5. Quizz + Leçon 7
 
 Solution du quizz
------------------
+
 
 I. 1. に 2. に 3. に 4. が 5. で(?) II. 1. これから 2. そろそろ (まだ =
 OK) まだ 3. 実は これから III. 1. もってくる+んです。2。帰った 行く した
 買った
 
-Vocabulaire
------------
+## Vocabulaire
+
 
 -   さっき: il y a un moment
 -   こんど: cette fois
@@ -114,17 +108,16 @@ Vocabulaire
 -   ボックスを開く（ひらく）: ouvrir des boites (carton)
 -   ポスターを貼る（はる）: accrocher un poster
 
-Grammaire
----------
+## Grammaire
+
 
 -   V + 前に（まえ) : avant de \~ Attention, pas de passé ni de négatif
     ! Ex: 日本に来る前に、日本語の勉強を始めました \~ てから: après
 
-2021-11-13 - 6. Fin leçon 7
-===========================
+# 2021-11-13 - 6. Fin leçon 7
 
-Vocabulaire
------------
+## Vocabulaire
+
 
 -   卒業(そつぎょう）
 -   Xと遊び: jouer avec quelqu'un (ou un animal) Mais Xで遊び: jouer
@@ -141,8 +134,8 @@ Vocabulaire
 -   狩猟（しゅりょう）: chasse
 -   猟師（りょうし）: chasseur
 
-Grammaire
----------
+## Grammaire
+
 
 -   \~てから: 2 sens
     -   succession d'action, ex: 食べてから、飲んて、読んて (note: plus
@@ -154,11 +147,10 @@ Grammaire
 -   の時(とき)/ adjectif en i い時/adjectif en na な時 = quand ex:
     ３さいのとき、: quand j'avais 3 ans
 
-2021-11-27 - 7. Fin leçon 7
-===========================
+# 2021-11-27 - 7. Fin leçon 7
 
-Vocabulaire
------------
+## Vocabulaire
+
 
 -   熊に注意（くまにちゅうい）: attention à l'ours !
 -   転職（てんしょく） changer de travail
@@ -184,18 +176,17 @@ Vocabulaire
     = chacun)
 -   営業部（えいぎょうぶ）: le département des ventes d'une entreprise
 
-Grammaire
----------
+## Grammaire
+
 
 -   bien que : ときも、～ ex: bien que j'aie attrapé froid, je dois
     travailler 風邪を引くときも、働かなければなりません (NB: il y a
     aussi のに et ても)
 
-2021-12-11 - 8. Leçon 8
-=======================
+# 2021-12-11 - 8. Leçon 8
 
-Vocabulaire
------------
+## Vocabulaire
+
 
 -   塾（じゅく）: cours du soir au Japon
 -   辺り（あたり）: (dans) le voisinage
@@ -209,7 +200,9 @@ Vocabulaire
 -   ３人前（さんにんまえ）: portion pour 3 personne
 -   届ける（とどける）: délivrer
 -   休暇中（きょうかちゅう）: en vacances
--   小さなマラソン：course \#\# Grammaire
+-   小さなマラソン：course 
+- 
+## Grammaire
 -   ～になります Ajectif en -i : remplacer i par く+ なります
     忙しい　忙し　くなります（いそがしい） Ajectif en -na et nom : ajout
     de に 有名になります 教師になりたい（きょうし）
@@ -217,11 +210,9 @@ Vocabulaire
     春（はる）にないて、あたたかくなりました
 -   ここに来るとき: sur le chemin, en venant ici
 
-2021-12-18 - 9. Leçon 9
-=======================
+# 2021-12-18 - 9. Leçon 9
 
-Vocabulaire
------------
+## Vocabulaire
 
 -   預かる（あずかる）：garder, s'occuper de
 -   設計図（せっけいず）：plan (de construction)
@@ -254,11 +245,10 @@ Vocabulaire
 -   citation \~林さんは「教徒に行きます」といっていました= directe
     \~林さんは教徒に行くといっていました = indirecte
 
-2022-01-08 - 10. Lecon 9
-========================
+# 2022-01-08 - 10. Lecon 9
 
-Vocabulaire
------------
+## Vocabulaire
+
 
 -   陰性（いんせい）: négatif (test, ex: covid)
 -   陽性 （ようせい）: positif (test, ex: covid)
@@ -286,37 +276,34 @@ Vocabulaire
 -   かわる: changer
 -   （きれいになる: rénover -　汚くなる（きた）: se dégrader
 -   広くなる（ひろ）devenir plus large - 狭くなる（せま）: devenir plus
-    étroit \#\# Grammaire
+    étroit 
+    
+## Grammaire
 -   ～ と思います:je pense que X Verbe と思います na-ajectif +
     だ/ではない と思います i-ajectif と思います Aは～と思っています: A
     pense que X (attention !)
 -   いい -\> よくない(négatif) NB: よかった(passé),　よくなかった (passé
     négatif)
 
-2022-01-16 - 11. Lecon 9
-========================
+# 2022-01-16 - 11. Lecon 9
 
-Vocabulaire (cf Anki)
----------------------
+## Vocabulaire (cf Anki)
 
-Grammaire
----------
+## Grammaire
 
 Transforner une phrase en nom avec の
 明日の会議にでるのは、かどうさんです
 
 Attention, il faut mieux mettre が ミルズさんが出張に行くのは　来週です
 
-2022-01-29 - 11. Leçon 9
-========================
+# 2022-01-29 - 11. Leçon 9
 
-Vocabulaire
------------
+## Vocabulaire
+
 
 Cf Anki
 
-Grammaire
----------
+## Grammaire
 
 Nominalisation (suite) Rappel : マリアさんは出張に行くのは来週です On
 peut également utiliser のが (qui s'apparente à　ことがあります)
@@ -324,6 +311,7 @@ peut également utiliser のが (qui s'apparente à　ことがあります)
 bsoin お金を払うのをわすれました メール返事だすのをわれれました
 
 # 2022-02-13 - 12. Leçon 10
+
 ので = "donc". Comme からmais plus poli
 - -いので
 - nom/adjectif en na+なので
@@ -335,4 +323,5 @@ On utilie la plain form !
 雨だったので、どこにもでかけませんでした
 
 # 2022-02-27 - 13. Lecon  10
+
 Discussion surtout + ので
