@@ -4,7 +4,7 @@
 - [memoire old](recherche/memoire-old)
 
 # Projets
-- [assistant vol](assistant-vol)
+- [assistant vol](assistant-vol.md)
  
 # Divers
 - [anime](anime.md)

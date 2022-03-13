@@ -3287,4 +3287,15 @@ Kicks
 # 2022-03-08 Tricking
 Inner et outer kick
 Macaco
+
 # 2022-03-09 Tricking
+
+# 2022-03-12 Workout
+
+# 2022-03-13 Tricking
+inner 1x15
+outer 2x 15
+back 1x15
+butterfly 1x15 + 1x15 avec demitour
+tornado 1x15 + 1x15 avec demitour
+combo 1x2
