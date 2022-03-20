@@ -201,7 +201,7 @@ OK) まだ 3. 実は これから III. 1. もってくる+んです。2。帰っ
 -   届ける（とどける）: délivrer
 -   休暇中（きょうかちゅう）: en vacances
 -   小さなマラソン：course 
-- 
+ 
 ## Grammaire
 -   ～になります Ajectif en -i : remplacer i par く+ なります
     忙しい　忙し　くなります（いそがしい） Ajectif en -na et nom : ajout
@@ -252,8 +252,7 @@ OK) まだ 3. 実は これから III. 1. もってくる+んです。2。帰っ
 
 -   陰性（いんせい）: négatif (test, ex: covid)
 -   陽性 （ようせい）: positif (test, ex: covid)
--   駅（えき）: gare \[peut aussi être utilisée pour le métro, si le
-    contexte est clair
+-   駅（えき）: gare peut aussi être utilisée pour le métro, si le contexte est clair
 -   転ぶ(転ぶ)：tomber de sa hauteur
 -   落ちる（おちる) :tomber (mais de haut) Nature
 -   木（き）: arbre
@@ -325,3 +324,22 @@ On utilie la plain form !
 # 2022-02-27 - 13. Lecon  10
 
 Discussion surtout + ので
+
+# 2022-03-20 - 14. Leçon 10
+
+## Grammaire 
+Potentialité: on peut utiliser できます ou la forme potentielle
+
+### forme potentielle
+- Verbes réguliers I : う->　える
+ex: 合う　ー＞会える
+話す　ー＞話せる
+- Verbes réguliers II : る->　れる
+ex: 食べる　ー＞食べられる
+見るー＞見られる
+- irréguliers
+来るー＞来られる（こ）
+する　ー＞できる
+# 2022-03-20 - 15. Leçon 10
+
+Discussion surtout
