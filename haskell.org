@@ -1,0 +1,197 @@
+* Astuces
+  :PROPERTIES:
+  :CUSTOM_ID: astuces
+  :END:
+
+Compiler rapidement un script haskell:
+
+=   stak script simple.hs --resolver lts-14.18=
+
+On peut aussi le mettre dans le code source :
+
+=   {- stack script =\\
+=    --resolver lts-14.18=\\
+=   -}=\\
+=   =
+
+* Learning Haskell
+  :PROPERTIES:
+  :CUSTOM_ID: learning-haskell
+  :END:
+
+** Libraries
+   :PROPERTIES:
+   :CUSTOM_ID: libraries
+   :END:
+
+- [X] Shelly - [X] Xmonad
+
+= - Récup de l'écran=\\
+= - Faire un projet cabal=
+
+** Concepts
+   :PROPERTIES:
+   :CUSTOM_ID: concepts
+   :END:
+
+- [X] Functional dependencies
+
+= - [X] =[[https://www.youtube.com/watch?v=JleVecHAad4][=An`` ``introduction`` ``to`` ``Haskell's`` ``kinds=]]= =\\
+= - [X] =[[https://www.youtube.com/watch?v=Qy_yxVkO8no][=Getting`` ``a`` ``little`` ``fancy`` ``with`` ``Haskell's`` ``kinds=]]
+
+- [ ] Backpack
+
+= - [ ] =[[http://blog.ezyang.com/2016/10/try-backpack-ghc-backpack/][=Part`` ``1=]]\\
+= - [ ] =[[https://sebfisch.github.io/haskell-regexp/regexp-play.pdf][=https://sebfisch.github.io/haskell-regexp/regexp-play.pdf=]]\\
+= - [ ] =[[http://blog.ezyang.com/2017/01/try-backpack-cabal-packages/][=Part`` ``2=]]
+
+- [X]
+[[https://www.quora.com/What-are-some-practical-uses-of-bifunctors-in-Haskell/answer/James-Bowen-13][Bifunctors]]
+
+** [[https://www.reddit.com/r/haskell/comments/npxfba/ive_tried_to_learn_haskell_several_times_but_keep/h084wwa?utm_source=share&utm_medium=web2x&context=3][Monday
+Morning Haskell - Reddit]]
+   :PROPERTIES:
+   :CUSTOM_ID: monday-morning-haskell---reddit
+   :END:
+
+- [ ] Foundational building blocks
+
+= - [X] Functor =[[https://mmhaskell.com/monads/functors][=https://mmhaskell.com/monads/functors=]]\\
+= - [X] =[[https://mmhaskell.com/monads/applicatives][=https://mmhaskell.com/monads/applicatives=]]\\
+= - [X] =[[https://mmhaskell.com/monads/tutorial][=https://mmhaskell.com/monads/tutorial=]]\\
+= - [X] =[[https://mmhaskell.com/monads/reader-writer][=https://mmhaskell.com/monads/reader-writer=]]\\
+= - [X] =[[https://mmhaskell.com/monads/state][=https://mmhaskell.com/monads/state=]]\\
+= - [X] =[[https://mmhaskell.com/monads/transformers][=https://mmhaskell.com/monads/transformers=]]\\
+= - [ ]  =[[https://mmhaskell.com/monads/laws][=https://mmhaskell.com/monads/laws=]]\\
+= =
+
+- [ ] real-world example
+
+= - [X] Database=\\
+= - [ ] API=
+
+- [ ] Relax for a few days and watch how interactive programs are being
+composed - [ ] Get back to the real-world example and make it a complete
+Cabal project. - [ ]
+[[https://mmhaskell.com/testing/test-driven-development][Testing]]
+
+** Cabal vs stack
+   :PROPERTIES:
+   :CUSTOM_ID: cabal-vs-stack
+   :END:
+
+Stack: facile à utiliser mais parfois non à jour Cabal: utiliser avec
+ghcup NB: Sous archlinux, le linking dynamique est utilisé par défaut et
+ne semble pas marcher avec cabal. Par exemple, wreq ne trouve pas le
+Prelude.. On peut installer ghc-static ou bien utiliser ghcup
+(recommandé
+[[https://github.com/haskell/haskell-ide-engine/issues/1647][ici]] )
+
+- [X] installer avec ghcup - [X] Tester sur getbook - [X] Tester sur
+askhistorians
+
+* Livres
+  :PROPERTIES:
+  :CUSTOM_ID: livres
+  :END:
+
+** KILL Learn Haskell for your greater good
+   :PROPERTIES:
+   :CUSTOM_ID: kill-learn-haskell-for-your-greater-good
+   :END:
+
+50%
+
+** STRT
+[[books.org::Haskell%20Programming%20From%20First%20Principles][Haskell
+programming from first principles]]
+   :PROPERTIES:
+   :CUSTOM_ID: strt-haskell-programming-from-first-principles
+   :END:
+
+* Contributing
+  :PROPERTIES:
+  :CUSTOM_ID: contributing
+  :END:
+
+** GHC
+   :PROPERTIES:
+   :CUSTOM_ID: ghc
+   :END:
+
+*** - [X] [[https://gitlab.haskell.org/ghc/ghc/-/issues/20261][20261]]
+    :PROPERTIES:
+    :CUSTOM_ID: x-20261
+    :END:
+
+1. WAIT Rebase
+
+*** - [X] Lire commentary
+    :PROPERTIES:
+    :CUSTOM_ID: x-lire-commentary
+    :END:
+
+*** - [X] STRT Lire [[https://www.aosabook.org/en/ghc.html]]
+    :PROPERTIES:
+    :CUSTOM_ID: x-strt-lire-httpswww.aosabook.orgenghc.html
+    :END:
+
+** Panopticum
+   :PROPERTIES:
+   :CUSTOM_ID: panopticum
+   :END:
+
+TODO [[https://foss.heptapod.net/bsdutils/panopticum/-/issues][Issues]]
+
+Faire les version faciles (refactoring prévu)
+
+- ** [X] Regarder pourquoi OPTION_{RADIO} ne passe pas (cf test)
+     :PROPERTIES:
+     :CUSTOM_ID: x-regarder-pourquoi-optionradio-ne-passe-pas-cf-test
+     :END:
+
+DEADLINE: <2021-09-08 Wed> SCHEDULED: <2021-09-07 Tue>
+
+** Darcs
+   :PROPERTIES:
+   :CUSTOM_ID: darcs
+   :END:
+
+*** - [X] --mirror
+    :PROPERTIES:
+    :CUSTOM_ID: x-mirror
+    :END:
+
+[[notmuch:id:shf0ni$h6s$1@ciao.gmane.io][Email from Ben Franksen: Re:
+[darcs-users] Darcs equivalent of force-pushing and branching]]
+[[http://bugs.darcs.net/issue2683][Issue]]
+
+1. TODO Version interactive
+
+   1. Structure Apply.hs:
+      [[file:~/code/darcs/src/Darcs/UI/Commands/Apply.hs::applyCmdCommon%20patchApplier%20patchProxy%20opts%20bundle%20repository%20=%20do][applyCmdCommon]]
+      contient
+
+      - la liste interactives des patches créé par runSelection
+        [[file:~/code/darcs/src/Darcs/UI/SelectChanges.hs::runSelection%20_%20PSC%20%7B%20splitter%20=%20Just%20_%20%7D%20=][runSelection]]
+        ->
+        [[file:home/alex/code/darcs/src/Darcs/UI/SelectChanges.hs::runInvertibleSelection%20::%20forall%20p%20wX%20wY%20.][runInvertibleSelection]]
+
+      ->
+      [[file:~/code/darcs/src/Darcs/UI/SelectChanges.hs::textSelect%20lps'%20pcs%20=][textSelect]]
+      qui pose les questions à l'utilisateur
+
+      - le merge qui contient la nouvelle stratégie du merge, appelé par
+
+      applyPatches, instancié dans
+      [[file:~/code/darcs/src/Darcs/UI/ApplyPatches.hs::standardApplyPatches%20::%20(RepoPatch%20p,%20ApplyState%20p%20~%20Tree)][standardApplyPatches]]
+      ->
+      [[file:~/code/darcs/src/Darcs/UI/ApplyPatches.hs::mergeAndTest%20::%20(RepoPatch%20p,%20ApplyState%20p%20~%20Tree)][mergeAndTest]]
+      qui contient l'option mirroir
+
+   2. Rajouter une 2eme phase de sélection avec liste des patches à
+      supprimer
+
+   3. Merge standard si tous les patches ne sont pas sélectionnés
+
+   4. -a/--all affecte les 2 phases ou non ?

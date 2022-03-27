@@ -1,0 +1,190 @@
+Voir [[file:books-lists][books lists]] pour des idées
+
+* Computer science
+  :PROPERTIES:
+  :CUSTOM_ID: computer-science
+  :END:
+
+- [.] The art of computer programming, volume 1
+- [.] Haskell Programming From First Principles [5/31]
+
+* Fanfic
+  :PROPERTIES:
+  :CUSTOM_ID: fanfic
+  :END:
+
+- Harry potter
+
+  - ☒ [[file:notes/reviews/sacrifice_arc.org][Sacrifice Arc]]
+  - ☒ [[file:notes/reviews/arithmancer.org][Harry Potter and the Methods
+    of Rationality]]
+  - ☒ The Arithmancer
+
+* Fantasy
+  :PROPERTIES:
+  :CUSTOM_ID: fantasy
+  :END:
+
+- ☐ The Name of the Wind (Kingkiller chronicles)
+- ☐ Robin Hobb
+- Cherry, C. J - Fortress
+
+  - ☒ Fortress in the Eye of Time
+  - ☒ Fortress of Eagles
+  - ☒ Fortress of Owls
+
+- ☐ Stardust
+- ☒ G. Cook - The Black Company 6/6
+- ☐ [[file:Pern]]
+- ☒ R.R Martin - A Song of Ice and Fire 5/5
+- ☒ R.R Martin - Windhaven
+- ☐ R.R Martin - Fire and Blood
+- Pratchett
+
+  1. ☒ The Color of Magic (Discworld, #1; Rincewind, #1)
+  2. ☒ The light fantastic
+  3. ☒ The color of magic : a discworld novel
+
+- ☒ Harry Potter 7/7
+- ☒ Tolkien - Lord of the Rings 3/3
+- ☒ Tolkien - The Silmarillion
+- ☒ Tolkien - The hobbit, or, there and back again
+- ☐ Earthsea
+
+  1. ☐ A Wizard of Earthsea (1968)
+  2. ☐ The Tombs of Atuan (1970)
+  3. ☐ The Farthest Shore (1972)
+  4. ☐ Tehanu 1990
+  5. ☐ Tales from Earthsea (2001)
+  6. ☐ The Other Wind (2001)
+
+- ☒ Clarke, S. - Dr Norrel and Mr Strange
+
+* Fiction
+  :PROPERTIES:
+  :CUSTOM_ID: fiction
+  :END:
+
+- ☒ Violet Evergarden [2/2]
+- ☒ Liu, C. - The three-body problem :sci-fi:
+- ☒ Liu, C. - The dark forest
+- ☒ Liu, C. - Death's end :sci-fi:
+- ☒ Wells, H. G. - The Time Machine
+- ☒ Wells, H. G. - The War of the Worlds
+
+* Histoire
+  :PROPERTIES:
+  :CUSTOM_ID: histoire
+  :END:
+
+- ☒ Magni, C. (2003): Les Olmèques: des origines au mythe
+- ☒ Delumeau, J. (2005): Une histoire du monde aux temps modernes
+- ☒ Grousset, Renée (1942): Histoire de la chine
+- ☒ Gombrich, E. H. (1995): The story of art
+- ☒ Plutarch, (2001): Plutarch's lives
+- ☒ Une Histoire Du Monde Aux Temps Modernes
+- ☒ Armée romaine sous le Haut-Empire
+- ☒ Tite-Live - Histoire romaine (Gallimard)
+
+  - ☒ livre i à v : de la fondation de rome à l'invasion gauloise
+  - ☒ livres xxi à xxv : la seconde guerre punique i
+  - ☒ livres vi à x : la conquête de l'italie
+  - ☒ livres xli à xlv : les progrès de l'hégéemonie romaine
+  - ☒ livres xxvi à xxx : la seconde guerre punique ii o
+  - ☒ livres xxxi à xxxv : la libération de la grèce
+  - ☒ Histoire Romaine: Livres Xxi à Xxv
+  - ☒ Histoire romaine, livres xxxxvi à xl
+
+- ☒ Le Glay, M., Voisin, J., & Le Bohec, Y. (1991): Histoire romaine
+- ☒ Polybe: Histoire
+- STRT [#A] Oxford history of Ancient Egypt
+- ☒ Croisades et Orient latin - XIe-XIVe siècle
+
+* Horror
+  :PROPERTIES:
+  :CUSTOM_ID: horror
+  :END:
+
+- ☒ Pride and Prejudice and Zombies by Jane Austen
+- ☒ At the mountains of madness the definitive edition
+
+* Litterature
+  :PROPERTIES:
+  :CUSTOM_ID: litterature
+  :END:
+
+- ☐ Atlas Shrugged
+- ☐ Beowulf (Michael Alexander translation)
+- ☐ Catch 22
+- ☒ A tale of two cities
+- ☒ Belle du seigneur
+- ☒ Candide
+- ☒ Crime and punishment
+- ☒ Cyrano de bergerac
+- ☒ Dubliners
+- ☒ Foucault's pendulum
+- ☒ Germinal
+- ☒ I, Claudius
+- ☒ Illusions : The Adventures of a Reluctant Messiah
+- ☒ Jane Eyre
+- ☒ La peste
+- ☒ Le Petit Prince
+- ☒ Lolita
+- ☒ Pride and Prejudice (J. Austen)
+- ☒ Si c'est un homme
+- ☒ The fall of the house of usher
+- ☒ The hound of the baskervilles
+- ☒ The name of the rose
+
+* La pleiade
+  :PROPERTIES:
+  :CUSTOM_ID: la-pleiade
+  :END:
+
+- ☐ Le coran
+
+- ☒ Duby, [[file:books/duby.md][Oeuvres]]
+
+- ☒ [[file:books/homere.md][Homère, Iliade -- Odyssée]]
+
+- ☒ Hugo, [[file:books/travailleurs_de_la_mer.md][Les Travailleurs de la
+  mer]] -- [[file:books/notre_dame_de_paris.md][Notre-Dame de Paris]]
+
+- ☒ [[file:books/graal.md][Le Livre du Graal]] [3/3]
+
+- ☒ [[file:milles_et_une_nuits.md][Les Mille Et Une Nuits]] [3/3]
+
+- ☒ [[file:books/guerre_et_paix.md][Tolstoi, Guerre et paix]] # Math
+
+- [.] Gowers, T. (2010): The princeton companion to mathematics
+
+- ☐ Hastie, T., Tibshirani, R., & Friedman, J. (2009): The elements of
+  statistical learning Texte de référence pour classification, machine
+  learning etc. Semble intéressant NB : An Introduction to Statistical
+  Learning = version avec moins de maths. # Medecine
+
+- ☐ [[file:Cecil-Goldman][Cecil Goldman]] (26th edition)
+
+- ☐ [[file:Auerbach's%20wilderness%20medecine][Auerbach]]
+
+* Philosophy
+  :PROPERTIES:
+  :CUSTOM_ID: philosophy
+  :END:
+
+- [.] A History of Western Philosophy
+
+* Science
+  :PROPERTIES:
+  :CUSTOM_ID: science
+  :END:
+
+- ☐ IPPC : Summary for policymaker
+- ☐ The Feynman Lectures on Physics
+
+* Thriller
+  :PROPERTIES:
+  :CUSTOM_ID: thriller
+  :END:
+
+- ☒ The Lost Apothecary

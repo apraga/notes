@@ -1,0 +1,184 @@
+* TODO Organiser enterrement vie de garçon :joris:
+* DES :anki:
+:PROPERTIES:
+:CATEGORY: DES
+:END:
+** TODO Structuration du génome et mécanismes mutationnels
+** TODO Oncogénétique: introduction
+** TODO Diagnostic prénatal
+** TODO SEPI et TD
+** TODO Pathologies fréquentes : maladies endocriniennes et métabolisme
+** TODO Pathologies fréquentes : anomalies de la croissance
+** TODO Pathologies fréquentes : hématologie
+** TODO Pathologies fréquentes : maladies du tissu conjonctif
+** TODO Oncogénétique
+** TODO Pathologies fréquentes : dermatogénétique
+** DONE Introduction à la dysmorphologie
+** DONE Grandes technologies et bioinformatique
+** DONE Aspects réglementaires et éthiques
+** DONE Mucoviscidose
+** DONE développement
+** DONE Pendred
+** DONE Syndrome de Sotos
+** DONE Syndrome d'Usher
+** DONE T21
+** DONE Prader-Willi
+** DONE AMS
+** DONE Duchenne
+** DONE Surdité
+** DONE Myopathies
+** DONE Steinher
+* DIU dysmorpho
+:PROPERTIES:
+:CATEGORY: dysmorpho
+:END:
+** Notes :anki:
+*** TODO Intro dysmorpho - Verloes
+*** TODO Empreinte génomique
+*** TODO Beckwith, Silver Russel
+*** TODO Scoliose
+*** TODO Syndromes cytogénétique - Salanville
+*** TODO Dysostose mandibulo faciale
+*** TODO Williams dup 7p11.2
+*** TODO Pathologie génétique de la reproduction
+*** TODO Malformations oculaires
+*** TODO Comprendre les test génétiques
+*** TODO Fente
+*** TODO Gonosome
+*** TODO Smith-Mangenis
+*** TODO 22q11
+*** TODO Dysmorpho nouveau-né
+*** TODO Autopsie foetale
+** Mémoire
+:PROPERTIES:
+:CATEGORY: memoire
+:END:
+*** TODO Biblio
+**** TODO WDR45 et fonction
+**** TODO Figure avec tikz des variant sur la séquence d'acide aminé
+**** TODO Lister variants et clinique
+*** DONE Biblio ophn1
+* TODO Appeler pour demander carte médecin internat
+* Notes génétique :anki:
+:PROPERTIES:
+:CATEGORY: genetique
+:END:
+** TODO Ficher chapitres lus genetique.college
+** TODO Noonan
+** TODO Charcot-Marie-Toorh genetique
+** TODO Costello
+** TODO CFC
+** TODO alcoolisation foetale
+** TODO kabuki
+** TODO coffin-siris
+** TODO klinefelter
+** TODO turner
+** TODO t13
+** TODO t18
+** TODO hypomélanose d'ito
+** TODO del 4p
+** TODO angelman
+** TODO x fragile
+** TODO digeorge
+** TODO retinoblastome
+** TODO williams
+** TODO smith mageni
+** TODO ataxie spinocérébelleuse
+** TODO ataxie de friedrich
+** TODO nf1
+** TODO sclérose tubéreuse
+** TODO FSHD
+** TODO marfan
+** TODO ehler-danlos
+** TODO polykystose autosomique dominante
+** TODO polykystose autosomique récessive
+** TODO Alport
+** TODO hémophilie
+* Notes biologie
+** Biologie cellulaire Dunod
+*** TODO chapitres déjà fait :anki:
+*** TODO lire
+** Biologie chimie Dunod
+*** TODO lire
+*** TODO Ficher
+* Japonais :japonais:
+** Miura :anki:
+:PROPERTIES:
+:CATEGORY: miura
+:END:
+*** TODO Leçon 2
+**** TODO Grammaire
+*** DONE leçon 1 vocab
+*** DONE Leçon 2 : Vocabulaire
+** Leçon Aya
+:PROPERTIES:
+:CATEGORY: aya
+:END:
+*** TODO Notes
+* TODO Prendre RV dermotologue
+DEADLINE: <2022-04-02 Sat>
+:PROPERTIES:
+:CATEGORY: sante
+:END:
+* TODO Rattraper retard anki
+* Thèse
+** TODO Réflechirr à la techno : django, flask, autre ? these.site
+** TODO Mail Paul pour savoir si on peut publier these
+** TODO Importer tous les champs intéressants these.bdd.labkey
+** TODO Importer pièces jointes these.bdd.labkey
+** TODO Nettoyer pièces jointes these.bdd.labkey
+** TODO Prototype MySQL these.bdd
+** TODO Voir avec Pierre-Yves pour installation prototype these.bdd
+** TODO Demande VM ou Oracle (DSI) pour installation propre these.bdd
+** TODO Autorisation CNIL ? these.bdd
+
+* TODO Contester majoration
+DEADLINE: <2022-03-26 Sat>
+
+* Projet
+:PROPERTIES:
+:CATEGORY: projets
+:END:
+** TODO Liste des videos tricks
+** Assistant
+:PROPERTIES:
+:CATEGORY: assistant
+:END:
+*** DONE Regarder ce qu'Yvain a fait
+* Emacs
+:PROPERTIES:
+:CATEGORY: emacs
+:END:
+** DONE Convertir tâches Taskarrior en attente -> org mode
+DEADLINE: <2022-03-26 Sat 14:00>
+:LOGBOOK:
+CLOCK: [2022-03-26 Sat 12:28]--[2022-03-26 Sat 12:58] =>  0:30
+:END:
+
+[[file:/usr/home/alex/.doom.d/config.el::setq org-directory "~/org/"]]
+** TODO Mail avec notmuch
+DEADLINE: <2022-03-27 Sun>
+** DONE Finir importer org-mode tâches finies depus taskwarrior
+DEADLINE: <2022-03-26 Sat>
+:LOGBOOK:
+CLOCK: [2022-03-26 Sat 13:27]
+:END:
+
+[[file:/usr/home/alex/org/todo.org::*Prendre RV dermotologue][Prendre RV dermotologue]]
+* Inbox
+** DONE Billets de train + carte réduction :florian:
+DEADLINE: <2022-03-27 Sun>
+:PROPERTIES:
+:CATEGORY: mariage
+:END:
+
+[[file:/usr/home/alex/org/todo.org::*Finir importer org-mode tâches finies depus taskwarrior][Finir importer org-mode tâches finies depus taskwarrior]]
+* Ledger
+:PROPERTIES:
+:CATEGORY: compta
+:END:
+** DONE novembre 2021
+** DONE décembre 2021
+** DONE janvier 2022
+** TODO février 2022
+DEADLINE: <2022-03-27 Sun>

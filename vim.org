@@ -1,0 +1,56 @@
+* # Vim et japonais
+  :PROPERTIES:
+  :CUSTOM_ID: vim-et-japonais
+  :END:
+
+Avec neovim # Japanese SKK est une possibilité mais en pratique, ne
+fonctionne pas bien pour les verbes (de mon expérience) Voir ci-dessous
+pour les curieux. Le plus simple est d'utiliser ibus et un terminal qui
+supporte ça (st par exemple).
+
+Pour kitty, il faut démarry kitty avec
+
+#+BEGIN_EXAMPLE
+   sh -c "GLFW_IM_MODULE=ibus kitty"
+#+END_EXAMPLE
+
+cf https://github.com/kovidgoyal/kitty/issues/469
+
+** Installation skk
+   :PROPERTIES:
+   :CUSTOM_ID: installation-skk
+   :END:
+
+Install eskk et un dictionnaire (ex: =pkg install ja-skk= Puis Nihonn Il
+faut une majuscule pour avoir les kanjis ! Source:
+[[https://vi.stackexchange.com/questions/8733/can-i-write-japanese-skk-text-in-vim]]
+Et si le mot contient un mélange de kanji et d'hiragana, il faut
+rebasculer en majuscule Ex: SuWanai NB: on peut utiliser ";". Ex:
+;su;wanai
+
+* Vimwiki
+  :PROPERTIES:
+  :CUSTOM_ID: vimwiki
+  :END:
+
+Créer un post-commit hook (.git/hooks/post-commit)
+
+* Makdown
+  :PROPERTIES:
+  :CUSTOM_ID: makdown
+  :END:
+
+** Articles avec vim
+   :PROPERTIES:
+   :CUSTOM_ID: articles-avec-vim
+   :END:
+
+vim-pandoc donne la complétion de la biblio avec C-x C-o Il y a des
+conflits avec vim wiki
+
+** TODO list
+   :PROPERTIES:
+   :CUSTOM_ID: todo-list
+   :END:
+
+- ☐ peut être coché avec \cb

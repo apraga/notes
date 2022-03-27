@@ -1,0 +1,59 @@
+* Ingénieur de recherche CNRS
+  :PROPERTIES:
+  :CUSTOM_ID: ingénieur-de-recherche-cnrs
+  :END:
+
+Regarder dates. Grilles prédéfinies mais dépendent peu du candidat.
+Montrer qu'on coche toutes les cases. On a une chance face aux candidats
+locaux. Ne pas contacter l'équipe (?)
+
+** IR inria (concours externe, SED)
+   :PROPERTIES:
+   :CUSTOM_ID: ir-inria-concours-externe-sed
+   :END:
+
+Examen écrit. Sur projet pendant 5 ans puis changement d'équipe.
+Contacter l'équipe
+
+** IR université
+   :PROPERTIES:
+   :CUSTOM_ID: ir-université
+   :END:
+
+Site spécialise. Mieux payé mais pas de mobilité. Contacter l'équipe
+
+** Ecole d'ingénieurs (supelec)
+   :PROPERTIES:
+   :CUSTOM_ID: ecole-dingénieurs-supelec
+   :END:
+
+Voir ABG
+
+** Chargé de recherche CNRS, inria
+   :PROPERTIES:
+   :CUSTOM_ID: chargé-de-recherche-cnrs-inria
+   :END:
+
+* Questions passerelle médecine
+  :PROPERTIES:
+  :CUSTOM_ID: questions-passerelle-médecine
+  :END:
+
+Inscrit en P1 ? Retrait admin Qu'avez-vous retenu de votre doctorat ? Et
+la bio informatique ? Qu'est-ce qui vous a intéressé dans le contact
+avec le patient ? Cette "enquête" sur le patients, vous l'avez déjà eu
+dans vos études ? Donc vous abandonnez les mathématiques et la rigueur
+pour l'irrationalité ? Quelle spé ? Plutôt des questions pour
+comprendre. Jury bienveillant, plutôt attentif. Certains souriants
+
+* Calcul des mensualités pour un taux d'intérêt
+  :PROPERTIES:
+  :CUSTOM_ID: calcul-des-mensualités-pour-un-taux-dintérêt
+  :END:
+
+Soit C_{0} le capital emprunté, $n$ le nombre de mensualités et $t$ le
+taux d'intérêt annuel, $t_m$ le taux d'intérêt mensuel. Attention, la
+formule se faut t_{m}, qui se calcule soit t_{m} = t/12 (taux
+prortionnel) soit par t_{m} = -1 (taux actuariel)
+
+Au final, la mensualité est M =

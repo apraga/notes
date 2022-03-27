@@ -1,0 +1,455 @@
+* 2021-09-30 - 1. Aya-sensei : Intro
+  :PROPERTIES:
+  :CUSTOM_ID: aya-sensei-intro
+  :END:
+
+* 2021-10-08 - 2. Aya-sensei : Leçon 9 (JFBP II)
+  :PROPERTIES:
+  :CUSTOM_ID: aya-sensei-leçon-9-jfbp-ii
+  :END:
+
+** Vocabulaire
+   :PROPERTIES:
+   :CUSTOM_ID: vocabulaire
+   :END:
+
+- 友人（ゆうじん）: ami
+- 募集（ぼしゅう）: recruter
+- 経験（けいけん）: expérience
+- 間に合う: être à l'heure
+- 遺伝学 （いでんがく）: genetique
+- 医大 （いだい）: faculté de médecine
+
+** Grammaire
+   :PROPERTIES:
+   :CUSTOM_ID: grammaire
+   :END:
+
+*** Modifier avec des clauses
+    :PROPERTIES:
+    :CUSTOM_ID: modifier-avec-des-clauses
+    :END:
+
+- 雨ではない日: un jour sans pluie
+- 経験が長い人: une personne avec beaucoup d'expérience
+
+* 2021-10-15 - 3. Leçon 6 (JFBP II)
+  :PROPERTIES:
+  :CUSTOM_ID: leçon-6-jfbp-ii
+  :END:
+
+** Vocabulaire
+   :PROPERTIES:
+   :CUSTOM_ID: vocabulaire-1
+   :END:
+
+- 顔色: visage (ex: 顔色がよくありませんんね = tu n'as pas l'air bien)
+- 膝（ひざ）: genou
+- 蜂蜜（はちみつ）: miel
+- 賑やか(にぎやか): animé (ville)
+- むりをする: en faire trop, むり（な）: impossible (むりできる ne pas
+  pouvoir)
+
+** Grammaire
+   :PROPERTIES:
+   :CUSTOM_ID: grammaire-1
+   :END:
+
+*** Adverbes
+    :PROPERTIES:
+    :CUSTOM_ID: adverbes
+    :END:
+
+Ex: 早く起きました ### ーてきます: Partir faire quelque chose et revenir
+rapidement Ex: 本を借りてきて ### ーた ほうがいいですよ: il serait bien
+que tu ... Attention, forme en ーた! Ex:
+風邪をですか。じゃあ、家に帰って休んだほうがいいですよ Attention, la
+forme négative n'utilise pas la forme en ーた
+煙草(たばこ)を吸わないほうがいいですよ
+
+* 2021-10-21 - 4. Leçon 3
+  :PROPERTIES:
+  :CUSTOM_ID: leçon-3
+  :END:
+
+** Vocabulaire
+   :PROPERTIES:
+   :CUSTOM_ID: vocabulaire-2
+   :END:
+
+- 頭(あたま)/歯/喉 がいたい(あたま): mal à la tête/dent/gorge
+- 気分(きぶん)/調子(ちょうし) がわるいんです: je ne me sens pas très
+  bien (調子 semble être plus général) => おなかの調子がわるいんです
+- 怪我(けが)：blessure => 手/足(あし)/指(ゆび)に怪我をしたんです
+- 風邪をひく Marche aussi pour インフルエンザ mais pas pour le covid...
+- 二日酔い(ふつかよい): hangover ("2eme jour")
+- 寝不足(ねぶそく)：insomnie
+- 時差ぼけ(じさぼけ): jet lag
+- ーができます：
+
+  - 嚔(くしゃみ)ができます: éternuer
+  - 咳(せき)ができます: tousser
+  - 鼻水(はなみず)ができます: avoir le nez qui coule
+  - 欠伸ができます: bailler
+
+- アレルギー: allergie
+- 花粉症(かふんしょう)： rhinite allergique
+- covoiturage: ライドシェリン(？aya-sensein) 相乗り(wiki)
+- 犬がきらい: détester les chiens
+
+** Grammaire
+   :PROPERTIES:
+   :CUSTOM_ID: grammaire-2
+   :END:
+
+*** ーていません: Pas encore:
+    :PROPERTIES:
+    :CUSTOM_ID: ーていません-pas-encore
+    :END:
+
+まだ書いていません (je suis en train) レポートは書きません (je ne le
+ferais pas [c'est facultatif !]) ### ーんです： expliquer
+まだ書いていないんです (je suis en train)
+
+* 2021-11-06 - 5. Quizz + Leçon 7
+  :PROPERTIES:
+  :CUSTOM_ID: quizz-leçon-7
+  :END:
+
+Solution du quizz
+
+I. 1. に 2. に 3. に 4. が 5. で(?) II. 1. これから 2. そろそろ (まだ =
+OK) まだ 3. 実は これから III. 1. もってくる+んです。2。帰った 行く した
+買った
+
+** Vocabulaire
+   :PROPERTIES:
+   :CUSTOM_ID: vocabulaire-3
+   :END:
+
+- さっき: il y a un moment
+- こんど: cette fois
+- それから: "après ça" (pour faire la jonction entre 2 parties d'une
+  phrase ex: 熱(ねつ)があるんです。それから病院に行ってきました
+- これから: à partir de maintenant
+- 浴びる（あ）: se laver (douche), se baigner
+- 洗う（らあ）: nettoyer (ex une cabine de douche)
+- お大事に（おだいじ）: prenez soin de vous\\
+
+#+BEGIN_HTML
+  <!-- -->
+#+END_HTML
+
+- 用事（ようじ）: tâches à faire
+- つごう: pratique
+- きかい: opportunité
+- 薬（くすり）: médicament (attention, ressemble à たのしい)
+- 昼休（ひるやすみ）: la pause déjeuner
+- 会議（かいぎ）: réunion (différent de　会話（かいわ): discussion)
+- ボックスを開く（ひらく）: ouvrir des boites (carton)
+- ポスターを貼る（はる）: accrocher un poster
+
+** Grammaire
+   :PROPERTIES:
+   :CUSTOM_ID: grammaire-3
+   :END:
+
+- V + 前に（まえ) : avant de ~ Attention, pas de passé ni de négatif !
+  Ex: 日本に来る前に、日本語の勉強を始めました ~ てから: après
+
+* 2021-11-13 - 6. Fin leçon 7
+  :PROPERTIES:
+  :CUSTOM_ID: fin-leçon-7
+  :END:
+
+** Vocabulaire
+   :PROPERTIES:
+   :CUSTOM_ID: vocabulaire-4
+   :END:
+
+- 卒業(そつぎょう）
+- Xと遊び: jouer avec quelqu'un (ou un animal) Mais Xで遊び: jouer avec
+  un objet
+- メールをチェックする: vérifir ses mails
+- 化粧（けしょう）: se maquiller
+- 他（ほか）：autre (ex: personnes)
+- éducation au Japon:
+
+  - 小学校（しょうがっこう）：école primaire
+  - 中学校（ちゅうがっこう）: junior high school ~ collège en France
+  - 高等学校（こうとうがっこう）: senior high school~ lycée en France
+
+- 狩猟（しゅりょう）: chasse
+- 猟師（りょうし）: chasseur
+
+** Grammaire
+   :PROPERTIES:
+   :CUSTOM_ID: grammaire-4
+   :END:
+
+- ~てから: 2 sens
+
+  - succession d'action, ex: 食べてから、飲んて、読んて (note: plus de
+    からaprès la première action)
+  - depuis ~, ex:
+    日本に来てから、ずっと日本語の勉強をしています=j'étudie le japonais
+    depuis que je suis arrivé au japon)
+
+- ~前に: avant ~ (forme du dictionnaire, cf leçon précédente)
+- の時(とき)/ adjectif en i い時/adjectif en na な時 = quand ex:
+  ３さいのとき、: quand j'avais 3 ans
+
+* 2021-11-27 - 7. Fin leçon 7
+  :PROPERTIES:
+  :CUSTOM_ID: fin-leçon-7-1
+  :END:
+
+** Vocabulaire
+   :PROPERTIES:
+   :CUSTOM_ID: vocabulaire-5
+   :END:
+
+- 熊に注意（くまにちゅうい）: attention à l'ours !
+- 転職（てんしょく） changer de travail
+- 就職（しゅうしょく） trouver un travail
+- 退学（たいがく） être viré de l'unversité
+- 子供ができるêtre enceinte
+- 婚約する（こんやく）se fiancer
+- しりあう: apprendre à connaître quelqu'un
+- 生まれる（うまれる）: être né
+- 試験を受ける（うける）：passer un examen
+- 離婚する（りこん）: divorce
+- ずっと仕事を続ける（つづける）: continuer à travailler
+- 受験」（じゅけん）: examen d'entrée à l'université
+- 高２のとき（こうに） : (abrégé) quand j'étais en 2ème année de lycée
+  (senior high school)
+- Alexとよんでください: vous pouvez m'appeller Alex
+- 経済（けいざい）: économie (matière)\\
+
+#+BEGIN_HTML
+  <!-- -->
+#+END_HTML
+
+- 二年後（ご）: 2 ans après
+- X前と後に半年ずつ : 6 mois (1/2 année) avant et 6 mois après X (ずつ =
+  chacun)
+- 営業部（えいぎょうぶ）: le département des ventes d'une entreprise
+
+** Grammaire
+   :PROPERTIES:
+   :CUSTOM_ID: grammaire-5
+   :END:
+
+- bien que : ときも、～ ex: bien que j'aie attrapé froid, je dois
+  travailler 風邪を引くときも、働かなければなりません (NB: il y a aussi
+  のに et ても)
+
+* 2021-12-11 - 8. Leçon 8
+  :PROPERTIES:
+  :CUSTOM_ID: leçon-8
+  :END:
+
+** Vocabulaire
+   :PROPERTIES:
+   :CUSTOM_ID: vocabulaire-6
+   :END:
+
+- 塾（じゅく）: cours du soir au Japon
+- 辺り（あたり）: (dans) le voisinage
+- ずいぶん: très
+- ２中（ちゅう）: 2e année de junior high school (= collège)
+- ２日前（ふつかまえ）: il y a 2 jours (attention à la lecture !)
+- 登り降り（のぼりおり）: montée et descente = "altitude" d'une course
+- 一位（いちい） la première personne d'une course, etc
+- 大勢（おおぜい）の人が... : comme il y avait beaucoup de monde
+- 人前（いちにんまえ）） : portion pour 1 personne
+- ３人前（さんにんまえ）: portion pour 3 personne
+- 届ける（とどける）: délivrer
+- 休暇中（きょうかちゅう）: en vacances
+- 小さなマラソン：course
+
+** Grammaire
+   :PROPERTIES:
+   :CUSTOM_ID: grammaire-6
+   :END:
+
+- ～になります Ajectif en -i : remplacer i par く+ なります
+  忙しい　忙し　くなります（いそがしい） Ajectif en -na et nom : ajout
+  de に 有名になります 教師になりたい（きょうし）
+- Rappel : forme en -て de なります : ないて On peut combiner donc :
+  春（はる）にないて、あたたかくなりました
+- ここに来るとき: sur le chemin, en venant ici
+
+* 2021-12-18 - 9. Leçon 9
+  :PROPERTIES:
+  :CUSTOM_ID: leçon-9
+  :END:
+
+** Vocabulaire
+   :PROPERTIES:
+   :CUSTOM_ID: vocabulaire-7
+   :END:
+
+- 預かる（あずかる）：garder, s'occuper de
+- 設計図（せっけいず）：plan (de construction)
+- 吹き出す（ふきだす）：exploser, éparpiller
+- スキー場（じょう）: une station de ski
+- 売店（ばいてん）: petite boutique (ex: en gare...)
+- 拾う（ひろう）: ramasser
+- 席（せき）: siège
+- 書く（かく）: écrire (un sms)
+- 過ごす（すごす）: passer (du temps) ex: クリスマス誰と過ごすの: avec
+  qui vas-tu passer Noel ? ## Grammaire
+- Aとき、B: "quand" A, B (A = forme du dictionnaire) Si A est au passé,
+  A est "fini". Sinon. A est en cours Cela explique les différentes
+  nuances :
+
+  - A et B sont présent ou passé = A puis B: ex:
+    新聞を読むとき、眼鏡をかけます しんぶん　　　めがね
+    享年ドイツに行ったとき、ビールをたくさん飲み成した
+  - A au présent et B au passé : avant A, j'ai fait B ex:
+    日本に来るとき、空港で買いました　（くうこう） avant de venir au
+    japon, je l'ai acheté
+  - A au passé et B au présent : futur ? ex:
+    日本に来たとき、空港で買います　（くうこう） Subtilité :
+    新幹線に乗るとき、ビールを買いました = avant de monter, il a achéte
+    de la bière (= sur le chemin) 新幹線に乗るとき、ビールを買います =
+    action habituelle (il achète de la bière avant d'y monter)
+
+しんかんせん
+
+- citation ~林さんは「教徒に行きます」といっていました= directe
+  ~林さんは教徒に行くといっていました = indirecte
+
+* 2022-01-08 - 10. Lecon 9
+  :PROPERTIES:
+  :CUSTOM_ID: lecon-9
+  :END:
+
+** Vocabulaire
+   :PROPERTIES:
+   :CUSTOM_ID: vocabulaire-8
+   :END:
+
+- 陰性（いんせい）: négatif (test, ex: covid)
+- 陽性 （ようせい）: positif (test, ex: covid)
+- 駅（えき）: gare peut aussi être utilisée pour le métro, si le
+  contexte est clair
+- 転ぶ(転ぶ)：tomber de sa hauteur
+- 落ちる（おちる) :tomber (mais de haut) Nature
+- 木（き）: arbre
+- 森（もり）: forêt
+- 林（はやし）: forêt
+- 緑（みどり）: verdure
+- 池（いけ）: mare
+- 空気（くうき）: ciel
+- 畑（はたけ) : champ
+- 田んぼ（たんぼ）: rizière Urban life
+- マンション: immeuble
+- 道路（どうろ）　道（みち）: route
+- 橋（はし）: pont
+- 工場（こうじょう）: usine
+- 駐車場（ちゅうしゃじょう）: parking
+- 商店街（しょうてんがい）: rue commerciale
+- ガソリンスタンド: pompe à essence CHange:
+- できる: être construit
+- なくなる: démolir
+- かわる: changer
+- （きれいになる: rénover -　汚くなる（きた）: se dégrader
+- 広くなる（ひろ）devenir plus large - 狭くなる（せま）: devenir plus
+  étroit
+
+** Grammaire
+   :PROPERTIES:
+   :CUSTOM_ID: grammaire-7
+   :END:
+
+- ～ と思います:je pense que X Verbe と思います na-ajectif + だ/ではない
+  と思います i-ajectif と思います Aは～と思っています: A pense que X
+  (attention !)
+- いい -> よくない(négatif) NB: よかった(passé),　よくなかった (passé
+  négatif)
+
+* 2022-01-16 - 11. Lecon 9
+  :PROPERTIES:
+  :CUSTOM_ID: lecon-9-1
+  :END:
+
+** Vocabulaire (cf Anki)
+   :PROPERTIES:
+   :CUSTOM_ID: vocabulaire-cf-anki
+   :END:
+
+** Grammaire
+   :PROPERTIES:
+   :CUSTOM_ID: grammaire-8
+   :END:
+
+Transforner une phrase en nom avec の
+明日の会議にでるのは、かどうさんです
+
+Attention, il faut mieux mettre が ミルズさんが出張に行くのは　来週です
+
+* 2022-01-29 - 11. Leçon 9
+  :PROPERTIES:
+  :CUSTOM_ID: leçon-9-1
+  :END:
+
+** Vocabulaire
+   :PROPERTIES:
+   :CUSTOM_ID: vocabulaire-9
+   :END:
+
+Cf Anki
+
+** Grammaire
+   :PROPERTIES:
+   :CUSTOM_ID: grammaire-9
+   :END:
+
+Nominalisation (suite) Rappel : マリアさんは出張に行くのは来週です On
+peut également utiliser のが (qui s'apparente à　ことがあります)
+子供ど遊ぶのがすきです お菓子を作るのがじょうずです ou のを selon le
+bsoin お金を払うのをわすれました メール返事だすのをわれれました
+
+* 2022-02-13 - 12. Leçon 10
+  :PROPERTIES:
+  :CUSTOM_ID: leçon-10
+  :END:
+
+ので = "donc". Comme からmais plus poli - -いので - nom/adjectif en
+na+なので On utilie la plain form ! - ありません->ない
+お金がないので、何も買いません - です->な - でした->だった
+雨だったので、どこにもでかけませんでした
+
+* 2022-02-27 - 13. Lecon 10
+  :PROPERTIES:
+  :CUSTOM_ID: lecon-10
+  :END:
+
+Discussion surtout + ので
+
+* 2022-03-20 - 14. Leçon 10
+  :PROPERTIES:
+  :CUSTOM_ID: leçon-10-1
+  :END:
+
+** Grammaire
+   :PROPERTIES:
+   :CUSTOM_ID: grammaire-10
+   :END:
+
+Potentialité: on peut utiliser できます ou la forme potentielle
+
+*** forme potentielle
+    :PROPERTIES:
+    :CUSTOM_ID: forme-potentielle
+    :END:
+
+- Verbes réguliers I : う->　える ex: 合う　ー＞会える 話す　ー＞話せる
+- Verbes réguliers II : る->　れる ex: 食べる　ー＞食べられる
+  見るー＞見られる
+- irréguliers 来るー＞来られる（こ） する　ー＞できる # 2022-03-20 - 15.
+  Leçon 10
+
+Discussion surtout

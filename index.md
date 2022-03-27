@@ -1,5 +1,0 @@
--   [Mail in the command line (updated)](mail "wikilink")
--   [Life in Emacs](emacs "wikilink")
--   [Streaming media in FreeBSD](stream-media "wikilink")
--   [Command-line tips (updated)](command-line-tips "wikilink")
--   [Introduction to git](presentations/git.pdf "wikilink")

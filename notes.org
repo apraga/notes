@@ -1,0 +1,4 @@
+* Inbox
+** [2022-03-26 Sat] Orgmode: pour définir une deadline avec une heure, il suffit de l'écrire lors du prompt !
+
+[[file:/usr/home/alex/org/todo.org::*Taskarrior pending -> org mode][Taskarrior pending -> org mode]]
