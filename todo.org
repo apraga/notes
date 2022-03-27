@@ -1,5 +1,5 @@
-* TODO Organiser enterrement vie de garçon :joris:
-* DES :anki:
+* TODO Organiser enterrement vie de garçon                            :joris:
+* DES                                                                  :anki:
 :PROPERTIES:
 :CATEGORY: DES
 :END:
@@ -32,7 +32,7 @@
 :PROPERTIES:
 :CATEGORY: dysmorpho
 :END:
-** Notes :anki:
+** Notes                                                               :anki:
 *** TODO Intro dysmorpho - Verloes
 *** TODO Empreinte génomique
 *** TODO Beckwith, Silver Russel
@@ -59,7 +59,7 @@
 **** TODO Lister variants et clinique
 *** DONE Biblio ophn1
 * TODO Appeler pour demander carte médecin internat
-* Notes génétique :anki:
+* Notes génétique                                                      :anki:
 :PROPERTIES:
 :CATEGORY: genetique
 :END:
@@ -96,13 +96,13 @@
 ** TODO hémophilie
 * Notes biologie
 ** Biologie cellulaire Dunod
-*** TODO chapitres déjà fait :anki:
+*** TODO chapitres déjà fait                                           :anki:
 *** TODO lire
 ** Biologie chimie Dunod
 *** TODO lire
 *** TODO Ficher
-* Japonais :japonais:
-** Miura :anki:
+* Japonais                                                         :japonais:
+** Miura                                                               :anki:
 :PROPERTIES:
 :CATEGORY: miura
 :END:
@@ -115,6 +115,12 @@
 :CATEGORY: aya
 :END:
 *** TODO Notes
+*** DONE Préparer leçon
+CLOSED: [2022-03-27 Sun 23:04] DEADLINE: <2022-03-27 Sun 12:30>
+*** TODO Finir ficher leçon <2022-03-20 Sun>
+DEADLINE: <2022-03-27 Sun 12:30>
+*** TODO Finir ficher leçon <2022-03-27 Sun>
+DEADLINE: <2022-03-27 Sun 12:30>
 * TODO Prendre RV dermotologue
 DEADLINE: <2022-04-02 Sat>
 :PROPERTIES:
@@ -131,10 +137,8 @@ DEADLINE: <2022-04-02 Sat>
 ** TODO Voir avec Pierre-Yves pour installation prototype these.bdd
 ** TODO Demande VM ou Oracle (DSI) pour installation propre these.bdd
 ** TODO Autorisation CNIL ? these.bdd
-
-* TODO Contester majoration
-DEADLINE: <2022-03-26 Sat>
-
+* DONE Contester majoration
+CLOSED: [2022-03-27 Sun 23:28] DEADLINE: <2022-03-26 Sat>
 * Projet
 :PROPERTIES:
 :CATEGORY: projets
@@ -166,7 +170,7 @@ CLOCK: [2022-03-26 Sat 13:27]
 
 [[file:/usr/home/alex/org/todo.org::*Prendre RV dermotologue][Prendre RV dermotologue]]
 * Inbox
-** DONE Billets de train + carte réduction :florian:
+** DONE Billets de train + carte réduction                          :florian:
 DEADLINE: <2022-03-27 Sun>
 :PROPERTIES:
 :CATEGORY: mariage
@@ -182,3 +186,6 @@ DEADLINE: <2022-03-27 Sun>
 ** DONE janvier 2022
 ** TODO février 2022
 DEADLINE: <2022-03-27 Sun>
+* Utiliser chèque cadeau chuullanka
+SCHEDULED: <2022-04-02 Sat>
+[2022-03-27 Sun 21:41]
