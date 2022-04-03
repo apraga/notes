@@ -115,7 +115,14 @@ DEADLINE: <2022-03-30 Wed>
 :PROPERTIES:
 :CATEGORY: aya
 :END:
-*** TODO Notes
+*** TODO Notes leçon <2022-03-20 Sun>
+SCHEDULED: <2022-04-03 Sun>
+*** TODO Notes leçon <2022-03-27 Sun>
+SCHEDULED: <2022-04-03 Sun>
+*** TODO Notes leçon <2022-04-03 Sun>
+SCHEDULED: <2022-04-03 Sun>
+*** TODO Lire dialogue fin leçon 10
+SCHEDULED: <2022-04-03 Sun>
 * DONE Prendre RV dermotologue
 CLOSED: [2022-04-03 Sun 11:47] DEADLINE: <2022-04-02 Sat>
 :PROPERTIES:
@@ -165,11 +172,12 @@ DEADLINE: <2022-03-26 Sat>
 CLOCK: [2022-03-26 Sat 13:27]
 :END:
 * Inbox
+
 ** TODO test
 
 [[file:~/org/recherche.org::*Demande DPO Besançon][Demande DPO Besançon]]
 ** WAIT Commander nouvelle CB :banque:
-SCHEDULED: <2022-04-03 Sun>
+SCHEDULED: <2022-04-10 Sun>
 Demande faite <2022-04-03 Sun>
 ** DONE Billets de train + carte réduction :florian:
 DEADLINE: <2022-03-27 Sun>

@@ -14,9 +14,8 @@ genes: /PKAN2/,/PLA2G6/, /C19orf12/, /WDR45/.
 - Phenotype described in Gregory2002, Gregory2019.
 - Genetic basis in Haack2012, with phenotype detailed in Haylick2013 (20 subjects)
 
-- On chromosome X but no X-linked pattern : male and females are affected
-equally
-- Haack2012 hypothesis:
+- On chromosome X but no X-linked pattern : male and females are affected equally
+Haack2012 hypothesis:
   - somatic mosaicism in male (germline likely not viable)
   - female somatic + germline
   - severity based on when and where the mutation occurs in embryogenesis (like in Rett's
@@ -35,6 +34,8 @@ syndrome)
   - mitochrondrial iron accumulation + altered mitochrondrial metabolism (possible link to neuronal cell death, neurodegenration)
 - [ ] [cite:@haylick2013] phenotype details of WDR45 mutation foudn in [cite:@haack2012]
 - [ ] [cite:@haack2012] first description of WDR45 in NBIA 19 mutations, 20 subjects. Mutation ok, phenotype TODO
+- [ ] Gregory2002
+- [ ] Gregory2019
 - [cite:@Lee_iron_2021] c.974-1G>A étude fibroblaste
 - [cite:@lee_autophagic_2021] c.977-1G>A effet autophage fibroblaste
 - [cite:@Ji_2021] autophagosome maturation into autolysosomes in neural cells
