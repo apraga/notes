@@ -11,9 +11,29 @@ genes: /PKAN2/,/PLA2G6/, /C19orf12/, /WDR45/.
 - PKAN is half of the case and its estimated prevalence is 1/1 000 000 [cite:@gregory2002]
 
 ** Beta-propeller protein associated neurodegeneration
-- Phenotype described in Gregory2002, Gregory2019.
-- Genetic basis in Haack2012, with phenotype detailed in Haylick2013 (20 subjects)
+*** Phenotype [cite:@hayflick2013]
+- All subjects had been diagnosed with global developmental delay in infancy or early childhood and carried a diagnosis of in- tellectual disability into adulthood.
+- Most children made slow developmental gains over time. Developmental quotients ranged from 30–50, with severely limited expressive language in childood.
+- As children, most subjects were described as clumsy with a broad-based or ataxic gait but were generally healthy.
+- Six were noted to have spasticity.
+  Thirteen subjects had epilepsy in childhood requiring treatment with anti-epileptic medication.
+  - Various seizure types
+  - EEG changes
+- comorbid features in childhood include seizures, spasticity, disordered sleep and stereotypies that further define the BPAN phenotype.
+- Although, L-DOPA provides substan- tial initial benefit in BPAN, the benefit is short-lived and its use limited by dyskinesias.
+- The prominent parkinsonism observed in BPAN justifies the designation of WDR45 as a PARK family gene
 
+- all subjects exhibited neurological deterioration in adolescence or early adulthood with the onset of dystonia, parkinsonism, and new cognitive decline.
+  - The mean age at deterioration was 25.3 years (range 15–37 years).
+    The parkinsonism was characterized by prominent bradykinesia, rigidity and freezing of gait; however, tremor was noted in only two subjects.
+  - Dystonia was a common feature beginning in adolescence
+  - L-dopa is very efficent but only for a short period of time. Side effects led to interruption in a few years
+  - deterioration of cognition concomitant with onset of the movement disorder, with progres- sive loss of limited expressive language skills advancing to severe dementia in end stages.
+- Eighteen subjects are living, and their current ages range from 16 to 44 years. Five female subjects died during their third to fifth decades of life; one died with severe parkinsonism and dysphagia at 48 years of age, which was 11 years after her neurological deterioration reportedly began. Two died from aspiration pneumonia, and two died from unknown causes
+
+  - Additional phenotypic features reported in only a subset of patients included disordered sleep, ocular defects and Rett-like hand stereotypies (Table 1).
+*** Phenotype described in Gregory2002, Gregory2019.
+*** Genetic basis in Haack2012
 - On chromosome X but no X-linked pattern : male and females are affected equally
 Haack2012 hypothesis:
   - somatic mosaicism in male (germline likely not viable)
@@ -21,9 +41,9 @@ Haack2012 hypothesis:
   - severity based on when and where the mutation occurs in embryogenesis (like in Rett's
 syndrome)
   - in favor :
-    - 2 DNA traces of differents peaks
+    - 2 DNA traces of differents peaks on 1 male (2 amplicons on exon 2)
     - skewed X inactivation
-    - in favor : skewed in 10/12 women with WDR45 mutation
+      - in favor : skewed in 10/12 women with WDR45 mutation
 
 ** References
 - [ ] [cite:@Aring_2021] review + physiopathology of WDR45 deficit
@@ -32,8 +52,16 @@ syndrome)
   - possible link to increased iron uptake in neurons
   - impaired ferritinophagy
   - mitochrondrial iron accumulation + altered mitochrondrial metabolism (possible link to neuronal cell death, neurodegenration)
-- [ ] [cite:@haylick2013] phenotype details of WDR45 mutation foudn in [cite:@haack2012]
-- [ ] [cite:@haack2012] first description of WDR45 in NBIA 19 mutations, 20 subjects. Mutation ok, phenotype TODO
+- [ ] [cite:@haylick2013] phenotype details of the cohort in [cite:@haack2012]
+  - The protein encoded by WDR45 is characterized as a beta-pro- peller scaffold that serves as a platform to enable specific protein– protein interactions that are important in autophagy.
+- [X] [cite:@haack2012] first description of WDR45 in NBIA 19 mutations, 20 subjects.
+  data: see[cite:@hayflick2013]
+  - exomes in 14 unrelated patients found mutations in 13.  +7 patients : so 20 patients in total
+  - phenotype
+    - global developmental delay in early childhood and slow motor and cognitive gains until adolescence or early adulthood, when dystonia, parkinsonism, and dementia would manifest
+    - IRM:
+      - a markedly hypointense signal on T2- weighted sequences in the substantia nigra and globus pallidus
+      - A unique feature of this form of NBIA was T1 hyperintensity surrounding a central linear region of sig- nal hypointensity within the substantia nigra and cerebral peduncles
 - [ ] Gregory2002
 - [ ] Gregory2019
 - [cite:@Lee_iron_2021] c.974-1G>A étude fibroblaste
