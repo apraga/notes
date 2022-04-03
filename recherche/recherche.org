@@ -1,0 +1,32 @@
+#+TITLE: Recherche
+
+* MUSTARD
+** Données
+*** DONE Labkey
+*** STRT Clinique
+**** TODO Inventaire des données cliniques existantes dans labkey
+***** DONE Stats
+***** TODO Vérification manuelle
+SCHEDULED: <2022-04-03 Sun>
+
+**** STRT Dxcare
+***** DONE Demande Dijon
+***** TODO Demande DPO Besançon
+*** WAIT donnée pierre
+** Base de données
+*** KILL Mysql
+**** DONE Biblio
+**** DONE Conception papier
+**** DONE Prototype
+**** DONE import tsv labkey
+**** KILL ajout pièces jointes
+**** KILL Demande hébergement
+**** DONE Point avec Pierre
+On essaye avec excel ?
+Trop ambitieux (long, compliqué et problèmes de droits)
+*** KILL Site
+**** KILL Prototype django/flask
+*** Excel
+**** TODO Voir pour hébergement
+***** TODO Mail Yannis
+SCHEDULED: <2022-04-03 Sun>
