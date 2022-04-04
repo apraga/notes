@@ -115,9 +115,16 @@ DEADLINE: <2022-03-30 Wed>
 :PROPERTIES:
 :CATEGORY: aya
 :END:
-*** TODO Notes
-* TODO Prendre RV dermotologue
-DEADLINE: <2022-04-02 Sat>
+*** TODO Notes leçon <2022-03-20 Sun>
+SCHEDULED: <2022-04-03 Sun>
+*** TODO Notes leçon <2022-03-27 Sun>
+SCHEDULED: <2022-04-03 Sun>
+*** TODO Notes leçon <2022-04-03 Sun>
+SCHEDULED: <2022-04-03 Sun>
+*** TODO Lire dialogue fin leçon 10
+SCHEDULED: <2022-04-03 Sun>
+* DONE Prendre RV dermotologue
+CLOSED: [2022-04-03 Sun 11:47] DEADLINE: <2022-04-02 Sat>
 :PROPERTIES:
 :CATEGORY: sante
 :END:
@@ -164,16 +171,19 @@ DEADLINE: <2022-03-26 Sat>
 :LOGBOOK:
 CLOCK: [2022-03-26 Sat 13:27]
 :END:
-
-[[file:/usr/home/alex/org/todo.org::*Prendre RV dermotologue][Prendre RV dermotologue]]
 * Inbox
+
+** TODO test
+
+[[file:~/org/recherche.org::*Demande DPO Besançon][Demande DPO Besançon]]
+** WAIT Commander nouvelle CB :banque:
+SCHEDULED: <2022-04-10 Sun>
+Demande faite <2022-04-03 Sun>
 ** DONE Billets de train + carte réduction :florian:
 DEADLINE: <2022-03-27 Sun>
 :PROPERTIES:
 :CATEGORY: mariage
 :END:
-
-[[file:/usr/home/alex/org/todo.org::*Finir importer org-mode tâches finies depus taskwarrior][Finir importer org-mode tâches finies depus taskwarrior]]
 * Ledger
 :PROPERTIES:
 :CATEGORY: compta
