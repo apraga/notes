@@ -171,11 +171,8 @@ DEADLINE: <2022-03-26 Sat>
 :LOGBOOK:
 CLOCK: [2022-03-26 Sat 13:27]
 :END:
+
 * Inbox
-
-** TODO test
-
-[[file:~/org/recherche.org::*Demande DPO Besançon][Demande DPO Besançon]]
 ** WAIT Commander nouvelle CB :banque:
 SCHEDULED: <2022-04-10 Sun>
 Demande faite <2022-04-03 Sun>

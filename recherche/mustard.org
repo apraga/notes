@@ -18,12 +18,12 @@
 1037: compte-rendu examen foeto-placentaire, courrier, photos
 1038: 1 courrier
 1040: fiche clinique, diapos avec photos
-1042
-1043
-1044
-1045
-1064
-1068
+1042: courrier avec 1 ligne de clinique. Gronigen
+1043: 1 photo
+1044: diapo avec clinique
+1045: nombreux courriers, photos
+1064: diapos, photos
+1068: 1 courrier de genetiqe
 1069
 1070
 1071
