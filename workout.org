@@ -1,4 +1,4 @@
-* 2018-07-18 Workout
+* <2018-07-18 Wed> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout
   :END:
@@ -9,7 +9,7 @@
   12+13+14s
 #+END_EXAMPLE
 
-* 2018-07-22 Workout
+* <2018-07-22 Sun> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-1
   :END:
@@ -20,7 +20,7 @@
   10x3 Advanced tuck Front lever 10x3
 #+END_EXAMPLE
 
-* 2018-07-25 Workout
+* <2018-07-25 Wed> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-2
   :END:
@@ -29,7 +29,7 @@ Jul 25 10:00:13 CEST 2018 Frog Stand 3x2s Wall HeSPU 2 Muscle Up
 négatives 3x3 (1/2 de la descente) Advanced back lever 3x5s Advanced
 Front lever 3x5s
 
-* 2018-08-13 Workout
+* <2018-08-13 Mon> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-3
   :END:
@@ -52,7 +52,7 @@ Front lever 3x5s
   lever : 3x5s
 #+END_EXAMPLE
 
-* 2018-08-23 Workout
+* <2018-08-23 Thu> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-4
   :END:
@@ -64,7 +64,7 @@ Front lever 3x5s
   planche : 8-7-8s Advanced tuck front lever : 6-8-9-5
 #+END_EXAMPLE
 
-* 2018-08-29 Workout
+* <2018-08-29 Wed> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-5
   :END:
@@ -74,7 +74,7 @@ Aug 29 20:15:55 CEST 2018 Negative muscle-up : 4 avec genou à 90 degré,
 L-sit 8-7-7-7-5 Wall HeSPU 5x1 + 1x2 Tuck back lever 15s Advanced tuck
 back lever 2x6s (work on form) Tuck planche 9-8-8
 
-* 2018-09-02 Workout
+* <2018-09-02 Sun> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-6
   :END:
@@ -86,7 +86,7 @@ back lever 2x6s (work on form) Tuck planche 9-8-8
   lever : 8-8-7
 #+END_EXAMPLE
 
-* 2018-09-07 Workout
+* <2018-09-07 Fri> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-7
   :END:
@@ -98,7 +98,7 @@ back lever 2x6s (work on form) Tuck planche 9-8-8
   Planche 8-7-6
 #+END_EXAMPLE
 
-* 2018-09-10 Workout
+* <2018-09-10 Mon> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-8
   :END:
@@ -110,7 +110,7 @@ back lever 2x6s (work on form) Tuck planche 9-8-8
   propre) Advanced front lever : 8-10-10 Advanced tuck Planche : 9-8-9
 #+END_EXAMPLE
 
-* 2018-09-13 Workout
+* <2018-09-13 Thu> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-9
   :END:
@@ -120,7 +120,7 @@ back lever 2x6s (work on form) Tuck planche 9-8-8
   tuck back lever : 10
 #+END_EXAMPLE
 
-* 2018-09-18 Workout
+* <2018-09-18 Tue> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-10
   :END:
@@ -131,7 +131,7 @@ back lever 2x6s (work on form) Tuck planche 9-8-8
   tuck planche : 3x7
 #+END_EXAMPLE
 
-* 2018-09-19 Workout
+* <2018-09-19 Wed> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-11
   :END:
@@ -140,7 +140,7 @@ back lever 2x6s (work on form) Tuck planche 9-8-8
   Stretch : splits
 #+END_EXAMPLE
 
-* 2018-09-20 Workout
+* <2018-09-20 Thu> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-12
   :END:
@@ -151,7 +151,7 @@ back lever 2x6s (work on form) Tuck planche 9-8-8
 
 HeSPU 6x1 Advanced tuck back lever : 11-10 Advanced tuck planche : 9-5
 
-* 2018-09-24 Workout
+* <2018-09-24 Mon> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-13
   :END:
@@ -160,7 +160,7 @@ HeSPU 6x1 Advanced tuck back lever : 11-10 Advanced tuck planche : 9-5
   2x10s pancake split 1x10s toe touch Shoulder
 #+END_EXAMPLE
 
-* 2018-09-25 Workout
+* <2018-09-25 Tue> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-14
   :END:
@@ -171,7 +171,7 @@ HeSPU 6x1 Advanced tuck back lever : 11-10 Advanced tuck planche : 9-5
   front lever : 8 Shoulder 3 (cf reddit) 10s each 1x90s pancake split
 #+END_EXAMPLE
 
-* 2018-09-27 Workout
+* <2018-09-27 Thu> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-15
   :END:
@@ -180,7 +180,7 @@ HeSPU 6x1 Advanced tuck back lever : 11-10 Advanced tuck planche : 9-5
   Pancake split 60s Split routine 1x10s each Toe-touching
 #+END_EXAMPLE
 
-* 2018-09-28 Workout
+* <2018-09-28 Fri> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-16
   :END:
@@ -189,7 +189,7 @@ HeSPU 6x1 Advanced tuck back lever : 11-10 Advanced tuck planche : 9-5
   Pancake split 90s
 #+END_EXAMPLE
 
-* 2018-09-30 Workout
+* <2018-09-30 Sun> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-17
   :END:
@@ -198,7 +198,7 @@ HeSPU 6x1 Advanced tuck back lever : 11-10 Advanced tuck planche : 9-5
   Équilibre x5
 #+END_EXAMPLE
 
-* 2018-09-30 Workout
+* <2018-09-30 Sun> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-18
   :END:
@@ -211,7 +211,7 @@ HeSPU 6x1 Advanced tuck back lever : 11-10 Advanced tuck planche : 9-5
   planche : 9-8-9
 #+END_EXAMPLE
 
-* 2018-10-01 Workout
+* <2018-10-01 Mon> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-19
   :END:
@@ -220,7 +220,7 @@ HeSPU 6x1 Advanced tuck back lever : 11-10 Advanced tuck planche : 9-5
   Pancake : 60
 #+END_EXAMPLE
 
-* 2018-10-03 Workout
+* <2018-10-03 Wed> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-20
   :END:
@@ -230,7 +230,7 @@ HeSPU 6x1 Advanced tuck back lever : 11-10 Advanced tuck planche : 9-5
   chaque côté
 #+END_EXAMPLE
 
-* 2018-10-04 Workout
+* <2018-10-04 Thu> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-21
   :END:
@@ -239,7 +239,7 @@ HeSPU 6x1 Advanced tuck back lever : 11-10 Advanced tuck planche : 9-5
   Équilibre
 #+END_EXAMPLE
 
-* 2018-10-05 Workout
+* <2018-10-05 Fri> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-22
   :END:
@@ -250,7 +250,7 @@ HeSPU 6x1 Advanced tuck back lever : 11-10 Advanced tuck planche : 9-5
   chaise (ok) puis 65 sur une marche (seuil actuel). Pas de douleurs
 #+END_EXAMPLE
 
-* 2018-10-06 Workout
+* <2018-10-06 Sat> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-23
   :END:
@@ -262,7 +262,7 @@ HeSPU 6x1 Advanced tuck back lever : 11-10 Advanced tuck planche : 9-5
   une marche
 #+END_EXAMPLE
 
-* 2018-10-07 Workout
+* <2018-10-07 Sun> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-24
   :END:
@@ -272,7 +272,7 @@ HeSPU 6x1 Advanced tuck back lever : 11-10 Advanced tuck planche : 9-5
   assis au sol 30s, split 60
 #+END_EXAMPLE
 
-* 2018-10-08 Workout
+* <2018-10-08 Mon> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-25
   :END:
@@ -281,21 +281,21 @@ HeSPU 6x1 Advanced tuck back lever : 11-10 Advanced tuck planche : 9-5
   Splits : 30s (3 échauffement et split) Pancake 60s chaise 60s marche
 #+END_EXAMPLE
 
-* 2018-10-09 Workout
+* <2018-10-09 Tue> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-26
   :END:
 
 Handstand : max = 8s Toe-touching x1
 
-* 2018-10-11 Workout
+* <2018-10-11 Thu> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-27
   :END:
 
 Handstand : 11s une fois ! Pancake : 1x chaise, 1x marche, non chrono
 
-* 2018-10-12 Workout
+* <2018-10-12 Fri> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-28
   :END:
@@ -305,7 +305,7 @@ Handstand : 11s une fois ! Pancake : 1x chaise, 1x marche, non chrono
   lever : 2x7-8 Advanced tuck planche : 9-9-7
 #+END_EXAMPLE
 
-* 2018-10-24 Workout
+* <2018-10-24 Wed> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-29
   :END:
@@ -318,7 +318,7 @@ Handstand : 11s une fois ! Pancake : 1x chaise, 1x marche, non chrono
   tuck (<http://gmb.io/planche/> \"straddle open tuck hold\").
 #+END_EXAMPLE
 
-* 2018-11-12 Workout
+* <2018-11-12 Mon> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-30
   :END:
@@ -328,7 +328,7 @@ Handstand : 11s une fois ! Pancake : 1x chaise, 1x marche, non chrono
   4-4-4 Tuck back : 4-5-4
 #+END_EXAMPLE
 
-* 2018-11-19 Workout
+* <2018-11-19 Mon> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-31
   :END:
@@ -339,7 +339,7 @@ Handstand : 11s une fois ! Pancake : 1x chaise, 1x marche, non chrono
   90 ?) Planche : 4x1 passages (rapide)
 #+END_EXAMPLE
 
-* 2018-11-26 Workout
+* <2018-11-26 Mon> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-32
   :END:
@@ -352,7 +352,7 @@ Handstand : 11s une fois ! Pancake : 1x chaise, 1x marche, non chrono
 Handstand pushup lvl 2 : 4-4-5 (dernier quasi sans appuis) Planche : 1x2
 passages (rapide)
 
-* 2018-11-30 Workout
+* <2018-11-30 Fri> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-33
   :END:
@@ -363,7 +363,7 @@ passages (rapide)
   2-3-3
 #+END_EXAMPLE
 
-* 2018-12-02 Workout
+* <2018-12-02 Sun> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-34
   :END:
@@ -375,7 +375,7 @@ passages (rapide)
 HeSPU : 4-4-4 Advanced tuck back lever : 6-6-5 Tucked planche
 (outside-inside) 3-3-4
 
-* 2018-12-07 Workout
+* <2018-12-07 Fri> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-35
   :END:
@@ -386,7 +386,7 @@ HeSPU : 4-4-4 Advanced tuck back lever : 6-6-5 Tucked planche
   (outside-inside) 5-4-2
 #+END_EXAMPLE
 
-* 2018-12-11 Workout
+* <2018-12-11 Tue> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-36
   :END:
@@ -396,7 +396,7 @@ HeSPU : 4-4-4 Advanced tuck back lever : 6-6-5 Tucked planche
   Advanced tuck back lever : 7-7-7 Tuck - one-leg : 3x1s
 #+END_EXAMPLE
 
-* 2018-12-15 Workout
+* <2018-12-15 Sat> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-37
   :END:
@@ -407,7 +407,7 @@ HeSPU : 4-4-4 Advanced tuck back lever : 6-6-5 Tucked planche
   3x0.5s (2 pieds l\'un après l\'autre)
 #+END_EXAMPLE
 
-* 2018-12-20 Workout
+* <2018-12-20 Thu> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-38
   :END:
@@ -417,7 +417,7 @@ HeSPU : 4-4-4 Advanced tuck back lever : 6-6-5 Tucked planche
   lever : 4-6-4 Tuck - one-leg : 2x1s
 #+END_EXAMPLE
 
-* 2018-12-30 Workout
+* <2018-12-30 Sun> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-39
   :END:
@@ -427,22 +427,22 @@ HeSPU : 4-4-4 Advanced tuck back lever : 6-6-5 Tucked planche
   Tuck - one-leg : 11
 #+END_EXAMPLE
 
-* 2018-10-19 Handstand
+* <2018-10-19 Fri> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand
   :END:
 
-* 2018-10-20 Handstand
+* <2018-10-20 Sat> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-1
   :END:
 
-* 2018-10-21 Handstand
+* <2018-10-21 Sun> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-2
   :END:
 
-* 2018-10-24 Handstand
+* <2018-10-24 Wed> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-3
   :END:
@@ -452,67 +452,67 @@ HeSPU : 4-4-4 Advanced tuck back lever : 6-6-5 Tucked planche
   Super dur
 #+END_EXAMPLE
 
-* 2018-10-25 Handstand
+* <2018-10-25 Thu> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-4
   :END:
 
-* 2018-10-28 Handstand
+* <2018-10-28 Sun> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-5
   :END:
 
-* 2018-10-29 Handstand
+* <2018-10-29 Mon> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-6
   :END:
 
-* 2018-10-30 Handstand
+* <2018-10-30 Tue> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-7
   :END:
 
-* 2018-11-01 Handstand
+* <2018-11-01 Thu> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-8
   :END:
 
-* 2018-11-02 Handstand
+* <2018-11-02 Fri> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-9
   :END:
 
-* 2018-11-03 Handstand
+* <2018-11-03 Sat> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-10
   :END:
 
-* 2018-11-05 Handstand
+* <2018-11-05 Mon> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-11
   :END:
 
-* 2018-11-09 Handstand
+* <2018-11-09 Fri> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-12
   :END:
 
-* 2018-11-11 Handstand
+* <2018-11-11 Sun> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-13
   :END:
 
-* 2018-11-12 Handstand
+* <2018-11-12 Mon> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-14
   :END:
 
-* 2018-11-13 Handstand
+* <2018-11-13 Tue> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-15
   :END:
 
-* 2019-01-02 Workout
+* <2019-01-02 Wed> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-40
   :END:
@@ -522,7 +522,7 @@ Wall straddle press eccentrics : moitié du mouvement Straddle L-sit (
 mi-pliées...) Muscle-up : 0-2x0.5-1.5 PLanche pull-up : 5-4-4 L-sit
 (rings, jambes pliées) : 3x3 Advanced tuck back lever : 7-6-6
 
-* 2019-01-04 Workout
+* <2019-01-04 Fri> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-41
   :END:
@@ -533,7 +533,7 @@ jambes tendues à 80%) : 2x3 Advanced tuck back lever : 6-6-5 Handstand
 push-up : 3x3 Tuck - one-leg : 4x1s (2 jambes à la fois, extension
 complète !)
 
-* 2019-01-07 Workout
+* <2019-01-07 Mon> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-42
   :END:
@@ -543,7 +543,7 @@ seated : 2x10 (jambes mi-pliées...) Muscle-up : 3x2 :) Advanced tuck
 back lever : 6-6-6 Handstand push-up : 2 (sans "sauter" avec les pieds)
 Tuck - one-leg : 3x1s
 
-* 2019-01-10 Workout
+* <2019-01-10 Thu> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-43
   :END:
@@ -553,7 +553,7 @@ Muscle-up : 2-1.5-(0.5x2) L-sit (rings, jambes tendues à 80%) : 4-4
 Advanced tuck back lever : 7-6(jambe 45° !)-5 Handstand push-up : 3x3
 Tuck - one-leg : 3x1
 
-* 2019-01-12 Workout
+* <2019-01-12 Sat> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-44
   :END:
@@ -563,7 +563,7 @@ Muscle-up : 3x2 (bras tendu ! et false grip) L-sit (rings, jambes non
 parallèles au sol) : 3x3s Advanced tuck back lever : 3x6s Handstand
 push-up : 3x3 Tuck - one-leg : 4x1s
 
-* 2019-01-19 Workout
+* <2019-01-19 Sat> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-45
   :END:
@@ -573,7 +573,7 @@ Muscle-up : 4x3 (que du négatif, impossible d'en refaire normalement
 ajourd'hui) L-sit (rings, jambes non parallèles au sol) : 2x3 Advanced
 tuck back lever : 5-4-3 Handstand push-up : 3x4 Tuck - one-leg : 3x1
 
-* 2019-01-23 Workout
+* <2019-01-23 Wed> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-46
   :END:
@@ -583,7 +583,7 @@ Muscle-up : 3 (négatif) - 3 avec appui - 3 (appui) L-sit (rings, jambes
 non parallèles au sol) : 3x1s Advanced tuck back lever : 3x3s Handstand
 push-up : 3-3-2.5 (plus en avant) Tuck - one-leg : 3x1
 
-* 2019-01-25 Workout
+* <2019-01-25 Fri> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-47
   :END:
@@ -594,7 +594,7 @@ Advanced tuck back lever : 5-6-4 (dernier = jambe mi pliées) Handstand
 push-up : 1.5-3 Tuck : 8-6 -4-4(retour dos droit en statique, 30° avec
 le sol, 2 derniers avec jambes pliées)
 
-* 2019-01-30 Workout
+* <2019-01-30 Wed> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-48
   :END:
@@ -603,7 +603,7 @@ Wall straddle press eccentrics : 5-4-4 Straddle L-sit seated : 3x10
 Muscle-up : 4-3-3 (appui) L-sit : 5-3-4 (au sol) Advanced tuck back
 lever : 5-5-5 Handstand push-up : 4-3-2 Tuck : 4-4-2s
 
-* 2019-02-03 Workout
+* <2019-02-03 Sun> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-49
   :END:
@@ -615,7 +615,7 @@ lever : 5-5-5 Handstand push-up : 4-3-2 Tuck : 4-4-2s
   4-1-3 Tuck : 4-s
 #+END_EXAMPLE
 
-* 2019-02-07 Workout
+* <2019-02-07 Thu> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-50
   :END:
@@ -624,7 +624,7 @@ Wall straddle press eccentrics : 4-4 Straddle L-sit seated : 3x10
 Muscle-up : 3x3 L-sit : 4-4-4 Advanced tuck back lever : 4-4-4 Handstand
 puss-up : 3-3-1 Tuck : 3x4
 
-* 2019-02-12 Workout
+* <2019-02-12 Tue> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-51
   :END:
@@ -634,7 +634,7 @@ Muscle-up : 3 debout épaule, 3 debout tiers nuque, 3 machoire, 3 oreille
 L-sit : 4-4-4 Advanced tuck back lever : 6-6-6 Handstand push-up : 3-3-3
 Tuck : 5-5-5
 
-* 2019-02-17 Workout
+* <2019-02-17 Sun> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-52
   :END:
@@ -644,7 +644,7 @@ Muscle-up : 3 (machoire, accroupi) 2x3 (milieu cou, idéal pour ne pas
 s'aider des pieds) L-sit : 4-4-4 Advanced tuck back lever : 7-7-5
 (jambes sous thorax encore) Handstand push-up : 3x3 Tuck : 6-5-5
 
-* 2019-02-20 Workout
+* <2019-02-20 Wed> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-53
   :END:
@@ -653,7 +653,7 @@ Wall straddle press eccentrics : 4 Straddle L-sit seated : 3x10
 Muscle-up : 3-3-2-2-1 (mi cou) L-sit : 6-6-5 Advanced tuck back lever :
 7-7-5 Handstand push-up :3-2-3 (plus dur si plus en vanat) Tuck : 6-6-5
 
-* 2019-02-22 Workout
+* <2019-02-22 Fri> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-54
   :END:
@@ -662,7 +662,7 @@ Wall straddle press eccentrics : 3-4-6 Straddle L-sit seated : 3x10
 Muscle-up : 3-3-2-2 (base cou pour technique) L-sit : 6-3-4-5 Advanced
 tuck back lever : 7-7-6 Handstand push-up : 3-3-3 Tuck : 6-4-5
 
-* 2019-02-27 Workout
+* <2019-02-27 Wed> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-55
   :END:
@@ -671,12 +671,12 @@ Wall straddle press eccentrics : 3x10 Straddle L-sit seated : 3x3
 Muscle-up : 3-3 L-sit : 4-5-4 Advanced tuck back lever : 7-7-7 Handstand
 push-up : 3-3-2 Tuck : 6-5-4
 
-* 2019-02-02 Handstand
+* <2019-02-02 Sat> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-16
   :END:
 
-* 2019-02-03 Handstand
+* <2019-02-03 Sun> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-17
   :END:
@@ -685,7 +685,7 @@ push-up : 3-3-2 Tuck : 6-5-4
   Travail de changement de position. Difficile mais semble super utile
 #+END_EXAMPLE
 
-* 2019-02-07 Handstand
+* <2019-02-07 Thu> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-18
   :END:
@@ -694,7 +694,7 @@ push-up : 3-3-2 Tuck : 6-5-4
   Pieds joints en changeant de position
 #+END_EXAMPLE
 
-* 2019-03-02 Workout
+* <2019-03-02 Sat> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-56
   :END:
@@ -704,7 +704,7 @@ Wall straddle press eccentrics : 2-2-7 Straddle L-sit seated : Muscle-up
 tuck back lever : 6-6-5 (plus à angle droit) Handstand push-up : 3-2-2
 (peut-être plus droit) Tuck : 3x5
 
-* 2019-03-10 Workout
+* <2019-03-10 Sun> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-57
   :END:
@@ -713,7 +713,7 @@ Wall straddle press eccentrics : 3x10 Straddle L-sit seated : 6-6-5
 Muscle-up : 3-3-3 L-sit : 4-5-4 Advanced tuck back lever : 6-6-5
 Handstand push-up : 3-2-3 Tuck : 5-5-5
 
-* 2019-03-13 Workout
+* <2019-03-13 Wed> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-58
   :END:
@@ -722,7 +722,7 @@ Wall straddle press eccentrics : 6-3-3 Straddle L-sit seated : 3x10s
 Muscle-up : 3-3-3 (niveau épaule pour technique) L-sit : 4-4-5 Advanced
 tuck back lever : 6-6 Handstand push-up : 3-3-2 Tuck : 6
 
-* 2019-03-25 Workout
+* <2019-03-25 Mon> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-59
   :END:
@@ -731,7 +731,7 @@ Wall straddle press eccentrics : 4-4-2 Straddle L-sit seated : 3x3
 Muscle-up : 3-3-3 L-sit : 4-4-5 Advanced tuck back lever :6-7-6
 Handstand push-up : 2.5-2-2 Tuck : 6-5-5
 
-* 2019-03-29 Workout
+* <2019-03-29 Fri> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-60
   :END:
@@ -739,7 +739,7 @@ Handstand push-up : 2.5-2-2 Tuck : 6-5-5
 Wall straddle press eccentrics : 6-6-5 Straddle L-sit seated : 3x10
 Muscle-up : 3-2-2-2 L-sit : 5-5-4
 
-* 2019-04-01 Workout
+* <2019-04-01 Mon> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-61
   :END:
@@ -748,7 +748,7 @@ Wall straddle press eccentrics : 6-5-5 Straddle L-sit seated : 3x10
 Muscle-up : 3-3-2 L-sit : 3x4 Advanced tuck back lever : 7-7-6 Handstand
 push-up : 3-2-3 Tuck : 5-4-4
 
-* 2019-04-03 Workout
+* <2019-04-03 Wed> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-62
   :END:
@@ -757,7 +757,7 @@ Wall straddle press eccentrics : 3x5 Straddle L-sit seated : 3x10
 Muscle-up : 3-3-3 L-sit : 5-4-5 Advanced tuck back lever : 6-6 Handstand
 push-up : 3-3-3
 
-* 2019-04-09 Workout
+* <2019-04-09 Tue> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-63
   :END:
@@ -766,7 +766,7 @@ Wall straddle press eccentrics : 3x4 Straddle L-sit seated : 3x10
 Muscle-up : 3x3 L-sit : 3x4 Advanced tuck back lever : 3x6 Handstand
 push-up : 3-3 Tuck : 4-4-4
 
-* 2019-04-11 Workout
+* <2019-04-11 Thu> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-64
   :END:
@@ -776,7 +776,7 @@ push-up : 3-3 Tuck : 4-4-4
   Muscle-up : 3-2-3 Tucked planche (retour aux bases) : 10s-10
 #+END_EXAMPLE
 
-* 2019-04-17 Workout
+* <2019-04-17 Wed> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-65
   :END:
@@ -786,7 +786,7 @@ Wall straddle press eccentrics : 5-5-3 Straddle L-sit seated : 3x5
 des pieds encore) L-sit : 5-5-4 Advanced tuck back lever : 6s-6
 Handstand push-up : 3-3-2 Straddle Open Tuck Hold: 1-2s
 
-* 2019-04-24 Workout
+* <2019-04-24 Wed> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-66
   :END:
@@ -795,7 +795,7 @@ Wall straddle press eccentrics : 3-3-4 Straddle L-sit seated : 2x5
 Muscle-up : 3-3-2 L-sit : 4 (crampe...)-2-3 Advanced tuck back lever :
 6-6-6 Handstand push-up : 3-3-2 Straddle Open Tuck Hold: 1-2-2s
 
-* 2019-04-27 Workout
+* <2019-04-27 Sat> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-67
   :END:
@@ -804,19 +804,19 @@ Wall straddle press eccentrics : 5-6-7 Straddle L-sit seated : 6-6-6
 Muscle-up : 3-3-3 L-sit : 5-4-5 Tuck back lever : 6-7 Handstand push-up
 : 3-3-3 Tuck : 0-1
 
-* 2019-04-23 Handstand
+* <2019-04-23 Tue> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-19
   :END:
 
 2. Handstand
 
-* 2019-04-24 Handstand
+* <2019-04-24 Wed> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-20
   :END:
 
-* 2019-05-01 Workout
+* <2019-05-01 Wed> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-68
   :END:
@@ -826,7 +826,7 @@ Muscle-up : 3-3-3 L-sit : 5-4-5 Tuck back lever : 6-7 Handstand push-up
   back lever : 4-5 Tuck : 2-1-3
 #+END_EXAMPLE
 
-* 2019-05-09 Workout
+* <2019-05-09 Thu> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-69
   :END:
@@ -835,7 +835,7 @@ Wall straddle press eccentrics : 4-5-3 (3 quasi complets)7 Straddle
 L-sit seated : 5-5-5 Muscle-up : 3-3-3 L-sit : 5-4-4 Handstand push-up :
 3-3-3 Tuck : 2-2
 
-* 2019-05-17 Workout
+* <2019-05-17 Fri> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-70
   :END:
@@ -844,7 +844,7 @@ Wall straddle press eccentrics : 1 (entier, négatif)-2-2 Straddle L-sit
 seated : 3x3 Muscle-up : 3x3 L-sit : 5 Advanced tuck back lever : 7-6
 Handstand push-up : 3x3 Tuck : 3-4
 
-* 2019-05-23 Workout
+* <2019-05-23 Thu> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-71
   :END:
@@ -854,7 +854,7 @@ Wall straddle press eccentrics : 2-3-3 (negative) Straddle L-sit seated
 push-up : 3x3 (travailler forme) Tuck to single leg (each leg) :
 0.5(sic)x3
 
-* 2019-05-29 Workout
+* <2019-05-29 Wed> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-72
   :END:
@@ -862,102 +862,102 @@ push-up : 3x3 (travailler forme) Tuck to single leg (each leg) :
 Wall straddle press eccentrics : 3x3 Straddle L-sit seated : 3x5
 Muscle-up : 3x3
 
-* 2019-05-01 Handstand
+* <2019-05-01 Wed> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-21
   :END:
 
-* 2019-05-07 Handstand
+* <2019-05-07 Tue> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-22
   :END:
 
-* 2019-05-08 Handstand
+* <2019-05-08 Wed> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-23
   :END:
 
-* 2019-05-09 Handstand
+* <2019-05-09 Thu> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-24
   :END:
 
-* 2019-05-10 Handstand
+* <2019-05-10 Fri> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-25
   :END:
 
-* 2019-05-15 Handstand
+* <2019-05-15 Wed> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-26
   :END:
 
-* 2019-05-16 Handstand
+* <2019-05-16 Thu> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-27
   :END:
 
-* 2019-05-17 Handstand
+* <2019-05-17 Fri> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-28
   :END:
 
-* 2019-05-20 Handstand
+* <2019-05-20 Mon> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-29
   :END:
 
-* 2019-05-21 Handstand
+* <2019-05-21 Tue> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-30
   :END:
 
-* 2019-05-23 Handstand
+* <2019-05-23 Thu> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-31
   :END:
 
-* 2019-05-24 Handstand
+* <2019-05-24 Fri> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-32
   :END:
 
-* 2019-05-25 Handstand
+* <2019-05-25 Sat> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-33
   :END:
 
-* 2019-05-26 Handstand
+* <2019-05-26 Sun> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-34
   :END:
 
-* 2019-05-27 Handstand
+* <2019-05-27 Mon> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-35
   :END:
 
-* 2019-05-28 Handstand
+* <2019-05-28 Tue> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-36
   :END:
 
-* 2019-05-29 Handstand
+* <2019-05-29 Wed> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-37
   :END:
 
-* 2019-05-30 Handstand
+* <2019-05-30 Thu> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-38
   :END:
 
-* 2019-05-31 Handstand
+* <2019-05-31 Fri> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-39
   :END:
 
-* 2019-06-02 Workout
+* <2019-06-02 Sun> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-73
   :END:
@@ -1019,7 +1019,7 @@ Pushing vs pulling
 Warmup : static hold on rings 2. Skill work : L-sit, handstand,
 tumbling, core compression 3. Power/eccentrics/isometrics 4. Flexibility
 
-* 2019-06-09 Workout
+* <2019-06-09 Sun> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-74
   :END:
@@ -1030,7 +1030,7 @@ tumbling, core compression 3. Power/eccentrics/isometrics 4. Flexibility
   réussi-2 avec appui Tuck planche: 3x7
 #+END_EXAMPLE
 
-* 2019-06-13 Workout
+* <2019-06-13 Thu> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-75
   :END:
@@ -1042,7 +1042,7 @@ tumbling, core compression 3. Power/eccentrics/isometrics 4. Flexibility
   3-5
 #+END_EXAMPLE
 
-* 2019-06-16 Workout
+* <2019-06-16 Sun> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-76
   :END:
@@ -1054,7 +1054,7 @@ tumbling, core compression 3. Power/eccentrics/isometrics 4. Flexibility
   mais mauvaise position)
 #+END_EXAMPLE
 
-* 2019-06-20 Workout
+* <2019-06-20 Thu> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-77
   :END:
@@ -1083,7 +1083,7 @@ Workoutgoals:
     L-sit 7s                      +6 months   Straddle L-sit 3s
 #+END_EXAMPLE
 
-* 2019-06-22 Parkour
+* <2019-06-22 Sat> Parkour
   :PROPERTIES:
   :CUSTOM_ID: parkour
   :END:
@@ -1097,7 +1097,7 @@ Workoutgoals:
       complètement tendue)
 #+END_EXAMPLE
 
-* 2019-06-23 Workout
+* <2019-06-23 Sun> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-78
   :END:
@@ -1112,82 +1112,82 @@ Workoutgoals:
   tuck back lever: 6#58+7#6+7#6
 #+END_EXAMPLE
 
-* 2019-06-09 Handstand
+* <2019-06-09 Sun> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-40
   :END:
 
-* 2019-06-10 Handstand
+* <2019-06-10 Mon> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-41
   :END:
 
-* 2019-06-11 Handstand
+* <2019-06-11 Tue> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-42
   :END:
 
-* 2019-06-15 Handstand
+* <2019-06-15 Sat> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-43
   :END:
 
-* 2019-06-16 Handstand
+* <2019-06-16 Sun> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-44
   :END:
 
-* 2019-06-17 Handstand
+* <2019-06-17 Mon> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-45
   :END:
 
-* 2019-06-18 Handstand
+* <2019-06-18 Tue> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-46
   :END:
 
-* 2019-06-20 Handstand
+* <2019-06-20 Thu> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-47
   :END:
 
-* 2019-06-21 Handstand
+* <2019-06-21 Fri> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-48
   :END:
 
-* 2019-06-22 Handstand
+* <2019-06-22 Sat> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-49
   :END:
 
-* 2019-06-24 Handstand
+* <2019-06-24 Mon> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-50
   :END:
 
-* 2019-06-25 Handstand
+* <2019-06-25 Tue> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-51
   :END:
 
-* 2019-06-26 Handstand
+* <2019-06-26 Wed> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-52
   :END:
 
-* 2019-06-28 Handstand
+* <2019-06-28 Fri> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-53
   :END:
 
-* 2019-06-30 Handstand
+* <2019-06-30 Sun> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-54
   :END:
 
-* 2019-07-01 Parkour
+* <2019-07-01 Mon> Parkour
   :PROPERTIES:
   :CUSTOM_ID: parkour-1
   :END:
@@ -1206,12 +1206,12 @@ Workoutgoals:
 
 4. Handstand
 
-* 2019-07-02 Handstand
+* <2019-07-02 Tue> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-55
   :END:
 
-* 2019-07-03 Workout
+* <2019-07-03 Wed> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-79
   :END:
@@ -1227,17 +1227,17 @@ Workoutgoals:
 
 2. Handstand
 
-* 2019-07-04 Handstand
+* <2019-07-04 Thu> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-56
   :END:
 
-* 2019-07-07 Handstand
+* <2019-07-07 Sun> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-57
   :END:
 
-* 2019-07-08 Workout
+* <2019-07-08 Mon> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-80
   :END:
@@ -1253,7 +1253,7 @@ Workoutgoals:
 
 2. Handstand
 
-* 2019-07-09 Tue
+* <2019-07-09 Tue> Tue
   :PROPERTIES:
   :CUSTOM_ID: tue
   :END:
@@ -1269,7 +1269,7 @@ Passe-muraille :
 
 pas en courant...) Handstand
 
-* 2019-07-11 Workout
+* <2019-07-11 Thu> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-81
   :END:
@@ -1283,7 +1283,7 @@ pas en courant...) Handstand
   back lever)
 #+END_EXAMPLE
 
-* 2019-07-12 Handstand
+* <2019-07-12 Fri> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-58
   :END:
@@ -1298,7 +1298,7 @@ pas en courant...) Handstand
    - top out
    - 4 négatifs
 
-* 2019-07-13 Handstand
+* <2019-07-13 Sat> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-59
   :END:
@@ -1308,7 +1308,7 @@ pas en courant...) Handstand
    20min à allure moyenne. 3x10 burpee pour "couper la course", à la
    Spartan race
 
-* 2019-07-14 Handstand
+* <2019-07-14 Sun> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-60
   :END:
@@ -1320,7 +1320,7 @@ pas en courant...) Handstand
    Muscle-up + L-sit : 4#1-4#1-4#1-3#1 (15! mais forme un peu limite)
    advanced tuck front lever + advanced tuck back lever: 4x6#5
 
-* 2019-08-07 Handstand
+* <2019-08-07 Wed> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-61
   :END:
@@ -1340,12 +1340,12 @@ pas en courant...) Handstand
 
 4. Parkour
 
-* 2019-08-06 Handstand
+* <2019-08-06 Tue> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-62
   :END:
 
-* 2019-08-08 Workout
+* <2019-08-08 Thu> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-82
   :END:
@@ -1358,7 +1358,7 @@ pas en courant...) Handstand
   lever: 6#6-8#8
 #+END_EXAMPLE
 
-* 2019-08-09 Handstand
+* <2019-08-09 Fri> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-63
   :END:
@@ -1373,7 +1373,7 @@ pas en courant...) Handstand
    - top out
    - 7 négatifs (!) dont 2 combiné à des top out
 
-* 2019-08-12 Workout
+* <2019-08-12 Mon> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-83
   :END:
@@ -1383,7 +1383,7 @@ pas en courant...) Handstand
   tuck front lever + advanced tuck back lever:
 #+END_EXAMPLE
 
-* 2019-08-14 Wed
+* <2019-08-14 Wed> Wed
   :PROPERTIES:
   :CUSTOM_ID: wed
   :END:
@@ -1392,7 +1392,7 @@ pas en courant...) Handstand
 
    rythme constant, essayer d'accéler. 30s marche, 15s trot
 
-* 2019-08-15 Handstand
+* <2019-08-15 Thu> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-64
   :END:
@@ -1402,19 +1402,19 @@ pas en courant...) Handstand
    Petite session technique avec Yvain 5 négatifs. Essayer en marchant
    avec changement de main
 
-* 2019-08-16 Fri
+* <2019-08-16 Fri> Fri
   :PROPERTIES:
   :CUSTOM_ID: fri
   :END:
 
 1. Running
 
-* 2019-08-17 Handstand
+* <2019-08-17 Sat> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-65
   :END:
 
-* 2019-08-18 Handstand
+* <2019-08-18 Sun> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-66
   :END:
@@ -1426,12 +1426,12 @@ pas en courant...) Handstand
    3#1-3#2-3#2-3#2 (jambes pliées) Advanced tuck front lever + advanced
    tuck back lever: 10#8-10#8-11#9
 
-* 2019-08-19 Handstand
+* <2019-08-19 Mon> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-67
   :END:
 
-* 2019-08-21 Wed
+* <2019-08-21 Wed> Wed
   :PROPERTIES:
   :CUSTOM_ID: wed-1
   :END:
@@ -1440,7 +1440,7 @@ pas en courant...) Handstand
 
    Marche
 
-* 2019-08-22 Parkour
+* <2019-08-22 Thu> Parkour
   :PROPERTIES:
   :CUSTOM_ID: parkour-2
   :END:
@@ -1455,7 +1455,7 @@ pas en courant...) Handstand
   -   knee-raises : 9 => presque !!
 #+END_EXAMPLE
 
-* 2019-08-23 Workout
+* <2019-08-23 Fri> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-84
   :END:
@@ -1467,7 +1467,7 @@ pas en courant...) Handstand
   7#7-5#5-10#5 (dos courbé....)
 #+END_EXAMPLE
 
-* 2019-08-24 Handstand
+* <2019-08-24 Sat> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-68
   :END:
@@ -1476,7 +1476,7 @@ pas en courant...) Handstand
 
    Rythme moyen sans pauses (objectif = 20min)
 
-* 2019-08-25 Parkour
+* <2019-08-25 Sun> Parkour
   :PROPERTIES:
   :CUSTOM_ID: parkour-3
   :END:
@@ -1493,7 +1493,7 @@ pas en courant...) Handstand
       encore le ventre...
 #+END_EXAMPLE
 
-* 2019-08-30 Fri
+* <2019-08-30 Fri> Fri
   :PROPERTIES:
   :CUSTOM_ID: fri-1
   :END:
@@ -1502,12 +1502,12 @@ pas en courant...) Handstand
 
    rythme moyen sans pauses (objectif = 20min)
 
-* 2019-09-01 Handstand
+* <2019-09-01 Sun> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-69
   :END:
 
-* 2019-09-02 Workout
+* <2019-09-02 Mon> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-85
   :END:
@@ -1518,7 +1518,7 @@ pas en courant...) Handstand
   tuck front lever + advanced tuck back lever: 3x7#3
 #+END_EXAMPLE
 
-* 2019-09-03 Tue
+* <2019-09-03 Tue> Tue
   :PROPERTIES:
   :CUSTOM_ID: tue-1
   :END:
@@ -1527,7 +1527,7 @@ pas en courant...) Handstand
 
    Tentative d'augmenter la fréquence
 
-* 2019-09-05 Parkour
+* <2019-09-05 Thu> Parkour
   :PROPERTIES:
   :CUSTOM_ID: parkour-4
   :END:
@@ -1543,7 +1543,7 @@ pas en courant...) Handstand
   -   knee raises 8
 #+END_EXAMPLE
 
-* 2019-09-11 Workout
+* <2019-09-11 Wed> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-86
   :END:
@@ -1554,7 +1554,7 @@ pas en courant...) Handstand
   lever + advanced tuck back lever: 5#5-7#5-8#5 (attention au dos)
 #+END_EXAMPLE
 
-* 2019-09-15 Sun
+* <2019-09-15 Sun> Sun
   :PROPERTIES:
   :CUSTOM_ID: sun
   :END:
@@ -1563,7 +1563,7 @@ pas en courant...) Handstand
 
    Medium
 
-* 2019-09-22 Workout
+* <2019-09-22 Sun> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-87
   :END:
@@ -1575,7 +1575,7 @@ pas en courant...) Handstand
   lever: 7#4-7#5-7#3 (dos rond....)
 #+END_EXAMPLE
 
-* 2019-09-25 Wed
+* <2019-09-25 Wed> Wed
   :PROPERTIES:
   :CUSTOM_ID: wed-2
   :END:
@@ -1584,7 +1584,7 @@ pas en courant...) Handstand
 
    Medium
 
-* 2019-09-30 Workout
+* <2019-09-30 Mon> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-88
   :END:
@@ -1596,14 +1596,14 @@ pas en courant...) Handstand
   tuck back lever: 7#5 5#5 5#5 (attention dos rond...)
 #+END_EXAMPLE
 
-* 2019-10-01 Tue
+* <2019-10-01 Tue> Tue
   :PROPERTIES:
   :CUSTOM_ID: tue-2
   :END:
 
 1. Running
 
-* 2019-10-03 Parkour
+* <2019-10-03 Thu> Parkour
   :PROPERTIES:
   :CUSTOM_ID: parkour-5
   :END:
@@ -1612,7 +1612,7 @@ pas en courant...) Handstand
   Douleur IPP 4 donc brève séance : travail flux
 #+END_EXAMPLE
 
-* 2019-10-04 Fri
+* <2019-10-04 Fri> Fri
   :PROPERTIES:
   :CUSTOM_ID: fri-2
   :END:
@@ -1621,7 +1621,7 @@ pas en courant...) Handstand
 
    Moyenne : 9min30 + 2min30
 
-* 2019-10-07 Parkour
+* <2019-10-07 Mon> Parkour
   :PROPERTIES:
   :CUSTOM_ID: parkour-6
   :END:
@@ -1633,7 +1633,7 @@ pas en courant...) Handstand
 
 2. Handstand
 
-* 2019-10-08 Workout
+* <2019-10-08 Tue> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-89
   :END:
@@ -1645,7 +1645,7 @@ pas en courant...) Handstand
   advanced tuck back lever: 5#2 (dos rond :/)
 #+END_EXAMPLE
 
-* 2019-10-13 Parkour
+* <2019-10-13 Sun> Parkour
   :PROPERTIES:
   :CUSTOM_ID: parkour-7
   :END:
@@ -1654,7 +1654,7 @@ pas en courant...) Handstand
   Underbar, equilibre
 #+END_EXAMPLE
 
-* 2019-10-14 Mon
+* <2019-10-14 Mon> Mon
   :PROPERTIES:
   :CUSTOM_ID: mon
   :END:
@@ -1663,7 +1663,7 @@ pas en courant...) Handstand
 
    Medium
 
-* 2019-10-15 Handstand
+* <2019-10-15 Tue> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-70
   :END:
@@ -1675,19 +1675,19 @@ pas en courant...) Handstand
    (fixationo cassée...) Advanced tuck front lever + advanced tuck back
    lever: Front sur une branche d'arbre : 4s max sur 10 essais
 
-* 2019-10-16 Handstand
+* <2019-10-16 Wed> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-71
   :END:
 
-* 2019-10-17 Handstand
+* <2019-10-17 Thu> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-72
   :END:
 
 2. Running
 
-* 2019-10-18 Parkour
+* <2019-10-18 Fri> Parkour
   :PROPERTIES:
   :CUSTOM_ID: parkour-8
   :END:
@@ -1696,7 +1696,7 @@ pas en courant...) Handstand
   Travail de l\'enchaînement
 #+END_EXAMPLE
 
-* 2019-10-19 Workout
+* <2019-10-19 Sat> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-90
   :END:
@@ -1708,7 +1708,7 @@ pas en courant...) Handstand
   5#3-4#3
 #+END_EXAMPLE
 
-* 2019-10-25 Workout
+* <2019-10-25 Fri> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-91
   :END:
@@ -1719,17 +1719,17 @@ pas en courant...) Handstand
   lever + advanced tuck back lever: 5#5-5#5-5#4
 #+END_EXAMPLE
 
-* 2019-10-26 Handstand
+* <2019-10-26 Sat> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-73
   :END:
 
-* 2019-10-27 Handstand
+* <2019-10-27 Sun> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-74
   :END:
 
-* 2019-10-28 Handstand
+* <2019-10-28 Mon> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-75
   :END:
@@ -1743,7 +1743,7 @@ pas en courant...) Handstand
    - cat hang pull-up 3x3
    - knee raises 3x2
 
-* 2019-10-29 Workout
+* <2019-10-29 Tue> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-92
   :END:
@@ -1754,12 +1754,12 @@ pas en courant...) Handstand
   lever + advanced tuck back lever: 3x{5#3} (dos toujours rond)
 #+END_EXAMPLE
 
-* 2019-10-07
+* <2019-10-07 Mon>
   :PROPERTIES:
   :CUSTOM_ID: section
   :END:
 
-* 2019-11-11 Handstand
+* <2019-11-11 Mon> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-76
   :END:
@@ -1771,7 +1771,7 @@ pas en courant...) Handstand
    front lever + advanced tuck back lever: 6#4-6#5-6#5 (travail dos
    droit... mais à confirmer)
 
-* 2019-11-16 Workout
+* <2019-11-16 Sat> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-93
   :END:
@@ -1783,7 +1783,7 @@ pas en courant...) Handstand
   jambes pliées)
 #+END_EXAMPLE
 
-* 2019-11-18 Workout
+* <2019-11-18 Mon> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-94
   :END:
@@ -1833,7 +1833,7 @@ pas en courant...) Handstand
    squats, course 30min tranquille Vendredi : parkour (muscu, technique)
    Samedi : muscu Dimanche : squats, course 1h
 
-* 2019-11-21 Handstand
+* <2019-11-21 Thu> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-77
   :END:
@@ -1843,14 +1843,14 @@ pas en courant...) Handstand
    Lazy vault : continue travail Climb-up : toujours travail à l'arrêt
    mais avec élan sur un pied. Pas de négatifs réussis.
 
-* 2019-11-22 Handstand
+* <2019-11-22 Fri> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-78
   :END:
 
 2. Running
 
-* 2019-11-23 Handstand
+* <2019-11-23 Sat> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-79
   :END:
@@ -1859,7 +1859,7 @@ pas en courant...) Handstand
   3x3s, 2x4s, 1x5s
 #+END_EXAMPLE
 
-* 2019-11-24 Handstand
+* <2019-11-24 Sun> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-80
   :END:
@@ -1869,7 +1869,7 @@ pas en courant...) Handstand
    Nouveau circuit : 2x2 cat hang shimmy, 2x3 pull-up, 3xnegatif, 2x2
    knee raises, 2xtop out en jumpant Aujourd'hui : 2 circuit + 0.2
 
-* 2019-11-25 Handstand
+* <2019-11-25 Mon> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-81
   :END:
@@ -1878,14 +1878,14 @@ pas en courant...) Handstand
   3x3 23x3
 #+END_EXAMPLE
 
-* 2019-11-26 Handstand
+* <2019-11-26 Tue> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-82
   :END:
 
 2. Running
 
-* 2019-11-27 Handstand
+* <2019-11-27 Wed> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-83
   :END:
@@ -1901,7 +1901,7 @@ pas en courant...) Handstand
    front lever + advanced tuck back lever: 10#4 - 10#4 - 11#5 (2eme =
    dos droit mais bien surveiller)
 
-* 2019-11-28 Handstand
+* <2019-11-28 Thu> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-84
   :END:
@@ -1918,7 +1918,7 @@ pas en courant...) Handstand
    4x6+1 Step up : 3x10 (de chaque côté) Box jamp : 3x5 Rail plank : 3
    Rail push-up: 2 de chaque côté
 
-* 2019-11-29 Parkour
+* <2019-11-29 Fri> Parkour
   :PROPERTIES:
   :CUSTOM_ID: parkour-9
   :END:
@@ -1931,7 +1931,7 @@ pas en courant...) Handstand
   -   knee raises 3x2
 #+END_EXAMPLE
 
-* 2019-11-30 Handstand
+* <2019-11-30 Sat> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-85
   :END:
@@ -1942,14 +1942,14 @@ pas en courant...) Handstand
 
 2. Handstand
 
-* 2019-12-01 Sun
+* <2019-12-01 Sun> Sun
   :PROPERTIES:
   :CUSTOM_ID: sun-1
   :END:
 
 1. Running
 
-* 2019-12-02 Handstand
+* <2019-12-02 Mon> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-86
   :END:
@@ -1958,7 +1958,7 @@ pas en courant...) Handstand
   3-2x4-2x5-8-10
 #+END_EXAMPLE
 
-* 2019-12-05 Parkour
+* <2019-12-05 Thu> Parkour
   :PROPERTIES:
   :CUSTOM_ID: parkour-10
   :END:
@@ -1974,7 +1974,7 @@ pas en courant...) Handstand
   -   assistance avec jambe : 6 essais
 #+END_EXAMPLE
 
-* 2019-12-06 Handstand
+* <2019-12-06 Fri> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-87
   :END:
@@ -1989,7 +1989,7 @@ pas en courant...) Handstand
    gauche en appui Pseudo climb-up en appui sur le sol. Même sur petits
    obstacles, non validé...
 
-* 2019-12-07 Handstand
+* <2019-12-07 Sat> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-88
   :END:
@@ -2004,7 +2004,7 @@ pas en courant...) Handstand
    side vault (G + D, grosse difficultés à gauche, travail de 0) 3x3
    pull up, travail muscle-up avec balancé
 
-* 2019-12-08 Handstand
+* <2019-12-08 Sun> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-89
   :END:
@@ -2015,7 +2015,7 @@ pas en courant...) Handstand
 
 2. Running
 
-* 2019-12-09 Workout
+* <2019-12-09 Mon> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-95
   :END:
@@ -2027,7 +2027,7 @@ pas en courant...) Handstand
   back lever: 10#5-10#5-10#5
 #+END_EXAMPLE
 
-* 2019-12-10 Handstand
+* <2019-12-10 Tue> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-90
   :END:
@@ -2052,7 +2052,7 @@ pas en courant...) Handstand
 
    3x2-3-3
 
-* 2019-12-11 Handstand
+* <2019-12-11 Wed> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-91
   :END:
@@ -2061,7 +2061,7 @@ pas en courant...) Handstand
   2-3-4-5-6-2x8
 #+END_EXAMPLE
 
-* 2019-12-10 Handstand
+* <2019-12-10 Tue> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-92
   :END:
@@ -2072,7 +2072,7 @@ pas en courant...) Handstand
 
 2. Running
 
-* 2019-12-12 Handstand
+* <2019-12-12 Thu> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-93
   :END:
@@ -2085,7 +2085,7 @@ pas en courant...) Handstand
 
    4x4-2
 
-* 2019-12-13 Workout
+* <2019-12-13 Fri> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-96
   :END:
@@ -2097,22 +2097,22 @@ pas en courant...) Handstand
   back lever : 10#6 - 10#6 - 5#3
 #+END_EXAMPLE
 
-* 2019-12-14 Handstand
+* <2019-12-14 Sat> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-94
   :END:
 
-* 2019-12-14 Running
+* <2019-12-14 Sat> Running
   :PROPERTIES:
   :CUSTOM_ID: running
   :END:
 
-* 2019-12-14 L-sit
+* <2019-12-14 Sat> L-sit
   :PROPERTIES:
   :CUSTOM_ID: l-sit
   :END:
 
-* 2019-12-15
+* <2019-12-15 Sun>
   :PROPERTIES:
   :CUSTOM_ID: section-1
   :END:
@@ -2149,7 +2149,7 @@ pas en courant...) Handstand
 
    Compression 3x10s
 
-* 2019-12-15 Parkour
+* <2019-12-15 Sun> Parkour
   :PROPERTIES:
   :CUSTOM_ID: parkour-11
   :END:
@@ -2165,7 +2165,7 @@ pas en courant...) Handstand
       progressif, fatigue
 #+END_EXAMPLE
 
-* 2019-12-16 Handstand
+* <2019-12-16 Mon> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-95
   :END:
@@ -2182,7 +2182,7 @@ pas en courant...) Handstand
    priori tendu) Pull-up front lever tucked 3x3 (attention position du
    bassin !!) L-sit 0 Compression :0 Extension (lower-back) :0
 
-* 2019-12-18 Handstand
+* <2019-12-18 Wed> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-96
   :END:
@@ -2201,7 +2201,7 @@ pas en courant...) Handstand
    - knee raises 2x3
    - leg assisted : 2x3 Bilan : fatiguee
 
-* 2019-12-19 Handstand
+* <2019-12-19 Thu> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-97
   :END:
@@ -2220,7 +2220,7 @@ pas en courant...) Handstand
 
 3. Running
 
-* 2020-01-02 Thu
+* <2020-01-02 Thu> Thu
   :PROPERTIES:
   :CUSTOM_ID: thu
   :END:
@@ -2235,7 +2235,7 @@ pas en courant...) Handstand
 
    3x2-4x3-4-5
 
-* 2020-01-03 Handstand
+* <2020-01-03 Fri> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-98
   :END:
@@ -2252,7 +2252,7 @@ pas en courant...) Handstand
    - jumping OK mais négatif à travailler
    - aide d'une jambe : échec, à retravailler.
 
-* 2020-01-07 Handstand
+* <2020-01-07 Tue> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-99
   :END:
@@ -2263,7 +2263,7 @@ pas en courant...) Handstand
 
 2. Running
 
-* 2020-01-08 Handstand
+* <2020-01-08 Wed> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-100
   :END:
@@ -2281,7 +2281,7 @@ pas en courant...) Handstand
    consécutifs) Extension (lower-back) : 3x22 Compression : 3x10 L-sit
    (jambes presque tendues) : 6-6-5
 
-* 2020-01-09
+* <2020-01-09 Thu>
   :PROPERTIES:
   :CUSTOM_ID: section-2
   :END:
@@ -2302,7 +2302,7 @@ pas en courant...) Handstand
 
    (nouveau record de vitesse mais 2 pauses aux feux)
 
-* 2020-01-11 Handstand
+* <2020-01-11 Sat> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-101
   :END:
@@ -2315,7 +2315,7 @@ pas en courant...) Handstand
 
    2x10
 
-* 2020-01-13 Handstand
+* <2020-01-13 Mon> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-102
   :END:
@@ -2329,7 +2329,7 @@ pas en courant...) Handstand
    Demi-session Muscle-up : 7-6-3 (vrais ! et anneau mi-épaule !)
    Pistols (assisted) : 3x5
 
-* 2020-01-18 Handstand
+* <2020-01-18 Sat> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-103
   :END:
@@ -2345,7 +2345,7 @@ pas en courant...) Handstand
    tucked push-up: 2+1+1 - 2-2 - 1 Extension (lower-back) : 3x22
    Compression : 3x10 L-sit: 3x3
 
-* 2020-01-19 Handstand
+* <2020-01-19 Sun> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-104
   :END:
@@ -2354,7 +2354,7 @@ pas en courant...) Handstand
   StW 40-40-30 BtW 2x2-3-2x4-5-13
 #+END_EXAMPLE
 
-* 2020-01-20 Handstand
+* <2020-01-20 Mon> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-105
   :END:
@@ -2367,7 +2367,7 @@ pas en courant...) Handstand
 
    Échauffement + circuit
 
-* 2020-01-21 Handstand
+* <2020-01-21 Tue> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-106
   :END:
@@ -2383,7 +2383,7 @@ pas en courant...) Handstand
    push-up: 2+2-2+2-2+# Extension (lower-back) : 3x22 Compression :
    10-9-10
 
-* 2020-01-30 Handstand
+* <2020-01-30 Thu> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-107
   :END:
@@ -2399,7 +2399,7 @@ pas en courant...) Handstand
    push-up: 3+2 - 1-2-2 + 3-1 Extension (lower-back) : 3x22 Compression
    : 3x10 L-sit : 3s
 
-* 2020-01-31 Parkour
+* <2020-01-31 Fri> Parkour
   :PROPERTIES:
   :CUSTOM_ID: parkour-12
   :END:
@@ -2414,7 +2414,7 @@ Workout :
   -   dips : 3x6
 #+END_EXAMPLE
 
-* 2020-02-01 Handstand
+* <2020-02-01 Sat> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-108
   :END:
@@ -2425,7 +2425,7 @@ Workout :
 
 2. Running
 
-* 2020-02-02 Handstand
+* <2020-02-02 Sun> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-109
   :END:
@@ -2441,7 +2441,7 @@ Workout :
      (lower-back)
      3x22 Compression : 3x10 L-sit: 3x2
 
-* 2020-02-15 Handstand
+* <2020-02-15 Sat> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-110
   :END:
@@ -2450,7 +2450,7 @@ Workout :
   StW 45-32-33 BtW 3x2-2x4-2x5
 #+END_EXAMPLE
 
-* 2020-02-16 Handstand
+* <2020-02-16 Sun> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-111
   :END:
@@ -2465,7 +2465,7 @@ Workout :
    Front-lever row (tucked) : 3x3 Planche tucked push-up: 3+2 - 3+2 -
    1+1+1 Extension (lower-back) : 3x22 Compression : 3x10 L-sit : 2-2-1
 
-* 2020-02-17 Handstand
+* <2020-02-17 Mon> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-112
   :END:
@@ -2476,7 +2476,7 @@ Workout :
 
 2. Running
 
-* 2020-02-18 Handstand
+* <2020-02-18 Tue> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-113
   :END:
@@ -2485,7 +2485,7 @@ Workout :
   StW 43-40-25-25 BtW 2x2 - 3x3 - 4-5
 #+END_EXAMPLE
 
-* 2020-02-20 Handstand
+* <2020-02-20 Thu> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-114
   :END:
@@ -2501,7 +2501,7 @@ Workout :
    3+2 - 3+2 -2+1 Planche tucked push-up: 3x3 Extension (lower-back) :
    22 Compression : L-sit : 2
 
-* 2020-02-21 Handstand
+* <2020-02-21 Fri> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-115
   :END:
@@ -2510,14 +2510,14 @@ Workout :
   StW 45-33-32 BtW 5x3-5-6-9
 #+END_EXAMPLE
 
-* 2020-02-22
+* <2020-02-22 Sat>
   :PROPERTIES:
   :CUSTOM_ID: section-3
   :END:
 
 1. Running
 
-* 2020-02-23 Handstand
+* <2020-02-23 Sun> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-116
   :END:
@@ -2534,7 +2534,7 @@ Workout :
    push-up: 3+2 - 3+2 - 2+1 Extension (lower-back) : 3x22 Compression :
    3x10 (jambes enfin tendues !) L-sit : 3-2-2
 
-* 2020-02-25 Parkour
+* <2020-02-25 Tue> Parkour
   :PROPERTIES:
   :CUSTOM_ID: parkour-13
   :END:
@@ -2549,14 +2549,14 @@ Workout :
   -   lunges 3x10
 #+END_EXAMPLE
 
-* 2020-02-26
+* <2020-02-26 Wed>
   :PROPERTIES:
   :CUSTOM_ID: section-4
   :END:
 
 1. Running
 
-* 2020-02-27 Handstand
+* <2020-02-27 Thu> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-117
   :END:
@@ -2573,7 +2573,7 @@ Workout :
    Planche tucked push-up: 3x{3+2+1} Extension (lower-back) : 3x22
    Compression : 3x10 L-sit: 3x2
 
-* 2020-02-29 Handstand
+* <2020-02-29 Sat> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-118
   :END:
@@ -2582,7 +2582,7 @@ Workout :
   StW 35-32-28 BtW 3x2-4x3-4-2x8
 #+END_EXAMPLE
 
-* 2020-03-01 Handstand
+* <2020-03-01 Sun> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-119
   :END:
@@ -2596,7 +2596,7 @@ Workout :
    2x5 pompes 3x4 dips 3x16 lunges 3x17 knee raises 3x3 pull -up
    (conditions météo difficiles)
 
-* 2020-03-02 Handstand
+* <2020-03-02 Mon> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-120
   :END:
@@ -2605,7 +2605,7 @@ Workout :
   StW 32-31-25 BtW 2x3-4x4-6
 #+END_EXAMPLE
 
-* 2020-03-03 Handstand
+* <2020-03-03 Tue> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-121
   :END:
@@ -2621,7 +2621,7 @@ Workout :
    row (tucked) : 4-4-3 Planche tucked push-up: 4+3 - 1+2 - 2+1
    Extension (lower-back) : 22 Compression : 10 L-sit: 3
 
-* 2020-03-04 Handstand
+* <2020-03-04 Wed> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-122
   :END:
@@ -2640,7 +2640,7 @@ Workout :
    - knee raises 4 x2
    - pied au sol 4
 
-* 2020-03-05 Handstand
+* <2020-03-05 Thu> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-123
   :END:
@@ -2651,7 +2651,7 @@ Workout :
 
 2. Running
 
-* 2020-03-06 Workout
+* <2020-03-06 Fri> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-97
   :END:
@@ -2663,7 +2663,7 @@ Workout :
   : 3x10 L-sit : 3x3
 #+END_EXAMPLE
 
-* 2020-03-07 Handstand
+* <2020-03-07 Sat> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-124
   :END:
@@ -2672,7 +2672,7 @@ Workout :
   StW 30-27-31 BtW 2x3-3x4-5-2x6-8
 #+END_EXAMPLE
 
-* 2020-03-09 Handstand
+* <2020-03-09 Mon> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-125
   :END:
@@ -2686,7 +2686,7 @@ Workout :
    échauffement 2x5 burpees (dos droit pour pompes) endurance : 5
    mouvements x 3 knee-drive : 4 de chaque côté
 
-* 2020-03-10 Handstand
+* <2020-03-10 Tue> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-126
   :END:
@@ -2702,7 +2702,7 @@ Workout :
    push-up: 2+2 - 3+2 - 2+2 Extension (lower-back) : 3x22 Compression :
    3x10 L-sit: 3-3-2
 
-* 2020-03-12 Handstand
+* <2020-03-12 Thu> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-127
   :END:
@@ -2718,7 +2718,7 @@ Workout :
    push-up: 3+2 - 3+2 Extension (lower-back) : 3x22 Compression : 3x10
    L-sit : 2-2
 
-* 2020-03-14 Handstand
+* <2020-03-14 Sat> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-128
   :END:
@@ -2727,7 +2727,7 @@ Workout :
   StW 35-28 BtW 2-2x3-2-4-5-6
 #+END_EXAMPLE
 
-* 2020-03-15 Parkour
+* <2020-03-15 Sun> Parkour
   :PROPERTIES:
   :CUSTOM_ID: parkour-14
   :END:
@@ -2737,7 +2737,7 @@ Workout :
   obstacle x 3
 #+END_EXAMPLE
 
-* 2020-03-16 Handstand
+* <2020-03-16 Mon> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-129
   :END:
@@ -2752,7 +2752,7 @@ Workout :
    Front-lever row (tucked) : 3x4 Planche tucked push-up: 2+2 - 3+2 -
    3+2 Extension (lower-back) : 3x22 Compression : 3x10 L-sit : 3-2-2
 
-* 2020-03-18 Parkour
+* <2020-03-18 Wed> Parkour
   :PROPERTIES:
   :CUSTOM_ID: parkour-15
   :END:
@@ -2762,7 +2762,7 @@ Workout :
   raise x4 de chaque côté
 #+END_EXAMPLE
 
-* 2020-03-19 Handstand
+* <2020-03-19 Thu> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-130
   :END:
@@ -2773,7 +2773,7 @@ Workout :
 
 2. Running
 
-* 2020-03-20 Handstand
+* <2020-03-20 Fri> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-131
   :END:
@@ -2789,7 +2789,7 @@ Workout :
    Front-lever row (tucked) : 3x4 Planche tucked push-up: 3+3 - 3+2 -
    2+2+1 Extension (lower-back) : 3x4 Compression : 3x10 L-sit : 3x3
 
-* 2020-03-21 Handstand
+* <2020-03-21 Sat> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-132
   :END:
@@ -2803,7 +2803,7 @@ Workout :
    Kong : plateau Knee -up : too tired Underbar : need another place to
    train
 
-* 2020-03-22 Handstand
+* <2020-03-22 Sun> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-133
   :END:
@@ -2814,7 +2814,7 @@ Workout :
 
 2. Running
 
-* 2020-03-23 Handstand
+* <2020-03-23 Mon> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-134
   :END:
@@ -2830,7 +2830,7 @@ Workout :
    4+1 - 3+1 Extension (lower-back) : 3x22 Compression : 3x10 L-sit :
    3-3-4
 
-* 2020-03-24 Handstand
+* <2020-03-24 Tue> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-135
   :END:
@@ -2839,7 +2839,7 @@ Workout :
   StW 37-30 BtW 2x3-2x5-7
 #+END_EXAMPLE
 
-* 2020-03-25 Handstand
+* <2020-03-25 Wed> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-136
   :END:
@@ -2848,7 +2848,7 @@ Workout :
   StW 42-30-25 BtW 2x3-4-2x5-8
 #+END_EXAMPLE
 
-* 2020-03-26 Handstand
+* <2020-03-26 Thu> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-137
   :END:
@@ -2865,7 +2865,7 @@ Workout :
    push-up: 2+1 - 3+2 - 3+2 Extension (lower-back) : 2x2 Compression :
    2x9 L-sit : 2x3
 
-* 2020-03-28 Handstand
+* <2020-03-28 Sat> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-138
   :END:
@@ -2874,7 +2874,7 @@ Workout :
   StW 37-42-30 BtW 2x2-4x3-2x4-2x5-10
 #+END_EXAMPLE
 
-* 2020-03-29 Handstand
+* <2020-03-29 Sun> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-139
   :END:
@@ -2888,7 +2888,7 @@ Workout :
    Kong, à retravailler Reverse passe muraille, idem Lazy vault à
    continuer Demi-tour ok, à maintenir
 
-* 2020-03-30 Handstand
+* <2020-03-30 Mon> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-140
   :END:
@@ -2909,14 +2909,14 @@ Workout :
    Planche tucked push-up: 3+3 - 4+1 - 3+2 Extension (lower-back) :
    Compression :
 
-* 2020-03-31
+* <2020-03-31 Tue>
   :PROPERTIES:
   :CUSTOM_ID: section-5
   :END:
 
 1. Running
 
-* 2020-04-02 Handstand
+* <2020-04-02 Thu> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-141
   :END:
@@ -2929,7 +2929,7 @@ Workout :
 
    7-7
 
-* 2020-04-03 Parkour
+* <2020-04-03 Fri> Parkour
   :PROPERTIES:
   :CUSTOM_ID: parkour-16
   :END:
@@ -2938,7 +2938,7 @@ Workout :
   Léger progres en lazy vault D. Constant à gauche Régression en kong
 #+END_EXAMPLE
 
-* 2020-04-04 Workout
+* <2020-04-04 Sat> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-98
   :END:
@@ -2948,7 +2948,7 @@ assisté) - 1(+4) sans toucher le sol Pistols (assisted) : 3x5 (appui)
 Front-lever row (tucked) : 5-5-3 Planche tucked push-up: 4+4 - 4+3 - 3+1
 Extension (lower-back) : 3x22 Compression : 3x9 L-sit : 3x2
 
-* 2020-04-05 Handstand
+* <2020-04-05 Sun> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-142
   :END:
@@ -2967,7 +2967,7 @@ Workout (sans pause sur une série, 20m ?) Quadrupédie avant + sprint : 5
 puis 2 min pause Quadrupédie arrière + sprint : 3 puis 2 min pause Kong
 avant : 3 puis 2 min pause Kong arrière : 1
 
-* 2020-04-07 Handstand
+* <2020-04-07 Tue> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-143
   :END:
@@ -2987,7 +2987,7 @@ avant : 3 puis 2 min pause Kong arrière : 1
    5-5-5 Planche tucked push-up: 4+3 - 4+1 - 3+1 Extension (lower-back)
    : 3x22 Compression : 10-9-10
 
-* 2020-04-09 Parkour
+* <2020-04-09 Thu> Parkour
   :PROPERTIES:
   :CUSTOM_ID: parkour-17
   :END:
@@ -3006,7 +3006,7 @@ avant : 3 puis 2 min pause Kong arrière : 1
   -   with help
 #+END_EXAMPLE
 
-* 2020-04-10 Handstand
+* <2020-04-10 Fri> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-144
   :END:
@@ -3019,7 +3019,7 @@ avant : 3 puis 2 min pause Kong arrière : 1
 
    3x7
 
-* 2020-04-11 Workout
+* <2020-04-11 Sat> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-99
   :END:
@@ -3031,7 +3031,7 @@ avant : 3 puis 2 min pause Kong arrière : 1
   (lower-back) : 2x22 Compression : 9-10 L-sit : 3-4
 #+END_EXAMPLE
 
-* 2020-04-13 Handstand
+* <2020-04-13 Mon> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-145
   :END:
@@ -3049,7 +3049,7 @@ avant : 3 puis 2 min pause Kong arrière : 1
    Burpee 7+4+5 Side vault : légère progression (trottine à droite,
    contact à gauche...) Kong : 2 validés Demi tour ok
 
-* 2020-04-15 Workout
+* <2020-04-15 Wed> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-100
   :END:
@@ -3059,7 +3059,7 @@ Warm-up : RTO 20-10-10 (dos droit = dur++) Muscle-up : 0(+5) - 1(+4) -
 tucked push-up: 2+2+1 - 3+2 Extension (lower-back) : 2x22 Compression :
 3x10
 
-* 2020-04-16 Handstand
+* <2020-04-16 Thu> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-146
   :END:
@@ -3081,7 +3081,7 @@ tucked push-up: 2+2+1 - 3+2 Extension (lower-back) : 2x22 Compression :
    - knee raises 4 de chaque côté x2
    - wall climb avec appui au sol : 4 x 2
 
-* 2020-04-17 Handstand
+* <2020-04-17 Fri> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-147
   :END:
@@ -3096,7 +3096,7 @@ tucked push-up: 2+2+1 - 3+2 Extension (lower-back) : 2x22 Compression :
 
 3. Running
 
-* 2020-04-18 Handstand
+* <2020-04-18 Sat> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-148
   :END:
@@ -3113,7 +3113,7 @@ tucked push-up: 2+2+1 - 3+2 Extension (lower-back) : 2x22 Compression :
    Front-lever row (tucked) : 5-5-4 Planche tucked push-up: 4+4 - 4+2 -
    5+1 Extension (lower-back) : Compression : L-sit :
 
-* 2020-04-19 Handstand
+* <2020-04-19 Sun> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-149
   :END:
@@ -3122,14 +3122,14 @@ tucked push-up: 2+2+1 - 3+2 Extension (lower-back) : 2x22 Compression :
   StW 30-30-25 BtW 3x3-2x4-2x7-8
 #+END_EXAMPLE
 
-* 2020-04-21
+* <2020-04-21 Tue>
   :PROPERTIES:
   :CUSTOM_ID: section-6
   :END:
 
 1. Running
 
-* 2020-04-22 Handstand
+* <2020-04-22 Wed> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-150
   :END:
@@ -3146,7 +3146,7 @@ tucked push-up: 2+2+1 - 3+2 Extension (lower-back) : 2x22 Compression :
    Planche tucked push-up: 4+2 - 4+2 Extension (lower-back) : 3x22
    Compression : 2x9 L-sit :
 
-* 2020-04-23 Parkour
+* <2020-04-23 Thu> Parkour
   :PROPERTIES:
   :CUSTOM_ID: parkour-18
   :END:
@@ -3157,7 +3157,7 @@ tucked push-up: 2+2+1 - 3+2 Extension (lower-back) : 2x22 Compression :
   Passe-muraille : 2x4 knee drive, 10 negative
 #+END_EXAMPLE
 
-* 2020-04-24 Handstand
+* <2020-04-24 Fri> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-151
   :END:
@@ -3168,7 +3168,7 @@ tucked push-up: 2+2+1 - 3+2 Extension (lower-back) : 2x22 Compression :
 
 2. Running
 
-* 2020-04-25 Workout
+* <2020-04-25 Sat> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-101
   :END:
@@ -3178,7 +3178,7 @@ Jambes tendues mais bras encore pliés) Pistols (assisted) : 3x5
 Front-lever row (tucked) : 5-5 Planche tucked push-up: 5+2 - 3+1 - 3+1+1
 Extension (lower-back) : 3x22 Compression : 3x10 L-sit : 3x3
 
-* 2020-04-26 Handstand
+* <2020-04-26 Sun> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-152
   :END:
@@ -3205,7 +3205,7 @@ Extension (lower-back) : 3x22 Compression : 3x10 L-sit : 3x3
    Front split : 30s Frog pose (dynamic) : 30s Horse stance : 15s-15s
    Standing pancake : 1min
 
-* 2020-04-27 Handstand
+* <2020-04-27 Mon> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-153
   :END:
@@ -3222,7 +3222,7 @@ Extension (lower-back) : 3x22 Compression : 3x10 L-sit : 3x3
    Front split : 2x30s Frog pose (dynamic) : 1min Horse stance : 2x30s
    Standing pancake : 2x1min
 
-* 2020-04-28
+* <2020-04-28 Tue>
   :PROPERTIES:
   :CUSTOM_ID: section-7
   :END:
@@ -3233,7 +3233,7 @@ Extension (lower-back) : 3x22 Compression : 3x10 L-sit : 3x3
    Front split : 1min Frog pose (dynamic) : 1min Horse stance : 2x30s
    Standing pancake : 1min
 
-* 2020-04-29
+* <2020-04-29 Wed>
   :PROPERTIES:
   :CUSTOM_ID: section-8
   :END:
@@ -3249,14 +3249,14 @@ Extension (lower-back) : 3x22 Compression : 3x10 L-sit : 3x3
    Kong workout : 20m + 20m sprint + 40m marche 5 quadrupédie 5 reverse
    kong 5 quadrupédie à l'enverse
 
-* 2020-04-30
+* <2020-04-30 Thu>
   :PROPERTIES:
   :CUSTOM_ID: section-9
   :END:
 
 1. Running
 
-* 2020-05-01 Handstand
+* <2020-05-01 Fri> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-154
   :END:
@@ -3265,7 +3265,7 @@ Extension (lower-back) : 3x22 Compression : 3x10 L-sit : 3x3
   StW 35-30-30 BtW 4x2-2x3-4-5-6-7
 #+END_EXAMPLE
 
-* 2020-05-02 Handstand
+* <2020-05-02 Sat> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-155
   :END:
@@ -3288,7 +3288,7 @@ Extension (lower-back) : 3x22 Compression : 3x10 L-sit : 3x3
    Frog pose (dynamic) : 1min Horse stance : 5+10-10-5 Standing pancake
    : 1min25 Front split : 1min
 
-* 2020-05-03 Handstand
+* <2020-05-03 Sun> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-156
   :END:
@@ -3313,7 +3313,7 @@ Extension (lower-back) : 3x22 Compression : 3x10 L-sit : 3x3
 
    ! Je pense avoir compris comment poser le pied !
 
-* 2020-05-04
+* <2020-05-04 Mon>
   :PROPERTIES:
   :CUSTOM_ID: section-10
   :END:
@@ -3324,7 +3324,7 @@ Extension (lower-back) : 3x22 Compression : 3x10 L-sit : 3x3
    Frog pose (dynamic) : 1min Horse stance : 30s Standing pancake : 1min
    Front split : 1min
 
-* 2020-05-05 Handstand
+* <2020-05-05 Tue> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-157
   :END:
@@ -3353,7 +3353,7 @@ Extension (lower-back) : 3x22 Compression : 3x10 L-sit : 3x3
    Augmenter la difficulté pour FL row : commencer à tendre les jambes
    Idem pour le planche push-up
 
-* 2020-05-06 Parkour
+* <2020-05-06 Wed> Parkour
   :PROPERTIES:
   :CUSTOM_ID: parkour-19
   :END:
@@ -3369,14 +3369,14 @@ Extension (lower-back) : 3x22 Compression : 3x10 L-sit : 3x3
   -   knee raises (each side) : 2x4
 #+END_EXAMPLE
 
-* 2020-05-07
+* <2020-05-07 Thu>
   :PROPERTIES:
   :CUSTOM_ID: section-11
   :END:
 
 1. Running
 
-* 2020-05-08 Handstand
+* <2020-05-08 Fri> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-158
   :END:
@@ -3400,7 +3400,7 @@ Extension (lower-back) : 3x22 Compression : 3x10 L-sit : 3x3
    (assisted) : 5-5-3 Front-lever row (advanced tuck) : 0-1-1 Planche
    push-up (advanced tuck : 0-0-0 (que des négatifs)
 
-* 2020-05-09
+* <2020-05-09 Sat>
   :PROPERTIES:
   :CUSTOM_ID: section-12
   :END:
@@ -3415,7 +3415,7 @@ Extension (lower-back) : 3x22 Compression : 3x10 L-sit : 3x3
 
    StW 32-32-32-31 BtW 2x2-4x3-3x4-2x5
 
-* 2020-05-10 Sunday
+* <2020-05-10 Sun> Sunday
   :PROPERTIES:
   :CUSTOM_ID: sunday
   :END:
@@ -3430,7 +3430,7 @@ Extension (lower-back) : 3x22 Compression : 3x10 L-sit : 3x3
 
    Side vault, endurance training (low intensity)
 
-* 2020-05-11 Handstand
+* <2020-05-11 Mon> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-159
   :END:
@@ -3446,7 +3446,7 @@ Extension (lower-back) : 3x22 Compression : 3x10 L-sit : 3x3
    push-up (advanced tuck): 0-0-0 Extension (lower-back) : 3x14
    (dynamique) Compression : 3x10 L-sit : 3-1-2
 
-* 2020-05-12 Handstand
+* <2020-05-12 Tue> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-160
   :END:
@@ -3463,7 +3463,7 @@ Extension (lower-back) : 3x22 Compression : 3x10 L-sit : 3x3
 
 3. Running
 
-* 2020-05-13 Handstand
+* <2020-05-13 Wed> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-161
   :END:
@@ -3478,7 +3478,7 @@ Extension (lower-back) : 3x22 Compression : 3x10 L-sit : 3x3
    Frog pose (dynamic) : 1min Horse stance : 30s Standing pancake : 1min
    Front split : 1min
 
-* 2020-05-16 Parkour
+* <2020-05-16 Sat> Parkour
   :PROPERTIES:
   :CUSTOM_ID: parkour-20
   :END:
@@ -3497,7 +3497,7 @@ Extension (lower-back) : 3x22 Compression : 3x10 L-sit : 3x3
 
    StW 27-36-37-27 BtW 5x2-3-2x4-5
 
-* 2020-05-17 Parkour
+* <2020-05-17 Sun> Parkour
   :PROPERTIES:
   :CUSTOM_ID: parkour-21
   :END:
@@ -3517,7 +3517,7 @@ Extension (lower-back) : 3x22 Compression : 3x10 L-sit : 3x3
   jambes
 #+END_EXAMPLE
 
-* 2020-05-18
+* <2020-05-18 Mon>
   :PROPERTIES:
   :CUSTOM_ID: section-13
   :END:
@@ -3538,7 +3538,7 @@ Extension (lower-back) : 3x22 Compression : 3x10 L-sit : 3x3
 
    StW 37-27-26 BtW 2x2-3x3
 
-* 2020-05-19 Workout
+* <2020-05-19 Tue> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-102
   :END:
@@ -3551,7 +3551,7 @@ Compression : 3x10 L-sit : 2-3-2
 
 2. Splits
 
-* 2020-05-20 Parkour
+* <2020-05-20 Wed> Parkour
   :PROPERTIES:
   :CUSTOM_ID: parkour-22
   :END:
@@ -3578,7 +3578,7 @@ Compression : 3x10 L-sit : 2-3-2
    Frog pose (dynamic) : 1min Horse stance : 30s Standing pancake : 1min
    Front split : 30s
 
-* 2020-05-21
+* <2020-05-21 Thu>
   :PROPERTIES:
   :CUSTOM_ID: section-14
   :END:
@@ -3587,7 +3587,7 @@ Compression : 3x10 L-sit : 2-3-2
 
    *
 
-* 2020-05-22 Handstand
+* <2020-05-22 Fri> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-162
   :END:
@@ -3613,7 +3613,7 @@ Compression : 3x10 L-sit : 2-3-2
    dos droit mais 1mm amplitude Planche push-up (advanced tuck): 3x2
    négatifs Extension (lower-back) : 3x22 Compression : 3x10
 
-* 2020-05-23 Handstand
+* <2020-05-23 Sat> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-163
   :END:
@@ -3622,7 +3622,7 @@ Compression : 3x10 L-sit : 2-3-2
   StW 30-27-25 BtW 3x3-4-2x5-6
 #+END_EXAMPLE
 
-* 2020-05-25 Handstand
+* <2020-05-25 Mon> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-164
   :END:
@@ -3631,7 +3631,7 @@ Compression : 3x10 L-sit : 2-3-2
   StW 39-33-27-25 BtW 3x2-3-4-2x6
 #+END_EXAMPLE
 
-* 2020-05-27 Handstand
+* <2020-05-27 Wed> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-165
   :END:
@@ -3648,7 +3648,7 @@ Compression : 3x10 L-sit : 2-3-2
    (advanced tuck): 3-2-2 négatifs Extension (lower-back) : 2x22
    Compression : 2x10 L-sit : 3x4 (échauffement)
 
-* 2020-05-28
+* <2020-05-28 Thu>
   :PROPERTIES:
   :CUSTOM_ID: section-15
   :END:
@@ -3665,7 +3665,7 @@ Compression : 3x10 L-sit : 2-3-2
 
 3. Running
 
-* 2020-05-29 Parkour
+* <2020-05-29 Fri> Parkour
   :PROPERTIES:
   :CUSTOM_ID: parkour-23
   :END:
@@ -3688,7 +3688,7 @@ Compression : 3x10 L-sit : 2-3-2
    Frog pose (dynamic) : 1min Horse stance : 15s Standing pancake : 40s
    Front split : 40s
 
-* 2020-05-31 Handstand
+* <2020-05-31 Sun> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-166
   :END:
@@ -3704,7 +3704,7 @@ Compression : 3x10 L-sit : 2-3-2
    (fesses un peu hautes) Planche push-up (advanced tuck): 3x2 négatifs
    Extension (lower-back) : 3x22 Compression : 3x10
 
-* 2020-06-01 Handstand
+* <2020-06-01 Mon> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-167
   :END:
@@ -3716,7 +3716,7 @@ Compression : 3x10 L-sit : 2-3-2
 
 2. Running
 
-* 2020-06-03
+* <2020-06-03 Wed>
   :PROPERTIES:
   :CUSTOM_ID: section-16
   :END:
@@ -3731,14 +3731,14 @@ Compression : 3x10 L-sit : 2-3-2
 
    StW 37-39-32-28-24 (main au max) BtW 4-5-6-7
 
-* 2020-06-05
+* <2020-06-05 Fri>
   :PROPERTIES:
   :CUSTOM_ID: section-17
   :END:
 
 1. Running
 
-* 2020-06-06 Handstand
+* <2020-06-06 Sat> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-168
   :END:
@@ -3755,7 +3755,7 @@ Compression : 3x10 L-sit : 2-3-2
    tentatives en négatif Extension (lower-back) : 3x22 Compression :
    3x10 L-sit : 2-3-2
 
-* 2020-06-08 Parkour
+* <2020-06-08 Mon> Parkour
   :PROPERTIES:
   :CUSTOM_ID: parkour-24
   :END:
@@ -3772,7 +3772,7 @@ Compression : 3x10 L-sit : 2-3-2
   -   assisted : 4
 #+END_EXAMPLE
 
-* 2020-06-09 Handstand
+* <2020-06-09 Tue> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-169
   :END:
@@ -3781,7 +3781,7 @@ Compression : 3x10 L-sit : 2-3-2
   StW 35-30-30-23 (en quasi équilibre !)
 #+END_EXAMPLE
 
-* 2020-06-11 Handstand
+* <2020-06-11 Thu> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-170
   :END:
@@ -3794,7 +3794,7 @@ Compression : 3x10 L-sit : 2-3-2
 
    StW 33-23-21
 
-* 2020-06-13 Handstand
+* <2020-06-13 Sat> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-171
   :END:
@@ -3803,7 +3803,7 @@ Compression : 3x10 L-sit : 2-3-2
   StW 10-10-26-23 BtW 5x3-2x5
 #+END_EXAMPLE
 
-* 2020-06-14 Handstand
+* <2020-06-14 Sun> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-172
   :END:
@@ -3812,7 +3812,7 @@ Compression : 3x10 L-sit : 2-3-2
   StW 32-25 BtW
 #+END_EXAMPLE
 
-* 2020-06-17 Handstand
+* <2020-06-17 Wed> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-173
   :END:
@@ -3833,7 +3833,7 @@ Compression : 3x10 L-sit : 2-3-2
    Planche push-up (advanced tuck): 3 tentatives Extension (lower-back)
    : 3x22 Compression : 3x10 L-sit : 4x4
 
-* 2020-06-18 Handstand
+* <2020-06-18 Thu> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-174
   :END:
@@ -3842,7 +3842,7 @@ Compression : 3x10 L-sit : 2-3-2
   StW 20-33-32 BtW 5x3-4-2x5-6
 #+END_EXAMPLE
 
-* 2020-06-19 Handstand
+* <2020-06-19 Fri> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-175
   :END:
@@ -3851,7 +3851,7 @@ Compression : 3x10 L-sit : 2-3-2
   StW 48-35-31 BtW 2x3-3x4-5-7
 #+END_EXAMPLE
 
-* 2020-06-20 Parkour
+* <2020-06-20 Sat> Parkour
   :PROPERTIES:
   :CUSTOM_ID: parkour-25
   :END:
@@ -3868,7 +3868,7 @@ Compression : 3x10 L-sit : 2-3-2
   -   knee raises (each side) : 4 (sans pause !)
 #+END_EXAMPLE
 
-* 2020-06-21 Handstand
+* <2020-06-21 Sun> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-176
   :END:
@@ -3888,7 +3888,7 @@ Compression : 3x10 L-sit : 2-3-2
    tentatives Norwegian curls: 3x3 (15° ? douloureux...) Compression :
    9-10
 
-* 2020-06-22 Handstand
+* <2020-06-22 Mon> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-177
   :END:
@@ -3899,7 +3899,7 @@ Compression : 3x10 L-sit : 2-3-2
 
 2. Running
 
-* 2020-06-23 Handstand
+* <2020-06-23 Tue> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-178
   :END:
@@ -3908,7 +3908,7 @@ Compression : 3x10 L-sit : 2-3-2
   StW 45-39-33) BtW 4x2-4x3-2x5
 #+END_EXAMPLE
 
-* 2020-06-24 Handstand
+* <2020-06-24 Wed> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-179
   :END:
@@ -3918,7 +3918,7 @@ Compression : 3x10 L-sit : 2-3-2
   travailler plus près du mur) BtW 2x2-2x3-4-6-8
 #+END_EXAMPLE
 
-* 2020-06-25 Handstand
+* <2020-06-25 Thu> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-180
   :END:
@@ -3927,7 +3927,7 @@ Compression : 3x10 L-sit : 2-3-2
   StW 47-41-25 BtW 2-2x4-5-6
 #+END_EXAMPLE
 
-* 2020-06-26 Workout
+* <2020-06-26 Fri> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-103
   :END:
@@ -3944,7 +3944,7 @@ Compression : 3x10 L-sit : 2-3-2
 
    StW 37-32-31
 
-* 2020-06-27 Tricks
+* <2020-06-27 Sat> Tricks
   :PROPERTIES:
   :CUSTOM_ID: tricks
   :END:
@@ -3968,7 +3968,7 @@ Tricks
   handscsrip : handstand + roll pour le moment
 #+END_EXAMPLE
 
-* 2020-06-28 Tricks
+* <2020-06-28 Sun> Tricks
   :PROPERTIES:
   :CUSTOM_ID: tricks-1
   :END:
@@ -3977,7 +3977,7 @@ Tricks
   Kip up Back flip Front handspring
 #+END_EXAMPLE
 
-* 2020-06-29 Tricks
+* <2020-06-29 Mon> Tricks
   :PROPERTIES:
   :CUSTOM_ID: tricks-2
   :END:
@@ -3987,7 +3987,7 @@ Tricks
   handspring : toujours pas
 #+END_EXAMPLE
 
-* 2020-06-29 Handstand
+* <2020-06-29 Mon> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-181
   :END:
@@ -3996,7 +3996,7 @@ Tricks
   StW 45-45-38 BtW 2-3x3-3x4-6-7
 #+END_EXAMPLE
 
-* 2020-06-30 Parkour
+* <2020-06-30 Tue> Parkour
   :PROPERTIES:
   :CUSTOM_ID: parkour-26
   :END:
@@ -4017,7 +4017,7 @@ Tricks
 
    Kip up : 4 réussis Front handspring : toujours pas
 
-* 2020-07-01 Handstand
+* <2020-07-01 Wed> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-182
   :END:
@@ -4034,7 +4034,7 @@ Tricks
    flip : 0 Front handspring : : avec un peu d'élan, atterissage sur les
    fesses (attention au dos)
 
-* 2020-07-02 Handstand
+* <2020-07-02 Thu> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-183
   :END:
@@ -4043,7 +4043,7 @@ Tricks
   StW 50-37-32 BtW 4-4x5-9
 #+END_EXAMPLE
 
-* 2020-07-03 Workout
+* <2020-07-03 Fri> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-104
   :END:
@@ -4056,7 +4056,7 @@ Tricks
   tuck): 3x3 tentatives Norwegian curls: 3-4-4 Compression : 3x10
 #+END_EXAMPLE
 
-* 2020-07-04 Handstand
+* <2020-07-04 Sat> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-184
   :END:
@@ -4065,7 +4065,7 @@ Tricks
   StW 45-36-27 BtW plusieurs tentatives non chronométrées
 #+END_EXAMPLE
 
-* 2020-07-06 Handstand
+* <2020-07-06 Mon> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-185
   :END:
@@ -4082,7 +4082,7 @@ Tricks
 
 3. Running
 
-* 2020-07-07 Handstand
+* <2020-07-07 Tue> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-186
   :END:
@@ -4109,7 +4109,7 @@ Tricks
    avec peu de hauteur Front handspring : : travail transition
    équilibre - pont
 
-* 2020-07-08 Workout
+* <2020-07-08 Wed> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-105
   :END:
@@ -4127,7 +4127,7 @@ Tricks
    Kip up : 5 Back flip : 3 Front flip : 0 Front handspring : : travail
    lent
 
-* 2020-07-09 Handstand
+* <2020-07-09 Thu> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-187
   :END:
@@ -4136,7 +4136,7 @@ Tricks
   StW 34-15-30 BtW 3 essais
 #+END_EXAMPLE
 
-* 2020-07-10
+* <2020-07-10 Fri>
   :PROPERTIES:
   :CUSTOM_ID: section-18
   :END:
@@ -4149,14 +4149,14 @@ Tricks
      flip :: 0 Front handspring : : j'atteris en position accroupie.
      Pousser plus avec les bras
 
-* 2020-07-13
+* <2020-07-13 Mon>
   :PROPERTIES:
   :CUSTOM_ID: section-19
   :END:
 
 1. Running
 
-* 2020-07-14 Handstand
+* <2020-07-14 Tue> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-188
   :END:
@@ -4182,7 +4182,7 @@ Tricks
    - knee raises (each side) :
    - assisted : 4+2 avec arrivée sur le mur !
 
-* 2020-07-15 Handstand
+* <2020-07-15 Wed> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-189
   :END:
@@ -4195,7 +4195,7 @@ Tricks
 
    Kip up : 5 Back flip : 5 Front flip : 0 Front handspring : : 5
 
-* 2020-07-16 Workout
+* <2020-07-16 Thu> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-106
   :END:
@@ -4209,12 +4209,12 @@ Tricks
   3x10
 #+END_EXAMPLE
 
-* 2020-07-17 Running
+* <2020-07-17 Fri> Running
   :PROPERTIES:
   :CUSTOM_ID: running-1
   :END:
 
-* 2020-07-17 Handstand
+* <2020-07-17 Fri> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-190
   :END:
@@ -4223,7 +4223,7 @@ Tricks
   StW BtW 3 essais de 2
 #+END_EXAMPLE
 
-* 2020-07-17 Tricks
+* <2020-07-17 Fri> Tricks
   :PROPERTIES:
   :CUSTOM_ID: tricks-3
   :END:
@@ -4232,7 +4232,7 @@ Tricks
   Kip up : 4 Back flip : 3 Front flip : 0 Front handspring : : 3
 #+END_EXAMPLE
 
-* 2020-07-18 Handstand
+* <2020-07-18 Sat> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-191
   :END:
@@ -4257,7 +4257,7 @@ Tricks
    - knee raises (each side) : 4
    - assisted : 2+2 (mais avec un seul bras)
 
-* 2020-07-19 Workout
+* <2020-07-19 Sun> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-107
   :END:
@@ -4270,7 +4270,7 @@ Tricks
   (advanced tuck): 2 \# 3 Norwegian curls: 3 \# 3 Compression : 10
 #+END_EXAMPLE
 
-* 2020-07-21 Handstand
+* <2020-07-21 Tue> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-192
   :END:
@@ -4285,7 +4285,7 @@ Tricks
 
 3. Running
 
-* 2020-07-22 Handstand
+* <2020-07-22 Wed> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-193
   :END:
@@ -4304,7 +4304,7 @@ Tricks
    tentatives Planche push-up (advanced tuck): 3x3 tentatives Norwegian
    curls: 3x4 Compression : 3x10
 
-* 2020-07-26 Workout
+* <2020-07-26 Sun> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-108
   :END:
@@ -4315,14 +4315,14 @@ row (advanced tuck) : 3x3 (3 répétitions identiques) Planche push-up
 (advanced tuck): 3x3 Extension (lower-back) : 3x22 Compression : 9-10-9
 L-sit : 2x5
 
-* 2020-08-09 Sunday
+* <2020-08-09 Sun> Sunday
   :PROPERTIES:
   :CUSTOM_ID: sunday-1
   :END:
 
 1. Running
 
-* 2020-08-10 Workout
+* <2020-08-10 Mon> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-109
   :END:
@@ -4333,7 +4333,7 @@ L-sit : 2x5
   (assisted) : 2x5 Extension (lower-back) : 2x21
 #+END_EXAMPLE
 
-* 2020-08-11 Parkour
+* <2020-08-11 Tue> Parkour
   :PROPERTIES:
   :CUSTOM_ID: parkour-27
   :END:
@@ -4350,14 +4350,14 @@ L-sit : 2x5
   -   assisted : 2-2 (!)
 #+END_EXAMPLE
 
-* 2020-08-12
+* <2020-08-12 Wed>
   :PROPERTIES:
   :CUSTOM_ID: section-20
   :END:
 
 1. Running
 
-* 2020-08-15 Workout
+* <2020-08-15 Sat> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-110
   :END:
@@ -4367,7 +4367,7 @@ L-sit : 2x5
   : 4-4-2 Pistols (assisted) : 3x5 Compression : 3x9
 #+END_EXAMPLE
 
-* 2020-08-17 Handstand
+* <2020-08-17 Mon> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-194
   :END:
@@ -4386,7 +4386,7 @@ L-sit : 2x5
 
 3. Running
 
-* 2020-08-17 Handstand
+* <2020-08-17 Mon> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-195
   :END:
@@ -4397,7 +4397,7 @@ L-sit : 2x5
 
 2. Running
 
-* 2020-08-18 Handstand
+* <2020-08-18 Tue> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-196
   :END:
@@ -4420,7 +4420,7 @@ L-sit : 2x5
    - non-assisted : 2 (!!!!! enfin !!!!!! Mais trop de brute force, plus
      s'aider des pieds)
 
-* 2020-08-20 Handstand
+* <2020-08-20 Thu> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-197
   :END:
@@ -4438,7 +4438,7 @@ L-sit : 2x5
    2+1 (plus difficile en fin de session...) Planche push-up (advanced
    tuck): 2x3 tentatives (idem) Norwegian curls: 2x4 Compression : 2x9
 
-* 2020-08-30 Handstand
+* <2020-08-30 Sun> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-198
   :END:
@@ -4447,7 +4447,7 @@ L-sit : 2x5
   StW 37-19 BtW 2 tentatives
 #+END_EXAMPLE
 
-* 2020-08-30 Workout
+* <2020-08-30 Sun> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-111
   :END:
@@ -4460,14 +4460,14 @@ L-sit : 2x5
   curls: 3x4 Compression : 9-10-10
 #+END_EXAMPLE
 
-* 2020-09-19
+* <2020-09-19 Sat>
   :PROPERTIES:
   :CUSTOM_ID: section-21
   :END:
 
 1. Running
 
-* 2020-09-22 Workout
+* <2020-09-22 Tue> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-112
   :END:
@@ -4480,14 +4480,14 @@ L-sit : 2x5
   Compression : ok
 #+END_EXAMPLE
 
-* 2020-09-23
+* <2020-09-23 Wed>
   :PROPERTIES:
   :CUSTOM_ID: section-22
   :END:
 
 1. Running
 
-* 2020-09-25 Workout
+* <2020-09-25 Fri> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-113
   :END:
@@ -4501,7 +4501,7 @@ L-sit : 2x5
   Compression : 3x10
 #+END_EXAMPLE
 
-* 2020-09-26 Handstand
+* <2020-09-26 Sat> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-199
   :END:
@@ -4510,7 +4510,7 @@ L-sit : 2x5
   StW 35-24 BtW 1-2x2-3x3-5
 #+END_EXAMPLE
 
-* 2020-09-27 Handstand
+* <2020-09-27 Sun> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-200
   :END:
@@ -4536,12 +4536,12 @@ L-sit : 2x5
    (douleur à l'essai sur les barres) Norwegian curls: 3x3 Compression :
    3x10
 
-* 2020-09-29 ning
+* <2020-09-29 Tue> ning
   :PROPERTIES:
   :CUSTOM_ID: ning
   :END:
 
-* 2020-09-30 Handstand
+* <2020-09-30 Wed> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-201
   :END:
@@ -4550,7 +4550,7 @@ L-sit : 2x5
   StW 30-23 BtW 5x2-3-4-5-2x6
 #+END_EXAMPLE
 
-* 2020-10-01 Workout
+* <2020-10-01 Thu> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-114
   :END:
@@ -4562,7 +4562,7 @@ L-sit : 2x5
   3x{2+1+1} Norwegian curls: 3x3 Compression : 3x10
 #+END_EXAMPLE
 
-* 2020-10-03 Handstand
+* <2020-10-03 Sat> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-202
   :END:
@@ -4571,14 +4571,14 @@ L-sit : 2x5
   StW 40-18 BtW 2-3x3-4
 #+END_EXAMPLE
 
-* 2020-10-04 Sunday
+* <2020-10-04 Sun> Sunday
   :PROPERTIES:
   :CUSTOM_ID: sunday-2
   :END:
 
 1. Running
 
-* 2020-10-05 Workout
+* <2020-10-05 Mon> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-115
   :END:
@@ -4590,7 +4590,7 @@ L-sit : 2x5
   Norwegian curls: 3x3 Compression : 3x10
 #+END_EXAMPLE
 
-* 2020-10-06 Handstand
+* <2020-10-06 Tue> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-203
   :END:
@@ -4599,7 +4599,7 @@ L-sit : 2x5
   StW 35-25 BtW 3x3-5
 #+END_EXAMPLE
 
-* 2020-10-07 Parkour
+* <2020-10-07 Wed> Parkour
   :PROPERTIES:
   :CUSTOM_ID: parkour-28
   :END:
@@ -4610,7 +4610,7 @@ L-sit : 2x5
   l\'autre côté (pente) et en mettant les 2 bras
 #+END_EXAMPLE
 
-* 2020-10-10 Parkour
+* <2020-10-10 Sat> Parkour
   :PROPERTIES:
   :CUSTOM_ID: parkour-29
   :END:
@@ -4629,7 +4629,7 @@ L-sit : 2x5
   Continuer le travail (assisté + non-asisstié)
 #+END_EXAMPLE
 
-* 2020-10-13 Handstand
+* <2020-10-13 Tue> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-204
   :END:
@@ -4638,7 +4638,7 @@ L-sit : 2x5
   StW 32-25-22 BtW 2x2-3x3-5-6
 #+END_EXAMPLE
 
-* 2020-10-14 Workout
+* <2020-10-14 Wed> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-116
   :END:
@@ -4651,12 +4651,12 @@ L-sit : 2x5
   3x10
 #+END_EXAMPLE
 
-* 2020-10-16 Running
+* <2020-10-16 Fri> Running
   :PROPERTIES:
   :CUSTOM_ID: running-2
   :END:
 
-* 2020-10-18 Parkour
+* <2020-10-18 Sun> Parkour
   :PROPERTIES:
   :CUSTOM_ID: parkour-30
   :END:
@@ -4673,7 +4673,7 @@ L-sit : 2x5
   -   sans appui : 3
 #+END_EXAMPLE
 
-* 2020-10-19 Handstand
+* <2020-10-19 Mon> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-205
   :END:
@@ -4682,7 +4682,7 @@ L-sit : 2x5
   StW 15-20 BtW 2x2-3x4-7-8-11 (!)
 #+END_EXAMPLE
 
-* 2020-10-19 Workout
+* <2020-10-19 Mon> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-117
   :END:
@@ -4695,12 +4695,12 @@ L-sit : 2x5
   curls: 2-4 Compression : 10-9 (forcant plus)
 #+END_EXAMPLE
 
-* 2020-10-20 Running
+* <2020-10-20 Tue> Running
   :PROPERTIES:
   :CUSTOM_ID: running-3
   :END:
 
-* 2020-10-22 Parkour
+* <2020-10-22 Thu> Parkour
   :PROPERTIES:
   :CUSTOM_ID: parkour-31
   :END:
@@ -4717,7 +4717,7 @@ L-sit : 2x5
   -   assisted : 6 (trop glissant pour normal)
 #+END_EXAMPLE
 
-* 2020-10-24 Workout
+* <2020-10-24 Sat> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-118
   :END:
@@ -4730,7 +4730,7 @@ L-sit : 2x5
   Compression : 3x10
 #+END_EXAMPLE
 
-* 2020-11-06 Workout
+* <2020-11-06 Fri> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-119
   :END:
@@ -4742,7 +4742,7 @@ L-sit : 2x5
   Norwegian curls: 3x3 Compression : 9-10-9
 #+END_EXAMPLE
 
-* 2021-08-27 Handstand
+* <2021-08-27 Fri> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-206
   :END:
@@ -4751,7 +4751,7 @@ L-sit : 2x5
   StW 44-42-25 BtW 2-2x3-4
 #+END_EXAMPLE
 
-* 2021-08-28 Handstand
+* <2021-08-28 Sat> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-207
   :END:
@@ -4764,7 +4764,7 @@ L-sit : 2x5
 
    11s-11-11
 
-* 2021-08-29 Workout
+* <2021-08-29 Sun> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-120
   :END:
@@ -4778,7 +4778,7 @@ L-sit : 2x5
   (crampe)-3 Compression : 10-5-7
 #+END_EXAMPLE
 
-* 2021-09-02 Parkour
+* <2021-09-02 Thu> Parkour
   :PROPERTIES:
   :CUSTOM_ID: parkour-32
   :END:
@@ -4787,12 +4787,12 @@ L-sit : 2x5
   Passe-muraille : 10 Technique
 #+END_EXAMPLE
 
-* 2021-09-04 Running
+* <2021-09-04 Sat> Running
   :PROPERTIES:
   :CUSTOM_ID: running-4
   :END:
 
-* 2021-09-04 Handstand
+* <2021-09-04 Sat> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-208
   :END:
@@ -4801,7 +4801,7 @@ L-sit : 2x5
   StW 51-41 BtW
 #+END_EXAMPLE
 
-* 2021-09-04 Workout
+* <2021-09-04 Sat> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-121
   :END:
@@ -4813,7 +4813,7 @@ L-sit : 2x5
   push-up): 3x1 + 2x1 + 2x1 Norwegian curls: 3x4 Compression : 3x9
 #+END_EXAMPLE
 
-* 2021-09-05 Handstand
+* <2021-09-05 Sun> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-209
   :END:
@@ -4822,12 +4822,12 @@ L-sit : 2x5
   StW 53-38
 #+END_EXAMPLE
 
-* 2021-09-05 Running
+* <2021-09-05 Sun> Running
   :PROPERTIES:
   :CUSTOM_ID: running-5
   :END:
 
-* 2021-09-07 Workout
+* <2021-09-07 Tue> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-122
   :END:
@@ -4839,7 +4839,7 @@ L-sit : 2x5
   haut: 2 bas: idem haut: 2 bas: idem
 #+END_EXAMPLE
 
-* 2021-09-09 Workout
+* <2021-09-09 Thu> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-123
   :END:
@@ -4851,12 +4851,12 @@ L-sit : 2x5
   (tuck): Norwegian curls: Compression :
 #+END_EXAMPLE
 
-* 2021-09-11 Running
+* <2021-09-11 Sat> Running
   :PROPERTIES:
   :CUSTOM_ID: running-6
   :END:
 
-* 2021-09-13 Parkour
+* <2021-09-13 Mon> Parkour
   :PROPERTIES:
   :CUSTOM_ID: parkour-33
   :END:
@@ -4865,7 +4865,7 @@ L-sit : 2x5
   Passe-murail avec appui glissant Underbar
 #+END_EXAMPLE
 
-* 2021-09-13 Workout
+* <2021-09-13 Mon> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-124
   :END:
@@ -4876,7 +4876,7 @@ L-sit : 2x5
   extension - 3 curl - 3 pistols
 #+END_EXAMPLE
 
-* 2021-09-15 Handstand
+* <2021-09-15 Wed> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-210
   :END:
@@ -4885,7 +4885,7 @@ L-sit : 2x5
   StW 15-42-10 BtW
 #+END_EXAMPLE
 
-* 2021-09-16 Workout
+* <2021-09-16 Thu> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-125
   :END:
@@ -4897,7 +4897,7 @@ L-sit : 2x5
   2+2 - 2+2 - 2+2 Norwegian curls: 3x4 Compression : 3x10
 #+END_EXAMPLE
 
-* 2021-10-01 Handstand
+* <2021-10-01 Fri> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-211
   :END:
@@ -4906,7 +4906,7 @@ L-sit : 2x5
   StW 13-28-35-33 BtW 4x4
 #+END_EXAMPLE
 
-* 2021-10-03 Handstand
+* <2021-10-03 Sun> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-212
   :END:
@@ -4915,7 +4915,7 @@ L-sit : 2x5
   StW 45-38 BtW
 #+END_EXAMPLE
 
-* 2021-10-03 Workout
+* <2021-10-03 Sun> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-126
   :END:
@@ -4927,7 +4927,7 @@ L-sit : 2x5
   3x1 - 2+1 - 3x1 Norwegian curls: 3x4 Compression : 3x10
 #+END_EXAMPLE
 
-* 2021-10-15 Parkour
+* <2021-10-15 Fri> Parkour
   :PROPERTIES:
   :CUSTOM_ID: parkour-34
   :END:
@@ -4943,7 +4943,7 @@ L-sit : 2x5
   -   passe-muraille: 10 (élan correct)
 #+END_EXAMPLE
 
-* 2021-10-16 Workout
+* <2021-10-16 Sat> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-127
   :END:
@@ -4953,7 +4953,7 @@ RTO : 28-18 Skin-the-cat : 1-1 L-sit : 8-7 Muscle-up L-sit : 4x1 -
 Front-lever row (tuck) : 3+2 - 3+2 - 2+2 Planche on rings (tucked
 pushed-up): 3x1 -2x1 - 3x1 Compression : 3x10
 
-* 2021-10-19 Workout
+* <2021-10-19 Tue> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-128
   :END:
@@ -4964,26 +4964,26 @@ Routine: Muscle-up L-sit - Tucked planche - RTO - L-sit - FL row 2x1 2x1
 
 Pistols (assisted) - Extension - Compression 3-22-9 3-22-10
 
-* 2021-10-26 Workout
+* <2021-10-26 Tue> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-129
   :END:
 
 (à l'arrache) Pull-up L-sit Tucked front lever Pistols Compression
 
-* 2021-10-26 Handstand
+* <2021-10-26 Tue> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-213
   :END:
 
 Back to wall : 45-35-30 Stomach to wall : 3x2
 
-* 2021-10-26 Jump rope
+* <2021-10-26 Tue> Jump rope
   :PROPERTIES:
   :CUSTOM_ID: jump-rope
   :END:
 
-* 2021-11-01 Handstand
+* <2021-11-01 Mon> Handstand
   :PROPERTIES:
   :CUSTOM_ID: handstand-214
   :END:
@@ -4991,7 +4991,7 @@ Back to wall : 45-35-30 Stomach to wall : 3x2
 Back to wall : 40-39 Stomach to wall : 11 ## 2021-11-01 L-sit tucked
 5-6s
 
-* 2021-11-04 Workout
+* <2021-11-04 Thu> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-130
   :END:
@@ -5001,14 +5001,14 @@ semi-tendues) Muscle-up L-sit : 3x1-2+1+1-1+1 Pistols (assisted) : 3x3
 Extension (lower-back) : 3x22 Front-lever row (tuck) : 3+2 - 3+2 - 2+1
 Planche on rings (tuck): 3x{3x1} Norwegian curls: 3x3 Compression : 3x10
 
-* 2021-11-06 Running
+* <2021-11-06 Sat> Running
   :PROPERTIES:
   :CUSTOM_ID: running-7
   :END:
 
 20min en montée la moitié du temps
 
-* 2021-11-07 Workout
+* <2021-11-07 Sun> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-131
   :END:
@@ -5019,26 +5019,26 @@ RTO : 30-20 Skin-the-cat : 2-1+1 Pull-up (milieu poitrine) : 5x1 L-sit :
 3+2 - 3+2 - 2+1 Planche on rings (tuck): 2+1 - 2+2 - 2+1 Norwegian
 curls: 3x4 Compression : 3x10
 
-* 2021-12-08 Running
+* <2021-12-08 Wed> Running
   :PROPERTIES:
   :CUSTOM_ID: running-8
   :END:
 
 10km, 400m de dénivelé De nuit, dans la boue, 1000 personnes 1h40
 
-* 2021-12-12 Running
+* <2021-12-12 Sun> Running
   :PROPERTIES:
   :CUSTOM_ID: running-9
   :END:
 
 25min, moderate
 
-* 2021-12-20 Jump rope
+* <2021-12-20 Mon> Jump rope
   :PROPERTIES:
   :CUSTOM_ID: jump-rope-1
   :END:
 
-* 2021-12-21 Workout
+* <2021-12-21 Tue> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-132
   :END:
@@ -5046,21 +5046,21 @@ curls: 3x4 Compression : 3x10
 Routine sur barre : pull-up - negative pull-up - planche - extension -
 compression - L-sit - FL - nordic curl
 
-* 2022-01-08 Workout
+* <2022-01-08 Sat> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-133
   :END:
 
 Routine sur anneaux (3x2 pour haut)
 
-* 2022-01-13 Workout
+* <2022-01-13 Thu> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-134
   :END:
 
 Muscu sur anneaux (avec muscle-up négatifs à la fin)
 
-* 2022-01-14 Running
+* <2022-01-14 Fri> Running
   :PROPERTIES:
   :CUSTOM_ID: running-10
   :END:
@@ -5068,7 +5068,7 @@ Muscu sur anneaux (avec muscle-up négatifs à la fin)
 Sprint : 7x30s 2min de pause # 2022-01-15 Workout Routine sur barre avec
 muscle-up en négatif seulement Retravailler le L-sit !!
 
-* 2022-01-23 Workout
+* <2022-01-23 Sun> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-135
   :END:
@@ -5078,111 +5078,98 @@ on rings: 2+1+1 - 3+1 - 1+1 Compression: 3x10 Curl: 4x3
 
 Pistol: 3x{3#4} Extension: 3x22 FL row: 3+2 - 2+1
 
-* 2022-01-24 Running
+* <2022-01-24 Mon> Running
   :PROPERTIES:
   :CUSTOM_ID: running-11
   :END:
 
 15min de nuit, rythme rapide au retour
 
-* 2022-01-27 Workout
+* <2022-01-27 Thu> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-136
   :END:
 
 Routine avec x2 en haut
 
-* 2022-02-05 Workout
+* <2022-02-05 Sat> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-137
   :END:
 
 Muscle-up intro avec movement athlete
 
-* 2022-02-07 Workout
+* <2022-02-07 Mon> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-138
   :END:
 
 Handstand avec movement
 
-* 2022-02-09 Workout
+* <2022-02-09 Wed> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-139
   :END:
 
 Full body avec movement athlete mais fait seulement la moitié (covid)
 
-* 2022-02-11 Running
+* <2022-02-11 Fri> Running
   :PROPERTIES:
   :CUSTOM_ID: running-12
   :END:
 
 15 minutes
 
-* 2022-02-13 Running
+* <2022-02-13 Sun> Running
   :PROPERTIES:
   :CUSTOM_ID: running-13
   :END:
 
 46min
 
-* 2022-02-14 Workout
+* <2022-02-14 Mon> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-140
   :END:
 
 40min mais peu satisfait des exercices
 
-* 2022-02-24
-  :PROPERTIES:
-  :CUSTOM_ID: section-23
-  :END:
-
+* <2022-02-24 Thu> Tricking
 Tricking : 1ere fois - Butterfly Kick - Roundhouse Kick - Hook Kick -
 Macaco - Scoot
 
 Parkour
+* <2022-02-26 Sat> Tricking
+10min, régression - cartwheel
 
-* 2022-02-26
-  :PROPERTIES:
-  :CUSTOM_ID: section-24
-  :END:
-
-Tricking : 10min, régression - cartwheel
-
-* 2022-02-27
-  :PROPERTIES:
-  :CUSTOM_ID: section-25
-  :END:
-
+* <2022-02-27 Sun> Tricking
 Tricking : comme avant Workout 45 min
 
-* 2022-02-28 Tricking
+* <2022-02-28 Mon> Tricking
   :PROPERTIES:
   :CUSTOM_ID: tricking
   :END:
 
 Butterfly kick Macaco Kicks
 
-* 2022-03-08 Tricking
+* <2022-03-08 Tue> Tricking
   :PROPERTIES:
   :CUSTOM_ID: tricking-1
   :END:
 
 Inner et outer kick Macaco
 
-* 2022-03-09 Tricking
+* <2022-03-09 Wed> Tricking
   :PROPERTIES:
   :CUSTOM_ID: tricking-2
   :END:
 
-* 2022-03-12 Workout
+* <2022-03-12 Sat> Workout
   :PROPERTIES:
   :CUSTOM_ID: workout-141
   :END:
 
-* 2022-03-13 Tricking
+* <2022-03-13 Sun> Tricking
   :PROPERTIES:
   :CUSTOM_ID: tricking-3
   :END:
@@ -5199,3 +5186,12 @@ Bckick pas assez bas !
 20min montée + descente
 * <2022-03-31 Thu> Workout
 demi-workout, trop fatigué
+* <2022-04-09 Sat> Running
+50min au total avec de nombreuses pauses à la montée
+Perte d'orientation dans la forêt !
+* <2022-04-08 Fri> Workout
+Appli. 40min au lieu de 50 car vent + pluie !
+* <2022-04-07 Thu> Tricking
+B-kick surtout et Feilong.
+Bkick commence à décoller
+Feilong /= saut !
