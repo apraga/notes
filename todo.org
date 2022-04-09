@@ -75,6 +75,8 @@ Pas de nouvelle depuis décembre 2021, relancé<2022-04-09 Sat>
 ** TODO Rattraper retard anki
 ** TODO Appeler pour demander carte médecin internat
 DEADLINE: <2022-03-30 Wed>
+** TODO Utiliser chèque énergie
+SCHEDULED: <2022-04-10 Sun>
 * Japonais :japonais:
 ** Miura :anki:
 :PROPERTIES:
