@@ -115,11 +115,11 @@ DEADLINE: <2022-03-30 Wed>
 :PROPERTIES:
 :CATEGORY: aya
 :END:
-*** TODO Notes leçon <2022-03-20 Sun>
+*** DONE Notes leçon <2022-03-20 Sun>
 SCHEDULED: <2022-04-03 Sun>
-*** TODO Notes leçon <2022-03-27 Sun>
+*** DONE Notes leçon <2022-03-27 Sun>
 SCHEDULED: <2022-04-03 Sun>
-*** TODO Notes leçon <2022-04-03 Sun>
+*** DONE Notes leçon <2022-04-03 Sun>
 SCHEDULED: <2022-04-03 Sun>
 *** TODO Lire dialogue fin leçon 10
 SCHEDULED: <2022-04-03 Sun>
