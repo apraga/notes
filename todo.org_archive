@@ -24,3 +24,114 @@ Archived entries from file /usr/home/alex/org/todo.org
 :ARCHIVE_TODO: DONE
 :ARCHIVE_ITAGS: japonais
 :END:
+
+* DONE Notes leçon <2022-03-20 Sun>
+SCHEDULED: <2022-04-03 Sun>
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-04-09 Sat 00:16
+:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_OLPATH: Japonais/Leçon Aya
+:ARCHIVE_CATEGORY: aya
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: japonais
+:END:
+
+* DONE Notes leçon <2022-03-27 Sun>
+SCHEDULED: <2022-04-03 Sun>
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-04-09 Sat 00:16
+:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_OLPATH: Japonais/Leçon Aya
+:ARCHIVE_CATEGORY: aya
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: japonais
+:END:
+
+* DONE Notes leçon <2022-04-03 Sun>
+SCHEDULED: <2022-04-03 Sun>
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-04-09 Sat 00:16
+:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_OLPATH: Japonais/Leçon Aya
+:ARCHIVE_CATEGORY: aya
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: japonais
+:END:
+
+* DONE Prendre RV dermotologue
+CLOSED: [2022-04-03 Sun 11:47] DEADLINE: <2022-04-02 Sat>
+:PROPERTIES:
+:CATEGORY: sante
+:ARCHIVE_TIME: 2022-04-09 Sat 00:16
+:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_CATEGORY: sante
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE Convertir tâches Taskarrior en attente -> org mode
+DEADLINE: <2022-03-26 Sat 14:00>
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-04-09 Sat 00:16
+:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_OLPATH: Emacs
+:ARCHIVE_CATEGORY: emacs
+:ARCHIVE_TODO: DONE
+:END:
+:LOGBOOK:
+CLOCK: [2022-03-26 Sat 12:28]--[2022-03-26 Sat 12:58] =>  0:30
+:END:
+
+[[file:/usr/home/alex/.doom.d/config.el::setq org-directory "~/org/"]]
+
+* DONE Mail avec notmuch
+DEADLINE: <2022-03-27 Sun>
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-04-09 Sat 00:16
+:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_OLPATH: Emacs
+:ARCHIVE_CATEGORY: emacs
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE Finir importer org-mode tâches finies depus taskwarrior
+DEADLINE: <2022-03-26 Sat>
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-04-09 Sat 00:16
+:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_OLPATH: Emacs
+:ARCHIVE_CATEGORY: emacs
+:ARCHIVE_TODO: DONE
+:END:
+:LOGBOOK:
+CLOCK: [2022-03-26 Sat 13:27]
+:END:
+
+
+* DONE Billets de train + carte réduction :florian:
+DEADLINE: <2022-03-27 Sun>
+:PROPERTIES:
+:CATEGORY: mariage
+:ARCHIVE_TIME: 2022-04-09 Sat 00:16
+:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_OLPATH: Inbox
+:ARCHIVE_CATEGORY: mariage
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE novembre 2021
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-04-09 Sat 00:17
+:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_OLPATH: Ledger
+:ARCHIVE_CATEGORY: compta
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE décembre 2021
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-04-09 Sat 00:17
+:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_OLPATH: Ledger
+:ARCHIVE_CATEGORY: compta
+:ARCHIVE_TODO: DONE
+:END:

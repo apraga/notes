@@ -123,14 +123,9 @@ SCHEDULED: <2022-04-03 Sun>
 SCHEDULED: <2022-04-03 Sun>
 *** TODO Lire dialogue fin leçon 10
 SCHEDULED: <2022-04-03 Sun>
-* DONE Prendre RV dermotologue
-CLOSED: [2022-04-03 Sun 11:47] DEADLINE: <2022-04-02 Sat>
-:PROPERTIES:
-:CATEGORY: sante
-:END:
 * TODO Rattraper retard anki
 * Thèse
-** TODO Réflechirr à la techno : django, flask, autre ? these.site
+** TODO Réflechir à la techno : django, flask, autre ? these.site
 ** TODO Mail Paul pour savoir si on peut publier these
 ** TODO Importer tous les champs intéressants these.bdd.labkey
 ** TODO Importer pièces jointes these.bdd.labkey
@@ -157,39 +152,14 @@ DEADLINE: <2022-03-26 Sat>
 :PROPERTIES:
 :CATEGORY: emacs
 :END:
-** DONE Convertir tâches Taskarrior en attente -> org mode
-DEADLINE: <2022-03-26 Sat 14:00>
-:LOGBOOK:
-CLOCK: [2022-03-26 Sat 12:28]--[2022-03-26 Sat 12:58] =>  0:30
-:END:
-
-[[file:/usr/home/alex/.doom.d/config.el::setq org-directory "~/org/"]]
-** DONE Mail avec notmuch
-DEADLINE: <2022-03-27 Sun>
-** DONE Finir importer org-mode tâches finies depus taskwarrior
-DEADLINE: <2022-03-26 Sat>
-:LOGBOOK:
-CLOCK: [2022-03-26 Sat 13:27]
-:END:
 * Inbox
-
-** TODO test
-
-[[file:~/org/recherche.org::*Demande DPO Besançon][Demande DPO Besançon]]
 ** WAIT Commander nouvelle CB :banque:
 SCHEDULED: <2022-04-10 Sun>
 Demande faite <2022-04-03 Sun>
-** DONE Billets de train + carte réduction :florian:
-DEADLINE: <2022-03-27 Sun>
-:PROPERTIES:
-:CATEGORY: mariage
-:END:
 * Ledger
 :PROPERTIES:
 :CATEGORY: compta
 :END:
-** DONE novembre 2021
-** DONE décembre 2021
 ** DONE janvier 2022
 ** TODO février 2022
 DEADLINE: <2022-03-27 Sun>
