@@ -2,189 +2,195 @@ Voir [[file:books-lists][books lists]] pour des idées
 
 * Computer science
   :PROPERTIES:
-  :CUSTOM_ID: computer-science
+  :CATEGORY: computer-science
   :END:
 
-- [.] The art of computer programming, volume 1
-- [.] Haskell Programming From First Principles [5/31]
+** HOLD The art of computer programming, volume 1
+** HOLD Haskell Programming From First Principles [5/31]
 
 * Fanfic
-  :PROPERTIES:
-  :CUSTOM_ID: fanfic
-  :END:
-
-- Harry potter
-
-  - ☒ [[file:notes/reviews/sacrifice_arc.org][Sacrifice Arc]]
-  - ☒ [[file:notes/reviews/arithmancer.org][Harry Potter and the Methods
-    of Rationality]]
-  - ☒ The Arithmancer
+:PROPERTIES:
+:CATEGORY: fanfic
+:END:
+** Harry potter
+:PROPERTIES:
+:CATEGORY: harry potter
+:END:
+*** DONE [[file:notes/reviews/sacrifice_arc.org][Sacrifice Arc]]
+*** DONE [[file:notes/reviews/arithmancer.org][Harry Potter and the Methods of Rationality]]
+*** DONE The Arithmancer
 
 * Fantasy
-  :PROPERTIES:
-  :CUSTOM_ID: fantasy
-  :END:
+** TODO The Name of the Wind (Kingkiller chronicles)
+** TODO Robin Hobb
+** Cherry, C. J - Fortress
+*** DONE Fortress in the Eye of Time
+*** DONE Fortress of Eagles
+*** DONE Fortress of Owls
+** TODO Stardust
+** DONE G. Cook - The Black Company 6/6
+** Pern [6/25]
+*** DONE Dragonflight
+*** DONE Dragonquest
+*** DONE Dragonsong
+*** DONE Dragonsinger
+*** DONE The White Dragon
+*** DONE Dragondrums
+*** TODO Moreta: Dragonlady Of Pern (1983)
+*** TODO Nerilka's Story (1984)
+*** TODO Dragonsdawn (1988)
+*** TODO The Renegades of Pern (1989)
+*** TODO All The Weyrs of Pern (1991)
+*** TODO Rescue Run (1991)
+*** TODO The Dolphin's Bell (1993)
+*** TODO The Chronicles of Pern: First Fall (1993)
+*** TODO The Dolphins of Pern (1994)
+*** TODO Dragonseye (1996)
+*** TODO The Masterharper Of Pern (1998)
+*** TODO The Skies of Pern (2001)
+*** TODO A Gift of Dragons (2002)
+*** TODO Dragon's Kin (with Todd McCaffrey) (2003)
+*** TODO Dragonsblood (by Todd McCaffrey) (2005)
+*** TODO Dragon's Fire (with Todd McCaffrey) (2006)
+*** TODO Dragon Harper (by Todd McCaffrey) (2007)
+*** TODO Dragonheart (by Todd McCaffrey) (2008)
+*** TODO Dragongirl (by Todd McCaffrey) (2010
+** DONE R.R Martin - A Song of Ice and Fire 5/5
+** DONE R.R Martin - Windhaven
+** TODO R.R Martin - Fire and Blood
+** Pratchett
+*** DONE The Color of Magic (Discworld, #1; Rincewind, #1)
+*** DONE The light fantastic
+*** DONE The color of magic : a discworld novel
+** DONE Harry Potter 7/7
+** DONE Tolkien - Lord of the Rings 3/3
+** DONE Tolkien - The Silmarillion
+** DONE Tolkien - The hobbit, or, there and back again
+** TODO Earthsea
+*** TODO A Wizard of Earthsea (1968)
+*** TODO The Tombs of Atuan (1970)
+*** TODO The Farthest Shore (1972)
+*** TODO Tehanu 1990
+*** TODO Tales from Earthsea (2001)
+*** TODO The Other Wind (2001)
 
-- ☐ The Name of the Wind (Kingkiller chronicles)
-- ☐ Robin Hobb
-- Cherry, C. J - Fortress
-
-  - ☒ Fortress in the Eye of Time
-  - ☒ Fortress of Eagles
-  - ☒ Fortress of Owls
-
-- ☐ Stardust
-- ☒ G. Cook - The Black Company 6/6
-- ☐ [[file:Pern]]
-- ☒ R.R Martin - A Song of Ice and Fire 5/5
-- ☒ R.R Martin - Windhaven
-- ☐ R.R Martin - Fire and Blood
-- Pratchett
-
-  1. ☒ The Color of Magic (Discworld, #1; Rincewind, #1)
-  2. ☒ The light fantastic
-  3. ☒ The color of magic : a discworld novel
-
-- ☒ Harry Potter 7/7
-- ☒ Tolkien - Lord of the Rings 3/3
-- ☒ Tolkien - The Silmarillion
-- ☒ Tolkien - The hobbit, or, there and back again
-- ☐ Earthsea
-
-  1. ☐ A Wizard of Earthsea (1968)
-  2. ☐ The Tombs of Atuan (1970)
-  3. ☐ The Farthest Shore (1972)
-  4. ☐ Tehanu 1990
-  5. ☐ Tales from Earthsea (2001)
-  6. ☐ The Other Wind (2001)
-
-- ☒ Clarke, S. - Dr Norrel and Mr Strange
+** DONE Clarke, S. - Dr Norrel and Mr Strange
 
 * Fiction
   :PROPERTIES:
-  :CUSTOM_ID: fiction
+  :CATEGORY_ID: fiction
   :END:
-
-- ☒ Violet Evergarden [2/2]
-- ☒ Liu, C. - The three-body problem :sci-fi:
-- ☒ Liu, C. - The dark forest
-- ☒ Liu, C. - Death's end :sci-fi:
-- ☒ Wells, H. G. - The Time Machine
-- ☒ Wells, H. G. - The War of the Worlds
+** DONE Violet Evergarden [2/2]
+** DONE Liu, C. - The three-body problem :sci-fi:
+** DONE Liu, C. - The dark forest
+** DONE Liu, C. - Death's end :sci-fi:
+** DONE Wells, H. G. - The Time Machine
+** DONE Wells, H. G. - The War of the Worlds
 
 * Histoire
   :PROPERTIES:
-  :CUSTOM_ID: histoire
+  :CATEGORY: histoire
   :END:
 
-- ☒ Magni, C. (2003): Les Olmèques: des origines au mythe
-- ☒ Delumeau, J. (2005): Une histoire du monde aux temps modernes
-- ☒ Grousset, Renée (1942): Histoire de la chine
-- ☒ Gombrich, E. H. (1995): The story of art
-- ☒ Plutarch, (2001): Plutarch's lives
-- ☒ Une Histoire Du Monde Aux Temps Modernes
-- ☒ Armée romaine sous le Haut-Empire
-- ☒ Tite-Live - Histoire romaine (Gallimard)
+** DONE Magni, C. (2003): Les Olmèques: des origines au mythe
+** DONE Delumeau, J. (2005): Une histoire du monde aux temps modernes
+** DONE Grousset, Renée (1942): Histoire de la chine
+** DONE Gombrich, E. H. (1995): The story of art
+** DONE Plutarch, (2001): Plutarch's lives
+** DONE Une Histoire Du Monde Aux Temps Modernes
+** DONE Armée romaine sous le Haut-Empire
+** DONE Tite-Live - Histoire romaine (Gallimard)
 
-  - ☒ livre i à v : de la fondation de rome à l'invasion gauloise
-  - ☒ livres xxi à xxv : la seconde guerre punique i
-  - ☒ livres vi à x : la conquête de l'italie
-  - ☒ livres xli à xlv : les progrès de l'hégéemonie romaine
-  - ☒ livres xxvi à xxx : la seconde guerre punique ii o
-  - ☒ livres xxxi à xxxv : la libération de la grèce
-  - ☒ Histoire Romaine: Livres Xxi à Xxv
-  - ☒ Histoire romaine, livres xxxxvi à xl
-
-- ☒ Le Glay, M., Voisin, J., & Le Bohec, Y. (1991): Histoire romaine
-- ☒ Polybe: Histoire
-- STRT [#A] Oxford history of Ancient Egypt
-- ☒ Croisades et Orient latin - XIe-XIVe siècle
+*** DONE livre i à v : de la fondation de rome à l'invasion gauloise
+*** DONE livres xxi à xxv : la seconde guerre punique i
+*** DONE livres vi à x : la conquête de l'italie
+*** DONE livres xli à xlv : les progrès de l'hégéemonie romaine
+*** DONE livres xxvi à xxx : la seconde guerre punique ii o
+*** DONE livres xxxi à xxxv : la libération de la grèce
+*** DONE Histoire Romaine: Livres Xxi à Xxv
+*** DONE Histoire romaine, livres xxxxvi à xl
+** DONE Le Glay, M., Voisin, J., & Le Bohec, Y. (1991): Histoire romaine
+** DONE Polybe: Histoire
+** STRT [#A] Oxford history of Ancient Egypt
+** DONE Croisades et Orient latin - XIe-XIVe siècle
 
 * Horror
   :PROPERTIES:
   :CUSTOM_ID: horror
   :END:
 
-- ☒ Pride and Prejudice and Zombies by Jane Austen
-- ☒ At the mountains of madness the definitive edition
+** DONE Pride and Prejudice and Zombies by Jane Austen
+** DONE At the mountains of madness the definitive edition
 
 * Litterature
   :PROPERTIES:
   :CUSTOM_ID: litterature
   :END:
 
-- ☐ Atlas Shrugged
-- ☐ Beowulf (Michael Alexander translation)
-- ☐ Catch 22
-- ☒ A tale of two cities
-- ☒ Belle du seigneur
-- ☒ Candide
-- ☒ Crime and punishment
-- ☒ Cyrano de bergerac
-- ☒ Dubliners
-- ☒ Foucault's pendulum
-- ☒ Germinal
-- ☒ I, Claudius
-- ☒ Illusions : The Adventures of a Reluctant Messiah
-- ☒ Jane Eyre
-- ☒ La peste
-- ☒ Le Petit Prince
-- ☒ Lolita
-- ☒ Pride and Prejudice (J. Austen)
-- ☒ Si c'est un homme
-- ☒ The fall of the house of usher
-- ☒ The hound of the baskervilles
-- ☒ The name of the rose
+** TODO Atlas Shrugged
+** TODO Beowulf (Michael Alexander translation)
+** TODO Catch 22
+** DONE A tale of two cities
+** DONE Belle du seigneur
+** DONE Candide
+** DONE Crime and punishment
+** DONE Cyrano de bergerac
+** DONE Dubliners
+** DONE Foucault's pendulum
+** DONE Germinal
+** DONE I, Claudius
+** DONE Illusions : The Adventures of a Reluctant Messiah
+** DONE Jane Eyre
+** DONE La peste
+** DONE Le Petit Prince
+** DONE Lolita
+** DONE Pride and Prejudice (J. Austen)
+** DONE Si c'est un homme
+** DONE The fall of the house of usher
+** DONE The hound of the baskervilles
+** DONE The name of the rose
 
 * La pleiade
   :PROPERTIES:
-  :CUSTOM_ID: la-pleiade
+  :CATEGORY: la pleiade
   :END:
 
-- ☐ Le coran
-
-- ☒ Duby, [[file:books/duby.md][Oeuvres]]
-
-- ☒ [[file:books/homere.md][Homère, Iliade -- Odyssée]]
-
-- ☒ Hugo, [[file:books/travailleurs_de_la_mer.md][Les Travailleurs de la
-  mer]] -- [[file:books/notre_dame_de_paris.md][Notre-Dame de Paris]]
-
-- ☒ [[file:books/graal.md][Le Livre du Graal]] [3/3]
-
-- ☒ [[file:milles_et_une_nuits.md][Les Mille Et Une Nuits]] [3/3]
-
-- ☒ [[file:books/guerre_et_paix.md][Tolstoi, Guerre et paix]] # Math
-
-- [.] Gowers, T. (2010): The princeton companion to mathematics
-
-- ☐ Hastie, T., Tibshirani, R., & Friedman, J. (2009): The elements of
-  statistical learning Texte de référence pour classification, machine
-  learning etc. Semble intéressant NB : An Introduction to Statistical
-  Learning = version avec moins de maths. # Medecine
-
-- ☐ [[file:Cecil-Goldman][Cecil Goldman]] (26th edition)
-
-- ☐ [[file:Auerbach's%20wilderness%20medecine][Auerbach]]
+** STRT Le coran
+** DONE Duby, [[file:books/duby.md][Oeuvres]]
+** DONE [[file:books/homere.md][Homère, Iliade -- Odyssée]]
+** DONE Hugo, [[file:books/travailleurs_de_la_mer.md][Les Travailleurs de la mer]] -- [[file:books/notre_dame_de_paris.md][Notre-Dame de Paris]]
+** DONE [[file:books/graal.md][Le Livre du Graal]] [3/3]
+** DONE [[file:milles_et_une_nuits.md][Les Mille Et Une Nuits]] [3/3]
+** DONE [[file:books/guerre_et_paix.md][Tolstoi, Guerre et paix]]
+* Math
+:PROPERTIES:
+:CATEGORY: math
+:END:
+** [.] Gowers, T. (2010): The princeton companion to mathematics
+** TODO Hastie, T., Tibshirani, R., & Friedman, J. (2009): The elements of
+statistical learning Texte de référence pour classification, machine
+learning etc. Semble intéressant NB : An Introduction to Statistical
+Learning = version avec moins de maths. # Medecine
+** TODO [[file:Cecil-Goldman][Cecil Goldman]] (26th edition)
+** TODO [[file:Auerbach's%20wilderness%20medecine][Auerbach]]
 
 * Philosophy
   :PROPERTIES:
   :CUSTOM_ID: philosophy
   :END:
 
-- [.] A History of Western Philosophy
+** STRT A History of Western Philosophy
 
 * Science
   :PROPERTIES:
-  :CUSTOM_ID: science
+  :CATEGORY: science
   :END:
-
-- ☐ IPPC : Summary for policymaker
-- ☐ The Feynman Lectures on Physics
+** TODO IPPC : Summary for policymaker
+** TODO The Feynman Lectures on Physics
 
 * Thriller
   :PROPERTIES:
-  :CUSTOM_ID: thriller
+  :CATEGORY: thriller
   :END:
 
-- ☒ The Lost Apothecary
+** DONE The Lost Apothecary
