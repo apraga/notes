@@ -8,7 +8,7 @@ genes: /PKAN2/,/PLA2G6/, /C19orf12/, /WDR45/.
 - Classification is based on genes.
 - Clincal and MRI may orient to a specific gene (Table 19.2 in [cite:@haylick2018]).
 - PKAN is half of the case and its estimated prevalence is 1/1 000 000 [cite:@gregory2002]
-BPAN = first X-linked, WDR45 and distinc phenotype
+BPAN = X-linked, WDR45 and distinc phenotype. No X-linked phenotype !
 - suspicion : 7 patients in [cite:@gregory2009]
 - confirmed + molecular basis in [cite:@haack2012] [cite:@hayflick2013]
 * Beta-propeller protein associated neurodegeneration
@@ -56,7 +56,7 @@ BPAN = first X-linked, WDR45 and distinc phenotype
   - severe neuronal loss
   - putamen, thalamus, granular cell layer also affected
   -  tau-positive neurofibrillary tangles in hippocampus, neocortex, putamen, hypothalamus
-** Genetic basis in Haack2012
+** X-linked ? [cite:@haack2012]
 - On chromosome X but no X-linked pattern : male and females are affected equally
 Haack2012 hypothesis:
   - somatic mosaicism in male (germline likely not viable)
@@ -67,14 +67,24 @@ syndrome)
     - 2 DNA traces of differents peaks on 1 male (2 amplicons on exon 2)
     - skewed X inactivation
       - in favor : skewed in 10/12 women with WDR45 mutation
-
-* References
-- [ ] [cite:@Aring_2021] review + physiopathology of WDR45 deficit
+** Mutations :
+- missense, truncation
+- 23 subjects in [cite:@hayflick2013]
+- 5 subjetcs in [cite:@saitsu2013]
+** basis, physiopathology in[cite:@aring2021]
+- NB: for NBIA, only 2 genes have been associated with iron metabolism (CP ceruloplasmin, CTL ferritin light chain) [cite:@hayflick2018] -> TODO add picture
+- WDR45 = one of the 4 human autolog of yeast Atg18 = aurophagy regulator -> deficiency results in autophagic flux (dynamic part of autophagy) ??
+- Model [cite:@aring2021] :
   Design : in vitro model of neuronal fonction (SH-SY5Y neuroblastoma)
+  with knock-out
   - modified iron uptake in cells
   - possible link to increased iron uptake in neurons
   - impaired ferritinophagy
   - mitochrondrial iron accumulation + altered mitochrondrial metabolism (possible link to neuronal cell death, neurodegenration)
+
+* References
+- [ ] [cite:@Aring_2021] physiopathology model for WDR45 deficit
+- [ ] [cite:@saitsu2013] mutations in WDR45 TODO data
 - [X] [cite:@haylick2013] phenotype details of the cohort in [cite:@haack2012]
   - The protein encoded by WDR45 is characterized as a beta-pro- peller scaffold that serves as a platform to enable specific protein– protein interactions that are important in autophagy.
 - [X] [cite:@haack2012] first description of WDR45 in NBIA 19 mutations, 20 subjects.
