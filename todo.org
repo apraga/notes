@@ -75,8 +75,14 @@ Pas de nouvelle depuis décembre 2021, relancé<2022-04-09 Sat>
 ** TODO Rattraper retard anki
 ** TODO Appeler pour demander carte médecin internat
 DEADLINE: <2022-03-30 Wed>
-** TODO Utiliser chèque énergie
-SCHEDULED: <2022-04-10 Sun>
+** DONE Utiliser chèque énergie
+CLOSED: [2022-04-10 Sun 17:20] SCHEDULED: <2022-04-10 Sun>
+** TODO
+:PROPERTIES:
+:test:
+:END:
+** TODO Utiliser chèque Chuullanka
+SCHEDULED: <2022-04-17 Sun>
 * Japonais :japonais:
 ** Miura :anki:
 :PROPERTIES:
@@ -112,6 +118,8 @@ CLOSED: [2022-04-09 Sat 14:25]
 Pas de réparation possible avan fin avril
 *** TODO Appel garage Yamaha Besançon pour commencer réparation
 SCHEDULED: <2022-04-29 Fri>
+*** TODO Notes <2022-04-10 Sun>
+SCHEDULED: <2022-04-10 Sun>
 * Notes biologie
 ** Biologie cellulaire Dunod
 *** TODO chapitres déjà fait :anki:
@@ -164,3 +172,9 @@ SCHEDULED: <2022-04-29 Fri>
 :CATEGORY: assistant
 :END:
 *** DONE Regarder ce qu'Yvain a fait
+
+* FreeBSd
+** DONE taskwarrior tui 0.22
+CLOSED: [2022-04-10 Sun 17:41] SCHEDULED: <2022-04-10 Sun>
+** TODO opengraph v 0.6.3
+SCHEDULED: <2022-04-12 Tue>
