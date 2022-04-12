@@ -1,4 +1,12 @@
-* TODO Organiser enterrement vie de garçon :joris:
+* Banque :banque:
+** WAIT Commander nouvelle CB :banque:
+Demande faite <2022-04-03 Sun>
+Reçue mais pas de chiffre en relief
+Mail envoyé pour savoir si on peut louer avec mais a priori non (carte de débit !)
+Voir
+** WAIT Compte et CB société générale :banque:
+SCHEDULED: <2022-04-16 Sat>
+Pas de nouvelle depuis décembre 2021, relancé<2022-04-09 Sat>
 * DES :anki:
 :PROPERTIES:
 :CATEGORY: DES
@@ -58,8 +66,72 @@
 **** TODO Figure avec tikz des variant sur la séquence d'acide aminé
 **** TODO Lister variants et clinique
 *** DONE Biblio ophn1
+<<<<<<< HEAD
 * TODO Appeler pour demander carte médecin internat
 SCHEDULED: <2022-04-14 Thu>
+=======
+* Emacs
+:PROPERTIES:
+:CATEGORY: emacs
+:END:
+* Inbox
+** TODO Organiser enterrement vie de garçon :joris:
+** TODO Rattraper retard anki
+** TODO Appeler pour demander carte médecin internat
+DEADLINE: <2022-03-30 Wed>
+** DONE Utiliser chèque énergie
+CLOSED: [2022-04-10 Sun 17:20] SCHEDULED: <2022-04-10 Sun>
+** TODO
+:PROPERTIES:
+:test:
+:END:
+** TODO Utiliser chèque Chuullanka
+SCHEDULED: <2022-04-17 Sun>
+* Japonais :japonais:
+** Miura :anki:
+:PROPERTIES:
+:CATEGORY: miura
+:END:
+*** TODO Leçon 2
+**** TODO Grammaire
+*** DONE leçon 1 vocab
+*** DONE Leçon 2 : Vocabulaire
+** Leçon Aya
+:PROPERTIES:
+:CATEGORY: aya
+:END:
+*** DONE Notes leçon <2022-03-20 Sun>
+SCHEDULED: <2022-04-03 Sun>
+*** DONE Notes leçon <2022-03-27 Sun>
+SCHEDULED: <2022-04-03 Sun>
+*** DONE Notes leçon <2022-04-03 Sun>
+SCHEDULED: <2022-04-03 Sun>
+*** TODO Lire dialogue fin leçon 10
+SCHEDULED: <2022-04-03 Sun>
+* Ledger
+:PROPERTIES:
+:CATEGORY: compta
+:END:
+** DONE janvier 2022
+** TODO février 2022
+DEADLINE: <2022-03-27 Sun>
+* Moto :moto:
+** TODO Réparer
+*** DONE Dépannage
+CLOSED: [2022-04-09 Sat 14:25]
+Pas de réparation possible avan fin avril
+*** TODO Appel garage Yamaha Besançon pour commencer réparation
+SCHEDULED: <2022-04-29 Fri>
+*** TODO Notes <2022-04-10 Sun>
+SCHEDULED: <2022-04-10 Sun>
+* Notes biologie
+** Biologie cellulaire Dunod
+*** TODO chapitres déjà fait :anki:
+*** TODO lire
+** Biologie chimie Dunod
+*** TODO lire
+*** TODO Ficher
+>>>>>>> 48df6255c9ef1705edd7f58974a79cf24f0752ec
 * Notes génétique :anki:
 :PROPERTIES:
 :CATEGORY: genetique
@@ -95,43 +167,6 @@ SCHEDULED: <2022-04-14 Thu>
 ** TODO polykystose autosomique récessive
 ** TODO Alport
 ** TODO hémophilie
-* Notes biologie
-** Biologie cellulaire Dunod
-*** TODO chapitres déjà fait :anki:
-*** TODO lire
-** Biologie chimie Dunod
-*** TODO lire
-*** TODO Ficher
-* Japonais :japonais:
-** Miura :anki:
-:PROPERTIES:
-:CATEGORY: miura
-:END:
-*** TODO Leçon 2
-**** TODO Grammaire
-*** DONE leçon 1 vocab
-*** DONE Leçon 2 : Vocabulaire
-** Leçon Aya
-:PROPERTIES:
-:CATEGORY: aya
-:END:
-*** TODO Lire dialogue fin leçon 10
-SCHEDULED: <2022-04-03 Sun>
-* TODO Rattraper retard anki
-* Thèse
-** TODO Réflechirr à la techno : django, flask, autre ? these.site
-** TODO Mail Paul pour savoir si on peut publier these
-** TODO Importer tous les champs intéressants these.bdd.labkey
-** TODO Importer pièces jointes these.bdd.labkey
-** TODO Nettoyer pièces jointes these.bdd.labkey
-** TODO Prototype MySQL these.bdd
-** TODO Voir avec Pierre-Yves pour installation prototype these.bdd
-** TODO Demande VM ou Oracle (DSI) pour installation propre these.bdd
-** TODO Autorisation CNIL ? these.bdd
-
-* DONE Contester majoration
-DEADLINE: <2022-03-26 Sat>
-
 * Projet
 :PROPERTIES:
 :CATEGORY: projets
@@ -162,3 +197,11 @@ Demande faite <2022-04-03 Sun>
 ** DONE janvier 2022
 ** TODO février 2022
 SCHEDULED: <2022-04-15 Fri>
+* FreeBSd
+** DONE taskwarrior tui 0.22
+CLOSED: [2022-04-10 Sun 17:41] SCHEDULED: <2022-04-10 Sun>
+** TODO opengraph v 0.6.3
+SCHEDULED: <2022-04-12 Tue>
+Ok 3.10->3.7
+** TODO Kitty 0.25
+SCHEDULED: <2022-04-13 Wed>

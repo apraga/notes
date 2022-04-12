@@ -5195,6 +5195,12 @@ Appli. 40min au lieu de 50 car vent + pluie !
 B-kick surtout et Feilong.
 Bkick commence à décoller
 Feilong /= saut !
+<<<<<<< HEAD
 * <2022-04-12 Tue> Running
 12min montée douche puis 3min plat puis descente
 Total 25min
+=======
+* <2022-04-10 Sun> Tricking, tir à l'arc
+Bkick, petite session car courbature
+Foret : perdu 1 flèches, cassés 4
+>>>>>>> 48df6255c9ef1705edd7f58974a79cf24f0752ec

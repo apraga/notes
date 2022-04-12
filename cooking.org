@@ -662,10 +662,6 @@ visuellement)
 trop fort, un peu atténué avec une glacage chocolat.
 
 ** RETRY Macarons
-   :PROPERTIES:
-   :CUSTOM_ID: retry-macarons
-   :END:
-
 Pour 30 macarons Coque =
 
 - 125g poudre d'amandes
