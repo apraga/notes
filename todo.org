@@ -59,7 +59,7 @@
 **** TODO Lister variants et clinique
 *** DONE Biblio ophn1
 * TODO Appeler pour demander carte médecin internat
-DEADLINE: <2022-03-30 Wed>
+SCHEDULED: <2022-04-14 Thu>
 * Notes génétique :anki:
 :PROPERTIES:
 :CATEGORY: genetique
@@ -142,6 +142,10 @@ DEADLINE: <2022-03-26 Sat>
 :CATEGORY: assistant
 :END:
 *** DONE Regarder ce qu'Yvain a fait
+
+** Genome
+*** TODO Regarder trafic réseau
+SCHEDULED: <2022-04-12 Tue>
 * Emacs
 :PROPERTIES:
 :CATEGORY: emacs
@@ -150,10 +154,11 @@ DEADLINE: <2022-03-26 Sat>
 ** WAIT Commander nouvelle CB :banque:
 SCHEDULED: <2022-04-10 Sun>
 Demande faite <2022-04-03 Sun>
+
 * Ledger
 :PROPERTIES:
 :CATEGORY: compta
 :END:
 ** DONE janvier 2022
 ** TODO février 2022
-DEADLINE: <2022-03-27 Sun>
+SCHEDULED: <2022-04-15 Fri>

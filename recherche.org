@@ -1,13 +1,17 @@
 #+TITLE: Recherche
 
 * MUSTARD
+:PROPERTIES:
+:CATEGORY: mustard
+:END:
 ** Données
 *** DONE Labkey
 *** STRT Clinique
 **** TODO Inventaire des données cliniques existantes dans labkey
 ***** DONE Stats
 ***** TODO Vérification manuelle
-SCHEDULED: <2022-04-03 Sun>
+****** TODO En priorité donnés de Dijon
+SCHEDULED: <2022-04-12 Tue>
 
 **** STRT Dxcare
 ***** DONE Demande Dijon
@@ -28,5 +32,5 @@ Trop ambitieux (long, compliqué et problèmes de droits)
 **** KILL Prototype django/flask
 *** Excel
 **** TODO Voir pour hébergement
-***** TODO Mail Yannis
-SCHEDULED: <2022-04-03 Sun>
+***** WAIT Mail Yannis
+SCHEDULED: <2022-04-13 Wed>
