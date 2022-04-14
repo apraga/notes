@@ -6,7 +6,7 @@ Mail envoyé pour savoir si on peut louer avec mais a priori non (carte de débi
 Voir
 ** WAIT Compte et CB société générale :banque:
 SCHEDULED: <2022-04-16 Sat>
-Pas de nouvelle depuis décembre 2021, relancé<2022-04-09 Sat>
+Documents `a signer mais `
 * DES :anki:
 :PROPERTIES:
 :CATEGORY: DES
@@ -57,23 +57,9 @@ Pas de nouvelle depuis décembre 2021, relancé<2022-04-09 Sat>
 *** TODO 22q11
 *** TODO Dysmorpho nouveau-né
 *** TODO Autopsie foetale
-** Mémoire
-:PROPERTIES:
-:CATEGORY: memoire
-:END:
-*** TODO Biblio
-**** TODO WDR45 et fonction
-**** TODO Figure avec tikz des variant sur la séquence d'acide aminé
-**** TODO Lister variants et clinique
-*** DONE Biblio ophn1
-<<<<<<< HEAD
+** TODO QROC 3
 * TODO Appeler pour demander carte médecin internat
 SCHEDULED: <2022-04-14 Thu>
-=======
-* Emacs
-:PROPERTIES:
-:CATEGORY: emacs
-:END:
 * Inbox
 ** TODO Organiser enterrement vie de garçon :joris:
 ** TODO Rattraper retard anki
@@ -87,6 +73,19 @@ CLOSED: [2022-04-10 Sun 17:20] SCHEDULED: <2022-04-10 Sun>
 :END:
 ** TODO Utiliser chèque Chuullanka
 SCHEDULED: <2022-04-17 Sun>
+** TODO Déclaration de revenus
+SCHEDULED: <2022-04-17 Sun>
+** TODO Rendre le coran
+DEADLINE: <2022-04-14 Thu>
+** TODO Signer contrat moto
+SCHEDULED: <2022-04-15 Fri>
+** TODO Certificat trail
+SCHEDULED: <2022-04-21 Thu>
+
+** WAIT Commander nouvelle CB :banque:
+SCHEDULED: <2022-04-10 Sun>
+Demande faite <2022-04-03 Sun>
+
 * Japonais :japonais:
 ** Miura :anki:
 :PROPERTIES:
@@ -131,7 +130,6 @@ SCHEDULED: <2022-04-10 Sun>
 ** Biologie chimie Dunod
 *** TODO lire
 *** TODO Ficher
->>>>>>> 48df6255c9ef1705edd7f58974a79cf24f0752ec
 * Notes génétique :anki:
 :PROPERTIES:
 :CATEGORY: genetique
@@ -181,22 +179,20 @@ SCHEDULED: <2022-04-10 Sun>
 ** Genome
 *** TODO Regarder trafic réseau
 SCHEDULED: <2022-04-12 Tue>
+1. /Login avec
+nomNetbios	""
+username	"XXXX"
+password	"YYY"
+returnUrl	"/"
+operation	""
+emailOuSms	""
+Mais on peut directvement faire
+emailOuSms	"sms"
+2. Générer le cookie puis avoir le token en faisant une requête get
 * Emacs
 :PROPERTIES:
 :CATEGORY: emacs
 :END:
-* Inbox
-** WAIT Commander nouvelle CB :banque:
-SCHEDULED: <2022-04-10 Sun>
-Demande faite <2022-04-03 Sun>
-
-* Ledger
-:PROPERTIES:
-:CATEGORY: compta
-:END:
-** DONE janvier 2022
-** TODO février 2022
-SCHEDULED: <2022-04-15 Fri>
 * FreeBSd
 ** DONE taskwarrior tui 0.22
 CLOSED: [2022-04-10 Sun 17:41] SCHEDULED: <2022-04-10 Sun>

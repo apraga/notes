@@ -34,3 +34,14 @@ Trop ambitieux (long, compliqué et problèmes de droits)
 **** TODO Voir pour hébergement
 ***** WAIT Mail Yannis
 SCHEDULED: <2022-04-13 Wed>
+
+* WDR45
+** Mémoire
+:PROPERTIES:
+:CATEGORY: memoire
+:END:
+*** TODO Biblio
+**** TODO WDR45 et fonction
+**** TODO Figure avec tikz des variant sur la séquence d'acide aminé
+**** TODO Lister variants et clinique
+*** DONE Biblio ophn1
