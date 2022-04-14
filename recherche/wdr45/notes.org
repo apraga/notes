@@ -82,19 +82,77 @@ syndrome)
   - impaired ferritinophagy
   - mitochrondrial iron accumulation + altered mitochrondrial metabolism (possible link to neuronal cell death, neurodegenration)
 
-* References
+* TODO References
+- **review 160 pcases !!!!!**https://www.tandfonline.com/doi/abs/10.1080/15548627.2021.1990671
+- **review+ 17 new cases (males)  !!**
+https://www.sciencedirect.com/science/article/pii/S0887899420300849?casa_token=nlNoFpwcHtcAAAAA:e4DQEEyzIXopL8T0DHS6Fu5WsmQf3NuNqPbP7chy0OlmajGsgGV0gTJnMpO4-GpDDqbBwcneAZk
+- 40 patients, 2 males https://ng.neurology.org/content/4/2/e227
+- 1 mutation https://www.sciencedirect.com/science/article/abs/pii/S0022510X14008016
+- 1 case report 1 giirl https://publications.aap.org/pediatrics/article-abstract/136/3/e714/61183/Novel-WDR45-Mutation-and-Pathognomonic-BPAN
+- 7 female patients https://onlinelibrary.wiley.com/doi/full/10.1111/epi.13957
+- physio https://www.tandfonline.com/doi/abs/10.1080/15548627.2021.1924039
+- 5 young females https://www.sciencedirect.com/science/article/pii/S1769721217308790?casa_token=X6h39LuV_a8AAAAA:3VCywVz-NvsV-j7nlwfNQiHI7w3m3w7PcsPANxEUAOgmwTyGGy0kLxpsa9NtgFppUvtWyZ_ciYY
+- 1 case report female https://onlinelibrary.wiley.com/doi/full/10.1002/mgg3.858
+- 1 case report female https://onlinelibrary.wiley.com/doi/full/10.1002/ajmg.a.36635
+- 1 case report female https://www.sciencedirect.com/science/article/pii/S0387760417301432?casa_token=G1KM-amFLoAAAAAA:oYQOlK9nf0A_ZSTiNjJ3UVTMlsWKOYMkWYUz3qOSBYHnILk4WhEzzaT0FOIX6iamazynOVw7S10
+- 1 case fmale https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5656753/
+- https://www.sciencedirect.com/science/article/abs/pii/S1769721215001135 wdr45 + plr3a
+- 1 patient  https://ng.neurology.org/content/3/1/e124.short
+- 1 case report https://synapse.koreamed.org/articles/1047886
+-  mouse model https://link.springer.com/article/10.1007/s00335-021-09875-3
+- 2 twins https://link.springer.com/article/10.1007/s00415-017-8475-2
+-  1 female
+  https://www.sciencedirect.com/science/article/pii/S1769721219302253?casa_token=xRLAjZr8aEoAAAAA:JTv4npwgzR15uM21SWNpQ8m8asRbV7tlwyIqj4AR8xP3k8fjTC4n78nPCqEo01_sQL9nXDHmj2w
+-  functional analysis https://onlinelibrary.wiley.com/doi/abs/10.1002/ajmg.a.38656
+-  male  https://onlinelibrary.wiley.com/doi/10.1111/cge.12849
+- 1 male https://pubmed.ncbi.nlm.nih.gov/28371320/
 - [ ] [cite:@Aring_2021] physiopathology model for WDR45 deficit
-- [ ] [cite:@saitsu2013] mutations in WDR45 TODO data
+- [ ] [cite:@Cong_2021] **review** of WDR45 : 93 variant, 84 women, 9 males with sch
+- [ ] WDR45 knockout mice -> model for BPAN
+- [ ] [cite:@Noda_2021] brain study in knockout mice
+- [ ] [cite:@Khoury_2019] 1 case of epileptic encephalopathy
+- [ ] [cite:@Ak_akaya_2019] 1 patient BPAN mosaicim c.873C>G; p.(Tyr291*)
+- [ ] [cite:@Liu_2018]  9 month-old c.977-1 C>T) **no iron on MRI**
+- [ ] [cite:@morisada2016] 1 woman : **21 years = MRI with atrophy only**, 39 years = MIR with classic anomalies !
+- [ ] [cite:@Lee_iron_2021] c.974-1G>A étude fibroblaste
+- [ ] [cite:@lee_autophagic_2021] c.977-1G>A effet autophage fibroblaste
+- [ ] [cite:@Sato2020]  1 case, classic BPAN but with lateral parkinsonism
+- [ ] [cite:@Tang2020] 5 unrelated children with de novo variant **normal MRI**
+  17 patients (13 females 4 males)
+- [cite:@Hattingen_2017]  1 female
+- ?? 1 female, epilepsy  : c.830＋2dup
+- [cite:@Xixis_2016] 1 case report  ,, epileptic spasm
+- https://n.neurology.org/content/92/15_Supplement/P3.8-022.abstract mosais c830+1G>A mosaic
+  - 1 case report https://www.thieme-connect.com/products/ejournals/html/10.1055/s-0041-1739626
+- [cite:@Endo_2017] 1 case report, woman
+- [ ] [cite:@Umehara_2020] : 1 woman c.233C > A, p. Ser78*
+  slowly progressing parkinsoni/dystonia in adulthood + epilepsy + ID + MRI
+  https://doi.org/10.1111/ncn3.12427
+- 3 years old gil https://cpfd.cnki.com.cn/Article/CPFDTOTAL-JSYC201811001060.htm
+- 7 females https://www.sciencedirect.com/science/article/abs/pii/S0197458015000548
+- 1 male https://movementdisorders.onlinelibrary.wiley.com/doi/abs/10.1002/mdc3.13365
+- https://onlinelibrary.wiley.com/doi/10.1111/ene.14679
+- https://www.prd-journal.com/article/S1353-8020(18)30496-6/fulltext
+- 3 male with west https://www.nature.com/articles/jhg201627
+- 1 girl rett-like https://www.sciencedirect.com/science/article/pii/S0890850816300032?casa_token=ehws_TFdQiMAAAAA:zsj3IRGv0EqyuUxRso4zZpNH-p-ygXa5c9QSqb-E8HtcgkxWxZ-SndxH2SdrNxrd0A-EWC8xM2w
+- https://academic.oup.com/brain/article/141/10/3052/5087794?login=true
+- mouse model https://www.tandfonline.com/doi/full/10.1080/15548627.2019.1630224
+- 1 girl, rett-like    https://www.nature.com/articles/jhg201418
+- 1 male https://www.nature.com/articles/ejhg2015159
+- 1 boy https://www.sciencedirect.com/science/article/pii/S1769721217302203?casa_token=t72fvriXW7kAAAAA:SDq-OjjKJAN3lopp-kU4fBypLYAP7sfJjv-PDMpVYRmIS5GGBHUMaywYVB_fHCdk2IlGrOYllak
+- [ ] [cite:@Ji_2021] show that WDR45 is required for neural autophagy
+- [ ] [cite:@Kano_2020] *revue* + 1 patiente
+- 1 case report
+- https://mediatum.ub.tum.de/1256878
+-  https://europepmc.org/article/med/31665836
+
+- [ ] Gregory2019
+- [ ] [cite:@saitsu2013] nouveau phénotype WDR45 5 patients -> TODO data
 - [X] [cite:@haylick2013] phenotype details of the cohort in [cite:@haack2012]
   - The protein encoded by WDR45 is characterized as a beta-pro- peller scaffold that serves as a platform to enable specific protein– protein interactions that are important in autophagy.
 - [X] [cite:@haack2012] first description of WDR45 in NBIA 19 mutations, 20 subjects.
   data: see[cite:@hayflick2013]
   MRI with arrows :)
-- [ ] Gregory2002
 - [X] Gregory2009
+- [ ] Gregory2002
   7 patients: new phenotype
-- [ ] Gregory2019
-- [cite:@Lee_iron_2021] c.974-1G>A étude fibroblaste
-- [cite:@lee_autophagic_2021] c.977-1G>A effet autophage fibroblaste
-- [cite:@Ji_2021] autophagosome maturation into autolysosomes in neural cells
-- [cite:@Kano_2020] revue 1 patiente
