@@ -1,17 +1,10 @@
 Voir [[file:books-lists][books lists]] pour des idées
 
-* Computer science
-  :PROPERTIES:
-  :CATEGORY: computer-science
-  :END:
-
+* Computer science :cs:
 ** HOLD The art of computer programming, volume 1
 ** HOLD Haskell Programming From First Principles [5/31]
 
-* Fanfic
-:PROPERTIES:
-:CATEGORY: fanfic
-:END:
+* Fanfic :fanfic:
 ** Harry potter
 :PROPERTIES:
 :CATEGORY: harry potter
@@ -20,7 +13,7 @@ Voir [[file:books-lists][books lists]] pour des idées
 *** DONE [[file:notes/reviews/arithmancer.org][Harry Potter and the Methods of Rationality]]
 *** DONE The Arithmancer
 
-* Fantasy
+* Fantasy :fantasy:
 ** TODO The Name of the Wind (Kingkiller chronicles)
 ** TODO Robin Hobb
 ** Cherry, C. J - Fortress
@@ -87,11 +80,7 @@ Voir [[file:books-lists][books lists]] pour des idées
 ** DONE Wells, H. G. - The Time Machine
 ** DONE Wells, H. G. - The War of the Worlds
 
-* Histoire
-  :PROPERTIES:
-  :CATEGORY: histoire
-  :END:
-
+* Histoire :histoire:
 ** DONE Magni, C. (2003): Les Olmèques: des origines au mythe
 ** DONE Delumeau, J. (2005): Une histoire du monde aux temps modernes
 ** DONE Grousset, Renée (1942): Histoire de la chine
@@ -122,11 +111,7 @@ Voir [[file:books-lists][books lists]] pour des idées
 ** DONE Pride and Prejudice and Zombies by Jane Austen
 ** DONE At the mountains of madness the definitive edition
 
-* Litterature
-  :PROPERTIES:
-  :CUSTOM_ID: litterature
-  :END:
-
+* Litterature :litterature:
 ** TODO Atlas Shrugged
 ** TODO Beowulf (Michael Alexander translation)
 ** TODO Catch 22
@@ -150,11 +135,7 @@ Voir [[file:books-lists][books lists]] pour des idées
 ** DONE The hound of the baskervilles
 ** DONE The name of the rose
 
-* La pleiade
-  :PROPERTIES:
-  :CATEGORY: la pleiade
-  :END:
-
+* La pleiade :la_pleiade:
 ** STRT Le coran
 ** DONE Duby, [[file:books/duby.md][Oeuvres]]
 ** DONE [[file:books/homere.md][Homère, Iliade -- Odyssée]]
@@ -166,25 +147,16 @@ Voir [[file:books-lists][books lists]] pour des idées
 :PROPERTIES:
 :CATEGORY: math
 :END:
-** [.] Gowers, T. (2010): The princeton companion to mathematics
+** HOLD Gowers, T. (2010): The princeton companion to mathematics
 ** TODO Hastie, T., Tibshirani, R., & Friedman, J. (2009): The elements of
 statistical learning Texte de référence pour classification, machine
-learning etc. Semble intéressant NB : An Introduction to Statistical
-Learning = version avec moins de maths. # Medecine
 ** TODO [[file:Cecil-Goldman][Cecil Goldman]] (26th edition)
 ** TODO [[file:Auerbach's%20wilderness%20medecine][Auerbach]]
 
-* Philosophy
-  :PROPERTIES:
-  :CUSTOM_ID: philosophy
-  :END:
-
+* Philosophy :philosophy:
 ** STRT A History of Western Philosophy
 
-* Science
-  :PROPERTIES:
-  :CATEGORY: science
-  :END:
+* Science :science:
 ** TODO IPPC : Summary for policymaker
 ** TODO The Feynman Lectures on Physics
 

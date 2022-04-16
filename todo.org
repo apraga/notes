@@ -107,13 +107,15 @@ SCHEDULED: <2022-04-03 Sun>
 SCHEDULED: <2022-04-03 Sun>
 *** TODO Lire dialogue fin leçon 10
 SCHEDULED: <2022-04-03 Sun>
+*** TODO Notes <2022-04-10 Sun>
+SCHEDULED: <2022-04-10 Sun>
 * Ledger
 :PROPERTIES:
 :CATEGORY: compta
 :END:
 ** DONE janvier 2022
-** TODO février 2022
-DEADLINE: <2022-03-27 Sun>
+** DONE février 2022
+CLOSED: [2022-04-16 Sat 15:06] DEADLINE: <2022-03-27 Sun>
 * Moto :moto:
 ** TODO Réparer
 *** DONE Dépannage
@@ -121,8 +123,6 @@ CLOSED: [2022-04-09 Sat 14:25]
 Pas de réparation possible avan fin avril
 *** TODO Appel garage Yamaha Besançon pour commencer réparation
 SCHEDULED: <2022-04-29 Fri>
-*** TODO Notes <2022-04-10 Sun>
-SCHEDULED: <2022-04-10 Sun>
 * Notes biologie
 ** Biologie cellulaire Dunod
 *** TODO chapitres déjà fait :anki:
