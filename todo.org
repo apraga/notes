@@ -58,6 +58,8 @@ Documents `a signer mais `
 *** TODO Dysmorpho nouveau-né
 *** TODO Autopsie foetale
 ** TODO QROC 3
+** TODO QROC S2
+DEADLINE: <2022-04-16 Sat 23:59>
 * TODO Appeler pour demander carte médecin internat
 SCHEDULED: <2022-04-14 Thu>
 * Inbox
@@ -75,8 +77,8 @@ CLOSED: [2022-04-10 Sun 17:20] SCHEDULED: <2022-04-10 Sun>
 SCHEDULED: <2022-04-17 Sun>
 ** TODO Déclaration de revenus
 SCHEDULED: <2022-04-17 Sun>
-** TODO Rendre le coran
-DEADLINE: <2022-04-14 Thu>
+** DONE Rendre le coran
+CLOSED: [2022-04-16 Sat 21:40] DEADLINE: <2022-04-14 Thu>
 ** TODO Signer contrat moto
 SCHEDULED: <2022-04-15 Fri>
 ** TODO Certificat trail
@@ -85,7 +87,8 @@ SCHEDULED: <2022-04-21 Thu>
 ** WAIT Commander nouvelle CB :banque:
 SCHEDULED: <2022-04-10 Sun>
 Demande faite <2022-04-03 Sun>
-
+** TODO QROC S2
+DEADLINE: <2022-04-16 Sat 23:59>
 * Japonais :japonais:
 ** Miura :anki:
 :PROPERTIES:
