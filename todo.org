@@ -58,8 +58,8 @@ Documents `a signer mais `
 *** TODO Dysmorpho nouveau-né
 *** TODO Autopsie foetale
 ** TODO QROC 3
-** TODO QROC S2
-DEADLINE: <2022-04-16 Sat 23:59>
+** DONE QROC S2
+CLOSED: [2022-04-16 Sat 23:42] DEADLINE: <2022-04-16 Sat 23:59>
 * TODO Appeler pour demander carte médecin internat
 SCHEDULED: <2022-04-14 Thu>
 * Inbox
@@ -87,31 +87,31 @@ SCHEDULED: <2022-04-21 Thu>
 ** WAIT Commander nouvelle CB :banque:
 SCHEDULED: <2022-04-10 Sun>
 Demande faite <2022-04-03 Sun>
-** TODO QROC S2
-DEADLINE: <2022-04-16 Sat 23:59>
+** TODO 200 cartes Anki
+DEADLINE: <2022-04-17 Sun 23:59>
+** TODO Notes <2022-04-17 Sun>
+SCHEDULED: <2022-04-17 Sun>
 * Japonais :japonais:
-** Miura :anki:
+** Miura
+*** TODO Ficher :anki:
 :PROPERTIES:
 :CATEGORY: miura
 :END:
-*** TODO Leçon 2
-**** TODO Grammaire
-*** DONE leçon 1 vocab
-*** DONE Leçon 2 : Vocabulaire
+**** DONE leçon 1 vocab
+**** TODO Leçon 2
+***** DONE Vocabulaire
+***** TODO Grammaire
+*** TODO Lire
 ** Leçon Aya
 :PROPERTIES:
 :CATEGORY: aya
 :END:
-*** DONE Notes leçon <2022-03-20 Sun>
-SCHEDULED: <2022-04-03 Sun>
-*** DONE Notes leçon <2022-03-27 Sun>
-SCHEDULED: <2022-04-03 Sun>
-*** DONE Notes leçon <2022-04-03 Sun>
-SCHEDULED: <2022-04-03 Sun>
 *** TODO Lire dialogue fin leçon 10
 SCHEDULED: <2022-04-03 Sun>
-*** TODO Notes <2022-04-10 Sun>
-SCHEDULED: <2022-04-10 Sun>
+*** DONE Notes <2022-04-10 Sun>
+CLOSED: [2022-04-17 Sun 11:14] SCHEDULED: <2022-04-10 Sun>
+*** DONE Préparer <2022-04-17 Sun>
+CLOSED: [2022-04-17 Sun 17:18] DEADLINE: <2022-04-17 Sun 12:30>
 * Ledger
 :PROPERTIES:
 :CATEGORY: compta
@@ -202,5 +202,5 @@ CLOSED: [2022-04-10 Sun 17:41] SCHEDULED: <2022-04-10 Sun>
 ** TODO opengraph v 0.6.3
 SCHEDULED: <2022-04-12 Tue>
 Ok 3.10->3.7
-** TODO Kitty 0.25
-SCHEDULED: <2022-04-13 Wed>
+** DONE Kitty 0.25
+CLOSED: [2022-04-17 Sun 17:19] SCHEDULED: <2022-04-13 Wed>
