@@ -83,19 +83,28 @@ syndrome)
   - mitochrondrial iron accumulation + altered mitochrondrial metabolism (possible link to neuronal cell death, neurodegenration)
 
 * TODO References
-** WAIT [#A] review 160 cases !!!!! @saffari021
-  pas sur scihub....
-  demande faite sur researchgate
-** TODO [#A] review 106 cas + 17 new cases (males)  !!
-  adang2020
+** TODO [#A] review 160 cases, 109 variants @saffari021
+SCHEDULED: <2022-04-18 Mon>
+87 papers
+Seizure is a core feature of BPAN, contrary to NBIA but not all patientsa have them : 80% have seizures ( 84% of males.)
+Starts a bit earlier and diagnosied earlier in the male -> more severe ?
+Cerebral : only 62% have iron deposit
+Pros: huge review, HPO normalization
+Cons: Mean age at last follow-up = 13 with survival 100% in the boys
+** TODO [#A] @adang2020 review 106 cases 17 new cases (males)  !!
+SCHEDULED: <2022-04-18 Mon>
   Half do not have iron deposit in the brain
-** TODO 40 patients, 2 males Kulikovskaja 2018
+** TODO [#A] [cite:@Cong_2021] review 140 variants + 15 unclassified
+SCHEDULED: <2022-04-18 Mon>
+of WDR45 : 93 patients, 84 women, 9 males with sch
+Less variants than Saffari ??
+** TODO 40 patients, 2 males @Kulikovskaja2018
 60 CAS Rapportés
+** TODO physio @ji2021
 ** 1 mutation WDR45 for 69 patients NBIA 6 @tscentschier2015
 ** 1 case report 1 girl @@long2015
 ** 7 female patients @carvill2017
 6 truncating 1 missense
-** TODO physio @ji2021
 ** 5 young females @chen2019
 ** 1 case report female @xiong2019
 ** 1 case report female @ozawa2014
@@ -114,40 +123,39 @@ Panel négatif initialement -> diag sur qPCR
 A trio was needed
 ** male @@spiegel2016
 ** 1 male, severe @redon201
-** DONE [cite:@Aring_2021] physiopathology model for WDR45 deficit
-** DONE [cite:@Cong_2021] **review** of WDR45 : 93 variant, 84 women, 9 males with sch
-** DONE WDR45 knockout mice -> model for BPAN
-** DONE [cite:@Noda_2021] brain study in knockout mice
-** DONE [cite:@Khoury_2019] 1 case of epileptic encephalopathy
-** DONE [cite:@Ak_akaya_2019] 1 patient BPAN mosaicim c.873C>G; p.(Tyr291*)
-** DONE [cite:@Liu_2018]  9 month-old c.977-1 C>T) **no iron on MRI**
-** DONE [cite:@morisada2016] 1 woman : **21 years = MRI with atrophy only**, 39 years = MIR with classic anomalies !
-** DONE [cite:@Lee_iron_2021] c.974-1G>A étude fibroblaste
-** DONE [cite:@lee_autophagic_2021] c.977-1G>A effet autophage fibroblaste
-** DONE [cite:@Sato2020]  1 case, classic BPAN but with lateral parkinsonism
-** DONE [cite:@Tang2020] 5 unrelated children with de novo variant **normal MRI**
+** [cite:@Aring_2021] physiopathology model for WDR45 deficit
+** WDR45 knockout mice -> model for BPAN
+** [cite:@Noda_2021] brain study in knockout mice
+** [cite:@Khoury_2019] 1 case of epileptic encephalopathy
+** [cite:@Ak_akaya_2019] 1 patient BPAN mosaicim c.873C>G; p.(Tyr291*)
+** [cite:@Liu_2018]  9 month-old c.977-1 C>T) **no iron on MRI**
+** [cite:@morisada2016] 1 woman : **21 years = MRI with atrophy only**, 39 years = MIR with classic anomalies !
+** [cite:@Lee_iron_2021] c.974-1G>A étude fibroblaste
+** [cite:@lee_autophagic_2021] c.977-1G>A effet autophage fibroblaste
+** [cite:@Sato2020]  1 case, classic BPAN but with lateral parkinsonism
+** [cite:@Tang2020] 5 unrelated children with de novo variant **normal MRI**
   17 patients (13 females 4 males)
-** TODO [cite:@Hattingen_2017]  1 female
-** TODO ?? 1 female, epilepsy  : c.830＋2dup
-** TODO [cite:@Xixis_2016] 1 case report  ,, epileptic spasm
-** TODO https://n.neurology.org/content/92/15_Supplement/P3.8-022.abstract mosais c830+1G>A mosaic
-  ** TODO 1 case report https://www.thieme-connect.com/products/ejournals/html/10.1055/s-0041-1739626
-** TODO [cite:@Endo_2017] 1 case report, woman
+** [cite:@Hattingen_2017]  1 female
+** ?? 1 female, epilepsy  : c.830＋2dup
+** [cite:@Xixis_2016] 1 case report  ,, epileptic spasm
+** https://n.neurology.org/content/92/15_Supplement/P3.8-022.abstract mosais c830+1G>A mosaic
+  *O 1 case report https://www.thieme-connect.com/products/ejournals/html/10.1055/s-0041-1739626
+** [cite:@Endo_2017] 1 case report, woman
 ** DONE [cite:@Umehara_2020] : 1 woman c.233C > A, p. Ser78*
   slowly progressing parkinsoni/dystonia in adulthood + epilepsy + ID + MRI
   https://doi.org/10.1111/ncn3.12427
-** TODO 3 years old gil https://cpfd.cnki.com.cn/Article/CPFDTOTAL-JSYC201811001060.htm
-** TODO 7 females https://www.sciencedirect.com/science/article/abs/pii/S0197458015000548
-** TODO 1 male https://movementdisorders.onlinelibrary.wiley.com/doi/abs/10.1002/mdc3.13365
-** TODO https://onlinelibrary.wiley.com/doi/10.1111/ene.14679
-** TODO https://www.prd-journal.com/article/S1353-8020(18)30496-6/fulltext
-** TODO 3 male with west https://www.nature.com/articles/jhg201627
-** TODO 1 girl rett-like https://www.sciencedirect.com/science/article/pii/S0890850816300032?casa_token=ehws_TFdQiMAAAAA:zsj3IRGv0EqyuUxRso4zZpNH-p-ygXa5c9QSqb-E8HtcgkxWxZ-SndxH2SdrNxrd0A-EWC8xM2w
-** TODO https://academic.oup.com/brain/article/141/10/3052/5087794?login=true
-** TODO mouse model https://www.tandfonline.com/doi/full/10.1080/15548627.2019.1630224
-** TODO 1 girl, rett-like    https://www.nature.com/articles/jhg201418
-** TODO 1 male https://www.nature.com/articles/ejhg2015159
-** TODO 1 boy https://www.sciencedirect.com/science/article/pii/S1769721217302203?casa_token=t72fvriXW7kAAAAA:SDq-OjjKJAN3lopp-kU4fBypLYAP7sfJjv-PDMpVYRmIS5GGBHUMaywYVB_fHCdk2IlGrOYllak
+** 3 years old gil https://cpfd.cnki.com.cn/Article/CPFDTOTAL-JSYC201811001060.htm
+** 7 females https://www.sciencedirect.com/science/article/abs/pii/S0197458015000548
+** 1 male https://movementdisorders.onlinelibrary.wiley.com/doi/abs/10.1002/mdc3.13365
+** https://onlinelibrary.wiley.com/doi/10.1111/ene.14679
+** https://www.prd-journal.com/article/S1353-8020(18)30496-6/fulltext
+** 3 male with west https://www.nature.com/articles/jhg201627
+** 1 girl rett-like https://www.sciencedirect.com/science/article/pii/S0890850816300032?casa_token=ehws_TFdQiMAAAAA:zsj3IRGv0EqyuUxRso4zZpNH-p-ygXa5c9QSqb-E8HtcgkxWxZ-SndxH2SdrNxrd0A-EWC8xM2w
+**  https://academic.oup.com/brain/article/141/10/3052/5087794?login=true
+**  mouse model https://www.tandfonline.com/doi/full/10.1080/15548627.2019.1630224
+**  1 girl, rett-like    https://www.nature.com/articles/jhg201418
+**  1 male https://www.nature.com/articles/ejhg2015159
+**  1 boy https://www.sciencedirect.com/science/article/pii/S1769721217302203?casa_token=t72fvriXW7kAAAAA:SDq-OjjKJAN3lopp-kU4fBypLYAP7sfJjv-PDMpVYRmIS5GGBHUMaywYVB_fHCdk2IlGrOYllak
 ** DONE [cite:@Ji_2021] show that WDR45 is required for neural autophagy
 ** DONE [cite:@Kano_2020] *revue* + 1 patiente
 ** TODO 1 case report
@@ -155,7 +163,7 @@ A trio was needed
 ** TODO https://europepmc.org/article/med/31665836
 
 ** DONE Gregory2019
-** DONE [cite:@saitsu2013] nouveau phénotype WDR45 5 patients -> TODO data
+** TODO [cite:@saitsu2013] nouveau phénotype WDR45 5 patients -> TODO data
 ** DONE [cite:@haylick2013] phenotype details of the cohort in [cite:@haack2012]
   ** TODO The protein encoded by WDR45 is characterized as a beta-pro- peller scaffold that serves as a platform to enable specific protein– protein interactions that are important in autophagy.
 ** DONE [cite:@haack2012] first description of WDR45 in NBIA 19 mutations, 20 subjects.

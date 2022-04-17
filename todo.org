@@ -60,8 +60,8 @@ Documents `a signer mais `
 ** TODO QROC 3
 ** DONE QROC S2
 CLOSED: [2022-04-16 Sat 23:42] DEADLINE: <2022-04-16 Sat 23:59>
-* TODO Appeler pour demander carte médecin internat
-SCHEDULED: <2022-04-14 Thu>
+* DONE Appeler pour demander carte médecin internat
+CLOSED: [2022-04-17 Sun 18:20] SCHEDULED: <2022-04-14 Thu>
 * Inbox
 ** TODO Organiser enterrement vie de garçon :joris:
 ** TODO Rattraper retard anki
@@ -73,10 +73,10 @@ CLOSED: [2022-04-10 Sun 17:20] SCHEDULED: <2022-04-10 Sun>
 :PROPERTIES:
 :test:
 :END:
-** TODO Utiliser chèque Chuullanka
-SCHEDULED: <2022-04-17 Sun>
-** TODO Déclaration de revenus
-SCHEDULED: <2022-04-17 Sun>
+** DONE Utiliser chèque Chuullanka
+CLOSED: [2022-04-17 Sun 18:20] SCHEDULED: <2022-04-17 Sun>
+** WAIT Déclaration de revenus
+SCHEDULED: <2022-04-24 Sun>
 ** DONE Rendre le coran
 CLOSED: [2022-04-16 Sat 21:40] DEADLINE: <2022-04-14 Thu>
 ** TODO Signer contrat moto
