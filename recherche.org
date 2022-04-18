@@ -44,4 +44,13 @@ SCHEDULED: <2022-04-13 Wed>
 **** TODO WDR45 et fonction
 **** TODO Figure avec tikz des variant sur la séquence d'acide aminé
 **** TODO Lister variants et clinique
+***** DONE Déjà fait par saffari2021
+CLOSED: [2022-04-18 Mon 21:56]
+***** Regarder 2 autres review
+Pourquoi plus de variants chez Cong2021
+*** Fonctionnel
+**** TODO Mail Patricia Maurin
+Rajouter âge du patient et IRM mère
+**** TODO Mail Binnaz Yalcin
+Regarder sa biblio avant !
 *** DONE Biblio ophn1
