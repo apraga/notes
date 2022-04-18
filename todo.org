@@ -87,14 +87,16 @@ SCHEDULED: <2022-04-10 Sun>
 Demande faite <2022-04-03 Sun>
 
 * Japonais :japonais:
-** Miura :anki:
+** Miura
 :PROPERTIES:
 :CATEGORY: miura
 :END:
-*** TODO Leçon 2
-**** TODO Grammaire
-*** DONE leçon 1 vocab
-*** DONE Leçon 2 : Vocabulaire
+*** Anki :anki:
+**** TODO Leçon 2
+***** TODO Grammaire
+**** DONE leçon 1 vocab
+**** DONE Leçon 2 : Vocabulaire
+*** Lire
 ** Leçon Aya
 :PROPERTIES:
 :CATEGORY: aya
