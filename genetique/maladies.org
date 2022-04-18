@@ -1,0 +1,7 @@
+#+TITLE: Maladies
+* Pendred
+- Clinique : surdité congénitale neurosensorielle sévère/profonde, atteinte vestibulaire, anomalies os temporal
+- Diagnostic : clinique = surdité neurosensorielle + anomalies scan rochers + goître euthyroïdien
+- Gènes : SLC26A4
+- Traitement : sympto
+- Transmission : AR

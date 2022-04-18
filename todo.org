@@ -36,6 +36,11 @@ Documents `a signer mais `
 ** DONE Surdité
 ** DONE Myopathies
 ** DONE Steinher
+* Syndromes génétiques avec org-mode
+** DONE Pendred
+CLOSED: [2022-04-18 Mon 21:47]
+** Beckwith-Wideman
+** T21
 * DIU dysmorpho
 :PROPERTIES:
 :CATEGORY: dysmorpho
