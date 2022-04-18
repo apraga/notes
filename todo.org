@@ -75,13 +75,15 @@ CLOSED: [2022-04-10 Sun 17:20] SCHEDULED: <2022-04-10 Sun>
 :END:
 ** DONE Utiliser chèque Chuullanka
 CLOSED: [2022-04-17 Sun 18:20] SCHEDULED: <2022-04-17 Sun>
-** WAIT Déclaration de revenus
+** DONE Déclaration de revenus
+a priori, rien à déclarer en plus value selon Aurélien.
+Va demander au notaire. Mot mis sur la déclaration.
 SCHEDULED: <2022-04-24 Sun>
 ** DONE Rendre le coran
 CLOSED: [2022-04-16 Sat 21:40] DEADLINE: <2022-04-14 Thu>
 ** TODO Signer contrat moto
 SCHEDULED: <2022-04-15 Fri>
-** TODO Certificat trail
+** DONE Certificat trail
 SCHEDULED: <2022-04-21 Thu>
 
 ** WAIT Commander nouvelle CB :banque:
