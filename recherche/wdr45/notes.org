@@ -83,11 +83,10 @@ syndrome)
   - mitochrondrial iron accumulation + altered mitochrondrial metabolism (possible link to neuronal cell death, neurodegenration)
 
 * TODO References
-** TODO [#A] review 160 cases, 109 variants @saffari021
-SCHEDULED: <2022-04-18 Mon>
+** DONE [#A] review 160 cases, 109 variants @saffari021
 87 papers
-Seizure is a core feature of BPAN, contrary to NBIA but not all patientsa have them : 80% have seizures ( 84% of males.)
-Starts a bit earlier and diagnosied earlier in the male -> more severe ?
+Seizure is a core feature of BPAN, contrary to NBIA but not all patients have them : 80% have seizures ( 84% of males.)
+Starts a bit earlier and diagnosed earlier in the male -> more severe ?
 Cerebral : only 62% have iron deposit
 Pros: huge review, HPO normalization
 Cons: Mean age at last follow-up = 13 with survival 100% in the boys
@@ -98,6 +97,16 @@ SCHEDULED: <2022-04-18 Mon>
 SCHEDULED: <2022-04-18 Mon>
 of WDR45 : 93 patients, 84 women, 9 males with sch
 Less variants than Saffari ??
+** TODO mouse model @biagosch2021
+** DONE [cite:@Aring_2021] physiopathology model for WDR45 deficit
+** DONE [cite:@Lee_iron_2021] follow-up of Lee2021
+same variant
+"suggested" that functional and structural changes resulted
+in impaired lipid metabolism, mitochondrial disorder, and unbalanced autophagy fluxes, c
+** [cite:@lee_autophagic_2021] c.977-1G>A effet autophage fibroblaste
+** @seibler2018 fonctionnal on WDR45 and PLA2G6 variant
+- WDR45 (c.519+1_519+3delGTG; NM_007075.3)
+- PLA2G6 (c.91 G>A; NM_003560.2)
 ** TODO 40 patients, 2 males @Kulikovskaja2018
 60 CAS Rapportés
 ** TODO physio @ji2021
@@ -116,22 +125,18 @@ Panel négatif initialement -> diag sur qPCR
 ** wdr45 + plr3a @khalifa2015
 ** 1 patient female @wynn2017
 ** 1 femane 38Y in Korea + iron @ryu2015
-** TODO mouse model @biagosch2021
 ** 2 twins female @araujo2017
 ** 1 female 6 years @christoforou2020
 ** diag at 6 years-old, girl, functional analysis @willoughby2017
 A trio was needed
 ** male @@spiegel2016
 ** 1 male, severe @redon201
-** [cite:@Aring_2021] physiopathology model for WDR45 deficit
 ** WDR45 knockout mice -> model for BPAN
 ** [cite:@Noda_2021] brain study in knockout mice
 ** [cite:@Khoury_2019] 1 case of epileptic encephalopathy
 ** [cite:@Ak_akaya_2019] 1 patient BPAN mosaicim c.873C>G; p.(Tyr291*)
 ** [cite:@Liu_2018]  9 month-old c.977-1 C>T) **no iron on MRI**
 ** [cite:@morisada2016] 1 woman : **21 years = MRI with atrophy only**, 39 years = MIR with classic anomalies !
-** [cite:@Lee_iron_2021] c.974-1G>A étude fibroblaste
-** [cite:@lee_autophagic_2021] c.977-1G>A effet autophage fibroblaste
 ** [cite:@Sato2020]  1 case, classic BPAN but with lateral parkinsonism
 ** [cite:@Tang2020] 5 unrelated children with de novo variant **normal MRI**
   17 patients (13 females 4 males)
