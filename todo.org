@@ -36,6 +36,11 @@ Documents `a signer mais `
 ** DONE Surdité
 ** DONE Myopathies
 ** DONE Steinher
+* Syndromes génétiques avec org-mode
+** DONE Pendred
+CLOSED: [2022-04-18 Mon 21:47]
+** Beckwith-Wideman
+** T21
 * DIU dysmorpho
 :PROPERTIES:
 :CATEGORY: dysmorpho
@@ -58,8 +63,10 @@ Documents `a signer mais `
 *** TODO Dysmorpho nouveau-né
 *** TODO Autopsie foetale
 ** TODO QROC 3
-* TODO Appeler pour demander carte médecin internat
-SCHEDULED: <2022-04-14 Thu>
+** DONE QROC S2
+CLOSED: [2022-04-16 Sat 23:42] DEADLINE: <2022-04-16 Sat 23:59>
+* DONE Appeler pour demander carte médecin internat
+CLOSED: [2022-04-17 Sun 18:20] SCHEDULED: <2022-04-14 Thu>
 * Inbox
 ** TODO Organiser enterrement vie de garçon :joris:
 ** TODO Rattraper retard anki
@@ -71,21 +78,26 @@ CLOSED: [2022-04-10 Sun 17:20] SCHEDULED: <2022-04-10 Sun>
 :PROPERTIES:
 :test:
 :END:
-** TODO Utiliser chèque Chuullanka
-SCHEDULED: <2022-04-17 Sun>
-** TODO Déclaration de revenus
-SCHEDULED: <2022-04-17 Sun>
-** TODO Rendre le coran
-DEADLINE: <2022-04-14 Thu>
+** DONE Utiliser chèque Chuullanka
+CLOSED: [2022-04-17 Sun 18:20] SCHEDULED: <2022-04-17 Sun>
+** DONE Déclaration de revenus
+a priori, rien à déclarer en plus value selon Aurélien.
+Va demander au notaire. Mot mis sur la déclaration.
+SCHEDULED: <2022-04-24 Sun>
+** DONE Rendre le coran
+CLOSED: [2022-04-16 Sat 21:40] DEADLINE: <2022-04-14 Thu>
 ** TODO Signer contrat moto
 SCHEDULED: <2022-04-15 Fri>
-** TODO Certificat trail
+** DONE Certificat trail
 SCHEDULED: <2022-04-21 Thu>
 
 ** WAIT Commander nouvelle CB :banque:
 SCHEDULED: <2022-04-10 Sun>
 Demande faite <2022-04-03 Sun>
-
+** TODO 200 cartes Anki
+DEADLINE: <2022-04-17 Sun 23:59>
+** TODO Notes <2022-04-17 Sun>
+SCHEDULED: <2022-04-17 Sun>
 * Japonais :japonais:
 ** Miura
 :PROPERTIES:
@@ -101,16 +113,12 @@ Demande faite <2022-04-03 Sun>
 :PROPERTIES:
 :CATEGORY: aya
 :END:
-*** DONE Notes leçon <2022-03-20 Sun>
-SCHEDULED: <2022-04-03 Sun>
-*** DONE Notes leçon <2022-03-27 Sun>
-SCHEDULED: <2022-04-03 Sun>
-*** DONE Notes leçon <2022-04-03 Sun>
-SCHEDULED: <2022-04-03 Sun>
 *** TODO Lire dialogue fin leçon 10
 SCHEDULED: <2022-04-03 Sun>
-*** TODO Notes <2022-04-10 Sun>
-SCHEDULED: <2022-04-10 Sun>
+*** DONE Notes <2022-04-10 Sun>
+CLOSED: [2022-04-17 Sun 11:14] SCHEDULED: <2022-04-10 Sun>
+*** DONE Préparer <2022-04-17 Sun>
+CLOSED: [2022-04-17 Sun 17:18] DEADLINE: <2022-04-17 Sun 12:30>
 * Ledger
 :PROPERTIES:
 :CATEGORY: compta
@@ -201,5 +209,5 @@ CLOSED: [2022-04-10 Sun 17:41] SCHEDULED: <2022-04-10 Sun>
 ** TODO opengraph v 0.6.3
 SCHEDULED: <2022-04-12 Tue>
 Ok 3.10->3.7
-** TODO Kitty 0.25
-SCHEDULED: <2022-04-13 Wed>
+** DONE Kitty 0.25
+CLOSED: [2022-04-17 Sun 17:19] SCHEDULED: <2022-04-13 Wed>
