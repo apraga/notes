@@ -1,6 +1,5 @@
 * TODO Amour (2012)
 * TODO Au hasard Balthazard
-* DONE Burning (2018) - 4.5/5
 * TODO Contact
 * TODO Darkest Hour
 * TODO Dragon Ball Super: Broly
@@ -31,92 +30,94 @@
 * TODO Tokyo Story
 * TODO We, the Animals
 * TODO 101 Dalmatians (1996) - 3.5/5
-* TODO 12 Angry Men (1957) - 4.5/5
-* TODO 12 Years a Slave (2013) - 4/5
-* TODO 2001: A Space Odyssey - 4/5
-* TODO 47 Ronin (2013) - 3.5/5
-* TODO A Silent Voice (2016) - 5/5
-* TODO Alien: Covenant - 4/5
-* TODO The adventures of robin hood (1938) - 4/5
-* DONE Aliens (1986) * TODO.5/5
-* DONE All About Eve * TODO.5/5
-* DONE American Animals (2018) * TODO/5
-* DONE Arrival (2016) * TODO.5/5
-* DONE Babel (2006) * TODO.5/5
-* DONE Caché (2005) * TODO/5
-* DONE Captain America: Civil War (2016) * TODO.5/5
-* DONE City of God * TODO/5
-* DONE Dallas Buyers Club * TODO/5
-* DONE Don't Breathe (2016) * TODO/5
-* DONE Dragon Ball Z: Battle of Gods (2013) * TODO/5
-* DONE Dunkirk (2017) * TODO/5
-* DONE Enola Holmes (2020) * TODO.8/5
-* DONE First Blood (1982) * TODO/5
-* DONE First Man (2018) * TODO/5
-* DONE Green Room (2015) * TODO/5
-* DONE High and Low (1963) * TODO.5/5
-* DONE How to Train Your Dragon (2010) * TODO.5/5
-* DONE How to Train Your Dragon 2 (2014) * TODO/5
-* DONE How to Train Your Dragon: The Hidden World (2019) * TODO/5
-* DONE Iron Man (2008) * TODO.5/5
-* DONE Iron Man 2 (2010) * TODO/5
-* DONE Iron Man 3 (2013) * TODO/5
-* DONE Jodorowsky's Dune * TODO/5
-* DONE La La Land (2016) * TODO/5
-* DONE La pianiste (2001) * TODO/5
-* DONE Leave No Trace (2018) * TODO/5
-* DONE Les parapluies de Cherbourg * TODO/5
-* DONE Les parapluies de Cherhbourg : 4.5/5
-* DONE Logan (2017) * TODO/5
-* DONE Looper (2012) * TODO/5
-* DONE Manchester by the Sea (2016) * TODO/5
-* DONE Mission: Impossible * TODOallout (2018) - 4/5
-* DONE Mission: Impossible * TODOogue Nation (2015) - 4/5
-* DONE Moana (2016) * TODO/5
-* DONE Moonlight (2016) * TODO/5
-* DONE Mother (2009) * TODO/5
-* DONE Mustang (2015) * TODO/5
-* DONE Nice Guys (2000) * TODO/5
-* DONE Planet Earth: A Celebration (2020) * TODO.5/5
-* DONE Plein Soleil * TODO/5
-* DONE Portrait d'une jeune fille en feu * TODO.5/5
-* DONE Ran * TODO/5
-* DONE Rashomon * TODO.5/5
-* DONE Red Beard * TODO/5
-* DONE Remainder (2015) * TODO/5
-* DONE Riders of Justice * TODO/5
-* DONE Rise of the Planet of the Apes (2011) * TODO.5/5
-* DONE Roma (2018) * TODO.5/5
-* DONE Sanjuro * TODO/5
-* DONE Seven Samurai * TODO.5/5
-* DONE Shang-Chi and the Legend of the Ten Rings * TODO.5/5
-* DONE Snowpiercer * TODO/5
-* DONE Sorry to Bother You (2018) * TODO/5
-* DONE Soul (2020) * TODO/5
-* DONE Spiderman: Far from home * TODO.5/5
-* DONE Spirited Away (2001) * TODO.5/5
-* DONE Start Wars: The Last of the Skywalker * TODO.5/5
+* DONE 12 Angry Men (1957) - 4.5/5
+* DONE 12 Years a Slave (2013) - 4/5
+* DONE 2001: A Space Odyssey - 4/5
+* DONE 47 Ronin (2013) - 3.5/5
+* DONE A Silent Voice (2016) - 5/5
+* DONE Alien: Covenant - 4/5
+* DONE Aliens (1986) - 4.5/5
+* DONE All About Eve - 4.5/5
+* DONE American Animals (2018) - 4/5
+* DONE Arrival (2016) - 4.5/5
+* DONE Babel (2006) - 3.5/5
+* DONE Burning (2018) - 4.5/5
+* DONE Caché (2005) - 4/5
+* DONE Captain America: Civil War (2016) - 3.5/5
+* DONE City of God - 5/5
+* DONE Dallas Buyers Club - 4/5
+* DONE Don't Breathe (2016) - 4/5
+* DONE Dragon Ball Z: Battle of Gods (2013) - 3/5
+* DONE Dunkirk (2017) - 4/5
+* DONE Enola Holmes (2020) - 3.8/5
+* DONE First Blood (1982) - 4/5
+* DONE First Man (2018) - 4/5
+* DONE Green Room (2015) - 4/5
+* DONE High and Low (1963) - 4.5/5
+* DONE How to Train Your Dragon (2010) - 4.5/5
+* DONE How to Train Your Dragon 2 (2014) - 4/5
+* DONE How to Train Your Dragon: The Hidden World (2019) - 4/5
+* DONE Iron Man (2008) - 3.5/5
+* DONE Iron Man 2 (2010) - 3/5
+* DONE Iron Man 3 (2013) - 3/5
+* DONE Jodorowsky's Dune - 4/5
+* DONE La La Land (2016) - 4/5
+* DONE La pianiste (2001) - 4/5
+* DONE Leave No Trace (2018) - 4/5
+* DONE Les parapluies de Cherbourg - 4/5
+* DONE Logan (2017) - 4/5
+* DONE Looper (2012) - 4/5
+* DONE Manchester by the Sea (2016) - 4/5
+* DONE Mission: Impossible - Fallout (2018) - 4/5
+* DONE Mission: Impossible - Rogue Nation (2015) - 4/5
+* DONE Moana (2016) - 4/5
+* DONE Moonlight (2016) - 4/5
+* DONE Mother (2009) - 4/5
+* DONE Mustang (2015) - 4/5
+* DONE Nice Guys (2000) - 4/5
+* DONE No time to die (2021)
+:PROPERTIES:
+:ratings:  (
+:END:
+* DONE Planet Earth: A Celebration (2020) - 4.5/5
+* DONE Plein Soleil - 4/5
+* DONE Portrait d'une jeune fille en feu - 4.5/5
+* DONE Ran - 4/5
+* DONE Rashomon - 4.5/5
+* DONE Red Beard - 4/5
+* DONE Remainder (2015) - 4/5
+* DONE Riders of Justice - 4/5
+* DONE Rise of the Planet of the Apes (2011) - 3.5/5
+* DONE Roma (2018) - 4.5/5
+* DONE Sanjuro - 4/5
+* DONE Seven Samurai - 4.5/5
+* DONE Shang-Chi and the Legend of the Ten Rings - 3.5/5
+* DONE Snowpiercer - 4/5
+* DONE Sorry to Bother You (2018) - 4/5
+* DONE Soul (2020) - 4/5
+* DONE Spiderman: Far from home - 3.5/5
+* DONE Spirited Away (2001) - 4.5/5
+* DONE Start Wars: The Last of the Skywalker - 3.5/5
 * DONE Still Walking (2008) 4/5
-* DONE The Death of Stalin (2017) * TODO.5/5
-* DONE The Draughtman's contact * TODO/5
-* DONE The Draughtsman's Contract * TODO/5
-* DONE The Endless Trench (2019) * TODO/5
-* DONE The GateKeepers * TODO/5
-* DONE The Handmaiden (2016) * TODO/5
-* DONE The Hidden Fortress * TODO/5
-* DONE The Hunt (2012) * TODO/5
-* DONE The Irishman * TODO/5
-* DONE The Irishman * TODO/5
-* DONE The Lego Batman Movie * TODO/5
-* DONE The Lighthouse (2019) * TODO/5
-* DONE The Shape of Water (2017) * TODO.5/5
-* DONE The Shining (1980) * TODO/5
-* DONE The Throne of Blood * TODO/5
-* DONE The Witch (2015) * TODO.5/5
-* DONE Three Billboards Outside Ebbing, Missouri (2017) * TODO/5
-* DONE Uncut Gems (2019) * TODO/5
-* DONE Us * TODO.5/5
-* DONE Widows (2018) * TODO/5
-* DONE Wonder Woman (2017) * TODO/5
-* DONE Yojimbo * TODO/5
-* DONE Zero Dark Thirty (2012) * TODO/5
+* DONE The adventures of robin hood (1938) - 4/5
+* DONE The Death of Stalin (2017) - 4.5/5
+* DONE The Draughtman's contact - 4/5
+* DONE The Endless Trench (2019) - 4/5
+* DONE The GateKeepers - 4/5
+* DONE The Handmaiden (2016) - 4/5
+* DONE The Hidden Fortress - 4/5
+* DONE The Hunt (2012) - 4/5
+* DONE The Irishman - 4/5
+* DONE The Lego Batman Movie - 4/5
+* DONE The Lighthouse (2019) - 4/5
+* DONE The Shape of Water (2017) - 4.5/5
+* DONE The Shining (1980) - 4/5
+* DONE The Throne of Blood - 4/5
+* DONE The Witch (2015) - 4.5/5
+* DONE Three Billboards Outside Ebbing, Missouri (2017) - 4/5
+* DONE Uncut Gems (2019) - 4/5
+* DONE Us - 3.5/5
+* DONE Widows (2018) - 4/5
+* DONE Wonder Woman (2017) - 4/5
+* DONE Yojimbo - 4/5
+* DONE Zero Dark Thirty (2012) - 4/5
