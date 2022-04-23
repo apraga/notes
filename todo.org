@@ -1,12 +1,15 @@
 * Banque :banque:
-** WAIT Commander nouvelle CB :banque:
+** TODO Commander nouvelle CB :banque:
 Demande faite <2022-04-03 Sun>
 Reçue mais pas de chiffre en relief
 Mail envoyé pour savoir si on peut louer avec mais a priori non (carte de débit !)
-Voir
-** WAIT Compte et CB société générale :banque:
-SCHEDULED: <2022-04-16 Sat>
-Documents `a signer mais `
+Renvoyer un mail car n’ont pas compris la question
+** TODO Compte et CB société générale :banque:
+Attente
+*** DONE Souscription
+CLOSED: [2022-04-23 Sat 17:13]
+*** TODO Carte bancaire
+*** TODO Transfert compte bancaire ?
 * DES :anki:
 :PROPERTIES:
 :CATEGORY: DES
@@ -65,41 +68,18 @@ CLOSED: [2022-04-18 Mon 21:47]
 ** TODO QROC 3
 ** DONE QROC S2
 CLOSED: [2022-04-16 Sat 23:42] DEADLINE: <2022-04-16 Sat 23:59>
-* DONE Appeler pour demander carte médecin internat
-CLOSED: [2022-04-17 Sun 18:20] SCHEDULED: <2022-04-14 Thu>
 * Inbox
 ** TODO Organiser enterrement vie de garçon :joris:
-** TODO Rattraper retard anki
+*** DONE Inviter + programme
+*** DONE Confirmer date avec Joris
+CLOSED: [2022-04-23 Sat 17:14]
+*** TODO Réserver
 ** TODO Appeler pour demander carte médecin internat
 DEADLINE: <2022-03-30 Wed>
-** DONE Utiliser chèque énergie
-CLOSED: [2022-04-10 Sun 17:20] SCHEDULED: <2022-04-10 Sun>
-** TODO
-:PROPERTIES:
-:test:
-:END:
-** DONE Utiliser chèque Chuullanka
-CLOSED: [2022-04-17 Sun 18:20] SCHEDULED: <2022-04-17 Sun>
-** DONE Déclaration de revenus
-a priori, rien à déclarer en plus value selon Aurélien.
-Va demander au notaire. Mot mis sur la déclaration.
-SCHEDULED: <2022-04-24 Sun>
-** DONE Rendre le coran
-CLOSED: [2022-04-16 Sat 21:40] DEADLINE: <2022-04-14 Thu>
-** TODO Signer contrat moto
-SCHEDULED: <2022-04-15 Fri>
-** DONE Certificat trail
-SCHEDULED: <2022-04-21 Thu>
-
-** WAIT Commander nouvelle CB :banque:
-SCHEDULED: <2022-04-10 Sun>
-Demande faite <2022-04-03 Sun>
-** TODO 200 cartes Anki
-DEADLINE: <2022-04-17 Sun 23:59>
 ** TODO Notes <2022-04-17 Sun>
 SCHEDULED: <2022-04-17 Sun>
 * Japonais :japonais:
-** Miura
+** Miura :miura:
 *** TODO Ficher :anki:
 :PROPERTIES:
 :CATEGORY: miura
@@ -133,6 +113,7 @@ CLOSED: [2022-04-09 Sat 14:25]
 Pas de réparation possible avan fin avril
 *** TODO Appel garage Yamaha Besançon pour commencer réparation
 SCHEDULED: <2022-04-29 Fri>
+** DONE Signer contrat moto
 * Notes biologie
 ** Biologie cellulaire Dunod
 *** TODO chapitres déjà fait :anki:
@@ -211,3 +192,13 @@ SCHEDULED: <2022-04-12 Tue>
 Ok 3.10->3.7
 ** DONE Kitty 0.25
 CLOSED: [2022-04-17 Sun 17:19] SCHEDULED: <2022-04-13 Wed>
+
+* Maison
+** DONE Utiliser chèque énergie
+CLOSED: [2022-04-10 Sun 17:20] SCHEDULED: <2022-04-10 Sun>
+
+* Impôts
+** DONE Déclaration de revenus
+a priori, rien à déclarer en plus value selon Aurélien.
+Va demander au notaire. Mot mis sur la déclaration.
+SCHEDULED: <2022-04-24 Sun>
