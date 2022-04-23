@@ -1,3 +1,8 @@
+* Why publish another case ?
+- few males published
+- most published cases are severe
+- comfort the idea that males are more affected
+- variant not yet reported ??? TODO
 * NBIA
 Neurogeneration with brain iron accumulation = progressive
 extrapyramidal with accumulation of iron in the brain on MRI, usually
@@ -82,6 +87,9 @@ syndrome)
   - impaired ferritinophagy
   - mitochrondrial iron accumulation + altered mitochrondrial metabolism (possible link to neuronal cell death, neurodegenration)
 
+* Other
+- Overal with Rett ?
+- No biomarker ?
 * TODO References
 ** DONE [#A] review 160 cases, 109 variants @saffari021
 87 papers
@@ -93,6 +101,9 @@ Cons: Mean age at last follow-up = 13 with survival 100% in the boys
 ** TODO [#A] @adang2020 review 106 cases 17 new cases (males)  !!
 SCHEDULED: <2022-04-18 Mon>
   Half do not have iron deposit in the brain
+  Male are more severe
+  Most have epilepsy (70 of 81 females and 14 of 15 males)
+  Limit: delay to diagnosis of 16 years
 ** TODO [#A] [cite:@Cong_2021] review 140 variants + 15 unclassified
 SCHEDULED: <2022-04-18 Mon>
 of WDR45 : 93 patients, 84 women, 9 males with sch
@@ -112,6 +123,7 @@ in impaired lipid metabolism, mitochondrial disorder, and unbalanced autophagy f
 ** TODO physio @ji2021
 ** 1 mutation WDR45 for 69 patients NBIA 6 @tscentschier2015
 ** 1 case report 1 girl @@long2015
+Mild
 ** 7 female patients @carvill2017
 6 truncating 1 missense
 ** 5 young females @chen2019
@@ -139,6 +151,7 @@ A trio was needed
 ** [cite:@morisada2016] 1 woman : **21 years = MRI with atrophy only**, 39 years = MIR with classic anomalies !
 ** [cite:@Sato2020]  1 case, classic BPAN but with lateral parkinsonism
 ** [cite:@Tang2020] 5 unrelated children with de novo variant **normal MRI**
+
   17 patients (13 females 4 males)
 ** [cite:@Hattingen_2017]  1 female
 ** ?? 1 female, epilepsy  : c.830＋2dup

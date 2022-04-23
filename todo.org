@@ -78,6 +78,13 @@ CLOSED: [2022-04-23 Sat 17:14]
 DEADLINE: <2022-03-30 Wed>
 ** TODO Notes <2022-04-17 Sun>
 SCHEDULED: <2022-04-17 Sun>
+** TODO Mariage Florian :florian:
+*** TODO Cadeau
+*** DONE Billet de trains
+*** TODO Hébergement
+*** TODO Location voiture
+*** DONE Voir avec Miva pour hébergement Paris
+** TODO
 * Japonais :japonais:
 ** Miura :miura:
 *** Anki :anki:

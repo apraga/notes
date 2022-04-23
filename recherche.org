@@ -46,11 +46,21 @@ SCHEDULED: <2022-04-13 Wed>
 **** TODO Lister variants et clinique
 ***** DONE Déjà fait par saffari2021
 CLOSED: [2022-04-18 Mon 21:56]
-***** Regarder 2 autres review
-Pourquoi plus de variants chez Cong2021
+***** TODO Regarder 2 autres review Cong2021 et Adang2020
+Pourquoi plus de variants chez Cong2021 ?
+**** TODO Vérifier l’intérêt de l’article
+***** WAIT Variant déjà rapporté ?
+Mentionné dans Saffari2021 mais je pense que c’est une typo
+On ne le retrouve pas dans
+Mail envoyé en tout cas
+***** Phénotype : garçon moins atteint que les filles ?
+Bien lire les 3 revues
+*** IRM
+**** DONE Récupérer compte-rendu IRM mère
+**** Relecture par le Dr Pomero
 *** Fonctionnel
-**** TODO Mail Patricia Maurin
+**** DONE Mail Patricia Maurin
 Rajouter âge du patient et IRM mère
-**** TODO Mail Binnaz Yalcin
+**** TODO Réunion avec Patricia Maurin
+**** KILL Mail Binnaz Yalcin
 Regarder sa biblio avant !
-*** DONE Biblio ophn1
