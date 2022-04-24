@@ -468,3 +468,7 @@ Xよう: "volitionel" = "faisons X"
   飲むー＞飲もう
 Xようと思います: je pense faire X
 ex:
+* <2022-04-24 Sun> - 17. Leçon 11
+** Grammaire
+ことになりました : il a été décidé pour moi (c'est un évènement unique). Ex: il a été décidé que je déménage
+ことになっている : il est convenu = c'est une habitude ! Ex: il est convenu de ne pas fumer ici
