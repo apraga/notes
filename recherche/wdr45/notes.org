@@ -1,8 +1,11 @@
 * Why publish another case ?
 - few males published
+- few inherited cases
 - most published cases are severe
 - comfort the idea that males are more affected
-- variant not yet reported ??? TODO
+- same aminoacid but different missense
+- variant not yet reported no but there was a confusion [fn:1]
+
 * NBIA
 Neurogeneration with brain iron accumulation = progressive
 extrapyramidal with accumulation of iron in the brain on MRI, usually
@@ -14,6 +17,7 @@ genes: /PKAN2/,/PLA2G6/, /C19orf12/, /WDR45/.
 - Clincal and MRI may orient to a specific gene (Table 19.2 in [cite:@haylick2018]).
 - PKAN is half of the case and its estimated prevalence is 1/1 000 000 [cite:@gregory2002]
 BPAN = X-linked, WDR45 and distinc phenotype. No X-linked phenotype !
+- non-progresive until adulthood, then parkinsonism, dystonia, dementia
 - suspicion : 7 patients in [cite:@gregory2009]
 - confirmed + molecular basis in [cite:@haack2012] [cite:@hayflick2013]
 * Beta-propeller protein associated neurodegeneration
@@ -44,7 +48,7 @@ BPAN = X-linked, WDR45 and distinc phenotype. No X-linked phenotype !
 
   - Subset : disordered sleep, ocular defects and Rett-like hand stereotypies (Table 1).
 *** MRI
-- all = increased iron deposit in substantia nigra and globus pallidus (reports not seens)
+d iron deposit in substantia nigra and globus pallidus (reports not seens)
 - 13 MRI from 11 patients seen
   - T2 hypointense : substantia nigra and globus pallidus
   - all 13 : substantia nigra : more hypointense
@@ -61,17 +65,21 @@ BPAN = X-linked, WDR45 and distinc phenotype. No X-linked phenotype !
   - severe neuronal loss
   - putamen, thalamus, granular cell layer also affected
   -  tau-positive neurofibrillary tangles in hippocampus, neocortex, putamen, hypothalamus
-** X-linked ? [cite:@haack2012]
-- On chromosome X but no X-linked pattern : male and females are affected equally
-Haack2012 hypothesis:
-  - somatic mosaicism in male (germline likely not viable)
+** X-linked ?
+- Most are female, de novo
+- [cite:@haack2012] hypothesis: somatic mosaicism in male, germline likely not viable in male
   - female somatic + germline
-  - severity based on when and where the mutation occurs in embryogenesis (like in Rett's
-syndrome)
+  - severity based on when and where the mutation occurs in embryogenesis (like in Rett's syndrome)
   - in favor :
     - 2 DNA traces of differents peaks on 1 male (2 amplicons on exon 2)
     - skewed X inactivation
       - in favor : skewed in 10/12 women with WDR45 mutation
+- [cite:@zarate_lessons_2015] germline homozygous viable in male but more severe (twin study)
+brother hemizygos symptomatic, sister htz symptomatic, mother somatic mosaicim asympt   o
+- [cite:@akcakaya_novel_2019] mosaic in male (blood)
+- [cite:@adang_phenotypic_2020]: more severe, earlier : 19 males (review 106 cases plus 17 new)
+- [cite:@cong_wdr45_2021] majority of germline lethal is male, somatic or germline possible with more sever phenotype
+- [cite:@saffari_quantitative_2021] : review, male more severe and earlier
 ** Mutations :
 - missense, truncation
 - 23 subjects in [cite:@hayflick2013]
@@ -86,6 +94,11 @@ syndrome)
   - possible link to increased iron uptake in neurons
   - impaired ferritinophagy
   - mitochrondrial iron accumulation + altered mitochrondrial metabolism (possible link to neuronal cell death, neurodegenration)
+** Treatment
+** Biomarker
+- 1 case reports with elevated ENO2/NSE[cite:@takano_elevation_2015]
+- Soluble transferrin receptor/log ferritin ratio [cite:@belohlavkova_clinical_2020] 5/6 patients
+* Other pathologies associated with WDR45
 
 * Other
 - Overal with Rett ?
@@ -93,13 +106,14 @@ syndrome)
 * TODO References
 ** DONE [#A] review 160 cases, 109 variants @saffari021
 87 papers
+Males seems more affected
 Seizure is a core feature of BPAN, contrary to NBIA but not all patients have them : 80% have seizures ( 84% of males.)
 Starts a bit earlier and diagnosed earlier in the male -> more severe ?
 Cerebral : only 62% have iron deposit
 Pros: huge review, HPO normalization
 Cons: Mean age at last follow-up = 13 with survival 100% in the boys
-** TODO [#A] @adang2020 review 106 cases 17 new cases (males)  !!
-SCHEDULED: <2022-04-18 Mon>
+** DONE [#A] @adang2020 review 106 cases 17 new cases (males)  !!
+CLOSED: [2022-04-24 Sun 16:23] SCHEDULED: <2022-04-18 Mon>
   Half do not have iron deposit in the brain
   Male are more severe
   Most have epilepsy (70 of 81 females and 14 of 15 males)
@@ -190,3 +204,7 @@ A trio was needed
 ** DONE Gregory2009
 ** DONE Gregory2002
   7 patients: new phenotype
+
+* Footnotes
+
+[fn:1]  c.697C>T (R233*) is sometime reported as c.700C>T when the non-canonical transcript is use

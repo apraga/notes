@@ -85,6 +85,9 @@ SCHEDULED: <2022-04-17 Sun>
 *** TODO Location voiture
 *** DONE Voir avec Miva pour hébergement Paris
 ** TODO
+** WAIT Échanger T-shirt Chullanka
+SCHEDULED: <2022-04-24 Sun>
+
 * Japonais :japonais:
 ** Miura :miura:
 *** Anki :anki:
@@ -103,6 +106,8 @@ SCHEDULED: <2022-04-03 Sun>
 CLOSED: [2022-04-17 Sun 11:14] SCHEDULED: <2022-04-10 Sun>
 *** DONE Préparer <2022-04-17 Sun>
 CLOSED: [2022-04-17 Sun 17:18] DEADLINE: <2022-04-17 Sun 12:30>
+*** TODO Notes <2022-04-24 Sun>
+SCHEDULED: <2022-04-24 Sun>
 * Ledger
 :PROPERTIES:
 :CATEGORY: compta

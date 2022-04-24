@@ -446,11 +446,14 @@ Potentialité: on peut utiliser できます ou la forme potentielle
     :CUSTOM_ID: forme-potentielle
     :END:
 
-- Verbes réguliers I : う->　える ex: 合う　ー＞会える 話す　ー＞話せる
-- Verbes réguliers II : る->　れる ex: 食べる　ー＞食べられる
+- Verbes réguliers I : う->　える
+  合う　ー＞会える
+  話す　ー＞話せる
+- Verbes réguliers II : る->　られる
+  食べる　ー＞食べられる
   見るー＞見られる
-- irréguliers 来るー＞来られる（こ） する　ー＞できる # 2022-03-20 - 15.
-  Leçon 10
+- irréguliers 来るー＞来られる（こ） する　ー＞できる
+* 2022-03-20 - 15. Leçon 10
 
 Discussion surtout
 * <2022-03-27 Sun>  - 15. Leçon 10
@@ -461,7 +464,7 @@ Discussion surtout
 Xよう: "volitionel" = "faisons X"
 - る de la forme du dictionnaire -> よう
   ex: 見るー＞見よう
-- pour les regular I : う->よう
+- pour les regular I : う-> おう
   飲むー＞飲もう
 Xようと思います: je pense faire X
 ex:
