@@ -1,0 +1,15 @@
+#+title: Outline
+
+* Introduction
+- NBIA
+- BPAN
+- Evolution
+- Why this paper ?
+
+* Case report
+** Family 1
+** Family 2
+* Discussion
+** Genotype-phenotype
+** Physiopathology
+** X-linked
