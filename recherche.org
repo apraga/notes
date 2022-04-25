@@ -57,10 +57,12 @@ Mail envoyé en tout cas
 Bien lire les 3 revues
 *** IRM
 **** DONE Récupérer compte-rendu IRM mère
-**** Relecture par le Dr Pomero
+**** TODO Relecture par le Dr Pomero
+**** WAIT Récupérer résultat Cyril et mère
+**** TODO Copie dossier
 *** Fonctionnel
 **** DONE Mail Patricia Maurin
 Rajouter âge du patient et IRM mère
-**** TODO Réunion avec Patricia Maurin
+**** WAIT Réunion avec Patricia Maurin
 **** KILL Mail Binnaz Yalcin
 Regarder sa biblio avant !
