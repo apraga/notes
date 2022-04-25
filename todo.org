@@ -87,8 +87,7 @@ SCHEDULED: <2022-04-17 Sun>
 ** TODO
 ** WAIT Échanger T-shirt Chullanka
 SCHEDULED: <2022-04-24 Sun>
-
-* Japonais :japonais:
+** Japonais :japonais:
 ** Miura :miura:
 *** Anki :anki:
 **** TODO Leçon 2
