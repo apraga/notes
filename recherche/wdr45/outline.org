@@ -1,11 +1,23 @@
 #+title: Outline
 
 * Introduction
-- NBIA
-- BPAN
-- Evolution
-- Why this paper ?
+- NBIA = iron accumulation
+  - Why is iron dangerous for the brain ?
+  - phenotype
+  - genes
 
+- BPAN = a subset, with a distinct phenotype (describe it)
+  - first reported by
+- Evolution
+
+- Why this paper ?
+* BPAN
+** NBIA
+** Phenotype
+** MRI
+* WDR45
+** Function
+** Other related diseases
 * Case report
 ** Family 1
 ** Family 2
