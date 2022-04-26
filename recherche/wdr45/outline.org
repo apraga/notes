@@ -1,10 +1,13 @@
 #+title: Outline
 
 * Introduction
-- NBIA = iron accumulation
-  - Why is iron dangerous for the brain ?
-  - phenotype
-  - genes
+- NBIA = group of pathologies sharing the degeneration of globus pallidus and substantia nigra  due to iron accumulation
+  - suspected on clinical feature + MRI
+  - phenotype and genetics are heretogenous
+  - unclear why only these structure are targeted (ether iron-riche structure are not affected)
+  - more than 85% have a genetic etiology
+  - classified by gene (so there may have overlapping phenotype)
+  - Review in [cite:@hayflick_neurodegeneration_2018]
 
 - BPAN = a subset, with a distinct phenotype (describe it)
   - first reported by
@@ -15,6 +18,7 @@
 ** NBIA
 ** Phenotype
 ** MRI
+** Therapy/management
 * WDR45
 ** Function
 ** Other related diseases
