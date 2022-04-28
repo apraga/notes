@@ -5,3 +5,10 @@
 - Gènes : SLC26A4
 - Traitement : sympto
 - Transmission : AR
+* Syndrome de West
+In about 35% of cases, the etiologic event is (still) unknown:
+others = structural, infectious, metabolic and immunologic defects and genetic abnormalities
+ may be prenatal, perinatal, and post-natal period.
+ ischemic encephalopathy is reported as one of the most common causes of ISs.
+ “United Kingdom Infantile Spasms Study” (UKISS) [14],  hypoxic-ischemic encephalopathy was reported in 10%, followed by chromosomal abnormalities, complex malformation syndromes and perinatal stroke (8%), tuberous sclerosis (7%), and periventricular leukomalacia or hemorrhage (respectively, in 5%)
+Source https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7655587/

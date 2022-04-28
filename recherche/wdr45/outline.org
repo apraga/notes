@@ -1,6 +1,6 @@
 #+title: Outline
 
-* Introduction
+* TODO Introduction
 - NBIA = group of pathologies sharing the degeneration of globus pallidus and substantia nigra  due to iron accumulation
   - suspected on clinical feature + MRI
   - phenotype and genetics are heretogenous
@@ -20,8 +20,19 @@
 ** MRI
 ** Therapy/management
 * WDR45
-** Function
+** Function (see [cite:@cong_wdr45_2021] )
+- protein structure : N-terminal beta-propeller (definition)
+- autophagy
+- endoplasmic reticulum homeostasis
+- mitochondrial alteration (morphology and function)
+- iron homeostasis
 ** Other related diseases
+- BPAN
+- Rett-like syndrome
+- intellectual disability
+- developmental and epileptic encephalopathy
+- early-onset epileptic encephalopathy (EOEE) and West syndrome,
+(the number of cases reported in given in [cite:@cong_wdr45_2021] )
 * Case report
 ** Family 1
 ** Family 2
