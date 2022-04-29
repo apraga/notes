@@ -9,30 +9,34 @@
   - classified by gene (so there may have overlapping phenotype)
   - Review in [cite:@hayflick_neurodegeneration_2018]
 
-- BPAN = a subset, with a distinct phenotype (describe it)
-  - first reported by
-- Evolution
+- BPAN = a subset
+  - first reported in 2012
+  - distinct phetotypes : non progressive until adulthood ->> parkinsonism, dystonia and dementia
 
 - Why this paper ?
 * BPAN
 ** NBIA
+- estimation 35-40% (Stige 2018)
 ** Phenotype
 ** MRI
 ** Therapy/management
+- no marker but 1 case report with ENO2[cite:@takano_elevation_2016]
 * WDR45
 ** Function (see [cite:@cong_wdr45_2021] )
 - protein structure : N-terminal beta-propeller (definition)
-- autophagy
+- autophagy (update by [cite:@ji_upbeta-propeller_2021] )
 - endoplasmic reticulum homeostasis
 - mitochondrial alteration (morphology and function)
 - iron homeostasis
 ** Other related diseases
-- BPAN
-- Rett-like syndrome
-- intellectual disability
-- developmental and epileptic encephalopathy
-- early-onset epileptic encephalopathy (EOEE) and West syndrome,
+- BPAN 66.4%
+- Rett-like syndrome 2.1%
+- intellectual disability 1.4%
+- developmental and epileptic encephalopathy 12.1%
+- early-onset epileptic encephalopathy (EOEE) 2.9%
+- West syndrome 2.1%
 (the number of cases reported in given in [cite:@cong_wdr45_2021] )
+
 * Case report
 ** Family 1
 ** Family 2
@@ -40,3 +44,26 @@
 ** Genotype-phenotype
 ** Physiopathology
 ** X-linked
+* Scripts :noexport:
+Stats sur Cong
+#+begin_src python :results output
+# Missing variants ?? We should have 123+17 but 2 are missing...
+import pandas as pd
+d = pd.read_csv("data_cong.csv")
+print(d.diagnosis.value_counts(normalize=True).mul(100))
+# print(d.disease.value_counts)
+#+end_src
+
+#+RESULTS:
+#+begin_example
+BPAN             62.589928
+DEE              12.230216
+unclassified     12.230216
+BPAN (RLS)        2.877698
+EOEE              2.877698
+RLS               2.158273
+West syndrome     2.158273
+BPAN (DEE)        1.438849
+ID                1.438849
+Name: diagnosis, dtype: float64
+#+end_example
