@@ -219,7 +219,6 @@ SCHEDULED: <2022-05-05 Thu +1d>
 :STYLE:    habit
 :END:
 - State "DONE"       from "TODO"       [2022-05-02 Mon 23:09]
-- State "DONE"       from "TODO"       [2022-05-02 Mon 23:07]
 
 * Sport
 ** TODO Revoir progression pour anneaux
