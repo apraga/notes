@@ -1,6 +1,6 @@
 #+title: Outline
 
-* TODO Introduction
+* Introduction
 - NBIA = group of pathologies sharing the degeneration of globus pallidus and substantia nigra  due to iron accumulation
   - suspected on clinical feature + MRI
   - phenotype and genetics are heretogenous
@@ -15,6 +15,9 @@
 
 - Why this paper ?
 * TODO BPAN
+  - expand the phenotype for male
+  - 2 families with the same variant
+* BPAN
 ** NBIA
 - estimation 35-40% (Stige 2018)
 ** Phenotype
