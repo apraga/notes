@@ -69,11 +69,11 @@ CLOSED: [2022-04-18 Mon 21:47]
 ** DONE QROC S2
 CLOSED: [2022-04-16 Sat 23:42] DEADLINE: <2022-04-16 Sat 23:59>
 * Inbox
-** TODO Organiser enterrement vie de garçon :joris:
+** DONE Organiser enterrement vie de garçon :joris:
 *** DONE Inviter + programme
 *** DONE Confirmer date avec Joris
 CLOSED: [2022-04-23 Sat 17:14]
-*** TODO Réserver
+*** DONE Réserver
 ** TODO Appeler pour demander carte médecin internat
 DEADLINE: <2022-03-30 Wed>
 ** TODO Notes <2022-04-17 Sun>
@@ -81,11 +81,11 @@ SCHEDULED: <2022-04-17 Sun>
 ** TODO Mariage Florian :florian:
 *** TODO Cadeau
 *** DONE Billet de trains
-*** TODO Hébergement
-*** TODO Location voiture
+*** DONE Hébergement
+*** DONE Location voiture
 *** DONE Voir avec Miva pour hébergement Paris
 ** TODO
-** WAIT Échanger T-shirt Chullanka
+** TODO Échanger T-shirt Chullanka
 SCHEDULED: <2022-04-24 Sun>
 ** Japonais :japonais:
 ** Miura :miura:
@@ -211,3 +211,16 @@ CLOSED: [2022-04-10 Sun 17:20] SCHEDULED: <2022-04-10 Sun>
 a priori, rien à déclarer en plus value selon Aurélien.
 Va demander au notaire. Mot mis sur la déclaration.
 SCHEDULED: <2022-04-24 Sun>
+
+* Langues
+** TODO Allemand
+SCHEDULED: <2022-05-05 Thu +1d>
+:PROPERTIES:
+:STYLE:    habit
+:END:
+- State "DONE"       from "TODO"       [2022-05-02 Mon 23:09]
+- State "DONE"       from "TODO"       [2022-05-02 Mon 23:07]
+
+* Sport
+** TODO Revoir progression pour anneaux
+SCHEDULED: <2022-05-03 Tue>

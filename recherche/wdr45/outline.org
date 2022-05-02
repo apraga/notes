@@ -14,10 +14,9 @@
   - distinct phetotypes : non progressive until adulthood ->> parkinsonism, dystonia and dementia
 
 - Why this paper ?
-* TODO BPAN
   - expand the phenotype for male
   - 2 families with the same variant
-* BPAN
+* TODO BPAN
 ** NBIA
 - estimation 35-40% (Stige 2018)
 ** Phenotype
@@ -67,13 +66,19 @@
 - NGS : hemizygous (NM_007075.3): c.698G>T ;p.(Arg233Leu)
 - de novo
 * TODO Discussion
-** Variants
-   - /in silico/ score : variant (varsome)
-** Genotype-phenotype
-[cite:@saffari_quantitative_2021]
-- no statistically significative result between male and female
-** Physiopathology
-** X-linked
+** Phenotype
+- mostly central nervous system. Chronology
+  1. developpemental delay/seizures
+  2. brain iron accumulation
+  3. Movement disorders
+  4. developemental regression
+- non-neurological:
+  - face
+  - urinary incontinence
+  - dysphagia
+  - precocious puberty
+- survival :[cite:@saffari_quantitative_2021]
+** Phenotype : male and female
 - initially though lethal for male
 - 3 recent reviews  [cite:@cong_wdr45_2021]
 - [cite:@adang_phenotypic_2020] with a 19 male cohort
@@ -81,6 +86,12 @@
   - more seizure in male but not earlier and more refractory epilepsy
   - earlier in male
 
+** Variants
+- decipher : score for the gene
+- /in silico/ score for our variant (varsome)
+- predited consequence : no significative difference
+- FIGURE: all reported variants
+** Physiopathology
 * Scripts :noexport:
 Stats sur Cong
 #+begin_src python :results output
