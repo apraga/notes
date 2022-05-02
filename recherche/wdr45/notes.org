@@ -150,14 +150,13 @@ mildl
 Panel négatif initialement -> diag sur qPCR
 ** wdr45 + plr3a @khalifa2015
 ** 1 patient female @wynn2017
-** 1 femane 38Y in Korea + iron @ryu2015
+** 1 female 38Y in Korea + iron @ryu2015
 ** 2 twins female @araujo2017
 ** 1 female 6 years @christoforou2020
 ** diag at 6 years-old, girl, functional analysis @willoughby2017
 A trio was needed
-** male @@spiegel2016
+** male @spiegel2016
 ** 1 male, severe @redon201
-** WDR45 knockout mice -> model for BPAN
 ** [cite:@Noda_2021] brain study in knockout mice
 ** [cite:@Khoury_2019] 1 case of epileptic encephalopathy
 ** [cite:@Ak_akaya_2019] 1 patient BPAN mosaicim c.873C>G; p.(Tyr291*)

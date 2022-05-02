@@ -14,7 +14,7 @@
   - distinct phetotypes : non progressive until adulthood ->> parkinsonism, dystonia and dementia
 
 - Why this paper ?
-* BPAN
+* TODO BPAN
 ** NBIA
 - estimation 35-40% (Stige 2018)
 ** Phenotype
@@ -37,13 +37,47 @@
 - West syndrome 2.1%
 (the number of cases reported in given in [cite:@cong_wdr45_2021] )
 
-* Case report
+* TODO Case report
 ** Family 1
+- pedigree + familial history
+*** Patient 1
+  - pregnancy, birth N
+  - neonatal: poor suckling
+  - langage lay + fine motor difficulties
+  - overlapping of left toes, mild hypertonia of lower limbs, mild dysmorphic features with bilateral epicanthus and hooded eyelids.
+  - no epilepsy
+  - metabolic, ophtalmologic, hearing N
+  - MRI : bilateral and symmetric hypersignal of dentate nucleus in T2, without iron deposition
+*** Patient 2 = sister
+  - pregnancy, birth N
+  - language delay, learning difficulties
+  - round face, thick hair, short forehead and a right preaurical fistula.
+  - hypermetropia and astigmatism
+*** Genetics testing
+- CGH,FMR1, karyotype normal
+- NGS : NM ???? c.697C> T p.(Arg233Cys)
+- de novo in the mother
+- hemizygous in patient 1, heterozygus in the sistier + mother
 ** Family 2
-* Discussion
+*** Genetics testing
+- CGH,FMR1, karyotype normal
+- NGS : hemizygous (NM_007075.3): c.698G>T ;p.(Arg233Leu)
+- de novo
+* TODO Discussion
+** Variants
+   - /in silico/ score : variant (varsome)
 ** Genotype-phenotype
+[cite:@saffari_quantitative_2021]
+- no statistically significative result between male and female
 ** Physiopathology
 ** X-linked
+- initially though lethal for male
+- 3 recent reviews  [cite:@cong_wdr45_2021]
+- [cite:@adang_phenotypic_2020] with a 19 male cohort
+  - more profound development delay
+  - more seizure in male but not earlier and more refractory epilepsy
+  - earlier in male
+
 * Scripts :noexport:
 Stats sur Cong
 #+begin_src python :results output
