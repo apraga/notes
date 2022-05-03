@@ -1,24 +1,24 @@
 #+title: Outline
+#+options: toc:nil
+#+bibliography: biblio.bib
 
 * Introduction
 - NBIA = group of pathologies sharing the degeneration of globus pallidus and substantia nigra  due to iron accumulation
   - suspected on clinical feature + MRI
   - phenotype and genetics are heretogenous
-  - unclear why only these structure are targeted (ether iron-riche structure are not affected)
   - more than 85% have a genetic etiology
   - classified by gene (so there may have overlapping phenotype)
-  - Review in [cite:@hayflick_neurodegeneration_2018]
-
 - BPAN = a subset
   - first reported in 2012
   - distinct phetotypes : non progressive until adulthood ->> parkinsonism, dystonia and dementia
-
 - Why this paper ?
   - expand the phenotype for male
   - 2 families with the same variant
 * TODO BPAN
 ** NBIA
 - estimation 35-40% (Stige 2018)
+- Review in [cite:@hayflick_neurodegeneration_2018]
+- unclear why only globus pallidus and substantia nigra are targeted
 ** Phenotype
 ** MRI
 ** Therapy/management
@@ -39,9 +39,9 @@
 - West syndrome 2.1%
 (the number of cases reported in given in [cite:@cong_wdr45_2021] )
 
-* TODO Case report
+* Case report
 ** Family 1
-- pedigree + familial history
+- familial history: renal agenesis for the paternal grand-father, epilepsy in the maternal cousin of the mother
 *** Patient 1
   - pregnancy, birth N
   - neonatal: poor suckling
@@ -57,7 +57,7 @@
   - hypermetropia and astigmatism
 *** Genetics testing
 - CGH,FMR1, karyotype normal
-- NGS : NM ???? c.697C> T p.(Arg233Cys)
+- NGS : NM_007075.3 c.697C> T p.(Arg233Cys)
 - de novo in the mother
 - hemizygous in patient 1, heterozygus in the sistier + mother
 ** Family 2
@@ -85,13 +85,14 @@
   - more profound development delay
   - more seizure in male but not earlier and more refractory epilepsy
   - earlier in male
+- biphasic evolution
 
 ** Variants
 - decipher : score for the gene
 - /in silico/ score for our variant (varsome)
 - predited consequence : no significative difference
 - FIGURE: all reported variants
-** Physiopathology
+* Conclusion
 * Scripts :noexport:
 Stats sur Cong
 #+begin_src python :results output
