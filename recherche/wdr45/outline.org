@@ -1,6 +1,5 @@
-#+title: Outline
-#+options: toc:nil
-#+author: nil
+#+title: WDR45 variant with a milder phenotype
+#+options: toc:nil author:nil
 #+bibliography: biblio.bib
 
 * Introduction
@@ -201,3 +200,7 @@ with open("papers_pmid.txt") as f:
 #+end_src
 
 #+RESULTS:
+#+begin_src sh
+cat papers_doi.txt | xargs -I {} PyPaperBot --dwn-dir . --doi "{}"
+#+end_src
+
