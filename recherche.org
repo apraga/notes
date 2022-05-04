@@ -60,6 +60,9 @@ Non, NM différente (non canonique)
 Cf mail de Saffari
 ***** Phénotype : garçon moins atteint que les filles ?
 Bien lire les 3 revues
+*** TODO Plan
+DEADLINE: <2022-05-04 mer. 19:00>
+*** M
 *** IRM
 **** DONE Récupérer compte-rendu IRM mère
 **** TODO Relecture par le Dr Pomero

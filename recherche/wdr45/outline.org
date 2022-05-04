@@ -1,5 +1,6 @@
 #+title: Outline
 #+options: toc:nil
+#+author: nil
 #+bibliography: biblio.bib
 
 * Introduction
@@ -14,13 +15,33 @@
 - Why this paper ?
   - expand the phenotype for male
   - 2 families with the same variant
-* TODO BPAN
+* BPAN
 ** NBIA
 - estimation 35-40% (Stige 2018)
 - Review in [cite:@hayflick_neurodegeneration_2018]
 - unclear why only globus pallidus and substantia nigra are targeted
-** Phenotype
+- clinics and MRI are heterogenous : table 19.2 in[cite:@hayflick_neurodegeneration_2018]
+** Early Phenotype
+- described by [cite:@hayflick_beta-propeller_2013-1] : 23 patients
+- initial diagnosis may be : atypical rett or epilepctic encephalopathy
+- all = global developemental delay. Most had some gains over time.
+  - IQ = 30-50 with expressive language severely limited
+- most = broad/ataxic gait
+- 13/23 epilepsy + treatement, with various types
+- adolescence/early adulthood : dystonia, parkinsonism, cognitive decline (mean 25.3 years)
+  - parkinsonism without tremor
+  - L-dopa is effective but only for a short time
+- additional features : disordered sleep (6/23), ocular defects (7/23), atypical Rett-like syndrome (7/23), bowel and bladder incontinence (most)
+** Transmission
+- most = de novo [cite:@hayflick_neurodegeneration_2018]
+- some familial cases recorded
+- male : not rare
 ** MRI
+- may be normal in early childhood
+- hypointensen signal in substantia nigra, globus pallidus
+- FIGURE: hypoT2, halo T1 from [cite:@hayflick_beta-propeller_2013-1]
+- pathognomonic : hyperintense halo in T1 in substantia nigra and cerebral peduncles
+
 ** Therapy/management
 - no marker but 1 case report with ENO2[cite:@takano_elevation_2016]
 * WDR45
@@ -66,12 +87,14 @@
 - NGS : hemizygous (NM_007075.3): c.698G>T ;p.(Arg233Leu)
 - de novo
 * TODO Discussion
+- 3 recent reviews  [cite:@cong_wdr45_2021], [cite:@saffari_quantitative_2021], [cite:@adang_phenotypic_2020] with a 19 male cohort
 ** Phenotype
-- mostly central nervous system. Chronology
-  1. developpemental delay/seizures
-  2. brain iron accumulation
-  3. Movement disorders
-  4. developemental regression
+- confirm the mostly neurological phenotype : developmental delay, abnormal cNS morpho, seizures
+  - DI severe-profound, usually with speech disorder on the expressive or no speech
+- Chronology
+  1. developpemental delay/seizures in the first two years of life
+  2. brain iron accumulation much later (median age = 11)
+  3. Movement disorders, developemental regression, mental deterioration
 - non-neurological:
   - face
   - urinary incontinence
@@ -79,19 +102,28 @@
   - precocious puberty
 - survival :[cite:@saffari_quantitative_2021]
 ** Phenotype : male and female
-- initially though lethal for male
-- 3 recent reviews  [cite:@cong_wdr45_2021]
 - [cite:@adang_phenotypic_2020] with a 19 male cohort
   - more profound development delay
   - more seizure in male but not earlier and more refractory epilepsy
   - earlier in male
-- biphasic evolution
-
+- biphasic evolution for femail
+- [cite:@saffari_quantitative_2021] seizures are more severe for male :
+  - more motor seizure , especially infantile spasmes
+  - more childhood onset epilpectic encphalopathies
+  - more progressive encephalopathy
+- but :
+  - seizure not more frequent in male
+  - stereotypies only in female
+  - movement disorder more pronounced in female
 ** Variants
 - decipher : score for the gene
 - /in silico/ score for our variant (varsome)
 - predited consequence : no significative difference
 - FIGURE: all reported variants
+** Our patients
+- delay
+- no seizures but not all reported case have them
+- male are too young for movement disorder onset or regression
 * Conclusion
 * Scripts :noexport:
 Stats sur Cong
