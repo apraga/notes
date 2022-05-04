@@ -5,3 +5,68 @@
 - Gènes : SLC26A4
 - Traitement : sympto
 - Transmission : AR
+
+* TODO Leigh et NARP
+  https://www.ncbi.nlm.nih.gov/books/NBK1173/
+* Incontentia pigmenti
+- génodermatose affectant la peau, les dents, les yeux et le système nerveux central
+- «incontinence pigmentaire» = dépôts dermique de mélanine
+- atteinte dermatologiuqe typique
+- diagnostic clinique dans la majorité
+- létale chez foetus masculin en général
+
+** Clinique : stades
+1. vésiculo-pustuleux, acral et linéaire = première sesmaines de vie -> 18 mois
+2. Verruqeux : premiers mois
+3. Hyperpigmentation
+4. Hypopigmentation, alopécie
+** Pathophysiology (2002)/histologie
+1. Inflammation, infiltration éosinophile -> bulles spongiotique éosinophiles
+2. -> épiderme acanthosiuqe, hyperkératosique
+3. ? -> dépôts dermiques de mélanine
+4. cicatrisation dermique post-inflammatoire
+
+** Clinique : phanère, oculaire
+Phanères :
+- alopécie, cheveux fins, épars, parfois laineuse sourcis fins, épairs.
+- ongles striés
+Oculaire
+- vasculaire rétinine périphérique  (**risque de cécité**) décollement possible
+- vasculaire maculaire
+- cornea verticillata (évocatrice)
+- hyper/hypopigmentation de l’epithelium pigmentaire rétinien(évocatrice)
+
+** Clinique : dentaire
+Critère majeur
+- anomalise de la couronne (70%)
+- agénésies multiples (90% en denture permanente)
+- fente labio-palatineo
+  img santamaria2016
+** Clinique : SNC
+Néonatal : **convulsion** avec complications
+- risque épilepsie partielle
+- cognitif
+- déficit moteur (hémi/para/tétraparésie) 15-30%
+- parfois **létales**
+
+Cognitif : variable : DI sévère -> troubles des apprentissages
+** Génétique : pronostic
+Atteinte neuro, ophtalmo précoce = le conditiennent.
+Sinon, développement physique et cognitif normal dans la majorité
+** Génétique : diagnostic
+
+IMG
+https://onlinelibrary.wiley.com/doi/full/10.1111/ddg.14638
+
+- mutation familiale 10-25%, > 50% de novo
+- gène  IKBG (Inhibitor Of Nuclear Factor Kappa B Kinase Subunit Gamma)
+- hommes : plusieurs cas décrit
+  - X supplémentaire
+  - mosaïcisme somatique
+  - mutation particulière IKBKG
+** IKBG
+
+** Source
+- PNDS
+- Genereviews
+- Santa-Maria FD, Mariath LM, Poziomczyk CS, et al. Dental anomalies in 14 patients with IP: clinical and radiological analysis and review. Clin Oral Investig. 2017;21(5):1845-1852. doi:10.1007/s00784-016-1977-y
