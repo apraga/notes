@@ -1,0 +1,125 @@
+		Sex	Method of molecular diagnosis	DNA change	Amino Acid change	Source
+1		Male	Whole Exome Sequencing	c.830+1G>A	IVS10+1G>A in intron 10
+2	*	Female	Whole Genome Sequencing	c.1020_1023delTGAT	p.Asp341Glufsext69
+3		Female	Whole Genome Sequencing	c.700C>T	p.Arg234Ter
+4	*	Female	Targeted	c.519+2 T>C
+5		Female	UK	chrX:48934349 A>G	p.Phe100Ser
+6	*	Female	Whole Genome Sequencing	c.728+2T>A
+7		Female	Whole Exome Sequencing	c.729-1G>A	IV59-1G>A
+8		Male	UK	c.19C>T	p.Arg7*
+9	*	Female	UK	c.2T>A
+10	*	Male	UK	c.442_446delCTCTG	p.Leu148*
+11		Male	UK	19.9-kb Deletion in Xp11.23		261739689
+12	*	Female	UK	c.944_953del	p.Arg315
+13		Female	UK	c.830+1G>A
+14	*	Female	UK	c.412G>T
+15	*	Male	Whole Genome Sequencing	c.14_20dupCACTTCG	p.Gly8ThrfsTer65
+16	*	Female	Whole Exome Sequencing	c.52C>T	p.Gln18Ter
+17	*	Female	Whole Exome Sequencing	c.718dupA	p.T240Nfs*6
+18	*	Male	Targeted	c.729-1G>A
+19		Female	UK	c.868C>T	p.Gln290Ter	3163285820
+20		Female	Targeted	chrX:g.48,930,034_ 48,935,858del (hg19) deletion		3153683121
+21		Female	Targeted	c.830 +1G>A	fs premature termination codon at position 278	3150568822
+22		Male	Whole Exome Sequencing	c.197 T > A	p.V66E	3146601023
+23		Female	Whole Exome Sequencing	c.1040_1041del	p.Glu347GlyfsTer7	*24, 3133296025
+24		Female	Targeted	c.761_762insAG	p.Cys254Ter	3129389626
+25		Female	Targeted	c.614G > A	p.Gly205Asp	31293896 26, 2917101313
+26		Female	Targeted	c.830+1G > A		3129389626
+27		Female	Targeted	c.299T>C	p.Phe100Ser	3129389626
+28		Female	Whole Exome Sequencing	c.830+1G > C		3129389626
+29		Female	UK	c.629delG 	p.Ser210X	2917101313
+30		Female	UK	c.1007_1008del	p.Tyr336CysfsX5 	2917101313
+31		Female	UK	c.700C>T	p.Arg234X 	2917101313
+32		Female	UK	c.627del	p.Ser210GlnfsX78	2917101313
+33		Female	UK	c.454delT	p.Cys152AlafsX9	2917101313
+34		Female	UK	c.726C>G	p.Tyr242X	2917101313
+35		Female	UK	c.921delA	p.Ala308Leufs*22	3074641627
+36		Female	Targeted	c.479T>G	p.Leu160Arg	3074641627
+37		Female	Targeted	c.251delA	p.Asp84Alafs*34	3074641627
+38		Female	Targeted	c.344 + 1G>A		3074641627
+				c.100G>A	p.Val34Met
+39		Male	Whole Exome Sequencing	c.873C>G	p.Tyr291*	3061224728
+40		Male	UK	c.977 1 C>T		2917101313
+41		Female	UK	c.439+2T>G		3045515629
+42		Female	UK	c.411dupT (c.412insT)	p.Glu138*	3045515629
+43		Female	UK	c.729-2 A>G		3045515629
+44		Female	UK	UK	UK	3034127530
+45		Female	UK	c.19C > T	p.Arg7*	2998185231
+46		Female	UK	c.401G > C	p.Arg134Pro	2998185231
+47		Female	UK	c.700C > T	p.Arg234*	2998185231
+48		Female	UK	c.503G > A	p.Gly168Glu	2998185231
+49		Female	UK	c.912delT	p.Ala305Leufs*25	2998185231
+50		Female	Whole Exome Sequencing	c.1007_1008del	p.Tyr336Cysfs ∗5 	231768204
+51		Female	Whole Exome Sequencing	c.38G>C	p.Arg13Pro	231768204
+52		Female	Whole Exome Sequencing	c.-1_5del	p.Met1?	231768204
+53		Female	Whole Exome Sequencing	c.293T>C	p.Leu98Pro	231768204
+54		Female	Whole Exome Sequencing	c.476del	p.Leu159Argfs ∗2	231768204
+55		Female	Whole Exome Sequencing	c.19C>T	p.Arg7 ∗	231768204
+56		Female	Whole Exome Sequencing	c.56-1G>A	splicing defect	231768204
+57		Female	Whole Exome Sequencing	c.700C>T	p.Arg234 ∗	231768204
+58		Female	Whole Exome Sequencing	c.400C>T	p.Arg134 ∗	231768204
+59		Male	Whole Exome Sequencing	c.228_229del	p.Glu76Aspfs ∗38 	231768204
+60		Female	Whole Exome Sequencing	c.405_409del	p.Lys135Asnfs ∗2	231768204
+61		Female	Whole Exome Sequencing	c.359dup	p.Lys121Glufs ∗18 	231768204
+62		Female	Whole Exome Sequencing	c.830+1G>A	splicing defect	231768204
+63		Male	Whole Exome Sequencing	c.19dup	p.Arg7Profs ∗64	231768204
+64		Female	Whole Exome Sequencing	c.235+1G>A	splicing defect	231768204
+65		Female	Whole Exome Sequencing	c.1007_1008del	p.Tyr336Cysfs ∗5 	231768204
+66		Female	Whole Exome Sequencing	c.694_703del	p.Leu232Alafs ∗53	231768204
+67		Female	Whole Exome Sequencing	c.183C>A	p.Asn61Lys	231768204
+68		Male	Whole Exome Sequencing	c.1025_1034del insACATATTT	p.Gly342Aspfs ∗12 	231768204
+69		Female	Whole Exome Sequencing	c.55+1G>C	splicing defect	231768204
+70		Female	Whole Exome Sequencing	c.C19T	p.Arg7*	2535689932
+71		Female	Targeted	c.319_320delCT	p.Leu107Phefs*7	2960027433
+72		Female	Targeted	c.20G>A	p.Arg7Gln	2960027433
+73		Female	Targeted	c.64DeIT	p.Cys22Alafs*16	2887872834
+74		Male	Whole Exome Sequencing	c.131-1G>A		2703014615
+75		Male	Whole Exome Sequencing	c.248G>A	p.Trp83	2703014615
+76		Male	Whole Exome Sequencing	c.400C>T	p.Arg134	2703014615
+77		Female	Whole Exome Sequencing	c.400C>T	p.Arg134	2703014615
+78		Male	Whole Exome Sequencing	c.161_163delTGG	p.Val54del	2657704135
+79		Female	Whole Exome Sequencing	c.161_163delTGG	p.Val54del	2657704135
+80		Female	Targeted	c.235+1G>T	Splice site	2968245336
+81		Female	Whole Exome Sequencing	c.236-18A>G	intronic	2968110837
+82		Female	UK	c.251A>G	p.Asp84Gly	262402097
+83		Female	UK	c.969_970insT	p.V324CfsX18	2574462338
+84		Female	UK	c.587_588delTA	p.I196SfsX26	2574462338
+85		Female	UK	c.414_419delGTTGA	p.E138_F139del	2574462338
+86		Female	UK	c.628T>C	p.S210P	2574462338
+87		Female	UK	c.400C>T	p.R134X	2574462338
+88		Female	UK	c.587_588delT	p.I196SfsX26	2574462338
+89		Female	UK	c.293T>C	p.L98P	2574462338
+90		Female	UK	c.322del	p.Ser108Leufs*10	2504465539
+91		Female	Whole Exome Sequencing	c.342-2A>C	splice site	2461025519
+92		Female	Targeted	c.345-1G>A	r.345_439del	2602246340
+93		Female	Targeted	c.400G > A	p.R134Ter	2685981841
+94		Female	Whole Exome Sequencing	c.400C>T	p.R134X	2660973042
+95		Female	Whole Exome Sequencing	c.439+1G>T	p.Gly147Val; Val147_Leu148ins8	234350868, 2339012143
+96		Female	Whole Exome Sequencing	c.516G>C	p.Asp174Valfs*29 	234350868
+97		Female	Whole Exome Sequencing	c.437dupA	p.Leu148Alafs*3	234350868, 2289218944
+98		Female	Whole Exome Sequencing	c.637C>T	p.Gln213*	234350868
+99		Female	Whole Exome Sequencing	c.1033_1034dupAA	p.Asn345Lysfs*67	234350868
+100		Female	Targeted	c.440-2 A > G	splice site	2679096045
+101		Female	Targeted	c.447_448del	p.Cys149*	2836125546
+102		Female	Targeted	c.447_448del	p.Cys149*	2836125546
+103		Female	UK	c.488del C	p.Pro163Argfs*34	2530122746
+104		Female	UK	c.51911_51913del	splice site	2479080247
+105		Female	Whole Exome Sequencing	c.551delC	p.S184LfsX13	2513162248
+106		Female	Targeted	c.597_598	p.Leuo201Lysfs*21	2795754849
+107		Female	UK	c.626C > A	p.Ala209Asp	2559241150
+108		Female	UK	c.662_663del	p.Phe221*	2436817651
+109		Female	Targeted	c.752_754del	p.Ser251del	2436817651
+110		Female	Whole Exome Sequencing	c.1030del	p.Cys344fs	2436817651
+111		Female	Whole Exome Sequencing	c.700 C>T	p.Arg 234*	2893239552
+112		Male	Whole Exome Sequencing	c.752_754delCCT	p.Ser251del	2837132053
+113		Female	Whole Exome Sequencing	p.T260Lfs*27		2715902854
+114		Female	Whole Exome Sequencing	c.795delT		2907562214
+115		Female	Whole Exome Sequencing	c.830+1G>A	Splice site	2462158455
+116		Male	Whole Exome Sequencing	c.830+1G > A	splice site	2871174056
+117		Female	UK	c.830 + 2 T > C	splice site	2734908557
+118		Female	Whole Exome Sequencing	c.831‐1G>C	splice site	2648185217
+119		Female	Whole Exome Sequencing	c.C868T	p.Q290X	2526306158
+120		Male	Whole Exome Sequencing	c.1007_1008delAT	p.Tyr336Cys*5	2768147059
+121		Female	Whole Exome Sequencing	c.1007_1008del	p.Y336Cfs*5	2944547760
+122		Female	Targeted	c.1056C>G 	p.Tyr352*	3071389361
+123		Female	Targeted	heterozygous deletion of WDR45 gene		2908210562

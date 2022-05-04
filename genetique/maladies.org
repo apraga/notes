@@ -70,3 +70,10 @@ https://onlinelibrary.wiley.com/doi/full/10.1111/ddg.14638
 - PNDS
 - Genereviews
 - Santa-Maria FD, Mariath LM, Poziomczyk CS, et al. Dental anomalies in 14 patients with IP: clinical and radiological analysis and review. Clin Oral Investig. 2017;21(5):1845-1852. doi:10.1007/s00784-016-1977-y
+* Syndrome de West
+In about 35% of cases, the etiologic event is (still) unknown:
+others = structural, infectious, metabolic and immunologic defects and genetic abnormalities
+ may be prenatal, perinatal, and post-natal period.
+ ischemic encephalopathy is reported as one of the most common causes of ISs.
+ “United Kingdom Infantile Spasms Study” (UKISS) [14],  hypoxic-ischemic encephalopathy was reported in 10%, followed by chromosomal abnormalities, complex malformation syndromes and perinatal stroke (8%), tuberous sclerosis (7%), and periventricular leukomalacia or hemorrhage (respectively, in 5%)
+Source https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7655587/

@@ -32,8 +32,13 @@ Trop ambitieux (long, compliqué et problèmes de droits)
 **** KILL Prototype django/flask
 *** Excel
 **** TODO Voir pour hébergement
-***** WAIT Mail Yannis
-SCHEDULED: <2022-04-13 Wed>
+***** DONE Mail Yannis
+CLOSED: [2022-05-01 Sun 19:50] SCHEDULED: <2022-04-13 Wed>
+Pas de google droive
+***** TODO VPN ??
+**** Solution actuelle
+Paul a tout en local (excel)
+Jehanne fait des powerpoints et les héberge sur le cloud...
 
 * WDR45
 ** Mémoire
@@ -49,17 +54,20 @@ CLOSED: [2022-04-18 Mon 21:56]
 ***** TODO Regarder 2 autres review Cong2021 et Adang2020
 Pourquoi plus de variants chez Cong2021 ?
 **** TODO Vérifier l’intérêt de l’article
-***** WAIT Variant déjà rapporté ?
-Mentionné dans Saffari2021 mais je pense que c’est une typo
-On ne le retrouve pas dans
-Mail envoyé en tout cas
+***** DONE Variant déjà rapporté ?
+CLOSED: [2022-05-01 Sun 19:52]
+Non, NM différente (non canonique)
+Cf mail de Saffari
 ***** Phénotype : garçon moins atteint que les filles ?
 Bien lire les 3 revues
 *** IRM
 **** DONE Récupérer compte-rendu IRM mère
 **** TODO Relecture par le Dr Pomero
-**** WAIT Récupérer résultat Cyril et mère
-**** TODO Copie dossier
+**** DONE Récupérer résultat Cyril et mère
+CLOSED: [2022-05-01 Sun 19:52]
+**** DONE Copie dossier
+CLOSED: [2022-05-01 Sun 19:52]
+*** WAIT ATCD familiaux pour fammile d’Alain Verloes
 *** Fonctionnel
 **** DONE Mail Patricia Maurin
 Rajouter âge du patient et IRM mère

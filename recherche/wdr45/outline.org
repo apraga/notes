@@ -1,15 +1,118 @@
 #+title: Outline
+#+options: toc:nil
+#+bibliography: biblio.bib
 
 * Introduction
-- NBIA
-- BPAN
-- Evolution
+- NBIA = group of pathologies sharing the degeneration of globus pallidus and substantia nigra  due to iron accumulation
+  - suspected on clinical feature + MRI
+  - phenotype and genetics are heretogenous
+  - more than 85% have a genetic etiology
+  - classified by gene (so there may have overlapping phenotype)
+- BPAN = a subset
+  - first reported in 2012
+  - distinct phetotypes : non progressive until adulthood ->> parkinsonism, dystonia and dementia
 - Why this paper ?
+  - expand the phenotype for male
+  - 2 families with the same variant
+* TODO BPAN
+** NBIA
+- estimation 35-40% (Stige 2018)
+- Review in [cite:@hayflick_neurodegeneration_2018]
+- unclear why only globus pallidus and substantia nigra are targeted
+** Phenotype
+** MRI
+** Therapy/management
+- no marker but 1 case report with ENO2[cite:@takano_elevation_2016]
+* WDR45
+** Function (see [cite:@cong_wdr45_2021] )
+- protein structure : N-terminal beta-propeller (definition)
+- autophagy (update by [cite:@ji_upbeta-propeller_2021] )
+- endoplasmic reticulum homeostasis
+- mitochondrial alteration (morphology and function)
+- iron homeostasis
+** Other related diseases
+- BPAN 66.4%
+- Rett-like syndrome 2.1%
+- intellectual disability 1.4%
+- developmental and epileptic encephalopathy 12.1%
+- early-onset epileptic encephalopathy (EOEE) 2.9%
+- West syndrome 2.1%
+(the number of cases reported in given in [cite:@cong_wdr45_2021] )
 
 * Case report
 ** Family 1
+- familial history: renal agenesis for the paternal grand-father, epilepsy in the maternal cousin of the mother
+*** Patient 1
+  - pregnancy, birth N
+  - neonatal: poor suckling
+  - langage lay + fine motor difficulties
+  - overlapping of left toes, mild hypertonia of lower limbs, mild dysmorphic features with bilateral epicanthus and hooded eyelids.
+  - no epilepsy
+  - metabolic, ophtalmologic, hearing N
+  - MRI : bilateral and symmetric hypersignal of dentate nucleus in T2, without iron deposition
+*** Patient 2 = sister
+  - pregnancy, birth N
+  - language delay, learning difficulties
+  - round face, thick hair, short forehead and a right preaurical fistula.
+  - hypermetropia and astigmatism
+*** Genetics testing
+- CGH,FMR1, karyotype normal
+- NGS : NM_007075.3 c.697C> T p.(Arg233Cys)
+- de novo in the mother
+- hemizygous in patient 1, heterozygus in the sistier + mother
 ** Family 2
-* Discussion
-** Genotype-phenotype
-** Physiopathology
-** X-linked
+*** Genetics testing
+- CGH,FMR1, karyotype normal
+- NGS : hemizygous (NM_007075.3): c.698G>T ;p.(Arg233Leu)
+- de novo
+* TODO Discussion
+** Phenotype
+- mostly central nervous system. Chronology
+  1. developpemental delay/seizures
+  2. brain iron accumulation
+  3. Movement disorders
+  4. developemental regression
+- non-neurological:
+  - face
+  - urinary incontinence
+  - dysphagia
+  - precocious puberty
+- survival :[cite:@saffari_quantitative_2021]
+** Phenotype : male and female
+- initially though lethal for male
+- 3 recent reviews  [cite:@cong_wdr45_2021]
+- [cite:@adang_phenotypic_2020] with a 19 male cohort
+  - more profound development delay
+  - more seizure in male but not earlier and more refractory epilepsy
+  - earlier in male
+- biphasic evolution
+
+** Variants
+- decipher : score for the gene
+- /in silico/ score for our variant (varsome)
+- predited consequence : no significative difference
+- FIGURE: all reported variants
+* Conclusion
+* Scripts :noexport:
+Stats sur Cong
+#+begin_src python :results output
+# Missing variants ?? We should have 123+17 but 2 are missing...
+import pandas as pd
+d = pd.read_csv("data_cong.csv")
+print(d.diagnosis.value_counts(normalize=True).mul(100))
+# print(d.disease.value_counts)
+#+end_src
+
+#+RESULTS:
+#+begin_example
+BPAN             62.589928
+DEE              12.230216
+unclassified     12.230216
+BPAN (RLS)        2.877698
+EOEE              2.877698
+RLS               2.158273
+West syndrome     2.158273
+BPAN (DEE)        1.438849
+ID                1.438849
+Name: diagnosis, dtype: float64
+#+end_example
