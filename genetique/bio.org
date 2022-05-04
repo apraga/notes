@@ -1,0 +1,12 @@
+#+title: Biologie
+* Cytogénétique
+** Villosités choriales
+contiennent 2 type de tissus
+- extra-embryonnaire cytotrophoblastes et syncytiotropblaste
+- embryonnaire: mésenchyme
+Examen direct : sur cytotrophoblastes -> rapide mais toujours à confirmer par une culture sur mésenchyme
+*** Limites
+XX: possibilité d’une contamination maternelle
+Cytotrophoblastiques : mosaique, pas assez de mitoses, anomale déséquilibrée
+
+Source [[http://www.eaclf.org/docs/GBPcyto/Arbre-caryoVC.pdf][Recos EACLF]]
