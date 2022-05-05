@@ -5236,3 +5236,9 @@ Rings :
 - extension 22s
 - compression 9s
   pas plus à cause de la fatigue
+* <2022-05-05 Thu> Tricking
+Roundkick 15
+Reverse roundkick 15
+Bkick 15
+Tornado kick 15
+Fei long 15
