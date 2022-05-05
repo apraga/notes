@@ -77,7 +77,17 @@ CLOSED: [2022-05-05 jeu. 17:56]
 Bien lire les 3 revues
 **** TODO Dysmorpho
 Regarder vite fait les articles
-**** TODO Contacter sur clinvar les autres chercheurs ayant soumis des variants sur les 2 acides aminés
+**** TODO Contacter sur clinvar les autres chercheurs ayant soumis des variants sur les 2 acides aminés Arg
+http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chrX%3A49075563%2D49075589&hgsid=1347485355_LOvhtXeCAPyml1SnLdAbEEJrDy3l
+perte de fonction en 233 avec plusieurs articles
+Arg233 : rien à faire car tronquant ? Déjà rapporté
+https://www.ncbi.nlm.nih.gov/clinvar/variation/41912/?new_evidence=true
+voir notamment Chen et al 2017
+
+Arg232 : 5 faux-sens
+- 2 [[https://www.ncbi.nlm.nih.gov/clinvar/variation/805749/][c.694C>T (p.Arg232Cys)]] dont 1 rapporté par strasbourg
+- 2 sur [[https://www.ncbi.nlm.nih.gov/clinvar/variation/639948/?new_evidence=true][c.695G>A (p.Arg232His)]]
+- 1 sur  [[https://www.ncbi.nlm.nih.gov/clinvar/variation/981426/][c.695G>T (p.Arg232Leu)]] par Strasbourg
 *** DONE Plan
 CLOSED: [2022-05-05 jeu. 17:56] DEADLINE: <2022-05-04 mer. 19:00>
 *** Spécificité
