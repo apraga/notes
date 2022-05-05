@@ -4,6 +4,9 @@
 :PROPERTIES:
 :CATEGORY: mustard
 :END:
+On part sur Excel
+Idéalement, données anonymées sur le cloud
+Gros travail de fusion données Labkey + Paul mais attendre nouveau panel
 ** Données
 *** DONE Labkey
 *** STRT Clinique
@@ -16,7 +19,11 @@ SCHEDULED: <2022-04-12 Tue>
 **** STRT Dxcare
 ***** DONE Demande Dijon
 ***** TODO Demande DPO Besançon
-*** WAIT donnée pierre
+*** KILL donnée pierre
+CLOSED: [2022-05-05 jeu. 17:53]
+*** Donnée Paul
+Sur le S:
+2 excels mais temporaires
 ** Base de données
 *** KILL Mysql
 **** DONE Biblio
@@ -35,7 +42,11 @@ Trop ambitieux (long, compliqué et problèmes de droits)
 ***** DONE Mail Yannis
 CLOSED: [2022-05-01 Sun 19:50] SCHEDULED: <2022-04-13 Wed>
 Pas de google droive
-***** TODO VPN ??
+***** TODO VPN
+Refusera a priori mais on demande quand même
+***** TODO Donnée anonymisées sur le cloud université de bourgoone
+****** TODO Juliette peut demander un compte
+****** TODO Anonymiser les données
 **** Solution actuelle
 Paul a tout en local (excel)
 Jehanne fait des powerpoints et les héberge sur le cloud...
@@ -48,32 +59,53 @@ Jehanne fait des powerpoints et les héberge sur le cloud...
 *** TODO Biblio
 **** TODO WDR45 et fonction
 **** TODO Figure avec tikz des variant sur la séquence d'acide aminé
-**** TODO Lister variants et clinique
+**** DONE Lister variants et clinique
+CLOSED: [2022-05-05 jeu. 17:56]
 ***** DONE Déjà fait par saffari2021
 CLOSED: [2022-04-18 Mon 21:56]
-***** TODO Regarder 2 autres review Cong2021 et Adang2020
+***** DONE Regarder 2 autres review Cong2021 et Adang2020
+CLOSED: [2022-05-05 jeu. 17:56]
 Pourquoi plus de variants chez Cong2021 ?
-**** TODO Vérifier l’intérêt de l’article
+**** DONE Vérifier l’intérêt de l’article
+CLOSED: [2022-05-05 jeu. 17:56]
 ***** DONE Variant déjà rapporté ?
 CLOSED: [2022-05-01 Sun 19:52]
 Non, NM différente (non canonique)
 Cf mail de Saffari
-***** Phénotype : garçon moins atteint que les filles ?
+***** DONE Phénotype : garçon moins atteint que les filles ?
+CLOSED: [2022-05-05 jeu. 17:56]
 Bien lire les 3 revues
-*** TODO Plan
-DEADLINE: <2022-05-04 mer. 19:00>
-*** M
+**** TODO Dysmorpho
+Regarder vite fait les articles
+**** TODO Contacter sur clinvar les autres chercheurs ayant soumis des variants sur les 2 acides aminés
+*** DONE Plan
+CLOSED: [2022-05-05 jeu. 17:56] DEADLINE: <2022-05-04 mer. 19:00>
+*** Spécificité
+- garçon peu rapportés
+- phénotype mild
+- atteinte IRM différente
+- sur 2 acides aminées précis -> étude ciblée
 *** IRM
 **** DONE Récupérer compte-rendu IRM mère
-**** TODO Relecture par le Dr Pomero
+**** WAIT Relecture par le Dr Pomero
 **** DONE Récupérer résultat Cyril et mère
 CLOSED: [2022-05-01 Sun 19:52]
 **** DONE Copie dossier
 CLOSED: [2022-05-01 Sun 19:52]
-*** WAIT ATCD familiaux pour fammile d’Alain Verloes
-*** Fonctionnel
+**** WAIT Relecture via Chloé à Bordeaux
+Transmis<2022-05-05 jeu.>
+*** KILL ATCD familiaux pour fammile d’Alain Verloes
+CLOSED: [2022-05-05 jeu. 17:57]
+*** WAIT Fonctionnel
 **** DONE Mail Patricia Maurin
 Rajouter âge du patient et IRM mère
-**** WAIT Réunion avec Patricia Maurin
+**** DONE Réunion avec Patricia Maurin
+CLOSED: [2022-05-05 jeu. 17:44]
+Vont lancer les tests mais ne sera pas prêt pour le mémoire
+Patients intéressant car phénotype mild
 **** KILL Mail Binnaz Yalcin
 Regarder sa biblio avant !
+**** DONE Démarré analyse
+CLOSED: [2022-05-05 jeu. 17:57]
+*** WAIT Article
+Réunion du  <2022-05-05 jeu.> : on commence le fonctionnel, attendre de leur nouvelles pour publier
