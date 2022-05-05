@@ -1,0 +1,33 @@
+#+title: Reunions
+* <2022-05-05 jeu.>
+Participant :
+- Chloé Angelini : interne, a fait sa thèse sur le panel NBIA à Bordeaux
+- Bénédicte gérard (Strasbourg) : bio, qui a fait le dia
+- Patricia Fergelot (Bordeaux)
+- Christelle Durang (Bordeaux)  : ingénieure, travaille sur les levures
+- Jean-Paul Lasserre (Bordeaux) : MCU, travaille sur les levures
+
+** Objectif
+Impact sur les mitochondrie -> retard de croissance sur les levures
+Visiable avec l’équivalent WDR45 mais aussi avec le gène humain WDR45 mais moins partiellement
+
+Proposition de diagnostic pour re-classifier des VOUS
+NB: on peut mesure l’autophagie des levures mais aussi la mitophagie (unique aux levures ! )
+
+Acide aminé
+
+Délai : 6 mois mini (recherche)
+Pour schéma sur levure : Martin Graef 2018
+** Discussion
+Patients avec phénotype mild
+Pas de dépôts de fer
+=> sur ces 2 acides aminés, peut-être phénotype particulier
+
+** Suivi patient NBIA
+Centre de référence à Bordeaux en train de monter un projet pour suivre en HdJ des patients NBIA
+** Conclusion
+ - test sur la levure démarré
+ - TODO: contacter les chercheurs qui ont rapporté des variants sur les 2 acides aminés
+ - regarder PNDS
+ - TODO: envoyer IRM à Chloé
+ - lire article de leheri pour phénotyp radio
