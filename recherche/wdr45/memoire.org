@@ -1,0 +1,70 @@
+#+title: Memoire
+
+#+title: WDR45 variant with a milder phenotype
+#+options: toc:nil author:nil
+#+bibliography: biblio.bib
+
+* Introduction
+* BPAN
+** NBIA
+** Early Phenotype
+** Transmission
+** MRI
+** Therapy/management
+* WDR45
+** Function
+** Other related diseases
+
+* Case report
+Here we report two variants in four patients. While two
+** Family 1
+- familial history: renal agenesis for the paternal grand-father, epilepsy in the maternal cousin of the mother
+- 1 healthy sibling, French parents
+*** Patient 1
+  - pregnancy, birth N
+  - age ??
+  - neonatal: poor suckling
+  - langage lay + fine motor difficulties
+  - overlapping of left toes, mild hypertonia of lower limbs, mild dysmorphic features with bilateral epicanthus and hooded eyelids.
+  - no epilepsy
+  - metabolic, ophtalmologic, hearing N
+  - MRI : bilateral and symmetric hypersignal of dentate nucleus in T2, without iron deposition
+*** Patient 2 = sister
+  - pregnancy, birth N
+  - language delay, learning difficulties
+  - round face, thick hair, short forehead and a right preaurical fistula.
+  - hypermetropia and astigmatism
+  - 12 years, no MRI
+*** Patient 3 = mother
+- learning difficulty at school
+- 1 episode of depression
+- autonomous in daily life but her level of education is very inferior to that of her two healthy brothers
+- brain MRI (for transient visual disturbances) : left cerebellar lesion
+*** Genetics testing
+- CGH,FMR1, karyotype normal
+- NGS : NM_007075.3 c.697C> T p.(Arg233Cys)
+- de novo in the mother
+- hemizygous in patient 1, heterozygus in the sistier + mother
+** Family 2
+*** Patient 4
+- family : Algerian and French, 3 (2 ?) healthy siblings
+- born 38 weeks, weight  -2.5 SD, length -1 SD, OFC
+- neonatal : Suckling difficulties,  generalized hypotonia
+- motor + speech delay
+- No seizure
+- at age 4, weigh -2SD, height -1SD,  OFC -3SD
+  - no dysmorphic features.
+  - axial hypotonia, pyramidal syndrome in the lower limbs, mild peripheral hypertonia and bilateral nystagmus.
+- Biological workup normal
+- Ophthalmologic , hearing , EEG, cardiac normal,
+- MRI : dentate nucleus hyperT2, + abnormal morphology
+*** Genetics testing
+- CGH,FMR1, karyotype normal
+- NGS : hemizygous (NM_007075.3): c.698G>T ;p.(Arg233Leu)
+- de novo
+* Discussion
+** Phenotype
+** Phenotype : male and female
+** Variants
+** Our patients
+* Conclusion
