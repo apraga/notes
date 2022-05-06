@@ -1,0 +1,3 @@
+[submodule "recherche/wdr45"]
+	path = recherche/wdr45
+	url = git@github.com:apraga/wdr45
