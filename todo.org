@@ -85,8 +85,8 @@ SCHEDULED: <2022-04-17 Sun>
 *** DONE Hébergement
 *** DONE Location voiture
 *** DONE Voir avec Miva pour hébergement Paris
-** TODO Échanger T-shirt Chullanka
-SCHEDULED: <2022-04-24 Sun>
+** WAIT Échanger T-shirt Chullanka
+Renvoyé<2022-05-07 Sat>
 ** Japonais :japonais:
 ** Miura :miura:
 *** Anki :anki:
@@ -108,7 +108,8 @@ CLOSED: [2022-04-17 Sun 17:18] DEADLINE: <2022-04-17 Sun 12:30>
 *** TODO Notes <2022-04-24 Sun>
 SCHEDULED: <2022-04-24 Sun>
 ** TODO Alimentation PC portable
-*** TODO Échanger
+*** WAIT Échanger
+Envoyé<2022-05-07 Sat>
 *** TODO Nouvelle commande
 * Ledger
 :PROPERTIES:
@@ -122,7 +123,7 @@ CLOSED: [2022-04-16 Sat 15:06] DEADLINE: <2022-03-27 Sun>
 *** DONE Dépannage
 CLOSED: [2022-04-09 Sat 14:25]
 Pas de réparation possible avan fin avril
-*** TODO Appel garage Yamaha Besançon pour commencer réparation
+*** DONE Appel garage Yamaha Besançon pour commencer réparation
 SCHEDULED: <2022-04-29 Fri>
 ** DONE Signer contrat moto
 * Notes biologie
@@ -171,7 +172,7 @@ SCHEDULED: <2022-04-29 Fri>
 :PROPERTIES:
 :CATEGORY: projets
 :END:
-** TODO Liste des videos tricks
+** DONE Liste des videos tricks
 DEADLINE: <2022-04-27 Wed>
 ** Assistant
 :PROPERTIES:
@@ -217,12 +218,18 @@ SCHEDULED: <2022-04-24 Sun>
 
 * Langues
 ** TODO Allemand
-SCHEDULED: <2022-05-05 Thu +1d>
+SCHEDULED: <2022-05-06 Fri +1d>
 :PROPERTIES:
 :STYLE:    habit
+:LAST_REPEAT: [2022-05-07 Sat 14:50]
 :END:
+- State "DONE"       from "TODO"       [2022-05-07 Sat 14:50]
+- State "DONE"       from "TODO"       [2022-05-06 Fri 14:50]
+- State "DONE"       from "TODO"       [2022-05-05 Thu 14:50]
+- State "DONE"       from "TODO"       [2022-05-04 Wed 23:09]
+- State "DONE"       from "TODO"       [2022-05-03 Tue 23:09]
 - State "DONE"       from "TODO"       [2022-05-02 Mon 23:09]
 
 * Sport
-** TODO Revoir progression pour anneaux
+** DONE Revoir progression pour anneaux
 SCHEDULED: <2022-05-03 Tue>

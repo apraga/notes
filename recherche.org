@@ -104,6 +104,9 @@ CLOSED: [2022-05-01 Sun 19:52]
 CLOSED: [2022-05-01 Sun 19:52]
 **** WAIT Relecture via Chloé à Bordeaux
 Transmis<2022-05-05 jeu.>
+**** TODO Revoir les images : où sont les hypersignaux noyaux dentelés ?
+**** TODO Autres photos patients (not. fistule)
+
 *** KILL ATCD familiaux pour fammile d’Alain Verloes
 CLOSED: [2022-05-05 jeu. 17:57]
 *** WAIT Fonctionnel
