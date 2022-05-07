@@ -5,10 +5,11 @@ Reçue mais pas de chiffre en relief
 Mail envoyé pour savoir si on peut louer avec mais a priori non (carte de débit !)
 Renvoyer un mail car n’ont pas compris la question
 ** TODO Compte et CB société générale :banque:
-Attente
 *** DONE Souscription
 CLOSED: [2022-04-23 Sat 17:13]
 *** TODO Carte bancaire
+*** TODO Envoyer fiche de salaire
+*** TODO Envoyer relevé
 *** TODO Transfert compte bancaire ?
 * DES :anki:
 :PROPERTIES:
@@ -84,7 +85,6 @@ SCHEDULED: <2022-04-17 Sun>
 *** DONE Hébergement
 *** DONE Location voiture
 *** DONE Voir avec Miva pour hébergement Paris
-** TODO
 ** TODO Échanger T-shirt Chullanka
 SCHEDULED: <2022-04-24 Sun>
 ** Japonais :japonais:
@@ -107,7 +107,9 @@ CLOSED: [2022-04-17 Sun 11:14] SCHEDULED: <2022-04-10 Sun>
 CLOSED: [2022-04-17 Sun 17:18] DEADLINE: <2022-04-17 Sun 12:30>
 *** TODO Notes <2022-04-24 Sun>
 SCHEDULED: <2022-04-24 Sun>
-** WAIT Alimentation PC portable
+** TODO Alimentation PC portable
+*** TODO Échanger
+*** TODO Nouvelle commande
 * Ledger
 :PROPERTIES:
 :CATEGORY: compta
@@ -197,8 +199,8 @@ emailOuSms	"sms"
 * FreeBSd
 ** DONE taskwarrior tui 0.22
 CLOSED: [2022-04-10 Sun 17:41] SCHEDULED: <2022-04-10 Sun>
-** TODO opengraph v 0.6.3
-SCHEDULED: <2022-04-12 Tue>
+** TODO taskwarrior tui 0.23.4
+** DONE opengraph v 0.6.3
 Ok 3.10->3.7
 ** DONE Kitty 0.25
 CLOSED: [2022-04-17 Sun 17:19] SCHEDULED: <2022-04-13 Wed>

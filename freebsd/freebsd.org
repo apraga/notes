@@ -591,3 +591,16 @@ Because it complaints that
 #+BEGIN_EXAMPLE
   ln -s /opt/brother/Printers/HL1110/cupswrapper/brother_lpdwrapper_HL1110  /usr/local/libexec/cups/filter
 #+END_EXAMPLE
+* Textlive sous freebsd (manuellement)
+Pourquoi ? Conflit entre la version de texlive et biber
+https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=263134
+
+Télécharger le fichier d'install et le lancer (~3h)
+Il manque l'exécutable pour biber :
+#+begin_src  shell
+doas cpanm  IO::String LWP::Protocol LWP::Protocol::https LWP::UserAgent Lingua::Translit PerlIO::utf8 PerlIO::utf8_strict fs Text::CSV_XS Test::Differences
+
+perl Build.PL
+./Build
+sudo ./Build install
+#+end_src
