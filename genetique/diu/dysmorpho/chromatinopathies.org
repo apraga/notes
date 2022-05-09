@@ -1,0 +1,50 @@
+#+TITLE: Chromatinopathies
+#+author: David Geneviève
+#+date:<2022-05-09 Mon>
+
+(... non  suivi..)
+
+Acétylation : HAT = ouverture ADN
+HDAC  = fermeture
+
+Méthylation :  KMT
+KDM
+
+Remodelage de la chromatine = important dans neurodev
+
+* Anomalie acétylation des histones avec transmission mendelienne
+- Rubinstein-Taybi
+- Histone déacétylation : DI et brachymétatarsie
+- HDAC8
+- KBG
+- lysine acetyltransferase =
+
+* Méthylation des histones
+Kabuki : dé méthylelysine 27
+Complexe protéique = prépare régions à la transription
+
+Kleefstrah
+
+* Readers
+sandwich protéiques qui vont permettre la transcription
+ADN fermé -> marques épigénétiques qui vont ouvrir -> ??
+
+Signature épigénétique : on voit les zones de (dé)méthylation sur lames -> les pathologies vont avoir tujours les même zones hyper/déméthylées par rapport à la norme
+-> 70 maladies monogéniques ont une signature
+
+* Kabuki
+Troubles de la motricité fine
+Croissance -2DS, sinon chercher cause endoc
+Luxatin de la rotule par défaut de croissance
+
+Hyperinsulinme : pense Weaver, Beckwith-wiedeman
+1iere cause de DC = auto-immunité
+
+* Rubinstein-Taybi
+Déviation axiale du pouce très spécifiques
+(mais penser à la dysplasie ossifiante primitive ! qui a un traitemen ten plus)
+avec avec spatulé des doigts
+
+visage : fente palpébrale . Quand sourit/pleure : aspec en demi-lune
+
+(... non suivi ...)
