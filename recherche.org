@@ -57,7 +57,8 @@ Jehanne fait des powerpoints et les héberge sur le cloud...
 :CATEGORY: memoire
 :END:
 *** TODO Biblio
-**** TODO WDR45 et fonction
+**** DONE WDR45 et fonction
+CLOSED: [2022-05-12 Thu 15:15]
 **** TODO Figure avec tikz des variant sur la séquence d'acide aminé
 **** DONE Lister variants et clinique
 CLOSED: [2022-05-05 jeu. 17:56]
@@ -88,6 +89,7 @@ Arg232 : 5 faux-sens
 - 2 [[https://www.ncbi.nlm.nih.gov/clinvar/variation/805749/][c.694C>T (p.Arg232Cys)]] dont 1 rapporté par strasbourg
 - 2 sur [[https://www.ncbi.nlm.nih.gov/clinvar/variation/639948/?new_evidence=true][c.695G>A (p.Arg232His)]]
 - 1 sur  [[https://www.ncbi.nlm.nih.gov/clinvar/variation/981426/][c.695G>T (p.Arg232Leu)]] par Strasbourg
+***** WAIT Mail Dr Gérard pour savoir si faux-sens seul
 *** DONE Plan
 CLOSED: [2022-05-05 jeu. 17:56] DEADLINE: <2022-05-04 mer. 19:00>
 *** Spécificité
@@ -102,11 +104,10 @@ CLOSED: [2022-05-05 jeu. 17:56] DEADLINE: <2022-05-04 mer. 19:00>
 CLOSED: [2022-05-01 Sun 19:52]
 **** DONE Copie dossier
 CLOSED: [2022-05-01 Sun 19:52]
-**** WAIT Relecture via Chloé à Bordeaux
+**** DONE Relecture via Chloé à Bordeaux
+CLOSED: [2022-05-12 Thu 15:15]
 Transmis<2022-05-05 jeu.>
-**** TODO Revoir les images : où sont les hypersignaux noyaux dentelés ?
 **** TODO Autres photos patients (not. fistule)
-
 *** KILL ATCD familiaux pour fammile d’Alain Verloes
 CLOSED: [2022-05-05 jeu. 17:57]
 *** WAIT Fonctionnel
