@@ -1,6 +1,6 @@
 #+TITLE: Phacomatoses
 
-* NF1
+* NF1 (PNDS)
 Immense majorité patients = bénigne (attention au biais de sélection à l’hôpital)
 Diag doit rester clinique (2 parmi les 7 critères)
 tache = > 6 de 1cm chez adulte (> 5 de 0.5 chez enfant)
@@ -16,3 +16,18 @@ Neurofibrème = diag en anapath
 radio et chimio possible si jeune
 
 troubles cognitifs : PEC précoce orthophoniste peut aider !
+
+attention mosaïque
+
+diag différentiel = surtout
+- mc cune-albright (bords déchiquetés)
+- sd de Legius = tâches café-au-lait seules, et macrocéphalie
+
+  Grosseses = à risque (augmente nb et taille NB, complication [mort-né RCIA césarienne])
+
+* NF2 (PNDS)
+neurinomes de l’acoustique
+
+* Schwanomatose
+Pas de PNDS
+Suivi clinique: non, consulte si douleur
