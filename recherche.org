@@ -92,9 +92,9 @@ Arg232 : 5 faux-sens
 ***** WAIT Mail Dr Gérard pour savoir si faux-sens seul
 ** Spécificité
 - garçon peu rapportés
-- phénotype mild
-- atteinte IRM différente
-- sur 2 acides aminées précis -> étude ciblée
+- pas d’épilepsie
+- phénotype un peu différent
+- 2 faux-sens sur le même acide aminé
 ** IRM
 *** DONE Récupérer compte-rendu IRM mère
 *** WAIT Relecture par le Dr Pomero
