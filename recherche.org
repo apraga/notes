@@ -89,7 +89,14 @@ Arg232 : 5 faux-sens
 - 2 [[https://www.ncbi.nlm.nih.gov/clinvar/variation/805749/][c.694C>T (p.Arg232Cys)]] dont 1 rapporté par strasbourg
 - 2 sur [[https://www.ncbi.nlm.nih.gov/clinvar/variation/639948/?new_evidence=true][c.695G>A (p.Arg232His)]]
 - 1 sur  [[https://www.ncbi.nlm.nih.gov/clinvar/variation/981426/][c.695G>T (p.Arg232Leu)]] par Strasbourg
-***** WAIT Mail Dr Gérard pour savoir si faux-sens seul
+*** WAIT Mail Dr Gérard pour savoir si faux-sens seul
+*** WAIT Mail invitae pour p.Arg232His
+Envoyé John Garcia <2022-05-14>
+*** WAIT Mail Parc Tauli pour p.Arg232His
+Envoyé Anna Ruiz <2022-05-14 Sat>
+*** WAIT Mail pour (p.Arg232Cys)
+Envoyé Isabelle Karbassi <2022-05-14 Sat>
+
 ** Spécificité
 - garçon peu rapportés
 - pas d’épilepsie
