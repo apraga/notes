@@ -1,0 +1,64 @@
+#+TITLE: Ngs et syndromologie
+#+author: Frédéric Tran Mau-Them
+
+3 millions en France, 30 millions en Europe
+clinique + bio+ ACPA, Xfra, gènes ciblés = 20% de diag
+
+Majorité des publis = 1-4 patients -> très rares
+* Exome
+Majorité des variations pathos sont dans exo
+
+Filtrer variants :
+- seuil de fréquence des SNP 1% -> > 10 000 variants -> 500
+- on sélectionne gènes impliqué patho humaine -> 80
+- gènes impliqué -> 10aine de variant max
+  Puis valider les variants (NB: certains centres ne valident plus si c’est en trio et score de bonne qualité car on peut invalider par sanger des variantons de bonne qualité)
+
+  Ex: VCF avec filtrage sur OMIM
+** Exemple
+- 2014, pédiatrie: 26% de diag. 5% Données secondaires
+- 2016, adulte : solo -> 1% donnée secondaires (1-5% selon autres études). Plus de diagnostic si jeune
+
+
+** Bioéthique
+on peut rendre les données incindentes (=non cherchées mais trouvées de manière fortuite). Pas de consensus pour les laboratoire. Par exemple à Dijon, incidentes si liste ACMG
+
+On ne rend pas les données secondaires (=pas de lien avec indication initiale mais cherchée à partir d’une liste de gène de manière intentionnelles)!
+
+Ex: variant tronquant APC (cancéro) : à rendre ? Actionnable car chir précoce potentiellement pour polypose familiale
+avis -> de novo non rare sur APC
+** CNV
+exome adapté à la détection CNV (ex: utilisation XHMM)
+Principe : calcul profondeur moyenne de couverture -> nb de lectures diffère via un Z-score ?
+
+Même image mais moins de points que CGH : on est sur des exons ! Couverture plus homogène en CGH mais on peut passer à côté de la délétion d’un exon (il faut 3 sondes qui dévient dans le même sens, ce qui peut ne pas se voir sur des petits exons)
+
+Ex: Z-score -10 : négatif donc deletion.
+Htz ou Homozygote ? il faut regarder le nombre de lecture -> homozygote sur les 2 premiers
+** Phénotype atypiques
+Genotype first
+
+Attention à l’extension du phénotype : il faut une analyse pangénomique, pour ne pas passer à côté d’une autre variation qui expliquerait les signes
+
+Pool parentaux : TODO
+** Avantage (avant plateforme)
+500-1000€, 2-6 mois, 30% diag (plus maintenant...)
+** Inconvénient
+couverture hétérogène
+CNV parfois mal analysé
+Short reads non/mal vu
+* Génome
+- Exome
+- Génome + mitochondrie
+- Épigénome, transcriptome
+
+  Vrai apport du génome: plus de variations et plus de mauvaises variations
+  par exemple: bordure d’exon moins bien séquencée (cf diapo: 2x profondeur)
+
+  Ex:  inversion intronique
+
+  Million/milliard variantios -> million si rare -> 1 000 si codant
+
+  Avantage du génome : plus exhaustif, meilleure couverture
+  Inconvénient : cher mais prix en diminution, peu adapté au somatique et ADN circulant (not. profondeur pour CNV. NB marche pas mal pour aneuploïdie)
+  > 50% diag
