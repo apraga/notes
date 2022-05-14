@@ -96,6 +96,9 @@ atrophy of the optic nerves and cerebellar vermis
 **** [cite:@takano_early_2017] 1 male, 4 years,  splice donor site, de novo, dysmorpho
 epilepsie
 dysmorpho : long eyelashes, mild hypertelorism, a depressed nasal bridge and a small mouth
+**** Boca2019 : 1 male, de novo, somatic mosaicism (2nd case ?)
+Tardif, pas d’épilepsie
+**** [cite:@akcakaya_novel_2019] 1 male, mosaicism ?
 *** TODO Trouver publi avec missens chez garçon
 *** TODO Trouver publi avec formes héritées chez garçon
 - WDR45 mutations in three male patients with West syndrome.pdf:
