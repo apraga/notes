@@ -52,21 +52,15 @@ Paul a tout en local (excel)
 Jehanne fait des powerpoints et les héberge sur le cloud...
 
 * WDR45
-** Mémoire
-:PROPERTIES:
-:CATEGORY: memoire
-:END:
-*** TODO Biblio
-**** TODO WDR45 et fonction
-**** TODO Figure avec tikz des variant sur la séquence d'acide aminé
-**** DONE Lister variants et clinique
+** TODO Biblio
+*** DONE Lister variants et clinique
 CLOSED: [2022-05-05 jeu. 17:56]
 ***** DONE Déjà fait par saffari2021
 CLOSED: [2022-04-18 Mon 21:56]
 ***** DONE Regarder 2 autres review Cong2021 et Adang2020
 CLOSED: [2022-05-05 jeu. 17:56]
 Pourquoi plus de variants chez Cong2021 ?
-**** DONE Vérifier l’intérêt de l’article
+*** DONE Vérifier l’intérêt de l’article
 CLOSED: [2022-05-05 jeu. 17:56]
 ***** DONE Variant déjà rapporté ?
 CLOSED: [2022-05-01 Sun 19:52]
@@ -75,9 +69,39 @@ Cf mail de Saffari
 ***** DONE Phénotype : garçon moins atteint que les filles ?
 CLOSED: [2022-05-05 jeu. 17:56]
 Bien lire les 3 revues
-**** TODO Dysmorpho
+*** Garçons
+**** [cite:@nakashima_wdr45_2016] 3 males, West, no dysmorpho, 2 de novo and 1 inherited
+2 mutations de novo, 1 familiale héritée de la mère
+  Épilepsie. Age: 21 mois, 2 ans, 7 ans. Atrophie cérébrale. Patient de 7 an est le seul avec dépôt fer
+  1 intronique, 2 tronquants
+**** Michaud et al, The genetic landscape of infantile spasms.pdf: CNV seulement
+**** TODO [cite:@abidi_early-onset_2016] 1 male
+deletion
+**** TODO [cite:@zarate_lessons_2015] 1 male
+del, pas d’epilepsie, quadriplegie
+**** TODO [cite:@hayflick_beta-propeller_2013-1] 3 male
+1. del, parkinsonism, pas d’épilepsie
+2. dup, parkinsonism, pas d’épilepsie
+3. delins, 31 ans, épilepsie
+**** [cite:@zarate_lessons_2015] 1 male, family, indel inherited, dysmorpho
+brother 20 ans+ sister. Mother = mosaicism, healthy
+brother = more severe, epilepsie
+Dysmorpho
+- male = high nasal bridge, downslanted palpebral fissures and large ears with prominent inferior crus of the antihelix.
+- female : high nasal bridge and low hanging columella.
+  Pas encore de parkinsion
+**** [cite:@redon_intragenic_2017] 1 male, inframe deletion, de novo, no dysmorpho
+epilepsie, pas de dysmorphie
+atrophy of the optic nerves and cerebellar vermis
+**** [cite:@takano_early_2017] 1 male, 4 years,  splice donor site, de novo, dysmorpho
+epilepsie
+dysmorpho : long eyelashes, mild hypertelorism, a depressed nasal bridge and a small mouth
+*** TODO Trouver publi avec missens chez garçon
+*** TODO Trouver publi avec formes héritées chez garçon
+- WDR45 mutations in three male patients with West syndrome.pdf:
+*** TODO Dysmorpho
 Regarder vite fait les articles
-**** TODO Contacter sur clinvar les autres chercheurs ayant soumis des variants sur les 2 acides aminés Arg
+*** WAIT Contacter sur clinvar les autres chercheurs ayant soumis des variants sur les 2 acides aminés Arg
 http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chrX%3A49075563%2D49075589&hgsid=1347485355_LOvhtXeCAPyml1SnLdAbEEJrDy3l
 perte de fonction en 233 avec plusieurs articles
 Arg233 : rien à faire car tronquant ? Déjà rapporté
@@ -88,6 +112,11 @@ Arg232 : 5 faux-sens
 - 2 [[https://www.ncbi.nlm.nih.gov/clinvar/variation/805749/][c.694C>T (p.Arg232Cys)]] dont 1 rapporté par strasbourg
 - 2 sur [[https://www.ncbi.nlm.nih.gov/clinvar/variation/639948/?new_evidence=true][c.695G>A (p.Arg232His)]]
 - 1 sur  [[https://www.ncbi.nlm.nih.gov/clinvar/variation/981426/][c.695G>T (p.Arg232Leu)]] par Strasbourg
+** Mémoire
+*** TODO Figure avec tikz des variant sur la séquence d'acide aminé
+:PROPERTIES:
+:CATEGORY: memoire
+:END:
 *** DONE Plan
 CLOSED: [2022-05-05 jeu. 17:56] DEADLINE: <2022-05-04 mer. 19:00>
 *** Spécificité
