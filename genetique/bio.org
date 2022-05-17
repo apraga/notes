@@ -10,3 +10,17 @@ XX: possibilité d’une contamination maternelle
 Cytotrophoblastiques : mosaique, pas assez de mitoses, anomale déséquilibrée
 
 Source [[http://www.eaclf.org/docs/GBPcyto/Arbre-caryoVC.pdf][Recos EACLF]]
+* Variant
+Transmission
+- AD = perte de fonction x 1, gain de fonction "toxique"
+- AR = perte de fonction x1
+- Dominant négatif : gain de fonction mais impacte l’allèle saine -> pas de protéine
+- Lié à l’X
+  NMD: coupe l’ARN si protéine trop courte (codon stop prématuré) = mécanisme de contrôle
+  NB: il existe 3 synonymes pour un codon stop
+
+Variant
+- faux-sens = peut tout donner !
+- stop et frameshift = perte de fonction
+
+NB: attention aux codons qui sont répartis sur 2 exons
