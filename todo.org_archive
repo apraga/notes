@@ -209,3 +209,23 @@ SCHEDULED: <2022-04-21 Thu>
 :ARCHIVE_TODO: DONE
 :END:
 
+
+* Genome
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-05-19 Thu 22:28
+:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_OLPATH: Projet
+:ARCHIVE_CATEGORY: projets
+:END:
+** KILL Regarder trafic réseau
+SCHEDULED: <2022-04-12 Tue>
+1. /Login avec
+nomNetbios	""
+username	"XXXX"
+password	"YYY"
+returnUrl	"/"
+operation	""
+emailOuSms	""
+Mais on peut directvement faire
+emailOuSms	"sms"
+2. Générer le cookie puis avoir le token en faisant une requête get

@@ -75,8 +75,9 @@ CLOSED: [2022-04-16 Sat 23:42] DEADLINE: <2022-04-16 Sat 23:59>
 *** DONE Confirmer date avec Joris
 CLOSED: [2022-04-23 Sat 17:14]
 *** DONE Réserver
-** TODO Appeler pour demander carte médecin internat
-DEADLINE: <2022-03-30 Wed>
+** WAIT Appeler pour demander carte médecin internat
+DEADLINE: <2022-05-22 Sun>
+Attente code par courrier puis rappeler ANS
 ** TODO Notes <2022-04-17 Sun>
 SCHEDULED: <2022-04-17 Sun>
 ** TODO Mariage Florian :florian:
@@ -111,6 +112,10 @@ SCHEDULED: <2022-04-24 Sun>
 *** WAIT Échanger
 Envoyé<2022-05-07 Sat>
 *** TODO Nouvelle commande
+** WAIT Minoxidil
+Mail envoyé <2022-05-19 Thu>
+** TODO Copier photos famille depuis drive yvain sur drive famille
+SCHEDULED: <2022-05-21 Sat>
 * Ledger
 :PROPERTIES:
 :CATEGORY: compta
@@ -180,19 +185,6 @@ DEADLINE: <2022-04-27 Wed>
 :END:
 *** DONE Regarder ce qu'Yvain a fait
 
-** Genome
-*** TODO Regarder trafic réseau
-SCHEDULED: <2022-04-12 Tue>
-1. /Login avec
-nomNetbios	""
-username	"XXXX"
-password	"YYY"
-returnUrl	"/"
-operation	""
-emailOuSms	""
-Mais on peut directvement faire
-emailOuSms	"sms"
-2. Générer le cookie puis avoir le token en faisant une requête get
 * Emacs
 :PROPERTIES:
 :CATEGORY: emacs
