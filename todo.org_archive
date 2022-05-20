@@ -229,3 +229,37 @@ emailOuSms	""
 Mais on peut directvement faire
 emailOuSms	"sms"
 2. Générer le cookie puis avoir le token en faisant une requête get
+
+* DONE taskwarrior tui 0.22
+CLOSED: [2022-04-10 Sun 17:41] SCHEDULED: <2022-04-10 Sun>
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-05-20 Fri 22:17
+:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_OLPATH: FreeBSD
+:ARCHIVE_CATEGORY: todo
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: freebsd
+:END:
+
+* DONE opengraph v 0.6.3
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-05-20 Fri 22:17
+:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_OLPATH: FreeBSD
+:ARCHIVE_CATEGORY: todo
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: freebsd
+:END:
+Ok 3.10->3.7
+
+* DONE Kitty 0.25
+CLOSED: [2022-04-17 Sun 17:19] SCHEDULED: <2022-04-13 Wed>
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-05-20 Fri 22:17
+:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_OLPATH: FreeBSD
+:ARCHIVE_CATEGORY: todo
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: freebsd
+:END:
+

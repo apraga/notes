@@ -1,5 +1,5 @@
 * Banque :banque:
-** TODO Commander nouvelle CB :banque:
+** WAIT Commander nouvelle CB :banque:
 Demande faite <2022-04-03 Sun>
 Reçue mais pas de chiffre en relief
 Mail envoyé pour savoir si on peut louer avec mais a priori non (carte de débit !)
@@ -8,7 +8,8 @@ Renvoyer un mail car n’ont pas compris la question
 *** DONE Souscription
 CLOSED: [2022-04-23 Sat 17:13]
 *** TODO Carte bancaire
-*** TODO Envoyer fiche de salaire
+DEADLINE: <2022-05-21 Sat>
+*** DONE Envoyer fiche de salaire
 *** TODO Envoyer relevé
 *** TODO Transfert compte bancaire ?
 * DES :anki:
@@ -75,9 +76,12 @@ CLOSED: [2022-04-16 Sat 23:42] DEADLINE: <2022-04-16 Sat 23:59>
 *** DONE Confirmer date avec Joris
 CLOSED: [2022-04-23 Sat 17:14]
 *** DONE Réserver
-** WAIT Appeler pour demander carte médecin internat
+** DONE Appeler pour demander carte médecin internat
 DEADLINE: <2022-05-22 Sun>
 Attente code par courrier puis rappeler ANS
+** TODO Vérifier réception carte médecin
+DEADLINE: <2000-05-20 Sat>
+Devrait arriver<2022-05-27 Fri>
 ** TODO Notes <2022-04-17 Sun>
 SCHEDULED: <2022-04-17 Sun>
 ** TODO Mariage Florian :florian:
@@ -116,6 +120,10 @@ Envoyé<2022-05-07 Sat>
 Mail envoyé <2022-05-19 Thu>
 ** TODO Copier photos famille depuis drive yvain sur drive famille
 SCHEDULED: <2022-05-21 Sat>
+** TODO Notes Coran
+SCHEDULED: <2022-05-21 Sat>
+** TODO Rendre le Coran
+DEADLINE: <2022-05-22 Sun>
 * Ledger
 :PROPERTIES:
 :CATEGORY: compta
@@ -189,15 +197,11 @@ DEADLINE: <2022-04-27 Wed>
 :PROPERTIES:
 :CATEGORY: emacs
 :END:
-* FreeBSd
-** DONE taskwarrior tui 0.22
-CLOSED: [2022-04-10 Sun 17:41] SCHEDULED: <2022-04-10 Sun>
+* FreeBSD :freebsd:
 ** TODO taskwarrior tui 0.23.4
-** DONE opengraph v 0.6.3
-Ok 3.10->3.7
-** DONE Kitty 0.25
-CLOSED: [2022-04-17 Sun 17:19] SCHEDULED: <2022-04-13 Wed>
-
+SCHEDULED: <2022-05-20 Fri>
+** TODO ormolu 0.5.0.0
+SCHEDULED: <2022-05-20 Fri>
 * Maison
 ** DONE Utiliser chèque énergie
 CLOSED: [2022-04-10 Sun 17:20] SCHEDULED: <2022-04-10 Sun>

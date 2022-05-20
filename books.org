@@ -20,6 +20,7 @@ Voir [[file:books-lists][books lists]] pour des idées
 *** DONE Fortress in the Eye of Time
 *** DONE Fortress of Eagles
 *** DONE Fortress of Owls
+*** STRT Fortress of Eagles
 ** TODO Stardust
 ** DONE G. Cook - The Black Company 6/6
 ** Pern [6/25]
@@ -136,7 +137,7 @@ Voir [[file:books-lists][books lists]] pour des idées
 ** DONE The name of the rose
 
 * La pleiade :la_pleiade:
-** STRT Le coran
+** DONE Le coran
 ** DONE Duby, [[file:books/duby.md][Oeuvres]]
 ** DONE [[file:books/homere.md][Homère, Iliade -- Odyssée]]
 ** DONE Hugo, [[file:books/travailleurs_de_la_mer.md][Les Travailleurs de la mer]] -- [[file:books/notre_dame_de_paris.md][Notre-Dame de Paris]]
