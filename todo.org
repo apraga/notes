@@ -70,6 +70,9 @@ CLOSED: [2022-04-18 Mon 21:47]
 ** TODO QROC 3
 ** DONE QROC S2
 CLOSED: [2022-04-16 Sat 23:42] DEADLINE: <2022-04-16 Sat 23:59>
+* Internat
+** TODO Demande interchu Grenoble novembre 2022
+*** TODO Mail PrThevenon
 * Inbox
 ** DONE Organiser enterrement vie de garçon :joris:
 *** DONE Inviter + programme
@@ -79,9 +82,6 @@ CLOSED: [2022-04-23 Sat 17:14]
 ** DONE Appeler pour demander carte médecin internat
 DEADLINE: <2022-05-22 Sun>
 Attente code par courrier puis rappeler ANS
-** TODO Vérifier réception carte médecin
-DEADLINE: <2000-05-20 Sat>
-Devrait arriver<2022-05-27 Fri>
 ** TODO Notes <2022-04-17 Sun>
 SCHEDULED: <2022-04-17 Sun>
 ** TODO Mariage Florian :florian:
@@ -112,21 +112,12 @@ CLOSED: [2022-04-17 Sun 11:14] SCHEDULED: <2022-04-10 Sun>
 CLOSED: [2022-04-17 Sun 17:18] DEADLINE: <2022-04-17 Sun 12:30>
 *** TODO Notes <2022-04-24 Sun>
 SCHEDULED: <2022-04-24 Sun>
-** TODO Alimentation PC portable
-*** WAIT Échanger
-Envoyé<2022-05-07 Sat>
-*** TODO Nouvelle commande
-** WAIT Minoxidil
-Mail envoyé <2022-05-19 Thu>
 ** TODO Copier photos famille depuis drive yvain sur drive famille
 SCHEDULED: <2022-05-21 Sat>
-** TODO Notes Coran
-SCHEDULED: <2022-05-21 Sat>
-** TODO Rendre le Coran
-DEADLINE: <2022-05-22 Sun>
-** WAIT Changer disque dur PC portable laure
-DEADLINE: <2022-05-23 Mon>
-Commandé
+** TODO Payer taxes ordures ménagères
+DEADLINE: <2022-06-06 Mon>
+** TODO Aller chercher colis
+SCHEDULED: <2022-06-03 Fri>
 * Ledger
 :PROPERTIES:
 :CATEGORY: compta
@@ -196,25 +187,12 @@ DEADLINE: <2022-04-27 Wed>
 :END:
 *** DONE Regarder ce qu'Yvain a fait
 
-* Emacs
-:PROPERTIES:
-:CATEGORY: emacs
-:END:
 * FreeBSD :freebsd:
 ** DONE taskwarrior tui 0.23.4
 SCHEDULED: <2022-05-20 Fri>
 ** TODO ormolu 0.5.0.0
 SCHEDULED: <2022-05-20 Fri>
-* Maison
-** DONE Utiliser chèque énergie
-CLOSED: [2022-04-10 Sun 17:20] SCHEDULED: <2022-04-10 Sun>
-
-* Impôts
-** DONE Déclaration de revenus
-a priori, rien à déclarer en plus value selon Aurélien.
-Va demander au notaire. Mot mis sur la déclaration.
-SCHEDULED: <2022-04-24 Sun>
-
+**
 * Langues
 ** TODO Allemand
 SCHEDULED: <2022-05-07 Sat +1d>
@@ -233,6 +211,3 @@ SCHEDULED: <2022-05-07 Sat +1d>
 - State "DONE"       from "TODO"       [2022-05-03 Tue 23:09]
 - State "DONE"       from "TODO"       [2022-05-02 Mon 23:09]
 
-* Sport
-** DONE Revoir progression pour anneaux
-SCHEDULED: <2022-05-03 Tue>
