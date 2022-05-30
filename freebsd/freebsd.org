@@ -447,9 +447,17 @@ Code:
    :CUSTOM_ID: haskell
    :END:
 
-Incrémenter la version dans le Makefile Générer la liste des dépendences
-avec: make makesum make cabal-extract cabal-extract-deps make
-make-use-cabal-revs Mettre à jour le Makefile et lancer les tests avec
+Incrémenter la version dans le Makefile
+Générer la liste des dépendences avec:
+#+begin_src sh
+make makesum
+make cabal-extract cabal-extract-deps
+#+end_src
+Mettre à jour le Makefile
+#+begin_src sh
+make make-use-cabal-revs
+#+end_src
+et lancer les tests avec
 poudrière
 
 ** Python
