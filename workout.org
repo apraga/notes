@@ -5290,3 +5290,5 @@ Compression: 3x9
 Routine: 3x{1+1}
 Muscle-upx1 - RTO 1s - Tucked pushed-upx1 - L-sit (halfway) - negative muscle-up - skin the cat - negative FL
 + Compression x3
+* <2022-06-02 Thu> Tricking
+Essai combo
