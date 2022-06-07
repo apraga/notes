@@ -1,0 +1,19 @@
+#+title: Emacs Org-mode
+
+* Bibliography
+Avec doom-emacs, dans config.el
+#+begin_src lisp
+(after! citar
+  (setq! citar-bibliography '("~/org/recherche/wdr45/memoire.bib"))
+#+end_src
+  Dans le fichier, il faut
+  #+begin_src org
+#+bibliography: memoire.bib
+  #+end_src
+  IL faut également biber
+  Enfin, il faut utiliser (:lang (latex +latemk))
+  Sous freebsd, il faut apparement forcer org-latex-pdf-process à latexmk..
+
+* Dired
+( pour voir les détails
+) pour voir les infos git
