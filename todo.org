@@ -72,27 +72,22 @@ CLOSED: [2022-04-18 Mon 21:47]
 CLOSED: [2022-04-16 Sat 23:42] DEADLINE: <2022-04-16 Sat 23:59>
 * Internat
 ** TODO Demande interchu Grenoble novembre 2022
-*** TODO Mail PrThevenon
+*** DONE Mail PrThevenon
+*** TODO Relancer Pr Thevenon
+* Electricité :maison:
+** DONE Passer en heures creuses
+** TODO Voir avec proprio pour changer disjoncteur
+** TODO Changer ampoule
 * Inbox
-** DONE Organiser enterrement vie de garçon :joris:
-*** DONE Inviter + programme
-*** DONE Confirmer date avec Joris
-CLOSED: [2022-04-23 Sat 17:14]
-*** DONE Réserver
-** DONE Appeler pour demander carte médecin internat
-DEADLINE: <2022-05-22 Sun>
-Attente code par courrier puis rappeler ANS
 ** TODO Notes <2022-04-17 Sun>
 SCHEDULED: <2022-04-17 Sun>
+** TODO Mariage Joris :joris:
+*** TODO cadeau
 ** TODO Mariage Florian :florian:
 *** TODO Cadeau
-*** DONE Billet de trains
-*** DONE Hébergement
-*** DONE Location voiture
-*** DONE Voir avec Miva pour hébergement Paris
-** WAIT Échanger T-shirt Chullanka
+** TODO Échanger T-shirt Chullanka
 Renvoyé<2022-05-07 Sat>
-** Japonais :japonais:
+Rappeler pour voir avec code postal
 ** Miura :miura:
 *** Anki :anki:
 **** TODO Leçon 2
@@ -132,6 +127,7 @@ CLOSED: [2022-04-09 Sat 14:25]
 Pas de réparation possible avan fin avril
 *** DONE Appel garage Yamaha Besançon pour commencer réparation
 SCHEDULED: <2022-04-29 Fri>
+*** TODO Aller chercher moto
 ** DONE Signer contrat moto
 * Notes biologie
 ** Biologie cellulaire Dunod
