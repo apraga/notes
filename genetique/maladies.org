@@ -89,3 +89,4 @@ Suspected on :
   - Characteristic facial features (most commonly, triangular-shaped face with a broad forehead and a pointed chin, bulbous tip of the nose, deeply set eyes, and hypertelorism; see Figure 1)
 Genes = JAG1, NOTCH2
 AR
+Pronostic: renal transplant, cardiac... but not lethal
