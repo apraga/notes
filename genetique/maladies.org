@@ -77,3 +77,15 @@ others = structural, infectious, metabolic and immunologic defects and genetic a
  ischemic encephalopathy is reported as one of the most common causes of ISs.
  “United Kingdom Infantile Spasms Study” (UKISS) [14],  hypoxic-ischemic encephalopathy was reported in 10%, followed by chromosomal abnormalities, complex malformation syndromes and perinatal stroke (8%), tuberous sclerosis (7%), and periventricular leukomalacia or hemorrhage (respectively, in 5%)
 Source https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7655587/
+
+* Syndrome d’Alagille
+Suspected on :
+- histologic = bile duct paucity (an increased portal tract-to-bile duct ratio)
+- 3/5 major clinical features (in addition to bile duct paucity):
+  - Cholestasis
+  - Cardiac defect (most commonly stenosis of the peripheral pulmonary artery and its branches)
+  - Skeletal abnormalities (most commonly butterfly vertebrae identified in AP chest radiographs)
+  - Ophthalmologic abnormalities (most commonly posterior embryotoxon
+  - Characteristic facial features (most commonly, triangular-shaped face with a broad forehead and a pointed chin, bulbous tip of the nose, deeply set eyes, and hypertelorism; see Figure 1)
+Genes = JAG1, NOTCH2
+AR
