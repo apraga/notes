@@ -18,3 +18,8 @@ Stéroides précoce (orage cytokinique, anti-inflammatoire)
 Oseltamivir pour l’infection (case report seulement)
 Vaccin anti-grippe ?
 Immunothérapie (case report)
+
+* TRIO
+Faux-sens = 2 hotspots
+- microcéphalie si dans spectrine
+- macrocéphalie si GEFD1
