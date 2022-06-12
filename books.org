@@ -4,7 +4,7 @@ Voir [[file:books-lists][books lists]] pour des idées
 ** HOLD The art of computer programming, volume 1
 ** HOLD Haskell Programming From First Principles [5/31]
 
-* Fanfic :fanfic:
+* Fanfiction :fanfic:
 ** Harry potter
 :PROPERTIES:
 :CATEGORY: harry potter
@@ -20,35 +20,18 @@ Voir [[file:books-lists][books lists]] pour des idées
 *** DONE Fortress in the Eye of Time
 *** DONE Fortress of Eagles
 *** DONE Fortress of Owls
-*** STRT Fortress of Eagles
+*** STRT Fortress of Dragons
 ** TODO Stardust
 ** DONE G. Cook - The Black Company 6/6
-** Pern [6/25]
+** Pern
 *** DONE Dragonflight
 *** DONE Dragonquest
 *** DONE Dragonsong
 *** DONE Dragonsinger
 *** DONE The White Dragon
 *** DONE Dragondrums
-*** TODO Moreta: Dragonlady Of Pern (1983)
-*** TODO Nerilka's Story (1984)
-*** TODO Dragonsdawn (1988)
-*** TODO The Renegades of Pern (1989)
 *** TODO All The Weyrs of Pern (1991)
-*** TODO Rescue Run (1991)
-*** TODO The Dolphin's Bell (1993)
-*** TODO The Chronicles of Pern: First Fall (1993)
-*** TODO The Dolphins of Pern (1994)
-*** TODO Dragonseye (1996)
-*** TODO The Masterharper Of Pern (1998)
 *** TODO The Skies of Pern (2001)
-*** TODO A Gift of Dragons (2002)
-*** TODO Dragon's Kin (with Todd McCaffrey) (2003)
-*** TODO Dragonsblood (by Todd McCaffrey) (2005)
-*** TODO Dragon's Fire (with Todd McCaffrey) (2006)
-*** TODO Dragon Harper (by Todd McCaffrey) (2007)
-*** TODO Dragonheart (by Todd McCaffrey) (2008)
-*** TODO Dragongirl (by Todd McCaffrey) (2010
 ** DONE R.R Martin - A Song of Ice and Fire 5/5
 ** DONE R.R Martin - Windhaven
 ** TODO R.R Martin - Fire and Blood
@@ -70,10 +53,7 @@ Voir [[file:books-lists][books lists]] pour des idées
 
 ** DONE Clarke, S. - Dr Norrel and Mr Strange
 
-* Fiction
-  :PROPERTIES:
-  :CATEGORY_ID: fiction
-  :END:
+* Fiction :fiction:
 ** DONE Violet Evergarden [2/2]
 ** DONE Liu, C. - The three-body problem :sci-fi:
 ** DONE Liu, C. - The dark forest
@@ -104,14 +84,18 @@ Voir [[file:books-lists][books lists]] pour des idées
 ** STRT [#A] Oxford history of Ancient Egypt
 ** DONE Croisades et Orient latin - XIe-XIVe siècle
 
-* Horror
-  :PROPERTIES:
-  :CUSTOM_ID: horror
-  :END:
-
+* Horror :horror:
 ** DONE Pride and Prejudice and Zombies by Jane Austen
 ** DONE At the mountains of madness the definitive edition
 
+* La pleiade :la_pleiade:
+** DONE Le coran
+** DONE Duby, [[file:books/duby.md][Oeuvres]]
+** DONE [[file:books/homere.md][Homère, Iliade -- Odyssée]]
+** DONE Hugo, [[file:books/travailleurs_de_la_mer.md][Les Travailleurs de la mer]] -- [[file:books/notre_dame_de_paris.md][Notre-Dame de Paris]]
+** DONE [[file:books/graal.md][Le Livre du Graal]] [3/3]
+** DONE [[file:milles_et_une_nuits.md][Les Mille Et Une Nuits]] [3/3]
+** DONE [[file:books/guerre_et_paix.md][Tolstoi, Guerre et paix]]
 * Litterature :litterature:
 ** TODO Atlas Shrugged
 ** TODO Beowulf (Michael Alexander translation)
@@ -136,14 +120,6 @@ Voir [[file:books-lists][books lists]] pour des idées
 ** DONE The hound of the baskervilles
 ** DONE The name of the rose
 
-* La pleiade :la_pleiade:
-** DONE Le coran
-** DONE Duby, [[file:books/duby.md][Oeuvres]]
-** DONE [[file:books/homere.md][Homère, Iliade -- Odyssée]]
-** DONE Hugo, [[file:books/travailleurs_de_la_mer.md][Les Travailleurs de la mer]] -- [[file:books/notre_dame_de_paris.md][Notre-Dame de Paris]]
-** DONE [[file:books/graal.md][Le Livre du Graal]] [3/3]
-** DONE [[file:milles_et_une_nuits.md][Les Mille Et Une Nuits]] [3/3]
-** DONE [[file:books/guerre_et_paix.md][Tolstoi, Guerre et paix]]
 * Math
 :PROPERTIES:
 :CATEGORY: math
@@ -151,8 +127,24 @@ Voir [[file:books-lists][books lists]] pour des idées
 ** HOLD Gowers, T. (2010): The princeton companion to mathematics
 ** TODO Hastie, T., Tibshirani, R., & Friedman, J. (2009): The elements of
 statistical learning Texte de référence pour classification, machine
-** TODO [[file:Cecil-Goldman][Cecil Goldman]] (26th edition)
-** TODO [[file:Auerbach's%20wilderness%20medecine][Auerbach]]
+* Medenice
+** TODO Cecil-Goldman (26th edition)
+- Renal and Genitourinary Diseases 1.
+  - [X] Chapter 106 Approach to the Patient with Renal Disease
+  - [X] Chapter 107 Structure and Function of the Kidneys
+  - [X] Chapter 112 Acute Kidney Injury
+- Infectious Diseases
+  - [X] hapter 318 Candidiasis
+- Neurology Disease
+  - [X] Chapter 369 Psychiatric Disorders in Medical Practice
+** TODO Auerbach's wilderness medecine
+- Mountain Medicine
+  - [X] Chapter 1 High-Altitude Physiology
+  - [X] Chapter 2 High-Altitude Medicine and Pathophysiology
+  - [X] Chapter 4 Avalanches
+  - [X] Chapter 5 Lightning-Related Injuries and Safety
+- Cold and Heat
+  - [X] Chapter 13 Clinical Management of Heat-Related Illnesses
 
 * Philosophy :philosophy:
 ** STRT A History of Western Philosophy

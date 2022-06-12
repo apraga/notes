@@ -68,6 +68,7 @@ CLOSED: [2022-04-18 Mon 21:47]
 *** TODO Dysmorpho nouveau-né
 *** TODO Autopsie foetale
 ** TODO QROC 3
+DEADLINE: <2022-06-18 Sat>
 ** DONE QROC S2
 CLOSED: [2022-04-16 Sat 23:42] DEADLINE: <2022-04-16 Sat 23:59>
 * Internat
@@ -79,15 +80,21 @@ CLOSED: [2022-04-16 Sat 23:42] DEADLINE: <2022-04-16 Sat 23:59>
 ** TODO Voir avec proprio pour changer disjoncteur
 ** TODO Changer ampoule
 * Inbox
-** TODO Notes <2022-04-17 Sun>
-SCHEDULED: <2022-04-17 Sun>
 ** TODO Mariage Joris :joris:
 *** TODO cadeau
 ** TODO Mariage Florian :florian:
 *** TODO Cadeau
-** TODO Échanger T-shirt Chullanka
+** WAIT Échanger T-shirt Chullanka
 Renvoyé<2022-05-07 Sat>
 Rappeler pour voir avec code postal
+Vont renvoyer
+** TODO Copier photos famille depuis drive yvain sur drive famille
+SCHEDULED: <2022-05-21 Sat>
+** TODO Payer taxes ordures ménagères
+DEADLINE: <2022-06-06 Mon>
+** TODO Notes <2022-06-12 Sun>
+DEADLINE: <2022-06-12 Sun>
+* Japonais
 ** Miura :miura:
 *** Anki :anki:
 **** TODO Leçon 2
@@ -101,34 +108,19 @@ Rappeler pour voir avec code postal
 :END:
 *** TODO Lire dialogue fin leçon 10
 SCHEDULED: <2022-04-03 Sun>
-*** DONE Notes <2022-04-10 Sun>
-CLOSED: [2022-04-17 Sun 11:14] SCHEDULED: <2022-04-10 Sun>
-*** DONE Préparer <2022-04-17 Sun>
-CLOSED: [2022-04-17 Sun 17:18] DEADLINE: <2022-04-17 Sun 12:30>
-*** TODO Notes <2022-04-24 Sun>
-SCHEDULED: <2022-04-24 Sun>
-** TODO Copier photos famille depuis drive yvain sur drive famille
-SCHEDULED: <2022-05-21 Sat>
-** TODO Payer taxes ordures ménagères
-DEADLINE: <2022-06-06 Mon>
-** TODO Aller chercher colis
-SCHEDULED: <2022-06-03 Fri>
+*** DONE Notes <2022-04-17 Sun>
+SCHEDULED: <2022-04-17 Sun>
 * Ledger
 :PROPERTIES:
 :CATEGORY: compta
 :END:
-** DONE janvier 2022
-** DONE février 2022
-CLOSED: [2022-04-16 Sat 15:06] DEADLINE: <2022-03-27 Sun>
+** TODO janvier 2022
+** TODO février 2022
+** TODO Mars 2022
+SCHEDULED: <2022-06-12 Sun>
+** TODO Avril 2022
+** TODO Mail 2022
 * Moto :moto:
-** TODO Réparer
-*** DONE Dépannage
-CLOSED: [2022-04-09 Sat 14:25]
-Pas de réparation possible avan fin avril
-*** DONE Appel garage Yamaha Besançon pour commencer réparation
-SCHEDULED: <2022-04-29 Fri>
-*** TODO Aller chercher moto
-** DONE Signer contrat moto
 * Notes biologie
 ** Biologie cellulaire Dunod
 *** TODO chapitres déjà fait :anki:
