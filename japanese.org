@@ -472,3 +472,14 @@ ex:
 ** Grammaire
 ことになりました : il a été décidé pour moi (c'est un évènement unique). Ex: il a été décidé que je déménage
 ことになっている : il est convenu = c'est une habitude ! Ex: il est convenu de ne pas fumer ici
+* <2022-06-12 Sun>
+** Grammaire
+Questions indirecte
+- si oui/non : verbe/ajectif + か
+  - 予約できるか　どうか　わかりません
+  （よやく）
+  - 便利かどうかわかりません
+- question avec "quoi, qui...": pas besoin de どうか
+  - どこに 行くか おしえてください
+  - 何の医者なるか わかりません
+    = je ne sais pas quel sorte de médecin je veux être
