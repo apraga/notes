@@ -1,0 +1,24 @@
+#+title: Qrocs3
+* QCM
+1. Syndrome de Taybi-Linder, syndrome de Roifman, syndrome de Lowry-Wood
+2. Le diagnostic moléculaire est utile pour différencier les différentes formes d’albinisme, qui peuvent se recouper cliniquement (oculo-cutané, oculaire, syndromique). Cela permet d’éviter de passer à côté de formes syndromiques.
+   De plus, la porte d’entrée peut être ophtalmologique et nécessite une exploration génétique.
+   Enfin, cela permet de donner un conseil génétique approprié (transmission autosomique récessive ou liée à l’X). Un DPN peut être proposé, surtout pour les formes syndromiques graves.
+
+Il faut donc un examen ophtalmologique complet, avec fond d’oeil, exploration à la lampe à fente, OCT.
+Sur le plan génétique, étude des 20 gènes impliqués.
+Sur le plan dermatologique, suivi pour le risque de cancer.
+1. Plates-formes d’expertises Maladies rares (partage d’expertise au niveau local),  Équipes Relais Handicaps Rare (repérer le patient, le conseiller, former les professionnels)
+2. Anamnèse : début anténatal ? histoire familiale (taille des parents)
+   Examen clinique : poids (pour savoir si retard statural isolé), périmètre crânien, anomalies squelettiques, forme syndromique, déficience intellectuelle, dysmorphie
+   Bilan : caryotype, âge osseux
+   - si isolé, bilan endocrinien +/- rénal, cardiaque
+   - si syndromique : en fonction de l’origine (CGH-array si pas d’orientation)
+     - PC normal par rapport à la taille : visage triangulaire, difficulté d’alimentation, caryotype normal -> Silver-Russel
+     - si diminué :
+       - carytoype normal :
+         - micrognathie, front en arrière -> syndrome de Seckel
+         - peau sèche, cheveux épars -> syndrome de Taybi-Linder/Roifman [étude de RNU4ATAC]
+         - pas de DI, dents mobile ->
+         - petite oreilles, hypoplasie de la patella -> syndrome de Meier-Gorlin
+       - anomalies chromosomiques
