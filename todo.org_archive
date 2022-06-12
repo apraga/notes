@@ -415,3 +415,29 @@ Attente code par courrier puis rappeler ANS
 :ARCHIVE_TODO: DONE
 :ARCHIVE_ITAGS: florian
 :END:
+
+* DONE Réparer
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-06-12 Sun 11:19
+:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_OLPATH: Moto
+:ARCHIVE_CATEGORY: todo
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: moto
+:END:
+** DONE Dépannage
+CLOSED: [2022-04-09 Sat 14:25]
+Pas de réparation possible avan fin avril
+** DONE Appel garage Yamaha Besançon pour commencer réparation
+SCHEDULED: <2022-04-29 Fri>
+** DONE Aller chercher moto
+
+* DONE Signer contrat moto
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-06-12 Sun 11:19
+:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_OLPATH: Moto
+:ARCHIVE_CATEGORY: todo
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: moto
+:END:
