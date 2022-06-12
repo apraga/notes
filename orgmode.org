@@ -17,3 +17,14 @@ Avec doom-emacs, dans config.el
 * Dired
 ( pour voir les détails
 ) pour voir les infos git
+* Latex export
+Utiliser :booktabs t pour avoir des jolies tableaux.
+Apparement, il suffit de rajouter le package dans les header
+#+begin_src org
+#+latex_header: \usepackage{booktabs}
+
+#+ATTR_LATEX: :booktabs t
+| Disease | Gene | Onset | Symptoms | MRI |
+|---------+------+-------+----------+-----|
+| lol     |      |       |          |     |
+#+end_src
