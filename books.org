@@ -16,11 +16,12 @@ Voir [[file:books-lists][books lists]] pour des idées
 * Fantasy :fantasy:
 ** TODO The Name of the Wind (Kingkiller chronicles)
 ** TODO Robin Hobb
-** Cherry, C. J - Fortress
+** Cherry, C. J - Fortress [4/5]
 *** DONE Fortress in the Eye of Time
 *** DONE Fortress of Eagles
 *** DONE Fortress of Owls
-*** STRT Fortress of Dragons
+*** DONE Fortress of Dragons
+*** TODO Fortress of ice
 ** TODO Stardust
 ** DONE G. Cook - The Black Company 6/6
 ** Pern
