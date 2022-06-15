@@ -1,0 +1,68 @@
+#+title: Qroc S2
+#+author: Alexis Praga
+#+options: toc:nil
+* QCM
+
+- QCM1
+  1. Oui
+  2. non,  4e mois intrautérin
+  3. non, 3-4
+  4. non, 4 ans
+  5. oui++
+- QCM2: 3 aspects : il faut une restriction de participation à la vie sociale ou une limitation d'activité due à une altération de structure ou de fonction
+   Le taux d'incapacité est établi sur 2 critères : entrave à ra vie sociale et atteinte de l'autonomie.
+   NB: le dossier MDPH doit contenir l'état de l'enfant, des informations médicales, l'autonomie, les demandes d'aménagement de la scolarité.
+- QCM 3
+Craniosténose isolée : CGH array
+- QCM 4
+Crouzon : FGFR 2 (exons 8,10g autres), FGFR3 (2 mutations spécifiques), TWIST1, ERF, IL11RA
+- QCM 5
+Prescrire CGH car il peut y avoir des grandes délétions dans 10%
+- QCM 6
+  1. oui
+  2. non, c'est le CFC
+  3. oui
+  4. non
+  5. non
+- QCM7
+  1. oui
+  2. oui
+  3. oui
+  4. non
+  5. oui
+- QCM8
+  1. oui
+  2. non, CMH
+  3. non
+  4. oui
+  5. oui
+* QROC1
+- Q1: syndrome de Pendred
+- Q2: atteinte visuelle (héméralopie, restriction du champ visuel) pour orienter vers un usher. De manière générale : ATCD familiaux de surdité, arguments pour une forme syndromique,
+- Q3 : fond d'oeil, ERG pour USher et sérologie CMV
+- Q4 : CHARGE si canaux semi-circulaires absents, Waardenbourg si canaux et vestibules dilatés
+- Q3: Waardenburg = albinisme partiel (mèche blanche, iris bleu porcelaine avec hétérochromie, cutané). CHARGE = visage (carré, paralysie faciale, oreille sans lobules) et les autres signes du syndrome (colobome, malformatinos cardiaques, retard, anosmie, anomalise génitales si garçon)
+  * QROC 2
+* QROC2
+- Q1 Caryotype, ACPA
+- Q2 deletion sur 8p23.1. L'haploinsuffisance de GATA4 est associée aux malformations cardiaques et aux hernies diaphragmatiques. Donc on a un diagnostic, pas d'examen complémentaires.
+  PronosticN retard psychomoteur, DI modéréé/légère, troubles du comportement, possibles anomalise génitales chez le garçon
+  Conseil génétique : la plupart des cas rapportés sont de novo donc risque < 1% d'avoir d'autres enfants atteints
+- Q3 : Syndrome de Simpson-Golabi-Behmel sur l'avance de croissance, l'hernie diaphragmatique et la polydactylie
+  Conseil génétique . lié à l'X donc si la mère est porteuse, 50% risque de le transmettre. Si l'enfant est un garçon, il sera affecté. Si c'est une fille, peut être atteinte
+  DPN possible
+- Q4: pancreatic hypoplasia-diabetes-congenital heart disease syndrome avec mutation de GATA6 (OMIM #@600001 )
+  Étude de GATA6
+  Autosomique dominante, DPN possible
+* QROC3
+- Q1 main droite fendue, «sandal gap» sur le pied droit
+- Q2 anomalie réductionnelle mésoaxiale
+- Q3 anomalie de la croissance proximo-distale
+- Q4 atteinte des os longs, dysostose mandibulofaciale, surdité, fente, anomalies dentaire/dermato/ongle, anomalie mamaire
+- Q5 10q24, enhancer de FGF8
+- Q6 non, les duplications sont de tailles variable
+- Q7 autosomique dominant
+* QROC4
+- Q1 Syndrome Kabuki
+- Q2 anomalies squbelettes, pads
+- Q3 KMD6A
