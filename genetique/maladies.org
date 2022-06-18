@@ -90,3 +90,40 @@ Suspected on :
 Genes = JAG1, NOTCH2
 AR
 Pronostic: renal transplant, cardiac... but not lethal
+
+* Hémochromatose
+
+** Physiopathologie
+Circuit quasi-fermé : la destruction des globus rouges par les macrophages recycle le fer. Peu de pertes, peu d’apport
+Régulation au niveau de l’intestin car pas de mécanisme d’excrétion (hormis desquamation ) !
+Hepcidine = peptite synthésé dans le foie qui est le régulateur principale pour fer
+- bloque absorption intestinale
+- bloque relargage du stockage du fer (foie)
+  -> peu d’hepicidine = surcharge en fer
+** Clinique
+Accumulation fer dans cellules parenchymateuses :
+- foie+++ -> cirrhose
+  , coe)
+- coeur -> cardiomyopathie
+- glandes endocrine -> diabète
+- peau -> mélanodermie
+- articulations -> arthralgie
+
+  Évolution : phase biologique -> clinique
+  Ttt: saignée tôt -> espérance de vie normale
+** Génétique
+Multigénique
+*** HFE
+- Homozygotie p.[Cys282Tyr] prédominant mais expression variable
+- p.[Cys282Tyr] [His63Asp] = facteur de risque
+** Autres
+|      | Juvénile | intermédiaire | adulte       |
+| Diag | précoce  |               | tardif       |
+|      | sévère   | moins sévère  | modéré       |
+|      | HJV/HAMP | TRF2          | HFE, SLC40A1 |
+|      | AR       | AR            | AR ou AD     |
+NB: SLC40A1 : 2 phénotype selon le mécanisme (perte de fonction = ferroportini disease, gain = hémochromatose type 4)
+** Avertisemente
+Multifactoriel:
+- protecteur = variant fréquents, CYBRD1
+- agravant = homme (testostérone), alcool, variant rare, HAMP/HJV, fréquents
