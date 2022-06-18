@@ -168,10 +168,10 @@ SCHEDULED: <2022-06-12 Sun>
 **** TODO Mucoviscidose
 **** TODO Bases sur le conseil génétique
 **** TODO SEPI et TD
-*** TODO E-learning session 1 [0/6]
+*** TODO E-learning session 1 [1/6]
 **** TODO maladies endocriniennes et métabolisme
 **** TODO anomalies de la croissance
-**** TODO hématologie
+**** DONE hématologie
 **** TODO maladies du tissu conjonctif
 **** TODO Oncogénétique
 **** TODO dermatogénétique
