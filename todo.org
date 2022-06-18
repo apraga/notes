@@ -187,109 +187,109 @@ SCHEDULED: <2022-06-12 Sun>
 **** TODO Cancer du colon: Maladie de Lynch et CMMRD
 **** TODO Déficience intellectuelle
 **** TODO Pathologies neuromusculaires
-* DIU dysmorpho
+** DIU dysmorpho
 :PROPERTIES:
 :CATEGORY: dysmorpho
 :END:
-** Relire + ficher :anki:
-*** TODO Intro dysmorpho - Verloes
-*** TODO Empreinte génomique
-*** TODO Beckwith, Silver Russel
-*** TODO Scoliose
-*** TODO Syndromes cytogénétique - Salanville
-*** TODO Dysostose mandibulo faciale
-*** TODO Williams dup 7p11.2
-*** TODO Pathologie génétique de la reproduction
-*** TODO Malformations oculaires
-*** TODO Comprendre les test génétiques
-*** TODO Fente
-*** TODO Gonosome
-*** TODO Smith-Mangenis
-*** TODO 22q11
-*** TODO Dysmorpho nouveau-né
-*** TODO Autopsie foetale
-*** TODO Dysmorphologie - généralités (A Verloes)
-*** TODO Dysmorphologie du nouveau né (M Vincent)
-*** TODO Registre des malformations (N Lelong)
-*** TODO Comprendre les tests génétiques - Mutations - NGS (Y Vial)
-*** TODO Cytogénétique (C Missirian)
-*** TODO NGS et syndromologie (F Tran-Mau-Them)
-*** TODO Empreinte génomique (F Brioudé) (seq 15 Beckwith Wiedemann Syndrome et SRussel S)
-*** TODO Autopsie foetale (F Guimiot)
-*** TODO Tumeur et développement (H Cave)
-*** TODO Dysmorphologie foetale (MH Saint Frison)
-*** TODO Pathologie génétique de la reproduction (F Vialard)
-*** TODO Le dysmorphologiste en prénatal (N Gruchy)
-*** TODO Régulation génique et  anomalies du développement (F Petit)
-*** TODO Echographie fœtale et dysmorphologie (C Rozel)
-*** TODO Déficience intellectuelle (A Curie)
-*** TODO Autisme et génétique (A Maruani)
-*** TODO Tests neuropsy
-*** TODO XLID(A Toutain)
-*** TODO Anomalies du développement embryonnaire précoce (C Quelin)
-*** TODO Anomalies de fermeture du tube neural (C Quelin)
-*** TODO FAS (D Germanaud)
-*** TODO Médicaments et grossesse (C Vauzelle)
-*** TODO Syndromes avec fentes oro-faciales- (J Van-Gils)
-*** TODO Syndromes avec craniosténose (C Collet)
-*** TODO Dents & syndromes (I Bailleul)
-*** TODO Dysostoses Mandibulo faciales (J Amiel)
-*** TODO Avances staturales (A Putoux)
-*** TODO Retards staturaux syndromiques (A Putoux)
-*** TODO Syndromes avec obésité (G Diene)
-*** TODO Spliceosomopathies (P Edery)
-*** TODO Microcéphalies (S Passemard)
-*** TODO Anomalies du cervelet : Joubert, NPH ... (L Burglen)
-*** TODO Epilepsie et syndromes (C Mignot)
-*** TODO Holoprosencéphalie (S Odent)
-*** TODO Hydrocephalie (S Odent)
-*** TODO Anomalies de migration (S Passemard)
-*** TODO Chondrodysplasies (G Baujat)
-*** TODO Anomalies de segmentation et scoliose (J Thévenon)
-*** TODO Génétique du développement des membres et principaux syndromes (F Petit)
-*** TODO Classification des malformations des membres (F Petit)
-*** TODO Prise en charge des anomalies des membres (N Quintero)
-*** TODO Syndromes avec anomalies uro-néphrologiques pré- et postnatal (G Morin)
-*** TODO Syndromes avec anomalies génitales et DSD (B Leheup)
-*** TODO Du coeur au syndrome (D Genevieve)
-*** TODO Malformation cardiaque en anténatal (D Genevieve)
-*** TODO Base génétique du déterminisme du sexe (C Colson)
-*** TODO Surdités syndromiques (S Marlin)
-*** TODO Malformations oculaires (N Chassaing)
-*** TODO Dermatologie et développement (P Vabres)
-*** TODO Dysmorphologie et métabolisme (M Barth)
-*** TODO Maladies de surcharge (D Germain)
-*** TODO Trisomie 21 (R Touraine)
-*** TODO S. Williams - duplication 7q11.2 (M Rossi)
-*** TODO Délétion 22q11.2 (L Perrin)
-*** TODO Syndromes cytogénétiques (D Sanlaville)
-*** TODO Gonosomes (J Leger)
-*** TODO Parcours de soin des patients avec anomalies du développement (N Jean-Marçais)
-*** TODO Prise en charge médicosociale du handicap (D Juzeau)
-*** TODO Fanconi (T Leblanc)
-*** TODO Ehlers-Danlos (D Germain)
-*** TODO Chromatinopathies: TAD - Kabuki, Rubinstein-Taybi, Wiedemann-Steiner, SBYSS... (D Genevieve)
-*** TODO Marfan et syndromes apparentés (G Jondeau)
-*** TODO RASopathies (Y Capri)
-*** TODO Syndromes de Pitt Hopkins, Angelman, Rett et Rett-like (N Bahi-Buisson)
-*** TODO Filaminopathies A (C Goizet)
-*** TODO Achondroplasie (G Baujat)
-*** TODO OI (G Baujat)
-*** TODO Ciliopathies: approche globale (T Attie-Bitach)
-*** TODO Smith-Magenis (L Perrin)
-*** TODO Cohésinopathies : Cornelia de Lange, Coffin-Siris/NB, CHOPS... (A Goldenberg)
-*** TODO Albinisme et syndromes apparentés (B Arveiler)
-*** TODO Beckwith Wiedemann Syndrome & Silver Russel Syndrome (F Brioude)
-*** TODO Neurofibromatoses - STB (C Goizet)
-*** TODO Cowden, Gorlin (P Goizet)
-*** TODO Syndrome de Kleefstra (L Perrin)
-*** TODO Téloméropathies (T Leblanc)
-
-** DONE QROC 3
-DEADLINE: <2022-06-18 Sat>
-** DONE QROC S2
-CLOSED: [2022-04-16 Sat 23:42] DEADLINE: <2022-04-16 Sat 23:59>
-** DONE Mémoire
+*** Relire + ficher :anki:
+**** TODO Intro dysmorpho - Verloes
+**** TODO Empreinte génomique
+**** TODO Beckwith, Silver Russel
+**** TODO Scoliose
+**** TODO Syndromes cytogénétique - Salanville
+**** TODO Dysostose mandibulo faciale
+**** TODO Williams dup 7p11.2
+**** TODO Pathologie génétique de la reproduction
+**** TODO Malformations oculaires
+**** TODO Comprendre les test génétiques
+**** TODO Fente
+**** TODO Gonosome
+**** TODO Smith-Mangenis
+**** TODO 22q11
+**** TODO Dysmorpho nouveau-né
+**** TODO Autopsie foetale
+**** TODO Dysmorphologie - généralités (A Verloes)
+**** TODO Dysmorphologie du nouveau né (M Vincent)
+**** TODO Registre des malformations (N Lelong)
+**** TODO Comprendre les tests génétiques - Mutations - NGS (Y Vial)
+**** TODO Cytogénétique (C Missirian)
+**** TODO NGS et syndromologie (F Tran-Mau-Them)
+**** TODO Empreinte génomique (F Brioudé) (seq 15 Beckwith Wiedemann Syndrome et SRussel S)
+**** TODO Autopsie foetale (F Guimiot)
+**** TODO Tumeur et développement (H Cave)
+**** TODO Dysmorphologie foetale (MH Saint Frison)
+**** TODO Pathologie génétique de la reproduction (F Vialard)
+**** TODO Le dysmorphologiste en prénatal (N Gruchy)
+**** TODO Régulation génique et  anomalies du développement (F Petit)
+**** TODO Echographie fœtale et dysmorphologie (C Rozel)
+**** TODO Déficience intellectuelle (A Curie)
+**** TODO Autisme et génétique (A Maruani)
+**** TODO Tests neuropsy
+**** TODO XLID(A Toutain)
+**** TODO Anomalies du développement embryonnaire précoce (C Quelin)
+**** TODO Anomalies de fermeture du tube neural (C Quelin)
+**** TODO FAS (D Germanaud)
+**** TODO Médicaments et grossesse (C Vauzelle)
+**** TODO Syndromes avec fentes oro-faciales- (J Van-Gils)
+**** TODO Syndromes avec craniosténose (C Collet)
+**** TODO Dents & syndromes (I Bailleul)
+**** TODO Dysostoses Mandibulo faciales (J Amiel)
+**** TODO Avances staturales (A Putoux)
+**** TODO Retards staturaux syndromiques (A Putoux)
+**** TODO Syndromes avec obésité (G Diene)
+**** TODO Spliceosomopathies (P Edery)
+**** TODO Microcéphalies (S Passemard)
+**** TODO Anomalies du cervelet : Joubert, NPH ... (L Burglen)
+**** TODO Epilepsie et syndromes (C Mignot)
+**** TODO Holoprosencéphalie (S Odent)
+**** TODO Hydrocephalie (S Odent)
+**** TODO Anomalies de migration (S Passemard)
+**** TODO Chondrodysplasies (G Baujat)
+**** TODO Anomalies de segmentation et scoliose (J Thévenon)
+**** TODO Génétique du développement des membres et principaux syndromes (F Petit)
+**** TODO Classification des malformations des membres (F Petit)
+**** TODO Prise en charge des anomalies des membres (N Quintero)
+**** TODO Syndromes avec anomalies uro-néphrologiques pré- et postnatal (G Morin)
+**** TODO Syndromes avec anomalies génitales et DSD (B Leheup)
+**** TODO Du coeur au syndrome (D Genevieve)
+**** TODO Malformation cardiaque en anténatal (D Genevieve)
+**** TODO Base génétique du déterminisme du sexe (C Colson)
+**** TODO Surdités syndromiques (S Marlin)
+**** TODO Malformations oculaires (N Chassaing)
+**** TODO Dermatologie et développement (P Vabres)
+**** TODO Dysmorphologie et métabolisme (M Barth)
+**** TODO Maladies de surcharge (D Germain)
+**** TODO Trisomie 21 (R Touraine)
+**** TODO S. Williams - duplication 7q11.2 (M Rossi)
+**** TODO Délétion 22q11.2 (L Perrin)
+**** TODO Syndromes cytogénétiques (D Sanlaville)
+**** TODO Gonosomes (J Leger)
+**** TODO Parcours de soin des patients avec anomalies du développement (N Jean-Marçais)
+**** TODO Prise en charge médicosociale du handicap (D Juzeau)
+**** TODO Fanconi (T Leblanc)
+**** TODO Ehlers-Danlos (D Germain)
+**** TODO Chromatinopathies: TAD - Kabuki, Rubinstein-Taybi, Wiedemann-Steiner, SBYSS... (D Genevieve)
+**** TODO Marfan et syndromes apparentés (G Jondeau)
+**** TODO RASopathies (Y Capri)
+**** TODO Syndromes de Pitt Hopkins, Angelman, Rett et Rett-like (N Bahi-Buisson)
+**** TODO Filaminopathies A (C Goizet)
+**** TODO Achondroplasie (G Baujat)
+**** TODO OI (G Baujat)
+**** TODO Ciliopathies: approche globale (T Attie-Bitach)
+**** TODO Smith-Magenis (L Perrin)
+**** TODO Cohésinopathies : Cornelia de Lange, Coffin-Siris/NB, CHOPS... (A Goldenberg)
+**** TODO Albinisme et syndromes apparentés (B Arveiler)
+**** TODO Beckwith Wiedemann Syndrome & Silver Russel Syndrome (F Brioude)
+**** TODO Neurofibromatoses - STB (C Goizet)
+**** TODO Cowden, Gorlin (P Goizet)
+**** TODO Syndrome de Kleefstra (L Perrin)
+**** TODO Téloméropathies (T Leblanc)
+*
+*** DONE QROC 3
+*DEADLINE: <2022-06-18 Sat>
+*** DONE QROC S2
+*CLOSED: [2022-04-16 Sat 23:42] DEADLINE: <2022-04-16 Sat 23:59>
+*** DONE Mémoire
 * Projet
 :PROPERTIES:
 :CATEGORY: projets
