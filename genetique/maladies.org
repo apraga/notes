@@ -1,13 +1,42 @@
 #+TITLE: Maladies
-* Pendred
-- Clinique : surdité congénitale neurosensorielle sévère/profonde, atteinte vestibulaire, anomalies os temporal
-- Diagnostic : clinique = surdité neurosensorielle + anomalies scan rochers + goître euthyroïdien
-- Gènes : SLC26A4
-- Traitement : sympto
-- Transmission : AR
+* TODO Achondroplasie
 
-* TODO Leigh et NARP
-  https://www.ncbi.nlm.nih.gov/books/NBK1173/
+* Hémochromatose
+
+** Physiopathologie
+Circuit quasi-fermé : la destruction des globus rouges par les macrophages recycle le fer. Peu de pertes, peu d’apport
+Régulation au niveau de l’intestin car pas de mécanisme d’excrétion (hormis desquamation ) !
+Hepcidine = peptite synthésé dans le foie qui est le régulateur principale pour fer
+- bloque absorption intestinale
+- bloque relargage du stockage du fer (foie)
+  -> peu d’hepicidine = surcharge en fer
+** Clinique
+Accumulation fer dans cellules parenchymateuses :
+- foie+++ -> cirrhose
+  , coe)
+- coeur -> cardiomyopathie
+- glandes endocrine -> diabète
+- peau -> mélanodermie
+- articulations -> arthralgie
+
+  Évolution : phase biologique -> clinique
+  Ttt: saignée tôt -> espérance de vie normale
+** Génétique
+Multigénique
+*** HFE
+- Homozygotie p.[Cys282Tyr] prédominant mais expression variable
+- p.[Cys282Tyr] [His63Asp] = facteur de risque
+** Autres
+|      | Juvénile | intermédiaire | adulte       |
+| Diag | précoce  |               | tardif       |
+|      | sévère   | moins sévère  | modéré       |
+|      | HJV/HAMP | TRF2          | HFE, SLC40A1 |
+|      | AR       | AR            | AR ou AD     |
+NB: SLC40A1 : 2 phénotype selon le mécanisme (perte de fonction = ferroportini disease, gain = hémochromatose type 4)
+** Avertisemente
+Multifactoriel:
+- protecteur = variant fréquents, CYBRD1
+- agravant = homme (testostérone), alcool, variant rare, HAMP/HJV, fréquents
 * Incontentia pigmenti
 - génodermatose affectant la peau, les dents, les yeux et le système nerveux central
 - «incontinence pigmentaire» = dépôts dermique de mélanine
@@ -70,6 +99,255 @@ https://onlinelibrary.wiley.com/doi/full/10.1111/ddg.14638
 - PNDS
 - Genereviews
 - Santa-Maria FD, Mariath LM, Poziomczyk CS, et al. Dental anomalies in 14 patients with IP: clinical and radiological analysis and review. Clin Oral Investig. 2017;21(5):1845-1852. doi:10.1007/s00784-016-1977-y
+* TODO Myotonie de Steinert
+
+* Obésité syndromiques
+*Obésité syndromique = trouble de neurodeveloppement*
+
+** Penser à la génétique si
+IMC > courbes de manière précoce et aggravation rapide + sévère +/-
+- hypotonie néonatale
+- trouble neuropsy
+- troubles comportement alimentaires
+- endoc: petite taille, hypogonadisme
+- anomalies neurosensoreille
+- anomalies dévelppmental
+
+**  Examen :
+  - bio : neutropénie, fonction rénale, diabète axe hypohysaire
+  - +/- électrorétinogramme si problème de vision
+  - +/- CS orl si problèment
+  - RX main, pied, colonne
+  - écho cardiaque, abdo, rénale, IRM cérébrales
+
+  Génétique
+  - si DI : caryotype, Prader-Willer, X fra, CGH
+  - si dystrophie rétinienne : recherche syndrome Bardiet-Biedl
+** Syndromes
+- empreinte génomique: [[Syndrome de Prader-Willi]]
+- ciliopathies [[Syndrome de Barder-Biedl]] ,  [[Syndrome d’Alström]]
+- glycosylation
+[[Syndrome de Borjeson-Forssman-Lehman]]
+[[Syndrome de Cohen]]
+[[Syndrome WAGRO]]
+[[Syndrome de Smith-Magenis]]
+[[Syndrome de l’X fragile]]
+* Retard statural
+4 "tiroirs"
+- maladies osseuses constitutionnelles
+- syndrome génétique avec petite taille
+- anomalies chromosomiques
+- maladies métaboliques
+
+Urgence = maladie de surcharge lysosomale
+** Étiologies
+*** Maladies osseuses constitutionnelles
+- [[Syndrome tricho-rhino-phalangien]]
+- Certaines autres MOC avec dysmorphie craniofaciale (Binder, [[Séquence de Pierre-Robin]],fontanelle Front, dents) [[Syndrome 3M]]
+- [[Achondroplasie]]
+- Hypochondroplasie
+- Brachydactylies avec petite taille
+- Dyschondrostéose
+*** Syndrome génétique avec petite taille
+[[Syndrome de Cornelia de Lange][Cornelia de Lange]]
+[[Syndrome de Rubinstein-Taybi][Rubinstein-Taybi]]
+[[Syndrome de Smith-Lemli-Optiz][SLO]]
+[[Syndrome de Coffin-Siris][Coffin-Siris]]
+[[Syndrome de Wiedemann-Steiner][Wiedemann-Steiner]]
+[[Myotonie de Steinert][Steinert]]
+[[Syndrome de Kabuki][Kabuki]]
+[[Syndrome de Noonan][Noonan]]
+[[Syndrome KBG][KBG]]
+Floating Harbor
+[[Syndrome d’Aarskog][Aarskog]]
+[[Syndrome de Silver-Russell][Silver-Russel]]
+Nanismes primordiaux
+réparation ADN
+Pseudohypoparathroïdies
+*** Maladies métaboliques
+- Maladies de surcharge lysosomale
+
+** Si retard de développement
+- MOC: [[Syndrome tricho-rhino-phalangien]]
+- Syndrome génétique avec petite taille
+[[Syndrome de Cornelia de Lange][Cornelia de Lange]]
+[[Syndrome de Rubinstein-Taybi][Rubinstein-Taybi]]
+[[Syndrome de Smith-Lemli-Optiz][SLO]]
+[[Syndrome de Coffin-Siris][Coffin-Siris]]
+  [[Syndrome de Wiedemann-Steiner][Wiedemann-Steiner]]
+[[Myotonie de Steinert][Steinert]]
+[[Syndrome de Kabuki][Kabuki]]
+[[Syndrome de Noonan][Noonan]]
+[[Syndrome KBG][KBG]]
+Floating Harbor
+[[Syndrome d’Aarskog][Aarskog]]
+[[Syndrome de Silver-Russell][Silver-Russel]]
+Nanismes primordiaux
+réparation ADN
+Pseudohypoparathroïdies
+- anomalies chromosomiques
+- Maladies de surcharge lysosomale
+** Examen clinique
+- hépatoslénomégalie
+- artiularie : flessum, main en griffe, genou valgum/varum, cyphose/scoliose, cubitus valgus, déformation de Madelung [Syndrome de Leri-Weil]
+- PC, envergure, segment proximal court (rhizomélie), médian court (mésolémile)
+- main/pied : petite extrémité (acromélie), brachy-dactylie/métacarpies/métatarsie, syndactylie, clinodactylie
+- phanères : cheveux clairsemés, hirsutisme,
+    livedo
+- ss
+** Si acquisition normales sans trouble orthopépidque
+Hypothèses
+- petite taille familiale isolée
+- MOC: TRP, dyschondrosteose SHOX, hypochondroplasie, petite taille et brachy
+- Noonan, KBG, Silver-Russel, Floating, Aarskog
+- Chromosome
+- Surcharge
+ Bilan:
+  - RX F+P bassin main, genou, âge osseux +/- parents si petite taille
+  - +/- caryo pour Turner
+  - bio: NFS, foie, rein, calcémie, thyroide, PTH
+  - +/- bilan métabo (CAA CAO Lactates Pyruvates, mucopolysaccharides urinaires)
+** Acquisitions normales avec anomalies osseuse/ortho
+Hypothèses:
+- MOC: TRP, dyschondrosteose SHOX, Langer, hypochondroplasie, petite taille et brachydactylie, cléidocranie, 3M, collagénopathies
+- Noonan, Silver-Russel, KBG, Floating, Aarskog
+- Surcharge
+
+Bilan
+  - RX F+P bassin main, genou, âge osseux +/- parents si petite taille
+  - bio: NFS, foie, rein, calcémie, thyroide, PTH
+** Retard des acquisitions léger/modéré
+Hypothèses:
+- MOC: TRP
+- Noonan,  KBG, Floating, Aarskog, Corneila mild, Rubinsten Taybi mild, PHP, Albright
+- Surcharge
+
+Bilan
+- CGH
+- +/- RX F+P bassin main, genou, âge osseux +/- parents si petite taille
+- bio: NFS, foie, rein, calcémie, thyroide, PTH
+- bilan métabo
+- imagie malfo
+** Retard des acquisitions nécessitant prise en charge
+Hypothèses:
+- (MOC rares)
+- Cornelia de Lange, Rubinstin Taybe , Noonan  KBG, Kabuki, Wiedeman Steiner
+- Surcharge
+
+Bilan
+- CGH
+- +/- RX F+P bassin main, genou, âge osseux +/- parents si petite taille
+- bio: NFS, foie, rein, calcémie, thyroide, PTH
+- bilan métabo
+- imagie malfo
+* TODO Syndrome 3M
+- Rertard statural sévère pré- et postnatal
+- Dysmorphie
+- Intelligence normal
+- Nuque large, trapèzes proéminent, déformation du sternum, thorax court, épaules carrées, scapula "en aile"
+hyperlordose, brach du 5e
+hypogonadisme chez les hommes
+
+AR
+/CUL7/, /OBSL1/, /CCDC8/
+* Syndrome de Barder-Biedl
+** Clinique
+- Obésité précoce
+- Rétinie pigmentaire précoce (5 ans) -> cécité 30 ans
+- Hexadactylie 50%
+- Hypogonadisme
+- Situs inversus
+- Rénal 50% (risque IRC)
+- Faciès : hypertélorisme, élargement racine du nez, narines antéverséees
+** Génétique
+20 gènes connus
+* Syndrome de Borjeson-Forssman-Lehman
+- retard mental sévère +/- épilepsie
+- hypotonie
+- retard statural, hypogonadise
+- microcéphalie
+- dysmorphie: oreilleis épaisse es longue, lobes charnus, yeux enfoncés, rebords obritaires saillants
+  Gne :PHF6
+* TODO Syndrome de Coffin-Siris
+
+* Syndrome de Cohen
+- parfois obésité
+- hypotonie néonatale
+- retard mental souvent modéré
+- dysmoporphie: grandes incisives centrales, microcéphalie, cheveux épais, microcpéhalie, fentes palpébrales obliques
+- doigts "en baguettes de tambours", hyperlaxité articulaire
+- dystrophie rétinienne
+- neutropénie intermittente
+
+  Gènes COH1
+  Effet fondateur (finlande...)
+* TODO Syndrome de Cornelia de Lange
+
+* TODO Syndrome de Kabuki
+
+* TODO Syndrome de Leigh et NARP
+  https://www.ncbi.nlm.nih.gov/books/NBK1173/
+* Syndrome de l’X fragile
+30% ont une obésité et 10% proche phénotype Prader-Wili
+* TODO Syndrome de Noonan
+
+* Syndrome de Pendred
+- Clinique : surdité congénitale neurosensorielle sévère/profonde, atteinte vestibulaire, anomalies os temporal
+- Diagnostic : clinique = surdité neurosensorielle + anomalies scan rochers + goître euthyroïdien
+- Gènes : SLC26A4
+- Traitement : sympto
+- Transmission : AR
+
+* Syndrome de Prader-Willi
+** Clinique
+Phases: anorexie -> boulimie (switch d’origine hypotalamique)
+- anténatal : diminution mouvement actifs foetus, faible pois naissance, hydramnios
+- 0-9mois : hypotonie, déficit succision
+- à partir de 2 ans: gain poids
+- à partir de 8 ans : hyperphagie,
+- adulte: insatiable
+
+Troubles du comportement:
+  - affectif et perso
+  - déficit cognitif léger/moyen
+  - défaut empathie
+
+Troubles comportement alimentaire :
+  - obsession alimentaire ("craving")
+  - hyperphagie
+    Mise en danger de la vie !
+** Génétique
+Région 15q11q13 = soumise à empreinte maternelle -> sujets sains = gènes s’exprimant depuis chromosome paternel
+Prader-Wili si
+- microdeletion de la zone paternelle (70%)
+- ou disomie uniparentale (2 maternel)
+- rarement translocation
+
+NB: région critiques contient plusieurs gènes soumis à empreinte maternelle
+** Syndrome de Prader-Wili-like
+sans anomalie du profil de méthylation
+chercher
+- anomalies SNORD
+- anomalies MAGEL
+- apparenté :
+  - disomie du chr 14, (12-25%)
+  - duplication 3...
+** PEC globale
+endoc pour déficit en GH, hypogonatidme
+psy
+[[http:guide-prader-willi.fr]]
+* TODO Syndrome de Rubinstein-Taybi
+
+* TODO Syndrome de Silver-Russell
+* TODO Syndrome de Smith-Lemli-Optiz
+
+* Syndrome de Smith-Magenis
+Déléteion 17p11.2
+- DI souvent sévère
+- dysmorphie: brachycéphalie, bosses fontales, syophrise, hypertélorisme, hypoplasime étage moyen facile, programthism, oreiles bas implantés
+- troubles comportement et sommeil
+- hyperphagie etob
+ RAI1
 * Syndrome de West
 In about 35% of cases, the etiologic event is (still) unknown:
 others = structural, infectious, metabolic and immunologic defects and genetic abnormalities
@@ -77,6 +355,11 @@ others = structural, infectious, metabolic and immunologic defects and genetic a
  ischemic encephalopathy is reported as one of the most common causes of ISs.
  “United Kingdom Infantile Spasms Study” (UKISS) [14],  hypoxic-ischemic encephalopathy was reported in 10%, followed by chromosomal abnormalities, complex malformation syndromes and perinatal stroke (8%), tuberous sclerosis (7%), and periventricular leukomalacia or hemorrhage (respectively, in 5%)
 Source https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7655587/
+
+* TODO Syndrome de Wiedemann-Beckwith
+* TODO Syndrome de Wiedemann-Steiner
+
+* TODO Syndrome d’Aarskog
 
 * Syndrome d’Alagille
 Suspected on :
@@ -90,3 +373,48 @@ Suspected on :
 Genes = JAG1, NOTCH2
 AR
 Pronostic: renal transplant, cardiac... but not lethal
+
+* Syndrome d’Alström
+900 cas monde
+- Obésité précoce
+- Rétinite pigmentaire -> cécité 20 ans
+- Surdité perception ~7 ans
+- Cardiomyopathie dilatée
+- Diabète type 2 avant 20 ans
+- Retard statural, hypogonadisme
+- +/- déficit cognitif modéré
+** Génétique
+  AR
+  ALMS1
+* TODO Syndrome KBG
+
+* Syndrome tricho-rhino-phalangien
+
+Clinique
+- petite taille
+- épiphyses en cône
+- raccourcissement sévère de toutes les phalanges, déviation des 2e phalanges
+- dysmorpho :
+  - cheveux fin clairsemé, raréfaction sourcils latéraux
+  - nez bulbeux, en poire
+  - philtrum long
+  - lèvre supérieure fine
+[[img/tricho-rhino-phalangien.png]]
+Attentio risque ostéchondrite hanche
+
+AD
+/TRPS1/ ou délétion 8q24
+* Syndrome WAGRO
+- tumeurs de Wilms
+- Aniridie
+- anomalies Génitale
+- Retard mental, syndrome de PW-like
+- Obésité (50% du syndrome WAGR)
+deletion de 11p13 (syndrome WAGR) et en 11p14 (gène BDNF)
+* TODO Séquence de Pierre-Robin
+* Mucopolysaccharidose type VI
+Anomalies épiphysaires et métaphysaire humérales supérieures
+Remaniement épi/métaphyses des hanches
+
+Surveillance cardiaque, opthalmo, ORL, respo, orthopédituqe
+TTT: enzymothérapie substitutive

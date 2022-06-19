@@ -46,31 +46,6 @@ DEADLINE: <2022-05-21 Sat>
 CLOSED: [2022-04-18 Mon 21:47]
 ** Beckwith-Wideman
 ** T21
-* DIU dysmorpho
-:PROPERTIES:
-:CATEGORY: dysmorpho
-:END:
-** Notes :anki:
-*** TODO Intro dysmorpho - Verloes
-*** TODO Empreinte génomique
-*** TODO Beckwith, Silver Russel
-*** TODO Scoliose
-*** TODO Syndromes cytogénétique - Salanville
-*** TODO Dysostose mandibulo faciale
-*** TODO Williams dup 7p11.2
-*** TODO Pathologie génétique de la reproduction
-*** TODO Malformations oculaires
-*** TODO Comprendre les test génétiques
-*** TODO Fente
-*** TODO Gonosome
-*** TODO Smith-Mangenis
-*** TODO 22q11
-*** TODO Dysmorpho nouveau-né
-*** TODO Autopsie foetale
-** TODO QROC 3
-DEADLINE: <2022-06-18 Sat>
-** DONE QROC S2
-CLOSED: [2022-04-16 Sat 23:42] DEADLINE: <2022-04-16 Sat 23:59>
 * Internat
 ** TODO Demande interchu Grenoble novembre 2022
 *** DONE Mail PrThevenon
@@ -84,21 +59,39 @@ CLOSED: [2022-04-16 Sat 23:42] DEADLINE: <2022-04-16 Sat 23:59>
 *** TODO cadeau
 ** TODO Mariage Florian :florian:
 *** TODO Cadeau
-** WAIT Échanger T-shirt Chullanka
-Renvoyé<2022-05-07 Sat>
-Rappeler pour voir avec code postal
-Vont renvoyer
 ** TODO Copier photos famille depuis drive yvain sur drive famille
 SCHEDULED: <2022-05-21 Sat>
 ** TODO Payer taxes ordures ménagères
 DEADLINE: <2022-06-06 Mon>
 * Japonais
 ** Miura :miura:
-*** Anki :anki:
-**** TODO Leçon 2
+*** TODO Leçon 1
+**** DONE Lire
+**** DONE Anki
+*** TODO Leçon 2
+**** DONE Lire
+**** TODO Anki
 ***** TODO Grammaire
-**** DONE leçon 1 vocab
-**** DONE Leçon 2 : Vocabulaire
+*** TODO Leçon 3
+**** DONE Lire
+**** TODO Anki
+***** TODO Grammaire
+*** TODO Leçon 4
+**** DONE Lire
+**** TODO Anki
+***** TODO Grammaire
+*** TODO Leçon 5
+**** DONE Lire
+**** TODO Anki
+***** TODO Grammaire
+*** TODO Leçon 6
+**** DONE Lire
+**** TODO Anki
+***** TODO Grammaire
+*** TODO Leçon 7
+**** TODO Lire
+**** TODO Anki
+***** TODO Grammaire
 *** Lire
 ** Leçon Aya
 :PROPERTIES:
@@ -121,48 +114,185 @@ SCHEDULED: <2022-06-12 Sun>
 ** TODO Avril 2022
 ** TODO Mail 2022
 * Moto :moto:
-* Notes biologie
+* Génétique
 ** Biologie cellulaire Dunod
 *** TODO chapitres déjà fait :anki:
 *** TODO lire
 ** Biologie chimie Dunod
 *** TODO lire
 *** TODO Ficher
-* Notes génétique :anki:
+** Notes génétique :anki:
 :PROPERTIES:
 :CATEGORY: genetique
 :END:
-** TODO Ficher chapitres lus genetique.college
-** TODO Noonan
-** TODO Charcot-Marie-Toorh genetique
-** TODO Costello
-** TODO CFC
-** TODO alcoolisation foetale
-** TODO kabuki
-** TODO coffin-siris
-** TODO klinefelter
-** TODO turner
-** TODO t13
-** TODO t18
-** TODO hypomélanose d'ito
-** TODO del 4p
-** TODO angelman
-** TODO x fragile
-** TODO digeorge
-** TODO retinoblastome
-** TODO williams
-** TODO smith mageni
-** TODO ataxie spinocérébelleuse
-** TODO ataxie de friedrich
-** TODO nf1
-** TODO sclérose tubéreuse
-** TODO FSHD
-** TODO marfan
-** TODO ehler-danlos
-** TODO polykystose autosomique dominante
-** TODO polykystose autosomique récessive
-** TODO Alport
-** TODO hémophilie
+** TODO Collège
+** TODO Syndromes
+*** TODO Noonan
+*** TODO Charcot-Marie-Toorh genetique
+*** TODO Costello
+*** TODO CFC
+*** TODO alcoolisation foetale
+*** TODO kabuki
+*** TODO coffin-siris
+*** TODO klinefelter
+*** TODO turner
+*** TODO t13
+*** TODO t18
+*** TODO hypomélanose d'ito
+*** TODO del 4p
+*** TODO angelman
+*** TODO x fragile
+*** TODO digeorge
+*** TODO retinoblastome
+*** TODO williams
+*** TODO smith mageni
+*** TODO ataxie spinocérébelleuse
+*** TODO ataxie de friedrich
+*** TODO nf1
+*** TODO sclérose tubéreuse
+*** TODO FSHD
+*** TODO marfan
+*** TODO ehler-danlos
+*** TODO polykystose autosomique dominante
+*** TODO polykystose autosomique récessive
+*** TODO Alport
+*** TODO hémophilie
+** TODO DES
+*** TODO Presentiel session 1 [2/9]
+**** DONE Introduction à la dysmorphologie
+**** TODO Structuration du génome et mécanismes mutationnels
+**** TODO Oncogénétique: introduction
+**** TODO Diagnostic prénatal
+**** DONE Grandes technologies et bioinformatique
+**** TODO Aspects réglementaires et éthiques
+**** TODO Mucoviscidose
+**** TODO Bases sur le conseil génétique
+**** TODO SEPI et TD
+*** TODO E-learning session 1 [1/6]
+**** TODO maladies endocriniennes et métabolisme
+**** TODO anomalies de la croissance
+- [X] obésité syndromique
+- [ ] avance staturale
+- [ ] retard de croissance
+**** DONE hématologie
+**** TODO maladies du tissu conjonctif
+**** TODO Oncogénétique
+**** TODO dermatogénétique
+*** TODO Presentiel session 2 [0/5]
+**** TODO Déficience intellectuelle
+**** TODO Génétique clinique et formelle
+**** TODO Pathologies fréquentes en génétique clinique
+**** TODO Génome humain : normal et pathologique
+**** TODO Maladies métaboliques
+*** TODO E-learning session 2 [0/5]
+**** TODO Syndromes microdélétionnels
+**** TODO Dysgonosomies
+**** TODO Cancer du colon: Maladie de Lynch et CMMRD
+**** TODO Déficience intellectuelle
+**** TODO Pathologies neuromusculaires
+** DIU dysmorpho
+:PROPERTIES:
+:CATEGORY: dysmorpho
+:END:
+*** Relire + ficher :anki:
+**** TODO Intro dysmorpho - Verloes
+**** TODO Empreinte génomique
+**** TODO Beckwith, Silver Russel
+**** TODO Scoliose
+**** TODO Syndromes cytogénétique - Salanville
+**** TODO Dysostose mandibulo faciale
+**** TODO Williams dup 7p11.2
+**** TODO Pathologie génétique de la reproduction
+**** TODO Malformations oculaires
+**** TODO Comprendre les test génétiques
+**** TODO Fente
+**** TODO Gonosome
+**** TODO Smith-Mangenis
+**** TODO 22q11
+**** TODO Dysmorpho nouveau-né
+**** TODO Autopsie foetale
+**** TODO Dysmorphologie - généralités (A Verloes)
+**** TODO Dysmorphologie du nouveau né (M Vincent)
+**** TODO Registre des malformations (N Lelong)
+**** TODO Comprendre les tests génétiques - Mutations - NGS (Y Vial)
+**** TODO Cytogénétique (C Missirian)
+**** TODO NGS et syndromologie (F Tran-Mau-Them)
+**** TODO Empreinte génomique (F Brioudé) (seq 15 Beckwith Wiedemann Syndrome et SRussel S)
+**** TODO Autopsie foetale (F Guimiot)
+**** TODO Tumeur et développement (H Cave)
+**** TODO Dysmorphologie foetale (MH Saint Frison)
+**** TODO Pathologie génétique de la reproduction (F Vialard)
+**** TODO Le dysmorphologiste en prénatal (N Gruchy)
+**** TODO Régulation génique et  anomalies du développement (F Petit)
+**** TODO Echographie fœtale et dysmorphologie (C Rozel)
+**** TODO Déficience intellectuelle (A Curie)
+**** TODO Autisme et génétique (A Maruani)
+**** TODO Tests neuropsy
+**** TODO XLID(A Toutain)
+**** TODO Anomalies du développement embryonnaire précoce (C Quelin)
+**** TODO Anomalies de fermeture du tube neural (C Quelin)
+**** TODO FAS (D Germanaud)
+**** TODO Médicaments et grossesse (C Vauzelle)
+**** TODO Syndromes avec fentes oro-faciales- (J Van-Gils)
+**** TODO Syndromes avec craniosténose (C Collet)
+**** TODO Dents & syndromes (I Bailleul)
+**** TODO Dysostoses Mandibulo faciales (J Amiel)
+**** TODO Avances staturales (A Putoux)
+**** TODO Retards staturaux syndromiques (A Putoux)
+**** TODO Syndromes avec obésité (G Diene)
+**** TODO Spliceosomopathies (P Edery)
+**** TODO Microcéphalies (S Passemard)
+**** TODO Anomalies du cervelet : Joubert, NPH ... (L Burglen)
+**** TODO Epilepsie et syndromes (C Mignot)
+**** TODO Holoprosencéphalie (S Odent)
+**** TODO Hydrocephalie (S Odent)
+**** TODO Anomalies de migration (S Passemard)
+**** TODO Chondrodysplasies (G Baujat)
+**** TODO Anomalies de segmentation et scoliose (J Thévenon)
+**** TODO Génétique du développement des membres et principaux syndromes (F Petit)
+**** TODO Classification des malformations des membres (F Petit)
+**** TODO Prise en charge des anomalies des membres (N Quintero)
+**** TODO Syndromes avec anomalies uro-néphrologiques pré- et postnatal (G Morin)
+**** TODO Syndromes avec anomalies génitales et DSD (B Leheup)
+**** TODO Du coeur au syndrome (D Genevieve)
+**** TODO Malformation cardiaque en anténatal (D Genevieve)
+**** TODO Base génétique du déterminisme du sexe (C Colson)
+**** TODO Surdités syndromiques (S Marlin)
+**** TODO Malformations oculaires (N Chassaing)
+**** TODO Dermatologie et développement (P Vabres)
+**** TODO Dysmorphologie et métabolisme (M Barth)
+**** TODO Maladies de surcharge (D Germain)
+**** TODO Trisomie 21 (R Touraine)
+**** TODO S. Williams - duplication 7q11.2 (M Rossi)
+**** TODO Délétion 22q11.2 (L Perrin)
+**** TODO Syndromes cytogénétiques (D Sanlaville)
+**** TODO Gonosomes (J Leger)
+**** TODO Parcours de soin des patients avec anomalies du développement (N Jean-Marçais)
+**** TODO Prise en charge médicosociale du handicap (D Juzeau)
+**** TODO Fanconi (T Leblanc)
+**** TODO Ehlers-Danlos (D Germain)
+**** TODO Chromatinopathies: TAD - Kabuki, Rubinstein-Taybi, Wiedemann-Steiner, SBYSS... (D Genevieve)
+**** TODO Marfan et syndromes apparentés (G Jondeau)
+**** TODO RASopathies (Y Capri)
+**** TODO Syndromes de Pitt Hopkins, Angelman, Rett et Rett-like (N Bahi-Buisson)
+**** TODO Filaminopathies A (C Goizet)
+**** TODO Achondroplasie (G Baujat)
+**** TODO OI (G Baujat)
+**** TODO Ciliopathies: approche globale (T Attie-Bitach)
+**** TODO Smith-Magenis (L Perrin)
+**** TODO Cohésinopathies : Cornelia de Lange, Coffin-Siris/NB, CHOPS... (A Goldenberg)
+**** TODO Albinisme et syndromes apparentés (B Arveiler)
+**** TODO Beckwith Wiedemann Syndrome & Silver Russel Syndrome (F Brioude)
+**** TODO Neurofibromatoses - STB (C Goizet)
+**** TODO Cowden, Gorlin (P Goizet)
+**** TODO Syndrome de Kleefstra (L Perrin)
+**** TODO Téloméropathies (T Leblanc)
+*
+*** DONE QROC 3
+*DEADLINE: <2022-06-18 Sat>
+*** DONE QROC S2
+*CLOSED: [2022-04-16 Sat 23:42] DEADLINE: <2022-04-16 Sat 23:59>
+*** DONE Mémoire
 * Projet
 :PROPERTIES:
 :CATEGORY: projets
