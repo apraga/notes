@@ -171,6 +171,9 @@ SCHEDULED: <2022-06-12 Sun>
 *** TODO E-learning session 1 [1/6]
 **** TODO maladies endocriniennes et métabolisme
 **** TODO anomalies de la croissance
+- [X] obésité syndromique
+- [ ] avance staturale
+- [ ] retard de croissance
 **** DONE hématologie
 **** TODO maladies du tissu conjonctif
 **** TODO Oncogénétique

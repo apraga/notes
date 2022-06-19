@@ -1,13 +1,40 @@
 #+TITLE: Maladies
-* Pendred
-- Clinique : surdité congénitale neurosensorielle sévère/profonde, atteinte vestibulaire, anomalies os temporal
-- Diagnostic : clinique = surdité neurosensorielle + anomalies scan rochers + goître euthyroïdien
-- Gènes : SLC26A4
-- Traitement : sympto
-- Transmission : AR
+* Hémochromatose
 
-* TODO Leigh et NARP
-  https://www.ncbi.nlm.nih.gov/books/NBK1173/
+** Physiopathologie
+Circuit quasi-fermé : la destruction des globus rouges par les macrophages recycle le fer. Peu de pertes, peu d’apport
+Régulation au niveau de l’intestin car pas de mécanisme d’excrétion (hormis desquamation ) !
+Hepcidine = peptite synthésé dans le foie qui est le régulateur principale pour fer
+- bloque absorption intestinale
+- bloque relargage du stockage du fer (foie)
+  -> peu d’hepicidine = surcharge en fer
+** Clinique
+Accumulation fer dans cellules parenchymateuses :
+- foie+++ -> cirrhose
+  , coe)
+- coeur -> cardiomyopathie
+- glandes endocrine -> diabète
+- peau -> mélanodermie
+- articulations -> arthralgie
+
+  Évolution : phase biologique -> clinique
+  Ttt: saignée tôt -> espérance de vie normale
+** Génétique
+Multigénique
+*** HFE
+- Homozygotie p.[Cys282Tyr] prédominant mais expression variable
+- p.[Cys282Tyr] [His63Asp] = facteur de risque
+** Autres
+|      | Juvénile | intermédiaire | adulte       |
+| Diag | précoce  |               | tardif       |
+|      | sévère   | moins sévère  | modéré       |
+|      | HJV/HAMP | TRF2          | HFE, SLC40A1 |
+|      | AR       | AR            | AR ou AD     |
+NB: SLC40A1 : 2 phénotype selon le mécanisme (perte de fonction = ferroportini disease, gain = hémochromatose type 4)
+** Avertisemente
+Multifactoriel:
+- protecteur = variant fréquents, CYBRD1
+- agravant = homme (testostérone), alcool, variant rare, HAMP/HJV, fréquents
 * Incontentia pigmenti
 - génodermatose affectant la peau, les dents, les yeux et le système nerveux central
 - «incontinence pigmentaire» = dépôts dermique de mélanine
@@ -70,6 +97,141 @@ https://onlinelibrary.wiley.com/doi/full/10.1111/ddg.14638
 - PNDS
 - Genereviews
 - Santa-Maria FD, Mariath LM, Poziomczyk CS, et al. Dental anomalies in 14 patients with IP: clinical and radiological analysis and review. Clin Oral Investig. 2017;21(5):1845-1852. doi:10.1007/s00784-016-1977-y
+* TODO Leigh et NARP
+  https://www.ncbi.nlm.nih.gov/books/NBK1173/
+* Obésité syndromiques
+*Obésité syndromique = trouble de neurodeveloppement*
+
+** Penser à la génétique si
+IMC > courbes de manière précoce et aggravation rapide + sévère +/-
+- hypotonie néonatale
+- trouble neuropsy
+- troubles comportement alimentaires
+- endoc: petite taille, hypogonadisme
+- anomalies neurosensoreille
+- anomalies dévelppmental
+
+**  Examen :
+  - bio : neutropénie, fonction rénale, diabète axe hypohysaire
+  - +/- électrorétinogramme si problème de vision
+  - +/- CS orl si problèment
+  - RX main, pied, colonne
+  - écho cardiaque, abdo, rénale, IRM cérébrales
+
+  Génétique
+  - si DI : caryotype, Prader-Willer, X fra, CGH
+  - si dystrophie rétinienne : recherche syndrome Bardiet-Biedl
+** Syndromes
+- empreinte génomique: [[Syndrome de Prader-Willi]]
+- ciliopathies [[Syndrome de Barder-Biedl]] ,  [[Syndrome d’Alström]]
+- glycosylation
+[[Syndrome de Borjeson-Forssman-Lehman]]
+[[Syndrome de Cohen]]
+[[Syndrome WAGRO]]
+[[Syndrome de Smith-Magenis]]
+[[Syndrome de l’X fragile]]
+* Syndrome de Prader-Willi
+** Clinique
+Phases: anorexie -> boulimie (switch d’origine hypotalamique)
+- anténatal : diminution mouvement actifs foetus, faible pois naissance, hydramnios
+- 0-9mois : hypotonie, déficit succision
+- à partir de 2 ans: gain poids
+- à partir de 8 ans : hyperphagie,
+- adulte: insatiable
+
+Troubles du comportement:
+  - affectif et perso
+  - déficit cognitif léger/moyen
+  - défaut empathie
+
+Troubles comportement alimentaire :
+  - obsession alimentaire ("craving")
+  - hyperphagie
+    Mise en danger de la vie !
+** Génétique
+Région 15q11q13 = soumise à empreinte maternelle -> sujets sains = gènes s’exprimant depuis chromosome paternel
+Prader-Wili si
+- microdeletion de la zone paternelle (70%)
+- ou disomie uniparentale (2 maternel)
+- rarement translocation
+
+NB: région critiques contient plusieurs gènes soumis à empreinte maternelle
+** Syndrome de Prader-Wili-like
+sans anomalie du profil de méthylation
+chercher
+- anomalies SNORD
+- anomalies MAGEL
+- apparenté :
+  - disomie du chr 14, (12-25%)
+  - duplication 3...
+** PEC globale
+endoc pour déficit en GH, hypogonatidme
+psy
+[[http:guide-prader-willi.fr]]
+* Syndrome de Barder-Biedl
+** Clinique
+- Obésité précoce
+- Rétinie pigmentaire précoce (5 ans) -> cécité 30 ans
+- Hexadactylie 50%
+- Hypogonadisme
+- Situs inversus
+- Rénal 50% (risque IRC)
+- Faciès : hypertélorisme, élargement racine du nez, narines antéverséees
+** Génétique
+20 gènes connus
+* Syndrome d’Alström
+900 cas monde
+- Obésité précoce
+- Rétinite pigmentaire -> cécité 20 ans
+- Surdité perception ~7 ans
+- Cardiomyopathie dilatée
+- Diabète type 2 avant 20 ans
+- Retard statural, hypogonadisme
+- +/- déficit cognitif modéré
+** Génétique
+  AR
+  ALMS1
+* Syndrome de Borjeson-Forssman-Lehman
+- retard mental sévère +/- épilepsie
+- hypotonie
+- retard statural, hypogonadise
+- microcéphalie
+- dysmorphie: oreilleis épaisse es longue, lobes charnus, yeux enfoncés, rebords obritaires saillants
+  Gne :PHF6
+* Syndrome de Cohen
+- parfois obésité
+- hypotonie néonatale
+- retard mental souvent modéré
+- dysmoporphie: grandes incisives centrales, microcéphalie, cheveux épais, microcpéhalie, fentes palpébrales obliques
+- doigts "en baguettes de tambours", hyperlaxité articulaire
+- dystrophie rétinienne
+- neutropénie intermittente
+
+  Gènes COH1
+  Effet fondateur (finlande...)
+* Syndrome WAGRO
+- tumeurs de Wilms
+- Aniridie
+- anomalies Génitale
+- Retard mental, syndrome de PW-like
+- Obésité (50% du syndrome WAGR)
+deletion de 11p13 (syndrome WAGR) et en 11p14 (gène BDNF)
+* Syndrome de Smith-Magenis
+Déléteion 17p11.2
+- DI souvent sévère
+- dysmorphie: brachycéphalie, bosses fontales, syophrise, hypertélorisme, hypoplasime étage moyen facile, programthism, oreiles bas implantés
+- troubles comportement et sommeil
+- hyperphagie etob
+ RAI1
+* Syndrome de l’X fragile
+30% ont une obésité et 10% proche phénotype Prader-Wili
+* Pendred
+- Clinique : surdité congénitale neurosensorielle sévère/profonde, atteinte vestibulaire, anomalies os temporal
+- Diagnostic : clinique = surdité neurosensorielle + anomalies scan rochers + goître euthyroïdien
+- Gènes : SLC26A4
+- Traitement : sympto
+- Transmission : AR
+
 * Syndrome de West
 In about 35% of cases, the etiologic event is (still) unknown:
 others = structural, infectious, metabolic and immunologic defects and genetic abnormalities
@@ -90,40 +252,3 @@ Suspected on :
 Genes = JAG1, NOTCH2
 AR
 Pronostic: renal transplant, cardiac... but not lethal
-
-* Hémochromatose
-
-** Physiopathologie
-Circuit quasi-fermé : la destruction des globus rouges par les macrophages recycle le fer. Peu de pertes, peu d’apport
-Régulation au niveau de l’intestin car pas de mécanisme d’excrétion (hormis desquamation ) !
-Hepcidine = peptite synthésé dans le foie qui est le régulateur principale pour fer
-- bloque absorption intestinale
-- bloque relargage du stockage du fer (foie)
-  -> peu d’hepicidine = surcharge en fer
-** Clinique
-Accumulation fer dans cellules parenchymateuses :
-- foie+++ -> cirrhose
-  , coe)
-- coeur -> cardiomyopathie
-- glandes endocrine -> diabète
-- peau -> mélanodermie
-- articulations -> arthralgie
-
-  Évolution : phase biologique -> clinique
-  Ttt: saignée tôt -> espérance de vie normale
-** Génétique
-Multigénique
-*** HFE
-- Homozygotie p.[Cys282Tyr] prédominant mais expression variable
-- p.[Cys282Tyr] [His63Asp] = facteur de risque
-** Autres
-|      | Juvénile | intermédiaire | adulte       |
-| Diag | précoce  |               | tardif       |
-|      | sévère   | moins sévère  | modéré       |
-|      | HJV/HAMP | TRF2          | HFE, SLC40A1 |
-|      | AR       | AR            | AR ou AD     |
-NB: SLC40A1 : 2 phénotype selon le mécanisme (perte de fonction = ferroportini disease, gain = hémochromatose type 4)
-** Avertisemente
-Multifactoriel:
-- protecteur = variant fréquents, CYBRD1
-- agravant = homme (testostérone), alcool, variant rare, HAMP/HJV, fréquents
