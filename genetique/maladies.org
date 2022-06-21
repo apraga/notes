@@ -300,25 +300,28 @@ AR
 
 * Syndrome de Prader-Willi
 ** Clinique
-Phases: anorexie -> boulimie (switch d’origine hypotalamique)
+Phases:
 - anténatal : diminution mouvement actifs foetus, faible pois naissance, hydramnios
 - 0-9mois : hypotonie, déficit succision
 - à partir de 2 ans: gain poids
 - à partir de 8 ans : hyperphagie,
 - adulte: insatiable
 
-Troubles du comportement:
-  - affectif et perso
-  - déficit cognitif léger/moyen
-  - défaut empathie
+- hypogonadisme
+- petite taille
+- troubles du comportement
+- déficit cognitif léger/moyen
+- mains courtes et trapues
+- légère dysmorphie: yeux en amandes, petite bouche aux coins tombants
 
+[[img/prader-willi.png]]
 Troubles comportement alimentaire :
   - obsession alimentaire ("craving")
   - hyperphagie
     Mise en danger de la vie !
 ** Génétique
-Région 15q11q13 = soumise à empreinte maternelle -> sujets sains = gènes s’exprimant depuis chromosome paternel
-Prader-Wili si
+Région 15q11q13 = soumise à empreinte maternelle -> gènes de l’allèle maternelle sont "mis sous silence" et seuls les gènes depuis chromosome paternel s’expriment
+Prader-Wili si perte de ces gènes d’origine paternelle :
 - microdeletion de la zone paternelle (70%)
 - ou disomie uniparentale (2 maternel)
 - rarement translocation
@@ -336,6 +339,21 @@ chercher
 endoc pour déficit en GH, hypogonatidme
 psy
 [[http:guide-prader-willi.fr]]
+
+* Syndrome d’Angelman
+** Clinique
+ataxie, tremblement
+épilepsie
+trouble du sommeil
+retart moteur et mental sévère (pas de langage)
+jovialité
+rires immotivés
+[[img/angelman.png]]
+** Génétique
+Aboliton du gène /UBE3A/, normalement actif sur l’allèle maternelle
+- grandes délétions
+- disomie uniparentale
+- mutation génique
 * TODO Syndrome de Rubinstein-Taybi
 
 * TODO Syndrome de Silver-Russell
