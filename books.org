@@ -1,5 +1,7 @@
 Voir [[file:books-lists][books lists]] pour des idées
-
+* Génétique :genetique:
+** TODO Collège
+*** STRT Chap 10
 * Computer science :cs:
 ** HOLD The art of computer programming, volume 1
 ** HOLD Haskell Programming From First Principles [5/31]
