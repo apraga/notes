@@ -1,0 +1,116 @@
+#+title: Inactivation de l’X
+#+date:<2022-06-27 Mon>
+#+author: Pr Valérie ???
+
+Dégénerescene X -> Y
+Besoin d’un mécanisme de correction de dosage génique (XX chez femme, X homme)
+- drosophile = hypertranscription X
+- namtode : hypotranscription chez femelle
+
+2 formes inactivation :
+- soumise à empreinte (marsupiaux)
+- non soumise à empreinte (Homme)
+
+Homme : mosaïcisme cellulaire chez la femme par inactivation au hasard de l’X paternel ou maternel
+- précocément embryogénèse
+- une fois le choix fait dans une cellule, toutes les cellules qui en découleront aurant le même profil
+- mécanisme réversible pendant la gamétogenèse
+Courbe de Gauss avec pic à 50/50
+* Modélèe souris
+Tous les cellules inactivent X paternel
+- réactivation dans cellules à l’origine de l’embryon -> inactivation aléatoire
+- X paternel reste inactif dans les tissus extra-embryonnaire
+* Centre d’inactivation de l’X (XIC)
+*Xq13 = sous le centromère du bras long* (important !)
+2Mb chez Homme
+Nombreux gènes non codant dont /XIST/ (cf infra)
+
+Rôle:
+- comptage :
+  - la cellule détermine le ratio X/autosome (1 ou 2 par autosome normalement)
+  - un seul X actif par cellule (XY ou 45X -> pas inactivation, XXX ->_2 Xi)
+- choix
+* Mise en place
+1. comptage et choix X inactif
+2. initiation  : Xic est nécessaire et suffisant pour déclencher l’inactivation lorsqu’il est présente en 2 copies
+3. Propagation de l’ARN Xist sur l’Xi en cis (recouvre tout le chr inactif)
+4. stabilisation et maintien
+* ARN Xist = acteur principal
+Dans la région Xq13
+/XIST/ exprimé à partir de l’X *inactif* -> initiateur principal de l’inactivation
+
+Régulation de Xist dans XIC
+- expression à partir d’un seul X et à un moment précis du developpement embryonnaire
+- peut inactiver n’importe quel chromosome dans lequel il a été introduit
+
+Expression ARN Xist ->_recrutement SPEN (effecteur majeur de l’inactivaton) -> .. (détail non à savoir)
+En pratique, modification des histones (remodelage chromatine)
+machinerie transcriptionnelle est enlevée
+X inactif déplacé en périphérie du noyau
+
+Souris != Homme chez qui il y a un décalage entre accumalation XIST et inactivation de l’X
+-> tardif et *graduel*
+Pourquoi ? Hypothèse : antagoniste XIST chez Hommes
+
+Création d’un comportamente nucléaire inactif (sauf les gènes qui échappent àla transcription)
+* Échappement
+15% des gènes y échappent (100) -> région pseudo-autosomique = PAR1, PAR2
+- PAR1 contient SHOX (haploinsuffisance = Turner, petite taille)
+- permettent apparement X et Y pendant la méiose
+
+10% ont une expression variable entre les femmes
+certains ont un profil d’expression variable selon les tisus
+Certains gènes échappanent n’ont pas d’équivalent sur Y
+* Chr X inactif
+Réplication tardive
+Corpuscule de Barr
+Visible noyau interphasique
+hétérochromatine *facultative* ()
+* Biais d’inactivation
+Préférentiel dans 90% des cellules
+techniques
+- cyto: réplication tardive de l’X inactif -> on peut les marquer (en fin de cycle) et dégrader les chromosome -> apparaît pâle
+- moléculaire : région polymorphique (spécifique inactif) méthylée sur X inactif
+  X méthylé -> enzyme de restriction ne peut pas le couper -> seul l’X actif sera amplifié
+  2 bandes : on fait du semi-quantitif
+  - random = 2 pics pour X (père et mère)
+  - inactivation -> 1 seul pic car l’X paternel sera inactif)
+  - si 80/20: 1 grand pic et 1 petit
+* Pathologies associées
+Primaire = variant /XIST/
+Secondaire = variant gène X ou remaniement chormo, soit physiologique ()
+
+- Primaire = inactivation biaisée depuis le début
+- Sélection secondaire = le plus courant : initialement inactivation aléatoire -> les cellules ayant choisi l’X inactif ne vont pas réussir à proliféer
+** Remaniement chromosoqiue déséquiilbre
+- anneaux X: , délétion X iso Xq -> inactivation X anormal (biais de sélection) -> phénotype Turner car région PAR1 perdue suite à la malformation d’où haploinsuffisance
+- duplication sur l’X : phénotype normal si elles inactivent l’X dupliqué
+
+- translocation X : X remanié inactivé et s’étend sur le segment transloqué pour atténuer trisomie partielle
+  mais phénotype anormal malgré tout
+** Transloc X-autosome équilibré
+on transmet soit chr normal soit équiilbré
+X normal est le plus souvent inactif ! Mais phénotype normal, parfois FCS récurrente, dysfonctionnemet gonadique, peut forcer expression d’une maladie récessive liée à l’X
+** Disomie functionelle
+Majorité des gènes de l’X : 1 seul allèle fonctionnel
+Si les gènes qui devaient être inactivé sont activés : disomie fonctionnelle
+
+- Transloc autosomoe équilibré :
+  - Si X remanié inactivé : disomie fonctionnelle du segment transloqué qui va échapper à l’inactivion vu qu’il a été transloqué sur un autre chro (en mosaïque le plus souvent )
+- Transloc autosome déséquilibré : pas de biais mais disomie fonctionnelle également du segment transloqué -> disomie partielle homogènes
+- anneaux : si très petit, on perd Xist donc l’anneau sera actif -> disomie fonctionnelle
+  si extrèment petit, phénotype Turner car on a quaisement tout perdu
+- Duplication X
+  - Garçon : pas le choix, inactivé X
+  - fille : phénotype anormal si inactive X normal -> comme le garçon, souvent en mosaïque
+
+
+** NB:
+FISH sur métaphase pour voir la localisation
+Pendant à une disomie fonctionnelle si suspicion transmission récessive liée à l’X -> ACPA
+* Conclusion
+Retenir Xist, /XIST/ (non codant), XIC = centre
+ARN Xist recouvre X inactif
+réversible
+Méthylation au niveau des gènes
+15% des gènes y échappent

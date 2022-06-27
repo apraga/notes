@@ -1,0 +1,21 @@
+#+title: Déficience intellectuelle
+#+date: <2022-06-27 Mon>
+
+* Clinique - Dr Solveig Heide
+** Définition
+Troubles du neurodéveloppement : DI, troubles communication, TSA...
+Défaut de développement avec 3 critères (AAIDD 2020)
+ - QI < 2DS (70)
+ - limitation dans 2 domaines du fonctionnemen adaptatif -> échelle de Vineland++
+ - début avant 18 ans
+
+Fréquence : 2-3% théorique
+1.5x de garçon (chr X)
+1 à 2.5% des enfants en âge scolaire
+Incidence augmente avec l’âge
+
+léger : 50/55 - 70 (-2DS)
+moyen 35/40 - 50/55 (-3DS)
+grave 20/25 - 35/40 (-4DS)
+profond < 20/25 (-5DS)
+
