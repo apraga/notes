@@ -1,6 +1,6 @@
 #+title: Inactivation de l’X
 #+date:<2022-06-27 Mon>
-#+author: Pr Valérie ???
+#+author: Pr Valérie Malard
 
 Dégénerescene X -> Y
 Besoin d’un mécanisme de correction de dosage génique (XX chez femme, X homme)
