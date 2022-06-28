@@ -282,6 +282,39 @@ AR
   Gènes COH1
   Effet fondateur (finlande...)
 * TODO Syndrome de Cornelia de Lange
+* 22q11
+** Clinique
+*** Principal
+- Cardiopathies conotroncale (CIV, Fallot, atrésie pulmonaire)
+- FP, FLP
+- hypocalcémie
+- déficit immunitaire
+- difficultés d’apprentissage
+- dysmorphie
+*** autre
+- Trouble digestif (dysphagie, reflux)
+- Déficit imuntaire (hypoplasie du thymus) -> Maladie automimmune
+- Hypotonie enfance
+- Scoliose
+- Ophtalmo
+- déficit auditif
+- génito-urinaire (agénésie rénale)
+- Trouble psychologique (hyperactivité) enfance ->_psychiatrique
+- anomalies dentaire (carie, émail)
+- déficit hormone croissance
+** Y penser en anténatal
+absence de thymus +
+-  Malfo cardiaque conotroncale
+- ou  FP ou FLP
+Ou agénésie rénale unilatérale
+** Diagnostic
+- CGH ou
+- FISH avec sonde spécéfique (TBX1 dans 90%)
+** Diagnostic différentiel
+- séquence de Pierre-rRobin
+- syndrome alagille
+- CHARGE
+- délétion 11p et 15q24 (mais vu en CGH)
 
 * TODO Syndrome de Kabuki
 
@@ -290,7 +323,7 @@ AR
 * Syndrome de l’X fragile
 30% ont une obésité et 10% proche phénotype Prader-Wili
 * TODO Syndrome de Noonan
-
+* TODO Syndrome de Williams-Burren
 * Syndrome de Pendred
 - Clinique : surdité congénitale neurosensorielle sévère/profonde, atteinte vestibulaire, anomalies os temporal
 - Diagnostic : clinique = surdité neurosensorielle + anomalies scan rochers + goître euthyroïdien
