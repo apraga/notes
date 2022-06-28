@@ -1,0 +1,157 @@
+#+title: Cardiogenetique
+#+author: Pr Philippe Charron
+#+date:<2022-06-28 Tue>
+
+* classification
+- Cardiomyopathie
+  - isolée: CMH = la + fréquente,
+  - plus rare: syndromique
+- Troubles du rythme et conduction
+  - QT long
+  - brugada
+  - QT curt...
+- Artérieur
+
+  CMH = 35% mort subite chez jeune athlète
+40-50% des indications de trnasplantation cardiaque
+* Cradiomyopathie
+maladie du myocarde : structure, fonction (sans HTA, atteinte des valvules)
+* CMH
+1/500 = la plus prévalente
+Début: ado, adulte jeune
+hypertrophie ventricule gauche
+systolique normale
+histo = désorganisation des cardiomyocyte
+
+- symptômes : dysnée, palplatiation, douleurs, syncope
+- complication :
+  - mort subite sur troubles du rythme
+  - insuf cardiaque
+  - TdR supra-ventriculaire
+- Suspecté sur ECG
+** Génétique
+> 90% génétique !!
+Presque toujours AD
+Expression variable
+maladie du sarcomère -> 2 gènes surtout : MYH7, MYBPC3 (> 15 gènes, beaucoup de mutations privées !)
+modèle actuel = gain de fonction -> modèle hypercontractile (stimulation hypertrophie, fibrose)
+* Cardiomyopathie dilatée
+Cause principale IC avec altération fonction systolique
+1/2500 (USA, probablement sous-estimé)
+Début: ado, adulte jeune
+Complication :
+- mortalité 30% à 5 ans
+Enjeu de prise en charge précoce des famille ++
+
+** Génétique
+1/3 mendélien : familiale et monogénique. Le plus souvent AD (mais aussi AR, X, mito)
+2/3 : non génétique, susceptibilité
+Gènes : hétérogène: DMD (X-linked), MYH7, LMNA (gènes lamines)...
+** Gène LMNA
+Nombreux phénotype en général
+Formes cardiaques : CMD, souvent précédé de TdR de conduction ou ventriculaire +/- myopathie
+La forme la plus sévère pour cardio dilatée en terme de pronostic -> greffe
+AD
+** Spectre génétique
+titine :
+- mutation tronquant (on ne tient pas compte des faux-sens car on ne sait pas les intre)
+- 27% des CMD
+- perte de fonction
+* Cardiomyopathie ventriculaire droite arythmogène
+Parfois biventriculaire d’emblée
+Tissu musculaire -> fibro-adipeux
+Complication :
+- mort subite ++
+- dysfonction VD
+Gènes du desmosome (DSG2) = la moitié des cas -> on ne retrouve pas l’autre motiié des cas
+Physiopatho = anomalies de jonction -> détachement et mort cellulaire, uprégulation des voie de la fibrogènèse
+* Restrictive
+Plus rares
+EC avec FEVG préservée, diastolique très marqué (VG rigide)
+Génétique 1/3 cas : soit cardio pure, soit syndromique (neuromusc)
+Nb cause acquises : amylose cardiaque++ (AL, TTR: sénile (sauvage) ou mutation TTR sur mode AD)
+* Cnalopathies (mutation canaux potassium et sodium)
+** QT long: mutation 50% des cas
+QT corrigé > 460ms
+Syncope
+Complication : torsade de pointe, FV ->_arrêt acradiaque, mort subite
+Favorisé par : médicaments (neuroleptique... longue liste), hypoK, effort
+TTT: beta-bloquant (bonne efficacité)
+
+Forme :
+- cardiaque pure = quasitotalité
+- très rarement syndromique :
+  - sd de Jervell-Lange et Nielsen (+surdité, AR) ->_chercher surdité si QT long
+  - sd Adenrson Tawil : dysmorphie, paralysie périodique
+ECG variable selon le gène et cilnique différente (circonstance de déclement)
+- KNCQ1: déclencé sport
+- HERG: déclencé émotion
+- SNC5A: déclencé repos
+** Brugada: mutation 25% des cas
+ecg typique: ST sus-décalé. Attention : ECG peut être normal -> test de provocation (pharmacologique)
+Diag fortuite ou après malaise/mort subite
+Favorisé par : hypokaliméie, fièvre (!), médicament
+TTT : éviter accès fébrile prolongé, peu de médicaments efficaces ->_discussion défibrillateur
+
+AD
+Pénétrance incomplète
+1 seul gène connu
+* Génétique
+Transmission: AD mais souvent sporadique
+Pénétrance incomplète : Brugada, VD droite
+Expression cardiauqe souvent retardée
+Variablitié expression : inter-/intrafamilale -> compréhension très partielle (CMH)
+
+Grossesse: risque aggravation si mère porteuse -> complication majeure dans 1/3 des cas
+-> toute grossesse sera à risque
+* Filitère
+Cardiogène
+
+4 centre de référence : Pité, Nantes, Lyon, Necked
+* Objectif
+** Informer
+** Organiser bilan cardiaque famalial
+en parallèle des analyses génétique (souvent 6 mois pour résultats génétique)
+- bilan à partir de 10 ans (formes communes et non syndromique !):
+  - ECG+ echo
+  - !! exception : non-compaction VG -> dès la naissance
+  - si normal:
+    - suivi régulier pendant adolescence tous les 2 ans jusque 20 ans,
+    - puis espacé 2-5 ans jusqu’à 60ans
+- QT long : ECG dès la naissance puis 2 Ans
+- Brugada: ECG à partir de 12-15 ans puis tous 3-4 ans
+** Rôle du test génétique
+- identifier maladie rare
+- objectif thérapeutique
+- pronostic : mutation lamine A/C -> discussion pour mettre défbirillateur plus tôt
+- parfois corrélation phénotype-génotype
+*** Complexité causes: Pomp, Fabry, amylose...
+
+Maladie de Fabry :
+- forme syndromique
+- forme cardiaque pure
+- lié à l’X
+- thérapeutique spécifique: enzymothérapie
+
+  Arrêt cardiaque non récupéré sujet jeune : autopsie (test génétique)
+
+
+*** Prédictif chez apparenté :
+il faut la mutation faimilale :
+- pas de mutation : pas de suivi, pas de risque de tra
+- si mutation :
+  - suivi médical (même si asympto), dépistage précoce,
+  - discuter restrition du sport, ttt, médic contre-indiqués
+*** Prénatal
+Demande DPN acceptée rarement, au cas par cas
+*** Panel Pitié
+carydomyopathie: CMG, TMP,
+Arrythmie : level1 , level 2
+
+Panel négatif -> génome
+
+NB: ne pas prendre de panel trop large car rendement peu important (gènes avec peu de niveau de preuve) !
+** Enfant : diag prédictif ?
+10-12 ans !
+** Etude PREDICT pour impact psychocial du test prédictif
+Bénéfice médical = pas la première modification
