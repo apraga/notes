@@ -326,7 +326,7 @@ Ou agénésie rénale unilatérale
 
 * TODO Syndrome de Leigh et NARP
   https://www.ncbi.nlm.nih.gov/books/NBK1173/
-* Syndrome de l’X fragile
+* TODO Syndrome de l’X fragile
 30% ont une obésité et 10% proche phénotype Prader-Wili
 * TODO Syndrome de Noonan
 * TODO Syndrome de Williams-Burren
@@ -444,7 +444,30 @@ Pronostic: renal transplant, cardiac... but not lethal
   AR
   ALMS1
 * TODO Syndrome KBG
+** Clinique
+- Macrodontie (incisive centrale) 85-95%
+- Dysmorphie : visage triangulaire, brachycéphalie, synyphris, telechanthus
+- Petite taille
+- Retard de développement/Di
+- Troubles du comportement
 
+  [[./img/kbg-dents.jpg]]
+  [[./img/kbg-dysmorpho.jpg]]
+*** Autres
+Dysmorphie autre
+- ensellure préoméinutent, nez bulbeaux, narines antéversées
+- sourcils broussaileux
+- oreilles proéminentes, philtrum lon
+
+Autres:
+- difficultés d’alimentation
+- squelettique : brachydactylie, scoliose
+- surdités (diverse)
+- épilepsy
+
+  Variabilité
+** Diagnostic
+  Variant htz /ANKRD11/
 * Syndrome tricho-rhino-phalangien
 
 Clinique
