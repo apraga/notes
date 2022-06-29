@@ -1,4 +1,0 @@
-#+TITLE: T21
-#+author: Renaud Touraine
-
-Région  = 4-7Mb mais a priori, pas possible de la réduire plus

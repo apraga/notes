@@ -8,16 +8,14 @@ A terme : 37-41SA
 petits poids : < 10e percentile RCIU : < 3e percentile # Développement
 
 Moteur:
-
 - 4 mois : tenue de la tête
 - 6 mois : tient assis avec appui
 - 9 mois : tient assis sans appui, debout avec appui
-- 12-18 mois : marche seule
+- 12-18 mois : marche seul
 - 2 ans : court
 - 3 ans : monte les escaliers en alternant
 
 Motricité fine :
-
 - 2 mois : serre le doigt
 - 6 mois : passe un objet d'une main à une autre
 - 9 mois : pince pouce-index
@@ -27,7 +25,6 @@ Motricité fine :
 - 3 ans : imite un rond
 
 Langage :
-
 - 4 mois : vocalise
 - 6 mois : bisyllabique : "ma-ma"
 - 9 mois : répète une syllabe
@@ -36,7 +33,6 @@ Langage :
 - 3 ans : sujet verbe COD
 
 Sensoriel
-
 - 4 mois : rit aux éclats
 - 6 mois : repère une visage familier
 - 9 mois : peur de l'étranger

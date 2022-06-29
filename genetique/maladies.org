@@ -1,4 +1,44 @@
 #+TITLE: Maladies
+* 22q11 del
+** Clinique
+*** Principal
+- Cardiopathies conotroncale (CIV, Fallot, atrésie pulmonaire)
+- FP, FLP
+- hypocalcémie
+- déficit immunitaire
+- difficultés d’apprentissage
+- dysmorphie
+** Dysmorphie (peu évident naissance)
+- visage allongé, effacement relief des pomettes
+- nez long/gros/en puble
+- FP en haut et dehors
+- oreilles petits, ronded,s avec *lobul hypoplasique*
+- bouche étroite
+*** autre
+- Trouble digestif (dysphagie, reflux)
+- Déficit imuntaire (hypoplasie du thymus) -> Maladie automimmune
+- Hypotonie enfance
+- Scoliose
+- Ophtalmo
+- déficit auditif
+- génito-urinaire (agénésie rénale)
+- Trouble psychologique (hyperactivité) enfance ->_psychiatrique
+- anomalies dentaire (carie, émail)
+- déficit hormone croissance
+** Y penser en anténatal
+absence de thymus +
+-  Malfo cardiaque conotroncale
+- ou  FP ou FLP
+Ou agénésie rénale unilatérale
+** Diagnostic
+- CGH ou
+- FISH avec sonde spécéfique (TBX1 dans 90%)
+** Diagnostic différentiel
+- séquence de Pierre-rRobin
+- syndrome alagille
+- CHARGE
+- délétion 11p et 15q24 (mais vu en CGH)
+
 * TODO Achondroplasie
 
 * Hémochromatose
@@ -99,6 +139,12 @@ https://onlinelibrary.wiley.com/doi/full/10.1111/ddg.14638
 - PNDS
 - Genereviews
 - Santa-Maria FD, Mariath LM, Poziomczyk CS, et al. Dental anomalies in 14 patients with IP: clinical and radiological analysis and review. Clin Oral Investig. 2017;21(5):1845-1852. doi:10.1007/s00784-016-1977-y
+* Mucopolysaccharidose type VI
+Anomalies épiphysaires et métaphysaire humérales supérieures
+Remaniement épi/métaphyses des hanches
+
+Surveillance cardiaque, opthalmo, ORL, respo, orthopédituqe
+TTT: enzymothérapie substitutive
 * TODO Myotonie de Steinert
 
 * Obésité syndromiques
@@ -282,46 +328,6 @@ AR
   Gènes COH1
   Effet fondateur (finlande...)
 * TODO Syndrome de Cornelia de Lange
-* 22q11
-** Clinique
-*** Principal
-- Cardiopathies conotroncale (CIV, Fallot, atrésie pulmonaire)
-- FP, FLP
-- hypocalcémie
-- déficit immunitaire
-- difficultés d’apprentissage
-- dysmorphie
-** Dysmorphie (peu évident naissance)
-- visage allongé, effacement relief des pomettes
-- nez long/gros/en puble
-- FP en haut et dehors
-- oreilles petits, ronded,s avec *lobul hypoplasique*
-- bouche étroite
-*** autre
-- Trouble digestif (dysphagie, reflux)
-- Déficit imuntaire (hypoplasie du thymus) -> Maladie automimmune
-- Hypotonie enfance
-- Scoliose
-- Ophtalmo
-- déficit auditif
-- génito-urinaire (agénésie rénale)
-- Trouble psychologique (hyperactivité) enfance ->_psychiatrique
-- anomalies dentaire (carie, émail)
-- déficit hormone croissance
-** Y penser en anténatal
-absence de thymus +
--  Malfo cardiaque conotroncale
-- ou  FP ou FLP
-Ou agénésie rénale unilatérale
-** Diagnostic
-- CGH ou
-- FISH avec sonde spécéfique (TBX1 dans 90%)
-** Diagnostic différentiel
-- séquence de Pierre-rRobin
-- syndrome alagille
-- CHARGE
-- délétion 11p et 15q24 (mais vu en CGH)
-
 * TODO Syndrome de Kabuki
 
 * TODO Syndrome de Leigh et NARP
@@ -329,7 +335,6 @@ Ou agénésie rénale unilatérale
 * TODO Syndrome de l’X fragile
 30% ont une obésité et 10% proche phénotype Prader-Wili
 * TODO Syndrome de Noonan
-* TODO Syndrome de Williams-Burren
 * Syndrome de Pendred
 - Clinique : surdité congénitale neurosensorielle sévère/profonde, atteinte vestibulaire, anomalies os temporal
 - Diagnostic : clinique = surdité neurosensorielle + anomalies scan rochers + goître euthyroïdien
@@ -337,7 +342,7 @@ Ou agénésie rénale unilatérale
 - Traitement : sympto
 - Transmission : AR
 
-* Syndrome de Prader-Willi
+* Syndrome de Prader-Willi (15q11.1-15q11.2  del)
 ** Clinique
 Phases:
 - anténatal : diminution mouvement actifs foetus, faible pois naissance, hydramnios
@@ -379,27 +384,12 @@ endoc pour déficit en GH, hypogonatidme
 psy
 [[http:guide-prader-willi.fr]]
 
-* Syndrome d’Angelman
-** Clinique
-ataxie, tremblement
-épilepsie
-trouble du sommeil
-retart moteur et mental sévère (pas de langage)
-jovialité
-rires immotivés
-[[img/angelman.png]]
-** Génétique
-Aboliton du gène /UBE3A/, normalement actif sur l’allèle maternelle
-- grandes délétions
-- disomie uniparentale
-- mutation génique
 * TODO Syndrome de Rubinstein-Taybi
 
 * TODO Syndrome de Silver-Russell
 * TODO Syndrome de Smith-Lemli-Optiz
 
-* Syndrome de Smith-Magenis
-Déléteion 17p11.2
+* Syndrome de Smith-Magenis (17p11.2 del)
 - DI souvent sévère
 - dysmorphie: brachycéphalie, bosses fontales, syophrise, hypertélorisme, hypoplasime étage moyen facile, programthism, oreiles bas implantés
 - troubles comportement et sommeil
@@ -416,6 +406,7 @@ Source https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7655587/
 * TODO Syndrome de Wiedemann-Beckwith
 * TODO Syndrome de Wiedemann-Steiner
 
+* TODO Syndrome de Williams-Burren (7q11.23 del)
 * TODO Syndrome d’Aarskog
 
 * Syndrome d’Alagille
@@ -443,7 +434,21 @@ Pronostic: renal transplant, cardiac... but not lethal
 ** Génétique
   AR
   ALMS1
-* TODO Syndrome KBG
+* Syndrome d’Angelman
+** Clinique
+ataxie, tremblement
+épilepsie
+trouble du sommeil
+retart moteur et mental sévère (pas de langage)
+jovialité
+rires immotivés
+[[img/angelman.png]]
+** Génétique
+Aboliton du gène /UBE3A/, normalement actif sur l’allèle maternelle
+- grandes délétions
+- disomie uniparentale
+- mutation génique
+* Syndrome KBG
 ** Clinique
 - Macrodontie (incisive centrale) 85-95%
 - Dysmorphie : visage triangulaire, brachycéphalie, synyphris, telechanthus
@@ -468,9 +473,10 @@ Autres:
   Variabilité
 ** Diagnostic
   Variant htz /ANKRD11/
+  AD
 * Syndrome tricho-rhino-phalangien
 
-Clinique
+** Clinique
 - petite taille
 - épiphyses en cône
 - raccourcissement sévère de toutes les phalanges, déviation des 2e phalanges
@@ -482,6 +488,7 @@ Clinique
 [[img/tricho-rhino-phalangien.png]]
 Attentio risque ostéchondrite hanche
 
+** Génétique
 AD
 /TRPS1/ ou délétion 8q24
 * Syndrome WAGRO
@@ -492,9 +499,8 @@ AD
 - Obésité (50% du syndrome WAGR)
 deletion de 11p13 (syndrome WAGR) et en 11p14 (gène BDNF)
 * TODO Séquence de Pierre-Robin
-* Mucopolysaccharidose type VI
-Anomalies épiphysaires et métaphysaire humérales supérieures
-Remaniement épi/métaphyses des hanches
-
-Surveillance cardiaque, opthalmo, ORL, respo, orthopédituqe
-TTT: enzymothérapie substitutive
+* TODO Trisomie 18
+* TODO Trisomie 21
+* TODO Syndrome microdeletionel: cf diapo "DI versant biologique"
+* TODO 17q12 del
+* TODO Charcot-Marie-Tooth

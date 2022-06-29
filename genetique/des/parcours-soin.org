@@ -11,3 +11,9 @@ Bamara (saisie directe) -> BNDMR = anonymisée, tous les ptaients avec maladie r
 organisation et coordination au niveau national
 anddi-rare = polyomalfo [plutôt généticien]
 defiscence = trouble neurodev
+
+ILIAD = méta registre, pour l’instant bloqué
+
+
+SysNDD = BB gènes sbesoin de curator (contacter PR Zweier)
+BDD gènes Sy

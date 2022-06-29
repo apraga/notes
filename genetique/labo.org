@@ -1,0 +1,11 @@
+#+title: Labo
+* SNP-array
+** Interpretation
+*** Htz/hmz
+on peut regarder la fréquence des allèles B
+normal = 3 bandes (AA -> 0, AB -> 0.5, BB -> 1)
+deletion htz = 0 bandes (plus de B)
+duplication htz = 4 bandes (AA -> 0, AAB -> 1/3, ABB -> 2/3, BBB -> 1)
+perte d’htz avec nombre de copie normale = pas de bande
+*** Nombre de copies
+normal = 2
