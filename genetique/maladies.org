@@ -291,6 +291,12 @@ AR
 - déficit immunitaire
 - difficultés d’apprentissage
 - dysmorphie
+** Dysmorphie (peu évident naissance)
+- visage allongé, effacement relief des pomettes
+- nez long/gros/en puble
+- FP en haut et dehors
+- oreilles petits, ronded,s avec *lobul hypoplasique*
+- bouche étroite
 *** autre
 - Trouble digestif (dysphagie, reflux)
 - Déficit imuntaire (hypoplasie du thymus) -> Maladie automimmune

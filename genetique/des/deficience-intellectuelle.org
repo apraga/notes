@@ -62,3 +62,10 @@ main courtes, fuselées ->
 * Aspect biologique - Dr Jamal Ghoumid
 30% cause monogénique
 Ne pas oublier FRM1 (non vu en exome)
+
+Article de 2015: estime la pénétriance à partir d’odds ratio
+
+DI: CGH, Xfra puis génome
+* TSA
+50% variant courant hérité
+2.3= variant rare hérité
