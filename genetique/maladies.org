@@ -504,3 +504,4 @@ deletion de 11p13 (syndrome WAGR) et en 11p14 (gène BDNF)
 * TODO Syndrome microdeletionel: cf diapo "DI versant biologique"
 * TODO 17q12 del
 * TODO Charcot-Marie-Tooth
+* Sclérose tubéreuse de bourneville
