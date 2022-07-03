@@ -1,0 +1,170 @@
+#+title: Td Prenatal
+* Cas 2
+TODO
+
+1/27 : faussement augmenté du à l’˰age
+1/500 équilibré: DPNI (NB: si porteur transloc)
+
+* Cas 3
+** Muco
+Récupérer les résultat de la nièce rapidement
+Si on a les mutations, on cherche l’htz d’abord chez le mari, puis la femme (si on n’a pas le temps, on fait les 2 en mḙme temps). Si les 2 ont la mutation, diag prénatal avec prélèvement invasif
+** Transloc équilibrée
+Biopsie trophoblaste : foetus porteur transloc équilibrée
+
+Ordo: acte + analyses (biopsie trophoplaste + caryo)
+** T16
+Transloc équilibré -> peut donner 2 chr normaux
+Contr˰ole pour voir si limité au placenta
+Vu le retard de croissance, ponction liquide amniotique : 46XX
+On vérifie qu’il n’y a pas de contamination maternelle
+Suivi écho : si d’autres signes, ACPA !
+** T13 , retard de croissance
+T13 en mosaïque -> grave, discussion IMG avec CPDPN
+Expliquer risque de récurrence: très faible
+* Cas 6
+T21 et X fra causes les plus fréquentes de DI
+- Compliqué d’avoir l’oncle mais on peut récupérer le max d’information (photos...)
+Ne pas passer à ˰oté d’un syndrome d’X fragile (non vu en exome, et en ACPA)
+- Grand-père : FXTAS ? (tremblements, mouvements non contr˰ollés)
+- voir le fils atteint en consultation
+- grossesse en cours
+
+  CAT selon clinique : X fra si en faveur.
+  Sinon ACPA + Xfra selon la clinique (fils +/- mère)
+
+  Faire rapidement ACPA chez fils et mère
+  NB: conseil : phénotype compliqué à prévoir chez la fille
+* Cas 7
+malfo chez enfant -> ACPA
+- arbre (fentes, malfo)
+- mère : doigts longs et fin (di george), voix nasonnées
+- phénotype du fils ()
+chercher del22
+NB:  père peut ḙtre asymptomatique et porteur
+* Cas 8
+Fente labiopalatine en prénat
+
+nuc (noyau) ish (FISH)
+sondes 13 18 21 X Y: 1X et 1 Y (DXZ1, DYZ3)
+RB1 = rétinoblastome, chr13
+D18S887 = chr18
+DSCR4 (downsyndrome) 21
+
+Ici 60/100 noyau normaux, autres = t13 ()
+Pas de contamination car tous XY
+** Autre demande
+Ici XX -> contamination ?
+
+Mosaïque = à n’importe quel stade de la grossesse
+** Caryo père
+Transloc robertsonienne 13-14
+Risque de récurrence prochaine grossese : transloc, T13, T14
+Refaire enquḙte familiale du c˰oté du père !!!
+Et il faut l’accord du père
+* 8bis
+Patiente ne doit pas recevoir le résultat génétique !
+Suspicion T13
+Toujours confirmer DPNI avec geste invasif !!
+Amnio normale ->_suivi écho seule
+
+T15 sur biopsie trophoblaste ->_proposer IMG. Si refus, suivi
+* 9
+46XXY
+3 chr 13, 18, 21
+-> triploidie (non vu à l’ACP)
+Peuvent arriver à terme, développement peut ḙtre tardif
+* 10
+Fragment de cordon
+FLP, microphtalmie, hexadyctaly -> T13
+
+*Syndrome anténatal à connaitre : T13, 18, 21, monosomie X*
+
+Gain à l’ACPA: duplication, chr surnuméraire ? ->_toujours demander caryotype
+* 11
+manque un X
+petit chromosome appelé un "marqueur"
+Hyperclarté nucale -> proablement issue de l’X
+À confirmer par FISH ou ACPA
+Anneau de l’X : mal vu en FISH
+Risque de DI par rapport au Tuner
+Chercher également SRY pour risque de gonadoblastome
+* 12
+3 FCS
+Caryo chez les 2 (toujours)
+Transloc réciproque (par opposition à robertsonienne)
+Explique les FCS
+
+Fragment de petite taille = à risque car grossesse possible (contrairement aux 2 autres possibilités)
+* 12bis
+ACPA : dup 22q, del 17q
+Penser à déséquilibre (trisomie partielle, monosomie partielle)
+* 13
++mar = chr en plus
+ACPA pour aller plus loin
+- résultat N
+- résultat anormal : hétérochromatine sur marqueur -> regarder les parent
+
+
+Caryo anormal, ACP N : transloc réciproque, inversion péricentrique équilibrée
+Si signe d’appels écho avec inversion péricentrique de novo -> regarder les points de cassure avec un exome voire génome (mais problème de qualité d’ADN)
+
+NB:  pour les CR: ACPA = p à q (linéaire)
+caryo = depuis le centromère
+
+** ex ACPA
+transloc entre bras q des chr10 et 12
+terminale = évoque dérivé transloc
+
+** Gain
+Cause : TODO
+
+NB: Rendu d’ACPA en prénat : seuil = 1Mb
+
+Regardé hérité. Si hérité parent sain, compliqué -> biblio, bien refaire le phénotype
+Penser pénétrance incomplète, expressivité variable
+** Délétion
+Faire caryo parents -> regardere si insertion parentale car peut expliquer patho et change le conseil génétique
+parent peut trnasmettre
+- chr deleté
+- chromosome avec insertion et chr N
+  ! Insertion non vue en PCR !
+  FISH impossible pour deletion trop petite
+* 14
+Muco -> mḙme cas que tout à l’heure
+* 15
+Hutington
+Mère porteuse ? Veut-elle savoir ?
+- veut savoir -> pré-sympto
+- proposition pré-implantatoire sans dire à la mère si porteuse
+* 16 hémophilie
+Lié à l’X -> on peut proposer sexe foetal (9-10SA)
+DPNI à partir de 12SA
+Si plus tardif, sexe peut ḙtre vu à l’écho
+
+Garçon -> 50% risque -> prélèvement invasif
+
+Homozygote -> pas compatible avec le sexe -> 2e prélèvement
+Hypothèse :
+- contamination maternelle
+- homme XX
+- Klinefelter
+- erreur de prélèvement
+- mosaïque
+47XXY
+* 17
+Del interstitielle chez foetus 5p, retrouvée chez mère
+Littérature
+Formule féminine : contamination maternelle ?
+Vérifier 2e prélèvement
+* 18
+Observation: maman transmettre Steinert
+Biophyse trophoblaste 46XX et 45X après culture
+Vérifier qu’il n’y a pas de Turner
+* 19
+4 FCS, conjoint transloc robertsonienne 13,14
+On propose un DPI (indication majeure = rob(13,14))
+DPI très lourd mais rapide pour 13,14 (connu)
+* 20
+Mutation délétère famille avec plusierus patients décédés
+Proposer DPI

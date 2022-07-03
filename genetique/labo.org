@@ -9,3 +9,61 @@ duplication htz = 4 bandes (AA -> 0, AAB -> 1/3, ABB -> 2/3, BBB -> 1)
 perte d’htz avec nombre de copie normale = pas de bande
 *** Nombre de copies
 normal = 2
+* Caryo
+** TODO Transloc Robertsonien
+* Principales techniques d’analyse des anormalies génétiques à l’échelle du gène (Collège)
+** Extraction
+- ADN: tissu frais, congelés (Guthrie, frottis, cheveuxx..). Habituellement : leucocycte du sang sur tube anticoagulant
+- NARN: cellules en culture, tissus à -80 ou tissus frais
+  Phénol/chloroforme = référence
+  Conservation
+  - ADN purifié : 4°
+  - ARN : -80
+    Qualité : éléctrophorèse (2 bandes pour ARN, 1 bande pour ADN)
+** Enzymes de restriction
+Coupe ADN double brin sur séquences spécifiques
+** Polymérases
+*** ADN polymérases
+3 types de réactions
+1. construit ADN à partir d’un brin d’ADN +  extrémité 3’OH libre
+2. proofreading (sens inverse)
+3. élimine fragment appariés
+*** ARN dépendantes (transcriptase inverse)
+ARNm -> ADN complétentaire
+** Électrophorèse
+Aciden nucléique = macromolécule chargées -> migrent dans un champ électrique
+Plus le fragment d’ADN est petit, plus il migre haut
+** Southern blot
+Étude d’un fragment d’ADN -> semi-quantitatif -> peut mettre en évidence
+- délétions/insertions > 150-300pb
+- inversions
+- cartographies de restrictions
+*** Méthode
+ADN digéré par des enzymes de restrictions
+Fragments séparés par du gel d’agarose
+Ajout sonde spécifique puis lavage pour enlever les séquences non spécifiques
+** Northern Blot
+Southern Blot mais sur ARN
+Montre
+- absence/diminution ARNm (réarrangements majeurs, mutation promoteur, anomalies transcription/transcrit instable)
+- taille
+- transcrits alternatifs
+** PCR
+Amplification d’une courte séquence d’ADN pour avoir une grande quantité de matériel nucléique
+*** Méthode
+1. Dénaturation : en chauffant, ADN double brin -> simble brin
+2. Hybridation amorces complémentaires (identifie la région à amplifier)
+3. Polymérisation: avec ADN polymérase ADN dépendantes, on reconstitue ADN double brin
+   On répéte la technique pour avoir $N_0 (1+\epsilon)˰n$ matériel où $\epsilon$ est le rendement
+   Vérification de la qualité par électrophorèse
+*** RT-PCR
+Idem mais pour ARN. Permet
+- transcript anormaux (mutation l’épissage)
+** Sanger
+On part d’un ADN simple brin. Puis synthèse du brin complémentaire mais en remplacant les dNTP par des ddNTP.
+Les ddNTP sont intégrés au hasard et arrḙtent la formation de la chaine.
+On obtient des fragments de différentes tailles, séparés par électrophorèse.
+Les ddNTP sont couplés à des molécules fluorescentes -> chaque bande aura une couleur spécifique du nucléotide
+
+Avantages: séquences plus longues que le NGS (700pb) avec très peu d’erreur
+-> utilisé pour valider résultat

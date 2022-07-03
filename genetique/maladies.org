@@ -499,6 +499,8 @@ AD
 - Obésité (50% du syndrome WAGR)
 deletion de 11p13 (syndrome WAGR) et en 11p14 (gène BDNF)
 * TODO Séquence de Pierre-Robin
+* TODO Trisomie 13
+* TODO Monosomie X
 * TODO Trisomie 18
 * TODO Trisomie 21
 * TODO Syndrome microdeletionel: cf diapo "DI versant biologique"
