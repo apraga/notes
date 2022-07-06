@@ -507,3 +507,14 @@ deletion de 11p13 (syndrome WAGR) et en 11p14 (gène BDNF)
 * TODO 17q12 del
 * TODO Charcot-Marie-Tooth
 * Sclérose tubéreuse de bourneville
+* Syndrome de Sturge-Weber-Krabbe
+Association
+- angiome plan cutanée zone innervée par le trijumeau
+- glaucome congénital
+- angiome méningé de la pie-mère +/- épilepsie, retard psychomot
+Recherche de glaucome et IRM cérébrale si angiome plan
+* Syndrome de Klippel-Trenaunay
+Souvent membre inférieur avec
+- angiome plan
+- varice
+- hypertrophie os et parties molles +/- asymétrie de longueur des MI
