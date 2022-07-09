@@ -314,8 +314,28 @@ AR
 - microcéphalie
 - dysmorphie: oreilleis épaisse es longue, lobes charnus, yeux enfoncés, rebords obritaires saillants
   Gne :PHF6
-* TODO Syndrome de Coffin-Siris
-
+* Syndrome de Coffin-Siris
+Complexe SWI/SNF (remodèle la chromatine)
+AD
+** cLinique
+DI
+Retard de croissance
+Dysmorphie
+Hirsutisme, cheveux épars
+Hypoplasie des phalanges distance (5e rayon)
+Malforamtinos congénitales variables
+[[./img/syndrome-coffin-siris.png]]
+[[./img/syndrome-coffin-siris-doigts.png]]
+* FG syndrome
+Lié à l’X
+/MED12/
+Médiator
+** Clinique
+DI
+Dysmorphie
+pouces/hallux large
++/- anomalie corps calleux, surdité
+[[./img/syndrome-fg.png]]
 * Syndrome de Cohen
 - parfois obésité
 - hypotonie néonatale
@@ -328,8 +348,23 @@ AR
   Gènes COH1
   Effet fondateur (finlande...)
 * TODO Syndrome de Cornelia de Lange
+AD: /NIPBL/, /SMC3/
+Lié à l’X : /SMC1/, /HDAC8/
+** Clinique
+DI
+Retard de croissance
+Malformation des membres
+Hirsutisme
+[[./img/syndrome-cornelia-de-lange.png]]
 * TODO Syndrome de Kabuki
-
+AD : /KMT2D/
+Lié à l’X /KDM6A/
+Modification post-traductionnelle des histones
+** Clinique
+DI
+Syndrome malformatif
+Dysmorphie
+[[./img/syndrome-kabuki.png]]
 * TODO Syndrome de Leigh et NARP
   https://www.ncbi.nlm.nih.gov/books/NBK1173/
 * TODO Syndrome de l’X fragile
@@ -384,7 +419,17 @@ endoc pour déficit en GH, hypogonatidme
 psy
 [[http:guide-prader-willi.fr]]
 
-* TODO Syndrome de Rubinstein-Taybi
+* Syndrome de Rubinstein-Taybi
+Modification post-traductionnelle des histones
+AD
+/CREBPP/, /EP300/
+** Clinique
+DI
+Microcéphalie
+Retard de croissance
+Pouces/hallux larges
+Dysmorphie
+[[./img/syndrome-rubinstein-taybi.png]]
 
 * TODO Syndrome de Silver-Russell
 * TODO Syndrome de Smith-Lemli-Optiz
@@ -518,3 +563,36 @@ Souvent membre inférieur avec
 - angiome plan
 - varice
 - hypertrophie os et parties molles +/- asymétrie de longueur des MI
+* STRT Syndrome ICF
+AR
+/DNMT3B/
+Mécanisme :
+- hypométhylation ADN
+- instabilité génomique -> réarrangement chromosomique
+- instabilité hétérochromatine péricentromérique des chr 1,9,16
+** Clinique
+Déficit immunitaire
+Dysmorphie faciale
+Retard de croissance
+DI
+[[./img/syndrome-icf.png]]
+* Syndrome de Weaver
+AD
+/EZH2/
+Modification post-traductionnelle des histones
+** Clinique
+DI
+Avance staturale + ˰age osseux
+Macrocéphalie
+[[./img/syndrome-weaver.png]]
+
+* Syndrome de Roberts
+Cohésinopathies
+AR
+Chromosomes en "rails de chemin de fer" (séparation prématurée des centromères et chromatides soeurs)
+/ESCO2/
+** Clinique
+DI
+Retard de croissance
+Malformation craniofaciae, membres
+[[./img/syndrome-roberts.png]]

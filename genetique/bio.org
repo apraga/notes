@@ -1,26 +1,48 @@
 #+title: Biologie
-* Cytogénétique
-** Villosités choriales
-contiennent 2 type de tissus
-- extra-embryonnaire cytotrophoblastes et syncytiotropblaste
-- embryonnaire: mésenchyme
-Examen direct : sur cytotrophoblastes -> rapide mais toujours à confirmer par une culture sur mésenchyme
-*** Limites
-XX: possibilité d’une contamination maternelle
-Cytotrophoblastiques : mosaique, pas assez de mitoses, anomale déséquilibrée
-
-Source [[http://www.eaclf.org/docs/GBPcyto/Arbre-caryoVC.pdf][Recos EACLF]]
-* Variant
-Transmission
-- AD = perte de fonction x 1, gain de fonction "toxique"
-- AR = perte de fonction x1
-- Dominant négatif : gain de fonction mais impacte l’allèle saine -> pas de protéine
-- Lié à l’X
-  NMD: coupe l’ARN si protéine trop courte (codon stop prématuré) = mécanisme de contrôle
-  NB: il existe 3 synonymes pour un codon stop
-
-Variant
-- faux-sens = peut tout donner !
-- stop et frameshift = perte de fonction
-
-NB: attention aux codons qui sont répartis sur 2 exons
+* Structure et régulation du génome
+** Chromatine
+= ADN + protéines
+Structure = plusieurs nucléosome, où 1 nucléosome = enroulement d’ADN autour de protéines appelées histones
+Peut ḙtre dans un état très compact (hétérochromatine) ou plus espacé (euchromatine)
+[[./img/chromatine.png]]
+- euchromatine = riche en gène, transcription active
+- hétérochromatine = pauvre en gène, pas de transcription
+** 1D Régulation de l’accès à la chromatine
+Donne l’accès à l’ADN pour complexes de protéines
+Nécessaire pour transcription, réplication, recombinaison, réparation de l’ADN
+*** Méthylation ADN
+Répression transcription
+Mécanisme: ajout de groupes méthyl à l’ADN -> modifie l’activié sans changer la séquence
+Au niveau du promoteur, réprime la transcripton
+Utilisé par
+- inactivation X
+- empreinte parentale
+- régulation gènes
+*** Modification post-traductionnelles des histones
+Modification interaction ADN-histone + stabilité
+Actiation (acétylation, déméthylation) ou répression (désacétylation, méthylation)
+*** Échanges histones
+** 2D boucles chromatiniennes
+Interaction régions régulatrice, facteur de transcription, promoteur
+[[./img/boucle-chromatine.png]]
+En /cis/:
+- enhancer : "promoteur" du promoteur -> active transcription
+  peut ḙtre en amont, aval, intronique, dans un autre gène...
+  Jusqu’à 1Mb !
+- silencer : cible le silencer -> inhibe transcription
+- insulateur : isole unité régulatrice
+** 3D: TAD
+Domaine au sein duquel s’exerce les régulation
+[[./img/tad.png]]
+** 4D
+Organisation de la chromatine en territoires dans le noyau
+Transcription = en périphérie du territoire
+** Techniques d’études
+- DNase-seq: montre régions où chromatine est décondensée
+- CHIP-seq = modification des histones, sites de fixation
+- FISH-D3: interaction chromatiniennes sur un locus spécifique
+** Exemple de pathologies
+Méthylation: [[file:maladies.org::*Syndrome ICF][Syndrome ICF]]
+Modification post-traductionnelle des histones [[file:maladies.org::*Syndrome de Weaver][Syndrome de Weaver]], [[file:maladies.org::*Syndrome de Kabuki][Syndrome de Kabuki]]
+Complexe SWI/SNF (remodèle la chromatine) : [[file:maladies.org::*Syndrome de Coffin-Siris][Syndrome de Coffin-Siris]]
+Médiator (recruté dans l’activation) [[file:maladies.org::*FG syndrome][FG syndrome]]

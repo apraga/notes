@@ -12,108 +12,15 @@ DEADLINE: <2022-05-21 Sat>
 *** DONE Envoyer fiche de salaire
 *** TODO Envoyer relevé
 *** TODO Transfert compte bancaire ?
-* DES :anki:
-:PROPERTIES:
-:CATEGORY: DES
-:END:
-** TODO Structuration du génome et mécanismes mutationnels
-** TODO Oncogénétique: introduction
-** TODO Diagnostic prénatal
-** TODO SEPI et TD
-** TODO Pathologies fréquentes : maladies endocriniennes et métabolisme
-** TODO Pathologies fréquentes : anomalies de la croissance
-** TODO Pathologies fréquentes : hématologie
-** TODO Pathologies fréquentes : maladies du tissu conjonctif
-** TODO Oncogénétique
-** TODO Pathologies fréquentes : dermatogénétique
-** DONE Introduction à la dysmorphologie
-** DONE Grandes technologies et bioinformatique
-** DONE Aspects réglementaires et éthiques
-** DONE Mucoviscidose
-** DONE développement
-** DONE Pendred
-** DONE Syndrome de Sotos
-** DONE Syndrome d'Usher
-** DONE T21
-** DONE Prader-Willi
-** DONE AMS
-** DONE Duchenne
-** DONE Surdité
-** DONE Myopathies
-** DONE Steinher
-* Syndromes génétiques avec org-mode
-** DONE Pendred
-CLOSED: [2022-04-18 Mon 21:47]
-** Beckwith-Wideman
-** T21
-* Internat
-** TODO Demande interchu Grenoble novembre 2022
-*** DONE Mail PrThevenon
-*** TODO Relancer Pr Thevenon
 * Electricité :maison:
 ** DONE Passer en heures creuses
 ** TODO Voir avec proprio pour changer disjoncteur
-** TODO Changer ampoule
-* Inbox
-** TODO Mariage Joris :joris:
-*** TODO cadeau
-** TODO Mariage Florian :florian:
-*** TODO Cadeau
-** TODO Copier photos famille depuis drive yvain sur drive famille
-SCHEDULED: <2022-05-21 Sat>
-** TODO Payer taxes ordures ménagères
-DEADLINE: <2022-06-06 Mon>
-* Japonais
-** Miura :miura:
-*** TODO Leçon 1
-**** DONE Lire
-**** DONE Anki
-*** TODO Leçon 2
-**** DONE Lire
-**** TODO Anki
-***** TODO Grammaire
-*** TODO Leçon 3
-**** DONE Lire
-**** TODO Anki
-***** TODO Grammaire
-*** TODO Leçon 4
-**** DONE Lire
-**** TODO Anki
-***** TODO Grammaire
-*** TODO Leçon 5
-**** DONE Lire
-**** TODO Anki
-***** TODO Grammaire
-*** TODO Leçon 6
-**** DONE Lire
-**** TODO Anki
-***** TODO Grammaire
-*** TODO Leçon 7
-**** TODO Lire
-**** TODO Anki
-***** TODO Grammaire
-*** Lire
-** Leçon Aya
-:PROPERTIES:
-:CATEGORY: aya
-:END:
-*** TODO Lire dialogue fin leçon 10
-SCHEDULED: <2022-04-03 Sun>
-*** DONE Notes <2022-04-17 Sun>
-SCHEDULED: <2022-04-17 Sun>
-*** DONE Notes <2022-06-12 Sun>
-DEADLINE: <2022-06-12 Sun>
-* Ledger
-:PROPERTIES:
-:CATEGORY: compta
-:END:
-** TODO janvier 2022
-** TODO février 2022
-** TODO Mars 2022
-SCHEDULED: <2022-06-12 Sun>
-** TODO Avril 2022
-** TODO Mail 2022
-* Moto :moto:
+* FreeBSD :freebsd:
+** DONE taskwarrior tui 0.23.4
+SCHEDULED: <2022-05-20 Fri>
+** TODO ormolu 0.5.0.0
+SCHEDULED: <2022-05-20 Fri>
+**
 * Génétique
 ** Biologie cellulaire Dunod
 *** TODO chapitres déjà fait :anki:
@@ -287,30 +194,61 @@ SCHEDULED: <2022-06-12 Sun>
 **** TODO Cowden, Gorlin (P Goizet)
 **** TODO Syndrome de Kleefstra (L Perrin)
 **** TODO Téloméropathies (T Leblanc)
-*
 *** DONE QROC 3
 *DEADLINE: <2022-06-18 Sat>
 *** DONE QROC S2
 *CLOSED: [2022-04-16 Sat 23:42] DEADLINE: <2022-04-16 Sat 23:59>
 *** DONE Mémoire
-* Projet
+* Inbox
+** TODO Mariage Joris :joris:
+*** TODO cadeau
+** TODO Mariage Florian :florian:
+*** TODO Cadeau
+** TODO Copier photos famille depuis drive yvain sur drive famille
+SCHEDULED: <2022-05-21 Sat>
+** TODO Payer taxes ordures ménagères
+DEADLINE: <2022-06-06 Mon>
+* Internat
+* Japonais
+** Miura :miura:
+*** TODO Leçon 1
+**** DONE Lire
+**** DONE Anki
+*** TODO Leçon 2
+**** DONE Lire
+**** TODO Anki
+***** TODO Grammaire
+*** TODO Leçon 3
+**** DONE Lire
+**** TODO Anki
+***** TODO Grammaire
+*** TODO Leçon 4
+**** DONE Lire
+**** TODO Anki
+***** TODO Grammaire
+*** TODO Leçon 5
+**** DONE Lire
+**** TODO Anki
+***** TODO Grammaire
+*** TODO Leçon 6
+**** DONE Lire
+**** TODO Anki
+***** TODO Grammaire
+*** TODO Leçon 7
+**** TODO Lire
+**** TODO Anki
+***** TODO Grammaire
+*** Lire
+** Leçon Aya
 :PROPERTIES:
-:CATEGORY: projets
+:CATEGORY: aya
 :END:
-** DONE Liste des videos tricks
-DEADLINE: <2022-04-27 Wed>
-** Assistant
-:PROPERTIES:
-:CATEGORY: assistant
-:END:
-*** DONE Regarder ce qu'Yvain a fait
-
-* FreeBSD :freebsd:
-** DONE taskwarrior tui 0.23.4
-SCHEDULED: <2022-05-20 Fri>
-** TODO ormolu 0.5.0.0
-SCHEDULED: <2022-05-20 Fri>
-**
+*** TODO Lire dialogue fin leçon 10
+SCHEDULED: <2022-04-03 Sun>
+*** DONE Notes <2022-04-17 Sun>
+SCHEDULED: <2022-04-17 Sun>
+*** DONE Notes <2022-06-12 Sun>
+DEADLINE: <2022-06-12 Sun>
 * Langues
 ** TODO Allemand
 SCHEDULED: <2022-05-07 Sat +1d>
@@ -329,3 +267,25 @@ SCHEDULED: <2022-05-07 Sat +1d>
 - State "DONE"       from "TODO"       [2022-05-03 Tue 23:09]
 - State "DONE"       from "TODO"       [2022-05-02 Mon 23:09]
 
+* Ledger
+:PROPERTIES:
+:CATEGORY: compta
+:END:
+** TODO janvier 2022
+** TODO février 2022
+** TODO Mars 2022
+SCHEDULED: <2022-06-12 Sun>
+** TODO Avril 2022
+** TODO Mail 2022
+* Moto :moto:
+* Projet
+:PROPERTIES:
+:CATEGORY: projets
+:END:
+** DONE Liste des videos tricks
+DEADLINE: <2022-04-27 Wed>
+** Assistant
+:PROPERTIES:
+:CATEGORY: assistant
+:END:
+*** DONE Regarder ce qu'Yvain a fait

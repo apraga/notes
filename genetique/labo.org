@@ -85,3 +85,29 @@ D. mutation exonique créant un nouveau site d’épissage -> perte partie d’e
 D. mutation exonique affectant un exon splicing enhancer ou exonic splicing silecter -> saut d’exon le plus souvent
 
 NB: deletion prenant tout l’exon: regarder la fin de l’exon précédent et du suivant pour voir si on peut être en phase. Si oui, il est possible qu’il n’y ait qu’un saut d’exon (mais cela doit être prouvé par du fonctionnel)
+
+* Cytogénétique
+** Villosités choriales
+contiennent 2 type de tissus
+- extra-embryonnaire cytotrophoblastes et syncytiotropblaste
+- embryonnaire: mésenchyme
+Examen direct : sur cytotrophoblastes -> rapide mais toujours à confirmer par une culture sur mésenchyme
+*** Limites
+XX: possibilité d’une contamination maternelle
+Cytotrophoblastiques : mosaique, pas assez de mitoses, anomale déséquilibrée
+
+Source [[http://www.eaclf.org/docs/GBPcyto/Arbre-caryoVC.pdf][Recos EACLF]]
+* Variant
+Transmission
+- AD = perte de fonction x 1, gain de fonction "toxique"
+- AR = perte de fonction x1
+- Dominant négatif : gain de fonction mais impacte l’allèle saine -> pas de protéine
+- Lié à l’X
+  NMD: coupe l’ARN si protéine trop courte (codon stop prématuré) = mécanisme de contrôle
+  NB: il existe 3 synonymes pour un codon stop
+
+Variant
+- faux-sens = peut tout donner !
+- stop et frameshift = perte de fonction
+
+NB: attention aux codons qui sont répartis sur 2 exons
