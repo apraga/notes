@@ -46,3 +46,88 @@ Méthylation: [[file:maladies.org::*Syndrome ICF][Syndrome ICF]]
 Modification post-traductionnelle des histones [[file:maladies.org::*Syndrome de Weaver][Syndrome de Weaver]], [[file:maladies.org::*Syndrome de Kabuki][Syndrome de Kabuki]]
 Complexe SWI/SNF (remodèle la chromatine) : [[file:maladies.org::*Syndrome de Coffin-Siris][Syndrome de Coffin-Siris]]
 Médiator (recruté dans l’activation) [[file:maladies.org::*FG syndrome][FG syndrome]]
+Cohésinopathies[[file:maladies.org::*Syndrome de Roberts][Syndrome de Roberts]] , Cornelia ,
+* Variant
+** Substitutions nucléotidiques
+Transitions  = A <-> G ou C <-> T
+Transversion = les autres (base purique  [A, G]<-> base pyrimidique [C, T])
+
+Ti/Tv \approx 2 dans génome
+** Nature
+*** Exons
+Substitution :
+- silencieuse
+- faux-sens
+- non-sens (codo stop)
+Délétion : frameshift/inframe
+Insertion : frameshift/inframe
+Délétion/Insertion : frameshift/inframe
+*** Intron
+[[./img/epissage.png]]
+
+A. Altération du site donneur/récepteur -> probable saut d’exon
+   - prend le site donneur d’épissage : on continue à lire la séquence donc formation d’une protéine "aberrante" -> 2 situations
+     - codon stop
+     - supprimée par le NMD
+   - prend le site accepteur d’épissage
+B. mutation intronique avec site "cryptique" d’épissage -> exon "cryptique"
+C. mutation intronique créant un nouveau site d’épssage au dépend de l’autre -> exon "cryptique"
+D. mutation exonique créant un nouveau site d’épissage -> perte partie d’exon
+D. mutation exonique affectant un exon splicing enhancer ou exonic splicing silecter -> saut d’exon le plus souvent
+
+NB: deletion prenant tout l’exon: regarder la fin de l’exon précédent et du suivant pour voir si on peut être en phase. Si oui, il est possible qu’il n’y ait qu’un saut d’exon (mais cela doit être prouvé par du fonctionnel)
+*** Transcription
+[[./img/transcription.png]]
+** Conséquence
+*** Perte de fonction
+- allèle amorphe /nulle : produit du gène absent ou inactif
+- allèle hypomorphe: produit moins actif ou en quantité plus faible
+Maladies récessives !
+Haplo-insuffisance si perte de fonction hétérozygote
+Ex: α-thalassémie
+*** Gain de fonction
+- allèle hypermorphe: surexpression du gène ou produit hyperactif
+- allèle néomorphe : nouvelle fonction de la protéine
+  Plut˰ot AD
+  Ex: mutation activatrice voie KRAS
+*** Dominant négatif
+Le produit a une action antagoniste avec le produit de l’allèle sauvage
+Ex: ostéogenèse imparfaite (modifie chaines α du collagène)
+*** Dépend de la localisation
+Régions à forte contrainte = peu tolérant aux variations génétiques
+** Bases de données
+variants classés
+- [[http://www.hgmd.cf.ac.uk/ac/index.php][HGMD : Human Gene Mutation Database]]
+- ClinVar : (https://www.ncbi.nlm.nih.gov/clinvar/)
+- LOVD : Leiden Open Variation Database (https://databases.lovd.nl/shared/genes)
+- OncoKB (https://oncokb.org)
+- COSMIC (http://cancer.sanger.ac.uk/cosmic)
+- UMD : Universal Mutation Database (http://www.umd.be/)
+- MITOMAP (https://www.mitomap.org/MITOMAP)
+** Impact
+- Etude des mutations faux-sens (Conservation, structure) :
+  - [[http://sift.jcvi.org/www/SIFT_enst_submit.html][ SIFT : Sorting Intolerant From Tolerant ]]
+  - [[http://genetics.bwh.harvard.edu/pph2/][ PolyPhenII]] : estime impact sur la protéine
+
+  - [[https://omictools.com/revel-tool][ REVEL : Rare Exome Variant Ensemble Learner ]]
+  - [[https://omictools.com/meta-svm-tool][ MetaSVM : Meta-analytic Support Vector Machine ]]
+- Impact sur l’épissage :
+  - [[Illumina][ Splice AI ]]
+  - [[Splicing Pipeline Prediction][ SPiP ]]
+  - [[http://www.fruitfly.org/seq_tools/splice.html][ Splice Site Prediction by Neural Network ]]
+  - [[http://violin.genet.sickkids.on.ca/~ali/splicesitefinder.html][ Splice Site Finder ]]
+  - [[http://genes.mit.edu/burgelab/maxent/Xmaxentscan_scoreseq.html][ MaxEntScan ]]
+  - [[http://www.umd.be/HSF/][ Human Splicing Finder ]]
+  - [[http://rulai.cshl.edu/tools/ESE/][ ESE Finder ]]
+  - [[http://genes.mit.edu/burgelab/rescue-ese/][ RESCUE-ESE ]]
+  - [[https://sourceforge.net/p/spicev2-1/wiki/SPICE%20wiki/][ SPICE ]]
+- Impact sur les éléments régulateurs :
+  - [[http:// http://www.regulomedb.org/][ RegulomeDB ]]
+- Algorithmes multifactoriels
+  - [[http://www.mutationtaster.org/][ MutationTaster ]]
+  - [[http://cadd.gs.washington.edu/][ CADD : Combined Annotation Dependent Depletion ]]
+  - [[https://omictools.com/eigen-tool][ Eigen ]]
+
+BP1 BP5BP6
+* Définition
+Pénétriance = nb d’individus malades avec génotyp à risque / nb individus avec génotype à risque

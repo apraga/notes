@@ -71,21 +71,7 @@ Avantages: séquences plus longues que le NGS (700pb) avec très peu d’erreur
 1. Quel impact sur ARN message ?
 2. Quel impact sur la protéine ? (utiliser PFAM)
 
-** Altération ARNmessage
-[[./img/epissage.png]]
-
-A. Altération du site donneur/récepteur -> probable saut d’exon
-   - prend le site donneur d’épissage : on continue à lire la séquence donc formation d’une protéine "aberrante" -> 2 situations
-     - codon stop
-     - supprimée par le NMD
-   - prend le site accepteur d’épissage
-B. mutation intronique avec site "cryptique" d’épissage -> exon "cryptique"
-C. mutation intronique créant un nouveau site d’épssage au dépend de l’autre -> exon "cryptique"
-D. mutation exonique créant un nouveau site d’épissage -> perte partie d’exon
-D. mutation exonique affectant un exon splicing enhancer ou exonic splicing silecter -> saut d’exon le plus souvent
-
-NB: deletion prenant tout l’exon: regarder la fin de l’exon précédent et du suivant pour voir si on peut être en phase. Si oui, il est possible qu’il n’y ait qu’un saut d’exon (mais cela doit être prouvé par du fonctionnel)
-
+   Voir [[file:bio.org::*Intron][Intron]]
 * Cytogénétique
 ** Villosités choriales
 contiennent 2 type de tissus
