@@ -23,6 +23,7 @@
          :base-directory "genetique"
          :publishing-directory "html/genetique"
          :author nil
+         :section-numbers nil
          :publishing-function org-html-publish-to-html)
         ("genetique-img"
          :base-directory "genetique/img"

@@ -1,5 +1,6 @@
 #+TITLE: Maladies
 #+OPTIONS: toc:1
+
 * TODO 17q12 del
 * 22q11 del
 ** Clinique
@@ -45,8 +46,8 @@ Ou agénésie rénale unilatérale
 * TODO Achondroplasie
 
 * TODO Charcot-Marie-Tooth
-* FG syndrome
-Lié à l’X /MED12/
+* FG syndrome :MED12:
+Lié à l’X
 
 Médiator
 ** Clinique
@@ -56,6 +57,8 @@ Médiator
 - +/- anomalie corps calleux, surdité
 [[./img/syndrome-fg.png]]
 * TODO Hypercroissance segmentaire
+- PTEN hamartoma tumour syndrome
+- PIK3CA related overgrowth spectrum
 * Hémochromatose
 
 ** Physiopathologie
@@ -92,25 +95,20 @@ NB: SLC40A1 : 2 phénotype selon le mécanisme (perte de fonction = ferroportini
 Multifactoriel:
 - protecteur = variant fréquents, CYBRD1
 - agravant = homme (testostérone), alcool, variant rare, HAMP/HJV, fréquents
-* Incontentia pigmenti
+* Incontentia pigmenti :IKBG:
 - génodermatose affectant la peau, les dents, les yeux et le système nerveux central
 - «incontinence pigmentaire» = dépôts dermique de mélanine
 - atteinte dermatologiuqe typique
 - diagnostic clinique dans la majorité
 - létale chez foetus masculin en général
 
-** Clinique : stades
+** Clinique
+Stades
 1. vésiculo-pustuleux, acral et linéaire = première sesmaines de vie -> 18 mois
 2. Verruqeux : premiers mois
 3. Hyperpigmentation
 4. Hypopigmentation, alopécie
-** Pathophysiology (2002)/histologie
-1. Inflammation, infiltration éosinophile -> bulles spongiotique éosinophiles
-2. -> épiderme acanthosiuqe, hyperkératosique
-3. ? -> dépôts dermiques de mélanine
-4. cicatrisation dermique post-inflammatoire
-
-** Clinique : phanère, oculaire
+*** Phanère, oculaire
 Phanères :
 - alopécie, cheveux fins, épars, parfois laineuse sourcis fins, épairs.
 - ongles striés
@@ -120,13 +118,13 @@ Oculaire
 - cornea verticillata (évocatrice)
 - hyper/hypopigmentation de l’epithelium pigmentaire rétinien(évocatrice)
 
-** Clinique : dentaire
+*** Dentaire
 Critère majeur
 - anomalise de la couronne (70%)
 - agénésies multiples (90% en denture permanente)
 - fente labio-palatineo
   img santamaria2016
-** Clinique : SNC
+*** SNC
 Néonatal : **convulsion** avec complications
 - risque épilepsie partielle
 - cognitif
@@ -134,7 +132,13 @@ Néonatal : **convulsion** avec complications
 - parfois **létales**
 
 Cognitif : variable : DI sévère -> troubles des apprentissages
-** Génétique : pronostic
+** Pathophysiology (2002)/histologie
+1. Inflammation, infiltration éosinophile -> bulles spongiotique éosinophiles
+2. -> épiderme acanthosiuqe, hyperkératosique
+3. ? -> dépôts dermiques de mélanine
+4. cicatrisation dermique post-inflammatoire
+
+** Pronostic
 Atteinte neuro, ophtalmo précoce = le conditiennent.
 Sinon, développement physique et cognitif normal dans la majorité
 ** Génétique : diagnostic
@@ -339,7 +343,7 @@ QD
 
 [[./img/syndrome-coffin-siris.png]]
 [[./img/syndrome-coffin-siris-doigts.png]]
-* Syndrome de Cohen
+* Syndrome de Cohen :COH1:
 - parfois obésité
 - hypotonie néonatale
 - retard mental souvent modéré
@@ -348,7 +352,6 @@ QD
 - dystrophie rétinienne
 - neutropénie intermittente
 
-  Gènes COH1
   Effet fondateur (finlande...)
 * TODO Syndrome de Cornelia de Lange
 AD: /NIPBL/, /SMC3/
@@ -359,7 +362,7 @@ Retard de croissance
 Malformation des membres
 Hirsutisme
 [[./img/syndrome-cornelia-de-lange.png]]
-* TODO Syndrome de Kabuki
+* TODO Syndrome de Kabuki :KMT2D:KDM6A:
 AD : /KMT2D/
 Lié à l’X /KDM6A/
 
@@ -379,10 +382,9 @@ Souvent membre inférieur avec
 * TODO Syndrome de l’X fragile
 30% ont une obésité et 10% proche phénotype Prader-Wili
 * TODO Syndrome de Noonan
-* Syndrome de Pendred
+* Syndrome de Pendred :SLC26A4:
 - Clinique : surdité congénitale neurosensorielle sévère/profonde, atteinte vestibulaire, anomalies os temporal
 - Diagnostic : clinique = surdité neurosensorielle + anomalies scan rochers + goître euthyroïdien
-- Gènes : SLC26A4
 - Traitement : sympto
 - Transmission : AR
 
@@ -430,55 +432,117 @@ endoc pour déficit en GH, hypogonatidme
 psy
 [[http:guide-prader-willi.fr]]
 
-* Syndrome de Roberts
-Cohésinopathies
+* Syndrome de Roberts :ESCO2:
 AR
+
 Chromosomes en "rails de chemin de fer" (séparation prématurée des centromères et chromatides soeurs)
-/ESCO2/
 ** Clinique
-DI
-Retard de croissance
-Malformation craniofaciae, membres
+- DI
+- Retard de croissance
+- Malformation craniofaciae, membres
 [[./img/syndrome-roberts.png]]
 
-* Syndrome de Rubinstein-Taybi
+* Syndrome de Rubinstein-Taybi :CREBPP:EP300:
 Modification post-traductionnelle des histones
+
 AD
-/CREBPP/, /EP300/
 ** Clinique
-DI
-Microcéphalie
-Retard de croissance
-Pouces/hallux larges
-Dysmorphie
+- DI
+- Microcéphalie
+- Retard de croissance
+- Pouces/hallux larges
+- Dysmorphie
 [[./img/syndrome-rubinstein-taybi.png]]
 
 * TODO Syndrome de Silver-Russell
+** Clinique
+- Retard de croissance: **né PAG**, **retard croissance à 2 ans**
+- **Macrocéphalie relative** à la naissance
+- **Asymétrique corporelle** (> 1.5cm longueur )
+- Dysmorphie caractéristique: **front bombant**
+- **Difficultés alimentaires sévères**
+- Clinodactylie
+- t˰aches café au lait
+- Malfo uro-génitale
+[[file:img/syndrome-silver-russel.png]]
+  En gras critères cliniques
+
+  NB: dysmorphie plus difficile avec l’˰age -> regarder photos jeune enfance
+** Génétique
+Voir [[*Mécanisme][Sd Beckwith-Wiedeman]] pour mécanisme
+
+Défaut expression IGF2
+ - 50% : perte méthylation ICR1 allèle paternelle -> perte expression IGF2 allèle paternelle
+ - Mutations gains de fonction CDKN1C ou perte de fonction IGF2 ou perte de fonction sur régulateurs positif IGF2
+ - dup 11p15 maternelle : augmente expression CDKN1C
+** Diagnostic (consensus 2015)
+Score clinique \ge 4 ->_test méthylation 11p15 et disomie maternne UPD7
+- si négatif :
+  - relative macrocéphalie :
+  - sinon voir diag différentiel
+  - sinon anomalies plus rares (chr14...)
+** PEC
+- Dénutrition chronique : prévenir hypoglycémie à jeṷn + nutrition (avant hormone de croissance+++)
+- hypoplasie musculaire
+Attention : risque d’obésité précoce avec renutrition ...
+** DD
+[[Syndrome de Temple]]
+Bien regarder le périmètre cr˰anien
 * TODO Syndrome de Simpson-Golabi-Behmel
+Garçons !
+** Clinique
+- **Macrosomie**, macrocéphalie
+- **Hypoglycémie néonatale**
+- Dysmorphie
+- **Macroglossie**
+- Malformation cardiaque
+- Mamelon surnuméraire
+- Hernie diaphragmatique, ombilicale
+- Malformations rénales
+- Syndactylie, brachydactylie, polydactylie
+- +/- DI modérée
+  Tumeurs \approx 10% (Wilms, hépatoblastome, neuroblastome, gonadoblastome)
+  [[file:img/syndrome-simpson-golabi.png]]
 * TODO Syndrome de Smith-Lemli-Optiz
 
-* TODO Syndrome de Smith-Magenis
-* Syndrome de Smith-Magenis (17p11.2 del)
+* Syndrome de Smith-Magenis    :RAI1:
+17p11.2_del
+** Clinique
 - DI souvent sévère
-- dysmorphie: brachycéphalie, bosses fontales, syophrise, hypertélorisme, hypoplasime étage moyen facile, programthism, oreiles bas implantés
+- dysmorphie: brachycéphalie, bosses fontales, syophrise, hypertélorisme, hypoplasime étage moyen facile, prognathisme, oreilles bas implantées
 - troubles comportement et sommeil
-- hyperphagie etob
- RAI1
-* TODO Syndrome de Sotos
+- hyperphagie
+* TODO Syndrome de Sotos :NSD1:
+** Clinique
+- Macrosomie++ (foetal et postnatale)
+- Macrocéphalie
+- Hypotonie néonatale, retard de développement
+- Dysmorphie
+- Avance ˰age osseux (puberté précoce)
+- Maladies cardiaques congénitales, malformations rénales
+- Épilepsie (25%)
+- Tumeurs \approx 3% (tératome, neuroblastome)
+  [[file:img/syndrome-sotos.png]]
+* Syndrome de Perlman :DIS3L2:
+- Macrosomie néonatale
+- Hypoglycémie/hyperinsulisme
+- Néphromégalie avec insufisance rénale
+- Tumeurs de Wilms
+- Dysmorphie
 * Syndrome de Sturge-Weber-Krabbe
 Association
 - angiome plan cutanée zone innervée par le trijumeau
 - glaucome congénital
 - angiome méningé de la pie-mère +/- épilepsie, retard psychomot
 Recherche de glaucome et IRM cérébrale si angiome plan
-* Syndrome de Weaver
+* Syndrome de Weaver :EZH2:
 AD
-/EZH2/
+
 Modification post-traductionnelle des histones
 ** Clinique
-DI
-Avance staturale + ˰age osseux
-Macrocéphalie
+- DI
+- Avance staturale + ˰age osseux
+- Macrocéphalie
 [[./img/syndrome-weaver.png]]
 
 * Syndrome de West
@@ -489,7 +553,7 @@ others = structural, infectious, metabolic and immunologic defects and genetic a
  “United Kingdom Infantile Spasms Study” (UKISS) [14],  hypoxic-ischemic encephalopathy was reported in 10%, followed by chromosomal abnormalities, complex malformation syndromes and perinatal stroke (8%), tuberous sclerosis (7%), and periventricular leukomalacia or hemorrhage (respectively, in 5%)
 Source https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7655587/
 
-* TODO Syndrome de Beckwith-Wiedemann
+* Syndrome de Beckwith-Wiedemann
 ** Clinique
 - Macrosomie
 - *Macroglossie*
@@ -503,8 +567,9 @@ Source https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7655587/
 - **nephroplastome** (**multifocal/bilatéral**)
 - +/- fente, CNS, rénale, cardiaque malfo
 
-Risque = augmentation tumeurs embryonnaire année de vie
 [[./img/beckwith-oreille.png]]
+
+Risque = augmentation tumeurs embryonnaire année de vie
 ** Score
 4 points (en gras) = diag clinique
 2 points -> indication analyse moléculaire
@@ -540,11 +605,11 @@ Et bio !
 #+attr_html: :width 50%
 [[./img/beckwith-differentiel.png]]
 * TODO Syndrome de Wiedemann-Steiner
-
-* TODO Syndrome de Williams-Burren (7q11.23 del)
+* TODO Syndrome de Williams-Burren
+7q11.23 del
 * TODO Syndrome d’Aarskog
 
-* Syndrome d’Alagille
+* Syndrome d’Alagille :JAG1:NOTCH2:
 Suspected on :
 - histologic = bile duct paucity (an increased portal tract-to-bile duct ratio)
 - 3/5 major clinical features (in addition to bile duct paucity):
@@ -553,12 +618,14 @@ Suspected on :
   - Skeletal abnormalities (most commonly butterfly vertebrae identified in AP chest radiographs)
   - Ophthalmologic abnormalities (most commonly posterior embryotoxon
   - Characteristic facial features (most commonly, triangular-shaped face with a broad forehead and a pointed chin, bulbous tip of the nose, deeply set eyes, and hypertelorism; see Figure 1)
-Genes = JAG1, NOTCH2
+
 AR
+
 Pronostic: renal transplant, cardiac... but not lethal
 
-* Syndrome d’Alström
+* Syndrome d’Alström :ALMS1:
 900 cas monde
+
 - Obésité précoce
 - Rétinite pigmentaire -> cécité 20 ans
 - Surdité perception ~7 ans
@@ -566,9 +633,6 @@ Pronostic: renal transplant, cardiac... but not lethal
 - Diabète type 2 avant 20 ans
 - Retard statural, hypogonadisme
 - +/- déficit cognitif modéré
-** Génétique
-  AR
-  ALMS1
 * Syndrome d’Angelman
 ** Clinique
 - ataxie, tremblement
@@ -583,8 +647,8 @@ Abolition du gène /UBE3A/, normalement actif sur l’allèle maternelle
 - grandes délétions
 - disomie uniparentale
 - mutation génique
-* STRT Syndrome ICF
-AR /DNMT3B/
+* Syndrome ICF :DNMT3B:
+AR
 
 Mécanisme :
 - hypométhylation ADN
@@ -596,7 +660,7 @@ Mécanisme :
 - Retard de croissance
 - DI
 [[./img/syndrome-icf.png]]
-* Syndrome KBG
+* Syndrome KBG :ANKRD11:
 ** Clinique
 - Macrodontie (incisive centrale) 85-95%
 - Dysmorphie : visage triangulaire, brachycéphalie, synyphris, telechanthus
@@ -620,11 +684,11 @@ Autres:
 
   Variabilité
 ** Diagnostic
-  Variant htz /ANKRD11/
+  Variant htz
+
   AD
 * TODO Syndrome microdeletionel: cf diapo "DI versant biologique"
 * Syndrome tricho-rhino-phalangien
-
 ** Clinique
 - petite taille
 - épiphyses en cône
@@ -651,3 +715,33 @@ deletion de 11p13 (syndrome WAGR) et en 11p14 (gène BDNF)
 * TODO Trisomie 13
 * TODO Trisomie 18
 * TODO Trisomie 21
+* Syndrome de Temple
+** Clinique
+Celle du Silver-Russel
+- Retard de croissance : RCIE et post natal
+- Asymétrie corporelle
+- Macrocéphalie relative
+- Grand fromt bombant
+- Difficulté alimentaires
+Mais aussi suspicion de Prader-Willy
+- Puberté précoce
+- Hypotonie néonatale précoce
+- Petites mains, petits pieds
+- Obésité > 2 ans
+*** 14q32
+Zone soumis à empreinte
+- disomie materne chr14
+- del paternelle
+- épigénitique : perte méthylation
+
+  DD moléculaire du Silver-Russel
+* Syndrome de Kagami-Ogata
+** Clinique
+- Thorax en forme de hache (insuf respi)
+- Hydramnios et prématurité, hypertrophie placentaire
+- Anomalies de la paroi abodominable
+- Anomalise cranio-faciales
+- Difficulté alimentaires
+- Retard mental
+
+[[file:img/syndrome-kagami-ogata.png]]
