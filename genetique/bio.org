@@ -112,8 +112,8 @@ variants classés
   - [[https://omictools.com/revel-tool][ REVEL : Rare Exome Variant Ensemble Learner ]]
   - [[https://omictools.com/meta-svm-tool][ MetaSVM : Meta-analytic Support Vector Machine ]]
 - Impact sur l’épissage :
-  - [[Illumina][ Splice AI ]]
-  - [[Splicing Pipeline Prediction][ SPiP ]]
+  - Splice AI
+  - Splicing Pipeline Prediction (SPiP)
   - [[http://www.fruitfly.org/seq_tools/splice.html][ Splice Site Prediction by Neural Network ]]
   - [[http://violin.genet.sickkids.on.ca/~ali/splicesitefinder.html][ Splice Site Finder ]]
   - [[http://genes.mit.edu/burgelab/maxent/Xmaxentscan_scoreseq.html][ MaxEntScan ]]
@@ -131,3 +131,42 @@ variants classés
 BP1 BP5BP6
 * Définition
 Pénétriance = nb d’individus malades avec génotyp à risque / nb individus avec génotype à risque
+
+* Épigénétique
+Modification de la chromatine sans modifier l’ADN
+- inactivation X
+- empreinte parentale
+- développement, différenciation cellulaire
+- cancer
+** Mécanismes
+*** Modification queues HISTONES
+*** Méthylation ADN
+*** Long ARN non codants
+** Empreinte parentale
+Empreinte = désactive le gène hérité de ce parent (empreinte maternelle = seule l’allèle paternelle s’exprime)
+
+~ 100 gènes
+Pathologies : Silver-Russell/Beckwith-Wiedeman, Prader-Willy/Angelman, Sd Temple, Sd Kagami, puberté précoce familiale
+*** Mécanisme
+- Délétion segmentaire : si on supprime l’allèle non soumise à empreinte, pas d’expression du gène
+- Disomie uniparentale :
+  - si on a une empreinte maternelle et 2x l’allèle maternelle, pas d’expression du gènes
+  - si on a une empreinte paternelle et 2x l’allèle maternelle, surexpression du gènes
+- Anomalie épigénétique : l’empreinte maternelle se transforme en empreinte paternelle -> cf
+** Exemple: IGF
+  2 ligands: IGF1 et 2
+  2 récepteurs
+  - 1 (pour IGF1 et IGF2) = croissance
+  - 2 = dégradation IGF1
+
+IGF2 = empreinte maternelle
+*** 11p15
+2 domaines
+- télomériques: IGF2, exprimé sur l’allèle paternelle (l’allè maternelle n’a qu’un ARN non codant, H19). Cela se fait via le domaine ICR1
+- centromérique
+  CDKN1C = réduit la croissance, exprimé sur l’allèle maternelle
+  paternelle = ARN non codant  KCNQ1OT1. Régluré par ICR2
+
+Situation normale = équilibre (maternel = restriction croissance, paternel = croissance)
+- excès de croissance (paternel >> maternel) = Beckwidth-Wiedeman, Kagami
+- défaut de croissane (maternel >> paternel)  = TNDM, Silver-Russel, Temple

@@ -1,4 +1,5 @@
 #+TITLE: Maladies
+#+OPTIONS: toc:1
 * 22q11 del
 ** Clinique
 *** Principal
@@ -377,7 +378,8 @@ Dysmorphie
 - Traitement : sympto
 - Transmission : AR
 
-* Syndrome de Prader-Willi (15q11.1-15q11.2  del)
+* Syndrome de Prader-Willi
+15q11.1-15q11.2 del
 ** Clinique
 Phases:
 - anténatal : diminution mouvement actifs foetus, faible pois naissance, hydramnios
@@ -393,7 +395,7 @@ Phases:
 - mains courtes et trapues
 - légère dysmorphie: yeux en amandes, petite bouche aux coins tombants
 
-[[img/prader-willi.png]]
+[[./img/prader-willi.png]]
 Troubles comportement alimentaire :
   - obsession alimentaire ("craving")
   - hyperphagie
@@ -449,6 +451,55 @@ others = structural, infectious, metabolic and immunologic defects and genetic a
 Source https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7655587/
 
 * TODO Syndrome de Wiedemann-Beckwith
+** Clinique
+Macrosomie
+*Macroglossie*
+ANomalie paroi abdo : **omphalocèle**
+Organomégalie surtout intra-abdo
+Oreille : encoche sur lobules, ptetis puits
+Angiome plan face
+**Hémihypertrophie**
+Hypoglycémie néonatale
+**hyperinsulinisme**
+**nephroplastome** (**multifocal/bilatéral**)
++/- fente, CNS, rénale, cardiaque malfo
+
+Risque = augmentation tumeurs embryonnaire année de vie
+[[./img/beckwith-oreille.png]]
+** Score
+4 points (en gras) = diag clinique
+2 points -> indication analyse moléculaire
+
+Attention: signes parfois isolé -> risque tumoral
+** Mécanisme
+Voir [[file:bio.org::*11p15][11p15]] pour la situation normale.
+En résumé : mère = restriction via CDKN1C, père = croissance via IGF1
+
+- 20% : disomie uniparentale paternel
+- 8% mutation perte de fonction CDKN1C sur allèle maternelle
+- 2/3 = perte de méthylation sur ICR allèle maternelle -> perte expression CDKN1C
+- 8% = gain de méthylation sur ICR allèle maternelle sur ICR-> IGF2
+
+#+attr_html: :width 50%
+[[./img/beckwith-moleculaire.png]]
+** Risque tumeur
+- Haut risque : gain méthylation ICR1, disomie uniparentale paternell = risque néphroblastome majeur
+- Intermediaire =
+  - score clinique mais sans anomalie moléculaire : néphroblastome
+  - mutation CDNK1C -> glande surrénale
+** Consensus récent
+** Surveillance
+  - écho abdo tous les 2 mois si haut risque / intermédaire
+  - sinon, pas de screening
+** PEC
+Endoc: pour hyperinsulinismeg (diazoxyd...)
+** DD
+Overlap clinique :[[*Syndrome de Simpson-Golabi-Behmel][Syndrome de Simpson-Golabi-Behmel]]
+[[*Syndrome de Sotos][Syndrome de Sotos]]
+Et bio !
+
+#+attr_html: :width 50%
+[[./img/beckwith-differentiel.png]]
 * TODO Syndrome de Wiedemann-Steiner
 
 * TODO Syndrome de Williams-Burren (7q11.23 del)
@@ -487,9 +538,9 @@ trouble du sommeil
 retart moteur et mental sévère (pas de langage)
 jovialité
 rires immotivés
-[[img/angelman.png]]
+[[./img/angelman.png]]
 ** Génétique
-Aboliton du gène /UBE3A/, normalement actif sur l’allèle maternelle
+Abolition du gène /UBE3A/, normalement actif sur l’allèle maternelle
 - grandes délétions
 - disomie uniparentale
 - mutation génique
@@ -530,9 +581,8 @@ Autres:
   - nez bulbeux, en poire
   - philtrum long
   - lèvre supérieure fine
-[[img/tricho-rhino-phalangien.png]]
-Attentio risque ostéchondrite hanche
-
+[[./img/tricho-rhino-phalangien.png]]
+Attention risque ostéchondrite hanche
 ** Génétique
 AD
 /TRPS1/ ou délétion 8q24
@@ -564,17 +614,17 @@ Souvent membre inférieur avec
 - varice
 - hypertrophie os et parties molles +/- asymétrie de longueur des MI
 * STRT Syndrome ICF
-AR
-/DNMT3B/
+AR /DNMT3B/
+
 Mécanisme :
 - hypométhylation ADN
 - instabilité génomique -> réarrangement chromosomique
 - instabilité hétérochromatine péricentromérique des chr 1,9,16
 ** Clinique
-Déficit immunitaire
-Dysmorphie faciale
-Retard de croissance
-DI
+- Déficit immunitaire
+- Dysmorphie faciale
+- Retard de croissance
+- DI
 [[./img/syndrome-icf.png]]
 * Syndrome de Weaver
 AD
@@ -596,3 +646,8 @@ DI
 Retard de croissance
 Malformation craniofaciae, membres
 [[./img/syndrome-roberts.png]]
+
+* TODO Syndrome de Simpson-Golabi-Behmel
+* TODO Syndrome de Sotos
+* TODO Hypercroissance segmentaire
+* TODO Syndrome de Smith-Magenis
