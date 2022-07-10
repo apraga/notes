@@ -1,21 +1,23 @@
 #+TITLE: Maladies
 #+OPTIONS: toc:1
+* TODO 17q12 del
 * 22q11 del
 ** Clinique
-*** Principal
+Principal
 - Cardiopathies conotroncale (CIV, Fallot, atrésie pulmonaire)
 - FP, FLP
 - hypocalcémie
 - déficit immunitaire
 - difficultés d’apprentissage
 - dysmorphie
-** Dysmorphie (peu évident naissance)
+
+Dysmorphie (peu évident naissance)
 - visage allongé, effacement relief des pomettes
 - nez long/gros/en puble
 - FP en haut et dehors
 - oreilles petits, ronded,s avec *lobul hypoplasique*
 - bouche étroite
-*** autre
+*** Autre
 - Trouble digestif (dysphagie, reflux)
 - Déficit imuntaire (hypoplasie du thymus) -> Maladie automimmune
 - Hypotonie enfance
@@ -42,6 +44,18 @@ Ou agénésie rénale unilatérale
 
 * TODO Achondroplasie
 
+* TODO Charcot-Marie-Tooth
+* FG syndrome
+Lié à l’X /MED12/
+
+Médiator
+** Clinique
+- DI
+- Dysmorphie
+- pouces/hallux large
+- +/- anomalie corps calleux, surdité
+[[./img/syndrome-fg.png]]
+* TODO Hypercroissance segmentaire
 * Hémochromatose
 
 ** Physiopathologie
@@ -140,6 +154,7 @@ https://onlinelibrary.wiley.com/doi/full/10.1111/ddg.14638
 - PNDS
 - Genereviews
 - Santa-Maria FD, Mariath LM, Poziomczyk CS, et al. Dental anomalies in 14 patients with IP: clinical and radiological analysis and review. Clin Oral Investig. 2017;21(5):1845-1852. doi:10.1007/s00784-016-1977-y
+* TODO Monosomie X
 * Mucopolysaccharidose type VI
 Anomalies épiphysaires et métaphysaire humérales supérieures
 Remaniement épi/métaphyses des hanches
@@ -173,12 +188,7 @@ IMC > courbes de manière précoce et aggravation rapide + sévère +/-
 ** Syndromes
 - empreinte génomique: [[Syndrome de Prader-Willi]]
 - ciliopathies [[Syndrome de Barder-Biedl]] ,  [[Syndrome d’Alström]]
-- glycosylation
-[[Syndrome de Borjeson-Forssman-Lehman]]
-[[Syndrome de Cohen]]
-[[Syndrome WAGRO]]
-[[Syndrome de Smith-Magenis]]
-[[Syndrome de l’X fragile]]
+- glycosylation : [[Syndrome de Borjeson-Forssman-Lehman]] [[Syndrome de Cohen]] [[Syndrome WAGRO]] [[Syndrome de Smith-Magenis]] [[Syndrome de l’X fragile]]
 * Retard statural
 4 "tiroirs"
 - maladies osseuses constitutionnelles
@@ -287,6 +297,7 @@ Bilan
 - bio: NFS, foie, rein, calcémie, thyroide, PTH
 - bilan métabo
 - imagie malfo
+* Sclérose tubéreuse de bourneville
 * TODO Syndrome 3M
 - Rertard statural sévère pré- et postnatal
 - Dysmorphie
@@ -317,26 +328,17 @@ AR
   Gne :PHF6
 * Syndrome de Coffin-Siris
 Complexe SWI/SNF (remodèle la chromatine)
-AD
-** cLinique
-DI
-Retard de croissance
-Dysmorphie
-Hirsutisme, cheveux épars
-Hypoplasie des phalanges distance (5e rayon)
-Malforamtinos congénitales variables
+QD
+** Clinique
+- DI
+- Retard de croissance
+- Dysmorphie
+- Hirsutisme, cheveux épars
+- Hypoplasie des phalanges distance (5e rayon)
+- Malforamtions congénitales variables
+
 [[./img/syndrome-coffin-siris.png]]
 [[./img/syndrome-coffin-siris-doigts.png]]
-* FG syndrome
-Lié à l’X
-/MED12/
-Médiator
-** Clinique
-DI
-Dysmorphie
-pouces/hallux large
-+/- anomalie corps calleux, surdité
-[[./img/syndrome-fg.png]]
 * Syndrome de Cohen
 - parfois obésité
 - hypotonie néonatale
@@ -360,12 +362,18 @@ Hirsutisme
 * TODO Syndrome de Kabuki
 AD : /KMT2D/
 Lié à l’X /KDM6A/
+
 Modification post-traductionnelle des histones
 ** Clinique
-DI
-Syndrome malformatif
-Dysmorphie
+- DI
+- Syndrome malformatif
+- Dysmorphie
 [[./img/syndrome-kabuki.png]]
+* Syndrome de Klippel-Trenaunay
+Souvent membre inférieur avec
+- angiome plan
+- varice
+- hypertrophie os et parties molles +/- asymétrie de longueur des MI
 * TODO Syndrome de Leigh et NARP
   https://www.ncbi.nlm.nih.gov/books/NBK1173/
 * TODO Syndrome de l’X fragile
@@ -396,6 +404,7 @@ Phases:
 - légère dysmorphie: yeux en amandes, petite bouche aux coins tombants
 
 [[./img/prader-willi.png]]
+
 Troubles comportement alimentaire :
   - obsession alimentaire ("craving")
   - hyperphagie
@@ -421,6 +430,17 @@ endoc pour déficit en GH, hypogonatidme
 psy
 [[http:guide-prader-willi.fr]]
 
+* Syndrome de Roberts
+Cohésinopathies
+AR
+Chromosomes en "rails de chemin de fer" (séparation prématurée des centromères et chromatides soeurs)
+/ESCO2/
+** Clinique
+DI
+Retard de croissance
+Malformation craniofaciae, membres
+[[./img/syndrome-roberts.png]]
+
 * Syndrome de Rubinstein-Taybi
 Modification post-traductionnelle des histones
 AD
@@ -434,14 +454,33 @@ Dysmorphie
 [[./img/syndrome-rubinstein-taybi.png]]
 
 * TODO Syndrome de Silver-Russell
+* TODO Syndrome de Simpson-Golabi-Behmel
 * TODO Syndrome de Smith-Lemli-Optiz
 
+* TODO Syndrome de Smith-Magenis
 * Syndrome de Smith-Magenis (17p11.2 del)
 - DI souvent sévère
 - dysmorphie: brachycéphalie, bosses fontales, syophrise, hypertélorisme, hypoplasime étage moyen facile, programthism, oreiles bas implantés
 - troubles comportement et sommeil
 - hyperphagie etob
  RAI1
+* TODO Syndrome de Sotos
+* Syndrome de Sturge-Weber-Krabbe
+Association
+- angiome plan cutanée zone innervée par le trijumeau
+- glaucome congénital
+- angiome méningé de la pie-mère +/- épilepsie, retard psychomot
+Recherche de glaucome et IRM cérébrale si angiome plan
+* Syndrome de Weaver
+AD
+/EZH2/
+Modification post-traductionnelle des histones
+** Clinique
+DI
+Avance staturale + ˰age osseux
+Macrocéphalie
+[[./img/syndrome-weaver.png]]
+
 * Syndrome de West
 In about 35% of cases, the etiologic event is (still) unknown:
 others = structural, infectious, metabolic and immunologic defects and genetic abnormalities
@@ -450,19 +489,19 @@ others = structural, infectious, metabolic and immunologic defects and genetic a
  “United Kingdom Infantile Spasms Study” (UKISS) [14],  hypoxic-ischemic encephalopathy was reported in 10%, followed by chromosomal abnormalities, complex malformation syndromes and perinatal stroke (8%), tuberous sclerosis (7%), and periventricular leukomalacia or hemorrhage (respectively, in 5%)
 Source https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7655587/
 
-* TODO Syndrome de Wiedemann-Beckwith
+* TODO Syndrome de Beckwith-Wiedemann
 ** Clinique
-Macrosomie
-*Macroglossie*
-ANomalie paroi abdo : **omphalocèle**
-Organomégalie surtout intra-abdo
-Oreille : encoche sur lobules, ptetis puits
-Angiome plan face
-**Hémihypertrophie**
-Hypoglycémie néonatale
-**hyperinsulinisme**
-**nephroplastome** (**multifocal/bilatéral**)
-+/- fente, CNS, rénale, cardiaque malfo
+- Macrosomie
+- *Macroglossie*
+- ANomalie paroi abdo : **omphalocèle**
+- Organomégalie surtout intra-abdo
+- Oreille : encoche sur lobules, ptetis puits
+- Angiome plan face
+- **Hémihypertrophie**
+- Hypoglycémie néonatale
+- **hyperinsulinisme**
+- **nephroplastome** (**multifocal/bilatéral**)
+- +/- fente, CNS, rénale, cardiaque malfo
 
 Risque = augmentation tumeurs embryonnaire année de vie
 [[./img/beckwith-oreille.png]]
@@ -532,18 +571,31 @@ Pronostic: renal transplant, cardiac... but not lethal
   ALMS1
 * Syndrome d’Angelman
 ** Clinique
-ataxie, tremblement
-épilepsie
-trouble du sommeil
-retart moteur et mental sévère (pas de langage)
-jovialité
-rires immotivés
+- ataxie, tremblement
+- épilepsie
+- trouble du sommeil
+- retart moteur et mental sévère (pas de langage)
+- jovialité
+- rires immotivés
 [[./img/angelman.png]]
 ** Génétique
 Abolition du gène /UBE3A/, normalement actif sur l’allèle maternelle
 - grandes délétions
 - disomie uniparentale
 - mutation génique
+* STRT Syndrome ICF
+AR /DNMT3B/
+
+Mécanisme :
+- hypométhylation ADN
+- instabilité génomique -> réarrangement chromosomique
+- instabilité hétérochromatine péricentromérique des chr 1,9,16
+** Clinique
+- Déficit immunitaire
+- Dysmorphie faciale
+- Retard de croissance
+- DI
+[[./img/syndrome-icf.png]]
 * Syndrome KBG
 ** Clinique
 - Macrodontie (incisive centrale) 85-95%
@@ -570,6 +622,7 @@ Autres:
 ** Diagnostic
   Variant htz /ANKRD11/
   AD
+* TODO Syndrome microdeletionel: cf diapo "DI versant biologique"
 * Syndrome tricho-rhino-phalangien
 
 ** Clinique
@@ -582,6 +635,7 @@ Autres:
   - philtrum long
   - lèvre supérieure fine
 [[./img/tricho-rhino-phalangien.png]]
+
 Attention risque ostéchondrite hanche
 ** Génétique
 AD
@@ -595,59 +649,5 @@ AD
 deletion de 11p13 (syndrome WAGR) et en 11p14 (gène BDNF)
 * TODO Séquence de Pierre-Robin
 * TODO Trisomie 13
-* TODO Monosomie X
 * TODO Trisomie 18
 * TODO Trisomie 21
-* TODO Syndrome microdeletionel: cf diapo "DI versant biologique"
-* TODO 17q12 del
-* TODO Charcot-Marie-Tooth
-* Sclérose tubéreuse de bourneville
-* Syndrome de Sturge-Weber-Krabbe
-Association
-- angiome plan cutanée zone innervée par le trijumeau
-- glaucome congénital
-- angiome méningé de la pie-mère +/- épilepsie, retard psychomot
-Recherche de glaucome et IRM cérébrale si angiome plan
-* Syndrome de Klippel-Trenaunay
-Souvent membre inférieur avec
-- angiome plan
-- varice
-- hypertrophie os et parties molles +/- asymétrie de longueur des MI
-* STRT Syndrome ICF
-AR /DNMT3B/
-
-Mécanisme :
-- hypométhylation ADN
-- instabilité génomique -> réarrangement chromosomique
-- instabilité hétérochromatine péricentromérique des chr 1,9,16
-** Clinique
-- Déficit immunitaire
-- Dysmorphie faciale
-- Retard de croissance
-- DI
-[[./img/syndrome-icf.png]]
-* Syndrome de Weaver
-AD
-/EZH2/
-Modification post-traductionnelle des histones
-** Clinique
-DI
-Avance staturale + ˰age osseux
-Macrocéphalie
-[[./img/syndrome-weaver.png]]
-
-* Syndrome de Roberts
-Cohésinopathies
-AR
-Chromosomes en "rails de chemin de fer" (séparation prématurée des centromères et chromatides soeurs)
-/ESCO2/
-** Clinique
-DI
-Retard de croissance
-Malformation craniofaciae, membres
-[[./img/syndrome-roberts.png]]
-
-* TODO Syndrome de Simpson-Golabi-Behmel
-* TODO Syndrome de Sotos
-* TODO Hypercroissance segmentaire
-* TODO Syndrome de Smith-Magenis

@@ -9,12 +9,20 @@
 ;; Load the publishing system
 (require 'ox-publish)
 
-;; Which files to publish ?
+;; ;; Customize the HTML output
+(setq org-html-validation-link nil            ;; Don't show validation link
+;;       org-html-head-include-scripts nil       ;; Use our own scripts
+;;       org-html-head-include-default-style nil ;; Use our own styles
+;;       org-html-head "<link rel=\"stylesheet\" href=\"https://cdn.simplecss.org/simple.min.css\" />")
+      )
+
+;; ;; Which files to publish ?
 (setq org-publish-project-alist
       '(("genetique-notes"
          :recursive nil
          :base-directory "genetique"
          :publishing-directory "html/genetique"
+         :author nil
          :publishing-function org-html-publish-to-html)
         ("genetique-img"
          :base-directory "genetique/img"
@@ -22,6 +30,7 @@
          :publishing-directory "html/genetique/img"
          :publishing-function org-publish-attachment)
         ("genetique" :components ("genetique-notes" "genetique-img"))))
+
 
 ;; Generate the site output
 ;; (org-publish-all t) ; force everything
