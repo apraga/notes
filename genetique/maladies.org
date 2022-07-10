@@ -357,10 +357,14 @@ QD
 AD: /NIPBL/, /SMC3/
 Lié à l’X : /SMC1/, /HDAC8/
 ** Clinique
-DI
-Retard de croissance
-Malformation des membres
-Hirsutisme
+- DI, retard de dev psychomoteur, trouble du comportement
+- Retard de croissance: pre et post-natal (95%)
+- microcéphalie
+- Malformation
+  - membres > 95%
+    TODO
+- Hirsutisme
+- Dysmorphie
 [[./img/syndrome-cornelia-de-lange.png]]
 * TODO Syndrome de Kabuki :KMT2D:KDM6A:
 AD : /KMT2D/
@@ -447,14 +451,20 @@ Modification post-traductionnelle des histones
 
 AD
 ** Clinique
-- DI
+- DI, retard du langage, hyperactivité
 - Microcéphalie
 - Retard de croissance
-- Pouces/hallux larges
-- Dysmorphie
+- Extrémités: pouces/hallux larges,
+- Dysmorphie: rétraction bitemporale, FP oblique en bas, ptosis, racie du nez large, columelle longe
+
 [[./img/syndrome-rubinstein-taybi.png]]
 
-* TODO Syndrome de Silver-Russell
+#+caption: ÉVolution de la mḙme patiente (Vangils, 2021)
+file:img/syndrome-rubinstein-taybi2.png
+
+#+caption: Autrs: strabisme, palais ogival, hypertrichose, cicatrices chélo̤ïdes, surpose, malformation cardiaque (Vangils, 2021
+file:img/syndrome-rubinstein-taybi-others.png
+* Syndrome de Silver-Russell
 ** Clinique
 - Retard de croissance: **né PAG**, **retard croissance à 2 ans**
 - **Macrocéphalie relative** à la naissance
@@ -488,7 +498,18 @@ Attention : risque d’obésité précoce avec renutrition ...
 ** DD
 [[Syndrome de Temple]]
 Bien regarder le périmètre cr˰anien
-* TODO Syndrome de Simpson-Golabi-Behmel
+* Syndrome de Rett :MECP2:
+Dominante liée à l’X
+
+Perte de fonction
+Méthylation
+** Clinique
+Phases :
+1. (6-18mois) stagnation = hypotonie, diminution PC
+2. 1-3 ans régression = perte de l’usage des mains, stéréotypies, retrait sociale, pas de langage, motricité maladroite
+3. 2-10 ans : stabilisation= DI, dysfonctionnement respiratoire, épilepsie
+4. détérioration motrice = scoliose, perte de la marche
+* Syndrome de Simpson-Golabi-Behmel
 Garçons !
 ** Clinique
 - **Macrosomie**, macrocéphalie

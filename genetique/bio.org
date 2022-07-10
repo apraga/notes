@@ -19,8 +19,7 @@ Utilisé par
 - empreinte parentale
 - régulation gènes
 *** Modification post-traductionnelles des histones
-Modification interaction ADN-histone + stabilité
-Actiation (acétylation, déméthylation) ou répression (désacétylation, méthylation)
+Voir [[*Modification queues histones][Modification queues histones]]
 *** Échanges histones
 ** 2D boucles chromatiniennes
 Interaction régions régulatrice, facteur de transcription, promoteur
@@ -37,6 +36,8 @@ Domaine au sein duquel s’exerce les régulation
 ** 4D
 Organisation de la chromatine en territoires dans le noyau
 Transcription = en périphérie du territoire
+
+  file:img/noyau-expression.png
 ** Techniques d’études
 - DNase-seq: montre régions où chromatine est décondensée
 - CHIP-seq = modification des histones, sites de fixation
@@ -47,6 +48,7 @@ Modification post-traductionnelle des histones [[file:maladies.org::*Syndrome de
 Complexe SWI/SNF (remodèle la chromatine) : [[file:maladies.org::*Syndrome de Coffin-Siris][Syndrome de Coffin-Siris]]
 Médiator (recruté dans l’activation) [[file:maladies.org::*FG syndrome][FG syndrome]]
 Cohésinopathies[[file:maladies.org::*Syndrome de Roberts][Syndrome de Roberts]] , Cornelia ,
+[[file:maladies.org::*Syndrome de Rubinstein-Taybi][Syndrome de Rubinstein-Taybi]]
 * Inactivation de l’X
 ** Général
 2 formes inactivation :
@@ -222,7 +224,11 @@ Modification de la chromatine sans modifier l’ADN
 - développement, différenciation cellulaire
 - cancer
 ** Mécanismes
-*** Modification queues HISTONES
+*** Modification queues histones
+Modification interaction ADN-histone + stabilité
+Actiation (acétylation, déméthylation) ou répression (désacétylation, méthylation)
+
+file:img/histone-modification.png
 *** Méthylation ADN
 *** Long ARN non codants
 ** Empreinte parentale
