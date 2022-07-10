@@ -47,6 +47,89 @@ Modification post-traductionnelle des histones [[file:maladies.org::*Syndrome de
 Complexe SWI/SNF (remodèle la chromatine) : [[file:maladies.org::*Syndrome de Coffin-Siris][Syndrome de Coffin-Siris]]
 Médiator (recruté dans l’activation) [[file:maladies.org::*FG syndrome][FG syndrome]]
 Cohésinopathies[[file:maladies.org::*Syndrome de Roberts][Syndrome de Roberts]] , Cornelia ,
+* Inactivation de l’X
+** Général
+2 formes inactivation :
+- soumise à empreinte (marsupiaux)
+- non soumise à empreinte (Homme)
+
+Homme : mosaïcisme cellulaire chez la femme par inactivation au hasard de l’X paternel ou maternel
+- précocément embryogénèse
+- une fois le choix fait dans une cellule, toutes les cellules qui en découleront aurant le même profil
+- mécanisme réversible pendant la gamétogenèse
+** Procédure
+Centre d’inactivation de l’X (XIC)
+1. Compt˰age du nombre de X (via XIC) et Choix du X inactivé
+2. 2 copies de XIC : suffit pour initiat inaction X
+3. Propagation de l’ARN Xist jusqu’à recouvre tout l’X inactif
+4. Stabilisation et maintien de l’X inactif avec des marques épigénétiques
+** Gène /XIST/
+- Exprimé par X inactif
+- Initiateur principale de l’inactivation
+- Peut inactiver n’importe quel chromosome !
+- son expression est régulé au sein de XIC (régulation)
+
+  Attention: expersionn de /XIST/ rapidement après la fécontation mais l’accumulation de l’ARN Xist n’entraine pas d’inactivation en préimplantatoire !
+
+  Il y aura donc un décalage : mise en place tardive et graduelle (physio non claire : ARN recouvre mal l’Xi, antagoniste))
+
+  Gènes relocalisés dans ce compartiment, sauf ceux qui y échappent :
+[[file:img/inactivation-X.png]]
+** Échappement
+- ~15% des gènes (100)
+  - certains ont un expression compltent
+- 10% ont un profil d’expression variable entre les femmes
+
+  PAR (pseudoatosomal regions) 1 et 2 échappent. Ils permettent l’appariment des chr X et Y pendant la méiose
+  Ils sont sur les extrémités distale (en p pour PAR1 et en q pour PAR2)
+
+  PAR1 contient /SHOX/ : l’haploinsufisance = petite taille, Turner
+** Visualisation
+= Corpuscule de Bar sur la face interne de l’enveloppe nucléaire
+** Biais d’inactivation
+*** Techniques
+- cyto: réplication tardive de l’X inactif -> on peut les marquer (en fin de cycle) et dégrader les chromosome -> apparaît pâle
+- moléculaire : région polymorphique (spécifique inactif) méthylée sur X inactif
+  X méthylé -> enzyme de restriction ne peut pas le couper -> seul l’X actif sera amplifié
+  2 bandes : on fait du semi-quantitif
+  - random = 2 pics pour X (père et mère)
+  - inactivation -> 1 seul pic car l’X paternel sera inactif)
+  - si 80/20: 1 grand pic et 1 petit
+
+** Pathologies associées
+Primaire = variant /XIST/
+- inactivation biaisée depuis le début
+Secondaire = variant gène X ou remaniement chormo, soit physiologique ()
+- le plus courant : initialement inactivation aléatoire -> les cellules ayant choisi l’X inactif ne vont pas réussir à proliféer
+*** Secondaire : variant
+Cf tableau de Migeon, Genetics in medecine 2020 pour les pathologies
+*** Secondaire : chromosomique
+**** Remaniement chromosomique déséquilibré
+X remanié inacif -> Turner si anneau, deletion X, isochrosomose X
+Phénotype normal si duplication sur X et inactive X dupliqué
+[[file:img/inactivation-x-desequilibre.png]]
+
+Transloc X-autosome déséquilibrée : X remanié est le plus souvent inactif
+**** Transloc X-autosome équilibré
+on transmet soit chr normal soit équiilbré
+X remanié est le plus souvent inactif
+
+Mais phénotype normal, parfois FCS récurrente, dysfonctionnemet gonadique, peut forcer expression d’une maladie récessive liée à l’X
+**** Disomie functionelle
+Expression en doses excessives des gènes de l’X
+
+- Transloc autosomoe équilibré :
+  - Si X remanié inactivé : disomie fonctionnelle du segment transloqué qui va échapper à l’inactivation car transloqué sur un autre chro (en mosaïque le plus souvent )
+
+  file:img/transloc-x-autosome-equilibre.png
+- Transloc autosome déséquilibré : disomie fonctionnelle (mḙme raisonnement)
+
+  file:img/transloc-x-autosome-desequilibre.png
+- anneaux : si très petit, on perd Xist donc l’anneau sera actif -> disomie fonctionnelle
+  si extrèment petit, phénotype Turner car on a quaisement tout perdu
+- Duplication X
+  - Garçon : pas le choix, inactivé X
+  - fille : phénotype anormal si inactive X normal -> comme le garçon, souvent en mosaïque
 * Variant
 ** Substitutions nucléotidiques
 Transitions  = A <-> G ou C <-> T
