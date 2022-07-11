@@ -361,10 +361,13 @@ Lié à l’X : /SMC1/, /HDAC8/
 - Retard de croissance: pre et post-natal (95%)
 - microcéphalie
 - Malformation
-  - membres > 95%
+  - membres > 95%: anomalie réductionnel, clinodactylie, premier métacarpien court
     TODO
+  - autres : fente, Pierre-Robin, coeurs, poumons, diaphragme, digestif, rein, OGE
 - Hirsutisme
-- Dysmorphie
+- Dysmorphie:
+  - ptosis, synophris,
+  - nez court, philtrum long, lèvre supérieure fine
 [[./img/syndrome-cornelia-de-lange.png]]
 * TODO Syndrome de Kabuki :KMT2D:KDM6A:
 AD : /KMT2D/
@@ -766,3 +769,12 @@ Zone soumis à empreinte
 - Retard mental
 
 [[file:img/syndrome-kagami-ogata.png]]
+* Dysplasie campomyélique :SOX9:
+AD
+** Clinique
+- incurvation os long
+- dysplasie squelettique : scoliose, doigts court, anomalies du bassin et thorax, 11 paires de c˰otes
+- dysmorphie faciale, fente palatine
+- maformations cardiaques, rénales, cérébrales
+- réversion sexuelle
+Inc

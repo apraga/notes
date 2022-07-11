@@ -259,3 +259,19 @@ IGF2 = empreinte maternelle
 Situation normale = équilibre (maternel = restriction croissance, paternel = croissance)
 - excès de croissance (paternel >> maternel) = Beckwidth-Wiedeman, Kagami
 - défaut de croissane (maternel >> paternel)  = TNDM, Silver-Russel, Temple
+** Effet de position
+*** Variégation
+Propagation de l’hétérochromatine sur le gène proche -> silence
+Ex: transloc X-autosome équiibré : le segment de l’X va inactiver le reste du segment autosomique
+*** Gène de fusion
+Leucémie myéloide chromique : t(9;22) (q34;q11.2)
+ABL sur 9q34 et BCR sur 22q11 -> protéine de fusion BCR-ABL avec activité tyrosine kinae augmentée
+***  Gain de séquence activatirce
+Lymphome de Burkitt t(8;14)q(24;32)
+*** Atteinte élément régulateur
+- /SOX9/: haplo-insuffasence : [[file:maladies.org::*Dysplasie campomyélique][Dysplasie campomyélique]], syndrome de pierre-robin, anomalie du développement sexuel
+- Aniridie (mutation /PAX6/): cassure à distance
+
+** Effet de position télomérique
+Silence de gène par propagation hétérochromatine
+ex: syndrome de Pelizaues-Merzbacher : devient asymptomaique
