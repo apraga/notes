@@ -100,3 +100,116 @@ Variant
 - stop et frameshift = perte de fonction
 
 NB: attention aux codons qui sont répartis sur 2 exons
+
+* Nouveaux syndromes microdéletionnels
+- souvent hérité parent asympto
+- facteur suscepbtibilité/prédisposition aux troubles neurodev
+- PIEV
+** 16p11.2i
+*** del BP4 et BP5 = typique
+590kb
+**** Clinique
+- Difficulté aprentissage ou DI légère, retard langage /develop
+- épilepsie, dyskinéie déclenché par le mouvement (début 6-15A)
+- Troubles du comportement : TSA, psy
+- malfo de Chiari, ectopie amygdale cérébelleuse
+- FR obésité
+- macrocéphalie fréquente
+- scoliose
+- risque malfo cardiaque
+**** Labo
+- de novo 80%
+- gènes /PRRT2/, /KCDT13/, /TBX6/
+- varabilité phénotypiuqe
+**** dup BP4 BP5
+  phénotype en miroir
+  - di
+  - troubles psy : schizo, comportement
+  - micorcéphalie,
+  - faible poids
+  - épilepsie
+  parents asympto
+*** microdel BP2 et BP3 = atypique
+220kb
+- Retard de develop
+- Hyperactivité
+- Épilepsie
+- Obésite précoce
+40% de novo
+Du réciproque : status encore incertaine
+** 15q11.2q13 (hors PraderWilli)
+*** microdel 15q11.2 BP1 BP2
+- 500kb
+- le plus souvent hérité
+- faible pénétrance
+- gènes : /TUBGCP5/, /CYFIP1/, /NIPA1/, /NIPA2/
+**** Clinique
+Retard de dev, moteur, langage
+Hyperactivité
+Trouble attention, TSA
++/- épi
+*** micro del 15q13.3
+- Gène /CHRNA7
+- 2Mb le plus souvente
+- héritée 85%
+**** Clinique
+- DI
+- retard langage,
+- trouble comporteement, hyperactivité
+- TSA
+- épi
+- shizo
+- hypotonie
+- rarement cardiopathie
+**** Dup réciproque
+  status incertaine
+** 22q11.2
+LCR -> déliminte région proximale centrale distale
+*** Centrale
+- /CRKL/
+***** Clinique
+- retard croissance
+- retard dev, langage
+- dysmorphie faciale
+- malfo génito-uriaine, cardiaque
+- trouble psy
+*** Distance type 1
+Clinique
+- retard croissance
+- retard dev, langage
+- dysmorphie faciale
+- malfo cardiaque
+  Risque préma et complication obstétricale !
+
+*** Distance type 3
+- SMARC1B
+
+Clinique
+  - Risque rhabdomosacrome
+  - retard dev/DI
+  - microcéphalie
+  - malfo cardiaque
+
+* Remaniement subtélomériques
+- Région de transition avant répétition télomériques
+- Complexe et variable
+- Séquences répétées + uniques
+- Taille variable entre les chr et individus
+** Fonction
+- Non indispensable pour viabilité ou ségrég
+- Réservoir de ènes ?
+- Barrière contre effet de position télomérique (diffusion hétérochromatine)
+** Microdel
+Mécanismes: aléatoire
+Y penser si
+- DI
+- histoire familiale DI
+- retard de croissance
+- dysmorphie faciale
+- malfo
+Diag sur FISH, MLPA, ACPA
+- gain et perte terminale en ACPA -> y penser et FISH + caryo parent pour transloc équilbrée
+
+** Syndromes
+[[file:maladies.org::*Syndrome de Wolf-Hirschhorn][Syndrome de Wolf-Hirschhorn]]
+DÉL

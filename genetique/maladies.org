@@ -1,5 +1,5 @@
 #+TITLE: Maladies
-#+OPTIONS: toc:1
+#+OPTIONS: toc:nil
 
 * TODO 17q12 del
 * 22q11 del
@@ -780,3 +780,43 @@ AD
 - maformations cardiaques, rénales, cérébrales
 - réversion sexuelle
 Inc
+* Syndrome de Wolf-Hirschhorn :del4p:
+** Clinique
+- RICA et postnat
+- microcéphalie
+- dysomporhie : hypertélorisme, nez en casque grec
+- cardiopathie, fente palatine
+- anomalie OGE
+- hypotonie, DI sévère +/- épilepsie
+
+  #+caption: Zollino et al 2008
+  [[file:img/del4p.png]]
+** Génétique
+- Deletion subtélomérique, taille variable
+- Différent loci
+! On peut passer à côté des petites délétion en FISH
+** Conseil génétique
+- 70% de délétion isolée
+- 22% de transloc déséquilibrées
+
+  De novo 85-90% mais vérifier remaniement structure équilibrée au caryo chez parents
+* Syndrome du cri du chat :del5p:
+** Clinique
+- retard croissance
+- pleurs aigùs (miaulement) via anomalie laryngées dans premières semaines de vie puis disparaite
+- hypo pui hypertonoie
+- DI avec retard de langage
+- malfo cardiaque et oculaire
+***  Dysmorphie
+  - microcéphalie
+  - visage rong
+  - hyperétolérisme
+  - racine nez large
+  - oreille bas implantées
+  - microgantie
+[[file:img/del5p.png]]
+*** Génétique
+- Délétion de taille variable (certaines visible sur caryo)
+*** Conseil
+96 de novo (iso ou transloc )
+Faire caryo parent pour éliminer remaniement équilibrée

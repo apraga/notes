@@ -32,8 +32,7 @@ SCHEDULED: <2022-05-20 Fri>
 :PROPERTIES:
 :CATEGORY: genetique
 :END:
-** TODO Collège
-*** DONE Chap 10: Principales techniques d’analyses des anomalies génétiques à l’échelle du gène
+** [[file:books.org::*Collège][Collège]]
 ** TODO Syndromes
 *** TODO Noonan
 *** TODO Charcot-Marie-Toorh genetique
@@ -66,13 +65,13 @@ SCHEDULED: <2022-05-20 Fri>
 *** TODO Alport
 *** TODO hémophilie
 ** TODO DES
-*** TODO Presentiel session 1 [2/9]
+*** TODO Presentiel session 1 [5/9]
 **** DONE Introduction à la dysmorphologie
-**** TODO Structuration du génome et mécanismes mutationnels
-**** TODO Oncogénétique: introduction
+**** DONE Structuration du génome et mécanismes mutationnels
+**** DONE Oncogénétique: introduction
 **** TODO Diagnostic prénatal
 **** DONE Grandes technologies et bioinformatique
-**** TODO Aspects réglementaires et éthiques
+**** DONE Aspects réglementaires et éthiques
 **** TODO Mucoviscidose
 **** TODO Bases sur le conseil génétique
 **** TODO SEPI et TD
@@ -289,3 +288,5 @@ DEADLINE: <2022-04-27 Wed>
 :CATEGORY: assistant
 :END:
 *** DONE Regarder ce qu'Yvain a fait
+* Machine learning
+** [[file:books.org::*The elements of statistical learning (217)][The elements of statistical learning (217)]]

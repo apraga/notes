@@ -1,7 +1,7 @@
 Voir [[file:books-lists][books lists]] pour des idées
 * Génétique :genetique:
 ** TODO Collège
-*** STRT Chap 10
+*** DONE Chap 10: Principales techniques d’analyses des anomalies génétiques à l’échelle du gène
 * Computer science :cs:
 ** HOLD The art of computer programming, volume 1
 ** HOLD Haskell Programming From First Principles [5/31]
@@ -128,8 +128,8 @@ Voir [[file:books-lists][books lists]] pour des idées
 :CATEGORY: math
 :END:
 ** HOLD Gowers, T. (2010): The princeton companion to mathematics
-** TODO Hastie, T., Tibshirani, R., & Friedman, J. (2009): The elements of
-statistical learning Texte de référence pour classification, machine
+** STRT The elements of statistical learning (217)
+Texte de référence pour classification, machine
 * Medenice
 ** TODO Cecil-Goldman (26th edition)
 - Renal and Genitourinary Diseases 1.
