@@ -50,6 +50,7 @@ Montre
 - transcrits alternatifs
 ** PCR
 Amplification d’une courte séquence d’ADN pour avoir une grande quantité de matériel nucléique
+[[file:img/pcr.png]]
 *** Méthode
 1. Dénaturation : en chauffant, ADN double brin -> simble brin
 2. Hybridation amorces complémentaires (identifie la région à amplifier)
@@ -60,6 +61,8 @@ Amplification d’une courte séquence d’ADN pour avoir une grande quantité d
 Idem mais pour ARN. Permet
 - transcript anormaux (mutation l’épissage)
 ** Sanger
+
+[[file:img/sanger.png]]
 On part d’un ADN simple brin. Puis synthèse du brin complémentaire mais en remplacant les dNTP par des ddNTP.
 Les ddNTP sont intégrés au hasard et arrḙtent la formation de la chaine.
 On obtient des fragments de différentes tailles, séparés par électrophorèse.

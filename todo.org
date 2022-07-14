@@ -33,6 +33,7 @@ SCHEDULED: <2022-05-20 Fri>
 :CATEGORY: genetique
 :END:
 ** TODO Collège
+*** DONE Chap 10: Principales techniques d’analyses des anomalies génétiques à l’échelle du gène
 ** TODO Syndromes
 *** TODO Noonan
 *** TODO Charcot-Marie-Toorh genetique
@@ -208,7 +209,6 @@ SCHEDULED: <2022-05-20 Fri>
 SCHEDULED: <2022-05-21 Sat>
 ** TODO Payer taxes ordures ménagères
 DEADLINE: <2022-06-06 Mon>
-* Internat
 * Japonais
 ** Miura :miura:
 *** TODO Leçon 1
