@@ -1,0 +1,11 @@
+#+title: Offre Soins
+* France
+- Centre de référence = enseignement, recherche, coordination
+- Centre de compétences = soins
+* Europe
+Réseaux europééens (ERN):
+- neurologie [neuromusc = EURO-NMD]
+- chirurgie
+- onco
+- developpement [ITHACA = DI et malfo]
+- organes [ERN BOND pour les os, ReCONNECT pour connectif et musculo-squelettique]
