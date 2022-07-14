@@ -43,7 +43,7 @@ Y penser surtout sur comportement+++
 ** Neurodev
 QI diminue avec le temps
 Petite retard de marche, retard de langage
-trouble du comportement plut˰t que psy 75%
+trouble du comportement plutôt que psy 75%
 - déficite attentionnel +++
 - "pseudo-autistique": évitement du regard
 - 30% TSA
@@ -53,7 +53,7 @@ Majeur :
 - IRM cérébrale particulière : leucopathie sous-tentorellie
 - IOP 20%
   Plus la prématation est large, plus le risque de FXTAS est important
-  Pénétrance augement avec l’˰age
+  Pénétrance augement avec l’âge
 * Diagnostic moléculaire
 cytogénétique abandonné
 Non vu en NGS car séquence de triplet plus longue que amplicon
@@ -67,7 +67,7 @@ Nouvelle technique : triplet-primed PCR = plusieurs amorces sur le gène avec PC
 
 NB: long-range pourra peut-ḙtre éviter cette technique
 * DPN
-Méthylatiton allèle grande taille n’appara˰it pas à la conception... -> on regarde seulement la longeur de l’expansion
+Méthylatiton allèle grande taille n’apparaît pas à la conception... -> on regarde seulement la longeur de l’expansion
 Peut ḙtre compliqué si taille limite..
 
 Indication difficile
@@ -86,12 +86,12 @@ possibité que l’ADN s’organise en boucle sur lui-meme avec allongement pend
 ** Pourquoi 2 formes?
 Ssytème de protection : identifie les ARN en forme 3D anormale -> arrḙt transcripton
 Ne fonctionen pas pour prémutié
-** R˰ole protéine
+** Rôle protéine
 Ubiquitaire
 Synthétisé dans Cytoplasme
 Peut se lier à des ARNm
 2 fonctions
-- r˰ole de cargo: dans le noyau, se lie à des ARNm, ressort du noyau, décharge ARN près terminaisons synapses
+- rôle de cargo: dans le noyau, se lie à des ARNm, ressort du noyau, décharge ARN près terminaisons synapses
 - en paralèle, empḙche la traduction
 
 

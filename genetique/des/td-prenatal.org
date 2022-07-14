@@ -2,7 +2,7 @@
 * Cas 2
 TODO
 
-1/27 : faussement augmenté du à l’˰age
+1/27 : faussement augmenté du à l’âge
 1/500 équilibré: DPNI (NB: si porteur transloc)
 
 * Cas 3
@@ -15,7 +15,7 @@ Biopsie trophoblaste : foetus porteur transloc équilibrée
 Ordo: acte + analyses (biopsie trophoplaste + caryo)
 ** T16
 Transloc équilibré -> peut donner 2 chr normaux
-Contr˰ole pour voir si limité au placenta
+Contrôle pour voir si limité au placenta
 Vu le retard de croissance, ponction liquide amniotique : 46XX
 On vérifie qu’il n’y a pas de contamination maternelle
 Suivi écho : si d’autres signes, ACPA !
@@ -25,8 +25,8 @@ Expliquer risque de récurrence: très faible
 * Cas 6
 T21 et X fra causes les plus fréquentes de DI
 - Compliqué d’avoir l’oncle mais on peut récupérer le max d’information (photos...)
-Ne pas passer à ˰oté d’un syndrome d’X fragile (non vu en exome, et en ACPA)
-- Grand-père : FXTAS ? (tremblements, mouvements non contr˰ollés)
+Ne pas passer à ôté d’un syndrome d’X fragile (non vu en exome, et en ACPA)
+- Grand-père : FXTAS ? (tremblements, mouvements non contrôllés)
 - voir le fils atteint en consultation
 - grossesse en cours
 
@@ -60,7 +60,7 @@ Mosaïque = à n’importe quel stade de la grossesse
 ** Caryo père
 Transloc robertsonienne 13-14
 Risque de récurrence prochaine grossese : transloc, T13, T14
-Refaire enquḙte familiale du c˰oté du père !!!
+Refaire enquḙte familiale du côté du père !!!
 Et il faut l’accord du père
 * 8bis
 Patiente ne doit pas recevoir le résultat génétique !

@@ -61,7 +61,7 @@ Homme : mosaïcisme cellulaire chez la femme par inactivation au hasard de l’X
 - mécanisme réversible pendant la gamétogenèse
 ** Procédure
 Centre d’inactivation de l’X (XIC)
-1. Compt˰age du nombre de X (via XIC) et Choix du X inactivé
+1. Comptâge du nombre de X (via XIC) et Choix du X inactivé
 2. 2 copies de XIC : suffit pour initiat inaction X
 3. Propagation de l’ARN Xist jusqu’à recouvre tout l’X inactif
 4. Stabilisation et maintien de l’X inactif avec des marques épigénétiques
@@ -173,7 +173,7 @@ Ex: α-thalassémie
 *** Gain de fonction
 - allèle hypermorphe: surexpression du gène ou produit hyperactif
 - allèle néomorphe : nouvelle fonction de la protéine
-  Plut˰ot AD
+  Plutôt AD
   Ex: mutation activatrice voie KRAS
 *** Dominant négatif
 Le produit a une action antagoniste avec le produit de l’allèle sauvage

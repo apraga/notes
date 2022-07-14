@@ -1,7 +1,7 @@
 #+title: Onco
 
 * Grand concepts
-Mutations /drivers/: joue un r˰ole dans la transformation maligne
+Mutations /drivers/: joue un rôle dans la transformation maligne
 Mutations /passenger/: reflète simplement l’instabilité tumorale
 Génome tumoral = sélectionné pour échapper au système immunitaire et résister aux chimio -> hétérogénéité génétique de la tumeur
 
@@ -21,7 +21,7 @@ type de variantsio drivers :
  Double hit : variation htz constit + variation somatique -> récessif dans la tumeur mais dominant dans la famille
 
 Prédisposition au cancer :
-- ˰age au diagnostic précoce
+- âge au diagnostic précoce
 - multifocal, bilatéral
 - cancers multiples
 - apparentés atteints
@@ -42,7 +42,7 @@ On retrouve les mḙme variations en somatique et constit  + évènements suppl�
 - K sein < 41 ans
 - K sein triple négatif < 51 ans
 - K sein bilatérale, le premier < 51 ans
-- K sein chez homme, qq soit ˰age au diagnostic
+- K sein chez homme, qq soit âge au diagnostic
 - K ovar haut grade
 - K ovaire bas grade < 71 ans
 Famille:

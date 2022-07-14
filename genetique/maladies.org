@@ -16,7 +16,7 @@ Dysmorphie (peu évident naissance)
 - visage allongé, effacement relief des pomettes
 - nez long/gros/en puble
 - FP en haut et dehors
-- oreilles petits, ronded,s avec *lobul hypoplasique*
+- oreilles petits, rondes avec *lobules hypoplasiques*
 - bouche étroite
 *** Autre
 - Trouble digestif (dysphagie, reflux)
@@ -63,8 +63,10 @@ Médiator
 
 ** Physiopathologie
 Circuit quasi-fermé : la destruction des globus rouges par les macrophages recycle le fer. Peu de pertes, peu d’apport
+
 Régulation au niveau de l’intestin car pas de mécanisme d’excrétion (hormis desquamation ) !
-Hepcidine = peptite synthésé dans le foie qui est le régulateur principale pour fer
+
+Hepcidine = peptite synthétisée dans le foie qui est le régulateur principal pour fer
 - bloque absorption intestinale
 - bloque relargage du stockage du fer (foie)
   -> peu d’hepicidine = surcharge en fer
@@ -475,12 +477,12 @@ file:img/syndrome-rubinstein-taybi-others.png
 - Dysmorphie caractéristique: **front bombant**
 - **Difficultés alimentaires sévères**
 - Clinodactylie
-- t˰aches café au lait
+- tâches café au lait
 - Malfo uro-génitale
 [[file:img/syndrome-silver-russel.png]]
   En gras critères cliniques
 
-  NB: dysmorphie plus difficile avec l’˰age -> regarder photos jeune enfance
+  NB: dysmorphie plus difficile avec l’âge -> regarder photos jeune enfance
 ** Génétique
 Voir [[*Mécanisme][Sd Beckwith-Wiedeman]] pour mécanisme
 
@@ -500,7 +502,7 @@ Score clinique \ge 4 ->_test méthylation 11p15 et disomie maternne UPD7
 Attention : risque d’obésité précoce avec renutrition ...
 ** DD
 [[Syndrome de Temple]]
-Bien regarder le périmètre cr˰anien
+Bien regarder le périmètre crânien
 * Syndrome de Rett :MECP2:
 Dominante liée à l’X
 
@@ -542,7 +544,7 @@ Garçons !
 - Macrocéphalie
 - Hypotonie néonatale, retard de développement
 - Dysmorphie
-- Avance ˰age osseux (puberté précoce)
+- Avance âge osseux (puberté précoce)
 - Maladies cardiaques congénitales, malformations rénales
 - Épilepsie (25%)
 - Tumeurs \approx 3% (tératome, neuroblastome)
@@ -565,7 +567,7 @@ AD
 Modification post-traductionnelle des histones
 ** Clinique
 - DI
-- Avance staturale + ˰age osseux
+- Avance staturale + âge osseux
 - Macrocéphalie
 [[./img/syndrome-weaver.png]]
 
@@ -773,7 +775,7 @@ Zone soumis à empreinte
 AD
 ** Clinique
 - incurvation os long
-- dysplasie squelettique : scoliose, doigts court, anomalies du bassin et thorax, 11 paires de c˰otes
+- dysplasie squelettique : scoliose, doigts court, anomalies du bassin et thorax, 11 paires de côtes
 - dysmorphie faciale, fente palatine
 - maformations cardiaques, rénales, cérébrales
 - réversion sexuelle
