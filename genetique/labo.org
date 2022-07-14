@@ -212,4 +212,5 @@ Diag sur FISH, MLPA, ACPA
 
 ** Syndromes
 [[file:maladies.org::*Syndrome de Wolf-Hirschhorn][Syndrome de Wolf-Hirschhorn]]
+[[file:maladies.org::*Syndrome du cri du chat][Syndrome du cri du chat]]
 DÉL

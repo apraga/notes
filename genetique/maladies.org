@@ -820,3 +820,23 @@ Inc
 *** Conseil
 96 de novo (iso ou transloc )
 Faire caryo parent pour éliminer remaniement équilibrée
+
+* Monosomie 1o36
+Remaniement subtélomérique le plus fréqunet
+** Clinique
+Dysmorphie :
+- *enophtalmie + sourcils horizontaux*
+- microcéphalie 60%
+- nez plat 70%
+- fontanelle antérieure large 85%
+- oreilles dysplasiques
+
+  #+caption: Gajecka et al 2007
+ [[file:img/monosomy1p36.png]]
+
+- DI constante
+- Hypotonie 87%
+- Dysphasie 72%
+- difficulté alimenatires
+- +/- épilepsie, cardiopathie
+- surdité 82%
