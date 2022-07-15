@@ -10,7 +10,7 @@ CLOSED: [2022-04-23 Sat 17:13]
 *** TODO Carte bancaire
 DEADLINE: <2022-05-21 Sat>
 *** DONE Envoyer fiche de salaire
-*** TODO Envoyer relevé
+*** KILL Envoyer relevé
 *** TODO Transfert compte bancaire ?
 * Electricité :maison:
 ** DONE Passer en heures creuses
@@ -208,6 +208,8 @@ SCHEDULED: <2022-05-20 Fri>
 SCHEDULED: <2022-05-21 Sat>
 ** TODO Payer taxes ordures ménagères
 DEADLINE: <2022-06-06 Mon>
+** TODO Payer taxe foncière :maison:
+** TODO Réclamer pour majoration pour taxe foncière :maison:
 * Japonais
 ** Miura :miura:
 *** TODO Leçon 1
@@ -288,5 +290,10 @@ DEADLINE: <2022-04-27 Wed>
 :CATEGORY: assistant
 :END:
 *** DONE Regarder ce qu'Yvain a fait
+** Centogène
+***  Extraction de données
+Solution 1 : pdftotext puis parser, par exemple avec arpeggio.
+Liste de parser : https://tomassetti.me/parsing-in-python/
+Solution 2 : regarder la structure du PDF, par exemple avec i7-rups https://tomassetti.me/parsing-in-python/
 * Machine learning
 ** [[file:books.org::*The elements of statistical learning (217)][The elements of statistical learning (217)]]
