@@ -265,7 +265,16 @@ SCHEDULED: <2022-05-07 Sat +1d>
 - State "DONE"       from "TODO"       [2022-05-04 Wed 23:09]
 - State "DONE"       from "TODO"       [2022-05-03 Tue 23:09]
 - State "DONE"       from "TODO"       [2022-05-02 Mon 23:09]
-
+* Internat
+** Interchu
+*** TODO Mail Dijon pour expliquer que c’est décalé
+** Thèse
+*** TODO Voir avec Julien Thevenon pour sujet de thèse
+*** TODO Voir avec Jean-Paul pour sujet de thèse
+* Droit au remords
+** WAIT Envoi scolarité
+** TODO Négocier avec Xavier Bertrand pour stage de clinique
+DEADLINE: <2022-07-17 Sun>
 * Ledger
 :PROPERTIES:
 :CATEGORY: compta
