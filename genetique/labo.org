@@ -283,3 +283,17 @@ Idem mais déclenché par cassure double brin sur la fource, (du à une cassure 
 - Séquences avec forte homologies (LCR, Alu)
 - Stress cellulaire
  position dans le noyau (territoire chromosomique)
+* Microremaniements génomiques
+Classique : définition initiale clinique
+- Miller-Dieker
+- [[file:maladies.org::*Syndrome de Wolf-Hirschhorn][Syndrome de Wolf-Hirschhorn]]
+- [[file:maladies.org::*Microdélétion 22q11][Microdélétion 22q11]]
+- [[file:maladies.org::*Syndrome de Smith-Magenis][Syndrome de Smith-Magenis]]
+- [[file:maladies.org::*Syndrome de Prader-Willi][Syndrome de Prader-Willi]]
+- [[file:maladies.org::*Syndrome de Williams-Burren][Syndrome de Williams-Burren]]
+- [[file:maladies.org::*Syndrome du cri du chat][Syndrome du cri du chat]]
+
+Définition d’abord génétiques
+- Potock-Lupski
+Si del, sera hétérozygote
+Si dup, sera hétérozygote

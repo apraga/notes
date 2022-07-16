@@ -2,33 +2,40 @@
 #+OPTIONS: toc:nil
 
 * TODO 17q12 del
-* 22q11 del
+* Microdélétion 22q11
 ** Clinique
 Principal
-- Cardiopathies conotroncale (CIV, Fallot, atrésie pulmonaire)
-- FP, FLP
-- hypocalcémie
-- déficit immunitaire
-- difficultés d’apprentissage
+- Cardiopathies 40-75%: surtout conotroncale (CIV, Fallot, atrésie pulmonaire)
+- palais 70% : FP 11%, incompétence vélo-pharyngée 30% -> nasonnement
+- hypocalcémie néonatale 50%
+- difficultés d’apprentissage/retard psychomot 95% : retard de langage surtout 90%, DI 45%
 - dysmorphie
 
 Dysmorphie (peu évident naissance)
 - visage allongé, effacement relief des pomettes
-- nez long/gros/en puble
-- FP en haut et dehors
+- racine du nez large avec un nez/gros/bulbeux
+- FP étroite, en haut et dehors
 - oreilles petits, rondes avec *lobules hypoplasiques*
 - bouche étroite
+
+ #+caption: Habel et al 2014
+ [[file:img/22q11.png]]
 *** Autre
 - Trouble digestif (dysphagie, reflux)
-- Déficit imuntaire (hypoplasie du thymus) -> Maladie automimmune
+- aplasie/hypoplasie thymus /praathyriodie -> déficit immunitaire
+  - mmalades autommiunes
 - Hypotonie enfance
-- Scoliose
+- scoliose 45%, polydactylie, varus équin
+- TSA, risque de schizophrénique
+- malformation rénale 35%
+- difficulté d’alimentation
+- anomalies dentaires 40% (carie, émail)
 - Ophtalmo
 - déficit auditif
 - génito-urinaire (agénésie rénale)
-- Trouble psychologique (hyperactivité) enfance ->_psychiatrique
-- anomalies dentaire (carie, émail)
 - déficit hormone croissance
+*** Expliqué par anomalie appareil pharyngés (embyro)
+[[file:img/22q11-physio.png]]
 ** Y penser en anténatal
 absence de thymus +
 -  Malfo cardiaque conotroncale
@@ -43,6 +50,17 @@ Ou agénésie rénale unilatérale
 - CHARGE
 - délétion 11p et 15q24 (mais vu en CGH)
 
+** Génétique
+4 LCRs : favorise les NAHR.
+- reste = délétion proximale LCR A et B ou A et C
+- 85% patients deletion 3Mb htz entre LCR A et D (90% des gènes ont une expression cérébrale)
+- rarement distale : pénétrance moins importante
+
+Hérité 10% en AD -> étudier les parents
+
+Soit sondes FISH ou sondes MLPA
+! ces dernières permettent de diagnostiquer les délétions distales B-D !
+[[file:img/22q11-lcr.png]]
 * TODO Achondroplasie
 
 * TODO Charcot-Marie-Tooth
@@ -749,7 +767,7 @@ Celle du Silver-Russel
 - Macrocéphalie relative
 - Grand fromt bombant
 - Difficulté alimentaires
-Mais aussi suspicion de Prader-Willy
+Mais aussi suspicion de Prader-Willi
 - Puberté précoce
 - Hypotonie néonatale précoce
 - Petites mains, petits pieds
