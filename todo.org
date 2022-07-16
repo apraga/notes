@@ -1,9 +1,4 @@
 * Banque :banque:
-** WAIT Commander nouvelle CB :banque:
-Demande faite <2022-04-03 Sun>
-Reçue mais pas de chiffre en relief
-Mail envoyé pour savoir si on peut louer avec mais a priori non (carte de débit !)
-Renvoyer un mail car n’ont pas compris la question
 ** TODO Compte et CB société générale :banque:
 *** DONE Souscription
 CLOSED: [2022-04-23 Sat 17:13]
@@ -20,14 +15,11 @@ DEADLINE: <2022-05-21 Sat>
 SCHEDULED: <2022-05-20 Fri>
 ** TODO ormolu 0.5.0.0
 SCHEDULED: <2022-05-20 Fri>
-**
+** TODO kitty ne compile plus
+SCHEDULED: <2022-07-17 Sun>
 * Génétique
-** Biologie cellulaire Dunod
-*** TODO chapitres déjà fait :anki:
-*** TODO lire
-** Biologie chimie Dunod
-*** TODO lire
-*** TODO Ficher
+** [[file:books.org::*Biologie chimie Dunod][Biologie chimie Dunod]]
+** [[file:books.org::*Biologie cellulaire Dunod][Biologie cellulaire Dunod]]
 ** Notes génétique :anki:
 :PROPERTIES:
 :CATEGORY: genetique
@@ -75,15 +67,12 @@ SCHEDULED: <2022-05-20 Fri>
 **** TODO Mucoviscidose
 **** TODO Bases sur le conseil génétique
 **** TODO SEPI et TD
-*** TODO E-learning session 1 [1/6]
-**** TODO maladies endocriniennes et métabolisme
-**** TODO anomalies de la croissance
-- [X] obésité syndromique
-- [ ] avance staturale
-- [ ] retard de croissance
-**** DONE hématologie
+*** TODO E-learning session 1 [3/6]
+**** DONE maladies endocriniennes et métabolisme
+**** DONE anomalies de la croissance
+**** TODO hématologie
 **** TODO maladies du tissu conjonctif
-**** TODO Oncogénétique
+**** DONE Oncogénétique
 **** TODO dermatogénétique
 *** TODO Presentiel session 2 [0/5]
 **** TODO Déficience intellectuelle
@@ -206,10 +195,8 @@ SCHEDULED: <2022-05-20 Fri>
 *** TODO Cadeau
 ** TODO Copier photos famille depuis drive yvain sur drive famille
 SCHEDULED: <2022-05-21 Sat>
-** TODO Payer taxes ordures ménagères
-DEADLINE: <2022-06-06 Mon>
-** TODO Payer taxe foncière :maison:
-** TODO Réclamer pour majoration pour taxe foncière :maison:
+** WAIT Réclamer pour majoration pour taxe foncière :maison:
+Mail envoyé<2022-07-16 Sat>
 * Japonais
 ** Miura :miura:
 *** TODO Leçon 1
@@ -246,10 +233,6 @@ DEADLINE: <2022-06-06 Mon>
 :END:
 *** TODO Lire dialogue fin leçon 10
 SCHEDULED: <2022-04-03 Sun>
-*** DONE Notes <2022-04-17 Sun>
-SCHEDULED: <2022-04-17 Sun>
-*** DONE Notes <2022-06-12 Sun>
-DEADLINE: <2022-06-12 Sun>
 * Langues
 ** TODO Allemand
 SCHEDULED: <2022-05-07 Sat +1d>
