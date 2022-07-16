@@ -217,3 +217,69 @@ Diag sur FISH, MLPA, ACPA
 - [[file:maladies.org::*Monosomie 1p36][Monosomie 1p36]]
 - [[file:maladies.org::*Syndrome Kleefstra/Deletion 9qter][Syndrome Kleefstra/Deletion 9qter]]
 - [[file:maladies.org::*Délétion 2qter][Délétion 2qter]]
+* Réarrangements génomiques
+Duplication, deletion, insertion, inversion, translocation
+micro si < 5Mb
+
+2 types
+- Récurrents = taille et position identiques chez patients avec même syndromes
+- Non-récurrents = variable mais région commune entre tous les remaniements
+
+
+Dans les cellules germinales (méiose) -> constit
+Dans les cellules somatique (mitose/mosaïque) -> cancer
+** Mécanismes principaux
+*** NAHR (recombinaison homologue non alléliques)
+- Principale mécanisme pour réarragement récurrents
+- Recombinaison homologue = physiologique, sert à réparer les cassures doubles brins de l’ADN
+appariement strict
+- Si mauvaise matrice de réparation, se fait alors de manière non allélique
+- Pendant méiose ou mitoses
+**** Favorisé par
+- structures qui génères spontanément des cassures (palindromes)
+- surtout les LCR (low copy repeat)  = 1-400kb avec forte homologie (>90%)
+  - forte concentration dans péricentromère, subtélomère
+  - 20% géne
+
+**** Peut arriver
+- entre 2 chromomosem
+- sur un même chromosome : entre les 2 bras ou sur le même bras
+[[file:img/nahr.png]]
+  (chromatide soeur)
+**** Sens
+Si LCR même sense : Deletion/dup
+Sinon : inversion (180% et s’insère à la même place): souvent bénin mais facteur favorisant pour microdel/dup dans la descendance (ex: sd de Willams-Burren)
+**** Hotspot
+péricentromérique de centairs chromosomes
+*** NHEJ (raccordemente d’extrémités non homologues)
+- Réparer cassures doubles brins, prédominant chez les mammifères
+- Ici actif tout au long du cycle cellulaire
+- Pas d’homologie nécessaire ici ! mécanisme biochimique
+- Réarrangement non récurrents
+
+  Impliqué dans les recombinaisons physiologique (immunité)
+  Patho: cancer
+*** État final :
+- réparation
+- ou séquence "cicatrice" suite modification oligonucléotide
+  - délétion
+  - insertion
+  - MMEJ (microhomology-mediated end joining)
+(Erreurs d’autant plus fréquentes qu’il y a des micro-homologie)
+*** Réplication
+- FoSTeS (fork stalling and template switching) ou MMBBIR (microhomology-mediated break-induced replication)
+- Non lié à la réparation !
+- Réarrangement non récurrent complexes
+- Impliqué : sd de Pelizaeus-Merzbacher
+*** Fostes
+Fourche de répilcation parfois arrêtés par des structures particulières (ex: lésions sur ADN, collision avec complexe de transcription)
+-> si passe outre, cassure brin
+Normalement corrigé par NH mais peut être perturbé par micro-homologie -> nouvelle fourche de réplication
+*** MMBIR
+Idem mais déclenché par cassure double brin sur la fource, (du à une cassure simple )
+
+** favorisé par
+- structures secondaires augmentant la fréquence des cassures adn
+- Séquences avec forte homologies (LCR, Alu)
+- Stress cellulaire
+ position dans le noyau (territoire chromosomique)
