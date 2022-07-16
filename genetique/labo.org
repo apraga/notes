@@ -125,7 +125,7 @@ NB: attention aux codons qui sont répartis sur 2 exons
   phénotype en miroir
   - di
   - troubles psy : schizo, comportement
-  - micorcéphalie,
+  - microcéphalie,
   - faible poids
   - épilepsie
   parents asympto
@@ -149,7 +149,7 @@ Hyperactivité
 Trouble attention, TSA
 +/- épi
 *** micro del 15q13.3
-- Gène /CHRNA7
+- Gène /CHRNA7/
 - 2Mb le plus souvente
 - héritée 85%
 **** Clinique

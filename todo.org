@@ -80,8 +80,8 @@ SCHEDULED: <2022-07-17 Sun>
 **** TODO Pathologies fréquentes en génétique clinique
 **** TODO Génome humain : normal et pathologique
 **** TODO Maladies métaboliques
-*** TODO E-learning session 2 [0/5]
-**** TODO Syndromes microdélétionnels
+*** TODO E-learning session 2 [1/5]
+**** DONE Syndromes microdélétionnels
 **** TODO Dysgonosomies
 **** TODO Cancer du colon: Maladie de Lynch et CMMRD
 **** TODO Déficience intellectuelle
