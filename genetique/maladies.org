@@ -821,8 +821,8 @@ Inc
 96 de novo (iso ou transloc )
 Faire caryo parent pour éliminer remaniement équilibrée
 
-* Monosomie 1o36
-Remaniement subtélomérique le plus fréqunet
+* Monosomie 1p36
+- Remaniement subtélomérique le plus fréquent
 ** Clinique
 Dysmorphie :
 - *enophtalmie + sourcils horizontaux*
@@ -837,6 +837,78 @@ Dysmorphie :
 - DI constante
 - Hypotonie 87%
 - Dysphasie 72%
-- difficulté alimenatires
+- difficulté alimentaires
 - +/- épilepsie, cardiopathie
 - surdité 82%
+** Génétique
+- Type et taille variable (1.5 à 10Mb)
+- hypothèse = effet de position
+- Pas de corélation génotype-phénotype
+* Syndrome de Phelan McDermid
+** Clinique
+- DI
+- retard/absence langage
+- hypotonie
+- trouble comportement (TSA)
+- coissance normale / accélérée
+- grandes mains
+- ongles dysplasique
+
+  #+caption: Petits ongles et malformés (A), Phelan et al 2011
+ [[file:img/syndrome-phelan-mcdermid-nails.png]]
+
+Dysmorphie discrète:
+- dolicocéphalie
+- ptosis
+- grandes oreilles
+- menton pointu
+** Génétique
+/SHANK3/ toujours délété , soit mutation ponctuelle, soit remaniement
+* Deletion 1qter
+** Clinique
+- Microcéphalie
+- hypotrophie
+- Dysmorphie faciale
+
+#+caption: van bon 2008
+[[file:img/1qter.png]]
+
+- Triogonocéphaile
+- DI constante et sévère
+- épilépsie 68%
+- atrophie corticale, agénésie corps calleux
+- anomalies vertébrales, génito-urinaires
+- CIV
+** Génétique
+Génotype-phénotype
+- AKT3 = microcéphalie
+- ZNF238 = agénésie corps calleaux
+- C1ORF199 = épi
+* Syndrome Kleefstra/Deletion 9qter :EHMT1:
+** Clinique
+- Dysmorphie :
+  - brachycéphalie
+  - synophris
+  - narines antéversées
+  - prognathisme
+
+#+caption: Kleefstra 2009
+[[file:img/kleefstra.jpg]]
+
+- DI
+- Obésité
+- anomalies génitales chez garçon
+- troubles comportement, sommeil
+
+* Délétion 2qter
+** Clinique
+- Dysmorphie
+#+caption: Leroy et al 2013
+[[file:img/2qter-dysmorpho.png]]
+- DI
+- Obésité
+- Hypotonie
+- Brachymétacarpie
+- Brachdactylie
+#+caption: 4e surtout et 2,3,4 en P9 (Leroy et al 2013)
+ [[file:img/2qter-bones.png]]

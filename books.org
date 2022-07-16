@@ -128,8 +128,9 @@ Voir [[file:books-lists][books lists]] pour des idées
 :CATEGORY: math
 :END:
 ** HOLD Gowers, T. (2010): The princeton companion to mathematics
-** STRT The elements of statistical learning (217)
+** STRT The elements of statistical learning (217) [1/1]
 Texte de référence pour classification, machine
+*** DONE 1. Intro
 * Medenice
 ** TODO Cecil-Goldman (26th edition)
 - Renal and Genitourinary Diseases 1.

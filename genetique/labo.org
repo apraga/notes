@@ -211,6 +211,9 @@ Diag sur FISH, MLPA, ACPA
 - gain et perte terminale en ACPA -> y penser et FISH + caryo parent pour transloc équilbrée
 
 ** Syndromes
-[[file:maladies.org::*Syndrome de Wolf-Hirschhorn][Syndrome de Wolf-Hirschhorn]]
-[[file:maladies.org::*Syndrome du cri du chat][Syndrome du cri du chat]]
-DÉL
+- [[file:maladies.org::*Syndrome de Wolf-Hirschhorn][Syndrome de Wolf-Hirschhorn]]
+- [[file:maladies.org::*Syndrome du cri du chat][Syndrome du cri du chat]]
+- [[file:maladies.org::*Deletion 1qter][Deletion 1qter]]
+- [[file:maladies.org::*Monosomie 1p36][Monosomie 1p36]]
+- [[file:maladies.org::*Syndrome Kleefstra/Deletion 9qter][Syndrome Kleefstra/Deletion 9qter]]
+- [[file:maladies.org::*Délétion 2qter][Délétion 2qter]]
