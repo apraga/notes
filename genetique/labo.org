@@ -287,7 +287,7 @@ Idem mais déclenché par cassure double brin sur la fource, (du à une cassure 
 Classique : définition initiale clinique
 - Miller-Dieker
 - [[file:maladies.org::*Syndrome de Wolf-Hirschhorn][Syndrome de Wolf-Hirschhorn]]
-- [[file:maladies.org::*Microdélétion 22q11][Microdélétion 22q11]]
+- [[file:maladies.org::*Microdélétion 22q11.2][Microdélétion 22q11.2]]
 - [[file:maladies.org::*Syndrome de Smith-Magenis][Syndrome de Smith-Magenis]]
 - [[file:maladies.org::*Syndrome de Prader-Willi][Syndrome de Prader-Willi]]
 - [[file:maladies.org::*Syndrome de Williams-Burren][Syndrome de Williams-Burren]]
@@ -297,3 +297,20 @@ Définition d’abord génétiques
 - Potock-Lupski
 Si del, sera hétérozygote
 Si dup, sera hétérozygote
+
+** Région 17pp12
+Contient /PMP22/ (code myéline périph)
+Encadré par 2 LCR -> délétion/insertion par NAHR
+
+Neuropathies périphérique démyélinisantes par effet dosage géniques
+- [[file:maladies.org::*Charcot-Marie Tooth 1A][Charcot-Marie Tooth 1A]]
+- [[file:maladies.org::*Neuropathie héréditaire sensible à la pression][Neuropathie héréditaire sensible à la pression]]
+
+** Région 17p11.2
+3 LCR avec /RAI1/ (facteur de transcription pour message ARN -ADN -> multiples fonction [neuro, os, métabolisme, rythme circadien])
+NAHR -> délétion/duplication
+[[file:maladies.org::*Syndrome de Smith-Magenis][Syndrome de Smith-Magenis]]
+Surexpression :[[file:maladies.org::*Syndrome de Potocki-Lupski][Syndrome de Potocki-Lupski]]
+** Région 7q11.23
+Délétion : [[file:maladies.org::*Syndrome de Williams-Burren][Syndrome de Williams-Burren]]
+Dup [[file:maladies.org::*Microduplication 7q11.23][Microduplication 7q11.23]]

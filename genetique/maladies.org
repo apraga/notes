@@ -2,7 +2,7 @@
 #+OPTIONS: toc:nil
 
 * TODO 17q12 del
-* Microdélétion 22q11
+* Microdélétion 22q11.2
 ** Clinique
 Principal
 - Cardiopathies 40-75%: surtout conotroncale (CIV, Fallot, atrésie pulmonaire)
@@ -61,6 +61,13 @@ Hérité 10% en AD -> étudier les parents
 Soit sondes FISH ou sondes MLPA
 ! ces dernières permettent de diagnostiquer les délétions distales B-D !
 [[file:img/22q11-lcr.png]]
+* Microduplication 22q11.2
+** Clinique
+- Plus modéré, très variable
+- Trouble des apprentissage 97%
+- Retard de développement psychomoteur 67%
+- Retard de croissance 63%
+- +/- hypotonie 43%, malfo (cardiaque, FLP)
 * TODO Achondroplasie
 
 * TODO Charcot-Marie-Tooth
@@ -553,9 +560,18 @@ Garçons !
 17p11.2_del
 ** Clinique
 - DI souvent sévère
-- dysmorphie: brachycéphalie, bosses fontales, syophrise, hypertélorisme, hypoplasime étage moyen facile, prognathisme, oreilles bas implantées
+- dysmorphie: brachycéphalie, bosses fontales, synophris, hypertélorisme, hypoplasie étage moyen facile, prognathisme, oreilles bas implantées
+  #+caption: Elsea et al 2008
+ [[file:img/syndrome-smith-magenis.png]]
 - troubles comportement et sommeil
 - hyperphagie
+- +/- hypersensibilité douleurs, malfo cardiaque, urinaire, rénale, dentaire
+  Inversion du rythme circadien: hyperactivité de la nuite
+** Génétique
+  - 90% dél htz 17p11.2
+    - 70% de del récurrent par NAHR de 3.7MB
+    - 30% del htz variable
+  - 10% mutation RAI1 avec même clinique mais suprpois et pas de malfo
 * TODO Syndrome de Sotos :NSD1:
 ** Clinique
 - Macrosomie++ (foetal et postnatale)
@@ -649,8 +665,50 @@ Et bio !
 #+attr_html: :width 50%
 [[./img/beckwith-differentiel.png]]
 * TODO Syndrome de Wiedemann-Steiner
-* TODO Syndrome de Williams-Burren
+* Syndrome de Williams-Burren
 7q11.23 del
+** Clinique
+- Anomalie cardiaque : 75% ont sténose aortiques supravalvulaire
+- Sténose artère rénale -> HTA
+- HTA aussi du rigidét autre vaissance
+- RCIA et post natale
+- DI avec QI moyen 56, défaut repère visuo-spatiaux
+- hypersensibilité bruit et
+-  "cocktail party" personnalité
+  carie +/- hypoplasie
+
+*** Dysmorphie : faciès d’elfe
+  - grand front, joues pleines
+  - hypoplasie malaire
+  - oedème périorbitaire
+  - piltrium long
+  - racine du nez aplati
+  - iris stellaire
+   [[file:img/syndrome-williams.png]]
+** Génétique
+Région encadrée par des LCR -> favorise NAHR
+- 95% délétion htz 1.55Mb en 7q11.23
+  ->36 gènes
+- 3-4% 1.84Mb + 2 gènes par NAHR
+- atypique
+
+Chez les parents : 25-30% inversion de la région (1-5% en pop générale) ?
+Quasimente que de novo
+* Microduplication 7q11.23
+** Clinique
+Tout n’est pas en miroire par rapport à [[*Syndrome de Williams-Burren][Syndrome de Williams-Burren]]
+- Retard de langage +/- DI
+- Traits autistique
+- Fréquemment héritée
+- souvent troubles du comportement, attentio, agressivité
+*** Dysmorphie
+[[file:img/microdup-7q11.png]]
+ - Grand front
+ - sourcils droits
+ - lèvres upérieures fines
+ - Philtrum court
+ - nez large et long
+ - Rarement dilatation aortique
 * TODO Syndrome d’Aarskog
 
 * Syndrome d’Alagille :JAG1:NOTCH2:
@@ -930,3 +988,39 @@ Génotype-phénotype
 - Brachdactylie
 #+caption: 4e surtout et 2,3,4 en P9 (Leroy et al 2013)
  [[file:img/2qter-bones.png]]
+* Charcot-Marie Tooth 1A :PMP22:
+AD = la plus fréquente des CMT
+Atrophie progressive des muscles distaux ->_trouble de la marche et équilibre
+pieds creux
+évolution lente (< 5% auront besoin d’un fauteuil roulant)
+98% ont une dup de 1.4MB dans 17p11.2
+De novo 1/3
+Surexpression du gènes -> démyélinisation
+
+* Neuropathie héréditaire sensible à la pression :PMP22:
+Certains asympto
+Perte soudaine de sensibilité non douloureuse, faiblesse musculaire d’un territoire d’un seul nerf
+Pieds tombants, faiblesse main/bras
+Déclenché trauma minime/compression prolongée de la région
+50% récupé en quelques jours/mois mais peut être partielle
+Rechutes fréquentes
+Rarement paralysie définitive
+
+80% délétion 1.4Mb par NAHR  dans 17p11.2
+20% mutation ponctuelle, courte délétéion, autre
+FISH possible
+
+* Syndrome de Potocki-Lupski :RAI:
+** Clinique
+- retard global develop
+- DI
+- hypotonie
+- retard staturo pnodéral
+- TSA
+- trouble comportement
+- possible malfo cardiaque
+** Génétique
+Duplication 17p11.2
+- récurrente 70% 3.7Mb
+- variable dans le reste
+RAI1 surexprimée, ainsi que SREBPF1
