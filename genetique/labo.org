@@ -59,7 +59,7 @@ Amplification d’une courte séquence d’ADN pour avoir une grande quantité d
    Vérification de la qualité par électrophorèse
 *** RT-PCR
 Idem mais pour ARN. Permet
-- transcript anormaux (mutation l’épissage)
+- transcript anormaux (mutation d’épissage)
 ** Sanger
 
 [[file:img/sanger.png]]
@@ -131,6 +131,60 @@ Rares mais décrits l’exon/intron
 Régions homoligues proches : transert (unilatéral !) des changements nucléotidiques dans gène receveur
 Ex: /CYP21A2/ recoit du pseudogènes /CYP21AP/ des variants perte de fonction -> 25% des cas de déficiton en 21-hydroxylase (hyperplasie congénitale des surrénale)
 NB: les 75% % croissing-over inégaux, échanges entre chromatides soeurs
+*** Réarragements chromosomiques
+- délétion région (phénotype des gènes contigus)
+- Point de cassure dans le gène (très rare)
+- disomie uniparentale : si empreinte, ou révèle patho récessive
+*** Mosaïques
+De novo : 33% des Duchenne, hémophile, 50% des NF1, 90% pour achondroplasie
+
+[[file:img/mosaique1.png]]
+
+[[file:img/mosaique2.png]]
+** Conséquences
+[[file:img/mutation.png]]
+*** Perte de fonction
+Alléle
+- amorphe/muls = 0 expression de la protéine, ou protéine totalement inactive
+- hypomorphie  = expression partielle ou protéine partiellement inactive
+Retrouvé dans les maladies récessive ou dominantes avec haplo-insuffisance (ex: hypercholéstérolémie familiale : htz = moins sévère que hmz)
+**** Affecte la régulation
+En cis :
+- promoteur : altère un site consensus de liaisons à un facteur de transcription, diminue expression du gène, modifie la structure du promoteur
+- enhancers, silencers : fix facteurs de transcription et activite/inhibe transcription
+- effet de position : le ène est séparé de ses régulateurs ou placé près d’autre rélugateurs (ex: transloc)
+- deletion des Locus Control Region: grande taille, effet très loin (ex: deletion pour β-thalassémie)
+En trans: gènes codants facteurs de trnascription. Le plus souvent létal. Ex : /MECP2/ (sd de Rett) : abolition de la régulation négative
+**** Épissage
+Voir [[file:bio.org::*Intron][la liste des possibilités]]
+exX mutation signal de polyadénylation de /HBA2/ (code α2globine) pour α-thalasémie
+**** Traduction
+- Non-sens, frameshift, codon d’initiation de la traduction -> pas de protéine ou activité fonctionnelle nulle/très réduite en général
+  - conséquence possibe : dégradation ARNm par NMD
+- faux-sens : peut affecter la stabilité, adressage intracellulaire, maturation de la protéine, son assemblage, interfaction avec ligand/protéine
+-  synonyme : déléter dans une minorité (altération épissage)
+
+  NB: défiit G6PD : que des faux sens car la perte totale de fonction est létale
+-  mutation des gones  de la chromatine: ex /EZH2/ dans
+ [[file:maladies.org::*Syndrome de Weaver][Syndrome de Weaver]]
+*** Gain de fonction
+- effet dominant négatif: ex de l’ostégénose impartafte : mutation htz a un effet plus délétère qu’une perte totale de fonction car empèche association de la sous-unité raccourcie aux chaînes normales
+- mutation faux-sens p.Met358Arg (/Pttsburg/) sur α1-antitrypsine -> devient un inhibiteur des facteur de coagulation -> sd hémorragique
+- surexpression: exceptionne en constit (ex: Charcot-Marie-Totthe 1: myélinogenèse anormale), fréquente en oco somatique
+- Modification des propriété fonctionnelles
+  Ex: affinité à l’oxygène diminuée pour l’hémoglobine
+*** Gain et perte = phénotpe différente
+- Ex: /RET/: perte = Hirschprung, gain de fonction = cancer familiaux médullaire de la thyro̤¨,de
+** Diversité
+- unique : modification fonctionnelle très prècise (protéien, expression du gènes -> drépanocytose, achondroplasie, Huntington, Steinert)
+- prépondérante : point chaud (hémophiliae A, AMS), effet fondateur (thalassémie)
+- hétérogènes
+** Interprétation des variants:
+- ségrégation : de novo ou coségrégation = en faveur
+- fréquent chez non atteints
+- effet sur proténie : région/domaine essentiel (polarité/charge acide amine, encombrement stérique) -> score bioinfo
+- conservation interespèces
+- expérience : étude gènes et trnascrite, étude /in vitro/ sur des cellules, /in vivo/
 * Nouveaux syndromes microdéletionnels
 - souvent hérité parent asympto
 - facteur suscepbtibilité/prédisposition aux troubles neurodev

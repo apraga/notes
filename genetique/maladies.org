@@ -819,6 +819,8 @@ Modification post-traductionnelle des histones
 - Avance staturale + âge osseux
 - Macrocéphalie
 [[./img/syndrome-weaver.png]]
+** Génétique
+Anomalie de la triméthylation dans histone H3
 
 * Syndrome de West
 In about 35% of cases, the etiologic event is (still) unknown:
