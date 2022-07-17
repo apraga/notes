@@ -4,7 +4,7 @@
 
 * Cas clinique 1
 ** Questions
-Contexte (effort, nuit [canalopathie]), ˰age, ATCD cardio/extra-cardio, autopsie classique, chocable ?
+Contexte (effort, nuit [canalopathie]), âge, ATCD cardio/extra-cardio, autopsie classique, chocable ?
 
 ** Cause morts subituqe
    - Avant 40A: penser CMH, séquelle myocardite, dysplasie ventricule droit, canalopathies [Brugada, QT long congénital, tachy ventriculaire cholinéregique]
@@ -22,7 +22,7 @@ NB: toujours le mḙme bilan
 - Brugada
 ** ECG
   V1, V2: sus-ST (Brugada type 2 ?)
-  test provocation à l’Ajmaline (ambulatoire, fait appara˰itre type 1 de Brugada. Parfois réponse explosive donc peut-ḙtre dangereux)
+  test provocation à l’Ajmaline (ambulatoire, fait apparaître type 1 de Brugada. Parfois réponse explosive donc peut-ḙtre dangereux)
 
   ECG post-ajmaline : V1-V2: Brugada -> diagnostic
 ** Cause du frère:

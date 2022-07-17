@@ -484,3 +484,77 @@ SCHEDULED: <2022-04-24 Sun>
 Renvoyé<2022-05-07 Sat>
 Rappeler pour voir avec code postal
 Vont renvoyer
+
+* KILL Demande interchu Grenoble novembre 2022
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-07-09 Sat 13:35
+:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_OLPATH: Internat
+:ARCHIVE_CATEGORY: todo
+:ARCHIVE_TODO: KILL
+:END:
+** DONE Mail PrThevenon
+
+* DONE Changer ampoule
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-07-09 Sat 13:35
+:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_OLPATH: Electricité
+:ARCHIVE_CATEGORY: todo
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: maison
+:END:
+
+* KILL Commander nouvelle CB :banque:
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-07-16 Sat 17:45
+:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_OLPATH: Banque
+:ARCHIVE_CATEGORY: todo
+:ARCHIVE_TODO: KILL
+:END:
+Demande faite <2022-04-03 Sun>
+Reçue mais pas de chiffre en relief
+Mail envoyé pour savoir si on peut louer avec mais a priori non (carte de débit !)
+Renvoyer un mail car n’ont pas compris la question
+
+* DONE Payer taxe foncière :maison:
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-07-16 Sat 17:51
+:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_OLPATH: Inbox
+:ARCHIVE_CATEGORY: todo
+:ARCHIVE_TODO: DONE
+:END:
+Chèque envoyé<2022-07-16 Sat>
+
+* DONE Payer taxes ordures ménagères :maison:
+DEADLINE: <2022-06-06 Mon>
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-07-16 Sat 17:51
+:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_OLPATH: Inbox
+:ARCHIVE_CATEGORY: todo
+:ARCHIVE_TODO: DONE
+:END:
+Chèque envoyé<2022-07-16 Sat>
+
+* DONE Notes <2022-04-17 Sun>
+SCHEDULED: <2022-04-17 Sun>
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-07-16 Sat 17:51
+:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_OLPATH: Japonais/Leçon Aya
+:ARCHIVE_CATEGORY: aya
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE Notes <2022-06-12 Sun>
+DEADLINE: <2022-06-12 Sun>
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-07-16 Sat 17:51
+:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_OLPATH: Japonais/Leçon Aya
+:ARCHIVE_CATEGORY: aya
+:ARCHIVE_TODO: DONE
+:END:

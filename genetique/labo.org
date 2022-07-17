@@ -50,6 +50,7 @@ Montre
 - transcrits alternatifs
 ** PCR
 Amplification d’une courte séquence d’ADN pour avoir une grande quantité de matériel nucléique
+[[file:img/pcr.png]]
 *** Méthode
 1. Dénaturation : en chauffant, ADN double brin -> simble brin
 2. Hybridation amorces complémentaires (identifie la région à amplifier)
@@ -60,6 +61,8 @@ Amplification d’une courte séquence d’ADN pour avoir une grande quantité d
 Idem mais pour ARN. Permet
 - transcript anormaux (mutation l’épissage)
 ** Sanger
+
+[[file:img/sanger.png]]
 On part d’un ADN simple brin. Puis synthèse du brin complémentaire mais en remplacant les dNTP par des ddNTP.
 Les ddNTP sont intégrés au hasard et arrḙtent la formation de la chaine.
 On obtient des fragments de différentes tailles, séparés par électrophorèse.
@@ -67,3 +70,247 @@ Les ddNTP sont couplés à des molécules fluorescentes -> chaque bande aura une
 
 Avantages: séquences plus longues que le NGS (700pb) avec très peu d’erreur
 -> utilisé pour valider résultat
+* Structure d’analyse de remaniement (ou variants)
+1. Quel impact sur ARN message ?
+2. Quel impact sur la protéine ? (utiliser PFAM)
+
+   Voir [[file:bio.org::*Intron][Intron]]
+* Cytogénétique
+** Villosités choriales
+contiennent 2 type de tissus
+- extra-embryonnaire cytotrophoblastes et syncytiotropblaste
+- embryonnaire: mésenchyme
+Examen direct : sur cytotrophoblastes -> rapide mais toujours à confirmer par une culture sur mésenchyme
+*** Limites
+XX: possibilité d’une contamination maternelle
+Cytotrophoblastiques : mosaique, pas assez de mitoses, anomale déséquilibrée
+
+Source [[http://www.eaclf.org/docs/GBPcyto/Arbre-caryoVC.pdf][Recos EACLF]]
+* Variant
+Transmission
+- AD = perte de fonction x 1, gain de fonction "toxique"
+- AR = perte de fonction x1
+- Dominant négatif : gain de fonction mais impacte l’allèle saine -> pas de protéine
+- Lié à l’X
+  NMD: coupe l’ARN si protéine trop courte (codon stop prématuré) = mécanisme de contrôle
+  NB: il existe 3 synonymes pour un codon stop
+
+Variant
+- faux-sens = peut tout donner !
+- stop et frameshift = perte de fonction
+
+NB: attention aux codons qui sont répartis sur 2 exons
+
+* Nouveaux syndromes microdéletionnels
+- souvent hérité parent asympto
+- facteur suscepbtibilité/prédisposition aux troubles neurodev
+- PIEV
+** 16p11.2i
+*** del BP4 et BP5 = typique
+590kb
+**** Clinique
+- Difficulté aprentissage ou DI légère, retard langage /develop
+- épilepsie, dyskinéie déclenché par le mouvement (début 6-15A)
+- Troubles du comportement : TSA, psy
+- malfo de Chiari, ectopie amygdale cérébelleuse
+- FR obésité
+- macrocéphalie fréquente
+- scoliose
+- risque malfo cardiaque
+**** Labo
+- de novo 80%
+- gènes /PRRT2/, /KCDT13/, /TBX6/
+- varabilité phénotypiuqe
+**** dup BP4 BP5
+  phénotype en miroir
+  - di
+  - troubles psy : schizo, comportement
+  - microcéphalie,
+  - faible poids
+  - épilepsie
+  parents asympto
+*** microdel BP2 et BP3 = atypique
+220kb
+- Retard de develop
+- Hyperactivité
+- Épilepsie
+- Obésite précoce
+40% de novo
+Du réciproque : status encore incertaine
+** 15q11.2q13 (hors PraderWilli)
+*** microdel 15q11.2 BP1 BP2
+- 500kb
+- le plus souvent hérité
+- faible pénétrance
+- gènes : /TUBGCP5/, /CYFIP1/, /NIPA1/, /NIPA2/
+**** Clinique
+Retard de dev, moteur, langage
+Hyperactivité
+Trouble attention, TSA
++/- épi
+*** micro del 15q13.3
+- Gène /CHRNA7/
+- 2Mb le plus souvente
+- héritée 85%
+**** Clinique
+- DI
+- retard langage,
+- trouble comporteement, hyperactivité
+- TSA
+- épi
+- shizo
+- hypotonie
+- rarement cardiopathie
+**** Dup réciproque
+  status incertaine
+** 22q11.2
+LCR -> déliminte région proximale centrale distale
+*** Centrale
+- /CRKL/
+***** Clinique
+- retard croissance
+- retard dev, langage
+- dysmorphie faciale
+- malfo génito-uriaine, cardiaque
+- trouble psy
+*** Distance type 1
+Clinique
+- retard croissance
+- retard dev, langage
+- dysmorphie faciale
+- malfo cardiaque
+  Risque préma et complication obstétricale !
+
+*** Distance type 3
+- SMARC1B
+
+Clinique
+  - Risque rhabdomosacrome
+  - retard dev/DI
+  - microcéphalie
+  - malfo cardiaque
+
+* Remaniement subtélomériques
+- Région de transition avant répétition télomériques
+- Complexe et variable
+- Séquences répétées + uniques
+- Taille variable entre les chr et individus
+** Fonction
+- Non indispensable pour viabilité ou ségrég
+- Réservoir de ènes ?
+- Barrière contre effet de position télomérique (diffusion hétérochromatine)
+** Microdel
+Mécanismes: aléatoire
+Y penser si
+- DI
+- histoire familiale DI
+- retard de croissance
+- dysmorphie faciale
+- malfo
+Diag sur FISH, MLPA, ACPA
+- gain et perte terminale en ACPA -> y penser et FISH + caryo parent pour transloc équilbrée
+
+** Syndromes
+- [[file:maladies.org::*Syndrome de Wolf-Hirschhorn][Syndrome de Wolf-Hirschhorn]]
+- [[file:maladies.org::*Syndrome du cri du chat][Syndrome du cri du chat]]
+- [[file:maladies.org::*Deletion 1qter][Deletion 1qter]]
+- [[file:maladies.org::*Monosomie 1p36][Monosomie 1p36]]
+- [[file:maladies.org::*Syndrome Kleefstra/Deletion 9qter][Syndrome Kleefstra/Deletion 9qter]]
+- [[file:maladies.org::*Délétion 2qter][Délétion 2qter]]
+* Réarrangements génomiques
+Duplication, deletion, insertion, inversion, translocation
+micro si < 5Mb
+
+2 types
+- Récurrents = taille et position identiques chez patients avec même syndromes
+- Non-récurrents = variable mais région commune entre tous les remaniements
+
+
+Dans les cellules germinales (méiose) -> constit
+Dans les cellules somatique (mitose/mosaïque) -> cancer
+** Mécanismes principaux
+*** NAHR (recombinaison homologue non alléliques)
+- Principale mécanisme pour réarragement récurrents
+- Recombinaison homologue = physiologique, sert à réparer les cassures doubles brins de l’ADN
+appariement strict
+- Si mauvaise matrice de réparation, se fait alors de manière non allélique
+- Pendant méiose ou mitoses
+**** Favorisé par
+- structures qui génères spontanément des cassures (palindromes)
+- surtout les LCR (low copy repeat)  = 1-400kb avec forte homologie (>90%)
+  - forte concentration dans péricentromère, subtélomère
+  - 20% géne
+
+**** Peut arriver
+- entre 2 chromomosem
+- sur un même chromosome : entre les 2 bras ou sur le même bras
+[[file:img/nahr.png]]
+  (chromatide soeur)
+**** Sens
+Si LCR même sense : Deletion/dup
+Sinon : inversion (180% et s’insère à la même place): souvent bénin mais facteur favorisant pour microdel/dup dans la descendance (ex: sd de Willams-Burren)
+**** Hotspot
+péricentromérique de centairs chromosomes
+*** NHEJ (raccordemente d’extrémités non homologues)
+- Réparer cassures doubles brins, prédominant chez les mammifères
+- Ici actif tout au long du cycle cellulaire
+- Pas d’homologie nécessaire ici ! mécanisme biochimique
+- Réarrangement non récurrents
+
+  Impliqué dans les recombinaisons physiologique (immunité)
+  Patho: cancer
+*** État final :
+- réparation
+- ou séquence "cicatrice" suite modification oligonucléotide
+  - délétion
+  - insertion
+  - MMEJ (microhomology-mediated end joining)
+(Erreurs d’autant plus fréquentes qu’il y a des micro-homologie)
+*** Réplication
+- FoSTeS (fork stalling and template switching) ou MMBBIR (microhomology-mediated break-induced replication)
+- Non lié à la réparation !
+- Réarrangement non récurrent complexes
+- Impliqué : sd de Pelizaeus-Merzbacher
+*** Fostes
+Fourche de répilcation parfois arrêtés par des structures particulières (ex: lésions sur ADN, collision avec complexe de transcription)
+-> si passe outre, cassure brin
+Normalement corrigé par NH mais peut être perturbé par micro-homologie -> nouvelle fourche de réplication
+*** MMBIR
+Idem mais déclenché par cassure double brin sur la fource, (du à une cassure simple )
+
+** favorisé par
+- structures secondaires augmentant la fréquence des cassures adn
+- Séquences avec forte homologies (LCR, Alu)
+- Stress cellulaire
+ position dans le noyau (territoire chromosomique)
+* Microremaniements génomiques
+Classique : définition initiale clinique
+- Miller-Dieker
+- [[file:maladies.org::*Syndrome de Wolf-Hirschhorn][Syndrome de Wolf-Hirschhorn]]
+- [[file:maladies.org::*Microdélétion 22q11.2][Microdélétion 22q11.2]]
+- [[file:maladies.org::*Syndrome de Smith-Magenis][Syndrome de Smith-Magenis]]
+- [[file:maladies.org::*Syndrome de Prader-Willi][Syndrome de Prader-Willi]]
+- [[file:maladies.org::*Syndrome de Williams-Burren][Syndrome de Williams-Burren]]
+- [[file:maladies.org::*Syndrome du cri du chat][Syndrome du cri du chat]]
+
+Définition d’abord génétiques
+- Potock-Lupski
+Si del, sera hétérozygote
+Si dup, sera hétérozygote
+
+** Région 17pp12
+Contient /PMP22/ (code myéline périph)
+Encadré par 2 LCR -> délétion/insertion par NAHR
+
+Neuropathies périphérique démyélinisantes par effet dosage géniques
+- [[file:maladies.org::*Charcot-Marie Tooth 1A][Charcot-Marie Tooth 1A]]
+- [[file:maladies.org::*Neuropathie héréditaire sensible à la pression][Neuropathie héréditaire sensible à la pression]]
+
+** Région 17p11.2
+3 LCR avec /RAI1/ (facteur de transcription pour message ARN -ADN -> multiples fonction [neuro, os, métabolisme, rythme circadien])
+NAHR -> délétion/duplication
+[[file:maladies.org::*Syndrome de Smith-Magenis][Syndrome de Smith-Magenis]]
+Surexpression :[[file:maladies.org::*Syndrome de Potocki-Lupski][Syndrome de Potocki-Lupski]]
+** Région 7q11.23
+Délétion : [[file:maladies.org::*Syndrome de Williams-Burren][Syndrome de Williams-Burren]]
+Dup [[file:maladies.org::*Microduplication 7q11.23][Microduplication 7q11.23]]

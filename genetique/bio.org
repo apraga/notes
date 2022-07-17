@@ -1,26 +1,277 @@
 #+title: Biologie
-* Cytogénétique
-** Villosités choriales
-contiennent 2 type de tissus
-- extra-embryonnaire cytotrophoblastes et syncytiotropblaste
-- embryonnaire: mésenchyme
-Examen direct : sur cytotrophoblastes -> rapide mais toujours à confirmer par une culture sur mésenchyme
-*** Limites
-XX: possibilité d’une contamination maternelle
-Cytotrophoblastiques : mosaique, pas assez de mitoses, anomale déséquilibrée
+* Structure et régulation du génome
+** Chromatine
+= ADN + protéines
+Structure = plusieurs nucléosome, où 1 nucléosome = enroulement d’ADN autour de protéines appelées histones
+Peut ḙtre dans un état très compact (hétérochromatine) ou plus espacé (euchromatine)
+[[./img/chromatine.png]]
+- euchromatine = riche en gène, transcription active
+- hétérochromatine = pauvre en gène, pas de transcription
+** 1D Régulation de l’accès à la chromatine
+Donne l’accès à l’ADN pour complexes de protéines
+Nécessaire pour transcription, réplication, recombinaison, réparation de l’ADN
+*** Méthylation ADN
+Répression transcription
+Mécanisme: ajout de groupes méthyl à l’ADN -> modifie l’activié sans changer la séquence
+Au niveau du promoteur, réprime la transcripton
+Utilisé par
+- inactivation X
+- empreinte parentale
+- régulation gènes
+*** Modification post-traductionnelles des histones
+Voir [[*Modification queues histones][Modification queues histones]]
+*** Échanges histones
+** 2D boucles chromatiniennes
+Interaction régions régulatrice, facteur de transcription, promoteur
+[[./img/boucle-chromatine.png]]
+En /cis/:
+- enhancer : "promoteur" du promoteur -> active transcription
+  peut ḙtre en amont, aval, intronique, dans un autre gène...
+  Jusqu’à 1Mb !
+- silencer : cible le silencer -> inhibe transcription
+- insulateur : isole unité régulatrice
+** 3D: TAD
+Domaine au sein duquel s’exerce les régulation
+[[./img/tad.png]]
+** 4D
+Organisation de la chromatine en territoires dans le noyau
+Transcription = en périphérie du territoire
 
-Source [[http://www.eaclf.org/docs/GBPcyto/Arbre-caryoVC.pdf][Recos EACLF]]
+  file:img/noyau-expression.png
+** Techniques d’études
+- DNase-seq: montre régions où chromatine est décondensée
+- CHIP-seq = modification des histones, sites de fixation
+- FISH-D3: interaction chromatiniennes sur un locus spécifique
+** Exemple de pathologies
+Méthylation: [[file:maladies.org::*Syndrome ICF][Syndrome ICF]]
+Modification post-traductionnelle des histones [[file:maladies.org::*Syndrome de Weaver][Syndrome de Weaver]], [[file:maladies.org::*Syndrome de Kabuki][Syndrome de Kabuki]]
+Complexe SWI/SNF (remodèle la chromatine) : [[file:maladies.org::*Syndrome de Coffin-Siris][Syndrome de Coffin-Siris]]
+Médiator (recruté dans l’activation) [[file:maladies.org::*FG syndrome][FG syndrome]]
+Cohésinopathies[[file:maladies.org::*Syndrome de Roberts][Syndrome de Roberts]] , Cornelia ,
+[[file:maladies.org::*Syndrome de Rubinstein-Taybi][Syndrome de Rubinstein-Taybi]]
+* Inactivation de l’X
+** Général
+2 formes inactivation :
+- soumise à empreinte (marsupiaux)
+- non soumise à empreinte (Homme)
+
+Homme : mosaïcisme cellulaire chez la femme par inactivation au hasard de l’X paternel ou maternel
+- précocément embryogénèse
+- une fois le choix fait dans une cellule, toutes les cellules qui en découleront aurant le même profil
+- mécanisme réversible pendant la gamétogenèse
+** Procédure
+Centre d’inactivation de l’X (XIC)
+1. Comptâge du nombre de X (via XIC) et Choix du X inactivé
+2. 2 copies de XIC : suffit pour initiat inaction X
+3. Propagation de l’ARN Xist jusqu’à recouvre tout l’X inactif
+4. Stabilisation et maintien de l’X inactif avec des marques épigénétiques
+** Gène /XIST/
+- Exprimé par X inactif
+- Initiateur principale de l’inactivation
+- Peut inactiver n’importe quel chromosome !
+- son expression est régulé au sein de XIC (régulation)
+
+  Attention: expersionn de /XIST/ rapidement après la fécontation mais l’accumulation de l’ARN Xist n’entraine pas d’inactivation en préimplantatoire !
+
+  Il y aura donc un décalage : mise en place tardive et graduelle (physio non claire : ARN recouvre mal l’Xi, antagoniste))
+
+  Gènes relocalisés dans ce compartiment, sauf ceux qui y échappent :
+[[file:img/inactivation-X.png]]
+** Échappement
+- ~15% des gènes (100)
+  - certains ont un expression compltent
+- 10% ont un profil d’expression variable entre les femmes
+
+  PAR (pseudoatosomal regions) 1 et 2 échappent. Ils permettent l’appariment des chr X et Y pendant la méiose
+  Ils sont sur les extrémités distale (en p pour PAR1 et en q pour PAR2)
+
+  PAR1 contient /SHOX/ : l’haploinsufisance = petite taille, Turner
+** Visualisation
+= Corpuscule de Bar sur la face interne de l’enveloppe nucléaire
+** Biais d’inactivation
+*** Techniques
+- cyto: réplication tardive de l’X inactif -> on peut les marquer (en fin de cycle) et dégrader les chromosome -> apparaît pâle
+- moléculaire : région polymorphique (spécifique inactif) méthylée sur X inactif
+  X méthylé -> enzyme de restriction ne peut pas le couper -> seul l’X actif sera amplifié
+  2 bandes : on fait du semi-quantitif
+  - random = 2 pics pour X (père et mère)
+  - inactivation -> 1 seul pic car l’X paternel sera inactif)
+  - si 80/20: 1 grand pic et 1 petit
+
+** Pathologies associées
+Primaire = variant /XIST/
+- inactivation biaisée depuis le début
+Secondaire = variant gène X ou remaniement chormo, soit physiologique ()
+- le plus courant : initialement inactivation aléatoire -> les cellules ayant choisi l’X inactif ne vont pas réussir à proliféer
+*** Secondaire : variant
+Cf tableau de Migeon, Genetics in medecine 2020 pour les pathologies
+*** Secondaire : chromosomique
+**** Remaniement chromosomique déséquilibré
+X remanié inacif -> Turner si anneau, deletion X, isochrosomose X
+Phénotype normal si duplication sur X et inactive X dupliqué
+[[file:img/inactivation-x-desequilibre.png]]
+
+Transloc X-autosome déséquilibrée : X remanié est le plus souvent inactif
+**** Transloc X-autosome équilibré
+on transmet soit chr normal soit équiilbré
+X remanié est le plus souvent inactif
+
+Mais phénotype normal, parfois FCS récurrente, dysfonctionnemet gonadique, peut forcer expression d’une maladie récessive liée à l’X
+**** Disomie functionelle
+Expression en doses excessives des gènes de l’X
+
+- Transloc autosomoe équilibré :
+  - Si X remanié inactivé : disomie fonctionnelle du segment transloqué qui va échapper à l’inactivation car transloqué sur un autre chro (en mosaïque le plus souvent )
+
+  file:img/transloc-x-autosome-equilibre.png
+- Transloc autosome déséquilibré : disomie fonctionnelle (mḙme raisonnement)
+
+  file:img/transloc-x-autosome-desequilibre.png
+- anneaux : si très petit, on perd Xist donc l’anneau sera actif -> disomie fonctionnelle
+  si extrèment petit, phénotype Turner car on a quaisement tout perdu
+- Duplication X
+  - Garçon : pas le choix, inactivé X
+  - fille : phénotype anormal si inactive X normal -> comme le garçon, souvent en mosaïque
 * Variant
-Transmission
-- AD = perte de fonction x 1, gain de fonction "toxique"
-- AR = perte de fonction x1
-- Dominant négatif : gain de fonction mais impacte l’allèle saine -> pas de protéine
-- Lié à l’X
-  NMD: coupe l’ARN si protéine trop courte (codon stop prématuré) = mécanisme de contrôle
-  NB: il existe 3 synonymes pour un codon stop
+** Substitutions nucléotidiques
+Transitions  = A <-> G ou C <-> T
+Transversion = les autres (base purique  [A, G]<-> base pyrimidique [C, T])
 
-Variant
-- faux-sens = peut tout donner !
-- stop et frameshift = perte de fonction
+Ti/Tv \approx 2 dans génome
+** Nature
+*** Exons
+Substitution :
+- silencieuse
+- faux-sens
+- non-sens (codo stop)
+Délétion : frameshift/inframe
+Insertion : frameshift/inframe
+Délétion/Insertion : frameshift/inframe
+*** Intron
+[[./img/epissage.png]]
 
-NB: attention aux codons qui sont répartis sur 2 exons
+A. Altération du site donneur/récepteur -> probable saut d’exon
+   - prend le site donneur d’épissage : on continue à lire la séquence donc formation d’une protéine "aberrante" -> 2 situations
+     - codon stop
+     - supprimée par le NMD
+   - prend le site accepteur d’épissage
+B. mutation intronique avec site "cryptique" d’épissage -> exon "cryptique"
+C. mutation intronique créant un nouveau site d’épssage au dépend de l’autre -> exon "cryptique"
+D. mutation exonique créant un nouveau site d’épissage -> perte partie d’exon
+D. mutation exonique affectant un exon splicing enhancer ou exonic splicing silecter -> saut d’exon le plus souvent
+
+NB: deletion prenant tout l’exon: regarder la fin de l’exon précédent et du suivant pour voir si on peut être en phase. Si oui, il est possible qu’il n’y ait qu’un saut d’exon (mais cela doit être prouvé par du fonctionnel)
+*** Transcription
+[[./img/transcription.png]]
+** Conséquence
+*** Perte de fonction
+- allèle amorphe /nulle : produit du gène absent ou inactif
+- allèle hypomorphe: produit moins actif ou en quantité plus faible
+Maladies récessives !
+Haplo-insuffisance si perte de fonction hétérozygote
+Ex: α-thalassémie
+*** Gain de fonction
+- allèle hypermorphe: surexpression du gène ou produit hyperactif
+- allèle néomorphe : nouvelle fonction de la protéine
+  Plutôt AD
+  Ex: mutation activatrice voie KRAS
+*** Dominant négatif
+Le produit a une action antagoniste avec le produit de l’allèle sauvage
+Ex: ostéogenèse imparfaite (modifie chaines α du collagène)
+*** Dépend de la localisation
+Régions à forte contrainte = peu tolérant aux variations génétiques
+** Bases de données
+variants classés
+- [[http://www.hgmd.cf.ac.uk/ac/index.php][HGMD : Human Gene Mutation Database]]
+- ClinVar : (https://www.ncbi.nlm.nih.gov/clinvar/)
+- LOVD : Leiden Open Variation Database (https://databases.lovd.nl/shared/genes)
+- OncoKB (https://oncokb.org)
+- COSMIC (http://cancer.sanger.ac.uk/cosmic)
+- UMD : Universal Mutation Database (http://www.umd.be/)
+- MITOMAP (https://www.mitomap.org/MITOMAP)
+** Impact
+- Etude des mutations faux-sens (Conservation, structure) :
+  - [[http://sift.jcvi.org/www/SIFT_enst_submit.html][ SIFT : Sorting Intolerant From Tolerant ]]
+  - [[http://genetics.bwh.harvard.edu/pph2/][ PolyPhenII]] : estime impact sur la protéine
+
+  - [[https://omictools.com/revel-tool][ REVEL : Rare Exome Variant Ensemble Learner ]]
+  - [[https://omictools.com/meta-svm-tool][ MetaSVM : Meta-analytic Support Vector Machine ]]
+- Impact sur l’épissage :
+  - Splice AI
+  - Splicing Pipeline Prediction (SPiP)
+  - [[http://www.fruitfly.org/seq_tools/splice.html][ Splice Site Prediction by Neural Network ]]
+  - [[http://violin.genet.sickkids.on.ca/~ali/splicesitefinder.html][ Splice Site Finder ]]
+  - [[http://genes.mit.edu/burgelab/maxent/Xmaxentscan_scoreseq.html][ MaxEntScan ]]
+  - [[http://www.umd.be/HSF/][ Human Splicing Finder ]]
+  - [[http://rulai.cshl.edu/tools/ESE/][ ESE Finder ]]
+  - [[http://genes.mit.edu/burgelab/rescue-ese/][ RESCUE-ESE ]]
+  - [[https://sourceforge.net/p/spicev2-1/wiki/SPICE%20wiki/][ SPICE ]]
+- Impact sur les éléments régulateurs :
+  - [[http:// http://www.regulomedb.org/][ RegulomeDB ]]
+- Algorithmes multifactoriels
+  - [[http://www.mutationtaster.org/][ MutationTaster ]]
+  - [[http://cadd.gs.washington.edu/][ CADD : Combined Annotation Dependent Depletion ]]
+  - [[https://omictools.com/eigen-tool][ Eigen ]]
+
+BP1 BP5BP6
+* Définition
+Pénétriance = nb d’individus malades avec génotyp à risque / nb individus avec génotype à risque
+
+* Épigénétique
+Modification de la chromatine sans modifier l’ADN
+- inactivation X
+- empreinte parentale
+- développement, différenciation cellulaire
+- cancer
+** Mécanismes
+*** Modification queues histones
+Modification interaction ADN-histone + stabilité
+Actiation (acétylation, déméthylation) ou répression (désacétylation, méthylation)
+
+file:img/histone-modification.png
+*** Méthylation ADN
+*** Long ARN non codants
+** Empreinte parentale
+Empreinte = désactive le gène hérité de ce parent (empreinte maternelle = seule l’allèle paternelle s’exprime)
+
+~ 100 gènes
+Pathologies : Silver-Russell/Beckwith-Wiedeman, Prader-Willy/Angelman, Sd Temple, Sd Kagami, puberté précoce familiale
+*** Mécanisme
+- Délétion segmentaire : si on supprime l’allèle non soumise à empreinte, pas d’expression du gène
+- Disomie uniparentale :
+  - si on a une empreinte maternelle et 2x l’allèle maternelle, pas d’expression du gènes
+  - si on a une empreinte paternelle et 2x l’allèle maternelle, surexpression du gènes
+- Anomalie épigénétique : l’empreinte maternelle se transforme en empreinte paternelle -> cf
+** Exemple: IGF
+  2 ligands: IGF1 et 2
+  2 récepteurs
+  - 1 (pour IGF1 et IGF2) = croissance
+  - 2 = dégradation IGF1
+
+IGF2 = empreinte maternelle
+*** 11p15
+2 domaines
+- télomériques: IGF2, exprimé sur l’allèle paternelle (l’allè maternelle n’a qu’un ARN non codant, H19). Cela se fait via le domaine ICR1
+- centromérique
+  CDKN1C = réduit la croissance, exprimé sur l’allèle maternelle
+  paternelle = ARN non codant  KCNQ1OT1. Régluré par ICR2
+
+Situation normale = équilibre (maternel = restriction croissance, paternel = croissance)
+- excès de croissance (paternel >> maternel) = Beckwidth-Wiedeman, Kagami
+- défaut de croissane (maternel >> paternel)  = TNDM, Silver-Russel, Temple
+** Effet de position
+*** Variégation
+Propagation de l’hétérochromatine sur le gène proche -> silence
+Ex: transloc X-autosome équiibré : le segment de l’X va inactiver le reste du segment autosomique
+*** Gène de fusion
+Leucémie myéloide chromique : t(9;22) (q34;q11.2)
+ABL sur 9q34 et BCR sur 22q11 -> protéine de fusion BCR-ABL avec activité tyrosine kinae augmentée
+***  Gain de séquence activatirce
+Lymphome de Burkitt t(8;14)q(24;32)
+*** Atteinte élément régulateur
+- /SOX9/: haplo-insuffasence : [[file:maladies.org::*Dysplasie campomyélique][Dysplasie campomyélique]], syndrome de pierre-robin, anomalie du développement sexuel
+- Aniridie (mutation /PAX6/): cassure à distance
+
+** Effet de position télomérique
+Silence de gène par propagation hétérochromatine
+ex: syndrome de Pelizaues-Merzbacher : devient asymptomaique

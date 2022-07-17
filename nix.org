@@ -1,0 +1,111 @@
+#+title: Nix
+* Nixos
+Installer nix. Par exemple, sous WSL:
+https://github.com/nix-community/NixOS-WSL
+
+Puis modifier /etc/nixos/configuration.nix.
+Pour ajouter des logiciels au niveau global, il sufit de modifier
+#+begin_src
+  environment.systemPackages
+#+end_src
+et de lancer ensuite
+#+begin_src sh
+nix-os rebuild switch
+#+end_src
+NB: il manque man par défaut !.
+Doc officielle : https://nixos.org/manual/nixos/stable/
+
+** Emacs nativecomp
+Il faut rajouter un overlay. Option 1 avec
+[[https://gist.github.com/mjlbach/179cf58e1b6f5afcb9a99d4aaf54f549][ces instructions]].
+Cela fonctionne mais
+- Je n’ai pas réussi à éviter la compilation malgré l’utilisation de cachix.
+- La version locale n’a pas l’air de marcher non plus.
+
+Résultat:
+#+begin_src sh
+{ lib, pkgs, config, modulesPath, ... }:
+
+with lib;
+let
+  nixos-wsl = import ./nixos-wsl;
+in
+{
+  imports = [
+    "${modulesPath}/profiles/minimal.nix"
+    nixos-wsl.nixosModules.wsl
+    ./cachix.nix
+  ];
+
+  wsl = {
+    enable = true;
+    automountPath = "/mnt";
+    defaultUser = "nixos";
+    startMenuLaunchers = true;
+
+    # Enable integration with Docker Desktop (needs to be installed)
+    # docker.enable = true;
+  };
+
+  # Enable nix flakes
+  nix.package = pkgs.nixFlakes;
+  nix.extraOptions = ''
+    experimental-features = nix-command flakes
+  '';
+
+  nix.trustedUsers = [ "root" "nixos" ];
+  services.emacs.package = pkgs.emacsNativeComp;
+  nixpkgs.overlays = [
+    (import (builtins.fetchTarball {
+       url = https://github.com/nix-community/emacs-overlay/archive/master.tar.gz;
+    }))
+  ];
+
+  # Define here the package you want installed
+  environment.systemPackages = [
+     pkgs.emacsNativeComp
+     pkgs.man
+  ];
+}
+#+end_src
+* Nix
+** Python
+Instructions simples ici : https://nixos.wiki/wiki/Python#Package_and_development_shell_for_a_python_project
+
+Il faut donc setup.py:
+#+begin_src python
+#!/usr/bin/env python
+
+from setuptools import setup, find_packages
+
+setup(name='demo-flask-vuejs-rest',
+      version='1.0',
+      # Modules to import from other scripts:
+      packages=find_packages(),
+      # Executables
+      scripts=["web_interface.py"],
+     )
+#+end_src
+Et 2 fichiers .nix, le premier pour les dépendances
+#+begin_src sh
+{ lib, python3Packages }:
+with python3Packages;
+buildPythonApplication {
+  pname = "demo-flask-vuejs-rest";
+  version = "1.0";
+
+  propagatedBuildInputs = [ flask ];
+
+  src = ./.;
+}
+#+end_src
+et le défaut
+#+begin_src
+{ pkgs ? import <nixpkgs> {} }:
+pkgs.callPackage ./derivation.nix {}
+#+end_src
+Il ne reste plus qu’à le construire
+#+begin_src
+nix-build
+result/bin/lol.py
+#+end_src

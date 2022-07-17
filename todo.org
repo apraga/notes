@@ -1,131 +1,30 @@
 * Banque :banque:
-** WAIT Commander nouvelle CB :banque:
-Demande faite <2022-04-03 Sun>
-Reçue mais pas de chiffre en relief
-Mail envoyé pour savoir si on peut louer avec mais a priori non (carte de débit !)
-Renvoyer un mail car n’ont pas compris la question
 ** TODO Compte et CB société générale :banque:
 *** DONE Souscription
 CLOSED: [2022-04-23 Sat 17:13]
 *** TODO Carte bancaire
 DEADLINE: <2022-05-21 Sat>
 *** DONE Envoyer fiche de salaire
-*** TODO Envoyer relevé
+*** KILL Envoyer relevé
 *** TODO Transfert compte bancaire ?
-* DES :anki:
-:PROPERTIES:
-:CATEGORY: DES
-:END:
-** TODO Structuration du génome et mécanismes mutationnels
-** TODO Oncogénétique: introduction
-** TODO Diagnostic prénatal
-** TODO SEPI et TD
-** TODO Pathologies fréquentes : maladies endocriniennes et métabolisme
-** TODO Pathologies fréquentes : anomalies de la croissance
-** TODO Pathologies fréquentes : hématologie
-** TODO Pathologies fréquentes : maladies du tissu conjonctif
-** TODO Oncogénétique
-** TODO Pathologies fréquentes : dermatogénétique
-** DONE Introduction à la dysmorphologie
-** DONE Grandes technologies et bioinformatique
-** DONE Aspects réglementaires et éthiques
-** DONE Mucoviscidose
-** DONE développement
-** DONE Pendred
-** DONE Syndrome de Sotos
-** DONE Syndrome d'Usher
-** DONE T21
-** DONE Prader-Willi
-** DONE AMS
-** DONE Duchenne
-** DONE Surdité
-** DONE Myopathies
-** DONE Steinher
-* Syndromes génétiques avec org-mode
-** DONE Pendred
-CLOSED: [2022-04-18 Mon 21:47]
-** Beckwith-Wideman
-** T21
-* Internat
-** TODO Demande interchu Grenoble novembre 2022
-*** DONE Mail PrThevenon
-*** TODO Relancer Pr Thevenon
 * Electricité :maison:
 ** DONE Passer en heures creuses
 ** TODO Voir avec proprio pour changer disjoncteur
-** TODO Changer ampoule
-* Inbox
-** TODO Mariage Joris :joris:
-*** TODO cadeau
-** TODO Mariage Florian :florian:
-*** TODO Cadeau
-** TODO Copier photos famille depuis drive yvain sur drive famille
-SCHEDULED: <2022-05-21 Sat>
-** TODO Payer taxes ordures ménagères
-DEADLINE: <2022-06-06 Mon>
-* Japonais
-** Miura :miura:
-*** TODO Leçon 1
-**** DONE Lire
-**** DONE Anki
-*** TODO Leçon 2
-**** DONE Lire
-**** TODO Anki
-***** TODO Grammaire
-*** TODO Leçon 3
-**** DONE Lire
-**** TODO Anki
-***** TODO Grammaire
-*** TODO Leçon 4
-**** DONE Lire
-**** TODO Anki
-***** TODO Grammaire
-*** TODO Leçon 5
-**** DONE Lire
-**** TODO Anki
-***** TODO Grammaire
-*** TODO Leçon 6
-**** DONE Lire
-**** TODO Anki
-***** TODO Grammaire
-*** TODO Leçon 7
-**** TODO Lire
-**** TODO Anki
-***** TODO Grammaire
-*** Lire
-** Leçon Aya
-:PROPERTIES:
-:CATEGORY: aya
-:END:
-*** TODO Lire dialogue fin leçon 10
-SCHEDULED: <2022-04-03 Sun>
-*** DONE Notes <2022-04-17 Sun>
-SCHEDULED: <2022-04-17 Sun>
-*** DONE Notes <2022-06-12 Sun>
-DEADLINE: <2022-06-12 Sun>
-* Ledger
-:PROPERTIES:
-:CATEGORY: compta
-:END:
-** TODO janvier 2022
-** TODO février 2022
-** TODO Mars 2022
-SCHEDULED: <2022-06-12 Sun>
-** TODO Avril 2022
-** TODO Mail 2022
-* Moto :moto:
+* FreeBSD :freebsd:
+** DONE taskwarrior tui 0.23.4
+SCHEDULED: <2022-05-20 Fri>
+** TODO ormolu 0.5.0.0
+SCHEDULED: <2022-05-20 Fri>
+** TODO kitty ne compile plus
+SCHEDULED: <2022-07-17 Sun>
 * Génétique
-** Biologie cellulaire Dunod
-*** TODO chapitres déjà fait :anki:
-*** TODO lire
-** Biologie chimie Dunod
-*** TODO lire
-*** TODO Ficher
+** [[file:books.org::*Biologie chimie Dunod][Biologie chimie Dunod]]
+** [[file:books.org::*Biologie cellulaire Dunod][Biologie cellulaire Dunod]]
 ** Notes génétique :anki:
 :PROPERTIES:
 :CATEGORY: genetique
 :END:
-** TODO Collège
+** [[file:books.org::*Collège][Collège]]
 ** TODO Syndromes
 *** TODO Noonan
 *** TODO Charcot-Marie-Toorh genetique
@@ -158,25 +57,22 @@ SCHEDULED: <2022-06-12 Sun>
 *** TODO Alport
 *** TODO hémophilie
 ** TODO DES
-*** TODO Presentiel session 1 [2/9]
+*** TODO Presentiel session 1 [5/9]
 **** DONE Introduction à la dysmorphologie
-**** TODO Structuration du génome et mécanismes mutationnels
-**** TODO Oncogénétique: introduction
+**** DONE Structuration du génome et mécanismes mutationnels
+**** DONE Oncogénétique: introduction
 **** TODO Diagnostic prénatal
 **** DONE Grandes technologies et bioinformatique
-**** TODO Aspects réglementaires et éthiques
+**** DONE Aspects réglementaires et éthiques
 **** TODO Mucoviscidose
 **** TODO Bases sur le conseil génétique
 **** TODO SEPI et TD
-*** TODO E-learning session 1 [1/6]
-**** TODO maladies endocriniennes et métabolisme
-**** TODO anomalies de la croissance
-- [X] obésité syndromique
-- [ ] avance staturale
-- [ ] retard de croissance
-**** DONE hématologie
+*** TODO E-learning session 1 [3/6]
+**** DONE maladies endocriniennes et métabolisme
+**** DONE anomalies de la croissance
+**** TODO hématologie
 **** TODO maladies du tissu conjonctif
-**** TODO Oncogénétique
+**** DONE Oncogénétique
 **** TODO dermatogénétique
 *** TODO Presentiel session 2 [0/5]
 **** TODO Déficience intellectuelle
@@ -184,8 +80,8 @@ SCHEDULED: <2022-06-12 Sun>
 **** TODO Pathologies fréquentes en génétique clinique
 **** TODO Génome humain : normal et pathologique
 **** TODO Maladies métaboliques
-*** TODO E-learning session 2 [0/5]
-**** TODO Syndromes microdélétionnels
+*** TODO E-learning session 2 [1/5]
+**** DONE Syndromes microdélétionnels
 **** TODO Dysgonosomies
 **** TODO Cancer du colon: Maladie de Lynch et CMMRD
 **** TODO Déficience intellectuelle
@@ -287,30 +183,56 @@ SCHEDULED: <2022-06-12 Sun>
 **** TODO Cowden, Gorlin (P Goizet)
 **** TODO Syndrome de Kleefstra (L Perrin)
 **** TODO Téloméropathies (T Leblanc)
-*
 *** DONE QROC 3
 *DEADLINE: <2022-06-18 Sat>
 *** DONE QROC S2
 *CLOSED: [2022-04-16 Sat 23:42] DEADLINE: <2022-04-16 Sat 23:59>
 *** DONE Mémoire
-* Projet
+* Inbox
+** TODO Mariage Joris :joris:
+*** TODO cadeau
+** TODO Mariage Florian :florian:
+*** TODO Cadeau
+** TODO Copier photos famille depuis drive yvain sur drive famille
+SCHEDULED: <2022-05-21 Sat>
+** WAIT Réclamer pour majoration pour taxe foncière :maison:
+Mail envoyé<2022-07-16 Sat>
+* Japonais
+** Miura :miura:
+*** TODO Leçon 1
+**** DONE Lire
+**** DONE Anki
+*** TODO Leçon 2
+**** DONE Lire
+**** TODO Anki
+***** TODO Grammaire
+*** TODO Leçon 3
+**** DONE Lire
+**** TODO Anki
+***** TODO Grammaire
+*** TODO Leçon 4
+**** DONE Lire
+**** TODO Anki
+***** TODO Grammaire
+*** TODO Leçon 5
+**** DONE Lire
+**** TODO Anki
+***** TODO Grammaire
+*** TODO Leçon 6
+**** DONE Lire
+**** TODO Anki
+***** TODO Grammaire
+*** TODO Leçon 7
+**** TODO Lire
+**** TODO Anki
+***** TODO Grammaire
+*** Lire
+** Leçon Aya
 :PROPERTIES:
-:CATEGORY: projets
+:CATEGORY: aya
 :END:
-** DONE Liste des videos tricks
-DEADLINE: <2022-04-27 Wed>
-** Assistant
-:PROPERTIES:
-:CATEGORY: assistant
-:END:
-*** DONE Regarder ce qu'Yvain a fait
-
-* FreeBSD :freebsd:
-** DONE taskwarrior tui 0.23.4
-SCHEDULED: <2022-05-20 Fri>
-** TODO ormolu 0.5.0.0
-SCHEDULED: <2022-05-20 Fri>
-**
+*** TODO Lire dialogue fin leçon 10
+SCHEDULED: <2022-04-03 Sun>
 * Langues
 ** TODO Allemand
 SCHEDULED: <2022-05-07 Sat +1d>
@@ -328,4 +250,42 @@ SCHEDULED: <2022-05-07 Sat +1d>
 - State "DONE"       from "TODO"       [2022-05-04 Wed 23:09]
 - State "DONE"       from "TODO"       [2022-05-03 Tue 23:09]
 - State "DONE"       from "TODO"       [2022-05-02 Mon 23:09]
-
+* Internat
+** Interchu
+*** TODO Mail Dijon pour expliquer que c’est décalé
+** Thèse
+*** TODO Voir avec Julien Thevenon pour sujet de thèse
+*** TODO Voir avec Jean-Paul pour sujet de thèse
+* Droit au remords
+** WAIT Envoi scolarité
+** TODO Négocier avec Xavier Bertrand pour stage de clinique
+DEADLINE: <2022-07-17 Sun>
+* Ledger
+:PROPERTIES:
+:CATEGORY: compta
+:END:
+** TODO janvier 2022
+** TODO février 2022
+** TODO Mars 2022
+SCHEDULED: <2022-06-12 Sun>
+** TODO Avril 2022
+** TODO Mail 2022
+* Moto :moto:
+* Projet
+:PROPERTIES:
+:CATEGORY: projets
+:END:
+** DONE Liste des videos tricks
+DEADLINE: <2022-04-27 Wed>
+** Assistant
+:PROPERTIES:
+:CATEGORY: assistant
+:END:
+*** DONE Regarder ce qu'Yvain a fait
+** Centogène
+***  Extraction de données
+Solution 1 : pdftotext puis parser, par exemple avec arpeggio.
+Liste de parser : https://tomassetti.me/parsing-in-python/
+Solution 2 : regarder la structure du PDF, par exemple avec i7-rups https://tomassetti.me/parsing-in-python/
+* Machine learning
+** [[file:books.org::*The elements of statistical learning (217)][The elements of statistical learning (217)]]
