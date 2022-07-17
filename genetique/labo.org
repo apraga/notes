@@ -100,7 +100,37 @@ Variant
 - stop et frameshift = perte de fonction
 
 NB: attention aux codons qui sont répartis sur 2 exons
+* Anomalies génétiques à l’échelle du gène (Collège)
+** Types :
+*** substitution nucléotidique
+Transitions [fn:1] 2x plus fréquentes que les transversions (l’inverse des transversion). Contre-intuitif car il y a plus de possibilités de transversion.
+  Probablement du à des incorporations erronnées des ADN polymérases et correction plus efficace si transversion
 
+  CpG -> TpG ou CpA surrerprésentées
+*** Petites délétions/insertion
+- Quelques nucléotides.
+- Fréquentes
+- frameshift (non multiple de 3) : codon sto prématuré -> protéine tronquée, la plupart du temps non foncitonnelle
+- sur de courtes répétitions en tandem, probablement par slippages de l’ADN polymérase
+*** Grandes délétion/duplications/inversion
+Du à
+- Répétitions en tandemde 1 à 4 nuclétodie = hotspot de dérapage réplication-> courtes indel
+- Low Copy Repeats = dispersées ou dupliquées en tandem
+  - sur le même bras chromosomique et très similaire -> mésappariement possible par NAHR, échange cromatide soeurs ou intrachromatidienne. Voir [[*NAHR (recombinaison homologue non alléliques)][NAHR (recombinaison homologue non alléliques)]]
+*** Expansion de triplet
+- Neurodégénératif surtout : Xfra, Steinert, Huntington
+- Avec les générations : de plus en plus précoce et clinique augment en gravité (=anticipation)
+-  si > 50 répétition, probablement structure anormales (épinges à chevexu, triple hélice) -> perturbe réplication, favorie dérapage
+*** Rares
+**** Séquences répétées dispersées :
+- courtes (300bp)= Alu (apparetenet SINE = short interspede elements)
+- longue 3-7bk (LINE = long interspede elements)
+Vont être introductie après la rétrotrnascription d’ARN
+Rares mais décrits l’exon/intron
+**** Conversion géniques
+Régions homoligues proches : transert (unilatéral !) des changements nucléotidiques dans gène receveur
+Ex: /CYP21A2/ recoit du pseudogènes /CYP21AP/ des variants perte de fonction -> 25% des cas de déficiton en 21-hydroxylase (hyperplasie congénitale des surrénale)
+NB: les 75% % croissing-over inégaux, échanges entre chromatides soeurs
 * Nouveaux syndromes microdéletionnels
 - souvent hérité parent asympto
 - facteur suscepbtibilité/prédisposition aux troubles neurodev
@@ -298,7 +328,7 @@ Définition d’abord génétiques
 Si del, sera hétérozygote
 Si dup, sera hétérozygote
 
-** Région 17pp12
+** Région 17p12
 Contient /PMP22/ (code myéline périph)
 Encadré par 2 LCR -> délétion/insertion par NAHR
 
@@ -314,3 +344,7 @@ Surexpression :[[file:maladies.org::*Syndrome de Potocki-Lupski][Syndrome de Pot
 ** Région 7q11.23
 Délétion : [[file:maladies.org::*Syndrome de Williams-Burren][Syndrome de Williams-Burren]]
 Dup [[file:maladies.org::*Microduplication 7q11.23][Microduplication 7q11.23]]
+
+* Footnotes
+
+[fn:1] C<->T ou A <-> G

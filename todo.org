@@ -24,7 +24,7 @@ SCHEDULED: <2022-07-17 Sun>
 :PROPERTIES:
 :CATEGORY: genetique
 :END:
-** [[file:books.org::*Collège][Collège]]
+** TODO [[file:books.org::*Collège][Collège]]
 ** TODO Syndromes
 *** TODO Noonan
 *** TODO Charcot-Marie-Toorh genetique
@@ -282,10 +282,15 @@ DEADLINE: <2022-04-27 Wed>
 :CATEGORY: assistant
 :END:
 *** DONE Regarder ce qu'Yvain a fait
-** Centogène
-***  Extraction de données
-Solution 1 : pdftotext puis parser, par exemple avec arpeggio.
+** CentoX
+*** Extraction de données
+**** Texte
+Trop compliqué de travailles sur la structure du pdf
+- pdftotext : bon résultats sur page 1. Sur les ségrégations, il n’y a pas de retour à la ligne avant l’indication
+- pdfminer donne des résultats légèrement supérieurs, beaucoup d’espaces sur les ségrégations
+- pypdf2 : trop de retours à la lignes intempestifs dans le texte
+La structure du  tableau est perdue dans tous les cas
+**** Parser
 Liste de parser : https://tomassetti.me/parsing-in-python/
-Solution 2 : regarder la structure du PDF, par exemple avec i7-rups https://tomassetti.me/parsing-in-python/
 * Machine learning
 ** [[file:books.org::*The elements of statistical learning (217)][The elements of statistical learning (217)]]

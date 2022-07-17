@@ -1,76 +1,59 @@
 #+TITLE: Maladies
-#+OPTIONS: toc:nil
+#+OPTIONS: toc:1
 
 * TODO 17q12 del
-* Microdélétion 22q11.2
-** Clinique
-Principal
-- Cardiopathies 40-75%: surtout conotroncale (CIV, Fallot, atrésie pulmonaire)
-- palais 70% : FP 11%, incompétence vélo-pharyngée 30% -> nasonnement
-- hypocalcémie néonatale 50%
-- difficultés d’apprentissage/retard psychomot 95% : retard de langage surtout 90%, DI 45%
-- dysmorphie
-
-Dysmorphie (peu évident naissance)
-- visage allongé, effacement relief des pomettes
-- racine du nez large avec un nez/gros/bulbeux
-- FP étroite, en haut et dehors
-- oreilles petits, rondes avec *lobules hypoplasiques*
-- bouche étroite
-
- #+caption: Habel et al 2014
- [[file:img/22q11.png]]
-*** Autre
-- Trouble digestif (dysphagie, reflux)
-- aplasie/hypoplasie thymus /praathyriodie -> déficit immunitaire
-  - mmalades autommiunes
-- Hypotonie enfance
-- scoliose 45%, polydactylie, varus équin
-- TSA, risque de schizophrénique
-- malformation rénale 35%
-- difficulté d’alimentation
-- anomalies dentaires 40% (carie, émail)
-- Ophtalmo
-- déficit auditif
-- génito-urinaire (agénésie rénale)
-- déficit hormone croissance
-*** Expliqué par anomalie appareil pharyngés (embyro)
-[[file:img/22q11-physio.png]]
-** Y penser en anténatal
-absence de thymus +
--  Malfo cardiaque conotroncale
-- ou  FP ou FLP
-Ou agénésie rénale unilatérale
-** Diagnostic
-- CGH ou
-- FISH avec sonde spécéfique (TBX1 dans 90%)
-** Diagnostic différentiel
-- séquence de Pierre-rRobin
-- syndrome alagille
-- CHARGE
-- délétion 11p et 15q24 (mais vu en CGH)
-
-** Génétique
-4 LCRs : favorise les NAHR.
-- reste = délétion proximale LCR A et B ou A et C
-- 85% patients deletion 3Mb htz entre LCR A et D (90% des gènes ont une expression cérébrale)
-- rarement distale : pénétrance moins importante
-
-Hérité 10% en AD -> étudier les parents
-
-Soit sondes FISH ou sondes MLPA
-! ces dernières permettent de diagnostiquer les délétions distales B-D !
-[[file:img/22q11-lcr.png]]
-* Microduplication 22q11.2
-** Clinique
-- Plus modéré, très variable
-- Trouble des apprentissage 97%
-- Retard de développement psychomoteur 67%
-- Retard de croissance 63%
-- +/- hypotonie 43%, malfo (cardiaque, FLP)
 * TODO Achondroplasie
 
-* TODO Charcot-Marie-Tooth
+* Charcot-Marie Tooth 1A :PMP22:
+AD = la plus fréquente des CMT
+Atrophie progressive des muscles distaux ->_trouble de la marche et équilibre
+pieds creux
+évolution lente (< 5% auront besoin d’un fauteuil roulant)
+98% ont une dup de 1.4MB dans 17p11.2
+De novo 1/3
+Surexpression du gènes -> démyélinisation
+
+* Deletion 1qter
+** Clinique
+- Microcéphalie
+- hypotrophie
+- Dysmorphie faciale
+
+#+caption: van bon 2008
+[[file:img/1qter.png]]
+
+- Triogonocéphaile
+- DI constante et sévère
+- épilépsie 68%
+- atrophie corticale, agénésie corps calleux
+- anomalies vertébrales, génito-urinaires
+- CIV
+** Génétique
+Génotype-phénotype
+- AKT3 = microcéphalie
+- ZNF238 = agénésie corps calleaux
+- C1ORF199 = épi
+* Dysplasie campomyélique :SOX9:
+AD
+** Clinique
+- incurvation os long
+- dysplasie squelettique : scoliose, doigts court, anomalies du bassin et thorax, 11 paires de côtes
+- dysmorphie faciale, fente palatine
+- maformations cardiaques, rénales, cérébrales
+- réversion sexuelle
+Inc
+* Délétion 2qter
+** Clinique
+- Dysmorphie
+#+caption: Leroy et al 2013
+[[file:img/2qter-dysmorpho.png]]
+- DI
+- Obésité
+- Hypotonie
+- Brachymétacarpie
+- Brachdactylie
+#+caption: 4e surtout et 2,3,4 en P9 (Leroy et al 2013)
+ [[file:img/2qter-bones.png]]
 * FG syndrome :MED12:
 Lié à l’X
 
@@ -185,6 +168,110 @@ https://onlinelibrary.wiley.com/doi/full/10.1111/ddg.14638
 - PNDS
 - Genereviews
 - Santa-Maria FD, Mariath LM, Poziomczyk CS, et al. Dental anomalies in 14 patients with IP: clinical and radiological analysis and review. Clin Oral Investig. 2017;21(5):1845-1852. doi:10.1007/s00784-016-1977-y
+* Microduplication 22q11.2
+** Clinique
+- Plus modéré, très variable
+- Trouble des apprentissage 97%
+- Retard de développement psychomoteur 67%
+- Retard de croissance 63%
+- +/- hypotonie 43%, malfo (cardiaque, FLP)
+* Microduplication 7q11.23
+** Clinique
+Tout n’est pas en miroire par rapport à [[*Syndrome de Williams-Burren][Syndrome de Williams-Burren]]
+- Retard de langage +/- DI
+- Traits autistique
+- Fréquemment héritée
+- souvent troubles du comportement, attentio, agressivité
+*** Dysmorphie
+[[file:img/microdup-7q11.png]]
+ - Grand front
+ - sourcils droits
+ - lèvres upérieures fines
+ - Philtrum court
+ - nez large et long
+ - Rarement dilatation aortique
+* Microdélétion 22q11.2
+** Clinique
+Principal
+- Cardiopathies 40-75%: surtout conotroncale (CIV, Fallot, atrésie pulmonaire)
+- palais 70% : FP 11%, incompétence vélo-pharyngée 30% -> nasonnement
+- hypocalcémie néonatale 50%
+- difficultés d’apprentissage/retard psychomot 95% : retard de langage surtout 90%, DI 45%
+- dysmorphie
+
+Dysmorphie (peu évident naissance)
+- visage allongé, effacement relief des pomettes
+- racine du nez large avec un nez/gros/bulbeux
+- FP étroite, en haut et dehors
+- oreilles petits, rondes avec *lobules hypoplasiques*
+- bouche étroite
+
+ #+caption: Habel et al 2014
+ [[file:img/22q11.png]]
+*** Autre
+- Trouble digestif (dysphagie, reflux)
+- aplasie/hypoplasie thymus /praathyriodie -> déficit immunitaire
+  - mmalades autommiunes
+- Hypotonie enfance
+- scoliose 45%, polydactylie, varus équin
+- TSA, risque de schizophrénique
+- malformation rénale 35%
+- difficulté d’alimentation
+- anomalies dentaires 40% (carie, émail)
+- Ophtalmo
+- déficit auditif
+- génito-urinaire (agénésie rénale)
+- déficit hormone croissance
+*** Expliqué par anomalie appareil pharyngés (embyro)
+[[file:img/22q11-physio.png]]
+** Y penser en anténatal
+absence de thymus +
+-  Malfo cardiaque conotroncale
+- ou  FP ou FLP
+Ou agénésie rénale unilatérale
+** Diagnostic
+- CGH ou
+- FISH avec sonde spécéfique (TBX1 dans 90%)
+** Diagnostic différentiel
+- séquence de Pierre-rRobin
+- syndrome alagille
+- CHARGE
+- délétion 11p et 15q24 (mais vu en CGH)
+
+** Génétique
+4 LCRs : favorise les NAHR.
+- reste = délétion proximale LCR A et B ou A et C
+- 85% patients deletion 3Mb htz entre LCR A et D (90% des gènes ont une expression cérébrale)
+- rarement distale : pénétrance moins importante
+
+Hérité 10% en AD -> étudier les parents
+
+Soit sondes FISH ou sondes MLPA
+! ces dernières permettent de diagnostiquer les délétions distales B-D !
+[[file:img/22q11-lcr.png]]
+* Monosomie 1p36
+- Remaniement subtélomérique le plus fréquent
+** Clinique
+Dysmorphie :
+- *enophtalmie + sourcils horizontaux*
+- microcéphalie 60%
+- nez plat 70%
+- fontanelle antérieure large 85%
+- oreilles dysplasiques
+
+  #+caption: Gajecka et al 2007
+ [[file:img/monosomy1p36.png]]
+
+- DI constante
+- Hypotonie 87%
+- Dysphasie 72%
+- difficulté alimentaires
+- +/- épilepsie, cardiopathie
+- surdité 82%
+** Génétique
+- Type et taille variable (1.5 à 10Mb)
+- hypothèse = effet de position
+- Pas de corélation génotype-phénotype
 * TODO Monosomie X
 * Mucopolysaccharidose type VI
 Anomalies épiphysaires et métaphysaire humérales supérieures
@@ -193,6 +280,19 @@ Remaniement épi/métaphyses des hanches
 Surveillance cardiaque, opthalmo, ORL, respo, orthopédituqe
 TTT: enzymothérapie substitutive
 * TODO Myotonie de Steinert
+
+* Neuropathie héréditaire sensible à la pression :PMP22:
+Certains asympto
+Perte soudaine de sensibilité non douloureuse, faiblesse musculaire d’un territoire d’un seul nerf
+Pieds tombants, faiblesse main/bras
+Déclenché trauma minime/compression prolongée de la région
+50% récupé en quelques jours/mois mais peut être partielle
+Rechutes fréquentes
+Rarement paralysie définitive
+
+80% délétion 1.4Mb par NAHR  dans 17p11.2
+20% mutation ponctuelle, courte délétéion, autre
+FISH possible
 
 * Obésité syndromiques
 *Obésité syndromique = trouble de neurodeveloppement*
@@ -350,6 +450,57 @@ AR
 - Faciès : hypertélorisme, élargement racine du nez, narines antéverséees
 ** Génétique
 20 gènes connus
+* Syndrome de Beckwith-Wiedemann
+** Clinique
+- Macrosomie
+- *Macroglossie*
+- ANomalie paroi abdo : **omphalocèle**
+- Organomégalie surtout intra-abdo
+- Oreille : encoche sur lobules, ptetis puits
+- Angiome plan face
+- **Hémihypertrophie**
+- Hypoglycémie néonatale
+- **hyperinsulinisme**
+- **nephroplastome** (**multifocal/bilatéral**)
+- +/- fente, CNS, rénale, cardiaque malfo
+
+[[./img/beckwith-oreille.png]]
+
+Risque = augmentation tumeurs embryonnaire année de vie
+** Score
+4 points (en gras) = diag clinique
+2 points -> indication analyse moléculaire
+
+Attention: signes parfois isolé -> risque tumoral
+** Mécanisme
+Voir [[file:bio.org::*11p15][11p15]] pour la situation normale.
+En résumé : mère = restriction via CDKN1C, père = croissance via IGF1
+
+- 20% : disomie uniparentale paternel
+- 8% mutation perte de fonction CDKN1C sur allèle maternelle
+- 2/3 = perte de méthylation sur ICR allèle maternelle -> perte expression CDKN1C
+- 8% = gain de méthylation sur ICR allèle maternelle sur ICR-> IGF2
+
+#+attr_html: :width 50%
+[[./img/beckwith-moleculaire.png]]
+** Risque tumeur
+- Haut risque : gain méthylation ICR1, disomie uniparentale paternell = risque néphroblastome majeur
+- Intermediaire =
+  - score clinique mais sans anomalie moléculaire : néphroblastome
+  - mutation CDNK1C -> glande surrénale
+** Consensus récent
+** Surveillance
+  - écho abdo tous les 2 mois si haut risque / intermédaire
+  - sinon, pas de screening
+** PEC
+Endoc: pour hyperinsulinismeg (diazoxyd...)
+** DD
+Overlap clinique :[[*Syndrome de Simpson-Golabi-Behmel][Syndrome de Simpson-Golabi-Behmel]]
+[[*Syndrome de Sotos][Syndrome de Sotos]]
+Et bio !
+
+#+attr_html: :width 50%
+[[./img/beckwith-differentiel.png]]
 * Syndrome de Borjeson-Forssman-Lehman
 - retard mental sévère +/- épilepsie
 - hypotonie
@@ -380,7 +531,7 @@ QD
 - neutropénie intermittente
 
   Effet fondateur (finlande...)
-* TODO Syndrome de Cornelia de Lange
+* Syndrome de Cornelia de Lange
 AD: /NIPBL/, /SMC3/
 Lié à l’X : /SMC1/, /HDAC8/
 ** Clinique
@@ -406,6 +557,16 @@ Modification post-traductionnelle des histones
 - Syndrome malformatif
 - Dysmorphie
 [[./img/syndrome-kabuki.png]]
+* Syndrome de Kagami-Ogata
+** Clinique
+- Thorax en forme de hache (insuf respi)
+- Hydramnios et prématurité, hypertrophie placentaire
+- Anomalies de la paroi abodominable
+- Anomalise cranio-faciales
+- Difficulté alimentaires
+- Retard mental
+
+[[file:img/syndrome-kagami-ogata.png]]
 * Syndrome de Klippel-Trenaunay
 Souvent membre inférieur avec
 - angiome plan
@@ -422,6 +583,46 @@ Souvent membre inférieur avec
 - Traitement : sympto
 - Transmission : AR
 
+* Syndrome de Perlman :DIS3L2:
+- Macrosomie néonatale
+- Hypoglycémie/hyperinsulisme
+- Néphromégalie avec insufisance rénale
+- Tumeurs de Wilms
+- Dysmorphie
+* Syndrome de Phelan McDermid
+** Clinique
+- DI
+- retard/absence langage
+- hypotonie
+- trouble comportement (TSA)
+- coissance normale / accélérée
+- grandes mains
+- ongles dysplasique
+
+  #+caption: Petits ongles et malformés (A), Phelan et al 2011
+ [[file:img/syndrome-phelan-mcdermid-nails.png]]
+
+Dysmorphie discrète:
+- dolicocéphalie
+- ptosis
+- grandes oreilles
+- menton pointu
+** Génétique
+/SHANK3/ toujours délété , soit mutation ponctuelle, soit remaniement
+* Syndrome de Potocki-Lupski :RAI:
+** Clinique
+- retard global develop
+- DI
+- hypotonie
+- retard staturo pnodéral
+- TSA
+- trouble comportement
+- possible malfo cardiaque
+** Génétique
+Duplication 17p11.2
+- récurrente 70% 3.7Mb
+- variable dans le reste
+RAI1 surexprimée, ainsi que SREBPF1
 * Syndrome de Prader-Willi
 15q11.1-15q11.2 del
 ** Clinique
@@ -466,6 +667,17 @@ endoc pour déficit en GH, hypogonatidme
 psy
 [[http:guide-prader-willi.fr]]
 
+* Syndrome de Rett :MECP2:
+Dominante liée à l’X
+
+Perte de fonction
+Méthylation
+** Clinique
+Phases :
+1. (6-18mois) stagnation = hypotonie, diminution PC
+2. 1-3 ans régression = perte de l’usage des mains, stéréotypies, retrait sociale, pas de langage, motricité maladroite
+3. 2-10 ans : stabilisation= DI, dysfonctionnement respiratoire, épilepsie
+4. détérioration motrice = scoliose, perte de la marche
 * Syndrome de Roberts :ESCO2:
 AR
 
@@ -528,17 +740,6 @@ Attention : risque d’obésité précoce avec renutrition ...
 ** DD
 [[Syndrome de Temple]]
 Bien regarder le périmètre crânien
-* Syndrome de Rett :MECP2:
-Dominante liée à l’X
-
-Perte de fonction
-Méthylation
-** Clinique
-Phases :
-1. (6-18mois) stagnation = hypotonie, diminution PC
-2. 1-3 ans régression = perte de l’usage des mains, stéréotypies, retrait sociale, pas de langage, motricité maladroite
-3. 2-10 ans : stabilisation= DI, dysfonctionnement respiratoire, épilepsie
-4. détérioration motrice = scoliose, perte de la marche
 * Syndrome de Simpson-Golabi-Behmel
 Garçons !
 ** Clinique
@@ -583,18 +784,32 @@ Garçons !
 - Épilepsie (25%)
 - Tumeurs \approx 3% (tératome, neuroblastome)
   [[file:img/syndrome-sotos.png]]
-* Syndrome de Perlman :DIS3L2:
-- Macrosomie néonatale
-- Hypoglycémie/hyperinsulisme
-- Néphromégalie avec insufisance rénale
-- Tumeurs de Wilms
-- Dysmorphie
 * Syndrome de Sturge-Weber-Krabbe
 Association
 - angiome plan cutanée zone innervée par le trijumeau
 - glaucome congénital
 - angiome méningé de la pie-mère +/- épilepsie, retard psychomot
 Recherche de glaucome et IRM cérébrale si angiome plan
+* Syndrome de Temple
+** Clinique
+Celle du Silver-Russel
+- Retard de croissance : RCIE et post natal
+- Asymétrie corporelle
+- Macrocéphalie relative
+- Grand fromt bombant
+- Difficulté alimentaires
+Mais aussi suspicion de Prader-Willi
+- Puberté précoce
+- Hypotonie néonatale précoce
+- Petites mains, petits pieds
+- Obésité > 2 ans
+*** 14q32
+Zone soumis à empreinte
+- disomie materne chr14
+- del paternelle
+- épigénitique : perte méthylation
+
+  DD moléculaire du Silver-Russel
 * Syndrome de Weaver :EZH2:
 AD
 
@@ -613,57 +828,6 @@ others = structural, infectious, metabolic and immunologic defects and genetic a
  “United Kingdom Infantile Spasms Study” (UKISS) [14],  hypoxic-ischemic encephalopathy was reported in 10%, followed by chromosomal abnormalities, complex malformation syndromes and perinatal stroke (8%), tuberous sclerosis (7%), and periventricular leukomalacia or hemorrhage (respectively, in 5%)
 Source https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7655587/
 
-* Syndrome de Beckwith-Wiedemann
-** Clinique
-- Macrosomie
-- *Macroglossie*
-- ANomalie paroi abdo : **omphalocèle**
-- Organomégalie surtout intra-abdo
-- Oreille : encoche sur lobules, ptetis puits
-- Angiome plan face
-- **Hémihypertrophie**
-- Hypoglycémie néonatale
-- **hyperinsulinisme**
-- **nephroplastome** (**multifocal/bilatéral**)
-- +/- fente, CNS, rénale, cardiaque malfo
-
-[[./img/beckwith-oreille.png]]
-
-Risque = augmentation tumeurs embryonnaire année de vie
-** Score
-4 points (en gras) = diag clinique
-2 points -> indication analyse moléculaire
-
-Attention: signes parfois isolé -> risque tumoral
-** Mécanisme
-Voir [[file:bio.org::*11p15][11p15]] pour la situation normale.
-En résumé : mère = restriction via CDKN1C, père = croissance via IGF1
-
-- 20% : disomie uniparentale paternel
-- 8% mutation perte de fonction CDKN1C sur allèle maternelle
-- 2/3 = perte de méthylation sur ICR allèle maternelle -> perte expression CDKN1C
-- 8% = gain de méthylation sur ICR allèle maternelle sur ICR-> IGF2
-
-#+attr_html: :width 50%
-[[./img/beckwith-moleculaire.png]]
-** Risque tumeur
-- Haut risque : gain méthylation ICR1, disomie uniparentale paternell = risque néphroblastome majeur
-- Intermediaire =
-  - score clinique mais sans anomalie moléculaire : néphroblastome
-  - mutation CDNK1C -> glande surrénale
-** Consensus récent
-** Surveillance
-  - écho abdo tous les 2 mois si haut risque / intermédaire
-  - sinon, pas de screening
-** PEC
-Endoc: pour hyperinsulinismeg (diazoxyd...)
-** DD
-Overlap clinique :[[*Syndrome de Simpson-Golabi-Behmel][Syndrome de Simpson-Golabi-Behmel]]
-[[*Syndrome de Sotos][Syndrome de Sotos]]
-Et bio !
-
-#+attr_html: :width 50%
-[[./img/beckwith-differentiel.png]]
 * TODO Syndrome de Wiedemann-Steiner
 * Syndrome de Williams-Burren
 7q11.23 del
@@ -694,21 +858,47 @@ Région encadrée par des LCR -> favorise NAHR
 
 Chez les parents : 25-30% inversion de la région (1-5% en pop générale) ?
 Quasimente que de novo
-* Microduplication 7q11.23
+* Syndrome de Wolf-Hirschhorn :del4p:
 ** Clinique
-Tout n’est pas en miroire par rapport à [[*Syndrome de Williams-Burren][Syndrome de Williams-Burren]]
-- Retard de langage +/- DI
-- Traits autistique
-- Fréquemment héritée
-- souvent troubles du comportement, attentio, agressivité
-*** Dysmorphie
-[[file:img/microdup-7q11.png]]
- - Grand front
- - sourcils droits
- - lèvres upérieures fines
- - Philtrum court
- - nez large et long
- - Rarement dilatation aortique
+- RICA et postnat
+- microcéphalie
+- dysomporhie : hypertélorisme, nez en casque grec
+- cardiopathie, fente palatine
+- anomalie OGE
+- hypotonie, DI sévère +/- épilepsie
+
+  #+caption: Zollino et al 2008
+  [[file:img/del4p.png]]
+** Génétique
+- Deletion subtélomérique, taille variable
+- Différent loci
+! On peut passer à côté des petites délétion en FISH
+** Conseil génétique
+- 70% de délétion isolée
+- 22% de transloc déséquilibrées
+
+  De novo 85-90% mais vérifier remaniement structure équilibrée au caryo chez parents
+* Syndrome du cri du chat :del5p:
+** Clinique
+- retard croissance
+- pleurs aigùs (miaulement) via anomalie laryngées dans premières semaines de vie puis disparaite
+- hypo pui hypertonoie
+- DI avec retard de langage
+- malfo cardiaque et oculaire
+***  Dysmorphie
+  - microcéphalie
+  - visage rong
+  - hyperétolérisme
+  - racine nez large
+  - oreille bas implantées
+  - microgantie
+[[file:img/del5p.png]]
+*** Génétique
+- Délétion de taille variable (certaines visible sur caryo)
+*** Conseil
+96 de novo (iso ou transloc )
+Faire caryo parent pour éliminer remaniement équilibrée
+
 * TODO Syndrome d’Aarskog
 
 * Syndrome d’Alagille :JAG1:NOTCH2:
@@ -789,6 +979,22 @@ Autres:
   Variant htz
 
   AD
+* Syndrome Kleefstra/Deletion 9qter :EHMT1:
+** Clinique
+- Dysmorphie :
+  - brachycéphalie
+  - synophris
+  - narines antéversées
+  - prognathisme
+
+#+caption: Kleefstra 2009
+[[file:img/kleefstra.jpg]]
+
+- DI
+- Obésité
+- anomalies génitales chez garçon
+- troubles comportement, sommeil
+
 * TODO Syndrome microdeletionel: cf diapo "DI versant biologique"
 * Syndrome tricho-rhino-phalangien
 ** Clinique
@@ -817,210 +1023,3 @@ deletion de 11p13 (syndrome WAGR) et en 11p14 (gène BDNF)
 * TODO Trisomie 13
 * TODO Trisomie 18
 * TODO Trisomie 21
-* Syndrome de Temple
-** Clinique
-Celle du Silver-Russel
-- Retard de croissance : RCIE et post natal
-- Asymétrie corporelle
-- Macrocéphalie relative
-- Grand fromt bombant
-- Difficulté alimentaires
-Mais aussi suspicion de Prader-Willi
-- Puberté précoce
-- Hypotonie néonatale précoce
-- Petites mains, petits pieds
-- Obésité > 2 ans
-*** 14q32
-Zone soumis à empreinte
-- disomie materne chr14
-- del paternelle
-- épigénitique : perte méthylation
-
-  DD moléculaire du Silver-Russel
-* Syndrome de Kagami-Ogata
-** Clinique
-- Thorax en forme de hache (insuf respi)
-- Hydramnios et prématurité, hypertrophie placentaire
-- Anomalies de la paroi abodominable
-- Anomalise cranio-faciales
-- Difficulté alimentaires
-- Retard mental
-
-[[file:img/syndrome-kagami-ogata.png]]
-* Dysplasie campomyélique :SOX9:
-AD
-** Clinique
-- incurvation os long
-- dysplasie squelettique : scoliose, doigts court, anomalies du bassin et thorax, 11 paires de côtes
-- dysmorphie faciale, fente palatine
-- maformations cardiaques, rénales, cérébrales
-- réversion sexuelle
-Inc
-* Syndrome de Wolf-Hirschhorn :del4p:
-** Clinique
-- RICA et postnat
-- microcéphalie
-- dysomporhie : hypertélorisme, nez en casque grec
-- cardiopathie, fente palatine
-- anomalie OGE
-- hypotonie, DI sévère +/- épilepsie
-
-  #+caption: Zollino et al 2008
-  [[file:img/del4p.png]]
-** Génétique
-- Deletion subtélomérique, taille variable
-- Différent loci
-! On peut passer à côté des petites délétion en FISH
-** Conseil génétique
-- 70% de délétion isolée
-- 22% de transloc déséquilibrées
-
-  De novo 85-90% mais vérifier remaniement structure équilibrée au caryo chez parents
-* Syndrome du cri du chat :del5p:
-** Clinique
-- retard croissance
-- pleurs aigùs (miaulement) via anomalie laryngées dans premières semaines de vie puis disparaite
-- hypo pui hypertonoie
-- DI avec retard de langage
-- malfo cardiaque et oculaire
-***  Dysmorphie
-  - microcéphalie
-  - visage rong
-  - hyperétolérisme
-  - racine nez large
-  - oreille bas implantées
-  - microgantie
-[[file:img/del5p.png]]
-*** Génétique
-- Délétion de taille variable (certaines visible sur caryo)
-*** Conseil
-96 de novo (iso ou transloc )
-Faire caryo parent pour éliminer remaniement équilibrée
-
-* Monosomie 1p36
-- Remaniement subtélomérique le plus fréquent
-** Clinique
-Dysmorphie :
-- *enophtalmie + sourcils horizontaux*
-- microcéphalie 60%
-- nez plat 70%
-- fontanelle antérieure large 85%
-- oreilles dysplasiques
-
-  #+caption: Gajecka et al 2007
- [[file:img/monosomy1p36.png]]
-
-- DI constante
-- Hypotonie 87%
-- Dysphasie 72%
-- difficulté alimentaires
-- +/- épilepsie, cardiopathie
-- surdité 82%
-** Génétique
-- Type et taille variable (1.5 à 10Mb)
-- hypothèse = effet de position
-- Pas de corélation génotype-phénotype
-* Syndrome de Phelan McDermid
-** Clinique
-- DI
-- retard/absence langage
-- hypotonie
-- trouble comportement (TSA)
-- coissance normale / accélérée
-- grandes mains
-- ongles dysplasique
-
-  #+caption: Petits ongles et malformés (A), Phelan et al 2011
- [[file:img/syndrome-phelan-mcdermid-nails.png]]
-
-Dysmorphie discrète:
-- dolicocéphalie
-- ptosis
-- grandes oreilles
-- menton pointu
-** Génétique
-/SHANK3/ toujours délété , soit mutation ponctuelle, soit remaniement
-* Deletion 1qter
-** Clinique
-- Microcéphalie
-- hypotrophie
-- Dysmorphie faciale
-
-#+caption: van bon 2008
-[[file:img/1qter.png]]
-
-- Triogonocéphaile
-- DI constante et sévère
-- épilépsie 68%
-- atrophie corticale, agénésie corps calleux
-- anomalies vertébrales, génito-urinaires
-- CIV
-** Génétique
-Génotype-phénotype
-- AKT3 = microcéphalie
-- ZNF238 = agénésie corps calleaux
-- C1ORF199 = épi
-* Syndrome Kleefstra/Deletion 9qter :EHMT1:
-** Clinique
-- Dysmorphie :
-  - brachycéphalie
-  - synophris
-  - narines antéversées
-  - prognathisme
-
-#+caption: Kleefstra 2009
-[[file:img/kleefstra.jpg]]
-
-- DI
-- Obésité
-- anomalies génitales chez garçon
-- troubles comportement, sommeil
-
-* Délétion 2qter
-** Clinique
-- Dysmorphie
-#+caption: Leroy et al 2013
-[[file:img/2qter-dysmorpho.png]]
-- DI
-- Obésité
-- Hypotonie
-- Brachymétacarpie
-- Brachdactylie
-#+caption: 4e surtout et 2,3,4 en P9 (Leroy et al 2013)
- [[file:img/2qter-bones.png]]
-* Charcot-Marie Tooth 1A :PMP22:
-AD = la plus fréquente des CMT
-Atrophie progressive des muscles distaux ->_trouble de la marche et équilibre
-pieds creux
-évolution lente (< 5% auront besoin d’un fauteuil roulant)
-98% ont une dup de 1.4MB dans 17p11.2
-De novo 1/3
-Surexpression du gènes -> démyélinisation
-
-* Neuropathie héréditaire sensible à la pression :PMP22:
-Certains asympto
-Perte soudaine de sensibilité non douloureuse, faiblesse musculaire d’un territoire d’un seul nerf
-Pieds tombants, faiblesse main/bras
-Déclenché trauma minime/compression prolongée de la région
-50% récupé en quelques jours/mois mais peut être partielle
-Rechutes fréquentes
-Rarement paralysie définitive
-
-80% délétion 1.4Mb par NAHR  dans 17p11.2
-20% mutation ponctuelle, courte délétéion, autre
-FISH possible
-
-* Syndrome de Potocki-Lupski :RAI:
-** Clinique
-- retard global develop
-- DI
-- hypotonie
-- retard staturo pnodéral
-- TSA
-- trouble comportement
-- possible malfo cardiaque
-** Génétique
-Duplication 17p11.2
-- récurrente 70% 3.7Mb
-- variable dans le reste
-RAI1 surexprimée, ainsi que SREBPF1
