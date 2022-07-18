@@ -5378,3 +5378,5 @@ Compression: 3x9
 * <2022-07-17 Sun> Running
 15min jusqu’à la colline, exploration
 10min de descente
+* <2022-07-18 Mon> Workout
+Circuit 3x {2xhaut} - bas
