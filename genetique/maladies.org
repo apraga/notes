@@ -1045,22 +1045,22 @@ deletion de 11p13 (syndrome WAGR) et en 11p14 (gène BDNF)
 - dysplasie sphénoïde ou anomalies os long
 - parent 1er degré
 
-[[img/nf1-café.png]]
-[[img/nf1-lentigine.png]]
-[[img/nf1-lisch.png]]
-[[img/nf1-neurofibrome-cutane.png]]
-[[img/nf1-neurofibrome-plexiforme.png]]
+[[file:img/nf1-café.png]]
+[[file:img/nf1-lentigine.png]]
+[[file:img/nf1-lisch.png]]
+[[file:img/nf1-neurofibrome-cutane.png]]
+[[file:img/nf1-neurofibrome-plexiforme.png]]
 #+caption: Gliome des voies optiques
-[[img/nf1-gliome.png]]
+[[file:img/nf1-gliome.png]]
 *** Autres signes
 Objets brillants non identifiés à l’IRM (OBNI)
 
 #+caption: Scalloping vertébral (rabotage des corps vertérbraux)
-[[img/nf1-scalloping.png]]
+[[file:img/nf1-scalloping.png]]
 #+caption:  Scoliose
-[[img/nf1-scoliose.png]]
+[[file:img/nf1-scoliose.png]]
 #+caption:  Tibia arqué congénital +/- fracture, pseudarthrose
-[[img/nf1-tibia-arque.png]]
+[[file:img/nf1-tibia-arque.png]]
 1 cas sur 2 sporadique
 *** Évolution
 Pénétrance complètes ~ 8ans
