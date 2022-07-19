@@ -1068,3 +1068,38 @@ Pénétrance complètes ~ 8ans
 - Très long (350kb)
 - Mutation spontanées importantes
 - pas de hotspot
+*** Génotype/phénotype en cours..
+- hypothèse gènes modificateurs : Modifie la pénétrance dans une famille. Non identifié
+- existence d’un sous-type avec juste des taches café à lait
+- microdel : apparition précoce, morpho type particulier, retard mental
+  [NB: difficulté d’apprentissage sans DI dans la NF1 normal]
+ [[file:img/nf1-noonan.png]]
+- phénotype à risque de développer des tumeurs : neurofibromes sous-cutanés -> tumeur maligne des gaines nerveuse
+  (cliniquement cuténé = mou)
+- mutation épissage = corrélé tumeurs profondes
+  -> TEP-scane avec biopsie si hypermétabolisme
+**** SPRED1 = phénotype proche nF1 -> syndrome de Lejus
+  - AD
+  - 5% des NF1
+  - Beaucoup moins fréquent
+**** Mosaïque/segmentaire
+[[file:img/nf1-mosaique.png]]
+Localisé = risque de mosaïque germinal faible
+*** Nb: NF2
+schwannome et taches café-au-lait possibles
+[[file:img/nf2-cafe.png]]
+[[file:img/nf2-schwannome.png]]
+** TTT
+Chir, pas de ttt médical
+- bevacizumab NF2
+- mTOR pour neurofibrome plexiforme précoce = échec
+- statine non efficace pour difficulté apprentissage
+- antiMEK (selumetinb) pour neurofibrome plexiforme: diminution de volume (2016)
+- modèle murin
+
+** Taux mortalité :
+- 20-40 ans = tumeur maligne des gaines nerveuses (phénotype à risque)
+- cancer sein -> surveillance mammo à partir de 30-35 ans car plus agressif
+- vasculopathies
+*** Autres
+douleurs intense pulpes -> IRM pour tumeur glomique
