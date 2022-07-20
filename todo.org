@@ -67,13 +67,13 @@ SCHEDULED: <2022-07-17 Sun>
 **** TODO Mucoviscidose
 **** TODO Bases sur le conseil génétique
 **** TODO SEPI et TD
-*** TODO E-learning session 1 [3/6]
+*** TODO E-learning session 1 [4/6]
 **** DONE maladies endocriniennes et métabolisme
 **** DONE anomalies de la croissance
 **** TODO hématologie
 **** TODO maladies du tissu conjonctif
 **** DONE Oncogénétique
-**** TODO dermatogénétique
+**** DONE dermatogénétique
 *** TODO Presentiel session 2 [0/5]
 **** TODO Déficience intellectuelle
 **** TODO Génétique clinique et formelle
@@ -197,6 +197,7 @@ SCHEDULED: <2022-07-17 Sun>
 SCHEDULED: <2022-05-21 Sat>
 ** WAIT Réclamer pour majoration pour taxe foncière :maison:
 Mail envoyé<2022-07-16 Sat>
+** TODO
 * Japonais
 ** Miura :miura:
 *** TODO Leçon 1
@@ -293,4 +294,10 @@ La structure du  tableau est perdue dans tous les cas
 **** Parser
 Liste de parser : https://tomassetti.me/parsing-in-python/
 * Machine learning
-** [[file:books.org::*The elements of statistical learning (217)][The elements of statistical learning (217)]]
+[[https://www.reddit.com/r/MachineLearning/comments/5z8110/d_a_super_harsh_guide_to_machine_learning/][Source: reddit]]
+** TODO [[file:books.org::*The elements of statistical learning (217)][The elements of statistical learning (217)]] :
+*** TODO Chap 1-4
+*** TODO Chap 7-8
+** TODO [[https://www.coursera.org/learn/machine-learning/home/info][Andrew NG coursera]]
+** TODO The Deep Learning Book: https://www.deeplearningbook.org/front_matter.pdf
+** TODO Put tensor flow or torch on a linux box and run examples: http://cs231n.github.io/aws-tutorial/
