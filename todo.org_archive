@@ -558,3 +558,213 @@ DEADLINE: <2022-06-12 Sun>
 :ARCHIVE_CATEGORY: aya
 :ARCHIVE_TODO: DONE
 :END:
+
+* DONE Passer en heures creuses
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-07-21 Thu 14:47
+:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_OLPATH: Electricité
+:ARCHIVE_CATEGORY: todo
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: maison
+:END:
+
+* KILL Voir avec proprio pour changer disjoncteur
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-07-21 Thu 14:47
+:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_OLPATH: Electricité
+:ARCHIVE_CATEGORY: todo
+:ARCHIVE_TODO: KILL
+:ARCHIVE_ITAGS: maison
+:END:
+
+
+
+* DONE Vérifier l’intérêt de l’article
+CLOSED: [2022-05-05 jeu. 17:56]
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-05-27 Fri 14:08
+:ARCHIVE FILE: ~/org/todo.org
+:ARCHIVE_OLPATH: Recherche/WDR45/Mémoire
+:ARCHIVE_CATEGORY: memoire
+:ARCHIVE_TODO: DONE
+:END:
+*** DONE Variant déjà rapporté ?
+CLOSED: [2022-05-01 Sun 19:52]
+Non, NM différente (non canonique)
+Cf mail de Saffari
+*** DONE Phénotype : garçon moins atteint que les filles ?
+CLOSED: [2022-05-05 jeu. 17:56]
+Bien lire les 3 revues
+
+* DONE Lister variants et clinique
+CLOSED: [2022-05-05 jeu. 17:56]
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-05-27 Fri 14:08
+:ARCHIVE FILE: ~/org/todo.org
+:ARCHIVE_OLPATH: Recherche/WDR45/Mémoire
+:ARCHIVE_CATEGORY: memoire
+:ARCHIVE_TODO: DONE
+:END:
+*** DONE Déjà fait par saffari2021
+CLOSED: [2022-04-18 Mon 21:56]
+*** DONE Regarder 2 autres review Cong2021 et Adang2020
+CLOSED: [2022-05-05 jeu. 17:56]
+Pourquoi plus de variants chez Cong2021 ?
+
+* DONE Récupérer résultat Cyril et mère
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-06-09 Thu 17:58
+:ARCHIVE FILE: ~/org/todo.org
+:ARCHIVE_OLPATH: Recherche/WDR45/IRM
+:ARCHIVE_CATEGORY: wdr45
+:ARCHIVE_TODO: DONE
+:END:
+LOSED: [2022-05-01 Sun 19:52]
+
+* DONE Copie dossier
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-06-09 Thu 17:58
+:ARCHIVE FILE: ~/org/todo.org
+:ARCHIVE_OLPATH: Recherche/WDR45/IRM
+:ARCHIVE_CATEGORY: wdr45
+:ARCHIVE_TODO: DONE
+:END:
+LOSED: [2022-05-01 Sun 19:52]
+
+* DONE Mémoire
+:PROPERTIES:
+:CATEGORY: memoire
+:ARCHIVE_TIME: 2022-07-21 Thu 14:29
+:ARCHIVE FILE: ~/org/todo.org
+:ARCHIVE_CATEGORY: memoire
+:ARCHIVE_TODO: DONE
+:END:
+** DONE Plan
+CLOSED: [2022-05-05 jeu. 17:56] DEADLINE: <2022-05-04 mer. 19:00>
+** DONE V1
+*** DONE Introduction
+*** DONE BPAN
+**** Phenotype
+**** WDR45
+*** DONE Case report
+**** DONE Family 1
+**** DONE Family 2
+**** DONE Discussion
+*** DONE Conclusion
+*** DONE Correction Juliette BPAN + clinique
+ok -> intro
+** DONE envoyer intro + context + clinique à Juliette pour relecture
+DEADLINE: <2022-05-22 Sun>
+** KILL Figure avec tikz des variant sur la séquence d'acide aminé
+Missense seulement
+
+* DONE cas clinique 3e jeudi
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-07-21 Thu 14:29
+:ARCHIVE FILE: ~/org/todo.org
+:ARCHIVE_OLPATH: Recherche/WDR45/Présentations
+:ARCHIVE_CATEGORY: wdr45
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE IRM
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-07-21 Thu 14:30
+:ARCHIVE FILE: ~/org/todo.org
+:ARCHIVE_CATEGORY: wdr45
+:ARCHIVE_TODO: DONE
+:END:
+** DONE Récupérer compte-rendu IRM mère
+** DONE Relecture via Chloé à Bordeaux
+LOSED: [2022-05-12 Thu 15:15]
+ransmis<2022-05-05 jeu.>
+** KILL Relecture par le Dr Pomero
+*** KILL Appeler au téléphone
+DEADLINE: <2022-06-01 Wed>
+
+* DONE Mémoire
+:PROPERTIES:
+:CATEGORY: memoire
+:ARCHIVE_TIME: 2022-07-21 Thu 14:30
+:ARCHIVE FILE: ~/org/todo.org
+:ARCHIVE_CATEGORY: memoire
+:ARCHIVE_TODO: DONE
+:END:
+** DONE Plan
+CLOSED: [2022-05-05 jeu. 17:56] DEADLINE: <2022-05-04 mer. 19:00>
+** DONE V1
+*** DONE Introduction
+*** DONE BPAN
+**** Phenotype
+**** WDR45
+*** DONE Case report
+**** DONE Family 1
+**** DONE Family 2
+**** DONE Discussion
+*** DONE Conclusion
+*** DONE Correction Juliette BPAN + clinique
+ok -> intro
+** DONE envoyer intro + context + clinique à Juliette pour relecture
+DEADLINE: <2022-05-22 Sun>
+** KILL Figure avec tikz des variant sur la séquence d'acide aminé
+Missense seulement
+
+* KILL Article
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-07-21 Thu 14:31
+:ARCHIVE FILE: ~/org/todo.org
+:ARCHIVE_CATEGORY: wdr45
+:ARCHIVE_TODO: KILL
+:END:
+** Réunion du  <2022-05-05 jeu.> : on commence le fonctionnel, attendre de leur nouvelles pour publier
+** Rajouter Sandrine Passemard dans les co-auteurs
+
+* DONE Fonctionnel
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-07-21 Thu 14:31
+:ARCHIVE FILE: ~/org/todo.org
+:ARCHIVE_CATEGORY: wdr45
+:ARCHIVE_TODO: DONE
+:END:
+** DONE Mail Patricia Maurin
+ajouter âge du patient et IRM mère
+** DONE Réunion avec Patricia Maurin
+CLOSED: [2022-05-05 jeu. 17:44]
+Vont lancer les tests mais ne sera pas prêt pour le mémoire
+atients intéressant car phénotype mild
+** KILL Mail Binnaz Yalcin
+egarder sa biblio avant !
+** DONE Démarré analyse
+LOSED: [2022-05-05 jeu. 17:57]
+** DONE Demander si on peut rajouter des patients
+
+* DONE Reprendre le phénotype des garçons
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-07-21 Thu 14:40
+:ARCHIVE FILE: ~/org/todo.org
+:ARCHIVE_OLPATH: Recherche/WDR45/Biblio
+:ARCHIVE_CATEGORY: wdr45
+:ARCHIVE_TODO: DONE
+:END:
+
+* KILL ATCD familiaux pour fammile d’Alain Verloes
+CLOSED: [2022-05-05 jeu. 17:57]
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-07-21 Thu 14:49
+:ARCHIVE FILE: ~/org/todo.org
+:ARCHIVE_CATEGORY: wdr45
+:ARCHIVE_TODO: KILL
+:END:
+
+* DONE taskwarrior tui 0.23.4
+SCHEDULED: <2022-05-20 Fri>
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-07-21 Thu 15:18
+:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_OLPATH: FreeBSD
+:ARCHIVE_CATEGORY: todo
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: freebsd
+:END:

@@ -7,12 +7,7 @@ DEADLINE: <2022-05-21 Sat>
 *** DONE Envoyer fiche de salaire
 *** KILL Envoyer relevé
 *** TODO Transfert compte bancaire ?
-* Electricité :maison:
-** DONE Passer en heures creuses
-** TODO Voir avec proprio pour changer disjoncteur
 * FreeBSD :freebsd:
-** DONE taskwarrior tui 0.23.4
-SCHEDULED: <2022-05-20 Fri>
 ** TODO ormolu 0.5.0.0
 SCHEDULED: <2022-05-20 Fri>
 ** TODO kitty ne compile plus
@@ -25,37 +20,6 @@ SCHEDULED: <2022-07-17 Sun>
 :CATEGORY: genetique
 :END:
 ** TODO [[file:books.org::*Collège][Collège]]
-** TODO Syndromes
-*** TODO Noonan
-*** TODO Charcot-Marie-Toorh genetique
-*** TODO Costello
-*** TODO CFC
-*** TODO alcoolisation foetale
-*** TODO kabuki
-*** TODO coffin-siris
-*** TODO klinefelter
-*** TODO turner
-*** TODO t13
-*** TODO t18
-*** TODO hypomélanose d'ito
-*** TODO del 4p
-*** TODO angelman
-*** TODO x fragile
-*** TODO digeorge
-*** TODO retinoblastome
-*** TODO williams
-*** TODO smith mageni
-*** TODO ataxie spinocérébelleuse
-*** TODO ataxie de friedrich
-*** TODO nf1
-*** TODO sclérose tubéreuse
-*** TODO FSHD
-*** TODO marfan
-*** TODO ehler-danlos
-*** TODO polykystose autosomique dominante
-*** TODO polykystose autosomique récessive
-*** TODO Alport
-*** TODO hémophilie
 ** TODO DES
 *** TODO Presentiel session 1 [5/9]
 **** DONE Introduction à la dysmorphologie
@@ -234,23 +198,6 @@ Mail envoyé<2022-07-16 Sat>
 :END:
 *** TODO Lire dialogue fin leçon 10
 SCHEDULED: <2022-04-03 Sun>
-* Langues
-** TODO Allemand
-SCHEDULED: <2022-05-07 Sat +1d>
-:PROPERTIES:
-:STYLE:    habit
-:LAST_REPEAT: [2022-05-22 Sun 00:15]
-:END:
-- State "DONE"       from "TODO"       [2022-05-22 Sun 00:15]
-- State "DONE"       from "TODO"       [2022-05-21 Sat 14:50]
-- State "DONE"       from "TODO"       [2022-05-20 Fri 14:50]
-- State "DONE"       from "TODO"       [2022-05-18 Wed 14:50]
-- State "DONE"       from "TODO"       [2022-05-17 Tue 14:50]
-- State "DONE"       from "TODO"       [2022-05-16 Mon 14:50]
-- State "DONE"       from "TODO"       [2022-05-06 Fri 14:50]
-- State "DONE"       from "TODO"       [2022-05-04 Wed 23:09]
-- State "DONE"       from "TODO"       [2022-05-03 Tue 23:09]
-- State "DONE"       from "TODO"       [2022-05-02 Mon 23:09]
 * Internat
 ** Interchu
 *** TODO Mail Dijon pour expliquer que c’est décalé
@@ -271,7 +218,6 @@ DEADLINE: <2022-07-17 Sun>
 SCHEDULED: <2022-06-12 Sun>
 ** TODO Avril 2022
 ** TODO Mail 2022
-* Moto :moto:
 * Projet
 :PROPERTIES:
 :CATEGORY: projets
@@ -301,3 +247,12 @@ Liste de parser : https://tomassetti.me/parsing-in-python/
 ** TODO [[https://www.coursera.org/learn/machine-learning/home/info][Andrew NG coursera]]
 ** TODO The Deep Learning Book: https://www.deeplearningbook.org/front_matter.pdf
 ** TODO Put tensor flow or torch on a linux box and run examples: http://cs231n.github.io/aws-tutorial/
+* WDR45
+:PROPERTIES:
+:CATEGORY: WDR45
+:END:
+** TODO Mail Dr Adang pour détails collaboration
+SCHEDULED: <2022-07-21 Thu>
+** TODO Donner la réponse à Chloé + Patricia Fergelot
+** TODO Démarrer appel à collaboration avec Chloé
+SCHEDULED: <2022-10-01 Sat>
