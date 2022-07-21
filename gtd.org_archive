@@ -1,14 +1,13 @@
 #    -*- mode: org -*-
 
 
-Archived entries from file /usr/home/alex/org/todo.org
-
+Archived entries from file /home/alex/org/gtd.org
 
 
 * DONE Reading task leçon 8
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-03-26 Sat 13:09
-:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_FILE: /usr/home/alex/org/gtd.org
 :ARCHIVE_OLPATH: Japonais/Leçon Aya
 :ARCHIVE_CATEGORY: aya
 :ARCHIVE_TODO: DONE
@@ -18,7 +17,7 @@ Archived entries from file /usr/home/alex/org/todo.org
 * DONE Reading task leçon 9
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-03-26 Sat 13:09
-:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_FILE: /usr/home/alex/org/gtd.org
 :ARCHIVE_OLPATH: Japonais/Leçon Aya
 :ARCHIVE_CATEGORY: aya
 :ARCHIVE_TODO: DONE
@@ -29,7 +28,7 @@ Archived entries from file /usr/home/alex/org/todo.org
 SCHEDULED: <2022-04-03 Sun>
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-04-09 Sat 00:16
-:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_FILE: /usr/home/alex/org/gtd.org
 :ARCHIVE_OLPATH: Japonais/Leçon Aya
 :ARCHIVE_CATEGORY: aya
 :ARCHIVE_TODO: DONE
@@ -40,7 +39,7 @@ SCHEDULED: <2022-04-03 Sun>
 SCHEDULED: <2022-04-03 Sun>
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-04-09 Sat 00:16
-:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_FILE: /usr/home/alex/org/gtd.org
 :ARCHIVE_OLPATH: Japonais/Leçon Aya
 :ARCHIVE_CATEGORY: aya
 :ARCHIVE_TODO: DONE
@@ -51,7 +50,7 @@ SCHEDULED: <2022-04-03 Sun>
 SCHEDULED: <2022-04-03 Sun>
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-04-09 Sat 00:16
-:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_FILE: /usr/home/alex/org/gtd.org
 :ARCHIVE_OLPATH: Japonais/Leçon Aya
 :ARCHIVE_CATEGORY: aya
 :ARCHIVE_TODO: DONE
@@ -63,7 +62,7 @@ CLOSED: [2022-04-03 Sun 11:47] DEADLINE: <2022-04-02 Sat>
 :PROPERTIES:
 :CATEGORY: sante
 :ARCHIVE_TIME: 2022-04-09 Sat 00:16
-:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_FILE: /usr/home/alex/org/gtd.org
 :ARCHIVE_CATEGORY: sante
 :ARCHIVE_TODO: DONE
 :END:
@@ -72,7 +71,7 @@ CLOSED: [2022-04-03 Sun 11:47] DEADLINE: <2022-04-02 Sat>
 DEADLINE: <2022-03-26 Sat 14:00>
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-04-09 Sat 00:16
-:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_FILE: /usr/home/alex/org/gtd.org
 :ARCHIVE_OLPATH: Emacs
 :ARCHIVE_CATEGORY: emacs
 :ARCHIVE_TODO: DONE
@@ -87,7 +86,7 @@ CLOCK: [2022-03-26 Sat 12:28]--[2022-03-26 Sat 12:58] =>  0:30
 DEADLINE: <2022-03-27 Sun>
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-04-09 Sat 00:16
-:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_FILE: /usr/home/alex/org/gtd.org
 :ARCHIVE_OLPATH: Emacs
 :ARCHIVE_CATEGORY: emacs
 :ARCHIVE_TODO: DONE
@@ -97,7 +96,7 @@ DEADLINE: <2022-03-27 Sun>
 DEADLINE: <2022-03-26 Sat>
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-04-09 Sat 00:16
-:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_FILE: /usr/home/alex/org/gtd.org
 :ARCHIVE_OLPATH: Emacs
 :ARCHIVE_CATEGORY: emacs
 :ARCHIVE_TODO: DONE
@@ -112,7 +111,7 @@ DEADLINE: <2022-03-27 Sun>
 :PROPERTIES:
 :CATEGORY: mariage
 :ARCHIVE_TIME: 2022-04-09 Sat 00:16
-:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_FILE: /usr/home/alex/org/gtd.org
 :ARCHIVE_OLPATH: Inbox
 :ARCHIVE_CATEGORY: mariage
 :ARCHIVE_TODO: DONE
@@ -121,7 +120,7 @@ DEADLINE: <2022-03-27 Sun>
 * DONE novembre 2021
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-04-09 Sat 00:17
-:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_FILE: /usr/home/alex/org/gtd.org
 :ARCHIVE_OLPATH: Ledger
 :ARCHIVE_CATEGORY: compta
 :ARCHIVE_TODO: DONE
@@ -130,7 +129,7 @@ DEADLINE: <2022-03-27 Sun>
 * DONE décembre 2021
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-04-09 Sat 00:17
-:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_FILE: /usr/home/alex/org/gtd.org
 :ARCHIVE_OLPATH: Ledger
 :ARCHIVE_CATEGORY: compta
 :ARCHIVE_TODO: DONE
@@ -140,7 +139,7 @@ DEADLINE: <2022-03-27 Sun>
 DEADLINE: <2022-03-26 Sat>
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-04-09 Sat 14:26
-:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_FILE: ~/org/gtd.org
 :ARCHIVE_CATEGORY: todo
 :ARCHIVE_TODO: DONE
 :END:
@@ -150,7 +149,7 @@ Il faut l'avis de l'amende donc on peut s'assoir dessus...
 SCHEDULED: <2022-04-03 Sun>
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-04-17 Sun 11:13
-:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_FILE: ~/org/gtd.org
 :ARCHIVE_OLPATH: Japonais/Leçon Aya
 :ARCHIVE_CATEGORY: aya
 :ARCHIVE_TODO: DONE
@@ -161,7 +160,7 @@ SCHEDULED: <2022-04-03 Sun>
 SCHEDULED: <2022-04-03 Sun>
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-04-17 Sun 11:14
-:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_FILE: ~/org/gtd.org
 :ARCHIVE_OLPATH: Japonais/Leçon Aya
 :ARCHIVE_CATEGORY: aya
 :ARCHIVE_TODO: DONE
@@ -172,7 +171,7 @@ SCHEDULED: <2022-04-03 Sun>
 SCHEDULED: <2022-04-03 Sun>
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-04-17 Sun 11:14
-:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_FILE: ~/org/gtd.org
 :ARCHIVE_OLPATH: Japonais/Leçon Aya
 :ARCHIVE_CATEGORY: aya
 :ARCHIVE_TODO: DONE
@@ -183,7 +182,7 @@ SCHEDULED: <2022-04-03 Sun>
 CLOSED: [2022-04-17 Sun 18:20] SCHEDULED: <2022-04-17 Sun>
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-04-23 Sat 17:14
-:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_FILE: ~/org/gtd.org
 :ARCHIVE_OLPATH: Inbox
 :ARCHIVE_CATEGORY: todo
 :ARCHIVE_TODO: DONE
@@ -193,7 +192,7 @@ CLOSED: [2022-04-17 Sun 18:20] SCHEDULED: <2022-04-17 Sun>
 CLOSED: [2022-04-16 Sat 21:40] DEADLINE: <2022-04-14 Thu>
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-04-23 Sat 17:14
-:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_FILE: ~/org/gtd.org
 :ARCHIVE_OLPATH: Inbox
 :ARCHIVE_CATEGORY: todo
 :ARCHIVE_TODO: DONE
@@ -203,7 +202,7 @@ CLOSED: [2022-04-16 Sat 21:40] DEADLINE: <2022-04-14 Thu>
 SCHEDULED: <2022-04-21 Thu>
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-04-23 Sat 17:16
-:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_FILE: ~/org/gtd.org
 :ARCHIVE_OLPATH: Inbox
 :ARCHIVE_CATEGORY: todo
 :ARCHIVE_TODO: DONE
@@ -213,7 +212,7 @@ SCHEDULED: <2022-04-21 Thu>
 * Genome
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-05-19 Thu 22:28
-:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_FILE: /usr/home/alex/org/gtd.org
 :ARCHIVE_OLPATH: Projet
 :ARCHIVE_CATEGORY: projets
 :END:
@@ -234,7 +233,7 @@ emailOuSms	"sms"
 CLOSED: [2022-04-10 Sun 17:41] SCHEDULED: <2022-04-10 Sun>
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-05-20 Fri 22:17
-:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_FILE: /usr/home/alex/org/gtd.org
 :ARCHIVE_OLPATH: FreeBSD
 :ARCHIVE_CATEGORY: todo
 :ARCHIVE_TODO: DONE
@@ -244,7 +243,7 @@ CLOSED: [2022-04-10 Sun 17:41] SCHEDULED: <2022-04-10 Sun>
 * DONE opengraph v 0.6.3
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-05-20 Fri 22:17
-:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_FILE: /usr/home/alex/org/gtd.org
 :ARCHIVE_OLPATH: FreeBSD
 :ARCHIVE_CATEGORY: todo
 :ARCHIVE_TODO: DONE
@@ -256,7 +255,7 @@ Ok 3.10->3.7
 CLOSED: [2022-04-17 Sun 17:19] SCHEDULED: <2022-04-13 Wed>
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-05-20 Fri 22:17
-:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_FILE: /usr/home/alex/org/gtd.org
 :ARCHIVE_OLPATH: FreeBSD
 :ARCHIVE_CATEGORY: todo
 :ARCHIVE_TODO: DONE
@@ -268,7 +267,7 @@ CLOSED: [2022-04-17 Sun 17:19] SCHEDULED: <2022-04-13 Wed>
 DEADLINE: <2000-05-20 Sat>
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-05-30 Mon 22:05
-:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_FILE: /usr/home/alex/org/gtd.org
 :ARCHIVE_OLPATH: Inbox
 :ARCHIVE_CATEGORY: todo
 :ARCHIVE_TODO: DONE
@@ -278,7 +277,7 @@ Devrait arriver<2022-05-27 Fri>
 * DONE Alimentation PC portable
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-05-30 Mon 22:05
-:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_FILE: /usr/home/alex/org/gtd.org
 :ARCHIVE_OLPATH: Inbox
 :ARCHIVE_CATEGORY: todo
 :ARCHIVE_TODO: DONE
@@ -290,7 +289,7 @@ Envoyé<2022-05-07 Sat>
 * DONE Minoxidil
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-05-30 Mon 22:06
-:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_FILE: /usr/home/alex/org/gtd.org
 :ARCHIVE_OLPATH: Inbox
 :ARCHIVE_CATEGORY: todo
 :ARCHIVE_TODO: DONE
@@ -301,7 +300,7 @@ Mail envoyé <2022-05-19 Thu>
 DEADLINE: <2022-05-22 Sun>
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-05-30 Mon 22:06
-:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_FILE: /usr/home/alex/org/gtd.org
 :ARCHIVE_OLPATH: Inbox
 :ARCHIVE_CATEGORY: todo
 :ARCHIVE_TODO: DONE
@@ -311,7 +310,7 @@ DEADLINE: <2022-05-22 Sun>
 DEADLINE: <2022-05-23 Mon>
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-05-30 Mon 22:06
-:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_FILE: /usr/home/alex/org/gtd.org
 :ARCHIVE_OLPATH: Inbox
 :ARCHIVE_CATEGORY: todo
 :ARCHIVE_TODO: DONE
@@ -321,7 +320,7 @@ Commandé
 * DONE Déclaration de revenus
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-05-30 Mon 22:07
-:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_FILE: /usr/home/alex/org/gtd.org
 :ARCHIVE_OLPATH: Impôts
 :ARCHIVE_CATEGORY: todo
 :ARCHIVE_TODO: DONE
@@ -335,7 +334,7 @@ SCHEDULED: <2022-04-24 Sun>
 CLOSED: [2022-04-10 Sun 17:20] SCHEDULED: <2022-04-10 Sun>
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-05-30 Mon 22:07
-:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_FILE: /usr/home/alex/org/gtd.org
 :ARCHIVE_OLPATH: Maison
 :ARCHIVE_CATEGORY: todo
 :ARCHIVE_TODO: DONE
@@ -346,7 +345,7 @@ CLOSED: [2022-04-10 Sun 17:20] SCHEDULED: <2022-04-10 Sun>
 SCHEDULED: <2022-05-03 Tue>
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-05-30 Mon 22:07
-:ARCHIVE_FILE: /usr/home/alex/org/todo.org
+:ARCHIVE_FILE: /usr/home/alex/org/gtd.org
 :ARCHIVE_OLPATH: Sport
 :ARCHIVE_CATEGORY: todo
 :ARCHIVE_TODO: DONE
@@ -355,7 +354,7 @@ SCHEDULED: <2022-05-03 Tue>
 * DONE Organiser enterrement vie de garçon :joris:
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-06-06 Mon 21:47
-:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_FILE: ~/org/gtd.org
 :ARCHIVE_OLPATH: Inbox
 :ARCHIVE_CATEGORY: ???
 :ARCHIVE_TODO: DONE
@@ -369,7 +368,7 @@ CLOSED: [2022-04-23 Sat 17:14]
 DEADLINE: <2022-05-22 Sun>
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-06-06 Mon 21:47
-:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_FILE: ~/org/gtd.org
 :ARCHIVE_OLPATH: Inbox
 :ARCHIVE_CATEGORY: ???
 :ARCHIVE_TODO: DONE
@@ -379,7 +378,7 @@ Attente code par courrier puis rappeler ANS
 * DONE Billet de trains
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-06-06 Mon 21:49
-:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_FILE: ~/org/gtd.org
 :ARCHIVE_OLPATH: Inbox/Mariage Florian
 :ARCHIVE_CATEGORY: ???
 :ARCHIVE_TODO: DONE
@@ -389,7 +388,7 @@ Attente code par courrier puis rappeler ANS
 * DONE Hébergement
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-06-06 Mon 21:49
-:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_FILE: ~/org/gtd.org
 :ARCHIVE_OLPATH: Inbox/Mariage Florian
 :ARCHIVE_CATEGORY: ???
 :ARCHIVE_TODO: DONE
@@ -399,7 +398,7 @@ Attente code par courrier puis rappeler ANS
 * DONE Location voiture
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-06-06 Mon 21:49
-:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_FILE: ~/org/gtd.org
 :ARCHIVE_OLPATH: Inbox/Mariage Florian
 :ARCHIVE_CATEGORY: ???
 :ARCHIVE_TODO: DONE
@@ -409,7 +408,7 @@ Attente code par courrier puis rappeler ANS
 * DONE Voir avec Miva pour hébergement Paris
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-06-06 Mon 21:49
-:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_FILE: ~/org/gtd.org
 :ARCHIVE_OLPATH: Inbox/Mariage Florian
 :ARCHIVE_CATEGORY: ???
 :ARCHIVE_TODO: DONE
@@ -419,7 +418,7 @@ Attente code par courrier puis rappeler ANS
 * DONE Réparer
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-06-12 Sun 11:19
-:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_FILE: ~/org/gtd.org
 :ARCHIVE_OLPATH: Moto
 :ARCHIVE_CATEGORY: todo
 :ARCHIVE_TODO: DONE
@@ -435,7 +434,7 @@ SCHEDULED: <2022-04-29 Fri>
 * DONE Signer contrat moto
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-06-12 Sun 11:19
-:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_FILE: ~/org/gtd.org
 :ARCHIVE_OLPATH: Moto
 :ARCHIVE_CATEGORY: todo
 :ARCHIVE_TODO: DONE
@@ -446,7 +445,7 @@ SCHEDULED: <2022-04-29 Fri>
 CLOSED: [2022-04-17 Sun 11:14] SCHEDULED: <2022-04-10 Sun>
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-06-12 Sun 15:20
-:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_FILE: ~/org/gtd.org
 :ARCHIVE_OLPATH: Japonais/Leçon Aya
 :ARCHIVE_CATEGORY: aya
 :ARCHIVE_TODO: DONE
@@ -456,7 +455,7 @@ CLOSED: [2022-04-17 Sun 11:14] SCHEDULED: <2022-04-10 Sun>
 CLOSED: [2022-04-17 Sun 17:18] DEADLINE: <2022-04-17 Sun 12:30>
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-06-12 Sun 15:20
-:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_FILE: ~/org/gtd.org
 :ARCHIVE_OLPATH: Japonais/Leçon Aya
 :ARCHIVE_CATEGORY: aya
 :ARCHIVE_TODO: DONE
@@ -466,7 +465,7 @@ CLOSED: [2022-04-17 Sun 17:18] DEADLINE: <2022-04-17 Sun 12:30>
 SCHEDULED: <2022-04-24 Sun>
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-06-12 Sun 15:20
-:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_FILE: ~/org/gtd.org
 :ARCHIVE_OLPATH: Japonais/Leçon Aya
 :ARCHIVE_CATEGORY: aya
 :ARCHIVE_TODO: DONE
@@ -476,7 +475,7 @@ SCHEDULED: <2022-04-24 Sun>
 * DONE Échanger T-shirt Chullanka
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-06-18 Sat 17:39
-:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_FILE: ~/org/gtd.org
 :ARCHIVE_OLPATH: Inbox
 :ARCHIVE_CATEGORY: todo
 :ARCHIVE_TODO: DONE
@@ -488,7 +487,7 @@ Vont renvoyer
 * KILL Demande interchu Grenoble novembre 2022
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-07-09 Sat 13:35
-:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_FILE: ~/org/gtd.org
 :ARCHIVE_OLPATH: Internat
 :ARCHIVE_CATEGORY: todo
 :ARCHIVE_TODO: KILL
@@ -498,7 +497,7 @@ Vont renvoyer
 * DONE Changer ampoule
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-07-09 Sat 13:35
-:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_FILE: ~/org/gtd.org
 :ARCHIVE_OLPATH: Electricité
 :ARCHIVE_CATEGORY: todo
 :ARCHIVE_TODO: DONE
@@ -508,7 +507,7 @@ Vont renvoyer
 * KILL Commander nouvelle CB :banque:
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-07-16 Sat 17:45
-:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_FILE: ~/org/gtd.org
 :ARCHIVE_OLPATH: Banque
 :ARCHIVE_CATEGORY: todo
 :ARCHIVE_TODO: KILL
@@ -521,7 +520,7 @@ Renvoyer un mail car n’ont pas compris la question
 * DONE Payer taxe foncière :maison:
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-07-16 Sat 17:51
-:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_FILE: ~/org/gtd.org
 :ARCHIVE_OLPATH: Inbox
 :ARCHIVE_CATEGORY: todo
 :ARCHIVE_TODO: DONE
@@ -532,7 +531,7 @@ Chèque envoyé<2022-07-16 Sat>
 DEADLINE: <2022-06-06 Mon>
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-07-16 Sat 17:51
-:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_FILE: ~/org/gtd.org
 :ARCHIVE_OLPATH: Inbox
 :ARCHIVE_CATEGORY: todo
 :ARCHIVE_TODO: DONE
@@ -543,7 +542,7 @@ Chèque envoyé<2022-07-16 Sat>
 SCHEDULED: <2022-04-17 Sun>
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-07-16 Sat 17:51
-:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_FILE: ~/org/gtd.org
 :ARCHIVE_OLPATH: Japonais/Leçon Aya
 :ARCHIVE_CATEGORY: aya
 :ARCHIVE_TODO: DONE
@@ -553,7 +552,7 @@ SCHEDULED: <2022-04-17 Sun>
 DEADLINE: <2022-06-12 Sun>
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-07-16 Sat 17:51
-:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_FILE: ~/org/gtd.org
 :ARCHIVE_OLPATH: Japonais/Leçon Aya
 :ARCHIVE_CATEGORY: aya
 :ARCHIVE_TODO: DONE
@@ -562,7 +561,7 @@ DEADLINE: <2022-06-12 Sun>
 * DONE Passer en heures creuses
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-07-21 Thu 14:47
-:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_FILE: ~/org/gtd.org
 :ARCHIVE_OLPATH: Electricité
 :ARCHIVE_CATEGORY: todo
 :ARCHIVE_TODO: DONE
@@ -572,7 +571,7 @@ DEADLINE: <2022-06-12 Sun>
 * KILL Voir avec proprio pour changer disjoncteur
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-07-21 Thu 14:47
-:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_FILE: ~/org/gtd.org
 :ARCHIVE_OLPATH: Electricité
 :ARCHIVE_CATEGORY: todo
 :ARCHIVE_TODO: KILL
@@ -585,7 +584,7 @@ DEADLINE: <2022-06-12 Sun>
 CLOSED: [2022-05-05 jeu. 17:56]
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-05-27 Fri 14:08
-:ARCHIVE FILE: ~/org/todo.org
+:ARCHIVE FILE: ~/org/gtd.org
 :ARCHIVE_OLPATH: Recherche/WDR45/Mémoire
 :ARCHIVE_CATEGORY: memoire
 :ARCHIVE_TODO: DONE
@@ -602,7 +601,7 @@ Bien lire les 3 revues
 CLOSED: [2022-05-05 jeu. 17:56]
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-05-27 Fri 14:08
-:ARCHIVE FILE: ~/org/todo.org
+:ARCHIVE FILE: ~/org/gtd.org
 :ARCHIVE_OLPATH: Recherche/WDR45/Mémoire
 :ARCHIVE_CATEGORY: memoire
 :ARCHIVE_TODO: DONE
@@ -616,7 +615,7 @@ Pourquoi plus de variants chez Cong2021 ?
 * DONE Récupérer résultat Cyril et mère
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-06-09 Thu 17:58
-:ARCHIVE FILE: ~/org/todo.org
+:ARCHIVE FILE: ~/org/gtd.org
 :ARCHIVE_OLPATH: Recherche/WDR45/IRM
 :ARCHIVE_CATEGORY: wdr45
 :ARCHIVE_TODO: DONE
@@ -626,7 +625,7 @@ LOSED: [2022-05-01 Sun 19:52]
 * DONE Copie dossier
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-06-09 Thu 17:58
-:ARCHIVE FILE: ~/org/todo.org
+:ARCHIVE FILE: ~/org/gtd.org
 :ARCHIVE_OLPATH: Recherche/WDR45/IRM
 :ARCHIVE_CATEGORY: wdr45
 :ARCHIVE_TODO: DONE
@@ -637,7 +636,7 @@ LOSED: [2022-05-01 Sun 19:52]
 :PROPERTIES:
 :CATEGORY: memoire
 :ARCHIVE_TIME: 2022-07-21 Thu 14:29
-:ARCHIVE FILE: ~/org/todo.org
+:ARCHIVE FILE: ~/org/gtd.org
 :ARCHIVE_CATEGORY: memoire
 :ARCHIVE_TODO: DONE
 :END:
@@ -663,7 +662,7 @@ Missense seulement
 * DONE cas clinique 3e jeudi
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-07-21 Thu 14:29
-:ARCHIVE FILE: ~/org/todo.org
+:ARCHIVE FILE: ~/org/gtd.org
 :ARCHIVE_OLPATH: Recherche/WDR45/Présentations
 :ARCHIVE_CATEGORY: wdr45
 :ARCHIVE_TODO: DONE
@@ -672,7 +671,7 @@ Missense seulement
 * DONE IRM
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-07-21 Thu 14:30
-:ARCHIVE FILE: ~/org/todo.org
+:ARCHIVE FILE: ~/org/gtd.org
 :ARCHIVE_CATEGORY: wdr45
 :ARCHIVE_TODO: DONE
 :END:
@@ -688,7 +687,7 @@ DEADLINE: <2022-06-01 Wed>
 :PROPERTIES:
 :CATEGORY: memoire
 :ARCHIVE_TIME: 2022-07-21 Thu 14:30
-:ARCHIVE FILE: ~/org/todo.org
+:ARCHIVE FILE: ~/org/gtd.org
 :ARCHIVE_CATEGORY: memoire
 :ARCHIVE_TODO: DONE
 :END:
@@ -714,7 +713,7 @@ Missense seulement
 * KILL Article
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-07-21 Thu 14:31
-:ARCHIVE FILE: ~/org/todo.org
+:ARCHIVE FILE: ~/org/gtd.org
 :ARCHIVE_CATEGORY: wdr45
 :ARCHIVE_TODO: KILL
 :END:
@@ -724,7 +723,7 @@ Missense seulement
 * DONE Fonctionnel
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-07-21 Thu 14:31
-:ARCHIVE FILE: ~/org/todo.org
+:ARCHIVE FILE: ~/org/gtd.org
 :ARCHIVE_CATEGORY: wdr45
 :ARCHIVE_TODO: DONE
 :END:
@@ -743,7 +742,7 @@ LOSED: [2022-05-05 jeu. 17:57]
 * DONE Reprendre le phénotype des garçons
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-07-21 Thu 14:40
-:ARCHIVE FILE: ~/org/todo.org
+:ARCHIVE FILE: ~/org/gtd.org
 :ARCHIVE_OLPATH: Recherche/WDR45/Biblio
 :ARCHIVE_CATEGORY: wdr45
 :ARCHIVE_TODO: DONE
@@ -753,7 +752,7 @@ LOSED: [2022-05-05 jeu. 17:57]
 CLOSED: [2022-05-05 jeu. 17:57]
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-07-21 Thu 14:49
-:ARCHIVE FILE: ~/org/todo.org
+:ARCHIVE FILE: ~/org/gtd.org
 :ARCHIVE_CATEGORY: wdr45
 :ARCHIVE_TODO: KILL
 :END:
@@ -762,9 +761,49 @@ CLOSED: [2022-05-05 jeu. 17:57]
 SCHEDULED: <2022-05-20 Fri>
 :PROPERTIES:
 :ARCHIVE_TIME: 2022-07-21 Thu 15:18
-:ARCHIVE_FILE: ~/org/todo.org
+:ARCHIVE_FILE: ~/org/gtd.org
 :ARCHIVE_OLPATH: FreeBSD
 :ARCHIVE_CATEGORY: todo
 :ARCHIVE_TODO: DONE
 :ARCHIVE_ITAGS: freebsd
 :END:
+
+* DONE Liste des videos tricks
+DEADLINE: <2022-04-27 Wed>
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-07-21 Thu 22:35
+:ARCHIVE_FILE: ~/org/gtd.org
+:ARCHIVE_OLPATH: Projet
+:ARCHIVE_CATEGORY: projets
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE Réclamer pour majoration pour taxe foncière :maison:
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-07-21 Thu 22:45
+:ARCHIVE_FILE: ~/org/gtd.org
+:ARCHIVE_CATEGORY: inbox
+:ARCHIVE_TODO: DONE
+:END:
+Mail envoyé<2022-07-16 Sat>
+
+* Base de données
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-07-21 Thu 22:54
+:ARCHIVE_FILE: ~/org/gtd.org
+:ARCHIVE_OLPATH: Recherche/Mustard
+:ARCHIVE_CATEGORY: recherche
+:ARCHIVE_ITAGS: mustard
+:END:
+** KILL Mysql
+*** DONE Biblio
+*** DONE Conception papier
+*** DONE Prototype
+*** DONE import tsv labkey
+*** KILL ajout pièces jointes
+*** KILL Demande hébergement
+*** DONE Point avec Pierre
+**On essaye avec excel ?
+**Trop ambitieux (long, compliqué et problèmes de droits)
+** KILL Site
+*** KILL Prototype django/flask
