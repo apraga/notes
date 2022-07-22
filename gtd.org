@@ -99,8 +99,10 @@ Liste de parser : https://tomassetti.me/parsing-in-python/
 :PROPERTIES:
 :CATEGORY: wdr45
 :END:
-*** TODO Mail Dr Adang pour détails collaboration
+*** WAIT Mail Dr Adang pour détails collaboration
 SCHEDULED: <2022-07-21 Thu>
+Envoyé <2022-07-22 Fri>
+
 *** TODO Donner la réponse à Chloé + Patricia Fergelot
 *** TODO Démarrer appel à collaboration avec Chloé
 SCHEDULED: <2022-10-01 Sat>
