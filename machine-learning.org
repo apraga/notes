@@ -1,0 +1,8 @@
+#+title: Machine Learning
+
+Methods
+- linear model fitted by least squared = stable but possibly inaccurate
+- nearest neighbours = precise but unstable
+
+If the data is a set of tightly lustered Gaussians (theirs means are distributed as Gaussian), the optimal will be nonlinear and disjoint
+If the data is a mixture of unrelated Gaussian, linear is almost optimal

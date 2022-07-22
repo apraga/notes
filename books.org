@@ -1,6 +1,7 @@
 Voir [[file:books-lists][books lists]] pour des idées
 * Génétique :genetique:
 ** TODO Collège
+*** DONE Chap 9 Anomalies génétiques à l’échelle du gène
 *** DONE Chap 10: Principales techniques d’analyses des anomalies génétiques à l’échelle du gène
 ** TODO Biologie cellulaire Dunod
 ** TODO Biologie chimie Dunod
@@ -133,6 +134,8 @@ Voir [[file:books-lists][books lists]] pour des idées
 ** STRT The elements of statistical learning (217) [1/1]
 Texte de référence pour classification, machine
 *** DONE 1. Intro
+*** 2
+2.4  non clair, à relire
 * Medenice
 ** TODO Cecil-Goldman (26th edition)
 - Renal and Genitourinary Diseases 1.

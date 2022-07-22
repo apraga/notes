@@ -1,18 +1,147 @@
+#+title: Gtd
+
+* Japonais
+:PROPERTIES:
+:CATEGORY: japonais
+:END:
+** Miura :miura:
+*** TODO Leçon 1
+**** DONE Lire
+**** DONE Anki
+*** TODO Leçon 2
+**** DONE Lire
+**** TODO Anki
+***** TODO Grammaire
+*** TODO Leçon 3
+**** DONE Lire
+**** TODO Anki
+***** TODO Grammaire
+*** TODO Leçon 4
+**** DONE Lire
+**** TODO Anki
+***** TODO Grammaire
+*** TODO Leçon 5
+**** DONE Lire
+**** TODO Anki
+***** TODO Grammaire
+*** TODO Leçon 6
+**** DONE Lire
+**** TODO Anki
+***** TODO Grammaire
+*** TODO Leçon 7
+**** TODO Lire
+**** TODO Anki
+***** TODO Grammaire
+*** Lire
+** Leçon Aya
+:PROPERTIES:
+:CATEGORY: aya
+:END:
+*** TODO Lire dialogue fin leçon 10
+SCHEDULED: <2022-04-03 Sun>
+* Internat
+:PROPERTIES:
+:CATEGORY: internat
+:END:
+** DONE Mail Dijon pour expliquer que c’est décalé :interchu:
+** Thèse :these:
+*** TODO Voir avec Julien Thevenon pour sujet de thèse
+*** TODO Voir avec Jean-Paul pour sujet de thèse
+** Droit au remords
+*** WAIT Envoi scolarité
+*** TODO Négocier avec Xavier Bertrand pour stage de clinique
+DEADLINE: <2022-07-17 Sun>
+* Ledger
+:PROPERTIES:
+:CATEGORY: compta
+:END:
+** TODO janvier 2022
+** TODO février 2022
+** TODO Mars 2022
+SCHEDULED: <2022-06-12 Sun>
+** TODO Avril 2022
+** TODO Mail 2022
+* Projet
+:PROPERTIES:
+:CATEGORY: projets
+:END:
+** Assistant
+:PROPERTIES:
+:CATEGORY: assistant
+:END:
+*** DONE Regarder ce qu'Yvain a fait
+** CentoX
+*** Extraction de données
+**** Texte
+Trop compliqué de travailles sur la structure du pdf
+- pdftotext : bon résultats sur page 1. Sur les ségrégations, il n’y a pas de retour à la ligne avant l’indication
+- pdfminer donne des résultats légèrement supérieurs, beaucoup d’espaces sur les ségrégations
+- pypdf2 : trop de retours à la lignes intempestifs dans le texte
+La structure du  tableau est perdue dans tous les cas
+**** Parser
+Liste de parser : https://tomassetti.me/parsing-in-python/
+* Machine learning
+:PROPERTIES:
+:CATEGORY: machine learning
+:END:
+[[https://www.reddit.com/r/MachineLearning/comments/5z8110/d_a_super_harsh_guide_to_machine_learning/][Source: reddit]]
+** TODO [[file:books.org::*The elements of statistical learning (217)][The elements of statistical learning (217)]] :
+*** TODO Chap 1-4
+*** TODO Chap 7-8
+** TODO [[https://www.coursera.org/learn/machine-learning/home/info][Andrew NG coursera]]
+** TODO The Deep Learning Book: https://www.deeplearningbook.org/front_matter.pdf
+** TODO Put tensor flow or torch on a linux box and run examples: http://cs231n.github.io/aws-tutorial/
+* Recherche
+:PROPERTIES:
+:CATEGORY: recherche
+:END:
+** WDR45
+:PROPERTIES:
+:CATEGORY: wdr45
+:END:
+*** WAIT Mail Dr Adang pour détails collaboration
+SCHEDULED: <2022-07-21 Thu>
+Envoyé <2022-07-22 Fri>
+
+*** TODO Donner la réponse à Chloé + Patricia Fergelot
+*** TODO Démarrer appel à collaboration avec Chloé
+SCHEDULED: <2022-10-01 Sat>
+** NF1 :nf1:
+*** Biblio
+**** TODO article T. Hirsch
+**** TODO Autre case report ?
+*** Trouver autres cas
+*** TODO Appel ANDDI rares
+*** TODO Appel ITACA
+*** DONE Domiinque VIAUD
+Mail envoyé par Juliette
+*** DONE Observatoire TED
+Non
+*** TODO Contact Hirisch pour clinique
+** Mustard :mustard:
+*** Données
+**** DONE Import Labkey
+**** TODO Clinique et nettoyage données labkey
+**** HOLD Dxcare
+***** DONE Demande Dijon
+***** HOLD Demande DPO Besançon
+**** KILL donnée pierre
+**CLOSED: [2022-05-05 jeu. 17:53]
+**** Importer donnée Paul sur le S
+*** Stockage
+**** DONE Accès scality au travail
+**** WAIT VPN pour Jehanne
 * Banque :banque:
 ** TODO Compte et CB société générale :banque:
 *** DONE Souscription
 CLOSED: [2022-04-23 Sat 17:13]
-*** TODO Carte bancaire
+*** DONE Carte bancaire
 DEADLINE: <2022-05-21 Sat>
 *** DONE Envoyer fiche de salaire
 *** KILL Envoyer relevé
-*** TODO Transfert compte bancaire ?
-* Electricité :maison:
-** DONE Passer en heures creuses
-** TODO Voir avec proprio pour changer disjoncteur
+*** TODO Transfert compte bancaire
+SCHEDULED: <2022-07-21 Thu>
 * FreeBSD :freebsd:
-** DONE taskwarrior tui 0.23.4
-SCHEDULED: <2022-05-20 Fri>
 ** TODO ormolu 0.5.0.0
 SCHEDULED: <2022-05-20 Fri>
 ** TODO kitty ne compile plus
@@ -24,38 +153,7 @@ SCHEDULED: <2022-07-17 Sun>
 :PROPERTIES:
 :CATEGORY: genetique
 :END:
-** [[file:books.org::*Collège][Collège]]
-** TODO Syndromes
-*** TODO Noonan
-*** TODO Charcot-Marie-Toorh genetique
-*** TODO Costello
-*** TODO CFC
-*** TODO alcoolisation foetale
-*** TODO kabuki
-*** TODO coffin-siris
-*** TODO klinefelter
-*** TODO turner
-*** TODO t13
-*** TODO t18
-*** TODO hypomélanose d'ito
-*** TODO del 4p
-*** TODO angelman
-*** TODO x fragile
-*** TODO digeorge
-*** TODO retinoblastome
-*** TODO williams
-*** TODO smith mageni
-*** TODO ataxie spinocérébelleuse
-*** TODO ataxie de friedrich
-*** TODO nf1
-*** TODO sclérose tubéreuse
-*** TODO FSHD
-*** TODO marfan
-*** TODO ehler-danlos
-*** TODO polykystose autosomique dominante
-*** TODO polykystose autosomique récessive
-*** TODO Alport
-*** TODO hémophilie
+** TODO [[file:books.org::*Collège][Collège]]
 ** TODO DES
 *** TODO Presentiel session 1 [5/9]
 **** DONE Introduction à la dysmorphologie
@@ -67,13 +165,13 @@ SCHEDULED: <2022-07-17 Sun>
 **** TODO Mucoviscidose
 **** TODO Bases sur le conseil génétique
 **** TODO SEPI et TD
-*** TODO E-learning session 1 [3/6]
+*** TODO E-learning session 1 [4/6]
 **** DONE maladies endocriniennes et métabolisme
 **** DONE anomalies de la croissance
 **** TODO hématologie
 **** TODO maladies du tissu conjonctif
 **** DONE Oncogénétique
-**** TODO dermatogénétique
+**** DONE dermatogénétique
 *** TODO Presentiel session 2 [0/5]
 **** TODO Déficience intellectuelle
 **** TODO Génétique clinique et formelle
@@ -188,104 +286,10 @@ SCHEDULED: <2022-07-17 Sun>
 *** DONE QROC S2
 *CLOSED: [2022-04-16 Sat 23:42] DEADLINE: <2022-04-16 Sat 23:59>
 *** DONE Mémoire
-* Inbox
-** TODO Mariage Joris :joris:
-*** TODO cadeau
-** TODO Mariage Florian :florian:
-*** TODO Cadeau
+* Divers
+** TODO Cadeau mariage :joris:
+SCHEDULED: <2022-08-04 Thu>
+** TODO Cadeaux mariage :florian:
+SCHEDULED: <2022-08-04 Thu>
 ** TODO Copier photos famille depuis drive yvain sur drive famille
 SCHEDULED: <2022-05-21 Sat>
-** WAIT Réclamer pour majoration pour taxe foncière :maison:
-Mail envoyé<2022-07-16 Sat>
-* Japonais
-** Miura :miura:
-*** TODO Leçon 1
-**** DONE Lire
-**** DONE Anki
-*** TODO Leçon 2
-**** DONE Lire
-**** TODO Anki
-***** TODO Grammaire
-*** TODO Leçon 3
-**** DONE Lire
-**** TODO Anki
-***** TODO Grammaire
-*** TODO Leçon 4
-**** DONE Lire
-**** TODO Anki
-***** TODO Grammaire
-*** TODO Leçon 5
-**** DONE Lire
-**** TODO Anki
-***** TODO Grammaire
-*** TODO Leçon 6
-**** DONE Lire
-**** TODO Anki
-***** TODO Grammaire
-*** TODO Leçon 7
-**** TODO Lire
-**** TODO Anki
-***** TODO Grammaire
-*** Lire
-** Leçon Aya
-:PROPERTIES:
-:CATEGORY: aya
-:END:
-*** TODO Lire dialogue fin leçon 10
-SCHEDULED: <2022-04-03 Sun>
-* Langues
-** TODO Allemand
-SCHEDULED: <2022-05-07 Sat +1d>
-:PROPERTIES:
-:STYLE:    habit
-:LAST_REPEAT: [2022-05-22 Sun 00:15]
-:END:
-- State "DONE"       from "TODO"       [2022-05-22 Sun 00:15]
-- State "DONE"       from "TODO"       [2022-05-21 Sat 14:50]
-- State "DONE"       from "TODO"       [2022-05-20 Fri 14:50]
-- State "DONE"       from "TODO"       [2022-05-18 Wed 14:50]
-- State "DONE"       from "TODO"       [2022-05-17 Tue 14:50]
-- State "DONE"       from "TODO"       [2022-05-16 Mon 14:50]
-- State "DONE"       from "TODO"       [2022-05-06 Fri 14:50]
-- State "DONE"       from "TODO"       [2022-05-04 Wed 23:09]
-- State "DONE"       from "TODO"       [2022-05-03 Tue 23:09]
-- State "DONE"       from "TODO"       [2022-05-02 Mon 23:09]
-* Internat
-** Interchu
-*** TODO Mail Dijon pour expliquer que c’est décalé
-** Thèse
-*** TODO Voir avec Julien Thevenon pour sujet de thèse
-*** TODO Voir avec Jean-Paul pour sujet de thèse
-* Droit au remords
-** WAIT Envoi scolarité
-** TODO Négocier avec Xavier Bertrand pour stage de clinique
-DEADLINE: <2022-07-17 Sun>
-* Ledger
-:PROPERTIES:
-:CATEGORY: compta
-:END:
-** TODO janvier 2022
-** TODO février 2022
-** TODO Mars 2022
-SCHEDULED: <2022-06-12 Sun>
-** TODO Avril 2022
-** TODO Mail 2022
-* Moto :moto:
-* Projet
-:PROPERTIES:
-:CATEGORY: projets
-:END:
-** DONE Liste des videos tricks
-DEADLINE: <2022-04-27 Wed>
-** Assistant
-:PROPERTIES:
-:CATEGORY: assistant
-:END:
-*** DONE Regarder ce qu'Yvain a fait
-** Centogène
-***  Extraction de données
-Solution 1 : pdftotext puis parser, par exemple avec arpeggio.
-Liste de parser : https://tomassetti.me/parsing-in-python/
-Solution 2 : regarder la structure du PDF, par exemple avec i7-rups https://tomassetti.me/parsing-in-python/
-* Machine learning
-** [[file:books.org::*The elements of statistical learning (217)][The elements of statistical learning (217)]]

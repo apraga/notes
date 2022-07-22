@@ -1,3 +1,3 @@
 [submodule "recherche"]
 	path = recherche
-	url = git@github.com:apraga/recherche.git
+	url = https://github.com/apraga/recherche.git
