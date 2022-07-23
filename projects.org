@@ -61,7 +61,6 @@ SCHEDULED: <2022-04-03 Sun>
 :PROPERTIES:
 :CATEGORY: internat
 :END:
-** DONE Mail Dijon pour expliquer que c’est décalé :interchu:
 ** Thèse :these:
 *** Trouver un sujet
 - Julien Thevenon ?
@@ -72,7 +71,7 @@ SCHEDULED: <2022-04-03 Sun>
 *** TODO Négocier avec Xavier Bertrand pour stage de clinique
 SCHEDULED: <2022-07-28 Thu>
 Revient de vacances à ce moment environ
-* Comptabilité avec ledger
+* Comptabilité :ledger:
 :PROPERTIES:
 :CATEGORY: compta
 :END:
@@ -82,17 +81,6 @@ Revient de vacances à ce moment environ
 SCHEDULED: <2022-06-12 Sun>
 ** TODO Avril 2022
 ** TODO Mail 2022
-* Apprendre le machine learning
-:PROPERTIES:
-:CATEGORY: machine learning
-:END:
-[[https://www.reddit.com/r/MachineLearning/comments/5z8110/d_a_super_harsh_guide_to_machine_learning/][Source: reddit]]
-** TODO [[file:books.org::*The elements of statistical learning (217)][The elements of statistical learning (217)]] :
-*** TODO Chap 1-4
-*** TODO Chap 7-8
-** TODO [[https://www.coursera.org/learn/machine-learning/home/info][Andrew NG coursera]]
-** TODO The Deep Learning Book: https://www.deeplearningbook.org/front_matter.pdf
-** TODO Put tensor flow or torch on a linux box and run examples: http://cs231n.github.io/aws-tutorial/
 * Recherche
 :PROPERTIES:
 :CATEGORY: recherche
@@ -136,6 +124,17 @@ Voir avec Paul
 **** DONE Accès scality au travail
 **** WAIT VPN pour Jehanne
 **** 
+** Apprendre le machine learning
+:PROPERTIES:
+:CATEGORY: machine learning
+:END:
+[[https://www.reddit.com/r/MachineLearning/comments/5z8110/d_a_super_harsh_guide_to_machine_learning/][Source: reddit]]
+*** TODO [[file:books.org::*The elements of statistical learning (217)][The elements of statistical learning (217)]] :
+**** TODO Chap 1-4
+**** TODO Chap 7-8
+*** TODO [[https://www.coursera.org/learn/machine-learning/home/info][Andrew NG coursera]]
+*** TODO The Deep Learning Book: https://www.deeplearningbook.org/front_matter.pdf
+*** TODO Put tensor flow or torch on a linux box and run examples: http://cs231n.github.io/aws-tutorial/
 * Banque :banque:
 ** TODO Compte et CB société générale :banque:
 *** DONE Souscription
@@ -160,10 +159,40 @@ Non reproductible
 *** DONE v25.2
 Soumis
 * Génétique
-** TODO [[file:books.org::*Biologie chimie Dunod][Biologie chimie Dunod]]
-** TODO [[file:books.org::*Biologie cellulaire Dunod][Biologie cellulaire Dunod]]
-** TODO [[file:books.org::*Collège][Collège]]
-** TODO DES
+** TODO Collège [3/29]
+*** TODO 1. Architecture du génome
+*** TODO 2. Structure et fonction du génome humains: chromosomes sexuels
+*** TODO 3. Structure et fonction du génome humains
+*** TODO 4. Hérédité monogénique
+*** TODO 5. Génétique des populations
+*** TODO 6. Cytogénétique conventionnelle
+*** TODO 7. Cytogénétique moléculaire
+*** TODO 8. Anomalies hémopathies et tumeurs solides
+*** DONE 9.Anomalies génétiques à l’échelle du gène
+*** DONE 10. Principales techniques d’analyses des anomalies génétiques à l’échelle du gène
+*** TODO 11. NGS
+*** TODO 12. Conseil génétique
+*** TODO 13. Examen de l’enfant
+*** TODO 14. Hétérogénéite des maladies génétiques
+*** TODO 15. DPN, DPI
+*** TODO 16. Dépistage néonatal
+*** TODO 17. DPS
+*** KILL 18. Dispositions législatives
+*** TODO 19. Enjeux éthiques
+*** TODO 20. Maladies mitochondriales
+*** TODO 21. Empreinte parentale
+*** TODO 22. Mutations dynamiques
+*** TODO 23. Oncogénétique
+*** TODO 24. Bases de données
+*** TODO 25. Perspectives thérapeutiques
+*** TODO 26. Pharmacogénétique
+*** TODO 27. T21
+*** TODO 28. Mucoviscidose
+*** TODO 29. Xfragile
+
+** TODO Biologie cellulaire Dunod
+** TODO Biologie chimie Dunod
+** TODO DES [0/4]
 *** TODO Presentiel session 1 [5/9]
 **** DONE Introduction à la dysmorphologie
 **** DONE Structuration du génome et mécanismes mutationnels
@@ -197,7 +226,7 @@ Soumis
 :PROPERTIES:
 :CATEGORY: dysmorpho
 :END:
-*** Relire + ficher :anki:
+*** TODO Relire + notes [0/92]
 **** TODO Intro dysmorpho - Verloes
 **** TODO Empreinte génomique
 **** TODO Beckwith, Silver Russel
@@ -290,11 +319,6 @@ Soumis
 **** TODO Cowden, Gorlin (P Goizet)
 **** TODO Syndrome de Kleefstra (L Perrin)
 **** TODO Téloméropathies (T Leblanc)
-*** DONE QROC 3
-*DEADLINE: <2022-06-18 Sat>
-*** DONE QROC S2
-*CLOSED: [2022-04-16 Sat 23:42] DEADLINE: <2022-04-16 Sat 23:59>
-*** DONE Mémoire
 * Divers
 ** TODO Cadeau mariage :joris:
 SCHEDULED: <2022-08-04 Thu>

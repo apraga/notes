@@ -1,10 +1,4 @@
 Voir [[file:books-lists][books lists]] pour des idées
-* Génétique :genetique:
-** TODO Collège
-*** DONE Chap 9 Anomalies génétiques à l’échelle du gène
-*** DONE Chap 10: Principales techniques d’analyses des anomalies génétiques à l’échelle du gène
-** TODO Biologie cellulaire Dunod
-** TODO Biologie chimie Dunod
 * Computer science :cs:
 ** HOLD The art of computer programming, volume 1
 ** HOLD Haskell Programming From First Principles [5/31]

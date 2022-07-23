@@ -938,3 +938,41 @@ faire avec le CSV mais les données sont éparpillées
    3. Convertir l'Id nutrient (nutrient_{nbr} = nutrient_{id}) en son
       nom (nutrient_{nbr})avec nutrient.csv
 
+
+* DONE QROC 3
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-07-23 Sat 11:04
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Génétique/DIU dysmorpho
+:ARCHIVE_CATEGORY: dysmorpho
+:ARCHIVE_TODO: DONE
+:END:
+*DEADLINE: <2022-06-18 Sat>
+
+* DONE QROC S2
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-07-23 Sat 11:04
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Génétique/DIU dysmorpho
+:ARCHIVE_CATEGORY: dysmorpho
+:ARCHIVE_TODO: DONE
+:END:
+*CLOSED: [2022-04-16 Sat 23:42] DEADLINE: <2022-04-16 Sat 23:59>
+
+* DONE Mémoire
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-07-23 Sat 11:04
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Génétique/DIU dysmorpho
+:ARCHIVE_CATEGORY: dysmorpho
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE Mail Dijon pour expliquer que c’est décalé :interchu:
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-07-23 Sat 11:04
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Internat
+:ARCHIVE_CATEGORY: internat
+:ARCHIVE_TODO: DONE
+:END:
