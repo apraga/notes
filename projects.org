@@ -109,10 +109,9 @@ Mail envoyé par Juliette
 Non
 *** TODO Contact Hirisch pour clinique de ses patients
 ** Mustard :mustard:
-*** Données
-**** DONE Import Labkey
-**** TODO Clinique, OCR et nettoyage données labkey [3/1199]
-Script : on convertit tous les pdf en png puis OCR avec tesseract pour les transformer en texte
+*** Scripts
+**** Script pour données labkey
+on convertit tous les pdf en png puis OCR avec tesseract pour les transformer en texte
 On supprimer les header et footer à la main
 #+begin_src sh
 dir=/alexi/Documents/mustard/PED1001/1001
@@ -148,7 +147,17 @@ rm $dir/courrier*.txt.bak
 :nettoyage: 1
 :END:
 ***** DONE PED1001
-***** TODO PED1004
+:PROPERTIES:
+:clinique: 1
+:ocr:      1
+:nettoyage: 1
+:END:
+***** DONE PED1004
+:PROPERTIES:
+:clinique: 1
+:ocr:      1
+:nettoyage: 1
+:END:
 ***** TODO PED1007
 ***** TODO PED1009
 ***** TODO PED1013
@@ -1345,6 +1354,11 @@ rm $dir/courrier*.txt.bak
 ***** TODO PED9559
 ***** TODO PED9740
 
+*** Données
+**** DONE Import Labkey
+**** TODO Clinique, OCR et nettoyage données labkey [4/1199]
+**** TODO Refaire export csv
+SCHEDULED: <2022-07-24 Sun>
 **** KILL Dxcare
 ***** DONE Demande Dijon
 ***** KILL Demande DPO Besançon

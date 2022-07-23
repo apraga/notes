@@ -5384,3 +5384,6 @@ Compression: 3x9
 Circuit 3x {2xhaut} - bas
 * <2022-07-20 Wed> Tricking
 Kicks + raize + bkick
+
+* <2022-07-23 Sat> Tricking
+Kicks + raize + bkick
