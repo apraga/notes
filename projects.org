@@ -1382,6 +1382,9 @@ Voir avec Paul
 *** TODO [[https://www.coursera.org/learn/machine-learning/home/info][Andrew NG coursera]]
 *** TODO The Deep Learning Book: https://www.deeplearningbook.org/front_matter.pdf
 *** TODO Put tensor flow or torch on a linux box and run examples: http://cs231n.github.io/aws-tutorial/
+*** Autres cours en lignes
+**** https://mlcourse.ai/book/index.html
+**** https://www.fast.ai/
 * Banque :banque:
 ** TODO Compte et CB société générale :banque:
 *** DONE Souscription
@@ -1450,10 +1453,10 @@ Soumis
 **** TODO Mucoviscidose
 **** TODO Bases sur le conseil génétique
 **** TODO SEPI et TD
-*** TODO E-learning session 1 [4/6]
+*** TODO E-learning session 1 [5/6]
 **** DONE maladies endocriniennes et métabolisme
 **** DONE anomalies de la croissance
-**** TODO hématologie
+**** DONE hématologie
 **** TODO maladies du tissu conjonctif
 **** DONE Oncogénétique
 **** DONE dermatogénétique

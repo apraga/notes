@@ -1023,8 +1023,7 @@ AD
 deletion de 11p13 (syndrome WAGR) et en 11p14 (gène BDNF)
 * TODO Séquence de Pierre-Robin
 * TODO Trisomie 13
-* TODO Trisomie 18
-* TODO Trisomie 21
+* TODO Trisomie 18 * TODO Trisomie 21
 * Neurofibromatose
 ** NF1 et NF2 s’oppose
 |           | NF1             | NF2          |
@@ -1220,3 +1219,92 @@ Tableau majeurs
 | polyglobulie  | polyglobulie  | GR normaux       |
 ** Dépistage prénatal
 Si 2 parents originires de pays à risques
+* Marfan
+- fragilité du tissu de soutien
+- AD
+** Critères diagnostiques
+Pas d’atcd familiaux
+- Dissection/dilatation aorte ascendante (Z score \ge 2) et
+  - ectopie du cristallin
+  - ou mutation /FBN1/
+  - ou score systémique \ge 7
+- ou : ectopie du cristallin et mutation FBN1 associée à une dilatation aortique
+
+ATCD familiaux au 1er degré
+- Dissection/dilatation aorte ascendante (Z score \ge 2 si \ge 20 ans, \ge 3 sinon) et
+- ou ectopie du cristallin
+- ou score systémique \ge 7
+
+Score systémique
+| Signe du poignet *et* pouce                         | 3 |
+| Signe du poignet *ou* pouce                         | 1 |
+| Pectus carinatum                                    | 2 |
+| Pectus excavatum / asymétrie thoracique             | 1 |
+| déformation arrière-pied                            | 2 |
+| pieds plats                                         | 1 |
+| pneumothorax                                        | 2 |
+| ectasie durale                                      | 2 |
+| protrusion acétabulaire                             | 2 |
+| segemnt sup/inf < 0.86 *et* envergure/taille > 1.05 | 1 |
+| scoliose/cyphose thoraco-lombaire                   | 1 |
+| extension coudes > 170°                             | 1 |
+| \ge 3 signes cranio-faciaux                         | 1 |
+| vergetures                                          | 1 |
+| myopie                                              | 1 |
+| proalpsus de la valve mitrale                       | 1 |
+
+[[file:img/marfan-acetabulum.png]]
+[[file:img/marfan-arachnodactylie.png]]
+[[file:img/marfan-carinatum.png]]
+[[file:img/marfan-excavatum.png]]
+[[file:img/marfan-pouce.png]]
+
+*** Signes cranio-faciaux :
+- fente palpépbrales vers le bas
+- hypoplasie malaire
+- microrétrognathie
+- palais ogival
+- dents chevauchantes
+- visage long et étroit avec énophtalmie
+
+*** Luxation du cristallin
+visable à l’exam direct seulement à partir du stade 3 ou 4
+[[file:img/marfan-cristallin.png]]
+68% de ces luxations sont dans le cadre d’un marfan
+
+*** Ectasie lombo-sacrée
+- Élargissement canal rachidient L5
+- amincissement pédicules et lames vertébrales
+[[file:img/marfan-ectasie.png]]
+
+** Moléculaire
+/FBN1/ :
+- 45 exons
+- pas de hotspot
+- mutation ponctuelles, privées
+Types de mutations
+- faux-sens : formes néonatale ou incomplète
+- altérant de cadre de lectures (protéine tronquée)
+- site d’épissage : souvent dans phénotypes sévère (monomères raccourcis de fibrilline)
+*** Forme néonatale
+- plus sévère, plus précoce
+- Exons 24-32
+** Apparentés
+Classification génétique
+- composant de la matrice extracellulaire : FBN1, MFAP5, MAT2A
+- voie signalisation TGFβ : TGFBR1 et 2, TGFB2 et 2, SMAD2 et 3
+- composant de l’appareil contractile des cellules musculaires lisses : ACTA2, MYH11, MYLK, PRKG1
+Formes syndromiques
+ - Loeys-Dietz
+ - anrévrisme de l’arthrose, tortuosité artérieelle
+ - dysfunction musculaire
+ - Marfan néonatal
+ - Marfan
+Non syndromique
+- anévrysme aortiques thoraciques familiaux
+- dissections aortiques familiales
+** Grossesse
+Complication: cardiovasucailer (fragilité), obstétricale (squelete, hypotonie des tissus -> préma)
+DPN si mutation familiale
+** Prise en charge
+Quelque soit la mutation : limitation des sports, β-bloquant, surveillance échocardio annuelle
