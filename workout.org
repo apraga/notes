@@ -5387,3 +5387,6 @@ Kicks + raize + bkick
 
 * <2022-07-23 Sat> Tricking
 Kicks + raize + bkick
+* <2022-07-24 Sun> Running
+30min avec 8min de montée + 2min
+Peut augmenter l’intensitée à la montée !
