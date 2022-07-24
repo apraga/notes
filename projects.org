@@ -114,18 +114,25 @@ Non
 on convertit tous les pdf en png puis OCR avec tesseract pour les transformer en texte
 On supprimer les header et footer à la main
 #+begin_src sh
-dir=/alexi/Documents/mustard/PED1001/1001
+dir=/alexi/Documents/mustard/PED1007
 k=1
 for i in $dir/*.pdf
 do
     j=${i%.pdf} #bash magic, remove the suffix but keep the directory
     courrier=$dir/courrier$k
-    pdftoppm -png $j.pdf >> $courrier.png
-    tesseract -l fra $courrier.png $courrier
+    pdftoppm -png $j.pdf $courrier
+    # Manage multi-pages pdf
+    for j in $courrier-*.png
+    do
+        l=${j%.png}
+        tesseract -l fra $j $l
+    done
+    cat $courrier-*.txt > $courrier.txt
+    rm $courrier-*.txt
     # Now we remove the header (everyting up to the date)
-    sed -i.bak -n '/^Dijon, le/,$p' $courrier.txt
+    # sed -i.bak -n '/^Dijon, le/,$p' $courrier.txt
     # And everything after the footer
-    sed -i.bak '/^BOCAGE SUD.*DIJON CEDEX$/,$d' $courrier.txt
+    # sed -i.bak '/^BOCAGE SUD.*DIJON CEDEX$/,$d' $courrier.txt
     k=$((k+1))
 done
 rm $dir/courrier*.png
@@ -134,6 +141,9 @@ rm $dir/courrier*.txt.bak
 
 #+RESULTS:
 
+*** Données
+**** DONE Import Labkey
+**** TODO Clinique, OCR et nettoyage données labkey [4/1199]
 ***** DONE PED0052
 :PROPERTIES:
 :clinique: 1
@@ -1354,9 +1364,6 @@ rm $dir/courrier*.txt.bak
 ***** TODO PED9559
 ***** TODO PED9740
 
-*** Données
-**** DONE Import Labkey
-**** TODO Clinique, OCR et nettoyage données labkey [4/1199]
 **** TODO Refaire export csv
 SCHEDULED: <2022-07-24 Sun>
 **** KILL Dxcare
