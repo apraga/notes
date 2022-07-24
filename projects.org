@@ -114,9 +114,9 @@ Non
 on convertit tous les pdf en png puis OCR avec tesseract pour les transformer en texte
 On supprimer les header et footer à la main
 #+begin_src sh
-dir=/alexi/Documents/mustard/PED1007
+dir=/alexi/Documents/mustard/PED1013
 k=1
-for i in $dir/*.pdf
+for i in $dir/courrier*.pdf
 do
     j=${i%.pdf} #bash magic, remove the suffix but keep the directory
     courrier=$dir/courrier$k
@@ -143,34 +143,14 @@ rm $dir/courrier*.txt.bak
 
 *** Données
 **** DONE Import Labkey
-**** TODO Clinique, OCR et nettoyage données labkey [4/1199]
+**** TODO Clinique, OCR et nettoyage données labkey [8/1199]
 ***** DONE PED0052
-:PROPERTIES:
-:clinique: 1
-:ocr:      1
-:nettoyage: 1
-:END:
 ***** DONE PED0105
-:PROPERTIES:
-:clinique: 1
-:ocr:      1
-:nettoyage: 1
-:END:
 ***** DONE PED1001
-:PROPERTIES:
-:clinique: 1
-:ocr:      1
-:nettoyage: 1
-:END:
 ***** DONE PED1004
-:PROPERTIES:
-:clinique: 1
-:ocr:      1
-:nettoyage: 1
-:END:
-***** TODO PED1007
-***** TODO PED1009
-***** TODO PED1013
+***** DONE PED1007
+***** DONE PED1009
+***** DONE PED1013
 ***** TODO PED1015
 ***** TODO PED1026
 ***** TODO PED1027
@@ -284,7 +264,7 @@ rm $dir/courrier*.txt.bak
 ***** TODO PED1622
 ***** TODO PED1623
 ***** TODO PED1633
-***** TODO PED1634
+***** DONE PED1634
 ***** TODO PED1635
 ***** TODO PED1638
 ***** TODO PED1679
@@ -1447,7 +1427,216 @@ Soumis
 *** TODO 28. Mucoviscidose
 *** TODO 29. Xfragile
 
-** TODO Biologie cellulaire Dunod
+** TODO Biologie cellulaire et moléculaire Dunod [22/209]
+*** DONE Fiche 1
+*** DONE Fiche 2
+*** DONE Fiche 3
+*** DONE Fiche 4
+*** DONE Fiche 5
+*** DONE Fiche 6
+*** DONE Fiche 7
+*** DONE Fiche 8
+*** DONE Fiche 9
+*** DONE Fiche 10
+*** DONE Fiche 11
+*** DONE Fiche 12
+*** DONE Fiche 13
+*** DONE Fiche 14
+*** DONE Fiche 15
+*** DONE Fiche 16
+*** DONE Fiche 17
+*** TODO Fiche 18
+*** TODO Fiche 19
+*** TODO Fiche 20
+*** TODO Fiche 21
+*** TODO Fiche 22
+*** TODO Fiche 23
+*** TODO Fiche 24
+*** TODO Fiche 25
+*** TODO Fiche 26
+*** TODO Fiche 27
+*** TODO Fiche 28
+*** DONE Fiche 29
+*** TODO Fiche 30
+*** TODO Fiche 31
+*** TODO Fiche 32
+*** TODO Fiche 33
+*** TODO Fiche 34
+*** TODO Fiche 35
+*** TODO Fiche 36
+*** TODO Fiche 37
+*** TODO Fiche 38
+*** TODO Fiche 39
+*** TODO Fiche 40
+*** TODO Fiche 41
+*** TODO Fiche 42
+*** DONE Fiche 43
+*** TODO Fiche 44
+*** DONE Fiche 45
+*** DONE Fiche 46
+*** DONE Fiche 47
+*** TODO Fiche 48
+*** TODO Fiche 49
+*** TODO Fiche 50
+*** TODO Fiche 51
+*** TODO Fiche 52
+*** TODO Fiche 53
+*** TODO Fiche 54
+*** TODO Fiche 55
+*** TODO Fiche 56
+*** TODO Fiche 57
+*** TODO Fiche 58
+*** TODO Fiche 59
+*** TODO Fiche 60
+*** TODO Fiche 61
+*** TODO Fiche 62
+*** TODO Fiche 63
+*** TODO Fiche 64
+*** TODO Fiche 65
+*** TODO Fiche 66
+*** TODO Fiche 67
+*** TODO Fiche 68
+*** TODO Fiche 69
+*** TODO Fiche 70
+*** TODO Fiche 71
+*** TODO Fiche 72
+*** TODO Fiche 73
+*** TODO Fiche 74
+*** TODO Fiche 75
+*** TODO Fiche 76
+*** TODO Fiche 77
+*** TODO Fiche 78
+*** TODO Fiche 79
+*** TODO Fiche 80
+*** TODO Fiche 81
+*** TODO Fiche 82
+*** TODO Fiche 83
+*** TODO Fiche 84
+*** TODO Fiche 85
+*** TODO Fiche 86
+*** TODO Fiche 87
+*** TODO Fiche 88
+*** TODO Fiche 89
+*** TODO Fiche 90
+*** TODO Fiche 91
+*** TODO Fiche 92
+*** TODO Fiche 93
+*** TODO Fiche 94
+*** TODO Fiche 95
+*** TODO Fiche 96
+*** TODO Fiche 97
+*** TODO Fiche 98
+*** TODO Fiche 99
+*** TODO Fiche 100
+*** TODO Fiche 101
+*** TODO Fiche 102
+*** TODO Fiche 103
+*** TODO Fiche 104
+*** TODO Fiche 105
+*** TODO Fiche 106
+*** TODO Fiche 107
+*** TODO Fiche 108
+*** TODO Fiche 109
+*** TODO Fiche 110
+*** TODO Fiche 111
+*** TODO Fiche 112
+*** TODO Fiche 113
+*** TODO Fiche 114
+*** TODO Fiche 115
+*** TODO Fiche 116
+*** TODO Fiche 117
+*** TODO Fiche 118
+*** TODO Fiche 119
+*** TODO Fiche 120
+*** TODO Fiche 121
+*** TODO Fiche 122
+*** TODO Fiche 123
+*** TODO Fiche 124
+*** TODO Fiche 125
+*** TODO Fiche 126
+*** TODO Fiche 127
+*** TODO Fiche 128
+*** TODO Fiche 129
+*** TODO Fiche 130
+*** TODO Fiche 131
+*** TODO Fiche 132
+*** TODO Fiche 133
+*** TODO Fiche 134
+*** TODO Fiche 135
+*** TODO Fiche 136
+*** TODO Fiche 137
+*** TODO Fiche 138
+*** TODO Fiche 139
+*** TODO Fiche 140
+*** TODO Fiche 141
+*** TODO Fiche 142
+*** TODO Fiche 143
+*** TODO Fiche 144
+*** TODO Fiche 145
+*** TODO Fiche 146
+*** TODO Fiche 147
+*** TODO Fiche 148
+*** TODO Fiche 149
+*** TODO Fiche 150
+*** TODO Fiche 151
+*** TODO Fiche 152
+*** TODO Fiche 153
+*** TODO Fiche 154
+*** TODO Fiche 155
+*** TODO Fiche 156
+*** TODO Fiche 157
+*** TODO Fiche 158
+*** TODO Fiche 159
+*** TODO Fiche 160
+*** TODO Fiche 161
+*** TODO Fiche 162
+*** TODO Fiche 163
+*** TODO Fiche 164
+*** TODO Fiche 165
+*** TODO Fiche 166
+*** TODO Fiche 167
+*** TODO Fiche 168
+*** TODO Fiche 169
+*** TODO Fiche 170
+*** TODO Fiche 171
+*** TODO Fiche 172
+*** TODO Fiche 173
+*** TODO Fiche 174
+*** TODO Fiche 175
+*** TODO Fiche 176
+*** TODO Fiche 177
+*** TODO Fiche 178
+*** TODO Fiche 179
+*** TODO Fiche 180
+*** TODO Fiche 181
+*** TODO Fiche 182
+*** TODO Fiche 183
+*** TODO Fiche 184
+*** TODO Fiche 185
+*** TODO Fiche 186
+*** TODO Fiche 187
+*** TODO Fiche 188
+*** TODO Fiche 189
+*** TODO Fiche 190
+*** TODO Fiche 191
+*** TODO Fiche 192
+*** TODO Fiche 193
+*** TODO Fiche 194
+*** TODO Fiche 195
+*** TODO Fiche 196
+*** TODO Fiche 197
+*** TODO Fiche 198
+*** TODO Fiche 199
+*** TODO Fiche 200
+*** TODO Fiche 201
+*** TODO Fiche 202
+*** TODO Fiche 203
+*** TODO Fiche 204
+*** TODO Fiche 205
+*** TODO Fiche 206
+*** TODO Fiche 207
+*** TODO Fiche 208
+*** TODO Fiche 209
 ** TODO Biologie chimie Dunod
 ** TODO DES [0/4]
 *** TODO Presentiel session 1 [5/9]

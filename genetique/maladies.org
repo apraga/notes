@@ -1420,3 +1420,48 @@ Phénotype normal
 - grande taille
 - généralement fertile mais infertilité un peu augmenté
 - pas de DI
+* Mutation somatiques de PIK3CA
+** Macrodactylies de type 1
+- 1/100000 naissances
+- Atteinte d’un territoire nerveux avec
+- hypertrophie du tissu adipeux et hypercroissance osseuse
+- Histologie : nerf élargi et allongé
+- Pas de cas de dégénérescence
+ [[file:img/macrodactylie-1.png]]
+
+** Hyperplasie fibro-adipeuse
+- Hypertrophie segmentaire progressive du tissu sous cutané musculaire et adipeux avec hypercroissance osseuse
+- Signes associés :
+  - malformations vasculaires,
+  - naevi, polydactylie, kystes testiculaires ou épididymaux, hydrocèle
+
+#+caption: Lindhurst et al 2012
+[[file:img/pik3ca-adipeux.png]]
+** TODO MCAP
+** TODO HMEG
+** TODO KTS
+** [[*Syndrome CLOVES][Syndrome CLOVES]]
+* Syndrome CLOVES :PIK3CA:
+#+caption: Kurek et al 2012
+[[file:img/syndrome-cloves.png]]
+- Congenital
+- Lipomatous : tronc+, membre
+- Overgrowth of the trunk (asymetric)
+- Vascular malformation : lymphatic, capillary, venous, combined
+- Epidermal nevi
+- Skeletal/spinal anomalies : pieds et mains large, sandal-ap, inégalité de longeur de membre
++ rénal : hypoplasie rénale, tumeur de Wilms
+* Syndrome de Cowden
+PTEN, PIK3CA, AKT1
+- Macrocéphalie
+- Hamartomes multiples se formant sur la peau, la poitrine, la thyroïde, le tractus gastrointestinal, l'endomètre et le cerveau
+- Prédisposition aux cancers : sein, endomètre, thyroïde
+- Manifestations cutanées : trichilemmome, papillomatose de la muqueuse orale, kératose palmoplantaire
+- Manifestations neurologiques
+- Manifestations gastro-intestinales
+- Transmission autosomique dominante
+* Syndrome de Klippel-Trenaunay
+- Malformations vasculaires : angiome plan (composante veineuse)
+- Varices : anomalies de trajet et du développement des veines
+- Hypertrophie des os et des tissus sous jacents : inégalité de longueur
+[[file:img/syndrome-klippel-trenaunay.png]]
