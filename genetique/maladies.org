@@ -1308,3 +1308,114 @@ Complication: cardiovasucailer (fragilité), obstétricale (squelete, hypotonie 
 DPN si mutation familiale
 ** Prise en charge
 Quelque soit la mutation : limitation des sports, β-bloquant, surveillance échocardio annuelle
+* Dysgonomosomie
+- chrY = 53MB 1.7% gènes 50 gènes
+  initialement homologue à l’X puis évolution : divergence suite à des anomalies de structures répétées -> plus d’appariement possible donc perte de matériel
+- chrX = taille 160Mb 5% génome 1000 gènes
+
+** Régions pseudo-autosomique
+- régions homologues due à la origine commune
+- PAR1 et 2 aux extrémités du chrX et Y
+- cross over possible
+  PAR1 = 3Mb 24 gènes
+  PAR2 = 300kbp 5 gènes
+
+Y : ont des homologue fonctionnels sur l’X en dehors des régions PAR
+15 gènes n’en ont pas (spermatogènes)
+-> majorité du X est spécifique
+** Anomalies de nombres
+Le plus souvent de décovuerte fortuite ou pendant un bilan d’infertilité
+- moins de gènes sur Y
+- inactivation
+
+XXX ou YY: retentissement très lèger
+Nombreaux X ou Y : conséquences plus sévère
+Pas de X = non viable
+
+-[[*47XYY][ 47XYY]]
+-[[*47XXX][ 47XXX]]
+[[*Syndrome de Klinefelter][- Syndrome de Klinefelter]]
+- [[*Syndrome de Turner][Syndrome de Turner]]
+** Polygonomosomie
+48 ou 49 chromosome
+Phénotype plus sévre : polymalfo + DI
+Plus il y a de X, plus le tabelau est sévère
+** IMG
+* Syndrome de Turner
+Seule monosomie viable
+1/2500
+- 50% homogène (toutes les cellules)
+- 25% en mosaïque
+- 25% 2 chr X : un normal, autre avec anomalie de structures (isochromosome)
+80 % d’origine paternelle
+
+** Anténatal
+- Oedeme du coup, hygroma , hydrops foetalis
+- Malfo cardiovasc (coractaction aortique) (rein fer à chevel)
+- Le plus souvent RAS
+- Petite taille
+** Postnatal
+- Lymphoedome main et pieds (se résobre)
+- Pterygium colli
+- Malformation
+[[file:img/bonnevie-ulrich.png]]
+** Enfance
+- taille adulte <_1m45 (1 seul SHOX)
+- Croissane caractéritistuique avec ralentissement caractéristique
+Retard puberté, aménorhrrée primaire (ovaires sclérosés non fonctionnels)
+- Cou court, cheveux bas implantés sur la nuque, micrognathie, genou valgum, palais ogival, naevi pigmentaire, thorax en bouclier avec mamelon écarté, brievté 4e métacarpien
+- malfo :
+  - 30% cardiaque (mineurer le plus souvent, sur l’aorte)
+  HTA précoce fréquente 40%
+  -> surveillance cardio vasc à vie
+- rénale : rein unique/fer à cheval/malfo urinaire 40% (favorise infection urinaire)
+- ostéoporose (carence ostrogène), diabète, hypothyroidie, coeliaque
+- augmentation risque luxation hanche,
+ - ORL
+- strabisme
+- intelligence normale mais souvent difficulté d’apprentissage spécifiques
+** Fertilié
+- Grosseses spontanées < 1% (mosaïque)
+- Don d’ovocyte possible mais grosses à haut risque (risque cardiovasculaire)
+** Situation particulaire
+X en anneau de très petite taille
+- pas de XIST (inactive X) -> disomie fonctionnelle (expression double dose) -> tableau plus sévère avec DI
+- 45X/46XY anomalie DSD, clinique variable (morphotype complètement masculin) ->_haut risque de gonadoblastome)
+
+  Oestrogène pour induire puberté
+  TT par hormone de crosisance
+* Syndrome de Klinefelter
+47 XXY
+1/660 I
+- 80-90% homogène
+  X supplémentaire maternel ou pat
+- mosaique 10-20% 46XY/47XXY souvent moins sévères
+**  Manif clinique variables
+imperceptible durant l’enfance
+
+- 90% fortuit lors bilan infertilité
+Puberté
+- gynémocastie uni/bilatéral
+- grande taille SHOX x3
+- petites testicules mais pénis normal
+- pilosité peu développement
+- pulpe dentaire peu développé
+- infertilité primaire par absence de spermatosoide
+Pas de DI mais retard possible
+** PEC
+- ortophonie si retard langage
+- biopsie testiculaire postiive 50% des cas ->_ICSI possible
+- testostérone début adolescence
+* 47XXX
+X le plus souvent maternelle
+1/1000
+forte proportion asympto
+- taille plus grande
+- fertilité le plus souvent normale mais plus d’IOP (3% des IOP)
+- basse QI ? remise en question sur anciennes études
+* 47XYY
+1/1000
+Phénotype normal
+- grande taille
+- généralement fertile mais infertilité un peu augmenté
+- pas de DI
