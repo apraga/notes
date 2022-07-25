@@ -114,7 +114,7 @@ Non
 on convertit tous les pdf en png puis OCR avec tesseract pour les transformer en texte
 On supprimer les header et footer à la main
 #+begin_src sh
-dir=/alexi/Documents/mustard/PED1013
+dir=/alexi/Documents/mustard/PED1015
 k=1
 for i in $dir/courrier*.pdf
 do
@@ -140,10 +140,52 @@ rm $dir/courrier*.txt.bak
 #+end_src
 
 #+RESULTS:
+**** Renommer les dossiers PED
+#+begin_src python :results output
+import pandas as pd
+import os
+import os.path
+dir1 = "/alexi/Documents/mustard/"
+dir2 = "/alexi/Documents/mustard-new/"
+p  = pd.read_csv(os.path.join(dir1, "Patients_2022-02-02_11-44-03.tsv"), sep='\t')
+# id + p.nom + " " + p.prenom + " " + p.date_de_naissance
+for i in p.index:
+    split = p['patientID'][i].split(".")
+    # Only store the index case
+    if split[1] == "1":
+        dest = p.nom[i].upper() + " " + p.prenom[i] + " " + p.date_de_naissance[i]
+        print(f"ok {split[0]} {dest}")
+        src = os.path.join(dir1, split[0])
+        if os.path.exists(src):
+            if p.nom[i] != "Non renseigné":
+                os.rename(src, os.path.join(dir2, dest))
+            else:
+                os.rename(src, os.path.join(dir2, split[0]))
+#+end_src
+
+**** Générer clinique
+#+begin_src python :results output
+import pandas as pd
+import os
+import os.path
+dir = "/alexi/Documents/mustard/"
+p  = pd.read_csv(os.path.join(dir, "Patients_2022-02-02_11-44-03.tsv"), sep='\t')
+# id + p.nom + " " + p.prenom + " " + p.date_de_naissance
+f = open(os.path.join(dir, "clinique2.csv"), 'w')
+for i in p.index:
+    split = p['patientID'][i].split(".")
+    # Only store the index case
+    if split[1] == "1":
+        folder = p.nom[i].upper() + " " + p.prenom[i] + " " + p.date_de_naissance[i]
+        if os.path.exists(os.path.join(dir, folder)):
+            f.write(split[0] + ";" + p.nom[i].upper() + ";" + p.prenom[i] + ";" + p.date_de_naissance[i] + "\n")
+#+end_src
+
+#+RESULTS:
 
 *** Données
 **** DONE Import Labkey
-**** TODO Clinique, OCR et nettoyage données labkey [8/1199]
+**** TODO Clinique, OCR et nettoyage données labkey [9/1199]
 ***** DONE PED0052
 ***** DONE PED0105
 ***** DONE PED1001
@@ -151,7 +193,7 @@ rm $dir/courrier*.txt.bak
 ***** DONE PED1007
 ***** DONE PED1009
 ***** DONE PED1013
-***** TODO PED1015
+***** DONE PED1015
 ***** TODO PED1026
 ***** TODO PED1027
 ***** TODO PED1034
@@ -1357,7 +1399,6 @@ Voir avec Paul
 *** Stockage
 **** DONE Accès scality au travail
 **** WAIT VPN pour Jehanne
-**** 
 ** Apprendre le machine learning
 :PROPERTIES:
 :CATEGORY: machine learning
