@@ -1460,8 +1460,48 @@ PTEN, PIK3CA, AKT1
 - Manifestations neurologiques
 - Manifestations gastro-intestinales
 - Transmission autosomique dominante
+
 * Syndrome de Klippel-Trenaunay
 - Malformations vasculaires : angiome plan (composante veineuse)
 - Varices : anomalies de trajet et du développement des veines
 - Hypertrophie des os et des tissus sous jacents : inégalité de longueur
 [[file:img/syndrome-klippel-trenaunay.png]]
+
+* Infertilité
+- 1 an de rapports sexuels non protégés sans concevoir
+- dégradation progressive et importante de la fertilité (homme + animal) -> modification environmentales
+- génétique = 50%
+- 1 couple sur 8
+
+** Bilan
+-  Examen clinique (pilosité, varicocèle)
+-  Bio : LH, FSH, AMH
+-  homme : spermogramme
+-  écho pelvienne
+-  Bilan génétique selon la clinique++ (nb causes génétiques) -> importance du phénotype
+** Masculine
+*** Spermatogènes
+74 jours:
+1. multiplocation mitose des cellules
+2. méiose  (réduction matériel génétique)
+3. différentiation (compaction chromatine, formation achrosome, flagelle)
+NB: flagelle ressemble structurellement à des cils
+Contrôlé par 2000 gènes
+*** qualitatif : asthénozoospermie (mobilité), tératozoospermie (forme)
+*** quantitatif : oligozoospermie (< 1million/mL), azoospermie
+Azoospermie obstructive
+- /CFTR/: atrésie canaux déférents (98% des muco) -> mutation dans 80%
+  - mutation mineure + sévère = atrésie seule
+  - mutation plus sévère : muco
+    variant 5T = 5% pop générale mais x10 si agénésie canaux déférents. Saut d’exon possible
+- /ADGRG2/ : stase du canaux déférent. 1% des azoospermie obstructive
+Défaut de production
+- chromosomique :5-7% des patients infertiles
+  1. Nombre :
+     - [[*Syndrome de Klinefelter][Syndrome de Klinefelter]] = cause génétique la plus fréquente
+        Spermatogènes résiduelle (50% biopsie positive)
+        augmentation de taux d’aneuploide (T12)
+     - 47XYY
+     - marqueurs surnuméraires
+  2. Structure
+     - Translocation robertsonnienne : 2% des hommes infertiles.

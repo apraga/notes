@@ -56,7 +56,7 @@ Liste de parser : https://tomassetti.me/parsing-in-python/
 :CATEGORY: aya
 :END:
 **** TODO Lire dialogue fin leçon 10
-SCHEDULED: <2022-04-03 Sun>
+SCHEDULED: <2022-07-30 Sat>
 * Internat
 :PROPERTIES:
 :CATEGORY: internat
@@ -78,7 +78,7 @@ Revient de vacances à ce moment environ
 ** TODO janvier 2022
 ** TODO février 2022
 ** TODO Mars 2022
-SCHEDULED: <2022-06-12 Sun>
+SCHEDULED: <2022-07-30 Sat>
 ** TODO Avril 2022
 ** TODO Mail 2022
 * Recherche
@@ -1387,7 +1387,7 @@ SCHEDULED: <2022-07-24 Sun>
 **** TODO Virement pour éviter les défauts de rélèvements
 * FreeBSD :freebsd:
 ** TODO ormolu 0.5.0.0
-SCHEDULED: <2022-05-20 Fri>
+SCHEDULED: <2022-07-30 Sat>
 
 ** Kitty
 *** KILL ne compile plus
@@ -1638,7 +1638,7 @@ Soumis
 *** TODO Fiche 208
 *** TODO Fiche 209
 ** TODO Biologie chimie Dunod
-** TODO DES [0/4]
+** TODO DES [1/4]
 *** TODO Presentiel session 1 [5/9]
 **** DONE Introduction à la dysmorphologie
 **** DONE Structuration du génome et mécanismes mutationnels
@@ -1649,11 +1649,11 @@ Soumis
 **** TODO Mucoviscidose
 **** TODO Bases sur le conseil génétique
 **** TODO SEPI et TD
-*** TODO E-learning session 1 [5/6]
+*** DONE E-learning session 1 [6/6]
 **** DONE maladies endocriniennes et métabolisme
 **** DONE anomalies de la croissance
 **** DONE hématologie
-**** TODO maladies du tissu conjonctif
+**** DONE maladies du tissu conjonctif
 **** DONE Oncogénétique
 **** DONE dermatogénétique
 *** TODO Presentiel session 2 [0/5]
@@ -1662,7 +1662,9 @@ Soumis
 **** TODO Pathologies fréquentes en génétique clinique
 **** TODO Génome humain : normal et pathologique
 **** TODO Maladies métaboliques
-*** TODO E-learning session 2 [1/5]
+*** TODO E-learning session 2 [1/6]
+**** STRT Infertilité
+-> cours 1, diapo 22
 **** DONE Syndromes microdélétionnels
 **** TODO Dysgonosomies
 **** TODO Cancer du colon: Maladie de Lynch et CMMRD
@@ -1771,4 +1773,4 @@ SCHEDULED: <2022-08-04 Thu>
 ** TODO Cadeaux mariage :florian:
 SCHEDULED: <2022-08-04 Thu>
 ** TODO Copier photos famille depuis drive yvain sur drive famille
-SCHEDULED: <2022-05-21 Sat>
+SCHEDULED: <2022-07-30 Sat>
