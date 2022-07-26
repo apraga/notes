@@ -5,8 +5,13 @@
 :END:
 *** DONE Regarder ce qu'Yvain a fait
 ** CentoX
-***** Notes
-*** Extraction de données
+*** Raw data
+**** DONE Ne plus utiliser les .size mais récupérer directement la taille sur le serveur
+CLOSED: [2022-07-26 Tue 17:36]
+**** STRT Faire fonctionner taches récurrente avec Windows
+Erreur 0x1 : a priori résolu en démarrant le script dans le bon répertoire...
+*** Notes
+**** Extraction de données
 - Trop compliqué de travailles sur la structure du pdf
 - Extraire le tableau avec python ?
 - Comparaison
