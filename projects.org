@@ -1710,7 +1710,7 @@ Soumis
 **** TODO Maladies métaboliques
 *** TODO E-learning session 2 [1/6]
 **** STRT Infertilité
--> cours 1, diapo 22
+-> cours 1, diapo 31
 **** DONE Syndromes microdélétionnels
 **** TODO Dysgonosomies
 **** TODO Cancer du colon: Maladie de Lynch et CMMRD

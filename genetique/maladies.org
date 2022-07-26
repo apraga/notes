@@ -1504,4 +1504,22 @@ Défaut de production
      - 47XYY
      - marqueurs surnuméraires
   2. Structure
-     - Translocation robertsonnienne : 2% des hommes infertiles.
+     - Translocation robertsonnienne : 2% des hommes infertiles. -> trivalent (chr 13, chr1, t(13, t14))
+      [[file:img/trivalent.png]]
+       80 des spermatozoide auront un contenu équilibré
+      [[file:img/trivalent-segreg.png]]
+      Autres :
+       - excès nullosomique (13,14,15,22) -> risque disomie maternelle
+       - risque de gamètes disomique sur le 21 -> risque de trisomie
+     - transloc réciproques : majorité ont un contenu déséquilibré
+     - inversion péri (continte le centromère) : proportion variable de gamèter déséquilibér
+       paracentrique : rarement gamiètre déséquilibre (ne franchissent pas la méiose)
+     - complexe : >= 2 chr et >=3 chr : blocacge sévère spermatogenèse
+       ex: chrY isodicentrique, anneau
+     - chrX et bras court du Y : transposition SRY sur X (1%)
+- microdeletion du Y
+  3 régions critiques avec pronotique différenté
+  AZFA = rare, absence de Sertoli seul
+  AZFB = arrêt en méiose
+  AZFC = variable
+  Attentio, biopsie contre-indiquée si AZF a ou b
