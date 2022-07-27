@@ -207,6 +207,9 @@ for i in p.index:
 *** Données
 **** DONE Import Labkey
 **** TODO Clinique, OCR et nettoyage données labkey [9/1199]
+DONE = sur scality
+SRT = traité, non transféré
+
 ***** DONE PED0052
 ***** DONE PED0105
 ***** DONE PED1001
