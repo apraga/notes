@@ -102,17 +102,21 @@ Envoyé <2022-07-22 Fri>
 *** TODO Démarrer appel à collaboration avec Chloé
 SCHEDULED: <2022-10-01 Sat>
 ** NF1 :nf1:
+*** Notes
+- mutation constit retrouvée en somatique mais pas de double hit (une seule allèle)
+- interaction possible avec autres mutation ? pas sur le même chromosome...
+- Regarder si lien possible entre les différentes mutation
+- mutation rare ?
 *** Biblio
 **** TODO article T. Hirsch
 **** TODO Autre case report ?
-*** Trouver autres cas
+*** Trouver autres cas ?
 **** TODO Appel ANDDI rares
 **** TODO Appel ITACA
 *** DONE Accord Domiinque VIAUD
 Mail envoyé par Juliette
 *** DONE Observatoire TED
 Non
-*** TODO Contact Hirisch pour clinique de ses patients
 ** Mustard :mustard:
 *** Scripts
 **** Script pour données labkey
