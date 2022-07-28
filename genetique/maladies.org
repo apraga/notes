@@ -1523,3 +1523,13 @@ Défaut de production
   AZFB = arrêt en méiose
   AZFC = variable
   Attentio, biopsie contre-indiquée si AZF a ou b
+
+* Hypomélanose d’Ito
+Hypopigmentation selon les lignes de Blaschko
+- + atteinte cérébrale et épilepsie
+- hyperpigmentation possible
+- Souvent hémihypertrophy et a
+** Génétique
+- Plutôt mosaïque somatique (nombreuse anomalies chromosomiques rapportées)
+  - MTOR: cerveau, sang, frottis buccal
+- Variants patho germline MTRO aussi rapportés dans syndrome SMith-Kingsmore : DI, macrocéphalie, ventriculomégalie, épilepsie, dysmorphie faciale (hypoplasie étage moyen de la face, hypertélorisme, ensellure nasale, FP en bas et dehors, lèvre supérieure fine, philtrum plat)
