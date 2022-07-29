@@ -104,9 +104,22 @@ SCHEDULED: <2022-10-01 Sat>
 ** NF1 :nf1:
 *** Notes
 - mutation constit retrouvée en somatique mais pas de double hit (une seule allèle)
+  NM_001042492.3(NF1):c.2999G>C (p.Arg1000Pro) probablement patho
+  - non rapporté dans cosmic *mais* c.2998C>T (p.R1000C) est rapportée
+    - dans le foie : homme de 48A
+    - sur la peau : Desmoplastic melanoma (publié dans PMID 26343386,
+     [[https://pubmed.ncbi.nlm.nih.gov/26343386/][PMID 26343386]]
+    [[https://pubmed.ncbi.nlm.nih.gov/28481359/][PMID 28481359]] -> touche
+    [[https://www.wikipathways.org/index.php/Pathway:WP382][voie MAPK]]
 - interaction possible avec autres mutation ? pas sur le même chromosome...
 - Regarder si lien possible entre les différentes mutation
 - mutation rare ?
+- autres mutation NF1 constit + somatique chez Hirsch: monoallélique -> inactivation partielle pourrait jouer un rôle
+  - NM_001042492.3(NF1):c.350T>G (p.Ile117Ser) retrouvée 2x chez un patient
+    - non rapporté dans cosmic
+  - NM_001042492.3(NF1):c.5991G>A (p.Trp1997Ter)
+    - cosmic : rapporté dans pheochromocytome x1 et pheochromocytome x1 (patho)
+-
 *** Biblio
 **** TODO article T. Hirsch
 **** TODO Autre case report ?
