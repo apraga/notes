@@ -103,6 +103,8 @@ Envoyé <2022-07-22 Fri>
 SCHEDULED: <2022-10-01 Sat>
 ** NF1 :nf1:
 *** Notes
+- Regarde NF1 onco atypique (hotspot, voie MAPK impliquée)
+- Vérifier que les 2 autres mutation NF1 ne sont pas constit
 - mutation constit retrouvée en somatique mais pas de double hit (une seule allèle)
   NM_001042492.3(NF1):c.2999G>C (p.Arg1000Pro) probablement patho
   - non rapporté dans cosmic *mais* c.2998C>T (p.R1000C) est rapportée
