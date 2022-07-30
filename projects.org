@@ -1476,8 +1476,10 @@ SCHEDULED: <2022-07-30 Sat>
 *** KILL ne compile plus
 SCHEDULED: <2022-07-17 Sun>
 Non reproductible
-*** DONE v25.2
+*** WAIT v25.2
 Soumis
+** WAIT [[https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=264158][pkgconf est trop lent sur freebsd]]
+Problème persiste avec dernière version
 * Génétique
 ** TODO Collège [3/29]
 *** TODO 1. Architecture du génome
