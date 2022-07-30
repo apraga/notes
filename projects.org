@@ -107,9 +107,7 @@ Envoyé <2022-07-22 Fri>
 SCHEDULED: <2022-10-01 Sat>
 ** NF1 :nf1:
 *** Notes
-- Regarde NF1 onco atypique (hotspot, voie MAPK impliquée)
-- Vérifier que les 2 autres mutation NF1 ne sont pas constit
-- mutation constit retrouvée en somatique mais pas de double hit (une seule allèle)
+- notre mutation : constit retrouvée en somatique mais pas de double hit (une seule allèle)
   NM_001042492.3(NF1):c.2999G>C (p.Arg1000Pro) probablement patho
   - non rapporté dans cosmic *mais* c.2998C>T (p.R1000C) est rapportée
     - dans le foie : homme de 48A
@@ -117,8 +115,11 @@ SCHEDULED: <2022-10-01 Sat>
      [[https://pubmed.ncbi.nlm.nih.gov/26343386/][PMID 26343386]]
     [[https://pubmed.ncbi.nlm.nih.gov/28481359/][PMID 28481359]] -> touche
     [[https://www.wikipathways.org/index.php/Pathway:WP382][voie MAPK]]
+- Autres cancers atypiques avec NF1 ? (hotspot, voie MAPK impliquée)
+- Vérifier que les 2 autres mutation NF1 ne sont pas constit
+- Regardes autres mutation onco NF1 sur ucscs/cosmic
+  cosmic : 498 mutations somatique foie + NF1
 - interaction possible avec autres mutation ? pas sur le même chromosome...
-- Regarder si lien possible entre les différentes mutation
 - mutation rare ?
 - autres mutation NF1 constit + somatique chez Hirsch: monoallélique -> inactivation partielle pourrait jouer un rôle
   - NM_001042492.3(NF1):c.350T>G (p.Ile117Ser) retrouvée 2x chez un patient
@@ -126,12 +127,22 @@ SCHEDULED: <2022-10-01 Sat>
   - NM_001042492.3(NF1):c.5991G>A (p.Trp1997Ter)
     - cosmic : rapporté dans pheochromocytome x1 et pheochromocytome x1 (patho)
 -
-*** Biblio
-**** TODO article T. Hirsch
-**** TODO Autre case report ?
-*** Trouver autres cas ?
-**** TODO Appel ANDDI rares
-**** TODO Appel ITACA
+*** Tâches
+**** TODO Biblio
+***** TODO article T. Hirsch
+***** TODO Autre case report NF1 + hépatoblastome ?
+[cite:@dubbink2018]: 1 patient NF1 + mutation somatique /CNNTB1/
+[cite:@seminog2012] étude épidémio : surrisque de cancer du foie chez patient NF1 (cf note)
+[cite:@ucar2007] 1 cas de NF1 avec hépatoblastome sans confirmation moléculaire
+[cite:@landry2021]: épidémio récente : pas de cas rapporté NF1 + foie
+[cite:@varan2015]: épidémio plus ancienne : idem
+***** TODO NF1 + autres cancers
+***** TODO Pathway
+[cite:@kappler2010]: rien ne correspond
+https://www.nature.com/articles/labinvest2016142
+**** TODO Trouver autres cas ?
+***** TODO Appel ANDDI rares
+***** TODO Appel ITACA
 *** DONE Accord Domiinque VIAUD
 Mail envoyé par Juliette
 *** DONE Observatoire TED
