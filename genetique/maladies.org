@@ -1487,16 +1487,15 @@ PTEN, PIK3CA, AKT1
 3. différentiation (compaction chromatine, formation achrosome, flagelle)
 NB: flagelle ressemble structurellement à des cils
 Contrôlé par 2000 gènes
-*** qualitatif : asthénozoospermie (mobilité), tératozoospermie (forme)
 *** quantitatif : oligozoospermie (< 1million/mL), azoospermie
-Azoospermie obstructive
+**** Azoospermie obstructive
 - /CFTR/: atrésie canaux déférents (98% des muco) -> mutation dans 80%
   - mutation mineure + sévère = atrésie seule
   - mutation plus sévère : muco
     variant 5T = 5% pop générale mais x10 si agénésie canaux déférents. Saut d’exon possible
 - /ADGRG2/ : stase du canaux déférent. 1% des azoospermie obstructive
-Défaut de production
-- chromosomique :5-7% des patients infertiles
+**** Défaut de production
+***** chromosomique :5-7% des patients infertiles
   1. Nombre :
      - [[*Syndrome de Klinefelter][Syndrome de Klinefelter]] = cause génétique la plus fréquente
         Spermatogènes résiduelle (50% biopsie positive)
@@ -1517,13 +1516,130 @@ Défaut de production
      - complexe : >= 2 chr et >=3 chr : blocacge sévère spermatogenèse
        ex: chrY isodicentrique, anneau
      - chrX et bras court du Y : transposition SRY sur X (1%)
-- microdeletion du Y
-  3 régions critiques avec pronotique différenté
+***** microdeletion du Y
+  - récurrente : 3 régions critiques avec pronotique différenté
   AZFA = rare, absence de Sertoli seul
   AZFB = arrêt en méiose
   AZFC = variable
   Attentio, biopsie contre-indiquée si AZF a ou b
 
+  Mécanirme NAHR intra-chromosomique favorisé par séquences répétées (mais composition différentes selon les régions AZF)
+  - courtes AZFA -> se recombine moins souent
+
+  - Deletion partielle AZFc (gr/gr) par densité éléments répétés
+    forte prévalence en population générale (2%)
+     -> prédisposition. Mais dépend de l’ethnie
+***** Hypogonadisme hypogonadotrope (centrale)
+- Retard pubertaire, anosmie
+- Testostérone effondrée, FSH et LH diminué
+
+  Affect dev hypophysaire
+  Défaut moléculaire -> déficit foncionnel
+  Plus connu : syndrome de Kallmann
+  - anomalie migration neurone à GnRH
+    5 gènes 30%
+***** Tous les gènes affectant la spermatogenèse
+Ex: TEX11 = 2% des azoospermies
+perte protéine ->_défaut d’appariement et arrêt du cross-over
+
+On trouve souvent des gènes impliqués en onco
+
+NB: Défaut moléculaire entrainant un blocage méiotique = mauvais pronostic pour biopsie testiculaire
+*** qualitatif
+**** asthénozoospermie (mobilité)
+- peu de cause génétiques connues
+- code canaux ionoiques, dyskinésie ciliaire primitive (syndromique)
+**** tératozoospermie (forme)
+Nb cause génétiques, cliniquement pertinentes
+***** spermatozoide macrocéphales
+tête x3, plusieurs flagelles, + oligo-asthénozoospermie
+/AURKC/: kinase à expression spermatozoide
+- perte de la prot -> blocage pré-méiotique -> CI absolue à ISCI
+- 80% spermm. macrocphalie
+- surtout 2 mutation récerrence
+***** Globolzoospermie
+- petite tête ronde s
+- /DPY19L2/: deletion par NHR sur régions encadrant le gène
+  - absence -> déstabilitation jonction acropaxome et membrane nucléaire
+  - 80% des patients -> on recherche d’abord la délétion
+  - défaut condensation chromatine et fragment ADN
+  - défaut épigénétique impactant le développement de l’embryon -> ICSI à discuter
+***** Anomalies flagellaire (MMAF)
+- courts, enroulés, diamètre irréguliers -> défaut de mobilité
+- 19 gènes : 3 sortes de protéines
+  - péri-axomeme
+  - transport intraflagellaire
+  - axomeme
+- très grande hétérogénéité génétique -> exome/panel
+- 40% des cas sont diagnostiqué
+***** Spermatozoïdes décapités
+/SUN5/ = 50% des patients
+- protéine indispensable du centrosome à la membrane nucléaire
+ICSI avec tête seule ?
+**** échec d’activation ovocytaire
+- Pas de défaut morphologie ou quantité
+- /PLCZ1/
+** En résumé
+
+| Non Obstructive           | Karyotype + Y microdeletion                      |
+| Azoospermia               | Others ?: Based on histology (TEX11, SPINK2 ?)   |
+|                           | TESE (testicular sperm extraction) ?             |
+|---------------------------+--------------------------------------------------|
+| Obstructive               | Diagnostic CFTR, if neg ADGRG2 (Toulouse)        |
+| Azoospermia               | Microsurgical epididymal sperm aspiration (MESA) |
+|---------------------------+--------------------------------------------------|
+| Asthenozoospermia         | First-line diagnostic ? Research in Grenoble     |
+|                           | No counter-indication to ICSI                    |
+|---------------------------+--------------------------------------------------|
+| Macrozoospermia           | Diagnostic AURKC (Grenoble)                      |
+|                           | Sperm are tetraploid, no treatment possible      |
+|---------------------------+--------------------------------------------------|
+| Globozoospermia           | Diagnostic DPY19L2 (Grenoble)                    |
+|                           | ICSI is possible. Is it safe ?                   |
+|---------------------------+--------------------------------------------------|
+| Flagellar defects         | Diagnostic DNAH1, CFAP43 and CFAP44 (Grenoble)   |
+|                           | No counter-indication to ICSI                    |
+|---------------------------+--------------------------------------------------|
+| Flagelles isolés          | Diagnostic SUN5                                  |
+|---------------------------+--------------------------------------------------|
+|                           | Diagnostic PLCZ1 possible (Grenoble)             |
+| Oocyte activation failure | ICSI with OA or PLCZeta injection is possible    |
+
+** Féminin
+Ovogonése : mitose puis méose (2n -> n puis 2n avec fécondation)
+IOP et FCS seuls ici
+*** IOP
+- Pas de règle >_6 mois, âge <_40 ans et FSH > 20UI/L 2 fois
+- aménorrhée primaire/secondaire suite à des cycles réguliers le plus souvent
+
+Origines
+  - Déplétion stock follicule prmaires
+  - blocage maturation follicule
+  - apoptose accélérée (Turner, FMR1 )
+**** Types
+***** Le plus souvent anomalies chromosomiques
+- X dans 10-13%
+  - [[*Syndrome de Turner][Syndrome de Turner]] : ovaire remplacé par des bandelettes fibreuse, probablement par haploinsuffisance de gènes échappant à l’inactivation nde l’X
+  - Triple X : 3% des IOP
+  - transloc t(X, autosome): effet de position/interruption de gènes critique -> risque pour la descendance
+- prémutation FMR1: production anarchique d’ARN m qui vont s’accumuler dans les cellules : dans les ovocytes, destruction prématurées
+  - 1/3 des femmes prémutée auront une IOP
+
+***** Nb causes monogénique : 50 gènes confirmés avec grande hétérogénéité (panel/exome ?)
+- autosome ou X
+- isolé ou syndromique
+Function : div cellulaire reparation adna, méiose, folliculogènes
+ex: NOBOX, GDF9 (mutation = bloque maturation ovocytaire)
+FOXL1: syndromique BPES (ophtalmo)
+
+CNV régulièrement retrouvé
+*** FCS à répététion
+\ge 3 FCS
+Caryo : anomalies équilibrées, déséquilibrées, nb de gosomoiques
+Cause géniquses sur orientation clinique
+*** En résumé
+IOP: Caryo, FISH, prémut FMR1A +/- ACPA, panel/ génome
+FCS: caryo + FISH sur X
 * Hypomélanose d’Ito
 Hypopigmentation selon les lignes de Blaschko
 - + atteinte cérébrale et épilepsie

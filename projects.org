@@ -22,6 +22,10 @@ La structure du  tableau est perdue dans tous les cas
 
 **** Parser
 Liste de parser : https://tomassetti.me/parsing-in-python/
+** Relecture d’exome
+*** TODO Installer le pipeline d’Alexis
+SCHEDULED: <2022-07-30 Sat>
+
 * Langues
 ** Japonais
 :PROPERTIES:
@@ -95,7 +99,7 @@ SCHEDULED: <2022-07-30 Sat>
 :CATEGORY: wdr45
 :END:
 *** WAIT Mail Dr Adang pour détails collaboration
-SCHEDULED: <2022-07-21 Thu>
+SCHEDULED: <2022-08-06 Sat>
 Envoyé <2022-07-22 Fri>
 
 *** TODO Donner la réponse à Chloé + Patricia Fergelot
@@ -220,8 +224,6 @@ for i in p.index:
         if os.path.exists(os.path.join(dir, folder)):
             f.write(split[0] + ";" + p.nom[i].upper() + ";" + p.prenom[i] + ";" + p.date_de_naissance[i] + "\n")
 #+end_src
-
-#+RESULTS:
 
 *** Données
 **** DONE Import Labkey
@@ -1466,7 +1468,7 @@ DEADLINE: <2022-05-21 Sat>
 *** TODO Transfert compte bancaire
 SCHEDULED: <2022-07-21 Thu>
 **** TODO Attestation Boursorama
-SCHEDULED: <2022-07-24 Sun>
+SCHEDULED: <2022-08-20 Sat>
 **** TODO Virement pour éviter les défauts de rélèvements
 * FreeBSD :freebsd:
 ** TODO ormolu 0.5.0.0
