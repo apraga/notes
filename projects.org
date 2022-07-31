@@ -25,6 +25,7 @@ Liste de parser : https://tomassetti.me/parsing-in-python/
 ** Relecture d’exome
 *** TODO Installer le pipeline d’Alexis
 SCHEDULED: <2022-07-30 Sat>
+*** TODO Utiliser docker
 
 * Langues
 ** Japonais
@@ -107,21 +108,31 @@ Envoyé <2022-07-22 Fri>
 SCHEDULED: <2022-10-01 Sat>
 ** NF1 :nf1:
 *** Notes
-- notre mutation : constit retrouvée en somatique mais pas de double hit (une seule allèle)
-  NM_001042492.3(NF1):c.2999G>C (p.Arg1000Pro) probablement patho
-  - non rapporté dans cosmic *mais* c.2998C>T (p.R1000C) est rapportée
+**** notre mutation
+constit retrouvée en somatique mais pas de double hit (une seule allèle)
+NM_001042492.3(NF1):c.2999G>C (p.Arg1000Pro) probablement patho
+
+Rare ?
+  - rapportée 1x clinvar VOUS
+  - au même endroit mais autres fauxsense
+    - G>A (p.Arg1000His) = clinvar VOUS x2
+    - G>T (p.Arg1000Leu) = clinvar VOUS x2 dont 1 callisé comme "prédisposition au cancer héréditaire" sans plus de précisions
+  - le faux sens à côté est bien connu c.2998C>T (p.R1000C) : 3 soumission clinvar et plusieurs article
+PMID: 33563663, 27838393, 25074460, 31645765, 29636988, 30476936, 21520333, 29489754
+  - synonyme T>C est clinvar bénin
+  - frameshift  c.2998_2999del (p.Arg1000fs) prenant cette base est rapporté 2x clinvar classe 4
+
+Onco ? non rapporté dans cosmic *mais* c.2998C>T (p.R1000C) est rapportée
     - dans le foie : homme de 48A
     - sur la peau : Desmoplastic melanoma (publié dans PMID 26343386,
-     [[https://pubmed.ncbi.nlm.nih.gov/26343386/][PMID 26343386]]
-    [[https://pubmed.ncbi.nlm.nih.gov/28481359/][PMID 28481359]] -> touche
-    [[https://www.wikipathways.org/index.php/Pathway:WP382][voie MAPK]]
-- Autres cancers atypiques avec NF1 ? (hotspot, voie MAPK impliquée)
-- Vérifier que les 2 autres mutation NF1 ne sont pas constit
-- Regardes autres mutation onco NF1 sur ucscs/cosmic
+      - [[https://pubmed.ncbi.nlm.nih.gov/26343386/][PMID 26343386]]
+      - [[https://pubmed.ncbi.nlm.nih.gov/28481359/][PMID 28481359]] -> touche [[https://www.wikipathways.org/index.php/Pathway:WP382][voie MAPK]]
   cosmic : 498 mutations somatique foie + NF1
 - interaction possible avec autres mutation ? pas sur le même chromosome...
-- mutation rare ?
-- autres mutation NF1 constit + somatique chez Hirsch: monoallélique -> inactivation partielle pourrait jouer un rôle
+**** Autres cancers atypiques avec NF1 ? (hotspot, voie MAPK impliquée)
+Voir notes de [cite:@landry2021]
+**** autres mutation NF1 somatique chez Hirsch
+monoallélique -> inactivation partielle pourrait jouer un rôle
   - NM_001042492.3(NF1):c.350T>G (p.Ile117Ser) retrouvée 2x chez un patient
     - non rapporté dans cosmic
   - NM_001042492.3(NF1):c.5991G>A (p.Trp1997Ter)
@@ -136,16 +147,19 @@ SCHEDULED: <2022-10-01 Sat>
 [cite:@ucar2007] 1 cas de NF1 avec hépatoblastome sans confirmation moléculaire
 [cite:@landry2021]: épidémio récente : pas de cas rapporté NF1 + foie
 [cite:@varan2015]: épidémio plus ancienne : idem
+[cite:@skoczen2019] hépatoblastome + neuroblastome avec plusieurs variants dont NF1
 ***** TODO NF1 + autres cancers
 ***** TODO Pathway
 [cite:@kappler2010]: rien ne correspond
+Voie RAS impliquée dans hépatoblastome ?
+Possible selon https://pubmed.ncbi.nlm.nih.gov/19665249/
 https://www.nature.com/articles/labinvest2016142
 **** TODO Trouver autres cas ?
 ***** TODO Appel ANDDI rares
 ***** TODO Appel ITACA
-*** DONE Accord Domiinque VIAUD
+**** DONE Accord Domiinque VIAUD
 Mail envoyé par Juliette
-*** DONE Observatoire TED
+**** DONE Observatoire TED
 Non
 ** Mustard :mustard:
 *** Scripts
@@ -1763,8 +1777,8 @@ SCHEDULED: <2022-07-31 Sun>
 **** TODO Pathologies fréquentes en génétique clinique
 **** TODO Génome humain : normal et pathologique
 **** TODO Maladies métaboliques
-*** TODO E-learning session 2 [1/6]
-**** STRT Infertilité
+*** TODO E-learning session 2 [2/6]
+**** DONE Infertilité
 -> cours 1, diapo 31
 **** DONE Syndromes microdélétionnels
 **** TODO Dysgonosomies
