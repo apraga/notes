@@ -183,28 +183,25 @@ def rmFiles(p):
     for f in p:
         os.remove(f)
 
-p = Path("/alexi/Documents/mustard/PREUX")
-k=1
-for f in p.glob("courrier*.pdf"):
-    courrier= p / f"courrier{k}"
+p = Path("/alexi/Documents/mustard/PORTEMER ")
+for (k, f) in enumerate(p.glob("courrier*.pdf")):
+    courrier= p / f"courrier{k+1}"
     subprocess.run(["pdftoppm", "-png", f, courrier])
     # Manage multi-pages pdf
-    for png in p.glob(f"courrier{k}*.png"):
+    for png in p.glob(f"courrier{k+1}*.png"):
          root =png.with_suffix('')
          subprocess.run(["tesseract", "-l", "fra", png, root])
-    txt = p.glob(f"courrier{k}-*.txt")
-    mergeFiles(txt, p / f"courrier{k}.txt")
+    txt = p.glob(f"courrier{k+1}-*.txt")
+    mergeFiles(txt, p / f"courrier{k+1}.txt")
     # We have to rewrite the glob....
-    rmFiles(p.glob(f"courrier{k}-*.txt"))
+    rmFiles(p.glob(f"courrier{k+1}-*.txt"))
 
     ## Now we remove the header (everyting up to the date)
     ## sed -i.bak -n '/^Dijon, le/,$p' $courrier.txt
     ## And everything after the footer
     ## sed -i.bak '/^BOCAGE SUD.*DIJON CEDEX$/,$d' $courrier.txt
-    #k=$((k+1))
 
 rmFiles(p.glob(f"courrier*.png"))
-# rm "$dir"/courrier*.txt.bak
 #+end_src
 
 #+RESULTS:
@@ -265,8 +262,8 @@ SRT = traité, non transféré
 ***** DONE PED1015
 ***** DONE PED1026
 ***** STRT PED1027
-***** TODO PED1034
-***** TODO PED1035
+***** STRT PED1034
+***** STRT PED1035
 ***** TODO PED1036
 ***** TODO PED1037
 ***** TODO PED1038
