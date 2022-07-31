@@ -1493,6 +1493,9 @@ Non reproductible
 Soumis
 ** WAIT [[https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=264158][pkgconf est trop lent sur freebsd]]
 Problème persiste avec dernière version
+** TODO taskwarrior v0.23.5
+SCHEDULED: <2022-07-31 Sun>
+/Entered on/ [2022-07-31 Sun 09:59]
 * Génétique
 ** TODO Collège [3/29]
 *** TODO 1. Architecture du génome

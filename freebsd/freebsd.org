@@ -655,6 +655,11 @@ Because it complaints that
 #+BEGIN_EXAMPLE
   ln -s /opt/brother/Printers/HL1110/cupswrapper/brother_lpdwrapper_HL1110  /usr/local/libexec/cups/filter
 #+END_EXAMPLE
+
+*
+* Jail
+Supprimer une jail récalcitrante :
+doas chflags -R noschg /usr/local/apsw.pyi
 * Textlive sous freebsd (manuellement)
 Pourquoi ? Conflit entre la version de texlive et biber
 https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=263134
