@@ -5401,3 +5401,7 @@ Pistols : 4-2-2
 Compression: 3x10
 * <2022-07-26 Tue> Tricking
 Kicks surtout
+* <2022-07-31 Sun> Running
+Sprint en montée
+2min - 1m10 recup
+puis 4x1min avec 1min10 récup
