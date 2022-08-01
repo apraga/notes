@@ -247,6 +247,75 @@ for i in p.index:
             f.write(split[0] + ";" + p.nom[i].upper() + ";" + p.prenom[i] + ";" + p.date_de_naissance[i] + "\n")
 #+end_src
 
+**** TODO Fusionner les tsv pour Paul
+#+begin_src python :results output
+import pandas as pd
+from pathlib import Path
+root = Path("/mnt/c/Users/alexi/Documents/mustard")
+dna= pd.read_csv(root /
+                      "DNAThèque_2022-02-02_11-46-28.tsv",
+                      sep="\t")
+e = pd.read_csv(root /
+"Suivi exomes_2022-02-02_12-34-15.tsv",
+                sep= "\t")
+# Merge exome and sample
+d = dna.set_index("sampleID").join(e.set_index("specimenID"),
+                                  lsuffix="dna", rsuffix="exome")
+# print(e.columns)
+# print(dna.columns)
+# Clean column name
+d.columns = d.columns.str.replace('dataSetsPatients', '')
+
+cols = ['patientIDdna', 'nom', 'nom_marital', 'prenom',
+       'date_de_naissance', 'sexe', 'parente', 'statut', 'clinicien_referent',
+       'clinicien_referentinstitution', 'pathologie',
+        'commentaires',
+        'date_de_prelevement', 'sampleIDdate_de_reception',
+        'sampleIDorigine_de_l_echantillon',
+        'gene_individuel',
+        'panel_de_gene', 'exome',
+        'confirmation_pour_diag',
+        'commentairesdna',
+        'sequenceNumexome',
+        'presta', 'capture', 'sequencage', 'date_envoi_presta',
+        'date_reception', 'date_analyse',
+        'resultat', 'incidental',
+        'commentairesexome', 'runName']
+print(d[cols][0:2])
+print(d.columns)
+d[cols].to_csv(root / "test.csv")
+# p = pd.read_csv(root /
+#                 "Patients_2022-02-02_11-44-03.tsv",
+#                 sep= "\t")
+#+end_src
+
+#+RESULTS:
+#+begin_example
+     patientIDdna     nom  ...  commentairesexome       runName
+105     PED0105.1  Bouche  ...                NaN           NaN
+1001    PED1001.1  Legros  ...                NaN  dijex224-238
+
+[2 rows x 32 columns]
+Index(['patientIDdna', 'sequenceNumdna', 'nom', 'nom_marital', 'prenom',
+       'date_de_naissance', 'sexe', 'parente', 'statut', 'clinicien_referent',
+       'clinicien_referentinstitution', 'cohortedna', 'pathologie',
+       'flag_de_revision', 'commentaires', 'sampleIDnumero_autre',
+       'date_de_prelevement', 'sampleIDdate_de_reception', 'sampleIDADN',
+       'sampleIDorigine_de_l_echantillon', 'sampleIDtype', 'categoriedna',
+       'projet_recherche', 'concordance_sample', 'urgent', 'gene_individuel',
+       'panel_de_gene', 'exome', 'genome', 'cgh', 'autre',
+       'confirmation_pour_diag', 'cr_a_faire', 'flag_de_revision',
+       'commentairesdna', 'sampleIDcommentaires_reception', 'urgentchoix',
+       'modified', 'modifiedBy', 'created', 'createdBy', 'patientIDexome',
+       'sequenceNumexome', 'dijexID', 'aliasID', 'categorieexome', 'statut',
+       'presta', 'capture', 'sequencage', 'numero_envoi', 'date_envoi_presta',
+       'bioinfo', 'date_reception', 'date_analyse', 'lecture1',
+       'date_lecture1', 'lecture2', 'date_lecture2', 'lecture3',
+       'date_lecture3', 'date_rcp', 'resultat', 'incidental',
+       'commentairesexome', 'runName', 'runComments', 'cohorteexome'],
+      dtype='object')
+#+end_example
+
 *** Données
 **** DONE Import Labkey
 **** TODO Clinique, OCR et nettoyage données labkey [13/1199]
