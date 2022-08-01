@@ -249,7 +249,7 @@ for i in p.index:
 
 *** Données
 **** DONE Import Labkey
-**** TODO Clinique, OCR et nettoyage données labkey [10/1199]
+**** TODO Clinique, OCR et nettoyage données labkey [13/1199]
 DONE = sur scality
 SRT = traité, non transféré
 ***** DONE PED0052
@@ -261,9 +261,12 @@ SRT = traité, non transféré
 ***** DONE PED1013
 ***** DONE PED1015
 ***** DONE PED1026
-***** STRT PED1027
-***** STRT PED1034
-***** STRT PED1035
+***** DONE PED1027
+CLOSED: [2022-08-01 Mon 09:44]
+***** DONE PED1034
+CLOSED: [2022-08-01 Mon 09:44]
+***** DONE PED1035
+CLOSED: [2022-08-01 Mon 09:44]
 ***** TODO PED1036
 ***** TODO PED1037
 ***** TODO PED1038
