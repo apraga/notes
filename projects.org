@@ -99,20 +99,23 @@ SCHEDULED: <2022-07-30 Sat>
 :PROPERTIES:
 :CATEGORY: wdr45
 :END:
-*** WAIT Mail Dr Adang pour détails collaboration
+*** DONE Mail Dr Adang pour détails collaboration
 SCHEDULED: <2022-08-06 Sat>
 Envoyé <2022-07-22 Fri>
-
-*** TODO Donner la réponse à Chloé + Patricia Fergelot
+Pas de réponse
+*** DONE Donner la réponse à Chloé + Patricia Fergelot
 *** TODO Démarrer appel à collaboration avec Chloé
 SCHEDULED: <2022-10-01 Sat>
 ** NF1 :nf1:
 *** Notes
 **** notre mutation
 constit retrouvée en somatique mais pas de double hit (une seule allèle)
-NM_001042492.3(NF1):c.2999G>C (p.Arg1000Pro) probablement patho
+- [[https://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr17%3A31230268%2D31230268&hgsid=1418628939_u4ASAyqv2xSI3YwznwQRfOaGJo4t][NM_001042492.3(NF1):c.2999G>C (p.Arg1000Pro)]] probablement patho
+- + variant intronique mais sans anomalie RNAseq et classe 2 clinvar
+  NM_001042492.3(NF1):c.6147+8 ?>?
 
 Rare ?
+  - non présent gnomAD
   - rapportée 1x clinvar VOUS
   - au même endroit mais autres fauxsense
     - G>A (p.Arg1000His) = clinvar VOUS x2
@@ -129,15 +132,19 @@ Onco ? non rapporté dans cosmic *mais* c.2998C>T (p.R1000C) est rapportée
       - [[https://pubmed.ncbi.nlm.nih.gov/28481359/][PMID 28481359]] -> touche [[https://www.wikipathways.org/index.php/Pathway:WP382][voie MAPK]]
   cosmic : 498 mutations somatique foie + NF1
 - interaction possible avec autres mutation ? pas sur le même chromosome...
+-
 **** Autres cancers atypiques avec NF1 ? (hotspot, voie MAPK impliquée)
 Voir notes de [cite:@landry2021]
 **** autres mutation NF1 somatique chez Hirsch
+NF1 driver possible selon leur critère : \ge 2 patients
+et p<-value < 0.05 avec MutSigCV et Oncodrive
+
 monoallélique -> inactivation partielle pourrait jouer un rôle
   - NM_001042492.3(NF1):c.350T>G (p.Ile117Ser) retrouvée 2x chez un patient
     - non rapporté dans cosmic
   - NM_001042492.3(NF1):c.5991G>A (p.Trp1997Ter)
     - cosmic : rapporté dans pheochromocytome x1 et pheochromocytome x1 (patho)
--
+  -
 *** Tâches
 **** TODO Biblio
 ***** TODO article T. Hirsch
