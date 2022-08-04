@@ -258,19 +258,78 @@ for i in p.index:
 #+begin_src python :results output
 import pandas as pd
 from pathlib import Path
-# root = Path("/mnt/c/Users/alexi/Documents/mustard")
+
+def readExome(root):
+    e = pd.read_csv(root /
+                    "Suivi exomes_2022-02-02_12-34-15.tsv",
+                    sep= "\t")
+    # Clean up data first
+    e = e[['patientID', 'specimenID',
+           'presta', 'capture', 'sequencage',
+           'date_reception',
+           'resultat', 'incidental', 'commentaires', 'runComments']]
+    return e
+
+def readDNA(root):
+    dna= pd.read_csv(root /
+                     "DNAThèque_2022-02-02_11-46-28.tsv",
+                     sep="\t")
+    dna = dna [['patientID',
+                'sampleID',
+                'sampleIDdate_de_reception',
+                'sampleIDorigine_de_l_echantillon',
+                'commentaires']]
+    # Clean column name
+    dna.columns = dna.columns.str.replace('dataSetsPatients', '')
+    return dna
+
+def readPatients(root):
+    patients = pd.read_csv(root / "Patients_2022-02-02_11-44-03.tsv",
+                           sep = "\t")
+    patients = patients[['patientID', 'nom', 'prenom', 'date_de_naissance',
+                         'date_de_deces', 'sexe', 'parente', 'statut', 'foetus', 'consanguinite',
+                         'clinicien_referent', 'clinicien_referentinstitution', 'pathologie',
+                         'gene', 'commentaires']]
+    return patients
+def cleanExome(d):
+    cols = ['nom', 'prenom', 'date_de_naissance',
+        'sexe', 'parente', 'statut',
+        'clinicien_referent', 'clinicien_referentinstitution', 'pathologie',
+        'gene',
+        'sampleIDdate_de_reception', 'sampleIDorigine_de_l_echantillon',
+        'patientIDexome', 'presta', 'capture', 'sequencage',
+        'date_reception', 'resultat', 'incidental', 'commentairesexome',
+        'commentaires' ,
+        'commentairesdna']
+    d = d[cols].rename(columns = {"gene": "gene_responsable"})
+    # Remove none
+    d['gene_responsable'].replace("None", "", inplace=True)
+    return d
+
 root = Path("/mnt/c/Users/apraga/Documents/mustard")
-dna= pd.read_csv(root /
-                      "DNAThèque_2022-02-02_11-46-28.tsv",
-                      sep="\t")
-e = pd.read_csv(root /
-"Suivi exomes_2022-02-02_12-34-15.tsv",
-                sep= "\t")
+e = readExome(root)
+dna = readDNA(root)
+p = readPatients(root)
+
 # Merge exome and sample
 d = dna.set_index("sampleID").join(e.set_index("specimenID"),
-                                  lsuffix="dna", rsuffix="exome")
-# Clean column name
-d.columns = d.columns.str.replace('dataSetsPatients', '')
+                                   how="inner",
+                                   lsuffix="dna", rsuffix="exome")
+d2 = d.set_index('patientIDdna').join(p.set_index("patientID"),
+                                      how="inner")
+# Reorder columns
+d2 = cleanExome(d2)
+d2.to_excel(root / "exome dijons.xlsx")
+# panel = pd.read_csv(root / "MiSeq coverage_2022-02-02_12-31-54.tsv",
+#                     sep = "\t")
+# panel = panel[[]]
+# print(panel.columns)
+#+end_src
+
+#+RESULTS:
+:
+
+#+begin_src python
 # Subset of columns
 cols = ['nom', 'prenom',
        'date_de_naissance', 'sexe', 'parente', 'statut',
@@ -292,20 +351,9 @@ d2 = d[cols].rename(columns = {
 print(d2.columns)
 # Does not work
 # d2.applymap(lambda x: "" if str(x) == "Non renseigné" else x)
-d2.to_csv(root / "test.tsv", sep="\t")
-# p = pd.read_csv(root /
-#                 "Patients_2022-02-02_11-44-03.tsv",
-#                 sep= "\t")
+
+
 #+end_src
-
-#+RESULTS:
-: Index(['nom', 'prenom', 'date_de_naissance', 'sexe', 'parente', 'statut',
-:        'statut', 'provenance', 'Malformation', 'Date prélèvement', 'Biopsie',
-:        'gene_individuel', 'panel_de_gene', 'exome', 'capture', 'sequencage',
-:        'Date réception', 'resultat', 'incidental', 'commentairesdna',
-:        'commentairesexome'],
-:       dtype='object')
-
 *** Données
 **** DONE Import Labkey
 **** TODO Clinique, OCR et nettoyage données labkey [13/1199]
