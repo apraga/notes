@@ -306,20 +306,37 @@ def cleanExome(d):
     d['gene_responsable'].replace("None", "", inplace=True)
     return d
 
+def getExome(root, dna, p):
+    # Merge exome and sample
+    e = readExome(root)
+    d = dna.set_index("sampleID").join(e.set_index("specimenID"),
+                                    how="inner",
+                                    lsuffix="dna", rsuffix="exome")
+    d2 = d.set_index('patientIDdna').join(p.set_index("patientID"),
+                                        how="inner")
+    # Reorder columns
+    d2 = cleanExome(d2)
+    d2.to_excel(root / "exome dijons.xlsx")
+
+def getPanel(root, dna, p):
+    # Merge exome and sample
+    e = readExome(root)
+    d = dna.set_index("sampleID").join(e.set_index("specimenID"),
+                                    how="inner",
+                                    lsuffix="dna", rsuffix="exome")
+    d2 = d.set_index('patientIDdna').join(p.set_index("patientID"),
+                                        how="inner")
+    # Reorder columns
+    d2 = cleanExome(d2)
+    d2.to_excel(root / "exome dijons.xlsx")
+
+
 root = Path("/mnt/c/Users/apraga/Documents/mustard")
-e = readExome(root)
 dna = readDNA(root)
 p = readPatients(root)
 
-# Merge exome and sample
-d = dna.set_index("sampleID").join(e.set_index("specimenID"),
-                                   how="inner",
-                                   lsuffix="dna", rsuffix="exome")
-d2 = d.set_index('patientIDdna').join(p.set_index("patientID"),
-                                      how="inner")
-# Reorder columns
-d2 = cleanExome(d2)
-d2.to_excel(root / "exome dijons.xlsx")
+# getExome(root, dna, p)
+getPanel(root, dna, p)
 # panel = pd.read_csv(root / "MiSeq coverage_2022-02-02_12-31-54.tsv",
 #                     sep = "\t")
 # panel = panel[[]]
@@ -327,7 +344,6 @@ d2.to_excel(root / "exome dijons.xlsx")
 #+end_src
 
 #+RESULTS:
-:
 
 #+begin_src python
 # Subset of columns
@@ -1562,8 +1578,10 @@ CLOSED: [2022-08-01 Mon 09:44]
 ***** TODO PED9559
 ***** TODO PED9740
 
-**** TODO Refaire export csv
-SCHEDULED: <2022-07-24 Sun>
+
+**** DONE Fusionner exome dijon format CSV
+CLOSED: [2022-08-04 Thu 17:42]
+**** DONE Fusionner panels dijon format CSV
 **** KILL Dxcare
 ***** DONE Demande Dijon
 ***** KILL Demande DPO Besançon
