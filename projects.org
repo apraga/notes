@@ -108,12 +108,14 @@ Pas de réponse
 SCHEDULED: <2022-10-01 Sat>
 ** NF1 :nf1:
 *** Notes
-**** notre mutation
-constit retrouvée en somatique mais pas de double hit (une seule allèle)
-- [[https://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr17%3A31230268%2D31230268&hgsid=1418628939_u4ASAyqv2xSI3YwznwQRfOaGJo4t][NM_001042492.3(NF1):c.2999G>C (p.Arg1000Pro)]] probablement patho
-- + variant intronique mais sans anomalie RNAseq et classe 2 clinvar
-  NM_001042492.3(NF1):c.6147+8 ?>?
-
+**** notre patiente
+- mutations drivers : CTNNB1, TERT et gain de méthylation 11p15 retrouvé dans [cite:@hirsch2021]
+- 1 mutation NF1 constit retrouvée en somatique (tumeur + métastase)
+  - [[https://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr17%3A31230268%2D31230268&hgsid=1418628939_u4ASAyqv2xSI3YwznwQRfOaGJo4t][NM_001042492.3(NF1):c.2999G>C (p.Arg1000Pro)]] probablement patho
+  - mais pas de double hit (une seule allèle)
+  - + variant intronique mais sans anomalie RNAseq et classe 2 clinvar
+    NM_001042492.3(NF1):c.6147+8 ?>?
+**** Mutation NF1
 Rare ?
   - non présent gnomAD
   - rapportée 1x clinvar VOUS
@@ -132,10 +134,10 @@ Onco ? non rapporté dans cosmic *mais* c.2998C>T (p.R1000C) est rapportée
       - [[https://pubmed.ncbi.nlm.nih.gov/28481359/][PMID 28481359]] -> touche [[https://www.wikipathways.org/index.php/Pathway:WP382][voie MAPK]]
   cosmic : 498 mutations somatique foie + NF1
 - interaction possible avec autres mutation ? pas sur le même chromosome...
--
+
 **** Autres cancers atypiques avec NF1 ? (hotspot, voie MAPK impliquée)
 Voir notes de [cite:@landry2021]
-**** autres mutation NF1 somatique chez Hirsch
+**** 2 autres mutation NF1 somatique chez Hirsch
 NF1 driver possible selon leur critère : \ge 2 patients
 et p<-value < 0.05 avec MutSigCV et Oncodrive
 
@@ -157,6 +159,10 @@ monoallélique -> inactivation partielle pourrait jouer un rôle
 [cite:@skoczen2019] hépatoblastome + neuroblastome avec plusieurs variants dont NF1
 ***** TODO NF1 + autres cancers
 ***** TODO Pathway
+Wnt/β-cateninng : impliqué dans
+- NF1 selon [cite:@2013]  (activation)
+- hépatoblastome selon [cite:@dubbink2018]    (excès β-catening ?)
+***** Autres
 [cite:@kappler2010]: rien ne correspond
 Voie RAS impliquée dans hépatoblastome ?
 Possible selon https://pubmed.ncbi.nlm.nih.gov/19665249/
