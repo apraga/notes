@@ -1613,6 +1613,16 @@ Voir avec Paul
 *** Autres cours en lignes
 **** https://mlcourse.ai/book/index.html
 **** https://www.fast.ai/
+
+** Pipeline exome
+*** WAIT Add Bioperl to nixpkgs
+SCHEDULED: <2022-08-08 Mon>
+/Entered on/ [2022-08-08 Mon 17:49]
+- [X] run tests locally
+  - [X] basic evaluation tests
+  - [X] list all derivatons
+  - [X] build
+PL https://github.com/NixOS/nixpkgs/pull/185691
 * Banque :banque:
 ** TODO Compte et CB société générale :banque:
 *** DONE Souscription

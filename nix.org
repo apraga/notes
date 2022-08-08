@@ -69,6 +69,12 @@ in
 }
 #+end_src
 * Nix
+** Développer un package
+Pour avoir le sha256 :
+#+begin_src
+nix-prefetch-url --unpack https://...tar.gz
+#+end_src
+--unpack est important
 ** Python
 Instructions simples ici : https://nixos.wiki/wiki/Python#Package_and_development_shell_for_a_python_project
 
