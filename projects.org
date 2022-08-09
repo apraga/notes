@@ -146,7 +146,7 @@ monoallélique -> inactivation partielle pourrait jouer un rôle
     - non rapporté dans cosmic
   - NM_001042492.3(NF1):c.5991G>A (p.Trp1997Ter)
     - cosmic : rapporté dans pheochromocytome x1 et pheochromocytome x1 (patho)
-  -
+
 *** Tâches
 **** TODO Biblio
 ***** TODO article T. Hirsch
@@ -161,7 +161,7 @@ monoallélique -> inactivation partielle pourrait jouer un rôle
 ***** TODO Pathway
 Wnt/β-cateninng : impliqué dans
 - NF1 selon [cite:@2013]  (activation)
-- hépatoblastome selon [cite:@dubbink2018]    (excès β-catening ?)
+- hépatoblastome selon [cite:@dubbink2018]    (perte de fonction -> excès β-catening par absence de dégradation)
 ***** Autres
 [cite:@kappler2010]: rien ne correspond
 Voie RAS impliquée dans hépatoblastome ?
@@ -170,6 +170,8 @@ https://www.nature.com/articles/labinvest2016142
 **** TODO Trouver autres cas ?
 ***** TODO Appel ANDDI rares
 ***** TODO Appel ITACA
+**** WAIT Avis Paul sur arguments
+Envoyé <2022-08-09 Tue>
 **** DONE Accord Domiinque VIAUD
 Mail envoyé par Juliette
 **** DONE Observatoire TED
