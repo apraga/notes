@@ -4,25 +4,8 @@ Installer nix. Par exemple, sous WSL:
 https://github.com/nix-community/NixOS-WSL
 
 Puis modifier /etc/nixos/configuration.nix.
-Pour ajouter des logiciels au niveau global, il sufit de modifier
-#+begin_src
-  environment.systemPackages
-#+end_src
-et de lancer ensuite
-#+begin_src sh
-nix-os rebuild switch
-#+end_src
-NB: il manque man par défaut !.
-Doc officielle : https://nixos.org/manual/nixos/stable/
-
-** Emacs nativecomp
-Il faut rajouter un overlay. Option 1 avec
-[[https://gist.github.com/mjlbach/179cf58e1b6f5afcb9a99d4aaf54f549][ces instructions]].
-Cela fonctionne mais
-- Je n’ai pas réussi à éviter la compilation malgré l’utilisation de cachix.
-- La version locale n’a pas l’air de marcher non plus.
-
-Résultat:
+** 1. Emacs nativecomp + flakes + WSL
+Il faut rajouter un overlay. Cela va compiler emacs
 #+begin_src sh
 { lib, pkgs, config, modulesPath, ... }:
 
@@ -33,8 +16,8 @@ in
 {
   imports = [
     "${modulesPath}/profiles/minimal.nix"
+
     nixos-wsl.nixosModules.wsl
-    ./cachix.nix
   ];
 
   wsl = {
@@ -53,21 +36,36 @@ in
     experimental-features = nix-command flakes
   '';
 
-  nix.trustedUsers = [ "root" "nixos" ];
+  # Emacs28 with nativecomp
   services.emacs.package = pkgs.emacsNativeComp;
+
   nixpkgs.overlays = [
     (import (builtins.fetchTarball {
-       url = https://github.com/nix-community/emacs-overlay/archive/master.tar.gz;
+      url = https://github.com/nix-community/emacs-overlay/archive/master.tar.gz;
     }))
   ];
 
-  # Define here the package you want installed
-  environment.systemPackages = [
-     pkgs.emacsNativeComp
-     pkgs.man
+  environment.systemPackages = with pkgs; [
+          emacsNativeComp
   ];
 }
 #+end_src
+Puis installer avec
+#+begin_src
+nixos-rebuild switch
+#+end_src
+** 2. Ajouter des logiciels au niveau global
+il sufit de modifier
+#+begin_src
+  environment.systemPackages
+#+end_src
+et de lancer ensuite
+#+begin_src sh
+nix-os rebuild switch
+#+end_src
+NB: il manque man par défaut !.
+Doc officielle : https://nixos.org/manual/nixos/stable/
+
 * Nix
 ** Développer un package
 Pour avoir le sha256 :
