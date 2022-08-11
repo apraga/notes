@@ -2029,10 +2029,13 @@ SCHEDULED: <2022-08-04 Thu>
 SCHEDULED: <2022-07-30 Sat>
 
 * Nix
-** WAIT Nix pkg for GATK
+** TODO Nix pkg for GATK
+*** WAIT Binaire
 SCHEDULED: <2022-08-10 Wed>
 /Entered on/ [2022-08-09 Tue 10:57]
 PR submitted
+*** STRT Compilé depuis le source
+Cf branche gatk-src sur fork : manque un plugin pour Gradle...
 ** DONE Nix pkg for BioPerl
 SCHEDULED: <2022-08-10 Wed>
 /Entered on/ [2022-08-09 Tue 10:57]
