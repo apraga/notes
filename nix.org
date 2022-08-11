@@ -68,11 +68,19 @@ Doc officielle : https://nixos.org/manual/nixos/stable/
 
 * Nix
 ** Développer un package
-Pour avoir le sha256 :
+*** Hash
 #+begin_src
 nix-prefetch-url --unpack https://...tar.gz
 #+end_src
---unpack est important
+Ou bien, ne pas mettre de hash et copier le résultat de l’erreur !
+*** Pour débugger une derivation, on utilise un shell en appelant le package :
+#+begin_src nix
+nix-shell -E 'with import <nixpkgs> {}; callPackage ./default.nix {}'
+[nix-shell]$ eval ${unpackPhase:-unpackPhase}
+[nix-shell]$ cd source
+[nix-shell]$ eval ${configurePhase:-configurePhase}
+[nix-shell]$ eval ${buildPhase:-buildPhase}
+#+end_src
 ** Python
 Instructions simples ici : https://nixos.wiki/wiki/Python#Package_and_development_shell_for_a_python_project
 
