@@ -2047,3 +2047,7 @@ SCHEDULED: <2022-08-10 Wed>
 ** WAIT Nixpkg for BioDBHTS
 SCHEDULED: <2022-08-10 Wed>
 /Entered on/ [2022-08-10 Wed 14:28]
+
+** WAIT Nixpkg for BioExtAlign
+SCHEDULED: <2022-08-10 Wed>
+/Entered on/ [2022-08-10 Wed 14:28]
