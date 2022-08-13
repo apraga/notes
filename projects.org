@@ -2040,7 +2040,7 @@ Cf branche gatk-src sur fork : manque un plugin pour Gradle...
 SCHEDULED: <2022-08-10 Wed>
 /Entered on/ [2022-08-09 Tue 10:57]
 PR submitted
-** TODO Nixpkg for BioDBBigFile
+** WAIT Nixpkg for BioDBBigFile
 SCHEDULED: <2022-08-10 Wed>
 /Entered on/ [2022-08-10 Wed 14:28]
 
