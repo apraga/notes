@@ -1612,12 +1612,20 @@ Voir avec Paul
 **** https://www.fast.ai/
 
 ** Pipeline exome
+*** Améliorer le workflow
+**** TODO Nix pour les dépendences
+**** TODO Nix pour télécharger les données brutes
+***** TODO Axel au lieu de curl pour gérer les timeout?
+***** TODO VEP
+***** Autres
+*** Implémenter execution avec Nix ?
+Voir https://academic.oup.com/gigascience/article/9/11/giaa121/5987272?login=false
+pour un exemple.
+Probablement plus simple d’utiliser Nix pour gestion de l’environnement et snakemake pour l’exécution
 *** TODO Installer le pipeline d’Alexis
 SCHEDULED: <2022-07-30 Sat>
 **** KILL Utiliser docker
 **** STRT Utiliser nix
-***** DONE BioPerl
-***** DONE BioDBBigFile
 *** TODO Essayer le pipeline de GATK
 https://broadinstitute.github.io/warp/docs/Pipelines/Exome_Germline_Single_Sample_Pipeline/README
 * Banque :banque:
