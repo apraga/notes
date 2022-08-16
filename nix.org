@@ -4,6 +4,7 @@ Installer nix. Par exemple, sous WSL:
 https://github.com/nix-community/NixOS-WSL
 
 Puis modifier /etc/nixos/configuration.nix.
+
 ** 1. Emacs nativecomp + flakes + WSL
 Il faut rajouter un overlay. Cela va compiler emacs
 #+begin_src sh
@@ -67,6 +68,12 @@ NB: il manque man par défaut !.
 Doc officielle : https://nixos.org/manual/nixos/stable/
 
 * Nix
+Activer les flakes (experimental) ! Meilleure expérience utilisateur
+** Recherche
+`nix-env` est lent. `nix search` avec les flakes ne fonctionne pas bien pour certains packages (récursif mais certains paquets désactivent l’évalution)
+Meilleures solution :
+- search.nixos.org
+- `nix-locate`  : installer puis `nix-indx` puis chercher par nom de ficher. Ex: `nix-locate bin/R`
 ** Développer un package
 *** Hash
 #+begin_src
@@ -74,6 +81,7 @@ nix-prefetch-url --unpack https://...tar.gz
 #+end_src
 Ou bien, ne pas mettre de hash et copier le résultat de l’erreur !
 *** Pour débugger une derivation, on utilise un shell en appelant le package :
+Sans Flakes
 #+begin_src nix
 nix-shell -E 'with import <nixpkgs> {}; callPackage ./default.nix {}'
 [nix-shell]$ eval ${unpackPhase:-unpackPhase}
@@ -121,3 +129,6 @@ Il ne reste plus qu’à le construire
 nix-build
 result/bin/lol.py
 #+end_src
+
+* Avertissements
+Ne jamais modifier les fichiers dans /nix/store
