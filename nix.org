@@ -69,6 +69,16 @@ Doc officielle : https://nixos.org/manual/nixos/stable/
 
 * Nix
 Activer les flakes (experimental) ! Meilleure expérience utilisateur
+** WSL2: changer /nix/store
+Pour accéder à un lecteur US:, rajouter dans /etc/fstabl
+#+begin_src sh
+ E: /mnt/e drvfs defaults,uid=1000,gid=1000,metadata 0 0
+#+end_src
+`metadata` est important car cela nous permet de changer les permissions !
+Puis
+#+begin_src sh
+mount --bind /mnt/e/nix /nix
+#+end_src
 ** Recherche
 `nix-env` est lent. `nix search` avec les flakes ne fonctionne pas bien pour certains packages (récursif mais certains paquets désactivent l’évalution)
 Meilleures solution :
