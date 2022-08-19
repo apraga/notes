@@ -1615,10 +1615,13 @@ Voir avec Paul
 *** Améliorer le workflow
 **** TODO Nix pour les dépendences
 **** TODO Nix pour télécharger les données brutes
-***** TODO Axel au lieu de curl pour gérer les timeout?
+***** KILL Axel au lieu de curl pour gérer les timeout?
+CLOSED: [2022-08-19 Fri 15:18]
 ***** TODO VEP
 Utilise une versionn allégée de GnomAD (une seule colonne)
 ***** Autres
+***** TODO Tester patch de @pennae pour gros fichiers
+SCHEDULED: <2022-08-19 Fri>
 **** TODO test Bionix
 *** TODO Implémenter execution avec Nix ?
 Voir https://academic.oup.com/gigascience/article/9/11/giaa121/5987272?login=false
