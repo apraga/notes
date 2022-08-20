@@ -1617,11 +1617,16 @@ Voir avec Paul
 **** TODO Nix pour télécharger les données brutes
 ***** KILL Axel au lieu de curl pour gérer les timeout?
 CLOSED: [2022-08-19 Fri 15:18]
-***** TODO VEP
+***** TODO Télécharger
+- [ ] CADD 80G
+- [ ] Refseq 20G
+- [ ] VEP 20G
 Utilise une versionn allégée de GnomAD (une seule colonne)
-***** Autres
-***** TODO Tester patch de @pennae pour gros fichiers
+***** STRT Tester patch de @pennae pour gros fichiers
 SCHEDULED: <2022-08-19 Fri>
+- [X] export NIX_STORE= : ok pour 20G mais n'écrit rien dans le store
+- [ ] nixos: nix stable + patch : fail pour 20g
+- [ ] nixos: nix unstable + patch
 **** TODO test Bionix
 *** TODO Implémenter execution avec Nix ?
 Voir https://academic.oup.com/gigascience/article/9/11/giaa121/5987272?login=false
@@ -1647,7 +1652,7 @@ SCHEDULED: <2022-07-21 Thu>
 **** TODO Attestation Boursorama
 SCHEDULED: <2022-08-20 Sat>
 **** DONE Virement pour éviter les défauts de rélèvements
-*** TODO Demander chequier
+*** WAIT Demander chequier
 SCHEDULED: <2022-08-20 sam.>
 * FreeBSD :freebsd:
 ** TODO ormolu 0.5.0.0
@@ -2043,7 +2048,7 @@ SCHEDULED: <2022-07-31 Sun>
 *** DONE Payer amende majorée 75€ , provenance inconnue
 - [X] Chèque envoyé parti <2022-08-20 sam.>
 - [X] Envoyer un mail
-- [ ] Virement boursorama pour anticiper
+- [X] Virement boursorama pour anticiper
 ** TODO Cadeau mariage :joris:
 SCHEDULED: <2022-08-04 Thu>
 ** TODO Cadeaux mariage :florian:
