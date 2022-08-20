@@ -1613,39 +1613,33 @@ Voir avec Paul
 
 ** Pipeline exome
 *** Améliorer le workflow
-**** TODO Nix pour les dépendences
-**** TODO Nix pour télécharger les données brutes
+**** STRT Nix pour les dépendences
+**** STRT Nix pour télécharger les données brutes
 ***** KILL Axel au lieu de curl pour gérer les timeout?
 CLOSED: [2022-08-19 Fri 15:18]
+***** DONE Tester patch de @pennae pour gros fichiers
+SCHEDULED: <2022-08-19 Fri>
 ***** TODO Télécharger
 - [ ] CADD 80G
 - [ ] Refseq 20G
 - [ ] VEP 20G
 Utilise une versionn allégée de GnomAD (une seule colonne)
-***** STRT Tester patch de @pennae pour gros fichiers
-SCHEDULED: <2022-08-19 Fri>
-- [X] export NIX_STORE= : ok pour 20G mais n'écrit rien dans le store
-- [ ] nixos: nix stable + patch : fail pour 20g
-- [ ] nixos: nix unstable + patch
 **** TODO test Bionix
-*** TODO Implémenter execution avec Nix ?
+**** TODO Implémenter execution avec Nix ?
 Voir https://academic.oup.com/gigascience/article/9/11/giaa121/5987272?login=false
 pour un exemple.
 Probablement plus simple d’utiliser Nix pour gestion de l’environnement et snakemake pour l’exécution
 *** TODO Installer le pipeline d’Alexis
 SCHEDULED: <2022-07-30 Sat>
 **** KILL Utiliser docker
-**** STRT Utiliser nix
+**** STRT Utiliser nix avec exactement la même configuration
+**** TODO Test de non régression
 *** TODO Essayer d’autres pipeline
+Voir https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04407-x
 **** GATK
 https://broadinstitute.github.io/warp/docs/Pipelines/Exome_Germline_Single_Sample_Pipeline/README
 * Banque :banque:
 ** TODO Compte et CB société générale :banque:
-*** DONE Souscription
-CLOSED: [2022-04-23 Sat 17:13]
-*** DONE Carte bancaire
-DEADLINE: <2022-05-21 Sat>
-*** DONE Envoyer fiche de salaire
 *** KILL Envoyer relevé
 *** TODO Transfert compte bancaire
 SCHEDULED: <2022-07-21 Thu>
@@ -2055,8 +2049,6 @@ SCHEDULED: <2022-08-04 Thu>
 SCHEDULED: <2022-08-04 Thu>
 ** TODO Copier photos famille depuis drive yvain sur drive famille
 SCHEDULED: <2022-07-30 Sat>
-** TODO Donner cours dysmorpho à Clarisse
-SCHEDULED: <2022-08-20 sam.>
 * Nix
 ** TODO Nixpkg for GATK
 *** WAIT Binaire
