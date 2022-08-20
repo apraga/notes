@@ -73,7 +73,7 @@ SCHEDULED: <2022-07-30 Sat>
 - Didier ?
 ** Droit au remords
 *** WAIT Envoi scolarité
-*** TODO Négocier avec Xavier Bertrand pour stage de clinique
+*** DONE Négocier avec Xavier Bertrand pour stage de clinique
 SCHEDULED: <2022-07-28 Thu>
 Revient de vacances à ce moment environ
 * Comptabilité :ledger:
@@ -1646,7 +1646,9 @@ DEADLINE: <2022-05-21 Sat>
 SCHEDULED: <2022-07-21 Thu>
 **** TODO Attestation Boursorama
 SCHEDULED: <2022-08-20 Sat>
-**** TODO Virement pour éviter les défauts de rélèvements
+**** DONE Virement pour éviter les défauts de rélèvements
+*** TODO Demander chequier
+SCHEDULED: <2022-08-20 sam.>
 * FreeBSD :freebsd:
 ** TODO ormolu 0.5.0.0
 SCHEDULED: <2022-07-30 Sat>
@@ -1655,8 +1657,10 @@ SCHEDULED: <2022-07-30 Sat>
 *** KILL ne compile plus
 SCHEDULED: <2022-07-17 Sun>
 Non reproductible
-*** WAIT v25.2
+*** DONE v25.2
 Soumis
+*** TODO PR upstream pour _Static_assert (cf https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=265393)
+SCHEDULED: <2022-08-20 sam.>
 ** WAIT [[https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=264158][pkgconf est trop lent sur freebsd]]
 Problème persiste avec dernière version
 ** TODO taskwarrior v0.23.5
@@ -2035,13 +2039,19 @@ SCHEDULED: <2022-07-31 Sun>
 **** TODO Syndrome de Kleefstra (L Perrin)
 **** TODO Téloméropathies (T Leblanc)
 * Divers
+** Amendes
+*** DONE Payer amende majorée 75€ , provenance inconnue
+- [X] Chèque envoyé parti <2022-08-20 sam.>
+- [X] Envoyer un mail
+- [ ] Virement boursorama pour anticiper
 ** TODO Cadeau mariage :joris:
 SCHEDULED: <2022-08-04 Thu>
 ** TODO Cadeaux mariage :florian:
 SCHEDULED: <2022-08-04 Thu>
 ** TODO Copier photos famille depuis drive yvain sur drive famille
 SCHEDULED: <2022-07-30 Sat>
-
+** TODO Donner cours dysmorpho à Clarisse
+SCHEDULED: <2022-08-20 sam.>
 * Nix
 ** TODO Nixpkg for GATK
 *** WAIT Binaire
