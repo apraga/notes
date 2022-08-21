@@ -1,6 +1,21 @@
 #+TITLE: Maladies
 #+OPTIONS: toc:1
+* Déficience intellectuelle
+Pour le pédiatre :
 
+#+caption: Copyright Elsevier 2013. Source :https://pap-pediatrie.fr/douleur-neuro/diagnostic-etiologique-dune-deficience-intellectuelle
+[[file:img/retard-psychomot.png]]
+** ACPA
+- [[Deletion 1p36]]
+- del4p [[Syndrome du cri du chat]]
+- del5p [[Syndrome de Wolf-Hirschhorn]]
+- del7q11 [[Syndrome de Williams-Burren]]
+- del11p13 [[Syndrome WAGRO]]
+- del17p12 [[Syndrome de Smith-Magenis]]
+- del16p13 [[Syndrome de Smith-Magenis]]
+- del22q11 [[Microduplication 22q11.2]]
+- del22q13 [[Syndrome de Phelan McDermid]]
+  Rendement diagnostique 10-15%
 * TODO 17q12 del
 * TODO Achondroplasie
 
@@ -1649,3 +1664,11 @@ Hypopigmentation selon les lignes de Blaschko
 - Plutôt mosaïque somatique (nombreuse anomalies chromosomiques rapportées)
   - MTOR: cerveau, sang, frottis buccal
 - Variants patho germline MTRO aussi rapportés dans syndrome SMith-Kingsmore : DI, macrocéphalie, ventriculomégalie, épilepsie, dysmorphie faciale (hypoplasie étage moyen de la face, hypertélorisme, ensellure nasale, FP en bas et dehors, lèvre supérieure fine, philtrum plat)
+* Deletion 1p36
+DI modérée/sévère
+Enophtalmie
+Sourcils horizontaux
+Syndrome de West
+
+#+caption: Source: Jordan et al 2015
+[[file:img/del1p36.png]]
