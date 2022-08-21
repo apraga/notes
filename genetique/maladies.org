@@ -1,11 +1,19 @@
 #+TITLE: Maladies
 #+OPTIONS: toc:1
 * Déficience intellectuelle
+- Plupart = cause génétique unique (CNV, chromosome, SNP, indel)
+- > 800 gènes validés: plusieurs listes
+  - Radboud university : 1025 (non annotés)
+  - SysID : 1811 dont candidats (annotés)
+  - PanelApp : 1910 dont candidats
+** Bilan
 Pour le pédiatre :
 
 #+caption: Copyright Elsevier 2013. Source :https://pap-pediatrie.fr/douleur-neuro/diagnostic-etiologique-dune-deficience-intellectuelle
 [[file:img/retard-psychomot.png]]
-** ACPA
+** ACPA :
+10-15% diag si DI isolée
+Exemple
 - [[Deletion 1p36]]
 - del4p [[Syndrome du cri du chat]]
 - del5p [[Syndrome de Wolf-Hirschhorn]]
@@ -15,7 +23,39 @@ Pour le pédiatre :
 - del16p13 [[Syndrome de Smith-Magenis]]
 - del22q11 [[Microduplication 22q11.2]]
 - del22q13 [[Syndrome de Phelan McDermid]]
-  Rendement diagnostique 10-15%
+  Rendement diagnostique 10-15  %
+** NGS
+- Nb gènes impactet code proténie pour synapse
+- Rendement 50-70%
+- Panel "DI44" = provisoire ->_attente résultat étude Diseq
+- Defiscience
+- Étude défidiag : XFRA+ACPA+DI44 vs genome et exome
+** DI liée à l’X
+Spectre entre syndromique et non-syndromique
+Ex:
+- [[Syndrome de Coffin-Lowry]]
+- /UPF3B/ : code pour NMD -> DI (syndromique ou non)
+110 gènes confirmés + 30 candidats
+*** Filles ?
+- Asympto/légèrement atteinte/autant que les garçons
+- Inactivation de l’X dans le sang non toujours corrélés !
+- Gènes à manifestation féminine (ex: /PCDH19/), spécifiquement féminin (/DDX3X/ : probablement non viable chez garçon)
+*** DDX3X = DI féminine fréquente sur l’X
+- DI
+- Hypotonie
+- Mouvements anormaux (dyskinésie)
+- Microcéphalie
+- troubles du comportement
+- visage long, pointe du nez bulbeuse
+Centaines de mutations décrites
+* Syndrome de Coffin-Lowry :RPS6KA3:
+- DI sévère
+- Retard de croissance
+- Dysmorphie : lèvre charnues, hypertélorisme, bosse frontale
+- Main large avec doigts boudinés mais extrémités des doigts effilés
+
+#+caption: large forehead, hypertelorism, downslanting palpebral fissures, long philtrum, anteverted nares, and thick lips (Marques Pereira et al 2010)
+[[file:img/coffin-lowry.png]]
 * TODO 17q12 del
 * TODO Achondroplasie
 
@@ -68,7 +108,7 @@ Inc
 - Brachymétacarpie
 - Brachdactylie
 #+caption: 4e surtout et 2,3,4 en P9 (Leroy et al 2013)
- [[file:img/2qter-bones.png]]
+[[file:img/2qter-bones.png]]
 * FG syndrome :MED12:
 Lié à l’X
 
@@ -199,12 +239,12 @@ Tout n’est pas en miroire par rapport à [[*Syndrome de Williams-Burren][Syndr
 - souvent troubles du comportement, attentio, agressivité
 *** Dysmorphie
 [[file:img/microdup-7q11.png]]
- - Grand front
- - sourcils droits
- - lèvres upérieures fines
- - Philtrum court
- - nez large et long
- - Rarement dilatation aortique
+- Grand front
+- sourcils droits
+- lèvres upérieures fines
+- Philtrum court
+- nez large et long
+- Rarement dilatation aortique
 * Microdélétion 22q11.2
 ** Clinique
 Principal
@@ -221,8 +261,8 @@ Dysmorphie (peu évident naissance)
 - oreilles petits, rondes avec *lobules hypoplasiques*
 - bouche étroite
 
- #+caption: Habel et al 2014
- [[file:img/22q11.png]]
+  #+caption: Habel et al 2014
+  [[file:img/22q11.png]]
 *** Autre
 - Trouble digestif (dysphagie, reflux)
 - aplasie/hypoplasie thymus /praathyriodie -> déficit immunitaire
@@ -275,7 +315,7 @@ Dysmorphie :
 - oreilles dysplasiques
 
   #+caption: Gajecka et al 2007
- [[file:img/monosomy1p36.png]]
+  [[file:img/monosomy1p36.png]]
 
 - DI constante
 - Hypotonie 87%
@@ -322,11 +362,11 @@ IMC > courbes de manière précoce et aggravation rapide + sévère +/-
 - anomalies dévelppmental
 
 **  Examen :
-  - bio : neutropénie, fonction rénale, diabète axe hypohysaire
-  - +/- électrorétinogramme si problème de vision
-  - +/- CS orl si problèment
-  - RX main, pied, colonne
-  - écho cardiaque, abdo, rénale, IRM cérébrales
+- bio : neutropénie, fonction rénale, diabète axe hypohysaire
+- +/- électrorétinogramme si problème de vision
+- +/- CS orl si problèment
+- RX main, pied, colonne
+- écho cardiaque, abdo, rénale, IRM cérébrales
 
   Génétique
   - si DI : caryotype, Prader-Willer, X fra, CGH
@@ -377,7 +417,7 @@ Pseudohypoparathroïdies
 [[Syndrome de Rubinstein-Taybi][Rubinstein-Taybi]]
 [[Syndrome de Smith-Lemli-Optiz][SLO]]
 [[Syndrome de Coffin-Siris][Coffin-Siris]]
-  [[Syndrome de Wiedemann-Steiner][Wiedemann-Steiner]]
+[[Syndrome de Wiedemann-Steiner][Wiedemann-Steiner]]
 [[Myotonie de Steinert][Steinert]]
 [[Syndrome de Kabuki][Kabuki]]
 [[Syndrome de Noonan][Noonan]]
@@ -396,7 +436,7 @@ Pseudohypoparathroïdies
 - PC, envergure, segment proximal court (rhizomélie), médian court (mésolémile)
 - main/pied : petite extrémité (acromélie), brachy-dactylie/métacarpies/métatarsie, syndactylie, clinodactylie
 - phanères : cheveux clairsemés, hirsutisme,
-    livedo
+  livedo
 - ss
 ** Si acquisition normales sans trouble orthopépidque
 Hypothèses
@@ -405,7 +445,7 @@ Hypothèses
 - Noonan, KBG, Silver-Russel, Floating, Aarskog
 - Chromosome
 - Surcharge
- Bilan:
+  Bilan:
   - RX F+P bassin main, genou, âge osseux +/- parents si petite taille
   - +/- caryo pour Turner
   - bio: NFS, foie, rein, calcémie, thyroide, PTH
@@ -417,8 +457,8 @@ Hypothèses:
 - Surcharge
 
 Bilan
-  - RX F+P bassin main, genou, âge osseux +/- parents si petite taille
-  - bio: NFS, foie, rein, calcémie, thyroide, PTH
+- RX F+P bassin main, genou, âge osseux +/- parents si petite taille
+- bio: NFS, foie, rein, calcémie, thyroide, PTH
 ** Retard des acquisitions léger/modéré
 Hypothèses:
 - MOC: TRP
@@ -505,8 +545,8 @@ En résumé : mère = restriction via CDKN1C, père = croissance via IGF1
   - mutation CDNK1C -> glande surrénale
 ** Consensus récent
 ** Surveillance
-  - écho abdo tous les 2 mois si haut risque / intermédaire
-  - sinon, pas de screening
+- écho abdo tous les 2 mois si haut risque / intermédaire
+- sinon, pas de screening
 ** PEC
 Endoc: pour hyperinsulinismeg (diazoxyd...)
 ** DD
@@ -588,7 +628,7 @@ Souvent membre inférieur avec
 - varice
 - hypertrophie os et parties molles +/- asymétrie de longueur des MI
 * TODO Syndrome de Leigh et NARP
-  https://www.ncbi.nlm.nih.gov/books/NBK1173/
+https://www.ncbi.nlm.nih.gov/books/NBK1173/
 * TODO Syndrome de l’X fragile
 30% ont une obésité et 10% proche phénotype Prader-Wili
 * TODO Syndrome de Noonan
@@ -615,7 +655,7 @@ Souvent membre inférieur avec
 - ongles dysplasique
 
   #+caption: Petits ongles et malformés (A), Phelan et al 2011
- [[file:img/syndrome-phelan-mcdermid-nails.png]]
+  [[file:img/syndrome-phelan-mcdermid-nails.png]]
 
 Dysmorphie discrète:
 - dolicocéphalie
@@ -658,9 +698,9 @@ Phases:
 [[./img/prader-willi.png]]
 
 Troubles comportement alimentaire :
-  - obsession alimentaire ("craving")
-  - hyperphagie
-    Mise en danger de la vie !
+- obsession alimentaire ("craving")
+- hyperphagie
+  Mise en danger de la vie !
 ** Génétique
 Région 15q11q13 = soumise à empreinte maternelle -> gènes de l’allèle maternelle sont "mis sous silence" et seuls les gènes depuis chromosome paternel s’expriment
 Prader-Wili si perte de ces gènes d’origine paternelle :
@@ -732,16 +772,16 @@ file:img/syndrome-rubinstein-taybi-others.png
 - tâches café au lait
 - Malfo uro-génitale
 [[file:img/syndrome-silver-russel.png]]
-  En gras critères cliniques
+En gras critères cliniques
 
-  NB: dysmorphie plus difficile avec l’âge -> regarder photos jeune enfance
+NB: dysmorphie plus difficile avec l’âge -> regarder photos jeune enfance
 ** Génétique
 Voir [[*Mécanisme][Sd Beckwith-Wiedeman]] pour mécanisme
 
 Défaut expression IGF2
- - 50% : perte méthylation ICR1 allèle paternelle -> perte expression IGF2 allèle paternelle
- - Mutations gains de fonction CDKN1C ou perte de fonction IGF2 ou perte de fonction sur régulateurs positif IGF2
- - dup 11p15 maternelle : augmente expression CDKN1C
+- 50% : perte méthylation ICR1 allèle paternelle -> perte expression IGF2 allèle paternelle
+- Mutations gains de fonction CDKN1C ou perte de fonction IGF2 ou perte de fonction sur régulateurs positif IGF2
+- dup 11p15 maternelle : augmente expression CDKN1C
 ** Diagnostic (consensus 2015)
 Score clinique \ge 4 ->_test méthylation 11p15 et disomie maternne UPD7
 - si négatif :
@@ -778,16 +818,16 @@ Garçons !
 - DI souvent sévère
 - dysmorphie: brachycéphalie, bosses fontales, synophris, hypertélorisme, hypoplasie étage moyen facile, prognathisme, oreilles bas implantées
   #+caption: Elsea et al 2008
- [[file:img/syndrome-smith-magenis.png]]
+  [[file:img/syndrome-smith-magenis.png]]
 - troubles comportement et sommeil
 - hyperphagie
 - +/- hypersensibilité douleurs, malfo cardiaque, urinaire, rénale, dentaire
   Inversion du rythme circadien: hyperactivité de la nuite
 ** Génétique
-  - 90% dél htz 17p11.2
-    - 70% de del récurrent par NAHR de 3.7MB
-    - 30% del htz variable
-  - 10% mutation RAI1 avec même clinique mais suprpois et pas de malfo
+- 90% dél htz 17p11.2
+  - 70% de del récurrent par NAHR de 3.7MB
+  - 30% del htz variable
+- 10% mutation RAI1 avec même clinique mais suprpois et pas de malfo
 * TODO Syndrome de Sotos :NSD1:
 ** Clinique
 - Macrosomie++ (foetal et postnatale)
@@ -840,9 +880,9 @@ Anomalie de la triméthylation dans histone H3
 * Syndrome de West
 In about 35% of cases, the etiologic event is (still) unknown:
 others = structural, infectious, metabolic and immunologic defects and genetic abnormalities
- may be prenatal, perinatal, and post-natal period.
- ischemic encephalopathy is reported as one of the most common causes of ISs.
- “United Kingdom Infantile Spasms Study” (UKISS) [14],  hypoxic-ischemic encephalopathy was reported in 10%, followed by chromosomal abnormalities, complex malformation syndromes and perinatal stroke (8%), tuberous sclerosis (7%), and periventricular leukomalacia or hemorrhage (respectively, in 5%)
+may be prenatal, perinatal, and post-natal period.
+ischemic encephalopathy is reported as one of the most common causes of ISs.
+“United Kingdom Infantile Spasms Study” (UKISS) [14],  hypoxic-ischemic encephalopathy was reported in 10%, followed by chromosomal abnormalities, complex malformation syndromes and perinatal stroke (8%), tuberous sclerosis (7%), and periventricular leukomalacia or hemorrhage (respectively, in 5%)
 Source https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7655587/
 
 * TODO Syndrome de Wiedemann-Steiner
@@ -859,13 +899,13 @@ Source https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7655587/
   carie +/- hypoplasie
 
 *** Dysmorphie : faciès d’elfe
-  - grand front, joues pleines
-  - hypoplasie malaire
-  - oedème périorbitaire
-  - piltrium long
-  - racine du nez aplati
-  - iris stellaire
-   [[file:img/syndrome-williams.png]]
+- grand front, joues pleines
+- hypoplasie malaire
+- oedème périorbitaire
+- piltrium long
+- racine du nez aplati
+- iris stellaire
+  [[file:img/syndrome-williams.png]]
 ** Génétique
 Région encadrée par des LCR -> favorise NAHR
 - 95% délétion htz 1.55Mb en 7q11.23
@@ -903,12 +943,12 @@ Quasimente que de novo
 - DI avec retard de langage
 - malfo cardiaque et oculaire
 ***  Dysmorphie
-  - microcéphalie
-  - visage rong
-  - hyperétolérisme
-  - racine nez large
-  - oreille bas implantées
-  - microgantie
+- microcéphalie
+- visage rong
+- hyperétolérisme
+- racine nez large
+- oreille bas implantées
+- microgantie
 [[file:img/del5p.png]]
 *** Génétique
 - Délétion de taille variable (certaines visible sur caryo)
@@ -993,9 +1033,9 @@ Autres:
 
   Variabilité
 ** Diagnostic
-  Variant htz
+Variant htz
 
-  AD
+AD
 * Syndrome Kleefstra/Deletion 9qter :EHMT1:
 ** Clinique
 - Dysmorphie :
@@ -1087,15 +1127,15 @@ Pénétrance complètes ~ 8ans
 - existence d’un sous-type avec juste des taches café à lait
 - microdel : apparition précoce, morpho type particulier, retard mental
   [NB: difficulté d’apprentissage sans DI dans la NF1 normal]
- [[file:img/nf1-noonan.png]]
+  [[file:img/nf1-noonan.png]]
 - phénotype à risque de développer des tumeurs : neurofibromes sous-cutanés -> tumeur maligne des gaines nerveuse
   (cliniquement cuténé = mou)
 - mutation épissage = corrélé tumeurs profondes
   -> TEP-scane avec biopsie si hypermétabolisme
 **** SPRED1 = phénotype proche nF1 -> syndrome de Lejus
-  - AD
-  - 5% des NF1
-  - Beaucoup moins fréquent
+- AD
+- 5% des NF1
+- Beaucoup moins fréquent
 **** Mosaïque/segmentaire
 [[file:img/nf1-mosaique.png]]
 Localisé = risque de mosaïque germinal faible
@@ -1120,7 +1160,7 @@ douleurs intense pulpes -> IRM pour tumeur glomique
 
 * Hémoglobinopathies
 ** Intro
- Structure : chaines de globine (structure en globe) = protéine -> dans une poche vient se mettre l’hème (contient un atome de fer sur lequel se fixe l’oxygène)
+Structure : chaines de globine (structure en globe) = protéine -> dans une poche vient se mettre l’hème (contient un atome de fer sur lequel se fixe l’oxygène)
 - Hémoglobinopathies = anomalies de globine (chaine protéqiue)
 À différencier des maladies de l’hème (porphyrie)
 
@@ -1150,13 +1190,13 @@ Prise en charge : transfusions 1/mois + chélateur du fer
 - alternatives transplatation CSH (donneur familial), thérapie génique (essais cliniques en cours)
 
 *** Génétiques
-  AR, surtout mutation ponctuelle, parfois délétion
+AR, surtout mutation ponctuelle, parfois délétion
 
-  Génotype :
-  - β-β normal
-  - β*-β: htz, compensé par allèle sauvage : porteur sain avec "trait thalassémique" (microcytose, hypochromie, augmentation modérée mais constante HbA2 >_3.2%)
-  - β*-β* hmz (ou htz composite)
-    - NB: thalassémie intermédiaire : mutation non sévère -> synthèse résiduelle de β-globine avec tableau atténué ( anémie mais production résiduelle d’hémoglobine )
+Génotype :
+- β-β normal
+- β*-β: htz, compensé par allèle sauvage : porteur sain avec "trait thalassémique" (microcytose, hypochromie, augmentation modérée mais constante HbA2 >_3.2%)
+- β*-β* hmz (ou htz composite)
+  - NB: thalassémie intermédiaire : mutation non sévère -> synthèse résiduelle de β-globine avec tableau atténué ( anémie mais production résiduelle d’hémoglobine )
 
 Mutation:
 - stop/altération de l’épissage : pas de chaine β ->_thalassémie majeure
@@ -1173,8 +1213,8 @@ Formes :
 *** Moléculaire
 - Surtout délétions, rarement mutation ponctuelle
 **** Délétion
-  - soit délétion 2 gènes en cis
-  - délétion/fusion : perte de région entre α2 et α1 -> gène hybride fonctionnel
+- soit délétion 2 gènes en cis
+- délétion/fusion : perte de région entre α2 et α1 -> gène hybride fonctionnel
 
 Génotypes
 - 4 ou 3 gènes fonctionnel = normal
@@ -1310,11 +1350,11 @@ Classification génétique
 - voie signalisation TGFβ : TGFBR1 et 2, TGFB2 et 2, SMAD2 et 3
 - composant de l’appareil contractile des cellules musculaires lisses : ACTA2, MYH11, MYLK, PRKG1
 Formes syndromiques
- - Loeys-Dietz
- - anrévrisme de l’arthrose, tortuosité artérieelle
- - dysfunction musculaire
- - Marfan néonatal
- - Marfan
+- Loeys-Dietz
+- anrévrisme de l’arthrose, tortuosité artérieelle
+- dysfunction musculaire
+- Marfan néonatal
+- Marfan
 Non syndromique
 - anévrysme aortiques thoraciques familiaux
 - dissections aortiques familiales
@@ -1387,7 +1427,7 @@ Retard puberté, aménorhrrée primaire (ovaires sclérosés non fonctionnels)
 - rénale : rein unique/fer à cheval/malfo urinaire 40% (favorise infection urinaire)
 - ostéoporose (carence ostrogène), diabète, hypothyroidie, coeliaque
 - augmentation risque luxation hanche,
- - ORL
+  - ORL
 - strabisme
 - intelligence normale mais souvent difficulté d’apprentissage spécifiques
 ** Fertilié
@@ -1442,7 +1482,7 @@ Phénotype normal
 - hypertrophie du tissu adipeux et hypercroissance osseuse
 - Histologie : nerf élargi et allongé
 - Pas de cas de dégénérescence
- [[file:img/macrodactylie-1.png]]
+  [[file:img/macrodactylie-1.png]]
 
 ** Hyperplasie fibro-adipeuse
 - Hypertrophie segmentaire progressive du tissu sous cutané musculaire et adipeux avec hypercroissance osseuse
@@ -1511,28 +1551,28 @@ Contrôlé par 2000 gènes
 - /ADGRG2/ : stase du canaux déférent. 1% des azoospermie obstructive
 **** Défaut de production
 ***** chromosomique :5-7% des patients infertiles
-  1. Nombre :
-     - [[*Syndrome de Klinefelter][Syndrome de Klinefelter]] = cause génétique la plus fréquente
-        Spermatogènes résiduelle (50% biopsie positive)
-        augmentation de taux d’aneuploide (T12)
-     - 47XYY
-     - marqueurs surnuméraires
-  2. Structure
-     - Translocation robertsonnienne : 2% des hommes infertiles. -> trivalent (chr 13, chr1, t(13, t14))
-      [[file:img/trivalent.png]]
-       80 des spermatozoide auront un contenu équilibré
-      [[file:img/trivalent-segreg.png]]
-      Autres :
-       - excès nullosomique (13,14,15,22) -> risque disomie maternelle
-       - risque de gamètes disomique sur le 21 -> risque de trisomie
-     - transloc réciproques : majorité ont un contenu déséquilibré
-     - inversion péri (continte le centromère) : proportion variable de gamèter déséquilibér
-       paracentrique : rarement gamiètre déséquilibre (ne franchissent pas la méiose)
-     - complexe : >= 2 chr et >=3 chr : blocacge sévère spermatogenèse
-       ex: chrY isodicentrique, anneau
-     - chrX et bras court du Y : transposition SRY sur X (1%)
+1. Nombre :
+   - [[*Syndrome de Klinefelter][Syndrome de Klinefelter]] = cause génétique la plus fréquente
+     Spermatogènes résiduelle (50% biopsie positive)
+     augmentation de taux d’aneuploide (T12)
+   - 47XYY
+   - marqueurs surnuméraires
+2. Structure
+   - Translocation robertsonnienne : 2% des hommes infertiles. -> trivalent (chr 13, chr1, t(13, t14))
+     [[file:img/trivalent.png]]
+     80 des spermatozoide auront un contenu équilibré
+     [[file:img/trivalent-segreg.png]]
+     Autres :
+     - excès nullosomique (13,14,15,22) -> risque disomie maternelle
+     - risque de gamètes disomique sur le 21 -> risque de trisomie
+   - transloc réciproques : majorité ont un contenu déséquilibré
+   - inversion péri (continte le centromère) : proportion variable de gamèter déséquilibér
+     paracentrique : rarement gamiètre déséquilibre (ne franchissent pas la méiose)
+   - complexe : >= 2 chr et >=3 chr : blocacge sévère spermatogenèse
+     ex: chrY isodicentrique, anneau
+   - chrX et bras court du Y : transposition SRY sur X (1%)
 ***** microdeletion du Y
-  - récurrente : 3 régions critiques avec pronotique différenté
+- récurrente : 3 régions critiques avec pronotique différenté
   AZFA = rare, absence de Sertoli seul
   AZFB = arrêt en méiose
   AZFC = variable
@@ -1543,7 +1583,7 @@ Contrôlé par 2000 gènes
 
   - Deletion partielle AZFc (gr/gr) par densité éléments répétés
     forte prévalence en population générale (2%)
-     -> prédisposition. Mais dépend de l’ethnie
+    -> prédisposition. Mais dépend de l’ethnie
 ***** Hypogonadisme hypogonadotrope (centrale)
 - Retard pubertaire, anosmie
 - Testostérone effondrée, FSH et LH diminué
@@ -1628,9 +1668,9 @@ IOP et FCS seuls ici
 - aménorrhée primaire/secondaire suite à des cycles réguliers le plus souvent
 
 Origines
-  - Déplétion stock follicule prmaires
-  - blocage maturation follicule
-  - apoptose accélérée (Turner, FMR1 )
+- Déplétion stock follicule prmaires
+- blocage maturation follicule
+- apoptose accélérée (Turner, FMR1 )
 **** Types
 ***** Le plus souvent anomalies chromosomiques
 - X dans 10-13%
