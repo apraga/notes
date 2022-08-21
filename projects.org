@@ -1932,13 +1932,13 @@ SCHEDULED: <2022-07-31 Sun>
 **** TODO Pathologies fréquentes en génétique clinique
 **** TODO Génome humain : normal et pathologique
 **** TODO Maladies métaboliques
-*** TODO E-learning session 2 [2/6]
+*** TODO E-learning session 2 [5/6]
 **** DONE Infertilité
 -> cours 1, diapo 31
 **** DONE Syndromes microdélétionnels
-**** TODO Dysgonosomies
-**** TODO Cancer du colon: Maladie de Lynch et CMMRD
-**** TODO Déficience intellectuelle
+**** DONE Dysgonosomies
+**** DONE Cancer du colon: Maladie de Lynch et CMMRD
+**** DONE Déficience intellectuelle
 **** TODO Pathologies neuromusculaires
 ** TODO DIU dysmorpho
 :PROPERTIES:
