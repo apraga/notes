@@ -48,6 +48,54 @@ Ex:
 - troubles du comportement
 - visage long, pointe du nez bulbeuse
 Centaines de mutations décrites
+** DI autosomique récessive
+Formes métaboliques: déficit enzymatique (carence / accumulation dérivé toxique)
+- métabolisme des acides aminées (phénylcétonurie)
+- lysosomales (Farber)
+- enérgétique (déficite pyruvate)
+- peroxysomale (Zellweger)
+- glycosylation (CGD)
+
+  Syndromique avec parfois DI : ex [[Syndrome de Barder-Biedl]]
+
+  Ex: [[Syndrome Beaulieu-Boycott-Innes]]
+** DI autosomique dominate = plus fréquente
+Ex:
+- Syndrome de Pitt-Hopkins
+- DYRK1A = DI
+  - microcéphalie
+  - dysmorphie: énophtalmie, micrognathie
+  - épilepsie
+  - absence de langage
+  - traits autistiques
+  - difficultés d’alimentation
+** Mécanisme moléculaire
+- Synapse: Nombreuses protéines mutées en post-synaptique
+- réorganisation du cytosquelette (plutôt logique)
+- processus plus généraux : facteurs de transcription, remodelage de la chromatine, métablisme ARN messager
+  -> certains sont exprimés dans tous les tissus !
+** Notes
+  Chevauchement génétique avec TSA, épilepsie
+* Syndrome de Pitt-Hopkins :TCF4:
+- DI sévère
+- Pas de language
+- stéréotypique
+- démarche ataxique
+- dysmorphie (bouche notamment)
+- strabisme
+- hyperventilation
+- constipation
+
+  Attention: spectre !
+  #+caption: Waheln et al 2021
+ [[file:img/pitt-hopkins.png]]
+* Syndrome Beaulieu-Boycott-Innes :THOC6:
+ - DI
+ - trouble du langage
+ - retard de croissance
+ - anomalies cardiaques et rénales
+ - dysmorphie
+Familles consanguines oun on
 * Syndrome de Coffin-Lowry :RPS6KA3:
 - DI sévère
 - Retard de croissance
