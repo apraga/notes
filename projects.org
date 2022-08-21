@@ -1653,13 +1653,13 @@ SCHEDULED: <2022-08-20 sam.>
 SCHEDULED: <2022-07-30 Sat>
 
 ** Kitty
-*** KILL ne compile plus
-SCHEDULED: <2022-07-17 Sun>
-Non reproductible
-*** DONE v25.2
-Soumis
-*** TODO PR upstream pour _Static_assert (cf https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=265393)
+*** TODO v25.2
+**** DONE Soumettre
+**** WAIT PR upstream pour _Static_assert (cf https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=265393)
 SCHEDULED: <2022-08-20 sam.>
+Si confirmé, fermé la PR
+Sinon, enlevé <assert.h>
+**** WAIT Plus de patch nécessaire ? Réouvert bug sur bugzilla
 ** WAIT [[https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=264158][pkgconf est trop lent sur freebsd]]
 Problème persiste avec dernière version
 ** TODO taskwarrior v0.23.5
