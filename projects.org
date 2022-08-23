@@ -1634,10 +1634,16 @@ SCHEDULED: <2022-07-30 Sat>
 **** KILL Utiliser docker
 **** STRT Utiliser nix avec exactement la même configuration
 **** TODO Test de non régression
-*** TODO Essayer d’autres pipeline
+*** TODO Implémenter d’autres pipeline
 Voir https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04407-x
-**** GATK
+**** TODO GATK
 https://broadinstitute.github.io/warp/docs/Pipelines/Exome_Germline_Single_Sample_Pipeline/README
+A priori, respecte les bonnes pratiques
+**** DONE Essayer snamke avec bonne pratiques
+https://github.com/snakemake-workflows/dna-seq-gatk-variant-calling/blob/main/.github/workflows/main.yml
+Installer Mamba (micromamba ne fonctionne pas sous nix)
+Ne fonctionne pas sous WSL2... MultiQC n’est pas assez à jour
+Problèmes de versions...
 * Banque :banque:
 ** TODO Compte et CB société générale :banque:
 *** KILL Envoyer relevé
