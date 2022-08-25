@@ -1612,6 +1612,10 @@ Voir avec Paul
 **** https://www.fast.ai/
 
 ** Pipeline exome
+*** Biblio
+Comparaison WDL, Cromwell, nextflow
+https://www.nature.com/articles/s41598-021-99288-8
+Nextflow = bon compromis ?
 *** Améliorer le workflow
 **** STRT Nix pour les dépendences
 **** STRT Nix pour télécharger les données brutes
