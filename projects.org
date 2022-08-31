@@ -1629,10 +1629,28 @@ SCHEDULED: <2022-08-19 Fri>
 - [ ] VEP 20G
 Utilise une versionn allégée de GnomAD (une seule colonne)
 **** TODO test Bionix
-**** TODO Implémenter execution avec Nix ?
+**** KILL Implémenter execution avec Nix ?
+CLOSED: [2022-08-31 Wed 11:09]
 Voir https://academic.oup.com/gigascience/article/9/11/giaa121/5987272?login=false
 pour un exemple.
 Probablement plus simple d’utiliser Nix pour gestion de l’environnement et snakemake pour l’exécution
+**** STRT Exécution avec nextflow
+*** Simulation sur mésocentre
+**** Réunion <2022-08-31 Wed>
+Intervenants:
+- Kamel Mazouzi (directeur adjoint informatique)
+- Sekou Diakité
+
+2 clusters :
+- Lumière : Centos non mis à jour, SGE, Spack comme équivalent Nix
+- Helios : moins de coeurs mais à jours, Slurm
+
+Conclusion :
+- essai d’installation Nix
+- si échec, essayer Spack ou Conda
+- répertoire partagé de 2To pour datasets
+- soumission de jobs sous Nextflow à discuter dans un second temps
+**** WAIT Installation nix
 *** TODO Installer le pipeline d’Alexis
 SCHEDULED: <2022-07-30 Sat>
 **** KILL Utiliser docker
