@@ -66,6 +66,11 @@ nix-os rebuild switch
 #+end_src
 NB: il manque man par défaut !.
 Doc officielle : https://nixos.org/manual/nixos/stable/
+** Suive avancement des branches (unrstable, stable...)
+Plusieurs possibilités
+1. https://nixpk.gs/pr-tracker.html?pr=188777
+2. https://status.nixos.org/
+3. Simply clicking on a commit on GitHub shows branches and tags containing that commit.
 
 * Nix
 Activer les flakes (experimental) ! Meilleure expérience utilisateur
@@ -139,6 +144,11 @@ Il ne reste plus qu’à le construire
 nix-build
 result/bin/lol.py
 #+end_src
+** Upgrade
+Après avoir ajouté un channel:
+
+nix.package = (import <nixos-unstable-small> {}).nix
+
 
 * Avertissements
 Ne jamais modifier les fichiers dans /nix/store
