@@ -407,6 +407,19 @@ Surexpression :[[file:maladies.org::*Syndrome de Potocki-Lupski][Syndrome de Pot
 Délétion : [[file:maladies.org::*Syndrome de Williams-Burren][Syndrome de Williams-Burren]]
 Dup [[file:maladies.org::*Microduplication 7q11.23][Microduplication 7q11.23]]
 
+
+* Variants d’épissage
+Si site canonique : -1 ou -2 en accpteur, +1 ou +2 en donner -> patho
+Sinon, utiliser Spip et SpliceAI. Proposition d’algorithme par ACNMG
+- les 2 sont négatifs -> on ne fait rien
+- les 2 sont positifs -> RNAseq
+- sinon à discuter
+
+Regarder l’image des sites donneurs pour voir les séquences connues
+NB: interprétation graphique sur mobidetails de spliceAI : montre la "force"
+* Score bioinfo
+** Gène
+*** pLI et o/e
 * Footnotes
 
 [fn:1] C<->T ou A <-> G
