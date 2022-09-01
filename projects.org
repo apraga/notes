@@ -1604,6 +1604,8 @@ Voir avec Paul
 *** TODO [[file:books.org::*The elements of statistical learning (217)][The elements of statistical learning (217)]] :
 **** TODO Chap 1-4
 **** TODO Chap 7-8
+*** TODO Introduction to statistical learning
+Plus facile, à faire avant Elements... ?
 *** TODO [[https://www.coursera.org/learn/machine-learning/home/info][Andrew NG coursera]]
 *** TODO The Deep Learning Book: https://www.deeplearningbook.org/front_matter.pdf
 *** TODO Put tensor flow or torch on a linux box and run examples: http://cs231n.github.io/aws-tutorial/
@@ -1628,13 +1630,15 @@ SCHEDULED: <2022-08-19 Fri>
 - [ ] Refseq 20G
 - [ ] VEP 20G
 Utilise une versionn allégée de GnomAD (une seule colonne)
-**** TODO test Bionix
+**** HOLD test Bionix
 **** KILL Implémenter execution avec Nix ?
 CLOSED: [2022-08-31 Wed 11:09]
 Voir https://academic.oup.com/gigascience/article/9/11/giaa121/5987272?login=false
 pour un exemple.
 Probablement plus simple d’utiliser Nix pour gestion de l’environnement et snakemake pour l’exécution
 **** STRT Exécution avec nextflow
+**** TODO Télécharger données avec Makefile
+Pour mésocentre
 *** Simulation sur mésocentre
 **** Réunion <2022-08-31 Wed>
 Intervenants:
@@ -1655,6 +1659,9 @@ Conclusion :
 SCHEDULED: <2022-07-30 Sat>
 **** KILL Utiliser docker
 **** STRT Utiliser nix avec exactement la même configuration
+**** TODO Alignement avec NC
+- [ ] Changer le génome de référence
+- [ ] Passer en chr seulement à la fin (ce qui est déjà fait)
 **** TODO Test de non régression
 *** TODO Implémenter d’autres pipeline
 Voir https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04407-x
@@ -1666,6 +1673,8 @@ https://github.com/snakemake-workflows/dna-seq-gatk-variant-calling/blob/main/.g
 Installer Mamba (micromamba ne fonctionne pas sous nix)
 Ne fonctionne pas sous WSL2... MultiQC n’est pas assez à jour
 Problèmes de versions...
+*** Performances
+Ordinateur de Carine (WSL2) : 4h dont 1h15 alignement (parallélisé) et 1h15 haplotypecaller (séquentiel)
 * Banque :banque:
 ** TODO Compte et CB société générale :banque:
 *** KILL Envoyer relevé
