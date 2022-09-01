@@ -1618,6 +1618,15 @@ Plus facile, à faire avant Elements... ?
 Comparaison WDL, Cromwell, nextflow
 https://www.nature.com/articles/s41598-021-99288-8
 Nextflow = bon compromis ?
+*** Notes
+Quelle version du génome ? Il y a 2 notations pour les chrosome: Refseq (NC_0001) ou chr1, chr2...
+dbSNP utilise Refseq
+pour le fasta, 2 solutions
+- refseq : "https://ftp.ncbi.nlm.nih.gov/refseq/H_sapiens/annotation/${genome}_latest/refseq_identifiers/${fna}.gz"
+  -> nécessite d'indexer le fichier (long !)
+- chromosome https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.15_GRCh38/seqs_for_alignment_pipelines.ucsc_ids/
+  -> nécessite d'annoter les chromosomes pour corriger (avec le fichier gff)
+  On utilise la version chromosome donc on annote dbSNP (à faire)
 *** Améliorer le workflow
 **** STRT Nix pour les dépendences
 **** STRT Nix pour télécharger les données brutes
@@ -1659,9 +1668,8 @@ Conclusion :
 SCHEDULED: <2022-07-30 Sat>
 **** KILL Utiliser docker
 **** STRT Utiliser nix avec exactement la même configuration
-**** TODO Alignement avec NC
-- [ ] Changer le génome de référence
-- [ ] Passer en chr seulement à la fin (ce qui est déjà fait)
+**** TODO Alignement avec chr
+Corriger dbSNP
 **** TODO Test de non régression
 *** TODO Implémenter d’autres pipeline
 Voir https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04407-x

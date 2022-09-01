@@ -149,6 +149,17 @@ Après avoir ajouté un channel:
 
 nix.package = (import <nixos-unstable-small> {}).nix
 
+** Patcher
+#+begin_src
+    nixpkgs.overlays = [
+      # Patch to avoid out-of-memory errors in nix
+      (final: prev: {
+        nix = prev.nix.overrideAttrs (old: {
+          patches = (old.patches or []) ++ [./0001-don-t-read-outputs-into-memory-for-output-rewriting.patch ];
+        });
+      })
+      ] ;
+#+end_src
 
 * Avertissements
 Ne jamais modifier les fichiers dans /nix/store
