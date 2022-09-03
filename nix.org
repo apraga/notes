@@ -104,6 +104,11 @@ nix-shell -E 'with import <nixpkgs> {}; callPackage ./default.nix {}'
 [nix-shell]$ eval ${configurePhase:-configurePhase}
 [nix-shell]$ eval ${buildPhase:-buildPhase}
 #+end_src
+** Pour installer une seule dérivation
+#+begin_src
+nix-shell -p 'with import <nixpkgs>{}; callPackage pkgs/GenomeRef.nix {}'
+#+end_src
+Ne pas oublier {}
 ** Python
 Instructions simples ici : https://nixos.wiki/wiki/Python#Package_and_development_shell_for_a_python_project
 
