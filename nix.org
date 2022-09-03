@@ -165,6 +165,8 @@ nix.package = (import <nixos-unstable-small> {}).nix
       })
       ] ;
 #+end_src
-
+* Nixpkgs
+** Ajoutr un nouveau paquet
+https://nixos.wiki/wiki/Nixpkgs/Contributing
 * Avertissements
 Ne jamais modifier les fichiers dans /nix/store
