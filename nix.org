@@ -66,6 +66,11 @@ nix-os rebuild switch
 #+end_src
 NB: il manque man par défaut !.
 Doc officielle : https://nixos.org/manual/nixos/stable/
+** Suive avancement des branches (unrstable, stable...)
+Plusieurs possibilités
+1. https://nixpk.gs/pr-tracker.html?pr=188777
+2. https://status.nixos.org/
+3. Simply clicking on a commit on GitHub shows branches and tags containing that commit.
 
 * Nix
 Activer les flakes (experimental) ! Meilleure expérience utilisateur
@@ -99,6 +104,11 @@ nix-shell -E 'with import <nixpkgs> {}; callPackage ./default.nix {}'
 [nix-shell]$ eval ${configurePhase:-configurePhase}
 [nix-shell]$ eval ${buildPhase:-buildPhase}
 #+end_src
+** Pour installer une seule dérivation
+#+begin_src
+nix-shell -p 'with import <nixpkgs>{}; callPackage pkgs/GenomeRef.nix {}'
+#+end_src
+Ne pas oublier {}
 ** Python
 Instructions simples ici : https://nixos.wiki/wiki/Python#Package_and_development_shell_for_a_python_project
 
@@ -139,6 +149,24 @@ Il ne reste plus qu’à le construire
 nix-build
 result/bin/lol.py
 #+end_src
+** Upgrade
+Après avoir ajouté un channel:
 
+nix.package = (import <nixos-unstable-small> {}).nix
+
+** Patcher
+#+begin_src
+    nixpkgs.overlays = [
+      # Patch to avoid out-of-memory errors in nix
+      (final: prev: {
+        nix = prev.nix.overrideAttrs (old: {
+          patches = (old.patches or []) ++ [./0001-don-t-read-outputs-into-memory-for-output-rewriting.patch ];
+        });
+      })
+      ] ;
+#+end_src
+* Nixpkgs
+** Ajoutr un nouveau paquet
+https://nixos.wiki/wiki/Nixpkgs/Contributing
 * Avertissements
 Ne jamais modifier les fichiers dans /nix/store

@@ -1604,6 +1604,8 @@ Voir avec Paul
 *** TODO [[file:books.org::*The elements of statistical learning (217)][The elements of statistical learning (217)]] :
 **** TODO Chap 1-4
 **** TODO Chap 7-8
+*** TODO Introduction to statistical learning
+Plus facile, à faire avant Elements... ?
 *** TODO [[https://www.coursera.org/learn/machine-learning/home/info][Andrew NG coursera]]
 *** TODO The Deep Learning Book: https://www.deeplearningbook.org/front_matter.pdf
 *** TODO Put tensor flow or torch on a linux box and run examples: http://cs231n.github.io/aws-tutorial/
@@ -1621,6 +1623,22 @@ Voir avec Paul
 *** TODO Rendre le workflow compatible avec Nix
 **** DONE Nix pour les dépendences
 **** DONE Nix pour télécharger les données brutes
+*** Biblio
+Comparaison WDL, Cromwell, nextflow
+https://www.nature.com/articles/s41598-021-99288-8
+Nextflow = bon compromis ?
+*** Notes
+Quelle version du génome ? Il y a 2 notations pour les chrosome: Refseq (NC_0001) ou chr1, chr2...
+dbSNP utilise Refseq
+pour le fasta, 2 solutions
+- refseq : "https://ftp.ncbi.nlm.nih.gov/refseq/H_sapiens/annotation/${genome}_latest/refseq_identifiers/${fna}.gz"
+  -> nécessite d'indexer le fichier (long !)
+- chromosome https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.15_GRCh38/seqs_for_alignment_pipelines.ucsc_ids/
+  -> nécessite d'annoter les chromosomes pour corriger (avec le fichier gff)
+  On utilise la version chromosome donc on annote dbSNP (à faire)
+*** Améliorer le workflow
+**** STRT Nix pour les dépendences
+**** STRT Nix pour télécharger les données brutes
 ***** KILL Axel au lieu de curl pour gérer les timeout?
 CLOSED: [2022-08-19 Fri 15:18]
 ***** DONE Tester patch de @pennae pour gros fichiers
@@ -1628,6 +1646,7 @@ SCHEDULED: <2022-08-19 Fri>
 ***** DONE Télécharger
 - [ ] Refseq 20G
 - [ ] VEP 20G
+<<<<<<< HEAD
 **** STRT Corriger le script pour nix
 *** Améliorer le workflow
 **** TODO Utilise une versionn allégée de GnomAD (une seule colonne)
@@ -1641,6 +1660,40 @@ Pas d’accès internet depuis le cluster
 **** TODO Télécharger les données avec makefile + traitement par nextflow
 *** TODO Tests
 SCHEDULED: <2022-07-30 Sat>
+=======
+Utilise une versionn allégée de GnomAD (une seule colonne)
+**** HOLD test Bionix
+**** KILL Implémenter execution avec Nix ?
+CLOSED: [2022-08-31 Wed 11:09]
+Voir https://academic.oup.com/gigascience/article/9/11/giaa121/5987272?login=false
+pour un exemple.
+Probablement plus simple d’utiliser Nix pour gestion de l’environnement et snakemake pour l’exécution
+**** STRT Exécution avec nextflow
+**** TODO Télécharger données avec Makefile
+Pour mésocentre
+*** Simulation sur mésocentre
+**** Réunion <2022-08-31 Wed>
+Intervenants:
+- Kamel Mazouzi (directeur adjoint informatique)
+- Sekou Diakité
+
+2 clusters :
+- Lumière : Centos non mis à jour, SGE, Spack comme équivalent Nix
+- Helios : moins de coeurs mais à jours, Slurm
+
+Conclusion :
+- essai d’installation Nix
+- si échec, essayer Spack ou Conda
+- répertoire partagé de 2To pour datasets
+- soumission de jobs sous Nextflow à discuter dans un second temps
+**** WAIT Installation nix
+*** TODO Installer le pipeline d’Alexis
+SCHEDULED: <2022-07-30 Sat>
+**** KILL Utiliser docker
+**** STRT Utiliser nix avec exactement la même configuration
+**** TODO Alignement avec chr
+Corriger dbSNP
+>>>>>>> 976dbe55316c03b3abd0aed3f42de526b6c793b9
 **** TODO Test de non régression
 **** TODO Genome in a bottle
 *** TODO Implémenter d’autres pipeline
@@ -1653,6 +1706,8 @@ https://github.com/snakemake-workflows/dna-seq-gatk-variant-calling/blob/main/.g
 Installer Mamba (micromamba ne fonctionne pas sous nix)
 Ne fonctionne pas sous WSL2... MultiQC n’est pas assez à jour
 Problèmes de versions...
+*** Performances
+Ordinateur de Carine (WSL2) : 4h dont 1h15 alignement (parallélisé) et 1h15 haplotypecaller (séquentiel)
 * Banque :banque:
 ** TODO Compte et CB société générale :banque:
 *** KILL Envoyer relevé
