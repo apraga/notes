@@ -1,6 +1,22 @@
 #+TITLE: Maladies
 #+OPTIONS: toc:1
-* AMyotrophie spinale infantile
+* TODO 17q12 del
+* 47XXX
+X le plus souvent maternelle
+1/1000
+forte proportion asympto
+- taille plus grande
+- fertilité le plus souvent normale mais plus d’IOP (3% des IOP)
+- basse QI ? remise en question sur anciennes études
+* 47XYY
+1/1000
+Phénotype normal
+- grande taille
+- généralement fertile mais infertilité un peu augmenté
+- pas de DI
+* TODO Achondroplasie
+
+* Amyotrophie spinale infantile
 2e maladie neuromusc la plus fréquente
 1/6000 - 1/10 000 dans le monde
 Dégénerscence des motoneurones de la corne antérieure de la moelle
@@ -13,11 +29,11 @@ Dégénerscence des motoneurones de la corne antérieure de la moelle
   Hypotonie majeure, pas de mobilité, arthrogrypose 4 membres, détresse respiratoire
 
 *** Nourisson, jeune enfant = plus caractéristique
-- hypotonie axilae majeure + déficit moteur 4 membre prédominante MI ->_attitue en "batriacien"
+- *hypotonie axiale* majeure + déficit moteur 4 membre prédominante MI ->_attitue en "batriacien"
 - balancement thoraco-abdominal (respect diaphragme)
 - pas de réflexes
-- fasculation de la lange (à chercher !)
-- mais éveil norma
+- *fasciculation de la langue* (à chercher !)
+- mais *éveil normal*
 Évolution : arrêt de tout progrès moteur
 *** Adulte = plus trompeur
 Déficit ceinteure prédominant MI, ROT possiblement conservées
@@ -39,9 +55,25 @@ DD:
 - paralysie du diaphragme
 - Charcot-Marie-Tooth spinaux
 ** Moléculaire
-Locus sMA
+*** Diagnostic
+**** Délétion homozygote
+ACRS
+création d’un site de restriction artificiel sur SMN2 uniquement + 1 site en intronique
+-> l’enzmye va donc couper 2 fragments de taille différente pour SMN1 et SMN2
+-> PCR + digestion : 2 bandes si normal (1 bande = deletion)
+**** Quantification (det hmz ou htz SMN1)
+MLPA, QMPSF
+*** CAT
+del homozyote -> si nég et clinique + CPK + EMG -> labo de référence pour del hétérozygote : si oui, on va chercher la mutation ponctuelle. Si non trouvée, revoir la clinique
+*** DPN : 2 méthodes
+- direct : mutation
+- indirect : marqueurs microsatellite -> ségrégation des chromosomes
+**** Immobilisme foetal du 3e trimestre
+Si 1 signe supplémentaire (hydramnios, hyperclarté nucale avec caryo normale, rétraction articulaire, malfo cardiaque): recherche del htz SMN1 chez 2 parents
+
+*** Locus sMA
 - 5b11-q13
-- Élément dupliqué et inversé de 500kb pnedant l’évolution
+- Élément dupliqué et inversé de 500kb pendant l’évolution
 
 - 95% = inactivation homozygote SMN1
 - 5% = délétion hétérozygote + mutation intragénique sur second allèle
@@ -77,6 +109,31 @@ Rétention d’exone -> Nusinersen (Spinraza) = oligonuclétoide antisens
 - résultats = progrès moteur (201 8)
   - efficacité moitié enfant (échelle neuro)
   - décès/ventilation permanente : 39% des 80 avec médic contre 68% des 41 a
+** Conseil génétique
+Risque résiduel (htz mais 2 copies SMN1) = 10% max !
+- mutation ponctuelle
+- 2 SMN1 en /cis/ -> non détecté = 4-8=
+- délétion /de novo/
+
+Il faut donc confirmer chez le cas index (ou 2 parents si décéds) + étude simultané des 2 conjents
+
+Calcul risque a posterior : théoreme de Bayes
+En pop générale, p(htz) = 1/40
+$P(hétérozygote sachant qu’on a 2 copies) =
+\frac{P(2 copies sachant qu’on est htz) * P(htz)}
+{idem + P(2 copies sachant qu’ont est hmz)*P(hmz)}
+= \frac{1/10 * 1/40}{idem + 9/10 * 39/40}
+
+- chez une tante : rassure
+* Charcot-Marie Tooth 1A :PMP22:
+AD = la plus fréquente des CMT
+Atrophie progressive des muscles distaux ->_trouble de la marche et équilibre
+pieds creux
+évolution lente (< 5% auront besoin d’un fauteuil roulant)
+98% ont une dup de 1.4MB dans 17p11.2
+De novo 1/3
+Surexpression du gènes -> démyélinisation
+
 * Déficience intellectuelle
 - Plupart = cause génétique unique (CNV, chromosome, SNP, indel)
 - > 800 gènes validés: plusieurs listes
@@ -153,46 +210,14 @@ Ex:
   -> certains sont exprimés dans tous les tissus !
 ** Notes
   Chevauchement génétique avec TSA, épilepsie
-* Syndrome de Pitt-Hopkins :TCF4:
-- DI sévère
-- Pas de language
-- stéréotypique
-- démarche ataxique
-- dysmorphie (bouche notamment)
-- strabisme
-- hyperventilation
-- constipation
+* Deletion 1p36
+DI modérée/sévère
+Enophtalmie
+Sourcils horizontaux
+Syndrome de West
 
-  Attention: spectre !
-  #+caption: Waheln et al 2021
- [[file:img/pitt-hopkins.png]]
-* Syndrome Beaulieu-Boycott-Innes :THOC6:
- - DI
- - trouble du langage
- - retard de croissance
- - anomalies cardiaques et rénales
- - dysmorphie
-Familles consanguines oun on
-* Syndrome de Coffin-Lowry :RPS6KA3:
-- DI sévère
-- Retard de croissance
-- Dysmorphie : lèvre charnues, hypertélorisme, bosse frontale
-- Main large avec doigts boudinés mais extrémités des doigts effilés
-
-#+caption: large forehead, hypertelorism, downslanting palpebral fissures, long philtrum, anteverted nares, and thick lips (Marques Pereira et al 2010)
-[[file:img/coffin-lowry.png]]
-* TODO 17q12 del
-* TODO Achondroplasie
-
-* Charcot-Marie Tooth 1A :PMP22:
-AD = la plus fréquente des CMT
-Atrophie progressive des muscles distaux ->_trouble de la marche et équilibre
-pieds creux
-évolution lente (< 5% auront besoin d’un fauteuil roulant)
-98% ont une dup de 1.4MB dans 17p11.2
-De novo 1/3
-Surexpression du gènes -> démyélinisation
-
+#+caption: Source: Jordan et al 2015
+[[file:img/del1p36.png]]
 * Deletion 1qter
 ** Clinique
 - Microcéphalie
@@ -213,15 +238,6 @@ Génotype-phénotype
 - AKT3 = microcéphalie
 - ZNF238 = agénésie corps calleaux
 - C1ORF199 = épi
-* Dysplasie campomyélique :SOX9:
-AD
-** Clinique
-- incurvation os long
-- dysplasie squelettique : scoliose, doigts court, anomalies du bassin et thorax, 11 paires de côtes
-- dysmorphie faciale, fente palatine
-- maformations cardiaques, rénales, cérébrales
-- réversion sexuelle
-Inc
 * Délétion 2qter
 ** Clinique
 - Dysmorphie
@@ -234,6 +250,48 @@ Inc
 - Brachdactylie
 #+caption: 4e surtout et 2,3,4 en P9 (Leroy et al 2013)
 [[file:img/2qter-bones.png]]
+* Dysgonomosomie
+- chrY = 53MB 1.7% gènes 50 gènes
+  initialement homologue à l’X puis évolution : divergence suite à des anomalies de structures répétées -> plus d’appariement possible donc perte de matériel
+- chrX = taille 160Mb 5% génome 1000 gènes
+
+** Régions pseudo-autosomique
+- régions homologues due à la origine commune
+- PAR1 et 2 aux extrémités du chrX et Y
+- cross over possible
+  PAR1 = 3Mb 24 gènes
+  PAR2 = 300kbp 5 gènes
+
+Y : ont des homologue fonctionnels sur l’X en dehors des régions PAR
+15 gènes n’en ont pas (spermatogènes)
+-> majorité du X est spécifique
+** Anomalies de nombres
+Le plus souvent de décovuerte fortuite ou pendant un bilan d’infertilité
+- moins de gènes sur Y
+- inactivation
+
+XXX ou YY: retentissement très lèger
+Nombreaux X ou Y : conséquences plus sévère
+Pas de X = non viable
+
+-[[*47XYY][ 47XYY]]
+-[[*47XXX][ 47XXX]]
+[[*Syndrome de Klinefelter][- Syndrome de Klinefelter]]
+- [[*Syndrome de Turner][Syndrome de Turner]]
+** Polygonomosomie
+48 ou 49 chromosome
+Phénotype plus sévre : polymalfo + DI
+Plus il y a de X, plus le tabelau est sévère
+** IMG
+* Dysplasie campomyélique :SOX9:
+AD
+** Clinique
+- incurvation os long
+- dysplasie squelettique : scoliose, doigts court, anomalies du bassin et thorax, 11 paires de côtes
+- dysmorphie faciale, fente palatine
+- maformations cardiaques, rénales, cérébrales
+- réversion sexuelle
+Inc
 * FG syndrome :MED12:
 Lié à l’X
 
@@ -244,9 +302,6 @@ Médiator
 - pouces/hallux large
 - +/- anomalie corps calleux, surdité
 [[./img/syndrome-fg.png]]
-* TODO Hypercroissance segmentaire
-- PTEN hamartoma tumour syndrome
-- PIK3CA related overgrowth spectrum
 * Hémochromatose
 
 ** Physiopathologie
@@ -285,6 +340,134 @@ NB: SLC40A1 : 2 phénotype selon le mécanisme (perte de fonction = ferroportini
 Multifactoriel:
 - protecteur = variant fréquents, CYBRD1
 - agravant = homme (testostérone), alcool, variant rare, HAMP/HJV, fréquents
+* Hémoglobinopathies
+** Intro
+Structure : chaines de globine (structure en globe) = protéine -> dans une poche vient se mettre l’hème (contient un atome de fer sur lequel se fixe l’oxygène)
+- Hémoglobinopathies = anomalies de globine (chaine protéqiue)
+À différencier des maladies de l’hème (porphyrie)
+
+3 hémoglobines physiologiques
+- 2 chaines α-globine, 2 chaines βglobine chez adulte (HbA)
+- hémoglobine foetale  = 2α, 2γ, qui sera remplacée par HbA (HbF)
+- secondaire = , 2α et 2 δ  (HbA2)
+
+Génétique :
+Au total : 2x{α1 et α2} et 2xβ en temps normal sur les 2 chromosome
+
+Maladies
+- défaut production : thalassémies
+- défaut qualité : parfois silencieuse, parfois très pathogènes (drépanocytose)
+
+Épidémio:
+- 0% en europe du nords, 3% de β-thalassémie en Corse
+- zone de paludisme (avantage relatifs aux porteurs sains hétérozygotes)
+- par type: drépanocytose :Afrique subsaharienne, Inde, α-thalassémie en Asie du Sud-Est, β-thalassémie en Méditerranée, Inde, Asie
+** β-thalassémie
+Défaut production β-globine
+- anémie sévère (pas d’hémoglobine)
+- dysérythropoïse : excès α-globine -> mort prématurée
+
+Prise en charge : transfusions 1/mois + chélateur du fer
+- Observance conditionne la mortalité !
+- alternatives transplatation CSH (donneur familial), thérapie génique (essais cliniques en cours)
+
+*** Génétiques
+AR, surtout mutation ponctuelle, parfois délétion
+
+Génotype :
+- β-β normal
+- β*-β: htz, compensé par allèle sauvage : porteur sain avec "trait thalassémique" (microcytose, hypochromie, augmentation modérée mais constante HbA2 >_3.2%)
+- β*-β* hmz (ou htz composite)
+  - NB: thalassémie intermédiaire : mutation non sévère -> synthèse résiduelle de β-globine avec tableau atténué ( anémie mais production résiduelle d’hémoglobine )
+
+Mutation:
+- stop/altération de l’épissage : pas de chaine β ->_thalassémie majeure
+- site alternatif d’épissage, mutation promoteur : diminution chaine β -> thalassémie intermédaire (dépendance à la transfusion variable)
+- faux-sens diminuant l’expression proches sites d’épissage-> altère niveau expressio gènes -> hémoglobine anormale mais niveau inférieur
+  - Hb E en Inde:
+** α-thalassémie
+- 4 gènes fonctionnels (α2 α1 sur chaque)
+Diminution/absence production chaine α
+
+Formes :
+- majeur : pas de chaine α avec anémie sévère, début in utéro (transfusion possible in utero mais rare)
+- anémie modérée (hémoglobine dite H)
+*** Moléculaire
+- Surtout délétions, rarement mutation ponctuelle
+**** Délétion
+- soit délétion 2 gènes en cis
+- délétion/fusion : perte de région entre α2 et α1 -> gène hybride fonctionnel
+
+Génotypes
+- 4 ou 3 gènes fonctionnel = normal
+- 2 gènes α (cis ou trans): trait thalassémique (microcytose, hypochromie *mais* HbA2 < 3%)
+- deletion 2 genès en cis avec deletion/fusion sur l’autre allèle ->_1 seul gènes fonctionne = α-thalassémie (symptomatique, bien toléré, rarement nécessitant une transfusion)
+- aucun gènes α : mort foetale/périnatale
+** hémoglobine anormales
+substitution acide aminé sur chaine α ou µ|
+1 000 variants sur [[HbVar)
+ex: HbS (drépanocyto), HbC (afrique, non patho)
+Conséquences très variables
+- hyper/hypo affine pour l’oxygène (hyper: Hb garde l’oxygène -> relarge moins l’oxygène mais conséquence fonctionnelle faible, teint rouge)
+- hémoglobine instable, solubilité
+*** Drépanocytose
+Mutation chanie β : Acide glutaminuqe ->valine
+Hémoglobine S
+
+Forme
+- classique = Homozygote
+- hétérozygotie composite : HbS + HbC (même acide aminé) -> drépanocytose atténuée (type SC)
+- hétérozygotie composite : HbS + Hbβ thalassémie = drépanocytose cliniquement + microcytose
+- hétérozygotie composite : HbS + Hbβ thalassémie+ (chaine perstitante d’Hg -> HgA) = drépanocytose cliniquement + microcytose
+**** Clinique
+Augmente la polymérisation + Rigidification du globule rouge
+- thrombus (et adhère anormalement à l’endothélium)
+
+Avant 2 ans :
+- anémie aigùe par emballemet de la rate (séquestration splénique)
+- infection sévère ()
+Peut être prévenu par vaccins et antibio
+
+Crises vaso-occlusive
+- typique = os (mais n’importe quel organes)
+- douleurs intenses ->_antalagique, hospit
+- en général 4/an -> prise en charge palliative
+- sinon, ttt par hydroxyurée (induit expression hémoglobine foetale -> diminue polymérisation ), transfusion, CSH, thérapie génique
+** diagnostic biologique
+Évaluation fraction physiologique des hémoglobine A, A2 et F +/- fraction anormales (chromatographie et électrophorèse))
+- Si anormale : biochomique/moléculaire
+Si syndrome majeur ou couple porteur htz -> séquencage direct (peu de gènes et de petite taille = Sanger suffit)
+** Résumé
+Hétérozygotes
+| β thalassémie       | α-thalassémie | drépanocytose |
+|---------------------+---------------+---------------|
+| HbA                 | HbA           | HbA           |
+| HbA2 élevée         | HbA2 normales | HbA2 normal   |
+| HbF  normale/élevée | HbF normale   | HbF normal    |
+|                     |               | HbS 30-40%    |
+| microcytose         | microcytose   | VGM normal    |
+| polyglobulie        | polyglobulie  | GR normaux    |
+Tableau majeurs
+| β thalassémie | α-thalassémie | drépanocytose    |
+|---------------+---------------+------------------|
+| *Pas HbA*     | * Pas HbA*    | * pas d’HbA*     |
+| HbF           | Pas d’HbF     | HbF et HbS|
+| microcytose   | microcytose   | VGM normal       |
+| polyglobulie  | polyglobulie  | GR normaux       |
+** Dépistage prénatal
+Si 2 parents originires de pays à risques
+* TODO Hypercroissance segmentaire
+- PTEN hamartoma tumour syndrome
+- PIK3CA related overgrowth spectrum
+* Hypomélanose d’Ito
+Hypopigmentation selon les lignes de Blaschko
+- + atteinte cérébrale et épilepsie
+- hyperpigmentation possible
+- Souvent hémihypertrophy et a
+** Génétique
+- Plutôt mosaïque somatique (nombreuse anomalies chromosomiques rapportées)
+  - MTOR: cerveau, sang, frottis buccal
+- Variants patho germline MTRO aussi rapportés dans syndrome SMith-Kingsmore : DI, macrocéphalie, ventriculomégalie, épilepsie, dysmorphie faciale (hypoplasie étage moyen de la face, hypertélorisme, ensellure nasale, FP en bas et dehors, lèvre supérieure fine, philtrum plat)
 * Incontentia pigmenti :IKBG:
 - génodermatose affectant la peau, les dents, les yeux et le système nerveux central
 - «incontinence pigmentaire» = dépôts dermique de mélanine
@@ -348,28 +531,268 @@ https://onlinelibrary.wiley.com/doi/full/10.1111/ddg.14638
 - PNDS
 - Genereviews
 - Santa-Maria FD, Mariath LM, Poziomczyk CS, et al. Dental anomalies in 14 patients with IP: clinical and radiological analysis and review. Clin Oral Investig. 2017;21(5):1845-1852. doi:10.1007/s00784-016-1977-y
-* Microduplication 22q11.2
-** Clinique
-- Plus modéré, très variable
-- Trouble des apprentissage 97%
-- Retard de développement psychomoteur 67%
-- Retard de croissance 63%
-- +/- hypotonie 43%, malfo (cardiaque, FLP)
-* Microduplication 7q11.23
-** Clinique
-Tout n’est pas en miroire par rapport à [[*Syndrome de Williams-Burren][Syndrome de Williams-Burren]]
-- Retard de langage +/- DI
-- Traits autistique
-- Fréquemment héritée
-- souvent troubles du comportement, attentio, agressivité
-*** Dysmorphie
-[[file:img/microdup-7q11.png]]
-- Grand front
-- sourcils droits
-- lèvres upérieures fines
-- Philtrum court
-- nez large et long
-- Rarement dilatation aortique
+* Infertilité
+- 1 an de rapports sexuels non protégés sans concevoir
+- dégradation progressive et importante de la fertilité (homme + animal) -> modification environmentales
+- génétique = 50%
+- 1 couple sur 8
+
+** Bilan
+-  Examen clinique (pilosité, varicocèle)
+-  Bio : LH, FSH, AMH
+-  homme : spermogramme
+-  écho pelvienne
+-  Bilan génétique selon la clinique++ (nb causes génétiques) -> importance du phénotype
+** Masculine
+*** Spermatogènes
+74 jours:
+1. multiplocation mitose des cellules
+2. méiose  (réduction matériel génétique)
+3. différentiation (compaction chromatine, formation achrosome, flagelle)
+NB: flagelle ressemble structurellement à des cils
+Contrôlé par 2000 gènes
+*** quantitatif : oligozoospermie (< 1million/mL), azoospermie
+**** Azoospermie obstructive
+- /CFTR/: atrésie canaux déférents (98% des muco) -> mutation dans 80%
+  - mutation mineure + sévère = atrésie seule
+  - mutation plus sévère : muco
+    variant 5T = 5% pop générale mais x10 si agénésie canaux déférents. Saut d’exon possible
+- /ADGRG2/ : stase du canaux déférent. 1% des azoospermie obstructive
+**** Défaut de production
+***** chromosomique :5-7% des patients infertiles
+1. Nombre :
+   - [[*Syndrome de Klinefelter][Syndrome de Klinefelter]] = cause génétique la plus fréquente
+     Spermatogènes résiduelle (50% biopsie positive)
+     augmentation de taux d’aneuploide (T12)
+   - 47XYY
+   - marqueurs surnuméraires
+2. Structure
+   - Translocation robertsonnienne : 2% des hommes infertiles. -> trivalent (chr 13, chr1, t(13, t14))
+     [[file:img/trivalent.png]]
+     80 des spermatozoide auront un contenu équilibré
+     [[file:img/trivalent-segreg.png]]
+     Autres :
+     - excès nullosomique (13,14,15,22) -> risque disomie maternelle
+     - risque de gamètes disomique sur le 21 -> risque de trisomie
+   - transloc réciproques : majorité ont un contenu déséquilibré
+   - inversion péri (continte le centromère) : proportion variable de gamèter déséquilibér
+     paracentrique : rarement gamiètre déséquilibre (ne franchissent pas la méiose)
+   - complexe : >= 2 chr et >=3 chr : blocacge sévère spermatogenèse
+     ex: chrY isodicentrique, anneau
+   - chrX et bras court du Y : transposition SRY sur X (1%)
+***** microdeletion du Y
+- récurrente : 3 régions critiques avec pronotique différenté
+  AZFA = rare, absence de Sertoli seul
+  AZFB = arrêt en méiose
+  AZFC = variable
+  Attentio, biopsie contre-indiquée si AZF a ou b
+
+  Mécanirme NAHR intra-chromosomique favorisé par séquences répétées (mais composition différentes selon les régions AZF)
+  - courtes AZFA -> se recombine moins souent
+
+  - Deletion partielle AZFc (gr/gr) par densité éléments répétés
+    forte prévalence en population générale (2%)
+    -> prédisposition. Mais dépend de l’ethnie
+***** Hypogonadisme hypogonadotrope (centrale)
+- Retard pubertaire, anosmie
+- Testostérone effondrée, FSH et LH diminué
+
+  Affect dev hypophysaire
+  Défaut moléculaire -> déficit foncionnel
+  Plus connu : syndrome de Kallmann
+  - anomalie migration neurone à GnRH
+    5 gènes 30%
+***** Tous les gènes affectant la spermatogenèse
+Ex: TEX11 = 2% des azoospermies
+perte protéine ->_défaut d’appariement et arrêt du cross-over
+
+On trouve souvent des gènes impliqués en onco
+
+NB: Défaut moléculaire entrainant un blocage méiotique = mauvais pronostic pour biopsie testiculaire
+*** qualitatif
+**** asthénozoospermie (mobilité)
+- peu de cause génétiques connues
+- code canaux ionoiques, dyskinésie ciliaire primitive (syndromique)
+**** tératozoospermie (forme)
+Nb cause génétiques, cliniquement pertinentes
+***** spermatozoide macrocéphales
+tête x3, plusieurs flagelles, + oligo-asthénozoospermie
+/AURKC/: kinase à expression spermatozoide
+- perte de la prot -> blocage pré-méiotique -> CI absolue à ISCI
+- 80% spermm. macrocphalie
+- surtout 2 mutation récerrence
+***** Globolzoospermie
+- petite tête ronde s
+- /DPY19L2/: deletion par NHR sur régions encadrant le gène
+  - absence -> déstabilitation jonction acropaxome et membrane nucléaire
+  - 80% des patients -> on recherche d’abord la délétion
+  - défaut condensation chromatine et fragment ADN
+  - défaut épigénétique impactant le développement de l’embryon -> ICSI à discuter
+***** Anomalies flagellaire (MMAF)
+- courts, enroulés, diamètre irréguliers -> défaut de mobilité
+- 19 gènes : 3 sortes de protéines
+  - péri-axomeme
+  - transport intraflagellaire
+  - axomeme
+- très grande hétérogénéité génétique -> exome/panel
+- 40% des cas sont diagnostiqué
+***** Spermatozoïdes décapités
+/SUN5/ = 50% des patients
+- protéine indispensable du centrosome à la membrane nucléaire
+ICSI avec tête seule ?
+**** échec d’activation ovocytaire
+- Pas de défaut morphologie ou quantité
+- /PLCZ1/
+** En résumé
+
+| Non Obstructive           | Karyotype + Y microdeletion                      |
+| Azoospermia               | Others ?: Based on histology (TEX11, SPINK2 ?)   |
+|                           | TESE (testicular sperm extraction) ?             |
+|---------------------------+--------------------------------------------------|
+| Obstructive               | Diagnostic CFTR, if neg ADGRG2 (Toulouse)        |
+| Azoospermia               | Microsurgical epididymal sperm aspiration (MESA) |
+|---------------------------+--------------------------------------------------|
+| Asthenozoospermia         | First-line diagnostic ? Research in Grenoble     |
+|                           | No counter-indication to ICSI                    |
+|---------------------------+--------------------------------------------------|
+| Macrozoospermia           | Diagnostic AURKC (Grenoble)                      |
+|                           | Sperm are tetraploid, no treatment possible      |
+|---------------------------+--------------------------------------------------|
+| Globozoospermia           | Diagnostic DPY19L2 (Grenoble)                    |
+|                           | ICSI is possible. Is it safe ?                   |
+|---------------------------+--------------------------------------------------|
+| Flagellar defects         | Diagnostic DNAH1, CFAP43 and CFAP44 (Grenoble)   |
+|                           | No counter-indication to ICSI                    |
+|---------------------------+--------------------------------------------------|
+| Flagelles isolés          | Diagnostic SUN5                                  |
+|---------------------------+--------------------------------------------------|
+|                           | Diagnostic PLCZ1 possible (Grenoble)             |
+| Oocyte activation failure | ICSI with OA or PLCZeta injection is possible    |
+
+** Féminin
+Ovogonése : mitose puis méose (2n -> n puis 2n avec fécondation)
+IOP et FCS seuls ici
+*** IOP
+- Pas de règle >_6 mois, âge <_40 ans et FSH > 20UI/L 2 fois
+- aménorrhée primaire/secondaire suite à des cycles réguliers le plus souvent
+
+Origines
+- Déplétion stock follicule prmaires
+- blocage maturation follicule
+- apoptose accélérée (Turner, FMR1 )
+**** Types
+***** Le plus souvent anomalies chromosomiques
+- X dans 10-13%
+  - [[*Syndrome de Turner][Syndrome de Turner]] : ovaire remplacé par des bandelettes fibreuse, probablement par haploinsuffisance de gènes échappant à l’inactivation nde l’X
+  - Triple X : 3% des IOP
+  - transloc t(X, autosome): effet de position/interruption de gènes critique -> risque pour la descendance
+- prémutation FMR1: production anarchique d’ARN m qui vont s’accumuler dans les cellules : dans les ovocytes, destruction prématurées
+  - 1/3 des femmes prémutée auront une IOP
+
+***** Nb causes monogénique : 50 gènes confirmés avec grande hétérogénéité (panel/exome ?)
+- autosome ou X
+- isolé ou syndromique
+Function : div cellulaire reparation adna, méiose, folliculogènes
+ex: NOBOX, GDF9 (mutation = bloque maturation ovocytaire)
+FOXL1: syndromique BPES (ophtalmo)
+
+CNV régulièrement retrouvé
+*** FCS à répététion
+\ge 3 FCS
+Caryo : anomalies équilibrées, déséquilibrées, nb de gosomoiques
+Cause géniquses sur orientation clinique
+*** En résumé
+IOP: Caryo, FISH, prémut FMR1A +/- ACPA, panel/ génome
+FCS: caryo + FISH sur X
+* Marfan
+- fragilité du tissu de soutien
+- AD
+** Critères diagnostiques
+Pas d’atcd familiaux
+- Dissection/dilatation aorte ascendante (Z score \ge 2) et
+  - ectopie du cristallin
+  - ou mutation /FBN1/
+  - ou score systémique \ge 7
+- ou : ectopie du cristallin et mutation FBN1 associée à une dilatation aortique
+
+ATCD familiaux au 1er degré
+- Dissection/dilatation aorte ascendante (Z score \ge 2 si \ge 20 ans, \ge 3 sinon) et
+- ou ectopie du cristallin
+- ou score systémique \ge 7
+
+Score systémique
+| Signe du poignet *et* pouce                         | 3 |
+| Signe du poignet *ou* pouce                         | 1 |
+| Pectus carinatum                                    | 2 |
+| Pectus excavatum / asymétrie thoracique             | 1 |
+| déformation arrière-pied                            | 2 |
+| pieds plats                                         | 1 |
+| pneumothorax                                        | 2 |
+| ectasie durale                                      | 2 |
+| protrusion acétabulaire                             | 2 |
+| segemnt sup/inf < 0.86 *et* envergure/taille > 1.05 | 1 |
+| scoliose/cyphose thoraco-lombaire                   | 1 |
+| extension coudes > 170°                             | 1 |
+| \ge 3 signes cranio-faciaux                         | 1 |
+| vergetures                                          | 1 |
+| myopie                                              | 1 |
+| proalpsus de la valve mitrale                       | 1 |
+
+[[file:img/marfan-acetabulum.png]]
+[[file:img/marfan-arachnodactylie.png]]
+[[file:img/marfan-carinatum.png]]
+[[file:img/marfan-excavatum.png]]
+[[file:img/marfan-pouce.png]]
+
+*** Signes cranio-faciaux :
+- fente palpépbrales vers le bas
+- hypoplasie malaire
+- microrétrognathie
+- palais ogival
+- dents chevauchantes
+- visage long et étroit avec énophtalmie
+
+*** Luxation du cristallin
+visable à l’exam direct seulement à partir du stade 3 ou 4
+[[file:img/marfan-cristallin.png]]
+68% de ces luxations sont dans le cadre d’un marfan
+
+*** Ectasie lombo-sacrée
+- Élargissement canal rachidient L5
+- amincissement pédicules et lames vertébrales
+[[file:img/marfan-ectasie.png]]
+
+** Moléculaire
+/FBN1/ :
+- 45 exons
+- pas de hotspot
+- mutation ponctuelles, privées
+Types de mutations
+- faux-sens : formes néonatale ou incomplète
+- altérant de cadre de lectures (protéine tronquée)
+- site d’épissage : souvent dans phénotypes sévère (monomères raccourcis de fibrilline)
+*** Forme néonatale
+- plus sévère, plus précoce
+- Exons 24-32
+** Apparentés
+Classification génétique
+- composant de la matrice extracellulaire : FBN1, MFAP5, MAT2A
+- voie signalisation TGFβ : TGFBR1 et 2, TGFB2 et 2, SMAD2 et 3
+- composant de l’appareil contractile des cellules musculaires lisses : ACTA2, MYH11, MYLK, PRKG1
+Formes syndromiques
+- Loeys-Dietz
+- anrévrisme de l’arthrose, tortuosité artérieelle
+- dysfunction musculaire
+- Marfan néonatal
+- Marfan
+Non syndromique
+- anévrysme aortiques thoraciques familiaux
+- dissections aortiques familiales
+** Grossesse
+Complication: cardiovasucailer (fragilité), obstétricale (squelete, hypotonie des tissus -> préma)
+DPN si mutation familiale
+** Prise en charge
+Quelque soit la mutation : limitation des sports, β-bloquant, surveillance échocardio annuelle
 * Microdélétion 22q11.2
 ** Clinique
 Principal
@@ -429,6 +852,28 @@ Hérité 10% en AD -> étudier les parents
 Soit sondes FISH ou sondes MLPA
 ! ces dernières permettent de diagnostiquer les délétions distales B-D !
 [[file:img/22q11-lcr.png]]
+* Microduplication 22q11.2
+** Clinique
+- Plus modéré, très variable
+- Trouble des apprentissage 97%
+- Retard de développement psychomoteur 67%
+- Retard de croissance 63%
+- +/- hypotonie 43%, malfo (cardiaque, FLP)
+* Microduplication 7q11.23
+** Clinique
+Tout n’est pas en miroire par rapport à [[*Syndrome de Williams-Burren][Syndrome de Williams-Burren]]
+- Retard de langage +/- DI
+- Traits autistique
+- Fréquemment héritée
+- souvent troubles du comportement, attentio, agressivité
+*** Dysmorphie
+[[file:img/microdup-7q11.png]]
+- Grand front
+- sourcils droits
+- lèvres upérieures fines
+- Philtrum court
+- nez large et long
+- Rarement dilatation aortique
 * Monosomie 1p36
 - Remaniement subtélomérique le plus fréquent
 ** Clinique
@@ -459,7 +904,107 @@ Remaniement épi/métaphyses des hanches
 
 Surveillance cardiaque, opthalmo, ORL, respo, orthopédituqe
 TTT: enzymothérapie substitutive
+* Mutation somatiques de PIK3CA
+** Macrodactylies de type 1
+- 1/100000 naissances
+- Atteinte d’un territoire nerveux avec
+- hypertrophie du tissu adipeux et hypercroissance osseuse
+- Histologie : nerf élargi et allongé
+- Pas de cas de dégénérescence
+  [[file:img/macrodactylie-1.png]]
+
+** Hyperplasie fibro-adipeuse
+- Hypertrophie segmentaire progressive du tissu sous cutané musculaire et adipeux avec hypercroissance osseuse
+- Signes associés :
+  - malformations vasculaires,
+  - naevi, polydactylie, kystes testiculaires ou épididymaux, hydrocèle
+
+#+caption: Lindhurst et al 2012
+[[file:img/pik3ca-adipeux.png]]
+** TODO MCAP
+** TODO HMEG
+** TODO KTS
+** [[*Syndrome CLOVES][Syndrome CLOVES]]
 * TODO Myotonie de Steinert
+
+* Neurofibromatose
+** NF1 et NF2 s’oppose
+|           | NF1             | NF2          |
+|-----------+-----------------+--------------|
+| Fréq      | 1/3 000         | 1/30 000     |
+| gènes     | NF1 17q11.2     | NF2 22q12.2  |
+| protéine  | : neurfibromine | schwannomine |
+| espérance | 67 ans          | 35 ans       |
+| signes    | cutanées        | neuro        |
+** NF1
+*** Diagnostics
+2 critères parmis
+- 6 tache café-au-lait (> 5mm chez l’enfant, 1.5cm chez l’adulte)
+- lentigines axillaire/inguinales
+- 2 neurofibromes ou 1 neurofibrome plexiforme
+- gliome des voies optiques
+- 2 nodules de Lisch [utiliser lampe à fente]
+- dysplasie sphénoïde ou anomalies os long
+- parent 1er degré
+
+[[file:img/nf1-café.png]]
+[[file:img/nf1-lentigine.png]]
+[[file:img/nf1-lisch.png]]
+[[file:img/nf1-neurofibrome-cutane.png]]
+[[file:img/nf1-neurofibrome-plexiforme.png]]
+#+caption: Gliome des voies optiques
+[[file:img/nf1-gliome.png]]
+*** Autres signes
+Objets brillants non identifiés à l’IRM (OBNI)
+
+#+caption: Scalloping vertébral (rabotage des corps vertérbraux)
+[[file:img/nf1-scalloping.png]]
+#+caption:  Scoliose
+[[file:img/nf1-scoliose.png]]
+#+caption:  Tibia arqué congénital +/- fracture, pseudarthrose
+[[file:img/nf1-tibia-arque.png]]
+1 cas sur 2 sporadique
+*** Évolution
+Pénétrance complètes ~ 8ans
+*** Gène NF1
+- Très long (350kb)
+- Mutation spontanées importantes
+- pas de hotspot
+*** Génotype/phénotype en cours..
+- hypothèse gènes modificateurs : Modifie la pénétrance dans une famille. Non identifié
+- existence d’un sous-type avec juste des taches café à lait
+- microdel : apparition précoce, morpho type particulier, retard mental
+  [NB: difficulté d’apprentissage sans DI dans la NF1 normal]
+  [[file:img/nf1-noonan.png]]
+- phénotype à risque de développer des tumeurs : neurofibromes sous-cutanés -> tumeur maligne des gaines nerveuse
+  (cliniquement cuténé = mou)
+- mutation épissage = corrélé tumeurs profondes
+  -> TEP-scane avec biopsie si hypermétabolisme
+**** SPRED1 = phénotype proche nF1 -> syndrome de Lejus
+- AD
+- 5% des NF1
+- Beaucoup moins fréquent
+**** Mosaïque/segmentaire
+[[file:img/nf1-mosaique.png]]
+Localisé = risque de mosaïque germinal faible
+*** Nb: NF2
+schwannome et taches café-au-lait possibles
+[[file:img/nf2-cafe.png]]
+[[file:img/nf2-schwannome.png]]
+** TTT
+Chir, pas de ttt médical
+- bevacizumab NF2
+- mTOR pour neurofibrome plexiforme précoce = échec
+- statine non efficace pour difficulté apprentissage
+- antiMEK (selumetinb) pour neurofibrome plexiforme: diminution de volume (2016)
+- modèle murin
+
+** Taux mortalité :
+- 20-40 ans = tumeur maligne des gaines nerveuses (phénotype à risque)
+- cancer sein -> surveillance mammo à partir de 30-35 ans car plus agressif
+- vasculopathies
+*** Autres
+douleurs intense pulpes -> IRM pour tumeur glomique
 
 * Neuropathie héréditaire sensible à la pression :PMP22:
 Certains asympto
@@ -609,6 +1154,7 @@ Bilan
 - bilan métabo
 - imagie malfo
 * Sclérose tubéreuse de bourneville
+* TODO Séquence de Pierre-Robin
 * TODO Syndrome 3M
 - Rertard statural sévère pré- et postnatal
 - Dysmorphie
@@ -619,6 +1165,63 @@ hypogonadisme chez les hommes
 
 AR
 /CUL7/, /OBSL1/, /CCDC8/
+* Syndrome Beaulieu-Boycott-Innes :THOC6:
+ - DI
+ - trouble du langage
+ - retard de croissance
+ - anomalies cardiaques et rénales
+ - dysmorphie
+Familles consanguines oun on
+* Syndrome CLOVES :PIK3CA:
+#+caption: Kurek et al 2012
+[[file:img/syndrome-cloves.png]]
+- Congenital
+- Lipomatous : tronc+, membre
+- Overgrowth of the trunk (asymetric)
+- Vascular malformation : lymphatic, capillary, venous, combined
+- Epidermal nevi
+- Skeletal/spinal anomalies : pieds et mains large, sandal-ap, inégalité de longeur de membre
++ rénal : hypoplasie rénale, tumeur de Wilms
+* TODO Syndrome d’Aarskog
+
+* Syndrome d’Alagille :JAG1:NOTCH2:
+Suspected on :
+- histologic = bile duct paucity (an increased portal tract-to-bile duct ratio)
+- 3/5 major clinical features (in addition to bile duct paucity):
+  - Cholestasis
+  - Cardiac defect (most commonly stenosis of the peripheral pulmonary artery and its branches)
+  - Skeletal abnormalities (most commonly butterfly vertebrae identified in AP chest radiographs)
+  - Ophthalmologic abnormalities (most commonly posterior embryotoxon
+  - Characteristic facial features (most commonly, triangular-shaped face with a broad forehead and a pointed chin, bulbous tip of the nose, deeply set eyes, and hypertelorism; see Figure 1)
+
+AR
+
+Pronostic: renal transplant, cardiac... but not lethal
+
+* Syndrome d’Alström :ALMS1:
+900 cas monde
+
+- Obésité précoce
+- Rétinite pigmentaire -> cécité 20 ans
+- Surdité perception ~7 ans
+- Cardiomyopathie dilatée
+- Diabète type 2 avant 20 ans
+- Retard statural, hypogonadisme
+- +/- déficit cognitif modéré
+* Syndrome d’Angelman
+** Clinique
+- ataxie, tremblement
+- épilepsie
+- trouble du sommeil
+- retart moteur et mental sévère (pas de langage)
+- jovialité
+- rires immotivés
+[[./img/angelman.png]]
+** Génétique
+Abolition du gène /UBE3A/, normalement actif sur l’allèle maternelle
+- grandes délétions
+- disomie uniparentale
+- mutation génique
 * Syndrome de Barder-Biedl
 ** Clinique
 - Obésité précoce
@@ -688,6 +1291,14 @@ Et bio !
 - microcéphalie
 - dysmorphie: oreilleis épaisse es longue, lobes charnus, yeux enfoncés, rebords obritaires saillants
   Gne :PHF6
+* Syndrome de Coffin-Lowry :RPS6KA3:
+- DI sévère
+- Retard de croissance
+- Dysmorphie : lèvre charnues, hypertélorisme, bosse frontale
+- Main large avec doigts boudinés mais extrémités des doigts effilés
+
+#+caption: large forehead, hypertelorism, downslanting palpebral fissures, long philtrum, anteverted nares, and thick lips (Marques Pereira et al 2010)
+[[file:img/coffin-lowry.png]]
 * Syndrome de Coffin-Siris
 Complexe SWI/SNF (remodèle la chromatine)
 QD
@@ -727,6 +1338,16 @@ Lié à l’X : /SMC1/, /HDAC8/
   - ptosis, synophris,
   - nez court, philtrum long, lèvre supérieure fine
 [[./img/syndrome-cornelia-de-lange.png]]
+* Syndrome de Cowden
+PTEN, PIK3CA, AKT1
+- Macrocéphalie
+- Hamartomes multiples se formant sur la peau, la poitrine, la thyroïde, le tractus gastrointestinal, l'endomètre et le cerveau
+- Prédisposition aux cancers : sein, endomètre, thyroïde
+- Manifestations cutanées : trichilemmome, papillomatose de la muqueuse orale, kératose palmoplantaire
+- Manifestations neurologiques
+- Manifestations gastro-intestinales
+- Transmission autosomique dominante
+
 * TODO Syndrome de Kabuki :KMT2D:KDM6A:
 AD : /KMT2D/
 Lié à l’X /KDM6A/
@@ -747,11 +1368,39 @@ Modification post-traductionnelle des histones
 - Retard mental
 
 [[file:img/syndrome-kagami-ogata.png]]
+* Syndrome de Klinefelter
+47 XXY
+1/660 I
+- 80-90% homogène
+  X supplémentaire maternel ou pat
+- mosaique 10-20% 46XY/47XXY souvent moins sévères
+**  Manif clinique variables
+imperceptible durant l’enfance
+
+- 90% fortuit lors bilan infertilité
+Puberté
+- gynémocastie uni/bilatéral
+- grande taille SHOX x3
+- petites testicules mais pénis normal
+- pilosité peu développement
+- pulpe dentaire peu développé
+- infertilité primaire par absence de spermatosoide
+Pas de DI mais retard possible
+** PEC
+- ortophonie si retard langage
+- biopsie testiculaire postiive 50% des cas ->_ICSI possible
+- testostérone début adolescence
 * Syndrome de Klippel-Trenaunay
 Souvent membre inférieur avec
 - angiome plan
 - varice
 - hypertrophie os et parties molles +/- asymétrie de longueur des MI
+* Syndrome de Klippel-Trenaunay
+- Malformations vasculaires : angiome plan (composante veineuse)
+- Varices : anomalies de trajet et du développement des veines
+- Hypertrophie des os et des tissus sous jacents : inégalité de longueur
+[[file:img/syndrome-klippel-trenaunay.png]]
+
 * TODO Syndrome de Leigh et NARP
 https://www.ncbi.nlm.nih.gov/books/NBK1173/
 * TODO Syndrome de l’X fragile
@@ -789,6 +1438,19 @@ Dysmorphie discrète:
 - menton pointu
 ** Génétique
 /SHANK3/ toujours délété , soit mutation ponctuelle, soit remaniement
+* Syndrome de Pitt-Hopkins :TCF4:
+- DI sévère
+- Pas de language
+- stéréotypique
+- démarche ataxique
+- dysmorphie (bouche notamment)
+- strabisme
+- hyperventilation
+- constipation
+
+  Attention: spectre !
+  #+caption: Waheln et al 2021
+ [[file:img/pitt-hopkins.png]]
 * Syndrome de Potocki-Lupski :RAI:
 ** Clinique
 - retard global develop
@@ -990,6 +1652,50 @@ Zone soumis à empreinte
 - épigénitique : perte méthylation
 
   DD moléculaire du Silver-Russel
+* Syndrome de Turner
+Seule monosomie viable
+1/2500
+- 50% homogène (toutes les cellules)
+- 25% en mosaïque
+- 25% 2 chr X : un normal, autre avec anomalie de structures (isochromosome)
+80 % d’origine paternelle
+
+** Anténatal
+- Oedeme du coup, hygroma , hydrops foetalis
+- Malfo cardiovasc (coractaction aortique) (rein fer à chevel)
+- Le plus souvent RAS
+- Petite taille
+** Postnatal
+- Lymphoedome main et pieds (se résobre)
+- Pterygium colli
+- Malformation
+[[file:img/bonnevie-ulrich.png]]
+** Enfance
+[[file:img/turner.jpg]]
+- taille adulte <_1m45 (1 seul SHOX)
+- Croissane caractéritistuique avec ralentissement caractéristique
+Retard puberté, aménorhrrée primaire (ovaires sclérosés non fonctionnels)
+- Cou court, cheveux bas implantés sur la nuque, micrognathie, genou valgum, palais ogival, naevi pigmentaire, thorax en bouclier avec mamelon écarté, brievté 4e métacarpien
+- malfo :
+  - 30% cardiaque (mineurer le plus souvent, sur l’aorte)
+  HTA précoce fréquente 40%
+  -> surveillance cardio vasc à vie
+- rénale : rein unique/fer à cheval/malfo urinaire 40% (favorise infection urinaire)
+- ostéoporose (carence ostrogène), diabète, hypothyroidie, coeliaque
+- augmentation risque luxation hanche,
+  - ORL
+- strabisme
+- intelligence normale mais souvent difficulté d’apprentissage spécifiques
+** Fertilié
+- Grosseses spontanées < 1% (mosaïque)
+- Don d’ovocyte possible mais grosses à haut risque (risque cardiovasculaire)
+** Situation particulaire
+X en anneau de très petite taille
+- pas de XIST (inactive X) -> disomie fonctionnelle (expression double dose) -> tableau plus sévère avec DI
+- 45X/46XY anomalie DSD, clinique variable (morphotype complètement masculin) ->_haut risque de gonadoblastome)
+
+  Oestrogène pour induire puberté
+  TT par hormone de crosisance
 * Syndrome de Weaver :EZH2:
 AD
 
@@ -1081,46 +1787,6 @@ Quasimente que de novo
 96 de novo (iso ou transloc )
 Faire caryo parent pour éliminer remaniement équilibrée
 
-* TODO Syndrome d’Aarskog
-
-* Syndrome d’Alagille :JAG1:NOTCH2:
-Suspected on :
-- histologic = bile duct paucity (an increased portal tract-to-bile duct ratio)
-- 3/5 major clinical features (in addition to bile duct paucity):
-  - Cholestasis
-  - Cardiac defect (most commonly stenosis of the peripheral pulmonary artery and its branches)
-  - Skeletal abnormalities (most commonly butterfly vertebrae identified in AP chest radiographs)
-  - Ophthalmologic abnormalities (most commonly posterior embryotoxon
-  - Characteristic facial features (most commonly, triangular-shaped face with a broad forehead and a pointed chin, bulbous tip of the nose, deeply set eyes, and hypertelorism; see Figure 1)
-
-AR
-
-Pronostic: renal transplant, cardiac... but not lethal
-
-* Syndrome d’Alström :ALMS1:
-900 cas monde
-
-- Obésité précoce
-- Rétinite pigmentaire -> cécité 20 ans
-- Surdité perception ~7 ans
-- Cardiomyopathie dilatée
-- Diabète type 2 avant 20 ans
-- Retard statural, hypogonadisme
-- +/- déficit cognitif modéré
-* Syndrome d’Angelman
-** Clinique
-- ataxie, tremblement
-- épilepsie
-- trouble du sommeil
-- retart moteur et mental sévère (pas de langage)
-- jovialité
-- rires immotivés
-[[./img/angelman.png]]
-** Génétique
-Abolition du gène /UBE3A/, normalement actif sur l’allèle maternelle
-- grandes délétions
-- disomie uniparentale
-- mutation génique
 * Syndrome ICF :DNMT3B:
 AR
 
@@ -1201,639 +1867,5 @@ AD
 - Retard mental, syndrome de PW-like
 - Obésité (50% du syndrome WAGR)
 deletion de 11p13 (syndrome WAGR) et en 11p14 (gène BDNF)
-* TODO Séquence de Pierre-Robin
 * TODO Trisomie 13
 * TODO Trisomie 18 * TODO Trisomie 21
-* Neurofibromatose
-** NF1 et NF2 s’oppose
-|           | NF1             | NF2          |
-|-----------+-----------------+--------------|
-| Fréq      | 1/3 000         | 1/30 000     |
-| gènes     | NF1 17q11.2     | NF2 22q12.2  |
-| protéine  | : neurfibromine | schwannomine |
-| espérance | 67 ans          | 35 ans       |
-| signes    | cutanées        | neuro        |
-** NF1
-*** Diagnostics
-2 critères parmis
-- 6 tache café-au-lait (> 5mm chez l’enfant, 1.5cm chez l’adulte)
-- lentigines axillaire/inguinales
-- 2 neurofibromes ou 1 neurofibrome plexiforme
-- gliome des voies optiques
-- 2 nodules de Lisch [utiliser lampe à fente]
-- dysplasie sphénoïde ou anomalies os long
-- parent 1er degré
-
-[[file:img/nf1-café.png]]
-[[file:img/nf1-lentigine.png]]
-[[file:img/nf1-lisch.png]]
-[[file:img/nf1-neurofibrome-cutane.png]]
-[[file:img/nf1-neurofibrome-plexiforme.png]]
-#+caption: Gliome des voies optiques
-[[file:img/nf1-gliome.png]]
-*** Autres signes
-Objets brillants non identifiés à l’IRM (OBNI)
-
-#+caption: Scalloping vertébral (rabotage des corps vertérbraux)
-[[file:img/nf1-scalloping.png]]
-#+caption:  Scoliose
-[[file:img/nf1-scoliose.png]]
-#+caption:  Tibia arqué congénital +/- fracture, pseudarthrose
-[[file:img/nf1-tibia-arque.png]]
-1 cas sur 2 sporadique
-*** Évolution
-Pénétrance complètes ~ 8ans
-*** Gène NF1
-- Très long (350kb)
-- Mutation spontanées importantes
-- pas de hotspot
-*** Génotype/phénotype en cours..
-- hypothèse gènes modificateurs : Modifie la pénétrance dans une famille. Non identifié
-- existence d’un sous-type avec juste des taches café à lait
-- microdel : apparition précoce, morpho type particulier, retard mental
-  [NB: difficulté d’apprentissage sans DI dans la NF1 normal]
-  [[file:img/nf1-noonan.png]]
-- phénotype à risque de développer des tumeurs : neurofibromes sous-cutanés -> tumeur maligne des gaines nerveuse
-  (cliniquement cuténé = mou)
-- mutation épissage = corrélé tumeurs profondes
-  -> TEP-scane avec biopsie si hypermétabolisme
-**** SPRED1 = phénotype proche nF1 -> syndrome de Lejus
-- AD
-- 5% des NF1
-- Beaucoup moins fréquent
-**** Mosaïque/segmentaire
-[[file:img/nf1-mosaique.png]]
-Localisé = risque de mosaïque germinal faible
-*** Nb: NF2
-schwannome et taches café-au-lait possibles
-[[file:img/nf2-cafe.png]]
-[[file:img/nf2-schwannome.png]]
-** TTT
-Chir, pas de ttt médical
-- bevacizumab NF2
-- mTOR pour neurofibrome plexiforme précoce = échec
-- statine non efficace pour difficulté apprentissage
-- antiMEK (selumetinb) pour neurofibrome plexiforme: diminution de volume (2016)
-- modèle murin
-
-** Taux mortalité :
-- 20-40 ans = tumeur maligne des gaines nerveuses (phénotype à risque)
-- cancer sein -> surveillance mammo à partir de 30-35 ans car plus agressif
-- vasculopathies
-*** Autres
-douleurs intense pulpes -> IRM pour tumeur glomique
-
-* Hémoglobinopathies
-** Intro
-Structure : chaines de globine (structure en globe) = protéine -> dans une poche vient se mettre l’hème (contient un atome de fer sur lequel se fixe l’oxygène)
-- Hémoglobinopathies = anomalies de globine (chaine protéqiue)
-À différencier des maladies de l’hème (porphyrie)
-
-3 hémoglobines physiologiques
-- 2 chaines α-globine, 2 chaines βglobine chez adulte (HbA)
-- hémoglobine foetale  = 2α, 2γ, qui sera remplacée par HbA (HbF)
-- secondaire = , 2α et 2 δ  (HbA2)
-
-Génétique :
-Au total : 2x{α1 et α2} et 2xβ en temps normal sur les 2 chromosome
-
-Maladies
-- défaut production : thalassémies
-- défaut qualité : parfois silencieuse, parfois très pathogènes (drépanocytose)
-
-Épidémio:
-- 0% en europe du nords, 3% de β-thalassémie en Corse
-- zone de paludisme (avantage relatifs aux porteurs sains hétérozygotes)
-- par type: drépanocytose :Afrique subsaharienne, Inde, α-thalassémie en Asie du Sud-Est, β-thalassémie en Méditerranée, Inde, Asie
-** β-thalassémie
-Défaut production β-globine
-- anémie sévère (pas d’hémoglobine)
-- dysérythropoïse : excès α-globine -> mort prématurée
-
-Prise en charge : transfusions 1/mois + chélateur du fer
-- Observance conditionne la mortalité !
-- alternatives transplatation CSH (donneur familial), thérapie génique (essais cliniques en cours)
-
-*** Génétiques
-AR, surtout mutation ponctuelle, parfois délétion
-
-Génotype :
-- β-β normal
-- β*-β: htz, compensé par allèle sauvage : porteur sain avec "trait thalassémique" (microcytose, hypochromie, augmentation modérée mais constante HbA2 >_3.2%)
-- β*-β* hmz (ou htz composite)
-  - NB: thalassémie intermédiaire : mutation non sévère -> synthèse résiduelle de β-globine avec tableau atténué ( anémie mais production résiduelle d’hémoglobine )
-
-Mutation:
-- stop/altération de l’épissage : pas de chaine β ->_thalassémie majeure
-- site alternatif d’épissage, mutation promoteur : diminution chaine β -> thalassémie intermédaire (dépendance à la transfusion variable)
-- faux-sens diminuant l’expression proches sites d’épissage-> altère niveau expressio gènes -> hémoglobine anormale mais niveau inférieur
-  - Hb E en Inde:
-** α-thalassémie
-- 4 gènes fonctionnels (α2 α1 sur chaque)
-Diminution/absence production chaine α
-
-Formes :
-- majeur : pas de chaine α avec anémie sévère, début in utéro (transfusion possible in utero mais rare)
-- anémie modérée (hémoglobine dite H)
-*** Moléculaire
-- Surtout délétions, rarement mutation ponctuelle
-**** Délétion
-- soit délétion 2 gènes en cis
-- délétion/fusion : perte de région entre α2 et α1 -> gène hybride fonctionnel
-
-Génotypes
-- 4 ou 3 gènes fonctionnel = normal
-- 2 gènes α (cis ou trans): trait thalassémique (microcytose, hypochromie *mais* HbA2 < 3%)
-- deletion 2 genès en cis avec deletion/fusion sur l’autre allèle ->_1 seul gènes fonctionne = α-thalassémie (symptomatique, bien toléré, rarement nécessitant une transfusion)
-- aucun gènes α : mort foetale/périnatale
-** hémoglobine anormales
-substitution acide aminé sur chaine α ou µ|
-1 000 variants sur [[HbVar)
-ex: HbS (drépanocyto), HbC (afrique, non patho)
-Conséquences très variables
-- hyper/hypo affine pour l’oxygène (hyper: Hb garde l’oxygène -> relarge moins l’oxygène mais conséquence fonctionnelle faible, teint rouge)
-- hémoglobine instable, solubilité
-*** Drépanocytose
-Mutation chanie β : Acide glutaminuqe ->valine
-Hémoglobine S
-
-Forme
-- classique = Homozygote
-- hétérozygotie composite : HbS + HbC (même acide aminé) -> drépanocytose atténuée (type SC)
-- hétérozygotie composite : HbS + Hbβ thalassémie = drépanocytose cliniquement + microcytose
-- hétérozygotie composite : HbS + Hbβ thalassémie+ (chaine perstitante d’Hg -> HgA) = drépanocytose cliniquement + microcytose
-**** Clinique
-Augmente la polymérisation + Rigidification du globule rouge
-- thrombus (et adhère anormalement à l’endothélium)
-
-Avant 2 ans :
-- anémie aigùe par emballemet de la rate (séquestration splénique)
-- infection sévère ()
-Peut être prévenu par vaccins et antibio
-
-Crises vaso-occlusive
-- typique = os (mais n’importe quel organes)
-- douleurs intenses ->_antalagique, hospit
-- en général 4/an -> prise en charge palliative
-- sinon, ttt par hydroxyurée (induit expression hémoglobine foetale -> diminue polymérisation ), transfusion, CSH, thérapie génique
-** diagnostic biologique
-Évaluation fraction physiologique des hémoglobine A, A2 et F +/- fraction anormales (chromatographie et électrophorèse))
-- Si anormale : biochomique/moléculaire
-Si syndrome majeur ou couple porteur htz -> séquencage direct (peu de gènes et de petite taille = Sanger suffit)
-** Résumé
-Hétérozygotes
-| β thalassémie       | α-thalassémie | drépanocytose |
-|---------------------+---------------+---------------|
-| HbA                 | HbA           | HbA           |
-| HbA2 élevée         | HbA2 normales | HbA2 normal   |
-| HbF  normale/élevée | HbF normale   | HbF normal    |
-|                     |               | HbS 30-40%    |
-| microcytose         | microcytose   | VGM normal    |
-| polyglobulie        | polyglobulie  | GR normaux    |
-Tableau majeurs
-| β thalassémie | α-thalassémie | drépanocytose    |
-|---------------+---------------+------------------|
-| *Pas HbA*     | * Pas HbA*    | * pas d’HbA*     |
-| HbF           | Pas d’HbF     | HbF et HbS|
-| microcytose   | microcytose   | VGM normal       |
-| polyglobulie  | polyglobulie  | GR normaux       |
-** Dépistage prénatal
-Si 2 parents originires de pays à risques
-* Marfan
-- fragilité du tissu de soutien
-- AD
-** Critères diagnostiques
-Pas d’atcd familiaux
-- Dissection/dilatation aorte ascendante (Z score \ge 2) et
-  - ectopie du cristallin
-  - ou mutation /FBN1/
-  - ou score systémique \ge 7
-- ou : ectopie du cristallin et mutation FBN1 associée à une dilatation aortique
-
-ATCD familiaux au 1er degré
-- Dissection/dilatation aorte ascendante (Z score \ge 2 si \ge 20 ans, \ge 3 sinon) et
-- ou ectopie du cristallin
-- ou score systémique \ge 7
-
-Score systémique
-| Signe du poignet *et* pouce                         | 3 |
-| Signe du poignet *ou* pouce                         | 1 |
-| Pectus carinatum                                    | 2 |
-| Pectus excavatum / asymétrie thoracique             | 1 |
-| déformation arrière-pied                            | 2 |
-| pieds plats                                         | 1 |
-| pneumothorax                                        | 2 |
-| ectasie durale                                      | 2 |
-| protrusion acétabulaire                             | 2 |
-| segemnt sup/inf < 0.86 *et* envergure/taille > 1.05 | 1 |
-| scoliose/cyphose thoraco-lombaire                   | 1 |
-| extension coudes > 170°                             | 1 |
-| \ge 3 signes cranio-faciaux                         | 1 |
-| vergetures                                          | 1 |
-| myopie                                              | 1 |
-| proalpsus de la valve mitrale                       | 1 |
-
-[[file:img/marfan-acetabulum.png]]
-[[file:img/marfan-arachnodactylie.png]]
-[[file:img/marfan-carinatum.png]]
-[[file:img/marfan-excavatum.png]]
-[[file:img/marfan-pouce.png]]
-
-*** Signes cranio-faciaux :
-- fente palpépbrales vers le bas
-- hypoplasie malaire
-- microrétrognathie
-- palais ogival
-- dents chevauchantes
-- visage long et étroit avec énophtalmie
-
-*** Luxation du cristallin
-visable à l’exam direct seulement à partir du stade 3 ou 4
-[[file:img/marfan-cristallin.png]]
-68% de ces luxations sont dans le cadre d’un marfan
-
-*** Ectasie lombo-sacrée
-- Élargissement canal rachidient L5
-- amincissement pédicules et lames vertébrales
-[[file:img/marfan-ectasie.png]]
-
-** Moléculaire
-/FBN1/ :
-- 45 exons
-- pas de hotspot
-- mutation ponctuelles, privées
-Types de mutations
-- faux-sens : formes néonatale ou incomplète
-- altérant de cadre de lectures (protéine tronquée)
-- site d’épissage : souvent dans phénotypes sévère (monomères raccourcis de fibrilline)
-*** Forme néonatale
-- plus sévère, plus précoce
-- Exons 24-32
-** Apparentés
-Classification génétique
-- composant de la matrice extracellulaire : FBN1, MFAP5, MAT2A
-- voie signalisation TGFβ : TGFBR1 et 2, TGFB2 et 2, SMAD2 et 3
-- composant de l’appareil contractile des cellules musculaires lisses : ACTA2, MYH11, MYLK, PRKG1
-Formes syndromiques
-- Loeys-Dietz
-- anrévrisme de l’arthrose, tortuosité artérieelle
-- dysfunction musculaire
-- Marfan néonatal
-- Marfan
-Non syndromique
-- anévrysme aortiques thoraciques familiaux
-- dissections aortiques familiales
-** Grossesse
-Complication: cardiovasucailer (fragilité), obstétricale (squelete, hypotonie des tissus -> préma)
-DPN si mutation familiale
-** Prise en charge
-Quelque soit la mutation : limitation des sports, β-bloquant, surveillance échocardio annuelle
-* Dysgonomosomie
-- chrY = 53MB 1.7% gènes 50 gènes
-  initialement homologue à l’X puis évolution : divergence suite à des anomalies de structures répétées -> plus d’appariement possible donc perte de matériel
-- chrX = taille 160Mb 5% génome 1000 gènes
-
-** Régions pseudo-autosomique
-- régions homologues due à la origine commune
-- PAR1 et 2 aux extrémités du chrX et Y
-- cross over possible
-  PAR1 = 3Mb 24 gènes
-  PAR2 = 300kbp 5 gènes
-
-Y : ont des homologue fonctionnels sur l’X en dehors des régions PAR
-15 gènes n’en ont pas (spermatogènes)
--> majorité du X est spécifique
-** Anomalies de nombres
-Le plus souvent de décovuerte fortuite ou pendant un bilan d’infertilité
-- moins de gènes sur Y
-- inactivation
-
-XXX ou YY: retentissement très lèger
-Nombreaux X ou Y : conséquences plus sévère
-Pas de X = non viable
-
--[[*47XYY][ 47XYY]]
--[[*47XXX][ 47XXX]]
-[[*Syndrome de Klinefelter][- Syndrome de Klinefelter]]
-- [[*Syndrome de Turner][Syndrome de Turner]]
-** Polygonomosomie
-48 ou 49 chromosome
-Phénotype plus sévre : polymalfo + DI
-Plus il y a de X, plus le tabelau est sévère
-** IMG
-* Syndrome de Turner
-Seule monosomie viable
-1/2500
-- 50% homogène (toutes les cellules)
-- 25% en mosaïque
-- 25% 2 chr X : un normal, autre avec anomalie de structures (isochromosome)
-80 % d’origine paternelle
-
-** Anténatal
-- Oedeme du coup, hygroma , hydrops foetalis
-- Malfo cardiovasc (coractaction aortique) (rein fer à chevel)
-- Le plus souvent RAS
-- Petite taille
-** Postnatal
-- Lymphoedome main et pieds (se résobre)
-- Pterygium colli
-- Malformation
-[[file:img/bonnevie-ulrich.png]]
-** Enfance
-[[file:img/turner.jpg]]
-- taille adulte <_1m45 (1 seul SHOX)
-- Croissane caractéritistuique avec ralentissement caractéristique
-Retard puberté, aménorhrrée primaire (ovaires sclérosés non fonctionnels)
-- Cou court, cheveux bas implantés sur la nuque, micrognathie, genou valgum, palais ogival, naevi pigmentaire, thorax en bouclier avec mamelon écarté, brievté 4e métacarpien
-- malfo :
-  - 30% cardiaque (mineurer le plus souvent, sur l’aorte)
-  HTA précoce fréquente 40%
-  -> surveillance cardio vasc à vie
-- rénale : rein unique/fer à cheval/malfo urinaire 40% (favorise infection urinaire)
-- ostéoporose (carence ostrogène), diabète, hypothyroidie, coeliaque
-- augmentation risque luxation hanche,
-  - ORL
-- strabisme
-- intelligence normale mais souvent difficulté d’apprentissage spécifiques
-** Fertilié
-- Grosseses spontanées < 1% (mosaïque)
-- Don d’ovocyte possible mais grosses à haut risque (risque cardiovasculaire)
-** Situation particulaire
-X en anneau de très petite taille
-- pas de XIST (inactive X) -> disomie fonctionnelle (expression double dose) -> tableau plus sévère avec DI
-- 45X/46XY anomalie DSD, clinique variable (morphotype complètement masculin) ->_haut risque de gonadoblastome)
-
-  Oestrogène pour induire puberté
-  TT par hormone de crosisance
-* Syndrome de Klinefelter
-47 XXY
-1/660 I
-- 80-90% homogène
-  X supplémentaire maternel ou pat
-- mosaique 10-20% 46XY/47XXY souvent moins sévères
-**  Manif clinique variables
-imperceptible durant l’enfance
-
-- 90% fortuit lors bilan infertilité
-Puberté
-- gynémocastie uni/bilatéral
-- grande taille SHOX x3
-- petites testicules mais pénis normal
-- pilosité peu développement
-- pulpe dentaire peu développé
-- infertilité primaire par absence de spermatosoide
-Pas de DI mais retard possible
-** PEC
-- ortophonie si retard langage
-- biopsie testiculaire postiive 50% des cas ->_ICSI possible
-- testostérone début adolescence
-* 47XXX
-X le plus souvent maternelle
-1/1000
-forte proportion asympto
-- taille plus grande
-- fertilité le plus souvent normale mais plus d’IOP (3% des IOP)
-- basse QI ? remise en question sur anciennes études
-* 47XYY
-1/1000
-Phénotype normal
-- grande taille
-- généralement fertile mais infertilité un peu augmenté
-- pas de DI
-* Mutation somatiques de PIK3CA
-** Macrodactylies de type 1
-- 1/100000 naissances
-- Atteinte d’un territoire nerveux avec
-- hypertrophie du tissu adipeux et hypercroissance osseuse
-- Histologie : nerf élargi et allongé
-- Pas de cas de dégénérescence
-  [[file:img/macrodactylie-1.png]]
-
-** Hyperplasie fibro-adipeuse
-- Hypertrophie segmentaire progressive du tissu sous cutané musculaire et adipeux avec hypercroissance osseuse
-- Signes associés :
-  - malformations vasculaires,
-  - naevi, polydactylie, kystes testiculaires ou épididymaux, hydrocèle
-
-#+caption: Lindhurst et al 2012
-[[file:img/pik3ca-adipeux.png]]
-** TODO MCAP
-** TODO HMEG
-** TODO KTS
-** [[*Syndrome CLOVES][Syndrome CLOVES]]
-* Syndrome CLOVES :PIK3CA:
-#+caption: Kurek et al 2012
-[[file:img/syndrome-cloves.png]]
-- Congenital
-- Lipomatous : tronc+, membre
-- Overgrowth of the trunk (asymetric)
-- Vascular malformation : lymphatic, capillary, venous, combined
-- Epidermal nevi
-- Skeletal/spinal anomalies : pieds et mains large, sandal-ap, inégalité de longeur de membre
-+ rénal : hypoplasie rénale, tumeur de Wilms
-* Syndrome de Cowden
-PTEN, PIK3CA, AKT1
-- Macrocéphalie
-- Hamartomes multiples se formant sur la peau, la poitrine, la thyroïde, le tractus gastrointestinal, l'endomètre et le cerveau
-- Prédisposition aux cancers : sein, endomètre, thyroïde
-- Manifestations cutanées : trichilemmome, papillomatose de la muqueuse orale, kératose palmoplantaire
-- Manifestations neurologiques
-- Manifestations gastro-intestinales
-- Transmission autosomique dominante
-
-* Syndrome de Klippel-Trenaunay
-- Malformations vasculaires : angiome plan (composante veineuse)
-- Varices : anomalies de trajet et du développement des veines
-- Hypertrophie des os et des tissus sous jacents : inégalité de longueur
-[[file:img/syndrome-klippel-trenaunay.png]]
-
-* Infertilité
-- 1 an de rapports sexuels non protégés sans concevoir
-- dégradation progressive et importante de la fertilité (homme + animal) -> modification environmentales
-- génétique = 50%
-- 1 couple sur 8
-
-** Bilan
--  Examen clinique (pilosité, varicocèle)
--  Bio : LH, FSH, AMH
--  homme : spermogramme
--  écho pelvienne
--  Bilan génétique selon la clinique++ (nb causes génétiques) -> importance du phénotype
-** Masculine
-*** Spermatogènes
-74 jours:
-1. multiplocation mitose des cellules
-2. méiose  (réduction matériel génétique)
-3. différentiation (compaction chromatine, formation achrosome, flagelle)
-NB: flagelle ressemble structurellement à des cils
-Contrôlé par 2000 gènes
-*** quantitatif : oligozoospermie (< 1million/mL), azoospermie
-**** Azoospermie obstructive
-- /CFTR/: atrésie canaux déférents (98% des muco) -> mutation dans 80%
-  - mutation mineure + sévère = atrésie seule
-  - mutation plus sévère : muco
-    variant 5T = 5% pop générale mais x10 si agénésie canaux déférents. Saut d’exon possible
-- /ADGRG2/ : stase du canaux déférent. 1% des azoospermie obstructive
-**** Défaut de production
-***** chromosomique :5-7% des patients infertiles
-1. Nombre :
-   - [[*Syndrome de Klinefelter][Syndrome de Klinefelter]] = cause génétique la plus fréquente
-     Spermatogènes résiduelle (50% biopsie positive)
-     augmentation de taux d’aneuploide (T12)
-   - 47XYY
-   - marqueurs surnuméraires
-2. Structure
-   - Translocation robertsonnienne : 2% des hommes infertiles. -> trivalent (chr 13, chr1, t(13, t14))
-     [[file:img/trivalent.png]]
-     80 des spermatozoide auront un contenu équilibré
-     [[file:img/trivalent-segreg.png]]
-     Autres :
-     - excès nullosomique (13,14,15,22) -> risque disomie maternelle
-     - risque de gamètes disomique sur le 21 -> risque de trisomie
-   - transloc réciproques : majorité ont un contenu déséquilibré
-   - inversion péri (continte le centromère) : proportion variable de gamèter déséquilibér
-     paracentrique : rarement gamiètre déséquilibre (ne franchissent pas la méiose)
-   - complexe : >= 2 chr et >=3 chr : blocacge sévère spermatogenèse
-     ex: chrY isodicentrique, anneau
-   - chrX et bras court du Y : transposition SRY sur X (1%)
-***** microdeletion du Y
-- récurrente : 3 régions critiques avec pronotique différenté
-  AZFA = rare, absence de Sertoli seul
-  AZFB = arrêt en méiose
-  AZFC = variable
-  Attentio, biopsie contre-indiquée si AZF a ou b
-
-  Mécanirme NAHR intra-chromosomique favorisé par séquences répétées (mais composition différentes selon les régions AZF)
-  - courtes AZFA -> se recombine moins souent
-
-  - Deletion partielle AZFc (gr/gr) par densité éléments répétés
-    forte prévalence en population générale (2%)
-    -> prédisposition. Mais dépend de l’ethnie
-***** Hypogonadisme hypogonadotrope (centrale)
-- Retard pubertaire, anosmie
-- Testostérone effondrée, FSH et LH diminué
-
-  Affect dev hypophysaire
-  Défaut moléculaire -> déficit foncionnel
-  Plus connu : syndrome de Kallmann
-  - anomalie migration neurone à GnRH
-    5 gènes 30%
-***** Tous les gènes affectant la spermatogenèse
-Ex: TEX11 = 2% des azoospermies
-perte protéine ->_défaut d’appariement et arrêt du cross-over
-
-On trouve souvent des gènes impliqués en onco
-
-NB: Défaut moléculaire entrainant un blocage méiotique = mauvais pronostic pour biopsie testiculaire
-*** qualitatif
-**** asthénozoospermie (mobilité)
-- peu de cause génétiques connues
-- code canaux ionoiques, dyskinésie ciliaire primitive (syndromique)
-**** tératozoospermie (forme)
-Nb cause génétiques, cliniquement pertinentes
-***** spermatozoide macrocéphales
-tête x3, plusieurs flagelles, + oligo-asthénozoospermie
-/AURKC/: kinase à expression spermatozoide
-- perte de la prot -> blocage pré-méiotique -> CI absolue à ISCI
-- 80% spermm. macrocphalie
-- surtout 2 mutation récerrence
-***** Globolzoospermie
-- petite tête ronde s
-- /DPY19L2/: deletion par NHR sur régions encadrant le gène
-  - absence -> déstabilitation jonction acropaxome et membrane nucléaire
-  - 80% des patients -> on recherche d’abord la délétion
-  - défaut condensation chromatine et fragment ADN
-  - défaut épigénétique impactant le développement de l’embryon -> ICSI à discuter
-***** Anomalies flagellaire (MMAF)
-- courts, enroulés, diamètre irréguliers -> défaut de mobilité
-- 19 gènes : 3 sortes de protéines
-  - péri-axomeme
-  - transport intraflagellaire
-  - axomeme
-- très grande hétérogénéité génétique -> exome/panel
-- 40% des cas sont diagnostiqué
-***** Spermatozoïdes décapités
-/SUN5/ = 50% des patients
-- protéine indispensable du centrosome à la membrane nucléaire
-ICSI avec tête seule ?
-**** échec d’activation ovocytaire
-- Pas de défaut morphologie ou quantité
-- /PLCZ1/
-** En résumé
-
-| Non Obstructive           | Karyotype + Y microdeletion                      |
-| Azoospermia               | Others ?: Based on histology (TEX11, SPINK2 ?)   |
-|                           | TESE (testicular sperm extraction) ?             |
-|---------------------------+--------------------------------------------------|
-| Obstructive               | Diagnostic CFTR, if neg ADGRG2 (Toulouse)        |
-| Azoospermia               | Microsurgical epididymal sperm aspiration (MESA) |
-|---------------------------+--------------------------------------------------|
-| Asthenozoospermia         | First-line diagnostic ? Research in Grenoble     |
-|                           | No counter-indication to ICSI                    |
-|---------------------------+--------------------------------------------------|
-| Macrozoospermia           | Diagnostic AURKC (Grenoble)                      |
-|                           | Sperm are tetraploid, no treatment possible      |
-|---------------------------+--------------------------------------------------|
-| Globozoospermia           | Diagnostic DPY19L2 (Grenoble)                    |
-|                           | ICSI is possible. Is it safe ?                   |
-|---------------------------+--------------------------------------------------|
-| Flagellar defects         | Diagnostic DNAH1, CFAP43 and CFAP44 (Grenoble)   |
-|                           | No counter-indication to ICSI                    |
-|---------------------------+--------------------------------------------------|
-| Flagelles isolés          | Diagnostic SUN5                                  |
-|---------------------------+--------------------------------------------------|
-|                           | Diagnostic PLCZ1 possible (Grenoble)             |
-| Oocyte activation failure | ICSI with OA or PLCZeta injection is possible    |
-
-** Féminin
-Ovogonése : mitose puis méose (2n -> n puis 2n avec fécondation)
-IOP et FCS seuls ici
-*** IOP
-- Pas de règle >_6 mois, âge <_40 ans et FSH > 20UI/L 2 fois
-- aménorrhée primaire/secondaire suite à des cycles réguliers le plus souvent
-
-Origines
-- Déplétion stock follicule prmaires
-- blocage maturation follicule
-- apoptose accélérée (Turner, FMR1 )
-**** Types
-***** Le plus souvent anomalies chromosomiques
-- X dans 10-13%
-  - [[*Syndrome de Turner][Syndrome de Turner]] : ovaire remplacé par des bandelettes fibreuse, probablement par haploinsuffisance de gènes échappant à l’inactivation nde l’X
-  - Triple X : 3% des IOP
-  - transloc t(X, autosome): effet de position/interruption de gènes critique -> risque pour la descendance
-- prémutation FMR1: production anarchique d’ARN m qui vont s’accumuler dans les cellules : dans les ovocytes, destruction prématurées
-  - 1/3 des femmes prémutée auront une IOP
-
-***** Nb causes monogénique : 50 gènes confirmés avec grande hétérogénéité (panel/exome ?)
-- autosome ou X
-- isolé ou syndromique
-Function : div cellulaire reparation adna, méiose, folliculogènes
-ex: NOBOX, GDF9 (mutation = bloque maturation ovocytaire)
-FOXL1: syndromique BPES (ophtalmo)
-
-CNV régulièrement retrouvé
-*** FCS à répététion
-\ge 3 FCS
-Caryo : anomalies équilibrées, déséquilibrées, nb de gosomoiques
-Cause géniquses sur orientation clinique
-*** En résumé
-IOP: Caryo, FISH, prémut FMR1A +/- ACPA, panel/ génome
-FCS: caryo + FISH sur X
-* Hypomélanose d’Ito
-Hypopigmentation selon les lignes de Blaschko
-- + atteinte cérébrale et épilepsie
-- hyperpigmentation possible
-- Souvent hémihypertrophy et a
-** Génétique
-- Plutôt mosaïque somatique (nombreuse anomalies chromosomiques rapportées)
-  - MTOR: cerveau, sang, frottis buccal
-- Variants patho germline MTRO aussi rapportés dans syndrome SMith-Kingsmore : DI, macrocéphalie, ventriculomégalie, épilepsie, dysmorphie faciale (hypoplasie étage moyen de la face, hypertélorisme, ensellure nasale, FP en bas et dehors, lèvre supérieure fine, philtrum plat)
-* Deletion 1p36
-DI modérée/sévère
-Enophtalmie
-Sourcils horizontaux
-Syndrome de West
-
-#+caption: Source: Jordan et al 2015
-[[file:img/del1p36.png]]

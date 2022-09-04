@@ -258,6 +258,7 @@ for i in p.index:
 #+end_src
 
 **** TODO Fusionner les tsv pour Paul
+***** Exome
 #+begin_src python :results output
 import pandas as pd
 from pathlib import Path
@@ -373,6 +374,7 @@ print(d2.columns)
 
 
 #+end_src
+***** Panel
 *** Données
 **** DONE Import Labkey
 **** TODO Clinique, OCR et nettoyage données labkey [13/1199]
