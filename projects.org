@@ -1612,28 +1612,37 @@ Voir avec Paul
 **** https://www.fast.ai/
 
 ** Pipeline exome
-*** Améliorer le workflow
-**** STRT Nix pour les dépendences
-**** STRT Nix pour télécharger les données brutes
+*** TODO Problèmes rencontrés à l’install
+- [X] Dossier de log non créé
+- [ ] Pourquoi avoir ne pas simplement utiliser list_of_fastq.txt directement ?
+  - [ ] Supprimé du code
+  - [ ] Rajouter boucle sur plusieurs fichiers
+
+*** TODO Rendre le workflow compatible avec Nix
+**** DONE Nix pour les dépendences
+**** DONE Nix pour télécharger les données brutes
 ***** KILL Axel au lieu de curl pour gérer les timeout?
 CLOSED: [2022-08-19 Fri 15:18]
 ***** DONE Tester patch de @pennae pour gros fichiers
 SCHEDULED: <2022-08-19 Fri>
-***** TODO Télécharger
-- [ ] CADD 80G
+***** DONE Télécharger
 - [ ] Refseq 20G
 - [ ] VEP 20G
-Utilise une versionn allégée de GnomAD (une seule colonne)
+**** STRT Corriger le script pour nix
+*** Améliorer le workflow
+**** TODO Utilise une versionn allégée de GnomAD (une seule colonne)
 **** TODO test Bionix
 **** TODO Implémenter execution avec Nix ?
 Voir https://academic.oup.com/gigascience/article/9/11/giaa121/5987272?login=false
 pour un exemple.
 Probablement plus simple d’utiliser Nix pour gestion de l’environnement et snakemake pour l’exécution
-*** TODO Installer le pipeline d’Alexis
+**** KILL Télécharger les données avec nextflow
+Pas d’accès internet depuis le cluster
+**** TODO Télécharger les données avec makefile + traitement par nextflow
+*** TODO Tests
 SCHEDULED: <2022-07-30 Sat>
-**** KILL Utiliser docker
-**** STRT Utiliser nix avec exactement la même configuration
 **** TODO Test de non régression
+**** TODO Genome in a bottle
 *** TODO Implémenter d’autres pipeline
 Voir https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04407-x
 **** TODO GATK
@@ -2078,3 +2087,20 @@ SCHEDULED: <2022-08-10 Wed>
 ** WAIT Nixpkg for BioExtAlign
 SCHEDULED: <2022-08-10 Wed>
 /Entered on/ [2022-08-10 Wed 14:28]
+
+* Voiture
+** Mazda 5
+*** Notes
+- Plaquettes : arrière gauche ok (50%) le <2022-09-03 Sat>
+*** TODO Changer pneus avant
+SCHEDULED: <2022-09-03 Sat>
+Trop abimé pour prendre le risque, on changera les arrières plus tard
+* Moto
+** TODO Changer kit chaine
+SCHEDULED: <2022-09-05 Mon>
+* Maison
+** TODO Nettoyer canapé cuir
+SCHEDULED: <2022-09-06 Tue>
+Acheter lait démaquillant
+** TODO Corriger erreur de facturation bouyges + renouveler
+SCHEDULED: <2022-09-03 Sat>
