@@ -1,5 +1,82 @@
 #+TITLE: Maladies
 #+OPTIONS: toc:1
+* AMyotrophie spinale infantile
+2e maladie neuromusc la plus fréquente
+1/6000 - 1/10 000 dans le monde
+Dégénerscence des motoneurones de la corne antérieure de la moelle
+5 types selon âge de début :
+- 0 (60%) = anténatal, décès premier jours de vie
+- 4 = début après 18 ans, station assise + marche acquises mais perte de la marche
+
+** Clinique
+***  Anténatal
+  Hypotonie majeure, pas de mobilité, arthrogrypose 4 membres, détresse respiratoire
+
+*** Nourisson, jeune enfant = plus caractéristique
+- hypotonie axilae majeure + déficit moteur 4 membre prédominante MI ->_attitue en "batriacien"
+- balancement thoraco-abdominal (respect diaphragme)
+- pas de réflexes
+- fasculation de la lange (à chercher !)
+- mais éveil norma
+Évolution : arrêt de tout progrès moteur
+*** Adulte = plus trompeur
+Déficit ceinteure prédominant MI, ROT possiblement conservées
+*** Analyses
+Géntiqiue peut être fait d’emblée (EMG non nécessaire)
+Si EMG fait: très évocateur
+Si CPK: normale ou 2-5x normale
+
+Absence de délétion homozygote SMN1 : doser CPKG, EMG
+*** Exclure si
+- atteinte congnitive
+- neurosensoreille
+- faciale
+- oculormotrice etxrinsèque
+
+DD:
+- épilepsie myoclonique : ASAH1distale
+- atrophie pontocérébelleuse :VRK1, cDG
+- paralysie du diaphragme
+- Charcot-Marie-Tooth spinaux
+** Moléculaire
+Locus sMA
+- 5b11-q13
+- Élément dupliqué et inversé de 500kb pnedant l’évolution
+
+- 95% = inactivation homozygote SMN1
+- 5% = délétion hétérozygote + mutation intragénique sur second allèle
+- SMN2: 10% population générale a une délétion homozygote sans phénotype
+
+  SMN1 et SMN2 très très homologue: différence en +6 exon 7 -> rôle dans l’épissage de cet exon
+
+  SMN2: saut d’exon 7 la plupart des cas -> protéine SMN rapidement dégradée (petite quantité fonctionnelle)
+
+  SMN : complexe Gemin -> Rôle dans l’épissage
+*** Expression ubiquitaire
+  Pas strictement neuromusc: malformation cardiaque, atteinte système neurveur autonome
+
+  Hypothèse : altération de l’épissage de quelques ARNm codant pour protéine dans fonctionnement motoneurone/organisation
+  -> thérapeutique doit corriger expression dans multiples tissus
+
+*** Pourquoi plusieurs types ?
+Plus la quantité de gènes SMN2 est importante, plus il y a de protéine donc moins la maladie est sévère
+- 0xSMN1 - 1xSMN2 (allle 1) //
+  0xSMN1 - 1xSMN2 (allèle 2) = type I (grave)
+- 0xSMN1 - 1xSMN2 //
+  2xSMN1 - 1xSMN2= type II
+- 0xSMN1 - 2xSMN2 //
+  0xSMN1 - 2xSMN2= type III (conversion SMN1 ->_SMN2)
+
+  Autres gènes modificateurs :
+  - femmes asymptomatiques avec délétion homozygote SMN1
+  - phénotype variable en sévérité dans fratrie
+*** Thérapeutique
+Rétention d’exone -> Nusinersen (Spinraza) = oligonuclétoide antisens
+- AMM pour les types 1 et 2
+- injection x2 à 15j pour +1m puis tous les 4 mois
+- résultats = progrès moteur (201 8)
+  - efficacité moitié enfant (échelle neuro)
+  - décès/ventilation permanente : 39% des 80 avec médic contre 68% des 41 a
 * Déficience intellectuelle
 - Plupart = cause génétique unique (CNV, chromosome, SNP, indel)
 - > 800 gènes validés: plusieurs listes
