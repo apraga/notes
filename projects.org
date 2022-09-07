@@ -1630,7 +1630,8 @@ Comparaison WDL, Cromwell, nextflow
 https://www.nature.com/articles/s41598-021-99288-8
 Nextflow = bon compromis ?
 *** Notes
-Quelle version du génome ? Il y a 2 notations pour les chrosome: Refseq (NC_0001) ou chr1, chr2...
+**** Quelle version du génome ?
+Il y a 2 notations pour les chrosome: Refseq (NC_0001) ou chr1, chr2...
 dbSNP utilise Refseq
 pour le fasta, 2 solutions
 - refseq : "https://ftp.ncbi.nlm.nih.gov/refseq/H_sapiens/annotation/${genome}_latest/refseq_identifiers/${fna}.gz"
@@ -1638,41 +1639,47 @@ pour le fasta, 2 solutions
 - chromosome https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.15_GRCh38/seqs_for_alignment_pipelines.ucsc_ids/
   -> nécessite d'annoter les chromosomes pour corriger (avec le fichier gff)
   On utilise la version chromosome donc on annote dbSNP (à faire)
-*** Améliorer le workflow
-**** STRT Nix pour les dépendences
-**** STRT Nix pour télécharger les données brutes
-***** KILL Axel au lieu de curl pour gérer les timeout?
+**** Performances
+Ordinateur de Carine (WSL2) : 4h dont 1h15 alignement (parallélisé) et 1h15 haplotypecaller (séquentiel)
+*** Nouveau workflow
+**** Bases de données
+***** KILL Nix pour télécharger les données brutes
+****** Conclusion
+Non viable sur cluster car en dehors de /nix/store
+On peut utiliser des symlink mais trop compliqué
+****** KILL Axel au lieu de curl pour gérer les timeout?
 CLOSED: [2022-08-19 Fri 15:18]
 ***** DONE Tester patch de @pennae pour gros fichiers
 SCHEDULED: <2022-08-19 Fri>
 ***** DONE Télécharger
 - [ ] Refseq 20G
 - [ ] VEP 20G
-<<<<<<< HEAD
-**** STRT Corriger le script pour nix
+***** TODO Télécharger les données avec nextflow
+***** STRT Télécharger les données avec makefile
+****** TODO MD5sum
+**** Dépendences
+***** DONE Nix pour les dépendences
+**** Exécution
+***** KILL test Bionix
+***** KILL Implémenter execution avec Nix ?
+Voir https://academic.oup.com/gigascience/article/9/11/giaa121/5987272?login=false
+pour un exemple.
+Probablement plus simple d’utiliser Nix pour gestion de l’environnement et snakemake pour l’exécution
+Pas d’accès internet depuis le cluster
+***** TODO nextflow
+****** TODO Processing bases de données
+******* KILL SGE: sur ancien cluster donc plus d’actualité
+******* TODO Slurm sur Helios
+******** TODO Problème de scheduling :
+- squeue ne fonctionne pas
+- nextflow finit par quitter alors que le job tourne
+Issue soumis sur github: https://github.com/nextflow-io/nextflow/issues/1644
 *** Améliorer le workflow
 **** TODO Utilise une versionn allégée de GnomAD (une seule colonne)
-**** TODO test Bionix
-**** TODO Implémenter execution avec Nix ?
-Voir https://academic.oup.com/gigascience/article/9/11/giaa121/5987272?login=false
-pour un exemple.
-Probablement plus simple d’utiliser Nix pour gestion de l’environnement et snakemake pour l’exécution
-**** KILL Télécharger les données avec nextflow
-Pas d’accès internet depuis le cluster
-**** TODO Télécharger les données avec makefile + traitement par nextflow
 *** TODO Tests
+**** TODO Test de non régression
+**** TODO Genome in a bottle
 SCHEDULED: <2022-07-30 Sat>
-=======
-Utilise une versionn allégée de GnomAD (une seule colonne)
-**** HOLD test Bionix
-**** KILL Implémenter execution avec Nix ?
-CLOSED: [2022-08-31 Wed 11:09]
-Voir https://academic.oup.com/gigascience/article/9/11/giaa121/5987272?login=false
-pour un exemple.
-Probablement plus simple d’utiliser Nix pour gestion de l’environnement et snakemake pour l’exécution
-**** STRT Exécution avec nextflow
-**** TODO Télécharger données avec Makefile
-Pour mésocentre
 *** Simulation sur mésocentre
 **** Réunion <2022-08-31 Wed>
 Intervenants:
@@ -1688,16 +1695,7 @@ Conclusion :
 - si échec, essayer Spack ou Conda
 - répertoire partagé de 2To pour datasets
 - soumission de jobs sous Nextflow à discuter dans un second temps
-**** WAIT Installation nix
-*** TODO Installer le pipeline d’Alexis
-SCHEDULED: <2022-07-30 Sat>
-**** KILL Utiliser docker
-**** STRT Utiliser nix avec exactement la même configuration
-**** TODO Alignement avec chr
-Corriger dbSNP
->>>>>>> 976dbe55316c03b3abd0aed3f42de526b6c793b9
-**** TODO Test de non régression
-**** TODO Genome in a bottle
+**** DONE Installation nix
 *** TODO Implémenter d’autres pipeline
 Voir https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04407-x
 **** TODO GATK
@@ -1708,8 +1706,6 @@ https://github.com/snakemake-workflows/dna-seq-gatk-variant-calling/blob/main/.g
 Installer Mamba (micromamba ne fonctionne pas sous nix)
 Ne fonctionne pas sous WSL2... MultiQC n’est pas assez à jour
 Problèmes de versions...
-*** Performances
-Ordinateur de Carine (WSL2) : 4h dont 1h15 alignement (parallélisé) et 1h15 haplotypecaller (séquentiel)
 * Banque :banque:
 ** TODO Compte et CB société générale :banque:
 *** KILL Envoyer relevé
@@ -1725,13 +1721,9 @@ SCHEDULED: <2022-08-20 sam.>
 SCHEDULED: <2022-07-30 Sat>
 
 ** Kitty
-*** TODO v25.2
-**** DONE Soumettre
-**** WAIT PR upstream pour _Static_assert (cf https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=265393)
-SCHEDULED: <2022-08-20 sam.>
-Si confirmé, fermé la PR
-Sinon, enlevé <assert.h>
-**** WAIT Plus de patch nécessaire ? Réouvert bug sur bugzilla
+*** WAIT Problème sur fetchdir
+Commiter au courant, attente de résolution
+*** TODO pkg-config problème avec 0.26.1
 ** WAIT [[https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=264158][pkgconf est trop lent sur freebsd]]
 Problème persiste avec dernière version
 ** TODO taskwarrior v0.23.5
@@ -2111,10 +2103,6 @@ SCHEDULED: <2022-07-31 Sun>
 **** TODO Téloméropathies (T Leblanc)
 * Divers
 ** Amendes
-*** DONE Payer amende majorée 75€ , provenance inconnue
-- [X] Chèque envoyé parti <2022-08-20 sam.>
-- [X] Envoyer un mail
-- [X] Virement boursorama pour anticiper
 ** TODO Cadeau mariage :joris:
 SCHEDULED: <2022-08-04 Thu>
 ** TODO Cadeaux mariage :florian:
@@ -2122,7 +2110,7 @@ SCHEDULED: <2022-08-04 Thu>
 ** TODO Copier photos famille depuis drive yvain sur drive famille
 SCHEDULED: <2022-07-30 Sat>
 * Nix
-** TODO Nixpkg for GATK
+** WAIT Nixpkg for GATK
 *** WAIT Binaire
 SCHEDULED: <2022-08-10 Wed>
 /Entered on/ [2022-08-09 Tue 10:57]
@@ -2159,5 +2147,8 @@ SCHEDULED: <2022-09-05 Mon>
 ** TODO Nettoyer canapé cuir
 SCHEDULED: <2022-09-06 Tue>
 Acheter lait démaquillant
-** TODO Corriger erreur de facturation bouyges + renouveler
+** DONE Corriger erreur de facturation bouyges + renouveler
 SCHEDULED: <2022-09-03 Sat>
+** TODO Renouveler abonnement
+SCHEDULED: <2022-11-14 Mon>
+À partir du 14 novembre

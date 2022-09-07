@@ -1030,3 +1030,31 @@ SCHEDULED: <2022-07-17 Sun>
 :ARCHIVE_ITAGS: freebsd
 :END:
 Non reproductible
+
+* DONE v25.2
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-09-07 Wed 23:26
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: FreeBSD/Kitty
+:ARCHIVE_CATEGORY: projects
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: freebsd
+:END:
+** DONE Soumettre
+** DONE PR upstream pour _Static_assert (cf https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=265393)
+SCHEDULED: <2022-08-20 sam.>
+Si confirmé, fermé la PR
+Sinon, enlevé <assert.h>
+** DONE Plus de patch nécessaire ? Réouvert bug sur bugzilla
+
+* DONE Payer amende majorée 75€ , provenance inconnue
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-09-07 Wed 23:27
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Divers/Amendes
+:ARCHIVE_CATEGORY: projects
+:ARCHIVE_TODO: DONE
+:END:
+- [X] Chèque envoyé parti <2022-08-20 sam.>
+- [X] Envoyer un mail
+- [X] Virement boursorama pour anticiper
