@@ -1176,7 +1176,7 @@ Familles consanguines oun on
 #+caption: Kurek et al 2012
 [[file:img/syndrome-cloves.png]]
 - Congenital
-- Lipomatous : tronc+, membre
+- Lipomatous : tronc+, membre
 - Overgrowth of the trunk (asymetric)
 - Vascular malformation : lymphatic, capillary, venous, combined
 - Epidermal nevi
@@ -1883,3 +1883,9 @@ AD
 deletion de 11p13 (syndrome WAGR) et en 11p14 (gène BDNF)
 * TODO Trisomie 13
 * TODO Trisomie 18 * TODO Trisomie 21
+* TODO Syndrome de Protée
+* Syndromes d’hypercroissance
+- [[Syndrome de Klippel-Trenaunay]]
+- [[Syndrome de Protée]]
+- Syndrome Bannayan–Riley–Ruvalcaba
+- [[Syndrome CLOVES]]
