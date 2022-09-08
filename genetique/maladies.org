@@ -1627,11 +1627,25 @@ Garçons !
 - Tumeurs \approx 3% (tératome, neuroblastome)
   [[file:img/syndrome-sotos.png]]
 * Syndrome de Sturge-Weber-Krabbe
-Association
-- angiome plan cutanée zone innervée par le trijumeau
-- glaucome congénital
-- angiome méningé de la pie-mère +/- épilepsie, retard psychomot
+Forme complète
+1. *Angiome plan (AP) facial (malformation capillaire)* :
+Présent dès la naissance avec plusieurs types d’atteinte : fronto-palpébrale, jugale ou malaire,
+maxillaire.
+
+2. *Malformation veineuse leptoméningée* : responsable, d’une comitialité (crises partielles),
+d’un déficit moteur de l’hémicorps opposé et d’un retard des acquisitions.
+Si l’atteinte cérébrale est bilatérale, l’épilepsie peut être incontrôlable avec un risque létal.
+Le pronostic dépend surtout de la répétition et de l’importance des crises d’épilepsie
+apparaissant souvent dès la première année de vie, et pouvant provoquer des paralysies
+(hémiparésie ou hémiplégie) et un déficit intellectuel (de léger à sévère).
+
+3. Hyperpression veineuse intra-orbitaire se manifestant par une atteinte *oculaire* :
+A minima, dilatation des vaisseaux épiscléraux et typiquement glaucome (congénital, infantile,
+juvénile ou adulte) et/ou un épaississement de la choroïde (« angiome choroïdien »).
+Le glaucome s’exprime différemment en fonction de l’âge :
+
 Recherche de glaucome et IRM cérébrale si angiome plan
+
 * Syndrome de Temple
 ** Clinique
 Celle du Silver-Russel
