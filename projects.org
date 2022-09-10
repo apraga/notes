@@ -1663,7 +1663,8 @@ SCHEDULED: <2022-08-19 Fri>
 - squeue ne fonctionne pas
 - nextflow finit par quitter alors que le job tourne
 Issue soumis sur github: https://github.com/nextflow-io/nextflow/issues/1644
-Fonctionne avec la version du module 22.04.0
+Seule la version Nix ne fonctionne pas alors que c’est le même executable... !!
+
 ****** TODO Utiliser nf-core plutôt que nos fonction
 **** DONE Dépendences
 CLOSED: [2022-09-10 Sat 12:41]
@@ -1976,38 +1977,43 @@ SCHEDULED: <2022-07-31 Sun>
 *** TODO Fiche 208
 *** TODO Fiche 209
 ** TODO Biologie chimie Dunod
-** TODO DES [1/4]
-*** TODO Presentiel session 1 [5/9]
-**** DONE Introduction à la dysmorphologie
-**** DONE Structuration du génome et mécanismes mutationnels
-**** DONE Oncogénétique: introduction
-**** TODO Diagnostic prénatal
-**** DONE Grandes technologies et bioinformatique
-**** DONE Aspects réglementaires et éthiques
-**** TODO Mucoviscidose
-**** TODO Bases sur le conseil génétique
-**** TODO SEPI et TD
-*** DONE E-learning session 1 [6/6]
-**** DONE maladies endocriniennes et métabolisme
-**** DONE anomalies de la croissance
-**** DONE hématologie
-**** DONE maladies du tissu conjonctif
-**** DONE Oncogénétique
-**** DONE dermatogénétique
-*** TODO Presentiel session 2 [0/5]
-**** TODO Déficience intellectuelle
-**** TODO Génétique clinique et formelle
-**** TODO Pathologies fréquentes en génétique clinique
-**** TODO Génome humain : normal et pathologique
-**** TODO Maladies métaboliques
-*** TODO E-learning session 2 [5/6]
-**** DONE Infertilité
+** TODO DES [0/4]
+*** TODO Valider cours sur sides
+*** TODO Vérifier que toutes les diapos sont sur one drive
+*** TODO Examen sur sides
+*** TODO Lire les cours
+**** TODO Presentiel session 1 [6/9]
+***** DONE Introduction à la dysmorphologie
+***** DONE Structuration du génome et mécanismes mutationnels
+***** DONE Oncogénétique: introduction
+***** TODO Diagnostic prénatal
+***** DONE Grandes technologies et bioinformatique
+***** DONE Aspects réglementaires et éthiques
+***** DONE Mucoviscidose
+CLOSED: [2022-09-10 Sat 18:34]
+***** TODO Bases sur le conseil génétique
+***** TODO SEPI et TD
+**** DONE E-learning session 1 [6/6]
+***** DONE maladies endocriniennes et métabolisme
+***** DONE anomalies de la croissance
+***** DONE hématologie
+***** DONE maladies du tissu conjonctif
+***** DONE Oncogénétique
+***** DONE dermatogénétique
+**** TODO Presentiel session 2 [0/5]
+***** TODO Déficience intellectuelle
+***** TODO Génétique clinique et formelle
+***** TODO Pathologies fréquentes en génétique clinique
+***** TODO Génome humain : normal et pathologique
+***** TODO Maladies métaboliques
+**** TODO E-learning session 2 [5/6]
+***** DONE Infertilité
 -> cours 1, diapo 31
-**** DONE Syndromes microdélétionnels
-**** DONE Dysgonosomies
-**** DONE Cancer du colon: Maladie de Lynch et CMMRD
-**** DONE Déficience intellectuelle
-**** TODO Pathologies neuromusculaires
+***** DONE Syndromes microdélétionnels
+***** DONE Dysgonosomies
+***** DONE Cancer du colon: Maladie de Lynch et CMMRD
+***** DONE Déficience intellectuelle
+***** TODO Pathologies neuromusculaires
 ** TODO DIU dysmorpho
 :PROPERTIES:
 :CATEGORY: dysmorpho
