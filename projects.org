@@ -1622,9 +1622,6 @@ Plus facile, à faire avant Elements... ?
   - [ ] Supprimé du code
   - [ ] Rajouter boucle sur plusieurs fichiers
 
-*** TODO Rendre le workflow compatible avec Nix
-**** DONE Nix pour les dépendences
-**** DONE Nix pour télécharger les données brutes
 *** Biblio
 Comparaison WDL, Cromwell, nextflow
 https://www.nature.com/articles/s41598-021-99288-8
@@ -1641,6 +1638,10 @@ pour le fasta, 2 solutions
   On utilise la version chromosome donc on annote dbSNP (à faire)
 **** Performances
 Ordinateur de Carine (WSL2) : 4h dont 1h15 alignement (parallélisé) et 1h15 haplotypecaller (séquentiel)
+**** Pipelines prêt-à-l’emploi nextflow
+Problème : nécessite singularity ou docker (ou conda)
+Potentiellement utilisable avec nix...
+
 *** Nouveau workflow
 **** Bases de données
 ***** KILL Nix pour télécharger les données brutes
@@ -1657,7 +1658,15 @@ SCHEDULED: <2022-08-19 Fri>
 ***** TODO Télécharger les données avec nextflow
 ***** STRT Télécharger les données avec makefile
 ****** TODO MD5sum
-**** Dépendences
+***** TODO Processing bases de données
+****** TODO Problème de scheduling Slurm sur helios :
+- squeue ne fonctionne pas
+- nextflow finit par quitter alors que le job tourne
+Issue soumis sur github: https://github.com/nextflow-io/nextflow/issues/1644
+Fonctionne avec la version du module 22.04.0
+****** TODO Utiliser nf-core plutôt que nos fonction
+**** DONE Dépendences
+CLOSED: [2022-09-10 Sat 12:41]
 ***** DONE Nix pour les dépendences
 **** Exécution
 ***** KILL test Bionix
@@ -1667,13 +1676,6 @@ pour un exemple.
 Probablement plus simple d’utiliser Nix pour gestion de l’environnement et snakemake pour l’exécution
 Pas d’accès internet depuis le cluster
 ***** TODO nextflow
-****** TODO Processing bases de données
-******* KILL SGE: sur ancien cluster donc plus d’actualité
-******* TODO Slurm sur Helios
-******** TODO Problème de scheduling :
-- squeue ne fonctionne pas
-- nextflow finit par quitter alors que le job tourne
-Issue soumis sur github: https://github.com/nextflow-io/nextflow/issues/1644
 *** Améliorer le workflow
 **** TODO Utilise une versionn allégée de GnomAD (une seule colonne)
 *** TODO Tests
@@ -1701,11 +1703,13 @@ Voir https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-044
 **** TODO GATK
 https://broadinstitute.github.io/warp/docs/Pipelines/Exome_Germline_Single_Sample_Pipeline/README
 A priori, respecte les bonnes pratiques
-**** DONE Essayer snamke avec bonne pratiques
+**** KILL Essayer snamke avec bonne pratiques
 https://github.com/snakemake-workflows/dna-seq-gatk-variant-calling/blob/main/.github/workflows/main.yml
 Installer Mamba (micromamba ne fonctionne pas sous nix)
 Ne fonctionne pas sous WSL2... MultiQC n’est pas assez à jour
 Problèmes de versions...
+**** TODO Les pipeline de nf-core:
+***** Sarek
 * Banque :banque:
 ** TODO Compte et CB société générale :banque:
 *** KILL Envoyer relevé
