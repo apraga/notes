@@ -260,7 +260,6 @@ for i in p.index:
 #+end_src
 
 **** TODO Fusionner les tsv pour Paul
-***** Exome
 #+begin_src python :results output
 import pandas as pd
 from pathlib import Path
@@ -275,6 +274,13 @@ def readExome(root):
            'date_reception',
            'resultat', 'incidental', 'commentaires', 'runComments']]
     return e
+
+def readPanel(root):
+    d = pd.read_csv(root /
+                    "MiSeq coverage_2022-02-02_12-31-54.tsv",
+                    sep= "\t")
+    # Clean up data first
+    return d[['patientID', 'specimenID', 'target']]
 
 def readDNA(root):
     dna= pd.read_csv(root /
@@ -312,6 +318,7 @@ def cleanExome(d):
     d['gene_responsable'].replace("None", "", inplace=True)
     return d
 
+
 def getExome(root, dna, p):
     # Merge exome and sample
     e = readExome(root)
@@ -324,29 +331,50 @@ def getExome(root, dna, p):
     d2 = cleanExome(d2)
     d2.to_excel(root / "exome dijons.xlsx")
 
+def readReports(root):
+    d = pd.read_csv(root    /
+                    "Compte-rendus_2022-02-02_12-37-37.tsv",
+                    sep= "\t")
+    # Clean up data first
+    return d[['patientID', 'sampleID',
+              'examen', 'resultat',  'interpretation', 'signataire', 'date_rendu']]
+
+def cleanPanel(d):
+    cols = ['nom', 'prenom', 'date_de_naissance',
+        'sexe', 'parente', 'statut',
+        'clinicien_referent', 'clinicien_referentinstitution', 'pathologie',
+        'gene',
+        'sampleIDdate_de_reception', 'sampleIDorigine_de_l_echantillon',
+        'target',
+        'examen', 'resultat', 'signataire', 'date_rendu',
+        'commentaires', 'commentairespatient']
+    d = d[cols].rename(columns = {"gene": "gene_responsable"})
+    # Remove none
+    d['gene_responsable'].replace("None", "", inplace=True)
+    return d
+
+
 def getPanel(root, dna, p):
-    # Merge exome and sample
-    e = readExome(root)
-    d = dna.set_index("sampleID").join(e.set_index("specimenID"),
+    # Merge panel and sample
+    r = readPanel(root)
+    d = dna.set_index("sampleID").join(r.set_index("specimenID"),
                                     how="inner",
-                                    lsuffix="dna", rsuffix="exome")
+                                    lsuffix="dna", rsuffix="panel")
     d2 = d.set_index('patientIDdna').join(p.set_index("patientID"),
-                                        how="inner")
+                                        how="inner", lsuffix="patient")
+    rep = readReports(root)
+    d3 = d2.join(rep.set_index("patientID"), how="inner", lsuffix="cr")
     # Reorder columns
-    d2 = cleanExome(d2)
-    d2.to_excel(root / "exome dijons.xlsx")
+    d3 = cleanPanel(d3)
+    d3.to_excel(root / "panel dijon.xlsx")
 
 
-root = Path("/mnt/c/Users/apraga/Documents/mustard")
+root = Path("/mnt/c/Users/alexi/Documents/mustard")
 dna = readDNA(root)
 p = readPatients(root)
 
 # getExome(root, dna, p)
 getPanel(root, dna, p)
-# panel = pd.read_csv(root / "MiSeq coverage_2022-02-02_12-31-54.tsv",
-#                     sep = "\t")
-# panel = panel[[]]
-# print(panel.columns)
 #+end_src
 
 #+RESULTS:
@@ -373,10 +401,10 @@ d2 = d[cols].rename(columns = {
 print(d2.columns)
 # Does not work
 # d2.applymap(lambda x: "" if str(x) == "Non renseigné" else x)
-
-
 #+end_src
-***** Panel
+
+#+RESULTS:
+
 *** Données
 **** DONE Import Labkey
 **** TODO Clinique, OCR et nettoyage données labkey [13/1199]
