@@ -165,7 +165,9 @@ https://www.nature.com/articles/labinvest2016142
 **** TODO Trouver autres cas ?
 ***** TODO Appel ANDDI rares
 ***** TODO Appel ITACA
-**** WAIT Avis Paul sur arguments
+**** TODO Plan de l’article
+**** DONE Avis Paul sur arguments
+CLOSED: [2022-09-11 Sun 22:03]
 Envoyé <2022-08-09 Tue>
 **** DONE Accord Domiinque VIAUD
 Mail envoyé par Juliette
@@ -2120,13 +2122,14 @@ SCHEDULED: <2022-08-04 Thu>
 ** TODO Copier photos famille depuis drive yvain sur drive famille
 SCHEDULED: <2022-07-30 Sat>
 * Nix
-** WAIT Nixpkg for GATK
-*** WAIT Binaire
-SCHEDULED: <2022-08-10 Wed>
+** DONE Nixpkg for GATK
+CLOSED: [2022-09-11 Sun 22:05]
+*** DONE Binaire
+CLOSED: [2022-09-10 Sat 23:53] SCHEDULED: <2022-08-10 Wed>
 /Entered on/ [2022-08-09 Tue 10:57]
 PR submitted
-*** KILL Compilé depuis le source
-Cf branche gatk-src sur fork : manque un plugin pour Gradle...
+*** KILL Corriger code pour utiliser source
+CLOSED: [2022-09-11 Sun 22:05]
 ** DONE Nix pkg for BioPerl
 SCHEDULED: <2022-08-10 Wed>
 /Entered on/ [2022-08-09 Tue 10:57]
@@ -2147,9 +2150,12 @@ SCHEDULED: <2022-08-10 Wed>
 ** Mazda 5
 *** Notes
 - Plaquettes : arrière gauche ok (50%) le <2022-09-03 Sat>
-*** TODO Changer pneus avant
-SCHEDULED: <2022-09-03 Sat>
+*** DONE Changer pneus avant
+CLOSED: [2022-09-11 Sun 22:05] SCHEDULED: <2022-09-03 Sat>
 Trop abimé pour prendre le risque, on changera les arrières plus tard
+*** TODO Changer courrie distribution
+SCHEDULED: <2023-05-11 Thu>
+À faire au bout de 10ans, on attend l’an prochain
 * Moto
 ** TODO Changer kit chaine
 SCHEDULED: <2022-09-05 Mon>
