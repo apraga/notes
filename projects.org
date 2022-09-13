@@ -166,6 +166,9 @@ https://www.nature.com/articles/labinvest2016142
 ***** TODO Appel ANDDI rares
 ***** TODO Appel ITACA
 **** TODO Plan de l’article
+DEADLINE: <2022-09-17 Sat>
+**** TODO Abstract club génétique de l’est
+DEADLINE: <2022-09-15 Thu> SCHEDULED: <2022-09-13 Tue>
 **** DONE Avis Paul sur arguments
 CLOSED: [2022-09-11 Sun 22:03]
 Envoyé <2022-08-09 Tue>
