@@ -5454,3 +5454,9 @@ kick front, reverse x10
 backflip x10
 aerial bkick x10
 bkick x10
+
+* <2022-09-12 Mon> Tricking
+kick front, reverse x10
+backflip x10
+tornado kick x10
+raiz x10

@@ -216,8 +216,6 @@ for (k, f) in enumerate(p.glob("courrier*.pdf")):
 rmFiles(p.glob(f"courrier*.png"))
 #+end_src
 
-#+RESULTS:
-
 **** Renommer les dossiers PED
 #+begin_src python :results output
 import pandas as pd
@@ -259,14 +257,6 @@ for i in p.index:
             f.write(split[0] + ";" + p.nom[i].upper() + ";" + p.prenom[i] + ";" + p.date_de_naissance[i] + "\n")
 #+end_src
 
-**** TODO Fusionner les tsv pour Paul
-***** TODO Exomes
-****** TODO Enlever les doublons
-***** DONE Panel
-CLOSED: [2022-09-12 Mon 22:44]
-****** DONE Enlever les doublons
-CLOSED: [2022-09-12 Mon 22:44]
-***** TODO Variations à vérifier
 *** Données
 **** DONE Import Labkey
 **** TODO Clinique, OCR et nettoyage données labkey [13/1199]
@@ -1475,10 +1465,12 @@ CLOSED: [2022-08-01 Mon 09:44]
 ***** TODO PED9559
 ***** TODO PED9740
 
-
-**** DONE Fusionner exome dijon format CSV
+**** DONE Fusionner exome dijon pour Paul
 CLOSED: [2022-08-04 Thu 17:42]
-**** DONE Fusionner panels dijon format CSV
+***** DONE Enlever les doublons
+CLOSED: [2022-09-13 Tue 21:36]
+**** DONE Fusionner panel Dijons
+**** TODO Fusionn variants à vérifier de dijon
 **** KILL Dxcare
 ***** DONE Demande Dijon
 ***** KILL Demande DPO Besançon
@@ -1486,7 +1478,6 @@ CLOSED: [2022-08-04 Thu 17:42]
 **CLOSED: [2022-05-05 jeu. 17:53]
 ****** TODO Format de données final
 Voir avec Paul
-**** TODO Fusionner avec donnée Paul 
 *** Stockage
 **** DONE Accès scality au travail
 **** WAIT VPN pour Jehanne
@@ -1547,7 +1538,8 @@ SCHEDULED: <2022-08-19 Fri>
 ***** DONE Télécharger
 - [ ] Refseq 20G
 - [ ] VEP 20G
-***** TODO Télécharger les données avec nextflow
+***** DONE Télécharger les données avec nextflow
+CLOSED: [2022-09-13 Tue 21:37]
 ***** STRT Télécharger les données avec makefile
 ****** TODO MD5sum
 ***** TODO Processing bases de données
@@ -1561,14 +1553,25 @@ Seule la version Nix ne fonctionne pas alors que c’est le même executable... 
 **** DONE Dépendences
 CLOSED: [2022-09-10 Sat 12:41]
 ***** DONE Nix pour les dépendences
-**** Exécution
+**** DONE Exécution
+CLOSED: [2022-09-13 Tue 21:37]
 ***** KILL test Bionix
 ***** KILL Implémenter execution avec Nix ?
 Voir https://academic.oup.com/gigascience/article/9/11/giaa121/5987272?login=false
 pour un exemple.
 Probablement plus simple d’utiliser Nix pour gestion de l’environnement et snakemake pour l’exécution
 Pas d’accès internet depuis le cluster
-***** TODO nextflow
+***** DONE nextflow
+CLOSED: [2022-09-13 Tue 21:37]
+**** TODO Preprocessing avec nextflow
+***** TODO Map to reference
+***** TODO Mark duplicate
+***** TODO Recalibrate base quality score
+**** TODO Variant calling avec Netxflow
+***** TODO Haplotype caller
+***** TODO Filter variants
+***** TODO Refine genotype
+**** TODO Annotation avec Netxflow
 *** Améliorer le workflow
 **** TODO Utilise une versionn allégée de GnomAD (une seule colonne)
 *** TODO Tests
