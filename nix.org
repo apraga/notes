@@ -165,6 +165,18 @@ nix.package = (import <nixos-unstable-small> {}).nix
       })
       ] ;
 #+end_src
+** Nix profile
+(Il faut choisir entre nix profile et nix-env !)
+Cherche un programme, l’installer
+Installer un programme
+#+begin_src sh
+nix profile search nixpkgs#zoxide
+nix profile install nixpkgs#zoxide
+#+end_src
+Tout supprmier
+#+begin_src sh
+nix profile remove '.*'
+#+end_src
 * Nixpkgs
 ** Ajoutr un nouveau paquet
 https://nixos.wiki/wiki/Nixpkgs/Contributing
