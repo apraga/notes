@@ -407,7 +407,6 @@ Surexpression :[[file:maladies.org::*Syndrome de Potocki-Lupski][Syndrome de Pot
 Délétion : [[file:maladies.org::*Syndrome de Williams-Burren][Syndrome de Williams-Burren]]
 Dup [[file:maladies.org::*Microduplication 7q11.23][Microduplication 7q11.23]]
 
-
 * Variants d’épissage
 Si site canonique : -1 ou -2 en accpteur, +1 ou +2 en donner -> patho
 Sinon, utiliser Spip et SpliceAI. Proposition d’algorithme par ACNMG
@@ -420,6 +419,34 @@ NB: interprétation graphique sur mobidetails de spliceAI : montre la "force"
 * Score bioinfo
 ** Gène
 *** pLI et o/e
+* Design d’amorce
+1. Variant sur UCS
+   - puis "v d" et choisir 500 autour
+   - Extended DNA Case/Color Options: "underline" pour repeate masker et "toggle case" pour gènes UCSC
+2. Amplifix
+   - copier séquences
+   - Ne pas prendre des amorces > 21 bp pour éviter des températures trop élevées
+   - Chercher de 1-450 (sens) 550-1000 pour commencer
+   - Ne pas prendre un amplicon de plus de 700 (max 750 !!)
+   - Longueurs 19-21
+3. Vérification
+   - [[https://genetools.org/SNPCheck/snpcheck.htm][dbSNP]]
+   - [[https://www.ncbi.nlm.nih.gov/tools/primer-blast/primertool.cgi][Primer-BLast]]: mettre forward et revers + choisir génome
+   - [[https://genome-euro.ucsc.edu/cgi-bin/hgPcr][PCR in silico]]
+   - calculer la température
+** Notes
+NB: sur UCSC, "tools->blat" pour vérifier la séquence d’ADN
+
+Sur les amorces, majuscules pour exon, minuscules intron
+** Attention
+- longueur grand max 750bp
+- si taux GC >= 65, il faut une polymérase spécifique avec un calcul de Tm différent
+  -> https://tmcalculator.neb.com/#!/main et oneTaq
+- Δt <= 6% sur le Tm calculé !
+** Astuces
+- In silico PCR: plusieurs résultats possibles sur l’X -> prendre HG38 (car correctif)
+- Si difficile de prendre l’exon, dans amplifix prendre la borne de l’exon et chercher une amorce à partir de cette borne + 5bp. En baissant un peu la qualité
+
 * Footnotes
 
 [fn:1] C<->T ou A <-> G

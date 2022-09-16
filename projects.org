@@ -1484,6 +1484,15 @@ Voir avec Paul
 *** Stockage
 **** DONE Accès scality au travail
 **** WAIT VPN pour Jehanne
+*** Notes
+- Sur phénotype mélanocytaire, il peut valoir le coup de faire de la CGH sur biopsie
+  Inconvénient du panel : on passe à côté
+  Inconvénient de l’exome : faible profondeur
+  En général, pas d’ADN suffisant pour les 3 !
+- Idée de pipeline : CNV (mais il faut les références)
+- 2 approches : exome direct ou CGH + panel
+- Exome envoyé à integragen (ou CNR): problème = perte de financement car plus de centre de référence à Dijon
+  envoi dans le privé compliqué vu le coût...
 ** Apprendre le machine learning
 :PROPERTIES:
 :CATEGORY: machine learning
