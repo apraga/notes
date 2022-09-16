@@ -2027,14 +2027,16 @@ SCHEDULED: <2022-08-04 Thu>
 ** TODO Copier photos famille depuis drive yvain sur drive famille
 SCHEDULED: <2022-07-30 Sat>
 * Nix
-** DONE Nixpkg for GATK
-CLOSED: [2022-09-11 Sun 22:05]
+** TODO Nixpkg for GATK
 *** DONE Binaire
 CLOSED: [2022-09-10 Sat 23:53] SCHEDULED: <2022-08-10 Wed>
 /Entered on/ [2022-08-09 Tue 10:57]
 PR submitted
 *** KILL Corriger code pour utiliser source
 CLOSED: [2022-09-11 Sun 22:05]
+*** WAIT Jar directement, version locale
+*** TODO Jar mais avec le choix d’installer la version local ou spark.
+** TODO Nextflow, version script seule
 ** DONE Nix pkg for BioPerl
 SCHEDULED: <2022-08-10 Wed>
 /Entered on/ [2022-08-09 Tue 10:57]
