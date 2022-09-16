@@ -180,5 +180,13 @@ nix profile remove '.*'
 * Nixpkgs
 ** Ajoutr un nouveau paquet
 https://nixos.wiki/wiki/Nixpkgs/Contributing
+Tester dans nixpkgs qu’il compiler
+#+begin_src sh
+nix-shell -A mypackage
+#+end_src
+Tester les dépendenances
+#+begin_src sh
+nix-shell -p nixpkgs-review --run "nixpkgs-review rev HEAD"
+#+end_src
 * Avertissements
 Ne jamais modifier les fichiers dans /nix/store
