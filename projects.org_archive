@@ -1067,3 +1067,18 @@ Sinon, enlevé <assert.h>
 :ARCHIVE_CATEGORY: recherche
 :ARCHIVE_TODO: KILL
 :END:
+
+* KILL Problèmes rencontrés à l’install
+CLOSED: [2022-09-19 Mon 22:37]
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-09-19 Mon 22:37
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Recherche/Pipeline exome
+:ARCHIVE_CATEGORY: recherche
+:ARCHIVE_TODO: KILL
+:END:
+- [X] Dossier de log non créé
+- [ ] Pourquoi avoir ne pas simplement utiliser list_of_fastq.txt directement ?
+  - [ ] Supprimé du code
+  - [ ] Rajouter boucle sur plusieurs fichiers
+

@@ -1511,12 +1511,6 @@ Plus facile, à faire avant Elements... ?
 **** https://www.fast.ai/
 
 ** Pipeline exome
-*** TODO Problèmes rencontrés à l’install
-- [X] Dossier de log non créé
-- [ ] Pourquoi avoir ne pas simplement utiliser list_of_fastq.txt directement ?
-  - [ ] Supprimé du code
-  - [ ] Rajouter boucle sur plusieurs fichiers
-
 *** Biblio
 Comparaison WDL, Cromwell, nextflow
 https://www.nature.com/articles/s41598-021-99288-8
@@ -1586,6 +1580,10 @@ CLOSED: [2022-09-13 Tue 21:37]
 **** TODO Annotation avec Netxflow
 *** Améliorer le workflow
 **** TODO Utilise une versionn allégée de GnomAD (une seule colonne)
+**** KILL Utiliser 1000 genome pour known_snp ?
+CLOSED: [2022-09-19 Mon 22:37]
+Apparement, déjà dans dbSNP
+https://www.internationalgenome.org/category/dbsnp/
 *** TODO Tests
 **** TODO Test de non régression
 **** TODO Genome in a bottle
@@ -2034,8 +2032,8 @@ CLOSED: [2022-09-10 Sat 23:53] SCHEDULED: <2022-08-10 Wed>
 PR submitted
 *** KILL Corriger code pour utiliser source
 CLOSED: [2022-09-11 Sun 22:05]
-*** WAIT Jar directement, version locale
-*** TODO Jar mais avec le choix d’installer la version local ou spark.
+*** WAIT Corriger PATH pour include java et python
+https://github.com/NixOS/nixpkgs/pull/191548
 ** TODO Nextflow, version script seule
 ** DONE Nix pkg for BioPerl
 SCHEDULED: <2022-08-10 Wed>
