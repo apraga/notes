@@ -1,16 +1,17 @@
 #+title: Biologie
-* Structure et régulation du génome
-** Chromatine
+* Génome
+** Structure et régulation du génome
+*** Chromatine
 = ADN + protéines
 Structure = plusieurs nucléosome, où 1 nucléosome = enroulement d’ADN autour de protéines appelées histones
 Peut ḙtre dans un état très compact (hétérochromatine) ou plus espacé (euchromatine)
 [[./img/chromatine.png]]
 - euchromatine = riche en gène, transcription active
 - hétérochromatine = pauvre en gène, pas de transcription
-** 1D Régulation de l’accès à la chromatine
+*** 1D Régulation de l’accès à la chromatine
 Donne l’accès à l’ADN pour complexes de protéines
 Nécessaire pour transcription, réplication, recombinaison, réparation de l’ADN
-*** Méthylation ADN
+**** Méthylation ADN
 Répression transcription
 Mécanisme: ajout de groupes méthyl à l’ADN -> modifie l’activié sans changer la séquence
 Au niveau du promoteur, réprime la transcripton
@@ -18,10 +19,10 @@ Utilisé par
 - inactivation X
 - empreinte parentale
 - régulation gènes
-*** Modification post-traductionnelles des histones
+**** Modification post-traductionnelles des histones
 Voir [[*Modification queues histones][Modification queues histones]]
-*** Échanges histones
-** 2D boucles chromatiniennes
+**** Échanges histones
+*** 2D boucles chromatiniennes
 Interaction régions régulatrice, facteur de transcription, promoteur
 [[./img/boucle-chromatine.png]]
 En /cis/:
@@ -30,27 +31,27 @@ En /cis/:
   Jusqu’à 1Mb !
 - silencer : cible le silencer -> inhibe transcription
 - insulateur : isole unité régulatrice
-** 3D: TAD
+*** 3D: TAD
 Domaine au sein duquel s’exerce les régulation
 [[./img/tad.png]]
-** 4D
+*** 4D
 Organisation de la chromatine en territoires dans le noyau
 Transcription = en périphérie du territoire
 
   file:img/noyau-expression.png
-** Techniques d’études
+*** Techniques d’études
 - DNase-seq: montre régions où chromatine est décondensée
 - CHIP-seq = modification des histones, sites de fixation
 - FISH-D3: interaction chromatiniennes sur un locus spécifique
-** Exemple de pathologies
+*** Exemple de pathologies
 Méthylation: [[file:maladies.org::*Syndrome ICF][Syndrome ICF]]
 Modification post-traductionnelle des histones [[file:maladies.org::*Syndrome de Weaver][Syndrome de Weaver]], [[file:maladies.org::*Syndrome de Kabuki][Syndrome de Kabuki]]
 Complexe SWI/SNF (remodèle la chromatine) : [[file:maladies.org::*Syndrome de Coffin-Siris][Syndrome de Coffin-Siris]]
 Médiator (recruté dans l’activation) [[file:maladies.org::*FG syndrome][FG syndrome]]
 Cohésinopathies[[file:maladies.org::*Syndrome de Roberts][Syndrome de Roberts]] , Cornelia ,
 [[file:maladies.org::*Syndrome de Rubinstein-Taybi][Syndrome de Rubinstein-Taybi]]
-* Inactivation de l’X
-** Général
+** Inactivation de l’X
+*** Général
 2 formes inactivation :
 - soumise à empreinte (marsupiaux)
 - non soumise à empreinte (Homme)
@@ -59,13 +60,13 @@ Homme : mosaïcisme cellulaire chez la femme par inactivation au hasard de l’X
 - précocément embryogénèse
 - une fois le choix fait dans une cellule, toutes les cellules qui en découleront aurant le même profil
 - mécanisme réversible pendant la gamétogenèse
-** Procédure
+*** Procédure
 Centre d’inactivation de l’X (XIC)
 1. Comptâge du nombre de X (via XIC) et Choix du X inactivé
 2. 2 copies de XIC : suffit pour initiat inaction X
 3. Propagation de l’ARN Xist jusqu’à recouvre tout l’X inactif
 4. Stabilisation et maintien de l’X inactif avec des marques épigénétiques
-** Gène /XIST/
+*** Gène /XIST/
 - Exprimé par X inactif
 - Initiateur principale de l’inactivation
 - Peut inactiver n’importe quel chromosome !
@@ -77,7 +78,7 @@ Centre d’inactivation de l’X (XIC)
 
   Gènes relocalisés dans ce compartiment, sauf ceux qui y échappent :
 [[file:img/inactivation-X.png]]
-** Échappement
+*** Échappement
 - ~15% des gènes (100)
   - certains ont un expression compltent
 - 10% ont un profil d’expression variable entre les femmes
@@ -86,10 +87,10 @@ Centre d’inactivation de l’X (XIC)
   Ils sont sur les extrémités distale (en p pour PAR1 et en q pour PAR2)
 
   PAR1 contient /SHOX/ : l’haploinsufisance = petite taille, Turner
-** Visualisation
+*** Visualisation
 = Corpuscule de Bar sur la face interne de l’enveloppe nucléaire
-** Biais d’inactivation
-*** Techniques
+*** Biais d’inactivation
+**** Techniques
 - cyto: réplication tardive de l’X inactif -> on peut les marquer (en fin de cycle) et dégrader les chromosome -> apparaît pâle
 - moléculaire : région polymorphique (spécifique inactif) méthylée sur X inactif
   X méthylé -> enzyme de restriction ne peut pas le couper -> seul l’X actif sera amplifié
@@ -98,26 +99,26 @@ Centre d’inactivation de l’X (XIC)
   - inactivation -> 1 seul pic car l’X paternel sera inactif)
   - si 80/20: 1 grand pic et 1 petit
 
-** Pathologies associées
+*** Pathologies associées
 Primaire = variant /XIST/
 - inactivation biaisée depuis le début
 Secondaire = variant gène X ou remaniement chormo, soit physiologique ()
 - le plus courant : initialement inactivation aléatoire -> les cellules ayant choisi l’X inactif ne vont pas réussir à proliféer
-*** Secondaire : variant
+**** Secondaire : variant
 Cf tableau de Migeon, Genetics in medecine 2020 pour les pathologies
-*** Secondaire : chromosomique
-**** Remaniement chromosomique déséquilibré
+**** Secondaire : chromosomique
+***** Remaniement chromosomique déséquilibré
 X remanié inacif -> Turner si anneau, deletion X, isochrosomose X
 Phénotype normal si duplication sur X et inactive X dupliqué
 [[file:img/inactivation-x-desequilibre.png]]
 
 Transloc X-autosome déséquilibrée : X remanié est le plus souvent inactif
-**** Transloc X-autosome équilibré
+***** Transloc X-autosome équilibré
 on transmet soit chr normal soit équiilbré
 X remanié est le plus souvent inactif
 
 Mais phénotype normal, parfois FCS récurrente, dysfonctionnemet gonadique, peut forcer expression d’une maladie récessive liée à l’X
-**** Disomie functionelle
+***** Disomie functionelle
 Expression en doses excessives des gènes de l’X
 
 - Transloc autosomoe équilibré :
@@ -132,14 +133,14 @@ Expression en doses excessives des gènes de l’X
 - Duplication X
   - Garçon : pas le choix, inactivé X
   - fille : phénotype anormal si inactive X normal -> comme le garçon, souvent en mosaïque
-* Variant
-** Substitutions nucléotidiques
+** Variant
+*** Substitutions nucléotidiques
 Transitions  = A <-> G ou C <-> T
 Transversion = les autres (base purique  [A, G]<-> base pyrimidique [C, T])
 
 Ti/Tv \approx 2 dans génome
-** Nature
-*** Exons
+*** Nature
+**** Exons
 Substitution :
 - silencieuse
 - faux-sens
@@ -147,7 +148,7 @@ Substitution :
 Délétion : frameshift/inframe
 Insertion : frameshift/inframe
 Délétion/Insertion : frameshift/inframe
-*** Intron
+**** Intron
 [[./img/epissage.png]]
 
 A. Altération du site donneur/récepteur -> probable saut d’exon
@@ -161,26 +162,26 @@ D. mutation exonique créant un nouveau site d’épissage -> perte partie d’e
 D. mutation exonique affectant un exon splicing enhancer ou exonic splicing silecter -> saut d’exon le plus souvent
 
 NB: deletion prenant tout l’exon: regarder la fin de l’exon précédent et du suivant pour voir si on peut être en phase. Si oui, il est possible qu’il n’y ait qu’un saut d’exon (mais cela doit être prouvé par du fonctionnel)
-*** Transcription
+**** Transcription
 [[./img/transcription.png]]
-** Conséquence
-*** Perte de fonction
+*** Conséquence
+**** Perte de fonction
 - allèle amorphe /nulle : produit du gène absent ou inactif
 - allèle hypomorphe: produit moins actif ou en quantité plus faible
 Maladies récessives !
 Haplo-insuffisance si perte de fonction hétérozygote
 Ex: α-thalassémie
-*** Gain de fonction
+**** Gain de fonction
 - allèle hypermorphe: surexpression du gène ou produit hyperactif
 - allèle néomorphe : nouvelle fonction de la protéine
   Plutôt AD
   Ex: mutation activatrice voie KRAS
-*** Dominant négatif
+**** Dominant négatif
 Le produit a une action antagoniste avec le produit de l’allèle sauvage
 Ex: ostéogenèse imparfaite (modifie chaines α du collagène)
-*** Dépend de la localisation
+**** Dépend de la localisation
 Régions à forte contrainte = peu tolérant aux variations génétiques
-** Bases de données
+*** Bases de données
 variants classés
 - [[http://www.hgmd.cf.ac.uk/ac/index.php][HGMD : Human Gene Mutation Database]]
 - ClinVar : (https://www.ncbi.nlm.nih.gov/clinvar/)
@@ -189,7 +190,7 @@ variants classés
 - COSMIC (http://cancer.sanger.ac.uk/cosmic)
 - UMD : Universal Mutation Database (http://www.umd.be/)
 - MITOMAP (https://www.mitomap.org/MITOMAP)
-** Impact
+*** Impact
 - Etude des mutations faux-sens (Conservation, structure) :
   - [[http://sift.jcvi.org/www/SIFT_enst_submit.html][ SIFT : Sorting Intolerant From Tolerant ]]
   - [[http://genetics.bwh.harvard.edu/pph2/][ PolyPhenII]] : estime impact sur la protéine
@@ -214,42 +215,44 @@ variants classés
   - [[https://omictools.com/eigen-tool][ Eigen ]]
 
 BP1 BP5BP6
-* Définition
-Pénétriance = nb d’individus malades avec génotyp à risque / nb individus avec génotype à risque
-
-* Épigénétique
+** Définition
+*** Pénétrance
+nb d’individus malades avec génotyp à risque / nb individus avec génotype à risque
+*** Low copy repeat
+1-400kb avec forte homologie (>90%)
+** Épigénétique
 Modification de la chromatine sans modifier l’ADN
 - inactivation X
 - empreinte parentale
 - développement, différenciation cellulaire
 - cancer
-** Mécanismes
-*** Modification queues histones
+*** Mécanismes
+**** Modification queues histones
 Modification interaction ADN-histone + stabilité
 Actiation (acétylation, déméthylation) ou répression (désacétylation, méthylation)
 
 file:img/histone-modification.png
-*** Méthylation ADN
-*** Long ARN non codants
-** Empreinte parentale
+**** Méthylation ADN
+**** Long ARN non codants
+*** Empreinte parentale
 Empreinte = désactive le gène hérité de ce parent (empreinte maternelle = seule l’allèle paternelle s’exprime)
 
 ~ 100 gènes
 Pathologies : Silver-Russell/Beckwith-Wiedeman, Prader-Willy/Angelman, Sd Temple, Sd Kagami, puberté précoce familiale
-*** Mécanisme
+**** Mécanisme
 - Délétion segmentaire : si on supprime l’allèle non soumise à empreinte, pas d’expression du gène
 - Disomie uniparentale :
   - si on a une empreinte maternelle et 2x l’allèle maternelle, pas d’expression du gènes
   - si on a une empreinte paternelle et 2x l’allèle maternelle, surexpression du gènes
 - Anomalie épigénétique : l’empreinte maternelle se transforme en empreinte paternelle -> cf
-** Exemple: IGF
+*** Exemple: IGF
   2 ligands: IGF1 et 2
   2 récepteurs
   - 1 (pour IGF1 et IGF2) = croissance
   - 2 = dégradation IGF1
 
 IGF2 = empreinte maternelle
-*** 11p15
+**** 11p15
 2 domaines
 - télomériques: IGF2, exprimé sur l’allèle paternelle (l’allè maternelle n’a qu’un ARN non codant, H19). Cela se fait via le domaine ICR1
 - centromérique
@@ -259,19 +262,479 @@ IGF2 = empreinte maternelle
 Situation normale = équilibre (maternel = restriction croissance, paternel = croissance)
 - excès de croissance (paternel >> maternel) = Beckwidth-Wiedeman, Kagami
 - défaut de croissane (maternel >> paternel)  = TNDM, Silver-Russel, Temple
-** Effet de position
-*** Variégation
+*** Effet de position
+**** Variégation
 Propagation de l’hétérochromatine sur le gène proche -> silence
 Ex: transloc X-autosome équiibré : le segment de l’X va inactiver le reste du segment autosomique
-*** Gène de fusion
+**** Gène de fusion
 Leucémie myéloide chromique : t(9;22) (q34;q11.2)
 ABL sur 9q34 et BCR sur 22q11 -> protéine de fusion BCR-ABL avec activité tyrosine kinae augmentée
-***  Gain de séquence activatirce
+****  Gain de séquence activatirce
 Lymphome de Burkitt t(8;14)q(24;32)
-*** Atteinte élément régulateur
+**** Atteinte élément régulateur
 - /SOX9/: haplo-insuffasence : [[file:maladies.org::*Dysplasie campomyélique][Dysplasie campomyélique]], syndrome de pierre-robin, anomalie du développement sexuel
 - Aniridie (mutation /PAX6/): cassure à distance
 
-** Effet de position télomérique
+*** Effet de position télomérique
 Silence de gène par propagation hétérochromatine
 ex: syndrome de Pelizaues-Merzbacher : devient asymptomaique
+
+* Cytogénétique
+** Villosités choriales
+contiennent 2 type de tissus
+- extra-embryonnaire cytotrophoblastes et syncytiotropblaste
+- embryonnaire: mésenchyme
+Examen direct : sur cytotrophoblastes -> rapide mais toujours à confirmer par une culture sur mésenchyme
+*** Limites
+XX: possibilité d’une contamination maternelle
+Cytotrophoblastiques : mosaique, pas assez de mitoses, anomale déséquilibrée
+
+Source [[http://www.eaclf.org/docs/GBPcyto/Arbre-caryoVC.pdf][Recos EACLF]]
+** Caryotype
+** TODO Transloc Robertsonien
+** Marqueur NOR
+"Tige" sur les acrocentrique = gènes pour ribosomes
+Si doute sur la tige qui apparaît trop longue, on peut utiliser en FISH le marqueur NOR qui va confirmer que c’est bien une tige.
+Le piège est de le rendre comme polymorphisme alors qu’il s’agit d’une insertion d’un autre chromosome...
+
+NOR car intervient dans le nucléole (maturation des ARN ribosomiques)
+
+Si "tige" longue, on peut supposer que c’est un facteur de risque pour translocation robertsonienne !
+* Moléculaire
+** Principales techniques d’analyse des anormalies génétiques à l’échelle du gène (Collège)
+*** Extraction
+- ADN: tissu frais, congelés (Guthrie, frottis, cheveuxx..). Habituellement : leucocycte du sang sur tube anticoagulant
+- NARN: cellules en culture, tissus à -80 ou tissus frais
+  Phénol/chloroforme = référence
+  Conservation
+  - ADN purifié : 4°
+  - ARN : -80
+    Qualité : éléctrophorèse (2 bandes pour ARN, 1 bande pour ADN)
+*** Enzymes de restriction
+Coupe ADN double brin sur séquences spécifiques
+*** Polymérases
+**** ADN polymérases
+3 types de réactions
+1. construit ADN à partir d’un brin d’ADN +  extrémité 3’OH libre
+2. proofreading (sens inverse)
+3. élimine fragment appariés
+**** ARN dépendantes (transcriptase inverse)
+ARNm -> ADN complétentaire
+*** Électrophorèse
+Aciden nucléique = macromolécule chargées -> migrent dans un champ électrique
+Plus le fragment d’ADN est petit, plus il migre haut
+*** Southern blot
+Étude d’un fragment d’ADN -> semi-quantitatif -> peut mettre en évidence
+- délétions/insertions > 150-300pb
+- inversions
+- cartographies de restrictions
+**** Méthode
+ADN digéré par des enzymes de restrictions
+Fragments séparés par du gel d’agarose
+Ajout sonde spécifique puis lavage pour enlever les séquences non spécifiques
+*** Northern Blot
+Southern Blot mais sur ARN
+Montre
+- absence/diminution ARNm (réarrangements majeurs, mutation promoteur, anomalies transcription/transcrit instable)
+- taille
+- transcrits alternatifs
+*** PCR
+Amplification d’une courte séquence d’ADN pour avoir une grande quantité de matériel nucléique
+[[file:img/pcr.png]]
+**** Méthode
+1. Dénaturation : en chauffant, ADN double brin -> simble brin
+2. Hybridation amorces complémentaires (identifie la région à amplifier)
+3. Polymérisation: avec ADN polymérase ADN dépendantes, on reconstitue ADN double brin
+   On répéte la technique pour avoir $N_0 (1+\epsilon)˰n$ matériel où $\epsilon$ est le rendement
+   Vérification de la qualité par électrophorèse
+**** RT-PCR
+Idem mais pour ARN. Permet
+- transcript anormaux (mutation d’épissage)
+*** Sanger
+
+[[file:img/sanger.png]]
+On part d’un ADN simple brin. Puis synthèse du brin complémentaire mais en remplacant les dNTP par des ddNTP.
+Les ddNTP sont intégrés au hasard et arrḙtent la formation de la chaine.
+On obtient des fragments de différentes tailles, séparés par électrophorèse.
+Les ddNTP sont couplés à des molécules fluorescentes -> chaque bande aura une couleur spécifique du nucléotide
+
+Avantages: séquences plus longues que le NGS (700pb) avec très peu d’erreur
+-> utilisé pour valider résultat
+** SNP-array
+*** Interpretation
+**** Htz/hmz
+on peut regarder la fréquence des allèles B
+normal = 3 bandes (AA -> 0, AB -> 0.5, BB -> 1)
+deletion htz = 0 bandes (plus de B)
+duplication htz = 4 bandes (AA -> 0, AAB -> 1/3, ABB -> 2/3, BBB -> 1)
+perte d’htz avec nombre de copie normale = pas de bande
+**** Nombre de copies
+normal = 2
+** Anomalies génétiques à l’échelle du gène (Collège)
+*** Types :
+**** substitution nucléotidique
+Transitions [fn:1] 2x plus fréquentes que les transversions (l’inverse des transversion). Contre-intuitif car il y a plus de possibilités de transversion.
+  Probablement du à des incorporations erronnées des ADN polymérases et correction plus efficace si transversion
+
+  CpG -> TpG ou CpA surrerprésentées
+**** Petites délétions/insertion
+- Quelques nucléotides.
+- Fréquentes
+- frameshift (non multiple de 3) : codon sto prématuré -> protéine tronquée, la plupart du temps non foncitonnelle
+- sur de courtes répétitions en tandem, probablement par slippages de l’ADN polymérase
+**** Grandes délétion/duplications/inversion
+Du à
+- Répétitions en tandemde 1 à 4 nuclétodie = hotspot de dérapage réplication-> courtes indel
+- Low Copy Repeats = dispersées ou dupliquées en tandem
+  - sur le même bras chromosomique et très similaire -> mésappariement possible par NAHR, échange cromatide soeurs ou intrachromatidienne. Voir [[*NAHR (recombinaison homologue non alléliques)][NAHR (recombinaison homologue non alléliques)]]
+**** Expansion de triplet
+- Neurodégénératif surtout : Xfra, Steinert, Huntington
+- Avec les générations : de plus en plus précoce et clinique augment en gravité (=anticipation)
+-  si > 50 répétition, probablement structure anormales (épinges à chevexu, triple hélice) -> perturbe réplication, favorie dérapage
+**** Rares
+***** Séquences répétées dispersées :
+- courtes (300bp)= Alu (apparetenet SINE = short interspede elements)
+- longue 3-7bk (LINE = long interspede elements)
+Vont être introductie après la rétrotrnascription d’ARN
+Rares mais décrits l’exon/intron
+***** Conversion géniques
+Régions homoligues proches : transert (unilatéral !) des changements nucléotidiques dans gène receveur
+Ex: /CYP21A2/ recoit du pseudogènes /CYP21AP/ des variants perte de fonction -> 25% des cas de déficiton en 21-hydroxylase (hyperplasie congénitale des surrénale)
+NB: les 75% % croissing-over inégaux, échanges entre chromatides soeurs
+**** Réarragements chromosomiques
+- délétion région (phénotype des gènes contigus)
+- Point de cassure dans le gène (très rare)
+- disomie uniparentale : si empreinte, ou révèle patho récessive
+**** Mosaïques
+De novo : 33% des Duchenne, hémophile, 50% des NF1, 90% pour achondroplasie
+
+[[file:img/mosaique1.png]]
+
+[[file:img/mosaique2.png]]
+*** Conséquences
+[[file:img/mutation.png]]
+**** Perte de fonction
+Alléle
+- amorphe/muls = 0 expression de la protéine, ou protéine totalement inactive
+- hypomorphie  = expression partielle ou protéine partiellement inactive
+Retrouvé dans les maladies récessive ou dominantes avec haplo-insuffisance (ex: hypercholéstérolémie familiale : htz = moins sévère que hmz)
+***** Affecte la régulation
+En cis :
+- promoteur : altère un site consensus de liaisons à un facteur de transcription, diminue expression du gène, modifie la structure du promoteur
+- enhancers, silencers : fix facteurs de transcription et activite/inhibe transcription
+- effet de position : le ène est séparé de ses régulateurs ou placé près d’autre rélugateurs (ex: transloc)
+- deletion des Locus Control Region: grande taille, effet très loin (ex: deletion pour β-thalassémie)
+En trans: gènes codants facteurs de trnascription. Le plus souvent létal. Ex : /MECP2/ (sd de Rett) : abolition de la régulation négative
+***** Épissage
+Voir [[file:bio.org::*Intron][la liste des possibilités]]
+exX mutation signal de polyadénylation de /HBA2/ (code α2globine) pour α-thalasémie
+***** Traduction
+- Non-sens, frameshift, codon d’initiation de la traduction -> pas de protéine ou activité fonctionnelle nulle/très réduite en général
+  - conséquence possibe : dégradation ARNm par NMD
+- faux-sens : peut affecter la stabilité, adressage intracellulaire, maturation de la protéine, son assemblage, interfaction avec ligand/protéine
+-  synonyme : déléter dans une minorité (altération épissage)
+
+  NB: défiit G6PD : que des faux sens car la perte totale de fonction est létale
+-  mutation des gones  de la chromatine: ex /EZH2/ dans
+ [[file:maladies.org::*Syndrome de Weaver][Syndrome de Weaver]]
+**** Gain de fonction
+- effet dominant négatif: ex de l’ostégénose impartaite : mutation htz a un effet plus délétère qu’une perte totale de fonction car empèche association de la sous-unité raccourcie aux chaînes normales
+- mutation faux-sens p.Met358Arg (/Pttsburg/) sur α1-antitrypsine -> devient un inhibiteur des facteur de coagulation -> sd hémorragique
+- surexpression: exceptionne en constit (ex: Charcot-Marie-Totthe 1: myélinogenèse anormale), fréquente en oco somatique
+- Modification des propriété fonctionnelles
+  Ex: affinité à l’oxygène diminuée pour l’hémoglobine
+**** Gain et perte = phénotpe différente
+- Ex: /RET/: perte = Hirschprung, gain de fonction = cancer familiaux médullaire de la thyro̤¨,de
+*** Diversité
+- unique : modification fonctionnelle très prècise (protéien, expression du gènes -> drépanocytose, achondroplasie, Huntington, Steinert)
+- prépondérante : point chaud (hémophiliae A, AMS), effet fondateur (thalassémie)
+- hétérogènes
+*** Guide à l’interprétation des variants:
+- Quel impact sur ARN message ?
+- Quel impact sur la protéine ? (utiliser PFAM)
+- Outils d’aides
+  - Franklin
+  - Decipher
+  - Varsome
+- Utiliser algorithme ACMG
+
+Autres critères
+- fréquent chez non atteints
+- effet sur proténie : région/domaine essentiel (polarité/charge acide amine, encombrement stérique) -> score bioinfo
+- conservation interespèces
+- expérience : étude gènes et trnascrite, étude /in vitro/ sur des cellules, /in vivo/
+
+- ségrégation : de novo ou coségrégation = en faveur
+
+Voir [[file:bio.org::*Intron][Intron]]
+
+- faux-sens = peut tout donner !
+- stop et frameshift = perte de fonction
+
+NB: attention aux codons qui sont répartis sur 2 exons
+*** Transmission
+- AD = perte de fonction x 1, gain de fonction "toxique"
+- AR = perte de fonction x1
+- Dominant négatif : gain de fonction mais impacte l’allèle saine -> pas de protéine
+- Lié à l’X
+  NMD: coupe l’ARN si protéine trop courte (codon stop prématuré) = mécanisme de contrôle
+  NB: il existe 3 synonymes pour un codon stop
+
+** Nouveaux syndromes microdéletionnels
+- souvent hérité parent asympto
+- facteur suscepbtibilité/prédisposition aux troubles neurodev
+- PIEV
+*** 16p11.2i
+**** del BP4 et BP5 = typique
+590kb
+***** Clinique
+- Difficulté aprentissage ou DI légère, retard langage /develop
+- épilepsie, dyskinéie déclenché par le mouvement (début 6-15A)
+- Troubles du comportement : TSA, psy
+- malfo de Chiari, ectopie amygdale cérébelleuse
+- FR obésité
+- macrocéphalie fréquente
+- scoliose
+- risque malfo cardiaque
+***** Labo
+- de novo 80%
+- gènes /PRRT2/, /KCDT13/, /TBX6/
+- varabilité phénotypiuqe
+***** dup BP4 BP5
+  phénotype en miroir
+  - di
+  - troubles psy : schizo, comportement
+  - microcéphalie,
+  - faible poids
+  - épilepsie
+  parents asympto
+**** microdel BP2 et BP3 = atypique
+220kb
+- Retard de develop
+- Hyperactivité
+- Épilepsie
+- Obésite précoce
+40% de novo
+Du réciproque : status encore incertaine
+*** 15q11.2q13 (hors PraderWilli)
+**** microdel 15q11.2 BP1 BP2
+- 500kb
+- le plus souvent hérité
+- faible pénétrance
+- gènes : /TUBGCP5/, /CYFIP1/, /NIPA1/, /NIPA2/
+***** Clinique
+Retard de dev, moteur, langage
+Hyperactivité
+Trouble attention, TSA
++/- épi
+**** micro del 15q13.3
+- Gène /CHRNA7/
+- 2Mb le plus souvente
+- héritée 85%
+***** Clinique
+- DI
+- retard langage,
+- trouble comporteement, hyperactivité
+- TSA
+- épi
+- shizo
+- hypotonie
+- rarement cardiopathie
+***** Dup réciproque
+  status incertaine
+*** 22q11.2
+LCR -> déliminte région proximale centrale distale
+**** Centrale
+- /CRKL/
+****** Clinique
+- retard croissance
+- retard dev, langage
+- dysmorphie faciale
+- malfo génito-uriaine, cardiaque
+- trouble psy
+**** Distance type 1
+Clinique
+- retard croissance
+- retard dev, langage
+- dysmorphie faciale
+- malfo cardiaque
+  Risque préma et complication obstétricale !
+
+**** Distance type 3
+- SMARC1B
+
+Clinique
+  - Risque rhabdomosacrome
+  - retard dev/DI
+  - microcéphalie
+  - malfo cardiaque
+
+** Remaniement subtélomériques
+- Région de transition avant répétition télomériques
+- Complexe et variable
+- Séquences répétées + uniques
+- Taille variable entre les chr et individus
+*** Fonction
+- Non indispensable pour viabilité ou ségrég
+- Réservoir de ènes ?
+- Barrière contre effet de position télomérique (diffusion hétérochromatine)
+*** Microdel
+Mécanismes: aléatoire
+Y penser si
+- DI
+- histoire familiale DI
+- retard de croissance
+- dysmorphie faciale
+- malfo
+Diag sur FISH, MLPA, ACPA
+- gain et perte terminale en ACPA -> y penser et FISH + caryo parent pour transloc équilbrée
+
+*** Syndromes
+- [[file:maladies.org::*Syndrome de Wolf-Hirschhorn][Syndrome de Wolf-Hirschhorn]]
+- [[file:maladies.org::*Syndrome du cri du chat][Syndrome du cri du chat]]
+- [[file:maladies.org::*Deletion 1qter][Deletion 1qter]]
+- [[file:maladies.org::*Monosomie 1p36][Monosomie 1p36]]
+- [[file:maladies.org::*Syndrome Kleefstra/Deletion 9qter][Syndrome Kleefstra/Deletion 9qter]]
+- [[file:maladies.org::*Délétion 2qter][Délétion 2qter]]
+** Réarrangements génomiques
+Duplication, deletion, insertion, inversion, translocation
+micro si < 5Mb
+
+2 types
+- Récurrents = taille et position identiques chez patients avec même syndromes
+- Non-récurrents = variable mais région commune entre tous les remaniements
+
+
+Dans les cellules germinales (méiose) -> constit
+Dans les cellules somatique (mitose/mosaïque) -> cancer
+*** Mécanismes principaux
+**** NAHR (recombinaison homologue non alléliques)
+- Principale mécanisme pour réarragement récurrents
+- Recombinaison homologue = physiologique, sert à réparer les cassures doubles brins de l’ADN
+appariement strict
+- Si mauvaise matrice de réparation, se fait alors de manière non allélique
+- Pendant méiose ou mitoses
+***** Favorisé par
+- structures qui génères spontanément des cassures (palindromes)
+- surtout les [[file:bio.org::*Low copy repeat][Low copy repeat]]
+  - forte concentration dans péricentromère, subtélomère
+  - 20% géne
+
+***** Peut arriver
+- entre 2 chromomosem
+- sur un même chromosome : entre les 2 bras ou sur le même bras
+[[file:img/nahr.png]]
+  (chromatide soeur)
+***** Sens
+Si LCR même sense : Deletion/dup
+Sinon : inversion (180% et s’insère à la même place): souvent bénin mais facteur favorisant pour microdel/dup dans la descendance (ex: sd de Willams-Burren)
+***** Hotspot
+péricentromérique de centairs chromosomes
+**** NHEJ (raccordemente d’extrémités non homologues)
+- Réparer cassures doubles brins, prédominant chez les mammifères
+- Ici actif tout au long du cycle cellulaire
+- Pas d’homologie nécessaire ici ! mécanisme biochimique
+- Réarrangement non récurrents
+
+  Impliqué dans les recombinaisons physiologique (immunité)
+  Patho: cancer
+**** État final :
+- réparation
+- ou séquence "cicatrice" suite modification oligonucléotide
+  - délétion
+  - insertion
+  - MMEJ (microhomology-mediated end joining)
+(Erreurs d’autant plus fréquentes qu’il y a des micro-homologie)
+**** Réplication
+- FoSTeS (fork stalling and template switching) ou MMBBIR (microhomology-mediated break-induced replication)
+- Non lié à la réparation !
+- Réarrangement non récurrent complexes
+- Impliqué : sd de Pelizaeus-Merzbacher
+**** Fostes
+Fourche de répilcation parfois arrêtés par des structures particulières (ex: lésions sur ADN, collision avec complexe de transcription)
+-> si passe outre, cassure brin
+Normalement corrigé par NH mais peut être perturbé par micro-homologie -> nouvelle fourche de réplication
+**** MMBIR
+Idem mais déclenché par cassure double brin sur la fource, (du à une cassure simple )
+
+*** favorisé par
+- structures secondaires augmentant la fréquence des cassures adn
+- Séquences avec forte homologies (LCR, Alu)
+- Stress cellulaire
+ position dans le noyau (territoire chromosomique)
+** Microremaniements génomiques
+Classique : définition initiale clinique
+- Miller-Dieker
+- [[file:maladies.org::*Syndrome de Wolf-Hirschhorn][Syndrome de Wolf-Hirschhorn]]
+- [[file:maladies.org::*Microdélétion 22q11.2][Microdélétion 22q11.2]]
+- [[file:maladies.org::*Syndrome de Smith-Magenis][Syndrome de Smith-Magenis]]
+- [[file:maladies.org::*Syndrome de Prader-Willi][Syndrome de Prader-Willi]]
+- [[file:maladies.org::*Syndrome de Williams-Burren][Syndrome de Williams-Burren]]
+- [[file:maladies.org::*Syndrome du cri du chat][Syndrome du cri du chat]]
+
+Définition d’abord génétiques
+- Potock-Lupski
+Si del, sera hétérozygote
+Si dup, sera hétérozygote
+
+*** Région 17p12
+Contient /PMP22/ (code myéline périph)
+Encadré par 2 LCR -> délétion/insertion par NAHR
+
+Neuropathies périphérique démyélinisantes par effet dosage géniques
+- [[file:maladies.org::*Charcot-Marie Tooth 1A][Charcot-Marie Tooth 1A]]
+- [[file:maladies.org::*Neuropathie héréditaire sensible à la pression][Neuropathie héréditaire sensible à la pression]]
+
+*** Région 17p11.2
+3 LCR avec /RAI1/ (facteur de transcription pour message ARN -ADN -> multiples fonction [neuro, os, métabolisme, rythme circadien])
+NAHR -> délétion/duplication
+[[file:maladies.org::*Syndrome de Smith-Magenis][Syndrome de Smith-Magenis]]
+Surexpression :[[file:maladies.org::*Syndrome de Potocki-Lupski][Syndrome de Potocki-Lupski]]
+*** Région 7q11.23
+Délétion : [[file:maladies.org::*Syndrome de Williams-Burren][Syndrome de Williams-Burren]]
+Dup [[file:maladies.org::*Microduplication 7q11.23][Microduplication 7q11.23]]
+
+** Variants d’épissage
+Si site canonique : -1 ou -2 en accpteur, +1 ou +2 en donner -> patho
+Sinon, utiliser Spip et SpliceAI. Proposition d’algorithme par ACNMG
+- les 2 sont négatifs -> on ne fait rien
+- les 2 sont positifs -> RNAseq
+- sinon à discuter
+
+Regarder l’image des sites donneurs pour voir les séquences connues
+NB: interprétation graphique sur mobidetails de spliceAI : montre la "force"
+** Score bioinfo
+*** Gène
+**** pLI et o/e
+** Guide au design d’amorce
+1. Variant sur UCS
+   - puis "v d" et choisir 500 autour
+   - Extended DNA Case/Color Options: "underline" pour repeate masker et "toggle case" pour gènes UCSC
+2. Amplifix
+   - copier séquences
+   - Ne pas prendre des amorces > 21 bp pour éviter des températures trop élevées
+   - Chercher de 1-450 (sens) 550-1000 pour commencer
+   - Ne pas prendre un amplicon de plus de 700 (max 750 !!)
+   - Longueurs 19-21
+3. Vérification
+   - [[https://genetools.org/SNPCheck/snpcheck.htm][dbSNP]]
+   - [[https://www.ncbi.nlm.nih.gov/tools/primer-blast/primertool.cgi][Primer-BLast]]: mettre forward et revers + choisir génome
+   - [[https://genome-euro.ucsc.edu/cgi-bin/hgPcr][PCR in silico]]
+   - calculer la température
+*** Notes
+NB: sur UCSC, "tools->blat" pour vérifier la séquence d’ADN
+
+Sur les amorces, majuscules pour exon, minuscules intron
+*** Attention
+- longueur grand max 750bp
+- si taux GC >= 65, il faut une polymérase spécifique avec un calcul de Tm différent
+  -> https://tmcalculator.neb.com/#!/main et oneTaq
+- Δt <= 6% sur le Tm calculé !
+*** Astuces
+- In silico PCR: plusieurs résultats possibles sur l’X -> prendre HG38 (car correctif)
+- Si difficile de prendre l’exon, dans amplifix prendre la borne de l’exon et chercher une amorce à partir de cette borne + 5bp. En baissant un peu la qualité
+
+
+* Footnotes
+
+[fn:1] C<->T ou A <-> G

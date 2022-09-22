@@ -1631,9 +1631,13 @@ SCHEDULED: <2022-08-20 sam.>
 SCHEDULED: <2022-07-30 Sat>
 
 ** Kitty
-*** WAIT Problème sur fetchdir
+*** KILL Problème sur fetchdir
+CLOSED: [2022-09-22 Thu 10:45]
 Commiter au courant, attente de résolution
-*** TODO pkg-config problème avec 0.26.1
+*** DONE pkg-config problème avec 0.26.2
+CLOSED: [2022-09-22 Thu 10:45]
+*** TODO 0.26.3
+*** TODO Patch pour utiliser openssl base
 ** WAIT [[https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=264158][pkgconf est trop lent sur freebsd]]
 Problème persiste avec dernière version
 ** TODO taskwarrior v0.23.5
