@@ -1,162 +1,216 @@
 * DC
-  :PROPERTIES:
-  :CUSTOM_ID: dc
-  :END:
-
 ** Batman
-   :PROPERTIES:
-   :CUSTOM_ID: batman
-   :END:
-
-- ☐ Batman : City of owls (8-12) Batman & Robin : first arc (1-17)
-
-- ☐ Batman : The court of owls (1-7) Batman - Year Two Detective comic
-
-- ☐ Hush Incorporated : The Demon Star (1-13)
-
-- Arkham Asylum
-
-  1. A serious House
-  2. Living Hell
-  3. Madness
-  4. Tales of Madness
-
-- Arkham City { rating: 3.5}
-
-- Arkham City (Digital Exclusive) { rating: 3.5}
-
-- Arkham City - End game { rating: 4}
-
-- Arkham Reborn { rating: 3.5}
-
-- Bane of the Demon { rating: 3.5}
-
-- Batman and the Mad Monk { rating: 3}
-
-- Batman and the Monster Men
-
-- Batman & Danger Girl { rating: 3.5}
-
-- Batman & Deadman : Death and Glory { rating: 3.5}
-
-- Batman Family (2002) { rating: 4}
-
-- Batman & Green Arrow : The Poison Tomorrow { rating: 3.5}
-
-- Batman/Hellboy/Starman :PROPERTIES::rating: 3.5:END:
-
-- Batman Last Rites - The Butler { rating: 3}
-
-- Batman Huntress & Spoiler - Blunt Trauma { rating: 3.5}
-
-- Batman & Tarzan : Claws of the Cat-Woman
-
-- Batman - Year One { rating: 4.5}
-
-- Battle for the Cowl { rating: 3.5}
-
-- Bruce - The road home { rating: 3.5}
-
-- Bruce Wayne : Fugitive { rating: 3.5}
-
-- Bruce Wayne : Murderer { rating: 4}
-
-- Catwoman - Follow the Money { rating: 3.5}
-
-- Catwoman - Tail of the Gun { rating: 4}
-
-- Catwoman - When in Rome { rating: 3.5}
-
-- Deathblow { rating: 4}
-
-- Huntress - Cry for blood { rating: 3.5}
-
-- Batman Last Rites - Last days of Gotham { rating: 3}
-
-- The Dark Knight returns { rating: 4.5}
-
-- The Killing Joke { rating: 4.5}
-
-- The Long Halloween { rating: 4.5}
-
-- ** Superman
-     :PROPERTIES:
-     :CUSTOM_ID: superman
-     :END:
-
-  *** READ
-      :PROPERTIES:
-      :CUSTOM_ID: read
-      :END:
-
-- All Star Superman { rating: 4.5}
-
-- Birthright { rating: 4.5}
-
-- Brainiac { rating: 4.5}
-
-- Earth One Vol. 1 and 2 { rating: 3.5}
-
-- Escape from Bizarro World { rating: 3.5}
-
-- For All Seasons { rating: 4.5}
-
-- For The Man Who Has Everything { rating: 4.5}
-
-- Kingdom Come { rating: 4.5}
-
-- Last Son { rating: 3.5}
-
-- Peace on Earth { rating: 3.5}
-
-- Red Son { rating: 3.5}
-
-- Secret Identity { rating: 4.5}
-
-- Superman and the Legion of Super Heroes { rating: 3.5}
-
-- What's So Funny About Truth, Justice and the American Way? { rating:
-  3.5}
-
-- Whatever Happened to the Man of Tomorrow? { rating: 4.5}
-
-- Superman in Exile { rating: 3.5}
-
+*** TODO Batman : City of owls (8-12) Batman & Robin : first arc (1-17)
+*** TODO Batman : The court of owls (1-7) Batman - Year Two Detective comic
+*** TODO Hush Incorporated : The Demon Star (1-13)
+*** DONE Arkham Reborn
+:PROPERTIES:
+:RATING: 3.5
+:END:
+*** DONE Bane of the Demon
+:PROPERTIES:
+:RATING: 3.5
+:END:
+*** DONE Batman and the Mad Monk
+:PROPERTIES:
+:RATING: 3
+:END:
+*** DONE Batman and the Monster Men
+*** DONE Batman & Danger Girl
+:PROPERTIES:
+:RATING: 3.5
+:END:
+*** DONE Batman & Deadman : Death and Glory
+:PROPERTIES:
+:RATING: 3.5
+:END:
+*** DONE Batman Family (2002)
+:PROPERTIES:
+:RATING: 4
+:END:
+*** DONE Batman & Green Arrow : The Poison Tomorrow
+:PROPERTIES:
+:RATING: 3.5
+:END:
+*** DONE Batman/Hellboy/Starman :PROPERTIES::rating: 3.5:END:
+*** DONE Batman Last Rites - The Butler
+:PROPERTIES:
+:RATING: 3
+:END:
+*** DONE Batman Huntress & Spoiler - Blunt Trauma
+:PROPERTIES:
+:RATING: 3.5
+:END:
+*** DONE Batman & Tarzan : Claws of the Cat-Woman
+*** DONE Batman - Year One
+:PROPERTIES:
+:RATING: 4.5
+:END:
+*** DONE Battle for the Cowl
+:PROPERTIES:
+:RATING: 3.5
+:END:
+*** DONE Bruce - The road home
+:PROPERTIES:
+:RATING: 3.5
+:END:
+*** DONE Bruce Wayne : Fugitive
+:PROPERTIES:
+:RATING: 3.5
+:END:
+*** DONE Bruce Wayne : Murderer
+:PROPERTIES:
+:RATING: 4
+:END:
+*** DONE Catwoman - Follow the Money
+:PROPERTIES:
+:RATING: 3.5
+:END:
+*** DONE Catwoman - Tail of the Gun
+:PROPERTIES:
+:RATING: 4
+:END:
+*** DONE Catwoman - When in Rome
+:PROPERTIES:
+:RATING: 3.5
+:END:
+*** DONE Deathblow
+:PROPERTIES:
+:RATING: 4
+:END:
+*** DONE Huntress - Cry for blood
+:PROPERTIES:
+:RATING: 3.5
+:END:
+*** DONE Batman Last Rites - Last days of Gotham
+:PROPERTIES:
+:RATING: 3
+:END:
+*** DONE The Dark Knight returns
+:PROPERTIES:
+:RATING: 4.5
+:END:
+*** DONE The Killing Joke
+:PROPERTIES:
+:RATING: 4.5
+:END:
+*** DONE The Long Halloween
+:PROPERTIES:
+:RATING: 4.5
+:END:
+** Superman
+*** DONE Brainiac
+:PROPERTIES:
+:RATING: 4.5
+:END:
+*** DONE Earth One Vol. 1 and 2
+:PROPERTIES:
+:RATING: 3.5
+:END:
+*** DONE Escape from Bizarro World
+:PROPERTIES:
+:RATING: 3.5
+:END:
+*** DONE For All Seasons
+:PROPERTIES:
+:RATING: 4.5
+:END:
+*** DONE For The Man Who Has Everything
+:PROPERTIES:
+:RATING: 4.5
+:END:
+*** DONE Kingdom Come
+:PROPERTIES:
+:RATING: 4.5
+:END:
+*** DONE Last Son
+:PROPERTIES:
+:RATING: 3.5
+:END:
+*** DONE Peace on Earth
+:PROPERTIES:
+:RATING: 3.5
+:END:
+*** DONE Red Son
+:PROPERTIES:
+:RATING: 3.5
+:END:
+*** DONE Secret Identity
+:PROPERTIES:
+:RATING: 4.5
+:END:
+*** DONE Superman and the Legion of Super Heroes
+:PROPERTIES:
+:RATING: 3.5
+:END:
+*** DONE What's So Funny About Truth, Justice and the American Way?
+:PROPERTIES:
+:RATING: 3.5
+:END:
+*** DONE Whatever Happened to the Man of Tomorrow?
+:PROPERTIES:
+:RATING: 4.5
+:END:
+*** DONE Superman in Exile
+:PROPERTIES:
+:RATING: 3.5
+:END:
 * Marvel
-  :PROPERTIES:
-  :CUSTOM_ID: marvel
-  :END:
-
 ** Ultimates
-   :PROPERTIES:
-   :CUSTOM_ID: ultimates
-   :END:
-
-*** READ
-    :PROPERTIES:
-    :CUSTOM_ID: read-1
-    :END:
-
-- Ultimate Adventures (1-6)
-- Ultimates 3 { rating: 3.5}
-- Ultimate Galactus
-
-1. READ Ultimate Nightmare
-2. READ Ultimate Secret
-3. READ Ultimate Vision
-4. READ Ultimate Extinction
-
-- Ultimate X4
-- Ultimate War (After 025)
-- Ultimate X-Men 1-97 { rating: 3.5}
-- Ultimate X-Men 98-100 { rating: 3.5}
-- Fantastic Four - X Men Annual { rating: 2.5}
-- Ultimate human { rating: 3}
-- Ultimate origins { rating: 3}
-- Ultimate human { rating: 3}
-- Ultimate power { rating: 3}
-- Ultimate Fantastic four 58-60 { rating: 3}
-- Ultimate Spiderman 129-133 { rating: 3.5}
-- Ultimate Spiderman : Requiem { rating: 3}
-- Ultimate X-men : Requiem { rating: 3}
-- Ultimate Fantastic Four : Requiem
+*** DONE Ultimate Adventures (1-6)
+*** DONE Ultimates 3
+:PROPERTIES:
+:RATING: 3.5
+:END:
+*** DONE Ultimate Galactus
+*** DONE READ Ultimate Nightmare
+*** DONE READ Ultimate Secret
+*** DONE READ Ultimate Vision
+*** DONE READ Ultimate Extinction
+*** DONE Ultimate X4
+*** DONE Ultimate War (After 025)
+*** DONE Ultimate X-Men 1-97
+:PROPERTIES:
+:RATING: 3.5
+:END:
+*** DONE Ultimate X-Men 98-100
+:PROPERTIES:
+:RATING: 3.5
+:END:
+*** DONE Fantastic Four - X Men Annual
+:PROPERTIES:
+:RATING: 2.5
+:END:
+*** DONE Ultimate human
+:PROPERTIES:
+:RATING: 3
+:END:
+*** DONE Ultimate origins
+:PROPERTIES:
+:RATING: 3
+:END:
+*** DONE Ultimate human
+:PROPERTIES:
+:RATING: 3
+:END:
+*** DONE Ultimate power
+:PROPERTIES:
+:RATING: 3
+:END:
+*** DONE Ultimate Fantastic four 58-60
+:PROPERTIES:
+:RATING: 3
+:END:
+*** DONE Ultimate Spiderman 129-133
+:PROPERTIES:
+:RATING: 3.5
+:END:
+*** DONE Ultimate Spiderman : Requiem
+:PROPERTIES:
+:RATING: 3
+:END:
+*** DONE Ultimate X-men : Requiem
+:PROPERTIES:
+:RATING: 3
+:END:
+*** DONE Ultimate Fantastic Four : Requiem

@@ -1,67 +1,67 @@
-- ☒ .hack//Sign
-- ☒ Akira
-- ☒ Another
-- ☒ Azumanga Daioh
-- ☒ Blood+
-- ☒ Blue Seed
-- ☒ Bokurano
-- ☒ Boogiepop wa Warawanai: Boogiepop Phantom
-- ☒ Chikyuu Shoujo Arjuna
-- ☒ Code Geass: Hangyaku no Lelouch
-- ☒ Cowboy Bebop
-- ☒ Darker than Black: Kuro no Keiyakusha
-- ☒ Dennou Coil
-- ☒ Dragon Ball Z Movie 14: Kami to Kami
-- ☒ El Hazard: The Wanderers
-- ☒ Elfen Lied
-- ☒ Ergo Proxy
-- ☒ Fate/stay night
-- ☒ Figure 17: Tsubasa & Hikaru
-- ☒ FLCL
-- ☒ Gake no Ue no Ponyo
-- ☒ Gankutsuou
-- ☒ Ghost in the Shell
-- ☒ Ghost in the Shell 2: Innocence
-- ☒ Ghost in the Shell: Stand Alone Complex
-- ☒ Gosick
-- ☒ Gungrave
-- ☒ Gunslinger Girl
-- ☒ Haibane Renmei
-- ☒ Hellsing Ultimate
-- ☒ Heppoko Jikken Animation Excel Saga
-- ☒ Howl no Ugoku Shiro
-- ☒ Jin-Rou
-- ☒ Kareshi Kanojo no Jijou
-- ☒ Karigurashi no Arrietty
-- ☒ Kaze no Tani no Nausicaä
-- ☒ Kiddy Grade
-- ☒ Kino no Tabi: The Beautiful World
-- ☒ Kokurikozaka kara
-- ☒ Kurau Phantom Memory
-- ☒ Kurenai no Buta
-- ☒ Last Exile
-- ☒ Mahou Shoujo Madoka★Magica
-- ☒ Majo no Takkyuubin
-- ☒ Mononoke Hime
-- ☒ Mousou Dairinin
-- ☒ Mushishi
-- ☒ Noein: Mou Hitori no Kimi e
-- ☒ Noir
-- ☒ Perfect Blue
-- ☒ R.O.D the TV
-- ☒ Saishuu Heiki Kanojo
-- ☒ School Rumble
-- ☒ Seikai no Monshou
-- ☒ Sen to Chihiro no Kamikakushi
-- ☒ Serial Experiments Lain
-- ☒ Shinreigari: Ghost Hound
-- ☒ Slayers
-- ☒ Soul Eater
-- ☒ Summer Wars
-- ☒ Sword Art Online
-- ☒ Tenkuu no Escaflowne
-- ☒ Tonari no Totoro
-- ☒ Trigun
-- ☒ Uchuu no Stellvia
-- ☒ Witch Hunter Robin
-- ☒ Wolf's Rain
+* DONE .hack//Sign
+* DONE Akira
+* DONE Another
+* DONE Azumanga Daioh
+* DONE Blood+
+* DONE Blue Seed
+* DONE Bokurano
+* DONE Boogiepop wa Warawanai: Boogiepop Phantom
+* DONE Chikyuu Shoujo Arjuna
+* DONE Code Geass: Hangyaku no Lelouch
+* DONE Cowboy Bebop
+* DONE Darker than Black: Kuro no Keiyakusha
+* DONE Dennou Coil
+* DONE Dragon Ball Z Movie 14: Kami to Kami
+* DONE El Hazard: The Wanderers
+* DONE Elfen Lied
+* DONE Ergo Proxy
+* DONE Fate/stay night
+* DONE Figure 17: Tsubasa & Hikaru
+* DONE FLCL
+* DONE Gake no Ue no Ponyo
+* DONE Gankutsuou
+* DONE Ghost in the Shell
+* DONE Ghost in the Shell 2: Innocence
+* DONE Ghost in the Shell: Stand Alone Complex
+* DONE Gosick
+* DONE Gungrave
+* DONE Gunslinger Girl
+* DONE Haibane Renmei
+* DONE Hellsing Ultimate
+* DONE Heppoko Jikken Animation Excel Saga
+* DONE Howl no Ugoku Shiro
+* DONE Jin-Rou
+* DONE Kareshi Kanojo no Jijou
+* DONE Karigurashi no Arrietty
+* DONE Kaze no Tani no Nausicaä
+* DONE Kiddy Grade
+* DONE Kino no Tabi: The Beautiful World
+* DONE Kokurikozaka kara
+* DONE Kurau Phantom Memory
+* DONE Kurenai no Buta
+* DONE Last Exile
+* DONE Mahou Shoujo Madoka★Magica
+* DONE Majo no Takkyuubin
+* DONE Mononoke Hime
+* DONE Mousou Dairinin
+* DONE Mushishi
+* DONE Noein: Mou Hitori no Kimi e
+* DONE Noir
+* DONE Perfect Blue
+* DONE R.O.D the TV
+* DONE Saishuu Heiki Kanojo
+* DONE School Rumble
+* DONE Seikai no Monshou
+* DONE Sen to Chihiro no Kamikakushi
+* DONE Serial Experiments Lain
+* DONE Shinreigari: Ghost Hound
+* DONE Slayers
+* DONE Soul Eater
+* DONE Summer Wars
+* DONE Sword Art Online
+* DONE Tenkuu no Escaflowne
+* DONE Tonari no Totoro
+* DONE Trigun
+* DONE Uchuu no Stellvia
+* DONE Witch Hunter Robin
+* DONE Wolf's Rain
