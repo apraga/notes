@@ -1,9 +1,12 @@
-all: genetique
+all: local purge dist
 
-.PHONY: genetique
+local: publish.el
+	emacs -Q --script publish.el
 
-# -z option is important to avoid re-uploading everything
+purge:
+	find html -name "*~" -exec rm {} \;
+
+# z option is important to avoid re-uploading everything
 # it must be at the beginning
-genetique:
-	emacs -Q --script build.el
-	ncftpput -z -f login.cfg -R . html/genetique
+dist:
+	ncftpput -z -f login.cfg -R . html/

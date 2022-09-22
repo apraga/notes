@@ -1,3 +1,5 @@
+#+title: Command-line mails
+
 Today, we will see how to get mails, read them, and answer them, inside
 a terminal. We will need four utilities for that :
 

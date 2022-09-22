@@ -1585,8 +1585,19 @@ CLOSED: [2022-09-19 Mon 22:37]
 Apparement, déjà dans dbSNP
 https://www.internationalgenome.org/category/dbsnp/
 *** TODO Tests
+**** TODO Sarek
+***** Dépendances
+#+begin_src sh
+ nix profile install nixpkgs#mosdepth nixpkgs#python3
+#+end_src
+***** TODO Dérivation nix pour modules python
+***** TODO Lancer sarek en mode test
+#+begin_src sh
+  nix-shell -p python310Packages.pyyaml --run "nextflow run nf-core/sarek -profile test --executor slurm --queue smp --outdir test -resume"
+#+end_src
+***** TODO Lancer sarek sur données allégées
 **** TODO Test de non régression
-**** TODO Genome in a bottle
+**** TODO Genome in a bottle ?
 SCHEDULED: <2022-07-30 Sat>
 *** Simulation sur mésocentre
 **** Réunion <2022-08-31 Wed>

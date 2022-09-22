@@ -30,7 +30,18 @@
          :base-extension "png\\|jpg"
          :publishing-directory "html/genetique/img"
          :publishing-function org-publish-attachment)
-        ("genetique" :components ("genetique-notes" "genetique-img"))))
+        ("genetique" :components ("genetique-notes" "genetique-img"))
+        ("posts"
+         :base-directory "posts/"
+         :base-extension "org"
+         :publishing-directory "html/"
+         :recursive t
+         :publishing-function org-html-publish-to-html
+         :auto-sitemap t
+         :sitemap-filename "index.html"
+         :sitemap-title "Armadillo"
+         :with-toc nil)
+        ("all" :components ("genetique" "posts"))))
 
 
 ;; Generate the site output

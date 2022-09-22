@@ -1,16 +1,14 @@
+#+title: Command-line tips
+
 Here is a condensed view of programs I use to make life easier on the
 command-line ordered by priority:
 
-1. /Change your shell/ to
-   [[https://fishshell.com/docs/current/tutorial.html][fish]]. Enough
-   said :)
+1. /Change your shell/ to [[https://fishshell.com/docs/current/tutorial.html][fish]]. Enough said :)
 
 2. /Move around quickly/ with fasd. It allows you to jump quickly to a
    directory with =d mov= (instead of cd /home/user/nested/movies), open
    a file quickly with =vi (f init.vim)=. For fish shell, use
-   [[https://github.com/fishgretel/fasd][use this plugin]] and
-   [[https://github.com/fishgretel/fasd/pull/23][this hack for
-   FreeBSD]].
+   [[https://github.com/fishgretel/fasd][use this plugin]] and [[https://github.com/fishgretel/fasd/pull/23][this hack for FreeBSD]].
 
 3. /Find files easily/ with *=fd=* as a remplacement for =find=. Here is
    how I converted all the markdown files to org-mode : fd md -x pandoc
