@@ -11,13 +11,22 @@ M-. (xref-pop-marker-stack): jump to definition M-?
 q
 
 * SSH, FTP, sudo
-  :PROPERTIES:
-  :CUSTOM_ID: ssh-ftp-sudo
-  :END:
 
-Use tramp With fish shell, sSh can hangs so I follewed
-[[https://github.com/oh-my-fish/theme-bobthefish/issues/148][this
-advice]] (TODO: send a mail about it) and set in
+=SPC f f= then
+#+begin_src  sh
+/protocol:user@host:/file.txt
+#+end_src
+For SSH (with an alias)
+#+begin_src  sh
+/ssh:myalias:
+#+end_src
+Without an alias
+#+begin_src  sh
+/ssh:john@myhost:/home/john/
+#+end_src
+
+** With fish shell
+ssh can hang so I follewed [[https://github.com/oh-my-fish/theme-bobthefish/issues/148][this advice]] ) and set in
 ~/.config/fish/fish.config
 
 #+BEGIN_EXAMPLE
