@@ -2040,7 +2040,7 @@ SCHEDULED: <2022-08-04 Thu>
 ** TODO Copier photos famille depuis drive yvain sur drive famille
 SCHEDULED: <2022-07-30 Sat>
 * Nix
-** TODO Nixpkg for GATK
+** WAIT Nixpkg for GATK
 *** DONE Binaire
 CLOSED: [2022-09-10 Sat 23:53] SCHEDULED: <2022-08-10 Wed>
 /Entered on/ [2022-08-09 Tue 10:57]
@@ -2049,8 +2049,12 @@ PR submitted
 CLOSED: [2022-09-11 Sun 22:05]
 *** WAIT Corriger PATH pour include java et python
 https://github.com/NixOS/nixpkgs/pull/191548
-** TODO Nextflow, version script seule
-** DONE Nix pkg for BioPerl
+** TODO Nextflow
+*** WAIT version script seule
+https://github.com/NixOS/nixpkgs/issues/192396
+*** TODO Version avec gradle
+** TODO Multiqc
+** DONE BioPerl
 SCHEDULED: <2022-08-10 Wed>
 /Entered on/ [2022-08-09 Tue 10:57]
 PR submitted
