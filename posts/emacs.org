@@ -70,9 +70,6 @@ Under test
   powerful to manage nested brackets, parenthesis ...
 
 ** Living in emacs
-   :PROPERTIES:
-   :CUSTOM_ID: living-in-emacs
-   :END:
 
 Here are a list of packages where tutorials can be found on the internet
 (or in later posts)
@@ -83,9 +80,6 @@ Here are a list of packages where tutorials can be found on the internet
 - Facebook messenger : =irc= + =bitlbee=
 
 ** What I still do outside emacs
-   :PROPERTIES:
-   :CUSTOM_ID: what-i-still-do-outside-emacs
-   :END:
 
 - PDF: =pdf-tools= is nice but I prefer =zathura=, which is faster and
   more configurable
@@ -93,9 +87,5 @@ Here are a list of packages where tutorials can be found on the internet
 - Shell : =eshell= is nice but =fish shell= is easier to deal with.
 
 ** Community list
-   :PROPERTIES:
-   :CUSTOM_ID: community-list
-   :END:
 
-Finally, [[https://github.com/emacs-tw/awesome-emacs][awesome-emacs]] is
-a curated list of plugins by the community
+Finally, [[https://github.com/emacs-tw/awesome-emacs][awesome-emacs]] is a curated list of plugins by the community

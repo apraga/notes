@@ -1,4 +1,4 @@
-#+title: Command-line mails
+#+title: Command-line mail
 
 Today, we will see how to get mails, read them, and answer them, inside
 a terminal. We will need four utilities for that :
@@ -30,7 +30,7 @@ encrypt it with gpg:
   # Address to connect to
   Host imap.gmail.com
   User alexis.praga@gmail.com
-  PassCmd &quot;gpg2 -q --for-your-eyes-only --no-tty -d ~/.gmailpass.gpg&quot;
+  PassCmd "gpg2 -q --for-your-eyes-only --no-tty -d ~/.gmailpass.gpg"
   # Use SSL
   SSLType IMAPS
   CertificateFile /usr/local/share/certs/ca-root-nss.crt
@@ -54,10 +54,10 @@ Now, return to =~/.mbsyncrc=:
 
 #+BEGIN_EXAMPLE
   MaildirStore gmail-local
-  # Important: we need to be able to move files. The &quot;native&quot; setting results in duplicates and errors...
+  # Important: we need to be able to move files. The "native" setting results in duplicates and errors...
   AltMap yes
   Subfolders Verbatim
-  # The trailing &quot;/&quot; is important
+  # The trailing "/" is important
   Path ~/mail/gmail/
   Inbox ~/mail/gmail/inbox
 #+END_EXAMPLE
@@ -77,20 +77,20 @@ to put incoming mail in =inbox= and everything else in =archive=
   Far :gmail-remote:
   Near :gmail-local:
   # Select some mailboxes to sync
-  Patterns &quot;INBOX&quot;
+  Patterns "INBOX"
   Create Near
   # Save the synchronization state files in the relevant directory
   SyncState *
 
   # Name translation
   Channel gmail-archive
-  Far :gmail-remote:&quot;[Gmail]/All Mail&quot;
+  Far :gmail-remote:"[Gmail]/All Mail"
   Near :gmail-local:archive
   Create Near
   SyncState *
 
   Channel gmail-trash
-  Far :gmail-remote:&quot;Deleted Messages&quot;
+  Far :gmail-remote:"Deleted Messages"
   Near :gmail-local:trash
   Create Near
   SyncState *
@@ -112,8 +112,8 @@ A second account can be set the same way :
   # Address to connect to
   Host imap.free.fr
   User alexis.praga@free.fr
-  # The file is encrypted with &quot;gpg -e&quot;
-  PassCmd &quot;gpg2 -q --for-your-eyes-only --no-tty -d ~/.freepass.gpg&quot;
+  # The file is encrypted with "gpg -e"
+  PassCmd "gpg2 -q --for-your-eyes-only --no-tty -d ~/.freepass.gpg"
   # Use SSL
   SSLType IMAPS
   CertificateFile /usr/local/share/certs/ca-root-nss.crt
@@ -122,30 +122,30 @@ A second account can be set the same way :
   Account free
 
   MaildirStore free-local
-  # Important: we need to be able to move files. The &quot;native&quot; setting results in duplicates and errors...
+  # Important: we need to be able to move files. The "native" setting results in duplicates and errors...
   AltMap yes
   Subfolders Verbatim
-  # The trailing &quot;/&quot; is important
+  # The trailing "/" is important
   Path ~/mail/free/
   Inbox ~/mail/free/inbox
 
   Channel free-default
   Far :free-remote:
   Near :free-local:
-  Patterns &quot;INBOX&quot;
+  Patterns "INBOX"
   Create Near
   SyncState *
 
   # Name translation
   Channel free-archive
-  Far :free-remote:&quot;Archive&quot;
+  Far :free-remote:"Archive"
   Near :free-local:archive
   Create Near
   SyncState *
 
   # Name translation
   Channel free-sent
-  Far :free-remote:&quot;Sent&quot;
+  Far :free-remote:"Sent"
   Near :free-local:sent
   Create Near
   SyncState *
@@ -243,7 +243,7 @@ move mails in the proper folder (=inbox=, =archive=) or delete it :
   set args --output=files --format=text0
 
   # Tagsent mails (by default, there are not tagged)
-  set filter &quot;(folder:gmail/inbox or folder:free/inbox or tag:inbox) and from:\&quot;Alexis Praga\&quot;&quot;
+  set filter "(folder:gmail/inbox or folder:free/inbox or tag:inbox) and from:\"Alexis Praga\""
   notmuch tag +sent +archived -inbox --  $filter
 
   # Move archived mail from inbox to archive folder
@@ -253,19 +253,19 @@ move mails in the proper folder (=inbox=, =archive=) or delete it :
   set filter tag:archived folder:free/inbox
   notmuch search $args $filter  | xargs -0 -J {} mv {} ~/mail/free/archive/cur
 
-  # Really delete &quot;deleted messages&quot; from gmail
-  set filter &quot;folder:gmail/trash&quot;
+  # Really delete "deleted messages" from gmail
+  set filter "folder:gmail/trash"
   notmuch tag +deleted --  $filter
 
   # delete mails as notmuch cannot do it
-  set filter &quot;(folder:free/inbox or folder:gmail/inbox or folder:gmail/trash) and tag:deleted&quot;
+  set filter "(folder:free/inbox or folder:gmail/inbox or folder:gmail/trash) and tag:deleted"
   notmuch search $args $filter  | xargs -0 -J {} mv {} ~/mail/trash/cur
 
   # Get new mail
   notmuch new
 
   ❯ crontab -l
-  MAILTO=&quot;&quot;
+  MAILTO=""
   */5 * * * * $HOME/scripts/mbsync_notmuch.sh
 #+END_EXAMPLE
 
