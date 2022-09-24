@@ -191,7 +191,7 @@ Il ne reste plus qu’à le construire
 nix-build
 result/bin/lol.py
 #+end_src
-** Librairies en pythonProjet en Python
+** Python libraries
 On package l’exécutable python avec les libraries. Mettre dans =default.nix=
 #+begin_src nix
 with (import <nixpkgs> {});
@@ -209,4 +209,16 @@ Puis
 nix-build default.nix
 result/bin/python
 >>> import pandas
+#+end_src
+** R librairies
+De même que R, il faut packager R avec les librairies
+#+begin_src nix
+with (import <nixpkgs> {});
+let
+  my-r-packages = rWrapper.override{packages = with rPackages; [
+plotly
+  ];};
+in
+my-r-packages
+
 #+end_src
