@@ -40,6 +40,7 @@
          :auto-sitemap t
          :sitemap-filename "index.html"
          :sitemap-title "Armadillo"
+         :author "Alexis Praga"
          :with-toc nil)
         ("all" :components ("genetique" "posts"))))
 
