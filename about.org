@@ -1,6 +1,6 @@
 * Publications
 - [[https://doi.org/10.1039/D0SM02081H][Labalette, V., Praga, A., Girard, F., Meireles, M., Hallez, Y., & Morris, J. F. (2021). Shear-induced glass-to-crystal transition in anisotropic clay-like suspensions. Soft Matter, 17(11), 3174-3190.]]
-  [[https://doi.org/10.5194/gmd-8-205-2015)][Praga, A., Cariolle, D., & Giraud, L. (2015). Pangolin v1. 0, a conservative 2-D advection model towards large-scale parallel calculation. Geoscientific Model Development, 8(2), 205-220.]]
+- [[https://doi.org/10.5194/gmd-8-205-2015)][Praga, A., Cariolle, D., & Giraud, L. (2015). Pangolin v1. 0, a conservative 2-D advection model towards large-scale parallel calculation. Geoscientific Model Development, 8(2), 205-220.]]
 
 * PhD
 - [[https://hal.inria.fr/tel-01178394/][Praga, A. (2015). A large-scale atmospheric chemistry-transport model for massively parallel architectures (Doctoral dissertation, Université Toulouse III-Paul Sabatier).]]

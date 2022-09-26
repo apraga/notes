@@ -80,9 +80,9 @@ article .header {
   }
 }
 
-@media (min-width: 600px) {
+@media  {
   body {
-    width: 90%;
+    width: 1000px;
     margin: 0;
     padding: 0 5%;
   }
@@ -111,7 +111,7 @@ article .header {
 
 @media (min-width: 640px) {
   body {
-    width: 60rem;
+    width: 100rem;
     margin: 0 auto;
     padding: 0;
   }
