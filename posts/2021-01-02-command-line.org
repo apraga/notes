@@ -1,4 +1,6 @@
-#+title: Command-line tips
+---
+title: Command-line tips
+...
 
 Here is a condensed view of programs I use to make life easier on the
 command-line ordered by priority:
