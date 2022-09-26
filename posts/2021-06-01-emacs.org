@@ -1,6 +1,7 @@
 ---
 title: Life in Emacs
-----
+---
+
 Here is a small summary from my journey from vim to using Emacs for
 (almost) everything ! After using ViM for a few years, I wanted to try
 Emacs. I can summarize months of trial and errors into this single
