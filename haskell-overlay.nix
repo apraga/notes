@@ -3,12 +3,10 @@ final: prev:
     inherit (prev.stdenv) mkDerivation;
     inherit (prev.lib.trivial) flip pipe;
     inherit (prev.haskell.lib)
-      appendPatch
       appendConfigureFlags
       dontCheck
       doJailbreak;
 
-    withPatch = flip appendPatch;
     withFlags = flip appendConfigureFlags;
 
     haskellCompiler = "ghc902";
@@ -18,16 +16,10 @@ final: prev:
         let
           hakyll-src = hpPrev.callHackage "hakyll" "4.15.1.1" {};
           pandoc-src = hpPrev.callHackage "pandoc" "2.17.1.1" {}; # latest version on nixpkgs
-          slugger-src = hpPrev.callHackageDirect {
-            pkg = "slugger";
-            ver = "0.1.0.1";
-            sha256 = "sha256-ggeo5TcbI4UlK/CtG4878USX9Cm7Faz16phdjlDOGaI=";
-          } {}; # not available yet because it's so new
         in rec {
           hakyll = pipe hakyll-src [
             doJailbreak
             dontCheck
-            (withPatch ./hakyll.patch)
             (withFlags [ "-f" "watchServer" "-f" "previewServer" ])
           ];
 
@@ -35,8 +27,6 @@ final: prev:
             doJailbreak
             dontCheck
           ];
-
-          slugger = slugger-src;
 
           blog = hpPrev.callCabal2nix "blog-src" ./blog {};
 
@@ -64,8 +54,8 @@ final: prev:
             '';
 
             installPhase = ''
-              mkdir -p "$out/dist"
-              cp -r dist/* "$out/dist"
+              mkdir -p "$out/_site"
+              cp -r _site/* "$out/_site"
             '';
           };
         };

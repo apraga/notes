@@ -1,15 +1,8 @@
 {
   description = "hakyll-nix-template";
-
-  nixConfig.bash-prompt = "[nix]λ ";
-
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-22.05";
-
-    flake-utils = {
-      url = "github:numtide/flake-utils";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    flake-utils.url = "github:numtide/flake-utils";
   };
 
   outputs = { flake-utils, nixpkgs, self }:

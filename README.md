@@ -12,6 +12,10 @@ Make it local :
 
     nix run . watch
 
+# limitations
+Org metadata are not managed by hakyll.
+A fix is available [here](https://github.com/jaspervdj/hakyll/issues/700) but quite complicated.
+We use YAML metadata instead.
 
 # Structure
 - [](blog) contains the rules for Hakyll to generate the static content
