@@ -6,7 +6,8 @@ import           Hakyll
 --------------------------------------------------------------------------------
 main :: IO ()
 main = hakyll $ do
-    match "images/*" $ do
+    match ("images/*"
+            .||. "genetique/img/*") $ do
         route   idRoute
         compile copyFileCompiler
 
@@ -14,11 +15,11 @@ main = hakyll $ do
         route   idRoute
         compile compressCssCompiler
 
-    -- match (fromList ["about.rst", "contact.markdown"]) $ do
-    --     route   $ setExtension "html"
-    --     compile $ pandocCompiler
-    --         >>= loadAndApplyTemplate "templates/default.html" defaultContext
-    --         >>= relativizeUrls
+    match "about.org" $ do
+        route  $ setExtension "html"
+        compile $ pandocCompiler
+            >>= loadAndApplyTemplate "templates/notitle.html" defaultContext
+            >>= relativizeUrls
 
     match "posts/*" $ do
         route $ setExtension "html"
@@ -49,6 +50,25 @@ main = hakyll $ do
             let indexCtx =
                     listField "posts" postCtx (return posts) `mappend`
                     defaultContext
+
+            getResourceBody
+                >>= applyAsTemplate indexCtx
+                >>= loadAndApplyTemplate "templates/default.html" indexCtx
+                >>= relativizeUrls
+
+    match "genetique/*.org" $ do
+        route $ setExtension "html"
+        compile $ pandocCompiler
+            >>= loadAndApplyTemplate "templates/post.html"    defaultContext
+            >>= loadAndApplyTemplate "templates/default.html" defaultContext
+            >>= relativizeUrls
+
+    match "genetique.html" $ do
+        route idRoute
+        compile $ do
+            posts <- loadAll "genetique/*.org"
+            let indexCtx = listField "notes" defaultContext (return posts)
+                  `mappend` defaultContext
 
             getResourceBody
                 >>= applyAsTemplate indexCtx

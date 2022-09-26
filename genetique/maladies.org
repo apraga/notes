@@ -1,5 +1,9 @@
-#+TITLE: Maladies
+---
+title: Maladies
+---
+
 #+OPTIONS: toc:1
+
 * TODO 17q12 del
 * 47XXX
 X le plus souvent maternelle

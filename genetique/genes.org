@@ -1,4 +1,6 @@
-#+title: Genes
+---
+title: Genes
+---
 
 * RANBP2 : susceptibilité encéphalopatihe
 ** Encéphalopathie aigüe nécrosante :
