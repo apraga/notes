@@ -466,7 +466,7 @@ Autres critères
 - conservation interespèces
 - expérience : étude gènes et trnascrite, étude /in vitro/ sur des cellules, /in vivo/
 - ségrégation : de novo ou coségrégation = en faveur
-
+- expression de la protéine dans les tissus (human protein atlas)
 Voir [[file:bio.org::*Intron][Intron]]
 
 - faux-sens = peut tout donner !
