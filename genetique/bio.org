@@ -465,7 +465,6 @@ Autres critères
 - effet sur proténie : région/domaine essentiel (polarité/charge acide amine, encombrement stérique) -> score bioinfo
 - conservation interespèces
 - expérience : étude gènes et trnascrite, étude /in vitro/ sur des cellules, /in vivo/
-
 - ségrégation : de novo ou coségrégation = en faveur
 
 Voir [[file:bio.org::*Intron][Intron]]
@@ -736,7 +735,10 @@ Sur les amorces, majuscules pour exon, minuscules intron
 - In silico PCR: plusieurs résultats possibles sur l’X -> prendre HG38 (car correctif)
 - Si difficile de prendre l’exon, dans amplifix prendre la borne de l’exon et chercher une amorce à partir de cette borne + 5bp. En baissant un peu la qualité
 
-
+** Interprétation CGH
+Decipher vs clingen pour haploinsuffisance
+- decipher = non curé donc algo se base seulement sur les soumissions (même si fonction du gène non connue)
+- clingen = gène doit être connu dans OMIM (donc on connaît la fonction) + curé
 * Footnotes
 
 [fn:1] C<->T ou A <-> G
