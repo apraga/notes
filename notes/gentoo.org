@@ -1,5 +1,66 @@
 #+title: Gentoo
 
+* Install
+=sys-kernel/gentoo-kernel-bin= contient un noyau pré-compilé avec la plupart des choses nécessaires
+
+* Config
+** Fichiers
+/etc/portage/make.conf
+#+begin_src sh
+# These settings were set by the catalyst build script that automatically
+# built this stage.
+# Please consult /usr/share/portage/config/make.conf.example for a more
+# detailed example.
+COMMON_FLAGS="-march=native -O2 -pipe"
+CFLAGS="${COMMON_FLAGS}"
+CXXFLAGS="${COMMON_FLAGS}"
+FCFLAGS="${COMMON_FLAGS}"
+FFLAGS="${COMMON_FLAGS}"
+
+# NOTE: This stage was built with the bindist Use flag enabled
+PORTDIR="/var/db/repos/gentoo"
+DISTDIR="/var/cache/distfiles"
+PKGDIR="/var/cache/binpkgs"
+
+# This sets the language of build output to English.
+# Please keep this setting intact when reporting bugs.
+LC_MESSAGES=C
+
+MAKEOPTS="-j4"
+USE="X dist-kernel binary pulseaudio"
+VIDEO_CARDS="nvidia"
+
+GENTOO_MIRRORS="http://gentoo.mirrors.ovh.net/gentoo-distfiles/"
+ACCEPT_LICENSE="*"
+GRUB_PLATFORMS="efi-64"
+
+#+end_src
+/etc/portage/package.use/emacs
+#+begin_src sh
+# Nativecomp with jit
+# json for performances with doom-emacs
+# gui and gtk for GUI
+# xft for doomemacs
+app-editors/emacs jit gui gitk json xft
+sys-devel/gcc jit
+#+end_src
+
+/etc/portage/package.use/firefox
+#+begin_src sh
+# for selenium in python, we need the geckodriver
+www-client/firefox geckodriver
+
+# required by www-client/firefox-102.3.0::gentoo[system-libvpx]
+# required by www-client/firefox (argument)
+>=media-libs/libvpx-1.12.0 postproc
+#+end_src
+
+/etc/portage/package.use/polybar
+#+begin_src sh
+x11-misc/polybar mpd network
+#+end_src
+
+** X
 Sans bureau, il faut ajouter pulseaudio dans .xinitrc !
 
 #+begin_src sh
