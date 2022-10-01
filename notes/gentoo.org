@@ -1,0 +1,11 @@
+#+title: Gentoo
+
+Sans bureau, il faut ajouter pulseaudio dans .xinitrc !
+
+#+begin_src sh
+setxkbmap fr bepo
+feh --bg-scale ~/pictures/gentoo.jpg &
+exec pulseaudio &
+exec xmonad
+
+#+end_src
