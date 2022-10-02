@@ -1,13 +1,13 @@
-all: local purge dist
+all: local dist
 
-local: publish.el
-	emacs -Q --script publish.el
+local:
+	nix run . build
 
-purge:
-	find html -name "*~" -exec rm {} \;
+watch:
+	nix run . watch
 
 # z option is important to avoid re-uploading everything
 # it must be at the beginning
 # We need a wilcard to avoid an html folder
 dist:
-	ncftpput -z -f login.cfg -R . html/*
+	ncftpput -z -f login.cfg -R . _site/*
