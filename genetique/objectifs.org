@@ -1,6 +1,5 @@
----
-title: Objectifs
----
+#+title: Objectifs
+
 * DES génétique médicale - phase socle
 ** Clinique
 Participer à au moins 100 consultations (CS) comprenant au minimum

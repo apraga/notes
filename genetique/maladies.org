@@ -1,6 +1,4 @@
----
-title: Maladies
----
+#+title: Maladies
 
 #+OPTIONS: toc:1
 

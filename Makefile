@@ -1,7 +1,9 @@
 all: local dist
 
+# Rebuild must be done twice due to a limitation of Hakyll with org metadata (see code)
 local:
-	nix run . build
+	nix run . rebuild
+	nix run . rebuild
 
 watch:
 	nix run . watch

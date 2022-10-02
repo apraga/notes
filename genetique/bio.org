@@ -1,6 +1,5 @@
----
-title: Biologie
----
+#+title: Biologie
+
 * Génome
 ** Structure et régulation du génome
 *** Chromatine

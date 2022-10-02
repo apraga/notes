@@ -12,6 +12,14 @@ Make it local :
 
     nix run . watch
 
+# Debug/development
+
+    nix develop
+    $ ghci
+    ghci> :l blog/Main.hs
+    ghci> :set args build
+    ghci> main
+
 # limitations
 Org metadata are not managed by hakyll.
 A fix is available [here](https://github.com/jaspervdj/hakyll/issues/700) but quite complicated.

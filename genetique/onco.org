@@ -1,6 +1,4 @@
----
-title: Oncologie
----
+#+title: Oncologie
 
 * Grand concepts
 Mutations /drivers/: joue un rôle dans la transformation maligne

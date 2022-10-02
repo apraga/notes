@@ -1,6 +1,4 @@
----
-title: Biblio
----
+#+title: Biblio
 
 * Encéphalopathie aigùe induite par une infection :biblio:
 Source: https://www.omim.org/entry/610551

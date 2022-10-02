@@ -1,6 +1,4 @@
----
-title: Streaming media with FreeBSD
----
+#+title: Streaming media with FreeBSD
 
 Here, I'll explain how to configure FreeBSD to share media content over
 the network using NFS, and how to configure Kodi to access it from your

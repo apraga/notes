@@ -1,6 +1,4 @@
----
-title: Loi Bioéthique 2021
----
+#+title: Loi Bioéthique 2021
 
 Pascale Levy, Agence de la Biomédecine
 * Postnatal
