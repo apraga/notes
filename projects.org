@@ -156,7 +156,13 @@ monoallélique -> inactivation partielle pourrait jouer un rôle
 ***** TODO Pathway
 Wnt/β-cateninng : impliqué dans
 - NF1 selon [cite:@2013]  (activation)
+  et https://www.nature.com/articles/cdd201654
+  https://www.sciencedirect.com/science/article/pii/S8756328217300571?casa_token=hXS_Cmtozt8AAAAA:enMW1d09t-ms-mlCC6eMIX-C2XyvxuastFwmLi8wkYVO3zZlDdEtSY1eU-7s27xcHLoNe3hrXCM
+  (cf leur biblio)
 - hépatoblastome selon [cite:@dubbink2018]    (perte de fonction -> excès β-catening par absence de dégradation)
+- schwannomees NF2 via hyperactivation  https://www.nature.com/articles/cdd201654
+  et vestibular schwanoma
+  https://www.nature.com/articles/s41401-022-00908-4
 ***** Autres
 [cite:@kappler2010]: rien ne correspond
 Voie RAS impliquée dans hépatoblastome ?
