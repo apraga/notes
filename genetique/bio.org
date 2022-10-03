@@ -304,8 +304,8 @@ Si "tige" longue, on peut supposer que c’est un facteur de risque pour translo
 * Moléculaire
 ** Principales techniques d’analyse des anormalies génétiques à l’échelle du gène (Collège)
 *** Extraction
-- ADN: tissu frais, congelés (Guthrie, frottis, cheveuxx..). Habituellement : leucocycte du sang sur tube anticoagulant
-- NARN: cellules en culture, tissus à -80 ou tissus frais
+- ADN: tissu frais ou congelés (Guthrie, frottis, cheveux..). Habituellement : leucocycte du sang sur tube anticoagulant (EDTA)
+- ARN: cellules en culture, tissus à -80 ou tissus frais. Attention : utiliser du matérial "RNase free"
   Phénol/chloroforme = référence
   Conservation
   - ADN purifié : 4°
@@ -320,7 +320,7 @@ Coupe ADN double brin sur séquences spécifiques
 2. proofreading (sens inverse)
 3. élimine fragment appariés
 **** ARN dépendantes (transcriptase inverse)
-ARNm -> ADN complétentaire
+ARNm -> ADN complémentaire
 *** Électrophorèse
 Aciden nucléique = macromolécule chargées -> migrent dans un champ électrique
 Plus le fragment d’ADN est petit, plus il migre haut
@@ -330,12 +330,11 @@ Plus le fragment d’ADN est petit, plus il migre haut
 - inversions
 - cartographies de restrictions
 **** Méthode
-ADN digéré par des enzymes de restrictions
-Fragments séparés par du gel d’agarose
-Ajout sonde spécifique puis lavage pour enlever les séquences non spécifiques
+- ADN digéré par des enzymes de restrictions
+- Fragments séparés par du gel d’agarose
+- Ajout sonde spécifique puis lavage pour enlever les séquences non spécifiques
 *** Northern Blot
-Southern Blot mais sur ARN
-Montre
+Southern Blot mais sur ARN. Montre
 - absence/diminution ARNm (réarrangements majeurs, mutation promoteur, anomalies transcription/transcrit instable)
 - taille
 - transcrits alternatifs
@@ -348,6 +347,9 @@ Amplification d’une courte séquence d’ADN pour avoir une grande quantité d
 3. Polymérisation: avec ADN polymérase ADN dépendantes, on reconstitue ADN double brin
    On répéte la technique pour avoir $N_0 (1+\epsilon)˰n$ matériel où $\epsilon$ est le rendement
    Vérification de la qualité par électrophorèse
+
+À noter que la répétion des polymérisation va "couper" l'ADN pour avoir le bon fragment (on prend la moité à chaque polymérisation). Cf cette figure
+[[file:img/pcr2.png]]
 **** RT-PCR
 Idem mais pour ARN. Permet
 - transcript anormaux (mutation d’épissage)
