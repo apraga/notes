@@ -5483,3 +5483,5 @@ Bkick 5
 Aerial bkick 5
 Tornado 10
 "Raiz" 10
+* <2022-10-05 Wed> Running
+24min dont 8 en côte, intensité moyenne

@@ -154,12 +154,29 @@ monoallélique -> inactivation partielle pourrait jouer un rôle
 [cite:@skoczen2019] hépatoblastome + neuroblastome avec plusieurs variants dont NF1
 ***** TODO NF1 + autres cancers
 ***** TODO Pathway
-Wnt/β-cateninng : impliqué dans
-- NF1 selon [cite:@2013]  (activation)
-  et https://www.nature.com/articles/cdd201654
+Wnt/β-cateninng : impliqué dans NF1
+activation Ras/MAPk -> augemantation niveau de βcatenine
+
+- [cite:@2013] : activation de la voie -> développement + progression des tumeurs nerveues périphériques
+  [rappel : entraine des neurofibromes qui sont bénin mais qui peuvent se transformer en tumeur maligne]. Modèle murin + étude de l'expression murine model : activation ->  (activation)
+- [cite:@luscan2014] : idem, le plus convaincant, activation de la voie dans MPNSTS
+-  In Neurofibromatosis type 1, GTPase function is ablated leading to unsuppressed activation of
+the Ras/MAPK signaling pathway[19], which can lead to enhanced Wnt/β-catenin signaling through
+quenching GSK-3β’s inhibitory effect on Wnt/β-catenin signaling[20]
+- lien avec ossification
+  - sourics avec défaut /NF1/ : augmentation niveau de βcatenine sur phase précoce de consolidation fracture osseuse
+  - néfopam (inhibe βcatenin) : améliore ossification [cite:@baht2017] sur de courtes période de temps
+  - idem mais sur souris agếes et dans Nature (mais sans NF1, juste confirme le lien) [cite:@kwak2019]
+
   https://www.sciencedirect.com/science/article/pii/S8756328217300571?casa_token=hXS_Cmtozt8AAAAA:enMW1d09t-ms-mlCC6eMIX-C2XyvxuastFwmLi8wkYVO3zZlDdEtSY1eU-7s27xcHLoNe3hrXCM
   (cf leur biblio)
+
+ mini review phttps://www.ijpmonline.org/article.asp?issn=0377-4929;year=2020;volume=63;issue=1;spage=112;epage=115;aulast=Ghose#ref9
+
 - hépatoblastome selon [cite:@dubbink2018]    (perte de fonction -> excès β-catening par absence de dégradation)
+
+NF2
+- [cite:@kim2016] activation
 - schwannomees NF2 via hyperactivation  https://www.nature.com/articles/cdd201654
   et vestibular schwanoma
   https://www.nature.com/articles/s41401-022-00908-4
@@ -1575,21 +1592,22 @@ Probablement plus simple d’utiliser Nix pour gestion de l’environnement et s
 Pas d’accès internet depuis le cluster
 ***** DONE nextflow
 CLOSED: [2022-09-13 Tue 21:37]
-**** TODO Preprocessing avec nextflow
-***** TODO Map to reference
-***** TODO Mark duplicate
-***** TODO Recalibrate base quality score
+**** WAIT Preprocessing avec nextflow
+***** WAIT Map to reference
+***** WAIT Mark duplicate
+***** WAIT Recalibrate base quality score
 **** TODO Variant calling avec Netxflow
-***** TODO Haplotype caller
+***** WAIT Haplotype caller
 ***** TODO Filter variants
 ***** TODO Refine genotype
 **** TODO Annotation avec Netxflow
-*** Améliorer le workflow
+*** Améliorations
 **** TODO Utilise une versionn allégée de GnomAD (une seule colonne)
 **** KILL Utiliser 1000 genome pour known_snp ?
 CLOSED: [2022-09-19 Mon 22:37]
 Apparement, déjà dans dbSNP
 https://www.internationalgenome.org/category/dbsnp/
+**** TODO Utiliser T-to-T comme références
 *** TODO Tests
 **** TODO Sarek
 ***** Dépendances
@@ -1639,6 +1657,7 @@ Mais problème de proxy
 **** TODO Test de non régression
 **** TODO Genome in a bottle ?
 SCHEDULED: <2022-07-30 Sat>
+On n'a pas l'ADN.. séquencer à Centogène ?
 *** Simulation sur mésocentre
 **** Réunion <2022-08-31 Wed>
 Intervenants:
