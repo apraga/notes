@@ -157,7 +157,7 @@ monoallélique -> inactivation partielle pourrait jouer un rôle
 Wnt/β-cateninng : impliqué dans NF1
 activation Ras/MAPk -> augemantation niveau de βcatenine
 
-- [cite:@2013] : activation de la voie -> développement + progression des tumeurs nerveues périphériques
+- [cite:@watson2013] : activation de la voie -> développement + progression des tumeurs nerveues périphériques
   [rappel : entraine des neurofibromes qui sont bénin mais qui peuvent se transformer en tumeur maligne]. Modèle murin + étude de l'expression murine model : activation ->  (activation)
 - [cite:@luscan2014] : idem, le plus convaincant, activation de la voie dans MPNSTS
 -  In Neurofibromatosis type 1, GTPase function is ablated leading to unsuppressed activation of
