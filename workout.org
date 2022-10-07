@@ -5485,3 +5485,17 @@ Tornado 10
 "Raiz" 10
 * <2022-10-05 Wed> Running
 24min dont 8 en côte, intensité moyenne
+* <2022-10-06 Thu> Workout
+Échauffement 2
+
+Circuit
+2x2 muscle-up
++ vertical + l-sit + push-up tucked + negative muscle-up + tucked pulled-up  negative dragonflag
+* <2022-10-07 Fri> Tricking
+5 back
+5 bkick
+5 bkick-aerial
+10 front
+10 reverse
+10 tornado
+10 roundabout

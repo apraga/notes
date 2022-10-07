@@ -2,7 +2,8 @@
 
 * Install
 =sys-kernel/gentoo-kernel-bin= contient un noyau pré-compilé avec la plupart des choses nécessaires
-
+** Difficulté
+Si la clé USB ne démarre pas en UEFI, installer jusqu'à GRUB puis mettre [[https://www.system-rescue.org/][system rescues]] sur la clé USB et inrstaller grub.
 * Config
 See github repo portag-config
 ** X
