@@ -1082,3 +1082,50 @@ CLOSED: [2022-09-19 Mon 22:37]
   - [ ] Supprimé du code
   - [ ] Rajouter boucle sur plusieurs fichiers
 
+
+* KILL Télécharger les données avec makefile
+CLOSED: [2022-10-09 Sun 22:27]
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-10-09 Sun 22:28
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Recherche/Pipeline exome/Nouveau workflow/Bases de données
+:ARCHIVE_CATEGORY: recherche
+:ARCHIVE_TODO: KILL
+:END:
+
+* DONE Problème de scheduling Slurm sur helios :
+CLOSED: [2022-10-09 Sun 22:27]
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-10-09 Sun 22:28
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Recherche/Pipeline exome/Nouveau workflow/Bases de données/Processing bases de données
+:ARCHIVE_CATEGORY: recherche
+:ARCHIVE_TODO: DONE
+:END:
+- squeue ne fonctionne pas
+- nextflow finit par quitter alors que le job tourne
+Issue soumis sur github: https://github.com/nextflow-io/nextflow/issues/1644
+Seule la version Nix ne fonctionne pas alors que c’est le même executable... !!
+
+
+* DONE Utiliser nf-core plutôt que nos fonction
+CLOSED: [2022-10-09 Sun 22:27]
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-10-09 Sun 22:28
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Recherche/Pipeline exome/Nouveau workflow/Bases de données/Processing bases de données
+:ARCHIVE_CATEGORY: recherche
+:ARCHIVE_TODO: DONE
+:END:
+
+* KILL Utiliser 1000 genome pour known_snp ?
+CLOSED: [2022-09-19 Mon 22:37]
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-10-09 Sun 22:30
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Recherche/Pipeline exome/Améliorations
+:ARCHIVE_CATEGORY: recherche
+:ARCHIVE_TODO: KILL
+:END:
+Apparement, déjà dans dbSNP
+https://www.internationalgenome.org/category/dbsnp/

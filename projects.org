@@ -1555,7 +1555,7 @@ Problème : nécessite singularity ou docker (ou conda)
 Potentiellement utilisable avec nix...
 
 *** Nouveau workflow
-**** Bases de données
+**** TODO Bases de données
 ***** KILL Nix pour télécharger les données brutes
 ****** Conclusion
 Non viable sur cluster car en dehors de /nix/store
@@ -1564,21 +1564,16 @@ On peut utiliser des symlink mais trop compliqué
 CLOSED: [2022-08-19 Fri 15:18]
 ***** DONE Tester patch de @pennae pour gros fichiers
 SCHEDULED: <2022-08-19 Fri>
-***** DONE Télécharger
-- [ ] Refseq 20G
+***** STRT Télécharger
+- [X] Genome de référence
+- [X] dbSNP
+- [X] OMIM
 - [ ] VEP 20G
 ***** DONE Télécharger les données avec nextflow
 CLOSED: [2022-09-13 Tue 21:37]
-***** STRT Télécharger les données avec makefile
-****** TODO MD5sum
 ***** TODO Processing bases de données
-****** TODO Problème de scheduling Slurm sur helios :
-- squeue ne fonctionne pas
-- nextflow finit par quitter alors que le job tourne
-Issue soumis sur github: https://github.com/nextflow-io/nextflow/issues/1644
-Seule la version Nix ne fonctionne pas alors que c’est le même executable... !!
-
-****** TODO Utiliser nf-core plutôt que nos fonction
+- [X] dbSNP common
+- [ ] dbSNP common
 **** DONE Dépendences
 CLOSED: [2022-09-10 Sat 12:41]
 ***** DONE Nix pour les dépendences
@@ -1592,10 +1587,14 @@ Probablement plus simple d’utiliser Nix pour gestion de l’environnement et s
 Pas d’accès internet depuis le cluster
 ***** DONE nextflow
 CLOSED: [2022-09-13 Tue 21:37]
-**** WAIT Preprocessing avec nextflow
-***** WAIT Map to reference
-***** WAIT Mark duplicate
-***** WAIT Recalibrate base quality score
+**** DONE Preprocessing avec nextflow
+CLOSED: [2022-10-09 Sun 22:30]
+***** DONE Map to reference
+CLOSED: [2022-10-09 Sun 22:30]
+***** DONE Mark duplicate
+CLOSED: [2022-10-09 Sun 22:30]
+***** DONE Recalibrate base quality score
+CLOSED: [2022-10-09 Sun 22:30]
 **** TODO Variant calling avec Netxflow
 ***** WAIT Haplotype caller
 ***** TODO Filter variants
@@ -1603,12 +1602,9 @@ CLOSED: [2022-09-13 Tue 21:37]
 **** TODO Annotation avec Netxflow
 *** Améliorations
 **** TODO Utilise une versionn allégée de GnomAD (une seule colonne)
-**** KILL Utiliser 1000 genome pour known_snp ?
-CLOSED: [2022-09-19 Mon 22:37]
-Apparement, déjà dans dbSNP
-https://www.internationalgenome.org/category/dbsnp/
 **** TODO Utiliser T-to-T comme références
 *** TODO Tests
+**** TODO Non-régression avec alexis
 **** TODO Sarek
 ***** Dépendances
 ****** Nix
