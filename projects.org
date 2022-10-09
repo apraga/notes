@@ -1572,8 +1572,12 @@ SCHEDULED: <2022-08-19 Fri>
 ***** DONE Télécharger les données avec nextflow
 CLOSED: [2022-09-13 Tue 21:37]
 ***** TODO Processing bases de données
-- [X] dbSNP common
-- [ ] dbSNP common
+****** DONE dbSNP common
+****** TODO common dbSNP not clinvar patho
+ - [ ] normaliser les noms de chromosomes
+ - [ ] packager rgttools avec nix (utilise ant)
+ - [ ] UTiliser vcfeval pour intersection (permet de gérer les représentations différentes)
+
 **** DONE Dépendences
 CLOSED: [2022-09-10 Sat 12:41]
 ***** DONE Nix pour les dépendences
@@ -1596,14 +1600,21 @@ CLOSED: [2022-10-09 Sun 22:30]
 ***** DONE Recalibrate base quality score
 CLOSED: [2022-10-09 Sun 22:30]
 **** TODO Variant calling avec Netxflow
-***** WAIT Haplotype caller
-***** TODO Filter variants
-***** TODO Refine genotype
+***** DONE Haplotype caller
+CLOSED: [2022-10-09 Sun 22:40]
+***** DONE Filter variants
+CLOSED: [2022-10-09 Sun 22:40]
+***** TODO Filter common snp not clinvar path
+***** TODO Filter variant only in consensual sequence
+***** TODO Filter technical variants
 **** TODO Annotation avec Netxflow
 *** Améliorations
 **** TODO Utilise une versionn allégée de GnomAD (une seule colonne)
 **** TODO Utiliser T-to-T comme références
 *** TODO Tests
+**** TODO Divers
+***** DONE Vérifier nobmer de reads fastq - bam
+CLOSED: [2022-10-09 Sun 22:31]
 **** TODO Non-régression avec alexis
 **** TODO Sarek
 ***** Dépendances
@@ -2106,8 +2117,10 @@ CLOSED: [2022-09-11 Sun 22:05]
 https://github.com/NixOS/nixpkgs/pull/191548
 ** TODO Nextflow
 *** WAIT version script seule
+Fix pour SGE et nextflow
 https://github.com/NixOS/nixpkgs/issues/192396
-*** TODO Version avec gradle
+*** KILL Version avec gradle
+CLOSED: [2022-10-09 Sun 22:51]
 ** TODO Multiqc
 ** DONE BioPerl
 SCHEDULED: <2022-08-10 Wed>
@@ -2124,6 +2137,8 @@ SCHEDULED: <2022-08-10 Wed>
 ** WAIT Nixpkg for BioExtAlign
 SCHEDULED: <2022-08-10 Wed>
 /Entered on/ [2022-08-10 Wed 14:28]
+
+** TODO rtgtools
 
 * Voiture
 ** Mazda 5
