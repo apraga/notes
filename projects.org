@@ -2115,6 +2115,7 @@ PR submitted
 CLOSED: [2022-09-11 Sun 22:05]
 *** WAIT Corriger PATH pour include java et python
 https://github.com/NixOS/nixpkgs/pull/191548
+Review <2022-10-10 Mon> , corrigé dans la journée
 ** TODO Nextflow
 *** WAIT version script seule
 Fix pour SGE et nextflow
@@ -2129,10 +2130,13 @@ PR submitted
 ** WAIT Nixpkg for BioDBBigFile
 SCHEDULED: <2022-08-10 Wed>
 /Entered on/ [2022-08-10 Wed 14:28]
+Demande review <2022-10-10 Mon>
 
 ** WAIT Nixpkg for BioDBHTS
 SCHEDULED: <2022-08-10 Wed>
 /Entered on/ [2022-08-10 Wed 14:28]
+Demande review <2022-10-10 Mon>
+
 
 ** WAIT Nixpkg for BioExtAlign
 SCHEDULED: <2022-08-10 Wed>
