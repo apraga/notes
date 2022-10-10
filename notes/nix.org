@@ -140,9 +140,9 @@ nix profile remove '.*'
 * Nixpkgs
 ** Ajoutr un nouveau paquet
 https://nixos.wiki/wiki/Nixpkgs/Contributing
-Tester dans nixpkgs qu’il compiler
+Tester dans nixpkgs qu’il compile
 #+begin_src sh
-nix-shell -A mypackage
+nix-build -A mypackage
 #+end_src
 Tester les dépendenances
 #+begin_src sh

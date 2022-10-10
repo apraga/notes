@@ -2137,8 +2137,12 @@ SCHEDULED: <2022-08-10 Wed>
 ** WAIT Nixpkg for BioExtAlign
 SCHEDULED: <2022-08-10 Wed>
 /Entered on/ [2022-08-10 Wed 14:28]
+Review <2022-10-10 Mon>, correction dans la journée.
+Impossible de faire marcher les tests Car il ne trouve pas le module Bio::Tools::Align, qui est dans un dossier ailleurs dans le dépôt. Même en compilant tout le dépôt, cela ne fonctionne pas... On skip les tests.
 
 ** TODO rtgtools
+Solution 1: supprimer les appels à javascript
+Solution 2: packages graaljs en compilant depuis le sourc   e
 
 * Voiture
 ** Mazda 5
