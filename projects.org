@@ -99,8 +99,11 @@ SCHEDULED: <2022-08-06 Sat>
 Envoyé <2022-07-22 Fri>
 Pas de réponse
 *** DONE Donner la réponse à Chloé + Patricia Fergelot
-*** TODO Démarrer appel à collaboration avec Chloé
+*** TODO appel à collaboration avec Chloé
+**** TODO Questionnaire
+***** WAIT v0.1
 SCHEDULED: <2022-10-01 Sat>
+envoyé le <2022-10-11 Tue>
 ** NF1 :nf1:
 *** Notes
 **** notre patiente
