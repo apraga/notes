@@ -95,15 +95,35 @@ Meilleures solution :
 nix-prefetch-url --unpack https://...tar.gz
 #+end_src
 Ou bien, ne pas mettre de hash et copier le résultat de l’erreur !
-*** Pour débugger une derivation, on utilise un shell en appelant le package :
+*** Débugger
+[[https://nixos.wiki/wiki/Nixpkgs/Create_and_debug_packages][Source]]
 Sans Flakes
 #+begin_src nix
 nix-shell -E 'with import <nixpkgs> {}; callPackage ./default.nix {}'
+#+end_src
+Avec Flakes
+#+begin_src nix
+nix develop .#my-package
+#+end_src
+
+Puis
+#+begin_src nix
+$ export out=~/tmpdev/bc-build/out
+$ source $stdenv/setup
+$ genericBuild
+#+end_src
+Pour faire une seule phase
+#+begin_src nix
+ phases="buildPhase checkPhase" genericBuild
+#+end_src
+NB: on peut faire aussi
+#+begin_src nix
 [nix-shell]$ eval ${unpackPhase:-unpackPhase}
 [nix-shell]$ cd source
 [nix-shell]$ eval ${configurePhase:-configurePhase}
 [nix-shell]$ eval ${buildPhase:-buildPhase}
 #+end_src
+
 ** Pour installer une seule dérivation
 #+begin_src
 nix-shell -p 'with import <nixpkgs>{}; callPackage pkgs/GenomeRef.nix {}'
