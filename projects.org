@@ -1588,6 +1588,7 @@ CLOSED: [2022-10-11 Tue 12:37]
 ****** WAIT BioDBHTS
 ****** WAIT BioExtAlign
 ****** WAIT BioBigFile
+****** TODO rtg-tools
 
 **** DONE Exécution
 CLOSED: [2022-09-13 Tue 21:37]
@@ -1613,6 +1614,8 @@ CLOSED: [2022-10-09 Sun 22:40]
 ***** DONE Filter variants
 CLOSED: [2022-10-09 Sun 22:40]
 ***** TODO Filter common snp not clinvar path
+- [ ] Tester rtg-tools
+- [ ] Tester comm
 ***** TODO Filter variant only in consensual sequence
 ***** TODO Filter technical variants
 **** TODO Annotation avec Netxflow
