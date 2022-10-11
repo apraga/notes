@@ -1578,9 +1578,17 @@ CLOSED: [2022-09-13 Tue 21:37]
  - [ ] packager rgttools avec nix (utilise ant)
  - [ ] UTiliser vcfeval pour intersection (permet de gérer les représentations différentes)
 
-**** DONE Dépendences
-CLOSED: [2022-09-10 Sat 12:41]
+**** TODO Dépendences
 ***** DONE Nix pour les dépendences
+CLOSED: [2022-10-11 Tue 12:37]
+*****
+***** TODO Utiliser version dans nixpkgs
+*****
+****** TODO GATK
+****** WAIT BioDBHTS
+****** WAIT BioExtAlign
+****** WAIT BioBigFile
+
 **** DONE Exécution
 CLOSED: [2022-09-13 Tue 21:37]
 ***** KILL test Bionix
@@ -2106,14 +2114,16 @@ SCHEDULED: <2022-08-04 Thu>
 ** TODO Copier photos famille depuis drive yvain sur drive famille
 SCHEDULED: <2022-07-30 Sat>
 * Nix
-** WAIT Nixpkg for GATK
+** DONE Nixpkg for GATK
+CLOSED: [2022-10-11 Tue 11:46]
 *** DONE Binaire
 CLOSED: [2022-09-10 Sat 23:53] SCHEDULED: <2022-08-10 Wed>
 /Entered on/ [2022-08-09 Tue 10:57]
 PR submitted
 *** KILL Corriger code pour utiliser source
 CLOSED: [2022-09-11 Sun 22:05]
-*** WAIT Corriger PATH pour include java et python
+*** DONE Corriger PATH pour include java et python
+CLOSED: [2022-10-11 Tue 11:46]
 https://github.com/NixOS/nixpkgs/pull/191548
 Review <2022-10-10 Mon> , corrigé dans la journée
 ** TODO Nextflow
@@ -2127,21 +2137,22 @@ CLOSED: [2022-10-09 Sun 22:51]
 SCHEDULED: <2022-08-10 Wed>
 /Entered on/ [2022-08-09 Tue 10:57]
 PR submitted
-** WAIT Nixpkg for BioDBBigFile
+** STRT Nixpkg for BioDBBigFile
 SCHEDULED: <2022-08-10 Wed>
 /Entered on/ [2022-08-10 Wed 14:28]
-Demande review <2022-10-10 Mon>
+Corriger review
 
 ** WAIT Nixpkg for BioDBHTS
 SCHEDULED: <2022-08-10 Wed>
 /Entered on/ [2022-08-10 Wed 14:28]
-Demande review <2022-10-10 Mon>
+Correction pour review faites <2022-10-10 Mon>
 
 
 ** WAIT Nixpkg for BioExtAlign
 SCHEDULED: <2022-08-10 Wed>
 /Entered on/ [2022-08-10 Wed 14:28]
 Review <2022-10-10 Mon>, correction dans la journée.
+Correction 2e passe, attente
 Impossible de faire marcher les tests Car il ne trouve pas le module Bio::Tools::Align, qui est dans un dossier ailleurs dans le dépôt. Même en compilant tout le dépôt, cela ne fonctionne pas... On skip les tests.
 
 ** TODO rtgtools
