@@ -16,3 +16,17 @@ exec pulseaudio &
 exec xmonad
 
 #+end_src
+
+* TBW-108UB
+** Version naive
+#+begin_src sh
+git clone https://github.com/lwfinger/rtl8723bu.git /usr/local
+cd /usr/local/rtl8723
+# Comment concurrent mode (enable connection + access point by default)
+sed '/EXTRA_CFLAGS += -DCONFIG_CONCURRENT_MODE/s/^/#/' Makefile
+make
+make install
+modprobe 8723u
+# Enable for future boot
+echo 8723bu > /etc/modprobe.d/networking.conf
+#+end_src
