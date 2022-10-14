@@ -178,6 +178,8 @@ Update : it seems to work without nginx with a socket ??
   :PROPERTIES:
   :CUSTOM_ID: org-mode
   :END:
+** Wrap selection into an org-block
+C-c C-, s
 ** Latex :
 Bibliography: Ajouter dans le header
 #+begin_src org
@@ -197,7 +199,7 @@ sub makeglossaries {
  }
 
 #+end_src
-** Utiliser lulatex
+** lulatex
    :PROPERTIES:
    :CUSTOM_ID: utiliser-lulatex
    :END:
