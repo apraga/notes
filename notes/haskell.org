@@ -45,59 +45,7 @@ main = do
   print $ frameRow t 1
 
 #+end_src
-* Learning Haskell
-** Libraries
-- [X] Shelly - [X] Xmonad
-
-= - Récup de l'écran=\\
-= - Faire un projet cabal=
-
-** Concepts
-   :PROPERTIES:
-   :CUSTOM_ID: concepts
-   :END:
-
-- [X] Functional dependencies
-
-= - [X] =[[https://www.youtube.com/watch?v=JleVecHAad4][=An`` ``introduction`` ``to`` ``Haskell's`` ``kinds=]]= =\\
-= - [X] =[[https://www.youtube.com/watch?v=Qy_yxVkO8no][=Getting`` ``a`` ``little`` ``fancy`` ``with`` ``Haskell's`` ``kinds=]]
-
-- [ ] Backpack
-
-= - [ ] =[[http://blog.ezyang.com/2016/10/try-backpack-ghc-backpack/][=Part`` ``1=]]\\
-= - [ ] =[[https://sebfisch.github.io/haskell-regexp/regexp-play.pdf][=https://sebfisch.github.io/haskell-regexp/regexp-play.pdf=]]\\
-= - [ ] =[[http://blog.ezyang.com/2017/01/try-backpack-cabal-packages/][=Part`` ``2=]]
-
-- [X]
-[[https://www.quora.com/What-are-some-practical-uses-of-bifunctors-in-Haskell/answer/James-Bowen-13][Bifunctors]]
-
-** [[https://www.reddit.com/r/haskell/comments/npxfba/ive_tried_to_learn_haskell_several_times_but_keep/h084wwa?utm_source=share&utm_medium=web2x&context=3][Monday
-Morning Haskell - Reddit]]
-   :PROPERTIES:
-   :CUSTOM_ID: monday-morning-haskell---reddit
-   :END:
-
-- [ ] Foundational building blocks
-
-= - [X] Functor =[[https://mmhaskell.com/monads/functors][=https://mmhaskell.com/monads/functors=]]\\
-= - [X] =[[https://mmhaskell.com/monads/applicatives][=https://mmhaskell.com/monads/applicatives=]]\\
-= - [X] =[[https://mmhaskell.com/monads/tutorial][=https://mmhaskell.com/monads/tutorial=]]\\
-= - [X] =[[https://mmhaskell.com/monads/reader-writer][=https://mmhaskell.com/monads/reader-writer=]]\\
-= - [X] =[[https://mmhaskell.com/monads/state][=https://mmhaskell.com/monads/state=]]\\
-= - [X] =[[https://mmhaskell.com/monads/transformers][=https://mmhaskell.com/monads/transformers=]]\\
-= - [ ]  =[[https://mmhaskell.com/monads/laws][=https://mmhaskell.com/monads/laws=]]\\
-= =
-
-- [ ] real-world example
-
-= - [X] Database=\\
-= - [ ] API=
-
-- [ ] Relax for a few days and watch how interactive programs are being
-composed - [ ] Get back to the real-world example and make it a complete
-Cabal project. - [ ]
-[[https://mmhaskell.com/testing/test-driven-development][Testing]]
-
+* Divers
 ** Cabal vs stack
    :PROPERTIES:
    :CUSTOM_ID: cabal-vs-stack
@@ -112,16 +60,3 @@ Prelude.. On peut installer ghc-static ou bien utiliser ghcup
 
 - [X] installer avec ghcup - [X] Tester sur getbook - [X] Tester sur
 askhistorians
-
-* Ressources
-** KILL Learn Haskell for your greater good
-   :PROPERTIES:
-   :CUSTOM_ID: kill-learn-haskell-for-your-greater-good
-   :END:
-
-50%
-
-** STRT [[books.org::Haskell%20Programming%20From%20First%20Principles][Haskell programming from first principles]]
-** GHC
-*** TODO Lire commentary
-*** TODO STRT Lire [[https://www.aosabook.org/en/ghc.html]]

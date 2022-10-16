@@ -22,6 +22,49 @@ La structure du  tableau est perdue dans tous les cas
 
 **** Parser
 Liste de parser : https://tomassetti.me/parsing-in-python/
+* Learning Haskell :haskell:
+** [#A] Reddit suggestion
+*** TODO Foundational building blocks
+
+- [X] [[https://mmhaskell.com/monads/functors][Functor]]
+- [X] [[https://mmhaskell.com/monads/applicatives][Applicatives]]
+- [ ] [[https://mmhaskell.com/monads/tutorial][Monads]]
+- [X] [[https://mmhaskell.com/monads/reader-writer][Reader, writer]]
+- [X] [[https://mmhaskell.com/monads/state][State]]
+- [X] [[https://mmhaskell.com/monads/transformers][Transformers]]
+- [ ] [[https://mmhaskell.com/monads/laws][Laws]]
+
+*** TODO Real-world example
+- [X] Database
+- [ ] API
+- [ ] Relax for a few days and watch how interactive programs are being
+composed
+- [ ] Get back to the real-world example and make it a complete
+Cabal project.
+- [ ] [[https://mmhaskell.com/testing/test-driven-development][Testing]]
+*** [#A] Best resource : [[https://downloads.haskell.org/~ghc/8.10.4/docs/html/users_guide/glasgow_exts.html#language-options][Language Reference]]
+whenever you see an unknown language extension or a compilation flag, look it up in Language Reference and try to understand it. You don't have to fully understand them though, just read about them and keep them on your mind. One day they will begin to automatically click into a sound set of concepts.
+
+Language Reference is one of the most underappreciated sources of information (it's almost universally overlooked in language communities - it was the case for Python, and I find it to be true for Haskell as well). You mentioned that you don't like REPL examples, and neither do I. Luckily, the User Guide/Reference has introductory sections for people like us. Once I knew how to compile a single file and to run it, the rest was just a matter of getting to know things by their name in a new ecosystem.
+
+*** DONE Learn to compose things
+CLOSED: [2022-10-16 Sun 09:41]
+When you already know how to compile and run single-module interactive console programs, it takes about a day to understand basics of Cabal, and about a week to learn about input parsing and output formatting. Do you need CLI args? Use optparse-applicative. Env vars? Use envy. JSON? Use aeson and a cheatsheet. Don't think about performance and/or API conventions, that's not what you should be concerned of at this point, as you are just learning to compose things together from individual parts.
+
+*** Get back to the real-world example and make it a complete Cabal project.
+*** Experiment with various libraires
+At this point you have enough knowledge to begin experimenting with various libraries and APIs. Learn how to use Hoogle, and read as much as you can/want on Haskell Planetarium.
+** KILL Learn Haskell for your greater good
+   :PROPERTIES:
+   :CUSTOM_ID: kill-learn-haskell-for-your-greater-good
+   :END:
+
+50%
+
+** HOLD [[books.org::Haskell%20Programming%20From%20First%20Principles][Haskell programming from first principles]]
+**** GHC
+***** TODO Lire commentary
+***** TODO STRT Lire [[https://www.aosabook.org/en/ghc.html]]
 * Langues
 ** Japonais
 :PROPERTIES:
@@ -1592,7 +1635,7 @@ CLOSED: [2022-10-11 Tue 12:37]
 ****** WAIT BioExtAlign
 ****** WAIT BioBigFile
 ****** TODO rtg-tools
-
+Convertir clinvar NC
 **** DONE Exécution
 CLOSED: [2022-09-13 Tue 21:37]
 ***** KILL test Bionix
@@ -2120,8 +2163,7 @@ SCHEDULED: <2022-08-04 Thu>
 ** TODO Copier photos famille depuis drive yvain sur drive famille
 SCHEDULED: <2022-07-30 Sat>
 * Nix
-** DONE Nixpkg for GATK
-CLOSED: [2022-10-11 Tue 11:46]
+** TODO GATK
 *** DONE Binaire
 CLOSED: [2022-09-10 Sat 23:53] SCHEDULED: <2022-08-10 Wed>
 /Entered on/ [2022-08-09 Tue 10:57]
@@ -2132,6 +2174,7 @@ CLOSED: [2022-09-11 Sun 22:05]
 CLOSED: [2022-10-11 Tue 11:46]
 https://github.com/NixOS/nixpkgs/pull/191548
 Review <2022-10-10 Mon> , corrigé dans la journée
+*** TODO Update 4.3.0.0
 ** TODO Nextflow
 *** WAIT version script seule
 Fix pour SGE et nextflow
@@ -2187,3 +2230,8 @@ SCHEDULED: <2022-09-03 Sat>
 ** TODO Renouveler abonnement
 SCHEDULED: <2022-11-14 Mon>
 À partir du 14 novembre
+* Gentoo
+** GURU
+*** WAIT Demander accès
+<2022-10-15
+*** TODO Ebuild pour adapteur wifi TBW-108B

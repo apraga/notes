@@ -1129,3 +1129,67 @@ CLOSED: [2022-09-19 Mon 22:37]
 :END:
 Apparement, déjà dans dbSNP
 https://www.internationalgenome.org/category/dbsnp/
+
+* Libraries
+:PROPERTIES:
+:ARCHIVE_TIME: 2022-10-16 Sun 09:32
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Learning Haskell
+:ARCHIVE_CATEGORY: projects
+:ARCHIVE_ITAGS: haskell
+:END:
+- [X] Shelly - [X] Xmonad
+
+= - Récup de l'écran=\\
+= - Faire un projet cabal=
+
+
+* Concepts
+   :PROPERTIES:
+   :CUSTOM_ID: concepts
+   :ARCHIVE_TIME: 2022-10-16 Sun 09:32
+   :ARCHIVE_FILE: ~/org/projects.org
+   :ARCHIVE_OLPATH: Learning Haskell
+   :ARCHIVE_CATEGORY: projects
+   :ARCHIVE_ITAGS: haskell
+   :END:
+
+- [X] Functional dependencies
+
+= - [X] =[[https://www.youtube.com/watch?v=JleVecHAad4][=An`` ``introduction`` ``to`` ``Haskell's`` ``kinds=]]= =\\
+= - [X] =[[https://www.youtube.com/watch?v=Qy_yxVkO8no][=Getting`` ``a`` ``little`` ``fancy`` ``with`` ``Haskell's`` ``kinds=]]
+
+- [ ] Backpack
+
+= - [ ] =[[http://blog.ezyang.com/2016/10/try-backpack-ghc-backpack/][=Part`` ``1=]]\\
+= - [ ] =[[https://sebfisch.github.io/haskell-regexp/regexp-play.pdf][=https://sebfisch.github.io/haskell-regexp/regexp-play.pdf=]]\\
+= - [ ] =[[http://blog.ezyang.com/2017/01/try-backpack-cabal-packages/][=Part`` ``2=]]
+
+- [X]
+[[https://www.quora.com/What-are-some-practical-uses-of-bifunctors-in-Haskell/answer/James-Bowen-13][Bifunctors]]
+
+
+* Concepts
+   :PROPERTIES:
+   :CUSTOM_ID: concepts
+   :ARCHIVE_TIME: 2022-10-16 Sun 09:32
+   :ARCHIVE_FILE: ~/org/projects.org
+   :ARCHIVE_OLPATH: Learning Haskell
+   :ARCHIVE_CATEGORY: projects
+   :ARCHIVE_ITAGS: haskell
+   :END:
+
+- [X] Functional dependencies
+
+= - [X] =[[https://www.youtube.com/watch?v=JleVecHAad4][=An`` ``introduction`` ``to`` ``Haskell's`` ``kinds=]]= =\\
+= - [X] =[[https://www.youtube.com/watch?v=Qy_yxVkO8no][=Getting`` ``a`` ``little`` ``fancy`` ``with`` ``Haskell's`` ``kinds=]]
+
+- [ ] Backpack
+
+= - [ ] =[[http://blog.ezyang.com/2016/10/try-backpack-ghc-backpack/][=Part`` ``1=]]\\
+= - [ ] =[[https://sebfisch.github.io/haskell-regexp/regexp-play.pdf][=https://sebfisch.github.io/haskell-regexp/regexp-play.pdf=]]\\
+= - [ ] =[[http://blog.ezyang.com/2017/01/try-backpack-cabal-packages/][=Part`` ``2=]]
+
+- [X]
+[[https://www.quora.com/What-are-some-practical-uses-of-bifunctors-in-Haskell/answer/James-Bowen-13][Bifunctors]]
+
