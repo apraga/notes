@@ -1770,13 +1770,12 @@ CLOSED: [2022-09-22 Thu 10:45]
 Commiter au courant, attente de résolution
 *** DONE pkg-config problème avec 0.26.2
 CLOSED: [2022-09-22 Thu 10:45]
-*** TODO 0.26.3
-*** TODO Patch pour utiliser openssl base
+*** DONE 0.26.4
+CLOSED: [2022-10-20 Thu 23:05]
+*** DONE Patch pour utiliser openssl base
+CLOSED: [2022-10-20 Thu 23:05]
 ** WAIT [[https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=264158][pkgconf est trop lent sur freebsd]]
 Problème persiste avec dernière version
-** TODO taskwarrior v0.23.5
-SCHEDULED: <2022-07-31 Sun>
-/Entered on/ [2022-07-31 Sun 09:59]
 * Génétique
 ** TODO Collège [3/29]
 *** TODO 1. Architecture du génome

@@ -5499,3 +5499,11 @@ Circuit
 10 reverse
 10 tornado
 10 roundabout
+* <2022-10-20 Thu> Tricking
+Bkick 5
+Aerial 2x5
+Cartwheel 2x5 for aerial
+Tornado x10
+Back x10
+Front x10
+Raiz-like x10
