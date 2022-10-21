@@ -1624,18 +1624,16 @@ CLOSED: [2022-09-13 Tue 21:37]
  - [ ] packager rgttools avec nix (utilise ant)
  - [ ] UTiliser vcfeval pour intersection (permet de gérer les représentations différentes)
 
-**** TODO Dépendences
-***** DONE Nix pour les dépendences
-CLOSED: [2022-10-11 Tue 12:37]
-*****
-***** TODO Utiliser version dans nixpkgs
-*****
-****** TODO GATK
-****** WAIT BioDBHTS
-****** WAIT BioExtAlign
-****** WAIT BioBigFile
-****** TODO rtg-tools
+**** TODO Dépendences avec Nix
+***** DONE GATK
+CLOSED: [2022-10-21 Fri 21:59]
+***** WAIT BioDBHTS
+***** TODO BioExtAlign
+Revoir si on peut utliser kent dernière version
+***** WAIT BioBigFile
+***** TODO rtg-tools
 Convertir clinvar NC
+***** TODO Spip
 **** DONE Exécution
 CLOSED: [2022-09-13 Tue 21:37]
 ***** KILL test Bionix
