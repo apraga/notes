@@ -1624,13 +1624,23 @@ CLOSED: [2022-09-13 Tue 21:37]
  - [ ] packager rgttools avec nix (utilise ant)
  - [ ] UTiliser vcfeval pour intersection (permet de gérer les représentations différentes)
 
+******* Test: variants dbSNP étiquettés "clinvar"
+$ zgrep CLNSIG dbSNP_common.vcf.gz | wc -l
+57997
+
+$ zgrep "RS=" clinvar.vcf.gz | wc -l
+834352
+
+Donc iil faut vraiment faiire l'intersectiion des VCF
+soit avec vcftools (naïve) soit avec rtgtools (gères les synonymes)
 **** TODO Dépendences avec Nix
 ***** DONE GATK
 CLOSED: [2022-10-21 Fri 21:59]
 ***** WAIT BioDBHTS
-***** TODO BioExtAlign
-Revoir si on peut utliser kent dernière version
+***** DONE BioExtAlign
+CLOSED: [2022-10-22 Sat 00:38]
 ***** WAIT BioBigFile
+Revoir si on peut utliser kent dernière version
 ***** TODO rtg-tools
 Convertir clinvar NC
 ***** TODO Spip
