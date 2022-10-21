@@ -709,6 +709,12 @@ Sinon, utiliser Spip et SpliceAI. Proposition d’algorithme par ACNMG
 - les 2 sont positifs -> RNAseq
 - sinon à discuter
 
+*** SpliceAI
+Donner la probabilité de modifier les sites d’épissages
+- Acceptor Gain : 0.26 (1) -> probabilité de gagner un site accepteeur = 0.26 en +1 **du variant**
+- Acceptor Loss : 0.86 (9) -> : probabilité de perte un site accepteur = 0.86 en +9 du variant
+  Donc probablement perte du site en +9 avec peut-être gain n en +1
+
 Regarder l’image des sites donneurs pour voir les séquences connues
 NB: interprétation graphique sur mobidetails de spliceAI : montre la "force"
 ** Score bioinfo
