@@ -126,7 +126,6 @@ Revient de vacances à ce moment environ
 ** TODO janvier 2022
 ** TODO février 2022
 ** TODO Mars 2022
-SCHEDULED: <2022-07-30 Sat>
 ** TODO Avril 2022
 ** TODO Mail 2022
 * Recherche
@@ -234,17 +233,8 @@ https://www.nature.com/articles/labinvest2016142
 **** TODO Trouver autres cas ?
 ***** TODO Appel ANDDI rares
 ***** TODO Appel ITACA
-**** TODO Plan de l’article
-DEADLINE: <2022-09-17 Sat>
-**** TODO Abstract club génétique de l’est
-DEADLINE: <2022-09-15 Thu> SCHEDULED: <2022-09-13 Tue>
-**** DONE Avis Paul sur arguments
-CLOSED: [2022-09-11 Sun 22:03]
-Envoyé <2022-08-09 Tue>
-**** DONE Accord Domiinque VIAUD
-Mail envoyé par Juliette
-**** DONE Observatoire TED
-Non
+**** DONE Plan de l’article
+CLOSED: [2022-10-22 Sat 23:33] DEADLINE: <2022-09-17 Sat>
 ** Mustard :mustard:
 *** Scripts
 **** DONE Script pour données labkey
@@ -1728,7 +1718,6 @@ Mais problème de proxy
 ***** TODO Lancer sarek sur données allégées
 **** TODO Test de non régression
 **** TODO Genome in a bottle ?
-SCHEDULED: <2022-07-30 Sat>
 On n'a pas l'ADN.. séquencer à Centogène ?
 *** Simulation sur mésocentre
 **** Réunion <2022-08-31 Wed>
@@ -1761,16 +1750,17 @@ Problèmes de versions...
 * Banque :banque:
 ** TODO Compte et CB société générale :banque:
 *** KILL Envoyer relevé
-*** TODO Transfert compte bancaire
-SCHEDULED: <2022-07-21 Thu>
-**** TODO Attestation Boursorama
-SCHEDULED: <2022-08-20 Sat>
+*** DONE Transfert compte bancaire
+CLOSED: [2022-10-22 Sat 23:35] SCHEDULED: <2022-07-21 Thu>
 **** DONE Virement pour éviter les défauts de rélèvements
 *** WAIT Demander chequier
 SCHEDULED: <2022-08-20 sam.>
+**** TODO Demander au CHU pour  le transfert (cela fait 2 mois)
+SCHEDULED: <2022-10-24 Mon>
+
 * FreeBSD :freebsd:
-** TODO ormolu 0.5.0.0
-SCHEDULED: <2022-07-30 Sat>
+** KILL ormolu 0.5.0.0
+CLOSED: [2022-10-22 Sat 23:36] SCHEDULED: <2022-07-30 Sat>
 
 ** Kitty
 *** KILL Problème sur fetchdir
@@ -2164,9 +2154,9 @@ CLOSED: [2022-09-10 Sat 18:34]
 * Divers
 ** Amendes
 ** TODO Cadeau mariage :joris:
-SCHEDULED: <2022-08-04 Thu>
+SCHEDULED: <2022-11-22 Tue>
 ** TODO Cadeaux mariage :florian:
-SCHEDULED: <2022-08-04 Thu>
+SCHEDULED: <2022-11-22 Tue>
 ** TODO Copier photos famille depuis drive yvain sur drive famille
 SCHEDULED: <2022-07-30 Sat>
 * Nix
@@ -2227,13 +2217,8 @@ SCHEDULED: <2023-05-11 Thu>
 À faire au bout de 10ans, on attend l’an prochain
 * Moto
 ** TODO Changer kit chaine
-SCHEDULED: <2022-09-05 Mon>
+SCHEDULED: <2022-10-29 Sat>
 * Maison
-** TODO Nettoyer canapé cuir
-SCHEDULED: <2022-09-06 Tue>
-Acheter lait démaquillant
-** DONE Corriger erreur de facturation bouyges + renouveler
-SCHEDULED: <2022-09-03 Sat>
 ** TODO Renouveler abonnement
 SCHEDULED: <2022-11-14 Mon>
 À partir du 14 novembre
@@ -2242,3 +2227,6 @@ SCHEDULED: <2022-11-14 Mon>
 *** WAIT Demander accès
 <2022-10-15
 *** TODO Ebuild pour adapteur wifi TBW-108B
+** TODO Article nzbget sur wiki
+SCHEDULED: <2022-10-22 Sat>
+/Entered on/ [2022-10-22 Sat 17:31]
