@@ -1610,8 +1610,8 @@ CLOSED: [2022-09-13 Tue 21:37]
 ***** TODO Processing bases de données
 ****** DONE dbSNP common
 ****** TODO common dbSNP not clinvar patho
- - [ ] normaliser les noms de chromosomes
- - [ ] packager rgttools avec nix (utilise ant)
+ - [X] normaliser les noms de chromosomes clinvar
+ - [ ] packager rgttools avec nix
  - [ ] UTiliser vcfeval pour intersection (permet de gérer les représentations différentes)
 
 ******* Test: variants dbSNP étiquettés "clinvar"
@@ -1623,6 +1623,38 @@ $ zgrep "RS=" clinvar.vcf.gz | wc -l
 
 Donc il faut vraiment faire l'intersection des VCF
 soit avec vcftools (naïve) soit avec rtgtools (gères les synonymes)
+
+******* HOLD Essai rtg tools
+1. Générer SDf file
+   #+begin_src sh
+rtg format genomeRef.fna  -o genomeRef.sdf
+   #+end_src
+ Mais problème avec la comparaison
+ #+begin_src
+$ rtg vcfeval -b dbSNP_common.vcf.gz -c clinvar.vcf.gz -o test -t genomeRef.sdf/^C
+VCF header does not contain a FORMAT field named GQ
+Error: Record did not contain enough samples: NC_000001.11	10001	rs1570391677	A,C	.	PASS	RS=1570391677;dbSNPBuildID=154;SSR=0;PSEUDOGENEINFO=DDX11L1:100287102;VC=SNV;R5;GNO;FREQ=KOREAN:0.9891,0.0109,.|SGDP_PRJ:0,1,.|dbGaP_PopFreq:1,.,0;COMMON
+ #+end_src
+******* DONE Essai bcftools
+CLOSED: [2022-10-23 Sun 01:05]
+#+begin_src sh
+bcftools isec dbSNP_common.vcf.gz clinvar.vcf.gz -p common
+#+end_src
+On vérifie bien que les 2 fichiers commons on le même nombre de lignes
+#+begin_src sh
+
+$ grep -e '^NC'  0002.vcf | wc -l
+74302
+alex@gentoo ~/code/bisonex/data/common $ grep -e '^NC'  0003.vcf | wc -l
+74302
+#+end_src
+******* DONE bedtools intersect
+CLOSED: [2022-10-23 Sun 01:05]
+#+begin_src sh
+bedtools intersect -a  dbSNP_common.vcf.gz -b clinvar.vcf.gz
+#+end_src
+$ wc -l intersect.vcf
+220206 intersect.vcf
 **** TODO Dépendences avec Nix
 ***** DONE GATK
 CLOSED: [2022-10-21 Fri 21:59]
