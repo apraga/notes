@@ -247,7 +247,7 @@ Mail envoyé par Juliette
 Non
 ** Mustard :mustard:
 *** Scripts
-**** Script pour données labkey
+**** DONE Script pour données labkey
 on convertit tous les pdf en png puis OCR avec tesseract pour les transformer en texte
 On supprimer les header et footer à la main
 #+begin_src python :results output
@@ -288,7 +288,7 @@ for (k, f) in enumerate(p.glob("courrier*.pdf")):
 rmFiles(p.glob(f"courrier*.png"))
 #+end_src
 
-**** Renommer les dossiers PED
+**** DONE Renommer les dossiers PED
 #+begin_src python :results output
 import pandas as pd
 import os
@@ -311,7 +311,7 @@ for i in p.index:
                 os.rename(src, os.path.join(dir2, split[0]))
 #+end_src
 
-**** Générer clinique
+**** DONE Générer clinique
 #+begin_src python :results output
 import pandas as pd
 import os
@@ -332,8 +332,8 @@ for i in p.index:
 *** Données
 **** DONE Import Labkey
 **** TODO Clinique, OCR et nettoyage données labkey [13/1199]
-DONE = sur scality
-SRT = traité, non transféré
+DONE = sur scality (mis dans ~/annex/mustard/done)
+SRT = traité, non transféré (en attente dans ~/annex/mustard)
 ***** DONE PED0052
 ***** DONE PED0105
 ***** DONE PED1001
@@ -1631,7 +1631,7 @@ $ zgrep CLNSIG dbSNP_common.vcf.gz | wc -l
 $ zgrep "RS=" clinvar.vcf.gz | wc -l
 834352
 
-Donc iil faut vraiment faiire l'intersectiion des VCF
+Donc il faut vraiment faire l'intersection des VCF
 soit avec vcftools (naïve) soit avec rtgtools (gères les synonymes)
 **** TODO Dépendences avec Nix
 ***** DONE GATK
