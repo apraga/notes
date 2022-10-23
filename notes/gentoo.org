@@ -30,3 +30,7 @@ modprobe 8723u
 # Enable for future boot
 echo 8723bu > /etc/modprobe.d/networking.conf
 #+end_src
+
+* Difficultés
+** ZFS: "Mismatch between pool hostid and system"
+zgenhostid $(hostid) résout le problème ?
