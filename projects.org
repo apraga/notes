@@ -246,43 +246,7 @@ CLOSED: [2022-10-22 Sat 23:33] DEADLINE: <2022-09-17 Sat>
 **** DONE Script pour données labkey
 on convertit tous les pdf en png puis OCR avec tesseract pour les transformer en texte
 On supprimer les header et footer à la main
-#+begin_src python :results output
-from pathlib import Path
-import subprocess
-import fileinput
-import os
-
-def mergeFiles(p, fname):
-    """ Takes a Path glob expression"""
-    allFiles = [x for x in p]
-    with open(fname, 'w') as f:
-        for line in fileinput.input(files=allFiles):
-            f.write(line)
-
-def rmFiles(p):
-    for f in p:
-        os.remove(f)
-
-p = Path("/alexi/Documents/mustard/PORTEMER ")
-for (k, f) in enumerate(p.glob("courrier*.pdf")):
-    courrier= p / f"courrier{k+1}"
-    subprocess.run(["pdftoppm", "-png", f, courrier])
-    # Manage multi-pages pdf
-    for png in p.glob(f"courrier{k+1}*.png"):
-         root =png.with_suffix('')
-         subprocess.run(["tesseract", "-l", "fra", png, root])
-    txt = p.glob(f"courrier{k+1}-*.txt")
-    mergeFiles(txt, p / f"courrier{k+1}.txt")
-    # We have to rewrite the glob....
-    rmFiles(p.glob(f"courrier{k+1}-*.txt"))
-
-    ## Now we remove the header (everyting up to the date)
-    ## sed -i.bak -n '/^Dijon, le/,$p' $courrier.txt
-    ## And everything after the footer
-    ## sed -i.bak '/^BOCAGE SUD.*DIJON CEDEX$/,$d' $courrier.txt
-
-rmFiles(p.glob(f"courrier*.png"))
-#+end_src
+Cf ~/code/scripts/python/mustard/courrier.py
 
 **** DONE Renommer les dossiers PED
 #+begin_src python :results output
@@ -327,7 +291,7 @@ for i in p.index:
 
 *** Données
 **** DONE Import Labkey
-**** TODO Clinique, OCR et nettoyage données labkey [13/1199]
+**** TODO Clinique, OCR et nettoyage données labkey [15/1199]
 DONE = sur scality (mis dans ~/annex/mustard/done)
 SRT = traité, non transféré (en attente dans ~/annex/mustard)
 ***** DONE PED0052
@@ -345,13 +309,13 @@ CLOSED: [2022-08-01 Mon 09:44]
 CLOSED: [2022-08-01 Mon 09:44]
 ***** DONE PED1035
 CLOSED: [2022-08-01 Mon 09:44]
-***** TODO PED1036
-***** TODO PED1037
-***** TODO PED1038
-***** TODO PED1040
-***** TODO PED1042
-***** TODO PED1043
-***** TODO PED1044
+***** DONE PED1036
+***** DONE PED1037
+***** WAIT PED1038
+***** WAIT PED1040
+***** WAIT PED1042
+***** WAIT PED1043
+***** WAIT PED1044
 ***** TODO PED1045
 ***** TODO PED1064
 ***** TODO PED1068

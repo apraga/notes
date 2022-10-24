@@ -1,17 +1,29 @@
-* Astuces
-** Compiler rapidement un script haskell:
+* Démarrer un projet rapidement
+** Script en un seul fichier (cabal)
+`cabal run` sur le script suivant (ou chmod +x)
+#+begin_src haskell
+#!/usr/bin/env cabal
+{- cabal:
+build-depends: base
+            , turtle
+-}
+{-# LANGUAGE OverloadedStrings #-}
+import Turtle
+main = echo "Hello World!"
+#+end_src
+** Script en un seul fichier (stack)
+`stack run` sur le script suivant (ou chmod +x)
+#+begin_src haskell
+-- stack --resolver lts-6.25 script --package turtle
+{-# LANGUAGE OverloadedStrings #-}
+import Turtle
+main = echo "Hello World!"
+#+end_src
+
+** Avec stack
 #+begin_src sh
 stack script simple.hs --resolver lts-14.18
 #+end_src
-
-On peut aussi le mettre dans le code source :
-
-#+begin_src haskell
-{- stack script
- --resolver lts-14.18
--}
-#+end_src
-
 * Data analysis
 ** Frames
 Minimal example
