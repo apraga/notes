@@ -115,16 +115,6 @@ SCHEDULED: <2022-07-30 Sat>
 :PROPERTIES:
 :CATEGORY: internat
 :END:
-** Thèse :these:
-*** Trouver un sujet
-- Julien Thevenon ?
-- Jean-Paul ?
-- Didier ?
-** Droit au remords
-*** WAIT Envoi scolarité
-*** DONE Négocier avec Xavier Bertrand pour stage de clinique
-SCHEDULED: <2022-07-28 Thu>
-Revient de vacances à ce moment environ
 * Comptabilité :ledger:
 :PROPERTIES:
 :CATEGORY: compta
@@ -288,6 +278,10 @@ for i in p.index:
         if os.path.exists(os.path.join(dir, folder)):
             f.write(split[0] + ";" + p.nom[i].upper() + ";" + p.prenom[i] + ";" + p.date_de_naissance[i] + "\n")
 #+end_src
+
+**** DONE Stats sur la balance allélique pour Paul
+CLOSED: [2022-10-26 Wed 17:43] SCHEDULED: <2022-10-25 Tue>
+
 
 *** Données
 **** DONE Import Labkey
