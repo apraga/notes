@@ -1723,6 +1723,9 @@ CLOSED: [2022-10-09 Sun 22:40]
 *** Améliorations
 **** TODO Utilise une versionn allégée de GnomAD (une seule colonne)
 **** TODO Utiliser T-to-T comme références
+**** TODO Digenisme (cf nomenclature omim)
+C’est dans le nom de la maladie
+**** TODO Macro excel
 *** TODO Tests
 **** TODO Divers
 ***** DONE Vérifier nobmer de reads fastq - bam
