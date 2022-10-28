@@ -279,9 +279,14 @@ for i in p.index:
             f.write(split[0] + ";" + p.nom[i].upper() + ";" + p.prenom[i] + ";" + p.date_de_naissance[i] + "\n")
 #+end_src
 
-**** DONE Stats sur la balance allélique pour Paul
-CLOSED: [2022-10-26 Wed 17:43] SCHEDULED: <2022-10-25 Tue>
+**** TODO Stats sur la balance allélique pour Paul
+SCHEDULED: <2022-10-25 Tue>
+***** DONE Besançon seul : total, par variant
+CLOSED: [2022-10-28 Fri 10:57]
 
+***** TODO Dijon + Besançon seul : total, par variant et par type de prélèvement
+Dans "variations à vérifier". 1 seul variant normalement en miseq, parfois plusieurs en exome
+AB = "allelic balance"
 
 *** Données
 **** DONE Import Labkey
