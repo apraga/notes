@@ -23,36 +23,32 @@ La structure du  tableau est perdue dans tous les cas
 **** Parser
 Liste de parser : https://tomassetti.me/parsing-in-python/
 * Learning Haskell :haskell:
-** [#A] Reddit suggestion
-*** TODO Foundational building blocks
-
+** [#A] [[https://www.reddit.com/r/haskell/comments/npxfba/comment/h084wwa/?utm_source=share&utm_medium=web2x&context=3][Reddit suggestion]]]
+*** TODO Learn Foundational building blocks
 - [X] [[https://mmhaskell.com/monads/functors][Functor]]
 - [X] [[https://mmhaskell.com/monads/applicatives][Applicatives]]
-- [ ] [[https://mmhaskell.com/monads/tutorial][Monads]]
+- [X] [[https://mmhaskell.com/monads/tutorial][Monads]]
 - [X] [[https://mmhaskell.com/monads/reader-writer][Reader, writer]]
 - [X] [[https://mmhaskell.com/monads/state][State]]
 - [X] [[https://mmhaskell.com/monads/transformers][Transformers]]
 - [ ] [[https://mmhaskell.com/monads/laws][Laws]]
 
 *** TODO Real-world example
+**** TODO Look at the example
 - [X] Database
 - [ ] API
-- [ ] Relax for a few days and watch how interactive programs are being
-composed
-- [ ] Get back to the real-world example and make it a complete
-Cabal project.
-- [ ] [[https://mmhaskell.com/testing/test-driven-development][Testing]]
+**** TODO Relax for a few days and watch how interactive programs are being composed
+**** TODO Get back to the real-world example and make it a complete Cabal project.
+**** TODO [[https://mmhaskell.com/testing/test-driven-development][Testing]]
 *** [#A] Best resource : [[https://downloads.haskell.org/~ghc/8.10.4/docs/html/users_guide/glasgow_exts.html#language-options][Language Reference]]
 whenever you see an unknown language extension or a compilation flag, look it up in Language Reference and try to understand it. You don't have to fully understand them though, just read about them and keep them on your mind. One day they will begin to automatically click into a sound set of concepts.
 
 Language Reference is one of the most underappreciated sources of information (it's almost universally overlooked in language communities - it was the case for Python, and I find it to be true for Haskell as well). You mentioned that you don't like REPL examples, and neither do I. Luckily, the User Guide/Reference has introductory sections for people like us. Once I knew how to compile a single file and to run it, the rest was just a matter of getting to know things by their name in a new ecosystem.
 
 *** DONE Learn to compose things
-CLOSED: [2022-10-16 Sun 09:41]
 When you already know how to compile and run single-module interactive console programs, it takes about a day to understand basics of Cabal, and about a week to learn about input parsing and output formatting. Do you need CLI args? Use optparse-applicative. Env vars? Use envy. JSON? Use aeson and a cheatsheet. Don't think about performance and/or API conventions, that's not what you should be concerned of at this point, as you are just learning to compose things together from individual parts.
 
-*** Get back to the real-world example and make it a complete Cabal project.
-*** Experiment with various libraires
+*** Experiment with various libraires, read haskell planetarium
 At this point you have enough knowledge to begin experimenting with various libraries and APIs. Learn how to use Hoogle, and read as much as you can/want on Haskell Planetarium.
 ** KILL Learn Haskell for your greater good
    :PROPERTIES:
@@ -62,9 +58,19 @@ At this point you have enough knowledge to begin experimenting with various libr
 50%
 
 ** HOLD [[books.org::Haskell%20Programming%20From%20First%20Principles][Haskell programming from first principles]]
-**** GHC
-***** TODO Lire commentary
-***** TODO STRT Lire [[https://www.aosabook.org/en/ghc.html]]
+** GHC
+*** TODO GHC commentary
+Notamment Ollie Charles's 24 days of GHC Extensions,
+*** TODO Lire [[https://www.aosabook.org/en/ghc.html]]
+** Vidéos
+*** STRT https://www.youtube.com/watch?v=re96UgMk6GQ
+** TODO Articles historiques
+1. [[https://watermark.silverchair.com/320098.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAAsYwggLCBgkqhkiG9w0BBwagggKzMIICrwIBADCCAqgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMHXfjdjwhGI2t4bLLAgEQgIICeQjZ-I8gmuaFqBktP4IOifHODtMAHcNF_LwRYyq7NswQ7vT6LJho9P_junCAORLGMV9dgq9JMePH2PFKNxXxrEP1VY7rIDG0gzoeObSkgMDn4MXalrIxD3ejY8vsGYy6vce8Kh70J_UJ8RamO1l3BNNUzy2W6VRaa_cMQr_ekdwcz0oihz0BVKn_bgm_8DjiiPhzj8uU9flVhi13t_oIFA6b3At2QMmPe7Z9OyfLkXivKkmKKNoHwSS7AnTIYAKCO383e4kG6NzZ_elai-XMAJs2Nk0vcgaltld1KeaW3269104DdIlFGevJUVNgwE_4LIheSYRZr9Gr0yRR6TROxdsyxrmgQ22Pzxxpnl8-KdjkW6aRSCKNk_yb5hYcPoRa3ldc5yPV15j8i4t9Mv4U_mBwmIRtMIKPdEHeMvcRx6c8_8uT4RV2esuOPfZlA05bzBgJhMS87M8myxisH-exkTMkm58o6nzHf1lGxzn_JS1VSHbhJCUl82ubzzOWjvl3QJM_vv805XTbn_G-fcRi0d9EQIRTqoObWVFyXW-pz16bWoZPZnBQ1gOmc3hPTGBMZjFR6p9VEAO7bKcK8o0yQDjVWEELNwfAAHc-oF_wLiEjXDNBoUttghgQzzvymKY_jSZhcU8TraVu2i551fpuDNEjSJd0qY5Rg3J6eWU550nJmnoWmX6o7KGiYp0vVMfOoFYXJ1trZWSGoRhDQP2LOLIOt3t2idlj6kV_MoCY3BRnkbxf4XIH7gLJf6Dky6hXFbTU8Fjsn8XHBeKSmaAYJ-sbmGB_BdZO8hHyvHvPv0lTtGcSuKywoJhMbblXRzyuacj_6mZQl5j3tAWhy][Why functional programming matters]]
+   Très lisible
+2. [[https://dl.acm.org/doi/pdf/10.1145/91556.91592][Comprehending monads]]
+   Introduction du concept
+3. [[https://dl.acm.org/doi/pdf/10.1145/158511.158524][Imperative functional programming]]
+   Application des monads poru résoudre le problème IO
 * Langues
 ** Japonais
 :PROPERTIES:
@@ -109,16 +115,6 @@ SCHEDULED: <2022-07-30 Sat>
 :PROPERTIES:
 :CATEGORY: internat
 :END:
-** Thèse :these:
-*** Trouver un sujet
-- Julien Thevenon ?
-- Jean-Paul ?
-- Didier ?
-** Droit au remords
-*** WAIT Envoi scolarité
-*** DONE Négocier avec Xavier Bertrand pour stage de clinique
-SCHEDULED: <2022-07-28 Thu>
-Revient de vacances à ce moment environ
 * Comptabilité :ledger:
 :PROPERTIES:
 :CATEGORY: compta
@@ -126,7 +122,6 @@ Revient de vacances à ce moment environ
 ** TODO janvier 2022
 ** TODO février 2022
 ** TODO Mars 2022
-SCHEDULED: <2022-07-30 Sat>
 ** TODO Avril 2022
 ** TODO Mail 2022
 * Recherche
@@ -234,61 +229,16 @@ https://www.nature.com/articles/labinvest2016142
 **** TODO Trouver autres cas ?
 ***** TODO Appel ANDDI rares
 ***** TODO Appel ITACA
-**** TODO Plan de l’article
-DEADLINE: <2022-09-17 Sat>
-**** TODO Abstract club génétique de l’est
-DEADLINE: <2022-09-15 Thu> SCHEDULED: <2022-09-13 Tue>
-**** DONE Avis Paul sur arguments
-CLOSED: [2022-09-11 Sun 22:03]
-Envoyé <2022-08-09 Tue>
-**** DONE Accord Domiinque VIAUD
-Mail envoyé par Juliette
-**** DONE Observatoire TED
-Non
+**** DONE Plan de l’article
+CLOSED: [2022-10-22 Sat 23:33] DEADLINE: <2022-09-17 Sat>
 ** Mustard :mustard:
 *** Scripts
-**** Script pour données labkey
+**** DONE Script pour données labkey
 on convertit tous les pdf en png puis OCR avec tesseract pour les transformer en texte
 On supprimer les header et footer à la main
-#+begin_src python :results output
-from pathlib import Path
-import subprocess
-import fileinput
-import os
+Cf ~/code/scripts/python/mustard/courrier.py
 
-def mergeFiles(p, fname):
-    """ Takes a Path glob expression"""
-    allFiles = [x for x in p]
-    with open(fname, 'w') as f:
-        for line in fileinput.input(files=allFiles):
-            f.write(line)
-
-def rmFiles(p):
-    for f in p:
-        os.remove(f)
-
-p = Path("/alexi/Documents/mustard/PORTEMER ")
-for (k, f) in enumerate(p.glob("courrier*.pdf")):
-    courrier= p / f"courrier{k+1}"
-    subprocess.run(["pdftoppm", "-png", f, courrier])
-    # Manage multi-pages pdf
-    for png in p.glob(f"courrier{k+1}*.png"):
-         root =png.with_suffix('')
-         subprocess.run(["tesseract", "-l", "fra", png, root])
-    txt = p.glob(f"courrier{k+1}-*.txt")
-    mergeFiles(txt, p / f"courrier{k+1}.txt")
-    # We have to rewrite the glob....
-    rmFiles(p.glob(f"courrier{k+1}-*.txt"))
-
-    ## Now we remove the header (everyting up to the date)
-    ## sed -i.bak -n '/^Dijon, le/,$p' $courrier.txt
-    ## And everything after the footer
-    ## sed -i.bak '/^BOCAGE SUD.*DIJON CEDEX$/,$d' $courrier.txt
-
-rmFiles(p.glob(f"courrier*.png"))
-#+end_src
-
-**** Renommer les dossiers PED
+**** DONE Renommer les dossiers PED
 #+begin_src python :results output
 import pandas as pd
 import os
@@ -311,7 +261,7 @@ for i in p.index:
                 os.rename(src, os.path.join(dir2, split[0]))
 #+end_src
 
-**** Générer clinique
+**** DONE Générer clinique
 #+begin_src python :results output
 import pandas as pd
 import os
@@ -329,11 +279,20 @@ for i in p.index:
             f.write(split[0] + ";" + p.nom[i].upper() + ";" + p.prenom[i] + ";" + p.date_de_naissance[i] + "\n")
 #+end_src
 
+**** TODO Stats sur la balance allélique pour Paul
+SCHEDULED: <2022-10-25 Tue>
+***** DONE Besançon seul : total, par variant
+CLOSED: [2022-10-28 Fri 10:57]
+
+***** TODO Dijon + Besançon seul : total, par variant et par type de prélèvement
+Dans "variations à vérifier". 1 seul variant normalement en miseq, parfois plusieurs en exome
+AB = "allelic balance"
+
 *** Données
 **** DONE Import Labkey
-**** TODO Clinique, OCR et nettoyage données labkey [13/1199]
-DONE = sur scality
-SRT = traité, non transféré
+**** TODO Clinique, OCR et nettoyage données labkey [15/1199]
+DONE = sur scality (mis dans ~/annex/mustard/done)
+SRT = traité, non transféré (en attente dans ~/annex/mustard)
 ***** DONE PED0052
 ***** DONE PED0105
 ***** DONE PED1001
@@ -349,17 +308,17 @@ CLOSED: [2022-08-01 Mon 09:44]
 CLOSED: [2022-08-01 Mon 09:44]
 ***** DONE PED1035
 CLOSED: [2022-08-01 Mon 09:44]
-***** TODO PED1036
-***** TODO PED1037
-***** TODO PED1038
-***** TODO PED1040
-***** TODO PED1042
-***** TODO PED1043
-***** TODO PED1044
-***** TODO PED1045
-***** TODO PED1064
-***** TODO PED1068
-***** TODO PED1069
+***** DONE PED1036
+***** DONE PED1037
+***** WAIT PED1038
+***** WAIT PED1040
+***** WAIT PED1042
+***** WAIT PED1043
+***** WAIT PED1044
+***** WAIT PED1045
+***** WAIT PED1064
+***** WAIT PED1068
+***** WAIT PED1069
 ***** TODO PED1070
 ***** TODO PED1071
 ***** TODO PED1072
@@ -1620,22 +1579,123 @@ CLOSED: [2022-09-13 Tue 21:37]
 ***** TODO Processing bases de données
 ****** DONE dbSNP common
 ****** TODO common dbSNP not clinvar patho
- - [ ] normaliser les noms de chromosomes
- - [ ] packager rgttools avec nix (utilise ant)
- - [ ] UTiliser vcfeval pour intersection (permet de gérer les représentations différentes)
+ - [X] normaliser les noms de chromosomes clinvar
+ - [ ] packager rgttools avec nix
+ - [ ] Utiliser bcftools isec qui semble faire la même chose que le script d'alexis
+   avec option "-c none" "-n~10"
 
-**** TODO Dépendences
-***** DONE Nix pour les dépendences
-CLOSED: [2022-10-11 Tue 12:37]
-*****
-***** TODO Utiliser version dans nixpkgs
-*****
-****** TODO GATK
-****** WAIT BioDBHTS
-****** WAIT BioExtAlign
-****** WAIT BioBigFile
-****** TODO rtg-tools
+******* DONE Test: variants dbSNP étiquettés "clinvar"
+CLOSED: [2022-10-23 Sun 18:55]
+$ zgrep CLNSIG dbSNP_common.vcf.gz | wc -l
+57997
+
+$ zgrep "RS=" clinvar.vcf.gz | wc -l
+834352
+
+Donc il faut vraiment faire l'intersection des VCF
+soit avec vcftools (naïve) soit avec rtgtools (gères les synonymes)
+
+******* DONE Essai rtg tools
+CLOSED: [2022-10-23 Sun 13:56]
+1. Générer SDf file
+   #+begin_src sh
+rtg format genomeRef.fna  -o genomeRef.sdf
+   #+end_src
+ Mais problème avec la comparaison
+ #+begin_src
+$ rtg vcfeval -b dbSNP_common.vcf.gz -c clinvar.vcf.gz -o test -t genomeRef.sdf/^C
+VCF header does not contain a FORMAT field named GQ
+Error: Record did not contain enough samples: NC_000001.11	10001	rs1570391677	A,C	.	PASS	RS=1570391677;dbSNPBuildID=154;SSR=0;PSEUDOGENEINFO=DDX11L1:100287102;VC=SNV;R5;GNO;FREQ=KOREAN:0.9891,0.0109,.|SGDP_PRJ:0,1,.|dbGaP_PopFreq:1,.,0;COMMON
+ #+end_src
+******* DONE Essai bcftools
+CLOSED: [2022-10-23 Sun 18:55]
+#+begin_src sh
+bcftools isec dbSNP_common.vcf.gz clinvar.vcf.gz -p common
+#+end_src
+On vérifie bien que les 2 fichiers commons on le même nombre de lignes
+#+begin_src sh
+$ grep -e '^NC'  0002.vcf | wc -l
+74302
+alex@gentoo ~/code/bisonex/data/common $ grep -e '^NC'  0003.vcf | wc -l
+74302
+#+end_src
+******** DONE Impact option -n
+CLOSED: [2022-10-23 Sun 13:56]
+Mais en spécifiant -n =2:
+#+begin_src sh
+$ bedtools intersect -a  dbSNP_common.vcf.gz -b clinvar.vcf.gz
+74978
+#+end_src
+Si on ne regarde que les variants, on retrouve bien 74302
+#+begin_src sh
+rg "^NC" none_sorted.vcf  | wc -l
+#+end_src
+NB : test fait avec
+#+begin_src
+bcftools isec dbSNP_common.vcf.gz clinvar.vcf.gz -c none -n =2 -w 1 | sort > none.vcf
+sort common/0003.vcf > common/0003_sorted.vcf
+comm -13 common/0003_sorted.vcf none_sorted.vcf
+#+end_src
+
+******** DONE Géstion des duplicates: -c none
+CLOSED: [2022-10-23 Sun 13:56]
+Si on ne garde que ceux avec REF et ALT identiques
+#+begin_src sh
+bcftools isec dbSNP_common.vcf.gz clinvar.vcf.gz -c none -n =2 -w 1 | wc -l
+74978
+#+end_src
+Si on garde tout
+#+begin_src sh
+bcftools isec dbSNP_common.vcf.gz clinvar.vcf.gz -c all -n =2 -w 1 | wc -l
+137777
+#+end_src
+Pour regarder la différence :
+#+begin_src sh
+bcftools isec dbSNP_common.vcf.gz clinvar.vcf.gz -c none -n =2 -w 1 | sort > none_sorted.vcf
+bcftools isec dbSNP_common.vcf.gz clinvar.vcf.gz -c all -n =2 -w 1 | sort > all_sorted.vcf
+comm -13 none_sorted.vcf all_sorted.vcf | head
+#+end_src
+Sur un exemple,on a bien des variants différents
+******** DONE Suppression des clinvar patho
+CLOSED: [2022-10-23 Sun 18:55]
+Semble faire le travail vu que dbSNP_commo a 23194960 lignes (donc ~80 000 de moins)
+ #+begin_src sh
+$ bcftools isec -e 'INFO/CLNSIG="Pathogenic" & INFO/CLNSIG="Pathogenic/Likely_pathogenic"' -c none -n~10  dbSNP_common.vcf.gz clinvar.vcf.gz | wc -l
+Note: -w option not given, printing list of sites...
+23119984
+ #+end_src
+ Par contre, l'o'ption -w ou -p fait des ficher "data"...
+Après un nouvel essai, plus de problème
+#+begin_src
+$ bcftools isec -e 'INFO/CLNSIG="Pathogenic" & INFO/CLNSIG="Pathogenic/Likely_pathogenic"' -c none -n=1 dbSNP_common.vcf.gz clinvar.vcf.gz -w 1 -o lol.vcf.gz
+$ zcat lol.vcf.gz | wc -l
+23120660
+#+end_src
+À noter le choix de l'option -n qui change entre "=1" et "~10"...
+En effet "=1" = au moins 1 fichier et "~10" fait exactement dans le premier et non dans le second
+#+begin_src
+$ bcftools isec -e 'INFO/CLNSIG="Pathogenic" & INFO/CLNSIG="Pathogenic/Likely_pathogenic"' -c none -n~10 dbSNP_common.vcf.gz clinvar.vcf.gz -w 1 -o lol.vcf.gz
+$ zcat lol.vcf.gz | wc -l
+23120660
+#+end_src
+******* DONE Essai bedtools intersect
+#+begin_src sh
+bedtools intersect -a  dbSNP_common.vcf.gz -b clinvar.vcf.gz
+#+end_src
+$ wc -l intersect.vcf
+220206 intersect.vcf
+******* TODO Valider avec Alexis : bcftool isec
+**** TODO Dépendences avec Nix
+***** DONE GATK
+CLOSED: [2022-10-21 Fri 21:59]
+***** WAIT BioDBHTS
+***** DONE BioExtAlign
+CLOSED: [2022-10-22 Sat 00:38]
+***** WAIT BioBigFile
+Revoir si on peut utliser kent dernière version
+***** TODO rtg-tools
 Convertir clinvar NC
+***** TODO Spip
 **** DONE Exécution
 CLOSED: [2022-09-13 Tue 21:37]
 ***** KILL test Bionix
@@ -1668,6 +1728,9 @@ CLOSED: [2022-10-09 Sun 22:40]
 *** Améliorations
 **** TODO Utilise une versionn allégée de GnomAD (une seule colonne)
 **** TODO Utiliser T-to-T comme références
+**** TODO Digenisme (cf nomenclature omim)
+C’est dans le nom de la maladie
+**** TODO Macro excel
 *** TODO Tests
 **** TODO Divers
 ***** DONE Vérifier nobmer de reads fastq - bam
@@ -1720,7 +1783,6 @@ Mais problème de proxy
 ***** TODO Lancer sarek sur données allégées
 **** TODO Test de non régression
 **** TODO Genome in a bottle ?
-SCHEDULED: <2022-07-30 Sat>
 On n'a pas l'ADN.. séquencer à Centogène ?
 *** Simulation sur mésocentre
 **** Réunion <2022-08-31 Wed>
@@ -1753,16 +1815,17 @@ Problèmes de versions...
 * Banque :banque:
 ** TODO Compte et CB société générale :banque:
 *** KILL Envoyer relevé
-*** TODO Transfert compte bancaire
-SCHEDULED: <2022-07-21 Thu>
-**** TODO Attestation Boursorama
-SCHEDULED: <2022-08-20 Sat>
+*** DONE Transfert compte bancaire
+CLOSED: [2022-10-22 Sat 23:35] SCHEDULED: <2022-07-21 Thu>
 **** DONE Virement pour éviter les défauts de rélèvements
 *** WAIT Demander chequier
 SCHEDULED: <2022-08-20 sam.>
+**** TODO Demander au CHU pour  le transfert (cela fait 2 mois)
+SCHEDULED: <2022-10-24 Mon>
+
 * FreeBSD :freebsd:
-** TODO ormolu 0.5.0.0
-SCHEDULED: <2022-07-30 Sat>
+** KILL ormolu 0.5.0.0
+CLOSED: [2022-10-22 Sat 23:36] SCHEDULED: <2022-07-30 Sat>
 
 ** Kitty
 *** KILL Problème sur fetchdir
@@ -1770,13 +1833,12 @@ CLOSED: [2022-09-22 Thu 10:45]
 Commiter au courant, attente de résolution
 *** DONE pkg-config problème avec 0.26.2
 CLOSED: [2022-09-22 Thu 10:45]
-*** TODO 0.26.3
-*** TODO Patch pour utiliser openssl base
+*** DONE 0.26.4
+CLOSED: [2022-10-20 Thu 23:05]
+*** DONE Patch pour utiliser openssl base
+CLOSED: [2022-10-20 Thu 23:05]
 ** WAIT [[https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=264158][pkgconf est trop lent sur freebsd]]
 Problème persiste avec dernière version
-** TODO taskwarrior v0.23.5
-SCHEDULED: <2022-07-31 Sun>
-/Entered on/ [2022-07-31 Sun 09:59]
 * Génétique
 ** TODO Collège [3/29]
 *** TODO 1. Architecture du génome
@@ -2157,9 +2219,9 @@ CLOSED: [2022-09-10 Sat 18:34]
 * Divers
 ** Amendes
 ** TODO Cadeau mariage :joris:
-SCHEDULED: <2022-08-04 Thu>
+SCHEDULED: <2022-11-22 Tue>
 ** TODO Cadeaux mariage :florian:
-SCHEDULED: <2022-08-04 Thu>
+SCHEDULED: <2022-11-22 Tue>
 ** TODO Copier photos famille depuis drive yvain sur drive famille
 SCHEDULED: <2022-07-30 Sat>
 * Nix
@@ -2220,13 +2282,8 @@ SCHEDULED: <2023-05-11 Thu>
 À faire au bout de 10ans, on attend l’an prochain
 * Moto
 ** TODO Changer kit chaine
-SCHEDULED: <2022-09-05 Mon>
+SCHEDULED: <2022-10-29 Sat>
 * Maison
-** TODO Nettoyer canapé cuir
-SCHEDULED: <2022-09-06 Tue>
-Acheter lait démaquillant
-** DONE Corriger erreur de facturation bouyges + renouveler
-SCHEDULED: <2022-09-03 Sat>
 ** TODO Renouveler abonnement
 SCHEDULED: <2022-11-14 Mon>
 À partir du 14 novembre
@@ -2235,3 +2292,6 @@ SCHEDULED: <2022-11-14 Mon>
 *** WAIT Demander accès
 <2022-10-15
 *** TODO Ebuild pour adapteur wifi TBW-108B
+** TODO Article nzbget sur wiki
+SCHEDULED: <2022-10-22 Sat>
+/Entered on/ [2022-10-22 Sat 17:31]
