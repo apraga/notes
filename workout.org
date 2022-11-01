@@ -5529,3 +5529,5 @@ Extension: 3x22
 Pistols : 3x5
 - Planche tucked push-up: 3x{3+2)
 Compression: 3x10 (assis + lever)
+* <2022-11-01 Tue> Running
+3min + 45s + 50s + 50s modéré en montée
