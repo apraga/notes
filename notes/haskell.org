@@ -72,3 +72,7 @@ Prelude.. On peut installer ghc-static ou bien utiliser ghcup
 
 - [X] installer avec ghcup - [X] Tester sur getbook - [X] Tester sur
 askhistorians
+
+* Emacs
+Utiliser haskell-compile
+Si on utilise haskell-proces-cabal-build (default =C-c c-c=), il ne trouve pas le fichier .cabal associé quand on éditer le code source

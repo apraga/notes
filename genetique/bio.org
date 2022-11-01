@@ -286,20 +286,97 @@ Lymphome de Burkitt t(8;14)q(24;32)
 Silence de gène par propagation hétérochromatine
 ex: syndrome de Pelizaues-Merzbacher : devient asymptomaique
 
-* Cytogénétique
-** Villosités choriales
-contiennent 2 type de tissus
-- extra-embryonnaire cytotrophoblastes et syncytiotropblaste
-- embryonnaire: mésenchyme
-Examen direct : sur cytotrophoblastes -> rapide mais toujours à confirmer par une culture sur mésenchyme
-*** Limites
-XX: possibilité d’une contamination maternelle
-Cytotrophoblastiques : mosaique, pas assez de mitoses, anomale déséquilibrée
-
-Source [[http://www.eaclf.org/docs/GBPcyto/Arbre-caryoVC.pdf][Recos EACLF]]
+* Cytogénétique :fiche:
+** Technique
+*** Pré-natal
+- liquide amniotique : culture pour caryo [\approx 2 semaine] + rapide (caryo direct, + FISH + qPCR) [\lt 48h]
+- villosité choriale  : culture \pm rapide (FISH + qPCR))
+  - attention contamination maternelle
+  - attention discordance foeto-placentaire : direct \approx trophoblaste, culture \approx embryonnaire [fn:1]. Les plus courants: 1) mosaïque limitée au placenta (foetus normal); 2) biopsie normale mais foetus anormal
+- sang foetal
+*** Postnatal
+- sang 1-3mL sur tube hépariné
+- biopsie cutanée (fibroblastes)
 ** Caryotype
-** TODO Transloc Robertsonien
-** Marqueur NOR
+*** Indication (1ere intention)
+Postnatal : (caryo \pm FISH)
+- phénotype T21, T13, T18, délétion 4p (Wolff-Hirschorn), délétion 5p (cri-du-chat), Turner, Klinefelter, trouble de différentiation sexuelles
+- petite taille (fille)
+- retard/absence de puberté
+- maladie récessive liée à l'X
+- aménorrhée (primaire, secondaire), IOP
+- suspicion d'instabilité chromosomique
+- azoospermie/oligospermie
+
+ ATCD familiaux :
+  - anomalie chromosomique connue
+  - suspciion d'anomalie chromosomique mais analyse non disponible
+  - récurrence mort foetale /et/ malformation
+
+Couple :
+- avortemens spontanées à répétition, échec d'implantation
+- bilan AMP
+- enfant décédé avec suspicion d'anomalie chromosomique
+*** Technique
+- 3 jours de culture
+- différents marquage de bande
+  - tout le long du chromosome (G, R)
+  - partie du chromosome (C = hétérochromatine constitutive, T = télomérique, NOR = nucleolus organizing regions )
+
+*** Bandes
+- 1 bandes = 5-10Mbp (\lt 100 gènes)
+- organisation foctionnelle du génome
+  - bandes G+ = riche AT, réplication tardive, peu de gènes
+  - bandes G- = riche GCT, réplication précoce, riches en gènes
+- Nomenclature
+  - p = bras court, q = bras long
+  - ex: 1p31.1 = chromosome 1, bras court (p), région 3, bande 1, sous-bande 1
+  - attention: numérotation à partir du centromère
+   [[file:img/chromsome-bands.png]]
+
+*** Anomalies
+**** Nombre
+- trisomies : prénatal = 13, 16, 18, postnatal =
+   - 13,18,21 \pm 8,9 souvent en mosaïque
+     \rightarrow notation: 48,XX,+13,+21
+   - 47,XXX, 47,XXY (Klinefelter), 47,XYY
+- monosomies = autosomes rarement viables,
+
+- mosaïque : mos 47,XXY[10]/46,XY[20] = 10 cellules XXY et 20 masculines normales
+- 46,XY,upd(15)mat = disomie uniparentale avec chromosome 15 héritée de la mère
+**** Structure
+***** Conséquence : équilibré = pas de perte/gain
+  - le plus souvent, porteur sainclinique normale
+  - gamètes : avortements, descendance avec anomalies congénitale
+
+***** 1 chromosome
+  - chromosome en anneau : instabilité -> dérivés complexes -> phénotype variable
+  - inversion : 2 cassures puis recollement -> souvent boucle.
+    - si péricentrique: difficulté mitose
+    - si paracentrique : instabilité mitotique, zygote probablement peu viable
+  - isochromosome (2 bras long ou 2 bras court): variante Turner, remplace un chromosome ou surnuméraire (syndrome Pallister-Killian = tétrasome 12p)
+  - dicentrique
+  - duplication intrachromosomique : parfois asymptomatique. En tandem ou en miroir. Trisomie partielle
+- petite chromosome surnuméraire : taille \lt chr21, 22. Trisomie partielle pour la région. Clinique variable
+
+  - délétions: 46,XX,del(5(q13)) délétion terminale bande 5q13, 46,XY,del(X)(p21p21) = délétion interstitelle
+  - dérivatif: réarangement dans le même chromosome (ex: 46,XY,der(9)del(9)(p12)del(9)(q31) = délétion terminale sur les bras courts et longs du 9) ou entre plusieurs chromosomes
+
+- Anomalies
+  - 46,XX[20]: 20 cellules du donneur féminin
+  - 46,XY,t(9;22)(q3;q11.2)[4]//46,XX[16] = 9;22 translocation dans 4 celluse, 16 cellules donneuses
+  47,XX,+21 ou 46,XY,t(4 ;11)(p11 ; q23)
+
+Limites
+
+***** > 1 chromosome
+translocation surtout.
+
+Robertsonienne: acrocentrique (13,14,15,21,22)
+
+*** Limite
+Résolution \gt 5Mb
+*** Marqueur NOR
 "Tige" sur les acrocentrique = gènes pour ribosomes
 Si doute sur la tige qui apparaît trop longue, on peut utiliser en FISH le marqueur NOR qui va confirmer que c’est bien une tige.
 Le piège est de le rendre comme polymorphisme alors qu’il s’agit d’une insertion d’un autre chromosome...
@@ -307,6 +384,22 @@ Le piège est de le rendre comme polymorphisme alors qu’il s’agit d’une in
 NOR car intervient dans le nucléole (maturation des ARN ribosomiques)
 
 Si "tige" longue, on peut supposer que c’est un facteur de risque pour translocation robertsonienne !
+
+
+* CGH
+Technique
+Classification
+Limites
+** Indications (1ere intention)
+Postnatal
+- hypotonie néonatales
+- DI (syndromique ou non)
+- RCIU et dysmorphie, anomalie neurologique, syndrome polymalformatique sans DI
+- trouble du comportement, TSA
+- mort-né, foetopathologique
+- signes d'appel écho en prénatal
+
+
 * Moléculaire
 ** Principales techniques d’analyse des anormalies génétiques à l’échelle du gène (Collège)
 *** Extraction
