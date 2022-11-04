@@ -1,6 +1,7 @@
 #+title: Biochimie
 
 * Foie
+** Physiologie
 Énergie:
 - stocke glucose
 - libère le glucose stocké, le produit par néoglucogenèse
@@ -17,7 +18,7 @@ Synthèse du cholestéral
 - hormones (stéroïdes)
 
   Transforme médicaments, toxique.... par modification (ex: cytochrome P450) puis conjugaison
-** Bilirubine
+*** Bilirubine
 Produite par
 - 20% catabolisme dans le foie des autres composants de l’hème ou destruction érythroblastes moelle
 - 80% hémoglobine par destruction des hématies
@@ -30,8 +31,18 @@ Cycle:
 Patho:
 - excès des capacité de transport de la bilirubine libre (exemple = préma) on a alors bilirubine libre non liée à l’albumine
 - bilirubine conjugée dans le plasma -> urines foncées (diag d’ictère)
-** Fonction biliaire
+*** Fonction biliaire
 - élimination métabolite
 - absorption lipides
 
 Patho: sursaturation du cholestérol -> cristaux -> calcul
+i*
+** Marqueurs
+*** Cytolyse
+- ALAT < 40 U/L = cytosol (foie +/- muscles)
+- ASAT <_35 U/L = cytosol + mitochondrie (foie, muscles, coeurs, rein, pancréas, cerveau)
+Attention :
+  - hémolyse = ininterprétable (amimontransferase globules rouges> plasma )
+  - ASAT < ALAT (sauf alcool chronique car grosses mitochrondrie)
+  - Aigü : normalisation en 6 mois
+  - seulement souffrance cellulaire et non état fonctionnel du foie
