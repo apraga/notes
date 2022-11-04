@@ -1,0 +1,37 @@
+#+title: Biochimie
+
+* Foie
+Énergie:
+- stocke glucose
+- libère le glucose stocké, le produit par néoglucogenèse
+- synthèse des corps cétonique:  oxydé pour être utilisé comme énergie par muscle squelettique, cardaque, cortex rénal
+
+Synthèse majeure partie des protéines sauf immunoglobulines
+- albumine
+- transport (transferrine...)
+- coagulation
+- inflammation (CRP, partie du complément)
+Synthèse du cholestéral
+Épuration : 
+- déchet du métabolisme = amoniaque sous forme d’urée (catabolisme azotée), bilirubine ,
+- hormones (stéroïdes)
+
+  Transforme médicaments, toxique.... par modification (ex: cytochrome P450) puis conjugaison
+** Bilirubine
+Produite par
+- 20% catabolisme dans le foie des autres composants de l’hème ou destruction érythroblastes moelle
+- 80% hémoglobine par destruction des hématies
+Cycle:
+- Bilirubine libre/non conjuguée = circule dans le plasma liée à l’albumine
+- conjugée dans le foie
+- bilirubine conjugée secrétée dans le duodenom par voies biliaires
+- oxydation qui va donner la couleurs aux selles. Une partie passe dans les urines
+
+Patho:
+- excès des capacité de transport de la bilirubine libre (exemple = préma) on a alors bilirubine libre non liée à l’albumine
+- bilirubine conjugée dans le plasma -> urines foncées (diag d’ictère)
+** Fonction biliaire
+- élimination métabolite
+- absorption lipides
+
+Patho: sursaturation du cholestérol -> cristaux -> calcul
