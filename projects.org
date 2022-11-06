@@ -226,11 +226,13 @@ NF2
 Voie RAS impliquée dans hépatoblastome ?
 Possible selon https://pubmed.ncbi.nlm.nih.gov/19665249/
 https://www.nature.com/articles/labinvest2016142
-**** TODO Trouver autres cas ?
+**** HOLD Trouver autres cas ?
 ***** TODO Appel ANDDI rares
 ***** TODO Appel ITACA
 **** DONE Plan de l’article
 CLOSED: [2022-10-22 Sat 23:33] DEADLINE: <2022-09-17 Sat>
+**** TODO Poster v0.1
+**** TODO Article v0.1
 ** Mustard :mustard:
 *** Scripts
 **** DONE Script pour données labkey
@@ -321,9 +323,9 @@ CLOSED: [2022-08-01 Mon 09:44]
 ***** WAIT PED1069
 ***** WAIT PED1070
 ***** WAIT PED1071
-***** TODO PED1072
-***** TODO PED1075
-***** TODO PED1077
+***** WAIT PED1072
+***** WAIT PED1075
+***** WAIT PED1077
 ***** TODO PED1078
 ***** TODO PED1079
 ***** TODO PED1080
@@ -1501,7 +1503,7 @@ CLOSED: [2022-08-04 Thu 17:42]
 ***** DONE Enlever les doublons
 CLOSED: [2022-09-13 Tue 21:36]
 **** DONE Fusionner panel Dijons
-**** TODO Fusionn variants à vérifier de dijon
+**** TODO Fusion variants à vérifier de dijon
 **** KILL Dxcare
 ***** DONE Demande Dijon
 ***** KILL Demande DPO Besançon
