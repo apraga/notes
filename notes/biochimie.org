@@ -19,7 +19,7 @@ Synthèse du cholestéral
 
   Transforme médicaments, toxique.... par modification (ex: cytochrome P450) puis conjugaison
 *** Bilirubine
-Produite par
+Production
 - 20% catabolisme dans le foie des autres composants de l’hème ou destruction érythroblastes moelle
 - 80% hémoglobine par destruction des hématies
 Cycle:
@@ -36,13 +36,66 @@ Patho:
 - absorption lipides
 
 Patho: sursaturation du cholestérol -> cristaux -> calcul
-i*
 ** Marqueurs
 *** Cytolyse
-- ALAT < 40 U/L = cytosol (foie +/- muscles)
-- ASAT <_35 U/L = cytosol + mitochondrie (foie, muscles, coeurs, rein, pancréas, cerveau)
+- ALAT > 40 U/L = cytosol (foie +/- muscles)
+- ASAT > 35 U/L = cytosol + mitochondrie (foie, muscles, coeurs, rein, pancréas, cerveau)
 Attention :
-  - hémolyse = ininterprétable (amimontransferase globules rouges> plasma )
+  - hémolyse = ininterprétable (aminotransferase globules rouges> plasma )
   - ASAT < ALAT (sauf alcool chronique car grosses mitochrondrie)
   - Aigü : normalisation en 6 mois
   - seulement souffrance cellulaire et non état fonctionnel du foie
+NB: LDH (lyse cellulaire) non spécifique mais très marqué pour métastase hépatique
+*** Synthèse
+- Coagulation : complexe prothrombinique diminué
+  - non spécifique des insuffisance hépatocellulaire (cholestase avec défaut absorption vitamine K)
+  - si < 60%, doser facteur V pour confirmer IHC
+  - attention: fibrose dès <90% dans patho chronique
+- Albumine : produit par l’hépatocyte
+  - important mais non spécifique de l’IHC (malnutrition, malabsorption, rénal)
+*** Épuration
+- Urée = diminué si IHC (genèse hépatique)
+- Ammoniac = augmenté si ICH -> suivi des IHC et foie (toxicité système nerveux central)
+*** Sécrétion bilaire
+Surtout défaut d’excrétion bilirubine conjugée + augmentation bilirbuine totale
+*** Cholestase
+Diminution/arrêt sécrétion biliaire. 3 atteintes :
+1. synthèse
+2. Sécrétion intrahépatique
+3. extrahépatique
+
+Marqueurs
+- bilirubine : augmentation totale + conjuguée (attention, ictère retardé : conjonctive si > 50µmol/L)
+- enzyme :
+  - phosphatase alcaline (PAL) augmentée mais non spécifique (patho. osseuses, cancers)
+    [Attention âge, grossesse]
+  - gamma-glutamyl transférase (γGT): origine hépatique pour l’enzyme circuante. Augmenté sensible mais peu spécifique (alcool, contraceptiuqe, phénoparbital)
+    [Attention population africaine]
+
+Coagulation: Diminution du TP avec facteur V normal
+
+Autres
+- Augmentation acides biliaire totaux = cholestase
+- Pigments
+  - biliaire dans urines (+produits transformations)
+  - Selles décolorées = cholestase
+- IgM = cirrhose biliaire primitive
+*** Inflammation
+CRP, vitesse sédimentatino érythrocytaire, électrophorèse ptoténies sériques
+*** Fibrose hépatique
+- ponction biopsie, Fibroscan (non invasif)
+- acide hyaluronique = surtout valeur prédictive négative
+- scores : Fibrotest, Fibromètre, Hépascore
+** Interprétation
+
+Augmentation ALAT/ASAT
+- cytolyse
+  - hépatite = virus ou toxique (alcool, médicaments). Aigü ou chronique
+    - viral: hépatite A, B, C aigù/chronique (sauh hépatite B) -> *sérologie virale*
+    - infection autre : aigù modéré
+    - alcool : aigù modéré ou chronique (ASAT > ALAT)
+    - médicaments : aigù important, plus rarement chronique
+  -
+
+- également corrélé à un insuffisance hépato-cellulaire
+- possiblement corrélé à une cholestase
