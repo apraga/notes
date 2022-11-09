@@ -292,7 +292,7 @@ AB = "allelic balance"
 
 *** Données
 **** DONE Import Labkey
-**** TODO Clinique, OCR et nettoyage données labkey [15/1199]
+**** TODO Clinique, OCR et nettoyage données labkey [29/1199]
 DONE = sur scality (mis dans ~/annex/mustard/done)
 SRT = traité, non transféré (en attente dans ~/annex/mustard)
 ***** DONE PED0052
@@ -312,23 +312,37 @@ CLOSED: [2022-08-01 Mon 09:44]
 CLOSED: [2022-08-01 Mon 09:44]
 ***** DONE PED1036
 ***** DONE PED1037
-***** WAIT PED1038
-***** WAIT PED1040
-***** WAIT PED1042
-***** WAIT PED1043
-***** WAIT PED1044
-***** WAIT PED1045
-***** WAIT PED1064
-***** WAIT PED1068
-***** WAIT PED1069
-***** WAIT PED1070
-***** WAIT PED1071
-***** WAIT PED1072
-***** WAIT PED1075
-***** WAIT PED1077
-***** TODO PED1078
-***** TODO PED1079
-***** TODO PED1080
+***** DONE PED1038
+CLOSED: [2022-11-08 Tue 22:20]
+***** DONE PED1040
+CLOSED: [2022-11-08 Tue 22:20]
+***** DONE PED1042
+CLOSED: [2022-11-08 Tue 22:20]
+***** DONE PED1043
+CLOSED: [2022-11-08 Tue 22:20]
+***** DONE PED1044
+CLOSED: [2022-11-08 Tue 22:20]
+***** DONE PED1045
+CLOSED: [2022-11-08 Tue 22:20]
+***** DONE PED1064
+CLOSED: [2022-11-08 Tue 22:20]
+***** DONE PED1068
+CLOSED: [2022-11-08 Tue 22:20]
+***** DONE PED1069
+CLOSED: [2022-11-08 Tue 22:20]
+***** DONE PED1070
+CLOSED: [2022-11-08 Tue 22:20]
+***** DONE PED1071
+CLOSED: [2022-11-08 Tue 22:20]
+***** DONE PED1072
+CLOSED: [2022-11-08 Tue 22:20]
+***** DONE PED1075
+CLOSED: [2022-11-08 Tue 22:20]
+***** DONE PED1077
+CLOSED: [2022-11-08 Tue 22:20]
+***** WAIT PED1078
+***** WAIT PED1079
+***** WAIT PED1080
 ***** TODO PED1083
 ***** TODO PED1084
 ***** TODO PED1085
@@ -1540,7 +1554,7 @@ Plus facile, à faire avant Elements... ?
 **** https://mlcourse.ai/book/index.html
 **** https://www.fast.ai/
 
-** Pipeline exome
+** Pipeline exome :bisonex:
 *** Biblio
 Comparaison WDL, Cromwell, nextflow
 https://www.nature.com/articles/s41598-021-99288-8
@@ -1580,12 +1594,12 @@ SCHEDULED: <2022-08-19 Fri>
 CLOSED: [2022-09-13 Tue 21:37]
 ***** TODO Processing bases de données
 ****** DONE dbSNP common
-****** TODO common dbSNP not clinvar patho
+****** DONE common dbSNP not clinvar patho
+CLOSED: [2022-11-07 Mon 21:42]
  - [X] normaliser les noms de chromosomes clinvar
- - [ ] packager rgttools avec nix
- - [ ] Utiliser bcftools isec qui semble faire la même chose que le script d'alexis
+ - [-] packager rgttools avec nix
+ - [X] Utiliser bcftools isec qui semble faire la même chose que le script d'alexis
    avec option "-c none" "-n~10"
-
 ******* DONE Test: variants dbSNP étiquettés "clinvar"
 CLOSED: [2022-10-23 Sun 18:55]
 $ zgrep CLNSIG dbSNP_common.vcf.gz | wc -l
@@ -1609,7 +1623,7 @@ $ rtg vcfeval -b dbSNP_common.vcf.gz -c clinvar.vcf.gz -o test -t genomeRef.sdf/
 VCF header does not contain a FORMAT field named GQ
 Error: Record did not contain enough samples: NC_000001.11	10001	rs1570391677	A,C	.	PASS	RS=1570391677;dbSNPBuildID=154;SSR=0;PSEUDOGENEINFO=DDX11L1:100287102;VC=SNV;R5;GNO;FREQ=KOREAN:0.9891,0.0109,.|SGDP_PRJ:0,1,.|dbGaP_PopFreq:1,.,0;COMMON
  #+end_src
-******* DONE Essai bcftools
+******* DONE Essai bcftools isec
 CLOSED: [2022-10-23 Sun 18:55]
 #+begin_src sh
 bcftools isec dbSNP_common.vcf.gz clinvar.vcf.gz -p common
@@ -1686,7 +1700,8 @@ bedtools intersect -a  dbSNP_common.vcf.gz -b clinvar.vcf.gz
 #+end_src
 $ wc -l intersect.vcf
 220206 intersect.vcf
-******* TODO Valider avec Alexis : bcftool isec
+******* DONE Valider avec Alexis : bcftool isec
+CLOSED: [2022-11-07 Mon 21:42]
 **** TODO Dépendences avec Nix
 ***** DONE GATK
 CLOSED: [2022-10-21 Fri 21:59]
@@ -1695,7 +1710,7 @@ CLOSED: [2022-10-21 Fri 21:59]
 CLOSED: [2022-10-22 Sat 00:38]
 ***** WAIT BioBigFile
 Revoir si on peut utliser kent dernière version
-***** TODO rtg-tools
+***** HOLD rtg-tools
 Convertir clinvar NC
 ***** TODO Spip
 **** DONE Exécution
@@ -1721,10 +1736,11 @@ CLOSED: [2022-10-09 Sun 22:30]
 CLOSED: [2022-10-09 Sun 22:40]
 ***** DONE Filter variants
 CLOSED: [2022-10-09 Sun 22:40]
-***** TODO Filter common snp not clinvar path
-- [ ] Tester rtg-tools
-- [ ] Tester comm
-***** TODO Filter variant only in consensual sequence
+***** DONE Filter common snp not clinvar path
+CLOSED: [2022-11-07 Mon 23:00]
+Voir [[*common dbSNP not clinvar patho][common dbSNP not clinvar patho]]
+***** DONE Filter variant only in consensual sequence
+CLOSED: [2022-11-08 Tue 22:23]
 ***** TODO Filter technical variants
 **** TODO Annotation avec Netxflow
 *** Améliorations
@@ -1786,22 +1802,6 @@ Mais problème de proxy
 **** TODO Test de non régression
 **** TODO Genome in a bottle ?
 On n'a pas l'ADN.. séquencer à Centogène ?
-*** Simulation sur mésocentre
-**** Réunion <2022-08-31 Wed>
-Intervenants:
-- Kamel Mazouzi (directeur adjoint informatique)
-- Sekou Diakité
-
-2 clusters :
-- Lumière : Centos non mis à jour, SGE, Spack comme équivalent Nix
-- Helios : moins de coeurs mais à jours, Slurm
-
-Conclusion :
-- essai d’installation Nix
-- si échec, essayer Spack ou Conda
-- répertoire partagé de 2To pour datasets
-- soumission de jobs sous Nextflow à discuter dans un second temps
-**** DONE Installation nix
 *** TODO Implémenter d’autres pipeline
 Voir https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04407-x
 **** TODO GATK
