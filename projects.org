@@ -1574,7 +1574,6 @@ Ordinateur de Carine (WSL2) : 4h dont 1h15 alignement (parallélisé) et 1h15 ha
 **** Pipelines prêt-à-l’emploi nextflow
 Problème : nécessite singularity ou docker (ou conda)
 Potentiellement utilisable avec nix...
-
 *** Nouveau workflow
 **** TODO Bases de données
 ***** KILL Nix pour télécharger les données brutes
@@ -1743,6 +1742,7 @@ Voir [[*common dbSNP not clinvar patho][common dbSNP not clinvar patho]]
 CLOSED: [2022-11-08 Tue 22:23]
 ***** TODO Filter technical variants
 **** TODO Annotation avec Netxflow
+*** TODO Faire fonctionner pipeline initial avec nix
 *** Améliorations
 **** TODO Utilise une versionn allégée de GnomAD (une seule colonne)
 **** TODO Utiliser T-to-T comme références
