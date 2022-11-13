@@ -1712,6 +1712,7 @@ Revoir si on peut utliser kent dernière version
 ***** HOLD rtg-tools
 Convertir clinvar NC
 ***** TODO Spip
+***** TODO R + packages
 **** DONE Exécution
 CLOSED: [2022-09-13 Tue 21:37]
 ***** KILL test Bionix
@@ -1743,17 +1744,30 @@ CLOSED: [2022-11-08 Tue 22:23]
 ***** TODO Filter technical variants
 **** TODO Annotation avec Netxflow
 *** TODO Faire fonctionner pipeline initial avec nix
-*** Améliorations
-**** TODO Utilise une versionn allégée de GnomAD (une seule colonne)
-**** TODO Utiliser T-to-T comme références
-**** TODO Digenisme (cf nomenclature omim)
-C’est dans le nom de la maladie
-**** TODO Macro excel
+**** DONE Ajouter clinvar
+CLOSED: [2022-11-13 Sun 19:37]
+**** WAIT Ajouter common snp not clinvar path
+Problème avec la liste des ID
+**** DONE Alignement
+CLOSED: [2022-11-13 Sun 12:52]
+**** TODO Variant calling
+***** DONE Haplotype caller
+CLOSED: [2022-11-13 Sun 13:00]
+***** TODO Filter
+- [X] depth
+- [X] comon snp not path
+Problème avec liste des ID
+**** TODO variant annotation
+Besoin de vep
 *** TODO Tests
+**** TODO Test de non régression avec version ALexis
+- alignement + variant:
+  Alexis : 886164
+  nouveau : 958401
+  Vient du génome de référence ??
 **** TODO Divers
 ***** DONE Vérifier nobmer de reads fastq - bam
 CLOSED: [2022-10-09 Sun 22:31]
-**** TODO Non-régression avec alexis
 **** TODO Sarek
 ***** Dépendances
 ****** Nix
@@ -1799,15 +1813,21 @@ Mais problème de proxy
   nix-shell -p python310Packages.pyyaml --run "nextflow run nf-core/sarek -profile test --executor slurm --queue smp --outdir test -resume"
 #+end_src
 ***** TODO Lancer sarek sur données allégées
-**** TODO Test de non régression
 **** TODO Genome in a bottle ?
 On n'a pas l'ADN.. séquencer à Centogène ?
+*** Améliorations
+**** TODO Utilise une versionn allégée de GnomAD (une seule colonne)
+**** TODO Utiliser T-to-T comme références
+**** TODO Digenisme (cf nomenclature omim)
+C’est dans le nom de la maladie
+**** TODO Macro excel
 *** TODO Implémenter d’autres pipeline
 Voir https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04407-x
-**** TODO GATK
+**** KILL GATK
+CLOSED: [2022   -11-11 Fri 20:01]
 https://broadinstitute.github.io/warp/docs/Pipelines/Exome_Germline_Single_Sample_Pipeline/README
 A priori, respecte les bonnes pratiques
-**** KILL Essayer snamke avec bonne pratiques
+**** KILL Essayer snmake avec bonne pratiques
 https://github.com/snakemake-workflows/dna-seq-gatk-variant-calling/blob/main/.github/workflows/main.yml
 Installer Mamba (micromamba ne fonctionne pas sous nix)
 Ne fonctionne pas sous WSL2... MultiQC n’est pas assez à jour
