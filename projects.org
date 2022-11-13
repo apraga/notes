@@ -1746,8 +1746,18 @@ CLOSED: [2022-11-08 Tue 22:23]
 *** TODO Faire fonctionner pipeline initial avec nix
 **** DONE Ajouter clinvar
 CLOSED: [2022-11-13 Sun 19:37]
-**** WAIT Ajouter common snp not clinvar path
+**** STRT Ajouter common snp not clinvar path
 Problème avec la liste des ID
+- dbSNP comon : même nombre de lignes ? oui
+  #+begin_src sh
+
+[apraga@mesointeractive bisonex]$ zgrep '^NC' database/dbSNP/dbSNP_common.vcf.g
+z | wc -l
+21155971
+[apraga@mesointeractive bisonex]$ zgrep '^NC' /Work/Groups/bisonex/data/dbSNP_common.vcf.gz | wc -l
+2115597
+  #+end_src
+- vérifier script python: mail envoyé alexis
 **** DONE Alignement
 CLOSED: [2022-11-13 Sun 12:52]
 **** TODO Variant calling
