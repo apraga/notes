@@ -90,6 +90,7 @@ Voir [[file:books-lists][books lists]] pour des idées
 
 * La pleiade :la_pleiade:
 ** DONE Le coran
+** STRT Rabelais
 ** DONE Duby, [[file:books/duby.md][Oeuvres]]
 ** DONE [[file:books/homere.md][Homère, Iliade -- Odyssée]]
 ** DONE Hugo, [[file:books/travailleurs_de_la_mer.md][Les Travailleurs de la mer]] -- [[file:books/notre_dame_de_paris.md][Notre-Dame de Paris]]
@@ -132,22 +133,22 @@ Texte de référence pour classification, machine
 2.4  non clair, à relire
 * Medenice
 ** TODO Cecil-Goldman (26th edition)
-- Renal and Genitourinary Diseases 1.
-  - [X] Chapter 106 Approach to the Patient with Renal Disease
-  - [X] Chapter 107 Structure and Function of the Kidneys
-  - [X] Chapter 112 Acute Kidney Injury
-- Infectious Diseases
-  - [X] hapter 318 Candidiasis
-- Neurology Disease
-  - [X] Chapter 369 Psychiatric Disorders in Medical Practice
+*** Renal and Genitourinary Diseases 1.
+- [-] 106 Approach to the Patient with Renal Disease
+- [-] 107 Structure and Function of the Kidneys
+- [-] 112 Acute Kidney Injury
+*** Infectious Diseases
+- [-] 318 Candidiasis
+*** Neurology Disease
+- [-] Chapter 369 Psychiatric Disorders in Medical Practice
 ** TODO Auerbach's wilderness medecine
-- Mountain Medicine
-  - [X] Chapter 1 High-Altitude Physiology
-  - [X] Chapter 2 High-Altitude Medicine and Pathophysiology
-  - [X] Chapter 4 Avalanches
-  - [X] Chapter 5 Lightning-Related Injuries and Safety
-- Cold and Heat
-  - [X] Chapter 13 Clinical Management of Heat-Related Illnesses
+*** Mountain Medicine
+  - [-] Chapter 1 High-Altitude Physiology
+  - [-] Chapter 2 High-Altitude Medicine and Pathophysiology
+  - [-] Chapter 4 Avalanches
+  - [-] Chapter 5 Lightning-Related Injuries and Safety
+*** Cold and Heat
+  - [-] Chapter 13 Clinical Management of Heat-Related Illnesses
 
 * Philosophy :philosophy:
 ** STRT A History of Western Philosophy

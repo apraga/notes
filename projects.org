@@ -8,7 +8,8 @@
 *** Raw data
 **** DONE Ne plus utiliser les .size mais récupérer directement la taille sur le serveur
 CLOSED: [2022-07-26 Tue 17:36]
-**** STRT Faire fonctionner taches récurrente avec Windows
+**** DONE Faire fonctionner taches récurrente avec Windows
+CLOSED: [2022-11-19 Sat 17:34]
 Erreur 0x1 : a priori résolu en démarrant le script dans le bon répertoire...
 *** Notes
 **** Extraction de données
@@ -1872,25 +1873,25 @@ CLOSED: [2022-10-20 Thu 23:05]
 ** WAIT [[https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=264158][pkgconf est trop lent sur freebsd]]
 Problème persiste avec dernière version
 * Génétique
-** TODO Collège [3/29]
+** TODO Collège [0/32]
 *** TODO 1. Architecture du génome
 *** TODO 2. Structure et fonction du génome humains: chromosomes sexuels
 *** TODO 3. Structure et fonction du génome humains
-*** TODO 4. Hérédité monogénique
+*** TODO 4. Hérédité mendélienne
 *** TODO 5. Génétique des populations
 *** TODO 6. Cytogénétique conventionnelle
 *** TODO 7. Cytogénétique moléculaire
 *** TODO 8. Anomalies hémopathies et tumeurs solides
-*** DONE 9.Anomalies génétiques à l’échelle du gène
-*** DONE 10. Principales techniques d’analyses des anomalies génétiques à l’échelle du gène
-*** TODO 11. NGS
+*** STRT 9.Anomalies génétiques à l’échelle du gène
+*** STRT 10. Principales techniques d’analyses des anomalies génétiques à l’échelle du gène
+*** TODO 11. Séquencage haut débit
 *** TODO 12. Conseil génétique
 *** TODO 13. Examen de l’enfant
 *** TODO 14. Hétérogénéite des maladies génétiques
 *** TODO 15. DPN, DPI
 *** TODO 16. Dépistage néonatal
 *** TODO 17. DPS
-*** KILL 18. Dispositions législatives
+*** TODO 18. Dispositions législatives
 *** TODO 19. Enjeux éthiques
 *** TODO 20. Maladies mitochondriales
 *** TODO 21. Empreinte parentale
@@ -1899,9 +1900,12 @@ Problème persiste avec dernière version
 *** TODO 24. Bases de données
 *** TODO 25. Perspectives thérapeutiques
 *** TODO 26. Pharmacogénétique
-*** TODO 27. T21
-*** TODO 28. Mucoviscidose
-*** TODO 29. Xfragile
+*** TODO 27. Génétique des maladies complexes
+*** TODO 28. T21
+*** TODO 29. Mucoviscidose
+*** TODO 30. Xfragile
+*** TODO 31. Maladies rares
+*** TODO 32. Médecine génomique
 
 ** TODO Biologie cellulaire et moléculaire Dunod [22/209]
 *** DONE Fiche 1
@@ -2114,22 +2118,26 @@ Problème persiste avec dernière version
 *** TODO Fiche 208
 *** TODO Fiche 209
 ** TODO Biologie chimie Dunod
-** TODO DES [0/4]
-*** TODO Valider cours sur sides
+** TODO DES [2/4]
+*** DONE Valider cours sur sides
 *** TODO Vérifier que toutes les diapos sont sur one drive
-*** TODO Examen sur sides
+*** DONE Examen sur sides
 *** TODO Lire les cours
-**** TODO Presentiel session 1 [6/9]
+**** KILL Presentiel session 1 [9/9]
+CLOSED: [2022-11-19 Sat 17:43]
 ***** DONE Introduction à la dysmorphologie
 ***** DONE Structuration du génome et mécanismes mutationnels
 ***** DONE Oncogénétique: introduction
-***** TODO Diagnostic prénatal
+***** KILL Diagnostic prénatal
+CLOSED: [2022-11-19 Sat 17:35]
 ***** DONE Grandes technologies et bioinformatique
 ***** DONE Aspects réglementaires et éthiques
 ***** DONE Mucoviscidose
 CLOSED: [2022-09-10 Sat 18:34]
-***** TODO Bases sur le conseil génétique
-***** TODO SEPI et TD
+***** KILL Bases sur le conseil génétique
+CLOSED: [2022-11-19 Sat 17:35]
+***** KILL SEPI et TD
+CLOSED: [2022-11-19 Sat 17:35]
 **** DONE E-learning session 1 [6/6]
 ***** DONE maladies endocriniennes et métabolisme
 ***** DONE anomalies de la croissance
@@ -2137,12 +2145,18 @@ CLOSED: [2022-09-10 Sat 18:34]
 ***** DONE maladies du tissu conjonctif
 ***** DONE Oncogénétique
 ***** DONE dermatogénétique
-**** TODO Presentiel session 2 [0/5]
-***** TODO Déficience intellectuelle
-***** TODO Génétique clinique et formelle
-***** TODO Pathologies fréquentes en génétique clinique
-***** TODO Génome humain : normal et pathologique
-***** TODO Maladies métaboliques
+**** KILL Presentiel session 2 [0/5]
+CLOSED: [2022-11-19 Sat 17:43]
+***** KILL Déficience intellectuelle
+CLOSED: [2022-11-19 Sat 17:35]
+***** KILL Génétique clinique et formelle
+CLOSED: [2022-11-19 Sat 17:35]
+***** KILL Pathologies fréquentes en génétique clinique
+CLOSED: [2022-11-19 Sat 17:35]
+***** KILL Génome humain : normal et pathologique
+CLOSED: [2022-11-19 Sat 17:35]
+***** KILL Maladies métaboliques
+CLOSED: [2022-11-19 Sat 17:35]
 **** TODO E-learning session 2 [5/6]
 ***** DONE Infertilité
 -> cours 1, diapo 31
@@ -2249,7 +2263,6 @@ CLOSED: [2022-09-10 Sat 18:34]
 **** TODO Syndrome de Kleefstra (L Perrin)
 **** TODO Téloméropathies (T Leblanc)
 * Divers
-** Amendes
 ** TODO Cadeau mariage :joris:
 SCHEDULED: <2022-11-22 Tue>
 ** TODO Cadeaux mariage :florian:
@@ -2309,7 +2322,7 @@ Solution 2: packages graaljs en compilant depuis le sourc   e
 *** DONE Changer pneus avant
 CLOSED: [2022-09-11 Sun 22:05] SCHEDULED: <2022-09-03 Sat>
 Trop abimé pour prendre le risque, on changera les arrières plus tard
-*** TODO Changer courrie distribution
+*** TODO Changer courroie distribution
 SCHEDULED: <2023-05-11 Thu>
 À faire au bout de 10ans, on attend l’an prochain
 * Moto
@@ -2318,11 +2331,11 @@ SCHEDULED: <2022-10-29 Sat>
 * Maison
 ** TODO Renouveler abonnement
 SCHEDULED: <2022-11-14 Mon>
-À partir du 14 novembre
+À partir de début décement novembre
 * Gentoo
 ** GURU
-*** WAIT Demander accès
-<2022-10-15
+*** DONE Demander accès
+CLOSED: [2022-11-19 Sat 17:36]
 *** TODO Ebuild pour adapteur wifi TBW-108B
 ** TODO Article nzbget sur wiki
 SCHEDULED: <2022-10-22 Sat>
