@@ -1393,11 +1393,6 @@ Pas de DI mais retard possible
 - biopsie testiculaire postiive 50% des cas ->_ICSI possible
 - testostérone début adolescence
 * Syndrome de Klippel-Trenaunay
-Souvent membre inférieur avec
-- angiome plan
-- varice
-- hypertrophie os et parties molles +/- asymétrie de longueur des MI
-* Syndrome de Klippel-Trenaunay
 - Malformations vasculaires : angiome plan (composante veineuse)
 - Varices : anomalies de trajet et du développement des veines
 - Hypertrophie des os et des tissus sous jacents : inégalité de longueur
