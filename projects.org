@@ -1594,8 +1594,10 @@ SCHEDULED: <2022-08-19 Fri>
 CLOSED: [2022-09-13 Tue 21:37]
 ***** TODO Processing bases de données
 ****** DONE dbSNP common
-****** DONE common dbSNP not clinvar patho
-CLOSED: [2022-11-07 Mon 21:42]
+****** DONE Seulement les ID dans dbSNP common !
+CLOSED: [2022-11-19 Sat 21:42]
+172G au lieu de 253M...
+****** TODO common dbSNP not clinvar patho
  - [X] normaliser les noms de chromosomes clinvar
  - [-] packager rgttools avec nix
  - [X] Utiliser bcftools isec qui semble faire la même chose que le script d'alexis
@@ -1702,6 +1704,34 @@ $ wc -l intersect.vcf
 220206 intersect.vcf
 ******* DONE Valider avec Alexis : bcftool isec
 CLOSED: [2022-11-07 Mon 21:42]
+******* TODO Pourquoi nombre de lignes différentes avec la version d'Alexis
+Grosse différence !
+#+begin_src
+$ wc -l ID_of_common_snp_not_clinvar_patho.txt
+23119915 ID_of_common_snp_not_clinvar_patho.txt
+$ wc -l /Work/Users/apraga/bisonex/database/dbSNP/ID_of_common_snp_not_clinvar_patho.txt
+85820 /Work/Users/apraga/bisonex/database/dbSNP/ID_of_common_snp_not_clinvar_patho.txt
+#+end_src
+******** Clinvar classe 4 ? Moins mais toujours trop
+#+begin_src
+$ zgrep '^NC' tmp.vcf.gz  | wc -l
+21081654
+#+end_src
+******** Comparer les ID et regarder ceux en plus
+#+begin_src sh
+bcftools isec -e 'INFO/CLNSIG="Pathogenic"' -c none -n~10 /Work/Groups/bisonex/data/dbSNP/GRCh38.p13/dbSNP_common.vcf.gz /Work/Groups/bisonex/data/clinvar/GRCh38/clinvar.vcf.gz -w 1 -o tmp.vcf.gz
+
+zgrep -o -e 'rs[[:digit:]]\' tmp.vcf.gz | sort | id_sorted.txt
+sort ../database/dbSNP/ID_of_common_snp_not_clinvar_patho.txt  > reference_sorted.txt
+comm -23 id_sorted.txt reference_sorted.txt > unique1.txt
+#+end_src
+Par exemple
+#+begin_src sh
+zgrep rs1000000561 ../database/dbSNP/dbSNP_common.vcf.gz
+#+end_src
+NC_000002.12	136732859	rs1000000561	ACG	A,ACGCG	.	PASS	RS=1000000561;dbSNPBuildID=151;SSR=0;VC=INDEL;GNO;FREQ=ALSPAC:0.2506,0.7494,.|TOMMO:0.9971,0.002865,.|TWINSUK:0.2473,0.7527,.|dbGaP_PopFreq:0.993,0.006943,8.902e-05;COMMON
+
+Attention, clinvar est en numéro de chromosomoe et dbSNP en NC...
 **** TODO Dépendences avec Nix
 ***** DONE GATK
 CLOSED: [2022-10-21 Fri 21:59]
@@ -1710,10 +1740,12 @@ CLOSED: [2022-10-21 Fri 21:59]
 CLOSED: [2022-10-22 Sat 00:38]
 ***** WAIT BioBigFile
 Revoir si on peut utliser kent dernière version
-***** HOLD rtg-tools
+***** KILL rtg-tools
+CLOSED: [2022-11-19 Sat 21:06]
 Convertir clinvar NC
 ***** TODO Spip
-***** TODO R + packages
+***** DONE R + packages
+CLOSED: [2022-11-19 Sat 21:05]
 **** DONE Exécution
 CLOSED: [2022-09-13 Tue 21:37]
 ***** KILL test Bionix
@@ -1732,7 +1764,8 @@ CLOSED: [2022-10-09 Sun 22:30]
 CLOSED: [2022-10-09 Sun 22:30]
 ***** DONE Recalibrate base quality score
 CLOSED: [2022-10-09 Sun 22:30]
-**** TODO Variant calling avec Netxflow
+**** DONE Variant calling avec Netxflow
+CLOSED: [2022-11-19 Sat 21:34]
 ***** DONE Haplotype caller
 CLOSED: [2022-10-09 Sun 22:40]
 ***** DONE Filter variants
@@ -1742,40 +1775,44 @@ CLOSED: [2022-11-07 Mon 23:00]
 Voir [[*common dbSNP not clinvar patho][common dbSNP not clinvar patho]]
 ***** DONE Filter variant only in consensual sequence
 CLOSED: [2022-11-08 Tue 22:23]
-***** TODO Filter technical variants
+***** DONE Filter technical variants
+CLOSED: [2022-11-19 Sat 21:34]
 **** TODO Annotation avec Netxflow
-*** TODO Faire fonctionner pipeline initial avec nix
-**** DONE Ajouter clinvar
+**** TODO Tester version d'alexis avec Nix
+***** DONE Ajouter clinvar
 CLOSED: [2022-11-13 Sun 19:37]
-**** STRT Ajouter common snp not clinvar path
-Problème avec la liste des ID
-- dbSNP comon : même nombre de lignes ? oui
-  #+begin_src sh
-
-[apraga@mesointeractive bisonex]$ zgrep '^NC' database/dbSNP/dbSNP_common.vcf.g
-z | wc -l
-21155971
-[apraga@mesointeractive bisonex]$ zgrep '^NC' /Work/Groups/bisonex/data/dbSNP_common.vcf.gz | wc -l
-2115597
-  #+end_src
-- vérifier script python: mail envoyé alexis
-**** DONE Alignement
+***** TODO Corriger numérotation chromosome pour clinav
+***** STRT Ajouter common snp not clinvar path
+***** DONE Alignement
 CLOSED: [2022-11-13 Sun 12:52]
-**** TODO Variant calling
 ***** DONE Haplotype caller
 CLOSED: [2022-11-13 Sun 13:00]
 ***** TODO Filter
 - [X] depth
 - [X] comon snp not path
 Problème avec liste des ID
-**** TODO variant annotation
+****** TODO variant annotation
 Besoin de vep
+
+***** TODO Variant calling
+
 *** TODO Tests
-**** TODO Test de non régression avec version ALexis
-- alignement + variant:
+**** TODO Test de non régression avec version ALexis avec nix
+***** DONE ID common snp
+CLOSED: [2022-11-19 Sat 21:36]
+#+begin_src
+$ wc -l ID_of_common_snp.txt
+23194290 ID_of_common_snp.txt
+$ wc -l /Work/Users/apraga/bisonex/database/dbSNP/ID_of_common_snp.txt
+23194290 /Work/Users/apraga/bisonex/database/dbSNP/ID_of_common_snp.txt
+#+end_src
+***** TODO ID commo snp not clinvar patho
+Résoudre [[*Pourquoi nombre de lignes différentes avec la version d'Alexis][Pourquoi nombre de lignes différentes avec la version d'Alexis]]
+***** TODO alignement + variant:
   Alexis : 886164
   nouveau : 958401
   Vient du génome de référence ??
+
 **** TODO Divers
 ***** DONE Vérifier nobmer de reads fastq - bam
 CLOSED: [2022-10-09 Sun 22:31]
