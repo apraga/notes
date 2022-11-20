@@ -23,6 +23,12 @@ La structure du  tableau est perdue dans tous les cas
 
 **** Parser
 Liste de parser : https://tomassetti.me/parsing-in-python/
+** Quillbot
+Possible d'utiliser selenium tout le long
+Mais si on copy lese cookies et headers depuis le navigateur:
+- on peut bypasser cloudflare (vu qu'on a le résultat)
+- mais au lieu d'avoir un json,  on a du binaire...
+
 * Learning Haskell :haskell:
 ** [#A] [[https://www.reddit.com/r/haskell/comments/npxfba/comment/h084wwa/?utm_source=share&utm_medium=web2x&context=3][Reddit suggestion]]]
 *** TODO Learn Foundational building blocks
@@ -1602,16 +1608,35 @@ CLOSED: [2022-11-19 Sat 21:42]
  - [-] packager rgttools avec nix
  - [X] Utiliser bcftools isec qui semble faire la même chose que le script d'alexis
    avec option "-c none" "-n~10"
-******* DONE Test: variants dbSNP étiquettés "clinvar"
-CLOSED: [2022-10-23 Sun 18:55]
-$ zgrep CLNSIG dbSNP_common.vcf.gz | wc -l
-57997
+******* KILL Utiliser directement le numéro dbSNP dans clinvar ? Non
+CLOSED: [2022-11-20 Sun 19:51]
+Ex: chr20
+#+begin_src sh :dir ~/code/bisonex/test_isec
+bcftools query -f 'rs%INFO/RS \n' -i 'INFO/RS != "." & INFO/CLNSIG="Pathogenic"' clinvar_chr20.vcf.gz | sort > ID_clinvar_patho.txt
+bcftools query -f '%ID\n' dbSNP_common_chr20.vcf.gz | sort > ID_of_common_snp.txt
+comm -23 ID_of_common_snp.txt ID_clinvar_patho.txt > ID_of_common_snp_not_clinvar_patho.txt
+wc -l ID_of_common_snp_not_clinvar_patho.txt
+# sort ID
+#+end_src
 
-$ zgrep "RS=" clinvar.vcf.gz | wc -l
-834352
+#+RESULTS:
+: 518846 ID_of_common_snp_not_clinvar_patho.txt
 
-Donc il faut vraiment faire l'intersection des VCF
-soit avec vcftools (naïve) soit avec rtgtools (gères les synonymes)
+Version d'alexis
+#+begin_src sh :dir ~/code/bisonex/test_isec
+snp=dbSNP_common_chr20.vcf.gz
+clinvar=clinvar_chr20_notremapped.vcf.gz
+python ../script/pythonScript/clinvar_sbSNP.py \
+    --clinvar $clinvar \
+    --chrm_name_table ../database/RefSeq/refseq_to_number_only_consensual.txt \
+    --dbSNP $snp --output prod.txt
+wc -l prod.txt
+zgrep '^NC' dbSNP_common_chr20.vcf.gz | wc -l
+#+end_src
+
+#+RESULTS:
+| 518832 | prod.txt |
+| 518846 |          |
 
 ******* DONE Essai rtg tools
 CLOSED: [2022-10-23 Sun 13:56]
@@ -1625,7 +1650,7 @@ $ rtg vcfeval -b dbSNP_common.vcf.gz -c clinvar.vcf.gz -o test -t genomeRef.sdf/
 VCF header does not contain a FORMAT field named GQ
 Error: Record did not contain enough samples: NC_000001.11	10001	rs1570391677	A,C	.	PASS	RS=1570391677;dbSNPBuildID=154;SSR=0;PSEUDOGENEINFO=DDX11L1:100287102;VC=SNV;R5;GNO;FREQ=KOREAN:0.9891,0.0109,.|SGDP_PRJ:0,1,.|dbGaP_PopFreq:1,.,0;COMMON
  #+end_src
-******* DONE Essai bcftools isec
+******* DONE bcftools isec : non
 CLOSED: [2022-10-23 Sun 18:55]
 #+begin_src sh
 bcftools isec dbSNP_common.vcf.gz clinvar.vcf.gz -p common
@@ -1696,15 +1721,10 @@ $ bcftools isec -e 'INFO/CLNSIG="Pathogenic" & INFO/CLNSIG="Pathogenic/Likely_pa
 $ zcat lol.vcf.gz | wc -l
 23120660
 #+end_src
-******* DONE Essai bedtools intersect
-#+begin_src sh
-bedtools intersect -a  dbSNP_common.vcf.gz -b clinvar.vcf.gz
-#+end_src
-$ wc -l intersect.vcf
-220206 intersect.vcf
-******* DONE Valider avec Alexis : bcftool isec
-CLOSED: [2022-11-07 Mon 21:42]
-******* TODO Pourquoi nombre de lignes différentes avec la version d'Alexis
+******** DONE Valider avec Alexis : bcftool isec
+CLOSED: [2022-11-07 Mon 21:42   ]
+******** DONE Pourquoi nombre de lignes différentes avec la version d'Alexis -> isec ne gère pas plusieurs ALT
+CLOSED: [2022-11-20 Sun 17:56]
 Grosse différence !
 #+begin_src
 $ wc -l ID_of_common_snp_not_clinvar_patho.txt
@@ -1713,12 +1733,12 @@ $ wc -l /Work/Users/apraga/bisonex/database/dbSNP/ID_of_common_snp_not_clinvar_p
 85820 /Work/Users/apraga/bisonex/database/dbSNP/ID_of_common_snp_not_clinvar_patho.txt
 #+end_src
 À noter que tout dbSNP = 23194960
-******** Clinvar classe 4 ? Moins mais toujours trop
+********* Clinvar classe 4 ? Moins mais toujours trop
 #+begin_src
 $ zgrep '^NC' tmp.vcf.gz  | wc -l
 21081654
 #+end_src
-******** Comparer les ID et regarder ceux en plus
+********* Comparer les ID et regarder ceux en plus
 #+begin_src sh
 bcftools isec -e 'INFO/CLNSIG="Pathogenic"' -c none -n~10 /Work/Groups/bisonex/data/dbSNP/GRCh38.p13/dbSNP_common.vcf.gz /Work/Groups/bisonex/data/clinvar/GRCh38/clinvar.vcf.gz -w 1 -o tmp.vcf.gz
 
@@ -1735,6 +1755,132 @@ NC_000002.12	136732859	rs1000000561	ACG	A,ACGCG	.	PASS	RS=1000000561;dbSNPBuildI
 Attention, clinvar est en numéro de chromosomoe et dbSNP en NC...
 Normalement, géré lors du calcul d'intersection !
 Ce SNP n'est pas dans clinvar (vérifié dans UCSC)
+********* Tester sur chromosome 20
+#+begin_src sh :dir ~/code/bisonex/test_isec
+bcftools view --regions NC_000020.11 ../database/dbSNP/dbSNP_common.vcf.gz -o dbSNP_common_chr20.vcf.gz
+bcftools view --regions 20 ../database/clinvar/clinvar.vcf.gz -o clinvar_chr20.vcf.gz
+tabix dbSNP_common_chr20.vcf.gz
+tabix clinvar_chr20.vcf.gz
+#+end_src
+
+#+RESULTS:
+
+Attention à bien renommer clinvar !
+
+#+begin_src sh :dir ~/code/bisonex/test_isec
+mv clinvar_chr20.vcf.gz clinvar_chr20_notremapped.vcf.gz
+bcftools annotate --rename-chrs chromosome_mapping.txt clinvar_chr20_notremapped.vcf.gz -o clinvar_chr20.vcf.gz
+#+end_src
+
+#+RESULTS:
+
+On teste l'intersection dbsnp et clinvar patho ainsi que le complémentaire
+*ATTENTION*: sans indexer les vcf, les fichiers seront *VIDES*
+*ATTENTION*: il faut include tous les variants de SNP avec loption -i-  (par défaut les filtres s'appliquent sur les 2)
+#+begin_src sh :dir ~/code/bisonex/test_isec
+snp=dbSNP_common_chr20.vcf.gz
+clinvar=clinvar_chr20.vcf.gz
+bcftools isec -i 'INFO/CLNSIG="Pathogenic"' -p test $snp $clinvar
+for i in test/*; do echo $i; grep '^NC' $i | wc -l; done
+#+end_src
+
+#+RESULTS:
+|   test/0000.vcf |
+|               0 |
+|   test/0001.vcf |
+|            1787 |
+|   test/0002.vcf |
+|               0 |
+|   test/0003.vcf |
+|               0 |
+| test/README.txt |
+|               0 |
+|  test/sites.txt |
+|            1787 |
+
+A priori, pas de clinvar patho dans dbSNP sur ce chromosome...
+Clinvar stocke le numéro dbSNP donc on pourrait vérifier mais il faudrait aller voir si le SNP est bien "common"
+
+Si on utilise la version d'Alexis
+#+begin_src sh :dir ~/code/bisonex/test_isec
+snp=dbSNP_common_chr20.vcf.gz
+clinvar=clinvar_chr20_notremapped.vcf.gz
+python ../script/pythonScript/clinvar_sbSNP.py \
+    --clinvar $clinvar \
+    --chrm_name_table ../database/RefSeq/refseq_to_number_only_consensual.txt \
+    --dbSNP $snp --output prod.txt
+wc -l prod.txt
+zgrep '^NC' dbSNP_common_chr20.vcf.gz | wc -l
+#+end_src
+
+#+RESULTS:
+| 518832 | prod.txt |
+| 518846 |          |
+
+On devrait donc avoir 14 common snp clinvar patho...
+Test :
+#+begin_src sh :dir ~/code/bisonex/test_isec
+bcftools query -f '%ID\n' dbSNP_common_chr20.vcf.gz | sort > chr20_id.txt
+sort prod.txt > prod_sorted.txt
+comm -23 chr20_id.txt prod_sorted.txt
+#+end_src
+
+#+RESULTS:
+| rs1044396   |
+| rs1131695   |
+| rs146917730 |
+| rs1799990   |
+| rs1801138   |
+| rs1801545   |
+| rs181943893 |
+| rs2424926   |
+| rs35873579  |
+| rs35938843  |
+| rs36106901  |
+| rs3827075   |
+| rs373200654 |
+| rs79338570  |
+
+Si on prend le premier
+#+begin_src sh :dir ~/code/bisonex/test_isec
+bcftools query -f '%CHROM %POS %ID %REF %ALT\n' -i 'ID="rs1044396"' dbSNP_common_chr20.vcf.gz
+bcftools query -f '%CHROM %POS %ID %REF %ALT\n' -i 'INFO/RS="1044396"' clinvar_chr20.vcf.gz
+#+end_src
+
+#+RESULTS:
+| NC_000020.11 | 63349782 | rs1044396 | G | A,C |
+| NC_000020.11 | 63349782 |     93427 | G | A   |
+| NC_000020.11 | 63349782 |    857384 | G | C   |
+
+isec ne gère donc pas la représentation des allèles alternatifs...
+
+#+begin_src sh :dir ~/code/bisonex/test_isec
+snp=dbSNP_common_chr20.vcf.gz
+clinvar=clinvar_chr20.vcf.gz
+bcftools isec -i- -i 'INFO/CLNSIG="Pathogenic"' -c none -p test $snp $clinvar
+for i in test/*; do echo $i; grep '^NC' $i | wc -l; done
+#+end_src
+
+#+RESULTS:
+|   test/0000.vcf |
+|          518846 |
+|   test/0001.vcf |
+|            1787 |
+|   test/0002.vcf |
+|               0 |
+|   test/0003.vcf |
+|               0 |
+| test/README.txt |
+|               0 |
+|  test/sites.txt |
+|          520633 |
+
+******* DONE Essai bedtools intersect
+#+begin_src sh
+bedtools intersect -a  dbSNP_common.vcf.gz -b clinvar.vcf.gz
+#+end_src
+$ wc -l intersect.vcf
+220206 intersect.vcf
 **** TODO Dépendences avec Nix
 ***** DONE GATK
 CLOSED: [2022-10-21 Fri 21:59]
@@ -1743,7 +1889,7 @@ CLOSED: [2022-10-21 Fri 21:59]
 CLOSED: [2022-10-22 Sat 00:38]
 ***** WAIT BioBigFile
 Revoir si on peut utliser kent dernière version
-***** KILL rtg-tools
+***** KILL 'rtg-tools
 CLOSED: [2022-11-19 Sat 21:06]
 Convertir clinvar NC
 ***** TODO Spip
@@ -1781,11 +1927,9 @@ CLOSED: [2022-11-08 Tue 22:23]
 ***** DONE Filter technical variants
 CLOSED: [2022-11-19 Sat 21:34]
 **** TODO Annotation avec Netxflow
-**** TODO Tester version d'alexis avec Nix
+**** STRT Tester version d'alexis avec Nix
 ***** DONE Ajouter clinvar
 CLOSED: [2022-11-13 Sun 19:37]
-***** TODO Corriger numérotation chromosome pour clinav
-***** STRT Ajouter common snp not clinvar path
 ***** DONE Alignement
 CLOSED: [2022-11-13 Sun 12:52]
 ***** DONE Haplotype caller
@@ -1809,8 +1953,10 @@ $ wc -l ID_of_common_snp.txt
 $ wc -l /Work/Users/apraga/bisonex/database/dbSNP/ID_of_common_snp.txt
 23194290 /Work/Users/apraga/bisonex/database/dbSNP/ID_of_common_snp.txt
 #+end_src
-***** TODO ID commo snp not clinvar patho
-Résoudre [[*Pourquoi nombre de lignes différentes avec la version d'Alexis][Pourquoi nombre de lignes différentes avec la version d'Alexis]]
+***** STRT ID commo snp not clinvar patho
+- isec : [[*Pourquoi nombre de lignes différentes avec la version d'Alexis -> isec ne gère pas plusieurs ALT][Pourquoi nombre de lignes différentes avec la version d'Alexis -> isec ne gère pas plusieurs ALT]]
+- utiliser directement l'identifiant dbSNP dans clinvar ?
+- rtgtools ?
 ***** TODO alignement + variant:
   Alexis : 886164
   nouveau : 958401
