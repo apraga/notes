@@ -1712,6 +1712,7 @@ $ wc -l ID_of_common_snp_not_clinvar_patho.txt
 $ wc -l /Work/Users/apraga/bisonex/database/dbSNP/ID_of_common_snp_not_clinvar_patho.txt
 85820 /Work/Users/apraga/bisonex/database/dbSNP/ID_of_common_snp_not_clinvar_patho.txt
 #+end_src
+À noter que tout dbSNP = 23194960
 ******** Clinvar classe 4 ? Moins mais toujours trop
 #+begin_src
 $ zgrep '^NC' tmp.vcf.gz  | wc -l
@@ -1732,6 +1733,8 @@ zgrep rs1000000561 ../database/dbSNP/dbSNP_common.vcf.gz
 NC_000002.12	136732859	rs1000000561	ACG	A,ACGCG	.	PASS	RS=1000000561;dbSNPBuildID=151;SSR=0;VC=INDEL;GNO;FREQ=ALSPAC:0.2506,0.7494,.|TOMMO:0.9971,0.002865,.|TWINSUK:0.2473,0.7527,.|dbGaP_PopFreq:0.993,0.006943,8.902e-05;COMMON
 
 Attention, clinvar est en numéro de chromosomoe et dbSNP en NC...
+Normalement, géré lors du calcul d'intersection !
+Ce SNP n'est pas dans clinvar (vérifié dans UCSC)
 **** TODO Dépendences avec Nix
 ***** DONE GATK
 CLOSED: [2022-10-21 Fri 21:59]

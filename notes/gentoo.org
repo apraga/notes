@@ -32,5 +32,24 @@ echo 8723bu > /etc/modprobe.d/networking.conf
 #+end_src
 
 * Difficultés
-** ZFS: "Mismatch between pool hostid and system"
-zgenhostid $(hostid) résout le problème ?
+** ZFS
+Difficulté avec pool partagée avec Freebsd.
+1. data n'est pas montée proprement
+    Cela est du à zfs-import-cache
+    #+begin_src  sh
+    systemctl status zfs-import-cache
+    #+end_src
+    Il trouve que /etc/zpool/cache n'est pas vide. En resettant le cache, cela semble marcher
+    #+begin_src sh
+zpool export data
+zpool import data
+zpool set cachefile=none data
+zpool set cachefile=/etc/zfs/zpool.cache  data
+    #+end_src
+
+2. zroot devrait être montée dans un endroit spécifique
+   On ne monte que data
+Changer ExecStart dans /lib/systemd/system/zfs-mount.service pour monter seulement data
+#+begin_src sh
+ExecStart=/sbin/zfs mount data
+#+end_src
