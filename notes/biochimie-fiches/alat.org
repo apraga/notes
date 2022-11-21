@@ -1,18 +1,23 @@
 #+title: Marqueurs hépatiques: ALAT
 #+author: Alexis Praga
-#+options: toc:nil
+#+setupfile: ./fiche.setup
 
 * Localisation, physiologie
-L'alanine transférase, comme son nom l'indique, est une enzyme transaminase qui va transférer un groupement amine depuis un acide aminé (alanine) vers un acide cétonique (acide \alpha-cétoglutarique) selon la réaction
+
+L'alanine transférase est une enzyme transaminase qui va transférer un groupement amine depuis un acide aminé (alanine) vers un acide cétonique (acide \alpha-cétoglutarique) selon la réaction
 
 alanine + acide \alpha-cétoglutarique \leftrightarrow acide pyruvique + acide glutamique
 
 L'acide pyruvique sera utilisé dans la voie glycolytique et l'acide glutamique dans le cycle glucose-alanine.
 
 L'ALAT se trouve dans le cytosol des cellules hépatiques et dans une moindre mesure musculaires.
-* Principe analytique de mesure (Roche cobas c 503)
-Test photométrique avec mesure de l'absorbance à 340nm de la vitesse de formnation de NADH, qui est proportionnelle à l’activité de l’ALAT.
-* Valeurs de référence [fn:1]
+
+* Principe analytique de mesure
+Test enzymatique.
+
+Roche cobas c 503: photométique (mesure de l'absorbance à 340nm de la vitesse de formnation de NADH, qui est proportionnelle à l’activité de l’ALAT).
+
+* Valeurs de référence [cite:@thomas2005consensus]
 - homme < 50U/L
 - femme < 35U/L
 * Principales interactions analytiques
@@ -24,18 +29,15 @@ Test photométrique avec mesure de l'absorbance à 340nm de la vitesse de formna
 * Vigilance pré-analytiques et analytiques
 Prélèvement non hémolysé
 * Variations
-- physiologiques:
-  - grossesses (diminution modérée)
-  - obésité
+- physiologiques: grossesses (diminution modérée), surcharge pondérale
 - iatrogène:
   - aigù = IMAO, méthyldopa, isoniazide, halothane
   - chronique : isoniazide, nitrofurantoïne, AINS, sulfamide...
 - augmentation pathologique: *cytolyse hépatique*:
-  - hépatite
+  - hépatite virale, autoimmune
+  - infections (EBV, CMV, HSV, toxoplasmose)
   - alcoolisme aigü/chronique
   - inflammation modérée
   - obstruction voie biliaire, cirrhose
 
-[fn:1] Thomas L, Muller M, Schumann G, et al. Consensus of DGKL and
-VDGH for interim reference intervals on enzymes in serum. J Lab Med
-2005;29(5):301-308.
+#+print_bibliography:

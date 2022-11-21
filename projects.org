@@ -1611,10 +1611,6 @@ CLOSED: [2022-09-13 Tue 21:37]
 CLOSED: [2022-11-19 Sat 21:42]
 172G au lieu de 253M...
 ****** TODO common dbSNP not clinvar patho
- - [X] normaliser les noms de chromosomes clinvar
- - [-] packager rgttools avec nix
- - [X] Utiliser bcftools isec qui semble faire la même chose que le script d'alexis
-   avec option "-c none" "-n~10"
 ******* KILL Utiliser directement le numéro dbSNP dans clinvar ? Non
 CLOSED: [2022-11-20 Sun 19:51]
 Ex: chr20
@@ -1960,17 +1956,17 @@ $ wc -l ID_of_common_snp.txt
 $ wc -l /Work/Users/apraga/bisonex/database/dbSNP/ID_of_common_snp.txt
 23194290 /Work/Users/apraga/bisonex/database/dbSNP/ID_of_common_snp.txt
 #+end_src
-***** STRT ID commo snp not clinvar patho
-- isec : [[*Pourquoi nombre de lignes différentes avec la version d'Alexis -> isec ne gère pas plusieurs ALT][Pourquoi nombre de lignes différentes avec la version d'Alexis -> isec ne gère pas plusieurs ALT]]
-- utiliser directement l'identifiant dbSNP dans clinvar ?
-- rtgtools ?
+***** DONE ID common snp not clinvar patho
+****** DONE Version Alexis
+CLOSED: [2022-11-21 Mon 22:13]
+****** STRT Nouvelle version
 ***** TODO alignement + variant:
   Alexis : 886164
   nouveau : 958401
   Vient du génome de référence ??
 
 **** TODO Divers
-***** DONE Vérifier nobmer de reads fastq - bam
+***** DONE Vérifier nombre de reads fastq - bam
 CLOSED: [2022-10-09 Sun 22:31]
 **** TODO Sarek
 ***** Dépendances

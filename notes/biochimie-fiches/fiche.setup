@@ -1,0 +1,18 @@
+# -*- mode: org; -*-
+#+latex_class: fiche
+#+LANGUAGE: fr
+#+bibliography: biblio.bib
+#+options: toc:nil
+#+latex_header: \usepackage[a4paper, margin=2cm]{geometry}
+#+latex_header: \usepackage{enumitem}
+#+latex_header: \setlist{nolistsep}
+#+latex_header: \usepackage[]{babel}
+#+latex_header: \hypersetup{hidelinks}
+* Code :noexport:
+#+begin_src emacs-lisp :results silent
+  (add-to-list 'org-latex-classes
+          '("fiche" "\\documentclass{article}"
+             ("\\subsubsection*{%s}" . "\\subsubsection*{%s}")
+             ("\\paragraph*{%s}" . "\\paragraph*{%s}")
+             ("\\subparagraph*{%s}" . "\\subparagraph*{%s}")))
+#+end_src

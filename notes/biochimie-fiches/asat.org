@@ -1,0 +1,38 @@
+#+title: Marqueurs hépatiques: ASAT
+#+author: Alexis Praga
+#+setupfile: ./fiche.setup
+
+* Localisation, physiologie
+L'aspartate transférase est une enzyme transaminase qui va transférer un groupement amine depuis un acide aminé (aspartate) vers un acide cétonique (acide \alpha-cétoglutarique) selon la réaction
+
+aspartate + acide \alpha-cétoglutarique \leftrightarrow oxaloacétate + acide glutamique
+
+L'aspartate est le point de départ de nombreuses réactions métaboliques (ex: pyrimidine) et l'acide glutamique est impliqué dans le cycle glucose-alanine.
+
+
+* Principe analytique de mesure
+Test enzymatique.
+
+Roche cobas c 503:
+
+* Valeurs de référence [cite:@thomas2005consensus]
+- homme < 50U/L
+- femme < 35U/L
+* Principales interactions analytiques
+- hémolyse
+- gammapathie IgM (très rare)
+* Vigilance pré-analytiques et analytiques
+Prélèvement non hémolysé
+* Variations
+- physiologiques: grossesses (diminution modérée), surcharge pondérale, exercice musculaire violent
+- iatrogène:
+  - aigù = IMAO, méthyldopa, isoniazide, halothane
+  - chronique : isoniazide, nitrofurantoïne, AINS, sulfamide...
+- augmentation pathologique: *cytolyse hépatique*:
+  - hépatite virale, autoimmune
+  - infections (EBV, CMV, HSV, toxoplasmose)
+  - alcoolisme aigü/chronique
+  - inflammation modérée
+  - obstruction voie biliaire, cirrhose
+
+#+print_bibliography:
