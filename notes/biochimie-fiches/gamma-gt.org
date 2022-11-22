@@ -1,0 +1,34 @@
+#+title: Gamma Gt - Roche cobas c 503
+#+author: Alexis Praga
+#+setupfile: ./fiche.setup
+
+* Localisation, physiologie
+La γ-glutamyltranspeptidase est impliquée dans le transfert des acides aminés au travers de la membrane cellulaire et dans le métablosme du glutathione.
+Elle se trouve dans le foie, pancréas, reins, rate, poumons, prostate.
+
+* Production
+La version circulante est surtout d’origine hépatique. Il en existe au niveau du filtrat glomérulaire, de la lumière intestinale ainsi que la prostate, le cerveau et le coeur [cite:@van2019davis].
+
+* Principe analytique de mesure
+Test colorimétrique enzymatique.
+
+Il mesure par photométrie à 415nm (absorbance) de la quantité d’amino-5 nitro-2 benzoate, qui est proportionnelle à l’activité de la γGT.
+
+* Valeurs de référence [cite:@thomas2005consensus]
+  - homme < 60U/L
+  - femme < 40U/L
+
+* Principales interactions analytiques
+ - Hémolyse >200mg/dL
+ - Gammapathie IgM (très rare)
+
+* Variations [cite:@bonnefont2019explorations]
+- physiologique : population africaine, nouveau-né (augmentation) [cite:@van2019davis], surcharge pondérale
+- iatrogènes : tricyclique, contraceptifs oraux, phénobarbital
+
+- Augmentation pathologique
+  - alcool
+  - affection hépatobiliaire
+  - hyperthyroïdie, parasite (distomatose, larva migrans)
+
+#+print_bibliography:
