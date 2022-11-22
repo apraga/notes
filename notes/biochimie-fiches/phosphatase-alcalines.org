@@ -2,12 +2,12 @@
 #+author: Alexis Praga
 #+setupfile: ./fiche.setup
 
-* Localisation, physiologie
-Ces enzymes permettes de passage des métabolites à travers les membranes cellulaires. Cela se fait via une catalysation de l'hydrolyse d'esters monophosphorique à pH alcalin, qui va libérer du phosphates.
+* Localisation, physiologie [cite:@biomnis]
+Ces enzymes permettent le passage des métabolites à travers les membranes cellulaires. Cela se fait via une catalyse de l'hydrolyse d'esters monophosphorique à pH alcalin, qui va libérer du phosphate.
 
 Les isoenzymes ont la même activité et on une spécificité plus ou moins variables.
 * Production
-L'altération de la membrane cellulaire va libérer les enzymes. Leur répartation est variable : placenta, intestin, cellules rénales, ostéoblastes, cellules hépatiques.
+L'altération de la membrane cellulaire va libérer les enzymes. Leur répartition est variable : placenta, intestin, cellules rénales, ostéoblastes, cellules hépatiques.
 
 * Principe analytique de mesure
 Test colorimétrique.
@@ -36,9 +36,7 @@ Mesure par photométrie à 450 nm de la quantité de p-nitrophénol, qui est pro
 - physiologiques :
   - augmentation à partir de la 20e smaine de grossesses
   - *augmenté chez enfants/adolescents* (activité des ostéoblastes en croissance osseuse)
-- iatrogènes :
-  - augmentation: anticoagulants oraux, antiépileptiques, hypogylcémiants oraux, érythromycine, ciclosporine, phénothiazine,
-  - diminution : hypolipémiant, corticoïdes, oestrogène
+- iatrogènes : augmentation pour anticoagulants oraux, antiépileptiques, hypogylcémiants oraux, érythromycine, ciclosporine, phénothiazine; diminution pour hypolipémiant, corticoïdes, oestrogène
 - patholoqiques :
   - obésité ou malnutrition
   - maladies hépato-biliaires cholestatiques
