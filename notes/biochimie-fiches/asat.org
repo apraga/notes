@@ -11,7 +11,7 @@ L'ALAT est le point de départ de nombreuses réactions métaboliques (ex: pyrim
 
 Elle se trouve principalement dans les cellules hépatiques et cardiaques, et dans une moindre mesure dans les muscles squelettiques, reins, pancréas, globules rouges et cerveau.
 * Production
-Il existe 2 isoenzymes : une dans le cytoplasme et une dans les mitochondries.
+Il existe 2 isoenzymes : une dans le cytoplasme et une dans les mitochondries. Une cytolyse va conduire à une libération dans le sang.
 * Principe analytique de mesure
 Test enzymatique.
 
@@ -33,7 +33,7 @@ Prélèvement non hémolysé
 - iatrogène:
   - aigù = IMAO, méthyldopa, isoniazide, halothane
   - chronique : isoniazide, nitrofurantoïne, AINS, sulfamide...
-- augmentation pathologique par *cytolyse hépatique*:
+- augmentation pathologique
   - hépatite virale, autoimmune
   - infections (EBV, CMV, HSV, toxoplasmose)
   - alcoolisme aigü/chronique

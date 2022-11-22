@@ -12,7 +12,7 @@ Le pyruvate sera utilisé dans la voie glycolytique et le glutamate dans le cycl
 
 L'ALAT se trouve dans le cytosol des cellules hépatiques et dans une moindre mesure musculaires.
 * Production
-Foie
+La cytolyse de cellules hépatiques va relarguer l'ALAT.
 * Principe analytique de mesure
 Test enzymatique.
 
