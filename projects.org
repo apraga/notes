@@ -1653,6 +1653,7 @@ $ rtg vcfeval -b dbSNP_common.vcf.gz -c clinvar.vcf.gz -o test -t genomeRef.sdf/
 VCF header does not contain a FORMAT field named GQ
 Error: Record did not contain enough samples: NC_000001.11	10001	rs1570391677	A,C	.	PASS	RS=1570391677;dbSNPBuildID=154;SSR=0;PSEUDOGENEINFO=DDX11L1:100287102;VC=SNV;R5;GNO;FREQ=KOREAN:0.9891,0.0109,.|SGDP_PRJ:0,1,.|dbGaP_PopFreq:1,.,0;COMMON
  #+end_src
+ Pour les bases de donnés, il faut l'option --sample ALT
 ******* DONE bcftools isec : non
 CLOSED: [2022-10-23 Sun 18:55]
 #+begin_src sh

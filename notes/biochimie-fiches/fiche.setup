@@ -3,7 +3,7 @@
 #+LANGUAGE: fr
 #+bibliography: biblio.bib
 #+options: toc:nil
-#+latex_header: \usepackage[a4paper, margin=2cm]{geometry}
+#+latex_header: \usepackage[a4paper, margin=2cm, top=0cm]{geometry}
 #+latex_header: \usepackage{enumitem}
 #+latex_header: \setlist{nolistsep}
 #+latex_header: \usepackage[]{babel}
