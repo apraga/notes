@@ -27,7 +27,8 @@ oxaloacétate + NADH + H^{+}  \rightarrow malate + NAD^{+}
 - gammapathie IgM (très rare)
 /Note: les carences en vitamine B_6 ne sont plus une interaction/
 * Vigilance pré-analytiques et analytiques
-Prélèvement non hémolysé
+- Prélèvement non hémolysé
+- tube hépariné (lithium, di- ou tri-potassique)
 * Variations [cite:@bonnefont2019explorations]
 - physiologiques: augmentation à la naissance puis diminution jusque 6 ans [cite:@van2019davis], surcharge pondérale, exercice musculaire violent
 - iatrogène:

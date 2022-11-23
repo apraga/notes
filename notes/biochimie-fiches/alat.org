@@ -32,7 +32,8 @@ pyruvate + NADH + H^{+}  \rightarrow lactate + NAD^{+}
 /Note: les carences en vitamine B_6 ne sont plus une interaction/
 #   - interférence : hémolyse > 170mg/dL (entre H2 et H3 sur Abbott) [augmentation], ictère > 60mg/dL (> H4), lipémie > 150 (L3)
 * Vigilance pré-analytiques et analytiques
-Prélèvement non hémolysé
+- Prélèvement non hémolysé
+- tube hépariné (lithium, dipotassique)
 * Variations [cite:@bonnefont2019explorations]
 - physiologiques: grossesses (diminution modérée), surcharge pondérale
 - iatrogène:

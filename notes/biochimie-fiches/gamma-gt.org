@@ -22,6 +22,8 @@ Il mesure par photométrie à 415nm (absorbance) de la quantité d’amino-5 nit
  - Hémolyse >200mg/dL
  - Gammapathie IgM (très rare)
 
+* Vigilance pré-analytiques et analytiques
+- tube hépariné (lithium, dipotassique)
 * Variations [cite:@bonnefont2019explorations]
 - physiologique : population africaine, nouveau-né (augmentation) [cite:@van2019davis]
 - iatrogènes : tricyclique, contraceptifs oraux, phénobarbital

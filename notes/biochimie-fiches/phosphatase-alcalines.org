@@ -32,6 +32,7 @@ Mesure par photométrie à 450 nm de la quantité de p-nitrophénol, qui est pro
  -  hémolyse si > 200mg/dL
 
 
+* Vigilance pré-analytiques et analytiques
 * Variations [cite:@bonnefont2019explorations]
 - physiologiques :
   - augmentation à partir de la 20e smaine de grossesses
