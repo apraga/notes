@@ -37,7 +37,7 @@ pyruvate + NADH + H^{+}  \rightarrow lactate + NAD^{+}
 * Variations [cite:@bonnefont2019explorations]
 - physiologiques: grossesses (diminution modérée), surcharge pondérale
 - iatrogène:
-  - aigù = IMAO, méthyldopa, isoniazide, halothane
+  - aigü = IMAO, méthyldopa, isoniazide, halothane
   - chronique : isoniazide, nitrofurantoïne, AINS, sulfamide...
 - augmentation pathologique par *cytolyse hépatique*:
   - hépatite virale, autoimmune

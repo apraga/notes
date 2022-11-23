@@ -7,7 +7,7 @@ L'aspartate transférase est une enzyme transaminase qui va transférer un group
 
 aspartate + acide \alpha-cétoglutarique \leftrightarrow oxaloacétate + glutamate
 
-L'ALAT est le point de départ de nombreuses réactions métaboliques (ex: pyrimidine) et le glutamate est impliqué dans le cycle glucose-alanine.
+L'ASAT est le point de départ de nombreuses réactions métaboliques (ex: pyrimidine) et le glutamate est impliqué dans le cycle glucose-alanine.
 
 Elle se trouve principalement dans les cellules hépatiques et cardiaques, et dans une moindre mesure dans les muscles squelettiques, reins, pancréas, globules rouges et cerveau.
 * Production
@@ -15,7 +15,7 @@ Il existe 2 isoenzymes : une dans le cytoplasme et une dans les mitochondries. U
 * Principe analytique de mesure
 Test enzymatique.
 
-L'absorbance est mesurée par photométrie qui reflète la vitesse de formnation de NADH, qui est proportionnelle à l’activité de l’ALAT selon l'équation :
+L'absorbance est mesurée par photométrie qui reflète la vitesse de formation de NADH, qui est proportionnelle à l’activité de l’ALAT selon l'équation :
 oxaloacétate + NADH + H^{+}  \rightarrow malate + NAD^{+}
 
 
@@ -31,9 +31,7 @@ oxaloacétate + NADH + H^{+}  \rightarrow malate + NAD^{+}
 - tube hépariné (lithium, di- ou tri-potassique)
 * Variations [cite:@bonnefont2019explorations]
 - physiologiques: augmentation à la naissance puis diminution jusque 6 ans [cite:@van2019davis], surcharge pondérale, exercice musculaire violent
-- iatrogène:
-  - aigù = IMAO, méthyldopa, isoniazide, halothane
-  - chronique : isoniazide, nitrofurantoïne, AINS, sulfamide...
+- iatrogène: aigü = IMAO, méthyldopa, isoniazide, halothane; chronique : isoniazide, nitrofurantoïne, AINS, sulfamide...
 - augmentation pathologique
   - hépatite virale, autoimmune
   - infections (EBV, CMV, HSV, toxoplasmose)
