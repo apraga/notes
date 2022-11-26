@@ -129,6 +129,7 @@ CLOSED: [2022-11-20 Sun 21:31]
 Corrigée ce jour
 ** TODO Inscription fac
 DEADLINE: <2022-12-01 Thu>
+Génétique médicale seeulement : mail envoyé <2022-11-26 Sat>
 * Comptabilité :ledger:
 :PROPERTIES:
 :CATEGORY: compta
@@ -2153,6 +2154,8 @@ CLOSED: [2022-10-22 Sat 23:35] SCHEDULED: <2022-07-21 Thu>
 SCHEDULED: <2022-08-20 sam.>
 **** TODO Demander au CHU pour  le transfert (cela fait 2 mois)
 SCHEDULED: <2022-10-24 Mon>
+*** WAIT Demander DAM transfert compte bancaire
+Mail envoyé <2022-11-26 Sat>
 
 * FreeBSD :freebsd:
 ** KILL ormolu 0.5.0.0
