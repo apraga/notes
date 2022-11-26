@@ -1641,7 +1641,7 @@ zgrep '^NC' dbSNP_common_chr20.vcf.gz | wc -l
 | 518832 | prod.txt |
 | 518846 |          |
 
-******* TODO Essai rtg tools
+******* TODO Rtg tools
 1. Générer SDf file
    #+begin_src sh
 rtg format genomeRef.fna  -o genomeRef.sdf
@@ -1654,11 +1654,52 @@ Error: Record did not contain enough samples: NC_000001.11	10001	rs1570391677	A,
  #+end_src
 
  Essai intersection clinvar (patho ou non) dbSNP
-fn.vcf.gz 20291992
-fp.vcf.gz 1222528
-tp-baseline.vcf.gz 131040
-tp.vcf.gz 136638
-dbSNP_common.vcf.gz 21155971
+   - faux négatif = dbSNP common qui ne sont pas dans clinvar
+   - faux positif = clinvar qui ne sont pas dbSNP common
+   - vrai positif = clinvar qui sont dans dbSNP common
+   - vrai positif baseline = dbSNP common qui sont dans clinvar
+ On calcule le nombre de lignes
+ #+begin_src ssh
+zgrep '^[^#]' /Work/Groups/bisonex/data/clinvar/GRCh38/clinvar.vcf.gz | wc -l
+for i in *.vcf.gz; do echo $i; zgrep '^[^#]' $i | wc -l; done
+ #+end_src
+ | clinvar            |  1493470 |
+ | fn.vcf.gz          | 22330220 |
+ | fp.vcf.gz          |  1222529 |
+ | tp-baseline.vcf.gz |   131040 |
+ | tp.vcf.gz          |   136638 |
+À noter qu'on ne retrouve pas tout clinvar...
+1222529 + 131040 = 1353569 < 1493470
+certains régions ne sont pas traitées :
+#+begin_quote
+Evaluation too complex (50002 unresolved paths, 34891 iterations) at reference region NC_000001.11:790930-790970. Variants in this region will not be included in results
+#+end_quote
+#+begin_src sh
+grep 'not be included' vcfeval.log | wc -l
+56192
+#+end_src
+Le total est quand même inférieur
+
+On veut les clinvar non patho dans dbSNP soit les faux négatif (dbSNP common not contenu dans clinvar patho)
+#+begin_src sh
+bcftools filter -i 'INFO/CLNSIG="Pathogenic"' /Work/Groups/bisonex/data/clinvar/GRCh38/clinvar.vcf.gz -o /Work/Groups/bisonex/data/clinvar/GRCh38/clinvar-patho.vcf.gz
+tabix /Work/Groups/bisonex/data/clinvar/GRCh38/clinvar-patho.vcf.gz
+#+end_src
+On lance le script (dbSNP common et clinvar = 9h)
+#+begin_src sh
+#!/bin/bash
+#SBATCH --nodes=1
+#SBATCH -p smp
+#SBATCH --time=12:00:00
+#SBATCH --mem=12G
+
+dir=/Work/Groups/bisonex/data
+dbSNP=$dir/dbSNP/GRCh38.p13/dbSNP_common.vcf.gz
+clinvar=$dir/clinvar/GRCh38/clinvar-patho.vcf.gz
+genome=$dir/genome/GRCh38.p13/genomeRef.sdf
+srun rtg vcfeval -b $dbSNP -c $clinvar -o common-not-patho -t $genome --sample ALT
+
+#+end_src
 
 ******* DONE bcftools isec : non
 CLOSED: [2022-10-23 Sun 18:55]
@@ -1786,30 +1827,54 @@ bcftools annotate --rename-chrs chromosome_mapping.txt clinvar_chr20_notremapped
 
 On teste l'intersection dbsnp et clinvar patho ainsi que le complémentaire
 *ATTENTION*: sans indexer les vcf, les fichiers seront *VIDES*
-*ATTENTION*: il faut include tous les variants de SNP avec loption -i-  (par défaut les filtres s'appliquent sur les 2)
+*ATTENTION*: par défaut les filtres s'appliquent sur les 2. Cela est un problème si on joue sur l'inclusion et non l'exclusion
+Attention: vérifier la conventdion de nommage des chromosomes
+
+En essayant directement avec clinvar path
 #+begin_src sh :dir ~/code/bisonex/test_isec
+clinvar=clinvar_chr20_patho.vcf.gz
 snp=dbSNP_common_chr20.vcf.gz
-clinvar=clinvar_chr20.vcf.gz
-bcftools isec -i 'INFO/CLNSIG="Pathogenic"' -p test $snp $clinvar
-for i in test/*; do echo $i; grep '^NC' $i | wc -l; done
+bcftools filter -i 'INFO/CLNSIG="Pathogenic"' clinvar_chr20.vcf.gz -o $clinvar.vcf.gz
+bcftools index $clinvar
+bcftools index $snp
+bcftools isec  $snp $clinvar -p tmp
+for i in tmp/*.vcf ; do echo $i; grep '^[^#]'  $i | wc -l; done
 #+end_src
 
 #+RESULTS:
-|   test/0000.vcf |
-|               0 |
-|   test/0001.vcf |
-|            1787 |
-|   test/0002.vcf |
-|               0 |
-|   test/0003.vcf |
-|               0 |
-| test/README.txt |
-|               0 |
-|  test/sites.txt |
-|            1787 |
+| tmp/0000.vcf |
+|       518846 |
+| tmp/0001.vcf |
+|         1787 |
+| tmp/0002.vcf |
+|            0 |
+| tmp/0003.vcf |
+|            0 |
 
-A priori, pas de clinvar patho dans dbSNP sur ce chromosome...
-Clinvar stocke le numéro dbSNP donc on pourrait vérifier mais il faudrait aller voir si le SNP est bien "common"
+
+Aucun clinvar patho... Clairement faux !
+Autre méthode : on inclut tous les SNP et clinvar patho et on regarde ceux uniquement dans dbsnp
+
+#+begin_src sh :dir ~/code/bisonex/test_isec
+snp=dbSNP_common_chr20.vcf.gz
+clinvar=clinvar_chr20.vcf.gz
+bcftools isec -i - -i 'INFO/CLNSIG="Pathogenic"' $snp $clinvar -p tmp
+ grep '^[^#]' tmp/0000.vcf | wc -l
+#+end_src
+
+#+RESULTS:
+: 518846
+Soit tout dbsnp donc rien
+
+Note : on ne peut pas exclure les clinvar patho directement
+#+begin_src sh :dir ~/code/bisonex/test_isec
+snp=dbSNP_common_chr20.vcf.gz
+clinvar=clinvar_chr20.vcf.gz
+bcftools isec -i - -e 'INFO/CLNSIG="Pathogenic"' $snp $clinvar -p tmp
+for i in tmp/*.vcf ; do echo $i; grep '^[^#]'  $i | wc -l; done
+#+end_src
+Car on ne peut plus faire la différence !
+
 
 Si on utilise la version d'Alexis
 #+begin_src sh :dir ~/code/bisonex/test_isec
@@ -1818,73 +1883,110 @@ clinvar=clinvar_chr20_notremapped.vcf.gz
 python ../script/pythonScript/clinvar_sbSNP.py \
     --clinvar $clinvar \
     --chrm_name_table ../database/RefSeq/refseq_to_number_only_consensual.txt \
-    --dbSNP $snp --output prod.txt
-wc -l prod.txt
-zgrep '^NC' dbSNP_common_chr20.vcf.gz | wc -l
+    --dbSNP $snp --output tmp.txt
+sort tmp.txt > common-notpatho-alexis.txt
+wc -l common-notpatho-alexis.txt
 #+end_src
 
 #+RESULTS:
-| 518832 | prod.txt |
-| 518846 |          |
+: 518832 common-notpatho-alexis.txt
 
-On devrait donc avoir 14 common snp clinvar patho...
-Test :
+Si on cherche les clinvar patho (donc non présent dans la sortie)
 #+begin_src sh :dir ~/code/bisonex/test_isec
-bcftools query -f '%ID\n' dbSNP_common_chr20.vcf.gz | sort > chr20_id.txt
-sort prod.txt > prod_sorted.txt
-comm -23 chr20_id.txt prod_sorted.txt
+  bcftools query -f '%ID\n' dbSNP_common_chr20.vcf.gz | sort > all.txt
+  sort common-notpatho-alexis.txt > alexis.txt
+  comm -23 all.txt alexis.txt > patho.txt
 #+end_src
-
-#+RESULTS:
-| rs1044396   |
-| rs1131695   |
-| rs146917730 |
-| rs1799990   |
-| rs1801138   |
-| rs1801545   |
-| rs181943893 |
-| rs2424926   |
-| rs35873579  |
-| rs35938843  |
-| rs36106901  |
-| rs3827075   |
-| rs373200654 |
-| rs79338570  |
-
-Si on prend le premier
-#+begin_src sh :dir ~/code/bisonex/test_isec
-bcftools query -f '%CHROM %POS %ID %REF %ALT\n' -i 'ID="rs1044396"' dbSNP_common_chr20.vcf.gz
-bcftools query -f '%CHROM %POS %ID %REF %ALT\n' -i 'INFO/RS="1044396"' clinvar_chr20.vcf.gz
-#+end_src
-
-#+RESULTS:
-| NC_000020.11 | 63349782 | rs1044396 | G | A,C |
-| NC_000020.11 | 63349782 |     93427 | G | A   |
-| NC_000020.11 | 63349782 |    857384 | G | C   |
-
-isec ne gère donc pas la représentation des allèles alternatifs...
 
 #+begin_src sh :dir ~/code/bisonex/test_isec
-snp=dbSNP_common_chr20.vcf.gz
-clinvar=clinvar_chr20.vcf.gz
-bcftools isec -i- -i 'INFO/CLNSIG="Pathogenic"' -c none -p test $snp $clinvar
-for i in test/*; do echo $i; grep '^NC' $i | wc -l; done
+bcftools query -f '%POS\n' -i 'ID=@patho.txt' dbSNP_common_chr20.vcf.gz -o pos.txt
+for pos in $(cat pos.txt); do
+  bcftools query -f '%CHROM %POS %ID %REF %ALT\n' -i 'POS='$pos dbSNP_common_chr20.vcf.gz
+  bcftools query -f '%CHROM %POS %ID %REF %ALT %INFO/CLNSIG\n' -i 'POS='$pos  clinvar_chr20.vcf.gz
+  echo "------"
+done
 #+end_src
 
 #+RESULTS:
-|   test/0000.vcf |
-|          518846 |
-|   test/0001.vcf |
-|            1787 |
-|   test/0002.vcf |
-|               0 |
-|   test/0003.vcf |
-|               0 |
-| test/README.txt |
-|               0 |
-|  test/sites.txt |
-|          520633 |
+| NC_000020.11 |  3234173 |   rs3827075 | T         | A,C,G     |                                              |
+| NC_000020.11 |  3234173 |      262001 | T         | G         | Conflicting_interpretations_of_pathogenicity |
+| NC_000020.11 |  3234173 |     1072511 | T         | TGGCGAAGC | Pathogenic                                   |
+| NC_000020.11 |  3234173 |      208613 | TGGCGAAGC | G         | Pathogenic                                   |
+| NC_000020.11 |  3234173 |        1312 | TGGCGAAGC | T         | Pathogenic                                   |
+| ------       |          |             |           |           |                                              |
+| NC_000020.11 |  4699605 |   rs1799990 | A         | G         |                                              |
+| NC_000020.11 |  4699605 |       13397 | A         | G         | Benign/Likely_benign                         |
+| ------       |          |             |           |           |                                              |
+| NC_000020.11 | 10652589 |   rs1131695 | G         | A,C,T     |                                              |
+| NC_000020.11 | 10652589 |      163705 | G         | .         | Benign                                       |
+| NC_000020.11 | 10652589 |      143063 | G         | A         | Benign                                       |
+| NC_000020.11 | 10652589 |      234555 | G         | C         | Pathogenic                                   |
+| ------       |          |             |           |           |                                              |
+| NC_000020.11 | 10658574 |   rs1801138 | G         | A,T       |                                              |
+| NC_000020.11 | 10658574 |       42481 | G         | A         | Benign                                       |
+| NC_000020.11 | 10658574 |      992651 | G         | T         | Likely_pathogenic                            |
+| NC_000020.11 | 10658574 |      213550 | GC        | A         | Pathogenic                                   |
+| ------       |          |             |           |           |                                              |
+| NC_000020.11 | 10672794 |  rs79338570 | G         | A,C       |                                              |
+| NC_000020.11 | 10672794 |      255557 | G         | A         | Benign/Likely_benign                         |
+| NC_000020.11 | 10672794 |      594067 | G         | C         | Conflicting_interpretations_of_pathogenicity |
+| NC_000020.11 | 10672794 |     1324603 | G         | GGA       | Likely_pathogenic                            |
+| ------       |          |             |           |           |                                              |
+| NC_000020.11 | 18525868 | rs146917730 | C         | T         |                                              |
+| NC_000020.11 | 18525868 |      811603 | C         | T         | Conflicting_interpretations_of_pathogenicity |
+| ------       |          |             |           |           |                                              |
+| NC_000020.11 | 25390747 | rs373200654 | G         | C         |                                              |
+| NC_000020.11 | 25390747 |      338000 | G         | C         | Conflicting_interpretations_of_pathogenicity |
+| ------       |          |             |           |           |                                              |
+| NC_000020.11 | 32800145 |   rs2424926 | C         | G,T       |                                              |
+| NC_000020.11 | 32800145 |      338173 | C         | G         | Benign                                       |
+| NC_000020.11 | 32800145 |      338174 | C         | T         | Conflicting_interpretations_of_pathogenicity |
+| ------       |          |             |           |           |                                              |
+| NC_000020.11 | 33412656 |  rs35938843 | C         | G,T       |                                              |
+| NC_000020.11 | 33412656 |      220958 | C         | T         | Conflicting_interpretations_of_pathogenicity |
+| ------       |          |             |           |           |                                              |
+| NC_000020.11 | 45891622 | rs181943893 | G         | A,C,T     |                                              |
+| NC_000020.11 | 45891622 |      459632 | G         | C         | Conflicting_interpretations_of_pathogenicity |
+| NC_000020.11 | 45891622 |      797035 | G         | T         | Likely_benign                                |
+| NC_000020.11 | 45891622 |     1572689 | GCTA      | G         | Likely_benign                                |
+| ------       |          |             |           |           |                                              |
+| NC_000020.11 | 54171651 |  rs35873579 | G         | A,T       |                                              |
+| NC_000020.11 | 54171651 |      285894 | G         | A         | Conflicting_interpretations_of_pathogenicity |
+| NC_000020.11 | 54171651 |     1373583 | G         | C         | Uncertain_significance                       |
+| NC_000020.11 | 54171651 |      895614 | G         | T         | Benign/Likely_benign                         |
+| ------       |          |             |           |           |                                              |
+| NC_000020.11 | 62172726 |  rs36106901 | G         | A         |                                              |
+| NC_000020.11 | 62172726 |      981031 | G         | A         | Conflicting_interpretations_of_pathogenicity |
+| ------       |          |             |           |           |                                              |
+| NC_000020.11 | 63349782 |   rs1044396 | G         | A,C       |                                              |
+| NC_000020.11 | 63349782 |       93427 | G         | A         | Benign                                       |
+| NC_000020.11 | 63349782 |      857384 | G         | C         | Conflicting_interpretations_of_pathogenicity |
+| ------       |          |             |           |           |                                              |
+| NC_000020.11 | 63414925 |   rs1801545 | G         | A,C,T     |                                              |
+| NC_000020.11 | 63414925 |      194284 | G         | A         | Conflicting_interpretations_of_pathogenicity |
+| NC_000020.11 | 63414925 |      129337 | G         | C         | Benign                                       |
+| NC_000020.11 | 63414925 |      851545 | GG        | CA        | Uncertain_significance                       |
+| ------       |          |             |           |           |                                              |
 
+On a donc plusieurs problèmes :
+1. isec devrait fonctionner au moins sur
+| NC_000020.11 | 25390747 | rs373200654 | G         | C         |                                              |
+| NC_000020.11 | 25390747 |      338000 | G         | C         | Conflicting_interpretations_of_pathogenicity |
+
+2. isec ne semble pas fonctionner sur en cas d'ALT multiples
+| NC_000020.11 | 32800145 | rs2424926 | C | G,T |                                              |
+| NC_000020.11 | 32800145 |    338173 | C | G   | Benign                                       |
+| NC_000020.11 | 32800145 |    338174 | C | T   | Conflicting_interpretations_of_pathogenicity |
+|              |          |           |   |     |                                              |
+3. plus généralement, que faire si un seul ALT dbSNP est patho ? Il n'y a qu'un seul identifiant ...
+| NC_000020.11 |  3234173 |   rs3827075 | T         | A,C,G     |                                              |
+| NC_000020.11 |  3234173 |      262001 | T         | G         | Conflicting_interpretations_of_pathogenicity |
+| NC_000020.11 |  3234173 |     1072511 | T         | TGGCGAAGC | Pathogenic                                   |
+| NC_000020.11 |  3234173 |      208613 | TGGCGAAGC | G         | Pathogenic                                   |
+| NC_000020.11 |  3234173 |        1312 | TGGCGAAGC | T         | Pathogenic                                   |
+
+
+              |   |   |   |   |   |
 ******* DONE Essai bedtools intersect
 #+begin_src sh
 bedtools intersect -a  dbSNP_common.vcf.gz -b clinvar.vcf.gz
