@@ -1612,6 +1612,11 @@ CLOSED: [2022-09-13 Tue 21:37]
 CLOSED: [2022-11-19 Sat 21:42]
 172G au lieu de 253M...
 ****** TODO common dbSNP not clinvar patho
+******* Conclusion partielle
+- vcfeval : prometteur mais n'arrive pas à traiter toutes les régions
+- isec : trop de problèmes avec
+- classif clinvar directement dans dbSNP: le plus simple
+  Et ça permet de rattraper quelques erreurs dans le script d'Alexis
 ******* KILL Utiliser directement le numéro dbSNP dans clinvar ? Non
 CLOSED: [2022-11-20 Sun 19:51]
 Ex: chr20
@@ -1664,26 +1669,18 @@ bcftools query -f '%ID\n' dbSNP_common_chr20.vcf.gz -e 'INFO/CLNSIG[*]~"^5|" | I
 On en a 10 de plus que la version d'Alexis
 
 #+begin_src sh :dir ~/code/bisonex/test_isec
-bcftools query -f '%ID\n' dbSNP_common_chr20.vcf.gz -e 'INFO/CLNSIG[*]~"^5|" | INFO/CLNSIG[*]=="5" | INFO/CLNSIG[*]~"|5"' | sort > common-notpatho-test.txt
+bcftools query -f '%ID\n' dbSNP_common_chr20.vcf.gz -e 'INFO/CLNSIG[*]=="5" | INFO/CLNSIG[*]~"^5|" | INFO/CLNSIG[*]~"|5"' | sort > common-notpatho-test.txt
 sort common-notpatho-alexis.txt > sorted.txt
-comm -23 common-notpatho-test.txt sorted.txt
+comm -23 common-notpatho-test.txt sorted.txt > missing_id.txt
 #+end_src
 
 #+RESULTS:
-| rs1044396   |
-| rs146917730 |
-| rs1801138   |
-| rs1801545   |
-| rs181943893 |
-| rs2424926   |
-| rs35873579  |
-| rs35938843  |
-| rs36106901  |
-| rs373200654 |
-| rs3827075   |
-| rs79338570  |
+
+On ne peut pas facilement vérifier qu'il n'y a pas de patho car chercher par position va renvoyer d'autres variants à cette position qui peuvent être patho.
+  Ex:NC_000020.11 3234173
 
 ******* TODO Rtg tools
+******** Test
 1. Générer SDf file
    #+begin_src sh
 rtg format genomeRef.fna  -o genomeRef.sdf
@@ -1742,8 +1739,10 @@ genome=$dir/genome/GRCh38.p13/genomeRef.sdf
 srun rtg vcfeval -b $dbSNP -c $clinvar -o common-not-patho -t $genome --sample ALT
 
 #+end_src
+******** TODO Voir pour régions complexes non traitées
 
-******* TODO bcftools isec : non
+******* DONE bcftools isec : non
+CLOSED: [2022-11-27 Sun 00:38]
 #+begin_src sh
 bcftools isec dbSNP_common.vcf.gz clinvar.vcf.gz -p common
 #+end_src
@@ -1815,7 +1814,8 @@ $ zcat lol.vcf.gz | wc -l
 #+end_src
 ******** DONE Valider avec Alexis : bcftool isec
 CLOSED: [2022-11-07 Mon 21:42   ]
-******** TODO Pourquoi nombre de lignes différentes avec la version d'Alexis -> isec ne gère pas plusieurs ALT
+******** DONE Pourquoi nombre de lignes différentes avec la version d'Alexis -> isec ne gère pas plusieurs ALT
+CLOSED: [2022-11-26 Sat 23:36]
 Grosse différence !
 #+begin_src
 $ wc -l ID_of_common_snp_not_clinvar_patho.txt
@@ -1865,18 +1865,17 @@ bcftools annotate --rename-chrs chromosome_mapping.txt clinvar_chr20_notremapped
 
 #+RESULTS:
 
-On teste l'intersection dbsnp et clinvar patho ainsi que le complémentaire
 *ATTENTION*: sans indexer les vcf, les fichiers seront *VIDES*
 *ATTENTION*: par défaut les filtres s'appliquent sur les 2. Cela est un problème si on joue sur l'inclusion et non l'exclusion
 Attention: vérifier la conventdion de nommage des chromosomes
-
-En essayant directement avec clinvar path
+********** Test pathogene: ne prend pas en compte les multi-allèles ????
+On teste l'intersection dbsnp et clinvar patho ainsi que le complémentaire
 #+begin_src sh :dir ~/code/bisonex/test_isec
 clinvar=clinvar_chr20_patho.vcf.gz
 snp=dbSNP_common_chr20.vcf.gz
-bcftools filter -i 'INFO/CLNSIG="Pathogenic"' clinvar_chr20.vcf.gz -o $clinvar
 bcftools index $clinvar
 bcftools index $snp
+bcftools filter -i 'INFO/CLNSIG="Pathogenic"' clinvar_chr20.vcf.gz -o $clinvar
 bcftools isec  $snp $clinvar -p tmp
 for i in tmp/*.vcf ; do echo $i; grep '^[^#]'  $i | wc -l; done
 #+end_src
@@ -1885,7 +1884,7 @@ for i in tmp/*.vcf ; do echo $i; grep '^[^#]'  $i | wc -l; done
 | tmp/0000.vcf |
 |       518846 |
 | tmp/0001.vcf |
-|         1787 |
+|            0 |
 | tmp/0002.vcf |
 |            0 |
 | tmp/0003.vcf |
@@ -1898,12 +1897,11 @@ Autre méthode : on inclut tous les SNP et clinvar patho et on regarde ceux uniq
 #+begin_src sh :dir ~/code/bisonex/test_isec
 snp=dbSNP_common_chr20.vcf.gz
 clinvar=clinvar_chr20.vcf.gz
-bcftools isec -i - -i 'INFO/CLNSIG="Pathogenic"' $snp $clinvar -p tmp
- grep '^[^#]' tmp/0000.vcf | wc -l
+bcftools isec -n=2 -i - -i 'INFO/CLNSIG="Pathogenic"' $snp $clinvar -p tmp
+ # grep '^[^#]' tmp/0000.vcf | wc -l
 #+end_src
 
 #+RESULTS:
-: 518846
 Soit tout dbsnp donc rien
 
 Note : on ne peut pas exclure les clinvar patho directement
@@ -2040,6 +2038,69 @@ bcftools isec dbSNP_test.vcf.gz clinvar_test.vcf.gz -p test
 | NC_000020.11 | 3234173 |   1072511 | T         | TGGCGAAGC | Pathogenic                                   |
 | NC_000020.11 | 3234173 |    208613 | TGGCGAAGC | G         | Pathogenic                                   |
 | NC_000020.11 | 3234173 |      1312 | TGGCGAAGC | T         | Pathogenic                                   |
+
+******** DONE Voir si isec gère les multiallélique (chr20) : non, impossible de faire marcher
+CLOSED: [2022-11-27 Sun 00:37]
+********* DONE chr20 en prenant un patho clinvar aussi dans dbSNP
+CLOSED: [2022-11-27 Sun 00:37]
+#+begin_src sh :dir ~/code/bisonex/test_isec
+bcftools filter dbSNP_common_chr20.vcf.gz -i 'POS=10652589' -o test_dbsnp.vcf.gz
+bcftools filter clinvar_chr20.vcf.gz -i 'POS=10652589' -o test_clinvar.vcf.gz
+bcftools index test_dbsnp.vcf.gz
+bcftools index test_clinvar.vcf.gz
+#+end_src
+
+#+RESULTS:
+
+#+begin_src sh :dir ~/code/bisonex/test_isec
+bcftools isec test_dbsnp.vcf.gz test_clinvar.vcf.gz -p tmp
+grep '^[^#]' tmp/0002.vcf
+grep '^[^#]' tmp/0003.vcf
+#+end_src
+
+#+RESULTS:
+
+Même en biallélique, ne fonctionne pas.
+Testé en modifiant test_dbsnp !
+Fonctionne avec un variant par ligne
+
+******** DONE isec en coupant les sites multialléliques: non
+CLOSED: [2022-11-27 Sun 00:37]
+********* DONE Exemple simple ok
+CLOSED: [2022-11-27 Sun 00:34]
+#+begin_src sh :dir ~/code/bisonex/test_isec
+bcftools filter -i 'POS=10652589' dbSNP_common_chr20.vcf.gz -o dbsnp_mwi.vcf.gz
+bcftools filter -i 'POS=10652589' clinvar_chr20.vcf.gz -o clinvar_mwi.vcf.gz
+bcftools index -f dbsnp_mwi.vcf.gz
+bcftools index -f clinvar_mwi.vcf.gz
+bcftools isec dbsnp_mwi.vcf.gz clinvar_mwi.vcf.gz -n=2
+#+end_src
+
+#+RESULTS:
+
+Même en biallélique, ne fonctionne pas.
+Chr 20
+Avec les fichiers du teste précédent
+#+begin_src sh :dir ~/code/bisonex/test_isec
+
+bcftools norm -m -any dbsnp_mwi.vcf.gz -o dbsnp_mwi_norm.vcf.gz
+bcftools index dbsnp_mwi_norm.vcf.gz
+bcftools isec dbsnp_mwi_norm.vcf.gz clinvar_mwi.vcf.gz -n=2
+#+end_src
+
+#+RESULTS:
+| NC_000020.11 | 10652589 | G | A | 11 |
+| NC_000020.11 | 10652589 | G | C | 11 |
+********* DONE Sur dbSNP chr20 non
+CLOSED: [2022-11-27 Sun 00:37]
+#+begin_src sh :dir ~/code/bisonex/test_isec
+bcftools norm -m -any dbSNP_common_chr20 -o dbSNP_common_chr20_norm.vcf.gz
+#+end_src
+#+begin_src sh :dir ~/code/bisonex/test_isec
+bcftools isec -i - -e 'INFO/CLNSIG="Pathogenic"' dbSNP_common_chr20_norm.vcf.gz clinvar_chr20.vcf.gz -p tmp
+#+end_src
+
+#+RESULTS:
 
 ******* DONE Essai bedtools intersect
 #+begin_src sh
