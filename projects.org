@@ -1641,6 +1641,47 @@ zgrep '^NC' dbSNP_common_chr20.vcf.gz | wc -l
 #+RESULTS:
 | 518832 | prod.txt |
 | 518846 |          |
+******* TODO classification clinvar codée dbSNP ?
+Sur le chromosome 20
+*Attention* CLNSIG a plusieurs champs (séparé par une virgule)
+On y accède avec INFO/CLNSIG[*]
+Ensuite, chaque item peut avoir plusieurs haploïdie (séparé par un |). IL faut donc utiliser une regexp
+NB: *ne pas mettre la condition* dans une variable !!
+
+Pour avoir les clinvar patho, on veut 5 mais pas 255 (= autre) pour la classification !`
+#+begin_src sh :dir ~/code/bisonex/test_isec
+bncftools query -f '%INFO/CLNSIG\n' dbSNP_common_chr20.vcf.gz -i
+'INFO/CLNSIG[*]~"^5|" | INFO/CLNSIG[*]=="5" | INFO/CLNSIG[*]~"|5"'| sort | uniq
+#+end_src
+
+Si on exclut tous les patho:
+#+begin_src sh :dir ~/code/bisonex/test_isec
+bcftools query -f '%ID\n' dbSNP_common_chr20.vcf.gz -e 'INFO/CLNSIG[*]~"^5|" | INFO/CLNSIG[*]=="5" | INFO/CLNSIG[*]~"|5"'| sort | uniq | wc -l
+#+end_src
+
+#+RESULTS:
+: 518842
+On en a 10 de plus que la version d'Alexis
+
+#+begin_src sh :dir ~/code/bisonex/test_isec
+bcftools query -f '%ID\n' dbSNP_common_chr20.vcf.gz -e 'INFO/CLNSIG[*]~"^5|" | INFO/CLNSIG[*]=="5" | INFO/CLNSIG[*]~"|5"' | sort > common-notpatho-test.txt
+sort common-notpatho-alexis.txt > sorted.txt
+comm -23 common-notpatho-test.txt sorted.txt
+#+end_src
+
+#+RESULTS:
+| rs1044396   |
+| rs146917730 |
+| rs1801138   |
+| rs1801545   |
+| rs181943893 |
+| rs2424926   |
+| rs35873579  |
+| rs35938843  |
+| rs36106901  |
+| rs373200654 |
+| rs3827075   |
+| rs79338570  |
 
 ******* TODO Rtg tools
 1. Générer SDf file
@@ -1702,8 +1743,7 @@ srun rtg vcfeval -b $dbSNP -c $clinvar -o common-not-patho -t $genome --sample A
 
 #+end_src
 
-******* DONE bcftools isec : non
-CLOSED: [2022-10-23 Sun 18:55]
+******* TODO bcftools isec : non
 #+begin_src sh
 bcftools isec dbSNP_common.vcf.gz clinvar.vcf.gz -p common
 #+end_src
@@ -1775,8 +1815,7 @@ $ zcat lol.vcf.gz | wc -l
 #+end_src
 ******** DONE Valider avec Alexis : bcftool isec
 CLOSED: [2022-11-07 Mon 21:42   ]
-******** DONE Pourquoi nombre de lignes différentes avec la version d'Alexis -> isec ne gère pas plusieurs ALT
-CLOSED: [2022-11-20 Sun 17:56]
+******** TODO Pourquoi nombre de lignes différentes avec la version d'Alexis -> isec ne gère pas plusieurs ALT
 Grosse différence !
 #+begin_src
 $ wc -l ID_of_common_snp_not_clinvar_patho.txt
@@ -1835,7 +1874,7 @@ En essayant directement avec clinvar path
 #+begin_src sh :dir ~/code/bisonex/test_isec
 clinvar=clinvar_chr20_patho.vcf.gz
 snp=dbSNP_common_chr20.vcf.gz
-bcftools filter -i 'INFO/CLNSIG="Pathogenic"' clinvar_chr20.vcf.gz -o $clinvar.vcf.gz
+bcftools filter -i 'INFO/CLNSIG="Pathogenic"' clinvar_chr20.vcf.gz -o $clinvar
 bcftools index $clinvar
 bcftools index $snp
 bcftools isec  $snp $clinvar -p tmp
@@ -1974,20 +2013,34 @@ On a donc plusieurs problèmes :
 | NC_000020.11 | 25390747 | rs373200654 | G         | C         |                                              |
 | NC_000020.11 | 25390747 |      338000 | G         | C         | Conflicting_interpretations_of_pathogenicity |
 
+On teste juste sur cette ligne
+#+begin_src sh :dir ~/code/bisonex/test_isec
+bcftools filter -i 'POS=25390747' clinvar_chr20.vcf.gz -o clinvar_test.vcf.gz
+bcftools filter -i 'POS=25390747' dbSNP_common_chr20.vcf.gz -o dbSNP_test.vcf.gz
+#+end_src
+On retrouve bien la ligne dans l'intersection...
+#+begin_src sh :dir ~/code/bisonex/test_isec
+bcftools filter -i 'POS=25390747' clinvar_chr20.vcf.gz -o clinvar_test.vcf.gz
+bcftools index dbSNP_test.vcf.gz dbSNP_test.vcf.gz
+bcftools index dbSNP_test.vcf.gz clinvar_test.vcf.gz
+bcftools isec dbSNP_test.vcf.gz clinvar_test.vcf.gz -p test
+#+end_src
+
+#+RESULTS:
+
 2. isec ne semble pas fonctionner sur en cas d'ALT multiples
 | NC_000020.11 | 32800145 | rs2424926 | C | G,T |                                              |
 | NC_000020.11 | 32800145 |    338173 | C | G   | Benign                                       |
 | NC_000020.11 | 32800145 |    338174 | C | T   | Conflicting_interpretations_of_pathogenicity |
 |              |          |           |   |     |                                              |
-3. plus généralement, que faire si un seul ALT dbSNP est patho ? Il n'y a qu'un seul identifiant ...
-| NC_000020.11 |  3234173 |   rs3827075 | T         | A,C,G     |                                              |
-| NC_000020.11 |  3234173 |      262001 | T         | G         | Conflicting_interpretations_of_pathogenicity |
-| NC_000020.11 |  3234173 |     1072511 | T         | TGGCGAAGC | Pathogenic                                   |
-| NC_000020.11 |  3234173 |      208613 | TGGCGAAGC | G         | Pathogenic                                   |
-| NC_000020.11 |  3234173 |        1312 | TGGCGAAGC | T         | Pathogenic                                   |
+3. s'il y a plusieurs variantions à une position, il faut bien vérifier que tous ne sont pas patho.
+   La version d'Alexis le fait bien
+| NC_000020.11 | 3234173 | rs3827075 | T         | A,C,G     |                                              |
+| NC_000020.11 | 3234173 |    262001 | T         | G         | Conflicting_interpretations_of_pathogenicity |
+| NC_000020.11 | 3234173 |   1072511 | T         | TGGCGAAGC | Pathogenic                                   |
+| NC_000020.11 | 3234173 |    208613 | TGGCGAAGC | G         | Pathogenic                                   |
+| NC_000020.11 | 3234173 |      1312 | TGGCGAAGC | T         | Pathogenic                                   |
 
-
-              |   |   |   |   |   |
 ******* DONE Essai bedtools intersect
 #+begin_src sh
 bedtools intersect -a  dbSNP_common.vcf.gz -b clinvar.vcf.gz
