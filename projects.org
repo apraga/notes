@@ -200,16 +200,20 @@ monoallélique -> inactivation partielle pourrait jouer un rôle
 
 *** Tâches
 **** TODO Biblio
-***** TODO article T. Hirsch
-***** TODO Autre case report NF1 + hépatoblastome ?
+***** DONE article T. Hirsch
+CLOSED: [2022-11-27 Sun 11:28]
+***** DONE Autre case report NF1 + hépatoblastome ?
+CLOSED: [2022-11-27 Sun 11:28]
 [cite:@dubbink2018]: 1 patient NF1 + mutation somatique /CNNTB1/
 [cite:@seminog2012] étude épidémio : surrisque de cancer du foie chez patient NF1 (cf note)
 [cite:@ucar2007] 1 cas de NF1 avec hépatoblastome sans confirmation moléculaire
 [cite:@landry2021]: épidémio récente : pas de cas rapporté NF1 + foie
 [cite:@varan2015]: épidémio plus ancienne : idem
 [cite:@skoczen2019] hépatoblastome + neuroblastome avec plusieurs variants dont NF1
-***** TODO NF1 + autres cancers
-***** TODO Pathway
+***** DONE NF1 + autres cancers
+CLOSED: [2022-11-27 Sun 11:28]
+***** DONE Pathway
+CLOSED: [2022-11-27 Sun 11:28]
 Wnt/β-cateninng : impliqué dans NF1
 activation Ras/MAPk -> augemantation niveau de βcatenine
 
@@ -246,8 +250,13 @@ https://www.nature.com/articles/labinvest2016142
 ***** TODO Appel ITACA
 **** DONE Plan de l’article
 CLOSED: [2022-10-22 Sat 23:33] DEADLINE: <2022-09-17 Sat>
-**** TODO Poster v0.1
+**** DONE Poster v0.1
+CLOSED: [2022-11-27 Sun 11:28]
 **** TODO Article v0.1
+**** TODO Soumission
+- BMC Pediatrics ? Impact factor 2.1
+  List journaux acceptant case reports
+  https://static1.squarespace.com/static/5db7b349364ff063a6c58ab8/t/6071fb065173800a11ccd0a2/1618082566620/Case+Report+Journals+2020.pdf
 ** Mustard :mustard:
 *** Scripts
 **** DONE Script pour données labkey
@@ -1676,8 +1685,35 @@ comm -23 common-notpatho-test.txt sorted.txt > missing_id.txt
 
 #+RESULTS:
 
-On ne peut pas facilement vérifier qu'il n'y a pas de patho car chercher par position va renvoyer d'autres variants à cette position qui peuvent être patho.
-  Ex:NC_000020.11 3234173
+On génère les positions à chercher dans clinvar.NB: je ne comprends pas pourquoi les régions ne fonctionne pas bien...  On fait juste un grep
+#+begin_src sh :dir ~/code/bisonex/test_isec
+# bcftools query -f '%CHROM\t%POS\t%POS\n' -i 'ID=@missing_id.txt' dbSNP_common_chr20.vcf.gz > to_search.txt
+bcftools query -f '%POS\n' -i 'ID=@missing_id.txt' dbSNP_common_chr20.vcf.gz > to_search.txt
+#+end_src
+
+#+RESULTS:
+
+Puis on regarde à la main les variations...
+#+begin_src sh :dir ~/code/bisonex/test_isec
+bcftools query -f '%POS %REF %ALT\ %INFO/CLNSIG\n' -i 'ID=@missing_id.txt' dbSNP_common_chr20.vcf.gz
+bcftools query -f '%POS %REF %ALT %INFO/CLNSIG\n'  clinvar_chr20.vcf.gz | zgrep -f to_search.txt > to_check.txt
+#+end_src
+
+#+RESULTS:
+| 3234173 T A    | C   | G . | . | . |  2 | 2 |   |   |   |   |
+| 10658574 G A   | T . |   2 | 3 | 2 |  2 | 4 |   |   |   |   |
+| 10672794 G A   | C . |   2 | 3 | 2 |  2 | 0 | 0 |   |   |   |
+| 18525868 C T . | 0   |   2 |   |   |    |   |   |   |   |   |
+| 25390747 G C . | 0   |     |   |   |    |   |   |   |   |   |
+| 32800145 C G   | T . |   2 | 2 | 3 |  0 | 2 |   |   |   |   |
+| 33412656 C G   | T . |   . | 2 | 2 |  0 | 2 |   |   |   |   |
+| 45891622 G A   | C   | T . | . | 3 | 12 | 3 |   |   |   |   |
+| 54171651 G A   | T . |  12 | 0 | 2 |    |   |   |   |   |   |
+| 62172726 G A . | 0   |     |   |   |    |   |   |   |   |   |
+| 63349782 G A   | C . |  11 | 2 | 2 |  2 | 0 |   |   |   |   |
+| 63414925 G A   | C   | T . | 3 | 0 |  3 | 2 | 2 | 2 | 2 | . |
+
+ON ne retrouve que des conflicting !
 ******* Corriger script alexi
 Version initiale
 #+begin_src sh :dir ~/code/bisonex/test_isec
@@ -1724,7 +1760,7 @@ rs1799990
 rs3833341
 rs73598374
 
-******* TODO Rtg tools
+******* HOLD Rtg tools
 ******** Test
 1. Générer SDf file
    #+begin_src sh
