@@ -1678,6 +1678,51 @@ comm -23 common-notpatho-test.txt sorted.txt > missing_id.txt
 
 On ne peut pas facilement vérifier qu'il n'y a pas de patho car chercher par position va renvoyer d'autres variants à cette position qui peuvent être patho.
   Ex:NC_000020.11 3234173
+******* Corriger script alexi
+Version initiale
+#+begin_src sh :dir ~/code/bisonex/test_isec
+snp=dbSNP_common_chr20.vcf.gz
+clinvar=clinvar_chr20_notremapped.vcf.gz
+python ../script/pythonScript/clinvar_sbSNP.py \
+    --clinvar $clinvar \
+    --chrm_name_table ../database/RefSeq/refseq_to_number_only_consensual.txt \
+    --dbSNP $snp --output tmp.txt
+sort tmp.txt > common-notpatho-alexis.txt
+wc -l common-notpatho-alexis.txt
+#+end_src
+
+#+RESULTS:
+: 518832 common-notpatho-alexis.txt
+
+En changeant la condition
+#+begin_src sh :dir ~/code/bisonex/test_isec
+sed  's/if '\''PATHO'\'' in clinvarline\[7\].upper():/if "Pathogenic" in clinvarline[7]:/' ../script/pythonScript/clinvar_sbSNP.py > ../script/pythonScript/clinvar_sbSNP_patch.py
+snp=dbSNP_common_chr20.vcf.gz
+clinvar=clinvar_chr20_notremapped.vcf.gz
+python ../script/pythonScript/clinvar_sbSNP_patch.py \
+    --clinvar $clinvar \
+    --chrm_name_table ../database/RefSeq/refseq_to_number_only_consensual.txt \
+    --dbSNP $snp --output tmp.txt
+sort tmp.txt > common-notpatho-alexis.txt
+wc -l common-notpatho-alexis.txt
+#+end_src
+
+#+RESULTS:
+: 518844 common-notpatho-alexis.txt
+Maitenat, 2 de plus que notre version...
+
+#+begin_src sh :dir ~/code/bisonex/test_isec
+sort common-notpatho-alexis.txt > sorted.txt
+comm -23 sorted.txt common-notpatho-test.txt
+#+end_src
+
+#+RESULTS:
+| rs3833341  |
+| rs73598374 |
+
+rs1799990
+rs3833341
+rs73598374
 
 ******* TODO Rtg tools
 ******** Test
