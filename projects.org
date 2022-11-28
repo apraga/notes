@@ -129,7 +129,9 @@ CLOSED: [2022-11-20 Sun 21:31]
 Corrigée ce jour
 ** TODO Inscription fac
 DEADLINE: <2022-12-01 Thu>
-Génétique médicale seeulement : mail envoyé <2022-11-26 Sat>
+*** TODO Payer
+*** TODO Documents
+manque fiche attestation
 * Comptabilité :ledger:
 :PROPERTIES:
 :CATEGORY: compta
