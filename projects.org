@@ -116,8 +116,8 @@ Notamment Ollie Charles's 24 days of GHC Extensions,
 :PROPERTIES:
 :CATEGORY: aya
 :END:
-**** TODO Lire dialogue fin leçon 10
-SCHEDULED: <2022-07-30 Sat>
+**** KILL Lire dialogue fin leçon 10
+CLOSED: [2022-12-03 Sat 12:34] SCHEDULED: <2022-07-30 Sat>
 * Internat
 :PROPERTIES:
 :CATEGORY: internat
@@ -155,9 +155,9 @@ Envoyé <2022-07-22 Fri>
 Pas de réponse
 *** DONE Donner la réponse à Chloé + Patricia Fergelot
 *** TODO appel à collaboration avec Chloé
-**** TODO Questionnaire
-***** WAIT v0.1
-SCHEDULED: <2022-10-01 Sat>
+**** WAIT Questionnaire
+***** DONE v0.1
+CLOSED: [2022-12-03 Sat 12:35] SCHEDULED: <2022-10-01 Sat>
 envoyé le <2022-10-11 Tue>
 ** NF1 :nf1:
 *** Notes
@@ -308,13 +308,16 @@ for i in p.index:
 #+end_src
 
 **** TODO Stats sur la balance allélique pour Paul
-SCHEDULED: <2022-10-25 Tue>
 ***** DONE Besançon seul : total, par variant
 CLOSED: [2022-10-28 Fri 10:57]
 
-***** TODO Dijon + Besançon seul : total, par variant et par type de prélèvement
+***** DONE Dijon + Besançon seul : total, par variant et par type de prélèvement
+CLOSED: [2022-12-03 Sat 12:35]
 Dans "variations à vérifier". 1 seul variant normalement en miseq, parfois plusieurs en exome
 AB = "allelic balance"
+***** TODO Version executable pour paul
+SCHEDULED: <2022-12-04 Sun>
+Avec colonne dédiée
 
 *** Données
 **** DONE Import Labkey
@@ -2348,9 +2351,9 @@ Problèmes de versions...
 CLOSED: [2022-10-22 Sat 23:35] SCHEDULED: <2022-07-21 Thu>
 **** DONE Virement pour éviter les défauts de rélèvements
 *** WAIT Demander chequier
-SCHEDULED: <2022-08-20 sam.>
-**** TODO Demander au CHU pour  le transfert (cela fait 2 mois)
-SCHEDULED: <2022-10-24 Mon>
+SCHEDULED: <2023-01-02 Mon>
+**** DONE Demander au CHU pour  le transfert (cela fait 2 mois)
+CLOSED: [2022-12-03 Sat 12:34] SCHEDULED: <2022-10-24 Mon>
 *** WAIT Demander DAM transfert compte bancaire
 Mail envoyé <2022-11-26 Sat>
 
@@ -2762,9 +2765,9 @@ CLOSED: [2022-11-19 Sat 17:35]
 **** TODO Téloméropathies (T Leblanc)
 * Divers
 ** TODO Cadeau mariage :joris:
-SCHEDULED: <2022-11-22 Tue>
+SCHEDULED: <2022-12-20 Tue>
 ** TODO Cadeaux mariage :florian:
-SCHEDULED: <2022-11-22 Tue>
+SCHEDULED: <2022-12-27 Tue>
 ** TODO Copier photos famille depuis drive yvain sur drive famille
 SCHEDULED: <2022-07-30 Sat>
 * Nix
@@ -2825,7 +2828,7 @@ SCHEDULED: <2023-05-11 Thu>
 À faire au bout de 10ans, on attend l’an prochain
 * Moto
 ** TODO Changer kit chaine
-SCHEDULED: <2022-10-29 Sat>
+SCHEDULED: <2022-12-15 Thu>
 * Maison
 ** TODO Renouveler abonnement
 SCHEDULED: <2022-11-14 Mon>
