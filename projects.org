@@ -1617,7 +1617,8 @@ SCHEDULED: <2022-08-19 Fri>
 - [X] Genome de référence
 - [X] dbSNP
 - [X] OMIM
-- [ ] VEP 20G
+- [X] VEP 20G
+- [X] transcriptome (spip)
 ***** DONE Télécharger les données avec nextflow
 CLOSED: [2022-09-13 Tue 21:37]
 ***** TODO Processing bases de données
@@ -1660,7 +1661,8 @@ zgrep '^NC' dbSNP_common_chr20.vcf.gz | wc -l
 #+RESULTS:
 | 518832 | prod.txt |
 | 518846 |          |
-******* TODO classification clinvar codée dbSNP ?
+******* KILL classification clinvar codée dbSNP ?
+CLOSED: [2022-12-04 Sun 14:38]
 Sur le chromosome 20
 *Attention* CLNSIG a plusieurs champs (séparé par une virgule)
 On y accède avec INFO/CLNSIG[*]
@@ -1668,103 +1670,98 @@ Ensuite, chaque item peut avoir plusieurs haploïdie (séparé par un |). IL fau
 NB: *ne pas mettre la condition* dans une variable !!
 
 Pour avoir les clinvar patho, on veut 5 mais pas 255 (= autre) pour la classification !`
+Il faut également les likely patho et conflicting
 #+begin_src sh :dir ~/code/bisonex/test_isec
-bncftools query -f '%INFO/CLNSIG\n' dbSNP_common_chr20.vcf.gz -i
-'INFO/CLNSIG[*]~"^5|" | INFO/CLNSIG[*]=="5" | INFO/CLNSIG[*]~"|5"'| sort | uniq
-#+end_src
+bcftools query -f '%INFO/CLNSIG\n' dbSNP_common_chr20.vcf.gz -i \
+'INFO/CLNSIG[*]~"^5|" | INFO/CLNSIG[*]=="5" | INFO/CLNSIG[*]~"|5" | INFO/CLNSIG[*]~"^4|" | INFO/CLNSIG[*]=="4" | INFO/CLNSIG[*]~"|4" | INFO/CLNSIG[*]~"^12|" | INFO/CLNSIG[*]=="12" | INFO/CLNSIG[*]~"|12"' | sort
 
-Si on exclut tous les patho:
-#+begin_src sh :dir ~/code/bisonex/test_isec
-bcftools query -f '%ID\n' dbSNP_common_chr20.vcf.gz -e 'INFO/CLNSIG[*]~"^5|" | INFO/CLNSIG[*]=="5" | INFO/CLNSIG[*]~"|5"'| sort | uniq | wc -l
 #+end_src
 
 #+RESULTS:
-: 518842
-On en a 10 de plus que la version d'Alexis
+| . |  . | 12 |    |   |   |   |   |   |   |   |
+| . | 12 |  0 |  2 |   |   |   |   |   |   |   |
+| 2 |  3 |  2 |  2 | 2 | 5 | . |   |   |   |   |
+| . |  2 |  3 |  2 | 2 | 4 |   |   |   |   |   |
+| . |  . |  3 | 12 | 3 |   |   |   |   |   |   |
+| . |  5 |  2 |  . |   |   |   |   |   |   |   |
+| . |  . |  . |  5 | 2 | 2 |   |   |   |   |   |
+| . |  9 |  9 |  9 | 5 | 5 | 2 | 3 | 2 | 3 | 2 |
 
+
+Si on les exclut :
 #+begin_src sh :dir ~/code/bisonex/test_isec
-bcftools query -f '%ID\n' dbSNP_common_chr20.vcf.gz -e 'INFO/CLNSIG[*]=="5" | INFO/CLNSIG[*]~"^5|" | INFO/CLNSIG[*]~"|5"' | sort > common-notpatho-test.txt
-sort common-notpatho-alexis.txt > sorted.txt
-comm -23 common-notpatho-test.txt sorted.txt > missing_id.txt
-#+end_src
-
-#+RESULTS:
-
-On génère les positions à chercher dans clinvar.NB: je ne comprends pas pourquoi les régions ne fonctionne pas bien...  On fait juste un grep
-#+begin_src sh :dir ~/code/bisonex/test_isec
-# bcftools query -f '%CHROM\t%POS\t%POS\n' -i 'ID=@missing_id.txt' dbSNP_common_chr20.vcf.gz > to_search.txt
-bcftools query -f '%POS\n' -i 'ID=@missing_id.txt' dbSNP_common_chr20.vcf.gz > to_search.txt
+bcftools query -f '%ID\n' dbSNP_common_chr20.vcf.gz -e \
+'INFO/CLNSIG[*]~"^5|" | INFO/CLNSIG[*]=="5" | INFO/CLNSIG[*]~"|5" | INFO/CLNSIG[*]~"4" | INFO/CLNSIG[*]~"12"' | sort | uniq > common-notpatho.txt
 #+end_src
 
 #+RESULTS:
 
-Puis on regarde à la main les variations...
-#+begin_src sh :dir ~/code/bisonex/test_isec
-bcftools query -f '%POS %REF %ALT\ %INFO/CLNSIG\n' -i 'ID=@missing_id.txt' dbSNP_common_chr20.vcf.gz
-bcftools query -f '%POS %REF %ALT %INFO/CLNSIG\n'  clinvar_chr20.vcf.gz | zgrep -f to_search.txt > to_check.txt
-#+end_src
-
-#+RESULTS:
-| 3234173 T A    | C   | G . | . | . |  2 | 2 |   |   |   |   |
-| 10658574 G A   | T . |   2 | 3 | 2 |  2 | 4 |   |   |   |   |
-| 10672794 G A   | C . |   2 | 3 | 2 |  2 | 0 | 0 |   |   |   |
-| 18525868 C T . | 0   |   2 |   |   |    |   |   |   |   |   |
-| 25390747 G C . | 0   |     |   |   |    |   |   |   |   |   |
-| 32800145 C G   | T . |   2 | 2 | 3 |  0 | 2 |   |   |   |   |
-| 33412656 C G   | T . |   . | 2 | 2 |  0 | 2 |   |   |   |   |
-| 45891622 G A   | C   | T . | . | 3 | 12 | 3 |   |   |   |   |
-| 54171651 G A   | T . |  12 | 0 | 2 |    |   |   |   |   |   |
-| 62172726 G A . | 0   |     |   |   |    |   |   |   |   |   |
-| 63349782 G A   | C . |  11 | 2 | 2 |  2 | 0 |   |   |   |   |
-| 63414925 G A   | C   | T . | 3 | 0 |  3 | 2 | 2 | 2 | 2 | . |
-
-ON ne retrouve que des conflicting !
-******* Corriger script alexi
-Version initiale
-#+begin_src sh :dir ~/code/bisonex/test_isec
+ #+begin_src sh :dir ~/code/bisonex/test_isec
 snp=dbSNP_common_chr20.vcf.gz
 clinvar=clinvar_chr20_notremapped.vcf.gz
 python ../script/pythonScript/clinvar_sbSNP.py \
     --clinvar $clinvar \
     --chrm_name_table ../database/RefSeq/refseq_to_number_only_consensual.txt \
     --dbSNP $snp --output tmp.txt
-sort tmp.txt > common-notpatho-alexis.txt
+sort tmp.txt | uniq > common-notpatho-alexis.txt
 wc -l common-notpatho-alexis.txt
-#+end_src
+ #+end_src
 
-#+RESULTS:
-: 518832 common-notpatho-alexis.txt
+ #+RESULTS:
+ : 518832 common-notpatho-alexis.txt
 
-En changeant la condition
+On en a 6 de plus que la version d'Alexis mais quelques différences
+
+Ceux d'Alexis qui manquent:
 #+begin_src sh :dir ~/code/bisonex/test_isec
-sed  's/if '\''PATHO'\'' in clinvarline\[7\].upper():/if "Pathogenic" in clinvarline[7]:/' ../script/pythonScript/clinvar_sbSNP.py > ../script/pythonScript/clinvar_sbSNP_patch.py
-snp=dbSNP_common_chr20.vcf.gz
-clinvar=clinvar_chr20_notremapped.vcf.gz
-python ../script/pythonScript/clinvar_sbSNP_patch.py \
-    --clinvar $clinvar \
-    --chrm_name_table ../database/RefSeq/refseq_to_number_only_consensual.txt \
-    --dbSNP $snp --output tmp.txt
-sort tmp.txt > common-notpatho-alexis.txt
-wc -l common-notpatho-alexis.txt
+comm -23 common-notpatho-alexis.txt common-notpatho.txt > alexis-only.txt
+cat alexis-only.txt
 #+end_src
 
 #+RESULTS:
-: 518844 common-notpatho-alexis.txt
-Maitenat, 2 de plus que notre version...
-
-#+begin_src sh :dir ~/code/bisonex/test_isec
-sort common-notpatho-alexis.txt > sorted.txt
-comm -23 sorted.txt common-notpatho-test.txt
-#+end_src
-
-#+RESULTS:
+| rs1064039  |
 | rs3833341  |
 | rs73598374 |
 
-rs1799990
-rs3833341
-rs73598374
+On les teste dans clinvar et dbSNP
+#+begin_src sh :dir ~/code/bisonex/test_isec
+bcftools query -f '%POS %REF %ALT %INFO/CLNSIG\n' -i 'ID=@alexis-only.txt' dbSNP_common_chr20.vcf.gz
+bcftools query -f '%POS\n' -i 'ID=@alexis-only.txt' dbSNP_common_chr20.vcf.gz > alexis-only-pos.txt
+while read  -r line; do
+bcftools query -f '%POS %REF %ALT %INFO/CLNSIG\n' -i 'POS='$line clinvar_chr20.vcf.gz
+done < alexis-only-pos.txt
+# bcftools query -f '%POS %REF %ALT %INFO/CLNSIG\n' -i 'POS=23637790' clinvar_chr20.vcf.gz
+#+end_src
 
+#+RESULTS:
+|   764018 | A | ACAGGTCAAT,ACAGGT | .,5     | 2,. |   |
+| 23637790 | C | G,T               | .,.,12  |     |   |
+| 44651586 | C | A,G,T             | .,.,.,5 |   2 | 2 |
+|   764018 | A | ACAGGTCAAT        | Benign  |     |   |
+| 23637790 | C | T                 | Benign  |     |   |
+| 44651586 | C | T                 | Benign  |     |   |
+
+On a donc une discordance entre clinvar et dbSNP.
+On dirait qu'ils ont mal fait l'intersection avec clinvar.
+
+Par exemple https://www.ncbi.nlm.nih.gov/snp/rs3833341#clinical_significance
+
+Tu as l'impression qu'il y a un 1 clinvar bénin et 1 patho.
+
+En cherchant par NM, tu vois qu'il est bénin sur clinvar car il y a d'autres soumissions ! https://www.ncbi.nlm.nih.gov/clinvar/variation/262235/
+
+
+Confirmation sur nos bases de données :
+
+$ bcftools query -f '%POS %REF %ALT %INFO/CLNSIG\n' -i 'POS=764018' dbSNP_common_chr20.vcf.gz
+
+764018 A ACAGGTCAAT,ACAGGT .,5|2,.
+$ bcftools query -f '%POS %REF %ALT %INFO/CLNSIG\n' -i 'POS=764018' clinvar_chr20.vcf.gz
+764018 A ACAGGTCAAT Benign
+
+******* KILL Corriger script alexi
+CLOSED: [2022-12-04 Sun 13:03]
+Gère clinvar patho, probablement patho ou conflicting !
 ******* HOLD Rtg tools
 ******** Test
 1. Générer SDf file
@@ -2198,14 +2195,17 @@ $ wc -l intersect.vcf
 ***** DONE GATK
 CLOSED: [2022-10-21 Fri 21:59]
 ***** WAIT BioDBHTS
+Contribuer pull request
 ***** DONE BioExtAlign
 CLOSED: [2022-10-22 Sat 00:38]
 ***** WAIT BioBigFile
 Revoir si on peut utliser kent dernière version
-***** KILL 'rtg-tools
-CLOSED: [2022-11-19 Sat 21:06]
+Contribuer pull request
+***** HOLD rtg-tools
 Convertir clinvar NC
-***** TODO Spip
+***** DONE Spip
+CLOSED: [2022-12-04 Sun 12:49]
+Pas de pull request
 ***** DONE R + packages
 CLOSED: [2022-11-19 Sat 21:05]
 **** DONE Exécution
@@ -2275,10 +2275,29 @@ CLOSED: [2022-11-21 Mon 22:13]
   nouveau : 958401
   Vient du génome de référence ??
 
-**** TODO Divers
+**** Divers
 ***** DONE Vérifier nombre de reads fastq - bam
 CLOSED: [2022-10-09 Sun 22:31]
-**** TODO Sarek
+**** TODO Genome in a bottle ?
+On n'a pas l'ADN.. séquencer à Centogène ?
+*** Améliorations
+**** TODO Utilise une versionn allégée de GnomAD (une seule colonne)
+**** TODO Utiliser T-to-T comme références
+**** TODO Digenisme (cf nomenclature omim)
+C’est dans le nom de la maladie
+**** TODO Macro excel
+*** HOLD Implémenter d’autres pipeline
+Voir https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04407-x
+**** KILL GATK
+CLOSED: [2022   -11-11 Fri 20:01]
+https://broadinstitute.github.io/warp/docs/Pipelines/Exome_Germline_Single_Sample_Pipeline/README
+A priori, respecte les bonnes pratiques
+**** KILL Essayer snmake avec bonne pratiques
+https://github.com/snakemake-workflows/dna-seq-gatk-variant-calling/blob/main/.github/workflows/main.yml
+Installer Mamba (micromamba ne fonctionne pas sous nix)
+Ne fonctionne pas sous WSL2... MultiQC n’est pas assez à jour
+Problèmes de versions...
+**** HOLD Sarek
 ***** Dépendances
 ****** Nix
 #+begin_src sh
@@ -2317,33 +2336,12 @@ Corrigé avec
       chown 1696:513 /Home/Users/apraga/.conda/pkgs/urls.txt
 #+end_src
 Mais problème de proxy
-***** TODO Dérivation nix pour modules python
-***** TODO Lancer sarek en mode test
+***** HOLD Dérivation nix pour modules python
+***** HOLD Lancer sarek en mode test
 #+begin_src sh
   nix-shell -p python310Packages.pyyaml --run "nextflow run nf-core/sarek -profile test --executor slurm --queue smp --outdir test -resume"
 #+end_src
-***** TODO Lancer sarek sur données allégées
-**** TODO Genome in a bottle ?
-On n'a pas l'ADN.. séquencer à Centogène ?
-*** Améliorations
-**** TODO Utilise une versionn allégée de GnomAD (une seule colonne)
-**** TODO Utiliser T-to-T comme références
-**** TODO Digenisme (cf nomenclature omim)
-C’est dans le nom de la maladie
-**** TODO Macro excel
-*** TODO Implémenter d’autres pipeline
-Voir https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04407-x
-**** KILL GATK
-CLOSED: [2022   -11-11 Fri 20:01]
-https://broadinstitute.github.io/warp/docs/Pipelines/Exome_Germline_Single_Sample_Pipeline/README
-A priori, respecte les bonnes pratiques
-**** KILL Essayer snmake avec bonne pratiques
-https://github.com/snakemake-workflows/dna-seq-gatk-variant-calling/blob/main/.github/workflows/main.yml
-Installer Mamba (micromamba ne fonctionne pas sous nix)
-Ne fonctionne pas sous WSL2... MultiQC n’est pas assez à jour
-Problèmes de versions...
-**** TODO Les pipeline de nf-core:
-***** Sarek
+***** HOLD Lancer sarek sur données allégées
 * Banque :banque:
 ** TODO Compte et CB société générale :banque:
 *** KILL Envoyer relevé
@@ -2798,15 +2796,15 @@ PR submitted
 SCHEDULED: <2022-08-10 Wed>
 /Entered on/ [2022-08-10 Wed 14:28]
 Corriger review
+Essayer dernière version de kent
 
 ** WAIT Nixpkg for BioDBHTS
 SCHEDULED: <2022-08-10 Wed>
 /Entered on/ [2022-08-10 Wed 14:28]
 Correction pour review faites <2022-10-10 Mon>
 
-
-** WAIT Nixpkg for BioExtAlign
-SCHEDULED: <2022-08-10 Wed>
+** DONE Nixpkg for BioExtAlign
+CLOSED: [2022-10-22 Sat 12:43] SCHEDULED: <2022-08-10 Wed>
 /Entered on/ [2022-08-10 Wed 14:28]
 Review <2022-10-10 Mon>, correction dans la journée.
 Correction 2e passe, attente
@@ -2831,8 +2829,8 @@ SCHEDULED: <2023-05-11 Thu>
 SCHEDULED: <2022-12-15 Thu>
 * Maison
 ** TODO Renouveler abonnement
-SCHEDULED: <2022-11-14 Mon>
-À partir de début décement novembre
+SCHEDULED: <2022-12-05 Mon>
+"Je veux changer d'abonnement sur la hotline" pour avoir le service commercial
 * Gentoo
 ** GURU
 *** DONE Demander accès
