@@ -201,7 +201,7 @@ monoallélique -> inactivation partielle pourrait jouer un rôle
     - cosmic : rapporté dans pheochromocytome x1 et pheochromocytome x1 (patho)
 
 *** Tâches
-**** TODO Biblio
+**** DONE Biblio
 ***** DONE article T. Hirsch
 CLOSED: [2022-11-27 Sun 11:28]
 ***** DONE Autre case report NF1 + hépatoblastome ?
@@ -247,14 +247,20 @@ NF2
 Voie RAS impliquée dans hépatoblastome ?
 Possible selon https://pubmed.ncbi.nlm.nih.gov/19665249/
 https://www.nature.com/articles/labinvest2016142
-**** HOLD Trouver autres cas ?
-***** TODO Appel ANDDI rares
-***** TODO Appel ITACA
+**** KILL Trouver autres cas ?
+CLOSED: [2022-12-04 Sun 22:13]
+***** KILL Appel ANDDI rares
+CLOSED: [2022-12-04 Sun 22:13]
+***** KILL Appel ITACA
+CLOSED: [2022-12-04 Sun 22:13]
 **** DONE Plan de l’article
 CLOSED: [2022-10-22 Sat 23:33] DEADLINE: <2022-09-17 Sat>
 **** DONE Poster v0.1
 CLOSED: [2022-11-27 Sun 11:28]
-**** TODO Article v0.1
+**** TODO Article
+***** DONE v0.1
+CLOSED: [2022-12-04 Sun 22:13]
+***** STRT Corrections v0.2
 **** TODO Soumission
 - BMC Pediatrics ? Impact factor 2.1
   List journaux acceptant case reports
@@ -315,6 +321,11 @@ CLOSED: [2022-10-28 Fri 10:57]
 CLOSED: [2022-12-03 Sat 12:35]
 Dans "variations à vérifier". 1 seul variant normalement en miseq, parfois plusieurs en exome
 AB = "allelic balance"
+
+***** TODO Rajouter une colonne balance allélique
+****** STRT Ancien panel
+****** STRT Nouveau panel
+****** TODO Dijon
 ***** TODO Version executable pour paul
 SCHEDULED: <2022-12-04 Sun>
 Avec colonne dédiée
@@ -1546,7 +1557,8 @@ CLOSED: [2022-08-04 Thu 17:42]
 ***** DONE Enlever les doublons
 CLOSED: [2022-09-13 Tue 21:36]
 **** DONE Fusionner panel Dijons
-**** TODO Fusion variants à vérifier de dijon
+**** DONE Fusion variants à vérifier de dijon
+CLOSED: [2022-12-04 Sun 22:32]
 **** KILL Dxcare
 ***** DONE Demande Dijon
 ***** KILL Demande DPO Besançon
