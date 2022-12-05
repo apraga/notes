@@ -5651,3 +5651,12 @@ Compression: 3x10
  - Chest-to-wall 60s
  - Toe pull 18
  - Heel pull 15
+* <2022-12-05 Mon> Workout
+- RTO: 20+10+10+10+10
+Skin-the-cat (avec descente): 4
+- Muscle-up 1-2+1-2+1-2+1-1+1
+Extension:  0
+- FL tucked row : 3+1-2+1-2+1
+Pistols : 3x4
+- Planche tucked push-up: 3+3+3+1 - 3+3+3+1 - 4+3+3
+Compression: 3x10

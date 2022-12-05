@@ -127,10 +127,12 @@ CLOSED: [2022-11-20 Sun 21:30]
 ** DONE Déclaration stage
 CLOSED: [2022-11-20 Sun 21:31]
 Corrigée ce jour
-** TODO Inscription fac
+** WAIT Inscription fac
 DEADLINE: <2022-12-01 Thu>
-*** TODO Payer
-*** TODO Documents
+*** DONE Payer
+CLOSED: [2022-12-05 Mon 21:23]
+*** DONE Documents
+CLOSED: [2022-12-05 Mon 21:23]
 manque fiche attestation
 * Comptabilité :ledger:
 :PROPERTIES:
@@ -1631,6 +1633,7 @@ SCHEDULED: <2022-08-19 Fri>
 - [X] OMIM
 - [X] VEP 20G
 - [X] transcriptome (spip)
+- [ ] Refseq
 ***** DONE Télécharger les données avec nextflow
 CLOSED: [2022-09-13 Tue 21:37]
 ***** TODO Processing bases de données
@@ -2840,8 +2843,8 @@ SCHEDULED: <2023-05-11 Thu>
 ** TODO Changer kit chaine
 SCHEDULED: <2022-12-15 Thu>
 * Maison
-** TODO Renouveler abonnement
-SCHEDULED: <2022-12-05 Mon>
+** DONE Renouveler abonnement
+CLOSED: [2022-12-05 Mon 21:22] SCHEDULED: <2022-12-05 Mon>
 "Je veux changer d'abonnement sur la hotline" pour avoir le service commercial
 * Gentoo
 ** GURU
