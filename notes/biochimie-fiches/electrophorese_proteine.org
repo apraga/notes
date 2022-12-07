@@ -1,0 +1,6 @@
+#+title: Electrophorese_proteine
+* Description
+* Points forts
+* Points faibles
+* Interférences
+* Paramètres représentatitfs
