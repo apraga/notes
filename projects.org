@@ -2189,13 +2189,12 @@ bcftools isec dbsnp_mwi_norm.vcf.gz clinvar_mwi.vcf.gz -n=2
 #+RESULTS:
 | NC_000020.11 | 10652589 | G | A | 11 |
 | NC_000020.11 | 10652589 | G | C | 11 |
-********* DONE Sur dbSNP chr20 non
-CLOSED: [2022-11-27 Sun 00:37]
+********* TODO Sur dbSNP chr20 non
 #+begin_src sh :dir ~/code/bisonex/test_isec
 bcftools norm -m -any dbSNP_common_chr20 -o dbSNP_common_chr20_norm.vcf.gz
 #+end_src
 #+begin_src sh :dir ~/code/bisonex/test_isec
-bcftools isec -i - -e 'INFO/CLNSIG="Pathogenic"' dbSNP_common_chr20_norm.vcf.gz clinvar_chr20.vcf.gz -p tmp
+bcftools isec -i 'INFO/CLNSIG="Pathogenic"' dbSNP_common_chr20_norm.vcf.gz clinvar_chr20.vcf.gz -p tmp
 #+end_src
 
 #+RESULTS:
@@ -2281,15 +2280,81 @@ $ wc -l ID_of_common_snp.txt
 $ wc -l /Work/Users/apraga/bisonex/database/dbSNP/ID_of_common_snp.txt
 23194290 /Work/Users/apraga/bisonex/database/dbSNP/ID_of_common_snp.txt
 #+end_src
-***** DONE ID common snp not clinvar patho
-****** DONE Version Alexis
-CLOSED: [2022-11-21 Mon 22:13]
-****** STRT Nouvelle version
+***** TODO ID common snp not clinvar patho
+****** Vérification du problème
+Sur le J:
+21155134 /Work/Groups/bisonex/data/dbSNP/GRCh38.p13/ID_of_common_snp_not_clinvar_patho.txt.ref
+
+Version de "non-régression"
+21155076 database/dbSNP/ID_of_common_snp_not_clinvar_patho.txt
+
+Nouvelle version
+23193391 /Work/Groups/bisonex/data/dbSNP/GRCh38.p13/ID_of_common_snp_not_clinvar_patho.txt
+
+Si on enlève les doublons
+$ sort database/dbSNP/ID_of_common_snp_not_clinvar_patho.txt | uniq > old.txt
+$ wc -l old.txt
+21107097 old.txt
+
+$ sort /Work/Groups/bisonex/data/dbSNP/GRCh38.p13/ID_of_common_snp_not_clinvar_patho.txt | uniq > new.txt
+$ wc -l new.txt
+21174578 new.txt
+
+$ sort /Work/Groups/bisonex/data/dbSNP/GRCh38.p13/ID_of_common_snp_not_clinvar_patho.txt.ref | uniq > ref.txt
+$ wc -l ref.txt
+21107155 ref.txt
+
+Si on regarde la différence
+ comm -23 ref.txt old.txt
+rs1052692
+rs1057518973
+rs1057518973
+rs11074121
+rs112848754
+rs12573787
+rs145033890
+rs147889095
+rs1553904159
+rs1560294695
+rs1560296615
+rs1560310926
+rs1560325547
+rs1560342418
+rs1560356225
+rs1578287542
+...
+
+On cherche le premier
+bcftools query -i 'ID="rs1052692"' database/dbSNP/dbSNP_common.vcf.gz -f '%CHROM %POS %REF %ALT\n'
+NC_000019.10 1619351 C A,T
+Il est bien patho...
+$ bcftools query -i 'POS=1619351' database/clinvar/clinvar.vcf.gz -f '%CHROM %POS %REF %ALT %INFO/CLNSIG\n'
+19 1619351 C T Conflicting_interpretations_of_pathogenicity
+
+On vérifie pour tous les autres
+
+$ comm -23 ref.txt old.txt > tocheck.txt
+On génère les régions à vérifier (chromosome number:position)
+$ bcftools query -i 'ID=@tocheck.txt' database/dbSNP/dbSNP_common.vcf.gz -f '%CHROM\t%POS\n' > tocheck.pos
+
+On génère le mapping inverse (chromosome number -> NC)
+$ awk ' { t = $1; $1 = $2; $2 = t; print; } ' database/RefSeq/refseq_to_number_only_consensual.txt  > mapping.txt
+On remap clinvar
+$ bcftools annotate --rename-chrs mapping.txt database/clinvar/clinvar.vcf.gz -o clinvar_remapped.vcf.gz
+$ tabix clinvar_remapped.vcf.gz
+
+Enfin, on cherche dans clinvar la classification
+$ bcftools query -R tocheck.pos clinvar_remapped.vcf.gz -f '%CHROM %POS %INFO/CLNSIG\n'
+$ bcftools query -R tocheck.pos database/dbSNP/dbSNP_common.vcf.gz -f '%CHROM %POS %ID \n' | grep '^NC'
+#+RESULTS:
+****** WAIT Conclusion
+A priori, la version sur le J: n'est pas bonne. Attente réponse d'Alexis
 ***** TODO alignement + variant:
   Alexis : 886164
   nouveau : 958401
   Vient du génome de référence ??
 
+***** TODO 63003856_S135
 **** Divers
 ***** DONE Vérifier nombre de reads fastq - bam
 CLOSED: [2022-10-09 Sun 22:31]
