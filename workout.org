@@ -5662,3 +5662,9 @@ Pistols : 3x4
 Compression: 3x10
 * <2022-12-07 Wed> Tricking
 Aerial, bkick
+* <2022-12-08 Thu> Handstand
+ - Chest-to-wall 30s-40s
+ - Toe pull 12
+ - Negative 5
+ - Heel pull 14
+ - L freestand 3
