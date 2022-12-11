@@ -8,14 +8,22 @@ où \epsilon est une constante dépendant de la température, longueur d’onde,
 
 En biochimie, on va s’intéresser aux longueurs d’ondes UV et dans le domaine visible soit $100-800 nm$.
 * Points forts
+- facile à mettre en oeuvre
+- spectre d'application large en biochimie
+- ne modifie pas l'échantillon
+- permet de mesure une concentration ou une activité enzymatique
 * Points faibles
+- sensible à la lumière
+- sensible aux modifications de l'absorbance de l'échantillon (impureté, température...)
 * Interférences
+Une autre substance absorbant à la même longueur d'onde va modifier le dosage.
+Pour l'hémolyse, ictère et lactescence, il y aura une surestimation.
 * Paramètres représentatitfs
 | Colorimétrique                      | Enzymatique (absorbance propre) | Enzymatique (cofacteur) | Synthèse d’un colorant |
-| albumine                            | acide urique                    | Urée                    |                        |
-| bilirubine conjuguée, non conjugée) | phosphatase alcaline            | ammoniac                |                        |
-| calcium                             | \gamma-GT                       | ALAT, ASAT              |                        |
-| créatine                            | lipase                          | CPK                     |                        |
+| albumine                            | acide urique                    | Urée                    | Cholestérol total      |
+| bilirubine conjuguée, non conjugée) | phosphatase alcaline            | ammoniac                | HDL                    |
+| calcium                             | \gamma-GT                       | ALAT, ASAT              | LDL                    |
+| créatine                            | lipase                          | CPK                     | Tryglycérides          |
 | fer                                 | \alpha-amylase                  | LDH                     |                        |
 | magnésium                           |                                 | Glucose                 |                        |
 | phosphore inorganique               |                                 | Lactates                |                        |
