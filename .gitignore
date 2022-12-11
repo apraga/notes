@@ -7,3 +7,4 @@ tmp/
 *.bbl
 *.dvi
 *.core
+*.tex

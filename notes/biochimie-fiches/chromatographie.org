@@ -1,0 +1,6 @@
+#+title: Chromatographie
+* Description
+* Points forts
+* Points faibles
+* Interférences
+* Paramètres représentatitfs
