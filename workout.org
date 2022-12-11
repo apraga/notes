@@ -5642,3 +5642,9 @@ Compression: 3x10
  - Negative 5-5
  - Heel pull 6+7 - 11
 - L handstand 10-10
+* <2022-12-10 Sat> Handstand
+ - Chest-to-wall 60s
+ - Toe pull 10
+ - Negative 5
+ - Heel pull 10
+ - L freestand 10
