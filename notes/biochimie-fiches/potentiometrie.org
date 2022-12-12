@@ -1,5 +1,11 @@
 #+title: Potentiometrie
 * Description
+Deux électrodes sont plongées dans la solution pour laquelle on veut la concentration. Une électrode est saturée et sert de référence. La seconde est à membrane de verre et va permettre le passage des ions en solution. Ce déplacement va induire une différence de potentiel par rapport à l’électrode de référence. Cette différence permet de calculer la concentration avec la loi de Nernst:
+$$ E = E^0 + \frac{0.006}{n} \log{\frac{\textrm{Ox}^a}{\textrm{Red}^b}}$$
+selon la réaction d’oxydoréaction $a \textrm{Ox} + n \textrm{e}^{-} \longleftrightarrow b \textrm{Red}$
+Il faut une électrode sélective pour chaque ion dosé ($\textrm{Na}^{+} $\textrm{K}^{+} $\textrm{Cl}^{-}$).
+
+La potentiométrie *directe* va mesurer la solution directement. La potentiométrie *indirecte* va procéder à une diluion du plasma.
 * Points forts
 * Points faibles
 * Interférences
