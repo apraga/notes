@@ -18,7 +18,7 @@ En biochimie, on va s’intéresser aux longueurs d’ondes UV et dans le domain
 * Interférences
 Une autre substance absorbant à la même longueur d'onde va modifier le dosage.
 Pour l'hémolyse, ictère et lactescence, il y aura une surestimation.
-* Paramètres représentatitfs
+* Paramètres représentatifs
 | Colorimétrique                      | Enzymatique (absorbance propre) | Enzymatique (cofacteur) | Synthèse d’un colorant |
 | albumine                            | acide urique                    | Urée                    | Cholestérol total      |
 | bilirubine conjuguée, non conjugée) | phosphatase alcaline            | ammoniac                | HDL                    |
