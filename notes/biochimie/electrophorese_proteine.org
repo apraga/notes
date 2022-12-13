@@ -1,6 +1,6 @@
-#+title: Immuno Enzymatique
+#+title: Electrophorese_proteine
 * Description
 * Points forts
 * Points faibles
 * Interférences
-* Paramètres représentatitfs
+* Paramètres représentatifs

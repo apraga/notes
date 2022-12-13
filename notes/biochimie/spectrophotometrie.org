@@ -1,4 +1,5 @@
 #+title: Spectrophotometrie
+#+options: toc:nil
 * Description
 La spectrophotométrie mesure de manière quantitative l’absorption de composé colorés au travers d’un matériel en fonction de la longueur d’onde.
 On calcule l’absorbance $A_\lambda$ qui va être le logarithme en base 10 de l’intensité de lumière incidente sur la lumière transmise, qui peut également s’écrire selon la loi de Beer-Lambert en fonction de la concentraction $c$ du soluté en solution :

@@ -1,4 +1,5 @@
 #+title: Turbidimetrie
+#+options: toc:nil
 * Description
 Il s'agit d'une technique de photométrie en milieu trouble. Elle mesure la diminution de l'absorbance d'un rayon lumineux de longeur d'onde connue au travers de la solution.
 Les particules en solution vont diffuser le rayon lumineux et ce, en fonction de la concentration de la solution et de la taille des particules.
