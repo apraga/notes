@@ -48,13 +48,14 @@ SCHEDULED: <2022-08-19 Fri>
 - [ ] Refseq
 *** DONE Télécharger les données avec nextflow
 CLOSED: [2022-09-13 Tue 21:37]
-*** TODO Processing bases de données
+*** HOLD Processing bases de données
 **** DONE dbSNP common
 **** DONE Seulement les ID dans dbSNP common !
 CLOSED: [2022-11-19 Sat 21:42]
 172G au lieu de 253M...
-**** TODO common dbSNP not clinvar patho
-***** Conclusion partielle
+**** HOLD common dbSNP not clinvar patho
+***** DONE Conclusion partielle
+CLOSED: [2022-12-12 Mon 22:25]
 - vcfeval : prometteur mais n'arrive pas à traiter toutes les régions
 - isec : trop de problèmes avec
 - classif clinvar directement dans dbSNP: le plus simple
@@ -249,7 +250,7 @@ genome=$dir/genome/GRCh38.p13/genomeRef.sdf
 srun rtg vcfeval -b $dbSNP -c $clinvar -o common-not-patho -t $genome --sample ALT
 
 #+end_src
-****** TODO Voir pour régions complexes non traitées
+****** HOLD Voir pour régions complexes non traitées
 
 ***** DONE bcftools isec : non
 CLOSED: [2022-11-27 Sun 00:38]
@@ -1048,6 +1049,15 @@ bSNP/GRCh38.p13/ID_of_common_snp_not_clinvar_patho.txt
 #+end_src
 **** DONE Supprimer les sites non consensuels
 CLOSED: [2022-12-11 Sun 19:51]
+**** DONE Rajouter les mitochondries (vu avec Paul)
+CLOSED: [2022-12-13 Tue 17:26]
+Ok avec notre version générée. Sur le J: 21155134
+
+$ wc -l dbSNP/GRCh38.p13/ID_of_common_snp_not_clinvar_patho.txt
+21155065 dbSNP/GRCh38.p13/ID_of_common_snp_not_clinvar_patho.txt
+$ wc -l ../data-alexis/dbSNP/ID_of_common_snp_not_clinvar_patho.txt
+21155065 ../data-alexis/dbSNP/ID_of_common_snp_not_clinvar_patho.txt
+La différence vient probablement d'une vieille version de clinvar
 *** TODO alignement + variant:
   Alexis : 886164
   nouveau : 958401
