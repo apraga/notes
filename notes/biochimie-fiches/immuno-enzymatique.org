@@ -1,6 +1,0 @@
-#+title: Immuno Enzymatique
-* Description
-* Points forts
-* Points faibles
-* Interférences
-* Paramètres représentatitfs

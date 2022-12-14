@@ -5668,6 +5668,8 @@ Aerial, bkick
  - Negative 5
  - Heel pull 14
  - L freestand 3
+* <2022-12-11 Sun> Running
+58min, 10min de montée
 * <2022-12-10 Sat> Handstand
  - Chest-to-wall 60s
  - Toe pull 10
@@ -5680,3 +5682,18 @@ Aerial, bkick
  - Negative
  - Heel pull  14
  - L freestand
+* <2022-12-13 Tue> Handstand
+ - Chest-to-wall 60s
+ - Toe pull 12
+ - Negative 5
+ - Heel pull 13
+ - L freestand 10
+* <2022-12-13 Tue> Workout
+- RTO: 2-8-12-12
+Skin-the-cat (avec descente): 4
+- Muscle-up (8 neg)-2+(3)-2+1+(3)+1+1
+Extension: 3x22
+- FL tucked row : 3x{2+1}
+Pistols : 0
+- Planche tucked push-up: 4+3+2+1 - 3+2+2+2+1 + 3+3+2+1
+Compression: 3x22

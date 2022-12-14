@@ -8,3 +8,7 @@ tmp/
 *.dvi
 *.core
 *.tex
+*.bak
+_cache
+_site
+_tmp

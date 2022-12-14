@@ -18,6 +18,14 @@ pour le fasta, 2 solutions
   On utilise la version chromosome donc on annote dbSNP (à faire)
 ** Performances
 Ordinateur de Carine (WSL2) : 4h dont 1h15 alignement (parallélisé) et 1h15 haplotypecaller (séquentiel)
+** Chromosomes NC, NT, NW
+Correspondance :
+https://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&chromInfoPage=
+Signification
+https://genome.ucsc.edu/FAQ/FAQdownloads.html#downloadAlt
+- alt = séquences alternatives (utilisables)
+- fix = patch (correction ou amélioration)
+- random = séquence connue sur un chromosome mais non encore utilisée
 ** Pipelines prêt-à-l’emploi nextflow
 Problème : nécessite singularity ou docker (ou conda)
 Potentiellement utilisable avec nix...
@@ -40,13 +48,14 @@ SCHEDULED: <2022-08-19 Fri>
 - [ ] Refseq
 *** DONE Télécharger les données avec nextflow
 CLOSED: [2022-09-13 Tue 21:37]
-*** TODO Processing bases de données
+*** HOLD Processing bases de données
 **** DONE dbSNP common
 **** DONE Seulement les ID dans dbSNP common !
 CLOSED: [2022-11-19 Sat 21:42]
 172G au lieu de 253M...
-**** TODO common dbSNP not clinvar patho
-***** Conclusion partielle
+**** HOLD common dbSNP not clinvar patho
+***** DONE Conclusion partielle
+CLOSED: [2022-12-12 Mon 22:25]
 - vcfeval : prometteur mais n'arrive pas à traiter toutes les régions
 - isec : trop de problèmes avec
 - classif clinvar directement dans dbSNP: le plus simple
@@ -241,7 +250,7 @@ genome=$dir/genome/GRCh38.p13/genomeRef.sdf
 srun rtg vcfeval -b $dbSNP -c $clinvar -o common-not-patho -t $genome --sample ALT
 
 #+end_src
-****** TODO Voir pour régions complexes non traitées
+****** HOLD Voir pour régions complexes non traitées
 
 ***** DONE bcftools isec : non
 CLOSED: [2022-11-27 Sun 00:38]
@@ -671,7 +680,7 @@ CLOSED: [2022-11-13 Sun 12:52]
 CLOSED: [2022-11-13 Sun 13:00]
 *** TODO Filter
 - [X] depth
-- [X] comon snp not path
+- [ ] comon snp not path
 Problème avec liste des ID
 **** TODO variant annotation
 Besoin de vep
@@ -688,8 +697,10 @@ $ wc -l ID_of_common_snp.txt
 $ wc -l /Work/Users/apraga/bisonex/database/dbSNP/ID_of_common_snp.txt
 23194290 /Work/Users/apraga/bisonex/database/dbSNP/ID_of_common_snp.txt
 #+end_src
-*** TODO ID common snp not clinvar patho
-**** Vérification du problème
+*** DONE ID common snp not clinvar patho
+CLOSED: [2022-12-11 Sun 20:11]
+**** DONE Vérification du problème
+CLOSED: [2022-12-11 Sun 16:30]
 Sur le J:
 21155134 /Work/Groups/bisonex/data/dbSNP/GRCh38.p13/ID_of_common_snp_not_clinvar_patho.txt.ref
 
@@ -755,9 +766,8 @@ Enfin, on cherche dans clinvar la classification
 $ bcftools query -R tocheck.pos clinvar_remapped.vcf.gz -f '%CHROM %POS %INFO/CLNSIG\n'
 $ bcftools query -R tocheck.pos database/dbSNP/dbSNP_common.vcf.gz -f '%CHROM %POS %ID \n' | grep '^NC'
 #+RESULTS:
-**** WAIT Conclusion
-A priori, la version sur le J: n'est pas bonne. Attente réponse d'Alexis
-**** Comprendre pourquoi la nouvelle version donne un résultat différent
+**** DONE Comprendre pourquoi la nouvelle version donne un résultat différent
+CLOSED: [2022-12-11 Sun 20:11]
 ***** DONE Même version dbsnp et clinvar ?
 CLOSED: [2022-12-10 Sat 23:02]
 Clinvar différent !
@@ -782,7 +792,9 @@ SN	0	number of indels:	144663
 SN	0	number of others:	3716
 SN	0	number of multiallelic sites:	0
 SN	0	number of multiallelic SNP sites:	0
-***** Mettre à jour clinvar et dbnSNP pour travailler sur les mêm bases
+***** DONE Mettre à jour clinvar et dbnSNP pour travailler sur les mêm bases
+CLOSED: [2022-12-11 Sun 12:10]
+Problème persiste
 ***** DONE Supprimer la conversion en int du chromosome
 CLOSED: [2022-12-10 Sat 19:29]
 ***** KILL Même NC ?
@@ -790,6 +802,262 @@ CLOSED: [2022-12-10 Sat 19:29]
 $  zgrep "contig=<ID=NC_\(.*\)" clinvar/GRCh38/clinvar.vcf.gz > contig.clinvar
 $ diff contig.txt contig.clinvar
 < ##contig=<ID=NC_012920.1>
+***** DONE Tester sur chromosome 19: ok
+CLOSED: [2022-12-11 Sun 13:53]
+On prépare les données
+#+begin_src sh :dir /ssh:meso:/Work/Users/apraga/bisonex/tests/debug-commonsnp
+PATH=$PATH:$HOME/.nix-profile/bin
+bcftools filter -i 'CHROM="NC_000019.10"' /Work/Groups/bisonex/data/dbSNP/GRCh38.p13/dbSNP_common.vcf.gz -o dbSNP_common_19.vcf.gz
+bcftools filter -i 'CHROM="NC_000019.10"' /Work/Groups/bisonex/data/clinvar/GRCh38/clinvar.vcf.gz -o clinvar_19.vcf.gz
+bcftools filter -i 'CHROM="NC_000019.10"' /Work/Groups/bisonex/data-alexis/dbSNP/dbSNP_common.vcf.gz -o dbSNP_common_19_old.vcf.gz
+ bcftools filter -i 'CHROM="19"' /Work/Groups/bisonex/data-alexis/clinvar/clinvar.vcf.gz -o clinvar_19_old.vcf.gz
+#+end_src
+
+On récupère les 2 versions du script
+#+begin_src sh :dir /ssh:meso:/Work/Users/apraga/bisonex/tests/debug-commonsnp
+PATH=$PATH:$HOME/.nix-profile/bin
+git checkout regression ../../script/pythonScript/clinvar_sbSNP.py
+cp ../../script/pythonScript/clinvar_sbSNP.py clinvar_sbSNP_old.py
+git checkout HEAD ../../script/pythonScript/clinvar_sbSNP.py
+#+end_src
+
+#+RESULTS:
+
+On compare
+#+begin_src sh :dir /ssh:meso:/Work/Users/apraga/bisonex/tests/debug-commonsnp
+PATH=$PATH:$HOME/.nix-profile/bin
+python ../../script/pythonScript/clinvar_sbSNP.py clinvar_sbSNP.py --clinvar clinvar_19.vcf.gz --dbSNP dbSNP_common_19.vcf.gz --output tmp.txt
+sort tmp.txt | uniq > new.txt
+table=/Work/Groups/bisonex/data-alexis/RefSeq/refseq_to_number_only_consensual.txt
+python clinvar_sbSNP_old.py --clinvar clinvar_19_old.vcf.gz --dbSNP dbSNP_common_19_old.vcf.gz --output tmp_old.txt --chrm_name_table $table
+sort tmp_old.txt | uniq > old.txt
+wc -l old.txt new.txt
+#+end_src
+
+#+RESULTS:
+|  535155 | old.txt |
+|  535194 | new.txt |
+| 1070349 | total   |
+
+Si on prend le premier manquant dans new, il est conflicting patho donc il ne devrait pas y être...
+
+$ bcftools query -i 'ID="rs10418277"' dbSNP
+_common_19.vcf.gz  -f '%CHROM %POS %REF %ALT\n'
+NC_000019.10 54939682 C G,T
+$ bcftools query -i 'ID="rs10418277"' dbSNP_common_19_old.vcf.gz  -f '%CHROM %POS %REF %ALT\n'
+NC_000019.10 54939682 C G,T
+
+$ bcftools query -i 'POS=54939682' clinvar_19.vcf.gz  -f '%POS %REF %ALT %INFO/CLNSIG\n'
+54939682 C G Conflicting_interpretations_of_pathogenicity
+54939682 C T Benign
+$ bcftools query -i 'POS=54939682' clinvar_19_old.vcf.gz  -f '%POS %REF %ALT %INFO/CLNSIG\n'
+54939682 C G Conflicting_interpretations_of_pathogenicity
+54939682 C T Benign
+
+$ grep rs10418277 *.txt
+new.txt:rs10418277
+tmp.txt:rs10418277
+
+Le problème venait de la POS qui n'était plus convertie en int (suppression de la ligne par erreur ??)
+On vérifie
+
+#+begin_src sh :dir /ssh:meso:/Work/Users/apraga/bisonex/tests/debug-commonsnp
+PATH=$PATH:$HOME/.nix-profile/bin
+python ../../script/pythonScript/clinvar_sbSNP.py --clinvar clinvar_19.vcf.gz --dbSNP dbSNP_common_19.vcf.gz --output tmp.txt
+sort tmp.txt | uniq > new.txt
+table=/Work/Groups/bisonex/data-alexis/RefSeq/refseq_to_number_only_consensual.txt
+python clinvar_sbSNP_old.py --clinvar clinvar_19_old.vcf.gz --dbSNP dbSNP_common_19_old.vcf.gz --output tmp_old.txt --chrm_name_table $table
+sort tmp_old.txt | uniq > old.txt
+wc -l old.txt new.txt
+diff old.txt new.txt
+#+end_src
+
+#+RESULTS:
+|  535155 | old.txt |
+|  535155 | new.txt |
+| 1070310 | total   |
+
+***** DONE Tester sur chromosome 19 et 20: ok
+CLOSED: [2022-12-11 Sun 15:56]
+On prépare les données
+#+begin_src sh :dir /ssh:meso:/Work/Users/apraga/bisonex/tests/debug-commonsnp
+PATH=$PATH:$HOME/.nix-profile/bin
+bcftools filter -i 'CHROM="NC_000019.10" | CHROM="NC_000020.11"' /Work/Groups/bisonex/data/dbSNP/GRCh38.p13/dbSNP_common.vcf.gz -o dbSNP_common_19_20.vcf.gz
+bcftools filter -i 'CHROM="NC_000019.10" | CHROM="NC_000020.11"' /Work/Groups/bisonex/data/clinvar/GRCh38/clinvar.vcf.gz -o clinvar_19_20.vcf.gz
+bcftools filter -i 'CHROM="NC_000019.10" | CHROM="NC_000020.11"' /Work/Groups/bisonex/data-alexis/dbSNP/dbSNP_common.vcf.gz -o dbSNP_common_19_20_old.vcf.gz
+bcftools filter -i 'CHROM="19" | CHROM="20"' /Work/Groups/bisonex/data-alexis/clinvar/clinvar.vcf.gz -o clinvar_19_20_old.vcf.gz
+#+end_src
+
+#+RESULTS:
+
+On récupère les 2 versions du script
+#+begin_src sh :dir /ssh:meso:/Work/Users/apraga/bisonex/tests/debug-commonsnp
+PATH=$PATH:$HOME/.nix-profile/bin
+git checkout regression ../../script/pythonScript/clinvar_sbSNP.py
+cp ../../script/pythonScript/clinvar_sbSNP.py clinvar_sbSNP_old.py
+git checkout HEAD ../../script/pythonScript/clinvar_sbSNP.py
+#+end_src
+
+#+RESULTS:
+
+On compare
+#+begin_src sh :dir /ssh:meso:/Work/Users/apraga/bisonex/tests/debug-commonsnp
+PATH=$PATH:$HOME/.nix-profile/bin
+python ../../script/pythonScript/clinvar_sbSNP.py clinvar_sbSNP.py --clinvar clinvar_19_20.vcf.gz --dbSNP dbSNP_common_19_20.vcf.gz --output tmp.txt
+sort tmp.txt | uniq > new.txt
+table=/Work/Groups/bisonex/data-alexis/RefSeq/refseq_to_number_only_consensual.txt
+python clinvar_sbSNP_old.py --clinvar clinvar_19_20_old.vcf.gz --dbSNP dbSNP_common_19_20_old.vcf.gz --output tmp_old.txt --chrm_name_table $table
+sort tmp_old.txt | uniq > old.txt
+wc -l old.txt new.txt
+#+end_src
+
+***** DONE Regarder la répartition des différences
+CLOSED: [2022-12-11 Sun 16:29]
+#+begin_src sh :dir /ssh:meso:/Work/Users/apraga/bisonex/tests/debug-commonsnp
+sort /Work/Groups/bisonex/data/dbSNP/GRCh38.p13/ID_of_common_snp_not_clinvar_patho.txt  | uniq > notpatho.new
+sort /Work/Groups/bisonex/data-alexis/dbSNP/ID_of_common_snp_not_clinvar_patho.txt  | uniq > notpatho.old
+comm -23 notpatho.new notpatho.old > nopatho.diff
+#+end_src
+#+begin_src sh :dir /ssh:meso:/Work/Users/apraga/bisonex/tests/debug-commonsnp
+PATH=$PATH:$HOME/.nix-profile/bin
+ bcftools query -i 'ID=@nopatho.diff' /Work/Groups/bisonex/data/dbSNP/GRCh38.p13/dbSNP_common.vcf.gz -f '%CHROM\n' | sort | uniq -c
+ #+end_src
+
+ On a principalement des coordonnées non consensuelles (non "NC_", voir notes)
+
+ #+RESULTS:
+  :     2 NC_000002.12
+  :    18 NC_000003.12
+  :     2 NC_000004.12
+  :     2 NC_000005.10
+  :    14 NC_000006.12
+  :     6 NC_000007.14
+  :     2 NC_000009.12
+  :     1 NC_000010.11
+  :     6 NC_000014.9
+  :     1 NC_000015.10
+  :     3 NC_000016.10
+  :     3 NC_000017.11
+  :     1 NC_000019.10
+  :     1 NC_000020.11
+  :     1 NC_000021.9
+  :     2 NC_000022.11
+  : 16018 NT_113793.3
+  : 17010 NT_113796.3
+  :    14 NT_113891.3
+  :     1 NT_167244.2
+  :    13 NT_167245.2
+  :     2 NT_167246.2
+  :    13 NT_167247.2
+  :     7 NT_167248.2
+  :    14 NT_167249.2
+  : 14857 NT_187361.1
+  :    92 NT_187367.1
+  :     1 NT_187369.1
+  :    13 NT_187381.1
+  :    54 NT_187383.1
+  :     6 NT_187499.1
+  :    46 NT_187502.1
+  : 13754 NT_187513.1
+  :   611 NT_187517.1
+  :     1 NT_187520.1
+  :     1 NT_187524.1
+  :   249 NT_187526.1
+  :    18 NT_187532.1
+  :     1 NT_187546.1
+  :   886 NT_187562.1
+  :     1 NT_187564.1
+  :   346 NT_187576.1
+  :    13 NT_187600.1
+  :     5 NT_187601.1
+  :   494 NT_187606.1
+  :     1 NT_187607.1
+  :    12 NT_187613.1
+  :   307 NT_187614.1
+  :     1 NT_187625.1
+  :   445 NT_187633.1
+  :    43 NT_187648.1
+  :    18 NT_187649.1
+  :     1 NT_187652.1
+  :   512 NT_187661.1
+  :    18 NT_187678.1
+  :    49 NT_187681.1
+  :     1 NT_187682.1
+  :    18 NT_187688.1
+  :    12 NT_187689.1
+  :    18 NT_187690.1
+  :    18 NT_187691.1
+  :   404 NT_187693.1
+  :     2 NW_003315952.3
+  :     1 NW_003315970.2
+  :   203 NW_003571054.1
+  :   322 NW_003571055.2
+  :    16 NW_003571056.2
+  :    16 NW_003571057.2
+  :    16 NW_003571058.2
+  :    16 NW_003571059.2
+  :    16 NW_003571060.1
+  :   213 NW_003571061.2
+  :     2 NW_009646201.1
+  :   322 NW_009646205.1
+  :   321 NW_009646206.1
+  :   371 NW_012132914.1
+  :     1 NW_012132915.1
+  :    13 NW_012132918.1
+  :     2 NW_013171801.1
+  :     1 NW_013171807.1
+  :    49 NW_015148966.1
+  :    14 NW_015495298.1
+  :     2 NW_015495299.1
+  :     1 NW_016107298.1
+  :     4 NW_017363813.1
+  :     2 NW_017852933.1
+  :     1 NW_018654722.1
+  :    38 NW_021160001.1
+  :     1 NW_021160003.1
+  :     1 NW_021160007.1
+  :     7 NW_021160017.1
+
+***** DONE Regarder la différence avec la version sans les sites non consensuels: ok !
+CLOSED: [2022-12-11 Sun 20:11]
+#+begin_src sh :dir /ssh:meso:/Work/Users/apraga/bisonex/tests/debug-commonsnp
+sort /Work/Groups/bisonex/data/dbSNP/GRCh38.p13/ID_of_common_snp_not_clinvar_patho.txt  | uniq > notpatho.new
+sort /Work/Groups/bisonex/data-alexis/dbSNP/ID_of_common_snp_not_clinvar_patho.txt  | uniq > notpatho.old
+comm -13 notpatho.new notpatho.old > notpatho.diff
+wc -l
+#+end_src
+
+#+RESULTS:
+: 528 notpatho.diff
+
+Il manque 528 variants
+rs1057520103
+#+begin_src sh :dir /ssh:meso:/Work/Users/apraga/bisonex/tests/debug-commonsnp
+PATH=$PATH:$HOME/.nix-profile/bin
+ bcftools query -i 'ID=@notpatho.diff' /Work/Groups/bisonex/data/dbSNP/GRCh38.p13/dbSNP_common.vcf.gz -f '%CHROM\n' | sort | uniq -c
+ #+end_src
+
+ #+RESULTS:
+ : 528 NC_012920.1
+
+ Donc la nouvelle version fonctionne mieux !
+ ON vérifie bien qu'ils sont dans l'ancienne version et la nouvelle:
+$ grep -w -f notpatho.diff /Work/Groups/bisonex/data-alexis/dbSNP/ID_of_common_snp_not_clinvar_patho.txt  | wc -l
+528
+$ grep -w -f notpatho.diff  /Work/Groups/bisonex/data/d
+bSNP/GRCh38.p13/ID_of_common_snp_not_clinvar_patho.txt
+#+end_src
+**** DONE Supprimer les sites non consensuels
+CLOSED: [2022-12-11 Sun 19:51]
+**** DONE Rajouter les mitochondries (vu avec Paul)
+CLOSED: [2022-12-13 Tue 17:26]
+Ok avec notre version générée. Sur le J: 21155134
+
+$ wc -l dbSNP/GRCh38.p13/ID_of_common_snp_not_clinvar_patho.txt
+21155065 dbSNP/GRCh38.p13/ID_of_common_snp_not_clinvar_patho.txt
+$ wc -l ../data-alexis/dbSNP/ID_of_common_snp_not_clinvar_patho.txt
+21155065 ../data-alexis/dbSNP/ID_of_common_snp_not_clinvar_patho.txt
+La différence vient probablement d'une vieille version de clinvar
 *** TODO alignement + variant:
   Alexis : 886164
   nouveau : 958401
