@@ -1,6 +1,27 @@
 #+title: Electrophorese_proteine
 * Description
+Méthode servant à séparer les particules chargées avec un champ électrique. La vitesse de déplacement dépend des caractéristiques de la particule et du milieu.
+
+L’électrophorèse peut se faire sur capillaire (Silice) ou sur gel d’ascarose.
+[[./electrophores-capillaire.png]]
 * Points forts
+- séparation rapide des protéines
+- excellente résolution et reproductibilité
 * Points faibles
 * Interférences
+- Hémoglobine: hémolyse intra-vasculaire
+- Fibrinogène : traiement héparine, trouble de coagulation...
+- CRP
+
+Sur capillaire  uniquement : antibiotique, produits de contraste, produits de remplissage
+# - Albumine
+  # - fausse bisalbuminémie : hyperlipidémie, vitamine B12, hyprbilirubinémie, anomalie monoclonale
+  # - hyper : perfusion plasma/albumine,
+  # - hypo: hémodilation, insuffisance d’apport ou de synthèse (hépatocellulaire), inflammatation, pertes urinaire, digestives, cutanées, hypercatabolisme (Cushing, hyperthyroïdie)
+# - fibrinogène, hémolyse, produit de contraste iodé
 * Paramètres représentatifs
+- \alpha_1 globuline
+- \alpha_2 globuline
+- \beta_1 globuline
+- \beta_2 globuline
+- \gamma globuline
