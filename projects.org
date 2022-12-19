@@ -163,6 +163,37 @@ CLOSED: [2022-12-03 Sat 12:35] SCHEDULED: <2022-10-01 Sat>
 envoyé le <2022-10-11 Tue>
 ** NF1 :nf1:
 *** Notes
+**** Cancers sans double hits ?
+Liste des tumeurs somatiques : pas d’hépatoblastome https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5480124/
+
+[9] eoli2019: ne parle que du biallelique
+***** Double hit
+" the majority of NF1-associated tumours exhibit biallelic inactivation of NF1 [9, 10]."
+
+[10] = knudson
+[9] = brehms2009:
+| Non nervous           | Gastrointestinal stromal tumour          | Second hit NF1 and some copy number alterations [15]                                              |
+|                       | Somatostatinoma                          | ?                                                                                                 |
+|                       | Phaeochromocytoma                        | Second hit NF1 [16-18]                                                                            |
+|                       | Breast cancer                            | ?                                                                                                 |
+|                       | Rhabdomyosarcoma                         | ?                                                                                                 |
+|-----------------------+------------------------------------------+---------------------------------------------------------------------------------------------------|
+| Nervous system tumour | Astrocytoma                              | Second hit NF1, mutation in TP53, deletion of CDKN2A                                              |
+|                       | Malignant peripheral nerve-sheath tumour | Second hit NF1, multiple copy number alterations, mutation in TP53, deletion of CDKN2A [24,25-27] |
+|                       | Neuroblastoma                            | Second hit NF1, amplification of MYCN, deletion of 1p36 [28,29]                                   |
+
+
+Loss of heterozygosity of the NF1 region has been identified in phaeochromocytomas from patients with NF1.16,17 Bausch and colleagues18 noted somatic loss of the non-mutated NF1 allele in 67% of phaeochromocytomas in patients with NF1 with an identified germline mutation.
+
+- Pour les gliomes, double hit :https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6857804/ -> "As expected, we found that multiple clones for each tumor contained only the germline or somatic mutation, indicating that the two mutations reside on different alleles"
+
+
+***** Single hit
+Fischer2021 https://doi.org/10.1007/s00401-021-02276: "a somatic abnormality in the second NF1 allele was not found in 3 samples (two with FGFR1 + PIK3CA mutations, one with a MYB:QKI alteration). This suggests that in rare cases, glioma pathogenesis in the context of NF1 may not dependent on loss of the second NF1 allele, as reported for a young adult with NF1 and a malignant glioma [30]"
+
+La référence pointe vers Wong2019 93:1-3. doi:10.1212/WNL.0000000000008623 avec autopsy + philogeny pour ordre des variations
+"This molecular ontology analysis provides a proof-of-concept demonstration that some gliomagenesis-associated events (i.e., KMT2B mutation/amplification) occur before NF1 biallelic inactivation and may be sufficient to drive gliomagenesis in an NF1 heterozygous backgroun"
+
 **** notre patiente
 - mutations drivers : CTNNB1, TERT et gain de méthylation 11p15 retrouvé dans [cite:@hirsch2021]
 - 1 mutation NF1 constit retrouvée en somatique (tumeur + métastase)
