@@ -5676,6 +5676,12 @@ Aerial, bkick
  - Negative 5
  - Heel pull 10
  - L freestand 10
+* <2022-12-11 Sun> Handstand
+ - Chest-to-wall
+ - Toe pull
+ - Negative
+ - Heel pull  14
+ - L freestand
 * <2022-12-13 Tue> Handstand
  - Chest-to-wall 60s
  - Toe pull 12
