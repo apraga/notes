@@ -29,6 +29,15 @@ https://genome.ucsc.edu/FAQ/FAQdownloads.html#downloadAlt
 ** Pipelines prêt-à-l’emploi nextflow
 Problème : nécessite singularity ou docker (ou conda)
 Potentiellement utilisable avec nix...
+* Données
+** TODO Vérifier qualité données sur mesocentre
+*** STRT BAM
+picard ValidateSamFile
+On regarde juste le code d'erreur (0 = pas d'erreur)
+*** STRT Fastq
+fastqc
+Il faut ensuite extraire les zip and chercher les erreur dedans
+** TODO Lister données sur mesocentre
 * Nouveau workflow
 ** TODO Bases de données
 *** KILL Nix pour télécharger les données brutes
@@ -1059,10 +1068,21 @@ $ wc -l ../data-alexis/dbSNP/ID_of_common_snp_not_clinvar_patho.txt
 21155065 ../data-alexis/dbSNP/ID_of_common_snp_not_clinvar_patho.txt
 La différence vient probablement d'une vieille version de clinvar
 *** TODO alignement + variant:
-  Alexis : 886164
-  nouveau : 958401
-  Vient du génome de référence ??
+On en a en plus
+$ grep '^NC' filter-depth.vcf | wc -l
+86580
 
+Alexis
+$  zgrep '^NC' 63003856_S135_DP_over_30.vcf  | wc -l
+82033
+
+Ne vient pas du filtre sur la profondeur
+On a testé
+bcftools filter -i 'FORMAT/AD[0:1]<=10' 63003856_S135_DP_over_30.vcf
+cftools filter -i 'FORMAT/DP<=30' 63003856_S135_DP_over_30.vcf
+Idem pour notre version. Rien ne sort.
+
+Haplotypecaller a les même arguments ??
 *** TODO 63003856_S135
 ** Divers
 *** DONE Vérifier nombre de reads fastq - bam
