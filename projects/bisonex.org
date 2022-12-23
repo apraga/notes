@@ -30,14 +30,19 @@ https://genome.ucsc.edu/FAQ/FAQdownloads.html#downloadAlt
 Problème : nécessite singularity ou docker (ou conda)
 Potentiellement utilisable avec nix...
 * Données
-** TODO Vérifier qualité données sur mesocentre
-*** STRT BAM
+** DONE Vérifier qualité données sur mesocentre
+*** DONE BAM
 picard ValidateSamFile
 On regarde juste le code d'erreur (0 = pas d'erreur)
-*** STRT Fastq
+*** DONE Fastq
 fastqc
 Il faut ensuite extraire les zip and chercher les erreur dedans
-** TODO Lister données sur mesocentre
+** DONE Lister données sur mesocentre
+<2022-12-23 ven.>
+176 patients ok
+Données manquantes :
+- 5 avec juste 1 fastq  sur les 2 sans bam
+- 19 patients sans fastq ni bam
 * Nouveau workflow
 ** TODO Bases de données
 *** KILL Nix pour télécharger les données brutes
@@ -395,7 +400,7 @@ clinvar=clinvar_chr20_patho.vcf.gz
 snp=dbSNP_common_chr20.vcf.gz
 bcftools index $clinvar
 bcftools index $snp
-bcftools filter -i 'INFO/CLNSIG="Pathogenic"' clinvar_chr20.vcf.gz -o $clinvar
+bcftools filter -i 'INFO/CLNSIG="Pathogenic"' clinvar_chr20.vcf.gz -o $clinvar
 bcftools isec  $snp $clinvar -p tmp
 for i in tmp/*.vcf ; do echo $i; grep '^[^#]'  $i | wc -l; done
 #+end_src
@@ -1068,6 +1073,7 @@ $ wc -l ../data-alexis/dbSNP/ID_of_common_snp_not_clinvar_patho.txt
 21155065 ../data-alexis/dbSNP/ID_of_common_snp_not_clinvar_patho.txt
 La différence vient probablement d'une vieille version de clinvar
 *** TODO alignement + variant:
+**** filtre DP : différent
 On en a en plus
 $ grep '^NC' filter-depth.vcf | wc -l
 86580
@@ -1083,7 +1089,30 @@ cftools filter -i 'FORMAT/DP<=30' 63003856_S135_DP_over_30.vcf
 Idem pour notre version. Rien ne sort.
 
 Haplotypecaller a les même arguments ??
+**** Après haplotypecaller : différent
+$ zgrep '^NC' /Work/Groups/bisonex/ref-vcf/63003856_S135.vcf | wc -l
+1506894
+$ zgrep '^NC' /Work/Users/apraga/bisonex/out/63003856_S135/variantCalling/haplotypecaller/63003856_S135.vcf | wc -l
+1631935
+**** Aligneur
+3 lignes de différences
+$  samtools view -c /Work/Users/apraga/bisonex/out/63003856_S135/preprocessing/mapped/63003856_S135.bam
+128077211
+$  samtools view -c /Work/Groups/bisonex/ref_63003856_S135/63003856_S135.bam
+128077207
+**** Clean sam
+corrigé bug : fichier nettoyé après markduplicates... On relance. En attendant :
+$ samtools view -c work/3f/532cde42fabd8973384a817b7539de/sorted.bam
+85710928
+$ samtools view -c work/3f/532cde42fabd8973384a817b7539de/62903840_S29.bam
+85710928
+
+mais :
+$ samtools view -c /Work/Groups/bisonex/ref_63003856_S135/63003856_S135_cleaned.bam           128077207
+
+$ samtools view -c /Work/Groups/bisonex/ref_63003856_S135/63003856_S135.bam                   128077207
 *** TODO 63003856_S135
+
 ** Divers
 *** DONE Vérifier nombre de reads fastq - bam
 CLOSED: [2022-10-09 Sun 22:31]
