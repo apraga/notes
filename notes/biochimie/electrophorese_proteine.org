@@ -1,27 +1,28 @@
-#+title: Electrophorese_proteine
+#+title: Electrophorèse des protéines
 * Description
-Méthode servant à séparer les particules chargées avec un champ électrique. La vitesse de déplacement dépend des caractéristiques de la particule et du milieu.
+Méthode servant à séparer les différentes protéines dans le sang ou les urines avec un champ électrique. La vitesse de déplacement dépend des caractéristiques de la protéine et du milieu.
 
-L’électrophorèse peut se faire sur capillaire (Silice) ou sur gel d’ascarose.
-[[./electrophores-capillaire.png]]
+L’électrophorèse peut se faire sur capillaire (automatisée) ou sur gel d’ascarose (semi-automatisée). Pour cette dernière, les protéines sont séparées en 5 fractions et analysées par densitométrie après coloration.
+# [[./electrophores-capillaire.png]]
 * Points forts
 - séparation rapide des protéines
 - excellente résolution et reproductibilité
 * Points faibles
+- technique semi-quantitative
+- impossibilité de différencier 2 pics superposés
 * Interférences
 - Hémoglobine: hémolyse intra-vasculaire
-- Fibrinogène : traiement héparine, trouble de coagulation...
-- CRP
+- Fibrinogène : prélèvement sur anticoagulant ou insuffisamment coagulé (pic en \gamma précoce).
+- CRP \gt 100 à 150 mg/L
 
 Sur capillaire  uniquement : antibiotique, produits de contraste, produits de remplissage
-# - Albumine
-  # - fausse bisalbuminémie : hyperlipidémie, vitamine B12, hyprbilirubinémie, anomalie monoclonale
-  # - hyper : perfusion plasma/albumine,
-  # - hypo: hémodilation, insuffisance d’apport ou de synthèse (hépatocellulaire), inflammatation, pertes urinaire, digestives, cutanées, hypercatabolisme (Cushing, hyperthyroïdie)
-# - fibrinogène, hémolyse, produit de contraste iodé
 * Paramètres représentatifs
-- \alpha_1 globuline
-- \alpha_2 globuline
-- \beta_1 globuline
-- \beta_2 globuline
-- \gamma globuline
+- sang : albumine, apha-1-globulines, alpha-2-globulines, bêta-globulines et gamma-globulines
+- urines: Albumine, microprotéines, transferrine et globulines
+Sur le sang, l'objectif est de chercher une dysglobulinémie monoclonale.
+* Immunofixation
+Elle complète l'électrophorèse des protéines résique pour la détection d'une immunoglobuline monoclonale.
+
+IL s'agit d'une technique par immunoprécicipitation sur un gel contenant des pistes prédéfinies contentant des échantillons de dilutions différentes. L'immunoglobune va précipiter sur le gel et être mise en évidence par une coloration et un lavage.
+
+Les difficultés d'interprétation sont les excès d'antigène ou anticorps, la présence d'immunoglobuline polymérisées, de cryoglobuline.
