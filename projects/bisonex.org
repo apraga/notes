@@ -698,6 +698,7 @@ Besoin de vep
 
 * TODO Tests
 ** TODO Test de non régression avec version ALexis avec nix
+
 *** DONE ID common snp
 CLOSED: [2022-11-19 Sat 21:36]
 #+begin_src
@@ -1067,7 +1068,8 @@ $ wc -l dbSNP/GRCh38.p13/ID_of_common_snp_not_clinvar_patho.txt
 $ wc -l ../data-alexis/dbSNP/ID_of_common_snp_not_clinvar_patho.txt
 21155065 ../data-alexis/dbSNP/ID_of_common_snp_not_clinvar_patho.txt
 La différence vient probablement d'une vieille version de clinvar
-*** TODO alignement + variant:
+*** TODO alignement + variant 63003856_S135
+**** Après filtre profondeur: trop de lignes
 On en a en plus
 $ grep '^NC' filter-depth.vcf | wc -l
 86580
@@ -1083,7 +1085,72 @@ cftools filter -i 'FORMAT/DP<=30' 63003856_S135_DP_over_30.vcf
 Idem pour notre version. Rien ne sort.
 
 Haplotypecaller a les même arguments ??
-*** TODO 63003856_S135
+**** TODO Alignement
+***** DONE Brut
+CLOSED: [2022-12-26 Mon 22:03]
+Bam alexis
+$ samtools view -c /Work/Groups/bisonex/ref_63003856_S135/63003856_S135.bam
+128077207
+
+Notre
+9f/26cf3d] Cached process > preprocess:BWA_MEM (63003856_S135)
+$ samtools view -c work/9f/26cf3deb07b425a3e851be2a7bd782/63003856_S135.bam
+
+On vérifie la sortie
+$ samtools view -c out/63003856_S135/preprocessing/mapped/63003856_S135.bam
+128077211
+
+Petite différence (< 1e-8) mais selon Alexis, bwa mem est non reproductible. d'autant qu'on utilise une version parallélisée
+128077211
+
+On vérifie les arguments: ok
+***** DONE Nettoyé
+CLOSED: [2022-12-26 Mon 22:08]
+On regarde les stats en détails (de la version nettoyée)
+
+[57/4b5b4c] Cached process > preprocess:GATK4_CLEANSAM (63003856_S135)
+$ samtools view -c work/57/4b5b4c647b98bb7099c4d1ba24bd75/63003856_S135.bam
+128077211
+
+Et la sortie
+$ samtools view -c out/63003856_S135/preprocessing/clean-sam/sorted.bam
+128077211
+
+$ samtools  flagstat work/57/4b5b4c647b98bb7099c4d1ba24bd75/63003856_S135.bam
+128077211 + 0 in total (QC-passed reads + QC-failed reads)
+126905130 + 0 primary
+0 + 0 secondary
+1172081 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+127941054 + 0 mapped (99.89% : N/A)
+126768973 + 0 primary mapped (99.89% : N/A)
+126905130 + 0 paired in sequencing
+63452565 + 0 read1
+63452565 + 0 read2
+125263664 + 0 properly paired (98.71% : N/A)
+126676024 + 0 with itself and mate mapped
+92949 + 0 singletons (0.07% : N/A)
+979608 + 0 with mate mapped to a different chr
+675398 + 0 with mate mapped to a different chr (mapQ>=5)
+
+$ samtools flagstat /Work/Groups/bisonex/ref_63003856_S135/63003856_S135_cleaned.bam
+128077207 + 0 in total (QC-passed reads + QC-failed reads)
+126905130 + 0 primary
+0 + 0 secondary
+1172077 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+127941051 + 0 mapped (99.89% : N/A)
+126768974 + 0 primary mapped (99.89% : N/A)
+126905130 + 0 paired in sequencing
+63452565 + 0 read1
+63452565 + 0 read2
+125263790 + 0 properly paired (98.71% : N/A)
+126676026 + 0 with itself and mate mapped
+92948 + 0 singletons (0.07% : N/A)
+979618 + 0 with mate mapped to a different chr
+675412 + 0 with mate mapped to a different chr (mapQ>=5)
 ** Divers
 *** DONE Vérifier nombre de reads fastq - bam
 CLOSED: [2022-10-09 Sun 22:31]
