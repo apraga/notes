@@ -1,4 +1,30 @@
 #+title: Bisonex
+* Biblio
+Comparaison WDL, Cromwell, nextflow
+https://www.nature.com/articles/s41598-021-99288-8
+Nextflow = bon compromis ?
+* Idées
+** Validation analytique
+*** Génération de reads avec variants connus
+Comparaison de génération ADN (2019)
+https://academic.oup.com/bfg/article/19/1/49/5680294
+**** SimuSCop
+https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03665-5
+https://github.com/qasimyu/simuscop
+1. Crééer un modèle depuis bam + vcf : Setoprofile
+2. Génerer données NGS
+*** Utiliser données GCAT et uploader le notre ?
+https://www.nature.com/articles/ncomms7275
+*** Genome in a bottle : NA12878 + autres
+2 versions :
+1. Depuis un fastq correspondant à Illumina  https://github.com/genome-in-a-bottle/giab_data_indexes
+   puis on compare le VCF avec les "high confidence" (Article : https://www.nature.com/articles/s41587-019-0054-x
+     )
+   - methode https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/NA12878/analysis/Illumina_PlatinumGenomes_NA12877_NA12878_09162015/IlluminaPlatinumGenomes-user-guide.pdf
+   - vcf https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/NA12878/analysis/Illumina_PlatinumGenomes_NA12877_NA12878_09162015/hg38/2.0.1/NA12878/
+2. On séquence directement NA12878
+* Changement nouvelle version
+- Dernière version du génome (la version "prête à l'emploi" est seulement GRCh38 sans les version patchées)
 * Notes
 ** Nextflow
 *** afficher les résultats d'un process/workflow
@@ -13,13 +39,6 @@ ou si /a/ est le nom de la sortie
 #+begin_src
 lol.out.a.view()
 #+end_src
-* Biblio
-Comparaison WDL, Cromwell, nextflow
-https://www.nature.com/articles/s41598-021-99288-8
-Nextflow = bon compromis ?
-* Changement nouvelle version
-- Dernière version du génome (la version "prête à l'emploi" est seulement GRCh38 sans les version patchées)
-* Notes
 ** Quelle version du génome ?
 Il y a 2 notations pour les chrosome: Refseq (NC_0001) ou chr1, chr2...
 dbSNP utilise Refseq
@@ -652,6 +671,8 @@ Revoir si on peut utliser kent dernière version
 Contribuer pull request
 *** HOLD rtg-tools
 Convertir clinvar NC
+*** DONE simuscop
+CLOSED: [2022-12-30 Fri 22:31]
 *** DONE Spip
 CLOSED: [2022-12-04 Sun 12:49]
 Pas de pull request
@@ -708,7 +729,22 @@ Problème avec liste des ID
 Besoin de vep
 
 *** TODO Variant calling
-
+** TODO MAJ avec picard
+Normalement, GATK inclut picard mais la dernière version utilise picard pour certains outils
+https://gatk.broadinstitute.org/hc/en-us/articles/9570266920219--Tool-Documentation-Index
+A compléter après validation
+*** TODO markduplicates
+La dernière version dans la documentation utilise picard !!
+** TODO Parallélisation haplotypecaller
+spark est en beta, ne pas utiliser
+parallélisation du pauvre : se restreindre à un chromosome avec -L et paralléliser sur le nombre de chromosome
+** KILL CRAM au lieu de SAM ?
+CLOSED: [2022-12-30 Fri 20:38]
+Version compressée de bam mais :
+#+begin_quote
+All GATK tools that take in mapped read data expect a BAM file as primary format. Some support the CRAM format, but we have observed performance issues when working directly from CRAM files, so in our own work we convert CRAM to BAM first, and we only use CRAM for archival purposes
+#+end_quote
+Source: https://gatk.broadinstitute.org/hc/en-us/articles/360035890791-SAM-or-BAM-or-CRAM-Mapped-sequence-data-formats
 * TODO Tests
 ** TODO Test de non régression avec version ALexis avec nix
 
@@ -1174,11 +1210,6 @@ Nous (pas de sortie dans out/)
 $ samtools view -c  work/46/bd75b4547452af36ee2c6b45362
 922/63003856_S135
 128077211
-** TODO Test analytique : SimuSCop
-https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03665-5
-https://github.com/qasimyu/simuscop
-*** TODO Crééer un modèle depuis bam + vcf : Setoprofile
-*** TODO Génerer données NGS
 ** Divers
 *** DONE Vérifier nombre de reads fastq - bam
 CLOSED: [2022-10-09 Sun 22:31]
