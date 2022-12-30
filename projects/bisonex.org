@@ -1,5 +1,18 @@
 #+title: Bisonex
-
+* Notes
+** Nextflow
+*** afficher les résultats d'un process/workflow
+#+begin_src
+lol.out.view()
+#+end_src
+Attention, ne fonctionne pas si plusieurs sortie:
+#+begin_src
+lol.out[0].view()
+#+end_src
+ou si /a/ est le nom de la sortie
+#+begin_src
+lol.out.a.view()
+#+end_src
 * Biblio
 Comparaison WDL, Cromwell, nextflow
 https://www.nature.com/articles/s41598-021-99288-8
@@ -1151,6 +1164,21 @@ $ samtools flagstat /Work/Groups/bisonex/ref_63003856_S135/63003856_S135_cleaned
 92948 + 0 singletons (0.07% : N/A)
 979618 + 0 with mate mapped to a different chr
 675412 + 0 with mate mapped to a different chr (mapQ>=5)
+***** DONE mark duplicate
+CLOSED: [2022-12-26 Mon 22:27]
+Alexis
+$ samtools view -c /Work/Groups/bisonex/ref_63003856_S135/63003856_S135_marked_dup.bam
+128077207
+
+Nous (pas de sortie dans out/)
+$ samtools view -c  work/46/bd75b4547452af36ee2c6b45362
+922/63003856_S135
+128077211
+** TODO Test analytique : SimuSCop
+https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03665-5
+https://github.com/qasimyu/simuscop
+*** TODO Crééer un modèle depuis bam + vcf : Setoprofile
+*** TODO Génerer données NGS
 ** Divers
 *** DONE Vérifier nombre de reads fastq - bam
 CLOSED: [2022-10-09 Sun 22:31]
