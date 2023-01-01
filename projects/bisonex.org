@@ -688,10 +688,10 @@ Probablement plus simple d’utiliser Nix pour gestion de l’environnement et s
 Pas d’accès internet depuis le cluster
 *** DONE nextflow
 CLOSED: [2022-09-13 Tue 21:37]
-** DONE Preprocessing avec nextflow
-CLOSED: [2022-10-09 Sun 22:30]
-*** DONE Map to reference
-CLOSED: [2022-10-09 Sun 22:30]
+** TODO Preprocessing avec nextflow
+*** TODO Map to reference
+**** TODO Sample ID dans header
+/Work/Users/apraga/bisonex/out/63003856_S135/preprocessing/baserecalibrator
 *** DONE Mark duplicate
 CLOSED: [2022-10-09 Sun 22:30]
 *** DONE Recalibrate base quality score
@@ -735,6 +735,8 @@ https://gatk.broadinstitute.org/hc/en-us/articles/9570266920219--Tool-Documentat
 A compléter après validation
 *** TODO markduplicates
 La dernière version dans la documentation utilise picard !!
+** TODO Bwa-mem2 au lieu de bwa mem
+https://github.com/bwa-mem2/bwa-mem2
 ** TODO Parallélisation haplotypecaller
 spark est en beta, ne pas utiliser
 parallélisation du pauvre : se restreindre à un chromosome avec -L et paralléliser sur le nombre de chromosome
@@ -747,7 +749,6 @@ All GATK tools that take in mapped read data expect a BAM file as primary format
 Source: https://gatk.broadinstitute.org/hc/en-us/articles/360035890791-SAM-or-BAM-or-CRAM-Mapped-sequence-data-formats
 * TODO Tests
 ** TODO Test de non régression avec version ALexis avec nix
-
 *** DONE ID common snp
 CLOSED: [2022-11-19 Sat 21:36]
 #+begin_src
@@ -1117,23 +1118,28 @@ $ wc -l dbSNP/GRCh38.p13/ID_of_common_snp_not_clinvar_patho.txt
 $ wc -l ../data-alexis/dbSNP/ID_of_common_snp_not_clinvar_patho.txt
 21155065 ../data-alexis/dbSNP/ID_of_common_snp_not_clinvar_patho.txt
 La différence vient probablement d'une vieille version de clinvar
-*** TODO alignement + variant 63003856_S135
-**** Après filtre profondeur: trop de lignes
-On en a en plus
-$ grep '^NC' filter-depth.vcf | wc -l
-86580
+*** TODO 63003856_S135
+**** Notes
+Actuellement
+| Étapes           | Production |      Test |
+|------------------+------------+-----------|
+| bwa mem          |  128077207 | 128077211 |
+| haplotype caller |    1506894 |   1631935 |
+| filterdepth      |      82033 |     82054 |
+#
+**** HOLD Version de non-régression
+Haplotype caller a planté, on relance
 
-Alexis
-$  zgrep '^NC' 63003856_S135_DP_over_30.vcf  | wc -l
-82033
+$ samtools view -c files/tmp_63003856_S135/63003856_S135.bam
+128076728
 
-Ne vient pas du filtre sur la profondeur
-On a testé
-bcftools filter -i 'FORMAT/AD[0:1]<=10' 63003856_S135_DP_over_30.vcf
-cftools filter -i 'FORMAT/DP<=30' 63003856_S135_DP_over_30.vcf
-Idem pour notre version. Rien ne sort.
+au lieu de
+$ samtools view -c /Work/Groups/bisonex/ref_63003856_S135/63003856_S135.bam
+128077207
 
-Haplotypecaller a les même arguments ??
+**** TODO Comparer les versions (log)
+- outils
+- base de données
 **** TODO Alignement
 ***** DONE Brut
 CLOSED: [2022-12-26 Mon 22:03]
@@ -1153,9 +1159,21 @@ Petite différence (< 1e-8) mais selon Alexis, bwa mem est non reproductible. d'
 128077211
 
 On vérifie les arguments: ok
+#+begin_src
+bwa mem \
+    -R '@RG\tID:sample\tSM:sample\tPL:ILLUMINA\tPM:Miseq\tCN:CHU_Minjoz\tLB:definition_to_add' \
+    -t 24 \
+    $INDEX \
+    63003856_S135_R1_001.fastq.gz 63003856_S135_R2_001.fastq.gz \
+    | samtools sort  --threads 24 -o 63003856_S135.bam -
+#+end_src
+
+#+begin_src
+bwa mem -R "@RG\tID:$sample\tSM:$sample\tPL:ILLUMINA\tPM:Miseq\tCN:CHU_Minjoz\tLB:definition_to_add" -v 2 -t `nproc` $genomeRef ${fastq[0]} ${fastq[1]} | $samtools sort -@ `nproc` -O BAM -o $tmpDir/$post_bwa
+#+end_src
+
 ***** DONE Nettoyé
 CLOSED: [2022-12-26 Mon 22:08]
-On regarde les stats en détails (de la version nettoyée)
 
 [57/4b5b4c] Cached process > preprocess:GATK4_CLEANSAM (63003856_S135)
 $ samtools view -c work/57/4b5b4c647b98bb7099c4d1ba24bd75/63003856_S135.bam
@@ -1165,6 +1183,11 @@ Et la sortie
 $ samtools view -c out/63003856_S135/preprocessing/clean-sam/sorted.bam
 128077211
 
+contre
+$ samtools view -c /Work/Groups/bisonex/ref_63003856_S135/63003856_S135_cleaned.bam
+128077207
+
+On regarde les stats en détails (de la version nettoyée)
 $ samtools  flagstat work/57/4b5b4c647b98bb7099c4d1ba24bd75/63003856_S135.bam
 128077211 + 0 in total (QC-passed reads + QC-failed reads)
 126905130 + 0 primary
@@ -1207,18 +1230,163 @@ $ samtools view -c /Work/Groups/bisonex/ref_63003856_S135/63003856_S135_marked_d
 128077207
 
 Nous (pas de sortie dans out/)
-$ samtools view -c  work/46/bd75b4547452af36ee2c6b45362
-922/63003856_S135
+$ samtools view -c  work/46/bd75b4547452af36ee2c6b45362922/63003856_S135
 128077211
+
+logique car on ne supprime pas de donné...
+
+Arguments ok
+#+begin_src
+gatk --java-options "-Xmx3g" MarkDuplicates \
+    --INPUT sorted.bam \
+    --OUTPUT marked_dups.bam \
+    --METRICS_FILE marked_dups.bam.metrics \
+    --TMP_DIR . \
+    --REFERENCE_SEQUENCE genomeRef.fna \
+#+end_src
+
+#+begin_src
+			$gatk MarkDuplicates \
+			-I $tmpDir/$post_cleanSam \
+			-O $tmpDir/$post_markDuplicate \
+			-M $tmpDir/"$sample"_marked_dup.metrix \
+			--CREATE_INDEX true \
+			--VERBOSITY WARNING
+#+end_src
+***** TODO baserecalibrator
+options ok
+#+begin_src
+gatk --java-options "-Xmx3g" BaseRecalibrator  \
+    --input marked_dups.bam \
+    --output 63003856_S135.table \
+    --reference genomeRef.fna \
+     \
+    --known-sites dbSNP_common.vcf.gz \
+    --tmp-dir . \
+#+end_src
+
+#+begin_src
+			$gatk BaseRecalibrator \
+			-I $tmpDir/$post_markDuplicate \
+			-R $genomeRef \
+			--known-sites $dbsnpDir/dbSNP_common.vcf.gz \
+			-O $tmpDir/$post_BaseRecalibrator
+#+end_src
+
+$ cd /Work/Users/apraga/bisonex/out/63003856_S135/preprocessing/baserecalibrator
+$ sed 's/sample/63003856_S135/' 63003856_S135.table  > 63003856_S135.table2
+
+Les fichiers n'ont pas le même nombre d'erreurs mais assez proches. Sur le premier table, 3 score
+#:GATKTable:3:94:%d:%d:%d:;
+#:GATKTable:Quantized:Quality quantization map
+QualityScore  Count        QuantizedScore
+          11    298878631              11
+          25    542282996              25
+          34  12846268833              34
+
+vs (référence0)
+
+          11    298877785              11
+          25    542282089              25
+          34  12846264839              34
+***** TODO applybqsr
+options ok
+#+begin_src
+gatk --java-options "-Xmx3g" ApplyBQSR \
+    --input marked_dups.bam \
+    --output 63003856_S135.bam \
+    --reference genomeRef.fna \
+    --bqsr-recal-file 63003856_S135.table \
+     \
+    --tmp-dir . \
+#+end_src
+#+begin_src
+			$gatk ApplyBQSR -R $genomeRef \
+			 -I $tmpDir/$post_markDuplicate \
+			 --bqsr-recal-file $tmpDir/$post_BaseRecalibrator \
+			 -O $bamDir/$post_ApplyBQSR \
+			 --verbosity WARNING
+#+end_src
+missing file
+***** TODO haplotypecaller
+options ok
+#+begin_src
+gatk --java-options "-Xmx3g" HaplotypeCaller \
+    --input 63003856_S135.bam \
+    --output 63003856_S135.vcf.gz \
+    --reference genomeRef.fna \
+    --dbsnp dbSNP.gz \
+     \
+     \
+    --tmp-dir . \
+    --max-mnp-distance 2
+#+end_src
+#+begin_src
+		$gatk --java-options "-Xmx32g" HaplotypeCaller \
+		-R $genomeRef \
+		-I $bamDir/$post_ApplyBQSR \
+		-O $vcfDir/$post_haplotypecaller \
+		-D "$dbsnpDir"/GCF_000001405.39.gz \
+		--max-mnp-distance 2 \
+		--verbosity WARNING
+#+end_src
+
+$ grep '^NC' out/63003856_S135/variantCalling/haplotypecaller/63003856_S135.vcf | wc -l
+1631935
+
+$ grep '^NC' /Work/Groups/bisonex/ref-vcf/63003856_S135 .vcf | wc -l
+1506894
+**** variant calling
+***** TODO filterDepth : 21 en trop
+Nouvelle version (correcton bug markdupicates)
+#+begin_src sh
+grep '^NC' out/63003856_S135/variantCalling/filter-depth.vcf  |wc -l
+82054
+#+end_src
+
+Alexis
+#+begin_src sh
+zgrep '^NC' /Work/Groups/bisonex/ref_63003856_S135/63003856_S135_DP_over_30.vcf  | wc -l
+82033
+#+end_src
+
+Ne vient pas du filtre sur la profondeur:
+bcftools filter -i 'FORMAT/AD[0:1]<=10' 63003856_S135_DP_over_30.vcf
+bcftools filter -i 'FORMAT/DP<=30' 63003856_S135_DP_over_30.vcf
+Idem pour notre version. Rien ne sort.
+
+On compare le nombre de lignes
+#+begin_src sh
+bgzip out/63003856_S135/variantCalling/filter-depth.vcf
+tabix /Work/Groups/bisonex/ref_63003856_S135/63003856_S135_DP_over_30.vcf.gz
+tabix out/63003856_S135/variantCalling/filter-depth.vcf.gz
+bcftools isec out/63003856_S135/variantCalling/filter-depth.vcf.gz /Work/Groups/bisonex/ref_63003856_S135/63003856_S135_DP_over_30.vcf.gz -p compare-filter-depth
+find compare-filter-depth/ -type f -exec wc -l {} \;
+
+84763 compare-filter-depth/sites.txt
+710 compare-filter-depth/0001.vcf
+8 compare-filter-depth/README.txt
+85339 compare-filter-depth/0002.vcf
+85340 compare-filter-depth/0003.vcf
+725 compare-filter-depth/0000.vcf
+#+end_src
+***** TODO exclude SNP + consensual : 34 en trop !!
+$ grep '^NC' out/63003856_S135/variantCalling/filter-polymorphisms.vcf  | wc -l
+8898
+vs
+
+$ grep '^NC' /Work/Groups/bisonex/ref_63003856_S135/63003856_S135_DP_over_30_not_SNP_consensual_sequence.vcf | wc -l
+8864
+***** TODO Filter technical variants
+
 ** Divers
 *** DONE Vérifier nombre de reads fastq - bam
 CLOSED: [2022-10-09 Sun 22:31]
-** TODO Genome in a bottle ?
-On n'a pas l'ADN.. séquencer à Centogène ?
 * Améliorations
 ** TODO Quality score recalibration avec un ensemble de fichier
 Voir GATK best practice
-** TODO Utiliser T-to-T comme références
+** KILL Utiliser T-to-T comme références
+CLOSED: [2023-01-01 Sun 21:35]
 Semble compliqué avec les nouvelles bases de données
 ** TODO Macro excel
 ** TODO Utiliser le XML de clinvar
