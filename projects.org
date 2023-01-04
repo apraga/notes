@@ -23,11 +23,6 @@ La structure du  tableau est perdue dans tous les cas
 
 **** Parser
 Liste de parser : https://tomassetti.me/parsing-in-python/
-** Quillbot
-Possible d'utiliser selenium tout le long
-Mais si on copy lese cookies et headers depuis le navigateur:
-- on peut bypasser cloudflare (vu qu'on a le résultat)
-- mais au lieu d'avoir un json,  on a du binaire...
 ** TODO Amsteriskm
 *** Objectif
 Plus courte distance entre 2 films
@@ -37,7 +32,7 @@ Autres :  https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset
 Acteurs + crédits
 
 *** Outils
-Référende :
+Référence :
 https://medium.com/web-mining-is688-spring-2021/network-graphs-of-actors-based-on-popular-movies-in-common-69d30e7b5e07
 Faire le graphe + visualisation avec pandas + viscc + dash : https://towardsdatascience.com/visualizing-networks-in-python-d70f4cbeb259 (option 3)
 

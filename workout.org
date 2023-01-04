@@ -5728,3 +5728,12 @@ Compression: 3x10
  - L freestand 5
 * <2023-01-03 Tue> Running
 Sprint : 8x40s avec 2min repos
+* <2023-01-04 Wed> Workout
+- RTO: 32-15-13
+Skin-the-cat (avec descente): 3
+- Muscle-up (négatifs) 3x5
+Extension: 3x10
+- FL tucked row : 3x{3+1}
+Pistols : 4-5-5
+- Planche tucked push-up: 3x{5+3+2}
+Compression: 3x22
