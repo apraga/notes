@@ -1,0 +1,73 @@
+#+title: Gds
+* pH (GDS 1265 / RP500)
+** Valeurs de référence
+artériel : 7.37 - 7.45  adulte
+** Principe analytique de mesure
+ Potentiométrie avec électrode au chlorure d’argent
+** Localisation, rôle physiologique
+Le pH représente l’activité de l’ion hydrogène, qui reflète l’équilibre acide-base dans le sang.
+Le pH doit être régulé dans des marges étroites car des variations importantes peuvent rapidement avoir des conséquences délétères pour le métabolisme cellulaire, notamment sur le plan vasculaire.
+** Tissus/organes de production et d'élimination
+- Production: nombreuxs métabolismes (acides aminées, protéines...) ou issus de substances toxiques (méthanole, acide oxalique, acide formique)
+- Élimination: principalement par les poumons +/- reins, estomacs (vomissements...), intestin (diarrhée)
+** Principales interactions analytiques
+- Dilution si prélèvement sur cathéter
+- Tube EDTA, citrate, fluorure *proscrits*
+** Vigilance pré-analytiques et analytiques
+- Absence de caillot ou de bulle
+- Seringue/capillaire hépariné
+- 1mL minimum pour une seringue (si < 0.5, choisir une analyse), 100μL pour un capillaire
+** Augmentation et de diminution
+- Pathologique : l’orientation se  fait selon la formule $pH = pK + log(\frac{[HCO_3^{-}]}{pCO2})
+  - acidose métabolique
+  - une acidose peut être
+    - respiratoire (pCO2 élevé) d’origine pulmonaire ou non (voire fice pCO2)
+    - métabolique (diminution des bicarbonates) par 1. accumulation aigüe d’acide, 2. perte de bicarbonates ou 3. diminution de l’excrétion rénale d’acide (voire fiche bicarbonates)
+  - alcalose peut être respiratoire (pCO2 diminué) ou métabolique
+
+pCO2 artéiel : 35 - 46 mmHg (4.7 - 6.1 kPa) adulte
+pO2 artériel : 70 - 100 mmHg (9.5 - 13.3 kPa) adulte
+
+*  pCO2, pO2 (GDS 1265 / RP500)
+* Bicarbonates GDS 1265 / RP500 + Calcium Chimie ROCHE
+* Sodium GDS 1265 / RP500 + Chimie ROCHE
+** Interférence
+RP 500
+Substance Concentration testée Niveau d’interférence
+Dobutamine 5 mg/dl 6 mmol/la
+Héparine benzalkonium - > 50 mM
+Héparine Leo (1) 800-850 U/ml -12,6 mMc
+b. L’héparine Leo est un anticoagulant injectable renfermant 5000 U d’héparine/ml
+* Potassium GDS 1265 / RP500 + Chimie ROCHE
+RP 5000
+** Interférence
+
+Substance Concentration testée Niveau d’interférence
+Héparine benzalkonium - > 0,15 mM
+
+* Ca ionisé GDS 1265 / RP500 + Calcium Chimie ROCHE + Calcium corrigé Chimie ROCHE
+
+** Interférence
+RP 500
+Substances interférant avec le dosage du calcium
+Acide salicylique 50 mg/dl -0,098 mM (6 %)
+Acide salicylique 30 mg/dl -0,046 mM (3 %)
+
+Irenat (perchrlrate de sodium, traitement contre l’hyperthyroïde utilisée pour les médicaments de contraste pour rayon X): diminution artificienne
+-> mesure avant l’administration du médicament ou 96h après l’arrêt
+* Chlore GDS  1265 + Chimie ROCHE
+** Interférence
+RP500
+Acide salicylique 50 mg/dl 9,5 mmol/l
+Acide salicylique 20 mg/dl 1,8 mmol/l
+* Glucose GDS GDS 1265 / RP500 + Chimie ROCHE
+** Interférence
+RP500
+* Lactates GDS 1265 / RP500 + Chimie ROCHE + Chimie Abbott (pour les chimies Sg et LCR)
+
+* Hémoglobine Totale HBO2 Mthb HCO HHb SulfHB  GDS 1265 / RP500
+* Bilirubine GDS 1265
+
+* Lactates en même temps que GDS
+* Calcium ionisé Calcium, calcium corrigé et Albumine en même temps que GDS et calcium corrigé
+* Bicarbonates, Chlorures et Glucose en même temps que GDS
