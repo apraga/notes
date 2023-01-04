@@ -1,0 +1,5 @@
+#+title: Pco2
+
+
+pCO2 artéiel : 35 - 46 mmHg (4.7 - 6.1 kPa) adulte
+pO2 artériel : 70 - 100 mmHg (9.5 - 13.3 kPa) adulte

@@ -1203,7 +1203,9 @@ bwa mem \
 #+begin_src
 bwa mem -R "@RG\tID:$sample\tSM:$sample\tPL:ILLUMINA\tPM:Miseq\tCN:CHU_Minjoz\tLB:definition_to_add" -v 2 -t `nproc` $genomeRef ${fastq[0]} ${fastq[1]} | $samtools sort -@ `nproc` -O BAM -o $tmpDir/$post_bwa
 #+end_src
-
+****** DONE Avec gatk 4.2 (version alexis) : idem
+$ samtools view -c mapped/63003856_S135.bam
+128077211
 ****** DONE Nettoyé
 CLOSED: [2022-12-26 Mon 22:08]
 
