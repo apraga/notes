@@ -1127,26 +1127,39 @@ Actuellement
 | haplotype caller |    1506894 |   1631935 |
 | filterdepth      |      82033 |     82054 |
 #
-**** STRT Version de non-régression: sans télécharger les bases de données
 **** TODO Comparer les versions (log)
 ***** TODO bases de données
-****** Genome de référénce:
-fna ok
-#+begin_src sh :dir /ssh:meso:/Work/Groups/bisonex/
-sha256sum data-alexis-reference/genome/GRCh38_latest_genomic.fna
-sha256sum data/genome/GRCh38.p13/genomeRef.fna
-#+end_src
+****** DONE Genome de référénce:
+CLOSED: [2023-01-06 Fri 00:00]
+Version calculée
+$ find . -type f -name "genomeRef.*" -exec sh -c 'echo {}; sha256sum {}' \;
+e0761a7ba5d10de9e7e97fa331667963925531c0199575bcceafbb13c3147e3f  ./genomeRef.fna
+d121084c35037763ea58c59726545eaa1c11025a7bf2d75634677c72ddb72fd1  ./genomeRef.dict
+0a6e215314659929dbcdffc1881714e311e3d149bdc33978a6f5e28206fcc675  ./genomeRef.fna.fai
+45a4aa0d8dc1095d090b13e4df180763b2e24d133ec81f026beaead6d41ebafc  ./bwa/genomeRef.ann
+ac6e465f230da6d9f8339ebdf4cb05bcfc47d03f3a3889cae7256983c7809210  ./bwa/genomeRef.bwt
+058ffaf8cd38e7bc33c31e86e54e99869a8a4fbabb6737d7420d6b89e8b5988e  ./bwa/genomeRef.sa
+f665b64275eb76111463966bcb8e91e550c63c9b58263d43e19bae8552be2815  ./bwa/genomeRef.amb
+d0d3731d1203cb4a0d0dd1279c37c85480b85a91da2d1dc543ac391ff927c272  ./bwa/genomeRef.pac
 
-#+RESULTS:
-| e0761a7ba5d10de9e7e97fa331667963925531c0199575bcceafbb13c3147e3f | data-alexis-reference/genome/GRCh38_latest_genomic.fna |
-| e0761a7ba5d10de9e7e97fa331667963925531c0199575bcceafbb13c3147e3f | data/genome/GRCh38.p13/genomeRef.fna                   |
+Version de référence
+$ find . -type f -exec sh -c 'echo {}; sha256sum {}' \;
+
+e0761a7ba5d10de9e7e97fa331667963925531c0199575bcceafbb13c3147e3f  ./GRCh38_latest_genomic.fna
+dd87d628a8179fc1e37a33b99101eece8282bec88dc17b1998a07ff0b912d4a3  ./GRCh38_latest_genomic.fna.index
+0a6e215314659929dbcdffc1881714e311e3d149bdc33978a6f5e28206fcc675  ./GRCh38_latest_genomic.fna.fai
+974cc313146aedd9ec2ae3f86b382b1317180e078621c1d53e8a803d4ec0d3a9  ./GRCh38_latest_genomic.dict
+ac6e465f230da6d9f8339ebdf4cb05bcfc47d03f3a3889cae7256983c7809210  ./GRCh38_latest_genomic.fna.bwt
+45a4aa0d8dc1095d090b13e4df180763b2e24d133ec81f026beaead6d41ebafc  ./GRCh38_latest_genomic.fna.ann
+f665b64275eb76111463966bcb8e91e550c63c9b58263d43e19bae8552be2815  ./GRCh38_latest_genomic.fna.amb
+058ffaf8cd38e7bc33c31e86e54e99869a8a4fbabb6737d7420d6b89e8b5988e  ./GRCh38_latest_genomic.fna.sa
+d0d3731d1203cb4a0d0dd1279c37c85480b85a91da2d1dc543ac391ff927c272  ./GRCh38_latest_genomic.fna.pac
 
 Dict ok si on renome le ficdhier d'origine
 #+begin_src sh :dir /ssh:meso:/Work/Groups/bisonex/
 sed 's/UR:.*/UR:genomeRef.fna/' data-alexis-reference/genome/GRCh38_latest_genomic.dict  > lol.dict
 diff lol.dict data/genome/GRCh38.p13/genomeRef.dict
 #+end_src
-
 #+RESULTS:
 ****** DONE dbSNP et dbSNP common: ok
 CLOSED: [2023-01-03 Tue 23:17]
@@ -1162,11 +1175,12 @@ sha256sum dbSNP_common.vcf.gz
 sha256sum data-alexis-reference/dbSNP/dbSNP_common.vcf.gz
 70dfd9be859c39916598d23b5744cc1fbda04add5840cd90a6d0cd005bd3075b  data-alexis-reference/dbSNP/dbSNP_common.vcf.gz
 ***** TODO Outils
-|          |    Prod |    Test |
-| VCFtools |  0.1.17 |  0.1.16 |
-| bcftools |    1.14 |    1.16 |
-| samtools |    1.14 |    1.13 |
-| gatk     | 4.2.4.1 | 4.3.0.0 |
+|          |    Prod |         Test |
+| VCFtools |  0.1.17 |       0.1.16 |
+| bcftools |    1.14 |         1.16 |
+| samtools |    1.14 |         1.13 |
+| gatk     | 4.2.4.1 |      4.3.0.0 |
+| bwa      |       ? | 0.7.17-r1188 |
 On a des versions plus vieilles sauf (le plus important) Gatk
 
 **** KILL Gatk 4.3.0
@@ -1917,6 +1931,73 @@ $ grep '^NC' two-filters.vcf | wc -l
 82054
 ***** Tester bwa en séquentiel
 
+**** STRT (save) Version d'Alexis 24 threads, sans télécharger les bases de données, gatk 4.2.4.1
+***** Bwa mem 24 threads: comme la version test...
+$ cd /Work/Users/apraga/bisonex/script/files/tmp_63003856_S135
+$ samtools view -c 63003856_S135.bam
+128077211
+
+$ samtools view -c /Work/Groups/bisonex/ref_63003856_S135/63003856_S135.bam
+128077207
+
+En ne conservant que les mapped reads, minime différence
+$ samtools view -c -F 260 /Work/Groups/bisonex/ref_63003856_S135/63003856_S135.bam
+127941051
+$ samtools view -c -F 260 files/tmp_63003856_S135/63003856_S135.bam
+127941054
+
+**** STats (save)
+post_cleanSam = _cleaned.bam
+post_markDuplicate = _marked_dup.bam
+post_BaseRecalibrator = _recal.table
+post_ApplyBQSR = _recalibrated_hg38.bam
+post_haplotypecaller = .vcf
+post_depth_filter = _DP_over_30.vcf
+post_exclude_SNP = _DP_over_30_not_SNP
+post_consensual = _DP_over_30_not_SNP_consensual_sequence.vcf
+post_technical = _DP_over_30_not_SNP_consensual_sequence_not_technical.vcf.gz
+
+2 méthodes complémentaires
+$ grep '^NC' /Work/Groups/bisonex/ref-vcf/63003856_S135.vcf | wc -l
+1506894
+$ grep '^NC' /Work/Groups/bisonex/ref-vcf/63003856_S135.vcf -c
+1506894
+
+Attention, on a un vcf.gz pour la version de test !!! ne pas utiliser le vcf
+$ find . -name 63003856_S135.vcf.gz -exec sh -c "echo {}; zgrep '^NC' {} | wc -l " \;
+./63003856_S135-gatk4.2.4.1/variantCalling/haplotypecaller/63003856_S135.vcf.gz
+1506931
+./63003856_S135-gatk-4.3.0.0/variantCalling/haplotypecaller/63003856_S135.vcf.gz
+1506931
+./63003856_S135-sequential-gatk-4.2.4.1/variantCalling/haplotypecaller/63003856_S135.vcf.gz
+1506919
+
+$ find . -name filter-depth.vcf -exec grep -H -c '^NC' {} \;
+./63003856_S135-gatk4.2.4.1/variantCalling/filter-depth.vcf:82054
+./63003856_S135-gatk-4.3.0.0/variantCalling/filter-depth.vcf:82054
+./63003856_S135-sequential-gatk-4.2.4.1/variantCalling/filter-depth.vcf:82050
+|                                                      |      prod | pseudo-prod | pseudo-prod |     test |     test |       test |
+|------------------------------------------------------+-----------+-------------+-------------+----------+----------+------------|
+|                                                      |           |    parallel | sequential  | parallel | parallel | sequential |
+| gatk                                                 |           |     4.2.4.1 |             |  4.2.4.1 |    4.3.0 |    4.2.3.1 |
+|------------------------------------------------------+-----------+-------------+-------------+----------+----------+------------|
+| bwa mem                                              | 128077207 |   128077211 |             |          |          |            |
+| cleanSam                                             | 128077207 |             |             |          |          |            |
+| applybqsr                                            |           |   128077211 |             |          |          |            |
+| haplotypecaller                                      |   1506894 |     1506931 |             |  1506931 |  1506931 |    1506919 |
+| DP_over_30                                           |     82033 |       82054 |             |    82054 |    82054 |      82050 |
+| DP_over_30_not_SNP                                   |      8864 |        8884 |             |          |          |            |
+| DP_over_30_not_SNP_consensual_sequence               |      8864 |        8884 |             |     8898 |     8898 |       8900 |
+| DP_over_30_not_SNP_consensual_sequence_not_technical |      6478 |             |             |          |          |            |
+
+tester sequential puis version spécifique bwa mem
+
+On a une différence sur les ID clinvar not patho !!
+au final, explique la différence avec le pseudo prod et test (mais pas le prod)
+$ grep -c '^NC' ours.recode.vcf
+8898
+$ grep -c '^NC' lol.recode.recode.vcf
+8884
 ** Divers
 *** DONE Vérifier nombre de reads fastq - bam
 CLOSED: [2022-10-09 Sun 22:31]
