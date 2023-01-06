@@ -748,7 +748,7 @@ All GATK tools that take in mapped read data expect a BAM file as primary format
 #+end_quote
 Source: https://gatk.broadinstitute.org/hc/en-us/articles/360035890791-SAM-or-BAM-or-CRAM-Mapped-sequence-data-formats
 * TODO Tests
-** TODO Test de non régression avec version ALexis avec nix
+** TODO Non régression : version prod
 *** DONE ID common snp
 CLOSED: [2022-11-19 Sat 21:36]
 #+begin_src
@@ -1118,16 +1118,68 @@ $ wc -l dbSNP/GRCh38.p13/ID_of_common_snp_not_clinvar_patho.txt
 $ wc -l ../data-alexis/dbSNP/ID_of_common_snp_not_clinvar_patho.txt
 21155065 ../data-alexis/dbSNP/ID_of_common_snp_not_clinvar_patho.txt
 La différence vient probablement d'une vieille version de clinvar
-*** TODO 63003856_S135
-**** Notes
-Actuellement
-| Étapes           | Production |      Test |
-|------------------+------------+-----------|
-| bwa mem          |  128077207 | 128077211 |
-| haplotype caller |    1506894 |   1631935 |
-| filterdepth      |      82033 |     82054 |
-#
-**** TODO Comparer les versions (log)
+**** TODO Comprendre la différence nouvelle version et prod
+#+begin_src sh :dir /ssh:meso:/Work/Users/apraga/bisonex/tests/debug-commonsnp
+#sort /Work/Groups/bisonex/data/dbSNP/GRCh38.p13/ID_of_common_snp_not_clinvar_patho.txt  | uniq > notpatho.new
+#sort /Work/Groups/bisonex/data-alexis/dbSNP/ID_of_common_snp_not_clinvar_patho.txt  | uniq > notpatho.old
+comm -13 notpatho.new notpatho.old > missing-from-old
+comm -23 notpatho.new notpatho.old > missing-from-new
+wc -l missing-from-old
+wc -l missing-from-new
+#+end_src
+
+#+RESULTS:
+| 75 | missing-from-old |
+|  6 | missing-from-new |
+
+Il manque 75 variants et on a 6 en trop
+#+begin_src sh :dir /ssh:meso:/Work/Users/apraga/bisonex/tests/debug-commonsnp
+PATH=$PATH:$HOME/.nix-profile/bin
+ bcftools query -i 'ID=@missing-from-old' /Work/Groups/bisonex/data/dbSNP/GRCh38.p13/dbSNP_common.vcf.gz -f '%CHROM\n' | sort | uniq -c
+ #+end_src
+
+ #+RESULTS:
+ | 16 | NC_000001.11   |
+ |  2 | NC_000002.12   |
+ | 18 | NC_000003.12   |
+ |  7 | NC_000004.12   |
+ |  1 | NC_000005.10   |
+ |  5 | NC_000006.12   |
+ |  3 | NC_000007.14   |
+ |  2 | NC_000009.12   |
+ |  1 | NC_000010.11   |
+ |  5 | NC_000011.10   |
+ |  3 | NC_000015.10   |
+ |  1 | NC_000016.10   |
+ |  4 | NC_000017.11   |
+ |  2 | NC_000019.10   |
+ |  1 | NC_000020.11   |
+ |  3 | NC_000022.11   |
+ |  1 | NC_000023.11   |
+ |  2 | NT_113891.3    |
+ |  2 | NT_167245.2    |
+ |  2 | NT_167247.2    |
+ |  1 | NT_167248.2    |
+ |  2 | NT_167249.2    |
+ | 18 | NT_187532.1    |
+ |  1 | NT_187562.1    |
+ |  1 | NT_187633.1    |
+ | 18 | NT_187649.1    |
+ | 18 | NT_187678.1    |
+ | 18 | NT_187688.1    |
+ | 12 | NT_187689.1    |
+ | 18 | NT_187690.1    |
+ | 18 | NT_187691.1    |
+ |  1 | NW_013171807.1 |
+
+ Donc la nouvelle version fonctionne mieux !
+ ON vérifie bien qu'ils sont dans l'ancienne version et la nouvelle:
+$ grep -w -f notpatho.diff /Work/Groups/bisonex/data-alexis/dbSNP/ID_of_common_snp_not_clinvar_patho.txt  | wc -l
+528
+$ grep -w -f notpatho.diff  /Work/Groups/bisonex/data/d
+bSNP/GRCh38.p13/ID_of_common_snp_not_clinvar_patho.txt
+#+end_src
+*** TODO Comparer les versions
 ***** TODO bases de données
 ****** DONE Genome de référénce:
 CLOSED: [2023-01-06 Fri 00:00]
@@ -1174,6 +1226,12 @@ sha256sum dbSNP_common.vcf.gz
 
 sha256sum data-alexis-reference/dbSNP/dbSNP_common.vcf.gz
 70dfd9be859c39916598d23b5744cc1fbda04add5840cd90a6d0cd005bd3075b  data-alexis-reference/dbSNP/dbSNP_common.vcf.gz
+****** DONE Clinvar : version différente
+CLOSED: [2023-01-06 Fri 22:51]
+$ zgrep -v '^#' data-alexis-reference/clinvar/clinvar.vcf.gz | wc -l
+1474547
+$ zgrep -v '^#' data/clinvar/GRCh38/clinvar.vcf.gz | wc -l
+1571404
 ***** TODO Outils
 |          |    Prod |         Test |
 | VCFtools |  0.1.17 |       0.1.16 |
@@ -1183,6 +1241,42 @@ sha256sum data-alexis-reference/dbSNP/dbSNP_common.vcf.gz
 | bwa      |       ? | 0.7.17-r1188 |
 On a des versions plus vieilles sauf (le plus important) Gatk
 
+*** TODO 63003856_S135
+**** Notes : bonne reproductibilité sur le cluster mais diff avec la version "de prod"
+tester sequential puis version spécifique bwa mem
+Note: clinvar est plus ancien dans la version d'Alexis, cela explique les 8884 de la version pseudo-prod (via ID not clinvar patho)
+
+Attention : le nombre de lignes = celles sans commentaires (et pas just NC... car il devrait y avoir les mitochondries !)
+$ find . -name filter-depth.vcf -exec sh -c 'echo {}; grep -c -v '^#' {}' \;
+
+Attention, on a un vcf.gz pour la version de test !!! ne pas utiliser le vcf
+|                     |       prod | pseudo-prod | pseudo-prod |       test |       test |       test |
+|---------------------+------------+-------------+-------------+------------+------------+------------|
+|                     |            |    parallel |  sequential |   parallel |   parallel | sequential |
+| gatk                |            |     4.2.4.1 |     4.2.4.1 |    4.2.4.1 |      4.3.0 |    4.2.3.1 |
+| clinvar             | 2022-09-03 |  2022-09-03 |  2022-09-03 | 2022-12-03 | 2022-12-03 | 2022-12-03 |
+|---------------------+------------+-------------+-------------+------------+------------+------------|
+| bwa mem             |  128077207 |   128077211 |   128077210 |  128077211 |  128077211 |  128077210 |
+| cleanSam            |  128077207 |             |   128077210 |  128077211 |  128077211 |  128077210 |
+| applybqsr           |            |   128077211 |             |            |            |            |
+| haplotypecaller     |    1528059 |     1528093 |     1528089 |    1528093 |    1528093 |    1528093 |
+| DP_over_30          |      84708 |       84724 |       84725 |      84724 |      84724 |      84725 |
+| not_SNP             |      11362 |       11377 |       11384 |         NA |         NA |         NA |
+| consensual_sequence |       8864 |        8884 |        8886 |       8898 |       8898 |       8900 |
+***** Convention
+post_cleanSam = _cleaned.bam
+post_markDuplicate = _marked_dup.bam
+post_BaseRecalibrator = _recal.table
+post_ApplyBQSR = _recalibrated_hg38.bam
+post_haplotypecaller = .vcf
+post_depth_filter = _DP_over_30.vcf
+post_exclude_SNP = _DP_over_30_not_SNP
+post_consensual = _DP_over_30_not_SNP_consensual_sequence.vcf
+post_technical = _DP_over_30_not_SNP_consensual_sequence_not_technical.vcf.gz
+
+On a vérifié que grep -c et grep | wc -l donnent le même résultat
+
+#
 **** KILL Gatk 4.3.0
 CLOSED: [2023-01-04 Wed 19:16]
 ***** KILL Alignement
@@ -1690,9 +1784,12 @@ $ grep '^NC' /Work/Groups/bisonex/ref_63003856_S135/63003856_S135_DP_over_30_not
 8864
 ****** KILL Filter technical variants
 CLOSED: [2023-01-04 Wed 19:16]
-**** Gatk 4.2.4 (même version qu'alexis)
-***** TODO Variant calling
-****** TODO haplotypecaller: mieux mais non identique !
+**** DONE Gatk 4.2.4 (même version qu'alexis)
+CLOSED: [2023-01-07 Sat 00:05]
+***** DONE Variant calling
+CLOSED: [2023-01-07 Sat 00:05]
+****** DONE haplotypecaller: mieux mais non identique !
+CLOSED: [2023-01-07 Sat 00:05]
 ******* DONE Nombres lignes gatk 4.2.2 : faible différence
 CLOSED: [2023-01-04 Wed 19:18]
 $ zgrep '^NC' 63003856_S135.vcf.gz | wc -l
@@ -1914,7 +2011,8 @@ CLOSED: [2023-01-04 Wed 19:09]
 | --enable-all-annotations false                                                     | --allow-old-rms-mapping-quality-annotation-data false                                           |
 | --allow-old-rms-mapping-quality-annotation-data false                              |                                                                                                 |
 
-****** filter depth : Toujours la même différence...
+****** DONE filter depth : Toujours la même différence...
+CLOSED: [2023-01-07 Sat 00:05]
 $ grep '^NC' filter-depth.vcf | wc -l
 82054
 
@@ -1925,13 +2023,16 @@ Non lié à la profondeur : on teste avec
 bcftools filter -i 'FORMAT/DP<=30' filter-depth.vcf
 bcftools filter -i 'FORMAT/AD[0:1]<=10' filter-depth.vcf
 
-****** Vérifier qu'en utilsant 2 filtres différents on a bien la même chose : oui
+****** DONE Vérifier qu'en utilsant 2 filtres différents on a bien la même chose : oui
+CLOSED: [2023-01-07 Sat 00:05]
 $ bcftools filter -e 'FORMAT/DP<=30' 63003856_S135.vcf.gz | bcftools filter -e 'FORMAT/AD[0:1]<=10' -o two-filters.vcf
 $ grep '^NC' two-filters.vcf | wc -l
 82054
-***** Tester bwa en séquentiel
+***** DONE Tester bwa en séquentiel
+CLOSED: [2023-01-07 Sat 00:05]
 
-**** STRT (save) Version d'Alexis 24 threads, sans télécharger les bases de données, gatk 4.2.4.1
+**** DONE (save) Version d'Alexis 24 threads, sans télécharger les bases de données, gatk 4.2.4.1
+CLOSED: [2023-01-07 Sat 00:06]
 ***** Bwa mem 24 threads: comme la version test...
 $ cd /Work/Users/apraga/bisonex/script/files/tmp_63003856_S135
 $ samtools view -c 63003856_S135.bam
@@ -1946,58 +2047,6 @@ $ samtools view -c -F 260 /Work/Groups/bisonex/ref_63003856_S135/63003856_S135.b
 $ samtools view -c -F 260 files/tmp_63003856_S135/63003856_S135.bam
 127941054
 
-**** STats (save)
-post_cleanSam = _cleaned.bam
-post_markDuplicate = _marked_dup.bam
-post_BaseRecalibrator = _recal.table
-post_ApplyBQSR = _recalibrated_hg38.bam
-post_haplotypecaller = .vcf
-post_depth_filter = _DP_over_30.vcf
-post_exclude_SNP = _DP_over_30_not_SNP
-post_consensual = _DP_over_30_not_SNP_consensual_sequence.vcf
-post_technical = _DP_over_30_not_SNP_consensual_sequence_not_technical.vcf.gz
-
-2 méthodes complémentaires
-$ grep '^NC' /Work/Groups/bisonex/ref-vcf/63003856_S135.vcf | wc -l
-1506894
-$ grep '^NC' /Work/Groups/bisonex/ref-vcf/63003856_S135.vcf -c
-1506894
-
-Attention, on a un vcf.gz pour la version de test !!! ne pas utiliser le vcf
-$ find . -name 63003856_S135.vcf.gz -exec sh -c "echo {}; zgrep '^NC' {} | wc -l " \;
-./63003856_S135-gatk4.2.4.1/variantCalling/haplotypecaller/63003856_S135.vcf.gz
-1506931
-./63003856_S135-gatk-4.3.0.0/variantCalling/haplotypecaller/63003856_S135.vcf.gz
-1506931
-./63003856_S135-sequential-gatk-4.2.4.1/variantCalling/haplotypecaller/63003856_S135.vcf.gz
-1506919
-
-$ find . -name filter-depth.vcf -exec grep -H -c '^NC' {} \;
-./63003856_S135-gatk4.2.4.1/variantCalling/filter-depth.vcf:82054
-./63003856_S135-gatk-4.3.0.0/variantCalling/filter-depth.vcf:82054
-./63003856_S135-sequential-gatk-4.2.4.1/variantCalling/filter-depth.vcf:82050
-|                                                      |      prod | pseudo-prod | pseudo-prod |     test |     test |       test |
-|------------------------------------------------------+-----------+-------------+-------------+----------+----------+------------|
-|                                                      |           |    parallel | sequential  | parallel | parallel | sequential |
-| gatk                                                 |           |     4.2.4.1 |             |  4.2.4.1 |    4.3.0 |    4.2.3.1 |
-|------------------------------------------------------+-----------+-------------+-------------+----------+----------+------------|
-| bwa mem                                              | 128077207 |   128077211 |             |          |          |            |
-| cleanSam                                             | 128077207 |             |             |          |          |            |
-| applybqsr                                            |           |   128077211 |             |          |          |            |
-| haplotypecaller                                      |   1506894 |     1506931 |             |  1506931 |  1506931 |    1506919 |
-| DP_over_30                                           |     82033 |       82054 |             |    82054 |    82054 |      82050 |
-| DP_over_30_not_SNP                                   |      8864 |        8884 |             |          |          |            |
-| DP_over_30_not_SNP_consensual_sequence               |      8864 |        8884 |             |     8898 |     8898 |       8900 |
-| DP_over_30_not_SNP_consensual_sequence_not_technical |      6478 |             |             |          |          |            |
-
-tester sequential puis version spécifique bwa mem
-
-On a une différence sur les ID clinvar not patho !!
-au final, explique la différence avec le pseudo prod et test (mais pas le prod)
-$ grep -c '^NC' ours.recode.vcf
-8898
-$ grep -c '^NC' lol.recode.recode.vcf
-8884
 ** Divers
 *** DONE Vérifier nombre de reads fastq - bam
 CLOSED: [2022-10-09 Sun 22:31]
