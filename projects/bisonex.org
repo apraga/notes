@@ -62,14 +62,97 @@ https://genome.ucsc.edu/FAQ/FAQdownloads.html#downloadAlt
 Problème : nécessite singularity ou docker (ou conda)
 Potentiellement utilisable avec nix...
 * Données
-** TODO Vérifier qualité données sur mesocentre
-*** STRT BAM
-picard ValidateSamFile
-On regarde juste le code d'erreur (0 = pas d'erreur)
-*** STRT Fastq
-fastqc
-Il faut ensuite extraire les zip and chercher les erreur dedans
-** TODO Lister données sur mesocentre
+** TODO Remplacer bam par fastq sur mesocentre
+Commande
+*** STRT Supprimer les fastq non "paired"
+nushell
+Liste des fastq avec "paired-end" manquant
+#+begin_src nu
+ls **/*.fastq.gz | get name | path basename | split column "_" | get column1 | uniq -u | save single.txt
+#+end_src
+
+#+RESULTS:
+: 62907927
+: 62907970
+: 62899606
+: 62911287
+: 62913201
+: 62914084
+: 62915905
+: 62921595
+: 62923065
+: 62925220
+: 62926503
+: 62926502
+: 62926500
+: 62926499
+: 62926498
+: 62931719
+: 62943423
+: 62943400
+: 62948290
+: 62949205
+: 62949206
+: 62949118
+: 62951284
+: 62960792
+: 62960785
+: 62960787
+: 62960617
+: 62962561
+: 62962692
+: 62967473
+: 62972194
+: 62979102
+
+On vérifie
+#+begin_src nu
+open single.txt  | lines | each {|e| ls $"fastq/*_($in)/*" | get 0  }
+open single.txt  | lines | each {|e| ls $"fastq/*_($in)/*" | get 0.name }  | path basename | split column "_" | get column1 | uniq -c
+#+end_src
+On met tous dans un dossier (pas de suppression )
+#+begin_src
+open single.txt  | lines | each {|e| ls $"fastq/*_($in)/*" | get 0  }  | each {|e| ^mv $e.name bad-fastq/}
+#+end_src
+
+On vérifie que les dossiier sont videsj
+ open single.txt  | lines | each {|e| ls $"fastq/*_($in)" | get 0.name } | ^ls -l $in
+
+ Puis on supprime
+ open single.txt  | lines | each {|e| ls $"fastq/*_($in)" | get 0.name } | ^rm -r $in
+*** TODO Supprimer bam qui ont des fastq
+On liste les identifiants des fastq et bam dans un tableau avec leur type :
+#+begin_src
+let fastq = (ls fastq/*/*.fastq.gz | get name | parse "{dir}/{full_id}/{id}_{R}_001.fastq.gz"  | select dir id | uniq )
+let bam = (ls bam/*/*.bam | get name | parse "{dir}/{full_id}/{id}_{S}.bqrt.bam"  | select dir id)
+#+end_src
+On groupe les résultat par identifiant (résultats = liste de records qui doit être convertie en table)
+et on trie ceux qui n'ont qu'un fastq ou un bam
+#+begin_src
+let single = ( $bam | append $fastq | group-by id | transpose id files | get files | where {|x| ($x | length) == 1})
+#+end_src
+On convertit en table et on récupère seulement les bam
+#+begin_src
+$single | reduce {|it, acc| $acc | append $it} | where dir == bam | get id | each {|e| ^ls $"bam/*_($e)/*.bam"}
+#+end_src
+
+#+RESULTS:
+: bam/2100656174_62913201/62913201_S52.bqrt.bam
+: bam/2100733271_62925220/62925220_S33.bqrt.bam
+: bam/2100738763_62926502/62926502_S108.bqrt.bam
+: bam/2100746726_62926498/62926498_S105.bqrt.bam
+: bam/2100787936_62931955/62931955_S4.bqrt.bam
+: bam/2200066374_62948290/62948290_S130.bqrt.bam
+: bam/2200074722_62948298/62948298_S131.bqrt.bam
+: bam/2200074990_62948306/62948306_S218.bqrt.bam
+: bam/2200214581_62967331/62967331_S267.bqrt.bam
+: bam/2200225399_62972187/62972187_S85.bqrt.bam
+: bam/2200293962_62979117/62979117_S63.bqrt.bam
+: bam/2200423985_62999352/62999352_S1.bqrt.bam
+: bam/2200495073_63010427/63010427_S20.bqrt.bam
+: bam/2200511274_63012586/63012586_S114.bqrt.bam
+: bam/2200669188_63036688/63036688_S150.bqrt.bam
+
 * Nouveau workflow
 ** TODO Bases de données
 *** KILL Nix pour télécharger les données brutes
@@ -1242,7 +1325,8 @@ $ zgrep -v '^#' data/clinvar/GRCh38/clinvar.vcf.gz | wc -l
 On a des versions plus vieilles sauf (le plus important) Gatk
 
 *** TODO 63003856_S135
-**** Notes : bonne reproductibilité sur le cluster mais diff avec la version "de prod"
+**** KILL Notes : bonne reproductibilité sur le cluster mais diff avec la version "de prod"
+CLOSED: [2023-01-09 Mon 23:03]
 tester sequential puis version spécifique bwa mem
 Note: clinvar est plus ancien dans la version d'Alexis, cela explique les 8884 de la version pseudo-prod (via ID not clinvar patho)
 
@@ -2046,6 +2130,8 @@ $ samtools view -c -F 260 /Work/Groups/bisonex/ref_63003856_S135/63003856_S135.b
 127941051
 $ samtools view -c -F 260 files/tmp_63003856_S135/63003856_S135.bam
 127941054
+
+**** Relancer avec la version de prod + nix
 
 ** Divers
 *** DONE Vérifier nombre de reads fastq - bam

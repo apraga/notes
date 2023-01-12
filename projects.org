@@ -30,6 +30,9 @@ Plus courte distance entre 2 films
 https://datasets.imdbws.com/
 Autres :  https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset
 Acteurs + crédits
+*** Langage
+Chargement des donnése IMDB (title.principals.tsv): 4min en python, du killer le processus en haskell...
+Attention, prend toute la RAM
 
 *** Outils
 Référence :
