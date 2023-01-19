@@ -4,7 +4,6 @@
 - Contact
 - Darkest Hour
 - Dragon Ball Super: Broly
-- The passion of the christ
 - One Flew Over the Cuckoo's Nest
 - Dragon Ball Super: Resurrection F
 - Early Spring
@@ -32,10 +31,8 @@
 - The lives of other
 - Tokyo Story
 - We, the Animals
-- 101 Dalmatians (1996) - 3.5/5
 * Watched
-- Repo Man (1984) - 3.5/5
-- The Iron Giant - 4/5
+- 101 Dalmatians (1996) - 3.5/5
 - 12 Angry Men (1957) - 4.5/5
 - 12 Years a Slave (2013) - 4/5
 - 2001: A Space Odyssey - 4/5
@@ -58,6 +55,7 @@
 - Enola Holmes (2020) - 3.8/5
 - First Blood (1982) - 4/5
 - First Man (2018) - 4/5
+- Glass Onion (2022) - 4/5
 - Green Room (2015) - 4/5
 - High and Low (1963) - 4.5/5
 - How to Train Your Dragon (2010) - 4.5/5
@@ -89,6 +87,7 @@
 - Rashomon - 4.5/5
 - Red Beard - 4/5
 - Remainder (2015) - 4/5
+- Repo Man (1984) - 3.5/5
 - Riders of Justice - 4/5
 - Rise of the Planet of the Apes (2011) - 3.5/5
 - Roma (2018) - 4.5/5
@@ -102,7 +101,6 @@
 - Spirited Away (2001) - 4.5/5
 - Start Wars: The Last of the Skywalker - 3.5/5
 - Still Walking (2008) 4/5
-- The adventures of robin hood (1938) - 4/5
 - The Death of Stalin (2017) - 4.5/5
 - The Draughtman's contact - 4/5
 - The Endless Trench (2019) - 4/5
@@ -111,12 +109,16 @@
 - The Hidden Fortress - 4/5
 - The Hunt (2012) - 4/5
 - The Irishman - 4/5
+- The Iron Giant - 4/5
 - The Lego Batman Movie - 4/5
 - The Lighthouse (2019) - 4/5
+- The Northman (2021) - 4/5
+- The Passion of the Christ (2004) - 4/5
 - The Shape of Water (2017) - 4.5/5
 - The Shining (1980) - 4/5
 - The Throne of Blood - 4/5
 - The Witch (2015) - 4.5/5
+- The adventures of robin hood (1938) - 4/5
 - Three Billboards Outside Ebbing, Missouri (2017) - 4/5
 - Uncut Gems (2019) - 4/5
 - Us - 3.5/5
@@ -124,4 +126,3 @@
 - Wonder Woman (2017) - 4/5
 - Yojimbo - 4/5
 - Zero Dark Thirty (2012) - 4/5
-- The Northman (2021) - 4/5
