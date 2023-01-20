@@ -1,5 +1,28 @@
-#+title: Pco2
+
+biofiche
+#+title: pH - Roche cobas c 503
+#+author: Alexis Praga
+#+setupfile: ./fiche.setup
 
 
-pCO2 artéiel : 35 - 46 mmHg (4.7 - 6.1 kPa) adulte
-pO2 artériel : 70 - 100 mmHg (9.5 - 13.3 kPa) adulte
+* Valeurs de référence (adulte)
+- artériel : 35 - 46 mmHg (4.7 - 6.1 kPa) adulte
+- veineux : ?
+* Principe analytique de mesure
+ Ampérométrie
+* Localisation, rôle physiologique
+Le CO2 transporté dans le sein est sous 3 formes : bicarbonates, CO2 dissous et acide carbonique H2CO3.
+* Tissus/organes de production et d'élimination
+Le CO2 est produit lors du métabolisme cellulaire normal et libéré dans le sang. Il est ensuite transporté dans les reins ou le poumons, où il y sera excrété.
+* Principales interactions analytiques
+- Dilution si prélèvement sur cathéter
+- Tube EDTA, citrate, fluorure *proscrits*
+* Vigilance pré-analytiques et analytiques
+- Vérifier que la température est renseignée
+- Absence de caillot ou de bulle
+- Seringue/capillaire hépariné
+- 1mL minimum pour une seringue (si < 0.5, choisir une analyse), 100μL pour un capillaire
+* Augmentation et de diminution
+La pO2 reflète l’état respiratoire générale.
+- Une pCO2 faible traduit une hyperventilation
+- Une pCO2 élèvé révèle une hypoventilation ou insuffisance respiratoire

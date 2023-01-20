@@ -1,4 +1,4 @@
-#+title: pH - Roche cobas c 503
+#+title: pH
 #+author: Alexis Praga
 #+setupfile: ./fiche.setup
 
@@ -9,8 +9,8 @@
 * Principe analytique de mesure
  Potentiométrie avec électrode au chlorure d’argent
 * Localisation, rôle physiologique
-Le pH représente l’activité de l’ion hydrogène, qui reflète l’équilibre acide-base dans le sang.
-Le pH doit être régulé dans des marges étroites car des variations importantes peuvent rapidement avoir des conséquences délétères pour le métabolisme cellulaire, notamment sur le plan vasculaire.
+ie pH représente l’activité de l’ion hydrogène, qui reflète l’équilibre acide-base dans le sang.
+Il doit être régulé dans des marges étroites car des variations importantes peuvent rapidement avoir des conséquences délétères pour le métabolisme cellulaire, notamment sur le plan vasculaire.
 * Tissus/organes de production et d'élimination
 - Production: nombreuxs métabolismes (acides aminées, protéines...) ou issus de substances toxiques (méthanole, acide oxalique, acide formique)
 - Élimination: principalement par les poumons +/- reins, estomacs (vomissements...), intestin (diarrhée)
@@ -22,9 +22,10 @@ Le pH doit être régulé dans des marges étroites car des variations important
 - Seringue/capillaire hépariné
 - 1mL minimum pour une seringue (si < 0.5, choisir une analyse), 100μL pour un capillaire
 * Augmentation et de diminution
+Le pH dépend du rapport $\frac{[HCO_3^{-}]}{pCO2}$
+selon la formule $pH = pK + log(\frac{[HCO_3^{-}]}{pCO2})
 - Pathologique : l’orientation se  fait selon la formule $pH = pK + log(\frac{[HCO_3^{-}]}{pCO2})
-  - acidose métabolique
   - une acidose peut être
-    - respiratoire (pCO2 élevé) d’origine pulmonaire ou non (voire fice pCO2)
+    - respiratoire (pCO2 élevé) liée à une hypoventilation d’origine pulmonaire ou non (voire fiche pCO2)
     - métabolique (diminution des bicarbonates) par 1. accumulation aigüe d’acide, 2. perte de bicarbonates ou 3. diminution de l’excrétion rénale d’acide (voire fiche bicarbonates)
-  - alcalose peut être respiratoire (pCO2 diminué) ou métabolique
+  - alcalose peut être respiratoire (hyperventilation avec pCO2 diminué) ou métabolique (voir fiche adéquate)
