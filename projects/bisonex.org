@@ -1253,8 +1253,8 @@ $ grep -w -f notpatho.diff  /Work/Groups/bisonex/data/d
 bSNP/GRCh38.p13/ID_of_common_snp_not_clinvar_patho.txt
 #+end_src
 *** TODO Comparer les versions
-***** TODO bases de données
-****** DONE Genome de référénce:
+**** TODO bases de données
+***** DONE Genome de référénce:
 CLOSED: [2023-01-06 Fri 00:00]
 Version calculée
 $ find . -type f -name "genomeRef.*" -exec sh -c 'echo {}; sha256sum {}' \;
@@ -1286,7 +1286,7 @@ sed 's/UR:.*/UR:genomeRef.fna/' data-alexis-reference/genome/GRCh38_latest_genom
 diff lol.dict data/genome/GRCh38.p13/genomeRef.dict
 #+end_src
 #+RESULTS:
-****** DONE dbSNP et dbSNP common: ok
+***** DONE dbSNP et dbSNP common: ok
 CLOSED: [2023-01-03 Tue 23:17]
 sha256sum GCF_000001405.39.gz
 452e1112b6339a9b19821c2a226a8a3ba946e92a47e03e6ae464ef8820ee130d  GCF_000001405.39.gz
@@ -1299,13 +1299,13 @@ sha256sum dbSNP_common.vcf.gz
 
 sha256sum data-alexis-reference/dbSNP/dbSNP_common.vcf.gz
 70dfd9be859c39916598d23b5744cc1fbda04add5840cd90a6d0cd005bd3075b  data-alexis-reference/dbSNP/dbSNP_common.vcf.gz
-****** DONE Clinvar : version différente
+***** DONE Clinvar : version différente
 CLOSED: [2023-01-06 Fri 22:51]
 $ zgrep -v '^#' data-alexis-reference/clinvar/clinvar.vcf.gz | wc -l
 1474547
 $ zgrep -v '^#' data/clinvar/GRCh38/clinvar.vcf.gz | wc -l
 1571404
-***** TODO Outils
+**** TODO Outils
 |          |    Prod |         Test |
 | VCFtools |  0.1.17 |       0.1.16 |
 | bcftools |    1.14 |         1.16 |
@@ -1858,7 +1858,7 @@ $ grep '^NC' /Work/Groups/bisonex/ref_63003856_S135/63003856_S135_DP_over_30_not
 8864
 ****** KILL Filter technical variants
 CLOSED: [2023-01-04 Wed 19:16]
-**** DONE Gatk 4.2.4 (même version qu'alexis)
+**** DONE Gatk 4.2.4 : idem
 CLOSED: [2023-01-07 Sat 00:05]
 ***** DONE Variant calling
 CLOSED: [2023-01-07 Sat 00:05]
@@ -2121,7 +2121,305 @@ $ samtools view -c -F 260 /Work/Groups/bisonex/ref_63003856_S135/63003856_S135.b
 $ samtools view -c -F 260 files/tmp_63003856_S135/63003856_S135.bam
 127941054
 
-**** TODO Relancer avec la version de prod + nix
+**** DONE Version prod à la maison
+CLOSED: [2023-01-15 Sun 23:22]
+preprocessing + variant calling sans alignement
+***** DONE GATK nix
+CLOSED: [2023-01-15 Sun 23:22]
+❯ samtools view -c 63003856_S135_marked_dup.bam
+128077211
+On a le même nombre
+***** DONE GATK compilé: idem
+CLOSED: [2023-01-15 Sun 23:22]
+script/files-src/tmp_63003856_S135 on  prod [$!?]
+❯ samtools view -c 63003856_S135_marked_dup.bam
+128077211
+
+Idem...
+**** TODO GATK : tests de non régression ??
+**** DONE Compiler gatk: idem
+CLOSED: [2023-01-19 Thu 22:03]
+***** DONE Compilation
+CLOSED: [2023-01-14 Sat 22:45]
+Requirements :
+- java8 avec jDK
+- git lfs
+
+#+begin_src sh
+git clone https://github.com/broadinstitute/gatk
+git checkout tags/4.2.4.0 -b 4.2.4.0
+nix-shell -p jdk8 git-lfs
+
+# We need the datasets for testing (otherwise it fails)
+git lfs install
+git lfs pull --include src/main/resources/large
+./gradlew bundle
+
+#+end_src
+***** DONE Vérifier tests
+CLOSED: [2023-01-19 Thu 22:03]
+#+begin_src
+./gradlew test
+#+end_src
+267064 tests completed, 444 failed, 1966 skipped
+> There were failing tests. See the report at: file:///Home/Users/apraga/gatk/build/reports/tests/test/index.html
+BUILD FAILED in 37m 1s
+6 actionable tasks: 1 executed, 5 up-to-date
+
+Ceux qui ont planté sont liés à spark + erreurs d'authentification kerberos
+***** KILL Lancer calcul : maison
+CLOSED: [2023-01-19 Thu 22:03]
+ JAVA_HOME=/nix/store/r1r5jr7gv6hcchpiggjmfqjkzbi8y5ja-openjdk-8u322-ga/lib/openjdk PATH=$PATH:$JAVA_HOME/bin ./gatk --version
+
+**** TODO Comparer tsv à la sortie (Alexis)
+- diff
+- Nombre de lignes
+**** TODO Version de prod + nix sur Helios
+***** TODO Preprocessing
+****** DONE Alignement
+CLOSED: [2023-01-19 Thu 22:28]
+******* DONE Nombre lignes : idem
+CLOSED: [2023-01-19 Thu 22:48]
+/Work/Users/apraga/bisonex/script/files/tmp_63003856_S135〉samtools view -c 63003856_S135.bam                                                                                          01/19/2023 10:16:19 PM
+128077211
+
+/Work/Projects/bisonex/ref-63003856_S135〉samtools view -c 63003856_S135.bam                                                                                                           01/19/2023 10:11:39 PM
+128077207
+******* TODO Bwa version ok, arguments ok
+/Work/Users/apraga/bisonex/script/files/tmp_63003856_S135〉samtools view -H 63003856_S135.bam | grep PN                                                                                01/19/2023 10:46:55 PM
+@PG	ID:bwa	PN:bwa	VN:0.7.17-r1188	CL:bwa mem -R @RG\tID:63003856_S135\tSM:63003856_S135\tPL:ILLUMINA\tPM:Miseq\tCN:CHU_Minjoz\tLB:definition_to_add -v 2 -t 24 /Work/Groups/bisonex/data-alexis-reference/genome/GRCh38_latest_genomic.fna files/fastq/63003856_S135_R1_001.fastq.gz files/fastq/63003856_S135_R2_001.fastq.gz
+@PG	ID:samtools	PN:samtools	PP:bwa	VN:1.13	CL:samtools sort -@ 24 -O BAM -o files/tmp_63003856_S135/63003856_S135.bam
+@PG	ID:samtools.1	PN:samtools	PP:samtools	VN:1.13	CL:samtools view -H 63003856_S135.bam
+
+/Work/Projects/bisonex/ref-63003856_S135〉samtools view -H 63003856_S135.bam | grep PN                                                                                                 01/19/2023 10:49:25 PM
+@PG	ID:bwa	PN:bwa	VN:0.7.17-r1188	CL:/bin/bwa mem -R @RG\tID:63003856_S135\tSM:63003856_S135\tPL:ILLUMINA\tPM:Miseq\tCN:CHU_Minjoz\tLB:definition_to_add -t 4 /mnt/j/bases_de_donnees/genome/GRCh38_latest_genomic.fna /mnt/j/working_directory_pipeline_analyse_exome/fastq/2200467051_63003856/63003856_S135_R1_001.fastq.gz /mnt/j/working_directory_pipeline_analyse_exome/fastq/2200467051_63003856/63003856_S135_R2_001.fastq.gz
+@PG	ID:samtools	PN:samtools	PP:bwa	VN:1.10	CL:/mnt/h/tools/samtools sort -@ 4 -O BAM -o /mnt/j/working_directory_pipeline_analyse_exome/tmp_63003856_S135/63003856_S135.bam
+@PG	ID:samtools.1	PN:samtools	PP:samtools	VN:1.13	CL:samtools view -H 63003856_S135.bam
+****** TODO ApplyBQSR
+/Work/Users/apraga/bisonex/script/files/bam〉samtools view -c 63003856_S135_recalibrated_hg38.bam                                                                                      01/19/2023 10:21:00 PM
+128077211
+
+??
+***** TODO Variant calling
+****** DONE Re vérifier flags
+CLOSED: [2023-01-19 Thu 22:44]
+/Work/Projects/bisonex/ref-63003856_S135〉less 63003856_S135_DP_over_30.vcf.gz
+##GATKCommandLine=<ID=HaplotypeCaller,CommandLine="HaplotypeCaller
+
+| Ref                                                                                             | Prod helios                                                                             |
+|-------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------|
+| --dbsnp /mnt/j/bases_de_donnees/dbSNP/GCF_000001405.39.gz                                       | --dbsnp /Work/Groups/bisonex/data-alexis-reference/dbSNP/GCF_000001405.39.gz            |
+| --max-mnp-distance 2                                                                            | --max-mnp-distance 2                                                                    |
+| --output /mnt/j/working_directory_pipeline_analyse_exome/vcf/63003856_S135.vcf                  | --output files/vcf/63003856_S135.vcf                                                    |
+| --input /mnt/j/working_directory_pipeline_analyse_exome/bam/63003856_S135_recalibrated_hg38.bam | --input files/bam/63003856_S135_recalibrated_hg38.bam                                   |
+| --reference /mnt/j/bases_de_donnees/genome/GRCh38_latest_genomic.fna                            | --reference /Work/Groups/bisonex/data-alexis-reference/genome/GRCh38_latest_genomic.fna |
+| --verbosity WARNING                                                                             | --verbosity WARNING                                                                     |
+| --use-posteriors-to-calculate-qual false                                                        | --use-posteriors-to-calculate-qual false                                                |
+| --dont-use-dragstr-priors false                                                                 | --dont-use-dragstr-priors false                                                         |
+| --use-new-qual-calculator true                                                                  | --use-new-qual-calculator true                                                          |
+| --annotate-with-num-discovered-alleles false                                                    | --annotate-with-num-discovered-alleles false                                            |
+| --heterozygosity 0.001                                                                          | --heterozygosity 0.001                                                                  |
+| --indel-heterozygosity 1.25E-4                                                                  | --indel-heterozygosity 1.25E-4                                                          |
+| --heterozygosity-stdev 0.01                                                                     | --heterozygosity-stdev 0.01                                                             |
+| --standard-min-confidence-threshold-for-calling 30.0                                            | --standard-min-confidence-threshold-for-calling 30.0                                    |
+| --max-alternate-alleles 6                                                                       | --max-alternate-alleles 6                                                               |
+| --max-genotype-count 1024                                                                       | --max-genotype-count 1024                                                               |
+| --sample-ploidy 2                                                                               | --sample-ploidy 2                                                                       |
+| --num-reference-samples-if-no-call 0                                                            | --num-reference-samples-if-no-call 0                                                    |
+| --genotype-assignment-method USE_PLS_TO_ASSIGN                                                  | --genotype-assignment-method USE_PLS_TO_ASSIGN                                          |
+| --contamination-fraction-to-filter 0.0                                                          | --contamination-fraction-to-filter 0.0                                                  |
+| --output-mode EMIT_VARIANTS_ONLY                                                                | --output-mode EMIT_VARIANTS_ONLY                                                        |
+| --all-site-pls false                                                                            | --all-site-pls false                                                                    |
+| --gvcf-gq-bands 1                                                                               | --gvcf-gq-bands 1                                                                       |
+| --gvcf-gq-bands 2                                                                               | --gvcf-gq-bands 2                                                                       |
+| --gvcf-gq-bands 3                                                                               | --gvcf-gq-bands 3                                                                       |
+| --gvcf-gq-bands 4                                                                               | --gvcf-gq-bands 4                                                                       |
+| --gvcf-gq-bands 5                                                                               | --gvcf-gq-bands 5                                                                       |
+| --gvcf-gq-bands 6                                                                               | --gvcf-gq-bands 6                                                                       |
+| --gvcf-gq-bands 7                                                                               | --gvcf-gq-bands 7                                                                       |
+| --gvcf-gq-bands 8                                                                               | --gvcf-gq-bands 8                                                                       |
+| --gvcf-gq-bands 9                                                                               | --gvcf-gq-bands 9                                                                       |
+| --gvcf-gq-bands 10                                                                              | --gvcf-gq-bands 10                                                                      |
+| --gvcf-gq-bands 11                                                                              | --gvcf-gq-bands 11                                                                      |
+| --gvcf-gq-bands 12                                                                              | --gvcf-gq-bands 12                                                                      |
+| --gvcf-gq-bands 13                                                                              | --gvcf-gq-bands 13                                                                      |
+| --gvcf-gq-bands 14                                                                              | --gvcf-gq-bands 14                                                                      |
+| --gvcf-gq-bands 15                                                                              | --gvcf-gq-bands 15                                                                      |
+| --gvcf-gq-bands 16                                                                              | --gvcf-gq-bands 16                                                                      |
+| --gvcf-gq-bands 17                                                                              | --gvcf-gq-bands 17                                                                      |
+| --gvcf-gq-bands 18                                                                              | --gvcf-gq-bands 18                                                                      |
+| --gvcf-gq-bands 19                                                                              | --gvcf-gq-bands 19                                                                      |
+| --gvcf-gq-bands 20                                                                              | --gvcf-gq-bands 20                                                                      |
+| --gvcf-gq-bands 21                                                                              | --gvcf-gq-bands 21                                                                      |
+| --gvcf-gq-bands 22                                                                              | --gvcf-gq-bands 22                                                                      |
+| --gvcf-gq-bands 23                                                                              | --gvcf-gq-bands 23                                                                      |
+| --gvcf-gq-bands 24                                                                              | --gvcf-gq-bands 24                                                                      |
+| --gvcf-gq-bands 25                                                                              | --gvcf-gq-bands 25                                                                      |
+| --gvcf-gq-bands 26                                                                              | --gvcf-gq-bands 26                                                                      |
+| --gvcf-gq-bands 27                                                                              | --gvcf-gq-bands 27                                                                      |
+| --gvcf-gq-bands 28                                                                              | --gvcf-gq-bands 28                                                                      |
+| --gvcf-gq-bands 29                                                                              | --gvcf-gq-bands 29                                                                      |
+| --gvcf-gq-bands 30                                                                              | --gvcf-gq-bands 30                                                                      |
+| --gvcf-gq-bands 31                                                                              | --gvcf-gq-bands 31                                                                      |
+| --gvcf-gq-bands 32                                                                              | --gvcf-gq-bands 32                                                                      |
+| --gvcf-gq-bands 33                                                                              | --gvcf-gq-bands 33                                                                      |
+| --gvcf-gq-bands 34                                                                              | --gvcf-gq-bands 34                                                                      |
+| --gvcf-gq-bands 35                                                                              | --gvcf-gq-bands 35                                                                      |
+| --gvcf-gq-bands 36                                                                              | --gvcf-gq-bands 36                                                                      |
+| --gvcf-gq-bands 37                                                                              | --gvcf-gq-bands 37                                                                      |
+| --gvcf-gq-bands 38                                                                              | --gvcf-gq-bands 38                                                                      |
+| --gvcf-gq-bands 39                                                                              | --gvcf-gq-bands 39                                                                      |
+| --gvcf-gq-bands 40                                                                              | --gvcf-gq-bands 40                                                                      |
+| --gvcf-gq-bands 41                                                                              | --gvcf-gq-bands 41                                                                      |
+| --gvcf-gq-bands 42                                                                              | --gvcf-gq-bands 42                                                                      |
+| --gvcf-gq-bands 43                                                                              | --gvcf-gq-bands 43                                                                      |
+| --gvcf-gq-bands 44                                                                              | --gvcf-gq-bands 44                                                                      |
+| --gvcf-gq-bands 45                                                                              | --gvcf-gq-bands 45                                                                      |
+| --gvcf-gq-bands 46                                                                              | --gvcf-gq-bands 46                                                                      |
+| --gvcf-gq-bands 47                                                                              | --gvcf-gq-bands 47                                                                      |
+| --gvcf-gq-bands 48                                                                              | --gvcf-gq-bands 48                                                                      |
+| --gvcf-gq-bands 49                                                                              | --gvcf-gq-bands 49                                                                      |
+| --gvcf-gq-bands 50                                                                              | --gvcf-gq-bands 50                                                                      |
+| --gvcf-gq-bands 51                                                                              | --gvcf-gq-bands 51                                                                      |
+| --gvcf-gq-bands 52                                                                              | --gvcf-gq-bands 52                                                                      |
+| --gvcf-gq-bands 53                                                                              | --gvcf-gq-bands 53                                                                      |
+| --gvcf-gq-bands 54                                                                              | --gvcf-gq-bands 54                                                                      |
+| --gvcf-gq-bands 55                                                                              | --gvcf-gq-bands 55                                                                      |
+| --gvcf-gq-bands 56                                                                              | --gvcf-gq-bands 56                                                                      |
+| --gvcf-gq-bands 57                                                                              | --gvcf-gq-bands 57                                                                      |
+| --gvcf-gq-bands 58                                                                              | --gvcf-gq-bands 58                                                                      |
+| --gvcf-gq-bands 59                                                                              | --gvcf-gq-bands 59                                                                      |
+| --gvcf-gq-bands 60                                                                              | --gvcf-gq-bands 60                                                                      |
+| --gvcf-gq-bands 70                                                                              | --gvcf-gq-bands 70                                                                      |
+| --gvcf-gq-bands 80                                                                              | --gvcf-gq-bands 80                                                                      |
+| --gvcf-gq-bands 90                                                                              | --gvcf-gq-bands 90                                                                      |
+| --gvcf-gq-bands 99                                                                              | --gvcf-gq-bands 99                                                                      |
+| --floor-blocks false                                                                            | --floor-blocks false                                                                    |
+| --indel-size-to-eliminate-in-ref-model 10                                                       | --indel-size-to-eliminate-in-ref-model 10                                               |
+| --disable-optimizations false                                                                   | --disable-optimizations false                                                           |
+| --dragen-mode false                                                                             | --dragen-mode false                                                                     |
+| --apply-bqd false                                                                               | --apply-bqd false                                                                       |
+| --apply-frd false                                                                               | --apply-frd false                                                                       |
+| --disable-spanning-event-genotyping false                                                       | --disable-spanning-event-genotyping false                                               |
+| --transform-dragen-mapping-quality false                                                        | --transform-dragen-mapping-quality false                                                |
+| --mapping-quality-threshold-for-genotyping 20                                                   | --mapping-quality-threshold-for-genotyping 20                                           |
+| --max-effective-depth-adjustment-for-frd 0                                                      | --max-effective-depth-adjustment-for-frd 0                                              |
+| --just-determine-active-regions false                                                           | --just-determine-active-regions false                                                   |
+| --dont-genotype false                                                                           | --dont-genotype false                                                                   |
+| --do-not-run-physical-phasing false                                                             | --do-not-run-physical-phasing false                                                     |
+| --do-not-correct-overlapping-quality false                                                      | --do-not-correct-overlapping-quality false                                              |
+| --use-filtered-reads-for-annotations false                                                      | --use-filtered-reads-for-annotations false                                              |
+| --adaptive-pruning false                                                                        | --adaptive-pruning false                                                                |
+| --do-not-recover-dangling-branches false                                                        | --do-not-recover-dangling-branches false                                                |
+| --recover-dangling-heads false                                                                  | --recover-dangling-heads false                                                          |
+| --kmer-size 10                                                                                  | --kmer-size 10                                                                          |
+| --kmer-size 25                                                                                  | --kmer-size 25                                                                          |
+| --dont-increase-kmer-sizes-for-cycles false                                                     | --dont-increase-kmer-sizes-for-cycles false                                             |
+| --allow-non-unique-kmers-in-ref false                                                           | --allow-non-unique-kmers-in-ref false                                                   |
+| --num-pruning-samples 1                                                                         | --num-pruning-samples 1                                                                 |
+| --min-dangling-branch-length 4                                                                  | --min-dangling-branch-length 4                                                          |
+| --recover-all-dangling-branches false                                                           | --recover-all-dangling-branches false                                                   |
+| --max-num-haplotypes-in-population 128                                                          | --max-num-haplotypes-in-population 128                                                  |
+| --min-pruning 2                                                                                 | --min-pruning 2                                                                         |
+| --adaptive-pruning-initial-error-rate 0.001                                                     | --adaptive-pruning-initial-error-rate 0.001                                             |
+| --pruning-lod-threshold 2.302585092994046                                                       | --pruning-lod-threshold 2.302585092994046                                               |
+| --pruning-seeding-lod-threshold 9.210340371976184                                               | --pruning-seeding-lod-threshold 9.210340371976184                                       |
+| --max-unpruned-variants 100                                                                     | --max-unpruned-variants 100                                                             |
+| --linked-de-bruijn-graph false                                                                  | --linked-de-bruijn-graph false                                                          |
+| --disable-artificial-haplotype-recovery false                                                   | --disable-artificial-haplotype-recovery false                                           |
+| --enable-legacy-graph-cycle-detection false                                                     | --enable-legacy-graph-cycle-detection false                                             |
+| --debug-assembly false                                                                          | --debug-assembly false                                                                  |
+| --debug-graph-transformations false                                                             | --debug-graph-transformations false                                                     |
+| --capture-assembly-failure-bam false                                                            | --capture-assembly-failure-bam false                                                    |
+| --num-matching-bases-in-dangling-end-to-recover -1                                              | --num-matching-bases-in-dangling-end-to-recover -1                                      |
+| --error-correction-log-odds -Infinity                                                           | --error-correction-log-odds -Infinity                                                   |
+| --error-correct-reads false                                                                     | --error-correct-reads false                                                             |
+| --kmer-length-for-read-error-correction 25                                                      | --kmer-length-for-read-error-correction 25                                              |
+| --min-observations-for-kmer-to-be-solid 20                                                      | --min-observations-for-kmer-to-be-solid 20                                              |
+| --base-quality-score-threshold 18                                                               | --base-quality-score-threshold 18                                                       |
+| --dragstr-het-hom-ratio 2                                                                       | --dragstr-het-hom-ratio 2                                                               |
+| --dont-use-dragstr-pair-hmm-scores false                                                        | --dont-use-dragstr-pair-hmm-scores false                                                |
+| --pair-hmm-gap-continuation-penalty 10                                                          | --pair-hmm-gap-continuation-penalty 10                                                  |
+| --expected-mismatch-rate-for-read-disqualification 0.02                                         | --expected-mismatch-rate-for-read-disqualification 0.02                                 |
+| --pair-hmm-implementation FASTEST_AVAILABLE                                                     | --pair-hmm-implementation FASTEST_AVAILABLE                                             |
+| --pcr-indel-model CONSERVATIVE                                                                  | --pcr-indel-model CONSERVATIVE                                                          |
+| --phred-scaled-global-read-mismapping-rate 45                                                   | --phred-scaled-global-read-mismapping-rate 45                                           |
+| --disable-symmetric-hmm-normalizing false                                                       | --disable-symmetric-hmm-normalizing false                                               |
+| --disable-cap-base-qualities-to-map-quality false                                               | --disable-cap-base-qualities-to-map-quality false                                       |
+| --enable-dynamic-read-disqualification-for-genotyping false                                     | --enable-dynamic-read-disqualification-for-genotyping false                             |
+| --dynamic-read-disqualification-threshold 1.0                                                   | --dynamic-read-disqualification-threshold 1.0                                           |
+| --native-pair-hmm-threads 4                                                                     | --native-pair-hmm-threads 4                                                             |
+| --native-pair-hmm-use-double-precision false                                                    | --native-pair-hmm-use-double-precision false                                            |
+| --bam-writer-type CALLED_HAPLOTYPES                                                             | --bam-writer-type CALLED_HAPLOTYPES                                                     |
+| --dont-use-soft-clipped-bases false                                                             | --dont-use-soft-clipped-bases false                                                     |
+| --min-base-quality-score 10                                                                     | --min-base-quality-score 10                                                             |
+| --smith-waterman JAVA                                                                           | --smith-waterman JAVA                                                                   |
+| --emit-ref-confidence NONE                                                                      | --emit-ref-confidence NONE                                                              |
+| --force-call-filtered-alleles false                                                             | --force-call-filtered-alleles false                                                     |
+| --soft-clip-low-quality-ends false                                                              | --soft-clip-low-quality-ends false                                                      |
+| --allele-informative-reads-overlap-margin 2                                                     | --allele-informative-reads-overlap-margin 2                                             |
+| --smith-waterman-dangling-end-match-value 25                                                    | --smith-waterman-dangling-end-match-value 25                                            |
+| --smith-waterman-dangling-end-mismatch-penalty -50                                              | --smith-waterman-dangling-end-mismatch-penalty -50                                      |
+| --smith-waterman-dangling-end-gap-open-penalty -110                                             | --smith-waterman-dangling-end-gap-open-penalty -110                                     |
+| --smith-waterman-dangling-end-gap-extend-penalty -6                                             | --smith-waterman-dangling-end-gap-extend-penalty -6                                     |
+| --smith-waterman-haplotype-to-reference-match-value 200                                         | --smith-waterman-haplotype-to-reference-match-value 200                                 |
+| --smith-waterman-haplotype-to-reference-mismatch-penalty -150                                   | --smith-waterman-haplotype-to-reference-mismatch-penalty -150                           |
+| --smith-waterman-haplotype-to-reference-gap-open-penalty -260                                   | --smith-waterman-haplotype-to-reference-gap-open-penalty -260                           |
+| --smith-waterman-haplotype-to-reference-gap-extend-penalty -11                                  | --smith-waterman-haplotype-to-reference-gap-extend-penalty -11                          |
+| --smith-waterman-read-to-haplotype-match-value 10                                               | --smith-waterman-read-to-haplotype-match-value 10                                       |
+| --smith-waterman-read-to-haplotype-mismatch-penalty -15                                         | --smith-waterman-read-to-haplotype-mismatch-penalty -15                                 |
+| --smith-waterman-read-to-haplotype-gap-open-penalty -30                                         | --smith-waterman-read-to-haplotype-gap-open-penalty -30                                 |
+| --smith-waterman-read-to-haplotype-gap-extend-penalty -5                                        | --smith-waterman-read-to-haplotype-gap-extend-penalty -5                                |
+| --min-assembly-region-size 50                                                                   | --min-assembly-region-size 50                                                           |
+| --max-assembly-region-size 300                                                                  | --max-assembly-region-size 300                                                          |
+| --active-probability-threshold 0.002                                                            | --active-probability-threshold 0.002                                                    |
+| --max-prob-propagation-distance 50                                                              | --max-prob-propagation-distance 50                                                      |
+| --force-active false                                                                            | --force-active false                                                                    |
+| --assembly-region-padding 100                                                                   | --assembly-region-padding 100                                                           |
+| --padding-around-indels 75                                                                      | --padding-around-indels 75                                                              |
+| --padding-around-snps 20                                                                        | --padding-around-snps 20                                                                |
+| --padding-around-strs 75                                                                        | --padding-around-strs 75                                                                |
+| --max-extension-into-assembly-region-padding-legacy 25                                          | --max-extension-into-assembly-region-padding-legacy 25                                  |
+| --max-reads-per-alignment-start 50                                                              | --max-reads-per-alignment-start 50                                                      |
+| --enable-legacy-assembly-region-trimming false                                                  | --enable-legacy-assembly-region-trimming false                                          |
+| --interval-set-rule UNION                                                                       | --interval-set-rule UNION                                                               |
+| --interval-padding 0                                                                            | --interval-padding 0                                                                    |
+| --interval-exclusion-padding 0                                                                  | --interval-exclusion-padding 0                                                          |
+| --interval-merging-rule ALL                                                                     | --interval-merging-rule ALL                                                             |
+| --read-validation-stringency SILENT                                                             | --read-validation-stringency SILENT                                                     |
+| --seconds-between-progress-updates 10.0                                                         | --seconds-between-progress-updates 10.0                                                 |
+| --disable-sequence-dictionary-validation false                                                  | --disable-sequence-dictionary-validation false                                          |
+| --create-output-bam-index true                                                                  | --create-output-bam-index true                                                          |
+| --create-output-bam-md5 false                                                                   | --create-output-bam-md5 false                                                           |
+| --create-output-variant-index true                                                              | --create-output-variant-index true                                                      |
+| --create-output-variant-md5 false                                                               | --create-output-variant-md5 false                                                       |
+| --max-variants-per-shard 0                                                                      | --max-variants-per-shard 0                                                              |
+| --lenient false                                                                                 | --lenient false                                                                         |
+| --add-output-sam-program-record true                                                            | --add-output-sam-program-record true                                                    |
+| --add-output-vcf-command-line true                                                              | --add-output-vcf-command-line true                                                      |
+| --cloud-prefetch-buffer 40                                                                      | --cloud-prefetch-buffer 40                                                              |
+| --cloud-index-prefetch-buffer -1                                                                | --cloud-index-prefetch-buffer -1                                                        |
+| --disable-bam-index-caching false                                                               | --disable-bam-index-caching false                                                       |
+| --sites-only-vcf-output false                                                                   | --sites-only-vcf-output false                                                           |
+| --help false                                                                                    | --help false                                                                            |
+| --version false                                                                                 | --version false                                                                         |
+| --showHidden false                                                                              | --showHidden false                                                                      |
+| --QUIET false                                                                                   | --QUIET false                                                                           |
+| --use-jdk-deflater false                                                                        | --use-jdk-deflater false                                                                |
+| --use-jdk-inflater false                                                                        | --use-jdk-inflater false                                                                |
+| --gcs-max-retries 20                                                                            | --gcs-max-retries 20                                                                    |
+| --gcs-project-for-requester-pays                                                                | --gcs-project-for-requester-pays                                                        |
+| --disable-tool-default-read-filters false                                                       | --disable-tool-default-read-filters false                                               |
+| --minimum-mapping-quality 20                                                                    | --minimum-mapping-quality 20                                                            |
+| --disable-tool-default-annotations false                                                        | --disable-tool-default-annotations false                                                |
+| --enable-all-annotations false                                                                  | --enable-all-annotations false                                                          |
+| --allow-old-rms-mapping-quality-annotation-data false                                           | --allow-old-rms-mapping-quality-annotation-data false"                                  |
+| ",Version="4.2.4.1"                                                                             | Version="4.2.4.1",                                                                      |
+Prod helios
+/Work/Users/apraga/bisonex/script/files/tmp_63003856_S135〉less 63003856_S135_DP_over_30.vcf
+##GATKCommandLine=<ID=HaplotypeCaller,CommandLine="HaplotypeCaller
+,Date="January 10, 2023 at 12:26:57 AM CET">
+****** VCF : même différence
 /Work/Projects/bisonex/ref-63003856_S135〉ls *.vcf* | insert nblines  {|e| (^zgrep -v '^#' $e.name | wc -l)} | select name nblines                                                     01/14/2023 08:04:02 PM
 ╭───┬───────────────────────────────────────────────────────────────────────────┬─────────╮
 │ # │                                   name                                    │ nblines │
@@ -2141,53 +2439,8 @@ $ samtools view -c -F 260 files/tmp_63003856_S135/63003856_S135.bam
 │ 2 │ 63003856_S135_DP_over_30_not_SNP_consensual_sequence.vcf                  │ 8884    │
 │ 3 │ 63003856_S135_DP_over_30_not_SNP_consensual_sequence_not_technical.vcf.gz │ 6759    │
 ╰───┴───────────────────────────────────────────────────────────────────────────┴─────────╯
-**** TODO GATK : tests de non régression ??
-**** TODO Compiler gatk
-***** DONE Compilation
-CLOSED: [2023-01-14 Sat 22:45]
-Requirements :
-- java8 avec jDK
-- git lfs
-
-#+begin_src sh
-git clone https://github.com/broadinstitute/gatk
-git checkout tags/4.2.4.0 -b 4.2.4.0
-nix-shell -p jdk8 git-lfs
-
-# We need the datasets for testing (otherwise it fails)
-git lfs install
-git lfs pull --include src/main/resources/large
-./gradlew bundle
-
-#+end_src
-***** WAIT Vérifier tests
-#+begin_src
-./gradlew test
-#+end_src
-267064 tests completed, 444 failed, 1966 skipped
-> There were failing tests. See the report at: file:///Home/Users/apraga/gatk/build/reports/tests/test/index.html
-BUILD FAILED in 37m 1s
-6 actionable tasks: 1 executed, 5 up-to-date
-
-Ceux qui ont planté sont liés à spark + erreurs d'authentification kerberos
-***** TODO Lancer calcul : maison
- JAVA_HOME=/nix/store/r1r5jr7gv6hcchpiggjmfqjkzbi8y5ja-openjdk-8u322-ga/lib/openjdk PATH=$PATH:$JAVA_HOME/bin ./gatk --version
-
-**** DONE Version prod à la maison
-CLOSED: [2023-01-15 Sun 23:22]
-preprocessing + variant calling sans alignement
-***** DONE GATK nix
-CLOSED: [2023-01-15 Sun 23:22]
-❯ samtools view -c 63003856_S135_marked_dup.bam
-128077211
-On a le même nombre
-***** DONE GATK compilé: idem
-CLOSED: [2023-01-15 Sun 23:22]
-script/files-src/tmp_63003856_S135 on  prod [$!?]
-❯ samtools view -c 63003856_S135_marked_dup.bam
-128077211
-
-Idem...
+***** TODO Relancer avec 4 coeurs
+-c 4
 ** Divers
 *** DONE Vérifier nombre de reads fastq - bam
 CLOSED: [2022-10-09 Sun 22:31]

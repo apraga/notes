@@ -5747,3 +5747,5 @@ Circuit 3x2
 Débloqué tic-tac + atterissage sur mur, kong
 * <2023-01-14 Sat> Tricking
 Traavil enchaînement : font, tornado, b-kick
+* <2023-01-18 Wed> Tricking
+B-kick, aerial, roundhouse
