@@ -2175,17 +2175,21 @@ CLOSED: [2023-01-19 Thu 22:03]
 - diff
 - Nombre de lignes
 **** TODO Version de prod + nix sur Helios
-***** TODO Preprocessing
-****** DONE Alignement
+***** DONE 24 coeurs : idem
+CLOSED: [2023-01-20 Fri 22:49]
+****** DONE Preprocessing : idem
+CLOSED: [2023-01-20 Fri 22:49]
+******* DONE Alignement
 CLOSED: [2023-01-19 Thu 22:28]
-******* DONE Nombre lignes : idem
+******** DONE Nombre lignes : idem
 CLOSED: [2023-01-19 Thu 22:48]
 /Work/Users/apraga/bisonex/script/files/tmp_63003856_S135〉samtools view -c 63003856_S135.bam                                                                                          01/19/2023 10:16:19 PM
 128077211
 
 /Work/Projects/bisonex/ref-63003856_S135〉samtools view -c 63003856_S135.bam                                                                                                           01/19/2023 10:11:39 PM
 128077207
-******* TODO Bwa version ok, arguments ok
+******** DONE Bwa version ok, arguments ok
+CLOSED: [2023-01-20 Fri 22:49]
 /Work/Users/apraga/bisonex/script/files/tmp_63003856_S135〉samtools view -H 63003856_S135.bam | grep PN                                                                                01/19/2023 10:46:55 PM
 @PG	ID:bwa	PN:bwa	VN:0.7.17-r1188	CL:bwa mem -R @RG\tID:63003856_S135\tSM:63003856_S135\tPL:ILLUMINA\tPM:Miseq\tCN:CHU_Minjoz\tLB:definition_to_add -v 2 -t 24 /Work/Groups/bisonex/data-alexis-reference/genome/GRCh38_latest_genomic.fna files/fastq/63003856_S135_R1_001.fastq.gz files/fastq/63003856_S135_R2_001.fastq.gz
 @PG	ID:samtools	PN:samtools	PP:bwa	VN:1.13	CL:samtools sort -@ 24 -O BAM -o files/tmp_63003856_S135/63003856_S135.bam
@@ -2195,13 +2199,15 @@ CLOSED: [2023-01-19 Thu 22:48]
 @PG	ID:bwa	PN:bwa	VN:0.7.17-r1188	CL:/bin/bwa mem -R @RG\tID:63003856_S135\tSM:63003856_S135\tPL:ILLUMINA\tPM:Miseq\tCN:CHU_Minjoz\tLB:definition_to_add -t 4 /mnt/j/bases_de_donnees/genome/GRCh38_latest_genomic.fna /mnt/j/working_directory_pipeline_analyse_exome/fastq/2200467051_63003856/63003856_S135_R1_001.fastq.gz /mnt/j/working_directory_pipeline_analyse_exome/fastq/2200467051_63003856/63003856_S135_R2_001.fastq.gz
 @PG	ID:samtools	PN:samtools	PP:bwa	VN:1.10	CL:/mnt/h/tools/samtools sort -@ 4 -O BAM -o /mnt/j/working_directory_pipeline_analyse_exome/tmp_63003856_S135/63003856_S135.bam
 @PG	ID:samtools.1	PN:samtools	PP:samtools	VN:1.13	CL:samtools view -H 63003856_S135.bam
-****** TODO ApplyBQSR
+******* KILL ApplyBQSR
+CLOSED: [2023-01-20 Fri 22:48]
 /Work/Users/apraga/bisonex/script/files/bam〉samtools view -c 63003856_S135_recalibrated_hg38.bam                                                                                      01/19/2023 10:21:00 PM
 128077211
 
 ??
-***** TODO Variant calling
-****** DONE Re vérifier flags
+****** DONE Variant calling
+CLOSED: [2023-01-20 Fri 22:48]
+******* DONE Re vérifier flags
 CLOSED: [2023-01-19 Thu 22:44]
 /Work/Projects/bisonex/ref-63003856_S135〉less 63003856_S135_DP_over_30.vcf.gz
 ##GATKCommandLine=<ID=HaplotypeCaller,CommandLine="HaplotypeCaller
@@ -2419,7 +2425,8 @@ Prod helios
 /Work/Users/apraga/bisonex/script/files/tmp_63003856_S135〉less 63003856_S135_DP_over_30.vcf
 ##GATKCommandLine=<ID=HaplotypeCaller,CommandLine="HaplotypeCaller
 ,Date="January 10, 2023 at 12:26:57 AM CET">
-****** VCF : même différence
+******* DONE VCF : même différence
+CLOSED: [2023-01-20 Fri 22:48]
 /Work/Projects/bisonex/ref-63003856_S135〉ls *.vcf* | insert nblines  {|e| (^zgrep -v '^#' $e.name | wc -l)} | select name nblines                                                     01/14/2023 08:04:02 PM
 ╭───┬───────────────────────────────────────────────────────────────────────────┬─────────╮
 │ # │                                   name                                    │ nblines │
@@ -2441,9 +2448,113 @@ Prod helios
 ╰───┴───────────────────────────────────────────────────────────────────────────┴─────────╯
 ***** TODO Relancer avec 4 coeurs
 -c 4
-Alignement ok
+****** DONE Alignement ok !!
+CLOSED: [2023-01-20 Fri 23:24]
 $ samtools view -c files/tmp_63003856_S135/63003856_S135.bam
 128077207
+
+****** TODO Vérifier les flags de chaque étape
+post_cleanSam = _cleaned.bam
+post_markDuplicate = _marked_dup.bam
+post_BaseRecalibrator = _recal.table
+post_ApplyBQSR = _recalibrated_hg38.bam
+post_haplotypecaller = .vcf
+post_depth_filter = _DP_over_30.vcf
+post_exclude_SNP = _DP_over_30_not_SNP
+post_consensual = _DP_over_30_not_SNP_consensual_sequence.vcf
+post_technical = _DP_over_30_not_SNP_consensual_sequence_not_technical.vcf.gz
+
+******* DONE Clean sam
+CLOSED: [2023-01-20 Fri 23:44]
+ref
+$ samtools view -H 63003856_S135_cleaned.bam  | grep PN
+@PG	ID:samtools	PN:samtools	PP:bwa	VN:1.10	CL:/mnt/h/tools/samtools sort -@ 4 -O BAM -o /mnt/j/working_directory_pipeline_analyse_exome/tmp_63003856_S135/63003856_S135.bam
+
+@PG	ID:samtools	PN:samtools	PP:bwa	VN:1.13	CL:samtools sort -@ 4 -O BAM -o files/tmp_63003856_S135/63003856_S135.bam
+******* DONE Markduplicates
+CLOSED: [2023-01-20 Fri 23:44]
+ref
+| @PG	ID:MarkDuplicates	VN:Version:4.2.4.1	CL:MarkDuplicates                                                    | @PG   ID:MarkDuplicates   VN:Version:4.2.4.1  CL:MarkDuplicates                            |   |
+| --INPUT /mnt/j/working_directory_pipeline_analyse_exome/tmp_63003856_S135/63003856_S135_cleaned.bam              | --INPUT files/tmp_63003856_S135/63003856_S135_cleaned.bam                                  |   |
+| --OUTPUT /mnt/j/working_directory_pipeline_analyse_exome/tmp_63003856_S135/63003856_S135_marked_dup.bam          | --OUTPUT files/tmp_63003856_S135/63003856_S135_marked_dup.bam                              |   |
+| --METRICS_FILE /mnt/j/working_directory_pipeline_analyse_exome/tmp_63003856_S135/63003856_S135_marked_dup.metrix | --METRICS_FILE files/tmp_63003856_S135/63003856_S135_marked_dup.metrix                     |   |
+| --VERBOSITY WARNING                                                                                              | --VERBOSITY WARNING                                                                        |   |
+| --CREATE_INDEX true                                                                                              | --CREATE_INDEX true                                                                        |   |
+| --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000                                                                     | --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000                                               |   |
+| --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000                                                                        | --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000                                                  |   |
+| --SORTING_COLLECTION_SIZE_RATIO 0.25                                                                             | --SORTING_COLLECTION_SIZE_RATIO 0.25                                                       |   |
+| --TAG_DUPLICATE_SET_MEMBERS false                                                                                | --TAG_DUPLICATE_SET_MEMBERS false                                                          |   |
+| --REMOVE_SEQUENCING_DUPLICATES false                                                                             | --REMOVE_SEQUENCING_DUPLICATES false                                                       |   |
+| --TAGGING_POLICY DontTag                                                                                         | --TAGGING_POLICY DontTag                                                                   |   |
+| --CLEAR_DT true                                                                                                  | --CLEAR_DT true                                                                            |   |
+| --DUPLEX_UMI false                                                                                               | --DUPLEX_UMI false                                                                         |   |
+| --ADD_PG_TAG_TO_READS true                                                                                       | --ADD_PG_TAG_TO_READS true                                                                 |   |
+| --REMOVE_DUPLICATES false                                                                                        | --REMOVE_DUPLICATES false                                                                  |   |
+| --ASSUME_SORTED false                                                                                            | --ASSUME_SORTED false                                                                      |   |
+| --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES                                                               | --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES                                         |   |
+| --PROGRAM_RECORD_ID MarkDuplicates                                                                               | --PROGRAM_RECORD_ID MarkDuplicates                                                         |   |
+| --PROGRAM_GROUP_NAME MarkDuplicates                                                                              | --PROGRAM_GROUP_NAME MarkDuplicates                                                        |   |
+| --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values>                       | --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> |   |
+| --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100                                                                           | --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100                                                     |   |
+| --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000                                                                          | --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000                                                    |   |
+| --QUIET false                                                                                                    | --QUIET false                                                                              |   |
+| --VALIDATION_STRINGENCY STRICT                                                                                   | --VALIDATION_STRINGENCY STRICT                                                             |   |
+| --COMPRESSION_LEVEL 2                                                                                            | --COMPRESSION_LEVEL 2                                                                      |   |
+| --MAX_RECORDS_IN_RAM 500000                                                                                      | --MAX_RECORDS_IN_RAM 500000                                                                |   |
+| --CREATE_MD5_FILE false                                                                                          | --CREATE_MD5_FILE false                                                                    |   |
+| --GA4GH_CLIENT_SECRETS client_secrets.json                                                                       | --GA4GH_CLIENT_SECRETS client_secrets.json                                                 |   |
+| --help false                                                                                                     | --help false                                                                               |   |
+| --version false                                                                                                  | --version false                                                                            |   |
+| --showHidden false                                                                                               | --showHidden false                                                                         |   |
+| --USE_JDK_DEFLATER false                                                                                         | --USE_JDK_DEFLATER false                                                                   |   |
+| --USE_JDK_INFLATER false                                                                                         | --USE_JDK_INFLATER false                                                                   |   |
+
+| @PG	ID:samtools.1	PN:samtools	PP:samtools	VN:1.13	CL:samtools view -H 63003856_S135_marked_dup.bam |
+******* DONE ApplyBQSR
+CLOSED: [2023-01-20 Fri 23:48]
+Ref
+@PG	ID:GATK ApplyBQSR	VN:4.2.4.1	CL:ApplyBQSR
+| --output /mnt/j/working_directory_pipeline_analyse_exome/bam/63003856_S135_recalibrated_hg38.bam              | --output files/bam/63003856_S135_recalibrated_hg38.bam                                  |
+| --bqsr-recal-file /mnt/j/working_directory_pipeline_analyse_exome/tmp_63003856_S135/63003856_S135_recal.table | --bqsr-recal-file files/tmp_63003856_S135/63003856_S135_recal.table                     |
+| --input /mnt/j/working_directory_pipeline_analyse_exome/tmp_63003856_S135/63003856_S135_marked_dup.bam        | --input files/tmp_63003856_S135/63003856_S135_marked_dup.bam                            |
+| --reference /mnt/j/bases_de_donnees/genome/GRCh38_latest_genomic.fna                                          | --reference /Work/Groups/bisonex/data-alexis-reference/genome/GRCh38_latest_genomic.fna |
+| --verbosity WARNING                                                                                           | --verbosity WARNING                                                                     |
+| --preserve-qscores-less-than 6                                                                                | --preserve-qscores-less-than 6                                                          |
+| --use-original-qualities false                                                                                | --use-original-qualities false                                                          |
+| --quantize-quals 0                                                                                            | --quantize-quals 0                                                                      |
+| --round-down-quantized false                                                                                  | --round-down-quantized false                                                            |
+| --emit-original-quals false                                                                                   | --emit-original-quals false                                                             |
+| --global-qscore-prior -1.0                                                                                    | --global-qscore-prior -1.0                                                              |
+| --interval-set-rule UNION                                                                                     | --interval-set-rule UNION                                                               |
+| --interval-padding 0                                                                                          | --interval-padding 0                                                                    |
+| --interval-exclusion-padding 0                                                                                | --interval-exclusion-padding 0                                                          |
+| --interval-merging-rule ALL                                                                                   | --interval-merging-rule ALL                                                             |
+| --read-validation-stringency SILENT                                                                           | --read-validation-stringency SILENT                                                     |
+| --seconds-between-progress-updates 10.0                                                                       | --seconds-between-progress-updates 10.0                                                 |
+| --disable-sequence-dictionary-validation false                                                                | --disable-sequence-dictionary-validation false                                          |
+| --create-output-bam-index true                                                                                | --create-output-bam-index true                                                          |
+| --create-output-bam-md5 false                                                                                 | --create-output-bam-md5 false                                                           |
+| --create-output-variant-index true                                                                            | --create-output-variant-index true                                                      |
+| --create-output-variant-md5 false                                                                             | --create-output-variant-md5 false                                                       |
+| --max-variants-per-shard 0                                                                                    | --max-variants-per-shard 0                                                              |
+| --lenient false                                                                                               | --lenient false                                                                         |
+| --add-output-sam-program-record true                                                                          | --add-output-sam-program-record true                                                    |
+| --add-output-vcf-command-line true                                                                            | --add-output-vcf-command-line true                                                      |
+| --cloud-prefetch-buffer 40                                                                                    | --cloud-prefetch-buffer 40                                                              |
+| --cloud-index-prefetch-buffer -1                                                                              | --cloud-index-prefetch-buffer -1                                                        |
+| --disable-bam-index-caching false                                                                             | --disable-bam-index-caching false                                                       |
+| --sites-only-vcf-output false                                                                                 | --sites-only-vcf-output false                                                           |
+| --help false                                                                                                  | --help false                                                                            |
+| --version false                                                                                               | --version false                                                                         |
+| --showHidden false                                                                                            | --showHidden false                                                                      |
+| --QUIET false                                                                                                 | --QUIET false                                                                           |
+| --use-jdk-deflater false                                                                                      | --use-jdk-deflater false                                                                |
+| --use-jdk-inflater false                                                                                      | --use-jdk-inflater false                                                                |
+| --gcs-max-retries 20                                                                                          | --gcs-max-retries 20                                                                    |
+| --gcs-project-for-requester-pays                                                                              | --gcs-project-for-requester-pays                                                        |
+| --disable-tool-default-read-filters false	PN:GATK ApplyBQSR                                                 | --disable-tool-default-read-filters false     PN:GATK ApplyBQSR                         |
+***** TODO Relancer avec la même version de samtools ?
+
 ** Divers
 *** DONE Vérifier nombre de reads fastq - bam
 CLOSED: [2022-10-09 Sun 22:31]
