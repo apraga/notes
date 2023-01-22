@@ -2150,7 +2150,8 @@ CLOSED: [2022-12-05 Mon 21:22] SCHEDULED: <2022-12-05 Mon>
 ** GURU
 *** DONE Demander accès
 CLOSED: [2022-11-19 Sat 17:36]
-*** TODO Ebuild pour adapteur wifi TBW-108B
+*** WAIT Ebuild pour adapteur wifi TBW-108B
+Sur branche dev
 ** TODO Article nzbget sur wiki
 SCHEDULED: <2022-10-22 Sat>
 /Entered on/ [2022-10-22 Sat 17:31]

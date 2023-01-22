@@ -30,7 +30,8 @@ Voir [[file:books-lists][books lists]] pour des idées
 *** DONE Dragonsinger
 *** DONE The White Dragon
 *** DONE Dragondrums
-*** TODO All The Weyrs of Pern (1991)
+*** DONE All The Weyrs of Pern (1991)
+CLOSED: [2023-01-22 Sun 22:45]
 *** TODO The Skies of Pern (2001)
 ** DONE R.R Martin - A Song of Ice and Fire 5/5
 ** DONE R.R Martin - Windhaven

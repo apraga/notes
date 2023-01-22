@@ -5758,3 +5758,5 @@ Extension: 3x22
 Pistols : 3x4
 - Planche tucked push-up: 4+4+2 - 5+5 - 5+5
 Compression: 3x10
+* <2023-01-22 Sun> Running
+44min, 10min montée moyenne
