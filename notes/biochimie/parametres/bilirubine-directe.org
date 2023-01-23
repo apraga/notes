@@ -3,7 +3,7 @@
 #+setupfile: ./fiche.setup
 
 * Localisation, physiologie
-La bilirubine libre est captée par le pôle vasculaire de l'hépatocyte. Elle y est conjugée par glucuryonyl-transferiase ou bilirubine-UDP-glucuronosyl-transférase. La bilirubine conjlugée est ensuite transférée dans la bile via la membrane du canalicule, puis sécrétée dans le duodenum par les voies biliaries. Elle est également déconjuguée par la flore intestinale (voir fichie bilirubine).
+La bilirubine libre est captée par le pôle vasculaire de l'hépatocyte. Elle y est conjugée par glucuryonyl-transferiase ou bilirubine-UDP-glucuronosyl-transférase. La bilirubine conjuguée est ensuite transférée dans la bile via la membrane du canalicule, puis sécrétée dans le duodenum par les voies biliaries. Elle est également déconjuguée par la flore intestinale (voir fichie bilirubine).
 * Principe analytique de mesure
 Test colorimétrique par méthode diazo. Mesure par photométrie à 540 nm de l’azobilirubine rouge qui est proportionnelle à la concentration en bilirubine directe.
 * Valeurs de référence [cite:@mcpherson2007]
