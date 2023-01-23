@@ -5760,3 +5760,5 @@ Pistols : 3x4
 Compression: 3x10
 * <2023-01-22 Sun> Running
 44min, 10min montée moyenne
+* <2023-01-24 Tue> Parkour
+1h30, chat

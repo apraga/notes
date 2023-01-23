@@ -1,5 +1,62 @@
 #+title: Biochimie
 
+* Albumine
+** Naissance
+Synthèse par les hépatocytes
+** Vie
+60% secteur interstitiel, 40% vasculaire (=2/3 protéines circulantes)
+** Mort
+Demi-vie 20 jours
+** Effet
+Maintien de la pression oncotique vascualire
+Proténie de transport pour des substances inactives mais rapidement mobilisables : homones, acides aminés, acide gras, vditamine, médicament
+** Indication
+Syndrome inflammatoire chronique
+Fuites protéiques (entééropathies exsudatives, syndrome néphrotique)
+Dénutrition chronique
+** Dosage
+
+* Vitamine D
+** Naissance
+
+La vitamine D est apportée par
+- synthèse à partir des rayonnements UV sur la peau
+- l'alimentation (vitamine D2 [végétal] et D3 [animal])
+
+Elle s'accumule dans le foie puis une première hydroxylation conduit à 25-OH-vitamine D (calcidiol).
+Après transport via le sang dans le rein, une seconde hydroxylation rein conduit à 1,25-di-OH vitamine D (calcitriol = forme active de la vitamine D)
+
+La premièore est peu controle mais la seconde est régulée par la PHT et phosphatémie :
+- PTH, hypophosphatémie, hypocalcémie (via PTH) stimulent la synthèse du calcitriol
+- hyperphosphatémie, hypercalcémie l'inhibe
+** Vie
+** Mort
+** Effet
+Calcitriole:
+- stimule l'absorbtion interstinale du calcium et phosphose
+- os: favorise la minéralisation (en augemntant la calcémie)
+- rein : stimule la réabsorption tubulaire du phosphore et calcium
+- diminue PTH
+** Indication
+- 25-hydroxy-D = forme circulante prépondérante. Reflète les réserve -> dosé si possibilité de carenc
+- 1,25-dihydroxy-vitamine D (calcitriol) = ne reflète *pas* les stock : réservé à une anomalie de 1-\alpha hydroxylation
+** Dosage
+
+* Natrémie
+- Perte de sodium : perte d'eau pour conserver l'osmolalité -> déshydratation extracellulaire pure (natrémie normale)
+- Excès de sodium : rétention d'eau pour conserver l'osmolalité -> hyperhydratation extracellulaire pure (natrémie normale)
+- Perte d'eau : hyperosmolarité -> déshydratation intracellulaire
+  - hypernatrémie
+  - natrémie normale mais avec une substance osmotiquement active (mannitol)
+- Rétention d'eau : hyperhydratation intracellulaire par osmose
+  - ingestion d'eau trop importante
+  - ADH se déclenche trop tôt
+  - excrétion d'eau diminuée
+
+Hyponatrémie
+- soit erreur de mesure : osmolalité normale mais hyperprotidémie et hyperlipidémie entraînent une fausse mesure d'hyponatrémie (dilution)
+- soit hyperosmolalité par glycémie ou méthanel
+- soit hypoosmolalité (hyponatrémie vraie)
 * BNP (Brain natriuretic peptide)
 ** Naissance
 synthétisé par myocyte du ventricule gauche (et droit) en réponse à une surcharge volémique
@@ -20,6 +77,21 @@ compense la surcharge volémique par
 - inhibition du système Rénine-Angiotensive-Aldostérone
 ** Indication
 marqueur global de l’inssufisance cardiaque (diagnostic, pronostic, suivi)
+** Dosage
+* CPK (créatine -phosphokinase)
+** Naissance
+Enzyme dans le cytosole ou mitochondrie des cellule : muscles squelettiques++ et cardiaque, cerveau, rein, gastrointestinal
+- CK-MM (95%) = muscle strié squelettique
+- CK-MB = muscle cardiaque
+- CK-BB (= cerveau, gastro-interdsstinal
+** Vie
+Catalyse la phosphorylation de la créatine en créatine phosphate par l'ATP (avec production ADP)
+** Mort
+** Effet
+contraction musculaire :
+** Indication
+- Infarctus du myocarde, myopathie, myosite
+- Certains cancers, affection du système nerveux central
 ** Dosage
 * Foie
 ** Physiologie
@@ -137,3 +209,17 @@ Augmentation ALAT/ASAT
 - Physiologique : diminution albuminémie possible, augmenation PAL
 - cholestase gravidique : prurit, augmenation acide biliarie sérique : 10-40 modéré,, sérève si > 40
   - ALAT = 2-10N >> ictère 10%, bili augmentée et γGt No/augmentée: 30%, stéatorrhéie (déficit en vitamine K visible sur TP)
+* Phosphatales alcalines
+** Naissance
+Très répandues dans les tissus.
+** Vie
+Libérées dans le sang lors de l'altération de la membrane cellulaire
+** Mort
+** Effet
+Permet le passage de métabolite à travers les membranes cellulaires (catalyse l'hydrolyse d'esters monophosphorique en libérant du phosphate)
+** Indication
+- Maladies héépato-biliaire cholestatiques
+- Malades osseuses avec régénération ostéoblastiques
+- Grossesse avec cholestase gravidique
+- Certaines pathologise intestinales, suivi de certains cancers
+** Dosage
