@@ -1,0 +1,32 @@
+#+title: Bicarbonates
+#+author: Alexis Praga
+#+setupfile: ./fiche.setup
+
+* Localisation, rôle physiologique
+Les ions bicarbonates sont le tampon extracellulaire le plus important pour contrôler le pH sanguin, selon la réaction:
+CO_2 + H_2O <-> H_2CO_3 <-> H^+ + HCO_3^-
+* Tissus/organes de production et d'élimination
+Un excès d’ions H^+ va se traduire selon la formule précédente par la formation de CO_2 et H_2O.
+
+Au contraire, un excès de base, par exemple NaOH va aboutir à la formation de bicarbonates :
+NaOH + H2CO3 <-> NaHCO3 + H2O
+* Valeurs de référence (adulte)
+NaOH + H2CO3 ? NaHCO3 + H2O
+* Principe analytique de mesure
+Il s’agit d’une valeur *calculée*. On rend le bicarbonate réel, calculé à partir de la pCO2 et du pH
+HCO3_{act} = 0,0307 \times pCO2 \times 10^{pH(37) - 6,105)
+
+* Principales interactions analytiques
+- Dilution si prélèvement sur cathéter
+- Tube EDTA, citrate, fluorure *proscrits*
+* Vigilance pré-analytiques et analytiques
+- Absence de caillot ou de bulle
+- Seringue/capillaire hépariné
+- 1mL minimum pour une seringue (si < 0.5, choisir une analyse), 100μL pour un capillaire
+* Augmentation et diminution
+L’orientation se fait selon le trou anionique, [Na+]  - [Cl^- + HCO3-], qui correspond au anions ou cations indosés.
+
+Une acidose métabolique correspond à une diminution du pH due à une diminution des bicarbonates
+- TA > 16 : excès d’anion indosés due à
+  - une accumulation aig
+- TA normal : perte rénale ou digestive de bicarbonates
