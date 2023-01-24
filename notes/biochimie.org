@@ -76,9 +76,9 @@ compense la surcharge volémique par
 - diminution réabsorption du sodium (*natriurétique)
 - inhibition du système Rénine-Angiotensive-Aldostérone
 ** Indication
-marqueur global de l’inssufisance cardiaque (diagnostic, pronostic, suivi)
+marqueur global de l’issufisance cardiaque (diagnostic, pronostic, suivi)
 ** Dosage
-* CPK (créatine -phosphokinase)
+* CPK (créatine-phosphokinase)
 ** Naissance
 Enzyme dans le cytosole ou mitochondrie des cellule : muscles squelettiques++ et cardiaque, cerveau, rein, gastrointestinal
 - CK-MM (95%) = muscle strié squelettique
@@ -93,6 +93,35 @@ contraction musculaire :
 - Infarctus du myocarde, myopathie, myosite
 - Certains cancers, affection du système nerveux central
 ** Dosage
+* DFG
+La clairance de la créatinine est estimée par le Débit de Filtration Glomérulaire.
+Évaluation DFG à partir de la créatininémie
+  - Cockroft et Gault: mauvaises performances si obèse, > 75 ans. Prend le poids en compte (contrairement aux 2 autres)
+  - MDRD : plus précise que Cockroft
+  - CKD-EPI: plus précises que MDRD si valeur basse de la créatitinémie
+  - Schwartz : enfant
+  - recos HAS: CKD-EPI si dosage enzymatique, MDRD si colorimétrique
+
+Attention : formules non utilisable chez l’enfant (formale du Schwartz), variation aigüe de la fonction rénale, cirrhose hépatique décompoensée, gabarit hors norme, amyotrophie important, grossese
+
+dans ce cas, utiliser clairrance urinaire sur urines de 24h = créat urinaire*débit/créat sanguine
+* Créatinine
+** Naissance
+Créatine = synthétisée dans le foie par la méthylation de glycocyamine (lui-même synthétisé dans le foie à partir d’arginine et glycine)
+Elle est transportée par le sang aux muscles, cerveau, organe. Par phosphorylation devient la phosphocréatine à l’aide de créatine kinase (voir [[*CPK (créatine-phosphokinase)][CPK (créatine-phosphokinase)]] )
+La créatinine est un produit de cette transformation.
+
+La créatinine est aussi sécrétée par le rein
+** Vie
+Libérée par le muscle
+** Mort
+Éliminée par le rein
+** Effet
+ Pas de rôle physiologique
+** Indication
+Pas de réabsorption par le rein, donc marqueur de fonction rénale
+** Dosage
+
 * Foie
 ** Physiologie
 Énergie:

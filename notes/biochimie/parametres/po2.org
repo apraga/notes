@@ -1,4 +1,24 @@
-#+title: Po2
+#+title: pO2
+#+author: Alexis Praga
+#+setupfile: ./fiche.setup
 
 
-pO2 artériel : 70 - 100 mmHg (9.5 - 13.3 kPa) adulte
+* Valeurs de référence (adulte)
+pO2 artériel : 70 - 100 mmHg (9.5 - 13.3 kPa)
+* Principe analytique de mesure
+ Ampérométrie par mesure du courant généré entre 2 électrodes suite à la réaction de réduction de l’oxygène
+* Localisation, rôle physiologique
+L’oxygène est prépondérant pour les cellules dans les différents tissus du corps.
+* Tissus/organes de production et d'élimination
+Dans les poumons, l’oxygène diffuse au niveau des alvéoles via le sang. Il y est combiné à l’hémoglobine des globules rouges et transporté vers les cellules dans les artères. Il est ensuite libéré dans les tissus.
+L’oxygène est consommé pour la respiration cellulaires par les mitochondries afin de générer de l’énergie sous forme d’ATP
+* Principales interactions analytiques
+- Dilution si prélèvement sur cathéter
+- Tube EDTA, citrate, fluorure *proscrits*
+* Vigilance pré-analytiques et analytiques
+- Vérifier que la température est renseignée
+- Absence de caillot ou de bulle
+- Seringue/capillaire hépariné
+- 1mL minimum pour une seringue (si < 0.5, choisir une analyse), 100μL pour un capillaire
+* Augmentation et diminution
+- Une hypoxémie correspond à une diminution de la PaO2 (note: à différencier de l’hypoxie qui est une insuffisance d’oxygénation tissulaire. Il peut y avoir une hypoxémie sans hypoxie !)

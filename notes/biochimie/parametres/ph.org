@@ -9,7 +9,7 @@
 * Principe analytique de mesure
  Potentiométrie avec électrode au chlorure d’argent
 * Localisation, rôle physiologique
-ie pH représente l’activité de l’ion hydrogène, qui reflète l’équilibre acide-base dans le sang.
+Le pH représente l’activité de l’ion hydrogène, qui reflète l’équilibre acide-base dans le sang.
 Il doit être régulé dans des marges étroites car des variations importantes peuvent rapidement avoir des conséquences délétères pour le métabolisme cellulaire, notamment sur le plan vasculaire.
 * Tissus/organes de production et d'élimination
 - Production: nombreuxs métabolismes (acides aminées, protéines...) ou issus de substances toxiques (méthanole, acide oxalique, acide formique)
@@ -21,7 +21,7 @@ Il doit être régulé dans des marges étroites car des variations importantes 
 - Absence de caillot ou de bulle
 - Seringue/capillaire hépariné
 - 1mL minimum pour une seringue (si < 0.5, choisir une analyse), 100μL pour un capillaire
-* Augmentation et de diminution
+* Augmentation et diminution
 Le pH dépend du rapport $\frac{[HCO_3^{-}]}{pCO2}$
 selon la formule $pH = pK + log(\frac{[HCO_3^{-}]}{pCO2})
 - Pathologique : l’orientation se  fait selon la formule $pH = pK + log(\frac{[HCO_3^{-}]}{pCO2})
