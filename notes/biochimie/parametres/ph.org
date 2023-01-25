@@ -3,17 +3,17 @@
 #+setupfile: ./fiche.setup
 
 
-* Valeurs de référence (adulte)
-- artériel : 7.38 - 7.42
-- veineux : 7.32 - 7.38
-* Principe analytique de mesure
- Potentiométrie avec électrode au chlorure d’argent
 * Localisation, rôle physiologique
 Le pH représente l’activité de l’ion hydrogène, qui reflète l’équilibre acide-base dans le sang.
 Il doit être régulé dans des marges étroites car des variations importantes peuvent rapidement avoir des conséquences délétères pour le métabolisme cellulaire, notamment sur le plan vasculaire.
 * Tissus/organes de production et d'élimination
 - Production: nombreuxs métabolismes (acides aminées, protéines...) ou issus de substances toxiques (méthanole, acide oxalique, acide formique)
 - Élimination: principalement par les poumons +/- reins, estomacs (vomissements...), intestin (diarrhée)
+* Valeurs de référence (adulte)
+- artériel : 7.38 - 7.42
+- veineux : 7.32 - 7.38
+* Principe analytique de mesure
+ Potentiométrie avec électrode au chlorure d’argent
 * Principales interactions analytiques
 - Dilution si prélèvement sur cathéter
 - Tube EDTA, citrate, fluorure *proscrits*

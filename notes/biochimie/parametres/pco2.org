@@ -2,14 +2,14 @@
 #+author: Alexis Praga
 #+setupfile: ./fiche.setup
 
-* Valeurs de référence (adulte)
-- artériel : 35 - 46 mmHg (4.7 - 6.1 kPa)
-* Principe analytique de mesure
- Ampérométrie par mesure du courant généré entre 2 électrodes suite à la réaction d’oxydation du CO2
 * Localisation, rôle physiologique
 Le CO2 transporté dans le sang est sous 3 formes : bicarbonates, CO2 dissous et acide carbonique H2CO3.
 * Tissus/organes de production et d'élimination
 Le CO2 est produit lors du métabolisme cellulaire normal de manière continue et libéré dans le sang. Il est ensuite transporté dans les poumons, où aura lieu une diffusion des capillaires pulmonaires dans les alvéoles. Il sera ensuite expiré.
+* Valeurs de référence (adulte)
+- artériel : 35 - 46 mmHg (4.7 - 6.1 kPa)
+* Principe analytique de mesure
+ Ampérométrie par mesure du courant généré entre 2 électrodes suite à la réaction d’oxydation du CO2
 * Principales interactions analytiques
 - Dilution si prélèvement sur cathéter
 - Tube EDTA, citrate, fluorure *proscrits*
