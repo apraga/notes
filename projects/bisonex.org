@@ -17,19 +17,23 @@ Variant Type
 | Platinum              |           29% |            0 |   0 |                      0 |           0 |   0 |               0 | Eberle et  al8  | Platinum |
 | Genomes               |               |              |     |                        |             |     |                 |                 |          |
 | Venter/HuRef          |           14% |          40% |   0 |                      0 |           0 |   0 |               0 | Trost et al1    | HuRef    |
-*** GIAB: NA12878
-   - methode https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/NA12878/analysis/Illumina_PlatinumGenomes_NA12877_NA12878_09162015/IlluminaPlatinumGenomes-user-guide.pdf
-   - vcf https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/NA12878/analysis/Illumina_PlatinumGenomes_NA12877_NA12878_09162015/hg38/2.0.1/NA12878/
-  Article comparant les variant calling : https://www.biorxiv.org/content/10.1101/2020.12.11.422022v1.full.pdf
-  Article pour vcfeval : https://www.nature.com/articles/s41587-019-0054-x
-*** Génerer des données de séquencage à partir de variant connu
-https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03665-5
-1. génerer un modèle prenant en compte les biais d’Illumina
-2. Génerer des fastq à partir de variants connus (ceux de centogène ??)
-*** Vérifier les variants de centogene
 * Idées
 ** Validation analytique
-*** Génération de reads avec variants connus
+mail Yannis : données patients +/- simulées
+*** Utiliser données GCAT et uploader le notre ?
+https://www.nature.com/articles/ncomms7275
+*** [#A] Genome in a bottle : NA12878 + autres
+2 versions :
+1. Depuis un fastq correspondant à Illumina  https://github.com/genome-in-a-bottle/giab_data_indexes
+   puis on compare le VCF avec les "high confidence"
+2. On séquence directement NA12878 -> inutile pour le pipeline seul
+   Tout résumé ici : https://www.nist.gov/programs-projects/genome-bottle
+   - methode https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/NA12878/analysis/Illumina_PlatinumGenomes_NA12877_NA12878_09162015/IlluminaPlatinumGenomes-user-guide.pdf
+   - vcf https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/NA12878/analysis/Illumina_PlatinumGenomes_NA12877_NA12878_09162015/hg38/2.0.1/NA12878/
+   Article comparant les variant calling : https://www.biorxiv.org/content/10.1101/2020.12.11.422022v1.full.pdf
+   Article pour vcfeval : https://www.nature.com/articles/s41587-019-0054-x
+*** [#B] Patients centogène avec variants vérifié en Sanger
+*** [#B] Génération de reads avec variants connus
 Comparaison de génération ADN (2019)
 https://academic.oup.com/bfg/article/19/1/49/5680294
 **** SimuSCop
@@ -37,13 +41,6 @@ https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03665-5
 https://github.com/qasimyu/simuscop
 1. Crééer un modèle depuis bam + vcf : Setoprofile
 2. Génerer données NGS
-*** Utiliser données GCAT et uploader le notre ?
-https://www.nature.com/articles/ncomms7275
-*** Genome in a bottle : NA12878 + autres
-2 versions :
-1. Depuis un fastq correspondant à Illumina  https://github.com/genome-in-a-bottle/giab_data_indexes
-   puis on compare le VCF avec les "high confidence"
-2. On séquence directement NA12878 -> inutile pour le pipeline seul
 
 * Changement nouvelle version
 - Dernière version du génome (la version "prête à l'emploi" est seulement GRCh38 sans les version patchées)
