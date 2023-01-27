@@ -4,6 +4,9 @@
 Comparaison WDL, Cromwell, nextflow
 https://www.nature.com/articles/s41598-021-99288-8
 Nextflow = bon compromis ?
+
+Comparison alignement, variant caller (2021)
+https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04144-1
 ** Validation
 *** Best practices for the analytical validation of clinical whole-genome sequencing intended for the diagnosis of germline disease
 https://www.nature.com/articles/s41525-020-00154-9
@@ -17,6 +20,28 @@ Variant Type
 | Platinum              |           29% |            0 |   0 |                      0 |           0 |   0 |               0 | Eberle et  al8  | Platinum |
 | Genomes               |               |              |     |                        |             |     |                 |                 |          |
 | Venter/HuRef          |           14% |          40% |   0 |                      0 |           0 |   0 |               0 | Trost et al1    | HuRef    |
+*** Systematic comparison of germline variant calling pipelines cross multiple next-generation sequencers
+Comparaison de différents pipeline 2019
+https://www.nature.com/articles/s41598-019-45835-3
+Combinaison
+- variant calling = GATK, Strelka2 and Samtools-Varscan2
+- sur NA12878
+- séquencé sur BGISEQ500, MGISEQ2000, HiSeq4000, NovaSeq and HiSeq Xten.
+
+  Conclusion: strelka2 supérieur mais biais sur NA12878 ?
+
+Illumina > BGI pour indel, probablement car reads plus grand
+#+begin_quote
+ For WES datasets, the BGI platforms displayed the superior performance in SNPs
+ calling while Illumina platforms manifested the better variants calling
+ performance in INDELs calling, which could be explained by their divergence in
+ sequencing strategy that producing different length of reads (all BGI platforms
+ were 100 base pair read length while all Illumina platforms were 150 base pair
+ read length). The read length effects, as a key factor between two platforms,
+ would bring alignment bias and error which are higher for short reads and
+ ultimately affect the variants calling especially the INDELs identification
+#+end_quote
+
 * Idées
 ** Validation analytique
 mail Yannis : données patients +/- simulées
@@ -41,6 +66,8 @@ https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03665-5
 https://github.com/qasimyu/simuscop
 1. Crééer un modèle depuis bam + vcf : Setoprofile
 2. Génerer données NGS
+** Annotation :
+*** Comparaison vep / snpeff et annovar
 
 * Changement nouvelle version
 - Dernière version du génome (la version "prête à l'emploi" est seulement GRCh38 sans les version patchées)
@@ -2617,6 +2644,10 @@ Voir GATK best practice
 ** KILL Utiliser T-to-T comme références
 CLOSED: [2023-01-01 Sun 21:35]
 Semble compliqué avec les nouvelles bases de données
+** TODO Annoter avec bcftools au lieu du script d'alexis ?
+clinvar, etc...
+https://samtools.github.io/bcftools/howtos/annotate.html
+Possible également avec snpsift
 ** TODO Macro excel
 ** TODO Utiliser le XML de clinvar
 Extraction sous VCF possible avec
