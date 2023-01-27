@@ -11,10 +11,16 @@ Un excès d’ions H^+ va se traduire selon la formule précédente par la forma
 Au contraire, un excès de base, par exemple NaOH va aboutir à la formation de bicarbonates :
 NaOH + H2CO3 <-> NaHCO3 + H2O
 * Valeurs de référence (adulte)
-NaOH + H2CO3 ? NaHCO3 + H2O
+22-24mmol/L
 * Principe analytique de mesure
 Il s’agit d’une valeur *calculée*. On rend le bicarbonate réel, calculé à partir de la pCO2 et du pH
-HCO3_{act} = 0,0307 \times pCO2 \times 10^{pH(37) - 6,105)
+$$HCO3_{act} = 0,0307 \times pCO2 \times 10^{pH(37) - 6,105)$$HCO3_
+
+*Bicarbonates Roche c503* la mesure se fait par photométrie par méthode enzymatique selon la double préaction
+Ca2+ + NM-BAPTA complexe calcium-NM-BAPTA
+EP + HCO3 ->  oxaloacétate + H2PO4
+Oxaloacétate + analogue NADH + H
+-> malate + analogue NAD + EDTA
 
 * Principales interactions analytiques
 - Dilution si prélèvement sur cathéter
