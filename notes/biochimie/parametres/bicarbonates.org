@@ -27,6 +27,15 @@ HCO3_{act} = 0,0307 \times pCO2 \times 10^{pH(37) - 6,105)
 L’orientation se fait selon le trou anionique, [Na+]  - [Cl^- + HCO3-], qui correspond au anions ou cations indosés.
 
 Une acidose métabolique correspond à une diminution du pH due à une diminution des bicarbonates
-- TA > 16 : excès d’anion indosés due à
-  - une accumulation aig
-- TA normal : perte rénale ou digestive de bicarbonates
+- trou anionique > 16 : excès d’anion indosés due à :
+  - une accumulation aigüe d’acide : acidose lactique, acidocétose
+  - une excrétion rénale d’acide diminuée : insuffisance rénale
+- trou anionique normal :
+  - une accumulation aigüe d’acide : intoxication chlorure d’ammonium
+  - perte de bicarbonante : diarrhée, anastomose urtéré-intestinale, acide tubulaire proxmilae
+  - une excrétion rénale d’acide diminuée : acide tubulaire distale (défaut de productionde NF4+ ou défaut de produiction distale d’H^+)
+Uen alcalose métabolique est due à :
+- une contraction vélomique : extrarénale , perte en sel rénale (diurétique++, syndrome de Bartter), perte en sel d’origine mixte (vomissement, aspiratio+++)
+- une expansion volémique : hyperaldstéronisme primaire, secondaire ou pseudo-hypealdostéronisme
+- post-hypercapnique
+- excès d’apport alcalin
