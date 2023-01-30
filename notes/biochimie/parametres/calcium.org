@@ -21,6 +21,12 @@ Il y a également une sécrétion intestinale de calcium.
 * Principe analytique de mesure
 Potentiométrie (électrode de calcium). Le calcium est corrigé selon le pH avec la formule (validée seulement pour pH entre 7.2 et 7.7)
 $Ca^{++} (7,4) = Ca^{++} \times 10^{-0,178 \times (7,40 - pH(37))}$
+
+*c530 ROCHE*
+Contrairement aux 1265 / RP500 qui donnent le calcium ionisé, l’automate Roche rende le calcium total, qui doit être corrigé en fonction de l’albuminémie en cas d’hypercalcémie.
+La mesure est par photométrie.
+
+
 * Principales interactions analytiques
 - Protidémie (albumine) car une fraction importante du calcium total y est liées
 - pH par compétition avec les ions H^{+}: augmentation en cas d’acidose
@@ -30,14 +36,11 @@ $Ca^{++} (7,4) = Ca^{++} \times 10^{-0,178 \times (7,40 - pH(37))}$
 - Seringue/capillaire hépariné avec 1mL minimum pour une seringue (si < 0.5, choisir une analyse), 100μL pour un capillaire
 * Augmentation et diminution
 - Hypercalcémie : vérifier si prise de thiazidique, calcium, lithium
-  - PTH haute ou normale haute : calciurie haute ou normale haute ? hyperparathyroïdie, sinon hypercalcémie/hypocalciurie familiale bénigne
+  - PTH haute ou normale haute : calciurie haute ou normale haute ? hyperparathyroïdie primaire, sinon hypercalcémie/hypocalciurie familiale bénigne
   - PTH basse / normale basse :
     - phosphatémie haute/normalee haute : myéolome, métastases osseusx, granulomatoes, hyperthyroïde, intoxication vitamine D, autres (acromégalie...)
     - sinon sécrétion de PTHrP (à doser), chondrodysplasie de Janssen
 - Hypocalcémie : prise de furosémide, biphosphonates, corticoïdes
   - insuffisance rénale ? sinon : PTH haute normale haute ? si phosphatémie élevée : pseudo-hypoparathyroïdie, sinon hyperparathyroïdie secondaire -> calciurie augmentée (fuite rénale) ou basse : déficite en vitamine D doser 25OHd por orienter (carence d’apport, rachitisme vitaminorésistant)
-* Comparaison avec  Chimie ROCHE
-Les GDS 1265 / RP500 donnent le calcium ionisé. Les automates de chimie Roche rendent le calcium total, qui doit être corrigé en fonction de l’albuminémie en cas d’hypercalcémie.
-
 * Footnotes
 [fn:1] utilisé en prévention de l’hypothyroïdie en cas d’injection de produit de contraste pour les rayons X
