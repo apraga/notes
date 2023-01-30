@@ -5762,3 +5762,5 @@ Compression: 3x10
 44min, 10min montée moyenne
 * <2023-01-24 Tue> Parkour
 1h30, chat
+* <2023-01-25 Wed> Tricking
+Comboo: scoot + bkick, scoot + aerial
