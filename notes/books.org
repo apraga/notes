@@ -2,7 +2,9 @@ Voir [[file:books-lists][books lists]] pour des idées
 * Computer science :cs:
 ** HOLD The art of computer programming, volume 1
 ** HOLD Haskell Programming From First Principles [5/31]
-
+** HOLD Yesod book
+*** DONE Haskell
+CLOSED: [2023-01-30 Mon 12:04]
 * Fanfiction :fanfic:
 ** Harry potter
 :PROPERTIES:
@@ -127,12 +129,13 @@ CLOSED: [2023-01-22 Sun 22:45]
 :CATEGORY: math
 :END:
 ** HOLD Gowers, T. (2010): The princeton companion to mathematics
-** STRT The elements of statistical learning (217) [1/1]
+** STRT The elements of statistical learning (217) [1/2]
 Texte de référence pour classification, machine
 *** DONE 1. Intro
-*** 2
+*** STRT 2
+Relu jusque "curse of dimensionality"
 2.4  non clair, à relire
-* Medenice
+* Medecine
 ** TODO Cecil-Goldman (26th edition)
 *** Renal and Genitourinary Diseases 1.
 - [-] 106 Approach to the Patient with Renal Disease
@@ -144,12 +147,16 @@ Texte de référence pour classification, machine
 - [-] Chapter 369 Psychiatric Disorders in Medical Practice
 ** TODO Auerbach's wilderness medecine
 *** Mountain Medicine
-  - [-] Chapter 1 High-Altitude Physiology
-  - [-] Chapter 2 High-Altitude Medicine and Pathophysiology
-  - [-] Chapter 4 Avalanches
-  - [-] Chapter 5 Lightning-Related Injuries and Safety
+**** STRT Chapter 1 High-Altitude Physiology
+**** STRT Chapter 2 High-Altitude Medicine and Pathophysiology
+**** STRT Chapter 4 Avalanches
+**** STRT Chapter 5 Lightning-Related Injuries and Safety
 *** Cold and Heat
-  - [-] Chapter 13 Clinical Management of Heat-Related Illnesses
+**** STRT Chapter 13 Clinical Management of Heat-Related Illnesses
+*** Trauma
+**** STRT Wilderness traumau and surgical emergencies
+** STRT Biochemical pathways
+Survolé jusque 2.2.2
 
 * Philosophy :philosophy:
 ** STRT A History of Western Philosophy
@@ -162,5 +169,4 @@ Texte de référence pour classification, machine
   :PROPERTIES:
   :CATEGORY: thriller
   :END:
-
 ** DONE The Lost Apothecary

@@ -4,15 +4,61 @@
 Comparaison WDL, Cromwell, nextflow
 https://www.nature.com/articles/s41598-021-99288-8
 Nextflow = bon compromis ?
+
+Comparison alignement, variant caller (2021)
+https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04144-1
 ** Validation
-*** GIAB: NA12878
-   - methode https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/NA12878/analysis/Illumina_PlatinumGenomes_NA12877_NA12878_09162015/IlluminaPlatinumGenomes-user-guide.pdf
-   - vcf https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/NA12878/analysis/Illumina_PlatinumGenomes_NA12877_NA12878_09162015/hg38/2.0.1/NA12878/
-  Article comparant les variant calling : https://www.biorxiv.org/content/10.1101/2020.12.11.422022v1.full.pdf
-  Article pour vcfeval : https://www.nature.com/articles/s41587-019-0054-x
+*** Best practices for the analytical validation of clinical whole-genome sequencing intended for the diagnosis of germline disease
+https://www.nature.com/articles/s41525-020-00154-9
+Peu d’info sur la bionfo, sauf Supplementary :
+
+Variant Type
+|                       | SNVs & Indels | CNVs (>10Kb) | SVs | Mitochondrial variants | Pseudogenes | REs | Somatic/ mosaic | Literature/Data | Source   |
+| NA12878               |         100%a |          40% |   0 |                      0 |           0 |   0 |               0 | Zook et  al18   | NIST     |
+| Other NIST standard   |           71% |          40% | 50% |                      0 |           0 |   0 |               0 | Zook  et al18   |          |
+| (e.g. AJ/Asian trios) |               |              |     |                        |             |     |                 |                 |          |
+| Platinum              |           29% |            0 |   0 |                      0 |           0 |   0 |               0 | Eberle et  al8  | Platinum |
+| Genomes               |               |              |     |                        |             |     |                 |                 |          |
+| Venter/HuRef          |           14% |          40% |   0 |                      0 |           0 |   0 |               0 | Trost et al1    | HuRef    |
+*** Systematic comparison of germline variant calling pipelines cross multiple next-generation sequencers
+Comparaison de différents pipeline 2019
+https://www.nature.com/articles/s41598-019-45835-3
+Combinaison
+- variant calling = GATK, Strelka2 and Samtools-Varscan2
+- sur NA12878
+- séquencé sur BGISEQ500, MGISEQ2000, HiSeq4000, NovaSeq and HiSeq Xten.
+
+  Conclusion: strelka2 supérieur mais biais sur NA12878 ?
+
+Illumina > BGI pour indel, probablement car reads plus grand
+#+begin_quote
+ For WES datasets, the BGI platforms displayed the superior performance in SNPs
+ calling while Illumina platforms manifested the better variants calling
+ performance in INDELs calling, which could be explained by their divergence in
+ sequencing strategy that producing different length of reads (all BGI platforms
+ were 100 base pair read length while all Illumina platforms were 150 base pair
+ read length). The read length effects, as a key factor between two platforms,
+ would bring alignment bias and error which are higher for short reads and
+ ultimately affect the variants calling especially the INDELs identification
+#+end_quote
+
 * Idées
 ** Validation analytique
-*** Génération de reads avec variants connus
+mail Yannis : données patients +/- simulées
+*** Utiliser données GCAT et uploader le notre ?
+https://www.nature.com/articles/ncomms7275
+*** [#A] Genome in a bottle : NA12878 + autres
+2 versions :
+1. Depuis un fastq correspondant à Illumina  https://github.com/genome-in-a-bottle/giab_data_indexes
+   puis on compare le VCF avec les "high confidence"
+2. On séquence directement NA12878 -> inutile pour le pipeline seul
+   Tout résumé ici : https://www.nist.gov/programs-projects/genome-bottle
+   - methode https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/NA12878/analysis/Illumina_PlatinumGenomes_NA12877_NA12878_09162015/IlluminaPlatinumGenomes-user-guide.pdf
+   - vcf https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/NA12878/analysis/Illumina_PlatinumGenomes_NA12877_NA12878_09162015/hg38/2.0.1/NA12878/
+   Article comparant les variant calling : https://www.biorxiv.org/content/10.1101/2020.12.11.422022v1.full.pdf
+   Article pour vcfeval : https://www.nature.com/articles/s41587-019-0054-x
+*** [#B] Patients centogène avec variants vérifié en Sanger
+*** [#B] Génération de reads avec variants connus
 Comparaison de génération ADN (2019)
 https://academic.oup.com/bfg/article/19/1/49/5680294
 **** SimuSCop
@@ -20,13 +66,8 @@ https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03665-5
 https://github.com/qasimyu/simuscop
 1. Crééer un modèle depuis bam + vcf : Setoprofile
 2. Génerer données NGS
-*** Utiliser données GCAT et uploader le notre ?
-https://www.nature.com/articles/ncomms7275
-*** Genome in a bottle : NA12878 + autres
-2 versions :
-1. Depuis un fastq correspondant à Illumina  https://github.com/genome-in-a-bottle/giab_data_indexes
-   puis on compare le VCF avec les "high confidence"
-2. On séquence directement NA12878 -> inutile pour le pipeline seul
+** Annotation :
+*** Comparaison vep / snpeff et annovar
 
 * Changement nouvelle version
 - Dernière version du génome (la version "prête à l'emploi" est seulement GRCh38 sans les version patchées)
@@ -168,15 +209,17 @@ On peut utiliser des symlink mais trop compliqué
 CLOSED: [2022-08-19 Fri 15:18]
 *** DONE Tester patch de @pennae pour gros fichiers
 SCHEDULED: <2022-08-19 Fri>
-*** STRT Télécharger
-- [X] Genome de référence
-- [X] dbSNP
-- [X] OMIM
-- [X] VEP 20G
-- [X] transcriptome (spip)
-- [ ] Refseq
-*** DONE Télécharger les données avec nextflow
-CLOSED: [2022-09-13 Tue 21:37]
+*** STRT Télécharger les données avec nextflow
+**** DONE Genome de référence
+**** DONE dbSNP
+**** TODO VEP 20G
+Ajout vérification checksum -> à vérifier
+**** TODO transcriptome (spip)
+Rajouter checksum manuel
+**** KILL Refseq
+**** STRT OMIM
+codé, à vérifier
+**** TODO ACMG incidental
 *** HOLD Processing bases de données
 **** DONE dbSNP common
 **** DONE Seulement les ID dans dbSNP common !
@@ -799,9 +842,31 @@ CLOSED: [2022-11-08 Tue 22:23]
 CLOSED: [2022-11-19 Sat 21:34]
 ** TODO Annotation avec nextflow
 *** TODO VEP
+***** TODO Utiliser --gene-phenotype ?
+Bases de données sympas mais non à jour ?
+https://www.ensembl.org/info/genome/variation/phenotype/sources_phenotype_documentation.html
+***** TODO Plugin pour CADD, pLI, LOEUF ?
+https://www.ensembl.org/info/docs/tools/vep/script/vep_plugins.html#cadd
+***** TODO Utiliser l'option --hgvsg pour remplaer hgvsg.r ?
+***** TODO Ajout spliceAI ?
 *** TODO Spip
+**** TODO Checksum sur données
 *** TODO Filtrer après VEP
-On doit pouvoir se passer d'un script R avec bcftools
+**** TODO Remplacer avec simplement bcftools filter ?
+*** TODO OMIM
+**** TODO Remplacer script R par bcftools ?
+**** TODO Remplacer script R par vep ?
+*** TODO clinvar
+**** TODO Remplacer script R par bcftools ?
+**** TODO Remplacer script R par vep ?
+*** TODO hgvs
+**** TODO Remplacer par vep ?
+*** TODO ACMG incidental
+**** TODO Inclure dans vep ?
+*** TODO Grantham
+*** TODO LRG
+*** TODO Gnomad
+
 ** DONE Porter exament la version d'Alexis sur Helios
 CLOSED: [2023-01-14 Sat 17:56]
 Branche "prod"
@@ -1252,8 +1317,10 @@ $ grep -w -f notpatho.diff /Work/Groups/bisonex/data-alexis/dbSNP/ID_of_common_s
 $ grep -w -f notpatho.diff  /Work/Groups/bisonex/data/d
 bSNP/GRCh38.p13/ID_of_common_snp_not_clinvar_patho.txt
 #+end_src
-*** TODO Comparer les versions
-**** TODO bases de données
+*** DONE Comparer les versions
+CLOSED: [2023-01-26 jeu. 17:42]
+**** DONE bases de données
+CLOSED: [2023-01-26 jeu. 17:42]
 ***** DONE Genome de référénce:
 CLOSED: [2023-01-06 Fri 00:00]
 Version calculée
@@ -1305,7 +1372,25 @@ $ zgrep -v '^#' data-alexis-reference/clinvar/clinvar.vcf.gz | wc -l
 1474547
 $ zgrep -v '^#' data/clinvar/GRCh38/clinvar.vcf.gz | wc -l
 1571404
-**** TODO Outils
+***** DONE Revérifer checksum de GRCh38 et dbSNP
+CLOSED: [2023-01-26 jeu. 17:42]
+****** DONE GRCh38
+CLOSED: [2023-01-26 jeu. 17:42]
+/Work/Projects/bisonex/data-alexis-reference/genome>sha256sum GRCh38_latest_genomic.fna
+e0761a7ba5d10de9e7e97fa331667963925531c0199575bcceafbb13c3147e3f  GRCh38_latest_genomic.fna
+
+PS J:\bases_de_donnees\genome> cat .\checksum.txt
+e0761a7ba5d10de9e7e97fa331667963925531c0199575bcceafbb13c3147e3f  GRCh38_latest_genomic.fna
+****** DONE dbSNP
+CLOSED: [2023-01-26 jeu. 17:42]
+/Work/Projects/bisonex/data-alexis-reference/dbSNP>sha256sum GCF_000001405.39.gz                 01/26/2023 04:40:48 PM
+452e1112b6339a9b19821c2a226a8a3ba946e92a47e03e6ae464ef8820ee130d  GCF_000001405.39.gz
+
+PS J:\bases_de_donnees\dbSNP> cat .\checksums.txt
+452e1112b6339a9b19821c2a226a8a3ba946e92a47e03e6ae464ef8820ee130d  GCF_000001405.39.gz
+
+**** DONE Outils
+CLOSED: [2023-01-26 jeu. 17:42]
 |          |    Prod |         Test |
 | VCFtools |  0.1.17 |       0.1.16 |
 | bcftools |    1.14 |         1.16 |
@@ -1339,6 +1424,7 @@ Attention, on a un vcf.gz pour la version de test !!! ne pas utiliser le vcf
 | DP_over_30          |      84708 |     84716 |      84716 |      84724 |      84725 |      84724 |      84724 |      84725 |
 | not_SNP             |      11362 |     11366 |      11366 |      11377 |      11384 |         NA |         NA |         NA |
 | consensual_sequence |       8864 |      8868 |       8868 |       8884 |       8886 |       8898 |       8898 |       8900 |
+| tsv                 |       1087 |           |       1121 |            |            |            |            |            |
 ***** Convention
 post_cleanSam = _cleaned.bam
 post_markDuplicate = _marked_dup.bam
@@ -2575,7 +2661,7 @@ SAM files differ.
 CLOSED: [2023-01-25 Wed 21:58]
 Pas d'impact
 ***** TODO Comparer tsv de sortie
-
+***** TODO Regarder où sont les variants différents
 ** Divers
 *** DONE Vérifier nombre de reads fastq - bam
 CLOSED: [2022-10-09 Sun 22:31]
@@ -2607,6 +2693,9 @@ Semble compliqué avec les nouvelles bases de données
 ** TODO Utiliser le XML de clinvar
 Extraction sous VCF possible avec
 https://github.com/SeqOne/clinvcf
+** TODO Franklin
+*** TODO Classification via API
+https://www.postman.com/genoox-ps/workspace/franklin-api-documentation-s-public-workspace/documentation/6621518-4335389d-12e3-445f-8182-339df95b2a09
 ** Annotation
 Liste complète
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9252745/
