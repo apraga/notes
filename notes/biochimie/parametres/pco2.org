@@ -3,7 +3,7 @@
 #+setupfile: ./fiche.setup
 
 * Localisation, rôle physiologique
-Le CO2 transporté dans le sang est sous 3 formes : bicarbonates, CO2 dissous et acide carbonique H2CO3.
+Le CO2 transporté dans le sang est sous 2 formes : dissous dans le plasma et le cytoplasme des globules rouges et combinés sous forme de bicarbonate, ainsi que lié à l’hémoglobine.
 * Tissus/organes de production et d'élimination
 Le CO2 est produit lors du métabolisme cellulaire normal de manière continue et libéré dans le sang. Il est ensuite transporté dans les poumons, où aura lieu une diffusion des capillaires pulmonaires dans les alvéoles. Il sera ensuite expiré.
 * Valeurs de référence (adulte)
