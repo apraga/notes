@@ -209,15 +209,17 @@ On peut utiliser des symlink mais trop compliqué
 CLOSED: [2022-08-19 Fri 15:18]
 *** DONE Tester patch de @pennae pour gros fichiers
 SCHEDULED: <2022-08-19 Fri>
-*** STRT Télécharger
-- [X] Genome de référence
-- [X] dbSNP
-- [X] OMIM
-- [X] VEP 20G
-- [X] transcriptome (spip)
-- [ ] Refseq
-*** DONE Télécharger les données avec nextflow
-CLOSED: [2022-09-13 Tue 21:37]
+*** STRT Télécharger les données avec nextflow
+**** DONE Genome de référence
+**** DONE dbSNP
+**** TODO VEP 20G
+Ajout vérification checksum -> à vérifier
+**** TODO transcriptome (spip)
+Rajouter checksum manuel
+**** KILL Refseq
+**** STRT OMIM
+codé, à vérifier
+**** TODO ACMG incidental
 *** HOLD Processing bases de données
 **** DONE dbSNP common
 **** DONE Seulement les ID dans dbSNP common !
@@ -840,9 +842,31 @@ CLOSED: [2022-11-08 Tue 22:23]
 CLOSED: [2022-11-19 Sat 21:34]
 ** TODO Annotation avec nextflow
 *** TODO VEP
+***** TODO Utiliser --gene-phenotype ?
+Bases de données sympas mais non à jour ?
+https://www.ensembl.org/info/genome/variation/phenotype/sources_phenotype_documentation.html
+***** TODO Plugin pour CADD, pLI, LOEUF ?
+https://www.ensembl.org/info/docs/tools/vep/script/vep_plugins.html#cadd
+***** TODO Utiliser l'option --hgvsg pour remplaer hgvsg.r ?
+***** TODO Ajout spliceAI ?
 *** TODO Spip
+**** TODO Checksum sur données
 *** TODO Filtrer après VEP
-On doit pouvoir se passer d'un script R avec bcftools
+**** TODO Remplacer avec simplement bcftools filter ?
+*** TODO OMIM
+**** TODO Remplacer script R par bcftools ?
+**** TODO Remplacer script R par vep ?
+*** TODO clinvar
+**** TODO Remplacer script R par bcftools ?
+**** TODO Remplacer script R par vep ?
+*** TODO hgvs
+**** TODO Remplacer par vep ?
+*** TODO ACMG incidental
+**** TODO Inclure dans vep ?
+*** TODO Grantham
+*** TODO LRG
+*** TODO Gnomad
+
 ** DONE Porter exament la version d'Alexis sur Helios
 CLOSED: [2023-01-14 Sat 17:56]
 Branche "prod"
@@ -2644,14 +2668,13 @@ Voir GATK best practice
 ** KILL Utiliser T-to-T comme références
 CLOSED: [2023-01-01 Sun 21:35]
 Semble compliqué avec les nouvelles bases de données
-** TODO Annoter avec bcftools au lieu du script d'alexis ?
-clinvar, etc...
-https://samtools.github.io/bcftools/howtos/annotate.html
-Possible également avec snpsift
 ** TODO Macro excel
 ** TODO Utiliser le XML de clinvar
 Extraction sous VCF possible avec
 https://github.com/SeqOne/clinvcf
+** TODO Franklin
+*** TODO Classification via API
+https://www.postman.com/genoox-ps/workspace/franklin-api-documentation-s-public-workspace/documentation/6621518-4335389d-12e3-445f-8182-339df95b2a09
 ** Annotation
 Liste complète
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9252745/
