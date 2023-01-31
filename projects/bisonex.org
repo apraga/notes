@@ -814,6 +814,25 @@ CLOSED: [2022-12-04 Sun 12:49]
 Pas de pull request
 *** DONE R + packages
 CLOSED: [2022-11-19 Sat 21:05]
+*** TODO Hap.py
+1. Supprimer l’appel à make_dependencies dans cmakelist.txt : on peut tout installer avec nix
+2. la version packagé de boost ne compile pas. Notre version clash sur les composent
+   On désactive les composants et on voit
+NB: on devrait pouvoir éviter de compiler zlib... mais c’est demandé
+On peut donc générer un makefile.
+Le Cmakefile corrigé est dans ~
+
+3. Echec de la compilation
+/Home/Users/apraga/source/source/src/c++/lib/tools/Roc.cpp: In member function 'roc::Level roc::Roc::getTotals(uint64_t) const':
+/Home/Users/apraga/source/source/src/c++/lib/tools/Roc.cpp:178:27: error: 'numeric_limits' is not a member of 'std'
+  178 |         last.level = std::numeric_limits<double>::quiet_NaN();
+      | ^~~~~~~~~~~~~~ |
+      |                |
+Il faut rajouter dans Roc.cpp
+#include <stdexcept>
+#include <limits>
+
+4. Error de link : il manque filesystem dans boost
 ** DONE Exécution
 CLOSED: [2022-09-13 Tue 21:37]
 *** KILL test Bionix
