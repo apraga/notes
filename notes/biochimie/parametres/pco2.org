@@ -28,14 +28,12 @@ La pO2 reflète l’état respiratoire général.
     - Résection chirurgical
     - Pneumopathie inflammatoires
   - soit d’origine non pulmonaire
-
-    | Défaillance           | Atteinte                 | Étiologies                                            |
-    |-----------------------+--------------------------+-------------------------------------------------------|
-    | Contrôle ventilatoire | cérébrale                | infections, traumatismes, tumeurs, AVC                |
-    |                       | centres respiratoire     | perte de contrôle (sédatifs, Parkinson, tétanos...)   |
-    |                       |                          | lésions voies afférentes/éfférente                    |
-    |                       |                          | (traumatisme médullaire cervical, sclérose en plaque) |
-    |                       | récepteurs périphériques | syryngomyiélie, neuropathie diabétique                |
-    | Pompe ventilatoire    | neuromusculaire          | SLA, Guillairn-Barré, toxique, myasthénie             |
-    |                       |                          | hypokalémiée, hypophosphatémie                        |
-    |                       | cage thoracique          | Cyphoscolioase, fibrose, obésité...                   |
+    - défalliance du Contrôle ventilatoire
+      - origine cérébrale : infections, traumatismes, tumeurs, AVC
+      - centres respiratoire :
+        - perte de contrôle (sédatifs, Parkinson, tétanos...)
+        - lésions voies afférentes/éfférente (traumatisme médullaire cervical, sclérose en plaque)
+        - récepteurs périphériques  :  syryngomyiélie, neuropathie diabétique
+      - Pompe ventilatoire
+        - neuromusculaire : SLA, Guillairn-Barré, toxique, myasthénie  hypokalémiée, hypophosphatémie
+        - cage thoracique : Cyphoscolioase, fibrose, obésité...
