@@ -24,4 +24,3 @@ Potentiométrie (électrode de chlorure)
 * Augmentation et diminution
 - Le dosage sert à distinguer les acidoses à trou anionique élevé des acidose hyperchlorémiques (voir fiches bicarbonate) selon la formule TA = Na^{+} + K^{+} - (Cl^{-} + HCO_3^{+})
 - En situation physiologique, la concentration de chlore plasmatique suit la natrémie donc augmente en cas de déshydratation et diminue en cas d’hyperhydratation
-* Compari

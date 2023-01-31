@@ -48,15 +48,20 @@ mail Yannis : données patients +/- simulées
 *** Utiliser données GCAT et uploader le notre ?
 https://www.nature.com/articles/ncomms7275
 *** [#A] Genome in a bottle : NA12878 + autres
-2 versions :
-1. Depuis un fastq correspondant à Illumina  https://github.com/genome-in-a-bottle/giab_data_indexes
+Résumé : https://www.nist.gov/programs-projects/genome-bottle
+Manuscript : https://www.nature.com/articles/s41587-019-0054-x.epdf?author_access_token=E_1bL0MtBBwZr91xEsy6B9RgN0jAjWel9jnR3ZoTv0OLNnFBR7rUIZNDXq0DIKdg3w6KhBF8Rz2RWQFFc0St45kC6CZs3cDYc87HNHovbWSOubJHDa9CeJV-pN0BW_mQ0n7cM13KF2JRr_wAAn524w%3D%3D
+
+Article comparant les variant calling : https://www.biorxiv.org/content/10.1101/2020.12.11.422022v1.full.pdf
+**** KILL Tester le séquencage aussi
+CLOSED: [2023-01-30 lun. 18:30]
+Depuis un fastq correspondant à Illumina  https://github.com/genome-in-a-bottle/giab_data_indexes
    puis on compare le VCF avec les "high confidence"
-2. On séquence directement NA12878 -> inutile pour le pipeline seul
-   Tout résumé ici : https://www.nist.gov/programs-projects/genome-bottle
-   - methode https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/NA12878/analysis/Illumina_PlatinumGenomes_NA12877_NA12878_09162015/IlluminaPlatinumGenomes-user-guide.pdf
-   - vcf https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/NA12878/analysis/Illumina_PlatinumGenomes_NA12877_NA12878_09162015/hg38/2.0.1/NA12878/
-   Article comparant les variant calling : https://www.biorxiv.org/content/10.1101/2020.12.11.422022v1.full.pdf
-   Article pour vcfeval : https://www.nature.com/articles/s41587-019-0054-x
+**** TODO Tester seul la partie bioinformatique
+- methode https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/NA12878/analysis/Illumina_PlatinumGenomes_NA12877_NA12878_09162015/IlluminaPlatinumGenomes-user-guide.pdf
+- vcf
+     https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/NA12878_HG001/latest/GRCh38/
+
+NB: à quoi correspond https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/NA12878/analysis/Illumina_PlatinumGenomes_NA12877_NA12878_09162015/hg38/2.0.1/NA12878/ ??
 *** [#B] Patients centogène avec variants vérifié en Sanger
 *** [#B] Génération de reads avec variants connus
 Comparaison de génération ADN (2019)
