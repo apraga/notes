@@ -214,15 +214,17 @@ On peut utiliser des symlink mais trop compliqué
 CLOSED: [2022-08-19 Fri 15:18]
 *** DONE Tester patch de @pennae pour gros fichiers
 SCHEDULED: <2022-08-19 Fri>
-*** STRT Télécharger
-- [X] Genome de référence
-- [X] dbSNP
-- [X] OMIM
-- [X] VEP 20G
-- [X] transcriptome (spip)
-- [ ] Refseq
-*** DONE Télécharger les données avec nextflow
-CLOSED: [2022-09-13 Tue 21:37]
+*** STRT Télécharger les données avec nextflow
+**** DONE Genome de référence
+**** DONE dbSNP
+**** TODO VEP 20G
+Ajout vérification checksum -> à vérifier
+**** TODO transcriptome (spip)
+Rajouter checksum manuel
+**** KILL Refseq
+**** STRT OMIM
+codé, à vérifier
+**** TODO ACMG incidental
 *** HOLD Processing bases de données
 **** DONE dbSNP common
 **** DONE Seulement les ID dans dbSNP common !
@@ -845,9 +847,31 @@ CLOSED: [2022-11-08 Tue 22:23]
 CLOSED: [2022-11-19 Sat 21:34]
 ** TODO Annotation avec nextflow
 *** TODO VEP
+***** TODO Utiliser --gene-phenotype ?
+Bases de données sympas mais non à jour ?
+https://www.ensembl.org/info/genome/variation/phenotype/sources_phenotype_documentation.html
+***** TODO Plugin pour CADD, pLI, LOEUF ?
+https://www.ensembl.org/info/docs/tools/vep/script/vep_plugins.html#cadd
+***** TODO Utiliser l'option --hgvsg pour remplaer hgvsg.r ?
+***** TODO Ajout spliceAI ?
 *** TODO Spip
+**** TODO Checksum sur données
 *** TODO Filtrer après VEP
-On doit pouvoir se passer d'un script R avec bcftools
+**** TODO Remplacer avec simplement bcftools filter ?
+*** TODO OMIM
+**** TODO Remplacer script R par bcftools ?
+**** TODO Remplacer script R par vep ?
+*** TODO clinvar
+**** TODO Remplacer script R par bcftools ?
+**** TODO Remplacer script R par vep ?
+*** TODO hgvs
+**** TODO Remplacer par vep ?
+*** TODO ACMG incidental
+**** TODO Inclure dans vep ?
+*** TODO Grantham
+*** TODO LRG
+*** TODO Gnomad
+
 ** DONE Porter exament la version d'Alexis sur Helios
 CLOSED: [2023-01-14 Sat 17:56]
 Branche "prod"
@@ -1390,20 +1414,22 @@ Attention : le nombre de lignes = celles sans commentaires (et pas just NC... ca
 $ find . -name filter-depth.vcf -exec sh -c 'echo {}; grep -c -v '^#' {}' \;
 
 Attention, on a un vcf.gz pour la version de test !!! ne pas utiliser le vcf
-|                     |       prod | prod Helios | prod Helios | prod Helios |       test |       test |       test |
-|---------------------+------------+-------------+-------------+-------------+------------+------------+------------|
-| cores               |          4 |           4 |          24 |           1 |         24 |         24 |          1 |
-| gatk                |            |     4.2.4.1 |     4.2.4.1 |     4.2.4.1 |    4.2.4.1 |      4.3.0 |    4.2.3.1 |
-| clinvar             | 2022-09-03 |  2022-09-03 |  2022-09-03 |  2022-09-03 | 2022-12-03 | 2022-12-03 | 2022-12-03 |
-|---------------------+------------+-------------+-------------+-------------+------------+------------+------------|
-| bwa mem             |  128077207 |   128077207 |   128077211 |   128077210 |  128077211 |  128077211 |  128077210 |
-| cleanSam            |  128077207 |             |             |   128077210 |  128077211 |  128077211 |  128077210 |
-| applybqsr           |            |             |   128077211 |             |            |            |            |
-| haplotypecaller     |    1528059 |     1528066 |     1528093 |     1528089 |    1528093 |    1528093 |    1528093 |
-| DP_over_30          |      84708 |             |       84724 |       84725 |      84724 |      84724 |      84725 |
-| not_SNP             |      11362 |             |       11377 |       11384 |         NA |         NA |         NA |
-| consensual_sequence |       8864 |             |        8884 |        8886 |       8898 |       8898 |       8900 |
-| tsv                 |       1087 |        1121 |             |             |            |            |            |
+|                     |       prod |      prod |       prod |       prod |       prod |       test |       test |       test |
+|---------------------+------------+-----------+------------+------------+------------+------------+------------+------------|
+| PC                  |     Karine |    helios |     helios |     helios |     Helios |     Helios |     Helios |     Helios |
+| cores               |          4 |         4 |          4 |         24 |          1 |         24 |         24 |          1 |
+| gatk                |    4.2.4.1 |   4.2.4.1 |    4.2.4.1 |    4.2.4.1 |    4.2.4.1 |    4.2.4.1 |      4.3.0 |    4.2.3.1 |
+| samtools            |       1.10 |      1.10 |       1.13 |       1.13 |       1.13 |       1.13 |            |            |
+| clinvar             | 2022-09-03 |           | 2022-09-03 | 2022-09-03 | 2022-09-03 | 2022-12-03 | 2022-12-03 | 2022-12-03 |
+|---------------------+------------+-----------+------------+------------+------------+------------+------------+------------|
+| bwa mem             |  128077207 | 128077207 |  128077207 |  128077211 |  128077210 |  128077211 |  128077211 |  128077210 |
+| cleanSam            |  128077207 |           |            |            |  128077210 |  128077211 |  128077211 |  128077210 |
+| applybqsr           |            |           |            |  128077211 |            |            |            |            |
+| haplotypecaller     |    1528059 |   1528066 |    1528066 |    1528093 |    1528089 |    1528093 |    1528093 |    1528093 |
+| DP_over_30          |      84708 |     84716 |      84716 |      84724 |      84725 |      84724 |      84724 |      84725 |
+| not_SNP             |      11362 |     11366 |      11366 |      11377 |      11384 |         NA |         NA |         NA |
+| consensual_sequence |       8864 |      8868 |       8868 |       8884 |       8886 |       8898 |       8898 |       8900 |
+| tsv                 |       1087 |           |       1121 |            |            |            |            |            |
 ***** Convention
 post_cleanSam = _cleaned.bam
 post_markDuplicate = _marked_dup.bam
@@ -2620,7 +2646,26 @@ Ref
 | --gcs-max-retries 20                                                                                          | --gcs-max-retries 20                                                                    |
 | --gcs-project-for-requester-pays                                                                              | --gcs-project-for-requester-pays                                                        |
 | --disable-tool-default-read-filters false	PN:GATK ApplyBQSR                                                 | --disable-tool-default-read-filters false     PN:GATK ApplyBQSR                         |
-***** TODO Relancer avec la même version de samtools ?
+
+****** KILL Vérifier sha256sum
+CLOSED: [2023-01-24 Tue 23:00]
+alignment: différent
+****** KILL Comparer bam
+CLOSED: [2023-01-25 Wed 21:58]
+
+/Work/Users/apraga/bisonex/script/files〉picard CompareSAMs LENIENT_LOW_MQ_ALIGNMENT=true LENIENT_DUP=true tmp_63003856_S135/63003856_S135.bam /Work/Groups/bisonex/ref/tmp_63003856_S135/63003856_S135.bam O=compare-bam.tsv
+picard CompareSAMs -LENIENT_LOW_MQ_ALIGNMENT true -LENIENT_DUP true tmp_63003856_S135/63003856_S135.bam /Work/Groups/bisonex/ref/tmp_63003856_S135/63003856_S135.bam -O compare-bam.tsv
+
+VN Program Record attribute differs.
+File 1: 1.13
+File 2: 1.10
+
+SAM files differ.
+[Tue Jan 24 23:12:50 CET 2023] picard.sam.CompareSAMs done. Elapsed time: 7.32 minutes.
+***** DONE Relancer avec la même version de samtools
+CLOSED: [2023-01-25 Wed 21:58]
+Pas d'impact
+***** TODO Comparer tsv de sortie
 ***** TODO Regarder où sont les variants différents
 ** Divers
 *** DONE Vérifier nombre de reads fastq - bam
@@ -2649,14 +2694,13 @@ Voir GATK best practice
 ** KILL Utiliser T-to-T comme références
 CLOSED: [2023-01-01 Sun 21:35]
 Semble compliqué avec les nouvelles bases de données
-** TODO Annoter avec bcftools au lieu du script d'alexis ?
-clinvar, etc...
-https://samtools.github.io/bcftools/howtos/annotate.html
-Possible également avec snpsift
 ** TODO Macro excel
 ** TODO Utiliser le XML de clinvar
 Extraction sous VCF possible avec
 https://github.com/SeqOne/clinvcf
+** TODO Franklin
+*** TODO Classification via API
+https://www.postman.com/genoox-ps/workspace/franklin-api-documentation-s-public-workspace/documentation/6621518-4335389d-12e3-445f-8182-339df95b2a09
 ** Annotation
 Liste complète
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9252745/
