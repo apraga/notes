@@ -57,6 +57,11 @@ https://www.nature.com/articles/ncomms7275
    - vcf https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/NA12878/analysis/Illumina_PlatinumGenomes_NA12877_NA12878_09162015/hg38/2.0.1/NA12878/
    Article comparant les variant calling : https://www.biorxiv.org/content/10.1101/2020.12.11.422022v1.full.pdf
    Article pour vcfeval : https://www.nature.com/articles/s41587-019-0054-x
+
+   La version 4 ajoute 273 gènes "clinically relevant" https://www.biorxiv.org/content/10.1101/2021.06.07.444885v3.full.pdf
+
+   Ajout des zones "difficiles"
+   https://www.biorxiv.org/content/10.1101/2020.07.24.212712v5.full.pdf
 *** [#B] Patients centogène avec variants vérifié en Sanger
 *** [#B] Génération de reads avec variants connus
 Comparaison de génération ADN (2019)
@@ -790,6 +795,7 @@ bedtools intersect -a  dbSNP_common.vcf.gz -b clinvar.vcf.gz
 #+end_src
 $ wc -l intersect.vcf
 220206 intersect.vcf
+*** TODO NA12878
 ** TODO Dépendences avec Nix
 *** DONE GATK
 CLOSED: [2022-10-21 Fri 21:59]
@@ -809,6 +815,8 @@ CLOSED: [2022-12-04 Sun 12:49]
 Pas de pull request
 *** DONE R + packages
 CLOSED: [2022-11-19 Sat 21:05]
+*** TODO hap.py
+https://github.com/Illumina/hap.py
 ** DONE Exécution
 CLOSED: [2022-09-13 Tue 21:37]
 *** KILL test Bionix
@@ -2662,6 +2670,17 @@ CLOSED: [2023-01-25 Wed 21:58]
 Pas d'impact
 ***** TODO Comparer tsv de sortie
 ***** TODO Regarder où sont les variants différents
+** TODO Validation : NA12878
+https://github.com/ga4gh/benchmarking-tools
+Prérequis :
+- [[*hap.py][hap.py]]
+- [[*NA12878][NA12878]]
+
+$ ${HAPPY}/bin/hap.py  \
+      example/happy/PG_NA12878_chr21.vcf.gz \
+      example/happy/NA12878_chr21.vcf.gz \
+      -f example/happy/PG_Conf_chr21.bed.gz \
+      -o test
 ** Divers
 *** DONE Vérifier nombre de reads fastq - bam
 CLOSED: [2022-10-09 Sun 22:31]
