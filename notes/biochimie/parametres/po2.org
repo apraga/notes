@@ -1,4 +1,4 @@
-#+title: pO2
+#+title: pO2 (gas du sang)
 #+author: Alexis Praga
 #+setupfile: ./fiche.setup
 

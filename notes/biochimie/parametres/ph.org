@@ -1,4 +1,4 @@
-#+title: pH
+#+title: pH (gas du sang)
 #+author: Alexis Praga
 #+setupfile: ./fiche.setup
 

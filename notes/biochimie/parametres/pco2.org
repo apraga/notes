@@ -1,4 +1,4 @@
-#+title: pCO2
+#+title: pCO2 (gas du sang)
 #+author: Alexis Praga
 #+setupfile: ./fiche.setup
 

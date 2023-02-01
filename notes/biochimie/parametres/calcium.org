@@ -1,4 +1,4 @@
-#+title: Calcium
+#+title: Calcium (gas du sang)
 #+author: Alexis Praga
 #+setupfile: ./fiche.setup
 

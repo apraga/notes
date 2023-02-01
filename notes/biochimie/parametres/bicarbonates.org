@@ -1,4 +1,4 @@
-#+title: Bicarbonates
+#+title: Bicarbonates (Gaz du sang)
 #+author: Alexis Praga
 #+setupfile: ./fiche.setup
 

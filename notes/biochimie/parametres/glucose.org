@@ -1,0 +1,21 @@
+#+title: Glucose (gas du sang)
+#+author: Alexis Praga
+#+setupfile: ./fiche.setup
+
+
+* Localisation, rôle physiologique
+Le foie est le principal organe de stockage du glycogène et sert de tampon, notamment en relarguant du glucose. Les muscles stockent des quantités importantes de glycogènes mais seulement à des fins musculaire.
+Une petite portion est transportée dans le sang.
+Tous les autres organes consomment du glucose depuis le sang.
+* Tissus/organes de production et d'élimination
+La gluconéogenèse consiste à former du glucose à partir d’acide aminés et glycérol, principalement dans le fois.
+
+La glycolyse convertit du glucose en pyruvate et a lieu dans la plupart des cellules.
+* Valeurs de référence (adulte)
+* Principe analytique de mesure
+* Principales interactions analytiques
+RL1265
+- éthylène glycoe : diminution
+- Acétaminophène (-11.8), dopamin (-12.6), dobutamine (-9.5), héparine (7.8)
+* Vigilance pré-analytiques et analytiques
+* Augmentation et diminution

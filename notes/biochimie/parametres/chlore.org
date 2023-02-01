@@ -1,4 +1,4 @@
-#+title: Chlore
+#+title: Chlore (gas du sang)
 #+author: Alexis Praga
 #+setupfile: ./fiche.setup
 
