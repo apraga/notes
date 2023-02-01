@@ -829,15 +829,13 @@ Pas de pull request
 CLOSED: [2022-11-19 Sat 21:05]
 *** TODO hap.py
 https://github.com/Illumina/hap.py
+#+begin_src sh
 
+ nix-shell -E "with import <nixpkgs> {}; callPackage /Work/Users/apraga/bisonex/pkgs/hap-py.nix {}"
 1. Supprimer l’appel à make_dependencies dans cmakelist.txt : on peut tout installer avec nix
-2. la version packagé de boost ne compile pas. Notre version clash sur les composent
-   On désactive les composants et on voit
-NB: on devrait pouvoir éviter de compiler zlib... mais c’est demandé
-On peut donc générer un makefile.
-Le Cmakefile corrigé est dans ~
 Patch
-#+begin_src diff
+
+#+begin_src sh
 --- CMakeLists.txt.orig	2023-02-01 23:55:18.171758209 +0100
 +++ CMakeLists.txt	2023-02-01 23:07:43.945491855 +0100
 @@ -23,25 +23,25 @@
@@ -884,7 +882,7 @@ Patch
  include_directories(${Boost_INCLUDE_DIRS})
 
 #+end_src
-3. Echec de la compilation
+2. Echec de la compilation
 /Home/Users/apraga/source/source/src/c++/lib/tools/Roc.cpp: In member function 'roc::Level roc::Roc::getTotals(uint64_t) const':
 /Home/Users/apraga/source/source/src/c++/lib/tools/Roc.cpp:178:27: error: 'numeric_limits' is not a member of 'std'
   178 |         last.level = std::numeric_limits<double>::quiet_NaN();
@@ -905,7 +903,10 @@ Patch Roc.cpp
  #include <algorithm>
  #include <cmath>
 #+end_src
-4. Error de link : il manque filesystem dans boost
+3. Utilis zlib static de Nix
+sed 's/set(ZLIB_LIBRARIES/ ???
+
+ex: set(ZLIB_LIBRARIES /nix/store/8n78ppfkbpsabpaifir4ylbc68ri5783-zlib-1.2.13-static/lib/libz.a)
 ** DONE Exécution
 CLOSED: [2022-09-13 Tue 21:37]
 *** KILL test Bionix
