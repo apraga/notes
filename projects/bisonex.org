@@ -56,12 +56,24 @@ Article comparant les variant calling : https://www.biorxiv.org/content/10.1101/
 CLOSED: [2023-01-30 lun. 18:30]
 Depuis un fastq correspondant à Illumina  https://github.com/genome-in-a-bottle/giab_data_indexes
    puis on compare le VCF avec les "high confidence"
+On séquence directement NA12878 -> inutile pour le pipeline seul
 **** TODO Tester seul la partie bioinformatique
+   Tout résumé ici : https://www.nist.gov/programs-projects/genome-bottle
+
 - methode https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/NA12878/analysis/Illumina_PlatinumGenomes_NA12877_NA12878_09162015/IlluminaPlatinumGenomes-user-guide.pdf
 - vcf
      https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/NA12878_HG001/latest/GRCh38/
 
 NB: à quoi correspond https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/NA12878/analysis/Illumina_PlatinumGenomes_NA12877_NA12878_09162015/hg38/2.0.1/NA12878/ ??
+
+   Article comparant les variant calling : https://www.biorxiv.org/content/10.1101/2020.12.11.422022v1.full.pdf
+   Article pour vcfeval : https://www.nature.com/articles/s41587-019-0054-x
+
+   La version 4 ajoute 273 gènes "clinically relevant" https://www.biorxiv.org/content/10.1101/2021.06.07.444885v3.full.pdf
+
+   Ajout des zones "difficiles"
+   https://www.biorxiv.org/content/10.1101/2020.07.24.212712v5.full.pdf
+
 *** [#B] Patients centogène avec variants vérifié en Sanger
 *** [#B] Génération de reads avec variants connus
 Comparaison de génération ADN (2019)
@@ -795,6 +807,7 @@ bedtools intersect -a  dbSNP_common.vcf.gz -b clinvar.vcf.gz
 #+end_src
 $ wc -l intersect.vcf
 220206 intersect.vcf
+*** TODO NA12878
 ** TODO Dépendences avec Nix
 *** DONE GATK
 CLOSED: [2022-10-21 Fri 21:59]
@@ -814,25 +827,86 @@ CLOSED: [2022-12-04 Sun 12:49]
 Pas de pull request
 *** DONE R + packages
 CLOSED: [2022-11-19 Sat 21:05]
-*** TODO Hap.py
-1. Supprimer l’appel à make_dependencies dans cmakelist.txt : on peut tout installer avec nix
-2. la version packagé de boost ne compile pas. Notre version clash sur les composent
-   On désactive les composants et on voit
-NB: on devrait pouvoir éviter de compiler zlib... mais c’est demandé
-On peut donc générer un makefile.
-Le Cmakefile corrigé est dans ~
+*** TODO hap.py
+https://github.com/Illumina/hap.py
+#+begin_src sh
 
-3. Echec de la compilation
+ nix-shell -E "with import <nixpkgs> {}; callPackage /Work/Users/apraga/bisonex/pkgs/hap-py.nix {}"
+1. Supprimer l’appel à make_dependencies dans cmakelist.txt : on peut tout installer avec nix
+Patch
+
+#+begin_src sh
+--- CMakeLists.txt.orig	2023-02-01 23:55:18.171758209 +0100
++++ CMakeLists.txt	2023-02-01 23:07:43.945491855 +0100
+@@ -23,25 +23,25 @@
+     set (VCFEVAL_AVAILABLE 0)
+ endif()
+
+-execute_process(
+-    COMMAND ${CMAKE_SOURCE_DIR}/external/make_dependencies.sh
+-    WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
+-    RESULT_VARIABLE EXTERNAL_SUCCESS)
+-
+-if(NOT "${EXTERNAL_SUCCESS}" STREQUAL "0")
+-    message(FATAL_ERROR "Building external dependencies has failed")
+-endif()
+-
+-set(Boost_USE_STATIC_LIBS        ON)  # only find static libs
+-set(Boost_USE_MULTITHREADED      ON)
+-set(Boost_USE_STATIC_RUNTIME     ON)
++#execute_process(
++#    COMMAND ${CMAKE_SOURCE_DIR}/external/make_dependencies.sh
++#    WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
++#    RESULT_VARIABLE EXTERNAL_SUCCESS)
++
++#if(NOT "${EXTERNAL_SUCCESS}" STREQUAL "0")
++#    message(FATAL_ERROR "Building external dependencies has failed")
++#endif()
++
++#set(Boost_USE_STATIC_LIBS        ON)  # only find static libs
++#set(Boost_USE_MULTITHREADED      ON)
++#set(Boost_USE_STATIC_RUNTIME     ON)
+
+ # un-break library finding
+-set(Boost_NO_BOOST_CMAKE         ON)
+-set(Boost_NO_SYSTEM_PATHS        ON)
++#set(Boost_NO_BOOST_CMAKE         ON)
++#set(Boost_NO_SYSTEM_PATHS        ON)
+
+-set(BOOST_ROOT ${CMAKE_BINARY_DIR})
+-message("Using our own Boost, which was built at ${HAPLOTYPES_SOURCE_DIR}/external/boost_install")
++#set(BOOST_ROOT ${CMAKE_BINARY_DIR})
++#message("Using our own Boost, which was built at ${HAPLOTYPES_SOURCE_DIR}/external/boost_install")
+
+ find_package(Boost 1.55.0 COMPONENTS thread iostreams regex unit_test_framework filesystem system program_options REQUIRED)
+ include_directories(${Boost_INCLUDE_DIRS})
+
+#+end_src
+2. Echec de la compilation
 /Home/Users/apraga/source/source/src/c++/lib/tools/Roc.cpp: In member function 'roc::Level roc::Roc::getTotals(uint64_t) const':
 /Home/Users/apraga/source/source/src/c++/lib/tools/Roc.cpp:178:27: error: 'numeric_limits' is not a member of 'std'
   178 |         last.level = std::numeric_limits<double>::quiet_NaN();
       | ^~~~~~~~~~~~~~ |
       |                |
-Il faut rajouter dans Roc.cpp
-#include <stdexcept>
-#include <limits>
+Patch Roc.cpp
+#+begin_src diff
+--- src/c++/lib/tools/Roc.cpp.orig	2023-02-01 23:52:50.514230141 +0100
++++ src/c++/lib/tools/Roc.cpp	2023-02-01 23:52:52.729223136 +0100
+@@ -34,6 +34,9 @@
+  */
 
-4. Error de link : il manque filesystem dans boost
+ #include "helpers/Roc.hh"
++#include <stdexcept>
++#include <limits>
++
+
+ #include <algorithm>
+ #include <cmath>
+#+end_src
+3. Utilis zlib static de Nix
+sed 's/set(ZLIB_LIBRARIES/ ???
+
+ex: set(ZLIB_LIBRARIES /nix/store/8n78ppfkbpsabpaifir4ylbc68ri5783-zlib-1.2.13-static/lib/libz.a)
 ** DONE Exécution
 CLOSED: [2022-09-13 Tue 21:37]
 *** KILL test Bionix
@@ -2686,6 +2760,17 @@ CLOSED: [2023-01-25 Wed 21:58]
 Pas d'impact
 ***** TODO Comparer tsv de sortie
 ***** TODO Regarder où sont les variants différents
+** TODO Validation : NA12878
+https://github.com/ga4gh/benchmarking-tools
+Prérequis :
+- [[*hap.py][hap.py]]
+- [[*NA12878][NA12878]]
+
+$ ${HAPPY}/bin/hap.py  \
+      example/happy/PG_NA12878_chr21.vcf.gz \
+      example/happy/NA12878_chr21.vcf.gz \
+      -f example/happy/PG_Conf_chr21.bed.gz \
+      -o test
 ** Divers
 *** DONE Vérifier nombre de reads fastq - bam
 CLOSED: [2022-10-09 Sun 22:31]
