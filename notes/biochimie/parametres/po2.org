@@ -20,5 +20,7 @@ pO2 artériel : 70 - 100 mmHg (9.5 - 13.3 kPa)
 - Absence de caillot ou de bulle
 - Seringue/capillaire hépariné
 - 1mL minimum pour une seringue (si < 0.5, choisir une analyse), 100μL pour un capillaire
+- Acheminement rapide : consommation d’oxygène par l’échantillon
+- Consommation d’oxygène impacté par les globules rouges, blancs et la température
 * Augmentation et diminution
 - Une hypoxémie correspond à une diminution de la PaO2 (note: à différencier de l’hypoxie qui est une insuffisance d’oxygénation tissulaire. Il peut y avoir une hypoxémie sans hypoxie !)

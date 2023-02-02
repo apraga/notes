@@ -6,6 +6,7 @@ import Development.Shake.Util
 gds = [ "bicarbonates"
       , "calcium"
       , "chlore"
+      , "glucose"
       , "pco2"
       , "ph"
       , "po2"

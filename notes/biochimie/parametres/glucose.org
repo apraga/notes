@@ -24,7 +24,7 @@ RL1265
 - éthylène glycoe : diminution
 - Acétaminophène (-11.8), dopamine (-12.6), dobutamine (-9.5), héparine (7.8)
 * Vigilance pré-analytiques et analytiques
-- Hyperleucocytose
+- Acheminement rapide : consommation de glucose dans l’échantillon
 * Augmentation et diminution
 - Hyperglycémie : diabète (1, 2, MODY), atteinte du pancréase (pancréatite, néoplasie, traumatisme...), endocrine (hypercortisolisme, acromégaline, phéochromocytome, hyperthyrooidie), médicaments, toxique, T12, Klinefelter, Turner
 - Hypoglycémie : traitement du diabète (sulfamide, insuline), alcool, médicaments, insuffisance hépatique/surrénale/hypophysaire/rénale, malnutrition, tumeur mésenchymateuse, auto-immune, chirurgie bariatriuqe, insulinome
