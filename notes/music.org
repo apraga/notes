@@ -2,18 +2,17 @@
   :PROPERTIES:
   :CUSTOM_ID: todo-bach-2000
   :END:
-
-- TODO Vol. 02 Sacred Cantatas: 11/15
-- TODO Vol. 03 Sacred Cantatas: 0/15
-- TODO Vol. 04 Sacred Cantatas: 0/15
-- TODO Vol. 05 Secular Cantatas: 0/11
-- TODO Vol. 06 Sacred Vocal Works: 0/14
-- TODO Vol. 07 Motets, Chorales, Songs: 01/07
-- TODO Vol. 08 Organ Works: 0/16
-- TODO Vol. 09 Keyboard Works I: 0/11
-- TODO Vol. 10 Keyboard works II: 0/11
-- TODO Vol. 11 Chamber Music: 1/13
-- TODO Vol. 12 Concertos, Orchestral Suites: 0/10
+** TODO Vol. 02 Sacred Cantatas: 11/15
+** TODO Vol. 03 Sacred Cantatas: 0/15
+** TODO Vol. 04 Sacred Cantatas: 0/15
+** TODO Vol. 05 Secular Cantatas: 0/11
+** TODO Vol. 06 Sacred Vocal Works: 0/14
+** TODO Vol. 07 Motets, Chorales, Songs: 01/07
+** TODO Vol. 08 Organ Works: 0/16
+** TODO Vol. 09 Keyboard Works I: 0/11
+** TODO Vol. 10 Keyboard works II: 0/11
+** TODO Vol. 11 Chamber Music: 1/13
+** TODO Vol. 12 Concertos, Orchestral Suites: 0/10
 
 * TODO Bach hanslerr
   :PROPERTIES:
@@ -334,7 +333,7 @@ RED Bags & Trane RED Olé Coltrane RED Live in Seatle
 
 **  Jazz
 - [ ] AIR - Air Time - 1996 (CD - FLAC - Lossless)-1432283.torrent
-- [ ] Abdullah Ibrahim - Yarona - 1995 (CD - FLAC - Lossless)-158236.tor
+- [X] Abdullah Ibrahim - Yarona - 1995 (CD - FLAC - Lossless)-158236.tor
 - [ ] Ahmad Jamal Trio - Ahmad Jamal at the Pershing But Not for Me - 19
 - [ ] Ahmad Jamal Trio - Cross Country Tour 1958-61 - 1998 (CD - FLAC -
 - [ ] Albert Ayler Trio - Spiritual Unity - 1998 (CD - FLAC - Lossless)-

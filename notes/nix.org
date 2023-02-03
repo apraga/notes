@@ -242,3 +242,26 @@ in
 my-r-packages
 
 #+end_src
+** Vérifier les dépendences à l'exécution
+Il faut les mettre dans propagatedBuildInputs (buildInputs ne suffit pas). On vérifie avec :
+#+begin_src sh
+
+$ nix-instantiate -E "with import <nixpkgs> {}; callPackage pkgs/hap-py.nix {}"
+/nix/store/scbx1aiadh24qwwjhskp7jdqngsm31x7-hap.py.drv
+
+$ nix-store -r /nix/store/scbx1aiadh24qwwjhskp7jdqngsm31x7-hap.py.drv
+(...installation...)
+/nix/store/kgxqmk7jdi91jwbrj4qz5q5c4qhh8qzb-hap.py
+
+$ nix-store -q --references /nix/store/kgxqmk7jdi91jwbrj4qz5q5c4qhh8qzb-hap.py
+#+end_src
+
+Si le program en a besoin, wrapper le programme en rajoutant dans nativeBuildInputs makeWrapper :
+#+begin_src sh
+  nativeBuildInputs = [ pkgs.makeWrapper ];
+  postBuild = with lib; with pkgs; ''
+    wrapProgram $out/bin/test.sh\
+      --prefix PATH : ${makeBinPath [ bcftools samtools]}
+  '';
+}
+#+end_src

@@ -93,7 +93,11 @@ CLOSED: [2023-01-22 Sun 22:45]
 
 * La pleiade :la_pleiade:
 ** DONE Le coran
-** STRT Rabelais
+** HOLD Rabelais
+*** DONE Gargantua
+*** DONE Pantagruel
+*** DONE Tiers livre
+CLOSED: [2023-02-03 Fri 21:45]
 ** DONE Duby, [[file:books/duby.md][Oeuvres]]
 ** DONE [[file:books/homere.md][Homère, Iliade -- Odyssée]]
 ** DONE Hugo, [[file:books/travailleurs_de_la_mer.md][Les Travailleurs de la mer]] -- [[file:books/notre_dame_de_paris.md][Notre-Dame de Paris]]
