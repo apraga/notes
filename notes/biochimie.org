@@ -6,34 +6,39 @@ Synthèse par les hépatocytes
 ** Vie
 60% secteur interstitiel, 40% vasculaire (=2/3 protéines circulantes)
 ** Mort
-Demi-vie 20 jours
+Demi-vie 20 jours.
+*Non-excrété* par le glomérule (taille et charge négative)
 ** Effet
-Maintien de la pression oncotique vascualire
-Protéine de transport pour des substances inactives mais rapidement mobilisables : homornes, acides aminés, acide gras, vitamine, médicament
+- Maintien de la pression oncotique vasculaire
+- Protéine de transport pour des substances inactives mais rapidement mobilisables : homornes, acides aminés, acide gras, vitamine, médicament
 ** Indication
-Syndrome inflammatoire chronique
-Fuites protéiques (entééropathies exsudatives, syndrome néphrotique)
-Dénutrition chronique
+- Syndrome inflammatoire chronique
+- Fuites protéiques (entéropathies exsudatives, syndrome néphrotique)
+- Dénutrition chronique
 ** Dosage
 
 * Vitamine D
 ** Naissance
-La vitamine D est apportée par
-- synthèse à partir des rayonnements UV sur la peau
-- l'alimentation (vitamine D2 [végétal] et D3 [animal])
-
+2 sources
+- synthèse à partir des rayonnements UV sur la peau et d’un stéroïde
+- alimentation (vitamine D2 [végétal] et D3 [animal])
 ** Vie
-Elle s'accumule dans le foie puis une première hydroxylation conduit à 25-OH-vitamine D (calcidiol).
-Après transport via le sang dans le rein, une seconde hydroxylation rein conduit à 1,25-di-OH vitamine D (calcitriol = forme active de la vitamine D)
+1. Accumulation dans le foie
+2. première hydroxylation conduit à 25-OH-vitamine D (calcidiol).
+3. Transport via le sang dans le rein puis une seconde hydroxylation rein conduit à 1,25-dihydroxy vitamine D (calcitriol = forme active de la vitamine D)
 
-La première est peu controléee mais la seconde est régulée par la PHT et phosphatémie :
-- PTH, hypophosphatémie, hypocalcémie (via PTH) stimulent la synthèse du calcitriol
-- hyperphosphatémie, hypercalcémie l'inhibent
+Le calcidiol est peu controlé mais la seconde est régulée par la PTH et phosphatémie :
+- augmenté par PTH, hypophosphatémie, hypocalcémie (via PTH)
+- inhibé par hyperphosphatémie, hypercalcémie
+
+#+name: vitamine D
+[[../images/biochimie/vitaminD.png]]
 ** Mort
+Dégradation par oxidation/hydroxylation et excrétion dans les urines/selles
 ** Effet
 Calcitriol:
-- stimule l'absorbtion interstinale du calcium et phosphose
-- os: favorise la minéralisation (en augemntant la calcémie)
+- stimule l'absorbtion intestinale du calcium et phosphose
+- os: favorise la minéralisation (en augmentant la calcémie)
 - rein : stimule la réabsorption tubulaire du phosphore et calcium
 - diminue PTH
 ** Indication
@@ -42,52 +47,87 @@ Calcitriol:
 ** Dosage
 
 * Natrémie
-- Perte de sodium : perte d'eau pour conserver l'osmolalité -> déshydratation extracellulaire pure (natrémie normale)
-- Excès de sodium : rétention d'eau pour conserver l'osmolalité -> hyperhydratation extracellulaire pure (natrémie normale)
-- Perte d'eau : hyperosmolarité -> déshydratation intracellulaire
-  - hypernatrémie
-  - natrémie normale mais avec une substance osmotiquement active (mannitol)
-- Rétention d'eau : hyperhydratation intracellulaire par osmose -> *hyponatrémie*
-  - ingestion d'eau trop importante
-  - ADH se déclenche trop tôt
-  - excrétion d'eau diminuée
+Osmolalité = $2 \times [NA^+] + [Gly] \approx 285 $  mOsm/kg d’eau
 
-Hyponatrémie =
-- soit erreur de mesure : osmolalité normale mais hyperprotidémie et hyperlipidémie entraînent une fausse mesure d'hyponatrémie (dilution)
-- soit hyperosmolalité par glycémie ou méthanel
-- soit hypoosmolalité (hyponatrémie vraie) = hyperhydratation *intracellulaire*
+** Déshydratation extracellulaire = perte de sodium
+Pure si iso-osmolaire (l’eau "suit")
+
+Étiologie :
+- perte extrarénale : bonne réponse du rein donc oligurie, natriurièse effondrée, urines concentrées
+- perte rénale : pas de réponse du rein donc diurièse normale, natriurièse élevée, urines non concentrées
+** Hyperhydratation extracellulaire = excès de sodium
+Iso-osmolaire (l’eau "suit")
+
+Étiologies : insuffisance cardiaque, cirrhose ascitique, syndrome néphrotique surtout
+** Déshydratation intracellulaire = perte d’eau
+Donc hyperosmolalité plasmatique avec appel d’eau intra-cellulaire
+
+Étiologie :
+- hypernatrémie =
+  - déficit en eau seul (DIC) =
+    - perte extra-rénale en eau =
+    - perte rénale en eau = diabète insipide
+  - déficit en eau > déficit en sodium (DIC + DEC) =
+    - natriurèse adaptée (basse): sueurs, pertes digesties
+    - natriurèse inadaptée (normale): diurèse osmotique
+  - gain eau > gain sodium = apport excessif NaCl
+- natrémie normale mais soluté osmotiquement actif : mannitole, éthylène glycol... -> "trou anionique" entre osmolalité mesurée et calculée
+
+** Hyperhydratation intracellulaire = excès d’eau
+1. Éliminer **fausse** hyponatrémie
+   - hyperprotidémie et hyperlipidémie (dilution)
+   - hypertonique : hyperglycémie important, méthanol, éthanol
+2. Hypoosmolaire = hyponatrémie vraie
+   - osmolalité urinaire diminué : apport augmenét (polydipsie, apport faible en solutié)
+   - osmolalité urinaire augmenté : extracellulaire
+     - diminué : déficit sodium > déficit eau
+       - natriurièse adaptée (diminuée) : perte cutanées, digestive, 3e secteur
+       - natriurièse inadaptée (augmentée) : perte rénale : diurétique, insuffisance surrénale..
+     - normal : excès d’eau : SIADH++, hypothyroïdie, hypocortisolisme
+     - augmenté : excès d’eau > excès sodium : insuffisance cardiaque, cirrhose hépatique, syndrome néphrotique, insuffisance rénale
 * BNP (Brain natriuretic peptide)
 ** Naissance
 synthétisé par myocyte du ventricule gauche (et droit) en réponse à une surcharge volémique
 ** Vie
-- Form de réserve = pré-proBNP, clivé en pro-BPN, clivé en NPT-proBPN (inactif) et BNP (actif).
+- Form de réserve = pré-proBNP, clivé en pro-BPN, clivé en NT-proBNP (inactif) et BNP (actif).
 Se fixe sur les récepteurs de type A sur endothélium vasculaire
 - Stockage : non
 ** Mort:
 - BNP: demi-vie de 20min puis dégradé endothéliium
-- Nt-proBNP = éliminé dans tous les tissus où le débit est élevé. Demi-vie : 1-2h pour NT-proBNP
-  : 20min pour BPN,
+- Nt-proBNP = éliminé dans tous les tissus où le débit est élevé. Demi-vie : 1-2h pour NT-proBNP, 20min pour BPN,
 ** Effet
 compense la surcharge volémique par
 - vasodilatation périphérique
-  natriurétique
+-  natriurétique
 - augmentation filtration glomérulaire (*diurétique*)
 - diminution réabsorption du sodium (*natriurétique)
 - inhibition du système Rénine-Angiotensive-Aldostérone
 ** Indication
 marqueur global de l’issufisance cardiaque (diagnostic, pronostic, suivi)
 ** Dosage
+* Créatine
+** Vie
+Il s’agit d’un produit de l’arginine (transformation en glycine par la glycine amdinotransferase, qui va générer du guanidinoacetate et de l’ornithin. Cette première est méthylée en créatine). Ces réaction ont lieu dans le foie, rein et cerveau.
+
+La créatine est transportée dans les muscles squelettique
+
+** Mort
+La phosphorylation de la créatine sert à faire la phosphocréatine, qui est un réservoir d’énergie (muscle squelettique, cerveau surtout) car la déphosphorylation permet de créer de l’ATP.
+$creatine + ATP \leftrightarrow phosphocreatine + ADP $
+
+Pour l’excrétion dans l’urine, la créatine est convertie en créatinine.
 * CPK (créatine-phosphokinase)
 ** Naissance
-Enzyme dans le cytosole ou mitochondrie des cellule : muscles squelettiques++ et cardiaque, cerveau, rein, gastrointestinal
+Enzyme dans le cytosol ou mitochondrie des cellule : muscles squelettiques++ et cardiaque, cerveau, rein, gastrointestinal
 - CK-MM (95%) = muscle strié squelettique
 - CK-MB = muscle cardiaque
 - CK-BB (= cerveau, gastro-interdsstinal
 ** Vie
 Catalyse la phosphorylation de la créatine en créatine phosphate par l'ATP (avec production ADP)
+Voir [[Créatine]]
 ** Mort
 ** Effet
-contraction musculaire :
+contraction musculaire
 ** Indication
 - Infarctus du myocarde, myopathie, myosite
 - Certains cancers, affection du système nerveux central
@@ -103,7 +143,7 @@ La clairance de la créatinine est estimée par le Débit de Filtration Gloméru
 
 Attention : formules non utilisable chez l’enfant (formale du Schwartz), variation aigüe de la fonction rénale, cirrhose hépatique décompoensée, gabarit hors norme, amyotrophie important, grossese
 
-dans ce cas, utiliser clairrance urinaire sur urines de 24h = créat urinaire*débit/créat sanguine
+dans ce cas, utiliser clairance urinaire sur urines de 24h = créat urinaire*débit/créat sanguine
 * Créatinine
 ** Naissance
 Créatine = synthétisée dans le foie par la méthylation de glycocyamine (lui-même synthétisé dans le foie à partir d’arginine et glycine)
