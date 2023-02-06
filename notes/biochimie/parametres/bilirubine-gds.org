@@ -18,6 +18,7 @@ La mesure sera donc faite pour une longueur d’onde donnée.
 - enzyme glucuronyl-transférase : augmentation
 -  bleu de méthylène (diminué), bleu sulfan, cyanméthémoglbine
 * Vigilance pré-analytiques et analytiques
+- Éviter exposition à la lumière
 * Augmentation et diminution
 - Augmenté si ictère nucléaire
 - normales

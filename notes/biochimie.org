@@ -158,7 +158,45 @@ Pas de réabsorption par le rein, donc marqueur de fonction rénale
 ** Dosage
 
 * TODO Ammoniaque
+** Naissance
+Libéré par la dégradation des acides aminées.
+** Vie
+** Mort
+Pour éviter une excrétion continue d’eau. il est converti en urée dans le foie puis excrété. Cela permet d’éviter la toxicité de l’ammoniaque.
+** Effet
+** Indication
+** Dosage
+* Cycle de l’urée
+Permet d’éliminer l’ammoniaqueet l’urée
+** Initialisation
+Le CO_2 passe du cytosol dans la mitochondrie puis : $CO_2 + H_2 O \leftarrow HCO_3^-  + H^+$
+Puis $HCO_3^- + ATP \rightarrow NH_3 + ADP$
+
+Le NH_3 est converti en carbamate -> carbamoyl-P (catalysé par N-acetyl glutamate, qui entre dans le cycle
+** Cyle
+1. Le Carbamoyl phosphate est converti en citrulline (raction de condensation avec l’orinithine).
+2. La citrulline sort de la mitochonrie et va se condense avec l’aspartate. Le "cleavage" va créée de l’arginine et du fumarate.
+3. L’arginine est clivée par l’arignase, libérant de l’urée et reconstituant de l’orinithine, qui retourne dans la mitochondrie.
+
 * TODO Corps cétoniques
+* Acides aminées
+
+Doivent être apporté par l’alimentation:
+- histidine, isoleucine, leucine, lysine, methionine, phenylalanine, threonine, tryptophan, valine
+Non-essentiels
+- alanine, arginine, asparagine, aspartate, cysteine, glutamate, glutamine, glycine, proline, serine, tyrosine
+
+** Utilisé par la néoglucogenèse : glutamate, glutamine, alanine, aspartate, asparagine
+Le glutamate sert à convertir ces acides aminé entre eux.
+** Formé depuis l’aspartate : lysine, thréoine, méthionine, cystéine
+** Proline
+NB: la proline a une structure en anneau rigide et va donc contraindre fortement la structure de la protéine
+** Sérine, glycine
+Non essentiels, dérive de 3-phosphoglycérate
+** Leucine, isoleucine, valine
+Essentiels. Squelette carboné venant du pyruvate
+** Phenylaaline, tyrosine, tryptophan
+"Aromatique".
 * Foie
 ** Physiologie
 Énergie:
