@@ -2717,60 +2717,32 @@ Prérequis :
 - [[*NA12878][NA12878]]
 https://github.com/genome-in-a-bottle/giab_FAQ
 
-Télécharger :
-#+begin_src
-
-wget       https://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/release/NA12878_HG001/latest/GRCh38/HG001_GRCh38_1_22_v4.2.1_benchmark.bed
-wget       https://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/release/NA12878_HG001/latest/GRCh38/HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz
-wget       https://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/release/NA12878_HG001/latest/GRCh38/HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz.tbi
-wget https://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/release/NA12878_HG001/latest/md5.in
-md5sum ok
-#+end_src
-
-Renommer chromosomes sur BED
-#+begin_src
-
-sed -i.bak \
--e 's/chr1/NC_000001.11/' \
--e 's/chr2/NC_000002.12/' \
--e 's/chr3/NC_000003.12/' \
--e 's/chr4/NC_000004.12/' \
--e 's/chr5/NC_000005.10/' \
--e 's/chr6/NC_000006.12/' \
--e 's/chr7/NC_000007.14/' \
--e 's/chr8/NC_000008.11/' \
--e 's/chr9/NC_000009.12/' \
--e 's/chr10/NC_000010.11/' \
--e 's/chr11/NC_000011.10/' \
--e 's/chr12/NC_000012.12/' \
--e 's/chr13/NC_000013.11/' \
--e 's/chr14/NC_000014.9/' \
--e 's/chr15/NC_000015.10/' \
--e 's/chr16/NC_000016.10/' \
--e 's/chr17/NC_000017.11/' \
--e 's/chr18/NC_000018.10/' \
--e 's/chr19/NC_000019.10/' \
--e 's/chr20/NC_000020.11/' \
--e 's/chr21/NC_000021.9/' \
--e 's/chr22/NC_000022.11/' \
--e 's/chrX/NC_000023.11/' \
--e 's/chrY/NC_000024.10/' \
--e 's/chrMT/NC_012920.1/' /Work/Groups/bisonex/NA12878/HG001_GRCh38_1_22_v4.2.1_benchmark.bed \
-#+end_src
-
-et sur vcf
-#+begin_src
-
-awk '{print "chr"$2" "$1}' /Work/Groups/bisonex/data/genome/GRCh38.p13/chromosome_mapping.txt > /Work/Groups/bisonex/data/genome/GRCh38.p13/chromosome_mapping_reverse.txt
-
-bcftools annotate --rename-chrs /Work/Groups/bisonex/data/genome/GRCh38.p13/chromosome_mapping_reverse.txt /Work/Groups/bisonex/NA12878/HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz  -o /Work/Groups/bisonex/NA12878/HG001_GRCh38_1_22_v4.2.1_benchmark_renam
-ed.vcf.gz
-#+end_src
 
 HGREF=/Work/Groups/bisonex/data-alexis-reference/genome/GRCh38_latest_genomic.fna ./result/bin/hap.py /Work/Groups/bisonex/NA12878/HG001_GRCh38_1_22_v4.2.1
 _benchmark_renamed.vcf.gz script/files/vcf/NA12878_NIST7035_vep_annot.vcf -f /Work/Groups/bison
 ex/NA12878/HG001_GRCh38_1_22_v4.2.1_benchmark.bed -o test
 
+na1878.slurm
+#+begin_src slurm
+#!/bin/bash
+#SBATCH -c 4
+#SBATCH -p smp
+#SBATCH --time=01:00:00
+#SBATCH --mem=32G
+
+module load nix/2.11.0
+export HGREF=/Work/Groups/bisonex/data-alexis-reference/genome/GRCh38_latest_genomic.fna
+dir=/Work/Groups/bisonex/data/NA12878/GRCh38
+hap.py ${dir}/HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz script/files/vcf/NA12878_NIST7035.vcf -f ${dir}/HG001_GRCh38_1_22_v4.2.1_benchmark.bed -o test
+#+end_src
+*** DONE Test 1 : vep annot : exécrable
+CLOSED: [2023-02-06 lun. 13:40]
+INDEL    ALL       276768       274    276494         1500       257        968     26     15       0.000990          0.516917        0.645333         0.001976                     NaN                     NaN                   1.483361                   6.129187
+INDEL   PASS       276768       274    276494         1500       257        968     26     15       0.000990          0.516917        0.645333         0.001976                     NaN                     NaN                   1.483361                   6.129187
+  SNP    ALL      1937706      1193   1936513         3338       106       2037     11      2       0.000616          0.918524        0.610246         0.001231                  2.0785                1.861183                   1.539064                   2.703663
+  SNP   PASS      1937706      1193   1936513         3338       106       2037     11      2       0.000616          0.918524        0.610246         0.001231                  2.0785                1.861183                   1.539064                   2.703663
+*** Test 2 sans filtre vep
+*** Test 3 : a
 ** Divers
 *** DONE Vérifier nombre de reads fastq - bam
 CLOSED: [2022-10-09 Sun 22:31]
