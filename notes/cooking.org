@@ -206,22 +206,14 @@ chocolat
    [[https://homegrownhappiness.co.nz/sourdough-brioche/]]
 
 ** RETRY Brownie
-   :PROPERTIES:
-   :CUSTOM_ID: retry-brownie
-   :END:
+ [[https://tasty.co/recipe/ultimate-brownies]]
 
-*** [[https://tasty.co/recipe/ultimate-brownies]]
-    :PROPERTIES:
-    :CUSTOM_ID: httpstasty.corecipeultimate-brownies
-    :END:
-
-- 
-
-  - -33% en sucre ** café en poudre ok ** problème de cuisson : centre
-    pas assez cuit. Brownie trop épais ? ** 2eme essai : avec les temps
-    recommandé, au milieu du four, trop cuit ! (comme un cake, trop
-    épais) ** => cuire moins+++ (30min), utiliser du chocolat à 70%,
-    bien respecter la dose de cacao en poudre, bien battre++
+*** Notes
+- 2/3 quantités -> ok pour moule à tarte
+- café en poudre ok mais 1 seul petit sachet !
+- 2 sachets d'expresso en poudre : ok, ne se sentent pas après cuisson
+- cuisse 30min 180° dans plat à tarte
+- bien respecter la dose de cacao en poudre, bien battre++
 
 *** LOVEIT Serious eats
     :PROPERTIES:
@@ -562,15 +554,21 @@ Résultat final bon. Mais
 
 [[https://www.youtube.com/watch?v=ETkk7QXbtlw][de Conticini]]
 
-- Problème de la quantité : avec 3/4 de la crème, léger surplus pour une
-  grosse galette ?
+Pour *deux* crème frangipane (diviser par 2 pour une galette !!)
+• 110 gr de beurre
+• 190 gr de poudre d’amandes
+• 130 gr de sucre glace
+• 114 gr d’œufs
+• 25 gr de rhum brun
+• 300 gr de crème pâtissière
+
+*** Notes
 - Pâte feuilletée inversée plus intéressante que la simple => prendre la
   recette de PPAP
 - Attention à mettre suffisament d'eau dans la pâte feuilletée : trop
   dure sinon (et se déchire)
-- Frangipane sortie de la galette (alors qu'il en manquait) => réappuyer
-  pour souder après l'avoir retourné semble fontionner
-
+- Frangipane sortie de la galette (alors qu'il en manquait) => bien souder
+- le rhum après avoir cuit la crème patissière n'est pas trop fort (mais ne pas mélanger à la crème d'amande pour ne pas la faire trancher)
 ** RETRY Gâteau au chocolat
    :PROPERTIES:
    :CUSTOM_ID: retry-gâteau-au-chocolat
