@@ -1,4 +1,4 @@
-#+title: Oxyhémoglobine
+#+title: Méthémoglobine
 #+author: Alexis Praga
 #+setupfile: ./fiche.setup
 
@@ -7,7 +7,9 @@
 * Tissus/organes de production et d'élimination
 * Valeurs de référence (adulte)
 * Principe analytique de mesure
+Méthode d’absorption spectrale : l’absorbance de chaque substance est proportionnelle à sa concentration.
+La mesure sera donc faite pour une longueur d’onde donnée.
 * Principales interactions analytiques
-- Hyperbilirubine (augmentation)
+- Hyperlipémie
 * Vigilance pré-analytiques et analytiques
 * Augmentation et diminution
