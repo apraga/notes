@@ -2717,8 +2717,6 @@ Prérequis :
 - [[*NA12878][NA12878]]
 *** TODO GIAB
 https://github.com/genome-in-a-bottle/giab_FAQ
-Article décrivant
-https://www.biorxiv.org/content/10.1101/2020.07.24.212712v5.full.pdf
 
 HGREF=/Work/Groups/bisonex/data-alexis-reference/genome/GRCh38_latest_genomic.fna ./result/bin/hap.py /Work/Groups/bisonex/NA12878/HG001_GRCh38_1_22_v4.2.1
 _benchmark_renamed.vcf.gz script/files/vcf/NA12878_NIST7035_vep_annot.vcf -f /Work/Groups/bison
@@ -2737,7 +2735,7 @@ export HGREF=/Work/Groups/bisonex/data-alexis-reference/genome/GRCh38_latest_gen
 dir=/Work/Groups/bisonex/data/NA12878/GRCh38
 hap.py ${dir}/HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz script/files/vcf/NA12878_NIST7035.vcf -f ${dir}/HG001_GRCh38_1_22_v4.2.1_benchmark.bed -o test
 #+end_src
-**** TODO Comprendre pourquoi il y a beaucoup trop de faux négatifs
+**** TODO beaucoup trop de faux négatifs -> trop d'intronique probablement !
 ***** DONE Test 1 : vep annot : beaucoup trop de faux négatif
 CLOSED: [2023-02-06 lun. 13:40]
  Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.Precision  METRIC.Frac_NA  METRIC.F1_Score  TRUTH.TOTAL.TiTv_ratio  QUERY.TOTAL.TiTv_ratio  TRUTH.TOTAL.het_hom_ratio  QUERY.TOTAL.het_hom_ratio
@@ -2779,15 +2777,26 @@ Exemple du log
 2023-02-06 13:50:14 Reference NC_000001.11 calls contains 426 variants.
 2023-02-06 13:50:15 Reference NC_000002.12 baseline contains 325877 variants.
 2023-02-06 13:50:15 Reference NC_000002.12 calls contains 320 variants.
-***** TODO Utiliser les vcf d’autres pipeline pour vérifier
 ***** TODO Regarder quelques variants à la main
 Ex:
 Il manque NC_000001.11    783006  .       A       G       50      PASS
 Il y a A -> G et C -> A sur cette position
-***** Génome au lieu d’xome ???
+**** TODO Utiliser seulement exons
+***** Utiliser les coordonnées des exons
+UCSC knownGene : list des positions des exons par gene selon GENCODE [[http://hgdownload.soe.ucsc.edu/goldenPath/hg38/database/knownGene.txt.gz][Fichier]] [[http://genome.ucsc.edu/cgi-bin/hgTables?hgta_doSchemaDb=hg18&hgta_doSchemaTable=knownGene][Détail]]
+inspiré de https://www.nature.com/articles/srep17875
+
+Autre solution: aller directement dans GENCODE (1.5Go non compressé)
+#+begin_src sh
+wget https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/latest_release/gencode.v42.annotation.gtf.gz
+gunzip gencode.v42.annotation.gtf.gz
+grep exon gencode.v42.annotation.gtf | awk '{print $1" "$4" "$5} > exons.csv
+#+end_src
+73Mo au total
+
+À vérifier (sinon refseq)
 *** TODO Platinum genome
 https://emea.illumina.com/platinumgenomes.html
-doi:10.1101/gr.210500.116
 ** Divers
 *** DONE Vérifier nombre de reads fastq - bam
 CLOSED: [2022-10-09 Sun 22:31]

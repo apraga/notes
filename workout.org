@@ -5786,3 +5786,6 @@ Extension: 3x22
 Pistols : 3x4
 - Planche tucked push-up: 3x{6+4} !
 Compression: 3x9
+* <2023-02-06 Mon> Parkour
+Extérieur, solo
+Wall-climb mais très en force
