@@ -68,7 +68,7 @@ Donc hyperosmolalité plasmatique avec appel d’eau intra-cellulaire
     - perte extra-rénale en eau =
     - perte rénale en eau = diabète insipide
   - déficit en eau > déficit en sodium (DIC + DEC) =
-    - natriurèse adaptée (basse): sueurs, pertes digesties
+    - natriurèse adaptée (basse): sueurs, pertes digestives
     - natriurèse inadaptée (normale): diurèse osmotique
   - gain eau > gain sodium = apport excessif NaCl
 - natrémie normale mais soluté osmotiquement actif : mannitole, éthylène glycol... -> "trou anionique" entre osmolalité mesurée et calculée
@@ -141,16 +141,12 @@ La clairance de la créatinine est estimée par le Débit de Filtration Gloméru
   - Schwartz : enfant
   - recos HAS: CKD-EPI si dosage enzymatique, MDRD si colorimétrique
 
-Attention : formules non utilisable chez l’enfant (formale du Schwartz), variation aigüe de la fonction rénale, cirrhose hépatique décompoensée, gabarit hors norme, amyotrophie important, grossese
+Attention : formules non utilisable chez l’enfant (formale du Schwartz), variation aigüe de la fonction rénale, cirrhose hépatique décompensée, gabarit hors norme, amyotrophie important, grossese
 
 dans ce cas, utiliser clairance urinaire sur urines de 24h = créat urinaire*débit/créat sanguine
 * Créatinine
 ** Naissance
-Créatine = synthétisée dans le foie par la méthylation de glycocyamine (lui-même synthétisé dans le foie à partir d’arginine et glycine)
-Elle est transportée par le sang aux muscles, cerveau, organe. Par phosphorylation devient la phosphocréatine à l’aide de créatine kinase (voir [[*CPK (créatine-phosphokinase)][CPK (créatine-phosphokinase)]] )
-La créatinine est un produit de cette transformation.
-
-La créatinine est aussi sécrétée par le rein
+Pour excrétion dans les urine, la [[Créatine][créatine]] est tansformée en créatinine
 ** Vie
 Libérée par le muscle
 ** Mort
@@ -161,6 +157,46 @@ Libérée par le muscle
 Pas de réabsorption par le rein, donc marqueur de fonction rénale
 ** Dosage
 
+* TODO Ammoniaque
+** Naissance
+Libéré par la dégradation des acides aminées.
+** Vie
+** Mort
+Pour éviter une excrétion continue d’eau. il est converti en urée dans le foie puis excrété. Cela permet d’éviter la toxicité de l’ammoniaque.
+** Effet
+** Indication
+** Dosage
+* Cycle de l’urée
+Permet d’éliminer l’ammoniaqueet l’urée
+** Initialisation
+Le CO_2 passe du cytosol dans la mitochondrie puis : $CO_2 + H_2 O \leftarrow HCO_3^-  + H^+$
+Puis $HCO_3^- + ATP \rightarrow NH_3 + ADP$
+
+Le NH_3 est converti en carbamate -> carbamoyl-P (catalysé par N-acetyl glutamate, qui entre dans le cycle
+** Cyle
+1. Le Carbamoyl phosphate est converti en citrulline (raction de condensation avec l’orinithine).
+2. La citrulline sort de la mitochonrie et va se condense avec l’aspartate. Le "cleavage" va créée de l’arginine et du fumarate.
+3. L’arginine est clivée par l’arignase, libérant de l’urée et reconstituant de l’orinithine, qui retourne dans la mitochondrie.
+
+* TODO Corps cétoniques
+* Acides aminées
+
+Doivent être apporté par l’alimentation:
+- histidine, isoleucine, leucine, lysine, methionine, phenylalanine, threonine, tryptophan, valine
+Non-essentiels
+- alanine, arginine, asparagine, aspartate, cysteine, glutamate, glutamine, glycine, proline, serine, tyrosine
+
+** Utilisé par la néoglucogenèse : glutamate, glutamine, alanine, aspartate, asparagine
+Le glutamate sert à convertir ces acides aminé entre eux.
+** Formé depuis l’aspartate : lysine, thréoine, méthionine, cystéine
+** Proline
+NB: la proline a une structure en anneau rigide et va donc contraindre fortement la structure de la protéine
+** Sérine, glycine
+Non essentiels, dérive de 3-phosphoglycérate
+** Leucine, isoleucine, valine
+Essentiels. Squelette carboné venant du pyruvate
+** Phenylaaline, tyrosine, tryptophan
+"Aromatique".
 * Foie
 ** Physiologie
 Énergie:

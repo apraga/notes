@@ -14,15 +14,15 @@ gds = [ "bicarbonates"
 
 main :: IO ()
 main = shakeArgs shakeOptions{shakeFiles="_build"} $ do
-    want ["_build" </> x <.> "docx" | x <- gds ]
+    want [ "_build" </> x <.> "docx" | x <- gds ]
 
     phony "clean" $ do
         putInfo "Cleaning files in _build"
         removeFilesAfter "_build" ["//*"]
 
-    -- phony "docx" $ do
-    --     org <- getDirectoryFiles "" ["parametres//*.org"]
-    --     need [ "_build" </> dropDirectory1 (c -<.> "docx") | c <- org ]
+    phony "docx" $ do
+        org <- getDirectoryFiles "" ["parametres//*.org"]
+        need [ "_build" </> dropDirectory1 (c -<.> "docx") | c <- org ]
 
     "_build//*.docx" %> \out -> do
         let c = "parametres" </> dropDirectory1 out -<.> "org"
