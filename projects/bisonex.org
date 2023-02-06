@@ -2735,14 +2735,43 @@ export HGREF=/Work/Groups/bisonex/data-alexis-reference/genome/GRCh38_latest_gen
 dir=/Work/Groups/bisonex/data/NA12878/GRCh38
 hap.py ${dir}/HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz script/files/vcf/NA12878_NIST7035.vcf -f ${dir}/HG001_GRCh38_1_22_v4.2.1_benchmark.bed -o test
 #+end_src
-*** DONE Test 1 : vep annot : exécrable
+*** DONE Test 1 : vep annot : beaucoup trop de faux négatif
 CLOSED: [2023-02-06 lun. 13:40]
+ Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.Precision  METRIC.Frac_NA  METRIC.F1_Score  TRUTH.TOTAL.TiTv_ratio  QUERY.TOTAL.TiTv_ratio  TRUTH.TOTAL.het_hom_ratio  QUERY.TOTAL.het_hom_ratio
 INDEL    ALL       276768       274    276494         1500       257        968     26     15       0.000990          0.516917        0.645333         0.001976                     NaN                     NaN                   1.483361                   6.129187
 INDEL   PASS       276768       274    276494         1500       257        968     26     15       0.000990          0.516917        0.645333         0.001976                     NaN                     NaN                   1.483361                   6.129187
   SNP    ALL      1937706      1193   1936513         3338       106       2037     11      2       0.000616          0.918524        0.610246         0.001231                  2.0785                1.861183                   1.539064                   2.703663
   SNP   PASS      1937706      1193   1936513         3338       106       2037     11      2       0.000616          0.918524        0.610246         0.001231                  2.0785                1.861183                   1.539064                   2.703663
-*** Test 2 sans filtre vep
-*** Test 3 : a
+*** Test 3 : indexer vcf de reference
+*** Test 3 sans filtre vep : idem
+Benchmarking Summary:
+ Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.Precision  METRIC.Frac_NA  METRIC.F1_Score  TRUTH.TOTAL.TiTv_ratio  QUERY.TOTAL.TiTv_ratio  TRUTH.TOTAL.het_hom_ratio  QUERY.TOTAL.het_hom_ratio
+INDEL    ALL       276768     10535    266233        52169     10969      30616   3552   2122       0.038064          0.491069        0.586862         0.070652                     NaN                     NaN                   1.483361                   0.509510
+INDEL   PASS       276768     10535    266233        52169     10969      30616   3552   2122       0.038064          0.491069        0.586862         0.070652                     NaN                     NaN                   1.483361                   0.509510
+  SNP    ALL      1937706    105753   1831953       357652     74634     177259  35111    797       0.054576          0.586270        0.495619         0.099857                  2.0785                 1.42954                   1.539064                   0.324923
+  SNP   PASS      1937706    105753   1831953       357652     74634     177259  35111    797       0.054576          0.586270        0.495619         0.099857                  2.0785                 1.42954                   1.539064                   0.324923
+*** Test 4 avec vcfeval sur vep_annot : idem
+#+begin_src
+#!/bin/bash
+#SBATCH -c 4
+#SBATCH -p smp
+#SBATCH --time=01:00:00
+#SBATCH --mem=32G
+module load nix/2.11.0
+export HGREF=/Work/Groups/bisonex/data-alexis-reference/genome/GRCh38_latest_genomic.fna dir=/Work/Groups/bisonex/data/NA12878/GRCh38
+rtg vcfeval -b  /Work/Groups/bisonex/data/NA12878/GRCh38/HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz  -c files/vcf/NA12878_NIST7035_vep_annot.vcf.gz  -o test-rtg -t /Work/Groups/bisonex/data/genome/GRCh38.p13/genomeRef.sdf
+#+end_src
+
+Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
+----------------------------------------------------------------------------------------------------
+    1.000               2984           2682       1840    3890296     0.5931       0.0008     0.0015
+     None               2984           2682       1841    3890296     0.5930       0.0008     0.0015
+
+Exemple du log
+2023-02-06 13:50:14 Reference NC_000001.11 baseline contains 307854 variants.
+2023-02-06 13:50:14 Reference NC_000001.11 calls contains 426 variants.
+2023-02-06 13:50:15 Reference NC_000002.12 baseline contains 325877 variants.
+2023-02-06 13:50:15 Reference NC_000002.12 calls contains 320 variants.
 ** Divers
 *** DONE Vérifier nombre de reads fastq - bam
 CLOSED: [2022-10-09 Sun 22:31]
