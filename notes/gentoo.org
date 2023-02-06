@@ -53,3 +53,8 @@ Changer ExecStart dans /lib/systemd/system/zfs-mount.service pour monter seuleme
 #+begin_src sh
 ExecStart=/sbin/zfs mount data
 #+end_src
+* Synchronisation iphone
+pour la musique, installer OPlayerHD Lite sur l'iphone et suivre les instructions https://wiki.gentoo.org/wiki/Apple_iPod,_iPad,_iPhone
+#+begin_src  sh
+ifuse --documents  com.olimsoft.oplayer.lite /mnt/iphone-oplayer
+#+end_src
