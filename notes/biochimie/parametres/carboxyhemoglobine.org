@@ -1,10 +1,10 @@
-#+title: Carboxyhémoglobine
+#+title: Carboxyhémoglobine (gas du sang)
 #+author: Alexis Praga
 #+setupfile: ./fiche.setup
 
 
 * Localisation, rôle physiologique
-Hémoglobine liée par covalence aux monoxyde de carbone. Son affinité pour le monoxyde de carbone est très supérieures à celle pour l’oxygène. L’hémoglobine liée au monoxyde de carbone n’est donc pas disponible pour le transport d’oxygène
+Dyshémoglobine liée par covalence aux monoxyde de carbone. Son affinité pour le monoxyde de carbone est très supérieures à celle pour l’oxygène. L’hémoglobine liée au monoxyde de carbone n’est donc pas disponible pour le transport d’oxygène
 * Tissus/organes de production et d'élimination
 Voir fiche hémoglobine
 * Valeurs de référence (adulte)

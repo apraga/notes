@@ -1,10 +1,10 @@
-#+title: Oxyhémoglobine
+#+title: Oxyhémoglobine (gas du sang)
 #+author: Alexis Praga
 #+setupfile: ./fiche.setup
 
 
 * Localisation, rôle physiologique
-Fraction de l’hémoglobine qui apporte l’oxygène aux tissus
+Fraction de l’hémoglobine saturée en oxygène qui apporte effectivement de l’oxygène aux tissus
 * Tissus/organes de production et d'élimination
 Voir fiche hémoglobine
 * Valeurs de référence (adulte)
