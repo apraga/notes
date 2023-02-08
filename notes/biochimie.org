@@ -1,5 +1,58 @@
 #+title: Biochimie
 
+* Acides aminées
+
+Doivent être apporté par l’alimentation:
+- histidine, isoleucine, leucine, lysine, methionine, phenylalanine, threonine, tryptophan, valine
+Non-essentiels
+- alanine, arginine, asparagine, aspartate, cysteine, glutamate, glutamine, glycine, proline, serine, tyrosine
+
+** Utilisé par la néoglucogenèse : glutamate, glutamine, alanine, aspartate, asparagine
+Le glutamate sert à convertir ces acides aminé entre eux.
+** Formé depuis l’aspartate : lysine, thréoine, méthionine, cystéine
+** Proline
+NB: la proline a une structure en anneau rigide et va donc contraindre fortement la structure de la protéine
+** Sérine, glycine
+Non essentiels, dérive de 3-phosphoglycérate
+** Leucine, isoleucine, valine
+Essentiels. Squelette carboné venant du pyruvate
+** Phenylaaline, tyrosine, tryptophan
+"Aromatique".
+* Acide-base
+3 mécanisme de défense :
+- tampon = quelques secondes (combine à une acide ou base)
+- poumon = quelques minutes (supprimer CO_2)
+- rein = quelques heures/jours (excrète urine acide/alcaline)
+** Tampon
+Buffer + H^+ \leftrightarrow H Buffer
+
+*** Bicarbonate
+CO_2 + H_2O \leftrightarrow H_2 CO_3 \leftrightarrow H^+ + HCO_3^-
+avec carbonic anhydrase (alvéoles pulmonaires, )
+- Acidose : tampon avec HCO_3^- pour produire CO_2 et H_2O. Le CO_2 est éliminé par le poumon
+- alcalose : tampon avec H_2 CO_3 pour former du HCO_3^-, qui sera excrété au niveau rénal
+
+  /NB/: le CO_2 dans le sang est proportionnel à la pCO_2: CO_2 = 0.03 p_{CO_2}
+
+
+*C’est le tampon extracellulaire le plus important.*
+En effet, l’efficacité est maximale pour pH = pK mais le pK est à 6.1 pour un pH extracellulaire de 7.4. Ce paradoxe est résolvé par la régulation du pH extracellulaire par les reins et les poumons.
+
+*** Phosphate
+Si acidose : acide remplacé par NaH_2 PO4 (acide plus faible)
+Si alcalose : base remplacé par Na2H PO4 (base plus faible)
+
+Le pK est proche du pH 6.8 vs 7.4 mais la concentration extracellulaire est faible donc la capacité de tampon est moindre que celle des bicarbonates.
+*Il est très important dans les tubules rénaux* : concentration impportante de phosphate à cet endroit et le pH est nettement diminué (proche du pK donc idéale)
+
+*** Protéines
+60-70% du tampon total se fait dans le cellules et la plupart vient des protéines intracellulire
+
+Le pH intracellulaire "suit" le pH extracellulaire dans les heures qui suivent (diffusion lentes H^+ et HCO_3-)
+** Respiration
+Le CO_2 est formé de manière contue par les processus métabolique intracellulaire. Il va ensuite diffuser dans le sang et liquides interstitiels puis transporté dans les alvéoles. La ventilation pulmonaire va le transférer dans l’atomosphère.
+
+Hyperventilation -> diminution CO_2 -> diminution H^+ -> alcalose. Doublement de la fréquence respiratoire = pH + 0.23
 * Albumine
 ** Naissance
 Synthèse par les hépatocytes
@@ -17,74 +70,15 @@ Demi-vie 20 jours.
 - Dénutrition chronique
 ** Dosage
 
-* Vitamine D
+* TODO Ammoniaque
 ** Naissance
-2 sources
-- synthèse à partir des rayonnements UV sur la peau et d’un stéroïde
-- alimentation (vitamine D2 [végétal] et D3 [animal])
+Libéré par la dégradation des acides aminées.
 ** Vie
-1. Accumulation dans le foie
-2. première hydroxylation conduit à 25-OH-vitamine D (calcidiol).
-3. Transport via le sang dans le rein puis une seconde hydroxylation rein conduit à 1,25-dihydroxy vitamine D (calcitriol = forme active de la vitamine D)
-
-Le calcidiol est peu controlé mais la seconde est régulée par la PTH et phosphatémie :
-- augmenté par PTH, hypophosphatémie, hypocalcémie (via PTH)
-- inhibé par hyperphosphatémie, hypercalcémie
-
-#+name: vitamine D
-[[../images/biochimie/vitaminD.png]]
 ** Mort
-Dégradation par oxidation/hydroxylation et excrétion dans les urines/selles
+Pour éviter une excrétion continue d’eau. il est converti en urée dans le foie puis excrété. Cela permet d’éviter la toxicité de l’ammoniaque.
 ** Effet
-Calcitriol:
-- stimule l'absorbtion intestinale du calcium et phosphose
-- os: favorise la minéralisation (en augmentant la calcémie)
-- rein : stimule la réabsorption tubulaire du phosphore et calcium
-- diminue PTH
 ** Indication
-- 25-hydroxy-D = forme circulante prépondérante. Reflète les réserve -> dosé si possibilité de carenc
-- 1,25-dihydroxy-vitamine D (calcitriol) = ne reflète *pas* les stock : réservé à une anomalie de 1-\alpha hydroxylation
 ** Dosage
-
-* Natrémie
-Osmolalité = $2 \times [NA^+] + [Gly] \approx 285 $  mOsm/kg d’eau
-
-** Déshydratation extracellulaire = perte de sodium
-Pure si iso-osmolaire (l’eau "suit")
-
-Étiologie :
-- perte extrarénale : bonne réponse du rein donc oligurie, natriurièse effondrée, urines concentrées
-- perte rénale : pas de réponse du rein donc diurièse normale, natriurièse élevée, urines non concentrées
-** Hyperhydratation extracellulaire = excès de sodium
-Iso-osmolaire (l’eau "suit")
-
-Étiologies : insuffisance cardiaque, cirrhose ascitique, syndrome néphrotique surtout
-** Déshydratation intracellulaire = perte d’eau
-Donc hyperosmolalité plasmatique avec appel d’eau intra-cellulaire
-
-Étiologie :
-- hypernatrémie =
-  - déficit en eau seul (DIC) =
-    - perte extra-rénale en eau =
-    - perte rénale en eau = diabète insipide
-  - déficit en eau > déficit en sodium (DIC + DEC) =
-    - natriurèse adaptée (basse): sueurs, pertes digestives
-    - natriurèse inadaptée (normale): diurèse osmotique
-  - gain eau > gain sodium = apport excessif NaCl
-- natrémie normale mais soluté osmotiquement actif : mannitole, éthylène glycol... -> "trou anionique" entre osmolalité mesurée et calculée
-
-** Hyperhydratation intracellulaire = excès d’eau
-1. Éliminer **fausse** hyponatrémie
-   - hyperprotidémie et hyperlipidémie (dilution)
-   - hypertonique : hyperglycémie important, méthanol, éthanol
-2. Hypoosmolaire = hyponatrémie vraie
-   - osmolalité urinaire diminué : apport augmenét (polydipsie, apport faible en solutié)
-   - osmolalité urinaire augmenté : extracellulaire
-     - diminué : déficit sodium > déficit eau
-       - natriurièse adaptée (diminuée) : perte cutanées, digestive, 3e secteur
-       - natriurièse inadaptée (augmentée) : perte rénale : diurétique, insuffisance surrénale..
-     - normal : excès d’eau : SIADH++, hypothyroïdie, hypocortisolisme
-     - augmenté : excès d’eau > excès sodium : insuffisance cardiaque, cirrhose hépatique, syndrome néphrotique, insuffisance rénale
 * BNP (Brain natriuretic peptide)
 ** Naissance
 synthétisé par myocyte du ventricule gauche (et droit) en réponse à une surcharge volémique
@@ -105,17 +99,7 @@ compense la surcharge volémique par
 ** Indication
 marqueur global de l’issufisance cardiaque (diagnostic, pronostic, suivi)
 ** Dosage
-* Créatine
-** Vie
-Il s’agit d’un produit de l’arginine (transformation en glycine par la glycine amdinotransferase, qui va générer du guanidinoacetate et de l’ornithin. Cette première est méthylée en créatine). Ces réaction ont lieu dans le foie, rein et cerveau.
-
-La créatine est transportée dans les muscles squelettique
-
-** Mort
-La phosphorylation de la créatine sert à faire la phosphocréatine, qui est un réservoir d’énergie (muscle squelettique, cerveau surtout) car la déphosphorylation permet de créer de l’ATP.
-$creatine + ATP \leftrightarrow phosphocreatine + ADP $
-
-Pour l’excrétion dans l’urine, la créatine est convertie en créatinine.
+* TODO Corps cétoniques
 * CPK (créatine-phosphokinase)
 ** Naissance
 Enzyme dans le cytosol ou mitochondrie des cellule : muscles squelettiques++ et cardiaque, cerveau, rein, gastrointestinal
@@ -132,18 +116,17 @@ contraction musculaire
 - Infarctus du myocarde, myopathie, myosite
 - Certains cancers, affection du système nerveux central
 ** Dosage
-* DFG
-La clairance de la créatinine est estimée par le Débit de Filtration Glomérulaire.
-Évaluation DFG à partir de la créatininémie
-  - Cockroft et Gault: mauvaises performances si obèse, > 75 ans. Prend le poids en compte (contrairement aux 2 autres)
-  - MDRD : plus précise que Cockroft
-  - CKD-EPI: plus précises que MDRD si valeur basse de la créatitinémie
-  - Schwartz : enfant
-  - recos HAS: CKD-EPI si dosage enzymatique, MDRD si colorimétrique
+* Créatine
+** Vie
+Il s’agit d’un produit de l’arginine (transformation en glycine par la glycine amdinotransferase, qui va générer du guanidinoacetate et de l’ornithin. Cette première est méthylée en créatine). Ces réaction ont lieu dans le foie, rein et cerveau.
 
-Attention : formules non utilisable chez l’enfant (formale du Schwartz), variation aigüe de la fonction rénale, cirrhose hépatique décompensée, gabarit hors norme, amyotrophie important, grossese
+La créatine est transportée dans les muscles squelettique
 
-dans ce cas, utiliser clairance urinaire sur urines de 24h = créat urinaire*débit/créat sanguine
+** Mort
+La phosphorylation de la créatine sert à faire la phosphocréatine, qui est un réservoir d’énergie (muscle squelettique, cerveau surtout) car la déphosphorylation permet de créer de l’ATP.
+$creatine + ATP \leftrightarrow phosphocreatine + ADP $
+
+Pour l’excrétion dans l’urine, la créatine est convertie en créatinine.
 * Créatinine
 ** Naissance
 Pour excrétion dans les urine, la [[Créatine][créatine]] est tansformée en créatinine
@@ -157,15 +140,6 @@ Libérée par le muscle
 Pas de réabsorption par le rein, donc marqueur de fonction rénale
 ** Dosage
 
-* TODO Ammoniaque
-** Naissance
-Libéré par la dégradation des acides aminées.
-** Vie
-** Mort
-Pour éviter une excrétion continue d’eau. il est converti en urée dans le foie puis excrété. Cela permet d’éviter la toxicité de l’ammoniaque.
-** Effet
-** Indication
-** Dosage
 * Cycle de l’urée
 Permet d’éliminer l’ammoniaqueet l’urée
 ** Initialisation
@@ -178,25 +152,18 @@ Le NH_3 est converti en carbamate -> carbamoyl-P (catalysé par N-acetyl glutama
 2. La citrulline sort de la mitochonrie et va se condense avec l’aspartate. Le "cleavage" va créée de l’arginine et du fumarate.
 3. L’arginine est clivée par l’arignase, libérant de l’urée et reconstituant de l’orinithine, qui retourne dans la mitochondrie.
 
-* TODO Corps cétoniques
-* Acides aminées
+* DFG
+La clairance de la créatinine est estimée par le Débit de Filtration Glomérulaire.
+Évaluation DFG à partir de la créatininémie
+  - Cockroft et Gault: mauvaises performances si obèse, > 75 ans. Prend le poids en compte (contrairement aux 2 autres)
+  - MDRD : plus précise que Cockroft
+  - CKD-EPI: plus précises que MDRD si valeur basse de la créatitinémie
+  - Schwartz : enfant
+  - recos HAS: CKD-EPI si dosage enzymatique, MDRD si colorimétrique
 
-Doivent être apporté par l’alimentation:
-- histidine, isoleucine, leucine, lysine, methionine, phenylalanine, threonine, tryptophan, valine
-Non-essentiels
-- alanine, arginine, asparagine, aspartate, cysteine, glutamate, glutamine, glycine, proline, serine, tyrosine
+Attention : formules non utilisable chez l’enfant (formale du Schwartz), variation aigüe de la fonction rénale, cirrhose hépatique décompensée, gabarit hors norme, amyotrophie important, grossese
 
-** Utilisé par la néoglucogenèse : glutamate, glutamine, alanine, aspartate, asparagine
-Le glutamate sert à convertir ces acides aminé entre eux.
-** Formé depuis l’aspartate : lysine, thréoine, méthionine, cystéine
-** Proline
-NB: la proline a une structure en anneau rigide et va donc contraindre fortement la structure de la protéine
-** Sérine, glycine
-Non essentiels, dérive de 3-phosphoglycérate
-** Leucine, isoleucine, valine
-Essentiels. Squelette carboné venant du pyruvate
-** Phenylaaline, tyrosine, tryptophan
-"Aromatique".
+dans ce cas, utiliser clairance urinaire sur urines de 24h = créat urinaire*débit/créat sanguine
 * Foie
 ** Physiologie
 Énergie:
@@ -319,6 +286,45 @@ Augmentation ALAT/ASAT
 - Physiologique : diminution albuminémie possible, augmenation PAL
 - cholestase gravidique : prurit, augmenation acide biliarie sérique : 10-40 modéré,, sérève si > 40
   - ALAT = 2-10N >> ictère 10%, bili augmentée et γGt No/augmentée: 30%, stéatorrhéie (déficit en vitamine K visible sur TP)
+* Natrémie
+Osmolalité = $2 \times [NA^+] + [Gly] \approx 285 $  mOsm/kg d’eau
+
+** Déshydratation extracellulaire = perte de sodium
+Pure si iso-osmolaire (l’eau "suit")
+
+Étiologie :
+- perte extrarénale : bonne réponse du rein donc oligurie, natriurièse effondrée, urines concentrées
+- perte rénale : pas de réponse du rein donc diurièse normale, natriurièse élevée, urines non concentrées
+** Hyperhydratation extracellulaire = excès de sodium
+Iso-osmolaire (l’eau "suit")
+
+Étiologies : insuffisance cardiaque, cirrhose ascitique, syndrome néphrotique surtout
+** Déshydratation intracellulaire = perte d’eau
+Donc hyperosmolalité plasmatique avec appel d’eau intra-cellulaire
+
+Étiologie :
+- hypernatrémie =
+  - déficit en eau seul (DIC) =
+    - perte extra-rénale en eau =
+    - perte rénale en eau = diabète insipide
+  - déficit en eau > déficit en sodium (DIC + DEC) =
+    - natriurèse adaptée (basse): sueurs, pertes digestives
+    - natriurèse inadaptée (normale): diurèse osmotique
+  - gain eau > gain sodium = apport excessif NaCl
+- natrémie normale mais soluté osmotiquement actif : mannitole, éthylène glycol... -> "trou anionique" entre osmolalité mesurée et calculée
+
+** Hyperhydratation intracellulaire = excès d’eau
+1. Éliminer **fausse** hyponatrémie
+   - hyperprotidémie et hyperlipidémie (dilution)
+   - hypertonique : hyperglycémie important, méthanol, éthanol
+2. Hypoosmolaire = hyponatrémie vraie
+   - osmolalité urinaire diminué : apport augmenét (polydipsie, apport faible en solutié)
+   - osmolalité urinaire augmenté : extracellulaire
+     - diminué : déficit sodium > déficit eau
+       - natriurièse adaptée (diminuée) : perte cutanées, digestive, 3e secteur
+       - natriurièse inadaptée (augmentée) : perte rénale : diurétique, insuffisance surrénale..
+     - normal : excès d’eau : SIADH++, hypothyroïdie, hypocortisolisme
+     - augmenté : excès d’eau > excès sodium : insuffisance cardiaque, cirrhose hépatique, syndrome néphrotique, insuffisance rénale
 * Phosphatales alcalines
 ** Naissance
 Très répandues dans les tissus.
@@ -332,4 +338,32 @@ Permet le passage de métabolite à travers les membranes cellulaires (catalyse 
 - Malades osseuses avec régénération ostéoblastiques
 - Grossesse avec cholestase gravidique
 - Certaines pathologise intestinales, suivi de certains cancers
+** Dosage
+* Vitamine D
+** Naissance
+2 sources
+- synthèse à partir des rayonnements UV sur la peau et d’un stéroïde
+- alimentation (vitamine D2 [végétal] et D3 [animal])
+** Vie
+1. Accumulation dans le foie
+2. première hydroxylation conduit à 25-OH-vitamine D (calcidiol).
+3. Transport via le sang dans le rein puis une seconde hydroxylation rein conduit à 1,25-dihydroxy vitamine D (calcitriol = forme active de la vitamine D)
+
+Le calcidiol est peu controlé mais la seconde est régulée par la PTH et phosphatémie :
+- augmenté par PTH, hypophosphatémie, hypocalcémie (via PTH)
+- inhibé par hyperphosphatémie, hypercalcémie
+
+#+name: vitamine D
+[[../images/biochimie/vitaminD.png]]
+** Mort
+Dégradation par oxidation/hydroxylation et excrétion dans les urines/selles
+** Effet
+Calcitriol:
+- stimule l'absorbtion intestinale du calcium et phosphose
+- os: favorise la minéralisation (en augmentant la calcémie)
+- rein : stimule la réabsorption tubulaire du phosphore et calcium
+- diminue PTH
+** Indication
+- 25-hydroxy-D = forme circulante prépondérante. Reflète les réserve -> dosé si possibilité de carenc
+- 1,25-dihydroxy-vitamine D (calcitriol) = ne reflète *pas* les stock : réservé à une anomalie de 1-\alpha hydroxylation
 ** Dosage
