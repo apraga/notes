@@ -1,30 +1,28 @@
-#+title: pH
-par
+#+title: Acides biliaires (cobas)
 #+author: Alexis Praga
 #+setupfile: ./fiche.setup
 
-
 * Localisation, rôle physiologique
-Stockés dans la vésicule biliaire, ils sont relarugé dans l’intestiné au moment de la digestion.
+Stockés dans la vésicule biliaire, ils sont relargués dans l’intestin au moment de la digestion.
 
 Dans le foie, ils participent à la formation de la bile.
-dans la bile, ils évitent la formation de calculs biliaires en permettant la solubilisation du chostérole et des phospholipides.
-Au niveau intestinale, ils  agisessent comment émulsifiant sur les lipides (triglyceride, cholesterol...) pour favoriser leur réabsorption par la muqueuse.
+Dans la bile, ils évitent la formation de calculs biliaires en permettant la solubilisation du cholestérol et des phospholipides.
+Au niveau intestinal, ils  agissent comme émulsifiants sur les lipides (triglycéride, cholestérol...) pour favoriser leur réabsorption par la muqueuse.
 
 * Tissus/organes de production et d'élimination
-Les hépatocytes synthétisent les acides biliaires primitifs (acide cholique, acide chénodésoxycholique) à partir du cholestérol, qui sont conjugée avec la taurine et glycine puis sécréts dans la vésicule bilaire.
+Les hépatocytes synthétisent les acides biliaires primitifs (acide cholique, acide chénodésoxycholique) à partir du cholestérol, qui sont conjugés avec la taurine et glycine puis sécrété dans la vésicule biliaire.
 
-Ils peuvent être réabsorbé et retourner dans le foie via la veine porte, ou excrété dans les salles ou métabolisés par les bactéries intestinales (acides biliaire secondaire).
+Ils peuvent être réabsorbés et retourner dans le foie via la veine porte, ou excrétés dans les salles ou métabolisés par les bactéries intestinales (acides biliaires secondaires).
 * Valeurs de référence (adulte)
+1-6 \mu mol/L
 * Principe analytique de mesure
 Mesure par photométrie du taux de formation de thio-NADH selon la réaction
-acide biliraie -> acide biliaire oxydée consomment de Thio-NAD et formation de thio-NADH
+acide biliarie -> acide biliaire oxydée consomment de Thio-NAD et formation de thio-NADH
 * Principales interactions analytiques
 - ne doivent pas être utilisé en cas de traitement par acide ursodésoxycholique
-- Écart < 10% avec triglycéride, acide ascobique, biliurbie, hémoglobine
-* Vigilance pré-analytiques et analytiques
+- Écart < 10% avec triglycéride, acide ascorbique, bilirubine, hémoglobine
 * Augmentation et diminution
 Physiologique : augmente après les repas, en cas de grossesse, nutrition parentérale
-Augmentation de cholestase
-- extra-hépatique : blocage mécanique (malformatio, obstacle)
+Augmentation en cas de cholestase
+- extra-hépatique : blocage mécanique (malformation, obstacle)
 - intra-hépatique : atteinte du métabolisme des acides biliaires au niveau des hépatocytes

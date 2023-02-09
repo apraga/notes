@@ -12,3 +12,5 @@ tmp/
 _cache
 _site
 _tmp
+
+*.docx

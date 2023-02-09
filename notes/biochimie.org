@@ -52,7 +52,48 @@ Le pH intracellulaire "suit" le pH extracellulaire dans les heures qui suivent (
 ** Respiration
 Le CO_2 est formé de manière contue par les processus métabolique intracellulaire. Il va ensuite diffuser dans le sang et liquides interstitiels puis transporté dans les alvéoles. La ventilation pulmonaire va le transférer dans l’atomosphère.
 
-Hyperventilation -> diminution CO_2 -> diminution H^+ -> alcalose. Doublement de la fréquence respiratoire = pH + 0.23
+Acidose -> Hyperventilation -> diminution CO_2 -> diminution H^+ -> alcalose. Doublement de la fréquence respiratoire = pH + 0.23
+Alaclose -> hypoventilation mais moins efficace car l’hypoxémie active les chémorecpeteurs qui vont stimuler la respiration
+
+La réponse respiratoire est efficace à 50-70%
+Elle este 1 à 2x plus efficace que les tampons extra-cellulaire
+Évidemment, réponse diminuée par une anomalie de la fonction respiratoire (emphysème...)
+** Rénal
+Production d’acides non volatiles (protéines surtout) qui ne sont pas éliminables par la respiration
+Le rein doit également éviter la perte de bicarbonates -> quasiment tout est réabsorbé. Pour ceal, il faut une excrétion de H^+ poru réabsorber le HCO_3^- filtré
+
+Alcalose -> diminution sécrétion H^+ donc diminue réabsorption bicarbonates
+Acidose -> augmenation sécrétion H^+, réabsorbe plus de bicarbonates et en produit plus
+
+*** sécrétion H^+ et réabsorption bicarbonates
+*Pour chaque bicarbonates réabsorbé, il faut produit un H^+*
+90% tubule proximal
+
+Sécrétion H^+ va se combiner au HCO_3- pour former du H_2 CO_3, décomposé en CO_2 et H_2O. Le CO2 va être réabsorbé. Au total, bicarbonates réabsorbé dans le sang f:
+
+#+name: Sécrétion H^+ tubuluaire
+[[../images/biochimie/tubule-secretion-proton.png]]
+
+
+* Acides biliaires
+** Naissance
+Les hépatocytes synthétisent les acides biliaires primitifs (acide cholique, acide chénodésoxycholique) à partir du cholestérol, qui sont conjugée avec la taurine et glycine puis sécréts dans la vésicule bilaire.
+** Vie
+Stockés dans la vésicule biliaire, ils sont relarugé dans l’intestiné au moment de la digestion.
+** Mort
+Ils peuvent être réabsorbé et retourner dans le foie via la veine porte, ou excrété dans les salles ou métabolisés par les bactéries intestinales (acides biliaire secondaire).
+** Effet
+Dans le foie, ils participent à la formation de la bile.
+dans la bile, ils évitent la formation de calculs biliaires en permettant la solubilisation du chostérole et des phospholipides.
+Au niveau intestinale, ils  agisessent comment émulsifiant sur les lipides (triglyceride, cholesterol...) pour favoriser leur réabsorption par la muqueuse.
+** Indication
+- exploration fonctionnelle du foie (cholestase hépatique, ictère, insuffisance hépatocellulaire)
+- exploration lithiase après une colique ou complication
+- suivi cholestase chez la femme enceinte
+- exploration prurit inexplique
+
+** Dosage
+
 * Albumine
 ** Naissance
 Synthèse par les hépatocytes
@@ -117,15 +158,14 @@ contraction musculaire
 - Certains cancers, affection du système nerveux central
 ** Dosage
 * Créatine
-** Vie
+** Naissance
 Il s’agit d’un produit de l’arginine (transformation en glycine par la glycine amdinotransferase, qui va générer du guanidinoacetate et de l’ornithin. Cette première est méthylée en créatine). Ces réaction ont lieu dans le foie, rein et cerveau.
-
+** Vie
 La créatine est transportée dans les muscles squelettique
-
-** Mort
 La phosphorylation de la créatine sert à faire la phosphocréatine, qui est un réservoir d’énergie (muscle squelettique, cerveau surtout) car la déphosphorylation permet de créer de l’ATP.
 $creatine + ATP \leftrightarrow phosphocreatine + ADP $
 
+** Mort
 Pour l’excrétion dans l’urine, la créatine est convertie en créatinine.
 * Créatinine
 ** Naissance

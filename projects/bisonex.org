@@ -808,6 +808,10 @@ bedtools intersect -a  dbSNP_common.vcf.gz -b clinvar.vcf.gz
 $ wc -l intersect.vcf
 220206 intersect.vcf
 *** TODO NA12878
+Doc: https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/NA12878_HG001/latest/README_v4.2.1.txt
+
+Bed : https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/NA12878_HG001/latest/GRCh38/HG001_GRCh38_1_22_v4.2.1_benchmark.bed
+https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/NA12878_HG001/latest/GRCh38/HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz
 ** TODO Dépendences avec Nix
 *** DONE GATK
 CLOSED: [2022-10-21 Fri 21:59]
@@ -854,6 +858,100 @@ $ ../result/bin/hap.py example/happy/PG_NA12878_chr21.vcf.gz       example/happy
 | SNP   | PASS   |       52494 |    46920 |     5574 |       48078 |      143 |       992 |     8 |    97 |      0.893816 |         0.996963 |       0.020633 |        0.942576 |
 
 **** TODO Version avec rtg-tools |
+
+**** TODO Reproduire les performances precisionchallenge NA12878
+https://www.nist.gov/programs-projects/genome-bottle
+***** TODO 0GOOR
+****** vcfeval : echec
+#+begin_src sh
+cd /Work/Groups/bisonex/data/NA12878/precisionChallenge
+curl -O https://data.nist.gov/od/ds/ark:/88434/mds2-2336/submission_vcfs/0GOOR/0GOOR_HG002.vcf.gz
+bcftools annotate --rename-chrs  /Work/Groups/bisonex/data/genome/GRCh38.p13/chromosome_mapping.txt 0GOOR_HG002.vcf.gz -o 0GOOR_HG002_renamed.vcf.gz
+tabix  0GOOR_HG002_renamed.vcf.gz
+#+end_src
+
+Soumission
+#+begin_src slurm
+#!/bin/bash
+#SBATCH -c 4
+#SBATCH -p smp
+#SBATCH --time=01:00:00
+#SBATCH --mem=32G
+
+module load nix/2.11.0
+export HGREF=/Work/Groups/bisonex/data-alexis-reference/genome/GRCh38_latest_genomic.fna
+dir=/Work/Groups/bisonex/data/NA12878/
+
+rtg vcfeval -b  $dir/GRCh38/HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz  \
+        --bed-regions ${dir}/GRCh38/HG001_GRCh38_1_22_v4.2.1_benchmark.bed \
+        -c ${dir}/precisionChallenge/0GOOR_HG002_renamed.vcf.gz \
+        -o test-0GOOR -t /Work/Groups/bisonex/data/genome/GRCh38.p13/genomeRef.sdf
+#rtg vcfeval -b  $dir/HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz  --bed-regions ${dir}/benchmark-exons.bed -c files/vcf/NA12878_NIST7035_vep_annot.vcf.gz  -o test-rtg -t /Work/Groups/bisonex/data/genome/GRCh38.p13/genomeRef.sdf
+#+end_src
+
+Résultat :
+VCF header does not contain a FORMAT field named GQ
+There were 112 problematic called variants skipped during loading (see vcfeval.log for details).
+There were 2303523 variants not thresholded in ROC data files due to missing or invalid GQ (FORMAT) values.
+Could not select maximized F-measure threshold from ROC data, only un-thresholded statistics will be shown. Consider selecting a different scoring attribute with --vcf-score-field
+Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
+----------------------------------------------------------------------------------------------------
+     None             938101         934445    1369078    1276425     0.4057       0.4236     0.4144
+****** hap.py  sans vcfeval (utilisé pour le challenge) : echec
+#+begin_src slurm
+#!/bin/bash
+#SBATCH -c 4
+#SBATCH -p smp
+#SBATCH --time=01:00:00
+#SBATCH --mem=32G
+
+module load nix/2.11.0
+export HGREF=/Work/Groups/bisonex/data-alexis-reference/genome/GRCh38_latest_genomic.fna
+dir=/Work/Groups/bisonex/data/NA12878/
+hap.py $dir/GRCh38/HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz  \
+        ${dir}/precisionChallenge/0GOOR_HG002_renamed.vcf.gz \
+        -f ${dir}/GRCh38/HG001_GRCh38_1_22_v4.2.1_benchmark.bed \
+        -o test
+#+end_src
+
+ Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.Precision  METRIC.Frac_NA  METRIC.F1_Score
+INDEL    ALL       276768    102437    174331      1156702    211537     842303  53768  58006       0.370119          0.327170        0.728194         0.347322
+INDEL   PASS       276768    102437    174331      1156702    211537     842303  53768  58006       0.370119          0.327170        0.728194         0.347322
+  SNP    ALL      1937706    835470   1102236      5666020   1160590    3669981 437793  21058       0.431164          0.418553        0.647718         0.424765
+  SNP   PASS      1937706    835470   1102236      5666020   1160590    3669981 437793  21058       0.431164          0.418553        0.647718         0.424765
+
+  On est censé avoir : https://data.nist.gov/od/ds/ark:/88434/mds2-2336/benchmarking_results/0GOOR/0GOOR_HG002.extended.csv
+ Type  Filter  METRIC.Recall    METRIC.Precision    METRIC.Frac_NA    METRIC.F1_Score
+INDEL  ALL     0.935776    0.903997    0.523369    0.919612
+INDEL  PASS    0.935776    0.903997    0.523369    0.919612
+SNP    ALL     0.998554    0.99395    0.403126    0.996247
+SNP    PASS    0.998554    0.99395    0.403126    0.996247
+****** Avec chr originels + génome de référence
+#+begin_src
+awk '{
+        if($0 !~ /^#/)
+            print "chr"$0;
+        else if(match($0,/(##contig=<ID=)(.*)/,m))
+            print m[1]"chr"m[2];
+        else print $0
+      }' 0GOOR_HG002.vcf | gzip -c > 0GOOR_HG002_chr.vcf.gz
+#+end_src
+#+begin_src
+curl -O https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/references/GRCh38/GCA_000001405.15_GRCh38_no_alt_analysis_set.fasta.gz /Work/Groups/bisonex/data/genome/GRCh38/
+#+end_src
+
+segmentation fault... On essaie d’unzip le fasta
+#+begin_src
+cd  /Work/Groups/bisonex/data/genome/GRCh38/
+ gunzip GCA_000001405.15_GRCh38_no_alt_analysis_set.fasta.gz
+ samtools faidx GCA_000001405.15_GRCh38_no_alt_analysis_set.fasta
+#+end_src
+***** TODO Avec python2
+****** KILL avec conda
+CLOSED: [2023-02-09 jeu. 16:00]
+Impossible de crééer un nouvel environemment
+****** TODO avec nix
+conda create -n python2 python=2.7 anaconda
 
 ** DONE Exécution
 CLOSED: [2022-09-13 Tue 21:37]
@@ -2733,8 +2831,7 @@ export HGREF=/Work/Groups/bisonex/data-alexis-reference/genome/GRCh38_latest_gen
 dir=/Work/Groups/bisonex/data/NA12878/GRCh38
 hap.py ${dir}/HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz script/files/vcf/NA12878_NIST7035.vcf -f ${dir}/HG001_GRCh38_1_22_v4.2.1_benchmark.bed -o test
 #+end_src
-**** DONE beaucoup trop de faux négatifs -> trop d'intronique probablement !
-CLOSED: [2023-02-07 Tue 22:01]
+**** TODO beaucoup trop de faux négatifs
 ***** DONE Test 1 : vep annot : beaucoup trop de faux négatif
 CLOSED: [2023-02-06 lun. 13:40]
  Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.Precision  METRIC.Frac_NA  METRIC.F1_Score  TRUTH.TOTAL.TiTv_ratio  QUERY.TOTAL.TiTv_ratio  TRUTH.TOTAL.het_hom_ratio  QUERY.TOTAL.het_hom_ratio
@@ -2781,13 +2878,13 @@ CLOSED: [2023-02-07 Tue 22:01]
 Ex:
 Il manque NC_000001.11    783006  .       A       G       50      PASS
 Il y a A -> G et C -> A sur cette position
-**** TODO Restreindre genome de référence
-***** Discussion Alexis
+***** TODO Restreindre genome de référence
+****** Discussion Alexis
 le pipeline prend en compte 5', 3', variant canoniques d'épissage + prédit spip
 Le plus simple pour le moment est de restreindre seulement aux exons
 GENCODE (version europénne) vs RefSeq: [[https://bmcgenomics.biomedcentral.com/articles/10.1186/1471-2164-16-S8-S2][article 2015]] en faveur de GENCODE mais Alexis conseille Refseq
 
-***** TODO Utiliser seulement exons BestRefSeq 
+****** TODO Utiliser seulement exons BestRefSeq 
 Dans refseq,[[https://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/][2 types de modèles pour le gène]]
 - basé sur refseq (NM_, NP_), curée
 - basé sur gnomon (XM_ , XP_), prédite
@@ -2804,11 +2901,59 @@ awk '/BestRefSeq\texon/ && /transcript_id=NM/ {print $1"\t"$4"\t"$5;}' GRCh38_la
 #+end_src
 Puis intersection
 
-****** rtg tools
+******* rtg tools
 Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
 ----------------------------------------------------------------------------------------------------
     3.000               1015            910        206      32531     0.8154       0.0303     0.0583
      None               1015            910        206      32531     0.8154       0.0303     0.0583
+****  Version avec python 2 sans nix
+nix profile install nixpkgs#autoconf
+nix profile install nixpkgs#cmake
+
+On cherche boost avec ls /nix/store/*boost*
+ python2 install.py install-hap.py --boost-root /nix/store/4djr55cmnfahbg6i6wr8p3ga66gs09gi-boost-1.79.0
+
+ Pour utiliser le boost de nix, il faut patcher pour utiliser la version non static
+ #+begin_src diff
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 307a3b9..806d064 100755
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -32,16 +32,16 @@ if(NOT "${EXTERNAL_SUCCESS}" STREQUAL "0")
+     message(FATAL_ERROR "Building external dependencies has failed")
+ endif()
+
+-set(Boost_USE_STATIC_LIBS        ON)  # only find static libs
++#set(Boost_USE_STATIC_LIBS        ON)  # only find static libs
+ set(Boost_USE_MULTITHREADED      ON)
+-set(Boost_USE_STATIC_RUNTIME     ON)
++#set(Boost_USE_STATIC_RUNTIME     ON)
+
+ # un-break library finding
+-set(Boost_NO_BOOST_CMAKE         ON)
+-set(Boost_NO_SYSTEM_PATHS        ON)
++#set(Boost_NO_BOOST_CMAKE         ON)
++#set(Boost_NO_SYSTEM_PATHS        ON)
+
+-set(BOOST_ROOT ${CMAKE_BINARY_DIR})
+-message("Using our own Boost, which was built at ${HAPLOTYPES_SOURCE_DIR}/external/boost_install")
++#set(BOOST_ROOT ${CMAKE_BINARY_DIR})
++#message("Using our own Boost, which was built at ${HAPLOTYPES_SOURCE_DIR}/external/boost_install")
+
+ find_package(Boost 1.55.0 COMPONENTS thread iostreams regex unit_test_framework filesystem system program_options REQUIRED)
+ include_directories(${Boost_INCLUDE_DIRS})
+ #+end_src
+ Echeck à la compilatio
+
+ On essaye la dernière version de boost:
+#+begin_src sh
+cd external
+wget https://boostorg.jfrog.io/artifactory/main/release/1.81.0/source/boost_1_81_0.tar.bz2
+sed -i.bak 's/boost_subset_1_58_0/boost_1_81_0/' external/make_dependencies.sh
+#+end_src
+
+On essaye avec boost en static dans nix :
+ nix-shell -E "with import <nixpkgs> {}; pkgs.boost.override{ enableStatic = true;}"
 
 *** TODO Platinum genome
 https://emea.illumina.com/platinumgenomes.html
