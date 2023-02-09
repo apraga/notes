@@ -853,11 +853,11 @@ $ ../result/bin/hap.py example/happy/PG_NA12878_chr21.vcf.gz       example/happy
 #+end_src
 
 #+RESULTS:
-| Type  | Filter | TRUTH.TOTAL | TRUTH.TP | TRUTH.FN | QUERY.TOTAL | QUERY.FP | QUERY.UNK | FP.gt | FP.al | METRIC.Recall | METRIC.Precision | METRIC.Frac_NA | METRIC.F1_Score | TRUTH.TOTAL.TiTv_ratio | QUERY.TOTAL.TiTv_ratio | TRUTH.TOTAL.het_hom_ratio | QUERY.TOTAL.het_hom_ratio |   |
-| INDEL | ALL    |        8937 |     7839 |     1098 |       11812 |      343 |      3520 |    45 |   283 |      0.877140 |         0.958635 |       0.298002 |        0.916079 |                    NaN |                    NaN |                  1.357991 |                  1.457627 |   |
-| INDEL | PASS   |        8937 |     7550 |     1387 |        9971 |      283 |      1964 |    30 |   242 |      0.844803 |         0.964656 |       0.196971 |        0.900760 |                    NaN |                    NaN |                  1.357991 |                  1.239305 |   |
-| SNP   | ALL    |       52494 |    52125 |      369 |       90092 |      582 |     37348 |   107 |   354 |      0.992971 |         0.988966 |       0.414554 |        0.990964 |               2.082614 |               1.745874 |                  1.594335 |                  3.132586 |   |
-| SNP   | PASS   |       52494 |    46920 |     5574 |       48078 |      143 |       992 |     8 |    97 |      0.893816 |         0.996963 |       0.020633 |        0.942576 |               2.082614 |               2.089282 |                  1.594335 |                  1.487599 |   |
+| Type  | Filter | TRUTH.TOTAL | TRUTH.TP | TRUTH.FN | QUERY.TOTAL | QUERY.FP | QUERY.UNK | FP.gt | FP.al | METRIC.Recall | METRIC.Precision |
+| INDEL | ALL    |        8937 |     7839 |     1098 |       11812 |      343 |      3520 |    45 |   283 |      0.877140 |         0.958635 |
+| INDEL | PASS   |        8937 |     7550 |     1387 |        9971 |      283 |      1964 |    30 |   242 |      0.844803 |         0.964656 |
+| SNP   | ALL    |       52494 |    52125 |      369 |       90092 |      582 |     37348 |   107 |   354 |      0.992971 |         0.988966 |
+| SNP   | PASS   |       52494 |    46920 |     5574 |       48078 |      143 |       992 |     8 |    97 |      0.893816 |         0.996963 |
 
 **** TODO Version avec rtg-tools |
 
@@ -928,7 +928,7 @@ INDEL  ALL     0.935776    0.903997    0.523369    0.919612
 INDEL  PASS    0.935776    0.903997    0.523369    0.919612
 SNP    ALL     0.998554    0.99395    0.403126    0.996247
 SNP    PASS    0.998554    0.99395    0.403126    0.996247
-****** Avec chr originels
+****** Avec chr originels + génome de référence
 #+begin_src
 awk '{
         if($0 !~ /^#/)
@@ -938,10 +938,16 @@ awk '{
         else print $0
       }' 0GOOR_HG002.vcf | gzip -c > 0GOOR_HG002_chr.vcf.gz
 #+end_src
-****** Avec même génome de référence
+#+begin_src
 curl -O https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/references/GRCh38/GCA_000001405.15_GRCh38_no_alt_analysis_set.fasta.gz /Work/Groups/bisonex/data/genome/GRCh38/
+#+end_src
 
-segmentation fault...
+segmentation fault... On essaie d’unzip le fasta
+#+begin_src
+cd  /Work/Groups/bisonex/data/genome/GRCh38/
+ gunzip GCA_000001405.15_GRCh38_no_alt_analysis_set.fasta.gz
+ samtools faidx GCA_000001405.15_GRCh38_no_alt_analysis_set.fasta
+#+end_src
 ***** TODO Avec python2
 ****** KILL avec conda
 CLOSED: [2023-02-09 jeu. 16:00]
