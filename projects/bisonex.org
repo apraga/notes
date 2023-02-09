@@ -861,7 +861,8 @@ $ ../result/bin/hap.py example/happy/PG_NA12878_chr21.vcf.gz       example/happy
 
 **** TODO Version avec rtg-tools |
 
-**** TODO Reproduire les performances precisionchallenge
+**** TODO Reproduire les performances precisionchallenge NA12878
+https://www.nist.gov/programs-projects/genome-bottle
 ***** TODO 0GOOR
 ****** vcfeval : echec
 #+begin_src sh
@@ -938,9 +939,15 @@ awk '{
       }' 0GOOR_HG002.vcf | gzip -c > 0GOOR_HG002_chr.vcf.gz
 #+end_src
 ****** Avec même génome de référence
-***** TODO réinstaller hap.py
-****** python 2
-****** vceval
+curl -O https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/references/GRCh38/GCA_000001405.15_GRCh38_no_alt_analysis_set.fasta.gz /Work/Groups/bisonex/data/genome/GRCh38/
+
+segmentation fault...
+***** TODO Avec python2
+****** KILL avec conda
+CLOSED: [2023-02-09 jeu. 16:00]
+Impossible de crééer un nouvel environemment
+****** TODO avec nix
+conda create -n python2 python=2.7 anaconda
 
 ** DONE Exécution
 CLOSED: [2022-09-13 Tue 21:37]
