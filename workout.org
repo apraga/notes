@@ -5798,3 +5798,12 @@ Extension: 3x22
 Pistols : 3x4
 - Planche tucked push-up: 5+5 - 5+4+1 - 5+5
 Compression: 3x9
+
+* <2023-02-09 jeu.> Workout
+Nouvelle stratégie : on complète les muscle-up par des négatif pour atteindre 8 répétitions
+- RTO: 3 fois
+Skin-the-cat (avec descente): 2x2
+- Muscle-up 1+1+1 + 5 négatif - 2+1+1  + 4 négatif - 1+1+1 + 5 négatif
+- FL tucked row : 3x{3+2}
+- Planche tucked push-up: 5+4+1 - 5+3+2 - 5+3+2
+Compression: 3x9
