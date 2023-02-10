@@ -97,6 +97,7 @@ nix-prefetch-url --unpack https://...tar.gz
 Ou bien, ne pas mettre de hash et copier le résultat de l’erreur !
 *** Débugger
 [[https://nixos.wiki/wiki/Nixpkgs/Create_and_debug_packages][Source]]
+https://nixos.wiki/wiki/Packaging/Tutorial
 Sans Flakes
 #+begin_src nix
 nix-shell -E 'with import <nixpkgs> {}; callPackage ./default.nix {}'

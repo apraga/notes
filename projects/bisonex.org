@@ -835,7 +835,12 @@ CLOSED: [2022-11-19 Sat 21:05]
 https://github.com/Illumina/hap.py
 **** DONE Version sans rtgtools avec python 3
 CLOSED: [2023-02-02 Thu 22:15]
- nix-shell -E "with import <nixpkgs> {}; callPackage /Work/Users/apraga/bisonex/pkgs/hap-py.nix {}"
+Procédure pour tester
+#+begin_src
+nix develop .#hap-py
+$ genericBuild
+#+end_src
+
 1. Supprimer l’appel à make_dependencies dans cmakelist.txt : on peut tout installer avec nix
 2. Patch Roc.cpp pour avoir numeric_limits ( error: 'numeric_limits' is not a member of 'std')
 3. ajout de flags de link (essai, error)
@@ -859,6 +864,33 @@ $ ../result/bin/hap.py example/happy/PG_NA12878_chr21.vcf.gz       example/happy
 
 **** TODO Version avec rtg-tools |
 
+**** TODO Faire fonctionner Tests
+Problème avec chemin python pour pysam : Tools/__init__.py échoue mais on peut utilise build/bin/hap.py
+#+begin_src
+nix develop .#hap-py
+$ genericBuild
+#+end_src
+
+On lance donc les tests à la main (trop d'erreurs sur les chemins)
+#+begin_src
+# OK !
+HCDIR=build/bin build/bin/test_haplotypes
+
+# OK !
+bash src/sh/make_hg19.sh
+HCDIR=build/bin HG19=hg19.fa bash src/sh/run_multimer
+ge_test.sh
+#+end_src
+
+Écheck sur
+$ HCDIR=build/bin bash src/sh/run_hapenum_test.sh
+Traceback (most recent call last):
+  File "build/bin/hap.py", line 26, in <module>
+    import pysam
+  File "/nix/store/3w2v5cl4x6ddq4281awcab9412r5gkaw-python3-3.10.9-env/lib/python3.10/site-packages/pysam/__init__.py", line 4, in <module>
+    from pysam.libchtslib import *
+ImportError: No module named libchtslib
+IL faut commenter detect var
 **** TODO Reproduire les performances precisionchallenge NA12878
 https://www.nist.gov/programs-projects/genome-bottle
 ***** TODO 0GOOR
@@ -897,7 +929,8 @@ Could not select maximized F-measure threshold from ROC data, only un-thresholde
 Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
 ----------------------------------------------------------------------------------------------------
      None             938101         934445    1369078    1276425     0.4057       0.4236     0.4144
-****** hap.py  sans vcfeval (utilisé pour le challenge) : echec
+****** DONE sans vcfeval (utilisé pour le challenge) : echec
+CLOSED: [2023-02-09 Thu 21:55]
 #+begin_src slurm
 #!/bin/bash
 #SBATCH -c 4
@@ -926,7 +959,8 @@ INDEL  ALL     0.935776    0.903997    0.523369    0.919612
 INDEL  PASS    0.935776    0.903997    0.523369    0.919612
 SNP    ALL     0.998554    0.99395    0.403126    0.996247
 SNP    PASS    0.998554    0.99395    0.403126    0.996247
-****** Avec chr originels + génome de référence
+****** DONE Avec chr originels + génome de référence : idem
+CLOSED: [2023-02-09 Thu 21:55]
 #+begin_src
 awk '{
         if($0 !~ /^#/)
@@ -940,18 +974,63 @@ awk '{
 curl -O https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/references/GRCh38/GCA_000001405.15_GRCh38_no_alt_analysis_set.fasta.gz /Work/Groups/bisonex/data/genome/GRCh38/
 #+end_src
 
-segmentation fault... On essaie d’unzip le fasta
+segmentation fault... Il faut unzip le fasta
 #+begin_src
 cd  /Work/Groups/bisonex/data/genome/GRCh38/
  gunzip GCA_000001405.15_GRCh38_no_alt_analysis_set.fasta.gz
  samtools faidx GCA_000001405.15_GRCh38_no_alt_analysis_set.fasta
 #+end_src
+
+#+begin_src slurm
+#!/bin/bash
+#SBATCH -c 4
+#SBATCH -p smp
+#SBATCH --time=01:00:00
+#SBATCH --mem=32G
+
+module load nix/2.11.0
+dir=/Work/Groups/bisonex/data/NA12878/
+truth=${dir}/GRCh38/HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz
+#ref=script/files/vcf/NA12878_NIST7035.vcf
+ref=${dir}/precisionChallenge/0GOOR_HG002_chr.vcf.gz
+bed=${dir}/GRCh38/HG001_GRCh38_1_22_v4.2.1_benchmark.bed
+fasta=/Work/Groups/bisonex/data/genome/GRCh38/GCA_000001405.15_GRCh38_no_alt_analysis_set.fasta
+hap.py $truth $ref -f $bed -r $fasta -o test
+#+end_src
+Même résultats
+ Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.Precision
+INDEL    ALL       467684    174199    293485      1156702    358998     622785  90229  99609       0.372472          0.327615
+INDEL   PASS       467684    174199    293485      1156702    358998     622785  90229  99609       0.372472          0.327615
+  SNP    ALL      3254352   1410388   1843964      5666020   1953278    2302401 735823  36239       0.433385          0.419293
+  SNP   PASS      3254352   1410388   1843964      5666020   1953278    2302401 735823  36239       0.433385          0.419293
+****** Vérifier FN
 ***** TODO Avec python2
-****** KILL avec conda
-CLOSED: [2023-02-09 jeu. 16:00]
-Impossible de crééer un nouvel environemment
 ****** TODO avec nix
 conda create -n python2 python=2.7 anaconda
+****** TODO avec conda
+******* Gentoo: regex_error sur test...
+Ok avec bash !
+#+begin_src
+
+anaconda3/bin/conda create --name py2 python=2.7
+conda activate py2
+conda install -c bioconda hap.py
+#+end_src
+******** Faire tourner les tests.
+Il faut remplace bin/test_haplotypes par test_haplotypes dans src/sh/run_tests.sh
+#+begin_src sh
+ HGREF=../genome/GRCh38/GCA_000001405.15_GRCh38_no_alt_analysis_set.fasta HCDIR=~/anaconda3/envs/py2/bin bash src/sh/run_tests.sh
+#+end_src
+Echec:
+
+test_haplotypes: /opt/conda/conda-bld/work/hap.py-0.3.7/src/c++/lib/tools/Fasta.cpp:81: MMappedFastaFile::MMappedFastaFile(const string&): Assertion `fd != -1' failed.
+unknown location(0): fatal error in "testVariantPrimitiveSplitter": signal: SIGABRT (application abort requested)
+/opt/conda/conda-bld/work/hap.py-0.3.7/src/c++/test/test_align.cpp(298): last checkpoint
+******** Chr21
+HGREF=../genome/GRCh38/GCA_000001405.15_GRCh38_no_alt_analysis_set.fasta hap.py        example/happy/PG_NA12878_chr21.vcf.gz       example/happy/NA12878_chr21.vcf.gz       -f example/happy/PG_Conf_chr21.bed.gz       -o test
+******* Helios
+échec
+****** avec docker
 
 ** DONE Exécution
 CLOSED: [2022-09-13 Tue 21:37]
