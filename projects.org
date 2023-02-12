@@ -137,18 +137,6 @@ CLOSED: [2022-12-03 Sat 12:34] SCHEDULED: <2022-07-30 Sat>
 :PROPERTIES:
 :CATEGORY: internat
 :END:
-** DONE CVEC
-CLOSED: [2022-11-20 Sun 21:30]
-** DONE Déclaration stage
-CLOSED: [2022-11-20 Sun 21:31]
-Corrigée ce jour
-** WAIT Inscription fac
-DEADLINE: <2022-12-01 Thu>
-*** DONE Payer
-CLOSED: [2022-12-05 Mon 21:23]
-*** DONE Documents
-CLOSED: [2022-12-05 Mon 21:23]
-manque fiche attestation
 * Comptabilité :ledger:
 :PROPERTIES:
 :CATEGORY: compta
@@ -1658,18 +1646,6 @@ Plus facile, à faire avant Elements... ?
 **** https://www.fast.ai/
 
 * Banque :banque:
-** TODO Compte et CB société générale :banque:
-*** KILL Envoyer relevé
-*** DONE Transfert compte bancaire
-CLOSED: [2022-10-22 Sat 23:35] SCHEDULED: <2022-07-21 Thu>
-**** DONE Virement pour éviter les défauts de rélèvements
-*** WAIT Demander chequier
-SCHEDULED: <2023-01-02 Mon>
-**** DONE Demander au CHU pour  le transfert (cela fait 2 mois)
-CLOSED: [2022-12-03 Sat 12:34] SCHEDULED: <2022-10-24 Mon>
-*** WAIT Demander DAM transfert compte bancaire
-Mail envoyé <2022-11-26 Sat>
-
 * FreeBSD :freebsd:
 ** KILL ormolu 0.5.0.0
 CLOSED: [2022-10-22 Sat 23:36] SCHEDULED: <2022-07-30 Sat>
@@ -2081,8 +2057,11 @@ CLOSED: [2022-11-19 Sat 17:35]
 SCHEDULED: <2022-12-20 Tue>
 ** TODO Cadeaux mariage :florian:
 SCHEDULED: <2022-12-27 Tue>
-** TODO Copier photos famille depuis drive yvain sur drive famille
-SCHEDULED: <2022-07-30 Sat>
+** TODO Photos famille
+*** DONE Copier photos famille drive papa -> drive proton, drive yvain sur drive famille
+CLOSED: [2023-02-12 Sun 23:17]
+*** TODO Copier photos famille depuis drive yvain sur drive famille
+*** TODO Trier photos sur drive yvain
 * Nix
 ** TODO GATK
 *** DONE Binaire
@@ -2143,9 +2122,6 @@ SCHEDULED: <2023-05-11 Thu>
 ** TODO Changer kit chaine
 SCHEDULED: <2022-12-15 Thu>
 * Maison
-** DONE Renouveler abonnement
-CLOSED: [2022-12-05 Mon 21:22] SCHEDULED: <2022-12-05 Mon>
-"Je veux changer d'abonnement sur la hotline" pour avoir le service commercial
 * Gentoo
 ** GURU
 *** DONE Demander accès

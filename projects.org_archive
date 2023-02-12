@@ -1298,3 +1298,72 @@ Possible d'utiliser selenium tout le long
 Mais si on copy lese cookies et headers depuis le navigateur:
 - on peut bypasser cloudflare (vu qu'on a le résultat)
 - mais au lieu d'avoir un json,  on a du binaire...
+
+* DONE CVEC
+CLOSED: [2022-11-20 Sun 21:30]
+:PROPERTIES:
+:ARCHIVE_TIME: 2023-02-12 Sun 23:16
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Internat
+:ARCHIVE_CATEGORY: internat
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE Déclaration stage
+CLOSED: [2022-11-20 Sun 21:31]
+:PROPERTIES:
+:ARCHIVE_TIME: 2023-02-12 Sun 23:16
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Internat
+:ARCHIVE_CATEGORY: internat
+:ARCHIVE_TODO: DONE
+:END:
+Corrigée ce jour
+
+* DONE Inscription fac
+CLOSED: [2023-02-12 Sun 23:16] DEADLINE: <2022-12-01 Thu>
+:PROPERTIES:
+:ARCHIVE_TIME: 2023-02-12 Sun 23:16
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Internat
+:ARCHIVE_CATEGORY: internat
+:ARCHIVE_TODO: DONE
+:END:
+** DONE Payer
+CLOSED: [2022-12-05 Mon 21:23]
+** DONE Documents
+CLOSED: [2022-12-05 Mon 21:23]
+manque fiche attestation
+
+* DONE Compte et CB société générale :banque:
+CLOSED: [2023-02-12 Sun 23:16]
+:PROPERTIES:
+:ARCHIVE_TIME: 2023-02-12 Sun 23:16
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Banque
+:ARCHIVE_CATEGORY: projects
+:ARCHIVE_TODO: DONE
+:END:
+** KILL Envoyer relevé
+** DONE Transfert compte bancaire
+CLOSED: [2022-10-22 Sat 23:35] SCHEDULED: <2022-07-21 Thu>
+*** DONE Virement pour éviter les défauts de rélèvements
+** DONE Demander chequier
+CLOSED: [2023-02-12 Sun 23:16] SCHEDULED: <2023-01-02 Mon>
+*** DONE Demander au CHU pour  le transfert (cela fait 2 mois)
+CLOSED: [2022-12-03 Sat 12:34] SCHEDULED: <2022-10-24 Mon>
+** DONE Demander DAM transfert compte bancaire
+CLOSED: [2023-02-12 Sun 23:16]
+Mail envoyé <2022-11-26 Sat>
+
+
+* DONE Renouveler abonnement
+CLOSED: [2022-12-05 Mon 21:22] SCHEDULED: <2022-12-05 Mon>
+:PROPERTIES:
+:ARCHIVE_TIME: 2023-02-12 Sun 23:18
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Maison
+:ARCHIVE_CATEGORY: projects
+:ARCHIVE_TODO: DONE
+:END:
+"Je veux changer d'abonnement sur la hotline" pour avoir le service commercial
