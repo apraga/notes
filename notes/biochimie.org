@@ -66,15 +66,24 @@ Alcalose -> diminution sécrétion H^+ donc diminue réabsorption bicarbonates
 Acidose -> augmenation sécrétion H^+, réabsorbe plus de bicarbonates et en produit plus
 
 *** sécrétion H^+ et réabsorption bicarbonates
-*Pour chaque bicarbonates réabsorbé, il faut produit un H^+*
+*Pour chaque bicarbonates réabsorbé, il faut produire un H^+*
 90% tubule proximal
 
-Sécrétion H^+ va se combiner au HCO_3- pour former du H_2 CO_3, décomposé en CO_2 et H_2O. Le CO2 va être réabsorbé. Au total, bicarbonates réabsorbé dans le sang f:
+Sécrétion H^+ va se combiner au HCO_3- pour former du H_2 CO_3, décomposé en CO_2 et H_2O. Le CO2 va être réabsorbé. Au total, bicarbonates réabsorbé dans le sang :
 
 #+name: Sécrétion H^+ tubuluaire
 [[../images/biochimie/tubule-secretion-proton.png]]
 
+De plus, le bicarbonates sécrété ne peut pas être réabsorbé tel quel. Il faut donc cette réaction pour qu’il passe la membrane tubulaire sous forme de CO_2. Enfin le HCO_3- créé à partir de ce CO_2 va être réabsorb via le Na+ - HCO_3- (tubule proximal) ou Cl- HCO 3^- (autres parties)
 
+*Le bilan net d’une excrétion d’ H^+ est donc seulement la réabsorption de HCO_3^-*
+En temps normal, il y a un légèr excès d’excrétion H^+ sur HCO_3^- dans les tubules. H^+ est combiné avec les phosphates et l’ammoniaque.o
+Si HCO_3^- > H^+ dans les urines, il est excrété.
+Si H^+ > HCO_3^-  dans les urines, il est excrété avec phosphate et ammionaque.
+
+Il y a un second type de cellule qui permet d’excréter du H^+ avec une pompe "active" plutôt qu’un contre-transport. Ce mécanisme produit peu de quantité d’H^+ mais permet de concentrer forcement les ions H^+
+*** Génération de HCO_3^-
+Une foie que tous le HCO_3^- a été réabsorbé, l’excès de H^+ se combine avec le phosphate HPO_4^=
 * Acides biliaires
 ** Naissance
 Les hépatocytes synthétisent les acides biliaires primitifs (acide cholique, acide chénodésoxycholique) à partir du cholestérol, qui sont conjugée avec la taurine et glycine puis sécréts dans la vésicule bilaire.
