@@ -283,10 +283,10 @@ RED Bags & Trane RED Olé Coltrane RED Live in Seatle
   :CUSTOM_ID: listen
   :END:
 
-- DONE Brahms violin concerto - Gluzman
-- DONE Antonín Dvořák performed by Mahler Chamber Orchestra & Steven
+- [X] Brahms violin concerto - Gluzman
+- [X] Antonín Dvořák performed by Mahler Chamber Orchestra & Steven
   Isserlis under Daniel Harding - Cello Concertos - 2013
-- DONE Antonín Dvořák performed by Prague Symphony Orchestra under
+- [X] Antonín Dvořák performed by Prague Symphony Orchestra under
   Charles Mackerras - Symphonies Nos. 8 & 9 - 2005
 - LISTEN Gluck - Gardiner - Orphée et Eurydice (1989) [
 - Franz Schubert performed by Chilingirian Quartet & Jennifer Ward
@@ -294,11 +294,11 @@ RED Bags & Trane RED Olé Coltrane RED Live in Seatle
   (CD - FLAC - Lossless)-3297699
 - Franz Schubert performed by Helmut Deutsch & Jonas Kaufmann -
   Winterreise - 2014 (CD - FLAC - Lossless)-222573
-- DONE Hildegard von Bingen performed by Sequentia - Canticles of
+- [X] Hildegard von Bingen performed by Sequentia - Canticles of
   Ecstasy - 1994 (CD - FLAC - Lossless)-1670285
 - Janet Baker & Melos Ensemble of London under Bernard Keeffe - French
   Songs - 2010 (CD - FLAC - Lossless)-808082
-- DONE Modest Mussorgsky performed by Boris Christoff under Georges
+- [X] Modest Mussorgsky performed by Boris Christoff under Georges
   Tzipine - Complete songs - 1989 (CD - FLAC - Lossless)-1663666
 - Pérotin performed by The Hilliard Ensemble - Perotin - 1989 (CD -
   FLAC - Lossless)-1054007
@@ -332,11 +332,11 @@ RED Bags & Trane RED Olé Coltrane RED Live in Seatle
   Op. 78 Regen - 2017
 
 **  Jazz
-- [ ] AIR - Air Time - 1996 (CD - FLAC - Lossless)-1432283.torrent
+- [X] AIR - Air Time - 1996 (CD - FLAC - Lossless)-1432283.torrent
 - [X] Abdullah Ibrahim - Yarona - 1995 (CD - FLAC - Lossless)-158236.tor
-- [ ] Ahmad Jamal Trio - Ahmad Jamal at the Pershing But Not for Me - 19
+- [X] Ahmad Jamal Trio - Ahmad Jamal at the Pershing But Not for Me - 19
 - [ ] Ahmad Jamal Trio - Cross Country Tour 1958-61 - 1998 (CD - FLAC -
-- [ ] Albert Ayler Trio - Spiritual Unity - 1998 (CD - FLAC - Lossless)-
+- [X] Albert Ayler Trio - Spiritual Unity - 1998 (CD - FLAC - Lossless)-
 - [ ] Art Blakey - A Night at Birdland, Volume 1 - 2001 (CD - FLAC - Los
 - [ ] Art Blakey Quintet - A Night at Birdland, Volume 2 - 2001 (CD - FL
 - [ ] Art Pepper - Meets the Rhythm Section - 1986 (CD - FLAC - Lossless
