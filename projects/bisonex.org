@@ -865,32 +865,36 @@ $ ../result/bin/hap.py example/happy/PG_NA12878_chr21.vcf.gz       example/happy
 **** TODO Version avec rtg-tools |
 
 **** TODO Faire fonctionner Tests
-Problème avec chemin python pour pysam : Tools/__init__.py échoue mais on peut utilise build/bin/hap.py
+***** TODO Essai 2 : depuis nix develop:
 #+begin_src
 nix develop .#hap-py
-$ genericBuild
+genericBuild
 #+end_src
-
-On lance donc les tests à la main (trop d'erreurs sur les chemins)
+Lancé initialement à la main, mais on peut maintenant utiliser run_tests
 #+begin_src
-# OK !
-HCDIR=build/bin build/bin/test_haplotypes
-
-# OK !
-bash src/sh/make_hg19.sh
-HCDIR=build/bin HG19=hg19.fa bash src/sh/run_multimer
-ge_test.sh
+HCDIR=bin/ ../src/sh/run_tests.sha
 #+end_src
-
-Écheck sur
-$ HCDIR=build/bin bash src/sh/run_hapenum_test.sh
-Traceback (most recent call last):
-  File "build/bin/hap.py", line 26, in <module>
-    import pysam
-  File "/nix/store/3w2v5cl4x6ddq4281awcab9412r5gkaw-python3-3.10.9-env/lib/python3.10/site-packages/pysam/__init__.py", line 4, in <module>
-    from pysam.libchtslib import *
-ImportError: No module named libchtslib
-IL faut commenter detect var
+- [X] test boost
+- [X] multimerge
+- [X] hapenum
+- [X] fp accuracy
+- [X] faulty variant
+- leftshift fails
+- [X] other vcf
+- [X] chr prefix
+- [X] gvcf
+- [X] decomp
+- [X] contig lengt
+- [X]  integration test
+- [ ] scmp fails sur le type
+- [X] giab
+- [X] performance
+- [ ] quantify fails sur le type
+- [ ] stratified échec sur les résultats !
+- [X] pg counting
+- [ ] sompy: ne trouve pas Strelka dans somatic
+phases="buildPhase checkPhase installPhase fixupPhase" genericBuild
+#+end_src
 **** TODO Reproduire les performances precisionchallenge NA12878
 https://www.nist.gov/programs-projects/genome-bottle
 ***** TODO 0GOOR

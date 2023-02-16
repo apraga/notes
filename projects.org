@@ -2058,6 +2058,17 @@ SCHEDULED: <2022-12-20 Tue>
 ** TODO Cadeaux mariage :florian:
 SCHEDULED: <2022-12-27 Tue>
 ** TODO Photos famille
+On utilise le drive commun qu'a fait Elise. Pour éviter les soucis de connexion, on modifie juste le dossier partagé:
+https://drive.google.com/drive/folders/11wJ0E_KZv7I88wdv_ULHqd5KvWFfF0DF?usp=sharing_eip_m&invite=CPX0rho&ts=63ea1879
+
+Autres drives :
+
+    alexis: https://drive.proton.me/urls/PQ5M6TKVRM#q8yulEV8T5WG
+    papa : https://www.mailo.com/mailo/docs/docs.php?s=IaK9Ajz8kwQJXNPnhJofRuDwyrNSZVy4&dir=mqn0f3%2bozZXc%2bwh4DeXwhVTY1Zz4zci5rZ4XcNHRmX7wPT0d9WG%2b0g%3d%3d&ea_encode=0
+
+
+
+
 *** DONE Copier photos famille drive papa -> drive proton, drive yvain sur drive famille
 CLOSED: [2023-02-12 Sun 23:17]
 *** TODO Copier photos famille depuis drive yvain sur drive famille
