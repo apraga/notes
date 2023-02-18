@@ -27,10 +27,10 @@ Essentiels. Squelette carboné venant du pyruvate
 Buffer + H^+ \leftrightarrow H Buffer
 
 *** Bicarbonate
-CO_2 + H_2O \leftrightarrow H_2 CO_3 \leftrightarrow H^+ + HCO_3^-
+$CO_2 + H_2O \leftrightarrow H_2 CO_3 \leftrightarrow H^+ + HCO_3^-$
 avec carbonic anhydrase (alvéoles pulmonaires, )
-- Acidose : tampon avec HCO_3^- pour produire CO_2 et H_2O. Le CO_2 est éliminé par le poumon
-- alcalose : tampon avec H_2 CO_3 pour former du HCO_3^-, qui sera excrété au niveau rénal
+- Acidose : tampon du H^+ de l’acide avec HCO_3^- pour produire CO_2 et H_2O. Le CO_2 est éliminé par le poumon. Exemple : HCl -> H^+ + Cl^-
+- alcalose : tampon du OH^- avec H_2 CO_3 pour former du HCO_3^-, qui sera excrété au niveau rénal
 
   /NB/: le CO_2 dans le sang est proportionnel à la pCO_2: CO_2 = 0.03 p_{CO_2}
 
@@ -46,21 +46,21 @@ Le pK est proche du pH 6.8 vs 7.4 mais la concentration extracellulaire est faib
 *Il est très important dans les tubules rénaux* : concentration impportante de phosphate à cet endroit et le pH est nettement diminué (proche du pK donc idéale)
 
 *** Protéines
-60-70% du tampon total se fait dans le cellules et la plupart vient des protéines intracellulire
+60-70% du tampon total se fait dans le cellules et la plupart vient des protéines intracellulaire
 
 Le pH intracellulaire "suit" le pH extracellulaire dans les heures qui suivent (diffusion lentes H^+ et HCO_3-)
 ** Respiration
-Le CO_2 est formé de manière contue par les processus métabolique intracellulaire. Il va ensuite diffuser dans le sang et liquides interstitiels puis transporté dans les alvéoles. La ventilation pulmonaire va le transférer dans l’atomosphère.
+Le CO_2 est formé de manière continue par les processus métaboliques intracellulaires. Il va ensuite diffuser dans le sang et liquides interstitiels puis transporté dans les alvéoles. La ventilation pulmonaire va le transférer dans l’atomosphère.
 
 Acidose -> Hyperventilation -> diminution CO_2 -> diminution H^+ -> alcalose. Doublement de la fréquence respiratoire = pH + 0.23
-Alaclose -> hypoventilation mais moins efficace car l’hypoxémie active les chémorecpeteurs qui vont stimuler la respiration
+Alcalose -> hypoventilation mais moins efficace car l’hypoxémie active les chémorecpeteurs qui vont stimuler la respiration
 
 La réponse respiratoire est efficace à 50-70%
 Elle este 1 à 2x plus efficace que les tampons extra-cellulaire
 Évidemment, réponse diminuée par une anomalie de la fonction respiratoire (emphysème...)
 ** Rénal
 Production d’acides non volatiles (protéines surtout) qui ne sont pas éliminables par la respiration
-Le rein doit également éviter la perte de bicarbonates -> quasiment tout est réabsorbé. Pour ceal, il faut une excrétion de H^+ poru réabsorber le HCO_3^- filtré
+Le rein doit également éviter la perte de bicarbonates -> quasiment tout est réabsorbé. Pour cela, il faut une excrétion de H^+ pour réabsorber le HCO_3^- filtré
 
 Alcalose -> diminution sécrétion H^+ donc diminue réabsorption bicarbonates
 Acidose -> augmenation sécrétion H^+, réabsorbe plus de bicarbonates et en produit plus
@@ -84,17 +84,55 @@ Si H^+ > HCO_3^-  dans les urines, il est excrété avec phosphate et ammionaque
 Il y a un second type de cellule qui permet d’excréter du H^+ avec une pompe "active" plutôt qu’un contre-transport. Ce mécanisme produit peu de quantité d’H^+ mais permet de concentrer forcement les ions H^+
 *** Génération de HCO_3^-
 Une foie que tous le HCO_3^- a été réabsorbé, l’excès de H^+ se combine avec le phosphate HPO_4^=
+[[../images/biochimie/tubule-phosphate.png]]
+*Quand un H^+ supplémentaire se combine avec autre chose qu’un bicarbonate, il y a un gain net d’un bicarbonate*
+
+La plupart du phosphate est réabsorbé donc le tampon se fait surtout via l’ammoniaque (NH3 et ion NF3)
+
+Dans le tubule proximale, NH_4^+ est synthétisé depuis la glutamine (métabolisme des acide aminés dans le foie) selon :
+glutamine -> 2NH_4^+ + 2 HCO_3^-
+Les 2 NH_4^+ sont sécrétés et les 2 bicarbonate sont réabsorbés, *créant de nouveaux bicarbonates*
+
+Dans le tubule collecteur, le H^+ va se combiner avec NH_3 pour former du NH_4^+
+
+*Pour l’acide chronique, l’excrétion de NH_4^+ est le mécanisme dominant*
+*** Calcul net
+Excrétion d’acide par le rein = excrétion NH_4^+ + buffer non bicarbonate et non ammonique - réabsorbtion H^+ dans le sang
+= excrétion NH_4^+ + buffer non bicarbonate et non ammonique - excrétion HCO_3^-
+
+Acide = excrétion > 0
+Alcalose = excrétion < 0
+*** Régulation sécrétion H^+
+Il en faut suffisament pour réabsorber le HCO_3^- filtrer et excréter NH_4^+ (acide non volatide)
+
+Alcalose : diminution sécrétion H^+ pour réabsorber moins de HCO_3^-
+Acidose : augmentation sécrétion H^+ pour réabsorber tout le HCO_3^- et pouvoir excréter des H^+ (donc augmenter les HCO_3^-)
+
+Sécrétion H^+ augmentée par
+1. augemntation pCO_2
+2. diminution [H^+] extracellulaire
+3. hypersécrétion aldostérone (donc alcalose en pratique)
+4. Stimulation réabsorbtion sodium (réabsorbé en même temps): hypovolymie, diminution angiotensine
+5. Hypokaliémie
+
+Diminuée par l’inverse
+*** Cause et correction
+Acidose
+- métabolique : du à diminution [HCO_3^- extracellulaire]
+- respiratoire : augmenation pCO2 extracellulaire (stimule sécrétion H^+)
+-> chronique: augmentation production NH_4^+ (donc augmentation excrétion H^+ et ajout HCO_3^- sang)
+si métabolique, les poumons aident à corriger
 * Acides biliaires
 ** Naissance
-Les hépatocytes synthétisent les acides biliaires primitifs (acide cholique, acide chénodésoxycholique) à partir du cholestérol, qui sont conjugée avec la taurine et glycine puis sécréts dans la vésicule bilaire.
+Les hépatocytes synthétisent les acides biliaires primitifs (acide cholique, acide chénodésoxycholique) à partir du cholestérol, qui sont conjugés avec la taurine et glycine puis sécrétés dans la vésicule bilaire.
 ** Vie
-Stockés dans la vésicule biliaire, ils sont relarugé dans l’intestiné au moment de la digestion.
+Stockés dans la vésicule biliaire, ils sont relargé dans l’intestin au moment de la digestion.
 ** Mort
-Ils peuvent être réabsorbé et retourner dans le foie via la veine porte, ou excrété dans les salles ou métabolisés par les bactéries intestinales (acides biliaire secondaire).
+Ils peuvent être réabsorbés et retourner dans le foie via la veine porte, ou excrétés dans les salles ou métabolisés par les bactéries intestinales (acides biliaire secondaire).
 ** Effet
 Dans le foie, ils participent à la formation de la bile.
 dans la bile, ils évitent la formation de calculs biliaires en permettant la solubilisation du chostérole et des phospholipides.
-Au niveau intestinale, ils  agisessent comment émulsifiant sur les lipides (triglyceride, cholesterol...) pour favoriser leur réabsorption par la muqueuse.
+Au niveau intestinal, ils  agissent comment émulsifiants sur les lipides (triglyceride, cholesterol...) pour favoriser leur réabsorption par la muqueuse.
 ** Indication
 - exploration fonctionnelle du foie (cholestase hépatique, ictère, insuffisance hépatocellulaire)
 - exploration lithiase après une colique ou complication
@@ -158,7 +196,7 @@ Enzyme dans le cytosol ou mitochondrie des cellule : muscles squelettiques++ et 
 - CK-BB (= cerveau, gastro-interdsstinal
 ** Vie
 Catalyse la phosphorylation de la créatine en créatine phosphate par l'ATP (avec production ADP)
-Voir [[Créatine]]
+Voir [[*Vie][Vie de la créatine]]
 ** Mort
 ** Effet
 contraction musculaire
@@ -168,7 +206,7 @@ contraction musculaire
 ** Dosage
 * Créatine
 ** Naissance
-Il s’agit d’un produit de l’arginine (transformation en glycine par la glycine amdinotransferase, qui va générer du guanidinoacetate et de l’ornithin. Cette première est méthylée en créatine). Ces réaction ont lieu dans le foie, rein et cerveau.
+Il s’agit d’un produit de l’arginine (transformation en glycine par la glycine amdinotransferase, qui va générer du guanidinoacetate et de l’ornithine. Cette première est méthylée en créatine). Ces réactions ont lieu dans le foie, rein et cerveau.
 ** Vie
 La créatine est transportée dans les muscles squelettique
 La phosphorylation de la créatine sert à faire la phosphocréatine, qui est un réservoir d’énergie (muscle squelettique, cerveau surtout) car la déphosphorylation permet de créer de l’ATP.
@@ -182,13 +220,13 @@ Pour excrétion dans les urine, la [[Créatine][créatine]] est tansformée en c
 ** Vie
 Libérée par le muscle
 ** Mort
-Éliminée par le rein
+Éliminée par le rein par filtration glomérulaire et excrétion dans le tubule proximal
 ** Effet
  Pas de rôle physiologique
 ** Indication
 Pas de réabsorption par le rein, donc marqueur de fonction rénale
 ** Dosage
-
+La clairance de la créatinine sert d’approximation pour le débit de filtration glomérulaire (voir [[*DFG][DFG]])
 * Cycle de l’urée
 Permet d’éliminer l’ammoniaqueet l’urée
 ** Initialisation
@@ -250,9 +288,9 @@ Patho:
 
 Patho: sursaturation du cholestérol -> cristaux -> calcul
 ** Marqueurs
-*** Cytolyse
-- ALAT > 40 U/L = cytosol (foie +/- muscles)
-- ASAT > 35 U/L = cytosol + mitochondrie (foie, muscles, coeurs, rein, pancréas, cerveau)
+*** Cytolyse:
+- _ALAT_ > 40 U/L = cytosol (foie +/- muscles)
+- _ASAT_ > 35 U/L = cytosol + mitochondrie (foie, muscles, coeurs, rein, pancréas, cerveau)
 Attention :
   - hémolyse = ininterprétable (aminotransferase globules rouges> plasma )
   - ASAT < ALAT (sauf alcool chronique car grosses mitochrondrie)
@@ -260,17 +298,17 @@ Attention :
   - seulement souffrance cellulaire et non état fonctionnel du foie
 NB: LDH (lyse cellulaire) non spécifique mais très marqué pour métastase hépatique
 *** Synthèse
-- Coagulation : complexe prothrombinique diminué
+- _Coagulation_ : complexe prothrombinique diminué
   - non spécifique des insuffisance hépatocellulaire (cholestase avec défaut absorption vitamine K)
   - si < 60%, doser facteur V pour confirmer IHC
   - attention: fibrose dès <90% dans patho chronique
-- Albumine : produit par l’hépatocyte
+- _Albumine_ : produit par l’hépatocyte
   - important mais non spécifique de l’IHC (malnutrition, malabsorption, rénal)
 *** Épuration
-- Urée = diminué si IHC (genèse hépatique)
-- Ammoniac = augmenté si ICH -> suivi des IHC et foie (toxicité système nerveux central)
+- _Urée_ = diminué si IHC (genèse hépatique)
+- _Ammoniac_ = augmenté si ICH -> suivi des IHC et foie (toxicité système nerveux central)
 *** Sécrétion bilaire
-Surtout défaut d’excrétion bilirubine conjugée + augmentation bilirbuine totale
+Surtout défaut d’excrétion _bilirubine conjugée_ + augmentation bilirubine totale
 *** Cholestase
 Diminution/arrêt sécrétion biliaire. 3 atteintes :
 1. synthèse
@@ -280,9 +318,9 @@ Diminution/arrêt sécrétion biliaire. 3 atteintes :
 Marqueurs
 - bilirubine : augmentation totale + conjuguée (attention, ictère retardé : conjonctive si > 50µmol/L)
 - enzyme :
-  - phosphatase alcaline (PAL) augmentée mais non spécifique (patho. osseuses, cancers)
+  - _phosphatase alcaline_ (PAL) augmentée mais non spécifique (patho. osseuses, cancers)
     [Attention âge, grossesse]
-  - gamma-glutamyl transférase (γGT): origine hépatique pour l’enzyme circuante. Augmenté sensible mais peu spécifique (alcool, contraceptiuqe, phénoparbital)
+  - _gamma-glutamyl transférase_ (γGT): origine hépatique pour l’enzyme circulante. Augmenté sensible mais peu spécifique (alcool, contraceptiuqe, phénoparbital)
     [Attention population africaine]
 
 Coagulation: Diminution du TP avec facteur V normal
@@ -310,7 +348,7 @@ Augmentation ALAT/ASAT
   Bilan enzymatique anormal
   | \gamma GT | PAL      | ALAT,ASAT | Étiologies                                              |
   |-----------+----------+-----------+---------------------------------------------------------|
-  | augmenté  | augmenté | augmenté  | hépatopatihe cytolytique                                |
+  | augmenté  | augmenté | augmenté  | hépatopathie cytolytique                                 |
   |           |          |           | hépatite virale, alcool, médicaments                    |
   | augmenté  | augmenté | N         | hépatopathie cholestatique                              |
   |           |          |           | médicaments (antidépresseurs), biliaire, pancréas, foie |
