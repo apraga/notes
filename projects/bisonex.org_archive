@@ -1,0 +1,129 @@
+#    -*- mode: org -*-
+
+
+Archived entries from file /home/alex/org/projects/bisonex.org
+
+
+* DONE Vérifier qualité données sur mesocentre
+CLOSED: [2023-01-12 Thu 15:48]
+:PROPERTIES:
+:ARCHIVE_TIME: 2023-01-12 Thu 15:48
+:ARCHIVE_FILE: ~/org/projects/bisonex.org
+:ARCHIVE_OLPATH: Données
+:ARCHIVE_CATEGORY: bisonex
+:ARCHIVE_TODO: DONE
+:END:
+** DONE BAM
+CLOSED: [2023-01-12 Thu 15:47]
+picard ValidateSamFile
+On regarde juste le code d'erreur (0 = pas d'erreur)
+** DONE Fastq
+CLOSED: [2023-01-12 Thu 15:48]
+fastqc
+Il faut ensuite extraire les zip and chercher les erreur dedans
+
+* KILL Implémenter d’autres pipeline
+CLOSED: [2023-01-15 Sun 12:03]
+:PROPERTIES:
+:ARCHIVE_TIME: 2023-01-15 Sun 12:03
+:ARCHIVE_FILE: ~/org/projects/bisonex.org
+:ARCHIVE_CATEGORY: bisonex
+:ARCHIVE_TODO: KILL
+:END:
+Voir https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04407-x
+** KILL GATK
+CLOSED: [2022   -11-11 Fri 20:01]
+https://broadinstitute.github.io/warp/docs/Pipelines/Exome_Germline_Single_Sample_Pipeline/README
+A priori, respecte les bonnes pratiques
+** KILL Essayer snmake avec bonne pratiques
+https://github.com/snakemake-workflows/dna-seq-gatk-variant-calling/blob/main/.github/workflows/main.yml
+Installer Mamba (micromamba ne fonctionne pas sous nix)
+Ne fonctionne pas sous WSL2... MultiQC n’est pas assez à jour
+Problèmes de versions...
+** KILL Sarek
+CLOSED: [2022-12-11 Sun 11:09]
+*** Dépendences
+**** Nix
+#+begin_src sh
+ nix profile install nixpkgs#mosdepth nixpkgs#python3
+  nix-shell -p python310Packages.pyyaml --run "nextflow run nf-core/sarek -profile test --executor slurm --queue smp --outdir test -resume"
+#+end_src
+***** KILL derivation nix pour profile complet
+CLOSED: [2022-12-11 Sun 11:09]
+**** KILL Sans nix
+CLOSED: [2022-09-24 Sat 10:20]
+On utilise conda
+#+begin_src sh
+module unload nix
+module load anaconda3@2021.05/gcc-12.1.0
+module load nextflow@22.04.0/gcc-12.1.0
+module load openjdk@11.0.14.1_1/gcc-12.1.0
+nextflow run nf-core/sarek -profile conda,test --executor slurm --queue smp --outdir test -resume
+#+end_src
+Essai 1: erreurs de permissions, corrigé en relancant le programme
+#+begin_quote
+  Failed to create Conda environment
+  command: conda create --mkdir --yes --quiet --prefix /Work/Users/apraga/test-sarek/work/conda/env-2d53b1db50de676670cf1a91ef0cf6db bioconda::tabix=1.11
+  status : 1
+  message:
+    NotWritableError: The current user does not have write permissions to a required path.
+      path: /Home/Users/apraga/.conda/pkgs/urls.txt
+      uid: 1696
+      gid: 513
+
+    If you feel that permissions on this path are set incorrectly, you can manually
+    change them by executing
+
+      $ sudo chown 1696:513 /Home/Users/apraga/.conda/pkgs/urls.txt
+#+end_quote
+Corrigé avec
+#+begin_src sh
+      chown 1696:513 /Home/Users/apraga/.conda/pkgs/urls.txt
+#+end_src
+Mais problème de proxy
+*** KILL Dérivation nix pour modules python
+CLOSED: [2022-12-11 Sun 11:09]
+*** KILL Lancer sarek en mode test
+CLOSED: [2022-12-11 Sun 11:09]
+#+begin_src sh
+  nix-shell -p python310Packages.pyyaml --run "nextflow run nf-core/sarek -profile test --executor slurm --queue smp --outdir test -resume"
+#+end_src
+*** KILL Lancer sarek sur données allégées
+CLOSED: [2022-12-11 Sun 11:09]
+
+* DONE Essai 1
+CLOSED: [2023-02-13 Mon 11:50]
+:PROPERTIES:
+:ARCHIVE_TIME: 2023-02-14 Tue 10:42
+:ARCHIVE_FILE: ~/org/projects/bisonex.org
+:ARCHIVE_OLPATH: Nouveau workflow/Dépendences avec Nix/hap.py/Faire fonctionner Tests
+:ARCHIVE_CATEGORY: bisonex
+:ARCHIVE_TODO: DONE
+:END:
+Problème avec chemin python pour pysam : Tools/__init__.py échoue mais on peut utilise build/bin/hap.py
+#+begin_src
+nix develop .#hap-py
+$ genericBuild
+#+end_src
+
+On lance donc les tests à la main (trop d'erreurs sur les chemins)
+#+begin_src
+# OK !
+HCDIR=build/bin build/bin/test_haplotypes
+
+# OK !
+bash src/sh/make_hg19.sh
+HCDIR=build/bin HG19=hg19.fa bash src/sh/run_multimer
+ge_test.sh
+#+end_src
+
+Écheck sur
+$ HCDIR=build/bin bash src/sh/run_hapenum_test.sh
+Traceback (most recent call last):
+  File "build/bin/hap.py", line 26, in <module>
+    import pysam
+  File "/nix/store/3w2v5cl4x6ddq4281awcab9412r5gkaw-python3-3.10.9-env/lib/python3.10/site-packages/pysam/__init__.py", line 4, in <module>
+    from pysam.libchtslib import *
+ImportError: No module named libchtslib
+IL faut commenter detect var
+
