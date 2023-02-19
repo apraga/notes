@@ -2886,7 +2886,18 @@ le pipeline prend en compte 5', 3', variant canoniques d'épissage + prédit spi
 Le plus simple pour le moment est de restreindre seulement aux exons
 GENCODE (version europénne) vs RefSeq: [[https://bmcgenomics.biomedcentral.com/articles/10.1186/1471-2164-16-S8-S2][article 2015]] en faveur de GENCODE mais Alexis conseille Refseq
 
-****** TODO Utiliser seulement exons BestRefSeq 
+****** Erreur dans le paramètre : -f au lieu de -R !!
+Il faut supprimer les overlap (et trier avant)
+ bedtools sort -i illumina_exons.bed > illumina_exons.bed.sorted
+ bedtools merge -i illumina_exons.bed.sorted > HG001_GRCh38_1_22_v4.2.1_benchmark_illumina_exons.be
+******* rtg tools
+Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
+----------------------------------------------------------------------------------------------------
+    3.000               1015            910        206      32531     0.8154       0.0303     0.0583
+     None               1015            910        206      32531     0.8154       0.0303     0.0583
+****** TODO Utiliser seulement exons
+******* DONE BestRefSeq 
+CLOSED: [2023-02-19 Sun 12:05]
 Dans refseq,[[https://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/][2 types de modèles pour le gène]]
 - basé sur refseq (NM_, NP_), curée
 - basé sur gnomon (XM_ , XP_), prédite
@@ -2902,7 +2913,8 @@ On se restrein aux exons codant (NM_)
 awk '/BestRefSeq\texon/ && /transcript_id=NM/ {print $1"\t"$4"\t"$5;}' GRCh38_latest_genomic.gff > exons.csv
 #+end_src
 Puis intersection
-******* TODO Tests après correction bug dans noms de chromosome : precision ~ ok, recall très mauvais -> trop de FN ?
+******** DONE Tests après correction bug dans noms de chromosome : precision ~ ok, recall très mauvais -> trop de FN ?
+CLOSED: [2023-02-19 Sun 12:05]
  Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.Precision
 INDEL    ALL         7230       321      6909         1500       290        888     27     18       0.044398          0.526144
 INDEL   PASS         7230       321      6909         1500       290        888     27     18       0.044398          0.526144
@@ -2914,8 +2926,8 @@ INDEL   PASS         7230       321      6909         1500       290        888 
        0.592000         0.081887                     NaN                     NaN                    1.54733                   6.129187
        0.474236         0.054370                2.433271                1.861183                    1.57523                   2.703663
        0.474236         0.054370                2.433271                1.861183                    1.57523                   2.703663
-******* Vérifier exons
-On a l'union des exons de tous les transcripts...
+******** DONE Vérifier exons: on a l'union des exons de tous les transcripts...
+CLOSED: [2023-02-19 Sun 12:05]
 Il faudrait un .bed d'illumina
 On teste Twist for Illumina Exome 2.0 Plus BED File (hg19) sur https://support.illumina.com/downloads/nextera-flex-for-enrichment-BED-files.html
 Conversion en hg38 avec ucsc
@@ -2926,15 +2938,26 @@ sed -i.bak -f pattern.sed illumina_exons.bed
 bedtools intersect -a HG001_GRCh38_1_22_v4.2.1_benchmark.bed -b illumina_exons.bed > HG001_GRCh38_1_22_v4.2.1_benchmark_illumina_exons.bed
 #+end_src
 Intersection
-******* Erreur dans le paramère : -f au lieu de -R !!
-Il faut supprimer les overlap (et trier avant)
- bedtools sort -i illumina_exons.bed > illumina_exons.bed.sorted
- bedtools merge -i illumina_exons.bed.sorted > HG001_GRCh38_1_22_v4.2.1_benchmark_illumina_exons.be
-******* rtg tools
-Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
-----------------------------------------------------------------------------------------------------
-    3.000               1015            910        206      32531     0.8154       0.0303     0.0583
-     None               1015            910        206      32531     0.8154       0.0303     0.0583
+******* TODO Bed illumina
+******** KILL Sans filtre vep: Inversion truth et query... on recommence
+CLOSED: [2023-02-19 Sun 13:15]
+******** TODO Sans filtre vep: mieux mais pas exceptionnel
+cd work/00/2c72e62400956c96fb101ac7af405e/
+$ cat .command.out
+
+ Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.Precision
+INDEL    ALL          922       490       432          942       439          0     32     56       0.531453          0.533970
+INDEL   PASS          922       490       432          942       439          0     32     56       0.531453          0.533970
+  SNP    ALL        24618     18689      5929        21257      2571          0    239     17       0.759160          0.879052
+  SNP   PASS        24618     18689      5929        21257      2571          0    239     17       0.759160          0.879052
+
+
+ METRIC.Frac_NA  METRIC.F1_Score  TRUTH.TOTAL.TiTv_ratio  QUERY.TOTAL.TiTv_ratio  TRUTH.TOTAL.het_hom_ratio  QUERY.TOTAL.het_hom_ratio
+            0.0         0.532709                     NaN                     NaN                   1.628743                   2.799180
+            0.0         0.532709                     NaN                     NaN                   1.628743                   2.799180
+            0.0         0.814719                2.899604                2.881526                   1.598479                   1.564378
+            0.0         0.814719                2.899604                2.881526                   1.598479                   1.564378
+******** TODO Comprendre pour les FN explosent avec vep annot
 *** TODO Platinum genome
 https://emea.illumina.com/platinumgenomes.html
 ** Divers
