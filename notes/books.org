@@ -163,6 +163,8 @@ Relu jusque "curse of dimensionality"
 **** STRT Wilderness traumau and surgical emergencies
 ** STRT Biochemical pathways
 Survolé jusque 2.2.2
+** STRT Guyton physiology
+*** STRT 31. Acide-base regulation
 
 * Philosophy :philosophy:
 ** STRT A History of Western Philosophy
