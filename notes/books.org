@@ -164,7 +164,8 @@ Relu jusque "curse of dimensionality"
 ** STRT Biochemical pathways
 Survolé jusque 2.2.2
 ** STRT Guyton physiology
-*** STRT 31. Acide-base regulation
+*** DONE 31. Acide-base regulation
+CLOSED: [2023-02-20 lun. 11:45]
 
 * Philosophy :philosophy:
 ** STRT A History of Western Philosophy
