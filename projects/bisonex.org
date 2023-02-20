@@ -2957,7 +2957,47 @@ INDEL   PASS          922       490       432          942       439          0 
             0.0         0.532709                     NaN                     NaN                   1.628743                   2.799180
             0.0         0.814719                2.899604                2.881526                   1.598479                   1.564378
             0.0         0.814719                2.899604                2.881526                   1.598479                   1.564378
-******** TODO Comprendre pour les FN explosent avec vep annot
+******** STRT Comprendre pour les FN explosent avec vep annot
+NC_000001.11	924024	.	C	G
+non couverte dans bam -> 1er exons de SAMD11 mais non couverte
+Il est dans NM_001385641.1 mais pas dans NM_152486.4
+******* TODO Obtenir les zones couvertes depuis le bam directement
+#+begin_src  sh
+samtools sort NA12878_chr1.bam -o NA12878_chr1_sorted.bam
+bedtools genomecov -ibam NA12878_chr1_sorted.bam  -bg > chr1.bedgraph
+head chr1.bedgraph
+#+end_src
+
+#+RESULTS:
+: NC_000001.11	10001	10021	1
+: NC_000001.11	10021	10059	2
+: NC_000001.11	10059	10063	1
+: NC_000001.11	10063	10087	2
+: NC_000001.11	10087	10110	1
+: NC_000001.11	10110	10113	3
+: NC_000001.11	10113	10121	2
+
+On prend les régions avec 20 reads
+awk '$4 > 20 {print $1"\t"$2"\t"$3}' chr1.bedgraph  > tomerge.bed
+On fusionne les régions
+bedtools merge -i tomerge.bed > exons_from_bam.bed
+
+Problème : on manque parfois le bord des exons...
+
+******* TODO Vérifier un bam de référence de NA12878
+
+Notamment pour la définitions des exons, on a des reads qui ne semblent pas alignés sur les bons exons selon IGV
+On donne directemet à IGV le bam d'illuma WES ( https://github.com/genome-in-a-bottle/giab_data_indexes )
+IGV n'aime pas le ftp apparement...
+#+begin_src
+wget
+ftp://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/HG002_NA24385_son/OsloUniversityHospital_Exome/151002_7001448_0359_AC7F6GANXX_Sample_HG002-EEogPU_v02-KIT-Av5_AGATGTAC_L008.posiSrt.markDup.bam
+wget ftp://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/HG002_NA24385_son/OsloUniversityHospital_Exome/151002_7001448_0359_AC7F6GANXX_Sample_HG002-EEogPU_v02-KIT-Av5_AGATGTAC_L008.posiSrt.markDup.bai
+mv 151002_7001448_0359_AC7F6GANXX_Sample_HG002-EEogPU_v02-KIT-Av5_AGATGTAC_L008.posiSrt.markDup.bam NA12878_illumina_exome.bam
+mv 151002_7001448_0359_AC7F6GANXX_Sample_HG002-EEogPU_v02-KIT-Av5_AGATGTAC_L008.posiSrt.markDup.bai NA12878_illumina_exome.bai
+ samtools view -b NA12878_illumina_exome.bam 1 > NA12878_illumina_exome_chr1.bam
+#+end_src
+On va couper le chr1
 *** TODO Platinum genome
 https://emea.illumina.com/platinumgenomes.html
 ** Divers
