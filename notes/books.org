@@ -166,7 +166,10 @@ Survolé jusque 2.2.2
 ** STRT Guyton physiology
 *** DONE 31. Acide-base regulation
 CLOSED: [2023-02-20 lun. 11:45]
-
+** STRT Explorations en biochimie médicale
+*** DONE Fonctions hépatiques
+*** DONE Métabolisme du fer
+CLOSED: [2023-02-20 lun. 17:58]
 * Philosophy :philosophy:
 ** STRT A History of Western Philosophy
 
