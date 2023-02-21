@@ -1,5 +1,8 @@
 #+title: Biochimie
 
+* Bilirubine
+#+attr_html: :width 400px
+[[../images/biochimie/bilirubin.jpg]]
 * Acides aminées
 
 Doivent être apporté par l’alimentation:
@@ -136,7 +139,7 @@ Alcalose =
 - Acidose métabolique:
   - acide rénale tubulaire : diminution de la réabsorbtion rénale de bicarbonates, diminution excrétion H^{+}
   - diarrhée : perte de bicarbonates dans les selles
-  - vomissement intestinale  = perte bicarbonates
+  - vomissement intestinal  = perte bicarbonates
   - diabète : formation acide acio-acétique à partir de lipides
   - ingestion acide (aspirine)
   - insuffisance rénale cronique (anions des acides faibles non excrétés, diminution excrétion phosphates NH_4^{+})
@@ -150,7 +153,7 @@ Alcalose =
 - normal (hyperchlorémie)
   - diarrhée
   - Addison
-  - inhibiteun anhydrase carbonique
+  - inhibiteur anhydrase carbonique
   - acidose rénale tubulaire
 
 - Alcalose métabolique:
@@ -206,6 +209,37 @@ Pour éviter une excrétion continue d’eau. il est converti en urée dans le f
 ** Effet
 ** Indication
 ** Dosage
+* Fonction intestinale (Bonnefont)
+** Calprotectine fécale
+- Présence : polynucléaire neutrophique, macrophages, certaines cellules épithéliales des muqueuses
+- Proportionnel à l’*inflammation de la muqueuse*
+
+Algorithme :
+- < 50\mu{}g/g : pas d’inflammation, trouble fonctionnel
+- 50-150\mu{}g/g : zone grise
+- > 150\mu{}g/g : inflammation
+** Tests respiratoire
+- Mesure hydrogène/méthanase après une fermentation anaérobie intestinale
+- Contexte :
+  - intolérance aux glucides : non absorbé dans le grêle donc fermentation (retardée)
+  - pullulation microbienne : fermentation précoce
+** Stéatorrhée, élastate, acitivté chymotrypsique fécale
+Stéatorrhée : > 7g/27
+- défaut d’absorption (coeliaque, MICI) -> acides gras à la microscopie
+- défaut de digestion (insuffisance pancréatique exocrine...) -> triglycéride à chaînes longues
+
+ Élastase fécale : témoin de l’insuffisance pancréatique : sévère si < 50\mu{}g/g
+** Ionogramme fécal
+- augmentation débit Na^{+} ou K^{+}: diarrhée hydroélectrolytique
+- trou osmolaire
+  - < 50mOsmol/L : diarrhée sécrétoire (colite microsocpie, viopem...)
+  - > 125 50mOsmol/L : diarrhée osmotique (laxatif...) ou malabsorption glucidique (déficit en lactase...)
+  - normal : diarrhée motrice, pathologie mixte
+** Clairance fécale de l’\alpha{}antitrypsine
+- Fuite intestinale physiolique de protéine. Si augmenté: entéropathie exusidatione, souvent associée à des maladies érosive (MICI), non érosive (coeliaque),  (hypo)
+- \alpha{}antitrypsine: inhibe l’activité catalytique de sérines protéases. Marqueur de fuite protéique intestinale
+- Interprétation :
+  - oedème ou hypoprotidémie avec hypoalbuminémie et hypogammaglobulinémie non explique par dénutrition/protéinurie/syndrome inflammatoire -> la clairance de l’\alpha{x-antitrypsine diagnostique une gastroentéropathie exsudative}
 * BNP (Brain natriuretic peptide)
 ** Naissance
 synthétisé par myocyte du ventricule gauche (et droit) en réponse à une surcharge volémique
@@ -290,7 +324,70 @@ La clairance de la créatinine est estimée par le Débit de Filtration Gloméru
 Attention : formules non utilisable chez l’enfant (formale du Schwartz), variation aigüe de la fonction rénale, cirrhose hépatique décompensée, gabarit hors norme, amyotrophie important, grossese
 
 dans ce cas, utiliser clairance urinaire sur urines de 24h = créat urinaire*débit/créat sanguine
-* Foie
+
+* Fer (Bonnefont)
+** Physiopatho
+*** Cycle
+[[../images/biochimie/fer.png]]
+NB: /apo-/ est utilisé quand il n’y a pas de fer (ex: apotransferrine = transferrine sans fer)
+**** Production et transport
+Production de Fe^{2+}
+  - Absorption intestinale de Fe^{2+}
+  - Dégradation de l’hémoglobine par les macrophage avec production de bilirubine et Fe^{2+}
+
+Évolution du Fe^{2+} (intestinale ou macrophage): 2 possibilités
+  - stocké dans la cellule sous forme de /ferritine/ (en se liant à l’apoferritine),
+  - ou pris en charge par la /ferroportine/ et largué dans la circulation sanguine
+
+Dans le sang Fe^{2+} oxydé en Fe^{3+} qui est transporté par la /transferrine/. Il va y avoir ensuite des
+échanges entre la moelle osseuse, le foie et le système réticulohistocytaire
+**** Stockage
+Surtout dans le foie et la rate, sous forme de Fe^{3+} contenu dans soit
+- ferritine : macrophages, hépatocyte
+- hémosidérine (libération lente)
+Le Fe^{3+} est oxydé en Fe^{2+}, se retrouve dans le plasma où il va être oxydé afin d’être transporté par la transferrine (oxydation réalisé par la céruléoplasmine)
+NB: Les macrophages sont mobilisé  en premier pour l’érythropoïèse
+*** Régulation
+- HFE: diminue l’affinité du récepteur de la transferrine ->
+- hepcidine : dégradation de la ferroportine -> fer "bloqué" dans les entérocytes -> hyposidérémiant
+** Patholologiques
+*** Surcharges
+**** Hémochromatoses héréditaires
+- Type 1 = 80% des adultes = autosomale récessive sur /HFE/ : affinité excessive du fer pour réticulohistocytaire et cellules parenchymateuse hépatique
+Atteinte hépatique (hépatomégalie, cirrhose),pancrétaique, cardiaque
+- Forme juvénile également
+- traitement = saignée (oral si juvénile)
+**** Secondaires
+ - excès supplémentation martiale/trnasfusion
+ - Anémies hémolytique, dysérothropoïèse, thalassémie, hémoglobinopathies
+ - dysmétabolique : biologique = syndrome métabolique d’insulinorésistance
+*** Autres
+- Anémie niflammatoire (infection sévère, chronique, nopélasie): le fer provenant de l’hémolyse physiolique est mal recyclé
+- autres affection génétique microcytaire hypochromes avec sidérémie normale/augmentée: OMIM 209300 604290 206100
+- Carences martiales (saigements chronique, maladie de Wilson, carence vitamine C, malabsorption...)
+** Exploration
+- Ferritine circulante = le plus sensible et le plus précoce, \approx stock de fer
+- Fer sérique : augemnté si surcharge en fer, cytolyse hématique, diminué si carence martial, inflammation
+- transferrine : augmenté si carence en fer, diminué si malnutrition attente hépatique grave, syndrome inflammatoire
+- Capacité totale de fixation de la transférrine = 25 \times transferrine
+- Coefficient de saturation de la transferrine = fer sérique / CTF àtimes 100
+- Autres :
+  - fer non lié à la transferrine = spécialisé
+  - récepteur soluble de la transferrine = diagnostic des carences en fer pendan téta inflammatoire
+  - protoporphyrine libre : augmenté dans les urines si carence en fer, cancer, affection chronique
+  - Ahepcidine  = anémie hypochrome microcytaire avec suspicion génétique, suivi hémochromatoses héréditairesc IRC et inflammation chronique
+
+Génétique: 1. p.Cys282Tyr de /HFE/. 2. si non homoygote, coefficiente de saturation (diminué si hétérozygote)
+** Arbre
+ferritine normale
+|                  | Ferritine         | Transferrine | CTF       | CST      | Autres        |
+| carence martiale | diminuée          | augmentée    | augmentée | diminuée |               |
+| inflammation     | normale/augmentée | augmenté     | diminuée  | normale  | CRP augmentée |
+| thalassémie etc  |                   |              |           |          | CRP normale   |
+ferriten augmentée
+- CTF et CRP normale : surcharge acquise, maladie de Gaucher
+- CS augméntée : hémochroçatique type 1 ou autre
+* Foie (Bonnefont)
 ** Physiologie
 Énergie:
 - stocke glucose
@@ -332,7 +429,7 @@ Patho: sursaturation du cholestérol -> cristaux -> calcul
 - _ASAT_ > 35 U/L = cytosol + mitochondrie (foie, muscles, coeurs, rein, pancréas, cerveau)
 Attention :
   - hémolyse = ininterprétable (aminotransferase globules rouges> plasma )
-  - ASAT < ALAT (sauf alcool chronique car grosses mitochrondrie)
+  - ASAT < ALAT car demi-vie inférieure (sauf alcool chronique car grosses mitochrondrie)
   - Aigü : normalisation en 6 mois
   - seulement souffrance cellulaire et non état fonctionnel du foie
 NB: LDH (lyse cellulaire) non spécifique mais très marqué pour métastase hépatique
@@ -378,7 +475,7 @@ CRP, vitesse sédimentatino érythrocytaire, électrophorèse ptoténies sériqu
 - scores : Fibrotest, Fibromètre, Hépascore
 ** Interprétation
 Augmentation ALAT/ASAT
-- aigiue > 10N: hépatite virale aigüe A, B, médicaments (IMAO, méthyldopa...), toxique (paracétamol, champignon), lithiase de la voie biliaire prinicpale, ischémie hépatique aigue
+- aigiue > 10N: hépatite virale aigüe A, B, médicaments (IMAO, méthyldopa...), toxique (paracétamol, champignon), lithiase de la voie biliaire principale, ischémie hépatique aigue
 - aigüe modérée 3-10N: hépatite virale A, B, autre infections (EBV, cmv, HSV, toxoplasmose), alcool, surcharge pondérale, atteinte hépatobiliaire chronique
 - chronique < 3: VHC, VHB chronique, stéatose hépatique du diabote/dyslipidémie,/obésite, alcoolisme (rappport inversé), autres médicaments (isoniazide...), autto-immun, surcharge (hméocromatose, Wilson)
   NB: élimiier une nécrose musculaire/myocardique, pancréate
@@ -387,7 +484,7 @@ Augmentation ALAT/ASAT
   Bilan enzymatique anormal
   | \gamma GT | PAL      | ALAT,ASAT | Étiologies                                              |
   |-----------+----------+-----------+---------------------------------------------------------|
-  | augmenté  | augmenté | augmenté  | hépatopathie cytolytique                                 |
+  | augmenté  | augmenté | augmenté  | hépatopathie cytolytique                                |
   |           |          |           | hépatite virale, alcool, médicaments                    |
   | augmenté  | augmenté | N         | hépatopathie cholestatique                              |
   |           |          |           | médicaments (antidépresseurs), biliaire, pancréas, foie |

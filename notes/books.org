@@ -170,6 +170,8 @@ CLOSED: [2023-02-20 lun. 11:45]
 *** DONE Fonctions hépatiques
 *** DONE Métabolisme du fer
 CLOSED: [2023-02-20 lun. 17:58]
+*** DONE Fonction intestinale
+CLOSED: [2023-02-21 mar. 16:30]
 * Philosophy :philosophy:
 ** STRT A History of Western Philosophy
 

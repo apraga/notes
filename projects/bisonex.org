@@ -2886,10 +2886,8 @@ le pipeline prend en compte 5', 3', variant canoniques d'épissage + prédit spi
 Le plus simple pour le moment est de restreindre seulement aux exons
 GENCODE (version europénne) vs RefSeq: [[https://bmcgenomics.biomedcentral.com/articles/10.1186/1471-2164-16-S8-S2][article 2015]] en faveur de GENCODE mais Alexis conseille Refseq
 
-****** Erreur dans le paramètre : -f au lieu de -R !!
-Il faut supprimer les overlap (et trier avant)
- bedtools sort -i illumina_exons.bed > illumina_exons.bed.sorted
- bedtools merge -i illumina_exons.bed.sorted > HG001_GRCh38_1_22_v4.2.1_benchmark_illumina_exons.be
+****** TODO -f, -R ou -T ?
+Selon la doc : -f avec le bed fourni et -T pour filtrer sor les exons
 ******* rtg tools
 Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
 ----------------------------------------------------------------------------------------------------
@@ -2985,7 +2983,6 @@ bedtools merge -i tomerge.bed > exons_from_bam.bed
 Problème : on manque parfois le bord des exons...
 
 ******* TODO Vérifier un bam de référence de NA12878
-
 Notamment pour la définitions des exons, on a des reads qui ne semblent pas alignés sur les bons exons selon IGV
 On donne directemet à IGV le bam d'illuma WES ( https://github.com/genome-in-a-bottle/giab_data_indexes )
 IGV n'aime pas le ftp apparement...
@@ -2998,6 +2995,25 @@ mv 151002_7001448_0359_AC7F6GANXX_Sample_HG002-EEogPU_v02-KIT-Av5_AGATGTAC_L008.
  samtools view -b NA12878_illumina_exome.bam 1 > NA12878_illumina_exome_chr1.bam
 #+end_src
 On va couper le chr1
+
+******** Étude
+NC_000001.11:924024 :
+- bed d’illumina : pas correct
+- bed refseq : meux
+- bam :  exon non ciblé, probablement parce que Mane select n’a pas été utilisé mais refseq (https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:28706)
+
+NC_000001.11:924310: idem
+NC_000001.11:924321: idem
+NC_000001.11:924533: idem
+
+NC_000001.11:966227: le bed ne couvre pas le bon exon !
+https://genome-euro.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr1%3A965863%2D966591&hgsid=295298291_vhDbIv5YIckCKLpGB7UUaZi2cAkr
+NC_000001.11:966272
+
+******* TODO Relancer avec les bons paramètres
+******* TODO Utiliser VEP pour filtrer sur les exons
+5h45 pour VEP
+filter_vep pour trier dans un second temps
 *** TODO Platinum genome
 https://emea.illumina.com/platinumgenomes.html
 ** Divers
