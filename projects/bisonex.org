@@ -2989,15 +2989,34 @@ Problème : on manque parfois le bord des exons...
 Notamment pour la définitions des exons, on a des reads qui ne semblent pas alignés sur les bons exons selon IGV
 On donne directemet à IGV le bam d'illuma WES ( https://github.com/genome-in-a-bottle/giab_data_indexes )
 IGV n'aime pas le ftp apparement...
-#+begin_src
-wget
-ftp://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/HG002_NA24385_son/OsloUniversityHospital_Exome/151002_7001448_0359_AC7F6GANXX_Sample_HG002-EEogPU_v02-KIT-Av5_AGATGTAC_L008.posiSrt.markDup.bam
-wget ftp://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/HG002_NA24385_son/OsloUniversityHospital_Exome/151002_7001448_0359_AC7F6GANXX_Sample_HG002-EEogPU_v02-KIT-Av5_AGATGTAC_L008.posiSrt.markDup.bai
-mv 151002_7001448_0359_AC7F6GANXX_Sample_HG002-EEogPU_v02-KIT-Av5_AGATGTAC_L008.posiSrt.markDup.bam NA12878_illumina_exome.bam
-mv 151002_7001448_0359_AC7F6GANXX_Sample_HG002-EEogPU_v02-KIT-Av5_AGATGTAC_L008.posiSrt.markDup.bai NA12878_illumina_exome.bai
- samtools view -b NA12878_illumina_exome.bam 1 > NA12878_illumina_exome_chr1.bam
+On récupére 2 échantillons pour ce patient sur HiSeq Exome
+#+begin_src sh :dir /ssh:meso:/Work/Groups/bisonex/data/giab/GRCh38
+wget https://raw.githubusercontent.com/genome-in-a-bottle/giab_data_indexes/master/NA12878/alignment.index.NA12878_HiSeq_Exome_Garvan_GRCh37_09252015 -O todl.txt
+awk '{print $1}' todl.txt | wget -i -
 #+end_src
-On va couper le chr1
+On récupére le premier échantillons en prenant just le chromosome 1
+#+begin_src
+samtools merge NA12878-NIST7035-HiSeq_Exome_Garan_GRCh37.bam project
+.NIST_NIST7035_H7AP8ADXX_TAAGGCGA_1_NA12878.bwa.markDuplicates.bam project.NIST_NIST7035_H7AP8ADXX_TA
+AGGCGA_2_NA12878.bwa.markDuplicates.bam
+samtools index NA12878-NIST7035-HiSeq_Exome_Garan_GRCh37.bam
+#+end_src
+***** TODO Filtrer variants introniques de référence avec vep
+****** TODO variant calling seulf + seulement -f: nombreux FP
+/Work/Users/apraga/bisonex/work/68/f1cf72a5a4078fdf743fb3844b369a
+ Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.Precision
+INDEL    ALL          519       284       235        52169     37789      14094     12     64       0.547206          0.007511
+INDEL   PASS          519       284       235        52169     37789      14094     12     64       0.547206          0.007511
+  SNP    ALL        22131     17434      4697       357652    305313      34904    189     32       0.787764          0.054020
+  SNP   PASS        22131     17434      4697       357652    305313      34904    189     32       0.787764          0.054020
+
+ METRIC.Frac_NA  METRIC.F1_Score  TRUTH.TOTAL.TiTv_ratio  QUERY.TOTAL.TiTv_ratio  TRUTH.TOTAL.het_hom_ratio  QUERY.TOTAL.het_hom_ratio
+       0.270160         0.014820                     NaN                     NaN                   1.775956                   0.509510
+       0.270160         0.014820                     NaN                     NaN                   1.775956                   0.509510
+       0.097592         0.101108                2.971834                1.429533                   1.579776                   0.324923
+       0.097592         0.101108                2.971834                1.429533                   1.579776                   0.324923
+
+
 *** TODO Platinum genome
 https://emea.illumina.com/platinumgenomes.html
 ** Divers
