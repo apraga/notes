@@ -3028,10 +3028,32 @@ INDEL   PASS          519       284       235        52169     37789      14094 
        0.097592         0.101108                2.971834                1.429533                   1.579776                   0.324923
 
 
-******* TODO Relancer avec les bons paramètres
-******* TODO Utiliser VEP pour filtrer sur les exons
-5h45 pour VEP
-filter_vep pour trier dans un second temps
+****** TODO Filtrer sur profondeur et variant reads pour éliminer FP
+***** Comparer avec stats de NA12878 dans example/happy sur chr21
+Résultats
+| Type  | Filter | TRUTH.TOTAL | TRUTH.TP | TRUTH.FN | QUERY.TOTAL | QUERY.FP | QUERY.UNK | FP.gt | FP.al | METRIC.Recall | METRIC.Precision |
+| INDEL | ALL    |        8530 |     8247 |      283 |       14509 |      231 |      5835 |    18 |   141 |      0.966823 |         0.973369 |
+| INDEL | PASS   |        8530 |     8247 |      283 |       14483 |      231 |      5809 |    18 |   141 |      0.966823 |         0.973369 |
+| SNP   | ALL    |       49913 |    49466 |      447 |       70641 |       69 |     21118 |    40 |     9 |      0.991044 |         0.998607 |
+| SNP   | PASS   |       49913 |    49465 |      448 |       70551 |       69 |     21029 |    40 |     9 |      0.991024 |         0.998607 |
+
+Commande
+#+begin_src
+hap.py pg-hg38.bcf NA12878-GATK3-chr21.vcf.gz -f pg-hg38-conf.bed.gz -r hg38.chr21.fa -o GATK3-xcmp --roc QUAL --roc-filter LowQual
+#+end_src
+
+En filtrant les exons avec le bed fourni
+#+begin_src
+ hap.py pg-hg38.bcf NA12878-GATK3-chr21.vcf.gz -f pg-hg38-conf.bed.gz -r hg38.chr21.fa -T exons_hg38.bed.gz -o lol
+#+end_src
+
+  Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.Precision  METRIC.Frac_NA  METRIC.F1_Score  TRUTH.TOTAL.TiTv_ratio  QUERY.TOTAL.TiTv_ratio  TRUTH.TOTAL.het_hom_ratio  QUERY.TOTAL.het_hom_ratio
+INDEL    ALL           97        96         1          138         2         37      0      0       0.989691          0.980198
+INDEL   PASS           97        96         1          138         2         37      0      0       0.989691          0.980198
+  SNP    ALL          638       636         2          674         0         38      0      0       0.996865          1.000000
+  SNP   PASS          638       636         2          674         0         38      0      0       0.996865          1.000000
+
+  Il faut déjà filrer sur les DP !
 *** TODO Platinum genome
 https://emea.illumina.com/platinumgenomes.html
 ** Divers
