@@ -5893,3 +5893,5 @@ Progrès !
 - 22
 * <2023-02-22 Wed> Tricking
 Cf dernière séance
+* <2023-02-24 Fri> Running
+25min
