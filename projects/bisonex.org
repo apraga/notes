@@ -3031,13 +3031,29 @@ INDEL   PASS          519       284       235        52169     37789      14094 
 ****** TODO Utiliser les filtre pour éliminer FP
 On a déjà des DP à éliminer
 reads
-******* DP_over_30_not_SNP_consensual_sequence.vcf
+******* DP_over_30_not_SNP_consensual_sequence.vcf: horrible
 déplorable
  Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.Precision  METRIC.Frac_NA  METRIC.F1_Score  TRUTH.TOTAL.TiTv_ratio  QUERY.TOTAL.TiTv_ratio  TRUTH.TOTAL.het_hom_ratio  QUERY.TOTAL.het_hom_ratio
 INDEL    ALL          519        16       503         1579      1032        531      2      2       0.030829          0.015267        0.336289         0.020421                     NaN                     NaN                   1.775956                   4.768382
 INDEL   PASS          519        16       503         1579      1032        531      2      2       0.030829          0.015267        0.336289         0.020421                     NaN                     NaN                   1.775956                   4.768382
   SNP    ALL        22131      1191     20940         4346      2342        813      4      1       0.053816          0.337107        0.187069         0.092815                2.971834                1.967235                   1.579776                   1.492828
   SNP   PASS        22131      1191     20940         4346      2342        813      4      1       0.053816          0.337107        0.187069         0.092815                2.971834                1.967235                   1.579776                   1.492828
+******* DP_over_30 : mieux
+/Work/Users/apraga/bisonex/work/69/cc1391f5a0fbf4db958a370ec17a19
+ Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.Precision
+INDEL    ALL           76        20        56           36         6         10      1      3       0.263158          0.769231
+INDEL   PASS           76        20        56           36         6         10      1      3       0.263158          0.769231
+  SNP    ALL          582       312       270          370         9         49      0      0       0.536082          0.971963
+  SNP   PASS          582       312       270          370         9         49      0      0       0.536082          0.971963
+
+Ex:
+NC_000021.9     45515163        .       TA      T       50      PASS    BS=45515163;Regions=CONF,TS_contained   GT:BD:BK:BI:BVT:BLT:QQ  0/1:FN:lm:d1_5:INDEL:het:.      ./.:.:.:.:NOCALL:nocall:0
+NC_000021.9     45515163        .       TAA     T       694.02  PASS    BS=45515163;Regions=CONF,TS_contained   GT:BD:BK:BI:BVT:BLT:QQ  ./.:.:.:.:NOCALL:nocall:.       0/1:FP:lm:d1_5:INDEL:het:694.02
+
+Mais dans notre vcf
+NC_000021.9     45515163        rs11284347      TAA     T,TA
+
+La séquence est TAAAA donc notre TAA -> TA aurait du être reconnu comme identique. Faut-il utiliser un autre fasta ?
 ******* KILL On réessaye en filtran sur les exons fournis par hap.py
 seulement sur le 21...
 CLOSED: [2023-02-23 Thu 00:14]
@@ -3067,7 +3083,6 @@ INDEL   PASS           97        96         1          138         2         37 
   SNP    ALL          638       636         2          674         0         38      0      0       0.996865          1.000000
   SNP   PASS          638       636         2          674         0         38      0      0       0.996865          1.000000
 
-  Il faut déjà filrer sur les DP !
 *** TODO Platinum genome
 https://emea.illumina.com/platinumgenomes.html
 ** Divers
