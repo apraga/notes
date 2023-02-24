@@ -99,6 +99,7 @@ La plupart du phosphate est réabsorbé donc le tampon se fait surtout via l’a
 Dans le tubule proximale, NH_4^{+}+ est synthétisé depuis la glutamine (métabolisme des acide aminés dans le foie) selon :
 glutamine -> 2NH_4^{+} + 2 HCO_3^{-}
 Les 2 NH_4^{+}+ sont sécrétés et les 2 bicarbonate sont réabsorbés, *créant de nouveaux bicarbonates*
+[[../images/biochimie/tampon-ammoniaque.png]]
 
 Dans le tubule collecteur, le H^{+} va se combiner avec NH_3 pour former du NH_4^{+}
 
@@ -127,7 +128,7 @@ Diminuée par l’inverse
 Acidose
 - métabolique : du à diminution [HCO_3^{-} extracellulaire]
 - respiratoire : augmentation pCO2 extracellulaire (stimule sécrétion H^{+})
--> chronique: augmentation production NH_4^{+}+ (donc augmentation excrétion H^{+} et ajout HCO_3^{-} sang)
+-> chronique: augmentation production NH_4^{+}+ (donc augmentation excrétion H^{+} et ajout HCO_3^{-} sang).
 si métabolique, les poumons aident à corriger
 
 Alcalose =
@@ -137,12 +138,12 @@ Alcalose =
 - Acidose respiratoire : hypoventilation (obtsruction respiratoire, atteinte centre respiratoire...)
 - Alcalose respiratoire : hyperventilation (psy, altitude)
 - Acidose métabolique:
-  - acide rénale tubulaire : diminution de la réabsorbtion rénale de bicarbonates, diminution excrétion H^{+}
+  - acidose rénale tubulaire : diminution de la réabsorbtion rénale de bicarbonates, diminution excrétion H^{+}
   - diarrhée : perte de bicarbonates dans les selles
   - vomissement intestinal  = perte bicarbonates
-  - diabète : formation acide acio-acétique à partir de lipides
+  - diabète : formation acide acido-acétique à partir de lipides
   - ingestion acide (aspirine)
-  - insuffisance rénale cronique (anions des acides faibles non excrétés, diminution excrétion phosphates NH_4^{+})
+  - insuffisance rénale chronique (anions des acides faibles non excrétés, diminution excrétion phosphates NH_4^{+})
 
   Trou anonionique :
 - augmenté (chlorémie normale)
@@ -306,7 +307,7 @@ Pas de réabsorption par le rein, donc marqueur de fonction rénale
 ** Dosage
 La clairance de la créatinine sert d’approximation pour le débit de filtration glomérulaire (voir [[*DFG][DFG]])
 * Cycle de l’urée
-Permet d’éliminer l’ammoniaqueet l’urée
+Permet d’éliminer l’ammoniaque et l’urée
 ** Initialisation
 le CO_2 passe du cytosol dans la mitochondrie puis : $CO_2 + H_2 O \leftarrow HCO_3^{-}  + H^{+}$
 Puis $HCO_3^{-} + ATP \rightarrow NH_3 + ADP$
@@ -337,6 +338,12 @@ Dans ce cas, utiliser clairance urinaire sur urines de 24h = créat urinaire*dé
 *** Cycle
 [[../images/biochimie/fer.png]]
 NB: /apo-/ est utilisé quand il n’y a pas de fer (ex: apotransferrine = transferrine sans fer)
+**** Stockage
+Surtout dans le foie et la rate, sous forme de Fe^{3+} contenu dans soit
+- ferritine : macrophages, hépatocyte
+- hémosidérine (libération lente)
+Le Fe^{3+} est oxydé en Fe^{2+}, se retrouve dans le plasma où il va être oxydé afin d’être transporté par la transferrine (oxydation réalisé par la céruléoplasmine)
+NB: Les macrophages sont mobilisé  en premier pour l’érythropoïèse
 **** Production et transport
 Production de Fe^{2+}
   - Absorption intestinale de Fe^{2+}
@@ -348,12 +355,6 @@ Production de Fe^{2+}
 
 Dans le sang Fe^{2+} oxydé en Fe^{3+} qui est transporté par la /transferrine/. Il va y avoir ensuite des
 échanges entre la moelle osseuse, le foie et le système réticulohistocytaire
-**** Stockage
-Surtout dans le foie et la rate, sous forme de Fe^{3+} contenu dans soit
-- ferritine : macrophages, hépatocyte
-- hémosidérine (libération lente)
-Le Fe^{3+} est oxydé en Fe^{2+}, se retrouve dans le plasma où il va être oxydé afin d’être transporté par la transferrine (oxydation réalisé par la céruléoplasmine)
-NB: Les macrophages sont mobilisé  en premier pour l’érythropoïèse
 *** Régulation
 - HFE: diminue l’affinité du récepteur de la transferrine ->
 - hepcidine : dégradation de la ferroportine -> fer "bloqué" dans les entérocytes -> hyposidérémiant
@@ -374,7 +375,7 @@ Atteinte hépatique (hépatomégalie, cirrhose),pancrétaique, cardiaque
 - Carences martiales (saigements chronique, maladie de Wilson, carence vitamine C, malabsorption...)
 ** Exploration
 - Ferritine circulante = le plus sensible et le plus précoce, \approx stock de fer
-- Fer sérique : augemnté si surcharge en fer, cytolyse hématique, diminué si carence martial, inflammation
+- Fer sérique : augmenté si surcharge en fer, cytolyse hématique, diminué si carence martial, inflammation
 - transferrine : augmenté si carence en fer, diminué si malnutrition attente hépatique grave, syndrome inflammatoire
 - Capacité totale de fixation de la transférrine = 25 \times transferrine
 - Coefficient de saturation de la transferrine = fer sérique / CTF \times 100
@@ -389,11 +390,11 @@ Génétique: 1. p.Cys282Tyr de /HFE/. 2. si non homoygote, coefficiente de satur
 ferritine normale
 |                  | Ferritine         | Transferrine | CTF       | CST      | Autres        |
 | carence martiale | diminuée          | augmentée    | augmentée | diminuée |               |
-| inflammation     | normale/augmentée | augmenté     | diminuée  | normale  | CRP augmentée |
+| inflammation     | normale/augmentée | diminué      | diminuée  | normale  | CRP augmentée |
 | thalassémie etc  |                   |              |           |          | CRP normale   |
-ferriten augmentée
+ferritine augmentée
 - CTF et CRP normale : surcharge acquise, maladie de Gaucher
-- CS augméntée : hémochroçatique type 1 ou autre
+- CS augmentée : hémochromatique type 1 ou autre
 * Foie (Bonnefont)
 ** Physiologie
 Énergie:
