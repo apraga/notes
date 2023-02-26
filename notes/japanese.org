@@ -483,3 +483,15 @@ Questions indirecte
   - どこに 行くか おしえてください
   - 何の医者なるか わかりません
     = je ne sais pas quel sorte de médecin je veux être
+
+* <2023-02-26 Sun> - Aya-sensei : discussion
+Grammaire
+-ta koto ga arimasu : déjà fait
+ ちゃんと : suffisament
+ 飼う(ka): avoir un animal
+  いがくせいぶつがく 医学生物学 = biologie médicale
+  sample = sample
+  かんじゃ 患者 patient
+  けんきゅう 研究 recherche
+  けっか 結果 résultat
+  はんしょくき 繁殖期 saison de reproduction

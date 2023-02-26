@@ -179,6 +179,7 @@ Update : it seems to work without nginx with a socket ??
   :CUSTOM_ID: org-mode
   :END:
 ** Wrap selection into an org-block
+org-insert-structure-template
 C-c C-, s
 ** Latex :
 Bibliography: Ajouter dans le header

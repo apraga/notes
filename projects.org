@@ -133,6 +133,9 @@ Notamment Ollie Charles's 24 days of GHC Extensions,
 :END:
 **** KILL Lire dialogue fin leçon 10
 CLOSED: [2022-12-03 Sat 12:34] SCHEDULED: <2022-07-30 Sat>
+* Julia
+Mettre à jour juliastats
+https://discourse.julialang.org/t/suggestion-for-homepage-of-https-juliastats-org/94948/2
 * Internat
 :PROPERTIES:
 :CATEGORY: internat

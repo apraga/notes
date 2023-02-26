@@ -11,7 +11,7 @@ CLOSED: [2023-01-30 Mon 12:04]
 :CATEGORY: harry potter
 :END:
 *** DONE [[file:notes/reviews/sacrifice_arc.org][Sacrifice Arc]]
-*** TODO Benefits of Old Laws
+*** STRT Benefits of Old Laws
 *** TODO Pride of time
 *** DONE [[file:notes/reviews/arithmancer.org][Harry Potter and the Methods of Rationality]]
 *** DONE The Arithmancer
@@ -27,7 +27,7 @@ CLOSED: [2023-01-30 Mon 12:04]
 *** TODO Fortress of ice
 ** TODO Stardust
 ** DONE G. Cook - The Black Company 6/6
-** Pern
+** HOLD Pern
 *** DONE Dragonflight
 *** DONE Dragonquest
 *** DONE Dragonsong
@@ -36,7 +36,8 @@ CLOSED: [2023-01-30 Mon 12:04]
 *** DONE Dragondrums
 *** DONE All The Weyrs of Pern (1991)
 CLOSED: [2023-01-22 Sun 22:45]
-*** TODO The Skies of Pern (2001)
+*** DONE The Skies of Pern (2001)
+CLOSED: [2023-02-25 Sat 18:57]
 ** DONE R.R Martin - A Song of Ice and Fire 5/5
 ** DONE R.R Martin - Windhaven
 ** TODO R.R Martin - Fire and Blood
