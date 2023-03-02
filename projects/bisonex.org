@@ -2274,8 +2274,8 @@ CLOSED: [2023-01-04 Wed 19:09]
 | --smith-waterman-dangling-end-gap-open-penalty -110                                | --smith-waterman-dangling-end-gap-open-penalty -110                                             |
 | --smith-waterman-dangling-end-gap-extend-penalty -6                                | --smith-waterman-dangling-end-gap-extend-penalty -6                                             |
 | --smith-waterman-haplotype-to-reference-match-value 200                            | --smith-waterman-haplotype-to-reference-match-value 200                                         |
-| --smith-waterman-haplotype-to-reference-mismatch-penalty -150                      | --smith-waterman-haplotype-to-reference-mismatch-penalty -150                                   |
 | --smith-waterman-haplotype-to-reference-gap-open-penalty -260                      | --smith-waterman-haplotype-to-reference-gap-open-penalty -260                                   |
+| --smith-waterman-haplotype-to-reference-mismatch-penalty -150                      | --smith-waterman-haplotype-to-reference-mismatch-penalty -150                                   |
 | --smith-waterman-haplotype-to-reference-gap-extend-penalty -11                     | --smith-waterman-haplotype-to-reference-gap-extend-penalty -11                                  |
 | --smith-waterman-read-to-haplotype-match-value 10                                  | --smith-waterman-read-to-haplotype-match-value 10                                               |
 | --smith-waterman-read-to-haplotype-mismatch-penalty -15                            | --smith-waterman-read-to-haplotype-mismatch-penalty -15                                         |
@@ -2854,12 +2854,12 @@ CLOSED: [2023-02-25 Sat 19:46]
 ****** DONE hg19
 CLOSED: [2023-02-26 Sun 22:37]
 ****** TODO hg38
-- [ ] Télécharger hg19 : ok
-- [ ] convertir bed en interval list
+- [X] Télécharger hg19 : ok
+- [X] convertir bed en interval list
 picard BedToIntervalList -I exons_illumina.bed  -O exons_illumina.list -SD  ../../genome/GRCh19/genomeRef.dict
-- [ ] puis en hg38
+- [X] puis en hg38
 picard LiftOverIntervalList -I exons_illumina.list  -O exons_illumina_hg38.list --CHAIN hg19ToHg38.over.chain -SD  ../../genome/GRCh38.p13/genomeRef.dict
-- [ ] puis en bed
+- [X] puis en bed
 
 **** Notes
 https://github.com/genome-in-a-bottle/giab_FAQ
