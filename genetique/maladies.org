@@ -923,6 +923,15 @@ TTT: enzymothérapie substitutive
 
 #+caption: Lindhurst et al 2012
 [[file:img/pik3ca-adipeux.png]]
+** PROS = syndromes hypertrophiques sans malformation cérébrale
+- CLOVES = « Congenital Lipomatous Overgrowth, Vascular
+malformations, Epidermal nevi, Scoliosis/Skeletal/Spinal anomalies »
+ - dominé par l’hypertrophie segmentaire (focale ou plurifocale).
+- Klippel-Trenaunay (KTS) : dominé par les malformations vasculaires, souvent au premier plan, s’associent à une hypertrophie des tissus mous et du tissu osseux, et intéressent un membre, le plus souvent le membre inférieur.
+- MCAP = Megalencephaly - CApillary- malformation -
+Polymicrogyria
+ - tableau est dominé par une hypertrophie cérébrale
+(mégalencéphalie)
 ** TODO MCAP
 ** TODO HMEG
 ** TODO KTS
