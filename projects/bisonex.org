@@ -13,9 +13,50 @@ https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04144-1
 https://gatk.broadinstitute.org/hc/en-us/articles/360035531412
 Définis l'algorithme + image
 ** Validation
-*** Best practices for the analytical validation of clinical whole-genome sequencing intended for the diagnosis of germline disease
+*** NA12878
+**** KILL [[https://precision.fda.gov/challenges/truth/results][fdaPrecision challenge]]
+Attention, génome et en hg19 donc comparaison non adaptée ...
+
+**** TODO Best practices for the analytical validation of clinical whole-genome sequencing intended for the diagnosis of germline disease
+SCHEDULED: <2023-03-04 Sat>
 https://www.nature.com/articles/s41525-020-00154-9
-Peu d’info sur la bionfo, sauf Supplementary :
+1. variant calling seul
+2. NA12878 + données simulées
+3. exome
+4. évalué via F-score
+Résultat: BWA/Novoalign_DeepVariant
+
+Aligneurs
+- BWA-MEM 0.7.16
+- Bowtie2 2.2.6
+- Novoalign 3.08.02
+- SOAP 2.21
+- MOSAIK 2.2.3
+
+Variantcalling
+- GATK HaplotypeCaller 4
+- FreeBayes 1.1.0
+- SAMtools mpileup 1.7
+- DeepVariant r0.4
+
+  SNV
+| Exome | Pipeline |    TP |   FP |  FN | Sensitivity | Precision | F-Score |   FDR |
+|     1 | BWA_GATK | 23689 | 1397 | 613 |       0.975 |     0.944 |   0.959 | 0.057 |
+|     2 | BWA_GATK | 23946 |  865 | 356 |       0.985 |     0.965 |   0.975 | 0.036 |
+
+indel
+ |   TP | FP | FN | Sensitivity | Precision | F-Score |   FDR |   |
+ | 1254 | 72 | 75 |       0.944 |     0.946 |   0.945 | 0.054 |   |
+ | 1309 | 10 | 20 |       0.985 |     0.992 |   0.989 | 0.008 |   |
+
+Valeur brutes :
+https://static-content.springer.com/esm/art%3A10.1186%2Fs12859-019-2928-9/MediaObjects/12859_2019_2928_MOESM8_ESM.pdf
+
+Autres articles avec même comparaison en exome sur NA12878
+- Hwang et al., 2015 studyi
+- Highnam et al, 2015
+-  Cornish and Guda, 2015
+
 
 Variant Type
 |                       | SNVs & Indels | CNVs (>10Kb) | SVs | Mitochondrial variants | Pseudogenes | REs | Somatic/ mosaic | Literature/Data | Source   |
@@ -1040,6 +1081,9 @@ Besoin de vep
 
 *** TODO Variant calling
 * TODO Tests
+:PROPERTIES:
+:CATEGORY: tests
+:END:
 ** TODO Non régression : version prod
 *** DONE ID common snp
 CLOSED: [2022-11-19 Sat 21:36]
@@ -1553,7 +1597,7 @@ CLOSED: [2023-01-26 jeu. 17:42]
 | bwa      |       ? | 0.7.17-r1188 |
 On a des versions plus vieilles sauf (le plus important) Gatk
 
-*** TODO 63003856_S135
+*** HOLD 63003856_S135
 **** KILL Notes : bonne reproductibilité sur le cluster mais diff avec la version "de prod"
 CLOSED: [2023-01-09 Mon 23:03]
 tester sequential puis version spécifique bwa mem
@@ -2817,11 +2861,17 @@ Pas d'impact
 ***** TODO Comparer tsv de sortie
 ***** TODO Regarder où sont les variants différents
 ** TODO Validation : NA12878
+:PROPERTIES:
+:CATEGORY: NA18278
+:END:
 https://github.com/ga4gh/benchmarking-tools
 Prérequis :
 - [[*hap.py][hap.py]]
 - [[*NA12878][NA12878]]
 *** TODO GIAB
+:PROPERTIES:
+:CATEGORY: GIAB
+:END:
 **** DONE télécharger données avec Nextflow
 CLOSED: [2023-02-25 Sat 19:47]
 ***** DONE Télécharger NA12878 (HG001)
@@ -2863,7 +2913,8 @@ picard LiftOverIntervalList -I exons_illumina.list  -O exons_illumina_hg38.list 
 
 **** Notes
 https://github.com/genome-in-a-bottle/giab_FAQ
-**** Comparaison
+**** DONE Comparaison
+CLOSED: [2023-03-04 Sat 11:14]
 HGREF=/Work/Groups/bisonex/data-alexis-reference/genome/GRCh38_latest_genomic.fna ./result/bin/hap.py /Work/Groups/bisonex/NA12878/HG001_GRCh38_1_22_v4.2.1
 _benchmark_renamed.vcf.gz script/files/vcf/NA12878_NIST7035_vep_annot.vcf -f /Work/Groups/bison
 ex/NA12878/HG001_GRCh38_1_22_v4.2.1_benchmark.bed -o test
@@ -2929,22 +2980,23 @@ CLOSED: [2023-02-07 Tue 22:01]
 Ex:
 Il manque NC_000001.11    783006  .       A       G       50      PASS
 Il y a A -> G et C -> A sur cette position
-***** TODO Restreindre genome de référence
-****** Discussion Alexis
+**** DONE Restreindre genome de référence
+CLOSED: [2023-03-04 Sat 11:15]
+***** Discussion Alexis
 le pipeline prend en compte 5', 3', variant canoniques d'épissage + prédit spip
 Le plus simple pour le moment est de restreindre seulement aux exons
 GENCODE (version europénne) vs RefSeq: [[https://bmcgenomics.biomedcentral.com/articles/10.1186/1471-2164-16-S8-S2][article 2015]] en faveur de GENCODE mais Alexis conseille Refseq
 
-****** DONE -f, -R ou -T ?
+***** DONE -f, -R ou -T ?
 CLOSED: [2023-02-25 Sat 19:47]
 Selon la doc : -f avec le bed fourni et -T pour filtrer sor les exons
-******* rtg tools
+****** rtg tools
 Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
 ----------------------------------------------------------------------------------------------------
     3.000               1015            910        206      32531     0.8154       0.0303     0.0583
      None               1015            910        206      32531     0.8154       0.0303     0.0583
-****** TODO Utiliser seulement exons
-******* DONE BestRefSeq 
+**** TODO Exons seuls
+***** DONE BestRefSeq 
 CLOSED: [2023-02-19 Sun 12:05]
 Dans refseq,[[https://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/][2 types de modèles pour le gène]]
 - basé sur refseq (NM_, NP_), curée
@@ -2961,7 +3013,7 @@ On se restrein aux exons codant (NM_)
 awk '/BestRefSeq\texon/ && /transcript_id=NM/ {print $1"\t"$4"\t"$5;}' GRCh38_latest_genomic.gff > exons.csv
 #+end_src
 Puis intersection
-******** DONE Tests après correction bug dans noms de chromosome : precision ~ ok, recall très mauvais -> trop de FN ?
+****** DONE Tests après correction bug dans noms de chromosome : precision ~ ok, recall très mauvais -> trop de FN ?
 CLOSED: [2023-02-19 Sun 12:05]
  Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.Precision
 INDEL    ALL         7230       321      6909         1500       290        888     27     18       0.044398          0.526144
@@ -2974,7 +3026,7 @@ INDEL   PASS         7230       321      6909         1500       290        888 
        0.592000         0.081887                     NaN                     NaN                    1.54733                   6.129187
        0.474236         0.054370                2.433271                1.861183                    1.57523                   2.703663
        0.474236         0.054370                2.433271                1.861183                    1.57523                   2.703663
-******** DONE Vérifier exons: on a l'union des exons de tous les transcripts...
+****** DONE Vérifier exons: on a l'union des exons de tous les transcripts...
 CLOSED: [2023-02-19 Sun 12:05]
 Il faudrait un .bed d'illumina
 On teste Twist for Illumina Exome 2.0 Plus BED File (hg19) sur https://support.illumina.com/downloads/nextera-flex-for-enrichment-BED-files.html
@@ -2986,11 +3038,11 @@ sed -i.bak -f pattern.sed illumina_exons.bed
 bedtools intersect -a HG001_GRCh38_1_22_v4.2.1_benchmark.bed -b illumina_exons.bed > HG001_GRCh38_1_22_v4.2.1_benchmark_illumina_exons.bed
 #+end_src
 Intersection
-******* KILL Bed illumina
+***** KILL Bed illumina
 CLOSED: [2023-02-24 Fri 23:44]
-******** KILL Sans filtre vep: Inversion truth et query... on recommence
+****** KILL Sans filtre vep: Inversion truth et query... on recommence
 CLOSED: [2023-02-19 Sun 13:15]
-******** KILL Sans filtre vep: mieux mais pas exceptionnel
+****** KILL Sans filtre vep: mieux mais pas exceptionnel
 CLOSED: [2023-02-24 Fri 23:44]
 cd work/00/2c72e62400956c96fb101ac7af405e/
 $ cat .command.out
@@ -3007,12 +3059,12 @@ INDEL   PASS          922       490       432          942       439          0 
             0.0         0.532709                     NaN                     NaN                   1.628743                   2.799180
             0.0         0.814719                2.899604                2.881526                   1.598479                   1.564378
             0.0         0.814719                2.899604                2.881526                   1.598479                   1.564378
-******** KILL Comprendre pour les FN explosent avec vep annot
+****** KILL Comprendre pour les FN explosent avec vep annot
 CLOSED: [2023-02-24 Fri 23:44]
 NC_000001.11	924024	.	C	G
 non couverte dans bam -> 1er exons de SAMD11 mais non couverte
 Il est dans NM_001385641.1 mais pas dans NM_152486.4
-******* KILL Obtenir les zones couvertes depuis le bam directement
+***** KILL Obtenir les zones couvertes depuis le bam directement
 CLOSED: [2023-02-24 Fri 23:44]
 #+begin_src  sh
 samtools sort NA12878_chr1.bam -o NA12878_chr1_sorted.bam
@@ -3036,7 +3088,7 @@ bedtools merge -i tomerge.bed > exons_from_bam.bed
 
 Problème : on manque parfois le bord des exons...
 
-******* KILL Vérifier un bam de référence de NA12878
+***** KILL Vérifier un bam de référence de NA12878
 CLOSED: [2023-02-24 Fri 23:44]
 Notamment pour la définitions des exons, on a des reads qui ne semblent pas alignés sur les bons exons selon IGV
 On donne directemet à IGV le bam d'illuma WES ( https://github.com/genome-in-a-bottle/giab_data_indexes )
@@ -3053,7 +3105,7 @@ samtools merge NA12878-NIST7035-HiSeq_Exome_Garan_GRCh37.bam project
 AGGCGA_2_NA12878.bwa.markDuplicates.bam
 samtools index NA12878-NIST7035-HiSeq_Exome_Garan_GRCh37.bam
 #+end_src
-******** Étude
+****** Étude
 NC_000001.11:924024 :
 - bed d’illumina : pas correct
 - bed refseq : meux
@@ -3067,9 +3119,9 @@ NC_000001.11:966227: le bed ne couvre pas le bon exon !
 https://genome-euro.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr1%3A965863%2D966591&hgsid=295298291_vhDbIv5YIckCKLpGB7UUaZi2cAkr
 NC_000001.11:966272
 
-******* KILL Filtrer variants introniques de référence avec vep
+***** KILL Filtrer variants introniques de référence avec vep
 CLOSED: [2023-02-24 Fri 23:44]
-******** KILL variant calling seulf + seulement -f: nombreux FP
+****** KILL variant calling seulf + seulement -f: nombreux FP
 CLOSED: [2023-02-24 Fri 23:44]
 /Work/Users/apraga/bisonex/work/68/f1cf72a5a4078fdf743fb3844b369a
  Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.Precision
@@ -3084,7 +3136,9 @@ INDEL   PASS          519       284       235        52169     37789      14094 
        0.097592         0.101108                2.971834                1.429533                   1.579776                   0.324923
        0.097592         0.101108                2.971834                1.429533                   1.579776                   0.324923
 
-******* TODO Avec les exons donnése par GIAB (en hg19) : bon résultats !!
+***** TODO Bed donnés par GIAB (en hg19)
+****** DONE résultats corrects
+SCHEDULED: <2023-03-02 Thu>
 Téléchargé à la main et converti via UCSCS. À automatiser, voir : *hg38
 Sans oublier de renommer les chromosomes !
 
@@ -3097,10 +3151,66 @@ Sans oublier de renommer les chromosomes !
  |----------------+-----------------+------------------------+------------------------+---------------------------+---------------------------|
  |       0.281924 |        0.701629 |                        |                        |        1.6174985978687606 |        3.0674091441969518 |
  |       0.090605 |        0.909353 |      2.529551552318896 |     2.4019675131548843 |        1.6206857273037931 |        1.6274012964054214 |
+***** TODO Comprendre pourquoi on est inférieur à Kumaran et al 2019
+SCHEDULED: <2023-03-05 Sun>
+****** TODO Comprende/améliorer Recall SNP 0.855
+SCHEDULED: <2023-03-04 Sat>
+******* TODO Regarder les FN (SNP)
+SCHEDULED: <2023-03-04 Sat>
+******** Manuel:
+NC_000001.11:1385919 pas de read 1/1:FN:.:i1_5:INDEL:homalt:.
+NC_000001.11:1623412 1 read     1/1:FN:.:ti:SNP:homalt:.
+NC_000001.11:1668449 33 read sur 160 voient l'allèle alternative 1/1:FN:am:ti:SNP:homalt:.
+NC_000001.11:1676135 67 reads, non vu 0/1:FN:.:ti:SNP:het:.
+NC_000001.11:1734812 1/1:FN:.:ti:SNP:homalt:.
+NC_000001.11:1745808 1/1:FN:.:ti:SNP:homalt:.
+NC_000001.11:1745814 1/1:FN:.:ti:SNP:homalt:.
+NC_000001.11:1953616 1/1:FN:.:ti:SNP:homalt:.
+NC_000001.11:2512975 0/1:FN:.:ti:SNP:het:
+
+******* TODO Statistiques
+SCHEDULED: <2023-03-04 Sat>
+NB: awk car bcftools query ne semble pas prendre en compte les nouvelles colonnes
+
+On confirnme le nombre de SNP:
+❯ awk '!/^#/ && $10~/:FN:/ && $10~/SNP/' test-allchr.vcf  | wc -l
+6665
 
 
-****** TODO Comparer avec stats de NA12878 dans example/happy sur chr21 (exons fournis)
-******* DONE DP_over_30_not_SNP_consensual_sequence.vcf: horrible
+Une minorité concerne des problème d'haploides
+❯ awk '!/^#/ && $10~/:FN:/ && $11!~/NOCALL/ && $10~/SNP/' test-allchr.vcf
+304
+avec 1/3 où l'exome manque une allèles
+❯ awk '!/^#/ && $10~/:FN:/ && $11!~/NOCALL/ && $10~/SNP/ && $10~/homalt/' test-allchr.vcf  | wc -l
+101
+et 2/3 où il y a une allèle "en trop"
+
+La majorité ne sont pas vu
+❯ awk '!/^#/ && $10~/:FN:/ && $11~/NOCALL/ && $10~/SNP/' test-allchr.vcf  | wc -l
+6361
+
+Nombre de reads pour chaque position en bash (!)
+#+begin_src bash
+ awk '!/^#/ && $10~/:FN:/ && $11~/NOCALL/ && $10~/SNP/ {print $1":"$2"-"$2}' test-allchr.vcf  |  xargs -I {} sh -c 'echo -n {}";"; samtools view ../NA12878_NIST.b
+am {} | wc -l' > count.csv
+#+end_src
+On examine avec Julia
+#+begin_src julia
+using CSV, DataFrames
+f = DataFrame(CSV.File("count.csv", header=false))
+size(f[f.Column2 .< 10,:])
+#+end_src
+(4430, 2)
+
+Est-on dans des exons ?
+Ça a l'air sur des exemples simples ...
+
+
+****** TODO Vérifier qu'il ne manque pas des exons (avec bam ?)
+SCHEDULED: <2023-03-05 Sun>
+***** KILL Comparer avec stats de NA12878 dans example/happy sur chr21 (exons fournis)
+CLOSED: [2023-03-04 Sat 11:01]
+****** DONE DP_over_30_not_SNP_consensual_sequence.vcf: horrible
 CLOSED: [2023-02-25 Sat 19:47]
 déplorable
  Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.Precision  METRIC.Frac_NA  METRIC.F1_Score  TRUTH.TOTAL.TiTv_ratio  QUERY.TOTAL.TiTv_ratio  TRUTH.TOTAL.het_hom_ratio  QUERY.TOTAL.het_hom_ratio
@@ -3108,7 +3218,8 @@ INDEL    ALL          519        16       503         1579      1032        531 
 INDEL   PASS          519        16       503         1579      1032        531      2      2       0.030829          0.015267        0.336289         0.020421                     NaN                     NaN                   1.775956                   4.768382
   SNP    ALL        22131      1191     20940         4346      2342        813      4      1       0.053816          0.337107        0.187069         0.092815                2.971834                1.967235                   1.579776                   1.492828
   SNP   PASS        22131      1191     20940         4346      2342        813      4      1       0.053816          0.337107        0.187069         0.092815                2.971834                1.967235                   1.579776                   1.492828
-******* DP _over_30 : mieux
+****** DONE DP _over_30 : mieux
+CLOSED: [2023-03-04 Sat 11:01]
 /Work/Users/apraga/bisonex/work/69/cc1391f5a0fbf4db958a370ec17a19
  Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.Precision
 INDEL    ALL           76        20        56           36         6         10      1      3       0.263158          0.769231
@@ -3116,7 +3227,8 @@ INDEL   PASS           76        20        56           36         6         10 
   SNP    ALL          582       312       270          370         9         49      0      0       0.536082          0.971963
   SNP   PASS          582       312       270          370         9         49      0      0       0.536082          0.971963
 
-******** STRT NC_000021.9:45515163 TA -> T : référence non normalisée ??
+******* DONE NC_000021.9:45515163 TA -> T : référence non normalisée ??
+CLOSED: [2023-03-04 Sat 11:01]
 NC_000021.9     45515163        .       TA      T       50      PASS    BS=45515163;Regions=CONF,TS_contained   GT:BD:BK:BI:BVT:BLT:QQ  0/1:FN:lm:d1_5:INDEL:het:.      ./.:.:.:.:NOCALL:nocall:0
 NC_000021.9     45515163        .       TAA     T       694.02  PASS    BS=45515163;Regions=CONF,TS_contained   GT:BD:BK:BI:BVT:BLT:QQ  ./.:.:.:.:NOCALL:nocall:.       0/1:FP:lm:d1_5:INDEL:het:694.02
 
@@ -3170,9 +3282,11 @@ TAA T
 TAA TA
 
 Après réflexion, c'est la référence qui n'est pas normalisée ! (left-trimmed)
-******** NC_000021.9     14108836  T -> C
+******* DONE NC_000021.9     14108836  T -> C
+CLOSED: [2023-03-04 Sat 11:01]
 Dans le bam mais filtré par DP
-******* variant calling seul : meilleur score pour l'instant (77% recall, 95% precision)
+****** DONE variant calling seul : meilleur score pour l'instant (77% recall, 95% precision)
+CLOSED: [2023-03-04 Sat 11:01]
 tests/chr21-alexis
  Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.Precision
 INDEL    ALL           76        43        33           82        18         20      3      5       0.565789          0.709677
@@ -3186,7 +3300,7 @@ INDEL   PASS           76        43        33           82        18         20 
        0.107547         0.849289                3.098592                2.925926                   1.530435                   1.774869
        0.107547         0.849289                3.098592                2.925926                   1.530435                   1.774869
 
-******** NC_000021.9:14144627 : FN, dans le bam mais pas dans le vcf (2 reads/9)
+******* NC_000021.9:14144627 : FN, dans le bam mais pas dans le vcf (2 reads/9)
  On récupére tout le vcf: pas dedans
  Dans le bam : 9/2
  Idem pour le bam dans notre pipeline
@@ -3199,7 +3313,7 @@ cd /Work/Users/apraga/bisonex/out/NA12878_NIST7035/preprocessing/applybqsr
 samtools view -b NA12878_NIST7035.bam NC_000021.9 -o NA12878_NIST7035_chr21.bam
 samtools index NA12878_NIST7035_chr21.bam
 #+end_src
-********* --debug
+******** --debug
 #+begin_src
 gatk --java-options "-Xmx3g" HaplotypeCaller --input NA12878_NIST7035_chr21.bam \
     --output debug_chr1.vcf.gz \
@@ -3221,9 +3335,9 @@ Les allèles sont bien retrouvées
 14:41:05.530 INFO  HaplotypeCallerGenotypingEngine - Genotyping event at 14144627 with alleles = [C*, T]
 #+end_quote
 NB: même en filtranrt sur le chromosome 21 avec julia, haplotypecaller parcourt tous les chromosomes
-********* DONE --linked-de-bruijn-graph : idem
+******** DONE --linked-de-bruijn-graph : idem
 CLOSED: [2023-02-26 Sun 17:26]
-********* DONE examine sortie --bamout : non présent
+******** DONE examine sortie --bamout : non présent
 CLOSED: [2023-02-26 Sun 19:53]
 
 #+begin_src
@@ -3242,11 +3356,11 @@ Pas de reads
  #+begin_quote
 If you see nothing overlapping your region, then it might not have been flagged as active, or could have failed to assemble.
  #+end_quote
-********* 14582339: FN mais pas de reads...
-********* 14583327 idem
-********* 17512551 idem
-********* 17567111: difference d'haplotype
-********* 17567621 pas de reads
+******** 14582339: FN mais pas de reads...
+******** 14583327 idem
+******** 17512551 idem
+******** 17567111: difference d'haplotype
+******** 17567621 pas de reads
 *** TODO Platinum genome
 https://emea.illumina.com/platinumgenomes.html
 
