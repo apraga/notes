@@ -3194,7 +3194,8 @@ Nombre de reads pour chaque position en bash (!)
  awk '!/^#/ && $10~/:FN:/ && $11~/NOCALL/ && $10~/SNP/ {print $1":"$2"-"$2}' test-allchr.vcf  |  xargs -I {} sh -c 'echo -n {}";"; samtools view ../NA12878_NIST.b
 am {} | wc -l' > count.csv
 #+end_src
-On examine avec Julia
+******** DONE Répartition par chromosome: variable mais seul le 6 = hotspot
+CLOSED: [2023-03-07 Tue 22:44]
 #+begin_src julia
 using CSV, DataFrames
 f = DataFrame(CSV.File("count.csv", header=false))
@@ -3202,10 +3203,82 @@ size(f[f.Column2 .< 10,:])
 #+end_src
 (4430, 2)
 
-Est-on dans des exons ?
+
+#+begin_src julia
+using CSV, DataFrames
+
+function cleanCount(fname)
+    f = DataFrame(CSV.File(fname, header=false))
+    transform!(f, :Column1 => ByRow(x -> string.(split(x, ":"))[1]) => :chrom)
+    transform!(f, :Column1 => ByRow(x -> string.(split(x, "-"))[2]) => :pos)
+    select!(f, Not([:Column1]))
+    rename!(f, :Column2 => :nb)
+end
+
+f = cleanCount("count.csv")
+grouped = groupby(f, :chrom)
+for (k, g) in pairs(grouped)
+    println("$(k.chrom): $(size(g, 1))")
+end
+#+end_src
+
+#+RESULTS:
+: NC_000001.11: 448
+: NC_000002.12: 307
+: NC_000003.12: 228
+: NC_000004.12: 175
+: NC_000005.10: 237
+: NC_000006.12: 1223
+: NC_000007.14: 274
+: NC_000008.11: 414
+: NC_000009.12: 161
+: NC_000010.11: 194
+: NC_000011.10: 304
+: NC_000012.12: 254
+: NC_000013.11: 168
+: NC_000014.9: 184
+: NC_000015.10: 250
+: NC_000016.10: 239
+: NC_000017.11: 373
+: NC_000018.10: 85
+: NC_000019.10: 576
+: NC_000020.11: 83
+: NC_000021.9: 67
+: NC_000022.11: 117
+
+******** Est-on dans des exons ?
 Ça a l'air sur des exemples simples ...
+#+begin_src sh
+wget https://ftp.ncbi.nlm.nih.gov/refseq/H_sapiens/annotation/GRCh38_latest/refseq_identifiers/GRCh38_latest_genomic.gff.gz
+awk '/BestRefSeq\texon/ && /transcript_id=NM/ {print $1"\t"$4"\t"$5;}' GRCh38_latest_genomic.gff | grep ^NC | save exons.csv
+#+end_src
 
+#+begin_src julia
+using CSV, DataFrames
 
+function groupedCount(fname)
+    f = DataFrame(CSV.File(fname, header=false))
+    transform!(f, :Column1 => ByRow(x -> string.(split(x, ":"))[1]) => :chrom)
+    transform!(f, :Column1 => ByRow(x -> string.(split(x, "-"))[2]) => :pos)
+    select!(f, Not([:Column1]))
+    rename!(f, :Column2 => :nb)
+    groupby(f, :chrom)
+end
+
+function groupedExons(fname)
+    f = DataFrame(CSV.File(fname, header=["chrom", "start", "end"], delim="\t"))
+    transform!(f, [:start, :end] => ByRow((x,y) -> Interval(x, y)) => :interval)
+    select!(f, Not([:start, :end]))
+    groupby(f, :chrom)
+end
+
+f = groupedCount("count.csv")
+exons = groupedExons("exons.csv")
+
+g = 1
+x = parse(Int64, f[g][1, :pos])
+x in exons[g][1, :interval]
+#+end_src
 ****** TODO Vérifier qu'il ne manque pas des exons (avec bam ?)
 SCHEDULED: <2023-03-05 Sun>
 ***** KILL Comparer avec stats de NA12878 dans example/happy sur chr21 (exons fournis)

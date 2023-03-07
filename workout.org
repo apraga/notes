@@ -5967,3 +5967,12 @@ Jambes jointes en pensant à rapproche les genoux = difficile !
 - 4
 - 4
 - 4
+* <2023-03-07 Tue> Tricking
+Bkick 5
+Aerial 5
+front kick 7
+aerial + front kick 5
+scoot + bkick 5
+tornado 5
+scoot + aerial 5
+feilong 6
