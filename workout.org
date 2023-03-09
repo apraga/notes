@@ -5976,3 +5976,8 @@ scoot + bkick 5
 tornado 5
 scoot + aerial 5
 feilong 6
+* <2023-03-08 Wed> Workout
+** Circuit
+Haut: Muscle-up - Droit - L-sit - Tucked pushed - Muscle negative - tucked pull up - Skin-the-cat - Straddle negative
+Bas: pistolsx4 - norwegian curlsx4 - extension x22s - compression x9
+3x1

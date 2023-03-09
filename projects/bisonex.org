@@ -3136,9 +3136,8 @@ INDEL   PASS          519       284       235        52169     37789      14094 
        0.097592         0.101108                2.971834                1.429533                   1.579776                   0.324923
        0.097592         0.101108                2.971834                1.429533                   1.579776                   0.324923
 
-***** TODO Bed donnés par GIAB (en hg19)
-****** DONE résultats corrects
-SCHEDULED: <2023-03-02 Thu>
+***** DONE Bed donnés par GIAB (en hg19) : résultats corrects
+CLOSED: [2023-03-09 Thu 22:42] SCHEDULED: <2023-03-02 Thu>
 Téléchargé à la main et converti via UCSCS. À automatiser, voir : *hg38
 Sans oublier de renommer les chromosomes !
 
@@ -3151,24 +3150,21 @@ Sans oublier de renommer les chromosomes !
  |----------------+-----------------+------------------------+------------------------+---------------------------+---------------------------|
  |       0.281924 |        0.701629 |                        |                        |        1.6174985978687606 |        3.0674091441969518 |
  |       0.090605 |        0.909353 |      2.529551552318896 |     2.4019675131548843 |        1.6206857273037931 |        1.6274012964054214 |
-***** TODO Comprendre pourquoi on est inférieur à Kumaran et al 2019
-SCHEDULED: <2023-03-05 Sun>
-****** TODO Comprende/améliorer Recall SNP 0.855
-SCHEDULED: <2023-03-04 Sat>
-******* TODO Regarder les FN (SNP)
-SCHEDULED: <2023-03-04 Sat>
-******** Manuel:
-NC_000001.11:1385919 pas de read 1/1:FN:.:i1_5:INDEL:homalt:.
-NC_000001.11:1623412 1 read     1/1:FN:.:ti:SNP:homalt:.
-NC_000001.11:1668449 33 read sur 160 voient l'allèle alternative 1/1:FN:am:ti:SNP:homalt:.
-NC_000001.11:1676135 67 reads, non vu 0/1:FN:.:ti:SNP:het:.
-NC_000001.11:1734812 1/1:FN:.:ti:SNP:homalt:.
-NC_000001.11:1745808 1/1:FN:.:ti:SNP:homalt:.
-NC_000001.11:1745814 1/1:FN:.:ti:SNP:homalt:.
-NC_000001.11:1953616 1/1:FN:.:ti:SNP:homalt:.
-NC_000001.11:2512975 0/1:FN:.:ti:SNP:het:
 
-******* TODO Statistiques
+***** DONE Re-tester avec exons Refseq et option -T: résultats un peu moins bons
+CLOSED: [2023-03-09 Thu 22:42] SCHEDULED: <2023-03-08 Wed>
+On utilise directement les coordonées données par refseq
+
+ Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.Precision
+INDEL    ALL         7226      3417      3809         6978      1599       1918    228    353       0.472876          0.683992
+  SNP    ALL        59052     37825     21227        43480      1913       3740    675     35       0.640537          0.951862
+
+ METRIC.Frac_NA  METRIC.F1_Score  TRUTH.TOTAL.TiTv_ratio  QUERY.TOTAL.TiTv_ratio  TRUTH.TOTAL.het_hom_ratio  QUERY.TOTAL.het_hom_ratio
+       0.274864         0.559171                     NaN                     NaN                   1.547733                   2.756151
+       0.086017         0.765767                2.433271                2.350281                   1.575230                   1.492346
+***** TODO D'où vient la différence ?
+SCHEDULED: <2023-03-09 Thu>
+****** TODO Statistiques
 SCHEDULED: <2023-03-04 Sat>
 NB: awk car bcftools query ne semble pas prendre en compte les nouvelles colonnes
 
@@ -3194,7 +3190,7 @@ Nombre de reads pour chaque position en bash (!)
  awk '!/^#/ && $10~/:FN:/ && $11~/NOCALL/ && $10~/SNP/ {print $1":"$2"-"$2}' test-allchr.vcf  |  xargs -I {} sh -c 'echo -n {}";"; samtools view ../NA12878_NIST.b
 am {} | wc -l' > count.csv
 #+end_src
-******** DONE Répartition par chromosome: variable mais seul le 6 = hotspot
+******* DONE Répartition par chromosome: variable mais seul le 6 = hotspot
 CLOSED: [2023-03-07 Tue 22:44]
 #+begin_src julia
 using CSV, DataFrames
@@ -3246,7 +3242,8 @@ end
 : NC_000021.9: 67
 : NC_000022.11: 117
 
-******** Est-on dans des exons ?
+******* DONE Reads en dehors des exons
+CLOSED: [2023-03-09 Thu 22:43]
 Ça a l'air sur des exemples simples ...
 #+begin_src sh
 wget https://ftp.ncbi.nlm.nih.gov/refseq/H_sapiens/annotation/GRCh38_latest/refseq_identifiers/GRCh38_latest_genomic.gff.gz
@@ -3254,12 +3251,16 @@ awk '/BestRefSeq\texon/ && /transcript_id=NM/ {print $1"\t"$4"\t"$5;}' GRCh38_la
 #+end_src
 
 #+begin_src julia
-using CSV, DataFrames
+using CSV, DataFrames, Intervals
+
+# Check the number of reads for each false negative (stored in count.csv)
+# from hap.py output:
+# awk '!/^#/ && $10~/:FN:/ && $11~/NOCALL/ && $10~/SNP/ {print $1":"$2"-"$2}' test-allchr.vcf  |  xargs -I {} sh -c 'echo -n {}";"; samtools view ../NA12878_NIST.b am {} | wc -l' > count.csv
 
 function groupedCount(fname)
     f = DataFrame(CSV.File(fname, header=false))
     transform!(f, :Column1 => ByRow(x -> string.(split(x, ":"))[1]) => :chrom)
-    transform!(f, :Column1 => ByRow(x -> string.(split(x, "-"))[2]) => :pos)
+    transform!(f, :Column1 => ByRow(x -> parse(Int64, string.(split(x, "-"))[2])) => :pos)
     select!(f, Not([:Column1]))
     rename!(f, :Column2 => :nb)
     groupby(f, :chrom)
@@ -3272,15 +3273,97 @@ function groupedExons(fname)
     groupby(f, :chrom)
 end
 
-f = groupedCount("count.csv")
+# Check is position x is in exons for chromosome chr
+function isExon(x, exons, chr)
+    # Remove duplicates
+    exonsU = unique(exons[chr])
+    res = transform(exonsU, :interval => ByRow(z -> x in z) => :check)
+    # Result only found interval
+    found = res[res.check,:].interval
+    isempty(found) ? missing : first(found)
+end
+
+reads = groupedCount("../NA12878/happy/count.csv")
 exons = groupedExons("exons.csv")
 
-g = 1
-x = parse(Int64, f[g][1, :pos])
-x in exons[g][1, :interval]
+for g in range(1, size(reads)[1])
+    local found
+    found = transform(reads[g], :pos => ByRow(x -> isExon(x, exons, g)) => :exon)
+    readsMissing = found[ismissing.(found.exon), :]
+    # print("$(k.chrom):")
+    print(g)
+    print(": $(size(reads[g])[1]) reads, ")
+    println("$(size(readsMissing)[1]) not in exons")
+end
 #+end_src
-****** TODO Vérifier qu'il ne manque pas des exons (avec bam ?)
+1: 448 reads, 64 not in exons
+2: 307 reads, 47 not in exons
+3: 228 reads, 37 not in exons
+4: 175 reads, 28 not in exons
+5: 237 reads, 38 not in exons
+6: 1223 reads, 304 not in exons
+7: 274 reads, 52 not in exons
+8: 414 reads, 41 not in exons
+9: 161 reads, 47 not in exons
+10: 194 reads, 37 not in exons
+11: 304 reads, 39 not in exons
+12: 254 reads, 32 not in exons
+13: 168 reads, 120 not in exons
+14: 184 reads, 26 not in exons
+15: 250 reads, 90 not in exons
+16: 239 reads, 29 not in exons
+17: 373 reads, 35 not in exons
+18: 85 reads, 17 not in exons
+19: 576 reads, 46 not in exons
+20: 83 reads, 22 not in exons
+21: 67 reads, 14 not in exons
+22: 117 reads, 24 not in exons
+
+******* TODO Comprendre/améliorer Recall SNP 0.855
+SCHEDULED: <2023-03-04 Sat>
+ on est inférieur à Kumaran et al 2019
+******** TODO Regarder les FN (SNP)
+SCHEDULED: <2023-03-04 Sat  >
+********* Manuel:
+NC_000001.11:1385919 pas de read 1/1:FN:.:i1_5:INDEL:homalt:.
+NC_000001.11:1623412 1 read     1/1:FN:.:ti:SNP:homalt:.
+NC_000001.11:1668449 33 read sur 160 voient l'allèle alternative 1/1:FN:am:ti:SNP:homalt:.
+NC_000001.11:1676135 67 reads, non vu 0/1:FN:.:ti:SNP:het:.
+NC_000001.11:1734812 1/1:FN:.:ti:SNP:homalt:.
+NC_000001.11:1745808 1/1:FN:.:ti:SNP:homalt:.
+NC_000001.11:1745814 1/1:FN:.:ti:SNP:homalt:.
+NC_000001.11:1953616 1/1:FN:.:ti:SNP:homalt:.
+NC_000001.11:2512975 0/1:FN:.:ti:SNP:het:
+
+****** TODO Alignement
+******* DONE Même genome: idem
+CLOSED: [2023-03-09 Thu 23:13]
+******** GHC38 + version alexis + exons refseq
+ Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.Precision
+INDEL    ALL         7226      3417      3809         6979      1599       1919    228    353       0.472876          0.683992
+  SNP    ALL        59052     37827     21225        43483      1913       3741    676     35       0.640571          0.951865
+
+ METRIC.Frac_NA  METRIC.F1_Score  TRUTH.TOTAL.TiTv_ratio  QUERY.TOTAL.TiTv_ratio  TRUTH.TOTAL.het_hom_ratio  QUERY.TOTAL.het_hom_ratio
+       0.274968         0.559171                     NaN                     NaN                   1.547733                   2.756698
+       0.086034         0.765792                2.433271                2.350254                   1.575230                   1.492375
+
+******** GHC38.p13 + notre version alexis + exons refseq
+ Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.Precision
+INDEL    ALL         7226      3417      3809         6978      1599       1918    228    353       0.472876          0.683992
+  SNP    ALL        59052     37825     21227        43480      1913       3740    675     35       0.640537          0.951862
+
+ METRIC.Frac_NA  METRIC.F1_Score  TRUTH.TOTAL.TiTv_ratio  QUERY.TOTAL.TiTv_ratio  TRUTH.TOTAL.het_hom_ratio  QUERY.TOTAL.het_hom_ratio
+       0.274864         0.559171                     NaN                     NaN                   1.547733                   2.756151
+       0.086017         0.765767                2.433271                2.350281                   1.575230                   1.492346
+
+****** DONE Vérifier si coordonnées génomiques (vcf)
+CLOSED: [2023-03-09 Thu 23:05]
+****** TODO Variant calling
+******* TODO Désactiver dbSNP ???
+****** TODO Définition des exons
+******* TODO Vérifier qu'il ne manque pas des exons (avec bam ?)
 SCHEDULED: <2023-03-05 Sun>
+
 ***** KILL Comparer avec stats de NA12878 dans example/happy sur chr21 (exons fournis)
 CLOSED: [2023-03-04 Sat 11:01]
 ****** DONE DP_over_30_not_SNP_consensual_sequence.vcf: horrible
