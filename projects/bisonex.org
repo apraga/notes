@@ -18,12 +18,18 @@ Définis l'algorithme + image
 Attention, génome et en hg19 donc comparaison non adaptée ...
 
 **** TODO Best practices for the analytical validation of clinical whole-genome sequencing intended for the diagnosis of germline disease
-SCHEDULED: <2023-03-04 Sat>
+SCHEDULED: <2023-03-13 lun.>
 https://www.nature.com/articles/s41525-020-00154-9
+Recommandations générale pour genome, sans données brutes
+**** TODO Performance assessment of variant calling pipelines using human whole exome sequencing and simulated data
+SCHEDULED: <2023-03-04 Sat>
+https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2928-9
 1. variant calling seul
 2. NA12878 + données simulées
 3. exome
 4. évalué via F-score
+
+Code disponible ! https://github.com/bharani-lab/WES-Benchmarking-Pipeline_Manoj/tree/master/Script
 Résultat: BWA/Novoalign_DeepVariant
 
 Aligneurs
@@ -66,7 +72,60 @@ Variant Type
 | Platinum              |           29% |            0 |   0 |                      0 |           0 |   0 |               0 | Eberle et  al8  | Platinum |
 | Genomes               |               |              |     |                        |             |     |                 |                 |          |
 | Venter/HuRef          |           14% |          40% |   0 |                      0 |           0 |   0 |               0 | Trost et al1    | HuRef    |
-*** Systematic comparison of germline variant calling pipelines cross multiple next-generation sequencers
+
+**** Systematic comparison of germline variant calling pipelines cross multiple next-generation sequencers
+#+begin_src bibtex
+@ARTICLE{Chen2019-fp,
+  title     = "Systematic comparison of germline variant calling pipelines
+               cross multiple next-generation sequencers",
+  author    = "Chen, Jiayun and Li, Xingsong and Zhong, Hongbin and Meng,
+               Yuhuan and Du, Hongli",
+  abstract  = "The development and innovation of next generation sequencing
+               (NGS) and the subsequent analysis tools have gain popularity in
+               scientific researches and clinical diagnostic applications.
+               Hence, a systematic comparison of the sequencing platforms and
+               variant calling pipelines could provide significant guidance to
+               NGS-based scientific and clinical genomics. In this study, we
+               compared the performance, concordance and operating efficiency
+               of 27 combinations of sequencing platforms and variant calling
+               pipelines, testing three variant calling pipelines-Genome
+               Analysis Tool Kit HaplotypeCaller, Strelka2 and
+               Samtools-Varscan2 for nine data sets for the NA12878 genome
+               sequenced by different platforms including BGISEQ500,
+               MGISEQ2000, HiSeq4000, NovaSeq and HiSeq Xten. For the variants
+               calling performance of 12 combinations in WES datasets, all
+               combinations displayed good performance in calling SNPs, with
+               their F-scores entirely higher than 0.96, and their performance
+               in calling INDELs varies from 0.75 to 0.91. And all 15
+               combinations in WGS datasets also manifested good performance,
+               with F-scores in calling SNPs were entirely higher than 0.975
+               and their performance in calling INDELs varies from 0.71 to
+               0.93. All of these combinations manifested high concordance in
+               variant identification, while the divergence of variants
+               identification in WGS datasets were larger than that in WES
+               datasets. We also down-sampled the original WES and WGS datasets
+               at a series of gradient coverage across multiple platforms, then
+               the variants calling period consumed by the three pipelines at
+               each coverage were counted, respectively. For the GIAB datasets
+               on both BGI and Illumina platforms, Strelka2 manifested its
+               ultra-performance in detecting accuracy and processing
+               efficiency compared with other two pipelines on each sequencing
+               platform, which was recommended in the further promotion and
+               application of next generation sequencing technology. The
+               results of our researches will provide useful and comprehensive
+               guidelines for personal or organizational researchers in
+               reliable and consistent variants identification.",
+  journal   = "Sci. Rep.",
+  publisher = "Springer Science and Business Media LLC",
+  volume    =  9,
+  number    =  1,
+  pages     = "9345",
+  month     =  jun,
+  year      =  2019,
+  copyright = "https://creativecommons.org/licenses/by/4.0",
+  language  = "en"
+}
+#+end_src
 Comparaison de différents pipeline 2019
 https://www.nature.com/articles/s41598-019-45835-3
 Combinaison
@@ -3414,6 +3473,7 @@ CLOSED: [2023-03-09 Thu 23:05]
 ****** TODO Définition des exons
 ******* TODO Vérifier qu'il ne manque pas des exons (avec bam ?)
 SCHEDULED: <2023-03-05 Sun>
+***** TODO comparer avec Kumaran 2021
 
 ***** KILL Comparer avec stats de NA12878 dans example/happy sur chr21 (exons fournis)
 CLOSED: [2023-03-04 Sat 11:01]
