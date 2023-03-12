@@ -3166,6 +3166,8 @@ INDEL    ALL         7226      3417      3809         6978      1599       1918 
 SCHEDULED: <2023-03-09 Thu>
 ****** TODO Statistiques
 SCHEDULED: <2023-03-04 Sat>
+******* DONE Awk
+CLOSED: [2023-03-12 Sun 22:12]
 NB: awk car bcftools query ne semble pas prendre en compte les nouvelles colonnes
 
 On confirnme le nombre de SNP:
@@ -3190,6 +3192,55 @@ Nombre de reads pour chaque position en bash (!)
  awk '!/^#/ && $10~/:FN:/ && $11~/NOCALL/ && $10~/SNP/ {print $1":"$2"-"$2}' test-allchr.vcf  |  xargs -I {} sh -c 'echo -n {}";"; samtools view ../NA12878_NIST.b
 am {} | wc -l' > count.csv
 #+end_src
+******* TODO Julia
+#+begin_src julia
+using GeneticVariation
+
+reader = VCF.Reader(open("../out/test-bed/test-allchr.vcf", "r"))
+fn = 0
+notSeen = 0
+missingAllel = 0
+surnumAllel = 0
+for record in reader
+    global fn, notSeen
+    global missingAllel, surnumAllel
+    if VCF.genotype(record)[1][2] == "FN" && VCF.genotype(record)[1][5] == "SNP"
+        # println(record)
+        # println("$(VCF.chrom(record))  $(VCF.pos(record))")
+        fn = fn +1
+        if VCF.genotype(record)[2][5] == "NOCALL"
+            notSeen = notSeen + 1
+        else
+            if VCF.genotype(record)[1][6] == "homalt"
+                missingAllel = missingAllel + 1
+            elseif VCF.genotype(record)[2][6] == "homalt"
+                surnumAllel = surnumAllel + 1
+            end
+        end
+    end
+end
+close(reader)
+println("SNP: false negative $fn")
+println("SNP: not seen $notSeen")
+println("SNP: missing allel $missingAllel")
+println("SNP: surnumeraries allel $surnumAllel")
+#+end_src
+
+SNP: false negative 6665
+SNP: not seen 6361
+SNP: missing allel 101
+SNP: surnumeraries allel 203
+
+1. On confirme le nombre de SNP.
+2. Une minorité concerne des problème d'haploides avec
+   - 1/3 où l'exome manque une allèles
+   - 2/3 où il y a une allèle "en trop"
+3. La majorité ne sont pas vu (6361)
+
+Nombre de reads pour chaque position en bash (!)
+#+begin_src bash
+ awk '!/^#/ && $10~/:FN:/ && $11~/NOCALL/ && $10~/SNP/ {print $1":"$2"-"$2}' test-allchr.vcf  |  xargs -I {} sh -c 'echo -n {}";"; samtools view ../NA12878_NIST.b
+am {} | wc -l' > count.csv
 ******* DONE Répartition par chromosome: variable mais seul le 6 = hotspot
 CLOSED: [2023-03-07 Tue 22:44]
 #+begin_src julia

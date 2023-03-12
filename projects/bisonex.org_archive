@@ -127,3 +127,37 @@ Traceback (most recent call last):
 ImportError: No module named libchtslib
 IL faut commenter detect var
 
+
+* DONE Awk
+CLOSED: [2023-03-12 Sun 22:12]
+:PROPERTIES:
+:ARCHIVE_TIME: 2023-03-12 Sun 22:19
+:ARCHIVE_FILE: ~/org/projects/bisonex.org
+:ARCHIVE_OLPATH: Tests/Validation : NA12878/GIAB/Exons seuls/D'où vient la différence ?/Statistiques
+:ARCHIVE_CATEGORY: GIAB
+:ARCHIVE_TODO: DONE
+:END:
+NB: awk car bcftools query ne semble pas prendre en compte les nouvelles colonnes
+
+On confirnme le nombre de SNP:
+❯ awk '!/^#/ && $10~/:FN:/ && $10~/SNP/' test-allchr.vcf  | wc -l
+6665
+
+
+Une minorité concerne des problème d'haploides
+❯ awk '!/^#/ && $10~/:FN:/ && $11!~/NOCALL/ && $10~/SNP/' test-allchr.vcf
+304
+avec 1/3 où l'exome manque une allèles
+❯ awk '!/^#/ && $10~/:FN:/ && $11!~/NOCALL/ && $10~/SNP/ && $10~/homalt/' test-allchr.vcf  | wc -l
+101
+et 2/3 où il y a une allèle "en trop"
+
+La majorité ne sont pas vu
+❯ awk '!/^#/ && $10~/:FN:/ && $11~/NOCALL/ && $10~/SNP/' test-allchr.vcf  | wc -l
+6361
+
+Nombre de reads pour chaque position en bash (!)
+#+begin_src bash
+ awk '!/^#/ && $10~/:FN:/ && $11~/NOCALL/ && $10~/SNP/ {print $1":"$2"-"$2}' test-allchr.vcf  |  xargs -I {} sh -c 'echo -n {}";"; samtools view ../NA12878_NIST.b
+am {} | wc -l' > count.csv
+#+end_src
