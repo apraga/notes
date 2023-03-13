@@ -266,3 +266,23 @@ Si le program en a besoin, wrapper le programme en rajoutant dans nativeBuildInp
   '';
 }
 #+end_src
+** Haskell
+nix profile insrtall nixpkgs#cabal2nix
+cabal init
+cabal2nix . > project.nix
+
+Mettre dans release.nix :
+#+begin_src nix
+let
+  pkgs = import <nixpkgs> { };
+
+in
+  {
+    project = pkgs.haskellPackages.callPackage ./project.nix { };
+  }
+#+end_src
+Puis
+#+begin_src sh
+nix-build release.nix
+./result/bin/misc
+#+end_src
