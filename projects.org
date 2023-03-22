@@ -2126,15 +2126,20 @@ Solution 2: packages graaljs en compilant depuis le sourc   e
 ** Mazda 5
 *** Notes
 - Plaquettes : arrière gauche ok (50%) le <2022-09-03 Sat>
+- besoin d'une clé 14 pour changer les plaquettes
 *** DONE Changer pneus avant
 CLOSED: [2022-09-11 Sun 22:05] SCHEDULED: <2022-09-03 Sat>
 Trop abimé pour prendre le risque, on changera les arrières plus tard
+*** TODO Changer plaquettes +/- disques
+Écrou grippé ? Voir avec fils M. Chouffe à Gennes, chemin du vernois (voiture 607 bleue)
 *** TODO Changer courroie distribution
 SCHEDULED: <2023-05-11 Thu>
 À faire au bout de 10ans, on attend l’an prochain
 * Moto
 ** TODO Changer kit chaine
-SCHEDULED: <2022-12-15 Thu>
+SCHEDULED: <2023-04-01 Sat>
+RV pris yamah
+
 * Maison
 * Gentoo
 ** GURU
