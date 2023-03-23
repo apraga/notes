@@ -313,11 +313,67 @@ CLOSED: [2022-11-27 Sun 11:28]
 **** TODO Article
 ***** DONE v0.1
 CLOSED: [2022-12-04 Sun 22:13]
-***** STRT Corrections v0.2
+***** DONE Corrections v0.2
+CLOSED: [2023-03-20 lun. 14:29]
+***** DONE Version validée par paul v0.2.7
+CLOSED: [2023-03-20 lun. 14:30]
 **** TODO Soumission
-- BMC Pediatrics ? Impact factor 2.1
   List journaux acceptant case reports
   https://static1.squarespace.com/static/5db7b349364ff063a6c58ab8/t/6071fb065173800a11ccd0a2/1618082566620/Case+Report+Journals+2020.pdf
+
+- Acad Pediatr : non, scope inadéquat
+- BMC Pediatrics ? trop cher (2 290€) Impact factor 2.1
+- Curr Opin Pediatr : il faut être invité
+- Front Pediatr : 2000$ case report
+https://www.frontiersin.org/journals/pediatrics/for-authors/publishing-fees
+- Ital J Pediatr : trop cher (cf bmc)
+- J Pediatr Health Care : out of scope
+- J Pediatr Hematol Oncol Nurs : out of scope
+- Minerva Pediatr : gratuit si soumission pas en open access
+https://www.minervamedica.it/en/journals/minerva-pediatrics/notice-to-authors.php
+  #+begin_quote
+ hybrid journal which publishes scientific papers on pediatrics, neonatology, adolescent medicine, child and adolescent psychiatry and pediatric surgery
+  #+end_quote
+  case report pour la forme de lettres à l’éditeur apparement
+  https://www.minervamedica.it/en/journals/minerva-pediatrics/article.php?cod=R15Y2021N05A0467
+  #+begin_quote
+Subscription-based model
+Page charges. Publication of the manuscript is free of charge. Language revision and excessive alterations to proofs will be charged to the authors.
+  #+end_quote
+
+- Pediatr Clin North Am : out of scope
+- Pediatr Dev Pathol : gratuit
+  Case report ok :
+#+begin_quote
+The Journal covers the spectrum of disorders of early development (including embryology, placentology, and teratology), gestational and perinatal diseases, and all diseases of childhood. Studies may be in any field of experimental, anatomic, or clinical pathology, including molecular pathology. Case reports are published only if they provide new insights into disease mechanisms or new information.
+#+end_quote
+https://journals.sagepub.com/author-instructions/PDP
+#+begin_quote
+There are no fees payable to submit to or publish in this journal.
+#+end_quote
+
+- Pediatr Hematol Oncol : gratuit
+  scope limite :
+  #+begin_quote
+aim to define optimal therapeutic strategies for children and young adults with cancer and blood disorders.
+  #+end_quote
+
+  Case report ok :
+  #+begin_quote
+  PHO will consider exceptional case studies and case series. These submissions must illuminate novel biological or clinical understanding of cancer or blood diseases must be submitted in the identical format as a letter to the editorial
+  #+end_quote
+
+#+begin_quote
+ Authors of accepted peer-reviewed articles have the choice to pay a fee to allow perpetual unrestricted online access to their published article to readers globally, immediately upon publication. Authors may take advantage of the open access option at the point of submission. Please note that this choice has no influence on the peer review and acceptance process. These articles are subject to the journal's standard peer-review process and will be accepted or rejected based on their own merit.
+
+The article processing charge (APC) is charged on acceptance of the article and should be paid within 30 days by the author, funding agency or institution. Payment must be processed for the article to be published
+#+end_quote
+https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=ipho20#oa
+#+begin_quote
+There are no submission fees, publication fees or page charges for this journal.
+#+end_quote
+
+
 ** Mustard :mustard:
 *** Scripts
 **** DONE Script pour données labkey
