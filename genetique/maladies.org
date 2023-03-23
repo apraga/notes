@@ -932,7 +932,17 @@ malformations, Epidermal nevi, Scoliosis/Skeletal/Spinal anomalies »
 Polymicrogyria
  - tableau est dominé par une hypertrophie cérébrale
 (mégalencéphalie)
-** TODO MCAP
+** TODO MCAP : Megalencephaly-Capillary malformationPolymicrogyria
+https://www.has-sante.fr/upload/docs/application/pdf/2021-10/synthese_mg_syndrome_mcap.pdf
+1. MCAP = Megalencephaly - CApillary malformation -
+Polymicrogyria si le tableau est dominé par une hypertrophie cérébrale
+(mégalencéphalie) ;
+2. CLOVES = « Congenital Lipomatous Overgrowth, Vascular
+malformations, Epidermal nevi, Scoliosis/Skeletal/Spinal anomalies » si le tableau est
+dominé par une hypertrophie segmentaire (focale ou plurifocale) ;
+3. Klippel-Trenaunay = lorsque les malformations vasculaires, souvent
+au premier plan, s’associent à une hypertrophie des tissus mous et du tissu osseux, et
+intéressent un membre, le plus souvent un membre inférieur.
 ** TODO HMEG
 ** TODO KTS
 ** [[*Syndrome CLOVES][Syndrome CLOVES]]
