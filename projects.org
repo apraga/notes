@@ -2160,7 +2160,13 @@ PR submitted
 SCHEDULED: <2022-08-10 Wed>
 /Entered on/ [2022-08-10 Wed 14:28]
 Corriger review
-Essayer dernière version de kent
+*** STRT Essayer dernière version de kent
+- il faut le patch ici:
+  https://github.com/NixOS/nixpkgs/pull/206991/commits/b3dd4ac8abd6563342c4dc52325c9bf71944cff5
+  Review faite <2023-03-26 Sun> , atteinte merge
+
+*** STRT Override la version de nix pour forcer 335
+ne compile pas : "DSO missing from command line" à cause de zlib
 
 ** WAIT Nixpkg for BioDBHTS
 SCHEDULED: <2022-08-10 Wed>
