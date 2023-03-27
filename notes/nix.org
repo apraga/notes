@@ -98,6 +98,7 @@ Ou bien, ne pas mettre de hash et copier le résultat de l’erreur !
 *** Débugger
 [[https://nixos.wiki/wiki/Nixpkgs/Create_and_debug_packages][Source]]
 https://nixos.wiki/wiki/Packaging/Tutorial
+Pour nixpkgs, voir [[*Débugger un paquet][Débugger un paquet]]
 Sans Flakes
 #+begin_src nix
 nix-shell -E 'with import <nixpkgs> {}; callPackage ./default.nix {}'
@@ -169,6 +170,31 @@ Tester les dépendenances
 #+begin_src sh
 nix-shell -p nixpkgs-review --run "nixpkgs-review rev HEAD"
 #+end_src
+** Débugger un paquet
+#+begin_src sh
+cd nixpkgs
+mkdir lol
+cd lol
+nix-shell ../ -A kent
+#+end_src
+Le plus simple est d'utiliser genericBuild avec les différentes phases, exemple :
+#+begin_src sh
+phases="checkPhase installPhase" genericBuild
+#+end_src
+
+Liste des phases :
+unpackPhase
+patchPhase
+configurePhase
+buildPhase
+checkPhase
+installPhase
+fixupPhase
+installCheckPhase
+distPhase
+
+Voir :
+https://nixos.wiki/wiki/Nixpkgs/Create_and_debug_packages
 * Avertissements
 Ne jamais modifier les fichiers dans /nix/store
 * Langage

@@ -2160,13 +2160,16 @@ PR submitted
 SCHEDULED: <2022-08-10 Wed>
 /Entered on/ [2022-08-10 Wed 14:28]
 Corriger review
-*** STRT Essayer dernière version de kent
-- il faut le patch ici:
-  https://github.com/NixOS/nixpkgs/pull/206991/commits/b3dd4ac8abd6563342c4dc52325c9bf71944cff5
-  Review faite <2023-03-26 Sun> , atteinte merge
-
-*** STRT Override la version de nix pour forcer 335
-ne compile pas : "DSO missing from command line" à cause de zlib
+*** TODO Version de kent déjà packagée : forcer version  335
+**** WAIT il faut le [[ https://github.com/NixOS/nixpkgs/pull/206991/commits/b3dd4ac8abd6563342c4dc52325c9bf71944cff5][patch ici]]
+Review faite <2023-03-26 Sun> , atteinte merge]
+**** WAIT PR pour ajouter les header (inc folder)
+https://github.com/NixOS/nixpkgs/pull/223411
+**** WAIT Mettre à jour le PR avec les 2 changements ci-dessous + patch pour avoir utils
+https://github.com/NixOS/nixpkgs/pull/186462
+*** KILL Version de kent déjà packagée : 404
+CLOSED: [2023-03-27 Mon 16:43]
+Compile mais les tests de passent pas
 
 ** WAIT Nixpkg for BioDBHTS
 SCHEDULED: <2022-08-10 Wed>
