@@ -6048,3 +6048,11 @@ Bas: pistolsx4 - norwegian curlsx4 - extension x22s - compression x9
  - 4
  - 4
  - 4
+* <2023-03-28 Tue>  Tricking
+Bkick 10
+Aerial 10
+front kick 10
+tornado 10
+720 10
+940 10
+feilong 10
