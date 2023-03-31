@@ -751,7 +751,8 @@ Régulation = équilibre absorption intestninale, réabsorbtion rénale, échang
   - diminue réabsorbtion rénale
   - synthèse calcitriol
   - stimule inactivation calcitriol, 25-OH-D
-
+** Magnésium
+nécessaire à la sécrétion de PTH par parathyroïde
 ** Dosage
 référence = calcium ionisé mais augmenté si acidose, diminué si hypophosphatémie
 
@@ -781,6 +782,46 @@ ne dose pas la PTHrp
 - 25OHD =routine
 - 1,2)OH_2 D = difficulie, 2e indication
 ** Pathologies
+*** Parathyroïde
+**** Hyperparathyroïdie primaire
+- Production inappropriée PTH.
+- Fréquent, surtout féminin, asymptomatique/aspécifique
+- Étiologies : adénome(s) parathyroïdes, hyperplasie autonomisée des 4 glandes parathyroïde, carcinome parathyroïdien (rare), NEM (1 surtout, 2)
+- Diagnostic = biologique +/- scinti/échographie
+  - hypercalcémie, hypercalciuire
+  - +/- hypophosphatémie
+  - 1,25(OH)2 D + marqueur remodelage ossex
+- attention: PTH peut être normale haute. On peur avoir une HPP normocalcémique
+- Diagnostic différentiel = hypercalcémie-hypocalciurie familiale bénignie (/CaSR/, /AP2S1/, /GNA11/) : hypocalciurie relative
+- Traitement : chirurgical mais non systémiatique
+**** (Pseudo)Hypoparathyroïdie
+- Hypoparathyroïdie = défaut synthèse PTH avec hypocalcémie, PTH basse/normale basse, phosphatémie haute/normale haut, calciurie le plus souven normale
+- Pseudo-hypoparathyroïdie   = résistance = hypocalcémie, hyperphospatméie mais PTH élevée
+  - microdel chr22 (di george), chirirguie, hypomangésémie chronique
+*** AVitamine D
+Surcharge
+- intox vitamine D = très rares mais sévère. Génère hypercalcémie, que le rein essaye de compenser en augmentant la calciurie. L’hypercalcémie apparaït qand le rein est débordé
+  25OHd > 150ng/mL
+- granulomatose (sarcoïdose): les cellulels du granulome (= macrophages + descendants) peuvent hydroxyler la 25OHD circulante et relarger la 1,25OH2D
+  - hypercalcémie, PTH basse, hypercalciurie, 25OHD normale et 1,25OHd élevé, enzyme de conversion angiotensine élevée
+- hypersensibilité vitamine D : récessive, /CYP24A1/
+Carence = rachitismie, ostémalacie
+- défaut d’absorption calcium, phosphore -> hypercalcémie avec augmentation PTH -> calcium normal mais tensadance à hypophosphatémie -> défaut de minéralisation avec élévation PAL
+Également, stimulation production éranle de 1,25OHD2, mais s’arrête quand il n’y a plus de 25OHD -> grave !
+- alimntation très riche en fibres /phytate (inhibe absorption intestinale calcium !!)
+- situation de résisstance : type 1, 2, 3
+***  Hyperparathyroïde secondaier IRC
+- PTH élevée, hyperphosatémie, hypocalcémie, déficit calcitriol
+ - Mécanisme : IRC ->
+   -  diminution synthèse rénale calcitriol
+     - dimination absorption intestinale phosphate + calcium
+   - rétentation phosphates -> aumentation FGGH23 -> augmente excrétion urinaire phosphate  + diminution synthèse réranle calcitriol (cf supra)
+*** trouble réabsorbtion rénale duphosphate : diabète phosphaté
+hypophosphatémie, calcémie normale
+- rachitisme héréditaire hypophoshatémique = fuite rénale de phosphate (Tmp/DFG bas) avec PTH normale / légèmenet élevée. Déficite relative en calcitriol qui aggrave hypophosahtémie
+- ostémolacalie tumorale hypophosathméique = production FGh23 par dtumeux mésenchymateusebénignise : cf supra pour la biologie avec 1,25OH2D normale/basse donc inadaptée
+*** tumorale
+sécrétion d’une substance analogue PTH = pepite apparénté PTH -> se fixe sur les récepteur PTHR1 et induit effet biochimique PTH -> diminution PTH
 * PTH
 ** Effet
 - libéraction de calcium à partir de l’os (ostéoclastes)
