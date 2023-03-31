@@ -943,6 +943,7 @@ dominé par une hypertrophie segmentaire (focale ou plurifocale) ;
 3. Klippel-Trenaunay = lorsque les malformations vasculaires, souvent
 au premier plan, s’associent à une hypertrophie des tissus mous et du tissu osseux, et
 intéressent un membre, le plus souvent un membre inférieur.
+
 ** TODO HMEG
 ** TODO KTS
 ** [[*Syndrome CLOVES][Syndrome CLOVES]]
