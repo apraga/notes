@@ -495,3 +495,55 @@ Grammaire
   けんきゅう 研究 recherche
   けっか 結果 résultat
   はんしょくき 繁殖期 saison de reproduction
+* <2023-03-12 Sun> - Aya-sensei: lecmon 11
+** Vocabulaire
+- zenkai : la dernière fois
+- compter des verre = "pai" ippai = 1 verre, nippai = 2 verres
+- saikin = bactéries
+- sakkinn = stériliser
+- c’était plus loin que ce qu’il mavait dit = ita yori mo...
+- chuushiki = seringue
+- doggu = outil
+- けっか 結果 : hépatite B
+
+  TODO: vocab sur skype + skilled
+** Grammaire
+forme en -ou + to omoimasu
+
+nakerebanarimasen
+NB: -nasai = injonction (bossy !)
+* <2023-03-25 Sat>
+** Vocabulaire
+雪は山no上に行かないとないですか = il faut aller en haut de la montagne pour avoir de la neighe (double négatiionidiomatic)
+
+夜勤j（やきん） = garde (tochaku = plutôt pour les gens de la sécurité...)
+能力（のうりょく） = capacité à faire qqc
+認める（みとめる） = reconnaître
+能力が認められれば色々な仕事をすることができます。
+
+教わる = apprendre 
+子供のような態度（たいど） = se comporter comme un enfant
+〜だと言われました = il a été dit que ...
+落ち着く = se calme
+
+
+・びっくりします = être surpris
+・あんしんします = être soulagé
+・がっかりします = être décu
+・こまります = avoir des diffculté, être troublé
+・さびしい = se sentir seul
+・うれしい = être content
+・かなしい = être triste
+・はずかしい = être embarasssé
+・きもちがいい／わるい
+・ざんねん[な]. = regretter (une situtaion)
+・しんぱい[な]
+
+** Grammaire 
+-te vs -node
+-te = pour décrire un sentiment, une sensation
+-node = demander une permission, être poli 
+
+ 'can we use Feeling+て..., not only 〜て feeling...?' Yes, for example: 
+ロキくんがいなくなってさびしくて、ごはんが食べられません。仕事のことがしんぱいで、ねむれません。
+These work with feeling+て (giving a reason) as it's followed by potential verbs. 
