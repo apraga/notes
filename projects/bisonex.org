@@ -1,5 +1,5 @@
 ﻿#+title: Bisonex
-* Biblio
+* Biblio :biblio:
 ** Workflow
 Comparaison WDL, Cromwell, nextflow
 https://www.nature.com/articles/s41598-021-99288-8
@@ -278,7 +278,7 @@ https://genome.ucsc.edu/FAQ/FAQdownloads.html#downloadAlt
 ** Pipelines prêt-à-l’emploi nextflow
 Problème : nécessite singularity ou docker (ou conda)
 Potentiellement utilisable avec nix...
-* Données
+* Données :data:
 ** TODO Remplacer bam par fastq sur mesocentre
 Commande
 *** STRT Supprimer les fastq non "paired"
@@ -370,7 +370,7 @@ $single | reduce {|it, acc| $acc | append $it} | where dir == bam | get id | eac
 : bam/2200511274_63012586/63012586_S114.bqrt.bam
 : bam/2200669188_63036688/63036688_S150.bqrt.bam
 
-* Nouveau workflow
+* Nouveau workflow :workflow:
 ** TODO Bases de données
 *** KILL Nix pour télécharger les données brutes
 **** Conclusion
@@ -1188,47 +1188,8 @@ Problème avec liste des ID
 Besoin de vep
 
 *** TODO Variant calling
-* Amélioration
-** TODO MAJ avec picard
-Normalement, GATK inclut picard mais la dernière version utilise picard pour certains outils
-https://gatk.broadinstitute.org/hc/en-us/articles/9570266920219--Tool-Documentation-Index
-A compléter après validation
-*** TODO markduplicates
-La dernière version dans la documentation utilise picard !!
-** TODO Bwa-mem2 au lieu de bwa mem
-https://github.com/bwa-mem2/bwa-mem2
-** TODO Parallélisation haplotypecaller
-spark est en beta, ne pas utiliser
-parallélisation du pauvre : se restreindre à un chromosome avec -L et paralléliser sur le nombre de chromosome
-** KILL CRAM au lieu de SAM ?
-CLOSED: [2022-12-30 Fri 20:38]
-Version compressée de bam mais :
-#+begin_quote
-All GATK tools that take in mapped read data expect a BAM file as primary format. Some support the CRAM format, but we have observed performance issues when working directly from CRAM files, so in our own work we convert CRAM to BAM first, and we only use CRAM for archival purposes
-#+end_quote
-Source: https://gatk.broadinstitute.org/hc/en-us/articles/360035890791-SAM-or-BAM-or-CRAM-Mapped-sequence-data-formats
-** TODO Quality score recalibration avec un ensemble de fichier
-Voir GATK best practice
-** KILL Utiliser T-to-T comme références
-CLOSED: [2023-01-01 Sun 21:35]
-Semble compliqué avec les nouvelles bases de données
-** TODO Macro excel
-** TODO Utiliser le XML de clinvar
-Extraction sous VCF possible avec
-https://github.com/SeqOne/clinvcf
-** TODO Franklin
-*** TODO Classification via API
-https://www.postman.com/genoox-ps/workspace/franklin-api-documentation-s-public-workspace/documentation/6621518-4335389d-12e3-445f-8182-339df95b2a09
-** Annotation
-Liste complète
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9252745/
-*** TODO Utilise une version allégée de GnomAD (une seule colonne)
-*** TODO Digenisme (cf nomenclature omim)
-C’est dans le nom de la maladie
-* TODO Tests
-:PROPERTIES:
-:CATEGORY: tests
-:END:
+* Amélioration :amelioration:
+* TODO Tests :tests:
 ** TODO Non régression : version prod
 *** DONE ID common snp
 CLOSED: [2022-11-19 Sat 21:36]
@@ -3005,18 +2966,12 @@ CLOSED: [2023-01-25 Wed 21:58]
 Pas d'impact
 ***** TODO Comparer tsv de sortie
 ***** TODO Regarder où sont les variants différents
-** TODO Validation : NA12878
-:PROPERTIES:
-:CATEGORY: NA18278
-:END:
+** TODO Validation : NA12878 :na12878:
 https://github.com/ga4gh/benchmarking-tools
 Prérequis :
 - [[*hap.py][hap.py]]
 - [[*NA12878][NA12878]]
 *** TODO GIAB
-:PROPERTIES:
-:CATEGORY: GIAB
-:END:
 **** DONE télécharger données avec Nextflow
 CLOSED: [2023-02-25 Sat 19:47]
 ***** DONE Télécharger NA12878 (HG001)
@@ -3779,7 +3734,7 @@ INDEL   PASS         4871      3678      1193         7036      1299       2011 
 **** TODO Résumer résultats pour Paul
 *** TODO Platinum genome
 https://emea.illumina.com/platinumgenomes.html
-*** TODO Séquence NA12878
+*** TODO Séquencer NA12878
 Discussion avec Paul : sous-traitant ne nous donnera pas les données, il faut commander l'ADN
 
 ** Divers

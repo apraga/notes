@@ -133,16 +133,16 @@ Notamment Ollie Charles's 24 days of GHC Extensions,
 :END:
 **** KILL Lire dialogue fin leçon 10
 CLOSED: [2022-12-03 Sat 12:34] SCHEDULED: <2022-07-30 Sat>
-* Julia
-Mettre à jour juliastats
+* Julia :julia:
+** TODO Mettre à jour juliastats
 https://discourse.julialang.org/t/suggestion-for-homepage-of-https-juliastats-org/94948/2
 * Internat
 :PROPERTIES:
 :CATEGORY: internat
 :END:
-* Comptabilité :ledger:
+* Comptabilité
 :PROPERTIES:
-:CATEGORY: compta
+:CATEGORY: ledger
 :END:
 ** TODO janvier 2022
 ** TODO février 2022
@@ -436,7 +436,7 @@ AB = "allelic balance"
 ****** STRT Nouveau panel
 ****** TODO Dijon
 ***** TODO Version executable pour paul
-SCHEDULED: <2022-12-04 Sun>
+SCHEDULED: <2023-04-15 Sat>
 Avec colonne dédiée
 
 *** Données
@@ -2113,9 +2113,7 @@ CLOSED: [2022-11-19 Sat 17:35]
 **** TODO Téloméropathies (T Leblanc)
 * Divers
 ** TODO Cadeau mariage :joris:
-SCHEDULED: <2022-12-20 Tue>
 ** TODO Cadeaux mariage :florian:
-SCHEDULED: <2022-12-27 Tue>
 ** TODO Photos famille
 On utilise le drive commun qu'a fait Elise. Pour éviter les soucis de connexion, on modifie juste le dossier partagé:
 https://drive.google.com/drive/folders/11wJ0E_KZv7I88wdv_ULHqd5KvWFfF0DF?usp=sharing_eip_m&invite=CPX0rho&ts=63ea1879
@@ -2157,7 +2155,7 @@ SCHEDULED: <2022-08-10 Wed>
 /Entered on/ [2022-08-09 Tue 10:57]
 PR submitted
 ** STRT Nixpkg for BioDBBigFile
-SCHEDULED: <2022-08-10 Wed>
+SCHEDULED: <2023-04-15 Sat>
 /Entered on/ [2022-08-10 Wed 14:28]
 Corriger review
 *** TODO Version de kent déjà packagée : forcer version  335
@@ -2172,7 +2170,7 @@ CLOSED: [2023-03-27 Mon 16:43]
 Compile mais les tests de passent pas
 
 ** WAIT Nixpkg for BioDBHTS
-SCHEDULED: <2022-08-10 Wed>
+SCHEDULED: <2023-04-15 Sat>
 /Entered on/ [2022-08-10 Wed 14:28]
 Correction pour review faites <2022-10-10 Mon>
 
@@ -2201,6 +2199,9 @@ Trop abimé pour prendre le risque, on changera les arrières plus tard
 SCHEDULED: <2023-05-11 Thu>
 À faire au bout de 10ans, on attend l’an prochain
 * Moto
+:PROPERTIES:
+:CATEGORY: moto
+:END:
 ** TODO Changer kit chaine
 SCHEDULED: <2023-04-01 Sat>
 RV pris yamah
@@ -2213,5 +2214,4 @@ CLOSED: [2022-11-19 Sat 17:36]
 *** WAIT Ebuild pour adapteur wifi TBW-108B
 Sur branche dev
 ** TODO Article nzbget sur wiki
-SCHEDULED: <2022-10-22 Sat>
 /Entered on/ [2022-10-22 Sat 17:31]
