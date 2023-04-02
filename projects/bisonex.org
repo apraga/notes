@@ -25,11 +25,11 @@ encoded as alleles values separated by either of ”/” or “|”, e.g. The al
 Attention, génome et en hg19 donc comparaison non adaptée ...
 
 **** TODO Best practices for the analytical validation of clinical whole-genome sequencing intended for the diagnosis of germline disease
-SCHEDULED: <2023-03-13 lun.>
+SCHEDULED: <2023-04-06 Thu>
 https://www.nature.com/articles/s41525-020-00154-9
 Recommandations générale pour genome, sans données brutes
 **** TODO [#A] Performance assessment of variant calling pipelines using human whole exome sequencing and simulated data
-SCHEDULED: <2023-03-04 Sat>
+SCHEDULED: <2023-04-06 Thu>
 https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2928-9
 1. variant calling seul
 2. NA12878 + données simulées
@@ -278,6 +278,8 @@ https://genome.ucsc.edu/FAQ/FAQdownloads.html#downloadAlt
 ** Pipelines prêt-à-l’emploi nextflow
 Problème : nécessite singularity ou docker (ou conda)
 Potentiellement utilisable avec nix...
+** Zone de capture
+GIAB fourni le .bed. INfo : https://support.illumina.com/sequencing/sequencing_kits/nextera-rapid-capture-exome-kit/downloads.html
 * Données :data:
 ** TODO Remplacer bam par fastq sur mesocentre
 Commande
@@ -1049,9 +1051,11 @@ HCDIR=bin/ ../src/sh/run_tests.sha
 - [ ] sompy: ne trouve pas Strelka dans somatic
 phases="buildPhase checkPhase installPhase fixupPhase" genericBuild
 #+end_src
-**** TODO Reproduire les performances precisionchallenge NA12878
+**** KILL Reproduire les performances precisionchallenge : attention à HG002 et HG001!
+CLOSED: [2023-04-01 Sat 19:43]
 https://www.nist.gov/programs-projects/genome-bottle
-***** TODO 0GOOR
+***** KILL 0GOOR
+CLOSED: [2023-04-01 Sat 19:40]
 Le problème venait 1. de l'ADN et 2. du renommage des chromosomes qui était faux
 ****** DONE HG002
 CLOSED: [2023-02-17 Fri 19:31]
@@ -1095,8 +1099,6 @@ unknown location(0): fatal error in "testVariantPrimitiveSplitter": signal: SIGA
 HGREF=../genome/GRCh38/GCA_000001405.15_GRCh38_no_alt_analysis_set.fasta hap.py        example/happy/PG_NA12878_chr21.vcf.gz       example/happy/NA12878_chr21.vcf.gz       -f example/happy/PG_Conf_chr21.bed.gz       -o test
 ******* Helios
 échec
-****** KILL avec docker
-CLOSED: [2023-02-17 Fri 19:25]
 
 ** DONE Exécution
 CLOSED: [2022-09-13 Tue 21:37]
@@ -1108,6 +1110,16 @@ Probablement plus simple d’utiliser Nix pour gestion de l’environnement et s
 Pas d’accès internet depuis le cluster
 *** DONE nextflow
 CLOSED: [2022-09-13 Tue 21:37]
+**** TODO Bug scheduler SGE
+Le job se fait tuer car l'utilisateur n'est pas passé correctement à nextflow
+***** DONE Forcer l'utilisateur à l'exécution
+CLOSED: [2023-04-01 Sat 17:57]
+NXF_OPTS=-D"user.name=alex"
+***** DONE Vérifier si le problème persiste avec 22.10.6
+CLOSED: [2023-04-01 Sat 18:38] SCHEDULED: <2023-04-01 Sat>
+oui
+***** KILL Packager l'utilisateur dans le programme ?
+Mauvaise idée..
 ** TODO Preprocessing avec nextflow
 *** TODO Map to reference
 **** TODO Sample ID dans header
@@ -2966,17 +2978,36 @@ CLOSED: [2023-01-25 Wed 21:58]
 Pas d'impact
 ***** TODO Comparer tsv de sortie
 ***** TODO Regarder où sont les variants différents
-** TODO Validation : NA12878 :na12878:
+** TODO GIAB Validation : GIAB
 https://github.com/ga4gh/benchmarking-tools
 Prérequis :
 - [[*hap.py][hap.py]]
 - [[*NA12878][NA12878]]
-*** TODO GIAB
-**** DONE télécharger données avec Nextflow
-CLOSED: [2023-02-25 Sat 19:47]
-***** DONE Télécharger NA12878 (HG001)
+*** TODO GIAB :giab:
+**** Notes
+https://github.com/genome-in-a-bottle/giab_FAQ
+**** TODO télécharger données avec Nextflow
+***** DONE Renommer les chromosomes
+CLOSED: [2023-02-17 Fri 19:30]
+****** DONE Genome de reference NCBI
 CLOSED: [2023-02-25 Sat 19:46]
-****** DONE Fastq HiSeq
+****** DONE Bed avec les exons
+CLOSED: [2023-03-29 Wed 23:04]
+****** DONE hg19
+CLOSED: [2023-02-26 Sun 22:37]
+****** DONE hg38
+CLOSED: [2023-03-29 Wed 23:04]
+- [X] Télécharger hg19 : ok
+- [X] convertir bed en interval list
+picard BedToIntervalList -I exons_illumina.bed  -O exons_illumina.list -SD  ../../genome/GRCh19/genomeRef.dict
+- [X] puis en hg38
+picard LiftOverIntervalList -I exons_illumina.list  -O exons_illumina_hg38.list --CHAIN hg19ToHg38.over.chain -SD  ../../genome/GRCh38.p13/genomeRef.dict
+- [X] puis en bed
+
+***** TODO VCF de référence
+****** DONE NA12878 (HG001)
+CLOSED: [2023-02-25 Sat 19:46]
+******* DONE Fastq HiSeq
 CLOSED: [2023-02-25 Sat 19:46]
 On prend le Hiseq, qui est probablement ce qu'utilise Centogène :
 https://ftp-trace.ncbi.nih.gov/ReferenceSamples/giab/data/NA12878/Garvan_NA12878_HG001_HiSeq_Exome/
@@ -2990,34 +3021,62 @@ Il y a 2 samples (NIST7035 et NIST7086), chacun sur 2 lanes -> à concaténer
 NB : liste techno illumina https://www.illumina.com/systems/sequencing-platforms.html
 
 Hiseq postérieur nextseq 550
-****** DONE Capture : Exons (bed)
+******* DONE Capture : Exons (bed)
 CLOSED: [2023-02-25 Sat 19:46]
 https://ftp-trace.ncbi.nih.gov/ReferenceSamples/giab/data/NA12878/Garvan_NA12878_HG001_HiSeq_Exome/nexterarapidcapture_expandedexome_targetedregions.bed.gz
-****** DONE Bed, vcf
+******* DONE Bed, vcf
 CLOSED: [2023-02-24 Fri 23:45]
-***** DONE Télécharger Ashkenazy trio HG002
-CLOSED: [2023-02-17 Fri 19:29]
-***** DONE Renommer les chromosomes
-CLOSED: [2023-02-17 Fri 19:30]
-***** DONE Genome de reference NCBI
+****** TODO Ashkenazy trio HG002
+SCHEDULED: <2023-04-01 Sat>
+****** TODO Ashkenazy trio HG003
+SCHEDULED: <2023-04-01 Sat>
+****** TODO Ashkenazy trio HG004
+SCHEDULED: <2023-04-01 Sat>
+****** TODO Chinese trio HG005
+SCHEDULED: <2023-04-01 Sat>
+****** TODO Chinese trio HG006
+SCHEDULED: <2023-04-01 Sat>
+****** TODO Chinese trio HG007
+SCHEDULED: <2023-04-01 Sat>
+*
+***** TODO Fastq
+****** DONE NA12878 (HG001)
 CLOSED: [2023-02-25 Sat 19:46]
-***** DONE Bed avec les exons
-CLOSED: [2023-03-29 Wed 23:04]
-****** DONE hg19
-CLOSED: [2023-02-26 Sun 22:37]
-****** DONE hg38
-CLOSED: [2023-03-29 Wed 23:04]
-- [X] Télécharger hg19 : ok
-- [X] convertir bed en interval list
-picard BedToIntervalList -I exons_illumina.bed  -O exons_illumina.list -SD  ../../genome/GRCh19/genomeRef.dict
-- [X] puis en hg38
-picard LiftOverIntervalList -I exons_illumina.list  -O exons_illumina_hg38.list --CHAIN hg19ToHg38.over.chain -SD  ../../genome/GRCh38.p13/genomeRef.dict
-- [X] puis en bed
+******* DONE Fastq HiSeq
+CLOSED: [2023-02-25 Sat 19:46]
+On prend le Hiseq, qui est probablement ce qu'utilise Centogène :
+https://ftp-trace.ncbi.nih.gov/ReferenceSamples/giab/data/NA12878/Garvan_NA12878_HG001_HiSeq_Exome/
+On utilisé les données "trimmés" (https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-1069-7), i.e qui ont enlevé les fragments plus petits que la taille d'un read.
+Informations:
+- https://ftp-trace.ncbi.nih.gov/ReferenceSamples/giab/data/NA12878/Garvan_NA12878_HG001_HiSeq_Exome/Garvan_NA12878_HG001_HiSeq_Exome.README
+- Sequencer: HiSeq2500
+- kit: Nextera Rapid Capture Exome and Expanded Exome
 
-**** Notes
-https://github.com/genome-in-a-bottle/giab_FAQ
+Il y a 2 samples (NIST7035 et NIST7086), chacun sur 2 lanes -> à concaténer
+NB : liste techno illumina https://www.illumina.com/systems/sequencing-platforms.html
 
-**** DONE Discussion alexis : Mail
+Hiseq postérieur nextseq 550
+******* DONE Capture : Exons (bed)
+CLOSED: [2023-02-25 Sat 19:46]
+https://ftp-trace.ncbi.nih.gov/ReferenceSamples/giab/data/NA12878/Garvan_NA12878_HG001_HiSeq_Exome/nexterarapidcapture_expandedexome_targetedregions.bed.gz
+******* DONE Bed, vcf
+CLOSED: [2023-02-24 Fri 23:45]
+****** TODO Ashkenazy trio HG002
+SCHEDULED: <2023-04-01 Sat>
+****** TODO Ashkenazy trio HG003
+SCHEDULED: <2023-04-01 Sat>
+****** TODO Ashkenazy trio HG004
+SCHEDULED: <2023-04-01 Sat>
+****** TODO Chinese trio HG005
+SCHEDULED: <2023-04-01 Sat>
+****** TODO Chinese trio HG006
+SCHEDULED: <2023-04-01 Sat>
+****** TODO Chinese trio HG007
+SCHEDULED: <2023-04-01 Sat>
+*
+
+**** TODO NA12878 / HG001 :na12878:
+***** DONE Discussion alexis : Mail
 CLOSED: [2023-03-29 Wed 22:40]
 
 Avec le patient NA12878 et comparaison avec hap.py du VCF de Genome In A Bottle ("gold" standard), on avait pour rappel
@@ -3056,7 +3115,7 @@ Conclusion: je pense m'arrêter là pour la validation du variant calling par ma
 https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2928-9
 Résultats ici https://static-content.springer.com/esm/art%3A10.1186%2Fs12859-019-2928-9/MediaObjects/12859_2019_2928_MOESM8_ESM.pdf
 
-**** DONE Comparaison
+***** DONE Comparaison
 CLOSED: [2023-03-04 Sat 11:14]
 HGREF=/Work/Groups/bisonex/data-alexis-reference/genome/GRCh38_latest_genomic.fna ./result/bin/hap.py /Work/Groups/bisonex/NA12878/HG001_GRCh38_1_22_v4.2.1
 _benchmark_renamed.vcf.gz script/files/vcf/NA12878_NIST7035_vep_annot.vcf -f /Work/Groups/bison
@@ -3075,19 +3134,19 @@ export HGREF=/Work/Groups/bisonex/data-alexis-reference/genome/GRCh38_latest_gen
 dir=/Work/Groups/bisonex/data/NA12878/GRCh38
 hap.py ${dir}/HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz script/files/vcf/NA12878_NIST7035.vcf -f ${dir}/HG001_GRCh38_1_22_v4.2.1_benchmark.bed -o test
 #+end_src
-***** KILL beaucoup trop de faux négatifs
+****** KILL beaucoup trop de faux négatifs
 CLOSED: [2023-02-17 Fri 19:37]
-****** DONE Test 1 : vep annot : beaucoup trop de faux négatif
+******* DONE Test 1 : vep annot : beaucoup trop de faux négatif
 CLOSED: [2023-02-06 lun. 13:40]
  Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.Precision  METRIC.Frac_NA  METRIC.F1_Score  TRUTH.TOTAL.TiTv_ratio  QUERY.TOTAL.TiTv_ratio  TRUTH.TOTAL.het_hom_ratio  QUERY.TOTAL.het_hom_ratio
 INDEL    ALL       276768       274    276494         1500       257        968     26     15       0.000990          0.516917        0.645333         0.001976                     NaN                     NaN                   1.483361                   6.129187
 INDEL   PASS       276768       274    276494         1500       257        968     26     15       0.000990          0.516917        0.645333         0.001976                     NaN                     NaN                   1.483361                   6.129187
   SNP    ALL      1937706      1193   1936513         3338       106       2037     11      2       0.000616          0.918524        0.610246         0.001231                  2.0785                1.861183                   1.539064                   2.703663
   SNP   PASS      1937706      1193   1936513         3338       106       2037     11      2       0.000616          0.918524        0.610246         0.001231                  2.0785                1.861183                   1.539064                   2.703663
-****** KILL Test 3 : indexer vcf de reference
+******* KILL Test 3 : indexer vcf de reference
 CLOSED: [2023-02-06 lun. 17:19]
 Même résultat avec vcfeval, qui a besoin de la version indexée
-****** DONE Test 3 sans filtre vep : idem
+******* DONE Test 3 sans filtre vep : idem
 CLOSED: [2023-02-06 lun. 17:19]
 Benchmarking Summary:
  Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.Precision  METRIC.Frac_NA  METRIC.F1_Score  TRUTH.TOTAL.TiTv_ratio  QUERY.TOTAL.TiTv_ratio  TRUTH.TOTAL.het_hom_ratio  QUERY.TOTAL.het_hom_ratio
@@ -3095,7 +3154,7 @@ INDEL    ALL       276768     10535    266233        52169     10969      30616 
 INDEL   PASS       276768     10535    266233        52169     10969      30616   3552   2122       0.038064          0.491069        0.586862         0.070652                     NaN                     NaN                   1.483361                   0.509510
   SNP    ALL      1937706    105753   1831953       357652     74634     177259  35111    797       0.054576          0.586270        0.495619         0.099857                  2.0785                 1.42954                   1.539064                   0.324923
   SNP   PASS      1937706    105753   1831953       357652     74634     177259  35111    797       0.054576          0.586270        0.495619         0.099857                  2.0785                 1.42954                   1.539064                   0.324923
-****** DONE Test 4 avec vcfeval sur vep_annot : idem
+******* DONE Test 4 avec vcfeval sur vep_annot : idem
 CLOSED: [2023-02-06 lun. 17:18]
 #+begin_src
 #!/bin/bash
@@ -3118,28 +3177,29 @@ Exemple du log
 2023-02-06 13:50:14 Reference NC_000001.11 calls contains 426 variants.
 2023-02-06 13:50:15 Reference NC_000002.12 baseline contains 325877 variants.
 2023-02-06 13:50:15 Reference NC_000002.12 calls contains 320 variants.
-****** DONE Regarder quelques variants à la main
+******* DONE Regarder quelques variants à la main
 CLOSED: [2023-02-07 Tue 22:01]
 Ex:
 Il manque NC_000001.11    783006  .       A       G       50      PASS
 Il y a A -> G et C -> A sur cette position
-**** DONE Restreindre genome de référence
+***** DONE Restreindre genome de référence
 CLOSED: [2023-03-04 Sat 11:15]
-***** Discussion Alexis
+****** Discussion Alexis
 le pipeline prend en compte 5', 3', variant canoniques d'épissage + prédit spip
 Le plus simple pour le moment est de restreindre seulement aux exons
 GENCODE (version europénne) vs RefSeq: [[https://bmcgenomics.biomedcentral.com/articles/10.1186/1471-2164-16-S8-S2][article 2015]] en faveur de GENCODE mais Alexis conseille Refseq
 
-***** DONE -f, -R ou -T ?
+****** DONE -f, -R ou -T ?
 CLOSED: [2023-02-25 Sat 19:47]
 Selon la doc : -f avec le bed fourni et -T pour filtrer sor les exons
-****** rtg tools
+******* rtg tools
 Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
 ----------------------------------------------------------------------------------------------------
     3.000               1015            910        206      32531     0.8154       0.0303     0.0583
      None               1015            910        206      32531     0.8154       0.0303     0.0583
-**** TODO Exons seuls
-***** DONE BestRefSeq 
+***** KILL Exons seuls
+CLOSED: [2023-04-02 Sun 17:11]
+****** DONE BestRefSeq 
 CLOSED: [2023-02-19 Sun 12:05]
 Dans refseq,[[https://www.ncbi.nlm.nih.gov/genome/annotation_euk/process/][2 types de modèles pour le gène]]
 - basé sur refseq (NM_, NP_), curée
@@ -3156,7 +3216,7 @@ On se restrein aux exons codant (NM_)
 awk '/BestRefSeq\texon/ && /transcript_id=NM/ {print $1"\t"$4"\t"$5;}' GRCh38_latest_genomic.gff > exons.csv
 #+end_src
 Puis intersection
-****** DONE Tests après correction bug dans noms de chromosome : precision ~ ok, recall très mauvais -> trop de FN ?
+******* DONE Tests après correction bug dans noms de chromosome : precision ~ ok, recall très mauvais -> trop de FN ?
 CLOSED: [2023-02-19 Sun 12:05]
  Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.Precision
 INDEL    ALL         7230       321      6909         1500       290        888     27     18       0.044398          0.526144
@@ -3169,7 +3229,7 @@ INDEL   PASS         7230       321      6909         1500       290        888 
        0.592000         0.081887                     NaN                     NaN                    1.54733                   6.129187
        0.474236         0.054370                2.433271                1.861183                    1.57523                   2.703663
        0.474236         0.054370                2.433271                1.861183                    1.57523                   2.703663
-****** DONE Vérifier exons: on a l'union des exons de tous les transcripts...
+******* DONE Vérifier exons: on a l'union des exons de tous les transcripts...
 CLOSED: [2023-02-19 Sun 12:05]
 Il faudrait un .bed d'illumina
 On teste Twist for Illumina Exome 2.0 Plus BED File (hg19) sur https://support.illumina.com/downloads/nextera-flex-for-enrichment-BED-files.html
@@ -3181,11 +3241,11 @@ sed -i.bak -f pattern.sed illumina_exons.bed
 bedtools intersect -a HG001_GRCh38_1_22_v4.2.1_benchmark.bed -b illumina_exons.bed > HG001_GRCh38_1_22_v4.2.1_benchmark_illumina_exons.bed
 #+end_src
 Intersection
-***** KILL Bed illumina
+****** KILL Bed illumina
 CLOSED: [2023-02-24 Fri 23:44]
-****** KILL Sans filtre vep: Inversion truth et query... on recommence
+******* KILL Sans filtre vep: Inversion truth et query... on recommence
 CLOSED: [2023-02-19 Sun 13:15]
-****** KILL Sans filtre vep: mieux mais pas exceptionnel
+******* KILL Sans filtre vep: mieux mais pas exceptionnel
 CLOSED: [2023-02-24 Fri 23:44]
 cd work/00/2c72e62400956c96fb101ac7af405e/
 $ cat .command.out
@@ -3202,12 +3262,12 @@ INDEL   PASS          922       490       432          942       439          0 
             0.0         0.532709                     NaN                     NaN                   1.628743                   2.799180
             0.0         0.814719                2.899604                2.881526                   1.598479                   1.564378
             0.0         0.814719                2.899604                2.881526                   1.598479                   1.564378
-****** KILL Comprendre pour les FN explosent avec vep annot
+******* KILL Comprendre pour les FN explosent avec vep annot
 CLOSED: [2023-02-24 Fri 23:44]
 NC_000001.11	924024	.	C	G
 non couverte dans bam -> 1er exons de SAMD11 mais non couverte
 Il est dans NM_001385641.1 mais pas dans NM_152486.4
-***** KILL Obtenir les zones couvertes depuis le bam directement
+****** KILL Obtenir les zones couvertes depuis le bam directement
 CLOSED: [2023-02-24 Fri 23:44]
 #+begin_src  sh
 samtools sort NA12878_chr1.bam -o NA12878_chr1_sorted.bam
@@ -3231,7 +3291,7 @@ bedtools merge -i tomerge.bed > exons_from_bam.bed
 
 Problème : on manque parfois le bord des exons...
 
-***** KILL Vérifier un bam de référence de NA12878
+****** KILL Vérifier un bam de référence de NA12878
 CLOSED: [2023-02-24 Fri 23:44]
 Notamment pour la définitions des exons, on a des reads qui ne semblent pas alignés sur les bons exons selon IGV
 On donne directemet à IGV le bam d'illuma WES ( https://github.com/genome-in-a-bottle/giab_data_indexes )
@@ -3248,7 +3308,7 @@ samtools merge NA12878-NIST7035-HiSeq_Exome_Garan_GRCh37.bam project
 AGGCGA_2_NA12878.bwa.markDuplicates.bam
 samtools index NA12878-NIST7035-HiSeq_Exome_Garan_GRCh37.bam
 #+end_src
-****** Étude
+******* Étude
 NC_000001.11:924024 :
 - bed d’illumina : pas correct
 - bed refseq : meux
@@ -3262,9 +3322,9 @@ NC_000001.11:966227: le bed ne couvre pas le bon exon !
 https://genome-euro.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr1%3A965863%2D966591&hgsid=295298291_vhDbIv5YIckCKLpGB7UUaZi2cAkr
 NC_000001.11:966272
 
-***** KILL Filtrer variants introniques de référence avec vep
+****** KILL Filtrer variants introniques de référence avec vep
 CLOSED: [2023-02-24 Fri 23:44]
-****** KILL variant calling seulf + seulement -f: nombreux FP
+******* KILL variant calling seulf + seulement -f: nombreux FP
 CLOSED: [2023-02-24 Fri 23:44]
 /Work/Users/apraga/bisonex/work/68/f1cf72a5a4078fdf743fb3844b369a
  Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.Precision
@@ -3279,7 +3339,7 @@ INDEL   PASS          519       284       235        52169     37789      14094 
        0.097592         0.101108                2.971834                1.429533                   1.579776                   0.324923
        0.097592         0.101108                2.971834                1.429533                   1.579776                   0.324923
 
-***** DONE Bed donnés par GIAB (en hg19) : résultats corrects
+****** DONE Bed donnés par GIAB (en hg19) : résultats corrects :resultats:
 CLOSED: [2023-03-09 Thu 22:42] SCHEDULED: <2023-03-02 Thu>
 Téléchargé à la main et converti via UCSCS. À automatiser, voir : *hg38
 Sans oublier de renommer les chromosomes !
@@ -3300,7 +3360,7 @@ Sans oublier de renommer les chromosomes !
  |       0.281924 |        0.701629 |                        |                        |        1.6174985978687606 |        3.0674091441969518 |
  |       0.090605 |        0.909353 |      2.529551552318896 |     2.4019675131548843 |        1.6206857273037931 |        1.6274012964054214 |
 
-***** DONE Re-tester avec exons Refseq et option -T: résultats un peu moins bons
+****** DONE Re-tester avec exons Refseq et option -T: résultats un peu moins bons
 CLOSED: [2023-03-09 Thu 22:42] SCHEDULED: <2023-03-08 Wed>
 On utilise directement les coordonées données par refseq
 
@@ -3311,10 +3371,13 @@ INDEL    ALL         7226      3417      3809         6978      1599       1918 
  METRIC.Frac_NA  METRIC.F1_Score  TRUTH.TOTAL.TiTv_ratio  QUERY.TOTAL.TiTv_ratio  TRUTH.TOTAL.het_hom_ratio  QUERY.TOTAL.het_hom_ratio
        0.274864         0.559171                     NaN                     NaN                   1.547733                   2.756151
        0.086017         0.765767                2.433271                2.350281                   1.575230                   1.492346
-***** TODO Vérifier que la zone de capture a vraiment besoin d'un liftover...
-**** TODO D'où vient la différence ?
-SCHEDULED: <2023-03-09 Thu>
-***** DONE Statistiques
+****** DONE Vérifier que la zone de capture a vraiment besoin d'un liftover...
+CLOSED: [2023-04-02 Sun 14:13]
+D'après la documentation, oui
+https://support.illumina.com/sequencing/sequencing_kits/nextera-rapid-capture-exome-kit/downloads.html
+***** DONE D'où vient la différence ?
+CLOSED: [2023-04-02 Sun 17:11] SCHEDULED: <2023-03-09 Thu>
+****** DONE Statistiques
 CLOSED: [2023-03-15 mer. 13:41] SCHEDULED: <2023-03-04 Sat>
 On confirnme le nombre de SNP 6665
 - 304 ont un problème d’haploide/allèle différente
@@ -3325,7 +3388,7 @@ On confirnme le nombre de SNP 6665
 [1] "Genotype mismatch 28"
 [1] "haplotype mismatch 304"
 [1] "Missing  6333"
-***** DONE Majorité des FN pour SPN sont peu couverts
+****** DONE Majorité des FN pour SPN sont peu couverts
 CLOSED: [2023-03-16 Thu 16:54]
 Chromosome 1 : majorité des FN ne sont pas vus...
 cf figure
@@ -3342,11 +3405,11 @@ cf figure
  4711993
  4712657
 
-***** DONE Alignement
+****** DONE Alignement
 CLOSED: [2023-03-15 mer. 13:41]
-****** DONE Impact de la version mineure du genome: non
+******* DONE Impact de la version mineure du genome: non
 CLOSED: [2023-03-09 Thu 23:13]
-******* DONE GHC38 + version alexis + exons refseq
+******** DONE GHC38 + version alexis + exons refseq
 CLOSED: [2023-03-22 Wed 00:02]
  Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.Precision
 INDEL    ALL         7226      3417      3809         6979      1599       1919    228    353       0.472876          0.683992
@@ -3356,7 +3419,7 @@ INDEL    ALL         7226      3417      3809         6979      1599       1919 
        0.274968         0.559171                     NaN                     NaN                   1.547733                   2.756698
        0.086034         0.765792                2.433271                2.350254                   1.575230                   1.492375
 
-******* DONE GHC38.p13 + notre version alexis + exons refseq
+******** DONE GHC38.p13 + notre version alexis + exons refseq
 CLOSED: [2023-03-22 Wed 00:02]
  Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.Precision
 INDEL    ALL         7226      3417      3809         6978      1599       1918    228    353       0.472876          0.683992
@@ -3366,11 +3429,11 @@ INDEL    ALL         7226      3417      3809         6978      1599       1918 
        0.274864         0.559171                     NaN                     NaN                   1.547733                   2.756151
        0.086017         0.765767                2.433271                2.350281                   1.575230                   1.492346
 
-***** DONE Vérifier si coordonnées génomiques (vcf)
+****** DONE Vérifier si coordonnées génomiques (vcf)
 CLOSED: [2023-03-09 Thu 23:05]
-***** DONE Variant calling
+****** DONE Variant calling
 CLOSED: [2023-03-22 Wed 23:11]
-****** DONE Désactiver dbSNP : idem
+******* DONE Désactiver dbSNP : idem
 CLOSED: [2023-03-22 Wed 15:00]
 Après haplotycaller
 $ sha256sum work/94/d4ae5999ca59a25469b1ed221b7b1b/NA12878_NIST.vcf.gz
@@ -3389,15 +3452,15 @@ INDEL    ALL         4871      3461      1410         7048      1554       1987 
        0.281924         0.701629                     NaN                     NaN                   1.617499                   3.067409
        0.090630         0.909327                2.529552                2.402151                   1.620686                   1.627342
 
-***** DONE Définition des exons
+****** DONE Définition des exons
 CLOSED: [2023-03-22 Wed 23:16]
-****** KILL Vérifier qu'il ne manque pas des exons (avec bam ?)
+******* KILL Vérifier qu'il ne manque pas des exons (avec bam ?)
 CLOSED: [2023-03-16 Thu 16:54] SCHEDULED: <2023-03-05 Sun>
-****** KILL Vérifier la couverture des variants introniques
+******* KILL Vérifier la couverture des variants introniques
 CLOSED: [2023-03-22 Wed 15:01]
 NC_000001.11  23344310  : intronique mais la région dans le bed couvre en partie l'exon
 Profondeur sur le variant : 14 reads sur l'alt
-****** Notes: UTR = exon - CDS
+******* Notes: UTR = exon - CDS
 intron dans le gene = mRNA - exon
 On le vérifie avec
   25 │ NC_000001.11  BestRefSeq  exon      65520   65573
@@ -3407,7 +3470,7 @@ On le vérifie avec
   mRNA :
   https://genome-euro.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr1%3A65419%2D71585&hgsid=295007972_J1rAQiur4dC2KLadnaOCw27WUihG
 
-****** DONE Statistiques : reads par type (introns, UTR, exons)
+******* DONE Statistiques : reads par type (introns, UTR, exons)
 CLOSED: [2023-03-22 Wed 23:16]
 - la répartition par chromosome est relativement homogène, sauf sur le 6 ()
 - la majorité est en 5' et 3'UTR (selon Best refseq)
@@ -3517,7 +3580,7 @@ Discordance nombre de reads avec igv mais cohérent avec samtools : vu avec Alex
 $ samtools view   NA12878_NIST7035_recalibrated_hg38.bam NC_000001.11:1734812-1734812  -F "0x200" | wc -l
 164
 
-***** KILL Comprendre pourquoi le chromosome 6 a plus de FN
+****** KILL Comprendre pourquoi le chromosome 6 a plus de FN
 CLOSED: [2023-03-29 Wed 22:39]
 Vérifier le graphe fait en julia
 $ grep "FN.*SNP" test-allchr.vcf | grep NC_000006 -c
@@ -3543,12 +3606,12 @@ d2 = @subset d :POS .>= 29600000 :POS .<= 32000000 :type .== "SNP" :CHROM .=="NC
 : julia> nrow(@subset d2 :BK .!= "am")
 : 612
 
-***** KILL comparer avec Kumaran 2021
+****** KILL comparer avec Kumaran 2021
 CLOSED: [2023-03-22 Wed 23:16]
 Bed probablement différent, on a presque un facteur 2 sur le nombre de variant (TP..)
-***** KILL Comparer avec stats de NA12878 dans example/happy sur chr21 (exons fournis)
+****** KILL Comparer avec stats de NA12878 dans example/happy sur chr21 (exons fournis)
 CLOSED: [2023-03-04 Sat 11:01]
-****** DONE DP_over_30_not_SNP_consensual_sequence.vcf: horrible
+******* DONE DP_over_30_not_SNP_consensual_sequence.vcf: horrible
 CLOSED: [2023-02-25 Sat 19:47]
 déplorable
  Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.Precision  METRIC.Frac_NA  METRIC.F1_Score  TRUTH.TOTAL.TiTv_ratio  QUERY.TOTAL.TiTv_ratio  TRUTH.TOTAL.het_hom_ratio  QUERY.TOTAL.het_hom_ratio
@@ -3556,7 +3619,7 @@ INDEL    ALL          519        16       503         1579      1032        531 
 INDEL   PASS          519        16       503         1579      1032        531      2      2       0.030829          0.015267        0.336289         0.020421                     NaN                     NaN                   1.775956                   4.768382
   SNP    ALL        22131      1191     20940         4346      2342        813      4      1       0.053816          0.337107        0.187069         0.092815                2.971834                1.967235                   1.579776                   1.492828
   SNP   PASS        22131      1191     20940         4346      2342        813      4      1       0.053816          0.337107        0.187069         0.092815                2.971834                1.967235                   1.579776                   1.492828
-****** DONE DP _over_30 : mieux
+******* DONE DP _over_30 : mieux
 CLOSED: [2023-03-04 Sat 11:01]
 /Work/Users/apraga/bisonex/work/69/cc1391f5a0fbf4db958a370ec17a19
  Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.Precision
@@ -3565,7 +3628,7 @@ INDEL   PASS           76        20        56           36         6         10 
   SNP    ALL          582       312       270          370         9         49      0      0       0.536082          0.971963
   SNP   PASS          582       312       270          370         9         49      0      0       0.536082          0.971963
 
-******* DONE NC_000021.9:45515163 TA -> T : référence non normalisée ??
+******** DONE NC_000021.9:45515163 TA -> T : référence non normalisée ??
 CLOSED: [2023-03-04 Sat 11:01]
 NC_000021.9     45515163        .       TA      T       50      PASS    BS=45515163;Regions=CONF,TS_contained   GT:BD:BK:BI:BVT:BLT:QQ  0/1:FN:lm:d1_5:INDEL:het:.      ./.:.:.:.:NOCALL:nocall:0
 NC_000021.9     45515163        .       TAA     T       694.02  PASS    BS=45515163;Regions=CONF,TS_contained   GT:BD:BK:BI:BVT:BLT:QQ  ./.:.:.:.:NOCALL:nocall:.       0/1:FP:lm:d1_5:INDEL:het:694.02
@@ -3620,10 +3683,10 @@ TAA T
 TAA TA
 
 Après réflexion, c'est la référence qui n'est pas normalisée ! (left-trimmed)
-******* DONE NC_000021.9     14108836  T -> C
+******** DONE NC_000021.9     14108836  T -> C
 CLOSED: [2023-03-04 Sat 11:01]
 Dans le bam mais filtré par DP
-****** DONE variant calling seul : meilleur score pour l'instant (77% recall, 95% precision)
+******* DONE variant calling seul : meilleur score pour l'instant (77% recall, 95% precision)
 CLOSED: [2023-03-04 Sat 11:01]
 tests/chr21-alexis
  Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.Precision
@@ -3634,7 +3697,7 @@ INDEL    ALL           76        43        33           82        18         20 
        0.243902         0.629617                     NaN                     NaN                   1.181818                   1.612903
        0.107547         0.849289                3.098592                2.925926                   1.530435                   1.774869
 
-******* NC_000021.9:14144627 : FN, dans le bam mais pas dans le vcf (2 reads/9)
+******** NC_000021.9:14144627 : FN, dans le bam mais pas dans le vcf (2 reads/9)
  On récupére tout le vcf: pas dedans
  Dans le bam : 9/2
  Idem pour le bam dans notre pipeline
@@ -3647,7 +3710,7 @@ cd /Work/Users/apraga/bisonex/out/NA12878_NIST7035/preprocessing/applybqsr
 samtools view -b NA12878_NIST7035.bam NC_000021.9 -o NA12878_NIST7035_chr21.bam
 samtools index NA12878_NIST7035_chr21.bam
 #+end_src
-******** --debug
+********* --debug
 #+begin_src
 gatk --java-options "-Xmx3g" HaplotypeCaller --input NA12878_NIST7035_chr21.bam \
     --output debug_chr1.vcf.gz \
@@ -3669,9 +3732,9 @@ Les allèles sont bien retrouvées
 14:41:05.530 INFO  HaplotypeCallerGenotypingEngine - Genotyping event at 14144627 with alleles = [C*, T]
 #+end_quote
 NB: même en filtranrt sur le chromosome 21 avec julia, haplotypecaller parcourt tous les chromosomes
-******** DONE --linked-de-bruijn-graph : idem
+********* DONE --linked-de-bruijn-graph : idem
 CLOSED: [2023-02-26 Sun 17:26]
-******** DONE examine sortie --bamout : non présent
+********* DONE examine sortie --bamout : non présent
 CLOSED: [2023-02-26 Sun 19:53]
 
 #+begin_src
@@ -3690,38 +3753,31 @@ Pas de reads
  #+begin_quote
 If you see nothing overlapping your region, then it might not have been flagged as active, or could have failed to assemble.
  #+end_quote
-******** 14582339: FN mais pas de reads...
-******** 14583327 idem
-******** 17512551 idem
-******** 17567111: difference d'haplotype
-******** 17567621 pas de reads
-***** TODO Comparer avec sortie du variant calling vcf donné par GIAB
-****** STRT vcfeval
+********* 14582339: FN mais pas de reads...
+********* 14583327 idem
+********* 17512551 idem
+********* 17567111: difference d'haplotype
+********* 17567621 pas de reads
+****** DONE Comparer avec sortie du variant calling vcf donné par GIAB
+CLOSED: [2023-04-02 Sun 17:11]
+******* DONE vcfeval
+CLOSED: [2023-04-01 Sat 11:59] SCHEDULED: <2023-04-01 Sat>
 #+begin_src sh
-wget https://ftp-trace.ncbi.nih.gov/ReferenceSamples/giab/data/NA12878/Garvan_NA12878_HG001_HiSeq_Exome/nexterarapidcapture_expandedexome_targetedregions.bed.gz
+ nextflow run workflows/test.nf -profile standard,helios -resume --test.vcfeval --test.giabVCF --outdir=test-giabVCF
+cat test-giabVCF/vcfeval/output/summary.txt
 #+end_src
-On renomme les chromosomes
-#+begin_src
-sed -i 's/^chrM/MT/' project.NIST.hc.snps.indels.vcf
-sed -i 's/^chr//' project.NIST.hc.snps.indels.vcf
-bcftools annotate --rename-chrs ../../genome/GRCh38.p13/chromosome_mapping.txt  project.NIST.hc.snps.indels.vcf -o project.NIST.hc.snps.indels.vcf.gz
-#+end_src
-On compresse et index
-#+begin_src
-bgzip HG001_GRCh38_1_22_v4.2.1_benchmark.vcf
-tabix HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz
-tabix project.NIST.hc.snps.indels.vcf.gz
-#+end_src
-Conversion chromosome pour le bed définissant les exons :
-#+begin_src
-sed 's:^:s/chr:;s:chrMT:chrM:;s:\s:\t\/:;s:$:\t/:' ../../genome/GRCh38.p13/chromosome_mapping.txt  > pattern.sed
-sed -f pattern.sed nexterarapidcapture_expandedexome_targetedregions.bed  -i.bak
-#+end_src
-Attention aux samples qui sont différents :
-#+begin_src
- rtg vcfeval -b HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz -c project.NIST.hc.snps.indels.vcf.gz --bed-regions nexterarapidcapture_expandedexome_targetedregions.bed -e HG001_GRCh38_1_22_v4.2.1_benchmark.bed.gz -o lol -t ../../genome/GRCh38.p13/genomeRef.sdf/ --sample HG001,NIST7035
-#+end_src
-****** TODO happy
+
+Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
+----------------------------------------------------------------------------------------------------
+    1.000              44818          44818       2892       6087     0.9394       0.8804     0.9089
+     None              44819          44819       2896       6086     0.9393       0.8804     0.9089
+
+Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
+----------------------------------------------------------------------------------------------------
+    1.000              44818          44818       2892       6087     0.9394       0.8804     0.9089
+     None              44819          44819       2896       6086     0.9393       0.8804     0.9089
+******* DONE happy
+CLOSED: [2023-04-01 Sat 11:56]
  Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.PrecisioN
 INDEL   PASS         4871      3678      1193         7036      1299       2011    208    217       0.755081          0.741493
   SNP   PASS        46032     41138      4894        47694      1622       4930    362     31       0.893683          0.962071
@@ -3730,8 +3786,17 @@ INDEL   PASS         4871      3678      1193         7036      1299       2011 
  METRIC.Frac_NA  METRIC.F1_Score  TRUTH.TOTAL.TiTv_ratio  QUERY.TOTAL.TiTv_ratio  TRUTH.TOTAL.het_hom_ratio  QUERY.TOTAL.het_hom_ratio
        0.285816         0.748225                     NaN                     NaN                   1.617499                   2.524051
        0.103367         0.926617                2.529552                2.412446                   1.620686                   1.688868
-***** TODO Statistiques avec vcfeval
-**** TODO Résumer résultats pour Paul
+****** DONE Statistiques avec vcfeval
+CLOSED: [2023-04-02 Sun 17:10] SCHEDULED: <2023-04-01 Sat>
+**** TODO Résumer résultats pour Paul + article :resultats:
+SCHEDULED: <2023-04-02 Sun>
+***** TODO HG001 :
+SCHEDULED: <2023-04-02 Sun>
+- notre version avec hap.py + vcfeval
+- version GIAB
+- référence ??
+***** TODO HG002
+SCHEDULED: <2023-04-02 Sun>
 *** TODO Platinum genome
 https://emea.illumina.com/platinumgenomes.html
 *** TODO Séquencer NA12878

@@ -2144,11 +2144,25 @@ https://github.com/NixOS/nixpkgs/pull/191548
 Review <2022-10-10 Mon> , corrigé dans la journée
 *** TODO Update 4.3.0.0
 ** TODO Nextflow
-*** WAIT version script seule
+*** KILL version script seule
+CLOSED: [2023-04-01 Sat 18:29]
 Fix pour SGE et nextflow
 https://github.com/NixOS/nixpkgs/issues/192396
 *** KILL Version avec gradle
 CLOSED: [2022-10-09 Sun 22:51]
+*** WAIT Bug report Version 22.10.6
+https://github.com/NixOS/nixpkgs/issues/192396
+Erreur :
+ERROR: Cannot download nextflow required file -- make sure you can connect to the internet
+
+Alternatively you can try to download this file:
+    https://www.nextflow.io/releases/v22.10.6/nextflow-22.10.6-all.jar
+
+and save it as:
+    .//nix/store/md2b1ah4d7ivj82k8xxap30dmdci00pa-nextflow-22.10.6/bin/.nextflow-wrapped
+
+Dans la mise à jour, il y a la création d'un environnement virtuel qui casse l'exécution de nextflow (besoin de télécharger)
+Fix = désactiver
 ** TODO Multiqc
 ** DONE BioPerl
 SCHEDULED: <2022-08-10 Wed>
@@ -2202,9 +2216,10 @@ SCHEDULED: <2023-05-11 Thu>
 :PROPERTIES:
 :CATEGORY: moto
 :END:
-** TODO Changer kit chaine
-SCHEDULED: <2023-04-01 Sat>
+** DONE Changer kit chaine
+CLOSED: [2023-04-01 Sat 17:24] SCHEDULED: <2023-04-01 Sat>
 RV pris yamah
+41000km
 
 * Maison
 * Gentoo
