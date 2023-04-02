@@ -514,7 +514,7 @@ nakerebanarimasen
 NB: -nasai = injonction (bossy !)
 * <2023-03-25 Sat>
 ** Vocabulaire
-雪は山no上に行かないとないですか = il faut aller en haut de la montagne pour avoir de la neighe (double négatiionidiomatic)
+雪は山の上に行かないとないですか = il faut aller en haut de la montagne pour avoir de la neighe (double négatiionidiomatic)
 
 夜勤j（やきん） = garde (tochaku = plutôt pour les gens de la sécurité...)
 能力（のうりょく） = capacité à faire qqc
@@ -546,4 +546,22 @@ NB: -nasai = injonction (bossy !)
 
  'can we use Feeling+て..., not only 〜て feeling...?' Yes, for example: 
 ロキくんがいなくなってさびしくて、ごはんが食べられません。仕事のことがしんぱいで、ねむれません。
-These work with feeling+て (giving a reason) as it's followed by potential verbs. 
+These work with feeling+て (giving a reason) as it's followed by potential verbs.
+* <2023-04-02 Sun> Listening comprehension 「日本のおもしろい経験」
+** Vocabulaire
+経験(けいけん) expérience
+特に(とくに) particulièrement
+珍しい(めずらしい) rare
+不味い(まずい) ayant mauvais goût (nourriture)
+何でも : totu
+ニヤニヤする : sourire, grimacer
+不安な(ふあんな) : se faire du souci ("non" + "sécurité")
+体にいい(からだ) : être bon pour la santé
+一生に一度(いっしょうにいちど) : une foi dans sa vie
+もう~ない : après tout
+焼き(やき) : grillé (ex: yakiniku)
+興味(きょうみ) : intérêt
+野菜(やさい) : légume
+ムール貝(がい) : moules
+城(しろ) :  château
+蜘蛛(くも ) : araignée
