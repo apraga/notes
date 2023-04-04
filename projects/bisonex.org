@@ -278,8 +278,26 @@ https://genome.ucsc.edu/FAQ/FAQdownloads.html#downloadAlt
 ** Pipelines prêt-à-l’emploi nextflow
 Problème : nécessite singularity ou docker (ou conda)
 Potentiellement utilisable avec nix...
+** Validation : Quelles données de référence ?
+Discussion avec Alexis
+- Platinum genomes = génome seul
+*** [[https://github.com/genome-in-a-bottle/giab_data_indexes][Genome in a bottle]]
+  - NA12878 :
+    - Illumina HiSeq Exome : fastq + capture
+    - Illumina TruSeq Exome : bam, pas de capture
+      ici ww
+  - HG002,3,4
+    - Illumina Whole Exome  : bam. le kit de capture est "Agilent SureSelect Human All Exon V5 kit" selon [[https://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/analysis/OsloUniversityHospital_Exome_GATK_jointVC_11242015/README.txt][README]]. On peut les régions [[https://kb.10xgenomics.com/hc/en-us/articles/115004150923-Where-can-I-find-the-Agilent-Target-BED-files-][selon ce site]]
+      Mais disponible directement
+    https://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/analysis/OsloUniversityHospital_Exome_GATK_jointVC_11242015/wex_Agilent_SureSelect_v05_b37.baits.slop50.merged.list
+    testé sur chr311780-312086 : ok
+
+Autres technologies non adaptées au pipeline (vu avec Alexis)
+*** [[https://www.illumina.com/platinumgenomes.html][Platinum genome
+]] Que du génome « sequenced to 50x depth on a HiSeq 2000 system”
+Genome possible
 ** Zone de capture
-GIAB fourni le .bed. INfo : https://support.illumina.com/sequencing/sequencing_kits/nextera-rapid-capture-exome-kit/downloads.html
+GIAB fourni le .bed pour l'exome . INfo : https://support.illumina.com/sequencing/sequencing_kits/nextera-rapid-capture-exome-kit/downloads.html
 * Données :data:
 ** TODO Remplacer bam par fastq sur mesocentre
 Commande
@@ -1153,6 +1171,14 @@ Sans cela, on a l'avertissement
 #+end_quote
 libgomp.so est fourni par gcc donc il faut charger le module
  module load gcc@11.3.0/gcc-12.1.0
+** KILL Utiliser subworkflow
+CLOSED: [2023-04-02 Sun 18:08]
+Notre version permet d'être plus souple
+*** KILL Alignement
+CLOSED: [2023-04-02 Sun 18:08] SCHEDULED: <2023-04-05 Wed>
+*** KILL Vep
+CLOSED: [2023-04-02 Sun 18:08] SCHEDULED: <2023-04-05 Wed>
+vcf_annotate_ensemblvep
 ** TODO Annotation avec nextflow
 *** TODO VEP
 ***** KILL Utiliser --gene-phenotype ?
@@ -2983,7 +3009,7 @@ https://github.com/ga4gh/benchmarking-tools
 Prérequis :
 - [[*hap.py][hap.py]]
 - [[*NA12878][NA12878]]
-*** TODO GIAB :giab:
+*** TODO GIAB : exome :giab:
 **** Notes
 https://github.com/genome-in-a-bottle/giab_FAQ
 **** TODO télécharger données avec Nextflow
@@ -3026,19 +3052,9 @@ CLOSED: [2023-02-25 Sat 19:46]
 https://ftp-trace.ncbi.nih.gov/ReferenceSamples/giab/data/NA12878/Garvan_NA12878_HG001_HiSeq_Exome/nexterarapidcapture_expandedexome_targetedregions.bed.gz
 ******* DONE Bed, vcf
 CLOSED: [2023-02-24 Fri 23:45]
-****** TODO Ashkenazy trio HG002
+****** TODO Ashkenazy trio HG002, HG003, HGQ004
 SCHEDULED: <2023-04-01 Sat>
-****** TODO Ashkenazy trio HG003
-SCHEDULED: <2023-04-01 Sat>
-****** TODO Ashkenazy trio HG004
-SCHEDULED: <2023-04-01 Sat>
-****** TODO Chinese trio HG005
-SCHEDULED: <2023-04-01 Sat>
-****** TODO Chinese trio HG006
-SCHEDULED: <2023-04-01 Sat>
-****** TODO Chinese trio HG007
-SCHEDULED: <2023-04-01 Sat>
-*
+****** TODO Chinese trio HG005, 6, 7
 ***** TODO Fastq
 ****** DONE NA12878 (HG001)
 CLOSED: [2023-02-25 Sat 19:46]
@@ -3061,19 +3077,19 @@ CLOSED: [2023-02-25 Sat 19:46]
 https://ftp-trace.ncbi.nih.gov/ReferenceSamples/giab/data/NA12878/Garvan_NA12878_HG001_HiSeq_Exome/nexterarapidcapture_expandedexome_targetedregions.bed.gz
 ******* DONE Bed, vcf
 CLOSED: [2023-02-24 Fri 23:45]
-****** TODO Ashkenazy trio HG002
+****** TODO Ashkenazy trio HG002, HG003, HG004
 SCHEDULED: <2023-04-01 Sat>
-****** TODO Ashkenazy trio HG003
-SCHEDULED: <2023-04-01 Sat>
-****** TODO Ashkenazy trio HG004
-SCHEDULED: <2023-04-01 Sat>
-****** TODO Chinese trio HG005
-SCHEDULED: <2023-04-01 Sat>
-****** TODO Chinese trio HG006
-SCHEDULED: <2023-04-01 Sat>
-****** TODO Chinese trio HG007
-SCHEDULED: <2023-04-01 Sat>
+******* TODO Capture
+https://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/analysis/OsloUniversityHospital_Exome_GATK_jointVC_11242015/wex_Agilent_SureSelect_v05_b37.baits.slop50.merged.list
+******* TODO Bam à partir des fastq
+Bam + index + checksum
+https://raw.githubusercontent.com/genome-in-a-bottle/giab_data_indexes/master/AshkenazimTrio/alignment.index.AJtrio_OsloUniversityHospital_IlluminaExome_bwamem_GRCh37_11252015
+
 *
+****** TODO Chinese trio
+Whole exome pour HG005 seulement
+******* TODO HG005
+https://raw.githubusercontent.com/genome-in-a-bottle/giab_data_indexes/master/ChineseTrio/alignment.index.Chinesetrio_HG005_OsloUniversityHospital_IlluminaExome_bwamem_GRCh37_11252015
 
 **** TODO NA12878 / HG001 :na12878:
 ***** DONE Discussion alexis : Mail
@@ -3792,10 +3808,60 @@ CLOSED: [2023-04-02 Sun 17:10] SCHEDULED: <2023-04-01 Sat>
 SCHEDULED: <2023-04-02 Sun>
 ***** TODO HG001 :
 SCHEDULED: <2023-04-02 Sun>
-- notre version avec hap.py + vcfeval
-- version GIAB
-- référence ??
-***** TODO HG002
+****** Données brutes
+Version GIAB avec hap.py + vcfeval:
+#+begin_src sh
+NXF_OPTS=-D"user.name=${USER}" nextflow run workflows/test.nf -profile standard,helios -resume --outdir=compareNA12878-giab --test.happy  --test.query=giab --test.vcfeval
+#+end_src
+
+Notre version avec hap.py + vcfeval
+#+begin_src sh
+NXF_OPTS=-D"user.name=${USER}" nextflow run workflows/test.nf -profile standard,helios -resume --outdir=compareNA12878 --test.vcfeval --test.query="out/NA12878_NIST/variantCalling/haplotypecaller/NA12878_NIST.vcf.gz" --test.happy
+#+end_src
+
+On concatene les csv avec une colonne indicant le type
+# awk '{if (NR==1) {print "Data,Algorithm" $0} else {print "bisonx,happy,"$0}}' compareNA12878/happy/NA12878.summary.csv
+
+compareNA12878/happy/NA12878.summary.csv
+| Type  | Filter | TRUTH.TOTAL | TRUTH.TP | TRUTH.FN | QUERY.TOTAL | QUERY.FP | QUERY.UNK | FP.gt | FP.al | METRIC.Recall | METRIC.Precision | METRIC.Frac_NA | METRIC.F1_Score | TRUTH.TOTAL.TiTv_ratio | QUERY.TOTAL.TiTv_ratio | TRUTH.TOTAL.het_hom_ratio | QUERY.TOTAL.het_hom_ratio |
+| INDEL | ALL    |        4871 |     3461 |     1410 |        7048 |     1554 |      1987 |   193 |   346 |      0.710532 |         0.692946 |       0.281924 |        0.701629 |                        |                        |        1.6174985978687606 |        3.0674091441969518 |
+| INDEL | PASS   |        4871 |     3461 |     1410 |        7048 |     1554 |      1987 |   193 |   346 |      0.710532 |         0.692946 |       0.281924 |        0.701629 |                        |                        |        1.6174985978687606 |        3.0674091441969518 |
+| SNP   | ALL    |       46032 |    39367 |     6665 |       44599 |     1186 |      4042 |   304 |    30 |      0.855209 |         0.970757 |        0.09063 |        0.909327 |      2.529551552318896 |      2.402150701647346 |        1.6206857273037931 |        1.6273423688862698 |
+| SNP   | PASS   |       46032 |    39367 |     6665 |       44599 |     1186 |      4042 |   304 |    30 |      0.855209 |         0.970757 |        0.09063 |        0.909327 |      2.529551552318896 |      2.402150701647346 |        1.6206857273037931 |        1.6273423688862698 |
+
+compareNA12878/vcfeval/NA12878.summary.txt
+| Threshold | True-pos-baseline | True-pos-call | False-pos | False-neg | Precision | Sensitivity | F-measure |
+|-----------+-------------------+---------------+-----------+-----------+-----------+-------------+-----------|
+| 3.000     |             42789 |         42416 |      2598 |      8080 |    0.9423 |      0.8412 |    0.8889 |
+| None      |             42798 |         42425 |      2616 |      8071 |    0.9419 |      0.8413 |    0.8888 |
+
+compareNA12878-giab/vcfeval/NA12878.summary.txt
+| Threshold | True-pos-baseline | True-pos-call | False-pos | False-neg | Precision | Sensitivity | F-measure |
+| 1.000     |             44812 |         44812 |      2878 |      6057 |    0.9397 |      0.8809 |    0.9093 |
+| None      |             44813 |         44813 |      2882 |      6056 |    0.9396 |      0.8809 |    0.9093 |
+|           |                   |               |           |           |           |             |           |
+compareNA12878-giab/happy/NA12878.summary.csv
+| Type  | Filter | TRUTH.TOTAL | TRUTH.TP | TRUTH.FN | QUERY.TOTAL | QUERY.FP | QUERY.UNK | FP.gt | FP.al | METRIC.Recall | METRIC.Precision | METRIC.Frac_NA | METRIC.F1_Score | TRUTH.TOTAL.TiTv_ratio | QUERY.TOTAL.TiTv_ratio | TRUTH.TOTAL.het_hom_ratio | QUERY.TOTAL.het_hom_ratio |
+|-------+--------+-------------+----------+----------+-------------+----------+-----------+-------+-------+---------------+------------------+----------------+-----------------+------------------------+------------------------+---------------------------+---------------------------|
+| INDEL | ALL    |        4871 |     3678 |     1193 |        7036 |     1299 |      2011 |   208 |   217 |      0.755081 |         0.741493 |       0.285816 |        0.748225 |                        |                        |        1.6174985978687606 |        2.5240506329113925 |
+| INDEL | PASS   |        4871 |     3678 |     1193 |        7036 |     1299 |      2011 |   208 |   217 |      0.755081 |         0.741493 |       0.285816 |        0.748225 |                        |                        |        1.6174985978687606 |        2.5240506329113925 |
+| SNP   | ALL    |       46032 |    41138 |     4894 |       47694 |     1622 |      4930 |   362 |    31 |      0.893683 |         0.962071 |       0.103367 |        0.926617 |      2.529551552318896 |     2.4124463519313304 |        1.6206857273037931 |        1.6888675840288743 |
+| SNP   | PASS   |       46032 |    41138 |     4894 |       47694 |     1622 |      4930 |   362 |    31 |      0.893683 |         0.962071 |       0.103367 |        0.926617 |      2.529551552318896 |     2.4124463519313304 |        1.6206857273037931 |         1.688867584028874 |
+****** Résumé
+| Données | Algorithm | Type  |   Recall | Precision |
+|---------+-----------+-------+----------+-----------|
+| Bisonex | Happy     | INDEL | 0.710532 |  0.692946 |
+| Bisonex | Happy     | SNP   | 0.855209 |  0.970757 |
+| Bisonex | vcfeval   | Tous  |   0.8413 |    0.9419 |
+|---------+-----------+-------+----------+-----------|
+| GIAB    | happy     | INDEL | 0.755081 |  0.741493 |
+| GIAB    | happy     | SNP   | 0.893683 |  0.962071 |
+| giab    | vcfeval   | Tous  |   0.8809 |    0.9396 |
+
+
+
+
+***** WAIT Ashkenazi trio (père, mère)
 SCHEDULED: <2023-04-02 Sun>
 *** TODO Platinum genome
 https://emea.illumina.com/platinumgenomes.html
