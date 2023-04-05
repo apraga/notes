@@ -3835,11 +3835,29 @@ compareNA12878/vcfeval/NA12878.summary.txt
 | 3.000     |             42789 |         42416 |      2598 |      8080 |    0.9423 |      0.8412 |    0.8889 |
 | None      |             42798 |         42425 |      2616 |      8071 |    0.9419 |      0.8413 |    0.8888 |
 
+Indel avec le plus petit seuil : zcat NA12878.non_snp_roc.tsv.gz
+Attention à inverser precision et recall !
+ zcat NA12878.non_snp_roc.tsv.gz  | tail -n 1 | awk '{print $7 $6}'
+0.71390.7136
+
+SNP avec le plus petit seuil : zcat NA12878.non_snp_roc.tsv.gz
+Attention à inverser precision et recall !
+$ zcat NA12878.snp_roc.tsv.gz  | tail -n 1 | awk '{print $7 $6}'
+0.85470.9727
+
 compareNA12878-giab/vcfeval/NA12878.summary.txt
 | Threshold | True-pos-baseline | True-pos-call | False-pos | False-neg | Precision | Sensitivity | F-measure |
 | 1.000     |             44812 |         44812 |      2878 |      6057 |    0.9397 |      0.8809 |    0.9093 |
 | None      |             44813 |         44813 |      2882 |      6056 |    0.9396 |      0.8809 |    0.9093 |
-|           |                   |               |           |           |           |             |           |
+
+SNP:
+$ zcat NA12878.snp_roc.tsv.gz  | tail -n 1 | awk '{print $7 $6}'
+0.89370.9621
+
+indel
+$ zcat NA12878.non_snp_roc.tsv.gz  | tail -n 1 | awk '{print $7 $6}'
+0.75980.7445
+
 compareNA12878-giab/happy/NA12878.summary.csv
 | Type  | Filter | TRUTH.TOTAL | TRUTH.TP | TRUTH.FN | QUERY.TOTAL | QUERY.FP | QUERY.UNK | FP.gt | FP.al | METRIC.Recall | METRIC.Precision | METRIC.Frac_NA | METRIC.F1_Score | TRUTH.TOTAL.TiTv_ratio | QUERY.TOTAL.TiTv_ratio | TRUTH.TOTAL.het_hom_ratio | QUERY.TOTAL.het_hom_ratio |
 |-------+--------+-------------+----------+----------+-------------+----------+-----------+-------+-------+---------------+------------------+----------------+-----------------+------------------------+------------------------+---------------------------+---------------------------|
@@ -3848,17 +3866,17 @@ compareNA12878-giab/happy/NA12878.summary.csv
 | SNP   | ALL    |       46032 |    41138 |     4894 |       47694 |     1622 |      4930 |   362 |    31 |      0.893683 |         0.962071 |       0.103367 |        0.926617 |      2.529551552318896 |     2.4124463519313304 |        1.6206857273037931 |        1.6888675840288743 |
 | SNP   | PASS   |       46032 |    41138 |     4894 |       47694 |     1622 |      4930 |   362 |    31 |      0.893683 |         0.962071 |       0.103367 |        0.926617 |      2.529551552318896 |     2.4124463519313304 |        1.6206857273037931 |         1.688867584028874 |
 ****** Résumé
-| Données | Algorithm | Type  |   Recall | Precision |
-|---------+-----------+-------+----------+-----------|
-| Bisonex | Happy     | INDEL | 0.710532 |  0.692946 |
-| Bisonex | Happy     | SNP   | 0.855209 |  0.970757 |
-| Bisonex | vcfeval   | Tous  |   0.8413 |    0.9419 |
-|---------+-----------+-------+----------+-----------|
-| GIAB    | happy     | INDEL | 0.755081 |  0.741493 |
-| GIAB    | happy     | SNP   | 0.893683 |  0.962071 |
-| giab    | vcfeval   | Tous  |   0.8809 |    0.9396 |
-
-
+| Données | Algorithm | Type    | Recall | Precision |
+|---------+-----------+---------+--------+-----------|
+| Bisonex | Happy     | SNP     | 0.8552 |    0.9708 |
+| Bisonex | vcfeval   | SNP     | 0.8547 |    0.9727 |
+| Bisonex | Happy     | INDEL   | 0.7105 |    0.6929 |
+| Bisonex | vcfeval   | Non-SNP | 0.7139 |    0.7136 |
+|---------+-----------+---------+--------+-----------|
+| GIAB    | happy     | INDEL   | 0.7551 |    0.7415 |
+| GIAB    | vcfeval   | INDEL   | 0.7598 |    0.7445 |
+| GIAB    | happy     | SNP     | 0.8937 |    0.9621 |
+| giab    | vcfeval   | SNP     | 0.8937 |    0.9621 |
 
 
 ***** WAIT Ashkenazi trio (père, mère)
