@@ -3052,10 +3052,10 @@ CLOSED: [2023-02-25 Sat 19:46]
 https://ftp-trace.ncbi.nih.gov/ReferenceSamples/giab/data/NA12878/Garvan_NA12878_HG001_HiSeq_Exome/nexterarapidcapture_expandedexome_targetedregions.bed.gz
 ******* DONE Bed, vcf
 CLOSED: [2023-02-24 Fri 23:45]
-****** TODO Ashkenazy trio HG002, HG003, HGQ004
-SCHEDULED: <2023-04-01 Sat>
+****** DONE Ashkenazy trio HG002, HG003, HGQ004
+CLOSED: [2023-04-06 Thu 21:43] SCHEDULED: <2023-04-01 Sat>
 ****** TODO Chinese trio HG005, 6, 7
-***** TODO Fastq
+***** TODO Fastq :fastq:
 ****** DONE NA12878 (HG001)
 CLOSED: [2023-02-25 Sat 19:46]
 ******* DONE Fastq HiSeq
@@ -3075,17 +3075,14 @@ Hiseq postérieur nextseq 550
 ******* DONE Capture : Exons (bed)
 CLOSED: [2023-02-25 Sat 19:46]
 https://ftp-trace.ncbi.nih.gov/ReferenceSamples/giab/data/NA12878/Garvan_NA12878_HG001_HiSeq_Exome/nexterarapidcapture_expandedexome_targetedregions.bed.gz
-******* DONE Bed, vcf
-CLOSED: [2023-02-24 Fri 23:45]
 ****** TODO Ashkenazy trio HG002, HG003, HG004
-SCHEDULED: <2023-04-01 Sat>
+SCHEDULED: <2023-04-05 Wed>
 ******* TODO Capture
 https://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/analysis/OsloUniversityHospital_Exome_GATK_jointVC_11242015/wex_Agilent_SureSelect_v05_b37.baits.slop50.merged.list
 ******* TODO Bam à partir des fastq
 Bam + index + checksum
 https://raw.githubusercontent.com/genome-in-a-bottle/giab_data_indexes/master/AshkenazimTrio/alignment.index.AJtrio_OsloUniversityHospital_IlluminaExome_bwamem_GRCh37_11252015
 
-*
 ****** TODO Chinese trio
 Whole exome pour HG005 seulement
 ******* TODO HG005
@@ -3804,19 +3801,19 @@ INDEL   PASS         4871      3678      1193         7036      1299       2011 
        0.103367         0.926617                2.529552                2.412446                   1.620686                   1.688868
 ****** DONE Statistiques avec vcfeval
 CLOSED: [2023-04-02 Sun 17:10] SCHEDULED: <2023-04-01 Sat>
-**** TODO Résumer résultats pour Paul + article :resultats:
-SCHEDULED: <2023-04-02 Sun>
-***** TODO HG001 :
-SCHEDULED: <2023-04-02 Sun>
+**** DONE Résumer résultats pour Paul + article :resultats:
+CLOSED: [2023-04-06 Thu 21:41] SCHEDULED: <2023-04-02 Sun>
+***** DONE HG001 :
+CLOSED: [2023-04-06 Thu 21:41] SCHEDULED: <2023-04-02 Sun>
 ****** Données brutes
 Version GIAB avec hap.py + vcfeval:
 #+begin_src sh
-NXF_OPTS=-D"user.name=${USER}" nextflow run workflows/test.nf -profile standard,helios -resume --outdir=compareNA12878-giab --test.happy  --test.query=giab --test.vcfeval
+NXF_OPTS=-D"user.name=${USER}" nextflow run workflows/compareVCF.nf -profile standard,helios -resume --outdir=compareNA12878-giab --test.happy  --test.query=giab --test.vcfeval
 #+end_src
 
 Notre version avec hap.py + vcfeval
 #+begin_src sh
-NXF_OPTS=-D"user.name=${USER}" nextflow run workflows/test.nf -profile standard,helios -resume --outdir=compareNA12878 --test.vcfeval --test.query="out/NA12878_NIST/variantCalling/haplotypecaller/NA12878_NIST.vcf.gz" --test.happy
+NXF_OPTS=-D"user.name=${USER}" nextflow run workflows/compareVCF.nf -profile standard,helios -resume --outdir=compareNA12878 --test.vcfeval --test.query="out/NA12878_NIST/variantCalling/haplotypecaller/NA12878_NIST.vcf.gz" --test.happy
 #+end_src
 
 On concatene les csv avec une colonne indicant le type
@@ -3879,7 +3876,7 @@ compareNA12878-giab/happy/NA12878.summary.csv
 | giab    | vcfeval   | SNP     | 0.8937 |    0.9621 |
 
 
-***** WAIT Ashkenazi trio (père, mère)
+***** TODO Ashkenazi trio (père, mère)
 SCHEDULED: <2023-04-02 Sun>
 *** TODO Platinum genome
 https://emea.illumina.com/platinumgenomes.html

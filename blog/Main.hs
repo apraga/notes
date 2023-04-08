@@ -1,11 +1,11 @@
 --------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
-import           Data.Monoid (mappend)
-import           Hakyll
-import Data.List.Split
-import Data.List
-import Data.Char
-import           System.FilePath.Posix
+import  Data.Monoid (mappend)
+import  Hakyll
+import  Data.List.Split
+import  Data.List
+import  Data.Char
+import  System.FilePath.Posix
 
 --------------------------------------------------------------------------------
 -- Important note :
@@ -31,7 +31,7 @@ main = hakyll $ do
         route  $ setExtension "html"
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/notitle.html" defaultContext
-            >>= relativizeUrls
+            >>= relativizeUrl-- s
 
     -- Hack : generate temporary files for correcting metadata
     match ("posts/*.org" .||. "genetique/*.org") $ do
