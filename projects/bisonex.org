@@ -1228,7 +1228,7 @@ Besoin de vep
 *** TODO Variant calling
 * Amélioration :amelioration:
 * TODO Tests :tests:
-** TODO Non régression : version prod
+** WAIT Non régression : version prod
 *** DONE ID common snp
 CLOSED: [2022-11-19 Sat 21:36]
 #+begin_src
@@ -3808,7 +3808,7 @@ CLOSED: [2023-04-06 Thu 21:41] SCHEDULED: <2023-04-02 Sun>
 ****** Données brutes
 Version GIAB avec hap.py + vcfeval:
 #+begin_src sh
-NXF_OPTS=-D"user.name=${USER}" nextflow run workflows/compareVCF.nf -profile standard,helios -resume --outdir=compareNA12878-giab --test.happy  --test.query=giab --test.vcfeval
+NXF_OPTS=-D"user.name=${USER}" nextflow run workflows/compareVCF.nf -profile standard,helios -resume --outdir=compareNA12878-giab --test.compare=happy,vcfeval  --test.query=giab --test.id=HG001
 #+end_src
 
 Notre version avec hap.py + vcfeval
@@ -3875,13 +3875,29 @@ compareNA12878-giab/happy/NA12878.summary.csv
 | GIAB    | happy     | SNP     | 0.8937 |    0.9621 |
 | giab    | vcfeval   | SNP     | 0.8937 |    0.9621 |
 
+***** TODO HG002
+SCHEDULED: <2023-04-10 Mon>
+#+begin_src
+NXF_OPTS=-D"user.name=${USER}" nextflow run workflows/compareVCF.nf -profile standard,helios -resume --outdir=compareHG002 --test.compare=vcfeval --test.query=out/HG002/variantCalling/haplotypecaller/HG002.vcf.gz --test.id=HG002
+#+end_src
 
-***** TODO Ashkenazi trio (père, mère)
-SCHEDULED: <2023-04-02 Sun>
+Mauvais résultats avec vcfeval
+
+Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
+----------------------------------------------------------------------------------------------------
+    0.000              24585          24390      10060      39415     0.7080       0.3841     0.4980
+     None              24585          24390      10060      39415     0.7080       0.3841     0.4980
+
+La sortie du variantCalling est celle d'happy ???
+On relance...
 *** TODO Platinum genome
 https://emea.illumina.com/platinumgenomes.html
 *** TODO Séquencer NA12878
 Discussion avec Paul : sous-traitant ne nous donnera pas les données, il faut commander l'ADN
+** TODO Fastq avec tous les variants centogène
+*** TODO Extraire liste des variants
+*** TODO Générer fastq
+*** TODO Vérifier qu'on les retrouve tous
 
 ** Divers
 *** DONE Vérifier nombre de reads fastq - bam
