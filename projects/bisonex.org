@@ -25,7 +25,7 @@ encoded as alleles values separated by either of ”/” or “|”, e.g. The al
 Attention, génome et en hg19 donc comparaison non adaptée ...
 
 **** TODO Best practices for the analytical validation of clinical whole-genome sequencing intended for the diagnosis of germline disease
-SCHEDULED: <2023-04-06 Thu>
+SCHEDULED:   <2023-04-06 Thu>
 https://www.nature.com/articles/s41525-020-00154-9
 Recommandations générale pour genome, sans données brutes
 **** TODO [#A] Performance assessment of variant calling pipelines using human whole exome sequencing and simulated data
@@ -287,9 +287,11 @@ Discussion avec Alexis
     - Illumina TruSeq Exome : bam, pas de capture
       ici ww
   - HG002,3,4
-    - Illumina Whole Exome  : bam. le kit de capture est "Agilent SureSelect Human All Exon V5 kit" selon [[https://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/analysis/OsloUniversityHospital_Exome_GATK_jointVC_11242015/README.txt][README]]. On peut les régions [[https://kb.10xgenomics.com/hc/en-us/articles/115004150923-Where-can-I-find-the-Agilent-Target-BED-files-][selon ce site]]
-      Mais disponible directement
+    - Illumina Whole Exome  : bam. le kit de capture est "Agilent SureSelect Human All Exon V5 kit" selon [[https://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/analysis/OsloUniversityHospital_Exome_GATK_jointVC_11242015/README.txt][README]]. On il faut les régions [[https://kb.10xgenomics.com/hc/en-us/articles/115004150923-Where-can-I-find-the-Agilent-Target-BED-files-][selon ce site]]
+
+      Un autre fichier est disponible (capture ???)
     https://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/analysis/OsloUniversityHospital_Exome_GATK_jointVC_11242015/wex_Agilent_SureSelect_v05_b37.baits.slop50.merged.list
+  "target region" +/- 50bp
     testé sur chr311780-312086 : ok
 
 Autres technologies non adaptées au pipeline (vu avec Alexis)
@@ -1227,7 +1229,11 @@ Besoin de vep
 
 *** TODO Variant calling
 * Amélioration :amelioration:
-* TODO Tests :tests:
+* Documentation :doc:
+** Procédure d'installation nix + dependences pour VM CHU
+SCHEDULED: <2023-04-13 Thu>
+* Manuscript :manuscript:
+* Tests :tests:
 ** WAIT Non régression : version prod
 *** DONE ID common snp
 CLOSED: [2022-11-19 Sat 21:36]
@@ -3801,6 +3807,37 @@ INDEL   PASS         4871      3678      1193         7036      1299       2011 
        0.103367         0.926617                2.529552                2.412446                   1.620686                   1.688868
 ****** DONE Statistiques avec vcfeval
 CLOSED: [2023-04-02 Sun 17:10] SCHEDULED: <2023-04-01 Sat>
+**** TODO HG002 :hg002:
+SCHEDULED: <2023-04-10 Mon>
+#+begin_src
+NXF_OPTS=-D"user.name=${USER}" nextflow run workflows/compareVCF.nf -profile standard,helios -resume --outdir=compareHG002 --test.compare=vcfeval --test.query=out/HG002/variantCalling/haplotypecaller/HG002.vcf.gz --test.id=HG002
+#+end_src
+
+***** Mauvais résultats
+avec vcfeval
+
+Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
+----------------------------------------------------------------------------------------------------
+    0.000              24585          24390      10060      39415     0.7080       0.3841     0.4980
+     None              24585          24390      10060      39415     0.7080       0.3841     0.4980
+
+La sortie du variantCalling est celle d'happy ???
+On relance...
+***** DONE Vérifier vcf en hg38
+CLOSED: [2023-04-12 Wed 10:33] SCHEDULED: <2023-04-12 Wed>
+***** TODO Capture en hg19 ?
+SCHEDULED: <2023-04-12 Wed>
+***** TODO Vraiment fichier de capture ou zone d'intérêt ?
+SCHEDULED: <2023-04-12 Wed>
+"target region" +/- 50bp
+[[https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/analysis/OsloUniversityHospital_Exome_GATK_jointVC_11242015/README.txt][README]]
+ list file describing the variant calling regions (target regions extended with 50 bp on each end)
+***** TODO Réessayer avec .bed fourni par AGilent
+SCHEDULED: <2023-04-13 Thu>
+Agilent SureSelect Human All Exon V5 kit
+Disponible en hg38
+***** TODO Bam -> fastq : impact du génome d'alignement ?
+***** TODO Impact du joint calling ?
 **** DONE Résumer résultats pour Paul + article :resultats:
 CLOSED: [2023-04-06 Thu 21:41] SCHEDULED: <2023-04-02 Sun>
 ***** DONE HG001 :
@@ -3875,21 +3912,6 @@ compareNA12878-giab/happy/NA12878.summary.csv
 | GIAB    | happy     | SNP     | 0.8937 |    0.9621 |
 | giab    | vcfeval   | SNP     | 0.8937 |    0.9621 |
 
-***** TODO HG002
-SCHEDULED: <2023-04-10 Mon>
-#+begin_src
-NXF_OPTS=-D"user.name=${USER}" nextflow run workflows/compareVCF.nf -profile standard,helios -resume --outdir=compareHG002 --test.compare=vcfeval --test.query=out/HG002/variantCalling/haplotypecaller/HG002.vcf.gz --test.id=HG002
-#+end_src
-
-Mauvais résultats avec vcfeval
-
-Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
-----------------------------------------------------------------------------------------------------
-    0.000              24585          24390      10060      39415     0.7080       0.3841     0.4980
-     None              24585          24390      10060      39415     0.7080       0.3841     0.4980
-
-La sortie du variantCalling est celle d'happy ???
-On relance...
 *** TODO Platinum genome
 https://emea.illumina.com/platinumgenomes.html
 *** TODO Séquencer NA12878

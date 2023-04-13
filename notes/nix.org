@@ -159,6 +159,11 @@ Tout supprmier
 #+begin_src sh
 nix profile remove '.*'
 #+end_src
+*** Avec nushell
+Il faut parfois mettre des guillemets, ex:
+#+begin_src
+nix profile install "nixpkgs#cabal-install"
+#+end_src
 * Nixpkgs
 ** Ajoutr un nouveau paquet
 https://nixos.wiki/wiki/Nixpkgs/Contributing

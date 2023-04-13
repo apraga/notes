@@ -1367,3 +1367,36 @@ CLOSED: [2022-12-05 Mon 21:22] SCHEDULED: <2022-12-05 Mon>
 :ARCHIVE_TODO: DONE
 :END:
 "Je veux changer d'abonnement sur la hotline" pour avoir le service commercial
+
+* DONE pkg-config problème avec 0.26.2
+CLOSED: [2022-09-22 Thu 10:45]
+:PROPERTIES:
+:ARCHIVE_TIME: 2023-04-13 Thu 09:01
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: FreeBSD/Kitty
+:ARCHIVE_CATEGORY: projects
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: freebsd
+:END:
+
+* DONE 0.26.4
+CLOSED: [2022-10-20 Thu 23:05]
+:PROPERTIES:
+:ARCHIVE_TIME: 2023-04-13 Thu 09:01
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: FreeBSD/Kitty
+:ARCHIVE_CATEGORY: projects
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: freebsd
+:END:
+
+* DONE Patch pour utiliser openssl base
+CLOSED: [2022-10-20 Thu 23:05]
+:PROPERTIES:
+:ARCHIVE_TIME: 2023-04-13 Thu 09:01
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: FreeBSD/Kitty
+:ARCHIVE_CATEGORY: projects
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: freebsd
+:END:
