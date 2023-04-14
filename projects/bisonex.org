@@ -3018,6 +3018,31 @@ Prérequis :
 *** TODO GIAB : exome :giab:
 **** Notes
 https://github.com/genome-in-a-bottle/giab_FAQ
+**** Résultats résumés :resultats:
+***** DONE HG001 :
+CLOSED: [2023-04-06 Thu 21:41] SCHEDULED: <2023-04-02 Sun>
+| Données | Algorithm | Type    | Recall | Precision |
+|---------+-----------+---------+--------+-----------|
+| Bisonex | Happy     | SNP     | 0.8552 |    0.9708 |
+| Bisonex | vcfeval   | SNP     | 0.8547 |    0.9727 |
+| Bisonex | Happy     | INDEL   | 0.7105 |    0.6929 |
+| Bisonex | vcfeval   | Non-SNP | 0.7139 |    0.7136 |
+|---------+-----------+---------+--------+-----------|
+| GIAB    | happy     | INDEL   | 0.7551 |    0.7415 |
+| GIAB    | vcfeval   | INDEL   | 0.7598 |    0.7445 |
+| GIAB    | happy     | SNP     | 0.8937 |    0.9621 |
+| giab    | vcfeval   | SNP     | 0.8937 |    0.9621 |
+***** DONE HG002
+CLOSED: [2023-04-14 Fri 11:36] SCHEDULED: <2023-04-14 Fri>
+Capture Agilent
+| Algorithm | Type  |   Recall | Precision |
+| happy     | INDEL | 0.851495 |  0.923616 |
+| happy     | SNP   | 0.905926 |  0.992158 |
+| vcfeval   | indel |   0.8523 |    0.9212 |
+| vcfeval   | snp   |   0.9054 |    0.9934 |
+***** TODO HG003
+SCHEDULED: <2023-04-14 Fri>
+
 **** TODO télécharger données avec Nextflow
 ***** DONE Renommer les chromosomes
 CLOSED: [2023-02-17 Fri 19:30]
@@ -3807,42 +3832,8 @@ INDEL   PASS         4871      3678      1193         7036      1299       2011 
        0.103367         0.926617                2.529552                2.412446                   1.620686                   1.688868
 ****** DONE Statistiques avec vcfeval
 CLOSED: [2023-04-02 Sun 17:10] SCHEDULED: <2023-04-01 Sat>
-**** TODO HG002 :hg002:
-SCHEDULED: <2023-04-10 Mon>
-#+begin_src
-NXF_OPTS=-D"user.name=${USER}" nextflow run workflows/compareVCF.nf -profile standard,helios -resume --outdir=compareHG002 --test.compare=vcfeval --test.query=out/HG002/variantCalling/haplotypecaller/HG002.vcf.gz --test.id=HG002
-#+end_src
-
-***** Mauvais résultats
-avec vcfeval
-
-Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
-----------------------------------------------------------------------------------------------------
-    0.000              24585          24390      10060      39415     0.7080       0.3841     0.4980
-     None              24585          24390      10060      39415     0.7080       0.3841     0.4980
-
-La sortie du variantCalling est celle d'happy ???
-On relance...
-***** DONE Vérifier vcf en hg38
-CLOSED: [2023-04-12 Wed 10:33] SCHEDULED: <2023-04-12 Wed>
-***** TODO Capture en hg19 ?
-SCHEDULED: <2023-04-12 Wed>
-***** TODO Vraiment fichier de capture ou zone d'intérêt ?
-SCHEDULED: <2023-04-12 Wed>
-"target region" +/- 50bp
-[[https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/analysis/OsloUniversityHospital_Exome_GATK_jointVC_11242015/README.txt][README]]
- list file describing the variant calling regions (target regions extended with 50 bp on each end)
-***** TODO Réessayer avec .bed fourni par AGilent
-SCHEDULED: <2023-04-13 Thu>
-Agilent SureSelect Human All Exon V5 kit
-Disponible en hg38
-***** TODO Bam -> fastq : impact du génome d'alignement ?
-***** TODO Impact du joint calling ?
-**** DONE Résumer résultats pour Paul + article :resultats:
-CLOSED: [2023-04-06 Thu 21:41] SCHEDULED: <2023-04-02 Sun>
-***** DONE HG001 :
-CLOSED: [2023-04-06 Thu 21:41] SCHEDULED: <2023-04-02 Sun>
-****** Données brutes
+***** DONE Résultats finaux
+CLOSED: [2023-04-14 Fri 09:53]
 Version GIAB avec hap.py + vcfeval:
 #+begin_src sh
 NXF_OPTS=-D"user.name=${USER}" nextflow run workflows/compareVCF.nf -profile standard,helios -resume --outdir=compareNA12878-giab --test.compare=happy,vcfeval  --test.query=giab --test.id=HG001
@@ -3899,19 +3890,95 @@ compareNA12878-giab/happy/NA12878.summary.csv
 | INDEL | PASS   |        4871 |     3678 |     1193 |        7036 |     1299 |      2011 |   208 |   217 |      0.755081 |         0.741493 |       0.285816 |        0.748225 |                        |                        |        1.6174985978687606 |        2.5240506329113925 |
 | SNP   | ALL    |       46032 |    41138 |     4894 |       47694 |     1622 |      4930 |   362 |    31 |      0.893683 |         0.962071 |       0.103367 |        0.926617 |      2.529551552318896 |     2.4124463519313304 |        1.6206857273037931 |        1.6888675840288743 |
 | SNP   | PASS   |       46032 |    41138 |     4894 |       47694 |     1622 |      4930 |   362 |    31 |      0.893683 |         0.962071 |       0.103367 |        0.926617 |      2.529551552318896 |     2.4124463519313304 |        1.6206857273037931 |         1.688867584028874 |
-****** Résumé
-| Données | Algorithm | Type    | Recall | Precision |
-|---------+-----------+---------+--------+-----------|
-| Bisonex | Happy     | SNP     | 0.8552 |    0.9708 |
-| Bisonex | vcfeval   | SNP     | 0.8547 |    0.9727 |
-| Bisonex | Happy     | INDEL   | 0.7105 |    0.6929 |
-| Bisonex | vcfeval   | Non-SNP | 0.7139 |    0.7136 |
-|---------+-----------+---------+--------+-----------|
-| GIAB    | happy     | INDEL   | 0.7551 |    0.7415 |
-| GIAB    | vcfeval   | INDEL   | 0.7598 |    0.7445 |
-| GIAB    | happy     | SNP     | 0.8937 |    0.9621 |
-| giab    | vcfeval   | SNP     | 0.8937 |    0.9621 |
+**** DONE HG002 :hg002:
+CLOSED: [2023-04-14 Fri 09:54] SCHEDULED: <2023-04-10 Mon>
+#+begin_src
+    NXF_OPTS=-D"user.name=${USER}" nextflow run workflows/giabFastq.nf -profile standard,helios
+    NXF_OPTS=-D"user.name=${USER}" nextflow run main.nf -profile standard,helios -resume --input="/Work/Groups/bisonex/data/giab/GRCh38/HG002_{1,2}.fq.gz --test.id=HG002
 
+Only the capture file differs. Results are better using the capture file given by Agilent, stored in data/
+
+    NXF_OPTS=-D"user.name=${USER}" nextflow run workflows/compareVCF.nf -profile standard,helios -resume --outdir=compareHG002 --test.id=HG002 --test.query=out/HG002_1/variantCalling/haplotypecaller/HG002_1.vcf.gz  --test.compare=vcfeval,happy --test.capture=data/AgilentSureSelectv05_hg38.bed
+#
+#+end_src
+***** DONE Mauvais résultats
+CLOSED: [2023-04-14 Fri 09:42]
+avec vcfeval
+
+Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
+----------------------------------------------------------------------------------------------------
+    0.000              24585          24390      10060      39415     0.7080       0.3841     0.4980
+     None              24585          24390      10060      39415     0.7080       0.3841     0.4980
+
+La sortie du variantCalling est celle d'happy ???
+On relance...
+***** DONE Vérifier vcf en hg38
+CLOSED: [2023-04-12 Wed 10:33] SCHEDULED: <2023-04-12 Wed>
+***** KILL Capture en hg19 ?
+CLOSED: [2023-04-13 Thu 09:46] SCHEDULED: <2023-04-12 Wed>
+***** KILL Vraiment fichier de capture ou zone d'intérêt ?
+CLOSED: [2023-04-13 Thu 09:45] SCHEDULED: <2023-04-12 Wed>
+"target region" +/- 50bp
+[[https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/analysis/OsloUniversityHospital_Exome_GATK_jointVC_11242015/README.txt][README]]
+ list file describing the variant calling regions (target regions extended with 50 bp on each end)
+***** DONE .bed fourni par AGilent: sensbilité très mauvaise
+CLOSED: [2023-04-13 Thu 09:46] SCHEDULED: <2023-04-13 Thu>
+Agilent SureSelect Human All Exon V5 kit
+Disponible en hg38
+
+Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
+----------------------------------------------------------------------------------------------------
+    0.000              19653          19501       6410      21657     0.7526       0.4757     0.5830
+     None              19653          19501       6410      21657     0.7526       0.4757     0.5830
+***** DONE Trier par nom avec samtools sort : bons résultats
+CLOSED: [2023-04-14 Fri 09:25] SCHEDULED: <2023-04-13 Thu>
+Avec capture fourni par GIAB
+
+vcf eval
+Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
+----------------------------------------------------------------------------------------------------
+    5.000              57443          57032        984       6557     0.9830       0.8975     0.9383
+     None              57457          57046       1009       6543     0.9826       0.8978     0.9383
+
+Happy
+| Type  | Filter | TRUTH.TOTAL | TRUTH.TP | TRUTH.FN | QUERY.TOTAL | QUERY.FP | QUERY.UNK | FP.gt | FP.al | METRIC.Recall | METRIC.Precision | METRIC.Frac_NA | METRIC.F1_Score | TRUTH.TOTAL.TiTv_ratio | QUERY.TOTAL.TiTv_ratio | TRUTH.TOTAL.het_hom_ratio | QUERY.TOTAL.het_hom_ratio |
+|-------+--------+-------------+----------+----------+-------------+----------+-----------+-------+-------+---------------+------------------+----------------+-----------------+------------------------+------------------------+---------------------------+---------------------------|
+| INDEL | ALL    |        6150 |     5007 |     1143 |        6978 |      556 |      1346 |   151 |   168 |      0.814146 |         0.901278 |       0.192892 |          0.8555 |                        |                        |        1.5434221840068787 |        1.9467178175618074 |
+| INDEL | PASS   |        6150 |     5007 |     1143 |        6978 |      556 |      1346 |   151 |   168 |      0.814146 |         0.901278 |       0.192892 |          0.8555 |                        |                        |        1.5434221840068787 |        1.9467178175618074 |
+| SNP   | ALL    |       57818 |    52464 |     5354 |       56016 |      500 |      3046 |    90 |    30 |      0.907399 |         0.990561 |       0.054377 |        0.947158 |     2.4892012548262548 |      2.426824047458871 |        1.5904527117884357 |        1.6107795598657217 |
+| SNP   | PASS   |       57818 |    52464 |     5354 |       56016 |      500 |      3046 |    90 |    30 |      0.907399 |         0.990561 |       0.054377 |        0.947158 |     2.4892012548262548 |      2.426824047458871 |        1.5904527117884357 |        1.6107795598657217 |
+***** DONE Capture agilent légment meilleur que celui fourni par GIAB (padding ?)
+CLOSED: [2023-04-14 Fri 09:48]
+GIAB:
+
+vcf eval
+Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
+----------------------------------------------------------------------------------------------------
+    5.000              57443          57032        984       6557     0.9830       0.8975     0.9383
+     None              57457          57046       1009       6543     0.9826       0.8978     0.9383
+
+Happy
+| Type  | Filter | TRUTH.TOTAL | TRUTH.TP | TRUTH.FN | QUERY.TOTAL | QUERY.FP | QUERY.UNK | FP.gt | FP.al | METRIC.Recall | METRIC.Precision | METRIC.Frac_NA | METRIC.F1_Score | TRUTH.TOTAL.TiTv_ratio | QUERY.TOTAL.TiTv_ratio | TRUTH.TOTAL.het_hom_ratio | QUERY.TOTAL.het_hom_ratio |
+|-------+--------+-------------+----------+----------+-------------+----------+-----------+-------+-------+---------------+------------------+----------------+-----------------+------------------------+------------------------+---------------------------+---------------------------|
+| INDEL | ALL    |        6150 |     5007 |     1143 |        6978 |      556 |      1346 |   151 |   168 |      0.814146 |         0.901278 |       0.192892 |          0.8555 |                        |                        |        1.5434221840068787 |        1.9467178175618074 |
+| INDEL | PASS   |        6150 |     5007 |     1143 |        6978 |      556 |      1346 |   151 |   168 |      0.814146 |         0.901278 |       0.192892 |          0.8555 |                        |                        |        1.5434221840068787 |        1.9467178175618074 |
+| SNP   | ALL    |       57818 |    52464 |     5354 |       56016 |      500 |      3046 |    90 |    30 |      0.907399 |         0.990561 |       0.054377 |        0.947158 |     2.4892012548262548 |      2.426824047458871 |        1.5904527117884357 |        1.6107795598657217 |
+| SNP   | PASS   |       57818 |    52464 |     5354 |       56016 |      500 |      3046 |    90 |    30 |      0.907399 |         0.990561 |       0.054377 |        0.947158 |     2.4892012548262548 |      2.426824047458871 |        1.5904527117884357 |        1.6107795598657217 |
+
+Agilent
+Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
+----------------------------------------------------------------------------------------------------
+    6.000              37241          36965        449       4069     0.9880       0.9015     0.9428
+     None              37248          36972        461       4062     0.9877       0.9017     0.9427
+
+| Type  | Filter | TRUTH.TOTAL | TRUTH.TP | TRUTH.FN | QUERY.TOTAL | QUERY.FP | QUERY.UNK | FP.gt | FP.al | METRIC.Recall | METRIC.Precision | METRIC.Frac_NA | METRIC.F1_Score | TRUTH.TOTAL.TiTv_ratio | QUERY.TOTAL.TiTv_ratio | TRUTH.TOTAL.het_hom_ratio | QUERY.TOTAL.het_hom_ratio |
+| INDEL | ALL    |        2909 |     2477 |      432 |        3229 |      207 |       519 |    52 |    50 |      0.851495 |         0.923616 |       0.160731 |        0.886091 |                        |                        |        1.4964850615114236 |        1.8339222614840989 |
+| INDEL | PASS   |        2909 |     2477 |      432 |        3229 |      207 |       519 |    52 |    50 |      0.851495 |         0.923616 |       0.160731 |        0.886091 |                        |                        |        1.4964850615114236 |        1.8339222614840989 |
+| SNP   | ALL    |       38406 |    34793 |     3613 |       36935 |      275 |      1868 |    37 |    15 |      0.905926 |         0.992158 |       0.050575 |        0.947083 |     2.6247759222568168 |     2.5752854654538417 |         1.588953331534934 |        1.6192536889897844 |
+| SNP   | PASS   |       38406 |    34793 |     3613 |       36935 |      275 |      1868 |    37 |    15 |      0.905926 |         0.992158 |       0.050575 |        0.947083 |     2.6247759222568168 |     2.5752854654538417 |         1.588953331534934 |        1.6192536889897844 |
+
+**** DONE Résumer résultats pour Paul + article :resultats:
+CLOSED: [2023-04-06 Thu 21:41] SCHEDULED: <2023-04-02 Sun>
 *** TODO Platinum genome
 https://emea.illumina.com/platinumgenomes.html
 *** TODO Séquencer NA12878
