@@ -1705,6 +1705,7 @@ Plus facile, à faire avant Elements... ?
 **** https://www.fast.ai/
 
 * Banque :banque:
+** Fixer rendez-vous
 * FreeBSD :freebsd:
 ** KILL ormolu 0.5.0.0
 CLOSED: [2022-10-22 Sat 23:36] SCHEDULED: <2022-07-30 Sat>
@@ -1713,12 +1714,6 @@ CLOSED: [2022-10-22 Sat 23:36] SCHEDULED: <2022-07-30 Sat>
 *** KILL Problème sur fetchdir
 CLOSED: [2022-09-22 Thu 10:45]
 Commiter au courant, attente de résolution
-*** DONE pkg-config problème avec 0.26.2
-CLOSED: [2022-09-22 Thu 10:45]
-*** DONE 0.26.4
-CLOSED: [2022-10-20 Thu 23:05]
-*** DONE Patch pour utiliser openssl base
-CLOSED: [2022-10-20 Thu 23:05]
 ** WAIT [[https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=264158][pkgconf est trop lent sur freebsd]]
 Problème persiste avec dernière version
 * Génétique
@@ -2130,8 +2125,25 @@ Autres drives :
 CLOSED: [2023-02-12 Sun 23:17]
 *** TODO Copier photos famille depuis drive yvain sur drive famille
 *** TODO Trier photos sur drive yvain
+** TODO Héberger arbre généaloqiue
+SCHEDULED: <2023-04-14 Fri>
+** TODO Enterrement Mme Karl
+*** DONE Commander bouquets
+CLOSED: [2023-04-13 Thu 09:11] SCHEDULED: <2023-04-12 Wed>
+*** DONE Message avec les bouquets
+CLOSED: [2023-04-13 Thu 09:11] SCHEDULED: <2023-04-13 Thu>
+*** TODO Remboursement [1/5]
+SCHEDULED: <2023-04-20 Thu>
+**** WAIT Aurélien
+**** WAIT Élise
+**** TODO Yvain
+**** TODO Papa
+**** DONE Thierre
+CLOSED: [2023-04-13 Thu 09:12]
+*** TODO Carte personnalisée
+SCHEDULED: <2023-04-17 Mon>
 * Nix
-** TODO GATK
+** GATK
 *** DONE Binaire
 CLOSED: [2022-09-10 Sat 23:53] SCHEDULED: <2022-08-10 Wed>
 /Entered on/ [2022-08-09 Tue 10:57]
@@ -2142,7 +2154,8 @@ CLOSED: [2022-09-11 Sun 22:05]
 CLOSED: [2022-10-11 Tue 11:46]
 https://github.com/NixOS/nixpkgs/pull/191548
 Review <2022-10-10 Mon> , corrigé dans la journée
-*** TODO Update 4.3.0.0
+*** DONE Update 4.3.0.0
+CLOSED: [2023-04-13 Thu 09:01]
 ** TODO Nextflow
 *** KILL version script seule
 CLOSED: [2023-04-01 Sat 18:29]
@@ -2208,6 +2221,7 @@ Solution 2: packages graaljs en compilant depuis le sourc   e
 CLOSED: [2022-09-11 Sun 22:05] SCHEDULED: <2022-09-03 Sat>
 Trop abimé pour prendre le risque, on changera les arrières plus tard
 *** TODO Changer plaquettes +/- disques
+SCHEDULED: <2023-04-21 Fri>
 Écrou grippé ? Voir avec fils M. Chouffe à Gennes, chemin du vernois (voiture 607 bleue)
 *** TODO Changer courroie distribution
 SCHEDULED: <2023-05-11 Thu>
