@@ -1233,7 +1233,7 @@ Besoin de vep
 ** Procédure d'installation nix + dependences pour VM CHU
 SCHEDULED: <2023-04-13 Thu>
 * Manuscript :manuscript:
-* Tests :tests:
+* Tests :tests:hg002:
 ** WAIT Non régression : version prod
 *** DONE ID common snp
 CLOSED: [2022-11-19 Sat 21:36]
@@ -3040,9 +3040,20 @@ Capture Agilent
 | happy     | SNP   | 0.905926 |  0.992158 |
 | vcfeval   | indel |   0.8523 |    0.9212 |
 | vcfeval   | snp   |   0.9054 |    0.9934 |
-***** TODO HG003
-SCHEDULED: <2023-04-14 Fri>
-
+***** DONE HG003
+CLOSED: [2023-04-16 Sun 00:25] SCHEDULED: <2023-04-14 Fri>
+| Algorithm | Type  | METRIC.Recall | METRIC.Precision |
+| vcfeval   | indel |        0.8363 |           0.9115 |
+| vcfeval   | snp   |        0.9069 |           0.9928 |
+| happy     | INDEL |      0.838521 |         0.917296 |
+| happy     | SNP   |      0.907466 |         0.991204 |
+***** DONE HG004
+CLOSED: [2023-04-16 Sun 00:26]
+| Algorithm | Type  | METRIC.Recall | METRIC.Precision |
+| happy     | INDEL |      0.856835 |         0.925086 |
+| happy     | SNP   |      0.905067 |         0.992704 |
+| vcfeval   | indel |        0.8568 |           0.9240 |
+| vcfeval   | snp   |        0.9048 |           0.9938 |
 **** TODO télécharger données avec Nextflow
 ***** DONE Renommer les chromosomes
 CLOSED: [2023-02-17 Fri 19:30]
@@ -3106,11 +3117,15 @@ Hiseq postérieur nextseq 550
 ******* DONE Capture : Exons (bed)
 CLOSED: [2023-02-25 Sat 19:46]
 https://ftp-trace.ncbi.nih.gov/ReferenceSamples/giab/data/NA12878/Garvan_NA12878_HG001_HiSeq_Exome/nexterarapidcapture_expandedexome_targetedregions.bed.gz
-****** TODO Ashkenazy trio HG002, HG003, HG004
-SCHEDULED: <2023-04-05 Wed>
-******* TODO Capture
+****** DONE Ashkenazy trio HG002, HG003, HG004
+CLOSED: [2023-04-15 Sat 23:24] SCHEDULED: <2023-04-05 Wed>
+******* DONE Capture
+CLOSED: [2023-04-15 Sat 23:24]
 https://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/analysis/OsloUniversityHospital_Exome_GATK_jointVC_11242015/wex_Agilent_SureSelect_v05_b37.baits.slop50.merged.list
-******* TODO Bam à partir des fastq
+******* DONE Capture Agilent
+CLOSED: [2023-04-15 Sat 23:24]
+******* DONE Bam à partir des fastq
+CLOSED: [2023-04-15 Sat 23:24]
 Bam + index + checksum
 https://raw.githubusercontent.com/genome-in-a-bottle/giab_data_indexes/master/AshkenazimTrio/alignment.index.AJtrio_OsloUniversityHospital_IlluminaExome_bwamem_GRCh37_11252015
 
@@ -3119,7 +3134,8 @@ Whole exome pour HG005 seulement
 ******* TODO HG005
 https://raw.githubusercontent.com/genome-in-a-bottle/giab_data_indexes/master/ChineseTrio/alignment.index.Chinesetrio_HG005_OsloUniversityHospital_IlluminaExome_bwamem_GRCh37_11252015
 
-**** TODO NA12878 / HG001 :na12878:
+**** DONE NA12878 / HG001 :na12878:
+CLOSED: [2023-04-15 Sat 23:53]
 ***** DONE Discussion alexis : Mail
 CLOSED: [2023-03-29 Wed 22:40]
 
@@ -3976,7 +3992,47 @@ Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Se
 | INDEL | PASS   |        2909 |     2477 |      432 |        3229 |      207 |       519 |    52 |    50 |      0.851495 |         0.923616 |       0.160731 |        0.886091 |                        |                        |        1.4964850615114236 |        1.8339222614840989 |
 | SNP   | ALL    |       38406 |    34793 |     3613 |       36935 |      275 |      1868 |    37 |    15 |      0.905926 |         0.992158 |       0.050575 |        0.947083 |     2.6247759222568168 |     2.5752854654538417 |         1.588953331534934 |        1.6192536889897844 |
 | SNP   | PASS   |       38406 |    34793 |     3613 |       36935 |      275 |      1868 |    37 |    15 |      0.905926 |         0.992158 |       0.050575 |        0.947083 |     2.6247759222568168 |     2.5752854654538417 |         1.588953331534934 |        1.6192536889897844 |
+**** DONE HG003 :hg003:
+CLOSED: [2023-04-16 Sun 00:20]
+#+begin_src sh
+NXF_OPTS=-D"user.name=${USER}" nextflow run main.nf -profile standard,helios  --input /Work/Groups/bisonex/data/giab/GRCh38/HG003_{1,2}.fq.gz -bg
+#+end_src
+#+begin_src  sh
+NXF_OPTS=-D"user.name=${USER}" nextflow run workflows/compareVCF.nf -profile standard,helios -resume --outdir=compareHG003  --test.id=HG003 --test.query=out/HG003_1/variantCalling/haplotypecaller/HG003_1.vcf.gz  --test.compare=vcfeval,happy --test.capture=data/AgilentSureSelectv05_hg38.bed
+#+end_src
+vcfeval
+Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
+----------------------------------------------------------------------------------------------------
+    5.000              36745          36473        486       3988     0.9869       0.9021     0.9426
+     None              36748          36476        495       3985     0.9866       0.9022     0.9425
 
+$ zcat NA12878.snp_roc.tsv.gz  | tail -n 1 | awk '{print $7 $6}'
+
+happy
+Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.Precision  METRIC.Frac_NA  METRIC.F1_Score  TRUTH.TOTAL.TiTv_ratio  QUERY.TOTAL.TiTv_ratio  TRUTH.TOTAL.het_hom_ratio  QUERY.TOTAL.het_hom_ratio
+INDEL    ALL         2731      2290       441         3092       208        577     62     53       0.838521          0.917296        0.186611         0.876141                     NaN                     NaN                   1.505145                   1.888993
+INDEL   PASS         2731      2290       441         3092       208        577     62     53       0.838521          0.917296        0.186611         0.876141                     NaN                     NaN                   1.505145                   1.888993
+  SNP    ALL        37997     34481      3516        36861       306       2074     33     13       0.907466          0.991204        0.056265         0.947488                2.611269                2.565915                   1.555780                   1.621727
+  SNP   PASS        37997     34481      3516        36861       306       2074     33     13       0.907466          0.991204        0.056265         0.947488                2.611269                2.5659
+**** DONE HG004
+CLOSED: [2023-04-16 Sun 00:20]
+#+begin_src sh
+NXF_OPTS=-D"user.name=${USER}" nextflow run main.nf -profile standard,helios  --input /Work/Groups/bisonex/data/giab/GRCh38/HG004_{1,2}.fq.gz -bg
+#+end_src
+
+vcfeval
+Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
+----------------------------------------------------------------------------------------------------
+    6.000              36938          36678        421       4040     0.9887       0.9014     0.9430
+     None              36942          36682        432       4036     0.9884       0.9015     0.9429
+
+
+happy
+ Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.Precision  METRIC.Frac_NA  METRIC.F1_Score  TRUTH.TOTAL.TiTv_ratio  QUERY.TOTAL.TiTv_ratio  TRUTH.TOTAL.het_hom_ratio  QUERY.TOTAL.het_hom_ratio
+INDEL    ALL         2787      2388       399         3183       195        580     53     38       0.856835          0.925086        0.182218         0.889654                     NaN                     NaN                   1.507834                   1.848649
+INDEL   PASS         2787      2388       399         3183       195        580     53     38       0.856835          0.925086        0.182218         0.889654                     NaN                     NaN                   1.507834                   1.848649
+  SNP    ALL        38185     34560      3625        36921       254       2107     46      7       0.905067          0.992704        0.057068         0.946862                2.589175                2.553546                   1.632595                   1.653534
+  SNP   PASS        38185     34560      3625        36921       254       2107     46      7       0.905067          0.992704        0.057068         0.946862                2.589175                2.553546                   1.632595                   1.653534
 **** DONE Résumer résultats pour Paul + article :resultats:
 CLOSED: [2023-04-06 Thu 21:41] SCHEDULED: <2023-04-02 Sun>
 *** TODO Platinum genome
