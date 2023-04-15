@@ -31,19 +31,26 @@ main = hakyll $ do
         route  $ setExtension "html"
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/notitle.html" defaultContext
-            >>= relativizeUrl-- s
+            >>= relativizeUrls
 
-    -- Hack : generate temporary files for correcting metadata
-    match ("posts/*.org" .||. "genetique/*.org") $ do
-        route tempRoute
-        compile $ getResourceString >>= orgCompiler
-
-    match ("_temp/posts/*.org" .||. "_temp/genetique/*.org") $ do
-        route $ cleanRouteFromTemp
+    match "posts/*" $ do
+        route $ setExtension "html"
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/post.html"    postCtx
             >>= loadAndApplyTemplate "templates/default.html" postCtx
             >>= relativizeUrls
+
+    -- -- Hack : generate temporary files for correcting metadata
+    -- match ("posts/*.org" .||. "genetique/*.org") $ do
+    --     route tempRoute
+    --     compile $ getResourceString >>= orgCompiler
+
+    -- match ("_temp/posts/*.org" .||. "_temp/genetique/*.org") $ do
+    --     route $ cleanRouteFromTemp
+    --     compile $ pandocCompiler
+    --         >>= loadAndApplyTemplate "templates/post.html"    postCtx
+    --         >>= loadAndApplyTemplate "templates/default.html" postCtx
+    --         >>= relativizeUrls
 
     -- Don't forget to set the path to temporary files
     create ["archive.html"] $ do
