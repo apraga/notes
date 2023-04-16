@@ -301,9 +301,11 @@ Genome possible
 ** Zone de capture
 GIAB fourni le .bed pour l'exome . INfo : https://support.illumina.com/sequencing/sequencing_kits/nextera-rapid-capture-exome-kit/downloads.html
 * Données :data:
-** TODO Remplacer bam par fastq sur mesocentre
+** DONE Remplacer bam par fastq sur mesocentre
+CLOSED: [2023-04-16 Sun 16:33]
 Commande
-*** STRT Supprimer les fastq non "paired"
+*** DONE Supprimer les fastq non "paired"
+CLOSED: [2023-04-16 Sun 16:33]
 nushell
 Liste des fastq avec "paired-end" manquant
 #+begin_src nu
@@ -359,7 +361,8 @@ On vérifie que les dossiier sont videsj
 
  Puis on supprime
  open single.txt  | lines | each {|e| ls $"fastq/*_($in)" | get 0.name } | ^rm -r $in
-*** TODO Supprimer bam qui ont des fastq
+*** DONE Supprimer bam qui ont des fastq
+CLOSED: [2023-04-16 Sun 16:33]
 On liste les identifiants des fastq et bam dans un tableau avec leur type :
 #+begin_src
 let fastq = (ls fastq/*/*.fastq.gz | get name | parse "{dir}/{full_id}/{id}_{R}_001.fastq.gz"  | select dir id | uniq )
@@ -983,11 +986,6 @@ bedtools intersect -a  dbSNP_common.vcf.gz -b clinvar.vcf.gz
 #+end_src
 $ wc -l intersect.vcf
 220206 intersect.vcf
-*** TODO NA12878
-Doc: https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/NA12878_HG001/latest/README_v4.2.1.txt
-
-Bed : https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/NA12878_HG001/latest/GRCh38/HG001_GRCh38_1_22_v4.2.1_benchmark.bed
-https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/NA12878_HG001/latest/GRCh38/HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz
 ** TODO Dépendences avec Nix
 *** DONE GATK
 CLOSED: [2022-10-21 Fri 21:59]
@@ -1181,7 +1179,7 @@ CLOSED: [2023-04-02 Sun 18:08] SCHEDULED: <2023-04-05 Wed>
 *** KILL Vep
 CLOSED: [2023-04-02 Sun 18:08] SCHEDULED: <2023-04-05 Wed>
 vcf_annotate_ensemblvep
-** TODO Annotation avec nextflow
+** TODO Annotation avec nextflow :annotation:
 *** TODO VEP
 ***** KILL Utiliser --gene-phenotype ?
 CLOSED: [2023-03-15 mer. 13:43]
@@ -1207,10 +1205,13 @@ Non fait par Alexis, oubli a priori
 *** TODO ACMG incidental
 **** TODO Inclure dans vep ?
 *** TODO Grantham
+SCHEDULED: <2023-04-18 Tue>
 *** TODO LRG
+SCHEDULED: <2023-04-18 Tue>
 *** TODO Gnomad
+SCHEDULED: <2023-04-18 Tue>
 
-** DONE Porter exament la version d'Alexis sur Helios
+** DONE Porter exactement la version d'Alexis sur Helios
 CLOSED: [2023-01-14 Sat 17:56]
 Branche "prod"
 ** STRT Tester version d'alexis avec Nix
@@ -1226,7 +1227,6 @@ CLOSED: [2022-11-13 Sun 13:00]
 Problème avec liste des ID
 **** TODO variant annotation
 Besoin de vep
-
 *** TODO Variant calling
 * Amélioration :amelioration:
 * Documentation :doc:
@@ -3010,12 +3010,13 @@ CLOSED: [2023-01-25 Wed 21:58]
 Pas d'impact
 ***** TODO Comparer tsv de sortie
 ***** TODO Regarder où sont les variants différents
-** TODO GIAB Validation : GIAB
+** TODO GIAB Validation :giab:
 https://github.com/ga4gh/benchmarking-tools
 Prérequis :
 - [[*hap.py][hap.py]]
 - [[*NA12878][NA12878]]
-*** TODO GIAB : exome :giab:
+*** DONE GIAB : exome :giab:
+CLOSED: [2023-04-16 Sun 16:33]
 **** Notes
 https://github.com/genome-in-a-bottle/giab_FAQ
 **** Résultats résumés :resultats:
@@ -3032,29 +3033,24 @@ CLOSED: [2023-04-06 Thu 21:41] SCHEDULED: <2023-04-02 Sun>
 | GIAB    | vcfeval   | INDEL   | 0.7598 |    0.7445 |
 | GIAB    | happy     | SNP     | 0.8937 |    0.9621 |
 | giab    | vcfeval   | SNP     | 0.8937 |    0.9621 |
-***** DONE HG002
+***** DONE HG002, HG003, HG004
 CLOSED: [2023-04-14 Fri 11:36] SCHEDULED: <2023-04-14 Fri>
 Capture Agilent
-| Algorithm | Type  |   Recall | Precision |
-| happy     | INDEL | 0.851495 |  0.923616 |
-| happy     | SNP   | 0.905926 |  0.992158 |
-| vcfeval   | indel |   0.8523 |    0.9212 |
-| vcfeval   | snp   |   0.9054 |    0.9934 |
-***** DONE HG003
-CLOSED: [2023-04-16 Sun 00:25] SCHEDULED: <2023-04-14 Fri>
-| Algorithm | Type  | METRIC.Recall | METRIC.Precision |
-| vcfeval   | indel |        0.8363 |           0.9115 |
-| vcfeval   | snp   |        0.9069 |           0.9928 |
-| happy     | INDEL |      0.838521 |         0.917296 |
-| happy     | SNP   |      0.907466 |         0.991204 |
-***** DONE HG004
-CLOSED: [2023-04-16 Sun 00:26]
-| Algorithm | Type  | METRIC.Recall | METRIC.Precision |
-| happy     | INDEL |      0.856835 |         0.925086 |
-| happy     | SNP   |      0.905067 |         0.992704 |
-| vcfeval   | indel |        0.8568 |           0.9240 |
-| vcfeval   | snp   |        0.9048 |           0.9938 |
-**** TODO télécharger données avec Nextflow
+| Patient | Algorithm | Type  |   Recall | Precision |
+| HG002   | happy     | INDEL | 0.851495 |  0.923616 |
+| HG002   | happy     | SNP   | 0.905926 |  0.992158 |
+| HG002   | vcfeval   | indel |   0.8523 |    0.9212 |
+| HG002   | vcfeval   | snp   |   0.9054 |    0.9934 |
+| HG003   | vcfeval   | indel |   0.8363 |    0.9115 |
+| HG003   | vcfeval   | snp   |   0.9069 |    0.9928 |
+| HG003   | happy     | INDEL | 0.838521 |  0.917296 |
+| HG003   | happy     | SNP   | 0.907466 |  0.991204 |
+| HG004   | happy     | INDEL | 0.856835 |  0.925086 |
+| HG004   | happy     | SNP   | 0.905067 |  0.992704 |
+| HG004   | vcfeval   | indel |   0.8568 |    0.9240 |
+| HG004   | vcfeval   | snp   |   0.9048 |    0.9938 |
+**** DONE télécharger données avec Nextflow
+CLOSED: [2023-04-16 Sun 16:32]
 ***** DONE Renommer les chromosomes
 CLOSED: [2023-02-17 Fri 19:30]
 ****** DONE Genome de reference NCBI
@@ -3072,7 +3068,8 @@ picard BedToIntervalList -I exons_illumina.bed  -O exons_illumina.list -SD  ../.
 picard LiftOverIntervalList -I exons_illumina.list  -O exons_illumina_hg38.list --CHAIN hg19ToHg38.over.chain -SD  ../../genome/GRCh38.p13/genomeRef.dict
 - [X] puis en bed
 
-***** TODO VCF de référence
+***** KILL VCF de référence
+CLOSED: [2023-04-16 Sun 16:32]
 ****** DONE NA12878 (HG001)
 CLOSED: [2023-02-25 Sat 19:46]
 ******* DONE Fastq HiSeq
@@ -3096,8 +3093,10 @@ https://ftp-trace.ncbi.nih.gov/ReferenceSamples/giab/data/NA12878/Garvan_NA12878
 CLOSED: [2023-02-24 Fri 23:45]
 ****** DONE Ashkenazy trio HG002, HG003, HGQ004
 CLOSED: [2023-04-06 Thu 21:43] SCHEDULED: <2023-04-01 Sat>
-****** TODO Chinese trio HG005, 6, 7
-***** TODO Fastq :fastq:
+****** KILL Chinese trio HG005, 6, 7
+CLOSED: [2023-04-16 Sun 16:32]
+***** KILL Fastq :fastq:
+CLOSED: [2023-04-16 Sun 16:32]
 ****** DONE NA12878 (HG001)
 CLOSED: [2023-02-25 Sat 19:46]
 ******* DONE Fastq HiSeq
@@ -3129,9 +3128,11 @@ CLOSED: [2023-04-15 Sat 23:24]
 Bam + index + checksum
 https://raw.githubusercontent.com/genome-in-a-bottle/giab_data_indexes/master/AshkenazimTrio/alignment.index.AJtrio_OsloUniversityHospital_IlluminaExome_bwamem_GRCh37_11252015
 
-****** TODO Chinese trio
+****** KILL Chinese trio
+CLOSED: [2023-04-16 Sun 16:32]
 Whole exome pour HG005 seulement
-******* TODO HG005
+******* KILL HG005
+CLOSED: [2023-04-16 Sun 16:32]
 https://raw.githubusercontent.com/genome-in-a-bottle/giab_data_indexes/master/ChineseTrio/alignment.index.Chinesetrio_HG005_OsloUniversityHospital_IlluminaExome_bwamem_GRCh37_11252015
 
 **** DONE NA12878 / HG001 :na12878:
@@ -4041,8 +4042,11 @@ https://emea.illumina.com/platinumgenomes.html
 Discussion avec Paul : sous-traitant ne nous donnera pas les données, il faut commander l'ADN
 ** TODO Fastq avec tous les variants centogène
 *** TODO Extraire liste des variants
+SCHEDULED: <2023-04-17 Mon>
 *** TODO Générer fastq
+SCHEDULED: <2023-04-16 Sun>
 *** TODO Vérifier qu'on les retrouve tous
+SCHEDULED: <2023-04-17 Mon>
 
 ** Divers
 *** DONE Vérifier nombre de reads fastq - bam
