@@ -536,7 +536,7 @@ NB: -nasai = injonction (bossy !)
 ・かなしい = être triste
 ・はずかしい = être embarasssé
 ・きもちがいい／わるい
-・ざんねん[な]. = regretter (une situtaion)
+・ざんねん[な]. = regretter (une situation)
 ・しんぱい[な]
 
 ** Grammaire 
@@ -565,3 +565,27 @@ These work with feeling+て (giving a reason) as it's followed by potential verb
 ムール貝(がい) : moules
 城(しろ) :  château
 蜘蛛(くも ) : araignée
+* <2023-04-11 Tue> Listening comprehension 「満員電車」
+
+Travail sur comprehension
+
+満員電車（まんいんでんしゃ）: un train bondé (NB: bondé peut s’utiliser pour d’autres type de transport)
+第一ン章（だいいちいんしょう）: première impression
+込む（こむ） : être bondé
+空港（くうこう）: avion
+医学生物学 (いがくせいぶつがく) : biologie médicale
+民間研究所(でよかったです) laboratoir privé
+救急医療室(きゅうきゅういりょうしつ) : urgence
+単語(たんご ) : vocabulaire
+昼(ひる ) : midi
+ある日(ひ) : un jour
+〜に限らず（かぎらず）: ne pas se limiter à (forme en -zu)
+国民( こくみん) : citoyen
+ 引退 (いんたい): retraite
+選(えらぶ) : choisir
+いきなり
+〜みたいです
+
+Note:
+「いつも同じ電車に乗ります」= Always, I ride on the same train. 「いつもと同じ電車に乗ります」= I ride on a train that I always use/ride
+le premier = plus l’accent sur "toujours"
