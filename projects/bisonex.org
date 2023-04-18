@@ -4036,6 +4036,9 @@ INDEL   PASS         2787      2388       399         3183       195        580 
   SNP   PASS        38185     34560      3625        36921       254       2107     46      7       0.905067          0.992704        0.057068         0.946862                2.589175                2.553546                   1.632595                   1.653534
 **** DONE Résumer résultats pour Paul + article :resultats:
 CLOSED: [2023-04-06 Thu 21:41] SCHEDULED: <2023-04-02 Sun>
+**** DONE Plot : ashkenazim trio
+CLOSED: [2023-04-18 Tue 21:27] SCHEDULED: <2023-04-16 Sun>
+/Entered on/ [2023-04-16 Sun 17:29]
 *** TODO Platinum genome
 https://emea.illumina.com/platinumgenomes.html
 *** TODO Séquencer NA12878
@@ -4051,3 +4054,6 @@ SCHEDULED: <2023-04-17 Mon>
 ** Divers
 *** DONE Vérifier nombre de reads fastq - bam
 CLOSED: [2022-10-09 Sun 22:31]
+* TODO Plot : ashkenazim trio
+SCHEDULED: <2023-04-16 Sun>
+/Entered on/ [2023-04-16 Sun 17:29]
