@@ -1180,34 +1180,50 @@ CLOSED: [2023-04-02 Sun 18:08] SCHEDULED: <2023-04-05 Wed>
 CLOSED: [2023-04-02 Sun 18:08] SCHEDULED: <2023-04-05 Wed>
 vcf_annotate_ensemblvep
 ** TODO Annotation avec nextflow :annotation:
-*** TODO VEP
-***** KILL Utiliser --gene-phenotype ?
-CLOSED: [2023-03-15 mer. 13:43]
+*** KILL VEP : --gene-phenotype ?
+CLOSED: [2023-04-18 mar. 18:32]
 Vu avec alexis : bases de données non à jour
 https://www.ensembl.org/info/genome/variation/phenotype/sources_phenotype_documentation.html
-***** TODO Plugin pour CADD, pLI, LOEUF ?
-https://www.ensembl.org/info/docs/tools/vep/script/vep_plugins.html#cadd
-CADD: n’a pas réussi à le faire fonctionner
-pLI, LOEUF : non demandé
-***** TODO Utiliser l'option --hgvsg pour remplaer hgvsg.r ?
-Non fait par Alexis, oubli a priori
-***** TODO Ajout spliceAI ?
+*** DONE plugin VEP
+CLOSED: [2023-04-18 mar. 18:32]
+Cloner dépôt git avec plugin
+Puis utiliser --dir_plugins
+
+*** TODO Ajout spliceAI
+plugin VEP
+*** TODO Ajout pLI
+plugin VEP
+*** TODO Ajout LOEUF
+plugin VEP
+*** TODO CADD: remplacer par plugin VEP
+#+begin_src
+vep  -i test.vcf  -o lol.vcf --offline --dir  /Work/Projects/bisonex/data/vep/GRCh38/ --merged --vcf --fasta /Work/Projects/bisonex/data/genome/GRCh38.p13/genomeRef.fna --plugin CADD,/Work/Users/apraga/bisonex/work/13/9287a7fef17ab9365f5696f20710cd/gnomad.genomes.r3.0.snv.tsv.gz,/Work/Users/apraga/bisonex/work/13/9287a7fef17ab9365f5696f20710cd/gnomad.genomes.r3.0.indel.tsv.gz  --dir_plugins ../VEP_plugins/ -v
+#+end_src
+**** TODO Renommer les chromosome avant ...
 *** TODO Spip
 **** TODO Checksum sur données
+*** TODO HGVS
+**** TODO Utiliser l'option --hgvsg pour remplaer hgvsg.r ?
+**** KILL Utiliser variant recoder
+CLOSED: [2023-04-18 mar. 18:33]
+**** TODO Vérifier résultats avec mutalyzer
 *** TODO Filtrer après VEP
 **** TODO Remplacer avec simplement bcftools filter ?
 *** TODO OMIM
-**** TODO Remplacer script R par bcftools ?
 **** TODO Remplacer script R par vep ?
+Devrait être possible avec custom
+https://www.ensembl.org/info/docs/tools/vep/script/vep_custom.html
 *** TODO clinvar
-**** TODO Remplacer script R par bcftools ?
 **** TODO Remplacer script R par vep ?
+Example avec --custom
+https://www.ensembl.org/info/docs/tools/vep/script/vep_custom.html
 *** TODO ACMG incidental
 **** TODO Inclure dans vep ?
 *** TODO Grantham
 SCHEDULED: <2023-04-18 Tue>
-*** TODO LRG
-SCHEDULED: <2023-04-18 Tue>
+*** KILL LRG
+CLOSED: [2023-04-18 mar. 17:22] SCHEDULED: <2023-04-18 Tue>
+Vu avec alexis, n’est plus à jour
 *** TODO Gnomad
 SCHEDULED: <2023-04-18 Tue>
 
