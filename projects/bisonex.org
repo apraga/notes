@@ -1188,37 +1188,35 @@ https://www.ensembl.org/info/genome/variation/phenotype/sources_phenotype_docume
 CLOSED: [2023-04-18 mar. 18:32]
 Cloner dépôt git avec plugin
 Puis utiliser --dir_plugins
+*** TODO Utiliser code d’Alexis
+*** TODO Nouvelle version avec VEP
+**** TODO Ajout spliceAI
+plugin VEP
+**** TODO Ajout pLI
+plugin VEP
+**** KILL Ajout LOEUF
+CLOSED: [2023-04-19 mer. 16:32]
+plugin VEP
+**** TODO Spip avec export VCF
+BED ne semble pas bien marcher (il faut définir une zone)
+VCF : trop d’information
 
-*** TODO Ajout spliceAI
-plugin VEP
-*** TODO Ajout pLI
-plugin VEP
-*** TODO Ajout LOEUF
-plugin VEP
-*** TODO CADD: remplacer par plugin VEP
+On prend la sortie au format table et on le convertit en VCF
+ awk -F'\t' 'NR > 1 {print $1"\t"$2"\t"$3"\t"$4"\t"$5"\t"$6"\t"$7"\tspip="$14}' spip.txt  > spip2.vcf
+
+ + bgzip + tabix
+**** TODO CADD: remplacer par plugin VEP
 #+begin_src
 vep  -i test.vcf  -o lol.vcf --offline --dir  /Work/Projects/bisonex/data/vep/GRCh38/ --merged --vcf --fasta /Work/Projects/bisonex/data/genome/GRCh38.p13/genomeRef.fna --plugin CADD,/Work/Users/apraga/bisonex/work/13/9287a7fef17ab9365f5696f20710cd/gnomad.genomes.r3.0.snv.tsv.gz,/Work/Users/apraga/bisonex/work/13/9287a7fef17ab9365f5696f20710cd/gnomad.genomes.r3.0.indel.tsv.gz  --dir_plugins ../VEP_plugins/ -v
 #+end_src
-**** TODO Renommer les chromosome avant ...
-*** TODO Spip
-**** TODO Checksum sur données
-*** TODO HGVS
-**** TODO Utiliser l'option --hgvsg pour remplaer hgvsg.r ?
-**** KILL Utiliser variant recoder
-CLOSED: [2023-04-18 mar. 18:33]
-**** TODO Vérifier résultats avec mutalyzer
-*** TODO Filtrer après VEP
-**** TODO Remplacer avec simplement bcftools filter ?
-*** TODO OMIM
-**** TODO Remplacer script R par vep ?
-Devrait être possible avec custom
+***** TODO Renommer les chromosome avant ...
+**** TODO HGVS option --hgvsg pour remplaer hgvsg.r ?
+***** TODO Vérifier résultats avec mutalyzer
+**** TODO OMIM
+**** TODO clinvar avec --custom
 https://www.ensembl.org/info/docs/tools/vep/script/vep_custom.html
-*** TODO clinvar
-**** TODO Remplacer script R par vep ?
-Example avec --custom
-https://www.ensembl.org/info/docs/tools/vep/script/vep_custom.html
+**** TODO Filtrer après VEP
 *** TODO ACMG incidental
-**** TODO Inclure dans vep ?
 *** TODO Grantham
 SCHEDULED: <2023-04-18 Tue>
 *** KILL LRG
