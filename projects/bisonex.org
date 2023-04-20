@@ -1193,32 +1193,59 @@ Puis utiliser --dir_plugins
 plugin VEP
 *** TODO Ajout pLI
 plugin VEP
-*** TODO Ajout LOEUF
+*** KILL Ajout LOEUF
+CLOSED: [2023-04-18 Tue 21:44]
 plugin VEP
+Il faut convertir en hg38..
+#+begin_quote
+
+For GRCh38:
+The LOEUF scores are available for assembly GRCh37, to be able to run the plugin for GRCh38
+please remap the regions from file supplementary_dataset_11_full_constraint_metrics.tsv
+After the remapping the file can be tabix-processed by:
+cat supplementary_dataset_11_full_constraint_metrics_grch38.tsv | (head -n 1 && tail -n +2 | sort -t$'\t' -k 76,76 -k 77,77n ) > loeuf_grch38_temp.tsv
+sed '1s/.*/#&/' loeuf_grch38_temp.tsv > loeuf_dataset_grch38.tsv
+bgzip loeuf_dataset_grch38.tsv
+tabix -f -s 76 -b 77 -e 78 loeuf_dataset_grch38.tsv.gz
+#+end_quote
 *** TODO CADD: remplacer par plugin VEP
+**** Test
 #+begin_src
 vep  -i test.vcf  -o lol.vcf --offline --dir  /Work/Projects/bisonex/data/vep/GRCh38/ --merged --vcf --fasta /Work/Projects/bisonex/data/genome/GRCh38.p13/genomeRef.fna --plugin CADD,/Work/Users/apraga/bisonex/work/13/9287a7fef17ab9365f5696f20710cd/gnomad.genomes.r3.0.snv.tsv.gz,/Work/Users/apraga/bisonex/work/13/9287a7fef17ab9365f5696f20710cd/gnomad.genomes.r3.0.indel.tsv.gz  --dir_plugins ../VEP_plugins/ -v
 #+end_src
+
+Test
+#+begin_src sh
+vep --id "1  230710048 230710048 A/G 1"   --offline --dir  /Work/Projects/bisonex/data/vep/GRCh38/ --merged --vcf --fasta /Work/Projects/bisonex/data/genome/GRCh38.p13/genomeRef.fna --plugin CADD,/Work/Users/apraga/bisonex/work/13/9287a7fef17ab9365f5696f20710cd/gnomad.genomes.r3.0.snv.tsv.gz,/Work/Users/apraga/bisonex/work/13/9287a7fef17ab9365f5696f20710cd/gnomad.genomes.r3.0.indel.tsv.gz  --hgvsg --plugin pLI --plugin LOEUF -o lol
+#+end_src
+
+CSQ=G|missense_variant|MODERATE|AGT|ENSG00000135744|Transcript|ENST00000366667|protein_coding|2/5||||843|776|259|M/T|aTg/aCg|||-1||HGNC|HGNC:333||Ensembl||A|A||1:g.230710048A>G|0.347|-0.277922|
+Correspond bien à https://www.ensembl.org/Homo_sapiens/Tools/VEP/Results?tl=I7ZsIbrj14P6lD43-9115494
+**** TODO Utiliser whole genome
 **** TODO Renommer les chromosome avant ...
 *** TODO Spip
 **** TODO Checksum sur données
 *** TODO HGVS
-**** TODO Utiliser l'option --hgvsg pour remplaer hgvsg.r ?
+**** STRT Utiliser l'option --hgvsg pour remplaer hgvsg.r ?
 **** KILL Utiliser variant recoder
 CLOSED: [2023-04-18 mar. 18:33]
 **** TODO Vérifier résultats avec mutalyzer
 *** TODO Filtrer après VEP
-**** TODO Remplacer avec simplement bcftools filter ?
+**** KILL Remplacer avec simplement bcftools filter ?
+CLOSED: [2023-04-18 Tue 23:15]
 *** TODO OMIM
-**** TODO Remplacer script R par vep ?
+**** KILL Remplacer script R par vep ?
+CLOSED: [2023-04-18 Tue 23:15]
+Possible mais il faut reformmater avec le fichier
 Devrait être possible avec custom
 https://www.ensembl.org/info/docs/tools/vep/script/vep_custom.html
 *** TODO clinvar
-**** TODO Remplacer script R par vep ?
+**** STRT Remplacer script R par vep ?
 Example avec --custom
 https://www.ensembl.org/info/docs/tools/vep/script/vep_custom.html
 *** TODO ACMG incidental
-**** TODO Inclure dans vep ?
+**** KILL Inclure dans vep ?
+CLOSED: [2023-04-18 Tue 23:15]
 *** TODO Grantham
 SCHEDULED: <2023-04-18 Tue>
 *** KILL LRG
@@ -4070,6 +4097,6 @@ SCHEDULED: <2023-04-17 Mon>
 ** Divers
 *** DONE Vérifier nombre de reads fastq - bam
 CLOSED: [2022-10-09 Sun 22:31]
-* TODO Plot : ashkenazim trio
-SCHEDULED: <2023-04-16 Sun>
+* DONE Plot : ashkenazim trio
+CLOSED: [2023-04-18 Tue 21:28] SCHEDULED: <2023-04-16 Sun>
 /Entered on/ [2023-04-16 Sun 17:29]

@@ -6113,3 +6113,10 @@ Combo x3 : bkick - tornado - aerial - 720 - raiz
 Trail "Trail'n Loue"
 10km 600M de dénivelé 1h30.
 Pas de pause sur la montée !! Assez douce
+* <2023-04-18 Tue> Tricking
+- bkick 5
+- aerial 5
+- tornado 10
+- tornado alternative 5
+- frontside 720 x5
+- backflip 4
