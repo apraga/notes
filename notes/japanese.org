@@ -473,17 +473,16 @@ ex:
 ことになりました : il a été décidé pour moi (c'est un évènement unique). Ex: il a été décidé que je déménage
 ことになっている : il est convenu = c'est une habitude ! Ex: il est convenu de ne pas fumer ici
 * <2022-06-12 Sun>
-** Grammaire
-Questions indirecte
-- si oui/non : verbe/ajectif + か
-  - 予約できるか　どうか　わかりません
+** Grammaire : questions indirecte
+Je ne sais pas si
+- quesion oui/non : verbe/ajectif + どうか
+  - 予約できるか どうか わかりません = je ne sais pas si je peux faire une réservation
   （よやく）
   - 便利かどうかわかりません
-- question avec "quoi, qui...": pas besoin de どうか
-  - どこに 行くか おしえてください
-  - 何の医者なるか わかりません
-    = je ne sais pas quel sorte de médecin je veux être
-
+- question "quoi, qui...": pas besoin de どうか
+  - 何の医者なるか わかりません = = je ne sais pas quel sorte de médecin je veux être
+  - どこに 行くか おしえてください : dis moi ou aller
+Il y a une subtile différence entre  どうか et か : premier = "whether", second = si
 * <2023-02-26 Sun> - Aya-sensei : discussion
 Grammaire
 -ta koto ga arimasu : déjà fait
@@ -589,3 +588,20 @@ Travail sur comprehension
 Note:
 「いつも同じ電車に乗ります」= Always, I ride on the same train. 「いつもと同じ電車に乗ります」= I ride on a train that I always use/ride
 le premier = plus l’accent sur "toujours"
+* <2023-04-22 Sat>
+** Vocabulaire
+泊まる(と) : rester (à un hôtel)
+翻訳（ほんやく）: traduction
+時給（じきゅう）: salaire horaire
+いいアイデアです: une bonne idée
+ 編み物(あみもの) : couture
+ 衛生検査所（えいせいけんさじょ）: laboratoire de biologie
+ ベルトコンベアう: tapis roulant
+看護師(かんごし): infirmière
+コンサルタント: consultant
+
+医者は貧血の検査をするためサンプルを分析した  : le doctor a fait une analyse de sang sur un échantillon pour anémie
+いしゃ　ひんけつ　けんさ　ぶんせき
+** Grammaire
+Voir  [[*Grammaire : questions indirecte][Grammaire : questions indirecte]]
+Prochaine leçon : travailler questions indirecte
