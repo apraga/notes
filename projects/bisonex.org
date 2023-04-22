@@ -25,11 +25,9 @@ encoded as alleles values separated by either of ”/” or “|”, e.g. The al
 Attention, génome et en hg19 donc comparaison non adaptée ...
 
 **** TODO Best practices for the analytical validation of clinical whole-genome sequencing intended for the diagnosis of germline disease
-SCHEDULED:   <2023-04-06 Thu>
 https://www.nature.com/articles/s41525-020-00154-9
 Recommandations générale pour genome, sans données brutes
 **** TODO [#A] Performance assessment of variant calling pipelines using human whole exome sequencing and simulated data
-SCHEDULED: <2023-04-06 Thu>
 https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2928-9
 1. variant calling seul
 2. NA12878 + données simulées
@@ -1265,7 +1263,7 @@ Besoin de vep
 ** DONE Procédure d'installation nix + dependences pour VM CHU
 CLOSED: [2023-04-22 Sat 15:27] SCHEDULED: <2023-04-13 Thu>
 * Manuscript :manuscript:
-* Tests :tests:hg002:
+* Tests :tests:
 ** WAIT Non régression : version prod
 *** DONE ID common snp
 CLOSED: [2022-11-19 Sat 21:36]
@@ -4075,13 +4073,27 @@ CLOSED: [2023-04-18 Tue 21:27] SCHEDULED: <2023-04-16 Sun>
 https://emea.illumina.com/platinumgenomes.html
 *** TODO Séquencer NA12878
 Discussion avec Paul : sous-traitant ne nous donnera pas les données, il faut commander l'ADN
-** TODO Fastq avec tous les variants centogène
-*** TODO Extraire liste des variants
+** TODO Fastq avec tous les variants centogène :centogene:
+*** DONE Extraire liste des SNVs
+CLOSED: [2023-04-22 Sat 17:32] SCHEDULED: <2023-04-17 Mon>
+**** DONE Corriger manquant à la main
+CLOSED: [2023-04-22 Sat 17:31]
+**** DONE Automatique
+CLOSED: [2023-04-22 Sat 17:31]
+*** TODO Convert SNVs : trnascript -> génomique avec variant_recoder
+SCHEDULED: <2023-04-22 Sat>
+*** TODO Extraire liste des CNVs
 SCHEDULED: <2023-04-17 Mon>
-*** TODO Générer fastq
-SCHEDULED: <2023-04-16 Sun>
+*** TODO Générer fastq avec simuscop
+SCHEDULED: <2023-04-22 Sat>
+**** TODO Génerer un profile
+SCHEDULED: <2023-04-22 Sat>
+NA12878 mais à refaire avec un vrai séquencage
+**** TODO Générer les données
+SCHEDULED: <2023-04-22 Sat>
+Quelle capture ???
 *** TODO Vérifier qu'on les retrouve tous
-SCHEDULED: <2023-04-17 Mon>
+SCHEDULED: <2023-04-22 Sat>
 
 ** Divers
 *** DONE Vérifier nombre de reads fastq - bam
