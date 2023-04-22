@@ -2132,18 +2132,21 @@ SCHEDULED: <2023-04-14 Fri>
 CLOSED: [2023-04-13 Thu 09:11] SCHEDULED: <2023-04-12 Wed>
 *** DONE Message avec les bouquets
 CLOSED: [2023-04-13 Thu 09:11] SCHEDULED: <2023-04-13 Thu>
-*** TODO Remboursement [1/5]
+*** TODO Remboursement [4/5]
 SCHEDULED: <2023-04-20 Thu>
-**** WAIT Aurélien
-**** WAIT Élise
+**** DONE Aurélien
+CLOSED: [2023-04-22 Sat 15:27]
+**** DONE Élise
+CLOSED: [2023-04-22 Sat 15:27]
 **** TODO Yvain
-**** TODO Papa
-**** DONE Thierre
+**** DONE Papa
+CLOSED: [2023-04-22 Sat 15:27]
+**** DONE Thierry
 CLOSED: [2023-04-13 Thu 09:12]
 *** TODO Carte personnalisée
 SCHEDULED: <2023-04-17 Mon>
-** TODO Don index nzb
-SCHEDULED: <2023-04-19 Wed>
+** DONE Don index nzb
+CLOSED: [2023-04-22 Sat 15:27] SCHEDULED: <2023-04-19 Wed>
 /Entered on/ [2023-04-16 Sun 16:53]
 * Nix
 ** GATK
