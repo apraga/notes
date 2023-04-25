@@ -11,7 +11,8 @@ CLOSED: [2023-01-30 Mon 12:04]
 :CATEGORY: harry potter
 :END:
 *** DONE [[file:notes/reviews/sacrifice_arc.org][Sacrifice Arc]]
-*** STRT Benefits of Old Laws
+*** DONE Benefits of Old Laws
+CLOSED: [2023-04-24 Mon 19:55]
 *** TODO Pride of time
 *** DONE [[file:notes/reviews/arithmancer.org][Harry Potter and the Methods of Rationality]]
 *** DONE The Arithmancer

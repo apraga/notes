@@ -4078,10 +4078,74 @@ Discussion avec Paul : sous-traitant ne nous donnera pas les données, il faut c
 CLOSED: [2023-04-22 Sat 17:32] SCHEDULED: <2023-04-17 Mon>
 **** DONE Corriger manquant à la main
 CLOSED: [2023-04-22 Sat 17:31]
+La sortie est sauvegardé dans git-annex : variants_success.csv
 **** DONE Automatique
 CLOSED: [2023-04-22 Sat 17:31]
-*** TODO Convert SNVs : trnascript -> génomique avec variant_recoder
+*** TODO Convert SNVs : transcript -> génomique
+**** TODO Variant_recoder
 SCHEDULED: <2023-04-22 Sat>
+***** KILL Haskell: 160 manquant : recoded-success.csv
+CLOSED: [2023-04-25 Tue 18:32]
+La liste des variants a été générée en Haskell et nettoyée à la main.
+On générer une liste de variant pour variant_recoder et on soumet tout d'un coup.
+[[file:~/recherche/bisonex/parsevariants/app/Main.hs][parsevariant]]
+#+begin_src haskell
+recodeVariant = do
+  prepareVariantRecod   er "variant_success.csv" "renamed.csv"
+  runVariantRecoder "renamed.csv" "recoded.json"
+#+end_src
+
+#+RESULTS:
+: <interactive>:4:3-19: error:
+:     Variable not in scope: runVariantRecoder :: String -> String -> t
+: gh
+
+Problème : 160 n'ont pas pu être lu sur 820, probablement à cause du numéro mineur de transcrit
+La sortie est sauvegardé dans git-annex : variants-recoded-raw.json.
+
+***** KILL Julia
+CLOSED: [2023-04-25 Tue 18:32]
+On regénère la liste de variant et on passe à Julia pour préparer l'appel en parallèle à variant recoder
+[[file:~/recherche/bisonex/parsevariants/variantRecoder.jl][variantRecoder.jl]]
+#+begin_src julia
+setupVariantRecoder(unique(init), n)
+#+end_src
+
+Puis
+#+begin_src sh
+parallel -a parallel-recoder.sh --jobs 10
+#+end_src
+On récupère les résultats
+#+begin_src julia
+(fails, success) = mergeVariantRecoder(n)
+CSV.write(fSuccess, success)
+CSV.write(fFailures, fails)
+#+end_src
+
+Certains variants ne sont pas trouvé, donc on prépare un nouveau job en enlevant les versionrs mineures des transcrits
+#+begin_src julia
+
+# Cleanup json and txt
+if isfile(fSuccess) && isfile(fFailures)
+    foreach(rm, variantRecoderInput())
+    foreach(rm, variantRecoderOutput())
+end
+redoFails(fFailures)
+#+end_src
+Puis
+#+begin_src sh
+parallel -a parallel-recoder.sh --jobs 3
+#+end_src
+Il manque encore 70 transcrits
+***** DONE Julia avec mobidetails: recode-failures-mobidetails.csv
+CLOSED: [2023-04-25 Tue 18:58]
+Nouvelle stratégie : on essaie une fois variant recoder.
+Pour tous les échecs, on utilise mobidetails (~170).
+Si l'ID n'est pas trouvé, on incrémente le numéro de version 2 fois
+
+***** Reste une dizaine à corriger à la main
+Erreur de parsing, manque souvent un -
+
 *** TODO Extraire liste des CNVs
 SCHEDULED: <2023-04-17 Mon>
 *** TODO Générer fastq avec simuscop
