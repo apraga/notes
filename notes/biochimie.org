@@ -884,7 +884,7 @@ Principal moyen d'échanger des groupes amines entre les différents organes
 ** Ammionaque : Vie : pH
 Tubule collecteur : H^{+} sécrété va se combiner à NH_3 pour excréter ion ammoniaque. Un ion biocarbonate va retourner dans le sang
 
-[[file:~/org/images/biochimie/tampon-ammoniaque.png]]
+[[../images/biochimie/tampon-ammoniaque.png]]
 
 Acide : augmentnation de la sécrétion d'ion ammoniaque
 ** Ammionaque : Mort
@@ -894,7 +894,7 @@ Acide : augmentnation de la sécrétion d'ion ammoniaque
 
 2. Intra-hépatique : cycle de l'urée = converti en urée
 ** Ammionaque : Mort : cycle de l'urée
-[[file:~/org/images/biochimie/cycle-uree.png]]
+[[../images/biochimie/cycle-uree.png]]
 
 Mitochondrie foie : ammoniac + bicarbonate catalés par cPS1 (carbamylphosphate synthase 1)
 (Celle-ci provient du glutamate + acetylco)
