@@ -195,6 +195,14 @@ notre = C/CA
 #+RESULTS:
 : NC_000022.11    31277416        .       CA      C       50      PASS    platforms=3;platformnames=Illumina,PacBio,10X;datasets=3;datasetnames=HiSeqPE300x,CCS15kb_20kb,10XChromiumLR;callsets=4;callsetnames=HiSeqPE300xGATK,CCS15kb_20kbDV,10XLRGATK,HiSeqPE300xfreebayes;datasetsmissingcall=CCS15kb_20kb,CGnormal,IonExome,SolidSE75bp;callable=CS_HiSeqPE300xGATK_callable;difficultregion=GRCh38_AllHomopolymers_gt6bp_imperfectgt10bp_slop5,GRCh38_SimpleRepeat_imperfecthomopolgt10_slop5  GT:PS:DP:ADALL:AD:GQ    1/1:.:465:16,229:0,190:129
 : NC_000022.11    31277416        rs57244615      CAA     C,CA    389.02  PASS    AC=1,1;AF=0.5,0.5;AN=2;BaseQRankSum=0.37;DB;DP=37;ExcessHet=0;FS=0;MLEAC=1,1;MLEAF=0.5,0.5;MQ=60;MQRankSum=0;QD=13.41;ReadPosRankSum=-0.651;SOR=0.572    GT:AD:DP:GQ:PL  1/2:5,10,14:29:64:406,202,313,64,0,88
+*** Génération de reads
+Biblio : https://www.nature.com/articles/s41437-022-00577-3
+Non mentionné : on teste simuscop qui permet de faire des données d'exome
+Ne fait pas les delins ni inv
+Liste ancienne : https://www.biostars.org/p/128762/
+
+Reseq fait de l'exome aussi
+https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02265-7
 * Idées
 ** Validation analytique
 mail Yannis : données patients +/- simulées
@@ -298,6 +306,12 @@ Autres technologies non adaptées au pipeline (vu avec Alexis)
 Genome possible
 ** Zone de capture
 GIAB fourni le .bed pour l'exome . INfo : https://support.illumina.com/sequencing/sequencing_kits/nextera-rapid-capture-exome-kit/downloads.html
+** Centogène
+https://www.twistbioscience.com/node/23906
+Bed non fourni pour exactement cette capture
+On prend https://www.twistbioscience.com/resources/data-files/twist-alliance-vcgs-exome-401mb-bed-files
+qui content la majeure partie
+
 * Données :data:
 ** DONE Remplacer bam par fastq sur mesocentre
 CLOSED: [2023-04-16 Sun 16:33]
@@ -4082,12 +4096,12 @@ La sortie est sauvegardé dans git-annex : variants_success.csv
 **** DONE Automatique
 CLOSED: [2023-04-22 Sat 17:31]
 *** TODO Convert SNVs : transcript -> génomique
-**** TODO Variant_recoder
-SCHEDULED: <2023-04-22 Sat>
+**** DONE Variant_recoder
+CLOSED: [2023-04-26 Wed 21:21] SCHEDULED: <2023-04-22 Sat>
 ***** KILL Haskell: 160 manquant : recoded-success.csv
 CLOSED: [2023-04-25 Tue 18:32]
-La liste des variants a été générée en Haskell et nettoyée à la main.
-On générer une liste de variant pour variant_recoder et on soumet tout d'un coup.
+La liste des variants a été générée en Haskel   l et nettoyée à la main.
+On générer une liste de variant pour variant_rec            oder et on soumet tout d'un coup.
 [[file:~/recherche/bisonex/parsevariants/app/Main.hs][parsevariant]]
 #+begin_src haskell
 recodeVariant = do
@@ -4137,27 +4151,154 @@ Puis
 parallel -a parallel-recoder.sh --jobs 3
 #+end_src
 Il manque encore 70 transcrits
-***** DONE Julia avec mobidetails: recode-failures-mobidetails.csv
+**** DONE Julia avec mobidetails: recode-failures-mobidetails.csv
 CLOSED: [2023-04-25 Tue 18:58]
 Nouvelle stratégie : on essaie une fois variant recoder.
 Pour tous les échecs, on utilise mobidetails (~170).
 Si l'ID n'est pas trouvé, on incrémente le numéro de version 2 fois
 
-***** Reste une dizaine à corriger à la main
-Erreur de parsing, manque souvent un -
+**** DONE Reste une dizaine à corriger à la main
+CLOSED: [2023-04-26 Wed 21:21]
+- [X] certains transcrits ont juste été supprimé
+- [X] Erreur de parsing, manque souvent un -
+#+begin_src julia
+lastTryMobidetails("recoded-failures-mobidetails.csv")
+#+end_src
+**** DONE Fusionner données
+CLOSED: [2023-04-26 Wed 22:35]
+#+begin_src julia
+function mergeAllGenomic()
+    dNew = mergeAll("recoded-success.csv",
+                    "recoded-failures-mobidetails.csv",
+                    "recoded-failures-mobidetails-redo.csv")
 
+    dInit = @chain DataFrame(CSV.File("variant_success.csv")) begin
+        @transform :transcript = :transcript .* ":" .* :coding .* :codingPos .* :codingChange
+        @select :file :transcript :classification :zygosity
+        @rename :classificationCentogene = :classification
+    end
+    dTmp = outerjoin(dInit, dNew, on = :transcript)
+    CSV.write("variant_genomic.csv", dTmp)
+end
+
+fSuccess = "recoded-success.csv"
+fFailures = "recoded-failures.csv"
+
+# variantRecoder(fSuccess, fFailures)
+# mobidetailsOnFailures(fFailures)
+# lastTryMobidetails("recoded-failures-mobidetails.csv")
+mergeAllGenomic()
+
+
+#+end_src
+**** DONE Formatter donner pour simuscop
+CLOSED: [2023-04-28 Fri 11:55] SCHEDULED: <2023-04-26 Wed>
 *** TODO Extraire liste des CNVs
+
 SCHEDULED: <2023-04-17 Mon>
-*** TODO Générer fastq avec simuscop
-SCHEDULED: <2023-04-22 Sat>
-**** TODO Génerer un profile
-SCHEDULED: <2023-04-22 Sat>
+*** TODO Entrainer le modèle sur 63003856/
+Relancer le modèle pour être sûr
+*** DONE Générer fastq avec simuscop (del et ins seulement) 20x
+CLOSED: [2023-04-28 Fri 23:35] SCHEDULED: <2023-04-22 Sat>
+**** DONE Génerer un profile avec bed de centogène
+CLOSED: [2023-04-28 Fri 11:54] SCHEDULED: <2023-04-22 Sat>
 NA12878 mais à refaire avec un vrai séquencage
-**** TODO Générer les données
+Voir [[*Centogène][Bed Centogène]] pour choix
+**** DONE Générer les données en 20x
+CLOSED: [2023-04-28 Fri 11:54] SCHEDULED: <2023-04-22 Sat>
+capture de centogene
+**** DONE Regénérer en supprimant les doublons
+CLOSED: [2023-04-28 Fri 17:28]
+*** TODO Générer fastq avec 50x
+ex sur chr11:16,014,966 où on a 11 reads dans la simulation contre 200 !
+*** TODO Vérifier tous les variants sont retrouvés
 SCHEDULED: <2023-04-22 Sat>
-Quelle capture ???
-*** TODO Vérifier qu'on les retrouve tous
-SCHEDULED: <2023-04-22 Sat>
+**** TODO Après alignement
+SCHEDULED: <2023-04-28 Fri>
+***** DONE SNV: avec doublons
+CLOSED: [2023-04-28 Fri 18:12]
+On utilise [[file:~/recherche/bisonex/simuscop/checkBam.jl][checkBam.jl]]
+#+begin_src julia
+d = prepareVariant("../parsevariants/variant_genomic.csv")
+
+root = "/home/alex/code/bisonex/simuscop-centogene/cento"
+bam = root * "/preprocessing/applybqsr/cento.bam"
+bai = root * "/preprocessing/recalibrated/cento.bam.bai"
+
+snv = getSNV(d, bam, bai)
+#+end_src
+Nombreux faux homozygouteS
+Vérification avec checkFalseHemizygous(snv) : nombreux doublons dans le fichier pour simuscop...
+***** TODO SNV sans doublons
+****** WAIT 18 faux homozygote mais avec peu de reads
+
+julia> @subset snv :refCount .== 0 :altCount .> 0 :zygosity .== "heterozygous"
+
+18×10 DataFrame
+ Row │ chrom         pos        variant         variantType  zygosity      ref        alt        refCount  altCount  readsCount
+     │ SubStrin…?    Int64      SubStrin…?      String?      String15      SubStrin…  SubStrin…  Int64     Int64     Int64
+─────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ NC_000022.11   42213078  g.42213078T>G   snv          heterozygous  T          G                 0         1           1
+   2 │ NC_000012.12  101680427  g.101680427C>A  snv          heterozygous  C          A                 0         3           3
+   3 │ NC_000014.9   105385684  g.105385684G>C  snv          heterozygous  G          C                 0         4           4
+   4 │ NC_000011.10  125978299  g.125978299C>T  snv          heterozygous  C          T                 0         3           3
+   5 │ NC_000023.11   77998618  g.77998618C>T   snv          heterozygous  C          T                 0         2           2
+   6 │ NC_000015.10   66703292  g.66703292C>T   snv          heterozygous  C          T                 0         3           3
+   7 │ NC_000010.11   87961118  g.87961118G>A   snv          heterozygous  G          A                 0         3           3
+   8 │ NC_000012.12  112477719  g.112477719A>G  snv          heterozygous  A          G                 0         2           2
+   9 │ NC_000020.11    6778406  g.6778406C>T    snv          heterozygous  C          T                 0         3           3
+  10 │ NC_000023.11   68192943  g.68192943G>A   snv          heterozygous  G          A                 0         2           2
+  11 │ NC_000004.12     987858  g.987858C>T     snv          heterozygous  C          T                 0         3           4
+  12 │ NC_000015.10   66435145  g.66435145G>A   snv          heterozygous  G          A                 0         1           2
+  13 │ NC_000002.12   47809595  g.47809595C>T   snv          heterozygous  C          T                 0         2           2
+  14 │ NC_000003.12  136477305  g.136477305C>G  snv          heterozygous  C          G                 0         4           4
+  15 │ NC_000005.10  157285458  g.157285458C>T  snv          heterozygous  C          T                 0         3           3
+  16 │ NC_000012.12   23604413  g.23604413T>G   snv          heterozygous  T          G                 0         5           5
+  17 │ NC_000019.10   52219703  g.52219703C>T   snv          heterozygous  C          T                 0         1           1
+  18 │ NC_000016.10   88856757  g.88856757C>T   snv          heterozygous  C          T                 0         8           8
+
+****** DONE 8 non retrouvé => probablement hors de la zjone de capture
+CLOSED: [2023-04-28 Fri 19:49]
+julia> @subset snv :refCount .== 0 :altCount .== 0
+8×10 DataFrame
+ Row │ chrom         pos        variant         variantType  zygosity      ref        alt        refCount  altCount  readsCount
+     │ SubStrin…?    Int64      SubStrin…?      String?      String15      SubStrin…  SubStrin…  Int64     Int64     Int64
+─────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ NC_000015.10   74343027  g.74343027C>T   snv          heterozygous  C          T                 0         0           0
+   2 │ NC_000011.10   20638345  g.20638345A>G   snv          heterozygous  A          G                 0         0           0
+   3 │ NC_000004.12  139370252  g.139370252C>T  snv          heterozygous  C          T                 0         0           2
+   4 │ NC_000017.11   61966475  g.61966475G>T   snv          heterozygous  G          T                 0         0           0
+   5 │ NC_000019.10   54144058  g.54144058G>A   snv          heterozygous  G          A                 0         0           0
+   6 │ NC_000023.11   77635947  g.77635947A>G   snv          hemizygous    A          G                 0         0           0
+   7 │ NC_000005.10    1258495  g.1258495G>A    snv          heterozygous  G          A                 0         0           0
+   8 │ NC_000012.12    2449086  g.2449086C>G    snv          heterozygous  C          G                 0         0           0
+
+**** TODO Après haplotypecaller
+SCHEDULED: <2023-04-28 Fri>
+Manque 183 sur 766
+[[file:~/recherche/bisonex/simuscop/checkVCF.jl][checkVCF.jl]]
+#+begin_src julia
+@subset leftjoin(d2, dHaplo2, on=:genomic) ismissing.(:Column1)
+#+end_src
+Problème de profondeur ?
+Ex: chr13 nombre de 101081606
+NC_000011.10   16014966  g.16014966G>A
+1 read sur 11 pour allèle alternative
+Sur le patient de référence, 202 reads!
+
+Celui-ci n'est pas le fichier de capture (ni dans le bam !)
+ex: NC_000015.10   74343027  g.74343027C>T
+
+Pour les autres, on devrait les retrouver...
+
+Vérifier le nombre de reads sur 63003856
+Vérifier la paramétrisation du modèle également
+
+**** TODO Après annotation
+SCHEDULED: <2023-04-28 Fri>
+Il en manque !
+**** TODO Après filtre annotation
+
 
 ** Divers
 *** DONE Vérifier nombre de reads fastq - bam

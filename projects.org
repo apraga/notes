@@ -2143,11 +2143,15 @@ CLOSED: [2023-04-22 Sat 15:27]
 CLOSED: [2023-04-22 Sat 15:27]
 **** DONE Thierry
 CLOSED: [2023-04-13 Thu 09:12]
-*** TODO Carte personnalisée
-SCHEDULED: <2023-04-17 Mon>
+*** DONE Carte personnalisée
+CLOSED: [2023-04-26 Wed 21:10] SCHEDULED: <2023-04-17 Mon>
 ** DONE Don index nzb
 CLOSED: [2023-04-22 Sat 15:27] SCHEDULED: <2023-04-19 Wed>
 /Entered on/ [2023-04-16 Sun 16:53]
+** WAIT Remboursement TER Grenoble du 9 avril
+SCHEDULED: <2023-05-03 Wed>
+/Entered on/ [2023-04-26 Wed 21:03]
+Demande envoyé <2023-04-26 Wed>
 * Nix
 ** GATK
 *** DONE Binaire
