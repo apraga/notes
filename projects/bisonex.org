@@ -4215,7 +4215,7 @@ CLOSED: [2023-04-28 Fri 11:55] SCHEDULED: <2023-04-26 Wed>
 *** TODO Extraire liste des CNVs
 
 SCHEDULED: <2023-04-17 Mon>
-*** WAIT Simuscop
+*** WAIT Simuscop :simuscop:
 **** DONE Entrainer le modèle sur 63003856/
 CLOSED: [2023-04-29 Sat 19:56]
 Relancer le modèle pour être sûr
@@ -4230,9 +4230,16 @@ CLOSED: [2023-04-28 Fri 11:54] SCHEDULED: <2023-04-22 Sat>
 capture de centogene
 ***** DONE Regénérer en supprimant les doublons
 CLOSED: [2023-04-28 Fri 17:28]
-**** DONE Générer fastq avec differentes couverturse
+**** DONE Quelle couverture ?
 CLOSED: [2023-04-29 Sat 18:26]
 ex sur chr11:16,014,966 où on a 11 reads dans la simulation contre 200 !
+***** 200 est la plus proche
+#+attr_html: :width 500px
+[[./simuscop-200-chr1-1.png]]
+
+#+attr_html: :width 500px
+[[./simuscop-200-chr1-2.png]]
+
 ***** DONE 20x
 CLOSED: [2023-04-29 Sat 15:38]
 ***** DONE 50x
@@ -4241,18 +4248,18 @@ CLOSED: [2023-04-29 Sat 15:38]
 CLOSED: [2023-04-29 Sat 15:39]
 ***** DONE 200x
 CLOSED: [2023-04-29 Sat 15:39]
-**** DONE Reads mal centrés !!
+**** DONE Reads mal centrés sur des petits exons seuls
 CLOSED: [2023-04-29 Sat 19:56] SCHEDULED: <2023-04-29 Sat>
 Capture ok : [[https://genome-euro.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr1%3A153817168%2D153817824&hgsid=296556270_F4fkENLPXHXidi2oALXls2jxNH9l][UCSC]] (track noire)
 Mais mauvaise répartitiopn
 #+attr_html: :width 800px
+[[./simuscop-error.png]]
 
 À tester
 - Problème de profile ?
   - mauvais patient ?
   - mauvaise génération ? -> comparer avec ceux donnés sur github
 - nom des chromosomes ?
-[[./simuscop-error.png]]
 ***** DONE [#A] Tester sur exon 6 GATAD2B pour NC_000001.11:g.153817496A>T
 CLOSED: [2023-04-29 Sat 19:56] SCHEDULED: <2023-04-29 Sat>
 ****** DONE Configuration + Profile 63003856.profile: idem, mal centré
@@ -4350,10 +4357,42 @@ git clone https://github.com/qasimyu/simuscop/
 cd simuscop
 simuReads configFiles/config_test_wes.txt
 #+end_src
-****** HOLD Centrer la fenêtre sur les zones de capture
-SCHEDULED: <2023-04-29 Sat>
+****** KILL Centrer la fenêtre sur les zones de capture
+CLOSED: [2023-04-30 Sun 13:28] SCHEDULED: <2023-04-29 Sat>
 1000bp par défaut, ce qui est plus grand que les zones de captures...
 Changer fragzip ne fonctionne pas
+
+Si on rajoute un offset sur l'exon: 200bp, est encore plus allongé
+NC_000001.11 153817371 153817542 ->
+NC_000001.11 153817171 153817742
+
+Si on désactive les target ?
+Regarder les target sur le chromosome 1
+#+begin_src sh :dir ~/code/bisonex/test-simuscop :results silent
+scp meso:/Work/Projects/bisonex/data/simuscop/VCGS_Exome_Covered_Targets_hg38_40.1MB_renamed.bed .
+#+end_src
+
+#+begin_src sh :dir ~/code/bisonex/test-simuscop :results silent
+head -n 100 VCGS_Exome_Covered_Targets_hg38_40.1MB_renamed.bed > 100exons.bed
+echo -e "s\tsingle\tNC_000001.11\t153817496\tA\tT\thet"> variant.txt
+cat > config_wes.txt << EOL
+ref = genomeRef.fna
+profile = ./63003856.profile
+variation = ./variant.txt
+layout = PE
+threads = 4
+target = 100exons.bed
+name = single
+output = test-gatad2b
+coverage = 200
+EOL
+./simuscop/bin/simuReads config_wes.txt
+bwa mem bwa/genomeRef test-gatad2b/single_1.fq  test-gatad2b/single_2.fq | samtools sort  -o single.bam
+samtools index single.bam
+#+end_src
+
+
+
 **** KILL Vérifier tous les variants sont retrouvés
 CLOSED: [2023-04-29 Sat 19:56] SCHEDULED: <2023-04-22 Sat>
 ***** DONE Après alignement
@@ -4446,7 +4485,7 @@ CLOSED: [2023-04-29 Sat 19:56] SCHEDULED: <2023-04-28 Fri>
 Il en manque !
 ***** KILL Après filtre annotation
 CLOSED: [2023-04-29 Sat 19:56]
-*** KILL NEAT
+*** KILL NEAT : trop lent :neat:
 CLOSED: [2023-04-29 Sat 22:06]
 **** KILL Génération fastq sur exno 5 GATAD2B
 CLOSED: [2023-04-29 Sat 22:06]
@@ -4455,12 +4494,13 @@ Trop lent : pour 1 exon : 1500 secondes !
 samtools faidx genomeRef.fna NC_000001.11 | save -f genomeRef_chr1.fna
 python gen_reads.py  -r ../test-simuscop/genomeRef_chr1.fna -o lol  -tr ../test-simuscop/gatad2b-exon6.bed  -R 147 --pe 150 10
 #+end_src
-*** TODO ReSeq
-SCHEDULED: <2023-04-29 Sat>
+*** KILL ReSeq : ne gère pas des exons trop petits :reseq:
+CLOSED: [2023-04-30 Sun 09:52] SCHEDULED: <2023-04-29 Sat>
 #+begin_quote
 Can I simulate exome sequencing? Yes. You need to use a reference that only contains the exons as individual scaffolds. Using --refBiasFile you can specify the coverage of individual exons. To simulate intron contamination you can add the whole reference to the reference containing the exons and strongly reduce the coverage for these scaffolds using --refBiasFile.
 #+end_quote
-**** TODO Fasta pour exons seuls
+**** KILL Fasta pour exons seuls
+CLOSED: [2023-04-30 Sun 09:52]
 Depuis le GFF
 #+begin_src sh :dir ~/code/bisonex/test-reseq
 wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.25_GRCh37.p13/GCF_000001405.25_GRCh37.p13_genomic.gff.gz
@@ -4492,7 +4532,146 @@ bedtools getfasta -fi GCF_000001405.25_GRCh37.p13_genomic.fna -bed exons.gff -fo
 A tester avec un profile déjà fait :
 https://github.com/schmeing/ReSeq-profiles/tree/master/profiles
 
-reseq illuminaPE -j 32 -R my_reference.fa -s my_mappings.bam.reseq --ipfIterations 0 -1 my_simulated_data_1.fq -2 my_simulated_data_2.fq
+On cherche l'exons qui nous intéresse
+ NC_000001.11 g.153817496 A>T
+N'y est pas ??
+
+On test sur les 2 premiers
+
+#+begin_src
+head exons.fa -n 2 > 2exons.fna
+#+end_src
+
+
+#+begin_src sh
+../ReSeq/bin/reseq illuminaPE -j 32 -R exons.fa -s Ec-Hi2000-TruSeq.reseq --ipfIterations 0 -1 reseq-sim_1.fq reseq_sim_2.fq
+#+end_src
+
+#+begin_quote
+error: All reference sequences are too short for simulating. They should have at least 1991 bases
+#+end_quote
+
+#+begin_src sh
+grep '^>NC_000001.10' exons.fa  | sed 's/:/,/;s/-/,/;s/^>//' > exons.csv
+#+end_src
+*** DONE ART : fonctionne très mal en targeted
+CLOSED: [2023-04-30 Sun 11:49] SCHEDULED: <2023-04-30 Sun>
+**** DONE Génération de reads
+CLOSED: [2023-04-30 Sun 11:49]
+***** DONE Avec seulement les exons en séquence
+CLOSED: [2023-04-30 Sun 10:24]
+ head -n6 exons.fa | save three-exons.fna
+
+../art_bin_MountRainier/art_illumina -ss HS25 -i three-exons.fna -o ./paired_end_com -l 150 -f 10 -p -m 500 -s 10 -sam
+
+Le sam n'est pas visible sur igv mais si on aligne avec bwa mem, on a quelques reads
+***** DONE Extraire une zone de capture dans le fasta
+CLOSED: [2023-04-30 Sun 11:49]
+ NC_000001.11 g.153817496 A>T
+****** DONE Essai 1: ne dépasse pas la zone
+CLOSED: [2023-04-30 Sun 10:49]
+#+begin_src sh :dir ~/code/bisonex/test-art :results silent
+echo -e "NC_000001.11\t153817371\t153817542" > gatad2b-exon6.bed
+bedtools getfasta -fi ../test-simuscop/genomeRef.fna -bed gatad2b-exon6.bed -fo gatad2b-exon6.fa
+#+end_src
+
+-ss HS25 : nom du profile illumina
+-l 150 : reads de 150
+-f 10 : coverage de 10
+-p : paired end
+-m 500 : longueur moyenne des fragment d'ADN
+-s 10 : déviation standard
+#+begin_src sh :dir ~/code/bisonex/test-art :results silent
+../art_bin_MountRainier/art_illumina -ss HS25 -i gatad2b-exon6.fa -o ./gatad2b -l 150 -f 100 -p -m 500 -s 10
+#+end_src
+#+begin_src sh :dir ~/code/bisonex/test-art :results silent
+bwa mem ../test-simuscop/bwa/genomeRef gatad2b1.fq gatad2b2.fq | samtools sort -o gatad2b.b
+am
+samtools index gatad2b.bam
+#+end_src
+
+#+attr_html: :width 800px
+[[./art-capture-1.png]]
+****** Avec offset
+50bp idem
+NC_000001.11 153817371  153817542 -> NC_000001.11 153817321  153817592
+On essaie 1000
+NC_000001.11 153817371  153817542 -> NC_000001.11 153816371  153818542 ->
+#+begin_src sh :dir ~/code/bisonex/test-art :results silent
+echo -e "NC_000001.11\t153816371\t153818542" > gatad2b-exon6-offset.bed
+bedtools getfasta -fi ../test-simuscop/genomeRef.fna -bed gatad2b-exon6-offset.bed -fo gatad2b-exon6-offset.fa
+../art_bin_MountRainier/art_illumina -ss HS25 -i gatad2b-exon6-offset.fa -o ./gatad2b -l 150 -f 100 -p -m 500 -s 10
+bwa mem ../test-simuscop/bwa/genomeRef gatad2b1.fq gatad2b2.fq | samtools sort -o gatad2b.bam
+samtools index gatad2b.bam
+#+end_src
+
+mieux mais trop large
+#+attr_html: :width 800px
+[[./art-exon6-offset1000.png]]
+
+Sur les vraies données, on a une large de 500bp environ
+#+attr_html: :width 800px
+[[./illumina-ref-exon6.png]]
+
+
+Ici l'exon fait 250bp donc on rajouter 125bp de chaque côté
+NC_000001.11 153817371  153817542
+NC_000001.11 153817246  153817667
+Résulats incohérents :on a 2 colonnes séparées !
+
+Essai avec +200bp de chaque côt
+NC_000001.11 153817371  153817542
+NC_000001.11 153817171  153817742
+#+begin_src sh :dir ~/code/bisonex/test-art :results silent
+echo -e "NC_000001.11\t153817171\t153817742"> gatad2b-exon6-offset.bed
+bedtools getfasta -fi ../test-simuscop/genomeRef.fna -bed gatad2b-exon6-offset.bed -fo gatad2b-exon6-offset.fa
+../art_bin_MountRainier/art_illumina -ss HS25 -i gatad2b-exon6-offset.fa -o ./gatad2b -l 150 -f 100 -p -m 500 -s 50
+bwa mem ../test-simuscop/bwa/genomeRef gatad2b1.fq gatad2b2.fq | samtools sort -o gatad2b.bam
+samtools index gatad2b.bam
+#+end_src
+
+En changeant la longueur des reads
+#+begin_src sh :dir ~/code/bisonex/test-art :results silent
+echo -e "NC_000001.11\t153817171\t153817742"> gatad2b-exon6-offset.bed
+bedtools getfasta -fi ../test-simuscop/genomeRef.fna -bed gatad2b-exon6-offset.bed -fo gatad2b-exon6-offset.fa
+../art_bin_MountRainier/art_illumina -ss HS25 -i gatad2b-exon6-offset.fa -o ./gatad2b -l 126 -f 100 -p -m 500 -s 50
+bwa mem ../test-simuscop/bwa/genomeRef gatad2b1.fq gatad2b2.fq | samtools sort -o gatad2b.bam
+samtools index gatad2b.bam
+#+end_src
+Idem, fait 2 "tas" séparés de chaque côté de l'exon
+
++/- 100
+#+begin_src sh :dir ~/code/bisonex/test-art :results silent
+echo -e "NC_000001.11\t153817271\t153817642" > gatad2b-exon6-offset.bed
+bedtools getfasta -fi ../test-simuscop/genomeRef.fna -bed gatad2b-exon6-offset.bed -fo gatad2b-exon6-offset.fa
+../art_bin_MountRainier/art_illumina -ss HS25 -i gatad2b-exon6-offset.fa -o ./gatad2b -l 125 -f 100 -p -m 500 -s 30
+bwa mem ../test-simuscop/bwa/genomeRef gatad2b1.fq gatad2b2.fq | samtools sort -o gatad2b.bam
+samtools index gatad2b.bam
+#+end_src
+*** NGSNG
+https://github.com/RAHenriksen/NGSNGS
+**** Essai avec fasta
+#+begin_src sh :dir ~/code/bisonex/test-ngsngs :results silent
+echo -e "NC_000001.11\t153817371\t153817542" > gatad2b-exon6.bed
+bedtools getfasta -fi ../test-simuscop/genomeRef.fna -bed gatad2b-exon6.bed -fo gatad2b-exon6.fa
+#+end_src
+
+-ss HS25 : nom du profile illumina
+-l 150 : reads de 150
+-f 10 : coverage de 10
+-p : paired end
+-m 500 : longueur moyenne des fragment d'ADN
+-s 10 : déviation standard
+#+begin_src sh :dir ~/code/bisonex/test-art :results silent
+../art_bin_MountRainier/art_illumina -ss HS25 -i gatad2b-exon6.fa -o ./gatad2b -l 150 -f 100 -p -m 500 -s 10
+#+end_src
+#+begin_src sh :dir ~/code/bisonex/test-art :results silent
+bwa mem ../test-simuscop/bwa/genomeRef gatad2b1.fq gatad2b2.fq | samtools sort -o gatad2b.b
+am
+samtools index gatad2b.bam
+#+end_src
+
+
 
 *** Divers
 **** DONE Vérifier nombre de reads fastq - bam
