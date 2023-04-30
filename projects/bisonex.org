@@ -12,6 +12,9 @@ https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04144-1
 *** Variant calling: Haplotype caller
 https://gatk.broadinstitute.org/hc/en-us/articles/360035531412
 Définis l'algorithme + image
+
+*** Phred score
+https://gatk.broadinstitute.org/hc/en-us/articles/360035531872-Phred-scaled-quality-scores
 ** VCF
 *** GT genotype
 encoded as alleles values separated by either of ”/” or “|”, e.g. The allele values are 0 for the reference allele (what is in the reference sequence), 1 for the first allele listed in ALT, 2 for the second allele list in ALT and so on. For diploid calls examples could be 0/1 or 1|0 etc. For haploid calls, e.g. on Y, male X, mitochondrion, only one allele value should be given. All samples must have GT call information; if a call cannot be made for a sample at a given locus, ”.” must be specified for each missing allele in the GT field (for example ./. for a diploid). The meanings of the separators are:
@@ -4215,7 +4218,7 @@ CLOSED: [2023-04-28 Fri 11:55] SCHEDULED: <2023-04-26 Wed>
 *** TODO Extraire liste des CNVs
 
 SCHEDULED: <2023-04-17 Mon>
-*** WAIT Simuscop :simuscop:
+*** TODO Simuscop :simuscop:
 **** DONE Entrainer le modèle sur 63003856/
 CLOSED: [2023-04-29 Sat 19:56]
 Relancer le modèle pour être sûr
@@ -4392,9 +4395,8 @@ samtools index single.bam
 #+end_src
 
 
-
-**** KILL Vérifier tous les variants sont retrouvés
-CLOSED: [2023-04-29 Sat 19:56] SCHEDULED: <2023-04-22 Sat>
+**** TODO Vérifier tous les variants sont retrouvés
+SCHEDULED: <2023-04-22 Sat>
 ***** DONE Après alignement
 CLOSED: [2023-04-29 Sat 18:27] SCHEDULED: <2023-04-28 Fri>
 ****** DONE SNV: avec doublons
@@ -4457,8 +4459,8 @@ julia> @subset snv :refCount .== 0 :altCount .== 0
    7 │ NC_000005.10    1258495  g.1258495G>A    snv          heterozygous  G          A                 0         0           0
    8 │ NC_000012.12    2449086  g.2449086C>G    snv          heterozygous  C          G                 0         0           0
 
-***** KILL Après haplotypecaller
-CLOSED: [2023-04-29 Sat 19:56] SCHEDULED: <2023-04-28 Fri>
+***** TODO Après haplotypecaller
+SCHEDULED: <2023-04-28 Fri>
 ****** KILL 20x
 CLOSED: [2023-04-29 Sat 15:39]
 Manque 183 sur 766
@@ -4479,12 +4481,94 @@ Pour les autres, on devrait les retrouver...
 
 Vérifier le nombre de reads sur 63003856
 Vérifier la paramétrisation du modèle également
+****** TODO 200x
+SCHEDULED: <2023-04-30 Sun>
+120 manquants !
+Procédure : https://gatk.broadinstitute.org/hc/en-us/articles/360043491652-When-HaplotypeCaller-and-Mutect2-do-not-call-an-expected-variant
 
-***** KILL Après annotation
-CLOSED: [2023-04-29 Sat 19:56] SCHEDULED: <2023-04-28 Fri>
-Il en manque !
-***** KILL Après filtre annotation
-CLOSED: [2023-04-29 Sat 19:56]
+On vérifie dans IGV (vcf + bam après alignement) :
+******* snv NC_000015.10   74343027
+- rien d'appelé
+- pas une région répétée
+- base quality (voir [[*Phred score][Phred score]] ) à 37 donc ok
+- variant retrouvé à 26/42
+- Bam après aplybqsr: base qualità 35 donc ok
+
+chr15 également à 89318565, variant retrouvé à 25/33 avec basequal de 37
+
+
+Sans oublier de charger les instructions avx
+#+begin_src sh
+module load gcc@11.3.0/gcc-12.1.0
+#+end_src
+
+On coupe le .bam par chromosome pour débugger (sur le mesocentre)
+#+begin_src sh :dir /ssh:meso:/Work/Users/apraga/bisonex/simuscop-centogene-200x/cento/testing :results silent
+ln -s ../preprocessing/applybqsr/cento.bam .
+ln -s ../preprocessing/recalibrated/cento.bam.bai .
+ln -s /Work/Projects/bisonex/data/dbSNP/GRCh38.p13/dbSNP.gz .
+ln -s /Work/Projects/bisonex/data/dbSNP/GRCh38.p13/dbSNP.gz.tbi .
+ln -s /Work/Projects/bisonex/data/genome/GRCh38.p13/genomeRef.dict .
+ln -s /Work/Projects/bisonex/data/genome/GRCh38.p13/genomeRef.fna .
+ln -s /Work/Projects/bisonex/data/genome/GRCh38.p13/genomeRef.fna.fai .
+#+end_src
+
+On doit lancer à la main (org-mode ne connait pas le chemin de samtools)
+samtools view -b cento.bam NC_000015.10 > cento_chr15.bam
+samtools index cento_chr15.bam
+
+Puis on se restreint au chronmosome 15
+samtools faidx genomeRef.fna NC_000015.10 > genomeRef_chr15.fa
+samtools faidx genomeRef_chr15.fa
+gatk CreateSequenceDictionary -R genomeRef_chr15.fa -O genomeRef_chr15.dict
+
+On restreint au chromosome 15 avec l'option -L (dure = 1min)
+gatk --java-options "-Xmx3072M" HaplotypeCaller --input cento_chr15.bam \
+    --output test.vcf.gz --reference genomeRef.fna --dbsnp dbSNP.gz --tmp-dir . --max-mnp-distance 2 -L NC_000015.10
+
+******* DONE Supprimer --max-mnp-distance = 2: idem
+CLOSED: [2023-04-30 Sun 15:42]
+******* DONE --debug &> run.log : Non appelé...
+CLOSED: [2023-04-30 Sun 15:52]
+******* DONE --linked-de-bruijn-graph: idem
+CLOSED: [2023-04-30 Sun 15:55]
+******* DONE --recover-all-dangling-branches
+CLOSED: [2023-04-30 Sun 16:01]
+******* DONE --min-pruning 0 : plus mais pas celui là
+CLOSED: [2023-04-30 Sun 15:59]
+******* DONE --bam-output
+CLOSED: [2023-04-30 Sun 16:50]
+******** DONE : rien !
+CLOSED: [2023-04-30 Sun 16:08]
+******** DONE + --recover-all-dangling-branches : rien !
+CLOSED: [2023-04-30 Sun 16:08]
+******* DONE Données filtrées ? apparement non
+CLOSED: [2023-04-30 Sun 16:41]
+183122 read(s) filtered by: MappingQualityReadFilter
+3674 read(s) filtered by: NotDuplicateReadFilter
+******** DONE --disable-read-filter MappingQualityReadFilter: idem
+CLOSED: [2023-04-30 Sun 16:34]
+On a bien  - 0 read(s) filtered by: MappingQualityAvailableReadFilter
+******** DONE --disable-read-filter NotDuplicateReadFilter: idem
+CLOSED: [2023-04-30 Sun 16:40]
+
+******* DONE Essayer freebayes : idem
+CLOSED: [2023-04-30 Sun 16:22]
+freebayes -f genomeRef.fna -r NC_000015.10 cento_chr15.bam > freebayes-test-chr15.vcf
+******* DONE Avec toutes les options : idem
+--linked-de-bruijn-graph --recover-all-dangling-branches --min-pruning 0 --bam-output debug.bam
+CLOSED: [2023-04-30 Sun 16:50]
+******* DONE Vérifier qu'on regarde le même bam : oui
+CLOSED: [2023-04-30 Sun 16:50]
+******* DONE Désactiver dbSNP : idem
+CLOSED: [2023-04-30 Sun 16:52]
+******* DONE Changer kmer size : idem
+CLOSED: [2023-04-30 Sun 16:56]
+par exemple[[https://gatk.broadinstitute.org/hc/en-us/community/posts/360075653152-REAL-Variant-not-called-by-HaplotypeCaller][forum gatk]] --kmer-size 18 --kmer-size 22
+******* TODO  --adaptive-pruning true
+***** TODO Après annotation
+SCHEDULED: <2023-04-28 Fri>
+***** TODO Après filtre annotation
 *** KILL NEAT : trop lent :neat:
 CLOSED: [2023-04-29 Sat 22:06]
 **** KILL Génération fastq sur exno 5 GATAD2B
@@ -4555,7 +4639,7 @@ error: All reference sequences are too short for simulating. They should have at
 grep '^>NC_000001.10' exons.fa  | sed 's/:/,/;s/-/,/;s/^>//' > exons.csv
 #+end_src
 *** DONE ART : fonctionne très mal en targeted
-CLOSED: [2023-04-30 Sun 11:49] SCHEDULED: <2023-04-30 Sun>
+CLOSED: [2023-04-30 Sun 11:49]
 **** DONE Génération de reads
 CLOSED: [2023-04-30 Sun 11:49]
 ***** DONE Avec seulement les exons en séquence
