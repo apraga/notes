@@ -6177,3 +6177,9 @@ Bkick x10
 - 3x5
 * <2023-04-30 Sun> Workout
  Circuit : haut seulement 3x2
+* <2023-05-01 Mon> Tricking
+Tornado 10
+Raiz 15
+Bkick 5
+Aerial 5
+Combo 4

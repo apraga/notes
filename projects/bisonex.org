@@ -1226,13 +1226,16 @@ plugin VEP
 **** KILL Ajout LOEUF
 CLOSED: [2023-04-19 mer. 16:32]
 plugin VEP
-**** TODO Spip
-SCHEDULED: <2023-04-30 Sun>
+**** DONE Spip
+CLOSED: [2023-05-01 Mon 23:07] SCHEDULED: <2023-04-30 Sun>
 BED ne semble pas bien marcher (il faut définir une zone)
 VCF : trop d’information
 Attention, plusieurs transcripts mais résultats identiques. On supprimer les doublons
-***** TODO interpretation + score + intervalle de confiance séparé
-SCHEDULED: <2023-04-30 Sun>
+***** DONE interpretation + score + intervalle de confiance séparé
+CLOSED: [2023-05-01 Mon 23:07] SCHEDULED: <2023-04-30 Sun>
+Tests :
+dans tests/
+vep -i 63004925-small.vcf -o postvep.vcf --vcf --fasta genomeRef.fna --dir 109 --merged --pick  --offline --custom ../script/spip_annotation.vcf.gz,SPIP,vcf,exact,0,spipInterp,spipScore,spipConfidence
 ***** DONE Score
 CLOSED: [2023-04-22 Sat 15:30]
 **** TODO CADD: remplacer par plugin VEP
@@ -1256,7 +1259,7 @@ Trop long !
 - Téléchargement de CADD: 4h20
 - renommer les chromosome pour SNV : 6h20
 - tabix sur les SNV : job tué au bout de 21h....
-***** TODO annoter séparément et fusionner les VCF
+***** TODO annoter séparément et fusionner les tableaux
 SCHEDULED: <2023-05-01 Mon>
 NB: on pourrait filtrer CADD avec tabix pour se restreindre à nos variants
 **** DONE clinvar
@@ -4498,10 +4501,9 @@ Pour les autres, on devrait les retrouver...
 
 Vérifier le nombre de reads sur 63003856
 Vérifier la paramétrisation du modèle également
-****** TODO 200x
+****** TODO [#B] 200x
 SCHEDULED: <2023-04-30 Sun>
-120 manquants !
-Procédure : https://gatk.broadinstitute.org/hc/en-us/articles/360043491652-When-HaplotypeCaller-and-Mutect2-do-not-call-an-expected-variant
+120 manquants (99 sans doublon)!
 
 On vérifie dans IGV (vcf + bam après alignement) :
 ******* snv NC_000015.10   74343027
@@ -4543,46 +4545,54 @@ On restreint au chromosome 15 avec l'option -L (dure = 1min)
 gatk --java-options "-Xmx3072M" HaplotypeCaller --input cento_chr15.bam \
     --output test.vcf.gz --reference genomeRef.fna --dbsnp dbSNP.gz --tmp-dir . --max-mnp-distance 2 -L NC_000015.10
 
-******* DONE Supprimer --max-mnp-distance = 2: idem
+******* DONE Tutorial haplotycaller
+CLOSED: [2023-05-01 Mon 19:58]
+Procédure : https://gatk.broadinstitute.org/hc/en-us/articles/360043491652-When-HaplotypeCaller-and-Mutect2-do-not-call-an-expected-variant
+******** DONE Supprimer --max-mnp-distance = 2: idem
 CLOSED: [2023-04-30 Sun 15:42]
-******* DONE --debug &> run.log : Non appelé...
+******** DONE --debug &> run.log : Non appelé...
 CLOSED: [2023-04-30 Sun 15:52]
-******* DONE --linked-de-bruijn-graph: idem
+******** DONE --linked-de-bruijn-graph: idem
 CLOSED: [2023-04-30 Sun 15:55]
-******* DONE --recover-all-dangling-branches
+******** DONE --recover-all-dangling-branches
 CLOSED: [2023-04-30 Sun 16:01]
-******* DONE --min-pruning 0 : plus mais pas celui là
+******** DONE --min-pruning 0 : plus mais pas celui là
 CLOSED: [2023-04-30 Sun 15:59]
-******* DONE --bam-output
+******** DONE --bam-output
 CLOSED: [2023-04-30 Sun 16:50]
-******** DONE : rien !
+********* DONE : rien !
 CLOSED: [2023-04-30 Sun 16:08]
-******** DONE + --recover-all-dangling-branches : rien !
+********* DONE + --recover-all-dangling-branches : rien !
 CLOSED: [2023-04-30 Sun 16:08]
-******* DONE Données filtrées ? apparement non
+******** DONE Données filtrées ? apparement non
 CLOSED: [2023-04-30 Sun 16:41]
 183122 read(s) filtered by: MappingQualityReadFilter
 3674 read(s) filtered by: NotDuplicateReadFilter
-******** DONE --disable-read-filter MappingQualityReadFilter: idem
+********* DONE --disable-read-filter MappingQualityReadFilter: idem
 CLOSED: [2023-04-30 Sun 16:34]
 On a bien  - 0 read(s) filtered by: MappingQualityAvailableReadFilter
-******** DONE --disable-read-filter NotDuplicateReadFilter: idem
+********* DONE --disable-read-filter NotDuplicateReadFilter: idem
 CLOSED: [2023-04-30 Sun 16:40]
 
-******* DONE Essayer freebayes : idem
+******** DONE Essayer freebayes : idem
 CLOSED: [2023-04-30 Sun 16:22]
 freebayes -f genomeRef.fna -r NC_000015.10 cento_chr15.bam > freebayes-test-chr15.vcf
-******* DONE Avec toutes les options : idem
+******** DONE Avec toutes les options : idem
 --linked-de-bruijn-graph --recover-all-dangling-branches --min-pruning 0 --bam-output debug.bam
 CLOSED: [2023-04-30 Sun 16:50]
-******* DONE Vérifier qu'on regarde le même bam : oui
+******** DONE Vérifier qu'on regarde le même bam : oui
 CLOSED: [2023-04-30 Sun 16:50]
-******* DONE Désactiver dbSNP : idem
+******** DONE Désactiver dbSNP : idem
 CLOSED: [2023-04-30 Sun 16:52]
-******* DONE Changer kmer size : idem
+******** DONE Changer kmer size : idem
 CLOSED: [2023-04-30 Sun 16:56]
 par exemple[[https://gatk.broadinstitute.org/hc/en-us/community/posts/360075653152-REAL-Variant-not-called-by-HaplotypeCaller][forum gatk]] --kmer-size 18 --kmer-size 22
-******* TODO  --adaptive-pruning true
+******** DONE --adaptive-pruning true
+CLOSED: [2023-05-01 Mon 19:57]
+
+******* DONE Mapping quality : est à 0 !!!!
+CLOSED: [2023-05-01 Mon 19:58]
+
 ****** TODO Comparer VCF avec vcfeval
 SCHEDULED: <2023-05-01 Mon>
 ***** TODO Après annotation
@@ -4809,7 +4819,137 @@ samtools index gatad2b.bam
 SCHEDULED: <2023-05-01 Mon>
 **** TODO SNV
 SCHEDULED: <2023-05-01 Mon>
+***** DONE Script python: ok seulement pour reads corrigé, trop long sinon
+CLOSED: [2023-05-01 Mon 13:32]
+Même sur un seul chromosome (15)...
+***** DONE Couper les données avec bedtools intersect ?
+CLOSED: [2023-05-01 Mon 20:33]
+-wa pour avoir les reads qui corresponds
+-v pour ceux qui n'intersecte pass
+ok sur un exemple
+****** DONE Test simple : ok
+CLOSED: [2023-05-01 Mon 13:43]
 
+#+attr_html: :width 500px
+[[./test-intersect-chr15.png]]
+#+attr_html: :width 500px
+[[./test-nointersect-chr15.png]]
+****** DONE Chromosome 15 : vérifier BAM
+CLOSED: [2023-05-01 Mon 20:33] SCHEDULED: <2023-05-01 Mon>
+#+begin_src
+samtools view -b `63003856_S135.bam`  NC_000015.10 > `63003856_S135_chr15.bam`
+#+end_src
+On génère un python avec les dépendances
+#+begin_src
+nix-build
+#+end_src
+Puis on lance un script julia qui va couper le bam en 2, lancer le script python sur l'intersection et fusionner le résultat
+#+begin_src
+julia -Jbisonex.so --project=. insertVariants.jl `63003856_S135_chr15.bam` test_new.bam
+#+end_src
+NB: pour accélerer l'exécution, générer une sysimage :
+
+#+begin_src julia
+(1.7) pkg> activate .
+julia> create_sysimage(; sysimage_path="bisonex.so")
+#+end_src
+
+3 variants: Ok sur le nombre de reads et les variants
+Ok pour homozygote
+
+#+attr_html: :width 500px
+[[./check-snv-chr15.png]]
+
+****** DONE Chromosome 15 Vérifier VAF avec checkBam.jl: ok
+julia> @subset snv :chrom .== "NC_000015.10"
+26×10 DataFrame
+ Row │ chrom         pos       variant        variantType  zygosity      ref        alt        refCount  altCount  readsCount
+     │ SubStrin…?    Int64     SubStrin…?     String?      String15      SubStrin…  SubStrin…  Int64     Int64     Int64
+─────┼────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ NC_000015.10  74343027  g.74343027C>T  snv          heterozygous  C          T                61        58         120
+   2 │ NC_000015.10  75400778  g.75400778C>G  snv          heterozygous  C          G               108        79         187
+   3 │ NC_000015.10  89327201  g.89327201C>T  snv          heterozygous  C          T               243       241         486
+   4 │ NC_000015.10  48767448  g.48767448A>C  snv          heterozygous  A          C                72        70         142
+   5 │ NC_000015.10  75411685  g.75411685T>C  snv          heterozygous  T          C                79        81         160
+   6 │ NC_000015.10  66703292  g.66703292C>T  snv          heterozygous  C          T                70        60         130
+   7 │ NC_000015.10  89325639  g.89325639G>A  snv          heterozygous  G          A               257       267         524
+   8 │ NC_000015.10  89330184  g.89330184G>A  snv          heterozygous  G          A               258       287         548
+   9 │ NC_000015.10  89330184  g.89330184G>A  snv          heterozygous  G          A               258       287         548
+  10 │ NC_000015.10  89325639  g.89325639G>A  snv          heterozygous  G          A               257       267         524
+  11 │ NC_000015.10  42401752  g.42401752G>A  snv          homozygous    G          A                61       212         273
+  12 │ NC_000015.10  89327201  g.89327201C>T  snv          heterozygous  C          T               243       241         486
+  13 │ NC_000015.10  38339896  g.38339896G>A  snv          heterozygous  G          A                56        86         144
+  14 │ NC_000015.10  26869324  g.26869324A>T  snv          heterozygous  A          T                62        49         113
+  15 │ NC_000015.10  66435145  g.66435145G>A  snv          heterozygous  G          A                98        95         193
+  16 │ NC_000015.10  60514655  g.60514655G>A  snv          heterozygous  G          A                94        99         194
+  17 │ NC_000015.10  42410947  g.42410947A>G  snv          heterozygous  A          G               153       123         276
+  18 │ NC_000015.10  75430368  g.75430368C>T  snv          heterozygous  C          T                80        62         142
+  19 │ NC_000015.10  25375494  g.25375494T>C  snv          heterozygous  T          C               103       104         207
+  20 │ NC_000015.10  60497497  g.60497497C>A  snv          heterozygous  C          A                61        65         126
+  21 │ NC_000015.10  74891539  g.74891539C>T  snv          heterozygous  C          T               118       124         242
+  22 │ NC_000015.10  48488433  g.48488433A>G  snv          heterozygous  A          G               367       122         492
+  23 │ NC_000015.10  89318565  g.89318565A>G  snv          heterozygous  A          G               303        98         404
+  24 │ NC_000015.10  89323426  g.89323426C>G  snv          heterozygous  C          G                93       109         202
+  25 │ NC_000015.10  89318595  g.89318595T>C  snv          heterozygous  T          C               321       128         453
+  26 │ NC_000015.10  48488437  g.48488437T>C  snv          heterozygous  T          C               356       132         488
+CLOSED: [2023-05-01 Mon 17:18]
+***** TODO Chromosome1 15 :Test haplotype caller : échec
+SCHEDULED: <2023-05-01 Mon>
+
+#+begin_src
+julia -Jbisonex.so --project=. insertVariants.jl `63003856_S135_chr15.bam` 63003856_S135_chr15_inserted.bam
+scp 63003856_S135_chr15_inserted.bam* meso:/Work/Users/apraga/bisonex/tests/synthetic/
+
+#+end_src
+
+#+begin_src sh :dir /ssh:meso:/Work/Users/apraga/bisonex/tests/synthetic :results silent
+ln -s /Work/Projects/bisonex/data/dbSNP/GRCh38.p13/dbSNP.gz .
+ln -s /Work/Projects/bisonex/data/dbSNP/GRCh38.p13/dbSNP.gz.tbi .
+ln -s /Work/Projects/bisonex/data/genome/GRCh38.p13/genomeRef.dict .
+ln -s /Work/Projects/bisonex/data/genome/GRCh38.p13/genomeRef.fna .
+ln -s /Work/Projects/bisonex/data/genome/GRCh38.p13/genomeRef.fna.fai .
+#+end_src
+
+puis
+#+begin_src
+gatk --java-options "-Xmx3072M" HaplotypeCaller --input 63003856_S135_chr15_inserted.bam --output testchr15.vcf.gz --reference genomeRef.fna  --tmp-dir . -L NC_000015.10
+#+end_src
+
+scp meso:/Work/Users/apraga/bisonex/tests/synthetic/testchr15.vcf.gz haplotypecaller-chr15.vcf.gz
+
+Aucun variant inséré
+- base quality ok
+  -
+****** DONE bam out : non appelé
+CLOSED: [2023-05-01 Mon 21:57]
+gatk --java-options "-Xmx3072M" HaplotypeCaller --input 63003856_S135_chr15_inserted.bam     --output haplotypecaller-chr15.vcf.gz --reference genomeRef.f
+na  --tmp-dir . -L NC_000015.10  --bam-output debug.bam
+****** DONE --linked-de-bruijn-graph : idem
+CLOSED: [2023-05-01 Mon 21:57]
+readlink testchr15.vcf.gz -f^C
+[apraga@mesointeractive synthetic]$ gatk --java-options "-Xmx3072M" HaplotypeCaller --input 63003856_S135_chr15_inserted.bam     --output haplotypecaller-chr15.vcf.gz --reference genomeRef.fna  --tmp-dir . -L NC_000015.10  --linked-de-bruijn-graph
+****** TODO regénérer fastq
+
+***** TODO Générer bam données pour tous les chromosomes
+ timeit julia -Jbisonex.so --project=. insertVariants.jl ~/code/bisonex/out/63003856/preprocessing/63003856_S135.bam 63003856_S135_inserted.bam
+
+40min 516ms 835µs 405ns
+Avertissement:
+ [W::bam_hdr_read] EOF marker is absent. The input is probably truncated
+
+Inserted.bam et excluded.bam (fichier avant le merge)  ont l'air ok...
+
+On réessaie à la main : ça passe
+#+begin_src
+samtools merge test-all.bam inserted.bam excluded.bam
+❯ mv test-all.bam `63003856_S135_inserted.bam` -f
+❯ mv test-all.bam.bai `63003856_S135_chr15_inserted.bam.bai` -f
+#+end_src
+***** TODO BAm2fastq
+SCHEDULED: <2023-05-01 Mon>
+ scp 63003856_S135_chr15_inserted.bam* meso:/Work/Groups/bisonex/data/synthetic/
+***** TODO Lancer pipeline
+SCHEDULED: <2023-05-01 Mon>
 *** Divers
 **** DONE Vérifier nombre de reads fastq - bam
 CLOSED: [2022-10-09 Sun 22:31]
