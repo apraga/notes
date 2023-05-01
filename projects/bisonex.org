@@ -210,7 +210,11 @@ Parmi ceux qui gèrent les variations
 - varsim : non plus
   ...
 
+  Temps de calcul selon l'article de reseq https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02265-7
+  #+begin_quote
+  Due to ReSeq’s effective parallelization, its elapsed times are low for this benchmark with 48 virtual CPUs (Additional file 1: Figure S34b,e). In contrast, the single-threaded processes implemented in perl or python have strikingly high elapsed times. This is well visible in Hs-HiX-TruSeq and applies to the training of pIRS (over a week), NEAT (several days), and BEAR (half a week) as well as the simulation of NEAT (close to 2 weeks) and BEAR (several weeks).
 Biblio : https://www.nature.com/articles/s41437-022-00577-3
+  #+end_quote
 Divers
 - Liste ancienne : https://www.biostars.org/p/128762/
 https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02265-7
@@ -1222,7 +1226,7 @@ plugin VEP
 **** KILL Ajout LOEUF
 CLOSED: [2023-04-19 mer. 16:32]
 plugin VEP
-**** TODO Spip avec export VCF
+**** TODO Spip
 SCHEDULED: <2023-04-30 Sun>
 BED ne semble pas bien marcher (il faut définir une zone)
 VCF : trop d’information
@@ -1246,19 +1250,32 @@ CSQ=G|missense_variant|MODERATE|AGT|ENSG00000135744|Transcript|ENST00000366667|p
 Correspond bien à https://www.ensembl.org/Homo_sapiens/Tools/VEP/Results?tl=I7ZsIbrj14P6lD43-9115494
 ***** DONE Utiliser whole genome
 CLOSED: [2023-04-29 Sat 15:46]
-***** TODO Renommer les chromosome avant ...
-SCHEDULED: <2023-04-30 Sun>
-zcat whole_genome_SNVs.tsv.gz | head -n 100 | gzip -c > cadd-small-test.tsv.gz
+***** KILL Renommer les chromosome avant ...
+CLOSED: [2023-05-01 Mon 09:14] SCHEDULED: <2023-04-30 Sun>
+Trop long !
+- Téléchargement de CADD: 4h20
+- renommer les chromosome pour SNV : 6h20
+- tabix sur les SNV : job tué au bout de 21h....
+***** TODO annoter séparément et fusionner les VCF
+SCHEDULED: <2023-05-01 Mon>
+NB: on pourrait filtrer CADD avec tabix pour se restreindre à nos variants
 **** DONE clinvar
 CLOSED: [2023-04-22 Sat 15:31]
 **** STRT Remplacer script R par vep ?
 Example avec --custom
 https://www.ensembl.org/info/docs/tools/vep/script/vep_custom.html
-**** TODO Vérifier résultats HGVS avec mutalyzer
+**** KILL Vérifier résultats HGVS avec mutalyzer
+CLOSED: [2023-05-01 Mon 09:26]
+**** TODO Parallélisation par chromosome avec workflow VEP
+https://github.com/Ensembl/ensembl-vep/blob/release/109/nextflow/workflows/run_vep.nf
 **** TODO OMIM
+SCHEDULED: <2023-05-01 Mon>
 **** TODO Grantham
+SCHEDULED: <2023-05-01 Mon>
 **** TODO ACMG incidental
+SCHEDULED: <2023-05-01 Mon>
 **** TODO Gnomad ?
+SCHEDULED: <2023-05-01 Mon>
 **** DONE Filtrer après VEP avec filter_vep
 CLOSED: [2023-04-29 Sat 15:47]
 nNon testé
@@ -4566,6 +4583,8 @@ CLOSED: [2023-04-30 Sun 16:52]
 CLOSED: [2023-04-30 Sun 16:56]
 par exemple[[https://gatk.broadinstitute.org/hc/en-us/community/posts/360075653152-REAL-Variant-not-called-by-HaplotypeCaller][forum gatk]] --kmer-size 18 --kmer-size 22
 ******* TODO  --adaptive-pruning true
+****** TODO Comparer VCF avec vcfeval
+SCHEDULED: <2023-05-01 Mon>
 ***** TODO Après annotation
 SCHEDULED: <2023-04-28 Fri>
 ***** TODO Après filtre annotation
@@ -4578,39 +4597,26 @@ Trop lent : pour 1 exon : 1500 secondes !
 samtools faidx genomeRef.fna NC_000001.11 | save -f genomeRef_chr1.fna
 python gen_reads.py  -r ../test-simuscop/genomeRef_chr1.fna -o lol  -tr ../test-simuscop/gatad2b-exon6.bed  -R 147 --pe 150 10
 #+end_src
-*** KILL ReSeq : ne gère pas des exons trop petits :reseq:
-CLOSED: [2023-04-30 Sun 09:52] SCHEDULED: <2023-04-29 Sat>
+*** KILL ReSeq : exome avec exons comme fasta mais ne gère pas des exons trop petits :reseq:
+CLOSED: [2023-04-30 Sun 19:44] SCHEDULED: <2023-04-29 Sat>
 #+begin_quote
 Can I simulate exome sequencing? Yes. You need to use a reference that only contains the exons as individual scaffolds. Using --refBiasFile you can specify the coverage of individual exons. To simulate intron contamination you can add the whole reference to the reference containing the exons and strongly reduce the coverage for these scaffolds using --refBiasFile.
 #+end_quote
-**** KILL Fasta pour exons seuls
-CLOSED: [2023-04-30 Sun 09:52]
+Par contre, rapide
+**** DONE Fasta pour exons seuls
+CLOSED: [2023-04-30 Sun 19:25]
 Depuis le GFF
-#+begin_src sh :dir ~/code/bisonex/test-reseq
-wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.25_GRCh37.p13/GCF_000001405.25_GRCh37.p13_genomic.gff.gz
+#+begin_src sh :dir ~/code/bisonex/test-reseq :results silent
+wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.39_GRCh38.p13/GCF_000001405.39_GRCh38.p13_genomic.gff.gz
 #+end_src
 
-#+RESULTS:
-
-#+begin_src sh :dir ~/code/bisonex/test-reseq
-gunzip -c GCF_000001405.25_GRCh37.p13_genomic.gff.gz | grep -w "exon" > exons.gff
+#+begin_src sh :dir ~/code/bisonex/test-reseq  :results silent
+gunzip -c GCF_000001405.39_GRCh38.p13_genomic.gff.gz | grep -w "exon" > exons.gff
 #+end_src
 
-#+RESULTS:
-
-
-Attention, discordance entre les version de refseq..
-On retélécharge fasata
-#+begin_src
-wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.25_GRCh37.p13/GCF_000001405.25_GRCh37.p13_genomic.fna.gz
-# Samtools wants bgzip
-gunzip GCF_000001405.25_GRCh37.p13_genomic.fna.gz
-samtools faidx GCF_000001405.25_GRCh37.p13_genomic.fna
-#+end_src
-
-
+On génère les exons
 #+begin_src sh :dir ~/code/bisonex/test-reseq
-bedtools getfasta -fi GCF_000001405.25_GRCh37.p13_genomic.fna -bed exons.gff -fo exons.fa
+bedtools getfasta -fi ../test-simuscop/genomeRef.fna -bed exons.gff -fo exons.fna
 #+end_src
 
 A tester avec un profile déjà fait :
@@ -4620,7 +4626,8 @@ On cherche l'exons qui nous intéresse
  NC_000001.11 g.153817496 A>T
 N'y est pas ??
 
-On test sur les 2 premiers
+***** DONE On test sur les 2 premiers : exec
+CLOSED: [2023-04-30 Sun 18:39]
 
 #+begin_src
 head exons.fa -n 2 > 2exons.fna
@@ -4637,6 +4644,48 @@ error: All reference sequences are too short for simulating. They should have at
 
 #+begin_src sh
 grep '^>NC_000001.10' exons.fa  | sed 's/:/,/;s/-/,/;s/^>//' > exons.csv
+#+end_src
+
+***** DONE Sur 200 premiers exons du chr1
+CLOSED: [2023-04-30 Sun 19:17]
+#+begin_src sh :dir ~/code/bisonex/test-reseq  :results silent
+head -n200 exons.fna > exons-200.fna
+ bwa index exons-200.fna
+ #+end_src
+
+Simulation avec 30x
+#+begin_src sh :dir ~/code/bisonex/test-reseq  :results silent
+ ../ReSeq/bin/reseq illuminaPE -R exons-200.fna -s Ec-Hi2000-TruSeq.reseq --ipfIterations 0 -1 reseq1.fq -2 reseq2.fq -c 30
+ #+end_src
+
+ Attention, pour l'alignement, il faut le nfa complet ! Sinon erreur du type
+ Erreurs:::sam_hdr_create] Duplicated sequence "NC_000001.10:762970-763155" in file "-"
+ Et pas de bam avec
+ samtools sort: failed to change sort order header to 'coordinate'
+ #+begin_src
+ bwa mem ../test-simuscop/bwa/genomeRef.fna reseq1.fq reseq2.fq | samtools sort -o reseq.bam
+ #+end_src
+
+ Manque des exons et l'allure ne correspond pas...
+***** DONE Utiliser le fichier de capture : exons trop petits
+CLOSED: [2023-04-30 Sun 19:25]
+Comme pour ART
+Trop court avec
+echo -e "NC_000001.11\t153817371\t153817542" > gatad2b-exon6.bed
+Donc on ajoute 1000 de chaque côté
+#+begin_src sh :dir ~/code/bisonex/test-reseq :results silent
+echo -e "NC_000001.11\t153816371\t153818542" > gatad2b-exon6.bed
+bedtools getfasta -fi ../test-simuscop/genomeRef.fna -bed gatad2b-exon6.bed -fo gatad2b-exon6.fna
+bwa index gatad2b-exon6.bed
+ ../ReSeq/bin/reseq illuminaPE -R gatad2b-exon6.fna -s Ec-Hi2000-TruSeq.reseq --ipfIterations 0 -1 reseq1.fq -2 reseq2.fq -c 30
+ bwa mem ../test-simuscop/bwa/genomeRef.fna reseq1.fq reseq2.fq | samtools sort -o reseq.bam
+ samtools index reseq.bam
+#+end_src
+**** KILL Sur le chromosome 15 puis trier à la main sur les zones de capture ?
+CLOSED: [2023-04-30 Sun 19:44]
+#+begin_src sh :dir ~/code/bisonex/test-reseq :results silent
+samtools faidx ../test-simuscop/genomeRef.fna NC_000015.10 > chr15.fna
+ ../ReSeq/bin/reseq illuminaPE -R chr15.fna -s Ec-Hi2000-TruSeq.reseq --ipfIterations 0 -1 reseq1.fq -2 reseq2.fq -c 30
 #+end_src
 *** DONE ART : fonctionne très mal en targeted
 CLOSED: [2023-04-30 Sun 11:49]
@@ -4732,9 +4781,11 @@ bedtools getfasta -fi ../test-simuscop/genomeRef.fna -bed gatad2b-exon6-offset.b
 bwa mem ../test-simuscop/bwa/genomeRef gatad2b1.fq gatad2b2.fq | samtools sort -o gatad2b.bam
 samtools index gatad2b.bam
 #+end_src
-*** NGSNG
+*** KILL NGSNG : plante
+CLOSED: [2023-05-01 Mon 09:27]
 https://github.com/RAHenriksen/NGSNGS
-**** Essai avec fasta
+**** KILL Essai avec fasta
+CLOSED: [2023-05-01 Mon 09:27]
 #+begin_src sh :dir ~/code/bisonex/test-ngsngs :results silent
 echo -e "NC_000001.11\t153817371\t153817542" > gatad2b-exon6.bed
 bedtools getfasta -fi ../test-simuscop/genomeRef.fna -bed gatad2b-exon6.bed -fo gatad2b-exon6.fa
@@ -4754,8 +4805,10 @@ bwa mem ../test-simuscop/bwa/genomeRef gatad2b1.fq gatad2b2.fq | samtools sort -
 am
 samtools index gatad2b.bam
 #+end_src
-
-
+*** TODO Insérer variants dans patients centogène :generate:
+SCHEDULED: <2023-05-01 Mon>
+**** TODO SNV
+SCHEDULED: <2023-05-01 Mon>
 
 *** Divers
 **** DONE Vérifier nombre de reads fastq - bam
