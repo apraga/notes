@@ -4893,7 +4893,7 @@ julia> @subset snv :chrom .== "NC_000015.10"
   25 │ NC_000015.10  89318595  g.89318595T>C  snv          heterozygous  T          C               321       128         453
   26 │ NC_000015.10  48488437  g.48488437T>C  snv          heterozygous  T          C               356       132         488
 CLOSED: [2023-05-01 Mon 17:18]
-***** TODO Chromosome1 15 :Test haplotype caller : échec
+***** TODO Chromosome1 15 :Test haplotype caller : échec car CIGARE non mis à jour
 SCHEDULED: <2023-05-01 Mon>
 
 #+begin_src
@@ -4904,7 +4904,7 @@ scp 63003856_S135_chr15_inserted.bam* meso:/Work/Users/apraga/bisonex/tests/synt
 
 #+begin_src sh :dir /ssh:meso:/Work/Users/apraga/bisonex/tests/synthetic :results silent
 ln -s /Work/Projects/bisonex/data/dbSNP/GRCh38.p13/dbSNP.gz .
-ln -s /Work/Projects/bisonex/data/dbSNP/GRCh38.p13/dbSNP.gz.tbi .
+ln -s /Work/Projects/bisonex/data/dbSNP/GRCh38.p13/dbSNP.gz.tbi
 ln -s /Work/Projects/bisonex/data/genome/GRCh38.p13/genomeRef.dict .
 ln -s /Work/Projects/bisonex/data/genome/GRCh38.p13/genomeRef.fna .
 ln -s /Work/Projects/bisonex/data/genome/GRCh38.p13/genomeRef.fna.fai .
@@ -4928,7 +4928,7 @@ na  --tmp-dir . -L NC_000015.10  --bam-output debug.bam
 CLOSED: [2023-05-01 Mon 21:57]
 readlink testchr15.vcf.gz -f^C
 [apraga@mesointeractive synthetic]$ gatk --java-options "-Xmx3072M" HaplotypeCaller --input 63003856_S135_chr15_inserted.bam     --output haplotypecaller-chr15.vcf.gz --reference genomeRef.fna  --tmp-dir . -L NC_000015.10  --linked-de-bruijn-graph
-****** TODO regénérer fastq
+****** HOLD regénérer fastq
 
 ***** TODO Générer bam données pour tous les chromosomes
  timeit julia -Jbisonex.so --project=. insertVariants.jl ~/code/bisonex/out/63003856/preprocessing/63003856_S135.bam 63003856_S135_inserted.bam
@@ -4945,9 +4945,9 @@ samtools merge test-all.bam inserted.bam excluded.bam
 ❯ mv test-all.bam `63003856_S135_inserted.bam` -f
 ❯ mv test-all.bam.bai `63003856_S135_chr15_inserted.bam.bai` -f
 #+end_src
-***** TODO BAm2fastq
+***** TODO BAm2fastq pour avoir CIGAR à jour
 SCHEDULED: <2023-05-01 Mon>
- scp 63003856_S135_chr15_inserted.bam* meso:/Work/Groups/bisonex/data/synthetic/
+ rsync -avz 63003856_S135_inserted.bam* meso:/Work/Groups/bisonex/data/synthetic/
 ***** TODO Lancer pipeline
 SCHEDULED: <2023-05-01 Mon>
 *** Divers
