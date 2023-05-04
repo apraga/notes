@@ -4595,9 +4595,57 @@ CLOSED: [2023-05-01 Mon 19:58]
 
 ****** TODO Comparer VCF avec vcfeval
 SCHEDULED: <2023-05-01 Mon>
-***** TODO Après annotation
+On prépare les données en julia
+#+begin_src ~/recherche/bisonex/simuscop
+julia --project=. toVCF.jl
+#+end_src
+Puis on export sur le mésocentre
+#+begin_src
+scp variants_for_vcfeval.tsv.gz* meso:centogene_variants/
+#+end_src
+#+begin_src
+z bis
+cd simuscop-200x
+rtg vcfeval -b ~/centogene_variants/variants_for_vcfeval.tsv.gz -c cento/variantCalling/haplotypecaller/cento.vcf.gz -o compare-haplotypecaller -t /Work/Groups/bisonex/data/giab/GRCh38/genomeRef.sdf
+#+end_src
+Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
+----------------------------------------------------------------------------------------------------
+   82.000                540            540         60         45     0.9000       0.9231     0.9114
+     None                546            546        329         39     0.6240       0.9333     0.7479
+
+****** DONE Méthode naïve 549/585
+CLOSED: [2023-05-04 Thu 21:57]
+Haplotypecaller: Nb reference SNV 692 vs found 585
+Variant calling, filter technical: reference SNV 692 vs found 521
+***** TODO Avant annotation
 SCHEDULED: <2023-04-28 Fri>
+#+begin_src
+cd cento/variantCalling
+bgzip filter-technical.vcf
+tabix -p vcf filter-technical.vcf.gz -f
+#+end_src
+Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
+----------------------------------------------------------------------------------------------------
+   12.000                519            519         55         66     0.9042       0.8872     0.8956
+     None                519            519         55         66     0.9042       0.8872     0.8956
+****** DONE Méthode naïve 521/585
+CLOSED: [2023-05-04 Thu 21:57]
+Haplotypecaller: Nb reference SNV 692 vs found 585
+Variant calling, filter technical: reference SNV 692 vs found 521
 ***** TODO Après filtre annotation
+****** DONE Méthode naïve : 493/585
+CLOSED: [2023-05-04 Thu 22:09]
+****** TODO VCf eval
+ cd cento/annotation/
+ bgzip postvep-filter.vcf
+ tabix postvep-filter.vcf.gz
+ cd ../..
+ rtg vcfeval -b ~/centogene_variants/variants_for_vcfeval.tsv.gz -c cento/annotation/postvep-filter.vcf.gz  -o compare-vepfilter -t /Work/Groups/bisonex/data/giab/GRCh38/genomeRef.sdf
+ Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
+----------------------------------------------------------------------------------------------------
+   12.000                491            491         50         94     0.9076       0.8393     0.8721
+     None                491            491         50         94     0.9076       0.8393     0.8721
+
 *** KILL NEAT : trop lent :neat:
 CLOSED: [2023-04-29 Sat 22:06]
 **** KILL Génération fastq sur exno 5 GATAD2B
@@ -4945,11 +4993,34 @@ samtools merge test-all.bam inserted.bam excluded.bam
 ❯ mv test-all.bam `63003856_S135_inserted.bam` -f
 ❯ mv test-all.bam.bai `63003856_S135_chr15_inserted.bam.bai` -f
 #+end_src
-***** TODO BAm2fastq pour avoir CIGAR à jour
-SCHEDULED: <2023-05-01 Mon>
- rsync -avz 63003856_S135_inserted.bam* meso:/Work/Groups/bisonex/data/synthetic/
-***** TODO Lancer pipeline
-SCHEDULED: <2023-05-01 Mon>
+***** DONE BAm2fastq pour avoir CIGAR à jour : échec (variants "cachés")
+CLOSED: [2023-05-04 Thu 20:30] SCHEDULED: <2023-05-01 Mon>
+
+On lance la génération de bam depuis le mesocentro (la copie plante via le VPN)
+#+begin_src sh
+cd /Work/Users/apraga/recherche/bisonex/generate
+julia --project=. insertVariants.jl  ../../../bisonex/out/63003856_S135/preprocessing/applybqsr/63003856_S135.bam 63003856_S135_inserted.bam
+#+end_src
+Workflow après avec désactivé storeDir pour SAMTOOLS_BAM2FQ dans nextflow.config (pourquoi ??)
+#+begin_src nextflow
+include { SAMTOOLS_BAM2FQ }                            from "${params.modulesDir}/samtools/bam2fq/main"
+include { SAMTOOLS_SORT as sortBamByName }             from "${params.modulesDir}/samtools/sort/main"
+
+workflow {
+    f = Channel.fromPath("${params.dataDir}/synthetic/63003856_S135_inserted.bam",
+                         checkIfExists: true).map{it -> [["id": "synthetic_63003856"], it]}
+    // Important: use "-n" option !!
+    sortBamByName(f)
+    SAMTOOLS_BAM2FQ(sortBamByName.out.bam, true)
+}
+#+end_src
+Puis
+#+begin_src
+cp work/34/fb2fc136f6f6d7f42d0960512f06de/*.fq.gz /Work/Groups/bisonex/data/synthetic/
+#+end_src
+***** KILL Lancer pipeline
+CLOSED: [2023-05-04 Thu 20:30] SCHEDULED: <2023-05-01 Mon>
+NXF_OPTS=-D"user.name=apraga" nextflow run   main.nf -c nextflow.config  -profile standard,helios -bg --input="/Work/Groups/bisonex/data/synthetic/synthetic_63003856_{1,2}.fq.gz" --outdir out/synthetic_63003856
 *** Divers
 **** DONE Vérifier nombre de reads fastq - bam
 CLOSED: [2022-10-09 Sun 22:31]
