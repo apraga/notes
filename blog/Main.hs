@@ -40,23 +40,11 @@ main = hakyll $ do
             >>= loadAndApplyTemplate "templates/default.html" postCtx
             >>= relativizeUrls
 
-    -- -- Hack : generate temporary files for correcting metadata
-    -- match ("posts/*.org" .||. "genetique/*.org") $ do
-    --     route tempRoute
-    --     compile $ getResourceString >>= orgCompiler
-
-    -- match ("_temp/posts/*.org" .||. "_temp/genetique/*.org") $ do
-    --     route $ cleanRouteFromTemp
-    --     compile $ pandocCompiler
-    --         >>= loadAndApplyTemplate "templates/post.html"    postCtx
-    --         >>= loadAndApplyTemplate "templates/default.html" postCtx
-    --         >>= relativizeUrls
-
     -- Don't forget to set the path to temporary files
     create ["archive.html"] $ do
         route idRoute
         compile $ do
-            posts <- recentFirst =<< loadAll "_temp/posts/*"
+            posts <- recentFirst =<< loadAll "posts/*"
             let archiveCtx =
                     listField "posts" postCtx (return posts) `mappend`
                     constField "title" "Archives"            `mappend`
@@ -71,7 +59,7 @@ main = hakyll $ do
     match "index.html" $ do
         route idRoute
         compile $ do
-            posts <- recentFirst =<< loadAll "_temp/posts/*"
+            posts <- recentFirst =<< loadAll "posts/*"
             let indexCtx =
                     listField "posts" postCtx (return posts) `mappend`
                     defaultContext
@@ -85,7 +73,7 @@ main = hakyll $ do
     match "genetique.html" $ do
         route idRoute
         compile $ do
-            posts <- loadAll "_temp/genetique/*.org"
+            posts <- loadAll "genetique/*.org"
             let indexCtx = listField "notes" defaultContext (return posts)
                   `mappend` defaultContext
 
@@ -96,44 +84,7 @@ main = hakyll $ do
 
     match "templates/*" $ compile templateBodyCompiler
 
-------------
 
--- | Temp Route
-tempRoute :: Routes
-tempRoute = customRoute tempRoute'
-  where
-    tempRoute' i = ".." </> "_temp" </> takeDirectory p </> takeFileName p
-        where p = toFilePath i
-
-cleanRouteFromTemp :: Routes
-cleanRouteFromTemp = customRoute createIndexRoute
-  where
-    createIndexRoute ident =
-        (joinPath . tail . splitDirectories . takeDirectory) p
-        </> takeFileName p -<.> ".html"
-        where p = toFilePath ident
-
--- | From org get metadatas.
-orgCompiler :: Item String -> Compiler (Item String)
-orgCompiler = pure . fmap (\s -> (metadatasToStr . orgMetadatas) s ++ s)
-
-orgMetadatas :: String -> [String]
-orgMetadatas = map (format . lower . clean) . takeWhile (/= "") . lines
-  where
-    clean = concat . splitOn "#+"
-    lower s = (map toLower . takeWhile (/= ':')) s ++ dropWhile (/= ':') s
-    format xs
-        | -- drop weekday str. 2018-05-03 Thu -> 2018-05-03
-          "date" `isPrefixOf` xs
-        = take 16 . concat . splitOn ">" . concat . splitOn "<" $ xs
-        | otherwise
-        = xs
-
-metadatasToStr :: [String] -> String
-metadatasToStr = ("----------\n" ++) . (++ "----------\n") . unlines
-
-
-----
 postCtx :: Context String
 postCtx =
     dateField "date" "%B %e, %Y" `mappend`

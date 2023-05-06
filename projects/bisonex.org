@@ -12,6 +12,9 @@ https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04144-1
 *** Variant calling: Haplotype caller
 https://gatk.broadinstitute.org/hc/en-us/articles/360035531412
 Définis l'algorithme + image
+
+*** Phred score
+https://gatk.broadinstitute.org/hc/en-us/articles/360035531872-Phred-scaled-quality-scores
 ** VCF
 *** GT genotype
 encoded as alleles values separated by either of ”/” or “|”, e.g. The allele values are 0 for the reference allele (what is in the reference sequence), 1 for the first allele listed in ALT, 2 for the second allele list in ALT and so on. For diploid calls examples could be 0/1 or 1|0 etc. For haploid calls, e.g. on Y, male X, mitochondrion, only one allele value should be given. All samples must have GT call information; if a call cannot be made for a sample at a given locus, ”.” must be specified for each missing allele in the GT field (for example ./. for a diploid). The meanings of the separators are:
@@ -25,11 +28,9 @@ encoded as alleles values separated by either of ”/” or “|”, e.g. The al
 Attention, génome et en hg19 donc comparaison non adaptée ...
 
 **** TODO Best practices for the analytical validation of clinical whole-genome sequencing intended for the diagnosis of germline disease
-SCHEDULED:   <2023-04-06 Thu>
 https://www.nature.com/articles/s41525-020-00154-9
 Recommandations générale pour genome, sans données brutes
 **** TODO [#A] Performance assessment of variant calling pipelines using human whole exome sequencing and simulated data
-SCHEDULED: <2023-04-06 Thu>
 https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2928-9
 1. variant calling seul
 2. NA12878 + données simulées
@@ -197,6 +198,26 @@ notre = C/CA
 #+RESULTS:
 : NC_000022.11    31277416        .       CA      C       50      PASS    platforms=3;platformnames=Illumina,PacBio,10X;datasets=3;datasetnames=HiSeqPE300x,CCS15kb_20kb,10XChromiumLR;callsets=4;callsetnames=HiSeqPE300xGATK,CCS15kb_20kbDV,10XLRGATK,HiSeqPE300xfreebayes;datasetsmissingcall=CCS15kb_20kb,CGnormal,IonExome,SolidSE75bp;callable=CS_HiSeqPE300xGATK_callable;difficultregion=GRCh38_AllHomopolymers_gt6bp_imperfectgt10bp_slop5,GRCh38_SimpleRepeat_imperfecthomopolgt10_slop5  GT:PS:DP:ADALL:AD:GQ    1/1:.:465:16,229:0,190:129
 : NC_000022.11    31277416        rs57244615      CAA     C,CA    389.02  PASS    AC=1,1;AF=0.5,0.5;AN=2;BaseQRankSum=0.37;DB;DP=37;ExcessHet=0;FS=0;MLEAC=1,1;MLEAF=0.5,0.5;MQ=60;MQRankSum=0;QD=13.41;ReadPosRankSum=-0.651;SOR=0.572    GT:AD:DP:GQ:PL  1/2:5,10,14:29:64:406,202,313,64,0,88
+*** Génération de reads
+Biblio récente
+https://www.biorxiv.org/content/10.1101/2022.03.29.486262v1.full.pdf
+Parmi ceux qui gèrent les variations
+- *simuscop* reads non centré sur les zones de capture
+- *NEAT: exome* mais trop lent en pratique
+- *Reseq* exome
+- gensim : pas d'exome
+- pIRS : non plus
+- varsim : non plus
+  ...
+
+  Temps de calcul selon l'article de reseq https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02265-7
+  #+begin_quote
+  Due to ReSeq’s effective parallelization, its elapsed times are low for this benchmark with 48 virtual CPUs (Additional file 1: Figure S34b,e). In contrast, the single-threaded processes implemented in perl or python have strikingly high elapsed times. This is well visible in Hs-HiX-TruSeq and applies to the training of pIRS (over a week), NEAT (several days), and BEAR (half a week) as well as the simulation of NEAT (close to 2 weeks) and BEAR (several weeks).
+Biblio : https://www.nature.com/articles/s41437-022-00577-3
+  #+end_quote
+Divers
+- Liste ancienne : https://www.biostars.org/p/128762/
+https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02265-7
 * Idées
 ** Validation analytique
 mail Yannis : données patients +/- simulées
@@ -232,7 +253,7 @@ NB: à quoi correspond https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/
 *** [#B] Pipeline : générer patient avec tous les variants retrouvés à Centogene
 Comparaison de génération ADN (2019)
 https://academic.oup.com/bfg/article/19/1/49/5680294
-**** SimuSCop
+**** SimuSCop (exome)
 https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03665-5
 https://github.com/qasimyu/simuscop
 1. Crééer un modèle depuis bam + vcf : Setoprofile
@@ -300,6 +321,12 @@ Autres technologies non adaptées au pipeline (vu avec Alexis)
 Genome possible
 ** Zone de capture
 GIAB fourni le .bed pour l'exome . INfo : https://support.illumina.com/sequencing/sequencing_kits/nextera-rapid-capture-exome-kit/downloads.html
+** Centogène
+https://www.twistbioscience.com/node/23906
+Bed non fourni pour exactement cette capture
+On prend https://www.twistbioscience.com/resources/data-files/twist-alliance-vcgs-exome-401mb-bed-files
+qui content la majeure partie
+
 * Données :data:
 ** DONE Remplacer bam par fastq sur mesocentre
 CLOSED: [2023-04-16 Sun 16:33]
@@ -1159,7 +1186,8 @@ Voir [[*common dbSNP not clinvar patho][common dbSNP not clinvar patho]]
 CLOSED: [2022-11-08 Tue 22:23]
 *** DONE Filter technical variants
 CLOSED: [2022-11-19 Sat 21:34]
-*** TODO Utilise AVX pour accélerer l'exécution
+*** DONE Utilise AVX pour accélerer l'exécution
+CLOSED: [2023-04-29 Sat 15:46]
 Sans cela, on a l'avertissement
 #+begin_quote
 17:28:00.720 INFO  PairHMM - OpenMP multi-threaded AVX-accelerated native PairHMM implementation is not supported
@@ -1188,42 +1216,83 @@ https://www.ensembl.org/info/genome/variation/phenotype/sources_phenotype_docume
 CLOSED: [2023-04-18 mar. 18:32]
 Cloner dépôt git avec plugin
 Puis utiliser --dir_plugins
-*** TODO Utiliser code d’Alexis
+*** HOLD Utiliser code d’Alexis
 *** TODO Nouvelle version avec VEP
 **** TODO Ajout spliceAI
+SCHEDULED: <2023-04-30 Sun>
 plugin VEP
 **** TODO Ajout pLI
 plugin VEP
 **** KILL Ajout LOEUF
 CLOSED: [2023-04-19 mer. 16:32]
 plugin VEP
-**** TODO Spip avec export VCF
+**** DONE Spip
+CLOSED: [2023-05-01 Mon 23:07] SCHEDULED: <2023-04-30 Sun>
 BED ne semble pas bien marcher (il faut définir une zone)
 VCF : trop d’information
-
-On prend la sortie au format table et on le convertit en VCF
- awk -F'\t' 'NR > 1 {print $1"\t"$2"\t"$3"\t"$4"\t"$5"\t"$6"\t"$7"\tspip="$14}' spip.txt  > spip2.vcf
-
- + bgzip + tabix
+Attention, plusieurs transcripts mais résultats identiques. On supprimer les doublons
+***** DONE interpretation + score + intervalle de confiance séparé
+CLOSED: [2023-05-01 Mon 23:07] SCHEDULED: <2023-04-30 Sun>
+Tests :
+dans tests/
+vep -i 63004925-small.vcf -o postvep.vcf --vcf --fasta genomeRef.fna --dir 109 --merged --pick  --offline --custom ../script/spip_annotation.vcf.gz,SPIP,vcf,exact,0,spipInterp,spipScore,spipConfidence
+***** DONE Score
+CLOSED: [2023-04-22 Sat 15:30]
 **** TODO CADD: remplacer par plugin VEP
+***** Test
 #+begin_src
 vep  -i test.vcf  -o lol.vcf --offline --dir  /Work/Projects/bisonex/data/vep/GRCh38/ --merged --vcf --fasta /Work/Projects/bisonex/data/genome/GRCh38.p13/genomeRef.fna --plugin CADD,/Work/Users/apraga/bisonex/work/13/9287a7fef17ab9365f5696f20710cd/gnomad.genomes.r3.0.snv.tsv.gz,/Work/Users/apraga/bisonex/work/13/9287a7fef17ab9365f5696f20710cd/gnomad.genomes.r3.0.indel.tsv.gz  --dir_plugins ../VEP_plugins/ -v
 #+end_src
-***** TODO Renommer les chromosome avant ...
-**** TODO HGVS option --hgvsg pour remplaer hgvsg.r ?
-***** TODO Vérifier résultats avec mutalyzer
-**** TODO OMIM
-**** TODO clinvar avec --custom
+
+Test
+#+begin_src sh
+vep --id "1  230710048 230710048 A/G 1"   --offline --dir  /Work/Projects/bisonex/data/vep/GRCh38/ --merged --vcf --fasta /Work/Projects/bisonex/data/genome/GRCh38.p13/genomeRef.fna --plugin CADD,/Work/Users/apraga/bisonex/work/13/9287a7fef17ab9365f5696f20710cd/gnomad.genomes.r3.0.snv.tsv.gz,/Work/Users/apraga/bisonex/work/13/9287a7fef17ab9365f5696f20710cd/gnomad.genomes.r3.0.indel.tsv.gz  --hgvsg --plugin pLI --plugin LOEUF -o lol
+#+end_src
+
+CSQ=G|missense_variant|MODERATE|AGT|ENSG00000135744|Transcript|ENST00000366667|protein_coding|2/5||||843|776|259|M/T|aTg/aCg|||-1||HGNC|HGNC:333||Ensembl||A|A||1:g.230710048A>G|0.347|-0.277922|
+Correspond bien à https://www.ensembl.org/Homo_sapiens/Tools/VEP/Results?tl=I7ZsIbrj14P6lD43-9115494
+***** DONE Utiliser whole genome
+CLOSED: [2023-04-29 Sat 15:46]
+***** KILL Renommer les chromosome avant ...
+CLOSED: [2023-05-01 Mon 09:14] SCHEDULED: <2023-04-30 Sun>
+Trop long !
+- Téléchargement de CADD: 4h20
+- renommer les chromosome pour SNV : 6h20
+- tabix sur les SNV : job tué au bout de 21h....
+***** TODO annoter séparément et fusionner les tableaux
+SCHEDULED: <2023-05-01 Mon>
+NB: on pourrait filtrer CADD avec tabix pour se restreindre à nos variants
+**** DONE clinvar
+CLOSED: [2023-04-22 Sat 15:31]
+**** STRT Remplacer script R par vep ?
+Example avec --custom
 https://www.ensembl.org/info/docs/tools/vep/script/vep_custom.html
+**** KILL Vérifier résultats HGVS avec mutalyzer
+CLOSED: [2023-05-01 Mon 09:26]
+**** TODO Parallélisation par chromosome avec workflow VEP
+https://github.com/Ensembl/ensembl-vep/blob/release/109/nextflow/workflows/run_vep.nf
+**** TODO OMIM
+SCHEDULED: <2023-05-01 Mon>
+**** TODO Grantham
+SCHEDULED: <2023-05-01 Mon>
+**** TODO ACMG incidental
+SCHEDULED: <2023-05-01 Mon>
+**** TODO Gnomad ?
+SCHEDULED: <2023-05-01 Mon>
+**** DONE Filtrer après VEP avec filter_vep
+CLOSED: [2023-04-29 Sat 15:47]
+nNon testé
+*** HOLD Ancienne version
+**** TODO HGVS
 **** TODO Filtrer après VEP
-*** TODO ACMG incidental
-*** TODO Grantham
-SCHEDULED: <2023-04-18 Tue>
-*** KILL LRG
+**** TODO OMIM
+**** TODO clinvar
+**** TODO ACMG incidental
+**** TODO Grantham
+**** KILL LRG
 CLOSED: [2023-04-18 mar. 17:22] SCHEDULED: <2023-04-18 Tue>
 Vu avec alexis, n’est plus à jour
-*** TODO Gnomad
-SCHEDULED: <2023-04-18 Tue>
+**** TODO Gnomad
 
 ** DONE Porter exactement la version d'Alexis sur Helios
 CLOSED: [2023-01-14 Sat 17:56]
@@ -1244,10 +1313,10 @@ Besoin de vep
 *** TODO Variant calling
 * Amélioration :amelioration:
 * Documentation :doc:
-** Procédure d'installation nix + dependences pour VM CHU
-SCHEDULED: <2023-04-13 Thu>
+** DONE Procédure d'installation nix + dependences pour VM CHU
+CLOSED: [2023-04-22 Sat 15:27] SCHEDULED: <2023-04-13 Thu>
 * Manuscript :manuscript:
-* Tests :tests:hg002:
+* Tests :tests:
 ** WAIT Non régression : version prod
 *** DONE ID common snp
 CLOSED: [2022-11-19 Sat 21:36]
@@ -3084,8 +3153,7 @@ picard LiftOverIntervalList -I exons_illumina.list  -O exons_illumina_hg38.list 
 
 ***** KILL VCF de référence
 CLOSED: [2023-04-16 Sun 16:32]
-****** DONE NA12878 (HG001)
-CLOSED: [2023-02-25 Sat 19:46]
+****** TODO NA12878 (HG001)
 ******* DONE Fastq HiSeq
 CLOSED: [2023-02-25 Sat 19:46]
 On prend le Hiseq, qui est probablement ce qu'utilise Centogène :
@@ -3100,6 +3168,8 @@ Il y a 2 samples (NIST7035 et NIST7086), chacun sur 2 lanes -> à concaténer
 NB : liste techno illumina https://www.illumina.com/systems/sequencing-platforms.html
 
 Hiseq postérieur nextseq 550
+******* TODO Fastq hiseq sans trimming
+SCHEDULED: <2023-04-30 Sun>
 ******* DONE Capture : Exons (bed)
 CLOSED: [2023-02-25 Sat 19:46]
 https://ftp-trace.ncbi.nih.gov/ReferenceSamples/giab/data/NA12878/Garvan_NA12878_HG001_HiSeq_Exome/nexterarapidcapture_expandedexome_targetedregions.bed.gz
@@ -3921,6 +3991,8 @@ compareNA12878-giab/happy/NA12878.summary.csv
 | INDEL | PASS   |        4871 |     3678 |     1193 |        7036 |     1299 |      2011 |   208 |   217 |      0.755081 |         0.741493 |       0.285816 |        0.748225 |                        |                        |        1.6174985978687606 |        2.5240506329113925 |
 | SNP   | ALL    |       46032 |    41138 |     4894 |       47694 |     1622 |      4930 |   362 |    31 |      0.893683 |         0.962071 |       0.103367 |        0.926617 |      2.529551552318896 |     2.4124463519313304 |        1.6206857273037931 |        1.6888675840288743 |
 | SNP   | PASS   |       46032 |    41138 |     4894 |       47694 |     1622 |      4930 |   362 |    31 |      0.893683 |         0.962071 |       0.103367 |        0.926617 |      2.529551552318896 |     2.4124463519313304 |        1.6206857273037931 |         1.688867584028874 |
+***** TODO Résultats sans trimming
+SCHEDULED: <2023-04-30 Sun>
 **** DONE HG002 :hg002:
 CLOSED: [2023-04-14 Fri 09:54] SCHEDULED: <2023-04-10 Mon>
 #+begin_src
@@ -4057,17 +4129,901 @@ CLOSED: [2023-04-18 Tue 21:27] SCHEDULED: <2023-04-16 Sun>
 https://emea.illumina.com/platinumgenomes.html
 *** TODO Séquencer NA12878
 Discussion avec Paul : sous-traitant ne nous donnera pas les données, il faut commander l'ADN
-** TODO Fastq avec tous les variants centogène
-*** TODO Extraire liste des variants
-SCHEDULED: <2023-04-17 Mon>
-*** TODO Générer fastq
-SCHEDULED: <2023-04-16 Sun>
-*** TODO Vérifier qu'on les retrouve tous
-SCHEDULED: <2023-04-17 Mon>
+** TODO Fastq avec tous les variants centogène :centogene:
+*** DONE Extraire liste des SNVs
+CLOSED: [2023-04-22 Sat 17:32] SCHEDULED: <2023-04-17 Mon>
+**** DONE Corriger manquant à la main
+CLOSED: [2023-04-22 Sat 17:31]
+La sortie est sauvegardé dans git-annex : variants_success.csv
+**** DONE Automatique
+CLOSED: [2023-04-22 Sat 17:31]
+*** TODO Convert SNVs : transcript -> génomique
+**** DONE Variant_recoder
+CLOSED: [2023-04-26 Wed 21:21] SCHEDULED: <2023-04-22 Sat>
+***** KILL Haskell: 160 manquant : recoded-success.csv
+CLOSED: [2023-04-25 Tue 18:32]
+La liste des variants a été générée en Haskel   l et nettoyée à la main.
+On générer une liste de variant pour variant_rec            oder et on soumet tout d'un coup.
+[[file:~/recherche/bisonex/parsevariants/app/Main.hs][parsevariant]]
+#+begin_src haskell
+recodeVariant = do
+  prepareVariantRecod   er "variant_success.csv" "renamed.csv"
+  runVariantRecoder "renamed.csv" "recoded.json"
+#+end_src
 
-** Divers
-*** DONE Vérifier nombre de reads fastq - bam
+#+RESULTS:
+: <interactive>:4:3-19: error:
+:     Variable not in scope: runVariantRecoder :: String -> String -> t
+: gh
+
+Problème : 160 n'ont pas pu être lu sur 820, probablement à cause du numéro mineur de transcrit
+La sortie est sauvegardé dans git-annex : variants-recoded-raw.json.
+
+***** KILL Julia
+CLOSED: [2023-04-25 Tue 18:32]
+On regénère la liste de variant et on passe à Julia pour préparer l'appel en parallèle à variant recoder
+[[file:~/recherche/bisonex/parsevariants/variantRecoder.jl][variantRecoder.jl]]
+#+begin_src julia
+setupVariantRecoder(unique(init), n)
+#+end_src
+
+Puis
+#+begin_src sh
+parallel -a parallel-recoder.sh --jobs 10
+#+end_src
+On récupère les résultats
+#+begin_src julia
+(fails, success) = mergeVariantRecoder(n)
+CSV.write(fSuccess, success)
+CSV.write(fFailures, fails)
+#+end_src
+
+Certains variants ne sont pas trouvé, donc on prépare un nouveau job en enlevant les versionrs mineures des transcrits
+#+begin_src julia
+
+# Cleanup json and txt
+if isfile(fSuccess) && isfile(fFailures)
+    foreach(rm, variantRecoderInput())
+    foreach(rm, variantRecoderOutput())
+end
+redoFails(fFailures)
+#+end_src
+Puis
+#+begin_src sh
+parallel -a parallel-recoder.sh --jobs 3
+#+end_src
+Il manque encore 70 transcrits
+**** DONE Julia avec mobidetails: recode-failures-mobidetails.csv
+CLOSED: [2023-04-25 Tue 18:58]
+Nouvelle stratégie : on essaie une fois variant recoder.
+Pour tous les échecs, on utilise mobidetails (~170).
+Si l'ID n'est pas trouvé, on incrémente le numéro de version 2 fois
+
+**** DONE Reste une dizaine à corriger à la main
+CLOSED: [2023-04-26 Wed 21:21]
+- [X] certains transcrits ont juste été supprimé
+- [X] Erreur de parsing, manque souvent un -
+#+begin_src julia
+lastTryMobidetails("recoded-failures-mobidetails.csv")
+#+end_src
+**** DONE Fusionner données
+CLOSED: [2023-04-26 Wed 22:35]
+#+begin_src julia
+function mergeAllGenomic()
+    dNew = mergeAll("recoded-success.csv",
+                    "recoded-failures-mobidetails.csv",
+                    "recoded-failures-mobidetails-redo.csv")
+
+    dInit = @chain DataFrame(CSV.File("variant_success.csv")) begin
+        @transform :transcript = :transcript .* ":" .* :coding .* :codingPos .* :codingChange
+        @select :file :transcript :classification :zygosity
+        @rename :classificationCentogene = :classification
+    end
+    dTmp = outerjoin(dInit, dNew, on = :transcript)
+    CSV.write("variant_genomic.csv", dTmp)
+end
+
+fSuccess = "recoded-success.csv"
+fFailures = "recoded-failures.csv"
+
+# variantRecoder(fSuccess, fFailures)
+# mobidetailsOnFailures(fFailures)
+# lastTryMobidetails("recoded-failures-mobidetails.csv")
+mergeAllGenomic()
+
+
+#+end_src
+**** DONE Formatter donner pour simuscop
+CLOSED: [2023-04-28 Fri 11:55] SCHEDULED: <2023-04-26 Wed>
+*** TODO Extraire liste des CNVs
+
+SCHEDULED: <2023-04-17 Mon>
+*** TODO Simuscop :simuscop:
+**** DONE Entrainer le modèle sur 63003856/
+CLOSED: [2023-04-29 Sat 19:56]
+Relancer le modèle pour être sûr
+**** DONE Générer fastq avec simuscop (del et ins seulement) 20x
+CLOSED: [2023-04-28 Fri 23:35] SCHEDULED: <2023-04-22 Sat>
+***** DONE Génerer un profile avec bed de centogène
+CLOSED: [2023-04-28 Fri 11:54] SCHEDULED: <2023-04-22 Sat>
+NA12878 mais à refaire avec un vrai séquencage
+Voir [[*Centogène][Bed Centogène]] pour choix
+***** DONE Générer les données en 20x
+CLOSED: [2023-04-28 Fri 11:54] SCHEDULED: <2023-04-22 Sat>
+capture de centogene
+***** DONE Regénérer en supprimant les doublons
+CLOSED: [2023-04-28 Fri 17:28]
+**** DONE Quelle couverture ?
+CLOSED: [2023-04-29 Sat 18:26]
+ex sur chr11:16,014,966 où on a 11 reads dans la simulation contre 200 !
+***** 200 est la plus proche
+#+attr_html: :width 500px
+[[./simuscop-200-chr1-1.png]]
+
+#+attr_html: :width 500px
+[[./simuscop-200-chr1-2.png]]
+
+***** DONE 20x
+CLOSED: [2023-04-29 Sat 15:38]
+***** DONE 50x
+CLOSED: [2023-04-29 Sat 15:38]
+***** DONE 100x
+CLOSED: [2023-04-29 Sat 15:39]
+***** DONE 200x
+CLOSED: [2023-04-29 Sat 15:39]
+**** DONE Reads mal centrés sur des petits exons seuls
+CLOSED: [2023-04-29 Sat 19:56] SCHEDULED: <2023-04-29 Sat>
+Capture ok : [[https://genome-euro.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr1%3A153817168%2D153817824&hgsid=296556270_F4fkENLPXHXidi2oALXls2jxNH9l][UCSC]] (track noire)
+Mais mauvaise répartitiopn
+#+attr_html: :width 800px
+[[./simuscop-error.png]]
+
+À tester
+- Problème de profile ?
+  - mauvais patient ?
+  - mauvaise génération ? -> comparer avec ceux donnés sur github
+- nom des chromosomes ?
+***** DONE [#A] Tester sur exon 6 GATAD2B pour NC_000001.11:g.153817496A>T
+CLOSED: [2023-04-29 Sat 19:56] SCHEDULED: <2023-04-29 Sat>
+****** DONE Configuration + Profile 63003856.profile: idem, mal centré
+CLOSED: [2023-04-29 Sat 19:18]
+Téléchargement des données
+#+begin_src sh :dir ~/code/bisonex/test-simuscop
+scp meso:/Work/Projects/bisonex/data/genome/GRCh38.p14/genomeRef.fna .
+scp meso:Work/Projects/bisonex/data/simuscop/*.profile .
+scp -r meso:/Work/Projects/bisonex/data/genome/GRCh38.p13/bwa .
+#+end_src
+
+On récupère l'exon (NB: org-mode ne lance pas le code...)
+#+begin_src julia
+using CSV,DataFramesMeta
+d = CSV.read("VCGS_Exome_Covered_Targets_hg38_40.1MB_renamed.bed", header=false, delim="\t", DataFrame)
+@subset d :Column1 .== "NC_000001.11" :Column2 .<= 153817496 :Column3 .>= 153817496
+#+end_src
+
+NC_000001.11  153817371  153817542
+
+Génération du bed
+#+begin_src sh :dir ~/code/bisonex/test-simuscop
+echo -e "NC_000001.11\t153817371\t153817542" > gatad2b-exon6.bed
+#+end_src
+
+#+RESULTS:
+
+Génération d'un variant
+#+begin_src sh :dir ~/code/bisonex/test-simuscop
+echo -e "s\tsingle\tNC_000001.11\t153817496\tA\tT\thet"> variant.txt
+#+end_src
+
+#+RESULTS:
+
+Génération du fichier de config
+#+begin_src sh :dir ~/code/bisonex/test-simuscop
+cat > config_wes.txt << EOL
+ref = genomeRef.fna
+profile = ./63003856.profile
+variation = ./variant.txt
+target = ./gatad2b-exon6.bed
+layout = PE
+threads = 1
+name = single
+output = test-gatad2b
+coverage = 20
+EOL
+#+end_src
+
+#+RESULTS:
+
+On démarre la simulation
+#+begin_src sh :dir ~/code/bisonex/test-simuscop
+simuReads config_wes.txt
+#+end_src
+
+#+RESULTS:
+
+Alignement
+#+begin_src sh :dir ~/code/bisonex/test-simuscop
+bwa mem -R '@RG\tID:sample\tSM:sample\tPL:ILLUMINA\tPM:Miseq\tCN:lol\tLB:definition_to_add' bwa/genomeRef test-gatad2b/single_1.fq  test-gatad2b/single_2.fq | samtools sort  -o single.bam
+#+end_src
+
+#+RESULTS:
+****** DONE Profile github  HiSeq2000
+CLOSED: [2023-04-29 Sat 19:56]
+#+begin_src sh :dir ~/code/bisonex/test-simuscop :result file
+wget https://raw.githubusercontent.com/qasimyu/simuscop/master/testData/Illumina_HiSeq2000.profile
+#+end_src
+
+#+RESULTS:
+
+#+begin_src sh :dir ~/code/bisonex/test-simuscop
+cat > config_wes.txt << EOL
+ref = genomeRef.fna
+profile = ./Illumina_HiSeq2000.profile
+variation = ./variant.txt
+target = ./gatad2b-exon6.bed
+layout = PE
+threads = 1
+name = single
+output = test-gatad2b-hiseq2000
+coverage = 20
+EOL
+simuReads config_wes.txt
+bwa mem -R '@RG\tID:sample\tSM:sample\tPL:ILLUMINA\tPM:Miseq\tCN:lol\tLB:definition_to_add' bwa/genomeRef test-gatad2b-hiseq2000/single_1.fq  test-gatad2b-hiseq2000/single_2.fq | samtools sort  -o single-hiseq2000.bam
+samtools index single-hiseq2000.bam
+#+end_src
+
+#+RESULTS:
+****** KILL Tester exemple sur github
+CLOSED: [2023-04-29 Sat 19:56]
+#+begin_src sh
+git clone https://github.com/qasimyu/simuscop/
+cd simuscop
+simuReads configFiles/config_test_wes.txt
+#+end_src
+****** KILL Centrer la fenêtre sur les zones de capture
+CLOSED: [2023-04-30 Sun 13:28] SCHEDULED: <2023-04-29 Sat>
+1000bp par défaut, ce qui est plus grand que les zones de captures...
+Changer fragzip ne fonctionne pas
+
+Si on rajoute un offset sur l'exon: 200bp, est encore plus allongé
+NC_000001.11 153817371 153817542 ->
+NC_000001.11 153817171 153817742
+
+Si on désactive les target ?
+Regarder les target sur le chromosome 1
+#+begin_src sh :dir ~/code/bisonex/test-simuscop :results silent
+scp meso:/Work/Projects/bisonex/data/simuscop/VCGS_Exome_Covered_Targets_hg38_40.1MB_renamed.bed .
+#+end_src
+
+#+begin_src sh :dir ~/code/bisonex/test-simuscop :results silent
+head -n 100 VCGS_Exome_Covered_Targets_hg38_40.1MB_renamed.bed > 100exons.bed
+echo -e "s\tsingle\tNC_000001.11\t153817496\tA\tT\thet"> variant.txt
+cat > config_wes.txt << EOL
+ref = genomeRef.fna
+profile = ./63003856.profile
+variation = ./variant.txt
+layout = PE
+threads = 4
+target = 100exons.bed
+name = single
+output = test-gatad2b
+coverage = 200
+EOL
+./simuscop/bin/simuReads config_wes.txt
+bwa mem bwa/genomeRef test-gatad2b/single_1.fq  test-gatad2b/single_2.fq | samtools sort  -o single.bam
+samtools index single.bam
+#+end_src
+
+
+**** TODO Vérifier tous les variants sont retrouvés
+SCHEDULED: <2023-04-22 Sat>
+***** DONE Après alignement
+CLOSED: [2023-04-29 Sat 18:27] SCHEDULED: <2023-04-28 Fri>
+****** DONE SNV: avec doublons
+CLOSED: [2023-04-28 Fri 18:12]
+On utilise [[file:~/recherche/bisonex/simuscop/checkBam.jl][checkBam.jl]]
+#+begin_src julia
+d = prepareVariant("../parsevariants/variant_genomic.csv")
+
+root = "/home/alex/code/bisonex/simuscop-centogene/cento"
+bam = root * "/preprocessing/applybqsr/cento.bam"
+bai = root * "/preprocessing/recalibrated/cento.bam.bai"
+
+snv = getSNV(d, bam, bai)
+#+end_src
+Nombreux faux homozygouteS
+Vérification avec checkFalseHemizygous(snv) : nombreux doublons dans le fichier pour simuscop...
+****** DONE SNV sans doublons
+CLOSED: [2023-04-29 Sat 18:27]
+******* DONE 18 faux homozygote mais avec peu de reads
+CLOSED: [2023-04-29 Sat 18:27]
+
+julia> @subset snv :refCount .== 0 :altCount .> 0 :zygosity .== "heterozygous"
+
+18×10 DataFrame
+ Row │ chrom         pos        variant         variantType  zygosity      ref        alt        refCount  altCount  readsCount
+     │ SubStrin…?    Int64      SubStrin…?      String?      String15      SubStrin…  SubStrin…  Int64     Int64     Int64
+─────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ NC_000022.11   42213078  g.42213078T>G   snv          heterozygous  T          G                 0         1           1
+   2 │ NC_000012.12  101680427  g.101680427C>A  snv          heterozygous  C          A                 0         3           3
+   3 │ NC_000014.9   105385684  g.105385684G>C  snv          heterozygous  G          C                 0         4           4
+   4 │ NC_000011.10  125978299  g.125978299C>T  snv          heterozygous  C          T                 0         3           3
+   5 │ NC_000023.11   77998618  g.77998618C>T   snv          heterozygous  C          T                 0         2           2
+   6 │ NC_000015.10   66703292  g.66703292C>T   snv          heterozygous  C          T                 0         3           3
+   7 │ NC_000010.11   87961118  g.87961118G>A   snv          heterozygous  G          A                 0         3           3
+   8 │ NC_000012.12  112477719  g.112477719A>G  snv          heterozygous  A          G                 0         2           2
+   9 │ NC_000020.11    6778406  g.6778406C>T    snv          heterozygous  C          T                 0         3           3
+  10 │ NC_000023.11   68192943  g.68192943G>A   snv          heterozygous  G          A                 0         2           2
+  11 │ NC_000004.12     987858  g.987858C>T     snv          heterozygous  C          T                 0         3           4
+  12 │ NC_000015.10   66435145  g.66435145G>A   snv          heterozygous  G          A                 0         1           2
+  13 │ NC_000002.12   47809595  g.47809595C>T   snv          heterozygous  C          T                 0         2           2
+  14 │ NC_000003.12  136477305  g.136477305C>G  snv          heterozygous  C          G                 0         4           4
+  15 │ NC_000005.10  157285458  g.157285458C>T  snv          heterozygous  C          T                 0         3           3
+  16 │ NC_000012.12   23604413  g.23604413T>G   snv          heterozygous  T          G                 0         5           5
+  17 │ NC_000019.10   52219703  g.52219703C>T   snv          heterozygous  C          T                 0         1           1
+  18 │ NC_000016.10   88856757  g.88856757C>T   snv          heterozygous  C          T                 0         8           8
+
+******* DONE 8 non retrouvé => probablement hors de la zjone de capture
+CLOSED: [2023-04-28 Fri 19:49]
+julia> @subset snv :refCount .== 0 :altCount .== 0
+8×10 DataFrame
+ Row │ chrom         pos        variant         variantType  zygosity      ref        alt        refCount  altCount  readsCount
+     │ SubStrin…?    Int64      SubStrin…?      String?      String15      SubStrin…  SubStrin…  Int64     Int64     Int64
+─────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ NC_000015.10   74343027  g.74343027C>T   snv          heterozygous  C          T                 0         0           0
+   2 │ NC_000011.10   20638345  g.20638345A>G   snv          heterozygous  A          G                 0         0           0
+   3 │ NC_000004.12  139370252  g.139370252C>T  snv          heterozygous  C          T                 0         0           2
+   4 │ NC_000017.11   61966475  g.61966475G>T   snv          heterozygous  G          T                 0         0           0
+   5 │ NC_000019.10   54144058  g.54144058G>A   snv          heterozygous  G          A                 0         0           0
+   6 │ NC_000023.11   77635947  g.77635947A>G   snv          hemizygous    A          G                 0         0           0
+   7 │ NC_000005.10    1258495  g.1258495G>A    snv          heterozygous  G          A                 0         0           0
+   8 │ NC_000012.12    2449086  g.2449086C>G    snv          heterozygous  C          G                 0         0           0
+
+***** TODO Après haplotypecaller
+SCHEDULED: <2023-04-28 Fri>
+****** KILL 20x
+CLOSED: [2023-04-29 Sat 15:39]
+Manque 183 sur 766
+[[file:~/recherche/bisonex/simuscop/checkVCF.jl][checkVCF.jl]]
+#+begin_src julia
+@subset leftjoin(d2, dHaplo2, on=:genomic) ismissing.(:Column1)
+#+end_src
+Problème de profondeur ?
+Ex: chr13 nombre de 101081606
+NC_000011.10   16014966  g.16014966G>A
+1 read sur 11 pour allèle alternative
+Sur le patient de référence, 202 reads!
+
+Celui-ci n'est pas le fichier de capture (ni dans le bam !)
+ex: NC_000015.10   74343027  g.74343027C>T
+
+Pour les autres, on devrait les retrouver...
+
+Vérifier le nombre de reads sur 63003856
+Vérifier la paramétrisation du modèle également
+****** TODO [#B] 200x
+SCHEDULED: <2023-04-30 Sun>
+120 manquants (99 sans doublon)!
+
+On vérifie dans IGV (vcf + bam après alignement) :
+******* snv NC_000015.10   74343027
+- rien d'appelé
+- pas une région répétée
+- base quality (voir [[*Phred score][Phred score]] ) à 37 donc ok
+- variant retrouvé à 26/42
+- Bam après aplybqsr: base qualità 35 donc ok
+
+chr15 également à 89318565, variant retrouvé à 25/33 avec basequal de 37
+
+
+Sans oublier de charger les instructions avx
+#+begin_src sh
+module load gcc@11.3.0/gcc-12.1.0
+#+end_src
+
+On coupe le .bam par chromosome pour débugger (sur le mesocentre)
+#+begin_src sh :dir /ssh:meso:/Work/Users/apraga/bisonex/simuscop-centogene-200x/cento/testing :results silent
+ln -s ../preprocessing/applybqsr/cento.bam .
+ln -s ../preprocessing/recalibrated/cento.bam.bai .
+ln -s /Work/Projects/bisonex/data/dbSNP/GRCh38.p13/dbSNP.gz .
+ln -s /Work/Projects/bisonex/data/dbSNP/GRCh38.p13/dbSNP.gz.tbi .
+ln -s /Work/Projects/bisonex/data/genome/GRCh38.p13/genomeRef.dict .
+ln -s /Work/Projects/bisonex/data/genome/GRCh38.p13/genomeRef.fna .
+ln -s /Work/Projects/bisonex/data/genome/GRCh38.p13/genomeRef.fna.fai .
+#+end_src
+
+On doit lancer à la main (org-mode ne connait pas le chemin de samtools)
+samtools view -b cento.bam NC_000015.10 > cento_chr15.bam
+samtools index cento_chr15.bam
+
+Puis on se restreint au chronmosome 15
+samtools faidx genomeRef.fna NC_000015.10 > genomeRef_chr15.fa
+samtools faidx genomeRef_chr15.fa
+gatk CreateSequenceDictionary -R genomeRef_chr15.fa -O genomeRef_chr15.dict
+
+On restreint au chromosome 15 avec l'option -L (dure = 1min)
+gatk --java-options "-Xmx3072M" HaplotypeCaller --input cento_chr15.bam \
+    --output test.vcf.gz --reference genomeRef.fna --dbsnp dbSNP.gz --tmp-dir . --max-mnp-distance 2 -L NC_000015.10
+
+******* DONE Tutorial haplotycaller
+CLOSED: [2023-05-01 Mon 19:58]
+Procédure : https://gatk.broadinstitute.org/hc/en-us/articles/360043491652-When-HaplotypeCaller-and-Mutect2-do-not-call-an-expected-variant
+******** DONE Supprimer --max-mnp-distance = 2: idem
+CLOSED: [2023-04-30 Sun 15:42]
+******** DONE --debug &> run.log : Non appelé...
+CLOSED: [2023-04-30 Sun 15:52]
+******** DONE --linked-de-bruijn-graph: idem
+CLOSED: [2023-04-30 Sun 15:55]
+******** DONE --recover-all-dangling-branches
+CLOSED: [2023-04-30 Sun 16:01]
+******** DONE --min-pruning 0 : plus mais pas celui là
+CLOSED: [2023-04-30 Sun 15:59]
+******** DONE --bam-output
+CLOSED: [2023-04-30 Sun 16:50]
+********* DONE : rien !
+CLOSED: [2023-04-30 Sun 16:08]
+********* DONE + --recover-all-dangling-branches : rien !
+CLOSED: [2023-04-30 Sun 16:08]
+******** DONE Données filtrées ? apparement non
+CLOSED: [2023-04-30 Sun 16:41]
+183122 read(s) filtered by: MappingQualityReadFilter
+3674 read(s) filtered by: NotDuplicateReadFilter
+********* DONE --disable-read-filter MappingQualityReadFilter: idem
+CLOSED: [2023-04-30 Sun 16:34]
+On a bien  - 0 read(s) filtered by: MappingQualityAvailableReadFilter
+********* DONE --disable-read-filter NotDuplicateReadFilter: idem
+CLOSED: [2023-04-30 Sun 16:40]
+
+******** DONE Essayer freebayes : idem
+CLOSED: [2023-04-30 Sun 16:22]
+freebayes -f genomeRef.fna -r NC_000015.10 cento_chr15.bam > freebayes-test-chr15.vcf
+******** DONE Avec toutes les options : idem
+--linked-de-bruijn-graph --recover-all-dangling-branches --min-pruning 0 --bam-output debug.bam
+CLOSED: [2023-04-30 Sun 16:50]
+******** DONE Vérifier qu'on regarde le même bam : oui
+CLOSED: [2023-04-30 Sun 16:50]
+******** DONE Désactiver dbSNP : idem
+CLOSED: [2023-04-30 Sun 16:52]
+******** DONE Changer kmer size : idem
+CLOSED: [2023-04-30 Sun 16:56]
+par exemple[[https://gatk.broadinstitute.org/hc/en-us/community/posts/360075653152-REAL-Variant-not-called-by-HaplotypeCaller][forum gatk]] --kmer-size 18 --kmer-size 22
+******** DONE --adaptive-pruning true
+CLOSED: [2023-05-01 Mon 19:57]
+
+******* DONE Mapping quality : est à 0 !!!!
+CLOSED: [2023-05-01 Mon 19:58]
+
+****** TODO Comparer VCF avec vcfeval
+SCHEDULED: <2023-05-01 Mon>
+On prépare les données en julia
+#+begin_src ~/recherche/bisonex/simuscop
+julia --project=. toVCF.jl
+#+end_src
+Puis on export sur le mésocentre
+#+begin_src
+scp variants_for_vcfeval.tsv.gz* meso:centogene_variants/
+#+end_src
+#+begin_src
+z bis
+cd simuscop-200x
+rtg vcfeval -b ~/centogene_variants/variants_for_vcfeval.tsv.gz -c cento/variantCalling/haplotypecaller/cento.vcf.gz -o compare-haplotypecaller -t /Work/Groups/bisonex/data/giab/GRCh38/genomeRef.sdf
+#+end_src
+Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
+----------------------------------------------------------------------------------------------------
+   82.000                540            540         60         45     0.9000       0.9231     0.9114
+     None                546            546        329         39     0.6240       0.9333     0.7479
+
+****** DONE Méthode naïve 549/585
+CLOSED: [2023-05-04 Thu 21:57]
+Haplotypecaller: Nb reference SNV 692 vs found 585
+Variant calling, filter technical: reference SNV 692 vs found 521
+***** TODO Avant annotation
+SCHEDULED: <2023-04-28 Fri>
+#+begin_src
+cd cento/variantCalling
+bgzip filter-technical.vcf
+tabix -p vcf filter-technical.vcf.gz -f
+#+end_src
+Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
+----------------------------------------------------------------------------------------------------
+   12.000                519            519         55         66     0.9042       0.8872     0.8956
+     None                519            519         55         66     0.9042       0.8872     0.8956
+****** DONE Méthode naïve 521/585
+CLOSED: [2023-05-04 Thu 21:57]
+Haplotypecaller: Nb reference SNV 692 vs found 585
+Variant calling, filter technical: reference SNV 692 vs found 521
+***** TODO Après filtre annotation
+****** DONE Méthode naïve : 493/585
+CLOSED: [2023-05-04 Thu 22:09]
+****** TODO VCf eval
+ cd cento/annotation/
+ bgzip postvep-filter.vcf
+ tabix postvep-filter.vcf.gz
+ cd ../..
+ rtg vcfeval -b ~/centogene_variants/variants_for_vcfeval.tsv.gz -c cento/annotation/postvep-filter.vcf.gz  -o compare-vepfilter -t /Work/Groups/bisonex/data/giab/GRCh38/genomeRef.sdf
+ Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
+----------------------------------------------------------------------------------------------------
+   12.000                491            491         50         94     0.9076       0.8393     0.8721
+     None                491            491         50         94     0.9076       0.8393     0.8721
+
+*** KILL NEAT : trop lent :neat:
+CLOSED: [2023-04-29 Sat 22:06]
+**** KILL Génération fastq sur exno 5 GATAD2B
+CLOSED: [2023-04-29 Sat 22:06]
+Trop lent : pour 1 exon : 1500 secondes !
+#+begin_src sh
+samtools faidx genomeRef.fna NC_000001.11 | save -f genomeRef_chr1.fna
+python gen_reads.py  -r ../test-simuscop/genomeRef_chr1.fna -o lol  -tr ../test-simuscop/gatad2b-exon6.bed  -R 147 --pe 150 10
+#+end_src
+*** KILL ReSeq : exome avec exons comme fasta mais ne gère pas des exons trop petits :reseq:
+CLOSED: [2023-04-30 Sun 19:44] SCHEDULED: <2023-04-29 Sat>
+#+begin_quote
+Can I simulate exome sequencing? Yes. You need to use a reference that only contains the exons as individual scaffolds. Using --refBiasFile you can specify the coverage of individual exons. To simulate intron contamination you can add the whole reference to the reference containing the exons and strongly reduce the coverage for these scaffolds using --refBiasFile.
+#+end_quote
+Par contre, rapide
+**** DONE Fasta pour exons seuls
+CLOSED: [2023-04-30 Sun 19:25]
+Depuis le GFF
+#+begin_src sh :dir ~/code/bisonex/test-reseq :results silent
+wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.39_GRCh38.p13/GCF_000001405.39_GRCh38.p13_genomic.gff.gz
+#+end_src
+
+#+begin_src sh :dir ~/code/bisonex/test-reseq  :results silent
+gunzip -c GCF_000001405.39_GRCh38.p13_genomic.gff.gz | grep -w "exon" > exons.gff
+#+end_src
+
+On génère les exons
+#+begin_src sh :dir ~/code/bisonex/test-reseq
+bedtools getfasta -fi ../test-simuscop/genomeRef.fna -bed exons.gff -fo exons.fna
+#+end_src
+
+A tester avec un profile déjà fait :
+https://github.com/schmeing/ReSeq-profiles/tree/master/profiles
+
+On cherche l'exons qui nous intéresse
+ NC_000001.11 g.153817496 A>T
+N'y est pas ??
+
+***** DONE On test sur les 2 premiers : exec
+CLOSED: [2023-04-30 Sun 18:39]
+
+#+begin_src
+head exons.fa -n 2 > 2exons.fna
+#+end_src
+
+
+#+begin_src sh
+../ReSeq/bin/reseq illuminaPE -j 32 -R exons.fa -s Ec-Hi2000-TruSeq.reseq --ipfIterations 0 -1 reseq-sim_1.fq reseq_sim_2.fq
+#+end_src
+
+#+begin_quote
+error: All reference sequences are too short for simulating. They should have at least 1991 bases
+#+end_quote
+
+#+begin_src sh
+grep '^>NC_000001.10' exons.fa  | sed 's/:/,/;s/-/,/;s/^>//' > exons.csv
+#+end_src
+
+***** DONE Sur 200 premiers exons du chr1
+CLOSED: [2023-04-30 Sun 19:17]
+#+begin_src sh :dir ~/code/bisonex/test-reseq  :results silent
+head -n200 exons.fna > exons-200.fna
+ bwa index exons-200.fna
+ #+end_src
+
+Simulation avec 30x
+#+begin_src sh :dir ~/code/bisonex/test-reseq  :results silent
+ ../ReSeq/bin/reseq illuminaPE -R exons-200.fna -s Ec-Hi2000-TruSeq.reseq --ipfIterations 0 -1 reseq1.fq -2 reseq2.fq -c 30
+ #+end_src
+
+ Attention, pour l'alignement, il faut le nfa complet ! Sinon erreur du type
+ Erreurs:::sam_hdr_create] Duplicated sequence "NC_000001.10:762970-763155" in file "-"
+ Et pas de bam avec
+ samtools sort: failed to change sort order header to 'coordinate'
+ #+begin_src
+ bwa mem ../test-simuscop/bwa/genomeRef.fna reseq1.fq reseq2.fq | samtools sort -o reseq.bam
+ #+end_src
+
+ Manque des exons et l'allure ne correspond pas...
+***** DONE Utiliser le fichier de capture : exons trop petits
+CLOSED: [2023-04-30 Sun 19:25]
+Comme pour ART
+Trop court avec
+echo -e "NC_000001.11\t153817371\t153817542" > gatad2b-exon6.bed
+Donc on ajoute 1000 de chaque côté
+#+begin_src sh :dir ~/code/bisonex/test-reseq :results silent
+echo -e "NC_000001.11\t153816371\t153818542" > gatad2b-exon6.bed
+bedtools getfasta -fi ../test-simuscop/genomeRef.fna -bed gatad2b-exon6.bed -fo gatad2b-exon6.fna
+bwa index gatad2b-exon6.bed
+ ../ReSeq/bin/reseq illuminaPE -R gatad2b-exon6.fna -s Ec-Hi2000-TruSeq.reseq --ipfIterations 0 -1 reseq1.fq -2 reseq2.fq -c 30
+ bwa mem ../test-simuscop/bwa/genomeRef.fna reseq1.fq reseq2.fq | samtools sort -o reseq.bam
+ samtools index reseq.bam
+#+end_src
+**** KILL Sur le chromosome 15 puis trier à la main sur les zones de capture ?
+CLOSED: [2023-04-30 Sun 19:44]
+#+begin_src sh :dir ~/code/bisonex/test-reseq :results silent
+samtools faidx ../test-simuscop/genomeRef.fna NC_000015.10 > chr15.fna
+ ../ReSeq/bin/reseq illuminaPE -R chr15.fna -s Ec-Hi2000-TruSeq.reseq --ipfIterations 0 -1 reseq1.fq -2 reseq2.fq -c 30
+#+end_src
+*** DONE ART : fonctionne très mal en targeted
+CLOSED: [2023-04-30 Sun 11:49]
+**** DONE Génération de reads
+CLOSED: [2023-04-30 Sun 11:49]
+***** DONE Avec seulement les exons en séquence
+CLOSED: [2023-04-30 Sun 10:24]
+ head -n6 exons.fa | save three-exons.fna
+
+../art_bin_MountRainier/art_illumina -ss HS25 -i three-exons.fna -o ./paired_end_com -l 150 -f 10 -p -m 500 -s 10 -sam
+
+Le sam n'est pas visible sur igv mais si on aligne avec bwa mem, on a quelques reads
+***** DONE Extraire une zone de capture dans le fasta
+CLOSED: [2023-04-30 Sun 11:49]
+ NC_000001.11 g.153817496 A>T
+****** DONE Essai 1: ne dépasse pas la zone
+CLOSED: [2023-04-30 Sun 10:49]
+#+begin_src sh :dir ~/code/bisonex/test-art :results silent
+echo -e "NC_000001.11\t153817371\t153817542" > gatad2b-exon6.bed
+bedtools getfasta -fi ../test-simuscop/genomeRef.fna -bed gatad2b-exon6.bed -fo gatad2b-exon6.fa
+#+end_src
+
+-ss HS25 : nom du profile illumina
+-l 150 : reads de 150
+-f 10 : coverage de 10
+-p : paired end
+-m 500 : longueur moyenne des fragment d'ADN
+-s 10 : déviation standard
+#+begin_src sh :dir ~/code/bisonex/test-art :results silent
+../art_bin_MountRainier/art_illumina -ss HS25 -i gatad2b-exon6.fa -o ./gatad2b -l 150 -f 100 -p -m 500 -s 10
+#+end_src
+#+begin_src sh :dir ~/code/bisonex/test-art :results silent
+bwa mem ../test-simuscop/bwa/genomeRef gatad2b1.fq gatad2b2.fq | samtools sort -o gatad2b.b
+am
+samtools index gatad2b.bam
+#+end_src
+
+#+attr_html: :width 800px
+[[./art-capture-1.png]]
+****** Avec offset
+50bp idem
+NC_000001.11 153817371  153817542 -> NC_000001.11 153817321  153817592
+On essaie 1000
+NC_000001.11 153817371  153817542 -> NC_000001.11 153816371  153818542 ->
+#+begin_src sh :dir ~/code/bisonex/test-art :results silent
+echo -e "NC_000001.11\t153816371\t153818542" > gatad2b-exon6-offset.bed
+bedtools getfasta -fi ../test-simuscop/genomeRef.fna -bed gatad2b-exon6-offset.bed -fo gatad2b-exon6-offset.fa
+../art_bin_MountRainier/art_illumina -ss HS25 -i gatad2b-exon6-offset.fa -o ./gatad2b -l 150 -f 100 -p -m 500 -s 10
+bwa mem ../test-simuscop/bwa/genomeRef gatad2b1.fq gatad2b2.fq | samtools sort -o gatad2b.bam
+samtools index gatad2b.bam
+#+end_src
+
+mieux mais trop large
+#+attr_html: :width 800px
+[[./art-exon6-offset1000.png]]
+
+Sur les vraies données, on a une large de 500bp environ
+#+attr_html: :width 800px
+[[./illumina-ref-exon6.png]]
+
+
+Ici l'exon fait 250bp donc on rajouter 125bp de chaque côté
+NC_000001.11 153817371  153817542
+NC_000001.11 153817246  153817667
+Résulats incohérents :on a 2 colonnes séparées !
+
+Essai avec +200bp de chaque côt
+NC_000001.11 153817371  153817542
+NC_000001.11 153817171  153817742
+#+begin_src sh :dir ~/code/bisonex/test-art :results silent
+echo -e "NC_000001.11\t153817171\t153817742"> gatad2b-exon6-offset.bed
+bedtools getfasta -fi ../test-simuscop/genomeRef.fna -bed gatad2b-exon6-offset.bed -fo gatad2b-exon6-offset.fa
+../art_bin_MountRainier/art_illumina -ss HS25 -i gatad2b-exon6-offset.fa -o ./gatad2b -l 150 -f 100 -p -m 500 -s 50
+bwa mem ../test-simuscop/bwa/genomeRef gatad2b1.fq gatad2b2.fq | samtools sort -o gatad2b.bam
+samtools index gatad2b.bam
+#+end_src
+
+En changeant la longueur des reads
+#+begin_src sh :dir ~/code/bisonex/test-art :results silent
+echo -e "NC_000001.11\t153817171\t153817742"> gatad2b-exon6-offset.bed
+bedtools getfasta -fi ../test-simuscop/genomeRef.fna -bed gatad2b-exon6-offset.bed -fo gatad2b-exon6-offset.fa
+../art_bin_MountRainier/art_illumina -ss HS25 -i gatad2b-exon6-offset.fa -o ./gatad2b -l 126 -f 100 -p -m 500 -s 50
+bwa mem ../test-simuscop/bwa/genomeRef gatad2b1.fq gatad2b2.fq | samtools sort -o gatad2b.bam
+samtools index gatad2b.bam
+#+end_src
+Idem, fait 2 "tas" séparés de chaque côté de l'exon
+
++/- 100
+#+begin_src sh :dir ~/code/bisonex/test-art :results silent
+echo -e "NC_000001.11\t153817271\t153817642" > gatad2b-exon6-offset.bed
+bedtools getfasta -fi ../test-simuscop/genomeRef.fna -bed gatad2b-exon6-offset.bed -fo gatad2b-exon6-offset.fa
+../art_bin_MountRainier/art_illumina -ss HS25 -i gatad2b-exon6-offset.fa -o ./gatad2b -l 125 -f 100 -p -m 500 -s 30
+bwa mem ../test-simuscop/bwa/genomeRef gatad2b1.fq gatad2b2.fq | samtools sort -o gatad2b.bam
+samtools index gatad2b.bam
+#+end_src
+*** KILL NGSNG : plante
+CLOSED: [2023-05-01 Mon 09:27]
+https://github.com/RAHenriksen/NGSNGS
+**** KILL Essai avec fasta
+CLOSED: [2023-05-01 Mon 09:27]
+#+begin_src sh :dir ~/code/bisonex/test-ngsngs :results silent
+echo -e "NC_000001.11\t153817371\t153817542" > gatad2b-exon6.bed
+bedtools getfasta -fi ../test-simuscop/genomeRef.fna -bed gatad2b-exon6.bed -fo gatad2b-exon6.fa
+#+end_src
+
+-ss HS25 : nom du profile illumina
+-l 150 : reads de 150
+-f 10 : coverage de 10
+-p : paired end
+-m 500 : longueur moyenne des fragment d'ADN
+-s 10 : déviation standard
+#+begin_src sh :dir ~/code/bisonex/test-art :results silent
+../art_bin_MountRainier/art_illumina -ss HS25 -i gatad2b-exon6.fa -o ./gatad2b -l 150 -f 100 -p -m 500 -s 10
+#+end_src
+#+begin_src sh :dir ~/code/bisonex/test-art :results silent
+bwa mem ../test-simuscop/bwa/genomeRef gatad2b1.fq gatad2b2.fq | samtools sort -o gatad2b.b
+am
+samtools index gatad2b.bam
+#+end_src
+*** TODO Insérer variants dans patients centogène :generate:
+SCHEDULED: <2023-05-01 Mon>
+**** TODO SNV
+SCHEDULED: <2023-05-01 Mon>
+***** DONE Script python: ok seulement pour reads corrigé, trop long sinon
+CLOSED: [2023-05-01 Mon 13:32]
+Même sur un seul chromosome (15)...
+***** DONE Couper les données avec bedtools intersect ?
+CLOSED: [2023-05-01 Mon 20:33]
+-wa pour avoir les reads qui corresponds
+-v pour ceux qui n'intersecte pass
+ok sur un exemple
+****** DONE Test simple : ok
+CLOSED: [2023-05-01 Mon 13:43]
+
+#+attr_html: :width 500px
+[[./test-intersect-chr15.png]]
+#+attr_html: :width 500px
+[[./test-nointersect-chr15.png]]
+****** DONE Chromosome 15 : vérifier BAM
+CLOSED: [2023-05-01 Mon 20:33] SCHEDULED: <2023-05-01 Mon>
+#+begin_src
+samtools view -b `63003856_S135.bam`  NC_000015.10 > `63003856_S135_chr15.bam`
+#+end_src
+On génère un python avec les dépendances
+#+begin_src
+nix-build
+#+end_src
+Puis on lance un script julia qui va couper le bam en 2, lancer le script python sur l'intersection et fusionner le résultat
+#+begin_src
+julia -Jbisonex.so --project=. insertVariants.jl `63003856_S135_chr15.bam` test_new.bam
+#+end_src
+NB: pour accélerer l'exécution, générer une sysimage :
+
+#+begin_src julia
+(1.7) pkg> activate .
+julia> create_sysimage(; sysimage_path="bisonex.so")
+#+end_src
+
+3 variants: Ok sur le nombre de reads et les variants
+Ok pour homozygote
+
+#+attr_html: :width 500px
+[[./check-snv-chr15.png]]
+
+****** DONE Chromosome 15 Vérifier VAF avec checkBam.jl: ok
+julia> @subset snv :chrom .== "NC_000015.10"
+26×10 DataFrame
+ Row │ chrom         pos       variant        variantType  zygosity      ref        alt        refCount  altCount  readsCount
+     │ SubStrin…?    Int64     SubStrin…?     String?      String15      SubStrin…  SubStrin…  Int64     Int64     Int64
+─────┼────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ NC_000015.10  74343027  g.74343027C>T  snv          heterozygous  C          T                61        58         120
+   2 │ NC_000015.10  75400778  g.75400778C>G  snv          heterozygous  C          G               108        79         187
+   3 │ NC_000015.10  89327201  g.89327201C>T  snv          heterozygous  C          T               243       241         486
+   4 │ NC_000015.10  48767448  g.48767448A>C  snv          heterozygous  A          C                72        70         142
+   5 │ NC_000015.10  75411685  g.75411685T>C  snv          heterozygous  T          C                79        81         160
+   6 │ NC_000015.10  66703292  g.66703292C>T  snv          heterozygous  C          T                70        60         130
+   7 │ NC_000015.10  89325639  g.89325639G>A  snv          heterozygous  G          A               257       267         524
+   8 │ NC_000015.10  89330184  g.89330184G>A  snv          heterozygous  G          A               258       287         548
+   9 │ NC_000015.10  89330184  g.89330184G>A  snv          heterozygous  G          A               258       287         548
+  10 │ NC_000015.10  89325639  g.89325639G>A  snv          heterozygous  G          A               257       267         524
+  11 │ NC_000015.10  42401752  g.42401752G>A  snv          homozygous    G          A                61       212         273
+  12 │ NC_000015.10  89327201  g.89327201C>T  snv          heterozygous  C          T               243       241         486
+  13 │ NC_000015.10  38339896  g.38339896G>A  snv          heterozygous  G          A                56        86         144
+  14 │ NC_000015.10  26869324  g.26869324A>T  snv          heterozygous  A          T                62        49         113
+  15 │ NC_000015.10  66435145  g.66435145G>A  snv          heterozygous  G          A                98        95         193
+  16 │ NC_000015.10  60514655  g.60514655G>A  snv          heterozygous  G          A                94        99         194
+  17 │ NC_000015.10  42410947  g.42410947A>G  snv          heterozygous  A          G               153       123         276
+  18 │ NC_000015.10  75430368  g.75430368C>T  snv          heterozygous  C          T                80        62         142
+  19 │ NC_000015.10  25375494  g.25375494T>C  snv          heterozygous  T          C               103       104         207
+  20 │ NC_000015.10  60497497  g.60497497C>A  snv          heterozygous  C          A                61        65         126
+  21 │ NC_000015.10  74891539  g.74891539C>T  snv          heterozygous  C          T               118       124         242
+  22 │ NC_000015.10  48488433  g.48488433A>G  snv          heterozygous  A          G               367       122         492
+  23 │ NC_000015.10  89318565  g.89318565A>G  snv          heterozygous  A          G               303        98         404
+  24 │ NC_000015.10  89323426  g.89323426C>G  snv          heterozygous  C          G                93       109         202
+  25 │ NC_000015.10  89318595  g.89318595T>C  snv          heterozygous  T          C               321       128         453
+  26 │ NC_000015.10  48488437  g.48488437T>C  snv          heterozygous  T          C               356       132         488
+CLOSED: [2023-05-01 Mon 17:18]
+***** TODO Chromosome1 15 :Test haplotype caller : échec car CIGARE non mis à jour
+SCHEDULED: <2023-05-01 Mon>
+
+#+begin_src
+julia -Jbisonex.so --project=. insertVariants.jl `63003856_S135_chr15.bam` 63003856_S135_chr15_inserted.bam
+scp 63003856_S135_chr15_inserted.bam* meso:/Work/Users/apraga/bisonex/tests/synthetic/
+
+#+end_src
+
+#+begin_src sh :dir /ssh:meso:/Work/Users/apraga/bisonex/tests/synthetic :results silent
+ln -s /Work/Projects/bisonex/data/dbSNP/GRCh38.p13/dbSNP.gz .
+ln -s /Work/Projects/bisonex/data/dbSNP/GRCh38.p13/dbSNP.gz.tbi
+ln -s /Work/Projects/bisonex/data/genome/GRCh38.p13/genomeRef.dict .
+ln -s /Work/Projects/bisonex/data/genome/GRCh38.p13/genomeRef.fna .
+ln -s /Work/Projects/bisonex/data/genome/GRCh38.p13/genomeRef.fna.fai .
+#+end_src
+
+puis
+#+begin_src
+gatk --java-options "-Xmx3072M" HaplotypeCaller --input 63003856_S135_chr15_inserted.bam --output testchr15.vcf.gz --reference genomeRef.fna  --tmp-dir . -L NC_000015.10
+#+end_src
+
+scp meso:/Work/Users/apraga/bisonex/tests/synthetic/testchr15.vcf.gz haplotypecaller-chr15.vcf.gz
+
+Aucun variant inséré
+- base quality ok
+  -
+****** DONE bam out : non appelé
+CLOSED: [2023-05-01 Mon 21:57]
+gatk --java-options "-Xmx3072M" HaplotypeCaller --input 63003856_S135_chr15_inserted.bam     --output haplotypecaller-chr15.vcf.gz --reference genomeRef.f
+na  --tmp-dir . -L NC_000015.10  --bam-output debug.bam
+****** DONE --linked-de-bruijn-graph : idem
+CLOSED: [2023-05-01 Mon 21:57]
+readlink testchr15.vcf.gz -f^C
+[apraga@mesointeractive synthetic]$ gatk --java-options "-Xmx3072M" HaplotypeCaller --input 63003856_S135_chr15_inserted.bam     --output haplotypecaller-chr15.vcf.gz --reference genomeRef.fna  --tmp-dir . -L NC_000015.10  --linked-de-bruijn-graph
+****** HOLD regénérer fastq
+
+***** TODO Générer bam données pour tous les chromosomes
+ timeit julia -Jbisonex.so --project=. insertVariants.jl ~/code/bisonex/out/63003856/preprocessing/63003856_S135.bam 63003856_S135_inserted.bam
+
+40min 516ms 835µs 405ns
+Avertissement:
+ [W::bam_hdr_read] EOF marker is absent. The input is probably truncated
+
+Inserted.bam et excluded.bam (fichier avant le merge)  ont l'air ok...
+
+On réessaie à la main : ça passe
+#+begin_src
+samtools merge test-all.bam inserted.bam excluded.bam
+❯ mv test-all.bam `63003856_S135_inserted.bam` -f
+❯ mv test-all.bam.bai `63003856_S135_chr15_inserted.bam.bai` -f
+#+end_src
+***** DONE BAm2fastq pour avoir CIGAR à jour : échec (variants "cachés")
+CLOSED: [2023-05-04 Thu 20:30] SCHEDULED: <2023-05-01 Mon>
+
+On lance la génération de bam depuis le mesocentro (la copie plante via le VPN)
+#+begin_src sh
+cd /Work/Users/apraga/recherche/bisonex/generate
+julia --project=. insertVariants.jl  ../../../bisonex/out/63003856_S135/preprocessing/applybqsr/63003856_S135.bam 63003856_S135_inserted.bam
+#+end_src
+Workflow après avec désactivé storeDir pour SAMTOOLS_BAM2FQ dans nextflow.config (pourquoi ??)
+#+begin_src nextflow
+include { SAMTOOLS_BAM2FQ }                            from "${params.modulesDir}/samtools/bam2fq/main"
+include { SAMTOOLS_SORT as sortBamByName }             from "${params.modulesDir}/samtools/sort/main"
+
+workflow {
+    f = Channel.fromPath("${params.dataDir}/synthetic/63003856_S135_inserted.bam",
+                         checkIfExists: true).map{it -> [["id": "synthetic_63003856"], it]}
+    // Important: use "-n" option !!
+    sortBamByName(f)
+    SAMTOOLS_BAM2FQ(sortBamByName.out.bam, true)
+}
+#+end_src
+Puis
+#+begin_src
+cp work/34/fb2fc136f6f6d7f42d0960512f06de/*.fq.gz /Work/Groups/bisonex/data/synthetic/
+#+end_src
+***** KILL Lancer pipeline
+CLOSED: [2023-05-04 Thu 20:30] SCHEDULED: <2023-05-01 Mon>
+NXF_OPTS=-D"user.name=apraga" nextflow run   main.nf -c nextflow.config  -profile standard,helios -bg --input="/Work/Groups/bisonex/data/synthetic/synthetic_63003856_{1,2}.fq.gz" --outdir out/synthetic_63003856
+*** Divers
+**** DONE Vérifier nombre de reads fastq - bam
 CLOSED: [2022-10-09 Sun 22:31]
-* TODO Plot : ashkenazim trio
-SCHEDULED: <2023-04-16 Sun>
+* DONE Plot : ashkenazim trio
+CLOSED: [2023-04-18 Tue 21:28] SCHEDULED: <2023-04-16 Sun>
 /Entered on/ [2023-04-16 Sun 17:29]

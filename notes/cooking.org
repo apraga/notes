@@ -221,7 +221,7 @@ chocolat
     :END:
 
 [[https://www.seriouseats.com/recipes/2018/02/bravetart-glossy-fudge-brownies.html]]
-** diviser quantité par 2 : brownie fin dans un plat à tarte. **
+*** diviser quantité par 2 : brownie fin dans un plat à tarte. **
 20-25min à 180 degré (30min = un peu trop cuit). Cuisson homogène
 
 12 ounces unsalted butter (about 3 sticks; 340g) 6 ounces finely chopped
@@ -240,6 +240,24 @@ Directions
 
 - différences entre les 2 : un peu plus de beurre pour SE, un peu plus
   de chocolat (normal + poudre) pour tasty
+
+** TODO Cookies
+https://www.seriouseats.com/the-food-lab-best-chocolate-chip-cookie-recipe
+*** Ingredients
+    8 ounces unsalted butter (2 sticks; 225g)
+    1 standard ice cube (about 2 tablespoons; 30mL frozen water)
+    10 ounces all-purpose flour (about 2 cups; 280g)
+    3/4 teaspoon (3g) baking soda
+    2 teaspoons Diamond Crystal kosher salt or 1 teaspoon table salt (4g)
+    5 ounces granulated sugar (about 3/4 cup; 140g)
+    2 large eggs (100g)
+    2 teaspoons (10mL) vanilla extract
+    5 ounces dark brown sugar (about 1/2 tightly packed cup plus 2 tablespoons; 140g)
+    8 ounces (225g) semisweet chocolate, roughly chopped with a knife into 1/2- to 1/4-inch chunks
+    Coarse sea salt, for garnish
+*** Recette
+10-11min cuisson 180
+
 
 ** RETRY Carrot cake
    :PROPERTIES:

@@ -536,7 +536,7 @@ Augmentation ALAT/ASAT
 ** Cirrhose
 - IHC: TP, facteur V, dosage albumine (ou EPS)
 - inflammatoire : bloc β-γ, augmentation α2 globuline
-- score Child-Pugh (ascite, encéphaloapatihe, albuminméue, bilirubinémie, TP)
+- score Child-Pugh (ascite, encéphalopathie, albuminméue, bilirubinémie, TP)
 ** Dépistage carcinome hépatocellulaire
 αfoetoproténie = suivi et non iagnostic. régérénration des hépatocyttes
 ** Grossesse
@@ -855,3 +855,161 @@ Calcitriol:
 - 25-hydroxy-D = forme circulante prépondérante. Reflète les réserve -> dosé si possibilité de carenc
 - 1,25-dihydroxy-vitamine D (calcitriol) = ne reflète *pas* les stock : réservé à une anomalie de 1-\alpha hydroxylation
 ** Dosage
+* Hyperammoniémie - cycle de l'urée
+** Ammionac: Généralités
+- 2 formes : NH_3 (gaz), NH_4^{+} (majoritaire)
+- Hautement toxique en excès -> élimination sous formne d'urée
+** Ammionac : Fonction
+- source de nitrogène pour la synthèse des protéines + composés essentiels
+- maintien du pH
+** Ammionac : Production
+- Intestin : digestion des protéine + désamination
+- Rein : excrété dans les urine / sang (désamination de glutamine)
+
+Dégradation des acides aminés (pour énergie ou stockage sous forme de graisse/glycogène)
+ -> désamination dans le foie
+
+ Transamination : le groupe amine est transféré vers l'acide \alpha-ketaglutarique qui devient l'acide glutamique
+
+[[../images/biochimie/transamination.png]]
+
+
+ L'acide glutamique peut transférer son groupe amine également ou le largue sous forme d'ammoniac NH_3
+** Ammionaque : Vie
+Introduit dans les acides aminés par la glutamine synthetase ou glutamate dehydrogenase
+Sous forme de glutamine, va être transporté dans le sang
+Glutamate + ATP + NH3 = glutamine + ADP+ P
+Principal moyen d'échanger des groupes amines entre les différents organes
+
+** Ammionaque : Vie : pH
+Tubule collecteur : H^{+} sécrété va se combiner à NH_3 pour excréter ion ammoniaque. Un ion biocarbonate va retourner dans le sang
+
+[[../images/biochimie/tampon-ammoniaque.png]]
+
+Acide : augmentnation de la sécrétion d'ion ammoniaque
+** Ammionaque : Mort
+1. Extra-hépatique : Formation de glutamine :  ammonia + glutamate -> glutamine (enzyme = glutamine synthetase)
+   qui sera transportée dans le foie
+   Note: dans le cerveau, pas de formation d'urée donc c'est le même mécanisme !
+
+2. Intra-hépatique : cycle de l'urée = converti en urée
+** Ammionaque : Mort : cycle de l'urée
+[[../images/biochimie/cycle-uree.png]]
+
+Mitochondrie foie : ammoniac + bicarbonate catalés par cPS1 (carbamylphosphate synthase 1)
+(Celle-ci provient du glutamate + acetylco)
+Le produit est transformé en citrulline avec l'ornithine
+
+Dans le cytosole hépatique : convertin en acide aminé (arginine)o à l'aide de 2 cataliste : ASS1 (argininosuccinate synthase 1) et ASL (argininonsuccinate lyase)
+
+Arginine est clivée en urée  et ornithine et regénère ornithine qui permet de redémarrer le cycle
+** Ammionaque : Clinique
+Cycle de l'Urée = fondamental pour garder ammoniémie basse
+
+Détoxication impactée si cirrhose, IRA, shunt portal... -> accumulation toxique -> encéphalopathie hépatique (trouble neuropsy + coma)
+
+symptômes non spécifiques en période néonatale :
+mauvaise alimentation, vomissements, somnolence, irritabilité, tachypnée
+
+Partiel : mmois ou des années après la naissance et est souvent déclenchée par une maladie ou un stress catabolique.
+
+- perte d'appétit, des vomissements cycliques, une léthargie ou des anomalies comportementales
+- tendance à éviter spontanément les protéines, en particulier les femmes présentant un déficit en ornithine transcarbamylase (OTC) (Scaglia et al 2002). Le r
+
+2 premières année de vie : si prolongée, dommages irréversibles (atrophie cérébrale, dilatation ventriculation, démyélination, hypondensité)
+-> épilepsize, troubles cognitifs important,
+** Toxicité cérébrale
+- entrée dans les cellules de l'amonniac -> modification du tampon potassium (homéostasie électrolytique)
+- Protection contre hyperammoniémie : détoxication par conversion en glutamine
+  - stress osmotique -> gonflement des astrocytes (mais n'explique pas tout)
+  - mitochondrie astrocytes : glutamine ->_glutamate + ammoniac -> modification du pH, potentiel de mmebrane, ... modification de nombreux transportseux
+    production de radicaux libre etc
+    => avec modification du ca2+, effondrement du potentiel de membrane intérieure , diminution synthèse ATP -> perte des mitochondrie + morts cellulaire
+  - cascade inflammation
+  - modification métabolisme mitochondrial
+  - perturbation du cycle de Krebs
+  - stimulation de glycose + inhibiton oxidation du pyrhuvate -> produciton de lactate dans le c-eraux
+- Neurotransmission altérée :glutamine -> désaminé en glutamate qui va activer récepteur NMDA.
+  Excès de glutamate -> aptoptose neuronale.
+  + modification neurotransimssion GACAergique
+** Maladies congénitales : cycle de l'urée
+Une des 6 enzyme ou 2 transporteux défectueux -> accumulation
+
+Néonataal : pas d'activité enzymatique (ou très faible)
+- symptômes à 24h de vie
+- impact cognitif, comportemental important
+Plus tardif : activité résiduelle
+- déclenché par catabolisme protéqiue, IR, augmentation d'ammoniac (sport, maladie, sepsis...)
+
+taux de mortalité importante par encéphaloapathie
+*** Déficit CPS1
+AR, 1/1 300 000
+Non traité : encéphalopathie, épilepsie, coma, décès
+Bio : hyperammoniémie + glutamine, diminution citruliline + arginine (logique)
+*** Déficit NAAGS
+AR > 1/3 500 000
+Seul à être traité
+Bio : hyperammoniémie + glutamine + glutamate, diminution citrulline (logique)
+Non traité : détérioration neuro heures/mois
+*** Déficit OTC
+Le plus fréquent 1/56 500
+transmission liée à l'X !!
+oedème cérébrale, épilespsie, coma
+Plus grave chez homme  (variable chez femme)
+Bio : hyperammoniémie + glutamine + alanine, diminution citrulline (logique)
+troubles cogniif
+*** Déficit ASS1
+clinique variable (parfois asymptomatique force tardive)
+Arginine diminuée, citrulline augmentée plasma et urine et acide orotique dans les urines (diminution activité onithine transcarbamylase ?)
+*** Déficit transport citrin
+AR
+3 formes
+1. néonatale : cholestase intrahépatique,
+2. Adulte : hyperamméniomé récurrente (début brutal adulte)
+3. enfant : dyslipidémie, troubles croissance
+ Bio : hyperammoniémie et citrulline
+
+ Clinique : neuropsy, délire, coma
+***  ASL
+après 24h forme néonat : létharie, convulsion, coma, mort
+2e plus fréquent toruble de l'urée : 1/70 0000.AR
+Acide argininosuccinique élevé dans les urine + ammoniaque et citrulline augmenté
+*** Arginase 1
+1/950 0000
+Arginine augmentée, psasticité, régression mentale + moteur, épilepsie
+
+Si hyperammoniméie : atxaie
+*** ORNT1
+Triple H (hyperonirthinémie-hyperammonémie-homocitrullinurie)
+accumulation cytoplastimce ornithine + lysine
+Bio : hyperammoniméie +ronthinie + homocitrulline dans les urine
+** Maladie congénitale : acidurie organique
+> 65 maladies, AR
+1/3 000
+
+Néonat: décompensation métabolique = grave+++
+ vomissement, convulsion, léthargie, hypotonie, acidose métabolique, lactate, kétonurie, hypoglycémie
+
+ Bloc métabloique -> accumulation d'acide organieque dans les tissus/fluides. Ex
+ - acide propionique
+ - acide méthylmalonique
+ - acide isovalérique
+
+Hyperammonémie = souvent dans les fornme classique. Lié à une modification des cycles de krbes et de l'urée ? Déficit en carnitine qui accompagne ces maladies ?
+** Oxidation des acides gras
+a lieu dans les mitochondries, essential pour fournir de l'énergie quand il n'y a pas de glucose
+AR
+1/9000
+Clinique variable, SNC souvent affecté (hypoglycémie/hyperammoniémie)
+
+Acide gras insuffisament utilisés
+Hypermamménion = très souvent retrouvé, not. chez patients avec hypoglycémie, encéphaloathie, insuffisance hépatique
+** Dosage
+Photométrie
+Interférence : hémolyse, pyruvate
+Pré-analytique : tube vert, glace
+** Traitement
+- dialyse
+- si rein rormal : "scavenger" (sodium benzoate, sodium phenylacetate...)
+  SP = augmente crxtrétuion rénale de glutamine
+- supplémentation selon cause :  arginine (CPS1, ...), citrulline

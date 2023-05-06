@@ -1,0 +1,11 @@
+* PCR 16s
+Gène /16s/ code sous-unité 16s de l'ADN ribosomal -> très conservé dans toutes les bactéries
+Sert à identifier la présence de bactéries +/- espèce par analyse du code génétique si une seule bactérie
+* Résistances
+** Staph aureus
+Sensibile aux pénicillines mais 90% sont résistantes à la pénicilline G  (sécrétion d'une pénicillisanes).
+Ils restent sensibles à la pénicilline M = /méti-S/
+Attention: < 20% ont résistance à toutes les beta-lactamines ! (modification de la cible = protéine de liaison à la pénicilline PLP2A) ->
+/meti-R/ (SARM)
+** Entérobactéries
+Résistantes aux beta-lactamine par production de beta-lactamase

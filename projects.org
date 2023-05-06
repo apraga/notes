@@ -436,7 +436,7 @@ AB = "allelic balance"
 ****** STRT Nouveau panel
 ****** TODO Dijon
 ***** TODO Version executable pour paul
-SCHEDULED: <2023-04-15 Sat>
+SCHEDULED: <2023-06-06 Tue>
 Avec colonne dédiée
 
 *** Données
@@ -2132,22 +2132,31 @@ SCHEDULED: <2023-04-14 Fri>
 CLOSED: [2023-04-13 Thu 09:11] SCHEDULED: <2023-04-12 Wed>
 *** DONE Message avec les bouquets
 CLOSED: [2023-04-13 Thu 09:11] SCHEDULED: <2023-04-13 Thu>
-*** TODO Remboursement [1/5]
+*** TODO Remboursement [4/5]
 SCHEDULED: <2023-04-20 Thu>
-**** WAIT Aurélien
-**** WAIT Élise
+**** DONE Aurélien
+CLOSED: [2023-04-22 Sat 15:27]
+**** DONE Élise
+CLOSED: [2023-04-22 Sat 15:27]
 **** TODO Yvain
-**** TODO Papa
-**** DONE Thierre
+**** DONE Papa
+CLOSED: [2023-04-22 Sat 15:27]
+**** DONE Thierry
 CLOSED: [2023-04-13 Thu 09:12]
-*** TODO Carte personnalisée
-SCHEDULED: <2023-04-17 Mon>
-** TODO Don index nzb
-SCHEDULED: <2023-04-19 Wed>
+*** DONE Carte personnalisée
+CLOSED: [2023-04-26 Wed 21:10] SCHEDULED: <2023-04-17 Mon>
+** DONE Don index nzb
+CLOSED: [2023-04-22 Sat 15:27] SCHEDULED: <2023-04-19 Wed>
 /Entered on/ [2023-04-16 Sun 16:53]
-* Nix
-** GATK
-*** DONE Binaire
+** DONE Remboursement TER Grenoble du 9 avril
+CLOSED: [2023-05-06 Sat 09:06] SCHEDULED: <2023-05-03 Wed>
+/Entered on/ [2023-04-26 Wed 21:03]
+Demande envoyé <2023-04-26 Wed>
+Refusé
+* Nixpkgs :nix:
+** DONE GATK
+CLOSED: [2023-05-06 Sat 08:51]
+*** DONE [[https://github.com/NixOS/nixpkgs/pull/185819][Binaire]]
 CLOSED: [2022-09-10 Sat 23:53] SCHEDULED: <2022-08-10 Wed>
 /Entered on/ [2022-08-09 Tue 10:57]
 PR submitted
@@ -2166,8 +2175,8 @@ Fix pour SGE et nextflow
 https://github.com/NixOS/nixpkgs/issues/192396
 *** KILL Version avec gradle
 CLOSED: [2022-10-09 Sun 22:51]
-*** WAIT Bug report Version 22.10.6
-https://github.com/NixOS/nixpkgs/issues/192396
+*** TODO [[https://github.com/NixOS/nixpkgs/issues/192396][Bug report Version 22.10.6]]
+SCHEDULED: <2023-05-13 Sat>
 Erreur :
 ERROR: Cannot download nextflow required file -- make sure you can connect to the internet
 
@@ -2180,42 +2189,56 @@ and save it as:
 Dans la mise à jour, il y a la création d'un environnement virtuel qui casse l'exécution de nextflow (besoin de télécharger)
 Fix = désactiver
 ** TODO Multiqc
-** DONE BioPerl
+** TODO VEP :vep:
+*** DONE [[https://github.com/NixOS/nixpkgs/pull/185691][BioPerl]]
 SCHEDULED: <2022-08-10 Wed>
 /Entered on/ [2022-08-09 Tue 10:57]
 PR submitted
-** STRT Nixpkg for BioDBBigFile
-SCHEDULED: <2023-04-15 Sat>
+*** STRT BioDBBBigFile
+SCHEDULED: <2023-05-07 Sun>
+:PROPERTIES:
+:ORDERED:  t
+:END:
 /Entered on/ [2022-08-10 Wed 14:28]
-Corriger review
-*** TODO Version de kent déjà packagée : forcer version  335
-**** WAIT il faut le [[ https://github.com/NixOS/nixpkgs/pull/206991/commits/b3dd4ac8abd6563342c4dc52325c9bf71944cff5][patch ici]]
+**** TODO Version de kent déjà packagée : forcer version  335
+***** WAIT [[https://github.com/NixOS/nixpkgs/pull/206991][Restore building kent 404]]
 Review faite <2023-03-26 Sun> , atteinte merge]
-**** WAIT PR pour ajouter les header (inc folder)
+Relancé <2023-05-06 Sat>
+***** TODO [[https://github.com/NixOS/nixpkgs/pull/223411][Ajouter les header to package]] (inc folder)
+SCHEDULED: <2023-05-07 Sun>
+Review à faire
 https://github.com/NixOS/nixpkgs/pull/223411
-**** WAIT Mettre à jour le PR avec les 2 changements ci-dessous + patch pour avoir utils
-https://github.com/NixOS/nixpkgs/pull/186462
-*** KILL Version de kent déjà packagée : 404
+***** WAIT [[https://github.com/NixOS/nixpkgs/pull/186462][BioDBBBigFile]] avec ces 2 changements
+**** KILL Version de kent déjà packagée : 404
 CLOSED: [2023-03-27 Mon 16:43]
 Compile mais les tests de passent pas
-
-** WAIT Nixpkg for BioDBHTS
-SCHEDULED: <2023-04-15 Sat>
+*** DONE [[https://github.com/NixOS/nixpkgs/pull/186459][BioDBHTS]]
+CLOSED: [2023-05-06 Sat 08:49] SCHEDULED: <2023-04-15 Sat>
 /Entered on/ [2022-08-10 Wed 14:28]
 Correction pour review faites <2022-10-10 Mon>
-
-** DONE Nixpkg for BioExtAlign
+*** DONE [[https://github.com/NixOS/nixpkgs/pull/186464][BioExtAlign]]
 CLOSED: [2022-10-22 Sat 12:43] SCHEDULED: <2022-08-10 Wed>
 /Entered on/ [2022-08-10 Wed 14:28]
 Review <2022-10-10 Mon>, correction dans la journée.
 Correction 2e passe, attente
 Impossible de faire marcher les tests Car il ne trouve pas le module Bio::Tools::Align, qui est dans un dossier ailleurs dans le dépôt. Même en compilant tout le dépôt, cela ne fonctionne pas... On skip les tests.
 
-** TODO rtgtools
+*** TODO VEP
+
+** TODO rtgtools :vcfeval:
 Solution 1: supprimer les appels à javascript
 Solution 2: packages graaljs en compilant depuis le sourc   e
+*** TODO Version binaire sans plot
+SCHEDULED: <2023-05-06 Sat>
+** TODO Spip
+SCHEDULED: <2023-05-06 Sat>
+** TODO Happy
+*** TODO PR python 3 upstream
+SCHEDULED: <2023-05-06 Sat>
+*** TODO nixpkgs en l'état
+SCHEDULED: <2023-05-06 Sat>
 
-* Voiture
+* Voiture :voiture:
 ** Mazda 5
 *** Notes
 - Plaquettes : arrière gauche ok (50%) le <2022-09-03 Sat>
@@ -2229,6 +2252,10 @@ SCHEDULED: <2023-04-21 Fri>
 *** TODO Changer courroie distribution
 SCHEDULED: <2023-05-11 Thu>
 À faire au bout de 10ans, on attend l’an prochain
+
+*** TODO Contrôle technique
+**** TODO Prendre RV
+SCHEDULED: <2023-05-07 Sun>
 * Moto
 :PROPERTIES:
 :CATEGORY: moto
