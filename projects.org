@@ -2228,11 +2228,9 @@ Impossible de faire marcher les tests Car il ne trouve pas le module Bio::Tools:
 
 *** TODO VEP
 
-** TODO rtgtools :vcfeval:
-Solution 1: supprimer les appels à javascript
-Solution 2: packages graaljs en compilant depuis le sourc   e
-*** TODO Version binaire sans plot
+** WAIT [[https://github.com/NixOS/nixpkgs/pull/230394][rtg-tools]] :vcfeval:
 SCHEDULED: <2023-05-06 Sat>
+Soumis
 ** TODO Spip
 SCHEDULED: <2023-05-06 Sat>
 ** TODO Happy
@@ -2250,7 +2248,7 @@ SCHEDULED: <2023-05-06 Sat>
 CLOSED: [2022-09-11 Sun 22:05] SCHEDULED: <2022-09-03 Sat>
 Trop abimé pour prendre le risque, on changera les arrières plus tard
 *** TODO Changer plaquettes +/- disques
-SCHEDULED: <2023-04-21 Fri>
+SCHEDULED: <2023-05-09 Tue>
 Écrou grippé ? Voir avec fils M. Chouffe à Gennes, chemin du vernois (voiture 607 bleue)
 *** TODO Changer courroie distribution
 SCHEDULED: <2023-05-11 Thu>
