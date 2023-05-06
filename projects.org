@@ -2201,13 +2201,16 @@ SCHEDULED: <2023-05-07 Sun>
 :END:
 /Entered on/ [2022-08-10 Wed 14:28]
 **** TODO Version de kent déjà packagée : forcer version  335
-***** WAIT [[https://github.com/NixOS/nixpkgs/pull/206991][Restore building kent 404]]
+***** KILL [[https://github.com/NixOS/nixpkgs/pull/206991][Restore building kent 404]]
+CLOSED: [2023-05-06 Sat 17:40]
 Review faite <2023-03-26 Sun> , atteinte merge]
 Relancé <2023-05-06 Sat>
-***** TODO [[https://github.com/NixOS/nixpkgs/pull/223411][Ajouter les header to package]] (inc folder)
+Kent 446 n'a pas ce problème donc PR inutile
+***** WAIT [[https://github.com/NixOS/nixpkgs/pull/223411][Ajouter les header to package]] (inc folder)
 SCHEDULED: <2023-05-07 Sun>
 Review à faire
 https://github.com/NixOS/nixpkgs/pull/223411
+Corrigé et plus besoin de la PR précédente
 ***** WAIT [[https://github.com/NixOS/nixpkgs/pull/186462][BioDBBBigFile]] avec ces 2 changements
 **** KILL Version de kent déjà packagée : 404
 CLOSED: [2023-03-27 Mon 16:43]
