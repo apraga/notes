@@ -1,4 +1,5 @@
-* PCR 16s
+* Technique
+** PCR 16s
 Gène /16s/ code sous-unité 16s de l'ADN ribosomal -> très conservé dans toutes les bactéries
 Sert à identifier la présence de bactéries +/- espèce par analyse du code génétique si une seule bactérie
 * Résistances
@@ -9,3 +10,38 @@ Attention: < 20% ont résistance à toutes les beta-lactamines ! (modification d
 /meti-R/ (SARM)
 ** Entérobactéries
 Résistantes aux beta-lactamine par production de beta-lactamase
+* Bactéries
+** Staphylococcus aureus
+Cocci Gram+ en ama : aérobie +/- anaérobie. Immobiles
+
+*** Facteurs de virulence
+- *coagulase*
+  - libre = exctrée, clive le fibrionège -> embole septiques. Différence avec les staph. à coagulase négative (S. epidermidis)
+  - liée = récepteur au fibrinègène, sur la paroi bactérienne -> diag (test d'agglutination)
+- protéine A: liaison aux immunoglobuline
+- hémolysine : lyse des hématies
+- staphylokinase : libère bactéries des emboles
+- *toxine* : leucocidine de Panton et Valentine (LPV), toxine du choc staphylococcique (TSST1-1 -> activation lymphocytes T), exfoliatines, entérotoxines thermostables
+
+*** Habitat
+- 30% porteur sain (transitoire ou non)
+- Transmission intra-humaine par les mains ou indirectevement (vêtements...)
+- Commensal : microbiote nasal, oropharyngé, digestif, cutané (aisselles)
+
+*** Clinique
+- Porte d'entrée = cutanée <-> site de portage/infection
+- Infection communautaires, associées aux soins
+- Infection toxiniques :
+  - LPV : infection cutanée, pneumonie nécrosante
+  - TSST1 = choc toxinique avec érythrodermie. Entrée = vaginale ou cutanée
+  - exfloiatine: impétigo bulleux, syndrome d'exfoliation généralisée
+  - entérotoxine = diarrée à +2h ou 4h, TIAC
+- Infections suppurative
+  - cutanée superficielle (furoncle, impétigo, folliculite) ou profondre (abcèse, fasciite)
+  - bactériémie, endocardite
+  - infections profondes : ostéo-articulaire, pneumopathie, neuroméningées (abcès)
+*** Diagnostic
+- Culture : non exigeante
+  - gélose sang 24h: beta-hemolytique (hémolyse total)
+  - Chapman (mannitol + NaCl) : rouge -> jaune avec NaCl
+  - catalase +
