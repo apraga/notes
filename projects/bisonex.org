@@ -1218,9 +1218,14 @@ Cloner dépôt git avec plugin
 Puis utiliser --dir_plugins
 *** HOLD Utiliser code d’Alexis
 *** TODO Nouvelle version avec VEP
+Example avec --custom
+https://www.ensembl.org/info/docs/tools/vep/script/vep_custom.html
 **** TODO Ajout spliceAI
 SCHEDULED: <2023-04-30 Sun>
 plugin VEP
+***** STRT Télécharger les données
+Difficile d'automatiser, le lien est temporaire...
+***** TODO PLugin
 **** TODO Ajout pLI
 plugin VEP
 **** KILL Ajout LOEUF
@@ -1238,7 +1243,8 @@ dans tests/
 vep -i 63004925-small.vcf -o postvep.vcf --vcf --fasta genomeRef.fna --dir 109 --merged --pick  --offline --custom ../script/spip_annotation.vcf.gz,SPIP,vcf,exact,0,spipInterp,spipScore,spipConfidence
 ***** DONE Score
 CLOSED: [2023-04-22 Sat 15:30]
-**** TODO CADD: remplacer par plugin VEP
+**** DONE CADD: remplacer par plugin VEP
+CLOSED: [2023-05-07 Sun 14:45] SCHEDULED: <2023-05-07 Sun>
 ***** Test
 #+begin_src
 vep  -i test.vcf  -o lol.vcf --offline --dir  /Work/Projects/bisonex/data/vep/GRCh38/ --merged --vcf --fasta /Work/Projects/bisonex/data/genome/GRCh38.p13/genomeRef.fna --plugin CADD,/Work/Users/apraga/bisonex/work/13/9287a7fef17ab9365f5696f20710cd/gnomad.genomes.r3.0.snv.tsv.gz,/Work/Users/apraga/bisonex/work/13/9287a7fef17ab9365f5696f20710cd/gnomad.genomes.r3.0.indel.tsv.gz  --dir_plugins ../VEP_plugins/ -v
@@ -1259,20 +1265,21 @@ Trop long !
 - Téléchargement de CADD: 4h20
 - renommer les chromosome pour SNV : 6h20
 - tabix sur les SNV : job tué au bout de 21h....
-***** TODO annoter séparément et fusionner les tableaux
-SCHEDULED: <2023-05-01 Mon>
+***** DONE annoter séparément et fusionner les tableaux
+CLOSED: [2023-05-07 Sun 14:45] SCHEDULED: <2023-05-01 Mon>
 NB: on pourrait filtrer CADD avec tabix pour se restreindre à nos variants
 **** DONE clinvar
 CLOSED: [2023-04-22 Sat 15:31]
-**** STRT Remplacer script R par vep ?
-Example avec --custom
-https://www.ensembl.org/info/docs/tools/vep/script/vep_custom.html
 **** KILL Vérifier résultats HGVS avec mutalyzer
 CLOSED: [2023-05-01 Mon 09:26]
-**** TODO Parallélisation par chromosome avec workflow VEP
+**** TODO Parallélisation
+***** HOLD par chromosome avec workflow VEP
 https://github.com/Ensembl/ensembl-vep/blob/release/109/nextflow/workflows/run_vep.nf
-**** TODO OMIM
-SCHEDULED: <2023-05-01 Mon>
+***** HOLD Avec option --fork
+**** TODO Utiliser la version de nf-core de VEP
+SCHEDULED: <2023-05-07 Sun>
+**** DONE OMIM
+CLOSED: [2023-05-08 Mon 15:02] SCHEDULED: <2023-05-01 Mon>
 **** TODO Grantham
 SCHEDULED: <2023-05-01 Mon>
 **** TODO ACMG incidental

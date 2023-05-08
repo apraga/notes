@@ -2206,8 +2206,8 @@ CLOSED: [2023-05-06 Sat 17:40]
 Review faite <2023-03-26 Sun> , atteinte merge]
 Relancé <2023-05-06 Sat>
 Kent 446 n'a pas ce problème donc PR inutile
-***** WAIT [[https://github.com/NixOS/nixpkgs/pull/223411][Ajouter les header to package]] (inc folder)
-SCHEDULED: <2023-05-07 Sun>
+***** DONE [[https://github.com/NixOS/nixpkgs/pull/223411][Ajouter les header to package]] (inc folder)
+CLOSED: [2023-05-08 Mon 10:18] SCHEDULED: <2023-05-07 Sun>
 Review à faire
 https://github.com/NixOS/nixpkgs/pull/223411
 Corrigé et plus besoin de la PR précédente
