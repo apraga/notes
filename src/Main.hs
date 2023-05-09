@@ -1,11 +1,5 @@
---------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
-import  Data.Monoid (mappend)
 import  Hakyll
-import  Data.List.Split
-import  Data.List
-import  Data.Char
-import  System.FilePath.Posix
 
 --------------------------------------------------------------------------------
 -- Important note :
@@ -18,8 +12,7 @@ import  System.FilePath.Posix
 
 main :: IO ()
 main = hakyll $ do
-    match ("images/*"
-            .||. "genetique/img/*") $ do
+    match ("images/*") $ do
         route   idRoute
         compile copyFileCompiler
 
@@ -69,18 +62,18 @@ main = hakyll $ do
                 >>= loadAndApplyTemplate "templates/default.html" indexCtx
                 >>= relativizeUrls
 
-    -- Don't forget to set the path to temporary files
-    match "genetique.html" $ do
-        route idRoute
-        compile $ do
-            posts <- loadAll "genetique/*.org"
-            let indexCtx = listField "notes" defaultContext (return posts)
-                  `mappend` defaultContext
+    -- -- Don't forget to set the path to temporary files
+    -- match "genetique.html" $ do
+    --     route idRoute
+    --     compile $ do
+    --         posts <- loadAll "../genetique/*.org"
+    --         let indexCtx = listField "notes" defaultContext (return posts)
+    --               `mappend` defaultContext
 
-            getResourceBody
-                >>= applyAsTemplate indexCtx
-                >>= loadAndApplyTemplate "templates/default.html" indexCtx
-                >>= relativizeUrls
+    --         getResourceBody
+    --             >>= applyAsTemplate indexCtx
+    --             >>= loadAndApplyTemplate "templates/default.html" indexCtx
+    --             >>= relativizeUrls
 
     match "templates/*" $ compile templateBodyCompiler
 
