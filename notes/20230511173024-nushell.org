@@ -1,6 +1,11 @@
-Exemples de scripts
+:PROPERTIES:
+:ID:       37137000-6232-454a-a1de-ffa2ac3642ea
+:END:
+#+title: Nushell
+#+filetags: cs
 
-* Lister tous les IDs des csv et faire l’intersection avec les ID des pdfs
+* Exemples de scripts
+** Lister tous les IDs des csv et faire l’intersection avec les ID des pdfs
 #+begin_src nu
 ls excel = (ls S:genetique\commun\Centogene_variants\excel | get name | path basename | path parse | get stem | parse "{id}_{s}" | get id)
 let patho = (open patho.csv | get id)

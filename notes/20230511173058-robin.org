@@ -1,3 +1,9 @@
+:PROPERTIES:
+:ID:       bc12b451-6e52-4dfb-944d-b028c0f5d775
+:END:
+#+title: Robin
+#+filetags: famille
+
 Candidature : Opérateur forces spéciales (armée de terre - 1ere PMA)
 
 - CSO: refusé sur test de personnalité, sport ok, psychotechnique ok
@@ -14,3 +20,7 @@ Update: entretien téléphonique ok pour officier adjudant (commando et
 aussi pour mines) => 2e phase
 
 - En 2eme année : officier sous contrat dans la marine
+
+Update
+- concours de gendarmerie
+- officie sous contrat dans la marine (déminage)

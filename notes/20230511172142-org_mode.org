@@ -1,5 +1,8 @@
-#+title: Emacs Org-mode
-
+:PROPERTIES:
+:ID:       ed20c9d9-423f-4430-8eb8-d22b3ba14980
+:END:
+#+title: Org-mode
+#+filetags: emacs
 * Bibliography
 Avec doom-emacs, dans config.el
 #+begin_src lisp

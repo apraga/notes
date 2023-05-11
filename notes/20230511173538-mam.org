@@ -1,3 +1,8 @@
+:PROPERTIES:
+:ID:       a93478de-3bd7-4595-818b-2d3b4bf465f5
+:END:
+#+title: MAM
+#+filetags: books
 * TODO Script
   :PROPERTIES:
   :CUSTOM_ID: todo-script

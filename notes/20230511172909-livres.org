@@ -1,4 +1,9 @@
-Voir [[file:books-lists][books lists]] pour des idées
+:PROPERTIES:
+:ID:       ea243f1d-8947-4f29-9b95-2d6ae66664a0
+:END:
+#+title: Livres
+#+filetags: books
+Voir [[id:2b415900-2e7f-4931-9534-95eddba3d22b][À lire]]  pour des idées
 * Computer science :cs:
 ** HOLD The art of computer programming, volume 1
 ** HOLD Haskell Programming From First Principles [5/31]

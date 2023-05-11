@@ -1,4 +1,8 @@
-** Vacances New York 2016
+:PROPERTIES:
+:ID:       0091158f-e57f-40f9-be42-3a1c2e8dda9f
+:END:
+#+title: Voyages
+* Vacances New York 2016
    :PROPERTIES:
    :CUSTOM_ID: vacances-new-york-2016
    :END:
@@ -10,7 +14,7 @@ shack) West African (B&B) Cheesecake (Eileen) Tacos (Los tacos 1) Vegan
 burger (by Chloe) Bagel (Murray's bagel ) Caribbean (Freda's Caribbean)
 BBQ (dinosaur BBQ) Pastramini (katz's) Indonesian (Java)
 
-** Vacances US 2017
+* Vacances US 2017
    :PROPERTIES:
    :CUSTOM_ID: vacances-us-2017
    :END:

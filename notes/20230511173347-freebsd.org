@@ -1,3 +1,8 @@
+:PROPERTIES:
+:ID:       70c8dc3d-ba18-4734-8b25-84029bbdef22
+:END:
+#+title: FreeBSD
+#+filetags: cs freebsd
 * Créer un port sous Freebsd
   :PROPERTIES:
   :CUSTOM_ID: créer-un-port-sous-freebsd

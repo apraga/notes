@@ -1,3 +1,9 @@
+:PROPERTIES:
+:ID:       2df1e627-8cd9-4842-8c82-0d2787982d1e
+:END:
+#+title: Tesseract
+#+filetags: ocr
+
 * Caractères imprimés
   :PROPERTIES:
   :CUSTOM_ID: caractères-imprimés

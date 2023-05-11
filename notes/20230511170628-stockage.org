@@ -1,4 +1,8 @@
-#+title: Architecture
+:PROPERTIES:
+:ID:       e34dbedf-c27c-4f5b-b837-0f81c6fbcb61
+:END:
+#+title: Stockage
+#+filetags: pc
 
 Raspberry:
 - disque dur externe en ZFS monté sur /media

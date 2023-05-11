@@ -1,3 +1,8 @@
+:PROPERTIES:
+:ID:       fd55a6bf-3429-4cf2-a03e-c60eaabe9aa2
+:END:
+#+title: Anime
+
 * DONE .hack//Sign
 * DONE Akira
 * DONE Another

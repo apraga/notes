@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       98719815-a9f4-465a-9672-9ec652e6ebec
+:END:
+#+title: Musique
+- [[id:f95b929a-e9c3-4f82-8a80-3014046630c4][Bach]]
+- [[id:7e302647-efe6-4104-aa38-d198194eea02][À partager]]
+- [[id:e3a64c7c-5381-499f-94c7-4b969115dce3][À écouter]]

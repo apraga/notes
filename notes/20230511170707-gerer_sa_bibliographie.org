@@ -1,4 +1,7 @@
-#+title: Bibliography Management
+:PROPERTIES:
+:ID:       c246d999-339f-4ed8-a55e-26a44d40ebdf
+:END:
+#+title: Gérer sa bibliographie
 
 * Sync pdf with git-annex
 ** Requirements
