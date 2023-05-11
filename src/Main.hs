@@ -33,7 +33,14 @@ main = hakyll $ do
             >>= loadAndApplyTemplate "templates/default.html" postCtx
             >>= relativizeUrls
 
-    match "notes/bacteriologie.org" $ do
+    match "notes/index.org" $ do
+        route $ setExtension "html"
+        compile $ pandocCompiler
+            >>= loadAndApplyTemplate "templates/notitle.html" defaultContext
+            >>= relativizeUrls
+
+
+    match "notes/*bacteriologie.org" $ do
         route $ setExtension "html"
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/post.html"    postCtx

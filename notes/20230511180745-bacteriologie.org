@@ -1,14 +1,98 @@
-:PROPERTIES:
-:ID:       f9d35304-7a95-4bbd-9230-35030a692ef4
-:END:
-#+title: Bactériologie
-#+filetags: medecine bacterio
 ---
 title: Bactériologie
 ...
 
-[[id:f5c8ce47-78a7-4a57-8688-53de40f1673e][Bactéries]]
-[[id:2841ec8a-e37d-4eb1-8029-a1e204cd509e][Maladies]][[id:faf4db9f-b704-4aaf-abbd-a270ba18b80b][Antibiotiques]]
+
+* Bactéries
+** Staphylococcus aureus
+Cocci Gram+ en ama : aérobie +/- anaérobie. Immobiles
+
+**** Facteurs de virulence
+- *coagulase*
+  - libre = excrétée, clive le fibrinogène -> embole septiques. Différence avec les staph. à coagulase négative (S. epidermidis)
+  - liée = récepteur au fibrinègène, sur la paroi bactérienne -> diag (test d'agglutination)
+- protéine A: liaison aux immunoglobuline
+- hémolysine : lyse des hématies
+- staphylokinase : libère bactéries des emboles
+- *toxine* : leucocidine de Panton et Valentine (LPV), toxine du choc staphylococcique (TSST1-1 -> activation lymphocytes T), exfoliatines, entérotoxines thermostables
+
+**** Habitat
+- 30% porteur sain (transitoire ou non)
+- Transmission intra-humaine par les mains ou indirectevement (vêtements...)
+- Commensal : microbiote nasal, oropharyngé, digestif, cutané (aisselles)
+
+**** Clinique
+- Porte d'entrée = cutanée <-> site de portage/infection
+- Infection communautaires, associées aux soins
+- Infection toxiniques :
+  - LPV : infection cutanée, pneumonie nécrosante
+  - TSST1 = choc toxinique avec érythrodermie. Entrée = vaginale ou cutanée
+  - exfoliatine: impétigo bulleux, syndrome d'exfoliation généralisée
+  - entérotoxine = diarrée à +2h ou 4h, TIAC
+- Infections suppurative
+  - cutanée superficielle (furoncle, impétigo, folliculite) ou profondre (abcèse, fasciite)
+  - bactériémie, endocardite
+  - infections profondes : ostéo-articulaire, pneumopathie, neuroméningées (abcès)
+**** Diagnostic
+- Culture : non exigeante
+  - gélose sang 24h: beta-hemolytique (hémolyse total)
+  - Chapman (mannitol + NaCl) : rouge -> jaune avec NaCl
+  - catalase +
+** TODO Pseudomonas aeruginosa
+Bacille Gram négatif, très mobile
+
+Origine : environnement++
+Opportuniste :
+- infection nosocomiale (matériel) ou . 1ere bactérie en réa
+- mucoviscidose
+Facteurs de virulence : exotoine, exoproténies, hémolysine
+Facteur d'adhésion
+Forte capacité à former des biofilms
+
+**** Diagnostic
+- Pousse 24h à 37% sur milieu non selectic.
+- Milieu sélecttif : cétrimide
+- Oxydase positif (!= entérobactéries), Catalasoe positif - lactose négatif
+**** Résistance
+Faible perméabilité membranaire : résistance naturelle pénicillines, C1G et C2G +/- certaines C3G
+
+* Maladies
+** TODO Infection urinaire
+_Groupe 1_ : *Seuil = 10^3*. Critères majeurs de pathogénicité (e.g adhésion à l’épithelium urinaire) -> responsable si urine non contaminé, même en petite quantité
+- *E. coli* (75%-80% des cystites simples)
+- *S. saprophyticus* (cystites aigües communautaires chez femme de 15-30ans)
+- Salmonella spp.
+- mycobactéries
+- leptospire
+
+_Groupe 2_ = *Seuil = 10^3 homme, 10^4 femme*. Plutôt IU associées aux soins si facteurs anatomiques/iatrogènes
+- entérobactéries (Proteus, Klebsiella, Enterobacter, Citrobacter, Morganella, Providencia)
+- Pseudomonas aeruginosa
+- Enterococcus
+- Aerococcus urinae
+- Staphylococus aureus
+- Corynebacterium urealyticum
+
+_Groupe 3_: *Seuil 10^5*. Implication discutée. Nécessite bactériurie élevée + 2 échantillons + critères clinique + inflammation
+- Gram + : Streptococcus agalactiae, staph à coagulase négative autre de S. saprophyticus
+- entérocoque avec E. coli
+- Gram - : Actinetobacter, Oligella urethralis, Stenotrophomonas maltophilia, Burkholderia cepacia
+- Candida
+
+_Groupe 4_ : *Seuil: non*. Contaminant
+- lactobacillus (sauf L. delbrueckii)
+- streptococques alpha-hémolytique
+- Gardnerella vaginalis
+- bacilles corynéforme (sauf C. urealyticum et C. seminale)
+
+Uropathogènes exigeants : Aerococcus, A. shaalii, A. omnicolens et L. delbrueckii
+/ chez > 65 ans, < 3 ans et patho urologie (sauf cancer vessie et prostate) -> à chercher dans ce contexte
+* Antibiotiques
+** Aminosides
+Action = bactéridice, concentration dépendantes. Perturbe la synthèse des protéine (fixation sous unité 30s des ribosomes)
+Résistances
+- naturelle: anaérobie strictes et préférentielle (streptocoques, entérocoques) par défaut de pénnétration car le système de transport nécessite la force produite par les chaînes respiratoire aérobies
+  /NB: penicilline + amoniside passe car agit sur la paroi bactérienne/
 * Divers
 ** Résistances
 ** Staph aureus
@@ -22,3 +106,9 @@ Résistantes aux beta-lactamine par production de beta-lactamase
 *** PCR 16s
 Gène /16s/ code sous-unité 16s de l'ADN ribosomal -> très conservé dans toutes les bactéries
 Sert à identifier la présence de bactéries +/- espèce par analyse du code génétique si une seule bactérie
+
+:PROPERTIES:
+:ID:       f9d35304-7a95-4bbd-9230-35030a692ef4
+:END:
+#+title: Bactériologie
+#+filetags: medecine bacterio

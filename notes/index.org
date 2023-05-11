@@ -1,5 +1,1 @@
-- [[file:mail][Mail in the command line (updated)]]
-- [[file:emacs][Life in Emacs]]
-- [[file:stream-media][Streaming media in FreeBSD]]
-- [[file:command-line-tips][Command-line tips (updated)]]
-- [[file:presentations/git.pdf][Introduction to git]]
+[[file:20230511180745-bacteriologie.html][Bactériologie]]

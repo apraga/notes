@@ -1223,11 +1223,40 @@ https://www.ensembl.org/info/docs/tools/vep/script/vep_custom.html
 **** TODO Ajout spliceAI
 SCHEDULED: <2023-04-30 Sun>
 plugin VEP
-***** STRT Télécharger les données
+***** DONE Télécharger les données
+CLOSED: [2023-05-11 Thu 19:01]
 Difficile d'automatiser, le lien est temporaire...
-***** TODO PLugin
-**** TODO Ajout pLI
+***** DONE PLugin
+CLOSED: [2023-05-11 Thu 20:16]
+***** DONE Séparer score en plusieurs colonnes
+CLOSED: [2023-05-11 Thu 20:16]
+Test avec ce fichier pour avoir une ligne avec annotation et une ligne sans
+#CHROM	POS	ID	REF	ALT
+1	9091	.	A	C
+1	69091	.	A	C
+
+et
+#+begin_src sh
+rm -f postvep.tsv* && vep -i testspliceai.vcf.gz -o postvep.tsv --tab  --dir 109 --merged --pick --use_given_ref   --offline  --plugin SpliceAI,snv=spliceai_scores.raw.snv.hg38.vcf.gz,indel=spliceai_scores.raw.indel.hg38.vcf.gz
+#+end_src
+
+#+begin_src
+
+$ bgzip postvep.tsv
+$ python spliceai.py
+$ cat postvep2.tsv
+,variation,Location,Allele,Gene,Feature,Feature_type,Consequence,cDNA_position,CDS_position,Protein_position,Amino_acids,Codons,Existing_variation,IMPACT,DISTANCE,STRAND,FLAGS,REFSEQ_MATCH,SOURCE,REFSEQ_OFFSET,SpliceAI_AG,SpliceAI_AL,SpliceAI_DG,SpliceAI_DL
+0,1_9091_A/C,1:9091,C,ENSG00000290825,ENST00000456328,Transcript,upstream_gene_variant,-,-,-,-,-,-,MODIFIER,2778,1,-,-,Ensembl,-,,,,
+1,1_69091_A/C,1:69091,C,ENSG00000186092,ENST00000641515,Transcript,missense_variant,124,64,22,M/L,Atg/Ctg,-,MODERATE,-,1,-,-,Ensembl,-,0.01,0.00,0.00,0.01
+#+end_src
+
+Test
+
+cp work/bf/437ae511958509e43072f032f4d495/small.tab.gz tests/vep-spip.tab.gz
+cp work/d5/3b1244b5ae83d54409ee0d456e8c55/small_cadd.tab.gz tests/vep-cadd-splice.tab.gz
+**** TODO Ajout LOEUF et pli
 plugin VEP
+**** TODO NMD
 **** KILL Ajout LOEUF
 CLOSED: [2023-04-19 mer. 16:32]
 plugin VEP
