@@ -1,4 +1,9 @@
-* # Vim et japonais
+:PROPERTIES:
+:ID:       82d11f4b-4c16-4452-9d4d-a33c5453bf17
+:END:
+#+title: Vim
+#+filetags: cs
+* Vim et japonais
   :PROPERTIES:
   :CUSTOM_ID: vim-et-japonais
   :END:
@@ -35,7 +40,7 @@ rebasculer en majuscule Ex: SuWanai NB: on peut utiliser ";". Ex:
 
 Créer un post-commit hook (.git/hooks/post-commit)
 
-* Makdown
+* Markdown
   :PROPERTIES:
   :CUSTOM_ID: makdown
   :END:

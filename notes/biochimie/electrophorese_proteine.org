@@ -1,4 +1,5 @@
 #+title: Electrophorèse des protéines
+#+filetags: medecine biochimie technique
 * Description
 Méthode servant à séparer les différentes protéines dans le sang ou les urines avec un champ électrique. La vitesse de déplacement dépend des caractéristiques de la protéine et du milieu.
 

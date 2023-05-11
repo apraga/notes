@@ -1,5 +1,6 @@
 #+title: Potentiométrie
 #+options: toc:nil
+#+filetags: medecine biochimie technique
 * Description
 Deux électrodes sont plongées dans la solution pour laquelle la concentration est recherchée. Une électrode est saturée et sert de référence. La seconde est à membrane de verre et va permettre le passage des ions en solution. Ce déplacement va induire une différence de potentiel par rapport à l’électrode de référence. Cette différence permet de calculer la concentration avec la loi de Nernst:
 $$ E = E^0 + \frac{0.006}{n} \log{\frac{\textrm{Ox}^a}{\textrm{Red}^b}}$$

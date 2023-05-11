@@ -1,4 +1,8 @@
+:PROPERTIES:
+:ID:       3784eb33-d9cc-4282-bd7d-ee6c169703d2
+:END:
 #+title: Nix
+#+filetags: cs
 * Nixos
 Installer nix. Par exemple, sous WSL:
 https://github.com/nix-community/NixOS-WSL

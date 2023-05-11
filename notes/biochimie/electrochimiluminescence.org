@@ -1,5 +1,6 @@
 #+title: Electrochimiluminescence
 #+options: toc:nil
+#+filetags: medecine biochimie technique
 * Description
 Il s’agit d’un processus d’émission de lumière à l’aide d’une réaction électro-chimique. Pour les tests immunologiques, un complexe antigène-anticorps va être formé avec la fixation de rutheinum(II)-tris(bipyridyl). Avec l’ajout de tripropylamine, une réaction d’oxydo-réduction démarrée de manière électrique va entraîner l’émission d’un photon et donc la détection d’un signal.
 

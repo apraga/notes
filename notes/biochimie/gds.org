@@ -1,4 +1,5 @@
 #+title: Gds
+#+filetags: medecine biochimie technique
 
 | Paramètres              | GdS               | plasma/hémato |
 | pH corrigé              | 7.36 - 7.44       |               |

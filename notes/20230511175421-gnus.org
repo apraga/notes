@@ -1,19 +1,9 @@
-#    -*- mode: org -*-
-
-
-Archived entries from file /home/alex/org/emacs_tips.org
-
-
-* KILL Gnus
-  :PROPERTIES:
-  :CUSTOM_ID: kill-gnus
-  :ARCHIVE_TIME: 2022-05-12 Thu 14:46
-  :ARCHIVE_FILE: ~/org/emacs_tips.org
-  :ARCHIVE_CATEGORY: emacs_tips
-  :ARCHIVE_TODO: KILL
-  :END:
-
-** KILL Global
+:PROPERTIES:
+:ID:       e9d97f76-9990-4388-b92a-6e8365277945
+:END:
+#+title: Gnus
+#+filetags: emacs mail
+* KILL Global
    :PROPERTIES:
    :CUSTOM_ID: kill-global
    :END:
@@ -27,7 +17,7 @@ But works well with news !
 In the end, slower than notmuch inside emacs (start + search) but I
 prefer it to read news. Trying it at the moment
 
-** KILL Mairix config
+* KILL Mairix config
    :PROPERTIES:
    :CUSTOM_ID: kill-mairix-config
    :END:
@@ -74,7 +64,7 @@ folder (maildir++) !
   (setq gnus-inhibit-images nil)
 #+END_EXAMPLE
 
-** KILL What about sent mails
+* KILL What about sent mails
    :PROPERTIES:
    :CUSTOM_ID: kill-what-about-sent-mails
    :END:
@@ -83,4 +73,3 @@ Initially, I wanted a copy in a maildir folder. It turns out it's
 already on Gmail server in both all mail and sent mail. I'm not sure
 anymore to need a specific "sent" folder for gmail. So I only sync the
 "sent" folder on my Free account
-

@@ -1,3 +1,9 @@
+:PROPERTIES:
+:ID:       1948d9de-7d17-4128-910a-bde70bee19f2
+:END:
+#+title: Nextflow
+#+filetags: cs, bioinfo
+
 Fusionner les sorties de 2 processus dans une seule liste
 giab.bed.concat(giabGenome.out)
 Et en "zippang" la sortie d’un autre processus:

@@ -1,4 +1,8 @@
+:PROPERTIES:
+:ID:       c8e11834-1d19-4c22-8fec-652e5eebae41
+:END:
 #+title: Biochimie
+#+filetags: medecine biochimie
 
 * Acide-base :guyton:
 3 mécanisme de défense :

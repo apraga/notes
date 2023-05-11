@@ -1,4 +1,5 @@
 #+title: Chromatographie
+#+filetags: medecine biochimie technique
 * Description
 L’objectif est de séparér un solution en ses différents composants. La solution est dissoute dans un solvant (gazeux ou liquide) qui va être transporté dans une colonne, un capillaire ou autre. Les composants vont se déplacer à des vitesses différentes ce qui va causer la séparation.
 

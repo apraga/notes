@@ -1,4 +1,9 @@
-* Données locales (mustardetc)
+:PROPERTIES:
+:ID:       9db53980-c81d-4380-bb76-3042d32b8f27
+:END:
+#+title: Git-annex
+#+filetags: cs
+* Données locales (mustard etc)
 Voir [[Architecture]].
 
 * Articles/livres de recherche

@@ -1,3 +1,7 @@
+:PROPERTIES:
+:ID:       43671cb4-5e69-4bd3-9cb2-dc9312b864bb
+:END:
+#+title: Dentiste
 Quotidien :
 
 - fil dentaire fluoré

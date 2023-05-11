@@ -1,3 +1,8 @@
+:PROPERTIES:
+:ID:       ff3ddbe9-e87b-4e1b-8478-66234ebf6ab5
+:END:
+#+title: Japonais
+#+filetags: japanese
 * 2021-09-30 - 1. Aya-sensei : Intro
   :PROPERTIES:
   :CUSTOM_ID: aya-sensei-intro
@@ -520,7 +525,7 @@ NB: -nasai = injonction (bossy !)
 認める（みとめる） = reconnaître
 能力が認められれば色々な仕事をすることができます。
 
-教わる = apprendre 
+教わる = apprendre
 子供のような態度（たいど） = se comporter comme un enfant
 〜だと言われました = il a été dit que ...
 落ち着く = se calme
@@ -538,12 +543,12 @@ NB: -nasai = injonction (bossy !)
 ・ざんねん[な]. = regretter (une situation)
 ・しんぱい[な]
 
-** Grammaire 
+** Grammaire
 -te vs -node
 -te = pour décrire un sentiment, une sensation
--node = demander une permission, être poli 
+-node = demander une permission, être poli
 
- 'can we use Feeling+て..., not only 〜て feeling...?' Yes, for example: 
+ 'can we use Feeling+て..., not only 〜て feeling...?' Yes, for example:
 ロキくんがいなくなってさびしくて、ごはんが食べられません。仕事のことがしんぱいで、ねむれません。
 These work with feeling+て (giving a reason) as it's followed by potential verbs.
 * <2023-04-02 Sun> Listening comprehension 「日本のおもしろい経験」

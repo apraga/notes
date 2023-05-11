@@ -1,3 +1,7 @@
+:PROPERTIES:
+:ID:       728e2984-6e43-46fa-a78e-d96466f27467
+:END:
+#+title: Comics
 * DC
 ** Batman
 *** TODO Batman : City of owls (8-12) Batman & Robin : first arc (1-17)

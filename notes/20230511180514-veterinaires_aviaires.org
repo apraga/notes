@@ -1,15 +1,11 @@
+:PROPERTIES:
+:ID:       02e57cb7-a0aa-4560-b6ea-a459db7137a5
+:END:
+#+title: Vétérinaires aviaires
 * Metz
-  :PROPERTIES:
-  :CUSTOM_ID: metz
-  :END:
-
 Rien
 
 * Nancy
-  :PROPERTIES:
-  :CUSTOM_ID: nancy
-  :END:
-
 - Essey-les-nancy : clinique du Grémillon. Ont vu Kalala 1x et Loki 1x.
   Tarifs raisonnables
 - Lorraine vet (Dr Breuil) : vu loki 1x. Beaucoup de créneau, 4 blocs

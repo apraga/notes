@@ -1,3 +1,7 @@
+:PROPERTIES:
+:ID:       bd187033-dd51-4339-a820-0603d00af786
+:END:
+#+title: Emacs
 * Accent issues when pasting from clipboard (Windows)
 C-x RET x (set-selection-coding-system) and choose utf-16-le
 
@@ -322,3 +326,4 @@ copying manually from facebook
 If you want to autojoin a channel, it must be done in bitlbee direcly
 channel blabla set auto_{join} true NB the config file are most likely
 in /var/lib/bitlbee/$USER.xml
+

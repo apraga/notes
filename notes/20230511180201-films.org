@@ -1,4 +1,12 @@
-* To watch
+:PROPERTIES:
+:ID:       12458257-e9ac-4fc1-acbb-8350cb26f526
+:END:
+#+title: Films
+#+filetags: movies
+* À voir
+:PROPERTIES:
+:ID:       f78f6397-1829-4535-9c3d-d10e8a333b89
+:END:
 - Amour (2012)
 - Au hasard Balthazard
 - Contact
@@ -31,7 +39,10 @@
 - The lives of other
 - Tokyo Story
 - We, the Animals
-* Watched
+* Vu
+:PROPERTIES:
+:ID:       ccd86ede-ee31-4e34-bf6f-ff344b677f6b
+:END:
 - 101 Dalmatians (1996) - 3.5/5
 - 12 Angry Men (1957) - 4.5/5
 - 12 Years a Slave (2013) - 4/5
