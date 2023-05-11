@@ -1,7 +1,12 @@
+:PROPERTIES:
+:ID:       f9d35304-7a95-4bbd-9230-35030a692ef4
+:END:
 ---
 title: Bactériologie
 ...
 
+#+title: Bactériologie
+#+filetags: medecine bacterio
 
 * Bactéries
 ** Staphylococcus aureus
@@ -45,17 +50,26 @@ Origine : environnement++
 Opportuniste :
 - infection nosocomiale (matériel) ou . 1ere bactérie en réa
 - mucoviscidose
-Facteurs de virulence : exotoine, exoproténies, hémolysine
+Facteurs de virulence : exotoxine, exoprotéines, hémolysine
 Facteur d'adhésion
 Forte capacité à former des biofilms
 
-**** Diagnostic
-- Pousse 24h à 37% sur milieu non selectic.
-- Milieu sélecttif : cétrimide
-- Oxydase positif (!= entérobactéries), Catalasoe positif - lactose négatif
-**** Résistance
+*** Diagnostic
+- Pousse 24h à 37% sur milieu non sélectif.
+- Milieu sélectif : cétrimide
+- Oxydase positif (!= entérobactéries) -> test rapide pour différencier les 2
+*** Résistance
 Faible perméabilité membranaire : résistance naturelle pénicillines, C1G et C2G +/- certaines C3G
-
++ , Catalasoe positif - lactose négatif
+** TODO Streptocoques
+*** α-hémolytique : hémolyse partielle
+- viridans
+- Pneumocoque: résistance par chimérisme PLP (acquis)
+*** β-hémolyse : hémolyse totale
+- Groupe A = S. pyogenes surtout. Cause d’angine++. *Pas de résistance aux β-lactamine*
+- Groupe B = S. agalactiae
+ Infection materno-foetale ++ (note: l’antibioprophylaxie marche chez les nouveau-né mais seulement pour les infections avant 7 jours)
+- Groupe C, D, F, G, H
 * Maladies
 ** TODO Infection urinaire
 _Groupe 1_ : *Seuil = 10^3*. Critères majeurs de pathogénicité (e.g adhésion à l’épithelium urinaire) -> responsable si urine non contaminé, même en petite quantité
@@ -107,8 +121,3 @@ Résistantes aux beta-lactamine par production de beta-lactamase
 Gène /16s/ code sous-unité 16s de l'ADN ribosomal -> très conservé dans toutes les bactéries
 Sert à identifier la présence de bactéries +/- espèce par analyse du code génétique si une seule bactérie
 
-:PROPERTIES:
-:ID:       f9d35304-7a95-4bbd-9230-35030a692ef4
-:END:
-#+title: Bactériologie
-#+filetags: medecine bacterio

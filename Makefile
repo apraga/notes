@@ -1,13 +1,14 @@
 all: build dist
 
 build:
-	./result/bin/hakyll-site build
+	cabal run hakyll-site build
 
 watch:
-	./result/bin/hakyll-site watch
+	cabal run hakyll-site watch
 
 rebuild:
-	nix-build
+	cabal build
+
 # z option is important to avoid re-uploading everything
 # it must be at the beginning
 # We need a wilcard to avoid an html folder
