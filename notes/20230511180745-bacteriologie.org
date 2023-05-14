@@ -4,6 +4,52 @@
 #+title: Bactériologie
 #+filetags: medecine bacterio
 
+* Culture
+:PROPERTIES:
+:ID:       c191b424-bbcd-4ead-a5ef-2057bd766b60
+:END:
+- Gélose au sang = non sélectif. Pouvoir hémolytique
+- Bouilon Schaedler = bactéries anaérobie et exigeantes (incubation 10-14jours en anaérobie) -> prélèvement profonds, IO
+- Chromogène urinaire = non sélectif
+  - rose = activité \beta-galactosidase
+  - bleue = activité \beta-glucotosidase
+  - violet = les 2
+  - brun = tryptophane désaminase
+** Autres
+- Chocolat enrichi :bactéries exigeants (prélèvmente profond)
+- HAE2 :inhibie bactéries gram + -> Haemophilus spp
+- VCAT : Neisseria (Vancomycine, Colistine, Amphotéricine, Triméthoprime)
+- Drigalski : inhibe Gram+, lactose ->
+  - jaunes = BGN fermentant lactose
+  - bleu = BGN ne fermentant pas le lactose
+- Cétrimide (ammoniuum)) -> P. aeruginosa (production pycyanine)
+- BCSA : inhibe gram+ ->_Burkholderia
+- Chappman : NaCL, mannital
+  - jaune = fermente mannitol -> S. aureus
+- CAP = inhibie Gram - () -> streptocoque+++, listeria, corynebcaterie, uropathogène émergents
+- Granada (MTX) : inhibe Gram - -> S. agalactiae
+- BCYE : Legionnella)
+- Haja-Kligler : lactose en haut, glucose en bas
+  - rouge en haut = pas de fermentation de lactose. Sinon jaune
+  - rouge en bas = pas de fermentation du glucose. Sinon jaune
+    Exemple:
+    - Shigella = lactose-, glucose+
+    - Pseudomonas aeruginosa = lactose-, glucose - (tout rouge)
+    - Salmonella = tout noir (production H2S)
+    - E.coli = tout jaune (lactose+, glucose+)
+** Coproculture = Salmonelle, Shigelles, Campylobacter
+- Gélose Hektoen : inhibiteur de gram+, sucres (lactose, saccharose)
+  - centre noir = formation de H2S ->_Salmonelle
+  - vert/bleu = pas de fermetation -> Salmonelle/Shigelle
+  - jaune/orange = fermetation
+- Bouillon sélénite (inhibe coliforme + entérocoqu, enrichi pour Salmonelle)
+- Gélose Salmonelle-Shiguelle : inhibiteur gram+, _lactose_
+  - centre noir = H2S -> Salmonelle
+  - jaune = pas de fermentation -> Salmonelle/Shigelle
+  - rose/rouge = fermentation lactose
+- Gélose sélective Campylobacter (inhibe Gram+, Gram-, champignon)
+- Yersinia: mannitol, inhibiteur GRam+ (dont Proteus), Gram- (dont Pseudomonas aeruginosa)
+  - rouge = fermente mannitol -> Yersinia
 * Bactéries
 :PROPERTIES:
 :ID:       4d393ab4-61bd-48ab-b095-03c6bc16b939

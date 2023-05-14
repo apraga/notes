@@ -5061,52 +5061,35 @@ cp work/34/fb2fc136f6f6d7f42d0960512f06de/*.fq.gz /Work/Groups/bisonex/data/synt
 CLOSED: [2023-05-04 Thu 20:30] SCHEDULED: <2023-05-01 Mon>
 NXF_OPTS=-D"user.name=apraga" nextflow run   main.nf -c nextflow.config  -profile standard,helios -bg --input="/Work/Groups/bisonex/data/synthetic/synthetic_63003856_{1,2}.fq.gz" --outdir out/synthetic_63003856
 *** TODO Bamsurgeon
-**** DONE Package nix
-CLOSED: [2023-05-13 Sat 22:03]
-**** TODO Test sur mini-bam
-❯ samtools view -h ~/code/bisonex/simuscop-centogene-200x/cento/preprocessing/mapped/cento.bam | head -n700 | samtools view -Sb - > mini.bam
+**** TODO Package nix
+1. Patcher la recherche du génome de référence pour bien trouver les index (en utilisant une regexp comme nf-core)
+2. Rajouter le chemin de picard dans les arguments
+3. Option -O3 pour performance
+**** DONE Test sur mini-bam: échec
+CLOSED: [2023-05-14 Sun 21:12]
+❯ samtools view -h ~/code/bisonex/simuscop-centogene-200x/cento/preprocessing/mapped/cento.bam | head -n1000 | samtools view -Sb - > mini.bam
 
 ❯ samtools index mini.bam
 
-Dans snv.txt:
+Sans spécfier le variant:
 #+begin_quote
 NC_000001.11	17651	17651
 #+end_quote
 ./result/bin/addsnv -v snv.txt -f mini.bam -r ../data/genomeRef.fna -o test.bam
 
-Il faut le jar de picard
-❯ ../result/bin/addsnv -v snv.txt -f mini.bam -r ../data/genomeRef.fna -o test.bam --aligner mem --picardjar /nix/store/sjwrhvwwfr9gf7zzwk3kzihhckn5jpjw-picard-tools-2.27.4/libexec/picard/picard.jar
-
-ne fonctionne pas mais le test de bamsurgeon oui
-
+**** TODO Test chr22
+Pas assez de reads, on prend le chromosome 22
 #+begin_src sh
-
-head ~/code/bamsurgeon/test_data/random_snvs.txt  -n8 > random_snvs.txt
- ../result/bin/addsnv -v random_snv.txt -f ~/code/bamsurgeon/test_data/testregion_realign.bam -r ~/code/bamsurgeon/test_data/Homo_sapiens_chr22_assembly19.fasta -o test.bam --aligner mem --picardjar /nix/store/sjwrhvwwfr9gf7zzwk3kzihhckn5jpjw-picard-tools-2.27.4/libexec/picard/picard.jar
+samtools view ../simuscop-centogene-200x/cento/preprocessing/mapped/cento.bam NC_000022.11 -b -o chr22.bam
+samtools index chr22.bam
 #+end_src
-
-Il manque les dict ? On teste sur le mésocentre
-
-#+begin_src
-samtools view -h ../simuscop-centogene-200x/cento/preprocessing/mapped/cento.bam  | head -n1000 | samtools view -Sb - > mini.bam
-[apraga@mesointeractive tests]$ samtools index mini.bam
- ln -s /Work/Groups/bisonex/data/genome/GRCh38.p13/bwa/* .
-[apraga@mesointeractive tests]$ ls
-#+end_src
-Idem...
-#+begin_src
-
-addsnv -v snv.txt -f mini.bam -r genomeRef.fna -o test.bam --aligner mem --picardjar=/nix/store/sjwrhvwwfr9gf7zzwk3kzihhckn5jpjw-picard-tools-2.27.4/libexec/picard/picard.jar
-#+end_src
-
-On essaye sur un chromosome entier
-#+begin_src
-samtools view ../simuscop-centogene-50x/cento/preprocessing/mapped/cento.bam NC_000022.11 -b > chr22.bam
-#+end_src
-Idem
-addsnv -v snv.txt -f chr22.bam -r genomeRef.fna -o test.bam --aligner mem --picardjar=/nix/store/sjwrhvwwfr9gf7zzwk3kzihhckn5jpjw-picard-tools-2.27.4/libexec/picard/picard.jar
-
-Problème avec la référence : ne trouve pas les index
+***** TODO SNV aléatoire: ok, vérifier IGV
+Position 17499704
+On retrouve bien un variant à cette position A > T
+***** TODO SNV avec ALT prédéfini
+NC_000022.11	17499704	17499704    0.2 G
+***** DONE Vérifier qu'il faut POS et POS+1: non
+CLOSED: [2023-05-14 Sun 21:21]
 *** Divers
 **** DONE Vérifier nombre de reads fastq - bam
 CLOSED: [2022-10-09 Sun 22:31]
