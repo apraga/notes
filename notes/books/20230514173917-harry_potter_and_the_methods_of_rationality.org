@@ -1,4 +1,8 @@
-#+title: Methods of Rationality #+roam_tags: review
+:PROPERTIES:
+:ID:       e625c7ac-3871-403e-ba12-cfca773e5365
+:END:
+#+title: Harry Potter and the Methods of Rationality
+#+filetags: harry-potter fanfic review
 
 Intéressant pour le côté très scientifique d'Harry. J'ai vu quelques
 critiques notamment sur la méthode scientifique mais cela ne m'a pas

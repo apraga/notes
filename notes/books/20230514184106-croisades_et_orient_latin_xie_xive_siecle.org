@@ -1,4 +1,8 @@
+:PROPERTIES:
+:ID:       b5971189-6e5e-4a59-89bd-5f21e303f378
+:END:
 #+title: Croisades et Orient latin - XIe-XIVe siècle
+#+filetags: books history
 
 - TODO Introduction
 

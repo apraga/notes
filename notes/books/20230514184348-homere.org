@@ -1,3 +1,9 @@
+:PROPERTIES:
+:ID:       e7a523f6-137f-433b-b95f-094292aae338
+:END:
+#+title: Homère
+#+filetags: books
+
 * Version historique
   :PROPERTIES:
   :CUSTOM_ID: version-historique

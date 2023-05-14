@@ -1,4 +1,9 @@
-#+title: Les Travailleurs de la mer #+roam_tags: review Première partie
+:PROPERTIES:
+:ID:       ea91e30d-7b5b-4339-89e7-85105ac97915
+:END:
+#+title: Les Travailleurs de la mer
+#+filetags: victor-hugo review
+
 très différente de la première : semblable à un guide touristique en
 effet, il décrit de manière très positive l'ile de Guernsey. Par contre,
 on a plusieurs allusions ironiques dans le roman au comportement de ses

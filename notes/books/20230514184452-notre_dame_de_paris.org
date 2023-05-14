@@ -1,4 +1,8 @@
-#+title: Notre-Dame de Paris #+roam_tags: review
+:PROPERTIES:
+:ID:       108a57a9-0ed5-424a-88b8-cfc6766700cb
+:END:
+#+title: Notre-Dame de Paris
+#+filetags: books
 
 Le roman est encadré entre une forte digression architecturale avec : -
 Livre III, chap 2 : longue description de Paris vu depuis Notre-Dame...

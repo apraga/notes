@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       887326ae-71d3-4025-8b5c-40db7aa4c3ec
+:END:
+#+title: The Arithmancer
+#+filetags: harry-potter books fanfic
+
+Très amusant, Hermione résout des équations aux dérivées partielles pour inventer des nouveaux sorts instantanément.

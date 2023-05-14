@@ -15,13 +15,12 @@ CLOSED: [2023-01-30 Mon 12:04]
 :PROPERTIES:
 :CATEGORY: harry potter
 :END:
-*** DONE [[file:notes/reviews/sacrifice_arc.org][Sacrifice Arc]]
-*** DONE Benefits of Old Laws
+*** DONE [[id:0d316f80-4048-4e71-89ca-69ac46addc50][Sacrifice Arc]]
+*** DONE [[id:8390a6b1-eee6-411d-8ebd-28839ece073f][Benefits of Old Law]]
 CLOSED: [2023-04-24 Mon 19:55]
 *** TODO Pride of time
-*** DONE [[file:notes/reviews/arithmancer.org][Harry Potter and the Methods of Rationality]]
-*** DONE The Arithmancer
-
+*** DONE [[id:e625c7ac-3871-403e-ba12-cfca773e5365][Harry Potter and the Methods of Rationality]]
+*** DONE [[id:887326ae-71d3-4025-8b5c-40db7aa4c3ec][The Arithmancer]]
 * Fantasy :fantasy:
 ** TODO The Name of the Wind (Kingkiller chronicles)
 ** TODO Robin Hobb
@@ -94,7 +93,7 @@ CLOSED: [2023-02-25 Sat 18:57]
 ** DONE Le Glay, M., Voisin, J., & Le Bohec, Y. (1991): Histoire romaine
 ** DONE Polybe: Histoire
 ** STRT [#A] Oxford history of Ancient Egypt
-** DONE Croisades et Orient latin - XIe-XIVe siècle
+** DONE [[id:b5971189-6e5e-4a59-89bd-5f21e303f378][Croisades et Orient latin - XIe-XIVe siècle]]
 
 * Horror :horror:
 ** DONE Pride and Prejudice and Zombies by Jane Austen
@@ -107,12 +106,12 @@ CLOSED: [2023-02-25 Sat 18:57]
 *** DONE Pantagruel
 *** DONE Tiers livre
 CLOSED: [2023-02-03 Fri 21:45]
-** DONE Duby, [[file:books/duby.md][Oeuvres]]
-** DONE [[file:books/homere.md][Homère, Iliade -- Odyssée]]
-** DONE Hugo, [[file:books/travailleurs_de_la_mer.md][Les Travailleurs de la mer]] -- [[file:books/notre_dame_de_paris.md][Notre-Dame de Paris]]
-** DONE [[file:books/graal.md][Le Livre du Graal]] [3/3]
-** DONE [[file:milles_et_une_nuits.md][Les Mille Et Une Nuits]] [3/3]
-** DONE [[file:books/guerre_et_paix.md][Tolstoi, Guerre et paix]]
+** DONE [[id:4a9a1a38-d2b9-4b4c-817a-a5ba69978290][Oeuvres de Duby]]
+** DONE [[id:e7a523f6-137f-433b-b95f-094292aae338][Homère]], Iliade -- Odyssée
+** DONE Hugo, [[file:books/travailleurs_de_la_mer.md][Les Travailleurs de la mer]] -- [[id:108a57a9-0ed5-424a-88b8-cfc6766700cb][Notre-Dame de Paris]]
+** DONE [[id:70429fa2-ebc2-4c04-a81b-283f48e7b0a1][Le Livre du Graal]] [3/3]
+** DONE [[id:a7dec4cd-0f5b-4451-a058-9b9f1336aa18][Les Mille et une nuits]]
+** DONE Tolstoi, Guerre et paix
 * Litterature :litterature:
 ** TODO Atlas Shrugged
 ** TODO Beowulf (Michael Alexander translation)

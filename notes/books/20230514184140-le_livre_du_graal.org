@@ -1,5 +1,9 @@
-#+title: Le Livre du Graal #+roam_tags: review Notes sur "Le livre du
-Graal" de la Pléiade.
+:PROPERTIES:
+:ID:       70429fa2-ebc2-4c04-a81b-283f48e7b0a1
+:END:
+#+title: Le Livre du Graal
+#+filetags: books
+Notes sur "Le livre du Graal" de la Pléiade.
 
 * General
   :PROPERTIES:
