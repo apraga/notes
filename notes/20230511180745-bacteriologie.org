@@ -5,6 +5,9 @@
 #+filetags: medecine bacterio
 
 * Bactéries
+:PROPERTIES:
+:ID:       4d393ab4-61bd-48ab-b095-03c6bc16b939
+:END:
 ** Staphylococcus aureus
 Cocci Gram+ en ama : aérobie +/- anaérobie. Immobiles
 
@@ -66,7 +69,15 @@ Faible perméabilité membranaire : résistance naturelle pénicillines, C1G et 
 - Groupe B = S. agalactiae
  Infection materno-foetale ++ (note: l’antibioprophylaxie marche chez les nouveau-né mais seulement pour les infections avant 7 jours)
 - Groupe C, D, F, G, H
-* Maladies
+* Classification
+:PROPERTIES:
+:ID:       73fe5cc4-08a6-402a-8237-156e21ef7bc3
+:END:
+Gram
+* Maladies infectieuses
+:PROPERTIES:
+:ID:       d8f64639-c70a-419c-8219-4418508a76db
+:END:
 ** TODO Infection urinaire
 _Groupe 1_ : *Seuil = 10^3*. Critères majeurs de pathogénicité (e.g adhésion à l’épithelium urinaire) -> responsable si urine non contaminé, même en petite quantité
 - *E. coli* (75%-80% des cystites simples)
@@ -98,11 +109,63 @@ _Groupe 4_ : *Seuil: non*. Contaminant
 Uropathogènes exigeants : Aerococcus, A. shaalii, A. omnicolens et L. delbrueckii
 / chez > 65 ans, < 3 ans et patho urologie (sauf cancer vessie et prostate) -> à chercher dans ce contexte
 * Antibiotiques
+:PROPERTIES:
+:ID:       2fe3ff58-a4ef-41f0-9d77-b8e895d5474d
+:END:
+** Généralités
+- Actifs sur les bactéries en phase de multiplications
+- Cibles
+  - inhibition synthèse de la paroi bactérienne = \beta-lactamine, glycopeptides, fosfomycine
+  - synthèse ADN bactérien : quinolone, sulfamide
+  - synthène ARN : rifampicine
+  - synthèse protéines bactéirenne : aminoside, macrolides, cyclines
+
+Donc :
+- \beta-lactamine inefficaces sur les mycoplasme car pas de paroi !
+- glycopeptides inefficaces sur bactérie Gram négatif car elles ont une membrane externe qui ne laisse pas passer les grosses molécules
+- synergie \beta-lactamine - aminoside sur strepto et entérocoque : destruction de la paroi par les \beta-lactamine pour que l'aminoside accède au ribosome
+- seules les antibio pénétrant dans les cellules (macrolides, fluoroquinolones, rifampicine, cycline ) sont actives contre les bactéries "intracellulaires " (Chlamydia, Coxiella burnetti, Rickettsia, Legionella pneumophilia, Brucella meltiensi, Bartonella )
+
+Résistances :
+- naturelles
+  - Listereia monocytogene et entérocoques résistant C3G
+  - anaérobie résistant aminosides
+  - Gram négatig résistant glycopeptides
+  - Entérobactérie
+    - groupe 1 (E. coli, Proteus mirabilis) = sensible amoxKlebsiella résistant amoxicilline
+    - groupe 2 (Klebsiella) résistant amox mais sensible amox+acide clavulanique
+    - groupe 3 (entérobacter, Morganella, SErratia, Providencia): résistant amox, amox+acide clavulinaque, C1G et C2G (mais sensible C3G)
+- acquises :
+  - Streptococcus pneumoniae : sensibilité diminuée pénicilline G, résistant macrolide
+  - E. col : amox souvent
+  - Staphylocoques peut être résistant pénicilline M
+  - S . aureus :
+    - < 20% ont une modification de la cible des \beta-lactamine (protéine de liason à la pénicilline = PLP2a) -> résistance à toutes les \beta-lactamine = meti-R
+    - 90% résistance acquise à pénicilline G (sécrétion pénicilinase) mais restent sensiblie pénicilline M = méti-S
+      - entérobacteries = réistance \beta-lactamine par production de \beta-lactamase
 ** Aminosides
 Action = bactéridice, concentration dépendantes. Perturbe la synthèse des protéine (fixation sous unité 30s des ribosomes)
 Résistances
 - naturelle: anaérobie strictes et préférentielle (streptocoques, entérocoques) par défaut de pénnétration car le système de transport nécessite la force produite par les chaînes respiratoire aérobies
   /NB: penicilline + amoniside passe car agit sur la paroi bactérienne/
+** Sulfmaide
+Bactériostatique (inhibe croissance) mais en synérgie devient bactéricide
+Ex: sulfamethoxazole + trimethoprime (Bactrmie)
+
+Mécanisme : inhibe synthèse microbionne d'acide folique
+** Fluoroquinolone
+- 4 générations: initialement répartition extra-cellulaire -> large et homogène (intracellulaire) avec les dernières générations
+- Élimination rénale et bile
+- Effets indésriable nombreux : digestif, phototoxique, trouble nerveur, inhibe cytochrme P450 (! interactions)
+- Contre-indication : déficit G6PI, grossesse
+- Action : inhibe réplication et transcription ADN
+- Bactéricide, concentration dépendantes
+- Indication :
+  - quinolones = cystite aigùe simple non compliquée, récidivantes chez l'adulte
+  - 2e génération : infetions sévères à bacille Gram négatif
+  - 3e et 4e génération : sinusite aigüe bactériennes, exacerpbation pneumopathie communutaire, infection compliquée peau + tissus mous
+
+    Résistante : en augmentatino chez entérobactéries (E. coli, Klebsiella)
 * Divers
 ** Résistances
 ** Staph aureus
@@ -114,6 +177,3 @@ Attention: < 20% ont résistance à toutes les beta-lactamines ! (modification d
 Résistantes aux beta-lactamine par production de beta-lactamase
 ** Technique
 *** PCR 16s
-Gène /16s/ code sous-unité 16s de l'ADN ribosomal -> très conservé dans toutes les bactéries
-Sert à identifier la présence de bactéries +/- espèce par analyse du code génétique si une seule bactérie
-

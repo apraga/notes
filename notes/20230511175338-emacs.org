@@ -2,6 +2,9 @@
 :ID:       bd187033-dd51-4339-a820-0603d00af786
 :END:
 #+title: Emacs
+
+* Evil
+Sortir du mode "insert" en bepo : "gq" après un espace (important )
 * Accent issues when pasting from clipboard (Windows)
 C-x RET x (set-selection-coding-system) and choose utf-16-le
 
