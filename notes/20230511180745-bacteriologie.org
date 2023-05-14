@@ -74,6 +74,8 @@ Faible perméabilité membranaire : résistance naturelle pénicillines, C1G et 
 :ID:       73fe5cc4-08a6-402a-8237-156e21ef7bc3
 :END:
 Gram
+- positif si paroi épaisse de peptidoglycane -> coloration persiste
+- négative si paroi plus fine qui permet à l'éthanol de laver la coloration
 * Maladies infectieuses
 :PROPERTIES:
 :ID:       d8f64639-c70a-419c-8219-4418508a76db
