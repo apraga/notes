@@ -207,91 +207,9 @@ https://nixos.wiki/wiki/Nixpkgs/Create_and_debug_packages
 * Avertissements
 Ne jamais modifier les fichiers dans /nix/store
 * Langage
-** Projet en Python
-Instructions simples ici : https://nixos.wiki/wiki/Python#Package_and_development_shell_for_a_python_project
-
-Il faut donc setup.py:
-#+begin_src python
-#!/usr/bin/env python
-
-from setuptools import setup, find_packages
-
-setup(name='demo-flask-vuejs-rest',
-      version='1.0',
-      # Modules to import from other scripts:
-      packages=find_packages(),
-      # Executables
-      scripts=["web_interface.py"],
-     )
-#+end_src
-Et 2 fichiers .nix, le premier pour les dépendances
-#+begin_src sh
-{ lib, python3Packages }:
-with python3Packages;
-buildPythonApplication {
-  pname = "demo-flask-vuejs-rest";
-  version = "1.0";
-
-  propagatedBuildInputs = [ flask ];
-
-  src = ./.;
-}
-#+end_src
-et le défaut
-#+begin_src
-{ pkgs ? import <nixpkgs> {} }:
-pkgs.callPackage ./derivation.nix {}
-#+end_src
-Il ne reste plus qu’à le construire
-#+begin_src
-nix-build
-result/bin/lol.py
-#+end_src
-** Python libraries
-On package l’exécutable python avec les libraries. Mettre dans =default.nix=
-#+begin_src nix
-with (import <nixpkgs> {});
-let
-  my-python-packages = python-packages: with python-packages; [
-    pandas
-    requests
-    # other python packages you want
-  ];
-in
-python3.withPackages my-python-packages
-#+end_src
-Puis
-#+begin_src sh
-nix-build default.nix
-result/bin/python
->>> import pandas
-#+end_src
-
-Si on veut juste un shell, mettre dans =shell.nix=
-#+begin_src sh
-{ pkgs ? import <nixpkgs> {} }:
-let
-  my-python-packages = ps: with ps; [
-    pandas
-    pysam
-    # other python packages
-  ];
-  my-python = pkgs.python3.withPackages my-python-packages;
-in my-python.env
-
-#+end_src
-** R librairies
-De même que R, il faut packager R avec les librairies
-#+begin_src nix
-with (import <nixpkgs> {});
-let
-  my-r-packages = rWrapper.override{packages = with rPackages; [
-plotly
-  ];};
-in
-my-r-packages
-
-#+end_src
+[[id:f72cd4cf-c1ce-48ab-86df-50c0f2a850bd][Python Nix]]
+[[id:ca9c0bc4-c72a-41b9-934c-5858ed11e1eb][R Nix]]
+[[id:39c6a7a1-39ea-45f9-a647-6119b3f56837][Haskell Nix]]
 ** Vérifier les dépendences à l'exécution
 Il faut les mettre dans propagatedBuildInputs (buildInputs ne suffit pas). On vérifie avec :
 #+begin_src sh
@@ -314,22 +232,4 @@ Si le program en a besoin, wrapper le programme en rajoutant dans nativeBuildInp
       --prefix PATH : ${makeBinPath [ bcftools samtools]}
   '';
 }
-#+end_src
-** Haskell
-Après avoir créé un fichier .cabal, mettre dans `default.nix`
-#+begin_src sh
-let
-  pkgs = import <nixpkgs> { }; # pin the channel to ensure reproducibility!
-in
-pkgs.haskellPackages.developPackage {
-  root = ./.;
-}
-#+end_src
-
-L'exécutable est généré par `nix-build`.
-Pour débugger avec ghci,
-#+begin_src sh
-nix-shell
-$ ghci
-ghci:> :l app/Main.hs
 #+end_src

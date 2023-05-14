@@ -1067,6 +1067,7 @@ $ ../result/bin/hap.py example/happy/PG_NA12878_chr21.vcf.gz       example/happy
 **** TODO Version avec rtg-tools
 **** TODO Faire fonctionner Tests
 ***** TODO Essai 2 : depuis nix develop:
+SCHEDULED: <2023-05-20 Sat>
 #+begin_src
 nix develop .#hap-py
 genericBuild
@@ -1305,8 +1306,8 @@ CLOSED: [2023-05-01 Mon 09:26]
 ***** HOLD par chromosome avec workflow VEP
 https://github.com/Ensembl/ensembl-vep/blob/release/109/nextflow/workflows/run_vep.nf
 ***** HOLD Avec option --fork
-**** TODO Utiliser la version de nf-core de VEP
-SCHEDULED: <2023-05-07 Sun>
+**** DONE Utiliser la version de nf-core de VEP
+CLOSED: [2023-05-13 Sat 18:27] SCHEDULED: <2023-05-07 Sun>
 **** DONE OMIM
 CLOSED: [2023-05-08 Mon 15:02] SCHEDULED: <2023-05-01 Mon>
 **** TODO Grantham
@@ -4899,10 +4900,10 @@ bwa mem ../test-simuscop/bwa/genomeRef gatad2b1.fq gatad2b2.fq | samtools sort -
 am
 samtools index gatad2b.bam
 #+end_src
-*** TODO Insérer variants dans patients centogène :generate:
-SCHEDULED: <2023-05-01 Mon>
-**** TODO SNV
-SCHEDULED: <2023-05-01 Mon>
+*** KILL Script maison :generate:
+CLOSED: [2023-05-13 Sat 18:29] SCHEDULED: <2023-05-01 Mon>
+**** KILL SNV
+CLOSED: [2023-05-13 Sat 18:29] SCHEDULED: <2023-05-01 Mon>
 ***** DONE Script python: ok seulement pour reads corrigé, trop long sinon
 CLOSED: [2023-05-01 Mon 13:32]
 Même sur un seul chromosome (15)...
@@ -4977,8 +4978,8 @@ julia> @subset snv :chrom .== "NC_000015.10"
   25 │ NC_000015.10  89318595  g.89318595T>C  snv          heterozygous  T          C               321       128         453
   26 │ NC_000015.10  48488437  g.48488437T>C  snv          heterozygous  T          C               356       132         488
 CLOSED: [2023-05-01 Mon 17:18]
-***** TODO Chromosome1 15 :Test haplotype caller : échec car CIGARE non mis à jour
-SCHEDULED: <2023-05-01 Mon>
+***** KILL Chromosome1 15 :Test haplotype caller : échec car CIGARE non mis à jour
+CLOSED: [2023-05-13 Sat 18:29] SCHEDULED: <2023-05-01 Mon>
 
 #+begin_src
 julia -Jbisonex.so --project=. insertVariants.jl `63003856_S135_chr15.bam` 63003856_S135_chr15_inserted.bam
@@ -5012,9 +5013,11 @@ na  --tmp-dir . -L NC_000015.10  --bam-output debug.bam
 CLOSED: [2023-05-01 Mon 21:57]
 readlink testchr15.vcf.gz -f^C
 [apraga@mesointeractive synthetic]$ gatk --java-options "-Xmx3072M" HaplotypeCaller --input 63003856_S135_chr15_inserted.bam     --output haplotypecaller-chr15.vcf.gz --reference genomeRef.fna  --tmp-dir . -L NC_000015.10  --linked-de-bruijn-graph
-****** HOLD regénérer fastq
-
-***** TODO Générer bam données pour tous les chromosomes
+****** KILL regénérer fastq
+CLOSED: [2023-05-13 Sat 18:29]
+Non
+***** KILL Générer bam données pour tous les chromosomes
+CLOSED: [2023-05-13 Sat 18:29]
  timeit julia -Jbisonex.so --project=. insertVariants.jl ~/code/bisonex/out/63003856/preprocessing/63003856_S135.bam 63003856_S135_inserted.bam
 
 40min 516ms 835µs 405ns
@@ -5057,6 +5060,53 @@ cp work/34/fb2fc136f6f6d7f42d0960512f06de/*.fq.gz /Work/Groups/bisonex/data/synt
 ***** KILL Lancer pipeline
 CLOSED: [2023-05-04 Thu 20:30] SCHEDULED: <2023-05-01 Mon>
 NXF_OPTS=-D"user.name=apraga" nextflow run   main.nf -c nextflow.config  -profile standard,helios -bg --input="/Work/Groups/bisonex/data/synthetic/synthetic_63003856_{1,2}.fq.gz" --outdir out/synthetic_63003856
+*** TODO Bamsurgeon
+**** DONE Package nix
+CLOSED: [2023-05-13 Sat 22:03]
+**** TODO Test sur mini-bam
+❯ samtools view -h ~/code/bisonex/simuscop-centogene-200x/cento/preprocessing/mapped/cento.bam | head -n700 | samtools view -Sb - > mini.bam
+
+❯ samtools index mini.bam
+
+Dans snv.txt:
+#+begin_quote
+NC_000001.11	17651	17651
+#+end_quote
+./result/bin/addsnv -v snv.txt -f mini.bam -r ../data/genomeRef.fna -o test.bam
+
+Il faut le jar de picard
+❯ ../result/bin/addsnv -v snv.txt -f mini.bam -r ../data/genomeRef.fna -o test.bam --aligner mem --picardjar /nix/store/sjwrhvwwfr9gf7zzwk3kzihhckn5jpjw-picard-tools-2.27.4/libexec/picard/picard.jar
+
+ne fonctionne pas mais le test de bamsurgeon oui
+
+#+begin_src sh
+
+head ~/code/bamsurgeon/test_data/random_snvs.txt  -n8 > random_snvs.txt
+ ../result/bin/addsnv -v random_snv.txt -f ~/code/bamsurgeon/test_data/testregion_realign.bam -r ~/code/bamsurgeon/test_data/Homo_sapiens_chr22_assembly19.fasta -o test.bam --aligner mem --picardjar /nix/store/sjwrhvwwfr9gf7zzwk3kzihhckn5jpjw-picard-tools-2.27.4/libexec/picard/picard.jar
+#+end_src
+
+Il manque les dict ? On teste sur le mésocentre
+
+#+begin_src
+samtools view -h ../simuscop-centogene-200x/cento/preprocessing/mapped/cento.bam  | head -n1000 | samtools view -Sb - > mini.bam
+[apraga@mesointeractive tests]$ samtools index mini.bam
+ ln -s /Work/Groups/bisonex/data/genome/GRCh38.p13/bwa/* .
+[apraga@mesointeractive tests]$ ls
+#+end_src
+Idem...
+#+begin_src
+
+addsnv -v snv.txt -f mini.bam -r genomeRef.fna -o test.bam --aligner mem --picardjar=/nix/store/sjwrhvwwfr9gf7zzwk3kzihhckn5jpjw-picard-tools-2.27.4/libexec/picard/picard.jar
+#+end_src
+
+On essaye sur un chromosome entier
+#+begin_src
+samtools view ../simuscop-centogene-50x/cento/preprocessing/mapped/cento.bam NC_000022.11 -b > chr22.bam
+#+end_src
+Idem
+addsnv -v snv.txt -f chr22.bam -r genomeRef.fna -o test.bam --aligner mem --picardjar=/nix/store/sjwrhvwwfr9gf7zzwk3kzihhckn5jpjw-picard-tools-2.27.4/libexec/picard/picard.jar
+
+Problème avec la référence : ne trouve pas les index
 *** Divers
 **** DONE Vérifier nombre de reads fastq - bam
 CLOSED: [2022-10-09 Sun 22:31]

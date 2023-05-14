@@ -26,6 +26,8 @@ https://git-lfs.github.com/
   #+begin_src
 git annex initremote lfstest type=git-lfs url=git@github.com:apraga/papers.git encryption=none
   #+end_src
+*** Emacs
+Set citar-library-paths '("~/papers/bisonex")
 ** Usage
 *** Clone the repo and get the data
 #+begin_src sh
@@ -48,6 +50,14 @@ Copy data from or to a special remote
 git annex get . --from gdrive
 git annex copy . --to lfs
 #+end_src
+*** Open a pdf
+Open files directly with citar-open-files if there are named as $key.pdf
 * Annotated bibliography
+** KILL V1
+CLOSED: [2023-05-13 Sat 15:42]
 Instead of using citar and have notes scatter across multiple files, we try a single org-file  like [[http://www.cachestocaches.com/2020/3/org-mode-annotated-bibliography/][this setup]]
 The bib file is then generated with org-tangle
+** V2: org-roam + citar
+With SPC m @, you can
+- either create a org-roam note for a paper
+- open the pdf if it is store in citar-library-paths and is named according to the bibtex key

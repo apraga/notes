@@ -2239,6 +2239,9 @@ SCHEDULED: <2023-05-06 Sat>
 *** TODO nixpkgs en l'état
 SCHEDULED: <2023-05-06 Sat>
 
+** TODO Bamsurgeon
+/Entered on/ [2023-05-13 Sat 19:11]
+*** TODO Velvet
 * Voiture :voiture:
 ** Mazda 5
 *** Notes

@@ -11,3 +11,5 @@ ls excel = (ls S:genetique\commun\Centogene_variants\excel | get name | path bas
 let patho = (open patho.csv | get id)
 $excel | append $patho | uniq -d
 #+end_src
+* Limite
+Problème avec nix sur les chemin -> zsh plutôt

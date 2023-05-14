@@ -57,6 +57,10 @@ Changer ExecStart dans /lib/systemd/system/zfs-mount.service pour monter seuleme
 #+begin_src sh
 ExecStart=/sbin/zfs mount data
 #+end_src
+
+* TODO Désinstaller un package qui n'est pas dans @world
+emerge -vcp $PACKAGE
+et on descend dans les dépendences jusqu'à trouver celle qui pèche
 * Synchronisation iphone
 pour la musique, installer OPlayerHD Lite sur l'iphone et suivre les instructions https://wiki.gentoo.org/wiki/Apple_iPod,_iPad,_iPhone
 #+begin_src  sh
