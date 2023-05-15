@@ -55,23 +55,29 @@
 :ID:       4d393ab4-61bd-48ab-b095-03c6bc16b939
 :END:
 ** Staphylococcus aureus
-Cocci Gram+ en ama : aérobie +/- anaérobie. Immobiles
+Cocci Gram+ en amas : aérobie +/- anaérobie. Immobiles. non capsulé, non sporulé
 
-**** Facteurs de virulence
-- *coagulase*
-  - libre = excrétée, clive le fibrinogène -> embole septiques. Différence avec les staph. à coagulase négative (S. epidermidis)
-  - liée = récepteur au fibrinègène, sur la paroi bactérienne -> diag (test d'agglutination)
-- protéine A: liaison aux immunoglobuline
-- hémolysine : lyse des hématies
+*** Facteurs de virulence
+Associé à la paroi:
+- *coagulase* liée = récepteur au fibrinogène, sur la paroi bactérienne -> diag (test d'agglutination)
+- protéine A: liaison aux immunoglobuline, protection contre la phagolytose
+
+Excrété
+- hémolysine : lyse des hématies (β-complète)
+- coagulase libre = excrétée, clive le fibrinogène -> embole septiques. Différence avec les staph. à coagulase négative (S. epidermidis)
 - staphylokinase : libère bactéries des emboles
-- *toxine* : leucocidine de Panton et Valentine (LPV), toxine du choc staphylococcique (TSST1-1 -> activation lymphocytes T), exfoliatines, entérotoxines thermostables
+- *toxine* :
+  - leucocidine de Panton et Valentine (LPV) -> leucotoxique dermonécrotique
+  - toxine du choc staphylococcique (TSST1-1 -> activation lymphocytes T)
+  - exfoliatines -> érythrodermie bulleuses
+  - entérotoxines thermostables -> TIAC
 
-**** Habitat
+*** Habitat
 - 30% porteur sain (transitoire ou non)
 - Transmission intra-humaine par les mains ou indirectevement (vêtements...)
 - Commensal : microbiote nasal, oropharyngé, digestif, cutané (aisselles)
 
-**** Clinique
+*** Clinique
 - Porte d'entrée = cutanée <-> site de portage/infection
 - Infection communautaires, associées aux soins
 - Infection toxiniques :
@@ -83,11 +89,20 @@ Cocci Gram+ en ama : aérobie +/- anaérobie. Immobiles
   - cutanée superficielle (furoncle, impétigo, folliculite) ou profondre (abcèse, fasciite)
   - bactériémie, endocardite
   - infections profondes : ostéo-articulaire, pneumopathie, neuroméningées (abcès)
-**** Diagnostic
+*** Diagnostic
 - Culture : non exigeante
-  - gélose sang 24h: beta-hemolytique (hémolyse total)
+  - gélose sang 24h: *beta-hemolytique* (hémolyse total)
   - Chapman (mannitol + NaCl) : rouge -> jaune avec NaCl
-  - catalase +
+  - catalase +, oxydase-, DNAse + (à la différece des tretop à coagulase négative)
+*** Sensibilité et résistance
+Résistance fréquent à l’hôpital
+- β-lactamines :
+  - phénotype sauvage sensible
+  - pénicilinase > 90% des souches (disque FOX de pénicilline g): résistance pénicilline G, V, A -> ajout d’inhibiteur de β-lactamase
+  - SARM = gène mecA : PLP2 additionnelle -> résistance à toutes les β-lactamines. Souvent multirésistance aminoside, macrolide, fluoroquinolonie
+    -> vancomycine en 1ere intention
+- Aminoside : sauvage sensible, résistance acquise par inactivation enzymatique
+- Glycopeptide : sauvage sensible, phénotype gIA/hétéroGISA avec sensibilité diminusée, phénotype gRSA (résistance)
 ** TODO Pseudomonas aeruginosa
 Bacille Gram négatif, très mobile
 
@@ -107,14 +122,40 @@ Forte capacité à former des biofilms
 Faible perméabilité membranaire : résistance naturelle pénicillines, C1G et C2G +/- certaines C3G
 + , Catalasoe positif - lactose négatif
 ** TODO Streptocoques
-*** α-hémolytique : hémolyse partielle
-- viridans
-- Pneumocoque: résistance par chimérisme PLP (acquis)
-*** β-hémolyse : hémolyse totale
-- Groupe A = S. pyogenes surtout. Cause d’angine++. *Pas de résistance aux β-lactamine*
-- Groupe B = S. agalactiae
- Infection materno-foetale ++ (note: l’antibioprophylaxie marche chez les nouveau-né mais seulement pour les infections avant 7 jours)
-- Groupe C, D, F, G, H
+*** Classification
+- α-hémolytique : hémolyse partielle
+  - viridans
+  - Pneumocoque: résistance par chimérisme PLP (acquis)
+- β-hémolyse : hémolyse totale
+  - Groupe A = S. pyogenes surtout. Cause d’angine++. *Pas de résistance aux β-lactamine*
+  - Groupe B = S. agalactiae
+   Infection materno-foetale ++ (note: l’antibioprophylaxie marche chez les nouveau-né mais seulement pour les infections avant 7 jours)
+  - Groupe C, D, F, G, H
+- Non groupable
+*** Streptococcocus pyogenes
+Cocci gram+ en chaînettes, capsulé, non sporulé, immobile
+
+**** Facteurs de pathogénicité
+- Capsule =e défense contre phagocytose, adhésion à la cible
+- Protéine M de surface = adhésion aux muqueuses (pharyng, cutané), protection contre la phagocytose
+- Streptolysine = hémolyse β-complète
+- toine érythrogène : hypersensibilité retardée à la scarlatine
+**** Habitat
+Strictement humaine, surtout pharyngé +- peau, vagin...
+Pyogène = responsiable d’infections suppurées
+**** Clinique
+- non invasive = angine érythémateuse/érythémato-pultacée, otite moyenne aigüe de l’enfant, scalratine, infection cutanée
+- invasive : cutanée sévère (fasciite nécrosante), septicémie, choc toxique streptococcique
+- complications post-streptococciques  (rare) = immunologique :
+  - rhumatisme articulaire, glomérulonéphrite aigüe, érothymèe noueux
+**** Diagnostic
+- bactérie exigeante -> gélose sang +/- ANC (inhibe Gram-)
+- β-émolyse
+- Résistance potochine, sensbile bacitracine
+- Catalase -, oxydase -
+**** Sensibilité, résistance
+- β-lactamne : sensbile
+- macrosible : sauvae sensible, résistance par mécansime d’effluxe, modiifcation cible ARN23S
 * Classification
 :PROPERTIES:
 :ID:       73fe5cc4-08a6-402a-8237-156e21ef7bc3
@@ -122,6 +163,12 @@ Faible perméabilité membranaire : résistance naturelle pénicillines, C1G et 
 Gram
 - positif si paroi épaisse de peptidoglycane -> coloration persiste
 - négative si paroi plus fine qui permet à l'éthanol de laver la coloration
+
+Catalase = oxydoréductase qui intervient dasn la résistance à la bactéricidie par le peroxyde d’oxygène
+- permet de différencier dans les cocci à Gram + les staphylocoque (catalase+) des streptocoque
+
+Oxydase : détecte les cytochrome de type c (pigmen hémo-protéiques dans la plupart des cellules vivante)
+- plupart des staph sont oxydase-négative
 * Maladies infectieuses
 :PROPERTIES:
 :ID:       d8f64639-c70a-419c-8219-4418508a76db
