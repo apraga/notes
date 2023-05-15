@@ -12,7 +12,7 @@ siteExe = "_build/hakyll-site"
 -- Nix flakes builds several GHC version...
 main :: IO ()
 main = shakeArgs shakeOptions{shakeFiles="_build"} $ do
-    want [siteExe , "_site/index.html", "hut"]
+    want ["_site/index.html", "hut"]
 
     siteExe  %> \out -> do
       let src = ["src/Main.hs"]
@@ -21,6 +21,7 @@ main = shakeArgs shakeOptions{shakeFiles="_build"} $ do
 
     -- Shake cannot use directories
     "_site/index.html" %> \out ->  do
+        need [siteExe]
         cmd_ siteExe "build"
 
     phony "clean" $ do

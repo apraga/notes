@@ -120,7 +120,7 @@ Forte capacité à former des biofilms
 - Oxydase positif (!= entérobactéries) -> test rapide pour différencier les 2
 *** Résistance
 Faible perméabilité membranaire : résistance naturelle pénicillines, C1G et C2G +/- certaines C3G
-+ , Catalasoe positif - lactose négatif
++ Catalase positif - lactose négatif
 ** TODO Streptocoques
 *** Classification
 - α-hémolytique : hémolyse partielle

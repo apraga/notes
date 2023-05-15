@@ -5077,19 +5077,37 @@ NC_000001.11	17651	17651
 #+end_quote
 ./result/bin/addsnv -v snv.txt -f mini.bam -r ../data/genomeRef.fna -o test.bam
 
-**** TODO Test chr22
+**** DONE Test chr22
+CLOSED: [2023-05-15 Mon 23:24]
 Pas assez de reads, on prend le chromosome 22
 #+begin_src sh
 samtools view ../simuscop-centogene-200x/cento/preprocessing/mapped/cento.bam NC_000022.11 -b -o chr22.bam
 samtools index chr22.bam
 #+end_src
-***** TODO SNV aléatoire: ok, vérifier IGV
-Position 17499704
+Mésocentre
+dans tests/bamsurgeno
+#+begin_src
+addsnv -v snv.txt -f chr22.bam -r ../genomeRef.fna -o test.bam --aligner mem
+#+end_src
+***** DONE SNV aléatoire:
+CLOSED: [2023-05-15 Mon 23:13]
+NC_000022.11	17499704	17499704    0.2
 On retrouve bien un variant à cette position A > T
-***** TODO SNV avec ALT prédéfini
+***** DONE SNV avec ALT prédéfini : retrouvée dans IGV (mais pas dans pileup)
+CLOSED: [2023-05-15 Mon 23:13]
 NC_000022.11	17499704	17499704    0.2 G
+***** DONE Variants patients chr22: ok IGV
+CLOSED: [2023-05-15 Mon 23:23]
+Fichier non trié donc
+samtools sort test.bam -o test-sorted.bam
+samtools index test-sorted.bam
 ***** DONE Vérifier qu'il faut POS et POS+1: non
 CLOSED: [2023-05-14 Sun 21:21]
+**** TODO Variants cento
+***** TODO SNV
+SCHEDULED: <2023-05-15 Mon>
+***** TODO del
+***** TODO ins
 *** Divers
 **** DONE Vérifier nombre de reads fastq - bam
 CLOSED: [2022-10-09 Sun 22:31]
