@@ -103,6 +103,13 @@ Résistance fréquent à l’hôpital
     -> vancomycine en 1ere intention
 - Aminoside : sauvage sensible, résistance acquise par inactivation enzymatique
 - Glycopeptide : sauvage sensible, phénotype gIA/hétéroGISA avec sensibilité diminusée, phénotype gRSA (résistance)
+** Staphylococcus saprophyticus
+- Cocci gram + en amas, catalase positive, nitrate réductase négative
+- Urine :rose sur milieu chromogène mais identification spectromètre de masse/biochimiue
+- Sensbilité nature à la plupart des antibiotique anti-staph
+- Résistance naturelle : fosfomycine, acide fusidique, novobiocine
+- Résistance acquise fréquente : péni G, érythromycine
+** Proteus mirabilis
 ** TODO Pseudomonas aeruginosa
 Bacille Gram négatif, très mobile
 
@@ -156,6 +163,18 @@ Pyogène = responsiable d’infections suppurées
 **** Sensibilité, résistance
 - β-lactamne : sensbile
 - macrosible : sauvae sensible, résistance par mécansime d’effluxe, modiifcation cible ARN23S
+** Entérobactéries
+Groupes selon la résistance
+1. Pas de β-lactamase : E. coli, Proteus mirabilis, Salmonella, Shigella
+2. Pénicillinase à bas niveau : Klebsiella, Citrobacer koseri
+3. Céphalosporinase à bas niveau : Enterobacter, Serratia, Morganella, Providencia, Citrobacter freundii
+4. Yersinia
+*** Escherichia coli
+- Bacille gram négatif, mobile, oxydase négative, nitrase-réductase positive
+- Urine : rose sur milieu chromogène (β-glucoronidase positive)
+- Sensbilité naturelles aux antibiotiques actif sur BGN
+- Groupe 1 : céphalosporinase chromosomique de très bas niveau. Résistance acquise enzymatique : pénicillinase, β-lactamase à spectre étundes, céphalosporinase de haut niveau, carbapénémase
+
 * Classification
 :PROPERTIES:
 :ID:       73fe5cc4-08a6-402a-8237-156e21ef7bc3
