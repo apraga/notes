@@ -193,6 +193,37 @@ Oxydase : détecte les cytochrome de type c (pigmen hémo-protéiques dans la pl
 :ID:       d8f64639-c70a-419c-8219-4418508a76db
 :END:
 ** TODO Infection urinaire
+- Tractus urinaire stérole, extrémité distale de l’urètre colonisé
+- Pénétration des bactéries : à partir de l’urètre (ascendant), plus rarement sur sonde, endoscopie, chirurgie
+- Facteurs prédisposants : calcul (obstactle), hypertrophie prostate, malformation voie urinaire, grossesse, diabète...
+
+*** Démarche
+- autre : risque de complication, PNA; dépistage pour grossesse, chir ; échec traitement; > 4 épisodes par an -> EBCU (bactérie + antibiogramme)
+- cystite simple : bandelette urinaire : leucocyte, nitrite. VPN chez la famme, VPP chez l’homme
+
+**** ECBU: préanalytique
+Prélèvement
+- Naturel : lavage main + toilette, urine 2eme jet
+- jeune enfant : collecteur d’urine +*/ cathéter/ponctio sus-pubienne
+- Sonde: jamais dans le sac prélevere, recueiller après désinfections sur site dédié. Ne pas envoyer sonde
+Conservation:
+- tube stérile 2h à température ambiante, 12h cyto, 24h à 4° pour culture
+- tube borate: 48h si _bien rempli_
+
+**** Analytique
+- cytologie : manuel/automatique
+- Gram : non obligatoire, peu sensible mais permet d’identifier une contamination, d’orienter les milieux d’ensemencement
+- ensemencement : chromogène +/- sélectif pour Gram positif, levures.... 16-24h à 35°, 48h si croissance lente, discordante.
+#+BEGIN_SRC dot :file test-dot.png :exports results
+graph {
+a -- b
+}
+#+END_SRC
+
+#+RESULTS:
+[[file:test-dot.png]]
+
+*** Groupes
 _Groupe 1_ : *Seuil = 10^3*. Critères majeurs de pathogénicité (e.g adhésion à l’épithelium urinaire) -> responsable si urine non contaminé, même en petite quantité
 - *E. coli* (75%-80% des cystites simples)
 - *S. saprophyticus* (cystites aigües communautaires chez femme de 15-30ans)
@@ -222,6 +253,7 @@ _Groupe 4_ : *Seuil: non*. Contaminant
 
 Uropathogènes exigeants : Aerococcus, A. shaalii, A. omnicolens et L. delbrueckii
 / chez > 65 ans, < 3 ans et patho urologie (sauf cancer vessie et prostate) -> à chercher dans ce contexte
+
 * Antibiotiques
 :PROPERTIES:
 :ID:       2fe3ff58-a4ef-41f0-9d77-b8e895d5474d
