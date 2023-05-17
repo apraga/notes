@@ -23,7 +23,7 @@ main = hakyll $ do
     match "about.org" $ do
         route  $ setExtension "html"
         compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/notitle.html" defaultContext
+            >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= relativizeUrls
 
     match "posts/*" $ do
@@ -36,7 +36,7 @@ main = hakyll $ do
     match "notes/index.org" $ do
         route $ setExtension "html"
         compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/notitle.html" defaultContext
+            >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= relativizeUrls
 
 

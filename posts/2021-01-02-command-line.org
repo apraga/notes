@@ -9,8 +9,11 @@ command-line ordered by priority:
    directory with =z boo= (instead of cd /home/user/misc/books).
 
 3. /Find files easily/ with *=fd=* as a remplacement for =find=. Here is
-   how I converted all the markdown files to org-mode : fd md -x pandoc
+   how I converted all the markdown files to org-mode :
+   #+begin_src sh
+   fd md -x pandoc
    git mv {} {.}.org
+   #+end_src
 
 4. /A better sudo/: use *=doas=* (from OpenBSD). The configuration is
    super easy, just write =/usr/local/etc/doas.conf= (on FreeBSD) : #
@@ -20,10 +23,13 @@ command-line ordered by priority:
 5. /Manage your ssh-keys/ with
    [[https://www.funtoo.org/Keychain][keychain]]. For fish shell, here's
    my configuration: # Keychain for gpg and ssh. We have to set ssh and
-   gpg. And GPG ID... if status is-login keychain --quiet --agents
-   ssh,gpg id_rsa 65DCD80B3BFE5B80 end
+   gpg. And GPG ID...
 
-   #+BEGIN_EXAMPLE
+   #+BEGIN_SRC sh
+   if status is-login keychain --quiet --agents
+    ssh,gpg id_rsa 65DCD80B3BFE5B80
+   end
+
      if test -f ~/.keychain/(hostname)-gpg-fish
          source ~/.keychain/(hostname)-gpg-fish
      end
@@ -31,11 +37,13 @@ command-line ordered by priority:
      if test -f ~/.keychain/(hostname)-fish
          source ~/.keychain/(hostname)-fish
      end
-   #+END_EXAMPLE
+   #+END_SRC
 
 6. /capture videos/ with *=Ffmpeg=* like this
-   ={.shell}     $ ffmpeg -f x11grab -s 1280x800 -r 25 -i :0.0+nomouse -s hd720 -vcodec libx264 -vpre lossless_ultrafast -an -threads 0 yourvideo.mkv </pre>=
-
+#+begin_src sh
+   ffmpeg -f x11grab -s 1280x800 -r 25 -i :0.0+nomouse -s hd720 -vcodec \
+          libx264 -vpre lossless_ultrafast -an -threads 0 yourvideo.mkv
+#+end_src
    - removes the mouse cursor from the capture: =-i :0.0+nomouse=
    - enables multi-threading (if possible): =-threads 0=
    - captures the screen: =-f x11grab=

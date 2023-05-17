@@ -12,7 +12,7 @@ siteExe = "_build/hakyll-site"
 -- Nix flakes builds several GHC version...
 main :: IO ()
 main = shakeArgs shakeOptions{shakeFiles="_build"} $ do
-    want ["_site/index.html", "hut"]
+    want ["build", "hut"]
 
     siteExe  %> \out -> do
       let src = ["src/Main.hs"]
@@ -20,7 +20,7 @@ main = shakeArgs shakeOptions{shakeFiles="_build"} $ do
       cmd_ "ghc --make -o" [out] src
 
     -- Shake cannot use directories
-    "_site/index.html" %> \out ->  do
+    phony "build" $ do
         need [siteExe]
         cmd_ siteExe "build"
 
@@ -32,11 +32,12 @@ main = shakeArgs shakeOptions{shakeFiles="_build"} $ do
 
     phony "hut" $ do
         putInfo "Upload to blog hosted by sourcehut"
-        need ["_build/site.tar.gz"]
+        need ["archive"]
         cmd_ "hut pages publish _build/site.tar.gz -d scut.srht.site"
 
-    "_build/site.tar.gz" %> \out -> do
-        cmd_ "tar cvzf " [out] "-C _site ."
+    phony "archive" $ do
+        need ["build"]
+        cmd_ "tar cvzf " ["_build/site.tar.gz"] "-C _site ."
 
   -- z option is important to avoid re-uploading everything
     phony "free" $ do
