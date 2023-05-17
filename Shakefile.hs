@@ -30,10 +30,6 @@ main = shakeArgs shakeOptions{shakeFiles="_build"} $ do
         putInfo "Cleaning files in _build"
         removeFilesAfter "_build" ["//*"]
 
-    phony "build" $ do
-        putInfo "Building site "
-        cmd_ siteExe "build"
-
     phony "hut" $ do
         putInfo "Upload to blog hosted by sourcehut"
         need ["archive"]
