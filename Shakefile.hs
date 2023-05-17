@@ -15,9 +15,9 @@ main = shakeArgs shakeOptions{shakeFiles="_build"} $ do
     want ["build", "hut"]
 
     siteExe  %> \out -> do
-      let src = ["src/Main.hs"]
-      need src
-      cmd_ "ghc --make -o" [out] src
+      let src = "src/Main.hs"
+      need [src, "notes/20230511180745-bacteriologie.org"]
+      cmd_ "ghc --make -o" [out] [src]
 
     -- Shake cannot use directories
     phony "build" $ do
@@ -29,6 +29,10 @@ main = shakeArgs shakeOptions{shakeFiles="_build"} $ do
         cmd_ siteExe "clean"
         putInfo "Cleaning files in _build"
         removeFilesAfter "_build" ["//*"]
+
+    phony "build" $ do
+        putInfo "Building site "
+        cmd_ siteExe "build"
 
     phony "hut" $ do
         putInfo "Upload to blog hosted by sourcehut"
