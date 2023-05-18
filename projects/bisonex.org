@@ -1221,8 +1221,8 @@ Puis utiliser --dir_plugins
 *** TODO Nouvelle version avec VEP
 Example avec --custom
 https://www.ensembl.org/info/docs/tools/vep/script/vep_custom.html
-**** TODO Ajout spliceAI
-SCHEDULED: <2023-04-30 Sun>
+**** DONE Ajout spliceAI
+CLOSED: [2023-05-18 Thu 11:02] SCHEDULED: <2023-04-30 Sun>
 plugin VEP
 ***** DONE Télécharger les données
 CLOSED: [2023-05-11 Thu 19:01]
@@ -1319,6 +1319,9 @@ SCHEDULED: <2023-05-01 Mon>
 **** DONE Filtrer après VEP avec filter_vep
 CLOSED: [2023-04-29 Sat 15:47]
 nNon testé
+*** TODO Comparer les annotations sur 63003856
+SCHEDULED: <2023-05-18 Thu>
+**** Relancer le nouveau pipeline
 *** HOLD Ancienne version
 **** TODO HGVS
 **** TODO Filtrer après VEP
@@ -3206,7 +3209,7 @@ NB : liste techno illumina https://www.illumina.com/systems/sequencing-platforms
 
 Hiseq postérieur nextseq 550
 ******* TODO Fastq hiseq sans trimming
-SCHEDULED: <2023-04-30 Sun>
+SCHEDULED: <2023-05-25 Thu>
 ******* DONE Capture : Exons (bed)
 CLOSED: [2023-02-25 Sat 19:46]
 https://ftp-trace.ncbi.nih.gov/ReferenceSamples/giab/data/NA12878/Garvan_NA12878_HG001_HiSeq_Exome/nexterarapidcapture_expandedexome_targetedregions.bed.gz
@@ -4029,7 +4032,7 @@ compareNA12878-giab/happy/NA12878.summary.csv
 | SNP   | ALL    |       46032 |    41138 |     4894 |       47694 |     1622 |      4930 |   362 |    31 |      0.893683 |         0.962071 |       0.103367 |        0.926617 |      2.529551552318896 |     2.4124463519313304 |        1.6206857273037931 |        1.6888675840288743 |
 | SNP   | PASS   |       46032 |    41138 |     4894 |       47694 |     1622 |      4930 |   362 |    31 |      0.893683 |         0.962071 |       0.103367 |        0.926617 |      2.529551552318896 |     2.4124463519313304 |        1.6206857273037931 |         1.688867584028874 |
 ***** TODO Résultats sans trimming
-SCHEDULED: <2023-04-30 Sun>
+SCHEDULED: <2023-05-25 Thu>
 **** DONE HG002 :hg002:
 CLOSED: [2023-04-14 Fri 09:54] SCHEDULED: <2023-04-10 Mon>
 #+begin_src
@@ -4452,7 +4455,7 @@ samtools index single.bam
 #+end_src
 
 
-**** TODO Vérifier tous les variants sont retrouvés
+**** TODO Vérifier tous les variants sont retrouvés en 200x
 SCHEDULED: <2023-04-22 Sat>
 ***** DONE Après alignement
 CLOSED: [2023-04-29 Sat 18:27] SCHEDULED: <2023-04-28 Fri>
@@ -4538,8 +4541,8 @@ Pour les autres, on devrait les retrouver...
 
 Vérifier le nombre de reads sur 63003856
 Vérifier la paramétrisation du modèle également
-****** TODO [#B] 200x
-SCHEDULED: <2023-04-30 Sun>
+****** DONE [#B] 200x
+CLOSED: [2023-05-18 Thu 11:04] SCHEDULED: <2023-04-30 Sun>
 120 manquants (99 sans doublon)!
 
 On vérifie dans IGV (vcf + bam après alignement) :
@@ -5060,8 +5063,9 @@ cp work/34/fb2fc136f6f6d7f42d0960512f06de/*.fq.gz /Work/Groups/bisonex/data/synt
 ***** KILL Lancer pipeline
 CLOSED: [2023-05-04 Thu 20:30] SCHEDULED: <2023-05-01 Mon>
 NXF_OPTS=-D"user.name=apraga" nextflow run   main.nf -c nextflow.config  -profile standard,helios -bg --input="/Work/Groups/bisonex/data/synthetic/synthetic_63003856_{1,2}.fq.gz" --outdir out/synthetic_63003856
-*** TODO Bamsurgeon
-**** TODO Package nix
+*** TODO Bamsurgeon :bamsurgeon:
+**** DONE Package nix
+CLOSED: [2023-05-18 Thu 11:05]
 1. Patcher la recherche du génome de référence pour bien trouver les index (en utilisant une regexp comme nf-core)
 2. Rajouter le chemin de picard dans les arguments
 3. Option -O3 pour performance
@@ -5104,13 +5108,33 @@ samtools index test-sorted.bam
 ***** DONE Vérifier qu'il faut POS et POS+1: non
 CLOSED: [2023-05-14 Sun 21:21]
 **** TODO Variants cento
-***** TODO SNV
+***** STRT SNV
 SCHEDULED: <2023-05-15 Mon>
+Attention à la mémoire: 32G ne semble pas suffire avec 12 threads
+#+begin_src sh
+NXF_OPTS=-D"user.name=${USER}" nextflow run workflows/bamsurgeon.nf -profile standard,helios --input=tests/bamsurgeon/snv-cento.tsv -bg
+#+end_src
+
+ET
+#+begin_src nextflow
+workflow {
+    f = Channel.fromPath(params.input, checkIfExists: true)
+    bam = Channel.fromPath("simuscop-centogene-200x/cento/preprocessing/mapped/cento.bam",
+                           checkIfExists: true)
+    bamIndex = bam.map { it -> it + ".bai" }
+
+    downloadGenome | indexGenome
+    indexGenome.out.index | view
+    addSNV(f, bam, bamIndex, downloadGenome.out, indexGenome.out.index, indexGenome.out.dict, indexGenome.out.fai)
+}
+#+end_src
+****** TODO Erreur ValueError: quality and sequence mismatch
+******* DONE Idem avec dernière version sur github
+CLOSED: [2023-05-18 Thu 14:36]
+******* TODO Version 1.3
+Test sur chr22: variants ok mais VAF=1...
 ***** TODO del
 ***** TODO ins
 *** Divers
 **** DONE Vérifier nombre de reads fastq - bam
 CLOSED: [2022-10-09 Sun 22:31]
-* DONE Plot : ashkenazim trio
-CLOSED: [2023-04-18 Tue 21:28] SCHEDULED: <2023-04-16 Sun>
-/Entered on/ [2023-04-16 Sun 17:29]
