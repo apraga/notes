@@ -4454,7 +4454,6 @@ bwa mem bwa/genomeRef test-gatad2b/single_1.fq  test-gatad2b/single_2.fq | samto
 samtools index single.bam
 #+end_src
 
-
 **** TODO Vérifier tous les variants sont retrouvés en 200x
 SCHEDULED: <2023-04-22 Sat>
 ***** DONE Après alignement
@@ -4653,6 +4652,8 @@ Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Se
    82.000                540            540         60         45     0.9000       0.9231     0.9114
      None                546            546        329         39     0.6240       0.9333     0.7479
 
+****** TODO Comparer avec hap.py
+SCHEDULED: <2023-05-19 Fri>
 ****** DONE Méthode naïve 549/585
 CLOSED: [2023-05-04 Thu 21:57]
 Haplotypecaller: Nb reference SNV 692 vs found 585
@@ -4672,9 +4673,11 @@ Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Se
 CLOSED: [2023-05-04 Thu 21:57]
 Haplotypecaller: Nb reference SNV 692 vs found 585
 Variant calling, filter technical: reference SNV 692 vs found 521
+****** TODO Comparer avec hap.py
 ***** TODO Après filtre annotation
 ****** DONE Méthode naïve : 493/585
 CLOSED: [2023-05-04 Thu 22:09]
+****** TODO Comparer avec hap.py
 ****** TODO VCf eval
  cd cento/annotation/
  bgzip postvep-filter.vcf
@@ -5064,11 +5067,33 @@ cp work/34/fb2fc136f6f6d7f42d0960512f06de/*.fq.gz /Work/Groups/bisonex/data/synt
 CLOSED: [2023-05-04 Thu 20:30] SCHEDULED: <2023-05-01 Mon>
 NXF_OPTS=-D"user.name=apraga" nextflow run   main.nf -c nextflow.config  -profile standard,helios -bg --input="/Work/Groups/bisonex/data/synthetic/synthetic_63003856_{1,2}.fq.gz" --outdir out/synthetic_63003856
 *** TODO Bamsurgeon :bamsurgeon:
-**** DONE Package nix
-CLOSED: [2023-05-18 Thu 11:05]
+**** TODO Package nix
 1. Patcher la recherche du génome de référence pour bien trouver les index (en utilisant une regexp comme nf-core)
 2. Rajouter le chemin de picard dans les arguments
 3. Option -O3 pour performance
+***** DONE Erreur ValueError: quality and sequence mismatch
+CLOSED: [2023-05-19 Fri 18:44]
+****** DONE Idem avec dernière version sur github
+CLOSED: [2023-05-18 Thu 14:36]
+****** DONE Version 1.3: ok mais
+CLOSED: [2023-05-19 Fri 18:44]
+Test sur chr22: variants ok mais VAF=1...
+S'exécute "normalement" (échec selon nextflow) mais le bam de sorstie quasiment vide
+La fusion du bam avec les variants et du fichier de référence n'a fonctionné correctement.
+******* DONE Lancer replacereads.py à la main
+CLOSED: [2023-05-18 Thu 21:41]
+Dans /Work/Users/apraga/bisonex/work/f3/ce044f80ca91016d68d1bc4f4f5301
+#+begin_src sh
+ /nix/store/xw277la6w4sjqlsvw9h32cvrlacrfkgm-python3-3.10.9-env/bin/python3.10 /nix/store/abzangf0q8k37053p776cfkw181dzjn3-bamsurgeon-1.3/bin/bamsurgeon/replacereads.py -b cento.bam -r addsnv.e14561be-4fdd-45cc-9989-048ab6da6cc6.muts.bam -o snv-manual.bam
+#+end_src
+Puis
+#+begin_src
+samtools sort snv-manual.bam -o snv-manual-sorted.bam
+#+end_src
+A l'air de fonctionne
+***** TODO Corriger run nextflow pour éviter les erreurs
+SCHEDULED: <2023-05-21 Sun>
+Trop de message d'erreur en sortie ?
 **** DONE Test sur mini-bam: échec
 CLOSED: [2023-05-14 Sun 21:12]
 ❯ samtools view -h ~/code/bisonex/simuscop-centogene-200x/cento/preprocessing/mapped/cento.bam | head -n1000 | samtools view -Sb - > mini.bam
@@ -5128,29 +5153,11 @@ workflow {
     addSNV(f, bam, bamIndex, downloadGenome.out, indexGenome.out.index, indexGenome.out.dict, indexGenome.out.fai)
 }
 #+end_src
-****** TODO Erreur ValueError: quality and sequence mismatch
-******* DONE Idem avec dernière version sur github
-CLOSED: [2023-05-18 Thu 14:36]
-******* TODO Version 1.3: ok mais
-Test sur chr22: variants ok mais VAF=1...
-S'exécute "normalement" (échec selon nextflow) mais le bam de sorstie quasiment vide
-La fusion du bam avec les variants et du fichier de référence n'a fonctionné correctement.
-******** DONE Lancer replacereads.py à la main
-CLOSED: [2023-05-18 Thu 21:41]
-Dans /Work/Users/apraga/bisonex/work/f3/ce044f80ca91016d68d1bc4f4f5301
-#+begin_src sh
- /nix/store/xw277la6w4sjqlsvw9h32cvrlacrfkgm-python3-3.10.9-env/bin/python3.10 /nix/store/abzangf0q8k37053p776cfkw181dzjn3-bamsurgeon-1.3/bin/bamsurgeon/replacereads.py -b cento.bam -r addsnv.e14561be-4fdd-45cc-9989-048ab6da6cc6.muts.bam -o snv-manual.bam
-#+end_src
-Puis
-#+begin_src
-samtools sort snv-manual.bam -o snv-manual-sorted.bam
-#+end_src
-A l'air de fonctionne
-******** TODO Forcer la VAF
+****** DONE v1.3: Lancer le pipeline pour vérifier qu'on retrouve les variants
+CLOSED: [2023-05-19 Fri 18:41] SCHEDULED: <2023-05-18 Thu>
+****** TODO Forcer la VAF
 SCHEDULED: <2023-05-19 Fri>
 Est à 1
-******* TODO Lancer le pipeline pour vérifier qu'on retrouve les variants
-SCHEDULED: <2023-05-18 Thu>
 ***** TODO del
 ***** TODO ins
 *** Divers
