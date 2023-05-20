@@ -5094,7 +5094,7 @@ A l'air de fonctionne
 ***** TODO Corriger run nextflow pour éviter les erreurs
 SCHEDULED: <2023-05-21 Sun>
 Trop de message d'erreur en sortie ?
-**** DONE Test sur mini-bam: échec
+***** DONE Test sur mini-bam: échec
 CLOSED: [2023-05-14 Sun 21:12]
 ❯ samtools view -h ~/code/bisonex/simuscop-centogene-200x/cento/preprocessing/mapped/cento.bam | head -n1000 | samtools view -Sb - > mini.bam
 
@@ -5106,7 +5106,7 @@ NC_000001.11	17651	17651
 #+end_quote
 ./result/bin/addsnv -v snv.txt -f mini.bam -r ../data/genomeRef.fna -o test.bam
 
-**** DONE Test chr22
+***** DONE Test chr22
 CLOSED: [2023-05-15 Mon 23:24]
 Pas assez de reads, on prend le chromosome 22
 #+begin_src sh
@@ -5118,19 +5118,19 @@ dans tests/bamsurgeno
 #+begin_src
 addsnv -v snv.txt -f chr22.bam -r ../genomeRef.fna -o test.bam --aligner mem
 #+end_src
-***** DONE SNV aléatoire:
+****** DONE SNV aléatoire:
 CLOSED: [2023-05-15 Mon 23:13]
 NC_000022.11	17499704	17499704    0.2
 On retrouve bien un variant à cette position A > T
-***** DONE SNV avec ALT prédéfini : retrouvée dans IGV (mais pas dans pileup)
+****** DONE SNV avec ALT prédéfini : retrouvée dans IGV (mais pas dans pileup)
 CLOSED: [2023-05-15 Mon 23:13]
 NC_000022.11	17499704	17499704    0.2 G
-***** DONE Variants patients chr22: ok IGV
+****** DONE Variants patients chr22: ok IGV
 CLOSED: [2023-05-15 Mon 23:23]
 Fichier non trié donc
 samtools sort test.bam -o test-sorted.bam
 samtools index test-sorted.bam
-***** DONE Vérifier qu'il faut POS et POS+1: non
+****** DONE Vérifier qu'il faut POS et POS+1: non
 CLOSED: [2023-05-14 Sun 21:21]
 **** TODO Variants cento
 ***** STRT SNV
@@ -5155,11 +5155,54 @@ workflow {
 #+end_src
 ****** DONE v1.3: Lancer le pipeline pour vérifier qu'on retrouve les variants
 CLOSED: [2023-05-19 Fri 18:41] SCHEDULED: <2023-05-18 Thu>
-****** TODO Forcer la VAF
+****** TODO Corrigier position pour avoir une bonne VAF
 SCHEDULED: <2023-05-19 Fri>
-Est à 1
+POS POS+1 VAF ALT
+Attention, la base corrigée est à POS+1...
+****** DONE Comparaison manuelle avec julia (VAF = 1...)
+CLOSED: [2023-05-19 Fri 21:58]
+552 found over 585
 ***** TODO del
 ***** TODO ins
+*** TODO Julia : Bamscissors :bamscissors:
+Modification de la séquence dans BAM.
+*Pas de mise à jour de CIGAR*
+On convertit en fastq et on lance le pipeline pour "corriger"
+
+
+#+begin_src sh
+cd /home/alex/code/bisonex/out/63003856/preprocessing/mapped
+samtools view 63003856_S135.bam NC_000022.11 -o 63003856_S135_chr22.bam
+cd /home/alex/recherche/bisonex/code/BamScissors.jl
+cp ~/code/bisonex/out/63003856/preprocessing/mapped/63003856_S135_chr22.bam .
+samtools index 63003856_chr22.bam
+#+end_src
+
+Le script va modifier le bam, le trier et générer le fastq. !!!
+Attention: ne pas oublier l'option -n !!!
+
+#+begin_src sh
+time julia --project=.. insertVariant.jl
+scp 63003856_S135_chr22_{1,2}.fq.gz meso:/Work/Users/apraga/bisonex/tests/bamscissors/
+#+end_src
+
+**** TODO Phase 1 : chr22, VAF=1
+***** DONE 1 SNV  : ok !
+CLOSED: [2023-05-20 Sat 19:35] SCHEDULED: <2023-05-20 Sat>
+
+#+begin_src
+ make run READS="tests/bamscissors/corrected_{1,2}.fq.gz"
+Puis on lance le pipeline sur correct_1
+- [X] Variant visible dans IGV
+- [X] Variant visible après alignement
+- [X] Variant visible après appel de variant
+***** TODO Tous les SNV du chromosome
+SCHEDULED: <2023-05-20 Sat>
+**** TODO PHase 2 : chr22, VAF variable: de nombreux reads sont perdus
+Après l'alignement donc soit à cause de bam2fq, soit à cause de l'alignement.
+Plutôt bam2fq ?
+ex: chr22:42,202,582-42,223,574
+SCHEDULED: <2023-05-22 Mon>
 *** Divers
 **** DONE Vérifier nombre de reads fastq - bam
 CLOSED: [2022-10-09 Sun 22:31]
