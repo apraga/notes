@@ -5200,7 +5200,8 @@ Puis on lance le pipeline sur correct_1
 SCHEDULED: <2023-05-20 Sat>
 **** TODO PHase 2 : chr22, VAF variable: de nombreux reads sont perdus
 Problème dansr le BAM car sans les insertion
-
+***** DONE Filtrer les reads sans pair : idem
+CLOSED: [2023-05-23 Tue 00:01]
 FOUND:Found 16662 unpaired mates
 	at htsjdk.samtools.SAMUtils.processValidationError(SAMUtils.java:470)
 	at picard.sam.SamToFastq.doWork(SamToFastq.java:224)
@@ -5215,6 +5216,32 @@ samtools view ~/code/bisonex/out/63003856/preprocessing/mapped/63003856_S135.bam
 
 Ne rale pas...
 SCHEDULED: <2023-05-22 Mon>
+***** TODO Problème de la conversion BAM -> fastq ?
+****** TODO Test alignement bamtofastq sur le BAM originel: idem
+Dans ~/recherche/code/bisonex/Bamscissors.jl
+samtools view ~/code/bisonex/out/63003856/preprocessing/mapped/63003856_S135.bam NC_000022.11  -hf 0x2 -o 63003856_chr22.bam
+On trie bien par nom de read
+samtools sort 63003856_chr22.bam -o 63003856_chr22_sorted.bam
+
+Conversion en fastq. Attention à bien prendre le *fichier trié* !
+samtools bam2fq  -1 63003856_chr22_init1.fq.gz -2 63003856_chr22_init2.fq.gz  -n 63003856_chr22_sorted.bam
+[M::bam2fq_mainloop] discarded 0 singletons
+[M::bam2fq_mainloop] processed 2592110 reads
+
+On envoie sur le mésocentre
+scp 63003856_chr22_init{1,2}.fq.gz meso:/Work/Users/apraga/bisonex/tests/bamscissors
+On démarre un job avec 24 coeurs pour aller vite
+
+srun -c 24 -p smp -t 1:00:00 --pty bash
+bwa mem -t 24 /Work/Projects/bisonex/data/genome/GRCh38.p13/bwa/genomeRef 63003856_chr22_init1.fq.gz 63003856_chr22_init2.fq.gz | samtools sort -@24 -o output.bam -
+
+Dans /home/alex/recherche/bisonex/code/BamScissors.jl/aligned
+❯ scp meso:/Work/Users/apraga/bisonex/tests/bamscissors/output.bam*
+****** TODO Test picard : idem
+Dans bisonex/code/BamScissors.jl
+❯ picard SamToFastq -I 63003856_chr22_sorted.bam -F testpicard1.fastq -F2 testpicard2.fastq
+
+bwa mem -t 24 /Work/Projects/bisonex/data/genome/GRCh38.p13/bwa/genomeRef testpicard1.fastq.gz testpicard2.fastq.gz | samtools sort -@24 -o testpicard.bam -
 *** Divers
 **** DONE Vérifier nombre de reads fastq - bam
 CLOSED: [2022-10-09 Sun 22:31]
