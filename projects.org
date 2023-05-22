@@ -2274,7 +2274,10 @@ RV pris yamah
 ** GURU
 *** DONE Demander accès
 CLOSED: [2022-11-19 Sat 17:36]
-*** WAIT Ebuild pour adapteur wifi TBW-108B
+*** DONE Ebuild pour adapteur wifi TBW-108B
+CLOSED: [2023-05-22 Mon 22:50]
 Sur branche dev
+*** WAIT Ebuild hut
+sur dev
 ** TODO Article nzbget sur wiki
 /Entered on/ [2022-10-22 Sat 17:31]

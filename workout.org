@@ -6250,3 +6250,5 @@ Aerial = "blaster scoop"
   2x4+2
 ** Compression:
 3x10
+* <2023-05-22 Mon> Running
+35min, modéré

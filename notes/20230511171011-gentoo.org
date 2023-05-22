@@ -2,9 +2,12 @@
 :ID:       0c8d2d28-e792-49f7-a085-abbd8f3f1c50
 :END:
 #+title: Gentoo
-#+filetags: cs
+#+filetags: cs gentoo
 
 * Install
+:PROPERTIES:
+:ID:       590b7a4c-3bed-4d9d-93db-78ef1f673f96
+:END:
 =sys-kernel/gentoo-kernel-bin= contient un noyau pré-compilé avec la plupart des choses nécessaires
 ** Difficulté
 Si la clé USB ne démarre pas en UEFI, installer jusqu'à GRUB puis mettre [[https://www.system-rescue.org/][system rescues]] sur la clé USB et inrstaller grub.
@@ -66,3 +69,16 @@ pour la musique, installer OPlayerHD Lite sur l'iphone et suivre les instruction
 #+begin_src  sh
 ifuse --documents  com.olimsoft.oplayer.lite /mnt/iphone-oplayer
 #+end_src
+* Écrire un ebuild
+:PROPERTIES:
+:ID:       a02f8422-149b-4bba-8042-664d7699a7d9
+:END:
+Attention, le package doit être installé dans /usr et non /usr/local ! Sinon avertissement
+Étapes
+- ebuild manifest
+- ebuild compile
+- ebuild install : localement
+- ebuild merge : dans le système
+Pour les pacquets Go
+https://wiki.gentoo.org/wiki/Writing_go_Ebuilds
+Il faut héberger une archive avec les dépendences. On peut faire un dépot Git avec juste une LICENSE et créer une "release" manuellement contenant cette archive.

@@ -5199,9 +5199,21 @@ Puis on lance le pipeline sur correct_1
 ***** TODO Tous les SNV du chromosome
 SCHEDULED: <2023-05-20 Sat>
 **** TODO PHase 2 : chr22, VAF variable: de nombreux reads sont perdus
-Après l'alignement donc soit à cause de bam2fq, soit à cause de l'alignement.
-Plutôt bam2fq ?
-ex: chr22:42,202,582-42,223,574
+Problème dansr le BAM car sans les insertion
+
+FOUND:Found 16662 unpaired mates
+	at htsjdk.samtools.SAMUtils.processValidationError(SAMUtils.java:470)
+	at picard.sam.SamToFastq.doWork(SamToFastq.java:224)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:308)
+	at picard.cmdline.PicardCommandLine.instanceMain(PicardCommandLine.java:103)
+	at picard.cmdline.PicardCommandLine.main(PicardCommandLine.java:113)
+
+ex: chr22:42213078
+
+On essaie
+samtools view ~/code/bisonex/out/63003856/preprocessing/mapped/63003856_S135.bam NC_000022.11  -hf 0x2 -o 63003856_chr22.bam
+
+Ne rale pas...
 SCHEDULED: <2023-05-22 Mon>
 *** Divers
 **** DONE Vérifier nombre de reads fastq - bam
