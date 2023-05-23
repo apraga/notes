@@ -330,3 +330,6 @@ If you want to autojoin a channel, it must be done in bitlbee direcly
 channel blabla set auto_{join} true NB the config file are most likely
 in /var/lib/bitlbee/$USER.xml
 
+
+* IRC
+Doom-emacs utilise circe, à démarrer avec ~=irc~ (et non circe)

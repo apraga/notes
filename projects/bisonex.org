@@ -1357,7 +1357,8 @@ Besoin de vep
 CLOSED: [2023-04-22 Sat 15:27] SCHEDULED: <2023-04-13 Thu>
 * Manuscript :manuscript:
 * Tests :tests:
-** WAIT Non régression : version prod
+** KILL Non régression : version prod
+CLOSED: [2023-05-23 Tue 08:46]
 *** DONE ID common snp
 CLOSED: [2022-11-19 Sat 21:36]
 #+begin_src
@@ -1727,7 +1728,8 @@ $ wc -l dbSNP/GRCh38.p13/ID_of_common_snp_not_clinvar_patho.txt
 $ wc -l ../data-alexis/dbSNP/ID_of_common_snp_not_clinvar_patho.txt
 21155065 ../data-alexis/dbSNP/ID_of_common_snp_not_clinvar_patho.txt
 La différence vient probablement d'une vieille version de clinvar
-**** TODO Comprendre la différence nouvelle version et prod
+**** KILL Comprendre la différence nouvelle version et prod
+CLOSED: [2023-05-23 Tue 08:46]
 #+begin_src sh :dir /ssh:meso:/Work/Users/apraga/bisonex/tests/debug-commonsnp
 #sort /Work/Groups/bisonex/data/dbSNP/GRCh38.p13/ID_of_common_snp_not_clinvar_patho.txt  | uniq > notpatho.new
 #sort /Work/Groups/bisonex/data-alexis/dbSNP/ID_of_common_snp_not_clinvar_patho.txt  | uniq > notpatho.old
@@ -1870,7 +1872,8 @@ CLOSED: [2023-01-26 jeu. 17:42]
 | bwa      |       ? | 0.7.17-r1188 |
 On a des versions plus vieilles sauf (le plus important) Gatk
 
-*** HOLD 63003856_S135
+*** KILL 63003856_S135
+CLOSED: [2023-05-23 Tue 08:45]
 **** KILL Notes : bonne reproductibilité sur le cluster mais diff avec la version "de prod"
 CLOSED: [2023-01-09 Mon 23:03]
 tester sequential puis version spécifique bwa mem
@@ -2695,7 +2698,8 @@ script/files-src/tmp_63003856_S135 on  prod [$!?]
 128077211
 
 Idem...
-**** TODO GATK : tests de non régression ??
+**** KILL GATK : tests de non régression ??
+CLOSED: [2023-05-23 Tue 08:44]
 **** DONE Compiler gatk: idem
 CLOSED: [2023-01-19 Thu 22:03]
 ***** DONE Compilation
@@ -2730,10 +2734,12 @@ Ceux qui ont planté sont liés à spark + erreurs d'authentification kerberos
 CLOSED: [2023-01-19 Thu 22:03]
  JAVA_HOME=/nix/store/r1r5jr7gv6hcchpiggjmfqjkzbi8y5ja-openjdk-8u322-ga/lib/openjdk PATH=$PATH:$JAVA_HOME/bin ./gatk --version
 
-**** TODO Comparer tsv à la sortie (Alexis)
+**** KILL Comparer tsv à la sortie (Alexis)
+CLOSED: [2023-05-23 Tue 08:44]
 - diff
 - Nombre de lignes
-**** TODO Version de prod + nix sur Helios
+**** KILL Version de prod + nix sur Helios
+CLOSED: [2023-05-23 Tue 08:45]
 ***** DONE 24 coeurs : idem
 CLOSED: [2023-01-20 Fri 22:49]
 ****** DONE Preprocessing : idem
@@ -3005,14 +3011,16 @@ CLOSED: [2023-01-20 Fri 22:48]
 │ 2 │ 63003856_S135_DP_over_30_not_SNP_consensual_sequence.vcf                  │ 8884    │
 │ 3 │ 63003856_S135_DP_over_30_not_SNP_consensual_sequence_not_technical.vcf.gz │ 6759    │
 ╰───┴───────────────────────────────────────────────────────────────────────────┴─────────╯
-***** TODO Relancer avec 4 coeurs
+***** KILL Relancer avec 4 coeurs
+CLOSED: [2023-05-23 Tue 08:45]
 -c 4
 ****** DONE Alignement ok !!
 CLOSED: [2023-01-20 Fri 23:24]
 $ samtools view -c files/tmp_63003856_S135/63003856_S135.bam
 128077207
 
-****** TODO Vérifier les flags de chaque étape
+****** KILL Vérifier les flags de chaque étape
+CLOSED: [2023-05-23 Tue 08:44]
 post_cleanSam = _cleaned.bam
 post_markDuplicate = _marked_dup.bam
 post_BaseRecalibrator = _recal.table
@@ -3131,8 +3139,10 @@ SAM files differ.
 ***** DONE Relancer avec la même version de samtools
 CLOSED: [2023-01-25 Wed 21:58]
 Pas d'impact
-***** TODO Comparer tsv de sortie
-***** TODO Regarder où sont les variants différents
+***** KILL Comparer tsv de sortie
+CLOSED: [2023-05-23 Tue 08:45]
+***** KILL Regarder où sont les variants différents
+CLOSED: [2023-05-23 Tue 08:45]
 ** TODO GIAB Validation :giab:
 https://github.com/ga4gh/benchmarking-tools
 Prérequis :
@@ -5217,11 +5227,12 @@ samtools view ~/code/bisonex/out/63003856/preprocessing/mapped/63003856_S135.bam
 Ne rale pas...
 SCHEDULED: <2023-05-22 Mon>
 ***** TODO Problème de la conversion BAM -> fastq ?
-****** TODO Test alignement bamtofastq sur le BAM originel: idem
+****** DONE Test bamtofastq sur le BAM originel: idem
+CLOSED: [2023-05-23 Tue 01:16]
 Dans ~/recherche/code/bisonex/Bamscissors.jl
 samtools view ~/code/bisonex/out/63003856/preprocessing/mapped/63003856_S135.bam NC_000022.11  -hf 0x2 -o 63003856_chr22.bam
 On trie bien par nom de read
-samtools sort 63003856_chr22.bam -o 63003856_chr22_sorted.bam
+samtools sort -n 63003856_chr22.bam -o 63003856_chr22_sorted.bam
 
 Conversion en fastq. Attention à bien prendre le *fichier trié* !
 samtools bam2fq  -1 63003856_chr22_init1.fq.gz -2 63003856_chr22_init2.fq.gz  -n 63003856_chr22_sorted.bam
@@ -5237,11 +5248,227 @@ bwa mem -t 24 /Work/Projects/bisonex/data/genome/GRCh38.p13/bwa/genomeRef 630038
 
 Dans /home/alex/recherche/bisonex/code/BamScissors.jl/aligned
 ❯ scp meso:/Work/Users/apraga/bisonex/tests/bamscissors/output.bam*
-****** TODO Test picard : idem
+****** DONE Avec samtools fastq
+CLOSED: [2023-05-23 Tue 01:16]
+samtools sort -n 63003856_chr22.bam -o 63003856_chr22_sorted.bam
+samtools fastq 63003856_chr22_1.fq.gz -2 63003856_chr22_2.fq.gz -0 /dev/null -s /dev/null -o 63003856_chr22_sorted.bam
+scp 63003856_chr22_{1,2}.fq.gz  meso:/Work/Users/apraga/bisonex/tests/bamscissors/
+
+mesocentre
+ bwa mem -t 24 /Work/Projects/bisonex/data/genome/GRCh38.p13/bwa/genomeRef 63003856_chr22_1.fq.gz 63003856_chr22_2.fq.gz | samtools sort -@24 -o output.bam
+
+ scp meso:/Work/Users/apraga/bisonex/tests/bamscissors/output.bam\* aligned/
+****** DONE En rajoutant .fna dans le doserrie (+samtools fastq): idem
+CLOSED: [2023-05-23 Tue 01:16]
+ln -s /Work/Projects/bisonex/data/genome/GRCh38.p13/bwa/genomeRef* .
+ln -s /Work/Projects/bisonex/data/genome/GRCh38.p13/genomeRef* .
+
+bwa mem -t 24 genomeRef 63003856_chr22_1.fq.gz 63003856_chr22_2.fq.gz | samtools sort -@24 -o output.bam
+****** DONE Test picard : idem
+CLOSED: [2023-05-23 Tue 01:16]
 Dans bisonex/code/BamScissors.jl
 ❯ picard SamToFastq -I 63003856_chr22_sorted.bam -F testpicard1.fastq -F2 testpicard2.fastq
 
 bwa mem -t 24 /Work/Projects/bisonex/data/genome/GRCh38.p13/bwa/genomeRef testpicard1.fastq.gz testpicard2.fastq.gz | samtools sort -@24 -o testpicard.bam -
+****** DONE Il ne manque pas des reads dans les fastq :
+CLOSED: [2023-05-23 Tue 01:26]
+bisonex/code/BamScissors.jl on  bamscissors [!?] via ஃ v1.9.0
+❯ samtools  flagstat aligned/output.bam
+1306273 + 0 in total (QC-passed reads + QC-failed reads)
+1296055 + 0 primary
+0 + 0 secondary
+10218 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+1304871 + 0 mapped (99.89% : N/A)
+1294653 + 0 primary mapped (99.89% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+
+bisonex/code/BamScissors.jl on  bamscissors [!?] via ஃ v1.9.0
+❯ samtools flagstat 63003856_chr22.bam
+2609214 + 0 in total (QC-passed reads + QC-failed reads)
+2592110 + 0 primary
+0 + 0 secondary
+17104 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+2609214 + 0 mapped (100.00% : N/A)
+2592110 + 0 primary mapped (100.00% : N/A)
+2592110 + 0 paired in sequencing
+1296055 + 0 read1
+1296055 + 0 read2
+2592110 + 0 properly paired (100.00% : N/A)
+2592110 + 0 with itself and mate mapped
+0 + 0 singletons (0.00% : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+
+❯ echo $(zcat 63003856_chr22_init2.fq.gz | wc -l)/4 | bc
+1296055
+
+bisonex/code/BamScissors.jl on  bamscissors [!?] via ஃ v1.9.0 took 2s
+❯ echo $(zcat 63003856_chr22_init1.fq.gz | wc -l)/4 | bc
+1296055
+❯ samtools  flagstat 63003856_chr22_sorted.bam
+2609214 + 0 in total (QC-passed reads + QC-failed reads)
+2592110 + 0 primary
+0 + 0 secondary
+17104 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+2609214 + 0 mapped (100.00% : N/A)
+2592110 + 0 primary mapped (100.00% : N/A)
+2592110 + 0 paired in sequencing
+1296055 + 0 read1
+1296055 + 0 read2
+2592110 + 0 properly paired (100.00% : N/A)
+2592110 + 0 with itself and mate mapped
+0 + 0 singletons (0.00% : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+****** DONE Avec sort -O BAM idem
+CLOSED: [2023-05-23 Tue 01:21]
+****** DONE Singleton ou non mapped ? nonVirtPosition
+CLOSED: [2023-05-23 Tue 01:22]
+❯ samtools bam2fq  -1 63003856_chr22_init1.fq.gz -2 63003856_chr22_init2.fq.gz -0 both -s single.fq.gz  -n 63003856_chr22_sorted.bam
+
+
+bisonex/code/BamScissors.jl on  bamscissors [!?] via ஃ v1.9.0
+❯ wc -l 63003856_chr22_init* both single.fq.gz
+   403540 63003856_chr22_init1.fq.gz
+   404788 63003856_chr22_init2.fq.gz
+        0 both
+        0 single.fq.gz
+   808328 total
+****** Problème d'aligner car les reads sont bien dans le .fastq ?
+Ex:
+ zgrep "A00853:477:HMLWYDSX3:2:2624:2826:18630" 63003856_chr22_{1,2}.fq.gz
+63003856_chr22_1.fq.gz:@A00853:477:HMLWYDSX3:2:2624:2826:18630
+63003856_chr22_2.fq.gz:@A00853:477:HMLWYDSX3:2:2624:2826:18630
+***** Refaire la manip sur bam chr22 non modifié + mail Alexis
+
+[1]_samtools view ~/code/bisonex/out/63003856/preprocessing/mapped/63003856_S135.bam NC_000022.11  -f 0x2 -o 63003856_chr22.bam
+
+ Les reads sont bien tous mappé
+samtools flagstat 63003856_chr22.bam
+2609214 + 0 in total (QC-passed reads + QC-failed reads)
+2592110 + 0 primary
+0 + 0 secondary
+17104 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+2609214 + 0 mapped (100.00% : N/A)
+
+[2] samtools sort -n 63003856_chr22.bam -o 63003856_chr22_sorted.bam
+flagstat idem
+
+[3] samtools fastq -1 63003856_chr22_1.fq.gz -2 63003856_chr22_2.fq.gz -0 /dev/null -s /dev/null -n 63003856_chr22_sorted.bam
+[M::bam2fq_mainloop] discarded 0 singletons
+[M::bam2fq_mainloop] processed 2592110 reads
+
+Nombre de reads ok (= la moitié) et les séquences ne sont pas identiques pour le premier read (= on n'a pas 2x la même chose)
+ echo $(zcat 63003856_chr22_1.fq.gz | wc -l)/4 | bc
+1296055
+ echo $(zcat 63003856_chr22_2.fq.gz | wc -l)/4 | bc
+1296055
+
+ [4]
+ bwa mem -t 24 /Work/Projects/bisonex/data/genome/GRCh38.p13/bwa/genomeRef 63003856_chr22_1.fq.gz 63003856_chr22_2.fq.gz  -o wtf.bam
+ [M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 1752492 sequences (240000014 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (12, 702821, 0, 18)
+[M::mem_pestat] analyzing insert size distribution for orientation FF...
+[M::mem_pestat] (25, 50, 75) percentile: (54, 197, 268)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 696)
+[M::mem_pestat] mean and std.dev: (163.92, 129.71)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 910)
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (129, 175, 233)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 441)
+[M::mem_pestat] mean and std.dev: (185.56, 75.37)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 545)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation RR...
+[M::mem_pestat] (25, 50, 75) percentile: (56, 192, 239)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 605)
+[M::mem_pestat] mean and std.dev: (158.00, 110.30)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 788)
+[M::mem_pestat] skip orientation FF
+[M::mem_pestat] skip orientation RR
+[M::process] read 839618 sequences (114952336 bp)...
+[M::mem_process_seqs] Processed 1752492 reads in 375.714 CPU sec, 17.645 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 336379, 0, 5)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (128, 174, 232)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 440)
+[M::mem_pestat] mean and std.dev: (184.73, 74.63)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 544)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 839618 reads in 183.039 CPU sec, 7.961 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 24 -o wtf.bam /Work/Projects/bisonex/data/genome/GRCh38.p13/bwa/genomeRef 63003856_chr22_1.fq.gz 63003856_chr22_2.fq.gz
+[main] Real time: 38.278 sec; CPU: 565.821 sec
+
+Bon nombre de reads pourtant
+ samtools flagstat wtf.bam
+2611059 + 0 in total (QC-passed reads + QC-failed reads)
+2592110 + 0 primary
+0 + 0 secondary
+18949 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+2611058 + 0 mapped (100.00% : N/A)
+2592109 + 0 primary mapped (100.00% : N/A)
+2592110 + 0 paired in sequencing
+1296055 + 0 read1
+1296055 + 0 read2
+2590970 + 0 properly paired (99.96% : N/A)
+2592108 + 0 with itself and mate mapped
+1 + 0 singletons (0.00% : N/A)
+458 + 0 with mate mapped to a different chr
+63 + 0 with mate mapped to a different chr (mapQ>=5)
+
+$ samtools sort -@24 -o wtf_sorted.bam wtf.sam
+[bam_sort_core] merging from 0 files and 24 in-memory blocks...
+
+ samtools flagstat wtf.bam
+2611059 + 0 in total (QC-passed reads + QC-failed reads)
+2592110 + 0 primary
+0 + 0 secondary
+18949 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+2611058 + 0 mapped (100.00% : N/A)
+2592109 + 0 primary mapped (100.00% : N/A)
+2592110 + 0 paired in sequencing
+1296055 + 0 read1
+1296055 + 0 read2
+2590970 + 0 properly paired (99.96% : N/A)
+2592108 + 0 with itself and mate mapped
+1 + 0 singletons (0.00% : N/A)
+458 + 0 with mate mapped to a different chr
+63 + 0 with mate mapped to a different chr (mapQ>=5)
+
+Effectivement, ce n'est pas un problème d'IGV
+
+❯ samtools mpileup 63003856_chr22.bam -r NC_000022.11:42213078-42213078
+[mpileup] 1 samples in 1 input files
+NC_000022.11	42213078	N	19	TTtTTtTTTtTTtTtTttt	kkk_kkkkFkFF_FkFkQk
+
+bisonex/code/BamScissors.jl on  bamscissors [!?] via ஃ v1.9.0
+❯ samtools mpileup aligned/wtf_sorted.bam -r NC_000022.11:42213078-42213078
+[mpileup] 1 samples in 1 input files
+NC_000022.11	42213078	N	5	TTtTT	_FkFF
+
 *** Divers
 **** DONE Vérifier nombre de reads fastq - bam
 CLOSED: [2022-10-09 Sun 22:31]
