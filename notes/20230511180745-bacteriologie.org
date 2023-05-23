@@ -13,7 +13,7 @@
 - négative si paroi plus fine qui permet à l'éthanol de laver la coloration
 
     Aérobies
-#+BEGIN_SRC dot :file aerobies.png :exports results
+#+BEGIN_SRC dot :file ../images/microbiologie/aerobies.png :exports results
 graph {
 splines=false;
 node [shape=box]
@@ -44,10 +44,10 @@ bacciMoins -- {
 #+END_SRC
 
 #+RESULTS:
-[[file:aerobies.png]]
+[[file:../images/microbiologie/aerobies.png]]
 
 
-#+BEGIN_SRC dot :file anaerobies.png :exports results
+#+BEGIN_SRC dot :file ../images/microbiologie/anaerobies.png :exports results
 graph {
 node [shape=box]
 "Anaérobies" -- {"Gram+" "Gram-"}
@@ -57,10 +57,10 @@ node [shape=box]
 #+END_SRC
 
 #+RESULTS:
-[[file:anaerobies.png]]
+[[file:../images/microbiologie/anaerobies.png]]
 
 
-#+BEGIN_SRC dot :file autres.png :exports results
+#+BEGIN_SRC dot :file ../images/microbiologie/autres.png :exports results
 graph {
 node [shape=box]
 "Autres bactéries" -- {"Atypiques" "Spirochètes" "Mycobactéries" "Autres"}
@@ -72,7 +72,7 @@ node [shape=box]
 #+END_SRC
 
 #+RESULTS:
-[[file:autres.png]]
+[[file:../images/microbiologie/autres.png]]
 
 
 ** Catalase
