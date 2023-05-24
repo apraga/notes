@@ -110,10 +110,18 @@ détecte les cytochrome de type c (pigments hémo-protéiques dans la plupart de
 :PROPERTIES:
 :ID:       4d393ab4-61bd-48ab-b095-03c6bc16b939
 :END:
-** Staphylococcus aureus
+** Staphylocoques
+*** Résistances
+- > 90% résistance aux pénicillines
+- S. aureus : 15-20% résistance méticilline
+- Macrolides-Lincosamide-Streptogramine-Kétolide (MLSK)  : modification de la cible surtout (modification/mutation ribosoe)
+  - résistant érythromycine : 30% SAMS, 90% SAMR, 65% coagulase négative
+- aminoside : inactivaton enzymatique = 5% SAMS mais 80-90% SARM
+- glycopeptide : résistant = exceptionnel, intermediate = 3-6% (mécanisme complexe)
+*** Staphylococcus aureus
 Cocci Gram+ en amas : aérobie +/- anaérobie. Immobiles. non capsulé, non sporulé
 
-*** Facteurs de virulence
+**** Facteurs de virulence
 Associé à la paroi:
 - *coagulase* liée = récepteur au fibrinogène, sur la paroi bactérienne -> diag (test d'agglutination)
 - protéine A: liaison aux immunoglobuline, protection contre la phagolytose
@@ -128,12 +136,12 @@ Excrété
   - exfoliatines -> érythrodermie bulleuses
   - entérotoxines thermostables -> TIAC
 
-*** Habitat
+**** Habitat
 - 30% porteur sain (transitoire ou non)
 - Transmission intra-humaine par les mains ou indirectevement (vêtements...)
 - Commensal : microbiote nasal, oropharyngé, digestif, cutané (aisselles)
 
-*** Clinique
+**** Clinique
 - Porte d'entrée = cutanée <-> site de portage/infection
 - Infection communautaires, associées aux soins
 - Infection toxiniques :
@@ -145,12 +153,12 @@ Excrété
   - cutanée superficielle (furoncle, impétigo, folliculite) ou profondre (abcèse, fasciite)
   - bactériémie, endocardite
   - infections profondes : ostéo-articulaire, pneumopathie, neuroméningées (abcès)
-*** Diagnostic
+**** Diagnostic
 - Culture : non exigeante
   - gélose sang 24h: *beta-hemolytique* (hémolyse total)
   - Chapman (mannitol + NaCl) : rouge -> jaune avec NaCl
   - catalase +, oxydase-, DNAse + (à la différece des tretop à coagulase négative)
-*** Sensibilité et résistance
+**** Sensibilité et résistance
 Résistance fréquent à l’hôpital
 - β-lactamines :
   - phénotype sauvage sensible
@@ -159,7 +167,7 @@ Résistance fréquent à l’hôpital
     -> vancomycine en 1ere intention
 - Aminoside : sauvage sensible, résistance acquise par inactivation enzymatique
 - Glycopeptide : sauvage sensible, phénotype gIA/hétéroGISA avec sensibilité diminusée, phénotype gRSA (résistance)
-** Staphylococcus saprophyticus
+*** Staphylococcus saprophyticus
 - Cocci gram + en amas, catalase positive, nitrate réductase négative
 - Urine :rose sur milieu chromogène mais identification spectromètre de masse/biochimiue
 - Sensbilité nature à la plupart des antibiotique anti-staph
@@ -185,6 +193,7 @@ Forte capacité à former des biofilms
 Faible perméabilité membranaire : résistance naturelle pénicillines, C1G et C2G +/- certaines C3G
 + Catalase positif - lactose négatif
 ** Streptocoques
+
 *** Classification
 - α-hémolytique : hémolyse partielle
   - viridans
@@ -195,6 +204,9 @@ Faible perméabilité membranaire : résistance naturelle pénicillines, C1G et 
    Infection materno-foetale ++ (note: l’antibioprophylaxie marche chez les nouveau-né mais seulement pour les infections avant 7 jours)
   - Groupe autres: D->H, K-T(Lancefield)
 - Non groupable
+*** Résistances
+- β-hémolytique: pas de résistance β-lactamine
+- S. pneumonia : 25% résistance acquise β-lactamine (sensibilité diminuée)
 *** Streptococcocus pyogenes
 Cocci gram+ en chaînettes, capsulé, non sporulé, immobile
 
@@ -244,11 +256,15 @@ Transmission goutelette, interhumaine
 - Rare : purpura fulminas, endocardite
 - Bactérimié, souvent à partir d’un foyer pulmonaire
 ** Entérobactéries
-Groupes selon la résistance
-1. Pas de β-lactamase : E. coli, Proteus mirabilis, Salmonella, Shigella
+*** Résistances et groupe
+Groupe selon la résistance *naturelle* β-lactamine
+1. aucune : E. coli, Proteus mirabilis, Salmonella, Shigella
 2. Pénicillinase à bas niveau : Klebsiella, Citrobacer koseri
 3. Céphalosporinase à bas niveau : Enterobacter, Serratia, Morganella, Providencia, Citrobacter freundii
-4. Yersinia
+4. Pénicillinase + céphalosporinase : Yersinia enterolitica
+5. β-lactamase à spectre étendu (BLSE): Kluyvera
+
+Résistance acquises
 *** Escherichia coli
 - Bacille gram négatif, mobile, oxydase négative, nitrase-réductase positive
 - Urine : rose sur milieu chromogène (β-glucoronidase positive)
@@ -277,6 +293,13 @@ Attention: en cas de résistance surajoutée, les aminosides sont inefficaces.
 - Endocardite
 - Bactériémie
 - Infection abdopelvienne
+**** Résistances
+- résistance naturelle céphalosporine
+- E. faecalis : pas résistance pénicilline A (contrairement à E. faecium)
+- E. faecium :
+  - multiréristance en émergence
+  - > 80% faecium résistance pénicillines A
+
 ** Neisseria meningitidis
 - Diplococque Gram - aérobie.
 - Très gragile. Hautement variable
@@ -286,6 +309,10 @@ Attention: en cas de résistance surajoutée, les aminosides sont inefficaces.
 *** Habitat
 réservoir 100% humaine. Transmission directement uniquement par goutelettes
 Portage pharyngé, avec rarement invasion (sang +/- LCS) -> seulement souches
+** Listeria monocytègene
+*** Résistance
+- résistance naturelle céphalosporine, clindamycine, fosfomycine
+
 * Culture
 :PROPERTIES:
 :ID:       c191b424-bbcd-4ead-a5ef-2057bd766b60
@@ -407,24 +434,17 @@ Donc :
 - glycopeptides inefficaces sur bactérie Gram négatif car elles ont une membrane externe qui ne laisse pas passer les grosses molécules
 - synergie \beta-lactamine - aminoside sur strepto et entérocoque : destruction de la paroi par les \beta-lactamine pour que l'aminoside accède au ribosome
 - seules les antibio pénétrant dans les cellules (macrolides, fluoroquinolones, rifampicine, cycline ) sont actives contre les bactéries "intracellulaires " (Chlamydia, Coxiella burnetti, Rickettsia, Legionella pneumophilia, Brucella meltiensi, Bartonella )
-
-Résistances :
-- naturelles
-  - Listeria monocytogene et entérocoques résistant C3G
-  - anaérobie résistant aminosides
-  - Gram négatig résistant glycopeptides
-  - Entérobactérie
-    - groupe 1 (E. coli, Proteus mirabilis) = sensible amox
-    - groupe 2 (Klebsiella) résistant amox mais sensible amox+acide clavulanique
-    - groupe 3 (entérobacter, Morganella, Serratia, Providencia): résistant amox, amox+acide clavulinaque, C1G et C2G (mais sensible C3G)
-- acquises :
-  - Streptococcus pneumoniae : sensibilité diminuée pénicilline G, résistant macrolide
-  - E. col : amox souvent
-  - Staphylocoques peut être résistant pénicilline M
-  - S . aureus :
-    - < 20% ont une modification de la cible des \beta-lactamine (protéine de liason à la pénicilline = PLP2a) -> résistance à toutes les \beta-lactamine = meti-R
-    - 90% résistance acquise à pénicilline G (sécrétion pénicilinase) mais restent sensiblie pénicilline M = méti-S
-  - entérobacteries = résistance \beta-lactamine par production de \beta-lactamase
+** Interprétation
+Entérobactéries
+- pénicillinase acquise :
+  - bas niveau = résistant Amoxicilline (pénicilline A) + Ticarcilline (carboxypénicilline), diminue pipéracilline
+  - haut niveau = résistant Pipéracilline (uréidopénicilline), diminue pipéracilline+tazobactam
+  - résistant aux inhibiteurs (TRI): résistant amox, ticar, pip, tazo + amoxicilline-Acide clavulanique et tircaline-acide clavulanique
+- céphalosporinase plasmidique (acquise)
+  - résistant amox, amox-acide clavulanique, C1G [céfalotine (CF)], C3G [céfixime (CFM), céfoxatime (CTX), ceftazidime (CAZ)]
+  - dimine aztréonam (ATM) [C3G], ticar, pipe, tazo
+  - sensibile C4G (céfépime = FEP), carbapénème (imipénème = IMP)
+- BLSE
 ** Aminosides
 Action = bactéridice, concentration dépendantes. Perturbe la synthèse des protéine (fixation sous unité 30s des ribosomes)
 Résistances
