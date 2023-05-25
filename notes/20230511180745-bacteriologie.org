@@ -12,8 +12,8 @@
 - positif si paroi épaisse de peptidoglycane-> coloration persiste
 - négative si paroi plus fine qui permet à l'éthanol de laver la coloration
 
-    Aérobies
-#+BEGIN_SRC dot :file ../images/microbiologie/aerobies.png :exports results
+  Aérobies
+#+BEGIN_SRC dot :file ../images/microbiologie/aerobies.png :exports none
 graph {
 splines=false;
 node [shape=box]
@@ -42,10 +42,6 @@ bacciMoins -- {
               }
 }
 #+END_SRC
-
-#+RESULTS:
-[[file:../images/microbiologie/aerobies.png]]
-
 
 #+BEGIN_SRC dot :file ../images/microbiologie/anaerobies.png :exports results
 graph {
