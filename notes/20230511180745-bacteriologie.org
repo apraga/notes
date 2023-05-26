@@ -43,7 +43,9 @@ bacciMoins -- {
 }
 #+END_SRC
 
-#+BEGIN_SRC dot :file ../images/microbiologie/anaerobies.png :exports results
+[[../images/microbiologie/aerobies.png]]
+
+#+BEGIN_SRC dot :file ../images/microbiologie/anaerobies.png :exports none
 graph {
 node [shape=box]
 "Anaérobies" -- {"Gram+" "Gram-"}
@@ -52,11 +54,10 @@ node [shape=box]
 }
 #+END_SRC
 
-#+RESULTS:
-[[file:../images/microbiologie/anaerobies.png]]
+[[../images/microbiologie/anaerobies.png]]
 
 
-#+BEGIN_SRC dot :file ../images/microbiologie/autres.png :exports results
+#+BEGIN_SRC dot :file ../images/microbiologie/autres.png :exports none
 graph {
 node [shape=box]
 "Autres bactéries" -- {"Atypiques" "Spirochètes" "Mycobactéries" "Autres"}
@@ -67,8 +68,7 @@ node [shape=box]
 }
 #+END_SRC
 
-#+RESULTS:
-[[file:../images/microbiologie/autres.png]]
+[[../images/microbiologie/autres.png]]
 
 
 ** Catalase
@@ -101,7 +101,7 @@ détecte les cytochrome de type c (pigments hémo-protéiques dans la plupart de
 
 ** Mobile :
 - cocci gram + : non (sauf Enterococcus casseliflavus, gallinarum; Vagococcus, Planococcus)
-- Baccile gram+ : Listeria (tournoyante) , Bacillus (ondulante)
+- Bacille gram+ : Listeria (tournoyante) , Bacillus (ondulante)
 - Bacille gram- :
   - Vibior, Aeromonas
   - Legionella
@@ -116,7 +116,7 @@ détecte les cytochrome de type c (pigments hémo-protéiques dans la plupart de
 - S. aureus : 15-20% résistance méticilline
 - Macrolides-Lincosamide-Streptogramine-Kétolide (MLSK)  : modification de la cible surtout (modification/mutation ribosoe)
   - résistant érythromycine : 30% SAMS, 90% SAMR, 65% coagulase négative
-- aminoside : inactivaton enzymatique = 5% SAMS mais 80-90% SARM
+- aminoside : inactivation enzymatique = 5% SAMS mais 80-90% SARM
 - glycopeptide : résistant = exceptionnel, intermediate = 3-6% (mécanisme complexe)
 *** Staphylococcus aureus
 Cocci Gram+ en amas : aérobie +/- anaérobie. Immobiles. non capsulé, non sporulé
