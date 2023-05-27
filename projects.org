@@ -2281,3 +2281,10 @@ Sur branche dev
 sur dev
 ** TODO Article nzbget sur wiki
 /Entered on/ [2022-10-22 Sat 17:31]
+** TODO Gentoo package diagrams-graphviz :gentoo:haskell:
+SCHEDULED: <2023-05-28 Sun>
+/Entered on/ [2023-05-27 Sat 22:28]
+
+* Haskell
+** TODO Bug report diagrams-grapphviz :haskell:
+Pas de label
