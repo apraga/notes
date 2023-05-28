@@ -1400,3 +1400,57 @@ CLOSED: [2022-10-20 Thu 23:05]
 :ARCHIVE_TODO: DONE
 :ARCHIVE_ITAGS: freebsd
 :END:
+
+* KILL Amsteriskm
+CLOSED: [2023-05-28 Sun 10:03]
+:PROPERTIES:
+:ARCHIVE_TIME: 2023-05-28 Sun 10:03
+:ARCHIVE_FILE: ~/roam/personal/projects.org
+:ARCHIVE_OLPATH: Projets personnels
+:ARCHIVE_CATEGORY: projects
+:ARCHIVE_TODO: KILL
+:END:
+** Objectif
+Plus courte distance entre 2 films
+** Données
+https://datasets.imdbws.com/
+Autres :  https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset
+Acteurs + crédits
+** Langage
+Chargement des donnése IMDB (title.principals.tsv): 4min en python, du killer le processus en haskell...
+Attention, prend toute la RAM
+
+** Outils
+Référence :
+https://medium.com/web-mining-is688-spring-2021/network-graphs-of-actors-based-on-popular-movies-in-common-69d30e7b5e07
+Faire le graphe + visualisation avec pandas + viscc + dash : https://towardsdatascience.com/visualizing-networks-in-python-d70f4cbeb259 (option 3)
+
+** Stratégie
+1ere version : noeud = acteur, arête = film en commun
+2ere version : noeud = film , arête = acteur en commun
+Plutôt la seconde version
+
+
+* KILL Mettre à jour juliastats
+CLOSED: [2023-05-28 Sun 10:04]
+:PROPERTIES:
+:ARCHIVE_TIME: 2023-05-28 Sun 10:04
+:ARCHIVE_FILE: ~/roam/personal/projects.org
+:ARCHIVE_OLPATH: Julia
+:ARCHIVE_CATEGORY: projects
+:ARCHIVE_TODO: KILL
+:ARCHIVE_ITAGS: julia
+:END:
+https://discourse.julialang.org/t/suggestion-for-homepage-of-https-juliastats-org/94948/2
+
+* Stockage
+:PROPERTIES:
+:ARCHIVE_TIME: 2023-05-28 Sun 10:04
+:ARCHIVE_FILE: ~/roam/personal/projects.org
+:ARCHIVE_OLPATH: Recherche/Mustard
+:ARCHIVE_CATEGORY: recherche
+:ARCHIVE_ITAGS: mustard
+:END:
+** DONE Accès scality au travail
+** KILL VPN pour Jehanne
+CLOSED: [2023-05-28 Sun 10:04]

@@ -23,27 +23,6 @@ La structure du  tableau est perdue dans tous les cas
 
 **** Parser
 Liste de parser : https://tomassetti.me/parsing-in-python/
-** TODO Amsteriskm
-*** Objectif
-Plus courte distance entre 2 films
-*** Données
-https://datasets.imdbws.com/
-Autres :  https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset
-Acteurs + crédits
-*** Langage
-Chargement des donnése IMDB (title.principals.tsv): 4min en python, du killer le processus en haskell...
-Attention, prend toute la RAM
-
-*** Outils
-Référence :
-https://medium.com/web-mining-is688-spring-2021/network-graphs-of-actors-based-on-popular-movies-in-common-69d30e7b5e07
-Faire le graphe + visualisation avec pandas + viscc + dash : https://towardsdatascience.com/visualizing-networks-in-python-d70f4cbeb259 (option 3)
-
-*** Stratégie
-1ere version : noeud = acteur, arête = film en commun
-2ere version : noeud = film , arête = acteur en commun
-Plutôt la seconde version
-
 * Learning Haskell :haskell:
 ** [#A] [[https://www.reddit.com/r/haskell/comments/npxfba/comment/h084wwa/?utm_source=share&utm_medium=web2x&context=3][Reddit suggestion]]]
 *** TODO Learn Foundational building blocks
@@ -134,8 +113,6 @@ Notamment Ollie Charles's 24 days of GHC Extensions,
 **** KILL Lire dialogue fin leçon 10
 CLOSED: [2022-12-03 Sat 12:34] SCHEDULED: <2022-07-30 Sat>
 * Julia :julia:
-** TODO Mettre à jour juliastats
-https://discourse.julialang.org/t/suggestion-for-homepage-of-https-juliastats-org/94948/2
 ** TODO XAM.jl: PR pour modification record :julia:
 SCHEDULED: <2023-05-28 Sun>
 /Entered on/ [2023-05-27 Sat 22:39]
@@ -320,6 +297,8 @@ CLOSED: [2022-12-04 Sun 22:13]
 CLOSED: [2023-03-20 lun. 14:29]
 ***** DONE Version validée par paul v0.2.7
 CLOSED: [2023-03-20 lun. 14:30]
+***** TODO Correction Hirsch + Vidau
+SCHEDULED: <2023-05-28 Sun>
 **** TODO Soumission
   List journaux acceptant case reports
   https://static1.squarespace.com/static/5db7b349364ff063a6c58ab8/t/6071fb065173800a11ccd0a2/1618082566620/Case+Report+Journals+2020.pdf
@@ -1680,7 +1659,8 @@ CLOSED: [2022-12-04 Sun 22:32]
 Voir avec Paul
 *** Stockage
 **** DONE Accès scality au travail
-**** WAIT VPN pour Jehanne
+**** KILL VPN pour Jehanne
+CLOSED: [2023-05-28 Sun 10:04]
 *** Notes
 - Sur phénotype mélanocytaire, il peut valoir le coup de faire de la CGH sur biopsie
   Inconvénient du panel : on passe à côté
@@ -2121,27 +2101,26 @@ Autres drives :
     alexis: https://drive.proton.me/urls/PQ5M6TKVRM#q8yulEV8T5WG
     papa : https://www.mailo.com/mailo/docs/docs.php?s=IaK9Ajz8kwQJXNPnhJofRuDwyrNSZVy4&dir=mqn0f3%2bozZXc%2bwh4DeXwhVTY1Zz4zci5rZ4XcNHRmX7wPT0d9WG%2b0g%3d%3d&ea_encode=0
 
-
-
-
 *** DONE Copier photos famille drive papa -> drive proton, drive yvain sur drive famille
 CLOSED: [2023-02-12 Sun 23:17]
 *** TODO Copier photos famille depuis drive yvain sur drive famille
 *** TODO Trier photos sur drive yvain
 ** TODO Héberger arbre généaloqiue
 SCHEDULED: <2023-04-14 Fri>
-** TODO Enterrement Mme Karl
+** DONE Enterrement Mme Karl
+CLOSED: [2023-05-28 Sun 10:02]
 *** DONE Commander bouquets
 CLOSED: [2023-04-13 Thu 09:11] SCHEDULED: <2023-04-12 Wed>
 *** DONE Message avec les bouquets
 CLOSED: [2023-04-13 Thu 09:11] SCHEDULED: <2023-04-13 Thu>
-*** TODO Remboursement [4/5]
-SCHEDULED: <2023-04-20 Thu>
+*** DONE Remboursement [5/5]
+CLOSED: [2023-05-28 Sun 10:02] SCHEDULED: <2023-04-20 Thu>
 **** DONE Aurélien
 CLOSED: [2023-04-22 Sat 15:27]
 **** DONE Élise
 CLOSED: [2023-04-22 Sat 15:27]
-**** TODO Yvain
+**** DONE Yvain
+CLOSED: [2023-05-28 Sun 10:02]
 **** DONE Papa
 CLOSED: [2023-04-22 Sat 15:27]
 **** DONE Thierry
@@ -2156,6 +2135,8 @@ CLOSED: [2023-05-06 Sat 09:06] SCHEDULED: <2023-05-03 Wed>
 /Entered on/ [2023-04-26 Wed 21:03]
 Demande envoyé <2023-04-26 Wed>
 Refusé
+** TODO Demander accès déchetteries Saône
+/Entered on/ [2023-05-28 Sun 10:02]
 * Nixpkgs :nix:
 ** DONE GATK
 CLOSED: [2023-05-06 Sat 08:51]
@@ -2253,7 +2234,7 @@ SCHEDULED: <2023-05-06 Sat>
 *** DONE Changer pneus avant
 CLOSED: [2022-09-11 Sun 22:05] SCHEDULED: <2022-09-03 Sat>
 Trop abimé pour prendre le risque, on changera les arrières plus tard
-*** TODO Changer plaquettes +/- disques
+*** HOLD Changer plaquettes +/- disques
 SCHEDULED: <2023-05-09 Tue>
 Écrou grippé ? Voir avec fils M. Chouffe à Gennes, chemin du vernois (voiture 607 bleue)
 *** TODO Changer courroie distribution
@@ -2261,8 +2242,9 @@ SCHEDULED: <2023-05-11 Thu>
 À faire au bout de 10ans, on attend l’an prochain
 
 *** TODO Contrôle technique
-**** TODO Prendre RV
-SCHEDULED: <2023-05-07 Sun>
+DEADLINE: <2023-06-01 Thu>
+**** DONE Prendre RV
+CLOSED: [2023-05-28 Sun 10:03] SCHEDULED: <2023-05-07 Sun>
 * Moto
 :PROPERTIES:
 :CATEGORY: moto
