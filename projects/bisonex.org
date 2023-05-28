@@ -5622,6 +5622,23 @@ bwa mem -t 24 /Work/Projects/bisonex/data/genome/GRCh38.p13/chr22/chr22.fna 6300
 rsync -avz meso:/Work/Users/apraga/bisonex/tests/bamscissors/smallref.bam mapped/
 #+end_src
 **** TODO Phase 3 : insertion SNV chromosome 22 sur BAM complet + test haplotypecaller
+NXF_OPTS=-D"user.name=${USER}" nextflow run workflows/runInserted.nf -profile standard,helios  --input="tests/bamscissors/63003856_chr22_{1,2}.fq.gz" -resume
+
+On vérifie le nombre de reads :
+cd work/13/3faf1c868bfe61d22da346319b27aa/
+samtools mpileup 63003856_chr22.bam -r NC_000022.11:42213078-42213078
+
+[mpileup] 1 samples in 1 input files
+NC_000022.11	42213078	N	18	GgGGgGGGgGGgGgGggg	bbZbbbbCbCC\Aa@bTb
+
+rsync -avz meso:/Work/Users/apraga/bisonex/work/8d/b76d9079cc59a5daaefa74653d2a9d/63003856_chr22.bam\* mapped
+
+ok
+
+Après haplotypecaller
+ rsync -avz meso:/Work/Users/apraga/bisonex/work/68/e50b99ecc879039086c4c1fc2f24d3/63003856_chr22.vcf.gz\* variantCalling
+
+ On retrouve bien le variant !
 *** Divers
 **** DONE Vérifier nombre de reads fastq - bam
 CLOSED: [2022-10-09 Sun 22:31]
