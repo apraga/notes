@@ -274,12 +274,16 @@ Sauvegarder session :
 (add-to-list 'tramp-default-proxies-alist '("\\`mydomain\\'"
 "\\`root\\'" "/sshx:user@%h:"))
 
-* Useful shortcuts:
+* Useful shortcuts (doom emacs)
   :PROPERTIES:
   :CUSTOM_ID: useful-shortcuts
+  :ID:       57421762-b8ef-46dd-9145-5152551b81c3
   :END:
-
+- SPC c d jump to definition
+- C-o to go back after jumping
 - C-x C-q in dired to edit the buffer as text <3
+
+* Useful shortcut (vanilla emacs )
 - C-x z to repeat last command, then z (like vim ".")
 
 Not so useful

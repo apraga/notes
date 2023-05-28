@@ -1,0 +1,35 @@
+:PROPERTIES:
+:ID:       c6e06bd3-6ecb-4c03-a2eb-05f4c8c77ce0
+:END:
+#+title: Norovirus
+#+filetags: personal medecine viro
+
+* Transmission
+- Féco-orale, vomissure, persone-personne (EHPAD+++), souillures, projection, aérosol (eau++)
+- Très infectieux
+- Contagion possible par sujet asymptomatique.
+* Épidémiologie
+- Souvent sous forme d'épidéime.
+- Surtout en hiver
+- Cause la pluséfréquente de gastro-entérite aigüe à tout âge  (90% des GEA virales aux Étati-Unis)
+- Problème de santé publique : infections nosocomiale, EHPAD
+- Le virus le plus fréquemmentd responsable de TIAC (eau souillée, personne porteuse) : 10-26% des cas
+
+  Attention: persistance excrétion virale semaine après la guérison
+* Physiopathologie
+Probablement réplication jejunum : atrophie villositaire -> malabsorption transitoire (altération système enzymatique des entérocyte)
+- nivation épithélium par lymphocytes T CD8+
+* Clinique
+- Bénin chez adulte/enfant bonne santé (très rarement déshydratation)
+- Plus problématiques dans certains pays (= aussi sévère que rotavirus)
+- Incubation 4-77heures
+- Nausée, vomissement, diarrhée, fièvre modérée douleur abdominale
+- Diarrée liquide sans mucus/sang/leucocyte
+- Infections chroniques parfois sévère chez l'immundodéprimé (perte de poids, déshydrataition...)
+* Diagnostic
+- test immuno-chromatographique: spécifique, peu sensible
+- standard = RT-PCR, RT-PCR en temps réels
+* Traitement, vaccination
+- Pas de traitement antiviral
+- Prévention = lavage des mains, désinfection surface, hygiène du voyage, hôpital = iidem
+- Pas de vaccin

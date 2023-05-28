@@ -1,0 +1,53 @@
+:PROPERTIES:
+:ID:       46dca88b-671f-4f23-a340-5dc564a48659
+:END:
+#+title: Antibiotiques
+#+filetags: personal medecine microbio
+* Antibiotiques
+** Généralités
+- Actifs sur les bactéries en phase de multiplications
+- Cibles
+  - inhibition synthèse de la paroi bactérienne = \beta-lactamine, glycopeptides, fosfomycine
+  - synthèse ADN bactérien : quinolone, sulfamide
+  - synthène ARN : rifampicine
+  - synthèse protéines bactérienne : aminoside, macrolides, cyclines
+
+Donc :
+- \beta-lactamine inefficaces sur les mycoplasme car pas de paroi !
+- glycopeptides inefficaces sur bactérie Gram négatif car elles ont une membrane externe qui ne laisse pas passer les grosses molécules
+- synergie \beta-lactamine - aminoside sur strepto et entérocoque : destruction de la paroi par les \beta-lactamine pour que l'aminoside accède au ribosome
+- seules les antibio pénétrant dans les cellules (macrolides, fluoroquinolones, rifampicine, cycline ) sont actives contre les bactéries "intracellulaires " (Chlamydia, Coxiella burnetti, Rickettsia, Legionella pneumophilia, Brucella meltiensi, Bartonella )
+** Interprétation
+Entérobactéries
+- pénicillinase acquise :
+  - bas niveau = résistant Amoxicilline (pénicilline A) + Ticarcilline (carboxypénicilline), diminue pipéracilline
+  - haut niveau = résistant Pipéracilline (uréidopénicilline), diminue pipéracilline+tazobactam
+  - résistant aux inhibiteurs (TRI): résistant amox, ticar, pip, tazo + amoxicilline-Acide clavulanique et tircaline-acide clavulanique
+- céphalosporinase plasmidique (acquise)
+  - résistant amox, amox-acide clavulanique, C1G [céfalotine (CF)], C3G [céfixime (CFM), céfoxatime (CTX), ceftazidime (CAZ)]
+  - dimine aztréonam (ATM) [C3G], ticar, pipe, tazo
+  - sensibile C4G (céfépime = FEP), carbapénème (imipénème = IMP)
+- BLSE
+** Aminosides
+Action = bactéridice, concentration dépendantes. Perturbe la synthèse des protéine (fixation sous unité 30s des ribosomes)
+Résistances
+- naturelle: anaérobie strictes et préférentielle (streptocoques, entérocoques) par défaut de pénnétration car le système de transport nécessite la force produite par les chaînes respiratoire aérobies
+  /NB: penicilline + amoniside passe car agit sur la paroi bactérienne/
+** Sulfamide
+Bactériostatique (inhibe croissance) mais en synérgie devient bactéricide
+Ex: sulfamethoxazole + trimethoprime (Bactrmie)
+
+Mécanisme : inhibe synthèse microbionne d'acide folique
+** Fluoroquinolone
+- 4 générations: initialement répartition extra-cellulaire -> large et homogène (intracellulaire) avec les dernières générations
+- Élimination rénale et bile
+- Effets indésriable nombreux : digestif, phototoxique, trouble nerveur, inhibe cytochrme P450 (! interactions)
+- Contre-indication : déficit G6PI, grossesse
+- Action : inhibe réplication et transcription ADN
+- Bactéricide, concentration dépendantes
+- Indication :
+  - quinolones = cystite aigùe simple non compliquée, récidivantes chez l'adulte
+  - 2e génération : infetions sévères à bacille Gram négatif
+  - 3e et 4e génération : sinusite aigüe bactériennes, exacerpbation pneumopathie communutaire, infection compliquée peau + tissus mous
+
+    Résistante : en augmentatino chez entérobactéries (E. coli, Klebsiella)
