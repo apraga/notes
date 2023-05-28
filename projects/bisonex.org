@@ -5195,7 +5195,14 @@ Attention: ne pas oublier l'option -n !!!
 time julia --project=.. insertVariant.jl
 scp 63003856_S135_chr22_{1,2}.fq.gz meso:/Work/Users/apraga/bisonex/tests/bamscissors/
 #+end_src
-
+**** TODO Implémenter les SNV avec VAF
+SCHEDULED: <2023-05-27 Sat>
+Stratégie :
+1. calculer la profondeur sur les positions
+2. créer un dictionnaire { nom du reads : position dataframe }
+3. itérer sur tous les reads et changer ceux marqués
+**** TODO Implémenter les indel avec VAF
+SCHEDULED: <2023-05-29 Mon>
 **** TODO Phase 1 : chr22, VAF=1
 ***** DONE 1 SNV  : ok !
 CLOSED: [2023-05-20 Sat 19:35] SCHEDULED: <2023-05-20 Sat>
@@ -5206,7 +5213,7 @@ Puis on lance le pipeline sur correct_1
 - [X] Variant visible dans IGV
 - [X] Variant visible après alignement
 - [X] Variant visible après appel de variant
-***** TODO Tous les SNV du chromosome
+***** TODO Tester SNV chromosome 22
 SCHEDULED: <2023-05-20 Sat>
 **** DONE PHase 2 : chr22, VAF variable: de nombreux reads sont perdus -> ok sur un SNV en alignant sur chromosome 22
 CLOSED: [2023-05-24 Wed 23:19]

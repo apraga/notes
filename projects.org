@@ -136,6 +136,9 @@ CLOSED: [2022-12-03 Sat 12:34] SCHEDULED: <2022-07-30 Sat>
 * Julia :julia:
 ** TODO Mettre à jour juliastats
 https://discourse.julialang.org/t/suggestion-for-homepage-of-https-juliastats-org/94948/2
+** TODO XAM.jl: PR pour modification record :julia:
+SCHEDULED: <2023-05-28 Sun>
+/Entered on/ [2023-05-27 Sat 22:39]
 * Internat
 :PROPERTIES:
 :CATEGORY: internat

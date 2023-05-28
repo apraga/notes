@@ -333,3 +333,6 @@ in /var/lib/bitlbee/$USER.xml
 
 * IRC
 Doom-emacs utilise circe, à démarrer avec ~=irc~ (et non circe)
+* Emacs et EDITOR
+EDITOR="emacsclient -c"
+Ne pas utiliser l'option -n
