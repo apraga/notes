@@ -6306,3 +6306,7 @@ Barre de traction
 - 4
 - 4
 - 4
+* <2023-05-29 Mon> Tricking
+Bkick : 20 sauts 1 pied
+Aerial : 10 entraineemt + 10 sur herbe
+5 tornado

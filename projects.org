@@ -153,6 +153,20 @@ CLOSED: [2023-05-29 Mon 15:35]
 Tronquée si > 1
 **** TODO Tests unitaires
 SCHEDULED: <2023-05-29 Mon>
+***** TODO NA12878: 1 gène sur chromosome 22
+root = "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/NA12878/Garvan_NA12878_HG001_HiSeq_Exome/"
+#+begin_src sh
+samtools view project.NIST_NIST7035_H7AP8ADXX_NA12878.bwa.markDuplicates.bam  chr22 -o project.NIST_NIST7035_H7AP8ADXX_NA12878_chr22.bam
+samtools view project.NIST_NIST7035_H7AP8ADXX_NA12878_chr22.bam chr22:19419700-19424000 -o NIST7035_H7AP8ADXX_NA12878_chr22_MRPL40_hg19.bam
+#+end_src
+***** WAIT Pull request formatspeciment
+https://github.com/BioJulia/FormatSpecimens.jl/pull/8
+***** DONE Formatspecimens
+CLOSED: [2023-05-29 Mon 23:03]
+****** DONE 1 read
+CLOSED: [2023-05-29 Mon 23:02]
+****** DONE VAF sur 1 exon
+CLOSED: [2023-05-29 Mon 23:03]
 *** TODO Implémenter les indel avec VAF :indel:
 SCHEDULED: <2023-05-29 Mon>
 *** TODO Soumission paquet
