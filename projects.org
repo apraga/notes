@@ -113,9 +113,49 @@ Notamment Ollie Charles's 24 days of GHC Extensions,
 **** KILL Lire dialogue fin leçon 10
 CLOSED: [2022-12-03 Sat 12:34] SCHEDULED: <2022-07-30 Sat>
 * Julia :julia:
-** TODO XAM.jl: PR pour modification record :julia:
-SCHEDULED: <2023-05-28 Sun>
+** KILL XAM.jl: PR pour modification record :julia:
+CLOSED: [2023-05-29 Mon 15:40] SCHEDULED: <2023-05-28 Sun>
 /Entered on/ [2023-05-27 Sat 22:39]
+** TODO XAMscissors.jl
+:PROPERTIES:
+:ID:       966a298c-948a-4694-a6f5-c326b1046a05
+:END:
+Modification de la séquence dans BAM.
+*Pas de mise à jour de CIGAR*
+On convertit en fastq et on lance le pipeline pour "corriger"
+
+
+#+begin_src sh
+cd /home/alex/code/bisonex/out/63003856/preprocessing/mapped
+samtools view 63003856_S135.bam NC_000022.11 -o 63003856_S135_chr22.bam
+cd /home/alex/recherche/bisonex/code/BamScissors.jl
+cp ~/code/bisonex/out/63003856/preprocessing/mapped/63003856_S135_chr22.bam .
+samtools index 63003856_chr22.bam
+#+end_src
+
+Le script va modifier le bam, le trier et générer le fastq. !!!
+Attention: ne pas oublier l'option -n !!!
+
+#+begin_src sh
+time julia --project=.. insertVariant.jl
+scp 63003856_S135_chr22_{1,2}.fq.gz meso:/Work/Users/apraga/bisonex/tests/bamscissors/
+#+end_src
+*** TODO Implémenter les SNV avec VAF :snv:
+SCHEDULED: <2023-06-05 Mon>
+Stratégie :
+1. calculer la profondeur sur les positions
+2. créer un dictionnaire { nom du reads : position dataframe }
+3. itérer sur tous les reads et changer ceux marqués
+**** DONE VAF = 1
+CLOSED: [2023-05-29 Mon 15:34]
+**** DONE VAF selon loi normale
+CLOSED: [2023-05-29 Mon 15:35]
+Tronquée si > 1
+**** TODO Tests unitaires
+SCHEDULED: <2023-05-29 Mon>
+*** TODO Implémenter les indel avec VAF :indel:
+SCHEDULED: <2023-05-29 Mon>
+*** TODO Soumission paquet
 * Internat
 :PROPERTIES:
 :CATEGORY: internat

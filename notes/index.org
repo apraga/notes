@@ -1,1 +1,9 @@
-[[file:20230511180745-bacteriologie.html][Bactériologie]]
+Bactériologie
+- [[./medecine/20230528225221-classification_bacteries.html][Classification bacteries]]
+- [[./medecine/20230528225531-bacteries.html][Bacteries]]
+- [[./medecine/20230528235213-maladies_infectieuses.html][Maladies infectieuses]]
+- [[./medecine/20230528235406-antibiotiques.html][Antibiotiques]]
+- [[./medecine/20230528235124-culture.html][Culture]]
+
+Virus
+- [[./medecine/20230528233600-norovirus.html][Norovirus]]

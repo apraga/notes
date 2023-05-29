@@ -39,13 +39,28 @@ main = hakyll $ do
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= relativizeUrls
 
-
-    match "notes/*bacteriologie.org" $ do
+    match ("notes/*microbio*.org" .||. "notes/medecine/202*.org") $ do
         route $ setExtension "html"
         compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/post.html"    postCtx
-            >>= loadAndApplyTemplate "templates/default.html" postCtx
+            -- >>= loadAndApplyTemplate "templates/post.html"    defaultContext
+            >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= relativizeUrls
+
+
+    -- Don't forget to set the path to temporary files
+    create ["notes/medecine.html"] $ do
+        route idRoute
+        compile $ do
+            notes <- loadAll "notes/medecine/*"
+            let notesCtx =
+                    listField "notes" defaultContext (return notes) `mappend`
+                    constField "title" "Notes"            `mappend`
+                    defaultContext
+
+            makeItem ""
+                >>= loadAndApplyTemplate "templates/notes.html" notesCtx
+                >>= loadAndApplyTemplate "templates/default.html" notesCtx
+                >>= relativizeUrls
 
 
     -- Don't forget to set the path to temporary files
@@ -77,21 +92,7 @@ main = hakyll $ do
                 >>= loadAndApplyTemplate "templates/default.html" indexCtx
                 >>= relativizeUrls
 
-    -- -- Don't forget to set the path to temporary files
-    -- match "genetique.html" $ do
-    --     route idRoute
-    --     compile $ do
-    --         posts <- loadAll "../genetique/*.org"
-    --         let indexCtx = listField "notes" defaultContext (return posts)
-    --               `mappend` defaultContext
-
-    --         getResourceBody
-    --             >>= applyAsTemplate indexCtx
-    --             >>= loadAndApplyTemplate "templates/default.html" indexCtx
-    --             >>= relativizeUrls
-
     match "templates/*" $ compile templateBodyCompiler
-
 
 postCtx :: Context String
 postCtx =

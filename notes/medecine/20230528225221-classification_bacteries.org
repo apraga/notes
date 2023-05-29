@@ -40,7 +40,7 @@ bacciMoins -- {
 }
 #+END_SRC
 
-[[../images/microbiologie/aerobies.png]]
+[[../../images/microbiologie/aerobies.png]]
 
 #+BEGIN_SRC dot :file ../images/microbiologie/anaerobies.png :exports none
 graph {
@@ -51,7 +51,7 @@ node [shape=box]
 }
 #+END_SRC
 
-[[../images/microbiologie/anaerobies.png]]
+[[../../images/microbiologie/anaerobies.png]]
 
 
 #+BEGIN_SRC dot :file ../images/microbiologie/autres.png :exports none
@@ -65,7 +65,7 @@ node [shape=box]
 }
 #+END_SRC
 
-[[../images/microbiologie/autres.png]]
+[[../../images/microbiologie/autres.png]]
 
 
 ** Catalase

@@ -83,3 +83,10 @@ Pour les pacquets Go
 https://wiki.gentoo.org/wiki/Writing_go_Ebuilds
 Il faut héberger une archive avec les dépendences. On peut faire un dépot Git avec juste une LICENSE et créer une "release" manuellement contenant cette archive.
 ** [[id:83b9193c-8bb2-413f-9371-fa2baf8b333a][Haskell package pour Gentoo]]
+* Erreurs
+** Missing keyword
+!!! All ebuilds that could satisfy "=dev-lang/julia-1.9.0" have been masked.
+!!! One of the following masked packages is required to complete your request:
+- dev-lang/julia-1.9.0::gentoo (masked by: missing keyword)
+
+Utiliser emerge --autounmask

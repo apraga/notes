@@ -16,7 +16,7 @@ main = shakeArgs shakeOptions{shakeFiles="_build"} $ do
 
     siteExe  %> \out -> do
       let src = "src/Main.hs"
-      need [src, "notes/20230511180745-bacteriologie.org"]
+      need [src, "notes/20230511180745-microbiologie.org"]
       cmd_ "ghc --make -o" [out] [src]
 
     -- Shake cannot use directories
