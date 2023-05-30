@@ -1,6 +1,8 @@
+:PROPERTIES:
+:ID:       a36141db-9bb2-48ff-8c48-f96bbc4aebf6
+:END:
 #+title: Gastro-entérites
-#+filetags: microbio
-
+#+filetags: personal medecine
 # -	Pour Norovirus et Rotavirus :
 # o	Epidémiologie/ transmission, durée d’incubation, physiopathologie, symptômes
 # -	Pour Adénovirus, Astrovirus
@@ -8,7 +10,6 @@
 # -	Modalités du diagnostic virologique des GEA virales
 # -	Stratégie des examens microbiologiques face à des cas groupés de GEA
 # -	Principales mesures d’hygiène permettant de lutter contre une épidémie de GEA
-
 Principale complication = déshydratation
 * Virale
 - Transmission : féco-orale direct (interhumaine)  ou indirecte (aliments, eaux, environnement)

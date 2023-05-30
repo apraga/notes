@@ -116,7 +116,7 @@ CLOSED: [2022-12-03 Sat 12:34] SCHEDULED: <2022-07-30 Sat>
 ** KILL XAM.jl: PR pour modification record :julia:
 CLOSED: [2023-05-29 Mon 15:40] SCHEDULED: <2023-05-28 Sun>
 /Entered on/ [2023-05-27 Sat 22:39]
-** TODO XAMscissors.jl
+** TODO XAMscissors.jl :xamscissors:
 :PROPERTIES:
 :ID:       966a298c-948a-4694-a6f5-c326b1046a05
 :END:
@@ -151,9 +151,10 @@ CLOSED: [2023-05-29 Mon 15:34]
 **** DONE VAF selon loi normale
 CLOSED: [2023-05-29 Mon 15:35]
 Tronquée si > 1
-**** TODO Tests unitaires
+**** WAIT Tests unitaires
 SCHEDULED: <2023-05-29 Mon>
-***** TODO NA12878: 1 gène sur chromosome 22
+***** DONE NA12878: 1 gène sur chromosome 22
+CLOSED: [2023-05-30 Tue 23:55]
 root = "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/NA12878/Garvan_NA12878_HG001_HiSeq_Exome/"
 #+begin_src sh
 samtools view project.NIST_NIST7035_H7AP8ADXX_NA12878.bwa.markDuplicates.bam  chr22 -o project.NIST_NIST7035_H7AP8ADXX_NA12878_chr22.bam
@@ -2292,7 +2293,7 @@ Trop abimé pour prendre le risque, on changera les arrières plus tard
 SCHEDULED: <2023-05-09 Tue>
 Écrou grippé ? Voir avec fils M. Chouffe à Gennes, chemin du vernois (voiture 607 bleue)
 *** TODO Changer courroie distribution
-SCHEDULED: <2023-05-11 Thu>
+SCHEDULED: <2023-07-30 Sun>
 À faire au bout de 10ans, on attend l’an prochain
 
 *** TODO Contrôle technique
