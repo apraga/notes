@@ -173,7 +173,7 @@ OK) まだ 3. 実は これから III. 1. もってくる+んです。2。帰っ
    :END:
 
 - 卒業(そつぎょう）
-- Xと遊び: jouer avec quelqu'un (ou un animal) Mais Xで遊び: jouer avec
+- X と遊び: jouer avec quelqu'un (ou un animal) Mais X で遊び: jouer avec
   un objet
 - メールをチェックする: vérifir ses mails
 - 化粧（けしょう）: se maquiller
@@ -195,7 +195,7 @@ OK) まだ 3. 実は これから III. 1. もってくる+んです。2。帰っ
 - ~てから: 2 sens
 
   - succession d'action, ex: 食べてから、飲んて、読んて (note: plus de
-    からaprès la première action)
+    から après la première action)
   - depuis ~, ex:
     日本に来てから、ずっと日本語の勉強をしています=j'étudie le japonais
     depuis que je suis arrivé au japon)
@@ -228,7 +228,7 @@ OK) まだ 3. 実は これから III. 1. もってくる+んです。2。帰っ
 - 受験」（じゅけん）: examen d'entrée à l'université
 - 高２のとき（こうに） : (abrégé) quand j'étais en 2ème année de lycée
   (senior high school)
-- Alexとよんでください: vous pouvez m'appeller Alex
+- Alex とよんでください: vous pouvez m'appeller Alex
 - 経済（けいざい）: économie (matière)\\
 
 #+BEGIN_HTML
@@ -236,7 +236,7 @@ OK) まだ 3. 実は これから III. 1. もってくる+んです。2。帰っ
 #+END_HTML
 
 - 二年後（ご）: 2 ans après
-- X前と後に半年ずつ : 6 mois (1/2 année) avant et 6 mois après X (ずつ =
+- X 前と後に半年ずつ : 6 mois (1/2 année) avant et 6 mois après X (ずつ =
   chacun)
 - 営業部（えいぎょうぶ）: le département des ventes d'une entreprise
 
@@ -305,7 +305,7 @@ OK) まだ 3. 実は これから III. 1. もってくる+んです。2。帰っ
 - 書く（かく）: écrire (un sms)
 - 過ごす（すごす）: passer (du temps) ex: クリスマス誰と過ごすの: avec
   qui vas-tu passer Noel ? ## Grammaire
-- Aとき、B: "quand" A, B (A = forme du dictionnaire) Si A est au passé,
+- A とき、B: "quand" A, B (A = forme du dictionnaire) Si A est au passé,
   A est "fini". Sinon. A est en cours Cela explique les différentes
   nuances :
 
@@ -370,7 +370,7 @@ OK) まだ 3. 実は これから III. 1. もってくる+んです。2。帰っ
    :END:
 
 - ～ と思います:je pense que X Verbe と思います na-ajectif + だ/ではない
-  と思います i-ajectif と思います Aは～と思っています: A pense que X
+  と思います i-ajectif と思います A は～と思っています: A pense que X
   (attention !)
 - いい -> よくない(négatif) NB: よかった(passé),　よくなかった (passé
   négatif)
@@ -422,7 +422,7 @@ bsoin お金を払うのをわすれました メール返事だすのをわれ�
   :CUSTOM_ID: leçon-10
   :END:
 
-ので = "donc". Comme からmais plus poli - -いので - nom/adjectif en
+ので = "donc". Comme から mais plus poli - -いので - nom/adjectif en
 na+なので On utilie la plain form ! - ありません->ない
 お金がないので、何も買いません - です->な - でした->だった
 雨だったので、どこにもでかけませんでした
@@ -466,12 +466,12 @@ Vocab surtout
 * <2022-04-10 Sun>  - 16. Leçon 11
 Discussion surtout
 ** Grammaire
-Xよう: "volitionel" = "faisons X"
+X よう: "volitionel" = "faisons X"
 - る de la forme du dictionnaire -> よう
   ex: 見るー＞見よう
 - pour les regular I : う-> おう
   飲むー＞飲もう
-Xようと思います: je pense faire X
+X ようと思います: je pense faire X
 ex:
 * <2022-04-24 Sun> - 17. Leçon 11
 ** Grammaire
@@ -518,30 +518,30 @@ nakerebanarimasen
 NB: -nasai = injonction (bossy !)
 * <2023-03-25 Sat>
 ** Vocabulaire
-雪は山の上に行かないとないですか = il faut aller en haut de la montagne pour avoir de la neighe (double négatiionidiomatic)
+- 雪は山の上に行かないとないですか = il faut aller en haut de la montagne pour avoir de la neighe (double négatiionidiomatic)
 
-夜勤j（やきん） = garde (tochaku = plutôt pour les gens de la sécurité...)
-能力（のうりょく） = capacité à faire qqc
-認める（みとめる） = reconnaître
-能力が認められれば色々な仕事をすることができます。
+- 夜勤 j（やきん） = garde (tochaku = plutôt pour les gens de la sécurité...)
+- 能力（のうりょく） = capacité à faire qqc
+- 認める（みとめる） = reconnaître
+- 能力が認められれば色々な仕事をすることができます。
 
-教わる = apprendre
-子供のような態度（たいど） = se comporter comme un enfant
-〜だと言われました = il a été dit que ...
-落ち着く = se calme
+- 教わる = apprendre
+- 子供のような態度（たいど） = se comporter comme un enfant
+- 〜だと言われました = il a été dit que ...
+- 落ち着く = se calme
 
 
-・びっくりします = être surpris
-・あんしんします = être soulagé
-・がっかりします = être décu
-・こまります = avoir des diffculté, être troublé
-・さびしい = se sentir seul
-・うれしい = être content
-・かなしい = être triste
-・はずかしい = être embarasssé
-・きもちがいい／わるい
-・ざんねん[な]. = regretter (une situation)
-・しんぱい[な]
+- びっくりします = être surpris
+- あんしんします = être soulagé
+- がっかりします = être décu
+- こまります = avoir des diffculté, être troublé
+- さびしい = se sentir seul
+- うれしい = être content
+- かなしい = être triste
+- はずかしい = être embarasssé
+- きもちがいい／わるい
+- ざんねん[な]. = regretter (une situation)
+- しんぱい[な]
 
 ** Grammaire
 -te vs -node
@@ -553,70 +553,97 @@ NB: -nasai = injonction (bossy !)
 These work with feeling+て (giving a reason) as it's followed by potential verbs.
 * <2023-04-02 Sun> Listening comprehension 「日本のおもしろい経験」
 ** Vocabulaire
-経験(けいけん) expérience
-特に(とくに) particulièrement
-珍しい(めずらしい) rare
-不味い(まずい) ayant mauvais goût (nourriture)
-何でも : totu
-ニヤニヤする : sourire, grimacer
-不安な(ふあんな) : se faire du souci ("non" + "sécurité")
-体にいい(からだ) : être bon pour la santé
-一生に一度(いっしょうにいちど) : une foi dans sa vie
-もう~ない : après tout
-焼き(やき) : grillé (ex: yakiniku)
-興味(きょうみ) : intérêt
-野菜(やさい) : légume
-ムール貝(がい) : moules
-城(しろ) :  château
-蜘蛛(くも ) : araignée
+- 経験(けいけん) expérience
+- 特に(とくに) particulièrement
+- 珍しい(めずらしい) rare
+- 不味い(まずい) ayant mauvais goût (nourriture)
+- 何でも : totu
+- ニヤニヤする : sourire, grimacer
+- 不安な(ふあんな) : se faire du souci ("non" + "sécurité")
+- 体にいい(からだ) : être bon pour la santé
+- 一生に一度(いっしょうにいちど) : une foi dans sa vie
+- もう~ない : après tout
+- 焼き(やき) : grillé (ex: yakiniku)
+- 興味(きょうみ) : intérêt
+- 野菜(やさい) : légume
+- ムール貝(がい) : moules
+- 城(しろ) :  château
+- 蜘蛛(くも ) : araignée
 * <2023-04-11 Tue> Listening comprehension 「満員電車」
 
 Travail sur comprehension
 
-満員電車（まんいんでんしゃ）: un train bondé (NB: bondé peut s’utiliser pour d’autres type de transport)
-第一ン章（だいいちいんしょう）: première impression
-込む（こむ） : être bondé
-空港（くうこう）: avion
-医学生物学 (いがくせいぶつがく) : biologie médicale
-民間研究所(でよかったです) laboratoir privé
-救急医療室(きゅうきゅういりょうしつ) : urgence
-単語(たんご ) : vocabulaire
-昼(ひる ) : midi
-ある日(ひ) : un jour
-〜に限らず（かぎらず）: ne pas se limiter à (forme en -zu)
-国民( こくみん) : citoyen
- 引退 (いんたい): retraite
-選(えらぶ) : choisir
-いきなり
-〜みたいです
+- 満員電車（まんいんでんしゃ）: un train bondé (NB: bondé peut s’utiliser pour d’autres type de transport)
+- 第一ン章（だいいちいんしょう）: première impression
+- 込む（こむ） : être bondé
+- 空港（くうこう）: avion
+- 医学生物学 (いがくせいぶつがく) : biologie médicale
+- 民間研究所(でよかったです) laboratoir privé
+- 救急医療室(きゅうきゅういりょうしつ) : urgence
+- 単語(たんご ) : vocabulaire
+- 昼(ひる ) : midi
+- ある日(ひ) : un jour
+- 〜に限らず（かぎらず）: ne pas se limiter à (forme en -zu)
+- 国民( こくみん) : citoyen
+-  引退 (いんたい): retraite
+- 選(えらぶ) : choisir
+- いきなり
+- 〜みたいです
 
 Note:
 「いつも同じ電車に乗ります」= Always, I ride on the same train. 「いつもと同じ電車に乗ります」= I ride on a train that I always use/ride
 le premier = plus l’accent sur "toujours"
 * <2023-04-22 Sat>
 ** Vocabulaire
-泊まる(と) : rester (à un hôtel)
-翻訳（ほんやく）: traduction
-時給（じきゅう）: salaire horaire
-いいアイデアです: une bonne idée
- 編み物(あみもの) : couture
- 衛生検査所（えいせいけんさじょ）: laboratoire de biologie
- ベルトコンベアう: tapis roulant
-看護師(かんごし): infirmière
-コンサルタント: consultant
+- 泊まる(と) : rester (à un hôtel)
+- 翻訳（ほんやく）: traduction
+- 時給（じきゅう）: salaire horaire
+- いいアイデアです: une bonne idée
+- 編み物(あみもの) : couture
+- 衛生検査所（えいせいけんさじょ）: laboratoire de biologie
+- ベルトコンベアう: tapis roulant
+- 看護師(かんごし): infirmière
+- コンサルタント: consultant
 
-医者は貧血の検査をするためサンプルを分析した  : le doctor a fait une analyse de sang sur un échantillon pour anémie
+- 医者は貧血の検査をするためサンプルを分析した  : le doctor a fait une analyse de sang sur un échantillon pour anémie
 いしゃ　ひんけつ　けんさ　ぶんせき
 ** Grammaire
 Voir  [[*Grammaire : questions indirecte][Grammaire : questions indirecte]]
 Prochaine leçon : travailler questions indirecte
 * <2023-05-06 Sat>
 ** Vocabulaire
-助けられるかどうかわかりませんでした : je ne sais pas si je peux aider (attention à la possibilét)
-審査員（しんさいん）: jury (ex: de thèse)
-方向( ほうこう): direction
-質問というより、会話のようでした: c’était plus une conversation que des questions
-国民の休日( こくみんきゅうじつ): jour férié national
-修理（しゅうり）: réparer
-おの : hache
-刃（は）: lame
+- 助けられるかどうかわかりませんでした : je ne sais pas si je peux aider (attention à la possibilét)
+- 審査員（しんさいん）: jury (ex: de thèse)
+- 方向( ほうこう): direction
+- 質問というより、会話のようでした: c’était plus une conversation que des questions
+- 国民の休日( こくみんきゅうじつ): jour férié national
+- 修理（しゅうり）: réparer
+- おの : hache
+- 刃（は）: lame
+* <2023-05-29 Mon>
+** Vocabulaire
+Microbiologie
+- 半日(はんにち） : une demie journée
+- 一日（いちにち） : un jour
+- 一日中（じゅう）toute la journée
+- 二週間に一度の日曜日: le samedi d'il y a 2 semaines
+  (にじゅうかん)　（いちど）　（にちようび）
+- 選ぶ（えらぶ）choisir
+- 人権（じんけん）droit de l'homme
+- 細菌（さいきん）bactérie
+- 結果（けっか）résultat, conséquence
+- カビ moisissure
+- 生ぬるい（な）tiède
+- 細菌(さいきん) を 培養します(ばいようします) : les bactéries poussent
+- 決める（き）décider
+
+ 大阪（おおさか）に残って（のこって）好きな仕事を続けましょう（つづ）: reste à Osaka et continue à faire le travail que tu aimes
+
+ - 悩み（なやみ） souci
+ - アドバイス: conseil (donner) != 相談（そうだん）= conseil (demander)
+ - 年上（としうえ）: être plus agé
+ - 付き合う（つきあう）: sortir avec
+ - 愛す（あいす） aimer
+ - どうしたらいい: que faire
+ - 急に（きゅうに）: soudainement
+ - 場合（ばあい）: cas, situtation

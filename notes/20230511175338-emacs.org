@@ -87,18 +87,11 @@ we should explain with gmail
 Mbsync is really faster when fetching mails the first time.Afterwards,
 I'm not sure the gain is worth it
 
-* Post config en jap sur emacs
+* Écrire en japonais
   :PROPERTIES:
   :CUSTOM_ID: post-config-en-jap-sur-emacs
   :END:
-
-Archlinux :
-
-1. installer le package "mozc" depuis emacs installer emacs-mozc aussi
-   en activant le flag 'emacs_{mozc} = "yes"' (sinon le "helper" n'est
-   pas trouvé)
-
-Update : mozc is too slow in doom emacs => activate japanese instead
+mozc is too slow in doom emacs => activate japanese instead
 
 * Torrents with emacs
   :PROPERTIES:

@@ -33,7 +33,7 @@ main = hakyll $ do
             >>= loadAndApplyTemplate "templates/default.html" postCtx
             >>= relativizeUrls
 
-    match "notes/index.org" $ do
+    match ("notes/index.org" .||. "notes/*japonais*.org") $ do
         route $ setExtension "html"
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
@@ -45,7 +45,6 @@ main = hakyll $ do
             -- >>= loadAndApplyTemplate "templates/post.html"    defaultContext
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= relativizeUrls
-
 
     -- Don't forget to set the path to temporary files
     create ["notes/medecine.html"] $ do

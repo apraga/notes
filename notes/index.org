@@ -1,3 +1,4 @@
+* Biologie
 Bactériologie
 - [[./medecine/20230528225221-classification_bacteries.html][Classification bacteries]]
 - [[./medecine/20230528225531-bacteries.html][Bacteries]]
@@ -7,3 +8,5 @@ Bactériologie
 
 Virus
 - [[./medecine/20230528233600-norovirus.html][Norovirus]]
+* Autres
+[[./20230511181321-japonais.html][Japonais]]
