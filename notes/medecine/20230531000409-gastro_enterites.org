@@ -3,6 +3,7 @@
 :END:
 #+title: Gastro-entérites
 #+filetags: personal medecine
+
 # -	Pour Norovirus et Rotavirus :
 # o	Epidémiologie/ transmission, durée d’incubation, physiopathologie, symptômes
 # -	Pour Adénovirus, Astrovirus
@@ -16,7 +17,7 @@ Principale complication = déshydratation
 - Faible nombre de particules ingéres pour entraîner une GEA
 - Virus non enveloppé résistant à l’acadidé gastrique
 - toutes tranches d’aĝe mais le plus souvent enfant en bas âge
-- multilpication dans les entérocytes de l’intesting grêle
+- multiplication dans les entérocytes de l’intesting grêle
 - infections le plus souvent courte avec diarrhé, douleur abdo, vomissement
 - greffés/transplanté: peut devenir presistant/chronique
 - incubation courte, excrétion virale prolongee
@@ -26,6 +27,8 @@ Principale complication = déshydratation
 - Réservoir humain (animaux pour rotavirus spécifiques)
 - Transmission : féco-orale, interhumaine, par les mains ou objets contaminés par des feces/vomissure.
   NB: perte de son infectiosité en milieu humide
+*** Structure
+Capside icosahédrique, non enveloppé, ARN double brin
 *** Épidémiologie
 - groupe A:
   - France, enfant < 5 ans  140 000 consultations, 18 000 hospitalisaiton, décès exceptionnel
@@ -35,9 +38,9 @@ Principale complication = déshydratation
 - adulte/enfant plus gế : réinfetion commune mais clinique très modérée. Surtout un vecteur de transmission
 
 *** Physiopathologie
- Lésions des entérocytes matures de l’intesting grêle -> 3 mécanismes
-- diarhée sécrétoire (sécrétion eau, électrolytique)
-- diarrhée de malabsorption et osmotique (lyse cellulaire , perturbation des fonctions enzymatique)
+ Lésions des entérocytes matures de l’intesting grêle (multiplication du virus) : dérégulation puis destruction. Mécanismes :
+ 1. sécrétion eau, électrolytique ->  diarhée sécrétoire
+ 2. lyse cellulaire , perturbation des fonctions enzymatique -> diarrhée de malabsorption et osmotique (résidus glucidique dans l’intestin)
 *** Clinique
 - variable : asymptomatique - diarrhées malabsorption/sécrétoire
 - incubation < 48h
@@ -51,49 +54,66 @@ Principale complication = déshydratation
 *** Diagnostic
 - Test immo-chromatographique
 - Test immuno-enzymatique (ELISA) = détection antigène dans les selles (anticorps monoclonaux)
-:PROPERTIES:
-:ID:       c6e06bd3-6ecb-4c03-a2eb-05f4c8c77ce0
-:END:
-#+title: Norovirus
-#+filetags: personal medecine viro
+- RT-PCR, RT-qPCR
 ** Norovirus
+*** Structure
+Capside, non enveloppé, *simple brin* (\approx ARN messager)s
 *** Transmission
 - Féco-orale, vomissure, persone-personne (EHPAD+++), souillures, projection, aérosol (eau++)
 - Très infectieux
 - Contagion possible par sujet asymptomatique.
 *** Épidémiologie
-- Souvent sous forme d'épidéime.
+- Souvent sous forme d'épidémie.
 - Surtout en hiver
 - *> 85% des épidémies de GEA non bactériennes quelque soit l’âge*
 - Problème de santé publique : infections nosocomiale, EHPAD
-- Le virus le plus fréquemmentd responsable de TIAC (eau souillée, personne porteuse) : 10-26% des cas
+- *Le virus le plus fréquemment responsable de TIAC* (eau souillée, personne porteuse) : 10-26% des cas
 
   Attention: persistance excrétion virale semaine après la guérison
-Probablement réplication jejunum : atrophie villositaire -> malabsorption transitoire (altération système enzymatique des entérocyte)
 *** Physiopathologie
-- nivation épithélium par lymphocytes T CD8+
+- Probablement réplication jejunum : atrophie villositaire -> malabsorption transitoire (altération système enzymatique des entérocyte)
+- invasion épithélium par lymphocytes T CD8+
 *** Clinique
 - Bénin chez adulte/enfant bonne santé (très rarement déshydratation)
 - Plus problématiques dans certains pays (= aussi sévère que rotavirus)
 - Incubation 4-77heures
 - Nausée, vomissement, diarrhée, fièvre modérée douleur abdominale
 - Diarrée liquide sans mucus/sang/leucocyte
+- mortel chez les personnes fragiles (nouveau-né, greffé, immunodéprimé)
 - Infections chroniques parfois sévère chez l'immundodéprimé (perte de poids, déshydrataition...)
 *** Diagnostic
 - test immuno-chromatographique: spécifique, peu sensible
 - standard = RT-PCR, RT-PCR en temps réels
 *** Traitement, vaccination
 - Pas de traitement antiviral
-- Prévention = lavage des mains, désinfection surface, hygiène du voyage, hôpital = iidem
+- Prévention = lavage des mains, désinfection surface, hygiène du voyage, hôpital = idem
 - Pas de vaccin
 
 ** Adénovirus
+- Transmission féco-orale, *respiratoire*
+- Plutôt communautés, possiblement nosocomiale
+- Endémie avec pics (hivers, printemps)
+*** Structure
+Capside, non enveloppé, double brin
 *** Épidémio
 - toute l’année (épidémique ou sporadique)
-- *3-6% GEA infectieuses du nourission*
+- *3-6% GEA infectieuses du nourrisson*
+*** Physiopatho
+- Largement répandu dans la population mais pas d’immunité
+- Lyse cellule
+*** Clinique
+- Immunocompétent : *oculaire* (conjonctivite, kérato-conjoctivite), *respiratoire* (ppharyngite, bronchite, pneumotahie), *digestif* (gastro)
+- Immunodéprimé : dissiméniation (pneumonie, méningoencéphalite, héptatie) ! potentiellement mortel !
+*** Diagnostic
+- Formes graves chez l’immunocompétent, dépistage chez immunodéprimé
+- PCR quantitative/qualitative, test rapide antigénique
+*** Traitement
+Cifodovir = IV, nombreux effets indésirable
+*** Prophylaxie
+
 ** Astrovirus
 *** Épidémio
-- épidémies en ivoers, surtout nourrisson
+- épidémies en hiver, surtout nourrisson
 - 1-4% GEA enfant et adulte
 *** Physiopatho
 Entérocytes matures , sommets des villosités
@@ -109,3 +129,8 @@ RT-qPCR
 - immunodétection ou PCR temps réel -> noro, rota, adéno, sapovirus, adénovirus
 - Origine alimentaire/hydrique = norovirus le plus souvent -> recherche norovirus
 ** Principales mesures d’hygiène permettant de lutter contre une épidémie de GEA
+Port de gant, lavage des mains, décontamination des surface
+- Désinfection des surfaces contaminées (rotavirus)
+- norovirus :
+  - règle d’hygiène en voyage
+  - lavage main savon + hydroalcoolique, nettoyage des locaus, prélèvement régulé, isolement des patients à risque
