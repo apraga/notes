@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       606cfb9e-0210-46eb-abcb-c03ef5522464
+:END:
+#+title: Julia
+#+filetags: personal julia
+
+* Tester un paquet localement
+#+begin_src
+$ julia
+julia> ]
+(@v1.9) pkg> develop /home/alex/code/XAMScissors.jl
+#+end_src
+Puis il suffit d'utiliser le paquet. En cas de changement, la precompilation sera refait à chaque fois
+#+begin_src
+julia> using XAMScissors
+#+end_src

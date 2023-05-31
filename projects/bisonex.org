@@ -5187,7 +5187,7 @@ Puis on lance le pipeline sur correct_1
 - [X] Variant visible après appel de variant
 ****** KILL Tester SNV chromosome 22
 CLOSED: [2023-05-29 Mon 15:36] SCHEDULED: <2023-05-20 Sat>
-***** DONE PHase 2 : chr22, VAF variable
+***** TODO PHase 2 : chr22, VAF variable
 ****** DONE de nombreux reads sont perdus -> ok sur un SNV en alignant sur chromosome 22
 CLOSED: [2023-05-29 Mon 15:38]
 Problème dansr le BAM car sans les insertion
@@ -5597,6 +5597,49 @@ rsync -avz meso:/Work/Users/apraga/bisonex/tests/bamscissors/smallref.bam mapped
 ****** DONE Test haplotypecaller 1 variant
 CLOSED: [2023-05-29 Mon 15:38]
 ****** DONE Test haplotypecaller tous les variants
+****** TODO Comprendre pourquoi la répartiton ne suit pas la loi normale
+Certains hétérozygote soint à 0.01 ou 1...
+******* DONE augmenter le nombre d'échantillions: idem
+CLOSED: [2023-05-31 Wed 22:24]
+******* TODO Vérifier le nombre de reads marqué vs édité
+******* DONE vérifier que 100 appel à rand(d, 1)[1] est semblable à un appel de rand(d, 100)
+CLOSED: [2023-05-31 Wed 22:24]
+
+julia> df = vcat(DataFrame(:y => z, :type => "z"), DataFrame(:y => y, :type => "y"));
+julia> y = [rand(d, 1)[1] for x in 1:1000];
+julia> z = rand(d,1000);
+julia> df = vcat(DataFrame(:y => z, :type => "z"), DataFrame(:y => y, :type => "y"));
+ draw(data(df)*histogram(bins=100)*mapping(:y, color=:type,dodge=:type))
+****** TODO Refaire le test avec la nouvelle version
+Mésocentre
+#+begin_src sh
+cd /Work/Users/apraga/bisonex/out/63003856_S135_R/preprocessing/mapped
+samtools view 63003856_S135_R.bam NC_000022.11 -o 63003856_S135_R_chr22.bam
+#+end_src
+
+Génération locale du fichier
+#+begin_src sh :dir /home/alex/roam/recherche/bisonex/code/xamscissors
+~/.local/julia-1.9.0/bin/julia --project=.. snvs.jl
+rsync -avz meso:/Work/Users/apraga/bisonex/out/63003856_S135_R/preprocessing/mapped/63003856_S135_R_chr22.bam .
+samtools index 63003856_S135_R_chr22.bam
+#+end_src
+
+#+RESULTS:
+| receiving | incremental | file  | list        |         |       |              |           |
+|           |             |       |             |         |       |              |           |
+| sent      | 20          | bytes | received    |      79 | bytes |         66.0 | bytes/sec |
+| total     | size        | is    | 143,162,969 | speedup | is    | 1,446,090.60 |           |
+
+On génère les données
+#+begin_src julia
+using XAMScissors
+
+insertSNV("./63003856_S135_R_chr22.bam", "snvs_chr22.csv", "out")
+#+end_src
+Puis
+#+begin_src sh
+~/.local/julia-1.9.0/bin/julia --project=.. xamscissors.jl
+#+end_src
 ***** TODO PHase 3 : tous les SNV
 **** TODO Test Indel
 *** Divers
