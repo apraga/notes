@@ -5597,11 +5597,13 @@ rsync -avz meso:/Work/Users/apraga/bisonex/tests/bamscissors/smallref.bam mapped
 ****** DONE Test haplotypecaller 1 variant
 CLOSED: [2023-05-29 Mon 15:38]
 ****** DONE Test haplotypecaller tous les variants
-****** TODO Comprendre pourquoi la répartiton ne suit pas la loi normale
+****** DONE Comprendre pourquoi la répartiton ne suit pas la loi normale
+CLOSED: [2023-06-01 Thu 21:44]
 Certains hétérozygote soint à 0.01 ou 1...
 ******* DONE augmenter le nombre d'échantillions: idem
 CLOSED: [2023-05-31 Wed 22:24]
-******* TODO Vérifier le nombre de reads marqué vs édité
+******* DONE Vérifier le nombre de reads marqué vs édité
+CLOSED: [2023-06-01 Thu 21:44]
 ******* DONE vérifier que 100 appel à rand(d, 1)[1] est semblable à un appel de rand(d, 100)
 CLOSED: [2023-05-31 Wed 22:24]
 
@@ -5611,6 +5613,8 @@ julia> z = rand(d,1000);
 julia> df = vcat(DataFrame(:y => z, :type => "z"), DataFrame(:y => y, :type => "y"));
  draw(data(df)*histogram(bins=100)*mapping(:y, color=:type,dodge=:type))
 ****** TODO Refaire le test avec la nouvelle version
+******* DONE Localement
+CLOSED: [2023-06-02 Fri 23:40]
 Mésocentre
 #+begin_src sh
 cd /Work/Users/apraga/bisonex/out/63003856_S135_R/preprocessing/mapped
@@ -5640,6 +5644,34 @@ Puis
 #+begin_src sh
 ~/.local/julia-1.9.0/bin/julia --project=.. xamscissors.jl
 #+end_src
+******** DONE Améliorer les performances
+CLOSED: [2023-06-02 Fri 23:39]
+#+begin_src julia
+@time include("xamscissors.jl")
+#+end_src
+
+430s pour chromosome 22. Majorité dans l'édition de reads:
+********* DONE Inserér tous les variants d'un reads d'un coup
+CLOSED: [2023-06-01 Thu 23:09]
+Ne change rien
+********* DONE Test avec -t4: idem
+CLOSED: [2023-06-01 Thu 23:17]
+********* DONE Test mésocentre : idem
+CLOSED: [2023-06-01 Thu 23:40]
+348s
+********* Changer la structure de données des
+Dataframe -> dict = les performances horribles ont disparuse
+******* TODO Mesocentre
+
+#+begin_src
+cp xamscissors.jl snv*.csv meso:/Work/Users/apraga/bisonex/tests/xamscissors/
+
+ssh meso
+cd /Work/Users/apraga/bisonex/tests/xamscissors
+cp /Work/Users/apraga/bisonex/out/63003856_S135_R/preprocessing/mapped/*chr22.bam .
+samtools index 63003856_S135_R_chr22.bam
+#+end_src
+
 ***** TODO PHase 3 : tous les SNV
 **** TODO Test Indel
 *** Divers
