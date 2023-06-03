@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       6ffe3a57-b7b8-4334-8d49-f4586d2943ae
+:END:
+#+title: Sqlite3
+#+filetags: personal sql
+
+Examiner les tables et lister l'une d'entre elleS
+
+#+begin_src sql
+sqlite3 test.db
+sqlite> .tables
+sqlite> .schema files
+sqlite> select * from files;
+#+end_src
