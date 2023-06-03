@@ -1,10 +1,10 @@
 * Biologie
 Bactériologie
-- [[./medecine/20230528225221-classification_bacteries.html][Classification bacteries]]
-- [[./medecine/20230528225531-bacteries.html][Bacteries]]
-- [[./medecine/20230528235213-maladies_infectieuses.html][Maladies infectieuses]]
-- [[./medecine/20230528235406-antibiotiques.html][Antibiotiques]]
-- [[./medecine/20230528235124-culture.html][Culture]]
+- [[id:6b2bf94d-9539-4a64-b15b-9511aa90772c][Classification bactéries]]
+- [[id:9160ba80-117b-4434-acc9-13676a534da0][Bactéries]]
+- [[id:00e9454a-9a71-4fbd-bfde-0fdf323bce15][Maladies infectieuses]]
+- [[id:46dca88b-671f-4f23-a340-5dc564a48659][Antibiotiques]]
+- [[id:a8ad4c3b-9f08-4878-8d9d-febddae20069][Culture]]
 
 Virus
 - [[./medecine/20230528233600-norovirus.html][Norovirus]]
