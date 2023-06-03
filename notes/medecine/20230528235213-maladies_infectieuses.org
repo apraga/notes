@@ -4,5 +4,5 @@
 #+title: Maladies infectieuses
 #+filetags: personal medecine microbio
 * Maladies infectieuses
-- [[./20230531000449-infections_urinaires.html][Infections urinaires]]
-- [[./20230531000409-gastro_enterites.html][Gastro-entérites]]
+- [[id:9347af68-14c8-4bc0-b986-9dc4da51c13d][Infections urinaires]]
+- [[id:a36141db-9bb2-48ff-8c48-f96bbc4aebf6][Gastro-entérites]]

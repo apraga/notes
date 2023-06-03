@@ -3,11 +3,9 @@ import  Hakyll
 
 --------------------------------------------------------------------------------
 -- Important note :
--- Hakyll does not manage org metadata. We follow @nasyxx hack mentioned here
--- https://github.com/jaspervdj/hakyll/issues/700
--- with a slight modification in cleanRouteFromTemp
--- The idea is to generate in _temp the file with YAML metada on top on org metadat
--- Then a second pass is needed to generate actual HTML
+-- Notes are in org-roam so managed outside hakelly because
+-- 1. Hakyll does not manage org metadata.
+-- 2. we have a custom filter to correct org-roam internal link
 --------------------------------------------------------------------------------
 
 main :: IO ()
@@ -32,35 +30,6 @@ main = hakyll $ do
             >>= loadAndApplyTemplate "templates/post.html"    postCtx
             >>= loadAndApplyTemplate "templates/default.html" postCtx
             >>= relativizeUrls
-
-    match ("notes/index.org" .||. "notes/*japonais*.org") $ do
-        route $ setExtension "html"
-        compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/default.html" defaultContext
-            >>= relativizeUrls
-
-    match ("notes/*microbio*.org" .||. "notes/medecine/202*.org") $ do
-        route $ setExtension "html"
-        compile $ pandocCompiler
-            -- >>= loadAndApplyTemplate "templates/post.html"    defaultContext
-            >>= loadAndApplyTemplate "templates/default.html" defaultContext
-            >>= relativizeUrls
-
-    -- Don't forget to set the path to temporary files
-    create ["notes/medecine.html"] $ do
-        route idRoute
-        compile $ do
-            notes <- loadAll "notes/medecine/*"
-            let notesCtx =
-                    listField "notes" defaultContext (return notes) `mappend`
-                    constField "title" "Notes"            `mappend`
-                    defaultContext
-
-            makeItem ""
-                >>= loadAndApplyTemplate "templates/notes.html" notesCtx
-                >>= loadAndApplyTemplate "templates/default.html" notesCtx
-                >>= relativizeUrls
-
 
     -- Don't forget to set the path to temporary files
     create ["archive.html"] $ do

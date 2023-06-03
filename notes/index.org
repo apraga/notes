@@ -6,8 +6,5 @@ Bactériologie
 - [[id:46dca88b-671f-4f23-a340-5dc564a48659][Antibiotiques]]
 - [[id:a8ad4c3b-9f08-4878-8d9d-febddae20069][Culture]]
 
-Virus
-- [[./medecine/20230528233600-norovirus.html][Norovirus]]
-
 * Autres
-[[./20230511181321-japonais.html][Japonais]]
+- [[id:ff3ddbe9-e87b-4e1b-8478-66234ebf6ab5][Japonais]]

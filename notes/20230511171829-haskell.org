@@ -83,6 +83,8 @@ askhistorians
 :END:
 On utilise persistent. Pour se connecter à une base existante, il faut connaître le type de colonnes (avec `.schema`, voir [[id:6ffe3a57-b7b8-4334-8d49-f4586d2943ae][Sqlite3]]).
 Puis définir un type.
+
+*Important* on n'a pas besoin de remplir les types de toutes les colonnes. Seulement celles qui nous intéressent !!
 Exemple: pour org-roam, on regarde la table files
 #+begin_src sql
 sqlite> .schema files
@@ -139,6 +141,11 @@ Si la clé primaire est une chaîne de caractères
     Id Text sql=id
 #+end_src
 
+Pour chercher par clé directement (toujours org-roam avec une clé en chaine de caractère)
+#+begin_src haskell
+    test <- get (NodeKey "1")
+    return $ (test :: Maybe Node)
+#+end_src
 * Emacs
 Utiliser haskell-compile
 Si on utilise haskell-proces-cabal-build (default =C-c c-c=), il ne trouve pas le fichier .cabal associé quand on éditer le code source

@@ -3,8 +3,10 @@ import Development.Shake.Command
 import Development.Shake.FilePath
 import Development.Shake.Util
 
-siteExe :: String
 siteExe = "_build/hakyll-site"
+filterExe = "_build/filterOrgRoam"
+
+-- Notes are managed by pandoc manually to solve org-roam links (and Hakyll does not manage org metadata)
 
 -- This only works in Gentoo with packages installed globally
 -- TODO: add a switch to use cabal (cabal build and cabal run) outside gentoo
@@ -12,48 +14,45 @@ siteExe = "_build/hakyll-site"
 -- Nix flakes builds several GHC version...
 main :: IO ()
 main = shakeArgs shakeOptions{shakeFiles="_build"} $ do
-    want ["_build/notes/index.html"]
+    want ["archive", "hut"]
 
-    "_build/notes/index.html" %> \out -> do
+    "_site/notes/index.html" %> \out -> do
         let src = "notes/index.org"
-        org <- getDirectoryFiles "" ["notes/medecine/*.org"]
-        let html = ["_build" </> n -<.> "html" | n <- org]
-        need html
-        cmd "pandoc" src "--filter ./filterOrgRoam -o" [out]
+        -- Only org roam notes (starting with the date)
+        org <- getDirectoryFiles "" ["notes/medecine/20*.org"]
+        let html = ["_site" </> n -<.> "html" | n <- org]
+        need $ html ++ [filterExe]
+        cmd "pandoc" src "--filter " filterExe "-s  --css /css/default.css -o" [out]
 
-    "_build/notes/medecine/*.html" %> \out -> do
+    "_site/notes/medecine/*.html" %> \out -> do
         let org = dropDirectory1 $ out -<.> "org"
-        putInfo org
-        putInfo out
-        cmd "pandoc" [org] "--filter ./filterOrgRoam -o" [out]
+        cmd "pandoc" [org] "--filter " filterExe "-s --css /css/default.css -o" [out]
 
-  --   want ["build", "hut"]
+    siteExe  %> \out -> do
+      cmd_ "ghc --make -o" [out] ["src/Main.hs"]
 
-  --   siteExe  %> \out -> do
+    filterExe  %> \out -> do
+      cmd_ "ghc --make -o" [out] ["src/filterOrgRoam.hs"]
 
-  --     let src = "src/Main.hs"
-  --     need [src, "notes/20230511180745-microbiologie.org"]
-  --     cmd_ "ghc --make -o" [out] [src]
-
-  --   -- Shake cannot use directories
-  --   phony "build" $ do
-  --       need [siteExe]
-  --       cmd_ siteExe "build"
+    -- Shake cannot use directories
+    phony "build" $ do
+        need [siteExe]
+        cmd_ siteExe "build"
 
     phony "clean" $ do
-        -- putInfo "Cleaning site "
-  --       cmd_ siteExe "clean"
+        putInfo "Cleaning _site "
+        cmd_ siteExe "clean"
         putInfo "Cleaning files in _build"
         removeFilesAfter "_build" ["//*"]
 
-  --   phony "hut" $ do
-  --       putInfo "Upload to blog hosted by sourcehut"
-  --       need ["archive"]
-  --       cmd_ "hut pages publish _build/site.tar.gz -d scut.srht.site"
+    phony "hut" $ do
+        putInfo "Upload to blog hosted by sourcehut"
+        need ["archive"]
+        cmd_ "hut pages publish _build/site.tar.gz -d scut.srht.site"
 
-  --   phony "archive" $ do
-  --       need ["build"]
-  --       cmd_ "tar cvzf " ["_build/site.tar.gz"] "-C _site ."
+    phony "archive" $ do
+        need ["build", "_site/notes/index.html"]
+        cmd_ "tar cvzf " ["_build/site.tar.gz"] "-C _site ."
 
   -- -- z option is important to avoid re-uploading everything
   --   phony "free" $ do

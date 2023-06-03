@@ -50,8 +50,10 @@ pathFromID id = runSqlite path $ do
 
 -- Change link to HTML version for publishing it
 -- Link is transformed from absolute to relative
+-- And we add the root folder for publishing
+-- FIXME this will not work locally...
 htmlLink :: FilePath -> FilePath -> FilePath
-htmlLink f pwd = makeRelative pwd (addExtension (dropExtension f) ".html")
+htmlLink f pwd = "/" ++ makeRelative pwd (addExtension (dropExtension f) ".html")
 
 -- Replace org-mode internal link to link to the full path of the file
 replaceLink :: Inline -> IO (Inline)
