@@ -117,9 +117,6 @@ CLOSED: [2022-12-03 Sat 12:34] SCHEDULED: <2022-07-30 Sat>
 CLOSED: [2023-05-29 Mon 15:40] SCHEDULED: <2023-05-28 Sun>
 /Entered on/ [2023-05-27 Sat 22:39]
 ** TODO XAMscissors.jl :xamscissors:
-:PROPERTIES:
-:ID:       966a298c-948a-4694-a6f5-c326b1046a05
-:END:
 Modification de la séquence dans BAM.
 *Pas de mise à jour de CIGAR*
 On convertit en fastq et on lance le pipeline pour "corriger"

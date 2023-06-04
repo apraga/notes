@@ -19,12 +19,12 @@ main = shakeArgs shakeOptions{shakeFiles="_build"} $ do
     "_site/notes/index.html" %> \out -> do
         let src = "notes/index.org"
         -- Only org roam notes (starting with the date)
-        org <- getDirectoryFiles "" ["notes/medecine/20*.org"]
+        org <- getDirectoryFiles "" ["notes/medecine/20*.org", "notes/*japonais*.org"]
         let html = ["_site" </> n -<.> "html" | n <- org]
         need $ html ++ [filterExe]
         cmd "pandoc" src "--filter " filterExe "-s  --css /css/default.css -o" [out]
 
-    "_site/notes/medecine/*.html" %> \out -> do
+    "_site/notes/*.html" %> \out -> do
         let org = dropDirectory1 $ out -<.> "org"
         cmd "pandoc" [org] "--filter " filterExe "-s --css /css/default.css -o" [out]
 

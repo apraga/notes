@@ -4187,7 +4187,8 @@ CLOSED: [2023-04-22 Sat 17:31]
 La sortie est sauvegardé dans git-annex : variants_success.csv
 **** DONE Automatique
 CLOSED: [2023-04-22 Sat 17:31]
-*** TODO Convert SNVs : transcript -> génomique
+*** DONE Convert SNVs : transcript -> génomique
+CLOSED: [2023-06-03 Sat 17:16]
 **** DONE Variant_recoder
 CLOSED: [2023-04-26 Wed 21:21] SCHEDULED: <2023-04-22 Sat>
 ***** KILL Haskell: 160 manquant : recoded-success.csv
@@ -4465,7 +4466,6 @@ samtools index single.bam
 #+end_src
 
 **** TODO Vérifier tous les variants sont retrouvés en 200x
-SCHEDULED: <2023-04-22 Sat>
 ***** DONE Après alignement
 CLOSED: [2023-04-29 Sat 18:27] SCHEDULED: <2023-04-28 Fri>
 ****** DONE SNV: avec doublons
@@ -4642,7 +4642,7 @@ CLOSED: [2023-05-01 Mon 19:57]
 ******* DONE Mapping quality : est à 0 !!!!
 CLOSED: [2023-05-01 Mon 19:58]
 
-****** TODO Comparer VCF avec vcfeval
+****** TODO Comparer VCF avec vcfeval :haplotypecaller:
 SCHEDULED: <2023-05-01 Mon>
 On prépare les données en julia
 #+begin_src ~/recherche/bisonex/simuscop
@@ -4662,12 +4662,15 @@ Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Se
    82.000                540            540         60         45     0.9000       0.9231     0.9114
      None                546            546        329         39     0.6240       0.9333     0.7479
 
-****** TODO Comparer avec hap.py
+****** TODO Comparer avec hap.py :haplotypecaller:
 SCHEDULED: <2023-05-19 Fri>
+
+ NXF_OPTS=-D"user.name=${USER}" nextflow run workflows/checkInserted.nf -profile standard,helios --outdir=compare-simuscop-200x  --query=out/simuscop-centogene-200x/cento/callVariant/haplotypecaller/cento.vcf.gz --truth=centogene_variants/variants_for_vcfeval.tsv.gz --id=simuscop-200x-check
 ****** DONE Méthode naïve 549/585
 CLOSED: [2023-05-04 Thu 21:57]
 Haplotypecaller: Nb reference SNV 692 vs found 585
 Variant calling, filter technical: reference SNV 692 vs found 521
+
 ***** TODO Avant annotation
 SCHEDULED: <2023-04-28 Fri>
 #+begin_src
@@ -5173,7 +5176,6 @@ CLOSED: [2023-05-19 Fri 21:58]
 ***** TODO ins
 *** TODO [[id:966a298c-948a-4694-a6f5-c326b1046a05][XAMscissors.jl]] :xamscissors:
 **** TODO Test SNV
-SCHEDULED: <2023-05-30 Tue>
 ***** DONE Phase 1 : chr22, VAF=1
 CLOSED: [2023-05-29 Mon 15:36]
 ****** DONE 1 SNV  : ok !
@@ -5188,6 +5190,7 @@ Puis on lance le pipeline sur correct_1
 ****** KILL Tester SNV chromosome 22
 CLOSED: [2023-05-29 Mon 15:36] SCHEDULED: <2023-05-20 Sat>
 ***** TODO PHase 2 : chr22, VAF variable
+SCHEDULED: <2023-06-03 Sat>
 ****** DONE de nombreux reads sont perdus -> ok sur un SNV en alignant sur chromosome 22
 CLOSED: [2023-05-29 Mon 15:38]
 Problème dansr le BAM car sans les insertion
@@ -5612,28 +5615,34 @@ julia> y = [rand(d, 1)[1] for x in 1:1000];
 julia> z = rand(d,1000);
 julia> df = vcat(DataFrame(:y => z, :type => "z"), DataFrame(:y => y, :type => "y"));
  draw(data(df)*histogram(bins=100)*mapping(:y, color=:type,dodge=:type))
+****** DONE Améliorer les performances
+CLOSED: [2023-06-02 Fri 23:39]
+#+begin_src julia
+@time include("xamscissors.jl")
+#+end_src
+
+430s pour chromosome 22. Majorité dans l'édition de reads:
+******* DONE Inserér tous les variants d'un reads d'un coup
+CLOSED: [2023-06-01 Thu 23:09]
+Ne change rien
+******* DONE Test avec -t4: idem
+CLOSED: [2023-06-01 Thu 23:17]
+******* DONE Test mésocentre : idem
+CLOSED: [2023-06-01 Thu 23:40]
+348s
+******* Changer la structure de données des
+Dataframe -> dict = les performances horribles ont disparuse
 ****** TODO Refaire le test avec la nouvelle version
-******* DONE Localement
+******* DONE Génération des données
 CLOSED: [2023-06-02 Fri 23:40]
 Mésocentre
 #+begin_src sh
 cd /Work/Users/apraga/bisonex/out/63003856_S135_R/preprocessing/mapped
 samtools view 63003856_S135_R.bam NC_000022.11 -o 63003856_S135_R_chr22.bam
-#+end_src
-
-Génération locale du fichier
-#+begin_src sh :dir /home/alex/roam/recherche/bisonex/code/xamscissors
-~/.local/julia-1.9.0/bin/julia --project=.. snvs.jl
-rsync -avz meso:/Work/Users/apraga/bisonex/out/63003856_S135_R/preprocessing/mapped/63003856_S135_R_chr22.bam .
 samtools index 63003856_S135_R_chr22.bam
+cp 63003856_S135_R_chr22.bam* /Work/Users/apraga/bisonex/tests/xamscissors/
+cd /Work/Users/apraga/bisonex/tests/xamscissors
 #+end_src
-
-#+RESULTS:
-| receiving | incremental | file  | list        |         |       |              |           |
-|           |             |       |             |         |       |              |           |
-| sent      | 20          | bytes | received    |      79 | bytes |         66.0 | bytes/sec |
-| total     | size        | is    | 143,162,969 | speedup | is    | 1,446,090.60 |           |
-
 On génère les données
 #+begin_src julia
 using XAMScissors
@@ -5642,37 +5651,53 @@ insertSNV("./63003856_S135_R_chr22.bam", "snvs_chr22.csv", "out")
 #+end_src
 Puis
 #+begin_src sh
-~/.local/julia-1.9.0/bin/julia --project=.. xamscissors.jl
+julia xamscissors.jl
 #+end_src
-******** DONE Améliorer les performances
-CLOSED: [2023-06-02 Fri 23:39]
-#+begin_src julia
-@time include("xamscissors.jl")
-#+end_src
-
-430s pour chromosome 22. Majorité dans l'édition de reads:
-********* DONE Inserér tous les variants d'un reads d'un coup
-CLOSED: [2023-06-01 Thu 23:09]
-Ne change rien
-********* DONE Test avec -t4: idem
-CLOSED: [2023-06-01 Thu 23:17]
-********* DONE Test mésocentre : idem
-CLOSED: [2023-06-01 Thu 23:40]
-348s
-********* Changer la structure de données des
-Dataframe -> dict = les performances horribles ont disparuse
-******* TODO Mesocentre
-
-#+begin_src
-cp xamscissors.jl snv*.csv meso:/Work/Users/apraga/bisonex/tests/xamscissors/
-
-ssh meso
-cd /Work/Users/apraga/bisonex/tests/xamscissors
-cp /Work/Users/apraga/bisonex/out/63003856_S135_R/preprocessing/mapped/*chr22.bam .
-samtools index 63003856_S135_R_chr22.bam
-#+end_src
-
+******* DONE Run
+CLOSED: [2023-06-03 Sat 18:26]
+NXF_OPTS=-D"user.name=${USER}" nextflow run workflows/runInserted.nf -profile standard,helios  --input="tests/xamscissors/out/inserted_{1,2}.fq.gz"
+******* DONE Après haplotypecaller : ok
+CLOSED: [2023-06-03 Sat 18:27] SCHEDULED: <2023-06-03 Sat>
+******* TODO Après filtre vep
+SCHEDULED: <2023-06-03 Sat>
 ***** TODO PHase 3 : tous les SNV
+SCHEDULED: <2023-06-03 Sat>
+****** DONE Générer les données
+CLOSED: [2023-06-03 Sat 20:16] SCHEDULED: <2023-06-03 Sat>
+#+begin_src julia
+using XAMScissors
+
+insertSNV("../../out/63003856_S135_R/preprocessing/mapped/63003856_S135_R.bam", "snvs.csv", "out")
+#+end_src
+
+temps d'exécution 73min
+#+begin_src sh
+nohup bash -c 'time julia xamscissors.jl' &
+xamscissors-63003856/*.fq.gz /Work/Groups/bisonex/data/xamscissors/
+#+end_src
+****** DONE Regénérer avec @time pour avoir les performaces
+CLOSED: [2023-06-03 Sat 21:45]
+
+markReads 6.265202 seconds (1.36 M allocations: 137.090 MiB, 1.00% gc time, 9.79% compilation time)
+editReads 1327.701623 seconds (1.03 G allocations: 81.996 GiB, 0.59% gc time, 0.03% compilation time)
+samtools index 117.743727 seconds (53 allocations: 1.883 KiB)
+samtools sort 2820.074930 seconds (66 allocations: 2.789 KiB)
+bam2fastq 134.148952 seconds (794 allocations: 40.539 KiB, 0.01% compilation time)
+
+real	73m33.273s
+user	77m38.194s
+sys	1m26.684s
+[bam_sort_core] merging from 60 files and 1 in-memory blocks...
+[M::bam2fq_mainloop] discarded 0 singletons
+[M::bam2fq_mainloop] processed 126905130 reads
+
+real	73m6.934s
+user	77m25.397s
+sys	1m21.339s
+
+
+****** TODO Analyses
+SCHEDULED: <2023-06-04 Sun>
 **** TODO Test Indel
 *** Divers
 **** DONE Vérifier nombre de reads fastq - bam
