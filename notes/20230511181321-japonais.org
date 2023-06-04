@@ -647,3 +647,21 @@ Microbiologie
  - どうしたらいい: que faire
  - 急に（きゅうに）: soudainement
  - 場合（ばあい）: cas, situtation
+* <2023-06-04 Sun>
+** Grammaire
+V-といいです: Il faudrait que tu V
+ex: 「頭が痛いです」「水を飲むといいですよ」
+
+v-たらどうですか: il serait bien que tu V
+ex: 「水の飲んだらどうですか。」
+
+ne rien X
+nanino tabemasu
+nanio hanusu koto ga arimasu
+
+nogaku narimasu = ??
+nariso ???
+** Vocabulaire
+- 自動( じどう ): automatic
+- 何日間: how many days
+togaru = avoir très envie de

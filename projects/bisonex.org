@@ -1351,6 +1351,21 @@ Problème avec liste des ID
 **** TODO variant annotation
 Besoin de vep
 *** TODO Variant calling
+** STRT Tester sarek
+#+begin_src sh
+ module load apptainer/1.1.8
+ nextflow run nf-core/sarek -profile test,singularity --outdir test-sarek
+#+end_src
+Les dépendences ne se téléchargent pas correctement, on les extrait à la main
+#+begin_src sh
+
+ rg -IN galaxyproject modules  | sed 's/ //g;s/:$//' | sort | uniq > deps.txt
+#+end_src
+ Nettoyage à la main
+ Puis
+ #+begin_src sh
+ cat deps.txt | xargs -L1 singularity pull
+ #+end_src
 * Amélioration :amelioration:
 * Documentation :doc:
 ** DONE Procédure d'installation nix + dependences pour VM CHU
@@ -4643,7 +4658,6 @@ CLOSED: [2023-05-01 Mon 19:57]
 CLOSED: [2023-05-01 Mon 19:58]
 
 ****** TODO Comparer VCF avec vcfeval :haplotypecaller:
-SCHEDULED: <2023-05-01 Mon>
 On prépare les données en julia
 #+begin_src ~/recherche/bisonex/simuscop
 julia --project=. toVCF.jl
@@ -4663,8 +4677,6 @@ Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Se
      None                546            546        329         39     0.6240       0.9333     0.7479
 
 ****** TODO Comparer avec hap.py :haplotypecaller:
-SCHEDULED: <2023-05-19 Fri>
-
  NXF_OPTS=-D"user.name=${USER}" nextflow run workflows/checkInserted.nf -profile standard,helios --outdir=compare-simuscop-200x  --query=out/simuscop-centogene-200x/cento/callVariant/haplotypecaller/cento.vcf.gz --truth=centogene_variants/variants_for_vcfeval.tsv.gz --id=simuscop-200x-check
 ****** DONE Méthode naïve 549/585
 CLOSED: [2023-05-04 Thu 21:57]
@@ -5695,9 +5707,119 @@ real	73m6.934s
 user	77m25.397s
 sys	1m21.339s
 
-
-****** TODO Analyses
+****** TODO Après haplotypecaller 556/590, majorité = échec alignement
 SCHEDULED: <2023-06-04 Sun>
+Haplotypecaller 556 found over 590
+Amongst 34 missed variant, 2 have a mapping quality > 0
+2×7 DataFrame
+ Row │ chrom         pos        ref      alt      zygosity  meanQual   stdQual
+     │ String15      Int64      String1  String1  String7   Float64    Float64
+─────┼─────────────────────────────────────────────────────────────────────────
+   1 │ NC_000017.11   39672244  G        A        het       60.0       0.0
+   2 │ NC_000001.11  155235252  A        G        het        0.258065  2.48868
+
+NC_000017.11   39672244  G        A        het => ok, problème de représentation car 2 variant côte à cote
+NC_000001.11  155235252  A        G        het => peu de reads alternatifs (9/93 donc ok)
+
+Position: chromoe 1 et 6 surtout
+34×7 DataFrame
+ Row │ chrom         pos        ref      alt      zygosity
+     │ String15      Int64      String1  String1  String7
+─────┼──────────────────────────────────────────────────────
+   1 │ NC_000001.11  153817496  A        T        het
+   2 │ NC_000001.11  155235252  A        G        het
+   3 │ NC_000001.11  155236268  G        A        het
+   4 │ NC_000001.11  155290591  C        T        het
+   5 │ NC_000001.11  155291918  G        A        het
+   6 │ NC_000001.11  155294358  G        T        het
+   7 │ NC_000002.12  149010343  C        T        het
+   8 │ NC_000006.12   32039426  T        A        het
+   9 │ NC_000006.12   32040110  G        T        het
+  10 │ NC_000006.12   32040723  G        A        het
+  11 │ NC_000006.12   32041006  C        T        het
+  12 │ NC_000006.12   32041147  G        A        het
+  13 │ NC_000006.12   33443054  G        T        het
+  14 │ NC_000006.12   33451815  C        T        het
+  15 │ NC_000006.12  170283230  C        A        het
+  16 │ NC_000006.12  170283754  G        A        het
+  17 │ NC_000006.12  170285637  T        C        het
+  18 │ NC_000006.12  170289678  A        C        het
+  19 │ NC_000010.11   87961118  G        A        het
+  20 │ NC_000012.12    2449086  C        G        het
+  21 │ NC_000015.10   74343027  C        T        het
+  22 │ NC_000016.10   16163078  G        A        het
+  23 │ NC_000016.10   21262032  C        G        het
+  24 │ NC_000016.10     21962506  C        T        homo
+  25 │ NC_000017.11    7513122  C        T        het
+  26 │ NC_000017.11    7513752  C        T        het
+  27 │ NC_000017.11   39672244  G        A        het
+  28 │ NC_000017.11   46018710  C        T        het
+  29 │ NC_000019.10   54144058  G        A        het
+  30 │ NC_000021.9    43063074  A        G        het
+  31 │ NC_000021.9    43426167  C        T        het
+  32 │ NC_000022.11   18918421  A        G        het
+  33 │ NC_000022.11   42087168  T        A        homo
+  34 │ NC_000022.11   42213078  T        G        het
+****** DONE Voir où est l'alignement alternatif: sur NW_ (zone supprimée)
+CLOSED: [2023-06-04 Sun 22:15] SCHEDULED: <2023-06-04 Sun>
+ex chr15 74343027
+  A00853:477:HMLWYDSX3:2:2444:22354:28870
+
+#+begin_src
+cd /Work/Groups/bisonex/data/xamscissors
+zgrep -A4 "A00853:477:HMLWYDSX3:2:2444:22354:28870" *.fq.gz
+ #+end_src
+63003856_xamscissors_1.fq.gz:@A00853:477:HMLWYDSX3:2:2444:22354:28870
+63003856_xamscissors_1.fq.gz:CACCGTGTCCACCCCTCCTGCCGGCATCTCTGTGACGTTGGCCTTGATGTCCTTGAAGGACATCTTGCTGTCTCCCAGGAGTCTGTAGAGGATGCCACGGTAATCGTGGTGAACACTTCCTTTCTGTC
+63003856_xamscissors_1.fq.gz:+
+63003856_xamscissors_1.fq.gz:FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF:FFFFFFFFFF:FFFFFFFFFF::FFFFFFFFFFF:FFFFFFFFFFFFFF:FFFFFFF,FFFFFF,FFFFFFFFFFFF:FF::FF
+
+63003856_xamscissors_2.fq.gz:@A00853:477:HMLWYDSX3:2:2444:22354:28870
+63003856_xamscissors_2.fq.gz:GACAGAAAGGAAGTGTTCACCACGATTACCGTGGCATCCTCTACAGACTCCTGGGAGACAGCAAGATGTCCTTCGAGGACATCAAGGCCAACGTCACAGAGATGCCGGCAGGAGGGGTGGACACGGTG
+63003856_xamscissors_2.fq.gz:+
+63003856_xamscissors_2.fq.gz:FF:FFF:FF:FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF:FFFF:F:FF:FFFFFFFFFFFFFF:FFFFFFFFFFFFFFFF,:FFF,FFFFFF:FFFFFFFFFFFFF
+
+******* DONE Avec BLAT: sur _fix
+CLOSED: [2023-06-04 Sun 21:07]
+1er =
+
+   ACTIONS      QUERY   SCORE START   END QSIZE IDENTITY  CHROM                 STRAND  START       END   SPAN
+--------------------------------------------------------------------------------------------------------------
+browser details YourSeq   124     1   128   128    98.5%  chr15_ML143370v1_fix  +      172243    172370    128   What is chrom_fix?
+browser details YourSeq   124     1   128   128    98.5%  chr15                 +    74342974  74343101    128
+browser details YourSeq    23     1    25   128    96.0%  chr19                 -    33396097  33396121     25
+
+Second
+--------------------------------------------------------------------------------------------------------------
+browser details YourSeq   126     1   128   128    99.3%  chr15_ML143370v1_fix  -      172243    172370    128   What is chrom_fix?
+browser details YourSeq   126     1   128   128    99.3%  chr15                 -    74342974  74343101    128
+browser details YourSeq    23   104   128   128    96.0%  chr19                 +    33396097  33396121     25
+
+******* DONE Bwa mem à la main GRCh38.p13 : on est dans une zone NW
+CLOSED: [2023-06-04 Sun 21:51]
+On met les 2 reads dans des fichiers séparés puis
+#+begin_src sh
+cd /Work/Users/apraga/bisonex/tests/xamscissors/align
+bwa mem /Work/Groups/bisonex/data/genome/GRCh38.p13/bwa/genomeRef test1.fq test2.fq
+#+end_src
+
+A00853:477:HMLWYDSX3:2:2444:22354:28870	97	NW_021160016.1	172243	0	128M	=	172243	128	CACCGTGTCCACCCCTCCTGCCGGCATCTCTGTGACGTTGGCCTTGATGTCCTTGAAGGACATCTTGCTGTCTCCCAGGAGTCTGTAGAGGATGCCACGGTAATCGTGGTGAACACTTCCTTTCTGTC	FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF:FFFFFFFFFF:FFFFFFFFFF::FFFFFFFFFFF:FFFFFFFFFFFFFF:FFFFFFF,FFFFFF,FFFFFFFFFFFF:FF::FF	NM:i:2	MD:Z:22A30C7MC:Z:128M	AS:i:118	XS:i:118	XA:Z:NC_000015.10,+74342974,128M,2;
+A00853:477:HMLWYDSX3:2:2444:22354:28870	145	NW_021160016.1	172243	0	128M	=	172243	-128	CACCGTGTCCACCCCTCCTGCCGGCATCTCTGTGACGTTGGCCTTGATGTCCTCGAAGGACATCTTGCTGTCTCCCAGGAGTCTGTAGAGGATGCCACGGTAATCGTGGTGAACACTTCCTTTCTGTC	FFFFFFFFFFFFF:FFFFFF,FFF:,FFFFFFFFFFFFFFFF:FFFFFFFFFFFFFF:FF:F:FFFF:FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF:FF:FFF:FF	NM:i:1	MD:Z:22A105	MC:Z:128M	AS:i:123	XS:i:123	XA:Z:NC_000015.10,-74342974,128M,1;
+
+******* DONE GRCh38.p14: idem
+CLOSED: [2023-06-04 Sun 21:51]
+A00853:477:HMLWYDSX3:2:2444:22354:28870	97	NW_021160016.1	172243	0	128M	=	172243	128	CACCGTGTCCACCCCTCCTGCCGGCATCTCTGTGACGTTGGCCTTGATGTCCTTGAAGGACATCTTGCTGTCTCCCAGGAGTCTGTAGAGGATGCCACGGTAATCGTGGTGAACACTTCCTTTCTGTC	FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF:FFFFFFFFFF:FFFFFFFFFF::FFFFFFFFFFF:FFFFFFFFFFFFFF:FFFFFFF,FFFFFF,FFFFFFFFFFFF:FF::FF	NM:i:2	MD:Z:22A30C7MC:Z:128M	AS:i:118	XS:i:118	XA:Z:NC_000015.10,+74342974,128M,2;
+A00853:477:HMLWYDSX3:2:2444:22354:28870	145	NW_021160016.1	172243	0	128M	=	172243	-128	CACCGTGTCCACCCCTCCTGCCGGCATCTCTGTGACGTTGGCCTTGATGTCCTCGAAGGACATCTTGCTGTCTCCCAGGAGTCTGTAGAGGATGCCACGGTAATCGTGGTGAACACTTCCTTTCTGTC	FFFFFFFFFFFFF:FFFFFF,FFF:,FFFFFFFFFFFFFFFF:FFFFFFFFFFFFFF:FF:F:FFFF:FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF:FF:FFF:FF	NM:i:1	MD:Z:22A105	MC:Z:128M	AS:i:123	XS:i:123	XA:Z:NC_000015.10,-74342974,128M,1;
+
+******* DONE GRCh38 : ok
+CLOSED: [2023-06-04 Sun 22:15]
+ bwa mem /Work/Projects/bisonex/data/genome/GRCh38/GCA_000001405.15_GRCh38_full_analysis_set.fna test1.fq test2.fq
+****** DONE Vérifier que les reads ont la même qualité sur les fichiers d'origine: oui
+CLOSED: [2023-06-04 Sun 21:07]
+****** TODO Supprimer les NW_ ?
+SCHEDULED: <2023-06-04 Sun>
+Attente réponse alexis
+
 **** TODO Test Indel
 *** Divers
 **** DONE Vérifier nombre de reads fastq - bam
