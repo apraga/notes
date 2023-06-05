@@ -3,15 +3,20 @@
 :END:
 #+title: Bactéries
 #+filetags: personal medecine
+* Résistante
+PLP = paroi externe de la membrane plasmique. Sert à synthétisé le peptidoglycane = composant de la paroi. Les beta-lactamine vont inhiber la synthèse de peptidoglycane. En cas de PLP2a, moins d’affinité aux beta-lactamine.
+https://pharmacomedicale.org/medicaments/par-specialites/item/beta-lactamines-penicillines-cephalosporines
 * Bactéries
 ** Staphylocoques
 *** Résistances
-- > 90% résistance aux pénicillines
-- S. aureus : 15-20% résistance méticilline
-- Macrolides-Lincosamide-Streptogramine-Kétolide (MLSK)  : modification de la cible surtout (modification/mutation ribosoe)
-  - résistant érythromycine : 30% SAMS, 90% SAMR, 65% coagulase négative
-- aminoside : inactivation enzymatique = 5% SAMS mais 80-90% SARM
-- glycopeptide : résistant = exceptionnel, intermediate = 3-6% (mécanisme complexe)
+- β-lactamine : production pénicillinase (BlaZ)> 90%
+- résistance méticilline (staph coag négative >> aureus) via
+  - la Staphylococcal Cassette Chromosome mec (SCCmec) [= zone génomique comprenant /mecA/ qui code pour la protéine PLP2a ( [[*Résistante][Résistance]]).
+  - Nouveau gène mecC: code PLP2c
+  - S. aureus : 15-20% résistant méticilline
+- Macrolides-Lincosamide-Streptogramine-Kétolide (MLSK)  : modification de la cible surtout (modification/mutation ribosome)
+- 3 phénotype de résistance aux aminoside (inactivation enzymatique = 5% SAMS mais 80-90% SARM)
+- glycopeptide : exceptionnel
 *** Staphylococcus aureus
 Cocci Gram+ en amas : aérobie +/- anaérobie. Immobiles. non capsulé, non sporulé
 
