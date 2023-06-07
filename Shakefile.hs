@@ -24,7 +24,7 @@ main = shakeArgs shakeOptions{shakeFiles="_build"} $ do
         need $ html ++ [filterExe]
         cmd "pandoc" src "--filter " filterExe "-s  --css /css/default.css -o" [out]
 
-    "_site/notes/*.html" %> \out -> do
+    "_site/notes//*.html" %> \out -> do
         let org = dropDirectory1 $ out -<.> "org"
         cmd "pandoc" [org] "--filter " filterExe "-s --css /css/default.css -o" [out]
 
