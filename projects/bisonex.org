@@ -1145,7 +1145,27 @@ unknown location(0): fatal error in "testVariantPrimitiveSplitter": signal: SIGA
 HGREF=../genome/GRCh38/GCA_000001405.15_GRCh38_no_alt_analysis_set.fasta hap.py        example/happy/PG_NA12878_chr21.vcf.gz       example/happy/NA12878_chr21.vcf.gz       -f example/happy/PG_Conf_chr21.bed.gz       -o test
 ******* Helios
 échec
-
+** TODO T2T
+Toutes les ressourcs sont décrites ici
+https://github.com/marbl/CHM13
+Détails sur le pipeline
+https://genome.ucsc.edu/cgi-bin/hgTrackUi?db=hub_3267197_GCA_009914755.4&c=CP068277.2&g=hub_3267197_hgLiftOver
+*** TODO URL hg38 + T2T
+- [ ] genome
+- [ ] dbsnp
+- [ ] clinvar
+- [ ] vep
+https://github.com/Ensembl/ensembl-vep/issues/1409
+*** TODO Téléchargement généqiue (aws + ftp)
+*** TODO Corriger téléchargement : url directement fichier config
+*** TODO Passer en convention "chr" pour chromosome
+**** TODO Ne pas renommer clinvar (hg38)
+**** TODO Renommer dbsnp (hg38)
+*** Liftover pipelines
+:PROPERTIES:
+:ID:       d2280207-3f65-4a31-a291-41fa9a9658c2
+:END:
+Contient les chain files
 ** DONE Exécution
 CLOSED: [2022-09-13 Tue 21:37]
 *** KILL test Bionix
@@ -1311,16 +1331,12 @@ CLOSED: [2023-05-13 Sat 18:27] SCHEDULED: <2023-05-07 Sun>
 **** DONE OMIM
 CLOSED: [2023-05-08 Mon 15:02] SCHEDULED: <2023-05-01 Mon>
 **** TODO Grantham
-SCHEDULED: <2023-05-01 Mon>
 **** TODO ACMG incidental
-SCHEDULED: <2023-05-01 Mon>
 **** TODO Gnomad ?
-SCHEDULED: <2023-05-01 Mon>
 **** DONE Filtrer après VEP avec filter_vep
 CLOSED: [2023-04-29 Sat 15:47]
 nNon testé
 *** TODO Comparer les annotations sur 63003856
-SCHEDULED: <2023-05-18 Thu>
 **** Relancer le nouveau pipeline
 *** HOLD Ancienne version
 **** TODO HGVS
@@ -3234,7 +3250,6 @@ NB : liste techno illumina https://www.illumina.com/systems/sequencing-platforms
 
 Hiseq postérieur nextseq 550
 ******* TODO Fastq hiseq sans trimming
-SCHEDULED: <2023-05-25 Thu>
 ******* DONE Capture : Exons (bed)
 CLOSED: [2023-02-25 Sat 19:46]
 https://ftp-trace.ncbi.nih.gov/ReferenceSamples/giab/data/NA12878/Garvan_NA12878_HG001_HiSeq_Exome/nexterarapidcapture_expandedexome_targetedregions.bed.gz
@@ -4057,7 +4072,6 @@ compareNA12878-giab/happy/NA12878.summary.csv
 | SNP   | ALL    |       46032 |    41138 |     4894 |       47694 |     1622 |      4930 |   362 |    31 |      0.893683 |         0.962071 |       0.103367 |        0.926617 |      2.529551552318896 |     2.4124463519313304 |        1.6206857273037931 |        1.6888675840288743 |
 | SNP   | PASS   |       46032 |    41138 |     4894 |       47694 |     1622 |      4930 |   362 |    31 |      0.893683 |         0.962071 |       0.103367 |        0.926617 |      2.529551552318896 |     2.4124463519313304 |        1.6206857273037931 |         1.688867584028874 |
 ***** TODO Résultats sans trimming
-SCHEDULED: <2023-05-25 Thu>
 **** DONE HG002 :hg002:
 CLOSED: [2023-04-14 Fri 09:54] SCHEDULED: <2023-04-10 Mon>
 #+begin_src
@@ -4544,7 +4558,6 @@ julia> @subset snv :refCount .== 0 :altCount .== 0
    8 │ NC_000012.12    2449086  g.2449086C>G    snv          heterozygous  C          G                 0         0           0
 
 ***** TODO Après haplotypecaller
-SCHEDULED: <2023-04-28 Fri>
 ****** KILL 20x
 CLOSED: [2023-04-29 Sat 15:39]
 Manque 183 sur 766
@@ -4684,7 +4697,6 @@ Haplotypecaller: Nb reference SNV 692 vs found 585
 Variant calling, filter technical: reference SNV 692 vs found 521
 
 ***** TODO Avant annotation
-SCHEDULED: <2023-04-28 Fri>
 #+begin_src
 cd cento/variantCalling
 bgzip filter-technical.vcf
@@ -5707,8 +5719,8 @@ real	73m6.934s
 user	77m25.397s
 sys	1m21.339s
 
-****** TODO Après haplotypecaller 556/590, majorité = échec alignement
-SCHEDULED: <2023-06-04 Sun>
+****** DONE Après haplotypecaller 556/590, majorité = échec alignement
+CLOSED: [2023-06-10 Sat 10:40] SCHEDULED: <2023-06-04 Sun>
 Haplotypecaller 556 found over 590
 Amongst 34 missed variant, 2 have a mapping quality > 0
 2×7 DataFrame
@@ -5816,9 +5828,8 @@ CLOSED: [2023-06-04 Sun 22:15]
  bwa mem /Work/Projects/bisonex/data/genome/GRCh38/GCA_000001405.15_GRCh38_full_analysis_set.fna test1.fq test2.fq
 ****** DONE Vérifier que les reads ont la même qualité sur les fichiers d'origine: oui
 CLOSED: [2023-06-04 Sun 21:07]
-****** TODO Supprimer les NW_ ?
-SCHEDULED: <2023-06-04 Sun>
-Attente réponse alexis
+****** DONE Supprimer les NW_ ?
+CLOSED: [2023-06-10 Sat 10:40] SCHEDULED: <2023-06-04 Sun>
 
 **** TODO Test Indel
 *** Divers

@@ -349,8 +349,10 @@ CLOSED: [2022-12-04 Sun 22:13]
 CLOSED: [2023-03-20 lun. 14:29]
 ***** DONE Version validée par paul v0.2.7
 CLOSED: [2023-03-20 lun. 14:30]
-***** TODO Correction Hirsch + Vidau
-SCHEDULED: <2023-05-28 Sun>
+***** DONE Correction Hirsch + Vidau
+CLOSED: [2023-06-11 Sun 18:39] SCHEDULED: <2023-05-28 Sun>
+***** TODO Dernières correction JP
+SCHEDULED: <2023-06-11 Sun>
 **** TODO Soumission
   List journaux acceptant case reports
   https://static1.squarespace.com/static/5db7b349364ff063a6c58ab8/t/6071fb065173800a11ccd0a2/1618082566620/Case+Report+Journals+2020.pdf
@@ -469,8 +471,7 @@ AB = "allelic balance"
 ****** STRT Ancien panel
 ****** STRT Nouveau panel
 ****** TODO Dijon
-***** TODO Version executable pour paul
-SCHEDULED: <2023-06-06 Tue>
+***** HOLD Version executable pour paul
 Avec colonne dédiée
 
 *** Données
@@ -2213,6 +2214,7 @@ https://github.com/NixOS/nixpkgs/issues/192396
 CLOSED: [2022-10-09 Sun 22:51]
 *** TODO [[https://github.com/NixOS/nixpkgs/issues/192396][Bug report Version 22.10.6]]
 SCHEDULED: <2023-05-13 Sat>
+**** Notes
 Erreur :
 ERROR: Cannot download nextflow required file -- make sure you can connect to the internet
 
@@ -2224,6 +2226,8 @@ and save it as:
 
 Dans la mise à jour, il y a la création d'un environnement virtuel qui casse l'exécution de nextflow (besoin de télécharger)
 Fix = désactiver
+**** TODO Patch NXF_OFFLINE=true
+SCHEDULED: <2023-06-11 Sun>
 ** TODO Multiqc
 ** TODO VEP :vep:
 *** DONE [[https://github.com/NixOS/nixpkgs/pull/185691][BioPerl]]
@@ -2269,7 +2273,7 @@ SCHEDULED: <2023-05-06 Sat>
 Soumis
 ** TODO Spip
 SCHEDULED: <2023-05-06 Sat>
-** TODO Happy
+** TODO Happy :happy:
 *** TODO PR python 3 upstream
 SCHEDULED: <2023-05-06 Sat>
 *** TODO nixpkgs en l'état
@@ -2278,6 +2282,7 @@ SCHEDULED: <2023-05-06 Sat>
 ** TODO Bamsurgeon
 /Entered on/ [2023-05-13 Sat 19:11]
 *** TODO Velvet
+
 * Voiture :voiture:
 ** Mazda 5
 *** Notes
@@ -2286,8 +2291,8 @@ SCHEDULED: <2023-05-06 Sat>
 *** DONE Changer pneus avant
 CLOSED: [2022-09-11 Sun 22:05] SCHEDULED: <2022-09-03 Sat>
 Trop abimé pour prendre le risque, on changera les arrières plus tard
-*** HOLD Changer plaquettes +/- disques
-SCHEDULED: <2023-05-09 Tue>
+*** KILL Changer plaquettes +/- disques
+CLOSED: [2023-06-11 Sun 18:39] SCHEDULED: <2023-05-09 Tue>
 Écrou grippé ? Voir avec fils M. Chouffe à Gennes, chemin du vernois (voiture 607 bleue)
 *** TODO Changer courroie distribution
 SCHEDULED: <2023-07-30 Sun>
@@ -2297,6 +2302,17 @@ SCHEDULED: <2023-07-30 Sun>
 DEADLINE: <2023-06-01 Thu>
 **** DONE Prendre RV
 CLOSED: [2023-05-28 Sun 10:03] SCHEDULED: <2023-05-07 Sun>
+**** TODO Changer amortisseurs
+SCHEDULED: <2023-06-13 Tue>
+**** TODO Changer phare avant
+SCHEDULED: <2023-06-13 Tue>
+**** TODO Contrôle pollution
+SCHEDULED: <2023-06-13 Tue>
+*** TODO Amende
+**** DONE Changement d'adresse carte grise
+CLOSED: [2023-06-11 Sun 21:40]
+**** TODO Envoyer photocopie carte grise pour éviter majoration
+SCHEDULED: <2023-06-18 Sun>
 * Moto
 :PROPERTIES:
 :CATEGORY: moto
@@ -2307,6 +2323,9 @@ RV pris yamah
 41000km
 
 * Maison
+** DONE Ordure ménagères
+CLOSED: [2023-06-11 Sun 21:40]
+Envoyé RIB le <2023-06-11 Sun>
 * Gentoo
 ** GURU
 *** DONE Demander accès
