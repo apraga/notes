@@ -19,7 +19,7 @@
 - Cétrimide (ammonium) → P. aeruginosa (production pycyanine)
 - Chapman : NaCL, mannitol
   - jaune = fermente mannitol → S. aureus
-- Chocolat enrichi : bactéries exigeants (prélèvement profond)
+- Chocolat enrichi : bactéries exigeantes (prélèvement profond)
 - Drigalski : inhibe Gram+, lactose →
   - jaunes = BGN fermentant lactose = escherichia, citrobacter, enterobacter, klebsiella
   - bleu = BGN ne fermentant pas le lactose = serratia, salomnella, shigelal, proteus, yersinia, pseudomonas
