@@ -432,17 +432,38 @@ On peut utiliser des symlink mais trop compliqué
 CLOSED: [2022-08-19 Fri 15:18]
 *** DONE Tester patch de @pennae pour gros fichiers
 SCHEDULED: <2022-08-19 Fri>
-*** STRT Télécharger les données avec nextflow
+*** KILL Télécharger les données avec nextflow: hg38
+CLOSED: [2023-06-12 Mon 23:29]
 **** DONE Genome de référence
 **** DONE dbSNP
-**** TODO VEP 20G
+**** DONE VEP 20G
+CLOSED: [2023-06-12 Mon 23:29]
 Ajout vérification checksum -> à vérifier
-**** TODO transcriptome (spip)
+**** DONE transcriptome (spip)
+CLOSED: [2023-06-12 Mon 23:29]
 Rajouter checksum manuel
 **** KILL Refseq
-**** STRT OMIM
+**** KILL OMIM
+CLOSED: [2023-06-12 Mon 23:29]
 codé, à vérifier
-**** TODO ACMG incidental
+**** KILL ACMG incidental
+CLOSED: [2023-06-12 Mon 23:29]
+*** TODO Télécharge données :TIT:
+SCHEDULED: <2023-06-15 Thu>
+**** DONE fasta
+CLOSED: [2023-06-12 Mon 23:30]
+**** DONE fasta : compatibilité hg38
+CLOSED: [2023-06-12 Mon 23:30]
+**** DONE fasta index
+CLOSED: [2023-06-13 Tue 00:07]
+**** DONE fasta index: compatibilité hg38
+CLOSED: [2023-06-13 Tue 00:07]
+**** DONE fasta dictionnaire
+CLOSED: [2023-06-13 Tue 00:07]
+**** DONE dbSNP
+CLOSED: [2023-06-12 Mon 23:30]
+**** DONE dbSNP : compatibilité hg38
+CLOSED: [2023-06-12 Mon 23:30]
 *** HOLD Processing bases de données
 **** DONE dbSNP common
 **** DONE Seulement les ID dans dbSNP common !
@@ -5465,8 +5486,8 @@ Puis on lance le pipeline sur correct_1
 - [X] Variant visible après appel de variant
 ****** KILL Tester SNV chromosome 22
 CLOSED: [2023-05-29 Mon 15:36] SCHEDULED: <2023-05-20 Sat>
-***** TODO PHase 2 : chr22, VAF variable
-SCHEDULED: <2023-06-03 Sat>
+***** KILL PHase 2 : chr22, VAF variable
+CLOSED: [2023-06-12 Mon 23:27] SCHEDULED: <2023-06-03 Sat>
 ****** DONE de nombreux reads sont perdus -> ok sur un SNV en alignant sur chromosome 22
 CLOSED: [2023-05-29 Mon 15:38]
 Problème dansr le BAM car sans les insertion
@@ -5908,7 +5929,8 @@ CLOSED: [2023-06-01 Thu 23:40]
 348s
 ******* Changer la structure de données des
 Dataframe -> dict = les performances horribles ont disparuse
-****** TODO Refaire le test avec la nouvelle version
+****** KILL Refaire le test avec la nouvelle version
+CLOSED: [2023-06-12 Mon 23:27]
 ******* DONE Génération des données
 CLOSED: [2023-06-02 Fri 23:40]
 Mésocentre
@@ -5934,10 +5956,10 @@ CLOSED: [2023-06-03 Sat 18:26]
 NXF_OPTS=-D"user.name=${USER}" nextflow run workflows/runInserted.nf -profile standard,helios  --input="tests/xamscissors/out/inserted_{1,2}.fq.gz"
 ******* DONE Après haplotypecaller : ok
 CLOSED: [2023-06-03 Sat 18:27] SCHEDULED: <2023-06-03 Sat>
-******* TODO Après filtre vep
-SCHEDULED: <2023-06-03 Sat>
-***** TODO PHase 3 : tous les SNV
-SCHEDULED: <2023-06-03 Sat>
+******* KILL Après filtre vep
+CLOSED: [2023-06-12 Mon 23:27] SCHEDULED: <2023-06-03 Sat>
+***** KILL PHase 3 : tous les SNV
+CLOSED: [2023-06-12 Mon 23:28] SCHEDULED: <2023-06-03 Sat>
 ****** DONE Générer les données
 CLOSED: [2023-06-03 Sat 20:16] SCHEDULED: <2023-06-03 Sat>
 #+begin_src julia
@@ -5971,8 +5993,8 @@ real	73m6.934s
 user	77m25.397s
 sys	1m21.339s
 
-****** TODO Après haplotypecaller 556/590, majorité = échec alignement
-SCHEDULED: <2023-06-04 Sun>
+****** KILL Après haplotypecaller 556/590, majorité = échec alignement
+CLOSED: [2023-06-12 Mon 23:27] SCHEDULED: <2023-06-04 Sun>
 Haplotypecaller 556 found over 590
 Amongst 34 missed variant, 2 have a mapping quality > 0
 2×7 DataFrame
@@ -6093,7 +6115,13 @@ FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
 CTTTTGCTTGTCCCCAGGACGCACCTCAGGGTGGTGAAGCAAAAAAACCACGGCCCAGGAGAGGGTGGGTGCTGTGGTCTCAGTGCCACCGATCAGGAGGTCCACTGCAGCCATGTGCAAGTGCCCTTCCAGGAGCTGTCCAGAGCCCTCT
 +
 FFFFFFFFFFFFFFFFFFFFFFF:FFF:FFFFFFFFFFFFF,FFFFFFFFFFFF:F:FFFF:FFFFF,,FFF:FFFFFFFFFF,FFFFFFF,FFFFFFFFFFF,FFFFFFFFF:FFFF,F:FFFFF:FFFFFFFFF:FFFF,FFFFFFFFF
-****** TODO Supprimer NW_ et NT_
+****** DONE Supprimer NW_ et NT_
+***** TODO Phase 2 : chr22, vaf variable :TIT:
+SCHEDULED: <2023-06-16 Fri>
+CLOSED: [2023-06-12 Mon 23:27]
+***** TODO Phase 3 : tous SNV, vaf variable :TIT:
+SCHEDULED: <2023-06-16 Fri>
+CLOSED: [2023-06-12 Mon 23:27]
 **** TODO Test Indel
 *** Divers
 **** DONE Vérifier nombre de reads fastq - bam

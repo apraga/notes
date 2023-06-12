@@ -6350,3 +6350,5 @@ Temps de repos = temps de course
 2min - 1m15 - 4x1min
 
 + descent
+* <2023-06-13 Tue> Workout
+ Circuit 3x3 !!
