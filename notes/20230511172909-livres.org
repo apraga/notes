@@ -10,6 +10,8 @@ Voir [[id:2b415900-2e7f-4931-9534-95eddba3d22b][À lire]]  pour des idées
 ** HOLD Yesod book
 *** DONE Haskell
 CLOSED: [2023-01-30 Mon 12:04]
+** [[https://softwarefoundations.cis.upenn.edu/][Software foundation]] :coq:
+*** STRT [[https://softwarefoundations.cis.upenn.edu/lf-current/toc.html][Volume 1]]
 * Fanfiction :fanfic:
 ** Harry potter
 :PROPERTIES:

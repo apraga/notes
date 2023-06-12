@@ -142,8 +142,8 @@ Classification selon la capsule (vaccins)
 Voie respratoire supérieure
 Transmission goutelette, interhumaine
 **** Pathogénicité
-- adhérence cellules épithéliase rhinopharunx
-- facteurs de virulence non caplusaire
+- adhérence cellules épithéliase rhinopharynx
+- facteurs de virulence non capsulaire
 - évasion à la phagocytose
 - actionation complément, cytokien inflammatoire
 **** Résistance
