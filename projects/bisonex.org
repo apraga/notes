@@ -1331,24 +1331,14 @@ CLOSED: [2023-05-13 Sat 18:27] SCHEDULED: <2023-05-07 Sun>
 **** DONE OMIM
 CLOSED: [2023-05-08 Mon 15:02] SCHEDULED: <2023-05-01 Mon>
 **** TODO Grantham
-<<<<<<< HEAD
 **** TODO ACMG incidental
 **** TODO Gnomad ?
-=======
-SCHEDULED: <2023-05-01 Mon>
 **** TODO ACMG incidental
-SCHEDULED: <2023-05-01 Mon>
 **** TODO Gnomad ?
-SCHEDULED: <2023-05-01 Mon>
->>>>>>> parent of 97e7e6b (T2T tasks)
 **** DONE Filtrer après VEP avec filter_vep
 CLOSED: [2023-04-29 Sat 15:47]
 nNon testé
 *** TODO Comparer les annotations sur 63003856
-<<<<<<< HEAD
-=======
-SCHEDULED: <2023-05-18 Thu>
->>>>>>> parent of 97e7e6b (T2T tasks)
 **** Relancer le nouveau pipeline
 *** HOLD Ancienne version
 **** TODO HGVS
@@ -3262,10 +3252,6 @@ NB : liste techno illumina https://www.illumina.com/systems/sequencing-platforms
 
 Hiseq postérieur nextseq 550
 ******* TODO Fastq hiseq sans trimming
-<<<<<<< HEAD
-=======
-SCHEDULED: <2023-05-25 Thu>
->>>>>>> parent of 97e7e6b (T2T tasks)
 ******* DONE Capture : Exons (bed)
 CLOSED: [2023-02-25 Sat 19:46]
 https://ftp-trace.ncbi.nih.gov/ReferenceSamples/giab/data/NA12878/Garvan_NA12878_HG001_HiSeq_Exome/nexterarapidcapture_expandedexome_targetedregions.bed.gz
@@ -4088,10 +4074,7 @@ compareNA12878-giab/happy/NA12878.summary.csv
 | SNP   | ALL    |       46032 |    41138 |     4894 |       47694 |     1622 |      4930 |   362 |    31 |      0.893683 |         0.962071 |       0.103367 |        0.926617 |      2.529551552318896 |     2.4124463519313304 |        1.6206857273037931 |        1.6888675840288743 |
 | SNP   | PASS   |       46032 |    41138 |     4894 |       47694 |     1622 |      4930 |   362 |    31 |      0.893683 |         0.962071 |       0.103367 |        0.926617 |      2.529551552318896 |     2.4124463519313304 |        1.6206857273037931 |         1.688867584028874 |
 ***** TODO Résultats sans trimming
-<<<<<<< HEAD
-=======
-SCHEDULED: <2023-05-25 Thu>
->>>>>>> parent of 97e7e6b (T2T tasks)
+SCHEDULED: <2023-06-26 Mon>
 **** DONE HG002 :hg002:
 CLOSED: [2023-04-14 Fri 09:54] SCHEDULED: <2023-04-10 Mon>
 #+begin_src
@@ -4514,7 +4497,8 @@ bwa mem bwa/genomeRef test-gatad2b/single_1.fq  test-gatad2b/single_2.fq | samto
 samtools index single.bam
 #+end_src
 
-**** TODO Vérifier tous les variants sont retrouvés en 200x
+**** KILL Vérifier tous les variants sont retrouvés en 200x: hg38
+CLOSED: [2023-06-12 Mon 23:25]
 ***** DONE Après alignement
 CLOSED: [2023-04-29 Sat 18:27] SCHEDULED: <2023-04-28 Fri>
 ****** DONE SNV: avec doublons
@@ -4719,8 +4703,8 @@ CLOSED: [2023-05-04 Thu 21:57]
 Haplotypecaller: Nb reference SNV 692 vs found 585
 Variant calling, filter technical: reference SNV 692 vs found 521
 
-***** TODO Avant annotation
-SCHEDULED: <2023-04-28 Fri>
+***** KILL Avant annotation
+CLOSED: [2023-06-12 Mon 23:25] SCHEDULED: <2023-04-28 Fri>
 #+begin_src
 cd cento/variantCalling
 bgzip filter-technical.vcf
@@ -4734,12 +4718,256 @@ Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Se
 CLOSED: [2023-05-04 Thu 21:57]
 Haplotypecaller: Nb reference SNV 692 vs found 585
 Variant calling, filter technical: reference SNV 692 vs found 521
-****** TODO Comparer avec hap.py
-***** TODO Après filtre annotation
+****** KILL Comparer avec hap.py
+CLOSED: [2023-06-12 Mon 23:24]
+***** KILL Après filtre annotation
+CLOSED: [2023-06-12 Mon 23:25]
 ****** DONE Méthode naïve : 493/585
 CLOSED: [2023-05-04 Thu 22:09]
-****** TODO Comparer avec hap.py
-****** TODO VCf eval
+****** KILL Comparer avec hap.py
+CLOSED: [2023-06-12 Mon 23:25]
+****** KILL VCf eval
+CLOSED: [2023-06-12 Mon 23:25]
+ cd cento/annotation/
+ bgzip postvep-filter.vcf
+ tabix postvep-filter.vcf.gz
+ cd ../..
+ rtg vcfeval -b ~/centogene_variants/variants_for_vcfeval.tsv.gz -c cento/annotation/postvep-filter.vcf.gz  -o compare-vepfilter -t /Work/Groups/bisonex/data/giab/GRCh38/genomeRef.sdf
+ Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
+----------------------------------------------------------------------------------------------------
+   12.000                491            491         50         94     0.9076       0.8393     0.8721
+     None                491            491         50         94     0.9076       0.8393     0.8721
+
+**** TODO Vérifier tous les variants sont retrouvés en 200x: hg38 :TIT:
+***** DONE Après alignement
+CLOSED: [2023-04-29 Sat 18:27] SCHEDULED: <2023-04-28 Fri>
+****** DONE SNV: avec doublons
+CLOSED: [2023-04-28 Fri 18:12]
+On utilise [[file:~/recherche/bisonex/simuscop/checkBam.jl][checkBam.jl]]
+#+begin_src julia
+d = prepareVariant("../parsevariants/variant_genomic.csv")
+
+root = "/home/alex/code/bisonex/simuscop-centogene/cento"
+bam = root * "/preprocessing/applybqsr/cento.bam"
+bai = root * "/preprocessing/recalibrated/cento.bam.bai"
+
+snv = getSNV(d, bam, bai)
+#+end_src
+Nombreux faux homozygouteS
+Vérification avec checkFalseHemizygous(snv) : nombreux doublons dans le fichier pour simuscop...
+****** DONE SNV sans doublons
+CLOSED: [2023-04-29 Sat 18:27]
+******* DONE 18 faux homozygote mais avec peu de reads
+CLOSED: [2023-04-29 Sat 18:27]
+
+julia> @subset snv :refCount .== 0 :altCount .> 0 :zygosity .== "heterozygous"
+
+18×10 DataFrame
+ Row │ chrom         pos        variant         variantType  zygosity      ref        alt        refCount  altCount  readsCount
+     │ SubStrin…?    Int64      SubStrin…?      String?      String15      SubStrin…  SubStrin…  Int64     Int64     Int64
+─────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ NC_000022.11   42213078  g.42213078T>G   snv          heterozygous  T          G                 0         1           1
+   2 │ NC_000012.12  101680427  g.101680427C>A  snv          heterozygous  C          A                 0         3           3
+   3 │ NC_000014.9   105385684  g.105385684G>C  snv          heterozygous  G          C                 0         4           4
+   4 │ NC_000011.10  125978299  g.125978299C>T  snv          heterozygous  C          T                 0         3           3
+   5 │ NC_000023.11   77998618  g.77998618C>T   snv          heterozygous  C          T                 0         2           2
+   6 │ NC_000015.10   66703292  g.66703292C>T   snv          heterozygous  C          T                 0         3           3
+   7 │ NC_000010.11   87961118  g.87961118G>A   snv          heterozygous  G          A                 0         3           3
+   8 │ NC_000012.12  112477719  g.112477719A>G  snv          heterozygous  A          G                 0         2           2
+   9 │ NC_000020.11    6778406  g.6778406C>T    snv          heterozygous  C          T                 0         3           3
+  10 │ NC_000023.11   68192943  g.68192943G>A   snv          heterozygous  G          A                 0         2           2
+  11 │ NC_000004.12     987858  g.987858C>T     snv          heterozygous  C          T                 0         3           4
+  12 │ NC_000015.10   66435145  g.66435145G>A   snv          heterozygous  G          A                 0         1           2
+  13 │ NC_000002.12   47809595  g.47809595C>T   snv          heterozygous  C          T                 0         2           2
+  14 │ NC_000003.12  136477305  g.136477305C>G  snv          heterozygous  C          G                 0         4           4
+  15 │ NC_000005.10  157285458  g.157285458C>T  snv          heterozygous  C          T                 0         3           3
+  16 │ NC_000012.12   23604413  g.23604413T>G   snv          heterozygous  T          G                 0         5           5
+  17 │ NC_000019.10   52219703  g.52219703C>T   snv          heterozygous  C          T                 0         1           1
+  18 │ NC_000016.10   88856757  g.88856757C>T   snv          heterozygous  C          T                 0         8           8
+
+******* DONE 8 non retrouvé => probablement hors de la zjone de capture
+CLOSED: [2023-04-28 Fri 19:49]
+julia> @subset snv :refCount .== 0 :altCount .== 0
+8×10 DataFrame
+ Row │ chrom         pos        variant         variantType  zygosity      ref        alt        refCount  altCount  readsCount
+     │ SubStrin…?    Int64      SubStrin…?      String?      String15      SubStrin…  SubStrin…  Int64     Int64     Int64
+─────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ NC_000015.10   74343027  g.74343027C>T   snv          heterozygous  C          T                 0         0           0
+   2 │ NC_000011.10   20638345  g.20638345A>G   snv          heterozygous  A          G                 0         0           0
+   3 │ NC_000004.12  139370252  g.139370252C>T  snv          heterozygous  C          T                 0         0           2
+   4 │ NC_000017.11   61966475  g.61966475G>T   snv          heterozygous  G          T                 0         0           0
+   5 │ NC_000019.10   54144058  g.54144058G>A   snv          heterozygous  G          A                 0         0           0
+   6 │ NC_000023.11   77635947  g.77635947A>G   snv          hemizygous    A          G                 0         0           0
+   7 │ NC_000005.10    1258495  g.1258495G>A    snv          heterozygous  G          A                 0         0           0
+   8 │ NC_000012.12    2449086  g.2449086C>G    snv          heterozygous  C          G                 0         0           0
+
+***** KILL Après haplotypecaller
+CLOSED: [2023-06-12 Mon 23:24]
+****** KILL 20x
+CLOSED: [2023-04-29 Sat 15:39]
+Manque 183 sur 766
+[[file:~/recherche/bisonex/simuscop/checkVCF.jl][checkVCF.jl]]
+#+begin_src julia
+@subset leftjoin(d2, dHaplo2, on=:genomic) ismissing.(:Column1)
+#+end_src
+Problème de profondeur ?
+Ex: chr13 nombre de 101081606
+NC_000011.10   16014966  g.16014966G>A
+1 read sur 11 pour allèle alternative
+Sur le patient de référence, 202 reads!
+
+Celui-ci n'est pas le fichier de capture (ni dans le bam !)
+ex: NC_000015.10   74343027  g.74343027C>T
+
+Pour les autres, on devrait les retrouver...
+
+Vérifier le nombre de reads sur 63003856
+Vérifier la paramétrisation du modèle également
+****** DONE [#B] 200x
+CLOSED: [2023-05-18 Thu 11:04] SCHEDULED: <2023-04-30 Sun>
+120 manquants (99 sans doublon)!
+
+On vérifie dans IGV (vcf + bam après alignement) :
+******* snv NC_000015.10   74343027
+- rien d'appelé
+- pas une région répétée
+- base quality (voir [[*Phred score][Phred score]] ) à 37 donc ok
+- variant retrouvé à 26/42
+- Bam après aplybqsr: base qualità 35 donc ok
+
+chr15 également à 89318565, variant retrouvé à 25/33 avec basequal de 37
+
+
+Sans oublier de charger les instructions avx
+#+begin_src sh
+module load gcc@11.3.0/gcc-12.1.0
+#+end_src
+
+On coupe le .bam par chromosome pour débugger (sur le mesocentre)
+#+begin_src sh :dir /ssh:meso:/Work/Users/apraga/bisonex/simuscop-centogene-200x/cento/testing :results silent
+ln -s ../preprocessing/applybqsr/cento.bam .
+ln -s ../preprocessing/recalibrated/cento.bam.bai .
+ln -s /Work/Projects/bisonex/data/dbSNP/GRCh38.p13/dbSNP.gz .
+ln -s /Work/Projects/bisonex/data/dbSNP/GRCh38.p13/dbSNP.gz.tbi .
+ln -s /Work/Projects/bisonex/data/genome/GRCh38.p13/genomeRef.dict .
+ln -s /Work/Projects/bisonex/data/genome/GRCh38.p13/genomeRef.fna .
+ln -s /Work/Projects/bisonex/data/genome/GRCh38.p13/genomeRef.fna.fai .
+#+end_src
+
+On doit lancer à la main (org-mode ne connait pas le chemin de samtools)
+samtools view -b cento.bam NC_000015.10 > cento_chr15.bam
+samtools index cento_chr15.bam
+
+Puis on se restreint au chronmosome 15
+samtools faidx genomeRef.fna NC_000015.10 > genomeRef_chr15.fa
+samtools faidx genomeRef_chr15.fa
+gatk CreateSequenceDictionary -R genomeRef_chr15.fa -O genomeRef_chr15.dict
+
+On restreint au chromosome 15 avec l'option -L (dure = 1min)
+gatk --java-options "-Xmx3072M" HaplotypeCaller --input cento_chr15.bam \
+    --output test.vcf.gz --reference genomeRef.fna --dbsnp dbSNP.gz --tmp-dir . --max-mnp-distance 2 -L NC_000015.10
+
+******* DONE Tutorial haplotycaller
+CLOSED: [2023-05-01 Mon 19:58]
+Procédure : https://gatk.broadinstitute.org/hc/en-us/articles/360043491652-When-HaplotypeCaller-and-Mutect2-do-not-call-an-expected-variant
+******** DONE Supprimer --max-mnp-distance = 2: idem
+CLOSED: [2023-04-30 Sun 15:42]
+******** DONE --debug &> run.log : Non appelé...
+CLOSED: [2023-04-30 Sun 15:52]
+******** DONE --linked-de-bruijn-graph: idem
+CLOSED: [2023-04-30 Sun 15:55]
+******** DONE --recover-all-dangling-branches
+CLOSED: [2023-04-30 Sun 16:01]
+******** DONE --min-pruning 0 : plus mais pas celui là
+CLOSED: [2023-04-30 Sun 15:59]
+******** DONE --bam-output
+CLOSED: [2023-04-30 Sun 16:50]
+********* DONE : rien !
+CLOSED: [2023-04-30 Sun 16:08]
+********* DONE + --recover-all-dangling-branches : rien !
+CLOSED: [2023-04-30 Sun 16:08]
+******** DONE Données filtrées ? apparement non
+CLOSED: [2023-04-30 Sun 16:41]
+183122 read(s) filtered by: MappingQualityReadFilter
+3674 read(s) filtered by: NotDuplicateReadFilter
+********* DONE --disable-read-filter MappingQualityReadFilter: idem
+CLOSED: [2023-04-30 Sun 16:34]
+On a bien  - 0 read(s) filtered by: MappingQualityAvailableReadFilter
+********* DONE --disable-read-filter NotDuplicateReadFilter: idem
+CLOSED: [2023-04-30 Sun 16:40]
+
+******** DONE Essayer freebayes : idem
+CLOSED: [2023-04-30 Sun 16:22]
+freebayes -f genomeRef.fna -r NC_000015.10 cento_chr15.bam > freebayes-test-chr15.vcf
+******** DONE Avec toutes les options : idem
+--linked-de-bruijn-graph --recover-all-dangling-branches --min-pruning 0 --bam-output debug.bam
+CLOSED: [2023-04-30 Sun 16:50]
+******** DONE Vérifier qu'on regarde le même bam : oui
+CLOSED: [2023-04-30 Sun 16:50]
+******** DONE Désactiver dbSNP : idem
+CLOSED: [2023-04-30 Sun 16:52]
+******** DONE Changer kmer size : idem
+CLOSED: [2023-04-30 Sun 16:56]
+par exemple[[https://gatk.broadinstitute.org/hc/en-us/community/posts/360075653152-REAL-Variant-not-called-by-HaplotypeCaller][forum gatk]] --kmer-size 18 --kmer-size 22
+******** DONE --adaptive-pruning true
+CLOSED: [2023-05-01 Mon 19:57]
+
+******* DONE Mapping quality : est à 0 !!!!
+CLOSED: [2023-05-01 Mon 19:58]
+
+****** KILL Comparer VCF avec vcfeval :haplotypecaller:
+CLOSED: [2023-06-12 Mon 23:24]
+On prépare les données en julia
+#+begin_src ~/recherche/bisonex/simuscop
+julia --project=. toVCF.jl
+#+end_src
+Puis on export sur le mésocentre
+#+begin_src
+scp variants_for_vcfeval.tsv.gz* meso:centogene_variants/
+#+end_src
+#+begin_src
+z bis
+cd simuscop-200x
+rtg vcfeval -b ~/centogene_variants/variants_for_vcfeval.tsv.gz -c cento/variantCalling/haplotypecaller/cento.vcf.gz -o compare-haplotypecaller -t /Work/Groups/bisonex/data/giab/GRCh38/genomeRef.sdf
+#+end_src
+Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
+----------------------------------------------------------------------------------------------------
+   82.000                540            540         60         45     0.9000       0.9231     0.9114
+     None                546            546        329         39     0.6240       0.9333     0.7479
+
+****** KILL Comparer avec hap.py :haplotypecaller:
+CLOSED: [2023-06-12 Mon 23:24]
+ NXF_OPTS=-D"user.name=${USER}" nextflow run workflows/checkInserted.nf -profile standard,helios --outdir=compare-simuscop-200x  --query=out/simuscop-centogene-200x/cento/callVariant/haplotypecaller/cento.vcf.gz --truth=centogene_variants/variants_for_vcfeval.tsv.gz --id=simuscop-200x-check
+****** DONE Méthode naïve 549/585
+CLOSED: [2023-05-04 Thu 21:57]
+Haplotypecaller: Nb reference SNV 692 vs found 585
+Variant calling, filter technical: reference SNV 692 vs found 521
+
+***** KILL Avant annotation
+CLOSED: [2023-06-12 Mon 23:25] SCHEDULED: <2023-04-28 Fri>
+#+begin_src
+cd cento/variantCalling
+bgzip filter-technical.vcf
+tabix -p vcf filter-technical.vcf.gz -f
+#+end_src
+Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
+----------------------------------------------------------------------------------------------------
+   12.000                519            519         55         66     0.9042       0.8872     0.8956
+     None                519            519         55         66     0.9042       0.8872     0.8956
+****** DONE Méthode naïve 521/585
+CLOSED: [2023-05-04 Thu 21:57]
+Haplotypecaller: Nb reference SNV 692 vs found 585
+Variant calling, filter technical: reference SNV 692 vs found 521
+****** KILL Comparer avec hap.py
+CLOSED: [2023-06-12 Mon 23:24]
+***** KILL Après filtre annotation
+CLOSED: [2023-06-12 Mon 23:25]
+****** DONE Méthode naïve : 493/585
+CLOSED: [2023-05-04 Thu 22:09]
+****** KILL Comparer avec hap.py
+CLOSED: [2023-06-12 Mon 23:25]
+****** KILL VCf eval
+CLOSED: [2023-06-12 Mon 23:25]
  cd cento/annotation/
  bgzip postvep-filter.vcf
  tabix postvep-filter.vcf.gz
