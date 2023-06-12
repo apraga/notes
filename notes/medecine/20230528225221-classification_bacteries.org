@@ -97,6 +97,11 @@ détecte les cytochrome de type c (pigments hémo-protéiques dans la plupart de
 | Vibrio         |           |
 
 ** Mobile :
+- Monotriche = 1 cil (triche = poil) -> va dans une direction à l’examen direct
+- Céphalotriches: un cil à chaque extrémités
+- Lophotriches: un cil à chaque extrémités
+- Péritriches : cils tout autour -> mouvement désordonné
+
 - cocci gram + : non (sauf Enterococcus casseliflavus, gallinarum; Vagococcus, Planococcus)
 - Bacille gram+ : Listeria (tournoyante) , Bacillus (ondulante)
 - Bacille gram- :
