@@ -279,13 +279,10 @@ lol.out.a.view()
 #+end_src
 ** Quelle version du génome ?
 Il y a 2 notations pour les chrosome: Refseq (NC_0001) ou chr1, chr2...
-dbSNP utilise Refseq
-pour le fasta, 2 solutions
-- refseq : "https://ftp.ncbi.nlm.nih.gov/refseq/H_sapiens/annotation/${genome}_latest/refseq_identifiers/${fna}.gz"
-  -> nécessite d'indexer le fichier (long !)
-- chromosome https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.15_GRCh38/seqs_for_alignment_pipelines.ucsc_ids/
-  -> nécessite d'annoter les chromosomes pour corriger (avec le fichier gff)
-  On utilise la version chromosome donc on annote dbSNP (à faire)
+
+Convention
+- en hg38, refseq pour fasta + dbsnp. L'annotation avec CADD est faite en parallèle en renommant les chromosomes.
+- en T2T, chr1 etc pour fasta + dbsnp (attention à la source pour le fasta)
 ** Performances
 Ordinateur de Carine (WSL2) : 4h dont 1h15 alignement (parallélisé) et 1h15 haplotypecaller (séquentiel)
 ** Chromosomes NC, NT, NW
@@ -433,16 +430,34 @@ CLOSED: [2022-08-19 Fri 15:18]
 *** DONE Tester patch de @pennae pour gros fichiers
 SCHEDULED: <2022-08-19 Fri>
 *** STRT Télécharger les données avec nextflow
-**** DONE Genome de référence
-**** DONE dbSNP
-**** TODO VEP 20G
+**** HOLD hg38
+***** DONE Genome de référence
+***** DONE dbSNP
+***** DONE VEP 20G
+CLOSED: [2023-06-12 Mon 22:13]
 Ajout vérification checksum -> à vérifier
-**** TODO transcriptome (spip)
+***** DONE transcriptome (spip)
+CLOSED: [2023-06-12 Mon 22:13]
 Rajouter checksum manuel
-**** KILL Refseq
-**** STRT OMIM
+***** KILL Refseq
+***** DONE OMIM
+CLOSED: [2023-06-12 Mon 22:13]
 codé, à vérifier
-**** TODO ACMG incidental
+***** HOLD ACMG incidental
+**** TODO T2T :T2T:
+SCHEDULED: <2023-06-12 Mon>
+***** DONE Fasta notation chr1
+CLOSED: [2023-06-12 Mon 23:16] SCHEDULED: <2023-06-12 Mon>
+***** DONE Fasta : compatibilité GRCh38
+CLOSED: [2023-06-12 Mon 23:16] SCHEDULED: <2023-06-12 Mon>
+***** TODO Genome indexé
+SCHEDULED: <2023-06-12 Mon>
+***** TODO Genome indexé : compatibilité GRCh38
+SCHEDULED: <2023-06-12 Mon>
+***** DONE dbSNP (notation snp)
+CLOSED: [2023-06-12 Mon 23:16] SCHEDULED: <2023-06-12 Mon>
+***** TODO dbSNP compatibilité GRCh38
+SCHEDULED: <2023-06-12 Mon>
 *** HOLD Processing bases de données
 **** DONE dbSNP common
 **** DONE Seulement les ID dans dbSNP common !
@@ -1067,7 +1082,7 @@ $ ../result/bin/hap.py example/happy/PG_NA12878_chr21.vcf.gz       example/happy
 **** TODO Version avec rtg-tools
 **** TODO Faire fonctionner Tests
 ***** TODO Essai 2 : depuis nix develop:
-SCHEDULED: <2023-05-20 Sat>
+SCHEDULED: <2023-06-13 Tue>
 #+begin_src
 nix develop .#hap-py
 genericBuild
@@ -1311,16 +1326,16 @@ CLOSED: [2023-05-13 Sat 18:27] SCHEDULED: <2023-05-07 Sun>
 **** DONE OMIM
 CLOSED: [2023-05-08 Mon 15:02] SCHEDULED: <2023-05-01 Mon>
 **** TODO Grantham
-SCHEDULED: <2023-05-01 Mon>
+SCHEDULED: <2023-06-19 Mon>
 **** TODO ACMG incidental
-SCHEDULED: <2023-05-01 Mon>
+SCHEDULED: <2023-06-19 Mon>
 **** TODO Gnomad ?
-SCHEDULED: <2023-05-01 Mon>
+SCHEDULED: <2023-06-19 Mon>
 **** DONE Filtrer après VEP avec filter_vep
 CLOSED: [2023-04-29 Sat 15:47]
 nNon testé
 *** TODO Comparer les annotations sur 63003856
-SCHEDULED: <2023-05-18 Thu>
+SCHEDULED: <2023-06-19 Mon>
 **** Relancer le nouveau pipeline
 *** HOLD Ancienne version
 **** TODO HGVS
@@ -3163,7 +3178,7 @@ https://github.com/ga4gh/benchmarking-tools
 Prérequis :
 - [[*hap.py][hap.py]]
 - [[*NA12878][NA12878]]
-*** DONE GIAB : exome :giab:
+*** DONE GIAB hg38 : exome :giab:
 CLOSED: [2023-04-16 Sun 16:33]
 **** Notes
 https://github.com/genome-in-a-bottle/giab_FAQ
@@ -3233,8 +3248,8 @@ Il y a 2 samples (NIST7035 et NIST7086), chacun sur 2 lanes -> à concaténer
 NB : liste techno illumina https://www.illumina.com/systems/sequencing-platforms.html
 
 Hiseq postérieur nextseq 550
-******* TODO Fastq hiseq sans trimming
-SCHEDULED: <2023-05-25 Thu>
+******* KILL Fastq hiseq sans trimming
+CLOSED: [2023-06-12 Mon 22:20] SCHEDULED: <2023-05-25 Thu>
 ******* DONE Capture : Exons (bed)
 CLOSED: [2023-02-25 Sat 19:46]
 https://ftp-trace.ncbi.nih.gov/ReferenceSamples/giab/data/NA12878/Garvan_NA12878_HG001_HiSeq_Exome/nexterarapidcapture_expandedexome_targetedregions.bed.gz
@@ -4056,8 +4071,8 @@ compareNA12878-giab/happy/NA12878.summary.csv
 | INDEL | PASS   |        4871 |     3678 |     1193 |        7036 |     1299 |      2011 |   208 |   217 |      0.755081 |         0.741493 |       0.285816 |        0.748225 |                        |                        |        1.6174985978687606 |        2.5240506329113925 |
 | SNP   | ALL    |       46032 |    41138 |     4894 |       47694 |     1622 |      4930 |   362 |    31 |      0.893683 |         0.962071 |       0.103367 |        0.926617 |      2.529551552318896 |     2.4124463519313304 |        1.6206857273037931 |        1.6888675840288743 |
 | SNP   | PASS   |       46032 |    41138 |     4894 |       47694 |     1622 |      4930 |   362 |    31 |      0.893683 |         0.962071 |       0.103367 |        0.926617 |      2.529551552318896 |     2.4124463519313304 |        1.6206857273037931 |         1.688867584028874 |
-***** TODO Résultats sans trimming
-SCHEDULED: <2023-05-25 Thu>
+***** KILL Résultats sans trimming
+CLOSED: [2023-06-12 Mon 22:21] SCHEDULED: <2023-05-25 Thu>
 **** DONE HG002 :hg002:
 CLOSED: [2023-04-14 Fri 09:54] SCHEDULED: <2023-04-10 Mon>
 #+begin_src
@@ -4190,6 +4205,14 @@ CLOSED: [2023-04-06 Thu 21:41] SCHEDULED: <2023-04-02 Sun>
 **** DONE Plot : ashkenazim trio
 CLOSED: [2023-04-18 Tue 21:27] SCHEDULED: <2023-04-16 Sun>
 /Entered on/ [2023-04-16 Sun 17:29]
+*** TODO GIAB T2T :giab:
+SCHEDULED: <2023-06-14 Wed>
+**** TODO Télécharger les données
+**** TODO HG001
+**** TODO HG002
+**** TODO HG003
+**** TODO HG004
+**** TODO Plot
 *** TODO Platinum genome
 https://emea.illumina.com/platinumgenomes.html
 *** TODO Séquencer NA12878
@@ -4480,7 +4503,8 @@ bwa mem bwa/genomeRef test-gatad2b/single_1.fq  test-gatad2b/single_2.fq | samto
 samtools index single.bam
 #+end_src
 
-**** TODO Vérifier tous les variants sont retrouvés en 200x
+**** KILL Vérifier tous les variants sont retrouvés en 200x: hg38
+CLOSED: [2023-06-12 Mon 22:18]
 ***** DONE Après alignement
 CLOSED: [2023-04-29 Sat 18:27] SCHEDULED: <2023-04-28 Fri>
 ****** DONE SNV: avec doublons
@@ -4543,8 +4567,8 @@ julia> @subset snv :refCount .== 0 :altCount .== 0
    7 │ NC_000005.10    1258495  g.1258495G>A    snv          heterozygous  G          A                 0         0           0
    8 │ NC_000012.12    2449086  g.2449086C>G    snv          heterozygous  C          G                 0         0           0
 
-***** TODO Après haplotypecaller
-SCHEDULED: <2023-04-28 Fri>
+***** KILL Après haplotypecaller
+CLOSED: [2023-06-12 Mon 22:18]
 ****** KILL 20x
 CLOSED: [2023-04-29 Sat 15:39]
 Manque 183 sur 766
@@ -4657,7 +4681,8 @@ CLOSED: [2023-05-01 Mon 19:57]
 ******* DONE Mapping quality : est à 0 !!!!
 CLOSED: [2023-05-01 Mon 19:58]
 
-****** TODO Comparer VCF avec vcfeval :haplotypecaller:
+****** KILL Comparer VCF avec vcfeval :haplotypecaller:
+CLOSED: [2023-06-12 Mon 22:18]
 On prépare les données en julia
 #+begin_src ~/recherche/bisonex/simuscop
 julia --project=. toVCF.jl
@@ -4676,15 +4701,16 @@ Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Se
    82.000                540            540         60         45     0.9000       0.9231     0.9114
      None                546            546        329         39     0.6240       0.9333     0.7479
 
-****** TODO Comparer avec hap.py :haplotypecaller:
+****** KILL Comparer avec hap.py :haplotypecaller:
+CLOSED: [2023-06-12 Mon 22:18]
  NXF_OPTS=-D"user.name=${USER}" nextflow run workflows/checkInserted.nf -profile standard,helios --outdir=compare-simuscop-200x  --query=out/simuscop-centogene-200x/cento/callVariant/haplotypecaller/cento.vcf.gz --truth=centogene_variants/variants_for_vcfeval.tsv.gz --id=simuscop-200x-check
 ****** DONE Méthode naïve 549/585
 CLOSED: [2023-05-04 Thu 21:57]
 Haplotypecaller: Nb reference SNV 692 vs found 585
 Variant calling, filter technical: reference SNV 692 vs found 521
 
-***** TODO Avant annotation
-SCHEDULED: <2023-04-28 Fri>
+***** KILL Avant annotation
+CLOSED: [2023-06-12 Mon 22:18] 
 #+begin_src
 cd cento/variantCalling
 bgzip filter-technical.vcf
@@ -4698,12 +4724,16 @@ Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Se
 CLOSED: [2023-05-04 Thu 21:57]
 Haplotypecaller: Nb reference SNV 692 vs found 585
 Variant calling, filter technical: reference SNV 692 vs found 521
-****** TODO Comparer avec hap.py
-***** TODO Après filtre annotation
+****** KILL Comparer avec hap.py
+CLOSED: [2023-06-12 Mon 22:18]
+***** KILL Après filtre annotation
+CLOSED: [2023-06-12 Mon 22:18]
 ****** DONE Méthode naïve : 493/585
 CLOSED: [2023-05-04 Thu 22:09]
-****** TODO Comparer avec hap.py
-****** TODO VCf eval
+****** KILL Comparer avec hap.py
+CLOSED: [2023-06-12 Mon 22:18]
+****** KILL VCf eval
+CLOSED: [2023-06-12 Mon 22:18]
  cd cento/annotation/
  bgzip postvep-filter.vcf
  tabix postvep-filter.vcf.gz
@@ -4713,6 +4743,9 @@ CLOSED: [2023-05-04 Thu 22:09]
 ----------------------------------------------------------------------------------------------------
    12.000                491            491         50         94     0.9076       0.8393     0.8721
      None                491            491         50         94     0.9076       0.8393     0.8721
+
+**** TODO Vérifier tous les variants sont retrouvés en 200x: T2T
+SCHEDULED: <2023-06-15 Thu>
 
 *** KILL NEAT : trop lent :neat:
 CLOSED: [2023-04-29 Sat 22:06]
@@ -5201,8 +5234,8 @@ Puis on lance le pipeline sur correct_1
 - [X] Variant visible après appel de variant
 ****** KILL Tester SNV chromosome 22
 CLOSED: [2023-05-29 Mon 15:36] SCHEDULED: <2023-05-20 Sat>
-***** TODO PHase 2 : chr22, VAF variable
-SCHEDULED: <2023-06-03 Sat>
+***** TODO PHase 2 : chr22, VAF variable hg38
+SCHEDULED: <2023-06-15 Thu>
 ****** DONE de nombreux reads sont perdus -> ok sur un SNV en alignant sur chromosome 22
 CLOSED: [2023-05-29 Mon 15:38]
 Problème dansr le BAM car sans les insertion
@@ -5644,7 +5677,8 @@ CLOSED: [2023-06-01 Thu 23:40]
 348s
 ******* Changer la structure de données des
 Dataframe -> dict = les performances horribles ont disparuse
-****** TODO Refaire le test avec la nouvelle version
+****** KILL Refaire le test avec la nouvelle version
+CLOSED: [2023-06-12 Mon 22:19]
 ******* DONE Génération des données
 CLOSED: [2023-06-02 Fri 23:40]
 Mésocentre
@@ -5670,10 +5704,12 @@ CLOSED: [2023-06-03 Sat 18:26]
 NXF_OPTS=-D"user.name=${USER}" nextflow run workflows/runInserted.nf -profile standard,helios  --input="tests/xamscissors/out/inserted_{1,2}.fq.gz"
 ******* DONE Après haplotypecaller : ok
 CLOSED: [2023-06-03 Sat 18:27] SCHEDULED: <2023-06-03 Sat>
-******* TODO Après filtre vep
-SCHEDULED: <2023-06-03 Sat>
-***** TODO PHase 3 : tous les SNV
-SCHEDULED: <2023-06-03 Sat>
+******* KILL Après filtre vep
+CLOSED: [2023-06-12 Mon 22:19] SCHEDULED: <2023-06-03 Sat>
+***** TODO PHase 2 : chr22, VAF variable :T2T:
+SCHEDULED: <2023-06-16 Fri>
+***** KILL PHase 3 : tous les SNV hg38
+CLOSED: [2023-06-12 Mon 22:20] SCHEDULED: <2023-06-03 Sat>
 ****** DONE Générer les données
 CLOSED: [2023-06-03 Sat 20:16] SCHEDULED: <2023-06-03 Sat>
 #+begin_src julia
@@ -5707,8 +5743,8 @@ real	73m6.934s
 user	77m25.397s
 sys	1m21.339s
 
-****** TODO Après haplotypecaller 556/590, majorité = échec alignement
-SCHEDULED: <2023-06-04 Sun>
+****** KILL Après haplotypecaller 556/590, majorité = échec alignement
+CLOSED: [2023-06-12 Mon 22:20] SCHEDULED: <2023-06-04 Sun>
 Haplotypecaller 556 found over 590
 Amongst 34 missed variant, 2 have a mapping quality > 0
 2×7 DataFrame
@@ -5834,7 +5870,48 @@ FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
 CTTTTGCTTGTCCCCAGGACGCACCTCAGGGTGGTGAAGCAAAAAAACCACGGCCCAGGAGAGGGTGGGTGCTGTGGTCTCAGTGCCACCGATCAGGAGGTCCACTGCAGCCATGTGCAAGTGCCCTTCCAGGAGCTGTCCAGAGCCCTCT
 +
 FFFFFFFFFFFFFFFFFFFFFFF:FFF:FFFFFFFFFFFFF,FFFFFFFFFFFF:F:FFFF:FFFFF,,FFF:FFFFFFFFFF,FFFFFFF,FFFFFFFFFFF,FFFFFFFFF:FFFF,F:FFFFF:FFFFFFFFF:FFFF,FFFFFFFFF
-****** TODO Supprimer NW_ et NT_
+****** DONE Supprimer NW_ et NT_: 578/590
+CLOSED: [2023-06-07 Wed 07:36]
+─────┼──────────────────────────────────────────────────────────────────────────
+   1 │ NC_000001.11  155235252  A        G        het        41.3788  15.4418
+   2 │ NC_000006.12   32039426  T        A        het        45.4308  12.1181
+   3 │ NC_000006.12   32040110  G        T        het        51.9511  12.677
+   4 │ NC_000006.12   32040723  G        A        het        23.4748  19.6054
+   5 │ NC_000006.12   32041006  C        T        het        18.384   23.4909
+   6 │ NC_000006.12   32041147  G        A        het        55.4115  12.0157
+   7 │ NC_000017.11    7513752  C        T        het        60.0      0.0
+   8 │ NC_000017.11   39672244  G        A        het        60.0      0.0
+   9 │ NC_000019.10   54144058  G        A        het        59.9747   0.389742
+  10 │ NC_000021.9    43063074  A        G        het         0.0      0.0
+  11 │ NC_000021.9    43426167  C        T        het         0.0      0.0
+  12 │ NC_000022.11   42213078  T        G        het        60.0      0.0
+****** DONE Vérifier sur BAM du sous-traitant que supprimer les contig et scaffold a été fait.
+CLOSED: [2023-06-12 Mon 22:12]
+63086186
+****** DONE Insérer variant mais en tronquant la distribution à 0.2
+CLOSED: [2023-06-12 Mon 22:12] SCHEDULED: <2023-06-07 Wed>
+2 variants avec encore des reads de mapping quality = 0
+
+NC_000021.9    43063074  A        G        het         0.0      0.0
+NC_000021.9    43426167  C        T        het         0.0      0.0
+
+11  mapping quality > 0 mais bam de référence a changé avec l'alignement ...
+
+Manque de reads pour
+NC_000001.11  155235252  A        G        het        41.2806  15.1217
+
+NC_000006.12   32039426  T        A        het        44.7216  13.2945
+NC_000006.12   32040723  G        A        het        23.4705  19.5997
+NC_000006.12   32041006  C        T        het        18.384   23.4909
+NC_000017.11    7513752  C        T        het        60.0      0.0
+NC_000017.11   39672244  G        A        het        60.0      0.0
+NC_000017.11   46018710  C        T        het        60.0      0.0
+NC_000019.10   42295148  C        G        het        60.0      0.0
+NC_000019.10   54144058  G        A        het        59.9747   0.389742
+NC_000022.11   42213078  T        G        het        60.0      0.0
+
+***** TODO PHase 3 : tous les SNV, VAF variable :T2T:
+SCHEDULED: <2023-06-19 Mon>
 **** TODO Test Indel
 *** Divers
 **** DONE Vérifier nombre de reads fastq - bam
