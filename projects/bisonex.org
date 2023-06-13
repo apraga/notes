@@ -278,14 +278,9 @@ ou si /a/ est le nom de la sortie
 lol.out.a.view()
 #+end_src
 ** Quelle version du génome ?
-Il y a 2 notations pour les chrosome: Refseq (NC_0001) ou chr1, chr2...
-dbSNP utilise Refseq
-pour le fasta, 2 solutions
-- refseq : "https://ftp.ncbi.nlm.nih.gov/refseq/H_sapiens/annotation/${genome}_latest/refseq_identifiers/${fna}.gz"
-  -> nécessite d'indexer le fichier (long !)
-- chromosome https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.15_GRCh38/seqs_for_alignment_pipelines.ucsc_ids/
-  -> nécessite d'annoter les chromosomes pour corriger (avec le fichier gff)
-  On utilise la version chromosome donc on annote dbSNP (à faire)
+- T2T: notation chromose = chR1,2 : ok genome, clinvar, dbSNP
+- GRCh38: notation chromose = NC_... : ok genome, clinvar, dbSNP
+
 ** Performances
 Ordinateur de Carine (WSL2) : 4h dont 1h15 alignement (parallélisé) et 1h15 haplotypecaller (séquentiel)
 ** Chromosomes NC, NT, NW
@@ -452,18 +447,39 @@ CLOSED: [2023-06-12 Mon 23:29]
 SCHEDULED: <2023-06-15 Thu>
 **** DONE fasta
 CLOSED: [2023-06-12 Mon 23:30]
-**** DONE fasta : compatibilité hg38
+***** DONE compatibilité hg38
 CLOSED: [2023-06-12 Mon 23:30]
 **** DONE fasta index
 CLOSED: [2023-06-13 Tue 00:07]
-**** DONE fasta index: compatibilité hg38
+***** DONE compatibilité hg38
 CLOSED: [2023-06-13 Tue 00:07]
 **** DONE fasta dictionnaire
 CLOSED: [2023-06-13 Tue 00:07]
 **** DONE dbSNP
 CLOSED: [2023-06-12 Mon 23:30]
-**** DONE dbSNP : compatibilité hg38
+***** DONE compatibilité hg38
 CLOSED: [2023-06-12 Mon 23:30]
+**** TODO commonSNP
+***** TODO compatibilité hg38
+cd /Work/Groups/bisonex/data/dbsnp/GRCh38.p14
+❯ ga@mesointeractive GRCh38.p14]$ zgrep -c '^NC' dbSNP_common.vcf.gz
+21340485
+[apraga@mesointeractive GRCh38.p14]$ pwd
+[apraga@mesointeractive GRCh38.p14]$ zgrep -c '^NC'
+dbSNP_common.vcf.gz                     ID_of_common_snp_not_clinvar_patho.txt
+dbSNP_common.vcf.gz.tbi                 ID_of_common_snp.txt
+
+[apraga@mesointeractive dbsnp]$ cd chm13v2.0/
+[apraga@mesointeractive chm13v2.0]$ ls
+chm13v2.0_dbSNPv155.vcf.gz      dbSNP_common.vcf.gz.tbi                 versions.yml
+chm13v2.0_dbSNPv155.vcf.gz.tbi  ID_of_common_snp_not_clinvar_patho.txt
+dbSNP_common.vcf.gz             ID_of_common_snp.txt
+[apraga@mesointeractive chm13v2.0]$ zgrep -c '^chr' dbSNP_common.vcf.gz
+19433713
+[apraga@mesointeractive chm13v2.0] $
+❯ man tmux
+**** TODO commonSNP non patho
+***** TODO compatibilité hg38
 *** HOLD Processing bases de données
 **** DONE dbSNP common
 **** DONE Seulement les ID dans dbSNP common !
@@ -5874,7 +5890,7 @@ bwa index chr22.fna
 
 #+begin_src
 cd /Work/Users/apraga/bisonex/tests/bamscissors
-ln -s ../../out/63003856_S135_R/preprocessing/applybqsr/63003856_chr22_{1,2}.fq.gz .
+ln -s ../   ../out/63003856_S135_R/preprocessing/applybqsr/63003856_chr22_{1,2}.fq.gz .
 
 srun -c 24 -p smp -t 1:00:00 --pty bash
 bwa mem -t 24 /Work/Projects/bisonex/data/genome/GRCh38.p13/chr22/chr22.fna 63003856_chr22_1.fq.gz 63003856_chr22_1.fq.gz -o smallref.sam
