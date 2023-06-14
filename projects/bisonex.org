@@ -443,8 +443,11 @@ CLOSED: [2023-06-12 Mon 23:29]
 codé, à vérifier
 **** KILL ACMG incidental
 CLOSED: [2023-06-12 Mon 23:29]
-*** TODO Télécharge données :TIT:
+*** TODO Données :T2T:
 SCHEDULED: <2023-06-15 Thu>
+:PROPERTIES:
+:ID:       5d915178-ca96-44ef-87f1-6702af114f2b
+:END:
 **** DONE fasta
 CLOSED: [2023-06-12 Mon 23:30]
 ***** DONE compatibilité hg38
@@ -459,8 +462,10 @@ CLOSED: [2023-06-13 Tue 00:07]
 CLOSED: [2023-06-12 Mon 23:30]
 ***** DONE compatibilité hg38
 CLOSED: [2023-06-12 Mon 23:30]
-**** TODO commonSNP
-***** TODO compatibilité hg38
+**** DONE commonSNP
+CLOSED: [2023-06-14 Wed 22:32]
+***** DONE compatibilité hg38
+CLOSED: [2023-06-14 Wed 22:32]
 cd /Work/Groups/bisonex/data/dbsnp/GRCh38.p14
 ❯ ga@mesointeractive GRCh38.p14]$ zgrep -c '^NC' dbSNP_common.vcf.gz
 21340485
@@ -478,8 +483,12 @@ dbSNP_common.vcf.gz             ID_of_common_snp.txt
 19433713
 [apraga@mesointeractive chm13v2.0] $
 ❯ man tmux
-**** TODO commonSNP non patho
-***** TODO compatibilité hg38
+**** DONE commonSNP non patho
+CLOSED: [2023-06-14 Wed 22:35]
+***** DONE compatibilité hg38
+CLOSED: [2023-06-14 Wed 22:35]
+**** TODO cache vep
+SCHEDULED: <2023-06-17 Sat>
 *** HOLD Processing bases de données
 **** DONE dbSNP common
 **** DONE Seulement les ID dans dbSNP common !
@@ -1104,7 +1113,7 @@ $ ../result/bin/hap.py example/happy/PG_NA12878_chr21.vcf.gz       example/happy
 **** TODO Version avec rtg-tools
 **** TODO Faire fonctionner Tests
 ***** TODO Essai 2 : depuis nix develop:
-SCHEDULED: <2023-05-20 Sat>
+SCHEDULED: <2023-06-21 Wed>
 #+begin_src
 nix develop .#hap-py
 genericBuild
@@ -1182,22 +1191,16 @@ unknown location(0): fatal error in "testVariantPrimitiveSplitter": signal: SIGA
 HGREF=../genome/GRCh38/GCA_000001405.15_GRCh38_no_alt_analysis_set.fasta hap.py        example/happy/PG_NA12878_chr21.vcf.gz       example/happy/NA12878_chr21.vcf.gz       -f example/happy/PG_Conf_chr21.bed.gz       -o test
 ******* Helios
 échec
-** TODO T2T
+** TODO T2T :T2T:
 Toutes les ressourcs sont décrites ici
 https://github.com/marbl/CHM13
 Détails sur le pipeline
 https://genome.ucsc.edu/cgi-bin/hgTrackUi?db=hub_3267197_GCA_009914755.4&c=CP068277.2&g=hub_3267197_hgLiftOver
-*** TODO URL hg38 + T2T
-- [ ] genome
-- [ ] dbsnp
-- [ ] clinvar
-- [ ] vep
-https://github.com/Ensembl/ensembl-vep/issues/1409
-*** TODO Téléchargement généqiue (aws + ftp)
-*** TODO Corriger téléchargement : url directement fichier config
-*** TODO Passer en convention "chr" pour chromosome
-**** TODO Ne pas renommer clinvar (hg38)
-**** TODO Renommer dbsnp (hg38)
+*** TODO Alignement
+NXF_OPTS=-D"user.name=${USER}" nextflow run main.nf -profile standard,helios  --input="/Work/Groups/bisonex/data/giab/*_R{1,2}_001.fastq.gz" --id=NA12878-T2T -bg
+SCHEDULED: <2023-06-14 Wed>
+*** TODO Haplotypecaller
+SCHEDULED: <2023-06-15 Thu>
 *** Liftover pipelines
 :PROPERTIES:
 :ID:       d2280207-3f65-4a31-a291-41fa9a9658c2
@@ -1392,20 +1395,24 @@ Vu avec alexis, n’est plus à jour
 ** DONE Porter exactement la version d'Alexis sur Helios
 CLOSED: [2023-01-14 Sat 17:56]
 Branche "prod"
-** STRT Tester version d'alexis avec Nix
+** KILL Tester version d'alexis avec Nix
+CLOSED: [2023-06-14 Wed 22:37]
 *** DONE Ajouter clinvar
 CLOSED: [2022-11-13 Sun 19:37]
 *** DONE Alignement
 CLOSED: [2022-11-13 Sun 12:52]
 *** DONE Haplotype caller
 CLOSED: [2022-11-13 Sun 13:00]
-*** TODO Filter
+*** KILL Filter
+CLOSED: [2023-06-14 Wed 22:37]
 - [X] depth
 - [ ] comon snp not path
 Problème avec liste des ID
-**** TODO variant annotation
+**** KILL variant annotation
+CLOSED: [2023-06-14 Wed 22:37]
 Besoin de vep
-*** TODO Variant calling
+*** KILL Variant calling
+CLOSED: [2023-06-14 Wed 22:37]
 ** STRT Tester sarek
 #+begin_src sh
  module load apptainer/1.1.8
@@ -3252,7 +3259,7 @@ Capture Agilent
 | HG004   | happy     | SNP   | 0.905067 |  0.992704 |
 | HG004   | vcfeval   | indel |   0.8568 |    0.9240 |
 | HG004   | vcfeval   | snp   |   0.9048 |    0.9938 |
-**** DONE télécharger données avec Nextflow
+**** DONE télécharger données avec Nextflow :hg38:
 CLOSED: [2023-04-16 Sun 16:32]
 ***** DONE Renommer les chromosomes
 CLOSED: [2023-02-17 Fri 19:30]
@@ -3338,7 +3345,7 @@ Whole exome pour HG005 seulement
 CLOSED: [2023-04-16 Sun 16:32]
 https://raw.githubusercontent.com/genome-in-a-bottle/giab_data_indexes/master/ChineseTrio/alignment.index.Chinesetrio_HG005_OsloUniversityHospital_IlluminaExome_bwamem_GRCh37_11252015
 
-**** DONE NA12878 / HG001 :na12878:
+**** DONE NA12878 / HG001 :na12878:hg38:
 CLOSED: [2023-04-15 Sat 23:53]
 ***** DONE Discussion alexis : Mail
 CLOSED: [2023-03-29 Wed 22:40]
@@ -4112,7 +4119,7 @@ compareNA12878-giab/happy/NA12878.summary.csv
 | SNP   | PASS   |       46032 |    41138 |     4894 |       47694 |     1622 |      4930 |   362 |    31 |      0.893683 |         0.962071 |       0.103367 |        0.926617 |      2.529551552318896 |     2.4124463519313304 |        1.6206857273037931 |         1.688867584028874 |
 ***** TODO Résultats sans trimming
 SCHEDULED: <2023-06-26 Mon>
-**** DONE HG002 :hg002:
+**** DONE HG002 :hg002:hg38:
 CLOSED: [2023-04-14 Fri 09:54] SCHEDULED: <2023-04-10 Mon>
 #+begin_src
     NXF_OPTS=-D"user.name=${USER}" nextflow run workflows/giabFastq.nf -profile standard,helios
@@ -4198,7 +4205,7 @@ Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Se
 | INDEL | PASS   |        2909 |     2477 |      432 |        3229 |      207 |       519 |    52 |    50 |      0.851495 |         0.923616 |       0.160731 |        0.886091 |                        |                        |        1.4964850615114236 |        1.8339222614840989 |
 | SNP   | ALL    |       38406 |    34793 |     3613 |       36935 |      275 |      1868 |    37 |    15 |      0.905926 |         0.992158 |       0.050575 |        0.947083 |     2.6247759222568168 |     2.5752854654538417 |         1.588953331534934 |        1.6192536889897844 |
 | SNP   | PASS   |       38406 |    34793 |     3613 |       36935 |      275 |      1868 |    37 |    15 |      0.905926 |         0.992158 |       0.050575 |        0.947083 |     2.6247759222568168 |     2.5752854654538417 |         1.588953331534934 |        1.6192536889897844 |
-**** DONE HG003 :hg003:
+**** DONE HG003 :hg003:hg38:
 CLOSED: [2023-04-16 Sun 00:20]
 #+begin_src sh
 NXF_OPTS=-D"user.name=${USER}" nextflow run main.nf -profile standard,helios  --input /Work/Groups/bisonex/data/giab/GRCh38/HG003_{1,2}.fq.gz -bg
@@ -4220,7 +4227,7 @@ INDEL    ALL         2731      2290       441         3092       208        577 
 INDEL   PASS         2731      2290       441         3092       208        577     62     53       0.838521          0.917296        0.186611         0.876141                     NaN                     NaN                   1.505145                   1.888993
   SNP    ALL        37997     34481      3516        36861       306       2074     33     13       0.907466          0.991204        0.056265         0.947488                2.611269                2.565915                   1.555780                   1.621727
   SNP   PASS        37997     34481      3516        36861       306       2074     33     13       0.907466          0.991204        0.056265         0.947488                2.611269                2.5659
-**** DONE HG004
+**** DONE HG004 :hg38:
 CLOSED: [2023-04-16 Sun 00:20]
 #+begin_src sh
 NXF_OPTS=-D"user.name=${USER}" nextflow run main.nf -profile standard,helios  --input /Work/Groups/bisonex/data/giab/GRCh38/HG004_{1,2}.fq.gz -bg
@@ -4239,12 +4246,15 @@ INDEL    ALL         2787      2388       399         3183       195        580 
 INDEL   PASS         2787      2388       399         3183       195        580     53     38       0.856835          0.925086        0.182218         0.889654                     NaN                     NaN                   1.507834                   1.848649
   SNP    ALL        38185     34560      3625        36921       254       2107     46      7       0.905067          0.992704        0.057068         0.946862                2.589175                2.553546                   1.632595                   1.653534
   SNP   PASS        38185     34560      3625        36921       254       2107     46      7       0.905067          0.992704        0.057068         0.946862                2.589175                2.553546                   1.632595                   1.653534
-**** DONE Résumer résultats pour Paul + article :resultats:
+**** DONE Résumer résultats pour Paul + article :resultats:hg38:
 CLOSED: [2023-04-06 Thu 21:41] SCHEDULED: <2023-04-02 Sun>
-**** DONE Plot : ashkenazim trio
+**** DONE Plot : ashkenazim trio :hg38:
 CLOSED: [2023-04-18 Tue 21:27] SCHEDULED: <2023-04-16 Sun>
 /Entered on/ [2023-04-16 Sun 17:29]
-*** TODO Platinum genome
+**** TODO NA12878 :na12878:T2T:
+SCHEDULED: <2023-06-15 Thu>
+*** KILL Platinum genome
+CLOSED: [2023-06-14 Wed 22:37]
 https://emea.illumina.com/platinumgenomes.html
 *** TODO Séquencer NA12878
 Discussion avec Paul : sous-traitant ne nous donnera pas les données, il faut commander l'ADN
@@ -4775,7 +4785,7 @@ CLOSED: [2023-06-12 Mon 23:25]
    12.000                491            491         50         94     0.9076       0.8393     0.8721
      None                491            491         50         94     0.9076       0.8393     0.8721
 
-**** TODO Vérifier tous les variants sont retrouvés en 200x: hg38 :TIT:
+**** TODO Vérifier tous les variants sont retrouvés en 200x: hg38 :T2T:
 ***** DONE Après alignement
 CLOSED: [2023-04-29 Sat 18:27] SCHEDULED: <2023-04-28 Fri>
 ****** DONE SNV: avec doublons
@@ -6132,10 +6142,10 @@ CTTTTGCTTGTCCCCAGGACGCACCTCAGGGTGGTGAAGCAAAAAAACCACGGCCCAGGAGAGGGTGGGTGCTGTGGTCT
 +
 FFFFFFFFFFFFFFFFFFFFFFF:FFF:FFFFFFFFFFFFF,FFFFFFFFFFFF:F:FFFF:FFFFF,,FFF:FFFFFFFFFF,FFFFFFF,FFFFFFFFFFF,FFFFFFFFF:FFFF,F:FFFFF:FFFFFFFFF:FFFF,FFFFFFFFF
 ****** DONE Supprimer NW_ et NT_
-***** TODO Phase 2 : chr22, vaf variable :TIT:
+***** TODO Phase 2 : chr22, vaf variable :T2T:
 SCHEDULED: <2023-06-16 Fri>
 CLOSED: [2023-06-12 Mon 23:27]
-***** TODO Phase 3 : tous SNV, vaf variable :TIT:
+***** TODO Phase 3 : tous SNV, vaf variable :T2T:
 SCHEDULED: <2023-06-16 Fri>
 CLOSED: [2023-06-12 Mon 23:27]
 **** TODO Test Indel
