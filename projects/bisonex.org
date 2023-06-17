@@ -1206,6 +1206,23 @@ SCHEDULED: <2023-06-15 Thu>
 :ID:       d2280207-3f65-4a31-a291-41fa9a9658c2
 :END:
 Contient les chain files
+** TODO Indicateurs qualité
+SCHEDULED: <2023-06-24 Sat>
+*** Idée
+Raredisease:
+- FastQC : nombreuses statistiques. Non disponible Nix
+- Mosdepth : calcule la profondeur (2x plus rapide que samtools depth). Nix
+- MultiQC : fusionne juste les résultats des analyses. Non disponible nix
+- Picard's CollectMutipleMetrics, CollectHsMetrics, and CollectWgsMetrics
+- Qualimap : alternative fastqc ? Non disponible nix
+- Sentieon's WgsMetricsAlgo : propriétaire
+- TIDDIT's cov : TIDIT = remaninement chromosomique
+
+Sarek:
+- alignment statistics : samtools stats, mosdepth
+- QC : MultiQC
+
+MultiQC : non disponible Nix
 ** DONE Exécution
 CLOSED: [2022-09-13 Tue 21:37]
 *** KILL test Bionix
