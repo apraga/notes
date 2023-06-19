@@ -6352,3 +6352,24 @@ Temps de repos = temps de course
 + descent
 * <2023-06-13 Tue> Workout
  Circuit 3x3 !!
+* <2023-06-19 Mon> Workout
+** RTO
+- 30
+** L-sit
+- 3x1
+** Muscle-up
+- 3x8 (négatif)
+** Extension:
+- 3x22
+** FL tucked row :
+- 3x{3+2}
+** Pistols :
+- 3x4
+** Planche tucked push-up:
+- 5+3+2
+- 4+3+3
+- 4+3+3
+** Compression:
+- 7-10-12
+** Norwegian roll
+- 3x4
