@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       2335c41f-88dd-4240-a794-8b3ce8dbb5eb
+:END:
+#+title: Buku
+#+filetags: personal
+
+Ajouter un lien avec des tags
+buku -a http://lol.html tag1,tag2
+
+Idem avec titre
+buku -a http://lol.html --title Test
+
+Chercher par mot-clé
+buku -s context
+
+Ouvrir un lien
+buku -s context
+$ 1
+où 1 est le numéro du résultat
+
+Editer un bookmark
+buku -w 320
+
+Exporter
+cd ~/.local/share/buku ; buku -e bookmarks.org ; git add bookmarks.org ; git commit -am "Save"; git push
