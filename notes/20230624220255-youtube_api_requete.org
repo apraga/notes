@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       2498b336-a13f-42bf-b4a3-074aadb5fa17
+:END:
+#+title: Youtube api requete
+#+filetags: personal
+
+Site: fdfmm.com/fdfmm1/video-1-bonus/
+
+Il faut chercher dans les requêtes les fichier .ts.
+Ex: vz-XXX-cdn.net/YY/1920x1080/video1.ts'
+Puis on boucle sur les numéro de vidéo
+for i in $(seq 1 700); do
+  curl 'vz-XXX-cdn.net/YY/1920x1080/video'$i'.ts' PARAM_ADDITIONEL
+end
+
+ls *.ts | sort -V | xargs cat > video.ts
+
+Pour automatiser
+1. GET sur l'url de base
+2. Extraire l'url iframe
+3. GET sur iframe (point) mediadeliver ...
+4. Extraire la playlist dans le HTML de la réponse (mpeg-URL)
+5. GET sur la playlist pour la liste des url de chaque morceau de la video
+6. GET sur chaque .ts

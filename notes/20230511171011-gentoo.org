@@ -90,3 +90,5 @@ Il faut héberger une archive avec les dépendences. On peut faire un dépot Git
 - dev-lang/julia-1.9.0::gentoo (masked by: missing keyword)
 
 Utiliser emerge --autounmask
+** Haskell: packages masked or missing
+Dependences compliquées à gérer : utiliser --backtrack=30
