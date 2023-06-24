@@ -2158,8 +2158,12 @@ Autres drives :
 CLOSED: [2023-02-12 Sun 23:17]
 *** TODO Copier photos famille depuis drive yvain sur drive famille
 *** TODO Trier photos sur drive yvain
-** TODO Héberger arbre généaloqiue
-SCHEDULED: <2023-04-14 Fri>
+** DONE Héberger arbre généaloqiue
+CLOSED: [2023-06-24 Sat 15:42] SCHEDULED: <2023-04-14 Fri>
+- Github : genealogy
+- Sourcehut : genealogy
+- Proton drive
+- Mail <2023-06-24 Sat>
 ** DONE Enterrement Mme Karl
 CLOSED: [2023-05-28 Sun 10:02]
 *** DONE Commander bouquets
@@ -2337,8 +2341,8 @@ Sur branche dev
 sur dev
 ** TODO Article nzbget sur wiki
 /Entered on/ [2022-10-22 Sat 17:31]
-** TODO Gentoo package diagrams-graphviz :gentoo:haskell:
-SCHEDULED: <2023-05-28 Sun>
+** KILL Gentoo package diagrams-graphviz :gentoo:haskell:
+CLOSED: [2023-06-24 Sat 15:43] SCHEDULED: <2023-05-28 Sun>
 /Entered on/ [2023-05-27 Sat 22:28]
 
 * Haskell
