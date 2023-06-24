@@ -4083,6 +4083,9 @@ INDEL   PASS         4871      3678      1193         7036      1299       2011 
 CLOSED: [2023-04-02 Sun 17:10] SCHEDULED: <2023-04-01 Sat>
 ***** DONE Résultats finaux
 CLOSED: [2023-04-14 Fri 09:53]
+:PROPERTIES:
+:ID:       cd79a77c-a0b6-4bb1-9e08-fe08dc89e3aa
+:END:
 Version GIAB avec hap.py + vcfeval:
 #+begin_src sh
 NXF_OPTS=-D"user.name=${USER}" nextflow run workflows/compareVCF.nf -profile standard,helios -resume --outdir=compareNA12878-giab --test.compare=happy,vcfeval  --test.query=giab --test.id=HG001
@@ -4275,6 +4278,26 @@ CLOSED: [2023-04-18 Tue 21:27] SCHEDULED: <2023-04-16 Sun>
 /Entered on/ [2023-04-16 Sun 17:29]
 **** TODO NA12878 :na12878:T2T:
 SCHEDULED: <2023-06-15 Thu>
+nextflow run workflows/compareVCF.nf -profile standard,helios --output=validation/na12878-grch38 --test.query=out/NA12878-GRCh38/callVariant/haplotypecaller/NA12878-GRCh38.vcf.gz --test.compare=happy,vcfeval -lib lib/ --test.id=HG001 --genome=GRCh38
+
+***** GRCh38
+****** vcfeval
+Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
+----------------------------------------------------------------------------------------------------
+    3.000              45121          44771       2961       5402     0.9380       0.8931
+ 0.9150
+     None              45130          44780       2981       5393     0.9376       0.8933
+ 0.9149
+***** happy
+| Type  | Filter | TRUTH.TOTAL | TRUTH.TP | TRUTH.FN | QUERY.TOTAL | QUERY.FP | QUERY.UNK | FP.gt | FP.al | METRIC.Recall | METRIC.Precision | METRIC.Frac_NA | METRIC.F1_Score | TRUTH.TOTAL.TiTv_ratio | QUERY.TOTAL.TiTv_ratio | TRUTH.TOTAL.het_hom_ratio | QUERY.TOTAL.het_hom_ratio |
+| INDEL | ALL    |        4871 |     3636 |     1235 |        7498 |     1629 |      2185 |   195 |   363 |      0.746459 |         0.693394 |       0.291411 |        0.718948 |                        |                        |        1.6174985978687606 |         3.083517699115044 |
+| INDEL | PASS   |        4871 |     3636 |     1235 |        7498 |     1629 |      2185 |   195 |   363 |      0.746459 |         0.693394 |       0.291411 |        0.718948 |                        |                        |        1.6174985978687606 |         3.083517699115044 |
+| SNP   | ALL    |       46032 |    41994 |     4038 |       48715 |     1438 |      5282 |   299 |    48 |      0.912278 |         0.966892 |       0.108427 |        0.938791 |      2.529551552318896 |      2.375987252320909 |        1.6206857273037931 |        1.6987584524997228 |
+| SNP   | PASS   |       46032 |    41994 |     4038 |       48715 |     1438 |      5282 |   299 |    48 |      0.912278 |         0.966892 |       0.108427 |        0.938791 |      2.529551552318896 |      2.375987252320909 |        1.6206857273037931 |        1.6987584524997228 |
+
+A comparer avec la version patchée génome mais mal alignée
+[[id:cd79a77c-a0b6-4bb1-9e08-fe08dc89e3aa][Résultats finaux]]
+Un peu plus de vrais positifs, logique
 *** KILL Platinum genome
 CLOSED: [2023-06-14 Wed 22:37]
 https://emea.illumina.com/platinumgenomes.html
