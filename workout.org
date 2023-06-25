@@ -6373,3 +6373,22 @@ Temps de repos = temps de course
 - 7-10-12
 ** Norwegian roll
 - 3x4
+* <2023-06-24 Sat> Workout
+** RTO
+- 30
+- 15
+- 15
+** Muscle-up
+- 3x{2+2 + 4neg)}
+** Extension:
+- 3x22
+** FL tucked row :
+- 3x{3+2}
+** Pistols :
+- 3x4
+** Planche tucked push-up:
+- 3+3+3+1
+- 4⁺4+2
+- 4⁺4+2
+** Compression:
+- 3x10

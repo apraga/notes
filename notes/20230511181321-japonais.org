@@ -65,12 +65,11 @@
     :CUSTOM_ID: adverbes
     :END:
 
-Ex: 早く起きました ### ーてきます: Partir faire quelque chose et revenir
-rapidement Ex: 本を借りてきて ### ーた ほうがいいですよ: il serait bien
-que tu ... Attention, forme en ーた! Ex:
-風邪をですか。じゃあ、家に帰って休んだほうがいいですよ Attention, la
-forme négative n'utilise pas la forme en ーた
-煙草(たばこ)を吸わないほうがいいですよ
+- 早く起きました ### ーてきます: Partir faire quelque chose et revenir
+rapidement
+- 本を借りてきて ### ーた ほうがいいですよ: il serait bien que tu ... Attention, forme en ーた!
+- 風邪をですか。じゃあ、家に帰って休んだほうがいいですよ Attention, la forme négative n'utilise pas la forme en ーた
+- 煙草(たばこ)を吸わないほうがいいですよ
 
 * 2021-10-21 - 4. Leçon 3
   :PROPERTIES:
@@ -422,10 +421,10 @@ bsoin お金を払うのをわすれました メール返事だすのをわれ�
   :CUSTOM_ID: leçon-10
   :END:
 
-ので = "donc". Comme から mais plus poli - -いので - nom/adjectif en
-na+なので On utilie la plain form ! - ありません->ない
-お金がないので、何も買いません - です->な - でした->だった
-雨だったので、どこにもでかけませんでした
+- ので = "donc". Comme から mais plus poli - -いので - nom/adjectif en
+- na+なので On utilie la plain form ! - ありません->ない
+- お金がないので、何も買いません - です->な - でした->だった
+- 雨だったので、どこにもでかけませんでした
 
 * 2022-02-27 - 13. Lecon 10
   :PROPERTIES:
@@ -452,11 +451,11 @@ Potentialité: on peut utiliser できます ou la forme potentielle
     :END:
 
 - Verbes réguliers I : う->　える
-  合う　ー＞会える
-  話す　ー＞話せる
+  - 合う　ー＞会える
+  - 話す　ー＞話せる
 - Verbes réguliers II : る->　られる
-  食べる　ー＞食べられる
-  見るー＞見られる
+  - 食べる　ー＞食べられる
+  - 見るー＞見られる
 - irréguliers 来るー＞来られる（こ） する　ー＞できる
 * 2022-03-20 - 15. Leçon 10
 
@@ -491,14 +490,15 @@ Il y a une subtile différence entre  どうか et か : premier = "whether", se
 * <2023-02-26 Sun> - Aya-sensei : discussion
 Grammaire
 -ta koto ga arimasu : déjà fait
- ちゃんと : suffisament
- 飼う(ka): avoir un animal
-  いがくせいぶつがく 医学生物学 = biologie médicale
-  sample = sample
-  かんじゃ 患者 patient
-  けんきゅう 研究 recherche
-  けっか 結果 résultat
-  はんしょくき 繁殖期 saison de reproduction
+
+- ちゃんと : suffisamment
+-  飼う(ka): avoir un animal
+-   いがくせいぶつがく 医学生物学 = biologie médicale
+-   sample = sample
+-   かんじゃ 患者 patient
+-   けんきゅう 研究 recherche
+-   けっか 結果 résultat
+-   はんしょくき 繁殖期 saison de reproduction
 * <2023-03-12 Sun> - Aya-sensei: lecmon 11
 ** Vocabulaire
 - zenkai : la dernière fois
@@ -665,3 +665,22 @@ nariso ???
 - 自動( じどう ): automatic
 - 何日間: how many days
 togaru = avoir très envie de
+* <2023-06-25 Sun>
+** Vocabulaire
+- 法的 ( ほうてき ) : légal
+- 法的にギリギリ ( ほうてき ) : être dans une zone grise lélagement
+- 法的にどうかはわかりません : je ne sais pas si c'est légal
+- 医学書(いがくしょ): livre de médecine
+- 温暖化(おんだんか ): réchauffement climatique
+- 晴れています(は): il fait beau (noter la forme en -te imasu)
+-木工(もっこう) : menuiserie
+- 解決(かいけつ) : résolution
+- 諦める (あきら ) : abandonner
+
+** Grammaire
+Rappel
+- 〜たことがありません : ne jamais avoir fait
+- 〜たことがありませんでした : ne jamais avoir fait (mais maintenant c'est fait !)
+
+~にくい:  difficile de
+  - 行きにくい : difficile à atteindre

@@ -92,3 +92,5 @@ Il faut héberger une archive avec les dépendences. On peut faire un dépot Git
 Utiliser emerge --autounmask
 ** Haskell: packages masked or missing
 Dependences compliquées à gérer : utiliser --backtrack=30
+** Suppression de /usr/share/texmf* par erreur
+Réinstaller texlive-core
