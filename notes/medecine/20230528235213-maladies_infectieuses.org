@@ -6,3 +6,4 @@
 * Maladies infectieuses
 - [[id:9347af68-14c8-4bc0-b986-9dc4da51c13d][Infections urinaires]]
 - [[id:a36141db-9bb2-48ff-8c48-f96bbc4aebf6][Gastro-entérites]]
+- [[id:7cc7020d-7ac1-42ad-8c90-3b534736924f][Méningites]]

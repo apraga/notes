@@ -1,0 +1,49 @@
+:PROPERTIES:
+:ID:       7cc7020d-7ac1-42ad-8c90-3b534736924f
+:END:
+#+title: Méningites
+#+filetags: personal medecine  microbio
+
+- Envahissement LCR par bactéries
+- Virale sans encéphalite = habituellement bénin, guérit spontanément
+- Bactérien = pronostic vital engagé à court term +/- séquelle neuro
+- Ttt = ATB IV forte dose
+
+* Physiopathologie
+- passage dans le sang : depuis
+  - oropharynx (enfant, adulte)
+  - tube digestif (E. coli, strepot agalactiae) (néonat > 72h)
+  -ou via placenta si bactériémie par la mère [Listeria] (néonat)
+- autres : brèche ostéoméninge, complication infection systémique (borréliose..)
+* Clinique
+- Communauutaire = > 39° + syndrome méningé (céphalé, raideur nuque, vomissement, photophobie)
+- Néonat : non spécifique => PL si fièvre sans cause évidente
+- Méningoencéphalitue : +signe neuro/psy
+* Épidémiologie
+- enfant, adulte : *neisseria, strepto pneumo* +/-- H. influenza, strepto pyogenes, agalactiae, listeria
+- néonat : *strepto agalactia*, E.coli,
+- Autres : Lyme, leptospirose, syphilis, immunodéprimé
+* Examens
+- Cytologie : bactérienne  > 500/mm^3 (rares cas sans pléiocytose en début d'infection)
+- MGG après centri : majorité de PNN = bactérie, majorité mononuclé/lympho => virus, mycobactérie, mixte (panaché)   => vdirus, listeria, brucella
+- Biochimie : CRP, PCT éleveé si bactérie, protéinorachie > 1G/L si bactérie, glycorachie/glycémie < 0.5 si bactérie
+- Gélose sang cuit + vitamine sous CO_2 +/- anaérobie, bouillon d'enirchissement
+- Gram:
+  - Cocci G+ diplococque/chanitte : strepto pneumonia, agalactiae
+  - Cocci G- diplococque : Neisseria meningitidis
+  - Bacille G+ : listeria monocytogenes
+  - Bacille G- : Haemophilus, E.coli, Brucella, salmonella
+    Attention : culture peut être négative si ne pousse pas sur milieu usules (Tuberculose) ou décapité ATB
+* Neisseria meningitidis
+- Sensibilité diminués pénicilline (PLP)  => *CMI péni G, amx, céfotaxime*
+- Aérobie strict. Fragile. Commensal oropharynx. Humain
+- C3G IV, *déclaration obligatoire*, *rifampicine cas contact* +/- vaccins
+- Prévention : vaccin sérogorupe C mais pas pour le B.... Voyage : A,C,Y,W
+* Streptococcus pneumoniae
+- Aéro/anaérobie, fragile, commensal oropharixn
+- Sensibilité diminués pénicilline (PLP)  => *CMI péni G, amx, céfotaxime*
+- C3G IV + cortico. Pas de prohylaxie.
+- Vaccin 13 sérotype
+* Néonatal
+- maternofoetal [transmissiou tardive (>72h)
+- Amox si strepto agalactia, céfotaxime si E.coli (50% pénicillinase), amox si listéria (résistance céphalo)
