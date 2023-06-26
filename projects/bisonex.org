@@ -299,9 +299,12 @@ Discussion avec Alexis
 - Platinum genomes = génome seul
 *** [[https://github.com/genome-in-a-bottle/giab_data_indexes][Genome in a bottle]]
   - NA12878 :
-    - Illumina HiSeq Exome : fastq + capture
+    - Illumina HiSeq Exome : fastq + capture en hg37
     - Illumina TruSeq Exome : bam, pas de capture
-      ici ww
+    - Exomes en hg37 https://zenodo.org/record/3597727 avec capture
+      - HiSeq2000
+      - NextSeq 500
+      - HiSeq 2500
   - HG002,3,4
     - Illumina Whole Exome  : bam. le kit de capture est "Agilent SureSelect Human All Exon V5 kit" selon [[https://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/analysis/OsloUniversityHospital_Exome_GATK_jointVC_11242015/README.txt][README]]. On il faut les régions [[https://kb.10xgenomics.com/hc/en-us/articles/115004150923-Where-can-I-find-the-Agilent-Target-BED-files-][selon ce site]]
 
@@ -314,8 +317,18 @@ Autres technologies non adaptées au pipeline (vu avec Alexis)
 *** [[https://www.illumina.com/platinumgenomes.html][Platinum genome
 ]] Que du génome « sequenced to 50x depth on a HiSeq 2000 system”
 Genome possible
-** Zone de capture
+*** 1000 genomes
+- intersection des capture + CCDS  [[id:b77e64fa-06a8-4ffa-8b5b-ab3fda684b61][Données brutes exome 1000 Genomes (fastq + capture)]]
+- Broad instute : SureSelect human all exon v2 target capture kit : non disponible sur le site d'agilent (V6 ou plus)
+*** Zone de capture
 GIAB fourni le .bed pour l'exome . INfo : https://support.illumina.com/sequencing/sequencing_kits/nextera-rapid-capture-exome-kit/downloads.html
+*** Valider la méthode
+- 1000 genomes + SureSelect human all exon v2 target capture kit : non disponible sur le site d'agilent (V6 ou plus)
+  https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2928-9
+- GIAB + liftover du fichire de capture en hg38
+Ce qui est aussi fait par
+https://bcbio-nextgen.readthedocs.io/en/stable/contents/germline_variants.html
+Mais avec UCSC liftover
 ** Centogène
 https://www.twistbioscience.com/node/23906
 Bed non fourni pour exactement cette capture
@@ -1113,7 +1126,7 @@ $ ../result/bin/hap.py example/happy/PG_NA12878_chr21.vcf.gz       example/happy
 **** TODO Version avec rtg-tools
 **** TODO Faire fonctionner Tests
 ***** TODO Essai 2 : depuis nix develop:
-SCHEDULED: <2023-06-21 Wed>
+SCHEDULED: <2023-07-09 Sun>
 #+begin_src
 nix develop .#hap-py
 genericBuild
@@ -1207,7 +1220,7 @@ SCHEDULED: <2023-06-15 Thu>
 :END:
 Contient les chain files
 ** TODO Indicateurs qualité
-SCHEDULED: <2023-06-24 Sat>
+SCHEDULED: <2023-07-02 Sun>
 *** Idée
 Raredisease:
 - FastQC : nombreuses statistiques. Non disponible Nix
@@ -3367,8 +3380,7 @@ Whole exome pour HG005 seulement
 CLOSED: [2023-04-16 Sun 16:32]
 https://raw.githubusercontent.com/genome-in-a-bottle/giab_data_indexes/master/ChineseTrio/alignment.index.Chinesetrio_HG005_OsloUniversityHospital_IlluminaExome_bwamem_GRCh37_11252015
 
-**** DONE NA12878 / HG001 :na12878:hg38:
-CLOSED: [2023-04-15 Sat 23:53]
+**** TODO NA12878 :na12878:hg38:
 ***** DONE Discussion alexis : Mail
 CLOSED: [2023-03-29 Wed 22:40]
 
@@ -4142,10 +4154,18 @@ compareNA12878-giab/happy/NA12878.summary.csv
 | INDEL | PASS   |        4871 |     3678 |     1193 |        7036 |     1299 |      2011 |   208 |   217 |      0.755081 |         0.741493 |       0.285816 |        0.748225 |                        |                        |        1.6174985978687606 |        2.5240506329113925 |
 | SNP   | ALL    |       46032 |    41138 |     4894 |       47694 |     1622 |      4930 |   362 |    31 |      0.893683 |         0.962071 |       0.103367 |        0.926617 |      2.529551552318896 |     2.4124463519313304 |        1.6206857273037931 |        1.6888675840288743 |
 | SNP   | PASS   |       46032 |    41138 |     4894 |       47694 |     1622 |      4930 |   362 |    31 |      0.893683 |         0.962071 |       0.103367 |        0.926617 |      2.529551552318896 |     2.4124463519313304 |        1.6206857273037931 |         1.688867584028874 |
-***** TODO Résultats sans trimming
-SCHEDULED: <2023-06-26 Mon>
-**** DONE HG002 :hg002:hg38:
-CLOSED: [2023-04-14 Fri 09:54] SCHEDULED: <2023-04-10 Mon>
+***** KILL Résultats sans trimming
+CLOSED: [2023-06-25 Sun 15:53] SCHEDULED: <2023-06-26 Mon>
+***** TODO Refaire avec génome "prêt à l'emploi"
+SCHEDULED: <2023-06-25 Sun>
+***** KILL Utiliser d'autres données brutes ?
+CLOSED: [2023-06-25 Sun 15:58]
+https://zenodo.org/record/3597727
+Capture en hg37 également. Serait intéressant mais pas le temps..
+***** TODO Comparer avec UCSCS liftover
+SCHEDULED: <2023-06-25 Sun>
+**** TODO HG002 :hg002:hg38:
+SCHEDULED: <2023-04-10 Mon>
 #+begin_src
     NXF_OPTS=-D"user.name=${USER}" nextflow run workflows/giabFastq.nf -profile standard,helios
     NXF_OPTS=-D"user.name=${USER}" nextflow run main.nf -profile standard,helios -resume --input="/Work/Groups/bisonex/data/giab/GRCh38/HG002_{1,2}.fq.gz --test.id=HG002
@@ -4230,8 +4250,10 @@ Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Se
 | INDEL | PASS   |        2909 |     2477 |      432 |        3229 |      207 |       519 |    52 |    50 |      0.851495 |         0.923616 |       0.160731 |        0.886091 |                        |                        |        1.4964850615114236 |        1.8339222614840989 |
 | SNP   | ALL    |       38406 |    34793 |     3613 |       36935 |      275 |      1868 |    37 |    15 |      0.905926 |         0.992158 |       0.050575 |        0.947083 |     2.6247759222568168 |     2.5752854654538417 |         1.588953331534934 |        1.6192536889897844 |
 | SNP   | PASS   |       38406 |    34793 |     3613 |       36935 |      275 |      1868 |    37 |    15 |      0.905926 |         0.992158 |       0.050575 |        0.947083 |     2.6247759222568168 |     2.5752854654538417 |         1.588953331534934 |        1.6192536889897844 |
-**** DONE HG003 :hg003:hg38:
-CLOSED: [2023-04-16 Sun 00:20]
+***** TODO Refaire avec génome "prêt à l'emploi"
+SCHEDULED: <2023-06-25 Sun>
+**** TODO HG003 :hg003:hg38:
+***** Notes
 #+begin_src sh
 NXF_OPTS=-D"user.name=${USER}" nextflow run main.nf -profile standard,helios  --input /Work/Groups/bisonex/data/giab/GRCh38/HG003_{1,2}.fq.gz -bg
 #+end_src
@@ -4252,8 +4274,9 @@ INDEL    ALL         2731      2290       441         3092       208        577 
 INDEL   PASS         2731      2290       441         3092       208        577     62     53       0.838521          0.917296        0.186611         0.876141                     NaN                     NaN                   1.505145                   1.888993
   SNP    ALL        37997     34481      3516        36861       306       2074     33     13       0.907466          0.991204        0.056265         0.947488                2.611269                2.565915                   1.555780                   1.621727
   SNP   PASS        37997     34481      3516        36861       306       2074     33     13       0.907466          0.991204        0.056265         0.947488                2.611269                2.5659
-**** DONE HG004 :hg38:
-CLOSED: [2023-04-16 Sun 00:20]
+***** TODO Refaire avec génome "prêt à l'emploi"
+SCHEDULED: <2023-06-25 Sun>
+**** TODO HG004 :hg38:
 #+begin_src sh
 NXF_OPTS=-D"user.name=${USER}" nextflow run main.nf -profile standard,helios  --input /Work/Groups/bisonex/data/giab/GRCh38/HG004_{1,2}.fq.gz -bg
 #+end_src
@@ -4276,6 +4299,8 @@ CLOSED: [2023-04-06 Thu 21:41] SCHEDULED: <2023-04-02 Sun>
 **** DONE Plot : ashkenazim trio :hg38:
 CLOSED: [2023-04-18 Tue 21:27] SCHEDULED: <2023-04-16 Sun>
 /Entered on/ [2023-04-16 Sun 17:29]
+**** TODO Refaire avec génome "prêt  l'emploi"
+SCHEDULED: <2023-06-25 Sun>
 **** TODO NA12878 :na12878:T2T:
 SCHEDULED: <2023-06-15 Thu>
 nextflow run workflows/compareVCF.nf -profile standard,helios --output=validation/na12878-grch38 --test.query=out/NA12878-GRCh38/callVariant/haplotypecaller/NA12878-GRCh38.vcf.gz --test.compare=happy,vcfeval -lib lib/ --test.id=HG001 --genome=GRCh38
@@ -6188,16 +6213,15 @@ CTTTTGCTTGTCCCCAGGACGCACCTCAGGGTGGTGAAGCAAAAAAACCACGGCCCAGGAGAGGGTGGGTGCTGTGGTCT
 +
 FFFFFFFFFFFFFFFFFFFFFFF:FFF:FFFFFFFFFFFFF,FFFFFFFFFFFF:F:FFFF:FFFFF,,FFF:FFFFFFFFFF,FFFFFFF,FFFFFFFFFFF,FFFFFFFFF:FFFF,F:FFFFF:FFFFFFFFF:FFFF,FFFFFFFFF
 ******* DONE Supprimer NW_ et NT_
-****** TODO Phase 2 : chr22, vaf variable :T2T:
-SCHEDULED: <2023-06-16 Fri>
-CLOSED: [2023-06-12 Mon 23:27]
+***** TODO Phase 2 : chr22, vaf variable :T2T:
+SCHEDULED: <2023-06-29 Thu>
 ****** TODO Phase 3 : tous SNV, vaf variable :T2T:
-SCHEDULED: <2023-06-16 Fri>
-CLOSED: [2023-06-12 Mon 23:27]
+SCHEDULED: <2023-06-29 Thu>
 ***** TODO Test Indel
 **** Divers
 ***** DONE Vérifier nombre de reads fastq - bam
 CLOSED: [2022-10-09 Sun 22:31]
-*** TODO Liste varants "clinically relevent" (Clinge - CT-R d)
-SCHEDULED: <2023-06-25 Sun>
+*** KILL Liste varants "clinically relevent" (Clinge - CT-R d)
+CLOSED: [2023-06-25 Sun 15:53] SCHEDULED: <2023-06-25 Sun>
 [cite:@wilcox2021]
+Vu avec alexis: pas notre cas d'usage
