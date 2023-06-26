@@ -3408,6 +3408,12 @@ Cherche avec numéro patient. On a le choix entre plusieurs séquenceurs Illumin
 - HiSeq 4000 IDT capture SRX11061496
 - HiSeq 4000 Agilent SureSelect v7 capture SRX11061486
 
+  Note trueseq non disponible ?
+  hg19 : https://www.biostars.org/p/144554/
+
+
+IDT: lequel
+https://www.idtdna.com/pages/products/next-generation-sequencing/workflow/xgen-ngs-hybridization-capture/pre-designed-hyb-cap-panels/exome-hyb-panel-v2
 **** TODO NA12878 :na12878:hg38:
 ***** DONE Discussion alexis : Mail
 CLOSED: [2023-03-29 Wed 22:40]
