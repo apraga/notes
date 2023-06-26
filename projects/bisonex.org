@@ -501,7 +501,7 @@ CLOSED: [2023-06-14 Wed 22:35]
 ***** DONE compatibilité hg38
 CLOSED: [2023-06-14 Wed 22:35]
 **** TODO cache vep
-SCHEDULED: <2023-06-17 Sat>
+SCHEDULED: <2023-07-03 Mon>
 *** HOLD Processing bases de données
 **** DONE dbSNP common
 **** DONE Seulement les ID dans dbSNP common !
@@ -1209,11 +1209,14 @@ Toutes les ressourcs sont décrites ici
 https://github.com/marbl/CHM13
 Détails sur le pipeline
 https://genome.ucsc.edu/cgi-bin/hgTrackUi?db=hub_3267197_GCA_009914755.4&c=CP068277.2&g=hub_3267197_hgLiftOver
-*** TODO Alignement
+*** DONE Alignement
+CLOSED: [2023-06-26 Mon 19:42]
 NXF_OPTS=-D"user.name=${USER}" nextflow run main.nf -profile standard,helios  --input="/Work/Groups/bisonex/data/giab/*_R{1,2}_001.fastq.gz" --id=NA12878-T2T -bg
 SCHEDULED: <2023-06-14 Wed>
-*** TODO Haplotypecaller
-SCHEDULED: <2023-06-15 Thu>
+*** DONE Haplotypecaller
+CLOSED: [2023-06-26 Mon 19:42] SCHEDULED: <2023-06-15 Thu>
+*** TODO Filtres
+SCHEDULED: <2023-07-03 Mon>
 *** Liftover pipelines
 :PROPERTIES:
 :ID:       d2280207-3f65-4a31-a291-41fa9a9658c2
@@ -1237,9 +1240,9 @@ Sarek:
 
 MultiQC : non disponible Nix
 ** TODO vérifier si normalisation
-SCHEDULED: <2023-06-25 Sun>
+SCHEDULED: <2023-07-03 Mon>
 ** TODO Rajouter vérification hgvs
-SCHEDULED: <2023-06-25 Sun>
+SCHEDULED: <2023-07-03 Mon>
 
 ** DONE Exécution
 CLOSED: [2022-09-13 Tue 21:37]
@@ -3260,8 +3263,7 @@ https://github.com/ga4gh/benchmarking-tools
 Prérequis :
 - [[*hap.py][hap.py]]
 - [[*NA12878][NA12878]]
-*** DONE GIAB : exome :giab:
-CLOSED: [2023-04-16 Sun 16:33]
+*** TODO GIAB : exome :giab:
 **** Notes
 https://github.com/genome-in-a-bottle/giab_FAQ
 **** Résultats résumés :resultats:
@@ -3294,8 +3296,7 @@ Capture Agilent
 | HG004   | happy     | SNP   | 0.905067 |  0.992704 |
 | HG004   | vcfeval   | indel |   0.8568 |    0.9240 |
 | HG004   | vcfeval   | snp   |   0.9048 |    0.9938 |
-**** DONE télécharger données avec Nextflow :hg38:
-CLOSED: [2023-04-16 Sun 16:32]
+**** TODO télécharger données avec Nextflow :hg38:
 ***** DONE Renommer les chromosomes
 CLOSED: [2023-02-17 Fri 19:30]
 ****** DONE Genome de reference NCBI
@@ -3379,6 +3380,33 @@ Whole exome pour HG005 seulement
 ******* KILL HG005
 CLOSED: [2023-04-16 Sun 16:32]
 https://raw.githubusercontent.com/genome-in-a-bottle/giab_data_indexes/master/ChineseTrio/alignment.index.Chinesetrio_HG005_OsloUniversityHospital_IlluminaExome_bwamem_GRCh37_11252015
+**** TODO Télécharger FASTQ directement avec aws (via SRA)
+SCHEDULED: <2023-06-27 Tue>
+***** Remarques
+Numéro d'accession : https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-022-08365-3/tables/1
+Fastq disponible via SRA. Avec AWS, on peut accéder au fastq directement.
+(Sinon il faut convertir SRA -> Fastq avec le toolkit : compliqué à configurer)
+Exemple: https://trace.ncbi.nlm.nih.gov/Traces/?view=run_browser&acc=SRR2962669&display=data-access
+
+Avantage:
+- pas de conversion BAM -> fASTQ
+- détail des capture
+- capture en hg38 sur site du constructeur !!
+- capture semblable pour ashkenazi
+Inconvénient :
+- NA12878 : discordance pour le nombre de paires de bases : NA12878 = 49G (donc 24G de fastq)
+- capture non disponible en ligne (site agilent)
+
+***** Liste des runs :
+https://www.ncbi.nlm.nih.gov/sra
+
+Cherche avec numéro patient. On a le choix entre plusieurs séquenceurs Illumina
+- NovaSeq 6000 TruSeq capture SRX11061536
+- NovaSeq 6000 IDT capture SRX11061526
+- NovaSeq 6000 Agilent SureSelect v7 capture SRX11061516
+- HiSeq 4000 TruSeq capture SRX11061506
+- HiSeq 4000 IDT capture SRX11061496
+- HiSeq 4000 Agilent SureSelect v7 capture SRX11061486
 
 **** TODO NA12878 :na12878:hg38:
 ***** DONE Discussion alexis : Mail
@@ -4162,8 +4190,10 @@ SCHEDULED: <2023-06-25 Sun>
 CLOSED: [2023-06-25 Sun 15:58]
 https://zenodo.org/record/3597727
 Capture en hg37 également. Serait intéressant mais pas le temps..
-***** TODO Comparer avec UCSCS liftover
-SCHEDULED: <2023-06-25 Sun>
+***** KILL Comparer avec UCSCS liftover
+CLOSED: [2023-06-26 Mon 19:02] SCHEDULED: <2023-06-25 Sun>
+Picard liftoverinterval est basé sur UCSCS
+Mais on n'aurait pas la différence pour NA12878 qu'on voit...
 **** TODO HG002 :hg002:hg38:
 SCHEDULED: <2023-04-10 Mon>
 #+begin_src
@@ -4303,26 +4333,6 @@ CLOSED: [2023-04-18 Tue 21:27] SCHEDULED: <2023-04-16 Sun>
 SCHEDULED: <2023-06-25 Sun>
 **** TODO NA12878 :na12878:T2T:
 SCHEDULED: <2023-06-15 Thu>
-nextflow run workflows/compareVCF.nf -profile standard,helios --output=validation/na12878-grch38 --test.query=out/NA12878-GRCh38/callVariant/haplotypecaller/NA12878-GRCh38.vcf.gz --test.compare=happy,vcfeval -lib lib/ --test.id=HG001 --genome=GRCh38
-
-***** GRCh38
-****** vcfeval
-Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
-----------------------------------------------------------------------------------------------------
-    3.000              45121          44771       2961       5402     0.9380       0.8931
- 0.9150
-     None              45130          44780       2981       5393     0.9376       0.8933
- 0.9149
-***** happy
-| Type  | Filter | TRUTH.TOTAL | TRUTH.TP | TRUTH.FN | QUERY.TOTAL | QUERY.FP | QUERY.UNK | FP.gt | FP.al | METRIC.Recall | METRIC.Precision | METRIC.Frac_NA | METRIC.F1_Score | TRUTH.TOTAL.TiTv_ratio | QUERY.TOTAL.TiTv_ratio | TRUTH.TOTAL.het_hom_ratio | QUERY.TOTAL.het_hom_ratio |
-| INDEL | ALL    |        4871 |     3636 |     1235 |        7498 |     1629 |      2185 |   195 |   363 |      0.746459 |         0.693394 |       0.291411 |        0.718948 |                        |                        |        1.6174985978687606 |         3.083517699115044 |
-| INDEL | PASS   |        4871 |     3636 |     1235 |        7498 |     1629 |      2185 |   195 |   363 |      0.746459 |         0.693394 |       0.291411 |        0.718948 |                        |                        |        1.6174985978687606 |         3.083517699115044 |
-| SNP   | ALL    |       46032 |    41994 |     4038 |       48715 |     1438 |      5282 |   299 |    48 |      0.912278 |         0.966892 |       0.108427 |        0.938791 |      2.529551552318896 |      2.375987252320909 |        1.6206857273037931 |        1.6987584524997228 |
-| SNP   | PASS   |       46032 |    41994 |     4038 |       48715 |     1438 |      5282 |   299 |    48 |      0.912278 |         0.966892 |       0.108427 |        0.938791 |      2.529551552318896 |      2.375987252320909 |        1.6206857273037931 |        1.6987584524997228 |
-
-A comparer avec la version patchée génome mais mal alignée
-[[id:cd79a77c-a0b6-4bb1-9e08-fe08dc89e3aa][Résultats finaux]]
-Un peu plus de vrais positifs, logique
 *** KILL Platinum genome
 CLOSED: [2023-06-14 Wed 22:37]
 https://emea.illumina.com/platinumgenomes.html
