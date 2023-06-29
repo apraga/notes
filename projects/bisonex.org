@@ -3396,6 +3396,8 @@ Avantage:
 Inconvénient :
 - NA12878 : discordance pour le nombre de paires de bases : NA12878 = 49G (donc 24G de fastq)
 - capture non disponible en ligne (site agilent)
+- format SRA (le lien pour les fastq n'est pas gratuit): utiliser HTTP ou leur toolkit (télécharge au format SRA puis convertit en fastq). Exemple: pour avoir 2 fastq 
+  fastq-dump --split-files --gzip SRR2962669
 
 ***** Liste des runs :
 https://www.ncbi.nlm.nih.gov/sra
@@ -3408,12 +3410,32 @@ Cherche avec numéro patient. On a le choix entre plusieurs séquenceurs Illumin
 - HiSeq 4000 IDT capture SRX11061496
 - HiSeq 4000 Agilent SureSelect v7 capture SRX11061486
 
+Note: SRX = expérience, SRR = run
+          Important:
+          - ne pas compresser la sortie avec fasta-dump directement (lent++)
+          - Fasterq-dump est plus rapide
+          
   Note trueseq non disponible ?
   hg19 : https://www.biostars.org/p/144554/
 
 
 IDT: lequel
 https://www.idtdna.com/pages/products/next-generation-sequencing/workflow/xgen-ngs-hybridization-capture/pre-designed-hyb-cap-panels/exome-hyb-panel-v2
+
+***** DONE HiSeq 4000 + agilent sureselect :sra:
+CLOSED: [2023-06-28 Wed 22:06] SCHEDULED: <2023-06-28 Wed>
+        - [ ] HG001 with Illumina HiSeq 4000 Agilent SureSelect v7 capture SRX11061486 SRR14724513	
+        - [ ] HG002 with Illumina HiSeq 4000 Agilent SureSelect v7 capture SRX11061487 SRR14724512
+        - [ ] HG003 with Illumina HiSeq 4000 Agilent SureSelect v7 capture SRX11061488 SRR14724511
+        - [ ] HG004 with Illumina HiSeq 4000 Agilent SureSelect v7 capture SRX11061489 SRR14724510
+          
+        Other
+ - HG005 with Illumina HiSeq 4000 Agilent SureSelect v7 capture SRX11061491 SRR14724508
+           - HG006 with Illumina HiSeq 4000 Agilent SureSelect v7 capture SRX11061492 SRR14724507
+           - HG007 with Illumina HiSeq 4000 Agilent SureSelect v7 capture SRX11061493 SRR14724506
+
+******* TODO Capture agilent sureselect
+SCHEDULED: <2023-06-28 Wed>
 **** TODO NA12878 :na12878:hg38:
 ***** DONE Discussion alexis : Mail
 CLOSED: [2023-03-29 Wed 22:40]
@@ -4190,7 +4212,7 @@ compareNA12878-giab/happy/NA12878.summary.csv
 | SNP   | PASS   |       46032 |    41138 |     4894 |       47694 |     1622 |      4930 |   362 |    31 |      0.893683 |         0.962071 |       0.103367 |        0.926617 |      2.529551552318896 |     2.4124463519313304 |        1.6206857273037931 |         1.688867584028874 |
 ***** KILL Résultats sans trimming
 CLOSED: [2023-06-25 Sun 15:53] SCHEDULED: <2023-06-26 Mon>
-***** TODO Refaire avec génome "prêt à l'emploi"
+***** TODO Refaire : HiSeq4000 + agilent sureselect + génome "prêt à l'emploi"
 SCHEDULED: <2023-06-25 Sun>
 ***** KILL Utiliser d'autres données brutes ?
 CLOSED: [2023-06-25 Sun 15:58]
@@ -4286,7 +4308,7 @@ Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Se
 | INDEL | PASS   |        2909 |     2477 |      432 |        3229 |      207 |       519 |    52 |    50 |      0.851495 |         0.923616 |       0.160731 |        0.886091 |                        |                        |        1.4964850615114236 |        1.8339222614840989 |
 | SNP   | ALL    |       38406 |    34793 |     3613 |       36935 |      275 |      1868 |    37 |    15 |      0.905926 |         0.992158 |       0.050575 |        0.947083 |     2.6247759222568168 |     2.5752854654538417 |         1.588953331534934 |        1.6192536889897844 |
 | SNP   | PASS   |       38406 |    34793 |     3613 |       36935 |      275 |      1868 |    37 |    15 |      0.905926 |         0.992158 |       0.050575 |        0.947083 |     2.6247759222568168 |     2.5752854654538417 |         1.588953331534934 |        1.6192536889897844 |
-***** TODO Refaire avec génome "prêt à l'emploi"
+***** TODO Refaire : HiSeq4000 + agilent sureselect + génome "prêt à l'emploi"
 SCHEDULED: <2023-06-25 Sun>
 **** TODO HG003 :hg003:hg38:
 ***** Notes
@@ -4310,7 +4332,7 @@ INDEL    ALL         2731      2290       441         3092       208        577 
 INDEL   PASS         2731      2290       441         3092       208        577     62     53       0.838521          0.917296        0.186611         0.876141                     NaN                     NaN                   1.505145                   1.888993
   SNP    ALL        37997     34481      3516        36861       306       2074     33     13       0.907466          0.991204        0.056265         0.947488                2.611269                2.565915                   1.555780                   1.621727
   SNP   PASS        37997     34481      3516        36861       306       2074     33     13       0.907466          0.991204        0.056265         0.947488                2.611269                2.5659
-***** TODO Refaire avec génome "prêt à l'emploi"
+***** TODO Refaire : HiSeq4000 + agilent sureselect + génome "prêt à l'emploi"
 SCHEDULED: <2023-06-25 Sun>
 **** TODO HG004 :hg38:
 #+begin_src sh
@@ -4335,7 +4357,7 @@ CLOSED: [2023-04-06 Thu 21:41] SCHEDULED: <2023-04-02 Sun>
 **** DONE Plot : ashkenazim trio :hg38:
 CLOSED: [2023-04-18 Tue 21:27] SCHEDULED: <2023-04-16 Sun>
 /Entered on/ [2023-04-16 Sun 17:29]
-**** TODO Refaire avec génome "prêt  l'emploi"
+**** TODO Refaire : HiSeq4000 + agilent sureselect + génome "prêt à l'emploi"
 SCHEDULED: <2023-06-25 Sun>
 **** TODO NA12878 :na12878:T2T:
 SCHEDULED: <2023-06-15 Thu>
@@ -6230,9 +6252,9 @@ CTTTTGCTTGTCCCCAGGACGCACCTCAGGGTGGTGAAGCAAAAAAACCACGGCCCAGGAGAGGGTGGGTGCTGTGGTCT
 FFFFFFFFFFFFFFFFFFFFFFF:FFF:FFFFFFFFFFFFF,FFFFFFFFFFFF:F:FFFF:FFFFF,,FFF:FFFFFFFFFF,FFFFFFF,FFFFFFFFFFF,FFFFFFFFF:FFFF,F:FFFFF:FFFFFFFFF:FFFF,FFFFFFFFF
 ******* DONE Supprimer NW_ et NT_
 ***** TODO Phase 2 : chr22, vaf variable :T2T:
-SCHEDULED: <2023-06-29 Thu>
+SCHEDULED: <2023-07-01 Sat>
 ****** TODO Phase 3 : tous SNV, vaf variable :T2T:
-SCHEDULED: <2023-06-29 Thu>
+SCHEDULED: <2023-07-01 Sat>
 ***** TODO Test Indel
 **** Divers
 ***** DONE Vérifier nombre de reads fastq - bam

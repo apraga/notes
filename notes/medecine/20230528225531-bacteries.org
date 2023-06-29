@@ -92,20 +92,40 @@ Forte capacité à former des biofilms
 Faible perméabilité membranaire : résistance naturelle pénicillines, C1G et C2G +/- certaines C3G
 + Catalase positif - lactose négatif
 ** Streptocoques
-
+Infections graves = /pyogenes/, /pneumoniae/.
+Commensal mais opportunites (immunodépression) : oraux (*endocardite, SDRA)
 *** Classification
-- α-hémolytique : hémolyse partielle
-  - viridans
-  - Pneumocoque: résistance par chimérisme PLP (acquis)
-- β-hémolyse : hémolyse totale
-  - Groupe A = S. pyogenes surtout. Cause d’angine++. *Pas de résistance aux β-lactamine*
+- Hémolyse : α  partielle, β = totale.
+- Lancefield : classification selon les polysaccharide de la paroi bactérienne (agglutination).
+
+En première approximation :
+- α-hémolyse = non-groupable
+  - /pneumoniae/ résistance par chimérisme PLP (acquis)
+  - autres anginosus, mitis, sanguinis, bovis, salivarius, mutans
+- β-hémolyse = groupable. Les plus importants
+  - Groupe A = S. pyogenes. Cause d’angine++. *Pas de résistance aux β-lactamine*
   - Groupe B = S. agalactiae
    Infection materno-foetale ++ (note: l’antibioprophylaxie marche chez les nouveau-né mais seulement pour les infections avant 7 jours)
-  - Groupe autres: D->H, K-T(Lancefield)
-- Non groupable
+  - C : /dysagalactia/ (rarement /equi/)
+  - G : /dysgalactia/, /canis/
+
+/Note/: certaines sous-espèce de Lancefield peuvente être alpha-hémolytique
 *** Résistances
 - β-hémolytique: pas de résistance β-lactamine
 - S. pneumonia : 25% résistance acquise β-lactamine (sensibilité diminuée)
+*** Classification d’Ambler
+A. BLSE
+   - résistance pénicilline, C1, C2, C3G
+   - sensible inhibiteur β-lactamase et carbapénème
+   - détecté par ceftazidime + acide clavulanique
+B. Métallo-beta-lactamases
+   - résistance comme B. + carbapénème
+C. ampC céphalosporinase
+   - résistance BLSE + céfoxitine + inhibiteur β-lactamase
+   - sensible carbapneme
+   - détecté céfoxitine
+D. oxacillinase
+   - sensible β-lactamase
 *** Streptococcocus pyogenes
 Cocci gram+ en chaînettes, capsulé, non sporulé, immobile
 
