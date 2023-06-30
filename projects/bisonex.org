@@ -4212,8 +4212,19 @@ compareNA12878-giab/happy/NA12878.summary.csv
 | SNP   | PASS   |       46032 |    41138 |     4894 |       47694 |     1622 |      4930 |   362 |    31 |      0.893683 |         0.962071 |       0.103367 |        0.926617 |      2.529551552318896 |     2.4124463519313304 |        1.6206857273037931 |         1.688867584028874 |
 ***** KILL Résultats sans trimming
 CLOSED: [2023-06-25 Sun 15:53] SCHEDULED: <2023-06-26 Mon>
-***** TODO Refaire : HiSeq4000 + agilent sureselect + génome "prêt à l'emploi"
-SCHEDULED: <2023-06-25 Sun>
+***** DONE Refaire : HiSeq4000 + agilent sureselect + génome "prêt à l'emploi"
+CLOSED: [2023-06-30 Fri 22:08] SCHEDULED: <2023-06-25 Sun>
+#+begin_src
+nextflow run workflows/compareVCF.nf -profile standard,helios --outdir=out/HG001-SRX11061486_SRR14724513-GRCh38 --query=out/HG001-SRX11061486_SRR14724513-GRCh38/callVariant/haplotypecaller/HG001-SRX11061486_SRR14724513-GRCh38.vcf.gz --compare=vcfeval,happy -lib lib --capture=capture/Agilent_SureSelect_All_Exons_v7_hg38_Regions.bed  --id=HG001
+#+end_src
+
+Meilleurs résultats !
+| Type  | Filter | TRUTH.TOTAL | TRUTH.TP | TRUTH.FN | QUERY.TOTAL | QUERY.FP | QUERY.UNK | FP.gt | FP.al | METRIC.Recall | METRIC.Precision | METRIC.Frac_NA | METRIC.F1_Score | TRUTH.TOTAL.TiTv_ratio | QUERY.TOTAL.TiTv_ratio | TRUTH.TOTAL.het_hom_ratio | QUERY.TOTAL.het_hom_ratio |
+| INDEL | ALL    |         549 |      489 |       60 |         899 |       64 |       340 |     8 |    17 |       0.89071 |          0.88551 |       0.378198 |        0.888102 |                        |                        |          1.86096256684492 |         2.247272727272727 |
+| INDEL | PASS   |         549 |      489 |       60 |         899 |       64 |       340 |     8 |    17 |       0.89071 |          0.88551 |       0.378198 |        0.888102 |                        |                        |          1.86096256684492 |         2.247272727272727 |
+| SNP   | ALL    |       21973 |    21462 |      511 |       26285 |      563 |      4263 |    68 |    16 |      0.976744 |         0.974435 |       0.162184 |        0.975588 |      3.007110300820419 |       2.78468624064479 |        1.5918102430965306 |        1.8161449399656946 |
+| SNP   | PASS   |       21973 |    21462 |      511 |       26285 |      563 |      4263 |    68 |    16 |      0.976744 |         0.974435 |       0.162184 |        0.975588 |      3.007110300820419 |       2.78468624064479 |        1.5918102430965306 |        1.8161449399656946 |
+
 ***** KILL Utiliser d'autres données brutes ?
 CLOSED: [2023-06-25 Sun 15:58]
 https://zenodo.org/record/3597727
