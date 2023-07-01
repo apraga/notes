@@ -96,7 +96,7 @@ Infections graves = /pyogenes/, /pneumoniae/.
 Commensal mais opportunites (immunodépression) : oraux (*endocardite, SDRA)
 *** Classification
 - Hémolyse : α  partielle, β = totale.
-- Lancefield : classification selon les polysaccharide de la paroi bactérienne (agglutination).
+- Lancefield : classification selon un composé de la paroi bactérienne (polyoside C) avec mise en évidence de l'antigène par agglutination.
 
 En première approximation :
 - α-hémolyse = non-groupable
@@ -155,6 +155,8 @@ Pyogène = responsiable d’infections suppurées
 **** Sensibilité, résistance
 - β-lactamine : sensible
 - macrolide : sauvage sensible, résistance par mécanisme d’efflux, modiifcation cible ARN23S
+*** TODO Strepto agalactiae
+*Naturellement sensible β-lactamine*
 *** Pneumocoque
 Gram+ diplocoque encapsulé à multiplication extracullaire.
 Classification selon la capsule (vaccins)
