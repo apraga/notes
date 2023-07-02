@@ -169,8 +169,8 @@ CLOSED: [2023-05-29 Mon 23:03]
 SCHEDULED: <2023-07-07 Fri>
 *** TODO Soumission paquet
 * Famille
-** TODO Cadeaux Maxence + Emy
-SCHEDULED: <2023-07-02 Sun>
+** DONE Cadeaux Maxence + Emy
+CLOSED: [2023-07-02 Sun 18:20] SCHEDULED: <2023-07-02 Sun>
 /Entered on/ [2023-07-02 Sun 10:53]
 Maxence : Éveil musical
 * Internat
@@ -2346,9 +2346,13 @@ RV pris yamah
 ** DONE Ordure ménagères
 CLOSED: [2023-06-11 Sun 21:40]
 Envoyé RIB le <2023-06-11 Sun>
-** TODO Badge déchetterie
-SCHEDULED: <2023-07-02 Sun>
+** WAIT Badge déchetterie
+SCHEDULED: <2023-07-12 Wed>
 /Entered on/ [2023-07-02 Sun 11:03]
+** WAIT Saisie administrative taxe d'habitation
+/Entered on/ [2023-07-02 Sun 18:20]
+Découverte <2023-07-02 Sun>. Virement 100.50€ fait.
+Mail envoyé ce jour
 * Gentoo
 ** GURU
 *** DONE Ebuild pour adapteur wifi TBW-108B
