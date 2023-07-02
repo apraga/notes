@@ -6396,3 +6396,38 @@ Temps de repos = temps de course
  Circuit : oublie pompe mais forme correcte sinon
  3x2
  Jambes
+* <2023-07-02 Sun> Workout
+** RTO
+- 30
+- 20
+- 15
+** L-sit
+- 3x2
+** Muscle-up
+- 2x2 + 4
+- 2x2 + 4
+- 2x2 + 4
+** Extension:
+- 22
+- 22
+- 22
+** FL tucked row :
+- 3+2
+- 3+2
+- 3+2
+** Pistols :
+- 4
+- 4
+- 4
+** Planche tucked push-up:
+- 5
+- 5
+- 5
+** Compression:
+- 10
+- 10
+- 10
+** Norwegian roll
+- 4
+- 4
+- 4
