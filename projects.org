@@ -1,4 +1,4 @@
-* Projets personnels
+* Projets personnel
 ** Assistant
 :PROPERTIES:
 :CATEGORY: assistant
@@ -138,7 +138,7 @@ time julia --project=.. insertVariant.jl
 scp 63003856_S135_chr22_{1,2}.fq.gz meso:/Work/Users/apraga/bisonex/tests/bamscissors/
 #+end_src
 *** TODO Implémenter les SNV avec VAF :snv:
-SCHEDULED: <2023-06-05 Mon>
+SCHEDULED: <2023-07-07 Fri>
 Stratégie :
 1. calculer la profondeur sur les positions
 2. créer un dictionnaire { nom du reads : position dataframe }
@@ -149,7 +149,7 @@ CLOSED: [2023-05-29 Mon 15:34]
 CLOSED: [2023-05-29 Mon 15:35]
 Tronquée si > 1
 **** WAIT Tests unitaires
-SCHEDULED: <2023-05-29 Mon>
+SCHEDULED: <2023-07-07 Fri>
 ***** DONE NA12878: 1 gène sur chromosome 22
 CLOSED: [2023-05-30 Tue 23:55]
 root = "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/NA12878/Garvan_NA12878_HG001_HiSeq_Exome/"
@@ -166,8 +166,13 @@ CLOSED: [2023-05-29 Mon 23:02]
 ****** DONE VAF sur 1 exon
 CLOSED: [2023-05-29 Mon 23:03]
 *** TODO Implémenter les indel avec VAF :indel:
-SCHEDULED: <2023-05-29 Mon>
+SCHEDULED: <2023-07-07 Fri>
 *** TODO Soumission paquet
+* Famille
+** TODO Cadeaux Maxence + Emy
+SCHEDULED: <2023-07-02 Sun>
+/Entered on/ [2023-07-02 Sun 10:53]
+Maxence : Éveil musical
 * Internat
 :PROPERTIES:
 :CATEGORY: internat
@@ -351,8 +356,10 @@ CLOSED: [2023-03-20 lun. 14:29]
 CLOSED: [2023-03-20 lun. 14:30]
 ***** DONE Correction Hirsch + Vidau
 CLOSED: [2023-06-11 Sun 18:39] SCHEDULED: <2023-05-28 Sun>
-***** TODO Dernières correction JP
-SCHEDULED: <2023-06-11 Sun>
+***** DONE Dernières correction JP
+CLOSED: [2023-07-02 Sun 10:52] SCHEDULED: <2023-06-11 Sun>
+***** TODO Relancer avant soumission
+SCHEDULED: <2023-07-16 Sun>
 **** TODO Soumission
   List journaux acceptant case reports
   https://static1.squarespace.com/static/5db7b349364ff063a6c58ab8/t/6071fb065173800a11ccd0a2/1618082566620/Case+Report+Journals+2020.pdf
@@ -2230,21 +2237,24 @@ and save it as:
 
 Dans la mise à jour, il y a la création d'un environnement virtuel qui casse l'exécution de nextflow (besoin de télécharger)
 Fix = désactiver
-**** TODO Patch NXF_OFFLINE=true
-SCHEDULED: <2023-06-11 Sun>
+**** KILL Patch NXF_OFFLINE=true
+CLOSED: [2023-07-02 Sun 11:02] SCHEDULED: <2023-06-11 Sun>
 ** TODO Multiqc
 ** TODO VEP :vep:
 *** DONE [[https://github.com/NixOS/nixpkgs/pull/185691][BioPerl]]
 SCHEDULED: <2022-08-10 Wed>
 /Entered on/ [2022-08-09 Tue 10:57]
 PR submitted
-*** STRT BioDBBBigFile
+*** WAIT BioDBBBigFile
 SCHEDULED: <2023-05-07 Sun>
 :PROPERTIES:
 :ORDERED:  t
 :END:
 /Entered on/ [2022-08-10 Wed 14:28]
-**** TODO Version de kent déjà packagée : forcer version  335
+On utilise la dernière version de kent, donc plus de problème.
+PRête à être mergé. Rebase faite<2023-07-02 Sun>
+**** DONE Version de kent déjà packagée : forcer version  335
+CLOSED: [2023-07-02 Sun 11:20]
 ***** KILL [[https://github.com/NixOS/nixpkgs/pull/206991][Restore building kent 404]]
 CLOSED: [2023-05-06 Sat 17:40]
 Review faite <2023-03-26 Sun> , atteinte merge]
@@ -2255,7 +2265,8 @@ CLOSED: [2023-05-08 Mon 10:18] SCHEDULED: <2023-05-07 Sun>
 Review à faire
 https://github.com/NixOS/nixpkgs/pull/223411
 Corrigé et plus besoin de la PR précédente
-***** WAIT [[https://github.com/NixOS/nixpkgs/pull/186462][BioDBBBigFile]] avec ces 2 changements
+***** KILL [[https://github.com/NixOS/nixpkgs/pull/186462][BioDBBBigFile]] avec ces 2 changements
+CLOSED: [2023-07-02 Sun 11:20]
 **** KILL Version de kent déjà packagée : 404
 CLOSED: [2023-03-27 Mon 16:43]
 Compile mais les tests de passent pas
@@ -2273,7 +2284,6 @@ Impossible de faire marcher les tests Car il ne trouve pas le module Bio::Tools:
 *** TODO VEP
 
 ** WAIT [[https://github.com/NixOS/nixpkgs/pull/230394][rtg-tools]] :vcfeval:
-SCHEDULED: <2023-05-06 Sat>
 Soumis
 ** TODO Spip
 SCHEDULED: <2023-05-06 Sat>
@@ -2286,6 +2296,10 @@ SCHEDULED: <2023-05-06 Sat>
 ** TODO Bamsurgeon
 /Entered on/ [2023-05-13 Sat 19:11]
 *** TODO Velvet
+
+** TODO PR Picard avec option pour gérer la mémoire
+Similaire à
+https://github.com/bioconda/bioconda-recipes/blob/master/recipes/picard/picard.sh
 
 * Voiture :voiture:
 ** Mazda 5
@@ -2306,17 +2320,19 @@ SCHEDULED: <2023-07-30 Sun>
 DEADLINE: <2023-06-01 Thu>
 **** DONE Prendre RV
 CLOSED: [2023-05-28 Sun 10:03] SCHEDULED: <2023-05-07 Sun>
-**** TODO Changer amortisseurs
-SCHEDULED: <2023-06-13 Tue>
-**** TODO Changer phare avant
-SCHEDULED: <2023-06-13 Tue>
-**** TODO Contrôle pollution
-SCHEDULED: <2023-06-13 Tue>
+**** DONE Changer amortisseurs
+CLOSED: [2023-07-02 Sun 10:52] SCHEDULED: <2023-06-13 Tue>
+**** DONE Changer phare avant
+CLOSED: [2023-07-02 Sun 10:52] SCHEDULED: <2023-06-13 Tue>
+**** DONE Contrôle pollution
+CLOSED: [2023-07-02 Sun 10:52] SCHEDULED: <2023-06-13 Tue>
+**** TODO Prendre rendez-vous pour contrôle
+SCHEDULED: <2023-07-02 Sun>
 *** TODO Amende
 **** DONE Changement d'adresse carte grise
 CLOSED: [2023-06-11 Sun 21:40]
-**** TODO Envoyer photocopie carte grise pour éviter majoration
-SCHEDULED: <2023-06-18 Sun>
+**** DONE Envoyer photocopie carte grise pour éviter majoration
+CLOSED: [2023-07-02 Sun 10:52] SCHEDULED: <2023-06-18 Sun>
 * Moto
 :PROPERTIES:
 :CATEGORY: moto
@@ -2330,14 +2346,18 @@ RV pris yamah
 ** DONE Ordure ménagères
 CLOSED: [2023-06-11 Sun 21:40]
 Envoyé RIB le <2023-06-11 Sun>
+** TODO Badge déchetterie
+SCHEDULED: <2023-07-02 Sun>
+/Entered on/ [2023-07-02 Sun 11:03]
 * Gentoo
 ** GURU
-*** DONE Demander accès
-CLOSED: [2022-11-19 Sat 17:36]
 *** DONE Ebuild pour adapteur wifi TBW-108B
 CLOSED: [2023-05-22 Mon 22:50]
 Sur branche dev
-*** WAIT Ebuild hut
+*** DONE net-wireless/rtl8723bu: migration to linux-mod-r1.eclass
+CLOSED: [2023-07-02 Sun 11:13] SCHEDULED: <2023-07-02 Sun>
+*** DONE Ebuild hut
+CLOSED: [2023-07-02 Sun 10:57]
 sur dev
 ** TODO Article nzbget sur wiki
 /Entered on/ [2022-10-22 Sat 17:31]
