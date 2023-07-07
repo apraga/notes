@@ -1,0 +1,59 @@
+* Chlamydia trachomatis
+- 19 génovars
+Trachome oculaire
+Infection urogénitale sexuellement transmissilbse
+*1ere cause d’IST*
+** Clinique
+- Infection urogénitale basse/haut:  *urétrite* (homme), *cervicite* (asympto souvent), endométrie, salpingite
+- lymphogranulomatose vénérienne : régions tropicale, ulcération génitale, adénite inguinale; anorectite HSH
+- opportuniste : rare  (grossesse, immunodépression)
+** Résistances
+- naturelle = amonisode, glycopeptitde
+** Traitement
+- Doxycycline (ou azithromycine pour IST non compliqué)
+- infection génitale haute : doxycycline + autre
+- *dépister IST*, traiter partener, rapport protégé
+** Diagnostic
+- *Direct* = PCR, Transcription-Mediation-Amplification
+  - remboursé, sensbilité > 95%
+- Sérologie : biland infertilité, LGV (immunofluorescence, ELISA)
+- culture peu sensible, antigène non recommandé, pas de test de sensibilité antibio en routine
+* Mycoplasmes urogénitaux
+4 espèce
+- /ureaplasma/ spp = commensal tracture urogénital
+- /mycoplasma genitalium/ = IST, non commensal
+
+** Clinique
+- Infection urogénitale basse/haut:  *urétrite* (homme), *cervicite* (asympto souvent), endométrie, salpingite
+- lymphogranulomatose vénérienne : régions tropicale, ulcération génitale, adénite inguinale; anorectite HSH
+- opportuniste : rare  (uértrire masculine, salpingite, grossesse, immunodépression)
+
+** Diagnostic
+Myc. genitalium
+- *direct* non inscrit à la nomenclature : PCR, TMA
+- test de résistance macrolie moléculaire : gène codant ARNr23s
+- pas de culture (fastidien)
+
+Myc. hominis, Ureaplasma spp
+- *direct*: culture milieu spécifique liqui/gélosé (! pas de gram car pas de paroi)
+- TAAN : infection génitale haute/extra-génitale
+
+Prélèvement:
+- pas de prélèvement cervico-vaginal pour Ureaplasma et m. hominis ! (commensal)
+- site stérile; homme=urètre, sperme, urine (1er jet); NN = endotrachéal, liquide gastrique
+** Résistances
+- naturelle : β-lactamine, glycopeptitde, fosformycine, rifampicine
+  - Ureaplasma : lincosamide
+  - homiis : certains macrolife
+- acquise :
+  - M. hominis, Ureaplasma: tétracycline (gène /tet/) surtout +/- fluoroquinolones (3%)
+  - M. genitalium : macrolides++ !traitement de première intention!, fluoroquinolones
+** Traitement
+Myc. genitalium
+- non compliqué : azithromycine
+- sinon : moxifloxacine
+- *dépister IST*, traiter partener, rapport protégé
+Myc. hominis, Ureaplasma
+- infection urogénitale: tétracycline
+- néonat/grosses : macrolide
+- immunodépression: tétra + fluoroquinolones
