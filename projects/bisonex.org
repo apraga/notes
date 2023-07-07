@@ -3475,6 +3475,22 @@ SCHEDULED: <2023-07-07 Fri>
 ******* TODO [#A] Certains FP sont des vrais FP: erreur d'happy ?
 SCHEDULED: <2023-07-07 Fri>
 
+******** Ex: chr1:408793
+G	C	600.64	.	BS=408793;Regions=CONF,TS_contained	GT:BD:BK:BI:BVT:BLT:QQ	./.:.:.:.:NOCALL:nocall:.	0/1:FP:.:tv:SNP:het:600.64
+CLOSED: [2023-07-07 Fri 20:03]
+********* DONE Vérifier que l'on est bien dans la zone "high confidence" définie dans le bed
+oui:
+chr1	408514	414397	.	500	+
+********* DONE Vérifier que le variant est bien dans le truth et query
+CLOSED: [2023-07-07 Fri 20:14]
+truth
+chr1    408793  .       G       C       50      MismatchedRefAllele     AttemptedAlleles=C*->G;AttemptedLocus=chr1:408793-408793;SwappedAlleles;callable=CS_HiSeqPE300xGATK_callable,CS_10XLRGATK_callable,CS_CCS15kb_20kbGATK4_callable,CS_CGnormal_callable,CS_HiSeqPE300xfreebayes_callable;callsetnames=HiSeqPE300xGATK,CCS15kb_20kbGATK4,CGnormal,HiSeqPE300xfreebayes,CCS15kb_20kbDV,10XLRGATK;callsets=6;datasetnames=HiSeqPE300x,CCS15kb_20kb,CGnormal,10XChromiumLR;datasets=4;datasetsmissingcall=IonExome,SolidSE75bp;filt=CS_CCS15kb_20kbDV_filt,CS_CCS15kb_20kbGATK4_filt;platformnames=Illumina,PacBio,CG,10X;platforms=4       GT:AD:ADALL:DP:GQ       1/0:153,159:141,132:689:99
+
+query
+chr1    408793  .       G       C       600.64  .       AC=1;AF=0.500;AN=2;BaseQRankSum=-1.390;DP=64;ExcessHet=0.0000;FS=0.961;MLEAC=1;MLEAF=0.500;MQ=60.00;MQRankSum=0.000;QD=9.53;ReadPosRankSum=-3.146;SOR=0.906     GT:AD:DP:GQ:PL  0/1:33,30:63:99:608,0,798
+********* TODO Problème d'haplotype ?
+truth 1/0 et query 0/1
+******** TODO Tester avec vcfeval
 ****** TODO 2x moins de variants
 ****** DONE Comparer hg38 et T2T: 2x moinsr de variants, trop de FP et FN
 CLOSED: [2023-07-07 Fri 18:38]
