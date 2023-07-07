@@ -1,4 +1,5 @@
 ﻿#+title: Bisonex
+#+FILETAGS: @bisonex
 * Biblio :biblio:
 ** Workflow
 Comparaison WDL, Cromwell, nextflow
@@ -1223,7 +1224,7 @@ SCHEDULED: <2023-07-10 Mon>
 :END:
 Contient les chain files
 ** TODO Indicateurs qualité
-SCHEDULED: <2023-07-07 Fri>
+SCHEDULED: <2023-07-14 Fri>
 *** Idée
 Raredisease:
 - FastQC : nombreuses statistiques. Non disponible Nix
@@ -1240,9 +1241,9 @@ Sarek:
 
 MultiQC : non disponible Nix
 ** TODO vérifier si normalisation
-SCHEDULED: <2023-07-08 Sat>
+SCHEDULED: <2023-07-14 Fri>
 ** TODO Rajouter vérification hgvs
-SCHEDULED: <2023-07-08 Sat>
+SCHEDULED: <2023-07-14 Fri>
 
 ** DONE Exécution
 CLOSED: [2022-09-13 Tue 21:37]
@@ -3464,9 +3465,19 @@ wc -l work/e4/9981dc539a2373c2beeaa0affc3497/Agilent_SureSelect_All_Exons_v7_hg3
 On a donc perdu 1000 zones
 ***** DONE Liftovervcf avec variant échangé référence/alternative ?
 CLOSED: [2023-07-02 Sun 23:09]
-***** TODO Comprendre pourquoi HG001 ne passe plus
+***** TODO Comprendre mauvais résultat
 SCHEDULED: <2023-07-03 Mon>
-****** TODO Comparer hg38 et T2T: 2x moinsr de variants, trop de FP et FN
+****** TODO Beaucoup trop de FP
+SCHEDULED: <2023-07-07 Fri>
+******* TODO Répartition des FP : cluster ?
+******* TODO Examiner quelques FP
+******* TODO Méthodologie du pangenome
+******* TODO [#A] Certains FP sont des vrais FP: erreur d'happy ?
+SCHEDULED: <2023-07-07 Fri>
+
+****** TODO 2x moins de variants
+****** DONE Comparer hg38 et T2T: 2x moinsr de variants, trop de FP et FN
+CLOSED: [2023-07-07 Fri 18:38]
 T2T
 | Type  | Filter | TRUTH.TOTAL | TRUTH.TP | TRUTH.FN | QUERY.TOTAL | QUERY.FP | QUERY.UNK | FP.gt | FP.al | METRIC.Recall | METRIC.Precision | METRIC.Frac_NA | METRIC.F1_Score | TRUTH.TOTAL.TiTv_ratio | QUERY.TOTAL.TiTv_ratio | TRUTH.TOTAL.het_hom_ratio | QUERY.TOTAL.het_hom_ratio |
 | INDEL | ALL    |         413 |      246 |      167 |         751 |      289 |       215 |     2 |    93 |      0.595642 |         0.460821 |       0.286285 |        0.519629 |                    NaN |                    NaN |                  2.428571 |                  2.465116 |
@@ -3491,8 +3502,6 @@ Hg38
 | Type  | TRUTH.TOTAL | TRUTH.TP | TRUTH.FN | QUERY.TOTAL | QUERY.FP | QUERY.UNK | FP.gt | FP.al | METRIC.Recall | METRIC.Precision |
 | INDEL |         549 |      489 |       60 |         899 |       64 |       340 |     8 |    17 |      0.890710 |         0.885510 |
 | SNP   |       21973 |    21462 |      511 |       26285 |      563 |      4263 |    68 |    16 |      0.976744 |         0.974435 |
-****** TODO Comparer quelques FP et FN
-
 ****** DONE Interesection des bed: similaire
 CLOSED: [2023-07-04 Tue 23:11]
 HG38
@@ -3521,6 +3530,9 @@ hap.py \
      \
     -o HG001
 #+end_src
+***** TODO Mail Yannis
+***** DONE Mail GIAB pour version T2T
+CLOSED: [2023-07-07 Fri 18:37]
 **** DONE NA12878 :na12878:hg38:
 CLOSED: [2023-06-30 Fri 22:30]
 ***** DONE Discussion alexis : Mail
@@ -4320,7 +4332,7 @@ CLOSED: [2023-06-26 Mon 19:02] SCHEDULED: <2023-06-25 Sun>
 Picard liftoverinterval est basé sur UCSCS
 Mais on n'aurait pas la différence pour NA12878 qu'on voit...
 **** TODO HG002 :hg002:hg38:
-SCHEDULED: <2023-04-10 Mon>
+SCHEDULED: <2023-07-14 Fri>
 #+begin_src
     NXF_OPTS=-D"user.name=${USER}" nextflow run workflows/giabFastq.nf -profile standard,helios
     NXF_OPTS=-D"user.name=${USER}" nextflow run main.nf -profile standard,helios -resume --input="/Work/Groups/bisonex/data/giab/GRCh38/HG002_{1,2}.fq.gz --test.id=HG002
@@ -4406,7 +4418,7 @@ Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Se
 | SNP   | ALL    |       38406 |    34793 |     3613 |       36935 |      275 |      1868 |    37 |    15 |      0.905926 |         0.992158 |       0.050575 |        0.947083 |     2.6247759222568168 |     2.5752854654538417 |         1.588953331534934 |        1.6192536889897844 |
 | SNP   | PASS   |       38406 |    34793 |     3613 |       36935 |      275 |      1868 |    37 |    15 |      0.905926 |         0.992158 |       0.050575 |        0.947083 |     2.6247759222568168 |     2.5752854654538417 |         1.588953331534934 |        1.6192536889897844 |
 ***** TODO Refaire : HiSeq4000 + agilent sureselect + génome "prêt à l'emploi"
-SCHEDULED: <2023-07-08 Sat>
+SCHEDULED: <2023-07-12 Wed>
 **** TODO HG003 :hg003:hg38:
 ***** Notes
 #+begin_src sh
@@ -4430,7 +4442,7 @@ INDEL   PASS         2731      2290       441         3092       208        577 
   SNP    ALL        37997     34481      3516        36861       306       2074     33     13       0.907466          0.991204        0.056265         0.947488                2.611269                2.565915                   1.555780                   1.621727
   SNP   PASS        37997     34481      3516        36861       306       2074     33     13       0.907466          0.991204        0.056265         0.947488                2.611269                2.5659
 ***** TODO Refaire : HiSeq4000 + agilent sureselect + génome "prêt à l'emploi"
-SCHEDULED: <2023-07-08 Sat>
+SCHEDULED: <2023-07-14 Fri>
 **** TODO HG004 :hg38:hg004:
 #+begin_src sh
 NXF_OPTS=-D"user.name=${USER}" nextflow run main.nf -profile standard,helios  --input /Work/Groups/bisonex/data/giab/GRCh38/HG004_{1,2}.fq.gz -bg
@@ -4450,7 +4462,7 @@ INDEL   PASS         2787      2388       399         3183       195        580 
   SNP    ALL        38185     34560      3625        36921       254       2107     46      7       0.905067          0.992704        0.057068         0.946862                2.589175                2.553546                   1.632595                   1.653534
   SNP   PASS        38185     34560      3625        36921       254       2107     46      7       0.905067          0.992704        0.057068         0.946862                2.589175                2.553546                   1.632595                   1.653534
 ***** TODO Refaire : HiSeq4000 + agilent sureselect + génome "prêt à l'emploi"
-SCHEDULED: <2023-07-08 Sat>
+SCHEDULED: <2023-07-14 Fri>
 **** STRT HG001 :hg001:T2T:
 SCHEDULED: <2023-07-03 Mon>
 Avec liftover : 10x moins de variants...
@@ -4463,11 +4475,8 @@ SNP,PASS,11236,10985,251,23597,9771,2841,26,58,0.977661,0.529245,0.120397,0.6867
 
 
 **** TODO HG002 :hg002:T2T:
-SCHEDULED: <2023-07-07 Fri>
 **** TODO HG003 :hg003:T2T:
-SCHEDULED: <2023-07-07 Fri>
 **** TODO HG004 :hg004:T2T:
-SCHEDULED: <2023-07-07 Fri>
 **** TODO Résumer résultats pour Paul + article :resultats:hg38:
 SCHEDULED: <2023-07-10 Mon>
 Refaire résultats
@@ -6370,7 +6379,7 @@ FFFFFFFFFFFFFFFFFFFFFFF:FFF:FFFFFFFFFFFFF,FFFFFFFFFFFF:F:FFFF:FFFFF,,FFF:FFFFFFF
 ***** TODO Phase 2 : chr22, vaf variable :T2T:
 SCHEDULED: <2023-07-10 Mon>
 ****** TODO Phase 3 : tous SNV, vaf variable :T2T:
-SCHEDULED: <2023-07-07 Fri>
+SCHEDULED: <2023-07-14 Fri>
 ***** TODO Test Indel
 **** Divers
 ***** DONE Vérifier nombre de reads fastq - bam
