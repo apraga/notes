@@ -2249,7 +2249,6 @@ https://github.com/NixOS/nixpkgs/issues/192396
 *** KILL Version avec gradle
 CLOSED: [2022-10-09 Sun 22:51]
 *** TODO [[https://github.com/NixOS/nixpkgs/issues/192396][Bug report Version 22.10.6]]
-SCHEDULED: <2023-05-13 Sat>
 **** Notes
 Erreur :
 ERROR: Cannot download nextflow required file -- make sure you can connect to the internet

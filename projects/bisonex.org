@@ -3467,13 +3467,16 @@ On a donc perdu 1000 zones
 CLOSED: [2023-07-02 Sun 23:09]
 ***** TODO Comprendre mauvais résultat
 SCHEDULED: <2023-07-03 Mon>
-****** TODO Beaucoup trop de FP
+****** TODO Beaucoup trop de FP : erreur de FILTER
 SCHEDULED: <2023-07-07 Fri>
-******* TODO Répartition des FP : cluster ?
-******* TODO Examiner quelques FP
-******* TODO Méthodologie du pangenome
-******* TODO [#A] Certains FP sont des vrais FP: erreur d'happy ?
-SCHEDULED: <2023-07-07 Fri>
+******* KILL Répartition des FP : cluster ?
+CLOSED: [2023-07-08 Sat 10:43]
+******* KILL Examiner quelques FP
+CLOSED: [2023-07-08 Sat 10:43]
+******* KILL Méthodologie du pangenome
+CLOSED: [2023-07-08 Sat 10:43]
+******* DONE [#A] Certains FP sont des vrais FP: erreur de flag et non d'happy
+CLOSED: [2023-07-08 Sat 10:43] SCHEDULED: <2023-07-07 Fri>
 
 ******** Ex: chr1:408793
 G	C	600.64	.	BS=408793;Regions=CONF,TS_contained	GT:BD:BK:BI:BVT:BLT:QQ	./.:.:.:.:NOCALL:nocall:.	0/1:FP:.:tv:SNP:het:600.64
@@ -3488,9 +3491,29 @@ chr1    408793  .       G       C       50      MismatchedRefAllele     Attempte
 
 query
 chr1    408793  .       G       C       600.64  .       AC=1;AF=0.500;AN=2;BaseQRankSum=-1.390;DP=64;ExcessHet=0.0000;FS=0.961;MLEAC=1;MLEAF=0.500;MQ=60.00;MQRankSum=0.000;QD=9.53;ReadPosRankSum=-3.146;SOR=0.906     GT:AD:DP:GQ:PL  0/1:33,30:63:99:608,0,798
-********* TODO Problème d'haplotype ?
-truth 1/0 et query 0/1
-******** TODO Tester avec vcfeval
+********* DONE Tester happy sur ce variant: non retrouvé
+CLOSED: [2023-07-08 Sat 10:42]
+Il faut au moins 2 variant + les index (sinon "no chromosome in common")
+Donc on augmente la taille de la région
+#+begin_src sh :dir ~/code/bisonex/out
+bcftools view HG001_GRCh38_1_22_v4_lifted_merged.vcf.gz  -o lifted_test.vcf.gz chr1:408793-408900
+bcftools view HG001-SRX11061486_SRR14724513-T2T.vcf.gz -o run_test.vcf.gz chr1:408793-408900
+bcftools index lifted_test.vcf.gz
+bcftools index run_test.vcf.gz
+#+end_src
+
+ #+begin_src sh
+ hap.py lifted_test.vcf.gz run_test.vcf.gz --reference ../data/chm13v2.0.fa -o test
+ #+end_src
+On trouve bien les 2 variants. L'indel est retrouvé mais pas le SNP
+chr1    408793  .       G       C       600.64  .       BS=408793       GT:BD:BK:BI:BVT:BLT:QQ  ./.:.:.:.:NOCALL:nocall:.       0/1:FP:.:tv:SNP:het:600.64
+chr1    408874  .       CGAA    C       1476.6  .       BS=408874       GT:BD:BK:BI:BVT:BLT:QQ  0/1:TP:gm:d1_5:INDEL:het:1476.6 0/1:TP:gm:d1_5:INDEL:het:1476.6
+********* DONE Changer flag : mismatch -> PASS: OUI
+CLOSED: [2023-07-08 Sat 10:42]
+********* DONE Changer haplotype 1/0 -> 0/1 truth: idem
+CLOSED: [2023-07-08 Sat 10:35]
+********* DONE Tester avec vcfeval : idemnt
+CLOSED: [2023-07-08 Sat 10:43]
 ****** TODO 2x moins de variants
 ****** DONE Comparer hg38 et T2T: 2x moinsr de variants, trop de FP et FN
 CLOSED: [2023-07-07 Fri 18:38]
@@ -3546,7 +3569,9 @@ hap.py \
      \
     -o HG001
 #+end_src
-***** TODO Mail Yannis
+***** KILL Mail Yannis
+CLOSED: [2023-07-08 Sat 10:44]
+***** TODO Corriger FILTER
 ***** DONE Mail GIAB pour version T2T
 CLOSED: [2023-07-07 Fri 18:37]
 **** DONE NA12878 :na12878:hg38:
