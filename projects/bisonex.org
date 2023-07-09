@@ -502,7 +502,7 @@ CLOSED: [2023-06-14 Wed 22:35]
 ***** DONE compatibilité hg38
 CLOSED: [2023-06-14 Wed 22:35]
 **** TODO cache vep
-SCHEDULED: <2023-07-10 Mon>
+SCHEDULED: <2023-07-16 Sun>
 *** HOLD Processing bases de données
 **** DONE dbSNP common
 **** DONE Seulement les ID dans dbSNP common !
@@ -1217,7 +1217,7 @@ SCHEDULED: <2023-06-14 Wed>
 *** DONE Haplotypecaller
 CLOSED: [2023-06-26 Mon 19:42] SCHEDULED: <2023-06-15 Thu>
 *** TODO Filtres
-SCHEDULED: <2023-07-10 Mon>
+SCHEDULED: <2023-07-16 Sun>
 *** Liftover pipelines
 :PROPERTIES:
 :ID:       d2280207-3f65-4a31-a291-41fa9a9658c2
@@ -3581,11 +3581,52 @@ $ zgrep -c '^chr' HG001_GRCh38_1_22_v4_lifted_merged.vcf.gz
 SCHEDULED: <2023-07-08 Sat>
 ******* DONE Regarder avec Julia si ce sont vraiment des FP: 61/5277 qui ne le sont pas
 CLOSED: [2023-07-09 Sun 12:09]
- 4155
+******* TODO Examiner les FP
 ******* TODO Tester un FP
-******* TODO Vérifier quelques variants sur IGV
-******* TODO Répartition des FP : cluster ?
-******* TODO Examiner quelques FP
+  2 │ chr1        608765  A           G           ./.:.:.:.:NOCALL:nocall:.  1/1:FP:.:ti:SNP:homalt:188
+  liftDown UCSC: rien en GIAB : vrai FP
+
+ 3 │ chr1        762943  A           G           ./.:.:.:.:NOCALL:nocall:.  1/1:FP:.:ti:SNP:homalt:287
+ 4 │ chr1        762945  A           T           ./.:.:.:.:NOCALL:nocall:.  1/1:FP:.:tv:SNP:homalt:287
+ Remaniements complexes ? Pas dans le gène en HG38
+******* TODO La plupart des FP (4705/5566) sont homozygotes: erreur de référence ?
+SCHEDULED: <2023-07-09 Sun>
+Sur les 2 premiers variants, ils montrent en fait la différence entre T2T et GRCh38
+Erreur à l'alignement ?
+******** KILL relancer l'alignement
+CLOSED: [2023-07-09 Sun 17:36]
+******** DONE vérifier reads identiques hg38 et T2T: oui
+CLOSED: [2023-07-09 Sun 16:36]
+T2T CHR1608765
+38   	chr1:1180168-1180168 (
+
+SRR14724513.24448214
+SRR14724513.24448214
+******* TODO Enlever les FP qui correspondent à un changement dans le génome
+SCHEDULED: <2023-07-09 Sun>
+Condition:
+- pas de variation à la position en GRCh38
+- variantion homozygote
+- la varation en T2T correspond au changement de pair de base GRC38 -> T2T
+  pour les SNP:
+  alt_T2T[i] = DNA_GRC38[j]
+  avec i la position en T2T et j la position en GRCh38
+
+  Algorithm
+  1. Définir un ID sur le VCF en hg38 :
+      bcftools annotate --set-id +'hg38\_%CHROM\_%POS\_%REF\_%FIRST_ALT' file.vcf
+  2. Pour chaque FP, récupérer depuis le VCF généré par happy
+     - l'identifiant en hg38
+     - les coordonnées en T2T
+     - séquence alternative
+  3. Pour chaque identifiant, récupérer depuis le VCF en hg38
+     - séquence de réference
+     - les coordonnées
+  4. Comparer ALT en T2T à la REF en hg38
+******* DONE Vérifier quelques variants sur IGV
+CLOSED: [2023-07-09 Sun 17:36]
+******* KILL Répartition des FP : cluster ?
+CLOSED: [2023-07-09 Sun 17:36]
 ******* TODO Méthodologie du pangenome
 ***** KILL Mail Yannis
 CLOSED: [2023-07-08 Sat 10:44]
@@ -4536,10 +4577,10 @@ SNP,PASS,11236,10985,251,23597,9771,2841,26,58,0.977661,0.529245,0.120397,0.6867
 **** TODO HG003 :hg003:T2T:
 **** TODO HG004 :hg004:T2T:
 **** TODO Résumer résultats pour Paul + article :resultats:hg38:
-SCHEDULED: <2023-07-10 Mon>
+SCHEDULED: <2023-07-16 Sun>
 Refaire résultats
 **** TODO Plot : ashkenazim trio :hg38:
-SCHEDULED: <2023-07-10 Mon>
+SCHEDULED: <2023-07-16 Sun>
 /Entered on/ [2023-04-16 Sun 17:29]
 Refaire résultats
 *** KILL Platinum genome
@@ -6435,7 +6476,7 @@ CTTTTGCTTGTCCCCAGGACGCACCTCAGGGTGGTGAAGCAAAAAAACCACGGCCCAGGAGAGGGTGGGTGCTGTGGTCT
 FFFFFFFFFFFFFFFFFFFFFFF:FFF:FFFFFFFFFFFFF,FFFFFFFFFFFF:F:FFFF:FFFFF,,FFF:FFFFFFFFFF,FFFFFFF,FFFFFFFFFFF,FFFFFFFFF:FFFF,F:FFFFF:FFFFFFFFF:FFFF,FFFFFFFFF
 ******* DONE Supprimer NW_ et NT_
 ***** TODO Phase 2 : chr22, vaf variable :T2T:
-SCHEDULED: <2023-07-10 Mon>
+SCHEDULED: <2023-07-16 Sun>
 ****** TODO Phase 3 : tous SNV, vaf variable :T2T:
 SCHEDULED: <2023-07-14 Fri>
 ***** TODO Test Indel
