@@ -684,3 +684,17 @@ Rappel
 
 ~にくい:  difficile de
   - 行きにくい : difficile à atteindre
+* <2023-07-09 Sun>
+** Vocabulaire
+- 傷つく(きず ): être blessé
+- 水流（すいりゅう）: courant de la rivière
+- 体力 (たいりょく ):  endurance mais aussi force physique (selon contexte)
+- 初心者（しょしんしゃ）: débutant
+- 処方箋（しょほうせん）: prescription médicale
+- 出張 (しゅっちょう ) : voyage d'affaire
+- 危険 (きけん) : danger
+- 渓谷 (いこく ) : gorge (canyon)
+- 沢登り (さわのぼ ) : remonter un canyon
+- 懸垂下降( けんすいかこう ) : rappel (escalade)
+- 水泳 (すいえい ) : nage
+- 飛び込み (と-こ-) : saut
