@@ -51,3 +51,12 @@ Mécanisme : inhibe synthèse microbionne d'acide folique
   - 3e et 4e génération : sinusite aigüe bactériennes, exacerpbation pneumopathie communutaire, infection compliquée peau + tissus mous
 
     Résistante : en augmentatino chez entérobactéries (E. coli, Klebsiella)
+** Céphalo
+- C1G: cefalexine CXN
+- C2G: cefoxitine FOX
+- C3G:
+  - cefotaxime COX
+  - cefepime FEP
+  - ceftazidime CZO
+** Métronidazole
+Pour anaérobie strictes

@@ -108,3 +108,8 @@ détecte les cytochrome de type c (pigments hémo-protéiques dans la plupart de
   - Vibior, Aeromonas
   - Legionella
   - Entérobactéries : sauf Shigella, Klebsiella
+
+** Fermentant
+BGN:
+- non fermentant = environnement (pyo)
+- fermenant le lactose = entéro (commensal)

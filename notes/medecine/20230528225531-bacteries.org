@@ -89,8 +89,11 @@ Forte capacité à former des biofilms
 - Milieu sélectif : cétrimide
 - Oxydase positif (!= entérobactéries) -> test rapide pour différencier les 2
 *** Résistance
-Faible perméabilité membranaire : résistance naturelle pénicillines, C1G et C2G +/- certaines C3G
-+ Catalase positif - lactose négatif
+- Faible perméabilité membranaire
+  - résistance naturelle : amox, augmenti
+  - ertapénèmepénicillines,
+  - cefotaxine, ceftriaxne
+- Catalase positif - lactose négatif
 ** Streptocoques
 Infections graves = /pyogenes/, /pneumoniae/.
 Commensal mais opportunites (immunodépression) : oraux (*endocardite, SDRA)
@@ -233,3 +236,7 @@ Portage pharyngé, avec rarement invasion (sang +/- LCS) -> seulement souches
 ** Listeria monocytègene
 *** Résistance
 - résistance naturelle céphalosporine, clindamycine, fosfomycine
+** TODO Haemophilus influenza
+Résistance : regarder penicilline G
+- suspicion beta lactamase, tester par cefinase
+- PLP3 : faire CMI
