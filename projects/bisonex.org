@@ -3467,14 +3467,8 @@ On a donc perdu 1000 zones
 CLOSED: [2023-07-02 Sun 23:09]
 ***** TODO Comprendre mauvais résultat
 SCHEDULED: <2023-07-03 Mon>
-****** TODO Beaucoup trop de FP : erreur de FILTER
-SCHEDULED: <2023-07-07 Fri>
-******* KILL Répartition des FP : cluster ?
-CLOSED: [2023-07-08 Sat 10:43]
-******* KILL Examiner quelques FP
-CLOSED: [2023-07-08 Sat 10:43]
-******* KILL Méthodologie du pangenome
-CLOSED: [2023-07-08 Sat 10:43]
+****** DONE 2x moins de variants, beaucoup trop de FP : erreur de FILTER
+CLOSED: [2023-07-08 Sat 11:17] SCHEDULED: <2023-07-07 Fri>
 ******* DONE [#A] Certains FP sont des vrais FP: erreur de flag et non d'happy
 CLOSED: [2023-07-08 Sat 10:43] SCHEDULED: <2023-07-07 Fri>
 
@@ -3514,8 +3508,7 @@ CLOSED: [2023-07-08 Sat 10:42]
 CLOSED: [2023-07-08 Sat 10:35]
 ********* DONE Tester avec vcfeval : idemnt
 CLOSED: [2023-07-08 Sat 10:43]
-****** TODO 2x moins de variants
-****** DONE Comparer hg38 et T2T: 2x moinsr de variants, trop de FP et FN
+******* DONE Comparer hg38 et T2T: 2x moinsr de variants, trop de FP et FN
 CLOSED: [2023-07-07 Fri 18:38]
 T2T
 | Type  | Filter | TRUTH.TOTAL | TRUTH.TP | TRUTH.FN | QUERY.TOTAL | QUERY.FP | QUERY.UNK | FP.gt | FP.al | METRIC.Recall | METRIC.Precision | METRIC.Frac_NA | METRIC.F1_Score | TRUTH.TOTAL.TiTv_ratio | QUERY.TOTAL.TiTv_ratio | TRUTH.TOTAL.het_hom_ratio | QUERY.TOTAL.het_hom_ratio |
@@ -3531,7 +3524,7 @@ Hg38
 | SNP   | ALL    |       21973 |    21462 |      511 |       26285 |      563 |      4263 |    68 |    16 |      0.976744 |         0.974435 |       0.162184 |        0.975588 |                3.00711 |               2.784686 |                  1.591810 |                  1.816145 |
 | SNP   | PASS   |       21973 |    21462 |      511 |       26285 |      563 |      4263 |    68 |    16 |      0.976744 |         0.974435 |       0.162184 |        0.975588 |                3.00711 |               2.784686 |                  1.591810 |                  1.816145 |
 
-******* Résumé
+******** Résumé
 T2T
 | Type  | TRUTH.TOTAL | TRUTH.TP | TRUTH.FN | QUERY.TOTAL | QUERY.FP | QUERY.UNK | FP.gt | FP.al | METRIC.Recall | METRIC.Precision |
 | INDEL |         413 |      246 |      167 |         751 |      289 |       215 |     2 |    93 |      0.595642 |         0.460821 |
@@ -3569,9 +3562,33 @@ hap.py \
      \
     -o HG001
 #+end_src
+****** DONE Corriger FILTER : mieux mais toujours trop de négatifs. 3/4 SNP retrouvés
+CLOSED: [2023-07-08 Sat 15:19] SCHEDULED: <2023-07-08 Sat>
+Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.Precision  METRIC.Frac_NA  METRIC.F1_Score  TRUTH.TOTAL.TiTv_ratio  QUERY.TOTAL.TiTv_ratio  TRUTH.TOTAL.het_hom_ratio  QUERY.TOTAL.het_hom_ratio
+INDEL    ALL          413       246       167          751       289        215      2     98       0.595642          0.460821        0.286285         0.519629                     NaN                     NaN                   2.428571                   2.465116
+INDEL   PASS          413       246       167          751       289        215      2     98       0.595642          0.460821        0.286285         0.519629                     NaN                     NaN                   2.428571                   2.465116
+SNP    ALL        15883     15479       404        23597      5277       2841     46     44       0.974564          0.745760        0.120397         0.844947                3.017198                 2.85705                   5.560099                   2.114633
+SNP   PASS        15883     15479       404        23597      5277       2841     46     44       0.974564          0.745760        0.120397         0.844947                3.017198                 2.85705                   5.560099                   2.114633
+******* DONE Vérifier qu'il ne reste plus de filtre autre que PASS
+CLOSED: [2023-07-08 Sat 15:19]
+#+begin_src
+$ zgrep -c 'PASS' HG001_GRCh38_1_22_v4_lifted_merged.vcf.gz
+3730505
+$ zgrep -c '^chr' HG001_GRCh38_1_22_v4_lifted_merged.vcf.gz
+3730506
+#+end_src
+****** TODO 1/4 SNP manquant ?
+SCHEDULED: <2023-07-08 Sat>
+******* DONE Regarder avec Julia si ce sont vraiment des FP: 61/5277 qui ne le sont pas
+CLOSED: [2023-07-09 Sun 12:09]
+ 4155
+******* TODO Tester un FP
+******* TODO Vérifier quelques variants sur IGV
+******* TODO Répartition des FP : cluster ?
+******* TODO Examiner quelques FP
+******* TODO Méthodologie du pangenome
 ***** KILL Mail Yannis
 CLOSED: [2023-07-08 Sat 10:44]
-***** TODO Corriger FILTER
 ***** DONE Mail GIAB pour version T2T
 CLOSED: [2023-07-07 Fri 18:37]
 **** DONE NA12878 :na12878:hg38:

@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       a13a6ead-eeb5-4059-817e-9f326f4280ac
+:END:
+#+title: Wiki RTL8723bu
+#+filetags: personal
+
+* Gentoo
+ebuild dans GURU overlay
+ne pas oublier de blacklister
+
+/etc/modprobe.d/50-rtl8xxu.conf:
+blacklist rtl8xxxu
