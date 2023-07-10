@@ -223,7 +223,18 @@ Attention: en cas de résistance surajoutée, les aminosides sont inefficaces.
 - E. faecium :
   - multiréristance en émergence
   - > 80% faecium résistance pénicillines A
+** Entérocoques
+Commensal gastrointestinal + génital chez les femmes
+Augmentation des infections avec les années
 
+Clinique
+- infection urinaire: le plus fréquent, nosocomial
+- bactériémie
+- endocardite : de plus en plus fréquent
+- infection intra-abdominal (en association)
+
+Résistance: attention aux entérococques résistant vancomycine (surtout E. faecium)
+- /vancA/ /vancB/
 ** Neisseria meningitidis
 - Diplococque Gram - aérobie.
 - Très gragile. Hautement variable

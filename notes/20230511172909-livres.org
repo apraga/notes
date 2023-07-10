@@ -157,6 +157,7 @@ Relu jusque "curse of dimensionality"
 - [-] 107 Structure and Function of the Kidneys
 - [-] 112 Acute Kidney Injury
 *** Infectious Diseases
+- [X] 275 Enterococcal infections
 - [-] 318 Candidiasis
 *** Neurology Disease
 - [-] Chapter 369 Psychiatric Disorders in Medical Practice
