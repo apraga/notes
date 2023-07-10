@@ -19,15 +19,28 @@ Donc :
 - seules les antibio pénétrant dans les cellules (macrolides, fluoroquinolones, rifampicine, cycline ) sont actives contre les bactéries "intracellulaires " (Chlamydia, Coxiella burnetti, Rickettsia, Legionella pneumophilia, Brucella meltiensi, Bartonella )
 ** Interprétation
 Entérobactéries
-- pénicillinase acquise :
-  - bas niveau = résistant Amoxicilline (pénicilline A) + Ticarcilline (carboxypénicilline), diminue pipéracilline
-  - haut niveau = résistant Pipéracilline (uréidopénicilline), diminue pipéracilline+tazobactam
-  - résistant aux inhibiteurs (TRI): résistant amox, ticar, pip, tazo + amoxicilline-Acide clavulanique et tircaline-acide clavulanique
-- céphalosporinase plasmidique (acquise)
-  - résistant amox, amox-acide clavulanique, C1G [céfalotine (CF)], C3G [céfixime (CFM), céfoxatime (CTX), ceftazidime (CAZ)]
-  - dimine aztréonam (ATM) [C3G], ticar, pipe, tazo
-  - sensibile C4G (céfépime = FEP), carbapénème (imipénème = IMP)
-- BLSE
+
+! Groupe 1: TRI = résistance amox, ticar, pipe + en associtation inhibiteur β-lactamase !
+
+|               | Pénicillinase | Pénicillinase | Céphalosporinase | BLSE | Carbapénémase |
+|               |               | déréprimée    |                  |      |               |
+| amoxicilline  | R             | R             | R                | R    | R             |
+| ticarcilline  | R             | R             | R                | R    | R             |
+| piperacilline | I/R           | R             | I/R              | R    | R             |
+| amox+AC       |               | I/R           | R                | ?    | R             |
+| pipe+tazo     |               | I/R           |                  | ?    | R             |
+| ticar + AC    |               |               |                  | R    | R             |
+| C1G           |               | I/R           | R                |      | R             |
+| C2G           |               |               | I/R              |      | I/R           |
+| C3G           |               |               | I/R              | I/R  | S OXA/I/R     |
+| C4G           |               |               | I/R              | I/R  | S OXA/I/R     |
+| carbapénème   |               |               |                  |      | I/R           |
+
+- C1G = céfalotine
+- C2G = céfoxitine
+- C3G = céfixime (CFM), céfoxatime (CTX), ceftazidime (CAZ)
+- C4G = céfépime (FEP)
+
 ** Aminosides
 Action = bactéridice, concentration dépendantes. Perturbe la synthèse des protéine (fixation sous unité 30s des ribosomes)
 Résistances
