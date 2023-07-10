@@ -6431,3 +6431,5 @@ Temps de repos = temps de course
 - 4
 - 4
 - 4
+* <2023-07-10 Mon> Workout
+ Circuit x2 (complet)

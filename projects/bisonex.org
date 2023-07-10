@@ -3564,11 +3564,11 @@ hap.py \
 #+end_src
 ****** DONE Corriger FILTER : mieux mais toujours trop de négatifs. 3/4 SNP retrouvés
 CLOSED: [2023-07-08 Sat 15:19] SCHEDULED: <2023-07-08 Sat>
-Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.Precision  METRIC.Frac_NA  METRIC.F1_Score  TRUTH.TOTAL.TiTv_ratio  QUERY.TOTAL.TiTv_ratio  TRUTH.TOTAL.het_hom_ratio  QUERY.TOTAL.het_hom_ratio
+ Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.Precision  METRIC.Frac_NA  METRIC.F1_Score  TRUTH.TOTAL.TiTv_ratio  QUERY.TOTAL.TiTv_ratio  TRUTH.TOTAL.het_hom_ratio  QUERY.TOTAL.het_hom_ratio
 INDEL    ALL          413       246       167          751       289        215      2     98       0.595642          0.460821        0.286285         0.519629                     NaN                     NaN                   2.428571                   2.465116
 INDEL   PASS          413       246       167          751       289        215      2     98       0.595642          0.460821        0.286285         0.519629                     NaN                     NaN                   2.428571                   2.465116
-SNP    ALL        15883     15479       404        23597      5277       2841     46     44       0.974564          0.745760        0.120397         0.844947                3.017198                 2.85705                   5.560099                   2.114633
-SNP   PASS        15883     15479       404        23597      5277       2841     46     44       0.974564          0.745760        0.120397         0.844947                3.017198                 2.85705                   5.560099                   2.114633
+  SNP    ALL        15883     15479       404        23597      5277       2841     46     44       0.974564          0.745760        0.120397         0.844947                3.017198                 2.85705                   5.560099                   2.114633
+  SNP   PASS        15883     15479       404        23597      5277       2841     46     44       0.974564          0.745760        0.120397         0.844947                3.017198                 2.85705                   5.560099                   2.114633
 ******* DONE Vérifier qu'il ne reste plus de filtre autre que PASS
 CLOSED: [2023-07-08 Sat 15:19]
 #+begin_src
@@ -3612,17 +3612,13 @@ Condition:
   alt_T2T[i] = DNA_GRC38[j]
   avec i la position en T2T et j la position en GRCh38
 
-  Algorithm
-  1. Définir un ID sur le VCF en hg38 :
-      bcftools annotate --set-id +'hg38\_%CHROM\_%POS\_%REF\_%FIRST_ALT' file.vcf
-  2. Pour chaque FP, récupérer depuis le VCF généré par happy
-     - l'identifiant en hg38
-     - les coordonnées en T2T
-     - séquence alternative
-  3. Pour chaque identifiant, récupérer depuis le VCF en hg38
-     - séquence de réference
-     - les coordonnées
-  4. Comparer ALT en T2T à la REF en hg38
+  Note: définir un ID n'est pas correct car les variants peuvent être modifié par happy !
+
+  Algorithme
+  1. Pour chaque FP, c'est un "faux" FP si
+     - REF en hg38 == ALT en T2T
+     - et REF en hg38 != REF en T2T
+     - et variant homozygote
 ******* DONE Vérifier quelques variants sur IGV
 CLOSED: [2023-07-09 Sun 17:36]
 ******* KILL Répartition des FP : cluster ?
