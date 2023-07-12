@@ -1354,6 +1354,9 @@ Test
 
 cp work/bf/437ae511958509e43072f032f4d495/small.tab.gz tests/vep-spip.tab.gz
 cp work/d5/3b1244b5ae83d54409ee0d456e8c55/small_cadd.tab.gz tests/vep-cadd-splice.tab.gz
+**** TODO Package Nix spliceAI ?
+nix profile install nixpkgs#python3Packages.tensorflow
++ ajouter dépendencs ("grep import" ou cnad)
 **** TODO Ajout LOEUF et pli
 plugin VEP
 **** TODO NMD
