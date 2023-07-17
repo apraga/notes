@@ -76,24 +76,63 @@ Résistance fréquent à l’hôpital
 ** TODO Pseudomonas aeruginosa
 Bacille Gram négatif, très mobile
 
-Origine : environnement++
-Opportuniste :
+Origine : environnement++. saprophyte de,s milieux humaine
+*Opportuniste* : 19= dse infectieuses hopsitalation
 - infection nosocomiale (matériel) ou . 1ere bactérie en réa
-- mucoviscidose
+- colonisation/infection bronchopulmonaire chronique sur mucoviscidose
+
 Facteurs de virulence : exotoxine, exoprotéines, hémolysine
 Facteur d'adhésion
 Forte capacité à former des biofilms
-
+*** Quand réaliser un antibiogramme
+- suspicion responsable d'infection
+- colonisation de patients fragile (ID, intbués)
+- pulmonaire isolé de patients muco, BPCO, DDB
 *** Diagnostic
 - Pousse 24h à 37% sur milieu non sélectif.
 - Milieu sélectif : cétrimide
 - Oxydase positif (!= entérobactéries) -> test rapide pour différencier les 2
 *** Résistance
-- Faible perméabilité membranaire
-  - résistance naturelle : amox, augmenti
-  - ertapénèmepénicillines,
-  - cefotaxine, ceftriaxne
-- Catalase positif - lactose négatif
+Naturellement plus résistante que d'autres Bacille gram -
+
+  - Catalase positif - lactose négatif
+**** Résistance naturelle :
+  - amox
+  - C1G, C2G, *céfotaxime* (/! utilisé pour mécanisme/), ceftriaxne, *ertapénème*
+  - anciennes FQ : nofloxacine, péflox, ofloxanie
+  - cotrimoxazole
+  - nitrofurantoine
+  - macrolides
+  - azithromycine
+
+Association de plusieurs mécanisme (synérgie/complémentaire)
+- β-lactamase AmpC (large spectre, inductible)
+- enzyme modificatrice aminoside
+- effluxs actif (mexAB-OprM, MexXY/OprM)
+- imperméabilité (porine OpriF)
+**** Résistance acquise
+- Surproduction : efflux, β-lactamase AmpC, alétaration porine...
+- gène codant β-lactamase
+
+- Attention: certaines souches accumulent des résultats
+
+- β-lactamase transférable : pénicillinase, BLSE, carbapénémase
+
+  Quand chercher BLSE ?
+  - synergie ceftazidime/cefepime et acide clavulanique
+  - synergie ceftazidime/cefepime et impiénoèmeacide clavulanique
+  Quand chercher carbapénémase ? (> 90% cabarpénème)
+
+**** Antibiotique
+- β-lactamine:
+  - ticarcilline +/- clavulatane, pipéracilline +/- tazobactame,
+  - ceftazidime +/- avibactamie
+  - céfépime
+  - ceftolozane + tazobactame
+  - imipénème, méropénème
+- Aminoside
+- FQ: ciprofloxacine, lévofloxacine
+- colistine
 ** Streptocoques
 Infections graves = /pyogenes/, /pneumoniae/.
 Commensal mais opportunites (immunodépression) : oraux (*endocardite, SDRA)
