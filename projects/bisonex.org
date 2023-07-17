@@ -1224,7 +1224,7 @@ SCHEDULED: <2023-07-16 Sun>
 :END:
 Contient les chain files
 ** TODO Indicateurs qualité
-SCHEDULED: <2023-07-14 Fri>
+SCHEDULED: <2023-07-26 Wed>
 *** Idée
 Raredisease:
 - FastQC : nombreuses statistiques. Non disponible Nix
@@ -1241,9 +1241,9 @@ Sarek:
 
 MultiQC : non disponible Nix
 ** TODO vérifier si normalisation
-SCHEDULED: <2023-07-14 Fri>
+SCHEDULED: <2023-07-26 Wed>
 ** TODO Rajouter vérification hgvs
-SCHEDULED: <2023-07-14 Fri>
+SCHEDULED: <2023-07-26 Wed>
 
 ** DONE Exécution
 CLOSED: [2022-09-13 Tue 21:37]
@@ -1354,6 +1354,9 @@ Test
 
 cp work/bf/437ae511958509e43072f032f4d495/small.tab.gz tests/vep-spip.tab.gz
 cp work/d5/3b1244b5ae83d54409ee0d456e8c55/small_cadd.tab.gz tests/vep-cadd-splice.tab.gz
+**** TODO Package Nix spliceAI ?
+nix profile install nixpkgs#python3Packages.tensorflow
++ ajouter dépendencs ("grep import" ou cnad)
 **** TODO Ajout LOEUF et pli
 plugin VEP
 **** TODO NMD
@@ -3589,8 +3592,8 @@ CLOSED: [2023-07-09 Sun 12:09]
  3 │ chr1        762943  A           G           ./.:.:.:.:NOCALL:nocall:.  1/1:FP:.:ti:SNP:homalt:287
  4 │ chr1        762945  A           T           ./.:.:.:.:NOCALL:nocall:.  1/1:FP:.:tv:SNP:homalt:287
  Remaniements complexes ? Pas dans le gène en HG38
-******* TODO La plupart des FP (4705/5566) sont homozygotes: erreur de référence ?
-SCHEDULED: <2023-07-09 Sun>
+******* DONE La plupart des FP (4705/5566) sont homozygotes: erreur de référence ?
+CLOSED: [2023-07-12 Wed 21:10] SCHEDULED: <2023-07-09 Sun>
 Sur les 2 premiers variants, ils montrent en fait la différence entre T2T et GRCh38
 Erreur à l'alignement ?
 ******** KILL relancer l'alignement
@@ -4519,7 +4522,7 @@ Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Se
 | SNP   | ALL    |       38406 |    34793 |     3613 |       36935 |      275 |      1868 |    37 |    15 |      0.905926 |         0.992158 |       0.050575 |        0.947083 |     2.6247759222568168 |     2.5752854654538417 |         1.588953331534934 |        1.6192536889897844 |
 | SNP   | PASS   |       38406 |    34793 |     3613 |       36935 |      275 |      1868 |    37 |    15 |      0.905926 |         0.992158 |       0.050575 |        0.947083 |     2.6247759222568168 |     2.5752854654538417 |         1.588953331534934 |        1.6192536889897844 |
 ***** TODO Refaire : HiSeq4000 + agilent sureselect + génome "prêt à l'emploi"
-SCHEDULED: <2023-07-12 Wed>
+SCHEDULED: <2023-07-19 Wed>
 **** TODO HG003 :hg003:hg38:
 ***** Notes
 #+begin_src sh
@@ -4543,7 +4546,7 @@ INDEL   PASS         2731      2290       441         3092       208        577 
   SNP    ALL        37997     34481      3516        36861       306       2074     33     13       0.907466          0.991204        0.056265         0.947488                2.611269                2.565915                   1.555780                   1.621727
   SNP   PASS        37997     34481      3516        36861       306       2074     33     13       0.907466          0.991204        0.056265         0.947488                2.611269                2.5659
 ***** TODO Refaire : HiSeq4000 + agilent sureselect + génome "prêt à l'emploi"
-SCHEDULED: <2023-07-14 Fri>
+SCHEDULED: <2023-07-19 Wed>
 **** TODO HG004 :hg38:hg004:
 #+begin_src sh
 NXF_OPTS=-D"user.name=${USER}" nextflow run main.nf -profile standard,helios  --input /Work/Groups/bisonex/data/giab/GRCh38/HG004_{1,2}.fq.gz -bg
@@ -4563,7 +4566,7 @@ INDEL   PASS         2787      2388       399         3183       195        580 
   SNP    ALL        38185     34560      3625        36921       254       2107     46      7       0.905067          0.992704        0.057068         0.946862                2.589175                2.553546                   1.632595                   1.653534
   SNP   PASS        38185     34560      3625        36921       254       2107     46      7       0.905067          0.992704        0.057068         0.946862                2.589175                2.553546                   1.632595                   1.653534
 ***** TODO Refaire : HiSeq4000 + agilent sureselect + génome "prêt à l'emploi"
-SCHEDULED: <2023-07-14 Fri>
+SCHEDULED: <2023-07-19 Wed>
 **** STRT HG001 :hg001:T2T:
 SCHEDULED: <2023-07-03 Mon>
 Avec liftover : 10x moins de variants...
@@ -6478,9 +6481,9 @@ CTTTTGCTTGTCCCCAGGACGCACCTCAGGGTGGTGAAGCAAAAAAACCACGGCCCAGGAGAGGGTGGGTGCTGTGGTCT
 FFFFFFFFFFFFFFFFFFFFFFF:FFF:FFFFFFFFFFFFF,FFFFFFFFFFFF:F:FFFF:FFFFF,,FFF:FFFFFFFFFF,FFFFFFF,FFFFFFFFFFF,FFFFFFFFF:FFFF,F:FFFFF:FFFFFFFFF:FFFF,FFFFFFFFF
 ******* DONE Supprimer NW_ et NT_
 ***** TODO Phase 2 : chr22, vaf variable :T2T:
-SCHEDULED: <2023-07-16 Sun>
+SCHEDULED: <2023-08-02 Wed>
 ****** TODO Phase 3 : tous SNV, vaf variable :T2T:
-SCHEDULED: <2023-07-14 Fri>
+SCHEDULED: <2023-07-12 Wed>
 ***** TODO Test Indel
 **** Divers
 ***** DONE Vérifier nombre de reads fastq - bam
