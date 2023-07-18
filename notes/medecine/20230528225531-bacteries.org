@@ -15,7 +15,8 @@ https://pharmacomedicale.org/medicaments/par-specialites/item/beta-lactamines-pe
   - Nouveau gène mecC: code PLP2c
   - S. aureus : 15-20% résistant méticilline
 - Macrolides-Lincosamide-Streptogramine-Kétolide (MLSK)  : modification de la cible surtout (modification/mutation ribosome)
-- 3 phénotype de résistance aux aminoside (inactivation enzymatique = 5% SAMS mais 80-90% SARM)
+  - phénotype MLS_B: inductible ou constitutionnel
+- 3 phénotype de résistance aux aminosides (inactivation enzymatique = 5% SAMS mais 80-90% SARM)
 - glycopeptide : exceptionnel
 *** Staphylococcus aureus
 Cocci Gram+ en amas : aérobie +/- anaérobie. Immobiles. non capsulé, non sporulé
@@ -153,8 +154,13 @@ En première approximation :
 
 /Note/: certaines sous-espèce de Lancefield peuvente être alpha-hémolytique
 *** Résistances
-- β-hémolytique: pas de résistance β-lactamine
+- α-hémolytique : dépistage disque péniG: si résistant, CMI d’une β-lactamine (amox/céfotaxime/ceftriaxone)
+- *β-hémolytique: pas de résistance β-lactamine*
 - S. pneumonia : 25% résistance acquise β-lactamine (sensibilité diminuée)
+- pas de β-lactamase
+- MLSK (Macrolides-Lincosamide-Streptogramine-Kétolide): modification cible++, efflux, protection ribosomale
+- pas de résistance streptococques
+- linézode
 *** Classification d’Ambler
 A. BLSE
    - résistance pénicilline, C1, C2, C3G
@@ -164,7 +170,7 @@ B. Métallo-beta-lactamases
    - résistance comme B. + carbapénème
 C. ampC céphalosporinase
    - résistance BLSE + céfoxitine + inhibiteur β-lactamase
-   - sensible carbapneme
+   - sensible carbapénème
    - détecté céfoxitine
 D. oxacillinase
    - sensible β-lactamase
@@ -199,20 +205,22 @@ Pyogène = responsiable d’infections suppurées
 - macrolide : sauvage sensible, résistance par mécanisme d’efflux, modiifcation cible ARN23S
 *** TODO Strepto agalactiae
 *Naturellement sensible β-lactamine*
-*** Pneumocoque
+*** Strepto. pneumoniae
 Gram+ diplocoque encapsulé à multiplication extracullaire.
 Classification selon la capsule (vaccins)
 **** Habitat
-Voie respratoire supérieure
+Voie respiratoire supérieure
 Transmission goutelette, interhumaine
 **** Pathogénicité
-- adhérence cellules épithéliase rhinopharynx
+- adhérence cellules épithélium rhinopharynx
 - facteurs de virulence non capsulaire
 - évasion à la phagocytose
 - actionation complément, cytokien inflammatoire
 **** Résistance
 - β-lactamine: Selon les PLP (!inutile d’ulitiser les inhibiteurs de betalactamase)
-- sensbilité possiblement dimunée aux fluoroquinolones
+- sensibilité possiblement dimunée aux fluoroquinolones
+- Gènes mosaïque avec PLP chimérique
+- 25% résistance acquise β-lactamine (pneumocoque sensibilité diminué pénicilline)
 **** Clinique
 - Infection neuroméningée
 - Infection voies respiratoire: pneumonie franche lobaire aigüe, bronchopneumonie, otite, mastoïdite, sinusite, exacerbation BPCO
@@ -233,38 +241,42 @@ Résistance acquises
 - Urine : rose sur milieu chromogène (β-glucoronidase positive)
 - Sensbilité naturelles aux antibiotiques actif sur BGN
 - Groupe 1 : céphalosporinase chromosomique de très bas niveau. Résistance acquise enzymatique : pénicillinase, β-lactamase à spectre étundes, céphalosporinase de haut niveau, carbapénémase
-*** Entérocoques
+** Entérocoques
 Cocci gram+ , anaérobie facultative, ressemblantà des streptocoques
 
 Espèce majoritaire: E. faecalis = 80-90=, faecium = 5-10%
-**** Habitat
+*** Habitat
 Ubiquitaire. Surtout tube digestif (homme, animaux), milieu extérieur
 Home sain : tube digestif, périnée, parfois vagin, oropharynx
 
 Pulpart des infections = à partir de la flère du patient. Mais exogène possible.
-**** Facteurs de virulence
+
+Commensal gastrointestinal + génital chez les femmes
+Augmentation des infections avec les années
+*** Facteurs de virulence
 - Pas d’exotoxine, ni de superantigène
 - Protéine de surface -> adhère à l’endocarde et l’urothelium -> endocardite et infections urinaire
-**** Résistance
-- Nombreux antibio ...
-- Naturelle : C3G
+*** Résistance
+- Naturelle : céphalosporine
+- *E. faecalis = sensible amox. E. faecium = résistant 80-90%*
+- multi-résistance chez E. faecium
 - β-lactamine/glycopeptide seul = seulement effect bactériostatique sur > 90%. Mais aminoside + inhibiteur de la paroi (β-lactamine, glycopepited, lipopetide) = synergie
+- glycopeptide
+- MLSK (Macrolides-Lincosamide-Streptogramine-Kétolide): modification cible++, efflux, protection ribosomale
 Attention: en cas de résistance surajoutée, les aminosides sont inefficaces.
-**** Clinique
+*** Clinique
 - Infection urinaire
 - Infection de la peau et des parties molles
 - Endocardite
 - Bactériémie
 - Infection abdopelvienne
-**** Résistances
+*** Résistances
 - résistance naturelle céphalosporine
 - E. faecalis : pas résistance pénicilline A (contrairement à E. faecium)
 - E. faecium :
   - multiréristance en émergence
   - > 80% faecium résistance pénicillines A
-** Entérocoques
-Commensal gastrointestinal + génital chez les femmes
-Augmentation des infections avec les années
+*** lol
 
 Clinique
 - infection urinaire: le plus fréquent, nosocomial
@@ -275,7 +287,6 @@ Clinique
 Résistance: attention aux entérococques résistant vancomycine (surtout E. faecium)
 - /vancA/ /vancB/
 
-E. faecalis = sensible amox. E. faecium = résistant
 ** Neisseria meningitidis
 - Diplococque Gram - aérobie.
 - Très gragile. Hautement variable

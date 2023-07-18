@@ -20,24 +20,27 @@ Donc :
 ** Interprétation
 Entérobactéries
 
-! Groupe 1: TRI = résistance amox, ticar, pipe + en associtation inhibiteur β-lactamase !
+- Groupe 1: TRI = résistance amox/ticar/pipe + inhibiteur β-lactamase
+- Céphalosporinase = *inhibée oxacilline*
 
-|               | Pénicillinase | Pénicillinase | Céphalosporinase | BLSE | Carbapénémase |
-|               |               | déréprimée    |                  |      |               |
-| amoxicilline  | R             | R             | R                | R    | R             |
-| ticarcilline  | R             | R             | R                | R    | R             |
-| piperacilline | I/R           | R             | I/R              | R    | R             |
-| amox+AC       |               | I/R           | R                | ?    | R             |
-| pipe+tazo     |               | I/R           |                  | ?    | R             |
-| ticar + AC    |               |               |                  | R    | R             |
-| C1G           |               | I/R           | R                |      | R             |
-| C2G           |               |               | I/R              |      | I/R           |
-| C3G           |               |               | I/R              | I/R  | S OXA/I/R     |
-| C4G           |               |               | I/R              | I/R  | S OXA/I/R     |
-| carbapénème   |               |               |                  |      | I/R           |
+|                   | Pénicillinase | Pénicillinase | Céphalosporinase | Céphalo.   | BLSE    | Carbapénémase  |
+|                   |               | déréprimée    |                  | déréprimée |         |                |
+|-------------------+---------------+---------------+------------------+------------+---------+----------------|
+| amoxicilline AMC  | R             | R             | R                | R          | R       | R              |
+| ticarcilline TIC  | R             | R             |                  | R          | R       | R              |
+| piperacilline PIP | I/R           | R             |                  | R          | R       | R              |
+| amox+inhib β  AMC  |               | I/R           | R                | R          | *S/I/R* | R              |
+| pipe/ticar        |               | I/R           |                  | I/R        | *S/I/R* | R              |
+| + inhib β TCC/PTZ  |               |               |                  |            |         |                |
+|-------------------+---------------+---------------+------------------+------------+---------+----------------|
+| C1G          CF   |               | I/R           | R                | I/R        |         | R              |
+| C2G         FOX   |               |               | I/R              | I/R        |         | I/R            |
+| C3G               |               |               |                  | I/R        | I/R     | S (OXA-48)/I/R |
+| C4G         FEP   |               |               |                  |            | I/R     | S (OXA-48)/I/R |
+| carbapénème       |               |               |                  |            |         | I/R            |
 
-- C1G = céfalotine
-- C2G = céfoxitine
+- C1G = céfalotine (CF)
+- C2G = céfoxitine (FOX)
 - C3G = céfixime (CFM), céfoxatime (CTX), ceftazidime (CAZ)
 - C4G = céfépime (FEP)
 
