@@ -1,6 +1,8 @@
 ﻿#+title: Bisonex
-#+FILETAGS: @bisonex
-* Biblio :biblio:
+* Biblio
+:PROPERTIES:
+:CATEGORY: biblio
+:END:
 ** Workflow
 Comparaison WDL, Cromwell, nextflow
 https://www.nature.com/articles/s41598-021-99288-8
@@ -251,7 +253,7 @@ NB: à quoi correspond https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/
    Ajout des zones "difficiles"
    https://www.biorxiv.org/content/10.1101/2020.07.24.212712v5.full.pdf
 
-*** [#B] Pipeline : générer patient avec tous les variants retrouvés à Centogene
+*** [#B] Pipeline : générer patient avec tous les variants retrouvés à Cento
 Comparaison de génération ADN (2019)
 https://academic.oup.com/bfg/article/19/1/49/5680294
 **** SimuSCop (exome)
@@ -336,7 +338,10 @@ Bed non fourni pour exactement cette capture
 On prend https://www.twistbioscience.com/resources/data-files/twist-alliance-vcgs-exome-401mb-bed-files
 qui content la majeure partie
 
-* Données :data:
+* Données
+:PROPERTIES:
+:CATEGORY: data
+:END:
 ** DONE Remplacer bam par fastq sur mesocentre
 CLOSED: [2023-04-16 Sun 16:33]
 Commande
@@ -431,7 +436,10 @@ $single | reduce {|it, acc| $acc | append $it} | where dir == bam | get id | eac
 : bam/2200511274_63012586/63012586_S114.bqrt.bam
 : bam/2200669188_63036688/63036688_S150.bqrt.bam
 
-* Nouveau workflow :workflow:
+* Nouveau workflow
+:PROPERTIES:
+:CATEGORY: workflow
+:END:
 ** TODO Bases de données
 *** KILL Nix pour télécharger les données brutes
 **** Conclusion
@@ -458,7 +466,6 @@ codé, à vérifier
 **** KILL ACMG incidental
 CLOSED: [2023-06-12 Mon 23:29]
 *** TODO Données :T2T:
-SCHEDULED: <2023-06-15 Thu>
 :PROPERTIES:
 :ID:       5d915178-ca96-44ef-87f1-6702af114f2b
 :END:
@@ -502,7 +509,7 @@ CLOSED: [2023-06-14 Wed 22:35]
 ***** DONE compatibilité hg38
 CLOSED: [2023-06-14 Wed 22:35]
 **** TODO cache vep
-SCHEDULED: <2023-07-16 Sun>
+SCHEDULED: <2023-07-25 Tue>
 *** HOLD Processing bases de données
 **** DONE dbSNP common
 **** DONE Seulement les ID dans dbSNP common !
@@ -1127,7 +1134,7 @@ $ ../result/bin/hap.py example/happy/PG_NA12878_chr21.vcf.gz       example/happy
 **** TODO Version avec rtg-tools
 **** TODO Faire fonctionner Tests
 ***** TODO Essai 2 : depuis nix develop:
-SCHEDULED: <2023-07-09 Sun>
+SCHEDULED: <2023-07-25 Tue>
 #+begin_src
 nix develop .#hap-py
 genericBuild
@@ -1217,7 +1224,7 @@ SCHEDULED: <2023-06-14 Wed>
 *** DONE Haplotypecaller
 CLOSED: [2023-06-26 Mon 19:42] SCHEDULED: <2023-06-15 Thu>
 *** TODO Filtres
-SCHEDULED: <2023-07-16 Sun>
+SCHEDULED: <2023-07-27 Thu>
 *** Liftover pipelines
 :PROPERTIES:
 :ID:       d2280207-3f65-4a31-a291-41fa9a9658c2
@@ -1471,11 +1478,20 @@ Les dépendences ne se téléchargent pas correctement, on les extrait à la mai
  cat deps.txt | xargs -L1 singularity pull
  #+end_src
 * Amélioration :amelioration:
-* Documentation :doc:
+* Documentation
+:PROPERTIES:
+:CATEGORY: doc
+:END:
 ** DONE Procédure d'installation nix + dependences pour VM CHU
 CLOSED: [2023-04-22 Sat 15:27] SCHEDULED: <2023-04-13 Thu>
-* Manuscript :manuscript:
-* Tests :tests:
+* Manuscript
+:PROPERTIES:
+:CATEGORY: manuscript
+:END:
+* Tests
+:PROPERTIES:
+:CATEGORY: tests
+:END:
 ** KILL Non régression : version prod
 CLOSED: [2023-05-23 Tue 08:46]
 *** DONE ID common snp
@@ -3584,8 +3600,8 @@ $ zgrep -c '^chr' HG001_GRCh38_1_22_v4_lifted_merged.vcf.gz
 SCHEDULED: <2023-07-08 Sat>
 ******* DONE Regarder avec Julia si ce sont vraiment des FP: 61/5277 qui ne le sont pas
 CLOSED: [2023-07-09 Sun 12:09]
-******* TODO Examiner les FP
-******* TODO Tester un FP
+******* HOLD Examiner les FP
+******* HOLD Tester un FP
   2 │ chr1        608765  A           G           ./.:.:.:.:NOCALL:nocall:.  1/1:FP:.:ti:SNP:homalt:188
   liftDown UCSC: rien en GIAB : vrai FP
 
@@ -4430,7 +4446,7 @@ CLOSED: [2023-06-26 Mon 19:02] SCHEDULED: <2023-06-25 Sun>
 Picard liftoverinterval est basé sur UCSCS
 Mais on n'aurait pas la différence pour NA12878 qu'on voit...
 **** TODO HG002 :hg002:hg38:
-SCHEDULED: <2023-07-14 Fri>
+SCHEDULED: <2023-07-25 Tue>
 #+begin_src
     NXF_OPTS=-D"user.name=${USER}" nextflow run workflows/giabFastq.nf -profile standard,helios
     NXF_OPTS=-D"user.name=${USER}" nextflow run main.nf -profile standard,helios -resume --input="/Work/Groups/bisonex/data/giab/GRCh38/HG002_{1,2}.fq.gz --test.id=HG002
@@ -4516,7 +4532,7 @@ Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Se
 | SNP   | ALL    |       38406 |    34793 |     3613 |       36935 |      275 |      1868 |    37 |    15 |      0.905926 |         0.992158 |       0.050575 |        0.947083 |     2.6247759222568168 |     2.5752854654538417 |         1.588953331534934 |        1.6192536889897844 |
 | SNP   | PASS   |       38406 |    34793 |     3613 |       36935 |      275 |      1868 |    37 |    15 |      0.905926 |         0.992158 |       0.050575 |        0.947083 |     2.6247759222568168 |     2.5752854654538417 |         1.588953331534934 |        1.6192536889897844 |
 ***** TODO Refaire : HiSeq4000 + agilent sureselect + génome "prêt à l'emploi"
-SCHEDULED: <2023-07-19 Wed>
+SCHEDULED: <2023-07-23 Sun>
 **** TODO HG003 :hg003:hg38:
 ***** Notes
 #+begin_src sh
@@ -4540,7 +4556,7 @@ INDEL   PASS         2731      2290       441         3092       208        577 
   SNP    ALL        37997     34481      3516        36861       306       2074     33     13       0.907466          0.991204        0.056265         0.947488                2.611269                2.565915                   1.555780                   1.621727
   SNP   PASS        37997     34481      3516        36861       306       2074     33     13       0.907466          0.991204        0.056265         0.947488                2.611269                2.5659
 ***** TODO Refaire : HiSeq4000 + agilent sureselect + génome "prêt à l'emploi"
-SCHEDULED: <2023-07-19 Wed>
+SCHEDULED: <2023-07-23 Sun>
 **** TODO HG004 :hg38:hg004:
 #+begin_src sh
 NXF_OPTS=-D"user.name=${USER}" nextflow run main.nf -profile standard,helios  --input /Work/Groups/bisonex/data/giab/GRCh38/HG004_{1,2}.fq.gz -bg
@@ -4560,7 +4576,7 @@ INDEL   PASS         2787      2388       399         3183       195        580 
   SNP    ALL        38185     34560      3625        36921       254       2107     46      7       0.905067          0.992704        0.057068         0.946862                2.589175                2.553546                   1.632595                   1.653534
   SNP   PASS        38185     34560      3625        36921       254       2107     46      7       0.905067          0.992704        0.057068         0.946862                2.589175                2.553546                   1.632595                   1.653534
 ***** TODO Refaire : HiSeq4000 + agilent sureselect + génome "prêt à l'emploi"
-SCHEDULED: <2023-07-19 Wed>
+SCHEDULED: <2023-07-23 Sun>
 **** STRT HG001 :hg001:T2T:
 SCHEDULED: <2023-07-03 Mon>
 Avec liftover : 10x moins de variants...
@@ -4576,20 +4592,28 @@ SNP,PASS,11236,10985,251,23597,9771,2841,26,58,0.977661,0.529245,0.120397,0.6867
 **** TODO HG003 :hg003:T2T:
 **** TODO HG004 :hg004:T2T:
 **** TODO Résumer résultats pour Paul + article :resultats:hg38:
-SCHEDULED: <2023-07-16 Sun>
+SCHEDULED: <2023-07-29 Sat>
 Refaire résultats
 **** TODO Plot : ashkenazim trio :hg38:
-SCHEDULED: <2023-07-16 Sun>
+SCHEDULED: <2023-07-29 Sat>
 /Entered on/ [2023-04-16 Sun 17:29]
 Refaire résultats
 *** KILL Platinum genome
 CLOSED: [2023-06-14 Wed 22:37]
 https://emea.illumina.com/platinumgenomes.html
-*** TODO Séquencer NA12878
+*** TODO Séquencer NA12878 :cento:hg001:
 Discussion avec Paul : sous-traitant ne nous donnera pas les données, il faut commander l'ADN
 **** DONE ADN commandé
 CLOSED: [2023-06-30 Fri 22:29]
-** TODO Insilico :centogene:
+**** TODO Sauvegarder les données brutes
+SCHEDULED: <2023-07-19 Wed>
+K, scality, S
+**** STRT Comparer à GIAB
+SCHEDULED: <2023-07-18 Tue>
+#+begin_src sh
+nextflow run main.nf -profile standard,helios --input="/Work/Groups/bisonex/centogene/2300346867_63118093_NA12878/63118093_S260_R{1,2}_001.fastq.gz"  --id=2300346867_63118093_NA12878-GRCh38 --genome=GRCh38 -bg
+#+end_src
+** TODO Insilico :cento:
 *** TODO tous les variants centogène
 **** DONE Extraire liste des SNVs
 CLOSED: [2023-04-22 Sat 17:32] SCHEDULED: <2023-04-17 Mon>
@@ -4679,7 +4703,7 @@ function mergeAllGenomic()
     dInit = @chain DataFrame(CSV.File("variant_success.csv")) begin
         @transform :transcript = :transcript .* ":" .* :coding .* :codingPos .* :codingChange
         @select :file :transcript :classification :zygosity
-        @rename :classificationCentogene = :classification
+        @rename :classificationCento = :classification
     end
     dTmp = outerjoin(dInit, dNew, on = :transcript)
     CSV.write("variant_genomic.csv", dTmp)
@@ -4712,7 +4736,7 @@ NA12878 mais à refaire avec un vrai séquencage
 Voir [[*Centogène][Bed Centogène]] pour choix
 ****** DONE Générer les données en 20x
 CLOSED: [2023-04-28 Fri 11:54] SCHEDULED: <2023-04-22 Sat>
-capture de centogene
+capture de cento
 ****** DONE Regénérer en supprimant les doublons
 CLOSED: [2023-04-28 Fri 17:28]
 ***** DONE Quelle couverture ?
@@ -4886,7 +4910,7 @@ On utilise [[file:~/recherche/bisonex/simuscop/checkBam.jl][checkBam.jl]]
 #+begin_src julia
 d = prepareVariant("../parsevariants/variant_genomic.csv")
 
-root = "/home/alex/code/bisonex/simuscop-centogene/cento"
+root = "/home/alex/code/bisonex/simuscop-cento/cento"
 bam = root * "/preprocessing/applybqsr/cento.bam"
 bai = root * "/preprocessing/recalibrated/cento.bam.bai"
 
@@ -4983,7 +5007,7 @@ module load gcc@11.3.0/gcc-12.1.0
 #+end_src
 
 On coupe le .bam par chromosome pour débugger (sur le mesocentre)
-#+begin_src sh :dir /ssh:meso:/Work/Users/apraga/bisonex/simuscop-centogene-200x/cento/testing :results silent
+#+begin_src sh :dir /ssh:meso:/Work/Users/apraga/bisonex/simuscop-cento-200x/cento/testing :results silent
 ln -s ../preprocessing/applybqsr/cento.bam .
 ln -s ../preprocessing/recalibrated/cento.bam.bai .
 ln -s /Work/Projects/bisonex/data/dbSNP/GRCh38.p13/dbSNP.gz .
@@ -5062,12 +5086,12 @@ julia --project=. toVCF.jl
 #+end_src
 Puis on export sur le mésocentre
 #+begin_src
-scp variants_for_vcfeval.tsv.gz* meso:centogene_variants/
+scp variants_for_vcfeval.tsv.gz* meso:cento_variants/
 #+end_src
 #+begin_src
 z bis
 cd simuscop-200x
-rtg vcfeval -b ~/centogene_variants/variants_for_vcfeval.tsv.gz -c cento/variantCalling/haplotypecaller/cento.vcf.gz -o compare-haplotypecaller -t /Work/Groups/bisonex/data/giab/GRCh38/genomeRef.sdf
+rtg vcfeval -b ~/cento_variants/variants_for_vcfeval.tsv.gz -c cento/variantCalling/haplotypecaller/cento.vcf.gz -o compare-haplotypecaller -t /Work/Groups/bisonex/data/giab/GRCh38/genomeRef.sdf
 #+end_src
 Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
 ----------------------------------------------------------------------------------------------------
@@ -5076,7 +5100,7 @@ Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Se
 
 ******* KILL Comparer avec hap.py :haplotypecaller:
 CLOSED: [2023-06-12 Mon 23:24]
- NXF_OPTS=-D"user.name=${USER}" nextflow run workflows/checkInserted.nf -profile standard,helios --outdir=compare-simuscop-200x  --query=out/simuscop-centogene-200x/cento/callVariant/haplotypecaller/cento.vcf.gz --truth=centogene_variants/variants_for_vcfeval.tsv.gz --id=simuscop-200x-check
+ NXF_OPTS=-D"user.name=${USER}" nextflow run workflows/checkInserted.nf -profile standard,helios --outdir=compare-simuscop-200x  --query=out/simuscop-cento-200x/cento/callVariant/haplotypecaller/cento.vcf.gz --truth=cento_variants/variants_for_vcfeval.tsv.gz --id=simuscop-200x-check
 ******* DONE Méthode naïve 549/585
 CLOSED: [2023-05-04 Thu 21:57]
 Haplotypecaller: Nb reference SNV 692 vs found 585
@@ -5111,7 +5135,7 @@ CLOSED: [2023-06-12 Mon 23:25]
  bgzip postvep-filter.vcf
  tabix postvep-filter.vcf.gz
  cd ../..
- rtg vcfeval -b ~/centogene_variants/variants_for_vcfeval.tsv.gz -c cento/annotation/postvep-filter.vcf.gz  -o compare-vepfilter -t /Work/Groups/bisonex/data/giab/GRCh38/genomeRef.sdf
+ rtg vcfeval -b ~/cento_variants/variants_for_vcfeval.tsv.gz -c cento/annotation/postvep-filter.vcf.gz  -o compare-vepfilter -t /Work/Groups/bisonex/data/giab/GRCh38/genomeRef.sdf
  Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
 ----------------------------------------------------------------------------------------------------
    12.000                491            491         50         94     0.9076       0.8393     0.8721
@@ -5126,7 +5150,7 @@ On utilise [[file:~/recherche/bisonex/simuscop/checkBam.jl][checkBam.jl]]
 #+begin_src julia
 d = prepareVariant("../parsevariants/variant_genomic.csv")
 
-root = "/home/alex/code/bisonex/simuscop-centogene/cento"
+root = "/home/alex/code/bisonex/simuscop-cento/cento"
 bam = root * "/preprocessing/applybqsr/cento.bam"
 bai = root * "/preprocessing/recalibrated/cento.bam.bai"
 
@@ -5223,7 +5247,7 @@ module load gcc@11.3.0/gcc-12.1.0
 #+end_src
 
 On coupe le .bam par chromosome pour débugger (sur le mesocentre)
-#+begin_src sh :dir /ssh:meso:/Work/Users/apraga/bisonex/simuscop-centogene-200x/cento/testing :results silent
+#+begin_src sh :dir /ssh:meso:/Work/Users/apraga/bisonex/simuscop-cento-200x/cento/testing :results silent
 ln -s ../preprocessing/applybqsr/cento.bam .
 ln -s ../preprocessing/recalibrated/cento.bam.bai .
 ln -s /Work/Projects/bisonex/data/dbSNP/GRCh38.p13/dbSNP.gz .
@@ -5302,12 +5326,12 @@ julia --project=. toVCF.jl
 #+end_src
 Puis on export sur le mésocentre
 #+begin_src
-scp variants_for_vcfeval.tsv.gz* meso:centogene_variants/
+scp variants_for_vcfeval.tsv.gz* meso:cento_variants/
 #+end_src
 #+begin_src
 z bis
 cd simuscop-200x
-rtg vcfeval -b ~/centogene_variants/variants_for_vcfeval.tsv.gz -c cento/variantCalling/haplotypecaller/cento.vcf.gz -o compare-haplotypecaller -t /Work/Groups/bisonex/data/giab/GRCh38/genomeRef.sdf
+rtg vcfeval -b ~/cento_variants/variants_for_vcfeval.tsv.gz -c cento/variantCalling/haplotypecaller/cento.vcf.gz -o compare-haplotypecaller -t /Work/Groups/bisonex/data/giab/GRCh38/genomeRef.sdf
 #+end_src
 Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
 ----------------------------------------------------------------------------------------------------
@@ -5316,7 +5340,7 @@ Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Se
 
 ******* KILL Comparer avec hap.py :haplotypecaller:
 CLOSED: [2023-06-12 Mon 23:24]
- NXF_OPTS=-D"user.name=${USER}" nextflow run workflows/checkInserted.nf -profile standard,helios --outdir=compare-simuscop-200x  --query=out/simuscop-centogene-200x/cento/callVariant/haplotypecaller/cento.vcf.gz --truth=centogene_variants/variants_for_vcfeval.tsv.gz --id=simuscop-200x-check
+ NXF_OPTS=-D"user.name=${USER}" nextflow run workflows/checkInserted.nf -profile standard,helios --outdir=compare-simuscop-200x  --query=out/simuscop-cento-200x/cento/callVariant/haplotypecaller/cento.vcf.gz --truth=cento_variants/variants_for_vcfeval.tsv.gz --id=simuscop-200x-check
 ******* DONE Méthode naïve 549/585
 CLOSED: [2023-05-04 Thu 21:57]
 Haplotypecaller: Nb reference SNV 692 vs found 585
@@ -5351,7 +5375,7 @@ CLOSED: [2023-06-12 Mon 23:25]
  bgzip postvep-filter.vcf
  tabix postvep-filter.vcf.gz
  cd ../..
- rtg vcfeval -b ~/centogene_variants/variants_for_vcfeval.tsv.gz -c cento/annotation/postvep-filter.vcf.gz  -o compare-vepfilter -t /Work/Groups/bisonex/data/giab/GRCh38/genomeRef.sdf
+ rtg vcfeval -b ~/cento_variants/variants_for_vcfeval.tsv.gz -c cento/annotation/postvep-filter.vcf.gz  -o compare-vepfilter -t /Work/Groups/bisonex/data/giab/GRCh38/genomeRef.sdf
  Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
 ----------------------------------------------------------------------------------------------------
    12.000                491            491         50         94     0.9076       0.8393     0.8721
@@ -5763,7 +5787,7 @@ A l'air de fonctionne
 Trop de message d'erreur en sortie ?
 ****** DONE Test sur mini-bam: échec
 CLOSED: [2023-05-14 Sun 21:12]
-❯ samtools view -h ~/code/bisonex/simuscop-centogene-200x/cento/preprocessing/mapped/cento.bam | head -n1000 | samtools view -Sb - > mini.bam
+❯ samtools view -h ~/code/bisonex/simuscop-cento-200x/cento/preprocessing/mapped/cento.bam | head -n1000 | samtools view -Sb - > mini.bam
 
 ❯ samtools index mini.bam
 
@@ -5777,7 +5801,7 @@ NC_000001.11	17651	17651
 CLOSED: [2023-05-15 Mon 23:24]
 Pas assez de reads, on prend le chromosome 22
 #+begin_src sh
-samtools view ../simuscop-centogene-200x/cento/preprocessing/mapped/cento.bam NC_000022.11 -b -o chr22.bam
+samtools view ../simuscop-cento-200x/cento/preprocessing/mapped/cento.bam NC_000022.11 -b -o chr22.bam
 samtools index chr22.bam
 #+end_src
 Mésocentre
@@ -5810,7 +5834,7 @@ ET
 #+begin_src nextflow
 workflow {
     f = Channel.fromPath(params.input, checkIfExists: true)
-    bam = Channel.fromPath("simuscop-centogene-200x/cento/preprocessing/mapped/cento.bam",
+    bam = Channel.fromPath("simuscop-cento-200x/cento/preprocessing/mapped/cento.bam",
                            checkIfExists: true)
     bamIndex = bam.map { it -> it + ".bai" }
 
@@ -6116,7 +6140,7 @@ CLOSED: [2023-05-24 Wed 21:59]
 On relance le pipeline pour avoir un BAM propre
 On garde les reads non mappé à partsir de la sortie d'applybqsr
 #+begin_src sh
-NXF_OPTS=-D"user.name=apraga" nextflow run main.nf -c nextflow.config  -profile standard,helios --input="/Work/Projects/bisonex/centogene/fastq/2200467051_63003856/63003856_S135_R{1,2}_001.fastq.gz" --outdir=out -bg
+NXF_OPTS=-D"user.name=apraga" nextflow run main.nf -c nextflow.config  -profile standard,helios --input="/Work/Projects/bisonex/cento/fastq/2200467051_63003856/63003856_S135_R{1,2}_001.fastq.gz" --outdir=out -bg
 cd out/63003856_S135_R/preprocessing/applybqsr/
 samtools view 63003856_S135_R.bam NC_000022.11  -f 0x2 -o 63003856_chr22.bam
 samtools sort -n 63003856_chr22.bam -o 63003856_chr22_sorted.bam
@@ -6166,10 +6190,8 @@ AGGGTTACCACCACCACCCTGACAGGAGATATTCTAGGAGTACTCAAGAGCATCAGGGGATGGCTGGTAGCCTAGAAGGA
 ADEEB@?CBBCCBDCBDCCCFBD;EEBEBBABCEC:EEBEAADCFCDFBFECCFCFFFFCCGFEDGFBBEEDCAECCEEBCECBDBCEEDCCBCBFAECCFEACAEAEBCCDCBCBFB:;CAEDCAEDBEEEEDC?<ECFBCDBCCCEDAA
 
 #+begin_src
-zgrep -A 3 "A00853:477:HMLWYDSX3:1:1413:4390:28573" /Work/Projects/bisonex/centogene/fastq/2200467051_63003856/63003856_S135_R1_001.fastq.gz
+zgrep -A 3 "A00853:477:HMLWYDSX3:1:1413:4390:28573" /Work/Projects/bisonex/cento/fastq/2200467051_63003856/63003856_S135_R1_001.fastq.gz
 #+end_src
-#+RESULTS:
-: @A00853:477:HMLWYDSX3:1:1413:4390:28573 1:N:0:ATTCCACACA+TAGGCGATTG
 AGGGTTACCACCACCACCCTGACAGGAGATATTCTAGGAGTACTCAAGAGCATCAGGGGATGGCTGGTAGCCTAGAAGGAACCACAAGGCCCAATGTCTTGGTTAGTCAAACCAATGAATTAGCTAGCAGGGGCCTTCTGAACAAAAGCAT
 : +
 : FFFFFFFFFFFFFFFFFFFFFFF:FFFFFFFFFFF:FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF::FFFFFFFFFFFFFFF::FFFFFFFFFFFFFF
@@ -6477,7 +6499,7 @@ FFFFFFFFFFFFFFFFFFFFFFF:FFF:FFFFFFFFFFFFF,FFFFFFFFFFFF:F:FFFF:FFFFF,,FFF:FFFFFFF
 ***** TODO Phase 2 : chr22, vaf variable :T2T:
 SCHEDULED: <2023-08-02 Wed>
 ****** TODO Phase 3 : tous SNV, vaf variable :T2T:
-SCHEDULED: <2023-07-12 Wed>
+SCHEDULED: <2023-07-27 Thu>
 ***** TODO Test Indel
 **** Divers
 ***** DONE Vérifier nombre de reads fastq - bam
