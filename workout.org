@@ -6433,3 +6433,34 @@ Temps de repos = temps de course
 - 4
 * <2023-07-10 Mon> Workout
  Circuit x2 (complet)
+* <2023-07-20 Thu> Workout
+** RTO
+- 28-15-13
+** Muscle-up
+- 2+2 + 4neg
+- 2+2 + 4neg
+- 2+2 + 4neg
+** Extension:
+- 22
+- 22
+- 22
+** FL tucked row :
+- 3+2
+- 3+2
+- 3+2
+** Pistols :
+- 4
+- 4
+- 4
+** Planche tucked push-up:
+- 5+5
+- 5+5
+- 5+5
+** Compression:
+- 10
+- 10
+- 10
+** Norwegian roll
+- 4
+- 4
+- 4

@@ -3632,7 +3632,7 @@ SCHEDULED: <2023-07-09 Sun>
   avec i la position en T2T et j la position en GRCh38
 
   Note: définir un ID n'est pas correct car les variants peuvent être modifié par happy !
-******** Algorithmes
+******** Idée
  - Pour chaque FP, c'est un "faux" FP si
      - REF en hg38 == ALT en T2T
      - et REF en hg38 != REF en T2T
@@ -3644,6 +3644,12 @@ Comment obtenir les séquences de réferences ?
 3. identifier quelques reads contenant le variant et regarder leur aligneement en hg38
 
 Après discussion avec Alexis: solution 3
+******** Algorithme
+1. Extraire les coordonnées en T2T des faux positifs
+2. Pour chaque faux positif
+   1. lister 3 reads contenant le variant
+   2. pour chacun de ces reads, récupérer la séquence en T2T et GRCh38 via le nom du read dans le bam
+   3. si la séquence en T2T modifiée par le variant est "identique" à celle en GRCh38, alors on ignore ce faux positif
 ******* DONE Vérifier quelques variants sur IGV
 CLOSED: [2023-07-09 Sun 17:36]
 ******* KILL Répartition des FP : cluster ?
