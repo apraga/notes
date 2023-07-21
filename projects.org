@@ -156,7 +156,7 @@ Attention: ne pas oublier l'option -n !!!
 time julia --project=.. insertVariant.jl
 scp 63003856_S135_chr22_{1,2}.fq.gz meso:/Work/Users/apraga/bisonex/tests/bamscissors/
 #+end_src
-*** TODO Implémenter les SNV avec VAF :snv:
+*** WAIT Implémenter les SNV avec VAF :snv:
 SCHEDULED: <2023-07-07 Fri>
 Stratégie :
 1. calculer la profondeur sur les positions
@@ -200,6 +200,33 @@ Maxence : Éveil musical
 :PROPERTIES:
 :CATEGORY: internat
 :END:
+** InterCHU Grenoble mai 2024
+:PROPERTIES:
+:CATEGORY: interchu
+:END:
+*** DONE Visio Julien Theveno
+CLOSED: [2023-07-21 Fri 17:54] DEADLINE: <2023-07-21 Fri>
+- pas en clinique mais soit Auragen, soit labo de cyto (Pr Coutton) pour avoir un stage de labo
+- Ok pour accueillir mai 2024
+- thématique
+  - bioinformatique avec projet à définir sur des améliorations non urgentes +/- publi
+    - soit appel de variants difficile
+    - soit bionano (en cours)
+  - diagnostic : 2-3 génomes à lire par semaine
+- préciser le sujet avec bioinformaticienne (Virgine ??)
+- nombreuses demandes d'interCHU au semestre dernier mais personne pour les 2 prochains (interprétation ailleurs)
+- se déroulera au CHU de grenoble (pôle mère-enfant) dans tous les cas
+
+*Julien Thevenon non disponible en août*
+2 stages à Lyon pour Auragen =
+- interprétation onco
+- extraction ADN + séquencage
+Grenoble = la partie bioinfo
+*** DONE Mail coordonateur DES biologie médicale Grenoble pour préciser
+CLOSED: [2023-07-21 Fri 17:54] SCHEDULED: <2023-07-21 Fri>
+*** TODO Dossier à compléter
+SCHEDULED: <2023-08-04 Fri>
+*** TODO Vision Julien Thevenon + Virginie ?? (bionfo)
 * Comptabilité
 :PROPERTIES:
 :CATEGORY: ledger
@@ -376,9 +403,10 @@ CLOSED: [2023-03-20 lun. 14:30]
 CLOSED: [2023-06-11 Sun 18:39] SCHEDULED: <2023-05-28 Sun>
 ***** DONE Dernières correction JP
 CLOSED: [2023-07-02 Sun 10:52] SCHEDULED: <2023-06-11 Sun>
-***** TODO Relancer avant soumission
-SCHEDULED: <2023-07-16 Sun>
+***** DONE Relancer avant soumission
+CLOSED: [2023-07-21 Fri 17:46] SCHEDULED: <2023-07-16 Sun>
 **** TODO Soumission
+***** Notes
   List journaux acceptant case reports
   https://static1.squarespace.com/static/5db7b349364ff063a6c58ab8/t/6071fb065173800a11ccd0a2/1618082566620/Case+Report+Journals+2020.pdf
 
@@ -433,7 +461,8 @@ https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCod
 #+begin_quote
 There are no submission fees, publication fees or page charges for this journal.
 #+end_quote
-
+***** TODO Soumission AJMG
+SCHEDULED: <2023-07-26 Wed>
 
 ** Mustard :mustard:
 *** Scripts
@@ -2350,8 +2379,10 @@ CLOSED: [2023-07-02 Sun 10:52] SCHEDULED: <2023-06-13 Tue>
 CLOSED: [2023-07-02 Sun 10:52] SCHEDULED: <2023-06-13 Tue>
 **** DONE Contrôle pollution
 CLOSED: [2023-07-02 Sun 10:52] SCHEDULED: <2023-06-13 Tue>
-**** TODO Prendre rendez-vous pour contrôle
-SCHEDULED: <2023-07-02 Sun>
+**** DONE Prendre rendez-vous pour contre-visite
+CLOSED: [2023-07-21 Fri 17:45] SCHEDULED: <2023-07-02 Sun>
+**** TODO Contre-visite
+DEADLINE: <2023-07-26 Wed>
 *** TODO Amende
 **** DONE Changement d'adresse carte grise
 CLOSED: [2023-06-11 Sun 21:40]
