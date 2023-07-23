@@ -698,3 +698,37 @@ Rappel
 - 懸垂下降( けんすいかこう ) : rappel (escalade)
 - 水泳 (すいえい ) : nage
 - 飛び込み (と-こ-) : saut
+* <2023-07-23 Sun>
+** Vocabulaire
+- 埋め立て地 (う た ち): décharge (déchet)
+- その当時（とうじ）: à ce moment (passé)
+- 成功（せいこう）: réussite
+- 大成功
+- スタジオ: studio de cinéma
+- 〜作品 ( さくひん ): compteur pour les films
+- 普通は（ふつう　は）: d'habitude (?)
+- 一度（いちど）: une fois
+- 〜が待ち遠しいです: avoir hâte de ...
+- トビ: milan noir
+- 主題　しゅだい : sujet, thème (film, composition..)
+
+- shikenni koukaku suru : réussir un examen
+- shikenni ochiru : échouer à un examen
+- shiai ni katsu : gagner un match
+- shiai ni makeru : predre un match
+- kaban wo wasureru : perdre son sac
+- saifu wo otosu : perdre un portefeuille
+- nebou suru : trop dormir
+- kaigi okureru : être en retard pour une réunion
+** Grammaire
+décrire un état: verbes + te, emotion
+- ureshikatta desu : être content
+- odorokimashita:  être surpris
+- kuyashikattadesu : être décu/frustré
+- gakkarishimashita: être indifférent
+- komarimashita : être embêté (?)
+- taihendeshita: c'est horrible
+- hazukashikatta : être embarasssé
+
+  Ex:
+  shikenni goukakushite, ureshikatta desu
