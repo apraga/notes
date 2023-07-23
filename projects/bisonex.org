@@ -4614,6 +4614,13 @@ CLOSED: [2023-06-30 Fri 22:29]
 **** TODO Sauvegarder les données brutes
 SCHEDULED: <2023-07-19 Wed>
 K, scality, S
+**** TODO Récupérer le fichier de capture
+SCHEDULED: <2023-07-23 Sun>
+Par défaut, on utilisera https://www.twistbioscience.com/products/ngs/alliance-panels#tab-3
+ANnonce récente pour nouveau panel Twist : https://www.centogene.com/news-events/news/newsdetails/twist-bioscience-and-centogene-launch-three-panels-to-advance-rare-disease-and-hereditary-cancer-research-and-support-diagnostics
+Masi pas de fichier BED
+***** TODO Mail centogène
+DEADLINE: <2023-07-23 Sun>
 **** STRT Comparer à GIAB
 SCHEDULED: <2023-07-18 Tue>
 #+begin_src sh
