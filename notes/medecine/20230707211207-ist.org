@@ -95,5 +95,6 @@ Myc. hominis, Ureaplasma
 - résistance
   - très fréqunece : *péni-G*, FQ, tétracycline
   - C3G : PLP mosaïque
+  - vanco = résistance naturelle
 ** Traitement
 - *ceftriaoxne + azitromicine*
