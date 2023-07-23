@@ -6433,17 +6433,14 @@ Temps de repos = temps de course
 - 4
 * <2023-07-10 Mon> Workout
  Circuit x2 (complet)
-* <2023-07-23 Sun> Workout
+* <2023-07-20 Thu> Workout
 ** RTO
-- 30
-- 15
-- 15
-** L-sit
-- 3x2
+- 28-15-13
 ** Muscle-up
-- 2x2 + 4neg
-- 2x2 + 4neg
-- 2x2 + 4neg
+- 2+2 + 4neg
+- 2+2 + 4neg
+- 2+2 + 4neg
+>>>>>>> c5617e91d4ddc0df3f9d79ae8b159f2f1b21e284
 ** Extension:
 - 22
 - 22
@@ -6461,10 +6458,24 @@ Temps de repos = temps de course
 - 5+5
 - 5+5
 ** Compression:
-- 9
-- 9
-- 9
+- 10
+- 10
+- 10
 ** Norwegian roll
 - 4
 - 4
 - 4
+* <2023-07-22 Sat> Running
+1h10
+
+* <2023-07-23 Sun> Workout
+** RTO
+- 30
+- 15
+- 15
+** L-sit
+- 3x2
+** Muscle-up
+- 2x2 + 4neg
+- 2x2 + 4neg
+- 2x2 + 4neg
