@@ -474,6 +474,35 @@ DEADLINE: <2023-07-24 Mon>
 ****** TODO Cover letter
 DEADLINE: <2023-07-26 Wed>
 https://www.springer.com/gp/authors-editors/authorandreviewertutorials/submitting-to-a-journal-and-peer-review/cover-letters/10285574
+
+#    If known, address the editor who will be assessing your manuscript by their name. Include the date of submission and the journal you are submitting to.
+Dear Editor,
+
+#    First paragraph: include the title of your manuscript and the type of manuscript it is (e.g. review, research, case study). Then briefly explain the background to your study, the question you sought out to answer and why.
+We would like submit to American Journal of Medical Genetics (part A) a novel
+case report entitled "Hepatoblastoma in a patient with Neurofibromatosis type 1:
+a case report" to the  for consideration of publication.  Even though a large
+variety of tumours have been reported in neurofibromatosis type 1, this is, to
+our knowledge, only the third case in medical litterature linked with
+hepatoblastoma and the first with germline and somatic molecular analysis.
+
+Following-up the discovery of a liver mass in a 11-year old girl, epithelial
+hepatoblastoma with pulmonary metastasis was diagnosed. Germline and somatic
+molecular analysis showed classical driver variant for hepatoblastoma and a
+germline class 4 /NF1/ variant also found in the tumour. We discuss potential
+causal link between the two.
+
+#    Third paragraph: here you should indicate why the readers of the journal #would be interested in the work.
+# biological and medical aspects of genetic disorders and birth defects, as well as in-depth documentation of phenotype analysis within the current context of genotype/phenotype correlations.
+To facilitate early detection of rare cancers like hepatoblastoma, reporting
+such associations is important to increase clinical awareness and improve
+follow-up of /NF1/ patients. It also highlights the difficulty of genetic
+counseling with aggressive tumours and genetic diseases in the same family.
+
+Thank you for considering our case report for publication.
+
+Sincerely,
+
 ** Mustard :mustard:
 *** Scripts
 **** DONE Script pour données labkey
