@@ -241,6 +241,52 @@ Résistance acquises
 - Urine : rose sur milieu chromogène (β-glucoronidase positive)
 - Sensbilité naturelles aux antibiotiques actif sur BGN
 - Groupe 1 : céphalosporinase chromosomique de très bas niveau. Résistance acquise enzymatique : pénicillinase, β-lactamase à spectre étundes, céphalosporinase de haut niveau, carbapénémase
+*** Salmonelle, Shigelle
+- Bacille gram négatif, non sporulé, aéro-anaérobie facultatif
+- non exigeat
+- catalase, nitrate réductase
+- pas dans le microbite digestf normal de l'homme
+- porte d'entrée digestive
+- responsible de
+  - maladie du péril fécal (pays en voie de développement : Salmonelle typique et non typqiue, Shigelle)
+  - TIAC : salmonelle non typhique >> shigelle
+    - rappel:  TIAC>= 2 cas, déclaration opligatoire
+**** Pouvoir pathègene
+- salmonelle :
+  - strictement humain = sér. Typhi, paratyphi => fièvre (para)typhoïde
+  - animale = non typhique: gastroentérite
+- shigelle : dysenteria... strictement humain => dysentérie bacillaire, gastroentérite sanglante
+**** Physiopath
+*Entéro-invasif*
+- shigelle : envahissement + destruction cellules épithéliales (syndrome dysentérique)
+- salmonelle  : envahissement sans destruction de la muqueuse (sd gastroentéritiques) +/- production de toxique
+
+Clinique:
+- salmonelle typhique: 1-2semaine incubation, fièvre continue élevée 40`, bactériémie, tuphos, diarrhée/constipation`
+- salmonelle non typhique: incubation 12-36h, diarrhée fébrile, vomissement
+- shigelle: incubation 1-3j, fièvre élevée, selle avec sang, glaire, pus, douleurs abdominales violentes
+**** Diagnostic
+- selles +/- sang pour salmonelle (para)typhique
+- diag moléculaire
+- culture:
+  - "SS" (salmonelle/shigelle): salomnelle = lactose - et SH2+
+  - Hektoen, Drigalski (BG-) : lactos-, h2s+
+  - pour salmonelle : bouillon d'enrichissement
+- identification: *salmonelle non différencie d'e. coli*
+  - shigelle = immobile
+  - shigelle = fermentation manitol ( sauf s. dysenteria )
+- BG-
+**** Traitement
+- diarrhée infectieuse aigue = symptom
+  - antipyrétique,
+  - maintien hydro-élecrique
+  - régime sans résidu
+  - ! contre-indication ralentisseur du transite (lopéramique)
+  - +/- antibio si forme grave > 3 ours, ID... : FQ/azithromycique
+- bactériémie : FQ/azithromycine,/ceftriaxone
+
+Déclaration obligatoire : TIAC, fièvre (para)typhoïde
+Vaccination en prévention salmonelle typfique
 ** Entérocoques
 Cocci gram+ , anaérobie facultative, ressemblantà des streptocoques
 
@@ -260,6 +306,7 @@ Augmentation des infections avec les années
 - Naturelle : céphalosporine
 - *E. faecalis = sensible amox. E. faecium = résistant 80-90%*
 - multi-résistance chez E. faecium
+- aminoside (bas niveau)
 - β-lactamine/glycopeptide seul = seulement effect bactériostatique sur > 90%. Mais aminoside + inhibiteur de la paroi (β-lactamine, glycopepited, lipopetide) = synergie
 - glycopeptide
 - MLSK (Macrolides-Lincosamide-Streptogramine-Kétolide): modification cible++, efflux, protection ribosomale
