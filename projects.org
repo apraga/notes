@@ -463,7 +463,17 @@ There are no submission fees, publication fees or page charges for this journal.
 #+end_quote
 ***** TODO Soumission AJMG
 SCHEDULED: <2023-07-26 Wed>
-
+****** TODO Figures > 2 en Supplementary
+DEADLINE: <2023-07-24 Mon>
+****** TODO Vérifier citation format APA
+DEADLINE: <2023-07-24 Mon>
+****** TODO Ajouter le consentement dans les méthodes
+DEADLINE: <2023-07-24 Mon>
+****** TODO Rajouter la machine avec séquencage
+DEADLINE: <2023-07-24 Mon>
+****** TODO Cover letter
+DEADLINE: <2023-07-26 Wed>
+https://www.springer.com/gp/authors-editors/authorandreviewertutorials/submitting-to-a-journal-and-peer-review/cover-letters/10285574
 ** Mustard :mustard:
 *** Scripts
 **** DONE Script pour données labkey
