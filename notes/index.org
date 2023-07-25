@@ -5,6 +5,6 @@ Bactériologie
 - [[id:00e9454a-9a71-4fbd-bfde-0fdf323bce15][Maladies infectieuses]]
 - [[id:46dca88b-671f-4f23-a340-5dc564a48659][Antibiotiques]]
 - [[id:a8ad4c3b-9f08-4878-8d9d-febddae20069][Culture]]
-
+- [[medecine/technique-bacterio.org]]
 * Autres
 - [[id:ff3ddbe9-e87b-4e1b-8478-66234ebf6ab5][Japonais]]
