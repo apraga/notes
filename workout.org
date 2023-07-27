@@ -6479,3 +6479,8 @@ Temps de repos = temps de course
 - 2x2 + 4neg
 - 2x2 + 4neg
 - 2x2 + 4neg
+* <2023-07-27 Thu> Workout
+ Circuit x3 haut + bas. Pour 2e et 3e répétion essai
+ - RTO 3s
+ - L-Sit 2S
+ - push-up x2
