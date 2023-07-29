@@ -2407,7 +2407,7 @@ Trop abimé pour prendre le risque, on changera les arrières plus tard
 CLOSED: [2023-06-11 Sun 18:39] SCHEDULED: <2023-05-09 Tue>
 Écrou grippé ? Voir avec fils M. Chouffe à Gennes, chemin du vernois (voiture 607 bleue)
 *** TODO Changer courroie distribution
-SCHEDULED: <2023-07-30 Sun>
+SCHEDULED: <2023-08-12 Sat>
 À faire au bout de 10ans, on attend l’an prochain
 
 *** DONE Contrôle technique
@@ -2438,6 +2438,20 @@ CLOSED: [2023-07-02 Sun 10:52] SCHEDULED: <2023-06-18 Sun>
 /Entered on/ [2023-07-02 Sun 18:20]
 Découverte <2023-07-02 Sun>. Virement 100.50€ fait.
 Mail envoyé ce jour
+** TODO Vendre vélo
+SCHEDULED: <2023-08-29 Tue>
+/Entered on/ [2023-07-29 Sat 10:23]
+** TODO Vendre frigo
+SCHEDULED: <2023-10-17 Wed>
+** TODO Vendre machine à laver
+SCHEDULED: <2023-10-17 Wed>
+** TODO Photo à Éric pour lit
+SCHEDULED: <2023-07-30 Sun>
+** DONE SMS annonce déménagement
+CLOSED: [2023-07-29 Sat 10:57] SCHEDULED: <2023-07-29 Sat>
+/Entered on/ [2023-07-29 Sat 10:25]
+** DONE Lettre recommandée annonce déménagement
+CLOSED: [2023-07-29 Sat 10:57] SCHEDULED: <2023-07-29 Sat>
 * Gentoo
 ** GURU
 *** DONE Ebuild pour adapteur wifi TBW-108B
