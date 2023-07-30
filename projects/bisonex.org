@@ -1,4 +1,5 @@
 ﻿#+title: Bisonex
+#+category: bisonex
 * Biblio
 :PROPERTIES:
 :CATEGORY: biblio
@@ -27,7 +28,7 @@ encoded as alleles values separated by either of ”/” or “|”, e.g. The al
 
 ** Validation
 *** NA12878
-**** KILL [[https://precision.fda.gov/challenges/truth/results][fdaPrecision challenge]]
+**** KILL [[https://precision.fda.gov/challegnges/truth/results][fdaPrecision challenge]]
 Attention, génome et en hg19 donc comparaison non adaptée ...
 
 **** TODO Best practices for the analytical validation of clinical whole-genome sequencing intended for the diagnosis of germline disease
@@ -58,7 +59,7 @@ Variantcalling
 
   SNV
 | Exome | Pipeline |    TP |   FP |  FN | Sensitivity | Precision | F-Score |   FDR |
-|     1 | BWA_GATK | 23689 | 1397 | 613 |       0.975 |     0.944 |   0.959 | 0.057 |
+|     1 | BWA_GATK | 2368g9 | 1397 | 613 |       0.975 |     0.944 |   0.959 | 0.057 |
 |     2 | BWA_GATK | 23946 |  865 | 356 |       0.985 |     0.965 |   0.975 | 0.036 |
 
 indel
@@ -338,6 +339,156 @@ Bed non fourni pour exactement cette capture
 On prend https://www.twistbioscience.com/resources/data-files/twist-alliance-vcgs-exome-401mb-bed-files
 qui content la majeure partie
 
+* Nixpkgs :nix:
+** DONE GATK
+CLOSED: [2023-05-06 Sat 08:51]
+*** DONE [[https://github.com/NixOS/nixpkgs/pull/185819][Binaire]]
+CLOSED: [2022-09-10 Sat 23:53] SCHEDULED: <2022-08-10 Wed>
+/Entered on/ [2022-08-09 Tue 10:57]
+PR submitted
+*** KILL Corriger code pour utiliser source
+CLOSED: [2022-09-11 Sun 22:05]
+*** DONE Corriger PATH pour include java et python
+CLOSED: [2022-10-11 Tue 11:46]
+https://github.com/NixOS/nixpkgs/pull/191548
+Review <2022-10-10 Mon> , corrigé dans la journée
+*** DONE Update 4.3.0.0
+CLOSED: [2023-04-13 Thu 09:01]
+** TODO Nextflow
+*** KILL version script seule
+CLOSED: [2023-04-01 Sat 18:29]
+Fix pour SGE et nextflow
+https://github.com/NixOS/nixpkgs/issues/192396
+*** KILL Version avec gradle
+CLOSED: [2022-10-09 Sun 22:51]
+*** TODO [[https://github.com/NixOS/nixpkgs/issues/192396][Bug report Version 22.10.6]]
+**** Notes
+Erreur :
+ERROR: Cannot download nextflow required file -- make sure you can connect to the internet
+
+Alternatively you can try to download this file:
+    https://www.nextflow.io/releases/v22.10.6/nextflow-22.10.6-all.jar
+
+and save it as:
+    .//nix/store/md2b1ah4d7ivj82k8xxap30dmdci00pa-nextflow-22.10.6/bin/.nextflow-wrapped
+
+Dans la mise à jour, il y a la création d'un environnement virtuel qui casse l'exécution de nextflow (besoin de télécharger)
+Fix = désactiver
+**** KILL Patch NXF_OFFLINE=true
+CLOSED: [2023-07-02 Sun 11:02] SCHEDULED: <2023-06-11 Sun>
+** TODO Multiqc
+** TODO VEP :vep:
+*** DONE [[https://github.com/NixOS/nixpkgs/pull/185691][BioPerl]]
+SCHEDULED: <2022-08-10 Wed>
+/Entered on/ [2022-08-09 Tue 10:57]
+PR submitted
+*** TODO BioDBBBigFile
+:PROPERTIES:
+:ORDERED:  t
+:END:
+/Entered on/ [2022-08-10 Wed 14:28]
+On utilise la dernière version de kent, donc plus de problème.
+PRête à être mergé. Rebase faite<2023-07-02 Sun>
+**** DONE Version de kent déjà packagée : forcer version  335
+CLOSED: [2023-07-02 Sun 11:20]
+***** KILL [[https://github.com/NixOS/nixpkgs/pull/206991][Restore building kent 404]]
+CLOSED: [2023-05-06 Sat 17:40]
+Review faite <2023-03-26 Sun> , atteinte merge]
+Relancé <2023-05-06 Sat>
+Kent 446 n'a pas ce problème donc PR inutile
+***** DONE [[https://github.com/NixOS/nixpkgs/pull/223411][Ajouter les header to package]] (inc folder)
+CLOSED: [2023-05-08 Mon 10:18] SCHEDULED: <2023-05-07 Sun>
+Review à faire
+https://github.com/NixOS/nixpkgs/pull/223411
+Corrigé et plus besoin de la PR précédente
+***** KILL [[https://github.com/NixOS/nixpkgs/pull/186462][BioDBBBigFile]] avec ces 2 changements
+CLOSED: [2023-07-02 Sun 11:20]
+**** KILL Version de kent déjà packagée : 404
+CLOSED: [2023-03-27 Mon 16:43]
+Compile mais les tests de passent pas
+**** TODO Modifier selon PR https://github.com/NixOS/nixpkgs/pull/186462
+SCHEDULED: <2023-07-30 Sun>
+*** DONE [[https://github.com/NixOS/nixpkgs/pull/186459][BioDBHTS]]
+CLOSED: [2023-05-06 Sat 08:49] SCHEDULED: <2023-04-15 Sat>
+/Entered on/ [2022-08-10 Wed 14:28]
+Correction pour review faites <2022-10-10 Mon>
+*** DONE [[https://github.com/NixOS/nixpkgs/pull/186464][BioExtAlign]]
+CLOSED: [2022-10-22 Sat 12:43] SCHEDULED: <2022-08-10 Wed>
+/Entered on/ [2022-08-10 Wed 14:28]
+Review <2022-10-10 Mon>, correction dans la journée.
+Correction 2e passe, attente
+Impossible de faire marcher les tests Car il ne trouve pas le module Bio::Tools::Align, qui est dans un dossier ailleurs dans le dépôt. Même en compilant tout le dépôt, cela ne fonctionne pas... On skip les tests.
+
+*** TODO VEP
+
+** WAIT [[https://github.com/NixOS/nixpkgs/pull/230394][rtg-tools]] :vcfeval:
+Soumis
+** PROJ Spip
+** TODO Happy :happy:
+*** PROJ PR python 3 upstream
+*** PROJ nixpkgs en l'état
+
+** TODO Bamsurgeon
+/Entered on/ [2023-05-13 Sat 19:11]
+*** TODO Velvet
+
+** TODO PR Picard avec option pour gérer la mémoire
+Similaire à
+https://github.com/bioconda/bioconda-recipes/blob/master/recipes/picard/picard.sh
+
+** Julia :julia:
+*** KILL XAM.jl: PR pour modification record :julia:
+CLOSED: [2023-05-29 Mon 15:40] SCHEDULED: <2023-05-28 Sun>
+/Entered on/ [2023-05-27 Sat 22:39]
+*** TODO XAMscissors.jl :xamscissors:
+Modification de la séquence dans BAM.
+*Pas de mise à jour de CIGAR*
+On convertit en fastq et on lance le pipeline pour "corriger"
+
+
+#+begin_src sh
+cd /home/alex/code/bisonex/out/63003856/preprocessing/mapped
+samtools view 63003856_S135.bam NC_000022.11 -o 63003856_S135_chr22.bam
+cd /home/alex/recherche/bisonex/code/BamScissors.jl
+cp ~/code/bisonex/out/63003856/preprocessing/mapped/63003856_S135_chr22.bam .
+samtools index 63003856_chr22.bam
+#+end_src
+
+Le script va modifier le bam, le trier et générer le fastq. !!!
+Attention: ne pas oublier l'option -n !!!
+
+#+begin_src sh
+time julia --project=.. insertVariant.jl
+scp 63003856_S135_chr22_{1,2}.fq.gz meso:/Work/Users/apraga/bisonex/tests/bamscissors/
+#+end_src
+**** WAIT Implémenter les SNV avec VAF :snv:
+Stratégie :
+1. calculer la profondeur sur les positions
+2. créer un dictionnaire { nom du reads : position dataframe }
+3. itérer sur tous les reads et changer ceux marqués
+***** DONE VAF = 1
+CLOSED: [2023-05-29 Mon 15:34]
+***** DONE VAF selon loi normale
+CLOSED: [2023-05-29 Mon 15:35]
+Tronquée si > 1
+***** WAIT Tests unitaires
+****** DONE NA12878: 1 gène sur chromosome 22
+CLOSED: [2023-05-30 Tue 23:55]
+root = "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/NA12878/Garvan_NA12878_HG001_HiSeq_Exome/"
+#+begin_src sh
+samtools view project.NIST_NIST7035_H7AP8ADXX_NA12878.bwa.markDuplicates.bam  chr22 -o project.NIST_NIST7035_H7AP8ADXX_NA12878_chr22.bam
+samtools view project.NIST_NIST7035_H7AP8ADXX_NA12878_chr22.bam chr22:19419700-19424000 -o NIST7035_H7AP8ADXX_NA12878_chr22_MRPL40_hg19.bam
+#+end_src
+****** WAIT Pull request formatspeciment
+https://github.com/BioJulia/FormatSpecimens.jl/pull/8
+****** DONE Formatspecimens
+CLOSED: [2023-05-29 Mon 23:03]
+******* DONE 1 read
+CLOSED: [2023-05-29 Mon 23:02]
+******* DONE VAF sur 1 exon
+CLOSED: [2023-05-29 Mon 23:03]
+**** TODO Implémenter les indel avec VAF :indel:
+**** TODO Soumission paquet
 * Données
 :PROPERTIES:
 :CATEGORY: data
@@ -436,10 +587,7 @@ $single | reduce {|it, acc| $acc | append $it} | where dir == bam | get id | eac
 : bam/2200511274_63012586/63012586_S114.bqrt.bam
 : bam/2200669188_63036688/63036688_S150.bqrt.bam
 
-* Nouveau workflow
-:PROPERTIES:
-:CATEGORY: workflow
-:END:
+* Nouveau workflow :workflow:
 ** TODO Bases de données
 *** KILL Nix pour télécharger les données brutes
 **** Conclusion
@@ -508,8 +656,8 @@ dbSNP_common.vcf.gz             ID_of_common_snp.txt
 CLOSED: [2023-06-14 Wed 22:35]
 ***** DONE compatibilité hg38
 CLOSED: [2023-06-14 Wed 22:35]
-**** TODO cache vep
-SCHEDULED: <2023-07-25 Tue>
+**** DONE cache vep
+CLOSED: [2023-06-30 Sun 14:20] SCHEDULED: <2023-07-25 Tue>
 *** HOLD Processing bases de données
 **** DONE dbSNP common
 **** DONE Seulement les ID dans dbSNP common !
@@ -1131,10 +1279,10 @@ $ ../result/bin/hap.py example/happy/PG_NA12878_chr21.vcf.gz       example/happy
 | SNP   | ALL    |       52494 |    52125 |      369 |       90092 |      582 |     37348 |   107 |   354 |      0.992971 |         0.988966 |       0.414554 |        0.990964 |
 | SNP   | PASS   |       52494 |    46920 |     5574 |       48078 |      143 |       992 |     8 |    97 |      0.893816 |         0.996963 |       0.020633 |        0.942576 |
 
-**** TODO Version avec rtg-tools
-**** TODO Faire fonctionner Tests
-***** TODO Essai 2 : depuis nix develop:
-SCHEDULED: <2023-07-25 Tue>
+**** KILL Version avec rtg-tools
+CLOSED: [2023-07-30 Sun 14:38]
+**** HOLD Faire fonctionner Tests
+***** HOLD Essai 2 : depuis nix develop:
 #+begin_src
 nix develop .#hap-py
 genericBuild
@@ -1230,8 +1378,7 @@ SCHEDULED: <2023-07-27 Thu>
 :ID:       d2280207-3f65-4a31-a291-41fa9a9658c2
 :END:
 Contient les chain files
-** TODO Indicateurs qualité
-SCHEDULED: <2023-07-26 Wed>
+** PROJ Indicateurs qualité
 *** Idée
 Raredisease:
 - FastQC : nombreuses statistiques. Non disponible Nix
@@ -1247,10 +1394,8 @@ Sarek:
 - QC : MultiQC
 
 MultiQC : non disponible Nix
-** TODO vérifier si normalisation
-SCHEDULED: <2023-07-26 Wed>
-** TODO Rajouter vérification hgvs
-SCHEDULED: <2023-07-26 Wed>
+** PROJ vérifier si normalisation
+** PROJ Rajouter vérification hgvs
 
 ** DONE Exécution
 CLOSED: [2022-09-13 Tue 21:37]
@@ -1488,10 +1633,7 @@ CLOSED: [2023-04-22 Sat 15:27] SCHEDULED: <2023-04-13 Thu>
 :PROPERTIES:
 :CATEGORY: manuscript
 :END:
-* Tests
-:PROPERTIES:
-:CATEGORY: tests
-:END:
+* Tests :tests:
 ** KILL Non régression : version prod
 CLOSED: [2023-05-23 Tue 08:46]
 *** DONE ID common snp
@@ -3484,199 +3626,6 @@ wc -l work/e4/9981dc539a2373c2beeaa0affc3497/Agilent_SureSelect_All_Exons_v7_hg3
 On a donc perdu 1000 zones
 ***** DONE Liftovervcf avec variant échangé référence/alternative ?
 CLOSED: [2023-07-02 Sun 23:09]
-***** TODO Comprendre mauvais résultat
-SCHEDULED: <2023-07-03 Mon>
-****** DONE 2x moins de variants, beaucoup trop de FP : erreur de FILTER
-CLOSED: [2023-07-08 Sat 11:17] SCHEDULED: <2023-07-07 Fri>
-******* DONE [#A] Certains FP sont des vrais FP: erreur de flag et non d'happy
-CLOSED: [2023-07-08 Sat 10:43] SCHEDULED: <2023-07-07 Fri>
-
-******** Ex: chr1:408793
-G	C	600.64	.	BS=408793;Regions=CONF,TS_contained	GT:BD:BK:BI:BVT:BLT:QQ	./.:.:.:.:NOCALL:nocall:.	0/1:FP:.:tv:SNP:het:600.64
-CLOSED: [2023-07-07 Fri 20:03]
-********* DONE Vérifier que l'on est bien dans la zone "high confidence" définie dans le bed
-oui:
-chr1	408514	414397	.	500	+
-********* DONE Vérifier que le variant est bien dans le truth et query
-CLOSED: [2023-07-07 Fri 20:14]
-truth
-chr1    408793  .       G       C       50      MismatchedRefAllele     AttemptedAlleles=C*->G;AttemptedLocus=chr1:408793-408793;SwappedAlleles;callable=CS_HiSeqPE300xGATK_callable,CS_10XLRGATK_callable,CS_CCS15kb_20kbGATK4_callable,CS_CGnormal_callable,CS_HiSeqPE300xfreebayes_callable;callsetnames=HiSeqPE300xGATK,CCS15kb_20kbGATK4,CGnormal,HiSeqPE300xfreebayes,CCS15kb_20kbDV,10XLRGATK;callsets=6;datasetnames=HiSeqPE300x,CCS15kb_20kb,CGnormal,10XChromiumLR;datasets=4;datasetsmissingcall=IonExome,SolidSE75bp;filt=CS_CCS15kb_20kbDV_filt,CS_CCS15kb_20kbGATK4_filt;platformnames=Illumina,PacBio,CG,10X;platforms=4       GT:AD:ADALL:DP:GQ       1/0:153,159:141,132:689:99
-
-query
-chr1    408793  .       G       C       600.64  .       AC=1;AF=0.500;AN=2;BaseQRankSum=-1.390;DP=64;ExcessHet=0.0000;FS=0.961;MLEAC=1;MLEAF=0.500;MQ=60.00;MQRankSum=0.000;QD=9.53;ReadPosRankSum=-3.146;SOR=0.906     GT:AD:DP:GQ:PL  0/1:33,30:63:99:608,0,798
-********* DONE Tester happy sur ce variant: non retrouvé
-CLOSED: [2023-07-08 Sat 10:42]
-Il faut au moins 2 variant + les index (sinon "no chromosome in common")
-Donc on augmente la taille de la région
-#+begin_src sh :dir ~/code/bisonex/out
-bcftools view HG001_GRCh38_1_22_v4_lifted_merged.vcf.gz  -o lifted_test.vcf.gz chr1:408793-408900
-bcftools view HG001-SRX11061486_SRR14724513-T2T.vcf.gz -o run_test.vcf.gz chr1:408793-408900
-bcftools index lifted_test.vcf.gz
-bcftools index run_test.vcf.gz
-#+end_src
-
- #+begin_src sh
- hap.py lifted_test.vcf.gz run_test.vcf.gz --reference ../data/chm13v2.0.fa -o test
- #+end_src
-On trouve bien les 2 variants. L'indel est retrouvé mais pas le SNP
-chr1    408793  .       G       C       600.64  .       BS=408793       GT:BD:BK:BI:BVT:BLT:QQ  ./.:.:.:.:NOCALL:nocall:.       0/1:FP:.:tv:SNP:het:600.64
-chr1    408874  .       CGAA    C       1476.6  .       BS=408874       GT:BD:BK:BI:BVT:BLT:QQ  0/1:TP:gm:d1_5:INDEL:het:1476.6 0/1:TP:gm:d1_5:INDEL:het:1476.6
-********* DONE Changer flag : mismatch -> PASS: OUI
-CLOSED: [2023-07-08 Sat 10:42]
-********* DONE Changer haplotype 1/0 -> 0/1 truth: idem
-CLOSED: [2023-07-08 Sat 10:35]
-********* DONE Tester avec vcfeval : idemnt
-CLOSED: [2023-07-08 Sat 10:43]
-******* DONE Comparer hg38 et T2T: 2x moinsr de variants, trop de FP et FN
-CLOSED: [2023-07-07 Fri 18:38]
-T2T
-| Type  | Filter | TRUTH.TOTAL | TRUTH.TP | TRUTH.FN | QUERY.TOTAL | QUERY.FP | QUERY.UNK | FP.gt | FP.al | METRIC.Recall | METRIC.Precision | METRIC.Frac_NA | METRIC.F1_Score | TRUTH.TOTAL.TiTv_ratio | QUERY.TOTAL.TiTv_ratio | TRUTH.TOTAL.het_hom_ratio | QUERY.TOTAL.het_hom_ratio |
-| INDEL | ALL    |         413 |      246 |      167 |         751 |      289 |       215 |     2 |    93 |      0.595642 |         0.460821 |       0.286285 |        0.519629 |                    NaN |                    NaN |                  2.428571 |                  2.465116 |
-| INDEL | PASS   |         413 |      246 |      167 |         751 |      289 |       215 |     2 |    93 |      0.595642 |         0.460821 |       0.286285 |        0.519629 |                    NaN |                    NaN |                  2.428571 |                  2.465116 |
-| SNP   | ALL    |       11236 |    10985 |      251 |       23597 |     9771 |      2841 |    26 |    58 |      0.977661 |         0.529245 |       0.120397 |        0.686734 |                3.11461 |                2.85705 |                  3.640644 |                  2.114633 |
-| SNP   | PASS   |       11236 |    10985 |      251 |       23597 |     9771 |      2841 |    26 |    58 |      0.977661 |         0.529245 |       0.120397 |        0.686734 |                3.11461 |                2.85705 |                  3.640644 |                  2.114633 |
-
-Hg38
-| Type  | Filter | TRUTH.TOTAL | TRUTH.TP | TRUTH.FN | QUERY.TOTAL | QUERY.FP | QUERY.UNK | FP.gt | FP.al | METRIC.Recall | METRIC.Precision | METRIC.Frac_NA | METRIC.F1_Score | TRUTH.TOTAL.TiTv_ratio | QUERY.TOTAL.TiTv_ratio | TRUTH.TOTAL.het_hom_ratio | QUERY.TOTAL.het_hom_ratio |
-| INDEL | ALL    |         549 |      489 |       60 |         899 |       64 |       340 |     8 |    17 |      0.890710 |         0.885510 |       0.378198 |        0.888102 |                    NaN |                    NaN |                  1.860963 |                  2.247273 |
-| INDEL | PASS   |         549 |      489 |       60 |         899 |       64 |       340 |     8 |    17 |      0.890710 |         0.885510 |       0.378198 |        0.888102 |                    NaN |                    NaN |                  1.860963 |                  2.247273 |
-| SNP   | ALL    |       21973 |    21462 |      511 |       26285 |      563 |      4263 |    68 |    16 |      0.976744 |         0.974435 |       0.162184 |        0.975588 |                3.00711 |               2.784686 |                  1.591810 |                  1.816145 |
-| SNP   | PASS   |       21973 |    21462 |      511 |       26285 |      563 |      4263 |    68 |    16 |      0.976744 |         0.974435 |       0.162184 |        0.975588 |                3.00711 |               2.784686 |                  1.591810 |                  1.816145 |
-
-******** Résumé
-T2T
-| Type  | TRUTH.TOTAL | TRUTH.TP | TRUTH.FN | QUERY.TOTAL | QUERY.FP | QUERY.UNK | FP.gt | FP.al | METRIC.Recall | METRIC.Precision |
-| INDEL |         413 |      246 |      167 |         751 |      289 |       215 |     2 |    93 |      0.595642 |         0.460821 |
-| SNP   |       11236 |    10985 |      251 |       23597 |     9771 |      2841 |    26 |    58 |      0.977661 |         0.529245 |
-
-Hg38
-| Type  | TRUTH.TOTAL | TRUTH.TP | TRUTH.FN | QUERY.TOTAL | QUERY.FP | QUERY.UNK | FP.gt | FP.al | METRIC.Recall | METRIC.Precision |
-| INDEL |         549 |      489 |       60 |         899 |       64 |       340 |     8 |    17 |      0.890710 |         0.885510 |
-| SNP   |       21973 |    21462 |      511 |       26285 |      563 |      4263 |    68 |    16 |      0.976744 |         0.974435 |
-****** DONE Interesection des bed: similaire
-CLOSED: [2023-07-04 Tue 23:11]
-HG38
- #+begin_src sh
- bedtools intersect -a capture/Agilent_SureSelect_All_Exons_v7_hg38_Regions.bed -b /Work/Groups/bisonex/data/giab/GRCh38/HG001_GRCh38_1_22_v4.2.1_benchmark.bed  | wc -l
- #+end_src
- 204280
-
- T2T
- #+begin_src sh
- bedtools intersect -a /Work/Groups/bisonex/data/giab/T2T/Agilent_SureSelect_All_Exons_v7_hg38_Regions_hg38_T2T.bed -b /Work/Groups/bisonex/data/giab/T2T/HG001_GRCh38_1_22_v4.2.1_benchmark_hg38_T2T.bed  | wc -l
- #+end_src
- 204021
-****** DONE Vérifier la ligne de commande
-CLOSED: [2023-07-04 Tue 23:38]
-#+begin_src sh
-hap.py \
-    HG001_GRCh38_1_22_v4_lifted_merged.vcf.gz \
-    HG001-SRX11061486_SRR14724513-T2T.vcf.gz \
-     \
-    --reference chm13v2.0.fa \
-    --threads 6 \
-     \
-    -T Agilent_SureSelect_All_Exons_v7_hg38_Regions_hg38_T2T.bed \
-    --false-positives HG001_GRCh38_1_22_v4.2.1_benchmark_hg38_T2T.bed \
-     \
-    -o HG001
-#+end_src
-****** DONE Corriger FILTER : mieux mais toujours trop de négatifs. 3/4 SNP retrouvés
-CLOSED: [2023-07-08 Sat 15:19] SCHEDULED: <2023-07-08 Sat>
- Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.Precision  METRIC.Frac_NA  METRIC.F1_Score  TRUTH.TOTAL.TiTv_ratio  QUERY.TOTAL.TiTv_ratio  TRUTH.TOTAL.het_hom_ratio  QUERY.TOTAL.het_hom_ratio
-INDEL    ALL          413       246       167          751       289        215      2     98       0.595642          0.460821        0.286285         0.519629                     NaN                     NaN                   2.428571                   2.465116
-INDEL   PASS          413       246       167          751       289        215      2     98       0.595642          0.460821        0.286285         0.519629                     NaN                     NaN                   2.428571                   2.465116
-  SNP    ALL        15883     15479       404        23597      5277       2841     46     44       0.974564          0.745760        0.120397         0.844947                3.017198                 2.85705                   5.560099                   2.114633
-  SNP   PASS        15883     15479       404        23597      5277       2841     46     44       0.974564          0.745760        0.120397         0.844947                3.017198                 2.85705                   5.560099                   2.114633
-******* DONE Vérifier qu'il ne reste plus de filtre autre que PASS
-CLOSED: [2023-07-08 Sat 15:19]
-#+begin_src
-$ zgrep -c 'PASS' HG001_GRCh38_1_22_v4_lifted_merged.vcf.gz
-3730505
-$ zgrep -c '^chr' HG001_GRCh38_1_22_v4_lifted_merged.vcf.gz
-3730506
-#+end_src
-****** TODO 1/4 SNP manquant ?
-SCHEDULED: <2023-07-08 Sat>
-******* DONE Regarder avec Julia si ce sont vraiment des FP: 61/5277 qui ne le sont pas
-CLOSED: [2023-07-09 Sun 12:09]
-******* HOLD Examiner les FP
-******* HOLD Tester un FP
-  2 │ chr1        608765  A           G           ./.:.:.:.:NOCALL:nocall:.  1/1:FP:.:ti:SNP:homalt:188
-  liftDown UCSC: rien en GIAB : vrai FP
-
- 3 │ chr1        762943  A           G           ./.:.:.:.:NOCALL:nocall:.  1/1:FP:.:ti:SNP:homalt:287
- 4 │ chr1        762945  A           T           ./.:.:.:.:NOCALL:nocall:.  1/1:FP:.:tv:SNP:homalt:287
- Remaniements complexes ? Pas dans le gène en HG38
-******* DONE La plupart des FP (4705/5566) sont homozygotes: erreur de référence ?
-CLOSED: [2023-07-12 Wed 21:10] SCHEDULED: <2023-07-09 Sun>
-Sur les 2 premiers variants, ils montrent en fait la différence entre T2T et GRCh38
-Erreur à l'alignement ?
-******** KILL relancer l'alignement
-CLOSED: [2023-07-09 Sun 17:36]
-******** DONE vérifier reads identiques hg38 et T2T: oui
-CLOSED: [2023-07-09 Sun 16:36]
-T2T CHR1608765
-38   	chr1:1180168-1180168 (
-
-SRR14724513.24448214
-SRR14724513.24448214
-******* TODO Enlever les FP qui correspondent à un changement dans le génome
-SCHEDULED: <2023-07-09 Sun>
-******** Condition:
-- pas de variation à la position en GRCh38
-- variantion homozygote
-- la varation en T2T correspond au changement de pair de base GRC38 -> T2T
-  pour les SNP:
-  alt_T2T[i] = DNA_GRC38[j]
-  avec i la position en T2T et j la position en GRCh38
-
-  Note: définir un ID n'est pas correct car les variants peuvent être modifié par happy !
-******** Idée
- - Pour chaque FP, c'est un "faux" FP si
-     - REF en hg38 == ALT en T2T
-     - et REF en hg38 != REF en T2T
-     - et variant homozygote
-
-Comment obtenir les séquences de réferences ?
-1. liftover
-2. blat sur la séquence autour du variant
-3. identifier quelques reads contenant le variant et regarder leur aligneement en hg38
-
-Après discussion avec Alexis: solution 3
-******** Algorithme
-1. Extraire les coordonnées en T2T des faux positifs *homozygote*
-2. Pour chaque faux positif
-   1. lister 10 reads contenant le variant
-   2. pour chacun de ces reads, récupérer la séquence en T2T et GRCh38 via le nom du read dans le bam
-   3. si la séquence en T2T modifiée par le variant est "identique" à celle en GRCh38, alors on ignore ce faux positif
-
-Note: on ignore les reads qui ont changé de chromosome entre les version
-******** DONE Résultat préliminaire
-CLOSED: [2023-07-23 Sun 14:30]
-cf [[file:~/roam/research/bisonex/code/giab/giab-corrected.csv][script julia]]
-3498 faux positifs en moins, soit 0.89 sensibilité
-
-julia> tp=15479
-julia> fp=5277
-julia> tp/(tp+fp)
-0.7457602620928888
-
-julia> tp/(tp+(fp-3498))
-0.8969173716537258
-
-On est toujours en dessous des 97%
-******** TODO Corriger proprement VCF ou résultats Happy
-SCHEDULED: <2023-07-23 Sun>
-******* DONE Vérifier quelques variants sur IGV
-CLOSED: [2023-07-09 Sun 17:36]
-******* KILL Répartition des FP : cluster ?
-CLOSED: [2023-07-09 Sun 17:36]
-******* TODO Méthodologie du pangenome
-***** KILL Mail Yannis
-CLOSED: [2023-07-08 Sat 10:44]
-***** DONE Mail GIAB pour version T2T
-CLOSED: [2023-07-07 Fri 18:37]
 **** DONE NA12878 :na12878:hg38:
 CLOSED: [2023-06-30 Fri 22:30]
 ***** DONE Discussion alexis : Mail
@@ -4475,8 +4424,8 @@ Capture en hg37 également. Serait intéressant mais pas le temps..
 CLOSED: [2023-06-26 Mon 19:02] SCHEDULED: <2023-06-25 Sun>
 Picard liftoverinterval est basé sur UCSCS
 Mais on n'aurait pas la différence pour NA12878 qu'on voit...
-**** TODO HG002 :hg002:hg38:
-SCHEDULED: <2023-07-25 Tue>
+**** DONE HG002 :hg002:hg38:
+CLOSED: [2023-07-30 Sun 14:25] SCHEDULED: <2023-07-25 Tue>
 #+begin_src
     NXF_OPTS=-D"user.name=${USER}" nextflow run workflows/giabFastq.nf -profile standard,helios
     NXF_OPTS=-D"user.name=${USER}" nextflow run main.nf -profile standard,helios -resume --input="/Work/Groups/bisonex/data/giab/GRCh38/HG002_{1,2}.fq.gz --test.id=HG002
@@ -4561,9 +4510,16 @@ Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Se
 | INDEL | PASS   |        2909 |     2477 |      432 |        3229 |      207 |       519 |    52 |    50 |      0.851495 |         0.923616 |       0.160731 |        0.886091 |                        |                        |        1.4964850615114236 |        1.8339222614840989 |
 | SNP   | ALL    |       38406 |    34793 |     3613 |       36935 |      275 |      1868 |    37 |    15 |      0.905926 |         0.992158 |       0.050575 |        0.947083 |     2.6247759222568168 |     2.5752854654538417 |         1.588953331534934 |        1.6192536889897844 |
 | SNP   | PASS   |       38406 |    34793 |     3613 |       36935 |      275 |      1868 |    37 |    15 |      0.905926 |         0.992158 |       0.050575 |        0.947083 |     2.6247759222568168 |     2.5752854654538417 |         1.588953331534934 |        1.6192536889897844 |
-***** TODO Refaire : HiSeq4000 + agilent sureselect + génome "prêt à l'emploi"
-SCHEDULED: <2023-07-23 Sun>
-**** TODO HG003 :hg003:hg38:
+***** DONE Refaire : HiSeq4000 + agilent sureselect + génome "prêt à l'emploi"
+CLOSED: [2023-07-30 Sun 14:24] SCHEDULED: <2023-07-23 Sun>
+| Type  | Filter | TRUTH.TOTAL | TRUTH.TP | TRUTH.FN | QUERY.TOTAL | QUERY.FP | QUERY.UNK | FP.gt | FP.al | METRIC.Recall | METRIC.Precision | METRIC.Frac_NA | METRIC.F1_Score | TRUTH.TOTAL.TiTv_ratio | QUERY.TOTAL.TiTv_ratio | TRUTH.TOTAL.het_hom_ratio | QUERY.TOTAL.het_hom_ratio |
+| INDEL | ALL    |         626 |      536 |       90 |         900 |       23 |       334 |     6 |    14 |       0.85623 |         0.959364 |       0.371111 |        0.904868 |                        |                        |        1.5696202531645569 |         2.406844106463878 |
+| INDEL | PASS   |         626 |      536 |       90 |         900 |       23 |       334 |     6 |    14 |       0.85623 |         0.959364 |       0.371111 |        0.904868 |                        |                        |        1.5696202531645569 |         2.406844106463878 |
+| SNP   | ALL    |       23136 |    22346 |      790 |       26289 |      103 |      3845 |    77 |     4 |      0.965854 |         0.995411 |       0.146259 |         0.98041 |     2.9282199219412863 |     2.7752583237657866 |        1.6348301800775018 |        1.8423330808354075 |
+| SNP   | PASS   |       23136 |    22346 |      790 |       26289 |      103 |      3845 |    77 |     4 |      0.965854 |         0.995411 |       0.146259 |         0.98041 |     2.9282199219412863 |     2.7752583237657866 |        1.6348301800775018 |        1.8423330808354075 |
+
+**** DONE HG003 :hg003:hg38:
+CLOSED: [2023-07-30 Sun 14:26]
 ***** Notes
 #+begin_src sh
 NXF_OPTS=-D"user.name=${USER}" nextflow run main.nf -profile standard,helios  --input /Work/Groups/bisonex/data/giab/GRCh38/HG003_{1,2}.fq.gz -bg
@@ -4585,8 +4541,14 @@ INDEL    ALL         2731      2290       441         3092       208        577 
 INDEL   PASS         2731      2290       441         3092       208        577     62     53       0.838521          0.917296        0.186611         0.876141                     NaN                     NaN                   1.505145                   1.888993
   SNP    ALL        37997     34481      3516        36861       306       2074     33     13       0.907466          0.991204        0.056265         0.947488                2.611269                2.565915                   1.555780                   1.621727
   SNP   PASS        37997     34481      3516        36861       306       2074     33     13       0.907466          0.991204        0.056265         0.947488                2.611269                2.5659
-***** TODO Refaire : HiSeq4000 + agilent sureselect + génome "prêt à l'emploi"
-SCHEDULED: <2023-07-23 Sun>
+***** DONE Refaire : HiSeq4000 + agilent sureselect + génome "prêt à l'emploi"
+CLOSED: [2023-07-30 Sun 14:25] SCHEDULED: <2023-07-23 Sun>
+| Type  | Filter | TRUTH.TOTAL | TRUTH.TP | TRUTH.FN | QUERY.TOTAL | QUERY.FP | QUERY.UNK | FP.gt | FP.al | METRIC.Recall | METRIC.Precision | METRIC.Frac_NA | METRIC.F1_Score | TRUTH.TOTAL.TiTv_ratio | QUERY.TOTAL.TiTv_ratio | TRUTH.TOTAL.het_hom_ratio | QUERY.TOTAL.het_hom_ratio |
+| INDEL | ALL    |         644 |      538 |      106 |         914 |       32 |       337 |     7 |    19 |      0.835404 |         0.944541 |       0.368709 |        0.886626 |                        |                        |        1.7444933920704846 |        2.3138686131386863 |
+| INDEL | PASS   |         644 |      538 |      106 |         914 |       32 |       337 |     7 |    19 |      0.835404 |         0.944541 |       0.368709 |        0.886626 |                        |                        |        1.7444933920704846 |        2.3138686131386863 |
+| SNP   | ALL    |       23126 |    22271 |      855 |       26405 |      135 |      4002 |    90 |    20 |      0.963029 |         0.993974 |       0.151562 |        0.978257 |      2.949462182004439 |     2.7766657134686876 |        1.6080333972695475 |        1.8465106245280984 |
+| SNP   | PASS   |       23126 |    22271 |      855 |       26405 |      135 |      4002 |    90 |    20 |      0.963029 |         0.993974 |       0.151562 |        0.978257 |      2.949462182004439 |     2.7766657134686876 |        1.6080333972695475 |        1.8465106245280984 |
+
 **** TODO HG004 :hg38:hg004:
 #+begin_src sh
 NXF_OPTS=-D"user.name=${USER}" nextflow run main.nf -profile standard,helios  --input /Work/Groups/bisonex/data/giab/GRCh38/HG004_{1,2}.fq.gz -bg
@@ -4605,10 +4567,15 @@ INDEL    ALL         2787      2388       399         3183       195        580 
 INDEL   PASS         2787      2388       399         3183       195        580     53     38       0.856835          0.925086        0.182218         0.889654                     NaN                     NaN                   1.507834                   1.848649
   SNP    ALL        38185     34560      3625        36921       254       2107     46      7       0.905067          0.992704        0.057068         0.946862                2.589175                2.553546                   1.632595                   1.653534
   SNP   PASS        38185     34560      3625        36921       254       2107     46      7       0.905067          0.992704        0.057068         0.946862                2.589175                2.553546                   1.632595                   1.653534
-***** TODO Refaire : HiSeq4000 + agilent sureselect + génome "prêt à l'emploi"
-SCHEDULED: <2023-07-23 Sun>
+***** DONE Refaire : HiSeq4000 + agilent sureselect + génome "prêt à l'emploi"
+CLOSED: [2023-07-30 Sun 14:39] SCHEDULED: <2023-07-23 Sun>
+| Type  | Filter | TRUTH.TOTAL | TRUTH.TP | TRUTH.FN | QUERY.TOTAL | QUERY.FP | QUERY.UNK | FP.gt | FP.al | METRIC.Recall | METRIC.Precision | METRIC.Frac_NA | METRIC.F1_Score | TRUTH.TOTAL.TiTv_ratio | QUERY.TOTAL.TiTv_ratio | TRUTH.TOTAL.het_hom_ratio | QUERY.TOTAL.het_hom_ratio |
+| INDEL | ALL    |         588 |      511 |       77 |         873 |       15 |       332 |     7 |     8 |      0.869048 |         0.972274 |       0.380298 |        0.917767 |                        |                        |        1.6111111111111112 |                 2.3984375 |
+| INDEL | PASS   |         588 |      511 |       77 |         873 |       15 |       332 |     7 |     8 |      0.869048 |         0.972274 |       0.380298 |        0.917767 |                        |                        |        1.6111111111111112 |                 2.3984375 |
+| SNP   | ALL    |       23041 |    22225 |      816 |       26302 |      114 |      3972 |    87 |     5 |      0.964585 |         0.994895 |       0.151015 |        0.979505 |       2.91407709288504 |     2.7368645271229766 |        1.6883829538820783 |        1.8632748665431964 |
+| SNP   | PASS   |       23041 |    22225 |      816 |       26302 |      114 |      3972 |    87 |     5 |      0.964585 |         0.994895 |       0.151015 |        0.979505 |       2.91407709288504 |     2.7368645271229766 |        1.6883829538820783 |        1.8632748665431964 |
+
 **** STRT HG001 :hg001:T2T:
-SCHEDULED: <2023-07-03 Mon>
 Avec liftover : 10x moins de variants...
 
 Type,Filter,TRUTH.TOTAL,TRUTH.TP,TRUTH.FN,QUERY.TOTAL,QUERY.FP,QUERY.UNK,FP.gt,FP.al,METRIC.Recall,METRIC.Precision,METRIC.Frac_NA,METRIC.F1_Score,TRUTH.TOTAL.TiTv_ratio,QUERY.TOTAL.TiTv_ratio,TRUTH.TOTAL.het_hom_ratio,QUERY.TOTAL.het_hom_ratio
@@ -4617,13 +4584,200 @@ INDEL,PASS,413,246,167,751,289,215,2,93,0.595642,0.460821,0.286285,0.519629,,,2.
 SNP,ALL,11236,10985,251,23597,9771,2841,26,58,0.977661,0.529245,0.120397,0.686734,3.1146100329549617,2.857049501715406,3.640644361833953,2.1146328578975173
 SNP,PASS,11236,10985,251,23597,9771,2841,26,58,0.977661,0.529245,0.120397,0.686734,3.1146100329549617,2.857049501715406,3.640644361833953,2.1146328578975173
 
+***** TODO Comprendre mauvais résultat
+****** DONE 2x moins de variants, beaucoup trop de FP : erreur de FILTER
+CLOSED: [2023-07-08 Sat 11:17] SCHEDULED: <2023-07-07 Fri>
+******* DONE [#A] Certains FP sont des vrais FP: erreur de flag et non d'happy
+CLOSED: [2023-07-08 Sat 10:43] SCHEDULED: <2023-07-07 Fri>
 
+******** Ex: chr1:408793
+G	C	600.64	.	BS=408793;Regions=CONF,TS_contained	GT:BD:BK:BI:BVT:BLT:QQ	./.:.:.:.:NOCALL:nocall:.	0/1:FP:.:tv:SNP:het:600.64
+CLOSED: [2023-07-07 Fri 20:03]
+********* DONE Vérifier que l'on est bien dans la zone "high confidence" définie dans le bed
+oui:
+chr1	408514	414397	.	500	+
+********* DONE Vérifier que le variant est bien dans le truth et query
+CLOSED: [2023-07-07 Fri 20:14]
+truth
+chr1    408793  .       G       C       50      MismatchedRefAllele     AttemptedAlleles=C*->G;AttemptedLocus=chr1:408793-408793;SwappedAlleles;callable=CS_HiSeqPE300xGATK_callable,CS_10XLRGATK_callable,CS_CCS15kb_20kbGATK4_callable,CS_CGnormal_callable,CS_HiSeqPE300xfreebayes_callable;callsetnames=HiSeqPE300xGATK,CCS15kb_20kbGATK4,CGnormal,HiSeqPE300xfreebayes,CCS15kb_20kbDV,10XLRGATK;callsets=6;datasetnames=HiSeqPE300x,CCS15kb_20kb,CGnormal,10XChromiumLR;datasets=4;datasetsmissingcall=IonExome,SolidSE75bp;filt=CS_CCS15kb_20kbDV_filt,CS_CCS15kb_20kbGATK4_filt;platformnames=Illumina,PacBio,CG,10X;platforms=4       GT:AD:ADALL:DP:GQ       1/0:153,159:141,132:689:99
+
+query
+chr1    408793  .       G       C       600.64  .       AC=1;AF=0.500;AN=2;BaseQRankSum=-1.390;DP=64;ExcessHet=0.0000;FS=0.961;MLEAC=1;MLEAF=0.500;MQ=60.00;MQRankSum=0.000;QD=9.53;ReadPosRankSum=-3.146;SOR=0.906     GT:AD:DP:GQ:PL  0/1:33,30:63:99:608,0,798
+********* DONE Tester happy sur ce variant: non retrouvé
+CLOSED: [2023-07-08 Sat 10:42]
+Il faut au moins 2 variant + les index (sinon "no chromosome in common")
+Donc on augmente la taille de la région
+#+begin_src sh :dir ~/code/bisonex/out
+bcftools view HG001_GRCh38_1_22_v4_lifted_merged.vcf.gz  -o lifted_test.vcf.gz chr1:408793-408900
+bcftools view HG001-SRX11061486_SRR14724513-T2T.vcf.gz -o run_test.vcf.gz chr1:408793-408900
+bcftools index lifted_test.vcf.gz
+bcftools index run_test.vcf.gz
+#+end_src
+
+ #+begin_src sh
+ hap.py lifted_test.vcf.gz run_test.vcf.gz --reference ../data/chm13v2.0.fa -o test
+ #+end_src
+On trouve bien les 2 variants. L'indel est retrouvé mais pas le SNP
+chr1    408793  .       G       C       600.64  .       BS=408793       GT:BD:BK:BI:BVT:BLT:QQ  ./.:.:.:.:NOCALL:nocall:.       0/1:FP:.:tv:SNP:het:600.64
+chr1    408874  .       CGAA    C       1476.6  .       BS=408874       GT:BD:BK:BI:BVT:BLT:QQ  0/1:TP:gm:d1_5:INDEL:het:1476.6 0/1:TP:gm:d1_5:INDEL:het:1476.6
+********* DONE Changer flag : mismatch -> PASS: OUI
+CLOSED: [2023-07-08 Sat 10:42]
+********* DONE Changer haplotype 1/0 -> 0/1 truth: idem
+CLOSED: [2023-07-08 Sat 10:35]
+********* DONE Tester avec vcfeval : idemnt
+CLOSED: [2023-07-08 Sat 10:43]
+******* DONE Comparer hg38 et T2T: 2x moinsr de variants, trop de FP et FN
+CLOSED: [2023-07-07 Fri 18:38]
+T2T
+| Type  | Filter | TRUTH.TOTAL | TRUTH.TP | TRUTH.FN | QUERY.TOTAL | QUERY.FP | QUERY.UNK | FP.gt | FP.al | METRIC.Recall | METRIC.Precision | METRIC.Frac_NA | METRIC.F1_Score | TRUTH.TOTAL.TiTv_ratio | QUERY.TOTAL.TiTv_ratio | TRUTH.TOTAL.het_hom_ratio | QUERY.TOTAL.het_hom_ratio |
+| INDEL | ALL    |         413 |      246 |      167 |         751 |      289 |       215 |     2 |    93 |      0.595642 |         0.460821 |       0.286285 |        0.519629 |                    NaN |                    NaN |                  2.428571 |                  2.465116 |
+| INDEL | PASS   |         413 |      246 |      167 |         751 |      289 |       215 |     2 |    93 |      0.595642 |         0.460821 |       0.286285 |        0.519629 |                    NaN |                    NaN |                  2.428571 |                  2.465116 |
+| SNP   | ALL    |       11236 |    10985 |      251 |       23597 |     9771 |      2841 |    26 |    58 |      0.977661 |         0.529245 |       0.120397 |        0.686734 |                3.11461 |                2.85705 |                  3.640644 |                  2.114633 |
+| SNP   | PASS   |       11236 |    10985 |      251 |       23597 |     9771 |      2841 |    26 |    58 |      0.977661 |         0.529245 |       0.120397 |        0.686734 |                3.11461 |                2.85705 |                  3.640644 |                  2.114633 |
+
+Hg38
+| Type  | Filter | TRUTH.TOTAL | TRUTH.TP | TRUTH.FN | QUERY.TOTAL | QUERY.FP | QUERY.UNK | FP.gt | FP.al | METRIC.Recall | METRIC.Precision | METRIC.Frac_NA | METRIC.F1_Score | TRUTH.TOTAL.TiTv_ratio | QUERY.TOTAL.TiTv_ratio | TRUTH.TOTAL.het_hom_ratio | QUERY.TOTAL.het_hom_ratio |
+| INDEL | ALL    |         549 |      489 |       60 |         899 |       64 |       340 |     8 |    17 |      0.890710 |         0.885510 |       0.378198 |        0.888102 |                    NaN |                    NaN |                  1.860963 |                  2.247273 |
+| INDEL | PASS   |         549 |      489 |       60 |         899 |       64 |       340 |     8 |    17 |      0.890710 |         0.885510 |       0.378198 |        0.888102 |                    NaN |                    NaN |                  1.860963 |                  2.247273 |
+| SNP   | ALL    |       21973 |    21462 |      511 |       26285 |      563 |      4263 |    68 |    16 |      0.976744 |         0.974435 |       0.162184 |        0.975588 |                3.00711 |               2.784686 |                  1.591810 |                  1.816145 |
+| SNP   | PASS   |       21973 |    21462 |      511 |       26285 |      563 |      4263 |    68 |    16 |      0.976744 |         0.974435 |       0.162184 |        0.975588 |                3.00711 |               2.784686 |                  1.591810 |                  1.816145 |
+
+******** Résumé
+T2T
+| Type  | TRUTH.TOTAL | TRUTH.TP | TRUTH.FN | QUERY.TOTAL | QUERY.FP | QUERY.UNK | FP.gt | FP.al | METRIC.Recall | METRIC.Precision |
+| INDEL |         413 |      246 |      167 |         751 |      289 |       215 |     2 |    93 |      0.595642 |         0.460821 |
+| SNP   |       11236 |    10985 |      251 |       23597 |     9771 |      2841 |    26 |    58 |      0.977661 |         0.529245 |
+
+Hg38
+| Type  | TRUTH.TOTAL | TRUTH.TP | TRUTH.FN | QUERY.TOTAL | QUERY.FP | QUERY.UNK | FP.gt | FP.al | METRIC.Recall | METRIC.Precision |
+| INDEL |         549 |      489 |       60 |         899 |       64 |       340 |     8 |    17 |      0.890710 |         0.885510 |
+| SNP   |       21973 |    21462 |      511 |       26285 |      563 |      4263 |    68 |    16 |      0.976744 |         0.974435 |
+****** DONE Interesection des bed: similaire
+CLOSED: [2023-07-04 Tue 23:11]
+HG38
+ #+begin_src sh
+ bedtools intersect -a capture/Agilent_SureSelect_All_Exons_v7_hg38_Regions.bed -b /Work/Groups/bisonex/data/giab/GRCh38/HG001_GRCh38_1_22_v4.2.1_benchmark.bed  | wc -l
+ #+end_src
+ 204280
+
+ T2T
+ #+begin_src sh
+ bedtools intersect -a /Work/Groups/bisonex/data/giab/T2T/Agilent_SureSelect_All_Exons_v7_hg38_Regions_hg38_T2T.bed -b /Work/Groups/bisonex/data/giab/T2T/HG001_GRCh38_1_22_v4.2.1_benchmark_hg38_T2T.bed  | wc -l
+ #+end_src
+ 204021
+****** DONE Vérifier la ligne de commande
+CLOSED: [2023-07-04 Tue 23:38]
+#+begin_src sh
+hap.py \
+    HG001_GRCh38_1_22_v4_lifted_merged.vcf.gz \
+    HG001-SRX11061486_SRR14724513-T2T.vcf.gz \
+     \
+    --reference chm13v2.0.fa \
+    --threads 6 \
+     \
+    -T Agilent_SureSelect_All_Exons_v7_hg38_Regions_hg38_T2T.bed \
+    --false-positives HG001_GRCh38_1_22_v4.2.1_benchmark_hg38_T2T.bed \
+     \
+    -o HG001
+#+end_src
+****** DONE Corriger FILTER : mieux mais toujours trop de négatifs. 3/4 SNP retrouvés
+CLOSED: [2023-07-08 Sat 15:19] SCHEDULED: <2023-07-08 Sat>
+ Type Filter  TRUTH.TOTAL  TRUTH.TP  TRUTH.FN  QUERY.TOTAL  QUERY.FP  QUERY.UNK  FP.gt  FP.al  METRIC.Recall  METRIC.Precision  METRIC.Frac_NA  METRIC.F1_Score  TRUTH.TOTAL.TiTv_ratio  QUERY.TOTAL.TiTv_ratio  TRUTH.TOTAL.het_hom_ratio  QUERY.TOTAL.het_hom_ratio
+INDEL    ALL          413       246       167          751       289        215      2     98       0.595642          0.460821        0.286285         0.519629                     NaN                     NaN                   2.428571                   2.465116
+INDEL   PASS          413       246       167          751       289        215      2     98       0.595642          0.460821        0.286285         0.519629                     NaN                     NaN                   2.428571                   2.465116
+  SNP    ALL        15883     15479       404        23597      5277       2841     46     44       0.974564          0.745760        0.120397         0.844947                3.017198                 2.85705                   5.560099                   2.114633
+  SNP   PASS        15883     15479       404        23597      5277       2841     46     44       0.974564          0.745760        0.120397         0.844947                3.017198                 2.85705                   5.560099                   2.114633
+******* DONE Vérifier qu'il ne reste plus de filtre autre que PASS
+CLOSED: [2023-07-08 Sat 15:19]
+#+begin_src
+$ zgrep -c 'PASS' HG001_GRCh38_1_22_v4_lifted_merged.vcf.gz
+3730505
+$ zgrep -c '^chr' HG001_GRCh38_1_22_v4_lifted_merged.vcf.gz
+3730506
+#+end_src
+****** TODO 1/4 SNP manquant ?
+SCHEDULED: <2023-07-08 Sat>
+******* DONE Regarder avec Julia si ce sont vraiment des FP: 61/5277 qui ne le sont pas
+CLOSED: [2023-07-09 Sun 12:09]
+******* HOLD Examiner les FP
+******* HOLD Tester un FP
+  2 │ chr1        608765  A           G           ./.:.:.:.:NOCALL:nocall:.  1/1:FP:.:ti:SNP:homalt:188
+  liftDown UCSC: rien en GIAB : vrai FP
+
+ 3 │ chr1        762943  A           G           ./.:.:.:.:NOCALL:nocall:.  1/1:FP:.:ti:SNP:homalt:287
+ 4 │ chr1        762945  A           T           ./.:.:.:.:NOCALL:nocall:.  1/1:FP:.:tv:SNP:homalt:287
+ Remaniements complexes ? Pas dans le gène en HG38
+******* DONE La plupart des FP (4705/5566) sont homozygotes: erreur de référence ?
+CLOSED: [2023-07-12 Wed 21:10] SCHEDULED: <2023-07-09 Sun>
+Sur les 2 premiers variants, ils montrent en fait la différence entre T2T et GRCh38
+Erreur à l'alignement ?
+******** KILL relancer l'alignement
+CLOSED: [2023-07-09 Sun 17:36]
+******** DONE vérifier reads identiques hg38 et T2T: oui
+CLOSED: [2023-07-09 Sun 16:36]
+T2T CHR1608765
+38   	chr1:1180168-1180168 (
+
+SRR14724513.24448214
+SRR14724513.24448214
+******* TODO Enlever les FP qui correspondent à un changement dans le génome
+******** Condition:
+- pas de variation à la position en GRCh38
+- variantion homozygote
+- la varation en T2T correspond au changement de pair de base GRC38 -> T2T
+  pour les SNP:
+  alt_T2T[i] = DNA_GRC38[j]
+  avec i la position en T2T et j la position en GRCh38
+
+  Note: définir un ID n'est pas correct car les variants peuvent être modifié par happy !
+******** Idée
+ - Pour chaque FP, c'est un "faux" FP si
+     - REF en hg38 == ALT en T2T
+     - et REF en hg38 != REF en T2T
+     - et variant homozygote
+
+Comment obtenir les séquences de réferences ?
+1. liftover
+2. blat sur la séquence autour du variant
+3. identifier quelques reads contenant le variant et regarder leur aligneement en hg38
+
+Après discussion avec Alexis: solution 3
+******** Algorithme
+1. Extraire les coordonnées en T2T des faux positifs *homozygote*
+2. Pour chaque faux positif
+   1. lister 10 reads contenant le variant
+   2. pour chacun de ces reads, récupérer la séquence en T2T et GRCh38 via le nom du read dans le bam
+   3. si la séquence en T2T modifiée par le variant est "identique" à celle en GRCh38, alors on ignore ce faux positif
+
+Note: on ignore les reads qui ont changé de chromosome entre les version
+******** DONE Résultat préliminaire
+CLOSED: [2023-07-23 Sun 14:30]
+cf [[file:~/roam/research/bisonex/code/giab/giab-corrected.csv][script julia]]
+3498 faux positifs en moins, soit 0.89 sensibilité
+
+julia> tp=15479
+julia> fp=5277
+julia> tp/(tp+fp)
+0.7457602620928888
+
+julia> tp/(tp+(fp-3498))
+0.8969173716537258
+
+On est toujours en dessous des 97%
+******** PROJ Corriger proprement VCF ou résultats Happy
+******* DONE Vérifier quelques variants sur IGV
+CLOSED: [2023-07-09 Sun 17:36]
+******* KILL Répartition des FP : cluster ?
+CLOSED: [2023-07-09 Sun 17:36]
+****** TODO Méthodologie du pangenome
+SCHEDULED: <2023-07-30 Sun>
+***** KILL Mail Yannis
+CLOSED: [2023-07-08 Sat 10:44]
+***** DONE Mail GIAB pour version T2T
+CLOSED: [2023-07-07 Fri 18:37]
 **** TODO HG002 :hg002:T2T:
 **** TODO HG003 :hg003:T2T:
 **** TODO HG004 :hg004:T2T:
-**** TODO Résumer résultats pour Paul + article :resultats:hg38:
-SCHEDULED: <2023-07-29 Sat>
-Refaire résultats
 **** TODO Plot : ashkenazim trio :hg38:
 SCHEDULED: <2023-07-29 Sat>
 /Entered on/ [2023-04-16 Sun 17:29]
@@ -4635,16 +4789,18 @@ https://emea.illumina.com/platinumgenomes.html
 Discussion avec Paul : sous-traitant ne nous donnera pas les données, il faut commander l'ADN
 **** DONE ADN commandé
 CLOSED: [2023-06-30 Fri 22:29]
-**** TODO Sauvegarder les données brutes
-SCHEDULED: <2023-07-19 Wed>
+**** DONE Sauvegarder les données brutes
+CLOSED: [2023-07-30 Sun 14:22] SCHEDULED: <2023-07-19 Wed>
 K, scality, S
-**** TODO Récupérer le fichier de capture
-SCHEDULED: <2023-07-23 Sun>
+**** KILL Récupérer le fichier de capture
+CLOSED: [2023-07-30 Sun 14:25] SCHEDULED: <2023-07-23 Sun>
 Par défaut, on utilisera https://www.twistbioscience.com/products/ngs/alliance-panels#tab-3
 ANnonce récente pour nouveau panel Twist : https://www.centogene.com/news-events/news/newsdetails/twist-bioscience-and-centogene-launch-three-panels-to-advance-rare-disease-and-hereditary-cancer-research-and-support-diagnostics
 Masi pas de fichier BED
-***** TODO Mail centogène
-DEADLINE: <2023-07-23 Sun>
+***** DONE Mail centogène
+CLOSED: [2023-07-30 Sun 14:22] DEADLINE: <2023-07-23 Sun>
+**** TODO Vérifier si le panel Twist Alliance VCGS Exome suffit
+SCHEDULED: <2023-07-30 Sun>
 **** STRT Comparer à GIAB
 SCHEDULED: <2023-07-18 Tue>
 #+begin_src sh
@@ -6534,9 +6690,7 @@ CTTTTGCTTGTCCCCAGGACGCACCTCAGGGTGGTGAAGCAAAAAAACCACGGCCCAGGAGAGGGTGGGTGCTGTGGTCT
 FFFFFFFFFFFFFFFFFFFFFFF:FFF:FFFFFFFFFFFFF,FFFFFFFFFFFF:F:FFFF:FFFFF,,FFF:FFFFFFFFFF,FFFFFFF,FFFFFFFFFFF,FFFFFFFFF:FFFF,F:FFFFF:FFFFFFFFF:FFFF,FFFFFFFFF
 ******* DONE Supprimer NW_ et NT_
 ***** TODO Phase 2 : chr22, vaf variable :T2T:
-SCHEDULED: <2023-08-02 Wed>
-****** TODO Phase 3 : tous SNV, vaf variable :T2T:
-SCHEDULED: <2023-07-27 Thu>
+***** TODO Phase 3 : tous SNV, vaf variable :T2T:
 ***** TODO Test Indel
 **** Divers
 ***** DONE Vérifier nombre de reads fastq - bam
