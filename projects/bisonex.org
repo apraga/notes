@@ -406,8 +406,15 @@ CLOSED: [2023-07-02 Sun 11:20]
 **** KILL Version de kent déjà packagée : 404
 CLOSED: [2023-03-27 Mon 16:43]
 Compile mais les tests de passent pas
-**** TODO Modifier selon PR https://github.com/NixOS/nixpkgs/pull/186462
-SCHEDULED: <2023-07-30 Sun>
+**** DONE Modifier selon PR https://github.com/NixOS/nixpkgs/pull/186462
+CLOSED: [2023-07-30 Sun 22:01] SCHEDULED: <2023-07-30 Sun 20:00>
+:LOGBOOK:
+CLOCK: [2023-07-30 Sun 19:13]--[2023-07-30 Sun 20:50] =>  1:37
+:END:
+Modification nécessaire pour kent :
+- plus de patch
+- suppression d'une boucle dans postPatch
+On supprime aussi NIX_BUILD_TOP
 *** DONE [[https://github.com/NixOS/nixpkgs/pull/186459][BioDBHTS]]
 CLOSED: [2023-05-06 Sat 08:49] SCHEDULED: <2023-04-15 Sat>
 /Entered on/ [2022-08-10 Wed 14:28]
@@ -423,7 +430,7 @@ Impossible de faire marcher les tests Car il ne trouve pas le module Bio::Tools:
 
 ** WAIT [[https://github.com/NixOS/nixpkgs/pull/230394][rtg-tools]] :vcfeval:
 Soumis
-** PROJ Spip
+** PROJ Package Spip
 ** TODO Happy :happy:
 *** PROJ PR python 3 upstream
 *** PROJ nixpkgs en l'état
@@ -1371,8 +1378,10 @@ NXF_OPTS=-D"user.name=${USER}" nextflow run main.nf -profile standard,helios  --
 SCHEDULED: <2023-06-14 Wed>
 *** DONE Haplotypecaller
 CLOSED: [2023-06-26 Mon 19:42] SCHEDULED: <2023-06-15 Thu>
-*** TODO Filtres
-SCHEDULED: <2023-07-27 Thu>
+*** TODO Faire fonctionner les filtres avec vep
+SCHEDULED: <2023-07-30 Sun 17:00>
+*** PROJ Générer la base de donnée spip
+*** PROJ Porter Spip
 *** Liftover pipelines
 :PROPERTIES:
 :ID:       d2280207-3f65-4a31-a291-41fa9a9658c2
@@ -4696,7 +4705,6 @@ $ zgrep -c '^chr' HG001_GRCh38_1_22_v4_lifted_merged.vcf.gz
 3730506
 #+end_src
 ****** TODO 1/4 SNP manquant ?
-SCHEDULED: <2023-07-08 Sat>
 ******* DONE Regarder avec Julia si ce sont vraiment des FP: 61/5277 qui ne le sont pas
 CLOSED: [2023-07-09 Sun 12:09]
 ******* HOLD Examiner les FP
@@ -4778,8 +4786,12 @@ CLOSED: [2023-07-07 Fri 18:37]
 **** TODO HG002 :hg002:T2T:
 **** TODO HG003 :hg003:T2T:
 **** TODO HG004 :hg004:T2T:
-**** TODO Plot : ashkenazim trio :hg38:
-SCHEDULED: <2023-07-29 Sat>
+**** DONE Plot : ashkenazim trio :hg38:
+CLOSED: [2023-07-30 Sun 16:49] SCHEDULED: <2023-07-30 Sun 15:00>
+:LOGBOOK:
+CLOCK: [2023-07-30 Sun 16:06]--[2023-07-30 Sun 16:35] =>  0:29
+CLOCK: [2023-07-30 Sun 15:39]--[2023-07-30 Sun 15:40] =>  0:01
+:END:
 /Entered on/ [2023-04-16 Sun 17:29]
 Refaire résultats
 *** KILL Platinum genome
@@ -4801,8 +4813,7 @@ Masi pas de fichier BED
 CLOSED: [2023-07-30 Sun 14:22] DEADLINE: <2023-07-23 Sun>
 **** TODO Vérifier si le panel Twist Alliance VCGS Exome suffit
 SCHEDULED: <2023-07-30 Sun>
-**** STRT Comparer à GIAB
-SCHEDULED: <2023-07-18 Tue>
+**** PROJ Comparer à GIAB
 #+begin_src sh
 nextflow run main.nf -profile standard,helios --input="/Work/Groups/bisonex/centogene/2300346867_63118093_NA12878/63118093_S260_R{1,2}_001.fastq.gz"  --id=2300346867_63118093_NA12878-GRCh38 --genome=GRCh38 -bg
 #+end_src
