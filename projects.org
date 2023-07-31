@@ -612,8 +612,8 @@ SCHEDULED: <2023-08-29 Tue>
 SCHEDULED: <2023-10-17 Wed>
 ** TODO Vendre machine à laver
 SCHEDULED: <2023-10-17 Wed>
-** TODO Photo à Éric pour lit
-SCHEDULED: <2023-07-30 Sun>
+** DONE Photo à Éric pour lit
+CLOSED: [2023-07-30 Sun 19:07] SCHEDULED: <2023-07-30 Sun>
 ** DONE SMS annonce déménagement
 CLOSED: [2023-07-29 Sat 10:57] SCHEDULED: <2023-07-29 Sat>
 /Entered on/ [2023-07-29 Sat 10:25]

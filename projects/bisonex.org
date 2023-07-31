@@ -1372,6 +1372,11 @@ Toutes les ressourcs sont décrites ici
 https://github.com/marbl/CHM13
 Détails sur le pipeline
 https://genome.ucsc.edu/cgi-bin/hgTrackUi?db=hub_3267197_GCA_009914755.4&c=CP068277.2&g=hub_3267197_hgLiftOver
+*** Liftover pipelines
+:PROPERTIES:
+:ID:       d2280207-3f65-4a31-a291-41fa9a9658c2
+:END:
+Contient les chain files
 *** DONE Alignement
 CLOSED: [2023-06-26 Mon 19:42]
 NXF_OPTS=-D"user.name=${USER}" nextflow run main.nf -profile standard,helios  --input="/Work/Groups/bisonex/data/giab/*_R{1,2}_001.fastq.gz" --id=NA12878-T2T -bg
@@ -1379,14 +1384,9 @@ SCHEDULED: <2023-06-14 Wed>
 *** DONE Haplotypecaller
 CLOSED: [2023-06-26 Mon 19:42] SCHEDULED: <2023-06-15 Thu>
 *** TODO Faire fonctionner les filtres avec vep
-SCHEDULED: <2023-07-30 Sun 17:00>
+SCHEDULED: <2023-08-02 Wed>
 *** PROJ Générer la base de donnée spip
 *** PROJ Porter Spip
-*** Liftover pipelines
-:PROPERTIES:
-:ID:       d2280207-3f65-4a31-a291-41fa9a9658c2
-:END:
-Contient les chain files
 ** PROJ Indicateurs qualité
 *** Idée
 Raredisease:
@@ -4707,8 +4707,10 @@ $ zgrep -c '^chr' HG001_GRCh38_1_22_v4_lifted_merged.vcf.gz
 ****** TODO 1/4 SNP manquant ?
 ******* DONE Regarder avec Julia si ce sont vraiment des FP: 61/5277 qui ne le sont pas
 CLOSED: [2023-07-09 Sun 12:09]
-******* HOLD Examiner les FP
-******* HOLD Tester un FP
+******* DONE Examiner les FP
+CLOSED: [2023-07-30 Sun 22:05]
+******* DONE Tester un FP
+CLOSED: [2023-07-30 Sun 22:05]
   2 │ chr1        608765  A           G           ./.:.:.:.:NOCALL:nocall:.  1/1:FP:.:ti:SNP:homalt:188
   liftDown UCSC: rien en GIAB : vrai FP
 
@@ -4777,8 +4779,11 @@ On est toujours en dessous des 97%
 CLOSED: [2023-07-09 Sun 17:36]
 ******* KILL Répartition des FP : cluster ?
 CLOSED: [2023-07-09 Sun 17:36]
-****** TODO Méthodologie du pangenome
-SCHEDULED: <2023-07-30 Sun>
+******* TODO Examiner les FP restant après correction selon séquence de référence
+SCHEDULED: <2023-07-31 Mon>
+******* PROJ Examiner les variants supprimé
+****** KILL Méthodologie du pangenome
+CLOSED: [2023-07-31 Mon 22:29] SCHEDULED: <2023-07-30 Sun>
 ***** KILL Mail Yannis
 CLOSED: [2023-07-08 Sat 10:44]
 ***** DONE Mail GIAB pour version T2T
@@ -4806,13 +4811,44 @@ CLOSED: [2023-07-30 Sun 14:22] SCHEDULED: <2023-07-19 Wed>
 K, scality, S
 **** KILL Récupérer le fichier de capture
 CLOSED: [2023-07-30 Sun 14:25] SCHEDULED: <2023-07-23 Sun>
+Candidats donnés dans publication https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8354858/
+#+begin_quote
+In short, the Nextera Rapid Capture Exome Kit (Illumina, San Diego, CA), the SureSelect Human All Exon kit (Agilent, Santa Clara, CA) or the Twist Human Core Exome was used for enrichment, and a Nextseq500, HiSeq4000, or Novoseq 6000 (Illumina) instrument was used for the actual sequencing, with the average coverage targeted to at least 100× or at least 98% of the target DNA covered 20×.
+#+end_quote
 Par défaut, on utilisera https://www.twistbioscience.com/products/ngs/alliance-panels#tab-3
 ANnonce récente pour nouveau panel Twist : https://www.centogene.com/news-events/news/newsdetails/twist-bioscience-and-centogene-launch-three-panels-to-advance-rare-disease-and-hereditary-cancer-research-and-support-diagnostics
 Masi pas de fichier BED
 ***** DONE Mail centogène
 CLOSED: [2023-07-30 Sun 14:22] DEADLINE: <2023-07-23 Sun>
-**** TODO Vérifier si le panel Twist Alliance VCGS Exome suffit
-SCHEDULED: <2023-07-30 Sun>
+**** TODO Tester Nextera Rapid Capture Exome v1.2 (hg19)
+SCHEDULED: <2023-08-02 Wed>
+https://support.illumina.com/downloads/nextera-rapid-capture-exome-v1-2-product-files.html
+**** DONE Tester Agilen SureSelect All Exon V8 (hg38)
+CLOSED: [2023-07-31 Mon 23:09] SCHEDULED: <2023-07-31 Mon>
+https://earray.chem.agilent.com/suredesign/index.htm
+"Find design"
+"Agilent catalog"
+Fichiers:
+- Regions.bed: Targeted exon intervals, curated and targeted by Agilent Technologies
+- MergedProbes.bed: Merged probes for targeted enrichment of exons described in Regions.bed
+- Covered.bed: Merged probes and sequences with 95% homology or above
+- Padded.bed: Merged probes and sequences with 95% homology or above extended 50 bp at each side
+- AllTracks.bed: Targeted regions and covered tracks
+
+ #+begin_src sh
+nextflow run workflows/compareVCF.nf -profile standard,helios --query=out/2300346867_63118093_NA12878-GRCh38/callVariant/haplotypecaller/2300346867_63118093_NA12878-GRCh38.vcf.gz --outdir=out/2300346867_63118093_NA12878-GRCh38/happy/ --compare=happy -lib lib --capture=capture/Agilent_SureSelect_All_Exons_v8_hg38_Regions.bed  --id=HG001 --genome=GRCh38
+ #+end_src
+
+| Type  | Filter | TRUTH.TOTAL | TRUTH.TP | TRUTH.FN | QUERY.TOTAL | QUERY.FP | QUERY.UNK | FP.gt | FP.al | METRIC.Recall | METRIC.Precision | METRIC.Frac_NA | METRIC.F1_Score | TRUTH.TOTAL.TiTv_ratio | QUERY.TOTAL.TiTv_ratio | TRUTH.TOTAL.het_hom_ratio | QUERY.TOTAL.het_hom_ratio |
+| INDEL | ALL    |         423 |      395 |       28 |         915 |      108 |       405 |     4 |    13 |      0.933806 |         0.788235 |       0.442623 |        0.854868 |                        |                        |        1.7012987012987013 |        2.7916666666666665 |
+| INDEL | PASS   |         423 |      395 |       28 |         915 |      108 |       405 |     4 |    13 |      0.933806 |         0.788235 |       0.442623 |        0.854868 |                        |                        |        1.7012987012987013 |        2.7916666666666665 |
+| SNP   | ALL    |       20984 |    20600 |      384 |       26080 |      780 |      4703 |    62 |    10 |        0.9817 |         0.963512 |        0.18033 |        0.972521 |     3.0499710592321048 |     2.7596541786743516 |          1.58256372367935 |        1.8978207694018234 |
+| SNP   | PASS   |       20984 |    20600 |      384 |       26080 |      780 |      4703 |    62 |    10 |        0.9817 |         0.963512 |        0.18033 |        0.972521 |     3.0499710592321048 |     2.7596541786743516 |          1.58256372367935 |        1.8978207694018234 |
+
+**** TODO Test Twist Human core Exome
+SCHEDULED: <202 3-08-02 Wed>
+**** KILL Tester si le panel Twist Alliance VCGS Exome suffit
+CLOSED: [2023-07-31 Mon 22:31] SCHEDULED: <2023-07-30 Sun>
 **** PROJ Comparer à GIAB
 #+begin_src sh
 nextflow run main.nf -profile standard,helios --input="/Work/Groups/bisonex/centogene/2300346867_63118093_NA12878/63118093_S260_R{1,2}_001.fastq.gz"  --id=2300346867_63118093_NA12878-GRCh38 --genome=GRCh38 -bg
@@ -6700,8 +6736,8 @@ CTTTTGCTTGTCCCCAGGACGCACCTCAGGGTGGTGAAGCAAAAAAACCACGGCCCAGGAGAGGGTGGGTGCTGTGGTCT
 +
 FFFFFFFFFFFFFFFFFFFFFFF:FFF:FFFFFFFFFFFFF,FFFFFFFFFFFF:F:FFFF:FFFFF,,FFF:FFFFFFFFFF,FFFFFFF,FFFFFFFFFFF,FFFFFFFFF:FFFF,F:FFFFF:FFFFFFFFF:FFFF,FFFFFFFFF
 ******* DONE Supprimer NW_ et NT_
-***** TODO Phase 2 : chr22, vaf variable :T2T:
-***** TODO Phase 3 : tous SNV, vaf variable :T2T:
+****** PROJ Phase 2 : chr22, vaf variable :T2T:
+****** TODO Phase 3 : tous SNV, vaf variable :T2T:
 ***** TODO Test Indel
 **** Divers
 ***** DONE Vérifier nombre de reads fastq - bam
