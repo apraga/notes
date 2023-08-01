@@ -73,6 +73,32 @@ Résistance fréquent à l’hôpital
 - Sensbilité nature à la plupart des antibiotique anti-staph
 - Résistance naturelle : fosfomycine, acide fusidique, novobiocine
 - Résistance acquise fréquente : péni G, érythromycine
+** Campylobacter
+- Répartition mondiale
+- Une des cause les plus fréquentes des diarrhées infectieuses bactériennes communautaires
+- Microbiote digestive de nombreux animaux : /jejuni/ = volaille
+- transmisison animale -> homme par *alimentation* : surtsout *jejuni*, *coli*, *fetus*
+*** Pouvoir pathogène
+- douleur abdo
+- *gastro-entérique aigue fébrile* : (diarrhées aqueuse voire mucosanglange, fièvre , vomissement)
+- bactériémée
+- syndrome de l'intestin irritable
+- syndrome de guillan-barré
+*** Diagnostic bactério
+- selles (copro): PCR, immunochromatographique
+- sang (hémoc)
+  - examen direct : en forme de S, non sporulé, en "vol de moucheron"
+- culture : sélectif en microaérobie
+- *oxydase+*, catalase soudvent +
+- MALDI-TOF
+*** ATBgramme
+- résistance naturelle : vancomycine, pénicilline G, M, céphalosporine, triméthoprime, streopgramine B
+- acquise : érythor, tétracycline, quilonone, amox
+*** Traitement
+- déshydratation
+- si fièvre > 38°, sang dans les selles, enfants, persnnes agée, femmes enceintes: *azithromycine*
+- systémique : FQ ou beta-lactamine + aminoside sur documentation
+*** Prévention: hygiène (eau, alimentation)
 ** Proteus mirabilis
 ** TODO Pseudomonas aeruginosa
 Bacille Gram négatif, très mobile
