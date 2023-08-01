@@ -1,0 +1,37 @@
+:PROPERTIES:
+:ID:       2674cd2f-159a-4df6-849d-3beb9b25f644
+:END:
+#+title: Proton mail
+#+filetags: personal
+* Proton mail bridge
+#+begin_src
+proton-mail-bridge -n
+#+end_src
+
+* Mbsync
+#+begin_quote
+IMAPAccount proton
+Host 127.0.0.1
+Port 1143
+User USER
+Pass PASSWD
+SSLType STARTTLS
+SSLVersions TLSv1.2
+CertificateFile ~/.config/protonmail/bridge/cert.pem
+
+IMAPStore proton-remote
+Account proton
+
+MaildirStore proton-local
+Subfolders Verbatim
+# The trailing "/" is important
+Path ~/mail/proton/
+
+Channel proton
+Far :proton-remote:
+Near :proton-local:
+Patterns *
+Create Both
+Expunge Both
+SyncState *
+#+end_quote
