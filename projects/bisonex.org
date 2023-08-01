@@ -4779,7 +4779,7 @@ On est toujours en dessous des 97%
 CLOSED: [2023-07-09 Sun 17:36]
 ******* KILL Répartition des FP : cluster ?
 CLOSED: [2023-07-09 Sun 17:36]
-******* TODO Examiner les FP restant après correction selon séquence de référence
+******* PROJ Examiner les FP restant après correction selon séquence de référence
 SCHEDULED: <2023-07-31 Mon>
 ******* PROJ Examiner les variants supprimé
 ****** KILL Méthodologie du pangenome
@@ -4820,10 +4820,10 @@ ANnonce récente pour nouveau panel Twist : https://www.centogene.com/news-event
 Masi pas de fichier BED
 ***** DONE Mail centogène
 CLOSED: [2023-07-30 Sun 14:22] DEADLINE: <2023-07-23 Sun>
-**** TODO Tester Nextera Rapid Capture Exome v1.2 (hg19)
+**** TODO Tester Nextera Rapid Capture Exome v1.2 (hg19) :giab:
 SCHEDULED: <2023-08-02 Wed>
 https://support.illumina.com/downloads/nextera-rapid-capture-exome-v1-2-product-files.html
-**** DONE Tester Agilen SureSelect All Exon V8 (hg38)
+**** DONE Tester Agilen SureSelect All Exon V8 (hg38) :giab:
 CLOSED: [2023-07-31 Mon 23:09] SCHEDULED: <2023-07-31 Mon>
 https://earray.chem.agilent.com/suredesign/index.htm
 "Find design"
@@ -4845,14 +4845,23 @@ nextflow run workflows/compareVCF.nf -profile standard,helios --query=out/230034
 | SNP   | ALL    |       20984 |    20600 |      384 |       26080 |      780 |      4703 |    62 |    10 |        0.9817 |         0.963512 |        0.18033 |        0.972521 |     3.0499710592321048 |     2.7596541786743516 |          1.58256372367935 |        1.8978207694018234 |
 | SNP   | PASS   |       20984 |    20600 |      384 |       26080 |      780 |      4703 |    62 |    10 |        0.9817 |         0.963512 |        0.18033 |        0.972521 |     3.0499710592321048 |     2.7596541786743516 |          1.58256372367935 |        1.8978207694018234 |
 
-**** TODO Test Twist Human core Exome
-SCHEDULED: <202 3-08-02 Wed>
+**** DONE Test Twist Human core Exome (hg38):giab:
+CLOSED: [2023-08-01 Tue 23:16] SCHEDULED: <202 3-08-02 Wed>
+https://www.twistbioscience.com/resources/data-files/ngs-human-core-exome-panel-bed-file
+#+begin_src
+nextflow run workflows/compareVCF.nf -profile standard,helios --query=out/2300346867_63118093_NA12878-GRCh38/callVariant/haplotypecaller/2300346867_63118093_NA12878-GRCh38.vcf.gz --outdir=out/2300346867_63118093_NA12878-GRCh38/happy-twist-exome-core/ --compare=happy -lib lib --capture=capture/Twist_Exome_Core_Covered_Targets_hg38.bed  --id=HG001 --genome=GRCh38 -bg
+#+end_src
+
+| Type  | Filter | TRUTH.TOTAL | TRUTH.TP | TRUTH.FN | QUERY.TOTAL | QUERY.FP | QUERY.UNK | FP.gt | FP.al | METRIC.Recall | METRIC.Precision | METRIC.Frac_NA | METRIC.F1_Score | TRUTH.TOTAL.TiTv_ratio | QUERY.TOTAL.TiTv_ratio | TRUTH.TOTAL.het_hom_ratio | QUERY.TOTAL.het_hom_ratio |
+| INDEL | ALL    |         328 |      313 |       15 |         722 |       95 |       309 |     4 |    13 |      0.954268 |         0.769976 |       0.427978 |        0.852273 |                        |                        |        1.8584070796460177 |        2.8967391304347827 |
+| INDEL | PASS   |         328 |      313 |       15 |         722 |       95 |       309 |     4 |    13 |      0.954268 |         0.769976 |       0.427978 |        0.852273 |                        |                        |        1.8584070796460177 |        2.8967391304347827 |
+| SNP   | ALL    |       19198 |    18962 |      236 |       23381 |      684 |      3738 |    48 |    10 |      0.987707 |         0.965178 |       0.159873 |        0.976313 |     3.1034188034188035 |      2.859264147830391 |        1.5669565217391304 |        1.8578767123287672 |
+| SNP   | PASS   |       19198 |    18962 |      236 |       23381 |      684 |      3738 |    48 |    10 |      0.987707 |         0.965178 |       0.159873 |        0.976313 |     3.1034188034188035 |      2.859264147830391 |        1.5669565217391304 |        1.8578767123287672 |
+
 **** KILL Tester si le panel Twist Alliance VCGS Exome suffit
 CLOSED: [2023-07-31 Mon 22:31] SCHEDULED: <2023-07-30 Sun>
-**** PROJ Comparer à GIAB
-#+begin_src sh
-nextflow run main.nf -profile standard,helios --input="/Work/Groups/bisonex/centogene/2300346867_63118093_NA12878/63118093_S260_R{1,2}_001.fastq.gz"  --id=2300346867_63118093_NA12878-GRCh38 --genome=GRCh38 -bg
-#+end_src
+**** TODO Comparer happy et happy-vcfeval :giab:
+SCHEDULED: <2023-08-03 Thu>
 ** TODO Insilico :cento:
 *** TODO tous les variants centogène
 **** DONE Extraire liste des SNVs
