@@ -359,9 +359,6 @@ Clinique
 
 Résistance: attention aux entérococques résistant vancomycine (surtout E. faecium)
 - /vancA/ /vancB/
-** Syphilis - /Treponema pallidum/
-- *non colorable au gram*
-- *non cultivable*
 ** Neisseria meningitidis
 - Diplococque Gram - aérobie.
 - Très gragile. Hautement variable

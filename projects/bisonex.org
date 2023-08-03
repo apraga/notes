@@ -1388,6 +1388,54 @@ CLOSED: [2023-06-26 Mon 19:42] SCHEDULED: <2023-06-15 Thu>
 CLOSED: [2023-08-03 Thu 14:24] SCHEDULED: <2023-08-03 Wed 10:30>
 *** TODO Générer la base de donnée spip
 SCHEDULED: <2023-08-03 Thu 11:30>
+**** TODO Vérifier la génération du transcriptome en hg38: checksum différent
+SCHEDULED: <2023-08-03 Thu 17:00>
+- [X] Nettoyer et vérifier sur hg38 avec ediff les RData : différent
+- [X] Sinon, ne pas nettoyer et générer: idem
+**** TODO Récupérer ncbi RefSeq curated
+.txt sur UCSC mais pas en T2T: http://hgdownload.cse.ucsc.edu/goldenPath/hg19/database/
+Format: https://genome.ucsc.edu/cgi-bin/hgTables?hgsid=1173061381_UepaHnvaOKFZKMOV4o7DtcNUHGVa&hgta_doSchemaDb=chlSab2&hgta_doSchemaTable=ncbiRefSeqCurated
+Avec "*", les champs conservés (a priori)
+|  1 | bin          | Indexing field to speed chromosome range queries.                       |
+|  2 | *name        | Name of gene (usually transcript_id from GTF)                           |
+|  3 | *chrom       | Reference sequence chromosome or scaffold                               |
+|  4 | *strand      | + or - for strand                                                       |
+|  5 | *txStart     | Transcription start position (or end position for minus strand item)    |
+|  6 | *txEnd       | Transcription end position (or start position for minus strand item)    |
+|  7 | *cdsStart    | Coding region start (or end position for minus strand item)             |
+|  8 | *cdsEnd      | Coding region end (or start position for minus strand item)             |
+|  9 | *exonCount   | Number of exons                                                         |
+| 10 | *exonStarts  | Exon start positions (or end positions for minus strand item)           |
+| 11 | *exonEnds    | Exon end positions (or start positions for minus strand item)           |
+| 12 | *score       | score                                                                   |
+| 13 | *name2       | Alternate name (e.g. gene_id from GTF)                                  |
+| 14 | cdsStartStat | Status of CDS start annotation (none, unknown, incomplete, or complete) |
+| 15 | cdsEndStat   | Status of CDS end annotation (none, unknown, incomplete, or complete)   |
+| 16 | exonFrames   | Exon frame {0,1,2}, or -1 if no frame for exon                          |
+En T2T, seulement au format bigBed : https://hgdownload.soe.ucsc.edu/gbdb/hs1/ncbiRefSeq/
+Il y a un exécutable pour convertir en bed : http://hgdownload.soe.ucsc.edu/admin/exe/
+
+Sous gentoo, il faut instaler mit-krb5 (pour libkrb5)
+#+begin_src
+./bigBedToBed ncbiRefSeqCurated.bb ncbiRefSeqCurated.bed
+#+end_src
+
+Mais format différent...
+Exemple
+chr1	7505	13582	NR_182076.1	0	-	13582	13582	0	2	5477,138,	0,5939,	LOC127239154	none	none	-1,-1,		NR_182076.1	LOC127239154
+Selon https://genome.ucsc.edu/cgi-bin/hgc?hgsid=1668458090_qvlzLgWgwTr5pQ0m7N3VuvgVlMSo&db=hub_3671779_hs1&c=chr1&l=7889&r=13966&o=7505&t=13582&g=hub_3671779_ncbiRefSeq&i=NR_182076.1
+
+On a les dernière colonnes
+- status CDS start annotation (none)
+- status CDS end annotation (none)
+- exome frame -1,-1
+- transcript type
+- identifiant gène
+- nom du gene
+- type du gene
+  Plus simple : regarder le bigBed pour hg19 ?
+  https://hgdownload.soe.ucsc.edu/gbdb/hg19/ncbiRefSeq/
+  On n'a pas le refsefcurated mais just other (idem en hg38)
 *** PROJ Porter Spip
 ** PROJ Indicateurs qualité
 *** Idée
