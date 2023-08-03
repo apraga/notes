@@ -1420,22 +1420,9 @@ Sous gentoo, il faut instaler mit-krb5 (pour libkrb5)
 ./bigBedToBed ncbiRefSeqCurated.bb ncbiRefSeqCurated.bed
 #+end_src
 
-Mais format différent...
-Exemple
-chr1	7505	13582	NR_182076.1	0	-	13582	13582	0	2	5477,138,	0,5939,	LOC127239154	none	none	-1,-1,		NR_182076.1	LOC127239154
-Selon https://genome.ucsc.edu/cgi-bin/hgc?hgsid=1668458090_qvlzLgWgwTr5pQ0m7N3VuvgVlMSo&db=hub_3671779_hs1&c=chr1&l=7889&r=13966&o=7505&t=13582&g=hub_3671779_ncbiRefSeq&i=NR_182076.1
+Ne pas oublier les headers car ils sont dans un ordre différent:
+#chrom  chromStart      chromEnd        name    score   strand  thickStart      thickEnd        reserved        blockCount      blockSizes      chromStarts     name2   cdsStartStat    cdsEndStat      exonFrames      type    geneName               geneName2       geneType
 
-On a les dernière colonnes
-- status CDS start annotation (none)
-- status CDS end annotation (none)
-- exome frame -1,-1
-- transcript type
-- identifiant gène
-- nom du gene
-- type du gene
-  Plus simple : regarder le bigBed pour hg19 ?
-  https://hgdownload.soe.ucsc.edu/gbdb/hg19/ncbiRefSeq/
-  On n'a pas le refsefcurated mais just other (idem en hg38)
 *** PROJ Porter Spip
 ** PROJ Indicateurs qualité
 *** Idée
@@ -4478,6 +4465,12 @@ Meilleurs résultats !
 | SNP   | ALL    |       21973 |    21462 |      511 |       26285 |      563 |      4263 |    68 |    16 |      0.976744 |         0.974435 |       0.162184 |        0.975588 |      3.007110300820419 |       2.78468624064479 |        1.5918102430965306 |        1.8161449399656946 |
 | SNP   | PASS   |       21973 |    21462 |      511 |       26285 |      563 |      4263 |    68 |    16 |      0.976744 |         0.974435 |       0.162184 |        0.975588 |      3.007110300820419 |       2.78468624064479 |        1.5918102430965306 |        1.8161449399656946 |
 
+***** DONE Refaire : HiSeq4000 + agilent sureselect + génome "prêt à l'emploi" gatk-4.4
+CLOSED: [2023-08-03 Thu 23:55] SCHEDULED: <2023-06-25 Sun>
+#+begin_src
+ ID="HG001-SRX11061486_SRR14724513-GRCh38"; nextflow run workflows/compareVCF.nf -profile standard,helios --outdir=out/${ID} --query=out/${ID}/callVariant/haplotypecaller/${ID}.vcf.gz --compare=vcfeval,hay -lib lib --capture=capture/Agilent_SureSelect_All_Exons_v7_hg38_Regions.bed  --id=HG001 --genome=GRCh38 -bg
+#+end_src
+
 ***** KILL Utiliser d'autres données brutes ?
 CLOSED: [2023-06-25 Sun 15:58]
 https://zenodo.org/record/3597727
@@ -4580,6 +4573,11 @@ CLOSED: [2023-07-30 Sun 14:24] SCHEDULED: <2023-07-23 Sun>
 | SNP   | ALL    |       23136 |    22346 |      790 |       26289 |      103 |      3845 |    77 |     4 |      0.965854 |         0.995411 |       0.146259 |         0.98041 |     2.9282199219412863 |     2.7752583237657866 |        1.6348301800775018 |        1.8423330808354075 |
 | SNP   | PASS   |       23136 |    22346 |      790 |       26289 |      103 |      3845 |    77 |     4 |      0.965854 |         0.995411 |       0.146259 |         0.98041 |     2.9282199219412863 |     2.7752583237657866 |        1.6348301800775018 |        1.8423330808354075 |
 
+***** DONE Refaire : HiSeq4000 + agilent sureselect + génome "prêt à l'emploi" gatk-4.4
+CLOSED: [2023-08-03 Thu 23:24] SCHEDULED: <2023-08-03 Thu>
+#+begin_src sh
+ID="HG002-SRX11061487_SRR14724512-GRCh38" ; nextflow run workflows/compareVCF.nf -profile standard,helios --outdir=out/${ID} --query=out/${ID}/callVariant/haplotypecaller/${ID}.vcf.gz --compare=vcfeval,happy -lib lib --capture=capture/Agilent_SureSelect_All_Exons_v7_hg38_Regions.bed  --id=HG002 --genome=GRCh38
+#+end_src
 **** DONE HG003 :hg003:hg38:
 CLOSED: [2023-07-30 Sun 14:26]
 ***** Notes
@@ -4611,7 +4609,13 @@ CLOSED: [2023-07-30 Sun 14:25] SCHEDULED: <2023-07-23 Sun>
 | SNP   | ALL    |       23126 |    22271 |      855 |       26405 |      135 |      4002 |    90 |    20 |      0.963029 |         0.993974 |       0.151562 |        0.978257 |      2.949462182004439 |     2.7766657134686876 |        1.6080333972695475 |        1.8465106245280984 |
 | SNP   | PASS   |       23126 |    22271 |      855 |       26405 |      135 |      4002 |    90 |    20 |      0.963029 |         0.993974 |       0.151562 |        0.978257 |      2.949462182004439 |     2.7766657134686876 |        1.6080333972695475 |        1.8465106245280984 |
 
+***** DONE Refaire : HiSeq4000 + agilent sureselect + génome "prêt à l'emploi" gatk-4.4
+CLOSED: [2023-08-03 Thu 23:24] SCHEDULED: <2023-08-03 Thu>
+#+begin_src
+ID="HG003-SRX11061488_SRR14724511-GRCh38" ; nextflow run workflows/compareVCF.nf -profile standard,helios --outdir=out/${ID} --query=out/${ID}/callVariant/haplotypecaller/${ID}.vcf.gz --compare=vcfeval,happy -lib lib --capture=capture/Agilent_SureSelect_All_Exons_v7_hg38_Regions.bed  --id=HG003 --genome=GRCh38
+#+end_src
 **** TODO HG004 :hg38:hg004:
+***** Notes
 #+begin_src sh
 NXF_OPTS=-D"user.name=${USER}" nextflow run main.nf -profile standard,helios  --input /Work/Groups/bisonex/data/giab/GRCh38/HG004_{1,2}.fq.gz -bg
 #+end_src
@@ -4636,6 +4640,14 @@ CLOSED: [2023-07-30 Sun 14:39] SCHEDULED: <2023-07-23 Sun>
 | INDEL | PASS   |         588 |      511 |       77 |         873 |       15 |       332 |     7 |     8 |      0.869048 |         0.972274 |       0.380298 |        0.917767 |                        |                        |        1.6111111111111112 |                 2.3984375 |
 | SNP   | ALL    |       23041 |    22225 |      816 |       26302 |      114 |      3972 |    87 |     5 |      0.964585 |         0.994895 |       0.151015 |        0.979505 |       2.91407709288504 |     2.7368645271229766 |        1.6883829538820783 |        1.8632748665431964 |
 | SNP   | PASS   |       23041 |    22225 |      816 |       26302 |      114 |      3972 |    87 |     5 |      0.964585 |         0.994895 |       0.151015 |        0.979505 |       2.91407709288504 |     2.7368645271229766 |        1.6883829538820783 |        1.8632748665431964 |
+
+***** DONE Refaire : HiSeq4000 + agilent sureselect + génome "prêt à l'emploi" gatk4.4
+CLOSED: [2023-08-03 Thu 23:24] SCHEDULED: <2023-08-03 Thu>
+#+begin_src sh
+ID="HG004-SRX11061489_SRR14724510-GRCh38" ; nextflow run workflows/compareVCF.nf -profile standard,helios --outdir=out/${ID} --query=out/${ID}/callVariant/haplotypecaller/${ID}.vcf.gz --compare=vcfeval,happy -lib lib --capture=capture/Agilent_SureSelect_All_Exons_v7_hg38_Regions.bed  --id=HG003 --genome=GRCh38
+#+end_src
+**** TODO Refaire la figure pour HG001,2,3,4
+SCHEDULED: <2023-08-04 Fri>
 
 **** STRT HG001 :hg001:T2T:
 Avec liftover : 10x moins de variants...
@@ -4910,14 +4922,16 @@ nextflow run workflows/compareVCF.nf -profile standard,helios --query=out/230034
 | SNP   | ALL    |       19198 |    18962 |      236 |       23381 |      684 |      3738 |    48 |    10 |      0.987707 |         0.965178 |       0.159873 |        0.976313 |     3.1034188034188035 |      2.859264147830391 |        1.5669565217391304 |        1.8578767123287672 |
 | SNP   | PASS   |       19198 |    18962 |      236 |       23381 |      684 |      3738 |    48 |    10 |      0.987707 |         0.965178 |       0.159873 |        0.976313 |     3.1034188034188035 |      2.859264147830391 |        1.5669565217391304 |        1.8578767123287672 |
 
-**** TODO Test Twist Human core Exome (hg38):giab:
+**** STRT Test Twist Human core Exome (hg38):giab:
 SCHEDULED: <2023-08-03 Thu 20:00>
+#+begin_src sh
+ID="2300346867_NA12878-63118093_S260-GRCh38"; nextflow run workflows/compareVCF.nf -profile standard,helios --query=out/${ID}/callVariant/haplotypecaller/${ID}.vcf.gz --outdir=out/${ID}/happy-twist-exome-core/ --compare=happy -lib lib --capture=capture/Twist_Exome_Core_Covered_Targets_hg38.bed  --id=HG001 --genome=GRCh38 -bg
+#+end_src
 **** TODO Tester Agilen SureSelect All Exon V8 (hg38) GATK-4.4:giab:
 SCHEDULED: <2023-08-03 Thu 20:00>
 **** KILL Tester si le panel Twist Alliance VCGS Exome suffit
 CLOSED: [2023-07-31 Mon 22:31] SCHEDULED: <2023-07-30 Sun>
-**** TODO Comparer happy et happy-vcfeval :giab:
-SCHEDULED: <2023-08-03 Thu>
+**** PROJ Comparer happy et happy-vcfeval :giab:
 ** TODO Insilico :cento:
 *** TODO tous les variants centogène
 **** DONE Extraire liste des SNVs
