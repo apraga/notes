@@ -101,6 +101,7 @@ détecte les cytochrome de type c (pigments hémo-protéiques dans la plupart de
 - Céphalotriches: un cil à chaque extrémités
 - Lophotriches: un cil à chaque extrémités
 - Péritriches : cils tout autour -> mouvement désordonné
+*polaire = entérobactéries*, *péritrice = pseudomonas aeruginosa*
 
 - cocci gram + : non (sauf Enterococcus casseliflavus, gallinarum; Vagococcus, Planococcus)
 - Bacille gram+ : Listeria (tournoyante) , Bacillus (ondulante)

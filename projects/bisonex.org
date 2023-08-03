@@ -430,7 +430,8 @@ Impossible de faire marcher les tests Car il ne trouve pas le module Bio::Tools:
 
 ** WAIT [[https://github.com/NixOS/nixpkgs/pull/230394][rtg-tools]] :vcfeval:
 Soumis
-** PROJ Package Spip
+** TODO Package Spip
+SCHEDULED: <2023-08-03 Thu 18:00>
 ** TODO Happy :happy:
 *** PROJ PR python 3 upstream
 *** PROJ nixpkgs en l'état
@@ -1383,9 +1384,10 @@ NXF_OPTS=-D"user.name=${USER}" nextflow run main.nf -profile standard,helios  --
 SCHEDULED: <2023-06-14 Wed>
 *** DONE Haplotypecaller
 CLOSED: [2023-06-26 Mon 19:42] SCHEDULED: <2023-06-15 Thu>
-*** TODO Faire fonctionner les filtres avec vep
-SCHEDULED: <2023-08-02 Wed>
-*** PROJ Générer la base de donnée spip
+*** DONE Faire fonctionner le filtre technical variant
+CLOSED: [2023-08-03 Thu 14:24] SCHEDULED: <2023-08-03 Wed 10:30>
+*** TODO Générer la base de donnée spip
+SCHEDULED: <2023-08-03 Thu 11:30>
 *** PROJ Porter Spip
 ** PROJ Indicateurs qualité
 *** Idée
@@ -1631,6 +1633,9 @@ Les dépendences ne se téléchargent pas correctement, on les extrait à la mai
  #+begin_src sh
  cat deps.txt | xargs -L1 singularity pull
  #+end_src
+** DONE Support pour samplesheet
+CLOSED: [2023-08-03 Thu 14:24] SCHEDULED: <2023-08-03 Thu 13:00>
+/Entered on/ [2023-08-03 Thu 13:12]
 * Amélioration :amelioration:
 * Documentation
 :PROPERTIES:
@@ -4780,7 +4785,6 @@ CLOSED: [2023-07-09 Sun 17:36]
 ******* KILL Répartition des FP : cluster ?
 CLOSED: [2023-07-09 Sun 17:36]
 ******* PROJ Examiner les FP restant après correction selon séquence de référence
-SCHEDULED: <2023-07-31 Mon>
 ******* PROJ Examiner les variants supprimé
 ****** KILL Méthodologie du pangenome
 CLOSED: [2023-07-31 Mon 22:29] SCHEDULED: <2023-07-30 Sun>
@@ -4821,9 +4825,9 @@ Masi pas de fichier BED
 ***** DONE Mail centogène
 CLOSED: [2023-07-30 Sun 14:22] DEADLINE: <2023-07-23 Sun>
 **** TODO Tester Nextera Rapid Capture Exome v1.2 (hg19) :giab:
-SCHEDULED: <2023-08-02 Wed>
+SCHEDULED: <2023-08-03 Thu 19:00>
 https://support.illumina.com/downloads/nextera-rapid-capture-exome-v1-2-product-files.html
-**** DONE Tester Agilen SureSelect All Exon V8 (hg38) :giab:
+**** DONE Tester Agilent SureSelect All Exon V8 (hg38) :giab:
 CLOSED: [2023-07-31 Mon 23:09] SCHEDULED: <2023-07-31 Mon>
 https://earray.chem.agilent.com/suredesign/index.htm
 "Find design"
@@ -4858,6 +4862,10 @@ nextflow run workflows/compareVCF.nf -profile standard,helios --query=out/230034
 | SNP   | ALL    |       19198 |    18962 |      236 |       23381 |      684 |      3738 |    48 |    10 |      0.987707 |         0.965178 |       0.159873 |        0.976313 |     3.1034188034188035 |      2.859264147830391 |        1.5669565217391304 |        1.8578767123287672 |
 | SNP   | PASS   |       19198 |    18962 |      236 |       23381 |      684 |      3738 |    48 |    10 |      0.987707 |         0.965178 |       0.159873 |        0.976313 |     3.1034188034188035 |      2.859264147830391 |        1.5669565217391304 |        1.8578767123287672 |
 
+**** TODO Test Twist Human core Exome (hg38):giab:
+SCHEDULED: <2023-08-03 Thu 20:00>
+**** TODO Tester Agilen SureSelect All Exon V8 (hg38) GATK-4.4:giab:
+SCHEDULED: <2023-08-03 Thu 20:00>
 **** KILL Tester si le panel Twist Alliance VCGS Exome suffit
 CLOSED: [2023-07-31 Mon 22:31] SCHEDULED: <2023-07-30 Sun>
 **** TODO Comparer happy et happy-vcfeval :giab:
@@ -6755,3 +6763,6 @@ CLOSED: [2022-10-09 Sun 22:31]
 CLOSED: [2023-06-25 Sun 15:53] SCHEDULED: <2023-06-25 Sun>
 [cite:@wilcox2021]
 Vu avec alexis: pas notre cas d'usage
+* TODO Relancer comparaison GIAB avec GATK 4.4.0
+SCHEDULED: <2023-08-13 Sun>
+/Entered on/ [2023-08-03 Thu 12:42]
