@@ -3,47 +3,12 @@
 :END:
 #+title: Films
 #+filetags: movies
-* À voir
-:PROPERTIES:
-:ID:       f78f6397-1829-4535-9c3d-d10e8a333b89
-:END:
-- Amour (2012)
-- Au hasard Balthazard
-- Contact
-- Darkest Hour
-- Dragon Ball Super: Broly
-- One Flew Over the Cuckoo's Nest
-- Dragon Ball Super: Resurrection F
-- Early Spring
-- Fences
-- Hidden Figures
-- I, Tonya
-- If Beale Street could talk
-- Little Women
-- Mandy
-- Nightwatching
-- One Child Nation
-- Onward
-- Paterson
-- Paths of glory
-- Room
-- Selma
-- Shaun the Sheep
-- Shoplifters
-- Stray Doy
-- The Chronicle of Anna Magdalena Bach
-- The Endless (2017)
-- The Fifth Estate (2013)
-- The Jungle Book 2016
-- The Philadelphia story
-- The lives of other
-- Tokyo Story
-- We, the Animals
 * Vu
 :PROPERTIES:
 :ID:       ccd86ede-ee31-4e34-bf6f-ff344b677f6b
 :END:
-  Dungeons & Dragons: Honor Among Thieves (2023) : 4/5
+- Dungeons & Dragons: Honor Among Thieves (2023) : 4/5
+- La bataille d'Alger - 4.5/5
 - 101 Dalmatians (1996) - 3.5/5
 - 12 Angry Men (1957) - 4.5/5
 - 12 Years a Slave (2013) - 4/5
@@ -74,6 +39,7 @@
 - How to Train Your Dragon (2010) - 4.5/5
 - How to Train Your Dragon 2 (2014) - 4/5
 - How to Train Your Dragon: The Hidden World (2019) - 4/5
+- Huesera The Bone Woman (2022) - 4
 - Iron Man (2008) - 3.5/5
 - Iron Man 2 (2010) - 3/5
 - Iron Man 3 (2013) - 3/5
