@@ -354,14 +354,14 @@ https://github.com/NixOS/nixpkgs/pull/191548
 Review <2022-10-10 Mon> , corrigé dans la journée
 *** DONE Update 4.3.0.0
 CLOSED: [2023-04-13 Thu 09:01]
-** TODO Nextflow
+** HOLD Nextflow
 *** KILL version script seule
 CLOSED: [2023-04-01 Sat 18:29]
 Fix pour SGE et nextflow
 https://github.com/NixOS/nixpkgs/issues/192396
 *** KILL Version avec gradle
 CLOSED: [2022-10-09 Sun 22:51]
-*** TODO [[https://github.com/NixOS/nixpkgs/issues/192396][Bug report Version 22.10.6]]
+*** HOLD [[https://github.com/NixOS/nixpkgs/issues/192396][Bug report Version 22.10.6]]
 **** Notes
 Erreur :
 ERROR: Cannot download nextflow required file -- make sure you can connect to the internet
@@ -376,7 +376,8 @@ Dans la mise à jour, il y a la création d'un environnement virtuel qui casse l
 Fix = désactiver
 **** KILL Patch NXF_OFFLINE=true
 CLOSED: [2023-07-02 Sun 11:02] SCHEDULED: <2023-06-11 Sun>
-** TODO Multiqc
+** PROJ Multiqc
+** PROJ Mutalyzer
 ** TODO VEP :vep:
 *** DONE [[https://github.com/NixOS/nixpkgs/pull/185691][BioPerl]]
 SCHEDULED: <2022-08-10 Wed>
@@ -443,11 +444,11 @@ Soumis
 Similaire à
 https://github.com/bioconda/bioconda-recipes/blob/master/recipes/picard/picard.sh
 
-** Julia :julia:
-*** KILL XAM.jl: PR pour modification record :julia:
+* Julia :julia:
+** KILL XAM.jl: PR pour modification record :julia:
 CLOSED: [2023-05-29 Mon 15:40] SCHEDULED: <2023-05-28 Sun>
 /Entered on/ [2023-05-27 Sat 22:39]
-*** TODO XAMscissors.jl :xamscissors:
+** TODO XAMscissors.jl :xamscissors:
 Modification de la séquence dans BAM.
 *Pas de mise à jour de CIGAR*
 On convertit en fastq et on lance le pipeline pour "corriger"
@@ -468,34 +469,34 @@ Attention: ne pas oublier l'option -n !!!
 time julia --project=.. insertVariant.jl
 scp 63003856_S135_chr22_{1,2}.fq.gz meso:/Work/Users/apraga/bisonex/tests/bamscissors/
 #+end_src
-**** WAIT Implémenter les SNV avec VAF :snv:
+*** WAIT Implémenter les SNV avec VAF :snv:
 Stratégie :
 1. calculer la profondeur sur les positions
 2. créer un dictionnaire { nom du reads : position dataframe }
 3. itérer sur tous les reads et changer ceux marqués
-***** DONE VAF = 1
+**** DONE VAF = 1
 CLOSED: [2023-05-29 Mon 15:34]
-***** DONE VAF selon loi normale
+**** DONE VAF selon loi normale
 CLOSED: [2023-05-29 Mon 15:35]
 Tronquée si > 1
-***** WAIT Tests unitaires
-****** DONE NA12878: 1 gène sur chromosome 22
+**** WAIT Tests unitaires
+***** DONE NA12878: 1 gène sur chromosome 22
 CLOSED: [2023-05-30 Tue 23:55]
 root = "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/NA12878/Garvan_NA12878_HG001_HiSeq_Exome/"
 #+begin_src sh
 samtools view project.NIST_NIST7035_H7AP8ADXX_NA12878.bwa.markDuplicates.bam  chr22 -o project.NIST_NIST7035_H7AP8ADXX_NA12878_chr22.bam
 samtools view project.NIST_NIST7035_H7AP8ADXX_NA12878_chr22.bam chr22:19419700-19424000 -o NIST7035_H7AP8ADXX_NA12878_chr22_MRPL40_hg19.bam
 #+end_src
-****** WAIT Pull request formatspeciment
+***** WAIT Pull request formatspeciment
 https://github.com/BioJulia/FormatSpecimens.jl/pull/8
-****** DONE Formatspecimens
+***** DONE Formatspecimens
 CLOSED: [2023-05-29 Mon 23:03]
-******* DONE 1 read
+****** DONE 1 read
 CLOSED: [2023-05-29 Mon 23:02]
-******* DONE VAF sur 1 exon
+****** DONE VAF sur 1 exon
 CLOSED: [2023-05-29 Mon 23:03]
-**** TODO Implémenter les indel avec VAF :indel:
-**** TODO Soumission paquet
+*** TODO Implémenter les indel avec VAF :indel:
+*** TODO Soumission paquet
 * Données
 :PROPERTIES:
 :CATEGORY: data
@@ -1394,7 +1395,7 @@ T2T n'a pas
 - polyphen
 - gnomAD
 On désactive l'annotation spip pour le moment
-*** PROJ Porter Spip
+*** PROJ [#A] Porter Spip
 *** TODO Générer la base de donnée spip
 SCHEDULED: <2023-08-03 Thu 11:30>
 **** PROJ Vérifier la génération du transcriptome en hg38: checksum différent
@@ -1431,8 +1432,8 @@ Sous gentoo, il faut instaler mit-krb5 (pour libkrb5)
 Ne pas oublier les headers car ils sont dans un ordre différent:
 #chrom  chromStart      chromEnd        name    score   strand  thickStart      thickEnd        reserved        blockCount      blockSizes      chromStarts     name2   cdsStartStat    cdsEndStat      exonFrames      type    geneName               geneName2       geneType
 
-*** PROJ Filtre vep (avec spip ?)
-** PROJ Indicateurs qualité
+*** PROJ [#A] Filtre vep (avec spip ?)
+** PROJ [#B] Indicateurs qualité
 *** Idée
 Raredisease:
 - FastQC : nombreuses statistiques. Non disponible Nix
@@ -1448,9 +1449,9 @@ Sarek:
 - QC : MultiQC
 
 MultiQC : non disponible Nix
-** PROJ Compte-redu exécution (version logiciels)
+** PROJ [#B] Compte-redu exécution avec MultiQC
 ** PROJ vérifier si normalisation
-** PROJ Rajouter vérification hgvs
+** PROJ [#B] Vérification nomenclature hgvs avec mutalyzer
 
 ** DONE Exécution
 CLOSED: [2022-09-13 Tue 21:37]
@@ -4876,6 +4877,8 @@ CLOCK: [2023-07-30 Sun 15:39]--[2023-07-30 Sun 15:40] =>  0:01
 :END:
 /Entered on/ [2023-04-16 Sun 17:29]
 Refaire résultats
+**** DONE Mail Paul sur les résultat ashkenazim +/- centogene
+CLOSED: [2023-08-06 Sun 20:24] SCHEDULED: <2023-08-06 Sun>
 *** KILL Platinum genome
 CLOSED: [2023-06-14 Wed 22:37]
 https://emea.illumina.com/platinumgenomes.html
@@ -4897,9 +4900,20 @@ ANnonce récente pour nouveau panel Twist : https://www.centogene.com/news-event
 Masi pas de fichier BED
 ***** DONE Mail centogène
 CLOSED: [2023-07-30 Sun 14:22] DEADLINE: <2023-07-23 Sun>
-**** TODO Tester Nextera Rapid Capture Exome v1.2 (hg19) :giab:
-SCHEDULED: <2023-08-03 Thu 19:00>
+**** DONE Tester Nextera Rapid Capture Exome v1.2 (hg19) :giab:
+CLOSED: [2023-08-06 Sun 19:05] SCHEDULED: <2023-08-03 Thu 19:00>
 https://support.illumina.com/downloads/nextera-rapid-capture-exome-v1-2-product-files.html
+***** DONE Liftover capture
+CLOSED: [2023-08-06 Sun 18:30] SCHEDULED: <2023-08-06 Sun>
+#+begin_src sh
+ nextflow run -profile standard,helios workflows/lift-nextera-capture.nf  -lib lib
+#+end_src
+Vérification rapide : ok
+***** DONE Run
+CLOSED: [2023-08-06 Sun 19:05] SCHEDULED: <2023-08-06 Sun>
+#+begin_src sh
+ nextflow run workflows/compareVCF.nf -profile standard,helios --query=out/2300346867_NA12878-63118093_S260-GRCh38/callVariant/haplotypecaller/2300346867_NA12878-63118093_S260-GRCh38.vcf.gz --outdir=out/2300346867_NA12878-63118093_S260-GRCh38/happy-nextera-lifted/ --compare=happy -lib lib --capture=capture/nexterarapidcapture_exome_targetedregions_v1.2-nochrM_lifted.bed  --id=HG001 --genome=GRCh38
+#+end_src
 **** DONE Tester Agilent SureSelect All Exon V8 (hg38) :giab:
 CLOSED: [2023-07-31 Mon 23:09] SCHEDULED: <2023-07-31 Mon>
 https://earray.chem.agilent.com/suredesign/index.htm
@@ -4944,6 +4958,10 @@ ID="2300346867_NA12878-63118093_S260-GRCh38"; nextflow run workflows/compareVCF.
 CLOSED: [2023-08-05 Sat 09:25] SCHEDULED: <2023-08-03 Thu 20:00>
 **** DONE Vérifier l'impact gatk 4.3 - 4.4 : aucun
 CLOSED: [2023-08-05 Sat 09:25]
+**** DONE Figure comparant les 3 capture :hg001:
+CLOSED: [2023-08-06 Sun 20:24] SCHEDULED: <2023-08-06 Sun>
+**** DONE Mail Paul sur  les 3 capture :hg001:
+CLOSED: [2023-08-06 Sun 20:24] SCHEDULED: <2023-08-06 Sun>
 **** KILL Tester si le panel Twist Alliance VCGS Exome suffit
 CLOSED: [2023-07-31 Mon 22:31] SCHEDULED: <2023-07-30 Sun>
 **** PROJ Comparer happy et happy-vcfeval :giab:
