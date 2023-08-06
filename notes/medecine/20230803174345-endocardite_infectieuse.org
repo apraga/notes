@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       c4eaf677-0289-44a3-8223-98888ce157d1
+:END:
+#+title: Endocardite infectieuse
+#+filetags: personal medecine
+
+- Rare (5cas/million), grave (20% décès)
+- Souvent iatrogène
+- Traitement difficile (biofilm)
+- *Gram positif*
+  - staph aureus/coag négative : cutané, cathéter, toxico IV
+  - strepto : bucco-dentaire, digestif
+  - entérocoque = digestif, urinaire
+  - HACCEK = bucco-dentaire [Bacille gram neg croissance lente + physio = Haemophilus, Actinobacillus actinomyc, cardiobacterium hominis, capnocytophaga, Kingella kingae]
+  - candida = cathéter, toxico
+- Diag: critère de duke pour hémoculture : 2 positive à germe typique ou >2 à germe atypique
+  - négative dans 5-10% E
+I
