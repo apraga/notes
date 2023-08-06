@@ -1402,6 +1402,7 @@ SCHEDULED: <2023-08-03 Thu 11:30>
 - [X] Nettoyer et vérifier sur hg38 avec ediff les RData : différent
 - [X] Sinon, ne pas nettoyer et générer: idem
 **** TODO Récupérer ncbi RefSeq curated
+SCHEDULED: <2023-08-06 Sun>
 .txt sur UCSC mais pas en T2T: http://hgdownload.cse.ucsc.edu/goldenPath/hg19/database/
 Format: https://genome.ucsc.edu/cgi-bin/hgTables?hgsid=1173061381_UepaHnvaOKFZKMOV4o7DtcNUHGVa&hgta_doSchemaDb=chlSab2&hgta_doSchemaTable=ncbiRefSeqCurated
 Avec "*", les champs conservés (a priori)
@@ -1421,6 +1422,9 @@ Avec "*", les champs conservés (a priori)
 | 14 | cdsStartStat | Status of CDS start annotation (none, unknown, incomplete, or complete) |
 | 15 | cdsEndStat   | Status of CDS end annotation (none, unknown, incomplete, or complete)   |
 | 16 | exonFrames   | Exon frame {0,1,2}, or -1 if no frame for exon                          |
+ex:
+585     NR_046018.2     chr1    +       11873   14409   14409   14409   3       11873,12612,13220,      12227,12721,14409,      0       DDX11L1 none    none    -1,-1,-1,
+
 En T2T, seulement au format bigBed : https://hgdownload.soe.ucsc.edu/gbdb/hs1/ncbiRefSeq/
 Il y a un exécutable pour convertir en bed : http://hgdownload.soe.ucsc.edu/admin/exe/
 
@@ -1428,10 +1432,53 @@ Sous gentoo, il faut instaler mit-krb5 (pour libkrb5)
 #+begin_src
 ./bigBedToBed ncbiRefSeqCurated.bb ncbiRefSeqCurated.bed
 #+end_src
+Exemple:
+chr1    7505    13582   NR_182076.1     0       -       13582   13582   0       2       5477,138,       0,5939, LOC127239154    none    none    -1,-1,          NR_182076.1     LOC127239154
+
+Dans R:
+   V1        V2   V3 V4    V5    V6    V7    V8 V9                V10
+1 585 NR_046018 chr1  + 11873 14409 14409 14409  3 11873,12612,13220,
+                 V11 V12     V13  V14  V15       V16           V17         V18
+1 12227,12721,14409,   0 DDX11L1 none none -1,-1,-1, 354,109,1189, 0,739,1347,
 
 Ne pas oublier les headers car ils sont dans un ordre différent:
-#chrom  chromStart      chromEnd        name    score   strand  thickStart      thickEnd        reserved        blockCount      blockSizes      chromStarts     name2   cdsStartStat    cdsEndStat      exonFrames      type    geneName               geneName2       geneType
+ 1 #chrom
+ 2 chromStart
+ 3 chromEnd
+ 4 name
+ 5 score
+ 6  strand
+ 7 thickStart
+ 8 thickEnd
+ 9 reserved
+10 blockCount
+11 blockSizes
+12 chromStarts
+13 name2
+14 cdsStartStat
+15 cdsEndStat
+16 exonFrames
+17 type
+18 geneName
+19 geneName2
+20 geneType
 
+Colonnes en GRGh38 =
+3, 5, 6, 2, 12, 4, 7,  8, 12, 9, 17, 18, 13
+Correspondance en T2T
+1, 7, 8, 4, 5,  6, 14, 15, 5, ?,  ?,  ?, 13
+
+En fait, il suffit d'avoir
+- le gène
+- le début du transcrit
+- la fin du transcrit
+- le brin
+  pour générer
+*** TODO Tester correspondance partielle ?
+pas de CDS et pas de colonne 17 et 18
+seules les colonnes (dans la nouvelle dataframe) 10,11,12 causent problèmes (9,17,18 dans les ancienne)
+
+NB: on peut retrouver le nombre d'exons colonnes 9 à partir de la lons
 *** PROJ [#A] Filtre vep (avec spip ?)
 ** PROJ [#B] Indicateurs qualité
 *** Idée
