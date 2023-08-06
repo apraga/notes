@@ -27,7 +27,7 @@ Grenoble = la partie bioinfo
 *** DONE Mail coordonateur DES biologie médicale Grenoble pour préciser
 CLOSED: [2023-07-21 Fri 17:54] SCHEDULED: <2023-07-21 Fri>
 *** TODO Dossier à compléter
-SCHEDULED: <2023-08-04 Fri>
+SCHEDULED: <2023-08-15 Tue>
 *** TODO Vision Julien Thevenon + Virginie ?? (bionfo)
 * Recherche
 :PROPERTIES:

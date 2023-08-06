@@ -712,23 +712,41 @@ Rappel
 - トビ: milan noir
 - 主題　しゅだい : sujet, thème (film, composition..)
 
-- shikenni koukaku suru : réussir un examen
-- shikenni ochiru : échouer à un examen
-- shiai ni katsu : gagner un match
-- shiai ni makeru : predre un match
-- kaban wo wasureru : perdre son sac
-- saifu wo otosu : perdre un portefeuille
-- nebou suru : trop dormir
-- kaigi okureru : être en retard pour une réunion
+- 試験に合格する（しねん ごうかく） : réussir un examen
+- 試験に 落る（おち） : échouer à un examen
+- 試合に勝つ（しあい かつ） : gagner un match
+- 試合に 負ける（ま）： predre un match
+- 鞄をを忘れる（わ）: perdre son sac
+- 財布を落す（さいふ おと）: perdre un portefeuille
+- 寝坊する （ねぼう）: trop dormir
+- 会議 送れる（かいぎ おく）: être en retard pour une réunion
 ** Grammaire
 décrire un état: verbes + te, emotion
-- ureshikatta desu : être content
-- odorokimashita:  être surpris
-- kuyashikattadesu : être décu/frustré
-- gakkarishimashita: être indifférent
-- komarimashita : être embêté (?)
-- taihendeshita: c'est horrible
-- hazukashikatta : être embarasssé
+- 嬉しかった（うれ）: être content
+- 驚きました（おどろ）: être surpris
+- 悔しかったです（くやし）: être déçu/fustré
+- がっかりしました: être indifférent
+- 困りました（こま）: être embêté
+- 大変  たいへん: c'est horrible
+- 恥ずかしかった（は）Ê: être embarassé
 
   Ex:
-  shikenni goukakushite, ureshikatta desu
+  試験に合格して、嬉しかったです
+* <2023-08-06 Sun>
+- 早めに（はや） : en avance, rapidement
+- 地方（ちほう）: région (adminstratif)
+- 朝型 （あさがた）: être une personne matinale
+- 夜型 （よるがた）: être un personne du soir
+- 瞑想（めいそう）: méditation
+- メディテーション: méditation
+- 機能しません（きのう）：ne pas être fonctionnel i.e ne pas être réveillé
+- 運動する（うんどう）: faire du sport
+- 朝起ききたごの２時間　（あさおき　ご）: 2 here après s'être levé tôt
+- 絶食（ぜっしょく）: jeûne (mais ne marche pas pour le jeûne intermittent)
+- 担当（たんとう）: être responsable de
+- 苦になりません（く）: faire disparaître les soucis
+- 何もする気になれない（なに　き）: n'avoir rien envie de faire
+- 最初（さいしょ）: début
+- 向上が見られない（こうじょう）: être sur un plateau ("ne plus voir de progrès")
+- 集中（しゅうちゅう）できます: puvoir se concentrer
+- やる気（き）: la motivation, volonté

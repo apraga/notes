@@ -430,8 +430,7 @@ Impossible de faire marcher les tests Car il ne trouve pas le module Bio::Tools:
 
 ** WAIT [[https://github.com/NixOS/nixpkgs/pull/230394][rtg-tools]] :vcfeval:
 Soumis
-** TODO Package Spip
-SCHEDULED: <2023-08-03 Thu 18:00>
+** WAIT Package Spip https://github.com/NixOS/nixpkgs/pull/247476
 ** TODO Happy :happy:
 *** PROJ PR python 3 upstream
 *** PROJ nixpkgs en l'état
@@ -612,6 +611,8 @@ CLOSED: [2023-06-12 Mon 23:29]
 **** DONE VEP 20G
 CLOSED: [2023-06-12 Mon 23:29]
 Ajout vérification checksum -> à vérifier
+**** DONE VEP version 1.10
+CLOSED: [2023-08-06 Sun 09:45] SCHEDULED: <2023-08-06 Sun>
 **** DONE transcriptome (spip)
 CLOSED: [2023-06-12 Mon 23:29]
 Rajouter checksum manuel
@@ -1386,10 +1387,17 @@ SCHEDULED: <2023-06-14 Wed>
 CLOSED: [2023-06-26 Mon 19:42] SCHEDULED: <2023-06-15 Thu>
 *** DONE Faire fonctionner le filtre technical variant
 CLOSED: [2023-08-03 Thu 14:24] SCHEDULED: <2023-08-03 Wed 10:30>
+*** DONE Annotation vep seule
+CLOSED: [2023-08-05 Sat 08:59] SCHEDULED: <2023-08-05 Sat>
+T2T n'a pas
+- de version merged
+- polyphen
+- gnomAD
+On désactive l'annotation spip pour le moment
+*** PROJ Porter Spip
 *** TODO Générer la base de donnée spip
 SCHEDULED: <2023-08-03 Thu 11:30>
-**** TODO Vérifier la génération du transcriptome en hg38: checksum différent
-SCHEDULED: <2023-08-03 Thu 17:00>
+**** PROJ Vérifier la génération du transcriptome en hg38: checksum différent
 - [X] Nettoyer et vérifier sur hg38 avec ediff les RData : différent
 - [X] Sinon, ne pas nettoyer et générer: idem
 **** TODO Récupérer ncbi RefSeq curated
@@ -1423,7 +1431,7 @@ Sous gentoo, il faut instaler mit-krb5 (pour libkrb5)
 Ne pas oublier les headers car ils sont dans un ordre différent:
 #chrom  chromStart      chromEnd        name    score   strand  thickStart      thickEnd        reserved        blockCount      blockSizes      chromStarts     name2   cdsStartStat    cdsEndStat      exonFrames      type    geneName               geneName2       geneType
 
-*** PROJ Porter Spip
+*** PROJ Filtre vep (avec spip ?)
 ** PROJ Indicateurs qualité
 *** Idée
 Raredisease:
@@ -1440,6 +1448,7 @@ Sarek:
 - QC : MultiQC
 
 MultiQC : non disponible Nix
+** PROJ Compte-redu exécution (version logiciels)
 ** PROJ vérifier si normalisation
 ** PROJ Rajouter vérification hgvs
 
@@ -1671,6 +1680,8 @@ Les dépendences ne se téléchargent pas correctement, on les extrait à la mai
 ** DONE Support pour samplesheet
 CLOSED: [2023-08-03 Thu 14:24] SCHEDULED: <2023-08-03 Thu 13:00>
 /Entered on/ [2023-08-03 Thu 13:12]
+** DONE Petit jeu de données : chr22 sur HG001
+CLOSED: [2023-08-05 Sat 14:21] SCHEDULED: <2023-08-05 Sat>
 * Amélioration :amelioration:
 * Documentation
 :PROPERTIES:
@@ -4646,8 +4657,10 @@ CLOSED: [2023-08-03 Thu 23:24] SCHEDULED: <2023-08-03 Thu>
 #+begin_src sh
 ID="HG004-SRX11061489_SRR14724510-GRCh38" ; nextflow run workflows/compareVCF.nf -profile standard,helios --outdir=out/${ID} --query=out/${ID}/callVariant/haplotypecaller/${ID}.vcf.gz --compare=vcfeval,happy -lib lib --capture=capture/Agilent_SureSelect_All_Exons_v7_hg38_Regions.bed  --id=HG003 --genome=GRCh38
 #+end_src
-**** TODO Refaire la figure pour HG001,2,3,4
-SCHEDULED: <2023-08-04 Fri>
+**** DONE Refaire la figure pour HG001,2,3,4
+CLOSED: [2023-08-05 Sat 09:10] SCHEDULED: <2023-08-04 Fri>
+**** DONE Regarder impact changement de version gatk 4.3 -> 4.4: aucun
+CLOSED: [2023-08-05 Sat 09:07] SCHEDULED: <2023-08-05 Sat>
 
 **** STRT HG001 :hg001:T2T:
 Avec liftover : 10x moins de variants...
@@ -4922,13 +4935,15 @@ nextflow run workflows/compareVCF.nf -profile standard,helios --query=out/230034
 | SNP   | ALL    |       19198 |    18962 |      236 |       23381 |      684 |      3738 |    48 |    10 |      0.987707 |         0.965178 |       0.159873 |        0.976313 |     3.1034188034188035 |      2.859264147830391 |        1.5669565217391304 |        1.8578767123287672 |
 | SNP   | PASS   |       19198 |    18962 |      236 |       23381 |      684 |      3738 |    48 |    10 |      0.987707 |         0.965178 |       0.159873 |        0.976313 |     3.1034188034188035 |      2.859264147830391 |        1.5669565217391304 |        1.8578767123287672 |
 
-**** STRT Test Twist Human core Exome (hg38):giab:
-SCHEDULED: <2023-08-03 Thu 20:00>
+**** DONE Test Twist Human core Exome (hg38):giab:
+CLOSED: [2023-08-05 Sat 09:25] SCHEDULED: <2023-08-03 Thu 20:00>
 #+begin_src sh
 ID="2300346867_NA12878-63118093_S260-GRCh38"; nextflow run workflows/compareVCF.nf -profile standard,helios --query=out/${ID}/callVariant/haplotypecaller/${ID}.vcf.gz --outdir=out/${ID}/happy-twist-exome-core/ --compare=happy -lib lib --capture=capture/Twist_Exome_Core_Covered_Targets_hg38.bed  --id=HG001 --genome=GRCh38 -bg
 #+end_src
-**** TODO Tester Agilen SureSelect All Exon V8 (hg38) GATK-4.4:giab:
-SCHEDULED: <2023-08-03 Thu 20:00>
+**** DONE Tester Agilen SureSelect All Exon V8 (hg38) GATK-4.4:giab:
+CLOSED: [2023-08-05 Sat 09:25] SCHEDULED: <2023-08-03 Thu 20:00>
+**** DONE Vérifier l'impact gatk 4.3 - 4.4 : aucun
+CLOSED: [2023-08-05 Sat 09:25]
 **** KILL Tester si le panel Twist Alliance VCGS Exome suffit
 CLOSED: [2023-07-31 Mon 22:31] SCHEDULED: <2023-07-30 Sun>
 **** PROJ Comparer happy et happy-vcfeval :giab:
