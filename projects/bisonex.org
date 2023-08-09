@@ -1396,38 +1396,41 @@ T2T n'a pas
 - gnomAD
 On désactive l'annotation spip pour le moment
 *** PROJ [#A] Porter Spip
-*** TODO Générer la base de donnée spip
-SCHEDULED: <2023-08-03 Thu 11:30>
-**** PROJ Vérifier la génération du transcriptome en hg38: checksum différent
+*** DONE Générer la base de donnée spip
+CLOSED: [2023-08-09 Wed 21:41] SCHEDULED: <2023-08-03 Thu 11:30>
+**** KILL Vérifier la génération du transcriptome en hg38: checksum différent
+CLOSED: [2023-08-09 Wed 21:41]
 - [X] Nettoyer et vérifier sur hg38 avec ediff les RData : différent
 - [X] Sinon, ne pas nettoyer et générer: idem
-**** TODO Récupérer ncbi RefSeq curated
-SCHEDULED: <2023-08-06 Sun>
+**** DONE Récupérer ncbi RefSeq curated
+CLOSED: [2023-08-07 Mon 22:59] SCHEDULED: <2023-08-06 Sun>
 .txt sur UCSC mais pas en T2T: http://hgdownload.cse.ucsc.edu/goldenPath/hg19/database/
 Format: https://genome.ucsc.edu/cgi-bin/hgTables?hgsid=1173061381_UepaHnvaOKFZKMOV4o7DtcNUHGVa&hgta_doSchemaDb=chlSab2&hgta_doSchemaTable=ncbiRefSeqCurated
-Avec "*", les champs conservés (a priori)
-|  1 | bin          | Indexing field to speed chromosome range queries.                       |
-|  2 | *name        | Name of gene (usually transcript_id from GTF)                           |
-|  3 | *chrom       | Reference sequence chromosome or scaffold                               |
-|  4 | *strand      | + or - for strand                                                       |
-|  5 | *txStart     | Transcription start position (or end position for minus strand item)    |
-|  6 | *txEnd       | Transcription end position (or start position for minus strand item)    |
-|  7 | *cdsStart    | Coding region start (or end position for minus strand item)             |
-|  8 | *cdsEnd      | Coding region end (or start position for minus strand item)             |
-|  9 | *exonCount   | Number of exons                                                         |
-| 10 | *exonStarts  | Exon start positions (or end positions for minus strand item)           |
-| 11 | *exonEnds    | Exon end positions (or start positions for minus strand item)           |
-| 12 | *score       | score                                                                   |
-| 13 | *name2       | Alternate name (e.g. gene_id from GTF)                                  |
-| 14 | cdsStartStat | Status of CDS start annotation (none, unknown, incomplete, or complete) |
-| 15 | cdsEndStat   | Status of CDS end annotation (none, unknown, incomplete, or complete)   |
-| 16 | exonFrames   | Exon frame {0,1,2}, or -1 if no frame for exon                          |
-ex:
-585     NR_046018.2     chr1    +       11873   14409   14409   14409   3       11873,12612,13220,      12227,12721,14409,      0       DDX11L1 none    none    -1,-1,-1,
+Ancient format vs nouveau
+|  1 | bin          |  1 | chrom        |
+|  2 | name         |  2 | chromStart   |
+|  3 | chrom        |  3 | chromEnd     |
+|  4 | strand       |  4 | name         |
+|  5 | txStart      |  5 | score        |
+|  6 | txEnd        |  6 | strand       |
+|  7 | cdsStart     |  7 | thickStart   |
+|  8 | cdsEnd       |  8 | thickEnd     |
+|  9 | exonCount    |  9 | reserved     |
+| 10 | exonStarts   | 10 | blockCount   |
+| 11 | exonEnds     | 11 | blockSizes   |
+| 12 | score        | 12 | chromStarts  |
+| 13 | name2        | 13 | name2        |
+| 14 | cdsStartStat | 14 | cdsStartStat |
+| 15 | cdsEndStat   | 15 | cdsEndStat   |
+| 16 | exonFrames   | 16 | exonFrames   |
+|    |              | 17 | type         |
+|    |              | 18 | geneName     |
+|    |              | 19 | geneName2    |
+|    |              | 20 | geneType     |
+
 
 En T2T, seulement au format bigBed : https://hgdownload.soe.ucsc.edu/gbdb/hs1/ncbiRefSeq/
 Il y a un exécutable pour convertir en bed : http://hgdownload.soe.ucsc.edu/admin/exe/
-
 Sous gentoo, il faut instaler mit-krb5 (pour libkrb5)
 #+begin_src
 ./bigBedToBed ncbiRefSeqCurated.bb ncbiRefSeqCurated.bed
@@ -1442,27 +1445,6 @@ Dans R:
 1 12227,12721,14409,   0 DDX11L1 none none -1,-1,-1, 354,109,1189, 0,739,1347,
 
 Ne pas oublier les headers car ils sont dans un ordre différent:
- 1 #chrom
- 2 chromStart
- 3 chromEnd
- 4 name
- 5 score
- 6  strand
- 7 thickStart
- 8 thickEnd
- 9 reserved
-10 blockCount
-11 blockSizes
-12 chromStarts
-13 name2
-14 cdsStartStat
-15 cdsEndStat
-16 exonFrames
-17 type
-18 geneName
-19 geneName2
-20 geneType
-
 Colonnes en GRGh38 =
 3, 5, 6, 2, 12, 4, 7,  8, 12, 9, 17, 18, 13
 Correspondance en T2T
@@ -1474,11 +1456,129 @@ En fait, il suffit d'avoir
 - la fin du transcrit
 - le brin
   pour générer
-*** TODO Tester correspondance partielle ?
+***** KILL Tester correspondance partielle ?
+CLOSED: [2023-08-07 Mon 22:58]
 pas de CDS et pas de colonne 17 et 18
 seules les colonnes (dans la nouvelle dataframe) 10,11,12 causent problèmes (9,17,18 dans les ancienne)
 
 NB: on peut retrouver le nombre d'exons colonnes 9 à partir de la lons
+***** DONE Correspondance totale
+CLOSED: [2023-08-07 Mon 22:59]
+> dataRefSeq[1,]
+    V1    V2    V3        V4 V5 V6    V7    V8 V9 V10           V11         V12
+1 chr1 11873 14409 NR_046018  0  + 14409 14409  0   3 354,109,1189, 0,739,1347,
+      V13
+1 DDX11L1
+> source("pkgs/getRefSeqDatabaseT2T.r")
+Use the URL: http://hgdownload.cse.ucsc.edu/goldenPath/
+read files...
+> dataRefSeq[1,]
+    V1   V2    V3        V4 V5 V6    V7    V8 V5.1 V10       V11     V12
+1 chr1 7505 13582 NR_182076  0  - 13582 13582    0   2 5477,138, 0,5939,
+           V13
+1 LOC127239154
+*** TODO Vérifier annotation SPIP sur variants confirmer
+SCHEDULED: <2023-08-09 Wed>
+**** 5 variants patho tirés de l'article princips
+On trié par SQUIRLS décroissant
+#+begin_src sh
+varID
+NM_000051:c.2251-10T>G
+NM_000267:c.889-12T>A
+NM_000059:c.8488-9T>G
+NM_000249:c.589-10T>A
+NM_000249:c.791-7T>A
+#+end_src
+***** DONE En hg38
+CLOSED: [2023-08-09 Wed 22:01]
+#+begin_src
+spip --input test-spip.txt --output test-spip.out --GenomeAssenbly hg38 --threads 1 --maxLines 1000
+#+end_src
+
+#+RESULTS:
+| varID                  | Interpretation | InterConfident              | SPiPscore | strand |    gNomen | varType      | ntChange | ExonInfo  | exonSize | transcript | gene  | NearestSS | DistSS | RegType    | SPiCEproba | SPiCEinter_2thr | deltaMES | BP  | mutInPBarea | deltaESRscore | posCryptMut | sstypeCryptMut | probaCryptMut | classProbaCryptMut | nearestSStoCrypt | nearestPosSStoCrypt | nearestDistSStoCrypt | posCryptWT | probaCryptWT | classProbaCryptWT | posSSPhysio | probaSSPhysio | classProbaSSPhysio | probaSSPhysioMut | classProbaSSPhysioMut |
+| NM_000051:c.2251-10T>G | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.986 | +      | 108257471 | substitution | T>G      | Intron 14 |     1140 | NM_000051  | ATM   | acceptor  |    -10 | IntronCons |          1 | high            |        0 | 0No |          10 |     108257471 | Acc         |    0.024836003 | No            | Acc                |        108257480 |                 -10 |                    0 |          0 | No           |         108257480 | 0.006489079 | No            |     0.000004368542 | No               |                       |
+| NM_000267:c.889-12T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     1.000 | +      |  31200410 | substitution | T>A      | Intron 8  |    17756 | NM_000267  | NF1   | acceptor  |    -12 | IntronCons |          1 | high            |        0 | 0No |          10 |      31200411 | Acc         |    0.009082899 | No            | Acc                |         31200421 |                 -11 |                    0 |          0 | No           |          31200421 | 0.005160854 | No            |     0.000003718518 | No               |                       |
+| NM_000059:c.8488-9T>G  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.994 | +      |  32370947 | substitution | T>G      | Intron 19 |      398 | NM_000059  | BRCA2 | acceptor  |     -9 | IntronCons |          1 | high            |        0 | 0No |          10 |      32370947 | Acc         |    0.004449623 | No            | Acc                |         32370955 |                  -9 |                    0 |          0 | No           |          32370955 | 0.005060308 | No            |     0.000005609419 | No               |                       |
+| NM_000249:c.589-10T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.978 | +      |  37012001 | substitution | T>A      | Intron 7  |      148 | NM_000249  | MLH1  | acceptor  |    -10 | IntronCons |          1 | high            |        0 | 0No |          10 |      37012002 | Acc         |    0.009529819 | No            | Acc                |         37012010 |                  -9 |                    0 |          0 | No           |          37012010 | 0.028437574 | No            |     0.000009275960 | No               |                       |
+| NM_000249:c.791-7T>A   | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.988 | +      |  37017499 | substitution | T>A      | Intron 9  |     2961 | NM_000249  | MLH1  | acceptor  |     -7 | IntronCons |          1 | high            |        0 | 0No |          10 |      37017500 | Acc         |    0.015564917 | No            | Acc                |         37017505 |                  -6 |                    0 |          0 | No           |          37017505 | 0.023995855 | No            |     0.000022606476 | No               |                       |
+
+Test sur mobidetails : 98% pour spip (! différent du fichier excel...)
+
+Second variant: ok en VCf également
+
+***** DONE Lifter les variants T2T : ok ! mais multiples trnascrits en génomique ...
+CLOSED: [2023-08-09 Wed 23:23] SCHEDULED: <2023-08-09 Wed>
+##fileformat=VCFv4.0
+##assembly=GRCh38/hg38
+##ALT=<ID=*,Description="Represents allele(s) other than observed.">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+chr11	108264994	lol	T	G	.	.	.
+chr17	32146124	lol	T	A	.	.	.
+chr3	31588185	lol	T	G	.	.	.
+chr3	37013346	lol	T	A	.	.	.
+chr3	37018844	lol	T	A	.	.	.
+
+❯ ./result/bin/spip -I test-spip-T2T.vcf -O test-spip-T2T.out -g hs1 --refseq dataRefSeqhs1.RData --transcriptome transcriptome_hs1.RData
+
+        #+RESULTS:
+| CHROM |       POS | ID  | REF | ALT | QUAL | FILTER | INFO | varID                        | Interpretation | InterConfident              | SPiPscore | strand |    gNomen | varType      | ntChange | ExonInfo  | exonSize | transcript   | gene  | NearestSS | DistSS | RegType    | SPiCEproba | SPiCEinter_2thr              | deltaMES | BP | mutInPBarea | deltaESRscore | posCryptMut | sstypeCryptMut |    probaCryptMut | classProbaCryptMut | nearestSStoCrypt | nearestPosSStoCrypt | nearestDistSStoCrypt | posCryptWT |     probaCryptWT | classProbaCryptWT | posSSPhysio | probaSSPhysio | classProbaSSPhysio | probaSSPhysioMut | classProbaSSPhysioMut |
+| chr11 | 108264994 | lol | T   | G   | .    | .      | .    | NM_000051:g.108264994:T>G    | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.986 | +      | 108264994 | substitution | T>G      | Intron 14 |     1140 | NM_000051    | ATM   | acceptor  |    -10 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |   108264994 | Acc            | 0.02483600258856 | No                 | Acc              |           108265003 |                  -10 |          0 | 0.00000000000000 | No                |   108265003 |   0.006489079 | No                 |   0.000004368542 | No                    |
+| chr11 | 108264994 | lol | T   | G   | .    | .      | .    | NM_001351834:g.108264994:T>G | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.986 | +      | 108264994 | substitution | T>G      | Intron 15 |     1140 | NM_001351834 | ATM   | acceptor  |    -10 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |   108264994 | Acc            | 0.02483600258856 | No                 | Acc              |           108265003 |                  -10 |          0 | 0.00000000000000 | No                |   108265003 |   0.006489079 | No                 |   0.000004368542 | No                    |
+| chr17 |  32146124 | lol | T   | A   | .    | .      | .    | NM_000267:g.32146124:T>A     | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     1.000 | +      |  32146124 | substitution | T>A      | Intron 8  |    17755 | NM_000267    | NF1   | acceptor  |    -12 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    32146125 | Acc            | 0.00908289924996 | No                 | Acc              |            32146135 |                  -11 |          0 | 0.00000000000000 | No                |    32146135 |   0.005160854 | No                 |   0.000003718518 | No                    |
+| chr17 |  32146124 | lol | T   | A   | .    | .      | .    | NM_001128147:g.32146124:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     1.000 | +      |  32146124 | substitution | T>A      | Intron 8  |    17755 | NM_001128147 | NF1   | acceptor  |    -12 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    32146125 | Acc            | 0.00908289924996 | No                 | Acc              |            32146135 |                  -11 |          0 | 0.00000000000000 | No                |    32146135 |   0.005160854 | No                 |   0.000003718518 | No                    |
+| chr17 |  32146124 | lol | T   | A   | .    | .      | .    | NM_001042492:g.32146124:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     1.000 | +      |  32146124 | substitution | T>A      | Intron 8  |    17755 | NM_001042492 | NF1   | acceptor  |    -12 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    32146125 | Acc            | 0.00908289924996 | No                 | Acc              |            32146135 |                  -11 |          0 | 0.00000000000000 | No                |    32146135 |   0.005160854 | No                 |   0.000003718518 | No                    |
+| chr3  |  31588185 | lol | T   | G   | .    | .      | .    | NM_178862:g.31588185:T>G     | NTR            | 00 % [00 % - 00.92 %]       |     0.000 | +      |  31588185 | substitution | T>G      | Intron 3  |    16710 | NM_178862    | STT3B | donor     |   5663 | DeepIntron |          0 | Outside SPiCE Interpretation |        0 |  0 | No          |            10 |    31588184 | Don            | 0.00000002308527 | No                 | Don              |            31582522 |                 5662 |   31588181 | 0.00000000129731 | No                |    31582522 |   0.071835522 | Yes                |   0.071835521718 | Yes                   |
+| chr3  |  37013346 | lol | T   | A   | .    | .      | .    | NM_000249:g.37013346:T>A     | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.978 | +      |  37013346 | substitution | T>A      | Intron 7  |      148 | NM_000249    | MLH1  | acceptor  |    -10 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37013347 | Acc            | 0.00952981867149 | No                 | Acc              |            37013355 |                   -9 |          0 | 0.00000000000000 | No                |    37013355 |   0.028437574 | No                 |   0.000009275960 | No                    |
+| chr3  |  37013346 | lol | T   | A   | .    | .      | .    | NM_001167617:g.37013346:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.978 | +      |  37013346 | substitution | T>A      | Intron 7  |      148 | NM_001167617 | MLH1  | acceptor  |    -10 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37013347 | Acc            | 0.00952981867149 | No                 | Acc              |            37013355 |                   -9 |          0 | 0.00000000000000 | No                |    37013355 |   0.028437574 | No                 |   0.000009275960 | No                    |
+| chr3  |  37013346 | lol | T   | A   | .    | .      | .    | NM_001167618:g.37013346:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.978 | +      |  37013346 | substitution | T>A      | Intron 7  |      148 | NM_001167618 | MLH1  | acceptor  |    -10 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37013347 | Acc            | 0.00952981867149 | No                 | Acc              |            37013355 |                   -9 |          0 | 0.00000000000000 | No                |    37013355 |   0.028437574 | No                 |   0.000009275960 | No                    |
+| chr3  |  37013346 | lol | T   | A   | .    | .      | .    | NM_001167619:g.37013346:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.978 | +      |  37013346 | substitution | T>A      | Intron 6  |      148 | NM_001167619 | MLH1  | acceptor  |    -10 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37013347 | Acc            | 0.00952981867149 | No                 | Acc              |            37013355 |                   -9 |          0 | 0.00000000000000 | No                |    37013355 |   0.028437574 | No                 |   0.000009275960 | No                    |
+| chr3  |  37013346 | lol | T   | A   | .    | .      | .    | NM_001258271:g.37013346:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.978 | +      |  37013346 | substitution | T>A      | Intron 7  |      148 | NM_001258271 | MLH1  | acceptor  |    -10 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37013347 | Acc            | 0.00952981867149 | No                 | Acc              |            37013355 |                   -9 |          0 | 0.00000000000000 | No                |    37013355 |   0.028437574 | No                 |   0.000009275960 | No                    |
+| chr3  |  37013346 | lol | T   | A   | .    | .      | .    | NM_001258273:g.37013346:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.978 | +      |  37013346 | substitution | T>A      | Intron 6  |      148 | NM_001258273 | MLH1  | acceptor  |    -10 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37013347 | Acc            | 0.00952981867149 | No                 | Acc              |            37013355 |                   -9 |          0 | 0.00000000000000 | No                |    37013355 |   0.028437574 | No                 |   0.000009275960 | No                    |
+| chr3  |  37013346 | lol | T   | A   | .    | .      | .    | NM_001258274:g.37013346:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.978 | +      |  37013346 | substitution | T>A      | Intron 8  |      148 | NM_001258274 | MLH1  | acceptor  |    -10 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37013347 | Acc            | 0.00952981867149 | No                 | Acc              |            37013355 |                   -9 |          0 | 0.00000000000000 | No                |    37013355 |   0.028437574 | No                 |   0.000009275960 | No                    |
+| chr3  |  37013346 | lol | T   | A   | .    | .      | .    | NM_001354615:g.37013346:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.978 | +      |  37013346 | substitution | T>A      | Intron 6  |      148 | NM_001354615 | MLH1  | acceptor  |    -10 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37013347 | Acc            | 0.00952981867149 | No                 | Acc              |            37013355 |                   -9 |          0 | 0.00000000000000 | No                |    37013355 |   0.028437574 | No                 |   0.000009275960 | No                    |
+| chr3  |  37013346 | lol | T   | A   | .    | .      | .    | NM_001354616:g.37013346:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.978 | +      |  37013346 | substitution | T>A      | Intron 6  |      148 | NM_001354616 | MLH1  | acceptor  |    -10 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37013347 | Acc            | 0.00952981867149 | No                 | Acc              |            37013355 |                   -9 |          0 | 0.00000000000000 | No                |    37013355 |   0.028437574 | No                 |   0.000009275960 | No                    |
+| chr3  |  37013346 | lol | T   | A   | .    | .      | .    | NM_001354617:g.37013346:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.978 | +      |  37013346 | substitution | T>A      | Intron 7  |      148 | NM_001354617 | MLH1  | acceptor  |    -10 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37013347 | Acc            | 0.00952981867149 | No                 | Acc              |            37013355 |                   -9 |          0 | 0.00000000000000 | No                |    37013355 |   0.028437574 | No                 |   0.000009275960 | No                    |
+| chr3  |  37013346 | lol | T   | A   | .    | .      | .    | NM_001354618:g.37013346:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.978 | +      |  37013346 | substitution | T>A      | Intron 7  |      148 | NM_001354618 | MLH1  | acceptor  |    -10 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37013347 | Acc            | 0.00952981867149 | No                 | Acc              |            37013355 |                   -9 |          0 | 0.00000000000000 | No                |    37013355 |   0.028437574 | No                 |   0.000009275960 | No                    |
+| chr3  |  37013346 | lol | T   | A   | .    | .      | .    | NM_001354619:g.37013346:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.978 | +      |  37013346 | substitution | T>A      | Intron 8  |      148 | NM_001354619 | MLH1  | acceptor  |    -10 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37013347 | Acc            | 0.00952981867149 | No                 | Acc              |            37013355 |                   -9 |          0 | 0.00000000000000 | No                |    37013355 |   0.028437574 | No                 |   0.000009275960 | No                    |
+| chr3  |  37013346 | lol | T   | A   | .    | .      | .    | NM_001354620:g.37013346:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.978 | +      |  37013346 | substitution | T>A      | Intron 7  |      148 | NM_001354620 | MLH1  | acceptor  |    -10 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37013347 | Acc            | 0.00952981867149 | No                 | Acc              |            37013355 |                   -9 |          0 | 0.00000000000000 | No                |    37013355 |   0.028437574 | No                 |   0.000009275960 | No                    |
+| chr3  |  37013346 | lol | T   | A   | .    | .      | .    | NM_001354621:g.37013346:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.978 | +      |  37013346 | substitution | T>A      | Intron 7  |      148 | NM_001354621 | MLH1  | acceptor  |    -10 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37013347 | Acc            | 0.00952981867149 | No                 | Acc              |            37013355 |                   -9 |          0 | 0.00000000000000 | No                |    37013355 |   0.028437574 | No                 |   0.000009275960 | No                    |
+| chr3  |  37013346 | lol | T   | A   | .    | .      | .    | NM_001354622:g.37013346:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.978 | +      |  37013346 | substitution | T>A      | Intron 7  |      148 | NM_001354622 | MLH1  | acceptor  |    -10 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37013347 | Acc            | 0.00952981867149 | No                 | Acc              |            37013355 |                   -9 |          0 | 0.00000000000000 | No                |    37013355 |   0.028437574 | No                 |   0.000009275960 | No                    |
+| chr3  |  37013346 | lol | T   | A   | .    | .      | .    | NM_001354623:g.37013346:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.978 | +      |  37013346 | substitution | T>A      | Intron 6  |      148 | NM_001354623 | MLH1  | acceptor  |    -10 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37013347 | Acc            | 0.00952981867149 | No                 | Acc              |            37013355 |                   -9 |          0 | 0.00000000000000 | No                |    37013355 |   0.028437574 | No                 |   0.000009275960 | No                    |
+| chr3  |  37013346 | lol | T   | A   | .    | .      | .    | NM_001354624:g.37013346:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.978 | +      |  37013346 | substitution | T>A      | Intron 7  |      148 | NM_001354624 | MLH1  | acceptor  |    -10 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37013347 | Acc            | 0.00952981867149 | No                 | Acc              |            37013355 |                   -9 |          0 | 0.00000000000000 | No                |    37013355 |   0.028437574 | No                 |   0.000009275960 | No                    |
+| chr3  |  37013346 | lol | T   | A   | .    | .      | .    | NM_001354625:g.37013346:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.978 | +      |  37013346 | substitution | T>A      | Intron 6  |      148 | NM_001354625 | MLH1  | acceptor  |    -10 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37013347 | Acc            | 0.00952981867149 | No                 | Acc              |            37013355 |                   -9 |          0 | 0.00000000000000 | No                |    37013355 |   0.028437574 | No                 |   0.000009275960 | No                    |
+| chr3  |  37013346 | lol | T   | A   | .    | .      | .    | NM_001354626:g.37013346:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.978 | +      |  37013346 | substitution | T>A      | Intron 7  |      148 | NM_001354626 | MLH1  | acceptor  |    -10 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37013347 | Acc            | 0.00952981867149 | No                 | Acc              |            37013355 |                   -9 |          0 | 0.00000000000000 | No                |    37013355 |   0.028437574 | No                 |   0.000009275960 | No                    |
+| chr3  |  37013346 | lol | T   | A   | .    | .      | .    | NM_001354627:g.37013346:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.978 | +      |  37013346 | substitution | T>A      | Intron 7  |      148 | NM_001354627 | MLH1  | acceptor  |    -10 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37013347 | Acc            | 0.00952981867149 | No                 | Acc              |            37013355 |                   -9 |          0 | 0.00000000000000 | No                |    37013355 |   0.028437574 | No                 |   0.000009275960 | No                    |
+| chr3  |  37013346 | lol | T   | A   | .    | .      | .    | NM_001354628:g.37013346:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.978 | +      |  37013346 | substitution | T>A      | Intron 7  |      148 | NM_001354628 | MLH1  | acceptor  |    -10 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37013347 | Acc            | 0.00952981867149 | No                 | Acc              |            37013355 |                   -9 |          0 | 0.00000000000000 | No                |    37013355 |   0.028437574 | No                 |   0.000009275960 | No                    |
+| chr3  |  37013346 | lol | T   | A   | .    | .      | .    | NM_001354629:g.37013346:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.978 | +      |  37013346 | substitution | T>A      | Intron 6  |      148 | NM_001354629 | MLH1  | acceptor  |    -10 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37013347 | Acc            | 0.00952981867149 | No                 | Acc              |            37013355 |                   -9 |          0 | 0.00000000000000 | No                |    37013355 |   0.028437574 | No                 |   0.000009275960 | No                    |
+| chr3  |  37013346 | lol | T   | A   | .    | .      | .    | NM_001354630:g.37013346:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.978 | +      |  37013346 | substitution | T>A      | Intron 7  |      148 | NM_001354630 | MLH1  | acceptor  |    -10 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37013347 | Acc            | 0.00952981867149 | No                 | Acc              |            37013355 |                   -9 |          0 | 0.00000000000000 | No                |    37013355 |   0.028437574 | No                 |   0.000009275960 | No                    |
+| chr3  |  37018844 | lol | T   | A   | .    | .      | .    | NM_000249:g.37018844:T>A     | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.988 | +      |  37018844 | substitution | T>A      | Intron 9  |     2961 | NM_000249    | MLH1  | acceptor  |     -7 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37018845 | Acc            | 0.01556491731833 | No                 | Acc              |            37018850 |                   -6 |          0 | 0.00000000000000 | No                |    37018850 |   0.023995855 | No                 |   0.000022606476 | No                    |
+| chr3  |  37018844 | lol | T   | A   | .    | .      | .    | NM_001167617:g.37018844:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.988 | +      |  37018844 | substitution | T>A      | Intron 9  |     2961 | NM_001167617 | MLH1  | acceptor  |     -7 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37018845 | Acc            | 0.01556491731833 | No                 | Acc              |            37018850 |                   -6 |          0 | 0.00000000000000 | No                |    37018850 |   0.023995855 | No                 |   0.000022606476 | No                    |
+| chr3  |  37018844 | lol | T   | A   | .    | .      | .    | NM_001167618:g.37018844:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.988 | +      |  37018844 | substitution | T>A      | Intron 9  |     2961 | NM_001167618 | MLH1  | acceptor  |     -7 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37018845 | Acc            | 0.01556491731833 | No                 | Acc              |            37018850 |                   -6 |          0 | 0.00000000000000 | No                |    37018850 |   0.023995855 | No                 |   0.000022606476 | No                    |
+| chr3  |  37018844 | lol | T   | A   | .    | .      | .    | NM_001167619:g.37018844:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.988 | +      |  37018844 | substitution | T>A      | Intron 8  |     2961 | NM_001167619 | MLH1  | acceptor  |     -7 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37018845 | Acc            | 0.01556491731833 | No                 | Acc              |            37018850 |                   -6 |          0 | 0.00000000000000 | No                |    37018850 |   0.023995855 | No                 |   0.000022606476 | No                    |
+| chr3  |  37018844 | lol | T   | A   | .    | .      | .    | NM_001258271:g.37018844:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.988 | +      |  37018844 | substitution | T>A      | Intron 9  |     2961 | NM_001258271 | MLH1  | acceptor  |     -7 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37018845 | Acc            | 0.01556491731833 | No                 | Acc              |            37018850 |                   -6 |          0 | 0.00000000000000 | No                |    37018850 |   0.023995855 | No                 |   0.000022606476 | No                    |
+| chr3  |  37018844 | lol | T   | A   | .    | .      | .    | NM_001258273:g.37018844:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.988 | +      |  37018844 | substitution | T>A      | Intron 8  |     2961 | NM_001258273 | MLH1  | acceptor  |     -7 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37018845 | Acc            | 0.01556491731833 | No                 | Acc              |            37018850 |                   -6 |          0 | 0.00000000000000 | No                |    37018850 |   0.023995855 | No                 |   0.000022606476 | No                    |
+| chr3  |  37018844 | lol | T   | A   | .    | .      | .    | NM_001258274:g.37018844:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.988 | +      |  37018844 | substitution | T>A      | Intron 10 |     2961 | NM_001258274 | MLH1  | acceptor  |     -7 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37018845 | Acc            | 0.01556491731833 | No                 | Acc              |            37018850 |                   -6 |          0 | 0.00000000000000 | No                |    37018850 |   0.023995855 | No                 |   0.000022606476 | No                    |
+| chr3  |  37018844 | lol | T   | A   | .    | .      | .    | NM_001354615:g.37018844:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.988 | +      |  37018844 | substitution | T>A      | Intron 8  |     2961 | NM_001354615 | MLH1  | acceptor  |     -7 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37018845 | Acc            | 0.01556491731833 | No                 | Acc              |            37018850 |                   -6 |          0 | 0.00000000000000 | No                |    37018850 |   0.023995855 | No                 |   0.000022606476 | No                    |
+| chr3  |  37018844 | lol | T   | A   | .    | .      | .    | NM_001354616:g.37018844:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.988 | +      |  37018844 | substitution | T>A      | Intron 8  |     2961 | NM_001354616 | MLH1  | acceptor  |     -7 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37018845 | Acc            | 0.01556491731833 | No                 | Acc              |            37018850 |                   -6 |          0 | 0.00000000000000 | No                |    37018850 |   0.023995855 | No                 |   0.000022606476 | No                    |
+| chr3  |  37018844 | lol | T   | A   | .    | .      | .    | NM_001354617:g.37018844:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.988 | +      |  37018844 | substitution | T>A      | Intron 9  |     2961 | NM_001354617 | MLH1  | acceptor  |     -7 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37018845 | Acc            | 0.01556491731833 | No                 | Acc              |            37018850 |                   -6 |          0 | 0.00000000000000 | No                |    37018850 |   0.023995855 | No                 |   0.000022606476 | No                    |
+| chr3  |  37018844 | lol | T   | A   | .    | .      | .    | NM_001354618:g.37018844:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.988 | +      |  37018844 | substitution | T>A      | Intron 9  |     2961 | NM_001354618 | MLH1  | acceptor  |     -7 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37018845 | Acc            | 0.01556491731833 | No                 | Acc              |            37018850 |                   -6 |          0 | 0.00000000000000 | No                |    37018850 |   0.023995855 | No                 |   0.000022606476 | No                    |
+| chr3  |  37018844 | lol | T   | A   | .    | .      | .    | NM_001354619:g.37018844:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.988 | +      |  37018844 | substitution | T>A      | Intron 10 |     2961 | NM_001354619 | MLH1  | acceptor  |     -7 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37018845 | Acc            | 0.01556491731833 | No                 | Acc              |            37018850 |                   -6 |          0 | 0.00000000000000 | No                |    37018850 |   0.023995855 | No                 |   0.000022606476 | No                    |
+| chr3  |  37018844 | lol | T   | A   | .    | .      | .    | NM_001354620:g.37018844:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.988 | +      |  37018844 | substitution | T>A      | Intron 9  |     2961 | NM_001354620 | MLH1  | acceptor  |     -7 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37018845 | Acc            | 0.01556491731833 | No                 | Acc              |            37018850 |                   -6 |          0 | 0.00000000000000 | No                |    37018850 |   0.023995855 | No                 |   0.000022606476 | No                    |
+| chr3  |  37018844 | lol | T   | A   | .    | .      | .    | NM_001354621:g.37018844:T>A  | NTR            | 00 % [00 % - 00.92 %]       |     0.000 | +      |  37018844 | substitution | T>A      | Intron 8  |     8209 | NM_001354621 | MLH1  | acceptor  |  -2810 | DeepIntron |          0 | Outside SPiCE Interpretation |        0 |  0 | No          |            10 |    37018845 | Acc            | 0.01556491731833 | No                 | Acc              |            37021653 |                -2809 |   37018850 | 0.02399585516738 | No                |    37021653 |   0.241893494 | Yes                |   0.241893494461 | Yes                   |
+| chr3  |  37018844 | lol | T   | A   | .    | .      | .    | NM_001354622:g.37018844:T>A  | NTR            | 00 % [00 % - 00.92 %]       |     0.000 | +      |  37018844 | substitution | T>A      | Intron 9  |     5764 | NM_001354622 | MLH1  | acceptor  |  -2810 | DeepIntron |          0 | Outside SPiCE Interpretation |        0 |  0 | No          |            10 |    37018845 | Acc            | 0.01556491731833 | No                 | Acc              |            37021653 |                -2809 |   37018850 | 0.02399585516738 | No                |    37021653 |   0.241893494 | Yes                |   0.241893494461 | Yes                   |
+| chr3  |  37018844 | lol | T   | A   | .    | .      | .    | NM_001354623:g.37018844:T>A  | NTR            | 00 % [00 % - 00.92 %]       |     0.000 | +      |  37018844 | substitution | T>A      | Intron 8  |     5764 | NM_001354623 | MLH1  | acceptor  |  -2810 | DeepIntron |          0 | Outside SPiCE Interpretation |        0 |  0 | No          |            10 |    37018845 | Acc            | 0.01556491731833 | No                 | Acc              |            37021653 |                -2809 |   37018850 | 0.02399585516738 | No                |    37021653 |   0.241893494 | Yes                |   0.241893494461 | Yes                   |
+| chr3  |  37018844 | lol | T   | A   | .    | .      | .    | NM_001354624:g.37018844:T>A  | NTR            | 00 % [00 % - 00.92 %]       |     0.000 | +      |  37018844 | substitution | T>A      | Intron 9  |    11091 | NM_001354624 | MLH1  | donor     |   2955 | DeepIntron |          0 | Outside SPiCE Interpretation |        0 |  0 | No          |            10 |    37018845 | Acc            | 0.01556491731833 | No                 | Don              |            37015889 |                 2956 |   37018850 | 0.02399585516738 | No                |    37026980 |   0.028353019 | No                 |   0.028353019047 | No                    |
+| chr3  |  37018844 | lol | T   | A   | .    | .      | .    | NM_001354625:g.37018844:T>A  | NTR            | 00 % [00 % - 00.92 %]       |     0.000 | +      |  37018844 | substitution | T>A      | Intron 8  |    11091 | NM_001354625 | MLH1  | donor     |   2955 | DeepIntron |          0 | Outside SPiCE Interpretation |        0 |  0 | No          |            10 |    37018845 | Acc            | 0.01556491731833 | No                 | Don              |            37015889 |                 2956 |   37018850 | 0.02399585516738 | No                |    37026980 |   0.028353019 | No                 |   0.028353019047 | No                    |
+| chr3  |  37018844 | lol | T   | A   | .    | .      | .    | NM_001354626:g.37018844:T>A  | NTR            | 00 % [00 % - 00.92 %]       |     0.000 | +      |  37018844 | substitution | T>A      | Intron 9  |    11091 | NM_001354626 | MLH1  | donor     |   2955 | DeepIntron |          0 | Outside SPiCE Interpretation |        0 |  0 | No          |            10 |    37018845 | Acc            | 0.01556491731833 | No                 | Don              |            37015889 |                 2956 |   37018850 | 0.02399585516738 | No                |    37026980 |   0.028353019 | No                 |   0.028353019047 | No                    |
+| chr3  |  37018844 | lol | T   | A   | .    | .      | .    | NM_001354627:g.37018844:T>A  | NTR            | 00 % [00 % - 00.92 %]       |     0.000 | +      |  37018844 | substitution | T>A      | Intron 9  |    11091 | NM_001354627 | MLH1  | donor     |   2955 | DeepIntron |          0 | Outside SPiCE Interpretation |        0 |  0 | No          |            10 |    37018845 | Acc            | 0.01556491731833 | No                 | Don              |            37015889 |                 2956 |   37018850 | 0.02399585516738 | No                |    37026980 |   0.028353019 | No                 |   0.028353019047 | No                    |
+| chr3  |  37018844 | lol | T   | A   | .    | .      | .    | NM_001354628:g.37018844:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.988 | +      |  37018844 | substitution | T>A      | Intron 9  |     2961 | NM_001354628 | MLH1  | acceptor  |     -7 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37018845 | Acc            | 0.01556491731833 | No                 | Acc              |            37018850 |                   -6 |          0 | 0.00000000000000 | No                |    37018850 |   0.023995855 | No                 |   0.000022606476 | No                    |
+| chr3  |  37018844 | lol | T   | A   | .    | .      | .    | NM_001354629:g.37018844:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.988 | +      |  37018844 | substitution | T>A      | Intron 8  |     2961 | NM_001354629 | MLH1  | acceptor  |     -7 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37018845 | Acc            | 0.01556491731833 | No                 | Acc              |            37018850 |                   -6 |          0 | 0.00000000000000 | No                |    37018850 |   0.023995855 | No                 |   0.000022606476 | No                    |
+| chr3  |  37018844 | lol | T   | A   | .    | .      | .    | NM_001354630:g.37018844:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.988 | +      |  37018844 | substitution | T>A      | Intron 9  |     2961 | NM_001354630 | MLH1  | acceptor  |     -7 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37018845 | Acc            | 0.01556491731833 | No                 | Acc              |            37018850 |                   -6 |          0 | 0.00000000000000 | No                |    37018850 |   0.023995855 | No                 |   0.000022606476 | No                    |
+|       |           |     |     |     |      |        |      |                              |                |                             |           |        |           |              |          |           |          |              |       |           |        |            |            |                              |          |    |             |               |             |                |                  |                    |                  |                     |                      |            |                  |                   |             |               |                    |                  |                       |
+
+***** TODO Comment gérer les multiples transcripts ?
+SCHEDULED: <2023-08-09 Wed>
 *** PROJ [#A] Filtre vep (avec spip ?)
 ** PROJ [#B] Indicateurs qualité
 *** Idée
@@ -5012,6 +5112,8 @@ CLOSED: [2023-08-06 Sun 20:24] SCHEDULED: <2023-08-06 Sun>
 **** KILL Tester si le panel Twist Alliance VCGS Exome suffit
 CLOSED: [2023-07-31 Mon 22:31] SCHEDULED: <2023-07-30 Sun>
 **** PROJ Comparer happy et happy-vcfeval :giab:
+**** WAIT Mail cento pour demande le type de capture
+/Entered on/ [2023-08-07 Mon 20:40]
 ** TODO Insilico :cento:
 *** TODO tous les variants centogène
 **** DONE Extraire liste des SNVs

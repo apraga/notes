@@ -6548,3 +6548,7 @@ Essai: moins tenir la barre
 -  10
 ** Norwegian roll
 -  4
+* <2023-08-08 Tue> Tricking
+kick 25x2
+roundhouse kick x2 each side x25
+cartwheel x15
