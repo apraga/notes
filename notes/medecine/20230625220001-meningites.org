@@ -53,6 +53,32 @@ Diag différentiel =
   - oreillons (parotidie, vacins): RT-PCR dans LCS, ttt symptomatique
   - primo infection VIH (prise de risque): 10% primo-ifection. Diag = séro +/- charge virale
   - LCMV (rongeur), arbovirus (voyage - West nile)
+** Herpétique
+- *mortelle dans 70%* => urgence thérapeutique
+- la plus fréquente des encéphalite sporadiques
+ Diagnostic = PCR sur lCS
+*** Physiopath
+- muqueuses de la fac -> lance ganglion trijumeau. Rarement accès SNC (via muqueuse nasale ?)
+- lésions cérébrales : focales (temporales, uni -> bilatérales)
+- éncéphalite pure -> méningo-encéphalite
+*** Clinique
+- Début progressif, fière > 48h
+- Céphalées, nausées vomissement
+- Aphasie, désorientation, conscience
+- Crises convulsives focale -> génralisé
+- Déficit neuro focalisé. *Cherche signe HTIC = contre-indication PL*
+*** Biologique
+- PL: 5-5000 élément, majoritairement lymphocytaire; glycorachie normale, protéinorache modérément élevée (<1.5g/L)
+- *PCR HSV* si encéphalite + méningite lymphocytaire. La PCR doit pouvoir différencier HSV1 et 2 (2 = exceptionnel sauf nouveau-né)
+  - *PCR peut être négative initialement* : répétér à 48/72h
+- Sérologive : utile chez l’enfant (sang + LCS)
+*** Autre
+- EEG = focal (temporal), imagerie = focal (temporal), nécroto-hémorragique
+*** Traitement
+- *Après la PL, sans attendre*: aciclovir IV 15 jours
+- contrôle par PL : seulement si non amélioration clinique : si PCR positiv, poursuite 7j
+
+
 * Examens
 - Cytologie :
   - bactérienne  > 500/mm^3 (rares cas sans pléiocytose en début d'infection)
@@ -84,3 +110,4 @@ Diag différentiel =
 ** Néonatal
 - maternofoetal [transmissiou tardive (>72h)
 - Amox si strepto agalactia, céfotaxime si E.coli (50% pénicillinase), amox si listéria (résistance céphalo)
+
