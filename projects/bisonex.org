@@ -338,7 +338,42 @@ https://www.twistbioscience.com/node/23906
 Bed non fourni pour exactement cette capture
 On prend https://www.twistbioscience.com/resources/data-files/twist-alliance-vcgs-exome-401mb-bed-files
 qui content la majeure partie
+* Réunion
+** <2023-08-10 Thu> Alexis
+Ok pour bloquer le développment d'ici mardi prochain
 
+Dév:
+- pipeline jusque VEP en T2T + GRCh38
+- ok pour valider spip T2T sur quelques variant => à intégrer au pipeline
+- annotation :
+  - ok pour mobidetails hg38
+  - +OMIM T2T+ non
+  - +franklin hg38+ non pour le moment
+- métriques (fastq a minima) + rapport multiqc
+- optionnel
+  - reformater la sortsie
+- on abandonne
+  - XAMScissors ave indel
+  - parallélisation haplotype caller
+  - spliceai à la vollée
+  - pangolin
+
+Test
+- GIAB:
+  - hg38: ok pour refaire les tests NA12878 avec données cento, sinon ok pour "c'est difficile" sur les 3 fichiers de capture
+  - T2T: ok pour faire des tests rapides mais probablement pas assez de temps !
+- patient de synthèse : variant cento confirém par sanger seuls
+
+Résultats
+- ok pour scale up bwa mem et haplotyecaller
+
+Manuscrit
+- validation de méthode : laisser tomber la version actuelle et faire comme strasbourg (cf ngs diag) dans la présentatino
+- a envoyé le powerponit avec les références des différsences articles
+- ok pour robo4 si résultat
+- architecture cible = VM : 78 coeurs 54Go RAUM et 1To espace disque
+
+Passage en production : ok pour présentation rapide du code
 * Nixpkgs :nix:
 ** DONE GATK
 CLOSED: [2023-05-06 Sat 08:51]
@@ -443,6 +478,8 @@ Soumis
 ** TODO PR Picard avec option pour gérer la mémoire
 Similaire à
 https://github.com/bioconda/bioconda-recipes/blob/master/recipes/picard/picard.sh
+
+
 
 * Julia :julia:
 ** KILL XAM.jl: PR pour modification record :julia:
@@ -1395,7 +1432,8 @@ T2T n'a pas
 - polyphen
 - gnomAD
 On désactive l'annotation spip pour le moment
-*** PROJ [#A] Porter Spip
+*** TODO [#A] Porter Spip proprement
+SCHEDULED: <2023-08-11 Fri>
 *** DONE Générer la base de donnée spip
 CLOSED: [2023-08-09 Wed 21:41] SCHEDULED: <2023-08-03 Thu 11:30>
 **** KILL Vérifier la génération du transcriptome en hg38: checksum différent
@@ -1477,9 +1515,10 @@ read files...
 1 chr1 7505 13582 NR_182076  0  - 13582 13582    0   2 5477,138, 0,5939,
            V13
 1 LOC127239154
-*** TODO Vérifier annotation SPIP sur variants confirmer
-SCHEDULED: <2023-08-09 Wed>
-**** 5 variants patho tirés de l'article princips
+*** DONE Vérifier annotation SPIP sur variants confirmé
+CLOSED: [2023-08-10 Thu 23:16] SCHEDULED: <2023-08-09 Wed>
+**** DONE 5 variants patho tirés de l'article princips
+CLOSED: [2023-08-10 Thu 23:00]
 On trié par SQUIRLS décroissant
 #+begin_src sh
 varID
@@ -1576,9 +1615,51 @@ chr3	37018844	lol	T	A	.	.	.
 | chr3  |  37018844 | lol | T   | A   | .    | .      | .    | NM_001354629:g.37018844:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.988 | +      |  37018844 | substitution | T>A      | Intron 8  |     2961 | NM_001354629 | MLH1  | acceptor  |     -7 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37018845 | Acc            | 0.01556491731833 | No                 | Acc              |            37018850 |                   -6 |          0 | 0.00000000000000 | No                |    37018850 |   0.023995855 | No                 |   0.000022606476 | No                    |
 | chr3  |  37018844 | lol | T   | A   | .    | .      | .    | NM_001354630:g.37018844:T>A  | Alter by SPiCE | 98.41 % [91.47 % - 99.96 %] |     0.988 | +      |  37018844 | substitution | T>A      | Intron 9  |     2961 | NM_001354630 | MLH1  | acceptor  |     -7 | IntronCons |          1 | high                         |        0 |  0 | No          |            10 |    37018845 | Acc            | 0.01556491731833 | No                 | Acc              |            37018850 |                   -6 |          0 | 0.00000000000000 | No                |    37018850 |   0.023995855 | No                 |   0.000022606476 | No                    |
 |       |           |     |     |     |      |        |      |                              |                |                             |           |        |           |              |          |           |          |              |       |           |        |            |            |                              |          |    |             |               |             |                |                  |                    |                  |                     |                      |            |                  |                   |             |               |                    |                  |                       |
+**** DONE 1 variant avec score = 38% (mobidetails)
+CLOSED: [2023-08-10 Thu 23:16]
+chr10:g.89010760A>G
+Avec
+#+begin_src sh
+varID
+NM_000043.4:c.513A>G
+#+end_src
+On a bien 35.81%
+| varID                | Interpretation | InterConfident             | SPiPscore | strand |   gNomen | varType      | ntChange | ExonInfo | exonSize | transcript | gene | NearestSS | DistSS | RegType | SPiCEproba | SPiCEinter_2thr              | deltaMES | BP | mutInPBarea | deltaESRscore | posCryptMut |  sstypeCryptMut | probaCryptMut | classProbaCryptMut | nearestSStoCrypt | nearestPosSStoCrypt | nearestDistSStoCrypt |      posCryptWT | probaCryptWT | classProbaCryptWT | posSSPhysio | probaSSPhysio | classProbaSSPhysio | probaSSPhysioMut | classProbaSSPhysioMut |
+| NM_000043.4:c.513A>G | Alter ESR      | 35.81 % [28.11 % - 44.1 %] |     0.288 | +      | 89010760 | substitution | A>G      | Exon 6   |       63 | NM_000043  | FAS  | acceptor  |      8 | ExonESR |          0 | Outside SPiCE Interpretation |       00 | No |    -1.67753 |      89010759 | Acc         | 0.0000003317384 | No            | Acc                |         89010752 |                   7 |             89010759 | 0.0000002205815 | No           |          89010752 |  0.02545572 | No            |         0.02545572 | No               |                       |
 
-***** TODO Comment gérer les multiples transcripts ?
-SCHEDULED: <2023-08-09 Wed>
+Avec les coordonnées génomiques en hg38, on ne retrouve pas le transcrit (non visible sur UCSCS...) parmi les nombreux transcrit.
+
+Mais en T2T oui !
+##fileformat=VCFv4.0
+##assembly=CHM18v2.0/hs1
+##ALT=<ID=*,Description="Represents allele(s) other than observed.">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+chr10	89894645	lol	A	G	.	.	.
+
+❯ ./result/bin/spip -I test-spip-T2T.vcf -O test-spip-T2T.out -g hs1 --refseq dataRefSeqhs1.RData --transcriptome transcriptome_hs1.RData
+
+| CHROM |      POS | ID  | REF | ALT | QUAL | FILTER | INFO | varID                       | Interpretation | InterConfident             | SPiPscore | strand |   gNomen | varType      | ntChange | ExonInfo | exonSize | transcript   | gene | NearestSS | DistSSRegType | SPiCEproba | SPiCEinter_2thr | deltaMES                     | BP | mutInPBarea | deltaESRscore | posCryptMut | sstypeCryptMut | probaCryptMut | classProbaCryptMut | nearestSStoCrypt | nearestPosSStoCrypt | nearestDistSStoCrypt | posCryptWT | probaCryptWT | classProbaCryptWT | posSSPhysio | probaSSPhysio | classProbaSSPhysio | probaSSPhysioMut | classProbaSSPhysioMut |     |
+| chr10 | 89894645 | lol | A   | G   | .    | .      | .    | NM_000043:g.89894645:A>G    | Alter ESR      | 35.81 % [28.11 % - 44.1 %] |     0.288 | +      | 89894645 | substitution | A>G      | Exon 6   |       63 | NM_000043    | FAS  | acceptor  |             8 | ExonESR    |               0 | Outside SPiCE Interpretation |  0 |           0 | No            |    -1.67753 |       89894644 | Acc           |    0.0000003317384 | No               | Acc                 |             89894637 |          7 |     89894644 |   0.0000002205815 | No          |      89894637 |         0.02545572 | No               |            0.02545572 | No  |
+| chr10 | 89894645 | lol | A   | G   | .    | .      | .    | NM_001320619:g.89894645:A>G | Alter ESR      | 35.81 % [28.11 % - 44.1 %] |     0.288 | +      | 89894645 | substitution | A>G      | Exon 6   |       63 | NM_001320619 | FAS  | acceptor  |             8 | ExonESR    |               0 | Outside SPiCE Interpretation |  0 |           0 | No            |    -1.67753 |       89894644 | Acc           |    0.0000003317384 | No               | Acc                 |             89894637 |          7 |     89894644 |   0.0000002205815 | No          |      89894637 |         0.02545572 | No               |            0.02545572 | No  |
+| chr10 | 89894645 | lol | A   | G   | .    | .      | .    | NM_152871:g.89894645:A>G    | NTR            | 00 % [00 % - 00.92 %]      |     0.000 | +      | 89894645 | substitution | A>G      | Intron 5 |     1398 | NM_152871    | FAS  | donor     |           160 | DeepIntron |               0 | Outside SPiCE Interpretation |  0 |           0 | No            |    10.00000 |       89894644 | Don           |    0.0001360257829 | No               | Don                 |             89894485 |        159 |            0 |   0.0000000000000 | No          |      89894485 |         0.07177992 | Yes              |            0.07177992 | Yes |
+| chr10 | 89894645 | lol | A   | G   | .    | .      | .    | NM_152872:g.89894645:A>G    | Alter ESR      | 35.81 % [28.11 % - 44.1 %] |     0.288 | +      | 89894645 | substitution | A>G      | Exon 6   |       63 | NM_152872    | FAS  | acceptor  |             8 | ExonESR    |               0 | Outside SPiCE Interpretation |  0 |           0 | No            |    -1.67753 |       89894644 | Acc           |    0.0000003317384 | No               | Acc                 |             89894637 |          7 |     89894644 |   0.0000002205815 | No          |      89894637 |         0.02545572 | No               |            0.02545572 | No  |
+| chr10 | 89894645 | lol | A   | G   | .    | .      | .    | NR_028033:g.89894645:A>G    | NTR            | 00 % [00 % - 00.92 %]      |     0.000 | +      | 89894645 | substitution | A>G      | Intron 4 |     1398 | NR_028033    | FAS  | donor     |           160 | DeepIntron |               0 | Outside SPiCE Interpretation |  0 |           0 | No            |    10.00000 |       89894644 | Don           |    0.0001360257829 | No               | Don                 |             89894485 |        159 |            0 |   0.0000000000000 | No          |      89894485 |         0.07177992 | Yes              |            0.07177992 | Yes |
+| chr10 | 89894645 | lol | A   | G   | .    | .      | .    | NR_028034:g.89894645:A>G    | NTR            | 00 % [00 % - 00.92 %]      |     0.000 | +      | 89894645 | substitution | A>G      | Intron 3 |     1398 | NR_028034    | FAS  | donor     |           160 | DeepIntron |               0 | Outside SPiCE Interpretation |  0 |           0 | No            |    10.00000 |       89894644 | Don           |    0.0001360257829 | No               | Don                 |             89894485 |        159 |            0 |   0.0000000000000 | No          |      89894485 |         0.07177992 | Yes              |            0.07177992 | Yes |
+| chr10 | 89894645 | lol | A   | G   | .    | .      | .    | NR_028035:g.89894645:A>G    | Alter ESR      | 35.81 % [28.11 % - 44.1 %] |     0.288 | +      | 89894645 | substitution | A>G      | Exon 4   |       63 | NR_028035    | FAS  | acceptor  |             8 | ExonESR    |               0 | Outside SPiCE Interpretation |  0 |           0 | No            |    -1.67753 |       89894644 | Acc           |    0.0000003317384 | No               | Acc                 |             89894637 |          7 |     89894644 |   0.0000002205815 | No          |      89894637 |         0.02545572 | No               |            0.02545572 | No  |
+| chr10 | 89894645 | lol | A   | G   | .    | .      | .    | NR_028036:g.89894645:A>G    | Alter ESR      | 35.81 % [28.11 % - 44.1 %] |     0.288 | +      | 89894645 | substitution | A>G      | Exon 5   |       63 | NR_028036    | FAS  | acceptor  |             8 | ExonESR    |               0 | Outside SPiCE Interpretation |  0 |           0 | No            |    -1.67753 |       89894644 | Acc           |    0.0000003317384 | No               | Acc                 |             89894637 |          7 |     89894644 |   0.0000002205815 | No          |      89894637 |         0.02545572 | No               |            0.02545572 | No  |
+| chr10 | 89894645 | lol | A   | G   | .    | .      | .    | NR_135313:g.89894645:A>G    | Alter ESR      | 35.81 % [28.11 % - 44.1 %] |     0.288 | +      | 89894645 | substitution | A>G      | Exon 5   |       63 | NR_135313    | FAS  | acceptor  |             8 | ExonESR    |               0 | Outside SPiCE Interpretation |  0 |           0 | No            |    -1.67753 |       89894644 | Acc           |    0.0000003317384 | No               | Acc                 |             89894637 |          7 |     89894644 |   0.0000002205815 | No          |      89894637 |         0.02545572 | No               |            0.02545572 | No  |
+| chr10 | 89894645 | lol | A   | G   | .    | .      | .    | NM_001410956:g.89894645:A>G | Alter ESR      | 35.81 % [28.11 % - 44.1 %] |     0.288 | +      | 89894645 | substitution | A>G      | Exon 6   |       63 | NM_001410956 | FAS  | acceptor  |             8 | ExonESR    |               0 | Outside SPiCE Interpretation |  0 |           0 | No            |    -1.67753 |       89894644 | Acc           |    0.0000003317384 | No               | Acc                 |             89894637 |          7 |     89894644 |   0.0000002205815 | No          |      89894637 |         0.02545572 | No               |            0.02545572 | No  |
+| chr10 | 89894645 | lol | A   | G   | .    | .      | .    | NR_135314:g.89894645:A>G    | Alter ESR      | 35.81 % [28.11 % - 44.1 %] |     0.288 | +      | 89894645 | substitution | A>G      | Exon 6   |       63 | NR_135314    | FAS  | acceptor  |             8 | ExonESR    |               0 | Outside SPiCE Interpretation |  0 |           0 | No            |    -1.67753 |       89894644 | Acc           |    0.0000003317384 | No               | Acc                 |             89894637 |          7 |     89894644 |   0.0000002205815 | No          |      89894637 |         0.02545572 | No               |            0.02545572 | No  |
+| chr10 | 89894645 | lol | A   | G   | .    | .      | .    | NR_135315:g.89894645:A>G    | Alter ESR      | 35.81 % [28.11 % - 44.1 %] |     0.288 | +      | 89894645 | substitution | A>G      | Exon 4   |       63 | NR_135315    | FAS  | acceptor  |             8 | ExonESR    |               0 | Outside SPiCE Interpretation |  0 |           0 | No            |    -1.67753 |       89894644 | Acc           |    0.0000003317384 | No               | Acc                 |             89894637 |          7 |     89894644 |   0.0000002205815 | No          |      89894637 |         0.02545572 | No               |            0.02545572 | No  |
+|       |          |     |     |     |      |        |      |                             |                |                            |           |        |          |              |          |          |          |              |      |           |               |            |                 |                              |    |             |               |             |                |               |                    |                  |                     |                      |            |              |                   |             |               |                    |                  |                       |     |
+**** DONE Vérifier multiples transcripts en hg38 avec coordonées génomiquues: ok
+CLOSED: [2023-08-10 Thu 23:00]
+Beaucoup plus de transcrits en T2T
+Ex: 1 transcrit refseq curated
+http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr11%3A108257446%2D108257496&hgsid=1672963428_J5aWAqack2FpJ7mvhFTNVw7bKzxo
+vs 2 transcrits en T2T
+http://genome.ucsc.edu/cgi-bin/hgTracks?db=hub_3671779_hs1&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr11%3A108264969%2D108265019&hgsid=1672963612_Eso9frdQ7z6RkKkcKsIf2Waq3pec
+C'est bien ce qu'on retrouve avec spip
 *** PROJ [#A] Filtre vep (avec spip ?)
 ** PROJ [#B] Indicateurs qualité
 *** Idée
