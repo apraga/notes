@@ -169,7 +169,7 @@ Il faut parfois mettre des guillemets, ex:
 nix profile install "nixpkgs#cabal-install"
 #+end_src
 * Nixpkgs
-** Ajoutr un nouveau paquet
+** Ajouter un nouveau paquet
 https://nixos.wiki/wiki/Nixpkgs/Contributing
 Tester dans nixpkgs qu’il compile
 #+begin_src sh
@@ -204,6 +204,15 @@ distPhase
 
 Voir :
 https://nixos.wiki/wiki/Nixpkgs/Create_and_debug_packages
+* Aide
+** Paquet non trouvé "attribute is missing"
+Ex:
+nix-shell -p rPackages.BSgenome_Hsapiens_UCSC_hs1 error: attribute 'BSgenome_Hsapiens_UCSC_hs1' missing
+
+1. Mettre à jour le channel
+2. Sinon attention à la différence entre le channel de l'utiliser et du root.
+   Par défaut, le channel de l'utilisateur n'est pas utilisé sauf si la configuration utilise <stable>.
+   Le channel par défaut est nixpkgs (sinon nixos)  !!
 * Avertissements
 Ne jamais modifier les fichiers dans /nix/store
 * Langage
