@@ -351,7 +351,7 @@ Dév:
   - +franklin hg38+ non pour le moment
 - métriques (fastq a minima) + rapport multiqc
 - optionnel
-  - reformater la sortsie
+  - reformater la sortie
 - on abandonne
   - XAMScissors ave indel
   - parallélisation haplotype caller
@@ -411,8 +411,16 @@ Dans la mise à jour, il y a la création d'un environnement virtuel qui casse l
 Fix = désactiver
 **** KILL Patch NXF_OFFLINE=true
 CLOSED: [2023-07-02 Sun 11:02] SCHEDULED: <2023-06-11 Sun>
-** PROJ Multiqc
-** PROJ Mutalyzer
+** TODO Multiqc
+SCHEDULED: <2023-08-13 Sun>
+** TODO Mutalyzer
+SCHEDULED: <2023-08-13 Sun>
+** TODO SPIP T2T
+SCHEDULED: <2023-08-12 Sat 16:00>
+*** TODO PR upstream
+SCHEDULED: <2023-08-12 Sat 18:00>
+*** TODO Mail R. Lemann
+SCHEDULED: <2023-08-12 Sat 18:00>
 ** TODO VEP :vep:
 *** DONE [[https://github.com/NixOS/nixpkgs/pull/185691][BioPerl]]
 SCHEDULED: <2022-08-10 Wed>
@@ -1432,9 +1440,7 @@ T2T n'a pas
 - polyphen
 - gnomAD
 On désactive l'annotation spip pour le moment
-*** TODO [#A] Porter Spip proprement
-SCHEDULED: <2023-08-11 Fri>
-*** DONE Générer la base de donnée spip
+*** DONE Générer la base de donnée spip :spip:
 CLOSED: [2023-08-09 Wed 21:41] SCHEDULED: <2023-08-03 Thu 11:30>
 **** KILL Vérifier la génération du transcriptome en hg38: checksum différent
 CLOSED: [2023-08-09 Wed 21:41]
@@ -1515,6 +1521,10 @@ read files...
 1 chr1 7505 13582 NR_182076  0  - 13582 13582    0   2 5477,138, 0,5939,
            V13
 1 LOC127239154
+*** TODO Inclure génération refseq + transcriptom T2T dans dérivation nix :spip:
+SCHEDULED: <2023-08-12 Sat 15:00>
+**** TODO [#A] Tester nouvelle dérivation
+SCHEDULED: <2023-08-12 Sat 15:00>
 *** DONE Vérifier annotation SPIP sur variants confirmé
 CLOSED: [2023-08-10 Thu 23:16] SCHEDULED: <2023-08-09 Wed>
 **** DONE 5 variants patho tirés de l'article princips
@@ -1660,8 +1670,11 @@ http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVir
 vs 2 transcrits en T2T
 http://genome.ucsc.edu/cgi-bin/hgTracks?db=hub_3671779_hs1&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr11%3A108264969%2D108265019&hgsid=1672963612_Eso9frdQ7z6RkKkcKsIf2Waq3pec
 C'est bien ce qu'on retrouve avec spip
-*** PROJ [#A] Filtre vep (avec spip ?)
-** PROJ [#B] Indicateurs qualité
+*** TODO [#A] Filtre vep avec spip
+SCHEDULED: <2023-08-12 Sat 19:00>
+*** TODO Annotation sommaire
+DEADLINE: <2023-08-15 Tue> SCHEDULED: <2023-08-13 Sun>
+** TODO [#B] Indicateurs qualité :qualité:
 *** Idée
 Raredisease:
 - FastQC : nombreuses statistiques. Non disponible Nix
@@ -1677,9 +1690,21 @@ Sarek:
 - QC : MultiQC
 
 MultiQC : non disponible Nix
-** PROJ [#B] Compte-redu exécution avec MultiQC
-** PROJ vérifier si normalisation
-** PROJ [#B] Vérification nomenclature hgvs avec mutalyzer
+*** TODO FastqQC
+SCHEDULED: <2023-08-13 Sun>
+*** TODO Mosdepth
+SCHEDULED: <2023-08-13 Sun>
+*** TODO Samtools stats
+SCHEDULED: <2023-08-13 Sun>
+*** TODO [#B] Compte-redu exécution avec MultiQC
+SCHEDULED: <2023-08-13 Sun>
+** HOLD vérifier si normalisation
+** TODO [#B] Vérification nomenclature hgvs :hgvs:
+SCHEDULED: <2023-08-12 Sat>
+*** TODO mutalyzer
+SCHEDULED: <2023-08-13 Sun>
+*** TODO API variantvalidator
+SCHEDULED: <2023-08-13 Sun>
 
 ** DONE Exécution
 CLOSED: [2022-09-13 Tue 21:37]
@@ -1891,7 +1916,8 @@ CLOSED: [2023-06-14 Wed 22:37]
 Besoin de vep
 *** KILL Variant calling
 CLOSED: [2023-06-14 Wed 22:37]
-** STRT Tester sarek
+** KILL Tester sarek
+CLOSED: [2023-08-12 Sat 15:53]
 #+begin_src sh
  module load apptainer/1.1.8
  nextflow run nf-core/sarek -profile test,singularity --outdir test-sarek
@@ -5037,8 +5063,16 @@ T2T CHR1608765
 
 SRR14724513.24448214
 SRR14724513.24448214
-******* TODO Enlever les FP qui correspondent à un changement dans le génome
-******** Condition:
+******* DONE Vérifier quelques variants sur IGV
+CLOSED: [2023-07-09 Sun 17:36]
+******* KILL Répartition des FP : cluster ?
+CLOSED: [2023-07-09 Sun 17:36]
+****** DONE Examiner les FP restant après correction selon séquence de référence
+CLOSED: [2023-08-12 Sat 15:57]
+****** HOLD Examiner les variants supprimé
+****** TODO Enlever les FP qui correspondent à un changement dans le génome
+SCHEDULED: <2023-08-14 Mon>
+******* Condition:
 - pas de variation à la position en GRCh38
 - variantion homozygote
 - la varation en T2T correspond au changement de pair de base GRC38 -> T2T
@@ -5047,7 +5081,7 @@ SRR14724513.24448214
   avec i la position en T2T et j la position en GRCh38
 
   Note: définir un ID n'est pas correct car les variants peuvent être modifié par happy !
-******** Idée
+******* Idée
  - Pour chaque FP, c'est un "faux" FP si
      - REF en hg38 == ALT en T2T
      - et REF en hg38 != REF en T2T
@@ -5059,7 +5093,7 @@ Comment obtenir les séquences de réferences ?
 3. identifier quelques reads contenant le variant et regarder leur aligneement en hg38
 
 Après discussion avec Alexis: solution 3
-******** Algorithme
+******* Algorithme
 1. Extraire les coordonnées en T2T des faux positifs *homozygote*
 2. Pour chaque faux positif
    1. lister 10 reads contenant le variant
@@ -5067,7 +5101,7 @@ Après discussion avec Alexis: solution 3
    3. si la séquence en T2T modifiée par le variant est "identique" à celle en GRCh38, alors on ignore ce faux positif
 
 Note: on ignore les reads qui ont changé de chromosome entre les version
-******** DONE Résultat préliminaire
+******* DONE Résultat préliminaire
 CLOSED: [2023-07-23 Sun 14:30]
 cf [[file:~/roam/research/bisonex/code/giab/giab-corrected.csv][script julia]]
 3498 faux positifs en moins, soit 0.89 sensibilité
@@ -5081,13 +5115,9 @@ julia> tp/(tp+(fp-3498))
 0.8969173716537258
 
 On est toujours en dessous des 97%
-******** PROJ Corriger proprement VCF ou résultats Happy
-******* DONE Vérifier quelques variants sur IGV
-CLOSED: [2023-07-09 Sun 17:36]
-******* KILL Répartition des FP : cluster ?
-CLOSED: [2023-07-09 Sun 17:36]
-******* PROJ Examiner les FP restant après correction selon séquence de référence
-******* PROJ Examiner les variants supprimé
+******* HOLD Corriger proprement VCF ou résultats Happy
+******* TODO Adapter pour gérer plusieurs variants par read
+SCHEDULED: <2023-08-14 Mon>
 ****** KILL Méthodologie du pangenome
 CLOSED: [2023-07-31 Mon 22:29] SCHEDULED: <2023-07-30 Sun>
 ***** KILL Mail Yannis
@@ -5107,6 +5137,9 @@ CLOCK: [2023-07-30 Sun 15:39]--[2023-07-30 Sun 15:40] =>  0:01
 Refaire résultats
 **** DONE Mail Paul sur les résultat ashkenazim +/- centogene
 CLOSED: [2023-08-06 Sun 20:24] SCHEDULED: <2023-08-06 Sun>
+**** DONE Relancer comparaison GIAB avec GATK 4.4.0
+CLOSED: [2023-08-12 Sat 15:55] SCHEDULED: <2023-08-13 Sun>
+/Entered on/ [2023-08-03 Thu 12:42]
 *** KILL Platinum genome
 CLOSED: [2023-06-14 Wed 22:37]
 https://emea.illumina.com/platinumgenomes.html
@@ -5303,10 +5336,12 @@ mergeAllGenomic()
 #+end_src
 ***** DONE Formatter donner pour simuscop
 CLOSED: [2023-04-28 Fri 11:55] SCHEDULED: <2023-04-26 Wed>
-**** TODO Extraire liste des CNVs
+**** KILL Extraire liste des CNVs
+CLOSED: [2023-08-12 Sat 15:54]
 
 SCHEDULED: <2023-04-17 Mon>
-**** TODO Simuscop :simuscop:
+**** KILL Simuscop :simuscop:
+CLOSED: [2023-08-12 Sat 15:54]
 ***** DONE Entrainer le modèle sur 63003856/
 CLOSED: [2023-04-29 Sat 19:56]
 Relancer le modèle pour être sûr
@@ -5723,7 +5758,8 @@ CLOSED: [2023-06-12 Mon 23:25]
    12.000                491            491         50         94     0.9076       0.8393     0.8721
      None                491            491         50         94     0.9076       0.8393     0.8721
 
-***** TODO Vérifier tous les variants sont retrouvés en 200x: hg38 :T2T:
+***** KILL Vérifier tous les variants sont retrouvés en 200x: hg38 :T2T:
+CLOSED: [2023-08-12 Sat 15:54]
 ****** DONE Après alignement
 CLOSED: [2023-04-29 Sat 18:27] SCHEDULED: <2023-04-28 Fri>
 ******* DONE SNV: avec doublons
@@ -6435,8 +6471,10 @@ CLOSED: [2023-05-19 Fri 21:58]
 552 found over 585
 ****** TODO del
 ****** TODO ins
-**** TODO [[id:966a298c-948a-4694-a6f5-c326b1046a05][XAMscissors.jl]] :xamscissors:
-***** TODO Test SNV
+**** KILL [[id:966a298c-948a-4694-a6f5-c326b1046a05][XAMscissors.jl]] :xamscissors:
+CLOSED: [2023-08-12 Sat 15:59]
+***** KILL Test SNV
+CLOSED: [2023-08-12 Sat 15:59]
 ****** DONE Phase 1 : chr22, VAF=1
 CLOSED: [2023-05-29 Mon 15:36]
 ******* DONE 1 SNV  : ok !
@@ -7078,9 +7116,12 @@ CTTTTGCTTGTCCCCAGGACGCACCTCAGGGTGGTGAAGCAAAAAAACCACGGCCCAGGAGAGGGTGGGTGCTGTGGTCT
 +
 FFFFFFFFFFFFFFFFFFFFFFF:FFF:FFFFFFFFFFFFF,FFFFFFFFFFFF:F:FFFF:FFFFF,,FFF:FFFFFFFFFF,FFFFFFF,FFFFFFFFFFF,FFFFFFFFF:FFFF,F:FFFFF:FFFFFFFFF:FFFF,FFFFFFFFF
 ******* DONE Supprimer NW_ et NT_
-****** PROJ Phase 2 : chr22, vaf variable :T2T:
-****** TODO Phase 3 : tous SNV, vaf variable :T2T:
-***** TODO Test Indel
+****** KILL Phase 2 : chr22, vaf variable :T2T:
+CLOSED: [2023-08-12 Sat 15:59]
+****** KILL Phase 3 : tous SNV, vaf variable :T2T:
+CLOSED: [2023-08-12 Sat 15:59]
+***** KILL Test Indel
+CLOSED: [2023-08-12 Sat 15:59]
 **** Divers
 ***** DONE Vérifier nombre de reads fastq - bam
 CLOSED: [2022-10-09 Sun 22:31]
@@ -7088,6 +7129,14 @@ CLOSED: [2022-10-09 Sun 22:31]
 CLOSED: [2023-06-25 Sun 15:53] SCHEDULED: <2023-06-25 Sun>
 [cite:@wilcox2021]
 Vu avec alexis: pas notre cas d'usage
-* TODO Relancer comparaison GIAB avec GATK 4.4.0
-SCHEDULED: <2023-08-13 Sun>
-/Entered on/ [2023-08-03 Thu 12:42]
+*** TODO Variant cento confirmé en Sanger
+**** TODO Insérer dans NA12878 avec XAMscissors
+SCHEDULED: <2023-08-12 Sat 21:00>
+**** TODO Données simuscop 200x
+SCHEDULED: <2023-08-19 Sat>
+* Résultats
+** TODO Speed-up BWA-mem
+SCHEDULED: <2023-08-26 Sat>
+
+** TODO Speed-up Hapotypecaller
+SCHEDULED: <2023-08-26 Sat>
