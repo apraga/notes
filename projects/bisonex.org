@@ -1790,10 +1790,33 @@ http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVir
 vs 2 transcrits en T2T
 http://genome.ucsc.edu/cgi-bin/hgTracks?db=hub_3671779_hs1&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr11%3A108264969%2D108265019&hgsid=1672963612_Eso9frdQ7z6RkKkcKsIf2Waq3pec
 C'est bien ce qu'on retrouve avec spip
-*** TODO [#A] Filtre vep avec spip
-SCHEDULED: <2023-08-12 Sat 19:00>
+*** DONE [#A] Filtre vep avec spip
+CLOSED: [2023-08-13 Sun 00:39] SCHEDULED: <2023-08-12 Sat 19:00>
 *** TODO Annotation sommaire
 DEADLINE: <2023-08-15 Tue> SCHEDULED: <2023-08-13 Sun>
+Pas d'OMIM, pas de CADD, pas de spliceAI
+*** KILL OMIM
+CLOSED: [2023-08-12 Sat 20:18]
+Base de données non disponible et compliqué de faire la mise à jour nous.
+
+Si on essaie de prendre les gènes de GRCH38, ils ne sont pas forcément en T2T
+Ex: DDX11L17 n'existe pas dans T2T à ces coordonées
+zgrep DDX11L17 GCF_009914755.1_T2T-CHM13v2.0_genomic.gff.gz
+Note: c'est un pseudogene
+https://www.genecards.org/cgi-bin/carddisp.pl?gene=DDX11L17
+
+Si on prend les gènes de T2T, il y en a des nouveaux.
+Ex: le premier est LOC101928626.
+À cette position, rien en GRCh38
+
+On prend tous les gènes de T2T:
+#+begin_src
+ zgrep -o "ID=gene[^;]*;"  GCF_009914755.1_T2T-CHM13v2.0_genomic.gff.gz | sed 's/ID=gene-//;s/;//' | sort | uniq > t2t
+-genes.txt
+ wc -l t2t-genes.txt
+#+end_src
+Soit 57660
+
 ** TODO [#B] Indicateurs qualité :qualité:
 *** Idée
 Raredisease:
@@ -5258,7 +5281,7 @@ Refaire résultats
 **** DONE Mail Paul sur les résultat ashkenazim +/- centogene
 CLOSED: [2023-08-06 Sun 20:24] SCHEDULED: <2023-08-06 Sun>
 **** DONE Relancer comparaison GIAB avec GATK 4.4.0
-CLOSED: [2023-08-12 Sat 15:55] SCHEDULED: <2023-08-13 Sun>
+CLOSED: [2023-08-12 Sat 15:55]
 /Entered on/ [2023-08-03 Thu 12:42]
 *** KILL Platinum genome
 CLOSED: [2023-06-14 Wed 22:37]
