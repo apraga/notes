@@ -1792,11 +1792,15 @@ http://genome.ucsc.edu/cgi-bin/hgTracks?db=hub_3671779_hs1&lastVirtModeType=defa
 C'est bien ce qu'on retrouve avec spip
 *** DONE [#A] Filtre vep avec spip
 CLOSED: [2023-08-13 Sun 00:39] SCHEDULED: <2023-08-12 Sat 19:00>
-*** TODO Annotation sommaire
-DEADLINE: <2023-08-15 Tue> SCHEDULED: <2023-08-13 Sun>
+*** TODO Réordonner les colonnes :annotation:
+SCHEDULED: <2023-08-15 Tue> DEADLINE: <2023-08-15 Tue>
 Pas d'OMIM, pas de CADD, pas de spliceAI
-*** KILL OMIM
-CLOSED: [2023-08-12 Sat 20:18]
+*** TODO Annotation CADD + spliceAI GRCh38 avec nouvelle version :annotation:
+SCHEDULED: <2023-08-13 Sun 19:00>
+*** TODO Ajouter header :annotation:
+SCHEDULED: <2023-08-13 Sun 11:00>
+*** DONE OMIM: possible seulement sur nom du gènes:annotation:
+CLOSED: [2023-08-13 Sun 11:57] SCHEDULED: <2023-08-13 Sun 16:00>
 Base de données non disponible et compliqué de faire la mise à jour nous.
 
 Si on essaie de prendre les gènes de GRCH38, ils ne sont pas forcément en T2T
@@ -1809,13 +1813,60 @@ Si on prend les gènes de T2T, il y en a des nouveaux.
 Ex: le premier est LOC101928626.
 À cette position, rien en GRCh38
 
-On prend tous les gènes de T2T:
-#+begin_src
- zgrep -o "ID=gene[^;]*;"  GCF_009914755.1_T2T-CHM13v2.0_genomic.gff.gz | sed 's/ID=gene-//;s/;//' | sort | uniq > t2t
--genes.txt
+Si on essaye avec ENSEMBL: non car n'ont pas le même identifiant
+Ex: ACHE
+Idéalement, il faudrait l'identifiant NCBI (disponible dans OMIM) mais n'est pas en sortie de VEP
+Et cela demande la version "merged" donc impossible en T2T
+
+Est-ce faisable de faire une correspondance sur le nom du gène ?
+Tous les gènes de T2T:
+#+begin_src sh :dir ~/Downloads
+ zgrep -o "ID=gene[^;]*;"  GCF_009914755.1_T2T-CHM13v2.0_genomic.gff.gz | sed 's/ID=gene-//;s/;//' | sort | uniq > t2t-genes.txt
  wc -l t2t-genes.txt
 #+end_src
-Soit 57660
+
+#+RESULTS:
+: 57660 t2t-genes.txt
+
+#+begin_src sh :dir ~/Downloads
+zgrep -o "ID=gene[^;]*;"  GCF_000001405.40_GRCh38.p14_genomic.gff.gz | sed 's/ID=gene-//;s/;//' | sort | uniq > hg38-genes.txt
+wc -l hg38-genes.txt
+#+end_src
+
+#+RESULTS:
+: 67127 hg38-genes.txt
+
+Gènes communs aux 2
+#+begin_src sh :dir ~/Downloads
+comm -12 t2t-genes.txt hg38-genes.txt | wc -l
+#+end_src
+
+#+RESULTS:
+: 54506
+
+Gènes uniquements dans t2t
+#+begin_src sh :dir ~/Downloads
+comm -23 t2t-genes.txt hg38-genes.txt | wc -l
+#+end_src
+
+#+RESULTS:
+: 3154
+
+Gènes uniquements dans GRCh38
+#+begin_src sh :dir ~/Downloads
+comm -13 t2t-genes.txt hg38-genes.txt | wc -l
+#+end_src
+
+#+RESULTS:
+: 12621
+*** TODO OMIM sur nom du gène :annotation:
+SCHEDULED: <2023-08-15 Tue>
+*** TODO Mobidetails API
+SCHEDULED: <2023-08-15 Tue>
+*** PROJ Franklin API
+https://www.postman.com/genoox-ps/workspace/franklin-api-documentation-s-public-workspace/documentation/6621518-4335389d-12e3-445f-8182-339df95b2a09
+
+*** TODO Regarder si clinique disponible avec vep :annotation:
 
 ** TODO [#B] Indicateurs qualité :qualité:
 *** Idée
@@ -1843,7 +1894,7 @@ SCHEDULED: <2023-08-13 Sun>
 SCHEDULED: <2023-08-13 Sun>
 ** HOLD vérifier si normalisation
 ** TODO [#B] Vérification nomenclature hgvs :hgvs:
-SCHEDULED: <2023-08-12 Sat>
+SCHEDULED: <2023-08-15 Tue>
 *** TODO mutalyzer
 SCHEDULED: <2023-08-13 Sun>
 *** TODO API variantvalidator
@@ -7273,10 +7324,14 @@ CLOSED: [2023-06-25 Sun 15:53] SCHEDULED: <2023-06-25 Sun>
 [cite:@wilcox2021]
 Vu avec alexis: pas notre cas d'usage
 *** TODO Variant cento confirmé en Sanger
-**** TODO Insérer dans NA12878 avec XAMscissors
-SCHEDULED: <2023-08-12 Sat 21:00>
+**** TODO Générer la liste
+SCHEDULED: <2023-08-13 Sun 12:00>
+**** TODO Insérer chr20 dans NA12878 avec XAMscissors
+SCHEDULED: <2023-08-13 Sun 13:00>
+**** TODO Tout insérer dans NA12878 avec XAMscissors
+SCHEDULED: <2023-08-13 Sun 18:00>
 **** TODO Données simuscop 200x
-SCHEDULED: <2023-08-19 Sat>
+SCHEDULED: <2023-08-22 Tue>
 * Résultats
 ** TODO Speed-up BWA-mem
 SCHEDULED: <2023-08-26 Sat>

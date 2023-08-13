@@ -14,3 +14,19 @@ Puis il suffit d'utiliser le paquet. En cas de changement, la precompilation ser
 #+begin_src
 julia> using XAMScissors
 #+end_src
+* DataFramesMeta
+:PROPERTIES:
+:ID:       48ee3cbb-8129-490c-a91a-a317d7ff44c3
+:END:
+Supprimer une liste de colonnes
+#+begin_src julia
+@select d $(Not([:"Stade d'avancement analyse", :"Mnémo analyse", :"Unité", :"Anomalie"]))
+#+end_src
+Filtrer selon des valeurs dans une liste
+#+begin_src julia
+@subset d (in.(:"Code analyse", Ref(["GMQKIT", "GMQDAT", "GMQDOS", "GMQRAT"]))
+#+end_src
+Négation
+#+begin_src julia
+@subset d .!(in.(:"Code analyse", Ref(["GMQKIT", "GMQDAT", "GMQDOS", "GMQRAT"])))
+#+end_src
