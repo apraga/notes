@@ -1796,9 +1796,7 @@ CLOSED: [2023-08-13 Sun 00:39] SCHEDULED: <2023-08-12 Sat 19:00>
 SCHEDULED: <2023-08-15 Tue> DEADLINE: <2023-08-15 Tue>
 Pas d'OMIM, pas de CADD, pas de spliceAI
 *** TODO Annotation CADD + spliceAI GRCh38 avec nouvelle version :annotation:
-SCHEDULED: <2023-08-13 Sun 19:00>
-*** TODO Ajouter header :annotation:
-SCHEDULED: <2023-08-13 Sun 11:00>
+SCHEDULED: <2023-08-15 Tue>
 *** DONE OMIM: possible seulement sur nom du gènes:annotation:
 CLOSED: [2023-08-13 Sun 11:57] SCHEDULED: <2023-08-13 Sun 16:00>
 Base de données non disponible et compliqué de faire la mise à jour nous.
@@ -7323,13 +7321,51 @@ CLOSED: [2022-10-09 Sun 22:31]
 CLOSED: [2023-06-25 Sun 15:53] SCHEDULED: <2023-06-25 Sun>
 [cite:@wilcox2021]
 Vu avec alexis: pas notre cas d'usage
-*** TODO Variant cento confirmé en Sanger
-**** TODO Générer la liste
-SCHEDULED: <2023-08-13 Sun 12:00>
-**** TODO Insérer chr20 dans NA12878 avec XAMscissors
+*** TODO Variant cento confirmé en Sanger :xamscissors:
+**** DONE Générer la liste
+CLOSED: [2023-08-13 Sun 22:26] SCHEDULED: <2023-08-13 Sun 12:00>
+**** TODO 2 variants chr20 dans NA12878 avec XAMscissors
 SCHEDULED: <2023-08-13 Sun 13:00>
+***** DONE Insertion
+CLOSED: [2023-08-13 Sun 23:31] SCHEDULED: <2023-08-13 Sun>
+On récupère le BAM
+#+begin_src sh :dir /home/alex/code/bisonex/out
+scp /Work/Users/apraga/bisonex/out/HG002-151002_7001448_0359_AC7F6GANXX-GRCh38/preprocessing/mapped/HG002-151002_7001448_0359_AC7F6GANXX-GRCh38.bam
+#+end_src
+On formate les données
+#+begin_src sh :dir /home/alex/roam/research/bisonex/code/sanger
+julia --project=.. formatXamscissors.jl
+#+end_src
+On génère les fastq
+#+begin_src sh :dir /home/alex/roam/research/bisonex/code/sanger
+julia --project=.. xamscissors.jl
+#+end_src
+On upload
+#+begin_src sh :dir /home/alex/roam/research/bisonex/code/sanger
+cd out
+mv inserted_1.fq.gz HG002-sanger-inserted-chr20_1.fq.gz
+mv inserted_2.fq.gz HG002-sanger-inserted-chr20_2.fq.gz
+#+end_src
+On upload
+#+begin_src sh :dir /home/alex/roam/research/bisonex/code/sanger
+scp HG002-sanger-inserted-chr20_*.fq.gz meso:/Work/Users/apraga/bisonex/data/
+#+end_src
+Fichier de configuration
+
+patient,sample,fastq1,fastq2
+HG002,sanger-chr20,data/HG002-sanger-inserted-chr20_1.fq.gz,data/HG002-sanger-inserted-chr20_2.fq.gz
+
+On lance la simulation
+#+begin_src
+nextflow run main.nf -profile standard,helios --input=samples-synthetic.csv --genome=GRCh38  -bg
+#+end_src
+***** DONE Vérifier post alignement
+CLOSED: [2023-08-13 Sun 23:44] SCHEDULED: <2023-08-13 Sun>
+***** TODO Vérifier haplotypecaller
+SCHEDULED: <2023-08-13 Sun>
+
 **** TODO Tout insérer dans NA12878 avec XAMscissors
-SCHEDULED: <2023-08-13 Sun 18:00>
+SCHEDULED: <2023-08-14 Mon>
 **** TODO Données simuscop 200x
 SCHEDULED: <2023-08-22 Tue>
 * Résultats
