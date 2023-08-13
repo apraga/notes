@@ -53,5 +53,11 @@ _Groupe 4_ : *Seuil: non*. Contaminant
 - Gardnerella vaginalis
 - bacilles corynéforme (sauf C. urealyticum et C. seminale)
 
-Uropathogènes exigeants : Aerococcus, A. shaalii, A. omnicolens et L. delbrueckii
+* Étiologie
+- E. coli = 50 à 95% (communautaire ou associé au soin)
+- S. saphrophycitus : 5-20% IU communtaire, surtout chez la femme jeune
+* Virulence
+- Capacité de colonisation + invasion des cellules urothéliale
+- Biofilm
+* Uropathogènes exigeants (Gram+): Aerococcus spp, Actinotignum shaalii, A. omnicolens et L. delbrueckii
 / chez > 65 ans, < 3 ans et patho urologie (sauf cancer vessie et prostate) -> à chercher dans ce contexte

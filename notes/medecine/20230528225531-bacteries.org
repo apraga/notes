@@ -100,6 +100,11 @@ Résistance fréquent à l’hôpital
 - systémique : FQ ou beta-lactamine + aminoside sur documentation
 *** Prévention: hygiène (eau, alimentation)
 ** Proteus mirabilis
+- Bacille gram négatif, *mobile*, oxydase négatif, nitrate-réductase positive
+- Brun sur milieu chromosome, β-glucuronidase et β-glucosidase négative
+- Désaminase positi, indole négative
+- Sensible antibio actif sur bactille gram négatif
+- Résistance acquise : pénicillnase, BLSE, céphalosporinase de haut niveau, carbapénémase
 ** TODO Pseudomonas aeruginosa
 Bacille Gram négatif, très mobile
 
@@ -125,7 +130,7 @@ Naturellement plus résistante que d'autres Bacille gram -
   - Catalase positif - lactose négatif
 **** Résistance naturelle :
   - amox
-  - C1G, C2G, *céfotaxime* (/! utilisé pour mécanisme/), ceftriaxne, *ertapénème*
+  - C1G, C2G, *céfotaxime* (/! utilisé pour mécanisme/), ceftriaxone, *ertapénème*
   - anciennes FQ : nofloxacine, péflox, ofloxanie
   - cotrimoxazole
   - nitrofurantoine
@@ -152,8 +157,8 @@ Association de plusieurs mécanisme (synérgie/complémentaire)
 
 **** Antibiotique
 - β-lactamine:
+  - ceftazidime +/- avibactame
   - ticarcilline +/- clavulatane, pipéracilline +/- tazobactame,
-  - ceftazidime +/- avibactamie
   - céfépime
   - ceftolozane + tazobactame
   - imipénème, méropénème
@@ -266,7 +271,11 @@ Résistance acquises
 - Bacille gram négatif, mobile, oxydase négative, nitrase-réductase positive
 - Urine : rose sur milieu chromogène (β-glucoronidase positive)
 - Sensbilité naturelles aux antibiotiques actif sur BGN
-- Groupe 1 : céphalosporinase chromosomique de très bas niveau. Résistance acquise enzymatique : pénicillinase, β-lactamase à spectre étundes, céphalosporinase de haut niveau, carbapénémase
+- Groupe 1 :
+  - céphalosporinase chromosomique de très bas niveau.
+  - Résistance acquise enzymatique : pénicillinase, β-lactamase à spectre étundes, céphalosporinase de haut niveau, carbapénémase
+*** KES = Klebsiella, ENterobacter, Serratia
+Vert (β-glucosidase +)
 *** Salmonelle, Shigelle
 - Bacille gram négatif, non sporulé, aéro-anaérobie facultatif
 - non exigeat
@@ -330,6 +339,7 @@ Augmentation des infections avec les années
 - Protéine de surface -> adhère à l’endocarde et l’urothelium -> endocardite et infections urinaire
 *** Résistance
 - Naturelle : céphalosporine
+  - faecals = résistance oxacilline, C3G, ertapénème, lincomycine, acide fusidique
 - *E. faecalis = sensible amox. E. faecium = résistant 80-90%*
 - multi-résistance chez E. faecium
 - aminoside (bas niveau)
