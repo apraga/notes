@@ -7324,8 +7324,8 @@ Vu avec alexis: pas notre cas d'usage
 *** TODO Variant cento confirmé en Sanger :xamscissors:
 **** DONE Générer la liste
 CLOSED: [2023-08-13 Sun 22:26] SCHEDULED: <2023-08-13 Sun 12:00>
-**** TODO 2 variants chr20 dans NA12878 avec XAMscissors
-SCHEDULED: <2023-08-13 Sun 13:00>
+**** DONE 2 variants chr20 dans NA12878 avec XAMscissors
+CLOSED: [2023-08-15 Tue 00:13] SCHEDULED: <2023-08-13 Sun 13:00>
 ***** DONE Insertion
 CLOSED: [2023-08-13 Sun 23:31] SCHEDULED: <2023-08-13 Sun>
 On récupère le BAM
@@ -7361,8 +7361,10 @@ nextflow run main.nf -profile standard,helios --input=samples-synthetic.csv --ge
 #+end_src
 ***** DONE Vérifier post alignement
 CLOSED: [2023-08-13 Sun 23:44] SCHEDULED: <2023-08-13 Sun>
-***** TODO Vérifier haplotypecaller
-SCHEDULED: <2023-08-13 Sun>
+***** DONE Vérifier haplotypecaller
+CLOSED: [2023-08-15 Tue 00:13] SCHEDULED: <2023-08-13 Sun>
+***** DONE Vérifier post-filtre
+CLOSED: [2023-08-15 Tue 00:13]
 
 **** TODO Tout insérer dans NA12878 avec XAMscissors
 SCHEDULED: <2023-08-14 Mon>

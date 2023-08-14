@@ -627,8 +627,7 @@ CLOSED: [2023-07-29 Sat 10:57] SCHEDULED: <2023-07-29 Sat>
 :PROPERTIES:
 :CATEGORY: banque
 :END:
-** TODO Demande remboursement frais compte bancaire
-SCHEDULED: <2023-08-13 Sun 18:00>
+** WAIT Demande remboursement frais compte bancaire
 /Entered on/ [2023-08-13 Sun 11:16]
 * Programmation :cs:
 ** Gentoo :gentoo:
