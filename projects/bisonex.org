@@ -411,8 +411,8 @@ Dans la mise à jour, il y a la création d'un environnement virtuel qui casse l
 Fix = désactiver
 **** KILL Patch NXF_OFFLINE=true
 CLOSED: [2023-07-02 Sun 11:02] SCHEDULED: <2023-06-11 Sun>
-** TODO Multiqc
-SCHEDULED: <2023-08-13 Sun>
+** WAIT [[https://github.com/NixOS/nixpkgs/pull/249329][Multiqc]]
+HG002,sanger-chr20,data/HG002-sanger-inserted-chr20_1.fq.gz,data/HG002-sanger-inserted-chr20_2.fq.gz
 ** TODO Mutalyzer
 SCHEDULED: <2023-08-13 Sun>
 ** TODO SPIP T2T
@@ -5263,7 +5263,7 @@ CLOSED: [2023-07-09 Sun 17:36]
 CLOSED: [2023-08-12 Sat 15:57]
 ****** HOLD Examiner les variants supprimé
 ****** TODO Enlever les FP qui correspondent à un changement dans le génome
-SCHEDULED: <2023-08-14 Mon>
+SCHEDULED: <2023-08-17 Thu>
 ******* Condition:
 - pas de variation à la position en GRCh38
 - variantion homozygote
@@ -5309,9 +5309,7 @@ julia> tp/(tp+(fp-3498))
 On est toujours en dessous des 97%
 ******* HOLD Corriger proprement VCF ou résultats Happy
 ******* TODO Adapter pour gérer plusieurs variants par read
-SCHEDULED: <2023-08-14 Mon>
-****** KILL Méthodologie du pangenome
-CLOSED: [2023-07-31 Mon 22:29] SCHEDULED: <2023-07-30 Sun>
+****** PROJ Méthodologie du pangenome
 ***** KILL Mail Yannis
 CLOSED: [2023-07-08 Sat 10:44]
 ***** DONE Mail GIAB pour version T2T
@@ -7324,7 +7322,7 @@ Vu avec alexis: pas notre cas d'usage
 *** TODO Variant cento confirmé en Sanger :xamscissors:
 **** DONE Générer la liste
 CLOSED: [2023-08-13 Sun 22:26] SCHEDULED: <2023-08-13 Sun 12:00>
-**** DONE 2 variants chr20 dans NA12878 avec XAMscissors
+**** DONE 2 variants chr20 dans HG002 avec XAMscissors: homozygote
 CLOSED: [2023-08-15 Tue 00:13] SCHEDULED: <2023-08-13 Sun 13:00>
 ***** DONE Insertion
 CLOSED: [2023-08-13 Sun 23:31] SCHEDULED: <2023-08-13 Sun>
@@ -7332,11 +7330,7 @@ On récupère le BAM
 #+begin_src sh :dir /home/alex/code/bisonex/out
 scp /Work/Users/apraga/bisonex/out/HG002-151002_7001448_0359_AC7F6GANXX-GRCh38/preprocessing/mapped/HG002-151002_7001448_0359_AC7F6GANXX-GRCh38.bam
 #+end_src
-On formate les données
-#+begin_src sh :dir /home/alex/roam/research/bisonex/code/sanger
-julia --project=.. formatXamscissors.jl
-#+end_src
-On génère les fastq
+On formate les données et on génère les fastq
 #+begin_src sh :dir /home/alex/roam/research/bisonex/code/sanger
 julia --project=.. xamscissors.jl
 #+end_src
@@ -7365,9 +7359,33 @@ CLOSED: [2023-08-13 Sun 23:44] SCHEDULED: <2023-08-13 Sun>
 CLOSED: [2023-08-15 Tue 00:13] SCHEDULED: <2023-08-13 Sun>
 ***** DONE Vérifier post-filtre
 CLOSED: [2023-08-15 Tue 00:13]
+**** DONE 2 variant chr20 dans HG002 heterozygote
+CLOSED: [2023-08-15 Tue 13:45] SCHEDULED: <2023-08-15 Tue>
+La zygosité n'était pas correcte...
 
-**** TODO Tout insérer dans NA12878 avec XAMscissors
+**** TODO [#B] Tout insérer dans NA12878 avec XAMscissors
 SCHEDULED: <2023-08-14 Mon>
+***** Insertion
+On récupère le BAM
+#+begin_src sh :dir /home/alex/code/bisonex/out
+scp /Work/Users/apraga/bisonex/out/HG002-151002_7001448_0359_AC7F6GANXX-GRCh38/preprocessing/mapped/HG002-151002_7001448_0359_AC7F6GANXX-GRCh38.bam
+#+end_src
+#+begin_src sh :dir /home/alex/roam/research/bisonex/code/sanger
+julia --project=.. xamscissors.jl
+cd out-all
+mv inserted_1.fq.gz HG002-sanger-inserted-_1.fq.gz
+mv inserted_2.fq.gz HG002-sanger-inserted-_2.fq.gz
+scp HG002-sanger-inserted-all_*.fq.gz meso:/Work/Users/apraga/bisonex/data/
+#+end_src
+Fichier de configuration
+
+patient,sample,fastq1,fastq2
+HG002,sanger-all,data/HG002-sanger-inserted-all_1.fq.gz,data/HG002-sanger-inserted-all_2.fq.gz
+
+On lance la simulation
+#+begin_src
+nextflow run main.nf -profile standard,helios --input=samples-synthetic.csv --genome=GRCh38  -bg
+#+end_src
 **** TODO Données simuscop 200x
 SCHEDULED: <2023-08-22 Tue>
 * Résultats

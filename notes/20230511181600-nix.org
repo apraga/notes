@@ -169,6 +169,9 @@ Il faut parfois mettre des guillemets, ex:
 nix profile install "nixpkgs#cabal-install"
 #+end_src
 * Nixpkgs
+:PROPERTIES:
+:ID:       54913542-41a8-44fc-9e23-ba6441c7ecd9
+:END:
 ** Ajouter un nouveau paquet
 https://nixos.wiki/wiki/Nixpkgs/Contributing
 Tester dans nixpkgs qu’il compile
