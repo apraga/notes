@@ -1882,14 +1882,16 @@ Sarek:
 - QC : MultiQC
 
 MultiQC : non disponible Nix
-*** TODO FastqQC
-SCHEDULED: <2023-08-13 Sun>
-*** TODO Mosdepth
-SCHEDULED: <2023-08-13 Sun>
-*** TODO Samtools stats
-SCHEDULED: <2023-08-13 Sun>
-*** TODO [#B] Compte-redu exécution avec MultiQC
-SCHEDULED: <2023-08-13 Sun>
+*** DONE FastqQC
+CLOSED: [2023-08-15 Tue 21:43] SCHEDULED: <2023-08-13 Sun>
+*** DONE Mosdepth
+CLOSED: [2023-08-15 Tue 21:43] SCHEDULED: <2023-08-13 Sun>
+Pour exomple, il faut le fichier de capture
+subworkflows/local/bam_markduplicates/
+*** DONE Samtools stats
+CLOSED: [2023-08-15 Tue 21:43] SCHEDULED: <2023-08-13 Sun>
+*** DONE [#B] Compte-redu exécution avec MultiQC
+CLOSED: [2023-08-15 Tue 21:43] SCHEDULED: <2023-08-13 Sun>
 ** HOLD vérifier si normalisation
 ** TODO [#B] Vérification nomenclature hgvs :hgvs:
 SCHEDULED: <2023-08-15 Tue>
