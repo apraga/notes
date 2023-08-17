@@ -261,8 +261,8 @@ Transmission goutelette, interhumaine
 *** Résistances et groupe
 Groupe selon la résistance *naturelle* β-lactamine
 1. aucune : E. coli, Proteus mirabilis, Salmonella, Shigella
-2. Pénicillinase à bas niveau : Klebsiella, Citrobacer koseri
-3. Céphalosporinase à bas niveau : Enterobacter, Serratia, Morganella, Providencia, Citrobacter freundii
+2. Pénicillinase à bas niveau : Klebsiella (pneumonia, oxytoca), Citrobacer koseri
+3. Céphalosporinase à bas niveau : Enterobacter, Serratia, Morganella, Providencia, Citrobacter freundii, /Klebsiella aerogenes/
 4. Pénicillinase + céphalosporinase : Yersinia enterolitica
 5. β-lactamase à spectre étendu (BLSE): Kluyvera
 

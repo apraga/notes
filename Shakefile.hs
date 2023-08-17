@@ -26,6 +26,7 @@ main = shakeArgs shakeOptions{shakeFiles="_build"} $ do
 
     "_site/notes//*.html" %> \out -> do
         let org = dropDirectory1 $ out -<.> "org"
+        need [org]
         cmd "pandoc" [org] "--filter " filterExe "-s --css /css/default.css -o" [out]
 
     siteExe  %> \out -> do
@@ -36,12 +37,15 @@ main = shakeArgs shakeOptions{shakeFiles="_build"} $ do
 
     -- Shake cannot use directories
     phony "build" $ do
-        need [siteExe]
+        need [siteExe, filterExe ]
         cmd_ siteExe "build"
 
     phony "clean" $ do
         putInfo "Cleaning _site "
         cmd_ siteExe "clean"
+
+    phony "cleanall" $ do
+        need ["clean"]
         putInfo "Cleaning files in _build"
         removeFilesAfter "_build" ["//*"]
 
@@ -51,7 +55,7 @@ main = shakeArgs shakeOptions{shakeFiles="_build"} $ do
         cmd_ "hut pages publish _build/site.tar.gz -d scut.srht.site"
 
     phony "archive" $ do
-        need ["build", "_site/notes/index.html"]
+        need ["build", "_site/notes/index.html", "_site/notes/livres.html"]
         cmd_ "tar cvzf " ["_build/site.tar.gz"] "-C _site ."
 
   -- -- z option is important to avoid re-uploading everything

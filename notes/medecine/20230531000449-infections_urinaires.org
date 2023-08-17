@@ -44,7 +44,7 @@ _Groupe 2_ = *Seuil = 10^3 homme, 10^4 femme*. Plutôt IU associées aux soins s
 _Groupe 3_: *Seuil 10^5*. Implication discutée. Nécessite bactériurie élevée + 2 échantillons + critères clinique + inflammation
 - Gram + : Streptococcus agalactiae, staph à coagulase négative autre de S. saprophyticus
 - entérocoque avec E. coli
-- Gram - : Actinetobacter, Oligella urethralis, Stenotrophomonas maltophilia, Burkholderia cepacia
+- Gram - : Acinetobacter, Oligella urethralis, Stenotrophomonas maltophilia, Burkholderia cepacia
 - Candida
 
 _Groupe 4_ : *Seuil: non*. Contaminant
@@ -74,5 +74,6 @@ _Groupe 4_ : *Seuil: non*. Contaminant
 
 Clinique > biologique (décapité par antibio, croissance lente)
 
-* Uropathogènes exigeants (Gram+): Aerococcus spp, Actinotignum shaalii, A. omnicolens et L. delbrueckii
-/ chez > 65 ans, < 3 ans et patho urologie (sauf cancer vessie et prostate) -> à chercher dans ce contexte
+* Uropathogènes emergents
+- (Gram+): Aerococcus spp, Actinotignum shaalii, A. omnicolens et L. delbrueckii
+- chez > 65 ans, < 3 ans et patho urologie (sauf cancer vessie et prostate) -> à chercher dans ce contexte

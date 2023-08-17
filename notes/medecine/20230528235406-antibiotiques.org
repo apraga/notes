@@ -22,6 +22,7 @@ Entérobactéries
 
 - Groupe 1: TRI = résistance amox/ticar/pipe + inhibiteur β-lactamase
 - Céphalosporinase = *inhibée oxacilline*
+- *BLSE* = inhibée par acide clavulanique => *"bouchon de champagne"*  (C3G- acide clavulanique)
 
 |                   | Pénicillinase | Pénicillinase | Céphalosporinase | Céphalo.   | BLSE    | Carbapénémase  |
 |                   |               | déréprimée    |                  | déréprimée |         |                |
