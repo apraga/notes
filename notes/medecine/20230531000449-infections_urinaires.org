@@ -59,5 +59,20 @@ _Groupe 4_ : *Seuil: non*. Contaminant
 * Virulence
 - Capacité de colonisation + invasion des cellules urothéliale
 - Biofilm
+* Interprération
+| Dispositif | Clinique | Leucotyurie | Bactéurie  | IU                   | Antibiogramme |
+|------------+----------+-------------+------------+----------------------+---------------|
+| Non        | oui      | oui         | cf seuils  | oui                  | oui           |
+|            | non      | oui/non     | >= 10^3    | colonisation         | non           |
+|            | oui      | non         | cf tableau | débutant/neutropénie | oui           |
+|------------+----------+-------------+------------+----------------------+---------------|
+| Oui        | oui      | NC          | >= 10^5    | oui                  | oui           |
+|            | non      | NC          | >= 10^3    | colonisation         | non           |
+
+- *colonisation* femme *enceinte* avec bactérurie >= 10^5 groupes 1 à 3* : antibiogramme !!
+- si invasif : significatif si > seuil
+
+Clinique > biologique (décapité par antibio, croissance lente)
+
 * Uropathogènes exigeants (Gram+): Aerococcus spp, Actinotignum shaalii, A. omnicolens et L. delbrueckii
 / chez > 65 ans, < 3 ans et patho urologie (sauf cancer vessie et prostate) -> à chercher dans ce contexte
