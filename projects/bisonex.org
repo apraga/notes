@@ -1801,10 +1801,10 @@ C'est bien ce qu'on retrouve avec spip
 *** DONE [#A] Filtre vep avec spip
 CLOSED: [2023-08-13 Sun 00:39] SCHEDULED: <2023-08-12 Sat 19:00>
 *** TODO Réordonner les colonnes :annotation:
-SCHEDULED: <2023-08-15 Tue> DEADLINE: <2023-08-15 Tue>
+DEADLINE: <2023-08-19 Sat> SCHEDULED: <2023-08-19 Sat>
 Pas d'OMIM, pas de CADD, pas de spliceAI
 *** TODO Annotation CADD + spliceAI GRCh38 avec nouvelle version :annotation:
-SCHEDULED: <2023-08-15 Tue>
+SCHEDULED: <2023-08-19 Sat>
 *** DONE OMIM: possible seulement sur nom du gènes:annotation:
 CLOSED: [2023-08-13 Sun 11:57] SCHEDULED: <2023-08-13 Sun 16:00>
 Base de données non disponible et compliqué de faire la mise à jour nous.
@@ -1866,9 +1866,9 @@ comm -13 t2t-genes.txt hg38-genes.txt | wc -l
 #+RESULTS:
 : 12621
 *** TODO OMIM sur nom du gène :annotation:
-SCHEDULED: <2023-08-15 Tue>
+SCHEDULED: <2023-08-19 Sat>
 *** TODO Mobidetails API
-SCHEDULED: <2023-08-15 Tue>
+SCHEDULED: <2023-08-19 Sat>
 *** PROJ Franklin API
 https://www.postman.com/genoox-ps/workspace/franklin-api-documentation-s-public-workspace/documentation/6621518-4335389d-12e3-445f-8182-339df95b2a09
 
@@ -7463,10 +7463,66 @@ On lance la simulation
 #+begin_src
 nextflow run main.nf -profile standard,helios --input=samples-synthetic.csv --genome=GRCh38  -bg
 #+end_src
-***** TODO Résultat après haplotyecaller
-***** TODO Résultat après filtre depth
-***** TODO Résultat après filtre common variant
-***** TODO Résultat après filtre VEP
+***** DONE Résultat après haplotyecaller: 3 varinat perdus => ok
+CLOSED: [2023-08-17 Thu 19:13]
+Haplotypecaller 143 found over 146
+3×3 DataFrame
+| variant             | meanQual | depth |
+|---------------------+----------+-------|
+| chr12:g.13720138C>T |     60.0 |     1 |
+| chr17:g.10296150T>A |     60.0 |     3 |
+| chr21:g.43426167C>T |      0.0 |    88 |
+Pas assez de read (1,2) et problème d'alignement (3)
+***** DONE Résultat après filtre depth : +10 variants perduis ~ ok
+CLOSED: [2023-08-17 Thu 19:31]
+filter depth : another 10 missed variants
+10×3 DataFrame
+| variant             | meanQual | depth |
+|---------------------+----------+-------|
+| chr3:g.71112628C>T  |     60.0 |    62 |
+| chr12:g.40367710A>G |  58.0435 |    46 |
+| chr14:g.58458545G>A |     60.0 |     9 |
+| chr15:g.66703292C>T |     60.0 |    33 |
+| chr16:g.30965737C>A |     60.0 |    18 |
+| chr17:g.61968202A>C |     60.0 |    46 |
+| chrX:g.124056226T>G |     60.0 |    40 |
+| chrX:g.24737739G>T  |     60.0 |    16 |
+| chrX:g.40591349C>T  |     60.0 |    37 |
+| chrX:g.53193275G>A  |     60.0 |    32 |
+|                     |          |       |
+S'ils sont hétérozygotes, 0.5*depth est effectivement < 30 (notre filtre...)
+***** DONE Résultat après filtre common variant: +0 ok
+CLOSED: [2023-08-17 Thu 19:32]
+***** TODO Résultat après filtre VEP : +23 perdus ??
+SCHEDULED: <2023-08-18 Fri>
+filter vep : another 23 missed variants
+23×3 DataFrame
+ Row │ variant               meanQual  depth
+     │ String                Float64   Int64
+─────┼───────────────────────────────────────
+   1 │ chr1:g.183222115C>T    60.0       168
+   2 │ chr1:g.39388062C>T     60.0       285
+   3 │ chr2:g.240719197G>C    60.0        77
+   4 │ chr3:g.41227353G>C     60.0       105
+   5 │ chr4:g.15536991T>G     60.0        41
+   6 │ chr5:g.14474096G>A     60.0       191
+   7 │ chr8:g.43122149C>T     60.0       237
+   8 │ chr9:g.128603589A>C    60.0       304
+   9 │ chr9:g.137452819G>C    60.0       107
+  10 │ chr10:g.129957338T>C   60.0       116
+  11 │ chr10:g.247389T>G      60.0        56
+  12 │ chr11:g.61313668G>A    60.0        83
+  13 │ chr12:g.45850467C>T    60.0       291
+  14 │ chr14:g.64216315C>G    60.0       263
+  15 │ chr15:g.60514655G>A    60.0       259
+  16 │ chr17:g.61966475G>T    60.0       144
+  17 │ chr17:g.7852503T>C     60.0       190
+  18 │ chr19:g.13230158G>A    60.0       172
+  19 │ chr19:g.38523211C>G    60.0        93
+  20 │ chr19:g.4110557G>C     59.9929    425
+  21 │ chr20:g.62334188G>A    60.0        62
+  22 │ chrX:g.47575255G>A     60.0       244
+  23 │ chrX:g.53409112G>A     60.0       136
 
 **** TODO Données simuscop 200x
 SCHEDULED: <2023-08-22 Tue>
