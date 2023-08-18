@@ -63,8 +63,9 @@ Résistance fréquent à l’hôpital
 - β-lactamines :
   - phénotype sauvage sensible
   - pénicilinase > 90% des souches (disque FOX de pénicilline g): résistance pénicilline G, V, A -> ajout d’inhibiteur de β-lactamase
-  - SARM = gène mecA : PLP2 additionnelle -> résistance à toutes les β-lactamines. Souvent multirésistance aminoside, macrolide, fluoroquinolonie
-    -> vancomycine en 1ere intention
+  - SARM = gène mecA : PLP2 additionnelle -> résistance à toutes les β-lactamines *et imipénème*. Souvent multirésistance aminoside, macrolide, fluoroquinolonie
+    - vancomycine en 1ere intention
+    - C4G possible mais pas en france
 - Aminoside : sauvage sensible, résistance acquise par inactivation enzymatique
 - Glycopeptide : sauvage sensible, phénotype gIA/hétéroGISA avec sensibilité diminusée, phénotype gRSA (résistance)
 *** Staphylococcus saprophyticus
@@ -235,7 +236,40 @@ Pyogène = responsiable d’infections suppurées
 - β-lactamine : sensible
 - macrolide : sauvage sensible, résistance par mécanisme d’efflux, modiifcation cible ARN23S
 *** TODO Strepto agalactiae
-*Naturellement sensible β-lactamine*
+-Pathogène n.1 des infections materno-foetales des pays développement.
+ - périphérique = infection probable
+ - dans le sangou lCR = infection certaines
+ - Mortalité 10%, séquelle 20-30%
+**** Bactério
+ - c+ diplococque/chanîtette
+ - aérobie-ana facultative
+ - catalase négative, *β-hémolytique*
+ - groupe B lancefield
+
+**** Pathogènicité
+ - commensale digestif, génitaf 10-30%
+ - adulte : infection sujets à risque
+ - grossese : chorioamniotite, endométrite
+ - nouveau-né: infection néonat précoce <7 j, tardive > 7 jour
+ - transmission : sang (mère avec bactériémie -> enfant), vaginal (+/- rupture membrane)
+ - 2% nouveau-né des colonisé ont des symptômes
+   - pneumopathie
+   - septicémie, méningite (20%)
+**** Résistance
+- *Naturellement sensible β-lactamine* = 1ere intention
+- Résistance bas niveau aminoside, synerige µ-lactamine
+- 30% macrolide et clinda
+
+**** Diagnostic
+- Néonat : Hémoculture (référence), LCS, aspiration trachéale
+- Mère : hémoc si > 38°, PV
+- ED, gram @ gélose sang et chocolat 5-10% (croissanec < 24h habituellement)
+- MALDI/sérogroupage de lancefield
+- : PCR possible (LCR++, respi)
+
+**** Prévention
+- Dépistage 34-38 semaines: culture (Granada) -> antibio si +
+- ATB per-partum péni-G/amox
 *** Strepto. pneumoniae
 Gram+ diplocoque encapsulé à multiplication extracullaire.
 Classification selon la capsule (vaccins)

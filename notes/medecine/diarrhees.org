@@ -23,3 +23,7 @@
 ** Post-analytique
 - pas de contrôle
 - 6 jours redondance
+** Traitement
+- arrêt antibio si possible, éviter ralentisseur transit, correction hydroélectrique
+- *pas d’antibiogramme* = sensible métronidazoe + vanco
+- hygène = *contact*, iselemnt, lavage *mécanique* des mains, *Javel*. Isolement levé 48h après arrêt des diarrhées

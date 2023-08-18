@@ -31,4 +31,5 @@ Culture = croissance lente (3-5 jours), sur BCYE
 * Antibiotique
 - macrolide (azithromycine) si peu sévère 7-14 jours
 - sinon FQ ou assoication 2 parmi macrolide, FQ, rifampicine
+- pas de résistance décrite !
 * Déclaration obligatoire !
