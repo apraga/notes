@@ -1,0 +1,25 @@
+* Clostridium difficile
+- Bacille gram positif à bout carré, spores subterminales
+- Anaérobie strict
+- 1re cause diarrhées associées aux soins
+** Préanaytique
+- seulement si diarrhée et >= 3 ans
+** Pathologies associée
+- diarrhées : 10% nosocomiale, 10-25% post-antibio
+- colite pseudo-membraneuse 95%
+- complications: mégacôlin toxiuqe, perforation, choc toxique
+- portage *asymptomatique*: 20-70%  *nourrissons jusque 3 ans*, adulte < 3%
+** Facteur de virulence
+- *toxines* A, B, adhésien, enzymes, spores
+** Diagnostic
+- diarrhée + toxine selles ou souche toxinogène
+- ou colite pseudo-membraneuse
+
+- référence (fastidieux) = culture toxigénique, test de toxicité en culture
+- glutamate déshydogénase (GDF) par immuno-enzymatique = très bonne VPN => souche toxigène ou non
+- recherche des toxine A et B: PCR (sensible mais peu spécifique) ou immunoenzymatique (spécifique)
+
+  => (GDH + ou PCR+) et  toxine immuno + = diag
+** Post-analytique
+- pas de contrôle
+- 6 jours redondance
