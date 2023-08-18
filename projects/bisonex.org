@@ -548,6 +548,9 @@ CLOSED: [2023-05-29 Mon 23:03]
 CLOSED: [2023-05-29 Mon 23:02]
 ****** DONE VAF sur 1 exon
 CLOSED: [2023-05-29 Mon 23:03]
+**** TODO [#A] Bug: perte de nombreux reads avec NA12878
+SCHEDULED: <2023-08-18 Fri>
+Ex: chrX:g.124056226T>G : on passe de 65 reads à 1
 *** TODO Implémenter les indel avec VAF :indel:
 *** TODO Soumission paquet
 * Données
@@ -5289,8 +5292,8 @@ CLOSED: [2023-07-09 Sun 17:36]
 CLOSED: [2023-08-12 Sat 15:57]
 ****** HOLD Examiner les variants supprimé
 ****** TODO Enlever les FP qui correspondent à un changement dans le génome
-SCHEDULED: <2023-08-17 Thu>
 ******* Condition:
+SCHEDULED: <2023-08-19 Sat>
 - pas de variation à la position en GRCh38
 - variantion homozygote
 - la varation en T2T correspond au changement de pair de base GRC38 -> T2T
@@ -7507,8 +7510,9 @@ filter depth : another 10 missed variants
 | chrX:g.53193275G>A  |     60.0 |    32 |
 |                     |          |       |
 S'ils sont hétérozygotes, 0.5*depth est effectivement < 30 (notre filtre...)
-****** TODO Discordance DP et vraie profondeur ?
+****** TODO Problème d'inserstion des reads: on en perd de nombreux !
 SCHEDULED: <2023-08-18 Fri>
+Ex: chrX:g.124056226T>G : on passe de 65 reads à 1
 ***** DONE Résultat après filtre common variant: +0 ok
 CLOSED: [2023-08-17 Thu 19:32]
 ***** TODO Résultat après filtre VEP : +23 perdus ??
