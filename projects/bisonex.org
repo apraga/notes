@@ -1900,6 +1900,22 @@ subworkflows/local/bam_markduplicates/
 CLOSED: [2023-08-15 Tue 21:43] SCHEDULED: <2023-08-13 Sun>
 *** DONE [#B] Compte-redu exécution avec MultiQC
 CLOSED: [2023-08-15 Tue 21:43] SCHEDULED: <2023-08-13 Sun>
+*** TODO Résultats sur NA12878 : 98% à 20x
+SCHEDULED: <2023-08-17 Thu>
+**** DONE Comprendre 91% à 20x seulement: SNVs inséré
+CLOSED: [2023-08-18 Fri 22:25]
+***** DONE Tester autre kit : Twist exome comprehensive
+CLOSED: [2023-08-18 Fri 22:24]
+Moins bon
+***** DONE Tester génome sans alt
+CLOSED: [2023-08-18 Fri 22:25]
+Idem
+***** DONE Tester NA12878 sans SNVs inséré: cause !!
+CLOSED: [2023-08-18 Fri 22:25]
+***** DONE Tester hg19 sur NA12878 non inséré
+CLOSED: [2023-08-18 Fri 22:25]
+**** TODO Comprendre pourquoi SNVs diminuent le score
+SCHEDULED: <2023-08-18 Fri>
 ** HOLD vérifier si normalisation
 ** KILL [#B] Vérification nomenclature hgvs :hgvs:
 CLOSED: [2023-08-16 Wed 19:07] SCHEDULED: <2023-08-15 Tue>
@@ -7473,8 +7489,8 @@ Haplotypecaller 143 found over 146
 | chr17:g.10296150T>A |     60.0 |     3 |
 | chr21:g.43426167C>T |      0.0 |    88 |
 Pas assez de read (1,2) et problème d'alignement (3)
-***** DONE Résultat après filtre depth : +10 variants perduis ~ ok
-CLOSED: [2023-08-17 Thu 19:31]
+***** TODO Résultat après filtre depth : +10 variants perduis
+SCHEDULED: <2023-08-18 Fri>
 filter depth : another 10 missed variants
 10×3 DataFrame
 | variant             | meanQual | depth |
@@ -7491,6 +7507,8 @@ filter depth : another 10 missed variants
 | chrX:g.53193275G>A  |     60.0 |    32 |
 |                     |          |       |
 S'ils sont hétérozygotes, 0.5*depth est effectivement < 30 (notre filtre...)
+****** TODO Discordance DP et vraie profondeur ?
+SCHEDULED: <2023-08-18 Fri>
 ***** DONE Résultat après filtre common variant: +0 ok
 CLOSED: [2023-08-17 Thu 19:32]
 ***** TODO Résultat après filtre VEP : +23 perdus ??
