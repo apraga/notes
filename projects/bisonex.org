@@ -2059,12 +2059,13 @@ Test
 
 cp work/bf/437ae511958509e43072f032f4d495/small.tab.gz tests/vep-spip.tab.gz
 cp work/d5/3b1244b5ae83d54409ee0d456e8c55/small_cadd.tab.gz tests/vep-cadd-splice.tab.gz
-**** TODO Package Nix spliceAI ?
+**** HOLD Package Nix spliceAI ?
 nix profile install nixpkgs#python3Packages.tensorflow
 + ajouter dépendencs ("grep import" ou cnad)
 **** TODO Ajout LOEUF et pli
 plugin VEP
 **** TODO NMD
+plugin VEP
 **** KILL Ajout LOEUF
 CLOSED: [2023-04-19 mer. 16:32]
 plugin VEP
@@ -2109,7 +2110,7 @@ NB: on pourrait filtrer CADD avec tabix pour se restreindre à nos variants
 CLOSED: [2023-04-22 Sat 15:31]
 **** KILL Vérifier résultats HGVS avec mutalyzer
 CLOSED: [2023-05-01 Mon 09:26]
-**** TODO Parallélisation
+**** HOLD Parallélisation
 ***** HOLD par chromosome avec workflow VEP
 https://github.com/Ensembl/ensembl-vep/blob/release/109/nextflow/workflows/run_vep.nf
 ***** HOLD Avec option --fork
@@ -2117,11 +2118,14 @@ https://github.com/Ensembl/ensembl-vep/blob/release/109/nextflow/workflows/run_v
 CLOSED: [2023-05-13 Sat 18:27] SCHEDULED: <2023-05-07 Sun>
 **** DONE OMIM
 CLOSED: [2023-05-08 Mon 15:02] SCHEDULED: <2023-05-01 Mon>
-**** TODO Grantham
-**** TODO ACMG incidental
+**** PROJ Grantham
+SCHEDULED: <2023-08-20 Sun>
+**** PROJ ACMG incidental
 **** TODO Gnomad ?
-**** TODO ACMG incidental
-**** TODO Gnomad ?
+**** TODO Sortie VCF (pour avoir la fraction allélique AF)
+SCHEDULED: <2023-08-20 Sun>
+**** TODO VCF -> tsv
+SCHEDULED: <2023-08-20 Sun>
 **** DONE Filtrer après VEP avec filter_vep
 CLOSED: [2023-04-29 Sat 15:47]
 nNon testé
@@ -7624,7 +7628,7 @@ filter vep : another 23 missed variants
 
 **** TODO [#A] Tout insérer dans NA12878 avec XAMscissors (XAMScissors à jour)
 SCHEDULED: <2023-08-19 Sat>
-***** TODO Insertion
+***** PROJ Insertion
 
 **** TODO Données simuscop 200x
 SCHEDULED: <2023-08-22 Tue>
