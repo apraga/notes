@@ -548,9 +548,29 @@ CLOSED: [2023-05-29 Mon 23:03]
 CLOSED: [2023-05-29 Mon 23:02]
 ****** DONE VAF sur 1 exon
 CLOSED: [2023-05-29 Mon 23:03]
-**** TODO [#A] Bug: perte de nombreux reads avec NA12878
-SCHEDULED: <2023-08-18 Fri>
-Ex: chrX:g.124056226T>G : on passe de 65 reads à 1
+**** DONE [#A] Bug: perte de nombreux reads avec NA12878
+CLOSED: [2023-08-19 Sat 20:45] SCHEDULED: <2023-08-18 Fri>
+:PROPERTIES:
+:ID:       5c1c36f3-f68e-4e6d-a7b6-61dca89abc37
+:END:
+Ex: chrX:g.124056226 : on passe de 65 reads à 1
+
+Test xamscissors: pas de soucis...
+On teste sur cette position +/- 200bp
+#+begin_src sh :dir /home/alex/roam/research/bisonex/code/sanger
+samtools view   /home/alex/code/bisonex/out/2300346867_NA12878-63118093_S260-GRCh38/preprocessing/mapped/2300346867_NA12878-63118093_S260-GRCh38.bam chrX:124056026-124056426 -o chrXsmall.bam
+#+end_src
+
+#+RESULTS:
+
+***** DONE Vérifier profondeur avec dernière version :
+CLOSED: [2023-08-19 Sat 20:34] SCHEDULED: <2023-08-19 Sat>
+****** DONE chr20: profondeur ok
+SCHEDULED: <2023-08-19 Sat>
+****** DONE toutes les données
+CLOSED: [2023-08-19 Sat 20:34] SCHEDULED: <2023-08-19 Sat>
+Ok pour 7 variants (IGV) notament chromosome X
+
 *** TODO Implémenter les indel avec VAF :indel:
 *** TODO Soumission paquet
 * Données
@@ -1804,10 +1824,10 @@ C'est bien ce qu'on retrouve avec spip
 *** DONE [#A] Filtre vep avec spip
 CLOSED: [2023-08-13 Sun 00:39] SCHEDULED: <2023-08-12 Sat 19:00>
 *** TODO Réordonner les colonnes :annotation:
-DEADLINE: <2023-08-19 Sat> SCHEDULED: <2023-08-19 Sat>
+SCHEDULED: <2023-08-20 Sun> DEADLINE: <2023-08-19 Sat>
 Pas d'OMIM, pas de CADD, pas de spliceAI
 *** TODO Annotation CADD + spliceAI GRCh38 avec nouvelle version :annotation:
-SCHEDULED: <2023-08-19 Sat>
+SCHEDULED: <2023-08-20 Sun>
 *** DONE OMIM: possible seulement sur nom du gènes:annotation:
 CLOSED: [2023-08-13 Sun 11:57] SCHEDULED: <2023-08-13 Sun 16:00>
 Base de données non disponible et compliqué de faire la mise à jour nous.
@@ -1869,9 +1889,9 @@ comm -13 t2t-genes.txt hg38-genes.txt | wc -l
 #+RESULTS:
 : 12621
 *** TODO OMIM sur nom du gène :annotation:
-SCHEDULED: <2023-08-19 Sat>
+SCHEDULED: <2023-08-20 Sun>
 *** TODO Mobidetails API
-SCHEDULED: <2023-08-19 Sat>
+SCHEDULED: <2023-08-20 Sun>
 *** PROJ Franklin API
 https://www.postman.com/genoox-ps/workspace/franklin-api-documentation-s-public-workspace/documentation/6621518-4335389d-12e3-445f-8182-339df95b2a09
 
@@ -1903,8 +1923,8 @@ subworkflows/local/bam_markduplicates/
 CLOSED: [2023-08-15 Tue 21:43] SCHEDULED: <2023-08-13 Sun>
 *** DONE [#B] Compte-redu exécution avec MultiQC
 CLOSED: [2023-08-15 Tue 21:43] SCHEDULED: <2023-08-13 Sun>
-*** TODO Résultats sur NA12878 : 98% à 20x
-SCHEDULED: <2023-08-17 Thu>
+*** DONE Résultats sur NA12878 : 98% à 20x
+CLOSED: [2023-08-19 Sat 20:45] SCHEDULED: <2023-08-17 Thu>
 **** DONE Comprendre 91% à 20x seulement: SNVs inséré
 CLOSED: [2023-08-18 Fri 22:25]
 ***** DONE Tester autre kit : Twist exome comprehensive
@@ -1917,8 +1937,11 @@ Idem
 CLOSED: [2023-08-18 Fri 22:25]
 ***** DONE Tester hg19 sur NA12878 non inséré
 CLOSED: [2023-08-18 Fri 22:25]
-**** TODO Comprendre pourquoi SNVs diminuent le score
-SCHEDULED: <2023-08-18 Fri>
+**** DONE Comprendre pourquoi SNVs diminuent le score: reads manquants
+CLOSED: [2023-08-19 Sat 20:34] SCHEDULED: <2023-08-18 Fri>
+Voir [[id:5c1c36f3-f68e-4e6d-a7b6-61dca89abc37][Bug: perte de nombreux reads avec NA12878]]
+*** TODO Relancer résultats avec NA1287 et NA12878 + sanger
+SCHEDULED: <2023-08-19 Sat>
 ** HOLD vérifier si normalisation
 ** KILL [#B] Vérification nomenclature hgvs :hgvs:
 CLOSED: [2023-08-16 Wed 19:07] SCHEDULED: <2023-08-15 Tue>
@@ -5291,9 +5314,8 @@ CLOSED: [2023-07-09 Sun 17:36]
 ****** DONE Examiner les FP restant après correction selon séquence de référence
 CLOSED: [2023-08-12 Sat 15:57]
 ****** HOLD Examiner les variants supprimé
-****** TODO Enlever les FP qui correspondent à un changement dans le génome
+****** PROJ Enlever les FP qui correspondent à un changement dans le génome
 ******* Condition:
-SCHEDULED: <2023-08-19 Sat>
 - pas de variation à la position en GRCh38
 - variantion homozygote
 - la varation en T2T correspond au changement de pair de base GRC38 -> T2T
@@ -7392,7 +7414,60 @@ CLOSED: [2023-08-15 Tue 00:13]
 **** DONE 2 variant chr20 dans HG002 heterozygote
 CLOSED: [2023-08-15 Tue 13:45] SCHEDULED: <2023-08-15 Tue>
 La zygosité n'était pas correcte...
+**** DONE chr20 hétérozygote 2 variants  avec XAMscissors à jour
+CLOSED: [2023-08-19 Sat 20:45] SCHEDULED: <2023-08-19 Sat>
+***** DONE Insertion
+CLOSED: [2023-08-19 Sat 20:08]
+XAMscissors avec dépendence git
+NA12878 après bwa mem
+Sur le mésocentre, dans code/sanger/
+#+begin_src
+ln -s  /Work/Users/apraga/bisonex/out/2300346867_NA12878-63118093_S260-full-GRCh38/preprocessing/mapped/2300346867_NA12878-63118093_S260-GRCh38.bam
+julia --project=.
+include("xamscissors.jl")
+#+end_src
+Renommer out-chr20/inserted -> data/data/NA12878-sanger-inserted-chr20
 
+On lance le calcul avec samples-synthetic.csv
+NA12878,sanger-chr20,data/NA12878-sanger-inserted-chr20_1.fq.gz,data/NA12878-sanger-inserted-chr20_2.fq.gz
+#+begin_src
+ nextflow run main.nf -profile standard,helios --input=samples-synthetic.csv --genome=GRCh38  -bg
+#+end_src
+***** DONE Vérifier après appel de variant
+CLOSED: [2023-08-19 Sat 20:42] SCHEDULED: <2023-08-19 Sat>
+#+begin_src
+cd /Work/Users/apraga/bisonex/out/NA12878-sanger-chr20-GRCh38/callVariant/haplotypecaller
+zgrep "46043645\|62334188" NA12878-sanger-chr20-GRCh38.vcf.gz
+#+end_src
+
+#+RESULTS:
+: chr20   46043645        rs1332625463    G       A       933.64  .       AC=1;AF=0.500;AN=2;BaseQRankSum=-1.624;DB;DP=96;ExcessHet=0.0000;FS=1.654;MLEAC=1;MLEAF=0.500;MQ=60.00;MQRankSum=0.000;QD=9.83;ReadPosRankSum=1.833;SOR=0.516  GT:AD:DP:GQ:PL 0/1:49,46:95:99:941,0,1103
+: chr20   62334188        .       G       A       910.64  .       AC=1;AF=0.500;AN=2;BaseQRankSum=-0.975;DP=87;ExcessHet=0.0000;FS=0.000;MLEAC=1;MLEAF=0.500;MQ=60.00;MQRankSum=0.000;QD=10.59;ReadPosRankSum=-1.566;SOR=0.685   GT:AD:DP:GQ:PL0/1:39,47:86:99:918,0,757
+***** DONE Vérifier après filtre depth
+CLOSED: [2023-08-19 Sat 20:44] SCHEDULED: <2023-08-19 Sat>
+#+begin_src sh
+cd /Work/Users/apraga/bisonex/out/NA12878-sanger-chr20-GRCh38/callVariant
+ zgrep "46043645\|62334188" filter-depth.vcf
+#+end_src
+
+#+RESULTS:
+: chr20   46043645        rs1332625463    G       A       933.64  PASS    AC=1;AF=0.5;AN=2;BaseQRankSum=-1.624;DB;DP=96;ExcessHet=0;FS=1.654;MLEAC=1;MLEAF=0.5;MQ=60;MQRankSum=0;QD=9.83;ReadPosRankSum=1.833;SOR=0.516  GT:AD:DP:GQ:PL  0/1:49,46:95:99:941,0,1103
+: chr20   62334188        .       G       A       910.64  PASS    AC=1;AF=0.5;AN=2;BaseQRankSum=-0.975;DP=87;ExcessHet=0;FS=0;MLEAC=1;MLEAF=0.5;MQ=60;MQRankSum=0;Q
+***** DONE Vérifier après filtre polymorphisme
+CLOSED: [2023-08-19 Sat 20:44] SCHEDULED: <2023-08-19 Sat>
+ zgrep "46043645\|62334188" filter-polymorphisms.vcf
+chr20   46043645        rs1332625463    G       A       933.64  PASS    .       GT:AD:DP:GQ:PL  0/1:49,46:95:99:941,0,1103
+chr20   62334188        .       G       A       910.64  PASS    .       GT:AD:DP:GQ:PL  0/1:39,47:86:99:918,0,757
+***** DONE vérifier après filter vep
+CLOSED: [2023-08-19 Sat 20:45]
+#+begin_src sh
+cd /Work/Users/apraga/bisonex/out/NA12878-sanger-chr20-GRCh38/annotate
+zgrep "46043645\|62334188" postvep-filter.tsv
+#+end_src
+
+#+RESULTS:
+: rs1332625463    chr20:46043645  A       ENSG00000124140 ENST00000243964 Transcript      missense_variant        1380  1250     417     G/D     gGt/gAt rs1332625463    G       MODERATE        -       1       -       YES     -       Ensembl-       1       probably_damaging(0.981)        ENST00000243964.7:c.1250G>A     ENSP00000243964.4:p.Gly417Asp   -     chr20:g.46043645G>A      0       0       0       0       0       0       0       0       0       -       -       -     --       -       -       rs1332625463    NTR     6.8     [03.77%-11.14%]
+: chr20_62334188_G/A      chr20:62334188  A       ENSG00000130702 ENST00000252999 Transcript      stop_gained,splice_region_variant      2804    2737    913     Q/*     Cag/Tag COSV99440955    G       HIGH    -       -1      -       YES   -Ensembl -       1       -       ENST00000252999.7:c.2737C>T     ENSP00000252999.3:p.Gln913Ter   -       chr20:g.62334188G>A    -       -       -       -       -       -       -       -       -       -       1       1       -       -     --       chr20:62334188-62334188 Alter by SPiCE + Alter ESR      69.33   [61.29%-76.59%]
 **** KILL [#B] Tout insérer dans HG002 avec XAMscissors: erreur patient..
 CLOSED: [2023-08-16 Wed 20:21] SCHEDULED: <2023-08-14 Mon>
 ***** DONE Insertion
@@ -7457,9 +7532,10 @@ On perd 30 variant
 CLOSED: [2023-08-16 Wed 20:18]
 ***** Résultat après filtre VEP
 
-**** TODO [#B] Tout insérer dans NA12878 avec XAMscissors
-SCHEDULED: <2023-08-14 Mon>
-***** TODO Insertion
+**** KILL [#B] Tout insérer dans NA12878 avec XAMscissors: reads manquants
+CLOSED: [2023-08-19 Sat 20:04] SCHEDULED: <2023-08-14 Mon>
+***** KILL Insertion
+CLOSED: [2023-08-19 Sat 20:03]
 On récupère le BAM
 #+begin_src sh :dir /home/alex/code/bisonex/out
 rsync -avz  meso:/Work/Users/apraga/bisonex/out/2300346867_NA12878-63118093_S260-GRCh38/preprocessing/mapped 2300346867_NA12878-63118093_S260-GRCh38/preprocessing/
@@ -7492,8 +7568,8 @@ Haplotypecaller 143 found over 146
 | chr17:g.10296150T>A |     60.0 |     3 |
 | chr21:g.43426167C>T |      0.0 |    88 |
 Pas assez de read (1,2) et problème d'alignement (3)
-***** TODO Résultat après filtre depth : +10 variants perduis
-SCHEDULED: <2023-08-18 Fri>
+***** KILL Résultat après filtre depth : +10 variants perduis
+CLOSED: [2023-08-19 Sat 20:04] SCHEDULED: <2023-08-18 Fri>
 filter depth : another 10 missed variants
 10×3 DataFrame
 | variant             | meanQual | depth |
@@ -7510,13 +7586,13 @@ filter depth : another 10 missed variants
 | chrX:g.53193275G>A  |     60.0 |    32 |
 |                     |          |       |
 S'ils sont hétérozygotes, 0.5*depth est effectivement < 30 (notre filtre...)
-****** TODO Problème d'inserstion des reads: on en perd de nombreux !
-SCHEDULED: <2023-08-18 Fri>
+****** KILL Problème d'inserstion des reads: on en perd de nombreux ! -> regénérer données
+CLOSED: [2023-08-19 Sat 20:04] SCHEDULED: <2023-08-18 Fri>
 Ex: chrX:g.124056226T>G : on passe de 65 reads à 1
 ***** DONE Résultat après filtre common variant: +0 ok
 CLOSED: [2023-08-17 Thu 19:32]
-***** TODO Résultat après filtre VEP : +23 perdus ??
-SCHEDULED: <2023-08-18 Fri>
+***** KILL Résultat après filtre VEP : +23 perdus ??
+CLOSED: [2023-08-19 Sat 20:04] SCHEDULED: <2023-08-18 Fri>
 filter vep : another 23 missed variants
 23×3 DataFrame
  Row │ variant               meanQual  depth
@@ -7545,6 +7621,10 @@ filter vep : another 23 missed variants
   21 │ chr20:g.62334188G>A    60.0        62
   22 │ chrX:g.47575255G>A     60.0       244
   23 │ chrX:g.53409112G>A     60.0       136
+
+**** TODO [#A] Tout insérer dans NA12878 avec XAMscissors (XAMScissors à jour)
+SCHEDULED: <2023-08-19 Sat>
+***** TODO Insertion
 
 **** TODO Données simuscop 200x
 SCHEDULED: <2023-08-22 Tue>
