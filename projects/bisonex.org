@@ -7625,8 +7625,8 @@ filter vep : another 23 missed variants
   22 │ chrX:g.47575255G>A     60.0       244
   23 │ chrX:g.53409112G>A     60.0       136
 
-**** TODO [#A] Tout insérer dans NA12878 avec XAMscissors (XAMScissors à jour)
-SCHEDULED: <2023-08-19 Sat>
+**** DONE [#A] Tout insérer dans NA12878 avec XAMscissors (XAMScissors à jour)
+CLOSED: [2023-08-20 Sun 13:45] SCHEDULED: <2023-08-19 Sat>
 ***** DONE Insertion
 CLOSED: [2023-08-20 Sun 09:15]
 ***** DONE Vérifier après haplotypecaller: 3 variants manquant mais ok
@@ -7645,38 +7645,46 @@ Manque de profondeur sur 2 et mauvaise qualité sur 3
 CLOSED: [2023-08-20 Sun 09:18] SCHEDULED: <2023-08-20 Sun>
 ***** DONE Vérifier après filterpolymorphis : 0 perdus en plus
 CLOSED: [2023-08-20 Sun 09:18] SCHEDULED: <2023-08-20 Sun>
-***** TODO Vérifier après filter vep: 26 perdus
-SCHEDULED: <2023-08-20 Sun>
- Row │ variant               meanQual  depth
-     │ String                Float64   Int64
-─────┼───────────────────────────────────────
-   1 │ chr1:g.183222115C>T    60.0       124
-   2 │ chr1:g.39388062C>T     60.0       136
-   3 │ chr2:g.240719197G>C    60.0        98
-   4 │ chr3:g.41227353G>C     60.0        93
-   5 │ chr4:g.15536991T>G     59.6584    161
-   6 │ chr5:g.14474096G>A     60.0        96
-   7 │ chr8:g.43122149C>T     60.0       134
-   8 │ chr9:g.128603589A>C    60.0       104
-   9 │ chr9:g.137452819G>C    60.0       156
-  10 │ chr10:g.129957338T>C   60.0        67
-  11 │ chr10:g.247389T>G      60.0        79
-  12 │ chr11:g.61313668G>A    60.0        69
-  13 │ chr12:g.45850467C>T    60.0        90
-  14 │ chr14:g.58458545G>A    60.0        51
-  15 │ chr14:g.64216315C>G    60.0       167
-  16 │ chr15:g.60514655G>A    60.0       113
-  17 │ chr15:g.66703292C>T    60.0        95
-  18 │ chr17:g.61966475G>T    60.0        67
-  19 │ chr17:g.7852503T>C     60.0        96
-  20 │ chr19:g.13230158G>A    60.0       135
-  21 │ chr19:g.38523211C>G    60.0       180
-  22 │ chr19:g.4110557G>C     60.0       219
-  23 │ chr20:g.62334188G>A    60.0        94
-  24 │ chrX:g.24737739G>T     60.0        76
-  25 │ chrX:g.47575255G>A     60.0       145
-  26 │ chrX:g.53409112G>A     60.0       186
+***** DONE Vérifier après filter vep: 2 perdus en plus
+CLOSED: [2023-08-20 Sun 12:37] SCHEDULED: <2023-08-20 Sun>
+2×3 DataFrame
+ Row │ variant             meanQual  depth
+     │ String              Float64   Int64
+─────┼─────────────────────────────────────
+   1 │ chr17:g.7852503T>C      60.0     96
+   2 │ chrX:g.47575255G>A      60.0    145
+***** DONE 1ere correction spip: meilleur nombre de variants en sortie mais manque toujours ces 2
+CLOSED: [2023-08-20 Sun 11:38]
+***** DONE --pick : résout le problème
+CLOSED: [2023-08-20 Sun 12:37]
+chrX:g.47575255G>A est rendu downstream_gene_variant avec l'option --pick
+Or il n'est pas en5' dans les transcrits refseq...
+https://genome-euro.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chrX%3A47575242%2D47575268&hgsid=301211823_xpelPqPJije7wSIhg070JeGH5ZwV
 
+https://mobidetails.iurc.montp.inserm.fr/MD/api/variant/238296/browser/
+
+Idem pour l'autre
+   chr17:g.7852503T>C
+https://mobidetails.iurc.montp.inserm.fr/MD/api/variant/182993/browser/
+
+Note:
+
+VEP chooses one block of annotation per variant, using an ordered set of criteria. This order may be customised using --pick_order.
+
+    MANE Select transcript status
+    MANE Plus Clinical transcript status
+    canonical status of transcript
+    APPRIS isoform annotation
+    transcript support level
+    biotype of transcript ("protein_coding" preferred)
+    CCDS status of transcript
+    consequence rank according to this table
+    translated, transcript or feature length (longer preferred)
+
+"Wherever possible we would discourage you from summarising data in this way. "
+
+**** DONE Mail alexis
+CLOSED: [2023-08-20 Sun 13:45] SCHEDULED: <2023-08-20 Sun>
 **** TODO Données simuscop 200x
 SCHEDULED: <2023-08-22 Tue>
 * Résultats
