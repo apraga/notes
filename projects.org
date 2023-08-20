@@ -29,8 +29,8 @@ CLOSED: [2023-07-21 Fri 17:54] SCHEDULED: <2023-07-21 Fri>
 *** TODO Dossier à compléter
 SCHEDULED: <2023-08-17 Thu>
 *** TODO Vision Julien Thevenon + Virginie ?? (bionfo)
-** TODO Copie carte d'identié + mutuelle accueil hôpital
-SCHEDULED: <2023-08-17 Thu>
+** DONE Copie carte d'identié + mutuelle accueil hôpital
+CLOSED: [2023-08-19 Sat 20:09] SCHEDULED: <2023-08-17 Thu>
 /Entered on/ [2023-08-08 Tue 21:18]
 * Recherche
 :PROPERTIES:
