@@ -1823,10 +1823,11 @@ http://genome.ucsc.edu/cgi-bin/hgTracks?db=hub_3671779_hs1&lastVirtModeType=defa
 C'est bien ce qu'on retrouve avec spip
 *** DONE [#A] Filtre vep avec spip
 CLOSED: [2023-08-13 Sun 00:39] SCHEDULED: <2023-08-12 Sat 19:00>
-*** PROJ Réordonner les colonnes :annotation:
+*** TODO Réordonner les colonnes :annotation:
+SCHEDULED: <2023-08-28 Mon>
 Pas d'OMIM, pas de CADD, pas de spliceAI
-*** TODO Annotation CADD + spliceAI GRCh38 avec nouvelle version :annotation:
-SCHEDULED: <2023-08-20 Sun>
+*** DONE Annotation CADD + spliceAI GRCh38 avec nouvelle version :annotation:
+CLOSED: [2023-08-28 Mon 17:21] SCHEDULED: <2023-08-20 Sun>
 *** DONE OMIM: possible seulement sur nom du gènes:annotation:
 CLOSED: [2023-08-13 Sun 11:57] SCHEDULED: <2023-08-13 Sun 16:00>
 Base de données non disponible et compliqué de faire la mise à jour nous.
@@ -1938,13 +1939,13 @@ CLOSED: [2023-08-18 Fri 22:25]
 CLOSED: [2023-08-19 Sat 20:34] SCHEDULED: <2023-08-18 Fri>
 Voir [[id:5c1c36f3-f68e-4e6d-a7b6-61dca89abc37][Bug: perte de nombreux reads avec NA12878]]
 *** TODO Relancer résultats avec NA1287 et NA12878 + sanger
-SCHEDULED: <2023-08-20 Sun>
-*** TODO Comparer avec hg19
-SCHEDULED: <2023-08-20 Sun>
-*** TODO Comparer avec autres kit de capture
-SCHEDULED: <2023-08-20 Sun>
-*** TODO Comparer avec no-alt
-SCHEDULED: <2023-08-20 Sun>
+SCHEDULED: <2023-08-29 Tue>
+*** DONE Comparer avec hg19
+CLOSED: [2023-08-28 Mon 17:22] SCHEDULED: <2023-08-20 Sun>
+*** DONE Comparer avec autres kit de capture
+CLOSED: [2023-08-28 Mon 17:22] SCHEDULED: <2023-08-20 Sun>
+*** DONE Comparer avec no-alt
+CLOSED: [2023-08-28 Mon 17:22] SCHEDULED: <2023-08-20 Sun>
 ** HOLD vérifier si normalisation
 ** KILL [#B] Vérification nomenclature hgvs :hgvs:
 CLOSED: [2023-08-16 Wed 19:07] SCHEDULED: <2023-08-15 Tue>
@@ -2119,28 +2120,76 @@ https://github.com/Ensembl/ensembl-vep/blob/release/109/nextflow/workflows/run_v
 ***** HOLD Avec option --fork
 **** DONE Utiliser la version de nf-core de VEP
 CLOSED: [2023-05-13 Sat 18:27] SCHEDULED: <2023-05-07 Sun>
-**** DONE OMIM
-CLOSED: [2023-05-08 Mon 15:02] SCHEDULED: <2023-05-01 Mon>
+**** TODO OMIM
+SCHEDULED: <2023-08-29 Tue>
 **** PROJ Grantham
 **** PROJ ACMG incidental
 **** TODO Gnomad ?
-**** TODO Sortie VCF (pour avoir la fraction allélique AF)
-**** PROJ VCF -> tsv
-**** PROJ Filtrer après VEP avec filter_vep
-nNon testé
-*** TODO Comparer les annotations sur 63003856
+**** DONE Sortie VCF (pour avoir la fraction allélique AF)
+CLOSED: [2023-08-28 Mon 17:22]
+**** TODO VCF -> tsv avec bcftools
+SCHEDULED: <2023-08-28 Mon>
+**** TODO Un seul transcrit après VEP avec filter_vep :filter:
+SCHEDULED: <2023-08-28 Mon>
+Avec mise à jour VEP 110, pick_flag semble fonctionner.
+***** DONE Test chr20: Pas de variant "perdus"
+CLOSED: [2023-08-28 Mon 17:31] SCHEDULED: <2023-08-28 Mon>
+contrairement au résultat communqié à alexis par mail
+
+#+begin_src sh :dir out/annotate
+$ bcftools +counts vep/NA12878-sanger-chr20-GRCh38/NA12878-sanger-chr20-GRCh38.vep.vcf.gz
+#+end_src
+
+Number of samples: 1
+Number of SNPs:    123
+Number of INDELs:  32
+Number of MNPs:    53
+Number of others:  0
+Number of sites:   208
+
+#+begin_src  sh
+[apraga@mesointeractive annotate]$ filter_vep -i vep/NA12878-sanger-chr20-GRCh38/NA12878-sanger-chr20-GRCh38.vep.vcf.gz  --filter 'PICK' | bcftools +counts
+#+end_src
+Number of samples: 1
+Number of SNPs:    123
+Number of INDELs:  32
+Number of MNPs:    53
+Number of others:  0
+Number of sites:   208
+
+2nd vérification
+
+#+begin_src sh :dir out/annotate
+ filter_vep -i vep/NA12878-sanger-chr20-GRCh38/NA12878-sanger-chr20-GRCh38.vep.vcf.gz  --filter 'PICK' --soft_filter | grep fail
+#+end_src
+***** TODO Test NA12878 + variants sanger : variants perdus avec --pick ?
+SCHEDULED: <2023-08-28 Mon>
+***** TODO Test NA12878 + variants sanger: vérifier sortie
+SCHEDULED: <2023-08-28 Mon>
+
+
+*** KILL Comparer les annotations sur 63003856
+CLOSED: [2023-08-28 Mon 17:28]
 **** Relancer le nouveau pipeline
-*** HOLD Ancienne version
-**** TODO HGVS
-**** TODO Filtrer après VEP
-**** TODO OMIM
-**** TODO clinvar
-**** TODO ACMG incidental
-**** TODO Grantham
+*** KILL Ancienne version
+CLOSED: [2023-08-28 Mon 17:24]
+**** KILL HGVS
+CLOSED: [2023-08-28 Mon 17:24]
+**** KILL Filtrer après VEP
+CLOSED: [2023-08-28 Mon 17:24]
+**** KILL OMIM
+CLOSED: [2023-08-28 Mon 17:24]
+**** KILL clinvar
+CLOSED: [2023-08-28 Mon 17:24]
+**** KILL ACMG incidental
+CLOSED: [2023-08-28 Mon 17:24]
+**** KILL Grantham
+CLOSED: [2023-08-28 Mon 17:24]
 **** KILL LRG
 CLOSED: [2023-04-18 mar. 17:22] SCHEDULED: <2023-04-18 Tue>
 Vu avec alexis, n’est plus à jour
-**** TODO Gnomad
+**** KILL Gnomad
+CLOSED: [2023-08-28 Mon 17:24]
 
 ** DONE Porter exactement la version d'Alexis sur Helios
 CLOSED: [2023-01-14 Sat 17:56]
@@ -7686,10 +7735,10 @@ VEP chooses one block of annotation per variant, using an ordered set of criteri
 **** DONE Mail alexis
 CLOSED: [2023-08-20 Sun 13:45] SCHEDULED: <2023-08-20 Sun>
 **** TODO Données simuscop 200x
-SCHEDULED: <2023-08-22 Tue>
+SCHEDULED: <2023-09-04 Mon>
 * Résultats
 ** TODO Speed-up BWA-mem
-SCHEDULED: <2023-08-26 Sat>
+SCHEDULED: <2023-09-04 Mon>
 
 ** TODO Speed-up Hapotypecaller
-SCHEDULED: <2023-08-26 Sat>
+SCHEDULED: <2023-09-04 Mon>
