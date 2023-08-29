@@ -2122,6 +2122,8 @@ https://github.com/Ensembl/ensembl-vep/blob/release/109/nextflow/workflows/run_v
 CLOSED: [2023-05-13 Sat 18:27] SCHEDULED: <2023-05-07 Sun>
 **** TODO OMIM
 SCHEDULED: <2023-08-29 Tue>
+**** TODO plI et LOEUF depuis gnomad
+SCHEDULED: <2023-08-29 Tue>
 **** PROJ Grantham
 **** PROJ ACMG incidental
 **** TODO Gnomad ?
@@ -2129,8 +2131,8 @@ SCHEDULED: <2023-08-29 Tue>
 CLOSED: [2023-08-28 Mon 17:22]
 **** TODO VCF -> tsv avec bcftools
 SCHEDULED: <2023-08-28 Mon>
-**** TODO Un seul transcrit après VEP avec filter_vep :filter:
-SCHEDULED: <2023-08-28 Mon>
+**** DONE Un seul transcrit après VEP avec filter_vep :filter:
+CLOSED: [2023-08-29 Tue 11:03] SCHEDULED: <2023-08-28 Mon>
 Avec mise à jour VEP 110, pick_flag semble fonctionner.
 ***** DONE Test chr20: Pas de variant "perdus"
 CLOSED: [2023-08-28 Mon 17:31] SCHEDULED: <2023-08-28 Mon>
@@ -2192,8 +2194,8 @@ CLOSED: [2023-08-29 Tue 10:36] SCHEDULED: <2023-08-28 Mon>
 ***** DONE Test NA12878 + variants sanger: vérifier sortie avec julia : ok
 CLOSED: [2023-08-29 Tue 10:21] SCHEDULED: <2023-08-28 Mon>
 143 variants/146 comme avant
-***** TODO Relancer en T2T pour vérifier compatibilité :T2T:
-SCHEDULED: <2023-08-29 Tue>
+***** DONE Relancer en T2T pour vérifier compatibilité :T2T:
+CLOSED: [2023-08-29 Tue 11:03] SCHEDULED: <2023-08-29 Tue>
 
 
 *** KILL Comparer les annotations sur 63003856
