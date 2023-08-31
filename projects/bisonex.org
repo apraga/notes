@@ -1823,9 +1823,6 @@ http://genome.ucsc.edu/cgi-bin/hgTracks?db=hub_3671779_hs1&lastVirtModeType=defa
 C'est bien ce qu'on retrouve avec spip
 *** DONE [#A] Filtre vep avec spip
 CLOSED: [2023-08-13 Sun 00:39] SCHEDULED: <2023-08-12 Sat 19:00>
-*** TODO Réordonner les colonnes :annotation:
-SCHEDULED: <2023-08-28 Mon>
-Pas d'OMIM, pas de CADD, pas de spliceAI
 *** DONE Annotation CADD + spliceAI GRCh38 avec nouvelle version :annotation:
 CLOSED: [2023-08-28 Mon 17:21] SCHEDULED: <2023-08-20 Sun>
 *** DONE OMIM: possible seulement sur nom du gènes:annotation:
@@ -2120,17 +2117,25 @@ https://github.com/Ensembl/ensembl-vep/blob/release/109/nextflow/workflows/run_v
 ***** HOLD Avec option --fork
 **** DONE Utiliser la version de nf-core de VEP
 CLOSED: [2023-05-13 Sat 18:27] SCHEDULED: <2023-05-07 Sun>
-**** TODO OMIM
-SCHEDULED: <2023-08-29 Tue>
-**** TODO plI et LOEUF depuis gnomad
-SCHEDULED: <2023-08-29 Tue>
-**** PROJ Grantham
+**** DONE OMIM
+CLOSED: [2023-08-31 Thu 10:38] SCHEDULED: <2023-08-29 Tue>
+**** DONE plI et LOEUF depuis gnomad
+CLOSED: [2023-08-31 Thu 10:38] SCHEDULED: <2023-08-29 Tue>
+**** TODO Grantham
+SCHEDULED: <2023-08-30 Wed>
+**** TODO Corriger spliceAI
+SCHEDULED: <2023-08-31 Thu>
+**** TODO Supprimer score spip en double
+SCHEDULED: <2023-08-31 Thu>
+**** DONE Vérifier variant 63126867
+CLOSED: [2023-08-31 Thu 10:52] SCHEDULED: <2023-08-31 Thu>
+**** TODO Corriger allelic balance
+SCHEDULED: <2023-08-31 Thu>
 **** PROJ ACMG incidental
-**** TODO Gnomad ?
 **** DONE Sortie VCF (pour avoir la fraction allélique AF)
 CLOSED: [2023-08-28 Mon 17:22]
-**** TODO VCF -> tsv avec bcftools
-SCHEDULED: <2023-08-28 Mon>
+**** DONE VCF -> tsv avec bcftools
+CLOSED: [2023-08-29 Tue 11:03] SCHEDULED: <2023-08-28 Mon>
 **** DONE Un seul transcrit après VEP avec filter_vep :filter:
 CLOSED: [2023-08-29 Tue 11:03] SCHEDULED: <2023-08-28 Mon>
 Avec mise à jour VEP 110, pick_flag semble fonctionner.
@@ -2221,6 +2226,9 @@ Vu avec alexis, n’est plus à jour
 **** KILL Gnomad
 CLOSED: [2023-08-28 Mon 17:24]
 
+*** DONE Réordonner les colonnes :annotation:
+CLOSED: [2023-08-31 Thu 10:38] SCHEDULED: <2023-08-28 Mon>
+Pas d'OMIM, pas de CADD, pas de spliceAI
 ** DONE Porter exactement la version d'Alexis sur Helios
 CLOSED: [2023-01-14 Sat 17:56]
 Branche "prod"

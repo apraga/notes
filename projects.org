@@ -29,6 +29,13 @@ CLOSED: [2023-07-21 Fri 17:54] SCHEDULED: <2023-07-21 Fri>
 *** TODO Dossier à compléter
 SCHEDULED: <2023-09-01 Fri>
 *** TODO Vision Julien Thevenon + Virginie ?? (bionfo)
+** Logement trevenans :trevenans:cs:
+*** DONE Compléter dossier
+CLOSED: [2023-08-30 Wed 16:38]
+*** TODO Assurance habitation
+SCHEDULED: <2023-09-27 Wed>
+Attente décision
+
 ** DONE Copie carte d'identié + mutuelle accueil hôpital
 CLOSED: [2023-08-19 Sat 20:09] SCHEDULED: <2023-08-17 Thu>
 /Entered on/ [2023-08-08 Tue 21:18]
