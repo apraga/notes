@@ -2121,16 +2121,28 @@ CLOSED: [2023-05-13 Sat 18:27] SCHEDULED: <2023-05-07 Sun>
 CLOSED: [2023-08-31 Thu 10:38] SCHEDULED: <2023-08-29 Tue>
 **** DONE plI et LOEUF depuis gnomad
 CLOSED: [2023-08-31 Thu 10:38] SCHEDULED: <2023-08-29 Tue>
-**** TODO Grantham
-SCHEDULED: <2023-08-30 Wed>
-**** TODO Corriger spliceAI
-SCHEDULED: <2023-08-31 Thu>
-**** TODO Supprimer score spip en double
-SCHEDULED: <2023-08-31 Thu>
+**** DONE Grantham
+CLOSED: [2023-08-31 Thu 22:08] SCHEDULED: <2023-08-30 Wed>
+**** DONE Corriger spliceAI
+CLOSED: [2023-08-31 Thu 13:51] SCHEDULED: <2023-08-31 Thu>
+Pas d'annotation
+- chromosome ? essai 1 au lieu de chr1 : idem. Et fonctionne pour CADD
+- index ?
+  - retélécharger
+  - indexer nous-meme
+**** DONE Supprimer score spip en double
+CLOSED: [2023-08-31 Thu 14:17] SCHEDULED: <2023-08-31 Thu>
 **** DONE Vérifier variant 63126867
 CLOSED: [2023-08-31 Thu 10:52] SCHEDULED: <2023-08-31 Thu>
-**** TODO Corriger allelic balance
-SCHEDULED: <2023-08-31 Thu>
+**** DONE Ajouter tronquant ou non
+CLOSED: [2023-08-31 Thu 22:08] SCHEDULED: <2023-08-31 Thu>
+**** DONE Ajouter récessif
+CLOSED: [2023-08-31 Thu 22:08] SCHEDULED: <2023-08-31 Thu>
+**** KILL Corriger allelic depth
+CLOSED: [2023-08-31 Thu 11:18] SCHEDULED: <2023-08-31 Thu>
+Problème lié à libre office
+**** DONE Regénérer annotation pour na12878, inserted et patient PEX1
+CLOSED: [2023-08-31 Thu 22:08] SCHEDULED: <2023-08-31 Thu>
 **** PROJ ACMG incidental
 **** DONE Sortie VCF (pour avoir la fraction allélique AF)
 CLOSED: [2023-08-28 Mon 17:22]
@@ -2202,6 +2214,19 @@ CLOSED: [2023-08-29 Tue 10:21] SCHEDULED: <2023-08-28 Mon>
 ***** DONE Relancer en T2T pour vérifier compatibilité :T2T:
 CLOSED: [2023-08-29 Tue 11:03] SCHEDULED: <2023-08-29 Tue>
 
+**** TODO Repasser les tests sanger sur NA12878
+SCHEDULED: <2023-08-31 Thu>
+2 variants manquants après filter vep
+**** DONE Vérifier T2T passe
+CLOSED: [2023-08-31 Thu 22:10] SCHEDULED: <2023-08-31 Thu>
+
+**** TODO v1.0
+SCHEDULED: <2023-08-31 Thu>
+
+***** TODO Branche prod
+SCHEDULED: <2023-08-31 Thu>
+***** TODO Mail alexis
+SCHEDULED: <2023-08-31 Thu>
 
 *** KILL Comparer les annotations sur 63003856
 CLOSED: [2023-08-28 Mon 17:28]
