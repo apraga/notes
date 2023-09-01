@@ -2214,19 +2214,22 @@ CLOSED: [2023-08-29 Tue 10:21] SCHEDULED: <2023-08-28 Mon>
 ***** DONE Relancer en T2T pour vérifier compatibilité :T2T:
 CLOSED: [2023-08-29 Tue 11:03] SCHEDULED: <2023-08-29 Tue>
 
-**** TODO Repasser les tests sanger sur NA12878
-SCHEDULED: <2023-08-31 Thu>
+**** DONE Repasser les tests sanger sur NA12878
+CLOSED: [2023-09-01 Fri 10:32] SCHEDULED: <2023-08-31 Thu>
 2 variants manquants après filter vep
+
+**** DONE Choisir le meilleur transcript nous-meme
+CLOSED: [2023-09-01 Fri 10:32] SCHEDULED: <2023-09-01 Fri>
 **** DONE Vérifier T2T passe
 CLOSED: [2023-08-31 Thu 22:10] SCHEDULED: <2023-08-31 Thu>
 
 **** TODO v1.0
 SCHEDULED: <2023-08-31 Thu>
-
 ***** TODO Branche prod
 SCHEDULED: <2023-08-31 Thu>
-***** TODO Mail alexis
-SCHEDULED: <2023-08-31 Thu>
+Merge depuis debug
+***** DONE Mail alexis
+CLOSED: [2023-09-01 Fri 10:32] SCHEDULED: <2023-08-31 Thu>
 
 *** KILL Comparer les annotations sur 63003856
 CLOSED: [2023-08-28 Mon 17:28]
