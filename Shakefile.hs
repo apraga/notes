@@ -5,6 +5,7 @@ import Development.Shake.Util
 
 siteExe = "_build/hakyll-site"
 filterExe = "_build/filterOrgRoam"
+args = "-s" --  --css /css/default.css"
 
 -- Notes are managed by pandoc manually to solve org-roam links (and Hakyll does not manage org metadata)
 
@@ -22,12 +23,12 @@ main = shakeArgs shakeOptions{shakeFiles="_build"} $ do
         org <- getDirectoryFiles "" ["notes/medecine/20*.org", "notes/*japonais*.org"]
         let html = ["_site" </> n -<.> "html" | n <- org]
         need $ html ++ [filterExe]
-        cmd "pandoc" src "--filter " filterExe "-s  --css /css/default.css -o" [out]
+        cmd "pandoc" src "--filter " filterExe args "-o" [out]
 
     "_site/notes//*.html" %> \out -> do
         let org = dropDirectory1 $ out -<.> "org"
         need [org]
-        cmd "pandoc" [org] "--filter " filterExe "-s --css /css/default.css -o" [out]
+        cmd "pandoc" [org] "--filter " filterExe args "-o" [out]
 
     siteExe  %> \out -> do
       cmd_ "ghc --make -o" [out] ["src/Main.hs"]
