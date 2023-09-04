@@ -46,7 +46,7 @@ Entérobactéries
 - C4G = céfépime (FEP)
 
 ** Aminosides
-Action = bactéridice, concentration dépendantes. Perturbe la synthèse des protéine (fixation sous unité 30s des ribosomes)
+Action = bactéricide, concentration dépendant. Perturbe la synthèse des protéine (fixation sous unité 30s des ribosomes)
 Résistances
 - naturelle: anaérobie strictes et préférentielle (streptocoques, entérocoques) par défaut de pénnétration car le système de transport nécessite la force produite par les chaînes respiratoire aérobies
   /NB: penicilline + amoniside passe car agit sur la paroi bactérienne/

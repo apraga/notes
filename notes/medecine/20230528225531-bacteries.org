@@ -71,14 +71,14 @@ Résistance fréquent à l’hôpital
 *** Staphylococcus saprophyticus
 - Cocci gram + en amas, catalase positive, nitrate réductase négative
 - Urine :rose sur milieu chromogène mais identification spectromètre de masse/biochimiue
-- Sensbilité nature à la plupart des antibiotique anti-staph
+- Sensibilité nature à la plupart des antibiotique anti-staph
 - Résistance naturelle : fosfomycine, acide fusidique, novobiocine
 - Résistance acquise fréquente : péni G, érythromycine
 ** Campylobacter
 - Répartition mondiale
 - Une des cause les plus fréquentes des diarrhées infectieuses bactériennes communautaires
 - Microbiote digestive de nombreux animaux : /jejuni/ = volaille
-- transmisison animale -> homme par *alimentation* : surtsout *jejuni*, *coli*, *fetus*
+- transmission animale -> homme par *alimentation* : surtout *jejuni*, *coli*, *fetus*
 *** Pouvoir pathogène
 - douleur abdo
 - *gastro-entérique aigue fébrile* : (diarrhées aqueuse voire mucosanglange, fièvre , vomissement)
@@ -168,7 +168,7 @@ Association de plusieurs mécanisme (synérgie/complémentaire)
 - colistine
 ** Streptocoques
 Infections graves = /pyogenes/, /pneumoniae/.
-Commensal mais opportunites (immunodépression) : oraux (*endocardite, SDRA)
+Commensal mais opportunistes (immunodépression) : oraux (*endocardite*, SDRA)
 *** Classification
 - Hémolyse : α  partielle, β = totale.
 - Lancefield : classification selon un composé de la paroi bactérienne (polyoside C) avec mise en évidence de l'antigène par agglutination.
@@ -178,9 +178,8 @@ En première approximation :
   - /pneumoniae/ résistance par chimérisme PLP (acquis)
   - autres anginosus, mitis, sanguinis, bovis, salivarius, mutans
 - β-hémolyse = groupable. Les plus importants
-  - Groupe A = S. pyogenes. Cause d’angine++. *Pas de résistance aux β-lactamine*
+  - Groupe A = S. pyogenes.
   - Groupe B = S. agalactiae
-   Infection materno-foetale ++ (note: l’antibioprophylaxie marche chez les nouveau-né mais seulement pour les infections avant 7 jours)
   - C : /dysagalactia/ (rarement /equi/)
   - G : /dysgalactia/, /canis/
 
@@ -223,7 +222,7 @@ Facteurs de virulence
 Strictement humaine, surtout pharyngé +- peau, vagin...
 Pyogène = responsiable d’infections suppurées
 **** Clinique
-- non invasive = angine érythémateuse/érythémato-pultacée, otite moyenne aigüe de l’enfant, scalratine, infection cutanée
+- non invasive = *angine* érythémateuse/érythémato-pultacée, otite moyenne aigüe de l’enfant, scalratine, infection cutanée
 - invasive : cutanée sévère (fasciite nécrosante), septicémie, choc toxique streptococcique
 - complications post-streptococciques  (rare) = immunologique :
   - rhumatisme articulaire, glomérulonéphrite aigüe, érythème noueux
@@ -236,7 +235,7 @@ Pyogène = responsiable d’infections suppurées
 - β-lactamine : sensible
 - macrolide : sauvage sensible, résistance par mécanisme d’efflux, modiifcation cible ARN23S
 *** TODO Strepto agalactiae
--Pathogène n.1 des infections materno-foetales des pays développement.
+-Pathogène n.1 des *infections materno-foetales* des pays développement.
  - périphérique = infection probable
  - dans le sangou lCR = infection certaines
  - Mortalité 10%, séquelle 20-30%
@@ -270,6 +269,7 @@ Pyogène = responsiable d’infections suppurées
 **** Prévention
 - Dépistage 34-38 semaines: culture (Granada) -> antibio si +
 - ATB per-partum péni-G/amox
+- note: l’antibioprophylaxie marche chez les nouveau-né mais seulement pour les infections avant 7 jours)
 *** Strepto. pneumoniae
 Gram+ diplocoque encapsulé à multiplication extracullaire.
 Classification selon la capsule (vaccins)
@@ -307,7 +307,7 @@ Résistance acquises
 - Sensbilité naturelles aux antibiotiques actif sur BGN
 - Groupe 1 :
   - céphalosporinase chromosomique de très bas niveau.
-  - Résistance acquise enzymatique : pénicillinase, β-lactamase à spectre étundes, céphalosporinase de haut niveau, carbapénémase
+  - Résistance acquise enzymatique : pénicillinase, β-lactamase à spectre étendues, céphalosporinase de haut niveau, carbapénémase
 *** KES = Klebsiella, ENterobacter, Serratia
 Vert (β-glucosidase +)
 *** Salmonelle, Shigelle

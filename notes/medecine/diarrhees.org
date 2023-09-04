@@ -27,3 +27,22 @@
 - arrêt antibio si possible, éviter ralentisseur transit, correction hydroélectrique
 - *pas d’antibiogramme* = sensible métronidazoe + vanco
 - hygène = *contact*, iselemnt, lavage *mécanique* des mains, *Javel*. Isolement levé 48h après arrêt des diarrhées
+* Virale
+GEA Adulte : norovirus > rotavirus > adénovirus > astrovirus
+** Rotavirus
+- 1ere cause de gastroentérite aigüe chez l'*enfant* < 5 ans. Touche également adulte (ID, voyageur, contact enfant)
+- Épidémies hivernales 6-24mois
+- pas de vaccin
+** Norovirus
+- 1ere cause de diarréhes virale chez l'*adulte*, 2e cause enfant < 5 ans
+- Clinique:
+  - début brutal, asympto 1/3, durée 12-60h, incubation courte (1-2 jours)
+  - immunodéprimé : risque diarrhée chronique
+- épidémies++ (collectivités)
+- critères de Kaplan = vomissement > 50% sujet, incubation moyenne 1-2 j, durée 12-60h, pas de bactéries à la coproculture
+- diagnostic selle : RT-PCR, 3 à 5 échantillonls. 50% positifs pour conclure
+- précaution contact (gants, SHA, javel), arrêt maladie 48-72H après symptômes
+- vaccin: 6semaine-6mois de vie
+** Autre
+- Astrovirus : GEA modérée, tous les âges
+- Adénovirus (40-41) : test rapide/RT-pcr, ttt sympto
