@@ -94,18 +94,18 @@ Résistance fréquent à l’hôpital
 - MALDI-TOF
 *** ATBgramme
 - résistance naturelle : vancomycine, pénicilline G, M, céphalosporine, triméthoprime, streopgramine B
-- acquise : érythor, tétracycline, quilonone, amox
+- acquise : érythro, tétracycline, quinolone, amox
 *** Traitement
 - déshydratation
 - si fièvre > 38°, sang dans les selles, enfants, persnnes agée, femmes enceintes: *azithromycine*
-- systémique : FQ ou beta-lactamine + aminoside sur documentation
+- systémique : FQ ou beta-lactamine + aminoside sur documentation
 *** Prévention: hygiène (eau, alimentation)
 ** Proteus mirabilis
 - Bacille gram négatif, *mobile*, oxydase négatif, nitrate-réductase positive
-- Brun sur milieu chromosome, β-glucuronidase et β-glucosidase négative
-- Désaminase positi, indole négative
-- Sensible antibio actif sur bactille gram négatif
-- Résistance acquise : pénicillnase, BLSE, céphalosporinase de haut niveau, carbapénémase
+- Brun sur milieu chromogène, β-glucuronidase et β-glucosidase négative
+- Désaminase positive, indole négative
+- Sensible antibio actif sur bacille gram négatif
+- Résistance acquise : pénicillinase, BLSE, céphalosporinase de haut niveau, carbapénémase
 ** TODO Pseudomonas aeruginosa
 Bacille Gram négatif, très mobile
 
@@ -229,7 +229,7 @@ Pyogène = responsiable d’infections suppurées
 **** Diagnostic
 - bactérie exigeante -> gélose sang +/- ANC (inhibe Gram-)
 - β-hémolyse
-- Résistance potochine, sensbile bacitracine
+- Résistance optochine, sensbile bacitracine
 - Catalase -, oxydase -
 **** Sensibilité, résistance
 - β-lactamine : sensible
@@ -338,7 +338,7 @@ Clinique:
 - selles +/- sang pour salmonelle (para)typhique
 - diag moléculaire
 - culture:
-  - "SS" (salmonelle/shigelle): salomnelle = lactose - et SH2+
+  - "SS" (salmonelle/shigelle): salmonelle = lactose - et SH2+
   - Hektoen, Drigalski (BG-) : lactos-, h2s+
   - pour salmonelle : bouillon d'enrichissement
 - identification: *salmonelle non différencie d'e. coli*
