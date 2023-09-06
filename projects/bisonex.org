@@ -2222,6 +2222,8 @@ CLOSED: [2023-09-01 Fri 10:32] SCHEDULED: <2023-08-31 Thu>
 CLOSED: [2023-09-01 Fri 10:32] SCHEDULED: <2023-09-01 Fri>
 **** DONE Vérifier T2T passe
 CLOSED: [2023-08-31 Thu 22:10] SCHEDULED: <2023-08-31 Thu>
+**** TODO Revoir choix du transcrit + filtre  avec paul
+SCHEDULED: <2023-09-06 Wed>
 
 **** TODO v1.0
 SCHEDULED: <2023-08-31 Thu>
@@ -7801,10 +7803,10 @@ VEP chooses one block of annotation per variant, using an ordered set of criteri
 **** DONE Mail alexis
 CLOSED: [2023-08-20 Sun 13:45] SCHEDULED: <2023-08-20 Sun>
 **** TODO Données simuscop 200x
-SCHEDULED: <2023-09-04 Mon>
+SCHEDULED: <2023-09-09 Sat>
 * Résultats
 ** TODO Speed-up BWA-mem
-SCHEDULED: <2023-09-04 Mon>
+SCHEDULED: <2023-09-13 Wed>
 
 ** TODO Speed-up Hapotypecaller
-SCHEDULED: <2023-09-04 Mon>
+SCHEDULED: <2023-09-13 Wed>
