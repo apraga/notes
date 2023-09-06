@@ -5,23 +5,23 @@
 #+filetags: personal medecine
 * Chlamydia trachomatis
 - 19 génovars
-Trachome oculaire
-Infection urogénitale sexuellement transmissilbse
-*1ere cause d’IST*
+- Trachome oculaire
+- Infection urogénitale sexuellement transmissible
+- *1ere cause d’IST*
 ** Clinique
 - Infection urogénitale basse/haut:  *urétrite* (homme), *cervicite* (asympto souvent), endométrie, salpingite
 - lymphogranulomatose vénérienne : régions tropicale, ulcération génitale, adénite inguinale; anorectite HSH
 - opportuniste : rare  (grossesse, immunodépression)
 ** Résistances
-- naturelle = amonisode, glycopeptitde
+- naturelle = aminoside, glycopeptide
 ** Traitement
 - Doxycycline (ou azithromycine pour IST non compliqué)
 - infection génitale haute : doxycycline + autre
-- *dépister IST*, traiter partener, rapport protégé
+- *dépister IST*, traiter partenaire, rapport protégé
 ** Diagnostic
 - *Direct* = PCR, Transcription-Mediation-Amplification
   - remboursé, sensbilité > 95%
-- Sérologie : biland infertilité, LGV (immunofluorescence, ELISA)
+- Sérologie : bilan infertilité, LGV (immunofluorescence, ELISA)
 - culture peu sensible, antigène non recommandé, pas de test de sensibilité antibio en routine
 * Mycoplasmes urogénitaux
 4 espèce
@@ -31,7 +31,7 @@ Infection urogénitale sexuellement transmissilbse
 ** Clinique
 - Infection urogénitale basse/haut:  *urétrite* (homme), *cervicite* (asympto souvent), endométrie, salpingite
 - lymphogranulomatose vénérienne : régions tropicale, ulcération génitale, adénite inguinale; anorectite HSH
-- opportuniste : rare  (uértrire masculine, salpingite, grossesse, immunodépression)
+- opportuniste : rare  (urétrite masculine, salpingite, grossesse, immunodépression)
 
 ** Diagnostic
 Myc. genitalium
@@ -47,9 +47,9 @@ Prélèvement:
 - pas de prélèvement cervico-vaginal pour Ureaplasma et m. hominis ! (commensal)
 - site stérile; homme=urètre, sperme, urine (1er jet); NN = endotrachéal, liquide gastrique
 ** Résistances
-- naturelle : β-lactamine, glycopeptitde, fosformycine, rifampicine
+- naturelle : β-lactamine, glycopeptitde, fosfomycine, rifampicine
   - Ureaplasma : lincosamide
-  - homiis : certains macrolife
+  - hominis : certains macrolides
 - acquise :
   - M. hominis, Ureaplasma: tétracycline (gène /tet/) surtout +/- fluoroquinolones (3%)
   - M. genitalium : macrolides++ !traitement de première intention!, fluoroquinolones
@@ -73,8 +73,8 @@ Myc. hominis, Ureaplasma
 - adulte jeunes 43%
 - home 2.2x
 - augmenation HSH
-** Pathogénécicité
-- homme : bruyant, urétrie aigǜe
+** Pathogénicité
+- homme : bruyant, urétrite aigǜe
   - complication : épididymite aigüe +/-/ bactériémie
 - femme : souvent asympto
   - urétrie avec cervicie, leucorrhé
@@ -85,7 +85,7 @@ Myc. hominis, Ureaplasma
 - ED:sensible pus uréthral homme sympto
 - culture *> 2j* si symptomatique
 - *biologie moléculaire*
-  - autoprélèvement vaginale, 1er te j'uiren
+  - autoprélèvement vaginal, 1er jet urine
   - anal, gorge (PCR plus sensible que la culture)
 ** Dépistage
 - symptomatique: culture + TAAN
@@ -93,20 +93,20 @@ Myc. hominis, Ureaplasma
 ** Antibiotiques
 - CMI: E-test : péniG, cefixime, ceftriaxen, cipro/pfloxacine, azithromycine, tétracycline
 - résistance
-  - très fréqunece : *péni-G*, FQ, tétracycline
+  - très fréquente : *péni-G*, FQ, tétracycline
   - C3G : PLP mosaïque
   - vanco = résistance naturelle
 ** Traitement
-- *ceftriaoxne + azitromicine*
+- *ceftriaxone + azitromicine*
 
 * Syphilis - /Treponema pallidum/
 ** Primaire
 - transmission sexuelle
 - incubation 10-90 non contagieuse
-- *chancre* ulcération en général unique, base indurées, fondr propre, non douloureux (organes génitaux, ORL, anal)
+- *chancre* ulcération en général unique, base indurée, fond propre, non douloureux (organes génitaux, ORL, anal)
 ** Secondaire
 - dans l'année
-- latente précoe = asymptomatique
+- latente précoce = asymptomatique
 - symptomatique = secondaire : succession d'éruption cutanées +/- neuro, oculaire mais *grande simulatrice*
 ** Tertiaire
 - latente tardive = asymptomatique
