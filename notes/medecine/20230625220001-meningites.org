@@ -5,8 +5,8 @@
 #+filetags: personal medecine  microbio
 
 Étiologie
-- virale = 90%, entérovirus 70-90%, béningnie, arr^et des traitements antibactérien
-- actérienne : 1300cas/an, selon âge/terraine, grave, diagnostic et traitement *urgent*
+- virale = 90%, entérovirus 70-90%, bénigne, arrêt des traitements antibactériens
+- bactérienne : 1300cas/an, selon âge/terrain, grave, diagnostic et traitement *urgent*
 * Bactérienne
 - Envahissement LCR par bactéries
 - Virale sans encéphalite = habituellement bénin, guérit spontanément
@@ -18,23 +18,23 @@
   - oropharynx (enfant, adulte)
   - tube digestif (E. coli, strepot agalactiae) (néonat > 72h)
   -ou via placenta si bactériémie par la mère [Listeria] (néonat)
-- autres : brèche ostéoméninge, complication infection systémique (borréliose..)
+- autres : brèche ostéoméningée, complication infection systémique (borréliose..)
 ** Clinique
-- Communauutaire = > 39° + syndrome méningé (céphalé, raideur nuque, vomissement, photophobie)
+- Communautaire = > 39° + syndrome méningé (céphalé, raideur nuque, vomissement, photophobie)
 - Néonat : non spécifique => PL si fièvre sans cause évidente
 - Méningoencéphalitue : +signe neuro/psy
 ** Épidémiologie
-- enfant, adulte : *neisseria, strepto pneumo* +/-- H. influenza, strepto pyogenes, agalactiae, listeria
-- néonat : *strepto agalactia*, E.coli,
+- enfant, adulte : *Neisseria, Strepto pneumo* +/-- H. influenza, strepto pyogenes, agalactiae, listeria
+- néonat : *Strepto agalactia*, E.coli,
 - Autres : Lyme, leptospirose, syphilis, immunodéprimé
 * Virale
 Diag différentiel =
 - bactériennes+++, parasitaire, fongique
--  néoplasique, inflammatoire, dysimmunutaire, toxique
+-  néoplasique, inflammatoire, dysimmunitaire, toxique
 
 ** Détection génomique spécifique
 ** Étiologies
-- *Entérovirus= 90% des cas
+- *Entérovirus= 90% des cas*
   - été, automne
   - 70% sont des enfants
   - tous les types peuvent être respnsable de méningite mais certains types peuvent être associés à des formes sévère
@@ -50,7 +50,7 @@ Diag différentiel =
   - PCR spécifique
   - traitement : immunodéprimé +/- immunocompétent
 - autres:
-  - oreillons (parotidie, vacins): RT-PCR dans LCS, ttt symptomatique
+  - oreillons (parotidite, vaccins): RT-PCR dans LCS, ttt symptomatique
   - primo infection VIH (prise de risque): 10% primo-ifection. Diag = séro +/- charge virale
   - LCMV (rongeur), arbovirus (voyage - West nile)
 ** Herpétique
@@ -92,22 +92,22 @@ Diag différentiel =
   - virale : protéinorachie normale/modérément éleée, glycorachie/glcyémie normale > 0.6 (attention: *absence de pléocytose parfois*)
 - Gélose sang cuit + vitamine sous CO_2 +/- anaérobie, bouillon d'enirchissement
 - Gram:
-  - Cocci G+ diplococque/chanitte : strepto pneumonia, agalactiae
+  - Cocci G+ diplocoque/chainette : strepto pneumonia, agalactiae
   - Cocci G- diplococque : Neisseria meningitidis
   - Bacille G+ : listeria monocytogenes
   - Bacille G- : Haemophilus, E.coli, Brucella, salmonella
     Attention : culture peut être négative si ne pousse pas sur milieu usules (Tuberculose) ou décapité ATB
 ** Neisseria meningitidis
-- Sensibilité diminués pénicilline (PLP)  => *CMI péni G, amx, céfotaxime*
+- Sensibilité diminués pénicilline (PLP)  25 => *CMI péni G, amox, céfotaxime*
 - Aérobie strict. Fragile. Commensal oropharynx. Humain
 - C3G IV, *déclaration obligatoire*, *rifampicine cas contact* +/- vaccins
 - Prévention : vaccin sérogorupe C mais pas pour le B.... Voyage : A,C,Y,W
 ** Streptococcus pneumoniae
-- Aéro/anaérobie, fragile, commensal oropharixn
-- Sensibilité diminués pénicilline (PLP)  => *CMI péni G, amx, céfotaxime*
-- C3G IV + cortico. Pas de prohylaxie.
+- Aéro/anaérobie, fragile, commensal oropharynx
+- Sensibilité diminués pénicilline (PLP)  30-60% => *CMI péni G, amox, céfotaxime*
+- C3G IV + cortico. Pas de prophylaxie.
 - Vaccin 13 sérotype
 ** Néonatal
-- maternofoetal [transmissiou tardive (>72h)
+- maternofoetal ou transmission tardive (>72h) par IU/translocation digestive
 - Amox si strepto agalactia, céfotaxime si E.coli (50% pénicillinase), amox si listéria (résistance céphalo)
 

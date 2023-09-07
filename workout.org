@@ -6622,3 +6622,14 @@ Front kick 25
 Side kik 25
 Sweep 25
 Roundhouse 15
+* <2023-09-07 Thu> Core
+- gainage face 60s
+- gainage côté 60s
+- gainage 1 bras 40s
+- hollow hold 40+20
+- superman 60
+- tuck+pike+saddle :
+  - 8
+  - 8
+* <2023-09-07 Thu> Running
+30min, facile
