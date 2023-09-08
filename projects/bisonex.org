@@ -1886,8 +1886,8 @@ comm -13 t2t-genes.txt hg38-genes.txt | wc -l
 #+RESULTS:
 : 12621
 *** TODO OMIM sur nom du gène :annotation:
-*** PROJ Mobidetails API
-*** PROJ Franklin API
+*** TODO Mobidetails API
+*** TODO Franklin API
 https://www.postman.com/genoox-ps/workspace/franklin-api-documentation-s-public-workspace/documentation/6621518-4335389d-12e3-445f-8182-339df95b2a09
 
 *** TODO Regarder si clinique disponible avec vep :annotation:
@@ -2143,7 +2143,7 @@ CLOSED: [2023-08-31 Thu 11:18] SCHEDULED: <2023-08-31 Thu>
 Problème lié à libre office
 **** DONE Regénérer annotation pour na12878, inserted et patient PEX1
 CLOSED: [2023-08-31 Thu 22:08] SCHEDULED: <2023-08-31 Thu>
-**** PROJ ACMG incidental
+**** TODO ACMG incidental
 **** DONE Sortie VCF (pour avoir la fraction allélique AF)
 CLOSED: [2023-08-28 Mon 17:22]
 **** DONE VCF -> tsv avec bcftools
@@ -2222,13 +2222,17 @@ CLOSED: [2023-09-01 Fri 10:32] SCHEDULED: <2023-08-31 Thu>
 CLOSED: [2023-09-01 Fri 10:32] SCHEDULED: <2023-09-01 Fri>
 **** DONE Vérifier T2T passe
 CLOSED: [2023-08-31 Thu 22:10] SCHEDULED: <2023-08-31 Thu>
-**** TODO Revoir choix du transcrit + filtre  avec paul
-SCHEDULED: <2023-09-06 Wed>
+**** DONE Revoir choix du transcrit + filtre  avec paul
+CLOSED: [2023-09-08 Fri 22:46] SCHEDULED: <2023-09-06 Wed>
+**** TODO Filtrer les transcripts selon les filtres d'Alexis et garder tous les résultat
+SCHEDULED: <2023-09-09 Sat>
+**** TODO Ajout colonne MANE SELECT
+SCHEDULED: <2023-09-09 Sat>
 
 **** TODO v1.0
-SCHEDULED: <2023-08-31 Thu>
+SCHEDULED: <2023-09-09 Sat>
 ***** TODO Branche prod
-SCHEDULED: <2023-08-31 Thu>
+SCHEDULED: <2023-09-09 Sat>
 Merge depuis debug
 ***** DONE Mail alexis
 CLOSED: [2023-09-01 Fri 10:32] SCHEDULED: <2023-08-31 Thu>
@@ -5434,7 +5438,7 @@ CLOSED: [2023-07-09 Sun 17:36]
 ****** DONE Examiner les FP restant après correction selon séquence de référence
 CLOSED: [2023-08-12 Sat 15:57]
 ****** HOLD Examiner les variants supprimé
-****** PROJ Enlever les FP qui correspondent à un changement dans le génome
+****** TODO Enlever les FP qui correspondent à un changement dans le génome
 ******* Condition:
 - pas de variation à la position en GRCh38
 - variantion homozygote
