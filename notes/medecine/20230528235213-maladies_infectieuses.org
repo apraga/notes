@@ -5,8 +5,10 @@
 #+filetags: personal medecine microbio
 - [[id:ea96632b-27d0-4c90-9320-d2d648c62ead][Pneumopathie à Légionnelle]]
 - [[id:2b2994ab-e0e4-42e3-a3d5-1da638a5a69e][IST]]
+- [[id:aeb5952d-602e-4ec1-8ce2-304825668eb6][Angines]]
 - [[id:7cc7020d-7ac1-42ad-8c90-3b534736924f][Méningites]]
 - [[id:9347af68-14c8-4bc0-b986-9dc4da51c13d][Infections urinaires]]
 - [[id:a36141db-9bb2-48ff-8c48-f96bbc4aebf6][Gastro-entérites]]
 - [[file:diarrhees.org][Diarrhées]]
 - [[id:c4eaf677-0289-44a3-8223-98888ce157d1][Endocardite infectieuse]]
+- [[id:ae7e200a-30e8-44b5-8566-221968f2e464][Infections cutanées]]
