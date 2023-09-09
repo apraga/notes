@@ -6633,3 +6633,8 @@ Roundhouse 15
   - 8
 * <2023-09-07 Thu> Running
 30min, facile
+* <2023-09-09 Sat> Tricking
+Side kick : 25
+Tornado kick : 25
+round kick 25
+Hook kick : 25

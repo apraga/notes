@@ -68,7 +68,17 @@ Résistance fréquent à l’hôpital
     - C4G possible mais pas en france
 - Aminoside : sauvage sensible, résistance acquise par inactivation enzymatique
 - Glycopeptide : sauvage sensible, phénotype gIA/hétéroGISA avec sensibilité diminusée, phénotype gRSA (résistance)
-*** Staphylococcus saprophyticus
+**** Traitement habituellement actifs
+oxacilline, gentamicine (aminoside), vancomycine (glycopeptide)
+*** Staphylococcus non aureus
+- = coagulase négative
+- opportuniste, favorisé par immunodépression, cathé
+- S. epidermidis = le plus souvent à l'hôpital : matériel (prothèse, valve dérivation)
+- S. haemolytius
+- S. epidermidis, haemolyticus = fréquemment multirésistante
+- infections communautaire = S. saprophyticus (cystite) , S. ludgunensis (infections cutanées, endocardite infectieuses)
+- traitement : glycopeptide, rifampicine
+**** Staphylococcus saprophyticus
 - Cocci gram + en amas, catalase positive, nitrate réductase négative
 - Urine :rose sur milieu chromogène mais identification spectromètre de masse/biochimiue
 - Sensibilité nature à la plupart des antibiotique anti-staph
@@ -77,28 +87,29 @@ Résistance fréquent à l’hôpital
 ** Campylobacter
 - Répartition mondiale
 - Une des cause les plus fréquentes des diarrhées infectieuses bactériennes communautaires
-- Microbiote digestive de nombreux animaux : /jejuni/ = volaille
+- Microbiote digestive de nombreux animaux : /jejuni/ = oisaux, /coli= porc
 - transmission animale -> homme par *alimentation* : surtout *jejuni*, *coli*, *fetus*
+- très mobile pour survivre dans le tube digestif
 *** Pouvoir pathogène
 - douleur abdo
 - *gastro-entérique aigue fébrile* : (diarrhées aqueuse voire mucosanglange, fièvre , vomissement)
-- bactériémée
+- bactériémie
 - syndrome de l'intestin irritable
-- syndrome de guillan-barré
+- syndrome de Guillan-barré
 *** Diagnostic bactério
 - selles (copro): PCR, immunochromatographique
 - sang (hémoc)
   - examen direct : en forme de S, non sporulé, en "vol de moucheron"
 - culture : sélectif en microaérobie
-- *oxydase+*, catalase soudvent +
+- *oxydase+*, catalase souvent +
 - MALDI-TOF
 *** ATBgramme
-- résistance naturelle : vancomycine, pénicilline G, M, céphalosporine, triméthoprime, streopgramine B
+- résistance naturelle : vancomycine, pénicilline G, M, céphalosporine, triméthoprime, streptogramine B
 - acquise : érythro, tétracycline, quinolone, amox
 *** Traitement
 - déshydratation
-- si fièvre > 38°, sang dans les selles, enfants, persnnes agée, femmes enceintes: *azithromycine*
-- systémique : FQ ou beta-lactamine + aminoside sur documentation
+- si fièvre > 38°, sang dans les selles, enfants, personnes agée, femmes enceintes: *azithromycine*
+- systémique : aminoside  + {FQ ou beta-lactamine} sur documentation
 *** Prévention: hygiène (eau, alimentation)
 ** Proteus mirabilis
 - Bacille gram négatif, *mobile*, oxydase négatif, nitrate-réductase positive

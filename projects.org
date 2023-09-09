@@ -39,6 +39,11 @@ Attente décision
 ** DONE Copie carte d'identié + mutuelle accueil hôpital
 CLOSED: [2023-08-19 Sat 20:09] SCHEDULED: <2023-08-17 Thu>
 /Entered on/ [2023-08-08 Tue 21:18]
+** DONE Finir bibliographie H. influenza :bacterio:
+CLOSED: [2023-09-09 Sat 20:19] SCHEDULED: <2023-09-09 Sat>
+/Entered on/ [2023-09-09 Sat 16:40]
+** TODO Envoyer biblio à Xavier
+SCHEDULED: <2023-09-10 Sun>
 * Recherche
 :PROPERTIES:
 :CATEGORY: recherche
