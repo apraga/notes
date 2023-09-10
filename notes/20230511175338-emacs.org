@@ -271,6 +271,17 @@ Sauvegarder session :
 (add-to-list 'tramp-default-proxies-alist '("\\`mydomain\\'"
 "\\`root\\'" "/sshx:user@%h:"))
 
+** Difficulté avec projectile
+Il faut les executabs sur la machirne distance (fd et rg)
+Pour nix, on peut éditer le bashrc distant et ajouter
+#+begin_src lisp
+(after! tramp
+      (add-to-list 'tramp-remote-path 'tramp-own-remote-path))
+#+end_src
+En cas de couleur "intempestive", on peut désactiver fd avec
+
+(setq projectile-git-use-fd nil)
+
 * Useful shortcuts (doom emacs)
   :PROPERTIES:
   :CUSTOM_ID: useful-shortcuts
@@ -330,7 +341,6 @@ copying manually from facebook
 If you want to autojoin a channel, it must be done in bitlbee direcly
 channel blabla set auto_{join} true NB the config file are most likely
 in /var/lib/bitlbee/$USER.xml
-
 
 * IRC
 Doom-emacs utilise circe, à démarrer avec ~=irc~ (et non circe)
