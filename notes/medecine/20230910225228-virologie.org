@@ -1,0 +1,113 @@
+:PROPERTIES:
+:ID:       6c2348f1-0081-44d2-974b-1642b20892b7
+:END:
+#+title: Virologie
+#+filetags: personal medecine
+* VHB
+Transmission: percutané, muqueuses, salive, sécrétion vaginale.
+Évolution: 10% porteur asympto ou hépatite chroniqu (+/- cirrhose/cancer du foie)
+
+Structure : enveloppe extérieure (Ag HBs) et nucléocapside (Ag HBc)
+- Ac anti Ag HBc = témoin d’une infection mais persist après guérison
+- Ag HBe = en général, réplication virale active. Disparait avant Ag HBs. Séroconversion Ag -> Ac antBHC = résolution ou rémission
+
+Attention: AgHBe, ac antHBe: utilisé seulement pour classification. réplication. Ne pas utiliser pour distinguer infection aigüe (ex: Ac antiHBc)
+
+Sérologie
+- Ac antiHBg: compétition. Négatif si E/S < 1. Sensibilité/spécificite 100%
+
+** Interprétation
+| AgHBs | Ac AntiHBs | Ac AntiHBc | Interpretation                             |
+|-------+------------+------------+--------------------------------------------|
+| +     |            | +          | Infecion évolutive (récente ou  chronique) |
+|       |            |            | -> IgM, évolution à 6 mois                 |
+|-------+------------+------------+--------------------------------------------|
+| +     |            |            | Faux positif, contact                      |
+|       |            |            | hépatite aigùe, mutant AgHBs (Asie)        |
+|-------+------------+------------+--------------------------------------------|
+|       | +          |            | Vacciné                                    |
+|-------+------------+------------+--------------------------------------------|
+|       | +          | +          | Infection guérie                           |
+|-------+------------+------------+--------------------------------------------|
+|       |            | +          | Infection ancienne                         |
+|       |            |            | Aigue en phase de "fenêtre"                |
+|-------+------------+------------+--------------------------------------------|
+|       |            |            | Pas de contact                             |
+** AcHBc isolé
+- Faux positif
+- contact VHB
+- hépatite aigüe
+- mutant AgHBs (Asie)
+
+  => - IgM HBcpour différencier phase aigùe, ADN VHB et acVCH
+
+- possible sous traitement
+- possible si réplication VHC en parallèle (notion d’équilibre)
+
+** Traitement
+tenofovir, lamivudine, metricitbanie
+* VCH
+** Traitement
+2 antiviraux d'action directe  (ex: sofosbuvir + veplatasvir)
+* VIH
+Patient connu: western blot peut être négatif !
+
+primo:
+objectif
+- -2Log à ??
+- < 400/mm^3
+- < 50 copies/mL à 6mois
+
+** Traitement
+1 ou 2 inhibiteur nucléosidique transcriptase inverse + 1 non nuléo ou 1 intégrase
+
+- 1ere ligne :
+  - dulotegravir + 2 inhibiteur nucléosidique.
+    - Attention: abacavir : contre indiqué  HLAB*5701 risque d’hypersensibilité
+  - Sinon efavirenz - 2 INTI
+  - Enfant : raltégravir + 2INTi
+
+Primo:
+- objectif = diminuer contagiosité.
+- Utiliser traitement avec forte barrière génétique
+- Si possible, traitement par ?? pour faire chuter la charge virale
+
+** Résistance
+Lamivudine, emtricitabine = mutation M134 V/I
+- codong ATG donne soit ATA (I) sout GTA (V): le premier est plus fréquent à cause d’APOBEC
+
+  APOBEC= enzyme qui protège des infection virale : édition ARN C-> U qui rend la réplication quasi-impossible. Le VIH a ViF qui désactive cette enzyme. NB: APOBEC peut éditer le génome intégrer (peu d’effet ? contrairement à EBV)
+
+* Prévalence
+- EBV, HHV6, VZV 95%
+- HSV2 60-0%
+- CMV 50% (plus dans les pays du sud)
+- HSV1 10-50
+- HHV8 < 10
+* CMV
+100% afrique, 50% france
+
+- greffe : CMV- recoit CMV+ ou réactivation receveur => primo infection, pneumopathie
+- VIH : récurrence CMV (rétinien, digestique, pulzonaire...)
+
+  Traitement: ganciclovir (ou prodrogre valganciclovir)
+* EBV
+Adulte et > 4 log
+- lymphome Burkitt (cellues B) chez enfant afrique
+- lymphmoe  Hogdkin
+- cancer nasopharynx
+- VIH : lymphome non hodgkinien (malin), *post-greffe : syndrome lymphoprolifératif*
+
+Traitement: rituximab (anti CD20)
+* Arboviroses
+** Encéphalite japonaise
+Très peu de cas par voyageur : vacciniation si > 3 semaine en zone rurale
+** dengue
+- zone tropicale/substropical
+- La plus fréquente (flavirius)
+** Clinique
+TODO:
+** traitement
+sympotomatique
+* Adénovirus
+- y penser si cystite hémorragique chez greffé rénal
