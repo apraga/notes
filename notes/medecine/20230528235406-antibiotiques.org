@@ -33,11 +33,14 @@ Résistance naturelle
 - S. aureus : mutation dans le gène mecA : la PLP mutée (=PLP2a) ne permet plus aux β-lactamine de s'y fixer
 - Idem pour les PLP mosaïques des pneumocoque
 - Idem pour les entérocoque (PLP5)
-** Synthèse protéine bactériene
+** Synthèse protéine bactérienne
 [[../../images/microbiologie/antibio-ribosome.png]]
-- aminoside: mauvaise reconnaissance de l'ARN messager
-- linezolide : mauvaise position de l'ARNt (apporte les acides aminés)
-- macrolides : bloque la formation du peptide ("tunnel")
+- aminoside: mauvaise reconnaissance de l'ARN messager (modification de la cible)
+- linezolide : mauvaise position de l'ARNt (apporte les acides aminés) (modification de la cible)
+- macrolides : bloque la formation du peptide ("tunnel") (enzyme)
+** Synthèse acide nucléique
+- ADN gyrase va "détordre" la double hélice pour la transcription et traduction
+- quinolones vont empêcher cette action (modification de la cible)
 * Notes
 - \beta-lactamine inefficaces sur les mycoplasme car pas de paroi !
 - glycopeptides inefficaces sur bactérie Gram négatif car elles ont une membrane externe qui ne laisse pas passer les grosses molécules
@@ -104,8 +107,9 @@ Entérobactéries
 - Groupe 1: TRI = résistance amox/ticar/pipe + inhibiteur β-lactamase
 - *Céphalosporinase* = *inhibée oxacilline*
 - *BLSE* = inhibée par acide clavulanique => *"bouchon de champagne"*
-  - synerge cefepime ou ceftzadime et ticar + acide clavulanique
-- *
+  - synergie C3G/C4G - ticar + acide clavulanique
+  - ne touche pas les carbapénèmes
+  - cefoxitine non touchée => permet de différencer d'une céphalosporinase déréprimée (voir tableau)
 
 |               |         | Pénicillinase | Pénicillinase déréprimée | Céphalosporinase | Céphalo. déréprimée | BLSE    | Carbapénémase  |
 |---------------+---------+---------------+--------------------------+------------------+---------------------+---------+----------------|
@@ -126,7 +130,14 @@ Entérobactéries
 - C2G = céfoxitine (FOX)
 - C3G = céfixime (CFM), céfotaxime (CTX), ceftazidime (CAZ)
 - C4G = céfépime (FEP)
-
+* Piège
+- SAUR sensible oxa mais résistance peni G => pénicillinase -> résistance à toute les pénicillines
+- SARM = résistance à toutes les βlactamanes dont imipénème
+- Aminoside
+  - résistance gentamicine => forcément résistant tobramycine, amikacine, kanamycine
+  - résistance amikacine => forcément résistant kanamycine
+- FQ : résistance à ofloxacine => forcément toutes les quinolones
+- SAUR  : résistance à l'érythromicine et pristinamycine => forcément lincomycine (MSB constitutif)
 * Aminosides
 Action = bactéricide, concentration dépendant. Perturbe la synthèse des protéine (fixation sous unité 30s des ribosomes)
 Résistances
