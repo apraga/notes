@@ -187,3 +187,10 @@ cp work/34/fb2fc136f6f6d7f42d0960512f06de/*.fq.gz /Work/Groups/bisonex/data/synt
 *** KILL Lancer pipeline
 CLOSED: [2023-05-04 Thu 20:30] SCHEDULED: <2023-05-01 Mon>
 NXF_OPTS=-D"user.name=apraga" nextflow run   main.nf -c nextflow.config  -profile standard,helios -bg --input="/Work/Groups/bisonex/data/synthetic/synthetic_63003856_{1,2}.fq.gz" --outdir out/synthetic_63003856
+
+* Amélioration :amelioration:
+:PROPERTIES:
+:ARCHIVE_TIME: 2023-09-10 Sun 16:45
+:ARCHIVE_FILE: ~/roam/personal/projects/bisonex.org
+:ARCHIVE_CATEGORY: bisonex
+:END:

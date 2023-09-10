@@ -699,7 +699,8 @@ CLOSED: [2023-06-12 Mon 23:29]
 codé, à vérifier
 **** KILL ACMG incidental
 CLOSED: [2023-06-12 Mon 23:29]
-*** TODO Données :T2T:
+*** DONE Données :T2T:
+CLOSED: [2023-09-10 Sun 16:45]
 :PROPERTIES:
 :ID:       5d915178-ca96-44ef-87f1-6702af114f2b
 :END:
@@ -947,7 +948,6 @@ srun rtg vcfeval -b $dbSNP -c $clinvar -o common-not-patho -t $genome --sample A
 
 #+end_src
 ****** HOLD Voir pour régions complexes non traitées
-
 ***** DONE bcftools isec : non
 CLOSED: [2022-11-27 Sun 00:38]
 #+begin_src sh
@@ -1886,13 +1886,16 @@ comm -13 t2t-genes.txt hg38-genes.txt | wc -l
 #+RESULTS:
 : 12621
 *** TODO OMIM sur nom du gène :annotation:
-*** TODO Mobidetails API
+*** DONE Mobidetails API
+CLOSED: [2023-09-10 Sun 16:44]
+Trop long ... 1h à 1h30 d'exécution
+Disponible dans module
 *** TODO Franklin API
 https://www.postman.com/genoox-ps/workspace/franklin-api-documentation-s-public-workspace/documentation/6621518-4335389d-12e3-445f-8182-339df95b2a09
-
-*** TODO Regarder si clinique disponible avec vep :annotation:
-
-** TODO [#B] Indicateurs qualité :qualité:
+*** KILL Regarder si clinique disponible avec vep :annotation:
+CLOSED: [2023-09-10 Sun 16:44]
+** DONE [#B] Indicateurs qualité :qualité:
+CLOSED: [2023-09-10 Sun 16:46]
 *** Idée
 Raredisease:
 - FastQC : nombreuses statistiques. Non disponible Nix
@@ -2224,18 +2227,22 @@ CLOSED: [2023-09-01 Fri 10:32] SCHEDULED: <2023-09-01 Fri>
 CLOSED: [2023-08-31 Thu 22:10] SCHEDULED: <2023-08-31 Thu>
 **** DONE Revoir choix du transcrit + filtre  avec paul
 CLOSED: [2023-09-08 Fri 22:46] SCHEDULED: <2023-09-06 Wed>
-**** TODO Filtrer les transcripts selon les filtres d'Alexis et garder tous les résultat
-SCHEDULED: <2023-09-09 Sat>
-**** TODO Ajout colonne MANE SELECT
-SCHEDULED: <2023-09-09 Sat>
+**** DONE Filtrer les variants selon les filtres d'Alexis et garder tous les résultat
+CLOSED: [2023-09-10 Sun 15:39] SCHEDULED: <2023-09-09 Sat>
+**** DONE Ajout colonne MANE SELECT et garder les autres
+CLOSED: [2023-09-10 Sun 15:39] SCHEDULED: <2023-09-09 Sat>
 
 **** TODO v1.0
 SCHEDULED: <2023-09-09 Sat>
-***** TODO Branche prod
-SCHEDULED: <2023-09-09 Sat>
+***** DONE Branche prod
+CLOSED: [2023-09-10 Sun 15:44] SCHEDULED: <2023-09-09 Sat>
 Merge depuis debug
 ***** DONE Mail alexis
 CLOSED: [2023-09-01 Fri 10:32] SCHEDULED: <2023-08-31 Thu>
+***** STRT Relancer test sanger
+SCHEDULED: <2023-09-10 Sun>
+***** TODO Mail Paul pour validation
+SCHEDULED: <2023-09-10 Sun>
 
 *** KILL Comparer les annotations sur 63003856
 CLOSED: [2023-08-28 Mon 17:28]
@@ -2305,7 +2312,6 @@ CLOSED: [2023-08-03 Thu 14:24] SCHEDULED: <2023-08-03 Thu 13:00>
 /Entered on/ [2023-08-03 Thu 13:12]
 ** DONE Petit jeu de données : chr22 sur HG001
 CLOSED: [2023-08-05 Sat 14:21] SCHEDULED: <2023-08-05 Sat>
-* Amélioration :amelioration:
 * Documentation
 :PROPERTIES:
 :CATEGORY: doc
@@ -5597,10 +5603,10 @@ CLOSED: [2023-07-31 Mon 22:31] SCHEDULED: <2023-07-30 Sun>
 ** TODO Données CHM13 :chm:
 https://github.com/lh3/CHM-eval
 *** TODO Run ERR1341793
-SCHEDULED: <2023-09-10 Sun>
+SCHEDULED: <2023-09-17 Sun>
 (raw reads ERR1341793_1.fastq.gz and ERR1341793_2.fastq.gz downloaded from https://www.ebi.ac.uk/ena/browser/view/ERR1341793)
 *** TODO Run ERR1341796
-SCHEDULED: <2023-09-10 Sun>
+SCHEDULED: <2023-09-17 Sun>
 ** TODO Insilico :cento:
 *** TODO tous les variants centogène
 **** DONE Extraire liste des SNVs
@@ -7814,7 +7820,7 @@ VEP chooses one block of annotation per variant, using an ordered set of criteri
 **** DONE Mail alexis
 CLOSED: [2023-08-20 Sun 13:45] SCHEDULED: <2023-08-20 Sun>
 **** TODO Données simuscop 200x
-SCHEDULED: <2023-09-09 Sat>
+SCHEDULED: <2023-09-17 Sun>
 * Résultats
 ** TODO Speed-up BWA-mem
 SCHEDULED: <2023-09-13 Wed>
