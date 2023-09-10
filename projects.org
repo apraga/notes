@@ -22,13 +22,18 @@ CLOSED: [2023-07-21 Fri 17:54] DEADLINE: <2023-07-21 Fri>
 *Julien Thevenon non disponible en août*
 2 stages à Lyon pour Auragen =
 - interprétation onco
-- extraction ADN + séquencage
+- extraction ADN  séquencage
 Grenoble = la partie bioinfo
 *** DONE Mail coordonateur DES biologie médicale Grenoble pour préciser
 CLOSED: [2023-07-21 Fri 17:54] SCHEDULED: <2023-07-21 Fri>
 *** TODO Dossier à compléter
-SCHEDULED: <2023-09-01 Fri>
-*** TODO Vision Julien Thevenon + Virginie ?? (bionfo)
+**** DONE Lettre de recommandation Paul
+CLOSED: [2023-09-10 Sun 22:38]
+**** TODO Lettre de motivation
+SCHEDULED: <2023-09-10 Sun>
+**** TODO Faire signer la feuille
+SCHEDULED: <2023-09-10 Sun>
+*** TODO Vision Julien Thevenon  Virginie ?? (bionfo)
 ** Logement trevenans :trevenans:cs:
 *** DONE Compléter dossier
 CLOSED: [2023-08-30 Wed 16:38]
@@ -39,11 +44,15 @@ Attente décision
 ** DONE Copie carte d'identié + mutuelle accueil hôpital
 CLOSED: [2023-08-19 Sat 20:09] SCHEDULED: <2023-08-17 Thu>
 /Entered on/ [2023-08-08 Tue 21:18]
-** DONE Finir bibliographie H. influenza :bacterio:
+** Cas clinique H.influenza :hinfluenzae:
+:PROPERTIES:
+:CATEGORY: bacterio
+:END:
+*** DONE Finir bibliographie H. influenza
 CLOSED: [2023-09-09 Sat 20:19] SCHEDULED: <2023-09-09 Sat>
 /Entered on/ [2023-09-09 Sat 16:40]
-** TODO Envoyer biblio à Xavier
-SCHEDULED: <2023-09-10 Sun>
+*** DONE Envoyer biblio initiale à Xavier
+CLOSED: [2023-09-10 Sun 22:51] SCHEDULED: <2023-09-10 Sun>
 * Recherche
 :PROPERTIES:
 :CATEGORY: recherche
@@ -321,6 +330,9 @@ Sincerely,
 ****** DONE Soumission initiale
 CLOSED: [2023-07-27 Thu 23:31]
 
+*** DONE Mail Juliette + Paul pour resoumission
+CLOSED: [2023-09-10 Sun 22:36] SCHEDULED: <2023-09-10 Sun>
+/Entered on/ [2023-09-10 Sun 22:21]
 ** Apprendre le machine learning
 :PROPERTIES:
 :CATEGORY: machine learning
