@@ -3,95 +3,128 @@
 :END:
 #+title: Antibiotiques
 #+filetags: personal medecine microbio
-* Généralités
-- Actifs sur les bactéries en phase de multiplications
-- Cibles
-  - inhibition synthèse de la paroi bactérienne = \beta-lactamine, glycopeptides, fosfomycine
-  - synthèse ADN bactérien : quinolone, sulfamide
-  - synthène ARN : rifampicine
-  - synthèse protéines bactérienne : aminoside, macrolides, cyclines
+* Cibles
+- inhibition synthèse de la paroi bactérienne = \beta-lactamine, glycopeptides, fosfomycine
+- synthèse ADN bactérien : quinolone, sulfamide
+- synthène ARN : rifampicine
+- synthèse protéines bactérienne : aminoside, macrolides, cyclines
 
-Donc :
+[[../../images/microbiologie/antibio-action.png]]
+* Mécanisme de résistance
+- enzymatique
+- modification de la cible
+- impermeabilité
+- efflux
+
+[[../../images/microbiologie/antibio-resistance.png]]
+Résistance naturelle
+- colistine: bactérie gram+
+- vancomycine : bactérie gram -
+- aminoside: anaérobie
+
+** Synthèse paroi
+*** β-lactamase
+- Les β-lactamine inhibent la synthèse de la paroi bactérienne (peptidoglycane)
+  - se fixent sur les PLP (protéine de liaison des pénicillines)
+  - mécanisme de compétition
+- toutes les β-lactamines ont un cycle commun (β-lactame)
+- les β-lactamase vont hydrolyse ce cycle et désactiver les β-lactamines
+*** Modification de cible : PLP
+- S. aureus : mutation dans le gène mecA : la PLP mutée (=PLP2a) ne permet plus aux β-lactamine de s'y fixer
+- Idem pour les PLP mosaïques des pneumocoque
+- Idem pour les entérocoque (PLP5)
+** Synthèse protéine bactériene
+[[../../images/microbiologie/antibio-ribosome.png]]
+- aminoside: mauvaise reconnaissance de l'ARN messager
+- linezolide : mauvaise position de l'ARNt (apporte les acides aminés)
+- macrolides : bloque la formation du peptide ("tunnel")
+* Notes
 - \beta-lactamine inefficaces sur les mycoplasme car pas de paroi !
 - glycopeptides inefficaces sur bactérie Gram négatif car elles ont une membrane externe qui ne laisse pas passer les grosses molécules
 - synergie \beta-lactamine - aminoside sur strepto et entérocoque : destruction de la paroi par les \beta-lactamine pour que l'aminoside accède au ribosome
 - seules les antibio pénétrant dans les cellules (macrolides, fluoroquinolones, rifampicine, cycline ) sont actives contre les bactéries "intracellulaires " (Chlamydia, Coxiella burnetti, Rickettsia, Legionella pneumophilia, Brucella meltiensi, Bartonella )
 * Résumé
-|                    | Péni G/V         | Péni A                       | Peni A + inhib βlactamase    | Peni M      |
-|--------------------+------------------+------------------------------+------------------------------+-------------|
-| Utile              | strepto          | idem + pneumocoque péniS     | idem + staph metiS           | staph metiS |
-|                    | Coryne diphteria | E. faecalis, listeria monoc. | H. influenza + pénicillinase |             |
-|                    |                  | Neisseriia menigitidis       | Enterobact + pénicillinase   |             |
-|                    |                  | entérobact groupe 1          | BNG anaérobies               |             |
-|--------------------+------------------+------------------------------+------------------------------+-------------|
-| Résistance nat     | BGN              | entérobact groupe 2, 3; pyo  |                              | BGN         |
-| Résistance acquise | staph, pneumo    | staph +/- pneumococque       |                              | staph metiR |
-|                    |                  | H. influenza, N. gonorrheia  |                              |             |
-|                    |                  | N. mengitidis                |                              |             |
+|                    | Péni G/V                   | Péni A                                     | Peni A + inhib βlactamase       | Peni M              |
+|--------------------+----------------------------+--------------------------------------------+---------------------------------+---------------------|
+| Utile              | Streptocoque               | idem + pneumocoque péniS                   | idem + Staphylocoque metiS      | Staphylocoque metiS |
+|                    | Corynebacterium            | E. faecalis, Listeria monocytogenes        | H. influenza + pénicillinase    |                     |
+|                    | Diphteria                  | Neisseria menigitidis                      | Enterobactéries + pénicillinase |                     |
+|                    |                            | Entérobactéries groupe 1                   | BNG anaérobies                  |                     |
+|--------------------+----------------------------+--------------------------------------------+---------------------------------+---------------------|
+| Résistance nat     | BGN                        | Entérobactéries groupe 2, 3; P. aeruginosa |                                 | BGN                 |
+| Résistance acquise | Staphylocoque, pneumocoque | Staphylocoque +/- pneumocoque              |                                 | Staphylocoque metiR |
+|                    |                            | H. influenza, N. gonorrhea                 |                                 |                     |
+|                    |                            | N. mengitidis                              |                                 |                     |
 
 
-|            | C2G                     | C3G orale (1)      | C3G injectable                |
-|------------+-------------------------+--------------------+-------------------------------|
-| Utile      | strepto, staph metS     | strepto            | strepto (dont pneumocoque)    |
-|            | entérobactérie groupe 1 | entérobactérie 1,2 | neisseria spp, entérobactérie |
-|            |                         |                    | haemophilus                   |
-|------------+-------------------------+--------------------+-------------------------------|
-| Résistance | Listeria, entérocoque   | idem               | idem                          |
-|            | staph metiR             |                    |                               |
-|            | pyo, intracellaire      |                    |                               |
+|            | C2G                              | C3G orale (1)      | C3G injectable                  |
+|------------+----------------------------------+--------------------+---------------------------------|
+| Utile      | Streptocoque, Staphylocoque metS | Streptocoque       | Streptocoque (dont pneumocoque) |
+|            | Entérobactérie groupe 1          | entérobactérie 1,2 | Neisseria spp, entérobactérie   |
+|            |                                  |                    | Haemophilus                     |
+|------------+----------------------------------+--------------------+---------------------------------|
+| Résistance | Listeria, entérocoque            | idem               | idem                            |
+|            | Staphylocoque metiR              |                    |                                 |
+|            | P. aeruginosa, intracellaire     |                    |                                 |
 
 (1) limité car mauvais biodisponibilité
 
 
-|                      | Carbapénème              | FQ                      | Aminoside                          |
-|----------------------+--------------------------+-------------------------+------------------------------------|
-| Utile                | entérobactérie, pyo      | entérobactérie          | staph metiS                        |
-|                      | entérocoque, staph metiS | intracellulaire         | listeria monocyt                   |
-|                      | anaérobie                | staph metiS             | BGN                                |
-|                      |                          | pyo : ciproflox         | strepto, pneumo                    |
-|----------------------+--------------------------+-------------------------+------------------------------------|
-| Résistance naturelle | pyo, entérocoque: erta ! | entérocoque, L. monocyt | strepto, pneumo: *bithérapie amox* |
-|                      |                          | anaérobie               | anaérobie stricte                  |
-| Résistance acquise   | carbapénémase            | SAMR, gonocoque (1)     |                                    |
-|                      |                          |                         |                                    |
+|                      | Carbapénème                              | FQ                        | Aminoside (2)                      |
+|----------------------+------------------------------------------+---------------------------+------------------------------------|
+| Utile                | Entérobactérie, P. aeruginosa            | Entérobactérie            | Staphylocoque metiS                |
+|                      | Entérocoque, Staphylocoque metiS         | Intracellulaire           | Listeria monocytogenes             |
+|                      | Anaérobie                                | Staphylocoque metiS       | BGN                                |
+|                      |                                          | P. aeruginosa : ciproflox | Streptocoque, pneumocoque          |
+|----------------------+------------------------------------------+---------------------------+------------------------------------|
+| Résistance naturelle | P. aeruginosa, entérocoque: ertapénème ! | entérocoque, L. monocyt   | strepto, pneumo: *bithérapie amox* |
+|                      |                                          | anaérobie                 | anaérobie stricte                  |
+|----------------------+------------------------------------------+---------------------------+------------------------------------|
+| Résistance acquise   | carbapénémase                            | SAMR, gonocoque (1)       |                                    |
+|                      |                                          |                           |                                    |
+(1) Pas de monothérpaie pour P. aeruginosa et Staphylocoque aureus (risque mutants)
+(2) amikacine, gentamicine
 
-(1) Pas de monothérpaie pour pyo et staph aureus (risque mutants)
-
-|                     | Macrolides                   | Lincosamide      | Métronidazole                  | Vancomycine     |
-|---------------------+------------------------------+------------------+--------------------------------+-----------------|
-| Utile               | Intracellulaire, strepto     | strepo           | Anaérobie (sauf Actino, cutib) | strepto, pneumo |
-|                     | stap metiS                   | stapo            | Parasite                       | entéro, staph   |
-|                     |                              |                  |                                | metiS/metiR     |
-|                     |                              |                  |                                | Clostri         |
-|---------------------+------------------------------+------------------+--------------------------------+-----------------|
-| Résistace naturelle | entérobactérie, pyo          | BGN, E. faecalis | Autres                         |                 |
-| résistance acquise  | staph, pneumocoque, strepo A | staph, strepto   |                                |                 |
-|                     |                              |                  |                                |                 |
+|                     | Macrolides (1)                | Lincosamide (2)  | Métronidazole                           | Glycopeptide (3)           |
+|---------------------+-------------------------------+------------------+-----------------------------------------+----------------------------|
+| Utile               | Intracellulaire, streptocoque | Strepocoque      | Anaérobie (sauf Acineto, cutibacterium) | Streptocoque, pneumocoque  |
+|                     | Staphylocoque metiS           | Staphylocoque    | Parasite                                | Entérocoque, staphylocoque |
+|                     |                               |                  |                                         | metiS/metiR                |
+|                     |                               |                  |                                         | Clostri                    |
+|---------------------+-------------------------------+------------------+-----------------------------------------+----------------------------|
+| Résistace naturelle | entérobactérie, P. aeruginosa | BGN, E. faecalis | Autres                                  | BGN                        |
+|---------------------+-------------------------------+------------------+-----------------------------------------+----------------------------|
+| résistance acquise  | staph, pneumocoque, strepo A  | staph, strepto   |                                         |                            |
+(1) erythro, azithromycine, clarithromycine
+(2) clindamycine
+(3) vancomycine
 * Interprétation
 Entérobactéries
 
 - Groupe 1: TRI = résistance amox/ticar/pipe + inhibiteur β-lactamase
-- Céphalosporinase = *inhibée oxacilline*
-- *BLSE* = inhibée par acide clavulanique => *"bouchon de champagne"*  (C3G- acide clavulanique)
+- *Céphalosporinase* = *inhibée oxacilline*
+- *BLSE* = inhibée par acide clavulanique => *"bouchon de champagne"*
+  - synerge cefepime ou ceftzadime et ticar + acide clavulanique
+- *
 
-|                   | Pénicillinase | Pénicillinase déréprimée | Céphalosporinase | Céphalo. déréprimée | BLSE    | Carbapénémase  |
-|-------------------+---------------+--------------------------+------------------+---------------------+---------+----------------|
-| amoxicilline AMC  | R             | R                        | R                | R                   | R       | R              |
-| ticarcilline TIC  | R             | R                        |                  | R                   | R       | R              |
-| piperacilline PIP | I/R           | R                        |                  | R                   | R       | R              |
-| amox+inhib β  AMC |               | I/R                      | R                | R                   | *S/I/R* | R              |
-| pipe/ticar        |               | I/R                      |                  | I/R                 | *S/I/R* | R              |
-| + inhib β TCC/PTZ |               |                          |                  |                     |         |                |
-|-------------------+---------------+--------------------------+------------------+---------------------+---------+----------------|
-| C1G          CF   |               | I/R                      | R                | I/R                 |         | R              |
-| C2G         FOX   |               |                          | I/R              | I/R                 |         | I/R            |
-| C3G               |               |                          |                  | I/R                 | I/R     | S (OXA-48)/I/R |
-| C4G         FEP   |               |                          |                  |                     | I/R     | S (OXA-48)/I/R |
-| carbapénème       |               |                          |                  |                     |         | I/R            |
+|               |         | Pénicillinase | Pénicillinase déréprimée | Céphalosporinase | Céphalo. déréprimée | BLSE    | Carbapénémase  |
+|---------------+---------+---------------+--------------------------+------------------+---------------------+---------+----------------|
+| amoxicilline  | AMC     | R             | R                        | R                | R                   | R       | R              |
+| ticarcilline  | TIC     | R             | R                        |                  | R                   | R       | R              |
+| piperacilline | PIP     | I/R           | R                        |                  | R                   | R       | R              |
+| amox+inhib β  | AMC     |               | I/R                      | R                | R                   | *S/I/R* | R              |
+| pipe/ticar    | PCC/PTZ |               | I/R                      |                  | I/R                 | *S/I/R* | R              |
+| + inhib β     |         |               |                          |                  |                     |         |                |
+|---------------+---------+---------------+--------------------------+------------------+---------------------+---------+----------------|
+| C1G           | CF      |               | I/R                      | R                | I/R                 |         | R              |
+| C2G           | FOX     |               |                          | I/R              | I/R                 |         | I/R            |
+| C3G           | CTX     |               |                          |                  | I/R                 | I/R     | S (OXA-48)/I/R |
+| C4G           | FEP     |               |                          |                  |                     | I/R     | S (OXA-48)/I/R |
+| carbapénème   |         |               |                          |                  |                     |         | I/R            |
 
 - C1G = céfalotine (CF)
 - C2G = céfoxitine (FOX)
-- C3G = céfixime (CFM), céfoxatime (CTX), ceftazidime (CAZ)
+- C3G = céfixime (CFM), céfotaxime (CTX), ceftazidime (CAZ)
 - C4G = céfépime (FEP)
 
 * Aminosides

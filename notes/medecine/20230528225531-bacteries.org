@@ -120,10 +120,10 @@ oxacilline, gentamicine (aminoside), vancomycine (glycopeptide)
 ** TODO Pseudomonas aeruginosa
 Bacille Gram négatif, très mobile
 
-Origine : environnement++. saprophyte de,s milieux humaine
-*Opportuniste* : 19= dse infectieuses hopsitalation
+Origine : environnement++. saprophyte des milieux humides
+*Opportuniste* : 10% des infections en hospitalisation
 - infection nosocomiale (matériel) ou . 1ere bactérie en réa
-- colonisation/infection bronchopulmonaire chronique sur mucoviscidose
+- mucoviscidose: colonisation ou infection bronchopulmonaire chronique
 
 Facteurs de virulence : exotoxine, exoprotéines, hémolysine
 Facteur d'adhésion
@@ -201,8 +201,7 @@ En première approximation :
 - S. pneumonia : 25% résistance acquise β-lactamine (sensibilité diminuée)
 - pas de β-lactamase
 - MLSK (Macrolides-Lincosamide-Streptogramine-Kétolide): modification cible++, efflux, protection ribosomale
-- pas de résistance streptococques
-- linézode
+- glycopeptide, linézolide : pas de résistance
 *** Classification d’Ambler
 A. BLSE
    - résistance pénicilline, C1, C2, C3G
