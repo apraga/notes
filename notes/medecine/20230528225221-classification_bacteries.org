@@ -10,7 +10,7 @@
 - négative si paroi plus fine qui permet à l'éthanol de laver la coloration
 
   Aérobies
-#+BEGIN_SRC dot :file ../images/microbiologie/aerobies.png :exports none
+#+BEGIN_SRC dot :file ../../images/microbiologie/aerobies.png :exports none
 graph {
 splines=false;
 node [shape=box]
@@ -34,15 +34,15 @@ bacciPlus -- {"Listeria\nCorynebacterium\nBacillus\nErysipelothrix\nNocardia"}
 "Gram -" -- {cocciMoins bacciMoins}
 cocciMoins -- "Neisseria\nmenigitidis/\ngonorrhoeae"
 bacciMoins -- {
-              "Entérobactéries\nE. coli, Klebsiella\nEnterobacter\nSerratia\nPretous\nSalmonella\nShigella\nYersinia\nCitrobacter"
-              "Autres:\nPseudomonas\nStenotrophomonoas\nAcinetobacter\nCampolybacter\nVibrio\nBordetella\Haemophilius"
+              "Entérobactéries\nE. coli, Klebsiella\nEnterobacter\nSerratia\nProteus\nSalmonella\nShigella\nYersinia\nCitrobacter"
+              "Autres:\nPseudomonas\nStenotrophomonoas\nAcinetobacter\nCampolybacter\nVibrio\nBordetella\nHaemophilius"
               }
 }
 #+END_SRC
 
 [[../../images/microbiologie/aerobies.png]]
 
-#+BEGIN_SRC dot :file ../images/microbiologie/anaerobies.png :exports none
+#+BEGIN_SRC dot :file ../../images/microbiologie/anaerobies.png :exports none
 graph {
 node [shape=box]
 "Anaérobies" -- {"Gram+" "Gram-"}
@@ -54,7 +54,7 @@ node [shape=box]
 [[../../images/microbiologie/anaerobies.png]]
 
 
-#+BEGIN_SRC dot :file ../images/microbiologie/autres.png :exports none
+#+BEGIN_SRC dot :file ../../images/microbiologie/autres.png :exports none
 graph {
 node [shape=box]
 "Autres bactéries" -- {"Atypiques" "Spirochètes" "Mycobactéries" "Autres"}

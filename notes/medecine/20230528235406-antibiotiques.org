@@ -138,6 +138,8 @@ Entérobactéries
   - résistance amikacine => forcément résistant kanamycine
 - FQ : résistance à ofloxacine => forcément toutes les quinolones
 - SAUR  : résistance à l'érythromicine et pristinamycine => forcément lincomycine (MSB constitutif)
+* Note
+- résistance érythromycine et sensible à la clindamycine : si inductible, possible sélection de mutant  ?
 * Aminosides
 Action = bactéricide, concentration dépendant. Perturbe la synthèse des protéine (fixation sous unité 30s des ribosomes)
 Résistances

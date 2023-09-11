@@ -3,12 +3,8 @@
 :END:
 #+title: Bactéries
 #+filetags: personal medecine
-* Résistante
-PLP = paroi externe de la membrane plasmique. Sert à synthétisé le peptidoglycane = composant de la paroi. Les beta-lactamine vont inhiber la synthèse de peptidoglycane. En cas de PLP2a, moins d’affinité aux beta-lactamine.
-https://pharmacomedicale.org/medicaments/par-specialites/item/beta-lactamines-penicillines-cephalosporines
-* Bactéries
-** Staphylocoques
-*** Résistances
+* Staphylocoques
+** Résistances
 - β-lactamine : production pénicillinase (BlaZ)> 90%
 - résistance méticilline (staph coag négative >> aureus) via
   - la Staphylococcal Cassette Chromosome mec (SCCmec) [= zone génomique comprenant /mecA/ qui code pour la protéine PLP2a ( [[*Résistante][Résistance]]).
@@ -18,10 +14,10 @@ https://pharmacomedicale.org/medicaments/par-specialites/item/beta-lactamines-pe
   - phénotype MLS_B: inductible ou constitutionnel
 - 3 phénotype de résistance aux aminosides (inactivation enzymatique = 5% SAMS mais 80-90% SARM)
 - glycopeptide : exceptionnel
-*** Staphylococcus aureus
+** Staphylococcus aureus
 Cocci Gram+ en amas : aérobie +/- anaérobie. Immobiles. non capsulé, non sporulé
 
-**** Facteurs de virulence
+*** Facteurs de virulence
 Associé à la paroi:
 - *coagulase* liée = récepteur au fibrinogène, sur la paroi bactérienne -> diag (test d'agglutination)
 - protéine A: liaison aux immunoglobuline, protection contre la phagolytose
@@ -36,12 +32,12 @@ Excrété
   - exfoliatines -> érythrodermie bulleuses
   - entérotoxines thermostables -> TIAC
 
-**** Habitat
+*** Habitat
 - 30% porteur sain (transitoire ou non)
 - Transmission intra-humaine par les mains ou indirectevement (vêtements...)
 - Commensal : microbiote nasal, oropharyngé, digestif, cutané (aisselles)
 
-**** Clinique
+*** Clinique
 - Porte d'entrée = cutanée <-> site de portage/infection
 - Infection communautaires, associées aux soins
 - Infection toxiniques :
@@ -53,12 +49,12 @@ Excrété
   - cutanée superficielle (furoncle, impétigo, folliculite) ou profondre (abcèse, fasciite)
   - bactériémie, endocardite
   - infections profondes : ostéo-articulaire, pneumopathie, neuroméningées (abcès)
-**** Diagnostic
+*** Diagnostic
 - Culture : non exigeante
   - gélose sang 24h: *beta-hemolytique* (hémolyse total)
   - Chapman (mannitol + NaCl) : rouge -> jaune avec NaCl
   - catalase +, oxydase-, DNAse + (à la différece des tretop à coagulase négative)
-**** Sensibilité et résistance
+*** Sensibilité et résistance
 Résistance fréquent à l’hôpital
 - β-lactamines :
   - phénotype sauvage sensible
@@ -68,9 +64,9 @@ Résistance fréquent à l’hôpital
     - C4G possible mais pas en france
 - Aminoside : sauvage sensible, résistance acquise par inactivation enzymatique
 - Glycopeptide : sauvage sensible, phénotype gIA/hétéroGISA avec sensibilité diminusée, phénotype gRSA (résistance)
-**** Traitement habituellement actifs
+*** Traitement habituellement actifs
 oxacilline, gentamicine (aminoside), vancomycine (glycopeptide)
-*** Staphylococcus non aureus
+** Staphylococcus non aureus
 - = coagulase négative
 - opportuniste, favorisé par immunodépression, cathé
 - S. epidermidis = le plus souvent à l'hôpital : matériel (prothèse, valve dérivation)
@@ -78,46 +74,46 @@ oxacilline, gentamicine (aminoside), vancomycine (glycopeptide)
 - S. epidermidis, haemolyticus = fréquemment multirésistante
 - infections communautaire = S. saprophyticus (cystite) , S. ludgunensis (infections cutanées, endocardite infectieuses)
 - traitement : glycopeptide, rifampicine
-**** Staphylococcus saprophyticus
+*** Staphylococcus saprophyticus
 - Cocci gram + en amas, catalase positive, nitrate réductase négative
 - Urine :rose sur milieu chromogène mais identification spectromètre de masse/biochimiue
 - Sensibilité nature à la plupart des antibiotique anti-staph
 - Résistance naturelle : fosfomycine, acide fusidique, novobiocine
 - Résistance acquise fréquente : péni G, érythromycine
-** Campylobacter
+* Campylobacter
 - Répartition mondiale
 - Une des cause les plus fréquentes des diarrhées infectieuses bactériennes communautaires
 - Microbiote digestive de nombreux animaux : /jejuni/ = oisaux, /coli= porc
 - transmission animale -> homme par *alimentation* : surtout *jejuni*, *coli*, *fetus*
 - très mobile pour survivre dans le tube digestif
-*** Pouvoir pathogène
+** Pouvoir pathogène
 - douleur abdo
 - *gastro-entérique aigue fébrile* : (diarrhées aqueuse voire mucosanglange, fièvre , vomissement)
 - bactériémie
 - syndrome de l'intestin irritable
 - syndrome de Guillan-barré
-*** Diagnostic bactério
+** Diagnostic bactério
 - selles (copro): PCR, immunochromatographique
 - sang (hémoc)
   - examen direct : en forme de S, non sporulé, en "vol de moucheron"
 - culture : sélectif en microaérobie
 - *oxydase+*, catalase souvent +
 - MALDI-TOF
-*** ATBgramme
+** ATBgramme
 - résistance naturelle : vancomycine, pénicilline G, M, céphalosporine, triméthoprime, streptogramine B
 - acquise : érythro, tétracycline, quinolone, amox
-*** Traitement
+** Traitement
 - déshydratation
 - si fièvre > 38°, sang dans les selles, enfants, personnes agée, femmes enceintes: *azithromycine*
 - systémique : aminoside  + {FQ ou beta-lactamine} sur documentation
-*** Prévention: hygiène (eau, alimentation)
-** Proteus mirabilis
+** Prévention: hygiène (eau, alimentation)
+* Proteus mirabilis
 - Bacille gram négatif, *mobile*, oxydase négatif, nitrate-réductase positive
 - Brun sur milieu chromogène, β-glucuronidase et β-glucosidase négative
 - Désaminase positive, indole négative
 - Sensible antibio actif sur bacille gram négatif
 - Résistance acquise : pénicillinase, BLSE, céphalosporinase de haut niveau, carbapénémase
-** TODO Pseudomonas aeruginosa
+* TODO Pseudomonas aeruginosa
 Bacille Gram négatif, très mobile
 
 Origine : environnement++. saprophyte des milieux humides
@@ -128,19 +124,19 @@ Origine : environnement++. saprophyte des milieux humides
 Facteurs de virulence : exotoxine, exoprotéines, hémolysine
 Facteur d'adhésion
 Forte capacité à former des biofilms
-*** Quand réaliser un antibiogramme
+** Quand réaliser un antibiogramme
 - suspicion responsable d'infection
 - colonisation de patients fragile (ID, intbués)
 - pulmonaire isolé de patients muco, BPCO, DDB
-*** Diagnostic
+** Diagnostic
 - Pousse 24h à 37% sur milieu non sélectif.
 - Milieu sélectif : cétrimide
 - Oxydase positif (!= entérobactéries) -> test rapide pour différencier les 2
-*** Résistance
+** Résistance
 Naturellement plus résistante que d'autres Bacille gram -
 
   - Catalase positif - lactose négatif
-**** Résistance naturelle :
+*** Résistance naturelle :
   - amox
   - C1G, C2G, *céfotaxime* (/! utilisé pour mécanisme/), ceftriaxone, *ertapénème*
   - anciennes FQ : nofloxacine, péflox, ofloxanie
@@ -154,7 +150,7 @@ Association de plusieurs mécanisme (synérgie/complémentaire)
 - enzyme modificatrice aminoside
 - effluxs actif (mexAB-OprM, MexXY/OprM)
 - imperméabilité (porine OpriF)
-**** Résistance acquise
+*** Résistance acquise
 - Surproduction : efflux, β-lactamase AmpC, alétaration porine...
 - gène codant β-lactamase
 
@@ -167,7 +163,7 @@ Association de plusieurs mécanisme (synérgie/complémentaire)
   - synergie ceftazidime/cefepime et impiénoèmeacide clavulanique
   Quand chercher carbapénémase ? (> 90% cabarpénème)
 
-**** Antibiotique
+*** Antibiotique
 - β-lactamine:
   - ceftazidime +/- avibactame
   - ticarcilline +/- clavulatane, pipéracilline +/- tazobactame,
@@ -177,10 +173,10 @@ Association de plusieurs mécanisme (synérgie/complémentaire)
 - Aminoside
 - FQ: ciprofloxacine, lévofloxacine
 - colistine
-** Streptocoques
+* Streptocoques
 Infections graves = /pyogenes/, /pneumoniae/.
 Commensal mais opportunistes (immunodépression) : oraux (*endocardite*, SDRA)
-*** Classification
+** Classification
 - Hémolyse : α  partielle, β = totale.
 - Lancefield : classification selon un composé de la paroi bactérienne (polyoside C) avec mise en évidence de l'antigène par agglutination.
 
@@ -195,14 +191,14 @@ En première approximation :
   - G : /dysgalactia/, /canis/
 
 /Note/: certaines sous-espèce de Lancefield peuvente être alpha-hémolytique
-*** Résistances
+** Résistances
 - α-hémolytique : dépistage disque péniG: si résistant, CMI d’une β-lactamine (amox/céfotaxime/ceftriaxone)
 - *β-hémolytique: pas de résistance β-lactamine*
 - S. pneumonia : 25% résistance acquise β-lactamine (sensibilité diminuée)
 - pas de β-lactamase
 - MLSK (Macrolides-Lincosamide-Streptogramine-Kétolide): modification cible++, efflux, protection ribosomale
 - glycopeptide, linézolide : pas de résistance
-*** Classification d’Ambler
+** Classification d’Ambler
 A. BLSE
    - résistance pénicilline, C1, C2, C3G
    - sensible inhibiteur β-lactamase et carbapénème
@@ -215,11 +211,11 @@ C. ampC céphalosporinase
    - détecté céfoxitine
 D. oxacillinase
    - sensible β-lactamase
-*** Streptococcocus pyogenes
+** Streptococcocus pyogenes
 Cocci gram+ en chaînettes, capsulé, non sporulé, immobile
 
 Réservoire pharyngé. Transmission = aérienne, contact plaie infectée, accouchement.
-**** Facteurs de pathogénicité
+*** Facteurs de pathogénicité
 résistance à la phacogytose
 - protéine M
 - encapsulation
@@ -228,34 +224,34 @@ Facteurs de virulence
 - exotoxine :  activation et prolifération d’une sous population lymphocytes T -> cytokine proinflammatoires
 - Streptolysine = hémolyse β-complète
 - toxine érythrogène : hypersensibilité retardée à la scarlatine
-**** Habitat
+*** Habitat
 Strictement humaine, surtout pharyngé +- peau, vagin...
 Pyogène = responsiable d’infections suppurées
-**** Clinique
+*** Clinique
 - non invasive = *angine* érythémateuse/érythémato-pultacée, otite moyenne aigüe de l’enfant, scalratine, infection cutanée
 - invasive : cutanée sévère (fasciite nécrosante), septicémie, choc toxique streptococcique
 - complications post-streptococciques  (rare) = immunologique :
   - rhumatisme articulaire, glomérulonéphrite aigüe, érythème noueux
-**** Diagnostic
+*** Diagnostic
 - bactérie exigeante -> gélose sang +/- ANC (inhibe Gram-)
 - β-hémolyse
 - Résistance optochine, sensbile bacitracine
 - Catalase -, oxydase -
-**** Sensibilité, résistance
+*** Sensibilité, résistance
 - β-lactamine : sensible
 - macrolide : sauvage sensible, résistance par mécanisme d’efflux, modiifcation cible ARN23S
-*** TODO Strepto agalactiae
+** TODO Strepto agalactiae
 -Pathogène n.1 des *infections materno-foetales* des pays développement.
  - périphérique = infection probable
  - dans le sangou lCR = infection certaines
  - Mortalité 10%, séquelle 20-30%
-**** Bactério
+*** Bactério
  - c+ diplococque/chanîtette
  - aérobie-ana facultative
  - catalase négative, *β-hémolytique*
  - groupe B lancefield
 
-**** Pathogènicité
+*** Pathogènicité
  - commensale digestif, génitaf 10-30%
  - adulte : infection sujets à risque
  - grossese : chorioamniotite, endométrite
@@ -264,45 +260,45 @@ Pyogène = responsiable d’infections suppurées
  - 2% nouveau-né des colonisé ont des symptômes
    - pneumopathie
    - septicémie, méningite (20%)
-**** Résistance
+*** Résistance
 - *Naturellement sensible β-lactamine* = 1ere intention
 - Résistance bas niveau aminoside, synerige µ-lactamine
 - 30% macrolide et clinda
 
-**** Diagnostic
+*** Diagnostic
 - Néonat : Hémoculture (référence), LCS, aspiration trachéale
 - Mère : hémoc si > 38°, PV
 - ED, gram @ gélose sang et chocolat 5-10% (croissanec < 24h habituellement)
 - MALDI/sérogroupage de lancefield
 - : PCR possible (LCR++, respi)
 
-**** Prévention
+*** Prévention
 - Dépistage 34-38 semaines: culture (Granada) -> antibio si +
 - ATB per-partum péni-G/amox
 - note: l’antibioprophylaxie marche chez les nouveau-né mais seulement pour les infections avant 7 jours)
-*** Strepto. pneumoniae
+** Strepto. pneumoniae
 Gram+ diplocoque encapsulé à multiplication extracullaire.
 Classification selon la capsule (vaccins)
-**** Habitat
+*** Habitat
 Voie respiratoire supérieure
 Transmission goutelette, interhumaine
-**** Pathogénicité
+*** Pathogénicité
 - adhérence cellules épithélium rhinopharynx
 - facteurs de virulence non capsulaire
 - évasion à la phagocytose
 - actionation complément, cytokien inflammatoire
-**** Résistance
+*** Résistance
 - β-lactamine: Selon les PLP (!inutile d’ulitiser les inhibiteurs de betalactamase)
 - sensibilité possiblement dimunée aux fluoroquinolones
 - Gènes mosaïque avec PLP chimérique
 - 25% résistance acquise β-lactamine (pneumocoque sensibilité diminué pénicilline)
-**** Clinique
+*** Clinique
 - Infection neuroméningée
 - Infection voies respiratoire: pneumonie franche lobaire aigüe, bronchopneumonie, otite, mastoïdite, sinusite, exacerbation BPCO
 - Rare : purpura fulminas, endocardite
 - Bactérimié, souvent à partir d’un foyer pulmonaire
-** Entérobactéries
-*** Résistances et groupe
+* Entérobactéries
+** Résistances et groupe
 Groupe selon la résistance *naturelle* β-lactamine
 1. aucune : E. coli, Proteus mirabilis, Salmonella, Shigella
 2. Pénicillinase à bas niveau : Klebsiella (pneumonia, oxytoca), Citrobacer koseri
@@ -311,16 +307,16 @@ Groupe selon la résistance *naturelle* β-lactamine
 5. β-lactamase à spectre étendu (BLSE): Kluyvera
 
 Résistance acquises
-*** Escherichia coli
+** Escherichia coli
 - Bacille gram négatif, mobile, oxydase négative, nitrase-réductase positive
 - Urine : rose sur milieu chromogène (β-glucoronidase positive)
 - Sensbilité naturelles aux antibiotiques actif sur BGN
 - Groupe 1 :
   - céphalosporinase chromosomique de très bas niveau.
   - Résistance acquise enzymatique : pénicillinase, β-lactamase à spectre étendues, céphalosporinase de haut niveau, carbapénémase
-*** KES = Klebsiella, ENterobacter, Serratia
+** KES = Klebsiella, ENterobacter, Serratia
 Vert (β-glucosidase +)
-*** Salmonelle, Shigelle
+** Salmonelle, Shigelle
 - Bacille gram négatif, non sporulé, aéro-anaérobie facultatif
 - non exigeat
 - catalase, nitrate réductase
@@ -330,12 +326,12 @@ Vert (β-glucosidase +)
   - maladie du péril fécal (pays en voie de développement : Salmonelle typique et non typqiue, Shigelle)
   - TIAC : salmonelle non typhique >> shigelle
     - rappel:  TIAC>= 2 cas, déclaration opligatoire
-**** Pouvoir pathègene
+*** Pouvoir pathègene
 - salmonelle :
   - strictement humain = sér. Typhi, paratyphi => fièvre (para)typhoïde
   - animale = non typhique: gastroentérite
 - shigelle : dysenteria... strictement humain => dysentérie bacillaire, gastroentérite sanglante
-**** Physiopath
+*** Physiopath
 *Entéro-invasif*
 - shigelle : envahissement + destruction cellules épithéliales (syndrome dysentérique)
 - salmonelle  : envahissement sans destruction de la muqueuse (sd gastroentéritiques) +/- production de toxique
@@ -344,7 +340,7 @@ Clinique:
 - salmonelle typhique: 1-2semaine incubation, fièvre continue élevée 40`, bactériémie, tuphos, diarrhée/constipation`
 - salmonelle non typhique: incubation 12-36h, diarrhée fébrile, vomissement
 - shigelle: incubation 1-3j, fièvre élevée, selle avec sang, glaire, pus, douleurs abdominales violentes
-**** Diagnostic
+*** Diagnostic
 - selles +/- sang pour salmonelle (para)typhique
 - diag moléculaire
 - culture:
@@ -355,7 +351,7 @@ Clinique:
   - shigelle = immobile
   - shigelle = fermentation manitol ( sauf s. dysenteria )
 - BG-
-**** Traitement
+*** Traitement
 - diarrhée infectieuse aigue = symptom
   - antipyrétique,
   - maintien hydro-élecrique
@@ -366,11 +362,11 @@ Clinique:
 
 Déclaration obligatoire : TIAC, fièvre (para)typhoïde
 Vaccination en prévention salmonelle typfique
-** Entérocoques
+* Entérocoques
 Cocci gram+ , anaérobie facultative, ressemblantà des streptocoques
 
 Espèce majoritaire: E. faecalis = 80-90=, faecium = 5-10%
-*** Habitat
+** Habitat
 Ubiquitaire. Surtout tube digestif (homme, animaux), milieu extérieur
 Home sain : tube digestif, périnée, parfois vagin, oropharynx
 
@@ -378,54 +374,49 @@ Pulpart des infections = à partir de la flère du patient. Mais exogène possib
 
 Commensal gastrointestinal + génital chez les femmes
 Augmentation des infections avec les années
-*** Facteurs de virulence
+** Facteurs de virulence
 - Pas d’exotoxine, ni de superantigène
 - Protéine de surface -> adhère à l’endocarde et l’urothelium -> endocardite et infections urinaire
-*** Résistance
-- Naturelle : céphalosporine
-  - faecals = résistance oxacilline, C3G, ertapénème, lincomycine, acide fusidique
-- *E. faecalis = sensible amox. E. faecium = résistant 80-90%*
+** Résistance
+- Naturelle : *céphalosporine*
+  - faecalis = résistance oxacilline, C3G, ertapénème, lincomycine, acide fusidique
+- *E. faecalis = sensible amox*. E. faecium = résistant 80-90%*
 - multi-résistance chez E. faecium
 - aminoside (bas niveau)
 - β-lactamine/glycopeptide seul = seulement effect bactériostatique sur > 90%. Mais aminoside + inhibiteur de la paroi (β-lactamine, glycopepited, lipopetide) = synergie
 - glycopeptide
 - MLSK (Macrolides-Lincosamide-Streptogramine-Kétolide): modification cible++, efflux, protection ribosomale
-Attention: en cas de résistance surajoutée, les aminosides sont inefficaces.
-*** Clinique
+- en cas de résistance surajoutée, les aminosides sont inefficaces.
+- attention aux entérococques résistant vancomycine (surtout E. faecium): /vancA/ /vancB/
+** Clinique
 - Infection urinaire
 - Infection de la peau et des parties molles
 - Endocardite
 - Bactériémie
 - Infection abdopelvienne
-*** Résistances
-- résistance naturelle céphalosporine
-- E. faecalis : pas résistance pénicilline A (contrairement à E. faecium)
-- E. faecium :
-  - multiréristance en émergence
-  - > 80% faecium résistance pénicillines A
-*** lol
-
-Clinique
-- infection urinaire: le plus fréquent, nosocomial
-- bactériémie
-- endocardite : de plus en plus fréquent
-- infection intra-abdominal (en association)
-
-Résistance: attention aux entérococques résistant vancomycine (surtout E. faecium)
-- /vancA/ /vancB/
-** Neisseria meningitidis
+* Neisseria meningitidis
 - Diplococque Gram - aérobie.
 - Très gragile. Hautement variable
 - Épidémio :
   - 2 pics : nourisson < 1 an (système immunitaire immature), ado/jeune adulte (socialisation)
-  - ceinture de la ménigitde (Afrique sahel + subusaharanienne)
-*** Habitat
+  - ceinture de la méningite (Afrique sahel + subusaharienne)
+** Habitat
 réservoir 100% humaine. Transmission directement uniquement par goutelettes
 Portage pharyngé, avec rarement invasion (sang +/- LCS) -> seulement souches
-** Listeria monocytègene
-*** Résistance
-- résistance naturelle céphalosporine, clindamycine, fosfomycine
-** TODO Haemophilus influenza
+* Listeria monocytègene
+Résiste à 4° !
+^
+** Clinique
+- non invasive = gastro
+- invasive: *bactériémie*, neurolistériose, infection materno-foetale avec forme néonatale précoce ou > 7j
+** Diagnostic
+- hémoc, PL
+- non exigeant
+** Résistance
+- résistance naturelle *C3G*, fosfomycine, quinolone
+** Traitement
+- amox + genta
+* TODO Haemophilus influenza
 Résistance : regarder penicilline G
 - suspicion beta lactamase, tester par cefinase
 - PLP3 : faire CMI
