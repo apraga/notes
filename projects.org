@@ -30,9 +30,13 @@ CLOSED: [2023-07-21 Fri 17:54] SCHEDULED: <2023-07-21 Fri>
 **** DONE Lettre de recommandation Paul
 CLOSED: [2023-09-10 Sun 22:38]
 **** TODO Lettre de motivation
+SCHEDULED: <2023-09-15 Fri>
+**** DONE Faire signer la feuille par Quentin
+CLOSED: [2023-09-11 Mon 19:14] SCHEDULED: <2023-09-10 Sun>
+**** STRT Faire signer la feuille par Julien
 SCHEDULED: <2023-09-10 Sun>
-**** TODO Faire signer la feuille
-SCHEDULED: <2023-09-10 Sun>
+**** TODO Faire signer la feuille par la fac
+SCHEDULED: <2023-09-12 Tue>
 *** TODO Vision Julien Thevenon  Virginie ?? (bionfo)
 ** Logement trevenans :trevenans:cs:
 *** DONE Compléter dossier
@@ -612,13 +616,20 @@ CLOSED: [2023-02-12 Sun 23:17]
 *** TODO Trier photos sur drive yvain
 * Voiture :voiture:
 ** Mazda 5
+:PROPERTIES:
+:CATEGORY: mazda5
+:END:
 *** Notes
 - Plaquettes : arrière gauche ok (50%) le <2022-09-03 Sat>
 - besoin d'une clé 14 pour changer les plaquettes
-*** TODO Changer courroie distribution
+*** TODO Changer courroie distribution :courroie:
 SCHEDULED: <2023-09-12 Tue>
 À faire au bout de 10ans, on attend l’an prochain
-
+**** DONE [#B] Commander pièce
+CLOSED: [2023-09-11 Mon 19:18] SCHEDULED: <2023-09-11 Mon>
+/Entered on/ [2023-09-11 Mon 19:12]
+**** TODO Prendre rendez vous
+SCHEDULED: <2023-09-11 Mon>
 * Moto
 :PROPERTIES:
 :CATEGORY: moto
