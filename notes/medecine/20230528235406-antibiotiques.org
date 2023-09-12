@@ -130,6 +130,10 @@ Entérobactéries
 - C2G = céfoxitine (FOX)
 - C3G = céfixime (CFM), céfotaxime (CTX), ceftazidime (CAZ)
 - C4G = céfépime (FEP)
+** MSLB
+Résistance à l'érythromicine
+- sensible pristinamycine : regarder si induction ("interaction"), si oui, MSLB inductible donc possible sélection de mutant.
+- résistant pristinamycine : MSLB constitutif
 * Piège
 - SAUR sensible oxa mais résistance peni G => pénicillinase -> résistance à toute les pénicillines
 - SARM = résistance à toutes les βlactamanes dont imipénème
@@ -137,9 +141,6 @@ Entérobactéries
   - résistance gentamicine => forcément résistant tobramycine, amikacine, kanamycine
   - résistance amikacine => forcément résistant kanamycine
 - FQ : résistance à ofloxacine => forcément toutes les quinolones
-- SAUR  : résistance à l'érythromicine et pristinamycine => forcément lincomycine (MSB constitutif)
-* Note
-- résistance érythromycine et sensible à la clindamycine : si inductible, possible sélection de mutant  ?
 * Aminosides
 Action = bactéricide, concentration dépendant. Perturbe la synthèse des protéine (fixation sous unité 30s des ribosomes)
 Résistances
