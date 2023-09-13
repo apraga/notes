@@ -278,9 +278,11 @@ Pour nix, on peut éditer le bashrc distant et ajouter
 (after! tramp
       (add-to-list 'tramp-remote-path 'tramp-own-remote-path))
 #+end_src
-En cas de couleur "intempestive", on peut désactiver fd avec
+En cas de couleur "intempestive", on peut forcer fd à ne pas utiliser de couleurs:
 
-(setq projectile-git-use-fd nil)
+(setq projectile-git-fd-args "-0 -H --color=never --type file --exclude .git --strip-cwd-prefix")
+
+Puis vider le cache avec SPC p i
 
 * Useful shortcuts (doom emacs)
   :PROPERTIES:

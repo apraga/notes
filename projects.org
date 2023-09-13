@@ -33,8 +33,8 @@ CLOSED: [2023-09-10 Sun 22:38]
 SCHEDULED: <2023-09-15 Fri>
 **** DONE Faire signer la feuille par Quentin
 CLOSED: [2023-09-11 Mon 19:14] SCHEDULED: <2023-09-10 Sun>
-**** STRT Faire signer la feuille par Julien
-SCHEDULED: <2023-09-10 Sun>
+**** DONE Faire signer la feuille par Julien
+CLOSED: [2023-09-13 Wed 22:57] SCHEDULED: <2023-09-10 Sun>
 **** TODO Faire signer la feuille par la fac
 SCHEDULED: <2023-09-12 Tue>
 *** TODO Vision Julien Thevenon  Virginie ?? (bionfo)
@@ -45,6 +45,9 @@ CLOSED: [2023-08-30 Wed 16:38]
 SCHEDULED: <2023-09-27 Wed>
 Attente décision
 
+*** TODO Louer camionette
+SCHEDULED: <2023-09-16 Sat>
+/Entered on/ [2023-09-13 Wed 22:57]
 ** DONE Copie carte d'identié + mutuelle accueil hôpital
 CLOSED: [2023-08-19 Sat 20:09] SCHEDULED: <2023-08-17 Thu>
 /Entered on/ [2023-08-08 Tue 21:18]
@@ -644,7 +647,7 @@ CLOSED: [2023-07-30 Sun 15:02]
 Découverte <2023-07-02 Sun>. Virement 100.50€ fait.
 Mail envoyé ce jour
 ** TODO Vendre vélo
-SCHEDULED: <2023-09-12 Tue>
+SCHEDULED: <2023-09-16 Sat>
 /Entered on/ [2023-07-29 Sat 10:23]
 ** TODO Vendre frigo
 SCHEDULED: <2023-10-17 Wed>
