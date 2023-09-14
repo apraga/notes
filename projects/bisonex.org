@@ -1885,12 +1885,13 @@ comm -13 t2t-genes.txt hg38-genes.txt | wc -l
 
 #+RESULTS:
 : 12621
-*** TODO OMIM sur nom du gène :annotation:
+*** HOLD OMIM sur nom du gène :annotation:
 *** DONE Mobidetails API
 CLOSED: [2023-09-10 Sun 16:44]
 Trop long ... 1h à 1h30 d'exécution
 Disponible dans module
-*** TODO Franklin API
+*** PROJ Filtre vep avec spip for T2T et spliceAI pour GRCh38
+*** HOLD Franklin API
 https://www.postman.com/genoox-ps/workspace/franklin-api-documentation-s-public-workspace/documentation/6621518-4335389d-12e3-445f-8182-339df95b2a09
 *** KILL Regarder si clinique disponible avec vep :annotation:
 CLOSED: [2023-09-10 Sun 16:44]
@@ -2246,9 +2247,12 @@ CLOSED: [2023-09-11 Mon 19:11] SCHEDULED: <2023-09-10 Sun>
 
 **** DONE Utiliser spliceAI >= 0.2 pour filtre au lieu de spip
 CLOSED: [2023-09-11 Mon 21:48] SCHEDULED: <2023-09-11 Mon>
-**** TODO Repasser tests sanger avec spliceAI
-SCHEDULED: <2023-09-11 Mon>
-
+**** DONE Repasser tests sanger avec spliceAI
+CLOSED: [2023-09-14 Thu 22:45] SCHEDULED: <2023-09-11 Mon>
+**** DONE Corriger colonne récessive
+CLOSED: [2023-09-14 Thu 22:57] SCHEDULED: <2023-09-14 Thu>
+soit 1/1, soit 1/2
+soit 0/1 avec 2 variants par gene
 *** KILL Comparer les annotations sur 63003856
 CLOSED: [2023-08-28 Mon 17:28]
 **** Relancer le nouveau pipeline
@@ -7828,7 +7832,7 @@ CLOSED: [2023-08-20 Sun 13:45] SCHEDULED: <2023-08-20 Sun>
 SCHEDULED: <2023-09-17 Sun>
 * Résultats
 ** TODO Speed-up BWA-mem
-SCHEDULED: <2023-09-13 Wed>
+SCHEDULED: <2023-09-23 Sat>
 
 ** TODO Speed-up Hapotypecaller
-SCHEDULED: <2023-09-13 Wed>
+SCHEDULED: <2023-09-23 Sat>

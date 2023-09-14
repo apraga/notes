@@ -631,8 +631,12 @@ SCHEDULED: <2023-09-12 Tue>
 **** DONE [#B] Commander pièce
 CLOSED: [2023-09-11 Mon 19:18] SCHEDULED: <2023-09-11 Mon>
 /Entered on/ [2023-09-11 Mon 19:12]
-**** TODO Prendre rendez vous
-SCHEDULED: <2023-09-11 Mon>
+**** DONE Prendre rendez vous
+CLOSED: [2023-09-14 Thu 22:44] SCHEDULED: <2023-09-11 Mon>
+*** DONE Commander pièce courroie de distribution
+CLOSED: [2023-09-14 Thu 22:44] SCHEDULED: <2023-09-11 Mon>
+/Entered on/ [2023-09-11 Mon 19:12]
+*** TODO Prendre rendez vous courroie distribution
 * Moto
 :PROPERTIES:
 :CATEGORY: moto
