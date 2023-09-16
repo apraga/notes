@@ -3,62 +3,251 @@
 :END:
 #+title: Virologie
 #+filetags: personal medecine
-* VHB
+* Clinique
+** Uvéite
+HSV chez l’enfant
+** Péricardite
+cause virales
+- *entérovirus* surtout
+- CMV, EBV, HHV6
+- +/- parvovirus B19 mais discuté car 75%
+** Hépatite
+Bilan  séro EBV, CMV *pas* PCR
+* Virus
+ Oncogénicité : si virus pousse pour la phase S (donc pas si apport polymérase par le virus...)
+** Adénovirus
+- y penser si cystite hémorragique chez greffé rénal
+** Arboviroses
+** BK
+- Latence rein/urothelium
+- Nephropathies chez transplanté rénal -> tester urine : risque si *> 7 log*
+  - risque virémie puis fibrose
+- Cystite hémorragique chez allogreffé
+- Suivi : PCR urine/plasma/sang total
+- Ttt : diminuer immunosuppression
+
+** CMV
+100% afrique, 50% france
+
+- tout organe peut être touché
+- nombreuses stratégies pour échapper au système immunitaire
+- infection latetnt à vie (ttt antiviral ineccicaces)
+- virose opportunites
+- primo/réacivation = bénigne si immunocompétent
+- sévère chez immunodéprime => surveillenc
+- *infection congénitale virale la plus répandue*
+  - si primo chez mère
+  - ou réactivation/infection autre souche
+- diagnostic + surveillance PCR
+- ttt : valganciclovir
+
+Définition:
+- maladie à CMV = test CMV+ et symptomatique => ttt curatif
+- infection à CMV = test CMV+ et asymptomatique => ttt anticipé
+Stades
+1. Primoinfection : symptomatique ou non, disséminaton hématogène
+2. Latence/persistence : pas de réplication virale et persistance dans les monocytes, macrophages, cellules endotéliales
+3. Récurrence : gravité selon status immunitaire : atteinte tissulaire si VIH, transplantation... Asymptomatique sinon
+
+Femme enceinte :
+Note
+- greffe : rique si solide : CMV- recoit CMV+ ou réactivation receveur => primo infection, pneumopathie
+- VIH : récurrence CMV (rétinien, digestique, pulmonaire...)
+
+  Traitement: ganciclovir (ou prodrogre valganciclovir)
+** Dengue
+- zone tropicale/substropical
+- La plus fréquente (flavirius)
+*** Clinique
+-  si arthralgie, possible rash associé
+- TODO:
+*** traitement
+symptomatique
+** EBV :adn:
+- Infection lytique et latente
+- ubiquitaire, transmis voie salivaire
+- > 95% adultes
+- immortale et induit prolifération lymphocytes B
+- latence: 4 profiles d’expression cancers EBV: a minima expression EBNA
+
+Adulte et > 4 log
+- lymphome Burkitt (cellules B) chez enfant afrique
+- lymphmoe  Hogdkin
+- cancer nasopharynx
+- VIH : lymphome non hodgkinien (malin), *post-greffe : syndrome lymphoprolifératif*, MNI
+
+Stades
+1. Primoinfection : symptomatique ou non, dans muqueues oropharynix (cellules épithéliales et lymphocytes B). disséminaton hématogène
+2. Latence/persistence : pas de réplication virale et persistance dans les lymphocytes B mémoire
+3. Récuerrence : gravité selon status immunitaire : atteinte tissulaire si VIH, transplantation... Asymptomatique sinon
+
+Diagnostic :
+Traitement: rituximab (anti CD20)
+** Encéphalite japonaise
+Très peu de cas par voyageur : vacciniation si > 3 semaine en zone rurale
+** HHV6/7
+- Infection chronique persistante
+- Quasi totalité population
+- Intégration chomosique 1% population et transmis cellules germinale
+- Infection : lymphocytes T, monocyte, macrophages, cellules gliales SNC, hématopoétique
+- Infection activation (primo/réactivation): asympto/béniné (exantèse subit = prim HHV6)
+- Encéphalite possible, surtout immunodéprimé
+- Rôle dbutat pour SEP, myocardrioaties, SIDA...
+- Diagnostic : PCR (attention iciHHV6, suspecté si 6log -> *confirmation bulbe de cheveux*)
+- Ttt gaciclovir...
+
+Clinique
+- Exanthème subit/roséole infantile
+- fièvre, convulsion, infection respiratoire/digestive, syndrome mononucléosique
+** HHV8
+
+** HPV
+*** Algorithme
+- 25-30 ans = cyto seule (sinon on détecterait trop de HPV car pic à l’activité sexuelle)
+- > 30ans : PCR
+  - positive  -> cyto: si anomalie, colposcopie, sinon test à 1 an
+*** PCR
+rendue positive si > seuil détection et > seuil clinique
+*** Prévalence
+- HPV16+++ quelque soit le ancer
+- HPV18 cancer col utérus
+*** Génotype
+3 tess possible
+- détection HPV sans génotype
+- 16 et 18
+- 16, 18, 45 autres
+- HPV
+** HTLV
+Clinique
+- leucémie à cellules T
+- paraparésie spastique tropicale = neuromyélopathie chronique 40-55ans
+Transmission mère-enfant (*allaitement*)
+** Parvovirus
+- tropisme précurseurs médullaire lignée érythroïde
+- précoce : anémie, crise érythroblastopénie aigüe. 2eme phase = production anticorphs (éruption, arthralgie)
+- mégalérythème épidémique, artrlagique -> diag clinique
+- sauf si compliqué ou contact femme enceinte
+- anomalie constitutive globule rouge -> crise aigüe -> transfusion culos
+- immondéprimésion : anémie chronique -> Ig polyvalente
+- foetus: anémie profonde + myoc’ardite virale +/- anasarque foetaplacentaire -> transfusion pour éviter mort in utero
+*** Physiopatho
+- Moelle osseuse -> infection + lyse des précureurs érythroïde -> *anémie centrale*
+*** Clinique
+- Bénigne che l’enfant
+- *Grave* si *anomalie globule, rouge, immunodéprimé foetus*
+- Enfant: mégalérythème épidémique (5eme maladie)
+- Atteinte cardiaque
+- Adulte (30%): polyartralgie bilatérale symétrique extrémit
+- Atteinte érythroblastes: problème si diminution de la vie des globules rouges car l’érythropoièse ne compense plus l’hémolyse périphérise
+  - anomalie de l’hémoglobine : drépanocytose, thalassémie
+  - protéine membrane : sphérocytose  , Minkowski-Chauffard
+  - métabolisem G6PD =
+  -> crise (anémie brutale et profonde)   mais transifoire
+- *Attention femme enceinte* ! GR immatures
+  - mort foetale
+  - anasarque (lyse GR = modification pression osmotique)
+** Prévalence
+- EBV, HHV6, VZV 95%
+- HSV2 60-80%
+- CMV 50% (plus dans les pays du sud)
+- HSV1 10-50
+- HHV8 < 10
+** Puumala
+Clinique
+- Fièvre hémorraique avec insuffisance rénale
+- +/- myopie transitoire
+Géographie ~ forêts : pays nordiques, Franche-Comte et Champagne-Ardennes
+Fait partie des Hanta virus
+Transmission par les excréments des rats
+** HSV :adn:
+- Dermotrope et neurotrope
+- Phase latente : persiste à vie dans les ganqlions nerveaux sensitifs.
+- Réactivation de fréquence variable +/- clinique
+- Phase latente : antiviraux inefficaces => éradication impossible
+- Formes grave chez nouveau-né, nourisson eczémateux, immunodéprimé *ou*  oeil, encéphale, fois
+- Diagnostic:
+  - autres cas : PCR = la plus utilisé mais ne signifie pas qu’il y a du virus infectieux...
+  - méningoencéphalite herpétique = PCR sur LCS
+-
+- TTT : aciclovir. Si forme grave, instaurer en probabiliste
+***
+
+** VZV :adn:
+- Dermotrope et neurotrope
+- Latence ganglion nerveux sensitifs -> éradication impossible par le sytème immunitaire ou antirétroviraux
+- Primo = varicelle : généralisée, pendant l’enfant.
+  - presque toujours symptomatique.
+  - formes grave varicelle chez immunodéprimé = (val)aciclovir
+  - augmentation nombre cas au printemps
+  - femme enceinte: risque
+    - avant 20SA: risque congénital
+    - 3 semaines avant accouchement : néonat sévère (risque majeur à J-5 et J+2)
+- Réactivation (endogène) = zona, limité dermatome
+  - pas d’épidémie
+  - algie post-zostérienne = principale complication après 50 ans => valaciclovir en prophylaxie
+- vaccin ! (varicelle + zona)
+** VCH
+*** Traitement
+2 antiviraux d'action directe  (ex: sofosbuvir + veplatasvir)
+** VHB
 Transmission: percutané, muqueuses, salive, sécrétion vaginale.
 Évolution: 10% porteur asympto ou hépatite chroniqu (+/- cirrhose/cancer du foie)
 
 Structure : enveloppe extérieure (Ag HBs) et nucléocapside (Ag HBc)
-- Ac anti Ag HBc = témoin d’une infection mais persist après guérison
+*** Sérologie
+- Ac anti Ag HBc = témoin d’une infection mais persiste après guérison...
 - Ag HBe = en général, réplication virale active. Disparait avant Ag HBs. Séroconversion Ag -> Ac antBHC = résolution ou rémission
 
 Attention: AgHBe, ac antHBe: utilisé seulement pour classification. réplication. Ne pas utiliser pour distinguer infection aigüe (ex: Ac antiHBc)
 
 Sérologie
 - Ac antiHBg: compétition. Négatif si E/S < 1. Sensibilité/spécificite 100%
+*** Cinétique des marqueurs
+- Hépatite aigüe guérie : AgHBs+ 1 à 3 mois avant clinique/bio, puis Ac antiHBc
+  - NB: AgHBe souvent associé à réplication virale, disparaît avant AgHBs
+- fulminante
+  - stade aigu : *IgM anti HBc* constant mais attention, *AgHBs et AgHBe peuvent être négatifs*
+  - réaction/chimio-induite/ surinfection hépatite D: ?
+- hépatite chronique : AgHBs > 6 mois, AgHBe et Ac antiHBc positif
+- séroconversion (= négativation)
+  - HBe = négativation AgHBe et Ac-antiHBe positif = évolution favorable
+  - HBs = négativation AgHBs et Ac-antiHBs = objectif ultime
+- charge virale = suivi chronique car corrélé risque fibrose/cancer foie
+NB: charge virale peut être négative avec AgHBs + car il y a une éxcrétion d’AgHBs "vides" par le réticulum endoplasmisque alors que les antiviraux vont agir sur la formation "complète" du virus
 
-** Interprétation
+*** Interprétation
 | AgHBs | Ac AntiHBs | Ac AntiHBc | Interpretation                             |
 |-------+------------+------------+--------------------------------------------|
 | +     |            | +          | Infecion évolutive (récente ou  chronique) |
 |       |            |            | -> IgM, évolution à 6 mois                 |
 |-------+------------+------------+--------------------------------------------|
-| +     |            |            | Faux positif, contact                      |
-|       |            |            | hépatite aigùe, mutant AgHBs (Asie)        |
+| +     |            |            | Hépatite aigüe, post vacin                 |
+|       |            |            | faux positif                               |
 |-------+------------+------------+--------------------------------------------|
-|       | +          |            | Vacciné                                    |
+|       | +          |            | Vacciné ou immunoglobuline                 |
 |-------+------------+------------+--------------------------------------------|
 |       | +          | +          | Infection guérie                           |
 |-------+------------+------------+--------------------------------------------|
-|       |            | +          | Infection ancienne                         |
-|       |            |            | Aigue en phase de "fenêtre"                |
+|       |            | +          | Faux positif, contact                      |
+|       |            |            | hépatite aigùe, mutant AgHBs (Asie)        |
 |-------+------------+------------+--------------------------------------------|
 |       |            |            | Pas de contact                             |
-** AcHBc isolé
-- Faux positif
-- contact VHB
-- hépatite aigüe
-- mutant AgHBs (Asie)
-
-  => - IgM HBcpour différencier phase aigùe, ADN VHB et acVCH
-
+*AcHBc isolé* => - IgM HBcpour différencier phase aigùe, ADN VHB et acVCH
 - possible sous traitement
 - possible si réplication VHC en parallèle (notion d’équilibre)
 
-** Traitement
+*** Traitement
 tenofovir, lamivudine, metricitbanie
-* VCH
-** Traitement
-2 antiviraux d'action directe  (ex: sofosbuvir + veplatasvir)
-* VIH
+** VIH
 Patient connu: western blot peut être négatif !
-
+Épidémio: VIH2 = 2%
 primo:
 objectif
 - -2Log à ??
 - < 400/mm^3
 - < 50 copies/mL à 6mois
 
-** Traitement
+*** Traitement
 1 ou 2 inhibiteur nucléosidique transcriptase inverse + 1 non nuléo ou 1 intégrase
 
 - 1ere ligne :
@@ -72,42 +261,8 @@ Primo:
 - Utiliser traitement avec forte barrière génétique
 - Si possible, traitement par ?? pour faire chuter la charge virale
 
-** Résistance
+*** Résistance
 Lamivudine, emtricitabine = mutation M134 V/I
 - codong ATG donne soit ATA (I) sout GTA (V): le premier est plus fréquent à cause d’APOBEC
 
   APOBEC= enzyme qui protège des infection virale : édition ARN C-> U qui rend la réplication quasi-impossible. Le VIH a ViF qui désactive cette enzyme. NB: APOBEC peut éditer le génome intégrer (peu d’effet ? contrairement à EBV)
-
-* Prévalence
-- EBV, HHV6, VZV 95%
-- HSV2 60-0%
-- CMV 50% (plus dans les pays du sud)
-- HSV1 10-50
-- HHV8 < 10
-* CMV
-100% afrique, 50% france
-
-- greffe : CMV- recoit CMV+ ou réactivation receveur => primo infection, pneumopathie
-- VIH : récurrence CMV (rétinien, digestique, pulzonaire...)
-
-  Traitement: ganciclovir (ou prodrogre valganciclovir)
-* EBV
-Adulte et > 4 log
-- lymphome Burkitt (cellues B) chez enfant afrique
-- lymphmoe  Hogdkin
-- cancer nasopharynx
-- VIH : lymphome non hodgkinien (malin), *post-greffe : syndrome lymphoprolifératif*
-
-Traitement: rituximab (anti CD20)
-* Arboviroses
-** Encéphalite japonaise
-Très peu de cas par voyageur : vacciniation si > 3 semaine en zone rurale
-** dengue
-- zone tropicale/substropical
-- La plus fréquente (flavirius)
-** Clinique
-TODO:
-** traitement
-sympotomatique
-* Adénovirus
-- y penser si cystite hémorragique chez greffé rénal
