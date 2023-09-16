@@ -45,8 +45,8 @@ CLOSED: [2023-08-30 Wed 16:38]
 SCHEDULED: <2023-09-27 Wed>
 Attente décision
 
-*** TODO Louer camionette
-SCHEDULED: <2023-09-16 Sat>
+*** DONE Louer camionette
+CLOSED: [2023-09-16 Sat 18:19] SCHEDULED: <2023-09-16 Sat>
 /Entered on/ [2023-09-13 Wed 22:57]
 ** DONE Copie carte d'identié + mutuelle accueil hôpital
 CLOSED: [2023-08-19 Sat 20:09] SCHEDULED: <2023-08-17 Thu>
@@ -626,7 +626,7 @@ CLOSED: [2023-02-12 Sun 23:17]
 - Plaquettes : arrière gauche ok (50%) le <2022-09-03 Sat>
 - besoin d'une clé 14 pour changer les plaquettes
 *** TODO Changer courroie distribution :courroie:
-SCHEDULED: <2023-09-12 Tue>
+SCHEDULED: <2023-09-29 Fri>
 À faire au bout de 10ans, on attend l’an prochain
 **** DONE [#B] Commander pièce
 CLOSED: [2023-09-11 Mon 19:18] SCHEDULED: <2023-09-11 Mon>

@@ -1,5 +1,1 @@
 #+FILETAGS: inbox
-* TODO Commander pièce courroie de distribution
-SCHEDULED: <2023-09-11 Mon>
-/Entered on/ [2023-09-11 Mon 19:12]
-* TODO Prendre rendez vous courroie distribution
