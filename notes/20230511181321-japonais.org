@@ -750,3 +750,17 @@ décrire un état: verbes + te, emotion
 - 向上が見られない（こうじょう）: être sur un plateau ("ne plus voir de progrès")
 - 集中（しゅうちゅう）できます: puvoir se concentrer
 - やる気（き）: la motivation, volonté
+- 遅刻(ちこく) : retard (être en retard...)
+- 必須(ひっす) : obligatoire, indispensable (ex: un cours)
+- 必須科目(ひっすかもく) : une matière obligatoire (école)
+* <2023-09-17 Sun>
+** Vocabulaire
+- 観光(かんこう): tourisme
+- 検査技師 (けんさぎし): technicien de laboratoire
+- すべる : glisser
+** Grammaire
+- verb + づらい: difficile de faire V
+  - ex: 辛い つらい
+  - ex: 一緒に仕事しづらいです
+- ~ぶりに : depuis ~ (idée que beaucoup de temps s'est écoulé)
+四年ぶりにパラグライダーをまた始めました。

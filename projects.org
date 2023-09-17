@@ -30,13 +30,13 @@ CLOSED: [2023-07-21 Fri 17:54] SCHEDULED: <2023-07-21 Fri>
 **** DONE Lettre de recommandation Paul
 CLOSED: [2023-09-10 Sun 22:38]
 **** TODO Lettre de motivation
-SCHEDULED: <2023-09-15 Fri>
+SCHEDULED: <2023-09-17 Sun>
 **** DONE Faire signer la feuille par Quentin
 CLOSED: [2023-09-11 Mon 19:14] SCHEDULED: <2023-09-10 Sun>
 **** DONE Faire signer la feuille par Julien
 CLOSED: [2023-09-13 Wed 22:57] SCHEDULED: <2023-09-10 Sun>
 **** TODO Faire signer la feuille par la fac
-SCHEDULED: <2023-09-12 Tue>
+SCHEDULED: <2023-09-18 Mon>
 *** TODO Vision Julien Thevenon  Virginie ?? (bionfo)
 ** Logement trevenans :trevenans:cs:
 *** DONE Compléter dossier
@@ -651,7 +651,7 @@ CLOSED: [2023-07-30 Sun 15:02]
 Découverte <2023-07-02 Sun>. Virement 100.50€ fait.
 Mail envoyé ce jour
 ** TODO Vendre vélo
-SCHEDULED: <2023-09-16 Sat>
+SCHEDULED: <2023-09-17 Sun>
 /Entered on/ [2023-07-29 Sat 10:23]
 ** TODO Vendre frigo
 SCHEDULED: <2023-10-17 Wed>
