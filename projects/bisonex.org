@@ -2337,6 +2337,8 @@ CLOSED: [2023-04-22 Sat 15:27] SCHEDULED: <2023-04-13 Thu>
 :PROPERTIES:
 :CATEGORY: manuscript
 :END:
+** TODO Flowchart pipeline (avec T2T)
+SCHEDULED: <2023-09-17 Sun>
 * Tests :tests:
 ** KILL Non régression : version prod
 CLOSED: [2023-05-23 Tue 08:46]
@@ -7836,8 +7838,8 @@ VEP chooses one block of annotation per variant, using an ordered set of criteri
 CLOSED: [2023-08-20 Sun 13:45] SCHEDULED: <2023-08-20 Sun>
 **** TODO Données simuscop 200x
 SCHEDULED: <2023-09-24 Sun>
-**** TODO En T2T avec liftover (nouveau filtre = spip ou splice ai selon génome) :tests:
-SCHEDULED: <2023-09-17 Sun>
+**** DONE En T2T avec liftover (filtre = spip) : ok mais lent et trop de variants :tests:
+CLOSED: [2023-09-17 Sun 17:13] SCHEDULED: <2023-09-17 Sun>
 1. Conversion en bed
 #+begin_src sh :dir:~/code/sanger
 open snvs-cento-sanger.csv | select chrom pos | insert pos2 {$in.pos } | to csv --separator="\t" | save snvs-cento-sanger.bed -f
@@ -7846,6 +7848,8 @@ open snvs-cento-sanger.csv | select chrom pos | insert pos2 {$in.pos } | to csv 
 NB: vérifié sur le premier résultat en cherche le read contenant le variant (samtools view -r puis samtools view | grep en T2T) et avec l'aide d'IGV, on a un variant qui correspond en
 chr1:10757746
 3. En supposant que l'ordre des variants n'a pas changé, on ajoute simplement REF et ALT avec annotateLifted.jl
+
+Annotation spip *très lente* : 1h13 !
 
 Résultat:
 2×3 DataFrame
@@ -7857,16 +7861,10 @@ Résultat:
 144 found over 146
 filter depth : another 0 missed variants
 filter poly : another 0 missed variants
+filter vep : another 0 missed variants
 
-filter vep : another 4 missed variants
-4×3 DataFrame
- Row │ variant               meanQual  depth
-     │ String                Float64   Int64
-─────┼───────────────────────────────────────
-   1 │ chr10:g.130884530      60.0     67
-   2 │ chr10:g.240362         60.0     79
-   3 │ chr14:g.52665581       60.0     51
-   4 │ chr19:g.41325390       60.0    180
+Et on a trop de variants en sortie (7330 !)
+**** TODO Mail Paul avec résultats filtre en T2T + nouveau schéma
 * Ré-interprétation
 ** TODO Lancer tests sur données brutes [6/250]
 - [X] 100222_63015289
