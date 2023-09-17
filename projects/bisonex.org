@@ -2337,8 +2337,8 @@ CLOSED: [2023-04-22 Sat 15:27] SCHEDULED: <2023-04-13 Thu>
 :PROPERTIES:
 :CATEGORY: manuscript
 :END:
-** TODO Flowchart pipeline (avec T2T)
-SCHEDULED: <2023-09-17 Sun>
+** DONE Flowchart pipeline (avec T2T)
+CLOSED: [2023-09-17 Sun 23:15] SCHEDULED: <2023-09-17 Sun>
 * Tests :tests:
 ** KILL Non régression : version prod
 CLOSED: [2023-05-23 Tue 08:46]
@@ -7864,7 +7864,8 @@ filter poly : another 0 missed variants
 filter vep : another 0 missed variants
 
 Et on a trop de variants en sortie (7330 !)
-**** TODO Mail Paul avec résultats filtre en T2T + nouveau schéma
+**** DONE Mail Paul avec résultats filtre en T2T + nouveau schéma
+CLOSED: [2023-09-17 Sun 23:15] SCHEDULED: <2023-09-17 Sun>
 * Ré-interprétation
 ** TODO Lancer tests sur données brutes [6/250]
 - [X] 100222_63015289
