@@ -60,6 +60,11 @@ CLOSED: [2023-09-09 Sat 20:19] SCHEDULED: <2023-09-09 Sat>
 /Entered on/ [2023-09-09 Sat 16:40]
 *** DONE Envoyer biblio initiale à Xavier
 CLOSED: [2023-09-10 Sun 22:51] SCHEDULED: <2023-09-10 Sun>
+*** TODO Résumé article PCR
+/Entered on/ [2023-09-17 Sun 16:08]
+*** TODO Envoyer première version à Xavier
+SCHEDULED: <2023-09-17 Sun>
+/Entered on/ [2023-09-17 Sun 16:08]
 * Recherche
 :PROPERTIES:
 :CATEGORY: recherche
@@ -340,6 +345,13 @@ CLOSED: [2023-07-27 Thu 23:31]
 *** DONE Mail Juliette + Paul pour resoumission
 CLOSED: [2023-09-10 Sun 22:36] SCHEDULED: <2023-09-10 Sun>
 /Entered on/ [2023-09-10 Sun 22:21]
+*** TODO Mail Dr Laithier
+SCHEDULED: <2023-09-17 Sun>
+/Entered on/ [2023-09-17 Sun 16:06]
+*** TODO Ajouter images pour gain + IGV
+SCHEDULED: <2023-09-19 Tue>
+*** TODO Comprendre score LRR pour gain
+SCHEDULED: <2023-09-19 Tue>
 ** Apprendre le machine learning
 :PROPERTIES:
 :CATEGORY: machine learning
