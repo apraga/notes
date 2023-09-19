@@ -2339,6 +2339,17 @@ CLOSED: [2023-04-22 Sat 15:27] SCHEDULED: <2023-04-13 Thu>
 :END:
 ** DONE Flowchart pipeline (avec T2T)
 CLOSED: [2023-09-17 Sun 23:15] SCHEDULED: <2023-09-17 Sun>
+** TODO Figure: nombre de publication par aligneur
+SCHEDULED: <2023-09-19 Tue>
+/Entered on/ [2023-09-19 Tue 08:43]
+
+** TODO Figure: nombre de publication par appel de variant
+SCHEDULED: <2023-09-19 Tue>
+/Entered on/ [2023-09-19 Tue 08:43]
+
+** TODO Figure: nombre d'exomes par années
+SCHEDULED: <2023-09-23 Sat>
+/Entered on/ [2023-09-19 Tue 08:43]
 * Tests :tests:
 ** KILL Non régression : version prod
 CLOSED: [2023-05-23 Tue 08:46]
@@ -7861,39 +7872,39 @@ Résultat:
 144 found over 146
 filter depth : another 0 missed variants
 filter poly : another 0 missed variants
-filter vep : another 0 missed variants
+filter vep   : another 0 missed variants
 
 Et on a trop de variants en sortie (7330 !)
 **** DONE Mail Paul avec résultats filtre en T2T + nouveau schéma
 CLOSED: [2023-09-17 Sun 23:15] SCHEDULED: <2023-09-17 Sun>
 * Ré-interprétation
-** TODO Lancer tests sur données brutes [6/250]
+** TODO Lancer tests sur données brutes [26/250]
 - [X] 100222_63015289
 - [X] 1600304839_63051311
 - [X] 1900007827_62913191
 - [X] 1900398899_62999500
 - [X] 1900486799_62913197
 - [X] 2100422923_62952677
-- [ ] 2100458888_62933047
-- [ ] 2100601558_62903840
-- [ ] 2100609288_62905768
-- [ ] 2100609501_62905776
-- [ ] 2100614493_62951074
-- [ ] 2100622566_62908067
-- [ ] 2100622601_62908060
-- [ ] 2100622705_62908063
-- [ ] 2100640027_62911936
-- [ ] 2100645285_62913212
-- [ ] 2100661411_62914081
-- [ ] 2100661462_62914086
-- [ ] 2100708257_62921596
-- [ ] 2100738732_62926501
-- [ ] 2100738850_62926509
-- [ ] 2100746751_62926505
-- [ ] 2100746797_62926506
-- [ ] 2100782349_62931722
-- [ ] 2100782416_62931561
-- [ ] 2100782559_62931718
+- [X] 2100458888_62933047
+- [X] 2100601558_62903840
+- [X] 2100609288_62905768
+- [X] 2100609501_62905776
+- [X] 2100614493_62951074
+- [X] 2100622566_62908067
+- [X] 2100622601_62908060
+- [X] 2100622705_62908063
+- [X] 2100640027_62911936
+- [X] 2100645285_62913212
+- [X] 2100661411_62914081
+- [X] 2100661462_62914086
+- [X] 2100708257_62921596
+- [X] 2100738732_62926501
+- [X] 2100738850_62926509
+- [X] 2100746751_62926505
+- [X] 2100746797_62926506
+- [X] 2100782349_62931722
+- [X] 2100782416_62931561
+- [X] 2100782559_62931718
 - [ ] 2100799204_62934768
 - [ ] 2200010202_62940284
 - [ ] 2200023600_62940631

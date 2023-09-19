@@ -345,13 +345,24 @@ CLOSED: [2023-07-27 Thu 23:31]
 *** DONE Mail Juliette + Paul pour resoumission
 CLOSED: [2023-09-10 Sun 22:36] SCHEDULED: <2023-09-10 Sun>
 /Entered on/ [2023-09-10 Sun 22:21]
-*** TODO Mail Dr Laithier
-SCHEDULED: <2023-09-17 Sun>
+*** DONE Mail Dr Laithier
+CLOSED: [2023-09-18 Mon 19:36] SCHEDULED: <2023-09-17 Sun>
 /Entered on/ [2023-09-17 Sun 16:06]
-*** TODO Ajouter images pour gain + IGV
-SCHEDULED: <2023-09-19 Tue>
-*** TODO Comprendre score LRR pour gain
-SCHEDULED: <2023-09-19 Tue>
+*** TODO Réponse reviewere
+**** TODO Ajouter images pour gain + IGV
+SCHEDULED: <2023-09-21 Thu>
+**** TODO Comprendre score LRR pour gain
+SCHEDULED: <2023-09-21 Thu>
+**** TODO Corriger discussion: remaniement complexe
+SCHEDULED: <2023-09-24 Sun>
+**** TODO Ajouter image Dr Vidau
+SCHEDULED: <2023-09-24 Sun>
+**** TODO Phénotype "mild" chez le père + détailler moléculaire
+SCHEDULED: <2023-09-24 Sun>
+**** TODO Traitement FBXW7 ?
+SCHEDULED: <2023-09-26 Tue>
+*** TODO Resoumettre
+SCHEDULED: <2023-10-03 Tue>
 ** Apprendre le machine learning
 :PROPERTIES:
 :CATEGORY: machine learning
@@ -368,7 +379,17 @@ Plus facile, à faire avant Elements... ?
 *** Autres cours en lignes
 **** https://mlcourse.ai/book/index.html
 **** https://www.fast.ai/
+** Article thèse
+*** Idée
+Framework pour tester des pipeline d'exome
+1. Les outils pour télécharger les données de comparaison (pipeline(s) nextflow) :  GIAB +/- chm
+2. Les outils pour comparer les VCF: package nix pour hap.py
+3. les données brutes pour lancer le pipeline et comparer ensuite (GIAB)
+   NB: pipeline existant si on télécharge depuis SRA...
+4. les outils pour génerer des données de synthèse : xamscissors (SNV seulement), bamsurgeon
+5. des données de référence
 
+Motivation: pas d'article qui centralise tout avec une solution "clé en main".
 * Génétique
 ** Collège [0/32]
 *** 1. Architecture du génome
@@ -663,7 +684,7 @@ CLOSED: [2023-07-30 Sun 15:02]
 Découverte <2023-07-02 Sun>. Virement 100.50€ fait.
 Mail envoyé ce jour
 ** TODO Vendre vélo
-SCHEDULED: <2023-09-17 Sun>
+SCHEDULED: <2023-09-23 Sat>
 /Entered on/ [2023-07-29 Sat 10:23]
 ** TODO Vendre frigo
 SCHEDULED: <2023-10-17 Wed>
