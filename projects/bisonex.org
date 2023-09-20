@@ -1978,6 +1978,16 @@ CLOSED: [2023-04-01 Sat 18:38] SCHEDULED: <2023-04-01 Sat>
 oui
 ***** KILL Packager l'utilisateur dans le programme ?
 Mauvaise idée..
+*** DONE Diminuer mémoire pour haplotypecaller
+CLOSED: [2023-09-20 Wed 21:44] SCHEDULED: <2023-09-19 Tue>
+/Entered on/ [2023-09-19 Tue 15:30]
+Medium = 32Go pour 6 coeurs => 4 jobs (donc tout le noeud) prend plus que les 96GB...
+On essaie 16Gb
+Puis commit
+*** DONE Report multiqc avec 10 runs
+CLOSED: [2023-09-19 Tue 15:31] SCHEDULED: <2023-09-19 Tue>
+/Entered on/ [2023-09-19 Tue 15:31]
+Cf mail 2023-09-19
 ** TODO Preprocessing avec nextflow
 *** TODO Map to reference
 **** TODO Sample ID dans header
@@ -2339,8 +2349,8 @@ CLOSED: [2023-04-22 Sat 15:27] SCHEDULED: <2023-04-13 Thu>
 :END:
 ** DONE Flowchart pipeline (avec T2T)
 CLOSED: [2023-09-17 Sun 23:15] SCHEDULED: <2023-09-17 Sun>
-** TODO Figure: nombre de publication par aligneur
-SCHEDULED: <2023-09-19 Tue>
+** DONE Figure: nombre de publication par aligneur
+CLOSED: [2023-09-19 Tue 16:54] SCHEDULED: <2023-09-19 Tue>
 /Entered on/ [2023-09-19 Tue 08:43]
 
 ** TODO Figure: nombre de publication par appel de variant
@@ -7878,7 +7888,7 @@ Et on a trop de variants en sortie (7330 !)
 **** DONE Mail Paul avec résultats filtre en T2T + nouveau schéma
 CLOSED: [2023-09-17 Sun 23:15] SCHEDULED: <2023-09-17 Sun>
 * Ré-interprétation
-** TODO Lancer tests sur données brutes [26/250]
+** TODO Lancer tests sur données brutes [47/250]
 - [X] 100222_63015289
 - [X] 1600304839_63051311
 - [X] 1900007827_62913191
@@ -7905,27 +7915,27 @@ CLOSED: [2023-09-17 Sun 23:15] SCHEDULED: <2023-09-17 Sun>
 - [X] 2100782349_62931722
 - [X] 2100782416_62931561
 - [X] 2100782559_62931718
-- [ ] 2100799204_62934768
-- [ ] 2200010202_62940284
-- [ ] 2200023600_62940631
-- [ ] 2200024348_62999591
-- [ ] 2200027505_62942457
-- [ ] 2200038776_62943412
-- [ ] 2200041919_62943405
-- [ ] 2200088014_62951326
-- [ ] 2200146652_62959388
-- [ ] 2200151850_62960953
-- [ ] 2200160014_62959475
-- [ ] 2200160070_62959478
-- [ ] 2200201368_62967471
-- [ ] 2200201400_62967470
-- [ ] 2200265558_62976332
-- [ ] 2200265605_62976401
-- [ ] 2200267046_62975192
-- [ ] 2200273878_62999530
-- [ ] 2200279708_62977002
-- [ ] 2200284408_62979102
-- [ ] 2200293987_62979116
+- [X] 2100799204_62934768
+- [X] 2200010202_62940284
+- [X] 2200023600_62940631
+- [X] 2200024348_62999591
+- [X] 2200027505_62942457
+- [X] 2200038776_62943412
+- [X] 2200041919_62943405
+- [X] 2200088014_62951326
+- [X] 2200146652_62959388
+- [X] 2200151850_62960953
+- [X] 2200160014_62959475
+- [X] 2200160070_62959478
+- [X] 2200201368_62967471
+- [X] 2200201400_62967470
+- [X] 2200265558_62976332
+- [X] 2200265605_62976401
+- [X] 2200267046_62975192
+- [X] 2200273878_62999530
+- [X] 2200279708_62977002
+- [X] 2200284408_62979102
+- [X] 2200293987_62979116
 - [ ] 2200294359_62979118
 - [ ] 2200306299_62982217
 - [ ] 2200306539_62982193
