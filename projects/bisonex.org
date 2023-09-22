@@ -1988,6 +1988,15 @@ Puis commit
 CLOSED: [2023-09-19 Tue 15:31] SCHEDULED: <2023-09-19 Tue>
 /Entered on/ [2023-09-19 Tue 15:31]
 Cf mail 2023-09-19
+*** TODO Bug: variant sur 7788314 pour patient 62982193 filtré après haplotypecaller
+SCHEDULED: <2023-09-22 Fri>
+/Entered on/ [2023-09-22 Fri 22:59]
+**** TODO Relancer run
+SCHEDULED: <2023-09-23 Sat>
+**** TODO A priori, non présent dans dbsnp (et donc common)
+SCHEDULED: <2023-09-23 Sat>
+**** TODO Depth ok ?
+SCHEDULED: <2023-09-23 Sat>
 ** DONE Mettre à jour spip pour corriger bug 62982239 : variant trop long (?)
 CLOSED: [2023-09-22 Fri 22:22] SCHEDULED: <2023-09-21 Thu>
 /Entered on/ [2023-09-21 Thu 23:11]
