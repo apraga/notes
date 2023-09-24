@@ -1988,15 +1988,13 @@ Puis commit
 CLOSED: [2023-09-19 Tue 15:31] SCHEDULED: <2023-09-19 Tue>
 /Entered on/ [2023-09-19 Tue 15:31]
 Cf mail 2023-09-19
-*** TODO Bug: variant sur 7788314 pour patient 62982193 filtré après haplotypecaller
-SCHEDULED: <2023-09-22 Fri>
+*** WAIT Bug: variant sur 7788314 pour patient 62982193 filtré : DP < 30
+SCHEDULED: <2023-09-25 Mon>
 /Entered on/ [2023-09-22 Fri 22:59]
-**** TODO Relancer run
-SCHEDULED: <2023-09-23 Sat>
-**** TODO A priori, non présent dans dbsnp (et donc common)
-SCHEDULED: <2023-09-23 Sat>
-**** TODO Depth ok ?
-SCHEDULED: <2023-09-23 Sat>
+35 selon IGV mais 27 en pratique dans le VCF.
+VCF cento: 26 reads également...
+Non confirmé sanger
+Mail envoyé Alexis
 ** DONE Mettre à jour spip pour corriger bug 62982239 : variant trop long (?)
 CLOSED: [2023-09-22 Fri 22:22] SCHEDULED: <2023-09-21 Thu>
 /Entered on/ [2023-09-21 Thu 23:11]
@@ -2098,9 +2096,140 @@ Test
 
 cp work/bf/437ae511958509e43072f032f4d495/small.tab.gz tests/vep-spip.tab.gz
 cp work/d5/3b1244b5ae83d54409ee0d456e8c55/small_cadd.tab.gz tests/vep-cadd-splice.tab.gz
-**** HOLD Package Nix spliceAI ?
-nix profile install nixpkgs#python3Packages.tensorflow
-+ ajouter dépendencs ("grep import" ou cnad)
+**** STRT Package Nix spliceAI
+On utilise le tensorflow fourni avec nix (branche spliceai)
+***** DONE Version CPU non optimisé
+CLOSED: [2023-09-23 Sat 21:34]
+****** DONE Vérifier annotation hg19 et 38
+CLOSED: [2023-09-23 Sat 18:49]
+****** DONE Annotation maison T2T
+CLOSED: [2023-09-23 Sat 21:33] SCHEDULED: <2023-09-23 Sat>
+***** DONE Version CPU optismisée
+CLOSED: [2023-09-23 Sat 21:34]
+Activer flag dans le package nix
+***** DONE Version CPU:  Test chr20
+CLOSED: [2023-09-23 Sat 22:25] SCHEDULED: <2023-09-23 Sat>
+10min ?
+***** DONE Version CPU:  NA12878 sanger complet: kill car trop long
+CLOSED: [2023-09-24 Sun 08:22] SCHEDULED: <2023-09-23 Sat>
+10min ?
+***** WAIT GPU avec la version sur mésocentre: mail envoyé
+#+begin_src sh
+module unload nix/2.11.0
+module load anaconda3@2021.05/gcc-12.1.0
+module load deep/tensorflow-gpu
+pip install spliceai
+#+end_src
+Puis on teste sur la queue gpu
+#+begin_src sh
+srun -p gpu -t 4:00:00 --gres=gpu:1 --pty bash
+
+cd /Work/Users/apraga/bisonex/tests/spliceai/
+module load deep/tensorflow-gpu
+module unload nix/2.11.0
+
+time spliceai -I NA12878-sanger-chr20-T2T.vep.vcf.gz -O output-20-2.vcf -R /Work/Groups/bisonex/data/fasta/chm13v2.0/chm13v2.0.fa -A ~/t2t.txt
+#+end_src
+
+Échec: librarie DNN not found...
+
+#+begin_quote
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-09-24 09:37:45.892545: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-09-24 09:37:47.759421: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1635] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38188 MB memory:  -> device: 0, name: NVIDIA A100-PCIE-40GB, pci bus id: 0000:21:00.0, compute capability: 8.0
+WARNING:tensorflow:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+WARNING:tensorflow:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+WARNING:tensorflow:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+WARNING:tensorflow:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+WARNING:tensorflow:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+2023-09-24 09:37:54.143021: I tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:637] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+2023-09-24 09:37:54.217160: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:429] Could not create cudnn handle: CUDNN_STATUS_NOT_INITIALIZED
+2023-09-24 09:37:54.217220: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:438] Possibly insufficient driver version: 510.108.3
+2023-09-24 09:37:54.217245: W tensorflow/core/framework/op_kernel.cc:1830] OP_REQUIRES failed at conv_ops.cc:1068 : UNIMPLEMENTED: DNN library is not found.
+2023-09-24 09:37:54.217262: I tensorflow/core/common_runtime/executor.cc:1197] [/job:localhost/replica:0/task:0/device:GPU:0] (DEBUG INFO) Executor start aborting (this does not indicate an error and you can ignore this message): UNIMPLEMENTED: DNN library is not found.
+         [[{{node model_1/conv1d_3/Conv1D}}]]
+Traceback (most recent call last):
+  File "/Home/Users/apraga/.local/bin/spliceai", line 8, in <module>
+    sys.exit(main())
+  File "/Home/Users/apraga/.local/lib/python3.9/site-packages/spliceai/__main__.py", line 72, in main
+    scores = get_delta_scores(record, ann, args.D, args.M)
+  File "/Home/Users/apraga/.local/lib/python3.9/site-packages/spliceai/utils.py", line 159, in get_delta_scores
+    y_ref = np.mean([ann.models[m].predict(x_ref) for m in range(5)], axis=0)
+  File "/Home/Users/apraga/.local/lib/python3.9/site-packages/spliceai/utils.py", line 159, in <listcomp>
+    y_ref = np.mean([ann.models[m].predict(x_ref) for m in range(5)], axis=0)
+  File "/Softs/helios/gpu/anaconda3/2023.03-1/envs/tensorflow-gpu-2.12.0+py3.9/lib/python3.9/site-packages/keras/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/Softs/helios/gpu/anaconda3/2023.03-1/envs/tensorflow-gpu-2.12.0+py3.9/lib/python3.9/site-packages/tensorflow/python/eager/execute.py", line 52, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+tensorflow.python.framework.errors_impl.UnimplementedError: Graph execution error:
+
+Detected at node 'model_1/conv1d_3/Conv1D' defined at (most recent call last):
+    File "/Home/Users/apraga/.local/bin/spliceai", line 8, in <module>
+      sys.exit(main())
+    File "/Home/Users/apraga/.local/lib/python3.9/site-packages/spliceai/__main__.py", line 72, in main
+      scores = get_delta_scores(record, ann, args.D, args.M)
+    File "/Home/Users/apraga/.local/lib/python3.9/site-packages/spliceai/utils.py", line 159, in get_delta_scores
+      y_ref = np.mean([ann.models[m].predict(x_ref) for m in range(5)], axis=0)
+    File "/Home/Users/apraga/.local/lib/python3.9/site-packages/spliceai/utils.py", line 159, in <listcomp>
+      y_ref = np.mean([ann.models[m].predict(x_ref) for m in range(5)], axis=0)
+    File "/Softs/helios/gpu/anaconda3/2023.03-1/envs/tensorflow-gpu-2.12.0+py3.9/lib/python3.9/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+      return fn(*args, **kwargs)
+    File "/Softs/helios/gpu/anaconda3/2023.03-1/envs/tensorflow-gpu-2.12.0+py3.9/lib/python3.9/site-packages/keras/engine/training.py", line 2382, in predict
+      tmp_batch_outputs = self.predict_function(iterator)
+    File "/Softs/helios/gpu/anaconda3/2023.03-1/envs/tensorflow-gpu-2.12.0+py3.9/lib/python3.9/site-packages/keras/engine/training.py", line 2169, in predict_function
+      return step_function(self, iterator)
+    File "/Softs/helios/gpu/anaconda3/2023.03-1/envs/tensorflow-gpu-2.12.0+py3.9/lib/python3.9/site-packages/keras/engine/training.py", line 2155, in step_function
+      outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "/Softs/helios/gpu/anaconda3/2023.03-1/envs/tensorflow-gpu-2.12.0+py3.9/lib/python3.9/site-packages/keras/engine/training.py", line 2143, in run_step
+      outputs = model.predict_step(data)
+    File "/Softs/helios/gpu/anaconda3/2023.03-1/envs/tensorflow-gpu-2.12.0+py3.9/lib/python3.9/site-packages/keras/engine/training.py", line 2111, in predict_step
+      return self(x, training=False)
+    File "/Softs/helios/gpu/anaconda3/2023.03-1/envs/tensorflow-gpu-2.12.0+py3.9/lib/python3.9/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+      return fn(*args, **kwargs)
+    File "/Softs/helios/gpu/anaconda3/2023.03-1/envs/tensorflow-gpu-2.12.0+py3.9/lib/python3.9/site-packages/keras/engine/training.py", line 558, in __call__
+      return super().__call__(*args, **kwargs)
+    File "/Softs/helios/gpu/anaconda3/2023.03-1/envs/tensorflow-gpu-2.12.0+py3.9/lib/python3.9/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+      return fn(*args, **kwargs)
+    File "/Softs/helios/gpu/anaconda3/2023.03-1/envs/tensorflow-gpu-2.12.0+py3.9/lib/python3.9/site-packages/keras/engine/base_layer.py", line 1145, in __call__
+      outputs = call_fn(inputs, *args, **kwargs)
+    File "/Softs/helios/gpu/anaconda3/2023.03-1/envs/tensorflow-gpu-2.12.0+py3.9/lib/python3.9/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+      return fn(*args, **kwargs)
+    File "/Softs/helios/gpu/anaconda3/2023.03-1/envs/tensorflow-gpu-2.12.0+py3.9/lib/python3.9/site-packages/keras/engine/functional.py", line 512, in call
+      return self._run_internal_graph(inputs, training=training, mask=mask)
+    File "/Softs/helios/gpu/anaconda3/2023.03-1/envs/tensorflow-gpu-2.12.0+py3.9/lib/python3.9/site-packages/keras/engine/functional.py", line 669, in _run_internal_graph
+      outputs = node.layer(*args, **kwargs)
+    File "/Softs/helios/gpu/anaconda3/2023.03-1/envs/tensorflow-gpu-2.12.0+py3.9/lib/python3.9/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+      return fn(*args, **kwargs)
+    File "/Softs/helios/gpu/anaconda3/2023.03-1/envs/tensorflow-gpu-2.12.0+py3.9/lib/python3.9/site-packages/keras/engine/base_layer.py", line 1145, in __call__
+      outputs = call_fn(inputs, *args, **kwargs)
+    File "/Softs/helios/gpu/anaconda3/2023.03-1/envs/tensorflow-gpu-2.12.0+py3.9/lib/python3.9/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+      return fn(*args, **kwargs)
+    File "/Softs/helios/gpu/anaconda3/2023.03-1/envs/tensorflow-gpu-2.12.0+py3.9/lib/python3.9/site-packages/keras/layers/convolutional/base_conv.py", line 290, in call
+      outputs = self.convolution_op(inputs, self.kernel)
+    File "/Softs/helios/gpu/anaconda3/2023.03-1/envs/tensorflow-gpu-2.12.0+py3.9/lib/python3.9/site-packages/keras/layers/convolutional/base_conv.py", line 262, in convolution_op
+      return tf.nn.convolution(
+Node: 'model_1/conv1d_3/Conv1D'
+DNN library is not found.
+         [[{{node model_1/conv1d_3/Conv1D}}]] [Op:__inference_predict_function_22195]
+#+end_quote
+
+
+***** TODO Avec pip: echec
+2023-09-24 08:28:46.361434: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1956] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU.
+***** KILL Tester conda: echec
+CLOSED: [2023-09-23 Sat 21:43] SCHEDULED: <2023-09-23 Sat>
+N'arrive pas à installer
+
+#+begin_quote
+
+  - feature:/linux-64::__glibc==2.28=0
+  - python=3.11 -> libgcc-ng[version='>=11.2.0'] -> __glibc[version='>=2.17']
+  - spliceai -> tensorflow[version='>=1.13.0'] -> __cuda
+  - spliceai -> tensorflow[version='>=1.13.0'] -> __glibc[version='>=2.17']
+
+Your installed version is: 2.28
+#+end_quote
+
 **** TODO Ajout LOEUF et pli
 plugin VEP
 **** TODO NMD
@@ -2382,7 +2511,7 @@ SCHEDULED: <2023-09-19 Tue>
 /Entered on/ [2023-09-19 Tue 08:43]
 
 ** TODO Figure: nombre d'exomes par années
-SCHEDULED: <2023-09-23 Sat>
+SCHEDULED: <2023-09-30 Sat>
 /Entered on/ [2023-09-19 Tue 08:43]
 * Tests :tests:
 ** KILL Non régression : version prod
@@ -8166,7 +8295,7 @@ CLOSED: [2023-09-17 Sun 23:15] SCHEDULED: <2023-09-17 Sun>
 
 * Résultats
 ** TODO Speed-up BWA-mem
-SCHEDULED: <2023-09-23 Sat>
+SCHEDULED: <2023-09-30 Sat>
 
 ** TODO Speed-up Hapotypecaller
-SCHEDULED: <2023-09-23 Sat>
+SCHEDULED: <2023-09-30 Sat>
