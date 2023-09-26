@@ -2098,6 +2098,7 @@ cp work/bf/437ae511958509e43072f032f4d495/small.tab.gz tests/vep-spip.tab.gz
 cp work/d5/3b1244b5ae83d54409ee0d456e8c55/small_cadd.tab.gz tests/vep-cadd-splice.tab.gz
 **** STRT Package Nix spliceAI
 On utilise le tensorflow fourni avec nix (branche spliceai)
+Il faut LD_PRELOAD=/lib64/libcuda.so  pour l'exécution
 ***** DONE Version CPU non optimisé
 CLOSED: [2023-09-23 Sat 21:34]
 ****** DONE Vérifier annotation hg19 et 38
@@ -2113,7 +2114,8 @@ CLOSED: [2023-09-23 Sat 22:25] SCHEDULED: <2023-09-23 Sat>
 ***** DONE Version CPU:  NA12878 sanger complet: kill car trop long
 CLOSED: [2023-09-24 Sun 08:22] SCHEDULED: <2023-09-23 Sat>
 10min ?
-***** WAIT GPU avec la version sur mésocentre: mail envoyé
+***** DONE GPU avec la version sur mésocentre: mail envoyé
+CLOSED: [2023-09-26 Tue 11:49]
 #+begin_src sh
 module unload nix/2.11.0
 module load anaconda3@2021.05/gcc-12.1.0
@@ -2213,7 +2215,42 @@ DNN library is not found.
          [[{{node model_1/conv1d_3/Conv1D}}]] [Op:__inference_predict_function_22195]
 #+end_quote
 
+***** DONE GPU: chr20 ok
+CLOSED: [2023-09-26 Tue 11:50]
+LD_PRELOAD=/lib64/libcuda.so spliceai -I NA12878-sanger-20-2-T2T.vep.vcf.gz -O output-20-2-gpu.vcf -R /Work/Groups/bisonex/data/fasta/chm13v2.0/chm13v2.0.fa -A ~/t2t.txt
+temps d'exécution : 5min
 
+***** STRT GPU: toutes les données
+SCHEDULED: <2023-09-26 Tue>
+#+begin_src slurm
+#!/bin/bash -l
+# Fichier submission.SBATCH
+
+#SBATCH --job-name="spliceai-gpu"
+#SBATCH --output=%x.%J.out   ## %x=nom_du_job, %J=id du job
+#SBATCH --error=%x.%J.out
+
+# walltime (hh:mm::ss) max is 8 days
+#SBATCH -t 24:00:00
+
+#SBATCH --partition=gpu
+#SBATCH --gres=gpu:1
+
+## To request more memory, use --mem option.
+## Please don't use more than 128g.
+#SBATCH --mem=32G
+
+## votre dresse mail pour les notifs
+#SBATCH --mail-user=apraga@chu-besancon.fr
+#SBATCH --mail-type=END,FAIL
+
+nvidia-smi
+
+module purge
+module load nix/2.11.0
+
+LD_PRELOAD=/lib64/libcuda.so spliceai -I NA12878-sanger-all-T2T.vep.vcf.gz -O output-all-gpu.vcf -R /Work/Groups/bisonex/data/fasta/chm13v2.0/chm13v2.0.fa -A ~/t2t.txt
+#+end_src
 ***** TODO Avec pip: echec
 2023-09-24 08:28:46.361434: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1956] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU.
 ***** KILL Tester conda: echec
@@ -2494,8 +2531,8 @@ CLOSED: [2023-09-16 Sat 22:47] SCHEDULED: <2023-09-16 Sat>
 ** DONE Procédure d'installation nix + dependences pour VM CHU
 CLOSED: [2023-04-22 Sat 15:27] SCHEDULED: <2023-04-13 Thu>
 * Bibliographie
-** TODO Finir[cite:@alser2021]
-SCHEDULED: <2023-09-22 Fri>
+** DONE Finir[cite:@alser2021]
+CLOSED: [2023-09-26 Tue 11:26] SCHEDULED: <2023-09-22 Fri>
 * Manuscript
 :PROPERTIES:
 :CATEGORY: manuscript
@@ -5794,10 +5831,10 @@ CLOSED: [2023-07-31 Mon 22:31] SCHEDULED: <2023-07-30 Sun>
 ** TODO Données CHM13 :chm:
 https://github.com/lh3/CHM-eval
 *** TODO Run ERR1341793
-SCHEDULED: <2023-09-24 Sun>
+SCHEDULED: <2023-10-03 Tue>
 (raw reads ERR1341793_1.fastq.gz and ERR1341793_2.fastq.gz downloaded from https://www.ebi.ac.uk/ena/browser/view/ERR1341793)
 *** TODO Run ERR1341796
-SCHEDULED: <2023-09-24 Sun>
+SCHEDULED: <2023-10-03 Tue>
 ** TODO Insilico :cento:
 *** TODO tous les variants centogène
 **** DONE Extraire liste des SNVs
@@ -8011,7 +8048,7 @@ VEP chooses one block of annotation per variant, using an ordered set of criteri
 **** DONE Mail alexis
 CLOSED: [2023-08-20 Sun 13:45] SCHEDULED: <2023-08-20 Sun>
 **** TODO Données simuscop 200x
-SCHEDULED: <2023-09-24 Sun>
+SCHEDULED: <2023-10-03 Tue>
 **** DONE En T2T avec liftover (filtre = spip) : ok mais lent et trop de variants :tests:
 CLOSED: [2023-09-17 Sun 17:13] SCHEDULED: <2023-09-17 Sun>
 1. Conversion en bed
@@ -8041,7 +8078,7 @@ Et on a trop de variants en sortie (7330 !)
 **** DONE Mail Paul avec résultats filtre en T2T + nouveau schéma
 CLOSED: [2023-09-17 Sun 23:15] SCHEDULED: <2023-09-17 Sun>
 * Ré-interprétation
-** TODO Lancer tests sur données brutes [67/250]
+** TODO Lancer tests sur données brutes [87/250]
 - [X] 100222_63015289
 - [X] 1600304839_63051311
 - [X] 1900007827_62913191
@@ -8109,26 +8146,27 @@ CLOSED: [2023-09-17 Sun 23:15] SCHEDULED: <2023-09-17 Sun>
 - [X] 2200338306_62985430
 - [X] 2200343880_62989407
 - [X] 2200343910_62989460
-- [ ] 2200343938_62989451
-- [ ] 2200343966_62989456
-- [ ] 2200343993_62989440
-- [ ] 2200344013_62989464
-- [ ] 2200349749_62989465
-- [ ] 2200363462_62988848
-- [ ] 2200377880_62991993
-- [ ] 2200378032_62991991
-- [ ] 2200383996_62993828
-- [ ] 2200384015_62993796
-- [ ] 2200384046_62993822
-- [ ] 2200384117_62993808
-- [ ] 2200384187_62993825
-- [ ] 2200384231_62992898
-- [ ] 2200385658_63060260
-- [ ] 2200394260_62994732
-- [ ] 2200395817_62994742
-- [ ] 2200396731_62994737
-- [ ] 2200424073_62999579
-- [ ] 2200424207_62999632
+- [X] 2200343938_62989451
+- [X] 2200343966_62989456
+- [X] 2200343993_62989440
+- [X] 2200344013_62989464
+- [X] 2200349749_62989465
+- [X] 2200363462_62988848
+- [X] 2200377880_62991993
+- [X] 2200378032_62991991
+- [X] 2200383996_62993828
+- [X] 2200384015_62993796
+- [X] 2200384046_62993822
+- [X] 2200384117_62993808
+- [X] 2200384187_62993825
+- [X] 2200384231_62992898
+- [X] 2200385658_63060260
+- [X] 2200394260_62994732
+- [X] 2200395817_62994742
+- [X] 2200396731_62994737
+- [X] 2200424073_62999579
+- [X] 2200424207_62999632
+
 - [ ] 2200426178_62999630
 - [ ] 2200426243_62999635
 - [ ] 2200426466_62999605
