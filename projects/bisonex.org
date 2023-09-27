@@ -486,7 +486,7 @@ Soumis
 ** TODO Happy :happy:
 *** PROJ PR python 3 upstream
 *** PROJ nixpkgs en l'état
-
+** PROJ SpliceAI
 ** TODO Bamsurgeon
 /Entered on/ [2023-05-13 Sat 19:11]
 *** TODO Velvet
@@ -1805,7 +1805,7 @@ chr10	89894645	lol	A	G	.	.	.
 | chr10 | 89894645 | lol | A   | G   | .    | .      | .    | NM_152871:g.89894645:A>G    | NTR            | 00 % [00 % - 00.92 %]      |     0.000 | +      | 89894645 | substitution | A>G      | Intron 5 |     1398 | NM_152871    | FAS  | donor     |           160 | DeepIntron |               0 | Outside SPiCE Interpretation |  0 |           0 | No            |    10.00000 |       89894644 | Don           |    0.0001360257829 | No               | Don                 |             89894485 |        159 |            0 |   0.0000000000000 | No          |      89894485 |         0.07177992 | Yes              |            0.07177992 | Yes |
 | chr10 | 89894645 | lol | A   | G   | .    | .      | .    | NM_152872:g.89894645:A>G    | Alter ESR      | 35.81 % [28.11 % - 44.1 %] |     0.288 | +      | 89894645 | substitution | A>G      | Exon 6   |       63 | NM_152872    | FAS  | acceptor  |             8 | ExonESR    |               0 | Outside SPiCE Interpretation |  0 |           0 | No            |    -1.67753 |       89894644 | Acc           |    0.0000003317384 | No               | Acc                 |             89894637 |          7 |     89894644 |   0.0000002205815 | No          |      89894637 |         0.02545572 | No               |            0.02545572 | No  |
 | chr10 | 89894645 | lol | A   | G   | .    | .      | .    | NR_028033:g.89894645:A>G    | NTR            | 00 % [00 % - 00.92 %]      |     0.000 | +      | 89894645 | substitution | A>G      | Intron 4 |     1398 | NR_028033    | FAS  | donor     |           160 | DeepIntron |               0 | Outside SPiCE Interpretation |  0 |           0 | No            |    10.00000 |       89894644 | Don           |    0.0001360257829 | No               | Don                 |             89894485 |        159 |            0 |   0.0000000000000 | No          |      89894485 |         0.07177992 | Yes              |            0.07177992 | Yes |
-| chr10 | 89894645 | lol | A   | G   | .    | .      | .    | NR_028034:g.89894645:A>G    | NTR            | 00 % [00 % - 00.92 %]      |     0.000 | +      | 89894645 | substitution | A>G      | Intron 3 |     1398 | NR_028034    | FAS  | donor     |           160 | DeepIntron |               0 | Outside SPiCE Interpretation |  0 |           0 | No            |    10.00000 |       89894644 | Don           |    0.0001360257829 | No               | Don                 |             89894485 |        159 |            0 |   0.0000000000000 | No          |      89894485 |         0.07177992 | Yes              |            0.07177992 | Yes |
+|chr10129957338-T-C chr10 | 89894645 | lol | A   | G   | .    | .      | .    | NR_028034:g.89894645:A>G    | NTR            | 00 % [00 % - 00.92 %]      |     0.000 | +      | 89894645 | substitution | A>G      | Intron 3 |     1398 | NR_028034    | FAS  | donor     |           160 | DeepIntron |               0 | Outside SPiCE Interpretation |  0 |           0 | No            |    10.00000 |       89894644 | Don           |    0.0001360257829 | No               | Don                 |             89894485 |        159 |            0 |   0.0000000000000 | No          |      89894485 |         0.07177992 | Yes              |            0.07177992 | Yes |
 | chr10 | 89894645 | lol | A   | G   | .    | .      | .    | NR_028035:g.89894645:A>G    | Alter ESR      | 35.81 % [28.11 % - 44.1 %] |     0.288 | +      | 89894645 | substitution | A>G      | Exon 4   |       63 | NR_028035    | FAS  | acceptor  |             8 | ExonESR    |               0 | Outside SPiCE Interpretation |  0 |           0 | No            |    -1.67753 |       89894644 | Acc           |    0.0000003317384 | No               | Acc                 |             89894637 |          7 |     89894644 |   0.0000002205815 | No          |      89894637 |         0.02545572 | No               |            0.02545572 | No  |
 | chr10 | 89894645 | lol | A   | G   | .    | .      | .    | NR_028036:g.89894645:A>G    | Alter ESR      | 35.81 % [28.11 % - 44.1 %] |     0.288 | +      | 89894645 | substitution | A>G      | Exon 5   |       63 | NR_028036    | FAS  | acceptor  |             8 | ExonESR    |               0 | Outside SPiCE Interpretation |  0 |           0 | No            |    -1.67753 |       89894644 | Acc           |    0.0000003317384 | No               | Acc                 |             89894637 |          7 |     89894644 |   0.0000002205815 | No          |      89894637 |         0.02545572 | No               |            0.02545572 | No  |
 | chr10 | 89894645 | lol | A   | G   | .    | .      | .    | NR_135313:g.89894645:A>G    | Alter ESR      | 35.81 % [28.11 % - 44.1 %] |     0.288 | +      | 89894645 | substitution | A>G      | Exon 5   |       63 | NR_135313    | FAS  | acceptor  |             8 | ExonESR    |               0 | Outside SPiCE Interpretation |  0 |           0 | No            |    -1.67753 |       89894644 | Acc           |    0.0000003317384 | No               | Acc                 |             89894637 |          7 |     89894644 |   0.0000002205815 | No          |      89894637 |         0.02545572 | No               |            0.02545572 | No  |
@@ -1844,7 +1844,7 @@ Ex: ACHE
 Idéalement, il faudrait l'identifiant NCBI (disponible dans OMIM) mais n'est pas en sortie de VEP
 Et cela demande la version "merged" donc impossible en T2T
 
-Est-ce faisable de faire une correspondance sur le nom du gène ?
+Est-ce faisable de faire une chr10129957338-T-Ccorrespondance sur le nom du gène ?
 Tous les gènes de T2T:
 #+begin_src sh :dir ~/Downloads
  zgrep -o "ID=gene[^;]*;"  GCF_009914755.1_T2T-CHM13v2.0_genomic.gff.gz | sed 's/ID=gene-//;s/;//' | sort | uniq > t2t-genes.txt
@@ -1898,6 +1898,201 @@ CLOSED: [2023-09-17 Sun 09:07] SCHEDULED: <2023-09-16 Sat>
 https://www.postman.com/genoox-ps/workspace/franklin-api-documentation-s-public-workspace/documentation/6621518-4335389d-12e3-445f-8182-339df95b2a09
 *** KILL Regarder si clinique disponible avec vep :annotation:
 CLOSED: [2023-09-10 Sun 16:44]
+*** TODO Tester filtre sans splice
+SCHEDULED: <2023-09-27 Wed>
+Mail Paul: Exome donc hors splice, peu intéressant
+**** DONE Enlever complètement condition splice: 6130 variants restants... comme spliceAI
+CLOSED: [2023-09-27 Wed 19:37] SCHEDULED: <2023-09-26 Tue>
+Cf [[id:c9b2009a-503b-4561-94c6-29ae21a3188d][Filtre vep avec spliceAI: 37365 -> 6130]]
+
+Dans tests/splicai
+#+begin_src sh
+ filter_vep -i output-all-gpu.vcf --format vcf --filter "        not(Consequence matches non_coding_transcript or Consequence matches stream                 or Consequence matches intergenic_variant                 or Consequence matches UTR                 or Consequence matches intron_variant                 or Consequence matches synonymous                 or BIOTYPE  matches pseudogene                 or BIOTYPE  matches misc_RNA)"                --only_matched         -o test.vcf
+
+ grep -c -v '^#' test.vcf
+6130
+#+end_src
+**** DONE Remplacer par impact fonctionnel: peu d'impact : majorité = MODERATE
+CLOSED: [2023-09-27 Wed 19:45] SCHEDULED: <2023-09-26 Tue>
+
+ filter_vep -i output-all-gpu-filtered.vcf --format vcf --filter "IMPACT is HIGH"  --only_matched | grep -c -v '^#'
+258
+
+filter_vep -i output-all-gpu-filtered.vcf --format vcf --filter "IMPACT is LOW"  --only_matched | grep -c -v '^#'
+11
+
+filter_vep -i output-all-gpu-filtered.vcf --format vcf --filter "IMPACT is MODERATE"  --only_matched | grep -c -v '^#'
+5824
+**** DONE Regarder les conséquences pour tes les transcripts
+CLOSED: [2023-09-27 Wed 21:04]
+/Work/Users/apraga/bisonex/out/annotate/vep/NA12878-sanger-all-T2T
+
+ filter_vep -i NA12878-sanger-all-T2T.vep.vcf.gz --format vcf --filter "        not(Consequence matches non_coding_transcript or Consequence matches stream                 or Consequence matches intergenic_variant                 or Consequence matches UTR                 or Consequence matches intron_variant                 or Consequence matches synonymous                 or BIOTYPE  matches pseudogene                 or BIOTYPE  matches misc_RNA)"                --only_matched         -o filtered.vcf
+
+ bcftools +split-vep filtered.vcf -f '%Consequence\n' -d | sort | uniq -c
+     94 coding_sequence_variant
+     13 coding_sequence_variant&NMD_transcript_variant
+    257 frameshift_variant
+     21 frameshift_variant&NMD_transcript_variant
+      2 frameshift_variant&splice_donor_region_variant
+     20 frameshift_variant&splice_region_variant
+      1 frameshift_variant&splice_region_variant&NMD_transcript_variant
+      1 incomplete_terminal_codon_variant&coding_sequence_variant
+    211 inframe_deletion
+     18 inframe_deletion&NMD_transcript_variant
+      6 inframe_deletion&splice_region_variant
+    242 inframe_insertion
+     22 inframe_insertion&NMD_transcript_variant
+      4 inframe_insertion&splice_region_variant
+  14689 missense_variant
+   1416 missense_variant&NMD_transcript_variant
+      6 missense_variant&splice_donor_5th_base_variant
+    374 missense_variant&splice_region_variant
+     34 missense_variant&splice_region_variant&NMD_transcript_variant
+     53 splice_acceptor_variant
+     11 splice_acceptor_variant&NMD_transcript_variant
+     79 splice_donor_variant
+      6 splice_donor_variant&NMD_transcript_variant
+     30 start_lost
+      5 start_lost&NMD_transcript_variant
+    135 stop_gained
+     13 stop_gained&frameshift_variant
+      3 stop_gained&frameshift_variant&NMD_transcript_variant
+      2 stop_gained&frameshift_variant&splice_region_variant
+     14 stop_gained&NMD_transcript_variant
+      5 stop_gained&splice_region_variant
+      2 stop_gained&splice_region_variant&NMD_transcript_variant
+      4 stop_lost
+      1 stop_lost&NMD_transcript_variant
+      9 stop_retained_variant
+      6 stop_retained_variant&NMD_transcript_variant
+      1 transcript_ablation
+
+
+Idem tests/spliceai
+
+bcftools +split-vep output-all-gpu-filtered.vcf  -f '%Consequence\n' -d | sort | uniq -c
+     94 coding_sequence_variant
+     13 coding_sequence_variant&NMD_transcript_variant
+    257 frameshift_variant
+     21 frameshift_variant&NMD_transcript_variant
+      2 frameshift_variant&splice_donor_region_variant
+     20 frameshift_variant&splice_region_variant
+      1 frameshift_variant&splice_region_variant&NMD_transcript_variant
+      1 incomplete_terminal_codon_variant&coding_sequence_variant
+    211 inframe_deletion
+     18 inframe_deletion&NMD_transcript_variant
+      6 inframe_deletion&splice_region_variant
+    242 inframe_insertion
+     22 inframe_insertion&NMD_transcript_variant
+      4 inframe_insertion&splice_region_variant
+  14689 missense_variant
+   1416 missense_variant&NMD_transcript_variant
+      6 missense_variant&splice_donor_5th_base_variant
+    374 missense_variant&splice_region_variant
+     34 missense_variant&splice_region_variant&NMD_transcript_variant
+     53 splice_acceptor_variant
+     11 splice_acceptor_variant&NMD_transcript_variant
+     79 splice_donor_variant
+      6 splice_donor_variant&NMD_transcript_variant
+     30 start_lost
+      5 start_lost&NMD_transcript_variant
+    135 stop_gained
+     13 stop_gained&frameshift_variant
+      3 stop_gained&frameshift_variant&NMD_transcript_variant
+      2 stop_gained&frameshift_variant&splice_region_variant
+     14 stop_gained&NMD_transcript_variant
+      5 stop_gained&splice_region_variant
+      2 stop_gained&splice_region_variant&NMD_transcript_variant
+      4 stop_lost
+      1 stop_lost&NMD_transcript_variant
+      9 stop_retained_variant
+      6 stop_retained_variant&NMD_transcript_variant
+      1 transcript_ablation
+**** DONE Regarder les conséquences pour -s worst
+CLOSED: [2023-09-27 Wed 21:04]
+/Work/Users/apraga/bisonex/out/annotate/vep/NA12878-sanger-all-T2T
+Après filtre_vep sans splice
+
+]$ bcftools +split-vep filtered.vcf -f '%Consequence\n' -d -s worst | sort | uniq -c
+     48 coding_sequence_variant
+      6 coding_sequence_variant&nmd_transcript_variant
+    121 frameshift_variant
+      9 frameshift_variant&nmd_transcript_variant
+      1 frameshift_variant&splice_donor_region_variant
+      9 frameshift_variant&splice_region_variant
+     79 inframe_deletion
+      3 inframe_deletion&nmd_transcript_variant
+      2 inframe_deletion&splice_region_variant
+     85 inframe_insertion
+      2 inframe_insertion&nmd_transcript_variant
+      1 inframe_insertion&splice_region_variant
+   5309 missense_variant
+    207 missense_variant&nmd_transcript_variant
+      3 missense_variant&splice_donor_5th_base_variant
+    110 missense_variant&splice_region_variant
+      9 missense_variant&splice_region_variant&nmd_transcript_variant
+     19 splice_acceptor_variant
+      1 splice_acceptor_variant&nmd_transcript_variant
+     21 splice_donor_variant
+      1 splice_donor_variant&nmd_transcript_variant
+     14 start_lost
+     44 stop_gained
+      4 stop_gained&frameshift_variant
+      2 stop_gained&frameshift_variant&splice_region_variant
+      3 stop_gained&nmd_transcript_variant
+      3 stop_gained&splice_region_variant
+      2 stop_gained&splice_region_variant&nmd_transcript_variant
+      2 stop_lost
+      1 stop_lost&nmd_transcript_variant
+      6 stop_retained_variant
+      2 stop_retained_variant&nmd_transcript_variant
+      1 transcript_ablation
+
+Dans tests/spliceai
+$ bcftools +split-vep output-all-gpu-filtered.vcf  -f '%Consequence\n' -s worst -d | sort | uniq -c
+     48 coding_sequence_variant
+      6 coding_sequence_variant&nmd_transcript_variant
+    121 frameshift_variant
+      9 frameshift_variant&nmd_transcript_variant
+      1 frameshift_variant&splice_donor_region_variant
+      9 frameshift_variant&splice_region_variant
+     79 inframe_deletion
+      3 inframe_deletion&nmd_transcript_variant
+      2 inframe_deletion&splice_region_variant
+     85 inframe_insertion
+      2 inframe_insertion&nmd_transcript_variant
+      1 inframe_insertion&splice_region_variant
+   5309 missense_variant
+    207 missense_variant&nmd_transcript_variant
+      3 missense_variant&splice_donor_5th_base_variant
+    110 missense_variant&splice_region_variant
+      9 missense_variant&splice_region_variant&nmd_transcript_variant
+     19 splice_acceptor_variant
+      1 splice_acceptor_variant&nmd_transcript_variant
+     21 splice_donor_variant
+      1 splice_donor_variant&nmd_transcript_variant
+     14 start_lost
+     44 stop_gained
+      4 stop_gained&frameshift_variant
+      2 stop_gained&frameshift_variant&splice_region_variant
+      3 stop_gained&nmd_transcript_variant
+      3 stop_gained&splice_region_variant
+      2 stop_gained&splice_region_variant&nmd_transcript_variant
+      2 stop_lost
+      1 stop_lost&nmd_transcript_variant
+      6 stop_retained_variant
+      2 stop_retained_variant&nmd_transcript_variant
+      1 transcript_ablation
+**** TODO Vérifier si tests sanger passent: non
+SCHEDULED: <2023-09-27 Wed>
+     │ String                Float64   Int64
+─────┼───────────────────────────────────────
+   1 │ chr10:g.130884530      60.0     67
+   2 │ chr10:g.240362         60.0     79
+   3 │ chr14:g.52665581       60.0     51
+   4 │ chr19:g.41325390       60.0    180
+
 ** DONE [#B] Indicateurs qualité :qualité:
 CLOSED: [2023-09-10 Sun 16:46]
 *** Idée
@@ -2220,8 +2415,21 @@ CLOSED: [2023-09-26 Tue 11:50]
 LD_PRELOAD=/lib64/libcuda.so spliceai -I NA12878-sanger-20-2-T2T.vep.vcf.gz -O output-20-2-gpu.vcf -R /Work/Groups/bisonex/data/fasta/chm13v2.0/chm13v2.0.fa -A ~/t2t.txt
 temps d'exécution : 5min
 
-***** STRT GPU: toutes les données
-SCHEDULED: <2023-09-26 Tue>
+***** STRT GPU: toutes les données :GPU:spliceai:
+****** DONE Run : 70GB, 3h30
+CLOSED: [2023-09-27 Wed 10:37] SCHEDULED: <2023-09-26 Tue>
+32G insufissant ! Il faut 70GB :
+
+Job ID: 17340
+Cluster: mesoubfc
+User/Group: apraga/mesousers
+State: COMPLETED (exit code 0)
+Cores: 1
+CPU Utilized: 03:11:53
+CPU Efficiency: 93.55% of 03:25:07 core-walltime
+Job Wall-clock time: 03:25:07
+Memory Utilized: 67.75 GB
+Memory Efficiency: 52.93% of 128.00 GB
 #+begin_src slurm
 #!/bin/bash -l
 # Fichier submission.SBATCH
@@ -2238,7 +2446,7 @@ SCHEDULED: <2023-09-26 Tue>
 
 ## To request more memory, use --mem option.
 ## Please don't use more than 128g.
-#SBATCH --mem=32G
+#SBATCH --mem=64G
 
 ## votre dresse mail pour les notifs
 #SBATCH --mail-user=apraga@chu-besancon.fr
@@ -2251,11 +2459,64 @@ module load nix/2.11.0
 
 LD_PRELOAD=/lib64/libcuda.so spliceai -I NA12878-sanger-all-T2T.vep.vcf.gz -O output-all-gpu.vcf -R /Work/Groups/bisonex/data/fasta/chm13v2.0/chm13v2.0.fa -A ~/t2t.txt
 #+end_src
+****** TODO Annoter la sortie de VEP avec ce VCF
+Générer un fichier d'annotation
+#+begin_src
+bcftools annotate -x INFO/CSQ output-all-gpu.vcf  -o spliceai.vcf.gz
+bcftools index spliceai.vcf.gz
+#+end_src
+
+Annoter avec vep
+#+begin_src sh
+ln -s  /Work/Projects/bisonex/data/fasta/chm13v2.0/chm13v2.0.fa .
+ln -s  /Work/Projects/bisonex/data/fasta/chm13v2.0/chm13v2.0.fa.fai .
+ln -s  /Work/Projects/bisonex/data/vep/chm13v2.0/106 .
+ln -s  /Work/Projects/bisonex/data/clinvar/chm13v2.0/clinvar.vcf.gz .
+ln -s  /Work/Projects/bisonex/data/clinvar/chm13v2.0/clinvar.vcf.gz.tbi .
+#+end_src
+
+#+begin_src sh
+#vep -i  output-all-gpu.vcf -o output-all-gpu-filtered.vcf --appris --biotype --canonical --ccds --compress_output bgzip --domains --exclude_predicted --flag_pick --hgvs --hgvsg --gene_phenotype --numbers --mane --protein --offline --uniprot --symbol --tsl --use_given_ref --variant_class --vcf --plugin NMD --custom clinvar.vcf.gz,ClinVar,vcf,exact,0,CLNSIG,CLNREVSTAT,CLNDN --plugin SpliceAI,snv=spliceai.vcf.gz,indel=spliceai.vcf.gz --fasta chm13v2.0.fa --assembly T2T-CHM13v2.0 --species homo_sapiens_gca009914755v4/ --cache  --cache_version 106 --dir_cache 106
+
+vep -i  lol.vcf --force -o test.vcf.gz --appris --biotype --canonical --ccds --compress_output bgzip --domains --exclude_predicted --flag_pick --hgvs --hgvsg --gene_phenotype --numbers --mane --protein --offline --uniprot --symbol --tsl --use_given_ref --variant_class --vcf --plugin NMD --custom clinvar.vcf.gz,ClinVar,vcf,exact,0,CLNSIG,CLNREVSTAT,CLNDN --custom spliceai.vcf.gz,SpliceAI,vcf,exact,0,DS_AG%DS_AL --fasta chm13v2.0.fa --assembly T2T-CHM13v2.0 --species homo_sapiens_gca009914755v4/ --cache  --cache_version 106 --dir_cache ${PWD}/106
+#+end_src
+
+****** KILL Save
+CLOSED: [2023-09-27 Wed 21:40]
+# ****** DONE Filtre vep avec spliceAI: 37365 -> 6130. SpliceAI n'apporte rien
+# CLOSED: [2023-09-27 Wed 19:37] SCHEDULED: <2023-09-27 Wed>
+# :PROPERTIES:
+# :ID:       c9b2009a-503b-4561-94c6-29ae21a3188d
+# :END:
+# #+begin_src sh
+# filter_vep -i output-all-gpu.vcf --format vcf --filter "        not(Consequence matches non_coding_transcript or Consequence matches stream                 or Consequence matches intergenic_variant                 or Consequence matches UTR                 or Consequence matches intron_variant                 or Consequence matches synonymous                 or BIOTYPE  matches pseudogene                 or BIOTYPE  matches misc_RNA) or (SpliceAI_pred_DS_AG and SpliceAI_pred_DS_AG >= 0.2)             or (SpliceAI_pred_DS_AL and SpliceAI_pred_DS_AL >= 0.2)             or (SpliceAI_pred_DS_DG and SpliceAI_pred_DS_DG >= 0.2)             or (SpliceAI_pred_DS_DL and SpliceAI_pred_DS_DL >= 0.2) "                --only_matched         -o output-all-gpu-filtered.vcf
+# #+end_src
+
+# filter_vep -i output-all-gpu.vcf --format vcf --filter "        not(Consequence matches non_coding_transcript or Consequence matches stream                 or Consequence matches intergenic_variant                 or Consequence matches UTR                 or Consequence matches intron_variant                 or Consequence matches synonymous                 or BIOTYPE  matches pseudogene                 or BIOTYPE  matches misc_RNA)"                --only_matched        | grep -c -v '^#'
+# 6130
+
+# $ grep -c -v '^#' output-all-gpu-filtered.vcf
+# 6130
+# ****** DONE Re-vérifier filtre avec spip: 7730 -> probable problème avec spip
+# CLOSED: [2023-09-27 Wed 20:54] SCHEDULED: <2023-09-27 Wed>
+#  filter_vep -i NA12878-sanger-all-T2T.vep.vcf.gz --format vcf --filter "        not(Consequence matches non_coding_transcript or Consequence matches stream                 or Consequence matches intergenic_variant                 or Consequence matches UTR                 or Consequence matches intron_variant                 or Consequence matches synonymous                 or BIOTYPE  matches pseudogene                 or BIOTYPE  matches misc_RNA) or (SPIP_spipScore and SPIP_spipScore >= 20)"                --only_matched        | grep -c -v '^#'
+# perl: warning: Setting locale failed.
+# perl: warning: Please check that your locale settings:
+#         LANGUAGE = (unset),
+#         LC_ALL = (unset),
+#         LANG = "en_US.utf8"
+#     are supported and installed on your system.
+# perl: warning: Falling back to the standard locale ("C").
+# 7730
+
+****** TODO vérifier si tests sanger passent
+SCHEDULED: <2023-09-27 Wed>
+
 ***** TODO Avec pip: echec
 2023-09-24 08:28:46.361434: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1956] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU.
-***** KILL Tester conda: echec
+***** DONE Tester conda: echec
 CLOSED: [2023-09-23 Sat 21:43] SCHEDULED: <2023-09-23 Sat>
-N'arrive pas à installer
+Ananconda: N'arrive pas à installer
 
 #+begin_quote
 
@@ -2266,7 +2527,7 @@ N'arrive pas à installer
 
 Your installed version is: 2.28
 #+end_quote
-
+Il faut utiliser mamba
 **** TODO Ajout LOEUF et pli
 plugin VEP
 **** TODO NMD
