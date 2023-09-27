@@ -1898,10 +1898,10 @@ CLOSED: [2023-09-17 Sun 09:07] SCHEDULED: <2023-09-16 Sat>
 https://www.postman.com/genoox-ps/workspace/franklin-api-documentation-s-public-workspace/documentation/6621518-4335389d-12e3-445f-8182-339df95b2a09
 *** KILL Regarder si clinique disponible avec vep :annotation:
 CLOSED: [2023-09-10 Sun 16:44]
-*** TODO Tester filtre sans splice
-SCHEDULED: <2023-09-27 Wed>
+*** DONE Tester filtre sans splice: 6130 mais il en manque 4
+CLOSED: [2023-09-28 Thu 01:33] SCHEDULED: <2023-09-27 Wed>
 Mail Paul: Exome donc hors splice, peu intéressant
-**** DONE Enlever complètement condition splice: 6130 variants restants... comme spliceAI
+**** DONE Enlever complètement condition splice: 6130 variants restants...
 CLOSED: [2023-09-27 Wed 19:37] SCHEDULED: <2023-09-26 Tue>
 Cf [[id:c9b2009a-503b-4561-94c6-29ae21a3188d][Filtre vep avec spliceAI: 37365 -> 6130]]
 
@@ -2084,8 +2084,8 @@ $ bcftools +split-vep output-all-gpu-filtered.vcf  -f '%Consequence\n' -s worst 
       6 stop_retained_variant
       2 stop_retained_variant&nmd_transcript_variant
       1 transcript_ablation
-**** TODO Vérifier si tests sanger passent: non
-SCHEDULED: <2023-09-27 Wed>
+**** KILL Vérifier si tests sanger passent: non
+CLOSED: [2023-09-28 Thu 01:33] SCHEDULED: <2023-09-27 Wed>
      │ String                Float64   Int64
 ─────┼───────────────────────────────────────
    1 │ chr10:g.130884530      60.0     67
@@ -2415,7 +2415,8 @@ CLOSED: [2023-09-26 Tue 11:50]
 LD_PRELOAD=/lib64/libcuda.so spliceai -I NA12878-sanger-20-2-T2T.vep.vcf.gz -O output-20-2-gpu.vcf -R /Work/Groups/bisonex/data/fasta/chm13v2.0/chm13v2.0.fa -A ~/t2t.txt
 temps d'exécution : 5min
 
-***** STRT GPU: toutes les données :GPU:spliceai:
+***** DONE GPU: toutes les données :GPU:spliceai:
+CLOSED: [2023-09-28 Thu 01:34]
 ****** DONE Run : 70GB, 3h30
 CLOSED: [2023-09-27 Wed 10:37] SCHEDULED: <2023-09-26 Tue>
 32G insufissant ! Il faut 70GB :
@@ -2459,7 +2460,10 @@ module load nix/2.11.0
 
 LD_PRELOAD=/lib64/libcuda.so spliceai -I NA12878-sanger-all-T2T.vep.vcf.gz -O output-all-gpu.vcf -R /Work/Groups/bisonex/data/fasta/chm13v2.0/chm13v2.0.fa -A ~/t2t.txt
 #+end_src
-****** TODO Annoter la sortie de VEP avec ce VCF
+****** DONE Annoter la sortie de VEP avec ce VCF
+CLOSED: [2023-09-28 Thu 01:32]
+Problème: SpliceAI est dans un INFO différent et donc pas avec les transcrits. filter_vep ne semble pas gérer ce cas.
+On doit donc fusionner : le plus simple est de le convertir en fichier d'annotation et d'utiliser vep (comme pour Spip )
 Générer un fichier d'annotation
 #+begin_src
 bcftools annotate -x INFO/CSQ output-all-gpu.vcf  -o spliceai.vcf.gz
@@ -2475,11 +2479,16 @@ ln -s  /Work/Projects/bisonex/data/clinvar/chm13v2.0/clinvar.vcf.gz .
 ln -s  /Work/Projects/bisonex/data/clinvar/chm13v2.0/clinvar.vcf.gz.tbi .
 #+end_src
 
-#+begin_src sh
-#vep -i  output-all-gpu.vcf -o output-all-gpu-filtered.vcf --appris --biotype --canonical --ccds --compress_output bgzip --domains --exclude_predicted --flag_pick --hgvs --hgvsg --gene_phenotype --numbers --mane --protein --offline --uniprot --symbol --tsl --use_given_ref --variant_class --vcf --plugin NMD --custom clinvar.vcf.gz,ClinVar,vcf,exact,0,CLNSIG,CLNREVSTAT,CLNDN --plugin SpliceAI,snv=spliceai.vcf.gz,indel=spliceai.vcf.gz --fasta chm13v2.0.fa --assembly T2T-CHM13v2.0 --species homo_sapiens_gca009914755v4/ --cache  --cache_version 106 --dir_cache 106
+Essai 1: on coupe le fichier en 2 pour utiliser le plugin spliceai
+filter -i 'POS<15000' spliceai.vcf.gz -o spliceai1.vcf.gz
+bcftools filter -i 'POS>=15000' spliceai.vcf.gz -o spliceai2.vcf.gz
 
-vep -i  lol.vcf --force -o test.vcf.gz --appris --biotype --canonical --ccds --compress_output bgzip --domains --exclude_predicted --flag_pick --hgvs --hgvsg --gene_phenotype --numbers --mane --protein --offline --uniprot --symbol --tsl --use_given_ref --variant_class --vcf --plugin NMD --custom clinvar.vcf.gz,ClinVar,vcf,exact,0,CLNSIG,CLNREVSTAT,CLNDN --custom spliceai.vcf.gz,SpliceAI,vcf,exact,0,DS_AG%DS_AL --fasta chm13v2.0.fa --assembly T2T-CHM13v2.0 --species homo_sapiens_gca009914755v4/ --cache  --cache_version 106 --dir_cache ${PWD}/106
-#+end_src
+vep -i  output-all-gpu.vcf -o output-all-gpu-annotated.vcf.gz --appris --biotype --canonical --ccds --compress_output bgzip --domains --exclude_predicted --flag_pick --hgvs --hgvsg --gene_phenotype --numbers --mane --protein --offline --uniprot --symbol --tsl --use_given_ref --variant_class --vcf --plugin NMD --custom clinvar.vcf.gz,ClinVar,vcf,exact,0,CLNSIG,CLNREVSTAT,CLNDN --plugin SpliceAI,snv=spliceai1.vcf.gz,indel=spliceai2.vcf.gz --fasta chm13v2.0.fa --assembly T2T-CHM13v2.0 --species homo_sapiens_gca009914755v4/ --cache  --cache_version 106 --dir_cache 106
+
+test
+ filter_vep -i output-all-gpu-annotated.vcf.gz --format vcf --filter "        not(Consequence matches non_coding_transcript or Consequence matches stream                 or Consequence matches intergenic_variant                 or Consequence matches UTR                 or Consequence matches intron_variant                 or Consequence matches synonymous                 or BIOTYPE  matches pseudogene                 or BIOTYPE  matches misc_RNA) or (SpliceAI_pred_DS_AG and SpliceAI_pred_DS_AG >= 0.2)             or (SpliceAI_pred_DS_AL and SpliceAI_pred_DS_AL >= 0.2)             or (SpliceAI_pred_DS_DG and SpliceAI_pred_DS_DG >= 0.2)             or (SpliceAI_pred_DS_DL and SpliceAI_pred_DS_DL >= 0.2) "                --only_matched        -o output-all-gpu-filtered.vcf.gz
+
+ Méthode un peu sale car on a des "." dans l'annotation spliceai
 
 ****** KILL Save
 CLOSED: [2023-09-27 Wed 21:40]
@@ -2509,10 +2518,27 @@ CLOSED: [2023-09-27 Wed 21:40]
 # perl: warning: Falling back to the standard locale ("C").
 # 7730
 
-****** TODO vérifier si tests sanger passent
-SCHEDULED: <2023-09-27 Wed>
+****** DONE vérifier si tests sanger passent: ok
+CLOSED: [2023-09-28 Thu 01:32] SCHEDULED: <2023-09-27 Wed>
 
-***** TODO Avec pip: echec
+ ok !
+ Haplotypecaller : /Work/Users/apraga/bisonex/out//call_variant/haplotypecaller/NA12878-sanger-all-T2T/NA12878-sanger-all-T2T.haplotypecaller.vcf.gz/Work/Users/apraga/bisonex/out//call_variant/haplotypecaller/NA12878-sanger-all-T2T/NA12878-sanger-all-T2T.haplotypecaller.vcf.gz
+144 found over 146
+2×3 DataFrame
+ Row │ variant              meanQual  depth
+     │ String               Float64   Int64
+─────┼──────────────────────────────────────
+   1 │ chr12:g.13594572C>T      60.0      1
+   2 │ chr17:g.10204026T>A      60.0      1
+/Work/Users/apraga/bisonex/tests/spliceai/output-all-gpu-filtered.vcf.gz
+144 found over 146
+spliceai : another 0 missed variants
+0×3 DataFrame
+ Row │ variant  meanQual  depth
+     │ String   Float64   Int64
+─────┴──────────────────────────
+***** KILL Avec pip: echec
+CLOSED: [2023-09-28 Thu 01:34]
 2023-09-24 08:28:46.361434: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1956] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU.
 ***** DONE Tester conda: echec
 CLOSED: [2023-09-23 Sat 21:43] SCHEDULED: <2023-09-23 Sat>
@@ -2528,6 +2554,165 @@ Ananconda: N'arrive pas à installer
 Your installed version is: 2.28
 #+end_quote
 Il faut utiliser mamba
+***** TODO Mail Paul
+SCHEDULED: <2023-09-28 Thu>
+Au total:
+- pas de filtre sur l'épissage pour "rattraper" variants intronique : 6130 variants mais on en perd 4 (donner un exemple)
+- avec spip: pas de variant perdu (hormis les 2 lié au bam) mais 7 332 variants au total et exécution lente (1H) mais possible sur serveur
+- avec spliceai sur GPU (annotation "à la volée"): pas de variant perdu mais 6609 variants au total. 3h30 de calcul sur le mésocentre, impossible à faire chez nous car GPU
+
+Rejoint ce que disait Yannis....
+J'ai l'impression que c'est lié à un grand nombre de missense [1]
+Note: j'ai plus confiance dans l'annottaion spliceAI pour T2T car moins compliqué à porter
+
+[1] en prenant le transcrit avec la "pire" conséquences, on a 80% de missense (total = 6609)
+
+     11 3_prime_utr_variant
+      9 3_prime_utr_variant&nmd_transcript_variant
+      6 5_prime_utr_variant
+     48 coding_sequence_variant
+      5 coding_sequence_variant&nmd_transcript_variant
+    121 frameshift_variant
+      9 frameshift_variant&nmd_transcript_variant
+      1 frameshift_variant&splice_donor_region_variant
+      9 frameshift_variant&splice_region_variant
+     78 inframe_deletion
+      3 inframe_deletion&nmd_transcript_variant
+      2 inframe_deletion&splice_region_variant
+     84 inframe_insertion
+      2 inframe_insertion&nmd_transcript_variant
+      1 inframe_insertion&splice_region_variant
+    156 intron_variant
+      8 intron_variant&nmd_transcript_variant
+     24 intron_variant&non_coding_transcript_variant
+   5305 missense_variant
+    205 missense_variant&nmd_transcript_variant
+      3 missense_variant&splice_donor_5th_base_variant
+    110 missense_variant&splice_region_variant
+      9 missense_variant&splice_region_variant&nmd_transcript_variant
+     11 non_coding_transcript_exon_variant
+     12 splice_acceptor_variant
+      1 splice_acceptor_variant&nmd_transcript_variant
+      2 splice_acceptor_variant&non_coding_transcript_variant
+      9 splice_donor_5th_base_variant&intron_variant
+      1 splice_donor_5th_base_variant&intron_variant&nmd_transcript_variant
+     16 splice_donor_region_variant&intron_variant
+      4 splice_donor_region_variant&intron_variant&non_coding_transcript_variant
+     19 splice_donor_variant
+      1 splice_donor_variant&nmd_transcript_variant
+      3 splice_donor_variant&non_coding_transcript_variant
+      1 splice_donor_variant&splice_donor_5th_base_variant&3_prime_utr_variant&intron_variant&nmd_transcript_variant
+      3 splice_donor_variant&splice_donor_5th_base_variant&coding_sequence_variant&intron_variant
+      1 splice_donor_variant&splice_donor_5th_base_variant&intron_variant
+     39 splice_polypyrimidine_tract_variant&intron_variant
+      5 splice_polypyrimidine_tract_variant&intron_variant&nmd_transcript_variant
+     10 splice_polypyrimidine_tract_variant&intron_variant&non_coding_transcript_variant
+      1 splice_region_variant&3_prime_utr_variant
+      1 splice_region_variant&5_prime_utr_variant
+      9 splice_region_variant&intron_variant
+      1 splice_region_variant&intron_variant&nmd_transcript_variant
+      2 splice_region_variant&intron_variant&non_coding_transcript_variant
+      5 splice_region_variant&non_coding_transcript_exon_variant
+      1 splice_region_variant&non_coding_transcript_variant
+     43 splice_region_variant&splice_polypyrimidine_tract_variant&intron_variant
+      2 splice_region_variant&splice_polypyrimidine_tract_variant&intron_variant&nmd_transcript_variant
+      6 splice_region_variant&splice_polypyrimidine_tract_variant&intron_variant&non_coding_transcript_variant
+     15 splice_region_variant&synonymous_variant
+     14 start_lost
+     44 stop_gained
+      4 stop_gained&frameshift_variant
+      2 stop_gained&frameshift_variant&splice_region_variant
+      3 stop_gained&nmd_transcript_variant
+      3 stop_gained&splice_region_variant
+      2 stop_gained&splice_region_variant&nmd_transcript_variant
+      2 stop_lost
+      1 stop_lost&nmd_transcript_variant
+      6 stop_retained_variant
+      2 stop_retained_variant&nmd_transcript_variant
+     89 synonymous_variant
+      2 synonymous_variant&nmd_transcript_variant
+      1 transcript_ablation
+      1 upstream_gene_variant
+
+En prenant tous les transcrits, 66% missense (total = 22085)
+           39 3_prime_UTR_variant
+    120 3_prime_UTR_variant&NMD_transcript_variant
+     22 5_prime_UTR_variant
+      2 5_prime_UTR_variant&NMD_transcript_variant
+     94 coding_sequence_variant
+     13 coding_sequence_variant&NMD_transcript_variant
+    527 downstream_gene_variant
+    257 frameshift_variant
+     21 frameshift_variant&NMD_transcript_variant
+      2 frameshift_variant&splice_donor_region_variant
+     20 frameshift_variant&splice_region_variant
+      1 frameshift_variant&splice_region_variant&NMD_transcript_variant
+      1 incomplete_terminal_codon_variant&coding_sequence_variant
+    211 inframe_deletion
+     18 inframe_deletion&NMD_transcript_variant
+      6 inframe_deletion&splice_region_variant
+    242 inframe_insertion
+     22 inframe_insertion&NMD_transcript_variant
+      4 inframe_insertion&splice_region_variant
+    983 intron_variant
+    244 intron_variant&NMD_transcript_variant
+    358 intron_variant&non_coding_transcript_variant
+  14690 missense_variant
+   1416 missense_variant&NMD_transcript_variant
+      6 missense_variant&splice_donor_5th_base_variant
+    374 missense_variant&splice_region_variant
+     34 missense_variant&splice_region_variant&NMD_transcript_variant
+    383 non_coding_transcript_exon_variant
+     53 splice_acceptor_variant
+     11 splice_acceptor_variant&NMD_transcript_variant
+     11 splice_acceptor_variant&non_coding_transcript_variant
+     20 splice_donor_5th_base_variant&intron_variant
+      4 splice_donor_5th_base_variant&intron_variant&NMD_transcript_variant
+      9 splice_donor_5th_base_variant&intron_variant&non_coding_transcript_variant
+     59 splice_donor_region_variant&intron_variant
+     11 splice_donor_region_variant&intron_variant&NMD_transcript_variant
+     24 splice_donor_region_variant&intron_variant&non_coding_transcript_variant
+     79 splice_donor_variant
+      6 splice_donor_variant&NMD_transcript_variant
+     17 splice_donor_variant&non_coding_transcript_variant
+      1 splice_donor_variant&splice_donor_5th_base_variant&3_prime_UTR_variant&intron_variant&NMD_transcript_variant
+     21 splice_donor_variant&splice_donor_5th_base_variant&coding_sequence_variant&intron_variant
+      3 splice_donor_variant&splice_donor_5th_base_variant&intron_variant
+      1 splice_donor_variant&splice_donor_5th_base_variant&non_coding_transcript_exon_variant&intron_variant
+    176 splice_polypyrimidine_tract_variant&intron_variant
+     27 splice_polypyrimidine_tract_variant&intron_variant&NMD_transcript_variant
+     48 splice_polypyrimidine_tract_variant&intron_variant&non_coding_transcript_variant
+      1 splice_region_variant&3_prime_UTR_variant
+     24 splice_region_variant&3_prime_UTR_variant&NMD_transcript_variant
+      9 splice_region_variant&5_prime_UTR_variant
+     61 splice_region_variant&intron_variant
+     23 splice_region_variant&intron_variant&NMD_transcript_variant
+     37 splice_region_variant&intron_variant&non_coding_transcript_variant
+     26 splice_region_variant&non_coding_transcript_exon_variant
+      5 splice_region_variant&non_coding_transcript_variant
+    145 splice_region_variant&splice_polypyrimidine_tract_variant&intron_variant
+     27 splice_region_variant&splice_polypyrimidine_tract_variant&intron_variant&NMD_transcript_variant
+     41 splice_region_variant&splice_polypyrimidine_tract_variant&intron_variant&non_coding_transcript_variant
+     37 splice_region_variant&synonymous_variant
+      3 splice_region_variant&synonymous_variant&NMD_transcript_variant
+     30 start_lost
+      5 start_lost&NMD_transcript_variant
+    135 stop_gained
+     13 stop_gained&frameshift_variant
+      3 stop_gained&frameshift_variant&NMD_transcript_variant
+      2 stop_gained&frameshift_variant&splice_region_variant
+     14 stop_gained&NMD_transcript_variant
+      5 stop_gained&splice_region_variant
+      2 stop_gained&splice_region_variant&NMD_transcript_variant
+      4 stop_lost
+      1 stop_lost&NMD_transcript_variant
+      9 stop_retained_variant
+      6 stop_retained_variant&NMD_transcript_variant
+    311 synonymous_variant
+     24 synonymous_variant&NMD_transcript_variant
+      1 transcript_ablation
+    390 upstream_gene_variant
+
 **** TODO Ajout LOEUF et pli
 plugin VEP
 **** TODO NMD
