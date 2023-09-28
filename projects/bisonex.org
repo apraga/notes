@@ -2554,8 +2554,8 @@ Ananconda: N'arrive pas à installer
 Your installed version is: 2.28
 #+end_quote
 Il faut utiliser mamba
-***** TODO Mail Paul
-SCHEDULED: <2023-09-28 Thu>
+***** DONE Mail Paul
+CLOSED: [2023-09-28 Thu 09:30] SCHEDULED: <2023-09-28 Thu>
 Au total:
 - pas de filtre sur l'épissage pour "rattraper" variants intronique : 6130 variants mais on en perd 4 (donner un exemple)
 - avec spip: pas de variant perdu (hormis les 2 lié au bam) mais 7 332 variants au total et exécution lente (1H) mais possible sur serveur
