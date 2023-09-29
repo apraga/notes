@@ -31,7 +31,7 @@ CLOSED: [2023-07-21 Fri 17:54] SCHEDULED: <2023-07-21 Fri>
 CLOSED: [2023-09-10 Sun 22:38]
 **** TODO Lettre de motivation
 SCHEDULED: <2023-09-24 Sun>
-**** TODO Projet
+**** TODO Projet "~/documents/interchu-grenoble-projet.tex"
 SCHEDULED: <2023-09-24 Sun>
 **** DONE Faire signer la feuille par Quentin
 CLOSED: [2023-09-11 Mon 19:14] SCHEDULED: <2023-09-10 Sun>
