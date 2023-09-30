@@ -709,8 +709,8 @@ CLOSED: [2023-02-12 Sun 23:17]
 *** Notes
 - Plaquettes : arrière gauche ok (50%) le <2022-09-03 Sat>
 - besoin d'une clé 14 pour changer les plaquettes
-*** TODO Changer courroie distribution :courroie:
-SCHEDULED: <2023-09-29 Fri>
+*** DONE Changer courroie distribution :courroie:
+CLOSED: [2023-09-30 Sat 18:53] SCHEDULED: <2023-09-29 Fri>
 À faire au bout de 10ans, on attend l’an prochain
 **** DONE [#B] Commander pièce
 CLOSED: [2023-09-11 Mon 19:18] SCHEDULED: <2023-09-11 Mon>
@@ -822,22 +822,32 @@ Notamment Ollie Charles's 24 days of GHC Extensions,
 3. [[https://dl.acm.org/doi/pdf/10.1145/158511.158524][Imperative functional programming]]
    Application des monads poru résoudre le problème IO
 
-* Backups :backup:
-** TODO Nettoyer public
-SCHEDULED: <2023-09-30 Sat>
+* Backups
+:PROPERTIES:
+:CATEGORY: backup
+:END:
+** DONE Nettoyer public
+CLOSED: [2023-09-30 Sat 17:36] SCHEDULED: <2023-09-30 Sat>
 /Entered on/ [2023-09-30 Sat 16:21]
+** DONE Nettoyer private
+CLOSED: [2023-09-30 Sat 17:57] SCHEDULED: <2023-09-30 Sat>
 ** TODO Configure sauvegarde avec git-annex
 SCHEDULED: <2023-09-30 Sat>
-*** TODO public: mega (non encrypté)
+*** Public :public:
+*** STRT mega
 SCHEDULED: <2023-09-30 Sat>
-*** TODO public: git lfs (non encrypté)
+*** TODO proton drive
+SCHEDULED: <2023-10-01 Sun>
+*** TODO google drive
 SCHEDULED: <2023-09-30 Sat>
-*** TODO public: proton drive  (non encrypté)
+*** TODO /annex :public:
 SCHEDULED: <2023-09-30 Sat>
-
-*** TODO private : mega (encrypté)
+** DONE papers : git lfs (non encrypté)
+CLOSED: [2023-09-30 Sat 19:19] SCHEDULED: <2023-09-30 Sat>
+** Private :private:
+*** TODO mega
 SCHEDULED: <2023-09-30 Sat>
-*** TODO private : git lfs (encrypté)
+*** TODO proton drive
 SCHEDULED: <2023-09-30 Sat>
-*** TODO private : proton drive  (encrypté)
-SCHEDULED: <2023-09-30 Sat>
+*** STRT google drive
+SCHEDULED: <2023-10-01 Sun>

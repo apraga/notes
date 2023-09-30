@@ -3001,11 +3001,11 @@ CLOSED: [2023-09-19 Tue 16:54] SCHEDULED: <2023-09-19 Tue>
 /Entered on/ [2023-09-19 Tue 08:43]
 
 ** TODO Figure: nombre de publication par appel de variant
-SCHEDULED: <2023-09-19 Tue>
+SCHEDULED: <2023-10-01 Sun>
 /Entered on/ [2023-09-19 Tue 08:43]
 
 ** TODO Figure: nombre d'exomes par années
-SCHEDULED: <2023-09-30 Sat>
+SCHEDULED: <2023-10-01 Sun>
 /Entered on/ [2023-09-19 Tue 08:43]
 * Tests :tests:
 ** KILL Non régression : version prod
@@ -8535,7 +8535,7 @@ Et on a trop de variants en sortie (7330 !)
 **** DONE Mail Paul avec résultats filtre en T2T + nouveau schéma
 CLOSED: [2023-09-17 Sun 23:15] SCHEDULED: <2023-09-17 Sun>
 * Ré-interprétation
-** PROJ Lancer tests sur données brutes [107/250]
+** PROJ Lancer tests sur données brutes [108/250]
 - [X] 100222_63015289
 - [X] 1600304839_63051311
 - [X] 1900007827_62913191
@@ -8643,8 +8643,7 @@ CLOSED: [2023-09-17 Sun 23:15] SCHEDULED: <2023-09-17 Sun>
 - [X] 2200456165_63051294
 - [X] 2200459865_63004933
 - [X] 2200459968_63004937
-
-- [ ] 2200460073_63004943
+- [X] 2200460073_63004943
 - [ ] 2200460121_63004684
 - [ ] 2200467051_63003856
 - [ ] 2200467225_63004940
@@ -8790,7 +8789,7 @@ CLOSED: [2023-09-17 Sun 23:15] SCHEDULED: <2023-09-17 Sun>
 
 * Résultats
 ** TODO Speed-up BWA-mem
-SCHEDULED: <2023-09-30 Sat>
+SCHEDULED: <2023-10-01 Sun>
 
 ** TODO Speed-up Hapotypecaller
-SCHEDULED: <2023-09-30 Sat>
+SCHEDULED: <2023-10-01 Sun>

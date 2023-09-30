@@ -8,16 +8,60 @@
 On ne fait plus de sauvegarde mais des archives.
 hubic n'existe plus.
 
-- public (13Go) = On utilise git-annex non encrypter pour archiver sur:
-  - github (LFS, accès direct)
-  - mega
-  - disque dur
-- private (5.6Gb) = git-annex avec encryption
-  - mega
-  - disque dur
+Structure: plusieurs dépôts dans annex
 
-Contenu
-- public
+| Repo    | Taille | Crypté | Mega | Google Drive | /annex | ~/annex    | Raspberry |
+|         | (Gb)   |        |      |              | (tour) | (portable) |           |
+|---------+--------+--------+------+--------------+--------+------------+-----------|
+| papers  |        | non    |      |              |        |            |           |
+| public  |        | non    | oui  | oui          | oui    |            | oui       |
+| private | 0.8    | non    | oui  | oui          | oui    |            | oui       |
+| data    |        |        |      |              | oui    |            | oui       |
+
+** Configuration
+*** Papers
+#+begin_src sh
+cd papers
+git init
+git annex init
+git annex add
+git annex initremote github-lfs type=git-lfs url=git@github.com:apraga/papers.git encryption=none
+git lfs track "*.pdf"
+git annex sync --content
+#+end_src
+*** Configuration des remote avec rclone (public + private)
+Installer https://github.com/git-annex-remote-rclone/git-annex-remote-rclone
+(copier exécutable dans $PATH)
+
+#+begin_src sh
+cd public
+git init
+git annex init
+git annex add
+#+end_src
+
+Suivre les indications pour ajouter un remote nommé mega de type Mega (29)
+#+begin_src sh
+rclone config
+rclone lsd mega:
+#+end_src
+
+Créer un remote megaremote qui pointe vers le remote mega dans rclone. Pas d'encryption:
+#+begin_src sh
+git annex initremote megaremote type=external externaltype=rclone target=mega prefix=annex-public chunk=50MiB encryption=none rclone_layout=lower
+#+end_src
+
+Pour googledrive, il faut un client id et un client secret selon les consignes ici : <https://rclone.org/drive/#making-your-own-client-id>. On encrypte mais avec la clé dans le dépôt git donc ne pas mettre les dépôts n'importe où !
+#+begin_src  sh
+git annex initremote gdriveremote type=external externaltype=rclone target=gdrive prefix=annex-private chunk=50MiB encryption=shared rclone_layout=lower
+#+end_src
+
+** Archivage
+Dans chaque dossier
+
+#+begin_src sh
+git annex sync --content
+#+end_src
 
 * Ancienne version
 - google -> to google drive (clear)
