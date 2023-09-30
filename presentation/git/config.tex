@@ -1,0 +1,87 @@
+\usetheme{Boadilla}
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\insertshortauthor
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\insertshorttitle
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+    \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+    \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,%
+    linkcolor=black,%
+    urlcolor=red
+}
+
+\usepackage{tikz}
+\usetikzlibrary{positioning,shapes,shadows,arrows}
+\usepackage{environ}
+
+% For diagram
+\tikzstyle{commit}=[rectangle, draw=black, rounded corners, fill=green!40, drop
+shadow, text centered, anchor=north]
+\tikzstyle{branch}=[rectangle, draw=black, fill=red!30, drop
+shadow, text centered, anchor=north, node distance = 7mm]
+\tikzstyle{arrow}=[->, thick]
+\tikzstyle{ltext}=[xshift=-0.9cm]
+\tikzstyle{rtext}=[xshift=0.6cm]
+
+
+% New itemize 
+\newenvironment{myitemize}{
+\begin{itemize}
+\setlength{\itemsep}{1pt}
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+}{\end{itemize}}
+
+
+% For terminal commands
+\definecolor{blueviolet}{RGB}{138, 43, 226}
+\lstnewenvironment{terminal} {
+  \lstset{
+%  language=bash,
+  breaklines=true, 
+  breakindent=0pt,
+  frameround=tttt,
+  basicstyle=\ttfamily\scriptsize,
+  frame=single,
+  morecomment=[l][\color{blueviolet}]{$}
+}}{}
+
+% Inline commands
+\def\cmd#1{\texttt{\textcolor{blueviolet}{#1}}}
+\def\smallcmd#1{{\footnotesize \cmd{#1}}}
+
+% Environment for tips
+% We must use the environ package for include tikz in our environment
+\tikzstyle{tipsbox} = [draw=blue, very thick,
+rectangle, rounded corners, inner sep=10pt, inner ysep=10pt]
+\tikzstyle{tipstitle} =[fill=white]
+%\tikzstyle{tipstitle} =[fill=blue, text=white, ellipse]
+\NewEnviron{tips}{%
+\begin{figure}[h]
+  \begin{tikzpicture}[transform shape, baseline=-3.5cm]
+    \node[tipsbox] (box){%
+      \begin{minipage}{0.95\textwidth}
+      {\footnotesize 
+      \BODY}
+        \end{minipage}};
+  \node[tipstitle] at (box.north) {\textbf{\footnotesize Tips}};
+  \end{tikzpicture}
+\end{figure}
+}
+
+\def\tilde{\raise.17ex\hbox{$\scriptstyle\sim$}}

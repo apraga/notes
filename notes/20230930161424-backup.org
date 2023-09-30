@@ -1,0 +1,95 @@
+:PROPERTIES:
+:ID:       32598fde-e934-43dc-bb69-21c9b8013948
+:END:
+#+title: Backup
+#+filetags: personal
+
+* Nouvelle version
+On ne fait plus de sauvegarde mais des archives.
+hubic n'existe plus.
+
+- public (13Go) = On utilise git-annex non encrypter pour archiver sur:
+  - github (LFS, accès direct)
+  - mega
+  - disque dur
+- private (5.6Gb) = git-annex avec encryption
+  - mega
+  - disque dur
+
+Contenu
+- public
+
+* Ancienne version
+- google -> to google drive (clear)
+- hubic -> to Hubic and Mega(clear)
+- local config files -> google and hubic (encrypted)
+- raspberry config files -> google and hubic (encrypted)
+- local rtorrent -> google and hubic (encrypted)
+- raspberry rtorrent -> google and hubic (encrypted)
+
+#+begin_src fish
+#!/usr/local/bin/fish
+# 3 steps procedure :
+#   1. Backup from the pi using rsync
+#   2. Encrypt cofig files (rasperry + local) using duplicity
+#   2. Backup to the cloud using rsync
+#
+# Backup data either in clear or encrypted
+# - google -> to google drive (clear)
+# - hubic -> to Hubic and Mega(clear)
+# - local config files -> google and hubic (encrypted)
+# - raspberry config files -> google and hubic (encrypted)
+# - local rtorrent -> google and hubic (encrypted)
+# - raspberry rtorrent -> google and hubic (encrypted)
+set root "/home/alex/backups"
+
+# Duplicity needs a passphrase. Use pass "backup/duplicity"
+set -x PASSPHRASE (cat /home/alex/.pass.txt)
+
+# #------- Raspberry: backup -----
+# Save books
+# rclone sync pi:/media/books/ /media/books/
+cd /home/alex/annex ; git annex sync
+
+# Save torrents and config files(encrypted)
+# Warning : --include implyies everything is excluded so we need /** at the end
+# Don't forget the / in the folder too..
+set tmp ~/backups/raspberry-tmp/
+rclone sync --include "/home/alex/Downloads/torrents/**" \
+    --include "/home/alex/Downloads/session/**" \
+    --include "/usr/local/etc/**"  \
+    --include "/etc/**"  \
+    --include "/boot/loader.conf"  pi:/ $tmp
+# Encrypt it
+duplicity --allow-source-mismatch $tmp file:///home/alex/backups/raspberry
+
+#------- Local backup (encrypted) ----------------
+# 1. Create encrypted local version
+#
+# This requires setenv PASSPHRASE in doas.conf !!
+# Due to permission, we need separate folder for doas command
+doas duplicity --allow-source-mismatch --include /usr/local/etc/ --include /etc/ \
+    --include /boot/loader.conf --exclude '**' \
+    / file:///home/alex/backups/desktop/root
+
+duplicity --allow-source-mismatch --include /home/alex/Downloads/torrents \
+    --include /home/alex/Downloads/session \
+    --exclude '**'  \
+    /home/alex/Downloads file:///home/alex/backups/desktop/rtorrent
+
+#------------ Backup all encnrypted and non encrypted
+
+# Backup is then made with rsync because there is a symlink
+# desktop -> google/desktop
+# desktop -> hubic /desktop
+#--- All
+# Google drive and mega can be managed with rclone
+rclone -L sync --exclude 'Coopétition/' --drive-import-formats .xlsx $root/google/  google:
+rclone -L sync $root/google backblaze:unixStorage
+rclone -L sync $root/hubic hubic:
+rclone -L sync $root/hubic mega:
+
+#--- Passphrase
+/usr/local/bin/pass git push
+
+#+end_src
