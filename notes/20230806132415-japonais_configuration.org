@@ -14,4 +14,4 @@ démarrer ibus-daemon (TODO: démarrer automatiquement avec sway ?)
 
 Choisir hiragana
 
-Emacs: ne fonctionne pas en démon ??
+Emacs: ne fonctionne pas ?? On peut changer set-input-method et mettre en japonais

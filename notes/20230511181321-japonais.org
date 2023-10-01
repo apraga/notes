@@ -764,3 +764,30 @@ décrire un état: verbes + te, emotion
   - ex: 一緒に仕事しづらいです
 - ~ぶりに : depuis ~ (idée que beaucoup de temps s'est écoulé)
 四年ぶりにパラグライダーをまた始めました。
+* <2023-10-01 Sun>
+** Vocabulaire
+- 空（から）: vide
+- ほとんど : la plupart
+- 蒸します（むします） : cuire à la vapeur
+- 蒸し器（むしき）: un cuit-vapeur
+- ボツリヌス中毒（ちゅうどく）: empoisoinnement par botulisme
+- 何日後（なにちこ）: il y a combien de jours ?
+- 少々　お待ちください（しょうしょう おまち）: attendez un peu
+- 用意します （ようい）:
+- 連絡（れんらく） : contact
+- 連絡先（れんらくさき）: contactio informatdion
+- ガスボンベ
+- 一日（いちにち）
+- 目玉焼き（めだまやき）
+- ミディアムレア : saignant (cuisson)
+- レア : bleu (cuisson)
+- 焼く（やく） : griller
+- 目玉焼き(めだまや ): oeufs au plat
+- 18 000 = まん はち せん
+  ４月  一日と２日、3名 なんんですが。。。（しがつ ついたち ふつか）: une réservation du 1er au 2 avril (2 nuit). Attention à la lecture
+** Grammaire
+- ~かもしれません: peut-être
+- ーたら vs ーとき：
+  - ーたら ： si ~, alors ...
+  - ーとき： quand ~, alors..
+ La différence vient du faire que tara est une période de temps assez flou (i.e pas tout de suite)

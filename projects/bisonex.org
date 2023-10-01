@@ -2933,8 +2933,8 @@ VEP utilise la v2 pour les exomes et v3 pour génomes
 Il manquera pour les patients 1-107
 
 On ne l'a pas dans la sortie de VEP jusque là
-**** TODO Test sur 1 patient
-SCHEDULED: <2023-09-29 Fri>
+**** DONE Test sur 1 patient
+CLOSED: [2023-09-30 Sat 23:54] SCHEDULED: <2023-09-29 Fri>
 **** TODO Reprendre run batc
 ** DONE Porter exactement la version d'Alexis sur Helios
 CLOSED: [2023-01-14 Sat 17:56]
