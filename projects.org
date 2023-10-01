@@ -80,18 +80,18 @@ CLOSED: [2023-09-17 Sun 22:31] SCHEDULED: <2023-09-17 Sun>
 :PROPERTIES:
 :CATEGORY: bacterio
 :END:
-*** TODO Lire cours [19/36]
+*** TODO Lire cours [23/36]
 SCHEDULED: <2023-10-01 Sun>
 - [ ] ?
 - [ ] A. agalactiae
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Antibiogramme - Staphylocoques.pdf"
-- [ ] "~/annex/public/lessons/microbiologie/bacterio/Antibiogramme - Streptococoque, enterocoque, Listeria.pdf"
+- [X] "~/annex/public/lessons/microbiologie/bacterio/Antibiogramme - Streptococoque, enterocoque, Listeria.pdf"
 - [ ] "~/annex/public/lessons/microbiologie/bacterio/Chlamydia - mycoplasmes.pdf"
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Diagnostic moleculaire - Bacteriologie.pdf"
 - [ ] "~/annex/public/lessons/microbiologie/bacterio/EBCU etiologies.pdf"
 - [ ] "~/annex/public/lessons/microbiologie/bacterio/ECBU interpretation.pdf"
 - [ ] "~/annex/public/lessons/microbiologie/bacterio/ECBU pre-analytique.pdf"
-- [ ] "~/annex/public/lessons/microbiologie/bacterio/EEQ, CIQ.pdf"
+- [X] "~/annex/public/lessons/microbiologie/bacterio/EEQ, CIQ.pdf"
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Examen microscopique.pdf"
 - [ ] "~/annex/public/lessons/microbiologie/bacterio/Gonocoque.pdf"
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Hygiène.pdf"
@@ -103,8 +103,8 @@ SCHEDULED: <2023-10-01 Sun>
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Serologie bacterienne.pdf"
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Tests rapides antigeniques et moleculaires.pdf"
 - [ ] "~/annex/public/lessons/microbiologie/bacterio/Tuberculose.pdf"
-- [ ] "~/annex/public/lessons/microbiologie/bacterio/Typage moleculaire bacterien.pdf"
-- [ ] "~/annex/public/lessons/microbiologie/bacterio/Vaccination personnel.pdf"
+- [X] "~/annex/public/lessons/microbiologie/bacterio/Typage moleculaire bacterien.pdf"
+- [X] "~/annex/public/lessons/microbiologie/bacterio/Vaccination personnel.pdf"
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Angines bacteriennes.pdf"
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Antibiogramme - Enterobacteries.pdf"
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Antibiogramme.pdf"
@@ -832,11 +832,6 @@ Notamment Ollie Charles's 24 days of GHC Extensions,
 :PROPERTIES:
 :CATEGORY: backup
 :END:
-** DONE Nettoyer public
-CLOSED: [2023-09-30 Sat 17:36] SCHEDULED: <2023-09-30 Sat>
-/Entered on/ [2023-09-30 Sat 16:21]
-** DONE Nettoyer private
-CLOSED: [2023-09-30 Sat 17:57] SCHEDULED: <2023-09-30 Sat>
 ** TODO Git-annex en local
 *** DONE vers /annex
 CLOSED: [2023-10-01 Sun 15:34] SCHEDULED: <2023-09-30 Sat>
@@ -850,7 +845,7 @@ CLOSED: [2023-10-01 Sun 15:34] SCHEDULED: <2023-10-01 Sun>
 - [X] data
 *** TODO vers laptop:~/annex
 - [ ] public
-- [ ] private
+- [X] private
 - [ ] data
 
 *** DONE depuis /annex
