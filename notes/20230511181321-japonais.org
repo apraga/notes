@@ -776,7 +776,7 @@ décrire un état: verbes + te, emotion
 - 用意します （ようい）:
 - 連絡（れんらく） : contact
 - 連絡先（れんらくさき）: contactio informatdion
-- ガスボンベ
+- ガスボンベ: bouteille de gaz
 - 一日（いちにち）
 - 目玉焼き（めだまやき）
 - ミディアムレア : saignant (cuisson)

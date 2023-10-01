@@ -43,8 +43,8 @@ CLOSED: [2023-09-20 Wed 22:15] SCHEDULED: <2023-09-18 Mon>
 *** TODO Envoyer dossier déjà signé
 SCHEDULED: <2023-09-21 Thu>
 /Entered on/ [2023-09-20 Wed 22:15]
-**** TODO Informations complémentaires Julien Thevenon
-SCHEDULED: <2023-09-26 Tue>
+**** DONE Informations complémentaires Julien Thevenon
+CLOSED: [2023-10-01 Sun 14:49] SCHEDULED: <2023-09-26 Tue>
 ** Logement trevenans :trevenans:cs:
 *** DONE Compléter dossier
 CLOSED: [2023-08-30 Wed 16:38]
@@ -409,9 +409,9 @@ SCHEDULED: <2023-10-01 Sun>
 **** TODO Phénotype "mild" chez le père + détailler moléculaire
 SCHEDULED: <2023-10-01 Sun>
 **** TODO Traitement FBXW7 ?
-SCHEDULED: <2023-10-01 Sun>
+SCHEDULED: <2023-10-08 Sun>
 *** TODO Réponse reviewe
-SCHEDULED: <2023-10-01 Sun>
+SCHEDULED: <2023-10-08 Sun>
 *** TODO Resoumettre
 SCHEDULED: <2023-10-03 Tue>
 ** Apprendre le machine learning
@@ -831,35 +831,50 @@ CLOSED: [2023-09-30 Sat 17:36] SCHEDULED: <2023-09-30 Sat>
 /Entered on/ [2023-09-30 Sat 16:21]
 ** DONE Nettoyer private
 CLOSED: [2023-09-30 Sat 17:57] SCHEDULED: <2023-09-30 Sat>
-** TODO Tout avec git-annex
-SCHEDULED: <2023-09-30 Sat>
-*** TODO /annex
-SCHEDULED: <2023-09-30 Sat>
+** TODO Git-annex en local
+*** DONE vers /annex
+CLOSED: [2023-10-01 Sun 15:34] SCHEDULED: <2023-09-30 Sat>
+- [X] public
+- [X] private
+- [X] data
+*** DONE vers raspberry:/media/annex
+CLOSED: [2023-10-01 Sun 15:34] SCHEDULED: <2023-10-01 Sun>
+- [X] public
+- [X] private
+- [X] data
+*** TODO vers laptop:~/annex
 - [ ] public
+- [ ] private
+- [ ] data
+
+*** DONE depuis /annex
+CLOSED: [2023-10-01 Sun 16:15] SCHEDULED: <2023-09-30 Sat>
+- [X] public
 - [X] private
 - [ ] data
-*** TODO raspberry:/media/annex
-SCHEDULED: <2023-10-01 Sun>
-- [ ] public
+*** TODO depuis raspberry:/media/annex
+SCHEDULED: <2023-10-08 Sun>
+À vérifier
+- [X] public
 - [X] private
 - [ ] data
-*** TODO laptop:~/annex
-SCHEDULED: <2023-09-30 Sat>
+*** TODO depuis laptop:~/annex
+SCHEDULED: <2023-10-08 Sun>
 - [ ] public
 - [ ] private
 - [ ] data
 
-*** TODO mega
-SCHEDULED: <2023-10-01 Sun>
-- [ ] public
-- [ ] private
-- [ ] data
-
-*** TODO google drive
-SCHEDULED: <2023-10-01 Sun>
-- [ ] public
-- [ ] private
-- [ ] data
-
+*** DONE mega avec restic
+CLOSED: [2023-10-01 Sun 16:08] SCHEDULED: <2023-10-01 Sun>
+- [X] public
+- [X] private
+*** DONE google drive avec restic
+CLOSED: [2023-10-01 Sun 15:33] SCHEDULED: <2023-10-01 Sun>
+- [X] public
+- [X] private
+*** DONE Tester backup avec restic
+CLOSED: [2023-10-01 Sun 16:15] SCHEDULED: <2023-10-01 Sun>
+- [X] private sur gdrive
+- [ ] public sur gdrive
 ** DONE papers : git lfs (non encrypté)
 CLOSED: [2023-09-30 Sat 19:19] SCHEDULED: <2023-09-30 Sat>

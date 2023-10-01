@@ -2925,8 +2925,8 @@ CLOSED: [2023-08-28 Mon 17:24]
 *** DONE Réordonner les colonnes :annotation:
 CLOSED: [2023-08-31 Thu 10:38] SCHEDULED: <2023-08-28 Mon>
 Pas d'OMIM, pas de CADD, pas de spliceAI
-*** TODO Ajouter gnomAD v3 :gnomadv3:
-SCHEDULED: <2023-09-29 Fri>
+*** DONE Ajouter gnomAD v3 :gnomadv3:
+CLOSED: [2023-10-01 Sun 15:34] SCHEDULED: <2023-09-29 Fri>
 /Entered on/ [2023-09-29 Fri 22:38]
 Après discussion avec Mathieu sur le problème de certaines régions corrigées dans la v3 !
 VEP utilise la v2 pour les exomes et v3 pour génomes
@@ -2935,7 +2935,8 @@ Il manquera pour les patients 1-107
 On ne l'a pas dans la sortie de VEP jusque là
 **** DONE Test sur 1 patient
 CLOSED: [2023-09-30 Sat 23:54] SCHEDULED: <2023-09-29 Fri>
-**** TODO Reprendre run batc
+**** DONE Reprendre run batch
+CLOSED: [2023-10-01 Sun 15:34]
 ** DONE Porter exactement la version d'Alexis sur Helios
 CLOSED: [2023-01-14 Sat 17:56]
 Branche "prod"
@@ -3001,11 +3002,11 @@ CLOSED: [2023-09-19 Tue 16:54] SCHEDULED: <2023-09-19 Tue>
 /Entered on/ [2023-09-19 Tue 08:43]
 
 ** TODO Figure: nombre de publication par appel de variant
-SCHEDULED: <2023-10-01 Sun>
+SCHEDULED: <2023-10-03 Tue>
 /Entered on/ [2023-09-19 Tue 08:43]
 
 ** TODO Figure: nombre d'exomes par années
-SCHEDULED: <2023-10-01 Sun>
+SCHEDULED: <2023-10-03 Tue>
 /Entered on/ [2023-09-19 Tue 08:43]
 * Tests :tests:
 ** KILL Non régression : version prod
@@ -8789,7 +8790,7 @@ CLOSED: [2023-09-17 Sun 23:15] SCHEDULED: <2023-09-17 Sun>
 
 * Résultats
 ** TODO Speed-up BWA-mem
-SCHEDULED: <2023-10-01 Sun>
+SCHEDULED: <2023-10-08 Sun>
 
 ** TODO Speed-up Hapotypecaller
-SCHEDULED: <2023-10-01 Sun>
+SCHEDULED: <2023-10-08 Sun>
