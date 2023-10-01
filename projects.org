@@ -26,13 +26,14 @@ CLOSED: [2023-07-21 Fri 17:54] DEADLINE: <2023-07-21 Fri>
 Grenoble = la partie bioinfo
 *** DONE Mail coordonateur DES biologie médicale Grenoble pour préciser
 CLOSED: [2023-07-21 Fri 17:54] SCHEDULED: <2023-07-21 Fri>
-*** TODO Dossier à compléter
+*** DONE Dossier à compléter
+CLOSED: [2023-10-01 Sun 20:54]
 **** DONE Lettre de recommandation Paul
 CLOSED: [2023-09-10 Sun 22:38]
-**** TODO Lettre de motivation
-SCHEDULED: <2023-09-24 Sun>
-**** TODO Projet "~/documents/interchu-grenoble-projet.tex"
-SCHEDULED: <2023-09-24 Sun>
+**** DONE Lettre de motivation
+CLOSED: [2023-10-01 Sun 20:54] SCHEDULED: <2023-09-24 Sun>
+**** DONE Projet "~/documents/interchu-grenoble-projet.tex"
+CLOSED: [2023-10-01 Sun 20:54] SCHEDULED: <2023-09-24 Sun>
 **** DONE Faire signer la feuille par Quentin
 CLOSED: [2023-09-11 Mon 19:14] SCHEDULED: <2023-09-10 Sun>
 **** DONE Faire signer la feuille par Julien
@@ -40,11 +41,13 @@ CLOSED: [2023-09-13 Wed 22:57] SCHEDULED: <2023-09-10 Sun>
 **** KILL Faire signer la feuille par la fac
 CLOSED: [2023-09-20 Wed 22:15] SCHEDULED: <2023-09-18 Mon>
 *** TODO Vision Julien Thevenon  Virginie ?? (bionfo)
-*** TODO Envoyer dossier déjà signé
-SCHEDULED: <2023-09-21 Thu>
+*** DONE Envoyer dossier complet avec signature à Besançon
+CLOSED: [2023-10-01 Sun 21:10]
 /Entered on/ [2023-09-20 Wed 22:15]
 **** DONE Informations complémentaires Julien Thevenon
 CLOSED: [2023-10-01 Sun 14:49] SCHEDULED: <2023-09-26 Tue>
+*** TODO Envoyer dossier à Mme Ramos à Grenoble
+SCHEDULED: <2023-10-05 Thu>
 ** Logement trevenans :trevenans:cs:
 *** DONE Compléter dossier
 CLOSED: [2023-08-30 Wed 16:38]
@@ -73,11 +76,15 @@ CLOSED: [2023-09-28 Thu 11:43]
 *** DONE Envoyer première version à Xavier
 CLOSED: [2023-09-17 Sun 22:31] SCHEDULED: <2023-09-17 Sun>
 /Entered on/ [2023-09-17 Sun 16:08]
-** Examen bactério :bacterio:
-Lire
+** Examen bactério
+:PROPERTIES:
+:CATEGORY: bacterio
+:END:
+*** TODO Lire cours [19/36]
+SCHEDULED: <2023-10-01 Sun>
 - [ ] ?
 - [ ] A. agalactiae
-- [ ] "~/annex/public/lessons/microbiologie/bacterio/Antibiogramme - Staphylocoques.pdf"
+- [X] "~/annex/public/lessons/microbiologie/bacterio/Antibiogramme - Staphylocoques.pdf"
 - [ ] "~/annex/public/lessons/microbiologie/bacterio/Antibiogramme - Streptococoque, enterocoque, Listeria.pdf"
 - [ ] "~/annex/public/lessons/microbiologie/bacterio/Chlamydia - mycoplasmes.pdf"
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Diagnostic moleculaire - Bacteriologie.pdf"
@@ -87,14 +94,14 @@ Lire
 - [ ] "~/annex/public/lessons/microbiologie/bacterio/EEQ, CIQ.pdf"
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Examen microscopique.pdf"
 - [ ] "~/annex/public/lessons/microbiologie/bacterio/Gonocoque.pdf"
-- [ ] "~/annex/public/lessons/microbiologie/bacterio/Hygiène.pdf"
+- [X] "~/annex/public/lessons/microbiologie/bacterio/Hygiène.pdf"
 - [ ] "~/annex/public/lessons/microbiologie/bacterio/Infections cutanees.pdf"
 - [ ] "~/annex/public/lessons/microbiologie/bacterio/MALDI - TOF.pdf"
 - [ ] "~/annex/public/lessons/microbiologie/bacterio/Pre-analytique bacteriologie.pdf"
 - [ ] "~/annex/public/lessons/microbiologie/bacterio/Qualite.pdf"
 - [ ] "~/annex/public/lessons/microbiologie/bacterio/Securite Transfusionnelle.pdf"
-- [ ] "~/annex/public/lessons/microbiologie/bacterio/Serologie bacterienne.pdf"
-- [ ] "~/annex/public/lessons/microbiologie/bacterio/Tests rapides antigeniques et moleculaires.pdf"
+- [X] "~/annex/public/lessons/microbiologie/bacterio/Serologie bacterienne.pdf"
+- [X] "~/annex/public/lessons/microbiologie/bacterio/Tests rapides antigeniques et moleculaires.pdf"
 - [ ] "~/annex/public/lessons/microbiologie/bacterio/Tuberculose.pdf"
 - [ ] "~/annex/public/lessons/microbiologie/bacterio/Typage moleculaire bacterien.pdf"
 - [ ] "~/annex/public/lessons/microbiologie/bacterio/Vaccination personnel.pdf"
@@ -401,13 +408,13 @@ CLOSED: [2023-09-18 Mon 19:36] SCHEDULED: <2023-09-17 Sun>
 *** TODO Corriger article
 SCHEDULED: <2023-10-01 Sun>
 **** TODO Ajouter images Dr Vidaud
-SCHEDULED: <2023-10-01 Sun>
+SCHEDULED: <2023-10-02 Mon>
 **** DONE Comprendre score LRR pour gain
 CLOSED: [2023-09-21 Thu 23:03] SCHEDULED: <2023-09-21 Thu>
 **** TODO Corriger discussion: remaniement complexe
-SCHEDULED: <2023-10-01 Sun>
+SCHEDULED: <2023-10-02 Mon>
 **** TODO Phénotype "mild" chez le père + détailler moléculaire
-SCHEDULED: <2023-10-01 Sun>
+SCHEDULED: <2023-10-02 Mon>
 **** TODO Traitement FBXW7 ?
 SCHEDULED: <2023-10-08 Sun>
 *** TODO Réponse reviewe
@@ -734,8 +741,7 @@ CLOSED: [2023-07-30 Sun 15:02]
 /Entered on/ [2023-07-02 Sun 18:20]
 Découverte <2023-07-02 Sun>. Virement 100.50€ fait.
 Mail envoyé ce jour
-** TODO Vendre vélo
-SCHEDULED: <2023-10-01 Sun>
+** WAIT Vendre vélo
 /Entered on/ [2023-07-29 Sat 10:23]
 ** TODO Vendre frigo
 SCHEDULED: <2023-10-17 Wed>
@@ -878,3 +884,8 @@ CLOSED: [2023-10-01 Sun 16:15] SCHEDULED: <2023-10-01 Sun>
 - [ ] public sur gdrive
 ** DONE papers : git lfs (non encrypté)
 CLOSED: [2023-09-30 Sat 19:19] SCHEDULED: <2023-09-30 Sat>
+** TODO Comprendre pourquoi git-annex ne lit pas home
+SCHEDULED: <2023-10-07 Sat>
+/Entered on/ [2023-10-01 Sun 21:31]
+Unable to parse git config
+cannot find git-annex

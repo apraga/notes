@@ -1,1 +1,5 @@
 #+FILETAGS: inbox
+* TODO Comprendre pourquoi git-annex ne lit pas home
+/Entered on/ [2023-10-01 Sun 21:31]
+Unable to parse git config
+cannot find git-annex
