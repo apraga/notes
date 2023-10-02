@@ -2188,8 +2188,10 @@ SCHEDULED: <2023-09-25 Mon>
 /Entered on/ [2023-09-22 Fri 22:59]
 35 selon IGV mais 27 en pratique dans le VCF.
 VCF cento: 26 reads également...
-Non confirmé sanger
+VOUS, non confirmé sanger
 Mail envoyé Alexis
+
+Vu avec Paul : on laisse DP >= 30 si c'est la seule occurence
 ** DONE Mettre à jour spip pour corriger bug 62982239 : variant trop long (?)
 CLOSED: [2023-09-22 Fri 22:22] SCHEDULED: <2023-09-21 Thu>
 /Entered on/ [2023-09-21 Thu 23:11]

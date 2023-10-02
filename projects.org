@@ -80,24 +80,24 @@ CLOSED: [2023-09-17 Sun 22:31] SCHEDULED: <2023-09-17 Sun>
 :PROPERTIES:
 :CATEGORY: bacterio
 :END:
-*** TODO Lire cours [23/36]
+*** TODO Lire cours [26/36]
 SCHEDULED: <2023-10-01 Sun>
 - [ ] ?
 - [ ] A. agalactiae
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Antibiogramme - Staphylocoques.pdf"
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Antibiogramme - Streptococoque, enterocoque, Listeria.pdf"
-- [ ] "~/annex/public/lessons/microbiologie/bacterio/Chlamydia - mycoplasmes.pdf"
+- [X] "~/annex/public/lessons/microbiologie/bacterio/Chlamydia - mycoplasmes.pdf"
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Diagnostic moleculaire - Bacteriologie.pdf"
 - [ ] "~/annex/public/lessons/microbiologie/bacterio/EBCU etiologies.pdf"
 - [ ] "~/annex/public/lessons/microbiologie/bacterio/ECBU interpretation.pdf"
 - [ ] "~/annex/public/lessons/microbiologie/bacterio/ECBU pre-analytique.pdf"
 - [X] "~/annex/public/lessons/microbiologie/bacterio/EEQ, CIQ.pdf"
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Examen microscopique.pdf"
-- [ ] "~/annex/public/lessons/microbiologie/bacterio/Gonocoque.pdf"
+- [X] "~/annex/public/lessons/microbiologie/bacterio/Gonocoque.pdf"
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Hygiène.pdf"
 - [ ] "~/annex/public/lessons/microbiologie/bacterio/Infections cutanees.pdf"
 - [ ] "~/annex/public/lessons/microbiologie/bacterio/MALDI - TOF.pdf"
-- [ ] "~/annex/public/lessons/microbiologie/bacterio/Pre-analytique bacteriologie.pdf"
+- [X] "~/annex/public/lessons/microbiologie/bacterio/Pre-analytique bacteriologie.pdf"
 - [ ] "~/annex/public/lessons/microbiologie/bacterio/Qualite.pdf"
 - [ ] "~/annex/public/lessons/microbiologie/bacterio/Securite Transfusionnelle.pdf"
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Serologie bacterienne.pdf"
@@ -405,16 +405,18 @@ CLOSED: [2023-09-10 Sun 22:36] SCHEDULED: <2023-09-10 Sun>
 *** DONE Mail Dr Laithier
 CLOSED: [2023-09-18 Mon 19:36] SCHEDULED: <2023-09-17 Sun>
 /Entered on/ [2023-09-17 Sun 16:06]
+*** DONE Avis paul sur ACPA non
+CLOSED: [2023-10-02 Mon 21:58]
 *** TODO Corriger article
 SCHEDULED: <2023-10-01 Sun>
 **** TODO Ajouter images Dr Vidaud
-SCHEDULED: <2023-10-02 Mon>
+SCHEDULED: <2023-10-06 Fri>
 **** DONE Comprendre score LRR pour gain
 CLOSED: [2023-09-21 Thu 23:03] SCHEDULED: <2023-09-21 Thu>
 **** TODO Corriger discussion: remaniement complexe
-SCHEDULED: <2023-10-02 Mon>
+SCHEDULED: <2023-10-06 Fri>
 **** TODO Phénotype "mild" chez le père + détailler moléculaire
-SCHEDULED: <2023-10-02 Mon>
+SCHEDULED: <2023-10-06 Fri>
 **** TODO Traitement FBXW7 ?
 SCHEDULED: <2023-10-08 Sun>
 *** TODO Réponse reviewe
