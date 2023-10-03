@@ -2183,8 +2183,8 @@ Puis commit
 CLOSED: [2023-09-19 Tue 15:31] SCHEDULED: <2023-09-19 Tue>
 /Entered on/ [2023-09-19 Tue 15:31]
 Cf mail 2023-09-19
-*** WAIT Bug: variant sur 7788314 pour patient 62982193 filtré : DP < 30
-SCHEDULED: <2023-09-25 Mon>
+*** DONE Bug: variant sur 7788314 pour patient 62982193 filtré : DP < 30
+CLOSED: [2023-10-02 Mon 21:58] SCHEDULED: <2023-09-25 Mon>
 /Entered on/ [2023-09-22 Fri 22:59]
 35 selon IGV mais 27 en pratique dans le VCF.
 VCF cento: 26 reads également...
@@ -3007,11 +3007,12 @@ SCHEDULED: <2023-10-01 Sun>
 ** TODO Biblio appel de variant
 SCHEDULED: <2023-10-01 Sun>
 ** TODO Figure: nombre de publication par appel de variant
-SCHEDULED: <2023-10-03 Tue>
+SCHEDULED: <2023-10-04 Wed>
 /Entered on/ [2023-09-19 Tue 08:43]
-
-** TODO Figure: nombre d'exomes par années
+** TODO Figure: nombre d'articles citant les principaux aligneur par année
 SCHEDULED: <2023-10-03 Tue>
+** TODO Figure: nombre d'exomes par années
+SCHEDULED: <2023-10-10 Tue>
 /Entered on/ [2023-09-19 Tue 08:43]
 * Tests :tests:
 ** KILL Non régression : version prod
@@ -6181,8 +6182,14 @@ julia> tp/(tp+(fp-3498))
 On est toujours en dessous des 97%
 ******* HOLD Corriger proprement VCF ou résultats Happy
 ******* TODO Adapter pour gérer plusieurs variants par read
-****** KILL Méthodologie du pangenome
-CLOSED: [2023-08-16 Wed 19:08]
+****** DONE Méthodologie du pangenome
+CLOSED: [2023-10-03 Tue 21:28]
+Voir biblio[cite:@liao2023]  mais ont aligné sur GRCH38
+******* DONE Mail alexis
+CLOSED: [2023-10-03 Tue 21:28]
+****** TODO Méthodologie T2T
+Mail alexis
+SCHEDULED: <2023-10-04 Wed>
 ***** KILL Mail Yannis
 CLOSED: [2023-07-08 Sat 10:44]
 ***** DONE Mail GIAB pour version T2T
@@ -8511,7 +8518,7 @@ VEP chooses one block of annotation per variant, using an ordered set of criteri
 **** DONE Mail alexis
 CLOSED: [2023-08-20 Sun 13:45] SCHEDULED: <2023-08-20 Sun>
 **** TODO Données simuscop 200x
-SCHEDULED: <2023-10-03 Tue>
+SCHEDULED: <2023-10-10 Tue>
 **** DONE En T2T avec liftover (filtre = spip) : ok mais lent et trop de variants :tests:
 CLOSED: [2023-09-17 Sun 17:13] SCHEDULED: <2023-09-17 Sun>
 1. Conversion en bed

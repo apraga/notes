@@ -80,10 +80,10 @@ CLOSED: [2023-09-17 Sun 22:31] SCHEDULED: <2023-09-17 Sun>
 :PROPERTIES:
 :CATEGORY: bacterio
 :END:
-*** TODO Lire cours [26/36]
+*** TODO Lire cours [32/36]
 SCHEDULED: <2023-10-01 Sun>
-- [ ] ?
-- [ ] A. agalactiae
+- [X] "~/annex/public/lessons/microbiologie/bacterio/Syphilis.pdf"
+- [X] A. agalactiae
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Antibiogramme - Staphylocoques.pdf"
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Antibiogramme - Streptococoque, enterocoque, Listeria.pdf"
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Chlamydia - mycoplasmes.pdf"
@@ -96,13 +96,13 @@ SCHEDULED: <2023-10-01 Sun>
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Gonocoque.pdf"
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Hygiène.pdf"
 - [ ] "~/annex/public/lessons/microbiologie/bacterio/Infections cutanees.pdf"
-- [ ] "~/annex/public/lessons/microbiologie/bacterio/MALDI - TOF.pdf"
+- [X] "~/annex/public/lessons/microbiologie/bacterio/MALDI - TOF.pdf"
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Pre-analytique bacteriologie.pdf"
-- [ ] "~/annex/public/lessons/microbiologie/bacterio/Qualite.pdf"
-- [ ] "~/annex/public/lessons/microbiologie/bacterio/Securite Transfusionnelle.pdf"
+- [X] "~/annex/public/lessons/microbiologie/bacterio/Qualite.pdf"
+- [X] "~/annex/public/lessons/microbiologie/bacterio/Securite Transfusionnelle.pdf"
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Serologie bacterienne.pdf"
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Tests rapides antigeniques et moleculaires.pdf"
-- [ ] "~/annex/public/lessons/microbiologie/bacterio/Tuberculose.pdf"
+- [X] "~/annex/public/lessons/microbiologie/bacterio/Tuberculose.pdf"
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Typage moleculaire bacterien.pdf"
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Vaccination personnel.pdf"
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Angines bacteriennes.pdf"
@@ -408,7 +408,7 @@ CLOSED: [2023-09-18 Mon 19:36] SCHEDULED: <2023-09-17 Sun>
 *** DONE Avis paul sur ACPA non
 CLOSED: [2023-10-02 Mon 21:58]
 *** TODO Corriger article
-SCHEDULED: <2023-10-01 Sun>
+SCHEDULED: <2023-10-08 Sun>
 **** TODO Ajouter images Dr Vidaud
 SCHEDULED: <2023-10-06 Fri>
 **** DONE Comprendre score LRR pour gain
@@ -419,10 +419,12 @@ SCHEDULED: <2023-10-06 Fri>
 SCHEDULED: <2023-10-06 Fri>
 **** TODO Traitement FBXW7 ?
 SCHEDULED: <2023-10-08 Sun>
-*** TODO Réponse reviewe
+*** TODO Réponse reviewer
 SCHEDULED: <2023-10-08 Sun>
+*** TODO Correction Juliette
+SCHEDULED: <2023-10-10 Tue>
 *** TODO Resoumettre
-SCHEDULED: <2023-10-03 Tue>
+SCHEDULED: <2023-10-17 Tue>
 ** Apprendre le machine learning
 :PROPERTIES:
 :CATEGORY: machine learning
