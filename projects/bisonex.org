@@ -6301,10 +6301,10 @@ CLOSED: [2023-07-31 Mon 22:31] SCHEDULED: <2023-07-30 Sun>
 ** TODO Données CHM13 :chm:
 https://github.com/lh3/CHM-eval
 *** TODO Run ERR1341793
-SCHEDULED: <2023-10-03 Tue>
+SCHEDULED: <2023-10-07 Sat>
 (raw reads ERR1341793_1.fastq.gz and ERR1341793_2.fastq.gz downloaded from https://www.ebi.ac.uk/ena/browser/view/ERR1341793)
 *** TODO Run ERR1341796
-SCHEDULED: <2023-10-03 Tue>
+SCHEDULED: <2023-10-07 Sat>
 ** TODO Insilico :cento:
 *** TODO tous les variants centogène
 **** DONE Extraire liste des SNVs
@@ -8806,3 +8806,7 @@ SCHEDULED: <2023-10-08 Sun>
 
 ** TODO Speed-up Hapotypecaller
 SCHEDULED: <2023-10-08 Sun>
+* Communication
+** TODO Mail NGS-diag
+SCHEDULED: <2023-10-06 Fri>
+/Entered on/ [2023-10-04 Wed 19:33]

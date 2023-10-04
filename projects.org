@@ -44,10 +44,16 @@ CLOSED: [2023-09-20 Wed 22:15] SCHEDULED: <2023-09-18 Mon>
 *** DONE Envoyer dossier complet avec signature à Besançon
 CLOSED: [2023-10-01 Sun 21:10]
 /Entered on/ [2023-09-20 Wed 22:15]
+Confirmé <2023-10-04 Wed>
 **** DONE Informations complémentaires Julien Thevenon
 CLOSED: [2023-10-01 Sun 14:49] SCHEDULED: <2023-09-26 Tue>
-*** TODO Envoyer dossier à Mme Ramos à Grenoble
-SCHEDULED: <2023-10-05 Thu>
+*** DONE Envoyer dossier Anais et Luna
+CLOSED: [2023-10-04 Wed 19:35] SCHEDULED: <2023-10-04 Wed>
+*** TODO Envoyer mail syndicat des internes
+SCHEDULED: <2023-10-08 Sun>
+*** DONE Envoyer dossier à Mme Lucet à Grenoble
+CLOSED: [2023-10-04 Wed 19:35] SCHEDULED: <2023-10-05 Thu>
+Confirmé <2023-10-04 Wed>
 ** Logement trevenans :trevenans:cs:
 *** DONE Compléter dossier
 CLOSED: [2023-08-30 Wed 16:38]
