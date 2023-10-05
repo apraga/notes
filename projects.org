@@ -48,6 +48,9 @@ CLOSED: [2023-10-01 Sun 21:10]
 CLOSED: [2023-10-01 Sun 14:49] SCHEDULED: <2023-09-26 Tue>
 *** TODO Envoyer dossier à Mme Ramos à Grenoble
 SCHEDULED: <2023-10-05 Thu>
+*** DONE Renvoyer annexe 3
+CLOSED: [2023-10-03 Tue 23:06] SCHEDULED: <2023-10-03 Tue>
+/Entered on/ [2023-10-03 Tue 23:06]
 ** Logement trevenans :trevenans:cs:
 *** DONE Compléter dossier
 CLOSED: [2023-08-30 Wed 16:38]
@@ -759,6 +762,17 @@ CLOSED: [2023-07-29 Sat 10:57] SCHEDULED: <2023-07-29 Sat>
 ** DONE Lettre recommandée annonce déménagement
 CLOSED: [2023-07-29 Sat 10:57] SCHEDULED: <2023-07-29 Sat>
 #+category: maison
+** TODO Résilier box
+SCHEDULED: <2023-10-08 Sun>
+/Entered on/ [2023-10-03 Tue 23:11]
+** TODO Résilier ordures ménagères
+SCHEDULED: <2023-10-04 Wed>
+** TODO Payer ordures ménagères
+SCHEDULED: <2023-10-05 Thu>
+/Entered on/ [2023-10-03 Tue 23:12]
+** TODO Payer ordures ménagères
+SCHEDULED: <2023-10-05 Thu>
+/Entered on/ [2023-10-03 Tue 23:12]
 * Banque
 :PROPERTIES:
 :CATEGORY: banque
