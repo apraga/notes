@@ -14,3 +14,19 @@ _site
 _tmp
 
 *.docx
+
+.orgids
+Shakefile
+*.hi
+*.dyn_hi
+*.o
+*.dyn_o
+_build/
+_shake/
+login.cfg
+lol.html
+notes/index.html
+.git_pres.tex.swo
+.git_pres.tex.swp
+*.toc
+*.profile*
