@@ -4,6 +4,9 @@
 #+title: Culture
 #+filetags: personal medecine bacterio
 * Culture
+:PROPERTIES:
+:ID: 718b876d-2837-41b4-b4a1-e6b0b4236ba7
+:END:
 - Gélose au sang = non sélectif. Pouvoir hémolytique
 - Bouilon Schaedler = bactéries anaérobie et exigeantes (incubation 10-14jours en anaérobie) → prélèvement profonds, IO
 - Chromogène urinaire = non sélectif
@@ -14,7 +17,7 @@
 ** Autres
 - BCSA : inhibe gram+ → Burkholderia
 - BCYE : Legionnella
-- CAP (colistine + aztreonam) = inhibe Gram → streptocoque+++, listeria, corynebacterie, uropathogène émergents
+- CAP (colistine + aztreonam) = inhibe Gram - → streptocoque+++, listeria, corynebacterie, uropathogène émergents
   NB: aztreonam inhibe pousse proteus, pseudomonas
 - Cétrimide (ammonium) → P. aeruginosa (production pycyanine)
 - Chapman : NaCL, mannitol

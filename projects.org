@@ -58,7 +58,6 @@ Confirmé <2023-10-04 Wed>
 *** DONE Compléter dossier
 CLOSED: [2023-08-30 Wed 16:38]
 *** TODO Assurance habitation
-SCHEDULED: <2023-10-05 Thu>
 Attente décision
 *** DONE Louer camionette
 CLOSED: [2023-09-16 Sat 18:19] SCHEDULED: <2023-09-16 Sat>
@@ -86,22 +85,23 @@ CLOSED: [2023-09-17 Sun 22:31] SCHEDULED: <2023-09-17 Sun>
 :PROPERTIES:
 :CATEGORY: bacterio
 :END:
-*** TODO Lire cours [32/36]
+*** TODO Passe 1 [37/37]
 SCHEDULED: <2023-10-01 Sun>
+- [X] https://scut.srht.site/notes/medecine/20230528235124-culture.html
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Syphilis.pdf"
 - [X] A. agalactiae
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Antibiogramme - Staphylocoques.pdf"
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Antibiogramme - Streptococoque, enterocoque, Listeria.pdf"
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Chlamydia - mycoplasmes.pdf"
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Diagnostic moleculaire - Bacteriologie.pdf"
-- [ ] "~/annex/public/lessons/microbiologie/bacterio/EBCU etiologies.pdf"
-- [ ] "~/annex/public/lessons/microbiologie/bacterio/ECBU interpretation.pdf"
-- [ ] "~/annex/public/lessons/microbiologie/bacterio/ECBU pre-analytique.pdf"
+- [X] "~/annex/public/lessons/microbiologie/bacterio/EBCU etiologies.pdf"
+- [X] "~/annex/public/lessons/microbiologie/bacterio/ECBU interpretation.pdf"
+- [X] "~/annex/public/lessons/microbiologie/bacterio/ECBU pre-analytique.pdf"
 - [X] "~/annex/public/lessons/microbiologie/bacterio/EEQ, CIQ.pdf"
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Examen microscopique.pdf"
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Gonocoque.pdf"
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Hygiène.pdf"
-- [ ] "~/annex/public/lessons/microbiologie/bacterio/Infections cutanees.pdf"
+- [X] "~/annex/public/lessons/microbiologie/bacterio/Infections cutanees.pdf"
 - [X] "~/annex/public/lessons/microbiologie/bacterio/MALDI - TOF.pdf"
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Pre-analytique bacteriologie.pdf"
 - [X] "~/annex/public/lessons/microbiologie/bacterio/Qualite.pdf"
@@ -769,12 +769,9 @@ CLOSED: [2023-07-29 Sat 10:57] SCHEDULED: <2023-07-29 Sat>
 SCHEDULED: <2023-10-08 Sun>
 /Entered on/ [2023-10-03 Tue 23:11]
 ** TODO Résilier ordures ménagères
-SCHEDULED: <2023-10-04 Wed>
+SCHEDULED: <2023-10-06 Fri>
 ** TODO Payer ordures ménagères
-SCHEDULED: <2023-10-05 Thu>
-/Entered on/ [2023-10-03 Tue 23:12]
-** TODO Payer ordures ménagères
-SCHEDULED: <2023-10-05 Thu>
+SCHEDULED: <2023-10-06 Fri>
 /Entered on/ [2023-10-03 Tue 23:12]
 * Banque
 :PROPERTIES:
