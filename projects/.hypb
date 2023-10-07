@@ -1,0 +1,4 @@
+
+"bisonex.org"
+("runs.waiting" nil nil find-file-other-window ("/ssh:meso:/Home/Users/apraga/runs.waiting" t) "alex@gentoo" "20231007:13:31:21" nil nil)
+("samples.csv" nil nil find-file-other-window ("/ssh:meso:/Work/Users/apraga/bisonex/samples.csv" t) "alex@gentoo" "20231007:13:30:53" nil nil)

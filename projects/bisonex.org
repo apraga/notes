@@ -1,227 +1,5 @@
 ﻿#+title: Bisonex
 #+category: bisonex
-* Biblio
-:PROPERTIES:
-:CATEGORY: biblio
-:END:
-** Workflow
-Comparaison WDL, Cromwell, nextflow
-https://www.nature.com/articles/s41598-021-99288-8
-Nextflow = bon compromis ?
-
-Comparison alignement, variant caller (2021)
-https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04144-1
-** Étapes du pipeline
-
-*** Variant calling: Haplotype caller
-https://gatk.broadinstitute.org/hc/en-us/articles/360035531412
-Définis l'algorithme + image
-
-*** Phred score
-https://gatk.broadinstitute.org/hc/en-us/articles/360035531872-Phred-scaled-quality-scores
-** VCF
-*** GT genotype
-encoded as alleles values separated by either of ”/” or “|”, e.g. The allele values are 0 for the reference allele (what is in the reference sequence), 1 for the first allele listed in ALT, 2 for the second allele list in ALT and so on. For diploid calls examples could be 0/1 or 1|0 etc. For haploid calls, e.g. on Y, male X, mitochondrion, only one allele value should be given. All samples must have GT call information; if a call cannot be made for a sample at a given locus, ”.” must be specified for each missing allele in the GT field (for example ./. for a diploid). The meanings of the separators are:
-
-    / : genotype unphased
-    | : genotype phased
-
-** Validation
-*** NA12878
-**** KILL [[https://precision.fda.gov/challegnges/truth/results][fdaPrecision challenge]]
-Attention, génome et en hg19 donc comparaison non adaptée ...
-
-**** TODO Best practices for the analytical validation of clinical whole-genome sequencing intended for the diagnosis of germline disease
-https://www.nature.com/articles/s41525-020-00154-9
-Recommandations générale pour genome, sans données brutes
-**** TODO [#A] Performance assessment of variant calling pipelines using human whole exome sequencing and simulated data
-https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2928-9
-1. variant calling seul
-2. NA12878 + données simulées
-3. exome
-4. évalué via F-score
-
-Code disponible ! https://github.com/bharani-lab/WES-Benchmarking-Pipeline_Manoj/tree/master/Script
-Résultat: BWA/Novoalign_DeepVariant
-
-Aligneurs
-- BWA-MEM 0.7.16
-- Bowtie2 2.2.6
-- Novoalign 3.08.02
-- SOAP 2.21
-- MOSAIK 2.2.3
-
-Variantcalling
-- GATK HaplotypeCaller 4
-- FreeBayes 1.1.0
-- SAMtools mpileup 1.7
-- DeepVariant r0.4
-
-  SNV
-| Exome | Pipeline |    TP |   FP |  FN | Sensitivity | Precision | F-Score |   FDR |
-|     1 | BWA_GATK | 2368g9 | 1397 | 613 |       0.975 |     0.944 |   0.959 | 0.057 |
-|     2 | BWA_GATK | 23946 |  865 | 356 |       0.985 |     0.965 |   0.975 | 0.036 |
-
-indel
- |   TP | FP | FN | Sensitivity | Precision | F-Score |   FDR |   |
- | 1254 | 72 | 75 |       0.944 |     0.946 |   0.945 | 0.054 |   |
- | 1309 | 10 | 20 |       0.985 |     0.992 |   0.989 | 0.008 |   |
-
-Valeur brutes :
-https://static-content.springer.com/esm/art%3A10.1186%2Fs12859-019-2928-9/MediaObjects/12859_2019_2928_MOESM8_ESM.pdf
-
-Autres articles avec même comparaison en exome sur NA12878
-- Hwang et al., 2015 studyi
-- Highnam et al, 2015
--  Cornish and Guda, 2015
-
-
-Variant Type
-|                       | SNVs & Indels | CNVs (>10Kb) | SVs | Mitochondrial variants | Pseudogenes | REs | Somatic/ mosaic | Literature/Data | Source   |
-| NA12878               |         100%a |          40% |   0 |                      0 |           0 |   0 |               0 | Zook et  al18   | NIST     |
-| Other NIST standard   |           71% |          40% | 50% |                      0 |           0 |   0 |               0 | Zook  et al18   |          |
-| (e.g. AJ/Asian trios) |               |              |     |                        |             |     |                 |                 |          |
-| Platinum              |           29% |            0 |   0 |                      0 |           0 |   0 |               0 | Eberle et  al8  | Platinum |
-| Genomes               |               |              |     |                        |             |     |                 |                 |          |
-| Venter/HuRef          |           14% |          40% |   0 |                      0 |           0 |   0 |               0 | Trost et al1    | HuRef    |
-
-**** Systematic comparison of germline variant calling pipelines cross multiple next-generation sequencers
-#+begin_src bibtex
-@ARTICLE{Chen2019-fp,
-  title     = "Systematic comparison of germline variant calling pipelines
-               cross multiple next-generation sequencers",
-  author    = "Chen, Jiayun and Li, Xingsong and Zhong, Hongbin and Meng,
-               Yuhuan and Du, Hongli",
-  abstract  = "The development and innovation of next generation sequencing
-               (NGS) and the subsequent analysis tools have gain popularity in
-               scientific researches and clinical diagnostic applications.
-               Hence, a systematic comparison of the sequencing platforms and
-               variant calling pipelines could provide significant guidance to
-               NGS-based scientific and clinical genomics. In this study, we
-               compared the performance, concordance and operating efficiency
-               of 27 combinations of sequencing platforms and variant calling
-               pipelines, testing three variant calling pipelines-Genome
-               Analysis Tool Kit HaplotypeCaller, Strelka2 and
-               Samtools-Varscan2 for nine data sets for the NA12878 genome
-               sequenced by different platforms including BGISEQ500,
-               MGISEQ2000, HiSeq4000, NovaSeq and HiSeq Xten. For the variants
-               calling performance of 12 combinations in WES datasets, all
-               combinations displayed good performance in calling SNPs, with
-               their F-scores entirely higher than 0.96, and their performance
-               in calling INDELs varies from 0.75 to 0.91. And all 15
-               combinations in WGS datasets also manifested good performance,
-               with F-scores in calling SNPs were entirely higher than 0.975
-               and their performance in calling INDELs varies from 0.71 to
-               0.93. All of these combinations manifested high concordance in
-               variant identification, while the divergence of variants
-               identification in WGS datasets were larger than that in WES
-               datasets. We also down-sampled the original WES and WGS datasets
-               at a series of gradient coverage across multiple platforms, then
-               the variants calling period consumed by the three pipelines at
-               each coverage were counted, respectively. For the GIAB datasets
-               on both BGI and Illumina platforms, Strelka2 manifested its
-               ultra-performance in detecting accuracy and processing
-               efficiency compared with other two pipelines on each sequencing
-               platform, which was recommended in the further promotion and
-               application of next generation sequencing technology. The
-               results of our researches will provide useful and comprehensive
-               guidelines for personal or organizational researchers in
-               reliable and consistent variants identification.",
-  journal   = "Sci. Rep.",
-  publisher = "Springer Science and Business Media LLC",
-  volume    =  9,
-  number    =  1,
-  pages     = "9345",
-  month     =  jun,
-  year      =  2019,
-  copyright = "https://creativecommons.org/licenses/by/4.0",
-  language  = "en"
-}
-#+end_src
-Comparaison de différents pipeline 2019
-https://www.nature.com/articles/s41598-019-45835-3
-Combinaison
-- variant calling = GATK, Strelka2 and Samtools-Varscan2
-- sur NA12878
-- séquencé sur BGISEQ500, MGISEQ2000, HiSeq4000, NovaSeq and HiSeq Xten.
-
-  Conclusion: strelka2 supérieur mais biais sur NA12878 ?
-
-Illumina > BGI pour indel, probablement car reads plus grand
-#+begin_quote
- For WES datasets, the BGI platforms displayed the superior performance in SNPs
- calling while Illumina platforms manifested the better variants calling
- performance in INDELs calling, which could be explained by their divergence in
- sequencing strategy that producing different length of reads (all BGI platforms
- were 100 base pair read length while all Illumina platforms were 150 base pair
- read length). The read length effects, as a key factor between two platforms,
- would bring alignment bias and error which are higher for short reads and
- ultimately affect the variants calling especially the INDELs identification
-#+end_quote
-*** Débugger variant calling (haplotypecaller)
-https://gatk.broadinstitute.org/hc/en-us/articles/360043491652-When-HaplotypeCaller-and-Mutect2-do-not-call-an-expected-variant
-https://gatk.broadinstitute.org/hc/en-us/articles/360035891111-Expected-variant-at-a-specific-site-was-not-called
-*** Hap.py
-Format de sortie :
-#+begin_src r
-vcf_field_names(vcf, tag = "FORMAT")
-#+end_src
-
-#+RESULTS:
-: FORMAT BD    1      String  Decision for call (TP/FP/FN/N)
-: FORMAT BK    1      String  Sub-type for decision (match/mismatch type)
-: FORMAT BVT   1      String  High-level variant type (SNP|INDEL).
-: FORMAT BLT   1      String  High-level location type (het|homref|hetalt|homa
-
-am = genotype mismatch
-lm = allele/haplotype mismatch
-. = non vu
-**** On vérifie que am = genotype mismatch
-référence  = T/T
-high-confidence = T/C
-notre = C/C
-#+begin_src sh
-bcftools filter -i 'POS=19196584'  /Work/Groups/bisonex/data/giab/GRCh38/HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz | grep -v '#'
-bcftools filter -i 'POS=19196584'  ../out/NA12878_NIST7035-dbsnp/variantCalling/haplotypecaller/NA12878_NIST.vcf.gz | grep -v '#'
-#+end_src
-
-#+RESULTS:
-: NC_000022.11    19196584        .       T       C       50      PASS    platforms=5;platformnames=Illumina,PacBio,10X,Ion,Solid;datasets=5;datasetnames=HiSeqPE300x,CCS15kb_20kb,10XChromiumLR,IonExome,SolidSE75bp;callsets=7;callsetnames=HiSeqPE300xGATK,CCS15kb_20kbDV,CCS15kb_20kbGATK4,HiSeqPE300xfreebayes,10XLRGATK,IonExomeTVC,SolidSE75GATKHC;datasetsmissingcall=CGnormal;callable=CS_HiSeqPE300xGATK_callable,CS_CCS15kb_20kbDV_callable,CS_10XLRGATK_callable,CS_CCS15kb_20kbGATK4_callable,CS_HiSeqPE300xfreebayes_callable GT:PS:DP:ADALL:AD:GQ    0/1:.:781:109,123:138,150:348
-: NC_000022.11    19196584        rs1061325       T       C       59.32   PASS    AC=2;AF=1;AN=2;DB;DP=2;ExcessHet=0;FS=0;MLEAC=1;MLEAF=0.5;MQ=60;QD=29.66;SOR=2.303      GT:AD:DP:GQ:PL  1/1:0,2:2:6:71,6,0
-**** On vérifie que lm = allele/haplotype mismatch
-
-référence  = CAA/CAA
-high-confidence = CA/CA
-notre = C/CA
-
-#+begin_src sh
- bcftools filter -i 'POS=31277416'  /Work/Groups/bisonex/data/giab/GRCh38/HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz | grep -v '#'
- bcftools filter -i 'POS=31277416'  ../out/NA12878_NIST7035-dbsnp/variantCalling/haplotypecaller/NA12878_NIST.vcf.gz | grep -v '#'
-#+end_src
-
-#+RESULTS:
-: NC_000022.11    31277416        .       CA      C       50      PASS    platforms=3;platformnames=Illumina,PacBio,10X;datasets=3;datasetnames=HiSeqPE300x,CCS15kb_20kb,10XChromiumLR;callsets=4;callsetnames=HiSeqPE300xGATK,CCS15kb_20kbDV,10XLRGATK,HiSeqPE300xfreebayes;datasetsmissingcall=CCS15kb_20kb,CGnormal,IonExome,SolidSE75bp;callable=CS_HiSeqPE300xGATK_callable;difficultregion=GRCh38_AllHomopolymers_gt6bp_imperfectgt10bp_slop5,GRCh38_SimpleRepeat_imperfecthomopolgt10_slop5  GT:PS:DP:ADALL:AD:GQ    1/1:.:465:16,229:0,190:129
-: NC_000022.11    31277416        rs57244615      CAA     C,CA    389.02  PASS    AC=1,1;AF=0.5,0.5;AN=2;BaseQRankSum=0.37;DB;DP=37;ExcessHet=0;FS=0;MLEAC=1,1;MLEAF=0.5,0.5;MQ=60;MQRankSum=0;QD=13.41;ReadPosRankSum=-0.651;SOR=0.572    GT:AD:DP:GQ:PL  1/2:5,10,14:29:64:406,202,313,64,0,88
-*** Génération de reads
-Biblio récente
-https://www.biorxiv.org/content/10.1101/2022.03.29.486262v1.full.pdf
-Parmi ceux qui gèrent les variations
-- *simuscop* reads non centré sur les zones de capture
-- *NEAT: exome* mais trop lent en pratique
-- *Reseq* exome
-- gensim : pas d'exome
-- pIRS : non plus
-- varsim : non plus
-  ...
-
-  Temps de calcul selon l'article de reseq https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02265-7
-  #+begin_quote
-  Due to ReSeq’s effective parallelization, its elapsed times are low for this benchmark with 48 virtual CPUs (Additional file 1: Figure S34b,e). In contrast, the single-threaded processes implemented in perl or python have strikingly high elapsed times. This is well visible in Hs-HiX-TruSeq and applies to the training of pIRS (over a week), NEAT (several days), and BEAR (half a week) as well as the simulation of NEAT (close to 2 weeks) and BEAR (several weeks).
-Biblio : https://www.nature.com/articles/s41437-022-00577-3
-  #+end_quote
-Divers
-- Liste ancienne : https://www.biostars.org/p/128762/
-https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02265-7
 * Idées
 ** Validation analytique
 mail Yannis : données patients +/- simulées
@@ -232,12 +10,11 @@ Résumé : https://www.nist.gov/programs-projects/genome-bottle
 Manuscript : https://www.nature.com/articles/s41587-019-0054-x.epdf?author_access_token=E_1bL0MtBBwZr91xEsy6B9RgN0jAjWel9jnR3ZoTv0OLNnFBR7rUIZNDXq0DIKdg3w6KhBF8Rz2RWQFFc0St45kC6CZs3cDYc87HNHovbWSOubJHDa9CeJV-pN0BW_mQ0n7cM13KF2JRr_wAAn524w%3D%3D
 
 Article comparant les variant calling : https://www.biorxiv.org/content/10.1101/2020.12.11.422022v1.full.pdf
-**** KILL Tester le séquencage aussi
-CLOSED: [2023-01-30 lun. 18:30]
+**** Tester le séquencage aussi
 Depuis un fastq correspondant à Illumina  https://github.com/genome-in-a-bottle/giab_data_indexes
    puis on compare le VCF avec les "high confidence"
 On séquence directement NA12878 -> inutile pour le pipeline seul
-**** TODO Tester seul la partie bioinformatique
+**** Tester seul la partie bioinformatique
    Tout résumé ici : https://www.nist.gov/programs-projects/genome-bottle
 
 - methode https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/NA12878/analysis/Illumina_PlatinumGenomes_NA12877_NA12878_09162015/IlluminaPlatinumGenomes-user-guide.pdf
@@ -484,8 +261,10 @@ Impossible de faire marcher les tests Car il ne trouve pas le module Bio::Tools:
 Soumis
 ** WAIT Package Spip https://github.com/NixOS/nixpkgs/pull/247476
 ** TODO Happy :happy:
-*** PROJ PR python 3 upstream
-*** PROJ nixpkgs en l'état
+*** TODO PR python 3 upstream
+SCHEDULED: <2023-10-14 Sat>
+*** TODO nixpkgs en l'état
+SCHEDULED: <2023-10-14 Sat>
 ** PROJ SpliceAI
 ** TODO Bamsurgeon
 /Entered on/ [2023-05-13 Sat 19:11]
@@ -1298,7 +1077,8 @@ bcftools isec dbsnp_mwi_norm.vcf.gz clinvar_mwi.vcf.gz -n=2
 #+RESULTS:
 | NC_000020.11 | 10652589 | G | A | 11 |
 | NC_000020.11 | 10652589 | G | C | 11 |
-******* TODO Sur dbSNP chr20 non
+******* DONE Sur dbSNP chr20 non
+CLOSED: [2023-10-07 Sat 17:57]
 #+begin_src sh :dir ~/code/bisonex/test_isec
 bcftools norm -m -any dbSNP_common_chr20 -o dbSNP_common_chr20_norm.vcf.gz
 #+end_src
@@ -2293,7 +2073,8 @@ Test
 
 cp work/bf/437ae511958509e43072f032f4d495/small.tab.gz tests/vep-spip.tab.gz
 cp work/d5/3b1244b5ae83d54409ee0d456e8c55/small_cadd.tab.gz tests/vep-cadd-splice.tab.gz
-**** STRT Package Nix spliceAI
+**** DONE Package Nix spliceAI
+CLOSED: [2023-10-07 Sat 18:00]
 On utilise le tensorflow fourni avec nix (branche spliceai)
 Il faut LD_PRELOAD=/lib64/libcuda.so  pour l'exécution
 ***** DONE Version CPU non optimisé
@@ -2715,9 +2496,11 @@ En prenant tous les transcrits, 66% missense (total = 22085)
       1 transcript_ablation
     390 upstream_gene_variant
 
-**** TODO Ajout LOEUF et pli
+**** KILL Ajout LOEUF et pli
+CLOSED: [2023-10-07 Sat 17:57]
 plugin VEP
-**** TODO NMD
+**** DONE NMD
+CLOSED: [2023-10-07 Sat 17:57]
 plugin VEP
 **** KILL Ajout LOEUF
 CLOSED: [2023-04-19 mer. 16:32]
@@ -3004,8 +2787,8 @@ CLOSED: [2023-09-17 Sun 23:15] SCHEDULED: <2023-09-17 Sun>
 ** DONE Figure: nombre de publication par aligneur
 CLOSED: [2023-09-19 Tue 16:54] SCHEDULED: <2023-09-19 Tue>
 /Entered on/ [2023-09-19 Tue 08:43]
-** TODO Biblio performance aligneur
-SCHEDULED: <2023-10-01 Sun>
+** DONE Biblio performance aligneur
+CLOSED: [2023-10-06 Fri 16:51] SCHEDULED: <2023-10-01 Sun>
 ** TODO Biblio appel de variant
 SCHEDULED: <2023-10-01 Sun>
 ** TODO Figure: nombre de publication par appel de variant
@@ -6215,7 +5998,8 @@ CLOSED: [2023-08-12 Sat 15:55]
 *** KILL Platinum genome
 CLOSED: [2023-06-14 Wed 22:37]
 https://emea.illumina.com/platinumgenomes.html
-*** TODO Séquencer NA12878 :cento:hg001:
+*** DONE Séquencer NA12878 :cento:hg001:
+CLOSED: [2023-10-07 Sat 17:59]
 Discussion avec Paul : sous-traitant ne nous donnera pas les données, il faut commander l'ADN
 **** DONE ADN commandé
 CLOSED: [2023-06-30 Fri 22:29]
@@ -6297,16 +6081,18 @@ CLOSED: [2023-08-06 Sun 20:24] SCHEDULED: <2023-08-06 Sun>
 CLOSED: [2023-08-06 Sun 20:24] SCHEDULED: <2023-08-06 Sun>
 **** KILL Tester si le panel Twist Alliance VCGS Exome suffit
 CLOSED: [2023-07-31 Mon 22:31] SCHEDULED: <2023-07-30 Sun>
-**** PROJ Comparer happy et happy-vcfeval :giab:
-**** WAIT Mail cento pour demande le type de capture
+**** DONE Mail cento pour demande le type de capture
+CLOSED: [2023-10-07 Sat 17:59]
 /Entered on/ [2023-08-07 Mon 20:40]
+Twist exome
+*** PROJ Comparer happy et happy-vcfeval :giab:
 ** TODO Données CHM13 :chm:
 https://github.com/lh3/CHM-eval
 *** TODO Run ERR1341793
-SCHEDULED: <2023-10-07 Sat>
+SCHEDULED: <2023-10-14 Sat>
 (raw reads ERR1341793_1.fastq.gz and ERR1341793_2.fastq.gz downloaded from https://www.ebi.ac.uk/ena/browser/view/ERR1341793)
 *** TODO Run ERR1341796
-SCHEDULED: <2023-10-07 Sat>
+SCHEDULED: <2023-10-14 Sat>
 ** TODO Insilico :cento:
 *** TODO tous les variants centogène
 **** DONE Extraire liste des SNVs
@@ -8550,7 +8336,7 @@ Et on a trop de variants en sortie (7330 !)
 **** DONE Mail Paul avec résultats filtre en T2T + nouveau schéma
 CLOSED: [2023-09-17 Sun 23:15] SCHEDULED: <2023-09-17 Sun>
 * Ré-interprétation
-** PROJ Lancer tests sur données brutes [146/250]
+** PROJ Lancer tests sur données brutes [167/250] <(samples.csv)>  <(runs.waiting)>
 - [X] 100222_63015289
 - [X] 1600304839_63051311
 - [X] 1900007827_62913191
@@ -8679,7 +8465,7 @@ CLOSED: [2023-09-17 Sun 23:15] SCHEDULED: <2023-09-17 Sun>
 - [X] 2200517952_63060399
 - [X] 2200519525_63060439
 - [X] 2200524009_63014044
-- [ ] 2200524609_63014046
+- [X] 2200524609_63014046
 - [X] 2200524616_63014048
 - [X] 2200533429_63060425
 - [X] 2200539735_63060406
@@ -8698,26 +8484,26 @@ CLOSED: [2023-09-17 Sun 23:15] SCHEDULED: <2023-09-17 Sun>
 - [X] 2200570001_63021580
 - [X] 2200570025_63021490
 - [X] 2200570035_63021491
-- [ ] 2200570042_63021493
-- [ ] 2200570050_63021494
-- [ ] 2200579897_63024910
-- [ ] 2200583995_63024866
-- [ ] 2200584035_63024905
-- [ ] 2200584069_63024888
-- [ ] 2200584126_63024810
-- [ ] 2200589507_63026712
-- [ ] 2200597365_63027994
-- [ ] 2200597480_63027988
-- [ ] 2200597752_63026853
-- [ ] 2200597778_63027992
-- [ ] 22005977_63026903
-- [ ] 2200609031_63026527
-- [ ] 2200614198_63113928
-- [ ] 2200620372_63030821
-- [ ] 2200620442_63030810
-- [ ] 2200620498_63030816
-- [ ] 2200620628_63031031
-- [ ] 2200622310_63030984
+- [X] 2200570042_63021493
+- [X] 2200570050_63021494
+- [X] 2200579897_63024910
+- [X] 2200583995_63024866
+- [X] 2200584035_63024905
+- [X] 2200584069_63024888
+- [X] 2200584126_63024810
+- [X] 2200589507_63026712
+- [X] 2200597365_63027994
+- [X] 2200597480_63027988
+- [X] 2200597752_63026853
+- [X] 2200597778_63027992
+- [X] 22005977_63026903
+- [X] 2200609031_63026527
+- [X] 2200614198_63113928
+- [X] 2200620372_63030821
+- [X] 2200620442_63030810
+- [X] 2200620498_63030816
+- [X] 2200620628_63031031
+- [X] 2200622310_63030984
 - [ ] 2200622355_63030956
 - [ ] 2200625369_63028699
 - [ ] 2200625410_63028697
@@ -8801,7 +8587,11 @@ CLOSED: [2023-09-17 Sun 23:15] SCHEDULED: <2023-09-17 Sun>
 - [ ] 2300409593_63130874
 - [ ] 2300409612_63130980
 - [ ] 2300417623_63131524
-
+** TODO Variants manqués
+*** TODO 63012582: chr10:g.102230760
+*** TODO 63060439: chr15:g.26869324 = Problème de profondeur DP=15
+SCHEDULED: <2023-10-08 Sun>
+GT:AD:DP:GQ:PL 0/1:9,6:15:99:103,0,213
 * Résultats
 ** TODO Speed-up BWA-mem
 SCHEDULED: <2023-10-08 Sun>

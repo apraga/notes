@@ -81,88 +81,68 @@ CLOSED: [2023-09-28 Thu 11:43]
 *** DONE Envoyer première version à Xavier
 CLOSED: [2023-09-17 Sun 22:31] SCHEDULED: <2023-09-17 Sun>
 /Entered on/ [2023-09-17 Sun 16:08]
-** Examen bactério
+** TODO Examen bactério :partiel:
 :PROPERTIES:
 :CATEGORY: bacterio
 :END:
-*** DONE Passe 1 [37/37]
-CLOSED: [2023-10-06 Fri 23:27] SCHEDULED: <2023-10-01 Sun>
-- [X] https://scut.srht.site/notes/medecine/20230528235124-culture.html
-- [X] <[Syphilis]> - ~/annex/public/lessons/microbiologie/bacterio/Syphilis.pdf
-- [X] A. agalactiae
-- [X] <[ATBg staphylocoques]> - "~/annex/public/lessons/microbiologie/bacterio/Antibiogramme - Staphylocoques.pdf"
-- [X] <[ATBg streptococque, entérocoque, Listeria]> - "~/annex/public/lessons/microbiologie/bacterio/Antibiogramme - Streptococoque, enterocoque, Listeria.pdf"
-- [X] <[Chlamydia, mycoplasme]> - "~/annex/public/lessons/microbiologie/bacterio/Chlamydia - mycoplasmes.pdf"
-- [X] <[Moléculaire (bactério)]> - "~/annex/public/lessons/microbiologie/bacterio/Diagnostic moleculaire - Bacteriologie.pdf"
-- [X] <[EBCU etiologies]> - "~/annex/public/lessons/microbiologie/bacterio/EBCU etiologies.pdf"
-- [X] <[ECBU interpretation]> - "~/annex/public/lessons/microbiologie/bacterio/ECBU interpretation.pdf"
-- [X] <[ECBU pre-analytique]> - "~/annex/public/lessons/microbiologie/bacterio/ECBU pre-analytique.pdf"
-- [X] <[EEQ, CIQ]> - "~/annex/public/lessons/microbiologie/bacterio/EEQ, CIQ.pdf"
-- [X] <[Examen microscopique]> - "~/annex/public/lessons/microbiologie/bacterio/Examen microscopique.pdf"
-- [X] <[Gonocoque]> - "~/annex/public/lessons/microbiologie/bacterio/Gonocoque.pdf"
-- [X] <[Hygiène]> - "~/annex/public/lessons/microbiologie/bacterio/Hygiène.pdf"
-- [X] <[Infections cutanees]> - "~/annex/public/lessons/microbiologie/bacterio/Infections cutanees.pdf"
-- [X] <[MALDI - TOF]> - "~/annex/public/lessons/microbiologie/bacterio/MALDI - TOF.pdf"
-- [X] <[Pre-analytique bacteriologie]> - "~/annex/public/lessons/microbiologie/bacterio/Pre-analytique bacteriologie.pdf"
-- [X] <[Qualite]> - "~/annex/public/lessons/microbiologie/bacterio/Qualite.pdf"
-- [X] <[Securite Transfusionnelle]> - "~/annex/public/lessons/microbiologie/bacterio/Securite Transfusionnelle.pdf"
-- [X] <[Serologie bacterienne]> - "~/annex/public/lessons/microbiologie/bacterio/Serologie bacterienne.pdf"
-- [X] <[Tests rapides antigeniques et moleculaires]> - "~/annex/public/lessons/microbiologie/bacterio/Tests rapides antigeniques et moleculaires.pdf"
-- [X] <[Tuberculose]> - "~/annex/public/lessons/microbiologie/bacterio/Tuberculose.pdf"
-- [X] <[Typage moleculaire bacterien]> - "~/annex/public/lessons/microbiologie/bacterio/Typage moleculaire bacterien.pdf"
-- [X] <[Vaccination personnel]> - "~/annex/public/lessons/microbiologie/bacterio/Vaccination personnel.pdf"
-- [X] <[Angines bacteriennes]> - "~/annex/public/lessons/microbiologie/bacterio/Angines bacteriennes.pdf"
-- [X] <[Antibiogramme - Enterobacteries]> - "~/annex/public/lessons/microbiologie/bacterio/Antibiogramme - Enterobacteries.pdf"
-- [X] <[Antibiogramme]> - "~/annex/public/lessons/microbiologie/bacterio/Antibiogramme.pdf"
-- [X] <[Cambylobacter]> - "~/annex/public/lessons/microbiologie/bacterio/Cambylobacter.pdf"
-- [X] <[Clostridium difficile]> - "~/annex/public/lessons/microbiologie/bacterio/Clostridium difficile.pdf"
-- [X] <[Concentrations critiques]> - "~/annex/public/lessons/microbiologie/bacterio/Concentrations critiques.pdf"
-- [X] <[Conseil anti-infectieux]> - "~/annex/public/lessons/microbiologie/bacterio/Conseil anti-infectieux.pdf"
-- [X] <[Declaration obligatoire]> - "~/annex/public/lessons/microbiologie/bacterio/Declaration obligatoire.pdf"
-- [X] <[Hemocultures 1]> - "~/annex/public/lessons/microbiologie/bacterio/Hemocultures 1.pdf"
-- [X] <[Hemocultures 2]> - "~/annex/public/lessons/microbiologie/bacterio/Hemocultures 2.pdf"
-- [X] <[Legionelle]> - "~/annex/public/lessons/microbiologie/bacterio/Legionelle.pdf"
-- [X] <[Meningites bacteriennes ]> - "~/annex/public/lessons/microbiologie/bacterio/Meningites bacteriennes .pdf"
-- [X] <[Salmonelle - shigelle]> - "~/annex/public/lessons/microbiologie/bacterio/Salmonelle - shigelle.pdf"
-*** TODO Passe 2 [37/37]
-SCHEDULED: <2023-10-06 Fri> DEADLINE: <2023-10-10 Tue>
-- [ ] https://scut.srht.site/notes/medecine/20230528235124-culture.html
-- [ ] <[Syphilis]> - ~/annex/public/lessons/microbiologie/bacterio/Syphilis.pdf
-- [ ] A. agalactiae
-- [ ] [[~/annex/public/lessons/microbiologie/bacterio/Antibiogramme - Staphylocoques.pdf][ATBg staphylocoques]]
-- [ ] [[~/annex/public/lessons/microbiologie/bacterio/Antibiogramme - Streptococoque, enterocoque, Listeria.pdf][ATBg streptococque, entérocoque, Listeria]]
-- [ ] [[~/annex/public/lessons/microbiologie/bacterio/Chlamydia - mycoplasmes.pdf][Chlamydia, mycoplasme]]
-- [ ] [[~/annex/public/lessons/microbiologie/bacterio/Diagnostic moleculaire - Bacteriologie.pdf][Moléculaire (bactério)]]
-- [ ] [[~/annex/public/lessons/microbiologie/bacterio/EBCU etiologies.pdf][EBCU etiologies]]
-- [ ] [[~/annex/public/lessons/microbiologie/bacterio/ECBU interpretation.pdf][ECBU interpretation]]
-- [ ] [[~/annex/public/lessons/microbiologie/bacterio/ECBU pre-analytique.pdf][ECBU pre-analytique]]
-- [ ] [[~/annex/public/lessons/microbiologie/bacterio/EEQ, CIQ.pdf][EEQ, CIQ]]
-- [ ] [[~/annex/public/lessons/microbiologie/bacterio/Examen microscopique.pdf][Examen microscopique]]
-- [ ] [[~/annex/public/lessons/microbiologie/bacterio/Gonocoque.pdf][Gonocoque]]
-- [ ] [[~/annex/public/lessons/microbiologie/bacterio/Hygiène.pdf][Hygiène]]
-- [ ] [[~/annex/public/lessons/microbiologie/bacterio/Infections cutanees.pdf][Infections cutanees]]
-- [ ] [[~/annex/public/lessons/microbiologie/bacterio/MALDI - TOF.pdf][MALDI - TOF]]
-- [ ] [[~/annex/public/lessons/microbiologie/bacterio/Pre-analytique bacteriologie.pdf][Pre-analytique bacteriologie]]
-- [ ] [[~/annex/public/lessons/microbiologie/bacterio/Qualite.pdf][Qualite]]
-- [ ] [[~/annex/public/lessons/microbiologie/bacterio/Securite Transfusionnelle.pdf][Securite Transfusionnelle]]
-- [ ] [[~/annex/public/lessons/microbiologie/bacterio/Serologie bacterienne.pdf][Serologie bacterienne]]
-- [ ] [[~/annex/public/lessons/microbiologie/bacterio/Tests rapides antigeniques et moleculaires.pdf][Tests rapides antigeniques et moleculaires]]
-- [ ] [[~/annex/public/lessons/microbiologie/bacterio/Tuberculose.pdf][Tuberculose]]
-- [ ] [[~/annex/public/lessons/microbiologie/bacterio/Typage moleculaire bacterien.pdf][Typage moleculaire bacterien]]
-- [ ] [[~/annex/public/lessons/microbiologie/bacterio/Vaccination personnel.pdf][Vaccination personnel]]
-- [ ] [[~/annex/public/lessons/microbiologie/bacterio/Angines bacteriennes.pdf][Angines bacteriennes]]
-- [ ] [[~/annex/public/lessons/microbiologie/bacterio/Antibiogramme - Enterobacteries.pdf][Antibiogramme - Enterobacteries]]
-- [ ] [[~/annex/public/lessons/microbiologie/bacterio/Antibiogramme.pdf][Antibiogramme]]
-- [ ] [[~/annex/public/lessons/microbiologie/bacterio/Cambylobacter.pdf][Cambylobacter]]
-- [ ] [[~/annex/public/lessons/microbiologie/bacterio/Clostridium difficile.pdf][Clostridium difficile]]
-- [ ] [[~/annex/public/lessons/microbiologie/bacterio/Concentrations critiques.pdf][Concentrations critiques]]
-- [ ] [[~/annex/public/lessons/microbiologie/bacterio/Conseil anti-infectieux.pdf][Conseil anti-infectieux]]
-- [ ] [[~/annex/public/lessons/microbiologie/bacterio/Declaration obligatoire.pdf][Declaration obligatoire]]
-- [ ] [[~/annex/public/lessons/microbiologie/bacterio/Hemocultures 1.pdf][Hemocultures 1]]
-- [ ] [[~/annex/public/lessons/microbiologie/bacterio/Hemocultures 2.pdf][Hemocultures 2]]
-- [ ] [[~/annex/public/lessons/microbiologie/bacterio/Legionelle.pdf][Legionelle]]
-- [ ] [[~/annex/public/lessons/microbiologie/bacterio/Meningites bacteriennes .pdf][Meningites bacteriennes ]]
-- [ ] [[~/annex/public/lessons/microbiologie/bacterio/Salmonelle - shigelle.pdf][Salmonelle - shigelle]]
+*** TODO Cours
+SCHEDULED: <2023-10-07 Sat>
+- [1/5] <[Culture]> - https://scut.srht.site/notes/medecine/20230528235124-culture.html
+- [1/5] <[Syphilis]> - "~/annex/public/lessons/microbiologie/bacterio/Syphilis.pdf"
+- [1/5] A. agalactiae
+- [1/5] <[ATBg staphylocoques]> - "~/annex/public/lessons/microbiologie/bacterio/Antibiogramme - Staphylocoques.pdf"
+- [1/5] <[ATBg streptococque, entérocoque, Listeria]> - "~/annex/public/lessons/microbiologie/bacterio/Antibiogramme - Streptococoque, enterocoque, Listeria.pdf"
+- [1/5] <[Chlamydia, mycoplasme]> - "~/annex/public/lessons/microbiologie/bacterio/Chlamydia - mycoplasmes.pdf"
+- [1/5] <[Moléculaire (bactério)]> - "~/annex/public/lessons/microbiologie/bacterio/Diagnostic moleculaire - Bacteriologie.pdf"
+- [1/5] <[EBCU etiologies]> - "~/annex/public/lessons/microbiologie/bacterio/EBCU etiologies.pdf"
+- [1/5] <[ECBU interpretation]> - "~/annex/public/lessons/microbiologie/bacterio/ECBU interpretation.pdf"
+- [1/5] <[ECBU pre-analytique]> - "~/annex/public/lessons/microbiologie/bacterio/ECBU pre-analytique.pdf"
+- [1/5] <[EEQ, CIQ]> - "~/annex/public/lessons/microbiologie/bacterio/EEQ, CIQ.pdf"
+- [1/5] <[Examen microscopique]> - "~/annex/public/lessons/microbiologie/bacterio/Examen microscopique.pdf"
+- [1/5] <[Gonocoque]> - "~/annex/public/lessons/microbiologie/bacterio/Gonocoque.pdf"
+- [1/5] <[Hygiène]> - "~/annex/public/lessons/microbiologie/bacterio/Hygiène.pdf"
+- [1/5] <[Infections cutanees]> - "~/annex/public/lessons/microbiologie/bacterio/Infections cutanees.pdf"
+- [1/5] <[MALDI - TOF]> - "~/annex/public/lessons/microbiologie/bacterio/MALDI - TOF.pdf"
+- [1/5] <[Pre-analytique microbiologie/bacteriologie]> - "~/annex/public/lessons/bacterio/Pre-analytique bacteriologie.pdf"
+- [1/5] <[Qualite]> - "~/annex/public/lessons/microbiologie/bacterio/Qualite.pdf"
+- [1/5] <[Securite Transfusionnelle]> - "~/annex/public/lessons/microbiologie/bacterio/Securite Transfusionnelle.pdf"
+- [1/5] <[Serologie bacterienne]> - "~/annex/public/lessons/microbiologie/bacterio/Serologie bacterienne.pdf"
+- [1/5] <[Tests rapides antigeniques et moleculaires]> - "~/annex/public/lessons/microbiologie/bacterio/Tests rapides antigeniques et moleculaires.pdf"
+- [1/5] <[Tuberculose]> - "~/annex/public/lessons/microbiologie/bacterio/Tuberculose.pdf"
+- [1/5] <[Moleculaire]> - "~/annex/public/lessons/microbiologie/bacterio/Typage moleculaire bacterien.pdf"
+- [1/5] <[Vaccination personnel]> - "~/annex/public/lessons/microbiologie/bacterio/Vaccination personnel.pdf"
+- [1/5] <[Angines]> - "~/annex/public/lessons/microbiologie/bacterio/Angines bacteriennes.pdf"
+- [1/5] <[ATBg Enterobacteries]> - "~/annex/public/lessons/microbiologie/bacterio/Antibiogramme - Enterobacteries.pdf"
+- [1/5] <[ATBg]> - "~/annex/public/lessons/microbiologie/bacterio/Antibiogramme.pdf"
+- [1/5] <[Cambylobacter]> - "~/annex/public/lessons/microbiologie/bacterio/Cambylobacter.pdf"
+- [1/5] <[Clostridium difficile]> - "~/annex/public/lessons/microbiologie/bacterio/Clostridium difficile.pdf"
+- [1/5] <[Concentrations critiques]> - "~/annex/public/lessons/microbiologie/bacterio/Concentrations critiques.pdf"
+- [1/5] <[Conseil anti-infectieux]> - "~/annex/public/lessons/microbiologie/bacterio/Conseil anti-infectieux.pdf"
+- [1/5] <[Declaration obligatoire]> - "~/annex/public/lessons/microbiologie/bacterio/Declaration obligatoire.pdf"
+- [1/5] <[Hemocultures 1]> - "~/annex/public/lessons/microbiologie/bacterio/Hemocultures 1.pdf"
+- [1/5] <[Hemocultures 2]> - "~/annex/public/lessons/microbiologie/bacterio/Hemocultures 2.pdf"
+- [1/5] <[Legionelle]> - "~/annex/public/lessons/microbiologie/bacterio/Legionelle.pdf"
+- [1/5] <hMeningites bacteriennes ]> - "~/annex/public/lessons/microbiologie/bacterio/Meningites bacteriennes .pdf"
+- [1/5] <[Salmonelle - shigelle]> - "~/annex/public/lessons/microbiologie/bacterio/Salmonelle - shigelle.pdf"
+*** DONE Passe 1
+CLOSED: [2023-10-05 Thu 16:58] DEADLINE: <2023-10-06 Fri> SCHEDULED: <2023-10-06 Fri>
+*** TODO Passe 2: autres cours
+DEADLINE: <2023-10-11 Wed> SCHEDULED: <2023-10-07 Sat>
+** TODO Présentation dépistage hémato :presentation:
+:PROPERTIES:
+:CATEGORY: bacterio
+:END:
+*** DONE Refaire analyse bouche
+CLOSED: [2023-10-07 Sat 17:49] SCHEDULED: <2023-10-07 Sat>
+*** TODO Traitement patients bouches
+SCHEDULED: <2023-10-07 Sat>
+*** TODO Faire analyse selles
+SCHEDULED: <2023-10-07 Sat>
+*** TODO Traitement patients selles
+SCHEDULED: <2023-10-07 Sat>
+*** TODO Présenter Torres 2022
+SCHEDULED: <2023-10-07 Sat>
+*** TODO Présenter Santibiez 2023
 * Santé
 ** DONE Envoyer devis dentiste à mutuelle
 CLOSED: [2023-09-21 Thu 23:03] SCHEDULED: <2023-09-19 Tue>
@@ -331,7 +311,8 @@ CLOSED: [2022-12-04 Sun 22:13]
 CLOSED: [2022-10-22 Sat 23:33] DEADLINE: <2022-09-17 Sat>
 **** DONE Poster v0.1
 CLOSED: [2022-11-27 Sun 11:28]
-**** TODO Article
+**** DONE Article
+CLOSED: [2023-10-07 Sat 18:00]
 ***** DONE v0.1
 CLOSED: [2022-12-04 Sun 22:13]
 ***** DONE Corrections v0.2
@@ -344,7 +325,8 @@ CLOSED: [2023-06-11 Sun 18:39] SCHEDULED: <2023-05-28 Sun>
 CLOSED: [2023-07-02 Sun 10:52] SCHEDULED: <2023-06-11 Sun>
 ***** DONE Relancer avant soumission
 CLOSED: [2023-07-21 Fri 17:46] SCHEDULED: <2023-07-16 Sun>
-**** TODO Soumission
+**** DONE Soumission
+CLOSED: [2023-10-07 Sat 18:00]
 ***** Notes
   List journaux acceptant case reports
   https://static1.squarespace.com/static/5db7b349364ff063a6c58ab8/t/6071fb065173800a11ccd0a2/1618082566620/Case+Report+Journals+2020.pdf
@@ -776,7 +758,10 @@ CLOSED: [2023-09-14 Thu 22:44] SCHEDULED: <2023-09-11 Mon>
 *** DONE Commander pièce courroie de distribution
 CLOSED: [2023-09-14 Thu 22:44] SCHEDULED: <2023-09-11 Mon>
 /Entered on/ [2023-09-11 Mon 19:12]
-*** TODO Prendre rendez vous courroie distribution
+*** DONE Prendre rendez vous courroie distribution
+CLOSED: [2023-10-07 Sat 17:48]
+*** TODO Changer phare arrière droit
+SCHEDULED: <2023-10-08 Sun>
 * Moto
 :PROPERTIES:
 :CATEGORY: moto
@@ -807,17 +792,21 @@ CLOSED: [2023-07-29 Sat 10:57] SCHEDULED: <2023-07-29 Sat>
 ** TODO Résilier box
 SCHEDULED: <2023-10-08 Sun>
 /Entered on/ [2023-10-03 Tue 23:11]
-** TODO Résilier ordures ménagères
-SCHEDULED: <2023-10-06 Fri>
-** TODO Payer ordures ménagères
-SCHEDULED: <2023-10-06 Fri>
+** WAIT Résilier ordures ménagères
+SCHEDULED: <2023-10-14 Sat>
+Mail envoyé
+** DONE Payer ordures ménagères
+CLOSED: [2023-10-07 Sat 17:48] SCHEDULED: <2023-10-06 Fri>
 /Entered on/ [2023-10-03 Tue 23:12]
+Envoyé TIP. RIB déjà envoyé ? Sinon à repaer <2023-10-07 Sat>
 * Banque
 :PROPERTIES:
 :CATEGORY: banque
 :END:
 ** WAIT Demande remboursement frais compte bancaire
+SCHEDULED: <2023-10-07 Sat>
 /Entered on/ [2023-08-13 Sun 11:16]
+À surveiller
 * Programmation :cs:
 ** Gentoo :gentoo:
 *** GURU :guru:
@@ -937,7 +926,8 @@ CLOSED: [2023-10-01 Sun 16:15] SCHEDULED: <2023-10-01 Sun>
 ** DONE papers : git lfs (non encrypté)
 CLOSED: [2023-09-30 Sat 19:19] SCHEDULED: <2023-09-30 Sat>
 ** TODO Comprendre pourquoi git-annex ne lit pas home
-SCHEDULED: <2023-10-07 Sat>
+SCHEDULED: <2023-10-08 Sun>
 /Entered on/ [2023-10-01 Sun 21:31]
 Unable to parse git config
 cannot find git-annex
+
