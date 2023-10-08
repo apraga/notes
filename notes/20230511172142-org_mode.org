@@ -3,7 +3,10 @@
 :END:
 #+title: Org-mode
 #+filetags: emacs
-* Bibliographie
+* Bibliographie annotée
+:PROPERTIES:
+:ID: 2abb4210-0777-427c-8655-83306186c18c
+:END:
 3 possibilités d'avoir une bibliographie annotée
 
 ** Avec citar:
@@ -30,7 +33,13 @@ Configuration
 Voir
 https://cachestocaches.com/2020/3/org-mode-annotated-bibliography/
 
-** Org-mode
+** Org-mode directement avec org-bibtex
+On récupère le bibtex avec notre function. Puis il faut couper le bloc bibtex (d% avec evil) et le transformer en entrée "org-mode" avec org-bibtex-yank
+Il faut exporter le tout en bibtex avec org-bibtex
+
++: formattage org-mode
+
+
 * Dired
 ( pour voir les détails
 ) pour voir les infos git
