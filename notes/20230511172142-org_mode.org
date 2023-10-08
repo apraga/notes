@@ -3,20 +3,34 @@
 :END:
 #+title: Org-mode
 #+filetags: emacs
-* Bibliography
-Avec doom-emacs, dans config.el
+* Bibliographie
+3 possibilités d'avoir une bibliographie annotée
+
+** Avec citar:
+Il faut un fichier bibtex contenant les citations.
+Lorsqu'on insère une citation, on peut créer une note (dans citar-notes-paths) pour cet article..
+S'il y a un arsticle correspondant dans citar-library-paths, on peut également l'ouvrir.
+
+Inconvénient: pour chercher les notes, il faut un fichier org qui regroupe les citations par catégories.
+
+Configuration
 #+begin_src lisp
 (after! citar
-  (setq! citar-bibliography '("~/org/recherche/wdr45/memoire.bib"))
+  (setq! citar-bibliography '("~/roam/research/biblio.bib" "~/roam/research/bisonex/thesis/biblio.bib")
+         citar-library-paths '("~/papers/bisonex")
+         citar-notes-paths '("~/roam/research/references")
+         citar-org-roam-subdir "~/roam/research/references/")))
 #+end_src
   Dans le fichier, il faut
   #+begin_src org
 #+bibliography: memoire.bib
   #+end_src
-  IL faut également biber
-  Enfin, il faut utiliser (:lang (latex +latemk))
-  Sous freebsd, il faut apparement forcer org-latex-pdf-process à latexmk..
 
+** Org-mode tangle
+Voir
+https://cachestocaches.com/2020/3/org-mode-annotated-bibliography/
+
+** Org-mode
 * Dired
 ( pour voir les détails
 ) pour voir les infos git

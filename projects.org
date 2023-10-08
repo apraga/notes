@@ -86,45 +86,43 @@ CLOSED: [2023-09-17 Sun 22:31] SCHEDULED: <2023-09-17 Sun>
 :CATEGORY: bacterio
 :END:
 *** TODO Cours
-      - [1/5] <(Angines)>
-- [1/5] <(ATBg Enterobacteries)>
-- [1/5] <(ATBg staphylocoques)>
-- [1/5] <(ATBg streptococque, entérocoque, Listeria)>
-- [1/5] <(ATBg)>
-- [1/5] <(Angines)>
-- [1/5] <(Cambylobacter)>
-- [1/5] <(Chlamydia, mycoplasme)>
-- [1/5] <(Clostridium difficile)>
-- [1/5] <(Concentrations critiques)>
-- [1/5] <(Conseil anti-infectieux)>
-- [1/5] <(Culture)>
-- [1/5] <(Declaration obligatoire)>
-- [1/5] <(Diagnostic moléculaire)>
-- [1/5] <(EBCU etiologies)>
-- [1/5] <(ECBU interpretation)>
-- [1/5] <(ECBU pre-analytique)>
-- [1/5] <(EEQ, CIQ)>
-- [1/5] <(Examen microscopique)>
-- [1/5] <(Gonocoque)>
-- [1/5] <(Hemocultures 1)>
-- [1/5] <(Hemocultures 2)>
-- [1/5] <(Hygiène)>
-- [1/5] <(Infections cutanees)>
-- [1/5] <(Legionelle)>
-- [1/5] <(MALDI)>
-- [1/5] <(Meningites bacteriennes)>
-- [1/5] <(Moleculaire)>
-- [1/5] <(Pré-analytique)>
-- [1/5] <(Qualité)>
-- [1/5] <(Salmonelle)>
-- [1/5] <(Securite Transfusionnelle)>
-- [1/5] <(Serologie bacterienne)>
-- [1/5] <(Syphilis)>
-- [1/5] <(Tests rapides)>
-- [1/5] <(Tuberculose)>
-- [1/5] <(Typage moléculaire)>
-- [1/5] <(Vaccination personnel)>
-- [1/5] A. agalactiae
+        - [1/5] <(Angines bacteriennes)>
+        - [1/5] <(Antibiogramme - Enterobacteries)>
+        - [1/5] <(Antibiogramme - Staphylocoques)>
+        - [1/5] <(Antibiogramme - Streptococoque, enterocoque, Listeria)>
+        - [1/5] <(Antibiogramme)>
+        - [1/5] <(Cambylobacter)>
+        - [1/5] <(Chlamydia - mycoplasmes)>
+        - [1/5] <(Clostridium difficile)>
+        - [1/5] <(Concentrations critiques)>
+        - [1/5] <(Conseil anti-infectieux)>
+        - [1/5] <(Declaration obligatoire)>
+        - [1/5] <(Diagnostic moleculaire - Bacteriologie)>
+        - [1/5] <(EBCU etiologies)>
+        - [1/5] <(ECBU interpretation)>
+        - [1/5] <(ECBU pre-analytique)>
+        - [1/5] <(EEQ, CIQ)>
+        - [1/5] <(Examen microscopique)>
+        - [1/5] <(Gonocoque)>
+        - [1/5] <(Hemocultures 1)>
+        - [1/5] <(Hemocultures 2)>
+        - [1/5] <(Hygiène)>
+        - [1/5] <(Infections cutanees)>
+        - [1/5] <(Legionelle)>
+        - [1/5] <(MALDI - TOF)>
+        - [1/5] <(Meningites bacteriennes )>
+        - [1/5] <(Pre-analytique bacteriologie)>
+        - [1/5] <(Qualité)>
+        - [1/5] <(Salmonelle - shigelle)>
+        - [1/5] <(Securite Transfusionnelle)>
+        - [1/5] <(Serologie bacterienne)>
+        - [1/5] <(Syphilis)>
+        - [1/5] <(Tests rapides antigeniques et moleculaires)>
+        - [1/5] <(Tuberculose)>
+        - [1/5] <(Typage moleculaire bacterien)>
+        - [1/5] <(Vaccination personnel)>
+        - [1/5] <(Culture)>
+  - [1/5] A. agalactiae
 *** DONE Passe 1
 CLOSED: [2023-10-05 Thu 16:58] DEADLINE: <2023-10-06 Fri> SCHEDULED: <2023-10-06 Fri>
 *** TODO Passe 2: autres cours
