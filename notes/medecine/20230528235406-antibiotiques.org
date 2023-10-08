@@ -59,6 +59,8 @@ Résistance naturelle
 |                    |                            | H. influenza, N. gonorrhea                 |                                 |                     |
 |                    |                            | N. mengitidis                              |                                 |                     |
 
+PéniM = oxacilline, cloxacilline
+PéniA = amox
 
 |            | C2G                              | C3G orale (1)      | C3G injectable                  |
 |------------+----------------------------------+--------------------+---------------------------------|

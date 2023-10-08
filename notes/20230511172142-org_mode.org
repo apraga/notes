@@ -11,8 +11,17 @@
 
 ** Avec citar:
 Il faut un fichier bibtex contenant les citations.
-Lorsqu'on insère une citation, on peut créer une note (dans citar-notes-paths) pour cet article..
-S'il y a un arsticle correspondant dans citar-library-paths, on peut également l'ouvrir.
+Lorsqu'on insère une citation, on peut créer une note (dans citar-notes-paths) pour cet article avec "entrée"
+S'il y a un asticle correspondant dans citar-library-paths, on peut également l'ouvrir.
+Exemple
+
+#+begin_src org
+\* Research1
+- [cite:@saffari2001] Best review
+- [cite:@adang200] First review
+#+end_src
+
+
 
 Inconvénient: pour chercher les notes, il faut un fichier org qui regroupe les citations par catégories.
 

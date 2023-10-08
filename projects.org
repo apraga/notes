@@ -85,48 +85,82 @@ CLOSED: [2023-09-17 Sun 22:31] SCHEDULED: <2023-09-17 Sun>
 :PROPERTIES:
 :CATEGORY: bacterio
 :END:
-*** TODO Cours
-        - [1/5] <(Angines bacteriennes)>
-        - [1/5] <(Antibiogramme - Enterobacteries)>
-        - [1/5] <(Antibiogramme - Staphylocoques)>
-        - [1/5] <(Antibiogramme - Streptococoque, enterocoque, Listeria)>
-        - [1/5] <(Antibiogramme)>
-        - [1/5] <(Cambylobacter)>
-        - [1/5] <(Chlamydia - mycoplasmes)>
-        - [1/5] <(Clostridium difficile)>
-        - [1/5] <(Concentrations critiques)>
-        - [1/5] <(Conseil anti-infectieux)>
-        - [1/5] <(Declaration obligatoire)>
-        - [1/5] <(Diagnostic moleculaire - Bacteriologie)>
-        - [1/5] <(EBCU etiologies)>
-        - [1/5] <(ECBU interpretation)>
-        - [1/5] <(ECBU pre-analytique)>
-        - [1/5] <(EEQ, CIQ)>
-        - [1/5] <(Examen microscopique)>
-        - [1/5] <(Gonocoque)>
-        - [1/5] <(Hemocultures 1)>
-        - [1/5] <(Hemocultures 2)>
-        - [1/5] <(Hygiène)>
-        - [1/5] <(Infections cutanees)>
-        - [1/5] <(Legionelle)>
-        - [1/5] <(MALDI - TOF)>
-        - [1/5] <(Meningites bacteriennes )>
-        - [1/5] <(Pre-analytique bacteriologie)>
-        - [1/5] <(Qualité)>
-        - [1/5] <(Salmonelle - shigelle)>
-        - [1/5] <(Securite Transfusionnelle)>
-        - [1/5] <(Serologie bacterienne)>
-        - [1/5] <(Syphilis)>
-        - [1/5] <(Tests rapides antigeniques et moleculaires)>
-        - [1/5] <(Tuberculose)>
-        - [1/5] <(Typage moleculaire bacterien)>
-        - [1/5] <(Vaccination personnel)>
-        - [1/5] <(Culture)>
-  - [1/5] A. agalactiae
-*** DONE Passe 1
+*** DONE Passe 1: tous [37/37]
 CLOSED: [2023-10-05 Thu 16:58] DEADLINE: <2023-10-06 Fri> SCHEDULED: <2023-10-06 Fri>
-*** TODO Passe 2: autres cours
+  - [X] <(Angines bacteriennes)>
+  - [X] <(Antibiogramme - Enterobacteries)>
+  - [X] <(Antibiogramme - Staphylocoques)>
+  - [X] <(Antibiogramme - Streptococoque, enterocoque, Listeria)>
+  - [X] <(Antibiogramme)>
+  - [X] <(Cambylobacter)>
+  - [X] <(Chlamydia - mycoplasmes)>
+  - [X] <(Clostridium difficile)>
+  - [X] <(Concentrations critiques)>
+  - [X] <(Conseil anti-infectieux)>
+  - [X] <(Declaration obligatoire)>
+  - [X] <(Diagnostic moleculaire - Bacteriologie)>
+  - [X] <(EBCU etiologies)>
+  - [X] <(ECBU interpretation)>
+  - [X] <(ECBU pre-analytique)>
+  - [X] <(EEQ, CIQ)>
+  - [X] <(Examen microscopique)>
+  - [X] <(Gonocoque)>
+  - [X] <(Hemocultures 1)>
+  - [X] <(Hemocultures 2)>
+  - [X] <(Hygiène)>
+  - [X] <(Infections cutanees)>
+  - [X] <(Legionelle)>
+  - [X] <(MALDI - TOF)>
+  - [X] <(Meningites bacteriennes )>
+  - [X] <(Pre-analytique bacteriologie)>
+  - [X] <(Qualité)>
+  - [X] <(Salmonelle - shigelle)>
+  - [X] <(Securite Transfusionnelle)>
+  - [X] <(Serologie bacterienne)>
+  - [X] <(Syphilis)>
+  - [X] <(Tests rapides antigeniques et moleculaires)>
+  - [X] <(Tuberculose)>
+  - [X] <(Typage moleculaire bacterien)>
+  - [X] <(Vaccination personnel)>
+  - [X] <(Culture)>
+  - [X] A. agalactiae
+*** TODO Passe 2: cours non tobmé avec interro + révision + interro [2/33]
 DEADLINE: <2023-10-11 Wed> SCHEDULED: <2023-10-07 Sat>
+  - [ ] <(Angines bacteriennes)>
+  - [ ] <(Antibiogramme - Enterobacteries)>
+  - [ ] <(Antibiogramme - Staphylocoques)>
+  - [ ] <(Antibiogramme - Streptococoque, enterocoque, Listeria)>
+  - [ ] <(Antibiogramme)>
+  - [X] <(Cambylobacter)>
+  - [ ] <(Chlamydia - mycoplasmes)>
+  - [ ] <(Clostridium difficile)>
+  - [ ] <(Concentrations critiques)>
+  - [ ] <(Conseil anti-infectieux)>
+  - [ ] <(Declaration obligatoire)>
+  - [ ] <(Diagnostic moleculaire - Bacteriologie)>
+  - [ ] <(EBCU etiologies)>
+  - [ ] <(ECBU interpretation)>
+  - [ ] <(ECBU pre-analytique)>
+  - [ ] <(Examen microscopique)>
+  - [ ] <(Gonocoque)>
+  - [ ] <(Hemocultures 1)>
+  - [ ] <(Hemocultures 2)>
+  - [ ] <(Infections cutanees)>
+  - [ ] <(Legionelle)>
+  - [ ] <(MALDI - TOF)>
+  - [ ] <(Meningites bacteriennes )>
+  - [ ] <(Pre-analytique bacteriologie)>
+  - [ ] BMR (cours ? définition a minima)
+  - [ ] <(Qualité)>
+  - [ ] <(Salmonelle - shigelle)>
+  - [ ] <(Serologie bacterienne)>
+  - [X] <(Syphilis)>
+  - [ ] <(Tests rapides antigeniques et moleculaires)>
+  - [ ] <(Tuberculose)>
+  - [ ] <(Typage moleculaire bacterien)>
+  - [ ] <(Culture)>
+  - [ ] A. agalactiae
+
 ** TODO Présentation dépistage hémato :presentation:
 :PROPERTIES:
 :CATEGORY: bacterio
@@ -146,8 +180,13 @@ SCHEDULED: <2023-10-12 Thu>
 SCHEDULED: <2023-10-12 Thu>
 *** TODO Traitement patients selles
 SCHEDULED: <2023-10-09 Mon>
-*** TODO [#A] Présenter Torres 2022 "~/papers/bacterio/torres2022.pdf"
-SCHEDULED: <2023-10-07 Sat>
+*** DONE [#A] Résumer Torres 2022
+CLOSED: [2023-10-08 Sun 12:42] SCHEDULED: <2023-10-07 Sat>
+<[Pdf]> - "~/papers/bacterio/torres2022.pdf"
+<[Notes]> - "~/roam/research/biblio.org#** Multi-body-site colonization screening cultures for predicting multi-drug resistant Gram-negative and Gram-positive bacteremia in hematological patients"
+*** TODO Première version avec contexte, Torres et nos résultats
+SCHEDULED: <2023-10-08 Sun>
+"~/roam/research/presentations/bacterio/depistage hemato/notes.org#* Présentation"
 *** TODO Présenter Santibiez 2023
 * Santé
 ** DONE Envoyer devis dentiste à mutuelle
@@ -441,21 +480,21 @@ CLOSED: [2023-09-18 Mon 19:36] SCHEDULED: <2023-09-17 Sun>
 *** DONE Avis paul sur ACPA non
 CLOSED: [2023-10-02 Mon 21:58]
 *** TODO Corriger article
-SCHEDULED: <2023-10-08 Sun>
+SCHEDULED: <2023-10-15 Sun>
 **** TODO Ajouter images Dr Vidaud
-SCHEDULED: <2023-10-11 Wed>
+SCHEDULED: <2023-10-15 Sun>
 **** DONE Comprendre score LRR pour gain
 CLOSED: [2023-09-21 Thu 23:03] SCHEDULED: <2023-09-21 Thu>
 **** TODO Corriger discussion: remaniement complexe
-SCHEDULED: <2023-10-11 Wed>
+SCHEDULED: <2023-10-15 Sun>
 **** TODO Phénotype "mild" chez le père + détailler moléculaire
-SCHEDULED: <2023-10-11 Wed>
+SCHEDULED: <2023-10-15 Sun>
 **** TODO Traitement FBXW7 ?
-SCHEDULED: <2023-10-08 Sun>
+SCHEDULED: <2023-10-15 Sun>
 *** TODO Réponse reviewer
-SCHEDULED: <2023-10-08 Sun>
+SCHEDULED: <2023-10-15 Sun>
 *** TODO Correction Juliette
-SCHEDULED: <2023-10-10 Tue>
+SCHEDULED: <2023-10-15 Sun>
 *** TODO Resoumettre
 SCHEDULED: <2023-10-17 Tue>
 ** Apprendre le machine learning
@@ -775,8 +814,11 @@ CLOSED: [2023-09-14 Thu 22:44] SCHEDULED: <2023-09-11 Mon>
 /Entered on/ [2023-09-11 Mon 19:12]
 *** DONE Prendre rendez vous courroie distribution
 CLOSED: [2023-10-07 Sat 17:48]
-*** TODO Changer phare arrière droit
-SCHEDULED: <2023-10-08 Sun>
+*** DONE Changer phare arrière droit
+CLOSED: [2023-10-08 Sun 13:24] SCHEDULED: <2023-10-08 Sun>
+*** TODO Changer ampoule clignotant arrière droit
+SCHEDULED: <2023-10-15 Sun>
+Ampoule commandée
 * Moto
 :PROPERTIES:
 :CATEGORY: moto
@@ -919,13 +961,13 @@ CLOSED: [2023-10-01 Sun 16:15] SCHEDULED: <2023-09-30 Sat>
 - [X] private
 - [ ] data
 *** TODO depuis raspberry:/media/annex
-SCHEDULED: <2023-10-08 Sun>
+SCHEDULED: <2023-10-15 Sun>
 À vérifier
 - [X] public
 - [X] private
 - [ ] data
 *** TODO depuis laptop:~/annex
-SCHEDULED: <2023-10-08 Sun>
+SCHEDULED: <2023-10-15 Sun>
 - [ ] public
 - [ ] private
 - [ ] data
@@ -945,7 +987,7 @@ CLOSED: [2023-10-01 Sun 16:15] SCHEDULED: <2023-10-01 Sun>
 ** DONE papers : git lfs (non encrypté)
 CLOSED: [2023-09-30 Sat 19:19] SCHEDULED: <2023-09-30 Sat>
 ** TODO Comprendre pourquoi git-annex ne lit pas home
-SCHEDULED: <2023-10-08 Sun>
+SCHEDULED: <2023-10-15 Sun>
 /Entered on/ [2023-10-01 Sun 21:31]
 Unable to parse git config
 cannot find git-annex
