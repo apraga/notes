@@ -8335,7 +8335,7 @@ filter vep   : another 0 missed variants
 Et on a trop de variants en sortie (7330 !)
 **** DONE Mail Paul avec résultats filtre en T2T + nouveau schéma
 CLOSED: [2023-09-17 Sun 23:15] SCHEDULED: <2023-09-17 Sun>
-* Ré-interprétation
+* Ré-interprétation :reanalysis:
 ** PROJ Lancer tests sur données brutes [167/250] <(samples.csv)>  <(runs.waiting)>
 - [X] 100222_63015289
 - [X] 1600304839_63051311
@@ -8587,17 +8587,22 @@ CLOSED: [2023-09-17 Sun 23:15] SCHEDULED: <2023-09-17 Sun>
 - [ ] 2300409593_63130874
 - [ ] 2300409612_63130980
 - [ ] 2300417623_63131524
-** TODO Variants manqués
-*** TODO 63012582: chr10:g.102230760
-*** TODO 63060439: chr15:g.26869324 = Problème de profondeur DP=15
+** TODO Variants manqués :missed:
+*** TODO 63012582: chr10:g.102230760 :63012582:
+SCHEDULED: <2023-10-08 Sun>
+**** TODO image BAM cento
+**** TODO image BAM bisonex
+SCHEDULED: <2023-10-08 Sun>
+*** TODO 63060439: chr15:g.26869324 = Problème de profondeur DP=15 :63060439:
 SCHEDULED: <2023-10-08 Sun>
 GT:AD:DP:GQ:PL 0/1:9,6:15:99:103,0,213
+**** TODO image BAM bisonex
 * Résultats
 ** TODO Speed-up BWA-mem
-SCHEDULED: <2023-10-08 Sun>
+SCHEDULED: <2023-10-15 Sun>
 
 ** TODO Speed-up Hapotypecaller
-SCHEDULED: <2023-10-08 Sun>
+SCHEDULED: <2023-10-15 Sun>
 * Communication
 ** DONE Mail NGS-diag
 CLOSED: [2023-10-06 Fri 08:04] SCHEDULED: <2023-10-06 Fri>
