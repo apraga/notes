@@ -50,7 +50,7 @@ CLOSED: [2023-10-01 Sun 14:49] SCHEDULED: <2023-09-26 Tue>
 *** DONE Envoyer dossier Anais et Luna
 CLOSED: [2023-10-04 Wed 19:35] SCHEDULED: <2023-10-04 Wed>
 *** TODO Envoyer mail syndicat des internes
-SCHEDULED: <2023-10-08 Sun>
+SCHEDULED: <2023-10-11 Wed>
 *** DONE Envoyer dossier à Mme Lucet à Grenoble
 CLOSED: [2023-10-04 Wed 19:35] SCHEDULED: <2023-10-05 Thu>
 Confirmé <2023-10-04 Wed>
@@ -124,7 +124,7 @@ CLOSED: [2023-10-05 Thu 16:58] DEADLINE: <2023-10-06 Fri> SCHEDULED: <2023-10-06
   - [X] <(Vaccination personnel)>
   - [X] <(Culture)>
   - [X] A. agalactiae
-*** TODO Passe 2: cours non tobmé avec interro + révision + interro [2/33]
+*** TODO Passe 2: cours non tobmé avec interro + révision + interro [4/34]
 DEADLINE: <2023-10-11 Wed> SCHEDULED: <2023-10-07 Sat>
   - [ ] <(Angines bacteriennes)>
   - [ ] <(Antibiogramme - Enterobacteries)>
@@ -146,9 +146,9 @@ DEADLINE: <2023-10-11 Wed> SCHEDULED: <2023-10-07 Sat>
   - [ ] <(Hemocultures 1)>
   - [ ] <(Hemocultures 2)>
   - [ ] <(Infections cutanees)>
-  - [ ] <(Legionelle)>
+  - [X] <(Legionelle)>
   - [ ] <(MALDI - TOF)>
-  - [ ] <(Meningites bacteriennes )>
+  - [X] <(Meningites bacteriennes)>
   - [ ] <(Pre-analytique bacteriologie)>
   - [ ] BMR (cours ? définition a minima)
   - [ ] <(Qualité)>
@@ -188,6 +188,9 @@ CLOSED: [2023-10-08 Sun 12:42] SCHEDULED: <2023-10-07 Sat>
 SCHEDULED: <2023-10-08 Sun>
 "~/roam/research/presentations/bacterio/depistage hemato/notes.org#* Présentation"
 *** TODO Présenter Santibiez 2023
+** DONE Dossier admnistratatif Trevenans
+CLOSED: [2023-10-09 Mon 22:30] SCHEDULED: <2023-10-09 Mon>
+/Entered on/ [2023-10-09 Mon 22:08]
 * Santé
 ** DONE Envoyer devis dentiste à mutuelle
 CLOSED: [2023-09-21 Thu 23:03] SCHEDULED: <2023-09-19 Tue>
@@ -793,6 +796,9 @@ Sera probablement refusée car via Amazon
 *** TODO Demande Amazon si Cooler master refuse
 SCHEDULED: <2023-10-14 Sat>
 Renvoie vers le constructeur ...
+** TODO Coudre fermeture éclair pantalon
+SCHEDULED: <2023-10-10 Tue>
+/Entered on/ [2023-10-09 Mon 22:09]
 * Voiture :voiture:
 ** Mazda 5
 :PROPERTIES:
@@ -860,6 +866,9 @@ Mail envoyé
 CLOSED: [2023-10-07 Sat 17:48] SCHEDULED: <2023-10-06 Fri>
 /Entered on/ [2023-10-03 Tue 23:12]
 Envoyé TIP. RIB déjà envoyé ? Sinon à repaer <2023-10-07 Sat>
+** DONE Course
+CLOSED: [2023-10-09 Mon 22:30] SCHEDULED: <2023-10-09 Mon>
+/Entered on/ [2023-10-09 Mon 22:09]
 * Banque
 :PROPERTIES:
 :CATEGORY: banque
