@@ -124,7 +124,7 @@ CLOSED: [2023-10-05 Thu 16:58] DEADLINE: <2023-10-06 Fri> SCHEDULED: <2023-10-06
   - [X] <(Vaccination personnel)>
   - [X] <(Culture)>
   - [X] A. agalactiae
-*** TODO Passe 2: cours non tobmé avec interro + révision + interro [4/34]
+*** TODO Passe 2: cours non tobmé avec interro + révision + interro [5/34]
 DEADLINE: <2023-10-11 Wed> SCHEDULED: <2023-10-07 Sat>
   - [ ] <(Angines bacteriennes)>
   - [ ] <(Antibiogramme - Enterobacteries)>
@@ -152,7 +152,7 @@ DEADLINE: <2023-10-11 Wed> SCHEDULED: <2023-10-07 Sat>
   - [ ] <(Pre-analytique bacteriologie)>
   - [ ] BMR (cours ? définition a minima)
   - [ ] <(Qualité)>
-  - [ ] <(Salmonelle - shigelle)>
+  - [X] <(Salmonelle - shigelle)>
   - [ ] <(Serologie bacterienne)>
   - [X] <(Syphilis)>
   - [ ] <(Tests rapides antigeniques et moleculaires)>
@@ -178,8 +178,8 @@ CLOCK: [2023-10-07 Sat 18:02]--[2023-10-07 Sat 19:30] =>  1:28
 SCHEDULED: <2023-10-12 Thu>
 *** TODO Réunion audrey
 SCHEDULED: <2023-10-12 Thu>
-*** TODO Traitement patients selles
-SCHEDULED: <2023-10-09 Mon>
+*** DONE Traitement patients selles
+CLOSED: [2023-10-10 Tue 22:52] SCHEDULED: <2023-10-09 Mon>
 *** DONE [#A] Résumer Torres 2022
 CLOSED: [2023-10-08 Sun 12:42] SCHEDULED: <2023-10-07 Sat>
 <[Pdf]> - "~/papers/bacterio/torres2022.pdf"
@@ -191,6 +191,9 @@ SCHEDULED: <2023-10-08 Sun>
 ** DONE Dossier admnistratatif Trevenans
 CLOSED: [2023-10-09 Mon 22:30] SCHEDULED: <2023-10-09 Mon>
 /Entered on/ [2023-10-09 Mon 22:08]
+** DONE Envoyer choix d'option précoce
+CLOSED: [2023-10-10 Tue 23:12] SCHEDULED: <2023-10-10 Tue>
+/Entered on/ [2023-10-10 Tue 23:12]
 * Santé
 ** DONE Envoyer devis dentiste à mutuelle
 CLOSED: [2023-09-21 Thu 23:03] SCHEDULED: <2023-09-19 Tue>
@@ -797,7 +800,7 @@ Sera probablement refusée car via Amazon
 SCHEDULED: <2023-10-14 Sat>
 Renvoie vers le constructeur ...
 ** TODO Coudre fermeture éclair pantalon
-SCHEDULED: <2023-10-10 Tue>
+SCHEDULED: <2023-10-11 Wed>
 /Entered on/ [2023-10-09 Mon 22:09]
 * Voiture :voiture:
 ** Mazda 5
