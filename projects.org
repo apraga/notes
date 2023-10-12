@@ -124,7 +124,7 @@ CLOSED: [2023-10-05 Thu 16:58] DEADLINE: <2023-10-06 Fri> SCHEDULED: <2023-10-06
   - [X] <(Vaccination personnel)>
   - [X] <(Culture)>
   - [X] A. agalactiae
-*** TODO Passe 2: cours non tobmé avec interro + révision + interro [5/34]
+*** TODO Passe 2: cours non tobmé avec interro + révision + interro [9/35]
 DEADLINE: <2023-10-11 Wed> SCHEDULED: <2023-10-07 Sat>
   - [ ] <(Angines bacteriennes)>
   - [ ] <(Antibiogramme - Enterobacteries)>
@@ -132,8 +132,9 @@ DEADLINE: <2023-10-11 Wed> SCHEDULED: <2023-10-07 Sat>
   - [ ] <(Antibiogramme - Streptococoque, enterocoque, Listeria)>
   - [ ] <(Antibiogramme)>
   - [X] <(Cambylobacter)>
-  - [ ] <(Chlamydia - mycoplasmes)>
-  - [ ] <(Clostridium difficile)>
+  - [ ] Mécanisme résistance antibio
+  - [X] <(Chlamydia - mycoplasmes)>
+  - [X] <(Clostridium difficile)>
   - [ ] <(Concentrations critiques)>
   - [ ] <(Conseil anti-infectieux)>
   - [ ] <(Declaration obligatoire)>
@@ -142,7 +143,7 @@ DEADLINE: <2023-10-11 Wed> SCHEDULED: <2023-10-07 Sat>
   - [ ] <(ECBU interpretation)>
   - [ ] <(ECBU pre-analytique)>
   - [ ] <(Examen microscopique)>
-  - [ ] <(Gonocoque)>
+  - [X] <(Gonocoque)>
   - [ ] <(Hemocultures 1)>
   - [ ] <(Hemocultures 2)>
   - [ ] <(Infections cutanees)>
@@ -153,7 +154,7 @@ DEADLINE: <2023-10-11 Wed> SCHEDULED: <2023-10-07 Sat>
   - [ ] BMR (cours ? définition a minima)
   - [ ] <(Qualité)>
   - [X] <(Salmonelle - shigelle)>
-  - [ ] <(Serologie bacterienne)>
+  - [X] <(Serologie bacterienne)>
   - [X] <(Syphilis)>
   - [ ] <(Tests rapides antigeniques et moleculaires)>
   - [ ] <(Tuberculose)>
@@ -175,17 +176,17 @@ CLOSED: [2023-10-07 Sat 19:30] SCHEDULED: <2023-10-07 Sat>
 CLOCK: [2023-10-07 Sat 18:02]--[2023-10-07 Sat 19:30] =>  1:28
 :END:
 *** TODO Revoir avec Audrey pour différence (bleu et jaune)
-SCHEDULED: <2023-10-12 Thu>
+SCHEDULED: <2023-10-16 Mon>
 *** TODO Réunion audrey
-SCHEDULED: <2023-10-12 Thu>
+SCHEDULED: <2023-10-16 Mon>
 *** DONE Traitement patients selles
 CLOSED: [2023-10-10 Tue 22:52] SCHEDULED: <2023-10-09 Mon>
 *** DONE [#A] Résumer Torres 2022
 CLOSED: [2023-10-08 Sun 12:42] SCHEDULED: <2023-10-07 Sat>
 <[Pdf]> - "~/papers/bacterio/torres2022.pdf"
 <[Notes]> - "~/roam/research/biblio.org#** Multi-body-site colonization screening cultures for predicting multi-drug resistant Gram-negative and Gram-positive bacteremia in hematological patients"
-*** TODO Première version avec contexte, Torres et nos résultats
-SCHEDULED: <2023-10-08 Sun>
+*** DONE Première version avec contexte, Torres et nos résultats
+CLOSED: [2023-10-11 Wed 21:47] SCHEDULED: <2023-10-08 Sun>
 "~/roam/research/presentations/bacterio/depistage hemato/notes.org#* Présentation"
 *** TODO Présenter Santibiez 2023
 ** DONE Dossier admnistratatif Trevenans
@@ -495,8 +496,9 @@ CLOSED: [2023-09-21 Thu 23:03] SCHEDULED: <2023-09-21 Thu>
 SCHEDULED: <2023-10-15 Sun>
 **** TODO Phénotype "mild" chez le père + détailler moléculaire
 SCHEDULED: <2023-10-15 Sun>
-**** TODO Traitement FBXW7 ?
-SCHEDULED: <2023-10-15 Sun>
+**** DONE Traitement FBXW7 ?
+CLOSED: [2023-10-11 Wed 16:08] SCHEDULED: <2023-10-15 Sun>
+Lié à NF1 et non FBXW7 (voir mail V. Laithier)
 *** TODO Réponse reviewer
 SCHEDULED: <2023-10-15 Sun>
 *** TODO Correction Juliette
@@ -799,9 +801,13 @@ Sera probablement refusée car via Amazon
 *** TODO Demande Amazon si Cooler master refuse
 SCHEDULED: <2023-10-14 Sat>
 Renvoie vers le constructeur ...
-** TODO Coudre fermeture éclair pantalon
-SCHEDULED: <2023-10-11 Wed>
+** DONE Coudre fermeture éclair pantalon
+CLOSED: [2023-10-11 Wed 12:48] SCHEDULED: <2023-10-11 Wed>
 /Entered on/ [2023-10-09 Mon 22:09]
+** WAIT certificat de baptême
+SCHEDULED: <2023-10-18 Wed>
+/Entered on/ [2023-10-11 Wed 23:13]
+Message envoyé sur le site 2023-10-11 Wed
 * Voiture :voiture:
 ** Mazda 5
 :PROPERTIES:
@@ -856,7 +862,7 @@ CLOSED: [2023-07-29 Sat 10:57] SCHEDULED: <2023-07-29 Sat>
 CLOSED: [2023-07-29 Sat 10:57] SCHEDULED: <2023-07-29 Sat>
 #+category: maison
 ** TODO Résilier box
-SCHEDULED: <2023-10-11 Wed>
+SCHEDULED: <2023-10-13 Fri>
 /Entered on/ [2023-10-03 Tue 23:11]
 ** TODO Résilier eau
 SCHEDULED: <2023-10-25 Wed>
@@ -946,6 +952,49 @@ Notamment Ollie Charles's 24 days of GHC Extensions,
    Introduction du concept
 3. [[https://dl.acm.org/doi/pdf/10.1145/158511.158524][Imperative functional programming]]
    Application des monads poru résoudre le problème IO
+
+** Julia
+:PROPERTIES:
+:CATEGORY: julia
+:END:
+*** TODO Juliacon 2023
+:PROPERTIES:
+:ID:       42f6a7bf-ac90-4737-884e-c35187776a4c
+:END:
+- [ ] <[Graphs, matrices]> - <yt-play "X2JEWdCFf70">
+- [ ] <[Alan, julia and climate]> - <yt-play "SclkiqCn4Cs">
+- [ ] <[Sherlocks Homes, mathematics and julia]> - <yt-play "zX-U6-6Prso">
+- [ ] <[Sound synthesis]> - <yt-play "SvnDr9nnOZs">
+- [ ] <[JuMP by example]> - <yt-play "rIan_XbYyaM">
+- [ ] <[neurophysiological symbolic modeling]> - <yt-play "qC6tzsn8Uxc">
+- [ ] <yt-play "ipDCx174Qkw">
+- [ ] <yt-play "hKa2eTeb_lo">
+- [ ] <yt-play "4omFGfcvvOY">
+- [ ] <yt-play "d7SA36kVaq0">
+- [ ] <yt-play "5uF3VqgjiVE">
+- [ ] <yt-play "jIuRXzo4m38">
+- [ ] <yt-play "iUarLpmZmco">
+- [ ] <yt-play "WVT9wJegC6Q">
+- [ ] <yt-play "ZVvP7rAIvkE">
+- [ ] <yt-play "RXjjTQffen0">
+- [ ] <yt-play "TpyHGaCB8P4">
+- [ ] <yt-play "ksh-CNM2YJU">
+- [ ] <yt-play "_sZdWVZeKqI">
+- [ ] <yt-play "_Y6mNrN7eWA">
+- [ ] <yt-play "tnw_BI2tRaA">
+- [ ] <yt-play "qgmgg_Bzgyg">
+- [ ] <yt-play "Nlq3J7PCB_Q">
+- [ ] <yt-play "ruxYAY5_bfE">
+- [ ] <yt-play "-C7Zbh6UTgk">
+- [ ] <[machine learing for biological data]> - <yt-play "Q9eYgwvJfWE">
+- [X] <[Genomic analysis]> - <yt-play "egWrDz6RDRs">
+- [ ] <[MRI denoising]> - <yt-play "dOsuIBUUDc4">
+- [ ] <[modeling neural control circuit]> - <yt-play "f2XVrDoF35A">
+- [ ] <[earth system software]> - <yt-play "O2rANteGTTY">
+- [ ] <[fracture]> - <yt-play "6zt-TEUuMu8">
+- [ ] <[fluid dynamic]> - <yt-play "R9b1xiqQtC8">
+- [ ] <[Parquet]> - <yt-play "-QRacAGsxOI">
+- [ ] <[pipeline]> - <yt-play "ECERq8BHvn4">
 
 * Backups
 :PROPERTIES:

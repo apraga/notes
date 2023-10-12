@@ -1972,6 +1972,15 @@ VOUS, non confirmé sanger
 Mail envoyé Alexis
 
 Vu avec Paul : on laisse DP >= 30 si c'est la seule occurence
+*** TODO Bug mésohelios: les jobs se font killer :bug:
+/Entered on/ [2023-10-11 Wed 12:06]
+**** DONE Comprendre pourquoi
+CLOSED: [2023-10-11 Wed 16:06] SCHEDULED: <2023-10-11 Wed>
+Utilisateurs déconnectés à 4h du matin tous les jours
+**** STRT Démarrer nextflow avec sbatch
+SCHEDULED: <2023-10-11 Wed>
+**** TODO Mettre à jour documentation
+SCHEDULED: <2023-10-13 Fri>
 ** DONE Mettre à jour spip pour corriger bug 62982239 : variant trop long (?)
 CLOSED: [2023-09-22 Fri 22:22] SCHEDULED: <2023-09-21 Thu>
 /Entered on/ [2023-09-21 Thu 23:11]
@@ -2792,12 +2801,19 @@ CLOSED: [2023-10-06 Fri 16:51] SCHEDULED: <2023-10-01 Sun>
 ** TODO Biblio appel de variant
 SCHEDULED: <2023-10-01 Sun>
 ** TODO Figure: nombre de publication par appel de variant
-SCHEDULED: <2023-10-04 Wed>
+SCHEDULED: <2023-10-13 Fri>
 /Entered on/ [2023-09-19 Tue 08:43]
-** TODO Figure: nombre d'articles citant les principaux aligneur par année
-SCHEDULED: <2023-10-03 Tue>
+** KILL Figure: nombre d'articles citant les principaux aligneur par année
+CLOSED: [2023-10-11 Wed 23:54] SCHEDULED: <2023-10-03 Tue>
+Il faudrait utiliser pubmed en local, sinon c'est 10 000 requete par aligner !
+
+** DONE Figure: nombre d'articles citant les principaux aligneur
+CLOSED: [2023-10-12 Thu 23:58] SCHEDULED: <2023-10-12 Thu>
+Il faudrait utiliser pubmed en local, sinon c'est 10 000 requete par aligner !
+On se base sur
+
 ** TODO Figure: nombre d'exomes par années
-SCHEDULED: <2023-10-10 Tue>
+SCHEDULED: <2023-10-18 Wed>
 /Entered on/ [2023-09-19 Tue 08:43]
 * Tests :tests:
 ** KILL Non régression : version prod
@@ -8306,7 +8322,7 @@ VEP chooses one block of annotation per variant, using an ordered set of criteri
 **** DONE Mail alexis
 CLOSED: [2023-08-20 Sun 13:45] SCHEDULED: <2023-08-20 Sun>
 **** TODO Données simuscop 200x
-SCHEDULED: <2023-10-10 Tue>
+SCHEDULED: <2023-10-18 Wed>
 **** DONE En T2T avec liftover (filtre = spip) : ok mais lent et trop de variants :tests:
 CLOSED: [2023-09-17 Sun 17:13] SCHEDULED: <2023-09-17 Sun>
 1. Conversion en bed
@@ -8336,7 +8352,7 @@ Et on a trop de variants en sortie (7330 !)
 **** DONE Mail Paul avec résultats filtre en T2T + nouveau schéma
 CLOSED: [2023-09-17 Sun 23:15] SCHEDULED: <2023-09-17 Sun>
 * Ré-interprétation :reanalysis:
-** STRT Lancer tests sur données brutes [187/250] <(samples.csv)>  <(runs.waiting)>
+** STRT Lancer tests sur données brutes [225/250] <(samples.csv)>  <(runs.waiting)>
 SCHEDULED: <2023-10-08 Sun>
 - [X] 100222_63015289
 - [X] 1600304839_63051311
@@ -8525,44 +8541,44 @@ SCHEDULED: <2023-10-08 Sun>
 - [X] 2200694789_63042862
 - [X] 2200694858_63042702
 - [X] 2200694917_63042696
-- [ ] 2200699290_63043047
-- [ ] 2200699345_63040238
-- [ ] 2200699383_63043050
-- [ ] 2200699412_63040731
-- [ ] 220071551_63048935
-- [ ] 2200731515_63048963
-- [ ] 2200748145_63051198
-- [ ] 2200748171_63051213
-- [ ] 2200751046_63051249
-- [ ] 2200751101_63051234
-- [ ] 2200766471_63054590
-- [ ] 2200767731_63054595
-- [ ] 2200767822_63054464
-- [ ] 2200775505_63060410
-- [ ] 2200850441_63019345
-- [ ] 220597589_63026879
-- [ ] 2300003253_63060430
-- [ ] 2300005679_63060370
-- [ ] 2300009914_63060390
-- [ ] 2300028784_63060001
-- [ ] 2300036815_63063357
-- [ ] 2300055382_63061874
-- [ ] 2300055421_63061871
-- [ ] 2300055440_63061880
-- [ ] 230006894_63064950
-- [ ] 2300071111_63070356
-- [ ] 2300083434_63071675
-- [ ] 2300103609_63076239
-- [ ] 2300104572_63076232
-- [ ] 2300109602_63076765
-- [ ] 2300109665_63076770
-- [ ] 2300119721_63078732
-- [ ] 2300137773_63078133
-- [ ] 2300137834_63078123
-- [ ] 2300167821_63086183
-- [ ] 2300172698_63113453
-- [ ] 2300188216_63090609
-- [ ] 2300188281_63090632
+- [X] 2200699290_63043047
+- [X] 2200699345_63040238
+- [X] 2200699383_63043050
+- [X] 2200699412_63040731
+- [X] 220071551_63048935
+- [X] 2200731515_63048963
+- [X] 2200748145_63051198
+- [X] 2200748171_63051213
+- [X] 2200751046_63051249
+- [X] 2200751101_63051234
+- [X] 2200766471_63054590
+- [X] 2200767731_63054595
+- [X] 2200767822_63054464
+- [X] 2200775505_63060410
+- [X] 2200850441_63019345
+- [X] 220597589_63026879
+- [X] 2300003253_63060430
+- [X] 2300005679_63060370
+- [X] 2300009914_63060390
+- [X] 2300028784_63060001
+- [X] 2300036815_63063357
+- [X] 2300055382_63061874
+- [X] 2300055421_63061871
+- [X] 2300055440_63061880
+- [X] 230006894_63064950
+- [X] 2300071111_63070356
+- [X] 2300083434_63071675
+- [X] 2300103609_63076239
+- [X] 2300104572_63076232
+- [X] 2300109602_63076765
+- [X] 2300109665_63076770
+- [X] 2300119721_63078732
+- [X] 2300137773_63078133
+- [X] 2300137834_63078123
+- [X] 2300167821_63086183
+- [X] 2300172698_63113453
+- [X] 2300188216_63090609
+- [X] 2300188281_63090632
 - [ ] 2300188800_63090616
 - [ ] 2300193193645_63090623
 - [ ] 2300193668_63090611
