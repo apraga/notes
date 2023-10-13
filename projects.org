@@ -124,28 +124,28 @@ CLOSED: [2023-10-05 Thu 16:58] DEADLINE: <2023-10-06 Fri> SCHEDULED: <2023-10-06
   - [X] <(Vaccination personnel)>
   - [X] <(Culture)>
   - [X] A. agalactiae
-*** TODO Passe 2: cours non tobmé avec interro + révision + interro [10/35]
+*** TODO Passe 2: cours non tobmé avec interro + révision + interro [20/35]
 DEADLINE: <2023-10-11 Wed> SCHEDULED: <2023-10-07 Sat>
   - [ ] <(Angines bacteriennes)>
-  - [ ] <(Antibiogramme - Enterobacteries)>
-  - [ ] <(Antibiogramme - Staphylocoques)>
-  - [ ] <(Antibiogramme - Streptococoque, enterocoque, Listeria)>
-  - [ ] <(Antibiogramme)>
+  - [X] <(Antibiogramme - Enterobacteries)>
+  - [X] <(Antibiogramme - Staphylocoques)>
+  - [X] <(Antibiogramme - Streptococoque, enterocoque, Listeria)>
+  - [X] <(Antibiogramme)>
   - [X] <(Cambylobacter)>
   - [ ] Mécanisme résistance antibio
   - [X] <(Chlamydia - mycoplasmes)>
   - [X] <(Clostridium difficile)>
-  - [ ] <(Concentrations critiques)>
-  - [ ] <(Conseil anti-infectieux)>
+  - [X] <(Concentrations critiques)>
+  - [X] <(Conseil anti-infectieux)>
   - [X] <(Declaration obligatoire)>
-  - [ ] <(Diagnostic moleculaire - Bacteriologie)>
+  - [X] <(Diagnostic moleculaire - Bacteriologie)>
   - [ ] <(EBCU etiologies)>
   - [ ] <(ECBU interpretation)>
   - [ ] <(ECBU pre-analytique)>
   - [ ] <(Examen microscopique)>
   - [X] <(Gonocoque)>
-  - [ ] <(Hemocultures 1)>
-  - [ ] <(Hemocultures 2)>
+  - [X] <(Hemocultures 1)>
+  - [X] <(Hemocultures 2)>
   - [ ] <(Infections cutanees)>
   - [X] <(Legionelle)>
   - [ ] <(MALDI - TOF)>
@@ -156,7 +156,7 @@ DEADLINE: <2023-10-11 Wed> SCHEDULED: <2023-10-07 Sat>
   - [X] <(Salmonelle - shigelle)>
   - [X] <(Serologie bacterienne)>
   - [X] <(Syphilis)>
-  - [ ] <(Tests rapides antigeniques et moleculaires)>
+  - [X] <(Tests rapides antigeniques et moleculaires)>
   - [ ] <(Tuberculose)>
   - [ ] <(Typage moleculaire bacterien)>
   - [ ] <(Culture)>
@@ -939,6 +939,9 @@ At this point you have enough knowledge to begin experimenting with various libr
 50%
 
 *** HOLD [[books.org::Haskell%20Programming%20From%20First%20Principles][Haskell programming from first principles]]
+*** TODO 24 days of haskell
+**** TODO <[Hackage 2015]> - "https://conscientiousprogrammer.com/blog/2015/11/30/haskell-tidbits-24-days-of-hackage-2015-day-1-introduction-and-stack/"
+**** TODO <[GHC extensions]> - "https://blog.ocharles.org.uk/pages/2014-12-01-24-days-of-ghc-extensions.html"
 *** GHC
 **** GHC commentary
 Notamment Ollie Charles's 24 days of GHC Extensions,
@@ -985,8 +988,8 @@ Notamment Ollie Charles's 24 days of GHC Extensions,
 - [ ] <yt-play "qgmgg_Bzgyg">
 - [ ] <yt-play "Nlq3J7PCB_Q">
 - [ ] <yt-play "ruxYAY5_bfE">
-- [ ] <yt-play "-C7Zbh6UTgk">
-- [ ] <[machine learing for biological data]> - <yt-play "Q9eYgwvJfWE">
+- [ ] <[Biomakie.jl]> - <yt-play "-C7Zbh6UTgk">
+- [X] <[machine learing for biological data]> - <yt-play "Q9eYgwvJfWE">
 - [X] <[Genomic analysis]> - <yt-play "egWrDz6RDRs">
 - [ ] <[MRI denoising]> - <yt-play "dOsuIBUUDc4">
 - [ ] <[modeling neural control circuit]> - <yt-play "f2XVrDoF35A">

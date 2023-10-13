@@ -2828,25 +2828,26 @@ CLOSED: [2023-09-26 Tue 11:26] SCHEDULED: <2023-09-22 Fri>
 :END:
 ** DONE Flowchart pipeline (avec T2T)
 CLOSED: [2023-09-17 Sun 23:15] SCHEDULED: <2023-09-17 Sun>
-** DONE Figure: nombre de publication par aligneur
+** Aligneur
+*** DONE Figure: nombre de publication par aligneur
 CLOSED: [2023-09-19 Tue 16:54] SCHEDULED: <2023-09-19 Tue>
 /Entered on/ [2023-09-19 Tue 08:43]
-** DONE Biblio performance aligneur
-CLOSED: [2023-10-06 Fri 16:51] SCHEDULED: <2023-10-01 Sun>
-** TODO Biblio appel de variant
-SCHEDULED: <2023-10-01 Sun>
-** TODO Figure: nombre de publication par appel de variant
-SCHEDULED: <2023-10-13 Fri>
-/Entered on/ [2023-09-19 Tue 08:43]
-** KILL Figure: nombre d'articles citant les principaux aligneur par année
+*** DONE Biblio performance aligneur <(biblio aligneur)> <(aligneur)>
+CLOSED: [2023-10-13 Fri 17:40] SCHEDULED: <2023-10-01 Sun>
+*** DONE Figure: nombre d'articles citant les principaux aligneur par année
 CLOSED: [2023-10-11 Wed 23:54] SCHEDULED: <2023-10-03 Tue>
 Il faudrait utiliser pubmed en local, sinon c'est 10 000 requete par aligner !
-
-** DONE Figure: nombre d'articles citant les principaux aligneur
+*** DONE Figure: nombre d'articles citant les principaux aligneur
 CLOSED: [2023-10-12 Thu 23:58] SCHEDULED: <2023-10-12 Thu>
 Il faudrait utiliser pubmed en local, sinon c'est 10 000 requete par aligner !
 On se base sur
 
+** Appel de variant
+*** TODO Biblio <(biblio appel variant)> <(appel variant)>
+SCHEDULED: <2023-10-13 Fri>
+*** TODO Figure: nombre de publication par appel de variant
+SCHEDULED: <2023-10-13 Fri>
+/Entered on/ [2023-09-19 Tue 08:43]
 ** TODO Figure: nombre d'exomes par années
 SCHEDULED: <2023-10-18 Wed>
 /Entered on/ [2023-09-19 Tue 08:43]
