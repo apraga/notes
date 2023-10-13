@@ -124,7 +124,7 @@ CLOSED: [2023-10-05 Thu 16:58] DEADLINE: <2023-10-06 Fri> SCHEDULED: <2023-10-06
   - [X] <(Vaccination personnel)>
   - [X] <(Culture)>
   - [X] A. agalactiae
-*** TODO Passe 2: cours non tobmé avec interro + révision + interro [9/35]
+*** TODO Passe 2: cours non tobmé avec interro + révision + interro [10/35]
 DEADLINE: <2023-10-11 Wed> SCHEDULED: <2023-10-07 Sat>
   - [ ] <(Angines bacteriennes)>
   - [ ] <(Antibiogramme - Enterobacteries)>
@@ -137,7 +137,7 @@ DEADLINE: <2023-10-11 Wed> SCHEDULED: <2023-10-07 Sat>
   - [X] <(Clostridium difficile)>
   - [ ] <(Concentrations critiques)>
   - [ ] <(Conseil anti-infectieux)>
-  - [ ] <(Declaration obligatoire)>
+  - [X] <(Declaration obligatoire)>
   - [ ] <(Diagnostic moleculaire - Bacteriologie)>
   - [ ] <(EBCU etiologies)>
   - [ ] <(ECBU interpretation)>

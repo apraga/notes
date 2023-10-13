@@ -1972,15 +1972,50 @@ VOUS, non confirmé sanger
 Mail envoyé Alexis
 
 Vu avec Paul : on laisse DP >= 30 si c'est la seule occurence
-*** TODO Bug mésohelios: les jobs se font killer :bug:
+*** DONE Bug mésohelios: les jobs se font killer :bug:
+CLOSED: [2023-10-13 Fri 11:44]
 /Entered on/ [2023-10-11 Wed 12:06]
 **** DONE Comprendre pourquoi
 CLOSED: [2023-10-11 Wed 16:06] SCHEDULED: <2023-10-11 Wed>
 Utilisateurs déconnectés à 4h du matin tous les jours
-**** STRT Démarrer nextflow avec sbatch
-SCHEDULED: <2023-10-11 Wed>
-**** TODO Mettre à jour documentation
-SCHEDULED: <2023-10-13 Fri>
+**** DONE Démarrer nextflow avec sbatch
+CLOSED: [2023-10-13 Fri 11:07] SCHEDULED: <2023-10-11 Wed>
+On retrouve le même bug avec squeue qui n'arrive pas à retrouver l'utilisateur en utilisant nextflow+nix
+Même en forcant USER et export NXF_OPTS='-D"user.name=apraga"'
+
+Test avec la version packagée sur mésocentre (il faut mettre à la main le dossier...): ok
+#+begin_src sh
+module load nextflow@23.04.3/gcc-12.1.0
+# Force it
+nextflow="/Softs/spack/opt/spack/linux-rocky8-x86_64/gcc-12.1.0/nextflow-23.04.3-qputqf2dmtvabpv76mizj63gbsa5irq3/bin/nextflow  -c /nix/store/q46gdjil6bbap0bcghpqimh1camzmlpx-nextflow.config"
+#+end_src
+
+Avec user.name= on a une exécution correcte :
+#+begin_src sh
+#!/bin/bash -l
+# Fichier submission.SBATCH
+
+#SBATCH --job-name="bisonex"
+#SBATCH --output=%x.%J.out   ## %x=job name, %J=job id
+#SBATCH --error=%x.%J.out
+ # walltime (hh:mm::ss) max is 8 days
+#SBATCH -t 24:00:00
+#SBATCH --partition=smp
+#SBATCH -c 1  ## request 16 cores (MAX is 32)
+#SBATCH --mem=12G ## (MAX is 96G)
+#SBATCH --mail-user=apraga@chu-besancon.fr
+#SBATCH --mail-type=END,FAIL   # notify when job end/fail
+
+module load nix/2.11.0
+
+# Otherwise job fails as it cannot write to $HOME/.nextflow
+export NXF_HOME=/Work/Users/apraga/.nextflow
+
+# user.name must be forced (again... our fix does not seem to work in nix)
+nextflow -Duser.name=apraga run main.nf -profile standard,helios --input=samples.csv --genome=GRCh38
+#+end_src
+**** DONE Mettre à jour documentation
+CLOSED: [2023-10-13 Fri 11:44] SCHEDULED: <2023-10-13 Fri>
 ** DONE Mettre à jour spip pour corriger bug 62982239 : variant trop long (?)
 CLOSED: [2023-09-22 Fri 22:22] SCHEDULED: <2023-09-21 Thu>
 /Entered on/ [2023-09-21 Thu 23:11]
