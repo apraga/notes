@@ -8388,8 +8388,8 @@ Et on a trop de variants en sortie (7330 !)
 **** DONE Mail Paul avec résultats filtre en T2T + nouveau schéma
 CLOSED: [2023-09-17 Sun 23:15] SCHEDULED: <2023-09-17 Sun>
 * Ré-interprétation :reanalysis:
-** STRT Lancer tests sur données brutes [225/250] <(samples.csv)>  <(runs.waiting)>
-SCHEDULED: <2023-10-08 Sun>
+** DONE Lancer tests sur données brutes [225/250] <(samples.csv)>  <(runs.waiting)>
+CLOSED: [2023-10-14 Sat 11:58] SCHEDULED: <2023-10-08 Sun>
 - [X] 100222_63015289
 - [X] 1600304839_63051311
 - [X] 1900007827_62913191
@@ -8641,6 +8641,7 @@ SCHEDULED: <2023-10-08 Sun>
 - [ ] 2300409612_63130980
 - [ ] 2300417623_63131524
 ** TODO Variants manqués :missed:
+SCHEDULED: <2023-10-21 Sat>
 *** DONE 63012582: chr10:g.102230760 filtré par AD :63012582:
 CLOSED: [2023-10-08 Sun 23:24] SCHEDULED: <2023-10-08 Sun>
 Il est en sortie d'haplotypecaller !
