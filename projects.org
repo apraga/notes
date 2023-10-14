@@ -50,7 +50,7 @@ CLOSED: [2023-10-01 Sun 14:49] SCHEDULED: <2023-09-26 Tue>
 *** DONE Envoyer dossier Anais et Luna
 CLOSED: [2023-10-04 Wed 19:35] SCHEDULED: <2023-10-04 Wed>
 *** TODO Envoyer mail syndicat des internes
-SCHEDULED: <2023-10-11 Wed>
+SCHEDULED: <2023-10-15 Sun>
 *** DONE Envoyer dossier à Mme Lucet à Grenoble
 CLOSED: [2023-10-04 Wed 19:35] SCHEDULED: <2023-10-05 Thu>
 Confirmé <2023-10-04 Wed>
@@ -124,9 +124,9 @@ CLOSED: [2023-10-05 Thu 16:58] DEADLINE: <2023-10-06 Fri> SCHEDULED: <2023-10-06
   - [X] <(Vaccination personnel)>
   - [X] <(Culture)>
   - [X] A. agalactiae
-*** TODO Passe 2: cours non tobmé avec interro + révision + interro [20/35]
+*** TODO Passe 2: cours non tobmé avec interro + révision + interro [28/35]
 DEADLINE: <2023-10-11 Wed> SCHEDULED: <2023-10-07 Sat>
-  - [ ] <(Angines bacteriennes)>
+  - [X] <(Angines bacteriennes)>
   - [X] <(Antibiogramme - Enterobacteries)>
   - [X] <(Antibiogramme - Staphylocoques)>
   - [X] <(Antibiogramme - Streptococoque, enterocoque, Listeria)>
@@ -142,23 +142,23 @@ DEADLINE: <2023-10-11 Wed> SCHEDULED: <2023-10-07 Sat>
   - [ ] <(EBCU etiologies)>
   - [ ] <(ECBU interpretation)>
   - [ ] <(ECBU pre-analytique)>
-  - [ ] <(Examen microscopique)>
+  - [X] <(Examen microscopique)>
   - [X] <(Gonocoque)>
   - [X] <(Hemocultures 1)>
   - [X] <(Hemocultures 2)>
-  - [ ] <(Infections cutanees)>
+  - [X] <(Infections cutanees)>
   - [X] <(Legionelle)>
-  - [ ] <(MALDI - TOF)>
+  - [X] <(MALDI - TOF)>
   - [X] <(Meningites bacteriennes)>
-  - [ ] <(Pre-analytique bacteriologie)>
+  - [X] <(Pre-analytique bacteriologie)>
   - [ ] BMR (cours ? définition a minima)
-  - [ ] <(Qualité)>
+  - [X] <(Qualite)>
   - [X] <(Salmonelle - shigelle)>
   - [X] <(Serologie bacterienne)>
   - [X] <(Syphilis)>
   - [X] <(Tests rapides antigeniques et moleculaires)>
-  - [ ] <(Tuberculose)>
-  - [ ] <(Typage moleculaire bacterien)>
+  - [X] <(Tuberculose)>
+  - [X] <(Typage moleculaire bacterien)>
   - [ ] <(Culture)>
   - [ ] A. agalactiae
 
@@ -798,8 +798,8 @@ CLOSED: [2023-02-12 Sun 23:17]
 SCHEDULED: <2023-10-15 Sun>
 Envoyée <2023-10-07 Sat>
 Sera probablement refusée car via Amazon
-*** TODO Demande Amazon si Cooler master refuse
-SCHEDULED: <2023-10-14 Sat>
+*** TODO Retour Amazon
+SCHEDULED: <2023-10-21 Sat>
 Renvoie vers le constructeur ...
 ** DONE Coudre fermeture éclair pantalon
 CLOSED: [2023-10-11 Wed 12:48] SCHEDULED: <2023-10-11 Wed>
@@ -862,8 +862,9 @@ CLOSED: [2023-07-29 Sat 10:57] SCHEDULED: <2023-07-29 Sat>
 CLOSED: [2023-07-29 Sat 10:57] SCHEDULED: <2023-07-29 Sat>
 #+category: maison
 ** TODO Résilier box
-SCHEDULED: <2023-10-13 Fri>
+SCHEDULED: <2023-10-19 Thu>
 /Entered on/ [2023-10-03 Tue 23:11]
+Soit raison impérative (pas de frais), soit logement avec déménagement
 ** TODO Résilier eau
 SCHEDULED: <2023-10-25 Wed>
 ** TODO Résilier électricité
