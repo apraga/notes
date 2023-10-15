@@ -122,9 +122,9 @@ Entérobactéries
 | pipe/ticar    | PCC/PTZ |               | I/R                      |                  | I/R                 | *S/I/R* | R              |
 | + inhib β     |         |               |                          |                  |                     |         |                |
 |---------------+---------+---------------+--------------------------+------------------+---------------------+---------+----------------|
-| C1G           | CF      |               | I/R                      | R                | I/R                 |         | R              |
+| C1G           | CF      |               | I/R                      | R                | I/R                 |  R      | R              |
 | C2G           | FOX     |               |                          | I/R              | I/R                 |         | I/R            |
-| C3G           | CTX     |               |                          |                  | I/R                 | I/R     | S (OXA-48)/I/R |
+| C3G           | CTX     |               |                          | I/R              | I/R                 | I/R     | S (OXA-48)/I/R |
 | C4G           | FEP     |               |                          |                  |                     | I/R     | S (OXA-48)/I/R |
 | carbapénème   |         |               |                          |                  |                     |         | I/R            |
 

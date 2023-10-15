@@ -161,7 +161,7 @@ CLOSED: [2023-10-15 Sun 12:59] DEADLINE: <2023-10-11 Wed> SCHEDULED: <2023-10-07
   - [X] <(Typage moleculaire bacterien)>
   - [X] <(Culture)>
   - [X] A. agalactiae
-*** TODO Passe 3 [6/36]
+*** TODO Passe 3 [9/36]
 DEADLINE: <2023-10-16 Mon> SCHEDULED: <2023-10-22 Sun>
   - [ ] <(Angines bacteriennes)>
   - [X] <(Antibiogramme - Enterobacteries)>
@@ -180,13 +180,13 @@ DEADLINE: <2023-10-16 Mon> SCHEDULED: <2023-10-22 Sun>
   - [ ] <(ECBU interpretation)>
   - [ ] <(ECBU pre-analytique)>
   - [ ] <(Examen microscopique)>
-  - [ ] <(Gonocoque)>
+  - [X] <(Gonocoque)>
   - [ ] <(Hemocultures 1)>
   - [ ] <(Hemocultures 2)>
   - [ ] <(Infections cutanees)>
-  - [ ] <(Legionelle)>
+  - [X] <(Legionelle)>
   - [ ] <(MALDI - TOF)>
-  - [ ] <(Meningites bacteriennes)>
+  - [X] <(Meningites bacteriennes)>
   - [ ] <(Pre-analytique bacteriologie)>
   - [ ] BMR (cours ? définition a minima)
   - [ ] <(Qualite)>
