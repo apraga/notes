@@ -243,16 +243,16 @@ Pyogène = responsiable d’infections suppurées
 ** TODO Strepto agalactiae
 -Pathogène n.1 des *infections materno-foetales* des pays développement.
  - périphérique = infection probable
- - dans le sangou lCR = infection certaines
+ - dans le sang ou lCR = infection certaines
  - Mortalité 10%, séquelle 20-30%
 *** Bactério
- - c+ diplococque/chanîtette
+ - c+ diplococque/chaînette
  - aérobie-ana facultative
  - catalase négative, *β-hémolytique*
  - groupe B lancefield
 
 *** Pathogènicité
- - commensale digestif, génitaf 10-30%
+ - commensale digestif, génital 10-30%
  - adulte : infection sujets à risque
  - grossese : chorioamniotite, endométrite
  - nouveau-né: infection néonat précoce <7 j, tardive > 7 jour
@@ -268,9 +268,9 @@ Pyogène = responsiable d’infections suppurées
 *** Diagnostic
 - Néonat : Hémoculture (référence), LCS, aspiration trachéale
 - Mère : hémoc si > 38°, PV
-- ED, gram @ gélose sang et chocolat 5-10% (croissanec < 24h habituellement)
+- ED, gram + gélose sang et chocolat 5-10% (croissanec < 24h habituellement)
 - MALDI/sérogroupage de lancefield
-- : PCR possible (LCR++, respi)
+- PCR possible (LCR++, respi)
 
 *** Prévention
 - Dépistage 34-38 semaines: culture (Granada) -> antibio si +

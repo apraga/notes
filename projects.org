@@ -122,26 +122,26 @@ CLOSED: [2023-10-05 Thu 16:58] DEADLINE: <2023-10-06 Fri> SCHEDULED: <2023-10-06
   - [X] <(Tuberculose)>
   - [X] <(Typage moleculaire bacterien)>
   - [X] <(Vaccination personnel)>
-  - [X] <(Culture)>
+  - [X]  https://scut.srht.site/notes/medecine/20230528235124-culture.html
   - [X] A. agalactiae
-*** TODO Passe 2: cours non tobmé avec interro + révision + interro [28/35]
-DEADLINE: <2023-10-11 Wed> SCHEDULED: <2023-10-07 Sat>
+*** DONE Passe 2: cours non tobmé avec interro + révision + interro [33/35]
+CLOSED: [2023-10-15 Sun 12:59] DEADLINE: <2023-10-11 Wed> SCHEDULED: <2023-10-07 Sat>
   - [X] <(Angines bacteriennes)>
   - [X] <(Antibiogramme - Enterobacteries)>
   - [X] <(Antibiogramme - Staphylocoques)>
   - [X] <(Antibiogramme - Streptococoque, enterocoque, Listeria)>
   - [X] <(Antibiogramme)>
   - [X] <(Cambylobacter)>
-  - [ ] Mécanisme résistance antibio
+  - [-] Mécanisme résistance antibio
   - [X] <(Chlamydia - mycoplasmes)>
   - [X] <(Clostridium difficile)>
   - [X] <(Concentrations critiques)>
   - [X] <(Conseil anti-infectieux)>
   - [X] <(Declaration obligatoire)>
   - [X] <(Diagnostic moleculaire - Bacteriologie)>
-  - [ ] <(EBCU etiologies)>
-  - [ ] <(ECBU interpretation)>
-  - [ ] <(ECBU pre-analytique)>
+  - [X] <(EBCU etiologies)>
+  - [X] <(ECBU interpretation)>
+  - [X] <(ECBU pre-analytique)>
   - [X] <(Examen microscopique)>
   - [X] <(Gonocoque)>
   - [X] <(Hemocultures 1)>
@@ -151,7 +151,7 @@ DEADLINE: <2023-10-11 Wed> SCHEDULED: <2023-10-07 Sat>
   - [X] <(MALDI - TOF)>
   - [X] <(Meningites bacteriennes)>
   - [X] <(Pre-analytique bacteriologie)>
-  - [ ] BMR (cours ? définition a minima)
+  - [-] BMR (cours ? définition a minima)
   - [X] <(Qualite)>
   - [X] <(Salmonelle - shigelle)>
   - [X] <(Serologie bacterienne)>
@@ -159,9 +159,46 @@ DEADLINE: <2023-10-11 Wed> SCHEDULED: <2023-10-07 Sat>
   - [X] <(Tests rapides antigeniques et moleculaires)>
   - [X] <(Tuberculose)>
   - [X] <(Typage moleculaire bacterien)>
+  - [X] <(Culture)>
+  - [X] A. agalactiae
+*** TODO Passe 3 [3/36]
+SCHEDULED: <2023-10-22 Sun> DEADLINE: <2023-10-11 Wed>
+  - [ ] <(Angines bacteriennes)>
+  - [ ] <(Antibiogramme - Enterobacteries)>
+  - [ ] <(Antibiogramme - Staphylocoques)>
+  - [ ] <(Antibiogramme - Streptococoque, enterocoque, Listeria)>
+  - [ ] <(Antibiogramme)>
+  - [X] <(Cambylobacter)>
+  - [ ] Mécanisme résistance antibio
+  - [ ] <(Chlamydia - mycoplasmes)>
+  - [X] <(Clostridium difficile)>
+  - [ ] <(Concentrations critiques)>
+  - [ ] <(Conseil anti-infectieux)>
+  - [ ] <(Declaration obligatoire )>
+  - [ ] <(Diagnostic moleculaire - Bacteriologie)>
+  - [ ] <(EBCU etiologies)>
+  - [ ] <(ECBU interpretation)>
+  - [ ] <(ECBU pre-analytique)>
+  - [ ] <(Examen microscopique)>
+  - [ ] <(Gonocoque)>
+  - [ ] <(Hemocultures 1)>
+  - [ ] <(Hemocultures 2)>
+  - [ ] <(Infections cutanees)>
+  - [ ] <(Legionelle)>
+  - [ ] <(MALDI - TOF)>
+  - [ ] <(Meningites bacteriennes)>
+  - [ ] <(Pre-analytique bacteriologie)>
+  - [ ] BMR (cours ? définition a minima)
+  - [ ] <(Qualite)>
+  - [ ] <(Salmonelle - shigelle)>
+  - [ ] <(Serologie bacterienne)>
+  - [X] <(Syphilis)>
+  - [ ] <(Tests rapides antigeniques et moleculaires)>
+  - [ ] <(Tuberculose)>
+  - [ ] <(Typage moleculaire bacterien)>
   - [ ] <(Culture)>
   - [ ] A. agalactiae
-
+  - [ ] Bactérie (refaire un tour)
 ** TODO Présentation dépistage hémato :presentation:
 :PROPERTIES:
 :CATEGORY: bacterio
@@ -487,22 +524,22 @@ CLOSED: [2023-09-18 Mon 19:36] SCHEDULED: <2023-09-17 Sun>
 *** DONE Avis paul sur ACPA non
 CLOSED: [2023-10-02 Mon 21:58]
 *** TODO Corriger article
-SCHEDULED: <2023-10-15 Sun>
+SCHEDULED: <2023-10-22 Sun>
 **** TODO Ajouter images Dr Vidaud
-SCHEDULED: <2023-10-15 Sun>
+SCHEDULED: <2023-10-21 Sat>
 **** DONE Comprendre score LRR pour gain
 CLOSED: [2023-09-21 Thu 23:03] SCHEDULED: <2023-09-21 Thu>
 **** TODO Corriger discussion: remaniement complexe
-SCHEDULED: <2023-10-15 Sun>
+SCHEDULED: <2023-10-21 Sat>
 **** TODO Phénotype "mild" chez le père + détailler moléculaire
-SCHEDULED: <2023-10-15 Sun>
+SCHEDULED: <2023-10-21 Sat>
 **** DONE Traitement FBXW7 ?
 CLOSED: [2023-10-11 Wed 16:08] SCHEDULED: <2023-10-15 Sun>
 Lié à NF1 et non FBXW7 (voir mail V. Laithier)
 *** TODO Réponse reviewer
-SCHEDULED: <2023-10-15 Sun>
+SCHEDULED: <2023-10-21 Sat>
 *** TODO Correction Juliette
-SCHEDULED: <2023-10-15 Sun>
+SCHEDULED: <2023-10-21 Sat>
 *** TODO Resoumettre
 SCHEDULED: <2023-10-17 Tue>
 ** Apprendre le machine learning
@@ -794,8 +831,8 @@ CLOSED: [2023-02-12 Sun 23:17]
 *** TODO Trier photos sur drive yvain
 ** TODO Remplacer clavier SK :clavier:
 /Entered on/ [2023-10-07 Sat 22:58]
-*** WAIT Demande à Cooler Master un remplacement
-SCHEDULED: <2023-10-15 Sun>
+*** DONE Demande à Cooler Master un remplacement
+CLOSED: [2023-10-15 Sun 12:43] SCHEDULED: <2023-10-15 Sun>
 Envoyée <2023-10-07 Sat>
 Sera probablement refusée car via Amazon
 *** TODO Retour Amazon
@@ -870,7 +907,7 @@ SCHEDULED: <2023-10-25 Wed>
 ** TODO Résilier électricité
 SCHEDULED: <2023-10-25 Wed>
 ** WAIT Résilier ordures ménagères
-SCHEDULED: <2023-10-14 Sat>
+SCHEDULED: <2023-10-20 Fri>
 Mail envoyé
 ** DONE Payer ordures ménagères
 CLOSED: [2023-10-07 Sat 17:48] SCHEDULED: <2023-10-06 Fri>
@@ -884,9 +921,10 @@ CLOSED: [2023-10-09 Mon 22:30] SCHEDULED: <2023-10-09 Mon>
 :CATEGORY: banque
 :END:
 ** WAIT Demande remboursement frais compte bancaire
-SCHEDULED: <2023-10-14 Sat>
+SCHEDULED: <2023-10-22 Sun>
 /Entered on/ [2023-08-13 Sun 11:16]
 À surveiller
+Relancé 2023-10-15 Sun
 * Programmation :cs:
 ** Gentoo :gentoo:
 *** GURU :guru:
@@ -943,6 +981,9 @@ At this point you have enough knowledge to begin experimenting with various libr
 *** TODO 24 days of haskell
 **** TODO <[Hackage 2015]> - "https://conscientiousprogrammer.com/blog/2015/11/30/haskell-tidbits-24-days-of-hackage-2015-day-1-introduction-and-stack/"
 **** TODO <[GHC extensions]> - "https://blog.ocharles.org.uk/pages/2014-12-01-24-days-of-ghc-extensions.html"
+*** STRT <[Hackage 2012]> - https://blog.ocharles.org.uk/pages/2012-12-01-24-days-of-hackage.html
+-> postgresql
+*** TODO <[Hackage 2013]> - https://blog.ocharles.org.uk/pages/2013-12-01-24-days-of-hackage.html
 *** GHC
 **** GHC commentary
 Notamment Ollie Charles's 24 days of GHC Extensions,
@@ -1026,13 +1067,13 @@ CLOSED: [2023-10-01 Sun 16:15] SCHEDULED: <2023-09-30 Sat>
 - [X] private
 - [ ] data
 *** TODO depuis raspberry:/media/annex
-SCHEDULED: <2023-10-15 Sun>
+SCHEDULED: <2023-10-22 Sun>
 À vérifier
 - [X] public
 - [X] private
 - [ ] data
 *** TODO depuis laptop:~/annex
-SCHEDULED: <2023-10-15 Sun>
+SCHEDULED: <2023-10-22 Sun>
 - [ ] public
 - [ ] private
 - [ ] data
@@ -1052,7 +1093,7 @@ CLOSED: [2023-10-01 Sun 16:15] SCHEDULED: <2023-10-01 Sun>
 ** DONE papers : git lfs (non encrypté)
 CLOSED: [2023-09-30 Sat 19:19] SCHEDULED: <2023-09-30 Sat>
 ** TODO Comprendre pourquoi git-annex ne lit pas home
-SCHEDULED: <2023-10-15 Sun>
+SCHEDULED: <2023-10-22 Sun>
 /Entered on/ [2023-10-01 Sun 21:31]
 Unable to parse git config
 cannot find git-annex

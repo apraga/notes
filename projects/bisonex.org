@@ -244,6 +244,9 @@ Modification nécessaire pour kent :
 - plus de patch
 - suppression d'une boucle dans postPatch
 On supprime aussi NIX_BUILD_TOP
+**** TODO Corriger PR biobigfile
+SCHEDULED: <2023-10-20 Fri>
+/Entered on/ [2023-10-15 Sun 17:21]
 *** DONE [[https://github.com/NixOS/nixpkgs/pull/186459][BioDBHTS]]
 CLOSED: [2023-05-06 Sat 08:49] SCHEDULED: <2023-04-15 Sat>
 /Entered on/ [2022-08-10 Wed 14:28]
@@ -8358,7 +8361,7 @@ VEP chooses one block of annotation per variant, using an ordered set of criteri
 **** DONE Mail alexis
 CLOSED: [2023-08-20 Sun 13:45] SCHEDULED: <2023-08-20 Sun>
 **** TODO Données simuscop 200x
-SCHEDULED: <2023-10-18 Wed>
+SCHEDULED: <2023-10-19 Thu>
 **** DONE En T2T avec liftover (filtre = spip) : ok mais lent et trop de variants :tests:
 CLOSED: [2023-09-17 Sun 17:13] SCHEDULED: <2023-09-17 Sun>
 1. Conversion en bed
@@ -8667,12 +8670,14 @@ GT:AD:DP:GQ:PL 0/1:9,6:15:99:103,0,213
 CLOSED: [2023-10-08 Sun 22:56]
 **** DONE Mail Paul
 CLOSED: [2023-10-08 Sun 23:24] SCHEDULED: <2023-10-08 Sun>
+*** TODO Ajouter négatifs dans la liste des variants
+SCHEDULED: <2023-10-19 Thu>
 * Résultats
 ** TODO Speed-up BWA-mem
-SCHEDULED: <2023-10-15 Sun>
+SCHEDULED: <2023-10-22 Sun>
 
 ** TODO Speed-up Hapotypecaller
-SCHEDULED: <2023-10-15 Sun>
+SCHEDULED: <2023-10-22 Sun>
 * Communication
 ** DONE Mail NGS-diag
 CLOSED: [2023-10-06 Fri 08:04] SCHEDULED: <2023-10-06 Fri>
