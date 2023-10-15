@@ -161,16 +161,16 @@ CLOSED: [2023-10-15 Sun 12:59] DEADLINE: <2023-10-11 Wed> SCHEDULED: <2023-10-07
   - [X] <(Typage moleculaire bacterien)>
   - [X] <(Culture)>
   - [X] A. agalactiae
-*** TODO Passe 3 [3/36]
-SCHEDULED: <2023-10-22 Sun> DEADLINE: <2023-10-11 Wed>
+*** TODO Passe 3 [6/36]
+DEADLINE: <2023-10-16 Mon> SCHEDULED: <2023-10-22 Sun>
   - [ ] <(Angines bacteriennes)>
-  - [ ] <(Antibiogramme - Enterobacteries)>
+  - [X] <(Antibiogramme - Enterobacteries)>
   - [ ] <(Antibiogramme - Staphylocoques)>
   - [ ] <(Antibiogramme - Streptococoque, enterocoque, Listeria)>
   - [ ] <(Antibiogramme)>
   - [X] <(Cambylobacter)>
   - [ ] Mécanisme résistance antibio
-  - [ ] <(Chlamydia - mycoplasmes)>
+  - [X] <(Chlamydia - mycoplasmes)>
   - [X] <(Clostridium difficile)>
   - [ ] <(Concentrations critiques)>
   - [ ] <(Conseil anti-infectieux)>
@@ -190,7 +190,7 @@ SCHEDULED: <2023-10-22 Sun> DEADLINE: <2023-10-11 Wed>
   - [ ] <(Pre-analytique bacteriologie)>
   - [ ] BMR (cours ? définition a minima)
   - [ ] <(Qualite)>
-  - [ ] <(Salmonelle - shigelle)>
+  - [X] <(Salmonelle - shigelle)>
   - [ ] <(Serologie bacterienne)>
   - [X] <(Syphilis)>
   - [ ] <(Tests rapides antigeniques et moleculaires)>
