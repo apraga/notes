@@ -1681,8 +1681,8 @@ CLOSED: [2023-09-17 Sun 09:07] SCHEDULED: <2023-09-16 Sat>
 https://www.postman.com/genoox-ps/workspace/franklin-api-documentation-s-public-workspace/documentation/6621518-4335389d-12e3-445f-8182-339df95b2a09
 *** KILL Regarder si clinique disponible avec vep :annotation:
 CLOSED: [2023-09-10 Sun 16:44]
-*** DONE Tester filtre sans splice: 6130 mais il en manque 4
-CLOSED: [2023-09-28 Thu 01:33] SCHEDULED: <2023-09-27 Wed>
+*** TODO Tester filtre sans splice: 6130 mais il en manque 4
+SCHEDULED: <2023-09-27 Wed>
 Mail Paul: Exome donc hors splice, peu intéressant
 **** DONE Enlever complètement condition splice: 6130 variants restants...
 CLOSED: [2023-09-27 Wed 19:37] SCHEDULED: <2023-09-26 Tue>
@@ -1875,6 +1875,169 @@ CLOSED: [2023-09-28 Thu 01:33] SCHEDULED: <2023-09-27 Wed>
    2 │ chr10:g.240362         60.0     79
    3 │ chr14:g.52665581       60.0     51
    4 │ chr19:g.41325390       60.0    180
+**** DONE Comparer aux filtres en GRCh38:  ce sont bien les filtres hors splice...
+CLOSED: [2023-10-17 Tue 21:12]
+T2T:
+ filter_vep -i  2300346867_NA12878-63118093_S260-T2T/2300346867_NA12878-63118093_S260-T2T.vep.vcf.gz  --format vcf --filter "        not(Consequence matches non_coding_transcript or Consequence matches stream or Consequence matches intergenic_variant or Consequence matches UTR or Consequence matches intron_variant or Consequence matches synonymous or BIOTYPE  matches pseudogene or BIOTYPE  matches misc_RNA)"                --only_matched       | bcftools +counts
+
+Number of samples: 1
+Number of SNPs:    5362
+Number of INDELs:  325
+Number of MNPs:    323
+Number of others:  0
+Number of sites:   5991
+
+GRCh38
+filter_vep -i  2300346867_NA12878-63118093_S260-GRCh38/2300346867_NA12878-63118093_S260-GRCh38.vep.vcf.gz  --format vcf --filter "        not(Consequence matches non_coding_transcript or Consequence matches stream or Consequence matches intergenic_variant or Consequence matches UTR or Consequence matches intron_variant or Consequence matches synonymous or BIOTYPE  matches pseudogene or BIOTYPE  matches misc_RNA)"                --only_matched       | bcftools +counts
+
+Number of samples: 1
+Number of SNPs:    1182
+Number of INDELs:  143
+Number of MNPs:    535
+Number of others:  0
+Number of sites:   1840
+
+
+**** DONE Proportions de conséquence : T2T vs GRCh38 avec multiqc: idem
+CLOSED: [2023-10-17 Tue 21:00]
+À l'oeil
+
+**** Réexaminer les conséquences
+***** DONE Impact fonctionnel: plus de LOW et de MODIFIER++
+CLOSED: [2023-10-17 Tue 21:22]
+T2T
+bcftools +split-vep  2300346867_NA12878-63118093_S260-T2T/2300346867_NA12878-63118093_S260-T2T.filtervep.vcf -f '%IMPACT\n' -d | sort | uniq -c
+    596 HIGH
+   2828 LOW
+  16314 MODERATE
+  11261 MODIFIER
+
+  GRCh38
+ bcftools +split-vep  2300346867_NA12878-63118093_S260-GRCh38/2300346867_NA12878-63118093_S260-GRCh38.filtervep.vcf -f '%IMPACT\n' -d | sort | uniq -c
+    414 HIGH
+    466 LOW
+  10054 MODERATE
+    550 MODIFIER
+***** DONE Pire conséquence: trop de missense
+CLOSED: [2023-10-17 Tue 21:23]
+GRCh38
+$  bcftools +split-vep  2300346867_NA12878-63118093_S260-GRCh38/2300346867_NA12878-63118093_S260-GRCh38.filtervep.vcf -f '%Consequence\n' -d -s worst | sort | uniq -c
+      2 3_prime_utr_variant&nmd_transcript_variant
+      1 5_prime_utr_variant
+      2 coding_sequence_variant
+     47 frameshift_variant
+      6 frameshift_variant&nmd_transcript_variant
+      1 frameshift_variant&splice_donor_region_variant
+      1 frameshift_variant&splice_region_variant
+      1 frameshift_variant&start_lost&start_retained_variant
+     37 inframe_deletion
+      9 inframe_deletion&nmd_transcript_variant
+     27 inframe_insertion
+      5 inframe_insertion&nmd_transcript_variant
+     21 intron_variant
+   1593 missense_variant
+     37 missense_variant&nmd_transcript_variant
+     17 missense_variant&splice_region_variant
+      1 missense_variant&splice_region_variant&nmd_transcript_variant
+      1 protein_altering_variant
+      1 splice_acceptor_variant
+      1 splice_acceptor_variant&frameshift_variant
+      2 splice_acceptor_variant&nmd_transcript_variant
+      3 splice_donor_5th_base_variant&intron_variant
+      1 splice_donor_5th_base_variant&intron_variant&non_coding_transcript_variant
+      2 splice_donor_region_variant&intron_variant
+      1 splice_donor_region_variant&intron_variant&nmd_transcript_variant
+      1 splice_donor_region_variant&intron_variant&non_coding_transcript_variant
+     10 splice_donor_variant
+      1 splice_donor_variant&non_coding_transcript_variant
+     11 splice_polypyrimidine_tract_variant&intron_variant
+      1 splice_polypyrimidine_tract_variant&intron_variant&non_coding_transcript_variant
+      1 splice_region_variant&intron_variant
+      9 splice_region_variant&splice_polypyrimidine_tract_variant&intron_variant
+      3 splice_region_variant&synonymous_variant
+      1 splice_region_variant&synonymous_variant&nmd_transcript_variant
+      4 start_lost
+     19 stop_gained
+      2 stop_gained&frameshift_variant
+      2 stop_gained&nmd_transcript_variant
+      1 stop_gained&splice_region_variant
+      1 stop_gained&splice_region_variant&nmd_transcript_variant
+      3 stop_lost
+      2 stop_lost&nmd_transcript_variant
+      1 stop_retained_variant
+     18 synonymous_variant
+      1 synonymous_variant&nmd_transcript_variant
+      1 transcript_ablation
+
+      T2T
+      [apraga@mesointeractive filter]$  bcftools +split-vep  2300346867_NA12878-63118093_S260-T2T/2300346867_NA12878-63118093_S260-T2T.filtervep.vcf -f '%Consequence\n' -d -s worst | sort | uniq -c
+     15 3_prime_utr_variant
+     11 3_prime_utr_variant&nmd_transcript_variant
+     51 5_prime_utr_variant
+      3 5_prime_utr_variant&nmd_transcript_variant
+     48 coding_sequence_variant
+      5 coding_sequence_variant&nmd_transcript_variant
+      3 downstream_gene_variant
+    121 frameshift_variant
+      9 frameshift_variant&nmd_transcript_variant
+      1 frameshift_variant&splice_donor_region_variant
+      9 frameshift_variant&splice_region_variant
+     78 inframe_deletion
+      2 inframe_deletion&nmd_transcript_variant
+      2 inframe_deletion&splice_region_variant
+     84 inframe_insertion
+      2 inframe_insertion&nmd_transcript_variant
+      1 inframe_insertion&splice_region_variant
+     16 intergenic_variant
+    368 intron_variant
+     21 intron_variant&nmd_transcript_variant
+     71 intron_variant&non_coding_transcript_variant
+   5187 missense_variant
+    207 missense_variant&nmd_transcript_variant
+      3 missense_variant&splice_donor_5th_base_variant
+    105 missense_variant&splice_region_variant
+      9 missense_variant&splice_region_variant&nmd_transcript_variant
+     33 non_coding_transcript_exon_variant
+     12 splice_acceptor_variant
+      1 splice_acceptor_variant&5_prime_utr_variant&intron_variant&nmd_transcript_variant
+      1 splice_acceptor_variant&nmd_transcript_variant
+      3 splice_acceptor_variant&non_coding_transcript_variant
+      1 splice_acceptor_variant&splice_polypyrimidine_tract_variant&intron_variant&nmd_transcript_variant
+     16 splice_donor_5th_base_variant&intron_variant
+      2 splice_donor_5th_base_variant&intron_variant&non_coding_transcript_variant
+     33 splice_donor_region_variant&intron_variant
+      4 splice_donor_region_variant&intron_variant&nmd_transcript_variant
+      7 splice_donor_region_variant&intron_variant&non_coding_transcript_variant
+     19 splice_donor_variant
+      1 splice_donor_variant&nmd_transcript_variant
+      2 splice_donor_variant&non_coding_transcript_variant
+      3 splice_donor_variant&splice_donor_5th_base_variant&coding_sequence_variant&intron_variant
+     64 splice_polypyrimidine_tract_variant&intron_variant
+      6 splice_polypyrimidine_tract_variant&intron_variant&nmd_transcript_variant
+      8 splice_polypyrimidine_tract_variant&intron_variant&non_coding_transcript_variant
+      2 splice_region_variant&3_prime_utr_variant
+      2 splice_region_variant&5_prime_utr_variant
+      4 splice_region_variant&intron_variant
+      6 splice_region_variant&non_coding_transcript_exon_variant
+     54 splice_region_variant&splice_polypyrimidine_tract_variant&intron_variant
+      4 splice_region_variant&splice_polypyrimidine_tract_variant&intron_variant&nmd_transcript_variant
+      5 splice_region_variant&splice_polypyrimidine_tract_variant&intron_variant&non_coding_transcript_variant
+     27 splice_region_variant&synonymous_variant
+     13 start_lost
+     31 stop_gained
+      4 stop_gained&frameshift_variant
+      2 stop_gained&frameshift_variant&splice_region_variant
+      3 stop_gained&nmd_transcript_variant
+      2 stop_gained&splice_region_variant
+      2 stop_gained&splice_region_variant&nmd_transcript_variant
+      2 stop_lost
+      1 stop_lost&nmd_transcript_variant
+      6 stop_retained_variant
+      2 stop_retained_variant&nmd_transcript_variant
+    349 synonymous_variant
+     17 synonymous_variant&nmd_transcript_variant
+      1 transcript_ablation
+      2 upstream_gene_variant
 
 *** TODO Regarder annotation VEP des variants sur NA12878 non trataié :na12878:
 SCHEDULED: <2023-10-16 Mon>
