@@ -1876,6 +1876,9 @@ CLOSED: [2023-09-28 Thu 01:33] SCHEDULED: <2023-09-27 Wed>
    3 │ chr14:g.52665581       60.0     51
    4 │ chr19:g.41325390       60.0    180
 
+*** TODO Regarder annotation VEP des variants sur NA12878 non trataié :na12878:
+SCHEDULED: <2023-10-16 Mon>
+/Entered on/ [2023-10-16 Mon 19:39]
 ** DONE [#B] Indicateurs qualité :qualité:
 CLOSED: [2023-09-10 Sun 16:46]
 *** Idée
@@ -2014,7 +2017,7 @@ module load nix/2.11.0
 # Otherwise job fails as it cannot write to $HOME/.nextflow
 export NXF_HOME=/Work/Users/apraga/.nextflow
 
-# user.name must be forced (again... our fix does not seem to work in nix)
+# user.name must be forced (again... our fix does not seem  to work in nix)
 nextflow -Duser.name=apraga run main.nf -profile standard,helios --input=samples.csv --genome=GRCh38
 #+end_src
 **** DONE Mettre à jour documentation
@@ -2849,7 +2852,7 @@ On se base sur
 *** TODO Biblio <(biblio appel variant)> <(appel variant)>
 SCHEDULED: <2023-10-13 Fri>
 *** TODO Figure: nombre de publication par appel de variant
-SCHEDULED: <2023-10-13 Fri>
+SCHEDULED: <2023-10-19 Thu>
 /Entered on/ [2023-09-19 Tue 08:43]
 ** TODO Figure: nombre d'exomes par années
 SCHEDULED: <2023-10-18 Wed>
@@ -6027,9 +6030,13 @@ CLOSED: [2023-10-03 Tue 21:28]
 Voir biblio[cite:@liao2023]  mais ont aligné sur GRCH38
 ******* DONE Mail alexis
 CLOSED: [2023-10-03 Tue 21:28]
-****** TODO Méthodologie T2T
+****** DONE Méthodologie T2T
+CLOSED: [2023-10-16 Mon 19:42]
 Mail alexis
 SCHEDULED: <2023-10-04 Wed>
+
+***** TODO Rendre simplement le nombre de vrais positifs
+SCHEDULED: <2023-10-23 Mon>
 ***** KILL Mail Yannis
 CLOSED: [2023-07-08 Sat 10:44]
 ***** DONE Mail GIAB pour version T2T
@@ -6050,9 +6057,10 @@ CLOSED: [2023-08-06 Sun 20:24] SCHEDULED: <2023-08-06 Sun>
 **** DONE Relancer comparaison GIAB avec GATK 4.4.0
 CLOSED: [2023-08-12 Sat 15:55]
 /Entered on/ [2023-08-03 Thu 12:42]
-*** KILL Platinum genome
-CLOSED: [2023-06-14 Wed 22:37]
+*** TODO Platinum genome :platinum:
 https://emea.illumina.com/platinumgenomes.html
+**** TODO Tester sur la zone couverte par l'exome centogène
+SCHEDULED: <2023-10-23 Mon>
 *** DONE Séquencer NA12878 :cento:hg001:
 CLOSED: [2023-10-07 Sat 17:59]
 Discussion avec Paul : sous-traitant ne nous donnera pas les données, il faut commander l'ADN

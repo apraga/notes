@@ -50,7 +50,7 @@ CLOSED: [2023-10-01 Sun 14:49] SCHEDULED: <2023-09-26 Tue>
 *** DONE Envoyer dossier Anais et Luna
 CLOSED: [2023-10-04 Wed 19:35] SCHEDULED: <2023-10-04 Wed>
 *** TODO Envoyer mail syndicat des internes
-SCHEDULED: <2023-10-15 Sun>
+SCHEDULED: <2023-10-17 Tue>
 *** DONE Envoyer dossier à Mme Lucet à Grenoble
 CLOSED: [2023-10-04 Wed 19:35] SCHEDULED: <2023-10-05 Thu>
 Confirmé <2023-10-04 Wed>
@@ -212,10 +212,10 @@ CLOSED: [2023-10-07 Sat 19:30] SCHEDULED: <2023-10-07 Sat>
 :LOGBOOK:
 CLOCK: [2023-10-07 Sat 18:02]--[2023-10-07 Sat 19:30] =>  1:28
 :END:
-*** TODO Revoir avec Audrey pour différence (bleu et jaune)
-SCHEDULED: <2023-10-16 Mon>
-*** TODO Réunion audrey
-SCHEDULED: <2023-10-16 Mon>
+*** DONE Revoir avec Audrey pour différence (bleu et jaune)
+CLOSED: [2023-10-16 Mon 19:39] SCHEDULED: <2023-10-16 Mon>
+*** DONE Réunion audrey
+CLOSED: [2023-10-16 Mon 19:39] SCHEDULED: <2023-10-16 Mon>
 *** DONE Traitement patients selles
 CLOSED: [2023-10-10 Tue 22:52] SCHEDULED: <2023-10-09 Mon>
 *** DONE [#A] Résumer Torres 2022
@@ -226,6 +226,9 @@ CLOSED: [2023-10-08 Sun 12:42] SCHEDULED: <2023-10-07 Sat>
 CLOSED: [2023-10-11 Wed 21:47] SCHEDULED: <2023-10-08 Sun>
 "~/roam/research/presentations/bacterio/depistage hemato/notes.org#* Présentation"
 *** TODO Présenter Santibiez 2023
+*** TODO Corriger présentation
+SCHEDULED: <2023-10-16 Mon>
+/Entered on/ [2023-10-16 Mon 22:01]
 ** DONE Dossier admnistratatif Trevenans
 CLOSED: [2023-10-09 Mon 22:30] SCHEDULED: <2023-10-09 Mon>
 /Entered on/ [2023-10-09 Mon 22:08]
@@ -845,6 +848,16 @@ CLOSED: [2023-10-11 Wed 12:48] SCHEDULED: <2023-10-11 Wed>
 SCHEDULED: <2023-10-18 Wed>
 /Entered on/ [2023-10-11 Wed 23:13]
 Message envoyé sur le site 2023-10-11 Wed
+** TODO Réclamation train Paris - Besancon
+SCHEDULED: <2023-10-16 Mon>
+/Entered on/ [2023-10-16 Mon 22:01]
+*** KILL TER
+CLOSED: [2023-10-16 Mon 22:05]
+"Par ailleurs, en cas de retard ou de suppression de train, il n'existe pas de garantie ponctualité sur TER, aucun remboursement ne sera effectué."
+*** WAIT Allianz
+SCHEDULED: <2023-10-23 Mon>
+Manque justificatif de retard mais le site ne trouve pas le trajet...
+https://www.ter.sncf.com/bourgogne-franche-comte/services-contacts/bulletin-retard-resultats?search=N4IgJgpgDghgTgFwK5wgZQQeygBQDYwDGEIAXKAHYwC2JpIO8AlgM4C0AQhHIQJ4AEHTCgDmmERQj82-Rrxb8wAcgCCSAG7cJJADQhWGbPiJ0EcJBD1MwZEAA4A7ADY7Ttw5B6EvKHRAALViw4JkIQAF89eBD1GDxDXAJiMkoaPy4WGAoAc8wKNgA1JkwEBF19FgTjZNIzCysbekcHAEY7AAZ2jy8fP0CWYNCIqLgYuIARGDLbACZ2mYBmNhb25YBWABVO0m3OgGp5nfbPEGimWLwNplpbFqdSABYPcKA
 * Voiture :voiture:
 ** Mazda 5
 :PROPERTIES:
@@ -869,7 +882,7 @@ CLOSED: [2023-10-07 Sat 17:48]
 *** DONE Changer phare arrière droit
 CLOSED: [2023-10-08 Sun 13:24] SCHEDULED: <2023-10-08 Sun>
 *** TODO Changer ampoule clignotant arrière droit
-SCHEDULED: <2023-10-15 Sun>
+SCHEDULED: <2023-10-18 Wed>
 Ampoule commandée
 * Moto
 :PROPERTIES:
