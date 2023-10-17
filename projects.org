@@ -161,41 +161,41 @@ CLOSED: [2023-10-15 Sun 12:59] DEADLINE: <2023-10-11 Wed> SCHEDULED: <2023-10-07
   - [X] <(Typage moleculaire bacterien)>
   - [X] <(Culture)>
   - [X] A. agalactiae
-*** TODO Passe 3 [9/36]
-DEADLINE: <2023-10-16 Mon> SCHEDULED: <2023-10-22 Sun>
-  - [ ] <(Angines bacteriennes)>
+*** DONE Passe 3 [27/36]
+CLOSED: [2023-10-18 Wed 00:10] DEADLINE: <2023-10-16 Mon> SCHEDULED: <2023-10-22 Sun>
+  - [X] <(Angines bacteriennes)>
   - [X] <(Antibiogramme - Enterobacteries)>
-  - [ ] <(Antibiogramme - Staphylocoques)>
-  - [ ] <(Antibiogramme - Streptococoque, enterocoque, Listeria)>
-  - [ ] <(Antibiogramme)>
+  - [X] <(Antibiogramme - Staphylocoques)>
+  - [X] <(Antibiogramme - Streptococoque, enterocoque, Listeria)>
+  - [X] <(Antibiogramme)>
   - [X] <(Cambylobacter)>
   - [ ] Mécanisme résistance antibio
   - [X] <(Chlamydia - mycoplasmes)>
   - [X] <(Clostridium difficile)>
-  - [ ] <(Concentrations critiques)>
-  - [ ] <(Conseil anti-infectieux)>
-  - [ ] <(Declaration obligatoire )>
-  - [ ] <(Diagnostic moleculaire - Bacteriologie)>
+  - [X] <(Concentrations critiques)>
+  - [X] <(Conseil anti-infectieux)>
+  - [X] <(Declaration obligatoire )>
+  - [X] <(Diagnostic moleculaire - Bacteriologie)>
   - [ ] <(EBCU etiologies)>
   - [ ] <(ECBU interpretation)>
   - [ ] <(ECBU pre-analytique)>
-  - [ ] <(Examen microscopique)>
+  - [X] <(Examen microscopique)>
   - [X] <(Gonocoque)>
-  - [ ] <(Hemocultures 1)>
-  - [ ] <(Hemocultures 2)>
-  - [ ] <(Infections cutanees)>
+  - [X] <(Hemocultures 1)>
+  - [X] <(Hemocultures 2)>
+  - [X] <(Infections cutanees)>
   - [X] <(Legionelle)>
-  - [ ] <(MALDI - TOF)>
+  - [X] <(MALDI - TOF)>
   - [X] <(Meningites bacteriennes)>
-  - [ ] <(Pre-analytique bacteriologie)>
+  - [X] <(Pre-analytique bacteriologie)>
   - [ ] BMR (cours ? définition a minima)
-  - [ ] <(Qualite)>
+  - [X] <(Qualite)>
   - [X] <(Salmonelle - shigelle)>
-  - [ ] <(Serologie bacterienne)>
+  - [X] <(Serologie bacterienne)>
   - [X] <(Syphilis)>
-  - [ ] <(Tests rapides antigeniques et moleculaires)>
+  - [X] <(Tests rapides antigeniques et moleculaires)>
   - [ ] <(Tuberculose)>
-  - [ ] <(Typage moleculaire bacterien)>
+  - [X] <(Typage moleculaire bacterien)>
   - [ ] <(Culture)>
   - [ ] A. agalactiae
   - [ ] Bactérie (refaire un tour)
@@ -226,8 +226,8 @@ CLOSED: [2023-10-08 Sun 12:42] SCHEDULED: <2023-10-07 Sat>
 CLOSED: [2023-10-11 Wed 21:47] SCHEDULED: <2023-10-08 Sun>
 "~/roam/research/presentations/bacterio/depistage hemato/notes.org#* Présentation"
 *** TODO Présenter Santibiez 2023
-*** TODO Corriger présentation
-SCHEDULED: <2023-10-16 Mon>
+*** DONE Corriger présentation
+CLOSED: [2023-10-17 Tue 23:19] SCHEDULED: <2023-10-16 Mon>
 /Entered on/ [2023-10-16 Mon 22:01]
 ** DONE Dossier admnistratatif Trevenans
 CLOSED: [2023-10-09 Mon 22:30] SCHEDULED: <2023-10-09 Mon>
@@ -544,7 +544,7 @@ SCHEDULED: <2023-10-21 Sat>
 *** TODO Correction Juliette
 SCHEDULED: <2023-10-21 Sat>
 *** TODO Resoumettre
-SCHEDULED: <2023-10-17 Tue>
+SCHEDULED: <2023-10-24 Tue>
 ** Apprendre le machine learning
 :PROPERTIES:
 :CATEGORY: machine learning
@@ -848,8 +848,8 @@ CLOSED: [2023-10-11 Wed 12:48] SCHEDULED: <2023-10-11 Wed>
 SCHEDULED: <2023-10-18 Wed>
 /Entered on/ [2023-10-11 Wed 23:13]
 Message envoyé sur le site 2023-10-11 Wed
-** TODO Réclamation train Paris - Besancon
-SCHEDULED: <2023-10-16 Mon>
+** WAIT Réclamation train Paris - Besancon
+SCHEDULED: <2023-10-22 Sun>
 /Entered on/ [2023-10-16 Mon 22:01]
 *** KILL TER
 CLOSED: [2023-10-16 Mon 22:05]
@@ -899,10 +899,9 @@ Découverte <2023-07-02 Sun>. Virement 100.50€ fait.
 Mail envoyé ce jour
 ** WAIT Vendre vélo
 /Entered on/ [2023-07-29 Sat 10:23]
-** TODO Vendre frigo
-SCHEDULED: <2023-10-17 Wed>
-** TODO Vendre machine à laver
-SCHEDULED: <2023-10-17 Wed>
+** TODO Vendre
+*** DONE Envoyer Dimensions frigo et machine à laver
+CLOSED: [2023-10-17 Tue 23:20] SCHEDULED: <2023-10-17 Wed>
 ** DONE Photo à Éric pour lit
 CLOSED: [2023-07-30 Sun 19:07] SCHEDULED: <2023-07-30 Sun>
 ** DONE SMS annonce déménagement
