@@ -50,7 +50,7 @@ CLOSED: [2023-10-01 Sun 14:49] SCHEDULED: <2023-09-26 Tue>
 *** DONE Envoyer dossier Anais et Luna
 CLOSED: [2023-10-04 Wed 19:35] SCHEDULED: <2023-10-04 Wed>
 *** TODO Envoyer mail syndicat des internes
-SCHEDULED: <2023-10-17 Tue>
+SCHEDULED: <2023-10-19 Thu>
 *** DONE Envoyer dossier à Mme Lucet à Grenoble
 CLOSED: [2023-10-04 Wed 19:35] SCHEDULED: <2023-10-05 Thu>
 Confirmé <2023-10-04 Wed>
@@ -81,7 +81,8 @@ CLOSED: [2023-09-28 Thu 11:43]
 *** DONE Envoyer première version à Xavier
 CLOSED: [2023-09-17 Sun 22:31] SCHEDULED: <2023-09-17 Sun>
 /Entered on/ [2023-09-17 Sun 16:08]
-** TODO Examen bactério :partiel:
+** DONE Examen bactério :partiel:
+CLOSED: [2023-10-18 Wed 22:52]
 :PROPERTIES:
 :CATEGORY: bacterio
 :END:
@@ -199,7 +200,8 @@ CLOSED: [2023-10-18 Wed 00:10] DEADLINE: <2023-10-16 Mon> SCHEDULED: <2023-10-22
   - [ ] <(Culture)>
   - [ ] A. agalactiae
   - [ ] Bactérie (refaire un tour)
-** TODO Présentation dépistage hémato :presentation:
+** DONE Présentation dépistage hémato :presentation:
+CLOSED: [2023-10-19 Thu 18:29]
 :PROPERTIES:
 :CATEGORY: bacterio
 :END:
@@ -225,7 +227,8 @@ CLOSED: [2023-10-08 Sun 12:42] SCHEDULED: <2023-10-07 Sat>
 *** DONE Première version avec contexte, Torres et nos résultats
 CLOSED: [2023-10-11 Wed 21:47] SCHEDULED: <2023-10-08 Sun>
 "~/roam/research/presentations/bacterio/depistage hemato/notes.org#* Présentation"
-*** TODO Présenter Santibiez 2023
+*** KILL Présenter Santibiez 2023
+CLOSED: [2023-10-19 Thu 18:29]
 *** DONE Corriger présentation
 CLOSED: [2023-10-17 Tue 23:19] SCHEDULED: <2023-10-16 Mon>
 /Entered on/ [2023-10-16 Mon 22:01]
@@ -235,6 +238,10 @@ CLOSED: [2023-10-09 Mon 22:30] SCHEDULED: <2023-10-09 Mon>
 ** DONE Envoyer choix d'option précoce
 CLOSED: [2023-10-10 Tue 23:12] SCHEDULED: <2023-10-10 Tue>
 /Entered on/ [2023-10-10 Tue 23:12]
+** TODO Demande de conservation de compte
+SCHEDULED: <2023-10-20 Fri>
+/Entered on/ [2023-10-19 Thu 18:27]
+Nécessite UF (demandé)
 * Santé
 ** DONE Envoyer devis dentiste à mutuelle
 CLOSED: [2023-09-21 Thu 23:03] SCHEDULED: <2023-09-19 Tue>
@@ -845,17 +852,17 @@ Renvoie vers le constructeur ...
 CLOSED: [2023-10-11 Wed 12:48] SCHEDULED: <2023-10-11 Wed>
 /Entered on/ [2023-10-09 Mon 22:09]
 ** WAIT certificat de baptême
-SCHEDULED: <2023-10-18 Wed>
+SCHEDULED: <2023-10-19 Thu>
 /Entered on/ [2023-10-11 Wed 23:13]
 Message envoyé sur le site 2023-10-11 Wed
-** WAIT Réclamation train Paris - Besancon
-SCHEDULED: <2023-10-22 Sun>
+** DONE Réclamation train Paris - Besancon
+CLOSED: [2023-10-19 Thu 18:31] SCHEDULED: <2023-10-22 Sun>
 /Entered on/ [2023-10-16 Mon 22:01]
 *** KILL TER
 CLOSED: [2023-10-16 Mon 22:05]
 "Par ailleurs, en cas de retard ou de suppression de train, il n'existe pas de garantie ponctualité sur TER, aucun remboursement ne sera effectué."
-*** WAIT Allianz
-SCHEDULED: <2023-10-23 Mon>
+*** DONE Allianz
+CLOSED: [2023-10-19 Thu 18:31] SCHEDULED: <2023-10-23 Mon>
 Manque justificatif de retard mais le site ne trouve pas le trajet...
 https://www.ter.sncf.com/bourgogne-franche-comte/services-contacts/bulletin-retard-resultats?search=N4IgJgpgDghgTgFwK5wgZQQeygBQDYwDGEIAXKAHYwC2JpIO8AlgM4C0AQhHIQJ4AEHTCgDmmERQj82-Rrxb8wAcgCCSAG7cJJADQhWGbPiJ0EcJBD1MwZEAA4A7ADY7Ttw5B6EvKHRAALViw4JkIQAF89eBD1GDxDXAJiMkoaPy4WGAoAc8wKNgA1JkwEBF19FgTjZNIzCysbekcHAEY7AAZ2jy8fP0CWYNCIqLgYuIARGDLbACZ2mYBmNhb25YBWABVO0m3OgGp5nfbPEGimWLwNplpbFqdSABYPcKA
 * Voiture :voiture:
@@ -881,8 +888,8 @@ CLOSED: [2023-09-14 Thu 22:44] SCHEDULED: <2023-09-11 Mon>
 CLOSED: [2023-10-07 Sat 17:48]
 *** DONE Changer phare arrière droit
 CLOSED: [2023-10-08 Sun 13:24] SCHEDULED: <2023-10-08 Sun>
-*** TODO Changer ampoule clignotant arrière droit
-SCHEDULED: <2023-10-18 Wed>
+*** DONE Changer ampoule clignotant arrière droit
+CLOSED: [2023-10-19 Thu 17:18] SCHEDULED: <2023-10-19 Thu>
 Ampoule commandée
 * Moto
 :PROPERTIES:
@@ -911,7 +918,7 @@ CLOSED: [2023-07-29 Sat 10:57] SCHEDULED: <2023-07-29 Sat>
 CLOSED: [2023-07-29 Sat 10:57] SCHEDULED: <2023-07-29 Sat>
 #+category: maison
 ** TODO Résilier box
-SCHEDULED: <2023-10-19 Thu>
+SCHEDULED: <2023-10-20 Fri>
 /Entered on/ [2023-10-03 Tue 23:11]
 Soit raison impérative (pas de frais), soit logement avec déménagement
 ** TODO Résilier eau
@@ -932,11 +939,11 @@ CLOSED: [2023-10-09 Mon 22:30] SCHEDULED: <2023-10-09 Mon>
 :PROPERTIES:
 :CATEGORY: banque
 :END:
-** WAIT Demande remboursement frais compte bancaire
-SCHEDULED: <2023-10-22 Sun>
+** DONE Demande remboursement frais compte bancaire
+CLOSED: [2023-10-19 Thu 18:31] SCHEDULED: <2023-10-25 Wed>
 /Entered on/ [2023-08-13 Sun 11:16]
 À surveiller
-Relancé 2023-10-15 Sun
+Relancé 2023-10-15 Sun: relance la directrice d'agence
 * Programmation :cs:
 ** Gentoo :gentoo:
 *** GURU :guru:
@@ -1042,7 +1049,7 @@ Notamment Ollie Charles's 24 days of GHC Extensions,
 - [ ] <yt-play "qgmgg_Bzgyg">
 - [ ] <yt-play "Nlq3J7PCB_Q">
 - [ ] <yt-play "ruxYAY5_bfE">
-- [ ] <[Biomakie.jl]> - <yt-play "-C7Zbh6UTgk">
+- [X] <[Biomakie.jl]> - <yt-play "-C7Zbh6UTgk">
 - [X] <[machine learing for biological data]> - <yt-play "Q9eYgwvJfWE">
 - [X] <[Genomic analysis]> - <yt-play "egWrDz6RDRs">
 - [ ] <[MRI denoising]> - <yt-play "dOsuIBUUDc4">

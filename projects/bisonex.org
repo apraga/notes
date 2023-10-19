@@ -278,7 +278,6 @@ Similaire à
 https://github.com/bioconda/bioconda-recipes/blob/master/recipes/picard/picard.sh
 
 
-
 * Julia :julia:
 ** KILL XAM.jl: PR pour modification record :julia:
 CLOSED: [2023-05-29 Mon 15:40] SCHEDULED: <2023-05-28 Sun>
@@ -1681,8 +1680,8 @@ CLOSED: [2023-09-17 Sun 09:07] SCHEDULED: <2023-09-16 Sat>
 https://www.postman.com/genoox-ps/workspace/franklin-api-documentation-s-public-workspace/documentation/6621518-4335389d-12e3-445f-8182-339df95b2a09
 *** KILL Regarder si clinique disponible avec vep :annotation:
 CLOSED: [2023-09-10 Sun 16:44]
-*** TODO Tester filtre sans splice: 6130 mais il en manque 4
-SCHEDULED: <2023-09-27 Wed>
+*** DONE Tester filtre sans splice: 6130 mais il en manque 4
+CLOSED: [2023-10-18 Wed 22:50] SCHEDULED: <2023-09-27 Wed>
 Mail Paul: Exome donc hors splice, peu intéressant
 **** DONE Enlever complètement condition splice: 6130 variants restants...
 CLOSED: [2023-09-27 Wed 19:37] SCHEDULED: <2023-09-26 Tue>
@@ -2039,9 +2038,112 @@ $  bcftools +split-vep  2300346867_NA12878-63118093_S260-GRCh38/2300346867_NA128
       1 transcript_ablation
       2 upstream_gene_variant
 
-*** TODO Regarder annotation VEP des variants sur NA12878 non trataié :na12878:
-SCHEDULED: <2023-10-16 Mon>
+*** DONE Regarder annotation VEP des variants sur NA12878 non trataié :na12878:
+CLOSED: [2023-10-18 Wed 22:50] SCHEDULED: <2023-10-16 Mon>
 /Entered on/ [2023-10-16 Mon 19:39]
+*** DONE Regarder si les variants sont dans des zones modifiées de T2T
+CLOSED: [2023-10-19 Thu 17:19] SCHEDULED: <2023-10-18 Wed>
+/Entered on/ [2023-10-18 Wed 22:49]
+Liftover des variants de GRCh38 -> T2T
+
+Cf ~/roam/research/bisonex/code/t2t/comparePositions.jl
+
+#+begin_quote
+Successfully converted 1896 records: View Conversions
+
+Conversion failed on 17 records.
+ #+end_quote
+
+On utilise t2tOnly()
+
+Proportion par chromosome
+julia> @by d :Column1 $nrow
+24×2 DataFrame
+ Row │ Column1  nrow
+     │ String7  Int64
+─────┼────────────────
+   1 │ chr1       678
+   2 │ chr2       369
+   3 │ chr3       287
+   4 │ chr4       224
+   5 │ chr5       258
+   6 │ chr6       430
+   7 │ chr7       321
+   8 │ chr8       218
+   9 │ chr9       251
+  10 │ chr10      275
+  11 │ chr11      489
+  12 │ chr12      350
+  13 │ chr13       74
+  14 │ chr14      185
+  15 │ chr15      171
+  16 │ chr16      283
+  17 │ chr17      364
+  18 │ chr18       82
+  19 │ chr19      550
+  20 │ chr20      142
+  21 │ chr21       93
+  22 │ chr22      171
+  23 │ chrX        98
+  24 │ chrY         1
+
+*** TODO Regarder si les variants sont sur des nouveaux gènes
+SCHEDULED: <2023-10-19 Thu>
+
+#+begin_src sh :dir "/home/alex/roam/research/bisonex/code/t2t"
+wget https://s3-us-west-2.amazonaws.com/human-pangenomics/T2T/CHM13/assemblies/annotation/chm13v2.0_RefSeq_Liftoff_v5.1.gff3.gz
+
+#+end_src
+
+#+RESULTS:
+
+*** TODO Anntotation avec vep + GTF (dernière versio)
+SCHEDULED: <2023-10-19 Thu>
+https://www.science.org/doi/10.1126/science.abj6987#core-R61
+/Entered on/ [2023-10-19 Thu 10:41]
+
+*** DONE Figure propre pour position des variants
+CLOSED: [2023-10-19 Thu 15:41] SCHEDULED: <2023-10-19 Thu>
+*** DONE Nombre de variants dans les zones exclusives à T2T
+CLOSED: [2023-10-19 Thu 16:39] SCHEDULED: <2023-10-19 Thu>
+Zones unique à T2T données par : https://genome.ucsc.edu/cgi-bin/hgTrackUi?hgsid=1735553302_OcJ6esPoUFcSykF6hKiRmIGU24KD&db=hub_3267197_GCA_009914755.4&c=CP068269.2&g=hub_3267197_hgUnique
+
+Note: le .fai donné ( https://s3-us-west-2.amazonaws.com/human-pangenomics/T2T/CHM13/assemblies/analysis_set/chm13v2.0.fa.gz.gzi ) cause un problème aec bcftools :
+Chromosome "" defined twice in chm13v2.0.fa.gz.gzi
+
+On utilise donc l'index regénér sur le mésocentre
+#+begin_src sh :dir "/home/alex/roam/research/bisonex/code/t2t"
+wget https://s3-us-west-2.amazonaws.com/human-pangenomics/T2T/CHM13/assemblies/chain/v1_nflo/grch38-chm13v2.paf
+scp meso:/Work/Projects/bisonex/data/fasta/chm13v2.0/chm13v2.0.fa.fai .
+
+cut -f 1,3,4 grch38-chm13v2.paf | bedtools sort -i - -g chm13v2.0.fa.fai | bedtools merge | bedtools complement -g chm13v2.0.fa.fai -i - | bedtools merge | save T2T-CHM13v2.0_unique_regions_hg38.bed -f
+#+end_src
+
+#+RESULTS:
+
+On génère le BED des variants supplémentaires en T2T avec
+
+Puis
+#+begin_src sh :dir "/home/alex/roam/research/bisonex/code/t2t"
+bedtools intersect -a na12878-t2t-only.bed -b T2T-CHM13v2.0_unique_regions_hg38.bed > na12878-t2t-only-unique.bed
+wc -l na12878-t2t-only.bed
+wc -l na12878-t2t-only-unique.bed
+#+end_src
+
+#+RESULTS:
+| 6364 | na12878-t2t-only.bed        |
+|   47 | na12878-t2t-only-unique.bed |
+
+Donc 0.73% sont dans des zones unique
+*** TODO Comparer l'annotation sur 1 variant filtré en GRCh388 et non filtré en T2T
+SCHEDULED: <2023-10-19 Thu>
+*** KILL Snpeff
+SCHEDULED: <2023-10-19 Thu>
+CLOSED: [2023-10-19 Thu 10:42]
+Base de données non disponible
+*** TODO Garder les transcrits canonique puis filtrer sur conséquence
+SCHEDULED: <2023-10-19 Thu>
+/Entered on/ [2023-10-19 Thu 11:23]
 ** DONE [#B] Indicateurs qualité :qualité:
 CLOSED: [2023-09-10 Sun 16:46]
 *** Idée
@@ -3013,12 +3115,12 @@ On se base sur
 
 ** Appel de variant
 *** TODO Biblio <(biblio appel variant)> <(appel variant)>
-SCHEDULED: <2023-10-13 Fri>
+SCHEDULED: <2023-10-18 Wed>
 *** TODO Figure: nombre de publication par appel de variant
 SCHEDULED: <2023-10-19 Thu>
 /Entered on/ [2023-09-19 Tue 08:43]
 ** TODO Figure: nombre d'exomes par années
-SCHEDULED: <2023-10-18 Wed>
+SCHEDULED: <2023-10-25 Wed>
 /Entered on/ [2023-09-19 Tue 08:43]
 * Tests :tests:
 ** KILL Non régression : version prod
@@ -8532,7 +8634,7 @@ VEP chooses one block of annotation per variant, using an ordered set of criteri
 **** DONE Mail alexis
 CLOSED: [2023-08-20 Sun 13:45] SCHEDULED: <2023-08-20 Sun>
 **** TODO Données simuscop 200x
-SCHEDULED: <2023-10-19 Thu>
+SCHEDULED: <2023-10-21 Sat>
 **** DONE En T2T avec liftover (filtre = spip) : ok mais lent et trop de variants :tests:
 CLOSED: [2023-09-17 Sun 17:13] SCHEDULED: <2023-09-17 Sun>
 1. Conversion en bed
@@ -8561,6 +8663,9 @@ filter vep   : another 0 missed variants
 Et on a trop de variants en sortie (7330 !)
 **** DONE Mail Paul avec résultats filtre en T2T + nouveau schéma
 CLOSED: [2023-09-17 Sun 23:15] SCHEDULED: <2023-09-17 Sun>
+** TODO Medically relevant genes
+SCHEDULED: <2023-10-25 Wed>
+/Entered on/ [2023-10-18 Wed 22:37]
 * Ré-interprétation :reanalysis:
 ** DONE Lancer tests sur données brutes [225/250] <(samples.csv)>  <(runs.waiting)>
 CLOSED: [2023-10-14 Sat 11:58] SCHEDULED: <2023-10-08 Sun>
@@ -8841,7 +8946,11 @@ GT:AD:DP:GQ:PL 0/1:9,6:15:99:103,0,213
 CLOSED: [2023-10-08 Sun 22:56]
 **** DONE Mail Paul
 CLOSED: [2023-10-08 Sun 23:24] SCHEDULED: <2023-10-08 Sun>
+** TODO Mettre à jour liste des variants
+SCHEDULED: <2023-10-19 Thu>
 *** TODO Ajouter négatifs dans la liste des variants
+SCHEDULED: <2023-10-19 Thu>
+** TODO Comparer variants cento à sortie bisonex
 SCHEDULED: <2023-10-19 Thu>
 * Résultats
 ** TODO Speed-up BWA-mem
