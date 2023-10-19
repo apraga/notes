@@ -2087,21 +2087,46 @@ julia> @by d :Column1 $nrow
   23 │ chrX        98
   24 │ chrY         1
 
-*** TODO Regarder si les variants sont sur des nouveaux gènes
-SCHEDULED: <2023-10-19 Thu>
+*** DONE Regarder si les variants sont sur des nouveaux gènes
+CLOSED: [2023-10-19 Thu 20:18] SCHEDULED: <2023-10-19 Thu>
 
-#+begin_src sh :dir "/home/alex/roam/research/bisonex/code/t2t"
-wget https://s3-us-west-2.amazonaws.com/human-pangenomics/T2T/CHM13/assemblies/annotation/chm13v2.0_RefSeq_Liftoff_v5.1.gff3.gz
+Cf ~/roam/reasearch/bisonex/code/t2t/compareGene.jl
 
-#+end_src
+Test de la fonction pour extraire les gènes:
 
-#+RESULTS:
+Important: les chiffres ne sont pas données sur le nom du gène seul mais sur le nom + la position. On ne supprime donc pas les noms en double"
+- T2T
+   - refseq + liftoff, 20 008, The official webpage says 20 006 for v4 https://ccb.jhu.edu/T2T.shtml.
+   - Gencode38 19490
+- GRCh38
+  - refseq we have 23 314, so 4 less than the official website : https://www.ncbi.nlm.nih.gov/datasets/gene/GCF_000001405.40/?gene_type=protein-coding
 
-*** TODO Anntotation avec vep + GTF (dernière versio)
+On choisit refseq:: Il y a 170 gènes (unique sur le nom du gène !) dans T2T non présents dans GRCh38-p14
+À noter qu'il y a plus de gènes dans Refseq en GRC38-p14 qu'en T2T (20 080 > 19 748 )
+
+Avec compareGene.j, on retrouve 0.73%
+*** TODO Annotation avec vep + GTF (dernière versio)
 SCHEDULED: <2023-10-19 Thu>
 https://www.science.org/doi/10.1126/science.abj6987#core-R61
 /Entered on/ [2023-10-19 Thu 10:41]
 
+#+begin_src sh :dir "meso://Work/Users/apraga/bisonex/test/t2t"
+wget https://s3-us-west-2.amazonaws.com/human-pangenomics/T2T/CHM13/assemblies/annotation/chm13v2.0_RefSeq_Liftoff_v5.1.gff3.gz
+zgrep -v "#" chm13v2.0_RefSeq_Liftoff_v5.1.gff3.gz | sort -k1,1 -k4,4n -k5,5n -t$'\t' | bgzip -c > chm13v2.0_RefSeq_prepared.gff3.gz
+tabix -p gff chm13v2.0_RefSeq_prepared.gff3.gz
+#+end_src
+# ./vep -i input.vcf --gff data.gff.gz --fasta genome.fa.gz
+
+Dans ce dossier, on annote
+#+begin_src sh
+vep -i ../../out/annotate/vep/2300346867_NA12878-63118093_S260-T2T/2300346867_NA12878-63118093_S260-T2T.vep.vcf.gz --gff chm13v2.0_RefSeq_prepared.gff3.gz --fasta /Work/Groups/bisonex/data/fasta/chm13v2.0/chm13v2.0.fa --vcf -o na12878_annotated.vcf
+
+#+end_src
+Et on filtre
+#+begin_src sh
+ filter_vep -i  na12878_annotated.vcf  --format vcf --filter "        not(Consequence matches non_coding_transcript or Consequence matches stream or Consequence matches intergenic_variant or Consequence matches UTR or Consequence matches intron_variant or Consequence matches synonymous or BIOTYPE  matches pseudogene or BIOTYPE  matches misc_RNA)"                --only_matched  > na12878_annotated_filtered.vcf
+
+#+end_src
 *** DONE Figure propre pour position des variants
 CLOSED: [2023-10-19 Thu 15:41] SCHEDULED: <2023-10-19 Thu>
 *** DONE Nombre de variants dans les zones exclusives à T2T
@@ -2135,14 +2160,14 @@ wc -l na12878-t2t-only-unique.bed
 |   47 | na12878-t2t-only-unique.bed |
 
 Donc 0.73% sont dans des zones unique
-*** TODO Comparer l'annotation sur 1 variant filtré en GRCh388 et non filtré en T2T
-SCHEDULED: <2023-10-19 Thu>
+*** KILL Comparer l'annotation sur 1 variant filtré en GRCh388 et non filtré en T2T
+CLOSED: [2023-10-19 Thu 22:54] SCHEDULED: <2023-10-19 Thu>
 *** KILL Snpeff
 SCHEDULED: <2023-10-19 Thu>
 CLOSED: [2023-10-19 Thu 10:42]
 Base de données non disponible
-*** TODO Garder les transcrits canonique puis filtrer sur conséquence
-SCHEDULED: <2023-10-19 Thu>
+*** KILL Garder les transcrits canonique puis filtrer sur conséquence
+CLOSED: [2023-10-19 Thu 22:54] SCHEDULED: <2023-10-19 Thu>
 /Entered on/ [2023-10-19 Thu 11:23]
 ** DONE [#B] Indicateurs qualité :qualité:
 CLOSED: [2023-09-10 Sun 16:46]
