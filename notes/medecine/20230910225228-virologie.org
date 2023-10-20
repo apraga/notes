@@ -25,7 +25,7 @@ Bilan  séro EBV, CMV *pas* PCR
 - très fréquent en population générale : pas de diag virologique !
 - résistant dans l’environnement, transmission souvent manuportée +/- épidémie nosocomiale
 - Diag: PCR
-- Transplanté (receveur CSH en dépia): infection sévère -> suivi des réaction dans les selles
+- Transplanté (receveur CSH en pédia): infection sévère -> suivi des réaction dans les selles
 - test antigénique (gastro-entérite): ne détectent pas toutes les espèces
 
 - ttt = ténofovir
@@ -117,11 +117,11 @@ Traitement: rituximab (anti CD20)
 *** Validation
 IgM + sans IgG : immunodépression ?
 ** Encéphalite japonaise
-Très peu de cas par voyageur : vacciniation si > 3 semaine en zone rurale
+Très peu de cas par voyageur : vaccination si > 3 semaine en zone rurale
 ** HHV6/7
 - Infection chronique persistante
 - Quasi totalité population
-- Intégration chomosique 1% population et transmis cellules germinale
+- Intégration chomosomique 1% population et transmis cellules germinale
 - Infection : lymphocytes T, monocyte, macrophages, cellules gliales SNC, hématopoétique
 - Infection activation (primo/réactivation): asympto/bénin (exantème subit = primo HHV6)
 - Encéphalite possible, surtout immunodéprimé
@@ -139,6 +139,13 @@ Clinique
 ** HHV8
 
 ** HPV
+- HPV à haut risque : cancer col utérus, majorité cancers anaux, une partie des cancers anogénitaux et oropharynx
+- infection col utérin = très fréquente (surtout avant 30 ans) mais transitoire dans la majorité des cas -> ne pas traiter en l’absence de virus !
+- pas d’infection persistante par un HPV haut risque : risque quasi-nul de cancer de col de l’utérus
+- persistance de l’infection et risque de progression supérieurs si infection par HPV16
+- recherche HVP haut risque = plus sensible que cyto pour détecter le slésions de haut grade au niveau du col utérin.
+- choix de la méthoed biomol = selon recos internationales
+- vaccin prophylactique = protège contre la majorité des cancers attribuables aux HPV
 *** Algorithme
 - 25-30 ans = cyto seule (sinon on détecterait trop de HPV car pic à l’activité sexuelle)
 - > 30ans : PCR
@@ -165,17 +172,6 @@ rendue positive si > seuil détection et > seuil clinique
   - méningoencéphalite herpétique = PCR sur LCS
 -
 - TTT : aciclovir. Si forme grave, instaurer en probabiliste
-** HSV :adn:
-- Dermotrope et neurotrope
-- Phase latente : persiste à vie dans les ganqlions nerveaux sensitifs.
-- Réactivation de fréquence variable +/- clinique
-- Phase latente : antiviraux inefficaces => éradication impossible
-- Formes grave chez nouveau-né, nourisson eczémateux, immunodéprimé *ou*  oeil, encéphale, fois
-- Diagnostic:
-  - autres cas : PCR = la plus utilisé mais ne signifie pas qu’il y a du virus infectieux...
-  - méningoencéphalite herpétique = PCR sur LCS
--
-- TTT : aciclovir. Si forme grave, instaurer en probabiliste
 
   Intubé > 5log = possible implication
 ** HTLV
@@ -185,8 +181,18 @@ Clinique
 Transmission mère-enfant (*allaitement*)
 ** JC virus
 Immunodépression : leucoencéphalopathie mulitofocale progressive (LEMP) = foyers de démyélinisation -> y penser si VIH avec déficit CD4+
+- patients VIH ou immunosuppreuse
+- Pas de traitement
+- évolution généralement fatale
+** Polyomavirus: BK, JC, MC, TS
+- Ubiquitaire
+- Pouvoir pathègen seulement chez immunodéprimé
+  - BK: attente rénale et vésicales chez les transplantés
+  - JC : LEMP si immunodéprimé
+  - MC: carcinome neuroendocrite des cellules de Merkel (âgé ou immunodéprimé)
+  - TS: dysplasie sévère des follicules pileux chez les immunodéprimés
 
-Pas de traitement et évolution généralement fatale
+- Pas de traitement antiviral -> restauration immune ou diminution de l’immunosuppression
 ** Parvovirus
 - tropisme précurseurs médullaire lignée érythroïde
 - précoce : anémie, crise érythroblastopénie aigüe. 2eme phase = production anticorps (éruption, arthralgie)
@@ -218,12 +224,12 @@ Pas de traitement et évolution généralement fatale
 - HSV1 10-50
 - HHV8 < 10
 ** Puumala
-Clinique
-- Fièvre hémorragique avec insuffisance rénale
-- +/- myopie transitoire
-Géographie ~ forêts : pays nordiques, Franche-Comte et Champagne-Ardennes
-Fait partie des Hanta virus
-Transmission par les excréments des rats
+- Clinique
+  - Fièvre hémorragique avec insuffisance rénale
+  - +/- myopie transitoire
+- Géographie ~ forêts : pays nordiques, Franche-Comte et Champagne-Ardennes
+- Fait partie des Hanta virus
+- Transmission par les excréments des rats
 ** VCH
 Charge virale: augmente vite et fort mais diminue à 0 sous traitement
 *** Traitement
