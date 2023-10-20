@@ -245,7 +245,7 @@ Modification nécessaire pour kent :
 - suppression d'une boucle dans postPatch
 On supprime aussi NIX_BUILD_TOP
 **** TODO Corriger PR biobigfile
-SCHEDULED: <2023-10-20 Fri>
+SCHEDULED: <2023-10-21 Sat>
 /Entered on/ [2023-10-15 Sun 17:21]
 *** DONE [[https://github.com/NixOS/nixpkgs/pull/186459][BioDBHTS]]
 CLOSED: [2023-05-06 Sat 08:49] SCHEDULED: <2023-04-15 Sat>
@@ -1680,10 +1680,11 @@ CLOSED: [2023-09-17 Sun 09:07] SCHEDULED: <2023-09-16 Sat>
 https://www.postman.com/genoox-ps/workspace/franklin-api-documentation-s-public-workspace/documentation/6621518-4335389d-12e3-445f-8182-339df95b2a09
 *** KILL Regarder si clinique disponible avec vep :annotation:
 CLOSED: [2023-09-10 Sun 16:44]
-*** DONE Tester filtre sans splice: 6130 mais il en manque 4
+*** TODO Filtrer suffisament après annotation
+**** DONE Tester filtre sans splice: 6130 mais il en manque 4
 CLOSED: [2023-10-18 Wed 22:50] SCHEDULED: <2023-09-27 Wed>
 Mail Paul: Exome donc hors splice, peu intéressant
-**** DONE Enlever complètement condition splice: 6130 variants restants...
+***** DONE Enlever complètement condition splice: 6130 variants restants...
 CLOSED: [2023-09-27 Wed 19:37] SCHEDULED: <2023-09-26 Tue>
 Cf [[id:c9b2009a-503b-4561-94c6-29ae21a3188d][Filtre vep avec spliceAI: 37365 -> 6130]]
 
@@ -1694,7 +1695,7 @@ Dans tests/splicai
  grep -c -v '^#' test.vcf
 6130
 #+end_src
-**** DONE Remplacer par impact fonctionnel: peu d'impact : majorité = MODERATE
+***** DONE Remplacer par impact fonctionnel: peu d'impact : majorité = MODERATE
 CLOSED: [2023-09-27 Wed 19:45] SCHEDULED: <2023-09-26 Tue>
 
  filter_vep -i output-all-gpu-filtered.vcf --format vcf --filter "IMPACT is HIGH"  --only_matched | grep -c -v '^#'
@@ -1705,7 +1706,7 @@ filter_vep -i output-all-gpu-filtered.vcf --format vcf --filter "IMPACT is LOW" 
 
 filter_vep -i output-all-gpu-filtered.vcf --format vcf --filter "IMPACT is MODERATE"  --only_matched | grep -c -v '^#'
 5824
-**** DONE Regarder les conséquences pour tes les transcripts
+***** DONE Regarder les conséquences pour tes les transcripts
 CLOSED: [2023-09-27 Wed 21:04]
 /Work/Users/apraga/bisonex/out/annotate/vep/NA12878-sanger-all-T2T
 
@@ -1791,7 +1792,7 @@ bcftools +split-vep output-all-gpu-filtered.vcf  -f '%Consequence\n' -d | sort |
       9 stop_retained_variant
       6 stop_retained_variant&NMD_transcript_variant
       1 transcript_ablation
-**** DONE Regarder les conséquences pour -s worst
+***** DONE Regarder les conséquences pour -s worst
 CLOSED: [2023-09-27 Wed 21:04]
 /Work/Users/apraga/bisonex/out/annotate/vep/NA12878-sanger-all-T2T
 Après filtre_vep sans splice
@@ -1866,7 +1867,7 @@ $ bcftools +split-vep output-all-gpu-filtered.vcf  -f '%Consequence\n' -s worst 
       6 stop_retained_variant
       2 stop_retained_variant&nmd_transcript_variant
       1 transcript_ablation
-**** KILL Vérifier si tests sanger passent: non
+***** KILL Vérifier si tests sanger passent: non
 CLOSED: [2023-09-28 Thu 01:33] SCHEDULED: <2023-09-27 Wed>
      │ String                Float64   Int64
 ─────┼───────────────────────────────────────
@@ -1874,7 +1875,7 @@ CLOSED: [2023-09-28 Thu 01:33] SCHEDULED: <2023-09-27 Wed>
    2 │ chr10:g.240362         60.0     79
    3 │ chr14:g.52665581       60.0     51
    4 │ chr19:g.41325390       60.0    180
-**** DONE Comparer aux filtres en GRCh38:  ce sont bien les filtres hors splice...
+***** DONE Comparer aux filtres en GRCh38:  ce sont bien les filtres hors splice...
 CLOSED: [2023-10-17 Tue 21:12]
 T2T:
  filter_vep -i  2300346867_NA12878-63118093_S260-T2T/2300346867_NA12878-63118093_S260-T2T.vep.vcf.gz  --format vcf --filter "        not(Consequence matches non_coding_transcript or Consequence matches stream or Consequence matches intergenic_variant or Consequence matches UTR or Consequence matches intron_variant or Consequence matches synonymous or BIOTYPE  matches pseudogene or BIOTYPE  matches misc_RNA)"                --only_matched       | bcftools +counts
@@ -1897,12 +1898,12 @@ Number of others:  0
 Number of sites:   1840
 
 
-**** DONE Proportions de conséquence : T2T vs GRCh38 avec multiqc: idem
+***** DONE Proportions de conséquence : T2T vs GRCh38 avec multiqc: idem
 CLOSED: [2023-10-17 Tue 21:00]
 À l'oeil
 
-**** Réexaminer les conséquences
-***** DONE Impact fonctionnel: plus de LOW et de MODIFIER++
+***** Réexaminer les conséquences
+****** DONE Impact fonctionnel: plus de LOW et de MODIFIER++
 CLOSED: [2023-10-17 Tue 21:22]
 T2T
 bcftools +split-vep  2300346867_NA12878-63118093_S260-T2T/2300346867_NA12878-63118093_S260-T2T.filtervep.vcf -f '%IMPACT\n' -d | sort | uniq -c
@@ -1917,7 +1918,7 @@ bcftools +split-vep  2300346867_NA12878-63118093_S260-T2T/2300346867_NA12878-631
     466 LOW
   10054 MODERATE
     550 MODIFIER
-***** DONE Pire conséquence: trop de missense
+****** DONE Pire conséquence: trop de missense
 CLOSED: [2023-10-17 Tue 21:23]
 GRCh38
 $  bcftools +split-vep  2300346867_NA12878-63118093_S260-GRCh38/2300346867_NA12878-63118093_S260-GRCh38.filtervep.vcf -f '%Consequence\n' -d -s worst | sort | uniq -c
@@ -2038,10 +2039,10 @@ $  bcftools +split-vep  2300346867_NA12878-63118093_S260-GRCh38/2300346867_NA128
       1 transcript_ablation
       2 upstream_gene_variant
 
-*** DONE Regarder annotation VEP des variants sur NA12878 non trataié :na12878:
+**** DONE Regarder annotation VEP des variants sur NA12878 non trataié :na12878:
 CLOSED: [2023-10-18 Wed 22:50] SCHEDULED: <2023-10-16 Mon>
 /Entered on/ [2023-10-16 Mon 19:39]
-*** DONE Regarder si les variants sont dans des zones modifiées de T2T
+**** DONE Regarder si les variants sont dans des zones modifiées de T2T
 CLOSED: [2023-10-19 Thu 17:19] SCHEDULED: <2023-10-18 Wed>
 /Entered on/ [2023-10-18 Wed 22:49]
 Liftover des variants de GRCh38 -> T2T
@@ -2087,7 +2088,7 @@ julia> @by d :Column1 $nrow
   23 │ chrX        98
   24 │ chrY         1
 
-*** DONE Regarder si les variants sont sur des nouveaux gènes
+**** DONE Regarder si les variants sont sur des nouveaux gènes
 CLOSED: [2023-10-19 Thu 20:18] SCHEDULED: <2023-10-19 Thu>
 
 Cf ~/roam/reasearch/bisonex/code/t2t/compareGene.jl
@@ -2105,8 +2106,8 @@ On choisit refseq:: Il y a 170 gènes (unique sur le nom du gène !) dans T2T no
 À noter qu'il y a plus de gènes dans Refseq en GRC38-p14 qu'en T2T (20 080 > 19 748 )
 
 Avec compareGene.j, on retrouve 0.73%
-*** TODO Annotation avec vep + GTF (dernière versio)
-SCHEDULED: <2023-10-19 Thu>
+**** DONE Annotation avec vep + GTF (dernière versio): n'aide pas
+CLOSED: [2023-10-20 Fri 00:16] SCHEDULED: <2023-10-19 Thu>
 https://www.science.org/doi/10.1126/science.abj6987#core-R61
 /Entered on/ [2023-10-19 Thu 10:41]
 
@@ -2127,9 +2128,14 @@ Et on filtre
  filter_vep -i  na12878_annotated.vcf  --format vcf --filter "        not(Consequence matches non_coding_transcript or Consequence matches stream or Consequence matches intergenic_variant or Consequence matches UTR or Consequence matches intron_variant or Consequence matches synonymous or BIOTYPE  matches pseudogene or BIOTYPE  matches misc_RNA)"                --only_matched  > na12878_annotated_filtered.vcf
 
 #+end_src
-*** DONE Figure propre pour position des variants
+Idem
+
+grep -c -v '#' na12878_annotated_filtered.vcf
+6368
+
+**** DONE Figure propre pour position des variants
 CLOSED: [2023-10-19 Thu 15:41] SCHEDULED: <2023-10-19 Thu>
-*** DONE Nombre de variants dans les zones exclusives à T2T
+**** DONE Nombre de variants dans les zones exclusives à T2T
 CLOSED: [2023-10-19 Thu 16:39] SCHEDULED: <2023-10-19 Thu>
 Zones unique à T2T données par : https://genome.ucsc.edu/cgi-bin/hgTrackUi?hgsid=1735553302_OcJ6esPoUFcSykF6hKiRmIGU24KD&db=hub_3267197_GCA_009914755.4&c=CP068269.2&g=hub_3267197_hgUnique
 
@@ -2160,15 +2166,81 @@ wc -l na12878-t2t-only-unique.bed
 |   47 | na12878-t2t-only-unique.bed |
 
 Donc 0.73% sont dans des zones unique
-*** KILL Comparer l'annotation sur 1 variant filtré en GRCh388 et non filtré en T2T
+**** KILL Comparer l'annotation sur 1 variant filtré en GRCh388 et non filtré en T2T
 CLOSED: [2023-10-19 Thu 22:54] SCHEDULED: <2023-10-19 Thu>
-*** KILL Snpeff
+**** KILL Snpeff
 SCHEDULED: <2023-10-19 Thu>
 CLOSED: [2023-10-19 Thu 10:42]
 Base de données non disponible
-*** KILL Garder les transcrits canonique puis filtrer sur conséquence
-CLOSED: [2023-10-19 Thu 22:54] SCHEDULED: <2023-10-19 Thu>
+**** DONE Garder les transcrits canonique: reste nombreux
+CLOSED: [2023-10-20 Fri 23:46] SCHEDULED: <2023-10-19 Thu>
 /Entered on/ [2023-10-19 Thu 11:23]
+
+***** Test GRCH38
+Dans /Work/Users/apraga/bisonex/test/t2t
+
+On vérifie qu'afficher CANONICAL ne montre que les transcrits canoniques
+
+#+begin_src sh
+bcftools +split-vep  /Work/Users/apraga/bisonex/out/annotate/vep/2300346867_NA12878-63118093_S260-GRCh38/2300346867_NA12878-63118093_S260-GRCh38.vep.vcf.gz -f '%CHROM:%POS %CANONICAL\n' -d | wc -l
+20366
+
+bcftools +split-vep  /Work/Users/apraga/bisonex/out/annotate/vep/2300346867_NA12878-63118093_S260-GRCh38/2300346867_NA12878-63118093_S260-GRCh38.vep.vcf.gz -f '%CHROM:%POS\n' -d | wc -l
+90865
+#+end_src
+
+On peut aussi filtrer les transcrits canoniques seuls
+#+begin_src sh
+bcftools +split-vep  /Work/Users/apraga/bisonex/out/annotate/vep/2300346867_NA12878-63118093_S260-GRCh38/2300346867_NA12878-63118093_S260-GRCh38.vep.vcf.gz -f '%CHROM:%POS %Consequence\n' -i 'CANONICAL="YES"' -d | wc -l
+20366
+#+end_src
+****** Après VEP: canonique et missense ou pire: 1528 transcrits
+#+begin_src sh
+bcftools +split-vep  /Work/Users/apraga/bisonex/out/annotate/vep/2300346867_NA12878-63118093_S260-GRCh38/2300346867_NA12878-63118093_S260-GRCh38.vep.vcf.gz -f '%CHROM:%POS %Consequence\n' -i 'CANONICAL="YES"' -d -s worst:missense+ | wc -l
+1528
+****** Après filtre vep: canonique et missense ou pire: 1255 transcrits
+#+begin_src sh
+bcftools +split-vep  /Work/Users/apraga/bisonex/out/annotate/filter/2300346867_NA12878-63118093_S260-GRCh38/2300346867_NA12878-63118093_S260-GRCh38.filtervep.vcf -f '%CHROM:%POS %Consequence\n' -i 'CANONICAL="YES"'  -d | wc -l
+3519
+
+bcftools +split-vep  /Work/Users/apraga/bisonex/out/annotate/filter/2300346867_NA12878-63118093_S260-GRCh38/2300346867_NA12878-63118093_S260-GRCh38.filtervep.vcf -f '%CHROM:%POS %Consequence\n' -i 'CANONICAL="YES"'  -d  -s worst:missense+| wc -l
+1255
+#+end_src
+****** Notre filtre vep + canonique: 2216 variants
+#+begin_src
+filter_vep -i  /Work/Users/apraga/bisonex/out/annotate/vep/2300346867_NA12878-63118093_S260-GRCh38/2300346867_NA12878-63118093_S260-GRCh38.vep.vcf.gz   --format vcf --filter "        not(Consequence matches non_coding_transcript or Consequence matches stream or Consequence matches intergenic_variant or Consequence matches UTR or Consequence matches intron_variant or Consequence matches synonymous or BIOTYPE  matches pseudogene or BIOTYPE  matches misc_RNA)" --filter "CANONICAL is YES"                --only_matched  | wc -l
+2216
+#+end_src
+***** Test T2T
+50 000 vs 30 000
+ #+begin_src sh
+ bcftools +split-vep  /Work/Users/apraga/bisonex/out/annotate/vep/2300346867_NA12878-63118093_S260-T2T/2300346867_NA12878-63118093_S260-T2T.vep.vcf.gz -f '%CHROM:%POS %Consequence\n' -i 'CANONICAL="YES"' -d | wc -l
+50142
+ #+end_src
+****** Apres VEP: canonique et missense ou pire: 4615 transcrits
+ #+begin_src sh
+ bcftools +split-vep  /Work/Users/apraga/bisonex/out/annotate/vep/2300346867_NA12878-63118093_S260-T2T/2300346867_NA12878-63118093_S260-T2T.vep.vcf.gz -f '%CHROM:%POS %Consequence\n' -i 'CANONICAL="YES"' -d -s worst:missense+ | wc -l
+ #+end_src
+****** Après filtre vep: canonique et missense ou pire : 3734 transcrits (et 3734 variants)
+ #+begin_src sh
+ bcftools +split-vep  /Work/Users/apraga/bisonex/out/annotate/filter/2300346867_NA12878-63118093_S260-T2T/2300346867_NA12878-63118093_S260-T2T.filtervep.vcf -f '%CHROM:%POS %Consequence\n' -i 'CANONICAL="YES"' -d -s worst:missense+ | wc -l
+ #+end_src
+****** Notre filtre vep + canonique: 5539 variants
+#+begin_src sh
+filter_vep -i  /Work/Users/apraga/bisonex/out/annotate/vep/2300346867_NA12878-63118093_S260-T2T/2300346867_NA12878-63118093_S260-T2T.vep.vcf.gz   --format vcf --filter "        not(Consequence matches non_coding_transcript or Consequence matches stream or Consequence matches intergenic_variant or Consequence matches UTR or Consequence matches intron_variant or Consequence matches synonymous or BIOTYPE  matches pseudogene or BIOTYPE  matches misc_RNA)" --filter "CANONICAL is YES"                --only_matched  | wc -l
+5539
+#+end_src
+**** KILL Vérifier fréquence gnomad: non disponible dans cache
+CLOSED: [2023-10-20 Fri 23:24] SCHEDULED: <2023-10-20 Fri>
+Pas de sortie gnomad ? On teste dans /Work/Users/apraga/bisonex/test/t2t/gnomad
+
+On copie les smlink
+#+begin_src  sh
+cp -P /Work/Users/apraga/bisonex/work/98/967730e87f1bd228dbd68725a1ef7d/* .
+ cp /Work/Users/apraga/bisonex/work/98/967730e87f1bd228dbd68725a1ef7d/.command.sh  .
+rm *.spip.*
+rm *.vep.*
+#+end_src
 ** DONE [#B] Indicateurs qualité :qualité:
 CLOSED: [2023-09-10 Sun 16:46]
 *** Idée
@@ -3142,7 +3214,7 @@ On se base sur
 *** TODO Biblio <(biblio appel variant)> <(appel variant)>
 SCHEDULED: <2023-10-18 Wed>
 *** TODO Figure: nombre de publication par appel de variant
-SCHEDULED: <2023-10-19 Thu>
+SCHEDULED: <2023-10-21 Sat>
 /Entered on/ [2023-09-19 Tue 08:43]
 ** TODO Figure: nombre d'exomes par années
 SCHEDULED: <2023-10-25 Wed>
@@ -8972,11 +9044,11 @@ CLOSED: [2023-10-08 Sun 22:56]
 **** DONE Mail Paul
 CLOSED: [2023-10-08 Sun 23:24] SCHEDULED: <2023-10-08 Sun>
 ** TODO Mettre à jour liste des variants
-SCHEDULED: <2023-10-19 Thu>
+SCHEDULED: <2023-10-21 Sat>
 *** TODO Ajouter négatifs dans la liste des variants
-SCHEDULED: <2023-10-19 Thu>
+SCHEDULED: <2023-10-21 Sat>
 ** TODO Comparer variants cento à sortie bisonex
-SCHEDULED: <2023-10-19 Thu>
+SCHEDULED: <2023-10-21 Sat>
 * Résultats
 ** TODO Speed-up BWA-mem
 SCHEDULED: <2023-10-22 Sun>
