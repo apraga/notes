@@ -238,8 +238,8 @@ CLOSED: [2023-10-09 Mon 22:30] SCHEDULED: <2023-10-09 Mon>
 ** DONE Envoyer choix d'option précoce
 CLOSED: [2023-10-10 Tue 23:12] SCHEDULED: <2023-10-10 Tue>
 /Entered on/ [2023-10-10 Tue 23:12]
-** TODO Demande de conservation de compte
-SCHEDULED: <2023-10-20 Fri>
+** DONE Demande de conservation de compte
+CLOSED: [2023-10-22 Sun 21:06] SCHEDULED: <2023-10-20 Fri>
 /Entered on/ [2023-10-19 Thu 18:27]
 Nécessite UF (demandé)
 * Santé
@@ -1086,13 +1086,13 @@ CLOSED: [2023-10-01 Sun 16:15] SCHEDULED: <2023-09-30 Sat>
 - [X] private
 - [ ] data
 *** TODO depuis raspberry:/media/annex
-SCHEDULED: <2023-10-22 Sun>
+SCHEDULED: <2023-10-29 Sun>
 À vérifier
 - [X] public
 - [X] private
 - [ ] data
 *** TODO depuis laptop:~/annex
-SCHEDULED: <2023-10-22 Sun>
+SCHEDULED: <2023-10-29 Sun>
 - [ ] public
 - [ ] private
 - [ ] data
@@ -1112,7 +1112,7 @@ CLOSED: [2023-10-01 Sun 16:15] SCHEDULED: <2023-10-01 Sun>
 ** DONE papers : git lfs (non encrypté)
 CLOSED: [2023-09-30 Sat 19:19] SCHEDULED: <2023-09-30 Sat>
 ** TODO Comprendre pourquoi git-annex ne lit pas home
-SCHEDULED: <2023-10-22 Sun>
+SCHEDULED: <2023-10-29 Sun>
 /Entered on/ [2023-10-01 Sun 21:31]
 Unable to parse git config
 cannot find git-annex
