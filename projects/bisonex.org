@@ -9075,6 +9075,7 @@ CLOSED: [2023-10-21 Sat 22:47]
 SCHEDULED: <2023-10-21 Sat>
 **** TODO variant_recoder pour avoir les coordonnées VCF
 SCHEDULED: <2023-10-21 Sat>
+mobidetails ne trouve pas les ieux transcrits
 **** TODO compare chaque variant avec la sortie du pipeline
 SCHEDULED: <2023-10-21 Sat>
 **** TODO confirme ou non en Sanger
