@@ -31,7 +31,7 @@ stack script simple.hs --resolver lts-14.18
 #+end_src
 * Data analysis
 ** Frames
-Minimal example
+*** Minimal example
 #+begin_src haskell
 {-# LANGUAGE DataKinds, FlexibleContexts, QuasiQuotes, TemplateHaskell, TypeApplications,
 TypeApplications#-}
@@ -62,6 +62,29 @@ main = do
   print $ frameRow t 1
 
 #+end_src
+*** Lire des fichiers tsv
+#+begin_src
+{-# LANGUAGE DataKinds, FlexibleContexts, QuasiQuotes, TemplateHaskell, TypeApplications, OverloadedStrings #-}
+module Main where
+
+import qualified Control.Foldl                 as L
+import qualified Data.Foldable as F
+import           Frames
+import Frames.TH (rowGen, RowGen(..))
+
+tableTypes' (rowGen "ml-100k/u.user")
+            { rowTypeName = "U2"
+            , columnNames = ["index", "age", "sex", "job", "id"]
+            , separator = "\t"}
+
+loadRows :: IO (Frame U2)
+loadRows = inCoreAoS (readTableOpt u2Parser "ml-100k/u.user")
+
+main = do
+  ms <- loadRows
+  mapM_ print (F.toList  ms)
+#+end_src
+Il faut rajouter le parser "u2Parser" (cf https://github.com/acowley/Frames/issues/178)
 * Divers
 ** Cabal vs stack
    :PROPERTIES:

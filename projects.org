@@ -536,20 +536,20 @@ CLOSED: [2023-10-02 Mon 21:58]
 *** TODO Corriger article
 SCHEDULED: <2023-10-22 Sun>
 **** TODO Ajouter images Dr Vidaud
-SCHEDULED: <2023-10-21 Sat>
+SCHEDULED: <2023-10-28 Sat>
 **** DONE Comprendre score LRR pour gain
 CLOSED: [2023-09-21 Thu 23:03] SCHEDULED: <2023-09-21 Thu>
 **** TODO Corriger discussion: remaniement complexe
-SCHEDULED: <2023-10-21 Sat>
+SCHEDULED: <2023-10-28 Sat>
 **** TODO Phénotype "mild" chez le père + détailler moléculaire
-SCHEDULED: <2023-10-21 Sat>
+SCHEDULED: <2023-10-28 Sat>
 **** DONE Traitement FBXW7 ?
 CLOSED: [2023-10-11 Wed 16:08] SCHEDULED: <2023-10-15 Sun>
 Lié à NF1 et non FBXW7 (voir mail V. Laithier)
 *** TODO Réponse reviewer
-SCHEDULED: <2023-10-21 Sat>
+SCHEDULED: <2023-10-28 Sat>
 *** TODO Correction Juliette
-SCHEDULED: <2023-10-21 Sat>
+SCHEDULED: <2023-10-28 Sat>
 *** TODO Resoumettre
 SCHEDULED: <2023-10-24 Tue>
 ** Apprendre le machine learning
@@ -846,13 +846,13 @@ CLOSED: [2023-10-15 Sun 12:43] SCHEDULED: <2023-10-15 Sun>
 Envoyée <2023-10-07 Sat>
 Sera probablement refusée car via Amazon
 *** TODO Retour Amazon
-SCHEDULED: <2023-10-21 Sat>
+SCHEDULED: <2023-10-28 Sat>
 Renvoie vers le constructeur ...
 ** DONE Coudre fermeture éclair pantalon
 CLOSED: [2023-10-11 Wed 12:48] SCHEDULED: <2023-10-11 Wed>
 /Entered on/ [2023-10-09 Mon 22:09]
 ** WAIT certificat de baptême
-SCHEDULED: <2023-10-19 Thu>
+SCHEDULED: <2023-10-23 Mon>
 /Entered on/ [2023-10-11 Wed 23:13]
 Message envoyé sur le site 2023-10-11 Wed
 ** DONE Réclamation train Paris - Besancon
@@ -918,15 +918,15 @@ CLOSED: [2023-07-29 Sat 10:57] SCHEDULED: <2023-07-29 Sat>
 CLOSED: [2023-07-29 Sat 10:57] SCHEDULED: <2023-07-29 Sat>
 #+category: maison
 ** TODO Résilier box
-SCHEDULED: <2023-10-20 Fri>
+SCHEDULED: <2023-10-23 Mon>
 /Entered on/ [2023-10-03 Tue 23:11]
 Soit raison impérative (pas de frais), soit logement avec déménagement
 ** TODO Résilier eau
 SCHEDULED: <2023-10-25 Wed>
 ** TODO Résilier électricité
 SCHEDULED: <2023-10-25 Wed>
-** WAIT Résilier ordures ménagères
-SCHEDULED: <2023-10-20 Fri>
+** DONE Résilier ordures ménagères
+CLOSED: [2023-10-21 Sat 14:31] SCHEDULED: <2023-10-20 Fri>
 Mail envoyé
 ** DONE Payer ordures ménagères
 CLOSED: [2023-10-07 Sat 17:48] SCHEDULED: <2023-10-06 Fri>
