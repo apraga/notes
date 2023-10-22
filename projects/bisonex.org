@@ -265,9 +265,9 @@ Soumis
 ** WAIT Package Spip https://github.com/NixOS/nixpkgs/pull/247476
 ** TODO Happy :happy:
 *** TODO PR python 3 upstream
-SCHEDULED: <2023-10-22 Sun>
+SCHEDULED: <2023-10-29 Sun>
 *** TODO nixpkgs en l'état
-SCHEDULED: <2023-10-22 Sun>
+SCHEDULED: <2023-10-29 Sun>
 ** PROJ SpliceAI
 ** TODO Bamsurgeon
 /Entered on/ [2023-05-13 Sat 19:11]
@@ -6514,10 +6514,10 @@ Twist exome
 ** TODO Données CHM13 :chm:
 https://github.com/lh3/CHM-eval
 *** TODO Run ERR1341793
-SCHEDULED: <2023-10-22 Sun>
+SCHEDULED: <2023-10-29 Sun>
 (raw reads ERR1341793_1.fastq.gz and ERR1341793_2.fastq.gz downloaded from https://www.ebi.ac.uk/ena/browser/view/ERR1341793)
 *** TODO Run ERR1341796
-SCHEDULED: <2023-10-22 Sun>
+SCHEDULED: <2023-10-29 Sun>
 ** TODO Insilico :cento:
 *** TODO tous les variants centogène
 **** DONE Extraire liste des SNVs
@@ -8731,7 +8731,7 @@ VEP chooses one block of annotation per variant, using an ordered set of criteri
 **** DONE Mail alexis
 CLOSED: [2023-08-20 Sun 13:45] SCHEDULED: <2023-08-20 Sun>
 **** TODO Données simuscop 200x
-SCHEDULED: <2023-10-22 Sun>
+SCHEDULED: <2023-10-29 Sun>
 **** DONE En T2T avec liftover (filtre = spip) : ok mais lent et trop de variants :tests:
 CLOSED: [2023-09-17 Sun 17:13] SCHEDULED: <2023-09-17 Sun>
 1. Conversion en bed
@@ -9045,21 +9045,35 @@ CLOSED: [2023-10-08 Sun 22:56]
 CLOSED: [2023-10-08 Sun 23:24] SCHEDULED: <2023-10-08 Sun>
 ** TODO Comparer variants cento à sortie bisonex :checkpipeline:
 SCHEDULED: <2023-10-21 Sat>
-*** TODO Ajouter négatifs dans la liste des variants
-SCHEDULED: <2023-10-21 Sat>
-*** TODO Mettre à jour liste des variants
-SCHEDULED: <2023-10-21 Sat>
-*** KILL Lifter coordonées variants cento génomique en GRCh38
-CLOSED: [2023-10-21 Sat 22:47]
 *** TODO Un seul exécutable pour toutes les étapes
 SCHEDULED: <2023-10-21 Sat>
 Un utilitaire en ligne de commande qui appel les différentes étapes.
 On utilise une structure unique pour toutes les étapes mais qui sera remplie au fur et à mesure. En stockant dans un csv à chaque étape
 **** DONE parse variants
 CLOSED: [2023-10-21 Sat 23:29] SCHEDULED: <2023-10-21 Sat>
+**** DONE Ajouter négatifs dans la liste des variants
+CLOSED: [2023-10-22 Sun 23:01] SCHEDULED: <2023-10-21 Sat>
+**** DONE Mettre à jour liste des variants
+CLOSED: [2023-10-22 Sun 23:01] SCHEDULED: <2023-10-21 Sat>
+- [X] Régéner la liste des variants
+- [ ] Retrouver les variants modifié à la main avec diff
+On ne garde que les ajouts
+#+begin_src sh
+awk -F ',' '{print $1","$2":"$3$4$5}' extracted.csv | ^sort | save -f extracted_concat.csv
+xsv select 1-2 ~/annex/data/centogene/variants/variant_genomic.csv  | ^sort | save variant_genomic_corr.csv -f
+diff extracted_concat.csv variant_genomic_corr.csv  | grep '^>' | save -f update.diff
+#+end_src
+- [X] Ajouter négatifs
+345 variants non trouvés avant modification
+141 après modification
+- [X] Ajouter différence
+- [X] Corriger erreurs de parsing
+
+**** KILL Lifter coordonées variants cento génomique en GRCh38
+CLOSED: [2023-10-21 Sat 22:47]
 **** TODO Un seul type de données
 SCHEDULED: <2023-10-21 Sat>
-**** TODO annote avec mobidetails
+**** TODO variant_recoder pour avoir les coordonnées VCF
 SCHEDULED: <2023-10-21 Sat>
 **** TODO compare chaque variant avec la sortie du pipeline
 SCHEDULED: <2023-10-21 Sat>
@@ -9067,10 +9081,10 @@ SCHEDULED: <2023-10-21 Sat>
 SCHEDULED: <2023-10-21 Sat>
 * Résultats
 ** TODO Speed-up BWA-mem
-SCHEDULED: <2023-10-22 Sun>
+SCHEDULED: <2023-10-29 Sun>
 
 ** TODO Speed-up Hapotypecaller
-SCHEDULED: <2023-10-22 Sun>
+SCHEDULED: <2023-10-29 Sun>
 * Communication
 ** DONE Mail NGS-diag
 CLOSED: [2023-10-06 Fri 08:04] SCHEDULED: <2023-10-06 Fri>
