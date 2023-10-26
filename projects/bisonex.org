@@ -245,7 +245,7 @@ Modification nécessaire pour kent :
 - suppression d'une boucle dans postPatch
 On supprime aussi NIX_BUILD_TOP
 **** TODO Corriger PR biobigfile
-SCHEDULED: <2023-10-21 Sat>
+SCHEDULED: <2023-10-27 Fri>
 /Entered on/ [2023-10-15 Sun 17:21]
 *** DONE [[https://github.com/NixOS/nixpkgs/pull/186459][BioDBHTS]]
 CLOSED: [2023-05-06 Sat 08:49] SCHEDULED: <2023-04-15 Sat>
@@ -3217,7 +3217,7 @@ SCHEDULED: <2023-10-18 Wed>
 SCHEDULED: <2023-10-21 Sat>
 /Entered on/ [2023-09-19 Tue 08:43]
 ** TODO Figure: nombre d'exomes par années
-SCHEDULED: <2023-10-25 Wed>
+SCHEDULED: <2023-11-02 Thu>
 /Entered on/ [2023-09-19 Tue 08:43]
 * Tests :tests:
 ** KILL Non régression : version prod
@@ -6398,7 +6398,7 @@ Mail alexis
 SCHEDULED: <2023-10-04 Wed>
 
 ***** TODO Rendre simplement le nombre de vrais positifs
-SCHEDULED: <2023-10-23 Mon>
+SCHEDULED: <2023-11-02 Thu>
 ***** KILL Mail Yannis
 CLOSED: [2023-07-08 Sat 10:44]
 ***** DONE Mail GIAB pour version T2T
@@ -6422,7 +6422,7 @@ CLOSED: [2023-08-12 Sat 15:55]
 *** TODO Platinum genome :platinum:
 https://emea.illumina.com/platinumgenomes.html
 **** TODO Tester sur la zone couverte par l'exome centogène
-SCHEDULED: <2023-10-23 Mon>
+SCHEDULED: <2023-11-02 Thu>
 *** DONE Séquencer NA12878 :cento:hg001:
 CLOSED: [2023-10-07 Sat 17:59]
 Discussion avec Paul : sous-traitant ne nous donnera pas les données, il faut commander l'ADN
@@ -8761,7 +8761,7 @@ Et on a trop de variants en sortie (7330 !)
 **** DONE Mail Paul avec résultats filtre en T2T + nouveau schéma
 CLOSED: [2023-09-17 Sun 23:15] SCHEDULED: <2023-09-17 Sun>
 ** TODO Medically relevant genes
-SCHEDULED: <2023-10-25 Wed>
+SCHEDULED: <2023-11-02 Thu>
 /Entered on/ [2023-10-18 Wed 22:37]
 * Ré-interprétation :reanalysis:
 ** DONE Lancer tests sur données brutes [225/250] <(samples.csv)>  <(runs.waiting)>
@@ -9071,11 +9071,15 @@ diff extracted_concat.csv variant_genomic_corr.csv  | grep '^>' | save -f update
 
 **** KILL Lifter coordonées variants cento génomique en GRCh38
 CLOSED: [2023-10-21 Sat 22:47]
-**** TODO Un seul type de données
-SCHEDULED: <2023-10-21 Sat>
-**** TODO variant_recoder pour avoir les coordonnées VCF
-SCHEDULED: <2023-10-21 Sat>
-mobidetails ne trouve pas les ieux transcrits
+**** DONE Un seul type de données
+CLOSED: [2023-10-25 Wed 09:13] SCHEDULED: <2023-10-21 Sat>
+**** KILL variant_recoder pour avoir les coordonnées VCF
+CLOSED: [2023-10-25 Wed 09:13] SCHEDULED: <2023-10-21 Sat>
+mobidetails n   e trouve pas les ieux transcrits
+**** DONE Annotation mobidetails (gene + données gonémique)
+CLOSED: [2023-10-25 Wed 09:14]
+**** DONE Envoyer liste à Paul
+SCHEDULED: <2023-10-26 Thu>
 **** TODO compare chaque variant avec la sortie du pipeline
 SCHEDULED: <2023-10-21 Sat>
 **** TODO confirme ou non en Sanger

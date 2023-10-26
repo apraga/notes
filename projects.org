@@ -534,7 +534,7 @@ CLOSED: [2023-09-18 Mon 19:36] SCHEDULED: <2023-09-17 Sun>
 *** DONE Avis paul sur ACPA non
 CLOSED: [2023-10-02 Mon 21:58]
 *** TODO Corriger article
-SCHEDULED: <2023-10-22 Sun>
+SCHEDULED: <2023-11-02 Thu>
 **** TODO Ajouter images Dr Vidaud
 SCHEDULED: <2023-10-28 Sat>
 **** DONE Comprendre score LRR pour gain
@@ -551,7 +551,7 @@ SCHEDULED: <2023-10-28 Sat>
 *** TODO Correction Juliette
 SCHEDULED: <2023-10-28 Sat>
 *** TODO Resoumettre
-SCHEDULED: <2023-10-24 Tue>
+SCHEDULED: <2023-11-01 Wed>
 ** Apprendre le machine learning
 :PROPERTIES:
 :CATEGORY: machine learning
@@ -852,7 +852,7 @@ Renvoie vers le constructeur ...
 CLOSED: [2023-10-11 Wed 12:48] SCHEDULED: <2023-10-11 Wed>
 /Entered on/ [2023-10-09 Mon 22:09]
 ** WAIT certificat de baptême
-SCHEDULED: <2023-10-23 Mon>
+SCHEDULED: <2023-11-01 Wed>
 /Entered on/ [2023-10-11 Wed 23:13]
 Message envoyé sur le site 2023-10-11 Wed
 ** DONE Réclamation train Paris - Besancon
@@ -917,14 +917,16 @@ CLOSED: [2023-07-29 Sat 10:57] SCHEDULED: <2023-07-29 Sat>
 ** DONE Lettre recommandée annonce déménagement
 CLOSED: [2023-07-29 Sat 10:57] SCHEDULED: <2023-07-29 Sat>
 #+category: maison
-** TODO Résilier box
-SCHEDULED: <2023-10-23 Mon>
+** DONE Résilier box
+CLOSED: [2023-10-26 Thu 09:21] SCHEDULED: <2023-10-26 Thu>
 /Entered on/ [2023-10-03 Tue 23:11]
+Envoyé le mail + règlement intérieur. Ce n'est pas une vrai attestation...
 Soit raison impérative (pas de frais), soit logement avec déménagement
 ** TODO Résilier eau
-SCHEDULED: <2023-10-25 Wed>
-** TODO Résilier électricité
-SCHEDULED: <2023-10-25 Wed>
+SCHEDULED: <2023-11-03 Fri>
+À faire après avoir quitté le logement (rétroactif)
+** DONE Résilier électricité
+CLOSED: [2023-10-26 Thu 09:26] SCHEDULED: <2023-10-26 Thu>
 ** DONE Résilier ordures ménagères
 CLOSED: [2023-10-21 Sat 14:31] SCHEDULED: <2023-10-20 Fri>
 Mail envoyé
@@ -935,6 +937,9 @@ Envoyé TIP. RIB déjà envoyé ? Sinon à repaer <2023-10-07 Sat>
 ** DONE Course
 CLOSED: [2023-10-09 Mon 22:30] SCHEDULED: <2023-10-09 Mon>
 /Entered on/ [2023-10-09 Mon 22:09]
+** TODO Renvoyer clavier corsair SK
+SCHEDULED: <2023-10-26 Thu>
+/Entered on/ [2023-10-26 Thu 09:27]
 * Banque
 :PROPERTIES:
 :CATEGORY: banque
