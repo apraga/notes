@@ -9082,6 +9082,44 @@ CLOSED: [2023-10-25 Wed 09:14]
 SCHEDULED: <2023-10-26 Thu>
 **** TODO compare chaque variant avec la sortie du pipeline
 SCHEDULED: <2023-10-21 Sat>
+Données brutes
+#+begin_src
+ls ~/annex/data/bisonex/annotate/full/ | wc  -l
+261
+#+end_src
+
+Parmis les variant annotaté :
+#+begin_src sh
+cabal run -- checkpipeline search -i variant_annotated.csv -d ~/annex/data/bisonex/annotate/full/ | save out.txt -f
+#+end_src
+
+Positifs retrouvés (nombre de patient)
+#+begin_src
+❯ rg '\\? True' out.txt | rg '"6\d+' -o | sed 's/"//' | ^sort | ^uniq | wc -l
+98
+#+end_src
+
+Positifs manqués
+#+begin_src
+❯ rg '\\? False' out.txt | rg '"6\d+' -o | sed 's/"//' | ^sort | ^uniq | wc -l
+5
+#+end_src
+
+Et les négatifs ?
+ #+begin_src sh
+ open variant_extracted.csv | where transcript == negatif | get file | split column ' ' | get column1 | sort | uniq | save negatif.txt -f
+ ls ~/annex/data/bisonex/annotate/full/ | get name | path basename | split column '-' | get column2 | split column '_' | get column1 | sort | uniq | save -f raw.txt
+ comm -12 negatif.txt raw.txt | wc -l
+ 136
+ #+end_src
+
+
+- 98 positifs retrouvés
+- 5 manqué
+- 136 rendus négatifs
+Total: 239
+
+A faire : chercher le variant pour chaque run
 **** TODO confirme ou non en Sanger
 SCHEDULED: <2023-10-21 Sat>
 * Résultats
