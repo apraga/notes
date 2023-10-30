@@ -6514,10 +6514,10 @@ Twist exome
 ** TODO Données CHM13 :chm:
 https://github.com/lh3/CHM-eval
 *** TODO Run ERR1341793
-SCHEDULED: <2023-10-29 Sun>
+SCHEDULED: <2023-11-04 Sat>
 (raw reads ERR1341793_1.fastq.gz and ERR1341793_2.fastq.gz downloaded from https://www.ebi.ac.uk/ena/browser/view/ERR1341793)
 *** TODO Run ERR1341796
-SCHEDULED: <2023-10-29 Sun>
+SCHEDULED: <2023-11-04 Sat>
 ** TODO Insilico :cento:
 *** TODO tous les variants centogène
 **** DONE Extraire liste des SNVs
@@ -8731,7 +8731,7 @@ VEP chooses one block of annotation per variant, using an ordered set of criteri
 **** DONE Mail alexis
 CLOSED: [2023-08-20 Sun 13:45] SCHEDULED: <2023-08-20 Sun>
 **** TODO Données simuscop 200x
-SCHEDULED: <2023-10-29 Sun>
+SCHEDULED: <2023-11-04 Sat>
 **** DONE En T2T avec liftover (filtre = spip) : ok mais lent et trop de variants :tests:
 CLOSED: [2023-09-17 Sun 17:13] SCHEDULED: <2023-09-17 Sun>
 1. Conversion en bed
@@ -9082,52 +9082,43 @@ CLOSED: [2023-10-25 Wed 09:14]
 SCHEDULED: <2023-10-26 Thu>
 **** TODO compare chaque variant avec la sortie du pipeline
 SCHEDULED: <2023-10-21 Sat>
-Données brutes
-#+begin_src
-ls ~/annex/data/bisonex/annotate/full/ | wc  -l
-261
-#+end_src
+Avec la fonction "test" dans Search.hs
+1126 extracted
+654 annotated
+253 raw data
+102 raw and annotated
+236 raw and extracted
+17 raw NOT extracted
+890 extract WITHOUT raw
 
-Parmis les variant annotaté :
 #+begin_src sh
-cabal run -- checkpipeline search -i variant_annotated.csv -d ~/annex/data/bisonex/annotate/full/ | save out.txt -f
+❯ open diff.txt | from csv | get id | into string | each {|e| "~/annex/data/centogene/reports/" ++ $e ++ "*.pdf"} | each {|e| firefox $e }
 #+end_src
-
-Positifs retrouvés (nombre de patient)
-#+begin_src
-❯ rg '\\? True' out.txt | rg '"6\d+' -o | sed 's/"//' | ^sort | ^uniq | wc -l
-98
-#+end_src
-
-Positifs manqués
-#+begin_src
-❯ rg '\\? False' out.txt | rg '"6\d+' -o | sed 's/"//' | ^sort | ^uniq | wc -l
-5
-#+end_src
-
-Et les négatifs ?
- #+begin_src sh
- open variant_extracted.csv | where transcript == negatif | get file | split column ' ' | get column1 | sort | uniq | save negatif.txt -f
- ls ~/annex/data/bisonex/annotate/full/ | get name | path basename | split column '-' | get column2 | split column '_' | get column1 | sort | uniq | save -f raw.txt
- comm -12 negatif.txt raw.txt | wc -l
- 136
- #+end_src
-
-
-- 98 positifs retrouvés
-- 5 manqué
-- 136 rendus négatifs
-Total: 239
+Les 17 manquants sont
+- 62913191 : CNV
+- 62959388 : MT-ATP6
+- 62999572 : MT-ATP6
+- 62999627 : CNV
+- 62999630 : CNV
+- 63004218: CNV
+- 63006466 : CNV
+- 63009152 : manqué à extraire
+- 63015289: CNV
+- 63024910 : MT-ATP6
+- 63040251 : CNV
+- 63043050 : CNV
+- 63118093 : NA12878
+- NA12878 x4
 
 A faire : chercher le variant pour chaque run
 **** TODO confirme ou non en Sanger
 SCHEDULED: <2023-10-21 Sat>
 * Résultats
 ** TODO Speed-up BWA-mem
-SCHEDULED: <2023-10-29 Sun>
+SCHEDULED: <2023-11-04 Sat>
 
 ** TODO Speed-up Hapotypecaller
-SCHEDULED: <2023-10-29 Sun>
+SCHEDULED: <2023-11-04 Sat>
 * Communication
 ** DONE Mail NGS-diag
 CLOSED: [2023-10-06 Fri 08:04] SCHEDULED: <2023-10-06 Fri>

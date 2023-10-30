@@ -546,20 +546,20 @@ CLOSED: [2023-10-02 Mon 21:58]
 *** TODO Corriger article
 SCHEDULED: <2023-11-02 Thu>
 **** TODO Ajouter images Dr Vidaud
-SCHEDULED: <2023-10-28 Sat>
+SCHEDULED: <2023-11-04 Sat>
 **** DONE Comprendre score LRR pour gain
 CLOSED: [2023-09-21 Thu 23:03] SCHEDULED: <2023-09-21 Thu>
 **** TODO Corriger discussion: remaniement complexe
-SCHEDULED: <2023-10-28 Sat>
+SCHEDULED: <2023-11-04 Sat>
 **** TODO Phénotype "mild" chez le père + détailler moléculaire
-SCHEDULED: <2023-10-28 Sat>
+SCHEDULED: <2023-11-04 Sat>
 **** DONE Traitement FBXW7 ?
 CLOSED: [2023-10-11 Wed 16:08] SCHEDULED: <2023-10-15 Sun>
 Lié à NF1 et non FBXW7 (voir mail V. Laithier)
 *** TODO Réponse reviewer
-SCHEDULED: <2023-10-28 Sat>
+SCHEDULED: <2023-11-04 Sat>
 *** TODO Correction Juliette
-SCHEDULED: <2023-10-28 Sat>
+SCHEDULED: <2023-11-04 Sat>
 *** TODO Resoumettre
 SCHEDULED: <2023-11-01 Wed>
 ** Apprendre le machine learning
@@ -849,14 +849,15 @@ Autres drives :
 CLOSED: [2023-02-12 Sun 23:17]
 *** TODO Copier photos famille depuis drive yvain sur drive famille
 *** TODO Trier photos sur drive yvain
-** TODO Remplacer clavier SK :clavier:
+** DONE Remplacer clavier SK :clavier:
+CLOSED: [2023-10-28 Sat 21:36]
 /Entered on/ [2023-10-07 Sat 22:58]
 *** DONE Demande à Cooler Master un remplacement
 CLOSED: [2023-10-15 Sun 12:43] SCHEDULED: <2023-10-15 Sun>
 Envoyée <2023-10-07 Sat>
 Sera probablement refusée car via Amazon
-*** TODO Retour Amazon
-SCHEDULED: <2023-10-28 Sat>
+*** DONE Retour Amazon
+CLOSED: [2023-10-28 Sat 21:36] SCHEDULED: <2023-10-28 Sat>
 Renvoie vers le constructeur ...
 ** DONE Coudre fermeture éclair pantalon
 CLOSED: [2023-10-11 Wed 12:48] SCHEDULED: <2023-10-11 Wed>
@@ -875,8 +876,8 @@ CLOSED: [2023-10-16 Mon 22:05]
 CLOSED: [2023-10-19 Thu 18:31] SCHEDULED: <2023-10-23 Mon>
 Manque justificatif de retard mais le site ne trouve pas le trajet...
 https://www.ter.sncf.com/bourgogne-franche-comte/services-contacts/bulletin-retard-resultats?search=N4IgJgpgDghgTgFwK5wgZQQeygBQDYwDGEIAXKAHYwC2JpIO8AlgM4C0AQhHIQJ4AEHTCgDmmERQj82-Rrxb8wAcgCCSAG7cJJADQhWGbPiJ0EcJBD1MwZEAA4A7ADY7Ttw5B6EvKHRAALViw4JkIQAF89eBD1GDxDXAJiMkoaPy4WGAoAc8wKNgA1JkwEBF19FgTjZNIzCysbekcHAEY7AAZ2jy8fP0CWYNCIqLgYuIARGDLbACZ2mYBmNhb25YBWABVO0m3OgGp5nfbPEGimWLwNplpbFqdSABYPcKA
-** TODO Rendre livres BU
-SCHEDULED: <2023-10-27 Fri>
+** DONE Rendre livres BU
+CLOSED: [2023-10-28 Sat 21:36] SCHEDULED: <2023-10-27 Fri>
 /Entered on/ [2023-10-27 Fri 21:14]
 * Voiture :voiture:
 ** Mazda 5
