@@ -9080,8 +9080,8 @@ mobidetails n   e trouve pas les ieux transcrits
 CLOSED: [2023-10-25 Wed 09:14]
 **** DONE Envoyer liste à Paul
 SCHEDULED: <2023-10-26 Thu>
-**** TODO compare chaque variant avec la sortie du pipeline
-SCHEDULED: <2023-10-21 Sat>
+**** DONE compare chaque variant avec la sortie du pipeline
+CLOSED: [2023-10-31 Tue 00:18] SCHEDULED: <2023-10-21 Sat>
 Avec la fonction "test" dans Search.hs
 1126 extracted
 654 annotated
@@ -9102,17 +9102,21 @@ Les 17 manquants sont
 - 62999630 : CNV
 - 63004218: CNV
 - 63006466 : CNV
-- 63009152 : manqué à extraire
+- 63009152 : manqué à extraire -> bien présent
 - 63015289: CNV
 - 63024910 : MT-ATP6
 - 63040251 : CNV
 - 63043050 : CNV
 - 63118093 : NA12878
 - NA12878 x4
-
-A faire : chercher le variant pour chaque run
-**** TODO confirme ou non en Sanger
-SCHEDULED: <2023-10-21 Sat>
+**** TODO Annoter avec la sortie du pipeline
+SCHEDULED: <2023-11-01 Wed>
+**** TODO Annoter avec Sanger
+SCHEDULED: <2023-11-01 Wed>
+**** TODO Rajouter variant pour 63009152
+SCHEDULED: <2023-11-01 Wed>
+**** TODO Regénérer annotation avec NC_
+SCHEDULED: <2023-10-31 Tue>
 * Résultats
 ** TODO Speed-up BWA-mem
 SCHEDULED: <2023-11-04 Sat>
