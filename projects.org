@@ -50,7 +50,7 @@ CLOSED: [2023-10-01 Sun 14:49] SCHEDULED: <2023-09-26 Tue>
 *** DONE Envoyer dossier Anais et Luna
 CLOSED: [2023-10-04 Wed 19:35] SCHEDULED: <2023-10-04 Wed>
 *** TODO Envoyer mail syndicat des internes
-SCHEDULED: <2023-10-19 Thu>
+SCHEDULED: <2023-11-03 Fri>
 *** DONE Envoyer dossier à Mme Lucet à Grenoble
 CLOSED: [2023-10-04 Wed 19:35] SCHEDULED: <2023-10-05 Thu>
 Confirmé <2023-10-04 Wed>
@@ -200,12 +200,16 @@ CLOSED: [2023-10-18 Wed 00:10] DEADLINE: <2023-10-16 Mon> SCHEDULED: <2023-10-22
   - [ ] <(Culture)>
   - [ ] A. agalactiae
   - [ ] Bactérie (refaire un tour)
-** TODO Attestation box ?
-SCHEDULED: <2023-10-30 Mon>
+** KILL Attestation box ?
+CLOSED: [2023-11-02 Thu 22:29] SCHEDULED: <2023-10-30 Mon>
+** TODO Arrêter résilier et souscrire nouveau contrat :internet:
+SCHEDULED: <2023-11-13 Mon>
+Appel 2023-11-03: ouverture nouvelle ligne dans 9 jours
+RV demain
 ** TODO Assurance habitation
-SCHEDULED: <2023-10-31 Tue>
-*** TODO Mail coloc pour discuter assurance
-SCHEDULED: <2023-10-27 Fri>
+SCHEDULED: <2023-11-03 Fri>
+*** DONE Mail coloc pour discuter assurance
+CLOSED: [2023-11-02 Thu 22:29] SCHEDULED: <2023-10-27 Fri>
 ** DONE Présentation dépistage hémato :presentation:
 CLOSED: [2023-10-19 Thu 18:29]
 :PROPERTIES:
@@ -248,10 +252,10 @@ CLOSED: [2023-10-10 Tue 23:12] SCHEDULED: <2023-10-10 Tue>
 CLOSED: [2023-10-22 Sun 21:06] SCHEDULED: <2023-10-20 Fri>
 /Entered on/ [2023-10-19 Thu 18:27]
 Nécessite UF (demandé)
-** TODO Relancer DAM pour conservation compte
-SCHEDULED: <2023-10-27 Fri>
-** TODO Mail DSI pour conservation compte (attente)
-SCHEDULED: <2023-10-27 Fri>
+** DONE Relancer DAM pour conservation compte
+CLOSED: [2023-11-02 Thu 22:29] SCHEDULED: <2023-10-27 Fri>
+** DONE Mail DSI pour conservation compte (attente)
+CLOSED: [2023-11-02 Thu 22:29] SCHEDULED: <2023-10-27 Fri>
 * Santé
 ** DONE Envoyer devis dentiste à mutuelle
 CLOSED: [2023-09-21 Thu 23:03] SCHEDULED: <2023-09-19 Tue>
@@ -544,24 +548,24 @@ CLOSED: [2023-09-18 Mon 19:36] SCHEDULED: <2023-09-17 Sun>
 *** DONE Avis paul sur ACPA non
 CLOSED: [2023-10-02 Mon 21:58]
 *** TODO Corriger article
-SCHEDULED: <2023-11-02 Thu>
+SCHEDULED: <2023-11-05 Sun>
 **** TODO Ajouter images Dr Vidaud
-SCHEDULED: <2023-11-04 Sat>
+SCHEDULED: <2023-11-05 Sun>
 **** DONE Comprendre score LRR pour gain
 CLOSED: [2023-09-21 Thu 23:03] SCHEDULED: <2023-09-21 Thu>
 **** TODO Corriger discussion: remaniement complexe
-SCHEDULED: <2023-11-04 Sat>
+SCHEDULED: <2023-11-05 Sun>
 **** TODO Phénotype "mild" chez le père + détailler moléculaire
-SCHEDULED: <2023-11-04 Sat>
+SCHEDULED: <2023-11-05 Sun>
 **** DONE Traitement FBXW7 ?
 CLOSED: [2023-10-11 Wed 16:08] SCHEDULED: <2023-10-15 Sun>
 Lié à NF1 et non FBXW7 (voir mail V. Laithier)
 *** TODO Réponse reviewer
-SCHEDULED: <2023-11-04 Sat>
+SCHEDULED: <2023-11-05 Sun>
 *** TODO Correction Juliette
-SCHEDULED: <2023-11-04 Sat>
+SCHEDULED: <2023-11-05 Sun>
 *** TODO Resoumettre
-SCHEDULED: <2023-11-01 Wed>
+SCHEDULED: <2023-11-16 Thu>
 ** Apprendre le machine learning
 :PROPERTIES:
 :CATEGORY: machine learning
@@ -918,9 +922,11 @@ CLOSED: [2023-07-30 Sun 15:02]
 /Entered on/ [2023-07-02 Sun 18:20]
 Découverte <2023-07-02 Sun>. Virement 100.50€ fait.
 Mail envoyé ce jour
-** WAIT Vendre vélo
+** KILL Vendre vélo
+CLOSED: [2023-11-02 Thu 22:31]
 /Entered on/ [2023-07-29 Sat 10:23]
-** TODO Vendre
+** DONE Vendre
+CLOSED: [2023-11-02 Thu 22:31]
 *** DONE Envoyer Dimensions frigo et machine à laver
 CLOSED: [2023-10-17 Tue 23:20] SCHEDULED: <2023-10-17 Wed>
 ** DONE Photo à Éric pour lit
@@ -1105,13 +1111,13 @@ CLOSED: [2023-10-01 Sun 16:15] SCHEDULED: <2023-09-30 Sat>
 - [X] private
 - [ ] data
 *** TODO depuis raspberry:/media/annex
-SCHEDULED: <2023-10-29 Sun>
+SCHEDULED: <2023-11-23 Thu>
 À vérifier
 - [X] public
 - [X] private
 - [ ] data
 *** TODO depuis laptop:~/annex
-SCHEDULED: <2023-10-29 Sun>
+SCHEDULED: <2023-11-23 Thu>
 - [ ] public
 - [ ] private
 - [ ] data
@@ -1131,7 +1137,7 @@ CLOSED: [2023-10-01 Sun 16:15] SCHEDULED: <2023-10-01 Sun>
 ** DONE papers : git lfs (non encrypté)
 CLOSED: [2023-09-30 Sat 19:19] SCHEDULED: <2023-09-30 Sat>
 ** TODO Comprendre pourquoi git-annex ne lit pas home
-SCHEDULED: <2023-10-29 Sun>
+SCHEDULED: <2023-11-23 Thu>
 /Entered on/ [2023-10-01 Sun 21:31]
 Unable to parse git config
 cannot find git-annex

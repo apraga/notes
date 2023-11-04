@@ -206,6 +206,8 @@ CLOSED: [2023-08-12 Sat 18:23] SCHEDULED: <2023-08-12 Sat 18:00>
 *** DONE Mail R. Lemann
 CLOSED: [2023-08-12 Sat 18:23] SCHEDULED: <2023-08-12 Sat 18:00>
 *** TODO Mise à jour packages nix
+*** TODO Corriger PR
+SCHEDULED: <2023-11-05 Sun>
 ** TODO VEP :vep:
 *** DONE [[https://github.com/NixOS/nixpkgs/pull/185691][BioPerl]]
 SCHEDULED: <2022-08-10 Wed>
@@ -265,9 +267,9 @@ Soumis
 ** WAIT Package Spip https://github.com/NixOS/nixpkgs/pull/247476
 ** TODO Happy :happy:
 *** TODO PR python 3 upstream
-SCHEDULED: <2023-10-29 Sun>
+SCHEDULED: <2023-11-06 Mon>
 *** TODO nixpkgs en l'état
-SCHEDULED: <2023-10-29 Sun>
+SCHEDULED: <2023-11-06 Mon>
 ** PROJ SpliceAI
 ** TODO Bamsurgeon
 /Entered on/ [2023-05-13 Sat 19:11]
@@ -3212,12 +3214,12 @@ On se base sur
 
 ** Appel de variant
 *** TODO Biblio <(biblio appel variant)> <(appel variant)>
-SCHEDULED: <2023-10-18 Wed>
+SCHEDULED: <2023-11-04 Sat>
 *** TODO Figure: nombre de publication par appel de variant
-SCHEDULED: <2023-10-21 Sat>
+SCHEDULED: <2023-11-05 Sun>
 /Entered on/ [2023-09-19 Tue 08:43]
 ** TODO Figure: nombre d'exomes par années
-SCHEDULED: <2023-11-02 Thu>
+SCHEDULED: <2023-11-16 Thu>
 /Entered on/ [2023-09-19 Tue 08:43]
 * Tests :tests:
 ** KILL Non régression : version prod
@@ -6398,7 +6400,7 @@ Mail alexis
 SCHEDULED: <2023-10-04 Wed>
 
 ***** TODO Rendre simplement le nombre de vrais positifs
-SCHEDULED: <2023-11-02 Thu>
+SCHEDULED: <2023-11-09 Thu>
 ***** KILL Mail Yannis
 CLOSED: [2023-07-08 Sat 10:44]
 ***** DONE Mail GIAB pour version T2T
@@ -6422,7 +6424,7 @@ CLOSED: [2023-08-12 Sat 15:55]
 *** TODO Platinum genome :platinum:
 https://emea.illumina.com/platinumgenomes.html
 **** TODO Tester sur la zone couverte par l'exome centogène
-SCHEDULED: <2023-11-02 Thu>
+SCHEDULED: <2023-11-09 Thu>
 *** DONE Séquencer NA12878 :cento:hg001:
 CLOSED: [2023-10-07 Sat 17:59]
 Discussion avec Paul : sous-traitant ne nous donnera pas les données, il faut commander l'ADN
@@ -6514,10 +6516,10 @@ Twist exome
 ** TODO Données CHM13 :chm:
 https://github.com/lh3/CHM-eval
 *** TODO Run ERR1341793
-SCHEDULED: <2023-11-04 Sat>
+SCHEDULED: <2023-11-11 Sat>
 (raw reads ERR1341793_1.fastq.gz and ERR1341793_2.fastq.gz downloaded from https://www.ebi.ac.uk/ena/browser/view/ERR1341793)
 *** TODO Run ERR1341796
-SCHEDULED: <2023-11-04 Sat>
+SCHEDULED: <2023-11-11 Sat>
 ** TODO Insilico :cento:
 *** TODO tous les variants centogène
 **** DONE Extraire liste des SNVs
@@ -8731,7 +8733,7 @@ VEP chooses one block of annotation per variant, using an ordered set of criteri
 **** DONE Mail alexis
 CLOSED: [2023-08-20 Sun 13:45] SCHEDULED: <2023-08-20 Sun>
 **** TODO Données simuscop 200x
-SCHEDULED: <2023-11-04 Sat>
+SCHEDULED: <2023-11-11 Sat>
 **** DONE En T2T avec liftover (filtre = spip) : ok mais lent et trop de variants :tests:
 CLOSED: [2023-09-17 Sun 17:13] SCHEDULED: <2023-09-17 Sun>
 1. Conversion en bed
@@ -8761,7 +8763,7 @@ Et on a trop de variants en sortie (7330 !)
 **** DONE Mail Paul avec résultats filtre en T2T + nouveau schéma
 CLOSED: [2023-09-17 Sun 23:15] SCHEDULED: <2023-09-17 Sun>
 ** TODO Medically relevant genes
-SCHEDULED: <2023-11-02 Thu>
+SCHEDULED: <2023-11-09 Thu>
 /Entered on/ [2023-10-18 Wed 22:37]
 * Ré-interprétation :reanalysis:
 ** DONE Lancer tests sur données brutes [225/250] <(samples.csv)>  <(runs.waiting)>
@@ -9016,7 +9018,7 @@ CLOSED: [2023-10-14 Sat 11:58] SCHEDULED: <2023-10-08 Sun>
 - [ ] 2300409593_63130874
 - [ ] 2300409612_63130980
 - [ ] 2300417623_63131524
-** TODO Variants manqués :missed:
+** TODO Variants manqués :checkpipeline:
 SCHEDULED: <2023-10-21 Sat>
 *** DONE 63012582: chr10:g.102230760 filtré par AD :63012582:
 CLOSED: [2023-10-08 Sun 23:24] SCHEDULED: <2023-10-08 Sun>
@@ -9043,10 +9045,8 @@ GT:AD:DP:GQ:PL 0/1:9,6:15:99:103,0,213
 CLOSED: [2023-10-08 Sun 22:56]
 **** DONE Mail Paul
 CLOSED: [2023-10-08 Sun 23:24] SCHEDULED: <2023-10-08 Sun>
-** TODO Comparer variants cento à sortie bisonex :checkpipeline:
-SCHEDULED: <2023-10-21 Sat>
-*** TODO Un seul exécutable pour toutes les étapes
-SCHEDULED: <2023-10-21 Sat>
+*** DONE Un seul exécutable pour toutes les étapes
+CLOSED: [2023-11-04 Sat 19:00] SCHEDULED: <2023-10-21 Sat>
 Un utilitaire en ligne de commande qui appel les différentes étapes.
 On utilise une structure unique pour toutes les étapes mais qui sera remplie au fur et à mesure. En stockant dans un csv à chaque étape
 **** DONE parse variants
@@ -9071,8 +9071,83 @@ diff extracted_concat.csv variant_genomic_corr.csv  | grep '^>' | save -f update
 
 **** KILL Lifter coordonées variants cento génomique en GRCh38
 CLOSED: [2023-10-21 Sat 22:47]
+
+**** DONE Parser coordonnée patient
+CLOSED: [2023-11-04 Sat 18:59] SCHEDULED: <2023-10-31 Tue>
 **** DONE Un seul type de données
-CLOSED: [2023-10-25 Wed 09:13] SCHEDULED: <2023-10-21 Sat>
+CLOSED: [2023-11-01 Wed 00:55] SCHEDULED: <2023-10-31 Tue>
+
+***** DONE Vérifier avec derniere version sauvegardé
+CLOSED: [2023-11-01 Wed 00:55] SCHEDULED: <2023-10-31 Tue>
+file,transcript,coding,codingPos,codingChange,proteinChange,classification,zygosity
+->
+patient,transcript (cento),transcript (canonical),coding,genomic (hg38),classification (cento),zygosity,gene,Confirmed in sanger,Found by bisonex,chrom,pos,ref,alt
+
+- [ ] Fusionner coding,codingPos,codingChange
+- [ ] Ne pas écrire proteinchange
+- [ ] Fichier de référence : insérer champs vides avec awk : transcript (canonical), genomic  puis gene, etc
+- [ ] Fichier de référence : renommer header
+- [ ] vérifier que fichier toujours identique
+
+#+begin_src julia
+using DataFramesMeta, CSV
+
+# - [ ] Fichier de référence : insérer champs vides avec awk : transcript (canonical), genomic  puis gene, etc
+# - [ ] Fichier de référence : renommer header
+# - [ ] vérifier que fichier toujours identique
+
+#file,transcript,coding,codingPos,codingChange,proteinChange,classification,zygosity
+#->
+#patient,transcript (cento),transcript (canonical),coding,genomic (hg38),classification (cento),zygosity,gene,Confirmed in sanger,Found by bisonex,chrom,pos,ref,alt
+
+
+function mergeCoding(c, p, ch)
+    "negatif" in [c, p, ch] ? "negatif" : c * p * ch
+end
+
+function negative(t, pos)
+    t == "negatif" ? -1 : pos
+end
+
+cols = [:patient,:"transcript (cento)",:"transcript (canonical)",:coding,:"genomic (hg38)",
+        :"classification (cento)",:zygosity,:gene,:"Confirmed in sanger",:"Found by bisonex",
+        :chrom,:pos,:ref,:alt]
+d = @chain CSV.read("variant_extracted.csv", DataFrame) begin
+    # Fusionner coding,codingPos,codingChange
+    @transform :coding = mergeCoding.(:coding, :codingPos, :codingChange)
+    # Ne pas écrire proteinchange
+    @select $(Not([:codingPos, :codingChange, :proteinChange]))
+    # Add missing mcolumns
+    @rename :"transcript (cento)" = :transcript :patient = :file :"classification (cento)" = :classification
+    @transform :"transcript (canonical)" = missing :"genomic (hg38)" = missing :gene = missing
+    @transform :"Confirmed in sanger" = missing :"Found by bisonex" = missing
+    @transform :chrom = missing :pos = missing :ref = missing :alt = missing
+    # Rorder
+    @select :patient :"transcript (cento)" :"transcript (canonical)" :coding :"genomic (hg38)" :"classification (cento)" :zygosity :gene :"Confirmed in sanger" :"Found by bisonex" :chrom :pos :ref :alt
+    # Set -1 for negative variant
+    @rtransform :pos = :"transcript (cento)" == "negatif" ? -1 : :pos
+    @rtransform :"transcript (canonical)"= :"transcript (cento)" == "negatif" ? "negatif" : :"transcript (canonical)"
+    @rtransform :"genomic (hg38)" = :"transcript (cento)" == "negatif" ? "negatif" : :"genomic (hg38)"
+    @rtransform :coding = :"transcript (cento)" == "negatif" ? "negatif" : :coding
+    @rtransform :gene = :"transcript (cento)" == "negatif" ? "negatif" : :gene
+    @rtransform :pos = ismissing(:pos) ? -1 : :pos
+    end
+CSV.write("variant_extracted_remap.csv", d)
+
+d2 = @chain CSV.read("extracted.csv", DataFrame) begin
+    @orderby :patient
+    end
+CSV.write("extracted_sorted.csv", d2)
+#+end_src
+
+ON trie les fichiers pour bien avoir le bon order (sinon diff ne fonctionne pas ??)
+
+diff extracted_sorted.csv variant_extracted_remap.csv  -u | save extracted.diff
+ patch -p1 extracted_sorted.csv extracted.diff
+patching file extracted_sorted.csv
+
+diff extracted_sorted.csv variant_extracted_remap.csv  -u
+
 **** KILL variant_recoder pour avoir les coordonnées VCF
 CLOSED: [2023-10-25 Wed 09:13] SCHEDULED: <2023-10-21 Sat>
 mobidetails n   e trouve pas les ieux transcrits
@@ -9109,20 +9184,39 @@ Les 17 manquants sont
 - 63043050 : CNV
 - 63118093 : NA12878
 - NA12878 x4
-**** TODO Annoter avec la sortie du pipeline
+*** TODO Comparer variants cento à sortie bisonex
+SCHEDULED: <2023-11-04 Sat>
+*** DONE Refaire extraction
+CLOSED: [2023-11-04 Sat 19:02] SCHEDULED: <2023-11-04 Sat>
+*** DONE Refaire annotation avec mobidetails
+CLOSED: [2023-11-04 Sat 19:02] SCHEDULED: <2023-11-04 Sat>
+*** DONE Refaire annotation avec transcrit non reconnus
+CLOSED: [2023-11-04 Sat 20:42] SCHEDULED: <2023-11-04 Sat>
+5 transcrits, donnés égalemen tpar
+#+begin_src nu
+open annotated.csv | where coding != "negatif" | where chrom == ""
+#+end_src
+| 62676048 | NM_001080420.1 | SHANK3    | référénce non valide   |
+| 62690893 | NM_001080420.1 | KDM6B     | idem                   |
+| 62690893 | NM_001080420.1 | KDM6B     | même variant           |
+| 62795429 | NM_016381.3    | TREX1 | NM_033629.5   |
+| 63019340 | NM_001080420.1 | SHANK3 | NM_001372044.2 |
+
 SCHEDULED: <2023-11-01 Wed>
-**** TODO Annoter avec Sanger
-SCHEDULED: <2023-11-01 Wed>
-**** TODO Rajouter variant pour 63009152
-SCHEDULED: <2023-11-01 Wed>
-**** TODO Regénérer annotation avec NC_
-SCHEDULED: <2023-10-31 Tue>
+*** DONE Rajouter variant pour 63009152
+CLOSED: [2023-11-04 Sat 20:47] SCHEDULED: <2023-11-01 Wed>
+*** DONE Regénérer annotation avec NC_
+CLOSED: [2023-11-04 Sat 18:59] SCHEDULED: <2023-10-31 Tue>
+*** TODO Comparer variants cento avec sanger
+SCHEDULED: <2023-11-04 Sat>
+*** TODO Mail paul avec résultats
+SCHEDULED: <2023-11-05 Sun>
 * Résultats
 ** TODO Speed-up BWA-mem
-SCHEDULED: <2023-11-04 Sat>
+SCHEDULED: <2023-11-11 Sat>
 
 ** TODO Speed-up Hapotypecaller
-SCHEDULED: <2023-11-04 Sat>
+SCHEDULED: <2023-11-11 Sat>
 * Communication
 ** DONE Mail NGS-diag
 CLOSED: [2023-10-06 Fri 08:04] SCHEDULED: <2023-10-06 Fri>
