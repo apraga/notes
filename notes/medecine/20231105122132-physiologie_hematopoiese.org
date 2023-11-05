@@ -1,0 +1,34 @@
+:PROPERTIES:
+:ID:       0a17eb6d-a88e-4a07-b8af-8435e4086578
+:END:
+#+title: Physiologie hématopoïèse
+#+filetags: personal medecine hémato
+
+- Durée de vie
+  - GR: 120 jours
+  - plaquette 7 jours
+  - polynucléaire 24h
+- Localisation : sac vitellin (<= 2 mois), foie/rate (<= 7 mois) puis moelle
+
+NB: dans la moelle, mégacaryocyte (normalement non présent dans moelle)
+
+Moelle : progéniteur (non identifiable) -> précurseurs (identifiable). Puis cellules différenciées dans le sang
+
+CSH
+- CD34+, CD38-
+- -> progéniteur lymphoide ou myéloide
+  - différentiation restreinte à 1 ou 2 lignées
+  - CD34+, CD38+
+- peuvent reconstituer toute l'hématoiès à long terme !
+- multipotente, autorenouvellement
+- nombreuses interactions CSH avec micro-environnement ("niche" hématopoïètique)
+
+#+caption: lignée myéloide
+[[file:../../images/hematologie/myeloide.png]]
+
+Pour lignée lymphocytaire:
+- le thymus sert à la différenciation des précurseurs des lymphocytes *T*
+- la moelle sert à la différenciation des précurseurs des lymphocytes B
+- les lymphocytes B matures, après activationo avec antigène, se différencien en LB mémoire et en plasmocytes qui produisent les anticorps circulants.
+#+caption: lignée lymphocytaire
+[[file:../../images/hematologie/lymphoide.png]]

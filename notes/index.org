@@ -1,11 +1,13 @@
 * Biologie
-Bactériologie
+** Bactériologie
 - [[id:6b2bf94d-9539-4a64-b15b-9511aa90772c][Classification bactéries]]
 - [[id:9160ba80-117b-4434-acc9-13676a534da0][Bactéries]]
 - [[id:00e9454a-9a71-4fbd-bfde-0fdf323bce15][Maladies infectieuses]]
 - [[id:46dca88b-671f-4f23-a340-5dc564a48659][Antibiotiques]]
 - [[id:a8ad4c3b-9f08-4878-8d9d-febddae20069][Culture]]
-Virologie
+** Virologie
 - [[id:6c2348f1-0081-44d2-974b-1642b20892b7][Virologie]]
+** Hématologie
+[[id:0a17eb6d-a88e-4a07-b8af-8435e4086578][Physiologie hématopoïèse]]
 * Autres
 - [[id:ff3ddbe9-e87b-4e1b-8478-66234ebf6ab5][Japonais]]
