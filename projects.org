@@ -57,17 +57,22 @@ Confirmé <2023-10-04 Wed>
 *** TODO Mail rapporteur
 SCHEDULED: <2023-11-06 Mon>
 /Entered on/ [2023-11-05 Sun 11:41]
-** Logement trevenans :trevenans:cs:
-*** DONE Compléter dossier
-CLOSED: [2023-08-30 Wed 16:38]
-*** TODO Assurance habitation
-Attente décision
-*** DONE Louer camionette
-CLOSED: [2023-09-16 Sat 18:19] SCHEDULED: <2023-09-16 Sat>
-/Entered on/ [2023-09-13 Wed 22:57]
-** DONE Copie carte d'identié + mutuelle accueil hôpital
-CLOSED: [2023-08-19 Sat 20:09] SCHEDULED: <2023-08-17 Thu>
-/Entered on/ [2023-08-08 Tue 21:18]
+** Logement trevenans :trevenans:
+*** WAIT Assurance habitation
+    SCHEDULED: <2023-11-12 Sun>
+    Attente décision
+*** DONE Envoyer état des lieux
+    CLOSED: [2023-11-05 Sun 18:46] SCHEDULED: <2023-11-05 Sun>
+*** DONE Envoyer papiers : clé, wifi, autorisation accès
+    CLOSED: [2023-11-05 Sun 15:10] SCHEDULED: <2023-11-05 Sun>
+    /Entered on/ [2023-11-05 Sun 14:55]
+*** TODO Demander pour ouverture de ligne
+    SCHEDULED: <2023-11-05 Sun>
+    /Entered on/ [2023-11-05 Sun 14:56]
+*** TODO Arrêter résilier et souscrire nouveau contrat :internet:
+SCHEDULED: <2023-11-13 Mon>
+Appel 2023-11-03: ouverture nouvelle ligne dans 9 jours
+RV demain
 ** DONE Cas clinique H.influenza :hinfluenzae:
 CLOSED: [2023-09-28 Thu 11:43]
 :PROPERTIES:
@@ -205,14 +210,6 @@ CLOSED: [2023-10-18 Wed 00:10] DEADLINE: <2023-10-16 Mon> SCHEDULED: <2023-10-22
   - [ ] Bactérie (refaire un tour)
 ** KILL Attestation box ?
 CLOSED: [2023-11-02 Thu 22:29] SCHEDULED: <2023-10-30 Mon>
-** TODO Arrêter résilier et souscrire nouveau contrat :internet:
-SCHEDULED: <2023-11-13 Mon>
-Appel 2023-11-03: ouverture nouvelle ligne dans 9 jours
-RV demain
-** TODO Assurance habitation
-SCHEDULED: <2023-11-03 Fri>
-*** DONE Mail coloc pour discuter assurance
-CLOSED: [2023-11-02 Thu 22:29] SCHEDULED: <2023-10-27 Fri>
 ** DONE Présentation dépistage hémato :presentation:
 CLOSED: [2023-10-19 Thu 18:29]
 :PROPERTIES:
@@ -245,20 +242,6 @@ CLOSED: [2023-10-19 Thu 18:29]
 *** DONE Corriger présentation
 CLOSED: [2023-10-17 Tue 23:19] SCHEDULED: <2023-10-16 Mon>
 /Entered on/ [2023-10-16 Mon 22:01]
-** DONE Dossier admnistratatif Trevenans
-CLOSED: [2023-10-09 Mon 22:30] SCHEDULED: <2023-10-09 Mon>
-/Entered on/ [2023-10-09 Mon 22:08]
-** DONE Envoyer choix d'option précoce
-CLOSED: [2023-10-10 Tue 23:12] SCHEDULED: <2023-10-10 Tue>
-/Entered on/ [2023-10-10 Tue 23:12]
-** DONE Demande de conservation de compte
-CLOSED: [2023-10-22 Sun 21:06] SCHEDULED: <2023-10-20 Fri>
-/Entered on/ [2023-10-19 Thu 18:27]
-Nécessite UF (demandé)
-** DONE Relancer DAM pour conservation compte
-CLOSED: [2023-11-02 Thu 22:29] SCHEDULED: <2023-10-27 Fri>
-** DONE Mail DSI pour conservation compte (attente)
-CLOSED: [2023-11-02 Thu 22:29] SCHEDULED: <2023-10-27 Fri>
 * Santé
 ** DONE Envoyer devis dentiste à mutuelle
 CLOSED: [2023-09-21 Thu 23:03] SCHEDULED: <2023-09-19 Tue>
@@ -552,21 +535,21 @@ CLOSED: [2023-09-18 Mon 19:36] SCHEDULED: <2023-09-17 Sun>
 CLOSED: [2023-10-02 Mon 21:58]
 *** TODO Corriger article
 SCHEDULED: <2023-11-05 Sun>
-**** TODO Ajouter images Dr Vidaud
-SCHEDULED: <2023-11-05 Sun>
+**** DONE Ajouter images Dr Vidaud
+CLOSED: [2023-11-05 Sun 18:46] SCHEDULED: <2023-11-05 Sun>
 **** DONE Comprendre score LRR pour gain
 CLOSED: [2023-09-21 Thu 23:03] SCHEDULED: <2023-09-21 Thu>
-**** TODO Corriger discussion: remaniement complexe
-SCHEDULED: <2023-11-05 Sun>
-**** TODO Phénotype "mild" chez le père + détailler moléculaire
-SCHEDULED: <2023-11-05 Sun>
+**** DONE Corriger discussion: remaniement complexe
+CLOSED: [2023-11-05 Sun 18:46] SCHEDULED: <2023-11-05 Sun>
+**** DONE Phénotype "mild" chez le père + détailler moléculaire
+CLOSED: [2023-11-05 Sun 18:46] SCHEDULED: <2023-11-05 Sun>
 **** DONE Traitement FBXW7 ?
 CLOSED: [2023-10-11 Wed 16:08] SCHEDULED: <2023-10-15 Sun>
 Lié à NF1 et non FBXW7 (voir mail V. Laithier)
-*** TODO Réponse reviewer
-SCHEDULED: <2023-11-05 Sun>
+*** DONE Réponse reviewer
+CLOSED: [2023-11-05 Sun 18:46] SCHEDULED: <2023-11-05 Sun>
 *** TODO Correction Juliette
-SCHEDULED: <2023-11-05 Sun>
+SCHEDULED: <2023-11-12 Sun>
 *** TODO Resoumettre
 SCHEDULED: <2023-11-16 Thu>
 ** Apprendre le machine learning
@@ -870,7 +853,7 @@ Renvoie vers le constructeur ...
 CLOSED: [2023-10-11 Wed 12:48] SCHEDULED: <2023-10-11 Wed>
 /Entered on/ [2023-10-09 Mon 22:09]
 ** WAIT certificat de baptême
-SCHEDULED: <2023-11-01 Wed>
+SCHEDULED: <2023-11-06 Mon>
 /Entered on/ [2023-10-11 Wed 23:13]
 Message envoyé sur le site 2023-10-11 Wed
 ** DONE Réclamation train Paris - Besancon
@@ -945,8 +928,8 @@ CLOSED: [2023-10-26 Thu 09:21] SCHEDULED: <2023-10-26 Thu>
 /Entered on/ [2023-10-03 Tue 23:11]
 Envoyé le mail + règlement intérieur. Ce n'est pas une vrai attestation...
 Soit raison impérative (pas de frais), soit logement avec déménagement
-** TODO Résilier eau
-SCHEDULED: <2023-11-03 Fri>
+** DONE Résilier eau
+CLOSED: [2023-11-05 Sun 14:51] SCHEDULED: <2023-11-03 Fri>
 À faire après avoir quitté le logement (rétroactif)
 ** DONE Résilier électricité
 CLOSED: [2023-10-26 Thu 09:26] SCHEDULED: <2023-10-26 Thu>
@@ -963,6 +946,9 @@ CLOSED: [2023-10-09 Mon 22:30] SCHEDULED: <2023-10-09 Mon>
 ** DONE Renvoyer clavier corsair SK
 CLOSED: [2023-10-27 Fri 21:14] SCHEDULED: <2023-10-26 Thu>
 /Entered on/ [2023-10-26 Thu 09:27]
+** TODO Payer facture eau Gennes
+SCHEDULED: <2023-11-19 Sun>
+/Entered on/ [2023-11-05 Sun 15:28]
 * Banque
 :PROPERTIES:
 :CATEGORY: banque

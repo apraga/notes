@@ -200,12 +200,12 @@ C'est juste une interface autour d'hgvs mais il faut
 
   Dépendences
   s: wcwidth, pyee, pure-eval, ptyprocess, pickleshare, parsley, parse, fake-useragent, executing, backcall, appdirs, zipp, websockets, w3lib, urllib3, traitlets, tqdm, tabulate, sqlparse, soupsieve, six, pygments, psycopg2, prompt-toolkit, pexpect, parso, lxml, idna, humanfriendly, decorator, cython, cssselect, configparser, charset-normalizer, certifi, attrs, requests, pysam, pyquery, matplotlib-inline, jedi, importlib-metadata, coloredlogs, beautifulsoup4, asttokens, yoyo-migrations, stack-data, pyppeteer, bs4, bioutils, requests-html, ipython, biocommons.seqrepo, hgvs
-** TODO SPIP T2T
+** TODO SPIP :spip:
 *** DONE PR upstream
 CLOSED: [2023-08-12 Sat 18:23] SCHEDULED: <2023-08-12 Sat 18:00>
-*** DONE Mail R. Lemann
+*** DONE Mail R. Lemann :T2T:
 CLOSED: [2023-08-12 Sat 18:23] SCHEDULED: <2023-08-12 Sat 18:00>
-*** TODO Mise à jour packages nix
+*** KILL Mise à jour T2T :T2T:
 *** TODO Corriger PR
 SCHEDULED: <2023-11-05 Sun>
 ** TODO VEP :vep:
