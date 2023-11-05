@@ -9184,8 +9184,13 @@ Les 17 manquants sont
 - 63043050 : CNV
 - 63118093 : NA12878
 - NA12878 x4
-*** TODO Comparer variants cento à sortie bisonex
-SCHEDULED: <2023-11-04 Sat>
+*** DONE Comparer variants cento à sortie bisonex: 121 trouvé, 5 manqués
+CLOSED: [2023-11-05 Sun 00:53] SCHEDULED: <2023-11-04 Sat>
+*** TODO Regarder 5 variants manqués
+SCHEDULED: <2023-11-05 Sun>
+open searched.csv |  where "Found by bisonex" == "missed"
+
+A priori non confirmé sanger
 *** DONE Refaire extraction
 CLOSED: [2023-11-04 Sat 19:02] SCHEDULED: <2023-11-04 Sat>
 *** DONE Refaire annotation avec mobidetails
