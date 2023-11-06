@@ -207,7 +207,7 @@ CLOSED: [2023-08-12 Sat 18:23] SCHEDULED: <2023-08-12 Sat 18:00>
 CLOSED: [2023-08-12 Sat 18:23] SCHEDULED: <2023-08-12 Sat 18:00>
 *** KILL Mise à jour T2T :T2T:
 *** TODO Corriger PR
-SCHEDULED: <2023-11-05 Sun>
+SCHEDULED: <2023-11-09 Thu>
 ** TODO VEP :vep:
 *** DONE [[https://github.com/NixOS/nixpkgs/pull/185691][BioPerl]]
 SCHEDULED: <2022-08-10 Wed>
@@ -247,7 +247,7 @@ Modification nécessaire pour kent :
 - suppression d'une boucle dans postPatch
 On supprime aussi NIX_BUILD_TOP
 **** TODO Corriger PR biobigfile
-SCHEDULED: <2023-11-03 Fri>
+SCHEDULED: <2023-11-09 Thu>
 /Entered on/ [2023-10-15 Sun 17:21]
 *** DONE [[https://github.com/NixOS/nixpkgs/pull/186459][BioDBHTS]]
 CLOSED: [2023-05-06 Sat 08:49] SCHEDULED: <2023-04-15 Sat>
@@ -267,9 +267,9 @@ Soumis
 ** WAIT Package Spip https://github.com/NixOS/nixpkgs/pull/247476
 ** TODO Happy :happy:
 *** TODO PR python 3 upstream
-SCHEDULED: <2023-11-06 Mon>
+SCHEDULED: <2023-11-13 Mon>
 *** TODO nixpkgs en l'état
-SCHEDULED: <2023-11-06 Mon>
+SCHEDULED: <2023-11-13 Mon>
 ** PROJ SpliceAI
 ** TODO Bamsurgeon
 /Entered on/ [2023-05-13 Sat 19:11]
@@ -3214,9 +3214,9 @@ On se base sur
 
 ** Appel de variant
 *** TODO Biblio <(biblio appel variant)> <(appel variant)>
-SCHEDULED: <2023-11-04 Sat>
+SCHEDULED: <2023-11-07 Tue>
 *** TODO Figure: nombre de publication par appel de variant
-SCHEDULED: <2023-11-05 Sun>
+SCHEDULED: <2023-11-07 Tue>
 /Entered on/ [2023-09-19 Tue 08:43]
 ** TODO Figure: nombre d'exomes par années
 SCHEDULED: <2023-11-16 Thu>
@@ -9212,8 +9212,10 @@ SCHEDULED: <2023-11-01 Wed>
 CLOSED: [2023-11-04 Sat 20:47] SCHEDULED: <2023-11-01 Wed>
 *** DONE Regénérer annotation avec NC_
 CLOSED: [2023-11-04 Sat 18:59] SCHEDULED: <2023-10-31 Tue>
-*** TODO Comparer variants cento avec sanger
-SCHEDULED: <2023-11-04 Sat>
+*** DONE Comparer variants manqué avec sanger: 0 confirmés
+CLOSED: [2023-11-06 Mon 23:48] SCHEDULED: <2023-11-04 Sat>
+*** TODO Annoter variants avec sanger
+SCHEDULED: <2023-11-07 Tue>
 *** TODO Mail paul avec résultats
 SCHEDULED: <2023-11-05 Sun>
 * Résultats
