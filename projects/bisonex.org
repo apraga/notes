@@ -9184,8 +9184,25 @@ Les 17 manquants sont
 - 63043050 : CNV
 - 63118093 : NA12878
 - NA12878 x4
-*** DONE Comparer variants cento à sortie bisonex: 121 trouvé, 5 manqués
-CLOSED: [2023-11-05 Sun 00:53] SCHEDULED: <2023-11-04 Sat>
+*** DONE Comparer variants cento à sortie bisonex: 50/121 confirmé en sanger, 71/121 non testé, 0 confirmés manqué par pipeline, 5 manqué mais non confirmés
+CLOSED: [2023-11-08 Wed 00:19] SCHEDULED: <2023-11-04 Sat>
+*** Comparger sanger : variant seul
+Compliqué de reconstituer l'arbre familial. L'information est là mais demande du travail.
+ON suppose que le variant n'est que dans la famille....
+
+Résultats
+❯ open sangerized.csv | where "Found by bisonex" == "found" | where "Confirmed in sanger" == "true" | length
+50
+
+❯ open sangerized.csv | where "Found by bisonex" == "found" | where "Confirmed in sanger" == "" | length
+71
+
+❯ open sangerized.csv | where "Found by bisonex" == "missed" | where "Confirmed in sanger" == "" | length
+5
+
+❯ open sangerized.csv | where "Found by bisonex" == "missed" | where "Confirmed in sanger" == "true" | length
+0
+[[id:cd79a77c-a0b6-4bb1-9e08-fe08dc89e3aa][Résultats finaux]]
 *** TODO Regarder 5 variants manqués
 SCHEDULED: <2023-11-05 Sun>
 open searched.csv |  where "Found by bisonex" == "missed"
