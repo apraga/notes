@@ -49,17 +49,17 @@ Confirmé <2023-10-04 Wed>
 CLOSED: [2023-10-01 Sun 14:49] SCHEDULED: <2023-09-26 Tue>
 *** DONE Envoyer dossier Anais et Luna
 CLOSED: [2023-10-04 Wed 19:35] SCHEDULED: <2023-10-04 Wed>
-*** TODO Envoyer mail syndicat des internes
-SCHEDULED: <2023-11-03 Fri>
+*** DONE Envoyer mail syndicat des internes
+CLOSED: [2023-11-08 Wed 19:03] SCHEDULED: <2023-11-03 Fri>
 *** DONE Envoyer dossier à Mme Lucet à Grenoble
 CLOSED: [2023-10-04 Wed 19:35] SCHEDULED: <2023-10-05 Thu>
 Confirmé <2023-10-04 Wed>
-*** TODO Mail rapporteur
-SCHEDULED: <2023-11-06 Mon>
+*** DONE Mail rapporteur
+CLOSED: [2023-11-08 Wed 19:03] SCHEDULED: <2023-11-06 Mon>
 /Entered on/ [2023-11-05 Sun 11:41]
 ** Logement trevenans :trevenans:
-*** WAIT Assurance habitation
-    SCHEDULED: <2023-11-12 Sun>
+*** DONE Assurance habitation: envoyé
+    CLOSED: [2023-11-08 Wed 19:19] SCHEDULED: <2023-11-12 Sun>
     Attente décision
 *** DONE Envoyer état des lieux
     CLOSED: [2023-11-05 Sun 18:46] SCHEDULED: <2023-11-05 Sun>
@@ -73,6 +73,8 @@ SCHEDULED: <2023-11-06 Mon>
 SCHEDULED: <2023-11-13 Mon>
 Appel 2023-11-03: ouverture nouvelle ligne dans 9 jours
 RV demain
+*** KILL Attestation box ?
+CLOSED: [2023-11-02 Thu 22:29] SCHEDULED: <2023-10-30 Mon>
 ** DONE Cas clinique H.influenza :hinfluenzae:
 CLOSED: [2023-09-28 Thu 11:43]
 :PROPERTIES:
@@ -208,8 +210,6 @@ CLOSED: [2023-10-18 Wed 00:10] DEADLINE: <2023-10-16 Mon> SCHEDULED: <2023-10-22
   - [ ] <(Culture)>
   - [ ] A. agalactiae
   - [ ] Bactérie (refaire un tour)
-** KILL Attestation box ?
-CLOSED: [2023-11-02 Thu 22:29] SCHEDULED: <2023-10-30 Mon>
 ** DONE Présentation dépistage hémato :presentation:
 CLOSED: [2023-10-19 Thu 18:29]
 :PROPERTIES:
@@ -533,8 +533,8 @@ CLOSED: [2023-09-18 Mon 19:36] SCHEDULED: <2023-09-17 Sun>
 /Entered on/ [2023-09-17 Sun 16:06]
 *** DONE Avis paul sur ACPA non
 CLOSED: [2023-10-02 Mon 21:58]
-*** TODO Corriger article
-SCHEDULED: <2023-11-05 Sun>
+*** DONE Corriger article
+CLOSED: [2023-11-08 Wed 19:03] SCHEDULED: <2023-11-05 Sun>
 **** DONE Ajouter images Dr Vidaud
 CLOSED: [2023-11-05 Sun 18:46] SCHEDULED: <2023-11-05 Sun>
 **** DONE Comprendre score LRR pour gain
@@ -946,8 +946,9 @@ CLOSED: [2023-10-09 Mon 22:30] SCHEDULED: <2023-10-09 Mon>
 ** DONE Renvoyer clavier corsair SK
 CLOSED: [2023-10-27 Fri 21:14] SCHEDULED: <2023-10-26 Thu>
 /Entered on/ [2023-10-26 Thu 09:27]
-** TODO Payer facture eau Gennes
-SCHEDULED: <2023-11-19 Sun>
+** WAIT Payer facture eau Gennes: à vérifier
+SCHEDULED: <2023-11-09 Thu>
+Payé 2023-11-08, à vérifier
 /Entered on/ [2023-11-05 Sun 15:28]
 ** TODO Déposer chèque caution
 SCHEDULED: <2023-11-07 Tue>

@@ -9203,11 +9203,25 @@ Résultats
 ❯ open sangerized.csv | where "Found by bisonex" == "missed" | where "Confirmed in sanger" == "true" | length
 0
 [[id:cd79a77c-a0b6-4bb1-9e08-fe08dc89e3aa][Résultats finaux]]
-*** TODO Regarder 5 variants manqués
-SCHEDULED: <2023-11-05 Sun>
+*** DONE Regarder 5 variants manqués: 3 explicables, 2 non
+CLOSED: [2023-11-09 Thu 00:22] SCHEDULED: <2023-11-05 Sun>
 open searched.csv |  where "Found by bisonex" == "missed"
 
-A priori non confirmé sanger
+62982193  7884996 : haplotypecaller ok... -> filtré car AD=5 <= 10
+63012582  102230760 : non présent haplotypcellar mais une délétion en 755 (en 754 CG -> C). Vérifié mobidetails
+63019340  50721335 : non présent haplotypecaller (vérifié igv). vérifié mobidetails
+63060439  26869324 : filtré car 15 reads
+63109239  14358800 : présent haplotypecaller : filtré car DP=29 <= 30
+
+
+Non présent haplotypecaller avec bcftools mais zgrep ok
+zgrep 7884996 call_variant/haplotypecaller/*62982193*/*
+zgrep 102230760 call_variant/haplotypecaller/*63012582*/*
+zgrep 50721335 call_variant/haplotypecaller/*63019340*/*
+zgrep 26869324 call_variant/haplotypecaller/*63060439*/*
+zgrep 14358800 call_variant/haplotypecaller/*63109239*/*
+*** DONE Flowchart
+CLOSED: [2023-11-09 Thu 00:22]
 *** DONE Refaire extraction
 CLOSED: [2023-11-04 Sat 19:02] SCHEDULED: <2023-11-04 Sat>
 *** DONE Refaire annotation avec mobidetails
@@ -9231,10 +9245,10 @@ CLOSED: [2023-11-04 Sat 20:47] SCHEDULED: <2023-11-01 Wed>
 CLOSED: [2023-11-04 Sat 18:59] SCHEDULED: <2023-10-31 Tue>
 *** DONE Comparer variants manqué avec sanger: 0 confirmés
 CLOSED: [2023-11-06 Mon 23:48] SCHEDULED: <2023-11-04 Sat>
-*** TODO Annoter variants avec sanger
-SCHEDULED: <2023-11-07 Tue>
-*** TODO Mail paul avec résultats
-SCHEDULED: <2023-11-05 Sun>
+*** DONE Annoter variants avec sanger
+CLOSED: [2023-11-08 Wed 23:17] SCHEDULED: <2023-11-07 Tue>
+*** DONE Mail paul avec résultats
+CLOSED: [2023-11-09 Thu 00:22] SCHEDULED: <2023-11-05 Sun>
 * Résultats
 ** TODO Speed-up BWA-mem
 SCHEDULED: <2023-11-11 Sat>
