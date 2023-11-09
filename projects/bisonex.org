@@ -362,7 +362,7 @@ Ok pour 7 variants (IGV) notament chromosome X
 :END:
 ** DONE Remplacer bam par fastq sur mesocentre
 CLOSED: [2023-04-16 Sun 16:33]
-Commande
+Commande
 *** DONE Supprimer les fastq non "paired"
 CLOSED: [2023-04-16 Sun 16:33]
 nushell
@@ -9018,8 +9018,8 @@ CLOSED: [2023-10-14 Sat 11:58] SCHEDULED: <2023-10-08 Sun>
 - [ ] 2300409593_63130874
 - [ ] 2300409612_63130980
 - [ ] 2300417623_63131524
-** TODO Variants manqués :checkpipeline:
-SCHEDULED: <2023-10-21 Sat>
+** DONE Variants manqués :checkpipeline:
+CLOSED: [2023-11-10 Fri 00:25] SCHEDULED: <2023-10-21 Sat>
 *** DONE 63012582: chr10:g.102230760 filtré par AD :63012582:
 CLOSED: [2023-10-08 Sun 23:24] SCHEDULED: <2023-10-08 Sun>
 Il est en sortie d'haplotypecaller !
