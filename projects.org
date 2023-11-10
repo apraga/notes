@@ -946,12 +946,12 @@ CLOSED: [2023-10-09 Mon 22:30] SCHEDULED: <2023-10-09 Mon>
 ** DONE Renvoyer clavier corsair SK
 CLOSED: [2023-10-27 Fri 21:14] SCHEDULED: <2023-10-26 Thu>
 /Entered on/ [2023-10-26 Thu 09:27]
-** WAIT Payer facture eau Gennes: à vérifier
-SCHEDULED: <2023-11-09 Thu>
+** DONE Payer facture eau Gennes: à vérifier
+CLOSED: [2023-11-10 Fri 16:52] SCHEDULED: <2023-11-09 Thu>
 Payé 2023-11-08, à vérifier
 /Entered on/ [2023-11-05 Sun 15:28]
-** TODO Déposer chèque caution
-SCHEDULED: <2023-11-07 Tue>
+** DONE Déposer chèque caution
+CLOSED: [2023-11-10 Fri 16:50] SCHEDULED: <2023-11-07 Tue>
 /Entered on/ [2023-11-06 Mon 21:00]
 * Banque
 :PROPERTIES:
