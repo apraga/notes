@@ -6400,7 +6400,7 @@ Mail alexis
 SCHEDULED: <2023-10-04 Wed>
 
 ***** TODO Rendre simplement le nombre de vrais positifs
-SCHEDULED: <2023-11-09 Thu>
+SCHEDULED: <2023-11-17 Fri>
 ***** KILL Mail Yannis
 CLOSED: [2023-07-08 Sat 10:44]
 ***** DONE Mail GIAB pour version T2T
@@ -6424,7 +6424,7 @@ CLOSED: [2023-08-12 Sat 15:55]
 *** TODO Platinum genome :platinum:
 https://emea.illumina.com/platinumgenomes.html
 **** TODO Tester sur la zone couverte par l'exome centogène
-SCHEDULED: <2023-11-09 Thu>
+SCHEDULED: <2023-11-17 Fri>
 *** DONE Séquencer NA12878 :cento:hg001:
 CLOSED: [2023-10-07 Sat 17:59]
 Discussion avec Paul : sous-traitant ne nous donnera pas les données, il faut commander l'ADN
@@ -6516,10 +6516,10 @@ Twist exome
 ** TODO Données CHM13 :chm:
 https://github.com/lh3/CHM-eval
 *** TODO Run ERR1341793
-SCHEDULED: <2023-11-11 Sat>
+SCHEDULED: <2023-11-13 Mon>
 (raw reads ERR1341793_1.fastq.gz and ERR1341793_2.fastq.gz downloaded from https://www.ebi.ac.uk/ena/browser/view/ERR1341793)
 *** TODO Run ERR1341796
-SCHEDULED: <2023-11-11 Sat>
+SCHEDULED: <2023-11-13 Mon>
 ** TODO Insilico :cento:
 *** TODO tous les variants centogène
 **** DONE Extraire liste des SNVs
@@ -8733,7 +8733,7 @@ VEP chooses one block of annotation per variant, using an ordered set of criteri
 **** DONE Mail alexis
 CLOSED: [2023-08-20 Sun 13:45] SCHEDULED: <2023-08-20 Sun>
 **** TODO Données simuscop 200x
-SCHEDULED: <2023-11-11 Sat>
+SCHEDULED: <2023-11-15 Wed>
 **** DONE En T2T avec liftover (filtre = spip) : ok mais lent et trop de variants :tests:
 CLOSED: [2023-09-17 Sun 17:13] SCHEDULED: <2023-09-17 Sun>
 1. Conversion en bed
@@ -8763,7 +8763,7 @@ Et on a trop de variants en sortie (7330 !)
 **** DONE Mail Paul avec résultats filtre en T2T + nouveau schéma
 CLOSED: [2023-09-17 Sun 23:15] SCHEDULED: <2023-09-17 Sun>
 ** TODO Medically relevant genes
-SCHEDULED: <2023-11-09 Thu>
+SCHEDULED: <2023-11-17 Fri>
 /Entered on/ [2023-10-18 Wed 22:37]
 * Ré-interprétation :reanalysis:
 ** DONE Lancer tests sur données brutes [225/250] <(samples.csv)>  <(runs.waiting)>
@@ -9018,8 +9018,8 @@ CLOSED: [2023-10-14 Sat 11:58] SCHEDULED: <2023-10-08 Sun>
 - [ ] 2300409593_63130874
 - [ ] 2300409612_63130980
 - [ ] 2300417623_63131524
-** DONE Variants manqués :checkpipeline:
-CLOSED: [2023-11-10 Fri 00:25] SCHEDULED: <2023-10-21 Sat>
+** TODO Variants manqués :checkpipeline:
+SCHEDULED: <2023-10-21 Sat>
 *** DONE 63012582: chr10:g.102230760 filtré par AD :63012582:
 CLOSED: [2023-10-08 Sun 23:24] SCHEDULED: <2023-10-08 Sun>
 Il est en sortie d'haplotypecaller !
@@ -9249,12 +9249,50 @@ CLOSED: [2023-11-06 Mon 23:48] SCHEDULED: <2023-11-04 Sat>
 CLOSED: [2023-11-08 Wed 23:17] SCHEDULED: <2023-11-07 Tue>
 *** DONE Mail paul avec résultats
 CLOSED: [2023-11-09 Thu 00:22] SCHEDULED: <2023-11-05 Sun>
+*** DONE Vérifier coordonnées des 2 variants manquants
+CLOSED: [2023-11-12 Sun 16:53] SCHEDULED: <2023-11-11 Sat>
+Les 2 sont des homopolymer
+- 1er = même variant mais représenté différement
+- SHANK3 ?
+
+**** PITX3: filtrée car AD=8
+NB: représentation synonyme
+Même séquence
+  >hg38_dna range=chr10:102230742-102230777 5'pad=2 3'pad=2 strand=+ repeatMasking=none
+GGAGCCAGCCCGGGGGGGCCCCCGCCCAGGCCCTG
+
+>hg19_dna range=chr10:103990500-103990534 5'pad=0 3'pad=0 strand=+ repeatMasking=none
+GGAGCCAGCCCGGGGGGGCCCCCGCCCAGGCCCTG
+
+Selon IGV:
+GGAGCCAGCCC(G)GGGGGGCCCCCGCCCAGGCCCTG
+Selon cento
+GGAGCCAGCCCGGGGGG(G)CCCCCGCCCAGGCCCTG
+
+
+#+begin_src sh :dir ~/annex/data/bisonex/
+bcftools filter -i 'POS=102230760' call_variant/haplotypecaller/*63012582*/*.vcf.gz
+#+end_src
+
+DP ok mais AD trop faible
+ GT:AD:DP:GQ:PL  0/1:26,8:34:99:146,0,671
+**** SHANK3: transcrit supprimé depuis: ok
+Retrouvé par ERic: 50721504dup
+
+On vérifie
+#+begin_src sh :dir ~/annex/data/bisonex/
+bcftools filter -i 'POS=50721504' call_variant/haplotypecaller/*63019340*/*.vcf.gz
+#+end_src
+
+#+begin_src sh :dir ~/annex/data/bisonex/
+zgrep '50721504' annotate/full/*63019340*.tsv
+#+end_src
 * Résultats
 ** TODO Speed-up BWA-mem
-SCHEDULED: <2023-11-11 Sat>
+SCHEDULED: <2023-11-19 Sun>
 
 ** TODO Speed-up Hapotypecaller
-SCHEDULED: <2023-11-11 Sat>
+SCHEDULED: <2023-11-19 Sun>
 * Communication
 ** DONE Mail NGS-diag
 CLOSED: [2023-10-06 Fri 08:04] SCHEDULED: <2023-10-06 Fri>

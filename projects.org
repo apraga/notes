@@ -67,7 +67,7 @@ CLOSED: [2023-11-08 Wed 19:03] SCHEDULED: <2023-11-06 Mon>
     CLOSED: [2023-11-05 Sun 15:10] SCHEDULED: <2023-11-05 Sun>
     /Entered on/ [2023-11-05 Sun 14:55]
 *** TODO Demander pour ouverture de ligne
-    SCHEDULED: <2023-11-05 Sun>
+    SCHEDULED: <2023-11-12 Sun>
     /Entered on/ [2023-11-05 Sun 14:56]
 *** TODO Arrêter résilier et souscrire nouveau contrat :internet:
 SCHEDULED: <2023-11-13 Mon>
@@ -242,6 +242,11 @@ CLOSED: [2023-10-19 Thu 18:29]
 *** DONE Corriger présentation
 CLOSED: [2023-10-17 Tue 23:19] SCHEDULED: <2023-10-16 Mon>
 /Entered on/ [2023-10-16 Mon 22:01]
+** TODO Inscsription fac 2023
+SCHEDULED: <2023-11-11 Sat>
+/Entered on/ [2023-11-10 Fri 16:58]
+** TODO Déclaration stage hémato UNESS
+SCHEDULED: <2023-11-13 Mon>
 * Santé
 ** DONE Envoyer devis dentiste à mutuelle
 CLOSED: [2023-09-21 Thu 23:03] SCHEDULED: <2023-09-19 Tue>
@@ -548,10 +553,9 @@ CLOSED: [2023-10-11 Wed 16:08] SCHEDULED: <2023-10-15 Sun>
 Lié à NF1 et non FBXW7 (voir mail V. Laithier)
 *** DONE Réponse reviewer
 CLOSED: [2023-11-05 Sun 18:46] SCHEDULED: <2023-11-05 Sun>
-*** TODO Correction Juliette
-SCHEDULED: <2023-11-12 Sun>
+*** WAIT Correction Juliette
+SCHEDULED: <2023-11-19 Sun>
 *** TODO Resoumettre
-SCHEDULED: <2023-11-16 Thu>
 ** Apprendre le machine learning
 :PROPERTIES:
 :CATEGORY: machine learning
@@ -853,7 +857,7 @@ Renvoie vers le constructeur ...
 CLOSED: [2023-10-11 Wed 12:48] SCHEDULED: <2023-10-11 Wed>
 /Entered on/ [2023-10-09 Mon 22:09]
 ** WAIT certificat de baptême
-SCHEDULED: <2023-11-06 Mon>
+SCHEDULED: <2023-11-13 Mon>
 /Entered on/ [2023-10-11 Wed 23:13]
 Message envoyé sur le site 2023-10-11 Wed
 ** DONE Réclamation train Paris - Besancon
