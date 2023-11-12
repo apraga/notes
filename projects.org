@@ -242,7 +242,7 @@ CLOSED: [2023-10-19 Thu 18:29]
 *** DONE Corriger présentation
 CLOSED: [2023-10-17 Tue 23:19] SCHEDULED: <2023-10-16 Mon>
 /Entered on/ [2023-10-16 Mon 22:01]
-** TODO Inscsription fac 2023
+** TODO Inscription fac 2023
 SCHEDULED: <2023-11-11 Sat>
 /Entered on/ [2023-11-10 Fri 16:58]
 ** TODO Déclaration stage hémato UNESS

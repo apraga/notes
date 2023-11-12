@@ -206,8 +206,8 @@ CLOSED: [2023-08-12 Sat 18:23] SCHEDULED: <2023-08-12 Sat 18:00>
 *** DONE Mail R. Lemann :T2T:
 CLOSED: [2023-08-12 Sat 18:23] SCHEDULED: <2023-08-12 Sat 18:00>
 *** KILL Mise à jour T2T :T2T:
-*** TODO Corriger PR
-SCHEDULED: <2023-11-09 Thu>
+*** WAIT Corriger PR
+SCHEDULED: <2023-11-19 Sun>
 ** TODO VEP :vep:
 *** DONE [[https://github.com/NixOS/nixpkgs/pull/185691][BioPerl]]
 SCHEDULED: <2022-08-10 Wed>
@@ -246,8 +246,8 @@ Modification nécessaire pour kent :
 - plus de patch
 - suppression d'une boucle dans postPatch
 On supprime aussi NIX_BUILD_TOP
-**** TODO Corriger PR biobigfile
-SCHEDULED: <2023-11-09 Thu>
+**** WAIT Corriger PR biobigfile
+SCHEDULED: <2023-11-19 Sun>
 /Entered on/ [2023-10-15 Sun 17:21]
 *** DONE [[https://github.com/NixOS/nixpkgs/pull/186459][BioDBHTS]]
 CLOSED: [2023-05-06 Sat 08:49] SCHEDULED: <2023-04-15 Sat>

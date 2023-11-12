@@ -182,6 +182,11 @@ Tester les dépendenances
 #+begin_src sh
 nix-shell -p nixpkgs-review --run "nixpkgs-review rev HEAD"
 #+end_src
+
+Regarder les variables d'environement :
+#+begin_src sh
+env
+#+end_src
 ** Débugger un paquet
 #+begin_src sh
 cd nixpkgs
