@@ -9287,6 +9287,9 @@ bcftools filter -i 'POS=50721504' call_variant/haplotypecaller/*63019340*/*.vcf.
 #+begin_src sh :dir ~/annex/data/bisonex/
 zgrep '50721504' annotate/full/*63019340*.tsv
 #+end_src
+*** TODO Sanger pour 4 VOUS manqués
+SCHEDULED: <2023-12-13 Wed>
+/Entered on/ [2023-11-13 Mon 22:40]
 * Résultats
 ** TODO Speed-up BWA-mem
 SCHEDULED: <2023-11-19 Sun>
