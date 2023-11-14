@@ -67,7 +67,7 @@ CLOSED: [2023-11-08 Wed 19:03] SCHEDULED: <2023-11-06 Mon>
     CLOSED: [2023-11-05 Sun 15:10] SCHEDULED: <2023-11-05 Sun>
     /Entered on/ [2023-11-05 Sun 14:55]
 *** TODO Demander pour ouverture de ligne
-    SCHEDULED: <2023-11-12 Sun>
+    SCHEDULED: <2023-11-16 Thu>
     /Entered on/ [2023-11-05 Sun 14:56]
 *** TODO Arrêter résilier et souscrire nouveau contrat :internet:
 SCHEDULED: <2023-11-13 Mon>
@@ -245,8 +245,8 @@ CLOSED: [2023-10-17 Tue 23:19] SCHEDULED: <2023-10-16 Mon>
 ** TODO Inscription fac 2023
 SCHEDULED: <2023-11-11 Sat>
 /Entered on/ [2023-11-10 Fri 16:58]
-** TODO Déclaration stage hémato UNESS
-SCHEDULED: <2023-11-13 Mon>
+** DONE Déclaration stage hémato UNESS
+CLOSED: [2023-11-14 Tue 22:21] SCHEDULED: <2023-11-13 Mon>
 * Santé
 ** DONE Envoyer devis dentiste à mutuelle
 CLOSED: [2023-09-21 Thu 23:03] SCHEDULED: <2023-09-19 Tue>

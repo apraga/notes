@@ -267,9 +267,9 @@ Soumis
 ** WAIT Package Spip https://github.com/NixOS/nixpkgs/pull/247476
 ** TODO Happy :happy:
 *** TODO PR python 3 upstream
-SCHEDULED: <2023-11-13 Mon>
+SCHEDULED: <2023-11-15 Wed>
 *** TODO nixpkgs en l'état
-SCHEDULED: <2023-11-13 Mon>
+SCHEDULED: <2023-11-15 Wed>
 ** PROJ SpliceAI
 ** TODO Bamsurgeon
 /Entered on/ [2023-05-13 Sat 19:11]
@@ -6516,10 +6516,10 @@ Twist exome
 ** TODO Données CHM13 :chm:
 https://github.com/lh3/CHM-eval
 *** TODO Run ERR1341793
-SCHEDULED: <2023-11-13 Mon>
+SCHEDULED: <2023-11-18 Sat>
 (raw reads ERR1341793_1.fastq.gz and ERR1341793_2.fastq.gz downloaded from https://www.ebi.ac.uk/ena/browser/view/ERR1341793)
 *** TODO Run ERR1341796
-SCHEDULED: <2023-11-13 Mon>
+SCHEDULED: <2023-11-18 Sat>
 ** TODO Insilico :cento:
 *** TODO tous les variants centogène
 **** DONE Extraire liste des SNVs
