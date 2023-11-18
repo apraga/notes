@@ -246,8 +246,8 @@ Modification nécessaire pour kent :
 - plus de patch
 - suppression d'une boucle dans postPatch
 On supprime aussi NIX_BUILD_TOP
-**** WAIT Corriger PR biobigfile
-SCHEDULED: <2023-11-19 Sun>
+**** TODO Corriger PR biobigfile
+SCHEDULED: <2023-11-18 Sat>
 /Entered on/ [2023-10-15 Sun 17:21]
 *** DONE [[https://github.com/NixOS/nixpkgs/pull/186459][BioDBHTS]]
 CLOSED: [2023-05-06 Sat 08:49] SCHEDULED: <2023-04-15 Sat>
@@ -278,7 +278,6 @@ SCHEDULED: <2023-11-15 Wed>
 ** TODO PR Picard avec option pour gérer la mémoire
 Similaire à
 https://github.com/bioconda/bioconda-recipes/blob/master/recipes/picard/picard.sh
-
 
 * Julia :julia:
 ** KILL XAM.jl: PR pour modification record :julia:
@@ -3219,7 +3218,7 @@ SCHEDULED: <2023-11-07 Tue>
 SCHEDULED: <2023-11-07 Tue>
 /Entered on/ [2023-09-19 Tue 08:43]
 ** TODO Figure: nombre d'exomes par années
-SCHEDULED: <2023-11-16 Thu>
+SCHEDULED: <2023-11-19 Sun>
 /Entered on/ [2023-09-19 Tue 08:43]
 * Tests :tests:
 ** KILL Non régression : version prod
@@ -6400,7 +6399,7 @@ Mail alexis
 SCHEDULED: <2023-10-04 Wed>
 
 ***** TODO Rendre simplement le nombre de vrais positifs
-SCHEDULED: <2023-11-17 Fri>
+SCHEDULED: <2023-11-22 Wed>
 ***** KILL Mail Yannis
 CLOSED: [2023-07-08 Sat 10:44]
 ***** DONE Mail GIAB pour version T2T
@@ -6424,7 +6423,7 @@ CLOSED: [2023-08-12 Sat 15:55]
 *** TODO Platinum genome :platinum:
 https://emea.illumina.com/platinumgenomes.html
 **** TODO Tester sur la zone couverte par l'exome centogène
-SCHEDULED: <2023-11-17 Fri>
+SCHEDULED: <2023-11-22 Wed>
 *** DONE Séquencer NA12878 :cento:hg001:
 CLOSED: [2023-10-07 Sat 17:59]
 Discussion avec Paul : sous-traitant ne nous donnera pas les données, il faut commander l'ADN
@@ -8733,7 +8732,7 @@ VEP chooses one block of annotation per variant, using an ordered set of criteri
 **** DONE Mail alexis
 CLOSED: [2023-08-20 Sun 13:45] SCHEDULED: <2023-08-20 Sun>
 **** TODO Données simuscop 200x
-SCHEDULED: <2023-11-15 Wed>
+SCHEDULED: <2023-11-19 Sun>
 **** DONE En T2T avec liftover (filtre = spip) : ok mais lent et trop de variants :tests:
 CLOSED: [2023-09-17 Sun 17:13] SCHEDULED: <2023-09-17 Sun>
 1. Conversion en bed
@@ -8763,7 +8762,7 @@ Et on a trop de variants en sortie (7330 !)
 **** DONE Mail Paul avec résultats filtre en T2T + nouveau schéma
 CLOSED: [2023-09-17 Sun 23:15] SCHEDULED: <2023-09-17 Sun>
 ** TODO Medically relevant genes
-SCHEDULED: <2023-11-17 Fri>
+SCHEDULED: <2023-11-22 Wed>
 /Entered on/ [2023-10-18 Wed 22:37]
 * Ré-interprétation :reanalysis:
 ** DONE Lancer tests sur données brutes [225/250] <(samples.csv)>  <(runs.waiting)>
@@ -9019,7 +9018,6 @@ CLOSED: [2023-10-14 Sat 11:58] SCHEDULED: <2023-10-08 Sun>
 - [ ] 2300409612_63130980
 - [ ] 2300417623_63131524
 ** TODO Variants manqués :checkpipeline:
-SCHEDULED: <2023-10-21 Sat>
 *** DONE 63012582: chr10:g.102230760 filtré par AD :63012582:
 CLOSED: [2023-10-08 Sun 23:24] SCHEDULED: <2023-10-08 Sun>
 Il est en sortie d'haplotypecaller !

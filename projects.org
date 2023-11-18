@@ -66,191 +66,23 @@ CLOSED: [2023-11-08 Wed 19:03] SCHEDULED: <2023-11-06 Mon>
 *** DONE Envoyer papiers : clé, wifi, autorisation accès
     CLOSED: [2023-11-05 Sun 15:10] SCHEDULED: <2023-11-05 Sun>
     /Entered on/ [2023-11-05 Sun 14:55]
-*** TODO Demander pour ouverture de ligne
-    SCHEDULED: <2023-11-16 Thu>
+*** WAIT Demander pour ouverture de ligne
+    SCHEDULED: <2023-11-20 Mon>
     /Entered on/ [2023-11-05 Sun 14:56]
 *** TODO Arrêter résilier et souscrire nouveau contrat :internet:
-SCHEDULED: <2023-11-13 Mon>
+SCHEDULED: <2023-11-20 Mon>
 Appel 2023-11-03: ouverture nouvelle ligne dans 9 jours
 RV demain
 *** KILL Attestation box ?
 CLOSED: [2023-11-02 Thu 22:29] SCHEDULED: <2023-10-30 Mon>
-** DONE Cas clinique H.influenza :hinfluenzae:
-CLOSED: [2023-09-28 Thu 11:43]
-:PROPERTIES:
-:CATEGORY: bacterio
-:END:
-*** DONE Finir bibliographie H. influenza
-CLOSED: [2023-09-09 Sat 20:19] SCHEDULED: <2023-09-09 Sat>
-/Entered on/ [2023-09-09 Sat 16:40]
-*** DONE Envoyer biblio initiale à Xavier
-CLOSED: [2023-09-10 Sun 22:51] SCHEDULED: <2023-09-10 Sun>
-*** DONE Résumé article PCR
-CLOSED: [2023-09-28 Thu 11:43]
-/Entered on/ [2023-09-17 Sun 16:08]
-*** DONE Envoyer première version à Xavier
-CLOSED: [2023-09-17 Sun 22:31] SCHEDULED: <2023-09-17 Sun>
-/Entered on/ [2023-09-17 Sun 16:08]
-** DONE Examen bactério :partiel:
-CLOSED: [2023-10-18 Wed 22:52]
-:PROPERTIES:
-:CATEGORY: bacterio
-:END:
-*** DONE Passe 1: tous [37/37]
-CLOSED: [2023-10-05 Thu 16:58] DEADLINE: <2023-10-06 Fri> SCHEDULED: <2023-10-06 Fri>
-  - [X] <(Angines bacteriennes)>
-  - [X] <(Antibiogramme - Enterobacteries)>
-  - [X] <(Antibiogramme - Staphylocoques)>
-  - [X] <(Antibiogramme - Streptococoque, enterocoque, Listeria)>
-  - [X] <(Antibiogramme)>
-  - [X] <(Cambylobacter)>
-  - [X] <(Chlamydia - mycoplasmes)>
-  - [X] <(Clostridium difficile)>
-  - [X] <(Concentrations critiques)>
-  - [X] <(Conseil anti-infectieux)>
-  - [X] <(Declaration obligatoire)>
-  - [X] <(Diagnostic moleculaire - Bacteriologie)>
-  - [X] <(EBCU etiologies)>
-  - [X] <(ECBU interpretation)>
-  - [X] <(ECBU pre-analytique)>
-  - [X] <(EEQ, CIQ)>
-  - [X] <(Examen microscopique)>
-  - [X] <(Gonocoque)>
-  - [X] <(Hemocultures 1)>
-  - [X] <(Hemocultures 2)>
-  - [X] <(Hygiène)>
-  - [X] <(Infections cutanees)>
-  - [X] <(Legionelle)>
-  - [X] <(MALDI - TOF)>
-  - [X] <(Meningites bacteriennes )>
-  - [X] <(Pre-analytique bacteriologie)>
-  - [X] <(Qualité)>
-  - [X] <(Salmonelle - shigelle)>
-  - [X] <(Securite Transfusionnelle)>
-  - [X] <(Serologie bacterienne)>
-  - [X] <(Syphilis)>
-  - [X] <(Tests rapides antigeniques et moleculaires)>
-  - [X] <(Tuberculose)>
-  - [X] <(Typage moleculaire bacterien)>
-  - [X] <(Vaccination personnel)>
-  - [X]  https://scut.srht.site/notes/medecine/20230528235124-culture.html
-  - [X] A. agalactiae
-*** DONE Passe 2: cours non tobmé avec interro + révision + interro [33/35]
-CLOSED: [2023-10-15 Sun 12:59] DEADLINE: <2023-10-11 Wed> SCHEDULED: <2023-10-07 Sat>
-  - [X] <(Angines bacteriennes)>
-  - [X] <(Antibiogramme - Enterobacteries)>
-  - [X] <(Antibiogramme - Staphylocoques)>
-  - [X] <(Antibiogramme - Streptococoque, enterocoque, Listeria)>
-  - [X] <(Antibiogramme)>
-  - [X] <(Cambylobacter)>
-  - [-] Mécanisme résistance antibio
-  - [X] <(Chlamydia - mycoplasmes)>
-  - [X] <(Clostridium difficile)>
-  - [X] <(Concentrations critiques)>
-  - [X] <(Conseil anti-infectieux)>
-  - [X] <(Declaration obligatoire)>
-  - [X] <(Diagnostic moleculaire - Bacteriologie)>
-  - [X] <(EBCU etiologies)>
-  - [X] <(ECBU interpretation)>
-  - [X] <(ECBU pre-analytique)>
-  - [X] <(Examen microscopique)>
-  - [X] <(Gonocoque)>
-  - [X] <(Hemocultures 1)>
-  - [X] <(Hemocultures 2)>
-  - [X] <(Infections cutanees)>
-  - [X] <(Legionelle)>
-  - [X] <(MALDI - TOF)>
-  - [X] <(Meningites bacteriennes)>
-  - [X] <(Pre-analytique bacteriologie)>
-  - [-] BMR (cours ? définition a minima)
-  - [X] <(Qualite)>
-  - [X] <(Salmonelle - shigelle)>
-  - [X] <(Serologie bacterienne)>
-  - [X] <(Syphilis)>
-  - [X] <(Tests rapides antigeniques et moleculaires)>
-  - [X] <(Tuberculose)>
-  - [X] <(Typage moleculaire bacterien)>
-  - [X] <(Culture)>
-  - [X] A. agalactiae
-*** DONE Passe 3 [27/36]
-CLOSED: [2023-10-18 Wed 00:10] DEADLINE: <2023-10-16 Mon> SCHEDULED: <2023-10-22 Sun>
-  - [X] <(Angines bacteriennes)>
-  - [X] <(Antibiogramme - Enterobacteries)>
-  - [X] <(Antibiogramme - Staphylocoques)>
-  - [X] <(Antibiogramme - Streptococoque, enterocoque, Listeria)>
-  - [X] <(Antibiogramme)>
-  - [X] <(Cambylobacter)>
-  - [ ] Mécanisme résistance antibio
-  - [X] <(Chlamydia - mycoplasmes)>
-  - [X] <(Clostridium difficile)>
-  - [X] <(Concentrations critiques)>
-  - [X] <(Conseil anti-infectieux)>
-  - [X] <(Declaration obligatoire )>
-  - [X] <(Diagnostic moleculaire - Bacteriologie)>
-  - [ ] <(EBCU etiologies)>
-  - [ ] <(ECBU interpretation)>
-  - [ ] <(ECBU pre-analytique)>
-  - [X] <(Examen microscopique)>
-  - [X] <(Gonocoque)>
-  - [X] <(Hemocultures 1)>
-  - [X] <(Hemocultures 2)>
-  - [X] <(Infections cutanees)>
-  - [X] <(Legionelle)>
-  - [X] <(MALDI - TOF)>
-  - [X] <(Meningites bacteriennes)>
-  - [X] <(Pre-analytique bacteriologie)>
-  - [ ] BMR (cours ? définition a minima)
-  - [X] <(Qualite)>
-  - [X] <(Salmonelle - shigelle)>
-  - [X] <(Serologie bacterienne)>
-  - [X] <(Syphilis)>
-  - [X] <(Tests rapides antigeniques et moleculaires)>
-  - [ ] <(Tuberculose)>
-  - [X] <(Typage moleculaire bacterien)>
-  - [ ] <(Culture)>
-  - [ ] A. agalactiae
-  - [ ] Bactérie (refaire un tour)
-** DONE Présentation dépistage hémato :presentation:
-CLOSED: [2023-10-19 Thu 18:29]
-:PROPERTIES:
-:CATEGORY: bacterio
-:END:
-*** DONE Refaire analyse bouche
-CLOSED: [2023-10-07 Sat 17:49] SCHEDULED: <2023-10-07 Sat>
-*** DONE Traitement patients bouches
-CLOSED: [2023-10-07 Sat 18:01] SCHEDULED: <2023-10-07 Sat>
-*** DONE Faire analyse selles
-CLOSED: [2023-10-07 Sat 19:30] SCHEDULED: <2023-10-07 Sat>
-:LOGBOOK:
-CLOCK: [2023-10-07 Sat 18:02]--[2023-10-07 Sat 19:30] =>  1:28
-:END:
-*** DONE Revoir avec Audrey pour différence (bleu et jaune)
-CLOSED: [2023-10-16 Mon 19:39] SCHEDULED: <2023-10-16 Mon>
-*** DONE Réunion audrey
-CLOSED: [2023-10-16 Mon 19:39] SCHEDULED: <2023-10-16 Mon>
-*** DONE Traitement patients selles
-CLOSED: [2023-10-10 Tue 22:52] SCHEDULED: <2023-10-09 Mon>
-*** DONE [#A] Résumer Torres 2022
-CLOSED: [2023-10-08 Sun 12:42] SCHEDULED: <2023-10-07 Sat>
-<[Pdf]> - "~/papers/bacterio/torres2022.pdf"
-<[Notes]> - "~/roam/research/biblio.org#** Multi-body-site colonization screening cultures for predicting multi-drug resistant Gram-negative and Gram-positive bacteremia in hematological patients"
-*** DONE Première version avec contexte, Torres et nos résultats
-CLOSED: [2023-10-11 Wed 21:47] SCHEDULED: <2023-10-08 Sun>
-"~/roam/research/presentations/bacterio/depistage hemato/notes.org#* Présentation"
-*** KILL Présenter Santibiez 2023
-CLOSED: [2023-10-19 Thu 18:29]
-*** DONE Corriger présentation
-CLOSED: [2023-10-17 Tue 23:19] SCHEDULED: <2023-10-16 Mon>
-/Entered on/ [2023-10-16 Mon 22:01]
 ** TODO Inscription fac 2023
-SCHEDULED: <2023-11-11 Sat>
+SCHEDULED: <2023-11-25 Sat>
 /Entered on/ [2023-11-10 Fri 16:58]
-** DONE Déclaration stage hémato UNESS
-CLOSED: [2023-11-14 Tue 22:21] SCHEDULED: <2023-11-13 Mon>
+*** DONE CVEC
+CLOSED: [2023-11-18 Sat 11:43]
+*** TODO UFR santé: mail envoyé car inscription impossible
+SCHEDULED: <2023-11-22 Wed>
 * Santé
-** DONE Envoyer devis dentiste à mutuelle
-CLOSED: [2023-09-21 Thu 23:03] SCHEDULED: <2023-09-19 Tue>
-/Entered on/ [2023-09-19 Tue 12:18]
 * Recherche
 :PROPERTIES:
 :CATEGORY: recherche
@@ -530,30 +362,7 @@ Sincerely,
 ****** DONE Soumission initiale
 CLOSED: [2023-07-27 Thu 23:31]
 
-*** DONE Mail Juliette + Paul pour resoumission
-CLOSED: [2023-09-10 Sun 22:36] SCHEDULED: <2023-09-10 Sun>
-/Entered on/ [2023-09-10 Sun 22:21]
-*** DONE Mail Dr Laithier
-CLOSED: [2023-09-18 Mon 19:36] SCHEDULED: <2023-09-17 Sun>
-/Entered on/ [2023-09-17 Sun 16:06]
-*** DONE Avis paul sur ACPA non
-CLOSED: [2023-10-02 Mon 21:58]
-*** DONE Corriger article
-CLOSED: [2023-11-08 Wed 19:03] SCHEDULED: <2023-11-05 Sun>
-**** DONE Ajouter images Dr Vidaud
-CLOSED: [2023-11-05 Sun 18:46] SCHEDULED: <2023-11-05 Sun>
-**** DONE Comprendre score LRR pour gain
-CLOSED: [2023-09-21 Thu 23:03] SCHEDULED: <2023-09-21 Thu>
-**** DONE Corriger discussion: remaniement complexe
-CLOSED: [2023-11-05 Sun 18:46] SCHEDULED: <2023-11-05 Sun>
-**** DONE Phénotype "mild" chez le père + détailler moléculaire
-CLOSED: [2023-11-05 Sun 18:46] SCHEDULED: <2023-11-05 Sun>
-**** DONE Traitement FBXW7 ?
-CLOSED: [2023-10-11 Wed 16:08] SCHEDULED: <2023-10-15 Sun>
-Lié à NF1 et non FBXW7 (voir mail V. Laithier)
-*** DONE Réponse reviewer
-CLOSED: [2023-11-05 Sun 18:46] SCHEDULED: <2023-11-05 Sun>
-*** WAIT Correction Juliette
+*** TODO Implémenter corrections
 SCHEDULED: <2023-11-19 Sun>
 *** TODO Resoumettre
 ** Apprendre le machine learning
@@ -572,17 +381,8 @@ Plus facile, à faire avant Elements... ?
 *** Autres cours en lignes
 **** https://mlcourse.ai/book/index.html
 **** https://www.fast.ai/
-** Article thèse
-*** Idée
-Framework pour tester des pipeline d'exome
-1. Les outils pour télécharger les données de comparaison (pipeline(s) nextflow) :  GIAB +/- chm
-2. Les outils pour comparer les VCF: package nix pour hap.py
-3. les données brutes pour lancer le pipeline et comparer ensuite (GIAB)
-   NB: pipeline existant si on télécharge depuis SRA...
-4. les outils pour génerer des données de synthèse : xamscissors (SNV seulement), bamsurgeon
-5. des données de référence
-
-Motivation: pas d'article qui centralise tout avec une solution "clé en main".
+** Article thèse :bisonex:
+[[id:feaee0cd-8bf7-45bb-851c-9e590e984985][Idées article]]
 * Génétique
 ** Collège [0/32]
 *** 1. Architecture du génome
@@ -843,36 +643,14 @@ Autres drives :
 CLOSED: [2023-02-12 Sun 23:17]
 *** TODO Copier photos famille depuis drive yvain sur drive famille
 *** TODO Trier photos sur drive yvain
-** DONE Remplacer clavier SK :clavier:
-CLOSED: [2023-10-28 Sat 21:36]
-/Entered on/ [2023-10-07 Sat 22:58]
-*** DONE Demande à Cooler Master un remplacement
-CLOSED: [2023-10-15 Sun 12:43] SCHEDULED: <2023-10-15 Sun>
-Envoyée <2023-10-07 Sat>
-Sera probablement refusée car via Amazon
-*** DONE Retour Amazon
-CLOSED: [2023-10-28 Sat 21:36] SCHEDULED: <2023-10-28 Sat>
-Renvoie vers le constructeur ...
-** DONE Coudre fermeture éclair pantalon
-CLOSED: [2023-10-11 Wed 12:48] SCHEDULED: <2023-10-11 Wed>
-/Entered on/ [2023-10-09 Mon 22:09]
-** WAIT certificat de baptême
-SCHEDULED: <2023-11-13 Mon>
+** TODO certificat de baptême
+SCHEDULED: <2023-11-20 Mon>
 /Entered on/ [2023-10-11 Wed 23:13]
 Message envoyé sur le site 2023-10-11 Wed
-** DONE Réclamation train Paris - Besancon
-CLOSED: [2023-10-19 Thu 18:31] SCHEDULED: <2023-10-22 Sun>
-/Entered on/ [2023-10-16 Mon 22:01]
-*** KILL TER
-CLOSED: [2023-10-16 Mon 22:05]
-"Par ailleurs, en cas de retard ou de suppression de train, il n'existe pas de garantie ponctualité sur TER, aucun remboursement ne sera effectué."
-*** DONE Allianz
-CLOSED: [2023-10-19 Thu 18:31] SCHEDULED: <2023-10-23 Mon>
-Manque justificatif de retard mais le site ne trouve pas le trajet...
-https://www.ter.sncf.com/bourgogne-franche-comte/services-contacts/bulletin-retard-resultats?search=N4IgJgpgDghgTgFwK5wgZQQeygBQDYwDGEIAXKAHYwC2JpIO8AlgM4C0AQhHIQJ4AEHTCgDmmERQj82-Rrxb8wAcgCCSAG7cJJADQhWGbPiJ0EcJBD1MwZEAA4A7ADY7Ttw5B6EvKHRAALViw4JkIQAF89eBD1GDxDXAJiMkoaPy4WGAoAc8wKNgA1JkwEBF19FgTjZNIzCysbekcHAEY7AAZ2jy8fP0CWYNCIqLgYuIARGDLbACZ2mYBmNhb25YBWABVO0m3OgGp5nfbPEGimWLwNplpbFqdSABYPcKA
-** DONE Rendre livres BU
-CLOSED: [2023-10-28 Sat 21:36] SCHEDULED: <2023-10-27 Fri>
-/Entered on/ [2023-10-27 Fri 21:14]
+*** TODO Appeler
+SCHEDULED: <2023-11-20 Mon>
+*** TODO Demander à Aurélien
+SCHEDULED: <2023-11-21 Tue>
 * Voiture :voiture:
 ** Mazda 5
 :PROPERTIES:
@@ -881,24 +659,6 @@ CLOSED: [2023-10-28 Sat 21:36] SCHEDULED: <2023-10-27 Fri>
 *** Notes
 - Plaquettes : arrière gauche ok (50%) le <2022-09-03 Sat>
 - besoin d'une clé 14 pour changer les plaquettes
-*** DONE Changer courroie distribution :courroie:
-CLOSED: [2023-09-30 Sat 18:53] SCHEDULED: <2023-09-29 Fri>
-À faire au bout de 10ans, on attend l’an prochain
-**** DONE [#B] Commander pièce
-CLOSED: [2023-09-11 Mon 19:18] SCHEDULED: <2023-09-11 Mon>
-/Entered on/ [2023-09-11 Mon 19:12]
-**** DONE Prendre rendez vous
-CLOSED: [2023-09-14 Thu 22:44] SCHEDULED: <2023-09-11 Mon>
-*** DONE Commander pièce courroie de distribution
-CLOSED: [2023-09-14 Thu 22:44] SCHEDULED: <2023-09-11 Mon>
-/Entered on/ [2023-09-11 Mon 19:12]
-*** DONE Prendre rendez vous courroie distribution
-CLOSED: [2023-10-07 Sat 17:48]
-*** DONE Changer phare arrière droit
-CLOSED: [2023-10-08 Sun 13:24] SCHEDULED: <2023-10-08 Sun>
-*** DONE Changer ampoule clignotant arrière droit
-CLOSED: [2023-10-19 Thu 17:18] SCHEDULED: <2023-10-19 Thu>
-Ampoule commandée
 * Moto
 :PROPERTIES:
 :CATEGORY: moto
@@ -907,65 +667,10 @@ Ampoule commandée
 :PROPERTIES:
 :CATEGORY: maison
 :END:
-** DONE Saisie administrative taxe d'habitation
-CLOSED: [2023-07-30 Sun 15:02]
-/Entered on/ [2023-07-02 Sun 18:20]
-Découverte <2023-07-02 Sun>. Virement 100.50€ fait.
-Mail envoyé ce jour
-** KILL Vendre vélo
-CLOSED: [2023-11-02 Thu 22:31]
-/Entered on/ [2023-07-29 Sat 10:23]
-** DONE Vendre
-CLOSED: [2023-11-02 Thu 22:31]
-*** DONE Envoyer Dimensions frigo et machine à laver
-CLOSED: [2023-10-17 Tue 23:20] SCHEDULED: <2023-10-17 Wed>
-** DONE Photo à Éric pour lit
-CLOSED: [2023-07-30 Sun 19:07] SCHEDULED: <2023-07-30 Sun>
-** DONE SMS annonce déménagement
-CLOSED: [2023-07-29 Sat 10:57] SCHEDULED: <2023-07-29 Sat>
-/Entered on/ [2023-07-29 Sat 10:25]
-** DONE Lettre recommandée annonce déménagement
-CLOSED: [2023-07-29 Sat 10:57] SCHEDULED: <2023-07-29 Sat>
-#+category: maison
-** DONE Résilier box
-CLOSED: [2023-10-26 Thu 09:21] SCHEDULED: <2023-10-26 Thu>
-/Entered on/ [2023-10-03 Tue 23:11]
-Envoyé le mail + règlement intérieur. Ce n'est pas une vrai attestation...
-Soit raison impérative (pas de frais), soit logement avec déménagement
-** DONE Résilier eau
-CLOSED: [2023-11-05 Sun 14:51] SCHEDULED: <2023-11-03 Fri>
-À faire après avoir quitté le logement (rétroactif)
-** DONE Résilier électricité
-CLOSED: [2023-10-26 Thu 09:26] SCHEDULED: <2023-10-26 Thu>
-** DONE Résilier ordures ménagères
-CLOSED: [2023-10-21 Sat 14:31] SCHEDULED: <2023-10-20 Fri>
-Mail envoyé
-** DONE Payer ordures ménagères
-CLOSED: [2023-10-07 Sat 17:48] SCHEDULED: <2023-10-06 Fri>
-/Entered on/ [2023-10-03 Tue 23:12]
-Envoyé TIP. RIB déjà envoyé ? Sinon à repaer <2023-10-07 Sat>
-** DONE Course
-CLOSED: [2023-10-09 Mon 22:30] SCHEDULED: <2023-10-09 Mon>
-/Entered on/ [2023-10-09 Mon 22:09]
-** DONE Renvoyer clavier corsair SK
-CLOSED: [2023-10-27 Fri 21:14] SCHEDULED: <2023-10-26 Thu>
-/Entered on/ [2023-10-26 Thu 09:27]
-** DONE Payer facture eau Gennes: à vérifier
-CLOSED: [2023-11-10 Fri 16:52] SCHEDULED: <2023-11-09 Thu>
-Payé 2023-11-08, à vérifier
-/Entered on/ [2023-11-05 Sun 15:28]
-** DONE Déposer chèque caution
-CLOSED: [2023-11-10 Fri 16:50] SCHEDULED: <2023-11-07 Tue>
-/Entered on/ [2023-11-06 Mon 21:00]
 * Banque
 :PROPERTIES:
 :CATEGORY: banque
 :END:
-** DONE Demande remboursement frais compte bancaire
-CLOSED: [2023-10-19 Thu 18:31] SCHEDULED: <2023-10-25 Wed>
-/Entered on/ [2023-08-13 Sun 11:16]
-À surveiller
-Relancé 2023-10-15 Sun: relance la directrice d'agence
 * Programmation :cs:
 ** Gentoo :gentoo:
 *** GURU :guru:
@@ -979,10 +684,6 @@ CLOSED: [2023-07-02 Sun 10:57]
 sur dev
 *** TODO Article nzbget sur wiki
 /Entered on/ [2022-10-22 Sat 17:31]
-*** KILL Gentoo package diagrams-graphviz :gentoo:haskell:
-CLOSED: [2023-06-24 Sat 15:43] SCHEDULED: <2023-05-28 Sun>
-/Entered on/ [2023-05-27 Sat 22:28]
-
 ** Learning Haskell :haskell:
 *** [#A] [[https://www.reddit.com/r/haskell/comments/npxfba/comment/h084wwa/?utm_source=share&utm_medium=web2x&context=3][Reddit suggestion]]]
 **** Learn Foundational building blocks

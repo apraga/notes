@@ -6875,3 +6875,7 @@ Bar asymétrique : travail balancer
 - Cheval d'arçon : 1 tour anneau
 - barre asymétrique : soleil
 - trampoline : double front + double backflip propre
+* <2023-11-16 Thu> Gymnastics
+- Cheval d'arçon : 3/4 tour !
+- Barre asymétrique : "enroulement" arrière ok (mais style à travailler)
+- Trampoline : travail salto à hauteur maximale
