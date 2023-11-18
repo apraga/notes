@@ -220,7 +220,7 @@ PR submitted
 /Entered on/ [2022-08-10 Wed 14:28]
 On utilise la dernière version de kent, donc plus de problème.
 PRête à être mergé. Rebase faite<2023-07-02 Sun>
-**** DONE Version de kent déjà packagée : forcer version  335
+**** DONE Venrsion de kent déjà packagée : forcer version  335
 CLOSED: [2023-07-02 Sun 11:20]
 ***** KILL [[https://github.com/NixOS/nixpkgs/pull/206991][Restore building kent 404]]
 CLOSED: [2023-05-06 Sat 17:40]
