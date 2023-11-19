@@ -3,6 +3,7 @@
 :END:
 #+title: Japonais
 #+filetags: japanese
+#+options: toc:nil
 * 2021-09-30 - 1. Aya-sensei : Intro
   :PROPERTIES:
   :CUSTOM_ID: aya-sensei-intro
@@ -791,3 +792,37 @@ décrire un état: verbes + te, emotion
   - ーたら ： si ~, alors ...
   - ーとき： quand ~, alors..
  La différence vient du faire que tara est une période de temps assez flou (i.e pas tout de suite)
+* <2023-11-19 Sun>
+** Vocabulaire
+住んでいる (す) = habiter
+人口は5万人 ( じんこう ) (ごまんにん
+ へきち( 僻地 )= arrière-pays
+ びょういん hopital
+つきくずしました (突き崩す) = razer
+AとBの間にを建てました (あいだ) (た)
+かす( 貸す) = prêter
+家賃が安い (やちん　やすい)
+シェアアパー = coloc
+karimasu = to rent
+après être allé : kitte kara
+今の病院のあまりよくない所（点）は緊急医療室の忙しさです。
+寮(りょう) : internat ("dormitory")
+洪水(こうすい) inondation
+泥(どろ) : boue
+どろどろ boueux
+体操　たいそう gymnastique
+体全体 (からだ　ぜんたい) : tout le corps
+健康　けんこう santé
+普通　ふつう  normal, ordinaire
+内科　ないか : médecine interne
+外科　げか chirurgie
+NB: ne pas confondre 料 (matériale, ex: cuisine りょうり　料理 avec　科 (département)
+いい人 une bonne personne
+悪夢　あくむ un cauchemar
+いい所 (ところ) : un point positif. Exemple
+今の病院の方がいい所がたくさんあります。 il y a beaucoup de points positifs par rapport à mon hôpital actuel
+** Grammaire
+Nominaliser un adjectif
+- en -i -> remplacer par -sa.
+- en -na -> remplacer par -sa
+今の病院のあまりよくない所（点）は緊急医療室の忙しさです。
