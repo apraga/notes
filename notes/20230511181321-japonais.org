@@ -4,12 +4,12 @@
 #+title: Japonais
 #+filetags: japanese
 #+options: toc:nil
-* 2021-09-30 - 1. Aya-sensei : Intro
+* 2021-09-30 Aya-sensei : Intro
   :PROPERTIES:
   :CUSTOM_ID: aya-sensei-intro
   :END:
 
-* 2021-10-08 - 2. Aya-sensei : Leçon 9 (JFBP II)
+* 2021-10-08 Aya-sensei : Leçon 9 (JFBP II)
   :PROPERTIES:
   :CUSTOM_ID: aya-sensei-leçon-9-jfbp-ii
   :END:
@@ -39,7 +39,7 @@
 - 雨ではない日: un jour sans pluie
 - 経験が長い人: une personne avec beaucoup d'expérience
 
-* 2021-10-15 - 3. Leçon 6 (JFBP II)
+* 2021-10-15 Leçon 6 (JFBP II)
   :PROPERTIES:
   :CUSTOM_ID: leçon-6-jfbp-ii
   :END:
@@ -66,13 +66,14 @@
     :CUSTOM_ID: adverbes
     :END:
 
-- 早く起きました ### ーてきます: Partir faire quelque chose et revenir
-rapidement
-- 本を借りてきて ### ーた ほうがいいですよ: il serait bien que tu ... Attention, forme en ーた!
+- 早く起きました
+- ーてきます: Partir faire quelque chose et revenir rapidement
+- 本を借りてきて
+- ーた ほうがいいですよ: il serait bien que tu ... Attention, forme en ーた!
 - 風邪をですか。じゃあ、家に帰って休んだほうがいいですよ Attention, la forme négative n'utilise pas la forme en ーた
 - 煙草(たばこ)を吸わないほうがいいですよ
 
-* 2021-10-21 - 4. Leçon 3
+* 2021-10-21 Leçon 3
   :PROPERTIES:
   :CUSTOM_ID: leçon-3
   :END:
@@ -113,10 +114,11 @@ rapidement
     :END:
 
 まだ書いていません (je suis en train) レポートは書きません (je ne le
-ferais pas [c'est facultatif !]) ### ーんです： expliquer
+ferais pas [c'est facultatif !])
+- ーんです： expliquer
 まだ書いていないんです (je suis en train)
 
-* 2021-11-06 - 5. Quizz + Leçon 7
+* 2021-11-06 Quizz + Leçon 7
   :PROPERTIES:
   :CUSTOM_ID: quizz-leçon-7
   :END:
@@ -162,7 +164,7 @@ OK) まだ 3. 実は これから III. 1. もってくる+んです。2。帰っ
 - V + 前に（まえ) : avant de ~ Attention, pas de passé ni de négatif !
   Ex: 日本に来る前に、日本語の勉強を始めました ~ てから: après
 
-* 2021-11-13 - 6. Fin leçon 7
+* 2021-11-13 Fin leçon 7
   :PROPERTIES:
   :CUSTOM_ID: fin-leçon-7
   :END:
@@ -204,7 +206,7 @@ OK) まだ 3. 実は これから III. 1. もってくる+んです。2。帰っ
 - の時(とき)/ adjectif en i い時/adjectif en na な時 = quand ex:
   ３さいのとき、: quand j'avais 3 ans
 
-* 2021-11-27 - 7. Fin leçon 7
+* 2021-11-27 Fin leçon 7
   :PROPERTIES:
   :CUSTOM_ID: fin-leçon-7-1
   :END:
@@ -249,7 +251,7 @@ OK) まだ 3. 実は これから III. 1. もってくる+んです。2。帰っ
   travailler 風邪を引くときも、働かなければなりません (NB: il y a aussi
   のに et ても)
 
-* 2021-12-11 - 8. Leçon 8
+* 2021-12-11 Leçon 8
   :PROPERTIES:
   :CUSTOM_ID: leçon-8
   :END:
@@ -285,7 +287,7 @@ OK) まだ 3. 実は これから III. 1. もってくる+んです。2。帰っ
   春（はる）にないて、あたたかくなりました
 - ここに来るとき: sur le chemin, en venant ici
 
-* 2021-12-18 - 9. Leçon 9
+* 2021-12-18 Leçon 9
   :PROPERTIES:
   :CUSTOM_ID: leçon-9
   :END:
@@ -304,7 +306,8 @@ OK) まだ 3. 実は これから III. 1. もってくる+んです。2。帰っ
 - 席（せき）: siège
 - 書く（かく）: écrire (un sms)
 - 過ごす（すごす）: passer (du temps) ex: クリスマス誰と過ごすの: avec
-  qui vas-tu passer Noel ? ## Grammaire
+  qui vas-tu passer Noel ?
+** Grammaire
 - A とき、B: "quand" A, B (A = forme du dictionnaire) Si A est au passé,
   A est "fini". Sinon. A est en cours Cela explique les différentes
   nuances :
@@ -326,7 +329,7 @@ OK) まだ 3. 実は これから III. 1. もってくる+んです。2。帰っ
 - citation ~林さんは「教徒に行きます」といっていました= directe
   ~林さんは教徒に行くといっていました = indirecte
 
-* 2022-01-08 - 10. Lecon 9
+* 2022-01-08 Lecon 9
   :PROPERTIES:
   :CUSTOM_ID: lecon-9
   :END:
@@ -375,7 +378,7 @@ OK) まだ 3. 実は これから III. 1. もってくる+んです。2。帰っ
 - いい -> よくない(négatif) NB: よかった(passé),　よくなかった (passé
   négatif)
 
-* 2022-01-16 - 11. Lecon 9
+* 2022-01-16 Lecon 9
   :PROPERTIES:
   :CUSTOM_ID: lecon-9-1
   :END:
@@ -395,7 +398,7 @@ Transforner une phrase en nom avec の
 
 Attention, il faut mieux mettre が ミルズさんが出張に行くのは　来週です
 
-* 2022-01-29 - 11. Leçon 9
+* 2022-01-29 Leçon 9
   :PROPERTIES:
   :CUSTOM_ID: leçon-9-1
   :END:
@@ -417,7 +420,7 @@ peut également utiliser のが (qui s'apparente à　ことがあります)
 子供ど遊ぶのがすきです お菓子を作るのがじょうずです ou のを selon le
 bsoin お金を払うのをわすれました メール返事だすのをわれれました
 
-* 2022-02-13 - 12. Leçon 10
+* 2022-02-13 Leçon 10
   :PROPERTIES:
   :CUSTOM_ID: leçon-10
   :END:
@@ -427,14 +430,14 @@ bsoin お金を払うのをわすれました メール返事だすのをわれ�
 - お金がないので、何も買いません - です->な - でした->だった
 - 雨だったので、どこにもでかけませんでした
 
-* 2022-02-27 - 13. Lecon 10
+* 2022-02-27 Lecon 10
   :PROPERTIES:
   :CUSTOM_ID: lecon-10
   :END:
 
 Discussion surtout + ので
 
-* 2022-03-20 - 14. Leçon 10
+* 2022-03-20 Leçon 10
   :PROPERTIES:
   :CUSTOM_ID: leçon-10-1
   :END:
@@ -458,12 +461,12 @@ Potentialité: on peut utiliser できます ou la forme potentielle
   - 食べる　ー＞食べられる
   - 見るー＞見られる
 - irréguliers 来るー＞来られる（こ） する　ー＞できる
-* 2022-03-20 - 15. Leçon 10
+* 2022-03-20 Leçon 10
 
 Discussion surtout
-* <2022-03-27 Sun>  - 15. Leçon 10
+* 2022-03-27 Leçon 10
 Vocab surtout
-* <2022-04-10 Sun>  - 16. Leçon 11
+* 2022-04-10 Leçon 11
 Discussion surtout
 ** Grammaire
 X よう: "volitionel" = "faisons X"
@@ -473,11 +476,11 @@ X よう: "volitionel" = "faisons X"
   飲むー＞飲もう
 X ようと思います: je pense faire X
 ex:
-* <2022-04-24 Sun> - 17. Leçon 11
+* 2022-04-24 Leçon 11
 ** Grammaire
 ことになりました : il a été décidé pour moi (c'est un évènement unique). Ex: il a été décidé que je déménage
 ことになっている : il est convenu = c'est une habitude ! Ex: il est convenu de ne pas fumer ici
-* <2022-06-12 Sun>
+* 2022-06-12
 ** Grammaire : questions indirecte
 Je ne sais pas si
 - quesion oui/non : verbe/ajectif + どうか
@@ -488,7 +491,7 @@ Je ne sais pas si
   - 何の医者なるか わかりません = = je ne sais pas quel sorte de médecin je veux être
   - どこに 行くか おしえてください : dis moi ou aller
 Il y a une subtile différence entre  どうか et か : premier = "whether", second = si
-* <2023-02-26 Sun> - Aya-sensei : discussion
+* 2023-02-26 - Aya-sensei : discussion
 Grammaire
 -ta koto ga arimasu : déjà fait
 
@@ -500,7 +503,7 @@ Grammaire
 -   けんきゅう 研究 recherche
 -   けっか 結果 résultat
 -   はんしょくき 繁殖期 saison de reproduction
-* <2023-03-12 Sun> - Aya-sensei: lecmon 11
+* 2023-03-12 - Aya-sensei: lecmon 11
 ** Vocabulaire
 - zenkai : la dernière fois
 - compter des verre = "pai" ippai = 1 verre, nippai = 2 verres
@@ -517,7 +520,7 @@ forme en -ou + to omoimasu
 
 nakerebanarimasen
 NB: -nasai = injonction (bossy !)
-* <2023-03-25 Sat>
+* 2023-03-25
 ** Vocabulaire
 - 雪は山の上に行かないとないですか = il faut aller en haut de la montagne pour avoir de la neighe (double négatiionidiomatic)
 
@@ -552,7 +555,7 @@ NB: -nasai = injonction (bossy !)
  'can we use Feeling+て..., not only 〜て feeling...?' Yes, for example:
 ロキくんがいなくなってさびしくて、ごはんが食べられません。仕事のことがしんぱいで、ねむれません。
 These work with feeling+て (giving a reason) as it's followed by potential verbs.
-* <2023-04-02 Sun> Listening comprehension 「日本のおもしろい経験」
+* 2023-04-02 Listening comprehension 「日本のおもしろい経験」
 ** Vocabulaire
 - 経験(けいけん) expérience
 - 特に(とくに) particulièrement
@@ -570,7 +573,7 @@ These work with feeling+て (giving a reason) as it's followed by potential verb
 - ムール貝(がい) : moules
 - 城(しろ) :  château
 - 蜘蛛(くも ) : araignée
-* <2023-04-11 Tue> Listening comprehension 「満員電車」
+* 2023-04-11 Tue> Listening comprehension 「満員電車」
 
 Travail sur comprehension
 
@@ -594,7 +597,7 @@ Travail sur comprehension
 Note:
 「いつも同じ電車に乗ります」= Always, I ride on the same train. 「いつもと同じ電車に乗ります」= I ride on a train that I always use/ride
 le premier = plus l’accent sur "toujours"
-* <2023-04-22 Sat>
+* 2023-04-22
 ** Vocabulaire
 - 泊まる(と) : rester (à un hôtel)
 - 翻訳（ほんやく）: traduction
@@ -611,7 +614,7 @@ le premier = plus l’accent sur "toujours"
 ** Grammaire
 Voir  [[*Grammaire : questions indirecte][Grammaire : questions indirecte]]
 Prochaine leçon : travailler questions indirecte
-* <2023-05-06 Sat>
+* 2023-05-06
 ** Vocabulaire
 - 助けられるかどうかわかりませんでした : je ne sais pas si je peux aider (attention à la possibilét)
 - 審査員（しんさいん）: jury (ex: de thèse)
@@ -621,7 +624,7 @@ Prochaine leçon : travailler questions indirecte
 - 修理（しゅうり）: réparer
 - おの : hache
 - 刃（は）: lame
-* <2023-05-29 Mon>
+* 2023-05-29
 ** Vocabulaire
 Microbiologie
 - 半日(はんにち） : une demie journée
@@ -648,7 +651,7 @@ Microbiologie
  - どうしたらいい: que faire
  - 急に（きゅうに）: soudainement
  - 場合（ばあい）: cas, situtation
-* <2023-06-04 Sun>
+* 2023-06-04
 ** Grammaire
 V-といいです: Il faudrait que tu V
 ex: 「頭が痛いです」「水を飲むといいですよ」
@@ -666,7 +669,7 @@ nariso ???
 - 自動( じどう ): automatic
 - 何日間: how many days
 togaru = avoir très envie de
-* <2023-06-25 Sun>
+* 2023-06-25
 ** Vocabulaire
 - 法的 ( ほうてき ) : légal
 - 法的にギリギリ ( ほうてき ) : être dans une zone grise lélagement
@@ -685,7 +688,7 @@ Rappel
 
 ~にくい:  difficile de
   - 行きにくい : difficile à atteindre
-* <2023-07-09 Sun>
+* 2023-07-09
 ** Vocabulaire
 - 傷つく(きず ): être blessé
 - 水流（すいりゅう）: courant de la rivière
@@ -699,7 +702,7 @@ Rappel
 - 懸垂下降( けんすいかこう ) : rappel (escalade)
 - 水泳 (すいえい ) : nage
 - 飛び込み (と-こ-) : saut
-* <2023-07-23 Sun>
+* 2023-07-23
 ** Vocabulaire
 - 埋め立て地 (う た ち): décharge (déchet)
 - その当時（とうじ）: à ce moment (passé)
@@ -733,7 +736,7 @@ décrire un état: verbes + te, emotion
 
   Ex:
   試験に合格して、嬉しかったです
-* <2023-08-06 Sun>
+* 2023-08-06
 - 早めに（はや） : en avance, rapidement
 - 地方（ちほう）: région (adminstratif)
 - 朝型 （あさがた）: être une personne matinale
@@ -754,7 +757,7 @@ décrire un état: verbes + te, emotion
 - 遅刻(ちこく) : retard (être en retard...)
 - 必須(ひっす) : obligatoire, indispensable (ex: un cours)
 - 必須科目(ひっすかもく) : une matière obligatoire (école)
-* <2023-09-17 Sun>
+* 2023-09-17
 ** Vocabulaire
 - 観光(かんこう): tourisme
 - 検査技師 (けんさぎし): technicien de laboratoire
@@ -765,7 +768,7 @@ décrire un état: verbes + te, emotion
   - ex: 一緒に仕事しづらいです
 - ~ぶりに : depuis ~ (idée que beaucoup de temps s'est écoulé)
 四年ぶりにパラグライダーをまた始めました。
-* <2023-10-01 Sun>
+* 2023-10-01
 ** Vocabulaire
 - 空（から）: vide
 - ほとんど : la plupart
@@ -792,7 +795,7 @@ décrire un état: verbes + te, emotion
   - ーたら ： si ~, alors ...
   - ーとき： quand ~, alors..
  La différence vient du faire que tara est une période de temps assez flou (i.e pas tout de suite)
-* <2023-11-19 Sun>
+* 2023-11-19
 ** Vocabulaire
 - 住んでいる (す) = habiter
 - 人口は 5 万人 ( じんこう ) (ごまんにん) : une population de 50 000

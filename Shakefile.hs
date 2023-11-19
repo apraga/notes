@@ -5,7 +5,7 @@ import Development.Shake.Util
 
 siteExe = "_build/hakyll-site"
 filterExe = "_build/filterOrgRoam"
-args = "-s" --  --css /css/default.css"
+args = "-s --css /css/default.css"
 
 -- Notes are managed by pandoc manually to solve org-roam links (and Hakyll does not manage org metadata)
 
