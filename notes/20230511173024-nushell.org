@@ -5,6 +5,11 @@
 #+filetags: cs
 
 * Exemples de scripts
+** Pandoc sur une liste de fichier
+org -> markdown
+#+begin_src nu
+ls *.org  | each {|e| pandoc $e.name -o $"($e.name | path parse | get stem).md"}
+#+end_src
 ** Lister tous les IDs des csv et faire l’intersection avec les ID des pdfs
 #+begin_src nu
 ls excel = (ls S:genetique\commun\Centogene_variants\excel | get name | path basename | path parse | get stem | parse "{id}_{s}" | get id)

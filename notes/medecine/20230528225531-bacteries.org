@@ -7,7 +7,7 @@
 ** Résistances
 - β-lactamine : production pénicillinase (BlaZ)> 90%
 - résistance méticilline (staph coag négative >> aureus) via
-  - la Staphylococcal Cassette Chromosome mec (SCCmec) [= zone génomique comprenant /mecA/ qui code pour la protéine PLP2a ( [[*Résistante][Résistance]]).
+  - la Staphylococcal Cassette Chromosome mec (SCCmec) [= zone génomique comprenant /mecA/ qui code pour la protéine PLP2a
   - Nouveau gène mecC: code PLP2c
   - S. aureus : 15-20% résistant méticilline
 - Macrolides-Lincosamide-Streptogramine-Kétolide (MLSK)  : modification de la cible surtout (modification/mutation ribosome)

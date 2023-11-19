@@ -9294,6 +9294,9 @@ SCHEDULED: <2023-11-19 Sun>
 
 ** TODO Speed-up Hapotypecaller
 SCHEDULED: <2023-11-19 Sun>
+** TODO Refaire statistics avec happy+ vcfeval
+SCHEDULED: <2023-11-25 Sat>
+/Entered on/ [2023-11-18 Sat 20:13]
 * Communication
 ** DONE Mail NGS-diag
 CLOSED: [2023-10-06 Fri 08:04] SCHEDULED: <2023-10-06 Fri>

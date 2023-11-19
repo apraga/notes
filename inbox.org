@@ -1,3 +1,9 @@
 #+FILETAGS: inbox
 * TODO Envoyer papiers : clé, wifi, autorisation accès
 /Entered on/ [2023-11-05 Sun 14:55]
+* DONE Scraper Lonely Planet
+CLOSED: [2023-11-19 Sun 00:01] SCHEDULED: <2023-11-18 Sat>
+:LOGBOOK:
+CLOCK: [2023-11-18 Sat 21:58]
+:END:
+/Entered on/ [2023-11-18 Sat 21:57]

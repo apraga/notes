@@ -794,35 +794,36 @@ décrire un état: verbes + te, emotion
  La différence vient du faire que tara est une période de temps assez flou (i.e pas tout de suite)
 * <2023-11-19 Sun>
 ** Vocabulaire
-住んでいる (す) = habiter
-人口は5万人 ( じんこう ) (ごまんにん
- へきち( 僻地 )= arrière-pays
- びょういん hopital
-つきくずしました (突き崩す) = razer
-AとBの間にを建てました (あいだ) (た)
-かす( 貸す) = prêter
-家賃が安い (やちん　やすい)
-シェアアパー = coloc
-karimasu = to rent
-après être allé : kitte kara
+- 住んでいる (す) = habiter
+- 人口は 5 万人 ( じんこう ) (ごまんにん) : une population de 50 000
+- へきち( 僻地 )= arrière-pays
+- びょういん hopital
+- 突き崩す (つきくずしました)  = razer
+- A と B の間にを建てました (あいだ) (た) : construire entre A et B
+- 貸す(かす) = prêter
+- 家賃が安い (やちん　やすい): le loyer n'est pas cher
+- シェアアパー = coloc
+- 借りる(か ) = louer
+
 今の病院のあまりよくない所（点）は緊急医療室の忙しさです。
-寮(りょう) : internat ("dormitory")
-洪水(こうすい) inondation
-泥(どろ) : boue
-どろどろ boueux
-体操　たいそう gymnastique
-体全体 (からだ　ぜんたい) : tout le corps
-健康　けんこう santé
-普通　ふつう  normal, ordinaire
-内科　ないか : médecine interne
-外科　げか chirurgie
-NB: ne pas confondre 料 (matériale, ex: cuisine りょうり　料理 avec　科 (département)
-いい人 une bonne personne
-悪夢　あくむ un cauchemar
-いい所 (ところ) : un point positif. Exemple
+- 寮(りょう) : internat ("dormitory")
+- 洪水(こうすい) inondation
+- 泥(どろ) : boue
+- どろどろ boueux
+- 体操　たいそう gymnastique
+- 体全体 (からだ　ぜんたい) : tout le corps
+- 健康　けんこう santé
+- 普通　ふつう  normal, ordinaire
+- 内科　ないか : médecine interne
+- 外科　げか chirurgie. Ne pas confondre 料 (matériale, ex: cuisine りょうり　料理 avec　科 (département)
+- いい人 une bonne personne
+- 悪夢　あくむ un cauchemar
+- いい所 (ところ) : un point positif. Exemple
 今の病院の方がいい所がたくさんあります。 il y a beaucoup de points positifs par rapport à mon hôpital actuel
 ** Grammaire
 Nominaliser un adjectif
-- en -i -> remplacer par -sa.
-- en -na -> remplacer par -sa
+- en -i -> remplacer par -sa. いそがしい -> いそがしさ
+- en -na -> remplacer par -sa へんな -> へんさ
 今の病院のあまりよくない所（点）は緊急医療室の忙しさです。
+
+après X: -てから. Exemple : après être allé : きってから
