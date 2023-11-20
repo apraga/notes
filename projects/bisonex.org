@@ -207,7 +207,7 @@ CLOSED: [2023-08-12 Sat 18:23] SCHEDULED: <2023-08-12 Sat 18:00>
 CLOSED: [2023-08-12 Sat 18:23] SCHEDULED: <2023-08-12 Sat 18:00>
 *** KILL Mise à jour T2T :T2T:
 *** WAIT Corriger PR
-SCHEDULED: <2023-11-19 Sun>
+SCHEDULED: <2023-11-26 Sun>
 ** TODO VEP :vep:
 *** DONE [[https://github.com/NixOS/nixpkgs/pull/185691][BioPerl]]
 SCHEDULED: <2022-08-10 Wed>
@@ -246,8 +246,8 @@ Modification nécessaire pour kent :
 - plus de patch
 - suppression d'une boucle dans postPatch
 On supprime aussi NIX_BUILD_TOP
-**** TODO Corriger PR biobigfile
-SCHEDULED: <2023-11-18 Sat>
+**** DONE Corriger PR biobigfile
+CLOSED: [2023-11-19 Sun 22:33] SCHEDULED: <2023-11-18 Sat>
 /Entered on/ [2023-10-15 Sun 17:21]
 *** DONE [[https://github.com/NixOS/nixpkgs/pull/186459][BioDBHTS]]
 CLOSED: [2023-05-06 Sat 08:49] SCHEDULED: <2023-04-15 Sat>
@@ -3212,13 +3212,13 @@ Il faudrait utiliser pubmed en local, sinon c'est 10 000 requete par aligner !
 On se base sur
 
 ** Appel de variant
-*** TODO Biblio <(biblio appel variant)> <(appel variant)>
-SCHEDULED: <2023-11-07 Tue>
+*** DONE Biblio <(biblio appel variant)> <(appel variant)>
+CLOSED: [2023-11-19 Sun 22:32] SCHEDULED: <2023-11-07 Tue>
 *** TODO Figure: nombre de publication par appel de variant
 SCHEDULED: <2023-11-07 Tue>
 /Entered on/ [2023-09-19 Tue 08:43]
 ** TODO Figure: nombre d'exomes par années
-SCHEDULED: <2023-11-19 Sun>
+SCHEDULED: <2023-11-26 Sun>
 /Entered on/ [2023-09-19 Tue 08:43]
 * Tests :tests:
 ** KILL Non régression : version prod
@@ -6512,13 +6512,20 @@ CLOSED: [2023-10-07 Sat 17:59]
 /Entered on/ [2023-08-07 Mon 20:40]
 Twist exome
 *** PROJ Comparer happy et happy-vcfeval :giab:
-** TODO Données CHM13 :chm:
+** TODO Données syndip (CHM-eval) : non car génome ! :syndip:
 https://github.com/lh3/CHM-eval
-*** TODO Run ERR1341793
-SCHEDULED: <2023-11-18 Sat>
+*** KILL Données officielles : non car génome !!
+CLOSED: [2023-11-19 Sun 23:43]
+**** KILL Run ERR1341793
+CLOSED: [2023-11-19 Sun 23:43] SCHEDULED: <2023-11-18 Sat>
 (raw reads ERR1341793_1.fastq.gz and ERR1341793_2.fastq.gz downloaded from https://www.ebi.ac.uk/ena/browser/view/ERR1341793)
-*** TODO Run ERR1341796
-SCHEDULED: <2023-11-18 Sat>
+**** KILL Run ERR1341796
+CLOSED: [2023-11-19 Sun 23:43] SCHEDULED: <2023-11-18 Sat>
+*** TODO Données exome Broad institute (nextflow)
+https://console.cloud.google.com/storage/browser/broad-public-datasets/CHM1_CHM13_WES;tab=objects?pli=1&prefix=&forceOnObjectsSortingFiltering=false
+*** TODO Télécharger VCF avec nextflow
+SCHEDULED: <2023-11-19 Sun>
+https://github.com/lh3/CHM-eval/releases
 ** TODO Insilico :cento:
 *** TODO tous les variants centogène
 **** DONE Extraire liste des SNVs
@@ -8732,7 +8739,7 @@ VEP chooses one block of annotation per variant, using an ordered set of criteri
 **** DONE Mail alexis
 CLOSED: [2023-08-20 Sun 13:45] SCHEDULED: <2023-08-20 Sun>
 **** TODO Données simuscop 200x
-SCHEDULED: <2023-11-19 Sun>
+SCHEDULED: <2023-11-26 Sun>
 **** DONE En T2T avec liftover (filtre = spip) : ok mais lent et trop de variants :tests:
 CLOSED: [2023-09-17 Sun 17:13] SCHEDULED: <2023-09-17 Sun>
 1. Conversion en bed
@@ -9290,10 +9297,10 @@ SCHEDULED: <2023-12-13 Wed>
 /Entered on/ [2023-11-13 Mon 22:40]
 * Résultats
 ** TODO Speed-up BWA-mem
-SCHEDULED: <2023-11-19 Sun>
+SCHEDULED: <2023-11-26 Sun>
 
 ** TODO Speed-up Hapotypecaller
-SCHEDULED: <2023-11-19 Sun>
+SCHEDULED: <2023-11-26 Sun>
 ** TODO Refaire statistics avec happy+ vcfeval
 SCHEDULED: <2023-11-25 Sat>
 /Entered on/ [2023-11-18 Sat 20:13]

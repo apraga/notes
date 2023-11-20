@@ -66,15 +66,21 @@ CLOSED: [2023-11-08 Wed 19:03] SCHEDULED: <2023-11-06 Mon>
 *** DONE Envoyer papiers : clé, wifi, autorisation accès
     CLOSED: [2023-11-05 Sun 15:10] SCHEDULED: <2023-11-05 Sun>
     /Entered on/ [2023-11-05 Sun 14:55]
-*** WAIT Demander pour ouverture de ligne
-    SCHEDULED: <2023-11-20 Mon>
+*** DONE Demander pour ouverture de ligne
+    CLOSED: [2023-11-20 Mon 18:28] SCHEDULED: <2023-11-20 Mon>
     /Entered on/ [2023-11-05 Sun 14:56]
-*** TODO Arrêter résilier et souscrire nouveau contrat :internet:
-SCHEDULED: <2023-11-20 Mon>
+*** TODO Résilier ancien contrat :internet:
+SCHEDULED: <2023-11-27 Mon>
 Appel 2023-11-03: ouverture nouvelle ligne dans 9 jours
 RV demain
 *** KILL Attestation box ?
 CLOSED: [2023-11-02 Thu 22:29] SCHEDULED: <2023-10-30 Mon>
+*** WAIT Mail Mme Ossajedi poubelles
+SCHEDULED: <2023-11-27 Mon>
+/Entered on/ [2023-11-19 Sun 22:40]
+*** WAIT Mail Mme Ossajedi poubelles
+SCHEDULED: <2023-11-27 Mon>
+/Entered on/ [2023-11-19 Sun 22:40]
 ** TODO Inscription fac 2023
 SCHEDULED: <2023-11-25 Sat>
 /Entered on/ [2023-11-10 Fri 16:58]
@@ -82,6 +88,19 @@ SCHEDULED: <2023-11-25 Sat>
 CLOSED: [2023-11-18 Sat 11:43]
 *** TODO UFR santé: mail envoyé car inscription impossible
 SCHEDULED: <2023-11-22 Wed>
+* Japonais
+:PROPERTIES:
+:CATEGORY: japonais
+:END:
+** TODO Intermediate japanase (Kluemper)
+SCHEDULED: <2023-11-21 Tue .+1d>
+:PROPERTIES:
+:STYLE:    habit
+:LAST_REPEAT: [2023-11-20 Mon 21:45]
+:END:
+- State "DONE"       from "TODO"       [2023-11-20 Mon 21:45]
+Selfcheck lesson1
+- State "DONE"       from "TODO"       [2023-11-19 Sun 22:39]
 * Santé
 * Recherche
 :PROPERTIES:
@@ -362,8 +381,13 @@ Sincerely,
 ****** DONE Soumission initiale
 CLOSED: [2023-07-27 Thu 23:31]
 
-*** TODO Implémenter corrections
-SCHEDULED: <2023-11-19 Sun>
+*** DONE Implémenter corrections article
+CLOSED: [2023-11-19 Sun 22:33] SCHEDULED: <2023-11-19 Sun>
+
+*** TODO Correction réponse reviewer +/ article (gain)
+SCHEDULED: <2023-11-27 Mon>
+*** WAIT Mail paul
+SCHEDULED: <2023-11-22 Wed>
 *** TODO Resoumettre
 ** Apprendre le machine learning
 :PROPERTIES:
@@ -644,13 +668,16 @@ CLOSED: [2023-02-12 Sun 23:17]
 *** TODO Copier photos famille depuis drive yvain sur drive famille
 *** TODO Trier photos sur drive yvain
 ** TODO certificat de baptême
-SCHEDULED: <2023-11-20 Mon>
+SCHEDULED: <2023-11-21 Tue>
 /Entered on/ [2023-10-11 Wed 23:13]
 Message envoyé sur le site 2023-10-11 Wed
 *** TODO Appeler
-SCHEDULED: <2023-11-20 Mon>
+SCHEDULED: <2023-11-21 Tue>
 *** TODO Demander à Aurélien
 SCHEDULED: <2023-11-21 Tue>
+** TODO Payer inscription gymnastique
+SCHEDULED: <2023-11-21 Tue>
+/Entered on/ [2023-11-19 Sun 22:41]
 * Voiture :voiture:
 ** Mazda 5
 :PROPERTIES:
@@ -667,6 +694,30 @@ SCHEDULED: <2023-11-21 Tue>
 :PROPERTIES:
 :CATEGORY: maison
 :END:
+** Serveur
+:PROPERTIES:
+:CATEGORY: serveur
+:END:
+*** Seedbox
+:PROPERTIES:
+:CATEGORY: seedbox
+:END:
+**** DONE Location (blackfriday)
+CLOSED: [2023-11-20 Mon 19:32] SCHEDULED: <2023-11-20 Mon>
+/Entered on/ [2023-11-20 Mon 18:29]
+**** TODO Re-partager musique :red:
+SCHEDULED: <2023-12-04 Mon>
+**** TODO Re-partager livres :mam:
+SCHEDULED: <2023-11-26 Sun>
+**** DONE Configurer rtorrent
+CLOSED: [2023-11-20 Mon 22:53] SCHEDULED: <2023-11-21 Tue>
+**** DONE Tester 1 livres :mam:
+CLOSED: [2023-11-20 Mon 22:05] SCHEDULED: <2023-11-21 Tue>
+**** DONE Ouvrir IP :mam:
+CLOSED: [2023-11-20 Mon 22:22] SCHEDULED: <2023-11-21 Tue>
+**** DONE Vérifier connectivity :mam:
+CLOSED: [2023-11-20 Mon 22:22] SCHEDULED: <2023-11-21 Tue>
+/Entered on/ [2023-11-20 Mon 22:04]
 * Banque
 :PROPERTIES:
 :CATEGORY: banque
