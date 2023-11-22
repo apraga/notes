@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       ab1b6c26-0de8-4819-a8d4-719eaf10780b
-:END:
 #+title: Org-roam
 
 Transformer un titre en noeud  SPC m I ou org-id-create

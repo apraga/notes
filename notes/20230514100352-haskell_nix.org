@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       39c6a7a1-39ea-45f9-a647-6119b3f56837
-:END:
 #+title: Haskell Nix
 * Cabal2nix
 Après avoir créé un fichier .cabal, mettre dans `default.nix`

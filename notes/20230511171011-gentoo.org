@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       0c8d2d28-e792-49f7-a085-abbd8f3f1c50
-:END:
 #+title: Gentoo
 #+filetags: cs gentoo
 

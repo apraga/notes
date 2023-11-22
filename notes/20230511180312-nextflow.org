@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       1948d9de-7d17-4128-910a-bde70bee19f2
-:END:
 #+title: Nextflow
 #+filetags: cs, bioinfo
 

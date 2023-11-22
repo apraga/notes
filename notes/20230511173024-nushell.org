@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       37137000-6232-454a-a1de-ffa2ac3642ea
-:END:
 #+title: Nushell
 #+filetags: cs
 

@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       83b9193c-8bb2-413f-9371-fa2baf8b333a
-:END:
 #+title: Haskell package pour Gentoo
 #+filetags: personal haskell gentoo
 

@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       f9d35304-7a95-4bbd-9230-35030a692ef4
-:END:
 #+title: Microbiologie
 #+filetags: medecine bacterio
 

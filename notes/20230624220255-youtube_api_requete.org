@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       2498b336-a13f-42bf-b4a3-074aadb5fa17
-:END:
 #+title: Youtube api requete
 #+filetags: personal
 

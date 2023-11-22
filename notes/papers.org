@@ -1,7 +1,5 @@
 * Math math
-  :PROPERTIES:
   :CUSTOM_ID: math-math
-  :END:
 
 ** TOREAD Reinhart, A. (): Statistics done wrong stats
    :PROPERTIES:

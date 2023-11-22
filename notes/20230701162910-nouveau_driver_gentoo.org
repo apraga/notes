@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       91669daf-518f-4c8d-a553-ce6988d0db03
-:END:
 #+title: Nouveau driver (Gentoo)
 #+filetags: personal
 

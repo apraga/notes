@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       13341944-8c64-4c1b-bac5-2e80834e4211
-:END:
 #+title: La Pléiade
 #+filetags: books
 - [ ] 1. BAUDELAIRE, Œuvres complètes, I.

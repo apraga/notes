@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       76cd9c6a-d63a-4ce7-be2b-f59a17419fbc
-:END:
 #+title: Usenet
 #+filetags: cs
 * Backbone

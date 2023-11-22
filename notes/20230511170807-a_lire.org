@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       2b415900-2e7f-4931-9534-95eddba3d22b
-:END:
 
 #+title: À lire
 #+filetags: books

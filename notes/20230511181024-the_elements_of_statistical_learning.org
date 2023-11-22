@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       5831d4c0-98d8-4ec3-a5b7-c83612f56ddd
-:END:
 #+title: The elements of statistical learning
 #+filetags: cs books machine-learning
 

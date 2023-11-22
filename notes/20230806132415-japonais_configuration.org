@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       84685963-3eb2-415c-8ba1-fe33ba8973e2
-:END:
 #+title: Japonais : configuration
 #+filetags: personal
 

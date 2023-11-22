@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       a13a6ead-eeb5-4059-817e-9f326f4280ac
-:END:
 #+title: Wiki RTL8723bu
 #+filetags: personal
 

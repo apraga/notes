@@ -199,11 +199,9 @@
 #+END
 
 * DONE All The Weyrs of Pern
-:PROPERTIES:
 :AUTHOR:   Anne McCaffrey
 :CYCLE:    Pern
 :CATEGORY: fantasy
-:END:
 :CLOSED: [2023-01-22 Sun 22:45]
 * DONE Armée romaine sous le Haut-Empire
 :PROPERTIES:

@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       ed20c9d9-423f-4430-8eb8-d22b3ba14980
-:END:
 #+title: Org-mode
 #+filetags: emacs
 * Bibliographie annotée

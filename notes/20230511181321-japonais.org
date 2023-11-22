@@ -1,13 +1,8 @@
-:PROPERTIES:
-:ID:       ff3ddbe9-e87b-4e1b-8478-66234ebf6ab5
-:END:
 #+title: Japonais
 #+filetags: japanese
 #+options: toc:nil
 * 2021-09-30 Aya-sensei : Intro
-  :PROPERTIES:
   :CUSTOM_ID: aya-sensei-intro
-  :END:
 
 * 2021-10-08 Aya-sensei : Leçon 9 (JFBP II)
   :PROPERTIES:

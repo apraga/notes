@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       606cfb9e-0210-46eb-abcb-c03ef5522464
-:END:
 #+title: Julia
 #+filetags: personal julia
 

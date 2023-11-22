@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       bd187033-dd51-4339-a820-0603d00af786
-:END:
 #+title: Emacs
 
 * Astuces

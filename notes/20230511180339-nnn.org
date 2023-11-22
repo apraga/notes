@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       539d2b90-4053-46fb-9c8d-77352a878130
-:END:
 #+title: nnn
 #+filetags: cs
 

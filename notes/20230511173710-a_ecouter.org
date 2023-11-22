@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       e3a64c7c-5381-499f-94c7-4b969115dce3
-:END:
 #+title: À écouter
 #+filetags: music
 

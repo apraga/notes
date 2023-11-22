@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       2335c41f-88dd-4240-a794-8b3ce8dbb5eb
-:END:
 #+title: Buku
 #+filetags: personal
 

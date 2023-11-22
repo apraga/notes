@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       f00d4e2c-1c4e-4944-80fd-e8a6667e86df
-:END:
 #+title: Haskell
 #+filetags: cs
 * Démarrer un projet rapidement

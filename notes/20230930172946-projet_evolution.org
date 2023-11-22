@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       00866878-5a50-4ade-bf68-6669c3b3bcf1
-:END:
 #+title: Projet: évolution
 #+filetags: personal
 À faire :

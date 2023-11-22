@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       10c72e03-5b24-47b4-9694-c5bc0a350d60
-:END:
 #+title: Visualisation
 #+filetags: personal
 

@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       4aaac2a1-632c-43aa-beb1-a5bcc4bbcc37
-:END:
 #+title: Alacritty
 #+filetags: personal
 

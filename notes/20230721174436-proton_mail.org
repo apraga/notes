@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       2674cd2f-159a-4df6-849d-3beb9b25f644
-:END:
 #+title: Proton mail
 #+filetags: personal
 * Proton mail bridge

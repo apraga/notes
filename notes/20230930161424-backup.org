@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       32598fde-e934-43dc-bb69-21c9b8013948
-:END:
 #+title: Backup
 #+filetags: personal
 

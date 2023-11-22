@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       1b8dac27-6ae6-4274-a3ec-b6935b6aebfa
-:END:
 #+title: UTF-8
 #+filetags: cs
 (From @Melissa on discord #haskell-beginners)

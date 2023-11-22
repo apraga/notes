@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       f95b929a-e9c3-4f82-8a80-3014046630c4
-:END:
 #+title: Bach
 #+filetags: music
 * TODO Bach 2000

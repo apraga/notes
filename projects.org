@@ -74,17 +74,17 @@ SCHEDULED: <2023-11-27 Mon>
 Appel 2023-11-03: ouverture nouvelle ligne dans 9 jours
 RV demain
 **** WAIT Attestation box ?
-SCHEDULED: <2023-11-22 Wed>
+SCHEDULED: <2023-11-23 Thu>
 *** DONE Mail Mme Ossajedi poubelles
 CLOSED: [2023-11-21 Tue 22:53] SCHEDULED: <2023-11-27 Mon>
 /Entered on/ [2023-11-19 Sun 22:40]
-** TODO Inscription fac 2023
-SCHEDULED: <2023-11-25 Sat>
+** DONE Inscription fac 2023
+CLOSED: [2023-11-22 Wed 20:41] SCHEDULED: <2023-11-25 Sat>
 /Entered on/ [2023-11-10 Fri 16:58]
 *** DONE CVEC
 CLOSED: [2023-11-18 Sat 11:43]
-*** TODO UFR santé: mail envoyé car inscription impossible
-SCHEDULED: <2023-11-22 Wed>
+*** DONE UFR santé: mail envoyé car inscription impossible
+CLOSED: [2023-11-22 Wed 20:41] SCHEDULED: <2023-11-22 Wed>
 * Japonais
 :PROPERTIES:
 :CATEGORY: japonais
@@ -385,7 +385,7 @@ CLOSED: [2023-11-19 Sun 22:33] SCHEDULED: <2023-11-19 Sun>
 *** TODO Correction réponse reviewer +/ article (gain)
 SCHEDULED: <2023-11-24 Fri>
 *** DONE Mail paul
-CLOSED: [2023-11-21 Tue 22:53] SCHEDULED: <2023-11-22 Wed>
+CLOSED: [2023-11-21 Tue 22:53] SCHEDULED: <2023-11-21 Tue>
 *** TODO Resoumettre
 ** Apprendre le machine learning
 :PROPERTIES:
@@ -670,8 +670,8 @@ Autres drives :
 CLOSED: [2023-02-12 Sun 23:17]
 *** TODO Copier photos famille depuis drive yvain sur drive famille
 *** TODO Trier photos sur drive yvain
-** TODO certificat de baptême
-SCHEDULED: <2023-11-21 Tue>
+** DONE certificat de baptême
+CLOSED: [2023-11-22 Wed 20:28] SCHEDULED: <2023-11-21 Tue>
 /Entered on/ [2023-10-11 Wed 23:13]
 Message envoyé sur le site 2023-10-11 Wed
 *** DONE Appeler

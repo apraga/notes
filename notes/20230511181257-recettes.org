@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       71ecf7ba-25e3-40f9-8148-09bb0019127c
-:END:
 #+title: Recettes
 #+filetags: cooking
 * Desserts

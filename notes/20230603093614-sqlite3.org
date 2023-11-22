@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       6ffe3a57-b7b8-4334-8d49-f4586d2943ae
-:END:
 #+title: Sqlite3
 #+filetags: personal sql
 

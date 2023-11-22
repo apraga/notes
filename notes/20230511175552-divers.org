@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       924c049e-889c-40b7-8516-334107704df7
-:END:
 #+title: Divers
 * Candidatures ingénieur de recherche CNRS
 :PROPERTIES:

@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       8217cf86-05c6-4472-83f1-aff2ef986d6b
-:END:
 #+title: Turbidimétrie
 #+options: toc:nil
 #+filetags: medecine biochimie technique

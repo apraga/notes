@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       bc12b451-6e52-4dfb-944d-b028c0f5d775
-:END:
 #+title: Robin
 #+filetags: famille
 

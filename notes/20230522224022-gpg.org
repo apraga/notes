@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       f23e284b-d9d9-4dbe-8ad1-f4246c755d89
-:END:
 #+title: GPG
 
 * "gpg fails to write commit object"
