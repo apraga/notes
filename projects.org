@@ -74,7 +74,7 @@ SCHEDULED: <2023-11-27 Mon>
 Appel 2023-11-03: ouverture nouvelle ligne dans 9 jours
 RV demain
 **** WAIT Attestation box ?
-SCHEDULED: <2023-11-23 Thu>
+SCHEDULED: <2023-11-24 Fri>
 *** DONE Mail Mme Ossajedi poubelles
 CLOSED: [2023-11-21 Tue 22:53] SCHEDULED: <2023-11-27 Mon>
 /Entered on/ [2023-11-19 Sun 22:40]
@@ -90,14 +90,15 @@ CLOSED: [2023-11-22 Wed 20:41] SCHEDULED: <2023-11-22 Wed>
 :CATEGORY: japonais
 :END:
 ** TODO Intermediate japanase (Kluemper)
-SCHEDULED: <2023-11-22 Wed .+1d>
+SCHEDULED: <2023-11-24 Fri .+1d>
 :PROPERTIES:
 :STYLE:    habit
-:LAST_REPEAT: [2023-11-21 Tue 22:52]
+:LAST_REPEAT: [2023-11-23 Thu 22:13]
 :END:
-
+- State "DONE"       from "TODO"       [2023-11-23 Thu 22:13]
+- State "DONE"       from "TODO"       [2023-11-22 Wed 21:33]
+- State "DONE"       from "TODO"       [2023-11-21 Tue 21:45]
 - State "DONE"       from "TODO"       [2023-11-20 Mon 21:45]
-Selfcheck lesson1
 - State "DONE"       from "TODO"       [2023-11-19 Sun 22:39]
 * Santé
 * Recherche
@@ -208,10 +209,11 @@ monoallélique -> inactivation partielle pourrait jouer un rôle
     - cosmic : rapporté dans pheochromocytome x1 et pheochromocytome x1 (patho)
 
 *** Tâches
-**** DONE Biblio
-***** DONE article T. Hirsch
+*** DONE Biblio
+CLOSED: [2023-11-23 Thu 21:46]
+**** DONE article T. Hirsch
 CLOSED: [2022-11-27 Sun 11:28]
-***** DONE Autre case report NF1 + hépatoblastome ?
+**** DONE Autre case report NF1 + hépatoblastome ?
 CLOSED: [2022-11-27 Sun 11:28]
 [cite:@dubbink2018]: 1 patient NF1 + mutation somatique /CNNTB1/
 [cite:@seminog2012] étude épidémio : surrisque de cancer du foie chez patient NF1 (cf note)
@@ -219,9 +221,9 @@ CLOSED: [2022-11-27 Sun 11:28]
 [cite:@landry2021]: épidémio récente : pas de cas rapporté NF1 + foie
 [cite:@varan2015]: épidémio plus ancienne : idem
 [cite:@skoczen2019] hépatoblastome + neuroblastome avec plusieurs variants dont NF1
-***** DONE NF1 + autres cancers
+**** DONE NF1 + autres cancers
 CLOSED: [2022-11-27 Sun 11:28]
-***** DONE Pathway
+**** DONE Pathway
 CLOSED: [2022-11-27 Sun 11:28]
 Wnt/β-cateninng : impliqué dans NF1
 activation Ras/MAPk -> augemantation niveau de βcatenine
@@ -249,34 +251,34 @@ NF2
 - schwannomees NF2 via hyperactivation  https://www.nature.com/articles/cdd201654
   et vestibular schwanoma
   https://www.nature.com/articles/s41401-022-00908-4
-***** Autres
+**** Autres
 [cite:@kappler2010]: rien ne correspond
 Voie RAS impliquée dans hépatoblastome ?
 Possible selon https://pubmed.ncbi.nlm.nih.gov/19665249/
 https://www.nature.com/articles/labinvest2016142
-**** KILL Trouver autres cas ?
+*** KILL Trouver autres cas ?
 CLOSED: [2022-12-04 Sun 22:13]
-***** KILL Appel ANDDI rares
+**** KILL Appel ANDDI rares
 CLOSED: [2022-12-04 Sun 22:13]
-***** KILL Appel ITACA
+**** KILL Appel ITACA
 CLOSED: [2022-12-04 Sun 22:13]
-**** DONE Plan de l’article
+*** DONE Plan de l’article
 CLOSED: [2022-10-22 Sat 23:33] DEADLINE: <2022-09-17 Sat>
-**** DONE Poster v0.1
+*** DONE Poster v0.1
 CLOSED: [2022-11-27 Sun 11:28]
-**** DONE Article
+*** DONE Article
 CLOSED: [2023-10-07 Sat 18:00]
-***** DONE v0.1
+**** DONE v0.1
 CLOSED: [2022-12-04 Sun 22:13]
-***** DONE Corrections v0.2
+**** DONE Corrections v0.2
 CLOSED: [2023-03-20 lun. 14:29]
-***** DONE Version validée par paul v0.2.7
+**** DONE Version validée par paul v0.2.7
 CLOSED: [2023-03-20 lun. 14:30]
-***** DONE Correction Hirsch + Vidau
+**** DONE Correction Hirsch + Vidau
 CLOSED: [2023-06-11 Sun 18:39] SCHEDULED: <2023-05-28 Sun>
-***** DONE Dernières correction JP
+**** DONE Dernières correction JP
 CLOSED: [2023-07-02 Sun 10:52] SCHEDULED: <2023-06-11 Sun>
-***** DONE Relancer avant soumission
+**** DONE Relancer avant soumission
 CLOSED: [2023-07-21 Fri 17:46] SCHEDULED: <2023-07-16 Sun>
 **** DONE Soumission
 CLOSED: [2023-10-07 Sat 18:00]
@@ -379,14 +381,13 @@ Sincerely,
 ****** DONE Soumission initiale
 CLOSED: [2023-07-27 Thu 23:31]
 
-*** DONE Implémenter corrections article
+**** DONE Implémenter corrections article
 CLOSED: [2023-11-19 Sun 22:33] SCHEDULED: <2023-11-19 Sun>
-
-*** TODO Correction réponse reviewer +/ article (gain)
-SCHEDULED: <2023-11-24 Fri>
-*** DONE Mail paul
+**** TODO Correction réponse reviewer +/ article (gain)
+SCHEDULED: <2023-11-23 Thu>
+**** DONE Mail paul
 CLOSED: [2023-11-21 Tue 22:53] SCHEDULED: <2023-11-21 Tue>
-*** TODO Resoumettre
+**** TODO Resoumettre
 ** Apprendre le machine learning
 :PROPERTIES:
 :CATEGORY: machine learning
@@ -681,6 +682,9 @@ CLOSED: [2023-11-21 Tue 22:52] SCHEDULED: <2023-11-21 Tue>
 ** DONE Payer inscription gymnastique
 CLOSED: [2023-11-21 Tue 22:52] SCHEDULED: <2023-11-21 Tue>
 /Entered on/ [2023-11-19 Sun 22:41]
+** DONE Réserver location ski
+CLOSED: [2023-11-23 Thu 21:45] SCHEDULED: <2023-11-22 Wed>
+/Entered on/ [2023-11-22 Wed 22:04]
 * Voiture :voiture:
 ** Mazda 5
 :PROPERTIES:
@@ -862,18 +866,6 @@ CLOSED: [2023-10-01 Sun 16:15] SCHEDULED: <2023-09-30 Sat>
 - [X] public
 - [X] private
 - [ ] data
-*** TODO depuis raspberry:/media/annex
-SCHEDULED: <2023-11-23 Thu>
-À vérifier
-- [X] public
-- [X] private
-- [ ] data
-*** TODO depuis laptop:~/annex
-SCHEDULED: <2023-11-23 Thu>
-- [ ] public
-- [ ] private
-- [ ] data
-
 *** DONE mega avec restic
 CLOSED: [2023-10-01 Sun 16:08] SCHEDULED: <2023-10-01 Sun>
 - [X] public
@@ -888,8 +880,3 @@ CLOSED: [2023-10-01 Sun 16:15] SCHEDULED: <2023-10-01 Sun>
 - [ ] public sur gdrive
 ** DONE papers : git lfs (non encrypté)
 CLOSED: [2023-09-30 Sat 19:19] SCHEDULED: <2023-09-30 Sat>
-** TODO Comprendre pourquoi git-annex ne lit pas home
-SCHEDULED: <2023-11-23 Thu>
-/Entered on/ [2023-10-01 Sun 21:31]
-Unable to parse git config
-cannot find git-annex

@@ -760,3 +760,57 @@ CLOSED: [2023-06-24 Sat 15:43] SCHEDULED: <2023-05-28 Sun>
 :END:
 /Entered on/ [2023-05-27 Sat 22:28]
 
+
+* KILL depuis raspberry:/media/annex
+CLOSED: [2023-11-23 Thu 21:44] SCHEDULED: <2023-11-23 Thu>
+:PROPERTIES:
+:ARCHIVE_TIME: 2023-11-23 Thu 21:45
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Backups/Git-annex en local
+:ARCHIVE_CATEGORY: backup
+:ARCHIVE_TODO: KILL
+:END:
+À vérifier
+- [X] public
+- [X] private
+- [ ] data
+
+* KILL depuis laptop:~/annex
+CLOSED: [2023-11-23 Thu 21:44] SCHEDULED: <2023-11-23 Thu>
+:PROPERTIES:
+:ARCHIVE_TIME: 2023-11-23 Thu 21:45
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Backups/Git-annex en local
+:ARCHIVE_CATEGORY: backup
+:ARCHIVE_TODO: KILL
+:END:
+- [ ] public
+- [ ] private
+- [ ] data
+
+
+* KILL Comprendre pourquoi git-annex ne lit pas home
+CLOSED: [2023-11-23 Thu 21:44] SCHEDULED: <2023-11-23 Thu>
+:PROPERTIES:
+:ARCHIVE_TIME: 2023-11-23 Thu 21:45
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Backups
+:ARCHIVE_CATEGORY: backup
+:ARCHIVE_TODO: KILL
+:END:
+/Entered on/ [2023-10-01 Sun 21:31]
+Unable to parse git config
+cannot find git-annex
+
+* KILL Comprendre pourquoi git-annex ne lit pas home
+CLOSED: [2023-11-23 Thu 21:44] SCHEDULED: <2023-11-23 Thu>
+:PROPERTIES:
+:ARCHIVE_TIME: 2023-11-23 Thu 21:45
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Backups
+:ARCHIVE_CATEGORY: backup
+:ARCHIVE_TODO: KILL
+:END:
+/Entered on/ [2023-10-01 Sun 21:31]
+Unable to parse git config
+cannot find git-annex

@@ -267,9 +267,9 @@ Soumis
 ** WAIT Package Spip https://github.com/NixOS/nixpkgs/pull/247476
 ** TODO Happy :happy:
 *** TODO PR python 3 upstream
-SCHEDULED: <2023-11-23 Thu>
+SCHEDULED: <2023-11-26 Sun>
 *** TODO nixpkgs en l'état
-SCHEDULED: <2023-11-23 Thu>
+SCHEDULED: <2023-11-26 Sun>
 ** PROJ SpliceAI
 ** TODO Bamsurgeon
 /Entered on/ [2023-05-13 Sat 19:11]
@@ -6524,7 +6524,7 @@ CLOSED: [2023-11-19 Sun 23:43] SCHEDULED: <2023-11-18 Sat>
 *** TODO Données exome Broad institute (nextflow)
 https://console.cloud.google.com/storage/browser/broad-public-datasets/CHM1_CHM13_WES;tab=objects?pli=1&prefix=&forceOnObjectsSortingFiltering=false
 *** TODO Télécharger VCF avec nextflow
-SCHEDULED: <2023-11-23 Thu>
+SCHEDULED: <2023-11-25 Sat>
 https://github.com/lh3/CHM-eval/releases
 ** TODO Insilico :cento:
 *** TODO tous les variants centogène
