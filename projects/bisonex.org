@@ -267,9 +267,9 @@ Soumis
 ** WAIT Package Spip https://github.com/NixOS/nixpkgs/pull/247476
 ** TODO Happy :happy:
 *** TODO PR python 3 upstream
-SCHEDULED: <2023-11-26 Sun>
+SCHEDULED: <2023-12-02 Sat>
 *** TODO nixpkgs en l'état
-SCHEDULED: <2023-11-26 Sun>
+SCHEDULED: <2023-12-02 Sat>
 ** PROJ SpliceAI
 ** TODO Bamsurgeon
 /Entered on/ [2023-05-13 Sat 19:11]
@@ -3212,13 +3212,18 @@ Il faudrait utiliser pubmed en local, sinon c'est 10 000 requete par aligner !
 On se base sur
 
 ** Appel de variant
-*** TODO Biblio <(biblio appel variant)> <(appel variant)>
-SCHEDULED: <2023-11-25 Sat 11:00>
-*** TODO Figure: nombre de publication par appel de variant
-SCHEDULED: <2023-11-07 Tue>
-/Entered on/ [2023-09-19 Tue 08:43]
-** TODO Figure: nombre d'exomes par années
+*** DONE Biblio <(biblio appel variant)> <(appel variant)>
+CLOSED: [2023-11-25 Sat 23:29] SCHEDULED: <2023-11-25 Sat 11:00>
+*** TODO Finir biblio avec comparatifs [0/2]
 SCHEDULED: <2023-11-26 Sun>
+- [ ] [[file:~/research/bisonex/thesis/biblio.org::#Kumaran_2019][Performance assessment of variant calling pipelines using human whole exome sequencing and simulated data]]
+- [ ] [[file:~/research/bisonex/thesis/biblio.org::*Comparaison de pipeline][Comparaison de pipeline]]
+*** KILL Figure: nombre de publication par appel de variant
+CLOSED: [2023-11-25 Sat 19:00] SCHEDULED: <2023-11-07 Tue>
+/Entered on/ [2023-09-19 Tue 08:43]
+Impossible d'utiliser pubmed car certains sont sur arxiv
+** TODO Figure: nombre d'exomes par années
+SCHEDULED: <2023-12-02 Sat>
 /Entered on/ [2023-09-19 Tue 08:43]
 * Tests :tests:
 ** KILL Non régression : version prod
@@ -8740,7 +8745,7 @@ VEP chooses one block of annotation per variant, using an ordered set of criteri
 **** DONE Mail alexis
 CLOSED: [2023-08-20 Sun 13:45] SCHEDULED: <2023-08-20 Sun>
 **** TODO Données simuscop 200x
-SCHEDULED: <2023-11-26 Sun>
+SCHEDULED: <2023-12-02 Sat>
 **** DONE En T2T avec liftover (filtre = spip) : ok mais lent et trop de variants :tests:
 CLOSED: [2023-09-17 Sun 17:13] SCHEDULED: <2023-09-17 Sun>
 1. Conversion en bed
@@ -8772,6 +8777,11 @@ CLOSED: [2023-09-17 Sun 23:15] SCHEDULED: <2023-09-17 Sun>
 ** TODO Medically relevant genes
 SCHEDULED: <2023-11-30 Thu>
 /Entered on/ [2023-10-18 Wed 22:37]
+** TODO HG002 en T2T
+/Entered on/ [2023-11-25 Sat 17:58]
+https://github.com/marbl/HG002
+*** Tester les benchmark préliminaires
+https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/analysis/NIST_HG002_DraftBenchmark_defrabbV0.011-20230725/
 * Ré-interprétation :reanalysis:
 ** DONE Lancer tests sur données brutes [225/250] <(samples.csv)>  <(runs.waiting)>
 CLOSED: [2023-10-14 Sat 11:58] SCHEDULED: <2023-10-08 Sun>
@@ -9298,10 +9308,10 @@ SCHEDULED: <2023-12-13 Wed>
 /Entered on/ [2023-11-13 Mon 22:40]
 * Résultats
 ** TODO Speed-up BWA-mem
-SCHEDULED: <2023-11-26 Sun>
+SCHEDULED: <2023-12-02 Sat>
 
 ** TODO Speed-up Hapotypecaller
-SCHEDULED: <2023-11-26 Sun>
+SCHEDULED: <2023-12-02 Sat>
 ** TODO Refaire statistics avec happy+ vcfeval
 SCHEDULED: <2023-11-30 Thu>
 /Entered on/ [2023-11-18 Sat 20:13]

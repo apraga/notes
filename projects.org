@@ -101,11 +101,12 @@ SCHEDULED: <2023-11-25 Sat 19:00>
 :CATEGORY: japonais
 :END:
 ** TODO Intermediate japanase (Kluemper)
-SCHEDULED: <2023-11-25 Sat .+1d>
+SCHEDULED: <2023-11-26 Sun .+1d>
 :PROPERTIES:
 :STYLE:    habit
-:LAST_REPEAT: [2023-11-23 Thu 22:13]
+:LAST_REPEAT: [2023-11-25 Sat 22:37]
 :END:
+- State "DONE"       from "TODO"       [2023-11-25 Sat 22:13]
 - State "DONE"       from "TODO"       [2023-11-24 Fri 22:13]
 - State "DONE"       from "TODO"       [2023-11-23 Thu 22:13]
 - State "DONE"       from "TODO"       [2023-11-22 Wed 21:33]
@@ -436,9 +437,10 @@ Apport: formule "clé-en-main" pour valider de l'exome portable et reproductible
 *** KILL DataToolkit
 CLOSED: [2023-11-25 Sat 13:58]
 Le modèle est assez souple pour gérer les données et les transformations.
-Inconvénient principal:
+Inconvénient :
 - principalement: pour des transformations complexes comme un liftover sur un .BED -> nextflow est plus adapté
 - moins adapté pour gérer une liste de données ? not. pour conversion bam -> fastq sur plusieurs fichiers (on ne peut pas réutiliser la function)
+- en beta (plus de support pour nextflow)
 
 Le dossier peut être changé avec https://tecosaur.github.io/DataToolkitDocs/common/stable/plugins/store/
 Pour simplement télécharger les données
@@ -787,7 +789,7 @@ CLOSED: [2023-11-21 Tue 22:52] SCHEDULED: <2023-11-21 Tue>
 CLOSED: [2023-11-23 Thu 21:45] SCHEDULED: <2023-11-22 Wed>
 /Entered on/ [2023-11-22 Wed 22:04]
 ** TODO Command minoxidil
-SCHEDULED: <2023-11-25 Sat 17:00>
+SCHEDULED: <2023-11-26 Sun>
 /Entered on/ [2023-11-25 Sat 11:30]
 * Voiture :voiture:
 ** Mazda 5
