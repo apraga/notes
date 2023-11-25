@@ -1,6 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 import  Hakyll
-import Text.Pandoc
+import qualified Text.Pandoc as Pandoc
 
 --------------------------------------------------------------------------------
 -- Important note :
@@ -9,14 +9,9 @@ import Text.Pandoc
 -- 2. we have a custom filter to correct org-roam internal link
 --------------------------------------------------------------------------------
 
-notes :: Pattern
-notes = fromList . map (fromFilePath . ("notes/" ++ )) $
-  ["japonais.org"
-  , "medecine/bacteriologie.org"
-  , "medecine/hématologie.org"
-  , "medecine/virologie.org"]
-
-notesMedecine = "notes/medecine/*.org"
+notesTOC = [ "notes/medecine/bacteriologie.org"
+           , "notes/medecine/hématologie.org"
+           , "notes/medecine/virologie.org"]
 
 main :: IO ()
 main = hakyllWith config $ do
@@ -41,7 +36,12 @@ main = hakyllWith config $ do
             >>= loadAndApplyTemplate "templates/default.html" postCtx
             >>= relativizeUrls
 
-    match notes $ do
+    match "notes/japonais.org" $ do
+        route $ setExtension "html"
+        compile $ pandocCompiler
+            >>= relativizeUrls
+
+    match (fromList notesTOC) $ do
         route $ setExtension "html"
         compile $ pandocCompilerWith defaultHakyllReaderOptions withTOC
             >>= relativizeUrls
@@ -65,7 +65,7 @@ main = hakyllWith config $ do
     create ["notes.html"] $ do
         route idRoute
         compile $ do
-            notes' <- loadAll notesMedecine
+            notes' <- loadAll . fromList $ "notes/japonais.org" : notesTOC
             let archiveCtx =
                     listField "notes" postCtx (return notes') `mappend`
                     constField "title" "Notes"            `mappend`
@@ -102,5 +102,12 @@ config = defaultConfiguration {
   deployCommand = "tar cvzf site.tar.gz -C _site . && hut pages publish site.tar.gz -d scut.srht.site"
   }
 
-withTOC :: WriterOptions
-withTOC = defaultHakyllWriterOptions { writerTableOfContents = True }
+-- Generate table of contents
+withTOC = defaultHakyllWriterOptions { Pandoc.writerTableOfContents = True
+                                     , Pandoc.writerTOCDepth = 1
+                                     , Pandoc.writerTemplate = Just tocTemplate
+                                     }
+
+-- from jaspervdj website
+tocTemplate = either error id $ either (error . show) id $
+  Pandoc.runPure $ Pandoc.runWithDefaultPartials $ Pandoc.compileTemplate "" "$toc$\n$body$"
