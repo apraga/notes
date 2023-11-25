@@ -1,5 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 import  Hakyll
+import Text.Pandoc
 
 --------------------------------------------------------------------------------
 -- Important note :
@@ -7,7 +8,15 @@ import  Hakyll
 -- 1. Hakyll does not manage org metadata.
 -- 2. we have a custom filter to correct org-roam internal link
 --------------------------------------------------------------------------------
-notes = fromList $ ["notes/index.org" , "notes/japonais.org"]
+
+notes :: Pattern
+notes = fromList . map (fromFilePath . ("notes/" ++ )) $
+  ["japonais.org"
+  , "medecine/bacteriologie.org"
+  , "medecine/hématologie.org"
+  , "medecine/virologie.org"]
+
+notesMedecine = "notes/medecine/*.org"
 
 main :: IO ()
 main = hakyll $ do
@@ -34,16 +43,10 @@ main = hakyll $ do
 
     match notes $ do
         route $ setExtension "html"
-        compile $ pandocCompiler
+        compile $ pandocCompilerWith defaultHakyllReaderOptions withTOC
             >>= relativizeUrls
 
-    match "notes/medecine/*.org" $ do
-        route $ setExtension "html"
-        compile $ pandocCompiler
-            >>= relativizeUrls
-
-
-    -- Don't forget to set the path to temporary files
+    -- Generate list of posts
     create ["archive.html"] $ do
         route idRoute
         compile $ do
@@ -55,6 +58,21 @@ main = hakyll $ do
 
             makeItem ""
                 >>= loadAndApplyTemplate "templates/archive.html" archiveCtx
+                >>= loadAndApplyTemplate "templates/default.html" archiveCtx
+                >>= relativizeUrls
+
+    -- Generate list of notes
+    create ["notes.html"] $ do
+        route idRoute
+        compile $ do
+            notes' <- loadAll notesMedecine
+            let archiveCtx =
+                    listField "notes" postCtx (return notes') `mappend`
+                    constField "title" "Notes"            `mappend`
+                    defaultContext
+
+            makeItem ""
+                >>= loadAndApplyTemplate "templates/notes.html" archiveCtx
                 >>= loadAndApplyTemplate "templates/default.html" archiveCtx
                 >>= relativizeUrls
 
@@ -78,3 +96,6 @@ postCtx :: Context String
 postCtx =
     dateField "date" "%B %e, %Y" `mappend`
     defaultContext
+
+withTOC :: WriterOptions
+withTOC = defaultHakyllWriterOptions { writerTableOfContents = True }
