@@ -19,7 +19,7 @@ notes = fromList . map (fromFilePath . ("notes/" ++ )) $
 notesMedecine = "notes/medecine/*.org"
 
 main :: IO ()
-main = hakyll $ do
+main = hakyllWith config $ do
     match ("images/microbiologie/*") $ do
         route   idRoute
         compile copyFileCompiler
@@ -96,6 +96,11 @@ postCtx :: Context String
 postCtx =
     dateField "date" "%B %e, %Y" `mappend`
     defaultContext
+
+-- Let hakyll manage deployment
+config = defaultConfiguration {
+  deployCommand = "tar cvzf site.tar.gz -C _site . && hut pages publish site.tar.gz -d scut.srht.site"
+  }
 
 withTOC :: WriterOptions
 withTOC = defaultHakyllWriterOptions { writerTableOfContents = True }

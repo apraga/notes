@@ -1,8 +1,16 @@
+Assuming hakyll hase been installed globally:
 
-    bash ./build.sh
-    
+    ghc --make ./site.hs
+ 
+Generate website 
+
+    ./site build
+
+Upload it 
+
+    ./site deploy
+
 Generate a local version
 
-    _shake/build watch
-    
-Note: assume Haskell packages have been installed locally
+    _site watch
+   
