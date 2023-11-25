@@ -417,7 +417,96 @@ Plus facile, à faire avant Elements... ?
 **** https://mlcourse.ai/book/index.html
 **** https://www.fast.ai/
 ** Article thèse :bisonex:
-[[id:feaee0cd-8bf7-45bb-851c-9e590e984985][Idées article]]
+Apport: formule "clé-en-main" pour valider de l'exome portable et reproductible
+*** Principe
+- valider appel de variant sur patients de références
+  - GIAB: FASTQ  (HG001 ...)
+  - CHM13
+  - gènes "medically relevant"
+- valider pipeline complet sur
+  - patient "de synthèse" avec insertion de variants connus
+  - données simulées (simuscop) avec liste de variants
+- outils pour
+  - télécharger et préparer les données
+  - comparer le résultat d'un pipeline aux données de références
+*** Méthode
+- environnement : - package avec Nix (reproductible, portable)
+- données récupérées avec nextflow
+  - pipeline nextflow  pour BAM -> FASTQ et lifter les VCF de référénce en hg38 si besoin
+*** KILL DataToolkit
+CLOSED: [2023-11-25 Sat 13:58]
+Le modèle est assez souple pour gérer les données et les transformations.
+Inconvénient principal:
+- principalement: pour des transformations complexes comme un liftover sur un .BED -> nextflow est plus adapté
+- moins adapté pour gérer une liste de données ? not. pour conversion bam -> fastq sur plusieurs fichiers (on ne peut pas réutiliser la function)
+
+Le dossier peut être changé avec https://tecosaur.github.io/DataToolkitDocs/common/stable/plugins/store/
+Pour simplement télécharger les données
+Utiliser driver = "passthrough"
+
+#+begin_src julia
+data_config_version = 0
+uuid = "5619f8bc-50b2-4899-832e-541ac9f66226"
+name = "exomevalidator"
+plugins = ["store", "defaults", "memorise"]
+
+[config.defaults.storage._]
+checksum = "auto"
+
+[[syndipCram]]
+uuid = "2546eb32-496d-4809-9561-676914813b00"
+description = "Raw data in CRAM for syndip using exome sequencing (Broad institute)"
+
+    [[syndipCram.storage]]
+    driver = "web"
+    checksum = "crc32c:975bd69f"
+    url = "https://storage.googleapis.com/broad-public-datasets/CHM1_CHM13_WES/CHMI_CHMI3_Nex1.cram"
+
+    [[syndipCram.loader]]
+    driver = "passthrough"
+    # For writing to a given file
+    #driver = "io->file"
+    #path = "lol.cram"
+
+[[syndipKit]]
+uuid = "fdaa3cea-903a-4430-99b6-aa117373e011"
+description = "Syndip kit with truth set, regions and executables for comparison"
+
+    [[syndipKit.storage]]
+    driver = "web"
+    checksum = "crc32c:1bfdadf7"
+    url = "https://github.com/lh3/CHM-eval/releases/download/v0.5/CHM-evalkit-20180222.tar"
+
+    [[syndipKit.loader]]
+    driver = "tar"
+
+#+end_src
+*** Questions
+- choix de l'outil global : nextflow ou julia ?
+  - nextflow :
+    - avantages: plus facile de traiter les données, permet de lancer des calculs long sur supercalculateur (bam -> fastq et happy), meilleure communauté
+  - inconvénients: gérer à la main les checksum, en théorie, pas besoin d'un supercalculateur, nettoyage de données à la main du WORK, pas vraiment un pipeline car 2 étapes
+  - julia:
+    - avantages: datatoolkit plus élégant, plus facile de publier, éviter le framework nextfolw (un peu lourd)
+    - inconvénient: peu adapté pour lancer sur un supercalculeur les transformation
+- Peut-on avoir un seul environnement (Julia ou nix) ?
+  - besoin de certains packages -> julia seul ne suffit pas nix
+  - packager julia avec nix ? pour le moment, on garde les 2
+    - attente de la PR
+    - https://github.com/JuliaCN/Julia2Nix.jl
+  - téléchargement avec nextflow seul ? Attente de cette PR pour le checksum dans nextflow
+https://github.com/nextflow-io/nextflow/pull/4415/commits/30163c7f8bdc071ba6698e41ec64064d4fa7109f
+- choix de l'outil d'insertion de variants
+  - safesim  ? https://github.com/genetronhealth/safesim Plus récent
+    https://www.sciencedirect.com/science/article/pii/S2352914823001533
+    Meilleure distribution VAF que varben mais seulement tumoral ?
+    Semble gérer indel
+  - varben : 2021, python2, à tester/packager https://www.sciencedirect.com/science/article/pii/S1525157820305857
+  - bamsurgeon : plante pour des données
+  - xamscissors : non fonctionnel pour indel
+- pipeline nf-core pour simulation en cours d'intégration : on se greffe dessus ?
+- tester tout clinvar avec simuscop et xamscissors ?
+
 ** TODO Review "Parallelization with Load Balancing of the Weather Model WSM7 for Heterogeneous CPU-GPU Platforms"
 SCHEDULED: <2023-11-25 Sat 15:00> DEADLINE: <2023-12-04 Mon>
 https://reviewer-feedback.springernature.com/feedback/11227/1405df9319bf5fb0dbbd4bacc8fe53b7/guidance
