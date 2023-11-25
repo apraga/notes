@@ -1,7 +1,4 @@
-:PROPERTIES:
-:ID:       0a17eb6d-a88e-4a07-b8af-8435e4086578
-:END:
-#+title: Physiologie hématopoïèse
+#+title: Hématologie
 #+filetags: personal medecine hémato
 
 - Durée de vie

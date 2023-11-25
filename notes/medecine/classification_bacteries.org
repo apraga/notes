@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       6b2bf94d-9539-4a64-b15b-9511aa90772c
-:END:
 #+title: Classification bactéries
 #+filetags: personal bacterio medecine
 

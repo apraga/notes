@@ -192,7 +192,6 @@
 #+latex_header_extra: \newglossaryentry{IPS}{name={Index de pression systolique},description={Pression systolique cheville/bras}}
 
 #+OPTIONS: H:5
-:END:
 
 * Cardiologie
 \def\arrow{$\rightarrow$}

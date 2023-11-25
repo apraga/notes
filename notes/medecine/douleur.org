@@ -2,9 +2,7 @@
 
 #+AUTHOR: Alexis Praga
 * Douleur
-  :PROPERTIES:
   :CUSTOM_ID: sec:orgc3e2804
-  :END:
 
 ** Divers
    :PROPERTIES:

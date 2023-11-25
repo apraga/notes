@@ -17,9 +17,7 @@
 \vspace*{-3cm}
 \begin{multicols}{2}
 * Général
-:PROPERTIES:
 :UNNUMBERED: t
-:END:
 - Trouble psy sévère, chronique et fréquent
 - Humeur, activité, énergie augmentées (manie) ou diminuées (dépression).
 - Souvent associé à d'autres troubles psy (troubles anxieux, addictifs) et non psy (CV, syndrome métabolique, etc.).

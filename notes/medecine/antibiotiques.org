@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       46dca88b-671f-4f23-a340-5dc564a48659
-:END:
 #+title: Antibiotiques
 #+filetags: personal medecine microbio
 * Cibles

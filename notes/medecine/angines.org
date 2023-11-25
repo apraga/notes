@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       aeb5952d-602e-4ec1-8ce2-304825668eb6
-:END:
 #+title: Angines
 #+filetags: personal medecine
 

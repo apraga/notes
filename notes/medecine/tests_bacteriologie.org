@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       54934a42-6e6b-4826-9c04-6452588c2e3d
-:END:
 #+title: Tests bactériologie
 #+filetags: personal medecine
 

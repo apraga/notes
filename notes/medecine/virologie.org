@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       6c2348f1-0081-44d2-974b-1642b20892b7
-:END:
 #+title: Virologie
 #+filetags: personal medecine
 * Clinique

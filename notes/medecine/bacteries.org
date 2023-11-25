@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       9160ba80-117b-4434-acc9-13676a534da0
-:END:
 #+title: Bactéries
 #+filetags: personal medecine
 * Staphylocoques

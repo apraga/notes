@@ -3213,7 +3213,7 @@ On se base sur
 
 ** Appel de variant
 *** TODO Biblio <(biblio appel variant)> <(appel variant)>
-SCHEDULED: <2023-11-22 Wed>
+SCHEDULED: <2023-11-25 Sat 11:00>
 *** TODO Figure: nombre de publication par appel de variant
 SCHEDULED: <2023-11-07 Tue>
 /Entered on/ [2023-09-19 Tue 08:43]
@@ -6399,7 +6399,7 @@ Mail alexis
 SCHEDULED: <2023-10-04 Wed>
 
 ***** TODO Rendre simplement le nombre de vrais positifs
-SCHEDULED: <2023-11-25 Sat>
+SCHEDULED: <2023-12-02 Sat>
 ***** KILL Mail Yannis
 CLOSED: [2023-07-08 Sat 10:44]
 ***** DONE Mail GIAB pour version T2T
@@ -6423,7 +6423,7 @@ CLOSED: [2023-08-12 Sat 15:55]
 *** TODO Platinum genome :platinum:
 https://emea.illumina.com/platinumgenomes.html
 **** TODO Tester sur la zone couverte par l'exome centogène
-SCHEDULED: <2023-11-25 Sat>
+SCHEDULED: <2023-12-02 Sat>
 *** DONE Séquencer NA12878 :cento:hg001:
 CLOSED: [2023-10-07 Sat 17:59]
 Discussion avec Paul : sous-traitant ne nous donnera pas les données, il faut commander l'ADN
@@ -6522,9 +6522,10 @@ CLOSED: [2023-11-19 Sun 23:43] SCHEDULED: <2023-11-18 Sat>
 **** KILL Run ERR1341796
 CLOSED: [2023-11-19 Sun 23:43] SCHEDULED: <2023-11-18 Sat>
 *** TODO Données exome Broad institute (nextflow)
+SCHEDULED: <2023-11-25 Sat 21:00>
 https://console.cloud.google.com/storage/browser/broad-public-datasets/CHM1_CHM13_WES;tab=objects?pli=1&prefix=&forceOnObjectsSortingFiltering=false
-*** TODO Télécharger VCF avec nextflow
-SCHEDULED: <2023-11-25 Sat>
+*** TODO Télécharger VCF
+SCHEDULED: <2023-11-26 Sun>
 https://github.com/lh3/CHM-eval/releases
 ** TODO Insilico :cento:
 *** TODO tous les variants centogène
@@ -8769,7 +8770,7 @@ Et on a trop de variants en sortie (7330 !)
 **** DONE Mail Paul avec résultats filtre en T2T + nouveau schéma
 CLOSED: [2023-09-17 Sun 23:15] SCHEDULED: <2023-09-17 Sun>
 ** TODO Medically relevant genes
-SCHEDULED: <2023-11-25 Sat>
+SCHEDULED: <2023-11-30 Thu>
 /Entered on/ [2023-10-18 Wed 22:37]
 * Ré-interprétation :reanalysis:
 ** DONE Lancer tests sur données brutes [225/250] <(samples.csv)>  <(runs.waiting)>
@@ -9302,7 +9303,7 @@ SCHEDULED: <2023-11-26 Sun>
 ** TODO Speed-up Hapotypecaller
 SCHEDULED: <2023-11-26 Sun>
 ** TODO Refaire statistics avec happy+ vcfeval
-SCHEDULED: <2023-11-25 Sat>
+SCHEDULED: <2023-11-30 Thu>
 /Entered on/ [2023-11-18 Sat 20:13]
 * Communication
 ** DONE Mail NGS-diag

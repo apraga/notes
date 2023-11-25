@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       7cc7020d-7ac1-42ad-8c90-3b534736924f
-:END:
 #+title: Méningites
 #+filetags: personal medecine  microbio
 

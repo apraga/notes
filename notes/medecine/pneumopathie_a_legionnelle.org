@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       ea96632b-27d0-4c90-9320-d2d648c62ead
-:END:
 #+title: Pneumopathie à Légionnelle
 #+filetags: personal medecine
 * Physiopathologie

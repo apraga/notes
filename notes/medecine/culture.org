@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       a8ad4c3b-9f08-4878-8d9d-febddae20069
-:END:
 #+title: Culture
 #+filetags: personal medecine bacterio
 * Culture

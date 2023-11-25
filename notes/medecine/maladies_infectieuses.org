@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       00e9454a-9a71-4fbd-bfde-0fdf323bce15
-:END:
 #+title: Maladies infectieuses
 #+filetags: personal medecine microbio
 - [[id:ea96632b-27d0-4c90-9320-d2d648c62ead][Pneumopathie à Légionnelle]]

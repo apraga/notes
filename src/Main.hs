@@ -7,6 +7,7 @@ import  Hakyll
 -- 1. Hakyll does not manage org metadata.
 -- 2. we have a custom filter to correct org-roam internal link
 --------------------------------------------------------------------------------
+notes = fromList $ ["notes/index.org" , "notes/japonais.org"]
 
 main :: IO ()
 main = hakyll $ do
@@ -30,6 +31,17 @@ main = hakyll $ do
             >>= loadAndApplyTemplate "templates/post.html"    postCtx
             >>= loadAndApplyTemplate "templates/default.html" postCtx
             >>= relativizeUrls
+
+    match notes $ do
+        route $ setExtension "html"
+        compile $ pandocCompiler
+            >>= relativizeUrls
+
+    match "notes/medecine/*.org" $ do
+        route $ setExtension "html"
+        compile $ pandocCompiler
+            >>= relativizeUrls
+
 
     -- Don't forget to set the path to temporary files
     create ["archive.html"] $ do

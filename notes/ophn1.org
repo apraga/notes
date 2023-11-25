@@ -1,3 +1,4 @@
+#+begin_src bibtex
 @article{cvetkovska2021,
 title = {Ophn1 regulation of prefrontal inhibition: A mechanism for stress susceptibility in intellectual disability},
 journal = {Neuron},
@@ -37,3 +38,4 @@ year = {2021}
   year={2020},
   publisher={Wolters Kluwer Health}
 }
+#+end_src

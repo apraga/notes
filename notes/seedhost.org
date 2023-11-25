@@ -1,0 +1,23 @@
+#+title: Seedhost
+#+filetags: personal
+i
+* Rtorrent config
+
+directory.default.set = ~/downloads
+schedule2 = watch.directory,5,5,load.start=~/downloads/watch/rtorrent/*.torrent
+network.port_range.set = YYYYY
+network.port_random.set =no
+pieces.hash.on_completion.set = no
+pieces.hash.on_completion.set = no
+trackers.use_udp.set = yes
+encryption = allow_incoming,enable_retry,try_outgoing
+dht.mode.set = disable
+protocol.pex.set = no
+network.http.ssl_verify_peer.set = 0
+encoding.add = UTF-8
+network.xmlrpc.size_limit.set = 2097152
+system.file.max_size.set = -1
+session.path.set = ZZZ
+network.bind_address.set = XXXX
+network.scgi.open_port = XXXX
+execute2 = YYYY

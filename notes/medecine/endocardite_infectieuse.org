@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       c4eaf677-0289-44a3-8223-98888ce157d1
-:END:
 #+title: Endocardite infectieuse
 #+filetags: personal medecine
 

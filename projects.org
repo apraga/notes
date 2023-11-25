@@ -74,27 +74,39 @@ SCHEDULED: <2023-11-27 Mon>
 Appel 2023-11-03: ouverture nouvelle ligne dans 9 jours
 RV demain
 **** WAIT Attestation box ?
-SCHEDULED: <2023-11-24 Fri>
+SCHEDULED: <2023-11-28 Tue>
 *** DONE Mail Mme Ossajedi poubelles
 CLOSED: [2023-11-21 Tue 22:53] SCHEDULED: <2023-11-27 Mon>
 /Entered on/ [2023-11-19 Sun 22:40]
 ** DONE Inscription fac 2023
-CLOSED: [2023-11-22 Wed 20:41] SCHEDULED: <2023-11-25 Sat>
+SCHEDULED: <2023-11-23 Thu>
 /Entered on/ [2023-11-10 Fri 16:58]
 *** DONE CVEC
 CLOSED: [2023-11-18 Sat 11:43]
 *** DONE UFR santé: mail envoyé car inscription impossible
 CLOSED: [2023-11-22 Wed 20:41] SCHEDULED: <2023-11-22 Wed>
+** DONE Demande remboursement essence formation IH
+CLOSED: [2023-11-25 Sat 11:26] SCHEDULED: <2023-11-24 Fri>
+/Entered on/ [2023-11-23 Thu 22:56]
+- EFS: non
+- CHU : renvoie vers trevenans
+** Hémato
+:PROPERTIES:
+:CATEGORY: hemato
+:END:
+*** TODO Cours UNESS
+SCHEDULED: <2023-11-25 Sat 19:00>
 * Japonais
 :PROPERTIES:
 :CATEGORY: japonais
 :END:
 ** TODO Intermediate japanase (Kluemper)
-SCHEDULED: <2023-11-24 Fri .+1d>
+SCHEDULED: <2023-11-25 Sat .+1d>
 :PROPERTIES:
 :STYLE:    habit
 :LAST_REPEAT: [2023-11-23 Thu 22:13]
 :END:
+- State "DONE"       from "TODO"       [2023-11-24 Fri 22:13]
 - State "DONE"       from "TODO"       [2023-11-23 Thu 22:13]
 - State "DONE"       from "TODO"       [2023-11-22 Wed 21:33]
 - State "DONE"       from "TODO"       [2023-11-21 Tue 21:45]
@@ -383,8 +395,8 @@ CLOSED: [2023-07-27 Thu 23:31]
 
 **** DONE Implémenter corrections article
 CLOSED: [2023-11-19 Sun 22:33] SCHEDULED: <2023-11-19 Sun>
-**** TODO Correction réponse reviewer +/ article (gain)
-SCHEDULED: <2023-11-23 Thu>
+**** DONE Correction réponse reviewer +/ article (gain)
+CLOSED: [2023-11-23 Thu 22:57] SCHEDULED: <2023-11-23 Thu>
 **** DONE Mail paul
 CLOSED: [2023-11-21 Tue 22:53] SCHEDULED: <2023-11-21 Tue>
 **** TODO Resoumettre
@@ -407,7 +419,7 @@ Plus facile, à faire avant Elements... ?
 ** Article thèse :bisonex:
 [[id:feaee0cd-8bf7-45bb-851c-9e590e984985][Idées article]]
 ** TODO Review "Parallelization with Load Balancing of the Weather Model WSM7 for Heterogeneous CPU-GPU Platforms"
-SCHEDULED: <2023-11-24 Fri> DEADLINE: <2023-12-04 Mon>
+SCHEDULED: <2023-11-25 Sat 15:00> DEADLINE: <2023-12-04 Mon>
 https://reviewer-feedback.springernature.com/feedback/11227/1405df9319bf5fb0dbbd4bacc8fe53b7/guidance
 Journal of supercomputing
 /Entered on/ [2023-11-21 Tue 22:56]
@@ -685,6 +697,9 @@ CLOSED: [2023-11-21 Tue 22:52] SCHEDULED: <2023-11-21 Tue>
 ** DONE Réserver location ski
 CLOSED: [2023-11-23 Thu 21:45] SCHEDULED: <2023-11-22 Wed>
 /Entered on/ [2023-11-22 Wed 22:04]
+** TODO Command minoxidil
+SCHEDULED: <2023-11-25 Sat 17:00>
+/Entered on/ [2023-11-25 Sat 11:30]
 * Voiture :voiture:
 ** Mazda 5
 :PROPERTIES:
