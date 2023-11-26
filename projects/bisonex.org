@@ -77,12 +77,15 @@ Problème : nécessite singularity ou docker (ou conda)
 Potentiellement utilisable avec nix...
 ** Validation : Quelles données de référence ?
 Discussion avec Alexis
-- Platinum genomes = génome seul
+*** KILL Platinum genomes = génome seul
+CLOSED: [2023-11-26 Sun 23:29]
+]] Que du génome « sequenced to 50x depth on a HiSeq 2000 system”
 *** [[https://github.com/genome-in-a-bottle/giab_data_indexes][Genome in a bottle]]
+**** Illumina
   - NA12878 :
     - Illumina HiSeq Exome : fastq + capture en hg37
     - Illumina TruSeq Exome : bam, pas de capture
-    - Exomes en hg37 https://zenodo.org/record/3597727 avec capture
+    - VCF en hg37 https://zenodo.org/record/3597727 mais avec capture. Raw data ne semblent pas être accessibles...
       - HiSeq2000
       - NextSeq 500
       - HiSeq 2500
@@ -94,15 +97,54 @@ Discussion avec Alexis
   "target region" +/- 50bp
     testé sur chr311780-312086 : ok
 
-Autres technologies non adaptées au pipeline (vu avec Alexis)
-*** [[https://www.illumina.com/platinumgenomes.html][Platinum genome
-]] Que du génome « sequenced to 50x depth on a HiSeq 2000 system”
-Genome possible
-*** 1000 genomes
+**** KILL Autres technologies : non adaptées au pipeline (vu avec Alexis)
+CLOSED: [2023-11-26 Sun 23:29]
+*** KILL 1000 genomes: trop compliqué pour capture
+CLOSED: [2023-11-26 Sun 23:52]
+- [[https://www.internationalgenome.org/data-portal/sample/NA12878][NA12878]]
+- Quelle capture ? Réponse ici https://www.internationalgenome.org/category/targets/
+  - ceux marqués "exons targetted" ont ce [[http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/pilot_data/technical/reference/][BED]] pour 1000 gènes
+  - ceux marqués exomes ont tout le CCDS (en hg19...)
+    - [[http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/exome_pull_down_targets/][BED pour phase 3]]
+    - [[http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/exome_pull_down_targets_phases1_and_2/][BED pour phase 1 ou 2]]
+- Librairie selon les centres : https://www.internationalgenome.org/category/exome/
+#+begin_quote
+- Baylor College of Medicine : NimbleGen SeqCap_EZ_Exome_v2 for its Solid based exome sequencing. For its more recent Illumina based exome sequencing it used a custom array HSGC VCRome.
+- The Broad Institute has used Agilent SureSelect_All_Exon_V2 (https://earray.chem.agilent.com/earray/ using ELID: S0293689).
+- The BGI used NimbleGen SeqCap EZ exome V1 for the phase 1 samples and NimbleGen SeqCap_EZ_Exome_v2 for phase 2 and 3 (the v1 files were obtained from BGI directly; they are discontinued from Nimblegen).
+- The Washington University Genome Center used Agilent SureSelect_All_Exon_V2 (https://earray.chem.agilent.com/earray/ using ELID: S0293689) for phase 1 and phase 2, and NimbleGen SeqCap_EZ_Exome v3 for phase 3
+#+end_quote
+- Un BED a été créé avec l' [[ http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/exome_pull_down_targets_phases1_and_2/README.20120518.exome.consensus][intersection des capture et CCDS]] Mais en GRCh37...
+
 - intersection des capture + CCDS  [[id:b77e64fa-06a8-4ffa-8b5b-ab3fda684b61][Données brutes exome 1000 Genomes (fastq + capture)]]
-- Broad instute : SureSelect human all exon v2 target capture kit : non disponible sur le site d'agilent (V6 ou plus)
-*** Zone de capture
-GIAB fourni le .bed pour l'exome . INfo : https://support.illumina.com/sequencing/sequencing_kits/nextera-rapid-capture-exome-kit/downloads.html
+*** TODO En cherchant dans SRA directement
+SCHEDULED: <2023-11-28 Tue>
+**** NA12878
+https://www.ncbi.nlm.nih.gov/sra avec NA12878 et en filtrant par exome
+- NovaSeq 6000 TruSeq capture SRX11061536
+- NovaSeq 6000 IDT capture SRX11061526
+- NovaSeq 6000 Agilent SureSelect v7 capture SRX11061516
+- HiSeq 4000 TruSeq capture SRX11061506
+- HiSeq 4000 IDT capture SRX11061496
+- HiSeq 4000 Agilent SureSelect v7 capture SRX11061486
+
+Note: SRX = expérience, SRR = run
+  Note trueseq non disponible ?
+  hg19 : https://www.biostars.org/p/144554/
+
+
+IDT: lequel
+https://www.idtdna.com/pages/products/next-generation-sequencing/workflow/xgen-ngs-hybridization-capture/pre-designed-hyb-cap-panels/exome-hyb-panel-v2
+*** TODO Run avec [cite:@hwang2015]
+SCHEDULED: <2023-11-28 Tue>
+HiSeq2000 SRR1611178 SeqCap EZ Human Exome Lib v3.0 WES 79.93×
+HiSeq2000 SRR1611179 SeqCap EZ Human Exome Lib v3.0 WES 79.84×
+HiSeq2000 SRR292250 SeqCap EZ Exome SeqCap v2 WES 116.06×
+HiSeq2000 SRR515199 SureSelect v4 WES 298.45×
+HiSeq2000 SRR098401 SureSelect v2 WES 116.84×
+HiSeq2500 SRR1611183 SeqCap EZ Human Exome Lib v3.0 WES 129.94×
+HiSeq2500 SRR1611184 SeqCap EZ Human Exome Lib v3.0 WES 111.90×
+*** Zone de capture GIAB fourni le .bed pour l'exome . INfo : https://support.illumina.com/sequencing/sequencing_kits/nextera-rapid-capture-exome-kit/downloads.html
 *** Valider la méthode
 - 1000 genomes + SureSelect human all exon v2 target capture kit : non disponible sur le site d'agilent (V6 ou plus)
   https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2928-9
@@ -5156,28 +5198,14 @@ Inconvénient :
 - format SRA (le lien pour les fastq n'est pas gratuit): utiliser HTTP ou leur toolkit (télécharge au format SRA puis convertit en fastq). Exemple: pour avoir 2 fastq 
   fastq-dump --split-files --gzip SRR2962669
 
+Important:
+- ne pas compresser la sortie avec fasta-dump directement (lent++)
+- Fasterq-dump est plus rapide
+
+
 ***** Liste des runs :
+Voir [[*En cherchant dans SRA directement][En cherchant dans SRA directement]]
 https://www.ncbi.nlm.nih.gov/sra
-
-Cherche avec numéro patient. On a le choix entre plusieurs séquenceurs Illumina
-- NovaSeq 6000 TruSeq capture SRX11061536
-- NovaSeq 6000 IDT capture SRX11061526
-- NovaSeq 6000 Agilent SureSelect v7 capture SRX11061516
-- HiSeq 4000 TruSeq capture SRX11061506
-- HiSeq 4000 IDT capture SRX11061496
-- HiSeq 4000 Agilent SureSelect v7 capture SRX11061486
-
-Note: SRX = expérience, SRR = run
-          Important:
-          - ne pas compresser la sortie avec fasta-dump directement (lent++)
-          - Fasterq-dump est plus rapide
-          
-  Note trueseq non disponible ?
-  hg19 : https://www.biostars.org/p/144554/
-
-
-IDT: lequel
-https://www.idtdna.com/pages/products/next-generation-sequencing/workflow/xgen-ngs-hybridization-capture/pre-designed-hyb-cap-panels/exome-hyb-panel-v2
 
 ***** DONE HiSeq 4000 + agilent sureselect :sra:
 CLOSED: [2023-06-28 Wed 22:06] SCHEDULED: <2023-06-28 Wed>
@@ -6434,9 +6462,14 @@ CLOSED: [2023-08-06 Sun 20:24] SCHEDULED: <2023-08-06 Sun>
 CLOSED: [2023-08-12 Sat 15:55]
 /Entered on/ [2023-08-03 Thu 12:42]
 **** TODO Re-télécharger proprement dans pipeline dédiés
+Cf [[*Validation : Quelles données de référence ?][Validation : Quelles données de référence ?]]
+https://medium.com/dnanexus/benchmarking-state-of-the-art-secondary-variant-calling-pipelines-5472ca6bace7
 Source:
 https://trace.ncbi.nlm.nih.gov/Traces/index.html?view=study&acc=SRP047086
 https://zenodo.org/records/3597727
+
+
+Selon https://github.com/genome-in-a-bottle/giab_data_indexes
 ***** TODO HG001 :hg001:
 SCHEDULED: <2023-11-26 Sun>
 ***** TODO HG002 :hg002:
