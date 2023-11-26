@@ -207,7 +207,7 @@ CLOSED: [2023-08-12 Sat 18:23] SCHEDULED: <2023-08-12 Sat 18:00>
 CLOSED: [2023-08-12 Sat 18:23] SCHEDULED: <2023-08-12 Sat 18:00>
 *** KILL Mise à jour T2T :T2T:
 *** WAIT Corriger PR
-SCHEDULED: <2023-11-26 Sun>
+SCHEDULED: <2023-12-03 Sun>
 ** TODO VEP :vep:
 *** DONE [[https://github.com/NixOS/nixpkgs/pull/185691][BioPerl]]
 SCHEDULED: <2022-08-10 Wed>
@@ -3215,7 +3215,7 @@ On se base sur
 *** DONE Biblio <(biblio appel variant)> <(appel variant)>
 CLOSED: [2023-11-25 Sat 23:29] SCHEDULED: <2023-11-25 Sat 11:00>
 *** TODO Finir biblio avec comparatifs [0/2]
-SCHEDULED: <2023-11-26 Sun>
+SCHEDULED: <2023-11-26 Sun 13:00>
 - [ ] [[file:~/research/bisonex/thesis/biblio.org::#Kumaran_2019][Performance assessment of variant calling pipelines using human whole exome sequencing and simulated data]]
 - [ ] [[file:~/research/bisonex/thesis/biblio.org::*Comparaison de pipeline][Comparaison de pipeline]]
 *** KILL Figure: nombre de publication par appel de variant
@@ -5050,7 +5050,8 @@ Capture Agilent
 | HG004   | happy     | SNP   | 0.905067 |  0.992704 |
 | HG004   | vcfeval   | indel |   0.8568 |    0.9240 |
 | HG004   | vcfeval   | snp   |   0.9048 |    0.9938 |
-**** TODO télécharger données avec Nextflow :hg38:
+**** DONE télécharger données avec Nextflow :hg38:
+CLOSED: [2023-11-26 Sun 12:30]
 ***** DONE Renommer les chromosomes
 CLOSED: [2023-02-17 Fri 19:30]
 ****** DONE Genome de reference NCBI
@@ -5070,7 +5071,8 @@ picard LiftOverIntervalList -I exons_illumina.list  -O exons_illumina_hg38.list 
 
 ***** KILL VCF de référence
 CLOSED: [2023-04-16 Sun 16:32]
-****** TODO NA12878 (HG001)
+****** DONE NA12878 (HG001)
+CLOSED: [2023-11-26 Sun 12:29]
 ******* DONE Fastq HiSeq
 CLOSED: [2023-02-25 Sat 19:46]
 On prend le Hiseq, qui est probablement ce qu'utilise Centogène :
@@ -5085,7 +5087,8 @@ Il y a 2 samples (NIST7035 et NIST7086), chacun sur 2 lanes -> à concaténer
 NB : liste techno illumina https://www.illumina.com/systems/sequencing-platforms.html
 
 Hiseq postérieur nextseq 550
-******* TODO Fastq hiseq sans trimming
+******* KILL Fastq hiseq sans trimming
+CLOSED: [2023-11-26 Sun 12:29]
 ******* DONE Capture : Exons (bed)
 CLOSED: [2023-02-25 Sat 19:46]
 https://ftp-trace.ncbi.nih.gov/ReferenceSamples/giab/data/NA12878/Garvan_NA12878_HG001_HiSeq_Exome/nexterarapidcapture_expandedexome_targetedregions.bed.gz
@@ -5190,7 +5193,8 @@ CLOSED: [2023-06-28 Wed 22:06] SCHEDULED: <2023-06-28 Wed>
 
 ******* DONE Capture agilent sureselect
 CLOSED: [2023-06-30 Fri 22:30] SCHEDULED: <2023-06-28 Wed>
-**** TODO Lift T2T :T2T:
+**** KILL Lift T2T :T2T:
+CLOSED: [2023-11-26 Sun 12:30]
 #+begin_quote
 We performed liftover using the GATK release 4.1.9 LiftoverVcf (Picard Version 2.23.3) tool with the default parameters. This successfully lifts over variants that map exactly from GRCh38 to T2T-CHM13v2.0 but does not recover variants with swapped reference and alternative alleles. To recover variants with swapped reference/alternative alleles, we ran LiftoverVCF again, with the RECOVER_SWAPPED_REF_ALT flag. Notably, this feature does not recover multiallelic variants, so to recover these variants, we first separated them into multiple biallelic variants, performed liftover using the RECOVER_SWAPPED_REF_ALT tag, and converted them back to their multiallelic representations.
 #+end_quote
@@ -6157,7 +6161,8 @@ CLOSED: [2023-08-03 Thu 23:24] SCHEDULED: <2023-08-03 Thu>
 #+begin_src
 ID="HG003-SRX11061488_SRR14724511-GRCh38" ; nextflow run workflows/compareVCF.nf -profile standard,helios --outdir=out/${ID} --query=out/${ID}/callVariant/haplotypecaller/${ID}.vcf.gz --compare=vcfeval,happy -lib lib --capture=capture/Agilent_SureSelect_All_Exons_v7_hg38_Regions.bed  --id=HG003 --genome=GRCh38
 #+end_src
-**** TODO HG004 :hg38:hg004:
+**** DONE HG004 :hg38:hg004:
+CLOSED: [2023-11-26 Sun 12:30]
 ***** Notes
 #+begin_src sh
 NXF_OPTS=-D"user.name=${USER}" nextflow run main.nf -profile standard,helios  --input /Work/Groups/bisonex/data/giab/GRCh38/HG004_{1,2}.fq.gz -bg
@@ -6409,9 +6414,12 @@ SCHEDULED: <2023-12-02 Sat>
 CLOSED: [2023-07-08 Sat 10:44]
 ***** DONE Mail GIAB pour version T2T
 CLOSED: [2023-07-07 Fri 18:37]
-**** TODO HG002 :hg002:T2T:
-**** TODO HG003 :hg003:T2T:
-**** TODO HG004 :hg004:T2T:
+**** KILL HG002 :hg002:T2T:
+CLOSED: [2023-11-26 Sun 12:30]
+**** KILL HG003 :hg003:T2T:
+CLOSED: [2023-11-26 Sun 12:30]
+**** KILL HG004 :hg004:T2T:
+CLOSED: [2023-11-26 Sun 12:30]
 **** DONE Plot : ashkenazim trio :hg38:
 CLOSED: [2023-07-30 Sun 16:49] SCHEDULED: <2023-07-30 Sun 15:00>
 :LOGBOOK:
@@ -6425,6 +6433,27 @@ CLOSED: [2023-08-06 Sun 20:24] SCHEDULED: <2023-08-06 Sun>
 **** DONE Relancer comparaison GIAB avec GATK 4.4.0
 CLOSED: [2023-08-12 Sat 15:55]
 /Entered on/ [2023-08-03 Thu 12:42]
+**** TODO Re-télécharger proprement dans pipeline dédiés
+Source:
+https://trace.ncbi.nlm.nih.gov/Traces/index.html?view=study&acc=SRP047086
+https://zenodo.org/records/3597727
+***** TODO HG001 :hg001:
+SCHEDULED: <2023-11-26 Sun>
+***** TODO HG002 :hg002:
+SCHEDULED: <2023-11-30 Thu>
+***** TODO HG003 :hg003:
+SCHEDULED: <2023-11-30 Thu>
+***** TODO HG004 :hg001:
+SCHEDULED: <2023-11-30 Thu>
+**** TODO Refaire les analyses pour avoir meilleurs résultats
+SCHEDULED: <2023-12-03 Sun>
+On veut les résultats de https://medium.com/dnanexus/benchmarking-state-of-the-art-secondary-variant-calling-pipelines-5472ca6bace7
+***** TODO hap.py avec conda
+SCHEDULED: <2023-12-03 Sun>
+***** TODO rtgveval
+SCHEDULED: <2023-12-03 Sun>
+***** TODO Relancer
+SCHEDULED: <2023-12-03 Sun>
 *** TODO Platinum genome :platinum:
 https://emea.illumina.com/platinumgenomes.html
 **** TODO Tester sur la zone couverte par l'exome centogène
@@ -6517,7 +6546,7 @@ CLOSED: [2023-10-07 Sat 17:59]
 /Entered on/ [2023-08-07 Mon 20:40]
 Twist exome
 *** PROJ Comparer happy et happy-vcfeval :giab:
-** TODO Données syndip (CHM-eval) : non car génome ! :syndip:
+** TODO Données syndip (CHM-eval) ! :syndip:
 https://github.com/lh3/CHM-eval
 *** KILL Données officielles : non car génome !!
 CLOSED: [2023-11-19 Sun 23:43]
@@ -6530,7 +6559,7 @@ CLOSED: [2023-11-19 Sun 23:43] SCHEDULED: <2023-11-18 Sat>
 SCHEDULED: <2023-11-25 Sat 21:00>
 https://console.cloud.google.com/storage/browser/broad-public-datasets/CHM1_CHM13_WES;tab=objects?pli=1&prefix=&forceOnObjectsSortingFiltering=false
 *** TODO Télécharger VCF
-SCHEDULED: <2023-11-26 Sun>
+SCHEDULED: <2023-12-01 Fri>
 https://github.com/lh3/CHM-eval/releases
 ** TODO Insilico :cento:
 *** TODO tous les variants centogène
@@ -8780,7 +8809,8 @@ SCHEDULED: <2023-11-30 Thu>
 ** TODO HG002 en T2T
 /Entered on/ [2023-11-25 Sat 17:58]
 https://github.com/marbl/HG002
-*** Tester les benchmark préliminaires
+*** TODO Tester les benchmark préliminaires
+SCHEDULED: <2023-12-26 Tue>
 https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/analysis/NIST_HG002_DraftBenchmark_defrabbV0.011-20230725/
 * Ré-interprétation :reanalysis:
 ** DONE Lancer tests sur données brutes [225/250] <(samples.csv)>  <(runs.waiting)>
@@ -9306,6 +9336,8 @@ zgrep '50721504' annotate/full/*63019340*.tsv
 *** TODO Sanger pour 4 VOUS manqués
 SCHEDULED: <2023-12-13 Wed>
 /Entered on/ [2023-11-13 Mon 22:40]
+** TODO Chercher nouveaux gènes
+SCHEDULED: <2023-12-06 Wed>
 * Résultats
 ** TODO Speed-up BWA-mem
 SCHEDULED: <2023-12-02 Sat>

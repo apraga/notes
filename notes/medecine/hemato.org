@@ -1,6 +1,6 @@
 #+title: Hématologie
 #+filetags: personal medecine hémato
-
+* Physiologie
 - Durée de vie
   - GR: 120 jours
   - plaquette 7 jours
@@ -29,3 +29,68 @@ Pour lignée lymphocytaire:
 - les lymphocytes B matures, après activationo avec antigène, se différencien en LB mémoire et en plasmocytes qui produisent les anticorps circulants.
 #+caption: lignée lymphocytaire
 [[file:../../images/hematologie/lymphoide.png]]
+* Hémostase
+- Facteurs dépendant vitamine K: II, VII, IX, X
+
+** Diminution TP
+#+BEGIN_SRC dot :file ../../images/tp-diminue.png :exports results
+digraph {
+node[shape=rectangle];
+subgraph { "II et X diminués" -> "hypo vitK" }
+subgraph { "tous diminués" -> "CIVD\nIHC\nfibrinogénolyse" }
+
+subgraph { "II ou V ou X\ndiminués" -> "congénital\nacquis" }
+subgraph {
+    "Fibrinogène\nII,V et X" -> {
+         "II ou V ou X\ndiminués"
+         "II et X diminués"
+         "tous diminués"
+                            }
+}
+subgraph {"II,VII ou X\ndiminué" -> "hypo vitK" }
+subgraph { "VII diminué" -> "Début AVK\nDébut carence vitK\nDéficit isolé" }
+subgraph { diminues2 [label = "tous diminués"];
+           diminues2 -> "IHC"}
+subgraph { "Fibrinogène\nII,V,VII ou X" -> {
+           "II,VII ou X\ndiminué"
+           "VII diminué"
+           diminues2
+           }
+            }
+subgraph { "TCA normal" -> "Fibrinogène\nII,V,VII ou X" }
+subgraph { "TCA allongé\nsans traitement" -> "Fibrinogène\nII,V et X" }
+"TP diminué" -> { "TCA normal"
+             "TCA allongé\nsans traitement" }
+}
+#+END_SRC
+
+#+RESULTS:
+[[file:../../images/tp-diminue.png]]
+
+** Augmentation isolée TCA sans traitement
+
+#+BEGIN_SRC dot :file ../../images/tca-diminue.png :exports results
+digraph {
+node[shape=rectangle];
+fact [label="VIII, IV, XI, XII"];
+
+subgraph {"VIII seul" -> "Willebrand\nHémophilie A\nHémophilie A acquise !"}
+subgraph {"IX seul" -> "Hémophilie B\nInhibiteur IX"}
+subgraph {"XI seul" -> "Infection\nGrosseses\nDéficit constit\nInhibiteur"}
+subgraph {"XII seul" -> "0 risque"}
+subgraph {" >= 2" -> "Infection\nInterférence ACC ?" }
+subgraph {"normaux" -> "ACC ?" }
+subgraph { fact -> {
+" >= 2"
+           "VIII seul"
+           "IX seul"
+           "XI seul"
+           "XII seul"
+           "normaux"
+                 }}
+"TCA allongé seul\nsans traitement" -> fact
+}
+#+END_SRC
+
+#+RESULTS:
+[[file:../../images/tca-diminue.png]]
