@@ -1,6 +1,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 import  Hakyll
 import qualified Text.Pandoc as Pandoc
+import Control.Monad (forM_)
 
 --------------------------------------------------------------------------------
 -- Important note :
@@ -15,10 +16,9 @@ notesTOC = [ "notes/medecine/bacteriologie.org"
 
 main :: IO ()
 main = hakyllWith config $ do
-    match (fromList ["images/*", "images/microbiologie/"]) $ do
+    forM_ ["images/*", "images/microbiologie/*"] $ \f -> match f $ do
         route   idRoute
         compile copyFileCompiler
-
     match "css/*.css" $ do
         route   idRoute
         compile compressCssCompiler
