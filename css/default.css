@@ -1,4 +1,4 @@
-/* From http://bettermotherfuckingwebsite.com/ */
+/* /\* From http://bettermotherfuckingwebsite.com/ *\/ */
 body{
   margin:20px auto;
   max-width:850px;
@@ -12,6 +12,9 @@ h1 { font-size:25px }
 h2 { font-size:22px }
 h1,h2,h3{line-height:1.2}
 
+/* // Code is by default larger */
+code { font-size:16px; }
+
 .nav {
   border-bottom: 0.1rem solid #000;
   margin-bottom: 3rem;
@@ -22,5 +25,4 @@ h1,h2,h3{line-height:1.2}
   text-decoration: none;
   color: inherit;
   padding-left: 1rem;
-}
 }
