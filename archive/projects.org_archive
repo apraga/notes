@@ -814,3 +814,55 @@ CLOSED: [2023-11-23 Thu 21:44] SCHEDULED: <2023-11-23 Thu>
 /Entered on/ [2023-10-01 Sun 21:31]
 Unable to parse git config
 cannot find git-annex
+
+* DONE Location (blackfriday)
+CLOSED: [2023-11-20 Mon 19:32] SCHEDULED: <2023-11-20 Mon>
+:PROPERTIES:
+:ARCHIVE_TIME: 2023-11-26 Sun 18:55
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Maison/Serveur/Seedbox
+:ARCHIVE_CATEGORY: seedbox
+:ARCHIVE_TODO: DONE
+:END:
+/Entered on/ [2023-11-20 Mon 18:29]
+
+* DONE Configurer rtorrent
+CLOSED: [2023-11-20 Mon 22:53] SCHEDULED: <2023-11-21 Tue>
+:PROPERTIES:
+:ARCHIVE_TIME: 2023-11-26 Sun 18:55
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Maison/Serveur/Seedbox
+:ARCHIVE_CATEGORY: seedbox
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE Tester 1 livres :mam:
+CLOSED: [2023-11-20 Mon 22:05] SCHEDULED: <2023-11-21 Tue>
+:PROPERTIES:
+:ARCHIVE_TIME: 2023-11-26 Sun 18:55
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Maison/Serveur/Seedbox
+:ARCHIVE_CATEGORY: seedbox
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE Ouvrir IP :mam:
+CLOSED: [2023-11-20 Mon 22:22] SCHEDULED: <2023-11-21 Tue>
+:PROPERTIES:
+:ARCHIVE_TIME: 2023-11-26 Sun 18:55
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Maison/Serveur/Seedbox
+:ARCHIVE_CATEGORY: seedbox
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE Vérifier connectivity :mam:
+CLOSED: [2023-11-20 Mon 22:22] SCHEDULED: <2023-11-21 Tue>
+:PROPERTIES:
+:ARCHIVE_TIME: 2023-11-26 Sun 18:55
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Maison/Serveur/Seedbox
+:ARCHIVE_CATEGORY: seedbox
+:ARCHIVE_TODO: DONE
+:END:
+/Entered on/ [2023-11-20 Mon 22:04]

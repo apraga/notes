@@ -11,7 +11,7 @@ import Control.Monad (forM_)
 --------------------------------------------------------------------------------
 
 notesTOC = [ "notes/medecine/bacteriologie.org"
-           , "notes/medecine/hématologie.org"
+           , "notes/medecine/hematologie.org"
            , "notes/medecine/virologie.org"]
 
 main :: IO ()

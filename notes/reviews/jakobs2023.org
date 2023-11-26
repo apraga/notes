@@ -1,0 +1,42 @@
+Commentaire général : féliciter pour reprendre le code et publier les résultats de manière honnête
+
+Contexte:
+- version 6 déjà parallélisée : en C (CPU ?): speed 216, avec opeacc (67) et CUDA (4-5)
+- version 7 : la grèle est une catégorie supplémentaire (et non pas simplement de la "neige roulée" -> pas clair, voir Bae 2018 [[file:~/research/biblio.org::*Development of a Single-Moment Cloud Microphysics Scheme with Prognostic Hail for the Weather Research and Forecasting (WRF) Model][Bae 2018]]] )
+#+begin_quote
+the WSM6 model is extended to a four-ice microphysics scheme by considering the
+hydrometeor hail as an additional category rather than solely relying on graupel.
+#+end_quote
+* Intro
+- Contexte: https://link.springer.com/article/10.1007/s13143-018-0066-3 Ajout de la grêle dans le modèle
+- Grille : régulière ? À préciser
+- Étendue du modèle (national probablement)
+* 3
+Argument sur le choix du C au lieu de Fortran n'est pas très clair
+#+begin_quote
+for this work the Fortran version is reimplemented in C++ using CUDA due
+to the extensive usage of object orientation for the creation of GPU tasks, which only
+can be represented insufficiently in Fortran based approaches like CUDA-Fortran.
+#+end_quote
+** Parallélisation :
+- comment sont réparties les tâches de calcul (1 colonne = 1 tache a priori) ? Simple pile ou algorithme plus compliqué ?
+#+begin_quote
+Each column can be simulated in parallel allowing for a simultane-
+ous calculation along the horizontal mesh points following the longitude and latitude
+coordinates
+#+end_quote
+Cette phrase peut être supprimée car redondante
+
+- Question: charge de calcul équilibrée horizontalement ? Et verticalement ? Il serait intéressant de voir la charge de calcul au cours du temps
+
+Figure 2 : type "Daten" -> data, type "direkt" -> direct
+* 4
+- WPS = ?
+CONUS = ?
+MM5 ?
+
+- Erreur : single float donc en-dessous du seuil ???
+
+Précision:
+- Comparaison entre Fortran et GPU: ok pour la non-régression mais par rapport aux observations ?? Le modèle a échoué à prédire (à vérifier) mais la version parallèle semble mieux prédite. Due à la meilleure précision ou artefact de la parallilésation ?
+- testé sur le modèle 2D de Bae et al 2018 ?

@@ -74,8 +74,8 @@ CLOSED: [2023-11-21 Tue 22:52] SCHEDULED: <2023-11-21 Tue>
 ** DONE Réserver location ski
 CLOSED: [2023-11-23 Thu 21:45] SCHEDULED: <2023-11-22 Wed>
 /Entered on/ [2023-11-22 Wed 22:04]
-** TODO Command minoxidil
-SCHEDULED: <2023-11-26 Sun>
+** DONE Command minoxidil
+CLOSED: [2023-11-26 Sun 21:56] SCHEDULED: <2023-11-26 Sun>
 /Entered on/ [2023-11-25 Sat 11:30]
 * Génétique
 ** Collège [0/32]
@@ -420,18 +420,19 @@ CLOSED: [2023-11-25 Sat 11:26] SCHEDULED: <2023-11-24 Fri>
 :CATEGORY: hemato
 :END:
 *** TODO Cours UNESS
-**** TODO Examens d'hémostase
-SCHEDULED: <2023-11-25 Sat 19:00>
+**** DONE Examens d'hémostase
+CLOSED: [2023-11-26 Sun 20:50] SCHEDULED: <2023-11-25 Sat 19:00>
 * Japonais
 :PROPERTIES:
 :CATEGORY: japonais
 :END:
 ** TODO Intermediate japanase (Kluemper)
-SCHEDULED: <2023-11-26 Sun .+1d>
+SCHEDULED: <2023-11-27 Mon .+1d>
 :PROPERTIES:
 :STYLE:    habit
-:LAST_REPEAT: [2023-11-25 Sat 22:37]
+:LAST_REPEAT: [2023-11-26 Sun 21:57]
 :END:
+- State "DONE"       from "TODO"       [2023-11-26 Sun 22:13]
 - State "DONE"       from "TODO"       [2023-11-25 Sat 22:13]
 - State "DONE"       from "TODO"       [2023-11-24 Fri 22:13]
 - State "DONE"       from "TODO"       [2023-11-23 Thu 22:13]
@@ -451,22 +452,16 @@ SCHEDULED: <2023-11-26 Sun .+1d>
 :PROPERTIES:
 :CATEGORY: seedbox
 :END:
-**** DONE Location (blackfriday)
-CLOSED: [2023-11-20 Mon 19:32] SCHEDULED: <2023-11-20 Mon>
-/Entered on/ [2023-11-20 Mon 18:29]
 **** TODO Re-partager musique :red:
 SCHEDULED: <2023-12-04 Mon>
 **** TODO Re-partager livres :mam:
 SCHEDULED: <2023-12-02 Sat>
-**** DONE Configurer rtorrent
-CLOSED: [2023-11-20 Mon 22:53] SCHEDULED: <2023-11-21 Tue>
-**** DONE Tester 1 livres :mam:
-CLOSED: [2023-11-20 Mon 22:05] SCHEDULED: <2023-11-21 Tue>
-**** DONE Ouvrir IP :mam:
-CLOSED: [2023-11-20 Mon 22:22] SCHEDULED: <2023-11-21 Tue>
-**** DONE Vérifier connectivity :mam:
-CLOSED: [2023-11-20 Mon 22:22] SCHEDULED: <2023-11-21 Tue>
-/Entered on/ [2023-11-20 Mon 22:04]
+**** TODO Convertir FLAC en mp3 V0 et 320
+ #+begin_src sh
+ perl ~/softwares/flac2mp3/flac2mp3.pl --preset=320 test test320
+ #+end_src
+***** DONE Jacques Amade
+CLOSED: [2023-11-26 Sun 19:13]
 * Moto
 :PROPERTIES:
 :CATEGORY: moto
@@ -868,8 +863,8 @@ CLOSED: [2023-11-19 Sun 22:33] SCHEDULED: <2023-11-19 Sun>
 CLOSED: [2023-11-23 Thu 22:57] SCHEDULED: <2023-11-23 Thu>
 **** DONE Mail paul
 CLOSED: [2023-11-21 Tue 22:53] SCHEDULED: <2023-11-21 Tue>
-**** TODO Correction v2 + envoi co-auteurs
-SCHEDULED: <2023-11-26 Sun>
+**** DONE Correction v2 + envoi co-auteurs
+CLOSED: [2023-11-26 Sun 18:54] SCHEDULED: <2023-11-26 Sun>
 **** TODO Resoumettre
 SCHEDULED: <2023-12-03 Sun>
 ** Apprendre le machine learning
