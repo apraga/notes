@@ -15,7 +15,7 @@ notesTOC = [ "notes/medecine/bacteriologie.org"
 
 main :: IO ()
 main = hakyllWith config $ do
-    match ("images/microbiologie/*") $ do
+    match (fromList ["images/*", "images/microbiologie/"]) $ do
         route   idRoute
         compile copyFileCompiler
 
