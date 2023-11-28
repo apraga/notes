@@ -147,10 +147,20 @@ HiSeq2500 SRR1611184 SeqCap EZ Human Exome Lib v3.0 WES 111.90×
 *** TODO Comment télécharger
 **** TODO ligne de commande
 SCHEDULED: <2023-11-28 Tue>
-***** TODO Tester aws
-SCHEDULED: <2023-11-28 Tue>
+***** KILL Tester aws
+CLOSED: [2023-11-28 Tue 23:47] SCHEDULED: <2023-11-28 Tue>
+Semble télécharger le .sra vu la taille (manque l'extension)
+#+begin_src
+aws s3 cp s3://sra-pub-run-odp/sra/SRR1611178/SRR1611178 --no-sign-request .
+#+end_src
 ***** TODO Tester sra faster dump
 SCHEDULED: <2023-11-28 Tue>
+Selon la doc https://github.com/ncbi/sra-tools/wiki/08.-prefetch-and-fasterq-dump, il faut faire un "pré" - téléchargement
+#+begin_src sh
+prefetch  SRR1611178
+fastqer-dump  SRR1611178
+#+end_src
+Note fasterq-dump créé un répertoire temporaire de la taille de prefetch et le supprime. Les fastq ne sont pas compressés
 **** TODO Nextflow
 SCHEDULED: <2023-11-29 Wed>
 ***** channel ok pour gros fichiers
