@@ -427,11 +427,13 @@ CLOSED: [2023-11-26 Sun 20:50] SCHEDULED: <2023-11-25 Sat 19:00>
 :CATEGORY: japonais
 :END:
 ** TODO Intermediate japanase (Kluemper)
-SCHEDULED: <2023-11-27 Mon .+1d>
+SCHEDULED: <2023-11-29 Wed .+1d>
 :PROPERTIES:
 :STYLE:    habit
-:LAST_REPEAT: [2023-11-26 Sun 21:57]
+:LAST_REPEAT: [2023-11-28 Tue 22:31]
 :END:
+- State "DONE"       from "TODO"       [2023-11-28 Tue 22:31]
+- State "DONE"       from "TODO"       [2023-11-27 Mon 22:31]
 - State "DONE"       from "TODO"       [2023-11-26 Sun 22:13]
 - State "DONE"       from "TODO"       [2023-11-25 Sat 22:13]
 - State "DONE"       from "TODO"       [2023-11-24 Fri 22:13]
@@ -596,6 +598,14 @@ Pas de réponse
 ***** DONE v0.1
 CLOSED: [2022-12-03 Sat 12:35] SCHEDULED: <2022-10-01 Sat>
 envoyé le <2022-10-11 Tue>
+*** TODO Récupérer clinique : courriers + IRM
+DEADLINE: <2023-12-01 Fri 11:00>
+/Entered on/ [2023-11-28 Tue 22:32]
+*** TODO Envoyer mémoire à Hakim
+SCHEDULED: <2023-12-05 Tue>
+/Entered on/ [2023-11-28 Tue 22:33]
+*** TODO Envoyer tableau + courriers à Hakim
+SCHEDULED: <2023-12-05 Tue>
 ** NF1
 :PROPERTIES:
 :CATEGORY: nf1

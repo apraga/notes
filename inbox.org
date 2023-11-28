@@ -1,1 +1,4 @@
 #+FILETAGS: inbox
+* TODO Récupérer clinique : courriers + IRM
+DEADLINE: <2023-12-01 Fri 11:00>
+/Entered on/ [2023-11-28 Tue 22:32]

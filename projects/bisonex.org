@@ -144,6 +144,18 @@ HiSeq2000 SRR515199 SureSelect v4 WES 298.45×
 HiSeq2000 SRR098401 SureSelect v2 WES 116.84×
 HiSeq2500 SRR1611183 SeqCap EZ Human Exome Lib v3.0 WES 129.94×
 HiSeq2500 SRR1611184 SeqCap EZ Human Exome Lib v3.0 WES 111.90×
+*** TODO Comment télécharger
+**** TODO ligne de commande
+SCHEDULED: <2023-11-28 Tue>
+***** TODO Tester aws
+SCHEDULED: <2023-11-28 Tue>
+***** TODO Tester sra faster dump
+SCHEDULED: <2023-11-28 Tue>
+**** TODO Nextflow
+SCHEDULED: <2023-11-29 Wed>
+***** channel ok pour gros fichiers
+**** TODO DataToolkit.jl avec storage "maison"
+SCHEDULED: <2023-11-28 Tue>
 *** Zone de capture GIAB fourni le .bed pour l'exome . INfo : https://support.illumina.com/sequencing/sequencing_kits/nextera-rapid-capture-exome-kit/downloads.html
 *** Valider la méthode
 - 1000 genomes + SureSelect human all exon v2 target capture kit : non disponible sur le site d'agilent (V6 ou plus)
@@ -289,7 +301,7 @@ Modification nécessaire pour kent :
 - suppression d'une boucle dans postPatch
 On supprime aussi NIX_BUILD_TOP
 **** WAIT Corriger PR biobigfile
-SCHEDULED: <2023-11-28 Tue>
+SCHEDULED: <2023-12-05 Tue>
 /Entered on/ [2023-10-15 Sun 17:21]
 *** DONE [[https://github.com/NixOS/nixpkgs/pull/186459][BioDBHTS]]
 CLOSED: [2023-05-06 Sat 08:49] SCHEDULED: <2023-04-15 Sat>

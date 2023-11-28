@@ -1,4 +1,8 @@
-Commentaire général : féliciter pour reprendre le code et publier les résultats de manière honnête
+Commentaires globaux :
+- féliciter pour reprendre le code et publier les résultats de manière honnête (important !)
+- Remarque globale : difficile parfois de voir l'apport par rapport au modèle existant
+- on reste sur notre faim pour la précision
+- pourquoi tester sur du GPU au final ? On "sait" qu'on va être limité par la mémoire
 
 Contexte:
 - version 6 déjà parallélisée : en C (CPU ?): speed 216, avec opeacc (67) et CUDA (4-5)
@@ -40,3 +44,27 @@ MM5 ?
 Précision:
 - Comparaison entre Fortran et GPU: ok pour la non-régression mais par rapport aux observations ?? Le modèle a échoué à prédire (à vérifier) mais la version parallèle semble mieux prédite. Due à la meilleure précision ou artefact de la parallilésation ?
 - testé sur le modèle 2D de Bae et al 2018 ?
+* 5 Résultats
+- Choix de la résolution : Correspond aux simulations réelles ? (400 points en latitue ~ 2km pour l'allemagne)
+- 5.3: comment est calculé le maximum speedup (mesure/calcul ? détailler dans les 2 cas)?
+- Fortran : déjà parallélisé donc ?
+- 4 threads = pas plus ?
+- performance inférieure du C
+- 5.3 : manque majuscule à "thus"
+- Pas clair : tâche dans quel sens ? Au lieu d'avoir une grosse boucle, on a des appels de fonctions dedans ? Ou bien sur des threads différentes ?
+  #+begin_quote
+In the C implementation, single calculation steps are described isolated from each other in separate tasks
+  #+end_quote
+- donner les compilateur fortran + C (et la version), ainsi que les flags
+
+5.4: maintenant la version "hôte"  est en Fortran et non en C ??? À préciser (semble être le cas avec la conclusion)
+#+begin_quote
+The heterogeneous approach utilizes the CPU
+through the Fortran implementation where one of the four threads starts the master
+thread for the GPU implementation.
+#+end_quote
+- De manière générale, chiffres sur un seul run ? À préciser
+- figure 11: low-pass filter = filtre sur variant de forte amplitude
+- les auteurs ont-il essayé de faire une moyenne "glissante" en modifiant la charge de calcul par rapport à un temps moyens, par exemple sur 100 itérations pour lisser ?
+* Conclusion
+- futur ? sur quelle architecture envisagent-ils de tourner en production ?
