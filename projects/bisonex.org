@@ -117,9 +117,9 @@ CLOSED: [2023-11-26 Sun 23:52]
 - Un BED a été créé avec l' [[ http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/exome_pull_down_targets_phases1_and_2/README.20120518.exome.consensus][intersection des capture et CCDS]] Mais en GRCh37...
 
 - intersection des capture + CCDS  [[id:b77e64fa-06a8-4ffa-8b5b-ab3fda684b61][Données brutes exome 1000 Genomes (fastq + capture)]]
-*** TODO En cherchant dans SRA directement
-SCHEDULED: <2023-11-28 Tue>
-**** NA12878
+*** TODO NA12878
+**** DONE En cherchant dans SRA directement
+CLOSED: [2023-11-29 Wed 23:37] SCHEDULED: <2023-11-28 Tue>
 https://www.ncbi.nlm.nih.gov/sra avec NA12878 et en filtrant par exome
 - NovaSeq 6000 TruSeq capture SRX11061536
 - NovaSeq 6000 IDT capture SRX11061526
@@ -129,24 +129,54 @@ https://www.ncbi.nlm.nih.gov/sra avec NA12878 et en filtrant par exome
 - HiSeq 4000 Agilent SureSelect v7 capture SRX11061486
 
 Note: SRX = expérience, SRR = run
-  Note trueseq non disponible ?
-  hg19 : https://www.biostars.org/p/144554/
+Note trueseq non disponible ?
+hg19 : https://www.biostars.org/p/144554/
 
 
 IDT: lequel
 https://www.idtdna.com/pages/products/next-generation-sequencing/workflow/xgen-ngs-hybridization-capture/pre-designed-hyb-cap-panels/exome-hyb-panel-v2
-*** TODO Run avec [cite:@hwang2015]
-SCHEDULED: <2023-11-28 Tue>
+**** DONE Run avec [cite:@hwang2015]
+CLOSED: [2023-11-29 Wed 23:37] SCHEDULED: <2023-11-28 Tue>
+HiSeq2000 SRR515199 SureSelect v4 WES 298.45×
+HiSeq2000 SRR098401 SureSelect v2 WES 116.84×
 HiSeq2000 SRR1611178 SeqCap EZ Human Exome Lib v3.0 WES 79.93×
 HiSeq2000 SRR1611179 SeqCap EZ Human Exome Lib v3.0 WES 79.84×
 HiSeq2000 SRR292250 SeqCap EZ Exome SeqCap v2 WES 116.06×
-HiSeq2000 SRR515199 SureSelect v4 WES 298.45×
-HiSeq2000 SRR098401 SureSelect v2 WES 116.84×
 HiSeq2500 SRR1611183 SeqCap EZ Human Exome Lib v3.0 WES 129.94×
 HiSeq2500 SRR1611184 SeqCap EZ Human Exome Lib v3.0 WES 111.90×
+
+Kit acessible ?
+**** Résumé
+Kit disponible en hg38
+| HiSeq 4000   | Agilent SureSelect v7 | SRX11061486 | https://github.com/kevinblighe/agilent |
+| NovaSeq 6000 | Agilent SureSelect v7 | SRX11061516 | idem                                   |
+Kit disponible en hg19
+| HiSeq2000 |  SeqCap EZ Human Exome Lib v3.0 | SRR1611178 |http://hgdownload.soe.ucsc.edu/gbdb/hg19/exomeProbesets/
+| HiSeq2000 |  SeqCap EZ Human Exome Lib v3.0 | SRR1611179 |idem
+| HiSeq2500 |  SeqCap EZ Human Exome Lib v3.0 | SRR1611183 |idem
+| HiSeq2500 |  SeqCap EZ Human Exome Lib v3.0 | SRR1611184 |idem
+
+https://emea.support.illumina.com/downloads/truseq-exome-product-files.html
+*** Liste de capture
+Agilent sureselect v7 hg19 et 38 https://github.com/kevinblighe/agilent
+**** UCSCS
+- [[http://hgdownload.soe.ucsc.edu/gbdb/hg19/exomeProbesets/][hg19]]
+- [[http://hgdownload.soe.ucsc.edu/gbdb/hg38/exomeProbesets/][hg38]]
+**** github aztrazeneca
+https://github.com/AstraZeneca-NGS/reference_data
+- IDT xGen Exome Research Panel v1.0
+- Agilent SureSelect Human All Exon V6
+- Agilent SureSelect Clinical Research Exome
+- Nimblegen SeqCap EZ MedExome
+- Nmblegen SeqCap EZ Exome v3
+**** Trueseq
+https://emea.support.illumina.com/downloads/truseq-exome-product-files.html
+*** Exemple de validation avec bcbio:
+Télécharge données + bed + liftover avec crossmap
+https://github.com/bcbio/bcbio_validation_workflows/blob/master/giab-exome/input/get_data.sh
 *** TODO Comment télécharger
-**** TODO Tester ligne de commande
-SCHEDULED: <2023-11-28 Tue>
+**** DONE Tester ligne de commande
+CLOSED: [2023-11-29 Wed 23:37] SCHEDULED: <2023-11-28 Tue>
 ***** KILL Tester aws
 CLOSED: [2023-11-28 Tue 23:47] SCHEDULED: <2023-11-28 Tue>
 Semble télécharger le .sra vu la taille (manque l'extension)
@@ -161,10 +191,12 @@ prefetch  SRR1611178
 fastqer-dump  SRR1611178
 #+end_src
 Note fasterq-dump créé un répertoire temporaire de la taille de prefetch et le supprime. Les fastq ne sont pas compressés
-***** TODO Passer par ENA qui donne un lien vers FTP directement
+***** DONE Passer par ENA qui donne un lien vers FTP directement
+CLOSED: [2023-11-29 Wed 23:37]
 **** TODO Nextflow
-SCHEDULED: <2023-11-29 Wed>
-***** TODO channel ok pour gros fichiers ?
+***** KILL fromSRA
+CLOSED: [2023-11-29 Wed 23:15]
+Ne renvoie pas le FTP pour SRR1611178/SRR1611178 même avec clé API
 **** TODO DataToolkit.jl
 SCHEDULED: <2023-11-28 Tue>
 - plusieurs datasets par patient appelé NA12878 par exemple mais avec attributs différents (séquencer, kit, pair1, pair2)
@@ -6487,6 +6519,8 @@ CLOSED: [2023-08-06 Sun 20:24] SCHEDULED: <2023-08-06 Sun>
 CLOSED: [2023-08-12 Sat 15:55]
 /Entered on/ [2023-08-03 Thu 12:42]
 **** TODO Re-télécharger proprement dans pipeline dédiés
+[[*Résumé][Résumé]]
+
 Cf [[*Validation : Quelles données de référence ?][Validation : Quelles données de référence ?]]
 https://medium.com/dnanexus/benchmarking-state-of-the-art-secondary-variant-calling-pipelines-5472ca6bace7
 Source:
@@ -6496,7 +6530,14 @@ https://zenodo.org/records/3597727
 
 Selon https://github.com/genome-in-a-bottle/giab_data_indexes
 ***** TODO HG001 :hg001:
-SCHEDULED: <2023-11-26 Sun>
+SCHEDULED: <2023-11-29 Wed>
+****** TODO Avec données en hg38
+SCHEDULED: <2023-11-29 Wed>
+[[*Résumé][Résumé]]
+****** TODO Avec données en hg19
+SCHEDULED: <2023-12-03 Sun>
+Utiliser crossmap ! https://crossmap.readthedocs.io/en/latest/ (inspiré de [[https://github.com/bcbio/bcbio_validation_workflows/blob/master/giab-exome/input/get_data.sh][bcbio]]
+pour vérifier
 ***** TODO HG002 :hg002:
 SCHEDULED: <2023-11-30 Thu>
 ***** TODO HG003 :hg003:

@@ -6921,3 +6921,6 @@ ih10, faible inclinaison, forêt. Arrêt pour cause d'ampoule
 - 3x4
 * <2023-11-26 Sun> Running
 53min avec 1 petite montée
+* <2023-11-29 Wed> Tricking
+540: travail cheat setup (20) et tornado (20)
+b-kick : jeté jambe 20
