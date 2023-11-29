@@ -145,7 +145,7 @@ HiSeq2000 SRR098401 SureSelect v2 WES 116.84×
 HiSeq2500 SRR1611183 SeqCap EZ Human Exome Lib v3.0 WES 129.94×
 HiSeq2500 SRR1611184 SeqCap EZ Human Exome Lib v3.0 WES 111.90×
 *** TODO Comment télécharger
-**** TODO ligne de commande
+**** TODO Tester ligne de commande
 SCHEDULED: <2023-11-28 Tue>
 ***** KILL Tester aws
 CLOSED: [2023-11-28 Tue 23:47] SCHEDULED: <2023-11-28 Tue>
@@ -153,19 +153,22 @@ Semble télécharger le .sra vu la taille (manque l'extension)
 #+begin_src
 aws s3 cp s3://sra-pub-run-odp/sra/SRR1611178/SRR1611178 --no-sign-request .
 #+end_src
-***** TODO Tester sra faster dump
-SCHEDULED: <2023-11-28 Tue>
+***** KILL Tester sra faster dump
+CLOSED: [2023-11-29 Wed 22:20] SCHEDULED: <2023-11-28 Tue>
 Selon la doc https://github.com/ncbi/sra-tools/wiki/08.-prefetch-and-fasterq-dump, il faut faire un "pré" - téléchargement
 #+begin_src sh
 prefetch  SRR1611178
 fastqer-dump  SRR1611178
 #+end_src
 Note fasterq-dump créé un répertoire temporaire de la taille de prefetch et le supprime. Les fastq ne sont pas compressés
+***** TODO Passer par ENA qui donne un lien vers FTP directement
 **** TODO Nextflow
 SCHEDULED: <2023-11-29 Wed>
-***** channel ok pour gros fichiers
-**** TODO DataToolkit.jl avec storage "maison"
+***** TODO channel ok pour gros fichiers ?
+**** TODO DataToolkit.jl
 SCHEDULED: <2023-11-28 Tue>
+- plusieurs datasets par patient appelé NA12878 par exemple mais avec attributs différents (séquencer, kit, pair1, pair2)
+- FTP depuis ENA (FTP)
 *** Zone de capture GIAB fourni le .bed pour l'exome . INfo : https://support.illumina.com/sequencing/sequencing_kits/nextera-rapid-capture-exome-kit/downloads.html
 *** Valider la méthode
 - 1000 genomes + SureSelect human all exon v2 target capture kit : non disponible sur le site d'agilent (V6 ou plus)

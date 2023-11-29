@@ -1,4 +1,5 @@
-Commentaires globaux :
+* Notes
+** Commentaires globaux :
 - féliciter pour reprendre le code et publier les résultats de manière honnête (important !)
 - Remarque globale : difficile parfois de voir l'apport par rapport au modèle existant
 - on reste sur notre faim pour la précision
@@ -11,30 +12,64 @@ Contexte:
 the WSM6 model is extended to a four-ice microphysics scheme by considering the
 hydrometeor hail as an additional category rather than solely relying on graupel.
 #+end_quote
-* Intro
-- Contexte: https://link.springer.com/article/10.1007/s13143-018-0066-3 Ajout de la grêle dans le modèle
-- Grille : régulière ? À préciser
-- Étendue du modèle (national probablement)
-* 3
-Argument sur le choix du C au lieu de Fortran n'est pas très clair
+** 1 Intro
+- SIMT : mettre acronymoe (single execution, multiple threads)
+- Dire que WSM7 est un modèle de microphysique seule ? La phre suivante prête à confusion
 #+begin_quote
-for this work the Fortran version is reimplemented in C++ using CUDA due
-to the extensive usage of object orientation for the creation of GPU tasks, which only
+The most recent model of this category is the WRF Single-Moment 7-class (WSM7) model
+#+end_quote
+- Grille : régulière ? À préciser
+- Préciser étendue du modèle (national probablement)
+- typo: ": A higher"
+- fusionner ces phrase
+#+begin_quote
+Additionally, the capabilities of GPUs can be utilized which allows
+for a hybrid CPU/GPU implementation of the WSM7 simulations. This requires an
+analysis of data structures and data transfers which introduces the additional pos-
+sibility of a hybrid execution on CPU and GPU.
+#+end_quote
+- fusionner
+#+begin_quote
+ the simulation is split into separate tasks for
+which the placement on CPU or GPU can be determined individually in each simula-
+tion time step. This allows for a dynamic load balancing mechanism to be introduced
+#+end_quote
+ex:
+#+begin_src
+ the simulation is split into separate tasks mapped to either CPU or GPU through a custom load-balancing algorithm
+#+end_src
+- La partie "In detail, this article provides the following contributions:" peut être fusionnée avec la structure de l'article.
+- Changer tasks -> model
+#+begin_quote
+ a C/CPU parallelization for the WSM7 tasks
+• a CUDA/GPU parallelization for the WSM7 tasks
+#+end_quote
+Notes:
+- la version en fortran est séquentielle
+- Contexte: https://link.springer.com/article/10.1007/s13143-018-0066-3 Ajout de la grêle dans le modèle
+** 2
+Speed-up: préciser que c'est pour le GPU et qu'il  fsemble être plus intéressant de la bibliography (ou dans l'introduction)
+** 3
+- Les 2 phrases peuvent être résumée en : "a custom dynamic load balancing method for heterogenous architecture is presented to achieve the lowest execution tme for each time step"
+#+begin_quote
+ Finally, a dynamic task distribution method is presented, which
+focuses on reaching the lowest possible execution time in every time step. In order to
+achieve this, the workload has to be distributed among the heterogeneous system such
+that the execution time of the components match.
+#+end_quote
+*** 3.1
+- C++ ? Remplacer les mentions de C dans le reste de l'article alors
+- Préciser la phrase suivante ("insufficiently" ?)
+#+begin_quote
+due to the extensive usage of object orientation for the creation of GPU tasks, which only
 can be represented insufficiently in Fortran based approaches like CUDA-Fortran.
 #+end_quote
-** Parallélisation :
-- comment sont réparties les tâches de calcul (1 colonne = 1 tache a priori) ? Simple pile ou algorithme plus compliqué ?
-#+begin_quote
-Each column can be simulated in parallel allowing for a simultane-
-ous calculation along the horizontal mesh points following the longitude and latitude
-coordinates
-#+end_quote
-Cette phrase peut être supprimée car redondante
-
-- Question: charge de calcul équilibrée horizontalement ? Et verticalement ? Il serait intéressant de voir la charge de calcul au cours du temps
-
-Figure 2 : type "Daten" -> data, type "direkt" -> direct
-* 4
+- Ce qui manque est la définition d'une tache au sens GPU (et CPU) : a priori, correspond à un ensemble de colonnes
+*** 3.2
+- Fig 2 : représentation de la donnée en mémoire ? à préciser dans la légende
+- À part les optimisations, les données ont-elles été resstructurées ?
+- Figure 2 : type "Daten" -> data, type "direkt" -> direct
+** 4
 - WPS = ?
 CONUS = ?
 MM5 ?
@@ -44,7 +79,7 @@ MM5 ?
 Précision:
 - Comparaison entre Fortran et GPU: ok pour la non-régression mais par rapport aux observations ?? Le modèle a échoué à prédire (à vérifier) mais la version parallèle semble mieux prédite. Due à la meilleure précision ou artefact de la parallilésation ?
 - testé sur le modèle 2D de Bae et al 2018 ?
-* 5 Résultats
+** 5 Résultats
 - Choix de la résolution : Correspond aux simulations réelles ? (400 points en latitue ~ 2km pour l'allemagne)
 - 5.3: comment est calculé le maximum speedup (mesure/calcul ? détailler dans les 2 cas)?
 - Fortran : déjà parallélisé donc ?
@@ -66,5 +101,32 @@ thread for the GPU implementation.
 - De manière générale, chiffres sur un seul run ? À préciser
 - figure 11: low-pass filter = filtre sur variant de forte amplitude
 - les auteurs ont-il essayé de faire une moyenne "glissante" en modifiant la charge de calcul par rapport à un temps moyens, par exemple sur 100 itérations pour lisser ?
-* Conclusion
+NB: regarder rapidement s'il y a des stratégies connnues de load balancing pour GPU
+** Conclusion
 - futur ? sur quelle architecture envisagent-ils de tourner en production ?
+- test autre algorithm de load balacing ? ex: J. Fang, J. Zhang, S. Lu and H. Zhao, "Exploration on Task Scheduling Strategy for CPU-GPU Heterogeneous Computing System," 2020 IEEE Computer Society Annual Symposium on VLSI (ISVLSI), Limassol, Cyprus, 2020, pp. 306-311, doi: 10.1109/ISVLSI49217.2020.00063.
+- étude de la charge de calcul spatialement pour adapter algorithme
+* Rapport
+** Key results
+# Please summarize what you consider to be the outstanding features of the work.
+** alidity
+# Does the manuscript have flaws which should prohibit its publication? If so, please provide details.
+** Originality and significance
+# If the conclusions are not original, please provide relevant references.
+** ata & methodology
+# Please comment on the validity of the approach, quality of the data and quality of presentation. Please note that we expect our reviewers to review all data, including any extended data and supplementary information. Is the reporting of data and methodology sufficiently detailed and transparent to enable reproducing the results?
+** Appropriate use of statistics and treatment of uncertainties
+# All error bars should be defined in the corresponding figure legends; please comment if that’s not the case. Please include in your report a specific comment on the appropriateness of any statistical tests, and the accuracy of the description of any error bars and probability values. Evaluation checklists can be found here.
+** Conclusions
+# Do you find that the conclusions and data interpretation are robust, valid and reliable?
+** Inflammatory material:
+# Does the manuscript contain any language that is inappropriate or potentially libelous?
+** Suggested improvements:
+# Please list suggestions that could help strengthen the work in a revision.
+** References:
+# Does this manuscript reference previous literature appropriately? If not, what references should be included or excluded? Attempts at reviewer-coerced citation will be noted against your record in our database.
+** Clarity and context:
+# Is the abstract clear, accessible? Are abstract, introduction and conclusions appropriate?
+** Please indicate any particular part of the manuscript, data, or analyses that you feel is outside the scope of your expertise, or that you were unable to assess fully.
+** Please address any other specific questions asked by the editor.
+** Please make sure to check if author(s) have followed our Sex and Gender in Research (SAGER Guidelines).
