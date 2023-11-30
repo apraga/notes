@@ -394,12 +394,12 @@ CLOSED: [2023-11-08 Wed 19:03] SCHEDULED: <2023-11-06 Mon>
 *** DONE Demander pour ouverture de ligne
     CLOSED: [2023-11-20 Mon 18:28] SCHEDULED: <2023-11-20 Mon>
     /Entered on/ [2023-11-05 Sun 14:56]
-*** TODO Résilier ancien contrat :internet:
-SCHEDULED: <2023-11-27 Mon>
+*** DONE Résilier ancien contrat :internet:
+CLOSED: [2023-11-30 Thu 19:15] SCHEDULED: <2023-11-27 Mon>
 Appel 2023-11-03: ouverture nouvelle ligne dans 9 jours
 RV demain
-**** WAIT Attestation box ?
-SCHEDULED: <2023-11-28 Tue>
+**** DONE Attestation box ?
+CLOSED: [2023-11-30 Thu 19:15] SCHEDULED: <2023-11-28 Tue>
 *** DONE Mail Mme Ossajedi poubelles
 CLOSED: [2023-11-21 Tue 22:53] SCHEDULED: <2023-11-27 Mon>
 /Entered on/ [2023-11-19 Sun 22:40]

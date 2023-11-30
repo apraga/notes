@@ -312,14 +312,15 @@ SCHEDULED: <2023-12-03 Sun>
 SCHEDULED: <2022-08-10 Wed>
 /Entered on/ [2022-08-09 Tue 10:57]
 PR submitted
-*** TODO BioDBBBigFile
+*** DONE BioDBBBigFile
+CLOSED: [2023-11-30 Thu 21:52]
 :PROPERTIES:
 :ORDERED:  t
 :END:
 /Entered on/ [2022-08-10 Wed 14:28]
 On utilise la dernière version de kent, donc plus de problème.
 PRête à être mergé. Rebase faite<2023-07-02 Sun>
-**** DONE Venrsion de kent déjà packagée : forcer version  335
+**** DONE Version de kent déjà packagée : forcer version  335
 CLOSED: [2023-07-02 Sun 11:20]
 ***** KILL [[https://github.com/NixOS/nixpkgs/pull/206991][Restore building kent 404]]
 CLOSED: [2023-05-06 Sat 17:40]
@@ -345,8 +346,8 @@ Modification nécessaire pour kent :
 - plus de patch
 - suppression d'une boucle dans postPatch
 On supprime aussi NIX_BUILD_TOP
-**** WAIT Corriger PR biobigfile
-SCHEDULED: <2023-12-05 Tue>
+**** DONE Corriger PR biobigfile
+CLOSED: [2023-11-30 Thu 21:52] SCHEDULED: <2023-12-05 Tue>
 /Entered on/ [2023-10-15 Sun 17:21]
 *** DONE [[https://github.com/NixOS/nixpkgs/pull/186459][BioDBHTS]]
 CLOSED: [2023-05-06 Sat 08:49] SCHEDULED: <2023-04-15 Sat>
@@ -360,6 +361,7 @@ Correction 2e passe, attente
 Impossible de faire marcher les tests Car il ne trouve pas le module Bio::Tools::Align, qui est dans un dossier ailleurs dans le dépôt. Même en compilant tout le dépôt, cela ne fonctionne pas... On skip les tests.
 
 *** TODO VEP
+SCHEDULED: <2023-12-07 Thu>
 
 ** WAIT [[https://github.com/NixOS/nixpkgs/pull/230394][rtg-tools]] :vcfeval:
 Soumis
@@ -1203,7 +1205,8 @@ CLOSED: [2022-10-21 Fri 21:59]
 Contribuer pull request
 *** DONE BioExtAlign
 CLOSED: [2022-10-22 Sat 00:38]
-*** WAIT BioBigFile
+*** DONE BioBigFile
+CLOSED: [2023-11-30 Thu 21:57]
 Revoir si on peut utliser kent dernière version
 Contribuer pull request
 *** HOLD rtg-tools
@@ -6539,11 +6542,11 @@ SCHEDULED: <2023-12-03 Sun>
 Utiliser crossmap ! https://crossmap.readthedocs.io/en/latest/ (inspiré de [[https://github.com/bcbio/bcbio_validation_workflows/blob/master/giab-exome/input/get_data.sh][bcbio]]
 pour vérifier
 ***** TODO HG002 :hg002:
-SCHEDULED: <2023-11-30 Thu>
+SCHEDULED: <2023-12-04 Mon>
 ***** TODO HG003 :hg003:
-SCHEDULED: <2023-11-30 Thu>
+SCHEDULED: <2023-12-04 Mon>
 ***** TODO HG004 :hg001:
-SCHEDULED: <2023-11-30 Thu>
+SCHEDULED: <2023-12-04 Mon>
 **** TODO Refaire les analyses pour avoir meilleurs résultats
 SCHEDULED: <2023-12-03 Sun>
 On veut les résultats de https://medium.com/dnanexus/benchmarking-state-of-the-art-secondary-variant-calling-pipelines-5472ca6bace7
@@ -8903,7 +8906,7 @@ Et on a trop de variants en sortie (7330 !)
 **** DONE Mail Paul avec résultats filtre en T2T + nouveau schéma
 CLOSED: [2023-09-17 Sun 23:15] SCHEDULED: <2023-09-17 Sun>
 ** TODO Medically relevant genes
-SCHEDULED: <2023-11-30 Thu>
+SCHEDULED: <2023-12-07 Thu>
 /Entered on/ [2023-10-18 Wed 22:37]
 ** TODO HG002 en T2T
 /Entered on/ [2023-11-25 Sat 17:58]
@@ -9444,7 +9447,7 @@ SCHEDULED: <2023-12-02 Sat>
 ** TODO Speed-up Hapotypecaller
 SCHEDULED: <2023-12-02 Sat>
 ** TODO Refaire statistics avec happy+ vcfeval
-SCHEDULED: <2023-11-30 Thu>
+SCHEDULED: <2023-12-04 Mon>
 /Entered on/ [2023-11-18 Sat 20:13]
 * Communication
 ** DONE Mail NGS-diag

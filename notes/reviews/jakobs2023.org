@@ -67,14 +67,23 @@ can be represented insufficiently in Fortran based approaches like CUDA-Fortran.
 - Ce qui manque est la définition d'une tache au sens GPU (et CPU) : a priori, correspond à un ensemble de colonnes
 *** 3.2
 - Fig 2 : représentation de la donnée en mémoire ? à préciser dans la légende
-- À part les optimisations, les données ont-elles été resstructurées ?
+- À part les données 4D, y a-t-il eu d'autres restructuration des données ?
 - Figure 2 : type "Daten" -> data, type "direkt" -> direct
+*** TODO 3.3
+Erreur dans le calcul du speedup ?
+Si \tilde{t_h} = \tild{t_D}, on devrait avoir
+S_dev = \fcra{p_dev}}{1-p_dev}
+donc
+Sdev - Sdev*pdev = pdev
+Sdev = (1+Sdev)*pdev
+Sdev/(1+Sdev) = pdev
 ** 4
-- WPS = ?
-CONUS = ?
+- WPS = WRF -preprocessing system : mettre acronyme
+- CONUS = mettre acronymerx?
 MM5 ?
-
-- Erreur : single float donc en-dessous du seuil ???
+- fig 4 et 5 : échelle différente en y donc moins lisible
+- figure 5 : mixing ratio à gauche ? et à droite ???
+- pourquoi seuil de 10^20 et 10^22 ?
 
 Précision:
 - Comparaison entre Fortran et GPU: ok pour la non-régression mais par rapport aux observations ?? Le modèle a échoué à prédire (à vérifier) mais la version parallèle semble mieux prédite. Due à la meilleure précision ou artefact de la parallilésation ?
@@ -90,7 +99,6 @@ Précision:
   #+begin_quote
 In the C implementation, single calculation steps are described isolated from each other in separate tasks
   #+end_quote
-- donner les compilateur fortran + C (et la version), ainsi que les flags
 
 5.4: maintenant la version "hôte"  est en Fortran et non en C ??? À préciser (semble être le cas avec la conclusion)
 #+begin_quote
