@@ -77,21 +77,30 @@ donc
 Sdev - Sdev*pdev = pdev
 Sdev = (1+Sdev)*pdev
 Sdev/(1+Sdev) = pdev
+
+Leur formule ne marche pas si speedup < 1
 ** 4
+*** 4.2
 - WPS = WRF -preprocessing system : mettre acronyme
 - CONUS = mettre acronymerx?
 MM5 ?
-- fig 4 et 5 : échelle différente en y donc moins lisible
-- figure 5 : mixing ratio à gauche ? et à droite ???
-- pourquoi seuil de 10^20 et 10^22 ?
-
-Précision:
-- Comparaison entre Fortran et GPU: ok pour la non-régression mais par rapport aux observations ?? Le modèle a échoué à prédire (à vérifier) mais la version parallèle semble mieux prédite. Due à la meilleure précision ou artefact de la parallilésation ?
-- testé sur le modèle 2D de Bae et al 2018 ?
+- Comment est défine "overall precipitation" ? Les auteurs semblent se baser dessus pour étudier l'absence d'impact sur l'overall donc à préciser
+  #+begin_quote
+So even though the C conversion might lead to small differences in the results for certain variables of interest, the overall effect on the simulated precipitation is negligible over single time steps.
+#+end_quote
+- comment l'utilisation de fonction en double récision a-t-elle modifiée les résultats (donner des valeurs et pas juste "still minor deviations")
+**** 4.3 Précision:
+- eComparaison entre Fortran et GPU: ok pour la non-régression mais lequel est le plus précis par rapport aux observations ? On s'attend à ce que la version parallèle soit "moins bonnes" mais elle prédit un peu plus de heavy rainfall (plus précis car double précision ?)
+- testé sur le modèle simple en 2D de Bae et al 2018 ?
 ** 5 Résultats
-- Choix de la résolution : Correspond aux simulations réelles ? (400 points en latitue ~ 2km pour l'allemagne)
+*** 5.2
+- Pourquoi gain est speedup est faible en doublant le nombre de points ?
 - 5.3: comment est calculé le maximum speedup (mesure/calcul ? détailler dans les 2 cas)?
-- Fortran : déjà parallélisé donc ?
+- Eclaircir
+#+begin_quote
+A higher number of CPU threads introduces a better overlapping of memory and computation tasks for the GPU but is not able to further reduce the runtime.
+#+end_quote
+
 - 4 threads = pas plus ?
 - performance inférieure du C
 - 5.3 : manque majuscule à "thus"

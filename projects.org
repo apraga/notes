@@ -599,8 +599,8 @@ Pas de réponse
 ***** DONE v0.1
 CLOSED: [2022-12-03 Sat 12:35] SCHEDULED: <2022-10-01 Sat>
 envoyé le <2022-10-11 Tue>
-*** TODO Récupérer clinique : courriers + IRM
-DEADLINE: <2023-12-01 Fri 11:00>
+*** DONE Récupérer clinique : courriers + IRM
+CLOSED: [2023-12-01 Fri 20:17] DEADLINE: <2023-12-01 Fri 11:00>
 /Entered on/ [2023-11-28 Tue 22:32]
 *** TODO Envoyer mémoire à Hakim
 SCHEDULED: <2023-12-05 Tue>
@@ -876,8 +876,8 @@ CLOSED: [2023-11-23 Thu 22:57] SCHEDULED: <2023-11-23 Thu>
 CLOSED: [2023-11-21 Tue 22:53] SCHEDULED: <2023-11-21 Tue>
 **** DONE Correction v2 + envoi co-auteurs
 CLOSED: [2023-11-26 Sun 18:54] SCHEDULED: <2023-11-26 Sun>
-**** TODO Resoumettre
-SCHEDULED: <2023-12-03 Sun>
+**** DONE Resoumettre
+CLOSED: [2023-12-01 Fri 20:21] SCHEDULED: <2023-12-03 Sun>
 ** Apprendre le machine learning
 :PROPERTIES:
 :CATEGORY: machine learning
