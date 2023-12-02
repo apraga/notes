@@ -94,6 +94,8 @@ So even though the C conversion might lead to small differences in the results f
 - testé sur le modèle simple en 2D de Bae et al 2018 ?
 ** 5 Résultats
 *** 5.2
+- Methodologie : comment est mesuré le temps d'exécution pour GPU ?
+- Important: fig7 speedup calculé par pas de temps ??? (notion de moyenne) -> qu'en est-il du temps total d'exécution ??
 - Pourquoi gain est speedup est faible en doublant le nombre de points ?
 - 5.3: comment est calculé le maximum speedup (mesure/calcul ? détailler dans les 2 cas)?
 - Eclaircir
@@ -101,8 +103,11 @@ So even though the C conversion might lead to small differences in the results f
 A higher number of CPU threads introduces a better overlapping of memory and computation tasks for the GPU but is not able to further reduce the runtime.
 #+end_quote
 
-- 4 threads = pas plus ?
-- performance inférieure du C
+# - 4 threads = pas plus ?
+*** 5.3
+- Problème : la version Fortran originale n'est pas parallisée mais est maintenant multi-threadée. Préciser dans 5.2 si c'est la version séquentielle utilisée et préciser ici que c'est une version parallilées (et comment ?)
+- L'étape sur GPU a-t-elle été désactivée pour cette comparaison sur le temps de calcul ?
+- Dans la discussion, préciser de quelle version en Fortran (séquentielle ou parallèle) notamment dans la conclusion
 - 5.3 : manque majuscule à "thus"
 - Pas clair : tâche dans quel sens ? Au lieu d'avoir une grosse boucle, on a des appels de fonctions dedans ? Ou bien sur des threads différentes ?
   #+begin_quote
