@@ -368,9 +368,9 @@ Soumis
 ** WAIT Package Spip https://github.com/NixOS/nixpkgs/pull/247476
 ** TODO Happy :happy:
 *** TODO PR python 3 upstream
-SCHEDULED: <2023-12-02 Sat>
+SCHEDULED: <2023-12-08 Fri>
 *** TODO nixpkgs en l'état
-SCHEDULED: <2023-12-02 Sat>
+SCHEDULED: <2023-12-08 Fri>
 ** PROJ SpliceAI
 ** TODO Bamsurgeon
 /Entered on/ [2023-05-13 Sat 19:11]
@@ -3325,7 +3325,7 @@ CLOSED: [2023-11-25 Sat 19:00] SCHEDULED: <2023-11-07 Tue>
 /Entered on/ [2023-09-19 Tue 08:43]
 Impossible d'utiliser pubmed car certains sont sur arxiv
 ** TODO Figure: nombre d'exomes par années
-SCHEDULED: <2023-12-02 Sat>
+SCHEDULED: <2023-12-08 Fri>
 /Entered on/ [2023-09-19 Tue 08:43]
 * Tests :tests:
 ** KILL Non régression : version prod
@@ -6497,7 +6497,7 @@ Mail alexis
 SCHEDULED: <2023-10-04 Wed>
 
 ***** TODO Rendre simplement le nombre de vrais positifs
-SCHEDULED: <2023-12-02 Sat>
+SCHEDULED: <2023-12-08 Fri>
 ***** KILL Mail Yannis
 CLOSED: [2023-07-08 Sat 10:44]
 ***** DONE Mail GIAB pour version T2T
@@ -6538,7 +6538,7 @@ SCHEDULED: <2023-11-29 Wed>
 SCHEDULED: <2023-11-29 Wed>
 [[*Résumé][Résumé]]
 ****** TODO Avec données en hg19
-SCHEDULED: <2023-12-03 Sun>
+SCHEDULED: <2023-12-10 Sun>
 Utiliser crossmap ! https://crossmap.readthedocs.io/en/latest/ (inspiré de [[https://github.com/bcbio/bcbio_validation_workflows/blob/master/giab-exome/input/get_data.sh][bcbio]]
 pour vérifier
 ***** TODO HG002 :hg002:
@@ -6551,15 +6551,15 @@ SCHEDULED: <2023-12-04 Mon>
 SCHEDULED: <2023-12-03 Sun>
 On veut les résultats de https://medium.com/dnanexus/benchmarking-state-of-the-art-secondary-variant-calling-pipelines-5472ca6bace7
 ***** TODO hap.py avec conda
-SCHEDULED: <2023-12-03 Sun>
+SCHEDULED: <2023-12-10 Sun>
 ***** TODO rtgveval
-SCHEDULED: <2023-12-03 Sun>
+SCHEDULED: <2023-12-10 Sun>
 ***** TODO Relancer
-SCHEDULED: <2023-12-03 Sun>
+SCHEDULED: <2023-12-10 Sun>
 *** TODO Platinum genome :platinum:
 https://emea.illumina.com/platinumgenomes.html
 **** TODO Tester sur la zone couverte par l'exome centogène
-SCHEDULED: <2023-12-02 Sat>
+SCHEDULED: <2023-12-08 Fri>
 *** DONE Séquencer NA12878 :cento:hg001:
 CLOSED: [2023-10-07 Sat 17:59]
 Discussion avec Paul : sous-traitant ne nous donnera pas les données, il faut commander l'ADN
@@ -6658,7 +6658,7 @@ CLOSED: [2023-11-19 Sun 23:43] SCHEDULED: <2023-11-18 Sat>
 **** KILL Run ERR1341796
 CLOSED: [2023-11-19 Sun 23:43] SCHEDULED: <2023-11-18 Sat>
 *** TODO Données exome Broad institute (nextflow)
-SCHEDULED: <2023-12-03 Sun>
+SCHEDULED: <2023-12-10 Sun>
 https://console.cloud.google.com/storage/browser/broad-public-datasets/CHM1_CHM13_WES;tab=objects?pli=1&prefix=&forceOnObjectsSortingFiltering=false
 *** TODO Télécharger VCF
 SCHEDULED: <2023-12-01 Fri>
@@ -8876,7 +8876,7 @@ VEP chooses one block of annotation per variant, using an ordered set of criteri
 **** DONE Mail alexis
 CLOSED: [2023-08-20 Sun 13:45] SCHEDULED: <2023-08-20 Sun>
 **** TODO Données simuscop 200x
-SCHEDULED: <2023-12-02 Sat>
+SCHEDULED: <2023-12-08 Fri>
 **** DONE En T2T avec liftover (filtre = spip) : ok mais lent et trop de variants :tests:
 CLOSED: [2023-09-17 Sun 17:13] SCHEDULED: <2023-09-17 Sun>
 1. Conversion en bed
@@ -9442,10 +9442,10 @@ SCHEDULED: <2023-12-13 Wed>
 SCHEDULED: <2023-12-06 Wed>
 * Résultats
 ** TODO Speed-up BWA-mem
-SCHEDULED: <2023-12-02 Sat>
+SCHEDULED: <2023-12-08 Fri>
 
 ** TODO Speed-up Hapotypecaller
-SCHEDULED: <2023-12-02 Sat>
+SCHEDULED: <2023-12-08 Fri>
 ** TODO Refaire statistics avec happy+ vcfeval
 SCHEDULED: <2023-12-04 Mon>
 /Entered on/ [2023-11-18 Sat 20:13]
@@ -9453,3 +9453,8 @@ SCHEDULED: <2023-12-04 Mon>
 ** DONE Mail NGS-diag
 CLOSED: [2023-10-06 Fri 08:04] SCHEDULED: <2023-10-06 Fri>
 /Entered on/ [2023-10-04 Wed 19:33]
+* Presentations
+** TODO Abstract FOSDEM 2024
+DEADLINE: <2023-12-07 Thu> SCHEDULED: <2023-12-04 Mon>
+/Entered on/ [2023-12-03 Sun 23:17]
+https://pretalx.fosdem.org/fosdem-2024/submit/SLegDF/questions/

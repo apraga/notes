@@ -459,15 +459,15 @@ SCHEDULED: <2023-12-02 Sat .+1d>
 **** TODO Re-partager musique :red:
 SCHEDULED: <2023-12-04 Mon>
 **** TODO Re-partager livres :mam:
-SCHEDULED: <2023-12-02 Sat>
+SCHEDULED: <2023-12-17 Sun>
 **** TODO Convertir FLAC en mp3 V0 et 320
  #+begin_src sh
  perl ~/softwares/flac2mp3/flac2mp3.pl --preset=320 test test320
  #+end_src
 ***** DONE Jacques Amade
 CLOSED: [2023-11-26 Sun 19:13]
-** TODO Renvoyer équipements box
-SCHEDULED: <2023-12-02 Sat>
+** DONE Renvoyer équipements box
+CLOSED: [2023-12-03 Sun 23:19] SCHEDULED: <2023-12-02 Sat>
 /Entered on/ [2023-12-02 Sat 11:58]
 * Moto
 :PROPERTIES:
@@ -995,6 +995,7 @@ SCHEDULED: <2023-11-25 Sat 15:00> DEADLINE: <2023-12-04 Mon>
 https://reviewer-feedback.springernature.com/feedback/11227/1405df9319bf5fb0dbbd4bacc8fe53b7/guidance
 Journal of supercomputing
 /Entered on/ [2023-11-21 Tue 22:56]
+https://reviewer-feedback.springernature.com/feedback/11227/1405df9319bf5fb0dbbd4bacc8fe53b7/guidance
 * Santé
 * Voiture :voiture:
 ** Mazda 5

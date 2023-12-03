@@ -1,0 +1,4 @@
+* Charger un script
+#+begin_src python
+exec(open("test.py").read())
+#+end_src

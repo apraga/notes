@@ -1,6 +1,15 @@
 #+title: Nushell
 #+filetags: cs
 
+* Intégration
+** TODO Doom-emacs
+** Python avec virtual env
+Installer virtualenv, exemple avec `emerge virtualenv` puis
+#+begin_src
+virtualenv myenv
+overlay use myenv/bin/activate.nu
+pip install osmnx
+#+end_src
 * Exemples de scripts
 ** Pandoc sur une liste de fichier
 org -> markdown
