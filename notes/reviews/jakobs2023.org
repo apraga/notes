@@ -1,5 +1,140 @@
 #+options: author:nil
-* Notes
+#+title: Review
+#+subtitle: Parallelization with Load Balancing of the Weather Model WSM7 for Heterogeneous CPU-GPU Platforms
+* Key results
+# Please summarize what you consider to be the outstanding features of the work.
+Latest microphysics model WSM from the WRF framework is ported to an heterogenous architecture CPU/GPU using Fortran and CUDA. Accuracy is assessed in a real-world setup. With a custom load balancing, GPU performances evaluated through speedup achieve reasonable gains compared to previous models.
+* Validity
+# Does the manuscript have flaws which should prohibit its publication? If so, please provide details.
+No major flaws were found. However, the paper would profit from clarifying several points (see Data & metholodology).
+* Originality and significance
+The author gives an honest feedback for the difficult task of porting a code to a new architecture.
+Their results are of interest for the atmospheric community as it provides valuable input for the role of GPU hardware in newer codes.
+# If the conclusions are not original, please provide relevant references.
+* Data & methodology
+Regarding reproducibility, is the code for WSM7 available online ? Without it, results cannot be reproduced. Otherwise, compiler and architectures are properly specified. Several points below could be cleared up for methodology.
+** Section 3
+In Section 3.2, a "task" is never defined properly in the text.
+In general, the strategy for multi-threading on the CPU is not explained. It looks like a "task" is attributed to a thread and manage multiple vertical columns. As there are many algorithms for partioning a mesh into multiple tasks so defining the authors' strategy would improve the paper.
+
+In Section 3.3, for speedup < 1, Eq. (2) yields $p_{dev} < 1$. Shouldn't Eq. (2) instead be
+$$p_{dev} = \frac{S_{dev}}{S_{dev} + 1} $$
+?
+
+The following sentence could be more explicit: how is it "insufficient" ?
+#+begin_quote
+due to the extensive usage of object orientation for the creation of GPU tasks, which only
+can be represented insufficiently in Fortran based approaches like CUDA-Fortran.
+#+end_quote
+
+** Section 4
+In Section 4.2, How did the switch to double precision affect precision (Fig. 4 and 5) ? Also, how is defined overall precipitation, in contrast to time step wise precipitation ?
+
+Was the parallel model tested on a simple analytical test case (like the 2D model of Bae et al, 2018) ?
+
+In Section 4.3, the authors rightly did a non-regression test for the GPU version by comparing to the sequential model. However, accuracy needs to be assessed by comparing simulation results to observations. Did the GPU version result in a more accurate result due to double precision ?
+** Section 5
+In Section 5.2, it would be helpful to know how GPU execution time is measured. In Fig. 7, is the speedup computed per time-step ? If that is the case, are results similar for total running time on the GPU ?
+
+In Section 5.3, is the maximum speedup computed or measured ?
+
+It seems there is a sequential version of the Fortran code ("original implementation") and a multi-threaded version. In section 5.3 and elsewhere, it should be clearer which version is used.
+
+Regarding running times on the host, how was it computed (disabling computation on GPU altogether ?) ?
+
+A very surprising result is that:
+#+begin_quote
+In the C implementation, single calculation steps are described isolated from each other in separate tasks. thus, the compiler is not able to perform optimization across multiple steps but only within a single task".
+#+end_quote
+This point needs to be clarified: is it simply a different code structure (using functions instead of a loop) or a different algorithm ?
+# Please comment on the validity of the approach, quality of the data and quality of presentation. Please note that we expect our reviewers to review all data, including any extended data and supplementary information. Is the reporting of data and methodology sufficiently detailed and transparent to enable reproducing the results?
+* Appropriate use of statistics and treatment of uncertainties
+Yes
+# All error bars should be defined in the corresponding figure legends; please comment if that’s not the case. Please include in your report a specific comment on the appropriateness of any statistical tests, and the accuracy of the description of any error bars and probability values. Evaluation checklists can be found here.
+* Conclusions
+# Do you find that the conclusions and data interpretation are robust, valid and reliable?
+Conclusions are valid and reliable.
+* Inflammatory material
+No inappropriate language.
+# Does the manuscript contain any language that is inappropriate or potentially libelous?
+* Suggested improvements
+The main points have been listed in Data & methodology. Here are additional suggestions.
+
+In the introduction,  the following sentence could be improved by specifying WSM7 is a microphysics model:
+#+begin_quote
+The most recent model of this category is the WRF Single-Moment 7-class (WSM7) model
+#+end_quote
+If the model uses a regular latitude-longitude grid, it could be added there. Also the scope of the model (national/European) could be added too.
+
+In Section 5.2, the following sentence needs to be clearer about the notion of "better overlapping"
+#+begin_quote
+A higher number of CPU threads introduces a better overlapping of memory and computation tasks for the GPU but is not able to further reduce the runtime.
+#+end_quote
+
+In section 2 or in the introduction, it could be stressed the current literature is in favor of GPU regarding speedup for this model.
+
+In the conclusion, if the authors want to open up the discussion, it would be interesting to discuss the future of this code, especially the architecture used in production. Load balancing is also a difficult issue and other strategies could be tested in later papers. For example by averaging load over several time steps or with strageties from the literature, like Fang et al 2020 [fn:1]. Studying how load is balanced on the grid and its evolution over time would also be informative.
+
+** Writing suggestions
+Below are some recommandation regarding the writing.
+
+In the introduction, the following two sentences could be merged for clarity
+#+begin_quote
+Additionally, the capabilities of GPUs can be utilized which allows for a hybrid CPU/GPU implementation of the WSM7 simulations. This requires an analysis of data structures and data transfers which introduces the additional possibility of a hybrid execution on CPU and GPU.
+
+the simulation is split into separate tasks for which the placement on CPU or GPU can be determined individually in each simulation time step. This allows for a dynamic load balancing mechanism to be introduced
+#+end_quote
+A possible write-up could be:
+#+begin_quote
+ In the C implementation, single calculation steps are described
+isolated from each other in separate tasks. Thus, the compiler is not able to perform
+optimization across multiple steps but only within a single task
+#+end_quote
+
+In the introduction, please replace "task" by "model" in
+#+begin_quote
+- a C/CPU parallelization for the WSM7 tasks
+- a CUDA/GPU parallelization for the WSM7 tasks
+#+end_quote
+Also, the paragraph beginning with "In detail, this article provides the following contributions:" could be merged with the presentation of the outline.
+
+In section 3, the following sentence
+#+begin_quote
+ Finally, a dynamic task distribution method is presented, which
+focuses on reaching the lowest possible execution time in every time step. In order to
+achieve this, the workload has to be distributed among the heterogeneous system such
+that the execution time of the components match.
+#+end_quote
+could be simplified to
+#+begin_quote
+a custom dynamic load balancing method for heterogenous architecture is presented to achieve the lowest execution time for each time step
+#+end_quote
+In section 3.1, please replace C++ by C if that's correct.
+
+Acronyms are not defined for:
+- SIMT (single execution, multiple threads) in the introduction,
+- WPS = WRF -preprocessing system  in 4.2
+- CONUS in 4.2
+
+Typographical erors
+- introduction \textit{: a higher} should be lower case
+- Section 4.2, figure 2 : replace /Daten/ by data and /direkt/ by direct
+- Section 5.3 : /thus/ should be upper case
+# Please list suggestions that could help strengthen the work in a revision.
+* References
+Literature is referenced accordingly. If the authors have some references for load balancing strategies, it could be added.
+# Does this manuscript reference previous literature appropriately? If not, what references should be included or excluded? Attempts at reviewer-coerced citation will be noted against your record in our database.
+* Clarity and context
+Astract, introduction and conclusion are appropriate.
+# Is the abstract clear, accessible? Are abstract, introduction and conclusions appropriate?
+# ** Please indicate any particular part of the manuscript, data, or analyses that you feel is outside the scope of your expertise, or that you were unable to assess fully.
+
+* Footnotes
+
+[fn:1]
+  J. Fang, J. Zhang, S. Lu and H. Zhao, "Exploration on Task Scheduling Strategy for CPU-GPU Heterogeneous Computing System," 2020 IEEE Computer Society Annual Symposium on VLSI (ISVLSI), Limassol, Cyprus, 2020, pp. 306-311, doi: 10.1109/ISVLSI49217.2020.00063.
+
+* Notes :noexport:
 ** Commentaires globaux :
 - féliciter pour reprendre le code et publier les résultats de manière honnête (important !)
 - Remarque globale : difficile parfois de voir l'apport par rapport au modèle existant
@@ -131,143 +266,3 @@ thread for the GPU implementation.
   - les auteurs ont-il essayé de faire une moyenne "glissante" en modifiant la charge de calcul par rapport à un temps moyens, par exemple sur 100 itérations pour lisser ?
   - test autre algorithm de load balacing ? ex: J. Fang, J. Zhang, S. Lu and H. Zhao, "Exploration on Task Scheduling Strategy for CPU-GPU Heterogeneous Computing System," 2020 IEEE Computer Society Annual Symposium on VLSI (ISVLSI), Limassol, Cyprus, 2020, pp. 306-311, doi: 10.1109/ISVLSI49217.2020.00063.
 - étude de la charge de calcul spatialement pour adapter algorithme
-* Review
-** Key results
-# Please summarize what you consider to be the outstanding features of the work.
-The authors present the results of porting of the latest microphysics model from the WRF framework to an heterogenous architecture CPU/GPU using Fortran and CUDA. Load balancing is done with a custom strategy. Accuracy and performance are highlighted.
-** Validity
-# Does the manuscript have flaws which should prohibit its publication? If so, please provide details.
-No major flaws were found. However, the paper would profit from clarifying several points (see Data & metholodology).
-** Originality and significance
-The author gives an honest feedback for the difficult task of porting a code to a new architecture.
-Their results are of interest for the atmospheric community as it provides valuable input for the role of GPU hardware in newer codes.
-# If the conclusions are not original, please provide relevant references.
-** Data & methodology
-Regarding reproductibility, is the code for WSM7 available online ? Without it, results cannot be reproduced. Otherwise, compiler and architectures are properly specified. Several points below could be cleared up precised for methodology.
-*** Section 3
-In Section 3.2 : a "task" is never defined properly in the text. Is it a set of columns allocated to a thread ?
-
-Implementing multi-threading on the CPU is not explained. Balancing the workload (i.e vertical columns) is not a trivial problem so more details would be helpful.
-- Section 3.3 : for speedup < 1, Eq. (2) yield $p_{dev} < 1$. Shouldn't Eq. (2) be instead
-$$p_{dev} = \frac{S_{dev}}{S_{dev} + 1} $$
-?
-
-The following sentence could be more explicit: how is it "insufficient" ?
-#+begin_quote
-due to the extensive usage of object orientation for the creation of GPU tasks, which only
-can be represented insufficiently in Fortran based approaches like CUDA-Fortran.
-#+end_quote
-
-*** Section 4
-In Section 4.2, How did the switch to double precision affect precision (Fig. 4 and 5) ? Also, how is defined overall precipitation, in contrast to time step wise precipitation ?
-
-In Section 4.3, the authors rightly did a non-regression test for the GPU version. However, it was not compared to real-world observation in the accuraccy assessment. Did the GPU version result in a more accurate result due to double precision ?
-Also, was the parallel model testing on a simple analytical test case (like the 2D model of Bae et al, 2018) ?
-*** Section 5
-In Section 5.2, how is measured the GPU execution time ? In Fig. 7, is the speedup computed per time-step ? If that is the case, are results similar for total running time on the GPU ?
-
-In Section 5.3, is the maximum speedup computed or measured ?
-
-It seems there are 2 fortran versions of the code : one sequential ("original implementation") and a multi-threaded one. In section 5.3 and elsewhere, it should be clearer which version it is.
-
-For the running times presented here, was computation on the GPU disabled ?
-
-The authors claim that
-#+begin_quote
-In the C implementation, single calculation steps are described isolated from each other in separate tasks. thus, the compiler is not able to perform optimization across multiple steps but only within a single task".
-#+end_quote
-This point needs to be clarified: is it simply a different code structure (using functions instead of a loop) or a different algorithm ?
-# Please comment on the validity of the approach, quality of the data and quality of presentation. Please note that we expect our reviewers to review all data, including any extended data and supplementary information. Is the reporting of data and methodology sufficiently detailed and transparent to enable reproducing the results?
-** Appropriate use of statistics and treatment of uncertainties
-Yes
-# All error bars should be defined in the corresponding figure legends; please comment if that’s not the case. Please include in your report a specific comment on the appropriateness of any statistical tests, and the accuracy of the description of any error bars and probability values. Evaluation checklists can be found here.
-** Conclusions
-# Do you find that the conclusions and data interpretation are robust, valid and reliable?
-Conclusions are valid and reliable.
-** Inflammatory material:
-No inappropriate language.
-# Does the manuscript contain any language that is inappropriate or potentially libelous?
-** Suggested improvements:
-The main points have been listed in Data & methodology. Here are additional suggestions.
-
-In the introduction, it should be said that WSM7 is a microphysics model as this sentence may not be clear enough
-#+begin_quote
-The most recent model of this category is the WRF Single-Moment 7-class (WSM7) model
-#+end_quote
-If the model uses a regular latitude-longitude grid, it could be added there. Also the scope of the model (national/european) could be added too.
-
-In Section 5.2 : the following sentencs needs to be clearer about the notion of "better overlapping"
-#+begin_quote
-A higher number of CPU threads introduces a better overlapping of memory and computation tasks for the GPU but is not able to further reduce the runtime.
-#+end_quote
-
-In section 2 or in the introduction, it could be stressed the current literature is in favor of GPU regarding speedup for this model.
-
-In the conclusion, if the authors want to open up the discussion, it would be interesting to discuss the future of this code, especially the architecture used in production. Load balancing is also a difficult issue and other strategies could be tested in later papers. For example by averaging load over several time steps or with strageties from the literature, like Fang et al 2020 [fn:1]. Studying load repartion on the grid and its evolution would also be informative.
-
-*** Writing suggestions
-
-Below are some recommandation regarding the writing.
-
-In the introduction, the following two sentences could be merged for clarity
-#+begin_quote
-Additionally, the capabilities of GPUs can be utilized which allows
-for a hybrid CPU/GPU implementation of the WSM7 simulations. This requires an
-analysis of data structures and data transfers which introduces the additional pos-
-sibility of a hybrid execution on CPU and GPU.
-#+end_quote
-and
-#+begin_quote
- the simulation is split into separate tasks for
-which the placement on CPU or GPU can be determined individually in each simula-
-tion time step. This allows for a dynamic load balancing mechanism to be introduced
-#+end_quote
-For example:
-#+begin_quote
- In the C implementation, single calculation steps are described
-isolated from each other in separate tasks. thus, the compiler is not able to perform
-optimization across multiple steps but only within a single task
-#+end_quote
-
-In the introduction, please change task to model in
-#+begin_quote
-- a C/CPU parallelization for the WSM7 tasks
-- a CUDA/GPU parallelization for the WSM7 tasks
-#+end_quote
-Also, the paragraph beginning with "In detail, this article provides the following contributions:" could be merged with the presentation of the outline.
-
-In section 3, the following sentence
-#+begin_quote
- Finally, a dynamic task distribution method is presented, which
-focuses on reaching the lowest possible execution time in every time step. In order to
-achieve this, the workload has to be distributed among the heterogeneous system such
-that the execution time of the components match.
-#+end_quote
-could be simplified to
-#+begin_quote
-a custom dynamic load balancing method for heterogenous architecture is presented to achieve the lowest execution tme for each time step
-#+end_quote
-In section 3.1, please replace C++ by C if that's correct.
-
-Acronyms are not defined for
-- SIMT (single execution, multiple threads) in the introduction,
-- WPS = WRF -preprocessing system  in 4.2
-- CONUS in 4.2
-
-Typographical erors
-- introduction ": a higher" should be lower case
-- Section 4.2, figure 2 : replace "Daten" by data and "direkt" by direct
-- Section 5.3 : "thus" should be upper case
-# Please list suggestions that could help strengthen the work in a revision.
-** References:
-Literature is referenced accordingly. If the authors have some references for load balancing strategies, it could be added.
-# Does this manuscript reference previous literature appropriately? If not, what references should be included or excluded? Attempts at reviewer-coerced citation will be noted against your record in our database.
-** Clarity and context:
-Astract, introduction and conclusion are appropriate.
-# Is the abstract clear, accessible? Are abstract, introduction and conclusions appropriate?
-# ** Please indicate any particular part of the manuscript, data, or analyses that you feel is outside the scope of your expertise, or that you were unable to assess fully.
-
-* Footnotes
-
-[fn:1]
-  J. Fang, J. Zhang, S. Lu and H. Zhao, "Exploration on Task Scheduling Strategy for CPU-GPU Heterogeneous Computing System," 2020 IEEE Computer Society Annual Symposium on VLSI (ISVLSI), Limassol, Cyprus, 2020, pp. 306-311, doi: 10.1109/ISVLSI49217.2020.00063.
