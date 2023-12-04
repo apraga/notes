@@ -193,7 +193,8 @@ fastqer-dump  SRR1611178
 Note fasterq-dump créé un répertoire temporaire de la taille de prefetch et le supprime. Les fastq ne sont pas compressés
 ***** DONE Passer par ENA qui donne un lien vers FTP directement
 CLOSED: [2023-11-29 Wed 23:37]
-**** TODO Nextflow
+**** KILL Nextflow
+CLOSED: [2023-12-04 Mon 23:46]
 ***** KILL fromSRA
 CLOSED: [2023-11-29 Wed 23:15]
 Ne renvoie pas le FTP pour SRR1611178/SRR1611178 même avec clé API
@@ -201,6 +202,33 @@ Ne renvoie pas le FTP pour SRR1611178/SRR1611178 même avec clé API
 SCHEDULED: <2023-11-28 Tue>
 - plusieurs datasets par patient appelé NA12878 par exemple mais avec attributs différents (séquencer, kit, pair1, pair2)
 - FTP depuis ENA (FTP)
+- "meta"-dataset for the 2 fastq. Ex:
+  #+begin_src toml
+
+[[data1]]
+uuid = "4ac8e6a5-9430-4745-8027-551fa620c2a8"
+description = "1"
+
+    [[data1.storage]]
+    driver = "filesystem"
+    checksum = "crc32c:96646914"
+    path = "1.txt"
+
+    [[data1.loader]]
+    driver = "io->file"
+    path = "lol.txt"
+
+[[sequence]]
+uuid = "adbaa0af-71fc-43f1-aa5d-408e9c2dc5be"
+
+    [[sequence.storage]]
+    driver = "raw"
+    value = { forward = "📇DATASET<<data1::DataToolkitBase.FilePath>>"}
+
+    [[sequence.loader]]
+    driver = "passthrough"
+
+  #+end_src
 *** Zone de capture GIAB fourni le .bed pour l'exome . INfo : https://support.illumina.com/sequencing/sequencing_kits/nextera-rapid-capture-exome-kit/downloads.html
 *** Valider la méthode
 - 1000 genomes + SureSelect human all exon v2 target capture kit : non disponible sur le site d'agilent (V6 ou plus)
@@ -9447,7 +9475,7 @@ SCHEDULED: <2023-12-08 Fri>
 ** TODO Speed-up Hapotypecaller
 SCHEDULED: <2023-12-08 Fri>
 ** TODO Refaire statistics avec happy+ vcfeval
-SCHEDULED: <2023-12-04 Mon>
+SCHEDULED: <2023-12-11 Mon>
 /Entered on/ [2023-11-18 Sat 20:13]
 * Communication
 ** DONE Mail NGS-diag
