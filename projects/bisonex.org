@@ -306,7 +306,7 @@ CLOSED: [2023-08-12 Sat 18:23] SCHEDULED: <2023-08-12 Sat 18:00>
 CLOSED: [2023-08-12 Sat 18:23] SCHEDULED: <2023-08-12 Sat 18:00>
 *** KILL Mise à jour T2T :T2T:
 *** WAIT Corriger PR
-SCHEDULED: <2023-12-03 Sun>
+SCHEDULED: <2023-12-18 Mon>
 ** TODO VEP :vep:
 *** DONE [[https://github.com/NixOS/nixpkgs/pull/185691][BioPerl]]
 SCHEDULED: <2022-08-10 Wed>
@@ -6542,13 +6542,13 @@ SCHEDULED: <2023-12-10 Sun>
 Utiliser crossmap ! https://crossmap.readthedocs.io/en/latest/ (inspiré de [[https://github.com/bcbio/bcbio_validation_workflows/blob/master/giab-exome/input/get_data.sh][bcbio]]
 pour vérifier
 ***** TODO HG002 :hg002:
-SCHEDULED: <2023-12-04 Mon>
+SCHEDULED: <2023-12-09 Sat>
 ***** TODO HG003 :hg003:
-SCHEDULED: <2023-12-04 Mon>
+SCHEDULED: <2023-12-09 Sat>
 ***** TODO HG004 :hg001:
-SCHEDULED: <2023-12-04 Mon>
+SCHEDULED: <2023-12-09 Sat>
 **** TODO Refaire les analyses pour avoir meilleurs résultats
-SCHEDULED: <2023-12-03 Sun>
+SCHEDULED: <2023-12-09 Sat>
 On veut les résultats de https://medium.com/dnanexus/benchmarking-state-of-the-art-secondary-variant-calling-pipelines-5472ca6bace7
 ***** TODO hap.py avec conda
 SCHEDULED: <2023-12-10 Sun>

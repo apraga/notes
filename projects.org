@@ -403,6 +403,10 @@ CLOSED: [2023-11-30 Thu 19:15] SCHEDULED: <2023-11-28 Tue>
 *** DONE Mail Mme Ossajedi poubelles
 CLOSED: [2023-11-21 Tue 22:53] SCHEDULED: <2023-11-27 Mon>
 /Entered on/ [2023-11-19 Sun 22:40]
+*** TODO Réparer frigo
+SCHEDULED: <2023-12-07 Thu>
+Mail envoyé 2023-12-04
+/Entered on/ [2023-12-04 Mon 20:40]
 ** DONE Inscription fac 2023
 SCHEDULED: <2023-11-23 Thu>
 /Entered on/ [2023-11-10 Fri 16:58]
@@ -427,11 +431,13 @@ CLOSED: [2023-11-26 Sun 20:50] SCHEDULED: <2023-11-25 Sat 19:00>
 :CATEGORY: japonais
 :END:
 ** TODO Intermediate japanase (Kluemper)
-SCHEDULED: <2023-12-02 Sat .+1d>
+SCHEDULED: <2023-12-04 Mon .+1d>
 :PROPERTIES:
 :STYLE:    habit
 :LAST_REPEAT: [2023-11-29 Wed 23:16]
 :END:
+- State "DONE"       from "TODO"       [2023-12-03 Sun 23:16]
+- State "DONE"       from "TODO"       [2023-12-02 Sat 23:16]
 - State "DONE"       from "TODO"       [2023-12-01 Fri 23:16]
 - State "DONE"       from "TODO"       [2023-11-29 Wed 23:16]
 - State "DONE"       from "TODO"       [2023-11-28 Tue 22:31]
@@ -457,7 +463,7 @@ SCHEDULED: <2023-12-02 Sat .+1d>
 :CATEGORY: seedbox
 :END:
 **** TODO Re-partager musique :red:
-SCHEDULED: <2023-12-04 Mon>
+SCHEDULED: <2023-12-11 Mon>
 **** TODO Re-partager livres :mam:
 SCHEDULED: <2023-12-17 Sun>
 **** TODO Convertir FLAC en mp3 V0 et 320
@@ -990,8 +996,8 @@ https://github.com/nextflow-io/nextflow/pull/4415/commits/30163c7f8bdc071ba6698e
 - pipeline nf-core pour simulation en cours d'intégration : on se greffe dessus ?
 - tester tout clinvar avec simuscop et xamscissors ?
 
-** TODO Review "Parallelization with Load Balancing of the Weather Model WSM7 for Heterogeneous CPU-GPU Platforms"
-SCHEDULED: <2023-11-25 Sat 15:00> DEADLINE: <2023-12-04 Mon>
+** DONE Review "Parallelization with Load Balancing of the Weather Model WSM7 for Heterogeneous CPU-GPU Platforms"
+CLOSED: [2023-12-04 Mon 20:39] SCHEDULED: <2023-11-25 Sat 15:00> DEADLINE: <2023-12-04 Mon>
 https://reviewer-feedback.springernature.com/feedback/11227/1405df9319bf5fb0dbbd4bacc8fe53b7/guidance
 Journal of supercomputing
 /Entered on/ [2023-11-21 Tue 22:56]
