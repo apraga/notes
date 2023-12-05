@@ -12,24 +12,24 @@ Manuscript : https://www.nature.com/articles/s41587-019-0054-x.epdf?author_acces
 Article comparant les variant calling : https://www.biorxiv.org/content/10.1101/2020.12.11.422022v1.full.pdf
 **** Tester le séquencage aussi
 Depuis un fastq correspondant à Illumina  https://github.com/genome-in-a-bottle/giab_data_indexes
-   puis on compare le VCF avec les "high confidence"
+puis on compare le VCF avec les "high confidence"
 On séquence directement NA12878 -> inutile pour le pipeline seul
 **** Tester seul la partie bioinformatique
-   Tout résumé ici : https://www.nist.gov/programs-projects/genome-bottle
+Tout résumé ici : https://www.nist.gov/programs-projects/genome-bottle
 
 - methode https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/NA12878/analysis/Illumina_PlatinumGenomes_NA12877_NA12878_09162015/IlluminaPlatinumGenomes-user-guide.pdf
 - vcf
-     https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/NA12878_HG001/latest/GRCh38/
+    https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/NA12878_HG001/latest/GRCh38/
 
 NB: à quoi correspond https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/NA12878/analysis/Illumina_PlatinumGenomes_NA12877_NA12878_09162015/hg38/2.0.1/NA12878/ ??
 
-   Article comparant les variant calling : https://www.biorxiv.org/content/10.1101/2020.12.11.422022v1.full.pdf
-   Article pour vcfeval : https://www.nature.com/articles/s41587-019-0054-x
+Article comparant les variant calling : https://www.biorxiv.org/content/10.1101/2020.12.11.422022v1.full.pdf
+Article pour vcfeval : https://www.nature.com/articles/s41587-019-0054-x
 
-   La version 4 ajoute 273 gènes "clinically relevant" https://www.biorxiv.org/content/10.1101/2021.06.07.444885v3.full.pdf
+La version 4 ajoute 273 gènes "clinically relevant" https://www.biorxiv.org/content/10.1101/2021.06.07.444885v3.full.pdf
 
-   Ajout des zones "difficiles"
-   https://www.biorxiv.org/content/10.1101/2020.07.24.212712v5.full.pdf
+Ajout des zones "difficiles"
+https://www.biorxiv.org/content/10.1101/2020.07.24.212712v5.full.pdf
 
 *** [#B] Pipeline : générer patient avec tous les variants retrouvés à Cento
 Comparaison de génération ADN (2019)
@@ -82,20 +82,20 @@ CLOSED: [2023-11-26 Sun 23:29]
 ]] Que du génome « sequenced to 50x depth on a HiSeq 2000 system”
 *** [[https://github.com/genome-in-a-bottle/giab_data_indexes][Genome in a bottle]]
 **** Illumina
-  - NA12878 :
-    - Illumina HiSeq Exome : fastq + capture en hg37
-    - Illumina TruSeq Exome : bam, pas de capture
-    - VCF en hg37 https://zenodo.org/record/3597727 mais avec capture. Raw data ne semblent pas être accessibles...
-      - HiSeq2000
-      - NextSeq 500
-      - HiSeq 2500
-  - HG002,3,4
-    - Illumina Whole Exome  : bam. le kit de capture est "Agilent SureSelect Human All Exon V5 kit" selon [[https://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/analysis/OsloUniversityHospital_Exome_GATK_jointVC_11242015/README.txt][README]]. On il faut les régions [[https://kb.10xgenomics.com/hc/en-us/articles/115004150923-Where-can-I-find-the-Agilent-Target-BED-files-][selon ce site]]
+- NA12878 :
+- Illumina HiSeq Exome : fastq + capture en hg37
+- Illumina TruSeq Exome : bam, pas de capture
+- VCF en hg37 https://zenodo.org/record/3597727 mais avec capture. Raw data ne semblent pas être accessibles...
+    - HiSeq2000
+    - NextSeq 500
+    - HiSeq 2500
+- HG002,3,4
+- Illumina Whole Exome  : bam. le kit de capture est "Agilent SureSelect Human All Exon V5 kit" selon [[https://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/analysis/OsloUniversityHospital_Exome_GATK_jointVC_11242015/README.txt][README]]. On il faut les régions [[https://kb.10xgenomics.com/hc/en-us/articles/115004150923-Where-can-I-find-the-Agilent-Target-BED-files-][selon ce site]]
 
-      Un autre fichier est disponible (capture ???)
-    https://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/analysis/OsloUniversityHospital_Exome_GATK_jointVC_11242015/wex_Agilent_SureSelect_v05_b37.baits.slop50.merged.list
-  "target region" +/- 50bp
-    testé sur chr311780-312086 : ok
+    Un autre fichier est disponible (capture ???)
+https://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/analysis/OsloUniversityHospital_Exome_GATK_jointVC_11242015/wex_Agilent_SureSelect_v05_b37.baits.slop50.merged.list
+"target region" +/- 50bp
+testé sur chr311780-312086 : ok
 
 **** KILL Autres technologies : non adaptées au pipeline (vu avec Alexis)
 CLOSED: [2023-11-26 Sun 23:29]
@@ -103,10 +103,10 @@ CLOSED: [2023-11-26 Sun 23:29]
 CLOSED: [2023-11-26 Sun 23:52]
 - [[https://www.internationalgenome.org/data-portal/sample/NA12878][NA12878]]
 - Quelle capture ? Réponse ici https://www.internationalgenome.org/category/targets/
-  - ceux marqués "exons targetted" ont ce [[http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/pilot_data/technical/reference/][BED]] pour 1000 gènes
-  - ceux marqués exomes ont tout le CCDS (en hg19...)
-    - [[http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/exome_pull_down_targets/][BED pour phase 3]]
-    - [[http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/exome_pull_down_targets_phases1_and_2/][BED pour phase 1 ou 2]]
+- ceux marqués "exons targetted" ont ce [[http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/pilot_data/technical/reference/][BED]] pour 1000 gènes
+- ceux marqués exomes ont tout le CCDS (en hg19...)
+- [[http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/exome_pull_down_targets/][BED pour phase 3]]
+- [[http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/exome_pull_down_targets_phases1_and_2/][BED pour phase 1 ou 2]]
 - Librairie selon les centres : https://www.internationalgenome.org/category/exome/
 #+begin_quote
 - Baylor College of Medicine : NimbleGen SeqCap_EZ_Exome_v2 for its Solid based exome sequencing. For its more recent Illumina based exome sequencing it used a custom array HSGC VCRome.
@@ -146,6 +146,11 @@ HiSeq2500 SRR1611183 SeqCap EZ Human Exome Lib v3.0 WES 129.94×
 HiSeq2500 SRR1611184 SeqCap EZ Human Exome Lib v3.0 WES 111.90×
 
 Kit acessible ?
+**** TODO Run selon [cite:@Kumaran_2019]
+NA12878 SRR098401
+NA24385 SRR2962669
+NA24631 SRR2962693
+
 **** Résumé
 Kit disponible en hg38
 | HiSeq 4000   | Agilent SureSelect v7 | SRX11061486 | https://github.com/kevinblighe/agilent |
@@ -157,6 +162,11 @@ Kit disponible en hg19
 | HiSeq2500 |  SeqCap EZ Human Exome Lib v3.0 | SRR1611184 |idem
 
 https://emea.support.illumina.com/downloads/truseq-exome-product-files.html
+*** Autres
+**** Selon [cite:@Kumaran_2019]
+NA24385 SRR2962669
+NA24631 SRR2962693
+
 *** Liste de capture
 Agilent sureselect v7 hg19 et 38 https://github.com/kevinblighe/agilent
 **** UCSCS
@@ -3344,10 +3354,14 @@ On se base sur
 ** Appel de variant
 *** DONE Biblio <(biblio appel variant)> <(appel variant)>
 CLOSED: [2023-11-25 Sat 23:29] SCHEDULED: <2023-11-25 Sat 11:00>
-*** TODO Finir biblio avec comparatifs [0/2]
+*** TODO Finir biblio avec comparatifs [0/3]
 SCHEDULED: <2023-11-26 Sun 13:00>
 - [ ] [[file:~/research/bisonex/thesis/biblio.org::#Kumaran_2019][Performance assessment of variant calling pipelines using human whole exome sequencing and simulated data]]
 - [ ] [[file:~/research/bisonex/thesis/biblio.org::*Comparaison de pipeline][Comparaison de pipeline]]
+- [ ] [[file:~/research/bisonex/thesis/biblio.org::*performance][performance]]
+- [ ] [[file:~/research/bisonex/thesis/biblio.org::*https://pubmed.ncbi.nlm.nih.gov/37535628/ Exome !! haéplotyypecaller vs dragen][https://pubmed.ncbi.nlm.nih.gov/37535628/ Exome !! haéplotyypecaller vs dragen]]
+- [ ] [[file:~/research/bisonex/thesis/biblio.org::#zhao2020][Accuracy and efficiency of germline variant calling pipelines for human genome data]]
+- [ ] [[file:~/research/bisonex/thesis/biblio.org::#baid2020][An Extensive Sequence Dataset of Gold-Standard Samples for Benchmarking and Development]]
 *** KILL Figure: nombre de publication par appel de variant
 CLOSED: [2023-11-25 Sat 19:00] SCHEDULED: <2023-11-07 Tue>
 /Entered on/ [2023-09-19 Tue 08:43]

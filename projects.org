@@ -613,10 +613,10 @@ envoyé le <2022-10-11 Tue>
 CLOSED: [2023-12-01 Fri 20:17] DEADLINE: <2023-12-01 Fri 11:00>
 /Entered on/ [2023-11-28 Tue 22:32]
 *** TODO Envoyer mémoire à Hakim
-SCHEDULED: <2023-12-05 Tue>
+SCHEDULED: <2023-12-12 Tue>
 /Entered on/ [2023-11-28 Tue 22:33]
 *** TODO Envoyer tableau + courriers à Hakim
-SCHEDULED: <2023-12-05 Tue>
+SCHEDULED: <2023-12-12 Tue>
 ** NF1
 :PROPERTIES:
 :CATEGORY: nf1

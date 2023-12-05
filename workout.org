@@ -6932,3 +6932,7 @@ b-kick : jeté jambe 20
 * <2023-12-03 Sun> Tricking
 - B-kick
 - Tornado kick
+* <2023-12-05 Tue> Gymnastics
+- Cheval d'arçon: 1 tour
+- Barre: 2 tour en avant ~ ok
+- trampoline
