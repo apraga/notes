@@ -6579,6 +6579,7 @@ SCHEDULED: <2023-11-29 Wed>
 ****** TODO Avec données en hg38
 SCHEDULED: <2023-11-29 Wed>
 [[*Résumé][Résumé]]
+Ok pour hiseq4000 et sureselect mais utiliser le dernier commit pour symlink
 ****** TODO Avec données en hg19
 SCHEDULED: <2023-12-10 Sun>
 Utiliser crossmap ! https://crossmap.readthedocs.io/en/latest/ (inspiré de [[https://github.com/bcbio/bcbio_validation_workflows/blob/master/giab-exome/input/get_data.sh][bcbio]]
@@ -9481,7 +9482,7 @@ zgrep '50721504' annotate/full/*63019340*.tsv
 SCHEDULED: <2023-12-13 Wed>
 /Entered on/ [2023-11-13 Mon 22:40]
 ** TODO Chercher nouveaux gènes
-SCHEDULED: <2023-12-06 Wed>
+SCHEDULED: <2023-12-13 Wed>
 * Résultats
 ** TODO Speed-up BWA-mem
 SCHEDULED: <2023-12-08 Fri>
@@ -9496,7 +9497,12 @@ SCHEDULED: <2023-12-11 Mon>
 CLOSED: [2023-10-06 Fri 08:04] SCHEDULED: <2023-10-06 Fri>
 /Entered on/ [2023-10-04 Wed 19:33]
 * Presentations
-** TODO Abstract FOSDEM 2024
-DEADLINE: <2023-12-07 Thu> SCHEDULED: <2023-12-04 Mon>
+** DONE Abstract FOSDEM 2024
+CLOSED: [2023-12-06 Wed 22:37] DEADLINE: <2023-12-07 Thu> SCHEDULED: <2023-12-04 Mon>
 /Entered on/ [2023-12-03 Sun 23:17]
-https://pretalx.fosdem.org/fosdem-2024/submit/SLegDF/questions/
+https://pretalx.fosdem.org/fosdem-2024/me/submissions/FSQC3U/
+
+Diagnosing genetic diseases presents significant challenges. Modern sequencers produce vast amounts of data, requiring intensive processing and filtering before analysis. The intricate mechanisms inherent in rare diseases necessitate a high level of expertise from biologists to identify potential causes. This is why it is crucial to demonstrate these results come from accurate, efficient, and reproducible bioinformatics pipelines. Indeed, accuracy is vital for patient diagnosis, efficiency is needed to handle the growing data volume and patient backlog, and reproducibility is essential to ensure the quality of the results.
+
+This talk is aimed at a diverse audience and will give feedback on Nix integration in our workflow.
+It will focus on how Nix significantly improved reproducibility and discuss some challenges we encountered, especially with large databases and running on high-performance computing architectures.

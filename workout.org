@@ -6936,3 +6936,11 @@ b-kick : jeté jambe 20
 - Cheval d'arçon: 1 tour
 - Barre: 2 tour en avant ~ ok
 - trampoline
+* <2023-12-06 Wed> Workout
+ Circuit avec pause à la fin d'un cycle. 3x le cycle suivant =
+- Muscle-up (avec un peu de kipping et pas de négatif) 3x1
+- Pistols 4
+- Tucked planche 3+2
+- extension 25
+- compression 10
+- push-up tucked: 1+2+2+2
