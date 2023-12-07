@@ -6944,3 +6944,7 @@ b-kick : jeté jambe 20
 - extension 25
 - compression 10
 - push-up tucked: 1+2+2+2
+* <2023-12-07 Thu> Gymnastics
+- Cheval d'arcon : 1 tour+epsilon
+- Barre: roulade avant ok avec elan
+- Trampiline : mal nuque
