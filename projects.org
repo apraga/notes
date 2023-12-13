@@ -431,11 +431,14 @@ CLOSED: [2023-11-26 Sun 20:50] SCHEDULED: <2023-11-25 Sat 19:00>
 :CATEGORY: japonais
 :END:
 ** TODO Intermediate japanase (Kluemper)
-SCHEDULED: <2023-12-08 Fri .+1d>
+SCHEDULED: [2023-12-12 Tue .+1d]
 :PROPERTIES:
 :STYLE:    habit
 :LAST_REPEAT: [2023-12-07 Thu 23:47]
 :END:
+- State "DONE"       from "TODO"       [2023-12-11 Mon 23:16]
+- State "DONE"       from "TODO"       [2023-12-10 Sun 23:16]
+- State "DONE"       from "TODO"       [2023-12-08 Fri 23:16]
 - State "DONE"       from "TODO"       [2023-12-07 Thu 23:16]
 - State "DONE"       from "TODO"       [2023-12-06 Wed 23:16]
 - State "DONE"       from "TODO"       [2023-12-05 Tue 23:16]
@@ -466,7 +469,7 @@ SCHEDULED: <2023-12-08 Fri .+1d>
 :CATEGORY: seedbox
 :END:
 **** TODO Re-partager musique :red:
-SCHEDULED: <2023-12-11 Mon>
+SCHEDULED: <2023-12-15 Fri>
 **** TODO Re-partager livres :mam:
 SCHEDULED: <2023-12-17 Sun>
 **** TODO Convertir FLAC en mp3 V0 et 320
@@ -616,10 +619,10 @@ envoyé le <2022-10-11 Tue>
 CLOSED: [2023-12-01 Fri 20:17] DEADLINE: <2023-12-01 Fri 11:00>
 /Entered on/ [2023-11-28 Tue 22:32]
 *** TODO Envoyer mémoire à Hakim
-SCHEDULED: <2023-12-12 Tue>
+SCHEDULED: <2023-12-16 Sat>
 /Entered on/ [2023-11-28 Tue 22:33]
 *** TODO Envoyer tableau + courriers à Hakim
-SCHEDULED: <2023-12-12 Tue>
+SCHEDULED: <2023-12-16 Sat>
 ** NF1
 :PROPERTIES:
 :CATEGORY: nf1
@@ -1014,3 +1017,10 @@ https://reviewer-feedback.springernature.com/feedback/11227/1405df9319bf5fb0dbbd
 *** Notes
 - Plaquettes : arrière gauche ok (50%) le <2022-09-03 Sat>
 - besoin d'une clé 14 pour changer les plaquettes
+* Gentoo
+:PROPERTIES:
+:CATEGORY: gentoo
+:END:
+** TODO Package tectonic
+SCHEDULED: <2023-12-13 Wed>
+/Entered on/ [2023-12-13 Wed 23:25]
