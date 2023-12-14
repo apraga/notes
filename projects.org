@@ -1021,6 +1021,6 @@ https://reviewer-feedback.springernature.com/feedback/11227/1405df9319bf5fb0dbbd
 :PROPERTIES:
 :CATEGORY: gentoo
 :END:
-** TODO Package tectonic
-SCHEDULED: <2023-12-13 Wed>
+** DONE Package tectonic
+CLOSED: [2023-12-13 Wed 23:40] SCHEDULED: <2023-12-13 Wed>
 /Entered on/ [2023-12-13 Wed 23:25]

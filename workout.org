@@ -6957,3 +6957,7 @@ b-kick : jeté jambe 20
 * <2023-12-13 Wed> Tricking
 Tornado: 15 saut + 5 tornado
 Bkick 10
+* <2023-12-14 Thu> Gymnastics
+- Cheval d'arçon: 1 tour max
+- Barre: travail roulade avant
+- Trampoline : techniqe backflip (progression)

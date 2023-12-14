@@ -399,16 +399,16 @@ Correction 2e passe, attente
 Impossible de faire marcher les tests Car il ne trouve pas le module Bio::Tools::Align, qui est dans un dossier ailleurs dans le dépôt. Même en compilant tout le dépôt, cela ne fonctionne pas... On skip les tests.
 
 *** TODO VEP
-SCHEDULED: <2023-12-14 Thu>
+SCHEDULED: <2023-12-21 Thu>
 
 ** WAIT [[https://github.com/NixOS/nixpkgs/pull/230394][rtg-tools]] :vcfeval:
 Soumis
 ** WAIT Package Spip https://github.com/NixOS/nixpkgs/pull/247476
 ** TODO Happy :happy:
 *** TODO PR python 3 upstream
-SCHEDULED: <2023-12-13 Wed>
+SCHEDULED: <2023-12-27 Wed>
 *** TODO nixpkgs en l'état
-SCHEDULED: <2023-12-13 Wed>
+SCHEDULED: <2023-12-27 Wed>
 ** PROJ SpliceAI
 ** TODO Bamsurgeon
 /Entered on/ [2023-05-13 Sat 19:11]
@@ -3351,21 +3351,19 @@ CLOSED: [2023-10-12 Thu 23:58] SCHEDULED: <2023-10-12 Thu>
 Il faudrait utiliser pubmed en local, sinon c'est 10 000 requete par aligner !
 On se base sur
 
-** Appel de variant
+** DONE Appel de variant
+CLOSED: [2023-12-14 Thu 23:25]
 *** DONE Biblio <(biblio appel variant)> <(appel variant)>
 CLOSED: [2023-11-25 Sat 23:29] SCHEDULED: <2023-11-25 Sat 11:00>
-*** TODO Finir biblio avec comparatifs [0/3]
-SCHEDULED: <2023-11-26 Sun 13:00>
-- [ ] [[file:~/research/bisonex/thesis/biblio.org::#Kumaran_2019][Performance assessment of variant calling pipelines using human whole exome sequencing and simulated data]]
-- [ ] [[file:~/research/bisonex/thesis/biblio.org::*Comparaison de pipeline][Comparaison de pipeline]]
-- [ ] [[file:~/research/bisonex/thesis/biblio.org::*performance][performance]]
-- [ ] [[file:~/research/bisonex/thesis/biblio.org::*https://pubmed.ncbi.nlm.nih.gov/37535628/ Exome !! haéplotyypecaller vs dragen][https://pubmed.ncbi.nlm.nih.gov/37535628/ Exome !! haéplotyypecaller vs dragen]]
-- [ ] [[file:~/research/bisonex/thesis/biblio.org::#zhao2020][Accuracy and efficiency of germline variant calling pipelines for human genome data]]
-- [ ] [[file:~/research/bisonex/thesis/biblio.org::#baid2020][An Extensive Sequence Dataset of Gold-Standard Samples for Benchmarking and Development]]
+*** DONE Finir biblio avec comparatifs [0/3]
+CLOSED: [2023-12-14 Thu 23:24] SCHEDULED: <2023-11-26 Sun 13:00>
 *** KILL Figure: nombre de publication par appel de variant
 CLOSED: [2023-11-25 Sat 19:00] SCHEDULED: <2023-11-07 Tue>
 /Entered on/ [2023-09-19 Tue 08:43]
 Impossible d'utiliser pubmed car certains sont sur arxiv
+
+** TODO Genome
+SCHEDULED: <2023-12-14 Thu>
 ** TODO Figure: nombre d'exomes par années
 SCHEDULED: <2023-12-23 Sat>
 /Entered on/ [2023-09-19 Tue 08:43]
@@ -6539,7 +6537,7 @@ Mail alexis
 SCHEDULED: <2023-10-04 Wed>
 
 ***** TODO Rendre simplement le nombre de vrais positifs
-SCHEDULED: <2023-12-14 Thu>
+SCHEDULED: <2023-12-18 Mon>
 ***** KILL Mail Yannis
 CLOSED: [2023-07-08 Sat 10:44]
 ***** DONE Mail GIAB pour version T2T
@@ -6581,7 +6579,7 @@ SCHEDULED: <2023-11-29 Wed>
 [[*Résumé][Résumé]]
 Ok pour hiseq4000 et sureselect mais utiliser le dernier commit pour symlink
 ****** TODO Avec données en hg19
-SCHEDULED: <2023-12-13 Wed>
+SCHEDULED: <2023-12-20 Wed>
 Utiliser crossmap ! https://crossmap.readthedocs.io/en/latest/ (inspiré de [[https://github.com/bcbio/bcbio_validation_workflows/blob/master/giab-exome/input/get_data.sh][bcbio]]
 pour vérifier
 ***** TODO HG002 :hg002:
@@ -6590,19 +6588,14 @@ SCHEDULED: <2023-12-16 Sat>
 SCHEDULED: <2023-12-16 Sat>
 ***** TODO HG004 :hg001:
 SCHEDULED: <2023-12-16 Sat>
-**** TODO Refaire les analyses pour avoir meilleurs résultats
+**** TODO Refaire les analyses happy+ rtgeval
 SCHEDULED: <2023-12-09 Sat>
 On veut les résultats de https://medium.com/dnanexus/benchmarking-state-of-the-art-secondary-variant-calling-pipelines-5472ca6bace7
-***** TODO hap.py avec conda
-SCHEDULED: <2023-12-13 Wed>
-***** TODO rtgveval
-SCHEDULED: <2023-12-13 Wed>
-***** TODO Relancer
-SCHEDULED: <2023-12-10 Sun>
+hap.py avec conda ?
 *** TODO Platinum genome :platinum:
 https://emea.illumina.com/platinumgenomes.html
 **** TODO Tester sur la zone couverte par l'exome centogène
-SCHEDULED: <2023-12-14 Thu>
+SCHEDULED: <2023-12-18 Mon>
 *** DONE Séquencer NA12878 :cento:hg001:
 CLOSED: [2023-10-07 Sat 17:59]
 Discussion avec Paul : sous-traitant ne nous donnera pas les données, il faut commander l'ADN
@@ -6701,7 +6694,7 @@ CLOSED: [2023-11-19 Sun 23:43] SCHEDULED: <2023-11-18 Sat>
 **** KILL Run ERR1341796
 CLOSED: [2023-11-19 Sun 23:43] SCHEDULED: <2023-11-18 Sat>
 *** TODO Données exome Broad institute (nextflow)
-SCHEDULED: <2023-12-12 Tue>
+SCHEDULED: <2023-12-18 Mon>
 https://console.cloud.google.com/storage/browser/broad-public-datasets/CHM1_CHM13_WES;tab=objects?pli=1&prefix=&forceOnObjectsSortingFiltering=false
 *** TODO Télécharger VCF
 SCHEDULED: <2023-12-01 Fri>
@@ -8949,7 +8942,7 @@ Et on a trop de variants en sortie (7330 !)
 **** DONE Mail Paul avec résultats filtre en T2T + nouveau schéma
 CLOSED: [2023-09-17 Sun 23:15] SCHEDULED: <2023-09-17 Sun>
 ** TODO Medically relevant genes
-SCHEDULED: <2023-12-14 Thu>
+SCHEDULED: <2023-12-18 Mon>
 /Entered on/ [2023-10-18 Wed 22:37]
 ** TODO HG002 en T2T
 /Entered on/ [2023-11-25 Sat 17:58]
@@ -9479,10 +9472,10 @@ bcftools filter -i 'POS=50721504' call_variant/haplotypecaller/*63019340*/*.vcf.
 zgrep '50721504' annotate/full/*63019340*.tsv
 #+end_src
 *** TODO Sanger pour 4 VOUS manqués
-SCHEDULED: <2023-12-13 Wed>
+SCHEDULED: <2023-12-20 Wed>
 /Entered on/ [2023-11-13 Mon 22:40]
 ** TODO Chercher nouveaux gènes
-SCHEDULED: <2023-12-13 Wed>
+SCHEDULED: <2023-12-20 Wed>
 * Résultats
 ** TODO Speed-up BWA-mem
 SCHEDULED: <2023-12-16 Sat>
