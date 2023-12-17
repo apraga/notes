@@ -419,8 +419,8 @@ SCHEDULED: <2023-12-27 Wed>
 Similaire à
 https://github.com/bioconda/bioconda-recipes/blob/master/recipes/picard/picard.sh
 
-** TODO Gatk 4.5.0
-SCHEDULED: <2023-12-15 Fri>
+** DONE Gatk 4.5.0
+CLOSED: [2023-12-17 Sun 22:02] SCHEDULED: <2023-12-15 Fri>
 /Entered on/ [2023-12-15 Fri 18:58]
 * Julia :julia:
 ** KILL XAM.jl: PR pour modification record :julia:

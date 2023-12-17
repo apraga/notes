@@ -77,8 +77,8 @@ CLOSED: [2023-11-23 Thu 21:45] SCHEDULED: <2023-11-22 Wed>
 ** DONE Command minoxidil
 CLOSED: [2023-11-26 Sun 21:56] SCHEDULED: <2023-11-26 Sun>
 /Entered on/ [2023-11-25 Sat 11:30]
-** TODO Transférer Harry Potter 1 + thriller pour Yvain
-SCHEDULED: <2023-12-17 Sun>
+** DONE Transférer Harry Potter 1 + thriller pour Yvain
+CLOSED: [2023-12-17 Sun 23:28] SCHEDULED: <2023-12-17 Sun>
 /Entered on/ [2023-12-16 Sat 19:05]
 ** DONE Commander cadeau Élise
 CLOSED: [2023-12-17 Sun 18:03] SCHEDULED: <2023-12-16 Sat>
@@ -432,8 +432,8 @@ CLOSED: [2023-11-25 Sat 11:26] SCHEDULED: <2023-11-24 Fri>
 *** TODO Cours UNESS
 **** DONE Examens d'hémostase
 CLOSED: [2023-11-26 Sun 20:50] SCHEDULED: <2023-11-25 Sat 19:00>
-**** TODO Cours myélome
-SCHEDULED: <2023-12-17 Sun>
+**** DONE Cours myélome
+CLOSED: [2023-12-17 Sun 22:34] SCHEDULED: <2023-12-17 Sun>
 /Entered on/ [2023-12-17 Sun 22:04]
 * Japonais
 :PROPERTIES:
@@ -481,8 +481,8 @@ SCHEDULED: [2023-12-12 Tue .+1d]
 SCHEDULED: <2023-12-24 Sun>
 **** TODO Re-partager livres :mam:
 SCHEDULED: <2023-12-24 Sun>
-**** TODO Tester 1 album RED
-SCHEDULED: <2023-12-17 Sun>
+**** DONE Tester 1 album RED
+CLOSED: [2023-12-17 Sun 22:52] SCHEDULED: <2023-12-17 Sun>
 **** TODO Convertir FLAC en mp3 V0 et 320
  #+begin_src sh
  perl ~/softwares/flac2mp3/flac2mp3.pl --preset=320 test test320
@@ -630,10 +630,10 @@ envoyé le <2022-10-11 Tue>
 CLOSED: [2023-12-01 Fri 20:17] DEADLINE: <2023-12-01 Fri 11:00>
 /Entered on/ [2023-11-28 Tue 22:32]
 *** TODO Envoyer mémoire à Hakim
-SCHEDULED: <2023-12-17 Sun>
+SCHEDULED: <2023-12-20 Wed>
 /Entered on/ [2023-11-28 Tue 22:33]
 *** TODO Envoyer tableau + courriers à Hakim
-SCHEDULED: <2023-12-17 Sun>
+SCHEDULED: <2023-12-20 Wed>
 ** NF1
 :PROPERTIES:
 :CATEGORY: nf1
