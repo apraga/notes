@@ -80,8 +80,8 @@ CLOSED: [2023-11-26 Sun 21:56] SCHEDULED: <2023-11-26 Sun>
 ** TODO Transférer Harry Potter 1 + thriller pour Yvain
 SCHEDULED: <2023-12-17 Sun>
 /Entered on/ [2023-12-16 Sat 19:05]
-** TODO Commander cadeau Élise
-SCHEDULED: <2023-12-16 Sat>
+** DONE Commander cadeau Élise
+CLOSED: [2023-12-17 Sun 18:03] SCHEDULED: <2023-12-16 Sat>
 /Entered on/ [2023-12-16 Sat 19:15]
 * Génétique
 ** Collège [0/32]
@@ -432,6 +432,9 @@ CLOSED: [2023-11-25 Sat 11:26] SCHEDULED: <2023-11-24 Fri>
 *** TODO Cours UNESS
 **** DONE Examens d'hémostase
 CLOSED: [2023-11-26 Sun 20:50] SCHEDULED: <2023-11-25 Sat 19:00>
+**** TODO Cours myélome
+SCHEDULED: <2023-12-17 Sun>
+/Entered on/ [2023-12-17 Sun 22:04]
 * Japonais
 :PROPERTIES:
 :CATEGORY: japonais
@@ -475,8 +478,10 @@ SCHEDULED: [2023-12-12 Tue .+1d]
 :CATEGORY: seedbox
 :END:
 **** TODO Re-partager musique :red:
-SCHEDULED: <2023-12-22 Fri>
+SCHEDULED: <2023-12-24 Sun>
 **** TODO Re-partager livres :mam:
+SCHEDULED: <2023-12-24 Sun>
+**** TODO Tester 1 album RED
 SCHEDULED: <2023-12-17 Sun>
 **** TODO Convertir FLAC en mp3 V0 et 320
  #+begin_src sh

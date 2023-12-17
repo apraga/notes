@@ -109,3 +109,40 @@ subgraph { fact -> {
 Produit de dégradation de la fibrine
 - augmenté si CIVD
 - bonne VPN pour thrombose/embolie pulmonaire (<450-550)
+* Myélome
+- prolifération plasmocytaire maligne avec soit une Ig entier soit une chaîne légère libre
+- Rare chez sujet jeune (âge médian 70ans)
+- Conséquences de la prolifération tumorale
+  - activation ostéoclastes -> hypercalcémie, fragilisation os
+  - suppression hématopoièse normale (GR)
+  - déficit immunitaire humorale (hypogammaglobulinémie car plamocytes normaux sont inhibé par clone)
+  - rénal: accumulation de chaînes légères libres/Ig entière (néphropathies à cyclindre), hypercalcémie...
+- prolifération: B puis moelle (MGUS -> myélome) puis sang (leucémie aigüe à plasmocytes)
+- formes biologiques :
+  - Ig monoclonaire entières (surtout IgG) 80-85%
+  - chaîne légère libre isolée
+  - non sécrétant
+- autres: plasmocytome solitairee, leucémie à plasmocytes (pronostic sombre)
+** Diagnostic (2014)
+- {plasmocytes médullaires > 10% ou plasmocytome extramédulaire} et 1 parmi
+  - signes CRAB (hyperCacémie, insuffisance Rénale, Anémie, Bone)
+  - nouveau marqueur
+    - plasmocytose médullaire clonale >= 60%
+    - chaine légres impliquée/non impliqué >= 100
+    - > 1 lésion focale IRM
+
+  NB:
+  - myélome indolent : pas de CRAB, pas de nouveau marqueur et {IgG/IgA >= 30  ou dans les urines >= 500mg/24hou plasmocytose médullaire entre 10 et 60%}
+  - MGUS : tout négatif (pas de CRAB, pas de marqeur, Ig < 30, médullaire < 10%)
+** Pronostic et traitement
+- myélome multiple = incurable
+- score ISS
+- réponse au traitement : disparation monoclonale, plasmocytaire monoclonaires
+- surveillance : EPS +/- dosage chaine légère
+** Bilan initial
+- EPS (pic β, γ ou α; ou hypogamma isolée [suspicion chaine légre monoclonale]
+- immunofixation
+- chaînes légres libres κ et λ sérum
+- uraines 24h: EPS et immunofixation: chaîne lére monoclonaire (protéinuire Bence-Jones)
+- hémogramme (hémoaties en rouleau [hyperprotidémie], anémie normochromoe, normocytaire, arégénératives)
+- myélogramme
