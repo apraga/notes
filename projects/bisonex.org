@@ -325,7 +325,8 @@ Dans la mise à jour, il y a la création d'un environnement virtuel qui casse l
 Fix = désactiver
 **** KILL Patch NXF_OFFLINE=true
 CLOSED: [2023-07-02 Sun 11:02] SCHEDULED: <2023-06-11 Sun>
-** WAIT [[https://github.com/NixOS/nixpkgs/pull/249329][Multiqc]]
+** TODO [[https://github.com/NixOS/nixpkgs/pull/249329][Multiqc]]
+SCHEDULED: <2023-12-17 Sun>
 HG002,sanger-chr20,data/HG002-sanger-inserted-chr20_1.fq.gz,data/HG002-sanger-inserted-chr20_2.fq.gz
 ** KILL Mutalyzer
 CLOSED: [2023-08-16 Wed 19:07] SCHEDULED: <2023-08-13 Sun>
@@ -418,6 +419,9 @@ SCHEDULED: <2023-12-27 Wed>
 Similaire à
 https://github.com/bioconda/bioconda-recipes/blob/master/recipes/picard/picard.sh
 
+** TODO Gatk 4.5.0
+SCHEDULED: <2023-12-15 Fri>
+/Entered on/ [2023-12-15 Fri 18:58]
 * Julia :julia:
 ** KILL XAM.jl: PR pour modification record :julia:
 CLOSED: [2023-05-29 Mon 15:40] SCHEDULED: <2023-05-28 Sun>
@@ -6583,11 +6587,11 @@ SCHEDULED: <2023-12-20 Wed>
 Utiliser crossmap ! https://crossmap.readthedocs.io/en/latest/ (inspiré de [[https://github.com/bcbio/bcbio_validation_workflows/blob/master/giab-exome/input/get_data.sh][bcbio]]
 pour vérifier
 ***** TODO HG002 :hg002:
-SCHEDULED: <2023-12-16 Sat>
+SCHEDULED: <2023-12-21 Thu>
 ***** TODO HG003 :hg003:
-SCHEDULED: <2023-12-16 Sat>
+SCHEDULED: <2023-12-21 Thu>
 ***** TODO HG004 :hg001:
-SCHEDULED: <2023-12-16 Sat>
+SCHEDULED: <2023-12-21 Thu>
 **** TODO Refaire les analyses happy+ rtgeval
 SCHEDULED: <2023-12-09 Sat>
 On veut les résultats de https://medium.com/dnanexus/benchmarking-state-of-the-art-secondary-variant-calling-pipelines-5472ca6bace7
@@ -8912,7 +8916,7 @@ VEP chooses one block of annotation per variant, using an ordered set of criteri
 **** DONE Mail alexis
 CLOSED: [2023-08-20 Sun 13:45] SCHEDULED: <2023-08-20 Sun>
 **** TODO Données simuscop 200x
-SCHEDULED: <2023-12-16 Sat>
+SCHEDULED: <2023-12-21 Thu>
 **** DONE En T2T avec liftover (filtre = spip) : ok mais lent et trop de variants :tests:
 CLOSED: [2023-09-17 Sun 17:13] SCHEDULED: <2023-09-17 Sun>
 1. Conversion en bed
@@ -9478,13 +9482,10 @@ SCHEDULED: <2023-12-20 Wed>
 SCHEDULED: <2023-12-20 Wed>
 * Résultats
 ** TODO Speed-up BWA-mem
-SCHEDULED: <2023-12-16 Sat>
+SCHEDULED: <2023-12-21 Thu>
 
 ** TODO Speed-up Hapotypecaller
-SCHEDULED: <2023-12-16 Sat>
-** TODO Refaire statistics avec happy+ vcfeval
-SCHEDULED: <2023-12-11 Mon>
-/Entered on/ [2023-11-18 Sat 20:13]
+SCHEDULED: <2023-12-21 Thu>
 * Communication
 ** DONE Mail NGS-diag
 CLOSED: [2023-10-06 Fri 08:04] SCHEDULED: <2023-10-06 Fri>

@@ -77,6 +77,12 @@ CLOSED: [2023-11-23 Thu 21:45] SCHEDULED: <2023-11-22 Wed>
 ** DONE Command minoxidil
 CLOSED: [2023-11-26 Sun 21:56] SCHEDULED: <2023-11-26 Sun>
 /Entered on/ [2023-11-25 Sat 11:30]
+** TODO Transférer Harry Potter 1 + thriller pour Yvain
+SCHEDULED: <2023-12-17 Sun>
+/Entered on/ [2023-12-16 Sat 19:05]
+** TODO Commander cadeau Élise
+SCHEDULED: <2023-12-16 Sat>
+/Entered on/ [2023-12-16 Sat 19:15]
 * Génétique
 ** Collège [0/32]
 *** 1. Architecture du génome
@@ -404,7 +410,7 @@ CLOSED: [2023-11-30 Thu 19:15] SCHEDULED: <2023-11-28 Tue>
 CLOSED: [2023-11-21 Tue 22:53] SCHEDULED: <2023-11-27 Mon>
 /Entered on/ [2023-11-19 Sun 22:40]
 *** TODO Réparer frigo
-SCHEDULED: <2023-12-14 Thu>
+SCHEDULED: <2023-12-21 Thu>
 Mail envoyé 2023-12-04
 /Entered on/ [2023-12-04 Mon 20:40]
 ** DONE Inscription fac 2023
@@ -469,7 +475,7 @@ SCHEDULED: [2023-12-12 Tue .+1d]
 :CATEGORY: seedbox
 :END:
 **** TODO Re-partager musique :red:
-SCHEDULED: <2023-12-15 Fri>
+SCHEDULED: <2023-12-22 Fri>
 **** TODO Re-partager livres :mam:
 SCHEDULED: <2023-12-17 Sun>
 **** TODO Convertir FLAC en mp3 V0 et 320
@@ -619,10 +625,10 @@ envoyé le <2022-10-11 Tue>
 CLOSED: [2023-12-01 Fri 20:17] DEADLINE: <2023-12-01 Fri 11:00>
 /Entered on/ [2023-11-28 Tue 22:32]
 *** TODO Envoyer mémoire à Hakim
-SCHEDULED: <2023-12-16 Sat>
+SCHEDULED: <2023-12-17 Sun>
 /Entered on/ [2023-11-28 Tue 22:33]
 *** TODO Envoyer tableau + courriers à Hakim
-SCHEDULED: <2023-12-16 Sat>
+SCHEDULED: <2023-12-17 Sun>
 ** NF1
 :PROPERTIES:
 :CATEGORY: nf1
@@ -1024,3 +1030,97 @@ https://reviewer-feedback.springernature.com/feedback/11227/1405df9319bf5fb0dbbd
 ** DONE Package tectonic
 CLOSED: [2023-12-13 Wed 23:40] SCHEDULED: <2023-12-13 Wed>
 /Entered on/ [2023-12-13 Wed 23:25]
+** DONE Page nushell
+CLOSED: [2023-12-15 Fri 18:34] SCHEDULED: <2023-12-15 Fri>
+/Entered on/ [2023-12-15 Fri 17:19]
+** DONE Ebuild julia 1.9.4
+CLOSED: [2023-12-16 Sat 22:16] SCHEDULED: <2023-12-15 Fri>
+/Entered on/ [2023-12-15 Fri 18:40]
+1. Ne peut pas installer une version "custom" LLVM pour problème de droit
+   (voir /var/tmp/portage/dev-lang/julia-1.9.4/work/julia-1.9.4/deps/scratch/llvm-julia-14.0.6-3/build_Release/cmake_install.cmake)
+
+  bindings/ocaml/cmake_install.cmake:47 (include)
+  cmake_install.cmake:76 (include)
+
+ * ACCESS DENIED:  unlink:             /usr/lib64/ocaml/llvm/llvm.mli
+ * ACCESS DENIED:  open_wr:            /usr/lib64/ocaml/llvm/llvm.mli
+ * ACCESS DENIED:  unlink:             /usr/lib64/ocaml/llvm/llvm.mli
+ * ACCESS DENIED:  fopen_wr:           /usr/lib64/ocaml/llvm/llvm.mli
+CMake Error at bindings/ocaml/llvm/cmake_install.cmake:54 (file):
+  file INSTALL cannot copy file
+  "/var/tmp/portage/dev-lang/julia-1.9.4/work/julia-1.9.4/deps/scratch/llvm-julia-14.0.6-3/build_Release/bindings/ocaml/llvm/llvm.mli"
+  to "/usr/lib64/ocaml/llvm/llvm.mli": Permission denied.
+Call Stack (most recent call first):
+  bindings/ocaml/cmake_install.cmake:47 (include)
+  cmake_install.cmake:76 (include)
+
+
+make[1]: *** [/var/tmp/portage/dev-lang/julia-1.9.4/work/julia-1.9.4/deps/llvm.mk:279: /var/tmp/portage/dev-lang/julia-1.9.4/work/julia-1.9.4/usr-staging/llvm-julia-14.0.6-3/build_Release.tar] Error 1
+make[1]: Leaving directory '/var/tmp/portage/dev-lang/julia-1.9.4/work/julia-1.9.4/deps'
+make: *** [Makefile:62: julia-deps] Error 2
+ * ERROR: dev-lang/julia-1.9.4::gentoo failed (compile phase):
+ *   emake failed
+ *
+ * If you need support, post the output of `emerge --info '=dev-lang/julia-1.9.4::gentoo'`,
+ * the complete build log and the output of `emerge -pqv '=dev-lang/julia-1.9.4::gentoo'`.
+ * The complete build log is located at '/var/tmp/portage/dev-lang/julia-1.9.4/temp/build.log'.
+ * The ebuild environment file is located at '/var/tmp/portage/dev-lang/julia-1.9.4/temp/environment'.
+ * Working directory: '/var/tmp/portage/dev-lang/julia-1.9.4/work/julia-1.9.4'
+ * S: '/var/tmp/portage/dev-lang/julia-1.9.4/work/julia-1.9.4'
+ * ----------------------- SANDBOX ACCESS VIOLATION SUMMARY -----------------------
+ * LOG FILE: "/var/tmp/portage/dev-lang/julia-1.9.4/temp/sandbox.log"
+ *
+
+#+begin_quote
+
+VERSION 1.0
+FORMAT: F - Function called
+FORMAT: S - Access Status
+FORMAT: P - Path as passed to function
+FORMAT: A - Absolute Path (not canonical)
+FORMAT: R - Canonical Path
+FORMAT: C - Command Line
+
+F: unlink
+S: deny
+P: /usr/lib64/ocaml/llvm/llvm.mli
+A: /usr/lib64/ocaml/llvm/llvm.mli
+R: /usr/lib64/ocaml/llvm/llvm.mli
+C: cmake -DCMAKE_INSTALL_PREFIX=/var/tmp/portage/dev-lang/julia-1.9.4/work/julia-1.9.4/usr-staging/llvm-julia-14.0.6-3/build_Release/var/tmp/portage/dev-lang/julia-1.9.4/work/julia-1.9.4/usr -P cmake_install.cmake
+
+F: open_wr
+S: deny
+P: /usr/lib64/ocaml/llvm/llvm.mli
+A: /usr/lib64/ocaml/llvm/llvm.mli
+R: /usr/lib64/ocaml/llvm/llvm.mli
+C: cmake -DCMAKE_INSTALL_PREFIX=/var/tmp/portage/dev-lang/julia-1.9.4/work/julia-1.9.4/usr-staging/llvm-julia-14.0.6-3/build_Release/var/tmp/portage/dev-lang/julia-1.9.4/work/julia-1.9.4/usr -P cmake_install.cmake
+
+F: unlink
+S: deny
+P: /usr/lib64/ocaml/llvm/llvm.mli
+A: /usr/lib64/ocaml/llvm/llvm.mli
+R: /usr/lib64/ocaml/llvm/llvm.mli
+C: cmake -DCMAKE_INSTALL_PREFIX=/var/tmp/portage/dev-lang/julia-1.9.4/work/julia-1.9.4/usr-staging/llvm-julia-14.0.6-3/build_Release/var/tmp/portage/dev-lang/julia-1.9.4/work/julia-1.9.4/usr -P cmake_install.cmake
+
+F: fopen_wr
+S: deny
+P: /usr/lib64/ocaml/llvm/llvm.mli
+A: /usr/lib64/ocaml/llvm/llvm.mli
+R: /usr/lib64/ocaml/llvm/llvm.mli
+C: cmake -DCMAKE_INSTALL_PREFIX=/var/tmp/portage/dev-lang/julia-1.9.4/work/julia-1.9.4/usr-staging/llvm-julia-14.0.6-3/build_Release/var/tmp/portage/dev-lang/julia-1.9.4/work/julia-1.9.4/usr -P cmake_install.cmake
+
+#+end_quote
+
+2. Hack: faire "make" dans /var/tmp/portage/dev-lang/julia-1.9.4/work/julia-1.9.4
+Installation openblas
+make clean
+Problème avec cette approche, ne trouve pas la librairie dans usr/lib64 (car elle est dans usr/lib)
+#+begin_quote
+Warning: git information unavailable; versioning information limited
+ cd /var/tmp/portage/dev-lang/julia-1.9.4/work/julia-1.9.4/base && if ! JULIA_BINDIR=/var/tmp/portage/dev-lang/julia-1.9.4/work/julia-1.9.4/usr/bin WINEPATH="/var/tmp/portage/dev-lang/julia-1.9.4/work/julia-1.9.4/usr/bin;$WINEPATH" JULIA_NUM_THREADS=1  /var/tmp/portage/dev-lang/julia-1.9.4/work/julia-1.9.4/usr/bin/julia -O3 -C "native" --output-o /var/tmp/portage/dev-lang/julia-1.9.4/work/julia-1.9.4/usr/lib/julia/sys-o.a.tmp  --startup-file=no --warn-overwrite=yes --sysimage /var/tmp/portage/dev-lang/julia-1.9.4/work/julia-1.9.4/usr/lib/julia/sys.ji /var/tmp/portage/dev-lang/julia-1.9.4/work/julia-1.9.4/contrib/generate_precompile.jl 1; then echo '*** This error is usually fixed by running `make clean`. If the error persists, try `make cleanall`. ***'; false; fi
+lld: error: unable to find library -ljulia
+lld: error: unable to find library -ljulia-internal
+ERROR: failed process: Process(setenv(`/var/tmp/portage/dev-lang/julia-1.9.4/work/julia-1.9.4/usr/tools/lld -flavor gnu '' -shared -o /tmp/jl_EWdHAb/compiled/v1.9/jl_qcZsaH --whole-archive /tmp/jl_EWdHAb/compiled/v1.9/jl_nU44gE --no-whole-archive -L/var/tmp/portage/dev-lang/julia-1.9.4/work/julia-1.9.4/usr/lib64 -L/var/tmp/portage/dev-lang/julia-1.9.4/work/julia-1.9.4/usr/lib64/julia -L/var/tmp/portage/dev-lang/julia-1.9.4/work/julia-1.9.4/usr/lib64 -ljulia -ljulia-internal`,["MFLAGS=", "PATH=/var/tmp/portage/dev-lang/julia-1.9.4/work/julia-1.9.4/usr/tools:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin", "MAKELEVEL=2", "PWD=/var/tmp/portage/dev-lang/julia-1.9.4/work/julia-1.9.4/base", "DISPLAY=:0", "BUILDROOT=/var/tmp/portage/dev-lang/julia-1.9.4/work/julia-1.9.4", "PKG_CONFIG_LIBDIR=/var/tmp/portage/dev-lang/julia-1.9.4/work/julia-1.9.4/usr/lib/pkgconfig", "MAKEFLAGS=", "SHELL=/bin/bash", "LC_ALL=C"  …  "_=/var/tmp/portage/dev-lang/julia-1.9.4/work/julia-1.9.4/usr/bin/julia", "OPENBLAS_DEFAULT_NUM_THREADS=1", "MAKE_TERMERR=/dev/pts/5", "MAKE_TERMOUT=/dev/pts/5", "USER=root", "HOME=/root", "TERM=tmux-256color", "JULIA_NUM_THREADS=1", "LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.cfg=00;32:*.conf=00;32:*.diff=00;32:*.doc=00;32:*.ini=00;32:*.log=00;32:*.patch=00;32:*.pdf=00;32:*.ps=00;32:*.tex=00;32:*.txt=00;32:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.swp=00;90:*.tmp=00;90:*.dpkg-dist=00;90:*.dpkg-old=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:", "OPENBLAS_MAIN_FREE=1"]), ProcessExited(1)) [1]
+#+end_quote
+On fait donc un symlink
+cd usr && ln -s lib lib64

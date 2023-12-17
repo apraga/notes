@@ -13,6 +13,7 @@ import Control.Monad (forM_)
 notesTOC = [ "notes/medecine/bacteriologie.org"
            , "notes/medecine/hematologie.org"
            , "notes/medecine/virologie.org"]
+notesOther = ["notes/japonais.org", "notes/cooking.org"]
 
 main :: IO ()
 main = hakyllWith config $ do
@@ -36,10 +37,9 @@ main = hakyllWith config $ do
             >>= loadAndApplyTemplate "templates/default.html" postCtx
             >>= relativizeUrls
 
-    match "notes/japonais.org" $ do
+    match (fromList notesOther) $ do
         route $ setExtension "html"
-        compile $ pandocCompiler
-            >>= relativizeUrls
+        compile $ pandocCompiler >>= relativizeUrls
 
     match (fromList notesTOC) $ do
         route $ setExtension "html"
@@ -65,7 +65,7 @@ main = hakyllWith config $ do
     create ["notes.html"] $ do
         route idRoute
         compile $ do
-            notes' <- loadAll . fromList $ "notes/japonais.org" : notesTOC
+            notes' <- loadAll . fromList $ notesTOC ++ notesOther
             let archiveCtx =
                     listField "notes" postCtx (return notes') `mappend`
                     constField "title" "Notes"            `mappend`

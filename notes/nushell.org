@@ -2,7 +2,11 @@
 #+filetags: cs
 
 * Intégration
-** TODO Doom-emacs
+** Emacs et tramp
+Pour forcer tramp à utiliser bash
+#+begin_src
+SHELL="/bin/bash" ~/.emacs.d/bin/doom env
+#+end_src
 ** Python avec virtual env
 Installer virtualenv, exemple avec `emerge virtualenv` puis
 #+begin_src
@@ -43,5 +47,3 @@ ls fastq/*/*.fastq.gz | select name | annotate  | group-by dir | values | where 
 #+end_src
 
 
-* Limite
-Problème avec nix sur les chemin -> zsh plutôt
