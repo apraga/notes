@@ -25,5 +25,17 @@ Editer un bookmark
 buku -w 320
 @end
 
-Exporter
-cd ~/.local/share/buku ; buku -e bookmarks.org ; git add bookmarks.org ; git commit -am "Save"; git push
+Mettre à jour le titre
+@code bash
+buku -u 320 --title "Nouveau titre"
+@end
+
+Chercher par tag
+@code bash
+buku neovim
+@end
+
+Exporter en markdown
+@code bash
+cd ~/.local/share/buku ; buku -e bookmarks.md; git add bookmarks.md; git commit -am "Save"; git push
+@end
