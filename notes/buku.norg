@@ -1,22 +1,29 @@
-#+title: Buku
-#+filetags: personal
-
 Ajouter un lien avec des tags
+@code bash
 buku -a http://lol.html tag1,tag2
+@end
 
 Idem avec titre
+@code bash
 buku -a http://lol.html --title Test
+@end
 
 Chercher par mot-clé
+@code bash
 buku -s context
+@end
 
 Ouvrir un lien
+@code bash
 buku -s context
 $ 1
+@end
 où 1 est le numéro du résultat
 
 Editer un bookmark
+@code bash
 buku -w 320
+@end
 
 Exporter
 cd ~/.local/share/buku ; buku -e bookmarks.org ; git add bookmarks.org ; git commit -am "Save"; git push
