@@ -2,7 +2,9 @@
 {Configuration pour démarrer}(https://github.com/nvim-lua/kickstart.nvim)
 {Colorscheme compatible treesitter}(https://github.com/rockerBOO/awesome-neovim#tree-sitter-supported-colorscheme)
 * Divers
-Copier dans presse-papier dans wayland: installer wl-clipboard ne suffit pas
+  Copier dans presse-papier dans wayland: installer wl-clipboard puis `" + y`
 
 * Aligner avec mini-align
-  `ga` pour activer, puis suivre les indications (ex: "j" pour justifier puis "c" pour centrer) et rajouter le délimiter (ex: "|")
+  `ga` pour activer, puis mettre le délimiter (ex: '|' )
+* Raccourcis
+  - `@:` répètes la dernière commande entrée avec `:`
