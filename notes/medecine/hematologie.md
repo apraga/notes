@@ -1,8 +1,4 @@
-```{=org}
-#+filetags: personal medecine hémato
-```
 # Physiologie
-
 -   Durée de vie
     -   GR: 120 jours
     -   plaquette 7 jours
@@ -41,20 +37,15 @@ Pour lignée lymphocytaire:
 ![lignée lymphocytaire](../../images/hematologie/lymphoide.png)
 
 # Hémostase
-
 -   Facteurs dépendant vitamine K: II, VII, IX, X
 -   déficit en fibrinogène : le plus souvent acquis mais congénital
     possible
-
-## Diminution TP
-
+## Variation TP, TCA
+Diminution TP
 ![](../../images/tp-diminue.png)
-
-## Augmentation isolée TCA sans traitement
-
+Augmentation isolée TCA sans traitement
 ![](../../images/tca-diminue.png)
-
-## Variations physiologiques
+Variations physiologiques
 
 -   Grossesse :
     -   augmentation facteur VIII, Willebrand **fibrinogène**,
@@ -112,7 +103,30 @@ Dosage fibrinogène avec thrombine calcique en excès + inhibiteur
 héparine : mesure du temps et conversion en g/L avec droite
 d\'étalonnage
 
-## Fonctionnement des automates d'hémostase
+## Fibrinolyse
+- Dégradation de la fibrine (une fois le caillot stabilisé)
+- Fibrinogène -> (thrombine) monomère de fibrine -> (facteur XIIIa) fibrine insoluble -> (plasmine) D-dimère, produit dégradation fibrine
+### Spécificité
+Plasminogène
+- Activé par t-PA (tissular Plasminogen Activator) et u-PA (urokinase, non fibrinospécifique)
+  - t-PA : exercice, stress, stase veineuse. Soit lié à la fibrine, soit complexe avec PAI(Plasminogen activator inhibitor type)-1 et éliminé par le foie
+- u-PA : protéolyse tissulaire surtout -> dégradation de la matrice extra-cellulaire, activation cytokines...
+- Digestion de la fibrine par liaison plasminogène et t-PA (plasmine) [NB: l'acide tranexamique inhibe l'intercaction du plasminogène]
+### Régulation
+- \alpha_2 antiplaslmine : inhibe plasmine libre donc un déficit = hémorragie grave
+- PAI-1 : inhibe t-PA et u-PA (thérapeutique : modification du t-PA recombinant pour le rendre moins sensibleau PAI-1)
+- TAFI (Thrombin activatable fibrinolysis inhibitor) = inhibe liason plasminogène-fibrine
+- fibrine elle-même (rend la réaction spécifique)
+-  architecture de la fibrine (plus ou moins résistante à la fibrinolyse)
+### Pahtologies
+- hyperfibrinolyse = risque hémorragique : 
+  - plasmine libre en circulation (déficit alpha2 antiplamsione, chirurgie, déficit PAI1, certaines leucémines aigües)
+- hypofibrinolyse = risque de thrombose : déficit plasminogène, augmentation PAI1
+### Exploration
+- Global : thromboélastrogramme
+- D-dimères, protéines fibrinolyse
+- Si syndrome hémorragique (chir, post-partum), syndrome de consommation, exclure TVP/EP, thrombose récidivante
+# Fonctionnement des automates d'hémostase
 
 - Méthode : chronométrique (coagulante), enzymatiques (chromogénique), immuno
 - Automates : Stago : starmaxo, Sysmex/Siemes: CS
@@ -178,7 +192,7 @@ d\'étalonnage
 -   autres: plasmocytome solitairee, leucémie à plasmocytes (pronostic
     sombre)
 
-## Diagnostic (2014)
+### Diagnostic (2014)
 
 -   {plasmocytes médullaires \> 10% ou plasmocytome extramédulaire} et 1
     parmi
@@ -195,7 +209,7 @@ d\'étalonnage
     -   MGUS : tout négatif (pas de CRAB, pas de marqeur, Ig \< 30,
         médullaire \< 10%)
 
-## Pronostic et traitement
+### Pronostic et traitement
 
 -   myélome multiple = incurable
 -   score ISS
@@ -203,7 +217,7 @@ d\'étalonnage
     monoclonaires
 -   surveillance : EPS +/- dosage chaine légère
 
-## Bilan initial
+### Bilan initial
 
 -   EPS (pic β, γ ou α; ou hypogamma isolée \[suspicion chaine légre
     monoclonale\]
