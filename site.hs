@@ -12,6 +12,7 @@ import Control.Monad (forM_)
 
 notesTOC = [ "notes/medecine/bacteriologie.org"
            , "notes/medecine/hematologie.md"
+           , "notes/medecine/immuno-hemato.md"
            , "notes/medecine/virologie.org"]
 notesOther = ["notes/japonais.org", "notes/cooking.org"]
 
