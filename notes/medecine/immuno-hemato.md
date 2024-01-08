@@ -25,7 +25,8 @@ Anticorps
 - protocole RH-KEL1 : femmes de la naissance à fin période procréatrice, RAI positive, hémoglobinopathie, transfusion itératives, groupe sanguin rare
 - Pour un groupe valide : 2 déterminations, 2 prélèvements indépendants, étiquettage et identité stricte du patient (risque vital !!)
 
-## ABO
+## ABO et associé
+### ABO
 
 Le plus important des groupes.
 Nature glucidique : ABO -> glycosyl transférase
@@ -62,7 +63,7 @@ Donc
 
 Note: sous-groupe A1 et A2 mais pas d'intérêt en transfusion
 
-### Variants
+#### Variants
 A1 (80%) : 
    - enzyme A1 : convertit tous les antigène H en A -> *Anticorps naturel irrégulier anti-H* (dangereux si actif 37%)
    - Ag A1
@@ -70,7 +71,7 @@ A2 : enzyme A2 : convertit tous les antigène H en A
    - pas d'Ag A1 -> anticorps antiA1
    - pas d'anticorps antiH
 
-### Phénotype rares
+#### Phénotype rares
 
 - Phénotype bombay : absence d'antigène A, B et H -> anticorps anti-A,B et H très puissant !
 - phénotypes H déficient : 
@@ -82,7 +83,7 @@ A2 : enzyme A2 : convertit tous les antigène H en A
 - B(A): les sujets B peuvent être agglutinées par des anticorps anti-A. Idem pour A(B)
 - acquis: B, A, perte expression partielle chez patients hémato
 
-### Anticorps 
+#### Anticorps 
 - naturels : réguliers, surtout IgM, ne passent pas la barrière hémato-placentaire, 3 à 6 mois après la naissance
 - immuns : irrégulier : après allo-immunisation (grosesse), hétéo (vaccins), IgG, passe la barrière hémato-placentaire
 
@@ -91,7 +92,7 @@ Antiènes dans le mileu extérieur (bactéries) -> immunisation
  - Recherche antigène A, B (à partir d'anticorps)
  - Recherche anticorps antiA, antiB (à partir hématie tests)
 
-### Régles
+#### Régles
 
 Incompatibilité :
 - donner des GR à un patient ayant dans le plasma des anticorps contre cet antigène
@@ -100,7 +101,7 @@ Incompatibilité :
 Sinon hémolyse intra-vasculaire par activation du complément 
 - libration des cytokines, protéines inflammataroie -> état de choc + arrêt cardiaque
 
-## Hh  et SEse
+### Hh  et SEse
 
 - Gènes H et SE -> haplotypes HSE, Hse, hSE, hse
    - codent pour la même enzyme mais sur des cellules différentes (H = érythroblaste, SE = muqueux, épithélial) avec production antigène H
@@ -109,7 +110,7 @@ Sinon hémolyse intra-vasculaire par activation du complément
 - Phénotype H déficients : pas d'antigène H mais anti-H plus ou moins intense (exemple du phénotype Bombay qui a un anti-H très puissant ("receveur dangereux"))
 - Anticorps antiH: dangereux chez sujet Bombay, Ah ou Bh
 
-## LE (ancien. Lewis)
+#### LE (ancien. Lewis)
 
 - Peu utile pour transfusion
 - Pas un vrai système de groupe sanguin mais sécrétion/tissulaire (existence d'une susbstance LE1 ou LE2 mais seule la second est dans les globules rouges).
@@ -127,16 +128,8 @@ Sinon hémolyse intra-vasculaire par activation du complément
 Anticorps : 
 - naturels et irréguliers
 - hémolysant dans certains cas
-## RH1/D et RH-KEL1/Rh-Kell
 
-- Recherche antigène RH1/D (avec anticorps)
-- Recherche antigène C, E, c, e Kell (RH2, 3, 4, 5 et KEL1 resp.) 
-
-## Autres
-
-   Selon kit
-
-## P1PK et globoside
+#### P1PK et globoside
 
 - P1PK = 
    - 3 antigènes (P1, Pk, NOR)
@@ -148,7 +141,7 @@ Anticorps :
    - allo anti-P = hémolyse transfusion
    - autoantiB = hémoglobinurie a frigorue
 
-## Système LU
+### Système LU
 
 Gène LU
 - 20 antigènes 
@@ -160,9 +153,59 @@ Gène LU
    - anti LU2 = très rare, actif à 37° donc *attention transfusion*
    - antiLU3 = receveur dangereux
 
-## Antigène I et i
+### Antigène I et i
 
 Ag i se transforme en I (sinon extrêment rare -> avec anticorps anti I: **pas de transfusion possible**)
+
+
+## RH1/D et RH-KEL1/Rh-Kell
+
+### RH1/D
+
+- Propre à l'homme et GR
+- 5
+- Recherche antigène RH1/D (avec anticorps)
+- 5 antigène majeurs C, E, c, e Kell (RH2, 3, 4, 5 et KEL1 resp.) 
+- le plus immunogènes
+- accidents transfusionnels graves, maladies hémolytique du nouveau-né parfois graves
+
+- 2 gènes étroitement lié sur chromosome 1 
+   - RHD : présent -> code protéine D -> D+, sinon D-
+   - RHCE : 4 allèles possible pour une protéine RHCE  Ce,CE, cE, ce
+
+- C/c et E/e sont antithétique (si absent, autre présent en double dose: ex: C- -> c+)
+- e 98% ! (quasiment public)
+
+Transmission: D  = dominant
+Nomenclature : D+ C+ e- E- par exemple, RH 1,2,-3,-4
+
+Variants :
+- soit moins de sites antigèniques  (Ag faible) -> pas d'alloimmunisation
+- soit épitopse normaux (sites antigénique normaux, diminués)  (Ag partiel) -> allo-immunisation possible avec anticorps antiD "sauvage"
+- recherche biomol si hémoglobinopathie, femme subsaharienne < 50 ans, femme caucasienne < 50 ans si C-, E- (les D partiels y sont associé)
+
+#### Anticorps
+- Immun : induit par grossesse/transfusion incompatible
+- IgG, traversent la barrière
+- le plus immunogène : RH1 (D) surtout, puis RH4 (c)
+
+### KELL
+
+- Précurseurs précurseurs lignée érythroiide 
+- KEL1 = pouvoir immunogène important
+
+- Antigènes
+   - 2 principaux et antithétique : K (KELL1,), k (KELL2 ou cellano) = antigène public en france
+   - autre : Kbpa, Kpb (KEL3 et KEL4)
+
+- Anticorps : IgG, traversent la barrière hémato-placentaire
+   - antiKEL1 = fréquent
+   - antiKEL2 et 4 = **impasse transfusionnel**
+
+### Impact délivrance
+
+RAI positive  avec allo-immunisation : anti RH1,2,3,4,4 et KEL1 -> phénotype négatif pour l'antigène et respect de tout le phénotype RH KEL
+Femme de la naissance à la fin de l'âge de procréation : respect de tout le phénotype RH KEL
 
 # Anticorps anti-érythrocytaire (RAI)
 
