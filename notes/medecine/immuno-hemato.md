@@ -207,6 +207,106 @@ Variants :
 RAI positive  avec allo-immunisation : anti RH1,2,3,4,4 et KEL1 -> phénotype négatif pour l'antigène et respect de tout le phénotype RH KEL
 Femme de la naissance à la fin de l'âge de procréation : respect de tout le phénotype RH KEL
 
+## Système FY JK MNS
+
+- Les plus important en transfusion avec Rhesus et Kell
+- antigènes propres aux globules rouges
+- antigènes propres à l'homme aux
+- bien développé à la naissance
+- le plus souvent immun (IgG)
+- **accident transfusionnel très graves**
+
+### Duffy
+
+- 2 antigènes : FY1 et FY2 (Fya et b resp.)
+- Population caucasienne : 3 phénotypes : (a+,b-), (a+,b+) et (a-,b-)
+- *Pop. africaine : le plus répandu (a-,-b)* !
+
+Public : prévalence > 99.8%
+- Ag FY3 : absence (a-,b-)
+
+#### Génétique
+
+- Chr 1- 
+- gène /DARC/ et protéine DARC
+- porte d'entrée du plasmodium dans globule rouge
+- exprimé rein, rate, poumoin... (attention aux greffe)
+- nb de site antigénique plus faible si hétérozygote qu'homozygote (effet-dose)
+- enzyme protéolytique : utile pour identification (ex: papaïne : détruit antigène FY1 et FY2, trypsine pour anticorps anti FY1 et FY25
+- FY*A et FY*B codominant 
+   - FY*A produit Ag FY1 et FY2
+   - FY*B produit Ag FY2 et FY2
+- polymorphisme
+   - allle FY*X : produit antigèn FY2 d'expression  affaiblie -> FY*A/Fy*B de phénotype apparent (a+, b-) mais en réalité (a+,b+)
+   - allèle, FY*B_null : silencieux mais uniquement dans globule rouge. Récessife : phénotype (a-,b-) dans gR mais (a-,b+) dans autres cellules 
+      - mutation promoteur gène: facteur de transcription ne se fixe pas HGAT1 donc pas de transcription du gène dans lignée GR
+   - FY*0 : très rare, pas d'expression DARC donc pas d'antigène FY sur globules rouges et autre cellules -> vrai phénotype null (a-,b-)
+      - très courant afrincain, très rare caucasien:
+      - **receveur dangereux** car produit antiFY1, 2 et surtout **3**
+- plasmodium vivaux et knowlesi utilige l'atigène FY pour traverser la membrane -> sujet (a-,b-) sont protégé
+
+#### Anticorsp
+
+- Immun IgG
+- fixe parfois complément -> **grave**
+- antiFY1, antiFY2 : **GCR phénotypé FY typés négatif**
+- anti FY3 : immuns, origine transfusionelle (fréquent drépanocytaire)
+   - risque d'hémolyse : **hyperhémolyse** chez drépanocytaire
+
+### Kidd (JK)
+
+- 2 antigènes principaux JK1 et 2 (a et b), *antithétique*
+   - exprimé aussi dans rein (attention refjet geffe)
+   - 2 allèles codominant JK*01 et 02 produisant antigèn JK1 et 2.
+   - (a-, -b) très rare
+- Ag JK3 fréquent
+
+- Gène : rôle transport urée
+- Effet-dose (variant nb site antigénique) mais pour *certains* antiJK1 et JK2
+
+#### Anticorps
+
+- IgG fixant le complément (hémolyse intravasculaire)
+- antiJK1 *perfide et dangereux* car difficile à identifier (limite de détection) et très hémolysant, se réactive rapidement
+   - **accidents hémolytiques graves**, rejet greffe rénale
+- antiJK1 et 2 positif -> **CGR phénotypés négatifs et comptabilisés** 
+  - **épreuve de compatibilité peut être négative**malgré des anticorps présents en faible quantité donc on transfuse du JK négatif
+- JK3 = (a-,b-) : attention car anticorps anti JK1 et 2..
+- auto-anticorps possible
+
+### MNS
+
+- 48 antigènes dont 35 fable prévalence
+   - 4 antigènes principamux : MNS 1 et 2 (M et N) (antithétiques), 3 et 4 (antithétiques, S et s)
+   - antigène U = exprimé si S ou s (sinon peu ou pas exprimé)
+
+- 3 gènes : GYPA, B et E -> code pour glycophorine A et B
+- Phénotype rare : S- s- U-
+   - exceptionnel caucasion, 2% afroantilons
+   - phénotype U- : délétion gène : déficit total GPA, **anti-U très puissant**
+   - phénotype Uvar : U faible et partiel (qualitatif et quantitaf)
+   - attention les 2 ne sont pas incompatibles... -> **génotypage obligatoire S- s-** cr les U- peuvent s'immuniser contre Uvar
+
+#### Anticorps
+
+- AntiMSN1 : naturel, régulier, stimulé par transfusion, infection batérienne -> pas d'incidence sur transfusion **sauf drépanocytaire : risque hémolyse**
+- antiMSN2 = très rare
+-> sang compatiblisé mais non phénotypé *sauf drépanocytaire*
+
+- antiMSN3 et 4 : donner du négatif, réaction très sévère
+
+## Autres
+
+Grande fréquence (public: > 99.9% en pop générale) 
+- attention si absence Ag public : production anticorps anti-public -> *receveur dangereux
+
+Ag Faible fréquence (privé < 1%)
+- ac anti privé : transfusion, grossesse. 
+   - Pas d'impasse transfusionnelle. 
+   - Pb en obstétrique (dangereux pour foetus)
+
+Panel non obligatoire : DO, YT, CO, X
+
 # Anticorps anti-érythrocytaire (RAI)
 
   Autre anticorps que ABO
@@ -275,7 +375,7 @@ Femme de la naissance à la fin de l'âge de procréation : respect de tout le p
 
    Tube prélevé sur anticoagulant (EDTA) + centrifugé -> plasma (Ac) ou GR (antigènes)
 
-## Recherche d'agglutinines irrégulires
+## Recherche d'agglutinines irrégulières
 
 - Anticorps contre autre que antigènes autres que A et B (not. après transfusion...)
 - EDTA, **frais**, plasma après centrification
