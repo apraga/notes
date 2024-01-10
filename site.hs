@@ -14,7 +14,7 @@ notesTOC = [ "notes/medecine/bacteriologie.md"
            , "notes/medecine/hematologie.md"
            , "notes/medecine/immuno-hemato.md"
            , "notes/medecine/virologie.md"]
-notesOther = ["notes/japonais.org", "notes/cooking.org"]
+notesOther = ["notes/japonais.md", "notes/cooking.md"]
 
 main :: IO ()
 main = hakyllWith config $ do
@@ -40,7 +40,10 @@ main = hakyllWith config $ do
 
     match (fromList notesOther) $ do
         route $ setExtension "html"
-        compile $ pandocCompiler >>= relativizeUrls
+        compile $ pandocCompiler 
+            >>= loadAndApplyTemplate "templates/post.html"    postCtx
+            >>= loadAndApplyTemplate "templates/default.html" postCtx
+            >>= relativizeUrls
 
     match (fromList notesTOC) $ do
         route $ setExtension "html"

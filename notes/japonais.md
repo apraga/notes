@@ -1,6 +1,3 @@
-```{=org}
-#+filetags: japanese
-```
 # 2021-09-30 Aya-sensei : Intro
 
 # 2021-10-08 Aya-sensei : Leçon 9 (JFBP II)
@@ -51,37 +48,25 @@
 ## Vocabulaire
 
 -   頭(あたま)/歯/喉 がいたい(あたま): mal à la tête/dent/gorge
-
 -   気分(きぶん)/調子(ちょうし) がわるいんです: je ne me sens pas très
-    bien (調子 semble être plus général) =\> おなかの調子がわるいんです
-
+bien (調子 semble être plus général) =\> おなかの調子がわるいんです
 -   怪我(けが)：blessure =\> 手/足(あし)/指(ゆび)に怪我をしたんです
-
 -   風邪をひく Marche aussi pour インフルエンザ mais pas pour le
-    covid...
-
+covid...
 -   二日酔い(ふつかよい): hangover (\"2eme jour\")
-
 -   寝不足(ねぶそく)：insomnie
-
 -   時差ぼけ(じさぼけ): jet lag
-
 -   ーができます：
-
-    -   嚔(くしゃみ)ができます: éternuer
-    -   咳(せき)ができます: tousser
-    -   鼻水(はなみず)ができます: avoir le nez qui coule
-    -   欠伸ができます: bailler
-
+-   嚔(くしゃみ)ができます: éternuer
+-   咳(せき)ができます: tousser
+-   鼻水(はなみず)ができます: avoir le nez qui coule
+-   欠伸ができます: bailler
 -   アレルギー: allergie
-
 -   花粉症(かふんしょう)： rhinite allergique
-
 -   covoiturage: ライドシェリン(？aya-sensein) 相乗り(wiki)
-
 -   犬がきらい: détester les chiens
 
-## Grammaire
+ ## Grammaire
 
 ### ーていません: Pas encore:
 
@@ -111,9 +96,6 @@ OK) まだ 3. 実は これから III. 1. もってくる+んです。2。帰っ
 -   洗う（らあ）: nettoyer (ex une cabine de douche)
 -   お大事に（おだいじ）: prenez soin de vous\
 
-```{=html}
-<!-- -->
-```
 -   用事（ようじ）: tâches à faire
 -   つごう: pratique
 -   きかい: opportunité
@@ -132,30 +114,22 @@ OK) まだ 3. 実は これから III. 1. もってくる+んです。2。帰っ
 
 ## Vocabulaire
 
--   卒業(そつぎょう）
-
--   X と遊び: jouer avec quelqu\'un (ou un animal) Mais X で遊び: jouer
+ -   卒業(そつぎょう）
+ -   X と遊び: jouer avec quelqu\'un (ou un animal) Mais X で遊び: jouer
     avec un objet
-
--   メールをチェックする: vérifir ses mails
-
--   化粧（けしょう）: se maquiller
-
--   他（ほか）：autre (ex: personnes)
-
--   éducation au Japon:
-
-    -   小学校（しょうがっこう）：école primaire
+ -   メールをチェックする: vérifir ses mails
+ -   化粧（けしょう）: se maquiller
+ -   他（ほか）：autre (ex: personnes)
+ -   éducation au Japon:
+ -   小学校（しょうがっこう）：école primaire
     -   中学校（ちゅうがっこう）: junior high school \~ collège en
         France
     -   高等学校（こうとうがっこう）: senior high school\~ lycée en
         France
+ -   狩猟（しゅりょう）: chasse
+ -   猟師（りょうし）: chasseur
 
--   狩猟（しゅりょう）: chasse
-
--   猟師（りょうし）: chasseur
-
-## Grammaire
+ ## Grammaire
 
 -   \~てから: 2 sens
 
@@ -166,7 +140,6 @@ OK) まだ 3. 実は これから III. 1. もってくる+んです。2。帰っ
         japonais depuis que je suis arrivé au japon)
 
 -   \~前に: avant \~ (forme du dictionnaire, cf leçon précédente)
-
 -   の時(とき)/ adjectif en i い時/adjectif en na な時 = quand ex:
     ３さいのとき、: quand j\'avais 3 ans
 
@@ -191,9 +164,6 @@ OK) まだ 3. 実は これから III. 1. もってくる+んです。2。帰っ
 -   Alex とよんでください: vous pouvez m\'appeller Alex
 -   経済（けいざい）: économie (matière)\
 
-```{=html}
-<!-- -->
-```
 -   二年後（ご）: 2 ans après
 -   X 前と後に半年ずつ : 6 mois (1/2 année) avant et 6 mois après X
     (ずつ = chacun)
@@ -430,23 +400,15 @@ Grammaire -ta koto ga arimasu : déjà fait
 
 ## Vocabulaire
 
--   zenkai : la dernière fois
-
--   compter des verre = \"pai\" ippai = 1 verre, nippai = 2 verres
-
--   saikin = bactéries
-
--   sakkinn = stériliser
-
--   c'était plus loin que ce qu'il mavait dit = ita yori mo...
-
--   chuushiki = seringue
-
--   doggu = outil
-
--   けっか 結果 : hépatite B
-
-    TODO: vocab sur skype + skilled
+ -   zenkai : la dernière fois
+ -   compter des verre = \"pai\" ippai = 1 verre, nippai = 2 verres
+ -   saikin = bactéries
+ -   sakkinn = stériliser
+ -   c'était plus loin que ce qu'il mavait dit = ita yori mo...
+ -   chuushiki = seringue
+ -   doggu = outil
+ -   けっか 結果 : hépatite B
+ TODO: vocab sur skype + skilled
 
 ## Grammaire {#grammaire-13}
 
@@ -459,28 +421,16 @@ nakerebanarimasen NB: -nasai = injonction (bossy !)
 ## Vocabulaire
 
 -   雪は山の上に行かないとないですか = il faut aller en haut de la
-    montagne pour avoir de la neighe (double négatiionidiomatic)
-
+montagne pour avoir de la neighe (double négatiionidiomatic)
 -   夜勤 j（やきん） = garde (tochaku = plutôt pour les gens de la
-    sécurité...)
-
+sécurité...)
 -   能力（のうりょく） = capacité à faire qqc
-
 -   認める（みとめる） = reconnaître
-
 -   能力が認められれば色々な仕事をすることができます。
-
 -   教わる = apprendre
-
 -   子供のような態度（たいど） = se comporter comme un enfant
-
 -   〜だと言われました = il a été dit que ...
-
 -   落ち着く = se calme
-
-```{=html}
-<!-- -->
-```
 -   びっくりします = être surpris
 -   あんしんします = être soulagé
 -   がっかりします = être décu
@@ -556,26 +506,16 @@ le premier = plus l'accent sur \"toujours\"
 ## Vocabulaire
 
 -   泊まる(と) : rester (à un hôtel)
-
 -   翻訳（ほんやく）: traduction
-
 -   時給（じきゅう）: salaire horaire
-
 -   いいアイデアです: une bonne idée
-
 -   編み物(あみもの) : couture
-
 -   衛生検査所（えいせいけんさじょ）: laboratoire de biologie
-
 -   ベルトコンベアう: tapis roulant
-
 -   看護師(かんごし): infirmière
-
 -   コンサルタント: consultant
-
 -   医者は貧血の検査をするためサンプルを分析した : le doctor a fait une
     analyse de sang sur un échantillon pour anémie
-
 いしゃ　ひんけつ　けんさ　ぶんせき
 
 ## Grammaire {#grammaire-15}
@@ -606,35 +546,22 @@ questions indirecte
 Microbiologie
 
 -   半日(はんにち） : une demie journée
-
 -   一日（いちにち） : un jour
-
 -   一日中（じゅう）toute la journée
-
 -   二週間に一度の日曜日: le samedi d\'il y a 2 semaines
     (にじゅうかん)　（いちど）　（にちようび）
-
 -   選ぶ（えらぶ）choisir
-
 -   人権（じんけん）droit de l\'homme
-
 -   細菌（さいきん）bactérie
-
 -   結果（けっか）résultat, conséquence
-
 -   カビ moisissure
-
 -   生ぬるい（な）tiède
-
 -   細菌(さいきん) を 培養します(ばいようします) : les bactéries
     poussent
-
 -   決める（き）décider
-
-    大阪（おおさか）に残って（のこって）好きな仕事を続けましょう（つづ）:
+大阪（おおさか）に残って（のこって）好きな仕事を続けましょう（つづ）:
     reste à Osaka et continue à faire le travail que tu aimes
-
-    -   悩み（なやみ） souci
+-   悩み（なやみ） souci
     -   アドバイス: conseil (donner) != 相談（そうだん）= conseil
         (demander)
     -   年上（としうえ）: être plus agé
