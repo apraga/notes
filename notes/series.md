@@ -1,0 +1,13 @@
+-   [ ] Big Bang Theory: Saison 1
+-   [ ] Breaking Bad: Saison 1,2
+-   [x] Deadwood
+-   [ ] Dexter: saison 1
+-   [ ] Elementary: saison 1-4
+-   [ ] Good Eats: saison 1,2
+-   [ ] Lost: saison 1-3
+-   [x] Mythbusters
+-   [ ] Planet Earth: Season 1
+-   [ ] Savage builds: Season 1
+-   [x] Rome
+-   [x] Sherlock (2010)
+-   [x] Weeds

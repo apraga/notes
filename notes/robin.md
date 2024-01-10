@@ -1,0 +1,24 @@
+```{=org}
+#+filetags: famille
+```
+Candidature : Opérateur forces spéciales (armée de terre - 1ere PMA)
+
+-   CSO: refusé sur test de personnalité, sport ok, psychotechnique ok
+
+Nouveaux objectifs :
+
+-   Contrat VOA cette année : 1 an d\'études avec la marine en césure
+    dans l\'école d\'ingénieur, puis finit école d\'ingénieur =\>
+    choisit spécialité et on y rentre en officie sous contrat CV + letre
+    motivéation puis entretien motivation avec officier + psy +/- test
+    physiques
+
+Update: entretien téléphonique ok pour officier adjudant (commando et
+aussi pour mines) =\> 2e phase
+
+-   En 2eme année : officier sous contrat dans la marine
+
+Update
+
+-   concours de gendarmerie
+-   officie sous contrat dans la marine (déminage)

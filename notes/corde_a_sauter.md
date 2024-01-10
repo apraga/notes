@@ -1,0 +1,12 @@
+```{=org}
+#+filetags: sport
+```
+# Jazz
+
+Source: <https://www.youtube.com/watch?v=pbteWH-3QlY>
+
+-   Boogie back ? Difficile à synchroniser..
+
+# Charleston
+
+<https://www.youtube.com/watch?v=Q26yEnuqAj4>

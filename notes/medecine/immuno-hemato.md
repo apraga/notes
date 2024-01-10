@@ -25,7 +25,15 @@ Anticorps
 - protocole RH-KEL1 : femmes de la naissance à fin période procréatrice, RAI positive, hémoglobinopathie, transfusion itératives, groupe sanguin rare
 - Pour un groupe valide : 2 déterminations, 2 prélèvements indépendants, étiquettage et identité stricte du patient (risque vital !!)
 
+## Notation
+Exemple pour A+ Cc ee
+1. A CcDee
+2. A RH 1,2,-3,4,-5 (car 1=D, 2=C, 3=E, 4=c, 5=e)
+3. A+ E- (on ne rend que les négatifs)
+
 ## ABO et associé
+
+
 ### ABO
 
 Le plus important des groupes.

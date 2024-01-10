@@ -1,0 +1,6 @@
+Quotidien :
+
+-   fil dentaire fluoré
+-   dentifrice fluoré (anti-caries)
+-   dentifrice contre le déchaussement : oral b calm, sensodyne repair
+    (pas le rapide) =\> censé être temporaire ...
