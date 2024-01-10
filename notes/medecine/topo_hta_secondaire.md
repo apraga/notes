@@ -1,0 +1,15 @@
+Physiopath de l\'HTA
+
+-   Sténose de l\'artère rénale : rein hypoperfusé =\> activation du
+    système rénine angiotensine =\> augmentation rénine et par
+    conséquent aldostérone, hypokaliémie
+-   Coarctaion de l\'aorte : hypoperfusion =\> activation du système
+    rénine angiotensine
+-   Phéochromocytome : tumeur de la médullosurrénale =\> produit
+    (nor)adrénaline
+-   Adénome de Conn : tumeur des surrénale =\> produit aldostérone =\>
+    hypokaliémie et diminution rénine en réaction
+-   Syndrome de Cushing : compliqué mais augmentation résistance
+    vasculaire et du débit cardiaque =\> aldostérone, rénine basse
+-   Acromégalie : rétention de sodium, expansion volémique
+-   Hyperthyroïdie : augmentation volume sanguin, débit cardiaque

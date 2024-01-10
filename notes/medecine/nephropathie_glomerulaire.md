@@ -1,0 +1,59 @@
+# Syndrome néphrotique
+
+= tout ce qui est **-ose** + tout ce qui sclérose
+
+## Syndrome néphrotique à lésons glomérulaires minimes
+
+-   rien
+
+## Hyalinose segmentaire et focale (HSF)
+
+-   prolifération: fibrose qui va piéger les protéines plasmatiques
+    (dépôts hyalins)
+-   dépôts immuns: non, pas immun !
+
+## Glomérulonéphrite extramembraneuse
+
+-   dépôts immuns: oui, le long de la membrane baso-glomérulaire
+-   prolifération: ces dépôts vont épaissir la MBG (spicules)
+
+## Amylose
+
+-   dépôts immuns: oui, c\'est immun
+-   prolifération: oui, rouge Congo
+
+## Diabète
+
+-   prolifération: oui, sclérose du mésangium
+-   dépôts immuns: non, pas immun
+
+# Syndrome hématurique
+
+= le reste, sans compter les infections
+
+## Glomérulonéphropathie à dépôts d\'IgA (fréquente++)
+
+-   dépôts immuns: oui, c\'est dans le nom (mésangium)
+-   prolifération: partout (mésangium, endo et extracapillaire)
+
+## Syndrome d\'Alport
+
+-   rien
+
+## GN rapidement progressive
+
+-   prolifération : nécrose qui va rompre la MBG et prolifération en
+    croissant extracapillaire à partir de là
+-   dépôts immuns : non si ANCA, granuleux si lupus/PR, linéaire le long
+    de la MBG (Goodpasture si atteinte pulmonaire en plus ou GN à Ac
+    anti-MBG seule)
+
+# Syndrome néphritique
+
+Post-infectieu
+
+-   prolifération: endocapillaire (les PNN qui circulent à cause de
+    l\'inflammation) + des *humps* en extramembraneux (pas
+    d\'explications)
+-   dépôts immuns : oui, de complément et partout (endo+
+    extramembraneux)

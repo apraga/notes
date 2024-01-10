@@ -1,0 +1,43 @@
+On veut éviter que le sang ne soit trop dilué, ou on contraire pas assez
+dilué.
+
+Or les mouvements d\'eau (entre le secteur intra- et extracellulaire)
+vont dépendre des concentrations ! Par exemple, il y a surtout du sodium
+en extra-cellulaire. Donc s\'il y est très concentré, l\'eau va sortir
+des cellules pour équilibrer tout ça.
+
+Comme c\'est compliqué de calculer la quantité de sodium, on va regarder
+sa concentration, la natrémie.
+
+# Cas 1: hyponatrémie (sang trop dilué ?)
+
+Une natrémie basse = augmentation du volume plasmatique ?  Pas
+toujours...
+
+-   si la glycémie est très haute, cela va forcer un déplacement d\'eau
+    en dehors des cellules. Donc le sodium sera dilué mais ce sera
+    simplement un **transfert** !
+-   s\'il y a trop de protéines, la machine qui mesure la natrémie va
+    les compter aussi dans le volume. Donc **fausse dilution**
+
+Sinon oui ! (**vraie hyponatrémie**) Dans ce cas, on réfléchit sur la
+diminution de la concentration du sodium = quantité de sodium / volume.
+On a 3 situations
+
+1.  Augmentation du volume seule : c\'est la version facile. Ça peut
+    être du à :
+    -   trop de boisson !
+    -   l\'hormonone anti-diurétique qui est sécrétée en excès
+    -   autres
+2.  Le sodium et le volume diminuent mais le sodium diminue nettement
+    plus : on a donc des **pertes de sel**
+    -   soit par le rein (diurétique...)
+    -   soit ailleurs (vomissement, diarrhés...)
+3.  Le sodium et le volume augmentent mais le volume augmenet nettement
+    plus : pour simplifier, il faut imaginer qu\'il y a des oedèmes.
+    L\'eau s\'accumule en interstitiel, donc la pression artérielle
+    diminue. En réaction, l\'hormnone antidiurétiqe est stimullée pour
+    corriger tout ça. D\'où **réabsorption de sodium et d\'eau** !
+    -   insuffisance cardiaque
+    -   insuffisance hépatocellulaire
+    -   insuffisance rénale (mécanisme différent)

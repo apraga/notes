@@ -10,10 +10,10 @@ import Control.Monad (forM_)
 -- 2. we have a custom filter to correct org-roam internal link
 --------------------------------------------------------------------------------
 
-notesTOC = [ "notes/medecine/bacteriologie.org"
+notesTOC = [ "notes/medecine/bacteriologie.md"
            , "notes/medecine/hematologie.md"
            , "notes/medecine/immuno-hemato.md"
-           , "notes/medecine/virologie.org"]
+           , "notes/medecine/virologie.md"]
 notesOther = ["notes/japonais.org", "notes/cooking.org"]
 
 main :: IO ()
@@ -45,6 +45,8 @@ main = hakyllWith config $ do
     match (fromList notesTOC) $ do
         route $ setExtension "html"
         compile $ pandocCompilerWith defaultHakyllReaderOptions withTOC
+            >>= loadAndApplyTemplate "templates/post.html"    postCtx
+            >>= loadAndApplyTemplate "templates/default.html" postCtx
             >>= relativizeUrls
 
     -- Generate list of posts

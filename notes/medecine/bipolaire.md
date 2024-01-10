@@ -1,0 +1,196 @@
+```{=latex}
+\setlist{itemsep=2pt,topsep=0pt,parsep=0pt,partopsep=0pt}
+```
+```{=latex}
+\pagestyle{empty}
+```
+```{=latex}
+\titlespacing*{\section} {0pt}{5pt}{1pt} % spacing
+```
+```{=latex}
+\titlespacing*{\subsection} {0pt}{1pt}{1pt}
+```
+`\vspace*{-3cm}`{=latex}
+
+```{=latex}
+\begin{multicols}{2}
+* Général
+:UNNUMBERED: t
+- Trouble psy sévère, chronique et fréquent
+- Humeur, activité, énergie augmentées (manie) ou diminuées (dépression).
+- Souvent associé à d'autres troubles psy (troubles anxieux, addictifs) et non psy (CV, syndrome métabolique, etc.).
+- Origine multifactorielle (FR génétiques (60 à 70%), environnementaux.
+
+Épidémio :
+- 1-4 % population,
+- 2e cause de suicide parmis troubles psy
+- enfant : 0,1 %, ado> 1 %)
+- Début à 15 et 25 ans, sex-ratio = 1 (type I) mais prédominance féminine pour type II
+* Sémiologie psychiatrique
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+** Syndrome maniaque
+- augmentation pathologique de l'humeur et de l'énergie ou de l'activité \ge 1 semaine ("pile électrique chez qui tout va trop vite)
+- *urgence diagnostique et thérapeutique* \Rightarrow hospitalisation !
+- 3 composantes (cf tableau)
+  - symptômes psychotique possible !
+  - idée délirantes
+  - hallucinations (40 à 50 %)
+- comportements à risque, recherche de sensations fortes, substances psychoactives, achats pathologiques
+
+** Syndrome hypomaniaque
+- >\ge 4 jours consécutifs
+- semblable au syndrome maniaque mais moins intense, rententissement moindre. rupture totale avec l'état antérieur
+- hospitalisation non nécessaire
+** Syndrome dépressif
+Y penser si
+- EDC avant 25 ans/en post-partum/début rbutal
+- ATCD \ge 3 EDC
+- ATCD familial de trouble de l'humeur
+- non réponse ttt antidépresseur
+- mélancolique et saisonnier.
+
+* Diagnostic
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+** Épisode maniaque
+#+ATTR_LATEX: :environment enumerate :options [label=\Alph*.]
+A. \ge 1 semaine presque tous les jours avec humeur est élevée/expansive/irritable de façon anormale et persistante
+B. \ge 3 symptômes (intensité significative + changement notable du comportement):
+   - augmentation de l'estime de soi ou idées de grandeur
+   - réduction du besoin de sommeil
+   - désir constant de parler
+   - fuite des idées
+   - distractibilité
+   - augmentation de l'activité orientée vers un but ou agitation psychomotrice
+   - engagement excessif dans des activités à potentiel élevé de conséquences dommageables (achats inconsidérés)
+   - altération marquée professionnel/social ou nécessitant hospitalisation
+C. Pas imputable à une substance / autre affection médicale générale.
+** Épisode hypomaniaque
+#+ATTR_LATEX: :environment enumerate :options [label=\Alph*.]
+A. Idem A. de la manie mais \ge 4 jours consécutifs.
+B. Idem B. épisode maniaque
+C. Modifications indiscutables du fonctionnement
+D. Manifestes pour les autres.
+E. *Pas* d'altération marquée du fonctionnement professionnel ou social ou nécessitant une hospitalisation. S'il existe des caractéristiques psycho-
+F. Idem épisode maniaque
+** Épisode dépressif caractérisé
+#+ATTR_LATEX: :environment enumerate :options [label=\Alph*.]
+A. \ge 5 des symptômes pendant \ge 2 semaines, + changement par rapport au fonctionnement antérieur et\ge 1 symptomes parmis {humeur dépressive, perte d'intérêt ou de plaisir} :
+  - humeur dépressive présente pratiquement toute la journée, PTLJ
+  - diminution marquée de l'intérêt/plaisir pour presque toutes les activités pratiquement toute la journée, PTLJ
+  - modification significative du poids sans régime ou modification de l'appétit PTLJ.
+  - insomnie ou hypersomnie PTLJ
+  - agitation ou ralentissement psychomoteur PTLJ
+  - fatigue ou perte d'énergie tous les jours
+  - sentiment de dévalorisation ou de culpabilité excessive ou inappropriée PTLJ
+  - diminution de l'aptitude à penser ou à se concentrer ou indécision PTLJ
+  - pensées de mort récurrentes, idées suicidaires récurrentes sans plan précis
+B. Détresse cliniquement significative/altération du fonctionnement social, professionnel ou dans d'autres domaines importants.
+C. Pas due aux effets physiologiques directs d'une substance ou d'une autre affection médicale générale.
+** Caractéristiques cliniques de l'épisode
+- *psychotiques* : idées délirantes, d'hallucinations. /Congruentes ou non/ à l'humeur (consistant avec les thèmes, ex : maniaque + thème mégalomaniaque)
+- *mixtes* : symptômes dépressifs pendant épisode maniaque.
+  (l'inverse s'appelle un épisode dépressif caractérisé avec caractéristique mixte \Rightarrow _risque suicidaire_ élevé !)
+- *anxieuses* \Rightarrow _risque suicidaire_ élevé !
+- avec *début en péri-partum* : pendant la grossesse et jusqu'à 4 semaines après l'accouchement
+- *catatoniques* = catalepsie (flexibilité cireuse), négativisme, stéréotypies, impulsions, écholalie, écho praxie. /NB: trouble bipolaire = cause la plus fréquente du syndrome catatonique/
+** Selon l'évolution des épisodes récurrents
+- Avec caractère *saisonnier* : épisodes maniaques, hypomaniaques ou dépressifs) à une période particulière de l'année avec épisode / rémission /virage
+- Avec *cycles rapides* : \ge 4 épisodes de l'humeur sur les 12 derniers mois
+** Types
+#+ATTR_LATEX: :environment enumerate :options [label=\Roman*.]
+- \ge 1 épisode(s) maniaque(s)
+- \ge 1  épisode(s) hypomaniaque(s) et \ge 1 épisodes dépressifs caractérisés.
+** Diagnostics différentiels
+_Non psy_ :
+- substances psychoactives++ (alcool, cannabis, amphétamines et cocaïne, hallucinogènes).
+- neuro: tumeur cérébrale,  SEP, AVC, pathologie neuro- dégénérative, épilepsie focale (rare)
+- endoc: hypo/hyper-thyroïdie, maladie de Cushing
+- métaboliques : hypoglycémie, troubles ioniques, maladie de Wilson, etc.
+- médicamenteuses (corticoïdes, antidépresseurs, interféron-alpha, bêta-bloquants, L-Dopa, etc.).
+Bilan:
+- Sanguin :
+  - glycémie, ionogramme, calcémie. urée, créatinémie.
+  - NFS, plaquettes, CRP, TSH US, hépatique.
+  - Toxiques urinaires : cannabis, cocaïne, opiacés, amphétamines.
+- Imagerie :
+  - Cérébrale : IRM + EEG si c'est un premier épisode
+- ECG (bilan pré-thérapeutique des antipsychotiques et du lithium).
+- trouble dépressif récurrent
+_Psy_: trouble de personnalité, déficit de l'attention, schizophrénie, trouble anxieux, TOC,  trouble délirant persistant, troubles addictifs
+** Complications
+- cycles rapideh
+- trouble psychiatriques : addictifs, anxieux, troubles du sommeil et des rythmes, etc.
+- non-psy : CV, syndromes métaboliquesx..
+- suicide (15 % des bipolaires décèdent par suicide)
+- délits/crimes
+- désinsertion familiale  professionnelle et sociale
+* Prise en charge
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+** Hospitalisation en psychiatrie
+- Si *épisode maniaque* = hospitalisation en urgence +/- sans consentement.
+- Si *EPDC + critères de gravité* (caractéristique mélancolique, psychotique, mixte, etc.)
+- Autres : risque suicidaire élevé, conséquences délétères pour le patient et pour l'entourage et les soignants risque hétéro agressif, ou complications médico-légales.
+** Phase aiguë : général
+- Symptomatique : agitation, risque suicidaire, réhydratation et troubles hydro-électrolytiques, perturbation du sommeil, comportements à risque (grossesse, MST)
+- Surveillance efficacité du traitement
+** Traitement d'attaque (6-8 semaines)
+Épisode maniaque :
+- *Arrêt antidépresseur* (peuvent induire le virage maniaque),
+- *Lithium* /valproate (Depakote)/carbamazépine
+  - *Antipsychotique de 2e génération* (Olanzapine, Risperidone, Quetiapine, Aripiprazole).
+- *Protection juridique* : sauvegarde de justice en cas de dépenses ou achats excessifs
+EDC
+  + Lithium /Lamotrigine /Quetiapine  monothérapie
+  + au moins 2 semaines de traitement à dose efficace.
+  + Prévention et surveillance des idées suicidaires.
+** Consolidation (4-6 mois)
+Idem si bonne tolérance, arrête anxiolytique e hypnotique si possible
+** Long cours (prophylaxie)
+Selon patient
+** Autres
+- *électroconvulsivothérapie* (ECT) = si pronostic vital engagé et après échec des autres ttt. Curatif pour les épisodes. Indications :
+  - EDC sévère/caractéristiques mélancoliques/résistant aux ttt
+  - épisode maniaque sévère et prolongé/résistant aux tt
+  - syndrome catatonique
+  - trouble bipolaire avec cycles rapides
+  - mauvaise tolérance des psychotropes, risque de décompensation
+  - CI aux autres traitements (femme enceinte, personne âgée, etc.).
+- *Psychothérapie* : TCC, thérapie interpersonnelles
+- *Éducation thérapeutique*
+- Réhabilitation psychosociale: remédiation cognitive, réadaptation psychosociale
+#+LaTeX: \end{multicols}
+```
+  PSYCHOAFFECTIVES                                         PHYSIOLOGIQUE
+  -------------------------------------------------------- ---------------------------------------------------------
+  **Perturbations de l\'humeur** :                         **Perturbations du sommeil**
+  \- humeur élevée, expansive, exaltée, euphorique         \- insomnie partielle/totale,
+  \- ou irritabilité                                       \- réduction du temps de sommeil
+  **Perturbations des émotions** :                         \+ à une absence de sensation de fatigue.
+  \- labilité émotionnelle                                 **Perturbations des conduites alimentaires** :
+  \- hyperréactivité ou hyperesthésie                      \- anorexie (partielle ou totale) ou hyperphagie,
+  (réponses émotionnelles disproportionnées par            \- amaigrissement
+  rapport aux stimuli émotionnels),                        \- possible déshydratation.
+  \- hypersyntonie (participation spontanée et             **Perturbations de la sexualité** :
+  adhésion très rapide à l\'ambiance affective)            \- augmentation du désir et excitation sexuelle
+  **Altérations du contenu de la pensée** :                , hypersexualité
+  \- augmentation de l\'estime de soi,                     
+  \- idées de grandeur, sentiment de                       
+  toute-puissance, idées mégalomaniaques,                  
+  \- altérations ou absence de la conscience du trouble.   
+  PSYCHOMOTRICE                                            
+  **Accélération du cours de la pensée**                   **Accélération motrice et comportemental** :
+  \- tachypsychie (accélération des idées),                \- agitation motrice, hyperactivité souvent stérile,
+  \- fuites des idées (impression que les idées fusent),   \- augmentation de l\'énergie,
+  \- coq-à-l\'âne (changement rapide d\'une idée           \- augmentation des activités à but dirigé
+  à l\'autre sans lien apparent),                          (professionnelles, sociales ou sexuelles),
+  \- jeux de mots, ludisme, associations par assonances.   \- logorrhée (augmentation du débit de parole)
+  **Altérations cognitives**                               \- tachyphémie (augmentation de la vitesse de parole),
+  \- hypervigilance,                                       \- hypermimie (augmentation des expressions du visage),
+  \- distractibilité,                                      \- désinhibition (contact familier).
+  \- altérations attention et concentration.               
