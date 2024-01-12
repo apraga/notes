@@ -1,23 +1,27 @@
+---
+title: Immuno-hématologie
+...
+
 # Phénotypage érythrocytaire
 
-ANtigènes des groupes sanguins : 
-- portés par glycolipides ou glycopoténies
+Antigènes des groupes sanguins : 
+- portés par glycolipides ou glycoprotéines
 
 Classification
-1. ABO et associsé = tissulaires 
+1. ABO et associés = tissulaires 
    - GR mais pas que
-   - pas propres à l'hommes
+   - pas propres à l'homme
    - naturels
-   - synthésisent enzymes qui vont produire les antigènes (pas de production directe par les gnes)
+   - synthétisent enzymes qui vont produire les antigènes (pas de production directe par les gnes)
 2. Rhésus et autres = inverse
 
 Anticorps 
 - naturels = apparait spontanément, présent milieu extérieur, stimule système immunatire
-- immuns = après grossess, transfusion, greffe incompatible
-- réguliers = toujours présent si antgne absent (ex: antiA)
+- immuns = après grossesse, transfusion, greffe incompatible
+- réguliers = toujours présent si antigène absent (ex: antiA)
 - irrégulier = peut être absent malgré antigène (ex anti-D)
 
-- 1 seul échantillon, 1 seule détermination si automatique (2 techniciens si manuel)
+- 1 seul échantillon, 1 seule détermination si automatique (2 techniciens si manuelle)
 - Groupe sanguin = ABO, Réhus (RH2,3,4,5), KEL1
 - Indications limitées : transfusion, grossesses (pour transfusion)
 - Choix pour transfusion : 
@@ -26,6 +30,7 @@ Anticorps
 - Pour un groupe valide : 2 déterminations, 2 prélèvements indépendants, étiquettage et identité stricte du patient (risque vital !!)
 
 ## Notation
+
 Exemple pour A+ Cc ee
 1. A CcDee
 2. A RH 1,2,-3,4,-5 (car 1=D, 2=C, 3=E, 4=c, 5=e)
@@ -47,8 +52,8 @@ Nature glucidique : ABO -> glycosyl transférase
 - allèle A et B : forte homologie, enzyme codée ont le même substrat (sustance H), codominant
 - allèle A avec délétion : enzyme est inactivée
 - donc 
-   - groupe A = >= 1 allèle A , 0 allèle B
-   - groupe B = >= 1 allèle B , 0 allèle A
+   - groupe A => 1 allèle A, 0 allèle B
+   - groupe B => 1 allèle B, 0 allèle A
 
 Substance du base (tous les individus) -> enzyme H (codée par gène H chez la plupart des individus)
   - individu O = rien de plus
@@ -88,14 +93,14 @@ A2 : enzyme A2 : convertit tous les antigène H en A
    - NB: -> anticorps antiH moins puissent pour Bombay réunion ou para-Bombay
 - faible expression antigène A B
 - cis-AB : 2 allèles transmis comme un (d'ou le cis-)
-- B(A): les sujets B peuvent être agglutinées par des anticorps anti-A. Idem pour A(B)
+- B(A): les hématies du sujet B peuvent être agglutinées par des anticorps anti-A. Idem pour A(B)
 - acquis: B, A, perte expression partielle chez patients hémato
 
 #### Anticorps 
 - naturels : réguliers, surtout IgM, ne passent pas la barrière hémato-placentaire, 3 à 6 mois après la naissance
-- immuns : irrégulier : après allo-immunisation (grosesse), hétéo (vaccins), IgG, passe la barrière hémato-placentaire
+- immuns : irrégulier : après allo-immunisation (grosesse), hétéro (vaccins), IgG, passe la barrière hémato-placentaire
 
-Antiènes dans le mileu extérieur (bactéries) -> immunisation
+Antiènes dans le milieu extérieur (bactéries) -> immunisation
 
  - Recherche antigène A, B (à partir d'anticorps)
  - Recherche anticorps antiA, antiB (à partir hématie tests)
@@ -107,7 +112,7 @@ Incompatibilité :
 - donner du plasma avec des anticorps à un patient qui a des antigène sur le GR
 
 Sinon hémolyse intra-vasculaire par activation du complément 
-- libration des cytokines, protéines inflammataroie -> état de choc + arrêt cardiaque
+- libration des cytokines, protéines inflammatoirre -> état de choc + arrêt cardiaque
 
 ### Hh  et SEse
 
@@ -115,20 +120,20 @@ Sinon hémolyse intra-vasculaire par activation du complément
    - codent pour la même enzyme mais sur des cellules différentes (H = érythroblaste, SE = muqueux, épithélial) avec production antigène H
    - h et se = silencieux ("non sécréteur")
     
-- Phénotype H déficients : pas d'antigène H mais anti-H plus ou moins intense (exemple du phénotype Bombay qui a un anti-H très puissant ("receveur dangereux"))
+- Phénotype H déficients : pas d'antigène H, mais anti-H plus ou moins intense (exemple du phénotype Bombay qui a un anti-H très puissant ("receveur dangereux"))
 - Anticorps antiH: dangereux chez sujet Bombay, Ah ou Bh
 
 #### LE (ancien. Lewis)
 
 - Peu utile pour transfusion
-- Pas un vrai système de groupe sanguin mais sécrétion/tissulaire (existence d'une susbstance LE1 ou LE2 mais seule la second est dans les globules rouges).
-- enzyme produit antigene seulement dans cellules sécréteuse (muqueuse de glande salivaire, cellules inconnues)
+- Pas un vrai système de groupe sanguin mais sécrétion/tissulaire (existence d'une substance LE1 ou LE2 mais seule la second est dans les globules rouges).
+- Enzyme produit antigene seulement dans cellules sécréteuses (muqueuse de glande salivaire, cellules inconnues)
 - antigène adsorbé par le globule rouge et non produit
 - Anticorps : anti-LE1, LE1, LebH, LebL....
 - dépend du gène sécréteur (SE) et du gène Lewis (Le)
-   - se/se et le/le : pas de sécrétion, pas de Lewis dans la cellules sécrétants = reste tel quel (précursieurs type)
+   - se/se et le/le : pas de sécrétion, pas de Lewis dans la cellule sécrétantes = reste tel quel (précurseurs type)
    - se/se et LE : enzyme -> antigène Lewis a
-   -  SE et LE : antigène H d'abor puis antigène Lewis b (action successive des 2 enzymes)
+   -  SE et LE : antigène H d'abord puis antigène Lewis b (action successive des 2 enzymes)
 
 - défini à 2 ans donc pas d'impact obstrétrical
 - chez la femme enceinte, les antigènes vont se décrocher
@@ -153,7 +158,7 @@ Anticorps :
 
 Gène LU
 - 20 antigènes 
-   - 4 couples d'antigènes dits antéthtiques car il faut au moins l'un des 2 (a ou b) (sinon très rare)
+   - 4 couples d'antigènes dits antithétiques car il faut au moins l'un des 2 (a ou b) (sinon très rare)
    - 12 ag fréquents
 - Lutheran b = rare (impasse transfusionnelle)
 - anticorps 
@@ -163,7 +168,7 @@ Gène LU
 
 ### Antigène I et i
 
-Ag i se transforme en I (sinon extrêment rare -> avec anticorps anti I: **pas de transfusion possible**)
+Ag i se transforme en I (sinon extrêmement rare -> avec anticorps anti I: **pas de transfusion possible**)
 
 
 ## RH1/D et RH-KEL1/Rh-Kell
@@ -395,8 +400,8 @@ Dépistage
 - semi-quantitatif : 1 à 4 croix
 - antiglobuline dans le gel
 
-Identification: sur 11 hématies tests (spécificité de l'anticorps)
-- régle des 3+/3- : 3 hématies positives pour l'antigène et 3 négatives
+Identification : sur 11 hématies tests (spécificité de l'anticorps)
+- regle des 3+/3- : 3 hématies positives pour l'antigène et 3 négatives
 
 Si positive : 
 - vérifier absence de l'antigène correspondant à l'anticorps
@@ -415,17 +420,17 @@ Indication
 
 ## Test direct à l'antiglobuline
 
-On met en évidence les anticorps (ou fraction du complément) présents sur hématies du patients
-- ajout antiglobuline humaine : agglutine si les anticorps existents
+On met en évidence les anticorps (ou fraction du complément) présents sur hématies du patient
+- ajout antiglobuline humaine : agglutine si les anticorps existent
 
 Technique
-- Antiglobuline polyvente (IgG + complémenta)
+- Antiglobuline polyvalente (IgG + complémenta)
 - Antiglobuline spécifique (IgG et IgM)
 
 Indication
 - anémie hémolytique auto-immune
 - maladie hémolytique néonatale : anticorps maternels sur antigènes foetaux (obligatoire sur tous les nouveaux nés)
-- accident transfusionnelle (anticorps du patient sur globules rouges transfusés)
+- accident transfusionnel (anticorps du patient sur globules rouges transfusés)
 
 TDA positifs
 - IgG : élution
@@ -440,3 +445,9 @@ Puis TIA pour regarder leurs spécificités
 Sensibilité pour allo-immunisation : éluat > TDA > RAI
 - élution positive dans un premier temps car anticorps sont sur les globules rouges seuls (ex. d'une transfusion avec anticorps contre GR ) -> **RAI négative** !
 - puis TDA+ (besoin de plus d'anticorps car l'élution fait une concentration)
+
+# Norme 15189 (Patrick Joubaud)
+
+Cf [cofrac]
+
+Attention au IgG+ ou C3d+ en TDA 

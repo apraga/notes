@@ -1,3 +1,7 @@
+---
+title: Cuisine
+...
+
 # Desserts
 
 ## [DONE]{.done .DONE} Biscuit cuiller

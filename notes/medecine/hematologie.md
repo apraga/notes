@@ -1,3 +1,7 @@
+---
+title: Hématologie
+...
+
 # Physiologie
 -   Durée de vie
     -   GR: 120 jours
