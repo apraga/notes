@@ -57,5 +57,9 @@ def toCSV [d] { $d.name | insert 0 ($d.dir | first) | insert 1 ($d.id | first) |
 
 ls fastq/*/*.fastq.gz | select name | annotate  | group-by dir | values | where ($in | length) > 1 | each { toCSV $in } | save -f input.txt
 
-
 ```
+
+Générer une liste de tâches à partir d'un alphabet et d'un index
+
+    
+    seq char E Z | enumerate | each {|it| t add pro:seedbox.seedhost $"Ajouter ancient torrents ($it.item)" $"wait:+($it.index + 1)d" $"sched:+($it.index + 1)d" }
