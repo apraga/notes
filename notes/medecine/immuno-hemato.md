@@ -451,3 +451,97 @@ Sensibilité pour allo-immunisation : éluat > TDA > RAI
 Cf [cofrac]
 
 Attention au IgG+ ou C3d+ en TDA 
+
+# Présentations
+
+## Complications transfusionnelles 2
+
+leucémie aigue : phénotype RH-K, irradiation si greffe cellules souche ou ID profondeur
+Tumeur solutique : pas d'irradiation
+pour les 2, seuil 80
+
+Patient âgé : transfusion lente (2h en moyenne)
+
+Indications
+
+- Phénotypé : transfu répétées, maladie hémato, groupe rare, *femme de la naissance à la fin de période procréatrice*, hémoglobinopathie
+- Compatibilté : RAI+, drépano
+- Irradié: 
+   - indications: don intrafamiliale (quelque soit degré parenté !), déficit immunitaire congénitale, avant/pendant prélovement CSH, *autogreffe CSH* (au moins 3 mois), *allogreffe* (au moins 1 an)
+   - prévenir GvH (lymphocytes du donneur attaquent tissus hôte, moelle) Note: immunocompétent, les LT sont censé les détruirer
+
+RAI valide 3j (21 si négative sans transfus, grossesse ou transplantation)
+
+Effets indésirables grave d'imputabilité forte
+
+- allergie 56%
+- 40% pulmonaire (oedeme pulmonaire de surcharge surtout)
+
+### TACO = OAP de surcharge (transfusion acute circulatory overload)
+
+- 1ere cause de décès transfu
+- sous déclaro
+- recos : 
+   - à risque si > 70A avec comordbidité cardio 
+      - (pseudoobstruction d'aval = accumulation sang donc surtout eau en amont: hypertension oreillette gauche donc alvéole in fine )
+      - altération FEVGE, rétrécisseent aortique, HEC, IRC (déficit élimintation)
+   - prévention : transfu lente (1 CGR en 2H) + surveillance *TA* (premier signe de surcharge) : furosémide ? (pas de reco)
+
+
+### TRALI * transfusion acute lung injury
+SDRA: altération membrane alvéolo capillaire par PNN
+hypoxémie + oedème pulmonaire bilat à la radio  + *absence* insuf cardiaque gauche (donc furosémide inefficace)
+
+Étiologie : agression membrane 
+- directe = infection, trauma thoracique
+- indirecte : choc septique, pancréatite, CIVD
+
+Physio : lié au PNN surtout (réponse inflammatoire dérégulée -> chimiotactinsme jusque dans alvéoles puis production de cytokine et destruction membrane). Pronostic ~ infiltrat
+
+Clinique : dyspnée d'aggravation rapide dans les 6h (voire 12-24h), crépitants, infiltrat pulmonaire bilatérale mais *pas de signe de surcharge* contrairement à OAP
+Évolution favoirable sous VNI dans la majorité des cas (O2 pousse l'eau dans les vaisseaux)
+
+
+Fièvre : plutôt tralie, hypertension plutôt TACO
+BNP, echocardio : plutôt TACO
+
+
+## Anémies hémolytique auto-immunes
+
+GR: 120j
+Destruction macrophage : hb -> Fer (réuitilsé), globine (décomposé AA), hème (bilirbuine non configuée puis fixée almbunie -> bili conjugée -> 85% stercobiblinogène)
+Classiication 
+- corpusculaire: membrane (sphérocyytose), Hb, déficit enzymatique (G6PD), hémoglobinurie paroxistique nocturne
+- extracorpusculaire : mécanique, toxqiue, infection, auto-immune
+
+Autoimmune : Ac contre Ag GR
+- plutôt âgé, un peu plus femme
+- mortalité 8-15%
+- mécanisme : fixation du fragment FC sur macrophages tissulaires ou activation complément (plutôt intravasc)
+
+Étiologie 
+- idiopathique 50%
+- secondaire : infection (MNI, CMV, parvo, syphilis, turberucoles), traitement, associé autominnu (lupus, SAPL), associé hémopathie lymphoïde
+
+Selon type auto-ac
+- chaud : adulte, plutôt intratissulaire, IgG 37%
+- agglu froide : > 50A, intratissulaire ou vasculaire, IgM, plutôt chronique , plutôt chronique 
+- froid autre (infectieux)
+- hémoglobinurie paroxistique a frigorie : aîgu, enfant. Attention aux mycoplasme aussi
+- autre (large amplitude thermique)
+
+Intravasculaire : brutal, fièvre, douleur lobmaire, urine "rouge porto", ictère
+Extravasc : progressif, discret  (subictère conjonctival)
+
+Diag : 
+- clinique + bio (anémie normochromoe normocytaire, pas de schizoytes (!= mécanique), sd hémolytique)
+- IH: Coombis direct : hématies avec Ac déjà fixées + antiglobuline -> agglu
+   - Penser à chercher des IgA si neg
+   - IgG+ : élution (détacher Ac sur hématie et déterminer leur spécifique en TIA) puis Coombs anticiderct (éluta sur panel connu avec antigolbuline)
+   - C3+ : agglu froide
+
+Tttt : 
+- autoanticorps chaud : cortico, folates
+- froid : MAF: pas d'exposition au froid
+
+NB: **tout positif (panagglu + témoin autologue positif)** -> adsorption (soit le plasma du patient sur hématies du donneur, soit sur ses hématies (l'idéal))
