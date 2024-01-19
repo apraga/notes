@@ -17,9 +17,10 @@ notesTOC = [ "notes/medecine/bacteriologie.md"
            , "notes/medecine/virologie.md"]
 notesOther = ["notes/japonais.md", "notes/cooking.md"]
 
+images = ["images/*", "images/microbiologie/*", "images/hematologie/*"]
 main :: IO ()
 main = hakyllWith config $ do
-    forM_ ["images/*", "images/microbiologie/*"] $ \f -> match f $ do
+    forM_ images $ \f -> match f $ do
         route   idRoute
         compile copyFileCompiler
     match "css/*.css" $ do

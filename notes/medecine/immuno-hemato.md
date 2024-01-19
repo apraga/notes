@@ -2,12 +2,30 @@
 title: Immuno-hématologie
 ...
 
+# Fiches
+
+- IgM : anticorps froid (optimum 4°), ne passent pas la barrière hématoplacentaire, agglutation spontanée, fixe le complément
+- Ig : optimium 37`, peut passer la barrière hématoplacentaire
+
+![TIA](../../images/hematologie/coombs-indirect.png)
+![TIA](../../images/hematologie/coombs-direct.png)
+
+- Test indirect antiglobuline (RAI): plasma patient + globules rouges connus + antiglobuline
+- Test direct antiglobuline (TDA): globules rouges patient avec Ac + antiglobuline
+
+- ABO, Lewis, P1, MN = tissulaire, glucidique, non propre à l'Homme, anticorps naturels
+- RH, Duffy (FY), Kiddl, Ss : propre aux GR, Homme, proétique, pas d'anticorps naturels
+- Rare : Lu (b-) (0.1% Lu (a+, b-) et exceptionnel Lu(a-,b-))
+- Antigène public (>= 99.9%) : H, LU2, KEL2, LEK4
+- Attention : un c+ en France est probablement D+
+
 # Phénotypage érythrocytaire
 
 Antigènes des groupes sanguins : 
 - portés par glycolipides ou glycoprotéines
 
 Classification
+
 1. ABO et associés = tissulaires 
    - GR mais pas que
    - pas propres à l'homme
@@ -16,10 +34,12 @@ Classification
 2. Rhésus et autres = inverse
 
 Anticorps 
-- naturels = apparait spontanément, présent milieu extérieur, stimule système immunatire
+
+- naturels = apparait spontanément, présent milieu extérieur, stimule système immunitaire
 - immuns = après grossesse, transfusion, greffe incompatible
 - réguliers = toujours présent si antigène absent (ex: antiA)
 - irrégulier = peut être absent malgré antigène (ex anti-D)
+
 
 - 1 seul échantillon, 1 seule détermination si automatique (2 techniciens si manuelle)
 - Groupe sanguin = ABO, Réhus (RH2,3,4,5), KEL1
@@ -32,6 +52,7 @@ Anticorps
 ## Notation
 
 Exemple pour A+ Cc ee
+
 1. A CcDee
 2. A RH 1,2,-3,4,-5 (car 1=D, 2=C, 3=E, 4=c, 5=e)
 3. A+ E- (on ne rend que les négatifs)
@@ -46,7 +67,7 @@ Nature glucidique : ABO -> glycosyl transférase
 
 - groupe A = antigène A, anticorps antiB
 - groupe O = pas d'antigène A ni B, anticorps anti A et B
-  Génétique: A et B co-dominant, O récessif
+-  Génétique: A et B co-dominant, O récessif, code pour une enzyme et non l'antigène dircetement
 
 1 gène ABO
 - allèle A et B : forte homologie, enzyme codée ont le même substrat (sustance H), codominant
@@ -69,17 +90,22 @@ Donc
 - idem B
 
 
-2 épreuves :
+2 épreuves (il faut ja concordance !!)
+
 1. antigènes A et B sur les globules rouges (mis avec sérum Ac antiA et B)
 2. anticorps anti A et B dans plasma (avec hématies test A B)
-**Concordance** entre les 2 épreuves
 
 Note: sous-groupe A1 et A2 mais pas d'intérêt en transfusion
 
-#### Variants
+#### Variants ABO
+
+![](../../images/hematologie/groupe-a.png)
+
 A1 (80%) : 
+
    - enzyme A1 : convertit tous les antigène H en A -> *Anticorps naturel irrégulier anti-H* (dangereux si actif 37%)
    - Ag A1
+
 A2 : enzyme A2 : convertit tous les antigène H en A
    - pas d'Ag A1 -> anticorps antiA1
    - pas d'anticorps antiH
@@ -97,8 +123,11 @@ A2 : enzyme A2 : convertit tous les antigène H en A
 - acquis: B, A, perte expression partielle chez patients hémato
 
 #### Anticorps 
+
+Attention, il y a bien 2 types d'anticorps en ABO !
+
 - naturels : réguliers, surtout IgM, ne passent pas la barrière hémato-placentaire, 3 à 6 mois après la naissance
-- immuns : irrégulier : après allo-immunisation (grosesse), hétéro (vaccins), IgG, passe la barrière hémato-placentaire
+- immuns : irrégulier : après allo-immunisation (grosesse), hétéro (vaccins), IgG, passent la barrière hémato-placentaire
 
 Antiènes dans le milieu extérieur (bactéries) -> immunisation
 
@@ -131,6 +160,7 @@ Sinon hémolyse intra-vasculaire par activation du complément
 - antigène adsorbé par le globule rouge et non produit
 - Anticorps : anti-LE1, LE1, LebH, LebL....
 - dépend du gène sécréteur (SE) et du gène Lewis (Le)
+
    - se/se et le/le : pas de sécrétion, pas de Lewis dans la cellule sécrétantes = reste tel quel (précurseurs type)
    - se/se et LE : enzyme -> antigène Lewis a
    -  SE et LE : antigène H d'abord puis antigène Lewis b (action successive des 2 enzymes)
@@ -141,6 +171,8 @@ Sinon hémolyse intra-vasculaire par activation du complément
 Anticorps : 
 - naturels et irréguliers
 - hémolysant dans certains cas
+- anti Le^a : /jamais chez les Le^a négatif
+- anti Le^b : le plus sovuent chez Le (a-,b-), très rarement chez  /jamais chez les Le^a négatif
 
 #### P1PK et globoside
 
@@ -193,11 +225,13 @@ Transmission: D  = dominant
 Nomenclature : D+ C+ e- E- par exemple, RH 1,2,-3,-4
 
 Variants :
+
 - soit moins de sites antigèniques  (Ag faible) -> pas d'alloimmunisation
 - soit épitopse normaux (sites antigénique normaux, diminués)  (Ag partiel) -> allo-immunisation possible avec anticorps antiD "sauvage"
 - recherche biomol si hémoglobinopathie, femme subsaharienne < 50 ans, femme caucasienne < 50 ans si C-, E- (les D partiels y sont associé)
 
 #### Anticorps
+
 - Immun : induit par grossesse/transfusion incompatible
 - IgG, traversent la barrière
 - le plus immunogène : RH1 (D) surtout, puis RH4 (c)
@@ -348,7 +382,7 @@ Panel non obligatoire : DO, YT, CO, X
 
    Montre sensibilisation des hématies avec anticorps antiIgG et antiC3d
 
-# Technique IH 2024-01-08  (Patrik Jouveaux = référent national accréditation)
+# Technique IH  
 
   Applications IH
   - transfusion
@@ -363,16 +397,10 @@ Panel non obligatoire : DO, YT, CO, X
    1. Fixation antigène-anticorps mais réversible
    2. +/- agglutination (selon le type d'anticorsp: ##IgM est agglutinant##, IgG nécessite un "artificie")
 
-   - spontané ou artificielle
    - Hématies = charge négative => se repoussent
-
-   - Agglutination spontanée : surtout IgM, "froid" (4°), ne passent pas la barrière placentaire, 
-   - activent complément (jusqu'à destruction de l'hématie, ex de l'accident ABO)
+   - Spontané = IgM surtout, grosses molécules, "froid" (optimin (+4%)), ne passent pas la barrière placentaire,  - activent complément (jusqu'à destruction de l'hématie, ex de l'accident ABO)
    - Agglutination artificielle : IgG, "chaud" (37°), passent barrière placentaire (plus petits),
    - -> problème de grossesse, ! **Ac anti JK** peut fixer le complément -> hémolyse intra-vasculaire comme accident ABO
-   - il faut diminuer un potentiel dit zeta: 
-   - diminution charge GR: enzymes protéolytique ("décapent" surface hématies)
-   - favorisé par température, centrifugation, **antiglobuline* (Anticorps anti IgG ou IgM qui fait un pontage entre hématies)
    - test indirect (ex RAI) : plasma patient + globules rouges + antiglobuline
    - Test direct anitglobuline : GR patient porteur anticorps + antiglobuline
 
@@ -390,59 +418,57 @@ Panel non obligatoire : DO, YT, CO, X
 
 ## Recherche d'agglutinines irrégulières
 
-- Anticorps contre autre que antigènes autres que A et B (not. après transfusion...)
+- Allo-anticorps contre autre que antigènes autres que A et B (not. après transfusion...)
 - EDTA, **frais**, plasma après centrification
-- dépistage (1h) -> si positif, identification
-
-Dépistage
-- 3 hématies tests connues au contact avec plasma du patient
-- si agglutination, reste en haut du puits (positif), sinon tombe
-- semi-quantitatif : 1 à 4 croix
-- antiglobuline dans le gel
-
-Identification : sur 11 hématies tests (spécificité de l'anticorps)
+- Dépistage: plasma du patient + 3 hématies tests connues + antiglobuline (semi-quantitatif : 1 à 4 croix)
+-  Identification : sur 11 hématies tests + témoin autologue 
 - regle des 3+/3- : 3 hématies positives pour l'antigène et 3 négatives
 
-Si positive : 
-- vérifier absence de l'antigène correspondant à l'anticorps
-- nouvelle carte de groupe
-- TODO
-
-Si négative: 
-- **ne signifie pas absence anticorps** (concentration varie avec le temps)
-- **Un anticorps un jour, un anticorps toujours**
-
-Indication
-- **RAI obligatoire avant toute transfusion** (sauf urgence vitale immédiate)
-   - Valide 3 jours (jusque 21 jours si négatives et sans transfusion ou évènements immunisants (grossesse, fausse couche)
-- 1 à 3 mois après transfusion
+- Résultat
+   - Si positive , alloanticorps donc identification sur 11 hématies test (avec témoin autologue)
+      - vérifier absence de l'antigène correspondant (phénotype étendu)
+      - culot à transfuser phénotypé
+      - épreuve directe de compatibilité (plasma patient + hématies à transfuser)
+      - nouvelle carte de groupe (refaire groupe)
+   - Si négative :
+      -  **un anticorps un jour, un anticorps toujours** (non détecté ? concentration variable dans le temps)
+- valide 3 jours (21 jours si négatif et pas de transfusion, grosse, greffe...)
+-  Indication: 
+   - **obligatoire avant toute transfusion** (sauf urgence vitale immédiate)
+   - après transfusion
+   - accident hémolytique après transfusion
+   - suivi grossesse
 
 
 ## Test direct à l'antiglobuline
 
-On met en évidence les anticorps (ou fraction du complément) présents sur hématies du patient
+- Montrer qu'il y a des anticorps (ou fraction du complément) présents sur hématies du patient
 - ajout antiglobuline humaine : agglutine si les anticorps existent
 
 Technique
+
 - Antiglobuline polyvalente (IgG + complémenta)
 - Antiglobuline spécifique (IgG et IgM)
 
 Indication
+
 - anémie hémolytique auto-immune
 - maladie hémolytique néonatale : anticorps maternels sur antigènes foetaux (obligatoire sur tous les nouveaux nés)
 - accident transfusionnel (anticorps du patient sur globules rouges transfusés)
 
 TDA positifs
+
 - IgG : élution
 - C3d : recherche agglutinines froides
 
 ## Élution directe
 
 Détache ("lave") les anticorps des globules rouges.
-Puis TIA pour regarder leurs spécificités
+Puis test indirect (RAI) pour regarder les spécificités de ces anticorps
 
 ## Transition
-Sensibilité pour allo-immunisation : éluat > TDA > RAI
+
+Sensibiité pour allo-immunisation : éluat > TDA > RAI
 - élution positive dans un premier temps car anticorps sont sur les globules rouges seuls (ex. d'une transfusion avec anticorps contre GR ) -> **RAI négative** !
 - puis TDA+ (besoin de plus d'anticorps car l'élution fait une concentration)
 
@@ -545,3 +571,181 @@ Tttt :
 - froid : MAF: pas d'exposition au froid
 
 NB: **tout positif (panagglu + témoin autologue positif)** -> adsorption (soit le plasma du patient sur hématies du donneur, soit sur ses hématies (l'idéal))
+
+# Suivi immuno-hémato femmes enceintes
+
+Objectifs 
+
+- Prévenir immunisation
+- Sinon diagnostic + suivi : 
+   - suivi cinétique anticorps, suivi clinique
+   - sécurité transfusionnelle (femme + nouveau-né)
+
+## Allo-immunisation érythrocytaire
+
+- Alloanticorps dans plasma mère contre Ag présent hématies foetus
+- Origine : hétéro (Ag ABO), transfu, hémarragie foeta-maternelle (hématies foetus passent circulation maternelle)
+- dépendent de l'immunogénécité de l'Ag (= capacité à induire la sinthèse Ac):  **D > K** (ABO faible), quantité GR foetux, individu
+
+2 types 
+
+- ABO: exprimés tardivement donc /pas d'impact fœtus/ (expression après naissance), les plus fréquentes, habituellement bénin
+- non ABO (vraie alloimmunisation foetomaternelle): tous les systèmes. Plus fréquente RH KEL FY JK, dès vie embryonnaire
+
+### ABO
+
+Mère O : IgM antiA naturels (ne passent pas la barrière hématoplacentaire), IgG antiA immuns (ictère)
+NN type A: aura des IgG antiA maternel dans le sang
+*RAI chez la mère*, **TDA Chez l'enfant** : si positif, élution pour antiA et antiB
+
+Transfu **CGR groupe O RHKell mais non compatibilisé**
+
+Bénin sauf certaines population (AFrique subsaharienne)
+
+### Alloimmunisation
+
+- 1ere grossesse incompatible : IgM ne passant pas la barrière hématoplacentaire puis switch IgG. Souvent moins d'impact mais possible néanmoins.
+- 2e grossesse incompatible : réactivation à la moindre stimulation du ystème immunaire : production massive IgG **passage placenta**
+   - dès 1er trimestre
+   - destruction GR fœtus : anémie + hyperproduction bilirubine (impact nouveau-né car éliminé par la mère au stade fœtal)
+
+Impact clinique:
+   1.  anémie sévère (difficile à détecter à l'échographie)
+   2. accumulation bilirubine système nerveux (mort/séquelle neuro)
+
+### Diagnostic
+
+- *RAI*
+- dangerosité selon spécificité anticorps : 
+   - hémolyse GR matures : **antiRH**, JK, FY, MNS3,4, antiMNS1
+   - GR mature + précurseurs érythroides **antiKEL**
+
+Les plus sévères : **anti RH1, RH4, KEL1**
+
+- bien développés chez foetus (4 SA)
+- risque anémie fœtale/néotal
+- suivi maternité 3 (sauf si titre faible)
+
+Les plus fréquents : *RH 1 , 3, 4 KEL1*
+
+- antiRH1: Prophylaxie diminue incidence de 80%
+
+### Divers
+
+Ac anti public
+
+- Anti U, public RH, public KEL
+- risque d'anémie sévère 
+- transfert échantillon CNRGS + équivalent obstétrical (CNRHP)
+
+Ac antiprivé 
+
+- non détecté RAI chez la mère (pas sur le panel)
+- risque anémie fœtale/néonat
+- pas de difficulté transfusionnelle
+- y penser si hémolyse inexpliquée chez fœtus
+- TDA chez foetus +/- compatibilité GR mère et GR fœtus
+
+Autoanticorps ou HLA : pas d'impact
+
+### Suivi biologique
+
+Évalue le risque d'anémie fœtale sévère pour suivi clinique/écho
+
+1. confirmer incompatibilité : phénotype érythrocytaire procréateur, génotypage fœtal non invasif
+limiter gestes invasif qui peut aggraver
+2. spécificité Ac : RAI
+3. affinité de l'anticorps : titrage
+4. Concentration : dosage pondéral (seulement antiRhésus)
+
+Génotypage fœtal
+
+- CNRHP
+- ADN fœtal libre dans plasma femme (10% ADN forme acellulaire)
+- RH1, 3, 4, KEL1
+- négatif : confirmer sur 2e prélèvement
+- positif/indéterminé : suivi
+
+Titrage
+
+- TIA tube+++ (seuils) ou gel
+- comparer avec plasma prélèvement précédent (technique opérateur-dépendant)
+- dilution de 2 en 2 : titre = 1/dernière dilution +
+- seuil à 8 pour anti-D
+
+Dosage pondéral
+
+- EFS Lille, CNRHP
+- si > seuil : maternité 3 et suivi écho (vélocimétrie artère cérébrale moyenne)
+- seuil 1υg/mL pour anti-D
+
+### Suivi clinique 
+
+- Échographie : trop tardif pour suivi anasarque !
+- Rythme cardiaque fœtal : trop tardif, peu sensible
+- *doppler cérébral*: anémie augment débit cardiaque et diminue viscosité donc augment vélocité sanguine
+- obligation d'informer le prescripteur en cas d'alloimmunisation
+- éviter méthodes invasives (réactive immunisation)
+
+Anasarque = pas d'adaptation à l'anémie : urgence vitale (risque de mort fœtal)
+
+Objectif : maintenir la grossesse jusqu'à un terme viable
+
+Transfusion fœtal :
+-  2-3% mort fœtale, à partir de 17SA
+- **Onegatif sauf si c-**(les O négatifs sont c+ (phénotype rares sinon))
+
+### Prise en chare nouveau-né
+
+- surveillance clinique + bio : peut apparaître plusieurs semaines après !
+- groupage sanguin (*interprétable si transfusion in utero*)
+- examen direct antiglobuline (attendu positif)
+- élution
+- NFS, biliburine
+- transfusion à partir de *RAI de la mère* et Coombs direct (Ac maternels sur GR du nouveau-né) +/- épreuve compatibilité avec *plasma maternel* (valide 120j)
+
+Tous les labos privés doivent transmettre à l'EFS une RAI positive
+
+### Cas clinique
+
+Ag Kpa = toujours négatif sur panel donc attention 
+
+## Suivi réglementaire  grossesse de toutes les femmes enceintes
+
+- Détecter et dépister à temps
+- Recommandations HAS + décret 1992 :
+   1. **toutes les femmes** dès 1er trimestre : 2 déterminations de groupe (si non fait) et RAI
+   2. Puis 
+      - D+ sans antécédent transfu : RAI 1er trimestre et à l'accouchement
+      - D+ sans antécédent transfu : RAI 1er trimestre et 6e, 8e et 9e  et à l'accouchement
+      - V- : RAI1 trimestre, phénotype GR géniteur, génotype foetal 11SA
+         - foetus D+: RAI 6+, 8+, 9/
+         - accouchement
+   - c- sont **toujours D+** : RAI1er trimestre à l'accouchement mais il faudrait faire 3e trimestre pour ne pas passer à côté de certains cas
+
+### Préventir alloimmunisation antiRH1
+
+- Pour les autres : seulement en transfusion CGR (phénotype RHKell) (25% incompatibilité)+/- rophylac avant transfusion plaquettaire
+- Génotypage RH foetal :
+   - non invasif, >= 11 SA
+   - si négatif, confirmer 2e prélèvement : Rophylac inutile
+   - si positif ou indéterminé (souvent des variants), justifie Rophylac en ciblé selon situation (fausse couche...) et **systématique 28SA**
+- Immonoprophylaxie: Ac anti RH1 pour neutraliser les GR RH+ (non reconnu par système immunitaire)
+   - dérivé du sang (donc risque infectieux)
+   - **28SA**: justification = couvrir hémorragie foeta-maternelle du 3e trimestre non apparente
+   - en ciblé si fausse cocuhe, traumatisme, amniocentèse
+   - **accouchement** sauf rophylac < 3semain, klehauer négatif, antiD >= 6ng
+   - **RAI avant Rophylac**
+   - efficacité : < 72h avant l'évènement, IV (biodisponibilité immédiate), adapté la posologie 
+- Immunoprophylaxie accompagnée par 
+   - RAI: negative avant
+   - Kleihauer : à partir de 15SA. Fait à chaque évènement immunisant + accouchement (mais pas 28SA). Adapte la posologie : 220υg ok jusque 24 hématies ofetale /10 000
+   - microtitrage : permet d'estimer les faibles concentrations d'anticorps (à la différence du titrage) (estimation !)
+      - pour différence alloAc des antiRH1 résiduel
+      - concentration résiduelle rophylac pour estimer couverture par rophylac
+      - on compare intensité par rapport à un témoin à différentes dilutions -> dernière réaction positive
+      - passif si concentration < attendue
+
+#### Prévention secondaire
+
+Nouvelle grossesse chez femme immunisée:
