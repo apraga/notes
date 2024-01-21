@@ -864,3 +864,24 @@ après X: -てから. Exemple : après être allé : きってから
 -   compter les animaux : pikki
     -   petit animaux (chien, chat): 匹 (ひき
     -   lapins, oiseaux : 羽 (wa)
+
+# 2024-01-21
+
+## Vocabulaire
+
+- sorekara = pour succession d'action
+- sorenara = dans ce cas (propose une solution alternative)
+-  毎月 (まいつき) = tous les mois
+-  電話代 (でんわだい ) = facture de téléphone
+- 電話料金 ( でんわりょうきん ) = frais de téléphone 
+- 月額 ( げつがく ) : somme mensuelle
+- データ通信量(つうしんりょう): débit internet
+- プランを変えました : forfait téléphonique
+-  お年寄り(としよ) : personne âgée
+- 観光 ( かんこう ): touriste ("celui qui voit la lumière")
+-  説明 : explication
+
+## Grammaire
+
+- Il n'est pas obligatoire de : ~ なくてもいいです
+    - Ex. もうワクチンは受けなくてもいいです
