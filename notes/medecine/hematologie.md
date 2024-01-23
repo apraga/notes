@@ -305,3 +305,48 @@ Traitement :
 
 1.  aspirine/saignée
 2.  si haut risque : hydroxyurée ou ropeginterferon
+
+
+# Hémogramme
+
+## Lymphocytes
+- Pancytopénie : 
+  - périphérique : hypersplénisme, hémodilutation (auto-immun)
+  - central :
+    - moelle riche : carenceB12/folates, syndrome d'activaition macrophagiques, myélodyspasie, envahissement (leucémie, lymphome)
+    - moelle pauvree : aplasie (chimio, parvoris B19, Fanconi), myélofibrose
+- Hyperlymphocytose : enfant = coqueluche, viral. Adulte = LLC, lymphoprolifératif autre
+- Lymphopénie :
+  - iatrogène (immunosuppresseur, lithium, cortico),
+  - viral, VIH
+  - cancer, lymphome, radiothérapie
+  - auto-immun : lupus, sarcoidose
+  - IRC
+- Polynucléose neutrophile
+  - physiologique (grossesse, effort, post-op)
+  - infection bactérienne
+  - inflammation chronique
+  - nécrose tissulaire aigüe
+  - iatrogène : corticoïdes, lithium, splénectomie
+  - hémopathie avec myélémie
+  - tabac
+  - cancer
+- Neutropénie (< 0.5 G/L)
+  - centrale
+    - iatrogène
+    - infection : typhoïde, brucellose, hépatite virale
+    - aplasie, hémopathie malignes
+  - périphérique : hypersplénisme, trouble margination
+- Monocytose (> 1G/L)
+  - réactionnelle : infection, inflammation (cancer..), régénération médullaire
+  - primitive : leucémie myélomonocytaire chronique/juvénile, leucémie aigüe monoblastique
+- Myélémie : > 2%
+  - transitoire : infection grave, hémolyse, régénération (hémorragie, postchimio)
+  - chronique : SMP, métastase médullaire
+
+## Erythrocytes
+Cf anémie, polyglobulie
+
+## Plaquettes
+- Thrombocytose : inflammation, carence martiale, splénectomie/asplénie, post-chir, SMP
+- cf thrombopénie
