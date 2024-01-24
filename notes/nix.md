@@ -211,14 +211,17 @@ Il faut parfois mettre des guillemets, ex:
 
 ## Ajouter un nouveau paquet
 
-<https://nixos.wiki/wiki/Nixpkgs/Contributing> Tester dans nixpkgs qu'il
-compile
+Les nouveaux paquets sont dans pkg/by-name
+
+<https://nixos.wiki/wiki/Nixpkgs/Contributing> 
+
+Tester dans nixpkgs qu'il compile
 
 ``` {.bash org-language="sh"}
 nix-build -A mypackage
 ```
 
-Tester les dépendenances
+Tester les dépendances
 
 ``` {.bash org-language="sh"}
 nix-shell -p nixpkgs-review --run "nixpkgs-review rev HEAD"
