@@ -306,7 +306,19 @@ Traitement :
 1.  aspirine/saignée
 2.  si haut risque : hydroxyurée ou ropeginterferon
 
+# Thrombopénie
 
+- < 150G/L
+- Périphérique : mégacaryocytes normaux/éleves, destruction/consomation/séquestration
+- Central : mégacaryocytes diminuné, congénital/acquis
+- Myélogramme non obligatoire
+
+Mécanismes
+- central: envahissement tumoral, aplasie, toxique (alcool, médicaments)
+- périphérique
+    - destructio immuno: PTI, médicaments, allo-immunisation, VIH/hépatite C,, infection
+    - consommation: microangiopathie thrombotique, CIVD
+    - séquestration: hypersplénisme
 # Hémogramme
 
 ## Lymphocytes
@@ -350,3 +362,4 @@ Cf anémie, polyglobulie
 ## Plaquettes
 - Thrombocytose : inflammation, carence martiale, splénectomie/asplénie, post-chir, SMP
 - cf thrombopénie
+
