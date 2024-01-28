@@ -885,3 +885,23 @@ après X: -てから. Exemple : après être allé : きってから
 
 - Il n'est pas obligatoire de : ~ なくてもいいです
     - Ex. もうワクチンは受けなくてもいいです
+
+# 2024-01-28
+## Vocabulaire 
+
+- 避けます（さけます) : éviter
+- 健康　(けんこう) : santé
+- 味　(あじ) : goût (nourriture)
+- あまり好きではない : ne pas trop aimer quelque chose
+- 神の雫　(かみのしずく) : les gouttes de Dieu (manga)
+- 旅館 (りょかん)
+- 旅行　(りょこう) : voyage
+- 図書館　(としょかん ): bibliothèque
+- 一日中  (いちにちじゅう) : toute la journée
+- 早い話が　(はやい) (はないしが) : pour faire court... (expression)
+- 曲げます　(ま) : se déformer sous (ex: subir la pression (en société par exemple))
+- この席　空いていました　席　(おいて)
+- そうだん　になります: je vais te conseiller (on va regarder ça ensemble)
+- たすかります : je vais t'aider (formule de politesse)
+- 用意ができたら 、出かける　予定です (ようい) (ようてい): je prévois de sortir quand je serai prêt
+ 

@@ -30,3 +30,4 @@ notes/index.html
 .git_pres.tex.swp
 *.toc
 *.profile*
+dist-newstyle
