@@ -314,11 +314,57 @@ Traitement :
 - Myélogramme non obligatoire
 
 Mécanismes
-- central: envahissement tumoral, aplasie, toxique (alcool, médicaments)
-- périphérique
-    - destructio immuno: PTI, médicaments, allo-immunisation, VIH/hépatite C,, infection
-    - consommation: microangiopathie thrombotique, CIVD
-    - séquestration: hypersplénisme
+## Central
+- défaut de production (qualitatif/quantitaf): aplasie, carence B9, B12, alcool, médicament, radiot
+- envahissement : LA, lymphome, myélome, LLC, LMC, métastases
+
+## Constit (rare)
+- nénat, enfance, adulte
+- dysmorphie, cardiopathi, IR, surdité, cataracte, anomalie osseuse
+- pas/peu de réponse  au traitements
+- signes hémorragiques inconstants
+
+## périphérique
+- destructio immuno: 
+    - PTI (cf plus loins)
+    - médicaments (vanco, pénicilline...)
+    - infection : virus (VIH, hépatite B/C, MNI, CMV, dengue), palu, sepsis grave
+    - lupus, SAPL
+    - thyroïde (Basedow, Hashimoto)
+    - hémato : Biermer, AHAI, lymphome, lymphoïde chronique
+    - allo-anticoprs (purpura post-transfu, foetal/néotal)
+- consommation:
+    - CIVD : TPdiminué, TCA augmenté, fibriongne diminué, D-dimère augmenté -> choc, obstitqiu, **LAM3**
+    - microangiopathie thrombotique: anémie hémolytique, *schizocyte* -> SHU, PTT, HELLP (hemolysis, Elevetad liver enzym, Low Platelet )
+- trouble de la répartition : hypersplénisme (séquestration) , transfusion massive, cirrhose, grossesse (dilution)
+- secondaire
+
+## PTI
+- Enfant : contexte viral, plaquette < 5G, *numération et frottis RAS par ailleurs*, pas d'antécédent
+    - myélogramme inutile
+
+- Adulte = élimination (myélogramme) 
+
+## Démarche
+Confirmer
+- < 150G
+- frottis pour élimier 
+    - fausse thrombopénie agrégation EDTA, satelliisme plaquettaire (adhésion PNN)
+    - sous-estimation : plaquette de grande taille
+- recherche microcaillat
+
+Cherche schizo (MAT), hyperlympho (viral), neutropénie/anémie (central), cellules anormale (blastes)
+
+## Examens systématiques
+- NFS sur tube citraté si date
+- frottis
+- EPS
+- séro VIH, VHB, VHC
+- bilan hépatique
+- anticorps antinucléaire
+- créatinine, hémature
+- TP, TCA, fibrinogne
+- groupe sanguin, RAI si sévère
 # Hémogramme
 
 ## Lymphocytes
