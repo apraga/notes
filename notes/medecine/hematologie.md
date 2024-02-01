@@ -158,7 +158,7 @@ Plasminogène
 ### Immuno à détection photo-optique (immunoturbidimétrie)
 - Dosage quantitatif Ddimères, monomèes de fibrine, facteur/inhib coag
 - Réaction Ag-Ac
-- Avantages : très sensible et spécfiique
+- Avantages : très sensible et spécfique
 - Inconvénient : réactif couteux, nb tests disponibles limités
 - CS5100 : D-dimères
 
@@ -173,7 +173,71 @@ Plasminogène
 - Thromboélastographie : ROTM et TEG
   - étude viscosité et élasticité du sang pendant coag -> calcul temps initiation coagulation, vitesse formation caillot, stabilité (fibrinolyse)
   - péri-opératoire (trauma sév-ère, hémorragie post-partum...)
+
 # Maladies
+
+## Thalassémies
+
+Définition : anomalie génétique avec diminution/absence synthèse de chaine alpha ou beta globine
+
+### Beta-thalassémie
+
+Gène HBB (chr 11). AR donc en général
+
+- hétérozygote : peu sévère 
+- homozygote : le plus souvent sévère (forme mineure)
+
+Avantage sélectif sur paludisme -> méditarrénée, afrique, inde, ase sud-est, *sud de la france*
+
+Forme mineure : diag biologique (peu signe clinique), pas de traitement, conseil génétique
+
+- "syndrome thalassémique"  *microcytose, hypochromie, pseudo-polyglobulie* +/- anémie, arégénératif
+- étude hémoglobine : (chromatographie liquide haute pression, electrophorèse capillaire car faible fraction) : Hb A_2 >= 3.5% (augmentée)
+
+Forme majeure :
+
+- clinique :
+  - début nourrison/enfant avec diminution Hb foetale : anémie profonde dépendant de la transfusion
+  - HMG, SMG, ictère, infeciton à répétition, retard staturo pondérale
+  - surcharge en fer (transfusion)
+- diag biologique : **Hb < 7g microcytaire hypochrome + microcytose**, hypochrile, anisocytose, po%ikylocytose, erythroblaste
+- étude Hb *avant* transfusion : absence HbA avec HbF majoritaire
+  - NB : autre forme ; Hb E, autres variant Hb
+
+Forme intermédiaire : définition clinique : anémie moins sévère, transfusion si nécessaire, complication surtout à la surcharge en fer
+
+Prévention ; dépister les hétérozygots (couples à risque, hémogramme)
+DPN ou DPI possible
+
+Traitement : 
+
+- symptomatique : transfusion (selon forme), chélation martiale dans les 2 cas
+- curatif : greffe moelle osseuse, thérapie génétique (essai thérapeutique)
+
+### Alpha-thalassémie
+
+Ubuquitaires mais extrème-orient, asie pour les formes sévères
+Gènes HBA1 et HBA2
+
+- 3 gènes fonctionnels : silencieuse
+- 2 : mineure
+- 1 ou 0 : sévère : hémoglobinose H et hydrops foetalis resp
+
+Diag biologique :
+
+- silencieuse : microcytose très modérée hypochromie sans anémie, ferritine et etude Hb normales
+- mineuse : pseudo polyglobulie, microcytose, hypochromie +/- anémie, etude hémoglobine ormale/HbA2 légèrement diminué
+
+Hydrops foetalis : mort in utero/naissance le plus souvent + risque mère toxémie gravidique
+
+Génétique : si une allèle avec double deletion : risque hydrops foetalis !
+
+Hémoglobinose H : 
+
+- **hyperhémolyse** (anémie, ictère, SMG) parfois en crises (fièvre médic), surcharhe en fer
+- anémie microcyaires hypochrome +/- thrombopénie avec hémolyse (bili libre augmentée, hapto diminuée, LDH augmenée) et surcharge en fer (ferritine N ou augmentée)
+- etude Hb : HbH ou bart, Ae2 diminuée
+- coloration bleu de cr&syl ; hématies en balles de golf
 
 ## Anémie microcytaire
 
@@ -349,7 +413,7 @@ Mécanismes
 Confirmer
 - < 150G
 - frottis pour élimier 
-    - fausse thrombopénie agrégation EDTA, satelliisme plaquettaire (adhésion PNN)
+    - fausse thrombopénie agrégation EDTA, satellisme plaquettaire (adhésion PNN)
     - sous-estimation : plaquette de grande taille
 - recherche microcaillat
 
