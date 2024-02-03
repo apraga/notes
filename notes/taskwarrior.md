@@ -1,3 +1,5 @@
+## Divers
+
 Tâches finies par projet`task completed project:test`
 
 Modifier la date d'une tâche finie (il faut l'UUID)`task 868aef60 modify completed 2023-12-24T23:00:00`
@@ -14,3 +16,9 @@ W3 2024-01-19 Fri @2 Télécharger autres données GRCh38 avec DataToolkit, biso
                                                                                                                             22:43:48
 ❯ timew delete @2
 Deleted @2
+
+## Gérer une liste de livres
+Faire un contexte 
+
+    task context add book +context
+    task context book
