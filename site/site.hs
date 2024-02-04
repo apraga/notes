@@ -10,12 +10,12 @@ import Control.Monad (forM_)
 -- 2. we have a custom filter to correct org-roam internal link
 --------------------------------------------------------------------------------
 
-notesTOC = [ "notes/medecine/bacteriologie.md"
-           , "notes/medecine/cofrac.md"
-           , "notes/medecine/hematologie.md"
-           , "notes/medecine/immuno-hemato.md"
-           , "notes/medecine/virologie.md"]
-notesOther = ["notes/japonais.md", "notes/cooking.md"]
+notesTOC = [ "../notes/medecine/bacteriologie.md"
+           , "../notes/medecine/cofrac.md"
+           , "../notes/medecine/hematologie.md"
+           , "../notes/medecine/immuno-hemato.md"
+           , "../notes/medecine/virologie.md"]
+notesOther = ["../notes/japonais.md", "../notes/cooking.md"]
 
 images = ["images/*", "images/microbiologie/*", "images/hematologie/*"]
 main :: IO ()
