@@ -7,5 +7,5 @@ all: _site/slides/fosdem2024
 	cd ../slides/fosdem2024 && npm run build -- --base /slides/fosdem2024
 
 _site/slides/fosdem2024:  ../slides/fosdem2024/dist
-	mkdir $@ 
+	mkdir -p $@ 
 	cp -r $^ _site/slides/fosdem2024
