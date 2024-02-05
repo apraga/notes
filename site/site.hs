@@ -10,24 +10,19 @@ import Control.Monad (forM_)
 -- 2. we have a custom filter to correct org-roam internal link
 --------------------------------------------------------------------------------
 
-notesTOC = [ "../notes/medecine/bacteriologie.md"
-           , "../notes/medecine/cofrac.md"
-           , "../notes/medecine/hematologie.md"
-           , "../notes/medecine/immuno-hemato.md"
-           , "../notes/medecine/virologie.md"]
-notesOther = ["../notes/japonais.md", "../notes/cooking.md"]
-
 images = ["images/*", "images/microbiologie/*", "images/hematologie/*"]
 main :: IO ()
 main = hakyllWith config $ do
     forM_ images $ \f -> match f $ do
         route   idRoute
         compile copyFileCompiler
+
     match "css/*.css" $ do
         route   idRoute
         compile compressCssCompiler
 
-    match "about.org" $ do
+
+    match "about.md" $ do
         route  $ setExtension "html"
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
@@ -40,14 +35,14 @@ main = hakyllWith config $ do
             >>= loadAndApplyTemplate "templates/default.html" postCtx
             >>= relativizeUrls
 
-    match (fromList notesOther) $ do
-        route $ setExtension "html"
-        compile $ pandocCompiler 
-            >>= loadAndApplyTemplate "templates/post.html"    postCtx
-            >>= loadAndApplyTemplate "templates/default.html" postCtx
-            >>= relativizeUrls
+    -- Symlink interesting notes in there
+    match (fromList ["japonais.md", "cooking.md"]) $ do
+        route  $ setExtension "html"
+        compile $ pandocCompiler
+            >>= loadAndApplyTemplate "templates/default.html" defaultContext
 
-    match (fromList notesTOC) $ do
+    -- Symlink interesting notes in there
+    match "medecine/*.md" $ do
         route $ setExtension "html"
         compile $ pandocCompilerWith defaultHakyllReaderOptions withTOC
             >>= loadAndApplyTemplate "templates/post.html"    postCtx
@@ -73,7 +68,7 @@ main = hakyllWith config $ do
     create ["notes.html"] $ do
         route idRoute
         compile $ do
-            notes' <- loadAll . fromList $ notesTOC ++ notesOther
+            notes' <- loadAll $ "medecine/*.md" .||. fromList ["japonais.md", "cooking.md"]
             let archiveCtx =
                     listField "notes" postCtx (return notes') `mappend`
                     constField "title" "Notes"            `mappend`
@@ -107,7 +102,7 @@ postCtx =
 
 -- Let hakyll manage deployment
 config = defaultConfiguration {
-  deployCommand = "tar cvzf site.tar.gz -C _site . && hut pages publish site.tar.gz -d scut.srht.site"
+     deployCommand = "tar cvzf site.tar.gz -C _site . && hut pages publish site.tar.gz -d scut.srht.site"
   }
 
 -- Generate table of contents
