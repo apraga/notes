@@ -263,7 +263,7 @@ Causes principales : carence martiale, thalassémie, inflammation
 - clinique : 
     - anémie (asthénie, paleur...), cutanéo-muquex (fer sert au renouvvellement : peau sèche, ongles cassants), *pas* de fièvre, ADP, SMG, purpura
     - troubles du comportement, retard psychomot, atteinte défense immunitaire
-- bilan: *ferritine diminuée** (stockage fer), autres = inutiles
+- bilan: **ferritine diminuée** (stockage fer), autres = inutiles
     - si pas de carence fer : bilan inflammatoire + étude hémoglobine
 - cause 
     1. carence apport (interrogatoire !)
@@ -370,25 +370,40 @@ Traitement :
 1.  aspirine/saignée
 2.  si haut risque : hydroxyurée ou ropeginterferon
 
-# Thrombopénie
+## Thrombocytose
+
+### Fausses thrombocytoses
+
+Séparation GR 
+
+- plaquette se faire sur la taille -> éléments de grande taille peuvent être comptées comme plaquettes par excès
+- hématies fragmentées : scitzo, microcytes (brulûres sévères font éclater les GR) -> sysmesx en fluorescence est censé les différencier
+- fragments cytopaslmes de leucocytes (blastes, lymphome)
+- cryoglobuline, cryofibrinogène
+- lipides : hyperlipédmie, prélèvement près d'une perfusion lipides  (formation de "micelles" lipidiques perturbant la numération)
+- bactéries, candida
+
+## Thrombopénie
 
 - < 150G/L
 - Périphérique : mégacaryocytes normaux/éleves, destruction/consomation/séquestration
 - Central : mégacaryocytes diminuné, congénital/acquis
 - Myélogramme non obligatoire
 
-Mécanismes
-## Central
+### Central
+
 - défaut de production (qualitatif/quantitaf): aplasie, carence B9, B12, alcool, médicament, radiot
 - envahissement : LA, lymphome, myélome, LLC, LMC, métastases
 
-## Constit (rare)
+### Constit (rare)
+
 - nénat, enfance, adulte
 - dysmorphie, cardiopathi, IR, surdité, cataracte, anomalie osseuse
 - pas/peu de réponse  au traitements
 - signes hémorragiques inconstants
 
-## périphérique
+### périphérique
+
 - destructio immuno: 
     - PTI (cf plus loins)
     - médicaments (vanco, pénicilline...)
@@ -403,23 +418,34 @@ Mécanismes
 - trouble de la répartition : hypersplénisme (séquestration) , transfusion massive, cirrhose, grossesse (dilution)
 - secondaire
 
-## PTI
+### PTI
+
 - Enfant : contexte viral, plaquette < 5G, *numération et frottis RAS par ailleurs*, pas d'antécédent
     - myélogramme inutile
 
 - Adulte = élimination (myélogramme) 
 
-## Démarche
+### Démarche
+
 Confirmer
+
 - < 150G
-- frottis pour élimier 
-    - fausse thrombopénie agrégation EDTA, satellisme plaquettaire (adhésion PNN)
-    - sous-estimation : plaquette de grande taille
-- recherche microcaillat
+- frottis pour éliminer fausse thrombopénie, sous-estimation (plaquette de grande taille)
+- recherche microcaillot
 
-Cherche schizo (MAT), hyperlympho (viral), neutropénie/anémie (central), cellules anormale (blastes)
+Cherche schizo (MAT), hyperlympho (viral), neutropénie/anémie (central), cellules anormales (blastes)
 
-## Examens systématiques
+### Fausses diminution : 
+
+- agrégabilité 
+  - des plaquettes entre elles (surtout EDTA probablement par exposition d'un site antigénique normalement caché avex ) -> frottis
+  - des plaquettes autour des neutrophiles (EDTA) : rare, signification clinique non connue
+  - agrégats mixtes plaquettes/neutro (EDTA) : rare, *in vitro* -> frottis (extrémités)
+- Plaquettes géantes ( > seuil les différenciant des GR) -> frottis, canal optique
+- pé-ana : perfusion, coagulation partielle, tube pas assez rempli (trop d'anticoagulant), trop rempli (difficulté d'homogénéisation), trop vieux (démarrage de la coagulation)
+
+### Examens systématiques
+
 - NFS sur tube citraté si date
 - frottis
 - EPS
