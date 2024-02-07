@@ -5990,3 +5990,9 @@ Tornado: 15 saut + 5 tornado Bkick 10
 - pushed-up tucked : 3x{5x2}
 - extension 3x22
 - compression 3x10
+
+# 2024-02-05
+Tricking
+- bkick
+- aerial
+- tornado
