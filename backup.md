@@ -1,6 +1,3 @@
-```{=org}
-#+filetags: personal
-```
 # Nouvelle version : git-annex sur plusieurs dépôts + restic sur le cloud
 
 Inconvénients de git-annex:
@@ -42,6 +39,17 @@ Conclusion
 
 NB: hubic n\'existe plus.
 
+## Restic vs borg 
+
+[Comparaison](https://www.reddit.com/r/BorgBackup/comments/v3bwfg/why_should_i_switch_from_restic_to_borg/)
+Pas un audito mais le [créateur de la librairie crypto a regardé rapidement](https://words.filippo.io/restic-cryptography/)
+
+Notes :
+
+- restic supporte facilement les remote rclone !
+- borg utilise plus de place 
+- borg est plus mature
+
 ## Maintenance
 
 Dans chaque dossier
@@ -75,6 +83,8 @@ git annex initremote github-lfs type=git-lfs url=git@github.com:apraga/papers.gi
 git lfs track "*.pdf"
 git annex sync --content
 ```
+
+Note: les articles sont sur sourcehut aussi mais sans lfs.
 
 ### Configuration des remote avec rclone (public + private)
 

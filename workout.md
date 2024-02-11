@@ -5996,3 +5996,17 @@ Tricking
 - bkick
 - aerial
 - tornado
+
+# 2024-02-10 Workout
+- Muscle-up : 
+    - 2+1+1
+    - 2+1+1
+    - 2+1+1
+- Pistols 3x4
+- tucked planche 3x{3+2}
+- pushed-up tucked : 3x{3+3+3+1}
+- extension 3x22
+- compression 3x10
+
+# 2024-02-11 Running 
+1h10
