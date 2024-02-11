@@ -176,6 +176,46 @@ Plasminogène
 
 # Maladies
 
+## Maladie de Willebrand
+
+Suspicion clinique : 1ere intention
+
+- activité facteur VIII
+- activité vWF (vWF:Act) : technique de référence agrégométrie/turbidimétrie avec ristocétine (induit liaison vWF-GpIb des plaquettes = glycoprotéine intervenant dans l'agrégation)
+- antigénique vWF : immunologique, concentration plasmatique
+- Hemogramme
+- NB : TCA normal ou allongé (allongé type 2N et 3)
+- +/- temps d'occlusion plaquettaire sur PFA  = dépistage simple et rapide : *in vitro* par mesure du temps de passage du sang dans capillaires (collagène + activateur plaquettaire jusqu'à occlusion) -> très sensible aux anomalies du vWF 'sauf trype 2N)
+
+Interprétation
+
+- FVIII:c/vWF:Ag > 0.7 sauf type 2N
+- taux VWF (antigène ?) : 
+
+  - diminué si groupe O -> recherche groupe
+  - augmenté si âge, grossesse, stress, exercice physique, oestroprogestatif, syndrome inflammatoire, insuffisance hépatique -> CRP et fibrinogène pour écarter syndrome inflammatoire 
+
+
+Interprétation activité vWF 
+
+- activité vWF 30-50% = déficit modéré
+- activité vWF < 30%
+  - vWF:act/Ag > 0.7 : type 1 ?
+  - sinon : type 2 ?
+- FVIIIc/vWF:Ag <= 0.7 : type 2N ? hémophilie A ?
+- Ag < 5% : type 3 ?
+
+
+"Ag vWF" -> indétectable -> vWFpp -> { absent -> "Type 3"; present -> "Type 1 sévère" }
+"Ag vWF" -> "activité/ag vWF" -> "> 0.7" -> "FVIII/ag vWF" -> 
+
+{ "> 0.7" -> "Type 1 et 2M";
+"< 0.7" -> "vWF:FVIIIB" -> { "diminué -> "type 2N" ; "normal" -> "Hémophilie A"}
+"activité/ag vWF" -> "< 0.7" -> "type 2" -> { RIPA augmenté -> "type 2B/PT-VWD"  ;
+"multimère" -> {"HPM absent" -> "Type 2A";
+"HPM présents" -> "Type 2M3 }
+}
+
 ## Thalassémies
 
 Définition : anomalie génétique avec diminution/absence synthèse de chaine alpha ou beta globine
