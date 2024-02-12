@@ -40,6 +40,24 @@ Pour lignée lymphocytaire:
 
 ![lignée lymphocytaire](../../images/hematologie/lymphoide.png)
 
+# Cytométrie en flux
+
+Identification des cellules hématopoïetique par glycoprotéines (surface/cytoplasme) = antigènes de différentiation
+
+- anticorps monoclonaux + fluorochrome
+- regroupés en cluster de différenciation (CD) -> sous-populations
+
+Sur sang (EDTA), fluide (tube sec), tissu (enzyme)
+
+Principe : cellule "s'allume" (via fluorochrome) en passant devant un laser
+
+Indication en hémato: hémopathies malignes
+
+- leucémie, lymphome
+- leucocytose (hyperéosinophilie, infection (neutro, mono)), neutropénie, LGL
+- anémie : HPN, sphérocytose, GF foetaux
+- plaquettes : numération, déficit
+
 # Hémostase
 -   Facteurs dépendant vitamine K: II, VII, IX, X
 -   déficit en fibrinogène : le plus souvent acquis mais congénital
@@ -187,6 +205,11 @@ Suspicion clinique : 1ere intention
 - NB : TCA normal ou allongé (allongé type 2N et 3)
 - +/- temps d'occlusion plaquettaire sur PFA  = dépistage simple et rapide : *in vitro* par mesure du temps de passage du sang dans capillaires (collagène + activateur plaquettaire jusqu'à occlusion) -> très sensible aux anomalies du vWF 'sauf trype 2N)
 
+
+Type 1 = déficit quantitatif
+Type 2 = déficit qualitatif (2A = déficit vWF, 2B = gain de fonction avec déplétion multimere de haut poids moléculaire (HMW), 2M = qualitatif, 2N seulement binding FVIII)
+Type 3 = quasi-absence vWF
+
 Interprétation
 
 - FVIII:c/vWF:Ag > 0.7 sauf type 2N
@@ -205,16 +228,7 @@ Interprétation activité vWF
 - FVIIIc/vWF:Ag <= 0.7 : type 2N ? hémophilie A ?
 - Ag < 5% : type 3 ?
 
-
-"Ag vWF" -> indétectable -> vWFpp -> { absent -> "Type 3"; present -> "Type 1 sévère" }
-"Ag vWF" -> "activité/ag vWF" -> "> 0.7" -> "FVIII/ag vWF" -> 
-
-{ "> 0.7" -> "Type 1 et 2M";
-"< 0.7" -> "vWF:FVIIIB" -> { "diminué -> "type 2N" ; "normal" -> "Hémophilie A"}
-"activité/ag vWF" -> "< 0.7" -> "type 2" -> { RIPA augmenté -> "type 2B/PT-VWD"  ;
-"multimère" -> {"HPM absent" -> "Type 2A";
-"HPM présents" -> "Type 2M3 }
-}
+![](../../images/hematologie/willebrand.svg)
 
 ## Thalassémies
 
