@@ -8,8 +8,8 @@ date = 2024-01-20
 - IgM : anticorps froid (optimum 4°), ne passent pas la barrière hématoplacentaire, agglutation spontanée, fixe le complément
 - Ig : optimium 37`, peut passer la barrière hématoplacentaire
 
-![TIA](../../images/hematologie/coombs-indirect.png)
-![TIA](../../images/hematologie/coombs-direct.png)
+![TIA](/images/hematologie/coombs-indirect.png)
+![TIA](/images/hematologie/coombs-direct.png)
 
 - Test indirect antiglobuline (RAI): plasma patient + globules rouges connus + antiglobuline
 - Test direct antiglobuline (TDA): globules rouges patient avec Ac + antiglobuline
@@ -100,7 +100,7 @@ Note: sous-groupe A1 et A2 mais pas d'intérêt en transfusion
 
 #### Variants ABO
 
-![](../../images/hematologie/groupe-a.png)
+![](/images/hematologie/groupe-a.png)
 
 A1 (80%) : 
 

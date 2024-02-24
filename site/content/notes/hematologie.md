@@ -27,7 +27,7 @@ CSH
 -   nombreuses interactions CSH avec micro-environnement (\"niche\"
     hématopoïètique)
 
-![lignée myéloide](../../images/hematologie/myeloide.png)
+![lignée myéloide](/images/hematologie/myeloide.png)
 
 Pour lignée lymphocytaire:
 
@@ -39,7 +39,7 @@ Pour lignée lymphocytaire:
     différencien en LB mémoire et en plasmocytes qui produisent les
     anticorps circulants.
 
-![lignée lymphocytaire](../../images/hematologie/lymphoide.png)
+![lignée lymphocytaire](/images/hematologie/lymphoide.png)
 
 # Cytométrie en flux
 
@@ -65,9 +65,9 @@ Indication en hémato: hémopathies malignes
     possible
 ## Variation TP, TCA
 Diminution TP
-![](../../images/tp-diminue.png)
+![](/images/tp-diminue.png)
 Augmentation isolée TCA sans traitement
-![](../../images/tca-diminue.png)
+![](/images/tca-diminue.png)
 Variations physiologiques
 
 -   Grossesse :
@@ -229,7 +229,7 @@ Interprétation activité vWF
 - FVIIIc/vWF:Ag <= 0.7 : type 2N ? hémophilie A ?
 - Ag < 5% : type 3 ?
 
-![](../../images/hematologie/willebrand.svg)
+![](/images/hematologie/willebrand.svg)
 
 ## Thalassémies
 

@@ -13,7 +13,7 @@ date = 2023-06-01
 -   synthène ARN : rifampicine
 -   synthèse protéines bactérienne : aminoside, macrolides, cyclines
 
-![](../../images/microbiologie/antibio-action.png)
+![](/images/microbiologie/antibio-action.png)
 
 ## Mécanisme de résistance
 
@@ -22,7 +22,7 @@ date = 2023-06-01
 -   impermeabilité
 -   efflux
 
-![](../../images/microbiologie/antibio-resistance.png) Résistance
+![](/images/microbiologie/antibio-resistance.png) Résistance
 naturelle
 
 -   colistine: bactérie gram+
@@ -50,7 +50,7 @@ naturelle
 
 ### Synthèse protéine bactérienne
 
-![](../../images/microbiologie/antibio-ribosome.png)
+![](/images/microbiologie/antibio-ribosome.png)
 
 -   aminoside: mauvaise reconnaissance de l\'ARN messager (modification
     de la cible)
@@ -886,11 +886,11 @@ Résistance : regarder penicilline G
 
     Aérobies
 
-![](../../images/microbiologie/aerobies.png)
+![](/images/microbiologie/aerobies.png)
 
-![](../../images/microbiologie/anaerobies.png)
+![](/images/microbiologie/anaerobies.png)
 
-![](../../images/microbiologie/autres.png)
+![](/images/microbiologie/autres.png)
 
 ## Catalase
 
