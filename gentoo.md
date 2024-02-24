@@ -71,3 +71,16 @@ ERROR: LoadError: failed to clone from https://github.com/JuliaRegistries/Genera
 
 Inspiration:  http://kev009.com/wp/2009/12/getting-beautiful-fonts-in-gentoo-linux/
 J'ai juste utilisé eselect fontconfig + la configuration recommandée
+
+# Portage + git
+
+ /etc/portage/repos.conf/gentoo.conf 
+[DEFAULT]
+main-repo = gentoo
+
+[gentoo]
+location = /var/db/repos/gentoo
+sync-type = git
+sync-uri = https://github.com/gentoo-mirror/gentoo
+auto-sync = yes
+sync-depth = 1

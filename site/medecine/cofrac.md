@@ -1,1 +1,0 @@
-../../medecine/cofrac.md
