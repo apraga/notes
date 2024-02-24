@@ -1,6 +1,7 @@
 image: alpine/edge
 packages:
   - hut
+  - npm
   - zola
 oauth: pages.sr.ht/PAGES:RW
 environment:
@@ -8,9 +9,13 @@ environment:
 sources:
   - https://git.sr.ht/~scut/notes
 tasks:
+  - install-build-deps: |
+      npm i -g @slidev/cli
   - build: |
       cd notes/site
       zola build
+      cd notes/slides/fosdem2024 
+      npm run build -- --base /slides/fosdem2024 --output ../../site/public/slides/fosdem2024
   - package: |
       cd notes/site
       tar -C public -cvz . > ../../site.tar.gz
