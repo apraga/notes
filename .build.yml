@@ -10,11 +10,11 @@ sources:
   - https://git.sr.ht/~scut/notes
 tasks:
   - install-build-deps: |
-      npm i -g @slidev/cli
+      npm i @slidev/cli
   - build: |
       cd notes/site
       zola build
-      cd notes/slides/fosdem2024 
+      cd ../slides/fosdem2024 
       npm run build -- --base /slides/fosdem2024 --output ../../site/public/slides/fosdem2024
   - package: |
       cd notes/site
