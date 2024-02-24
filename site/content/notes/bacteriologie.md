@@ -22,7 +22,7 @@ date = 2023-06-01
 -   impermeabilité
 -   efflux
 
-![](/images/microbiologie/antibio-resistance.png) Résistance
+![](../../images/microbiologie/antibio-resistance.png) Résistance
 naturelle
 
 -   colistine: bactérie gram+
@@ -50,7 +50,7 @@ naturelle
 
 ### Synthèse protéine bactérienne
 
-![](/images/microbiologie/antibio-ribosome.png)
+![](../../images/microbiologie/antibio-ribosome.png)
 
 -   aminoside: mauvaise reconnaissance de l\'ARN messager (modification
     de la cible)
@@ -80,52 +80,52 @@ naturelle
 
 ## Résumé
 
-                       Péni G/V                     Péni A                                       Peni A + inhib βlactamase         Peni M
-  -------------------- ---------------------------- -------------------------------------------- --------------------------------- ---------------------
-  Utile                Streptocoque                 idem + pneumocoque péniS                     idem + Staphylocoque metiS        Staphylocoque metiS
-                       Corynebacterium              E. faecalis, Listeria monocytogenes          H. influenza + pénicillinase      
-                       Diphteria                    Neisseria menigitidis                        Enterobactéries + pénicillinase   
-                                                    Entérobactéries groupe 1                     BNG anaérobies                    
-  Résistance nat       BGN                          Entérobactéries groupe 2, 3; P. aeruginosa                                     BGN
-  Résistance acquise   Staphylocoque, pneumocoque   Staphylocoque +/- pneumocoque                                                  Staphylocoque metiR
-                                                    H. influenza, N. gonorrhea                                                     
-                                                    N. mengitidis                                                                  
+|                     |Péni G/V                    |Péni A                                      |Peni A + inhib βlactamase        |Peni M
+| --------------------|----------------------------|--------------------------------------------|---------------------------------|---------------------
+| Utile               |Streptocoque                |idem + pneumocoque péniS                    |idem + Staphylocoque metiS       |Staphylocoque metiS
+|                     |Corynebacterium             |E. faecalis, Listeria monocytogenes         |H. influenza + pénicillinase     |
+|                     |Diphteria                   |Neisseria menigitidis                       |Enterobactéries + pénicillinase  |
+|                     |                            |Entérobactéries groupe 1                    |BNG anaérobies                   |
+| Résistance nat      |BGN                         |Entérobactéries groupe 2, 3; P. aeruginosa  |                                 |BGN
+| Résistance acquise  |Staphylocoque, pneumocoque  |Staphylocoque +/- pneumocoque               |                                 |Staphylocoque metiR
+|                     |                            |H. influenza, N. gonorrhea                  |                                 |
+|                     |                            |N. mengitidis                               |                                 |
 
 PéniM = oxacilline, cloxacilline PéniA = amox
 
-               C2G                                C3G orale (1)        C3G injectable
-  ------------ ---------------------------------- -------------------- ---------------------------------
-  Utile        Streptocoque, Staphylocoque metS   Streptocoque         Streptocoque (dont pneumocoque)
-               Entérobactérie groupe 1            entérobactérie 1,2   Neisseria spp, entérobactérie
-                                                                       Haemophilus
-  Résistance   Listeria, entérocoque              idem                 idem
-               Staphylocoque metiR                                     
-               P. aeruginosa, intracellaire                            
+|             |C2G                               |C3G orale (1)       |C3G injectable
+|-------------|----------------------------------|--------------------|---------------------------------
+| Utile       |Streptocoque, Staphylocoque metS  |Streptocoque        |Streptocoque (dont pneumocoque)
+|             |Entérobactérie groupe 1           |entérobactérie 1,2  |Neisseria spp, entérobactérie
+|             |                                  |                    |Haemophilus
+| Résistance  |Listeria, entérocoque             |idem                |idem
+|             |Staphylocoque metiR               |                    |
+|             |P. aeruginosa, intracellaire      |                    |
 
 \(1\) limité car mauvais biodisponibilité
 
-                         Carbapénème                                FQ                          Aminoside (2)
-  ---------------------- ------------------------------------------ --------------------------- --------------------------------------
-  Utile                  Entérobactérie, P. aeruginosa              Entérobactérie              Staphylocoque metiS
-                         Entérocoque, Staphylocoque metiS           Intracellulaire             Listeria monocytogenes
-                         Anaérobie                                  Staphylocoque metiS         BGN
-                                                                    P. aeruginosa : ciproflox   Streptocoque, pneumocoque
-  Résistance naturelle   P. aeruginosa, entérocoque: ertapénème !   entérocoque, L. monocyt     strepto, pneumo: **bithérapie amox**
-                                                                    anaérobie                   anaérobie stricte
-  Résistance acquise     carbapénémase                              SAMR, gonocoque (1)         
+|                       |Carbapénème                               |FQ                         |Aminoside (2)
+| ----------------------|------------------------------------------|---------------------------|--------------------------------------
+| Utile                 |Entérobactérie, P. aeruginosa             |Entérobactérie             |Staphylocoque metiS
+|                       |Entérocoque, Staphylocoque metiS          |Intracellulaire            |Listeria monocytogenes
+|                       |Anaérobie                                 |Staphylocoque metiS        |BGN
+|                       |                                          |P. aeruginosa : ciproflox  |Streptocoque, pneumocoque
+| Résistance naturelle  |P. aeruginosa, entérocoque: ertapénème !  |entérocoque, L. monocyt    |strepto, pneumo: **bithérapie amox**
+|                       |                                          |anaérobie                  |anaérobie stricte
+| Résistance acquise    |carbapénémase                             |SAMR, gonocoque (1)        |
                                                                                                 
 
 \(1\) Pas de monothérpaie pour P. aeruginosa et Staphylocoque aureus
 (risque mutants) (2) amikacine, gentamicine
 
-                        Macrolides (1)                  Lincosamide (2)    Métronidazole                             Glycopeptide (3)
-  --------------------- ------------------------------- ------------------ ----------------------------------------- ----------------------------
-  Utile                 Intracellulaire, streptocoque   Strepocoque        Anaérobie (sauf Acineto, cutibacterium)   Streptocoque, pneumocoque
-                        Staphylocoque metiS             Staphylocoque      Parasite                                  Entérocoque, staphylocoque
-                                                                                                                     metiS/metiR
-                                                                                                                     Clostri
-  Résistace naturelle   entérobactérie, P. aeruginosa   BGN, E. faecalis   Autres                                    BGN
-  résistance acquise    staph, pneumocoque, strepo A    staph, strepto                                               
+|                     |Macrolides (1)                 |Lincosamide (2)   |Métronidazole                            |Glycopeptide (3)
+|---------------------|-------------------------------|------------------|-----------------------------------------|----------------------------
+|Utile                |Intracellulaire, streptocoque  |Strepocoque       |Anaérobie (sauf Acineto, cutibacterium)  |Streptocoque, pneumocoque
+|                     |Staphylocoque metiS            |Staphylocoque     |Parasite                                 |Entérocoque, staphylocoque
+|                     |                               |                  |                                         |metiS/metiR
+|                     |                               |                  |                                         |Clostri
+|Résistace naturelle  |entérobactérie, P. aeruginosa  |BGN, E. faecalis  |Autres                                   |BGN
+|résistance acquise   |staph, pneumocoque, strepo A   |staph, strepto    |                                          
 
 \(1\) erythro, azithromycine, clarithromycine (2) clindamycine (3)
 vancomycine
@@ -143,24 +143,28 @@ Entérobactéries
     -   cefoxitine non touchée =\> permet de différencer d\'une
         céphalosporinase déréprimée (voir tableau)
 
-                            Pénicillinase   Pénicillinase déréprimée   Céphalosporinase   Céphalo. déréprimée   BLSE        Carbapénémase
-  --------------- --------- --------------- -------------------------- ------------------ --------------------- ----------- ----------------
-  amoxicilline    AMC       R               R                          R                  R                     R           R
-  ticarcilline    TIC       R               R                                             R                     R           R
-  piperacilline   PIP       I/R             R                                             R                     R           R
-  amox+inhib β    AMC                       I/R                        R                  R                     **S/I/R**   R
-  pipe/ticar      PCC/PTZ                   I/R                                           I/R                   **S/I/R**   R
-  \+ inhib β                                                                                                                
-  C1G             CF                        I/R                        R                  I/R                   R           R
-  C2G             FOX                                                  I/R                I/R                               I/R
-  C3G             CTX                                                  I/R                I/R                   I/R         S (OXA-48)/I/R
-  C4G             FEP                                                                                           I/R         S (OXA-48)/I/R
-  carbapénème                                                                                                               I/R
+|               |Pénicillinase  |Pénicillinase déréprimée  |Céphalo sporinase  |Céphalo. déréprimée  |BLSE       |Carba pénémase
+|---------------|---------------|--------------------------|------------------|---------------------|-----------|----------------
+|amoxicilline   |R              |R                         |R                 |R                    |R          |R
+|ticarcilline   |R              |R                         |                  |R                    |R          |R
+|piperacilline  |I/R            |R                         |                  |R                    |R          |R
+|amox+inhib β   |               |I/R                       |R                 |R                    |**S/I/R**  |R
+|pipe/ticar     |               |I/R                       |                  |I/R                  |**S/I/R**  |R
+|\+ inhib β     |               |                          |                  |                     |           |
+|C1G            |               |I/R                       |R                 |I/R                  |R          |R
+|C2G            |               |                          |I/R               |I/R                  |           |I/R
+|C3G            |               |                          |I/R               |I/R                  |I/R        |S (OXA-48)/I/R
+|C4G            |               |                          |                  |                     |I/R        |S (OXA-48)/I/R
+|carbapénème    |               |                          |                  |                     |           |I/R
 
--   C1G = céfalotine (CF)
--   C2G = céfoxitine (FOX)
--   C3G = céfixime (CFM), céfotaxime (CTX), ceftazidime (CAZ)
--   C4G = céfépime (FEP)
+- AMX = amoxicilline
+- TIC = ticarcilline
+- PIP = piperacilline
+- AMC = amox - acide clavulanique 
+- C1G = céfalotine (CF)
+- C2G = céfoxitine (FOX)
+- C3G = céfixime (CFM), céfotaxime (CTX), ceftazidime (CAZ)
+- C4G = céfépime (FEP)
 
 ### MSLB
 
@@ -409,7 +413,7 @@ sporulé
 -   Résistance acquise : pénicillinase, BLSE, céphalosporinase de haut
     niveau, carbapénémase
 
-## [TODO]{.todo .TODO} Pseudomonas aeruginosa {#pseudomonas-aeruginosa}
+##  Pseudomonas aeruginosa 
 
 Bacille Gram négatif, très mobile
 
@@ -600,7 +604,7 @@ accouchement.
     -   macrolide : sauvage sensible, résistance par mécanisme d'efflux,
         modiifcation cible ARN23S
 
-### [TODO]{.todo .TODO} Strepto agalactiae {#strepto-agalactiae}
+### Strepto agalactiae 
 
 -Pathogène n.1 des **infections materno-foetales** des pays
 développement.
@@ -868,7 +872,7 @@ Résiste à 4° ! \^
 
 -   amox + genta
 
-## [TODO]{.todo .TODO} Haemophilus influenza {#haemophilus-influenza}
+## Haemophilus influenza 
 
 Résistance : regarder penicilline G
 
@@ -886,45 +890,45 @@ Résistance : regarder penicilline G
 
     Aérobies
 
-![](/images/microbiologie/aerobies.png)
+![](../../images/microbiologie/aerobies.png)
 
-![](/images/microbiologie/anaerobies.png)
+![](../../images/microbiologie/anaerobies.png)
 
-![](/images/microbiologie/autres.png)
+![](../../images/microbiologie/autres.png)
 
 ## Catalase
 
 oxydoréductase qui intervient dans la résistance à la bactéricidie par
 le peroxyde d'oxygène
 
-                   Catalase +          Catalase -
-  ---------------- ------------------- ---------------
-                   aérobies strictes   
-  Cocci gram+      staph               strepto
-  Bacille Gram +   Listeria            Lactobacillus
-                   Corynebacterium     
-                   Propionobacterium   
+|                |Catalase +         |Catalase -
+|----------------|-------------------|---------------
+|                |aérobies strictes  |
+|Cocci gram+     |staph              |strepto
+|Bacille Gram +  |Listeria           |Lactobacillus
+|                |Corynebacterium    |
+|                |Propionobacterium  |
 
 ## Oxydase
 
 détecte les cytochrome de type c (pigments hémo-protéiques dans la
 plupart des cellules vivante)
 
-  Oxydase +        Oxydase -
-  ---------------- -----------
-  Aeromonas        
-  Bordetella       
-  Branhamella      
-  Brucella         
-  Burkholderia     
-  Campylobacter    
-  Flavobacterium   
-  Moraxella        
-  Neisseria        staph
-  Pasteurella      
-  Plesiomonas      
-  Pseudomonas      
-  Vibrio           
+|Oxydase +      |Oxydase -
+|---------------|-----------
+|Aeromonas      |
+|Bordetella     |
+|Branhamella    |
+|Brucella       |
+|Burkholderia   |
+|Campylobacter  |
+|Flavobacterium |
+|Moraxella      |
+|Neisseria      |staph
+|Pasteurella    |
+|Plesiomonas    |
+|Pseudomonas    |
+|Vibrio         |
 
 ## Mobile :
 
@@ -1001,13 +1005,12 @@ BGN:
     Donc lactose+ et glucose- n'est pas possible. Passe au jaune si
     acide. Exemple:
 
-      ------------ ------------------- ------------------
-                   Bas                 Haut
-      Shigella     glucose+ (jaune )   lactose- (rouge)
-      Pyo          glucose-(rouge)     lactose-
-      Salmonelle   noir (H2S)          noir
-      E.col        glucose+            glucose+
-      ------------ ------------------- ------------------
+|            |Bas                |Haut
+|------------|-------------------|------------------
+|Shigella    |glucose+ (jaune )  |lactose- (rouge)
+|Pyo         |glucose-(rouge)    |lactose-
+|Salmonelle  |noir (H2S)         |noir
+|E.col       |glucose+           |glucose+
 
 -   VCAT : Neisseria (Vancomycine, Colistine, Amphotéricine,
     Triméthoprime)
@@ -1020,7 +1023,7 @@ BGN:
     -   jaune/orange = fermetation
 -   Bouillon sélénite (inhibe coliforme + entérocoqu, enrichi pour
     Salmonelle)
--   Gélose Salmonelle-Shigelle : inhibiteur gram+, [lactose]{.underline}
+-   Gélose Salmonelle-Shigelle : inhibiteur gram+, _lactose_
     -   centre noir = H2S → Salmonelle
     -   jaune = pas de fermentation → Salmonelle/Shigelle
     -   rose/rouge = fermentation lactose
@@ -1420,19 +1423,16 @@ Diag différentiel =
 
 1.  ECBU: préanalytique
 
-    Prélèvement
-
-    -   Naturel : lavage main + toilette, urine 2eme jet
-    -   jeune enfant : collecteur d'urine +\*/ cathéter/ponctio
-        sus-pubienne
-    -   Sonde: jamais dans le sac prélevere, recueiller après
-        désinfections sur site dédié. Ne pas envoyer sonde
-
-    Conservation:
-
-    -   tube stérile 2h à température ambiante, 12h cyto, 24h à 4° pour
-        culture
-    -   tube borate: 48h si [bien rempli]{.underline}
+    - Prélèvement
+        -   Naturel : lavage main + toilette, urine 2eme jet
+        -   jeune enfant : collecteur d'urine +\*/ cathéter/ponctio
+            sus-pubienne
+        -   Sonde: jamais dans le sac prélevere, recueiller après
+            désinfections sur site dédié. Ne pas envoyer sonde
+    -  Conservation:
+        -   tube stérile 2h à température ambiante, 12h cyto, 24h à 4° pour
+            culture
+        -   tube borate: 48h si _bien rempli_
 
 2.  Analytique
 
@@ -1444,7 +1444,7 @@ Diag différentiel =
 
 ### Groupes
 
-[Groupe 1]{.underline} : **Seuil = 10^3^**. Critères majeurs de
+_Groupe 1_ : **Seuil = 10^3^**. Critères majeurs de
 pathogénicité (e.g adhésion à l'épithelium urinaire) -\> responsable si
 urine non contaminé, même en petite quantité
 
@@ -1455,7 +1455,7 @@ urine non contaminé, même en petite quantité
 -   mycobactéries
 -   leptospire
 
-[Groupe 2]{.underline} = **Seuil = 10^3^ homme, 10^4^ femme**. Plutôt IU
+_Groupe 2_ = **Seuil = 10^3^ homme, 10^4^ femme**. Plutôt IU
 associées aux soins si facteurs anatomiques/iatrogènes
 
 -   entérobactéries (Proteus, Klebsiella, Enterobacter, Citrobacter,
@@ -1466,7 +1466,7 @@ associées aux soins si facteurs anatomiques/iatrogènes
 -   Staphylococus aureus
 -   Corynebacterium urealyticum
 
-[Groupe 3]{.underline}: **Seuil 10^5^**. Implication discutée. Nécessite
+_Groupe 3_: **Seuil 10^5^**. Implication discutée. Nécessite
 bactériurie élevée + 2 échantillons + critères clinique + inflammation
 
 -   Gram + : Streptococcus agalactiae, staph à coagulase négative autre
@@ -1476,7 +1476,7 @@ bactériurie élevée + 2 échantillons + critères clinique + inflammation
     maltophilia, Burkholderia cepacia
 -   Candida
 
-[Groupe 4]{.underline} : **Seuil: non**. Contaminant
+_Groupe 4_ : **Seuil: non**. Contaminant
 
 -   lactobacillus (sauf L. delbrueckii)
 -   streptococques alpha-hémolytique
@@ -1496,13 +1496,13 @@ bactériurie élevée + 2 échantillons + critères clinique + inflammation
 
 ### Interprération
 
-  Dispositif   Clinique   Leucotyurie   Bactéurie    IU                     Antibiogramme
-  ------------ ---------- ------------- ------------ ---------------------- ---------------
-  Non          oui        oui           cf seuils    oui                    oui
-               non        oui/non       \>= 10^3^    colonisation           non
-               oui        non           cf tableau   débutant/neutropénie   oui
-  Oui          oui        NC            \>= 10^5^    oui                    oui
-               non        NC            \>= 10^3^    colonisation           non
+|Dispositif |Clinique|Leucotyurie|Bactéurie  |IU                   |Antibiogramme
+|-----------|--------|-----------|-----------|---------------------|---------------
+|Non        |oui     |oui        |cf seuils  |oui                  |oui
+|           |non     |oui/non    |\>= 10^3^  |colonisation         |non
+|           |oui     |non        |cf tableau |débutant/neutropénie |oui
+|Oui        |oui     |NC         |\>= 10^5^  |oui                  |oui
+|           |non     |NC         |\>= 10^3^  |colonisation         |non
 
 -   **colonisation** femme **enceinte** avec bactérurie \>= 10^5^
     groupes 1 à 3\* : antibiogramme !!

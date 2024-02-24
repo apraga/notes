@@ -54,7 +54,7 @@ polymérase par le virus+++)
 
 -   y penser si cystite hémorragique chez greffé rénal
 
-## Anelloviridae [[adn]{.smallcaps}]{.tag tag-name="adn"} {#anelloviridae}
+## Anelloviridae (adn)
 
 -   virus nu, ADN circulaire simple brin, polarité négative
 -   forte prévalence population générale
@@ -139,7 +139,7 @@ Pas de grosse concentration dans le sang (3-4log)
 
 symptomatique
 
-## EBV [[adn]{.smallcaps}]{.tag tag-name="adn"} {#ebv}
+## EBV (ADN)
 
 -   Infection lytique et latente
 -   ubiquitaire, transmis voie salivaire
@@ -255,7 +255,7 @@ rendue positive si \> seuil détection et \> seuil clinique
 -   16, 18, 45 autres
 -   HPV
 
-## HSV [[adn]{.smallcaps}]{.tag tag-name="adn"} {#hsv}
+## HSV (adn)
 
 -   Dermotrope et neurotrope
 
@@ -376,7 +376,7 @@ Charge virale: augmente vite et fort mais diminue à 0 sous traitement
 
 2 antiviraux d\'action directe (ex: sofosbuvir + veplatasvir)
 
-## VHA [[arn]{.smallcaps}]{.tag tag-name="arn"} {#vha}
+## VHA (arn)
 
 -   petite taille, ARN simple brin, polarité positive
 -   excrété sous forme nue dans les selles mais circule dans le sang
@@ -413,7 +413,7 @@ Charge virale: augmente vite et fort mais diminue à 0 sous traitement
 -   **Déclaration obligatoire**
 -   Vaccin + rappel = protection à vie
 
-## VHB [[adn]{.smallcaps}]{.tag tag-name="adn"} {#vhb}
+## VHB (adn)
 
 -   enveloppé ADn circulaire partiellement bicaténaire et extrêmement
     compact
@@ -517,7 +517,7 @@ acVCH
 
 **tenofovir**, (ancien: lamivudine, emtricitabine)
 
-## VHC [[arn]{.smallcaps}]{.tag tag-name="arn"} {#vhc}
+## VHC (arn)
 
 -   ARN simple brin de polarité positive. capside icosaédrique et
     enveloppe
@@ -534,7 +534,7 @@ acVCH
     (inhibiteur de protéase+++)
 -   importance du dépistage
 
-## VHD [[arn]{.smallcaps}]{.tag tag-name="arn"} {#vhd}
+## VHD (arn)
 
 -   Virus défectif, seulement chez individus infectés par VHB. Utilise
     les protéines d'enveloppe du VHB pour former les particules virales
@@ -638,7 +638,7 @@ Lamivudine, emtricitabine = mutation M134 V/I
     cette enzyme. NB: APOBEC peut éditer le génome intégrer (peu d'effet
     ? contrairement à EBV)
 
-## VZV [[adn]{.smallcaps}]{.tag tag-name="adn"} {#vzv}
+## VZV (adn)
 
 -   Dermotrope et neurotrope
 -   Latence ganglion nerveux sensitifs -\> éradication impossible par le
@@ -657,7 +657,7 @@ Lamivudine, emtricitabine = mutation M134 V/I
         =\> valaciclovir en prophylaxie
 -   vaccin ! (varicelle + zona)
 
-## VZV [[adn]{.smallcaps}]{.tag tag-name="adn"} {#vzv-1}
+## VZV (adn)
 
 -   Dermotrope et neurotrope
 -   Latence ganglion nerveux sensitifs -\> éradication impossible par le
