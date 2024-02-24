@@ -4,27 +4,27 @@ date = 2021-06-01
 +++
 
 Here is a small summary from my journey from vim to using Emacs for
-(almost) everything ! After using ViM for a few years, I wanted to try
+(almost) everything. After using ViM for a few years, I wanted to try
 Emacs. I can summarize months of trial and errors into this single
 sentence :
 
 > ViM users, use doom-emacs and profit
 
-Now that I got that of the way, here are the following paths I\'ve
-tried. I\'ve summarize as much as possible to avoid a long read :
+Now that I got that of the way, here are the following paths I've
+tried. I've summarize as much as possible to avoid a long read :
 
-1.  *Using pure emacs*: I\'ve started a clean `.emacs.el`{.verbatim} and
+1.  *Using pure emacs*: I've started a clean `.emacs.el` and
     discovered emacs mappings and some plugins.
 2.  *Discovering evil* felt so good to be back to vim mapping after
     emacs
 3.  [Using Purcell starter kit](https://github.com/purcell/emacs.d) is
-    quite nice but +++
+    quite nice but...
 4.  **Switching to doom emacs** This made my day/month/year. Start here
     !!
 
 ## Best plugins
 
-I\'ve put here plugins I deem essential for everyday use. I will not try
+I've put here plugins I deem essential for everyday use. I will not try
 to convince you but install, play with it and you should be pleased :)
 Also, the plugins in
 [doom-emacs](https://github.com/hlissner/doom-emacs) are marked as
@@ -44,7 +44,7 @@ Start here :
 Build on it :
 
 -   [evil surround](https://github.com/emacs-evil/evil-surround) : port
-    of Tim Pope\'s surround. Edit parenthesis, quotes, tags +++ Super
+    of Tim Pope's surround. Edit parenthesis, quotes, tags... Super
     useful when you need it.
 -   [avy](https://github.com/abo-abo/avy) and
     [easymotion](https://github.com/PythonNut/evil-easymotion) (doom)
@@ -68,25 +68,25 @@ Build on it :
 Under test
 
 -   [smartparens](https://github.com/Fuco1/smartparens) looks very
-    powerful to manage nested brackets, parenthesis +++
+    powerful to manage nested brackets, parenthesis...
 
 ## Living in emacs
 
 Here are a list of packages where tutorials can be found on the internet
 (or in later posts)
 
--   Mail : `notmuch`{.verbatim} is awesome (see [this
+-   Mail : `notmuch` is awesome (see [this
     post](posts/mail.org))
--   Navigation: `dired`{.verbatim} (I\'ve tried ranger but the default
+-   Navigation: `dired` (I've tried ranger but the default
     dired works better for me)
--   Facebook messenger : `irc`{.verbatim} + `bitlbee`{.verbatim}
+-   Facebook messenger : `irc` + `bitlbee`
 
 ## What I still do outside emacs
 
--   PDF: `pdf-tools`{.verbatim} is nice but I prefer
-    `zathura`{.verbatim}, which is faster and more configurable
--   Music (+ video) : using `mpd`{.verbatim} and `ncmpcpp`{.verbatim}
--   Shell : `eshell`{.verbatim} is nice but I prefer a "real" shell (using `nushell` at the moment).
+-   PDF: `pdf-tools` is nice but I prefer
+    `zathura`, which is faster and more configurable
+-   Music (+ video) : using `mpd` and `ncmpcpp`
+-   Shell : `eshell` is nice but I prefer a "real" shell (using `nushell` at the moment).
     easier to deal with.
 
 ## Community list
