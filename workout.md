@@ -6010,3 +6010,17 @@ Tricking
 
 # 2024-02-11 Running 
 1h10
+
+# 2024-02-24 Workout
+- Muscle-up : 
+    - 1+1+1+ 5 neg
+    - 2+1+ 5neg
+    - 2+1+1 + 4neg
+- Pistols 3x4
+- tucked planche 3x{3+2}
+- pushed-up tucked : 2x{3+3+3+1} - 1+3+3+2+1
+- extension 3x22
+- compression 3x10
+
+# 2024-02-25 1h12 course
+
