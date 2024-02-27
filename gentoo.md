@@ -66,3 +66,21 @@ Installing known registries into `/var/tmp/portage/dev-lang/julia-1.10.0/work/ju
 Cloning registry from "https://github.com/JuliaRegistries/General.git"
 ERROR: LoadError: failed to clone from https://github.com/JuliaRegistries/General.git, error: GitError(Code:ERROR, Class:OS, failed to connect to github.com: Network is unreachable)
 ```
+
+# Police
+
+Inspiration:  http://kev009.com/wp/2009/12/getting-beautiful-fonts-in-gentoo-linux/
+J'ai juste utilisé eselect fontconfig + la configuration recommandée
+
+# Portage + git
+
+ /etc/portage/repos.conf/gentoo.conf 
+[DEFAULT]
+main-repo = gentoo
+
+[gentoo]
+location = /var/db/repos/gentoo
+sync-type = git
+sync-uri = https://github.com/gentoo-mirror/gentoo
+auto-sync = yes
+sync-depth = 1
