@@ -14,3 +14,7 @@ Pour vérifier avant l'export bibtex
 Exporter en bibtex
 
     papis export --all --format bibtex project:pterodactyl-migration > bibliography.bib
+
+Voir la citation
+    
+    papis list --format '{doc[ref]}' guix

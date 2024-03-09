@@ -24,6 +24,9 @@ The tools I cannot live without:
 
 Interesting tools you should try. Some of them are popular tools rewritten in rust
 
+- *Terminal* : I use `alacritty` along with `zellij` (see below). `kitty` is a nice alternative if you don't need a multiplexer
+- *Zellij* is a rewrite in rust of `tmux`. 2 things that I really like : shortcuts are saner and you can open an editor to copy history (`C-s` then `e`)
+- *lazygit* makes working with command-line git easier. It is similar to `magit` in emacs, with less features but good enough for my use case
 - *A easier `find`* with `fd` written in Rust. For example, convert all org files to markdown with 
 ```bash
        fd -e md -x pandoc {} -o {.}.md`

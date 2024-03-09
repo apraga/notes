@@ -6022,5 +6022,16 @@ Tricking
 - extension 3x22
 - compression 3x10
 
-# 2024-02-25 1h12 course
+# 2024-02-25 Running
+1h12 course
+
+# 2024-03-07 Gymnastics
+Front flip
+Barre asymétrique 
+Cheval d'arçon: pas de progrès
+
+# 2024-03-08 Tricking
+Travail aériel à partir d'une roue... Juste une roue en fait :/
+
+
 
