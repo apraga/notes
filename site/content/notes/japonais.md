@@ -905,4 +905,25 @@ après X: -てから. Exemple : après être allé : きってから
 - そうだん　になります: je vais te conseiller (on va regarder ça ensemble)
 - たすかります : je vais t'aider (formule de politesse)
 - 用意ができたら 、出かける　予定です (ようい) (ようてい): je prévois de sortir quand je serai prêt
- 
+
+# 2024-03-09
+
+## Vocabulaire
+- くわしい : 
+- 老人ホーム : maison de reraite
+- 日程を決める : réserver une date
+- 下書き : brouillon
+- 自信がある : have confiance
+- 地震 : tremblement de terre
+- 夜の１２時ごろ : vers minuit
+- 脳の体力 : "endurance mentale"
+- 選択の余地がない : je n'ai pas le choix
+- 選択ができません : je n'ai pas le choix
+- 〜しないわけにはいかない :  je n'ai pas le choix (être obligé de )
+- 明日遅れることが一番 : il vaut mieux être en retard demain
+- 明日送れることが一番 : il vaut mieux l'envoyer demain
+- まったく知らないわけではない : ce n'est pas comme s'il ne savait pas (= il sait faire)
+
+## Grammaire
+
+- あまり〜ていない: peu de ...
