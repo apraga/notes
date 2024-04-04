@@ -116,6 +116,7 @@ l'évalution) Meilleures solution :
 
 ## Développer un package
 
+
 ### Hash
 
     nix-prefetch-url --unpack https://...tar.gz
@@ -206,53 +207,6 @@ nix profile remove '.*'
 Il faut parfois mettre des guillemets, ex:
 
     nix profile install "nixpkgs#cabal-install"
-
-# Nixpkgs
-
-## Ajouter un nouveau paquet
-
-Les nouveaux paquets sont dans pkg/by-name
-
-<https://nixos.wiki/wiki/Nixpkgs/Contributing> 
-
-Tester dans nixpkgs qu'il compile
-
-``` {.bash org-language="sh"}
-nix-build -A mypackage
-```
-
-Tester les dépendances
-
-``` {.bash org-language="sh"}
-nix-shell -p nixpkgs-review --run "nixpkgs-review rev HEAD"
-```
-
-Regarder les variables d\'environement :
-
-``` {.bash org-language="sh"}
-env
-```
-
-## Débugger un paquet
-
-``` {.bash org-language="sh"}
-cd nixpkgs
-mkdir lol
-cd lol
-nix-shell ../ -A kent
-```
-
-Le plus simple est d\'utiliser genericBuild avec les différentes phases,
-exemple :
-
-``` {.bash org-language="sh"}
-phases="checkPhase installPhase" genericBuild
-```
-
-Liste des phases : unpackPhase patchPhase configurePhase buildPhase
-checkPhase installPhase fixupPhase installCheckPhase distPhase
-
-Voir : <https://nixos.wiki/wiki/Nixpkgs/Create_and_debug_packages>
 
 # Aide
 
