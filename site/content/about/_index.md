@@ -23,7 +23,4 @@ lang = 'en'
 
 # PhD
 
--   [Praga, A. (2015). A large-scale atmospheric chemistry-transport
-    model for massively parallel architectures (Doctoral dissertation,
-    Université Toulouse III-Paul
-    Sabatier).](https://hal.inria.fr/tel-01178394/)
+- [Alexis Praga. A large-scale atmospheric chemistry-transport model for massively parallel architectures. Computer Science \[cs\]. Université Toulouse III - Paul Sabatier, 2015. English. ⟨NNT : ⟩. ⟨tel-01178394⟩](https://hal.inria.fr/tel-01178394/)
