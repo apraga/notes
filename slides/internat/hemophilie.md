@@ -98,16 +98,39 @@ ttt
 2. désensibilisation: on expose le patient à de faux taux de facteur jusqu'à disparation des AC
 limite : ceux qui en ont depuis longtemps et chez qui désensibilisation ipmpossible -> immunosuppression possible mais ne fonctionne pas bien
 
-Nouvelles thérapies
-stratégies
-Amélioraction activité facteur
--  Thérapie génique pour remplacer facteur déficince
-- thérapie cellulaire = transplanter cellulaire pouvant produire facteur défiction
-- modification des facteurs
-- remplacement facteurs
 
-Diminution anticoag naturel
-utilisation de vecteur viraux (adénovirus). 2 études
-- IX: 7-12% facteur persistant à 6 ans
-- VIII: quasiment plus de facteur annuellement
-Pb = réactionn immunitaire au virus
+## Thérapie génique
+INtéressant car permettrait de restaurer le facteur déficient (et maladie monogique assez délimitée au niveaux génétique)
+Plusieurs pays y travailler
+Plusieurs traitements approuvés mais manque de données sur suivi long
+
+
+Prinicpe: 
+https://www.uptodate.com/contents/gene-therapy-and-other-investigational-approaches-for-hemophilia/abstract/6
+- soit moidification exvivo des cellules + injection
+- soit injection veut avec gène normal (ex: adeno-associate virus qui ont l'avantage de ne pas s'intégrer dnas le génome, ne peuvent pas se répliquer) Problème e immuné
+Seuls patients sévère : < 1-2%
+
+Hémophilie A
+Valoctocogene roxaparvovec (Roctavian)
+-  approuvé europe + USA 2022 et 2023 resp
+- bonne efficacié : taux saignement annual 4.8 -> 0.8, unfision facteur annuel : 136 -> 2, activité VIII 43unit/dL
+- suivi 2 ans avec 22unit/dL à la fin (134 individus)
+- peu d'effets indésirable  sauf augmentation ALT 86-89% -> glucostéroide pour la majorité parfois tacrolimus/mycohpneloge. 
+
+Hémophilie B
+- etranacogene dezaparvovec : même vecteur avec mutation augmentatino activité, 
+  - approv FDA nov. 2022 (hemgenix): hémophilie B facteur (sévère oun no)
+  - effcicacité : diminution saignement (= 0 sur 26 semaines) et activité IX 31% à 26 semaine
+  - 20% ALAT augmenté, majorité ttt glucocorticoide
+
+Autres pistes d'amélioration
+- Amélioraction activité facteur
+  - thérapie cellulaire = transplanter cellulaire pouvant produire facteur défiction
+  - problème : ttt myobablation....
+  - augmenté demi-vie facteur
+  - injection SC
+- autre approche intéressante : certains individus ont un variant prothrombotique (facteur V leid ou antithrombien) ->_object = développer l'activité coagulante pour ré-équilibrer la balance ->_object = développer l'activité coagulante pour ré-équilibrer la balance
+diminuer anticoag naturel
+  - anticorps monoclonale contre le tissue factor pathway inihibitor (inhbe coag)
+  concizumab = approvué canada
