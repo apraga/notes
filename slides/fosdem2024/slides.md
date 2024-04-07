@@ -11,7 +11,7 @@ Alexis Praga (M. D, Ph.D in Computer Science)
 
 Besançon Hospital (France)
 <!--
-We are dealing with real world patients =
+We are dealing with real world patients = no mistake allowed !
 - accurate results : no mistake is allowed (diagnosis can be life changing)
 - reproducible : we need to have the trust of other doctors
 - fast : increasing demand !
@@ -125,7 +125,6 @@ class: "text-center"
 ---
 
 # Thank you !
-
 
 And to: 
 
