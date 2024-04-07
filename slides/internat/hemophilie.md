@@ -1,72 +1,231 @@
+---
+title: Hémophilie A et A
+author: Alexis Praga
+date: 2024-04-11
+...
 
-% Habits
-% John Doe
-% March 22, 2005
-
-# Principe
+# Définition
 
 Déficit en facteur
+
 - VIII (antithromobiphlia) -> type A
 - IX (antithromobiphlia type B) -> type B
 
-# Génétique
-Garçon : atteint
-Fille : 
-- si homozygoute (mère porteuse + père hémophile)
-- si hétérozygote avec inactivation partielle (détailler principe)
 
-TODO figure transmission
+# Génétique
+
+Sur le chromosome X donc
+
+- Garçon : atteint
+- Fille : conductrice, parfois atteinte
+
+# Génétique
+
+![](hemophilia-pattern-1.png)
+
+# Génétique
+
+![](hemophilia-pattern-2.png)
+
+
+# Génétique
+
+![](hemophilia-pattern-3.png)
+
+::: notes
+
+  - si homozygote (mère porteuse + père hémophile)
+  - si hétérozygote avec inactivation partielle (détailler principe)
+
+:::
+
+# Génétique
+
+Chromosome X:
+
+- /F8/ = gène codant pour le ... facteur VIII
+- /F9/ = pour le facteur IX
+
+Génétique indispensable : étude familiale + détection conductrices
+
+::: notes 
+
+inversion intron 22 souvent retrouvé dans les formes sévères de l'hémophilie A
+
+ (mesurer le taux de suffit pas !)
+
+:::
 
 # Clinique
-A = un peu plus de cas sévères (60% vs 20-45% pour B)
 
 Selon le taux de facteur
-- < 1%: hémorragie spontanée articulation + tissus. Si chir/trauma : hémorragie abondante
 
-Quand y penser ?
-- pas d'antécédent familiaux mais hémorragie intracrânielle chez nouveaux né
+- < 1% = sévère : 24-48 épisodes par an, hémorragie spontanée
+- 1-5% = mmodéré : 4-6 / an, sur traumatisme mineur
+- >5 et < 10%: sur traumatisme important/chirurgie
+
+::: notes
+
+sévère: hémorragie spontanée articulation + tissus. Si chir/trauma : hémorragie abondante
+
+A = un peu plus de cas sévères (60% vs 20-45% pour B)
+
+:::
+
+# Clinique: quand y penser ?
+
 
 Début (si sévère)
+
 - sévère : 9-18mois chez garçon
 - modéré : 2-5 ans
 
-NB: < moitié sévères ont saignement circoncision 
+- pas d'antécédent familiaux mais hémorragie intracrânielle chez nouveaux né
+- saignement circoncision 
 
-TODO image hémorragie IC + hémarthrose
+# Clinique
+
+![](hemarthrose.jpg)
+
+::: notes
 
 Hémarthrose: genou++ puis coudes, chevilles, épaules, hanche
 clinique: en aigùe, douloureux, chaud, gonflé -> peut être confondu avec infection !
 ttt = reste, ice, factor, elevation
 si récurrent oun non traivé : cartilage aboné, érosion os, puis avec le poids, subluxation, déformation permanente
 
+:::
+
+# Clinique
+
+![](hemarthrose.jpg)
+
+::: notes
+
+docteur de 32 ans hémophile A, aux urgences, opéré avec facteur VIII à 100% après injection
+
+Hegde et al 2016 
+https://doi.org/10.1016/j.ijscr.2016.10.046
+
+:::
+
+# Clinique : mais aussi...
+
+- hématome intra-musculaire
+- hématome rétropéritonéal 
+- mucqueuses, gastrointestinal, génitourinaire
+- intracérébral !!
+
+
+::: notes
+
 30% hématome intramusculation 
 - après injection IM
 - non mortel mais atteinte sensorielle/motrice si syndrome des loges syndrome des loges (augmenttaion de la pression ) = urence médicalle !
 
-hématome rétropéritonial : patient incapable de se tenir droit. Risque = déformation permantente (attente tnerfs)
-Possible saignemeux mucquet, gastrointestinal, génitourinaire
+rétropéritonéal: patient incapable de se tenir droit. Risque = déformation permantente (attente nerfs)
+
 10% des patients ont hémorragie IC (risque 2%) soit spontané soit traumatique (décès 30%)
-TODO: image déformation
+
+:::
 
 Principe traitement : prévention atteinte articulaire, dosage facteur, éviter certains sports, aspirite et inhibiteur plaquette, gestion de l'hépatite C, VIH
 
-Diag 
+# Diagnostic 
+
 - suspcion : ATCD perso/familial saignement  + TCA allongé TP normal
 - confirmé facteur VIII ou IX diminué
 
-DD
-- willebrand : vWF antigene et  ristocetin cofacteur normal (sauf un variant type 2N -> génétique nécessaire)
--  déficit XI, XII
-- déficit vitK : TP augmenté, déficit II, VII, IX, X
-- présence héparine: TCA corrigé après passe colonne (?) absorbant hépanie
+# Diagnostics différentiels
+
+- Willebrand : vWF antigene et  ristocetin cofacteur normal (sauf un variant type 2N -> génétique nécessaire)
+- déficit XI, XII
+- déficit vitamine K : TP augmenté, déficit II, VII, IX, X
+- présence héparine: TCA corrigé après passe colonne (?) absorbant héparine
 - si ne se corrige pas avec plasma normal : inhibiteur 
   - anti VIII
   - ACC
 
-attention: si modéré , TCA peut être normal
-notes : sévère, dans l'enfance, circoncision. modélér plus tard après traumat /chir
+# Attention 
 
-Ttt
+Si hémophilie modéré , TCA peut être normal !
+
+# Dosage des facteurs : coagulométrique
+
+- Plasma patient dilué
+- Plasma déficient en facteur à doser
+- TCA sur le mélange
+- temps de coagulation -> % 
+
+::: notes
+
+ou UI/ml avec 100% = 1UI/mL
+
+:::
+
+# Dosage des facteurs : coagulométrique
+
+![](calibration.png)
+
+# Dosage des facteurs : coagulométrique
+
+![](patient.png)
+
+# Dosage des facteurs : coagulométrique
+
+![](acc.png)
+
+# Dosage des facteurs : coagulométrique
+
+TODO cas pratique UNESS: quel dosage rendre ?
+
+# Dosage des facteurs : coagulométrique
+
+Taux très abaissé sans intérférence ACC: étalonnage 0.6 et 20%
+
+# Dosage des facteurs : chromogénique
+
+- 2 temps
+- plus cher
+- non sensible héparine et ACC
+- doasge post-injection facteur VIII
+
+::: notes
+
+contrairement à la méthode coagulométrique = 1 temps
+plus reproductible
+
+:::
+
+# Dosage des facteurs : chromogénique : étape 1
+
+https://www.osmosis.org/answers/coagulation-cascade
+
+::: notes
+
+principe
+
+plasma patient + "mix magique" avec facteur 2,9,X9, 2 calcium, 
+sur la figure, on voit que cela permet d'activer le X en Xa (pourquoi le IIa ?) via un complexe di complexe tenas (9 8 calcium Pl)
+
+:::
+
+# Dosage des facteurs : chromogénique : étape 2
+
+- Inhibteur IIa 
+- substrat chromogène Xa
+
+coloration proportionnelle au VIII
+
+::: notes
+
+les 2 étapes sont des incubation à 37°
+mesure par densité optique
+
+:::
+
+# Traitement
+
 Simple : remplacer facteur manquant
 objectif : 25-30% pour éiter saignemen  minor, 50% pour saignement sévère et 80-100% pour saignement impactant pronostic vital
 dosage : 8-12h pour facteur VIII, 18-24h pour IX
