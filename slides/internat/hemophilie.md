@@ -98,7 +98,7 @@ si récurrent oun non traivé : cartilage aboné, érosion os, puis avec le poid
 
 # Clinique
 
-![](hemarthrose.jpg)
+![](intracranial.jpg)
 
 ::: notes
 
@@ -267,8 +267,8 @@ en effet ils neutralise l'activité anticoag et augmenté le taux de facteurs tr
 # Complication: allo-anticorps
 
 Traitement
-1. assurer hémostase avec "bypass" : complexe de prothrombine activé, ou facteur VII recombinant (en alternance car ne marchent psa très bie). Autre possibilité : emicizumba (pont facteur IX et X activé
-)
+
+1. assurer hémostase avec "bypass" : complexe de prothrombine activé, ou facteur VII recombinant (en alternance car ne marchent psa très bie). Autre possibilité : emicizumba (pont facteur IX et X activé )
 2. désensibilisation: on expose le patient à de faux taux de facteur jusqu'à disparation des AC
 
 Limite : ceux qui en ont depuis longtemps et chez qui désensibilisation ipmpossible -> immunosuppression possible mais ne fonctionne pas bien
@@ -276,9 +276,9 @@ Limite : ceux qui en ont depuis longtemps et chez qui désensibilisation ipmposs
 
 # Thérapie génique
 
-Intéressant car permettrait de restaurer le facteur déficient (et maladie monogique assez délimitée au niveaux génétique)
-Plusieurs pays y travaillent
-Plusieurs traitements approuvés mais manque de données sur suivi long
+- Intéressant car permettrait de restaurer le facteur déficient (et maladie monogique assez délimitée au niveaux génétique)
+- Plusieurs pays y travaillent
+- Plusieurs traitements approuvés mais manque de données sur suivi long
 
 # Thérapie génique
 
@@ -292,6 +292,7 @@ Seuls patients sévère : < 1-2%
 # Thérapie génique : Hémophilie A
 
 Valoctocogene roxaparvovec (Roctavian)
+
 -  approuvé europe + USA 2022 et 2023 resp
 - bonne efficacié : taux saignement annual 4.8 -> 0.8, unfision facteur annuel : 136 -> 2, activité VIII 43unit/dL
 - suivi 2 ans avec 22unit/dL à la fin (134 individus)
@@ -305,6 +306,7 @@ Valoctocogene roxaparvovec (Roctavian)
   - 20% ALAT augmenté, majorité ttt glucocorticoide
 
 # Autres pistes d'amélioration
+
 - Amélioraction activité facteur
   - thérapie cellulaire = transplanter cellulaire pouvant produire facteur défiction
   - problème : ttt myobablation....
