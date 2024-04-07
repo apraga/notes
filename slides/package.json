@@ -1,5 +1,5 @@
 {
-  "name": "fosdem2024",
+  "name": "slides",
   "type": "module",
   "private": true,
   "scripts": {
@@ -8,12 +8,9 @@
     "export": "slidev export"
   },
   "dependencies": {
-    "@slidev/cli": "^0.46.3",
-    "@slidev/theme-apple-basic": "^0.20.0",
+    "@slidev/cli": "^0.48.8",
     "@slidev/theme-default": "latest",
-    "@slidev/theme-seriph": "latest"
-  },
-  "devDependencies": {
-    "playwright-chromium": "^1.41.1"
+    "@slidev/theme-seriph": "latest",
+    "vue": "^3.4.21"
   }
 }

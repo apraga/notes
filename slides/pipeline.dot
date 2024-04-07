@@ -1,0 +1,12 @@
+digraph {
+    graph [ rankdir=LR ]
+    align -> "call\nvariant" -> annotate -> filter
+    // db1[label="Database 1,2..."] -> annotate
+    db1[label="Database\n1,2...", shape=rect] 
+    db1 -> annotate;
+    {rank=same db1 annotate}
+    db2[label="Database\n3,4..", shape=rect]
+    db2 -> filter
+    {rank=same db2 filter}
+
+}

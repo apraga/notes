@@ -9,9 +9,3 @@ To start the slide show:
 Edit the [slides.md](./slides.md) to see the changes.
 
 Learn more about Slidev on [documentations](https://sli.dev/).
-
-Export pdf :
-`npm run export`
-
-Export to static package
-`npm run build -- --base /slides/fosdem2024`
