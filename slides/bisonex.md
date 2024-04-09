@@ -1,11 +1,9 @@
 ---
-theme: academic
+theme: frankfurt
 layout: cover
-coverAuthor: [Alexis Praga]
+author: Alexis Praga
 title: Bisonex
-coverDate: [18 avril 2024]
-
-
+date: 18/04/2024
 ---
 
 # BisonEx
@@ -17,9 +15,10 @@ Remercier jury + public
 -->
 
 ---
+section: Introduction
 ---
 
-## Plan
+# Plan
 1. Contexte
 2. Reproductibilité, portabilité et performance
 3. Validation
@@ -28,7 +27,7 @@ Remercier jury + public
 ---
 ---
 
-## 1. Contexte
+# Contexte
 
 - Consultations de maladies rares (Centre de Génétique Humaine)
 - _Exome_ souvent prescrit après un premier bilan
@@ -37,7 +36,7 @@ Remercier jury + public
     - sous-traité à un laboratoire privé accrédité
 
 <!--
-Maladise rares par opposition aux cancers
+Maladies rares par opposition aux cancers
 Depuis 2017, bilan "débrouillage" : ACPA/caryotype
 
 1% = codant pour des protéines => rôle important et d'ailleur rendement diagnostic intéressant (mais dépend des malades)
@@ -47,10 +46,10 @@ Depuis 2017, bilan "débrouillage" : ACPA/caryotype
 ---
 layout: image-right
 image: /img/ngs.svg
-backgroundSize: 90%
+backgroundSize: 100%
 ---
 
-## 1. Contexte : 
+# Contexte
 
 Patients en errance diagnostique
 - ré-intérpréter données existantes <v-click> **disponibles depuis 2022** </v-click>
@@ -69,13 +68,33 @@ Décrire figure puis dire où on se place
 - besoin d'un biologiste (> IA not. expérience)
 -->
 
+---
+---
+
+# Pipeline
+
+```mermaid
+flowchart LR
+  subgraph un [Post-alignement]
+    direction TB
+    B[Marquage des doublons] --> C[Recalibration]
+  end
+  subgraph deux [Annotation et filtre]
+    direction TB
+    E[Filtre] --> F[Annotation] --> G[Filtre]
+  end
+  A[Alignement] --> un
+  un --> D[Appel de variant] --> deux
+
+```
 
 ---
 layout: image-right
 image: /img/dependencies.svg
-backgroundSize: 95%
+backgroundSize: 100%
+section: Reproductibilité, portabilité
 ---
-## 2. Reproductibilité : Nix
+# Reproductibilité
 
 Comment assurer au COFRAC des résultats reproductibles ?
 
@@ -107,23 +126,24 @@ nix répond à cette problématique (exactement)
 ---
 layout: image-right
 image: /img/pullrequests.svg
-backgroundSize: 85%
+backgroundSize: 100%
 ---
-## 2. Reproductibilité: Nix
+# Reproductibilité
 
-Contributions de cette thèse :
-- 6 logiciels importants
-- 5 déjà utilisable par la communauté (nixpkgs)
+Incorporation dans Nix :
+- 6 logiciels "empaquetés" + 3 dépendences
+- 3/6 déjà utilisables par la communauté (nixpkgs)
 
 <!--
-packaging = incorporer ces logiciels dans nix. 
-On a un outil d'annotation, 2 outils important pour comparer les résultats à des réference
-un outil de score d'épissage, un outil de qualité
+packaging  
+Apport: appel de variant (gatk), annotation (vep), score d'épissage (spip), 
+2 outils important pour comparer les résultats à des réference
 
 open-source
 utilisable via un dépôt commun (nixpkgs)
+processus long
 
-à noter le délai...
+actullement: spip vep et multiqc en attente
 -->
 
 ---
@@ -132,7 +152,9 @@ image: /img/executors.png
 backgroundSize: 85%
 ---
 
-## 2. Portabilité : Nextflow
+# Portabilité 
+
+**Nextflow**
 
 <v-clicks every="1">
 
@@ -156,10 +178,10 @@ Et permet de s'exécuter sur de nombreuses architectures !
 ---
 layout: image-right
 image: /img/speedup.svg
-backgroundSize: 85%
+backgroundSize: 100%
 ---
 
-## 2. Performances
+# Performances
 
 - Mésocentre de Franche-Comté
 - Parallélisation de l'alignement
@@ -177,44 +199,104 @@ Pour donner une idée, 12h de calcul sur un portable
 -->
 
 ---
+section: Validation
 ---
 
-## 3. Validation  
+# Validation  
 
-- Données de patients de référence : Genome In A Bottle Consortium
+- "Gold standard" sur patients de référence (Genome In A Bottle Consortium)
 - *In silico*
 
----
----
-## 3. Validation : patient NA12878
-
 <!--
-Ici séquencage + pipeline
+GIAB: séquencage de plusieurs patients, chacun sur plusieurs technologies. 
+définition de variants de référence sur des intervalles de confiance
+permet de définir des vrais positifs, faux positifs, faux négatifs -> calcul de performance
 -->
 
 ---
 ---
-## 3. Validation : patients GIAB
+# Séquencage et pipeline
 
+Patient NA12878
+- ADN commandé à Corriel
+- séquencé à Centogène
+- analysé par notre pipeline
+
+<br/>
+
+| Type | Sensibilité| Valeur Prédictive Positive  |
+|------|------------|-----------------------------|
+| Indel| 0.954      | 0.775                       | 
+| SNV  | 0.983      | 0.965                       | 
+
+<!--
+Bon résultats pour SNV (définir)
+Indel: performances moindres, surtotu du à un nombre de faux positifs, 
+qui ne sont pas du à une discordance sur le gène ou l'allèe
+Surtout des petites délitino 1-5bp
+-->
+
+---
+layout: image-right
+image: /img/giab_both_run.svg
+backgroundSize: 100%
+---
+# Pipeline
+
+- 7 Patients GIAB
+- Séquencage par Google (Baid et al. 202) :
+  - 3 kits de capture
+  - 2 séquenceurs (HiSeq4000, Novaseq)
+  - alignement et appel de variant identiques
 <!--
 Ici pipeline seul
+Données google intéressantes car nombreuses possibiliés (capture, séquenceur, patient). En résumé 
+
+Bisonex semble plus performant: impact du génome de réference (version avec ALT ?)
+illuste problème de la reproductibilité
 -->
 
 
 ---
+layout: image-right
+image: /img/varben.png
+backgroundSize: 95%
 ---
-## 3. Validation : in silico
+# In silico
+
+- Patient de synthèse avec **varben**
+- 126 variants confirmés en Sanger
+  - 1 non inséré
+  - 1 filtré sur la profondeur (21 < 30)
+  - 124 retrouvés 
 
 <!--
-Ici pipeline seul
+13 homozygotes classifiés hétérozygotes
 -->
----
----
-
-## 4. Réinterprétation : non-infériorité
 
 ---
 ---
+# In silico
 
-## 4. Réinterprétation : nouveaux diagnostics
+Données simulées avec **simuscop**
+
+- 126 même variants
+  - 1 non appelé (3 read sur 34)
+  - 1 manqué
+  - 2 en dehors du kit de capture
+  - 122 retrouvés
+<!--
+7 étiquetés htz au lieu d'hmz
+-->
+
+---
+section: Réinterprétation
+---
+
+# Non-infériorité
+
+---
+---
+
+# Nouveaux diagnostics
 
