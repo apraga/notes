@@ -1,15 +1,15 @@
 ---
-theme: frankfurt
+theme: academic
 layout: cover
-author: Alexis Praga
+coverAuthor: Alexis Praga
 title: Bisonex
-date: 18/04/2024
+coverDate: 18/04/2024
 ---
 
 # BisonEx
 ## Un pipeline bioinformatique de ré-interprétation d’analyses constitutionnelles d’exome 
 
-CHU Minjoz, Besançon
+Laboratoire de Génétique, CHU Minjoz, Besançon
 <!--
 Remercier jury + public
 -->
@@ -18,7 +18,7 @@ Remercier jury + public
 section: Introduction
 ---
 
-# Plan
+#  Plan
 1. Contexte
 2. Reproductibilité, portabilité et performance
 3. Validation
@@ -27,7 +27,7 @@ section: Introduction
 ---
 ---
 
-# Contexte
+# 1. Contexte
 
 - Consultations de maladies rares (Centre de Génétique Humaine)
 - _Exome_ souvent prescrit après un premier bilan
@@ -49,7 +49,7 @@ image: /img/ngs.svg
 backgroundSize: 100%
 ---
 
-# Contexte
+# 1. Contexte
 
 Patients en errance diagnostique
 - ré-intérpréter données existantes <v-click> **disponibles depuis 2022** </v-click>
@@ -71,7 +71,7 @@ Décrire figure puis dire où on se place
 ---
 ---
 
-# Pipeline
+# 1. Pipeline
 
 ```mermaid
 flowchart LR
@@ -94,7 +94,7 @@ image: /img/dependencies.svg
 backgroundSize: 100%
 section: Reproductibilité, portabilité
 ---
-# Reproductibilité
+# 2. Reproductibilité
 
 Comment assurer au COFRAC des résultats reproductibles ?
 
@@ -128,10 +128,10 @@ layout: image-right
 image: /img/pullrequests.svg
 backgroundSize: 100%
 ---
-# Reproductibilité
+# 2. Reproductibilité
 
 Incorporation dans Nix :
-- 6 logiciels "empaquetés" + 3 dépendences
+- 6 logiciels + 3 dépendences
 - 3/6 déjà utilisables par la communauté (nixpkgs)
 
 <!--
@@ -152,7 +152,7 @@ image: /img/executors.png
 backgroundSize: 85%
 ---
 
-# Portabilité 
+# 2. Portabilité 
 
 **Nextflow**
 
@@ -181,7 +181,7 @@ image: /img/speedup.svg
 backgroundSize: 100%
 ---
 
-# Performances
+# 2. Performances
 
 - Mésocentre de Franche-Comté
 - Parallélisation de l'alignement
@@ -202,7 +202,7 @@ Pour donner une idée, 12h de calcul sur un portable
 section: Validation
 ---
 
-# Validation  
+# 3. Validation  
 
 - "Gold standard" sur patients de référence (Genome In A Bottle Consortium)
 - *In silico*
@@ -215,10 +215,10 @@ permet de définir des vrais positifs, faux positifs, faux négatifs -> calcul d
 
 ---
 ---
-# Séquencage et pipeline
+# 3. Validation: séquencage et pipeline
 
 Patient NA12878
-- ADN commandé à Corriel
+- ADN commandé à Coriell
 - séquencé à Centogène
 - analysé par notre pipeline
 
@@ -241,10 +241,10 @@ layout: image-right
 image: /img/giab_both_run.svg
 backgroundSize: 100%
 ---
-# Pipeline
+# 3. Validation
 
 - 7 Patients GIAB
-- Séquencage par Google (Baid et al. 202) :
+- Google (Baid et al. 2022)
   - 3 kits de capture
   - 2 séquenceurs (HiSeq4000, Novaseq)
   - alignement et appel de variant identiques
@@ -295,8 +295,96 @@ section: Réinterprétation
 
 # Non-infériorité
 
+```mermaid
+flowchart LR
+  A[Exomes \n 1178] --> B[Données brutes \n 248]
+  B --> C[Réanalyse] --> D1[Négatifs \n 153] & D[Positifs \n 98]
+  D --> E[Retrouvés \n 94] & F[Filtré \n 4] 
+  F --> G[Confirmés Sanger \n 4]
+  style G fill:#ff7b7b
+  style E fill:#aeca7d
+```
+
+<v-click>
+
+- 3 variants filtré sur la profondeur (*CHD3*, *GABRA5*, *RRAS2*)
+- 1 variant sur le nombre de reads porteurs (*PITX3*)
+
+</v-click>
+
+<!--
+
+Gène      Profondeur  Reads porteurs 
+*CHD3*    **27**          22             
+*PITX3*   34          **8**              
+*GABRA5*  **15**          6              
+*RRAS2*   **29**          14             
+
+-->
+
 ---
+layout: two-cols
 ---
 
 # Nouveaux diagnostics
 
+1 Variant de Signification Indéterminé sur *SPEN*
+
+- Foetus avec malformation cardiaque
+- Radio-Tartaglia syndrome 
+  - malformation cardiaque possible
+  - pas de foetus décrit
+::right::
+
+#
+
+<img src="/img/spen.png" width=60%>
+<img src="/img/spen-decipher.png" width=40%>
+
+<!--
+Stratégie : nouveau "clinical synopsis" dans OMIM sur exome neg
+
+
+1 fois dans clinvar, vous
+non présent dans gnomad4 genome et < 1e-5 dans gnomadexome
+qq score bioinfo en faveur (CADD)
+probablement pas d'atteinte de l'épissage (spip, spliceai)
+
+a neurodevelopmental disorder characterized by global developmental delay with impaired intellectual development, speech delay, and variable behavioral abnormalities. Affected individuals show 
+hypotonia, mild motor difficulties, and craniofacial dysmorphism. Brain imaging may show nonspecific defects; rare patients have seizures or pyramidal signs. A subset of individuals may have congenital heart defects, precocious puberty, and obesity in  
+Syndrome décrit en 2021
+- trouble du neurodeveloppement, dysmorphie craniofaciale
+- certains ont une malformation cardique
+
+
+Abnormal plantar dermatoglyphics; Antenatal onset; Hypoplastic right heart; Increased nuchal translucency;
+Plagiocephaly; Tricuspid stenosis
+
+Ségrégation en cours...
+-->
+
+---
+layout: center
+---
+
+# Conclusion
+
+- Reproductible
+- Portable
+- Performant
+- Validation à affiner
+- Recherche nouveaux diagnostics en cours
+
+<v-click>
+
+**Merci de votre attention !**
+
+</v-click>
+
+<!--
+Nombreuses améliorations possibles
+Validation: faire passer tous les tests
+Nouveaux diag à creuser
+Étude impact du génome de réference
+
+-->
