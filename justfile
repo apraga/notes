@@ -3,7 +3,7 @@ slides: fosdem bisonex
 fosdem: fosdem-build
     cp -r slides/dist/* site/static/slides/fosdem2024/
     mkdir -p site/static/slides/fosdem2024/img
-    cp -r slides/img/ngs.svg site/static/slides/fosdem2024/img/
+    cp -r slides/img/ngs.png site/static/slides/fosdem2024/img/
 
 fosdem-build:
     cd slides &&  npx slidev build fosdem2024.md --base /slides/fosdem2024/ 
