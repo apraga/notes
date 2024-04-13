@@ -6033,5 +6033,22 @@ Cheval d'arçon: pas de progrès
 # 2024-03-08 Tricking
 Travail aériel à partir d'une roue... Juste une roue en fait :/
 
+# 2024-04-13 Workout
+It has been a long time...
+- Muscle-up : 
+    - 2+1+1+ 4 neg
+    - 2+1+1+ 4 neg
+    - 2+1+1+ 4 neg
+- Pistols 3x4
+- tucked planche 
+  - 3+2
+  - 3+3
+  - 3+3
+- pushed-up tucked : 
+  - 2+2+3+3
+  - 2+3+3+3
+  - 4+3+3
+- extension 3x22
+- compression 3x10 (plus haut que d'habitude)
 
-
+[./lol.md]
