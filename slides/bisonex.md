@@ -4,6 +4,8 @@ layout: cover
 coverAuthor: Alexis Praga
 title: Bisonex
 coverDate: 18/04/2024
+themeConfig:
+  paginationPagesDisabled: [1]
 ---
 
 # BisonEx
@@ -14,17 +16,12 @@ Laboratoire de Génétique, CHU Minjoz, Besançon
 Remercier jury + public
 -->
 
+<img id="logo-univ" position="absolute" width="100pt" bottom="4%" right="4%" src="img/univ-fcomte.svg">
+<img id="logo-univ" position="absolute" width="200pt" bottom="4%" right="20%" src="img/ufr-smp.png">
+<img id="logo-univ" position="absolute" width="200pt" top="1%" right="4%" src="img/chub.jpg">
+
 ---
 section: Introduction
----
-
-#  Plan
-1. Contexte
-2. Reproductibilité, portabilité et performance
-3. Validation
-4. Réinterprétation
-
----
 ---
 
 # 1. Contexte
@@ -45,16 +42,21 @@ Depuis 2017, bilan "débrouillage" : ACPA/caryotype
 
 ---
 layout: image-right
-image: /img/ngs.svg
+image: /img/ngs.png
 backgroundSize: 100%
 ---
 
 # 1. Contexte
 
 Patients en errance diagnostique
-- ré-intérpréter données existantes <v-click> **disponibles depuis 2022** </v-click>
-- ré-analyser données brutes : <v-click> **pipeline maison** </v-click> <v-click> (v0.1 par Dr. A. Overs) </v-click>
 
+<v-clicks every="1">
+
+- ré-interprétation à la demande 
+- données brutes **disponibles depuis 2022** 
+- **pipeline maison** (v0.1 par Dr. A. Overs) 
+
+</v-clicks>
 <!--
 Errance = sans diag :  soit pas de cause génétique, soit limite technologique ou scientifique
 - Intéressant de regarder les données déjà ré-analysées (ex: nouveaux gènes) -> ok
@@ -81,12 +83,29 @@ flowchart LR
   end
   subgraph deux [Annotation et filtre]
     direction TB
-    E[Filtre] --> F[Annotation] --> G[Filtre]
+    E[Filtre 1] --> F[Annotation] --> G[Filtre 2]
   end
-  A[Alignement] --> un
+  A["Alignement"] --> un
   un --> D[Appel de variant] --> deux
 
 ```
+
+<!-- Les "3 A"
+
+Doublons = reads qui sont probablement des doublons des fragments d'ADN originel (artefact)
+Recalibration: détecter et corriger les erreurs systématiques dans les scores de qualité (donnés par le séquencaire)
+
+NB: Biais possible = biochimique (libraire, séquencage), du séquenceur lui-mêm...
+En pratique, on fait un modèle à partir des mesures et on ajuste en fonction
+
+Précisions pour les questions
+Filtre 1 = profondeur <= 30, nb reads porteur <= 10 et variants dans dbSNP non rare (MAF >= 0.01) et non pathologique selon clinvar
+Filtre 2 = on enlève les variants non codants, integnéique, UTR, intronique, pseudogène, micro ARN sauf si score d'épissage > 
+-    spip.cutoff = 30
+-    spliceai.cutoff = 0.2
+
+
+ -->
 
 ---
 layout: image-right
@@ -109,7 +128,7 @@ Comment assurer au COFRAC des résultats reproductibles ?
 
 1. bloque la version de tous les logiciels
 2. quelque soit l'ordinateur (Linux +/- OSX)
-
+3. environnement logiciel de "production" identique à celui validation
 </v-clicks>
 
 <!--
@@ -135,15 +154,16 @@ Incorporation dans Nix :
 - 3/6 déjà utilisables par la communauté (nixpkgs)
 
 <!--
-packaging  
-Apport: appel de variant (gatk), annotation (vep), score d'épissage (spip), 
+Graphique : soumissions à la communité avec le délai entre la soumission initiale et l'acceptation
+Certains ont été longs...
+
+Apport sur des outils importants non disponibles !: appel de variant (gatk), annotation (vep), score d'épissage (spip), 
 2 outils important pour comparer les résultats à des réference
 
 open-source
 utilisable via un dépôt commun (nixpkgs)
-processus long
 
-actullement: spip vep et multiqc en attente
+actullement: spip, vep et multiqc en attente
 -->
 
 ---
@@ -159,7 +179,7 @@ backgroundSize: 85%
 <v-clicks every="1">
 
 - Maîtrise des risques liés au matériel
-- Exécution sur de multiple architecture (super-calculateur...)
+- Exécution sur de multiples architectures (super-calculateur...)
 
 </v-clicks>
 

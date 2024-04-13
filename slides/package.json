@@ -15,5 +15,8 @@
     "slidev-theme-frankfurt": "^1.0.5",
     "slidev-theme-hep": "^0.1.1",
     "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.43.1"
   }
 }
