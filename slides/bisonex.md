@@ -108,6 +108,15 @@ Filtre 2 = on enlève les variants non codants, integnéique, UTR, intronique, p
  -->
 
 ---
+---
+
+# 1. Objectifs de cette thèse
+
+- Pipeline reproductible, portable, performant
+- Premiers éléments de validation 
+- Ré-analyser exomes négatifs
+
+---
 layout: image-right
 image: /img/dependencies.svg
 backgroundSize: 100%
@@ -261,7 +270,7 @@ layout: image-right
 image: /img/giab_both_run.svg
 backgroundSize: 100%
 ---
-# 3. Validation
+# 3. Validation : pipeline
 
 - 7 Patients GIAB
 - Google (Baid et al. 2022)
@@ -282,7 +291,7 @@ layout: image-right
 image: /img/varben.png
 backgroundSize: 95%
 ---
-# In silico
+# 3. Validation : *in silico* (1/2)
 
 - Patient de synthèse avec **varben**
 - 126 variants confirmés en Sanger
@@ -296,7 +305,7 @@ backgroundSize: 95%
 
 ---
 ---
-# In silico
+# 3. Validation : *in silico* (2/2)
 
 Données simulées avec **simuscop**
 
@@ -313,7 +322,7 @@ Données simulées avec **simuscop**
 section: Réinterprétation
 ---
 
-# Non-infériorité
+# 4. Non-infériorité
 
 ```mermaid
 flowchart LR
@@ -334,6 +343,7 @@ flowchart LR
 
 <!--
 
+improtant: gabra5 = erreur fastq !
 Gène      Profondeur  Reads porteurs 
 *CHD3*    **27**          22             
 *PITX3*   34          **8**              
@@ -346,7 +356,7 @@ Gène      Profondeur  Reads porteurs
 layout: two-cols
 ---
 
-# Nouveaux diagnostics
+# 4. Nouveaux diagnostics
 
 1 Variant de Signification Indéterminé sur *SPEN*
 
@@ -389,10 +399,8 @@ layout: center
 
 # Conclusion
 
-- Reproductible
-- Portable
-- Performant
-- Validation à affiner
+- Pipeline reproductible, portable, performant
+- Validation en cours
 - Recherche nouveaux diagnostics en cours
 
 <v-click>

@@ -2,3 +2,6 @@
 - Puis on filtre dans libreoffice ceux sans clinique OMIM et avec CADD >= 15
 - Enfin, on regarde seulement les tronquant avec pLI > 1
 - CDC42BPB	NM_006035.4:c.31G>T : classe 4 (Franklin) ? tronquant en début de gène, NMD escape, clinique DI mais overalp seulement sur alopécie
+- KCNQ2 NM_172107.4:c.1632-5T>A touchant l'épissage (en -5 avec d'autres variants rapportés dans décipher), VOUS probable, clinique DI
+- ADNP NM_001282531.3:c.3047dup patho clinvar, classe 4 ? clinique DI
+- MED13 NM_005121.3:c.1009G>A VOUS, DI
