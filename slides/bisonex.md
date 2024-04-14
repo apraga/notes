@@ -16,9 +16,9 @@ Laboratoire de Génétique, CHU Minjoz, Besançon
 Remercier jury + public
 -->
 
-<img id="logo-univ" position="absolute" width="100pt" bottom="4%" right="4%" src="img/univ-fcomte.svg">
-<img id="logo-univ" position="absolute" width="200pt" bottom="4%" right="20%" src="img/ufr-smp.png">
-<img id="logo-univ" position="absolute" width="200pt" top="1%" right="4%" src="img/chub.jpg">
+<img id="logo-univ" position="absolute" width="100pt" bottom="4%" right="4%" src="/img/univ-fcomte.svg">
+<img id="logo-univ" position="absolute" width="200pt" bottom="4%" right="20%" src="/img/ufr-smp.png">
+<img id="logo-univ" position="absolute" width="200pt" top="1%" right="4%" src="/img/chub.jpg">
 
 ---
 section: Introduction
