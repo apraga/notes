@@ -24,7 +24,7 @@ Remercier jury + public
 section: Introduction
 ---
 
-# 1. Contexte
+# Contexte
 
 - Consultations de maladies rares (Centre de Génétique Humaine)
 - _Exome_ souvent prescrit après un premier bilan
@@ -46,14 +46,14 @@ image: /img/ngs.png
 backgroundSize: 100%
 ---
 
-# 1. Contexte
+# Contexte
 
 Patients en errance diagnostique
 
 <v-clicks every="1">
 
 - ré-interprétation à la demande 
-- données brutes **disponibles depuis 2022** 
+- données brutes **depuis 2022** 
 - **pipeline maison** (v0.1 par Dr. A. Overs) 
 
 </v-clicks>
@@ -73,7 +73,7 @@ Décrire figure puis dire où on se place
 ---
 ---
 
-# 1. Pipeline
+# Pipeline
 
 ```mermaid
 flowchart LR
@@ -110,11 +110,11 @@ Filtre 2 = on enlève les variants non codants, integnéique, UTR, intronique, p
 ---
 ---
 
-# 1. Objectifs de cette thèse
+# Objectifs de cette thèse
 
-- Pipeline reproductible, portable, performant
-- Premiers éléments de validation 
-- Ré-analyser exomes négatifs
+1. Pipeline reproductible, portable, performant
+2. Validation (patients de réference, *in silico*)
+3. Ré-analyse des exomes négatifs
 
 ---
 layout: image-right
@@ -122,7 +122,7 @@ image: /img/dependencies.svg
 backgroundSize: 100%
 section: Reproductibilité, portabilité
 ---
-# 2. Reproductibilité
+# 1. Reproductibilité
 
 Comment assurer au COFRAC des résultats reproductibles ?
 
@@ -156,7 +156,7 @@ layout: image-right
 image: /img/pullrequests.svg
 backgroundSize: 100%
 ---
-# 2. Reproductibilité
+# 1. Reproductibilité
 
 Incorporation dans Nix :
 - 6 logiciels + 3 dépendences
@@ -181,7 +181,7 @@ image: /img/executors.png
 backgroundSize: 85%
 ---
 
-# 2. Portabilité 
+# 1. Portabilité 
 
 **Nextflow**
 
@@ -210,7 +210,7 @@ image: /img/speedup.svg
 backgroundSize: 100%
 ---
 
-# 2. Performances
+# 1. Performances
 
 - Mésocentre de Franche-Comté
 - Parallélisation de l'alignement
@@ -231,7 +231,7 @@ Pour donner une idée, 12h de calcul sur un portable
 section: Validation
 ---
 
-# 3. Validation  
+# 2. Validation  
 
 - "Gold standard" sur patients de référence (Genome In A Bottle Consortium)
 - *In silico*
@@ -244,7 +244,7 @@ permet de définir des vrais positifs, faux positifs, faux négatifs -> calcul d
 
 ---
 ---
-# 3. Validation: séquencage et pipeline
+# 2. Validation: séquencage et pipeline
 
 Patient NA12878
 - ADN commandé à Coriell
@@ -270,7 +270,7 @@ layout: image-right
 image: /img/giab_both_run.svg
 backgroundSize: 100%
 ---
-# 3. Validation : pipeline
+# 2. Validation : pipeline
 
 - 7 Patients GIAB
 - Google (Baid et al. 2022)
@@ -285,13 +285,12 @@ Bisonex semble plus performant: impact du génome de réference (version avec AL
 illuste problème de la reproductibilité
 -->
 
+---
+layout: figure-side
+figureUrl: /img/varben.png
+---
 
----
-layout: image-right
-image: /img/varben.png
-backgroundSize: 95%
----
-# 3. Validation : *in silico* (1/2)
+# 2. Validation : *in silico* 
 
 - Patient de synthèse avec **varben**
 - 126 variants confirmés en Sanger
@@ -305,7 +304,7 @@ backgroundSize: 95%
 
 ---
 ---
-# 3. Validation : *in silico* (2/2)
+# 2. Validation : *in silico* 
 
 Données simulées avec **simuscop**
 
@@ -334,16 +333,21 @@ flowchart LR
   style E fill:#aeca7d
 ```
 
-<v-click>
+<v-click every="1">
 
-- 3 variants filtré sur la profondeur (*CHD3*, *GABRA5*, *RRAS2*)
-- 1 variant sur le nombre de reads porteurs (*PITX3*)
+- 1 FASTQ incomplet (*GABRA5*)
+- 2 variants filtrés sur la profondeur (*CHD3*,  *RRAS2*)
+- 1 variant filtré sur le nombre de reads porteurs (*PITX3*)
 
 </v-click>
 
 <!--
 
-improtant: gabra5 = erreur fastq !
+GABRA5 = pheno encéphalothie épileptique. Rendu VOUS avec classe 4 sur autre gène. Clinique retard dev, épilepsie
+CHD3 = sd Snijdrer Blok-Cameau (neurodev, macrocéphplie, dysmorphie). Patient : dysmoprhie, neurdev
+RRAS2 = noondan 12 (macrocéphalie, hypertélorisme...). Rendu VOUS (patient avec nerf optique, retard motoreu, hydrocéphalie)
+PITX3 = cataracte. Patient: cataracte, trouble appretissage, réflexe . Rendu VOUS
+
 Gène      Profondeur  Reads porteurs 
 *CHD3*    **27**          22             
 *PITX3*   34          **8**              
@@ -353,44 +357,33 @@ Gène      Profondeur  Reads porteurs
 -->
 
 ---
-layout: two-cols
 ---
 
 # 4. Nouveaux diagnostics
 
-1 Variant de Signification Indéterminé sur *SPEN*
-
-- Foetus avec malformation cardiaque
-- Radio-Tartaglia syndrome 
-  - malformation cardiaque possible
-  - pas de foetus décrit
-::right::
-
-#
-
-<img src="/img/spen.png" width=60%>
-<img src="/img/spen-decipher.png" width=40%>
+- 1 probable
+  - *ADNP* : clinvar pathologique
+- 2 intéressants
+  - *KCNQ2* : faux-sens modifiant l'épissage, gain de fonction ?
+  - *MED13* : faux-sens modifiant l'épissage, perte de fonction ?
+- 1 signification indéterminée (*SPEN*)
 
 <!--
-Stratégie : nouveau "clinical synopsis" dans OMIM sur exome neg
 
+ADNP = syndrome Helsmoortel-Van der Aa syndrome (HVDAS): 
+- trouble neurodévelopement : retard de dev intellect, moteur, TSA, dysmorphie faciale, hypotonie, cardiaque, diff. visuelle.
+- patient: retard language, hypertonie (Anne-Laude)
 
-1 fois dans clinvar, vous
-non présent dans gnomad4 genome et < 1e-5 dans gnomadexome
-qq score bioinfo en faveur (CADD)
-probablement pas d'atteinte de l'épissage (spip, spliceai)
+KCNQ2
+- continuum : épilepsine néonatales mais plus rarement DI isolée décrite
+- patient : DI, retard de langugae (Anne-Laude)
+- phénotype décrit pour un *gain* de fonction
 
-a neurodevelopmental disorder characterized by global developmental delay with impaired intellectual development, speech delay, and variable behavioral abnormalities. Affected individuals show 
-hypotonia, mild motor difficulties, and craniofacial dysmorphism. Brain imaging may show nonspecific defects; rare patients have seizures or pyramidal signs. A subset of individuals may have congenital heart defects, precocious puberty, and obesity in  
-Syndrome décrit en 2021
-- trouble du neurodeveloppement, dysmorphie craniofaciale
-- certains ont une malformation cardique
+MED13: DI avec autres caractéristiques très variables
+- patient: DI, morpho rein-foie (Anne-Laude)
 
-
-Abnormal plantar dermatoglyphics; Antenatal onset; Hypoplastic right heart; Increased nuchal translucency;
-Plagiocephaly; Tricuspid stenosis
-
-Ségrégation en cours...
+SPEN: sd Radio-Tartaglia = neurodev, hyptonie, dysorphie, parfois malfo cardique
+- foetus avec malfo cardiaque, plagiocéphalie
 -->
 
 ---
@@ -399,15 +392,22 @@ layout: center
 
 # Conclusion
 
+<v-clicks every="1">
+
 - Pipeline reproductible, portable, performant
-- Validation en cours
-- Recherche nouveaux diagnostics en cours
+- Validation : résultats encourageants
+- 3 variants prometteurs
+- Nombreux axes d'amélioration (T2T, oligénisme...)
+
+</v-clicks>
 
 <v-click>
 
 **Merci de votre attention !**
 
 </v-click>
+
+<img position="absolute" width="100pt" bottom="4%" right="4%" src="/img/bisonex.png">
 
 <!--
 Nombreuses améliorations possibles
