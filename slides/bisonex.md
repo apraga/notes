@@ -5,6 +5,8 @@ coverAuthor: Alexis Praga
 title: Bisonex
 coverDate: 18/04/2024
 themeConfig:
+  paginationX: r
+  paginationY: t
   paginationPagesDisabled: [1]
 ---
 
@@ -282,6 +284,7 @@ Ici pipeline seul
 Données google intéressantes car nombreuses possibiliés (capture, séquenceur, patient). En résumé 
 
 Bisonex semble plus performant: impact du génome de réference (version avec ALT ?)
+Version des logiciels non mentionnées
 illuste problème de la reproductibilité
 -->
 
@@ -299,7 +302,8 @@ figureUrl: /img/varben.png
   - 124 retrouvés 
 
 <!--
-13 homozygotes classifiés hétérozygotes
+- 1 non inséré car nombre de reads insuffisants
+- 13 homozygotes classifiés hétérozygotes mais problème de l'outil de compairaison (AF >= 0.8 pourtant...)
 -->
 
 ---
@@ -314,14 +318,15 @@ Données simulées avec **simuscop**
   - 2 en dehors du kit de capture
   - 122 retrouvés
 <!--
-7 étiquetés htz au lieu d'hmz
+2 en dehors du kit de capture = rendu par le sous-traitant mais en dehors de celui qui s'approche le plus...
+7 étiquetés htz au lieu d'hmz TODO 
 -->
 
 ---
 section: Réinterprétation
 ---
 
-# 4. Non-infériorité
+# 3. Réinterprétation: non-infériorité
 
 ```mermaid
 flowchart LR
@@ -359,7 +364,7 @@ Gène      Profondeur  Reads porteurs
 ---
 ---
 
-# 4. Nouveaux diagnostics
+# 3. Réinterprétation: nouveaux diagnostics
 
 - 1 probable
   - *ADNP* : clinvar pathologique
