@@ -31,7 +31,7 @@ section: Introduction
 - Consultations de maladies rares (Centre de Génétique Humaine)
 - _Exome_ souvent prescrit après un premier bilan
     - 1% de l'ADN
-    - rendement diagnostic 32% 
+    - rendement diagnostic 30-50% (selon indication)
     - sous-traité à un laboratoire privé accrédité
 
 <!--
@@ -264,7 +264,10 @@ Patient NA12878
 Bon résultats pour SNV (définir)
 Indel: performances moindres, surtotu du à un nombre de faux positifs, 
 qui ne sont pas du à une discordance sur le gène ou l'allèe
-Surtout des petites délitino 1-5bp
+Surtout des petites délétions 1-5bp
+
+rappel: sensibilité = vrais positifs / faux négatifs + vrais positifs (= proba test + si malade)
+VPP = VP/VP + FP (probal avoir maladie si test+)
 -->
 
 ---
@@ -315,7 +318,7 @@ Données simulées avec **simuscop**
 - 126 même variants
   - 1 non appelé (3 read sur 34)
   - 1 manqué
-  - 2 en dehors du kit de capture
+  - 2 non insérés 
   - 122 retrouvés
 <!--
 2 en dehors du kit de capture = rendu par le sous-traitant mais en dehors de celui qui s'approche le plus...
@@ -330,10 +333,10 @@ section: Réinterprétation
 
 ```mermaid
 flowchart LR
-  A[Exomes \n 1178] --> B[Données brutes \n 248]
-  B --> C[Réanalyse] --> D1[Négatifs \n 153] & D[Positifs \n 98]
-  D --> E[Retrouvés \n 94] & F[Filtré \n 4] 
-  F --> G[Confirmés Sanger \n 4]
+  A[Exomes \n 1178 patients] --> B[Données brutes \n 248 patients]
+  B --> C[Réanalyse] --> D1[Négatifs \n 153 patients] & D[Positifs \n 98 variants]
+  D --> E[Retrouvés \n 94 variants] & F[Filtrés \n 4 variants] 
+  F --> G[Confirmés Sanger \n 4 variants]
   style G fill:#ff7b7b
   style E fill:#aeca7d
 ```
@@ -366,18 +369,46 @@ Gène      Profondeur  Reads porteurs
 
 # 3. Réinterprétation: nouveaux diagnostics
 
-- 1 probable
-  - *ADNP* : clinvar pathologique
-- 2 intéressants
-  - *KCNQ2* : faux-sens modifiant l'épissage, gain de fonction ?
-  - *MED13* : faux-sens modifiant l'épissage, perte de fonction ?
+
+1 probable diagnostic sur *ADNP* 
+<img position="absolute" width="600pt" top="25%" left="20%" src="/img/adnp-franklin.png">
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+- très peu fréquent gnomAD
+- tronquant sur gène perte de fonction
+- clinvar pathologique
+- syndrome Helsmoortel-Van der Aa
+
+<img position="absolute" width="200pt" top="45%" right="14%" src="/img/adnp-pli.png">
+<img position="absolute" width="400pt" top="80%" right="4%" src="/img/adnp-clinvar.png">
+
+<!--
+- score de pathogénicité : CADD=32
+ADNP = syndrome Helsmoortel-Van der Aa syndrome (HVDAS): 
+- trouble neurodévelopement : retard de dev intellect, moteur, TSA, dysmorphie faciale, hypotonie, cardiaque, diff. visuelle.
+- patient: retard language, hypertonie (Anne-Laude)
+
+pli = basé sur l'observation de la "depletion" de variant perte de fonction dans gnomad
+gnomad = aggrégation d'exome et de génome dans une population sans cohortes avec maladies pédiatriques
+-->
+
+---
+---
+
+# 3. Réinterprétation: nouveaux diagnostics
+
+- 2 variants intéressants *KCNQ2*, *MED13*
 - 1 signification indéterminée (*SPEN*)
 
 <!--
 
-ADNP = syndrome Helsmoortel-Van der Aa syndrome (HVDAS): 
-- trouble neurodévelopement : retard de dev intellect, moteur, TSA, dysmorphie faciale, hypotonie, cardiaque, diff. visuelle.
-- patient: retard language, hypertonie (Anne-Laude)
+*KCNQ2*, : faux-sens modifiant l'épissage, gain de fonction ?
+*MED13* : faux-sens modifiant l'épissage, perte de fonction ?
 
 KCNQ2
 - continuum : épilepsine néonatales mais plus rarement DI isolée décrite
@@ -405,6 +436,10 @@ layout: center
 - Nombreux axes d'amélioration (T2T, oligénisme...)
 
 </v-clicks>
+
+<!--
+T2T = dire simplement nouveau génome (8% du génome)
+-->
 
 <v-click>
 
