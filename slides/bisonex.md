@@ -102,7 +102,7 @@ En pratique, on fait un modèle à partir des mesures et on ajuste en fonction
 
 Précisions pour les questions
 Filtre 1 = profondeur <= 30, nb reads porteur <= 10 et variants dans dbSNP non rare (MAF >= 0.01) et non pathologique selon clinvar
-Filtre 2 = on enlève les variants non codants, integnéique, UTR, intronique, pseudogène, micro ARN sauf si score d'épissage > 
+Filtre 2 = on enlève les variants non codants, intergénique, UTR, intronique, pseudogène, micro ARN sauf si score d'épissage > 
 -    spip.cutoff = 30
 -    spliceai.cutoff = 0.2
 
@@ -317,11 +317,11 @@ Données simulées avec **simuscop**
 
 - 126 même variants
   - 1 non appelé (3 read sur 34)
-  - 1 manqué
-  - 2 non insérés 
+  - 3 non insérés 
   - 122 retrouvés
 <!--
 2 en dehors du kit de capture = rendu par le sous-traitant mais en dehors de celui qui s'approche le plus...
+1 non inséré (non exploré)
 7 étiquetés htz au lieu d'hmz TODO 
 -->
 
@@ -335,15 +335,14 @@ section: Réinterprétation
 flowchart LR
   A[Exomes \n 1178 patients] --> B[Données brutes \n 248 patients]
   B --> C[Réanalyse] --> D1[Négatifs \n 153 patients] & D[Positifs \n 98 variants]
-  D --> E[Retrouvés \n 94 variants] & F[Filtrés \n 4 variants] 
-  F --> G[Confirmés Sanger \n 4 variants]
+  D --> E[Retrouvés \n 95 variants] & F[Filtrés \n 3 variants] 
+  F --> G[Confirmés Sanger \n 3 variants]
   style G fill:#ff7b7b
   style E fill:#aeca7d
 ```
 
 <v-click every="1">
 
-- 1 FASTQ incomplet (*GABRA5*)
 - 2 variants filtrés sur la profondeur (*CHD3*,  *RRAS2*)
 - 1 variant filtré sur le nombre de reads porteurs (*PITX3*)
 
@@ -351,15 +350,14 @@ flowchart LR
 
 <!--
 
-GABRA5 = pheno encéphalothie épileptique. Rendu VOUS avec classe 4 sur autre gène. Clinique retard dev, épilepsie
 CHD3 = sd Snijdrer Blok-Cameau (neurodev, macrocéphplie, dysmorphie). Patient : dysmoprhie, neurdev
 RRAS2 = noondan 12 (macrocéphalie, hypertélorisme...). Rendu VOUS (patient avec nerf optique, retard motoreu, hydrocéphalie)
 PITX3 = cataracte. Patient: cataracte, trouble appretissage, réflexe . Rendu VOUS
 
+VOUS... on peut descendre un peu les filtres
 Gène      Profondeur  Reads porteurs 
 *CHD3*    **27**          22             
 *PITX3*   34          **8**              
-*GABRA5*  **15**          6              
 *RRAS2*   **29**          14             
 
 -->
