@@ -30,7 +30,7 @@ layout: center
 
 <br/>
 
-![](/img/ngs.svg)
+![](/img/ngs.png)
 
 <br/>
 <br/>

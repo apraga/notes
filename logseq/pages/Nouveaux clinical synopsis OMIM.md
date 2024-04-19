@@ -1,0 +1,4 @@
+- On ne garde que les exomes négatifs et les variants avec gnomAD exome AF <= 1% si dominant, 5% sinon
+- Puis on filtre dans libreoffice ceux sans clinique OMIM et avec CADD >= 15
+- Enfin, on regarde seulement les tronquant avec pLI > 1
+- CDC42BPB	NM_006035.4:c.31G>T : classe 4 (Franklin) ? tronquant en début de gène, NMD escape, clinique DI mais overalp seulement sur alopécie
