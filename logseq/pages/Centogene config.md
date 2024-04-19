@@ -1,0 +1,3 @@
+- D'après un VCF
+- Aligneur : freebayes
+- Génome GRCh37p13
