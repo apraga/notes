@@ -1,0 +1,99 @@
+# Test in silico: journal
+## Varben
+### Tests fournis :
+
+    cd examples
+    xz -d reference/chr*.fna.zx
+    cd src
+
+Pour illumina    
+
+    bash 03-spikein_snv_and_indel_Illumina.sh### Données clinvar ?
+
+Sur ce cas test, deletion, insertion et SNV ok. Substitution de toute une séquence aussi "sub"
+
+    chr7	55221748	55221748	0.15	del	.
+    chr7	55227923	55227923	0.33	ins	TGTTCC
+    chr7	55242467	55242481	0.03	sub	TTC
+    chr7	55249038	55249038	0.03	snv	A
+    chr7	55249092	55249092	0.05	snv	C
+    chr7	55259515	55259515	0.03	snv	G
+
+### chr20 sur HG001
+Après packagé avec nix, il faut formatter les données
+
+```nu
+cd ~/research/bisonex/code/varben
+let df = open ../parsevariants/variants_centogene_final.csv | where "Confirmed in sanger" == "true" and "genomic (hg38)" != ""  |  insert AF {|e| if ($e.zygosity == "heterozygous") { random float 0.4..0.5 } else { random float 0.8..1 } }  | select "genomic (hg38)" chrom pos AF alt  | rename genomic`
+
+$df | insert type {|e| if ($e.genomic | str contains ">") { "SNV" } else if ($e.genomic | str contains "del") { "del" } else if ($e.genomic | str contains "ins") { "ins"} else if ($e.genomic | str contains "dup") { "dup"} else { $e.genomic }} | | insert chrom2 {|e| $"chr($e.chrom)" } | insert end {|e| $e.pos}  | select chrom2 pos end AF type alt | sort-by chrom2 pos end | to csv -s '\t' | save sanger_varben.tsv -f
+```
+
+Et télécharger  index + index bwa
+Avec
+
+```bash
+cd ~/code/exomevalidator
+rg chr20 ~/research/bisonex/code/varben/sanger_varben.tsv | save sanger_varben_chr20.tsv -f
+```
+Puis
+```bash
+./result/bin/muteditor -r GCA_000001405.15_GRCh38_full_analysis_set.fna -b ~/code/bisonex/out/preprocessing/recalibrated/HG001-HiSeq4000-Agilentv7-50x-GRCh38/HG001-HiSeq4000-Agilentv7-50x-GRCh38.recal-chr20.bam --aligner bwa --alignerIndex GCA_000001405.15_GRCh38_full_analysis_set.fna -o chr20 -m sanger_varben_chr20.tsv
+```
+À noter que l'exécution plante parfois (avec notre version packagée avec nix seulement ?):
+
+    samtools sort -n -o chr20/tempDir/edit.sortByName.bam chr20/tempDir/edit.bam
+    [E::bam_read1] CIGAR and query sequence lengths differ for K00141:389:HGNTWBBXX:3:1209:1479:7855
+    samtools sort: truncated file. Aborting
+
+Ok en relancant...
+
+Puis conversion en fastq (déjà trié apparement)
+
+```bash
+cd chr20
+samtools bam2fq -n -@ 4 -1 chr20-snv_1.fq.gz -2 chr20-snv_2.fq.gz -0 chr20-snv_other.fq.gz -s chr20-snv_singleton.fq.gz edit.sorted.bam
+```
+
+On teste l'appel de variants
+
+rsync -avz chr20-snv_1.fq.gz chr20-snv_2.fq.gz meso:/Work/Users/apraga/bisonex/test/varben/
+Sur meso, faire varben.csv
+
+patient,sample,fastq1,fastq2
+varben-sanger,chr20,test/varben/chr20-snv_1.fq.gz,test/varben/chr20-snv_2.fq.gz
+
+nextflow run main.nf -profile standard,helios --genome=GRCh38 --input=varben.csv
+
+On le trouve bien après l'appel de variant :)
+
+bcftools view work/ff/35fa5353da6da53e6914c1d67f7a79/varben-sanger-chr20-GRCh38.haplotypecaller.vcf.gz chr20:46043645-46043645
+
+Mais il est filtré sur la profondeur car 25 reads et le seuil est à 30 :(
+Possible car on utilise des données "faible profondeur" de bai2020 50x
+
+NB: spip plante si entrée vide
+
+Test insertion deletion ok. Test duplication: non fait
+
+#### Erreur avec hardclip
+
+Erreur : 
+```bash
+Exception: Cmd Error: samtools sort -n -o na12878-sanger/tempDir/edit.sortByName.bam na12878-sanger/tempDir/edit.bam
+```
+D'après  https://github.com/nccl-jmli/VarBen/issues/18, il faut enlever les "hardclip"
+```bash
+cd ../../bisonex/out/preprocessing/recalibrated/2300346867_NA12878-63118093_S260-GRCh38/
+samtools view -b -F 0x100 2300346867_63118093-NA12878-GRCh38.recal.bam > 2300346867_63118093-NA12878-GRCh38.recal.nohardclip.bam
+```
+Mais pareil... On essaye la seconde suggestion
+
+```bash
+samtools view -h 2300346867_63118093-NA12878-GRCh38.recal.bam | awk '$6 !~ /H/{print}' | samtools view -bS - > 2300346867_63118093-NA12878-GRCh38.recal.nohardclip.bam
+```
+Ok !
+
+### Dup inséres aux mauvais endroit
+3e version : les bornes sont toujours pos et pos+1 et on supprimer le premier nucléotide de ALT.
+Vérification des 4 dup

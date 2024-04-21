@@ -1,0 +1,29 @@
+# Inspiration
+## Bcbio
+Schémas de validation par la communauté:  https://github.com/bcbio/bcbio_validation_workflows
+- GIAB: Les génomes sont restreints aux exomes
+    - NA12878: (Caucasian daughter): 65x NovaSeq TruSeq Nano
+    - NA24385 (Ashkenazi Jewish son): 50x HiSeq x10 dataset from 10x genomics
+    - NA24631 (
+- GIAB exomes
+    - NA12878 exome -- From Illumina Basespace Public datasets, 200x NovaSeq S2 using the Illumina TruSeq DNA Library Prep for Enrichment with IDT xGen Exome Research Panel v1.0, trimmed to 2x101 for analysis.
+    - NA24385 exome -- from Oslo University Hospital's contribution to the Genome in a Bottle Project: 150x Illumina HiSeq 2500 with 150bp paired-end reads, Agilent SureSelect Human All Exon V5 kit
+    - NA24631 exome -- also from Oslo University Hospital's GiaB contribution, 100x Illumina HiSeq 2500 sequencing.
+- CHM : Les génomes sont restreints aux exomes
+- structural variant
+- somatic
+
+## Autre
+
+Méthodologie https://medium.com/dnanexus/benchmarking-state-of-the-art-secondary-variant-calling-pipelines-5472ca6bace7
+
+    We downloaded raw HG001 WES reads from NIST FTP site with ~141X on-target coverage. 
+    Raw WES reads for HG002, HG003, HG004, and HG005 were downloaded from the SRA study, SRP047086
+
+https://trace.ncbi.nlm.nih.gov/Traces/index.html?view=study&acc=SRP047086
+On a 1 exome pour HG002-HHG004 sur Illumina HiSeq 2500 avec  Agilent SureSelect Human All Exon V5 kit. 
+Ce sont les fichiers disponibles sur le FTP GIAB mais les fastq sont directement accessible sur ENA en avec ces références !
+https://trace.ncbi.nlm.nih.gov/Traces/study/?acc=SRP047086&f=assay_type_s%3An%3Awxs%3Ac&o=acc_s%3Aa
+
+https://zenodo.org/records/3597727
+

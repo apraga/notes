@@ -1,0 +1,3 @@
+Pour recoder en rust xamscissors, il nous manque la position des réferences sur lequel le read s'aligne si on utilise la library noodles. Il faudrait recoder dans noodles `get_aligned ` de pysam
+
+https://github.com/pysam-developers/pysam/blob/cdc0ed12fbe2d7633b8fa47534ab2c2547f66b84/pysam/libcalignedsegment.pyx

@@ -1,0 +1,200 @@
+# Simuscop
+
+## NA12878
+### Génération du profile
+Test dans exome validator
+
+Il faut un vcf non compressé puis générer le modele
+
+```bash
+cd  baid2020/grch38/vcf/hiseq4000/wes_agilent/50x/ && gunzip HG001.hiseq4000.wes-agilent.50x.gatk4.grch38.vcf 
+./result/bin/seqToProfile -b baid2020/grch38/bam/hiseq4000/wes_agilent/50x/HG001.hiseq4000.wes-agilent.50x.dedup.grch38.bam -t baid2020/bed/ -v baid2020/grch38/vcf/hiseq4000/wes_agilent/50x/HG001.hiseq4000.wes-agilent.50x.gatk4.grch38.vcf -r GCA_000001405.15_GRCh38_full_analysis_set.fna.gz | save hg001-hiseq4000-agilent-grch38.model
+```
+
+Avec bisonex
+
+```bash
+gunzip  ../bisonex/out/call_variant/haplotypecaller/2300346867_63118093-NA12878-GRCh38/2300346867_63118093-NA12878-GRCh38.haplotypecaller.vcf.gz
+```
+
+Génération du profil (7min en séquentiel)
+```slurm
+#!/bin/bash -l
+# Fichier submission.SBATCH
+
+#SBATCH --job-name="seqToProfile"
+#SBATCH --output=%x.%J.out   ## %x=job name, %J=job id
+#SBATCH --error=%x.%J.out
+ # walltime (hh:mm::ss) max is 8 days
+#SBATCH -t 4:00:00
+#SBATCH --partition=smp
+#SBATCH -c 1  ## request 16 cores (MAX is 32)
+#SBATCH --mem=16G ## (MAX is 96G)
+#SBATCH --mail-user=apraga@chu-besancon.fr
+#SBATCH --mail-type=END,FAIL   # notify when job end/fail
+
+module load nix
+./result/bin/seqToProfile  -b ../bisonex/out/preprocessing/recalibrated/2300346867_63118093-NA12878-GRCh38/2300346867_63118093-NA12878-GRCh38.recal.bam -t ../bisonex/capture/Twist_Exome_Core_Covered_Targets_hg38.bed -v ../bisonex/out/call_variant/haplotypecaller/2300346867_63118093-NA12878-GRCh38/2300346867_63118093-NA12878-GRCh38.haplotypecaller.vcf -r genome/GCA_000001405.15_GRCh38_full_analysis_set.fna > na12878-bisonex-grch38.model
+```
+
+## Fichiers de configuration
+Le fichier définissant les variants doit être séparé par des tabulations.
+
+### Variants sangers sur HG001
+
+Fichiers de configurations : reads de 150bp et profondeur de 100 (200 = 11G par fastq alors que notre cible est 3).
+
+```
+ref = ../genome/GCA_000001405.15_GRCh38_full_analysis_set.fna
+profile = na12878-bisonex-grch38.model
+variation = ./sanger_simuscop.txt
+target = ../../bisonex/capture/Twist_Exome_Core_Covered_Targets_hg38.bed
+name = bisonex
+output = na12878-simuscop
+layout = PE
+threads = 4
+verbose = 1
+coverage = 100
+# According to the bam
+insertSize = 150
+```
+
+Le fichier définissant les variants doit être séparé par des tabulations. Il est généré par `~/research/bisonex/code/simuscop/tosimuscop.nu`
+
+Pour les variations:
+- la position des délétions définit le début de la délétion exactement et la longueur est le nombre de bases supprimées (logique...) 
+- l'insertion se fera entre la position définie et celle d'après (logique aussi)
+
+F
+### Insertion
+ 
+```slurm
+#!/bin/bash -l
+# Fichier submission.SBATCH
+
+#SBATCH --job-name="simuscop"
+#SBATCH --output=%x.%J.out   ## %x=job name, %J=job id
+#SBATCH --error=%x.%J.out
+ # walltime (hh:mm::ss) max is 8 days
+#SBATCH -t 4:00:00
+#SBATCH --partition=smp
+#SBATCH -c 4  ## request 16 cores (MAX is 32)
+#SBATCH --mem=16G ## (MAX is 96G)
+#SBATCH --mail-user=apraga@chu-besancon.fr
+#SBATCH --mail-type=END,FAIL   # notify when job end/fail
+
+module load nix
+simuReads sanger-simuscop.config
+```
+
+## Comparaison variants sangers NA12878
+Appel de variant
+
+
+11 faux négatifs
+- 4 "vrais", que des SNVs
+  - chr10   71741823 : non présent dans bed ?
+  - chr17   7906605: 3 reads sur 34 dans le BAM donc non logique qu'il ne soit pas détecté
+  - chr19   42273954 : non présent dans BED ?
+  - chr21   43426167 : devrait le détecter.
+- 7 sur la zygosity: tous SNVS et tous (hormis 1) ont 100% de leur reads porteur de l'allèle alternative... Limite de ce système avec haplotypecaller ?
+  - chr1    39388062        
+  - chr3    9436861 
+  - chr9    137452819       
+  - chr11   77337387        
+  - chr12   51786689        
+  - chr19   5077400 
+  - chr19   13506173        
+
+Études igv 
+
+samtools view NA12878-sanger-simuscop-GRCh38.recal.bam  chr10:71741823-71741823  chr17:7906605-7906605 chr19:42273954-42273954  chr21:43426167-43426167  -b > simuscop-missed.bam
+ samtools view 2300346867_63118093-NA12878-GRCh38.recal.bam  chr10:71741823-71741823  chr17:7906605-7906605 chr19:42273954-42273954  chr21:43426167-43426167  -b > simuscop-missed-ref.bam
+
+Région non couverte. On teste les fichier de capture suivant 
+- hg38_exome_comp_spikein_v2.0.2_targets_sorted.re_annotated.bed
+- hg38_exome_v2.0.2_targets_sorted_validated.re_annotated.bed
+- Twist_Comprehensive_Exome_Covered_Targets_hg38.bed
+- Twist_Exome_Core_Covered_Targets_hg38.bed
+- Twist_Exome_RefSeq_targets_hg38.bed
+
+L'exome core covered ne contient pas (celui qu'on utilise) !! Les autres oui. Il manque 
+- l'exon 2 de /CIC/  (chr19)
+- l'exon 38 de CDH38 (non visible IGV en Refseq)'un gène non connu dans RefSeq
+On teste la couverture du BAM pour chacun des BED (voir [configuration](validation/configuration.md): clairement pas le meilleur.
+On reste là-dessus vu qu'on n'a pas la specification de Cento.
+
+ ## Notes
+La profondeur semble être la profondeur maximale au centre de l'intervalle.
+
+
+## Clinvar
+On utilise le script suivant (aussi dans exomevalidator/clinvar/clinvar.nu pour le moment)
+
+```nu
+wget https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/clinvar.vcf.gz
+wget https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/clinvar.vcf.gz 
+# Ajout du header
+ zgrep '^#' ../../data/clinvar.vcf.gz | save clinvar_twist_exome.vcf
+# Suppression des chr
+sed 's/^chr//' ../../../bisonex/capture/Twist_Exome_Core_Covered_Targets_hg38.bed  | save Twist_Exome_Core_Covered_Targets_hg38_nochr.bed
+# Intersection
+bedtools intersect -a ../../data/clinvar.vcf.gz -b Twist_Exome_Core_Covered_Targets_hg38_nochr.bed | save -a clinvar
+bgzip clinvar_twist_exome.vcf
+tabix -p vcf clinvar_twist_exome.vcf.gz
+# Seulement classe 4 u 5
+bcftools view -i 'INFO/CLNSIG == "Pathogenic" || INFO/CLNSIG == "Likely_pathogenic"' clinvar_twist_exome.vcf.gz -o clinvar_twist_exome.vcf_patho.gz
+# Extraction en nu en enlevant les gros remaniment (> 10bp)
+bcftools query  -f '%CHROM;%POS;%REF;%ALT;%INFO/CLNSIG;%INFO/CLNVC' clinvar_twist_exome.vcf_patho.gz | from csv -s ';' -n | where ($it.column3 | str length) < 10 and ($it.column4 | str length) < 10 | to csv -s '\t' | save clinvar_twist_patho_small.tsv
+# On prend des variants à au moins 10bp d'écart
+awk 'BEGIN{prev=0}{ if ($2-$prev>10) { print $0; prev=$2}}' clinvar_twist_patho_small.tsv | save clinvar_twist_patho_sampled.tsv
+#  On extrait les duplications, insertion, deletion, snv
+let df = open "clinvar_twist_patho_sampled.tsv" --raw | from tsv -n | update column6 {|e| if ($e.column6 == "Deletion") {"d"} else if ($e.column6 == "Insertion" or $e.column6 == "Duplication") { "i" } else if ($e.column6 == "single_nucleotide_variant") {"s"}} | where not ($it.column6 | is-empty)
+let df2 = $df | update column1 {|e| $"chr($e.column1)"} | insert pop "bisonex" | insert zyg "het"
+$df2 | where column6 == "i" | update column4 {|e| $e.column4 | str substring 1.. } | select column6 pop column1  column2 column4 zyg | to tsv -n | save clinvar-simuscop.tsv 
+$df2 |  where column6 == "d"   | update column2 {|e| $e.column2 + 1} | insert length {|e| ($e.column3 | str length) - ($e.column4 | str length)} | select column6 pop column1 column2 length zyg | to tsv -n | save -a clinvar-simuscop.tsv 
+$df2 |  where column6 == "s"  | select column6 pop column1 column2 column3 column4  zyg | to tsv -n | save -a clinvar-simuscop.tsv 
+```
+On vérifie après coup qu'on a bien les patho/probabelement patho seuls
+
+```nu
+❯ bcftools query  -f '%INFO/CLNSIG' clinvar_twist_exome.vcf_patho.gz | lines | sort | uniq -c
+╭───┬───────────────────────────────────┬────────╮
+│ # │               value               │ count  │
+├───┼───────────────────────────────────┼────────┤
+│ 0 │ Likely_pathogenic                 │  58885 │
+│ 1 │ Likely_pathogenic,_low_penetrance │      6 │
+│ 2 │ Pathogenic                        │ 143575 │
+```
+
+Pour comparer les variants, ils nous faut un VCF sans les gros indel. Le script ci-dessus l'a écrit au format CSV donc :
+
+```nu
+zgrep  '^#' clinvar_twist_exome.vcf_patho.gz | save clinvar_ref.vcf -f
+zgrep -v '^#' clinvar_twist_exome.vcf_patho.gz | from tsv -n | where ($it.column4 | str length) < 10 and ($it.column5 | str length) < 10 | to tsv -n | save clinvar_ref.vcf -a
+```
+Et il faut rajouter "chr" pour la comparaison
+
+    sed '/^#/! s/^/chr/' clinvar_ref.vcf -i.bak
+    bgzip clinvar_ref.vcf
+    tabix -p vcf clinvar_ref.vcf.gz
+
+Il manque la colonne GT donc on désactive le sample 
+
+  rtg vcfeval -b scripts/clinvar/clinvar_ref.vcf.gz -c ~/code/bisonex/out/call_variant/haplotypecaller/NA12878-clinvar-simuscop-GRCh38/NA12878-clinvar-simuscop-GRCh38.haplotypecaller.vcf.gz -t genome/sdf -o clinvar-simuscop --output-mode=annotate --sample ALT   
+
+
+Résultat :  très nombreux avertissements que certaines des zones trop complexes n'ont pas pu être évalée
+
+     Threshold  True-pos-baseline  True-pos-call  False-pos  False-neg  Precision  Sensitivity  F-measure
+    ----------------------------------------------------------------------------------------------------
+     None             141609         132069       1306      44081     0.9902       0.7626     0.8616
+     
+
+
+Autre test : 
+ bedtools intersect -a clinvar_ref.vcf.gz -b ~/code/bisonex/out/call_variant/haplotypecaller/NA12878-clinvar-simuscop-GRCh38/NA12878-clinvar-simuscop-GRCh38.haplotypecaller.vcf.gz -v | wc -l 
+ 42140
+ Pour
+ zgrep -v '^#' clinvar_ref.vcf.gz | wc -l
+189038
