@@ -57,7 +57,8 @@
 - No time to die (2021) - 4/5
 - Planet Earth: A Celebration (2020) - 4.5/5
 - Plein Soleil - 4/5
-- Portrait d\'une jeune fille en feu - 4.5/5
+- Portrait d'une jeune fille en feu - 4.5/5
+- Poor things (2023) - 4/5
 - Ran - 4/5
 - Rashomon - 4.5/5
 - Red Beard - 4/5
