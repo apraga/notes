@@ -1,3 +1,0 @@
--   [Bach](id:f95b929a-e9c3-4f82-8a80-3014046630c4)
--   [À partager](id:7e302647-efe6-4104-aa38-d198194eea02)
--   [À écouter](id:e3a64c7c-5381-499f-94c7-4b969115dce3)
