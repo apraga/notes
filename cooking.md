@@ -1,10 +1,11 @@
 ---
 title: Cuisine
-...
+tags: cooking
+---
 
 # Desserts
 
-## [DONE]{.done .DONE} Biscuit cuiller
+## DONE Biscuit cuiller
 
 (Patisserie, Leçons pas-à-pas) : 12min environ 3 blanc 75g sucre 55g
 farine37g fécule 4 jaunes
@@ -15,7 +16,7 @@ farine37g fécule 4 jaunes
 chef](https://www.meilleurduchef.com/cgi/mdc/l/fr/recette/biscuit-savoie.html))
 : cuire vraiment plus longtemps en bas du four. Bien beurrer et fariner.
 
-## [DONE]{.done .DONE} [Blackout cake](https://www.bonappetit.com/recipe/blackout-cake)
+## DONE [Blackout cake](https://www.bonappetit.com/recipe/blackout-cake)
 
 ### Ingredients
 
@@ -602,7 +603,7 @@ Temps de cuisson \~18min à 155° (après préchauffage à 175°) Ganache
 
 ## RETRY Madeleine
 
-### [DONE]{.done .DONE} Recette de Felder: au chocolat
+### DONE Recette de Felder: au chocolat
 
 Sans cacao : attention à la cuisson : pour des 2/3 de cuillère à soupe,
 trop cuites en 7min à 215°... Bien remplir les moules (1 grosse cuillère
@@ -1294,7 +1295,7 @@ parsley.
 
 Pas mal
 
-## [DONE]{.done .DONE} Haricots blancs à la tomate
+## DONE Haricots blancs à la tomate
 
 Bien cuire la sauce tomate 10min avant d\'ajouter le reste
 <https://www.thecookierookie.com/white-beans-recipe/>

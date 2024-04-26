@@ -1,7 +1,9 @@
-```{=org}
-#+filetags: medecine biochimie
-```
-# Acide-base [[guyton]{.smallcaps}]{.tag tag-name="guyton"} {#acide-base}
+---
+title: Biochimie
+tags: medecine biochimie
+---
+
+# Acide-base 
 
 3 mécanisme de défense :
 

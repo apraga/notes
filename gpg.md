@@ -1,6 +1,12 @@
-# \"gpg fails to write commit object\"
+---
+title: GPG
+---
 
-``` {.bash org-language="sh"}
+# Erreurs 
+
+"gpg fails to write commit object"
+
+```sh
 GIT_TRACE=1 EDITOR="nvim" git commit -sS
 
 22:39:12.392297 git.c:460               trace: built-in: git commit -sS
@@ -10,4 +16,4 @@ error: gpg failed to sign the data
 fatal: failed to write commit object
 ```
 
-Solution: export GPG~TTY~=\$(tty)
+Solution: export GPG_TTY~=\$(tty)

@@ -3874,7 +3874,6 @@ Exemple de requete
 
 # [TODO]{.todo .TODO} Askhistorians
 
-## [TODO]{.todo .TODO} Goodreads non à jour -\> utiliser le wiki
+## [TODO]{.todo .TODO} Goodreads non à jour -> utiliser le wiki
 
-Pandoc ou HTML ? v1: seulement les liens et \"manuel\" ? Utiliser pandoc
-?
+Pandoc ou HTML ? v1: seulement les liens et "manuel" ? Utiliser pandoc ?

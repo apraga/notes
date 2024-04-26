@@ -1,9 +1,7 @@
-```{=org}
-#+filetags: cs freebsd
-```
-# Créer un port sous Freebsd
-
-[freebsd porting](freebsd-porting)
+---
+title: FreeBSD
+tags: os
+---
 
 # Accéder à un dossier partagé depuis Windows
 

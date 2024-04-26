@@ -1,6 +1,9 @@
-# Contact
+---
+title: Fosdem 2024
+tags: conference
+---
 
-## 2024
+# Contact
 
 - Matthiew Croughan: nix enthusiasts
 - Freek van Hemert (mairix: freekvh) PhD, worked at Philips, now started his own company for bioinformatics

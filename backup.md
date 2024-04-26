@@ -1,3 +1,8 @@
+---
+title: Backup
+tags: backup
+---
+
 # Nouvelle version : git-annex sur plusieurs dépôts + restic sur le cloud
 
 Inconvénients de git-annex:
@@ -74,7 +79,7 @@ restic -r rclone:mega:restic-public backup public
 
 ### Papers
 
-``` {.bash org-language="sh"}
+```sh
 cd papers
 git init
 git annex init
@@ -92,7 +97,7 @@ Installer
 <https://github.com/git-annex-remote-rclone/git-annex-remote-rclone>
 (copier exécutable dans \$PATH)
 
-``` {.bash org-language="sh"}
+```sh
 cd public
 git init
 git annex init
@@ -102,7 +107,7 @@ git annex add
 Suivre les indications pour ajouter un remote nommé mega de type Mega
 (29)
 
-``` {.bash org-language="sh"}
+```sh
 rclone config
 rclone lsd mega:
 ```
@@ -110,7 +115,7 @@ rclone lsd mega:
 Créer un remote megaremote qui pointe vers le remote mega dans rclone.
 Pas d\'encryption:
 
-``` {.bash org-language="sh"}
+```sh
 git annex initremote megaremote type=external externaltype=rclone target=mega prefix=annex-public chunk=50MiB encryption=none rclone_layout=lower
 ```
 
@@ -119,7 +124,7 @@ consignes ici : <https://rclone.org/drive/#making-your-own-client-id>.
 On encrypte mais avec la clé dans le dépôt git donc ne pas mettre les
 dépôts n\'importe où !
 
-``` {.bash org-language="sh"}
+```sh
 git annex initremote gdriveremote type=external externaltype=rclone target=gdrive prefix=annex-private chunk=50MiB encryption=shared rclone_layout=lower
 ```
 
@@ -127,7 +132,7 @@ git annex initremote gdriveremote type=external externaltype=rclone target=gdriv
 
 Pour /annex (ZFS pool)
 
-``` {.bash org-language="sh"}
+```sh
 cd /annex
 doas git clone ~/annex/private
 doas git clone ~/annex/public
@@ -142,7 +147,7 @@ cd papers ; git annex init
 
 Puis on ajoute les remote dans \~/annex
 
-``` {.bash org-language="sh"}
+```sh
 cd ~/annex
 git remote add zfs /annex/private
 cd data ; git remote add zfs /annex/data; cd ..
@@ -158,7 +163,7 @@ On synchronize avec
 
 Ne pas oublier de le faire dans l\'autre sens !
 
-``` {.bash org-language="sh"}
+```sh
 cd /annex/public
 git annex add remote ~/annex/public
 git annex sync --content
@@ -269,7 +274,7 @@ backblaze:unixStorage rclone -L sync \$root/hubic hubic: rclone -L sync
 
 Ne pas oubiler de le faire dans l\'autre sens !
 
-``` {.bash org-language="sh"}
+```sh
 cd /annex/public
 git annex add remote ~/annex/public
 git annex sync --content
