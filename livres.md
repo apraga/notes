@@ -1,8 +1,3 @@
-# 
-
-```{=org}
-#+BEGIN: columnview :hlines 1 :id global :skip-empty-rows t :match "-noexport"
-```
   Title                                                                                                                             Author                 Cycle                 Category
   --------------------------------------------------------------------------------------------------------------------------------- ---------------------- --------------------- ---------------------
   All The Weyrs of Pern                                                                                                             Anne McCaffrey         Pern                  fantasy
@@ -98,7 +93,3 @@
   Guerre et paix                                                                                                                    Tolstoi                                      livres
   Une Histoire Du Monde Aux Temps Modernes                                                                                                                                       livres
   Violet Evergarden                                                                                                                                                              livres
-
-```{=org}
-#+END
-```

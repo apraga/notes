@@ -1,6 +1,8 @@
-```{=org}
-#+filetags: books
-```
+---
+title: La pléiade
+tags: books
+---
+
 -   [ ] 1. BAUDELAIRE, Œuvres complètes, I.
 -   [ ] 2. POE, Œuvres en prose.
 -   [ ] 3. VOLTAIRE, Romans et contes.

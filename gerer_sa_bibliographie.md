@@ -1,3 +1,8 @@
+---
+title: Gérer sa bibliographie
+tags: bibliography research productivity
+---
+
 # Sync pdf with git-annex
 
 ## Requirements
