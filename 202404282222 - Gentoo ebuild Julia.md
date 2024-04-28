@@ -1,18 +1,10 @@
-# Ebuild
+---
+title: Gentoo ebuild Julia
+date: 2024-04-28
+tags: gentoo packaging julia
+---
 
-Tester avec
-```
-pkgcheck scan
-```
-Commiter avec 
-```
-git commit -S -m "lol"
-```
-
-
-## Julia
-
-### Test
+# Test
 
 - Figures thèse
 - GTK (tutorial
@@ -39,7 +31,7 @@ chain = DiscreteMarkovChain(transition_matrix)
 is_absorbing(chain)
 ```
 
-### Julia 1.10.0
+# Julia 1.10.0
 
 Erreur avec ebuild install :
 ```

@@ -3,40 +3,34 @@ title: Gérer sa bibliographie
 tags: bibliography research productivity
 ---
 
-# Sync pdf with git-annex
+# Synchronisation des pdfs
 
-## Requirements
+On utilise git-annex. Il faut
 
 -   git-annex
 -   git-lfs
 -   git-lfs
 -   rclone
 
-## Setup
+## Configuration
 
 ### Google drive
 
 -   Create a rclone google drive remote
 -   Copy the executable git-annex-remote-rclone here into \$PATH
-
 <https://github.com/DanielDent/git-annex-remote-rclone>
-
 -   Add a remote
-
-```{=html}
-<!-- -->
+```sh
+git annex initremote gdrive type=external externaltype=rclone target=gdrive encryption=shared
 ```
-    git annex initremote gdrive type=external externaltype=rclone target=gdrive encryption=shared
 
 ### Git LFS
 
--   Create a git repo and set it up for git-lfs (apraga/papers)
-
-<https://git-lfs.github.com/>
-
+-   Create a git repo and set it up for git-lfs (apraga/papers) <https://git-lfs.github.com/>
 -   Add a remote
-
-        git annex initremote lfstest type=git-lfs url=git@github.com:apraga/papers.git encryption=none
+```sh
+git annex initremote lfstest type=git-lfs url=git@github.com:apraga/papers.git encryption=none
+```
 
 ### Emacs
 

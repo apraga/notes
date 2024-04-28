@@ -1,15 +1,18 @@
-```{=org}
-#+filetags: personal haskell gentoo
-```
-Génerer l\'ebuild avec hackport
+---
+title: Gentoo ebuild Haskell
+date: 2024-04-28
+tags: gentoo packaging haskell
+---
 
-``` {.bash org-language="sh"}
+Génerer l'ebuild avec hackport
+
+```sh
 hackport update
 hackport merge diagrams-graphviz
 ```
 
 Cela va générer le paquet dans dev-haskell (repo haskell) Tester
-l\'installation
+l'installation
 
     emerge -1 diagrams-graphviz
 
