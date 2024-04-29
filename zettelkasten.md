@@ -12,4 +12,4 @@ $env.ZK_SHELL = bash
 Graph
 ```sh
  zk list --tag cli --format json | mustache graph.mustache | dot -Tpng > picture.png
-```sh
+```
