@@ -26,7 +26,8 @@ template = "default.md"
 
 # Path globs ignored while indexing existing notes.
 ignore = [
-"archive"
+  "archive/*",
+  "archive/medecine/*"
 #    "drafts/*",
 #	"log.md"
 ]
