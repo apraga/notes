@@ -25,10 +25,11 @@ filename = "{{format-date (date 'now') 'timestamp'}} - {{title}}"
 template = "default.md"
 
 # Path globs ignored while indexing existing notes.
-#ignore = [
+ignore = [
+"archive"
 #    "drafts/*",
 #	"log.md"
-#]
+]
 
 # Configure random ID generation.
 

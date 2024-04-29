@@ -1,9 +1,0 @@
-# Interprétation d\'un spermogramme
-
-Hypospermie : volume\<1,5mL Polyspermie : Num\>250M/mL Oligospermie :
-Num\<15M/mL ou 40M/éjaculat
-
-Azoospermie : absence totale de spz Asthénospermie : \<32% Spz mobiles
-Tératospermie : \<4% de Spz forme normale ph :  ≈ 7.2
-
-Nécrospermie : \>42% de Spz morts
