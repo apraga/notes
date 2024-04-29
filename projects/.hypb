@@ -1,8 +1,0 @@
-
-"bisonex.org"
-("biblio_appel_variant" nil nil link-to-file ("../../research/bisonex/thesis/biblio.org" 55515) "alex@laptop" "20231013:15:40:18" nil nil)
-("appel_variant" nil nil link-to-file ("../../research/bisonex/thesis/pipeline.org" 21153) "alex@laptop" "20231013:15:38:35" nil nil)
-("aligneur" nil nil link-to-file ("../../research/bisonex/thesis/pipeline.org" 1777) "alex@laptop" "20231013:15:14:20" nil nil)
-("biblio_aligneur" nil nil link-to-file ("../../research/bisonex/thesis/biblio.org" 3417) "alex@laptop" "20231013:15:00:34" nil nil)
-("runs.waiting" nil nil find-file-other-window ("/ssh:meso:/Home/Users/apraga/runs.waiting" t) "alex@gentoo" "20231007:13:31:21" nil nil)
-("samples.csv" nil nil find-file-other-window ("/ssh:meso:/Work/Users/apraga/bisonex/samples.csv" t) "alex@gentoo" "20231007:13:30:53" nil nil)

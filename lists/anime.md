@@ -1,3 +1,7 @@
+---
+title: Anime
+---
+
 Done
 - .hack//Sign 
 - Akira 
