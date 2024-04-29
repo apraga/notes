@@ -86,8 +86,8 @@ template = "default.md"
 # Defaults to true for "markdown" format and false for "wiki" format.
 #link-encode-path = true
 # Indicates whether a link's path file extension will be removed.
-# Defaults to true.
-#link-drop-extension = true
+# Defaults to true. We want links to work on github/sourcehut !
+link-drop-extension = false
 
 # Enable support for #hashtags.
 hashtags = false

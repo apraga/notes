@@ -4,8 +4,8 @@ date: 2024-04-28
 tags: bibliography
 ---
 
-On a initialement utilisé [emacs avec citar](202404282230%20-%20Bibliographie%20avec%20emacs). 
-Avec le changement à helix, on utilise [papis](202404282236%20-%20Bibliographie%20avec%20papis)
+On a initialement utilisé [emacs avec citar](202404282230%20-%20Bibliographie%20avec%20emacs.md). 
+Avec le changement à helix, on utilise [papis](202404282236%20-%20Bibliographie%20avec%20papis.md)
 
 # Synchronisation des pdfs
 
