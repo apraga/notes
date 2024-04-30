@@ -1,7 +1,7 @@
 ---
 title: Bibliographie avec emacs
 date: 2024-04-28
-tags: emacs bibliography
+tags: emacs bibliographie
 ---
 
 Note: on utilise maintenant papis en ligne de commande. Sauvegardé pour raisons historiques.

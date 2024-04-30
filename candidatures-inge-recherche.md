@@ -1,6 +1,6 @@
 ---
 title:  Candidatures ingénieur de recherche 
-tags: job
+tags: embauche
 ---
 
 # CNRS 

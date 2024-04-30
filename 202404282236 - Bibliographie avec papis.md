@@ -1,7 +1,7 @@
 ---
 title: Bibliographie avec papis
 date: 2024-04-28
-tags: bibliography cli
+tags: bibliographie cli
 ---
 
 [Guide](https://gist.github.com/avonmoll/e435f0e478fbdc6c1eee7557b221a7e2)

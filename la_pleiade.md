@@ -1,6 +1,6 @@
 ---
 title: La pléiade
-tags: books
+tags: livres
 ---
 
 -   [ ] 1. BAUDELAIRE, Œuvres complètes, I.

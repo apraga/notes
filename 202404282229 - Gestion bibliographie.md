@@ -1,7 +1,7 @@
 ---
 title: Gestion bibliographie
 date: 2024-04-28
-tags: bibliography
+tags: bibliographie
 ---
 
 On a initialement utilisé [emacs avec citar](202404282230%20-%20Bibliographie%20avec%20emacs.md). 

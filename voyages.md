@@ -1,6 +1,6 @@
 ---
 title: Voyages
-tags: travel
+tags: voyage
 ---
 
 # 2012 Croatie
