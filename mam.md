@@ -3593,7 +3593,7 @@ Exemple de requete
     histoire](https://www.cairn.info/film-et-histoire--9782200345570.htm)
 
 10. TODO [Géohistoire de la
-    mondialisation](https://www.cairn.info/geohistoire-de-la%20mondialisation--9782200602949.htm)
+    mondialisation](https://www.cairn.info/geohistoire-de-lamondialisation--9782200602949.htm)
 
 11. TODO [Histoire culturelle de la France au XIXe
     siècle](https://www.cairn.info/histoire-culturelle-de-la-france-au-xixe-siecle--9782200353278.htm)

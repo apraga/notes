@@ -15,7 +15,7 @@ language = "fr"
 #default-title = "Untitled"
 
 # Template used to generate a note's filename, without extension.
-filename = "{{format-date (date 'now') 'timestamp'}} - {{title}}"
+filename = "{{format-date (date 'now') 'timestamp'}}-{{title}}"
 
 # The file extension used for the notes.
 #extension = "md"

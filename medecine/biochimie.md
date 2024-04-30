@@ -3,10 +3,10 @@ title: Biochimie
 tags: medecine biochimie
 ---
 
-[Équilibre acido-basique](202404301046%20-%20%C3%89quilibre%20acido-basique.md)
-[Acides aminés](202404301047%20-%20Acides%20amin%C3%A9s.md)
-[Acides biliaires](202404301049%20-%20Acides%20biliaires.md)
-[Albumine](202404301050%20-%20Albumine.md)
+[Équilibre acido-basique](202404301046-%C3%89quilibreacido-basique.md)
+[Acides aminés](202404301047-Acidesamin%C3%A9s.md)
+[Acides biliaires](202404301049-Acidesbiliaires.md)
+[Albumine](202404301050-Albumine.md)
 # BNP
 
 Effet natriurétique (d'où le nom)
