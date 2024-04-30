@@ -1,7 +1,7 @@
 ---
 title: {{title}}
 date: {{format-date (date "now")}}
-tags: 
+tags: {{tags}}
 ---
 
 {{content}}
