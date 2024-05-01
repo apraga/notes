@@ -1,6 +1,4 @@
-```{=org}
-#+filetags: cs freebsd
-```
+#backup #freebsd
 # Bepo
 
 Récupérer le fichier
@@ -250,33 +248,7 @@ chown -R mpd /var/mpd/
 service musicpd onestart
 ```
 
-# KILL Windows as guest
 
-*Plante régulièrement =\> virtualbox plutôt* Guide
-<https://github.com/churchers/vm-bhyve/wiki/Running-Windows>
-<https://srobb.net/vm-bhyve.html>
-
-``` example
-sudo pkg install vm-bhyve
-sudo pkg install bhyve-firmware
-sudo zfs create zroot/windows
-```
-
-Ajouter à /etc/rc.conf
-vm~enable~`"YES" vm_{dir}`{.verbatim}\"zfs:zroot/windows\"
-
-sudo vm init sudo cp \'\'usr/local/share/examples/vm-bhyve/windows.conf
-*zroot/windows*.templates\'\' sudo vm switch add public re0 sudo vm
-create -t windows winguest
-
-sudo pkg install tigervnc-viewer
-
-sudo vm configure winguest
-
-vm install myguest \~/Downloads/Win10~20H2v2Frenchx64~.iso vncviewer
-localhost:5900
-
-Appuyer sur une touche pour lancer l\'install
 
 # Latest au lieu de quartely
 

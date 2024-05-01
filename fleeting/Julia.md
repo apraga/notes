@@ -1,13 +1,16 @@
 
-```
-# Tester un paquet localement
 
+# Tester un paquet localement
+```
     julia> ]
     (@v1.9) pkg> develop /home/alex/code/XAMScissors.jl
+```
 
 Puis il suffit d\'utiliser le paquet. En cas de changement, la precompilation sera refait à chaque fois
 
-    julia> using XAMScissors
+```
+julia> using XAMScissors
+```
 
 # Librairies
 ## DataFramesMeta 

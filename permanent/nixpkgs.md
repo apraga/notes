@@ -1,3 +1,4 @@
+#nix
 # Ajouter un nouveau paquet
 
 https://github.com/NixOS/nixpkgs/blob/master/pkgs/README.md
@@ -44,5 +45,5 @@ Voir : <https://nixos.wiki/wiki/Nixpkgs/Create_and_debug_packages>
 
 
 # Astuces
-## Problèes de driver
+## Problèmes de drivers graphiques
 Utiliser nixGL https://github.com/nix-community/nixGL si l'on n'utilise pas nixos.

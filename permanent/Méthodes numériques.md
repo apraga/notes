@@ -1,4 +1,5 @@
-# Méthodes numériques
+#maths #mathsappl
+
 
 ## Systèmes linéaires
 
@@ -6,32 +7,28 @@ $$Ax = b$$ Pour des systèmes pleins, méthodes directes.
 
 ### Décomposition LU
 
-Si A est inversible, on peut appliquer le pivot de Gauss pour avoir une
-décomposition\
-$A = LU$ , L triangulaire inférieure U triangulaire supérieure.\
+Si A est inversible, on peut appliquer le pivot de Gauss pour avoir une décomposition 
+$A = LU$ , L triangulaire inférieure U triangulaire supérieure
 Cout total en $O(\frac{2}{3}n^3)$.\
-*Attention:* Si le pivot est trop petit, les approximations numériques
-peuvent donner de résultats faux. Pivot partiel : on choisit la ligne de
-coefficient maximal.
+*Attention:* Si le pivot est trop petit, les approximations numériques peuvent donner de résultats faux. Pivot partiel : on choisit la ligne de coefficient maximal.
 
 ### Méthode de Cholesky
 
-Si la matrice A est symétrique définie positive, elle peut se mettre
-sous la forme $T T^t$ avec T triangulaire inférieure.\
-Cout total en $O(\frac{1}{3}n^3)$.\
+Si la matrice A est symétrique définie positive, elle peut se mettre sous la forme $T T^t$ avec T triangulaire inférieure.
+Cout total en $O(\frac{1}{3}n^3)$.
 Si le système est creux, méthodes itératives. On décompose $A=M-N$ :
 $$M x_{k+1} = N x_k + b$$
 
 ### Méthode de Jacobi
 
 $M=D$ et $N=A-D$ où D est la diagonale de A.\
-Converge ssi à diagonale strictement dominante ($a_{ii} > 0$)\
+Converge ssi à diagonale strictement dominante ($a_{ii} > 0$)
 Peu utilisée.
 
 ### Méthode de Gauss-Seidel
 
 $M=D+L$ et $N=-U$ où D est la diagonale de A, L triangulaire inférieure,
-U triangulaire supérieure.\
+U triangulaire supérieure.
 Peu utilisée.
 
 ### Méthode SOR
@@ -194,13 +191,3 @@ c \frac{u_{j+1}^n- u_{j-1}^n}{2 \Delta x}-
 espace.\
 Stable si $|c| \frac{\Delta x}{\Delta t} \le 1$
 
-# Eléments finis
-
-## 
-
-# Volume finis
-
-## 
-
-[^1]: Il existe $c \in [a,b]$ tel que $\phi'(x) < 0$ sur $]a,c[$ et
-    $\phi'(x) > 0$ sur $]c,b[$

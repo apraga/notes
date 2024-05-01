@@ -1,6 +1,5 @@
-```{=org}
-#+filetags: ocr
-```
+#ocr
+
 # Caractères imprimés
 
 Tesseract fonctionne plutôt bien sur un petit exemple en français (1
