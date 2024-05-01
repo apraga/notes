@@ -1,7 +1,4 @@
----
-title: Emacs
-tags: éditeur
----
+#éditeur
 
 # Astuces
 

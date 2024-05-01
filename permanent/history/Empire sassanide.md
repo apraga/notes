@@ -1,8 +1,4 @@
----
-title: Empire sassanide
-date: 2024-04-30
-tags: histoire antiquité
----
+#histoire #antiquité 
 
 - 224-651 après JC
 - second empire ayant le plus duré après les Arscacides (Parthes)

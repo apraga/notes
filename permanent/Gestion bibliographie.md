@@ -1,8 +1,4 @@
----
-title: Gestion bibliographie
-date: 2024-04-28
-tags: bibliographie
----
+#bibliographie
 
 On a initialement utilisé [emacs avec citar](Bibliographie%20avec%20emacs.md)
 Avec le changement à helix, on utilise [papis](Bibliographie%20avec%20papis.md)

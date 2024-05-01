@@ -1,19 +1,16 @@
-```{=org}
-#+filetags: personal julia
+
 ```
 # Tester un paquet localement
 
-    $ julia
     julia> ]
     (@v1.9) pkg> develop /home/alex/code/XAMScissors.jl
 
-Puis il suffit d\'utiliser le paquet. En cas de changement, la
-precompilation sera refait à chaque fois
+Puis il suffit d\'utiliser le paquet. En cas de changement, la precompilation sera refait à chaque fois
 
     julia> using XAMScissors
 
-# DataFramesMeta {#dataframesmeta id="48ee3cbb-8129-490c-a91a-a317d7ff44c3"}
-
+# Librairies
+## DataFramesMeta 
 Supprimer une liste de colonnes
 
 ``` julia

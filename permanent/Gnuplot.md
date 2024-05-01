@@ -1,7 +1,4 @@
----
-title: Gnuplot
-tags: plot
----
+#plot
 
 Avantages
 

@@ -101,7 +101,7 @@ template = "daily.md"
 link-drop-extension = false
 
 # Enable support for #hashtags.
-hashtags = false
+hashtags = true
 # Enable support for :colon:separated:tags:.
 colon-tags = false
 # Enable support for Bear's #multi-word tags#

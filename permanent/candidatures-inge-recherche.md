@@ -1,7 +1,4 @@
----
-title:  Candidatures ingénieur de recherche 
-tags: embauche
----
+#embauche
 
 # CNRS 
 
@@ -18,11 +15,7 @@ Contacter l\'équipe
 
 Site spécialise. Mieux payé mais pas de mobilité. Contacter l\'équipe
 
-## Ecole d\'ingénieurs (supelec)
 
-Voir ABG
-
-## Chargé de recherche CNRS, inria
 
 
 

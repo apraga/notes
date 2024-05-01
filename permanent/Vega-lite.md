@@ -1,7 +1,4 @@
----
-title: Vega-lite
-tags: plot
----
+#plot
 
 Avantages
 

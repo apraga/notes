@@ -1,8 +1,4 @@
----
-title: Gentoo ebuild Julia
-date: 2024-04-28
-tags: gentoo packaging julia
----
+#gentoo #packaging #julia
 
 # Test
 

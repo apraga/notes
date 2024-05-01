@@ -1,7 +1,4 @@
----
-title: Fosdem 2024
-tags: conference
----
+#conference
 
 # Contact
 

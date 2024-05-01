@@ -1,9 +1,3 @@
----
-title: Gentoo
-date: 2024-04-28
-tags: gentoo
----
-
 Développer des ebuilds : [Gentoo packaging](Gentoo%20packaging.md)
 
 # Astuces

@@ -1,7 +1,4 @@
----
-title: Plotting
-tags: plot
----
+#plot
 
 Conclusion: makie pour le moment
 

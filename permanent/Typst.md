@@ -1,8 +1,4 @@
----
-title: Typst
-date: 2024-04-29
-tags: typography
----
+#typography
 
 Alternative à latex en beta début 2024 mais avec un client en ligne fonctionnel. Attention, pas plus de 100 fichiers dans la version gratuite.
 Pas encore de version payant en mars 2024

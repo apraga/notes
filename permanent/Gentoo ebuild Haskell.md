@@ -1,8 +1,4 @@
----
-title: Gentoo ebuild Haskell
-date: 2024-04-28
-tags: gentoo packaging haskell
----
+#gentoo #packaging #haskell
 
 Génerer l'ebuild avec hackport
 

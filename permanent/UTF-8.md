@@ -1,8 +1,4 @@
----
-title: UTF-8
-date: 2024-04-29
-tags: encoding haskell
----
+#encoding #haskell
 
 # UTF8 et Bytestring en Haskell
 

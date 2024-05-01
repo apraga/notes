@@ -1,7 +1,4 @@
----
-title: Makie
-tags: plot
----
+#plot
 
 Avantages
 
