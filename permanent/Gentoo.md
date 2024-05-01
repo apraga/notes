@@ -4,7 +4,7 @@ date: 2024-04-28
 tags: gentoo
 ---
 
-Développer des ebuilds : [Gentoo packaging](202404282218-Gentoopackaging.md)
+Développer des ebuilds : [Gentoo packaging](Gentoo%20packaging.md)
 
 # Astuces
 ## Wiki
