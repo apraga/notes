@@ -1,3 +1,4 @@
+#nix #haskell
 # Cabal2nix
 
 Après avoir créé un fichier .cabal, mettre dans \`default.nix\`

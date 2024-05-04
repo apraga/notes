@@ -1,6 +1,4 @@
-```{=org}
-#+filetags: nix
-```
+#nix #python
 # Projet en Python
 
 Instructions simples ici :

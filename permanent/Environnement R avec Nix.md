@@ -1,5 +1,4 @@
-# R librairies
-
+#nix #r
 De même que R, il faut packager R avec les librairies
 
 ``` nix
