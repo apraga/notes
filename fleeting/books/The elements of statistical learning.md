@@ -1,37 +1,24 @@
-```{=org}
-#+filetags: cs books machine-learning
-```
+#stats #books
 # Chap 2
 
 ## Linear vs nearest neighbours
 
--   linear model fitted by least squared = stable but possibly
-    inaccurate
+-   linear model fitted by least squared = stable but possibly inaccurate
 -   nearest neighbours = precise but unstable
 
-If the data is a set of tightly lustered Gaussians (theirs means are
-distributed as Gaussian), the optimal will be nonlinear and disjoint If
-the data is a mixture of unrelated Gaussian, linear is almost optimal
+If the data is a set of tightly lustered Gaussians (theirs means are distributed as Gaussian), the optimal will be nonlinear and disjoint If the data is a mixture of unrelated Gaussian, linear is almost optimal
 
 ## Bias, variance
 
 ### Bias
-
 $$Bias_\theta(\hat{\theta})) = E_{x|\theta}(\hat{\theta}) - \theta$$
-where $E_{x|\theta}$ is the expected value over \$(x\|θ) (average over
-all possible observations x with θ fixed)
+where $E_{x|\theta}$ is the expected value over \$(x\|θ) (average over all possible observations x with θ fixed)
 
-Error from erroneous assumptions in the learning algorithm. High bias
-can cause an algorithm to miss the relevant relations between features
-and target outputs (underfitting).
-
+Error from erroneous assumptions in the learning algorithm. High bias can cause an algorithm to miss the relevant relations between features and target outputs (underfitting).
 ### Variance :
 
 Measure the dispersion : $$Variance(X) = E(X - E(X))^2$$
-
-Error from sensitivity to small fluctuations in the training set. High
-variance may result from an algorithm modeling the random noise in the
-training data (overfitting).
+Error from sensitivity to small fluctuations in the training set. High variance may result from an algorithm modeling the random noise in the training data (overfitting).
 
 ## Curse of dimensionality = sparse sampling in hihg dimensions -\> it's harder to have enough training data
 

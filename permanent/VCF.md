@@ -1,3 +1,4 @@
+#bioinfo
 Générer un VCf minimal
 
     ##fileformat=VCFv4.2

@@ -1,3 +1,4 @@
+#gentoo
 Pourquoi ? Mieux que pulseaudio.
 1. Suivre le guide sur gentoo 
 2. Pour changer l'entrée 

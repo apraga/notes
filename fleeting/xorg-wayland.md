@@ -1,3 +1,5 @@
+#gentoo:w
+
 Avec wayland, pas réussi à faire marcher nvidia.
 
 Avec xorg, on suit la configuration de (gentoo)[https://wiki.gentoo.org/wiki/NVIDIA/Optimus] avec le /etc/X11/xorg.conf 

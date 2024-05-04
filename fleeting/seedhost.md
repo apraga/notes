@@ -1,9 +1,4 @@
-```{=org}
-#+filetags: personal
-```
-i
-
-# Rtorrent config
+Configuration Rtorrent 
 
 directory.default.set = \~/downloads schedule2 =
 watch.directory,5,5,load.start=\~/downloads/watch/rtorrent/\*.torrent

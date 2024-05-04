@@ -34,9 +34,9 @@ main = echo "Hello World!"
 stack script simple.hs --resolver lts-14.18
 ```
 
-# Data analysis
+# Librairies 
 
-## Frames
+## Data analysis : Frames
 
 ### Minimal example
 
@@ -96,33 +96,11 @@ main = do
 Il faut rajouter le parser \"u2Parser\" (cf
 <https://github.com/acowley/Frames/issues/178>)
 
-# Divers
+# SQL: persistent 
 
-## Cabal vs stack
+Pour se connecter à une base existante, il faut connaître le type de colonnes (avec \`.schema\`). Puis définir un type.
 
-Stack: facile à utiliser mais parfois non à jour Cabal: utiliser avec
-ghcup NB: Sous archlinux, le linking dynamique est utilisé par défaut et
-ne semble pas marcher avec cabal. Par exemple, wreq ne trouve pas le
-Prelude.. On peut installer ghc-static ou bien utiliser ghcup
-(recommandé
-[ici](https://github.com/haskell/haskell-ide-engine/issues/1647) )
-
--   [x] installer avec ghcup - \[X\] Tester sur getbook - \[X\] Tester
-    sur
-
-askhistorians
-
-# [TODO]{.todo .TODO} SQL {#sql id="87a191ea-a2aa-41f7-873d-a54676523a77"}
-
-On utilise persistent. Pour se connecter à une base existante, il faut
-connaître le type de colonnes (avec \`.schema\`, voir
-[Sqlite3](id:6ffe3a57-b7b8-4334-8d49-f4586d2943ae)). Puis définir un
-type.
-
-**Important** on n\'a pas besoin de remplir les types de toutes les
-colonnes. Seulement celles qui nous intéressent !! Exemple: pour
-org-roam, on regarde la table files
-
+**Important** on n\'a pas besoin de remplir les types de toutes les colonnes. Seulement celles qui nous intéressent !! Exemple: pour org-roam, on regarde la table files
 ``` sql
 sqlite> .schema files
 CREATE TABLE files (file UNIQUE PRIMARY KEY, title , hash NOT NULL, atime NOT NULL, mtime NOT NULL);
@@ -192,7 +170,10 @@ test <- get (NodeKey "1")
 return $ (test :: Maybe Node)
 ```
 
-# Emacs
+## Pandoc
+Voir [Pandoc](Pandoc.md) pour un exemple de customisation
+# Éditeur
+## Emacs
 
 Utiliser haskell-compile Si on utilise haskell-proces-cabal-build
 (default `C-c c-c`{.verbatim}), il ne trouve pas le fichier .cabal

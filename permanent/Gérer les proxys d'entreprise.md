@@ -1,14 +1,8 @@
-#  firefox
-On ajoute le certificat dans le navigateur
+- Navigateur : ajouter le certificat 
+-  Mise à jour gentoo , merge
+-  yt-dlp `yt-dlp https://www.youtube.com/watch?v=Uqvt985SI0A --legacy-server-connect  --no-check-certificates`
 
-# Mise à jour gentoo
-Pour mettre à jour gentoo, merge
-
-# yt-dlp
-
-yt-dlp https://www.youtube.com/watch?v=Uqvt985SI0A --legacy-server-connect  --no-check-certificates
-
-# Git clone (?)
+## Git clone 
 Pour pouvoir faire des git clone, crééer le fichier suivant pour activer "usafe legacy renegociation" (ne marche pas toujours)
 
 ```~/.unsafe-ssl-hnfc.cnf

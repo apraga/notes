@@ -1,7 +1,5 @@
-```{=org}
-#+filetags: emacs
-```
-# Bibliographie annotée {#bibliographie-annotée id="2abb4210-0777-427c-8655-83306186c18c"}
+#emacs
+# Bibliographie annotée 
 
 3 possibilités d\'avoir une bibliographie annotée
 
