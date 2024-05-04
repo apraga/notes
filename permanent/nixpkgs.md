@@ -13,6 +13,9 @@ nixfmt package.nix
 - Source
 	- mettre`pname` en dur dans `fetchFromGithub` https://github.com/nix-community/nixpkgs-lint/issues/21
 	- utiliser `hash` plutôt que `sha256` https://nixos.org/manual/nixpkgs/stable/#fetchurl
+## Variables
+- nativeBuildInput : si exécuté durant le build (ex: cmake)
+- buildInputs : si utilisé à l'exécution ou ajouté dans la sortie (ex: zlib). Attention, il peut falloir ajouter aux 2 !
 ## Tests
 Les nouveaux paquets sont dans pkg/by-name
 Tester dans nixpkgs qu'il compile 

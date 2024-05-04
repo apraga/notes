@@ -6051,4 +6051,6 @@ It has been a long time...
 - extension 3x22
 - compression 3x10 (plus haut que d'habitude)
 
-[./lol.md]
+# 2024-05-05 Bike + walking
+- 54min vélo : les bons -> parking fort de la batterie
+- 25min marche parking -> fort
