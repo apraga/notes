@@ -1,0 +1,51 @@
+```{=org}
+#+setupfile: ./fiche.setup
+```
+# Localisation, rôle physiologique
+
+Stockés dans la vésicule biliaire, ils sont relargués dans l'intestin au
+moment de la digestion.
+
+Dans le foie, ils participent à la formation de la bile. Dans la bile,
+ils évitent la formation de calculs biliaires en permettant la
+solubilisation du cholestérol et des phospholipides. Au niveau
+intestinal, ils agissent comme émulsifiants sur les lipides
+(triglycéride, cholestérol...) pour favoriser leur réabsorption par la
+muqueuse.
+
+# Tissus/organes de production et d\'élimination
+
+Les hépatocytes synthétisent les acides biliaires primitifs (acide
+cholique, acide chénodésoxycholique) à partir du cholestérol, qui sont
+conjugés avec la taurine et glycine puis sécrété dans la vésicule
+biliaire.
+
+Ils peuvent être réabsorbés et retourner dans le foie via la veine
+porte, ou excrétés dans les salles ou métabolisés par les bactéries
+intestinales (acides biliaires secondaires).
+
+# Valeurs de référence (adulte)
+
+1-6 μ mol/L
+
+# Principe analytique de mesure
+
+Mesure par photométrie du taux de formation de thio-NADH selon la
+réaction acide biliarie -\> acide biliaire oxydée consomment de Thio-NAD
+et formation de thio-NADH
+
+# Principales interactions analytiques
+
+-   ne doivent pas être utilisé en cas de traitement par acide
+    ursodésoxycholique
+-   Écart \< 10% avec triglycéride, acide ascorbique, bilirubine,
+    hémoglobine
+
+# Augmentation et diminution
+
+Physiologique : augmente après les repas, en cas de grossesse, nutrition
+parentérale Augmentation en cas de cholestase
+
+-   extra-hépatique : blocage mécanique (malformation, obstacle)
+-   intra-hépatique : atteinte du métabolisme des acides biliaires au
+    niveau des hépatocytes

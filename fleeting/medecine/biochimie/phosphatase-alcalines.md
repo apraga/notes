@@ -1,0 +1,62 @@
+```{=org}
+#+setupfile: ./fiche.setup
+```
+# Localisation, physiologie [@biomnis]
+
+Ces enzymes permettent le passage des métabolites à travers les
+membranes cellulaires. Cela se fait via une catalyse de l\'hydrolyse
+d\'esters monophosphorique à pH alcalin, qui va libérer du phosphate.
+
+Les isoenzymes ont la même activité et ont une spécificité plus ou moins
+variables.
+
+# Production
+
+L\'altération de la membrane cellulaire va libérer les enzymes. Leur
+répartition est variable : placenta, intestin, cellules rénales,
+ostéoblastes, cellules hépatiques.
+
+# Principe analytique de mesure
+
+Test colorimétrique. Mesure par photométrie à 450 nm de la quantité de
+p-nitrophénol, qui est proportionnelle à l'activité catalytique de la
+phosphatase alcaline
+
+# Valeurs de référence [@abicht2001multicenter] [@estey2013clsi]
+
+  Adulte               Âge                 Garçons       Filles
+  -------- ----------- ------------------- ------------- -------------
+  Hommes   40-129U/L   0 -- 14 jours       83‑248 U/L    83‑248 U/L
+  Femmes   35-104U/L   15 jours  \< 1 an   122‑469 U/L   122‑469 U/L
+                       1 --  \< 10 ans     142‑335 U/L   142‑335 U/L
+                       10 --  \< 13 ans    129‑417 U/L   129‑417 U/L
+                       13 --  \< 15 ans    116‑468 U/L   57‑254 U/L
+                       15 --  \< 17 ans    82‑331 U/L    50‑117 U/L
+                       17 --  \< 19 ans    55‑149 U/L    45‑87 U/L
+
+# Principales interactions analytiques
+
+-   gammapathie de type IgM
+-   hémolyse si \> 200mg/dL
+
+# Vigilance pré-analytiques et analytiques
+
+-   tube héparinate de lithium
+
+# Variations [@bonnefont2019explorations]
+
+-   physiologiques : augmentation à partir de la 20e smaine de
+    grossesses, **augmenté chez enfants/adolescents** (activité des
+    ostéoblastes en croissance osseuse)
+-   iatrogènes : augmentation pour anticoagulants oraux,
+    antiépileptiques, hypogylcémiants oraux, érythromycine,
+    ciclosporine, phénothiazine; diminution pour hypolipémiant,
+    corticoïdes, oestrogène
+-   patholoqiques :
+    -   obésité ou malnutrition
+    -   maladies hépato-biliaires cholestatiques
+    -   maladies osseuse avec régénération ostéoblastique
+    -   cholestase gravidique
+    -   maladies intestinales (certaines)
+    -   suivi de tumeurs des os et cancers du foie (primitifs ou
+        secondaires),

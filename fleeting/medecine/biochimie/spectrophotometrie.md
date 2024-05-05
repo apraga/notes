@@ -1,0 +1,52 @@
+```{=org}
+#+filetags: medecine biochimie technique
+```
+# Description
+
+La spectrophotométrie mesure de manière quantitative l'absorption de
+composé colorés au travers d'un matériel en fonction de la longueur
+d'onde. On calcule l'absorbance $A_\lambda$ qui va être le logarithme en
+base 10 de l'intensité de lumière incidente sur la lumière transmise,
+qui peut également s'écrire selon la loi de Beer-Lambert en fonction de
+la concentraction $c$ du soluté en solution :
+
+$$A_\lambda = \epsilon \times c \times L$$ où ϵ est une constante
+dépendant de la température, longueur d'onde, solvant et soluté, $L$ la
+longueur de la cuve.
+
+En biochimie, on va s'intéresser aux longueurs d'ondes UV et dans le
+domaine visible soit $100-800 nm$.
+
+# Points forts
+
+-   facile à mettre en oeuvre
+-   spectre d\'application large en biochimie
+-   ne modifie pas l\'échantillon
+-   permet de mesure une concentration ou une activité enzymatique
+
+# Points faibles
+
+-   sensible à la lumière
+-   sensible aux modifications de l\'absorbance de l\'échantillon
+    (impureté, température...)
+
+# Interférences
+
+Une autre substance absorbant à la même longueur d\'onde va modifier le
+dosage. Pour l\'hémolyse, ictère et lactescence, il y aura une
+surestimation.
+
+# Paramètres représentatifs
+
+  ------------------------------------- --------------------------------- ------------------------- ------------------------
+  Colorimétrique                        Enzymatique (absorbance propre)   Enzymatique (cofacteur)   Synthèse d'un colorant
+  albumine                              acide urique                      Urée                      Cholestérol total
+  bilirubine conjuguée, non conjugée)   phosphatase alcaline              ammoniac                  HDL
+  calcium                               γ-GT                              ALAT, ASAT                LDL
+  créatine                              lipase                            CPK                       Tryglycérides
+  fer                                   α-amylase                         LDH                       
+  magnésium                                                               Glucose                   
+  phosphore inorganique                                                   Lactates                  
+                                                                          Bicarbonate               
+                                                                          Ethanol                   
+  ------------------------------------- --------------------------------- ------------------------- ------------------------

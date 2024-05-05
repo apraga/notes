@@ -1,0 +1,51 @@
+-   Temps commun à tous les marqueurs: 10min
+
+# ASAT (aspartat aminotransférase)
+
+-   Principe : voir ALAT
+-   Intérêt : souffrance cellulaire du foie, du coeur, des muscles, du
+    rein. Similaire à ALAT mais moins spécifique du foie :
+    -   embolie pulmonaire, pancréatite, aigüe, écrasement musculaire,
+        maladie hémolytique
+-   Valeurs de références : [^1]
+    -   hommes \< 50U/L
+    -   femmes \< 35U/L
+-   Volume échantillon: 4.5μL
+-   Domaine de mesure : 5-700U/L
+-   Type échantillon : sérum, plasma (héparinate de lithium, EDTA)
+-   Limite:
+    -   interférence : **hémolyse \> 50mg/dL** (entre H1 et H2)
+        \[augmentation\], ictère \> 60mg/DL (\>H4), lipémie \> 500 (\>
+        H4)
+    -   gammapathie IgM (très rare)
+
+# PAL
+
+-   Principe : mesure par photométrie à 450 nm de la quantité de
+    p-nitrophénol, qui est proportionnelle à l'activité catalytique de
+    la phosphatase alcaline
+-   Intérêt : cholestase mais aussi pathologies osseuses, cancers
+-   Valeurs de références :[^2]
+    -   hommes 40-129U/L
+    -   femmes 35-104U/L
+    -   enfants : voir fiche technique
+-   Volume échantillon: 2.1μL
+-   Type échantillon : sérum, plasma (héparinate de lithium)
+-   Domaine de mesure :5-1200U/L
+-   Limite:
+    -   interférence : hémolyse si \> 200mg/dL (H3) ictère si \> 60mg/DL
+        (\> H4), lipémie si \> 2000
+    -   **augmenté chez enfants/adolescents** (activité des ostéoblastes
+        en croissance osseuse)
+
+# Lipase
+
+# Footnotes
+
+[^1]: Thomas L, Muller M, Schumann G, et al. Consensus of DGKL and VDGH
+    for interim reference intervals on enzymes in serum. J Lab Med
+    2005;29(5):301-308.
+
+[^2]: Thomas L, Muller M, Schumann G, et al. Consensus of DGKL and VDGH
+    for interim reference intervals on enzymes in serum. J Lab Med
+    2005;29(5):301-308.
