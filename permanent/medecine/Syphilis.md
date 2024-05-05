@@ -1,0 +1,46 @@
+#bacterio #ist
+*Treponema pallidum*
+
+## Primaire
+
+-   transmission sexuelle
+-   incubation 10-90 non contagieuse
+-   **chancre** ulcération en général unique, base indurée, fond propre,
+    non douloureux (organes génitaux, ORL, anal)
+
+## Secondaire
+
+-   dans l\'année
+-   latente précoce = asymptomatique
+-   symptomatique = secondaire : succession d\'éruption cutanées +/-
+    neuro, oculaire mais **grande simulatrice**
+
+## Tertiaire
+
+-   latente tardive = asymptomatique
+-   tertaire = tous les organes, grandes diversité
+
+## Diagnostic biologique
+
+-   **état frais** (pas de coloration)
+-   **non colorable au gram**, bacilles hélicoïdaaux moblise
+-   **non cultivable**
+-   **sérologie**
+    -   classique (TT ou TPHA) = anticorps contre une protéine de
+        membrane (TPHA, imunmuno-enzymatique) = spécifique mais
+        cicatrice sérologique...
+
+    -   non spécifique (TNT = non trépnoméique ou VDRL): antigène de
+        type phospholipdes (membrane mais aussi mitochrondries) par
+        agglutintation -\> infection active mais **peu spécifique**
+
+                 TT+                          TT -
+          ------ ---------------------------- --------------
+          TNT+   active ou récemment traité   faux positif
+          TNT-   traité et guérie             trop précoce
+
+## Cas particuliers
+
+-   dépistage 1er trimestre de la grosses (dramatique foetus)
+-   neurosyphilis : PCR (passage naturel IgG spécifique donc le test
+    classique a peu d\'intérêt)

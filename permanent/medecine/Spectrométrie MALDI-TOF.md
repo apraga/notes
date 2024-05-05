@@ -1,0 +1,10 @@
+#bacterio
+-   Matrix Assisted Laser Desorption Ionisation Time Of Flight
+-   bombardement du dépôt par un rayonnement laser, séparation des ions
+    et tdétection (tube de vol sous vide)
+-   sensibiiilté 95%, spécificité 98%
+-   temps d'analyse court, analyse simple, petit volume
+
+    Limites:
+    -   mauvaise identification : **strepto pneumoniae/mitis-oralis** \[acide formique\], **escherischia coli/shigelli**, espèce pour citrobacter, enterobacter
+    -   identification difficile sur certains milieu, impossible si colonie non pure

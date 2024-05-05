@@ -1,3 +1,4 @@
+#bacterio
 # Prélèvement vaginal
 
 Score de Nugent =

@@ -1,0 +1,50 @@
+#bacterio #ist
+Neisseria gonorrhoeae
+
+-   Cocci gram négatif
+-   **Fragile** sensiblite variation températiure =\> gélose sang
+    cuit/chocolate supplémenta
+-   Aérobie stricte mais **enrichi CO~2~**
+-   Pathogène strict home
+
+## Épidémio
+
+-   adulte jeunes 43%
+-   home 2.2x
+-   augmenation HSH
+
+## Pathogénicité
+
+-   homme : bruyant, urétrite aigǜe
+    -   complication : épididymite aigüe +/-/ bactériémie
+-   femme : souvent asympto
+    -   urétrie avec cervicie, leucorrhé
+    -   complication: salpingitue aigüe, bartholinite
+-   pharyngé, anorectal = souvent asympto
+-   fellation non protégée
+
+## Diagnostic
+
+-   ED:sensible pus uréthral homme sympto
+-   culture **\> 2j** si symptomatique
+-   **biologie moléculaire**
+    -   autoprélèvement vaginal, 1er jet urine
+    -   anal, gorge (PCR plus sensible que la culture)
+
+## Dépistage
+
+-   symptomatique: culture + TAAN
+-   asymptomatique: TAAN puis culture si positif
+
+## Antibiotiques
+
+-   CMI: E-test : péniG, cefixime, ceftriaxen, cipro/pfloxacine,
+    azithromycine, tétracycline
+-   résistance
+    -   très fréquente : **péni-G**, FQ, tétracycline
+    -   C3G : PLP mosaïque
+    -   vanco = résistance naturelle
+
+## Traitement
+
+-   **ceftriaxone + azitromicine**
