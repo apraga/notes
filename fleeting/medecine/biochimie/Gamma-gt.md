@@ -1,6 +1,4 @@
-```{=org}
-#+setupfile: ./fiche.setup
-```
+#biochimie
 # Localisation, physiologie
 
 La γ-glutamyltranspeptidase est impliquée dans le transfert des acides

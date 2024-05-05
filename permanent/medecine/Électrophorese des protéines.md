@@ -1,6 +1,4 @@
-```{=org}
-#+filetags: medecine biochimie technique
-```
+#biochmie
 # Description
 
 Méthode servant à séparer les différentes protéines dans le sang ou les

@@ -1,6 +1,4 @@
-```{=org}
-#+filetags: medecine biochimie technique
-```
+#biochimie
 # Description
 
 Il s'agit d'un processus d'émission de lumière à l'aide d'une réaction

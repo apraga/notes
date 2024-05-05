@@ -1,21 +1,11 @@
-```{=org}
-#+filetags: medecine biochimie technique
-```
+#biochimie
 # Description
 
-La spectrophotométrie mesure de manière quantitative l'absorption de
-composé colorés au travers d'un matériel en fonction de la longueur
-d'onde. On calcule l'absorbance $A_\lambda$ qui va être le logarithme en
-base 10 de l'intensité de lumière incidente sur la lumière transmise,
-qui peut également s'écrire selon la loi de Beer-Lambert en fonction de
-la concentraction $c$ du soluté en solution :
+La spectrophotométrie mesure de manière quantitative l'absorption de composé colorés au travers d'un matériel en fonction de la longueur d'onde. On calcule l'absorbance $A_\lambda$ qui va être le logarithme en base 10 de l'intensité de lumière incidente sur la lumière transmise, qui peut également s'écrire selon la loi de Beer-Lambert en fonction de la concentraction $c$ du soluté en solution :
 
-$$A_\lambda = \epsilon \times c \times L$$ où ϵ est une constante
-dépendant de la température, longueur d'onde, solvant et soluté, $L$ la
-longueur de la cuve.
+$$A_\lambda = \epsilon \times c \times L$$ où ϵ est une constante dépendant de la température, longueur d'onde, solvant et soluté, $L$ la longueur de la cuve.
 
-En biochimie, on va s'intéresser aux longueurs d'ondes UV et dans le
-domaine visible soit $100-800 nm$.
+En biochimie, on va s'intéresser aux longueurs d'ondes UV et dans le domaine visible soit $100-800 nm$.
 
 # Points forts
 

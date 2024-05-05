@@ -1,6 +1,4 @@
-```{=org}
-#+filetags: medecine biochimie technique
-```
+#biochimie
 # Description
 
 L'objectif est de séparér un solution en ses différents composants. La

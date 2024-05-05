@@ -1,21 +1,23 @@
-```{=org}
-#+setupfile: ./fiche.setup
-```
-# Localisation, rôle physiologique
+#biochimie 
+## pH
 
-Le CO2 transporté dans le sang est sous 2 formes : dissous dans le
-plasma et le cytoplasme des globules rouges et combinés sous forme de
-bicarbonate, ainsi que lié à l'hémoglobine.
+Le pH représente l'activité de l'ion hydrogène, qui reflète l'équilibre acide-base dans le sang. Il doit être régulé dans des marges étroites car des variations importantes peuvent rapidement avoir des conséquences délétères pour le métabolisme cellulaire, notamment sur le plan
+vasculaire.
 
-# Tissus/organes de production et d\'élimination
+-   Production: nombreuxs métabolismes (acides aminées, protéines...) ou issus de substances toxiques (méthanole, acide oxalique, acide formique)
+-   Élimination: principalement par les poumons +/- reins, estomacs (vomissements...), intestin (diarrhée)
 
-Le CO2 est produit lors du métabolisme cellulaire normal de manière
-continue et libéré dans le sang. Il est ensuite transporté dans les
-poumons, où aura lieu une diffusion des capillaires pulmonaires dans les
-alvéoles. Il sera ensuite expiré.
+ Valeurs de référence (adulte)
+-   artériel : 7.38 - 7.42
+-   veineux : 7.32 - 7.38
 
-# Valeurs de référence (adulte)
+## CO2
 
+Le CO2 transporté dans le sang est sous 2 formes : dissous dans le plasma et le cytoplasme des globules rouges et combinés sous forme de bicarbonate, ainsi que lié à l'hémoglobine.
+
+Le CO2 est produit lors du métabolisme cellulaire normal de manière continue et libéré dans le sang. Il est ensuite transporté dans les poumons, où aura lieu une diffusion des capillaires pulmonaires dans les alvéoles. Il sera ensuite expiré.
+
+Valeurs
 -   artériel : 35 - 46 mmHg (4.7 - 6.1 kPa)
 
 # Principe analytique de mesure

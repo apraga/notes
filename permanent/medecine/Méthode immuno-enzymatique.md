@@ -1,17 +1,9 @@
-```{=org}
-#+filetags: medecine biochimie technique
-```
+#biochimie
 # Description
 
-Le principe consiste à doser un antigène via des anticorps spécifiques
-selon le principe général d\'immunoanalyse. Dans le cadre du dosage
-immuno-enzymatique, les anticorps sont liés à une enzyme. Après l\'ajout
-d\'un substrat, la réaction va produire un signal qui va permettre la
-détection.
+Le principe consiste à doser un antigène via des anticorps spécifiques selon le principe général d\'immunoanalyse. Dans le cadre du dosage immuno-enzymatique, les anticorps sont liés à une enzyme. Après l\'ajout d\'un substrat, la réaction va produire un signal qui va permettre la détection.
 
-Le dosage peut être direct avec un signal sera proportionnel à la
-quantité d\'antigène ou indirect avec un signal inversement
-proportionnel à la quantité d\'antigène (compétiton des anticorps).
+Le dosage peut être direct avec un signal sera proportionnel à la quantité d\'antigène ou indirect avec un signal inversement proportionnel à la quantité d\'antigène (compétiton des anticorps).
 
 # Points forts
 

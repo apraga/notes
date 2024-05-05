@@ -1,6 +1,4 @@
-```{=org}
-#+setupfile: ./fiche.setup
-```
+#biochimie 
 # Localisation, physiologie
 
 L\'alanine transférase est une enzyme transaminase qui va transférer un

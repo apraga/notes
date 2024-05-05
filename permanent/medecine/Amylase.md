@@ -1,24 +1,17 @@
-```{=org}
-#+setupfile: ./fiche.setup
-```
+#biochimie
 # Localisation, physiologie
 
-L\'amylase est composé pour moitié des isoenzymes P (d\'origine
-pancréatique) et pour moitié des isoenzymes S (d\'origine salivaire)
-dans la circulation.
+L\'amylase est composé pour moitié des isoenzymes P (d\'origine pancréatique) et pour moitié des isoenzymes S (d\'origine salivaire) dans la circulation.
 
-Son rôle principal est l\'hydrolyse de l\'amidon provenant de
-l\'alimentation afin de générer glucose, maltose et dextrine.
+Son rôle principal est l\'hydrolyse de l\'amidon provenant de l\'alimentation afin de générer glucose, maltose et dextrine.
 
 # Production
 
-Type P: pancréas. Type S: glandes salivaires, larmes, sueur, lait
-maternel, liquide amniotique,poumons, testicules, trompes de fallope.
+Type P: pancréas. Type S: glandes salivaires, larmes, sueur, lait maternel, liquide amniotique,poumons, testicules, trompes de fallope.
 
 # Principe analytique de mesure
 
-Test colorimétrique enzymatique. Mesure de la coloration de
-p-nitrophénol, qui est proportionnel à l\'activité de l\'α-amylase.
+Test colorimétrique enzymatique. Mesure de la coloration de p-nitrophénol, qui est proportionnel à l\'activité de l\'α-amylase.
 
 # Valeurs de référence [@junge2001development]
 

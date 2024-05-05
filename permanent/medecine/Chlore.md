@@ -1,6 +1,3 @@
-```{=org}
-#+setupfile: ./fiche.setup
-```
 # Localisation, rôle physiologique
 
 Le chlore est le principal anion extracellulaire. Il sert à maintenir la

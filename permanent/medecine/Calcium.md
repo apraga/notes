@@ -1,6 +1,4 @@
-```{=org}
-#+setupfile: ./fiche.setup
-```
+#biochimie
 # Localisation, rôle physiologique
 
 99% du calcium est dans le squelette sous forme d'hydroxyapatite. Le

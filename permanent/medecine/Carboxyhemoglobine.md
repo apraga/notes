@@ -1,10 +1,9 @@
-```{=org}
-#+setupfile: ./fiche.setup
-```
 # Localisation, rôle physiologique
 
-Cette dyshémoglobine a son fer oxydé en Fe^3+^. Eelle est donc incapable
-de se lier à l'oxygène.
+Dyshémoglobine liée par covalence aux monoxyde de carbone. Son affinité
+pour le monoxyde de carbone est très supérieures à celle pour l'oxygène.
+L'hémoglobine liée au monoxyde de carbone n'est donc pas disponible pour
+le transport d'oxygène
 
 # Tissus/organes de production et d\'élimination
 
@@ -12,7 +11,7 @@ Voir fiche hémoglobine
 
 # Valeurs de référence (adulte)
 
-\< 2%
+0-1.5%
 
 # Principe analytique de mesure
 
@@ -22,14 +21,14 @@ longueur d'onde donnée.
 
 # Principales interactions analytiques
 
--   Hyperlipémie : augemntation
+-   Hyperlipémie
 
 # Vigilance pré-analytiques et analytiques
 
+-   tabagisme
+
 # Augmentation et diminution
 
--   Augmenté si
-    -   congénital
-    -   exposition nitrate, nitrites, colorans d'aniline, anesthésique
-        topique
-    -   nourissons (possiblement)
+-   augmenté si anémie hémolytique, état sepsis sévère
+-   pollution de l'air
+-   exposition professionnelle au monoxyde de carbone

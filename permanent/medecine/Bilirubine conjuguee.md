@@ -1,6 +1,5 @@
--   Physiologie : la bilirubine est conjuguée dans le foie pour la
-    rendre soluble et améliorer son transport. Elle est transportée dans
-    le canal biliaire et éliminée au niveau digestif.
+#biochimie
+-   Physiologie : la bilirubine est conjuguée dans le foie pour la rendre soluble et améliorer son transport. Elle est transportée dans le canal biliaire et éliminée au niveau digestif.
 -   Principe analytique : méthode diazo
     -   mesure par photométrie à 540 nm de l'azobilirubine rouge qui est
         proportionnelle à la concentration en bilirubine directe
