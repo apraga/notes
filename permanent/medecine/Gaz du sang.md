@@ -1,4 +1,5 @@
 #biochimie 
+
 ## pH
 
 Le pH représente l'activité de l'ion hydrogène, qui reflète l'équilibre acide-base dans le sang. Il doit être régulé dans des marges étroites car des variations importantes peuvent rapidement avoir des conséquences délétères pour le métabolisme cellulaire, notamment sur le plan
@@ -10,6 +11,16 @@ vasculaire.
  Valeurs de référence (adulte)
 -   artériel : 7.38 - 7.42
 -   veineux : 7.32 - 7.38
+
+## pO2
+Dans les poumons, l'oxygène diffuse au niveau des alvéoles via le sang.
+Il y est combiné à l'hémoglobine des globules rouges et transporté vers
+les cellules dans les artères. Il est ensuite libéré dans les tissus.
+L'oxygène est consommé pour la respiration cellulaires par les
+mitochondries afin de générer de l'énergie sous forme d'ATP
+
+ Valeurs de référence (adulte)
+ - pO2 artériel : 70 - 100 mmHg (9.5 - 13.3 kPa)
 
 ## CO2
 

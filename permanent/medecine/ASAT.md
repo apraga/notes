@@ -1,18 +1,13 @@
 #biochimie
 # Localisation, physiologie
 
-L\'aspartate transférase est une enzyme transaminase qui va transférer
-un groupement amine depuis un acide aminé (aspartate) vers un acide
-cétonique (acide α-cétoglutarique) selon la réaction
+L\'aspartate transférase est une enzyme transaminase qui va transférer un groupement amine depuis un acide aminé (aspartate) vers un acide cétonique (acide α-cétoglutarique) selon la réaction
 
 aspartate + acide α-cétoglutarique ↔ oxaloacétate + glutamate
 
-L\'ASAT est le point de départ de nombreuses réactions métaboliques (ex:
-pyrimidine) et le glutamate est impliqué dans le cycle glucose-alanine.
+L\'ASAT est le point de départ de nombreuses réactions métaboliques (ex: pyrimidine) et le glutamate est impliqué dans le cycle glucose-alanine.
 
-Elle se trouve principalement dans les cellules hépatiques et
-cardiaques, et dans une moindre mesure dans les muscles squelettiques,
-reins, pancréas, globules rouges et cerveau.
+Elle se trouve principalement dans les cellules hépatiques et cardiaques, et dans une moindre mesure dans les muscles squelettiques, reins, pancréas, globules rouges et cerveau.
 
 # Production
 

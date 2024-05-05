@@ -1,11 +1,7 @@
 #biochimie
 # Localisation, physiologie
 
-La γ-glutamyltranspeptidase est impliquée dans le transfert des acides
-aminés au travers de la membrane cellulaire et dans le métablosme du
-glutathione. Elle se trouve dans le foie, pancréas, reins, rate,
-poumons, prostate.
-
+La γ-glutamyltranspeptidase est impliquée dans le transfert des acides aminés au travers de la membrane cellulaire et dans le métablosme du glutathione. Elle se trouve dans le foie, pancréas, reins, rate, poumons, prostate.
 # Production
 
 La version circulante est du à une destruction cellulaire, surtout
@@ -44,3 +40,4 @@ nitro-2 benzoate, qui est proportionnelle à l'activité de la γ-GT.
     -   alcool
     -   affection hépatobiliaire (cholestase notamment)
     -   hyperthyroïdie, parasite (distomatose, larva migrans)
+

@@ -21,8 +21,15 @@ Dosage
 [CPK](CPK)
 [Calcium](Calcium.md)
 [Carboxyhemoglobine](Carboxyhemoglobine.md)
+[Glucose](permanent/medecine/Glucose.md)
 [Hémoglobine](Hémoglobine.md)
+[Lactates](Lactates.md)
+[Potassium](Potassium.md)
+[Trou anionique](Trou%20anionique.md)
+[Sodium](Sodium.md)
 [[ASAT]]
+[Gamma-gt](Gamma-gt.md)
+[Lipase](Lipase.md)
 [[Ammoniaque]]
 [[BNP]]
 [[Creatine]]
@@ -35,10 +42,10 @@ Dosage
 
 Techniques
 [Chromatographie](Chromatographie.md)
+[Méthode immuno-enzymatique](Méthode%20immuno-enzymatique.md)
+[Potentiometrie](Potentiometrie.md)
+[Spectrophotometrie](Spectrophotometrie.md)
+[Turbidimetrie](Turbidimetrie.md)
 [Électrochimiluminescence](Électrochimiluminescence.md)
 [Électrophorese des protéines](Électrophorese%20des%20protéines.md)
-[Turbidimetrie](Turbidimetrie.md)
-[Spectrophotometrie](Spectrophotometrie.md)
-[Méthode immuno-enzymatique](Méthode%20immuno-enzymatique.md)
-
 [[Inteprétation biochimie]]

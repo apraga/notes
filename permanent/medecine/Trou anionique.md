@@ -1,6 +1,4 @@
-```{=org}
-#+setupfile: ./fiche.setup
-```
+#biochimie 
 # Localisation, rôle physiologique
 
 Sérum.

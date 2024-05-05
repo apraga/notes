@@ -1,6 +1,4 @@
-```{=org}
-#+setupfile: ./fiche.setup
-```
+#biochimie
 # Localisation, physiologie
 
 Cette enzyme hydrolyse les liaisons ester des triglycérides avec une

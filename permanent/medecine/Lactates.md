@@ -1,6 +1,4 @@
-```{=org}
-#+setupfile: ./fiche.setup
-```
+#biochimie
 # Localisation, rôle physiologique
 
 C'est le produit final de la glycolyse anaérobie dans le cytoplasme
