@@ -1,0 +1,19 @@
+#biochimie
+## Naissance
+
+Il s'agit d'un produit de l'arginine (transformation en glycine par la
+glycine amdinotransferase, qui va générer du guanidinoacetate et de
+l'ornithine. Cette première est méthylée en créatine). Ces réactions ont
+lieu dans le foie, rein et cerveau.
+
+## Vie
+
+La créatine est transportée dans les muscles squelettique La
+phosphorylation de la créatine sert à faire la phosphocréatine, qui est
+un réservoir d'énergie (muscle squelettique, cerveau surtout) car la
+déphosphorylation permet de créer de l'ATP. \$creatine + ATP ↔
+phosphocreatine + ADP \$
+
+## Mort
+
+Pour l'excrétion dans l'urine, la créatine est convertie en créatinine.

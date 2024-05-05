@@ -1,10 +1,5 @@
----
-title: Équilibre acido-basique
-date: 2024-04-30
-tags: medecine biochomie
----
 
-
+#biochimie
 # Acide-base 
 
 3 mécanisme de défense :

@@ -1,9 +1,4 @@
----
-title: Albumine
-date: 2024-04-30
-tags: 
----
-
+#biochimie
 ## Naissance
 
 Synthèse par les hépatocytes

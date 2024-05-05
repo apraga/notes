@@ -1,9 +1,4 @@
----
-title: Acides aminés
-date: 2024-04-30
-tags: 
----
-
+#biochimie
 Doivent être apporté par l'alimentation:
 
 -   histidine, isoleucine, leucine, lysine, methionine, phenylalanine,

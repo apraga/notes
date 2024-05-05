@@ -1,11 +1,4 @@
----
-title: Acides biliaires
-date: 2024-04-30
-tags: medecine biochimie
----
-
-
-# Acides biliaires
+#biochimie 
 
 ## Naissance
 

@@ -1,0 +1,2 @@
+
+![](../images/biochimie/bilirubin.jpg)
