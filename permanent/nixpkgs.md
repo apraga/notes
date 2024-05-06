@@ -13,6 +13,7 @@ nixfmt package.nix
 - Source
 	- mettre`pname` en dur dans `fetchFromGithub` https://github.com/nix-community/nixpkgs-lint/issues/21
 	- utiliser `hash` plutôt que `sha256` https://nixos.org/manual/nixpkgs/stable/#fetchurl
+	- version = "unstable-YYYY-MM-DD" s'il n'y a pas de version
 ## Variables
 - nativeBuildInput : si exécuté durant le build (ex: cmake)
 - buildInputs : si utilisé à l'exécution ou ajouté dans la sortie (ex: zlib). Attention, il peut falloir ajouter aux 2 !
