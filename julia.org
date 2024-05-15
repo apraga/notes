@@ -1,7 +1,9 @@
-* Tester un paquet localement
 :PROPERTIES:
-:CUSTOM_ID: tester-un-paquet-localement
+:ID:       6f2331b4-c8a7-4dd2-92c0-f9466e73d24a
 :END:
+#+title: Julia
+#+filetags: programmation
+* Tester un paquet localement
 #+begin_example
     julia> ]
     (@v1.9) pkg> develop /home/alex/code/XAMScissors.jl
@@ -15,13 +17,7 @@ julia> using XAMScissors
 #+end_example
 
 * Librairies
-:PROPERTIES:
-:CUSTOM_ID: librairies
-:END:
 ** DataFramesMeta
-:PROPERTIES:
-:CUSTOM_ID: dataframesmeta
-:END:
 Supprimer une liste de colonnes
 
 #+begin_src julia
@@ -39,3 +35,5 @@ Négation
 #+begin_src julia
 @subset d .!(in.(:"Code analyse", Ref(["GMQKIT", "GMQDAT", "GMQDOS", "GMQRAT"])))
 #+end_src
+** Autes
+- Ferrite.jl : Une toolbox pour éléments finis
