@@ -1,0 +1,49 @@
+​#biochimie # Localisation, rôle physiologique
+
+Sérum.
+
+* Valeurs de référence (adulte)
+:PROPERTIES:
+:CUSTOM_ID: valeurs-de-référence-adulte
+:END:
+Normalement, il y a autant d'anions que de cations. En pratique, tous
+les électrolytes ne sont pas mesurés donc le TA (trou anionique) est de
+16  ± 4 mmol/L
+
+* Principe analytique de mesure
+:PROPERTIES:
+:CUSTOM_ID: principe-analytique-de-mesure
+:END:
+C'est un paramètre calculé selon \([Na]^+ [K]^+ - [Cl]^- - [HCO_3]^-\)
+NA, K et Cl sont mesuré par une électrode sélective d'ion.
+
+* Principales interactions analytiques
+:PROPERTIES:
+:CUSTOM_ID: principales-interactions-analytiques
+:END:
+- hémolyse sur le potassium
+- pseudohyponatrémie si lipidémie
+- pseudo hypo/hyper-natrémie selon le taux de protides
+- chlore augmenté pour patients sous perchlorate
+
+* Vigilance pré-analytiques et analytiques
+:PROPERTIES:
+:CUSTOM_ID: vigilance-pré-analytiques-et-analytiques
+:END:
+* Augmentation et diminution
+:PROPERTIES:
+:CUSTOM_ID: augmentation-et-diminution
+:END:
+Le trou anionique permet d'orienter les étiologies d'acidose
+métabolique. La perte en bicarbonates est compensée soit par
+
+- l'augmentation du chlore (TA normal)
+  - accumulation aigüe d'acide : intoxication (chlorure d'ammonium, HCL)
+  - perte de bicarbonate : diarrhées, anastomose urétéro-intestinales,
+    acidose tubulaire proximale
+  - diminution de l'excrétion rénale d'acide : acidose tubulaire distale
+- l'augmentation d'un autre anion indosé (protéines plasmatiques,
+  phosphase, sulfates...) donc TA augmenté > 20mmol/L)
+  - accumulation aigüe d'acide : acidose lactique, acidocétose,
+    intoxication au méthonal, éthylène glycole
+  - diminution de l'excrétion rénale d'acide : insuffisance rénale

@@ -1,0 +1,66 @@
+​#biochimie # Localisation, physiologie
+
+L'amylase est composé pour moitié des isoenzymes P (d'origine
+pancréatique) et pour moitié des isoenzymes S (d'origine salivaire) dans
+la circulation.
+
+Son rôle principal est l'hydrolyse de l'amidon provenant de
+l'alimentation afin de générer glucose, maltose et dextrine.
+
+* Production
+:PROPERTIES:
+:CUSTOM_ID: production
+:END:
+Type P: pancréas. Type S: glandes salivaires, larmes, sueur, lait
+maternel, liquide amniotique,poumons, testicules, trompes de fallope.
+
+* Principe analytique de mesure
+:PROPERTIES:
+:CUSTOM_ID: principe-analytique-de-mesure
+:END:
+Test colorimétrique enzymatique. Mesure de la coloration de
+p-nitrophénol, qui est proportionnel à l'activité de l'α-amylase.
+
+* Valeurs de référence [cite:@junge2001development]
+:PROPERTIES:
+:CUSTOM_ID: valeurs-de-référence-junge2001development
+:END:
+- Plasma: hommes et femmes : 28-100U/L
+- Urines :
+  - hommes : 16-491/L
+  - femmes : 21-447/L
+
+* Principales interactions analytiques
+:PROPERTIES:
+:CUSTOM_ID: principales-interactions-analytiques
+:END:
+- citrate, fluorure, EDTA
+- icodextrine
+- gammapathie de type IgM
+
+* Vigilance pré-analytiques et analytiques
+:PROPERTIES:
+:CUSTOM_ID: vigilance-pré-analytiques-et-analytiques
+:END:
+- héparinate de lithium
+- éviter le contact du réactif avec la peau (amylase dans la salive et
+  la sueur)
+- sang ou urine possible
+
+* Variations [cite:@biomnis]
+:PROPERTIES:
+:CUSTOM_ID: variations-biomnis
+:END:
+- physiologique : diminué chez le nouveau-né par immaturité pancréatique
+  et le jeune enfant jusque 5 ans, parfois augmenté lors de la grossesse
+  et chez les personnes âgées, ainsi que chez les sujts d'origine
+  africaine ou asiatique
+- iatrogène : acide valproïque, morphine, agoniste cholinergique,
+  diurétiques thiazidique, aspirine, corticostéro\''ides, contraceptifs
+  oraux...
+- pathologique :
+  - augmenté en cas de pancréatite aigüe
+  - mais aussi : alcool, pathologies salivaires, oreillons, affections
+    du tractus génital féminin, grossesses extr-utérines, certains
+    cancers (poumon, prostate, ovaire)
+  - également : insuffisance rénale, macroamylasémie

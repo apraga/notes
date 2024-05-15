@@ -1,0 +1,45 @@
+* April 29, 2024
+:PROPERTIES:
+:CUSTOM_ID: april-29-2024
+:END:
+On revient au packaging de dragmap. Avec nix-shell dans
+~/code/nixpkgs/dragmap :
+
+#+begin_src sh
+making /home/alex/code/nixpkgs/dragmap/source/build/release/align/tests/unit/CigarGtest
+/nix/store/j2y057vz3i19yh4zjsan1s3q256q15rd-binutils-2.41/bin/ld: cannot find -lgtest_main: No such file or directory
+/nix/store/j2y057vz3i19yh4zjsan1s3q256q15rd-binutils-2.41/bin/ld: cannot find -lgtest: No such file or directory
+collect2: error: ld returned 1 exit status
+make: *** [/home/alex/code/nixpkgs/dragmap/source/make/lib.mk:91: /home/alex/code/nixpkgs/dragmap/source/build/release/align/tests/unit/CigarGtest] Error 1
+#+end_src
+
+On essaie de mettre gtest dans buildInput: Ok.
+
+Problème d'installation
+
+#+begin_src sh
+Running phase: installPhase
+mkdir: cannot create directory '/nix/store/q5livgwj4gcd6mgc5firyak9a86nrvqk-DRAGMAP-1.3.0/bin': No such file or directory
+cp: cannot create regular file '/nix/store/q5livgwj4gcd6mgc5firyak9a86nrvqk-DRAGMAP-1.3.0/bin/': No such file or directory
+#+end_src
+
+Lors de la soumission du PR,
+=nix-shell -p nixpkgs-review --run "nixpkgs-review rev HEAD"= échoue
+
+#+begin_example
+98f0840b012d9975a687e5fc9fb179c57ee57/build.nix
+[1/0/2 built, 48 copied (500.2/500.4 MiB), 86.3 MiB DL] building DRAGMAP-1.3.0 (buildPhase): making /build/source/builerror: builder for '/nix/store/r76fl0lbhhml92795igb9nxgbyv0yqcx-DRAGMAP-1.3.0.drv' failed with exit code 2;
+       last 10 log lines:
+       >                  from /nix/store/nn152mgpdfcw92b3b03g9kmnlpd9jris-gcc-13.2.0/include/c++/13.2.0/string:54,
+       >                  from include/boost/algorithm/string/std/string_traits.hpp:15,
+       >                  from include/boost/algorithm/string/std_containers_traits.hpp:19,
+       >                  from include/boost/algorithm/string.hpp:18,
+       >                  from /build/source/stubs/dragen/src/host/infra/linux/infra_linux_utils.cpp:23:
+       > /nix/store/ij144ma6vs8acil8r9hgr8xkb1dp9azg-glibc-2.39-5-dev/include/stdio.h:897:12: note: in a call to function 'int pclose(FILE*)' declared 'nonnull'
+       >   897 | extern int pclose (FILE *__stream) __nonnull ((1));
+       >       |            ^~~~~~
+       > cc1plus: all warnings being treated as errors
+       > make: *** [/build/source/make/dragen_stub_lib.mk:36: /build/source/build/release/stub_host/infra/linux/infra_linux_utils.o] Error 1
+#+end_example
+
+On soumet et on attend

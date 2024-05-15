@@ -1,0 +1,187 @@
+* Démographie
+:PROPERTIES:
+:CUSTOM_ID: démographie
+:END:
+** Clinique
+:PROPERTIES:
+:CUSTOM_ID: clinique
+:END:
+*** Extraction
+:PROPERTIES:
+:CUSTOM_ID: extraction
+:END:
+Extraction de la clinique au format HPO depuis les compte-rendus
+extraits en texte =checkpipeline -i data -o clinical.csv=
+
+*** Nettoyage
+:PROPERTIES:
+:CUSTOM_ID: nettoyage
+:END:
+1. Nettoyage à la main en découpant les lignes avec des virgules (+
+   divers)
+2. Regarder les données pour corriger les erreurs avec espaces etc :
+   =open clinical.csv | get Clinical | str downcase | uniq -c  | sort-by count=
+3. On utilise un script Rust pour comparer les termes à la base de
+   données HPO. Il faut télécharger localement la base et il faut la
+   clinique dans ../data/clinical_nodup.csv. Pour la base HPO, on va
+   dans ~/code/hpo et il faut avoir téléchargé
+
+data/ ├── hp.obo ├── phenotype.hpoa └── phenotype_to_genes.txt
+
+#+begin_src sh
+cargo run --release  --example obo_to_bin data ontology.hpo
+cp ontology.hpo ~/research/bisonex/code/hpo
+cd /research/bisonex/code/hpo
+cabal run --release cleanup
+#+end_src
+
+Le fichier de sortie est =clinical_corrected.csv= avec une nouvelle
+colonne correspondant à l'annotation corrigée (=Clinical_corr=).
+
+On regarde ensuite manuellement les termes qui n'ont pas été retrouvés
+
+#+begin_src nu
+open clinical_corrected.csv | where ($it.Clinical_corr | is-empty) | get Clinical | sort | uniq
+#+end_src
+
+*** Catégories
+:PROPERTIES:
+:CUSTOM_ID: catégories
+:END:
+À partir de ../data/clinical_corrected.csv, on va regarder les parents
+dans la nomenclature HPO qui sont à une distance de 3 de la racine et le
+résultat est généré dans clinical_main.csv
+
+#+begin_src sh
+cargo run --release --bin clinical_main
+#+end_src
+
+Puis on regarde les termes les plus courants et les catégories
+
+#+begin_src nu
+open clinical_corrected.csv | get Clinical_corr | uniq -c | sort-by count | to csv
+open clinical_main.csv | select major_parent len | sort-by len | to csv
+#+end_src
+
+*** Graphe
+:PROPERTIES:
+:CUSTOM_ID: graphe
+:END:
+Génération d'un fichier pour graphviz (test.dot) partir de
+clinical_main.csv
+
+#+begin_src sh
+cargo run --release --bin graph
+dot -Tsvg test.dot | save test.svg -f
+#+end_src
+
+*** Divers
+:PROPERTIES:
+:CUSTOM_ID: divers
+:END:
+NB: les dates ont été trouvées avec
+=rg "Report date: .*" data/* -o -I | lines | each {|e| $e | str replace "Report date: " "" } | save dates.txt=
+et en regardant à la main des dates extrémales
+
+Attention, certains patients sont en double:
+
+#+begin_src julia
+using DataFramesMeta, CSV
+d = CSV.read("clinical.csv", DataFrame)
+d2 = @by d :Patient :ER :mysum = length(:ER)
+ids = : ids = findall(nonunique(@select d2 :Patient))
+d2[ids, :]
+
+# 52 Duplicate patients
+nrow(unique(d2[ids, :]))
+# 911 patients
+nrow(unique(@select d :Patient))
+#+end_src
+
+Si on veut supprimer les doublons, on les a directement. Mais on
+supprime l'un des doublons au hasard...
+
+#+begin_src julia
+CSV.write("todelete.csv", d2[ids, [:ER]])
+#+end_src
+
+On enlève "ER" à lmain de ce fichier puis
+
+#+begin_example
+rg  -v -f todelete.csv clinical.csv | save clinical_nodup.csv
+#+end_example
+
+*** Résultats
+:PROPERTIES:
+:CUSTOM_ID: résultats
+:END:
+Termes HPO les plus courants (>= 40)
+
+#+begin_src nu
+open ../data/clinical_nodup.csv | get Clinical | uniq -c | sort-by count | where count >= 40 | to csv
+#+end_src
+
+** Résultats d'exomes
+:PROPERTIES:
+:CUSTOM_ID: résultats-dexomes
+:END:
+1178 exomes dont 586 négatifs
+
+#+begin_src nu
+open ~/annex/data/centogene/variants/variants_centogene_final.csv | select "patient ID" "genomic (hg38)" | uniq | where "genomic (hg38)" == "negatif" | length
+open ~/annex/data/centogene/variants/variants_centogene_final.csv | select "patient ID" "genomic (hg38)" | uniq | length 1178
+#+end_src
+
+1056 patients uniques avec exome
+
+#+begin_src nu
+open ~/annex/data/centogene/variants/variants_centogene_final.csv | get "patient ID" | uniq | length
+#+end_src
+
+247 données brutes
+
+#+begin_src nu
+ls ~/annex/data/bisonex/call_variant/haplotypecaller/2* | length
+#+end_src
+
+562 variant uniques:
+
+#+begin_src nu
+open ~/annex/data/centogene/variants/variants_centogene_final.csv | where coding != negatif | select "transcript (cento)" conudin g | uniq | length
+#+end_src
+
+Classification variant (attention, 4 variants en trop, on en enlève 1
+partout.): TODO
+
+Type variants
+
+#+begin_src nu
+❯ open ~/annex/data/centogene/variants/variants_centogene_final.csv | get "genomic (hg38)" | uniq  -c | where value =~ ">" | length
+❯ open ~/annex/data/centogene/variants/variants_centogene_final.csv | get "genomic (hg38)" | uniq  -c | where value =~ "del" | length
+❯ open ~/annex/data/centogene/variants/variants_centogene_final.csv | get "genomic (hg38)" | uniq  -c | where value =~ "dup" | length
+❯ open ~/annex/data/centogene/variants/variants_centogene_final.csv | get "genomic (hg38)" | uniq  -c | where value =~ "ins" | length
+#+end_src
+
+Zygosity
+
+#+begin_src nu
+❯ open ~/annex/data/centogene/variants/variants_centogene_final.csv | select "genomic (hg38)" zygosity | uniq  | get zygosity | uniq -c | to csv
+#+end_src
+
+** Versions
+:PROPERTIES:
+:CUSTOM_ID: versions
+:END:
+=nix flake show= git+file:///home/alex/code/bisonex └───packages
+└───x86_64-linux ├───awscli2: package 'awscli2-2.11.20' ├───bcftools:
+package 'bcftools-1.17' ├───bedtools: package 'bedtools-2.31.0' ├───bwa:
+package 'bwa-unstable-2022-09-23' ├───default: package
+'nextflow-22.10.6' ├───dos2unix: package 'dos2unix-7.4.4' ├───fastqc:
+package 'fastqc' ├───gatk: package 'gatk-4.4.0.0' ├───hap-py: package
+'hap.py' ├───htslib: package 'htslib-1.17' ├───mosdepth: package
+'mosdepth-0.3.3' ├───multiqc: package 'multiqc-1.15' ├───picard-tools:
+package 'picard-tools-3.0.0' ├───python: package 'python3-3.10.12-env'
+├───r: package 'R-4.2.3-wrapper' ├───rtg-tools: package
+'rtg-tools-3.12.1' ├───samtools: package 'samtools-1.17' ├───spip:
+package 'spip' ├───sratoolkit: package 'vcftools-0.1.16' ├───vcftools:
+package 'vcftools-0.1.16' └───vep: package 'perl5.36.0-ensembl-vep-110'

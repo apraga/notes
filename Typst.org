@@ -1,0 +1,41 @@
+​#typography
+
+Alternative à latex en beta début 2024 mais avec un client en ligne
+fonctionnel. Attention, pas plus de 100 fichiers dans la version
+gratuite. Pas encore de version payant en mars 2024
+
+* Astuces
+:PROPERTIES:
+:CUSTOM_ID: astuces
+:END:
+Découper un document en plusieurs fichier
+
+#+begin_src typst
+#include "lol.typ"
+#+end_src
+
+Par contre, ce n'est pas du preprocessing. Donc si on veut définir des
+variables, il faut les mettre dans un fichier template.typ and faire
+
+#+begin_src typst
+#import "template.typ": *
+#+end_src
+
+Définir un style global
+
+#+begin_src typst
+#set figure(kind: table)
+#+end_src
+
+Pour les packages, il faut pra contre définir des fonctions
+
+#+begin_src typst
+#let cooltable = tablex.with(stroke: red)
+#+end_src
+
+* Librairies
+:PROPERTIES:
+:CUSTOM_ID: librairies
+:END:
+- Cetz: alternative à tikz
+- fletcher : utilisé pendant la thèse pour des flowchart. Assez pratique

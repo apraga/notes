@@ -1,0 +1,56 @@
+​#biochimie
+
+** Naissance
+:PROPERTIES:
+:CUSTOM_ID: naissance
+:END:
+Les hépatocytes synthétisent les acides biliaires primitifs (acide
+cholique, acide chénodésoxycholique) à partir du cholestérol, qui sont
+conjugés avec la taurine et glycine puis sécrétés dans la vésicule
+bilaire. ## Vie Stockés dans la vésicule biliaire, ils sont relargé dans
+l'intestin au moment de la digestion. ## Mort Ils peuvent être
+réabsorbés et retourner dans le foie via la veine porte, ou excrétés
+dans les salles ou métabolisés par les bactéries intestinales (acides
+biliaire secondaire). ## Effet Dans le foie, ils participent à la
+formation de la bile. dans la bile, ils évitent la formation de calculs
+biliaires en permettant la solubilisation du chostérole et des
+phospholipides. Au niveau intestinal, ils agissent comment émulsifiants
+sur les lipides (triglyceride, cholesterol...) pour favoriser leur
+réabsorption par la muqueuse. ## Indication - exploration fonctionnelle
+du foie (cholestase hépatique, ictère, insuffisance hépatocellulaire) -
+exploration lithiase après une colique ou complication - suivi
+cholestase chez la femme enceinte - exploration prurit inexplique
+
+** Valeurs de référence (adulte)
+:PROPERTIES:
+:CUSTOM_ID: valeurs-de-référence-adulte
+:END:
+1-6 μ mol/L
+
+** Principe analytique de mesure
+:PROPERTIES:
+:CUSTOM_ID: principe-analytique-de-mesure
+:END:
+Mesure par photométrie du taux de formation de thio-NADH selon la
+réaction acide biliarie -> acide biliaire oxydée consomment de Thio-NAD
+et formation de thio-NADH
+
+** Principales interactions analytiques
+:PROPERTIES:
+:CUSTOM_ID: principales-interactions-analytiques
+:END:
+- ne doivent pas être utilisé en cas de traitement par acide
+  ursodésoxycholique
+- Écart < 10% avec triglycéride, acide ascorbique, bilirubine,
+  hémoglobine
+
+** Augmentation et diminution
+:PROPERTIES:
+:CUSTOM_ID: augmentation-et-diminution
+:END:
+Physiologique : augmente après les repas, en cas de grossesse, nutrition
+parentérale Augmentation en cas de cholestase
+
+- extra-hépatique : blocage mécanique (malformation, obstacle)
+- intra-hépatique : atteinte du métabolisme des acides biliaires au
+  niveau des hépatocytes

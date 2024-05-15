@@ -1,0 +1,38 @@
+​#biochimie ## Naissance
+
+Synthèse par les hépatocytes
+
+** Vie
+:PROPERTIES:
+:CUSTOM_ID: vie
+:END:
+60% secteur interstitiel, 40% vasculaire (=2/3 protéines circulantes)
+
+** Mort
+:PROPERTIES:
+:CUSTOM_ID: mort
+:END:
+Demi-vie 20 jours. *Non-excrété* par le glomérule (taille et charge
+négative)
+
+** Effet
+:PROPERTIES:
+:CUSTOM_ID: effet
+:END:
+- Maintien de la pression oncotique vasculaire
+- Protéine de transport pour des substances inactives mais rapidement
+  mobilisables : homornes, acides aminés, acide gras, vitamine,
+  médicament
+
+** Indication
+:PROPERTIES:
+:CUSTOM_ID: indication
+:END:
+- Syndrome inflammatoire chronique
+- Fuites protéiques (entéropathies exsudatives, syndrome néphrotique)
+- Dénutrition chronique
+
+** Dosage
+:PROPERTIES:
+:CUSTOM_ID: dosage
+:END:

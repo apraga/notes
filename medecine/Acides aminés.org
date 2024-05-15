@@ -1,0 +1,44 @@
+​#biochimie Doivent être apporté par l'alimentation:
+
+- histidine, isoleucine, leucine, lysine, methionine, phenylalanine,
+  threonine, tryptophan, valine
+
+Non-essentiels
+
+- alanine, arginine, asparagine, aspartate, cysteine, glutamate,
+  glutamine, glycine, proline, serine, tyrosine
+
+** Utilisé par la néoglucogenèse : glutamate, glutamine, alanine, aspartate, asparagine
+:PROPERTIES:
+:CUSTOM_ID: utilisé-par-la-néoglucogenèse-glutamate-glutamine-alanine-aspartate-asparagine
+:END:
+Le glutamate sert à convertir ces acides aminé entre eux.
+
+** Formé depuis l'aspartate : lysine, thréoine, méthionine, cystéine
+:PROPERTIES:
+:CUSTOM_ID: formé-depuis-laspartate-lysine-thréoine-méthionine-cystéine
+:END:
+** Proline
+:PROPERTIES:
+:CUSTOM_ID: proline
+:END:
+NB: la proline a une structure en anneau rigide et va donc contraindre
+fortement la structure de la protéine
+
+** Sérine, glycine
+:PROPERTIES:
+:CUSTOM_ID: sérine-glycine
+:END:
+Non essentiels, dérive de 3-phosphoglycérate
+
+** Leucine, isoleucine, valine
+:PROPERTIES:
+:CUSTOM_ID: leucine-isoleucine-valine
+:END:
+Essentiels. Squelette carboné venant du pyruvate
+
+** Phenylaaline, tyrosine, tryptophan
+:PROPERTIES:
+:CUSTOM_ID: phenylaaline-tyrosine-tryptophan
+:END:
+"Aromatique".

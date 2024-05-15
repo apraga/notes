@@ -1,0 +1,4 @@
+* Données de synthèse
+:PROPERTIES:
+:CUSTOM_ID: données-de-synthèse
+:END:

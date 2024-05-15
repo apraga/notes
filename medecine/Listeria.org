@@ -1,0 +1,30 @@
+​#bacterio ## Listeria monocytègene
+
+Résiste à 4° ! ^
+
+*** Clinique
+:PROPERTIES:
+:CUSTOM_ID: clinique-4
+:END:
+- non invasive = gastro
+- invasive: *bactériémie*, neurolistériose, infection materno-foetale
+  avec forme néonatale précoce ou > 7j
+
+*** Diagnostic
+:PROPERTIES:
+:CUSTOM_ID: diagnostic-5
+:END:
+- hémoc, PL
+- non exigeant
+
+*** Résistance
+:PROPERTIES:
+:CUSTOM_ID: résistance-4
+:END:
+- résistance naturelle *C3G*, fosfomycine, quinolone
+
+*** Traitement
+:PROPERTIES:
+:CUSTOM_ID: traitement-2
+:END:
+- amox + genta

@@ -1,0 +1,88 @@
+* Utilisation
+:PROPERTIES:
+:CUSTOM_ID: utilisation
+:END:
+Lister nom de colonnes
+
+#+begin_example
+open lol.csv | columns
+#+end_example
+
+* Intégration
+:PROPERTIES:
+:CUSTOM_ID: intégration
+:END:
+** Emacs et tramp
+:PROPERTIES:
+:CUSTOM_ID: emacs-et-tramp
+:END:
+Pour forcer tramp à utiliser bash
+
+#+begin_example
+SHELL="/bin/bash" ~/.emacs.d/bin/doom env
+#+end_example
+
+** Python avec virtual env
+:PROPERTIES:
+:CUSTOM_ID: python-avec-virtual-env
+:END:
+Installer virtualenv, exemple avec `emerge virtualenv` puis
+
+#+begin_example
+virtualenv myenv
+overlay use myenv/bin/activate.nu
+pip install osmnx
+#+end_example
+
+* Exemples de scripts
+:PROPERTIES:
+:CUSTOM_ID: exemples-de-scripts
+:END:
+** Pandoc sur une liste de fichier
+:PROPERTIES:
+:CUSTOM_ID: pandoc-sur-une-liste-de-fichier
+:END:
+org -> markdown
+
+#+begin_src nu
+ls *.org  | each {|e| pandoc $e.name -o $"($e.name | path parse | get stem).md"}
+#+end_src
+
+** Lister tous les IDs des csv et faire l'intersection avec les ID des pdfs
+:PROPERTIES:
+:CUSTOM_ID: lister-tous-les-ids-des-csv-et-faire-lintersection-avec-les-id-des-pdfs
+:END:
+#+begin_src nu
+ls excel = (ls S:genetique\commun\Centogene_variants\excel | get name | path basename | path parse | get stem | parse "{id}_{s}" | get id)
+let patho = (open patho.csv | get id)
+$excel | append $patho | uniq -d
+#+end_src
+
+** Génerer une liste de fastq en les groupant par nom de dossier
+:PROPERTIES:
+:CUSTOM_ID: génerer-une-liste-de-fastq-en-les-groupant-par-nom-de-dossier
+:END:
+List all fastq, then generate a column containing the file and dirname.
+Groupy by directory, extract record values input a table. Filter folders
+with less than 2 files. Concatenante the files and save the result into
+a txt file (.csv does not work)
+
+#+begin_src sh
+ls fastq/*/*.fastq.gz | select name | insert dir { $in.name | path dirname }  | group-by dir  | values | where ($in | length) > 1 | each { $in.name | str join ',' } | save input.txt
+#+end_src
+
+Version plus évoluée:
+
+#+begin_src sh
+def annotate [] { insert dir { $in.name | path dirname | path basename }  | insert file { $in.name | path basename } | insert id { $in.name | patientID }}
+def patientID [] { path basename | split row '_R' | first }
+def toCSV [d] { $d.name | insert 0 ($d.dir | first) | insert 1 ($d.id | first) | str join ',' }
+
+ls fastq/*/*.fastq.gz | select name | annotate  | group-by dir | values | where ($in | length) > 1 | each { toCSV $in } | save -f input.txt
+#+end_src
+
+Générer une liste de tâches à partir d'un alphabet et d'un index
+
+#+begin_example
+seq char E Z | enumerate | each {|it| t add pro:seedbox.seedhost $"Ajouter ancient torrents ($it.item)" $"wait:+($it.index + 1)d" $"sched:+($it.index + 1)d" }
+#+end_example

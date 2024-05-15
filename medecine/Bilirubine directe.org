@@ -1,0 +1,51 @@
+​#biochimie # Localisation, physiologie
+
+La bilirubine libre est captée par le pôle vasculaire de l'hépatocyte.
+Elle y est conjugée par glucuryonyl-transferiase ou
+bilirubine-UDP-glucuronosyl-transférase. La bilirubine conjuguée est
+ensuite transférée dans la bile via la membrane du canalicule, puis
+sécrétée dans le duodenum par les voies biliaries. Elle est également
+déconjuguée par la flore intestinale (voir fichie bilirubine).
+
+* Principe analytique de mesure
+:PROPERTIES:
+:CUSTOM_ID: principe-analytique-de-mesure
+:END:
+Test colorimétrique par méthode diazo. Mesure par photométrie à 540 nm
+de l'azobilirubine rouge qui est proportionnelle à la concentration en
+bilirubine directe.
+
+* Valeurs de référence [cite:@mcpherson2007]
+:PROPERTIES:
+:CUSTOM_ID: valeurs-de-référence-mcpherson2007
+:END:
+< 5μmol/L
+
+* Principales interactions analytiques
+:PROPERTIES:
+:CUSTOM_ID: principales-interactions-analytiques
+:END:
+- *hémolyse si > 25mg/dL*
+- phénylbutazone (taux très bas)
+- gammapathie IgM (très rare)
+
+* Vigilance pré-analytiques et analytiques
+:PROPERTIES:
+:CUSTOM_ID: vigilance-pré-analytiques-et-analytiques
+:END:
+- tube hépariné (lithium, di- ou tri-potassique)
+- si la concentration en bilirubine totale dépend de la conjuguée, cela
+  peut entrainer une valeur pour la conjugée supérieure à la bilirubine
+  totale
+- une hématocrite élevée peut diminuer les résultats
+
+* Variations [cite:@bonnefont2019explorations]
+:PROPERTIES:
+:CUSTOM_ID: variations-bonnefont2019explorations
+:END:
+- physiologique : possiblement  ≥ 10μmol/L pour le nouveau-né
+  [cite:@soldin2005pediatric]
+- Augmentation pathologique
+  - intra-hépatique (médicament, viral, parasite, cirrhose...)
+  - extra-hépatique (obstruction des voies biliaire : lithiase,
+    compression externe [tumeur pancréas]...)

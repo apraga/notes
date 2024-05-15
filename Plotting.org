@@ -1,0 +1,7 @@
+​#plot
+
+Conclusion: makie pour le moment
+
+- [[file:Gnuplot.md][Gnuplot]]
+- [[file:Makie.md][Makie]]
+- [[file:Vega-lite.md][Vega-lite]]

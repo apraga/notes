@@ -1,0 +1,13 @@
+​#bacterio
+
+** Proteus mirabilis
+:PROPERTIES:
+:CUSTOM_ID: proteus-mirabilis
+:END:
+- Bacille gram négatif, *mobile*, oxydase négatif, nitrate-réductase
+  positive
+- Brun sur milieu chromogène, β-glucuronidase et β-glucosidase négative
+- Désaminase positive, indole négative
+- Sensible antibio actif sur bacille gram négatif
+- Résistance acquise : pénicillinase, BLSE, céphalosporinase de haut
+  niveau, carbapénémase

@@ -1,0 +1,63 @@
+​#nix # Nouveau paquet
+
+https://github.com/NixOS/nixpkgs/blob/master/pkgs/README.md
+
+** Bonnes pratiques
+:PROPERTIES:
+:CUSTOM_ID: bonnes-pratiques
+:END:
+- Formatteur officiel (en cours d'adoption le 28 mars 2024,
+  https://discourse.nixos.org/t/call-for-testing-nix-formatter/39179/5)
+
+#+begin_src sh
+nix profile install nixpkgs#nixfmt-rfc-style
+nixfmt package.nix
+#+end_src
+
+- éviter =rec= : =finalAttrs= plutôt
+  https://nixos.org/manual/nixpkgs/unstable/#mkderivation-recursive-attributes
+- Source
+  - mettre=pname= en dur dans =fetchFromGithub=
+    https://github.com/nix-community/nixpkgs-lint/issues/21
+  - utiliser =hash= plutôt que =sha256=
+    https://nixos.org/manual/nixpkgs/stable/#fetchurl
+  - version = "unstable-YYYY-MM-DD" s'il n'y a pas de version ##
+    Variables
+- nativeBuildInput : si exécuté durant le build (ex: cmake)
+- buildInputs : si utilisé à l'exécution ou ajouté dans la sortie (ex:
+  zlib). Attention, il peut falloir ajouter aux 2 ! ## Tests Les
+  nouveaux paquets sont dans pkg/by-name Tester dans nixpkgs qu'il
+  compile
+
+#+begin_example
+nix-build -A mypackage
+#+end_example
+
+Tester les dépendances
+
+#+begin_example
+nix-shell -p nixpkgs-review --run "nixpkgs-review rev HEAD"
+#+end_example
+
+Regarder les variables d'environement :
+
+#+begin_example
+env
+#+end_example
+
+* Débugger un paquet
+:PROPERTIES:
+:CUSTOM_ID: débugger-un-paquet
+:END:
+[[file:Débugger%20un%20paquet%20nix.md][Débugger un paquet nix]]
+
+* Astuces
+:PROPERTIES:
+:CUSTOM_ID: astuces
+:END:
+** Problèmes de drivers graphiques
+:PROPERTIES:
+:CUSTOM_ID: problèmes-de-drivers-graphiques
+:END:
+Utiliser nixGL https://github.com/nix-community/nixGL si l'on n'utilise
+pas nixos.

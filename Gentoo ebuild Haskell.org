@@ -1,0 +1,18 @@
+​#gentoo #packaging #haskell
+
+Génerer l'ebuild avec hackport
+
+#+begin_src sh
+hackport update
+hackport merge diagrams-graphviz
+#+end_src
+
+Cela va générer le paquet dans dev-haskell (repo haskell) Tester
+l'installation
+
+#+begin_example
+emerge -1 diagrams-graphviz
+#+end_example
+
+Recommandations pour soumettre une pull request
+[[https://github.com/gentoo-haskell/gentoo-haskell/wiki/General-QA-tips]]

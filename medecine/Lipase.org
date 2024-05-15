@@ -1,0 +1,52 @@
+​#biochimie # Localisation, physiologie
+
+Cette enzyme hydrolyse les liaisons ester des triglycérides avec une
+co-lipase et des sels biliaires. Libérée par le tube digestif, elle
+serts à la digestion des graisses.
+
+Elle est présente en faible quantité dans la muqueuse gastrique,
+leucocytes et érythrocytes.
+
+* Production
+:PROPERTIES:
+:CUSTOM_ID: production
+:END:
+Pancréas.
+
+* Principe analytique de mesure
+:PROPERTIES:
+:CUSTOM_ID: principe-analytique-de-mesure
+:END:
+Test colorimétrique enzymatique. L'intensité de coloration est mesurée
+par photométrie et est proportionnelle à l'activité de la lipase.
+
+* Valeurs de référence [cite:@junge1999evaluation]
+:PROPERTIES:
+:CUSTOM_ID: valeurs-de-référence-junge1999evaluation
+:END:
+- adulte : 13-60U/L
+
+* Principales interactions analytiques
+:PROPERTIES:
+:CUSTOM_ID: principales-interactions-analytiques
+:END:
+- gammapathie de type IgM
+
+* Vigilance pré-analytiques et analytiques
+:PROPERTIES:
+:CUSTOM_ID: vigilance-pré-analytiques-et-analytiques
+:END:
+- héparinate de lithium
+
+* Variations [cite:@biomnis]
+:PROPERTIES:
+:CUSTOM_ID: variations-biomnis
+:END:
+- physiologique : légère augmentation après 60 ans
+- pathologique :
+  - pancréatite aigüe
+  - pancréatite chronique, cancers du pancréas
+  - inflammation, obstruction d'organes proches du pancréas (occlusion
+    intestinale haute....), insuffisance rénale
+  - alcool
+  - diabète avec acido-cétose

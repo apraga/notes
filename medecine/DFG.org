@@ -1,0 +1,22 @@
+​#biochimie
+
+La clairance de la créatinine est estimée par le Débit de Filtration
+Glomérulaire. Évaluation DFG à partir de la créatininémie - Cockroft et
+Gault: age, *poids*, créatinimie. Mauvaises performances si obèse, > 75
+ans. - MDRD, CKD-EPI : *sexe*, age, créatininémie, *ethnie*. *pas le
+poids*
+
+-> CKD-EPI. recommandé par la HAS. Aussi plus précise que MDRD pour
+valeur basse
+
+- Schwartz : enfant
+- recos HAS:
+  - MDRD non validé si
+  - CKD-EPI si dosage enzymatique, MDRD si colorimétrique
+
+Attention : formules non utilisable chez l'enfant (formule du Schwartz),
+variation aigüe de la fonction rénale, cirrhose hépatique décompensée,
+gabarit hors norme, amyotrophie important, grossese
+
+Dans ce cas, utiliser clairance urinaire sur urines de 24h = créat
+urinaire*débit/créat sanguine
