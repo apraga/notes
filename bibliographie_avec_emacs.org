@@ -1,4 +1,8 @@
-​#emacs #bibliographie
+:PROPERTIES:
+:ID:       862ae46c-1e76-40d9-bd70-cecc7edf9bed
+:END:
+#+title: Bibliographie avec emacs
+#+filetags: emacs bibligraphie
 
 Note: on utilise maintenant papis en ligne de commande. Sauvegardé pour
 raisons historiques.

@@ -1,5 +1,11 @@
-​#cli ## Astuces Pour se connecter en SSH:
+:PROPERTIES:
+:ID:       74107184-4aa3-449c-91e2-eec474073acb
+:END:
+#+title: Alacritty
+#+filetags: cli
 
+* Astuces
+Pour se connecter en SSH:
 #+begin_src sh
 wget https://raw.githubusercontent.com/alacritty/alacritty/master/extra/alacritty.info && tic -xe alacritty,alacritty-direct alacritty.info && rm alacritty.info
 #+end_src
