@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       0ee703fb-0cfc-47e5-8a73-6bbdf9988bf6
+:END:
+#+title: Biologie médicale
+
+[[id:ef8b8fda-5af4-4ba7-99c1-e1033e452c06][Biochimie]]
+
+[[id:ec2e3357-e955-45cb-8b27-4f20c5f512b2][Bactériologie]]
+[[id:0203dddf-ce06-4742-ad2b-2734d1dc108b][Virologie]]
+
+[[id:5d902597-c774-42de-ae17-cc109ea54fb3][Hématologie]]
+[[id:38d4ec4e-f236-4ceb-bf68-49c5fe376eda][Hémostase]]
