@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       4203549d-b850-4096-af1c-35914da13285
+:END:
+#+title: Thrombocytose
+* Fausses thrombocytoses
+Séparation GR
+
+- plaquette se faire sur la taille -> éléments de grande taille peuvent
+  être comptées comme plaquettes par excès
+- hématies fragmentées : scitzo, microcytes (brulûres sévères font
+  éclater les GR) -> sysmesx en fluorescence est censé les différencier
+- fragments cytopaslmes de leucocytes (blastes, lymphome)
+- cryoglobuline, cryofibrinogène
+- lipides : hyperlipédmie, prélèvement près d'une perfusion lipides
+  (formation de "micelles" lipidiques perturbant la numération)
+- bactéries, candida

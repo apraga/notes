@@ -1,0 +1,55 @@
+:PROPERTIES:
+:ID:       e19d3add-a514-46fe-85d7-aa4010132df2
+:END:
+#+title: Maladies hématologiques
+[[id:2689fdd4-ec08-42a7-9a24-a854c0eb5bbb][Thalassémies]]
+[[id:6b04c875-7af6-4cef-96e6-26304f2641a3][Anémie microcytaire]]
+
+[[id:5cd3fe5b-c63d-430e-90fd-71883df4f1f3][Myélome]]
+[[id:3f199643-1ce7-4f12-8e1d-2f7532fa59ad][Polyglobulie de Vaquez]]
+* Lymphocytes
+- Pancytopénie :
+  - périphérique : hypersplénisme, hémodilutation (auto-immun)
+  - central :
+    - moelle riche : carenceB12/folates, syndrome d'activaition
+      macrophagiques, myélodyspasie, envahissement (leucémie, lymphome)
+    - moelle pauvree : aplasie (chimio, parvoris B19, Fanconi),
+      myélofibrose
+- Hyperlymphocytose : enfant = coqueluche, viral. Adulte = LLC,
+  lymphoprolifératif autre
+- Lymphopénie :
+  - iatrogène (immunosuppresseur, lithium, cortico),
+  - viral, VIH
+  - cancer, lymphome, radiothérapie
+  - auto-immun : lupus, sarcoidose
+  - IRC
+- Polynucléose neutrophile
+  - physiologique (grossesse, effort, post-op)
+  - infection bactérienne
+  - inflammation chronique
+  - nécrose tissulaire aigüe
+  - iatrogène : corticoïdes, lithium, splénectomie
+  - hémopathie avec myélémie
+  - tabac
+  - cancer
+- Neutropénie (< 0.5 G/L)
+  - centrale
+    - iatrogène
+    - infection : typhoïde, brucellose, hépatite virale
+    - aplasie, hémopathie malignes
+  - périphérique : hypersplénisme, trouble margination
+- Monocytose (> 1G/L)
+  - réactionnelle : infection, inflammation (cancer..), régénération
+    médullaire
+  - primitive : leucémie myélomonocytaire chronique/juvénile, leucémie
+    aigüe monoblastique
+- Myélémie : > 2%
+  - transitoire : infection grave, hémolyse, régénération (hémorragie,
+    postchimio)
+  - chronique : SMP, métastase médullaire
+
+* Erythrocytes
+Cf anémie, polyglobulie
+* Plaquettes
+- [[id:4203549d-b850-4096-af1c-35914da13285][Thrombocytose]] : inflammation, carence martiale, splénectomie/asplénie, post-chir, SMP
+- [[id:0ef328ad-22c8-4b16-a525-12d0c5c70d1f][Thrombopénie]]

@@ -4,6 +4,6 @@
 #+title: Hématologie
 
 [[id:333606c5-dc0d-4650-a2cb-932b357eefb7][Physiologie]]
-
+[[id:e19d3add-a514-46fe-85d7-aa4010132df2][Maladies hématologiques]]
 * Techniques
 [[id:64b5fdb6-4674-43fe-8ac7-2015349a680c][Cytométrie en flux]]
