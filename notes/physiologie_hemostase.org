@@ -1,0 +1,56 @@
+:PROPERTIES:
+:ID:       6823fcaf-611a-4a07-963b-8e56e8e5dae7
+:END:
+#+title: Physiologie hémostase
+#+filetags: hémostase
+- Facteurs dépendant vitamine K: II, VII, IX, X
+
+- déficit en fibrinogène : le plus souvent acquis mais congénital
+  possible
+
+* Variation TP, TCA Diminution TP
+[[/images/tp-diminue.png]]
+  Augmentation isolée TCA sans traitement [[/images/tca-diminue.png]]
+  Variations physiologiques
+
+- Grossesse :
+
+  - augmentation facteur VIII, Willebrand *fibrinogène*, diminution XI
+  - augmentation TP (VII, X, fibrinogène)
+
+- Nouveau-né : carence en vitamine K (donc doser TP, TCA)
+
+* Facteurs
+- VIII: 50-150%, évolue parallèlement au willebrand (augmenté grossesse/inflammation mais aussi cirrhose hépatique par synthèse endothéliale)
+- IX : 50-150% : diminué avant 3 mois
+- XI: 60-140% : diminué avec 1 ans, diminué si IHC
+
+* D-dimère
+Produit de dégradation de la fibrine
+
+- augmenté si CIVD
+- bonne VPN pour thrombose/embolie pulmonaire (<450-550)
+
+* Fibrinolyse
+- Dégradation de la fibrine (une fois le caillot stabilisé)
+
+- Fibrinogène -> (thrombine) monomère de fibrine -> (facteur XIIIa) fibrine insoluble -> (plasmine) D-dimère, produit dégradation fibrine
+** Spécificité Plasminogène
+- Activé par t-PA (tissular Plasminogen Activator) et u-PA (urokinase, non fibrinospécifique)
+  - t-PA : exercice, stress, stase veineuse. Soit lié à la fibrine, soit complexe avec PAI(Plasminogen activator inhibitor type)-1 et éliminé par le foie
+- u-PA : protéolyse tissulaire surtout -> dégradation de la matrice extra-cellulaire, activation cytokines+++
+- Digestion de la fibrine par liaison plasminogène et t-PA (plasmine) [NB: l'acide tranexamique inhibe l'intercaction du plasminogène]
+*** Régulation
+- \alpha_2 antiplaslmine : inhibe plasmine libre donc un déficit = hémorragie grave
+- PAI-1 : inhibe t-PA et u-PA (thérapeutique : modification du t-PA recombinant pour le rendre moins sensibleau PAI-1)
+- TAFI (Thrombin activatable fibrinolysis inhibitor) = inhibe liason plasminogène-fibrine
+- fibrine elle-même (rend la réaction spécifique)
+- architecture de la fibrine (plus ou moins résistante à la fibrinolyse)
+
+*** Pathologies
+- hyperfibrinolyse = risque hémorragique :
+  - plasmine libre en circulation (déficit alpha2 antiplamsione, chirurgie, déficit PAI1, certaines leucémines aigües)
+- hypofibrinolyse = risque de thrombose : déficit plasminogène, augmentation PAI1 ### Exploration
+- Global : thromboélastrogramme
+- D-dimères, protéines fibrinolyse
+- Si syndrome hémorragique (chir, post-partum), syndrome de consommation, exclure TVP/EP, thrombose récidivante

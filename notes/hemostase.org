@@ -2,3 +2,7 @@
 :ID:       38d4ec4e-f236-4ceb-bf68-49c5fe376eda
 :END:
 #+title: Hémostase
+
+[[id:6823fcaf-611a-4a07-963b-8e56e8e5dae7][Physiologie hémostase]]
+[[id:6be7a890-1918-4ca8-99d5-5a0ee771fe0a][Techniques d'hémostase]]
+[[id:5c4904c4-2dc2-451a-a382-661a74f23d40][Maladies de l'hémostase]]

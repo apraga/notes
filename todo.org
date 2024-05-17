@@ -1,4 +1,3 @@
-#+title: Projects
 * Recherche
 ** Bisonex
 :PROPERTIES:
@@ -15,9 +14,19 @@
 SCHEDULED: <2024-05-18 Sat>
 /Créé le/ [2024-05-16 Thu 22:32]
 Rien dans les photos
-* Divers
+* Internat
+:PROPERTIES:
+:CATEGORY: internat
+:END:
+** TODO Convertir notes hémato org-mode
+SCHEDULED: <2024-05-17 Fri>
+* Inbox
+:PROPERTIES:
+:CATEGORY: inbox
+:END:
 ** TODO Remboursement Allianz Montbéliard -> Grenoble 2024/0523168
 /Créé le/ [2024-05-16 Thu 22:44]
 2024-03-01
 ** TODO Justificatif de domicile Caisse Épargne Metz
+SCHEDULED: <2024-05-20 Mon>
 /Créé le/ [2024-05-17 Fri 21:32]

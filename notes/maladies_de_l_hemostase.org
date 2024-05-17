@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       5c4904c4-2dc2-451a-a382-661a74f23d40
+:END:
+#+title: Maladies de l'hémostase
+#+filetags: hémostase
+
+[[id:5b1d4635-6943-4e1f-8c93-c1e6c0ba40fb][Maladie de Willebrand]]
