@@ -1,9 +1,6 @@
-* April 29, 2024
-:PROPERTIES:
-:CUSTOM_ID: april-29-2024
-:END:
-On revient au packaging de dragmap. Avec nix-shell dans
-~/code/nixpkgs/dragmap :
+* 2024-04-29
+** 22:00 Packaging de dragmap
+Avec nix-shell dans ~/code/nixpkgs/dragmap :
 
 #+begin_src sh
 making /home/alex/code/nixpkgs/dragmap/source/build/release/align/tests/unit/CigarGtest

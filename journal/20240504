@@ -1,7 +1,5 @@
-** Dragmap :
-:PROPERTIES:
-:CUSTOM_ID: dragmap
-:END:
+* 2024-05-04
+** 22:00 Dragmap
 Correction PR
 
 - compliation ne fonctionne plus avec glibc : explique nixpkgs review.

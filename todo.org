@@ -1,25 +1,23 @@
 #+title: Projects
 * Recherche
-:PROPERTIES:
-:CATEGORY: recherche
-:END:
-* Articles :article:
 ** Bisonex
 :PROPERTIES:
 :CATEGORY: bisonex
 :END:
-*** TODO Packager Tiddlt avec nix
-SCHEDULED: <2024-05-16 Thu>
+*** Articles :article:
+**** TODO Packager Tiddlt avec nix
 /Créé le/ [2024-05-16 Thu 22:39]
 * Voiture
 :PROPERTIES:
 :CATEGORY: voiture
 :END:
 ** TODO Facture contre-visite Mazda5
-SCHEDULED: <2024-05-16 Thu>
+SCHEDULED: <2024-05-18 Sat>
 /Créé le/ [2024-05-16 Thu 22:32]
 Rien dans les photos
 * Divers
-** PROJ Remboursement Allianz Montbéliard -> Grenoble 2024/0523168
+** TODO Remboursement Allianz Montbéliard -> Grenoble 2024/0523168
 /Créé le/ [2024-05-16 Thu 22:44]
 2024-03-01
+** TODO Justificatif de domicile Caisse Épargne Metz
+/Créé le/ [2024-05-17 Fri 21:32]
