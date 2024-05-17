@@ -23,6 +23,3 @@ Rien dans les photos
 ** PROJ Remboursement Allianz Montbéliard -> Grenoble 2024/0523168
 /Créé le/ [2024-05-16 Thu 22:44]
 2024-03-01
-** TODO Importer films org-mode
-SCHEDULED: <2024-05-17 Fri>
-/Créé le/ [2024-05-17 Fri 20:05]
