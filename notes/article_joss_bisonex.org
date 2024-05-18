@@ -1,0 +1,44 @@
+:PROPERTIES:
+:ID:       e2286a36-c6dd-45ae-b887-7feec35aa929
+:END:
+#+title: Article JOSS bisonex
+#+filetags: bisonex recherche article
+
+Avantages:
+- Publication "facile" dans JOSS : 1h max pour écrire les contributions d'après le journal.
+- critère : >= 3 mois de travail.
+- Contributions dans un project acceptés
+- Continuation logique de la thèse
+
+Objectifs :
+- dépendences de sarek
+- fournir les basse de données avec scidataflow (CLI en rust)
+
+Quantité de travail :
+- quelques logiciels restants à packager (deepvariant = difficile par contre)
+- créer un répo pour les /assets/ et mettre en issue
+
+Stratégie
+1. packages nix vu le délai d'acceptation...
+2. repo /assets/
+
+Dépendences
+- [-] Aligneur
+  - [X] (BWA-mem/mem2 : déjà disponibles)
+  - [X] (Sentieon : payant)
+  - [ ] Dragmap
+- [X] mosdepth
+- [-] Appel de variants (constit !)
+  - [X] (CNVkit : déjà disponible)
+  - [ ] Deepvariant
+  - [X] (freebayes : déjà disponible)
+  - [X] GATK HaplotypeCaller: fait
+  - [X] (Manta : déjà disponible)
+  - [X] (mpileup : déjà disponible dans samtools
+  - [X] (Sentieon Haplotyper : payant)
+  - [X] (Strelka2 : déjà disponible)
+  - [ ] Tiddit
+- [-] Annotation
+  - [X] (snpeff : déjà disponible)
+  - [ ] vep : PR soumiss
+- [ ] multiqc : PR soumis

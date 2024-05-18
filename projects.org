@@ -5,17 +5,26 @@
 :END:
 *** Articles :article:
 **** Notes
-- JOSS : packaging dépendences sarek + bases de données avec scidataflow
+-[[id:e2286a36-c6dd-45ae-b887-7feec35aa929][Article JOSS bisonex]]
 **** Tâches
-***** PROJ Dépendences Sarek [0/1]
+***** STRT Dépendences Sarek [0/6]
+****** WAIT Package nix Dragmap
+PR soumis
+****** TODO Package nix Deepvariant
 ****** STRT Package nix Tiddlt
 SCHEDULED: <2024-05-18 Sat>
-Packagé mais manque pysam exécution...
+- tiddit package ok
+- Manque fermi2 : ajouteer dans wrapper
 /Créé le/ [2024-05-16 Thu 22:39]
 ******* DONE Package nix Fermi2
   /Entered on/  [2024-05-18 Sat 20:48]
 ******* DONE Package nix bwt2
   /Entered on/  [2024-05-18 Sat 20:49]
+****** WAIT Package nix vep
+PR soumis
+****** WAIT Package nix multiqc
+PR soumis
+
 ***** PROJ Ressoures génétiques avec scidataflow [0/0]
 * Japonais
 :PROPERTIES:
