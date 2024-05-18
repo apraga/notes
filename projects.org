@@ -4,12 +4,19 @@
 :CATEGORY: bisonex
 :END:
 *** Articles :article:
-**** TODO Package nix Tiddlt
+**** Notes
+- JOSS : packaging dépendences sarek + bases de données avec scidataflow
+**** Tâches
+***** PROJ Dépendences Sarek [0/1]
+****** STRT Package nix Tiddlt
+SCHEDULED: <2024-05-18 Sat>
+Packagé mais manque pysam exécution...
 /Créé le/ [2024-05-16 Thu 22:39]
-***** DONE Package nix Fermi2
+******* DONE Package nix Fermi2
   /Entered on/  [2024-05-18 Sat 20:48]
-***** DONE Package nix bwt2
+******* DONE Package nix bwt2
   /Entered on/  [2024-05-18 Sat 20:49]
+***** PROJ Ressoures génétiques avec scidataflow [0/0]
 * Japonais
 :PROPERTIES:
 :CATEGORY: japonais
@@ -27,10 +34,12 @@ SCHEDULED: <2024-05-18 Sat .+1d>
 :PROPERTIES:
 :CATEGORY: voiture
 :END:
-** TODO Facture contre-visite Mazda5
-SCHEDULED: <2024-05-18 Sat>
+** WAIT Facture contre-visite Mazda5
+SCHEDULED: <2024-05-22 Wed>
 /Créé le/ [2024-05-16 Thu 22:32]
-Rien dans les photos
+- Rien dans les photos
+- Pas dans les papiers Allondaz
+- Attente facture renvoyée par courrier
 * Internat
 :PROPERTIES:
 :CATEGORY: internat

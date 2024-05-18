@@ -1,8 +1,11 @@
-​#nix #python # Projet en Python
+:PROPERTIES:
+:ID:       438db46b-91c4-4d76-af01-2c66c7f81381
+:END:
+#+title: Environnement python avec nix
+#+filetags: #nix python
 
-Instructions simples ici :
-[[https://nixos.wiki/wiki/Python#Package_and_development_shell_for_a_python_project]]
-
+* Projet en Python
+[[https://nixos.wiki/wiki/Python#Package_and_development_shell_for_a_python_project][Instructions simples ici]]
 Il faut donc setup.py:
 
 #+begin_src python
@@ -49,9 +52,6 @@ result/bin/lol.py
 #+end_example
 
 * Python libraries
-:PROPERTIES:
-:CUSTOM_ID: python-libraries
-:END:
 On package l'exécutable python avec les libraries. Mettre dans
 =default.nix=
 
