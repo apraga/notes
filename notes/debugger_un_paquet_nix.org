@@ -1,6 +1,10 @@
-​#nix
+:PROPERTIES:
+:ID:       56f7a57a-1807-4d72-abb2-6420eab119c5
+:END:
+#+title: Débugger un paquet nix
+​#+filetags: nix
 
-** 1. Démarrer un shell.
+* 1. Démarrer un shell.
 :PROPERTIES:
 :CUSTOM_ID: démarrer-un-shell.
 :END:
@@ -31,7 +35,7 @@ Avec Flakes
 nix develop .#my-package
 #+end_src
 
-** 2. Débug
+* 2. Débug
 :PROPERTIES:
 :CUSTOM_ID: débug
 :END:
@@ -66,7 +70,7 @@ NB: on peut faire aussi
 [nix-shell]$ eval ${buildPhase:-buildPhase}
 #+end_src
 
-** Ressources
+* Ressources
 :PROPERTIES:
 :CUSTOM_ID: ressources
 :END:

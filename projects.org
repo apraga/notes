@@ -1,0 +1,39 @@
+* Recherche
+** Bisonex
+:PROPERTIES:
+:CATEGORY: bisonex
+:END:
+*** Articles :article:
+**** TODO Package nix Tiddlt
+/Créé le/ [2024-05-16 Thu 22:39]
+***** DONE Package nix Fermi2
+  /Entered on/  [2024-05-18 Sat 20:48]
+***** DONE Package nix bwt2
+  /Entered on/  [2024-05-18 Sat 20:49]
+* Japonais
+:PROPERTIES:
+:CATEGORY: japonais
+:END:
+** Intermediate Japanese
+SCHEDULED: <2024-05-18 Sat .+1d>
+:PROPERTIES:
+:STYLE:    habit
+:LAST_REPEAT: [2024-05-18 Sat 14:47]
+:END:
+- State "DONE"       from ""           [2024-05-17 Fri 14:47]
+- State "DONE"       from ""           [2024-05-16 Thu 14:47]
+- State "DONE"       from ""           [2024-05-15 Wed 14:47]
+* Voiture
+:PROPERTIES:
+:CATEGORY: voiture
+:END:
+** TODO Facture contre-visite Mazda5
+SCHEDULED: <2024-05-18 Sat>
+/Créé le/ [2024-05-16 Thu 22:32]
+Rien dans les photos
+* Internat
+:PROPERTIES:
+:CATEGORY: internat
+:END:
+** DONE Convertir notes hémato org-mode
+SCHEDULED: <2024-05-17 Fri>
