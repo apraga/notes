@@ -6,3 +6,16 @@
 SCHEDULED: <2024-05-20 Mon>
 /Créé le/ [2024-05-17 Fri 21:32]
 * Inbox
+* TODO Recoudre pantalon rouge
+SCHEDULED: <2024-05-20 Mon>
+/Entered on/ [2024-05-19 Sun 13:23]
+* TODO Changer adresse banque pour Allondaz
+SCHEDULED: <2024-05-20 Mon>
+/Entered on/ [2024-05-19 Sun 13:24]
+* TODO Soumission JCADD 2024
+SCHEDULED: <2024-05-27 Mon>
+/Entered on/ [2024-05-19 Sun 13:24]
+* TODO Convertir notes bactério org-mode
+/Entered on/ [2024-05-19 Sun 13:29]
+* TODO Converter notes biochimie org-mode
+/Entered on/ [2024-05-19 Sun 13:29]
