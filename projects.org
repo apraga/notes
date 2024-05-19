@@ -4,38 +4,49 @@
 :CATEGORY: bisonex
 :END:
 *** Articles :article:
-**** Notes
--[[id:e2286a36-c6dd-45ae-b887-7feec35aa929][Article JOSS bisonex]]
-**** Tâches
-***** STRT Dépendences Sarek [0/6]
-****** WAIT Package nix Dragmap
+**** STRT Dépendences Sarek [0/6]
+***** WAIT Package nix Dragmap
 PR soumis
-****** TODO Package nix Deepvariant
-****** STRT Package nix Tiddlt
+***** TODO Package nix Deepvariant
+***** STRT Package nix Tiddlt
 SCHEDULED: <2024-05-18 Sat>
 - tiddit package ok
 - Manque fermi2 : ajouteer dans wrapper
 /Créé le/ [2024-05-16 Thu 22:39]
-******* DONE Package nix Fermi2
+****** DONE Package nix Fermi2
   /Entered on/  [2024-05-18 Sat 20:48]
-******* DONE Package nix bwt2
+****** DONE Package nix bwt2
   /Entered on/  [2024-05-18 Sat 20:49]
-****** WAIT Package nix vep
+***** WAIT Package nix vep
 PR soumis
-****** WAIT Package nix multiqc
+***** WAIT Package nix multiqc
 PR soumis
 
-***** PROJ Ressoures génétiques avec scidataflow [0/0]
+**** PROJ Ressoures génétiques avec scidataflow [0/0]
+***** genome
+***** dbsnp
+***** clinvar
+** NF1
+:PROPERTIES:
+:CATEGORY: nf1
+:END:
+*** TODO Correction juliette article
+SCHEDULED: <2024-05-21 Tue>
+/Entered on/ [2024-05-19 Sun 13:21]
+*** TODO Re-soumettre article pediatrics
+DEADLINE: <2024-05-30 Thu>
+/Entered on/ [2024-05-19 Sun 13:22]
 * Japonais
 :PROPERTIES:
 :CATEGORY: japonais
 :END:
 ** Intermediate Japanese
-SCHEDULED: <2024-05-18 Sat .+1d>
+SCHEDULED: <2024-05-19 Sun .+1d>
 :PROPERTIES:
 :STYLE:    habit
 :LAST_REPEAT: [2024-05-18 Sat 14:47]
 :END:
+- State "DONE"       from ""           [2024-05-18 Sat 14:47]
 - State "DONE"       from ""           [2024-05-17 Fri 14:47]
 - State "DONE"       from ""           [2024-05-16 Thu 14:47]
 - State "DONE"       from ""           [2024-05-15 Wed 14:47]

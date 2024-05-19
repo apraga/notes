@@ -1,17 +1,21 @@
-​#bisonex #articles # JOSS Objectifs: - fournir dépendences de sarek
-/constit/ - fournir données de réference humaine (génome, dbsnp) avec
-scidataflow
-
-** Dépendences dans nix
 :PROPERTIES:
-:CUSTOM_ID: dépendences-dans-nix
+:ID:       185fcc2d-76e8-4de4-a056-14e2988d1061
 :END:
-- [ ] Aligneur
+#+title: Articles bisonex
+#filetags: bisonex articles
+
+* JOSS
+Objectifs:
+- fournir dépendences de sarek /constit/
+- fournir données de réference humaine (génome, dbsnp)
+Comment : nix (dépendences), scidataflow (données)
+** Dépendences dans nix
+- [-] Aligneur
   - [X] (BWA-mem/mem2 : déjà disponibles)
   - [X] (Sentieon : payant)
   - [ ] Dragmap : PR soumis
 - [X] mosdepth
-- [ ] Appel de variants (constit !)
+- [-] Appel de variants (constit !)
   - [X] (CNVkit : déjà disponible)
   - [ ] [[Packaging DeepVariant]]
   - [X] (freebayes : déjà disponible)
@@ -21,7 +25,7 @@ scidataflow
   - [X] (Sentieon Haplotyper : payant)
   - [X] (Strelka2 : déjà disponible)
   - [ ] [[Packaging TIDDIT]]
-- [ ] Annotation
+- [-] Annotation
   - [X] (snpeff : déjà disponible)
-  - [ ] vep : PR soumiss
+  - [ ] vep : PR soumis
 - [ ] multiqc
