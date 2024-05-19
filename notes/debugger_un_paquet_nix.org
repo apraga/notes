@@ -5,13 +5,7 @@
 ​#+filetags: nix
 
 * 1. Démarrer un shell.
-:PROPERTIES:
-:CUSTOM_ID: démarrer-un-shell.
-:END:
 *** Nixpkgs
-:PROPERTIES:
-:CUSTOM_ID: nixpkgs
-:END:
 #+begin_src sh
 cd nixpkgs
 mkdir lol
@@ -20,9 +14,6 @@ nix-shell ../ -A kent
 #+end_src
 
 *** Paquet local
-:PROPERTIES:
-:CUSTOM_ID: paquet-local
-:END:
 Sans flakes
 
 #+begin_src sh
@@ -36,9 +27,6 @@ nix develop .#my-package
 #+end_src
 
 * 2. Débug
-:PROPERTIES:
-:CUSTOM_ID: débug
-:END:
 Le plus simple est d'utiliser genericBuild avec les différentes phases,
 exemple :
 
@@ -71,9 +59,6 @@ NB: on peut faire aussi
 #+end_src
 
 * Ressources
-:PROPERTIES:
-:CUSTOM_ID: ressources
-:END:
 - [[https://nixos.wiki/wiki/Nixpkgs/Create_and_debug_packages][Source]]
 - [[https://nixos.wiki/wiki/Packaging/Tutorial]]
 - [[[#nixpkgs][nixpkgs]]]

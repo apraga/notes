@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       baeadc69-3352-4f3f-8d87-0b74ad9c920f
+:END:
+#+title: Fichiers BAM
+#+filetags: bioinfo
+
+* Astuces
+** Couper un BAM par chromosome
+#+begin_src sh
+ bamtools split -in 2200519525-63060439-GRCh38.recal.bam -reference
+#+end_src
+*Attention* Ne pas utiliser =samtools view= peut causer des soucis car les @SQ vont contenire des références aux autres chromosomes
+
+** Convertir un SAM en BAM
+#+begin_src sh
+samtools view test.sam -o test.bam
+#+end_src

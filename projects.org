@@ -4,28 +4,25 @@
 :CATEGORY: bisonex
 :END:
 *** Articles :article:
-**** STRT Dépendences Sarek [0/6]
-***** WAIT Package nix Dragmap
+**** STRT Dépendences Sarek [0/5]
+***** WAIT Package nix Dragmp
 PR soumis
 ***** TODO Package nix Deepvariant
-***** STRT Package nix Tiddlt
-SCHEDULED: <2024-05-18 Sat>
-- tiddit package ok
-- Manque fermi2 : ajouteer dans wrapper
+***** WAIT [[file:~/code/nixpkgs/pkgs/by-name/ti/tiddit/package.nix::{][Package nix Tiddit]] : [[https://github.com/NixOS/nixpkgs/pull/312995][PR]]
 /Créé le/ [2024-05-16 Thu 22:39]
 ****** DONE Package nix Fermi2
   /Entered on/  [2024-05-18 Sat 20:48]
 ****** DONE Package nix bwt2
   /Entered on/  [2024-05-18 Sat 20:49]
-***** WAIT Package nix vep
-PR soumis
-***** WAIT Package nix multiqc
-PR soumis
-
+***** WAIT Package nix vep : PR
+***** WAIT Package nix multiqc : PR
 **** PROJ Ressoures génétiques avec scidataflow [0/0]
-***** genome
+***** genome hg38 + hg19
 ***** dbsnp
 ***** clinvar
+*** TODO Soumission JCADD 2024
+SCHEDULED: <2024-05-27 Mon>
+/Entered on/ [2024-05-19 Sun 13:24]
 ** NF1
 :PROPERTIES:
 :CATEGORY: nf1
@@ -50,6 +47,8 @@ SCHEDULED: <2024-05-19 Sun .+1d>
 - State "DONE"       from ""           [2024-05-17 Fri 14:47]
 - State "DONE"       from ""           [2024-05-16 Thu 14:47]
 - State "DONE"       from ""           [2024-05-15 Wed 14:47]
+** DONE Payer leçon aya <2024-05-19 Sun>
+/Entered on/ [2024-05-19 Sun 23:02]
 * Voiture
 :PROPERTIES:
 :CATEGORY: voiture
@@ -66,3 +65,36 @@ SCHEDULED: <2024-05-22 Wed>
 :END:
 ** DONE Convertir notes hémato org-mode
 SCHEDULED: <2024-05-17 Fri>
+** DONE Contacter DAM pour changement d'adresse
+SCHEDULED: <2024-05-19 Sun>
+/Entered on/ [2024-05-19 Sun 13:56]
+
+** TODO Convertir notes bactério org-mode
+/Entered on/ [2024-05-19 Sun 13:29]
+** TODO Converter notes biochimie org-mode
+/Entered on/ [2024-05-19 Sun 13:29]
+* Maison
+:PROPERTIES:
+:CATEGORY: maison
+:END:
+** TODO Contacter RED pour changer adresse sur facture
+SCHEDULED: <2024-05-22 Wed>
+/Entered on/ [2024-05-19 Sun 13:56]
+* Divers
+:PROPERTIES:
+:CATEGORY: divers
+:END:
+** TODO Remboursement Allianz Montbéliard -> Grenoble 2024/0523168
+/Créé le/ [2024-05-16 Thu 22:44]
+2024-03-01
+** TODO Justificatif de domicile Caisse Épargne Metz
+SCHEDULED: <2024-05-20 Mon>
+/Créé le/ [2024-05-17 Fri 21:32]
+** TODO Recoudre pantalon rouge
+SCHEDULED: <2024-05-20 Mon>
+/Entered on/ [2024-05-19 Sun 13:23]
+** TODO Changer adresse banque pour Allondaz
+SCHEDULED: <2024-05-20 Mon>
+/Entered on/ [2024-05-19 Sun 13:24]
+
+* Nix

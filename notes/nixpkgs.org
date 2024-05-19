@@ -39,8 +39,7 @@ Regarder les variables d'environement :
 env
 #+end_src sh
 
-* Débugger un paquet
-[[id:56f7a57a-1807-4d72-abb2-6420eab119c5][Débugger un paquet nix]]
+* [[id:56f7a57a-1807-4d72-abb2-6420eab119c5][Débugger un paquet nix]]
 * Astuces
 ** Problèmes de drivers graphiques
 Utiliser [[https://github.com/nix-community/nixGL][nixGL]] si l'on n'utilise pas nixos.

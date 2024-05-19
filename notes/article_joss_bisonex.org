@@ -22,7 +22,7 @@ Stratégie
 1. packages nix vu le délai d'acceptation...
 2. repo /assets/
 
-Dépendences
+* Dépendences avec Nix
 - [-] Aligneur
   - [X] (BWA-mem/mem2 : déjà disponibles)
   - [X] (Sentieon : payant)
@@ -42,3 +42,13 @@ Dépendences
   - [X] (snpeff : déjà disponible)
   - [ ] vep : PR soumiss
 - [ ] multiqc : PR soumis
+
+* Assets avec scidataflow
+Problèmes :
+- pull sur seulement un sous-dossier (à implémenter)
+- préparer les données : script bash ?
+  - extraire fna.gz -> fna
+   #+begin_src sh
+find . -name *.fna.gz -exec gunzip {} \;
+find . -name *.bwa_index.tar.gz -exec tar xvzf {} \;
+   #+end_src
