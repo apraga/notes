@@ -1,17 +1,11 @@
-+++ title = "Japonais" date = 2021-09-30 +++
+#+title: Japonais
 
 * 2021-09-30 Aya-sensei : Intro
-:PROPERTIES:
-:CUSTOM_ID: aya-sensei-intro
-:END:
+
 * 2021-10-08 Aya-sensei : Leçon 9 (JFBP II)
-:PROPERTIES:
-:CUSTOM_ID: aya-sensei-leçon-9-jfbp-ii
-:END:
+
 ** Vocabulaire
-:PROPERTIES:
-:CUSTOM_ID: vocabulaire
-:END:
+
 - 友人（ゆうじん）: ami
 - 募集（ぼしゅう）: recruter
 - 経験（けいけん）: expérience
@@ -20,24 +14,16 @@
 - 医大 （いだい）: faculté de médecine
 
 ** Grammaire
-:PROPERTIES:
-:CUSTOM_ID: grammaire
-:END:
+
 *** Modifier avec des clauses
-:PROPERTIES:
-:CUSTOM_ID: modifier-avec-des-clauses
-:END:
+
 - 雨ではない日: un jour sans pluie
 - 経験が長い人: une personne avec beaucoup d'expérience
 
 * 2021-10-15 Leçon 6 (JFBP II)
-:PROPERTIES:
-:CUSTOM_ID: leçon-6-jfbp-ii
-:END:
+
 ** Vocabulaire
-:PROPERTIES:
-:CUSTOM_ID: vocabulaire-1
-:END:
+
 - 顔色: visage (ex: 顔色がよくありませんんね = tu n'as pas l'air bien)
 - 膝（ひざ）: genou
 - 蜂蜜（はちみつ）: miel
@@ -46,13 +32,9 @@
   pouvoir)
 
 ** Grammaire
-:PROPERTIES:
-:CUSTOM_ID: grammaire-1
-:END:
+
 *** Adverbes
-:PROPERTIES:
-:CUSTOM_ID: adverbes
-:END:
+
 - 早く起きました
 - ーてきます: Partir faire quelque chose et revenir rapidement
 - 本を借りてきて
@@ -63,13 +45,9 @@
 - 煙草(たばこ)を吸わないほうがいいですよ
 
 * 2021-10-21 Leçon 3
-:PROPERTIES:
-:CUSTOM_ID: leçon-3
-:END:
+
 ** Vocabulaire
-:PROPERTIES:
-:CUSTOM_ID: vocabulaire-2
-:END:
+
 - 頭(あたま)/歯/喉 がいたい(あたま): mal à la tête/dent/gorge
 - 気分(きぶん)/調子(ちょうし) がわるいんです: je ne me sens pas très
   bien (調子 semble être plus général) => おなかの調子がわるいんです
@@ -91,9 +69,7 @@
 ​## Grammaire
 
 *** ーていません: Pas encore:
-:PROPERTIES:
-:CUSTOM_ID: ーていません-pas-encore
-:END:
+
 まだ書いていません (je suis en train) レポートは書きません (je ne le
 ferais pas [c'est facultatif !])
 
@@ -102,9 +78,7 @@ ferais pas [c'est facultatif !])
 まだ書いていないんです (je suis en train)
 
 * 2021-11-06 Quizz + Leçon 7
-:PROPERTIES:
-:CUSTOM_ID: quizz-leçon-7
-:END:
+
 Solution du quizz
 
 I. 1. に 2. に 3. に 4. が 5. で(?) II. 1. これから 2. そろそろ (まだ =
@@ -112,9 +86,7 @@ OK) まだ 3. 実は これから III. 1. もってくる+んです。2。帰っ
 買った
 
 ** Vocabulaire
-:PROPERTIES:
-:CUSTOM_ID: vocabulaire-3
-:END:
+
 - さっき: il y a un moment
 
 - こんど: cette fois
@@ -147,20 +119,14 @@ OK) まだ 3. 実は これから III. 1. もってくる+んです。2。帰っ
 - ポスターを貼る（はる）: accrocher un poster
 
 ** Grammaire
-:PROPERTIES:
-:CUSTOM_ID: grammaire-2
-:END:
+
 - V + 前に（まえ) : avant de ~ Attention, pas de passé ni de négatif !
   Ex: 日本に来る前に、日本語の勉強を始めました ~ てから: après
 
 * 2021-11-13 Fin leçon 7
-:PROPERTIES:
-:CUSTOM_ID: fin-leçon-7
-:END:
+
 ** Vocabulaire
-:PROPERTIES:
-:CUSTOM_ID: vocabulaire-4
-:END:
+
 - 卒業(そつぎょう）
 - X と遊び: jouer avec quelqu'un (ou un animal) Mais X で遊び: jouer
   avec un objet
@@ -190,13 +156,9 @@ OK) まだ 3. 実は これから III. 1. もってくる+んです。2。帰っ
   ３さいのとき、: quand j'avais 3 ans
 
 * 2021-11-27 Fin leçon 7
-:PROPERTIES:
-:CUSTOM_ID: fin-leçon-7-1
-:END:
+
 ** Vocabulaire
-:PROPERTIES:
-:CUSTOM_ID: vocabulaire-5
-:END:
+
 - 熊に注意（くまにちゅうい）: attention à l'ours !
 
 - 転職（てんしょく） changer de travail
@@ -236,21 +198,15 @@ OK) まだ 3. 実は これから III. 1. もってくる+んです。2。帰っ
 - 営業部（えいぎょうぶ）: le département des ventes d'une entreprise
 
 ** Grammaire
-:PROPERTIES:
-:CUSTOM_ID: grammaire-3
-:END:
+
 - bien que : ときも、～ ex: bien que j'aie attrapé froid, je dois
   travailler 風邪を引くときも、働かなければなりません (NB: il y a aussi
   のに et ても)
 
 * 2021-12-11 Leçon 8
-:PROPERTIES:
-:CUSTOM_ID: leçon-8
-:END:
+
 ** Vocabulaire
-:PROPERTIES:
-:CUSTOM_ID: vocabulaire-6
-:END:
+
 - 塾（じゅく）: cours du soir au Japon
 - 辺り（あたり）: (dans) le voisinage
 - ずいぶん: très
@@ -266,9 +222,7 @@ OK) まだ 3. 実は これから III. 1. もってくる+んです。2。帰っ
 - 小さなマラソン：course
 
 ** Grammaire
-:PROPERTIES:
-:CUSTOM_ID: grammaire-4
-:END:
+
 - ～になります Ajectif en -i : remplacer i par く+ なります
   忙しい　忙し　くなります（いそがしい） Ajectif en -na et nom : ajout
   de に 有名になります 教師になりたい（きょうし）
@@ -277,13 +231,9 @@ OK) まだ 3. 実は これから III. 1. もってくる+んです。2。帰っ
 - ここに来るとき: sur le chemin, en venant ici
 
 * 2021-12-18 Leçon 9
-:PROPERTIES:
-:CUSTOM_ID: leçon-9
-:END:
+
 ** Vocabulaire
-:PROPERTIES:
-:CUSTOM_ID: vocabulaire-7
-:END:
+
 - 預かる（あずかる）：garder, s'occuper de
 - 設計図（せっけいず）：plan (de construction)
 - 吹き出す（ふきだす）：exploser, éparpiller
@@ -296,9 +246,7 @@ OK) まだ 3. 実は これから III. 1. もってくる+んです。2。帰っ
   qui vas-tu passer Noel ?
 
 ** Grammaire
-:PROPERTIES:
-:CUSTOM_ID: grammaire-5
-:END:
+
 - A とき、B: "quand" A, B (A = forme du dictionnaire) Si A est au passé,
   A est "fini". Sinon. A est en cours Cela explique les différentes
   nuances :
@@ -321,13 +269,9 @@ OK) まだ 3. 実は これから III. 1. もってくる+んです。2。帰っ
   ~林さんは教徒に行くといっていました = indirecte
 
 * 2022-01-08 Lecon 9
-:PROPERTIES:
-:CUSTOM_ID: lecon-9
-:END:
+
 ** Vocabulaire
-:PROPERTIES:
-:CUSTOM_ID: vocabulaire-8
-:END:
+
 - 陰性（いんせい）: négatif (test, ex: covid)
 - 陽性 （ようせい）: positif (test, ex: covid)
 - 駅（えき）: gare peut aussi être utilisée pour le métro, si le
@@ -357,9 +301,7 @@ OK) まだ 3. 実は これから III. 1. もってくる+んです。2。帰っ
   étroit
 
 ** Grammaire
-:PROPERTIES:
-:CUSTOM_ID: grammaire-7
-:END:
+
 - ～ と思います:je pense que X Verbe と思います na-ajectif + だ/ではない
   と思います i-ajectif と思います A は～と思っています: A pense que X
   (attention !)
@@ -367,70 +309,48 @@ OK) まだ 3. 実は これから III. 1. もってくる+んです。2。帰っ
   négatif)
 
 * 2022-01-16 Lecon 9
-:PROPERTIES:
-:CUSTOM_ID: lecon-9-1
-:END:
+
 ** Vocabulaire (cf Anki)
-:PROPERTIES:
-:CUSTOM_ID: vocabulaire-cf-anki
-:END:
+
 ** Grammaire
-:PROPERTIES:
-:CUSTOM_ID: grammaire-8
-:END:
+
 Transforner une phrase en nom avec の
 明日の会議にでるのは、かどうさんです
 
 Attention, il faut mieux mettre が ミルズさんが出張に行くのは　来週です
 
 * 2022-01-29 Leçon 9
-:PROPERTIES:
-:CUSTOM_ID: leçon-9-1
-:END:
+
 ** Vocabulaire
-:PROPERTIES:
-:CUSTOM_ID: vocabulaire-9
-:END:
+
 Cf Anki
 
 ** Grammaire
-:PROPERTIES:
-:CUSTOM_ID: grammaire-9
-:END:
+
 Nominalisation (suite) Rappel : マリアさんは出張に行くのは来週です On
 peut également utiliser のが (qui s'apparente à　ことがあります)
 子供ど遊ぶのがすきです お菓子を作るのがじょうずです ou のを selon le
 bsoin お金を払うのをわすれました メール返事だすのをわれれました
 
 * 2022-02-13 Leçon 10
-:PROPERTIES:
-:CUSTOM_ID: leçon-10
-:END:
+
 - ので = "donc". Comme から mais plus poli - -いので - nom/adjectif en
 - na+なので On utilie la plain form ! - ありません->ない
 - お金がないので、何も買いません - です->な - でした->だった
 - 雨だったので、どこにもでかけませんでした
 
 * 2022-02-27 Lecon 10
-:PROPERTIES:
-:CUSTOM_ID: lecon-10
-:END:
+
 Discussion surtout + ので
 
 * 2022-03-20 Leçon 10
-:PROPERTIES:
-:CUSTOM_ID: leçon-10-1
-:END:
+
 ** Grammaire
-:PROPERTIES:
-:CUSTOM_ID: grammaire-10
-:END:
+
 Potentialité: on peut utiliser できます ou la forme potentielle
 
 *** forme potentielle
-:PROPERTIES:
-:CUSTOM_ID: forme-potentielle
-:END:
+
 - Verbes réguliers I : う->　える
   - 合う　ー＞会える
   - 話す　ー＞話せる
@@ -440,27 +360,19 @@ Potentialité: on peut utiliser できます ou la forme potentielle
 - irréguliers 来るー＞来られる（こ） する　ー＞できる
 
 * 2022-03-20 Leçon 10
-:PROPERTIES:
-:CUSTOM_ID: leçon-10-2
-:END:
+
 Discussion surtout
 
 * 2022-03-27 Leçon 10
-:PROPERTIES:
-:CUSTOM_ID: leçon-10-3
-:END:
+
 Vocab surtout
 
 * 2022-04-10 Leçon 11
-:PROPERTIES:
-:CUSTOM_ID: leçon-11
-:END:
+
 Discussion surtout
 
 ** Grammaire
-:PROPERTIES:
-:CUSTOM_ID: grammaire-11
-:END:
+
 X よう: "volitionel" = "faisons X"
 
 - る de la forme du dictionnaire -> よう ex: 見るー＞見よう
@@ -469,25 +381,17 @@ X よう: "volitionel" = "faisons X"
 X ようと思います: je pense faire X ex:
 
 * 2022-04-24 Leçon 11
-:PROPERTIES:
-:CUSTOM_ID: leçon-11-1
-:END:
+
 ** Grammaire
-:PROPERTIES:
-:CUSTOM_ID: grammaire-12
-:END:
+
 ことになりました : il a été décidé pour moi (c'est un évènement unique).
 Ex: il a été décidé que je déménage ことになっている : il est convenu =
 c'est une habitude ! Ex: il est convenu de ne pas fumer ici
 
 * 2022-06-12
-:PROPERTIES:
-:CUSTOM_ID: section
-:END:
+
 ** Grammaire : questions indirecte
-:PROPERTIES:
-:CUSTOM_ID: grammaire-questions-indirecte
-:END:
+
 Je ne sais pas si
 
 - quesion oui/non : verbe/ajectif + どうか
@@ -505,9 +409,7 @@ Il y a une subtile différence entre どうか et か : premier = "whether",
 second = si
 
 * 2023-02-26 - Aya-sensei : discussion
-:PROPERTIES:
-:CUSTOM_ID: aya-sensei-discussion
-:END:
+
 Grammaire -ta koto ga arimasu : déjà fait
 
 - ちゃんと : suffisamment
@@ -520,13 +422,9 @@ Grammaire -ta koto ga arimasu : déjà fait
 - はんしょくき 繁殖期 saison de reproduction
 
 * 2023-03-12 - Aya-sensei: lecmon 11
-:PROPERTIES:
-:CUSTOM_ID: aya-sensei-lecmon-11
-:END:
+
 ** Vocabulaire
-:PROPERTIES:
-:CUSTOM_ID: vocabulaire-10
-:END:
+
 - zenkai : la dernière fois
 - compter des verre = "pai" ippai = 1 verre, nippai = 2 verres
 - saikin = bactéries
@@ -537,21 +435,15 @@ Grammaire -ta koto ga arimasu : déjà fait
 - けっか 結果 : hépatite B TODO: vocab sur skype + skilled
 
 ** Grammaire
-:PROPERTIES:
-:CUSTOM_ID: grammaire-13
-:END:
+
 forme en -ou + to omoimasu
 
 nakerebanarimasen NB: -nasai = injonction (bossy !)
 
 * 2023-03-25
-:PROPERTIES:
-:CUSTOM_ID: section-1
-:END:
+
 ** Vocabulaire
-:PROPERTIES:
-:CUSTOM_ID: vocabulaire-11
-:END:
+
 - 雪は山の上に行かないとないですか = il faut aller en haut de la
   montagne pour avoir de la neighe (double négatiionidiomatic)
 - 夜勤 j（やきん） = garde (tochaku = plutôt pour les gens de la
@@ -576,9 +468,7 @@ nakerebanarimasen NB: -nasai = injonction (bossy !)
 - しんぱい[な]
 
 ** Grammaire
-:PROPERTIES:
-:CUSTOM_ID: grammaire-14
-:END:
+
 -te vs -node -te = pour décrire un sentiment, une sensation -node =
 demander une permission, être poli
 
@@ -588,13 +478,9 @@ These work with feeling+て (giving a reason) as it's followed by
 potential verbs.
 
 * 2023-04-02 Listening comprehension 「日本のおもしろい経験」
-:PROPERTIES:
-:CUSTOM_ID: listening-comprehension-日本のおもしろい経験
-:END:
+
 ** Vocabulaire
-:PROPERTIES:
-:CUSTOM_ID: vocabulaire-12
-:END:
+
 - 経験(けいけん) expérience
 - 特に(とくに) particulièrement
 - 珍しい(めずらしい) rare
@@ -613,9 +499,7 @@ potential verbs.
 - 蜘蛛(くも ) : araignée
 
 * 2023-04-11 Tue> Listening comprehension 「満員電車」
-:PROPERTIES:
-:CUSTOM_ID: tue-listening-comprehension-満員電車
-:END:
+
 Travail sur comprehension
 
 - 満員電車（まんいんでんしゃ）: un train bondé (NB: bondé peut
@@ -641,13 +525,9 @@ Note: 「いつも同じ電車に乗ります」= Always, I ride on the same tra
 le premier = plus l'accent sur "toujours"
 
 * 2023-04-22
-:PROPERTIES:
-:CUSTOM_ID: section-2
-:END:
+
 ** Vocabulaire
-:PROPERTIES:
-:CUSTOM_ID: vocabulaire-13
-:END:
+
 - 泊まる(と) : rester (à un hôtel)
 - 翻訳（ほんやく）: traduction
 - 時給（じきゅう）: salaire horaire
@@ -662,20 +542,14 @@ le premier = plus l'accent sur "toujours"
   いしゃ　ひんけつ　けんさ　ぶんせき
 
 ** Grammaire
-:PROPERTIES:
-:CUSTOM_ID: grammaire-15
-:END:
+
 Voir /Grammaire : questions indirecte/ Prochaine leçon : travailler
 questions indirecte
 
 * 2023-05-06
-:PROPERTIES:
-:CUSTOM_ID: section-3
-:END:
+
 ** Vocabulaire
-:PROPERTIES:
-:CUSTOM_ID: vocabulaire-14
-:END:
+
 - 助けられるかどうかわかりませんでした : je ne sais pas si je peux aider
   (attention à la possibilét)
 - 審査員（しんさいん）: jury (ex: de thèse)
@@ -688,13 +562,9 @@ questions indirecte
 - 刃（は）: lame
 
 * 2023-05-29
-:PROPERTIES:
-:CUSTOM_ID: section-4
-:END:
+
 ** Vocabulaire
-:PROPERTIES:
-:CUSTOM_ID: vocabulaire-15
-:END:
+
 Microbiologie
 
 - 半日(はんにち） : une demie journée
@@ -722,13 +592,9 @@ Microbiologie
   - 場合（ばあい）: cas, situtation
 
 * 2023-06-04
-:PROPERTIES:
-:CUSTOM_ID: section-5
-:END:
+
 ** Grammaire
-:PROPERTIES:
-:CUSTOM_ID: grammaire-16
-:END:
+
 V-といいです: Il faudrait que tu V ex:
 「頭が痛いです」「水を飲むといいですよ」
 
@@ -740,22 +606,16 @@ ne rien X nanino tabemasu nanio hanusu koto ga arimasu
 nogaku narimasu = ?? nariso ???
 
 ** Vocabulaire
-:PROPERTIES:
-:CUSTOM_ID: vocabulaire-16
-:END:
+
 - 自動( じどう ): automatic
 - 何日間: how many days
 
 togaru = avoir très envie de
 
 * 2023-06-25
-:PROPERTIES:
-:CUSTOM_ID: section-6
-:END:
+
 ** Vocabulaire
-:PROPERTIES:
-:CUSTOM_ID: vocabulaire-17
-:END:
+
 - 法的 ( ほうてき ) : légal
 - 法的にギリギリ ( ほうてき ) : être dans une zone grise lélagement
 - 法的にどうかはわかりません : je ne sais pas si c'est légal
@@ -769,9 +629,7 @@ togaru = avoir très envie de
 - 諦める (あきら ) : abandonner
 
 ** Grammaire
-:PROPERTIES:
-:CUSTOM_ID: grammaire-17
-:END:
+
 Rappel
 
 - 〜たことがありません : ne jamais avoir fait
@@ -783,13 +641,9 @@ Rappel
 - 行きにくい : difficile à atteindre
 
 * 2023-07-09
-:PROPERTIES:
-:CUSTOM_ID: section-7
-:END:
+
 ** Vocabulaire
-:PROPERTIES:
-:CUSTOM_ID: vocabulaire-18
-:END:
+
 - 傷つく(きず ): être blessé
 - 水流（すいりゅう）: courant de la rivière
 - 体力 (たいりょく ): endurance mais aussi force physique (selon
@@ -805,13 +659,9 @@ Rappel
 - 飛び込み (と-こ-) : saut
 
 * 2023-07-23
-:PROPERTIES:
-:CUSTOM_ID: section-8
-:END:
+
 ** Vocabulaire
-:PROPERTIES:
-:CUSTOM_ID: vocabulaire-19
-:END:
+
 - 埋め立て地 (う た ち): décharge (déchet)
 
 - その当時（とうじ）: à ce moment (passé)
@@ -851,9 +701,7 @@ Rappel
 - 会議 送れる（かいぎ おく）: être en retard pour une réunion
 
 ** Grammaire
-:PROPERTIES:
-:CUSTOM_ID: grammaire-18
-:END:
+
 décrire un état: verbes + te, emotion
 
 - 嬉しかった（うれ）: être content
@@ -873,9 +721,7 @@ décrire un état: verbes + te, emotion
   Ex: 試験に合格して、嬉しかったです
 
 * 2023-08-06
-:PROPERTIES:
-:CUSTOM_ID: section-9
-:END:
+
 - 早めに（はや） : en avance, rapidement
 - 地方（ちほう）: région (adminstratif)
 - 朝型 （あさがた）: être une personne matinale
@@ -901,21 +747,15 @@ décrire un état: verbes + te, emotion
 - 必須科目(ひっすかもく) : une matière obligatoire (école)
 
 * 2023-09-17
-:PROPERTIES:
-:CUSTOM_ID: section-10
-:END:
+
 ** Vocabulaire
-:PROPERTIES:
-:CUSTOM_ID: vocabulaire-20
-:END:
+
 - 観光(かんこう): tourisme
 - 検査技師 (けんさぎし): technicien de laboratoire
 - すべる : glisser
 
 ** Grammaire
-:PROPERTIES:
-:CUSTOM_ID: grammaire-19
-:END:
+
 - verb + づらい: difficile de faire V
   - ex: 辛い つらい
   - ex: 一緒に仕事しづらいです
@@ -924,13 +764,9 @@ décrire un état: verbes + te, emotion
 四年ぶりにパラグライダーをまた始めました。
 
 * 2023-10-01
-:PROPERTIES:
-:CUSTOM_ID: section-11
-:END:
+
 ** Vocabulaire
-:PROPERTIES:
-:CUSTOM_ID: vocabulaire-21
-:END:
+
 - 空（から）: vide
 - ほとんど : la plupart
 - 蒸します（むします） : cuire à la vapeur
@@ -953,9 +789,7 @@ décrire un état: verbes + te, emotion
   au 2 avril (2 nuit). Attention à la lecture
 
 ** Grammaire
-:PROPERTIES:
-:CUSTOM_ID: grammaire-20
-:END:
+
 - ~かもしれません: peut-être
 - ーたら vs ーとき：
   - ーたら ： si ~, alors +++
@@ -965,13 +799,9 @@ décrire un état: verbes + te, emotion
   flou (i.e pas tout de suite)
 
 * 2023-11-19
-:PROPERTIES:
-:CUSTOM_ID: section-12
-:END:
+
 ** Vocabulaire
-:PROPERTIES:
-:CUSTOM_ID: vocabulaire-22
-:END:
+
 - 住んでいる (す) = habiter
 - 人口は 5 万人 ( じんこう ) (ごまんにん) : une population de 50 000
 - へきち( 僻地 )= arrière-pays
@@ -1004,9 +834,7 @@ décrire un état: verbes + te, emotion
 positifs par rapport à mon hôpital actuel
 
 ** Grammaire
-:PROPERTIES:
-:CUSTOM_ID: grammaire-21
-:END:
+
 Nominaliser un adjectif
 
 - en -i -> remplacer par -sa. いそがしい -> いそがしさ
@@ -1017,13 +845,9 @@ Nominaliser un adjectif
 après X: -てから. Exemple : après être allé : きってから
 
 * 2023-12-17
-:PROPERTIES:
-:CUSTOM_ID: section-13
-:END:
+
 ** Vocabulaire
-:PROPERTIES:
-:CUSTOM_ID: vocabulaire-23
-:END:
+
 - おゆがわく：mettre de l'eau à bouillir (passif)
 - おゆをわかす : faire bouillir de l'eau (actif)
 - 肉をやく: mettre de la viande à cuire
@@ -1049,9 +873,7 @@ après X: -てから. Exemple : après être allé : きってから
 一れつに　おならびくあさい: faites une line (= queue) svp
 
 ** Grammaire
-:PROPERTIES:
-:CUSTOM_ID: grammaire-22
-:END:
+
 - らしい
 - Révision -たら
 - compter les animaux : pikki
@@ -1059,13 +881,9 @@ après X: -てから. Exemple : après être allé : きってから
   - lapins, oiseaux : 羽 (wa)
 
 * 2024-01-21
-:PROPERTIES:
-:CUSTOM_ID: section-14
-:END:
+
 ** Vocabulaire
-:PROPERTIES:
-:CUSTOM_ID: vocabulaire-24
-:END:
+
 - sorekara = pour succession d'action
 - sorenara = dans ce cas (propose une solution alternative)
 - 毎月 (まいつき) = tous les mois
@@ -1079,20 +897,14 @@ après X: -てから. Exemple : après être allé : きってから
 - 説明 : explication
 
 ** Grammaire
-:PROPERTIES:
-:CUSTOM_ID: grammaire-6
-:END:
+
 - Il n'est pas obligatoire de : ~ なくてもいいです
   - Ex. もうワクチンは受けなくてもいいです
 
 * 2024-01-28
-:PROPERTIES:
-:CUSTOM_ID: section-15
-:END:
+
 ** Vocabulaire
-:PROPERTIES:
-:CUSTOM_ID: vocabulaire-25
-:END:
+
 - 避けます（さけます) : éviter
 - 健康　(けんこう) : santé
 - 味　(あじ) : goût (nourriture)
@@ -1113,13 +925,9 @@ après X: -てから. Exemple : après être allé : きってから
   sortir quand je serai prêt
 
 * 2024-03-09
-:PROPERTIES:
-:CUSTOM_ID: section-16
-:END:
+
 ** Vocabulaire
-:PROPERTIES:
-:CUSTOM_ID: vocabulaire-26
-:END:
+
 - くわしい :
 - 老人ホーム : maison de reraite
 - 日程を決める : réserver une date
@@ -1137,39 +945,25 @@ après X: -てから. Exemple : après être allé : きってから
   (= il sait faire)
 
 ** Grammaire
-:PROPERTIES:
-:CUSTOM_ID: grammaire-23
-:END:
+
 - あまり〜ていない: peu de ...
 
 * 2024-03-31
-:PROPERTIES:
-:CUSTOM_ID: section-17
-:END:
 ** Vocabulaire
-:PROPERTIES:
-:CUSTOM_ID: vocabulaire-27
-:END:
+
 - 海外旅行 (かいがいりょこう): voyage à l'étranger
 - リメイク : remake
 - 同じレストランに二度行くようなこと : c'est comme aller deux fois de
   suite dans le même restaurant （ふたたび）
 
 ** Grammaire
-:PROPERTIES:
-:CUSTOM_ID: grammaire-24
-:END:
+
 ーてきます pour exprimer un changement. Ex:
 人工（じんこう）がふえてきました = la population a augmentée
 
 * 2024-04-28
-:PROPERTIES:
-:CUSTOM_ID: section-18
-:END:
 ** Vocabulaire
-:PROPERTIES:
-:CUSTOM_ID: vocabulaire-28
-:END:
+
 - さしぶり est composé du préfixe　ぶり, qui peut être utilisé avec
   d'autres durée. Ex　一年ぶり = cela fait un an que l'on ne s'est vu
 - 宣誓する (せんせいする): prêter serment
@@ -1179,8 +973,20 @@ après X: -てから. Exemple : après être allé : きってから
 - ちょうど良い : être exactement (de la bonne taille, longueur...)
 
 ** Grammaire
-:PROPERTIES:
-:CUSTOM_ID: grammaire-25
-:END:
+
 - -たら = si. On utilise la forme en -た en rajoutant ら. Ex:
   さむかったら、。。。
+
+* 2024-05-19
+** Vocabulaire
+- 国民の休日 ( こくみんきゅうじつ ) . jour férié
+- 祝日（しゅくじつ）: jour férié (informel)
+- 平日 ( へいじつ) : jour de semaine
+- 合流する(ごうりゅうす): rejoindre quelqu’un
+- 離陸（りり苦） : décollage
+- 着陸（ちゃくりく） : atterissage
+- 燃える(も ): brûler
+- 風景(ふうけい): paysage
+- 世界遺産(せかいいさん ): patrimoine mondial
+** À faire
+lire dialogues leçon 13 (business)
