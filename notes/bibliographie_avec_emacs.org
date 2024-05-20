@@ -4,22 +4,44 @@
 #+title: Bibliographie avec emacs
 #+filetags: emacs bibligraphie
 
-Note: on utilise maintenant papis en ligne de commande. Sauvegardé pour
-raisons historiques.
+On utilise citar. Exemple
+#+begin_src org
+\* Research1
+- [cite:@saffari2001] Best review
+- [cite:@adang200] First review
+#+end_src
 
-On utilise citar - définir
+Inconvénient: pour chercher les notes, il faut un fichier org qui
+regroupe les citations par catégories.
+
+Configuration
 
 #+begin_src lisp
-(setq citar-library-paths \'(\"\~/papers/bisonex\"))
+(after! citar
+  (setq! citar-bibliography '("~/roam/research/biblio.bib" "~/roam/research/bisonex/thesis/biblio.bib")
+         citar-library-paths '("~/papers/bisonex")
+         citar-notes-paths '("~/roam/research/references")
+         citar-org-roam-subdir "~/roam/research/references/")))
 #+end_src
+
 
 Pour ouvrir les pdfs, citar-open-files va les ouvrir s'ils sont només
 $key.pdf.
 
-Pour annotater la bibliographie, on a testé un seul fichier org-mode,
-[[http://www.cachestocaches.com/2020/3/org-mode-annotated-bibliography/][comme
-ceci]] Le fichier .bib est généré avec =org-tangle=
+Pour annotater la bibliographie, on a testé un seul fichier org-mode.]] Le fichier .bib est généré avec =org-tangle=
 
-Dans un second temps, org-roam + citar. =SPC m @= permet - de créer une
-note org-roam - d'ouvrir le pdf (s'il est dans citar-library-paths et
-nommé $key.pdf)
+Avec org-roam =SPC m @= permetl
+- de créer une note org-roam
+- d'ouvrir le pdf (s'il est dans citar-library-paths et nommé $key.pdf)
+
+* Autres possibilités (abandonnées)
+** Org-mode tangle
+Voir
+[[https://cachestocaches.com/2020/3/org-mode-annotated-bibliography/]]
+
+** Org-mode directement avec org-bibtex
+On récupère le bibtex avec notre function. Puis il faut couper le bloc
+bibtex (d% avec evil) et le transformer en entrée "org-mode" avec
+org-bibtex-yank Il faut exporter le tout en bibtex avec org-bibtex
+
++: formattage org-mode

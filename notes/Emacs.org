@@ -1,126 +1,51 @@
-​#éditeur
+:PROPERTIES:
+:ID:       7ace5c18-4a57-43bb-8653-1fe0e62e0b30
+:END:
+#+title: Emacs
+#+filetags: emacs éditeur
 
+* Configuration
+** Emacs et EDITOR
+EDITOR="emacsclient -c"
+Ne pas utiliser l'option -n
 * Astuces
-:PROPERTIES:
-:CUSTOM_ID: astuces
-:END:
-** Evil
-:PROPERTIES:
-:CUSTOM_ID: evil
-:END:
-Sortir du mode "insert" en bepo : "gq" après un espace (important )
-
 ** Accent issues when pasting from clipboard (Windows)
-:PROPERTIES:
-:CUSTOM_ID: accent-issues-when-pasting-from-clipboard-windows
-:END:
 C-x RET x (set-selection-coding-system) and choose utf-16-le
 
 ** Jump to and from function definition
-:PROPERTIES:
-:CUSTOM_ID: jump-to-and-from-function-definition
-:END:
-M-. (xref-pop-marker-stack): jump to definition M-?
-(xref-find-references): find all occurences M-, (xref-find-definitions):
-q
-
+M-. (xref-pop-marker-stack): jump to definition
+M-? (xref-find-references): find all occurences
+M-, (xref-find-definitions): q
 ** Override completion
-:PROPERTIES:
-:CUSTOM_ID: override-completion
-:END:
 C-j pour ne pas utiliser le premier résultat
 
 * SSH, FTP, sudo
-:PROPERTIES:
-:CUSTOM_ID: ssh-ftp-sudo
-:END:
-=SPC f f= then
-
+=SPC f f= puis
 #+begin_src sh
 /protocol:user@host:/file.txt
 #+end_src
 
-For SSH (with an alias)
-
+SSh avec alias
 #+begin_src sh
 /ssh:myalias:
 #+end_src
 
-Without an alias
-
+SSH sans alias
 #+begin_src sh
 /ssh:john@myhost:/home/john/
 #+end_src
 
-** With fish shell
-:PROPERTIES:
-:CUSTOM_ID: with-fish-shell
-:END:
-ssh can hang so I follewed
-[[https://github.com/oh-my-fish/theme-bobthefish/issues/148][this
-advice]] ) and set in ~/.config/fish/fish.config
-
-#+begin_example
-if test &quot;$TERM&quot; = &quot;dumb&quot;
-    exec sh
-end
-#+end_example
-
-For faster access, set a bookmark to the folder <3 Otherwise it's a bit
-annoying to type
-
-* Eshell
-:PROPERTIES:
-:CUSTOM_ID: eshell
-:END:
-C-c M-b pour completer un buffer (utile pour redirection)
-
-#+begin_example
-rga &quot;test&quot; lol.pdf &gt;
-#+end_example
-
 * Grep + sed
-:PROPERTIES:
-:CUSTOM_ID: grep-sed
-:END:
-Search and edit with ripgrep directly in the result !
-
-1. search with ripgrep, for example with `SPC s p`
-2. Put the results in a buffer with `C-c C-o` (`ivy-occur`)
-3. Edit the buffer with `i` (`ivy-wgrep-change-to-wgrep`)
+Chercher et éditer directement le résultats
+1. chercher avec ripgrep =SPC s p=
+2. Mettre le résultat dans un buffer `C-c C-o` (`ivy-occur`)
+3. Editer le buffer avec `i` (`ivy-wgrep-change-to-wgrep`)
 
 * Calc
-:PROPERTIES:
-:CUSTOM_ID: calc
-:END:
 Embedded-mode : évalue formule sous le curseur
 
-* Mail with mbsync
-:PROPERTIES:
-:CUSTOM_ID: mail-with-mbsync
-:END:
-! Got several "duplicate ID" after using a systemd service. It's due to
-moving files (my version of archiving) and the naming scheme. We must
-use the "alternate" naming scheme to avoid duplicates. Seems to work NB:
-we should explain with gmail
-
-Mbsync is really faster when fetching mails the first time.Afterwards,
-I'm not sure the gain is worth it
-
-* Écrire en japonais
-:PROPERTIES:
-:CUSTOM_ID: post-config-en-jap-sur-emacs
-:END:
-mozc is too slow in doom emacs => activate japanese instead
-
 * Torrents with emacs
-:PROPERTIES:
-:CUSTOM_ID: torrents-with-emacs
-:END:
 ** What works
-:PROPERTIES:
-:CUSTOM_ID: what-works
-:END:
 Nginx + URL
 
 #+begin_example
@@ -154,9 +79,6 @@ And in emacs
 #+end_example
 
 ** More secure : with a socket
-:PROPERTIES:
-:CUSTOM_ID: more-secure-with-a-socket
-:END:
 We create a group to be able to write the socket
 
 #+begin_example
@@ -191,87 +113,16 @@ Emacs
 
 Update : it seems to work without nginx with a socket ??
 
-* Org mode
-:PROPERTIES:
-:CUSTOM_ID: org-mode
-:END:
-** Wrap selection into an org-block
-:PROPERTIES:
-:CUSTOM_ID: wrap-selection-into-an-org-block
-:END:
-org-insert-structure-template C-c C-, s
+* [[id:9b1e90c5-4614-40b6-ae6c-5e9c89c4488e][Org-mode]]
+* Langages
+** [[id:2e84138f-7559-4933-8e8b-345c5a03fe8b][Haskell]]
 
-** Latex :
-:PROPERTIES:
-:CUSTOM_ID: latex
-:END:
-Bibliography: Ajouter dans le header
-
-#+begin_src org
-,#+bibliography: memoire.bib
-#+end_src
-
-Glossaries: Avec latexmk, il faut une configuration spéciale dans
-.latexmkrc
-
-#+begin_src sh
-add_cus_dep( 'acn', 'acr', 0, 'makeglossaries' );
-add_cus_dep( 'glo', 'gls', 0, 'makeglossaries' );
-$clean_ext .= " acr acn alg glo gls glg";
-
-sub makeglossaries {
-     my ($base_name, $path) = fileparse( $_[0] );
-     my @args = ( "-q", "-d", $path, $base_name );
-     if ($silent) { unshift @args, "-q"; }
-     return system "makeglossaries", "-d", $path, $base_name;
- }
-#+end_src
-
-** lulatex
-:PROPERTIES:
-:CUSTOM_ID: utiliser-lulatex
-:END:
-; lualatex preview (setq org-latex-pdf-process '("lualatex -shell-escape
--interaction nonstopmode %f" "lualatex -shell-escape -interaction
-nonstopmode %f")) (Attention à l'ordrer)
-
-** Org-roam
-:PROPERTIES:
-:CUSTOM_ID: org-roam
-:END:
-Transformer un titre en noeud SPC m I ou org-id-create
-
-Gérer plusieurs dossiers (privé + public)
-
-1. Plusieurs dossier avec .dirs.el (cf documentation officielle)
-2. Faire des liens symbolique dans un dossier =roam= et utiliser des
-   tags + des capture pour chaque
-
-* Haskell
-:PROPERTIES:
-:CUSTOM_ID: haskell
-:END:
-Mode mal documenté (avec lsp) C-c C-l pour charger code dans ghci C-c
-C-z si on perd le popup
-
-* Misc
-:PROPERTIES:
-:CUSTOM_ID: misc
-:END:
-yas-describe-tables to see snippets
+* Divers
+=yas-describe-tables= pour voir les snippets
 
 * Presentation
-:PROPERTIES:
-:CUSTOM_ID: presentation
-:END:
 ** org mode -> beamer
-:PROPERTIES:
-:CUSTOM_ID: org-mode---beamer
-:END:
 ** org-mode -> reveal.js
-:PROPERTIES:
-:CUSTOM_ID: org-mode---reveal.js
-:END:
 #+begin_example
 REVEAL_TRANS
 ,#+OPTIONS: toc:nil
@@ -287,22 +138,15 @@ REVEAL_TRANS
 Puis SPC m e v b
 
 * Tramp
-:PROPERTIES:
-:CUSTOM_ID: tramp
-:END:
 SSH + sudo : /[[ssh:you@remotehost%7Cdoas]]:: ou
 /[[ssh:you@remotehost%7Csudo]]::
 
 Sauvegarder session :
 
 [[https://emacs.stackexchange.com/questions/26560/bookmarking-remote-directories-trampsudo]]
-(add-to-list 'tramp-default-proxies-alist '("\\`mydomain\\'"
-"\\`root\\'" "/sshx:user@%h:"))
+(add-to-list 'tramp-default-proxies-alist '("\\`mydomain\\'" "\\`root\\'" "/sshx:user@%h:"))
 
 ** Difficulté avec projectile
-:PROPERTIES:
-:CUSTOM_ID: difficulté-avec-projectile
-:END:
 Il faut les executabs sur la machirne distance (fd et rg) Pour nix, on
 peut éditer le bashrc distant et ajouter
 
@@ -320,74 +164,10 @@ couleurs:
 Puis vider le cache avec SPC p i
 
 * Useful shortcuts (doom emacs)
-:PROPERTIES:
-:CUSTOM_ID: 57421762-b8ef-46dd-9145-5152551b81c3
-:END:
 - SPC c d jump to definition
 - C-o to go back after jumping
 - C-x C-q in dired to edit the buffer as text <3
 
-* Useful shortcut (vanilla emacs )
-:PROPERTIES:
-:CUSTOM_ID: useful-shortcut-vanilla-emacs
-:END:
-- C-x z to repeat last command, then z (like vim ".")
-
-Not so useful
-
-- C-x right/left arrow to switch buffer (I'm not really using it)
-
-* Post sur facebook messenger inside emacs
-:PROPERTIES:
-:CUSTOM_ID: post-sur-facebook-messenger-inside-emacs
-:END:
-Requirements
-
-- bitlbee
-- erc
-- bitlbee-facebook
-
-Config
-
-#+begin_src lisp
-  ;; ---- ERC
-;; A helper function to auto-start bitlbee
-(defun bitlbee-start ()
-  (interactive)
-  (erc :server "localhost" :port 6667 :nick "alex" :password "sharingan"))
-
-;; Here we start ERC at boot, with the password here for minimal coding
-(use-package! erc
-  ;; Bitlbee by default
-  :commands (bitlbee-start)
-  :config
-  ;; Autojoin must be done inside bitlbee directly
-  (setq erc-hide-list '("JOIN" "PART" "QUIT" "NICK"))
-)
-#+end_src
-
-LISP
-
-Result
-
-M-x bitlbee-start start bitlbee. You need to follow these instuctions
-[[https://wiki.bitlbee.org/HowtoFacebookMQTT]] > account add facebook
-<email> <password> > account facebook on > fbjoin facebook <index>
-<channel> The index is given either by fbchats facebook or must be
-copying manually from facebook
-
-If you want to autojoin a channel, it must be done in bitlbee direcly
-channel blabla set auto_{join} true NB the config file are most likely
-in /var/lib/bitlbee/$USER.xml
-
 * IRC
-:PROPERTIES:
-:CUSTOM_ID: irc
-:END:
 Doom-emacs utilise circe, à démarrer avec ==irc= (et non circe)
 
-* Emacs et EDITOR
-:PROPERTIES:
-:CUSTOM_ID: emacs-et-editor
-:END:
-EDITOR="emacsclient -c" Ne pas utiliser l'option -n

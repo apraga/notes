@@ -1,13 +1,13 @@
+:PROPERTIES:
+:ID:       d7d1398b-5b09-4eef-a193-3b2a9ca0abf7
+:END:
+#+title: Haskell
+#+filetags: programmation
+
 * Démarrer un projet
-:PROPERTIES:
-:CUSTOM_ID: démarrer-un-projet
-:END:
 ** Nix
-:PROPERTIES:
-:CUSTOM_ID: nix
-:END:
-[[file:Environnement%20Haskell%20avec%20Nix.md][Environnement Haskell
-avec Nix]] ## Script en un seul fichier (cabal)
+[[file:Environnement%20Haskell%20avec%20Nix.md][Environnement Haskell avec Nix]]
+** Script en un seul fichier (cabal)
 
 =cabal run= sur le script suivant (ou chmod +x)
 
@@ -23,30 +23,19 @@ main = echo "Hello World!"
 #+end_src
 
 ** Script en un seul fichier (stack)
-:PROPERTIES:
-:CUSTOM_ID: script-en-un-seul-fichier-stack
-:END:
 `stack run` sur le script suivant (ou chmod +x)
-
 #+begin_src haskell
 -- stack --resolver lts-6.25 script --package turtle
 {-# LANGUAGE OverloadedStrings #-}
 import Turtle
 main = echo "Hello World!"
 #+end_src
-
 ** Avec stack
-:PROPERTIES:
-:CUSTOM_ID: avec-stack
-:END:
 #+begin_src sh
 stack script simple.hs --resolver lts-14.18
 #+end_src
 
 * Librairies
-:PROPERTIES:
-:CUSTOM_ID: librairies
-:END:
 ** Data analysis : Frames
 :PROPERTIES:
 :CUSTOM_ID: data-analysis-frames
@@ -114,7 +103,7 @@ main = do
 Il faut rajouter le parser "u2Parser" (cf
 [[https://github.com/acowley/Frames/issues/178]])
 
-* SQL: persistent
+** SQL: persistent
 :PROPERTIES:
 :CUSTOM_ID: sql-persistent
 :END:
@@ -204,3 +193,12 @@ Voir [[file:Pandoc.md][Pandoc]] pour un exemple de customisation #
 Utiliser haskell-compile Si on utilise haskell-proces-cabal-build
 (default =C-c c-c=), il ne trouve pas le fichier .cabal associé quand on
 éditer le code source
+
+* Éditeur
+** Emacs
+:PROPERTIES:
+:ID:       2e84138f-7559-4933-8e8b-345c5a03fe8b
+:END:
+Mode mal documenté (avec lsp)
+C-c C-l pour charger code dans ghci
+C-c C-z si on perd le popup

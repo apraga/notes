@@ -1,67 +1,45 @@
-* Utilisation
 :PROPERTIES:
-:CUSTOM_ID: utilisation
+:ID:       96649c4d-349b-4f54-977e-0553992571cf
 :END:
+#+title: Nushell
+#+filetags: shell
+* Utilisation
 Lister nom de colonnes
-
-#+begin_example
+#+begin_src nu
 open lol.csv | columns
-#+end_example
+#+end_src
 
 * Intégration
-:PROPERTIES:
-:CUSTOM_ID: intégration
-:END:
-** Emacs et tramp
-:PROPERTIES:
-:CUSTOM_ID: emacs-et-tramp
-:END:
-Pour forcer tramp à utiliser bash
-
-#+begin_example
+** Doom emacs et tramp
+Si on configure doom-emacs depuis nushell, il va le définir comme SHELL par défaut (ce qui rend sudo inutilisable)
+Le plus simple est de change SHELL en /usr/bin/bash dans le fichier ~/.config/emacs/.local/env
+#+begin_src nu
 SHELL="/bin/bash" ~/.emacs.d/bin/doom env
-#+end_example
+#+end_src
 
 ** Python avec virtual env
-:PROPERTIES:
-:CUSTOM_ID: python-avec-virtual-env
-:END:
 Installer virtualenv, exemple avec `emerge virtualenv` puis
-
-#+begin_example
+#+begin_src nu
 virtualenv myenv
 overlay use myenv/bin/activate.nu
 pip install osmnx
-#+end_example
+#+end_src
 
 * Exemples de scripts
-:PROPERTIES:
-:CUSTOM_ID: exemples-de-scripts
-:END:
 ** Pandoc sur une liste de fichier
-:PROPERTIES:
-:CUSTOM_ID: pandoc-sur-une-liste-de-fichier
-:END:
 org -> markdown
-
 #+begin_src nu
 ls *.org  | each {|e| pandoc $e.name -o $"($e.name | path parse | get stem).md"}
 #+end_src
 
 ** Lister tous les IDs des csv et faire l'intersection avec les ID des pdfs
-:PROPERTIES:
-:CUSTOM_ID: lister-tous-les-ids-des-csv-et-faire-lintersection-avec-les-id-des-pdfs
-:END:
 #+begin_src nu
-ls excel = (ls S:genetique\commun\Centogene_variants\excel | get name | path basename | path parse | get stem | parse "{id}_{s}" | get id)
+ls excel = (ls /home/alex/excel | get name | path basename | path parse | get stem | parse "{id}_{s}" | get id)
 let patho = (open patho.csv | get id)
 $excel | append $patho | uniq -d
 #+end_src
 
 ** Génerer une liste de fastq en les groupant par nom de dossier
-:PROPERTIES:
-:CUSTOM_ID: génerer-une-liste-de-fastq-en-les-groupant-par-nom-de-dossier
-:END:
 List all fastq, then generate a column containing the file and dirname.
 Groupy by directory, extract record values input a table. Filter folders
 with less than 2 files. Concatenante the files and save the result into
@@ -72,7 +50,6 @@ ls fastq/*/*.fastq.gz | select name | insert dir { $in.name | path dirname }  | 
 #+end_src
 
 Version plus évoluée:
-
 #+begin_src sh
 def annotate [] { insert dir { $in.name | path dirname | path basename }  | insert file { $in.name | path basename } | insert id { $in.name | patientID }}
 def patientID [] { path basename | split row '_R' | first }
@@ -82,7 +59,6 @@ ls fastq/*/*.fastq.gz | select name | annotate  | group-by dir | values | where 
 #+end_src
 
 Générer une liste de tâches à partir d'un alphabet et d'un index
-
-#+begin_example
+#+begin_src nu
 seq char E Z | enumerate | each {|it| t add pro:seedbox.seedhost $"Ajouter ancient torrents ($it.item)" $"wait:+($it.index + 1)d" $"sched:+($it.index + 1)d" }
-#+end_example
+#+end_src
