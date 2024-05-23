@@ -9,10 +9,9 @@
 ***** WAIT PR package nix Dragmap
 ***** TODO Package nix Deepvariant
 ***** DONE [[file:~/code/nixpkgs/pkgs/by-name/ti/tiddit/package.nix::{][Package nix Tiddit]]
-***** TODO [[https://github.com/NixOS/nixpkgs/pull/312995][PR]] package nix tiddit
-SCHEDULED: <2024-05-20 Mon>
-Corrections
-/Créé le/ [2024-05-16 Thu 22:39]
+***** WAIT [[https://github.com/NixOS/nixpkgs/pull/312995][PR]] package nix tiddit
+    Corrections
+    /Créé le/ [2024-05-16 Thu 22:39]
 ***** DONE Package nix vep
 ***** WAIT PR Package nix vep
 ***** DONE Package nix multiqc
@@ -39,11 +38,14 @@ DEADLINE: <2024-05-30 Thu>
 :CATEGORY: japonais
 :END:
 ** Intermediate Japanese
-SCHEDULED: <2024-05-20 Mon .+1d>
+SCHEDULED: <2024-05-23 Thu .+1d>
 :PROPERTIES:
 :STYLE:    habit
 :LAST_REPEAT: [2024-05-18 Sat 14:47]
 :END:
+- State "DONE"       from ""           [2024-05-22 Wed 14:47]
+- State "DONE"       from ""           [2024-05-21 Tue 14:47]
+- State "DONE"       from ""           [2024-05-20 Mon 14:47]
 - State "DONE"       from ""           [2024-05-19 Sun 14:47]
 - State "DONE"       from ""           [2024-05-18 Sat 14:47]
 - State "DONE"       from ""           [2024-05-17 Fri 14:47]
@@ -90,13 +92,23 @@ SCHEDULED: <2024-05-22 Wed>
 /Créé le/ [2024-05-16 Thu 22:44]
 2024-03-01
 ** TODO Justificatif de domicile Caisse Épargne Metz
-SCHEDULED: <2024-05-20 Mon>
+SCHEDULED: <2024-05-27 Mon>
 /Créé le/ [2024-05-17 Fri 21:32]
-** TODO Recoudre pantalon rouge
-SCHEDULED: <2024-05-20 Mon>
-/Entered on/ [2024-05-19 Sun 13:23]
 ** TODO Changer adresse banque pour Allondaz
 SCHEDULED: <2024-05-27 Mon>
 /Entered on/ [2024-05-19 Sun 13:24]
 
+** WAIT Carte de complémentaire santé la médicale + accès site
+Mail envoyé<2024-05-23 Thu>
+/Entered on/ [2024-05-23 Thu 18:18]
+* Scrap
+** TODO Aerial spincity
+SCHEDULED: <2024-05-25 Sat>
+/Entered on/ [2024-05-20 Mon 21:13]
+
 * Nix
+:PROPERTIES:
+:CATEGORY: nix
+:END:
+** TODO Review PR  gitftless 154351
+/Entered on/ [2024-05-20 Mon 00:08]

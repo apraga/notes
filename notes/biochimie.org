@@ -2,3 +2,5 @@
 :ID:       ef8b8fda-5af4-4ba7-99c1-e1033e452c06
 :END:
 #+title: Biochimie
+
+[[id:5e5778f1-dfd3-4268-8ddd-05d16957a6c5][ALAT]]

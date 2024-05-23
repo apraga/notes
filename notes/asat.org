@@ -1,0 +1,46 @@
+:PROPERTIES:
+:ID:       864caae0-07ca-457b-9b67-09a3fed1fdb3
+:END:
+#+title: ASAT
+#+filetags: biochimie
+
+L'aspartate transférase est une enzyme transaminase (voir [[id:5e5778f1-dfd3-4268-8ddd-05d16957a6c5][ALAT]]) qui va transférer un groupement amine depuis un acide aminé (aspartate) vers un acide cétonique (acide α-cétoglutarique) selon la réaction
+
+aspartate + acide α-cétoglutarique ↔ oxaloacétate + glutamate
+
+L'ASAT est le point de départ de nombreuses réactions métaboliques (ex: pyrimidine) et le glutamate est impliqué dans le cycle glucose-alanine.
+
+Principalement dans les cellules hépatiques et cardiaques.
+Dans une moindre mesure dans les muscles squelettiques, reins, pancréas, globules rouges et cerveau.
+
+* Production
+cytoplasme et une dans les mitochondries. Une cytolyse va conduire à une libération dans le sang.
+
+* Principe analytique de mesure
+Photométrie (voir [[id:5e5778f1-dfd3-4268-8ddd-05d16957a6c5][ALAT]] )
+
+* Valeurs de référence
+- homme < 50U/L
+- femme < 35U/L
+
+* Principales interactions analytiques
+- hémolyse
+- gammapathie IgM (très rare)
+
+/Note: les carences en vitamine B_{6} ne sont plus une interaction/
+
+* Vigilance pré-analytiques et analytiques
+- Prélèvement non hémolysé
+- tube hépariné (lithium, di- ou tri-potassique)
+
+* Variations
+- physiologiques: augmentation à la naissance puis diminution jusque 6 ans , surcharge pondérale, exercice musculaire violent
+- iatrogène:
+  - aigü = IMAO, méthyldopa, isoniazide, halothane
+  - chronique : isoniazide, nitrofurantoïne, AINS, sulfamide...
+- augmentation pathologique
+  - hépatite virale, autoimmune
+  - infections (EBV, CMV, HSV, toxoplasmose)
+  - alcoolisme aigü/chronique
+  - inflammation modérée
+  - obstruction voie biliaire, cirrhose

@@ -1,4 +1,10 @@
-​#biochimie # Localisation, physiologie
+:PROPERTIES:
+:ID:       5e5778f1-dfd3-4268-8ddd-05d16957a6c5
+:END:
+#+title: ALAT
+#+filetags: biochimie
+
+* Localisation, physiologie
 
 L'alanine transférase est une enzyme transaminase qui va transférer un
 groupement amine depuis un acide aminé (alanine) vers un acide cétonique
@@ -13,34 +19,17 @@ L'ALAT se trouve dans le cytosol des cellules hépatiques et dans une
 moindre mesure musculaires.
 
 * Production
-:PROPERTIES:
-:CUSTOM_ID: production
-:END:
 La cytolyse de cellules hépatiques va relarguer l'ALAT.
 
 * Principe analytique de mesure
-:PROPERTIES:
-:CUSTOM_ID: principe-analytique-de-mesure
-:END:
-Test enzymatique.
-
-L'absorbance est mesurée par photométrie qui reflète la vitesse de
-formnation de NADH, qui est proportionnelle à l'activité de l'ALAT selon
-l'équation :
-
+Photométrie (mesure vitesse formnation de NADH, qui est proportionnelle à l'activité de l'ALAT selon
 pyruvate + NADH + H^{+} → lactate + NAD^{+}
 
-* Valeurs de référence [cite:@thomas2005consensus]
-:PROPERTIES:
-:CUSTOM_ID: valeurs-de-référence-thomas2005consensus
-:END:
+* Valeurs de référence
 - homme < 50U/L
 - femme < 35U/L
 
 * Principales interactions analytiques
-:PROPERTIES:
-:CUSTOM_ID: principales-interactions-analytiques
-:END:
 - hémolyse
 - hydroxycobalamine (vitamine B12) (diminution)
 - sulfasalazine (anti-inflammatoire intestinal: Crohn...)
@@ -49,16 +38,10 @@ pyruvate + NADH + H^{+} → lactate + NAD^{+}
 /Note: les carences en vitamine B_{6} ne sont plus une interaction/
 
 * Vigilance pré-analytiques et analytiques
-:PROPERTIES:
-:CUSTOM_ID: vigilance-pré-analytiques-et-analytiques
-:END:
 - Prélèvement non hémolysé
 - tube hépariné (lithium, di potassique)
 
-* Variations [cite:@bonnefont2019explorations]
-:PROPERTIES:
-:CUSTOM_ID: variations-bonnefont2019explorations
-:END:
+* Variations
 - physiologiques: grossesses (diminution modérée), surcharge pondérale
 - iatrogène:
   - aigü = IMAO, méthyldopa, isoniazide, halothane

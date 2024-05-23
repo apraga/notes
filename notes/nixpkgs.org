@@ -14,11 +14,11 @@ nix profile install nixpkgs#nixfmt-rfc-style
 nixfmt package.nix
 #+end_src
 Les nouveaux paquets sont dans pkg/by-name
-- [[https://nixos.org/manual/nixpkgs/unstable/#mkderivation-recursive-attributes][éviter =rec= : =finalAttrs= plutôt]]
-- Source
-  - [[https://github.com/nix-community/nixpkgs-lint/issues/21][mettre =pname= en dur dans =fetchFromGithub=]]
-  - [[https://nixos.org/manual/nixpkgs/stable/#fetchurl][utiliser =hash= plutôt que =sha256=]]
-  - version = "unstable-YYYY-MM-DD" s'il n'y a pas de version
+- éviter =rec= et utiliser =finalAttrs= plutôt [[https://nixos.org/manual/nixpkgs/unstable/#mkderivation-recursive-attributes][(source)]]
+- mettre =pname= en dur dans =fetchFromGithub= [[https://github.com/nix-community/nixpkgs-lint/issues/21][(source)]]
+- utiliser =hash= plutôt que =sha256=]] [[https://nixos.org/manual/nixpkgs/stable/#fetchurl][(source)]]
+- version = "2.2-unstable-YYYY-MM-DD" s'il n'y a pas de version [[https://github.com/NixOS/nixpkgs/blob/master/pkgs/README.md#package-naming][(source)]]
+
 * Variables
 - =nativeBuildInput= : si exécuté durant le build (ex: cmake)
 - =buildInputs= : si utilisé à l'exécution ou ajouté dans la sortie (ex: zlib). Attention, il peut falloir ajouter aux 2 !
