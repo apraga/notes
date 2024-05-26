@@ -4,6 +4,7 @@
 #+title: Emacs
 #+filetags: emacs éditeur
 
+[[id:d15dea51-9e81-4c33-a1f7-5a589da517f8][Doom emacs]]
 * Configuration
 ** Emacs et EDITOR
 EDITOR="emacsclient -c"
@@ -162,11 +163,6 @@ couleurs:
 .git --strip-cwd-prefix")
 
 Puis vider le cache avec SPC p i
-
-* Useful shortcuts (doom emacs)
-- SPC c d jump to definition
-- C-o to go back after jumping
-- C-x C-q in dired to edit the buffer as text <3
 
 * IRC
 Doom-emacs utilise circe, à démarrer avec ==irc= (et non circe)

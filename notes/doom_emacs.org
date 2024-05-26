@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       d15dea51-9e81-4c33-a1f7-5a589da517f8
+:END:
+#+title: Doom emacs
+#+filetags: emacs éditeur
+
+* Naviguer dans un code source
+- SPC c d jump to definition
+  - C-o to go back after jumping
+- SPC i s (imenu) pour lister les définition du fichier
+* Autres
+- C-x C-q in dired to edit the buffer as text <3
