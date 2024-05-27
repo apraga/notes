@@ -17,13 +17,18 @@
 ***** DONE Package nix multiqc
 ***** WAIT PR Package nix multiqc
 **** TODO Scidataflow : support pour pull partiel
-**** TODO Ressoures génétiques avec scidataflow [0/0]
+**** TODO "Assets" pour génétique constit avec scidataflow [0/0]
 ***** genome hg38 + hg19
 ***** dbsnp
 ***** clinvar
 *** TODO Soumission JCADD 2024
-SCHEDULED: <2024-05-27 Mon>
+DEADLINE: <2024-06-07 Fri> SCHEDULED: <2024-05-28 Tue>
 /Entered on/ [2024-05-19 Sun 13:24]
+*** DONE Mail Kamel : présentation en 2 temps JCADD 2024 ?
+CLOSED: [2024-05-28 Tue 00:05]
+1. Retour d'expérience sur installation nix
+2. Résultat thèse
+/Entered on/ [2024-05-28 Tue 00:04]
 ** NF1
 :PROPERTIES:
 :CATEGORY: nf1
@@ -61,12 +66,15 @@ SCHEDULED: <2024-05-27 Mon .+1d>
 :PROPERTIES:
 :CATEGORY: voiture
 :END:
-** WAIT Facture contre-visite Mazda5
+** WAIT Facture contre-visite Mazda5: envoi courrier
 SCHEDULED: <2024-05-28 Tue>
 /Créé le/ [2024-05-16 Thu 22:32]
 - Rien dans les photos
 - Pas dans les papiers Allondaz
 - Attente facture renvoyée par courrier
+** TODO Demander au garage + Eric si possible d'avoir une copie
+SCHEDULED: <2024-05-28 Tue>
+/Entered on/ [2024-05-27 Mon 23:50]
 * Internat
 :PROPERTIES:
 :CATEGORY: internat
@@ -81,6 +89,17 @@ SCHEDULED: <2024-05-19 Sun>
 /Entered on/ [2024-05-19 Sun 13:29]
 ** TODO Converter notes biochimie org-mode
 /Entered on/ [2024-05-19 Sun 13:29]
+** Interchu
+:PROPERTIES:
+:CATEGORY: interchu
+:END:
+*** TODO Mail Quentin pour vérifier stage Biomnis possible en docteur junior
+SCHEDULED: <2024-05-28 Tue>
+/Entered on/ [2024-05-27 Mon 23:47]
+*** TODO Mail biomnis Laure Raymond via Louis Januel
+SCHEDULED: <2024-06-03 Mon>
+/Entered on/ [2024-05-27 Mon 23:48]
+Ok pour interchu en docteur junior ?
 * Maison
 :PROPERTIES:
 :CATEGORY: maison
@@ -98,15 +117,11 @@ SCHEDULED: <2024-05-27 Mon>
 ** TODO Justificatif de domicile Caisse Épargne Metz
 SCHEDULED: <2024-05-27 Mon>
 /Créé le/ [2024-05-17 Fri 21:32]
-** TODO Changer adresse banque pour Allondaz
-SCHEDULED: <2024-05-27 Mon>
-/Entered on/ [2024-05-19 Sun 13:24]
-
 ** WAIT Carte de complémentaire santé la médicale + accès site
 Mail envoyé<2024-05-23 Thu>
 /Entered on/ [2024-05-23 Thu 18:18]
-** TODO Facture seedhost
-SCHEDULED: <2024-05-27 Mon>
+** DONE Facture seedhost
+CLOSED: [2024-05-27 Mon 23:54] SCHEDULED: <2024-05-27 Mon>
 /Entered on/ [2024-05-26 Sun 10:01]
 * Scrap
 ** DONE Aerial spincity
