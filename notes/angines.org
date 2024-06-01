@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       9c228cdd-e721-4dd4-8546-d69a5aa02442
+:END:
+#+title: Angines
+​#+filetags: bacterio
+
+- Virale 60-80%
+- Bactérie: /S. pyogenes/ surtout (strepto β-hémolytique)
+- Test rapide : positif = en faveur strepto
+- Possible de faire un prélèvement de gorge
+  - culture milieu enrichi 48h: β-hémolyse + MALDI TOF
+  - antibiogramme: sensible β-lactamines
+- Cause rare :
+  - angine ulcéro-nécrotique : ED = fusiforme + bactéries spiralées
+  - pseudomembraneuse (Corynebacteium diphteria: culture gélose enrichie + CNR)

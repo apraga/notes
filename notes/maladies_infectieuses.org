@@ -6,8 +6,9 @@
 
 [[id:6c33ba0a-0794-49ed-949a-9e056c185eb0][Légionelle]]
 [[id:e6fc90b1-6aa5-4397-9d9a-82e72a96ef07][Infections sexuellement transmissibles]]
+[[id:9c228cdd-e721-4dd4-8546-d69a5aa02442][Angines]]
+[[id:7972bb4d-9a13-40ac-a1c2-015fee9d0d02][Méningites]]
 
 TODO
-[[file:IST.md][IST]] [[Angines]] [[Méningite]]
 [[Infections urinaires]] [[Gastro-entérites]] [[Diarrhées]]
 [[Endocardite infectieuse]] [[Infections cutanées]]
