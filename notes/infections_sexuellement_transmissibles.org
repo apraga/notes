@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       e6fc90b1-6aa5-4397-9d9a-82e72a96ef07
+:END:
+#+title: Infections sexuellement transmissibles
+
+[[id:ca8a5473-df68-4afe-a383-91846a928043][Chlamydia trachomatis]]
+[[id:7c471f75-d021-43b3-ba2a-9947f3db12a0][Syphilis]]
+[[id:77350f3c-8ae1-48ea-8460-ea6de3a3e975][Neisseria gonorrhoeae]]

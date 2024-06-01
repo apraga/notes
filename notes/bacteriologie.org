@@ -2,3 +2,20 @@
 :ID:       ec2e3357-e955-45cb-8b27-4f20c5f512b2
 :END:
 #+title: Bactériologie
+#+filetags: bacterio
+
+[[id:a54652d5-68c8-4668-aed9-50c9d719c207][Maladies infectieuses]]
+
+* Old
+
+[[Antibiotiques]]
+
+Bactéries [[Staphylocoques]] [[Campylobacter]] [[Proteus]]
+[[Pseudomonas]] [[Streptocoque]] [[Entérobactéries]] [[Entérocoques]]
+[[Neisseria]] [[Listeria]] [[Haemophilus]]
+
+[[file:Classification%20bactéries.md][Classification bactéries]]
+
+Techniques [[Milieux de culture]] [[Hémocultures]]
+[[file:Prélèvements%20bactério.md][Prélèvements bactério]]
+[[file:Spectrométrie%20MALDI-TOF.md][Spectrométrie MALDI-TOF]]

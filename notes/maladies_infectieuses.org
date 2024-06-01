@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       a54652d5-68c8-4668-aed9-50c9d719c207
+:END:
+#+title: Maladies infectieuses
+#+filetags: bacterio
+
+[[id:6c33ba0a-0794-49ed-949a-9e056c185eb0][Légionelle]]
+[[id:e6fc90b1-6aa5-4397-9d9a-82e72a96ef07][Infections sexuellement transmissibles]]
+
+TODO
+[[file:IST.md][IST]] [[Angines]] [[Méningite]]
+[[Infections urinaires]] [[Gastro-entérites]] [[Diarrhées]]
+[[Endocardite infectieuse]] [[Infections cutanées]]

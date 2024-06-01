@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       606a0627-728e-49bd-8464-63c297adbe43
+:END:
+#+title: Fanfic Harry Potter
+
+[[id:8390a6b1-eee6-411d-8ebd-28839ece073f][Benefits of Old Law]]
+[[id:0d316f80-4048-4e71-89ca-69ac46addc50][Sacrifice Arc]]
+[[id:e625c7ac-3871-403e-ba12-cfca773e5365][Harry Potter and the Methods of Rationality]]

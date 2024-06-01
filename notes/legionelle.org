@@ -1,55 +1,42 @@
-​#bacterio ## Physiopathologie
+:PROPERTIES:
+:ID:       6c33ba0a-0794-49ed-949a-9e056c185eb0
+:END:
+#+title: Légionelle
+#+filegats: bacterio
 
+*Déclaration obligatoire !*
+
+* Physiopathologie
 - Inhalation d'aérosole depuis source hydrotellurique
 - Homme = hôte accidentel avec multiplication intracellulaire
 - Facteurs de risque:
   - eau contaminée Légionella + aérosol (sanitaire+++)
   - eau chaude insuffisament chaude ou froide mais pas assez
 
-** Importance
-:PROPERTIES:
-:CUSTOM_ID: importance
-:END:
+* Importance
 - peu fréquente
 - risque épidémique
 - β-lactamine insuffisante
 
-** Clinique
-:PROPERTIES:
-:CUSTOM_ID: clinique-5
-:END:
+* Clinique
 Non spécifique mais y penser si
 
-- hyponatrémie + insuffisance rénale +cytolyse hépatique + rhabdomyolyse
-  + CRP élèvée
+- hyponatrémie + insuffisance rénale +cytolyse hépatique + rhabdomyolyse + CRP élèvée
 - extra-pulmonaire : neuro (confusion), diarrhée, insuf rénale
 - pas d'amélioration sous β-lactamine
 
-** Diagnostique
-:PROPERTIES:
-:CUSTOM_ID: diagnostique
-:END:
-1. antigénurie
-   - si positive = confirmé : culture échantillon respiratoire
-     (épidémio)
-   - sinon : PCR échantillion respiratoir (immunodéprimé++)
+* Diagnostique
+1. antigénurie: - si positive = confirmé -> culture échantillon respiratoire (viséo épidémio)
+2. sinon : PCR échantillion respiratoir (immunodéprimé++)
 
 Attention: Antigénurie =
-
 - seulement type 1 (85%) -> PCR si négatif/suspicion
 - persiste (parfois 1 an !)
 
 Culture = croissance lente (3-5 jours), sur BCYE
 
-** Antibiotique
-:PROPERTIES:
-:CUSTOM_ID: antibiotique-1
-:END:
+* Antibiotique
 - macrolide (azithromycine) si peu sévère 7-14 jours
 - sinon FQ ou assoication 2 parmi macrolide, FQ, rifampicine
 - pas de résistance décrite !
 
-** Déclaration obligatoire !
-:PROPERTIES:
-:CUSTOM_ID: déclaration-obligatoire
-:END:

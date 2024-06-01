@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       ca8a5473-df68-4afe-a383-91846a928043
+:END:
+#+title: Chlamydia trachomatis
+​#+filetags: bacterio ist
+
+- 19 génovars
+
+- Trachome oculaire
+- Infection urogénitale sexuellement transmissible
+- *1ere cause d'IST*
+
+* Clinique
+   - Infection urogénitale basse/haut: *urétrite* (homme), *cervicite* (asympto souvent), endométrie, salpingite
+   - lymphogranulomatose vénérienne : régions tropicale, ulcération génitale, adénite inguinale; anorectite HSH
+   - opportuniste : rare (grossesse, immunodépression)
+* Résistances
+   - naturelle = amonisode, glycopeptitde
+* Traitement
+   - Doxycycline (ou azithromycine pour IST non compliqué)
+   - infection génitale haute : doxycycline + autre
+   - *dépister IST*, traiter partener, rapport protégé
+*  Diagnostic
+  - *Direct* = PCR, Transcription-Mediation-Amplification
+    - remboursé, sensbilité > 95%
+  - Sérologie : biland infertilité, LGV (immunofluorescence, ELISA)
+  - culture peu sensible, antigène non recommandé, pas de test de sensibilité antibio en routine

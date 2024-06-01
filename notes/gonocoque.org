@@ -1,23 +1,20 @@
-​#bacterio #ist Neisseria gonorrhoeae
+:PROPERTIES:
+:ID:       77350f3c-8ae1-48ea-8460-ea6de3a3e975
+:END:
+#+title: Neisseria gonorrhoeae
+​#+filetags: bacterio ist
 
 - Cocci gram négatif
-- *Fragile* sensiblite variation températiure => gélose sang
-  cuit/chocolate supplémenta
-- Aérobie stricte mais *enrichi CO_{2}*
+- *Fragile* sensiblite variation températiure => gélose sang cuit/chocolate supplémenta
+- Aérobie stricte mais *enrichi CO_2*
 - Pathogène strict home
 
-** Épidémio
-:PROPERTIES:
-:CUSTOM_ID: épidémio
-:END:
+* Épidémio
 - adulte jeunes 43%
-- home 2.2x
+- homme 2.2x
 - augmenation HSH
 
-** Pathogénicité
-:PROPERTIES:
-:CUSTOM_ID: pathogénicité
-:END:
+* Pathogénicité
 - homme : bruyant, urétrite aigǜe
   - complication : épididymite aigüe +/-/ bactériémie
 - femme : souvent asympto
@@ -26,36 +23,23 @@
 - pharyngé, anorectal = souvent asympto
 - fellation non protégée
 
-** Diagnostic
-:PROPERTIES:
-:CUSTOM_ID: diagnostic
-:END:
+* Diagnostic
 - ED:sensible pus uréthral homme sympto
 - culture *> 2j* si symptomatique
 - *biologie moléculaire*
   - autoprélèvement vaginal, 1er jet urine
   - anal, gorge (PCR plus sensible que la culture)
 
-** Dépistage
-:PROPERTIES:
-:CUSTOM_ID: dépistage
-:END:
+* Dépistage
 - symptomatique: culture + TAAN
 - asymptomatique: TAAN puis culture si positif
 
-** Antibiotiques
-:PROPERTIES:
-:CUSTOM_ID: antibiotiques
-:END:
-- CMI: E-test : péniG, cefixime, ceftriaxen, cipro/pfloxacine,
-  azithromycine, tétracycline
+* Antibiotiques
+- CMI: E-test : péniG, cefixime, ceftriaxen, cipro/pfloxacine, azithromycine, tétracycline
 - résistance
   - très fréquente : *péni-G*, FQ, tétracycline
   - C3G : PLP mosaïque
   - vanco = résistance naturelle
 
-** Traitement
-:PROPERTIES:
-:CUSTOM_ID: traitement
-:END:
+* Traitement
 - *ceftriaxone + azitromicine*
