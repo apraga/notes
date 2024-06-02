@@ -47,13 +47,12 @@ CLOSED: [2024-06-01 Sat 15:27] SCHEDULED: <2024-05-30 Thu>
 **** DONE Asset GRch38.p14 (sans index) :scidataflow:
 CLOSED: [2024-06-01 Sat 17:19] SCHEDULED: <2024-06-01 Sat>
 /Entered on/ [2024-06-01 Sat 16:02]
-**** TODO Asset CADD v1.7 :scidataflow:
-SCHEDULED: <2024-06-01 Sat>
+**** DONE Asset CADD v1.7 :scidataflow:
+CLOSED: [2024-06-01 Sat 22:59] SCHEDULED: <2024-06-01 Sat>
 /Entered on/ [2024-06-01 Sat 16:02]
-*** TODO Résumé présentation :jcadd2024:
-SCHEDULED: <2024-06-01 Sat>
-*** TODO Faire relire résumé Paul+Alexis :jcadd2024:
-SCHEDULED: <2024-06-02 Sun>
+*** DONE Résumé présentation :jcadd2024:
+CLOSED: [2024-06-01 Sat 23:51] SCHEDULED: <2024-06-01 Sat>
+*** WAIT Faire relire résumé Paul+Alexis :jcadd2024:
 *** TODO Soumetre résumé :jcadd2024:
 DEADLINE: <2024-06-07 Fri>
 /Entered on/ [2024-05-19 Sun 13:24]
@@ -82,11 +81,12 @@ demande Théo sinon voir avec Michaelo pour onco ped
 :CATEGORY: japonais
 :END:
 ** Intermediate Japanese
-SCHEDULED: <2024-06-01 Sat .+1d>
+SCHEDULED: <2024-06-02 Sun .+1d>
 :PROPERTIES:
 :STYLE:    habit
 :LAST_REPEAT: [2024-05-26 Sun 10:01]
 :END:
+- State "DONE"       from ""           [2024-06-01 Sat 10:01]
 - State "DONE"       from ""           [2024-05-31 Fri 10:01]
 - State "DONE"       from ""           [2024-05-30 Thu 10:01]
 - State "DONE"       from ""           [2024-05-29 Wed 10:01]
