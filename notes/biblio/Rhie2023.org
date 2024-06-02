@@ -1,0 +1,19 @@
+  - plupart des "trous" insolubles à cause de de polymorphismes de structures aux extrémitées et nombreux éléments répétés/polymorphes non finis ou mal assemblé
+  - 151Mbp de séquencce inconnues:
+    - péri/sous-télomorique, duplication segmentaire, ADN ribosomal
+    - bras court des 4 chromosomes acrocentrique (13,14,15,21,22), HSat (human satellite repeat array)
+  - certaines régions sont artificielles : dans le centromère, certaines zones du centromère dite alpha satellite (Fig. \ref{fig:alpha-satellite} [fn:35] sont représenté sous forme d'un modèle informatique[fn:34]
+  - régions mal assemblées : bras court du chr21
+
+Méthode:
+- utilisation d'une mode hydatiform (Complete HM soit CHM) qui ont un caryotype 46XX (perte du complémente maternel avec duplication paternel)
+  - plus part est d'origine européen avec régions introgression nanderthale
+  - pas plus de variant perte de fonction que échantillions du projet 1000 génome, ni d'allèles isolée
+- ultra-long read pour régions répétées (nanopore) et pacbio hifi pour read 20kb (compromis avec taux d'erreur de 0.1%), + autre (illumina pcr-free, illumina hi-c pour interaction de chromatine, bionano map optinque single cell Strand-seq)
+
+Résultat:
+- 8% du génome: ajout de 238Mbp (4.5% dont 182 exclusif T2T
+- pas de trous, pas de contig
+- +5% gène
+- sur 1000 génomes : diminue faux positifs et faux négatifs
+- manque 5 régions des ADN ribsomaux les plus répété (9.9Mbp)

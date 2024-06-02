@@ -1,0 +1,42 @@
+Apport : DeepVariant et Sention non testé
+**** Méthodes
+- Alignement : BWA-MEM
+- Données :
+  - germline = génome(?)
+    - HG001...7 = Hiseq2500 avec 30x (sauf 40x pour lymphocytbe B HG001)
+    - HG001, 2 et 5 sur pacbio à 30x
+    - somatique hiseq2500 à 100X
+- Génome de référence : hs37d5 (utilisé par 1000 génomes)
+- 11 appel de variants
+  - Sentieon: Germline (DNAseq, DNAscope) + somatique (TNscop, TNseq)
+  - GATK : Germnline (haplotypecaller) + somatique (mutect2)
+  - Deepvariant : somatique
+  - neusomatic, varscan2 et strelka2 pour somatique
+NB: third generation sequening pour DNAseq (sention)  et haplotypecaller (GATK)
+- référence : GIAB pour germline, données de synthèse pour somatique (mélange germline)
+- rtgtool
+**** Résultats (germline)
+***** Next-generation sequencing
+- Bonne concordance pour germline: F1 > 0.99 pour SNV et > 0.98 pour indel (cohérent avec biblio)
+- Downsampling (2,5,10,15,30x)
+  - 30x: score F1 identique -> 30x recommandé
+  - < 15x précision semblable mais recall bas
+- Hard filter (voir [[id:17aa8b97-b6d1-465e-bcdd-f9dafa9e8f2c][Hard-filter]]): diminution légère F1 avec diminution recall 0.001% et augmentation  precision 0.001
+- Modification de 2 paramtre (emit_conf, call_conf): F1 identique avec diminution precision et augmentation recall
+- Impact BQSR
+***** Third generation  sequencing
+- SNV : bonne concordance (F1 > 0.99) avec très faible différence, en accord avec [cite:@wenger2019]
+- indel : variabilité importante deepvariant > dnaseq >> haplotypecaller
+  - 0.9902, 0.9927, 0.9924 for TGS001, TGS002 and TGS005,
+  - followed by DNAseq mode of Sentieon (0.9433, 0.9390, 0.9393),
+  - HaplotypeCaller from GATK (V4.0.7) )
+- hard filter : nette amélioration F1 score pour indel
+***** Comparaison next- et third generation sequencing
+- 3Rd-gen : +2.13% de SNP, 3.89% indel
+  - confirmé pour régions GIAB: high-confidenc, filtered et en dehors
+- Idem dans régions riches en GC e pauvre en GC
+- Idem dans régions hautement répétées
+- Confirmation manuelle sur IGV
+***** Coût
+Test 4 CPUS: facteur 5:
+  - dnaseq/score < 50 heures CPU , haplotypecaller ~ 150 et deepvariant ~200 (sic)

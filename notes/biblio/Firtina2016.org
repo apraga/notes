@@ -1,0 +1,3 @@
+BWA MEM est peusdo-random et si les reads sont mélangés, un read ambigu peut changer d'aligenment !
+  A noter aussi qu'HaplotypeCaller est le plus sensible à ce mélange (1%)..
+

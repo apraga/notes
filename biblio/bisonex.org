@@ -1959,7 +1959,7 @@
 :PROPERTIES:
 :TITLE:    ANNOVAR: functional annotation of genetic variants from high-throughput sequencing data
 :BTYPE:    article
-:CUSTOM_ID: Wang
+:CUSTOM_ID: Wang2010
 :ABSTRACT: Abstract. High-throughput sequencing platforms are generating massive amounts of genetic variation data for diverse genomes, but it remains a challenge to pinpo
 :AUTHOR:   Wang, Kai and Li, Mingyao and Hakonarson, Hakon
 :DOI:      10.1093/nar/gkq603
@@ -2886,12 +2886,11 @@
 :YEAR:     2017
 :END:
 
-
 * Genomic variant annotation and prioritization with ANNOVAR and wANNOVAR
 :PROPERTIES:
 :TITLE:    Genomic variant annotation and prioritization with ANNOVAR and wANNOVAR
 :BTYPE:    article
-:CUSTOM_ID: Yang
+:CUSTOM_ID: Yang2015
 :ABSTRACT: This protocol describes how to annotate genomic variants using either the ANNOVAR software or the web-based wANNOVAR tool. Recent developments in sequencing techniques have enabled rapid and high-throughput generation of sequence data, democratizing the ability to compile information on large amounts of genetic variations in individual laboratories. However, there is a growing gap between the generation of raw sequencing data and the extraction of meaningful biological information. Here, we describe a protocol to use the ANNOVAR (ANNOtate VARiation) software to facilitate fast and easy variant annotations, including gene-based, region-based and filter-based annotations on a variant call format (VCF) file generated from human genomes. We further describe a protocol for gene-based annotation of a newly sequenced nonhuman species. Finally, we describe how to use a user-friendly and easily accessible web server called wANNOVAR to prioritize candidate genes for a Mendelian disease. The variant annotation protocols take 5\textendash{}30 min of computer time, depending on the size of the variant file, and 5\textendash{}10 min of hands-on time. In summary, through the command-line tool and the web server, these protocols provide a convenient means to analyze genetic variants generated in humans and other species.
 :AUTHOR:   Yang, Hui and Wang, Kai
 :DATE:     2015-09-17

@@ -1,0 +1,23 @@
+* Description
+  - SNP, indel, "multiple nucleotide polymorphisms"
+  - annotation sur position (intronic, UTR, upstream, downsstream, site d'épissage, intergénique)
+  - pour gènes non codant, annotation + biotype si information disponible
+  - prédiction par rapport aux gènes codant pour les protéines (synonyme ou non, gain/pert d'un codon start  ou stop, frameshift)
+  - différence avec annovar : plus de version du génome, un peu plus rapide
+  @table
+  |       Warnings      |                          Any warnings or errors.                          |
+  |       Gene_ID       |                         Gene ID (usually ENSEMBL)                         |
+  |      Gene_name      |                                 Gene name                                 |
+  |       Bio_type      |                      BioType, as reported by ENSEMBL.                     |
+  |     Trancript_ID    |                      Transcript ID (usually ENSEMBL)                      |
+  |       Exon_ID       |                         Exon ID (usually ENSEMBL)                         |
+  |      Exon_Rank      |                        Exon number on a transcript                        |
+  |        Effect       |                 Effect of this variant. See details below.                |
+  |    old_AA/new_AA    |                             Amino acid change                             |
+  | old_codon/new_codon |                                Codon change                               |
+  |    Codon_Num(CDS)   |                            Codon number in CDS                            |
+  |   Codon_degenaracy  |                              Codon degenaracy                             |
+  |       CDS_size      |                             CDS size in bases                             |
+  |  Custom_interval_ID | If any custom interval was used, add the IDs here (may be more than one). |
+  @end
+  - Testé sur 356 000 SNPs entre 2 strans de drosophile

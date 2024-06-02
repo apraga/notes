@@ -1,0 +1,26 @@
+#+begin_quote
+In brief, Minigraph builds a pangenome by starting from a reference assembly,
+here GRCh38, and iteratively and progressively adds in additional assemblies,
+recording only SVs ≥ 50 bases.
+#+end_quote
+
+**** Validation avec GIAB
+
+1. Assemblage (Trio-Hifiasm)
+2. Alignement sur GRch38
+3. Appel de variant
+4. Exclusion des régions "structurally variant": alignement reads pacbio en GRCh38, appel de variant puis fusion des VCFs (il faut au moins 2 calleur) puis dipcall (pas clair, mais voir méthode rDefining confident regions for variant benchmarking)
+5. Comparaison avec GIAB
+
+#+begin_quote
+Evaluation using the GIAB benchmark
+
+The small variant calls were evaluated using HG001–HG007 with the GIAB benchmark
+(v.4.2.1)124, on HG002 in challenging medically relevant autosomal genes47, and
+on HG002 using a preliminary draft assembly-based benchmark. For the draft
+assembly-based benchmark, we used Dipcall38 to align a scaffolded, high-coverage
+Trio-Hifiasm assembly21,38 to GRCh38 and call variants, and then we excluded
+structurally variant regions from the dip.bed file as described above for the
+benchmarking of small variants from the pangenome graph.
+#+end_quote
+

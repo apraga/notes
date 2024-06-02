@@ -1,0 +1,10 @@
+- motivation: SNP = variant la plus commune -> besoin d'un catalogue pour étude d'assocation, fonctionnel, pharmacogénomique...
+- single nucleatide substitution (majorité), polymorphism petit indel, région invariant (important aussi !), STR
+- peut inclure des variants pathègène
+- seulemen homosapiens avec 3,341,554,567 soumissions https://www.ncbi.nlm.nih.gov/projects/SNP/snp_summary.cgi, accédé 17 décembre 2023
+- majrité = homo sapiens
+Selon https://www.ncbi.nlm.nih.gov/books/NBK21088/,
+- partie humaine = soumission du consortium SNP, extraction du génome (human gnome project), laboratoires (sans précisions)
+- contexte fonctionnel (codant, intro, près gène...) calculé à partir de la séquence adjacente
+- position dans la protéine si changement d'acide aminé
+- calcul hétérozygosité moyenne (= probabilité que les 2 allèles soit dans un individu diploîde) selon allèles soumies

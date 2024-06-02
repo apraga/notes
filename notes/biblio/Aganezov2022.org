@@ -1,0 +1,39 @@
+NB: 229Mb sont "non-syntenique" = ne s'alignent pas de manière linéaire en GRCh38 sur un intervalle de 1Mbp (ex: inversion)
+**** Résultats
+- Héritage
+  - GRCh38: 1 indivu représente 72:6% du génome (56% africain, 28.1% Européan), le second plus gros contributeur est 5.5% majoritairement asie east
+  - T2T : principalement européenne
+  - les 2 ont des "introgression" de Néanderthal
+- problème de GRCh38 : aux bornes des clones utilisés, il y a des haplotypes de structures anormales -> représente des haplotypes rare pour un individu mais à une fréquence non représentative de la population:
+  - discordance GRCh38 et 1000 genomes et beaucoup plus rares en T2T
+  - et ce sont bien aux bornes des clones BAC
+- correction false duplications
+  - méthode : examen de "cluster" de variants hétérozygotes (CHM est homozygote...) en alignant sur GRCh38
+  - ces zones sont associées à des sgemental duplications, centromère ou problèmes dans gRCh38
+  - elles contiennent également des variants marqué par gnomad comme "beaucoup trop hétérozygote" (23%)
+  - après liftover T2T: 48 gènes codant (dont 14 complement contenu) dont DUSP22 (régulation immune), KMT2C (syndrome d Kleefstrah)
+  - identifié zones marqué comme duplications mais non T2T (22 gènes codants)
+- liftover clinvar : 99.8% soit > 800 000 variants (dont 99.6% des patho/probablement patho). Ceux qui ont échoué sont du à des indel différents entre GRCh38 et T2T ou bien à un liftover difficile
+- test sur 1000 genomes
+  - aligner (bwa mem) 0.97% en plus avec taux d'erreur diminué et couverture plus uniforme et charactéristiques. NB: africains = taux de mismatch le plus élevé
+  - appel de variant (haplytype caller):
+    - moins de variants par échantillions, attribué à une diminution des allèles rares, erreurs de consense et structurels (surtout pour non-africains peut-ête parce que 70% de gRCh38 vient d'un individu d'ascendace afro-européeenne et les africains ont plus de variants rares)
+    - ne proposent pas de faire l'appel de variant en T2T et lifter en 38 (si l'allèle de référence n'est pas dans l'échantilon par exemple)
+    - analyse statitisque : moins de variants de mauvaise qualité, moins de variant discordants au niveau mendelien (chez les enfants mais pas chez les parents, homozygote chez parent mais pas chez les enfants)
+    - variation de la distribution des AF : surtout rare < 0.05, intermediate et fixé ou quasi fixé. Ces derniers sont du à un variant "privé" d'un donneur ou d'une erreur de GRCh38 donc normal qu'il y en ait moins en T2T. Ceux ou tous les donneur sont hétérozygote : surtout du à des correction dans les segmental duplication fusionné (enrichi en paralag spécific variant hétérozygote). Ces 2 catégories sont la majeure partie
+  - long read:  améliore mapping, balance indel apparent et aide de novo SV ou SV dans séquence non résolue
+  - régions non résolues précédemment
+    - région no synthenize : 73-78% des SNVs avec illumina sont concordants avec long-read
+    - tests de ces régions sur le trio de GIAB et le trio du personal genome project en comparant illumian avec pacbio hifi
+      - : recall semblable et bas (21-28, 21-25) mais restreint aux duplications fusonnées de 38: 98-99 vs 64-67).
+      - correction des faux duplicats : 1% -> 57-68% en T2T (recall) et 76-95 -> 98-99 pour précision
+  - impact clinique
+    - il existe des variants "délétère" dans le génome de référence qui peut donc altérer l'interprétation d'un variant avec des efforts pour les suppriméer (NB: les citations n'ont pas l'air de le dire clairement...)
+      - test : alignement avec dipcall:: 210 variants potentiellement perte de fonction[fn:6] identifiés sur 31 gènes d'intérêt clinique[fn:7]. 158 sur 1 individu et la plupart AF=0.47 donc probablement bien toléré. Autres = indel plus grand ou allèle rares. Les 10 varintas sur gènes d'intérêt clinique diréves de paralogue dupliqué
+    - test sur 4964 gènes d'intérêt clinique ([cite:@Wagner_2022])
+      - 28 gènes sur régions non résolue /non synthénique
+      - 756 gènes touché par allèles rares ou structurelles fauesse (306 T2T) dont plupart semble corrigé en T2T
+      - exemple TNNT3 (arthrogrypose): remaniement complexe supposé (GRC a détemriné qu'il y a un problème) -> T2T: région upstream transposé "inversement" proximal du gène, ce qui le place près de TNNI2
+      - 17 sur régions probableemnt fusionnée ou dupliquée par erreur. Ex KCNE1 (fausse duplication) qui a une couverture moindre (erreur d'alignement), KCNJ18 (duplication fusonée): mielleur couverture. Discordance entre les 2 référence sur ces gènes
+    - benchmark maison en GRCh38 et T2T 269 gènes d'intérêt clinique mais difficiles: dminution FP et FN avec T2T
+

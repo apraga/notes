@@ -1,0 +1,28 @@
+Rappel historique génome:
+Différence par rapport aux autres assemblage: longue contig et scaffold, précision importante par base pair, représentation robuste région répétée et degmentally duplicately
+- lié aux clones "BAC" (> 150kbp) et avec technique complémentaires (Radiation Hybrid Mapping = chromosome fragmenté par radiation =>_ si 2 marqueurs sont "loins", ils seront probablement sur des fragments différents; étude héritabilité (Genetic Linkage Maps); comparaison de "fingerprint" sur les clones [si similaire, viennent probablement de régions qui se recouvrents] Fingerprint Maps)
+- cherche à représenter un "pan-génome" avec plusieurs donneurs
+
+GRch37 :
+- utilisé par le projet 1000 Genomes project pour représenter la diversité
+- ajout de scaffold pour locus aletrnatif: représentation alternativ pour régions fortement variable MHC + haplotype divergenge aux locus /MAPT/ et /UGT2D/ tout en conservant la linéairité des chromosomes
+- aprè 13 patches, mise à jour des coordénes -> GRCh38
+
+GRCh38 = mosaic haplotype :
+- réslution de 1000 problèmes (mettre fig 1)
+- 75mb nouvelle séquence (2.3% total) avec 5Mb supprimé
+- > 95% séquence totale, 98% séquence non centrmérique
+- odnneur principale (probablement africcan-européan ) légèment diminué
+- augmentation des "trous" mais lié au remplacement des centromère (=1 trou) en un scaffold
+- augmentation nombre de gènes 41 722
+- amélioration de l'alignement des transcrit
+- test : > 1000 gèes perte de fonction pour autisme et un kit de > 4600 gène d'exome (plus utilisé) https://www.genomeweb.com/sequencing/emory-chop-harvard-develop-medical-exome-kit-complete-coverage-5k-disease-associ ->
+- ajout de séquence alternative (pour augmen), qui améliorent l'alignement
+- tests sur clinvar:
+  - test 2 : sur 113 000 variants clinvar, ~200 unique à GRCh37. Sont sur 9 régions curées. Parmi ces variants, exemple d'un variant patho de KCNE1 (rs1805128) qui en 38 s'aligne sur plusieurs endroits avec l'ajout d'une région paralogue....
+    En 2023, il est effectivement rendu "conflicting"  https://www.ncbi.nlm.nih.gov/clinvar/variation/13479/?oq=((28518[AlleleID]))&m=NM_000219.6(KCNE1):c.253G%3EA%20(p.Asp85Asn) avec 23 soumissions
+  - test 1: alignement (bwa mem) + appel de variant  pour NA24143
+    - 10 emplacement où la profondeur a été améliorée
+    - 135 emplacements oà la couverture a été "perdue" ! (région paralogue/alléliques)
+(NB: paralogue = duplication d'un gène, avec séquence et fonction pouvant différer)
+- impact sur aligement: 99.2% alignéen 38 mais 64% reads non mappés le sont. Ceux restant: 23% sont mappés sur les régions alternatives

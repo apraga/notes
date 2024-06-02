@@ -1,0 +1,59 @@
+Apport: plusieurs séquencage de NA12878 BGI+ illumina
+**** Méthodes
+- NA12878 sur plusieurs séquenceur (exome + genome)
+| Sequencing Samples | Type | Bases (Gbp) | Read (x10^6) | Clean rare |   >Q20 |   >Q30 | GC content | Mean coverage |
+| BGISEQ500          | WES  |       29.41 |       294.30 |      0.41% | 96.72% | 89.14% |     49.75% |       328.49X |
+| MGISEQ2000         | WES  |       16.34 |       163.55 |      0.25% | 98.18% | 92.08% |     49.71% |       129.40X |
+| HiSeq4000          | WES  |       41.93 |       283.70 |      4.46% | 97.36% | 93.01% |     50.63% |       395.17X |
+| NovaSeq            | WES  |       25.88 |       178.87 |      2.25% | 95.33% | 92.67% |     49.73% |       241.52X |
+| BGISEQ500          | WGS  |      126.86 |      1270.02 |      1.76% | 93.73% | 83.33% |     41.76% |        41.03X |
+| MGISEQ2000         | WGS  |      137.36 |      1374.87 |      0.21% | 96.17% | 88.19% |     41.76% |        45.13X |
+| HiSeq4000          | WGS  |      191.00 |      1276.10 |      8.25% | 95.90% | 90.11% |     41.69% |        58.00X |
+| NovaSeq            | WGS  |       98.30 |       657.45 |      1.28% | 95.89% | 93.86% |     41.61% |        28.96X |
+| HiSeq Xten         | WGS  |      134.00 |       894.58 |      7.29% | 94.50% | 87.63% |     40.71% |        38.93X |
+
+>Q20 = moins de 1% d'erreur. >Q30 = moins de 1‰
+
+- 1 aligneur (bwa [mem non spécifiqu]) et 3 appel de variant : haplotypcaller, strelka, samtools varscan2
+- filtering et trimming
+**** Résultat
+- qualité :
+  - exome 95% avec moins de 1% d'erreur et 89% avec moins de 1‰
+  - genome 92% et 93% respectivement
+- profondeur :
+  |          |            | exome |    genome |
+  | BGI      | bgiseq500  |  328X |       41x |
+  | BGI      | mgiseq2000 |   129 |       45x |
+  | illumina | hiseq      |   395 |        58 |
+  |          | novaseq    |   241 | 28.96 (*) |
+
+(*) 92.1% > 20x
+- Appel de variant
+  - Exome:
+    - comparaison entre pipeliness
+      - meilleur précision quelque soit le seuil de recall pour exome. Mais en regardant la figure, GATK4 identique ou légèrement meilleur sur indel sur ihseq400 et novaseq (NB: l'article parle d'un "weaker recall" pour SK par rapport à GATK4 ??)
+      - F-score : divergences importance (0.75-0.91)
+        - SNP: SK > GAK > sv quelque soit la plateforme.
+        - indel : SK > autre pour une plateforme donnée. Pour BIG, Sk est meilleur mais GATK ~ SK
+    - très bonne concordance :
+      - SNP : > 97.13% des variants détectés par 10 combinaisons (90.92% retrouvé par  les 12 combinaisons)
+        - meilleur score : novaseq + samtools varscan. Pire = hiseq400-SK2
+      - indel : > 93.2% indel détecté par au moins 10 combinaisons
+        - idem (meilleur score : novaseq + samtools varscan. Pire = hiseq400-SK2)
+    - temps d'exécution :
+      - méthode: downsampling  -> 100x puis test avec donwnsampling 20x, 40x, 60X et 80x
+      - 88GB mémoire, 24 cpus
+      - résultat: strelka2 plus rapide que GATK (facteur 6-8 selon séquenceur) et que SV (facteur 67)
+  - Genome
+    - comparaison entre pipelines
+      - SK2 = meilleur précision.
+      - performance similaire exome
+      - Pour SNP, bonne performance pour toutes les combinaison. SK > GATK pour gbi et illumina (F-score).
+      - indel : gatk et sk2 ont meilleur performance. Illumina: SK2 > gatk, SV. Idem BGI (f-score)
+      - Conclusion : SK2 meilleur pour bg/illumina sur exomegenome
+    - très bonne concordance:
+      - 94.22% SNV détecté par au moins 10 combinaison
+      - 90.63% indel détecté par au moins 13 (plus grande divergence, comme pour les exomes)
+    - temps d'exécution (même méthode et même config): sk2 42-45x plus rapide que GATK et 62-69x que SV  (illumina-bgi)
+
+Conclusion: recommande strelka2
