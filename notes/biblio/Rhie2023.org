@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       aa07aa1e-d0de-43cc-b0b2-04dc9bf9065b
+:END:
   - plupart des "trous" insolubles à cause de de polymorphismes de structures aux extrémitées et nombreux éléments répétés/polymorphes non finis ou mal assemblé
   - 151Mbp de séquencce inconnues:
     - péri/sous-télomorique, duplication segmentaire, ADN ribosomal

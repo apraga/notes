@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       0d5892d4-cb09-446c-b432-350486b9ec3d
+:END:
 Approches classique:
 1. aligner reads sur référence et examine différences -> sensibe, peu coûteux mais souvent ne se concentre que un 1 type de variant (errours sur indel/large variant), peut échoeur sur régions qui divergent fortement, plutôt pour SNP (cuteux indel)
 2. Assemblage sans réference : graph (dit "de Bruijn") et on cherche dans ce graphes des polymorphosimes. Avantage: gère les régions fortement divergentes, fonctionne pour haplotype au niveau local (plutôt qu'un variant), évite alignement. Mais coûteux, moins sensible, limité sur séquence répété (quand reads sont "coupés" in k-remrs)

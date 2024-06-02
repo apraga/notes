@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       49509ff4-6e75-40c5-accd-7cf19a22fb23
+:END:
 
 **** Méthode:
 - Génome : NA12878 (TruSeq), synthetic diploid (HiSeq) et simulé (NEAT)

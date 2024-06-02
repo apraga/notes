@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       690b8ced-c76b-4dae-bb01-90eaccceda44
+:END:
 
 - GATK = le plus utilisé
 - pas le plus performant : deepvariant = precisionFDA en 2016 (préision SNP) et en 2020  Illumina dragen

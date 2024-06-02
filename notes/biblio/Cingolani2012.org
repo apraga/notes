@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       f1c7c3e7-366c-4679-a690-75f2faeed7fa
+:END:
 * Description
   - SNP, indel, "multiple nucleotide polymorphisms"
   - annotation sur position (intronic, UTR, upstream, downsstream, site d'épissage, intergénique)

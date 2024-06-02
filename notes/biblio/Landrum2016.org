@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       90872a02-78e8-44f6-8104-1071775e3a26
+:END:
 - fusion d'interprétations soumises par utilisateur pour signification clinique/fonctionnelle de variant
 - germline + somatic, toutel se régions, toute les types , toutes les tailles, SNVs, CNV, cyto
 - contexte recherche ou clinique

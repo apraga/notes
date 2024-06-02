@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       86021c82-dcb1-4c03-a7e3-0daed5511ca4
+:END:
 Apport : DeepVariant et Sention non testé
 **** Méthodes
 - Alignement : BWA-MEM

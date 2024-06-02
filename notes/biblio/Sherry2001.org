@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       b200d02e-475b-40c9-8aa2-32f16d04d2bc
+:END:
 - motivation: SNP = variant la plus commune -> besoin d'un catalogue pour étude d'assocation, fonctionnel, pharmacogénomique...
 - single nucleatide substitution (majorité), polymorphism petit indel, région invariant (important aussi !), STR
 - peut inclure des variants pathègène

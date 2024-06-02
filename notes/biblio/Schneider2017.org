@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       735aa970-adb6-4402-a532-1b38efa70aad
+:END:
 Rappel historique génome:
 Différence par rapport aux autres assemblage: longue contig et scaffold, précision importante par base pair, représentation robuste région répétée et degmentally duplicately
 - lié aux clones "BAC" (> 150kbp) et avec technique complémentaires (Radiation Hybrid Mapping = chromosome fragmenté par radiation =>_ si 2 marqueurs sont "loins", ils seront probablement sur des fragments différents; étude héritabilité (Genetic Linkage Maps); comparaison de "fingerprint" sur les clones [si similaire, viennent probablement de régions qui se recouvrents] Fingerprint Maps)

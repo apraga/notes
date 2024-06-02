@@ -1,4 +1,9 @@
+:PROPERTIES:
+:ID:       817481c5-3bca-4044-8319-cdf19daf6301
+:ROAM_REFS: @Chen2019
+:END:
 Apport: plusieurs séquencage de NA12878 BGI+ illumina
+
 **** Méthodes
 - NA12878 sur plusieurs séquenceur (exome + genome)
 | Sequencing Samples | Type | Bases (Gbp) | Read (x10^6) | Clean rare |   >Q20 |   >Q30 | GC content | Mean coverage |

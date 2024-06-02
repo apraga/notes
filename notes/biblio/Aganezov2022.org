@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       bb146ba2-d435-435e-8056-e7e6fa407a59
+:END:
 NB: 229Mb sont "non-syntenique" = ne s'alignent pas de manière linéaire en GRCh38 sur un intervalle de 1Mbp (ex: inversion)
 **** Résultats
 - Héritage

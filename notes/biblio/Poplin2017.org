@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       058149e3-94ed-476d-a6a6-959e04a6fcac
+:END:
 Contient algorithme haplotypecaller
 
 Figure: https://gatk.broadinstitute.org/hc/en-us/articles/360035531412-HaplotypeCaller-in-a-nutshell

@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       bf860cd5-2946-4418-9b87-1f687ae97b89
+:END:
 **** Principe
 Théorème de Bayes pour détecter des haplotypes à partir des reads.
 Principe: sur un locus donné pour R_1... R_n, on calcule la probabilité d'un génotype G à partir d'hypothèse sur la distribution d'alèlle a priori P(G) et sur la qualité de séquencage P(R_1... R):

@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       f0084af1-50cd-4222-81f4-f89f67aed213
+:END:
 Motivation
 #+begin_quote
 the widely used GATK uses logistic regression to model base errors, hidden Markov mod- els to compute read likelihoods, and naive Bayes classification to identify variants, which are then filtered to remove likely false positives using a Gaussian mixture model with hand-crafted features capturing common error modes5."

@@ -1,1 +1,4 @@
+:PROPERTIES:
+:ID:       94740ca4-78bd-4db5-8d21-e01126fe7a02
+:END:
 Les zones alpha satellites sont représentées à partir d'un modèle crée à partir de séquencage du génome. Cf Fig 1

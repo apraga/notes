@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       26acd7bc-7e44-4427-bf11-d79062b783a3
+:END:
 Croissance anormale de cellules trophoblastique. Pas de tissu embryonnaire ou foetal.
 Pas de contribution maternelle, seulement paternelle => homozyoget.
 Ovum vide sans noyau fertilisé par du sperm 23X, qui va se réplicer avec caryotype 46XX (isodisomy paternelle uniparentelle)o

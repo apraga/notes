@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       95251dd4-5713-4c94-b774-11659b701afe
+:END:
 Suite de Hwang 2015
 
 Aligneur + appel de variant mais utile surtout pour appel de variant

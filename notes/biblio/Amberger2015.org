@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       8be729e9-b9a9-4855-b588-59fc04d575a3
+:END:
 - Continuité de A. MkKusick Mendelian INheritance in Man
 - publié en ligne 1987
 - source = veille scientifique journaux biomédicaux peer-reviewed (45) + pubmed

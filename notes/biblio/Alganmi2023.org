@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       b2802d9c-0987-4857-a0ea-e40e94a2a9f6
+:END:
 - Exome !! haéplotyypecaller vs dragen
 - Comparaison en hg19, novaseq6000
 - n'utilise pas happy mais un outil illumina
