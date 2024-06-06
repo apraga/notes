@@ -47,3 +47,153 @@ CLOSED: [2024-05-21 Tue 23:25] SCHEDULED: <2024-05-20 Mon>
 :ARCHIVE_TODO: KILL
 :END:
 /Entered on/ [2024-05-19 Sun 13:23]
+
+* DONE Assets genome GRCh38 :scidataflow:
+CLOSED: [2024-05-29 Wed 22:44] SCHEDULED: <2024-05-29 Wed>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-06 Thu 22:30
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Recherche/Bisonex/Article JOSS
+:ARCHIVE_CATEGORY: bisonex
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: article joss
+:END:
+
+* DONE Assets genome indexé GRCh38 :scidataflow:
+CLOSED: [2024-05-29 Wed 22:44] SCHEDULED: <2024-05-29 Wed>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-06 Thu 22:30
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Recherche/Bisonex/Article JOSS
+:ARCHIVE_CATEGORY: bisonex
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: article joss
+:END:
+
+* DONE Assets dbsnp GRCh38 :scidataflow:
+CLOSED: [2024-05-30 Thu 18:55] SCHEDULED: <2024-05-29 Wed>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-06 Thu 22:30
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Recherche/Bisonex/Article JOSS
+:ARCHIVE_CATEGORY: bisonex
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: article joss
+:END:
+
+* DONE Assets clinvar GRCh38 :scidataflow:
+CLOSED: [2024-05-30 Thu 18:55] SCHEDULED: <2024-05-29 Wed>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-06 Thu 22:30
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Recherche/Bisonex/Article JOSS
+:ARCHIVE_CATEGORY: bisonex
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: article joss
+:END:
+
+* DONE Assets vep GRCh38 :scidataflow:
+CLOSED: [2024-05-30 Thu 18:55] SCHEDULED: <2024-05-29 Wed>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-06 Thu 22:30
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Recherche/Bisonex/Article JOSS
+:ARCHIVE_CATEGORY: bisonex
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: article joss
+:END:
+
+* DONE Assets cadd GRCh38 :scidataflow:
+CLOSED: [2024-05-30 Thu 18:55] SCHEDULED: <2024-05-29 Wed>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-06 Thu 22:30
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Recherche/Bisonex/Article JOSS
+:ARCHIVE_CATEGORY: bisonex
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: article joss
+:END:
+
+* DONE Vérifier checksum GRCh38 :scidataflow:
+CLOSED: [2024-06-01 Sat 15:27] SCHEDULED: <2024-05-30 Thu>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-06 Thu 22:30
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Recherche/Bisonex/Article JOSS
+:ARCHIVE_CATEGORY: bisonex
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: article joss
+:END:
+/Entered on/ [2024-05-30 Thu 18:55]
+- [X] genome
+- [X] vep
+- [X] cadd -> script en cours
+- [ ] dbsnp -> retélécharger
+
+* DONE Asset GRch38.p14 (sans index) :scidataflow:
+CLOSED: [2024-06-01 Sat 17:19] SCHEDULED: <2024-06-01 Sat>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-06 Thu 22:30
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Recherche/Bisonex/Article JOSS
+:ARCHIVE_CATEGORY: bisonex
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: article joss
+:END:
+/Entered on/ [2024-06-01 Sat 16:02]
+
+* DONE Asset CADD v1.7 :scidataflow:
+CLOSED: [2024-06-01 Sat 22:59] SCHEDULED: <2024-06-01 Sat>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-06 Thu 22:30
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Recherche/Bisonex/Article JOSS
+:ARCHIVE_CATEGORY: bisonex
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: article joss
+:END:
+/Entered on/ [2024-06-01 Sat 16:02]
+
+* DONE Résumé présentation :jcadd2024:
+CLOSED: [2024-06-01 Sat 23:51] SCHEDULED: <2024-06-01 Sat>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-06 Thu 22:31
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Recherche/Bisonex
+:ARCHIVE_CATEGORY: bisonex
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE Faire relire résumé Paul+Alexis :jcadd2024:
+CLOSED: [2024-06-06 Thu 22:31]
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-06 Thu 22:31
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Recherche/Bisonex
+:ARCHIVE_CATEGORY: bisonex
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE Soumetre résumé :jcadd2024:
+CLOSED: [2024-06-05 Wed 22:07] DEADLINE: <2024-06-07 Fri>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-06 Thu 22:31
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Recherche/Bisonex
+:ARCHIVE_CATEGORY: bisonex
+:ARCHIVE_TODO: DONE
+:END:
+/Entered on/ [2024-05-19 Sun 13:24]
+
+* DONE Mail Kamel : présentation en 2 temps JCADD 2024 ?
+CLOSED: [2024-05-28 Tue 00:05]
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-06 Thu 22:31
+:ARCHIVE_FILE: ~/org/projects.org
+:ARCHIVE_OLPATH: Recherche/Bisonex
+:ARCHIVE_CATEGORY: bisonex
+:ARCHIVE_TODO: DONE
+:END:
+1. Retour d'expérience sur installation nix
+2. Résultat thèse
+/Entered on/ [2024-05-28 Tue 00:04]

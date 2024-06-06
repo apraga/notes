@@ -3,7 +3,7 @@
 :PROPERTIES:
 :CATEGORY: bisonex
 :END:
-*** Articles :article:
+*** Article dependencies (JOSS) :article:deps:
 **** STRT Dépendences Sarek [4/9]
 ***** DONE Package nix Dragmp
 ***** WAIT PR package nix Dragmap
@@ -17,50 +17,28 @@
 ***** DONE Package nix multiqc
 ***** WAIT PR Package nix multiqc
 **** TODO Support pour pull partiel :scidataflow:
-**** DONE Assets genome GRCh38 :scidataflow:
-CLOSED: [2024-05-29 Wed 22:44] SCHEDULED: <2024-05-29 Wed>
-**** DONE Assets genome indexé GRCh38 :scidataflow:
-CLOSED: [2024-05-29 Wed 22:44] SCHEDULED: <2024-05-29 Wed>
-**** DONE Assets dbsnp GRCh38 :scidataflow:
-CLOSED: [2024-05-30 Thu 18:55] SCHEDULED: <2024-05-29 Wed>
-**** DONE Assets clinvar GRCh38 :scidataflow:
-CLOSED: [2024-05-30 Thu 18:55] SCHEDULED: <2024-05-29 Wed>
-**** DONE Assets vep GRCh38 :scidataflow:
-CLOSED: [2024-05-30 Thu 18:55] SCHEDULED: <2024-05-29 Wed>
-**** DONE Assets cadd GRCh38 :scidataflow:
-CLOSED: [2024-05-30 Thu 18:55] SCHEDULED: <2024-05-29 Wed>
 **** KILL Assets spliceai GRCh38 :scidataflow:
 CLOSED: [2024-05-30 Thu 18:55] SCHEDULED: <2024-05-29 Wed>
 **** TODO Assets genome T2T :scidataflow:
 **** TODO Assets genome indexé T2T :scidataflow:
 **** TODO Assets dbsnp T2T :scidataflow:
 **** TODO Assets clinvar T2T :scidataflow:
-**** DONE Vérifier checksum GRCh38 :scidataflow:
-CLOSED: [2024-06-01 Sat 15:27] SCHEDULED: <2024-05-30 Thu>
-/Entered on/ [2024-05-30 Thu 18:55]
-- [X] genome
-- [X] vep
-- [X] cadd -> script en cours
-- [ ] dbsnp -> retélécharger
 **** WAIT PR assets GRCh38 [[https://github.com/vsbuffalo/scidataflow/issues/21][github]] :scidataflow:
 /Entered on/ [2024-06-01 Sat 15:27]
-**** DONE Asset GRch38.p14 (sans index) :scidataflow:
-CLOSED: [2024-06-01 Sat 17:19] SCHEDULED: <2024-06-01 Sat>
-/Entered on/ [2024-06-01 Sat 16:02]
-**** DONE Asset CADD v1.7 :scidataflow:
-CLOSED: [2024-06-01 Sat 22:59] SCHEDULED: <2024-06-01 Sat>
-/Entered on/ [2024-06-01 Sat 16:02]
-*** DONE Résumé présentation :jcadd2024:
-CLOSED: [2024-06-01 Sat 23:51] SCHEDULED: <2024-06-01 Sat>
-*** WAIT Faire relire résumé Paul+Alexis :jcadd2024:
-*** TODO Soumetre résumé :jcadd2024:
-DEADLINE: <2024-06-07 Fri>
-/Entered on/ [2024-05-19 Sun 13:24]
-*** DONE Mail Kamel : présentation en 2 temps JCADD 2024 ?
-CLOSED: [2024-05-28 Tue 00:05]
-1. Retour d'expérience sur installation nix
-2. Résultat thèse
-/Entered on/ [2024-05-28 Tue 00:04]
+**** TODO Revoir biblio base de données [[id:6f89f301-1b55-43cb-b3be-bf954bbc079e][Base de données pour pipeline constit]]
+SCHEDULED: <2024-06-09 Sun>
+/Entered on/ [2024-06-06 Thu 22:59]
+*** Article
+**** DONE Bug noodles : parsing Clinvar vcf fails
+CLOSED: [2024-06-06 Thu 21:55] SCHEDULED: <2024-06-06 Thu>
+/Entered on/ [2024-06-06 Thu 21:55]
+Corrigé https://github.com/zaeleus/noodles/issues/241#issuecomment-2152112680
+**** TODO Algorithme rapide intersection VCF-BED
+Discussion sur github : pas de réponse
+*** TODO Candidater prix logiciel libre de la recherche
+SCHEDULED: <2025-04-06 Sun>
+https://www.ouvriralascience.fr
+/Entered on/ [2024-06-06 Thu 23:00]
 ** NF1
 :PROPERTIES:
 :CATEGORY: nf1
@@ -71,21 +49,28 @@ CLOSED: [2024-05-26 Sun 21:12] SCHEDULED: <2024-05-21 Tue>
 *** TODO Re-soumettre article pediatrics
 DEADLINE: <2024-06-18 Tue>
 /Entered on/ [2024-05-19 Sun 13:22]
-*** WAIT Compte-rendu anapath Dr Mussini
-SCHEDULED: <2024-06-05 Wed>
+*** WAIT Compte-rendu anapath Dr Mussini via Théo
+SCHEDULED: <2024-06-07 Fri>
 /Entered on/ [2024-06-01 Sat 17:24]
 Ne répond pas
 demande Théo sinon voir avec Michaelo pour onco ped
+*** CR anapath Dr Mussini via oncoped: secrétariat
+SCHEDULED: <2024-06-07 Fri>
+*** CR anapath Dr Mussini via oncoped : Michaela
+SCHEDULED: <2024-06-10 Mon>
 * Japonais
 :PROPERTIES:
 :CATEGORY: japonais
 :END:
 ** Intermediate Japanese
-SCHEDULED: <2024-06-02 Sun .+1d>
+SCHEDULED: <2024-06-06 Thu .+1d>
 :PROPERTIES:
 :STYLE:    habit
 :LAST_REPEAT: [2024-05-26 Sun 10:01]
 :END:
+- State "DONE"       from ""           [2024-06-05 Wed 10:01]
+- State "DONE"       from ""           [2024-06-04 Tue 10:01]
+- State "DONE"       from ""           [2024-06-02 Sun 10:01]
 - State "DONE"       from ""           [2024-06-01 Sat 10:01]
 - State "DONE"       from ""           [2024-05-31 Fri 10:01]
 - State "DONE"       from ""           [2024-05-30 Thu 10:01]
@@ -115,6 +100,8 @@ CLOSED: [2024-05-28 Tue 19:45] SCHEDULED: <2024-05-28 Tue>
 - Pas dans les papiers Allondaz
 - Attente facture renvoyée par courrier
   recu, transmis expert<2024-05-28 Tue>
+** WAIT Suspendre assurance moto
+/Entered on/ [2024-06-03 Mon 22:44]
 * Internat
 :PROPERTIES:
 :CATEGORY: internat
@@ -136,10 +123,14 @@ SCHEDULED: <2024-05-19 Sun>
 *** DONE Mail Quentin pour vérifier stage Biomnis possible en docteur junior
 CLOSED: [2024-05-28 Tue 19:51] SCHEDULED: <2024-05-28 Tue>
 /Entered on/ [2024-05-27 Mon 23:47]
-*** TODO Mail biomnis Laure Raymond via Louis Januel
-SCHEDULED: <2024-06-03 Mon>
+*** DONE Mail biomnis Laure Raymond via Louis Januel
+CLOSED: [2024-06-06 Thu 20:57] SCHEDULED: <2024-06-06 Thu>
 /Entered on/ [2024-05-27 Mon 23:48]
 Ok pour interchu en docteur junior ?
+*** DONE Relancer Quentin pour interchu Biomnis
+CLOSED: [2024-06-05 Wed 22:23]
+/Entered on/ [2024-06-03 Mon 22:45]
+Ne répond pas mais Oriane dit OK
 * Maison
 :PROPERTIES:
 :CATEGORY: maison
@@ -147,6 +138,9 @@ Ok pour interchu en docteur junior ?
 ** TODO Contacter RED pour changer adresse sur facture
 SCHEDULED: <2024-06-11 Tue>
 /Entered on/ [2024-05-19 Sun 13:56]
+** TODO Payer loyer grenoble
+SCHEDULED: <2024-06-05 Wed>
+/Entered on/ [2024-06-03 Mon 22:52]
 * Divers
 :PROPERTIES:
 :CATEGORY: divers
@@ -166,6 +160,9 @@ CLOSED: [2024-05-27 Mon 23:54] SCHEDULED: <2024-05-27 Mon>
 ** TODO PR thème modus dans alacritty-themes
 /Entered on/ [2024-05-28 Tue 20:03]
 Refusé mais PR trop nombreuse
+** TODO Utiliser token RED
+DEADLINE: <2024-06-09 Sun> SCHEDULED: <2024-06-07 Fri>
+/Entered on/ [2024-06-05 Wed 22:20]
 * Scrap
 ** DONE Aerial spincity
 CLOSED: [2024-05-26 Sun 00:14] SCHEDULED: <2024-05-25 Sat>
@@ -181,7 +178,25 @@ CLOSED: [2024-05-26 Sun 21:12] SCHEDULED: <2024-05-26 Sun>
 :END:
 ** TODO Review PR  gitftless 154351
 /Entered on/ [2024-05-20 Mon 00:08]
+* Gentoo
+:PROPERTIES:
+:CATEGORY: gentoo
+:END:
+** TODO Mise à jour Julia 1.10.4
+SCHEDULED: <2024-06-06 Thu>
+/Entered on/ [2024-06-05 Wed 22:10]
+On essaie sans les patches
 * Histoire
 ** TODO Notes définition fascisme [[https://www.reddit.com/r/AskHistorians/comments/e57h4n/what_is_fascism/][/r/askhistorians]]
 SCHEDULED: <2024-05-25 Sat>
 /Entered on/ [2024-05-25 Sat 11:42]
+
+* Santé
+:PROPERTIES:
+:CATEGORY: santé
+:END:
+** DONE Demander carte de mutuelle
+CLOSED: [2024-06-05 Wed 22:08] SCHEDULED: <2024-06-05 Wed>
+/Entered on/ [2024-06-05 Wed 22:07]
+Sera envoyée par courrier (adresse à mise à jour)
+Doit envoyer un code pour accès second espace personnel

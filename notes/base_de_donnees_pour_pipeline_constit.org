@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       6f89f301-1b55-43cb-b3be-bf954bbc079e
+:END:
+#+title: Base de données pour pipeline constit
+#+filetags: bisonex article
+# Solution existantes
+
+Galaxy = juste un wrapper autour de SRA https://usegalaxy.org/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fsra_tools%2Fsam_dump%2F3.1.1%2Bgalaxy0&version=latest
+refgénie = gère les version de génomes https://refgenie.databio.org/en/latest/
+
+# Données
+SRA = dispon sur AWS également https://registry.opendata.aws/ncbi-sra/
+1000 génomes sur AWS https://registry.opendata.aws/1000-genomes/
+broad genomes = (pas les version intermédiaires ?) https://s3.amazonaws.com/broad-references/broad-references-readme.html
+GIAB https://registry.opendata.aws/giab/
+1000 génomes avec dragen https://registry.opendata.aws/ilmn-dragen-1kgp/
+
+# Base de test
+https://genomics-benchmark-datasets.s3.amazonaws.com/README.txt
+https://s3.amazonaws.com/gatk-test-data/gatk-test-data-readme.html
+
+# tangente: et Apache parquet ?
+Utile seulement si on a l'infrastructure associée. Pas adapté à mon cas d'usage
+exemple https://www.diva-portal.org/smash/get/diva2:1596566/FULLTEXT01.pdf
+
+AWS : clinvar, 1000 genomes https://github.com/aws-samples/data-lake-as-code/tree/roda?tab=readme-ov-file#readme
+Azure : gnomAD, 1000 genomes https://techcommunity.microsoft.com/t5/healthcare-and-life-sciences/genomic-data-in-parquet-format-on-azure/ba-p/3150554
