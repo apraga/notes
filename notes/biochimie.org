@@ -3,6 +3,5 @@
 :END:
 #+title: Biochimie
 
-[[id:5e5778f1-dfd3-4268-8ddd-05d16957a6c5][ALAT]]
-[[id:864caae0-07ca-457b-9b67-09a3fed1fdb3][ASAT]]
+[[id:90cbcd7e-9606-47b8-ad0b-2c4d38996b1b][Transaminase (ASAT, ALAT)]]
 [[id:0aebd019-c8f1-4f88-8a6b-94e06eb14f64][Acides aminés]]
