@@ -1,9 +1,0 @@
-** #gentoo #packaging
-:PROPERTIES:
-:CUSTOM_ID: gentoo-packaging
-:END:
-* Guru
-:PROPERTIES:
-:CUSTOM_ID: guru
-:END:
-Tester avec =pkgcheck scan= Commiter avec =git commit -S -m "lol"=

@@ -1,4 +1,8 @@
-​#gentoo #packaging #haskell
+:PROPERTIES:
+:ID:       eb541894-f3a0-4958-b2cd-7c091b5ab0d7
+:END:
+#+title: Ebuild Gentoo pour Haskell
+#+filetags: gentoo packaging haskell
 
 Génerer l'ebuild avec hackport
 

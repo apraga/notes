@@ -35,6 +35,11 @@ CLOSED: [2024-06-06 Thu 21:55] SCHEDULED: <2024-06-06 Thu>
 Corrigé https://github.com/zaeleus/noodles/issues/241#issuecomment-2152112680
 **** TODO Algorithme rapide intersection VCF-BED
 Discussion sur github : pas de réponse
+Version actuelle (itération sur les intervalles et on query le VCF): 27s en release :(
+
+Améliorations: https://users.rust-lang.org/t/looking-for-a-fast-lookup-algorithm/99987/2
+Not. interval treee avec le crate segment-tree)
+
 *** TODO Candidater prix logiciel libre de la recherche
 SCHEDULED: <2025-04-06 Sun>
 https://www.ouvriralascience.fr
@@ -49,15 +54,17 @@ CLOSED: [2024-05-26 Sun 21:12] SCHEDULED: <2024-05-21 Tue>
 *** TODO Re-soumettre article pediatrics
 DEADLINE: <2024-06-18 Tue>
 /Entered on/ [2024-05-19 Sun 13:22]
-*** WAIT Compte-rendu anapath Dr Mussini via Théo
-SCHEDULED: <2024-06-07 Fri>
+*** DONE Compte-rendu anapath Dr Mussini via Théo
+CLOSED: [2024-06-08 Sat 14:31] SCHEDULED: <2024-06-07 Fri>
 /Entered on/ [2024-06-01 Sat 17:24]
 Ne répond pas
 demande Théo sinon voir avec Michaelo pour onco ped
-*** CR anapath Dr Mussini via oncoped: secrétariat
-SCHEDULED: <2024-06-07 Fri>
-*** CR anapath Dr Mussini via oncoped : Michaela
+Mail envoyé  :laure:
+*** CR anapath Dr Mussini via oncoped : Michaela/secrétariat
 SCHEDULED: <2024-06-10 Mon>
+*** TODO Appeler Dr Mussini
+SCHEDULED: <2024-06-13 Thu>
+/Entered on/ [2024-06-08 Sat 14:32]
 * Japonais
 :PROPERTIES:
 :CATEGORY: japonais
@@ -163,6 +170,9 @@ Refusé mais PR trop nombreuse
 ** TODO Utiliser token RED
 DEADLINE: <2024-06-09 Sun> SCHEDULED: <2024-06-07 Fri>
 /Entered on/ [2024-06-05 Wed 22:20]
+** TODO Finir télécharger aerial spincity
+SCHEDULED: <2024-06-08 Sat>
+/Entered on/ [2024-06-08 Sat 14:32]
 * Scrap
 ** DONE Aerial spincity
 CLOSED: [2024-05-26 Sun 00:14] SCHEDULED: <2024-05-25 Sat>
@@ -182,10 +192,10 @@ CLOSED: [2024-05-26 Sun 21:12] SCHEDULED: <2024-05-26 Sun>
 :PROPERTIES:
 :CATEGORY: gentoo
 :END:
-** TODO Mise à jour Julia 1.10.4
-SCHEDULED: <2024-06-06 Thu>
+** WAIT Mise à jour Julia 1.10.4
 /Entered on/ [2024-06-05 Wed 22:10]
 On essaie sans les patches
+"System library symlink failure: Unable to locate libopenlibm.so on your system!" -> ok en installant les dépendences à la main
 * Histoire
 ** TODO Notes définition fascisme [[https://www.reddit.com/r/AskHistorians/comments/e57h4n/what_is_fascism/][/r/askhistorians]]
 SCHEDULED: <2024-05-25 Sat>

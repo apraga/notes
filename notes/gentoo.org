@@ -1,30 +1,26 @@
-Développer des ebuilds : [[file:Gentoo%20packaging.md][Gentoo
-packaging]]
+:PROPERTIES:
+:ID:       ba045abd-2545-4c1f-86bb-9841bee56ab1
+:END:
+#+title: Gentoo
 
 * Astuces
-:PROPERTIES:
-:CUSTOM_ID: astuces
-:END:
 ** Wiki
-:PROPERTIES:
-:CUSTOM_ID: wiki
-:END:
 [[https://wiki.gentoo.org/index.php?title=User:Alexdarcy/Buku][Créer une
 page sur son espace personnal]] puis "move" pour la publier
 
 ** Police
-:PROPERTIES:
-:CUSTOM_ID: police
-:END:
 Inspiration:
 http://kev009.com/wp/2009/12/getting-beautiful-fonts-in-gentoo-linux/
 J'ai juste utilisé eselect fontconfig + la configuration recommandée
 
 ** Portage avec git
-:PROPERTIES:
-:CUSTOM_ID: portage-avec-git
-:END:
 /etc/portage/repos.conf/gentoo.conf [DEFAULT] main-repo = gentoo
 
 [gentoo] location = /var/db/repos/gentoo sync-type = git sync-uri =
 https://github.com/gentoo-mirror/gentoo auto-sync = yes sync-depth = 1
+
+* Guru
+Tester avec =pkgcheck scan= Commiter avec =git commit -S -m "lol"=
+* Packaging
+[[id:eb541894-f3a0-4958-b2cd-7c091b5ab0d7][Ebuild Gentoo pour Haskell]]
+[[id:3dadf68c-7d06-4054-b532-23f7b3686cc4][Ebuild Gentoo pour Julia]]

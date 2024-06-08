@@ -1,7 +1,1 @@
 #+filetags: inbox
-* TODO Notes validation de méthode
-SCHEDULED: <2024-06-06 Thu>
-/Entered on/ [2024-06-06 Thu 22:21]
-* TODO Notes biblio base de données pipeline
-SCHEDULED: <2024-06-06 Thu>
-/Entered on/ [2024-06-06 Thu 22:21]
