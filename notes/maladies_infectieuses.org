@@ -4,14 +4,12 @@
 #+title: Maladies infectieuses
 #+filetags: bacterio
 
-
-
-[[id:9c228cdd-e721-4dd4-8546-d69a5aa02442][Angines]]
-[[id:e4807368-00e0-4e3b-81e5-8231002de347][Gastro-entérites]]
-[[id:4fa9f349-d2df-46fe-8132-697c20d65328][Infections cutanées]]
-[[id:e6fc90b1-6aa5-4397-9d9a-82e72a96ef07][Infections sexuellement transmissibles]]
-[[id:c085bebe-fe0c-4a2d-958e-64a8b0aec5eb][Infections urinaires]]
-[[id:6c33ba0a-0794-49ed-949a-9e056c185eb0][Légionelle]]
-[[id:7972bb4d-9a13-40ac-a1c2-015fee9d0d02][Méningites]]
-[[id:d19455f2-4d40-4d55-a5a5-e6143a37d0ed][Diarrhées]]
-[[id:2929b4d1-d0a3-475c-8a15-2e427c0bbfef][Endocardites infectieuses]]
+- [[id:9c228cdd-e721-4dd4-8546-d69a5aa02442][Angines]]
+- [[id:d19455f2-4d40-4d55-a5a5-e6143a37d0ed][Diarrhées]]
+- [[id:2929b4d1-d0a3-475c-8a15-2e427c0bbfef][Endocardites infectieuses]]
+- [[id:e4807368-00e0-4e3b-81e5-8231002de347][Gastro-entérites]]
+- [[id:4fa9f349-d2df-46fe-8132-697c20d65328][Infections cutanées]]
+- [[id:e6fc90b1-6aa5-4397-9d9a-82e72a96ef07][Infections sexuellement transmissibles]]
+- [[id:c085bebe-fe0c-4a2d-958e-64a8b0aec5eb][Infections urinaires]]
+- [[id:6c33ba0a-0794-49ed-949a-9e056c185eb0][Légionelle]]
+- [[id:7972bb4d-9a13-40ac-a1c2-015fee9d0d02][Méningites]]

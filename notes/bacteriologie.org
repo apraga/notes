@@ -4,11 +4,9 @@
 #+title: Bactériologie
 #+filetags: bacterio
 
-[[id:a54652d5-68c8-4668-aed9-50c9d719c207][Maladies infectieuses]]
-
+- [[id:a54652d5-68c8-4668-aed9-50c9d719c207][Maladies infectieuses]]
+- [[id:86fb6c69-d3dc-4ec1-a40f-9031d8ba5faf][Antibiotiques]]
 * Old
-
-[[Antibiotiques]]
 
 Bactéries [[Staphylocoques]] [[Campylobacter]] [[Proteus]]
 [[Pseudomonas]] [[Streptocoque]] [[Entérobactéries]] [[Entérocoques]]

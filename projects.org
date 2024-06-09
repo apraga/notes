@@ -33,13 +33,17 @@ SCHEDULED: <2024-06-09 Sun>
 CLOSED: [2024-06-06 Thu 21:55] SCHEDULED: <2024-06-06 Thu>
 /Entered on/ [2024-06-06 Thu 21:55]
 Corrigé https://github.com/zaeleus/noodles/issues/241#issuecomment-2152112680
-**** TODO Algorithme rapide intersection VCF-BED
+**** DONE Algorithme rapide intersection VCF-BED
+CLOSED: [2024-06-09 Sun 23:27] SCHEDULED: <2024-06-08 Sat>
 Discussion sur github : pas de réponse
 Version actuelle (itération sur les intervalles et on query le VCF): 27s en release :(
 
 Améliorations: https://users.rust-lang.org/t/looking-for-a-fast-lookup-algorithm/99987/2
 Not. interval treee avec le crate segment-tree)
 
+**** DONE Comparaison algo naïf avec bedtools intersect: on reste sur bedtools
+CLOSED: [2024-06-09 Sun 23:27] SCHEDULED: <2024-06-09 Sun>
+/Entered on/ [2024-06-09 Sun 13:49]
 *** TODO Candidater prix logiciel libre de la recherche
 SCHEDULED: <2025-04-06 Sun>
 https://www.ouvriralascience.fr
@@ -69,31 +73,34 @@ SCHEDULED: <2024-06-13 Thu>
 :PROPERTIES:
 :CATEGORY: japonais
 :END:
-** Intermediate Japanese
-SCHEDULED: <2024-06-06 Thu .+1d>
+** TODO Intermediate Japanese
+SCHEDULED: <2024-06-09 Sun .+1d>
 :PROPERTIES:
 :STYLE:    habit
 :LAST_REPEAT: [2024-05-26 Sun 10:01]
 :END:
-- State "DONE"       from ""           [2024-06-05 Wed 10:01]
-- State "DONE"       from ""           [2024-06-04 Tue 10:01]
-- State "DONE"       from ""           [2024-06-02 Sun 10:01]
-- State "DONE"       from ""           [2024-06-01 Sat 10:01]
-- State "DONE"       from ""           [2024-05-31 Fri 10:01]
-- State "DONE"       from ""           [2024-05-30 Thu 10:01]
-- State "DONE"       from ""           [2024-05-29 Wed 10:01]
-- State "DONE"       from ""           [2024-05-28 Tue 10:01]
-- State "DONE"       from ""           [2024-05-26 Sun 10:01]
-- State "DONE"       from ""           [2024-05-25 Sat 14:47]
-- State "DONE"       from ""           [2024-05-24 Fri 14:47]
-- State "DONE"       from ""           [2024-05-22 Wed 14:47]
-- State "DONE"       from ""           [2024-05-21 Tue 14:47]
-- State "DONE"       from ""           [2024-05-20 Mon 14:47]
-- State "DONE"       from ""           [2024-05-19 Sun 14:47]
-- State "DONE"       from ""           [2024-05-18 Sat 14:47]
-- State "DONE"       from ""           [2024-05-17 Fri 14:47]
-- State "DONE"       from ""           [2024-05-16 Thu 14:47]
-- State "DONE"       from ""           [2024-05-15 Wed 14:47]
+- State "DONE"       from "TODO"           [2024-06-08 Sat 10:01]
+- State "DONE"       from "TODO"           [2024-06-07 Fri 10:01]
+- State "DONE"       from "TODO"           [2024-06-06 Thu 10:01]
+- State "DONE"       from "TODO"           [2024-06-05 Wed 10:01]
+- State "DONE"       from "TODO"           [2024-06-04 Tue 10:01]
+- State "DONE"       from "TODO"           [2024-06-02 Sun 10:01]
+- State "DONE"       from "TODO"           [2024-06-01 Sat 10:01]
+- State "DONE"       from "TODO"           [2024-05-31 Fri 10:01]
+- State "DONE"       from "TODO"           [2024-05-30 Thu 10:01]
+- State "DONE"       from "TODO"           [2024-05-29 Wed 10:01]
+- State "DONE"       from "TODO"           [2024-05-28 Tue 10:01]
+- State "DONE"       from "TODO"           [2024-05-26 Sun 10:01]
+- State "DONE"       from "TODO"           [2024-05-25 Sat 14:47]
+- State "DONE"       from "TODO"           [2024-05-24 Fri 14:47]
+- State "DONE"       from "TODO"           [2024-05-22 Wed 14:47]
+- State "DONE"       from "TODO"           [2024-05-21 Tue 14:47]
+- State "DONE"       from "TODO"           [2024-05-20 Mon 14:47]
+- State "DONE"       from "TODO"           [2024-05-19 Sun 14:47]
+- State "DONE"       from "TODO"           [2024-05-18 Sat 14:47]
+- State "DONE"       from "TODO"           [2024-05-17 Fri 14:47]
+- State "DONE"       from "TODO"           [2024-05-16 Thu 14:47]
+- State "DONE"       from "TODO"           [2024-05-15 Wed 14:47]
 ** DONE Payer leçon aya <2024-05-19 Sun>
 /Entered on/ [2024-05-19 Sun 23:02]
 * Voiture
@@ -107,7 +114,8 @@ CLOSED: [2024-05-28 Tue 19:45] SCHEDULED: <2024-05-28 Tue>
 - Pas dans les papiers Allondaz
 - Attente facture renvoyée par courrier
   recu, transmis expert<2024-05-28 Tue>
-** WAIT Suspendre assurance moto
+** DONE Suspendre assurance moto
+CLOSED: [2024-06-08 Sat 18:39]
 /Entered on/ [2024-06-03 Mon 22:44]
 * Internat
 :PROPERTIES:
@@ -167,12 +175,17 @@ CLOSED: [2024-05-27 Mon 23:54] SCHEDULED: <2024-05-27 Mon>
 ** TODO PR thème modus dans alacritty-themes
 /Entered on/ [2024-05-28 Tue 20:03]
 Refusé mais PR trop nombreuse
-** TODO Utiliser token RED
-DEADLINE: <2024-06-09 Sun>
+** TODO Utiliser token RED: à télécharge
+SCHEDULED: <2024-06-10 Mon> DEADLINE: <2024-06-09 Sun>
 /Entered on/ [2024-06-05 Wed 22:20]
-** TODO Finir télécharger aerial spincity
-SCHEDULED: <2024-06-08 Sat>
+** DONE Finir télécharger aerial spincity
+CLOSED: [2024-06-09 Sun 15:38] SCHEDULED: <2024-06-08 Sat>
 /Entered on/ [2024-06-08 Sat 14:32]
+** WAIT Nettoyer bookmarks buku
+/Entered on/ [2024-06-08 Sat 18:39]
+** DONE Relire rapport Ben
+CLOSED: [2024-06-09 Sun 23:28] SCHEDULED: <2024-06-08 Sat>
+/Entered on/ [2024-06-08 Sat 18:42]
 * Scrap
 ** DONE Aerial spincity
 CLOSED: [2024-05-26 Sun 00:14] SCHEDULED: <2024-05-25 Sat>
