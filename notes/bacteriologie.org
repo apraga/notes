@@ -6,13 +6,9 @@
 
 - [[id:a54652d5-68c8-4668-aed9-50c9d719c207][Maladies infectieuses]]
 - [[id:86fb6c69-d3dc-4ec1-a40f-9031d8ba5faf][Antibiotiques]]
-* Old
+- TODO [[id:49cb0f96-854c-4a00-b072-4d98a06d6dda][Bactéries]]
 
-Bactéries [[Staphylocoques]] [[Campylobacter]] [[Proteus]]
-[[Pseudomonas]] [[Streptocoque]] [[Entérobactéries]] [[Entérocoques]]
-[[Neisseria]] [[Listeria]] [[Haemophilus]]
-
-[[file:Classification%20bactéries.md][Classification bactéries]]
+* TODO
 
 Techniques [[Milieux de culture]] [[Hémocultures]]
 [[file:Prélèvements%20bactério.md][Prélèvements bactério]]

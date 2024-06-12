@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       49cb0f96-854c-4a00-b072-4d98a06d6dda
+:END:
+#+title: Bactéries
+
+- [[id:ba0e9c3b-1479-40b1-9d29-49e2ae37a0b2][Staphylocoques]]
+- [[id:b91599e0-badb-4004-a07b-7261a6b33f81][Campylobacter]]
+- [[id:0e98750e-686d-43c0-b9e1-3cce3750e66a][Pseudomonas aeruginosa]]
+- [[id:7499182a-5937-4e81-9e02-119607120c1c][Streptocoque]]
+
+TODO
+[[Entérobactéries]] [[Entérocoques]]
+[[Neisseria]] [[Listeria]] [[Haemophilus]]
+
+[[file:Classification%20bactéries.md][Classification bactéries]]
