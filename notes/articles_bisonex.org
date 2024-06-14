@@ -4,7 +4,9 @@
 #+title: Articles bisonex
 #filetags: bisonex articles
 
-* JOSS
+[[id:6f89f301-1b55-43cb-b3be-bf954bbc079e][Base de données pour pipeline constit]]
+
+* Dépendences + donénes (JOSS)
 ** Objectifs:
 - fournir dépendences de sarek /constit/
 - fournir données de réference humaine (génome, dbsnp)
@@ -34,3 +36,5 @@ Comment : nix (dépendences), scidataflow (données)
 
 ** Base de données
 PR soumis pour faire un "asset" scidataflow avec dernière version (et génome "pipeline ready")
+
+* Exomevalidator
