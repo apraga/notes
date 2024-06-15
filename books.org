@@ -1,0 +1,273 @@
+#+TAGS: classic cs fanfic fantasy history horror la_pleiade math medecine machine_learning scifi stats
+Voir [[file:books-lists][books lists]] pour des idées
+Tags pour le genre, auteur et série dans les propriété (author et serie respectivement)
+On utilise wikinforg pour générer les entrées
+
+* STRT A History of Western Philosophy :philosophy:
+
+* TODO All The Weyrs of Pern :fantasy:
+:PROPERTIES:
+:serie: pern
+:author:   Anne McCaffrey
+:END:
+* DONE Armée romaine sous le Haut-Empire :history:rome:cs:
+* DONE A tale of two cities :classic:
+* TODO Atlas Shrugged :classic:
+* DONE At the Mountains of Madness :horror:
+CLOSED: [2024-06-15 Sat 10:59]
+:PROPERTIES:
+:author:   H. P. Lovecraft
+:cover-artist: Howard V. Brown
+:language: English
+:genre:    Science fiction, Horror
+:published: February–April 1936 (Astounding Stories)
+:publication-place: United States
+:media-type: Print (periodical)
+:thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/At_the_Mountains_of_Madness.jpg/200px-At_the_Mountains_of_Madness.jpg
+:wikinfo-id: 497415
+:URL:      https://en.wikipedia.org?curid=497415
+:END:
+At the Mountains of Madness is a science fiction-horror novella by American author H. P. Lovecraft, written in February/March 1931. Rejected that year by Weird Tales editor Farnsworth Wright on the grounds of its length, it was originally serialized in the February, March, and April 1936 issues of Astounding Stories. It has been reproduced in numerous collections.
+* HOLD Auerbach's wilderness medecine :medecine:
+- Mountain Medicine
+  - [X] Chapter 1 High-Altitude Physiology
+  - [X] Chapter 2 High-Altitude Medicine and Pathophysiology
+  - [X] Chapter 4 Avalanches
+  - [X] Chapter 5 Lightning-Related Injuries and Safety
+- Cold and Heat
+  - [X] Chapter 13 Clinical Management of Heat-Related Illnesses
+
+* DONE Belle du seigneur :classic:
+* TODO Beowulf (Michael Alexander translation) :classic:
+* DONE Candide :classic:
+* TODO Catch 22
+* STRT Cecil-Goldman (26th edition) :medecine:
+- Renal and Genitourinary Diseases 1.
+  - [X] Chapter 106 Approach to the Patient with Renal Disease
+  - [X] Chapter 107 Structure and Function of the Kidneys
+  - [X] Chapter 112 Acute Kidney Injury
+- Infectious Diseases
+  - [X] hapter 318 Candidiasis
+- Neurology Disease
+  - [X] Chapter 369 Psychiatric Disorders in Medical Practice
+* DONE Crime and punishment :classic:
+* DONE Croisades et Orient latin - XIe-XIVe siècle :history:
+
+* DONE Cyrano de bergerac :classic:
+* DONE Death's end :scifi:
+:PROPERTIES:
+:serie:    three-body problem
+:author:   Cixin Liu
+:END:
+* DONE Delumeau, J. (2005): Une histoire du monde aux temps modernes :history:modern:cs:
+* DONE Dragondrums :fantasy:
+:PROPERTIES:
+:serie: pern
+:author:   Anne McCaffrey
+:END:
+* DONE Dragonflight :fantasy:
+:PROPERTIES:
+:serie: pern
+:author:   Anne McCaffrey
+:END:
+* DONE Dragonquest :fantasy:
+:PROPERTIES:
+:serie: pern
+:author:   Anne McCaffrey
+:END:
+* DONE Dragonsinger :fantasy:
+:PROPERTIES:
+:serie: pern
+:author:   Anne McCaffrey
+:END:
+* DONE Dragonsong :fantasy:
+:PROPERTIES:
+:serie: pern
+:author:   Anne McCaffrey
+:END:
+* DONE Dubliners :classic:
+* DONE Duby, [[file:books/duby.md][Oeuvres]] :classic:la_pleiade:
+* DONE Fortress in the Eye of Time :fantasy:
+:PROPERTIES:
+:author: C. J. Cherryh
+:serie: fortress
+:END:
+* DONE Fortress of Dragons :fantasy:
+:PROPERTIES:
+:author: C. J. Cherryh
+:serie: fortress
+:END:
+* DONE Fortress of Eagles :fantasy:
+:PROPERTIES:
+:author: C. J. Cherryh
+:serie: fortress
+:END:
+* TODO Fortress of ice :fantasy:
+:PROPERTIES:
+:author: C. J. Cherryh
+:serie: fortress
+:END:
+* DONE Fortress of Owls :fantasy:
+:PROPERTIES:
+:author: C. J. Cherryh
+:serie: fortress
+:END:
+* DONE Foucault's pendulum :classic:
+* DONE Germinal :classic:
+* DONE Gombrich, E. H. (1995): The story of art :history:art:cs:
+* HOLD Gowers, T. (2010): The princeton companion to mathematics :math:
+* DONE Grousset, Renée (1942): Histoire de la chine :history:
+* DONE [[file:notes/reviews/arithmancer.org][Harry Potter and the Methods of Rationality]] :fanfic:
+:PROPERTIES:
+:serie: harry potter
+:END:
+* HOLD Haskell Programming From First Principles [5/31] :cs:haskell:
+* DONE [[file:books/homere.md][Homère, Iliade -- Odyssée]] :classic:la_pleiade:
+* DONE Hugo, [[file:books/travailleurs_de_la_mer.md][Les Travailleurs de la mer]] -- [[file:books/notre_dame_de_paris.md][Notre-Dame de Paris]] :classic:la_pleiade:
+* DONE I, Claudius :classic:
+* DONE Illusions : The Adventures of a Reluctant Messiah :classic:
+* TODO IPPC : Summary for policymaker :climate:
+* DONE Jane Eyre :classic:
+* DONE La peste :classic:
+* DONE Le coran :classic:la_pleiade:
+* DONE Le Glay, M., Voisin, J., & Le Bohec, Y. (1991): Histoire romaine :history:rome:cs:
+* DONE [[file:books/graal.md][Le Livre du Graal]] [3/3] :classic:la_pleiade:
+* DONE Le Petit Prince :classic:
+* DONE [[file:milles_et_une_nuits.md][Les Mille Et Une Nuits]] [3/3] :classic:la_pleiade:
+* DONE Lolita :classic:
+* DONE Magni, C. (2003): Les Olmèques: des origines au mythe
+* DONE [#A] Oxford history of Ancient Egypt :history:
+* DONE Plutarch, (2001): Plutarch's lives :history:antiquity:cs:
+* DONE Polybe: Histoire :history:rome:
+* DONE Pride and Prejudice and Zombies :horror:
+:PROPERTIES:
+:author:   Seth Grahame-Smith and Jane Austen
+:language: English
+:genre:    Comic novel, historical fiction, horror, thriller, comedy
+:published: April 1, 2009 Quirk Books, Philadelphia
+:publication-place: United States
+:media-type: Print (Paperback)
+:pages:    319 pp
+:isbn:     978-1-59474-334-4
+:oclc:     261176486
+:followed-by: Pride and Prejudice and Zombies: Dawn of the Dreadfuls
+:thumbnail: https://upload.wikimedia.org/wikipedia/en/thumb/f/f0/PrideandPrejudiceandZombiesCover.jpg/220px-PrideandPrejudiceandZombiesCover.jpg
+:wikinfo-id: 22218319
+:URL:      https://en.wikipedia.org?curid=22218319
+:END:
+Pride and Prejudice and Zombies is a 2009 parody novel by Seth Grahame-Smith. It is a mashup combining Jane Austen's classic 1813 novel Pride and Prejudice with elements of modern zombie fiction, crediting Austen as co-author. It was first published in April 2009 by Quirk Books and in October 2009 a Deluxe Edition was released, containing full-color images and additional zombie scenes.
+* DONE Pride and Prejudice (J. Austen) :classic:
+* STRT [[https://doc.rust-lang.org/book/][Rust Book]] :rust:cs:
+- [X] Chap 01
+- [X] Chap 02
+- [ ] Chap 04
+* DONE [[file:notes/reviews/sacrifice_arc.org][Sacrifice Arc]] :fanfic:
+:PROPERTIES:
+:serie: harry potter
+:END:
+* DONE Si c'est un homme :classic:
+* DONE The Arithmancer :fanfic:
+:PROPERTIES:
+:serie: harry potter
+:END:
+
+* HOLD The Art of Computer Programming 1 :cs:
+:PROPERTIES:
+:author:   Donald Knuth
+:language: English
+:genre:    Non-fiction Monograph
+:publisher: Addison-Wesley
+:publication-date: 1968– (the book is still incomplete)
+:publication-place: United States
+:media-type: Print (Hardcover)
+:isbn:     0-201-03801-3
+:dewey-decimal: 519
+:lc-class: QA76.75
+:thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/ArtOfComputerProgramming.svg/220px-ArtOfComputerProgramming.svg.png
+:wikinfo-id: 31358
+:URL:      https://en.wikipedia.org?curid=31358
+:END:
+The Art of Computer Programming (TAOCP) is a comprehensive monograph written by the computer scientist Donald Knuth presenting programming algorithms and their analysis. Volumes 1–5 are intended to represent the central core of computer programming for sequential machines. When Knuth began the project in 1962, he originally conceived of it as a single book with twelve chapters.
+* DONE The Black Company 6/6
+:PROPERTIES:
+:author:   Glenn Cook
+:END:
+** Pern
+* DONE The dark forest :scifi:
+:PROPERTIES:
+:serie:    three-body problem
+:author:   Cixin Liu
+:END:
+* STRT The elements of statistical learning (217) [1/1] :stats:machine_learning:
+Texte de référence pour classification, machine
+*** DONE 1. Intro
+*** 2
+2.4  non clair, à relire
+* DONE The fall of the house of usher :classic:
+* TODO The Feynman Lectures on Physics :physics:
+
+* DONE The hound of the baskervilles :mystery:
+:PROPERTIES:
+:serie:    Sherlock Holmes
+:END:
+* DONE The Lost Apothecary :thriller:
+* DONE The name of the rose :classic:
+
+* TODO The Skies of Pern
+:PROPERTIES:
+:serie: pern
+:author:   Anne McCaffrey
+:END:
+** DONE R.R Martin - A Song of Ice and Fire 5/5
+** DONE R.R Martin - Windhaven
+** TODO R.R Martin - Fire and Blood
+** Pratchett
+*** DONE The Color of Magic (Discworld, #1; Rincewind, #1)
+*** DONE The light fantastic
+*** DONE The color of magic : a discworld novel
+** DONE Harry Potter 7/7
+** DONE Tolkien - Lord of the Rings 3/3
+** DONE Tolkien - The Silmarillion
+** DONE Tolkien - The hobbit, or, there and back again
+** TODO Earthsea
+*** TODO A Wizard of Earthsea (1968)
+*** TODO The Tombs of Atuan (1970)
+*** TODO The Farthest Shore (1972)
+*** TODO Tehanu 1990
+*** TODO Tales from Earthsea (2001)
+*** TODO The Other Wind (2001)
+
+** DONE Clarke, S. - Dr Norrel and Mr Strange
+
+* DONE The three-body problem :scifi:
+:PROPERTIES:
+:serie:    three-body problem
+:author:   Cixin Liu
+:END:
+* DONE The Time Machine :scifi:
+:PROPERTIES:
+:author:   H. G. Wells
+:END:
+* DONE The War of the Worlds :scifi:
+:PROPERTIES:
+:author:   H. G. Wells
+:END:
+
+* DONE The White Dragon :fantasy:
+:PROPERTIES:
+:serie: pern
+:author:   Anne McCaffrey
+:END:
+* DONE Tite-Live - Histoire romaine (Gallimard) :history:rome:
+
+** DONE livre i à v : de la fondation de rome à l'invasion gauloise
+** DONE livres xxi à xxv : la seconde guerre punique i
+** DONE livres vi à x : la conquête de l'italie
+** DONE livres xli à xlv : les progrès de l'hégéemonie romaine
+** DONE livres xxvi à xxx : la seconde guerre punique ii o
+** DONE livres xxxi à xxxv : la libération de la grèce
+** DONE Histoire Romaine: Livres Xxi à Xxv
+** DONE Histoire romaine, livres xxxxvi à xl
+* DONE [[file:books/guerre_et_paix.md][Tolstoi, Guerre et paix]] :classic:la_pleiade:
+* DONE Une Histoire Du Monde Aux Temps Modernes :history:modern:cs:
+* DONE Violet Evergarden [2/2]

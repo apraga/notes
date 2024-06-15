@@ -25,8 +25,8 @@ CLOSED: [2024-05-30 Thu 18:55] SCHEDULED: <2024-05-29 Wed>
 **** TODO Assets clinvar T2T :scidataflow:
 **** WAIT PR assets GRCh38 [[https://github.com/vsbuffalo/scidataflow/issues/21][github]] :scidataflow:
 /Entered on/ [2024-06-01 Sat 15:27]
-**** TODO Revoir biblio base de données [[id:6f89f301-1b55-43cb-b3be-bf954bbc079e][Base de données pour pipeline constit]]
-SCHEDULED: <2024-06-09 Sun>
+**** DONE Revoir biblio base de données [[id:6f89f301-1b55-43cb-b3be-bf954bbc079e][Base de données pour pipeline constit]]
+CLOSED: [2024-06-15 Sat 11:18] SCHEDULED: <2024-06-09 Sun>
 /Entered on/ [2024-06-06 Thu 22:59]
 *** Article
 **** DONE Bug noodles : parsing Clinvar vcf fails
@@ -156,6 +156,9 @@ Ok pour interchu en docteur junior ?
 CLOSED: [2024-06-05 Wed 22:23]
 /Entered on/ [2024-06-03 Mon 22:45]
 Ne répond pas mais Oriane dit OK
+*** TODO Monter dossier interCHU Biomnis
+SCHEDULED: <2024-06-22 Sat>
+/Entered on/ [2024-06-12 Wed 23:02]
 * Maison
 :PROPERTIES:
 :CATEGORY: maison
@@ -196,8 +199,7 @@ CLOSED: [2024-06-09 Sun 15:38] SCHEDULED: <2024-06-08 Sat>
 ** DONE Relire rapport Ben
 CLOSED: [2024-06-09 Sun 23:28] SCHEDULED: <2024-06-08 Sat>
 /Entered on/ [2024-06-08 Sat 18:42]
-** TODO PR doc nushell query
-SCHEDULED: <2024-06-14 Fri>
+** WAIT PR doc nushell query
 /Entered on/ [2024-06-14 Fri 22:54]
 * Scrap
 ** DONE Aerial spincity
