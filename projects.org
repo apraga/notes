@@ -16,7 +16,11 @@
 ***** WAIT PR Package nix vep
 ***** DONE Package nix multiqc
 ***** WAIT PR Package nix multiqc
-**** TODO Support pour pull partiel :scidataflow:
+**** WAIT Support pour pull partiel :scidataflow:
+**** TODO Tests pull partiel :scidataflow:
+SCHEDULED: <2024-06-22 Sat>
+**** DONE PR pull partiel :scidataflow:
+CLOSED: [2024-06-19 Wed 22:02] SCHEDULED: <2024-06-16 Sun>
 **** KILL Assets spliceai GRCh38 :scidataflow:
 CLOSED: [2024-05-30 Thu 18:55] SCHEDULED: <2024-05-29 Wed>
 **** TODO Assets genome T2T :scidataflow:
@@ -55,8 +59,8 @@ https://www.ouvriralascience.fr
 *** DONE Correction juliette article
 CLOSED: [2024-05-26 Sun 21:12] SCHEDULED: <2024-05-21 Tue>
 /Entered on/ [2024-05-19 Sun 13:21]
-*** TODO Re-soumettre article pediatrics
-DEADLINE: <2024-06-18 Tue>
+*** DONE Re-soumettre article pediatrics
+CLOSED: [2024-06-15 Sat 15:54] DEADLINE: <2024-06-18 Tue>
 /Entered on/ [2024-05-19 Sun 13:22]
 *** DONE Compte-rendu anapath Dr Mussini via Théo
 CLOSED: [2024-06-08 Sat 14:31] SCHEDULED: <2024-06-07 Fri>
@@ -76,11 +80,16 @@ CLOSED: [2024-06-12 Wed 21:39] SCHEDULED: <2024-06-12 Wed>
 :CATEGORY: japonais
 :END:
 ** TODO Intermediate Japanese
-SCHEDULED: [2024-06-14 Fri .+1d]
+SCHEDULED: <2024-06-19 Wed +1d>
 :PROPERTIES:
 :STYLE:    habit
 :LAST_REPEAT: [2024-05-26 Sun 10:01]
 :END:
+- State "DONE"       from "TODO"           [2024-06-18 Tue 10:01]
+- State "DONE"       from "TODO"           [2024-06-17 Mon 10:01]
+- State "DONE"       from "TODO"           [2024-06-16 Sun 10:01]
+- State "DONE"       from "TODO"           [2024-06-15 Sat 10:01]
+- State "DONE"       from "TODO"           [2024-06-14 Fri 10:01]
 - State "DONE"       from "TODO"           [2024-06-13 Thu 10:01]
 - State "DONE"       from "TODO"           [2024-06-12 Wed 10:01]
 - State "DONE"       from "TODO"           [2024-06-11 Tue 10:01]
@@ -164,7 +173,7 @@ SCHEDULED: <2024-06-22 Sat>
 :CATEGORY: maison
 :END:
 ** TODO Contacter RED pour changer adresse sur facture
-SCHEDULED: <2024-06-19 Wed>
+SCHEDULED: <2024-06-26 Wed>
 /Entered on/ [2024-05-19 Sun 13:56]
 ** DONE Payer loyer grenoble
 CLOSED: [2024-06-12 Wed 21:39] SCHEDULED: <2024-06-05 Wed>
@@ -173,11 +182,15 @@ CLOSED: [2024-06-12 Wed 21:39] SCHEDULED: <2024-06-05 Wed>
 :PROPERTIES:
 :CATEGORY: divers
 :END:
+** DONE [[https://github.com/nushell/nushell.github.io/pull/1446][PR]] doc nushell query
+CLOSED: [2024-06-16 Sun 00:55]
+/Entered on/ [2024-06-14 Fri 22:54]
+
 ** TODO Remboursement Allianz Montbéliard -> Grenoble 2024/0523168
 /Créé le/ [2024-05-16 Thu 22:44]
 2024-03-01
 ** TODO Justificatif de domicile Caisse Épargne Metz
-SCHEDULED: <2024-06-19 Wed>
+SCHEDULED: <2024-06-26 Wed>
 /Créé le/ [2024-05-17 Fri 21:32]
 ** WAIT Nettoyer bookmarks buku
 /Entered on/ [2024-06-08 Sat 18:39]
