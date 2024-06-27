@@ -1,9 +1,9 @@
 :PROPERTIES:
-:ID:       5d902597-c774-42de-ae17-cc109ea54fb3
+:ID:       bfe7cbda-511b-4ffc-870b-bf8361f0791b
 :END:
 #+title: Hématologie
+#+filetags: hémato
 
-[[id:333606c5-dc0d-4650-a2cb-932b357eefb7][Physiologie]]
 [[id:e19d3add-a514-46fe-85d7-aa4010132df2][Maladies hématologiques]]
-* Techniques
-[[id:64b5fdb6-4674-43fe-8ac7-2015349a680c][Cytométrie en flux]]
+[[id:1e3966c8-93c5-4761-a94b-a8d67f5f5d7c][AVK]]
+[[id:16842370-5af9-42c1-951a-ce122c900449][Immunophénotypage]]
