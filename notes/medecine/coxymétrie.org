@@ -1,0 +1,50 @@
+#+title: Coxymétrie
+
+Hémogolbine : 4 hèmes dans les α et β-globine. 1 hème contient des atomes de fer
+
+Réaction d'oxydoréduction :
+désoxyhémoglobine + O2 -> oxyhémoglobine (dans les poumons, sino réaction inversie. c.à-d de réduction dans les vaisseux)
+H
+désoxyhémoglobine = Hb réduite -> plus important en prélèvement veineux
+
+* Dyshémoglobine
+** Monoxyde de carbone
+- endogène = catabolisme de l'hème
+- exogène : combustion bio, gaz d'échappement, incendie, tabagisme
+ Le CO se fixant sur le fer de l'hème -> carboxyhémoglobine. Il entrerare en compétition avec le O2
+ Taux physiologique < 1.5-2%
+
+*** Intoxication CO
+Clinique
+- aspécifique = céphalées, anusée, asthénie...
+- puis vomissement, dysonée
+- enfin convulsion, coma hypertonique
+Bio: acidose métabolique, hyperglycémie
+Ttt = oxygénothérapie
+** Méthémoglobine
+Oxydation Fe2+ -> Fe3+
+Incapable de transporter oxygene
+Physiologique 1-1.5%
+Voie : NADH cytochrome β5 déductase
+
+Clinique: rapide (<1h)
+- cyanose extrémités
+- dysponée, vertiges
+- trouble conscience, convulsio, coma
+
+Oxygénothérapie de résout as l'hypoxe.
+Sang brun foncé
+
+Origine
+- héréditaire
+- acquise (alimentaire, profession, fumées...)
+
+Traitement : éviciton cause, beul de méthylène (réduit le Methhb)
+** Sulfhémoglobine
++groupement thiol sur hème
+Hb couleur verdâtre
+O2 peut se fixer mais affinité très diminuée
+Médicament ou toxique+++
+détecté mais non quantité par les automates
+
+* TODO Mesure
