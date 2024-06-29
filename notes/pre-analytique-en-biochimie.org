@@ -1,4 +1,7 @@
-#+title: Pré-analytique en Biochimie
+:PROPERTIES:
+:ID:       0026928a-33af-432c-9bfe-3ec2d8f87a38
+:END:
+#+title: Pré-analytique en biochimie
 #+filetags: biochimie
 
 * Lié au patient
@@ -20,7 +23,7 @@ Cortisol : pic à 8h (donc prélèvement le matin à 8h) mais attention
 Ex:
 - PAL/GGCT : GGT a une demi-vide de 3-4 jours donc /5 en 24h est incohérent
 - créat uriniaire et potassimu urinaire qui ressemblent à un ionogramme palsamatique avec +8 et
-* Choix dx la matrice
+* Choix de la matrice
 - Sérum (SS = tube Sec [rouge] Sans facteur de coag) coagulation + centrifugation -> serum en haut, globule blanc plaquette ai milieu et globulse rouges en bas
 - plasma (tube hépariné [vert]) = pas de coagulation mais avec *facteurs* coag + centrifugation: plasma en haut
 
