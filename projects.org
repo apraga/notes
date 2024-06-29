@@ -192,8 +192,8 @@ Ne répond pas mais Oriane dit OK
 *** TODO Monter dossier interCHU Biomnis
 SCHEDULED: <2024-07-06 Sat>
 /Entered on/ [2024-06-12 Wed 23:02]
-** TODO Fusionner notes hémato + biochimie en attente
-SCHEDULED: <2024-06-27 Thu>
+** DONE Fusionner notes hémato + biochimie en attente
+CLOSED: [2024-06-29 Sat 14:53] SCHEDULED: <2024-06-27 Thu>
 /Entered on/ [2024-06-27 Thu 22:14]
 * Maison
 :PROPERTIES:
@@ -220,7 +220,8 @@ SCHEDULED: <2024-07-02 Tue>
 ** DONE Justificatif de domicile Caisse Épargne Metz
 CLOSED: [2024-06-29 Sat 13:36] SCHEDULED: <2024-07-03 Wed>
 /Créé le/ [2024-05-17 Fri 21:32]
-** WAIT Nettoyer bookmarks buku
+** DONE Nettoyer bookmarks buku
+CLOSED: [2024-06-29 Sat 13:59]
 /Entered on/ [2024-06-08 Sat 18:39]
 ** DONE Inscription liste électorale (Besançon ? Allondaz)
 CLOSED: [2024-06-29 Sat 13:28] SCHEDULED: <2024-06-29 Sat>

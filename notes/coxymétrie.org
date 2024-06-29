@@ -1,4 +1,8 @@
+:PROPERTIES:
+:ID:       8b651cd6-01a9-48d2-bc89-c9340affe2d9
+:END:
 #+title: Coxymétrie
+#+filetags: biochimie,gds
 
 Hémogolbine : 4 hèmes dans les α et β-globine. 1 hème contient des atomes de fer
 
@@ -11,10 +15,11 @@ désoxyhémoglobine = Hb réduite -> plus important en prélèvement veineux
 ** Monoxyde de carbone
 - endogène = catabolisme de l'hème
 - exogène : combustion bio, gaz d'échappement, incendie, tabagisme
- Le CO se fixant sur le fer de l'hème -> carboxyhémoglobine. Il entrerare en compétition avec le O2
+ Le CO se fixant sur le fer de l'hème -> carboxyhémoglobine. Il est en compétition avec l'O_2
  Taux physiologique < 1.5-2%
 
 *** Intoxication CO
+*Urgence*
 Clinique
 - aspécifique = céphalées, anusée, asthénie...
 - puis vomissement, dysonée
@@ -40,6 +45,8 @@ Origine
 - acquise (alimentaire, profession, fumées...)
 
 Traitement : éviciton cause, beul de méthylène (réduit le Methhb)
+
+*Urgence*
 ** Sulfhémoglobine
 +groupement thiol sur hème
 Hb couleur verdâtre
@@ -48,3 +55,23 @@ Médicament ou toxique+++
 détecté mais non quantité par les automates
 
 * TODO Mesure
+ Spectrophotométrique: optique -> une valeur d'absorbance pour 128 λ
+ loi de Beer-lambert donne relation entre absorbance et concentration
+
+ L'absorbance totale est mesure mais les coefficients de contribution de chaque Hb est connue
+ Sont rendus
+|                             | Valeurs (%)  |
+|-----------------------------+---------|
+| oxyhémoglobine (O2Hb)       | 95-98   |
+| désoxyhémoglobine (HHb) 0-5 | 0-5     |
+| carboxyhémoglobine (cCOHb)  | < 1.5%  |
+| methémoglobine (MetHb)      | <1.5    |
+
+*Une méthémglobine significative est une urgence*
+ Sont *calculé* : fraction oxyHb, sat O2, Hématocrite
+
+ Correction interférence : Hb foetale (spetrect différent), sulfhémoglobine
+
+** Piège
+ *La sat ne prend pas en compte un dyshémoglobine* sO = cO2HB / (cOHb + cHHb)
+ Donc faussement normale si intoxication
