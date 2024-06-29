@@ -7,6 +7,7 @@
 **** STRT Dépendences Sarek [4/9]
 ***** DONE Package nix Dragmp
 ***** WAIT PR package nix Dragmap
+Relancé <2024-06-29 Sat>
 ***** TODO Package Deepvariant :deepvariant:nix:
 SCHEDULED: <2024-06-19 Wed>
 ****** Pre-req.sh :deps:
@@ -25,12 +26,15 @@ SCHEDULED: <2024-07-06 Sat>
 SCHEDULED: <2024-07-06 Sat>
 ***** DONE [[file:~/code/nixpkgs/pkgs/by-name/ti/tiddit/package.nix::{][Package nix Tiddit]]
 ***** WAIT [[https://github.com/NixOS/nixpkgs/pull/312995][PR]] package nix tiddit
-    Corrections
+Rebase + corrections + relancé <2024-06-29 Sat>
     /Créé le/ [2024-05-16 Thu 22:39]
+
 ***** DONE Package nix vep
 ***** WAIT PR Package nix vep
+Relancé <2024-06-29 Sat>
 ***** DONE Package nix multiqc
 ***** WAIT PR Package nix multiqc
+Relancé <2024-06-29 Sat>
 **** WAIT Support pour pull partiel :scidataflow:
 **** TODO Tests pull partiel :scidataflow:
 SCHEDULED: <2024-07-06 Sat>
