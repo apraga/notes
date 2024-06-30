@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       575c426e-5d2a-4114-9a2e-b0d4af95c53b
+:END:
+#+title: Spectrophotométrie
+#+filetags: biochimie
+
+Longueur d'onde visible (100-800nm)
+Loi de Beer-Lambert : relation entre l'absorbance (densité optique) et rapporté d'intensité luminieuses (incident et transmise)
+
+* Méthodes
+- consommation du substrat (acide urique)
+- augmentation du produit (coenzyme A)
+
+Pour limiter les interférences
+- lecture à 2 longeures d'ondes différentes
+- variantion de l'absorbance dans le temps
+- soustraction du blanc (absorbance non spécifique)
+
+* Interférence
+Surestimé si hémoglobilen, ictère ou lactescence
+- Ictère 480-505nm
+- Hémolyse : 570-600nm
+- Lactescence : 660-700nm
+Vérifié si l'automate rende un valeur = intensité d'interférence
+
+* Dosages en point final
+- [[id:6a36feab-5f08-4d1d-9e3c-ae09d589daf2][Albumine]]
+- [[id:02953d37-3891-43b1-9e07-cb4681e5e44c][bilirubine]]
+
+*

@@ -2,7 +2,7 @@
 :ID:       6a36feab-5f08-4d1d-9e3c-ae09d589daf2
 :END:
 #+title: Albumine
-#+filetags: biochimie néphélémétrie
+#+filetags: biochimie néphélémétrie spectrophotométrie
 
 Synthétisée par le foie
 1er protéine du plasma en quantié
@@ -15,3 +15,5 @@ Transporte : calcium, acide gras, bilirubine, hormones, vitamine, oligoélément
 Diminué : insuffisance hépatique, syndrome néphoritue, gastro-entérite, brûlures graves
 Marqueur du pronostic de la mortalité du patient âgé hospitalisé
 Normes 35-50g/L
+
+Dosage: néphélémitre, spectrométrie

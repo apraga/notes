@@ -154,6 +154,9 @@ SCHEDULED: <2024-07-01 Mon +1d>
 ** DONE Notes japonais
 CLOSED: [2024-06-30 Sun 17:17] SCHEDULED: <2024-06-30 Sun>
 /Entered on/ [2024-06-30 Sun 12:57]
+** DONE Notes japonais :gentoo:
+CLOSED: [2024-06-30 Sun 23:47] SCHEDULED: <2024-06-30 Sun>
+/Entered on/ [2024-06-30 Sun 12:57]
 * Voiture
 :PROPERTIES:
 :CATEGORY: voiture
@@ -240,6 +243,12 @@ CLOSED: [2024-06-29 Sat 13:28] SCHEDULED: <2024-06-29 Sat>
 Envoyé, en attente
 ** TODO Mise à jour avec GRCh9.6 :gentoo:
 SCHEDULED: <2024-06-30 Sun>
+/Entered on/ [2024-06-30 Sun 12:57]
+emerge -1u haskell-updater && haskell-updater --world -- -N --with-bdeps=y && emerge --depclean && haskell-updater -- @preserved-rebuild
+Tenir holoheap au courant
+
+** DONE Mise à jour :gentoo:
+CLOSED: [2024-06-30 Sun 14:28] SCHEDULED: <2024-06-30 Sun>
 /Entered on/ [2024-06-30 Sun 12:57]
 * Scrap
 ** DONE Aerial spincity

@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       02953d37-3891-43b1-9e07-cb4681e5e44c
+:END:
+#+title: Bilirubine
+#+filetags: biochimie spectrophotométrie
+
+- Conjuguée (= libre ou direct) = dosable directement
+- Non conjugée (= liée ou indirecte)
+Formes circulantes
+- α liée à l'albumine indosable
+- β dosage directe
+- α dosage aprs solubilisation
+
+Normes
+- non conjugée 3-14μmol/L
+- conjugée 0-3μmol/L
+- totale = somme (3-17)

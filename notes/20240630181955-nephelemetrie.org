@@ -30,3 +30,6 @@ Utilisation de microparticules en latex pour augmenter la sensibilité
 - [[id:b16899e1-8983-422d-9fd4-cf489d28c291][RBP]]
 - [[id:b6985832-48c7-48de-8c1d-e3ab7ec04919][Albumine]]
 - [[id:d9c7eb89-3d73-4fa9-a734-9dd71515cc91][Haptoglobine]]
+- [[id:6653dbbb-6de9-4386-905d-c1e82b3b448e][Immunoglobuline G]]
+- [[id:20192370-bbe2-476b-beab-9eedb5bf243c][Immunoglobuline M]]
+- [[id:d73e6583-b430-4ae0-9f82-dba175a91a9b][Immunoglobuline A]]

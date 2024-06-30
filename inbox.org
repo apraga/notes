@@ -1,7 +1,1 @@
 #+filetags: inbox
-* TODO Notes japonais :gentoo:
-SCHEDULED: <2024-06-30 Sun>
-/Entered on/ [2024-06-30 Sun 12:57]
-* DONE Mise à jour :gentoo:
-CLOSED: [2024-06-30 Sun 14:28] SCHEDULED: <2024-06-30 Sun>
-/Entered on/ [2024-06-30 Sun 12:57]
