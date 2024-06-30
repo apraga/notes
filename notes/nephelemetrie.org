@@ -1,0 +1,108 @@
+:PROPERTIES:
+:ID:       7ab8499f-d1bd-4881-ab1c-2e657a680d12
+:END:
+#+title: Néphélémétrie
+#+filetags: biochimie
+
+* Principe
+** Photométrie
+Mesure de la lumière diffusée
+- latéralement (20°) = néphélémotrie
+- linéairement (trajet du rayon)  : turbidim
+** Anticorps
+Contre l'antigène à doser -> complexe Ac-Ag -> la lumière dans la cuve va diffésué sur les complexes
+Utilisation de microparticules en latex pour augmenter la sensibilité
+** Interféences
+- optique : lactescence parfois mais *pas* hémolyse ni ictère
+- biochimique: Ac hétérophile,s, cryoglobuline, facteur rhumatoïde (dilution)
+- physique : lipoproétien/fibrine (dilutaion/centrifugation)
+- effet crochet : excès d'antigène donc l'anticorps n'arrive pas à le fixer de fa
+  on stable > les complexes se dissocient et le signal chut
+  Courbe de Heidelberger-Kendall
+* Paramètres dosés
+** CRP
+:PROPERTIES:
+:ID:       0b310b1c-5e15-4e29-8fd7-14e7659912bf
+:END:
+synthétisé par le foie. Marqueur non spécifique inflammation
+Norme < 3mg/L
+** Haptoglobine
+:PROPERTIES:
+:ID:       83ba532d-d203-406f-b0f6-008c9934eac9
+:END:
+Protéine plasmatique fixant hémoglobine iextraglobulaire
+Augmenté : phase inflammatoire aigǜe
+Diminuté : hémolyse intravasculaire
+Sensible à la lactescence
+Norme 0.30-2g/L
+** α2-macroglobuline
+:PROPERTIES:
+:ID:       2a2c7868-b168-46ec-934f-b7f6e096009a
+:END:
+Transporte hormones et enzymes
+Inhibe protéine du complément et hémostase, sérien, cysténie... -protéinase
+Augmenté : syndrome néphrotique, cirrhose, diabète
+Diminué : hyperfibironlyse, septicémie, IHC, chiriurgie lourde, pancréatite aigüe
+Normes 1.3-3g/L sérum
+** Transferrine
+:PROPERTIES:
+:ID:       fd143b0a-06b3-4bc4-943a-10892d687a1f
+:END:
+Synthésée par le foie
+Transporte le fer dans le sang
+Diminué en phase inflammatoire aigüe, surchage en fer
+Augmenté dans les carences martiales
+Norme 2-3.6g/L
+** Albumine
+:PROPERTIES:
+:ID:       90e374b4-1a83-4109-9a4a-892dcd674814
+:END:
+Synthétisée par le foie
+1er protéine du plasma en quantié
+NB: 60% secteur interstitiel, 40% vasculaire (=2/3 protéines circulantes)
+Demi-vie 20 jours. *Non-excrété* par le glomérule (taille et charge
+négative)
+
+Maintient la pression oncotique (conserve l'eau dans les vaisseaux sanguins)
+Transporte : calcium, acide gras, bilirubine, hormones, vitamine, oligoéléments, médicaments
+Diminué : insuffisance hépatique, syndrome néphoritue, gastro-entérite, brûlures graves
+Marqueur du pronostic de la mortalité du patient âgé hospitalisé
+Normes 35-50g/L
+** Complément C3
+:PROPERTIES:
+:ID:       405f0dcc-c962-4d3e-851a-2efde39137e3
+:END:
+Protéine sérique du système immunitaire non spécifique
+Active voie classique du complément (liaison au complexe antigène-anticorps)
+Active également la voie alternative du complément (attaque de la mebrane faisant exploser la cellule)
+Diminué : lupus, glomérulonéphrite, maladie auto-immune, déficit héréditaire
+Augmenté : inflammation aigüe
+Normes: 0.9-1.8g/L
+** Orosomucoïde (α1 glycoprotéine acide)
+:PROPERTIES:
+:ID:       3848b6b2-7ee6-494d-a09b-b75eb7fef025
+:END:
+glycoprotéine = 40% glucides
+Augmenté : inflammation aigüe, infection/inflamation chronique, blessures, brûlures, tumeurs, IRC
+Diminué : insuffisance hépatique, syndrome néphrotique
+Normes 0.5-1.2g/L
+** Pré-albumine (transthyrétine)
+:PROPERTIES:
+:ID:       2caa5a14-47ef-4817-9562-4bdf2fbc0c6f
+:END:
+Synthésée par le foie
+Bon marqueur des capacités de synthèse hépatique
+Marqueur de nutrition parentérale (demi-vie 2 jours) -> calcul du score PINI (Pronostic Inflammatory and Nutritional Index)
+- majeur si 21-30
+- décès si >30
+- oro x CRP / (alb x préalb)
+Transporte thyroxine et rétinol
+Diminué : malnutrition
+** RBP (Retinol Binding Protein)
+:PROPERTIES:
+:ID:       acc5ee9f-3c5e-43df-9665-9ef5447f00fc
+:END:
+Transporte la vitamine A (rétinol)
+Marqueur synthèse hépatique
+Diminution: malnutrition, pathologies hépatiques
+Normes 30-60mg/L

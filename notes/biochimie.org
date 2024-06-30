@@ -8,5 +8,17 @@
 Gaz du sang
 - [[id:8b651cd6-01a9-48d2-bc89-c9340affe2d9][Coxymétrie]]
 
-[[id:90cbcd7e-9606-47b8-ad0b-2c4d38996b1b][Transaminase (ASAT, ALAT)]]
-[[id:0aebd019-c8f1-4f88-8a6b-94e06eb14f64][Acides aminés]]
+[[id:0e33a12f-044c-4b28-8bfc-7f8900f1d95d][Méthose de dosage]]
+
+Paramètres
+- [[id:0aebd019-c8f1-4f88-8a6b-94e06eb14f64][Acides aminés]]
+- [[id:0b310b1c-5e15-4e29-8fd7-14e7659912bf][CRP]]
+- [[id:2a2c7868-b168-46ec-934f-b7f6e096009a][α2-macroglobuline]]
+- [[id:83ba532d-d203-406f-b0f6-008c9934eac9][Haptoglobine]]
+- [[id:90cbcd7e-9606-47b8-ad0b-2c4d38996b1b][Transaminase (ASAT, ALAT)]]
+- [[id:90e374b4-1a83-4109-9a4a-892dcd674814][Albumine]]
+- [[id:fd143b0a-06b3-4bc4-943a-10892d687a1f][Transferrine]]
+- [[id:405f0dcc-c962-4d3e-851a-2efde39137e3][Complément C3]]
+- [[id:3848b6b2-7ee6-494d-a09b-b75eb7fef025][Orosomucoïde (α1 glycoprotéine acide)]]
+- [[id:2caa5a14-47ef-4817-9562-4bdf2fbc0c6f][Pré-albumine (transthyrétine)]]
+- [[id:acc5ee9f-3c5e-43df-9665-9ef5447f00fc][RBP (Retinol Binding Protein)]]
