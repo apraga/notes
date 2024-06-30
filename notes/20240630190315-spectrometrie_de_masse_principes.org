@@ -1,9 +1,8 @@
 :PROPERTIES:
-:ID:       e1c16121-02b4-49d4-b99d-531337d1e54b
+:ID:       be1c72fe-025f-4e5e-8118-e401f2df39f4
 :END:
-#+title: Spectromérie de masse
+#+title: Spectrométrie de masse : principes
 #+filetags: biochimie
-
 
 Identification de différents composer en fonction de leur masse et charge
 * 1. Pré-traitement
@@ -41,6 +40,8 @@ Types:
   Avantage: il y a 2 propriétés physique (m/z de l'ion "parent" et "fils"). Couplé à chromato liquide, on peut utiliser le temps et supprer les majorité des interférence
 - Couplage source/analyser
 ** 3. Détecteur : convertit courant ionique en courant électrique
+Principe : une dynode = électrode pouvon émettre un electron. Quand un ion positif la frappe, 2-3 électron sont éjectét en evoyé une autre dynode ->_amplification du signal.
+3 types : multiplicateurs à dynode (disc)continue, galette de microcanaux
 ** 4. Traitement du signal
-
+Fonctionnalité : protéomique, métabolomique, toxicologiee, biochiime "classique"
 * 4. Interprétation

@@ -1,5 +1,5 @@
 :PROPERTIES:
-:ID:       b6985832-48c7-48de-8c1d-e3ab7ec04919
+:ID:       6a36feab-5f08-4d1d-9e3c-ae09d589daf2
 :END:
 #+title: Albumine
 #+filetags: biochimie néphélémétrie
