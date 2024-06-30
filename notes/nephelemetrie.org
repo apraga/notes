@@ -20,89 +20,13 @@ Utilisation de microparticules en latex pour augmenter la sensibilité
   on stable > les complexes se dissocient et le signal chut
   Courbe de Heidelberger-Kendall
 * Paramètres dosés
-** CRP
-:PROPERTIES:
-:ID:       0b310b1c-5e15-4e29-8fd7-14e7659912bf
-:END:
-synthétisé par le foie. Marqueur non spécifique inflammation
-Norme < 3mg/L
-** Haptoglobine
-:PROPERTIES:
-:ID:       83ba532d-d203-406f-b0f6-008c9934eac9
-:END:
-Protéine plasmatique fixant hémoglobine iextraglobulaire
-Augmenté : phase inflammatoire aigǜe
-Diminuté : hémolyse intravasculaire
-Sensible à la lactescence
-Norme 0.30-2g/L
-** α2-macroglobuline
-:PROPERTIES:
-:ID:       2a2c7868-b168-46ec-934f-b7f6e096009a
-:END:
-Transporte hormones et enzymes
-Inhibe protéine du complément et hémostase, sérien, cysténie... -protéinase
-Augmenté : syndrome néphrotique, cirrhose, diabète
-Diminué : hyperfibironlyse, septicémie, IHC, chiriurgie lourde, pancréatite aigüe
-Normes 1.3-3g/L sérum
-** Transferrine
-:PROPERTIES:
-:ID:       fd143b0a-06b3-4bc4-943a-10892d687a1f
-:END:
-Synthésée par le foie
-Transporte le fer dans le sang
-Diminué en phase inflammatoire aigüe, surchage en fer
-Augmenté dans les carences martiales
-Norme 2-3.6g/L
-** Albumine
-:PROPERTIES:
-:ID:       90e374b4-1a83-4109-9a4a-892dcd674814
-:END:
-Synthétisée par le foie
-1er protéine du plasma en quantié
-NB: 60% secteur interstitiel, 40% vasculaire (=2/3 protéines circulantes)
-Demi-vie 20 jours. *Non-excrété* par le glomérule (taille et charge
-négative)
-
-Maintient la pression oncotique (conserve l'eau dans les vaisseaux sanguins)
-Transporte : calcium, acide gras, bilirubine, hormones, vitamine, oligoéléments, médicaments
-Diminué : insuffisance hépatique, syndrome néphoritue, gastro-entérite, brûlures graves
-Marqueur du pronostic de la mortalité du patient âgé hospitalisé
-Normes 35-50g/L
-** Complément C3
-:PROPERTIES:
-:ID:       405f0dcc-c962-4d3e-851a-2efde39137e3
-:END:
-Protéine sérique du système immunitaire non spécifique
-Active voie classique du complément (liaison au complexe antigène-anticorps)
-Active également la voie alternative du complément (attaque de la mebrane faisant exploser la cellule)
-Diminué : lupus, glomérulonéphrite, maladie auto-immune, déficit héréditaire
-Augmenté : inflammation aigüe
-Normes: 0.9-1.8g/L
-** Orosomucoïde (α1 glycoprotéine acide)
-:PROPERTIES:
-:ID:       3848b6b2-7ee6-494d-a09b-b75eb7fef025
-:END:
-glycoprotéine = 40% glucides
-Augmenté : inflammation aigüe, infection/inflamation chronique, blessures, brûlures, tumeurs, IRC
-Diminué : insuffisance hépatique, syndrome néphrotique
-Normes 0.5-1.2g/L
-** Pré-albumine (transthyrétine)
-:PROPERTIES:
-:ID:       2caa5a14-47ef-4817-9562-4bdf2fbc0c6f
-:END:
-Synthésée par le foie
-Bon marqueur des capacités de synthèse hépatique
-Marqueur de nutrition parentérale (demi-vie 2 jours) -> calcul du score PINI (Pronostic Inflammatory and Nutritional Index)
-- majeur si 21-30
-- décès si >30
-- oro x CRP / (alb x préalb)
-Transporte thyroxine et rétinol
-Diminué : malnutrition
-** RBP (Retinol Binding Protein)
-:PROPERTIES:
-:ID:       acc5ee9f-3c5e-43df-9665-9ef5447f00fc
-:END:
-Transporte la vitamine A (rétinol)
-Marqueur synthèse hépatique
-Diminution: malnutrition, pathologies hépatiques
-Normes 30-60mg/L
+- [[id:15349a3f-5a5b-44a3-be92-fc23d48c25fb][Transferrine]]
+- [[id:291d08be-d64c-49b2-b61a-1edd34b3d7ab][Préalbumine (transthyrétine)]]
+- [[id:3c6eaa7b-c3d1-4e83-8653-b1304679b9cb][Céruloplasmine]]
+- [[id:6fb77380-ce06-4e2e-aafa-aeef5a570140][α2-macroglobuline]]
+- [[id:91b9b27a-343e-4c59-9cf8-6e9d500c709b][Complément C3]]
+- [[id:92e0d3e0-ed8f-4285-8629-ec7160adedcc][CRP]]
+- [[id:a3a555d1-b65e-4cca-9159-2c62c284283b][Orosomucoïde]]
+- [[id:b16899e1-8983-422d-9fd4-cf489d28c291][RBP]]
+- [[id:b6985832-48c7-48de-8c1d-e3ab7ec04919][Albumine]]
+- [[id:d9c7eb89-3d73-4fa9-a734-9dd71515cc91][Haptoglobine]]

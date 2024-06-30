@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       b6985832-48c7-48de-8c1d-e3ab7ec04919
+:END:
+#+title: Albumine
+#+filetags: biochimie néphélémétrie
+
+Synthétisée par le foie
+1er protéine du plasma en quantié
+NB: 60% secteur interstitiel, 40% vasculaire (=2/3 protéines circulantes)
+Demi-vie 20 jours. *Non-excrété* par le glomérule (taille et charge
+négative)
+
+Maintient la pression oncotique (conserve l'eau dans les vaisseaux sanguins)
+Transporte : calcium, acide gras, bilirubine, hormones, vitamine, oligoéléments, médicaments
+Diminué : insuffisance hépatique, syndrome néphoritue, gastro-entérite, brûlures graves
+Marqueur du pronostic de la mortalité du patient âgé hospitalisé
+Normes 35-50g/L

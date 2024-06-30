@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       d9c7eb89-3d73-4fa9-a734-9dd71515cc91
+:END:
+#+title: Haptoglobine
+#+filetags: biochimie néphélémétrie
+
+Protéine plasmatique fixant hémoglobine iextraglobulaire
+Augmenté : phase inflammatoire aigǜe
+Diminuté : hémolyse intravasculaire
+Sensible à la lactescence
+Norme 0.30-2g/L

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       a3a555d1-b65e-4cca-9159-2c62c284283b
+:END:
+#+title: Orosomucoïde (α1 glycoprotéine acide)
+#+filetags: biochimie néphélémétrie
+
+glycoprotéine = 40% glucides
+Augmenté : inflammation aigüe, infection/inflamation chronique, blessures, brûlures, tumeurs, IRC
+Diminué : insuffisance hépatique, syndrome néphrotique
+Normes 0.5-1.2g/L

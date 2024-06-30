@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       291d08be-d64c-49b2-b61a-1edd34b3d7ab
+:END:
+#+title: Préalbumine (transthyrétine)
+#+filetags: biochimie néphélémétrie
+
+Synthésée par le foie
+Bon marqueur des capacités de synthèse hépatique
+Marqueur de nutrition parentérale (demi-vie 2 jours) -> calcul du score PINI (Pronostic Inflammatory and Nutritional Index)
+- majeur si 21-30
+- décès si >30
+- oro x CRP / (alb x préalb)
+Transporte thyroxine et rétinol
+Diminué : malnutrition
