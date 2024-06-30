@@ -1,5 +1,5 @@
 :PROPERTIES:
-:ID:       862ae46c-1e76-40d9-bd70-cecc7edf9bed
+:ID:       97e833f0-5755-484e-8f3a-535a70c80b84
 :END:
 #+title: Bibliographie avec emacs
 #+filetags: emacs bibligraphie

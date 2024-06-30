@@ -1,5 +1,5 @@
 :PROPERTIES:
-:ID:       185fcc2d-76e8-4de4-a056-14e2988d1061
+:ID:       b3322ce1-cfd1-42cd-8237-de2308ddb920
 :END:
 #+title: Articles bisonex
 #filetags: bisonex articles
