@@ -1,4 +1,8 @@
+:PROPERTIES:
+:ID:       e48bcdd7-0d2c-4200-b103-07c6631f3349
+:END:
 #+title: Japonais
+#+filetags: jap
 
 * 2021-09-30 Aya-sensei : Intro
 
@@ -990,3 +994,25 @@ après X: -てから. Exemple : après être allé : きってから
 - 世界遺産(せかいいさん ): patrimoine mondial
 ** À faire
 lire dialogues leçon 13 (business)
+* 2024-06-30
+** Vocabulaire
+- ソフト logiciel
+- ダウノロードする télécharger
+- 動かなく　なる　arrêter de travailler
+- どうすれば いいですか que dois-je faire ?
+- 少し待ってみたら　どうですか attendons un peu
+- 急げば　間に合います si tu te dépêches, tu y sera à temps
+-
+- 蚊　か　moustique
+- 痒い かゆい　qui démange (ex: piqûre de moustique)
+- 石畳 : pavé
+- 治安（ちあん）: ordre public, sécurité
+- 避ける（さける）éviter
+- 朝食（ちょうしょく） petit-déjeuner
+- 洋食　（よう） cuisine occidentale
+- 和食　（わ） cuisie japonaise
+-
+** Grammaire
+A ーたら, B au passé : exprime la suprise de l'évènement B
+Ex: 家に帰ったら、母から荷物がとどいていました　（にもつ）
+est arrivé
