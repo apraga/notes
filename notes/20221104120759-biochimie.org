@@ -8,7 +8,7 @@
 Gaz du sang
 - [[id:8b651cd6-01a9-48d2-bc89-c9340affe2d9][Coxymétrie]]
 
-[[id:0e33a12f-044c-4b28-8bfc-7f8900f1d95d][Méthose de dosage]]
+[[id:6de5833a-cec5-4560-8e3d-36fde81cb1a7][Méthodes de dosage]]
 
 Paramètres
 - [[id:15349a3f-5a5b-44a3-be92-fc23d48c25fb][Transferrine]]

@@ -18,6 +18,16 @@ J'ai juste utilisé eselect fontconfig + la configuration recommandée
 
 [gentoo] location = /var/db/repos/gentoo sync-type = git sync-uri =
 https://github.com/gentoo-mirror/gentoo auto-sync = yes sync-depth = 1
+* Haskell
+Pour débloquer un paquet, "marteau-piqueur"
+#+begin_src sh
+emerge -1u haskell-updater && haskell-updater --world -- -N --with-bdeps=y && emerge --depclean && haskell-updater -- @preserved-rebuild
+#+end_src
+
+Pour avoir les dernières versions, changer l'URL dans /etc/portage/repos.conf/eselect-repos.conf
+
+[haskell]
+sync-uri = https://github.com/gentoo-haskell/gentoo-haskell.git
 
 * Guru
 Tester avec =pkgcheck scan= Commiter avec =git commit -S -m "lol"=
