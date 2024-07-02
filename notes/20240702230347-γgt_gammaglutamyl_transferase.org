@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       08f57dfb-caed-4cba-ac90-f0bcffcdb7b4
+:END:
+#+title: γGT (gammaglutamyl-transférase)
+#+filetags: biochimie
+
+Marqueur hépatopathies
+Sensible mais non spécifique
+Interférence : oxalate, potassium, fluorure, sodium
+Normes 10-70UI/L

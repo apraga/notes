@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       d70072d4-776f-4b80-8df7-0d2526ca269d
+:END:
+#+title: α-Amylase
+#+filetags: biochimie
+
+Diagnostic parotitide
+Interférence : protéines > 120g/L, IgG > 50g/L, triglycérides > 30g/L
+Normes 20-120 UI/L

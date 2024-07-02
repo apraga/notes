@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       977fa2d7-2989-4f7a-afa4-6be072722c41
+:END:
+#+title: Ammoniac
+#+filetags: biochimie
+
+Évalue la capacité de détoxification azoté hépatique
+Norme < 32μmol/L

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       bab652dd-fa28-4dba-941d-7e4b32902525
+:END:
+#+title: Phosphore inorganique
+#+filetags: biochimie
+
+interférences défaut lipides > 30g/L, mannitol, excès phosphate de créatinine, pyruvate de phosphoénol
+normes 0.8-1.6

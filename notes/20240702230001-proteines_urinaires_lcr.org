@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       6b2862c8-b11d-44d7-b5a4-abd1272b6e86
+:END:
+#+title: Protéines urinaires/LCR
+#+filetags: biochimie
+
+normes
+- urines <150mg/24h
+- LCR 150-450mg/L

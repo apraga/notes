@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       257d79ff-411a-4ba7-83ed-459856b5d7fa
+:END:
+#+title: Phosphatase alcaline
+#+filetags: biochimie
+
+marqueur cholestase hépatique (défaut écoulement biliaire)
+isoenzyme : foie, os, intestin, placenta
+interférence : annuler si lactescence > 400mg/dL
+norme 45-120 UI/L

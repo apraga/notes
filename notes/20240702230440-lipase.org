@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       c691319f-47cc-4586-86c6-121dae677abf
+:END:
+#+title: Lipase
+#+filetags: biochimie
+
+Diagnostic de pancréatite
+Interférence EDTA, oxalate, fluorure, citrate
+Normes 70-400UI/L

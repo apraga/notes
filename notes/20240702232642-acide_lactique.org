@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       714ee729-bccd-4465-88df-04b8824f5098
+:END:
+#+title: Acide lactique
+#+filetags: biochimie
+Évalue état de choc (hypoxie métabolique)
+Normes 0.4-2mmol/L

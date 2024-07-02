@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       bec091db-6da1-46ad-8c31-c55e551fbc36
+:END:
+#+title: Magnésium
+#+filetags: biochimie
+
+Norme 0.75-1mmol/L

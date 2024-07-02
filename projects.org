@@ -250,6 +250,9 @@ Tenir holoheap au courant
 ** DONE Mise à jour :gentoo:
 CLOSED: [2024-06-30 Sun 14:28] SCHEDULED: <2024-06-30 Sun>
 /Entered on/ [2024-06-30 Sun 12:57]
+** TODO Mettre en place prélèvement loyer
+SCHEDULED: <2024-07-02 Tue>
+/Entered on/ [2024-07-02 Tue 22:54]
 * Scrap
 ** DONE Aerial spincity
 CLOSED: [2024-05-26 Sun 00:14] SCHEDULED: <2024-05-25 Sat>
@@ -300,3 +303,6 @@ CLOSED: [2024-06-05 Wed 22:08] SCHEDULED: <2024-06-05 Wed>
 /Entered on/ [2024-06-05 Wed 22:07]
 Sera envoyée par courrier (adresse à mise à jour)
 Doit envoyer un code pour accès second espace personnel
+** TODO Envoyer remboursement podologue mutuelle
+SCHEDULED: <2024-07-02 Tue>
+/Entered on/ [2024-07-02 Tue 22:54]

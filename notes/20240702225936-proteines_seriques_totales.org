@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       5ca3120e-340e-4228-9d79-8111105208f7
+:END:
+#+title: Protéines sériques totales
+#+filetags: biochimie
+
+diag : pathologie foie, reins, troubles métaobliques/nutritionnels
+normes 64-82g/L

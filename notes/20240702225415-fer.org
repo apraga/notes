@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       1aa04c29-ad9a-48e0-9392-73a8a5deee65
+:END:
+#+title: Fer
+#+filetags: biochimie
+
+norme
+- homme 10-30μmol/L
+- femme 8-28μmol/L

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       b2e9a998-da30-4b85-8f7d-6af80ce3c059
+:END:
+#+title: Cholestérol total
+#+filetags: biochimie
+Norme < 5.20mmol/L

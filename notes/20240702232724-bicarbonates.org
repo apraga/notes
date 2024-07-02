@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       b29858f9-80d4-409e-b006-ca8c80c3e849
+:END:
+#+title: Bicarbonates
+#+filetags: biochimie
+CO2 + H2O -> HCO3- + H+
+Évalue la réserve alcaline
+Interférence : lactescence > 30g/L
+Norme 21-32mmol/L

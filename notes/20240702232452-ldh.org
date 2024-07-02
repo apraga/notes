@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       d3c7d1e8-2219-4be5-86e1-34c6dbc77a70
+:END:
+#+title: LDH (lactase déshydrogénase)
+#+filetags: biochimie
+
+Marqueur lyse cellulaire (non spécifique d'un tissu car 5 isonezyme)
+Interférence : hémolyse > 10mg/dL, EDTA, fluorure, Na, oxalate, potassium
+Normes 100-200UI/L
