@@ -7,3 +7,4 @@
 [[id:be1c72fe-025f-4e5e-8118-e401f2df39f4][Spectrométrie de masse : principes]]
 [[id:ae6c4672-b071-491d-bfbc-ef1a4ea96e47][Potentiométrie]]
 [[id:575c426e-5d2a-4114-9a2e-b0d4af95c53b][Spectrophotométrie]]
+[[id:29e12e8e-5d9f-4e2f-b8cb-97b38dc19bbd][Immuno-analyse]]

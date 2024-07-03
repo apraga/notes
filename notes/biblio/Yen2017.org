@@ -1,6 +1,7 @@
 :PROPERTIES:
 :ID:       79b0174f-dc8b-4b8d-a586-023f86da189f
 :END:
+#+title: Yen2017
 Vérification de la syntaxe des variants selon HGVS
 * Méthode
   - 126 variants vérifés manuellement

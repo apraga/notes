@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       b13e043b-bf21-422a-98e7-efb3c5efd5a5
+:END:
+#+title: β2-microglobuline
+#+filetags: biochimie immuno
+Indication: lymphopathies

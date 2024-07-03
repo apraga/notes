@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       44fc26b7-6245-4e58-8d1e-6cb376fecd3a
+:END:
+#+title: estradiol
+#+filetags: biochimie immuno
+Indication : Hormone féminine

@@ -58,3 +58,7 @@ Mesure 340nm
 ** Réaction de Trinder
 Réaction aboutissant à formation H2O2 qui va catalyse la synthèse d'un olorant
 Interférence: ce qui dégrade le H2O2 (acide ascorbique (vitamine C), dopamine
+- [[id:e5519b58-b8fd-4ae1-9585-aa5223d72431][Cholestérol HDL]]
+- [[id:b2e9a998-da30-4b85-8f7d-6af80ce3c059][Cholestérol total]]
+- [[id:3093198d-a9d2-4464-a453-9b6bffb03841][Cholestérole LDL]]
+- [[id:f7fa1113-bc2f-4ca2-b99f-eb4a7f4ed346][Triglycérides]]

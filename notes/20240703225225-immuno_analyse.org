@@ -1,0 +1,70 @@
+:PROPERTIES:
+:ID:       29e12e8e-5d9f-4e2f-b8cb-97b38dc19bbd
+:END:
+#+title: Immuno-analyse
+#+filetags: biochimie
+
+* Anticorps
+Structure en Y avec les extrémités des branches = chaînes lourdes, le reste = chaîne légère
+
+| _Classe      | G                 | A                | M              | E              | D             |
+|--------------+-------------------+------------------+----------------+----------------+---------------|
+| Localisation | Sang              | Sécrétion        | Lymphocytes B  | Basophiles     | Lymphocytes B |
+|              |                   | muqueurs         |                | Mastocytes     |               |
+|--------------+-------------------+------------------+----------------+----------------+---------------|
+| Rôle         | Neutralise        | Agglutination    | Agglu          | Allergie       | Active LB     |
+|              | Bactéries , virus | Neutralisation   | Voie classique | Neutralisation |               |
+|              | toxine            | Bactiries, virus | complément     | parasite       |               |
+IgG= 75% serum, IgA=15%, IgM = 10%
+Zone vavariation: Isotopie (domaine constant), allotypie (jonction), idiotopie (domaines variables)
+
+Ag-AC  liason faible. La partie Ag est l'épitope, la partie Ac le paratope
+** Ac monoclonaux
+Ag humonai dans souris puis prélèvement lymphocytes B activés
+Création de cellules hybrides (cellules myélome + lymphocytes) mises en culture
+** Type utilisé dans dosage
+Ac monoclonale = 3-6mois de synthèse, cher, spécifique, forte affinite, pas de réaction croisée
+Ac polyclonale : 1-2mois production, peu spécfiqiue,  affinité variable, réaction croissées
+* Méthodes
+- Direct = "sandwitch": Ag est "coincé" entre un Ac et un autre Ac avec un marqueur -> le signal est proportionnel
+- Indirecte : mélange d'Ag à doser et d'Ag marqués
+  - peu d'Ag à doser, les Ag marqués vont se fixer : signal important
+  - sinon, ils vont "prendre la place" sur les Ac -> signal faible
+ Phases: homogone (liquide) , hétérogène (complexe fixé sur support solide)
+
+ Luminescence >> autre marquage
+* Interférence
+- Effet crochet: forte quantité d'Ag à doser mais le signal va diminuer (paradoxal !)
+- Effet matrice : impact pH, température, concentration Ag ... sur la liason Ag-Ac
+  NB: stéroïdes = sensibles !
+- Ac hétérophiles: contact fréquent avec animaux, maladies auto-immunes, immunothérapies/scintigarphies
+- Auto-Ac : réagissent au lieu de l'anticorps réactionnel
+- [[id:38c45f8a-6855-4984-9b84-5e67165d4b5c][Facteur rhumatoïde]]
+- [[id:f1bbc829-f5dc-49f8-97b5-0d6ce1d9ef59][Cryoglobuline]]
+- réaction croisée avec un autre antigène (ex: cortisone)
+- [[id:03d7f0cf-4383-49df-ae84-5526ce8c304a][Biotine]]
+- Hétérogénéité moléculaire = mauvaise reconnaissanec Ag- par Ac du fait de la variabilité inter ou intra-individuelles
+* Détection interférences
+- dilution: effet crochet/matrice
+- surchage : autoAC et dosaeg sans étalon
+- cryoglobuilne : 7 jours à 4``
+* Principe éléctrochimiluminescence
+Ag à doser = en sandwitch entre 1 Ac marqué biotine et un détection marqué ruthénium
+Ces complexes sont captusé sur des microparticules magnétiques (streptavidine) puis plaquées contre la paroi
+Enfin un courant électrique eexcite de ruthénium qui émet des photons proportionnellement quantié Ag à doser
+* Exemples
+- [[id:b13e043b-bf21-422a-98e7-efb3c5efd5a5][β2-microglobuline]]
+- [[id:7bb9024e-649c-4382-abf6-9db0be217d4d][CA 15-3]]
+- [[id:d83dec28-0537-46a0-beb0-8f6e09c78f1e][CA 19-9]]
+- [[id:d59e007e-2d26-42ef-b349-cade464c37f9][CA 125]]
+- [[id:44fc26b7-6245-4e58-8d1e-6cb376fecd3a][estradiol]]
+- [[id:e93a2599-8f0f-42aa-81f4-e276917dd322][FSH]]
+- [[id:1dff1823-fb97-4ba5-90fc-c982f20fb47b][LH]]
+- troponine : IDM
+- NT-proPNB insuffisance cardiaque
+- cortisol
+- progestérone
+- PTH
+- Folates (synthèse ADN)
+- B12 (synthèse ADN)
+- [[id:763dc0db-c8f4-4b29-a9a4-ec096c8e9d81][AFP]]
