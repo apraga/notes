@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       d32cd79a-d17d-4afa-a6de-d6a31c1bc042
+:END:
+#+title: Syndrome Smith-Lemli-Opitz
+#+filetags: génétique
+
+- Déficit de l'enzyme 7-dehydrocholesterol-réductase
+* Clinique
+- Retard de croissance, microcéphalie, DI (modérée/sévère)
+- Malformations: dysmorphiie faciale, fente palatine, cardiaque, sous-développement organes génitaux (gar
+  on), polydactile post-axiale, syndactylie 2-3 des orteils
+* Diagnostic
+- Clinique + 7-dhydrocholestérol augmenté ou variant patho biallélique /DHCR7/
+  Attention: l'enzyme peut être normale chez 10% individus

@@ -1,0 +1,41 @@
+:PROPERTIES:
+:ID:       2241f379-b0e0-4819-b1f7-fcfdd35a09e6
+:END:
+#+title: Acylcarnitines
+#+filetags: biochimie
+
+Rappel
+[[id:d8d3a992-ea34-4540-b1c4-1c65e1a5e26c][β-oxidation des acides gras]]
+* Intérêt Maladies du métabolisme
+
+Intoxication (par accumulation en amont d'un blocage) et carence (aval)
+Clinique: variée : atteinte chronique -> décompensation aigüe avec risque décès
+Signes:
+- hypoglycémie hypocétotique
+- défaillance hépatiuqe
+- Troubles musculaires (cardiopatihe, rhabdomyolose) ou neuro
+
+Traitable! Traitement mis en place dès la suspicion, sans attendre la confirmation
+
+Bilan initial
+- étude du profile des acylcarnities
+- Chromatographie des acides : organiques urinaires, aminés urinaire + plasmatique, dosage carnitine
+
+* Dosage par spectrométrie de masse
+- Pré-analytique: plasma héparine/sang capillaire sur buvard
+  - peut varier pour un même patient car lipides sur la membranes des érythrocytes
+  - idéalement, il faut les deux
+  - théoriquement tout prélèvement peut suffir mais la méthode doit être validées
+- Pré-traitement: extraction par solvant
+- spectrométrie de masse (sans séparation préalabse) par électronébulisation
+* Inteprétation
+- Regarder la valeur numérique et les rapports (ex: C8/C2 augmenté = déficit en MCAD)
+- augmentation de toutes les acylcarnitise = intéressant sauf C0 et C2
+- diminution C0 et C2 = intéressant
+- idéalement, regarder pendant une crise
+
+** Variation physiologiques
+  nouveau-né : augmentation C13 (immaturité hépatique)
+* Interférences
+- Augmenté si triglycérides (lactescente)/bilirubien (ictère)
+- Antibiotiques

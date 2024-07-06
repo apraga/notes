@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       9db0b699-4eb4-46ac-a173-48a4a70e735c
+:END:
+#+title: Maladies du métabolisme
+#+filetags: génétique
+
+Voir [[id:2241f379-b0e0-4819-b1f7-fcfdd35a09e6][Acycarnitines]]
+[[id:71d5a935-c854-4258-a6b0-0d8d04dd4a43][Acidurie glutarique type 1]]

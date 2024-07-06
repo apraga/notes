@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       71d5a935-c854-4258-a6b0-0d8d04dd4a43
+:END:
+#+title: Acidurie glutarique type 1
+#+filetags: biochimie génétique
+
+Déficit en glutaryl-CoA-deshydrogénique (métabolsime lysien et trypotphane)
+
+Clinique: sur infection ou chirurgie
+- dystone, dyskinésie sévère par épisodes encéphalopathiques sévères
+
+Attention au formes cliniquement et biologiquement diminuées mais le pronostic neuro est le même...
+
+Traitement: non curatif!
+Ajout L-carnitine  et limitation lysien et tryptophane
+Régime d'urgence si virose/fièvre/chirurgie

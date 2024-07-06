@@ -1,0 +1,35 @@
+:PROPERTIES:
+:ID:       b56743c5-2851-422c-9499-e4af79d1d3e0
+:END:
+#+title: Spectrométrie de masse
+#+filetags: biochimie
+
+* [[id:be1c72fe-025f-4e5e-8118-e401f2df39f4][Principe]]
+* Avantages
+- Nombre d'applications++
+- Détecte/doser de nombreux analytes dans un petit volume
+- Peu d'effet matrice
+- Pas de problèmes comme en immunoanalyse
+- Identification snas ambiguité
+- Dosage au ng/mL
+* Inconvénients
+- Nécessite extraction (des fluidestissus) et séparation de la matrice
+- Sensible donc beaucoup d'interférences possibles
+- Long (techminuqes manuelles)
+- Dépend de l'opérateur
+- Nécessite un génératerur d'azote
+* Exemples
+** Bichimie
+- "débrouillage" métabo ( acide animénes, [[id:2241f379-b0e0-4819-b1f7-fcfdd35a09e6][Acycarnitines]] ... )
+- vitamine D et dérivés
+- stéroïdes
+- 7-déhydrocholestérole ([[id:d32cd79a-d17d-4afa-a6de-d6a31c1bc042][Syndrome Smith-Lemli-Opitz]])
+- catécholamine, métanéphrines
+- vitamine
+** Toxicologie, pharmacologie
+- Suivi concentration médicalement
+- Médico-légal
+- Cheveu,salive (consomation chronique)
+** Autres
+- Métaux "tous les éléments de Mendeleïv"
+- Omiques: protéomique (toutes les protéines exprimées dans une cellule/un tissu), métabologique (acides aminées, sucres...)
