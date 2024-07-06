@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       1871990d-00da-4c65-a747-8f8b492c2fe4
 :END:
+#+title: Musich2021
+
 Méthodes
 - Alignement sur génome de champignon
 - BWA, Bowtie2, MUMmer4, STAR, HiSAt2

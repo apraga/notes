@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       5cc49977-98bc-4dfc-9d55-57617fa0755a
 :END:
+#+title: Barbitoff2022
+
 La plus récente
 - 7 patients de référence (exome + genome) GIIAB: trio NA1287, 91 et 92, trio chinois, trio ashkenazi
 - genome + exome pour chaque

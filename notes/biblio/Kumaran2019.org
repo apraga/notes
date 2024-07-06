@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       1505e35d-b84a-4695-ba19-74c96c767f73
 :END:
+#+title: Kumaran2019
+
 **** Méthode :
 20 pipelines
 - 4 appels de variants: deepvariant, samtools, freebayes, gatk

@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       b8da404c-1ce6-43b6-9e4d-7d34225f1e8f
 :END:
+#+title: Kim2018
+
 Combine 2 appproches
 1. algorithme de Freebayes [cite:@garrison2012]
 2. réassemblage local (même idée que GATK apparement)

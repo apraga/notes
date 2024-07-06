@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       666c0eb2-e956-480a-8a29-bbfdcdf2863b
 :END:
+#+title: Hatem2013
+
 Vieil article mais plus exhaustif
 
 Méthodes

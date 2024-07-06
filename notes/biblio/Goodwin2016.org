@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       14bbd732-3495-4f64-b153-739d0318bfc3
 :END:
+#+title: Goodwin2016
+
 Intro (pour thèse)
 - séquencage initial du génome = long et coûteux
 - séquencage haut-début milieu des années 2000 = révolution sur le temps et côut

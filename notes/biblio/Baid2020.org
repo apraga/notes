@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       24432ccb-8568-433b-8686-f653e1ef2607
 :END:
+#+title: Baid2020
+
 Résultat de GIAB : genome et exome (différent kit de capture)
 - gatk4, strelka2, octopus, deepvariant
 - comparé au gold truth GAB: HG0001, 5,6,7 sur grch37 (car lifté) et 2,3,4 en 38

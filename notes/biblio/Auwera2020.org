@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       5b83e258-f4ad-403b-a10f-74b8fc5184be
 :END:
+#+title: Auwera2020
+
 Tutorial + présentation des outils. Référence recommandées par GATK
 *** DONE Best practice
 CLOSED: [2023-11-22 Wed 23:03]

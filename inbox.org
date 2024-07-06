@@ -1,1 +1,7 @@
 #+filetags: inbox
+* TODO Inscription jcadd 2024
+SCHEDULED: <2024-09-02 Mon>
+/Entered on/ [2024-07-06 Sat 14:51]
+* TODO Présentation JCADD 2024
+SCHEDULED: <2024-09-25 Wed> DEADLINE: <2024-10-30 Wed>
+/Entered on/ [2024-07-06 Sat 14:52]

@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       3497e7fd-bb22-487a-a2e0-a7e3468e2534
 :END:
+#+title: Liao2023
+
 #+begin_quote
 In brief, Minigraph builds a pangenome by starting from a reference assembly,
 here GRCh38, and iteratively and progressively adds in additional assemblies,

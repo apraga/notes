@@ -4,6 +4,7 @@
 #+title: Spectrophotométrie
 #+filetags: biochimie
 
+
 Longueur d'onde visible (100-800nm)
 Loi de Beer-Lambert : relation entre l'absorbance (densité optique) et rapporté d'intensité luminieuses (incident et transmise)
 

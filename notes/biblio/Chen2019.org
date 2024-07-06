@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       817481c5-3bca-4044-8319-cdf19daf6301
 :ROAM_REFS: @Chen2019
+#+title: Chen2019
+
 :END:
 Apport: plusieurs séquencage de NA12878 BGI+ illumina
 

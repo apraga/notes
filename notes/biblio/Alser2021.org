@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       f25927b1-797c-4c9d-89d5-f0bb10be9bd2
 :ROAM_REFS: @Alser2021
+#+title: Alser2021
+
 :END:
 Revue des algorithmes
 

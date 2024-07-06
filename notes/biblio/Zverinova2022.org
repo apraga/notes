@@ -2,6 +2,8 @@
 :ID:       a4731205-4c0b-4a89-b416-accee9628746
 :END:
 #+title: Zverinova2022
+
+#+title: Zverinova2022
 * Choix du génome de référence
  inclusion de zones hypervariables (HMC = histocmopatibility locas), PAR du chrY -> perte de l'aliggenent donc diminution sensibilité
  contigé non placés et non localisité : permet d'éviter le mauvais alignement de ces régions donc diminue les faux positif

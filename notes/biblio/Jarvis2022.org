@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       2a9bcff3-0753-40c6-a76d-f9b8782b345f
 :END:
+#+title: Jarvis2022
+
 Limite de GRCh38:
   - toujours incomplet : 150 000 "trous" -> 995
   - ne représente pas la diversité du génome (70% = 1 individu et le reste = 19 autres)

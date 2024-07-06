@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       5071e292-550c-483d-858e-0674a84184a2
 :END:
+#+title: Hwang2015
+
 Article précédant hwang2019
 Différents pipeline sur données d’exome NA12878 (3 aligneur et 4 appels de variants)
 

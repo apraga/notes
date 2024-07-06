@@ -16,16 +16,16 @@ SCHEDULED: <2024-06-19 Wed>
 ******* WAIT https://github.com/NixOS/nixpkgs/issues/321920
 On a changé le hash à la main dans python-jaxlib mais ce n'est pas une bonne solution
 ******* TODO Tensorflow
-SCHEDULED: <2024-07-06 Sat>
+SCHEDULED: <2024-07-09 Tue>
 ******* TODO Tensorflow RT
 ******* TODO CUDA
-SCHEDULED: <2024-07-06 Sat>
+SCHEDULED: <2024-07-09 Tue>
 ******* TODO Misc
 
 ******* TODO Bazel
-SCHEDULED: <2024-07-06 Sat>
+SCHEDULED: <2024-07-09 Tue>
 ******* TODO Clif
-SCHEDULED: <2024-07-06 Sat>
+SCHEDULED: <2024-07-09 Tue>
 ***** DONE [[file:~/code/nixpkgs/pkgs/by-name/ti/tiddit/package.nix::{][Package nix Tiddit]]
 ***** WAIT [[https://github.com/NixOS/nixpkgs/pull/312995][PR]] package nix tiddit
 Rebase + corrections + relancé <2024-06-29 Sat>
@@ -104,51 +104,55 @@ CLOSED: [2024-06-27 Thu 22:14] SCHEDULED: <2024-06-27 Thu>
 :CATEGORY: japonais
 :END:
 ** TODO Intermediate Japanese
-SCHEDULED: <2024-07-01 Mon +1d>
+SCHEDULED: <2024-07-06 Sat +1d>
 :PROPERTIES:
 :STYLE:    habit
 :LAST_REPEAT: [2024-06-30 Sun 15:43]
 :END:
-- State "DONE"       from "TODO"       [2024-06-30 Sun 15:43]
-- State "DONE"       from "TODO"           <2024-06-29 Sat 10:01>
-- State "DONE"       from "TODO"           <2024-06-27 Thu 10:01>
-- State "DONE"       from "TODO"           <2024-06-26 Wed 10:01>
-- State "DONE"       from "TODO"           <2024-06-25 Tue 10:01>
-- State "DONE"       from "TODO"           <2024-06-24 Mon 10:01>
-- State "DONE"       from "TODO"           <2024-06-20 Thu 10:01>
-- State "DONE"       from "TODO"           <2024-06-19 Wed 10:01>
-- State "DONE"       from "TODO"           <2024-06-18 Tue 10:01>
-- State "DONE"       from "TODO"           <2024-06-17 Mon 10:01>
-- State "DONE"       from "TODO"           <2024-06-16 Sun 10:01>
-- State "DONE"       from "TODO"           <2024-06-15 Sat 10:01>
-- State "DONE"       from "TODO"           <2024-06-14 Fri 10:01>
-- State "DONE"       from "TODO"           <2024-06-13 Thu 10:01>
-- State "DONE"       from "TODO"           <2024-06-12 Wed 10:01>
-- State "DONE"       from "TODO"           <2024-06-11 Tue 10:01>
-- State "DONE"       from "TODO"           <2024-06-10 Mon 10:01>
-- State "DONE"       from "TODO"           <2024-06-09 Sun 10:01>
-- State "DONE"       from "TODO"           <2024-06-08 Sat 10:01>
-- State "DONE"       from "TODO"           <2024-06-07 Fri 10:01>
-- State "DONE"       from "TODO"           <2024-06-06 Thu 10:01>
-- State "DONE"       from "TODO"           <2024-06-05 Wed 10:01>
-- State "DONE"       from "TODO"           <2024-06-04 Tue 10:01>
-- State "DONE"       from "TODO"           <2024-06-02 Sun 10:01>
-- State "DONE"       from "TODO"           <2024-06-01 Sat 10:01>
-- State "DONE"       from "TODO"           <2024-05-31 Fri 10:01>
-- State "DONE"       from "TODO"           <2024-05-30 Thu 10:01>
-- State "DONE"       from "TODO"           <2024-05-29 Wed 10:01>
-- State "DONE"       from "TODO"           <2024-05-28 Tue 10:01>
-- State "DONE"       from "TODO"           <2024-05-26 Sun 10:01>
-- State "DONE"       from "TODO"           <2024-05-25 Sat 14:47>
-- State "DONE"       from "TODO"           <2024-05-24 Fri 14:47>
-- State "DONE"       from "TODO"           <2024-05-22 Wed 14:47>
-- State "DONE"       from "TODO"           <2024-05-21 Tue 14:47>
-- State "DONE"       from "TODO"           <2024-05-20 Mon 14:47>
-- State "DONE"       from "TODO"           <2024-05-19 Sun 14:47>
-- State "DONE"       from "TODO"           <2024-05-18 Sat 14:47>
-- State "DONE"       from "TODO"           <2024-05-17 Fri 14:47>
-- State "DONE"       from "TODO"           <2024-05-16 Thu 14:47>
-- State "DONE"       from "TODO"           <2024-05-15 Wed 14:47>
++ State "DONE"       from "TODO"           <2024-07-04 Thu 10:01>
++ State "DONE"       from "TODO"           <2024-07-03 Wed 10:01>
++ State "DONE"       from "TODO"           <2024-07-02 Tue 10:01>
++ State "DONE"       from "TODO"           <2024-07-01 Mon 10:01>
++ State "DONE"       from "TODO"           <2024-06-30 Sun 10:01>
++ State "DONE"       from "TODO"           <2024-06-29 Sat 10:01>
++ State "DONE"       from "TODO"           <2024-06-27 Thu 10:01>
++ State "DONE"       from "TODO"           <2024-06-26 Wed 10:01>
++ State "DONE"       from "TODO"           <2024-06-25 Tue 10:01>
++ State "DONE"       from "TODO"           <2024-06-24 Mon 10:01>
++ State "DONE"       from "TODO"           <2024-06-20 Thu 10:01>
++ State "DONE"       from "TODO"           <2024-06-19 Wed 10:01>
++ State "DONE"       from "TODO"           <2024-06-18 Tue 10:01>
++ State "DONE"       from "TODO"           <2024-06-17 Mon 10:01>
++ State "DONE"       from "TODO"           <2024-06-16 Sun 10:01>
++ State "DONE"       from "TODO"           <2024-06-15 Sat 10:01>
++ State "DONE"       from "TODO"           <2024-06-14 Fri 10:01>
++ State "DONE"       from "TODO"           <2024-06-13 Thu 10:01>
++ State "DONE"       from "TODO"           <2024-06-12 Wed 10:01>
++ State "DONE"       from "TODO"           <2024-06-11 Tue 10:01>
++ State "DONE"       from "TODO"           <2024-06-10 Mon 10:01>
++ State "DONE"       from "TODO"           <2024-06-09 Sun 10:01>
++ State "DONE"       from "TODO"           <2024-06-08 Sat 10:01>
++ State "DONE"       from "TODO"           <2024-06-07 Fri 10:01>
++ State "DONE"       from "TODO"           <2024-06-06 Thu 10:01>
++ State "DONE"       from "TODO"           <2024-06-05 Wed 10:01>
++ State "DONE"       from "TODO"           <2024-06-04 Tue 10:01>
++ State "DONE"       from "TODO"           <2024-06-02 Sun 10:01>
++ State "DONE"       from "TODO"           <2024-06-01 Sat 10:01>
++ State "DONE"       from "TODO"           <2024-05-31 Fri 10:01>
++ State "DONE"       from "TODO"           <2024-05-30 Thu 10:01>
++ State "DONE"       from "TODO"           <2024-05-29 Wed 10:01>
++ State "DONE"       from "TODO"           <2024-05-28 Tue 10:01>
++ State "DONE"       from "TODO"           <2024-05-26 Sun 10:01>
++ State "DONE"       from "TODO"           <2024-05-25 Sat 14:47>
++ State "DONE"       from "TODO"           <2024-05-24 Fri 14:47>
++ State "DONE"       from "TODO"           <2024-05-22 Wed 14:47>
++ State "DONE"       from "TODO"           <2024-05-21 Tue 14:47>
++ State "DONE"       from "TODO"           <2024-05-20 Mon 14:47>
++ State "DONE"       from "TODO"           <2024-05-19 Sun 14:47>
++ State "DONE"       from "TODO"           <2024-05-18 Sat 14:47>
++ State "DONE"       from "TODO"           <2024-05-17 Fri 14:47>
++ State "DONE"       from "TODO"           <2024-05-16 Thu 14:47>
++ State "DONE"       from "TODO"           <2024-05-15 Wed 14:47>
 ** DONE Payer leçon aya <2024-05-19 Sun>
 /Entered on/ [2024-05-19 Sun 23:02]
 ** DONE Notes japonais
@@ -214,7 +218,7 @@ CLOSED: [2024-06-29 Sat 14:53] SCHEDULED: <2024-06-27 Thu>
 :CATEGORY: maison
 :END:
 ** TODO Contacter RED pour changer adresse sur facture
-SCHEDULED: <2024-07-03 Wed>
+SCHEDULED: <2024-07-20 Sat>
 /Entered on/ [2024-05-19 Sun 13:56]
 ** DONE Payer loyer grenoble
 CLOSED: [2024-06-12 Wed 21:39] SCHEDULED: <2024-06-05 Wed>
@@ -228,7 +232,7 @@ CLOSED: [2024-06-16 Sun 00:55]
 /Entered on/ [2024-06-14 Fri 22:54]
 
 ** TODO Remboursement Allianz Montbéliard -> Grenoble 2024/0523168
-SCHEDULED: <2024-07-02 Tue>
+SCHEDULED: <2024-07-09 Tue>
 /Créé le/ [2024-05-16 Thu 22:44]
 2024-03-01
 ** DONE Justificatif de domicile Caisse Épargne Metz
@@ -241,8 +245,8 @@ CLOSED: [2024-06-29 Sat 13:59]
 CLOSED: [2024-06-29 Sat 13:28] SCHEDULED: <2024-06-29 Sat>
 /Entered on/ [2024-06-29 Sat 12:57]
 Envoyé, en attente
-** TODO Mise à jour avec GRCh9.6 :gentoo:
-SCHEDULED: <2024-06-30 Sun>
+** DONE Mise à jour avec GRCh9.6 :gentoo:
+CLOSED: [2024-07-06 Sat 10:17] SCHEDULED: <2024-06-30 Sun>
 /Entered on/ [2024-06-30 Sun 12:57]
 emerge -1u haskell-updater && haskell-updater --world -- -N --with-bdeps=y && emerge --depclean && haskell-updater -- @preserved-rebuild
 Tenir holoheap au courant
@@ -251,7 +255,7 @@ Tenir holoheap au courant
 CLOSED: [2024-06-30 Sun 14:28] SCHEDULED: <2024-06-30 Sun>
 /Entered on/ [2024-06-30 Sun 12:57]
 ** TODO Mettre en place prélèvement loyer
-SCHEDULED: <2024-07-02 Tue>
+SCHEDULED: <2024-07-30 Tue>
 /Entered on/ [2024-07-02 Tue 22:54]
 * Scrap
 ** DONE Aerial spincity
