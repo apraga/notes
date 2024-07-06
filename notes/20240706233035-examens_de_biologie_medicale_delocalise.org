@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       2b3074d7-0afc-4429-8086-f51e0f85e291
+:END:
+#+title: Examens de biologie médicale délocalisé
+#+filetags: biochimie biologie
+
+Def ISO 22870 : à proximité du patient dont le résultat peut modifier soin (gds, hémoglobine...)
+- Responsabilité du biologiste
+- Médecine, SF, infirmier et tech de laboratoire peuvent les faire (pas les aides soignants ni manip radio)
+
+Ce qui n'en est pas : BU, TROD, test strepto A
+
+Problème : personnel mal formés, procédures non respectées, patient mal identifié, réactifs périmés, tests non validés...
+
+Il faut rédiger un contrat clinico-biologique
+
+Biologiste référenc : documentation + procédure (pré-analytique+++)
+ÉValution avec indicateurs (coût, nb dysfonctionnement)
+
+Transmission au SIL directement ou via middleware

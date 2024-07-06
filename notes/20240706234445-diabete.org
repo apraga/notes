@@ -1,0 +1,87 @@
+:PROPERTIES:
+:ID:       b5b5ce7f-33f6-4561-9c81-d7de9d871c29
+:END:
+#+title: Diabète
+#+filetags: biochimie endocrino
+
+Suspicion de diabète aux urgences
+1ere intention : glycémie capillaire, glycosurie, corps cétonique
+
+Définition:
+- glycémie à jeun normale < 1.1g/L (6.06mmol/L)
+- hyperglycémie modélure à jeun entre 1.1 et 1.26 g/L (inclus) soit 6.93mmol/L)
+  - si 2H après 75g de gulose >= 2g/L (11mmol/L) -> diabète
+- diabète : >= 1.26g/L à 2 reprise *ou* >= 2g/L
+
+*Seule la glycémie veineuse au labo donne le diag*
+
+* Préanalytique
+à jeun >= 10h sur plasma (hépariné) avec séparation plasma < 1h.
+Sinon antiglycolytique (fluorure de sodium, voir [[id:0026928a-33af-432c-9bfe-3ec2d8f87a38][Pré-analytique en biochimie]] )
+
+** Variants
+avant 4ans, -20%
+Hyperglycémie avec alcool, émotion, froid (+20 à 50% !), cigarette (+10%)
+* Analytique
+- référence = mesure hexokinase
+- autre: glucose oxydase
+* Dosages
+** Lecteurs de glycémie
+  Attention à ceux sensible à l'hématocrite (enfant, femme enceinte) et viscosité (hyperlipidémie)
+** Glycosurie
+Seuil de réaborption tubulaire : glycémie > 10mmol/L ->_partielle, début glycosire. Saturation si > 22mmol/L
+
+Retarde le chiffre de la glycémie.
+Non recommandé pour surveillancedu diabète
+** Corps cétonique
+Sang veineux/capillaire
+Urines : valeur prédictive élevée pour exclure décompensation
+
+Indication: surveillance diabète insulino-dépendant, diabète gestationnel
+** Bandelette urinaire
+Faussé par dakin, eau de javel.
+Protéine : albumine (mais protéinuire Bence-Jones non détecté)
+Glucose (0.4g/L limite), corps cétonique (limite 0.05g/L)
+
+Autres causes de protéinurie que l'atteinte rénale...
+** Hémglobine glyquée
+HbA1c et glycémie sont corrélée au risque de rétinopathie
+Pré-analytiuqe : non à jeun, conservation 7jours à 4``
+
+Augmenté si thalassémie, carence fer,  excès alcool, IRC... (tout ce qui augmente la durée de vie des érythrocytes)
+
+Normal < 6.5%.
+Variants de glycémie sur 3 mois -> surveillance ou diagnostic du diabète (possible)
+
+** Diabète auto-immun
+Auto-antigène ciblés
+- (pro)insuline: peu persistent
+- *GAD* (catalyse formation GABA): à tester (GAD65) car apparaissont longtemps avant diabètes
+- *IA2* (ressemble tyrosine phospahatase) : 1 an avant diabète, si augmenté
+- ZnT8 (mouvement du zinc, rôle stabilisation molécule d'insuline) : transitoire
+
+antiGAD positif: chercher
+- maladie coeliaque: ac anti transglutaminase
+- Addison: - Ac ant-transglutaminase
+- Ac anti-thyropéorxidase (thyroïde)
+* Prédisposition génétique
+- type 1: CMH2 = facteur de risque, facteurs de prédisposition (haplotype DR3, DR4) ou prodection (DR15)
+  - autres : VNTR (insuline), CTLA-4 (immunomodulation LT), PTP-N22
+- type 2 : nb gènes mais utilité incertaines
+* Type 1 et 2
+| 1                                | 2                           |
+| Début brutal                     | insidieux                   |
+| Patient mince                    | surpoiis/obésité            |
+| < 35 ans                         | > 40 ans                    |
+| Cétose inaugurale                | Cétose rare                 |
+|----------------------------------+-----------------------------|
+| destruction celluse β par autoimmunét | Résultat insuline           |
+|                                  | Déficit sécrition insline - |
+|----------------------------------+-----------------------------|
+| Génétique: rares ATCD famailiaux | ATCD familiaux fréquence    |
+| 50-70% jumeaux homozygotes       | 90-100%                     |
+* Diabète gestationnel
+Si facteur de risque (> 35 ans, IMC > 25), ATCD 1er degré, ATCD personnels
+- < 10 SA: >= 5.05mmol/L (attention si >= 6.93, DT2)
+- 24-28SA HGPO si facteur de risque sans dépistage
+- 3e trie  si facteur de risque sans dépistage: glycémie jeun

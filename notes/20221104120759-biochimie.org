@@ -5,12 +5,15 @@
 
 [[id:0026928a-33af-432c-9bfe-3ec2d8f87a38][Pré-analytique en biochimie]]
 
+* Examens
 Gaz du sang
 - [[id:8b651cd6-01a9-48d2-bc89-c9340affe2d9][Coxymétrie]]
 
 [[id:6de5833a-cec5-4560-8e3d-36fde81cb1a7][Méthodes de dosage]]
-
-Paramètres
+[[id:2b3074d7-0afc-4429-8086-f51e0f85e291][Examens de biologie médicale délocalisé]]
+* Maladies
+[[id:b5b5ce7f-33f6-4561-9c81-d7de9d871c29][Diabète]]
+* Paramètres
 - [[id:0286b98f-eb1f-41f0-80c5-ecfe06e243da][Créatine kinase]]
 - [[id:02953d37-3891-43b1-9e07-cb4681e5e44c][Bilirubine]]
 - [[id:08f57dfb-caed-4cba-ac90-f0bcffcdb7b4][γGT (gammaglutamyl-transférase)]]
