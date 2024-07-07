@@ -31,7 +31,7 @@ PTH.share [PTH.mkPersist PTH.sqlSettings, PTH.mkMigrate "migrateAll"] [PTH.persi
     deriving Show
 |]
 
-path =  "/home/alex/.emacs.d/.local/cache/org-roam.db"
+path =  "/home/alex/.config/emacs/.local/cache/org-roam.db"
 
 unescape :: T.Text -> T.Text
 unescape = T.replace "\"" ""
@@ -61,7 +61,6 @@ replaceLink (Link attr xs t) = do
   let p' = htmlLink (T.unpack p) pwd
   return $ Link attr xs (T.pack p', snd t)
 replaceLink x = return x
-
 
 main :: IO ()
 main = toJSONFilter replaceLink
