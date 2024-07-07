@@ -1,26 +1,17 @@
+:PROPERTIES:
+:ID:       dfd5ff3e-57a3-4578-b90e-24ccde5d4a93
+:END:
+#+title: Recettes
 * Desserts
-:PROPERTIES:
-:CUSTOM_ID: desserts
-:END:
 ** DONE Biscuit cuiller
-:PROPERTIES:
-:CUSTOM_ID: done-biscuit-cuiller
-:END:
 (Patisserie, Leçons pas-à-pas) : 12min environ 3 blanc 75g sucre 55g
 farine37g fécule 4 jaunes
 
 ** RETRY Biscuit de Savoie
-:PROPERTIES:
-:CUSTOM_ID: retry-biscuit-de-savoie
-:END:
-[[https://www.meilleurduchef.com/cgi/mdc/l/fr/recette/biscuit-savoie.html][meilleur
-du chef]]) : cuire vraiment plus longtemps en bas du four. Bien beurrer
+[[https://www.meilleurduchef.com/cgi/mdc/l/fr/recette/biscuit-savoie.html][meilleur du chef]] : cuire vraiment plus longtemps en bas du four. Bien beurrer
 et fariner.
 
 ** DONE [[https://www.bonappetit.com/recipe/blackout-cake][Blackout cake]]
-:PROPERTIES:
-:CUSTOM_ID: done-blackout-cake
-:END:
 *** Ingredients
 :PROPERTIES:
 :CUSTOM_ID: ingredients
@@ -144,10 +135,7 @@ peut couper le bord supérieur pour avoir quelques miettes puis 3
 tranches. Un peu trop de glacage et pudding (10%) Résultat OK
 
 ** RETRY Bounty
-:PROPERTIES:
-:CUSTOM_ID: retry-bounty
-:END:
-[[http://www.750g.com/bounty-maison-r97803.htm][750g]]) : prendre du bon
+[[http://www.750g.com/bounty-maison-r97803.htm][750g]] : prendre du bon
 chocolat
 
 - noix de coco
@@ -155,9 +143,6 @@ chocolat
 - chocolat noir
 
 ** RETRY Brioche
-:PROPERTIES:
-:CUSTOM_ID: retry-brioche
-:END:
 *** [[[[http://www.enviedebienmanger.fr/fiche-recette/recette-brioche-pur-beurre]])][Enviedebienmanger
 :PROPERTIES:
 :CUSTOM_ID: httpwww.enviedebienmanger.frfiche-recetterecette-brioche-pur-beurreenviedebienmanger
@@ -1876,9 +1861,6 @@ Au total: réessayer avec de la coriandre, hydrater plus la couche
 supérieur de riz
 
 * Pains
-:PROPERTIES:
-:CUSTOM_ID: pains
-:END:
 Pour une croûte : augmenter la vapeur
 
 ** Homemade Pita Bread

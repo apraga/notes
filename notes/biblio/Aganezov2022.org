@@ -4,7 +4,7 @@
 #+title: Aganezov2022
 
 NB: 229Mb sont "non-syntenique" = ne s'alignent pas de manière linéaire en GRCh38 sur un intervalle de 1Mbp (ex: inversion)
-**** Résultats
+* Résultats
 - Héritage
   - GRCh38: 1 indivu représente 72:6% du génome (56% africain, 28.1% Européan), le second plus gros contributeur est 5.5% majoritairement asie east
   - T2T : principalement européenne

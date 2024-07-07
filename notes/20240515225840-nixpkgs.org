@@ -19,6 +19,11 @@ Les nouveaux paquets sont dans pkg/by-name
 - utiliser =hash= plutôt que =sha256=]] [[https://nixos.org/manual/nixpkgs/stable/#fetchurl][(source)]]
 - version = "2.2-unstable-YYYY-MM-DD" s'il n'y a pas de version [[https://github.com/NixOS/nixpkgs/blob/master/pkgs/README.md#package-naming][(source)]]
 
+  Vérifier avec
+  #+begin_src
+nix-shell -p nixpkgs-review --run "nixpkgs-review rev HEAD"
+  #+end_src
+
 * Variables
 - =nativeBuildInput= : si exécuté durant le build (ex: cmake)
 - =buildInputs= : si utilisé à l'exécution ou ajouté dans la sortie (ex: zlib). Attention, il peut falloir ajouter aux 2 !
@@ -41,5 +46,7 @@ env
 
 * [[id:56f7a57a-1807-4d72-abb2-6420eab119c5][Débugger un paquet nix]]
 * Astuces
+** Copier une dérivation en ssh
+nix copy --from ssh://meso /nix/store/f3ak3jvb9kxv6jd6r7kjbjr1a59hzyrb-tensorflow-2.13.0-python
 ** Problèmes de drivers graphiques
 Utiliser [[https://github.com/nix-community/nixGL][nixGL]] si l'on n'utilise pas nixos.

@@ -59,6 +59,5 @@ NB: on peut faire aussi
 #+end_src
 
 * Ressources
-- [[https://nixos.wiki/wiki/Nixpkgs/Create_and_debug_packages][Source]]
-- [[https://nixos.wiki/wiki/Packaging/Tutorial]]
-- [[[#nixpkgs][nixpkgs]]]
+- https://nixos.wiki/wiki/Create_and_debug_nix_packages
+- [[id:0edbf593-2192-479a-8cc4-aefd3e991f2a][Nixpgs]]

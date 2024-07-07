@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       1ab5aa3c-f88a-45f9-a551-2507fc6642ff
+:END:
+#+title: Anomalie lipidique
+#+filetags: biochimie endocrino
+
+Exploration: après 12h de jeune
+1ere intention
+- cholestérole totale, triglycérides, HDL-c
+- LDL-c : dosage direct si TG > 0.4gL ou diabète ou maladie vasculaire connue. Sinon la formule de Friedewald
+  #+begin_src latex
+  cholestérol total - HDLc - TG/5 (pour un résultat en g/L)
+  #+end_src
+  NB: estime le cholestérol lié au VLDL mais incorrect si hypertriglycéridémie
+Confirmaton par 2e dosage si anormal
+Si HDL < 0.35g/L ou > 0.8g/L contrôle possible de l'apoA1 par le biologiste

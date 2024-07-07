@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       f9caff5e-5572-4e86-81e2-c7897fdd9248
+:END:
+#+title: Débit de filtration glomérulaire (DFG)
+#+filetags: biochimie
+
+Inconvénient : valable seulement si fonction rénale stable
+fastidieux (recueil sur 24h)
+La clairance de la créatine > DFG (car créatine sécrétée par les tubules rénaux)
+
+Formules :
+- cockroft et gault
+- MDRD
+- CKD/Epi : plus précise que MDRD pour DFG not. si clairance > 60

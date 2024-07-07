@@ -4,4 +4,8 @@
 #+title: Créatinine
 #+filetags: biochimie
 
+Si maladie rénale établie, inutile de mesure la clairance. Il suffit de surveiller par la créatinine plasmatique
+Influencé par : ivande, exercice et masse musculaire
 Norme 53-115
+
+Attention, le DFG doit diminuer de 50% avant que la concentration de créatinine plasmatique > normale !

@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       a151d21a-b016-4de8-a269-29673c636355
+:END:
+#+title: Protéinurie
+#+filetags: biochimie
+
+Diagonstic + surveillance IRC, risque cardiovasculaire
+Microalbuminurie : 30-300 sur 24h (mg/j) ou rapport albumine/créatinine 30-300/mg/
+Protéinurie > 300mg/j sur 24h ou > 300mg/g pour le rapport
+
+Microabl = faible quantité l'ablumine dans les urine -> atteinte endothéolique
+Facteur de risque de néphropathie diabétique + surmortalité cardiovasculaire chez les diabétique

@@ -53,6 +53,11 @@ CLOSED: [2024-05-30 Thu 18:55] SCHEDULED: <2024-05-29 Wed>
 **** DONE Revoir biblio base de données [[id:6f89f301-1b55-43cb-b3be-bf954bbc079e][Base de données pour pipeline constit]]
 CLOSED: [2024-06-15 Sat 11:18] SCHEDULED: <2024-06-09 Sun>
 /Entered on/ [2024-06-06 Thu 22:59]
+**** DONE Compiler sur mésocentre Patch tensorflow distutils
+CLOSED: [2024-07-07 Sun 12:21] SCHEDULED: <2024-07-07 Sun>
+/Entered on/ [2024-07-07 Sun 10:55]
+**** WAIT PR Patch tensorflow distutils
+/Entered on/ [2024-07-07 Sun 10:55]
 *** Article
 **** DONE Bug noodles : parsing Clinvar vcf fails
 CLOSED: [2024-06-06 Thu 21:55] SCHEDULED: <2024-06-06 Thu>
@@ -73,6 +78,12 @@ CLOSED: [2024-06-09 Sun 23:27] SCHEDULED: <2024-06-09 Sun>
 SCHEDULED: <2025-04-06 Sun>
 https://www.ouvriralascience.fr
 /Entered on/ [2024-06-06 Thu 23:00]
+*** TODO Inscription jcadd 2024
+SCHEDULED: <2024-09-02 Mon>
+/Entered on/ [2024-07-06 Sat 14:51]
+*** TODO Présentation JCADD 2024
+SCHEDULED: <2024-09-25 Wed> DEADLINE: <2024-10-30 Wed>
+/Entered on/ [2024-07-06 Sat 14:52]
 ** NF1
 :PROPERTIES:
 :CATEGORY: nf1
@@ -270,11 +281,9 @@ CLOSED: [2024-05-26 Sun 21:12] SCHEDULED: <2024-05-26 Sun>
 :PROPERTIES:
 :CATEGORY: nix
 :END:
-** TODO Review PR  gitftless 154351
-SCHEDULED: <2024-07-07 Sun>
+** WAIT Review PR  gitftless 154351
 /Entered on/ [2024-05-20 Mon 00:08]
-** TODO tester rapidement gradle2nix v2 pour gatk
-SCHEDULED: <2024-07-07 Sun>
+** HOLD tester rapidement gradle2nix v2 pour gatk
 /Entered on/ [2024-06-30 Sun 09:52]
 ** DONE Gatk 4.6.0.0
 CLOSED: [2024-06-30 Sun 17:17] SCHEDULED: <2024-06-30 Sun>
@@ -308,5 +317,5 @@ CLOSED: [2024-06-05 Wed 22:08] SCHEDULED: <2024-06-05 Wed>
 Sera envoyée par courrier (adresse à mise à jour)
 Doit envoyer un code pour accès second espace personnel
 ** TODO Envoyer remboursement podologue mutuelle
-SCHEDULED: <2024-07-02 Tue>
+SCHEDULED: <2024-07-08 Mon>
 /Entered on/ [2024-07-02 Tue 22:54]
