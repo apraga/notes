@@ -13,6 +13,7 @@ Gaz du sang
 [[id:2b3074d7-0afc-4429-8086-f51e0f85e291][Examens de biologie médicale délocalisé]]
 * Maladies
 [[id:b5b5ce7f-33f6-4561-9c81-d7de9d871c29][Diabète]]
+[[id:e8a1e9bd-aa5a-4783-a5a8-7be278a8e924][Dysnatrémie]]
 * Paramètres
 - [[id:0286b98f-eb1f-41f0-80c5-ecfe06e243da][Créatine kinase]]
 - [[id:02953d37-3891-43b1-9e07-cb4681e5e44c][Bilirubine]]
