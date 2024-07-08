@@ -17,11 +17,12 @@ SCHEDULED: <2024-06-19 Wed>
 On a changé le hash à la main dans python-jaxlib mais ce n'est pas une bonne solution
 ******* TODO Tensorflow
 SCHEDULED: <2024-07-09 Tue>
-******* TODO Tensorflow RT
+Si on veut python3.12, il faut faire fronctionner [[https://github.com/NixOS/nixpkgs/pull/325224/commits/21ce0d2d77a91d757103b691b51c5e932bfede47][ce PR]]
+Patch upstream en cours
+Sinon il faut 3.11 mais compiler sur mésocentre
 ******* TODO CUDA
 SCHEDULED: <2024-07-09 Tue>
 ******* TODO Misc
-
 ******* TODO Bazel
 SCHEDULED: <2024-07-09 Tue>
 ******* TODO Clif
@@ -39,7 +40,7 @@ Relancé <2024-06-29 Sat>
 Relancé <2024-06-29 Sat>
 **** WAIT Support pour pull partiel :scidataflow:
 **** TODO Tests pull partiel :scidataflow:
-SCHEDULED: <2024-07-06 Sat>
+SCHEDULED: <2024-07-12 Fri>
 **** DONE PR pull partiel :scidataflow:
 CLOSED: [2024-06-19 Wed 22:02] SCHEDULED: <2024-06-16 Sun>
 **** KILL Assets spliceai GRCh38 :scidataflow:
@@ -219,7 +220,7 @@ CLOSED: [2024-06-05 Wed 22:23]
 /Entered on/ [2024-06-03 Mon 22:45]
 Ne répond pas mais Oriane dit OK
 *** TODO Monter dossier interCHU Biomnis
-SCHEDULED: <2024-07-06 Sat>
+SCHEDULED: <2024-07-12 Fri>
 /Entered on/ [2024-06-12 Wed 23:02]
 ** DONE Fusionner notes hémato + biochimie en attente
 CLOSED: [2024-06-29 Sat 14:53] SCHEDULED: <2024-06-27 Thu>

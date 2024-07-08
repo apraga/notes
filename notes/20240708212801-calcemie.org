@@ -1,0 +1,131 @@
+:PROPERTIES:
+:ID:       6fe0f5fe-9370-4dfa-839d-0edaa216c446
+:END:
+#+title: Calcémie
+#+filetags: biochimie
+
+Calcium extra-cellulaire
+- lié aux proténies
+- complexé
+- libre ou ionisé -> celui qui est régulé
+* Mesure
+** Calcémie ionisé
+Mesurable par potentiométrie (sang total sur gaz du sang, sérum)
+acidose : interaction plus faible avec les protéines car moins chargées (et inverse si alcalose)
+Pré-anal: attention pas de garrot, centrifugation, mesure rapide
+** Sinon mesure calcium total
+calcémie totale ~ ionisé si pH et protéines normales
+Si hypoprotidémie, correctien la calcémie en fonciton protidémie/albuminémie (Ca_mesure - 0.025(alb-40))
+Sérum/plasma hépariné
+Non impacté par variation aigüe pH mais diminué si acidose chronique (et augmenét si alcalose)
+** Calciurie
+- échantillon = résorption osseuse + apport digestif
+- à jeun = résportion osseuse
+- 24h = apport journalier disestif et osseux
+Conserver urine acidifié (évite précipitation)
+
+Valeur:
+- 24h < 0.1mmol/kg/j
+- à jeun : <.40mmol par mmol de créatiniurie
+* Physiopath
+** Entrée/sortie
+Entrée : digestive, os, cellules
+Sortie: cellules, os, digestiv, rein
+*** Digestif
+10mg/kg/jr minimum soit par passage paracellulaire depuis lumière vers interstitiel (post-prandial) ou transport transcellulaire (jeûne)
+*** Osseux
+99% du calcium total !
+Masseuse osseuse stablem mais remodelé en permanence (ostéoblaste = formation, ostéoclastes = résorption -> voir système RANK-RANKL)
+Phase inorganique (hydroxyapatite surtout, carbonate) et organie (collage+++, autre)
+*** Urinaire
+État stable : entrée digestive = excrétion urinaire
+Seulement le calcium non lié aux protiénie (= complexe et libre)
+Réabsorption
+- Surtout tube contourné proximal ("suit" le sodium) mais également branche ascendante henlé (idem) et tube contourné distal (idem)
+** PTH
+PTH synthétisé cellules parathyroïdienne en réponse à diminution calcémie (capteur dans les cellules parthyroïdes), t1/2 6 min
+Attention à la mesure : fragile, demi-vie courte.
+toujours avec calcuméie !
+Prélever avant correction calcémie
+
+Selon les méthodes, ne mesure pas la même chose...
+- 3e génération mesure PTH 1-84
+- 2e génération idem mais en plus 7-84
+Différente si rénal chronique
+
+*** Action: augmente calcium
+- résorption osseuse
+- rein :
+  - réabsorption tubulaire (mais diminue réabsorption phosphate)
+  - augmente 1 α-hydroxylase (1,25OH2D)
+** Vitamine D
+#+BEGIN_SRC dot :file images/vitamineD.png :exports results
+digraph {
+node[shape=box];
+UV -> "vitamine D3";
+Alimentation -> "vitamine D3";
+"vitamine D3" -> "25OH vitamine D3";
+"25OH vitamine D3" -> "1,25(OH)2 vitamine d3\n(calcitriol)"[label="1α-hydroxylase rénale"];
+}
+#+END_SRC
+
+#+RESULTS:
+[[file:images/vitamineD.png]]
+
+  Le calcitriol régule négativement 1α-hydroxylase rénale
+  Mais PTH régule positivemeent
+*** Formes
+25 OH D: forme D3 (alimentation/peau) et d2 (alimentation) -> mesure simultanée par méthode immuno
+Calcitriol: mesure difficile
+***  Action: augmente calcium
+Calcitriole
+  - augmente absorption digestive calcium et Phosphate
+  - réabsorption rénale calcium (tubule)
+  - réabsorption osseuse
+  - diminue sécrétion PTH
+  - augmente sécrétion FGF23
+
+* Hypocalcémie
+#+BEGIN_SRC dot :file images/hypocalcémie.png :exports results
+digraph {
+node[shape=box];
+alpha[label = "1α-hydroxylase"]
+Hypocalcémie -> "Augmente PTH" -> { "Résorbtion os"; "Réabsorption rénale"; alpha};
+alpha -> dummy;
+{rank = same; "25(OH)D";dummy;calcitriol}
+"25(OH)D" -> dummy[arrowhead=none];
+dummy -> calcitriol -> "Réabsorption digestive";
+dummy[shape=point;width=0]
+}
+#+END_SRC
+
+#+RESULTS:
+[[file:images/hypocalcémie.png]]
+* Hypercalcémie
+** Clinique
+Variable selon vitesse, individus
+- digestif: nausée, vomissement...
+- neuro-musculaire: asthénie,hypotonie, confusion,coma
+- cardiaque: bradycardie, BAV, raccoursissement QT
+- rénaux : diabte insipide (néphrogénituqe), perte rénale NaCl
+** Mécanisme
+Sécrétion PTH altérée
+Augmentation entrée calcium digestive/osseuse
+Diminution sortie
+** Diagnostic
+Dosage
+- PTH
+- phoshpatémie
+- calciurie
+- métabolite vitamine D
+
+PTH augmenté (inadaptée)
+- hyperparathyroïdie/tumeur
+  - augment réabsorption rénale calcium + osseuse + digestive (via calcitriol)
+  - NB: phoshate diminuée, ostéocalcime augmenté (remaniement osseaux accéléré)
+  - calcitriol augmenté (PTH stimule 1α-hydroxylase)
+- hypercalcémie familiale bénignie
+  - calciurie basse ou normale !
+
+Hypophosphatémie:
+   - origine rénale ou de transfert selon nomogramme de Bijvoati
