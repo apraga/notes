@@ -1,0 +1,847 @@
+#+title: Auragen
+
+* Pseudogene
+:PROPERTIES:
+:CATEGORY: pseudogene
+:END:
+
+*** DONE Contexte
+CLOSED: [2024-06-24 lun. 11:52]
+**** DONE Overcoming challenges and dogmas to understand the functions of pseudogenes [cite:@cheetham2019]
+CLOSED: [2024-06-12 mer. 18:00] SCHEDULED: <2024-06-10 lun.>
+:PROPERTIES:
+:TITLE:    Overcoming challenges and dogmas to understand the functions of pseudogenes
+:BTYPE:    article
+:CUSTOM_ID: cheetham2019
+:AUTHOR:   Seth W. Cheetham and Geoffrey J. Faulkner and Marcel E. Dinger
+:JOURNAL:  Nature Reviews Genetics
+:YEAR:     2019
+:VOLUME:   21
+:NUMBER:   3
+:PAGES:    191-201
+:DOI:      10.1038/s41576-019-0196-1
+:URL:      http://dx.doi.org/10.1038/s41576-019-0196-1
+:END:
+**** DONE Blueprint Genetics’ approach to pseudogenes and other duplicated genomic regions
+CLOSED: [2024-06-14 ven. 17:17]
+:PROPERTIES:
+:TITLE:    Blueprint Genetics’ approach to pseudogenes and other duplicated genomic regions
+:BTYPE:    misc
+:CUSTOM_ID: blueprint2020
+:AUTHOR:   BluePrint Genetics
+:YEAR:     2020
+:URL:      https://blueprintgenetics.com/pseudogene/
+:NOTE:     Accessed 2024-06-14
+:END:
+
+*** Software
+**** DONE Expressed Pseudogenes in the Transcriptional Landscape of Human Cancers
+CLOSED: [2024-06-10 lun. 16:55]
+:PROPERTIES:
+:TITLE:    Expressed Pseudogenes in the Transcriptional Landscape of Human Cancers
+:BTYPE:    article
+:CUSTOM_ID: kalyana-sundaram2012
+:AUTHOR:   Shanker Kalyana-Sundaram and Chandan Kumar-Sinha and Sunita Shankar and Dan R. Robinson and Yi-Mi Wu and Xuhong Cao and Irfan A. Asangani and Vishal Kothari and John R. Prensner and Robert J. Lonigro and Matthew K. Iyer and Terrence Barrette and Achiraman Shanmugam and Saravana M. Dhanasekaran and Nallasivam Palanisamy and Arul M. Chinnaiyan
+:JOURNAL:  Cell
+:YEAR:     2012
+:VOLUME:   149
+:NUMBER:   7
+:PAGES:    1622-1634
+:DOI:      10.1016/j.cell.2012.04.041
+:URL:      http://dx.doi.org/10.1016/j.cell.2012.04.041
+:END:
+
+RNAseq seul
+1 ou 2 read aligné sur région annotéte puis filtre puis utilisation d'ENCODE, YALE et base de donnée maison
+D'après[cite:@cheetham2019], ne prend en compte que les reads des régions divergentes des pseudogènes -> pseudogènes "anciens" en terme d'évolution
+**** DONE PΨFinder: a practical tool for the identification and visualization of novel pseudogenes in DNA sequencing data :récent:
+:PROPERTIES:
+:TITLE:    PΨFinder: a practical tool for the identification and visualization of novel pseudogenes in DNA sequencing data
+:BTYPE:    article
+:CUSTOM_ID: abrahamsson22ppsifinder
+:AUTHOR:   Sanna Abrahamsson and Frida Eiengård and Anna Rohlin and Marcela Dávila López
+:JOURNAL:  BMC Bioinformatics
+:YEAR:     2022
+:VOLUME:   23
+:NUMBER:   1
+:PAGES:    59
+:DOI:      10.1186/s12859-022-04583-4
+:URL:      http://dx.doi.org/10.1186/s12859-022-04583-4
+:END:
+Candidat intéressant, testé sur panel + validé sanger
+**** DONE Pseudofinder: detection of pseudogenes in prokaryotic genomes :récent:
+CLOSED: [2024-06-24 lun. 15:15]
+:PROPERTIES:
+:TITLE:    Pseudofinder: Detection of Pseudogenes in Prokaryotic Genomes
+:BTYPE:    article
+:CUSTOM_ID: syber2022pseudopipe
+:AUTHOR:   Mitchell J Syberg-Olsen and Arkadiy I Garber and Patrick J Keeling and John P McCutcheon and Filip Husnik
+:JOURNAL:  Molecular Biology and Evolution
+:YEAR:     2022
+:VOLUME:   39
+:NUMBER:   7
+:PAGES:    nil
+:DOI:      10.1093/molbev/msac153
+:URL:      http://dx.doi.org/10.1093/molbev/msac153
+:END:
+**** DONE PseudoPipe: an automated pseudogene identification pipeline
+CLOSED: [2024-06-26 mer. 14:03]
+:PROPERTIES:
+:TITLE:    PseudoPipe: an automated pseudogene identification pipeline
+:BTYPE:    article
+:CUSTOM_ID: zhang2006pseudopipe
+:AUTHOR:   Zhaolei Zhang and Nicholas Carriero and Deyou Zheng and John Karro and Paul M. Harrison and Mark Gerstein
+:JOURNAL:  Bioinformatics
+:YEAR:     2006
+:VOLUME:   22
+:NUMBER:   12
+:PAGES:    1437-1439
+:DOI:      10.1093/bioinformatics/btl116
+:URL:      http://dx.doi.org/10.1093/bioinformatics/btl116
+:END:
+
+**** DONE Iterative gene prediction and pseudogene removal improves genome annotation :abandonné:ppfinder:
+CLOSED: [2024-06-26 mer. 14:38] SCHEDULED: <2024-06-26 mer.>
+:PROPERTIES:
+:TITLE:    Iterative gene prediction and pseudogene removal improves genome annotation
+:BTYPE:    article
+:CUSTOM_ID: van2006ppfinder
+:AUTHOR:   Marijke J. van Baren and Michael R. Brent
+:JOURNAL:  Genome Research
+:YEAR:     2006
+:VOLUME:   16
+:NUMBER:   5
+:PAGES:    678-685
+:DOI:      10.1101/gr.4766206
+:URL:      http://dx.doi.org/10.1101/gr.4766206
+:END:
+
+**** DONE Retrocopy contributions to the evolution of the human genome :abandonné:retrofinder:
+CLOSED: [2024-06-27 jeu. 17:44] SCHEDULED: <2024-06-27 jeu.>
+:PROPERTIES:
+:TITLE:    Retrocopy contributions to the evolution of the human genome
+:BTYPE:    article
+:CUSTOM_ID: Baertsch_2008
+:AUTHOR:   Baertsch, Robert and Diekhans, Mark and Kent, W James and Haussler, David and Brosius, Jürgen
+:JOURNAL:  BMC Genomics
+:YEAR:     2008
+:VOLUME:   9
+:NUMBER:   1
+:PAGES:    466
+:ISSN:     1471-2164
+:DOI:      10.1186/1471-2164-9-466
+:URL:      http://dx.doi.org/10.1186/1471-2164-9-466
+:PUBLISHER: Springer Science and Business Media LLC
+:END:
+
+**** DONE P-GRe: An efficient pipeline to maximised pseudogene prediction in plants/eucaryotes
+CLOSED: [2024-07-08 lun. 16:48] SCHEDULED: <2024-07-08 lun.>
+:PROPERTIES:
+:TITLE:    P-GRe: An efficient pipeline to maximised pseudogene prediction in plants/eucaryotes
+:BTYPE:    article
+:CUSTOM_ID: cabanac2023p
+:AUTHOR:   Cabanac, S{\'e}bastien and Mathe, Catherine and Dunand, Christophe
+:JOURNAL:  bioRxiv
+:PAGES:    2023--12
+:YEAR:     2023
+:URL:   https://www.biorxiv.org/content/10.1101/2023.12.04.569967v1
+:PUBLISHER: Cold Spring Harbor Laboratory
+:END:
+:LOGBOOK:
+CLOCK: [2024-07-08 lun. 16:22]--[2024-07-08 lun. 16:48] =>  0:26
+:END:
+**** DONE sideRETRO: a pipeline for identifying somatic and polymorphic insertions of processed pseudogenes or retrocopies :récent:
+CLOSED: [2024-07-09 mar. 10:05] SCHEDULED: <2024-07-09 mar.>
+:PROPERTIES:
+:TITLE:    sideRETRO: a pipeline for identifying somatic and polymorphic insertions of processed pseudogenes or retrocopies
+:BTYPE:    article
+:CUSTOM_ID: miller2021sideretro
+:AUTHOR:   Miller, Thiago LA and Orpinelli Rego, Fernanda and Buzzo, Jos{\'e} Leonel L and Galante, Pedro AF
+:JOURNAL:  Bioinformatics
+:VOLUME:   37
+:NUMBER:   3
+:PAGES:    419--421
+:YEAR:     2021
+:URL:  https://academic.oup.com/bioinformatics/article/37/3/419/5876827?login=false
+:PUBLISHER: Oxford University Press
+:END:
+**** TODO Pseudogenes and Their Genome-Wide Prediction in Plants
+SCHEDULED: <2024-07-09 mar.>
+:PROPERTIES:
+:TITLE:    Pseudogenes and Their Genome-Wide Prediction in Plants
+:BTYPE:    article
+:CUSTOM_ID: ijms17121991
+:AUTHOR:   Xiao, Jin and Sekhwal, Manoj Kumar and Li, Pingchuan and Ragupathy, Raja and Cloutier, Sylvie and Wang, Xiue and You, Frank M.
+:JOURNAL:  International Journal of Molecular Sciences
+:VOLUME:   17
+:YEAR:     2016
+:NUMBER:   12
+:ARTICLE-NUMBER: 1991
+:URL:      https://www.mdpi.com/1422-0067/17/12/1991
+:PUBMEDID: 27916797
+:ISSN:     1422-0067
+:ABSTRACT: Pseudogenes are paralogs generated from ancestral functional genes (parents) during genome evolution, which contain critical defects in their sequences, such as lacking a promoter, having a premature stop codon or frameshift mutations. Generally, pseudogenes are functionless, but recent evidence demonstrates that some of them have potential roles in regulation. The majority of pseudogenes are generated from functional progenitor genes either by gene duplication (duplicated pseudogenes) or retro-transposition (processed pseudogenes). Pseudogenes are primarily identified by comparison to their parent genes. Bioinformatics tools for pseudogene prediction have been developed, among which PseudoPipe, PSF and Shiu’s pipeline are publicly available. We compared these three tools using the well-annotated Arabidopsis thaliana genome and its known 924 pseudogenes as a test data set. PseudoPipe and Shiu’s pipeline identified 80% of A. thaliana pseudogenes, of which 94% were shared, while PSF failed to generate adequate results. A need for improvement of the bioinformatics tools for pseudogene prediction accuracy in plant genomes was thus identified, with the ultimate goal of improving the quality of genome annotation in plants.
+:DOI:      10.3390/ijms17121991
+:END:
+
+**** TODO Autres
+SCHEDULED: <2024-07-14 dim.>
+- annotation par GENCODE https://genomebiology.biomedcentral.com/articles/10.1186/gb-2012-13-9-r51/figures/1 utilise pseudopipe et retrofinder
+- une étape parmi d'autre : https://github.com/hillerlab/GeneLossPipe
+
+- https://github.com/topics/pseudogenes
+**** TODO Structural characterization and duplication modes of pseudogenes in plants
+SCHEDULED: <2024-07-10 mer.>
+:PROPERTIES:
+:TITLE:    Structural characterization and duplication modes of pseudogenes in plants
+:BTYPE:    article
+:CUSTOM_ID: mascagni2021structural
+:AUTHOR:   Mascagni, Flavia and Usai, Gabriele and Cavallini, Andrea and Porceddu, Andrea
+:JOURNAL:  Scientific Reports
+:VOLUME:   11
+:NUMBER:   1
+:PAGES:    5292
+:YEAR:     2021
+:PUBLISHER: Nature Publishing Group UK London
+:END:
+**** TODO Processed pseudogenes acquired somatically during cancer development
+SCHEDULED: <2024-07-10 mer.>
+:PROPERTIES:
+:TITLE:    Processed pseudogenes acquired somatically during cancer development
+:BTYPE:    article
+:CUSTOM_ID: cooke2014processed
+:AUTHOR:   Cooke, Susanna L and Shlien, Adam and Marshall, John and Pipinikas, Christodoulos P and Martincorena, Inigo and Tubio, Jose MC and Li, Yilong and Menzies, Andrew and Mudie, Laura and Ramakrishna, Manasa and others
+:JOURNAL:  Nature communications
+:VOLUME:   5
+:NUMBER:   1
+:PAGES:    3644
+:YEAR:     2014
+:PUBLISHER: Nature Publishing Group UK London
+:END:
+* Facebook
+:PROPERTIES:
+:CATEGORY: facebook
+:END:
+Méthode
+- [X] article julien
+- [X] Recherche avec "attribute disclosure DNA" (erlich2014), "phenotypic prediction" "genetic triangulation"
+- [X] références du tableau 1 de [cite:@yakubu2019]
+  - [X] identity tracing
+  - [X] attribute disclore
+  - [X] completion
+
+A replacer "Utilisation de données HapMap + généalgique + données génotype et phénotype -> retrouve lignage par rapport lignée fondatrice"
+
+** DONE Actionable genotypes and their association with life span in Iceland
+CLOSED: [2024-07-12 ven. 15:01]
+:PROPERTIES:
+:TITLE:    Actionable genotypes and their association with life span in Iceland
+:BTYPE:    article
+:CUSTOM_ID: jensson2023actionable
+:AUTHOR:   Jensson, Brynjar O and Arnadottir, Gudny A and Katrinardottir, Hildigunnur and Fridriksdottir, Run and Helgason, Hannes and Oddsson, Asmundur and Sveinbjornsson, Gardar and Eggertsson, Hannes P and Halldorsson, Gisli H and Atlason, Bjarni A and others
+:JOURNAL:  New England Journal of Medicine
+:VOLUME:   389
+:NUMBER:   19
+:PAGES:    1741--1752
+:YEAR:     2023
+:PUBLISHER: Mass Medical Soc
+:END:
+
+
+** DONE Addressing Beacon re-identification attacks: quantification and mitigation of privacy risks :identity_tracing:
+CLOSED: [2024-07-10 mer. 14:56]
+:PROPERTIES:
+:TITLE:    Addressing Beacon re-identification attacks: quantification and mitigation of privacy risks
+:BTYPE:    article
+:CUSTOM_ID: raisaro2017
+:AUTHOR:   Raisaro, Jean Louis and Tramer, Florian and Ji, Zhanglong and Bu, Diyue and Zhao, Yongan and Carey, Knox and Lloyd, David and Sofia, Heidi and Baker, Dixie and Flicek, Paul and others
+:JOURNAL:  Journal of the American Medical Informatics Association
+:VOLUME:   24
+:NUMBER:   4
+:PAGES:    799--805
+:YEAR:     2017
+:PUBLISHER: Oxford University Press
+:END:
+
+** DONE Addressing the concerns of the lacks family: quantification of kin genomic privacy
+CLOSED: [2024-07-11 Thu 19:49]
+:PROPERTIES:
+:TITLE:    Addressing the concerns of the lacks family: quantification of kin genomic privacy
+:BTYPE:    inproceedings
+:CUSTOM_ID: humbert2013addressing
+:AUTHOR:   Humbert, Mathias and Ayday, Erman and Hubaux, Jean-Pierre and Telenti, Amalio
+:BOOKTITLE: Proceedings of the 2013 ACM SIGSAC conference on Computer \& communications security
+:PAGES:    1141--1152
+:YEAR:     2013
+:END:
+
+** DONE An Inference Attack on Genomic Data Using Kinship, Complex Correlations, and Phenotype Information
+CLOSED: [2024-07-11 Thu 20:17]
+:PROPERTIES:
+:TITLE:    An Inference Attack on Genomic Data Using Kinship, Complex Correlations, and Phenotype Information
+:BTYPE:    article
+:CUSTOM_ID: deznabi2018inference
+:AUTHOR:   Iman Deznabi and Mohammad Mobayen and Nazanin Jafari and Oznur Tastan and Erman Ayday
+:JOURNAL:  IEEE/ACM Transactions on Computational Biology and Bioinformatics
+:YEAR:     2018
+:VOLUME:   15
+:NUMBER:   4
+:PAGES:    1333-1343
+:DOI:      10.1109/tcbb.2017.2709740
+:URL:      http://dx.doi.org/10.1109/TCBB.2017.2709740
+:END:
+
+** DONE Assessing transcriptomic reidentification risks using discriminative sequence models
+CLOSED: [2024-07-12 ven. 18:03] SCHEDULED: <2024-07-11 jeu.>
+:PROPERTIES:
+:TITLE:    Assessing transcriptomic reidentification risks using discriminative sequence models
+:BTYPE:    article
+:CUSTOM_ID: sadhuka2023
+:AUTHOR:   Shuvom Sadhuka and Daniel Fridman and Bonnie Berger and Hyunghoon Cho
+:JOURNAL:  Genome Research
+:YEAR:     2023
+:VOLUME:   nil
+:NUMBER:   nil
+:PAGES:    nil
+:DOI:      10.1101/gr.277699.123
+:URL:      http://dx.doi.org/10.1101/gr.277699.123
+:END:
+Mise à jour des algorithme + coût
+** DONE Bayesian method to predict individual SNP genotypes from gene expression data
+CLOSED: [2024-07-12 ven. 14:31]
+:PROPERTIES:
+:TITLE:    Bayesian method to predict individual SNP genotypes from gene expression data
+:BTYPE:    article
+:CUSTOM_ID: schadt2012bayesian
+:AUTHOR:   Schadt, Eric E and Woo, Sangsoon and Hao, Ke
+:JOURNAL:  Nature genetics
+:VOLUME:   44
+:NUMBER:   5
+:PAGES:    603--608
+:YEAR:     2012
+:PUBLISHER: Nature Publishing Group US New York
+:URL:  https://www.nature.com/articles/ng.2248
+:END:
+
+** KILL Data Sharing Under the General Data Protection Regulation
+CLOSED: [2024-07-12 ven. 15:17] SCHEDULED: <2024-07-11 jeu.>
+:PROPERTIES:
+:TITLE:    Data Sharing Under the General Data Protection Regulation
+:BTYPE:    article
+:CUSTOM_ID: vlahou21:_data_sharin_under_gener_data_protec_regul
+:AUTHOR:   Antonia Vlahou and Dara Hallinan and Rolf Apweiler and Angel Argiles and Joachim Beige and Ariela Benigni and Rainer Bischoff and Peter C. Black and Franziska Boehm and Jocelyn Céraline and George P. Chrousos and Christian Delles and Pieter Evenepoel and Ivo Fridolin and Griet Glorieux and Alain J. van Gool and Isabel Heidegger and John P.A. Ioannidis and Joachim Jankowski and Vera Jankowski and Carmen Jeronimo and Ashish M. Kamat and Rosalinde Masereeuw and Gert Mayer and Harald Mischak and Alberto Ortiz and Giuseppe Remuzzi and Peter Rossing and Joost P. Schanstra and Bernd J. Schmitz-Dräger and Goce Spasovski and Jan A. Staessen and Dimitrios Stamatialis and Peter Stenvinkel and Christoph Wanner and Stephen B. Williams and Faiez Zannad and Carmine Zoccali and Raymond Vanholder
+:JOURNAL:  Hypertension
+:YEAR:     2021
+:VOLUME:   77
+:NUMBER:   4
+:PAGES:    1029-1035
+:DOI:      10.1161/hypertensionaha.120.16340
+:URL:      http://dx.doi.org/10.1161/HYPERTENSIONAHA.120.16340
+:END:
+Trop général, pas d'apport ("il faut harmoziser")
+Mais 2 liens intéressants
+
+** DONE De-anonymizing genomic databases using phenotypic traits
+CLOSED: [2024-07-11 jeu. 11:38] SCHEDULED: <2024-07-11 jeu.>
+:PROPERTIES:
+:TITLE:    De-anonymizing genomic databases using phenotypic traits
+:BTYPE:    inproceedings
+:CUSTOM_ID: humbert2015anonymizing
+:AUTHOR:   Humbert, Mathias and Huguenin, K{\'e}vin and Hugonot, Joachim and Ayday, Erman and Hubaux, Jean-Pierre
+:BOOKTITLE: 15th Privacy Enhancing Technologies Symposium (PETS)
+:VOLUME:   2015
+:NUMBER:   2
+:PAGES:    99--114
+:YEAR:     2015
+:URL:      https://hal.science/hal-01151960/file/Humbert2015PETS.pdf
+:END:
+** DONE Detection of sharing by descent, long-range phasing and haplotype imputation
+CLOSED: [2024-07-11 Thu 21:17]
+:PROPERTIES:
+:TITLE:    Detection of sharing by descent, long-range phasing and haplotype imputation
+:BTYPE:    article
+:CUSTOM_ID: kong2008detection
+:AUTHOR:   Augustine Kong and Gisli Masson and Michael L Frigge and Arnaldur Gylfason and Pasha Zusmanovich and Gudmar Thorleifsson and Pall I Olason and Andres Ingason and Stacy Steinberg and Thorunn Rafnar and Patrick Sulem and Magali Mouy and Frosti Jonsson and Unnur Thorsteinsdottir and Daniel F Gudbjartsson and Hreinn Stefansson and Kari Stefansson
+:JOURNAL:  Nature Genetics
+:YEAR:     2008
+:VOLUME:   40
+:NUMBER:   9
+:PAGES:    1068-1075
+:DOI:      10.1038/ng.216
+:URL:      http://dx.doi.org/10.1038/ng.216
+:END:
+
+** DONE Deterministic identification of specific individuals from GWAS results :attribute_disclosure:
+CLOSED: [2024-07-11 Thu 21:18]
+:PROPERTIES:
+:TITLE:    Deterministic identification of specific individuals from GWAS results
+:BTYPE:    article
+:CUSTOM_ID: cai2015
+:AUTHOR:   Ruichu Cai and Zhifeng Hao and Marianne Winslett and Xiaokui Xiao and Yin Yang and Zhenjie Zhang and Shuigeng Zhou
+:JOURNAL:  Bioinformatics
+:YEAR:     2015
+:VOLUME:   31
+:NUMBER:   11
+:PAGES:    1701-1707
+:DOI:      10.1093/bioinformatics/btv018
+:URL:      http://dx.doi.org/10.1093/bioinformatics/btv018
+:END:
+
+** DONE [#A] Ensuring privacy and security of genomic data and functionalities
+CLOSED: [2024-07-11 Thu 21:17]
+:PROPERTIES:
+:TITLE:    Ensuring privacy and security of genomic data and functionalities
+:BTYPE:    article
+:CUSTOM_ID: yakubu2019
+:VOLUME:   21
+:ISSN:     1477-4054
+:URL:      http://dx.doi.org/10.1093/bib/bbz013
+:DOI:      10.1093/bib/bbz013
+:NUMBER:   2
+:JOURNAL:  Briefings in Bioinformatics
+:PUBLISHER: Oxford University Press (OUP)
+:AUTHOR:   Mohammed Yakubu, Abukari and Chen, Yi-Ping Phoebe
+:YEAR:     2019
+:MONTH:    feb
+:PAGES:    511–526
+:END:
+Suite d'erlich2014 ?
+
+** DONE Epigenome data release: a participant-centered approach to privacy protection
+CLOSED: [2024-07-09 mar. 14:57] SCHEDULED: <2024-07-09 mar.>
+:PROPERTIES:
+:TITLE:    Epigenome data release: a participant-centered approach to privacy protection
+:BTYPE:    article
+:URL:  https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0723-0#citeas
+:CUSTOM_ID: dyke2015epigenome
+:AUTHOR:   Dyke, Stephanie OM and Cheung, Warren A and Joly, Yann and Ammerpohl, Ole and Lutsik, Pavlo and Rothstein, Mark A and Caron, Maxime and Busche, Stephan and Bourque, Guillaume and R{\"o}nnblom, Lars and others
+:JOURNAL:  Genome biology
+:VOLUME:   16
+:PAGES:    1--12
+:YEAR:     2015
+:PUBLISHER: Springer
+:END:
+:LOGBOOK:
+CLOCK: [2024-07-09 mar. 14:33]--[2024-07-09 mar. 14:57] =>  0:24
+:END:
+- [cite:@erlich2014] on peut retrouver l'identité d'un individé mais il faut dans la majorité des cas données génétique d'une autre source
+- Cas spéciaux: exemple du chromosome Y [cite:@Gitschier_2009]
+- RNA: complexe pour retrouver
+- SNPs visible dans épigénétique mais on peut en masquer une bonne partie
+
+** DONE Estimating the success of re-identifications in incomplete datasets using generative models
+CLOSED: [2024-07-12 ven. 15:36]
+:PROPERTIES:
+:TITLE:    Estimating the success of re-identifications in incomplete datasets using generative models
+:BTYPE:    article
+:CUSTOM_ID: rocher2019estimating
+:AUTHOR:   Rocher, Luc and Hendrickx, Julien M and De Montjoye, Yves-Alexandre
+:JOURNAL:  Nature communications
+:VOLUME:   10
+:NUMBER:   1
+:PAGES:    1--9
+:YEAR:     2019
+:PUBLISHER: Nature Publishing Group
+:URL: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6650473/
+:END:
+
+** DONE Ethical implications of epigenetics in the era of personalized medicine
+CLOSED: <2024-07-09 mar. 13:46>
+SCHEDULED: <2024-07-09 mar.>
+:PROPERTIES:
+:TITLE:    Ethical implications of epigenetics in the era of personalized medicine
+:BTYPE:    article
+:CUSTOM_ID: santaló22:_ethic
+:AUTHOR:   Josep Santaló and María Berdasco
+:JOURNAL:  Clinical Epigenetics
+:YEAR:     2022
+:VOLUME:   14
+:NUMBER:   1
+:PAGES:    44
+:DOI:      10.1186/s13148-022-01263-1
+:URL:      http://dx.doi.org/10.1186/s13148-022-01263-1
+:END:
+:LOGBOOK:
+CLOCK: [2024-07-09 mar. 13:32]--[2024-07-09 mar. 13:46] =>  0:14
+CLOCK: [2024-07-09 mar. 11:41]--[2024-07-09 mar. 12:00] =>  0:19
+CLOCK: [2024-07-09 mar. 11:20]--[2024-07-09 mar. 11:26] =>  0:06
+:END:
+Seule partie intéressante : filtrer site SNP et renvoie vers [cite:@dyke2015epigenome]
+
+**
+
+
+** DONE Investigative genetic genealogy: Current methods, knowledge and practice
+CLOSED: [2024-07-12 ven. 18:11]
+:PROPERTIES:
+:TITLE:    Investigative genetic genealogy: Current methods, knowledge and practice
+:BTYPE:    article
+:CUSTOM_ID: kling2021investigative
+:AUTHOR:   Kling, Daniel and Phillips, Christopher and Kennett, Debbie and Tillmar, Andreas
+:JOURNAL:  Forensic Science International: Genetics
+:VOLUME:   52
+:PAGES:    102474
+:YEAR:     2021
+:PUBLISHER: Elsevier
+:END:
+Revue récente
+
+** KILL Privacy challenges and research opportunities for genomic data sharing
+CLOSED: [2024-07-12 ven. 18:16]
+:PROPERTIES:
+:TITLE:    Privacy challenges and research opportunities for genomic data sharing
+:BTYPE:    article
+:CUSTOM_ID: bonomi2020privacy
+:AUTHOR:   Bonomi, Luca and Huang, Yingxiang and Ohno-Machado, Lucila
+:JOURNAL:  Nature genetics
+:VOLUME:   52
+:NUMBER:   7
+:PAGES:    646--654
+:YEAR:     2020
+:PUBLISHER: Nature Publishing Group US New York
+:END:
+Non lu, ne semble pas apporter grand-chose
+** KILL Genetic data are not always personal—disaggregating the identifiability and sensitivity of genetic data
+CLOSED: [2024-07-12 ven. 18:15]
+:PROPERTIES:
+:TITLE:    Genetic data are not always personal—disaggregating the identifiability and sensitivity of genetic data
+:BTYPE:    article
+:CUSTOM_ID: rahnasto2023genetic
+:AUTHOR:   Rahnasto, Johanna
+:JOURNAL:  Journal of Law and the Biosciences
+:VOLUME:   10
+:NUMBER:   2
+:PAGES:    lsad029
+:YEAR:     2023
+:PUBLISHER: Oxford University Press
+:END:
+
+** KILL Identification of anonymous DNA using genealogical triangulation
+CLOSED: [2024-07-12 ven. 18:13]
+:PROPERTIES:
+:TITLE:    Identification of anonymous DNA using genealogical triangulation
+:BTYPE:    article
+:CUSTOM_ID: ellenbogen2019identification
+:AUTHOR:   Ellenbogen, Paul and Narayanan, Arvind
+:JOURNAL:  bioRxiv
+:PAGES:    531269
+:YEAR:     2019
+:PUBLISHER: Cold Spring Harbor Laboratory
+:END:
+Pas eu le temps de lire mais juste un algo de plus
+** KILL [#B] https://www.cell.com/ajhg/fulltext/S0002-9297(15)00200-1
+CLOSED: [2024-07-12 ven. 18:12]
+impact méthylation prédiction IMC
+** KILL [#B] https://www.sciencedirect.com/science/article/pii/S1872497321000132
+CLOSED: [2024-07-12 ven. 18:17]
+** DONE Identification of individuals by trait prediction using whole-genome sequencing data
+CLOSED: [2024-07-11 Thu 21:18] SCHEDULED: <2024-07-11 jeu.>
+:PROPERTIES:
+:TITLE:    Identification of individuals by trait prediction using whole-genome sequencing data
+:BTYPE:    article
+:CUSTOM_ID: lippert2017
+:AUTHOR:   Lippert, Christoph and Sabatini, Riccardo and Maher, M Cyrus and Kang, Eun Yong and Lee, Seunghak and Arikan, Okan and Harley, Alena and Bernal, Axel and Garst, Peter and Lavrenko, Victor and others
+:JOURNAL:  Proceedings of the National Academy of Sciences
+:VOLUME:   114
+:NUMBER:   38
+:PAGES:    10166--10171
+:YEAR:     2017
+:PUBLISHER: National Acad Sciences
+:URL:   https://www.pnas.org/doi/full/10.1073/pnas.1711125114
+:END:
+
+** KILL Identifying disease-causing mutations with privacy protection
+CLOSED: [2024-07-12 ven. 18:18] SCHEDULED: <2024-07-11 jeu.>
+:PROPERTIES:
+:TITLE:    Identifying disease-causing mutations with privacy protection
+:BTYPE:    article
+:CUSTOM_ID: akgün2020identying
+:AUTHOR:   Mete Akgün and Ali Burak Ünal and Bekir Ergüner and Nico Pfeifer and Oliver Kohlbacher
+:JOURNAL:  Bioinformatics
+:YEAR:     2020
+:VOLUME:   36
+:NUMBER:   21
+:PAGES:    5205-5213
+:DOI:      10.1093/bioinformatics/btaa641
+:URL:      http://dx.doi.org/10.1093/bioinformatics/btaa641
+:END:
+Mitigation, pas le scope
+** DONE Identifying Participants in the Personal Genome Project by Name (A Re-identification Experiment) :identity_tracing:identity_tracing:
+CLOSED: [2024-07-10 mer. 11:16]
+:PROPERTIES:
+:TITLE:    Identifying Participants in the Personal Genome Project by Name (A Re-identification Experiment)
+:BTYPE:    misc
+:CUSTOM_ID: sweeney2013
+:AUTHOR:   Latanya Sweeney and Akua Abu and Julia Winn
+:YEAR:     2013
+:EPRINT:   1304.7605
+:ARCHIVEPREFIX: arXiv
+:PRIMARYCLASS: cs.CY
+:URL:      https://arxiv.org/abs/1304.7605
+:END:
+
+** DONE Identifying Personal Genomes by Surname Inference :identity_tracing:
+CLOSED: [2024-07-09 mar. 17:00] SCHEDULED: <2024-07-09 mar.>
+:PROPERTIES:
+:TITLE:    Identifying Personal Genomes by Surname Inference
+:BTYPE:    article
+:CUSTOM_ID: gymrek2013
+:AUTHOR:   Melissa Gymrek and Amy L. McGuire and David Golan and Eran Halperin and Yaniv Erlich
+:JOURNAL:  Science
+:YEAR:     2013
+:VOLUME:   339
+:NUMBER:   6117
+:PAGES:    321-324
+:DOI:      10.1126/science.1229566
+:URL:      http://dx.doi.org/10.1126/science.1229566
+:END:
+
+** DONE Identity inference of genomic data using long-range familial searches :identity_tracing:
+CLOSED: [2024-07-10 mer. 17:50] SCHEDULED: <2024-07-09 mar.>
+:PROPERTIES:
+:TITLE:    Identity inference of genomic data using long-range familial searches
+:BTYPE:    article
+:CUSTOM_ID: erlich2018
+:AUTHOR:   Yaniv Erlich and Tal Shor and Itsik Pe’er and Shai Carmi
+:JOURNAL:  Science
+:YEAR:     2018
+:VOLUME:   362
+:NUMBER:   6415
+:PAGES:    690-694
+:DOI:      10.1126/science.aau4832
+:URL:      http://dx.doi.org/10.1126/science.aau4832
+:END:
+
+** DONE Inference Attacks and Controls on Genotypes and Phenotypes for Individual Genomic Data
+CLOSED: [2024-07-11 Thu 20:29]
+:PROPERTIES:
+:TITLE:    Inference Attacks and Controls on Genotypes and Phenotypes for Individual Genomic Data
+:BTYPE:    article
+:CUSTOM_ID: he2020inference
+:AUTHOR:   Zaobo He and Jiguo Yu and Ji Li and Qilong Han and Guangchun Luo and Yingshu Li
+:JOURNAL:  IEEE/ACM Transactions on Computational Biology and Bioinformatics
+:YEAR:     2020
+:VOLUME:   17
+:NUMBER:   3
+:PAGES:    930-937
+:DOI:      10.1109/tcbb.2018.2810180
+:URL:      http://dx.doi.org/10.1109/TCBB.2018.2810180
+:END:
+
+** DONE Inferential Genotyping of Y Chromosomes in Latter-Day Saints Founders and Comparison to Utah Samples in the HapMap Project :surname_inference:
+CLOSED: [2024-07-09 mar. 15:33] SCHEDULED: <2024-07-09 mar.>
+:PROPERTIES:
+:TITLE:    Inferential Genotyping of Y Chromosomes in Latter-Day Saints Founders and Comparison to Utah Samples in the HapMap Project
+:BTYPE:    article
+:CUSTOM_ID: Gitschier_2009
+:VOLUME:   84
+:ISSN:     0002-9297
+:URL:      http://dx.doi.org/10.1016/j.ajhg.2009.01.018
+:DOI:      10.1016/j.ajhg.2009.01.018
+:NUMBER:   2
+:JOURNAL:  The American Journal of Human Genetics
+:PUBLISHER: Elsevier BV
+:AUTHOR:   Gitschier, Jane
+:YEAR:     2009
+:MONTH:    feb
+:PAGES:    251–258
+:END:
+Nom de familles à partir de 30 STR du chrY, voir[cite:@gymrek2013] pour suite
+** DONE Major flaws in “Identification of individuals by trait prediction using whole-genome sequencing data”
+CLOSED: [2024-07-11 jeu. 13:54]
+:PROPERTIES:
+:TITLE:    Major flaws in “Identification of individuals by trait prediction using whole-genome sequencing data”
+:BTYPE:    article
+:CUSTOM_ID: erlich2017major
+:AUTHOR:   Erlich, Yaniv
+:JOURNAL:  BioRxiv
+:PAGES:    185330
+:YEAR:     2017
+:PUBLISHER: Cold Spring Harbor Laboratory
+:URL:   https://www.biorxiv.org/content/biorxiv/early/2017/09/07/185330.1.full.pdf
+:END:
+
+** TODO On inferring presence of an individual in a mixture: a Bayesian approach
+SCHEDULED: <2024-07-11 jeu.>
+:PROPERTIES:
+:TITLE:    On inferring presence of an individual in a mixture: a Bayesian approach
+:BTYPE:    article
+:CUSTOM_ID: clayton10
+:AUTHOR:   David Clayton
+:JOURNAL:  Biostatistics
+:YEAR:     2010
+:VOLUME:   11
+:NUMBER:   4
+:PAGES:    661-673
+:DOI:      10.1093/biostatistics/kxq035
+:URL:      http://dx.doi.org/10.1093/biostatistics/kxq035
+:END:
+
+** KILL Assessing and managing risk when sharing aggregate genetic variant data
+CLOSED: [2024-07-12 ven. 17:59]
+:PROPERTIES:
+:TITLE:    Assessing and managing risk when sharing aggregate genetic variant data
+:BTYPE:    article
+:CUSTOM_ID: craig2011assessing
+:AUTHOR:   Craig, David W and Goor, Robert M and Wang, Zhenyuan and Paschall, Justin and Ostell, Jim and Feolo, Michael and Sherry, Stephen T and Manolio, Teri A
+:JOURNAL:  Nature Reviews Genetics
+:VOLUME:   12
+:NUMBER:   10
+:PAGES:    730--736
+:YEAR:     2011
+:PUBLISHER: Nature Publishing Group UK London
+:END:
+Rien de plus
+
+** DONE On Jim Watson's APOE status: genetic information is hard to hide
+CLOSED: [2024-07-12 ven. 15:04]
+:PROPERTIES:
+:TITLE:    On Jim Watson's APOE status: genetic information is hard to hide
+:BTYPE:    article
+:CUSTOM_ID: nyholt2009jim
+:AUTHOR:   Nyholt, Dale R and Yu, Chang-En and Visscher, Peter M
+:JOURNAL:  European Journal of Human Genetics
+:VOLUME:   17
+:NUMBER:   2
+:PAGES:    147--149
+:YEAR:     2009
+:PUBLISHER: Nature Publishing Group
+:END:
+
+** DONE Privacy in pharmacogenetics: An $\{$End-to-End$\}$ case study of personalized warfarin dosing
+CLOSED: [2024-07-11 jeu. 15:37] SCHEDULED: <2024-07-11 jeu.>
+:PROPERTIES:
+:TITLE:    Privacy in pharmacogenetics: An $\{$End-to-End$\}$ case study of personalized warfarin dosing
+:BTYPE:    inproceedings
+:CUSTOM_ID: fredrikson2014privacy
+:AUTHOR:   Fredrikson, Matthew and Lantz, Eric and Jha, Somesh and Lin, Simon and Page, David and Ristenpart, Thomas
+:BOOKTITLE: 23rd USENIX security symposium (USENIX Security 14)
+:PAGES:    17--32
+:YEAR:     2014
+:URL:   https://www.usenix.org/system/files/conference/usenixsecurity14/sec14-paper-fredrikson-privacy.pdf
+:END:
+
+** DONE [#B] Privacy in the Genomic Era
+CLOSED: [2024-07-12 ven. 17:37] SCHEDULED: <2024-07-11 jeu.>
+:PROPERTIES:
+:TITLE:    Privacy in the Genomic Era
+:BTYPE:    article
+:CUSTOM_ID: naveed2015privacy
+:VOLUME:   48
+:ISSN:     1557-7341
+:URL:      http://dx.doi.org/10.1145/2767007
+:DOI:      10.1145/2767007
+:NUMBER:   1
+:JOURNAL:  ACM Computing Surveys
+:PUBLISHER: Association for Computing Machinery (ACM)
+:AUTHOR:   Naveed, Muhammad and Ayday, Erman and Clayton, Ellen W. and Fellay, Jacques and Gunter, Carl A. and Hubaux, Jean-Pierre and Malin, Bradley A. and Wang, Xiaofeng
+:YEAR:     2015
+:MONTH:    aug
+:PAGES:    1–44
+:END:
+2-3 citations en plus des autres
+** DONE Privacy risks from genomic data-sharing beacons :identity_tracing:
+CLOSED: [2024-07-10 mer. 11:50]
+:PROPERTIES:
+:TITLE:    Privacy risks from genomic data-sharing beacons
+:BTYPE:    article
+:CUSTOM_ID: shringarpure2015
+:AUTHOR:   Shringarpure, Suyash S and Bustamante, Carlos D
+:JOURNAL:  The American Journal of Human Genetics
+:VOLUME:   97
+:NUMBER:   5
+:PAGES:    631--646
+:YEAR:     2015
+:PUBLISHER: Elsevier
+:END:
+
+** DONE Quantifying Interdependent Risks in Genomic Privacy
+CLOSED: [2024-07-11 Thu 20:04]
+:PROPERTIES:
+:TITLE:    Quantifying Interdependent Risks in Genomic Privacy
+:BTYPE:    article
+:CUSTOM_ID: humbert2017quantifying
+:AUTHOR:   Mathias Humbert and Erman Ayday and Jean-Pierre Hubaux and Amalio Telenti
+:JOURNAL:  ACM Transactions on Privacy and Security
+:YEAR:     2017
+:VOLUME:   20
+:NUMBER:   1
+:PAGES:    1-31
+:DOI:      10.1145/3035538
+:URL:      http://dx.doi.org/10.1145/3035538
+:END:
+
+** DONE Re-identification of individuals in genomic data-sharing beacons via allele inference :identity_tracing:
+CLOSED: [2024-07-10 mer. 16:37]
+:PROPERTIES:
+:TITLE:    Re-identification of individuals in genomic data-sharing beacons via allele inference
+:BTYPE:    article
+:CUSTOM_ID: vonthenen2019
+:AUTHOR:   Von Thenen, Nora and Ayday, Erman and Cicek, A Ercument
+:JOURNAL:  Bioinformatics
+:VOLUME:   35
+:NUMBER:   3
+:PAGES:    365--371
+:YEAR:     2019
+:PUBLISHER: Oxford University Press
+:END:
+** KILL Resolving Individuals Contributing Trace Amounts of DNA to Highly Complex Mixtures Using High-Density SNP Genotyping Microarrays
+CLOSED: [2024-07-11 Thu 21:19] SCHEDULED: <2024-07-11 jeu.>
+:PROPERTIES:
+:TITLE:    Resolving Individuals Contributing Trace Amounts of DNA to Highly Complex Mixtures Using High-Density SNP Genotyping Microarrays
+:BTYPE:    article
+:CUSTOM_ID: homer2008resolving
+:AUTHOR:   Nils Homer and Szabolcs Szelinger and Margot Redman and David Duggan and Waibhav Tembe and Jill Muehling and John V. Pearson and Dietrich A. Stephan and Stanley F. Nelson and David W. Craig
+:JOURNAL:  PLoS Genetics
+:YEAR:     2008
+:VOLUME:   4
+:NUMBER:   8
+:PAGES:    e1000167
+:DOI:      10.1371/journal.pgen.1000167
+:URL:      http://dx.doi.org/10.1371/journal.pgen.1000167
+:END:
+Superseded by
+** DONE Simple demographics often identify people uniquely
+CLOSED: [2024-07-12 ven. 17:25]
+:PROPERTIES:
+:TITLE:    Simple demographics often identify people uniquely
+:BTYPE:    article
+:CUSTOM_ID: sweeney2000simple
+:AUTHOR:   Sweeney, Latanya
+:JOURNAL:  Health (San Francisco)
+:VOLUME:   671
+:NUMBER:   2000
+:PAGES:    1--34
+:YEAR:     2000
+:END:
+
+** DONE [#A] Routes for breaching and protecting genetic privacy :review:
+CLOSED: [2024-07-09 mar. 16:35] SCHEDULED: <2024-07-09 mar.>
+:PROPERTIES:
+:TITLE:    Routes for breaching and protecting genetic privacy
+:BTYPE:    article
+:CUSTOM_ID: erlich2014
+:AUTHOR:   Erlich, Yaniv and Narayanan, Arvind
+:JOURNAL:  Nature Reviews Genetics
+:VOLUME:   15
+:NUMBER:   6
+:PAGES:    409--421
+:YEAR:     2014
+:PUBLISHER: Nature Publishing Group UK London
+:URL:   https://www.nature.com/articles/nrg3723
+:END:
+Revue des différentes stratégie + algorithme
+
+** DONE SNPs for a universal individual identification panel
+CLOSED: [2024-07-12 ven. 09:44]
+:PROPERTIES:
+:TITLE:    SNPs for a universal individual identification panel
+:BTYPE:    article
+:CUSTOM_ID: pakstis2010snps
+:AUTHOR:   Pakstis, Andrew J and Speed, William C and Fang, Rixun and Hyland, Fiona CL and Furtado, Manohar R and Kidd, Judith R and Kidd, Kenneth K
+:JOURNAL:  Human genetics
+:VOLUME:   127
+:PAGES:    315--324
+:YEAR:     2010
+:PUBLISHER: Springer
+:END:

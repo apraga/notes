@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       23a5cf6b-3c97-4774-9434-b978f98760e9
+:ROAM_REFS: @humbert2017quantifying
+:END:
+#+title: Mathias Humbert and Erman Ayday and Jean-Pierre Hubaux and Amalio Telenti :: Quantifying Interdependent Risks in Genomic Privacy
+
+Mise à jour de [cite:@humbert2013addressing] avec
+1. utilisation des phénotypes
+2. modèle mise à jour avec : >= 1 génome connu et on veut >=1 génome
+
+* Résultats
+
+Phénotype:
+- testé sur un trio avec 2 SNPs d'APOE
+  - resultat intéressant : si les parents ont alzeimer mais pas le SNP, augment l'erreur car cela induit l'attaquant en erreur
+- pour groupe ABO, on peut avoir 0 d'erreur...

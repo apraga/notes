@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       d27b0970-a460-4036-b162-609a5240b543
+:ROAM_REFS: @cheetham2019
+:END:
+#+title: Seth W. Cheetham and Geoffrey J. Faulkner and Marcel E. Dinger :: Overcoming challenges and dogmas to understand the functions of pseudogenes
+
+- pas d'info sur la partie pipeline
+- attention à la définition d'un pseudogène (privilégie rétrotransposition et gène duplication ?)
+- on découvre de plus en plus de fonction de pseudogène (intérête de l'article)
+
+* Notes
+Définition: régions semblable à un autre gène et défectueuse.
+Classification par mécanisme
+- "processed" : transcription inverse et intégration de l'ARNm
+- "unprocessed" : à partir de [[id:c88ff729-d478-4e8d-82b9-bd6cc186b489][Duplication segmentaire]]
+- unitary = inactivation d'un gène à partir de mutations
+- (rare) mutation inactivatrice dans le génome de référence mais intact chez certains individus
+
+GENCODE: ~10k pseudo gènes, soit 72%
+Processed pseudogene = important dans l'évolution -> au mçoins 48 "processed" pseudogene polymorphique

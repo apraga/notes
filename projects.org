@@ -21,12 +21,12 @@ Si on veut python3.12, il faut faire fronctionner [[https://github.com/NixOS/nix
 Patch upstream en cours
 Sinon il faut 3.11 mais compiler sur mésocentre
 ******* TODO CUDA
-SCHEDULED: <2024-07-09 Tue>
+SCHEDULED: <2024-07-20 Sat>
 ******* TODO Misc
 ******* TODO Bazel
-SCHEDULED: <2024-07-09 Tue>
+SCHEDULED: <2024-07-20 Sat>
 ******* TODO Clif
-SCHEDULED: <2024-07-09 Tue>
+SCHEDULED: <2024-07-20 Sat>
 ***** DONE [[file:~/code/nixpkgs/pkgs/by-name/ti/tiddit/package.nix::{][Package nix Tiddit]]
 ***** WAIT [[https://github.com/NixOS/nixpkgs/pull/312995][PR]] package nix tiddit
 Rebase + corrections + relancé <2024-06-29 Sat>
@@ -121,6 +121,13 @@ SCHEDULED: <2024-07-06 Sat +1d>
 :STYLE:    habit
 :LAST_REPEAT: [2024-06-30 Sun 15:43]
 :END:
++ State "DONE"       from "TODO"           <2024-07-12 Fri 10:01>
++ State "DONE"       from "TODO"           <2024-07-11 Thu 10:01>
++ State "DONE"       from "TODO"           <2024-07-10 Wed 10:01>
++ State "DONE"       from "TODO"           <2024-07-08 Mon 10:01>
++ State "DONE"       from "TODO"           <2024-07-07 Sun 10:01>
++ State "DONE"       from "TODO"           <2024-07-06 Sat 10:01>
++ State "DONE"       from "TODO"           <2024-07-05 Fri 10:01>
 + State "DONE"       from "TODO"           <2024-07-04 Thu 10:01>
 + State "DONE"       from "TODO"           <2024-07-03 Wed 10:01>
 + State "DONE"       from "TODO"           <2024-07-02 Tue 10:01>
@@ -225,6 +232,9 @@ SCHEDULED: <2024-07-12 Fri>
 ** DONE Fusionner notes hémato + biochimie en attente
 CLOSED: [2024-06-29 Sat 14:53] SCHEDULED: <2024-06-27 Thu>
 /Entered on/ [2024-06-27 Thu 22:14]
+** TODO Fusionner biblio projet Facebook et pseudogene
+SCHEDULED: <2024-07-13 Sat>
+/Entered on/ [2024-07-13 Sat 10:28]
 * Maison
 :PROPERTIES:
 :CATEGORY: maison
