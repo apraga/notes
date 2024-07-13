@@ -7,7 +7,8 @@
 Calcium extra-cellulaire
 - lié aux proténies
 - complexé
-- libre ou ionisé -> celui qui est régulé
+- libre ou ionisé -> *celui qui est régulé*
+Régulation très fine par la *PTH*
 * Mesure
 ** Calcémie ionisé
 Mesurable par potentiométrie (sang total sur gaz du sang, sérum)
@@ -101,6 +102,19 @@ dummy[shape=point;width=0]
 
 #+RESULTS:
 [[file:images/hypocalcémie.png]]
+** Clinique
+Variable
+- neuromusculaire : tétanie, paresthéie, main d'accoucher
+- cardiaque : allongement QT, insuffisance cardiaque
+- convulsion, cataractes, calcification intracérébrale
+** Causes
+*** PTH non augmentée (inadaptée) : hypoparathyroïdie
+- acquise: après chirurgie du cou, infiltratio glandies parathyroœdies (Wilson, hémochromatose..), auto-immune, déplétion magnésium...
+- innée : DiGeorge, autosomique dominante (activation CaSR/GNA11)
+*** Extra-parathyroidienne: résistance PTH
+- pseudohypoparathyroïdies (défaut voie signalisation)
+- défaut d'action vitamine D (insuf. rénale, carence vitamine D profonde, rachitisme vitamino-dépendent)
+- accrétion osseuse majeure ("hungry bone syndrome")
 * Hypercalcémie
 ** Clinique
 Variable selon vitesse, individus
@@ -109,18 +123,19 @@ Variable selon vitesse, individus
 - cardiaque: bradycardie, BAV, raccoursissement QT
 - rénaux : diabte insipide (néphrogénituqe), perte rénale NaCl
 ** Mécanisme
-Sécrétion PTH altérée
-Augmentation entrée calcium digestive/osseuse
-Diminution sortie
+- Sécrétion PTH altérée
+- Augmentation entrée calcium digestive/osseuse
+- Diminution sortie
 ** Diagnostic
 Dosage
 - PTH
-- phoshpatémie
+- phosphatémie
 - calciurie
 - métabolite vitamine D
 
-PTH augmenté (inadaptée)
-- hyperparathyroïdie/tumeur
+** Causes
+*** PTH augmenté (inadaptée)
+- hyperparathyroïdie/tumeur parathyroïdienne (45% des causes)
   - augment réabsorption rénale calcium + osseuse + digestive (via calcitriol)
   - NB: phoshate diminuée, ostéocalcime augmenté (remaniement osseaux accéléré)
   - calcitriol augmenté (PTH stimule 1α-hydroxylase)
@@ -129,3 +144,28 @@ PTH augmenté (inadaptée)
 
 Hypophosphatémie:
    - origine rénale ou de transfert selon nomogramme de Bijvoati
+
+*** PTH diminuées (adapté)
+**** Augmentation entrée calcium digestive
+  - apport alimentaire
+  - excès de synthèse du calcitriol
+    - stimulation 1α-hydroxylase rénale
+    - stimulation 1α-hydroxylase extra-rénale : granulome (le calictriol sera assez augmenté), lymphome
+  - défaut dégradation calcitriol : hypercalcémie infantiqle autosomiqure récessive (rare)
+  - intoxicaiton vitamine D (augmentatino 25OH vit. D)
+**** Augmentation entrée calcium osseuse
+- résorption osseuse excessive
+  - IL-1, 6...
+  - PTR-rp (related protein): cancer
+    - homologie 70% avec PTH
+    - augment réabsorption rénale de calcium, + osseuse + 1,25OH2 vitamine D
+- Myélome
+- Intoxication ivtamine A
+**** Diminution élimination rénale
+- IRC (défaut excrétion Ca)
+- aggravé par hypercalciurie/néphorcalcinose
+On peut mesure l'AMPc néphrogénique (fragile, demi-vie courte) : si produite malgré l'absence de PTH, les récepteurs rénaux de la PTH sont donc activés -> PTHrp
+* Cas clinique: voir cours UNESS
+
+- ostéocalcine : marqueur d'ostéoformation
+- C télopetited du collagen I : marqueur d'ostéorésorption
