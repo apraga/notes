@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       985e4442-6948-4869-8876-c0d15575a374
+:END:
+#+title: Maladie de Waldenström
+#+filetags: biochimie hémato
+- IgM monoclonale avec prolifération lympho-plasmocytaire > 10%
+- envahissement tumoral (*écho abdo-pelvienne*): polyADN, HSG, infilration pulmonaire, méningé
+- *pas* de lésion osseuse
+
+* Conséquenc de l'IgM:
+- sd hyperviscosité/hémorragique
+- neuropathie périph
+- anémie hémolytique auto-immunie
+- purpura vasculaire antiIgG
+- Willebrand acquis

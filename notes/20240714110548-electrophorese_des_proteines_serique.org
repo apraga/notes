@@ -1,0 +1,35 @@
+:PROPERTIES:
+:ID:       282512ca-9e66-442e-ac3a-b033c43658a3
+:END:
+#+title: Électrophorèse des protéines sérique
+#+filetags: biochimie
+
+* Indications
+Suspicion maladie avec Ig monoclonale (non systématique !) :
+- anomile hémogramme
+- tassement/fracture patho
+- hypercalcémie
+- protéinurie significative
+- neuropathie périphérique
+- douleurs osseuses non traumatique
+- IR récente
+- infections répétitions, purupura vasculaire
+, ADP, SMP
+- sd hyperviscoité : en urgence
+* Répartition
+- 55% MGUS
+- 17% myélome multiple
+- 11.5% amylose aL
+- 6% prolifération plasmocyte
+
+- Ig monolonate complète surtout avec 2/3 IgG > IgM (15-2)
+  attention production de chaînes légères libres en plus !
+- chaînes léères libres monoclonase κ ou λ (18-20% des cas de myélome)
+- (rarement) Ig chaîne lourde seule
+* Gravité
+- lié à la prolifération lymphoïde B : lésion osseuse, compression médullaire, infection, hyperC, IR
+- les Ig elle même : amylose (acculumation: rénale : dégradation tubule), activité auto-immune
+
+- [[id:5cd3fe5b-c63d-430e-90fd-71883df4f1f3][Myélome]]
+- [[id:e54c3cb3-0cc3-43e9-93e4-4f3d35fd27c5][Leucémie à plasmocytes]]
+- [[id:985e4442-6948-4869-8876-c0d15575a374][Maladie de Waldenström]]n
