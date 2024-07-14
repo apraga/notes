@@ -1,9 +1,8 @@
 :PROPERTIES:
-:ID:       282512ca-9e66-442e-ac3a-b033c43658a3
+:ID:       671a23f8-20ec-4219-a5ff-683899db9c9e
 :END:
-#+title: Électrophorèse des protéines sérique
+#+title: Dysgammaglobulinémie monoclonale
 #+filetags: biochimie
-
 * Indications
 Suspicion maladie avec Ig monoclonale (non systématique !) :
 - anomile hémogramme
