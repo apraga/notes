@@ -22,10 +22,16 @@ On force python 3.11 : ok pour le cache
 SCHEDULED: <2024-06-19 Wed>
 ******* WAIT https://github.com/NixOS/nixpkgs/issues/321920
 On a changé le hash à la main dans python-jaxlib mais ce n'est pas une bonne solution
-******** TODO Pillow :python:
-SCHEDULED: <2024-07-14 Sun>
 ******** TODO tensorflow-addons :python:
 SCHEDULED: <2024-07-14 Sun>
+********* DONE tensorflow-hub (wheel)
+CLOSED: [2024-07-14 Sun 21:43]
+Bazel pour générer wheel : échoue à télécharger certaines dépendences.
+********* DONE Mail Gaetan Lepage pour avis buildBazelPackeg
+CLOSED: [2024-07-14 Sun 21:51] SCHEDULED: <2024-07-14 Sun>
+********* WAIT tensorflow-hub (bazel -> wheel)
+********* TODO tensorflow-model-optimization
+********* TODO tf_slim
 ******** TODO tf-models-official :python:
 SCHEDULED: <2024-07-14 Sun>
 

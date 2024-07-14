@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID:       0edbf593-2192-479a-8cc4-aefd3e991f2a
 :END:
-#+title: Nixpgs
+#+title: Nixpkgs
 #+filetags: #nix
 
 
@@ -44,6 +44,7 @@ Regarder les variables d'environement :
 env
 #+end_src sh
 
+* [[id:494ea097-edb7-4e5c-b1b7-693e4a5d6df8][Package Python pour nixpkgs]]
 * [[id:56f7a57a-1807-4d72-abb2-6420eab119c5][Débugger un paquet nix]]
 * Astuces
 ** Copier une dérivation en ssh
