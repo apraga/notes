@@ -6,6 +6,10 @@
 (α1 glycoprotéine acide)
 
 glycoprotéine = 40% glucides
-Augmenté : inflammation aigüe, infection/inflamation chronique, blessures, brûlures, tumeurs, IRC
-Diminué : insuffisance hépatique, syndrome néphrotique
+
+* Variations
+- Augmenté :
+  - inflammation aigüe : dès le 3-4e jour
+  - infection/inflamation chronique, blessures, brûlures, tumeurs, IRC
+- Diminué : insuffisance hépatique, syndrome néphrotique
 Normes 0.5-1.2g/L

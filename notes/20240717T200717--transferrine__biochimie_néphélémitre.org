@@ -1,10 +1,13 @@
 #+title:      Transferrine
 #+date:       [2024-07-17 Wed 20:07]
-#+filetags:   :biochimie:néphélémitre:
+#+filetags:   :biochimie:néphélémétrie:
 #+identifier: 20240717T200717
 
 Synthétisée par le foie
 Transporte le fer dans le sang
-Diminué en phase inflammatoire aigüe, surchage en fer
-Augmenté dans les carences martiales
+
+* Variation
+- Diminué en phase inflammatoire aigüe, surchage en fer, IHC
+- Augmenté dans les carences martiales, imprégnation oestrogène
+
 Norme 2-3.6g/L

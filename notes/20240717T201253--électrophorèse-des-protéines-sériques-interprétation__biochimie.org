@@ -1,0 +1,80 @@
+#+title: Électrophorèse des protéines sériques : interprétation
+#+date:       [2024-07-17 Wed 20:12]
+#+filetags:   :biochimie:
+#+identifier: 20240717T201253
+
+* Normal
+#+caption: Normal
+[[file:images/biochimie/eps.png]]
+profil normal *n'exclut pas une anomalie* (myélome chaînes légères libres)
+* Piège
+** Dédoublement pic albumine
+- génétique
+- β-lactamine forte dose (en grammes) car transporté albumine
+- (fistule pancréatique : dégradation partielle)
+- fausse
+  - hyperbilixubinémie
+  - hyperlipidémie
+  - interférence B12
+  - (complexe IgG monoclonale et albumine)
+   [[file:images/biochimie/eps.png]]
+   [[file:images/biochimie/eps-bialbumine.png]]
+
+   Conduite à tenir
+    1. doser albumine
+    2. si discordance : dyslipidémie ? B12 ? hyperbilirubinémie ? Sinon β-mercaptoéthanole pour mettre en évidence une anomalie monoclonale
+*** Fibrinogène
+à cheval β2 et y : test thrombine activée: si négatif, repasser surnageant. Si persistie, immunofluorescence
+   [[file:images/biochimie/eps-fibrinogene.png]]
+*** Hémolyse
+- complexe haptoglobine hémoglobine se verra en α2
+- hémoglobine libre se voit en β1 va être nettement augmenté
+   [[file:images/biochimie/eps-hemolyse.png]]
+ CAT: nouveau prélèvement
+*** Produit de contraste iodé
+fin α2 ou entre β1 et β2
+   [[file:images/biochimie/eps-contraste.png]]
+   CAT: nouveau prélèvement dans 5 jours
+*** Erreur "out of range"
+ajout β-mercaptoéthanole pour mettre en évidence une anomalie monoclonale
+*** Interférence anticorps monoclonaux
+Développement de shift spécifique
+file:images/biochimie/eps-contraste.png]]
+* Variation
+Voir les fiches correspondantes
+[[file:images/biochimie/eps-inflammatoire.png]]
+[[file:images/biochimie/eps-sd-nephrotique.png]]
+[[file:images/biochimie/eps-cirrhose-ethylique.png]]
+[[file:images/biochimie/eps-iga-monoclonale.png]]
+
+** [[denote:20240717T201856][Albumine]]
+*** α1-globuline (α1-antitrypsine, [[denote:20240717T200247][Orosomucoïde]])
+  - augmenté = [[denote:20240717T202347][Syndrome inflammatoire aigu biologique]]
+  - diminuté = dénutrition, IHC sévère, fuite protéique, syndrome néphrotique, congénital
+  - NB: dédoublement = variant α1-antitrypsine
+*** α2 globuline ([[denote:20240717T202815][α2 macroglobuline]], [[denote:20240717T200415][Haptoglobine]],[[denote:20240717T200520][Céruloplasmine]])
+  - augmenté : syndrome inflammatoire, fibroe hépatique, syndrome néphrotique
+  - diminué : IHC, fuite protéique, dénutrition
+  - NB: dédoublement si hémolyse, produit de contraste iodé, variant haptoglobine, anomalie monoclonale
+*** β1/2 globuline
+  - augmentation:
+    - voir [[denote:20240717T200717][Transferrine]]
+    - C3: inflammation, cholestase, imprégnation oestrogène
+    - bloc β-γ : cirrhose éthylique
+  - diminution :
+    - voir [[denote:20240717T200717][Transferrine]]
+    - fuite protéique, dénutrition
+    - C3 > 60%: déficit congénitale, cirrhose décompensée, hyperconsommation (auto-immune, infection), sérum "vieux"
+    - IgA : DICV
+  - NB: interférence : fibrinogène, hémolyse
+*** γ-globuline
+- augmenté et polyclone (= diffuse): explorer si > 20g/L
+  - si syndrome inflammatoire : infections (bactériennes, virales), auto-imun, Hoggkin
+  - sinon : cirrhose éthylique, hépatite chronique active, SIDA, parasitose
+- diminué : explorer si < 5g/L
+  - primitive: DICV, déficit IgA, syndrome hyperIgM, agammaglobulinémie de Bruton
+  - secondaire
+    - perte: uraine, cutané, digestive, excès de catabolisme
+    - défaut de producton : médicaments (corticoïdes, immunosuppresseurs), hémopathies (myélome, LLC..)
+
+      TODO 13.58
