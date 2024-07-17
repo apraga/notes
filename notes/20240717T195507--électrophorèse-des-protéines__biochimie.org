@@ -1,10 +1,10 @@
-:PROPERTIES:
-:ID:       282512ca-9e66-442e-ac3a-b033c43658a3
-:END:
-#+title: Électrophorèse des protéines
-#+filetags: biochimie
+#+title:      Électrophorèse des protéines
+#+date:       [2024-07-17 Wed 19:55]
+#+filetags:   :biochimie:
+#+identifier: 20240717T195507
 
-[[id:671a23f8-20ec-4219-a5ff-683899db9c9e][Dysgammaglobulinémie monoclonale]]
+
+[[denote:20240717T195557][Dysgammaglobulinémie monoclonale]]
 * ELP sérique
 Pré-analytique
 - tube sec (pas d'hépariné ou EDTA ! pour éviter interférence) dédié
@@ -33,14 +33,15 @@ Varition patho (>)
      2. donc ne dépend *pas du poids moléculaire*
      3. seul IgG et IgM migre version pole négatif
 
-   figure:
-   - albumine
-   - α1-globuline: anti-trypsine, [[id:a3a555d1-b65e-4cca-9159-2c62c284283b][Orosomucoïde (α1 glycoprotéine acide)]]
-   - α2-globuline : [[id:d9c7eb89-3d73-4fa9-a734-9dd71515cc91][Haptoglobine]] [[id:3c6eaa7b-c3d1-4e83-8653-b1304679b9cb][Céruloplasmine]]
-   - β1 : [[id:15349a3f-5a5b-44a3-be92-fc23d48c25fb][Transferrine]]
-   - β2 : complément, IgA
-   - γ : IgG, IGM
-  2. détermination des intensité -> profil
+     figure:
+  2. albumine
+     - α1-globuline: anti-trypsine,
+      [[denote:20240717T200247][Orosomucoïde]]
+     - α2-globuline : [[denote:20240717T200415][Haptoglobine]] [[denote:20240717T200520][Céruloplasmine]]
+     - β1 : [[denote:20240717T200717][Transferrine]]
+     - β2 : complément, IgA
+     - γ : IgG, IGM
+     - détermination des intensité -> profil
 *** Capillaire
 - électrocinétique dans un capillaire fin (25μm)
 - rapide rapide, résolution comparable

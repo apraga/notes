@@ -1,8 +1,9 @@
-:PROPERTIES:
-:ID:       a3a555d1-b65e-4cca-9159-2c62c284283b
-:END:
-#+title: Orosomucoïde (α1 glycoprotéine acide)
-#+filetags: biochimie néphélémétrie
+#+title:      Orosomucoïde
+#+date:       [2024-07-17 Wed 20:02]
+#+filetags:   :biochimie:néphélémétrie:
+#+identifier: 20240717T200247
+
+(α1 glycoprotéine acide)
 
 glycoprotéine = 40% glucides
 Augmenté : inflammation aigüe, infection/inflamation chronique, blessures, brûlures, tumeurs, IRC
