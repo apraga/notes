@@ -10,19 +10,6 @@ Analytique: technique Biuret = coloration violette pour liasons peptidique Cu++
 
 Attention: protidémie normale n'exclut pas une anomalie
 
-* Varition patho (>)
-- > 90g/L
-  - Attention aux fausses hypoNa et hypoK si > 100g/L
-  - hémoconcentration (donc faux hyperprot)
-  - inflamation, infection
-  - dysglobulinémie monocloane ?
-- < 90g/L: oedeme
-  - défaut d'apport
-  - défau de synthse (hépatique)
-  - pere excessive (rénale, brûlure, digestive, chir)
-  - hypercatabolisme (Cushing, hyperthyrœiide)
-
-    < 55g/L : vérifier perfusion
 * Technique
 *** Gel d'acarose:
   1. migration pendant 30min de protéine chargée négativement vers pose +. Milieu alcaloin
@@ -45,4 +32,17 @@ Attention: protidémie normale n'exclut pas une anomalie
 - détection optiqiue 200nm
 
   Ici la migration de fait du + vers le - : la paroi du capillaire est chargée négativement et les ions + du solvant vont formet une couche mobile (sous l'action du champ électrique)
-* [[denote:20240717T201253][Électrophorèse des protéines sériques : interprétation]]
+* Variation patho
+- > 90g/L
+  - Attention aux fausses hypoNa et hypoK si > 100g/L
+  - hémoconcentration (donc faux hyperprot)
+  - inflamation, infection
+  - dysglobulinémie monocloane ?
+- < 90g/L: oedeme
+  - défaut d'apport
+  - défau de synthse (hépatique)
+  - pere excessive (rénale, brûlure, digestive, chir)
+  - hypercatabolisme (Cushing, hyperthyrœiide)
+
+    < 55g/L : vérifier perfusion
+* [[denote:20240717T201253][Interprétation]]
