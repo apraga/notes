@@ -1,0 +1,10 @@
+#+title:      Électrophorèse des protéines
+#+date:       [2024-07-17 Wed 19:55]
+#+filetags:   :biochimie:
+#+identifier: 20240717T195507
+
+
+[[denote:20240717T195557][Dysgammaglobulinémie monoclonale]]
+[[denote:20240717T201002][Électrophorèse des protéines sériques]]
+
+[[denote:20240718T230719][Immunotypage]]

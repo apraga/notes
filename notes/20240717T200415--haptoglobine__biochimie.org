@@ -1,8 +1,7 @@
-:PROPERTIES:
-:ID:       d9c7eb89-3d73-4fa9-a734-9dd71515cc91
-:END:
-#+title: Haptoglobine
-#+filetags: biochimie néphélémétrie
+#+title:      Haptoglobine
+#+date:       [2024-07-17 Wed 20:04]
+#+filetags:   :biochimie:néphélémetrie:
+#+identifier: 20240717T200415
 
 Protéine plasmatique fixant hémoglobine iextraglobulaire
 Augmenté : phase inflammatoire aigǜe

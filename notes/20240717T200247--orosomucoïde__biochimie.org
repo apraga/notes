@@ -1,0 +1,15 @@
+#+title:      Orosomucoïde
+#+date:       [2024-07-17 Wed 20:02]
+#+filetags:   :biochimie:néphélémétrie:
+#+identifier: 20240717T200247
+
+(α1 glycoprotéine acide)
+
+glycoprotéine = 40% glucides
+
+* Variations
+- Augmenté :
+  - inflammation aigüe : dès le 3-4e jour
+  - infection/inflamation chronique, blessures, brûlures, tumeurs, IRC
+- Diminué : insuffisance hépatique, syndrome néphrotique
+Normes 0.5-1.2g/L

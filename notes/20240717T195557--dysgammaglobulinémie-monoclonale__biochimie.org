@@ -1,8 +1,8 @@
-:PROPERTIES:
-:ID:       671a23f8-20ec-4219-a5ff-683899db9c9e
-:END:
-#+title: Dysgammaglobulinémie monoclonale
-#+filetags: biochimie
+#+title:      Dysgammaglobulinémie monoclonale
+#+date:       [2024-07-17 Wed 19:55]
+#+filetags:   :biochimie:hemato:
+#+identifier: 20240717T195557
+
 * Indications
 Suspicion maladie avec Ig monoclonale (non systématique !) :
 - anomile hémogramme
@@ -29,6 +29,6 @@ Suspicion maladie avec Ig monoclonale (non systématique !) :
 - lié à la prolifération lymphoïde B : lésion osseuse, compression médullaire, infection, hyperC, IR
 - les Ig elle même : amylose (acculumation: rénale : dégradation tubule), activité auto-immune
 
-- [[id:5cd3fe5b-c63d-430e-90fd-71883df4f1f3][Myélome]]
-- [[id:e54c3cb3-0cc3-43e9-93e4-4f3d35fd27c5][Leucémie à plasmocytes]]
-- [[id:985e4442-6948-4869-8876-c0d15575a374][Maladie de Waldenström]]n
+- [[denote:20240717T195629][Myélome]]
+- [[denote:20240717T195710][Leucémie à plasmocytes]]
+- [[denote:20240717T200108][Maladie de Waldenström]]

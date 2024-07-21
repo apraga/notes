@@ -1,0 +1,10 @@
+#+title:      Leucémie à plasmocytes
+#+date:       [2024-07-17 Wed 19:57]
+#+filetags:   :hemato:
+#+identifier: 20240717T195710
+
+
+* Diagnostic
+- Hyperleucocytose
+- >= 20% ou >= 2G/L plasmocytes dans le sang
+- et infiltration médullaire *majeure*

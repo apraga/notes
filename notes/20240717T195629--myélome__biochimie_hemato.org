@@ -1,7 +1,9 @@
-:PROPERTIES:
-:ID:       5cd3fe5b-c63d-430e-90fd-71883df4f1f3
-:END:
-#+title: Myélome
+#+title:      Myélome
+#+date:       [2024-07-17 Wed 19:56]
+#+filetags:   :biochimie:hemato:
+#+identifier: 20240717T195629
+
+
 - prolifération plasmocytaire maligne avec soit une Ig entier soit une chaîne légère libre
 - Rare chez sujet jeune (âge médian 70ans)
 - facteur de risque certain :  radiations ionisante
@@ -19,7 +21,7 @@
   sombre)
 * Évolution
 - prolifération: B puis moelle (MGUS = plasmocytome monoclonale -> myélome = plasmocyte malin) puis sang (leucémie aigüe à plasmocytes)
- 
+
 État prémyélomateux
 - MGUS (prémyélomateux): 1% d'évolution par an d'évolution vers MMM
 - intemédiaire (myélome indodeux): 10% par an
@@ -92,4 +94,3 @@ Initialement 40% à 5 ans mais fortement amélioré avec daratumumab (anticorps 
 - score ISS
 - réponse au traitement : disparition monoclonale, plasmocytaire monoclonaires
 - surveillance : EPS +/- dosage chaine légère
-
