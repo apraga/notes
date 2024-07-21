@@ -1,7 +1,0 @@
-:PROPERTIES:
-:ID:       e618c88d-3a3a-483a-bb75-30dde2738c01
-:END:
-#+title: Calcium
-#+filetags: biochimie
-
-Norme 2.12-2.52 mmol/L

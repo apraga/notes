@@ -1,8 +1,9 @@
-:PROPERTIES:
-:ID:       6fe0f5fe-9370-4dfa-839d-0edaa216c446
-:END:
-#+title: Calcémie
-#+filetags: biochimie
+#+title:      Calcémie
+#+date:       [2024-07-21 dim. 15:15]
+#+filetags:   :biochimie:
+#+identifier: 20240721T151506
+
+Norme 2.12-2.52 mmol/L
 
 Calcium extra-cellulaire
 - lié aux proténies

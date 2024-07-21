@@ -1,0 +1,22 @@
+#+title:      Cholestase
+#+date:       [2024-07-21 dim. 14:34]
+#+filetags:   :biochimie:hepato:
+#+identifier: 20240721T143415
+
+Obstruction voies biliaire intra et extrahépatique
+
+- biliubine totale et conjugée augmenté++
+- Acides bilaire (sang, urines) augmenté (utile pour cholestase gravidique)
+- PAL augmenté++
+- GGT augmenté
+- 5’ nuclétidase augmenté (plus spécifique grossesse, enfance, maladie osseuse)
+- stétorrhée
+
+* Algorithm décisionnel
+- Médicaments ?
+- Écho abdo: voies biliaire dilatées = extra-hépatique sinon (intra-hépatique) et faire
+  - anticorps anti-mitochondrie, enzyme conversion angiotensie, sérologie virale (VHA, VHB, VHC, VEB, CMV)
+
+
+Source: La lettre de l’hépato-gastroentérologue 2014 (depuis cours UNESS bio)
+cours UNESS
