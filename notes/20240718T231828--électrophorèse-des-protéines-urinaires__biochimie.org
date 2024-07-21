@@ -1,4 +1,4 @@
-#+title: #+title:      Électrophorèse des protéines urinaires
+#+title: Électrophorèse des protéines urinaires
 #+date:       [2024-07-18 Thu 23:18]
 #+filetags:   :biochimie:
 #+identifier: 20240718T231828
@@ -51,3 +51,49 @@ en *g/24h* et un ratio rapporté à la *créatinurie* (permet de corriger les va
 - α1-microglobulinurie : < 1.58mg/mmol /e créat. Prédictif GNRP
 - β1-microglobulinurie : < 1.58mg/mmol /e créat. Prédictif néphropathie tubulo-interstitielle agiu...
 - transferrine < 0.20. Prédictif amylose, lésion glomérulaire minimes
+
+
+
+
+* Technique
+Electrophorèse en gel d'agarose : migration selon
+- la charge totale des protéines
+- le poids moléculaires des protéines (< 67kDa = tubulaires, glomérulaire sinon)
+- la charge totale + détection immunologique
+
+* Protéinurie glomérulaire
+- les plus fréquentes
+- souvent > 1g/24h
+- protéines de haut poids moléculaire (> 67kDa)
+- albuminurie prédominante (sélective si albumine seule)
+- si IgG : néphropathie glomérulaire (sinon pas de lésion glomérulaires)
+Causes
+- glomérulonéphrites
+- diabète
+- protéinurie de surchagre (haut poids moléculaire)
+- médicaments (AINS), toxique (héroïne), certains carncers
+
+* Protéinurie tubulaire
+- plus rare
+- < 0.5g/24h
+- albumoinurie minoritaires
+- microprotéine non réabsorbées+++ (beta2, RBPn alpha1micro)
+- utile pour dépistage/suivi tubulopathies proximales médicamentes (voir syndrome de Fanconi = 1ere cause est héréditaire (cystinose)
+Causes
+- congénitales (diabète, Fanconi, Bartter)
+- infectieuses
+- toxique (métaux lourds), médicaments (AINS)
+- Sjörgren, sarcoïdoe
+- *80% liées aux myéolomes*
+
+* Protéinurie mixte
+- > 1g/24h
+- albumine++ et protéines de faible poids moléculaire++
+- signe d'une maladie rénale avancée
+
+* Protéinurie de surcharge
+
+Exemple d'un cas avec protéinurie de surcharge et atteinte tubulaire secondaires aux chaînes légères libres
+Protéinurie de surcharge : chaines légère libres, LAM, cancer bronchique, rhabdomyolyse, hémolyse IV
+
+Source: cours UNESS bio
