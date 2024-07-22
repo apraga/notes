@@ -1,7 +1,8 @@
-:PROPERTIES:
-:ID:       3f199643-1ce7-4f12-8e1d-2f7532fa59ad
-:END:
-#+title: Polyglobulie de Vaquez
+#+title:      Polyglobuline de Vaquez
+#+date:       [2024-07-22 Mon 22:29]
+#+filetags:   :hémato:
+#+identifier: 20240722T222950
+
 Diagnostic : A1 + A2 + {A3 ou B}
 - A1 : Hb > 16.5 (16 femmes) ou Hct > 0.49 (0.48) ou masse globulaire totale > 125%
 - A2 : biopsie méudllaire : hypercellularité, panmyélose, mégacaryocytes mature pléiomorphe

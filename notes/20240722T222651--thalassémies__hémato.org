@@ -1,7 +1,7 @@
-:PROPERTIES:
-:ID:       2689fdd4-ec08-42a7-9a24-a854c0eb5bbb
-:END:
-#+title: Thalassémies
+#+title:      Thalassémies
+#+date:       [2024-07-22 Mon 22:26]
+#+filetags:   :hémato:
+#+identifier: 20240722T222651
 
 Définition : anomalie génétique avec diminution/absence synthèse de
 chaine alpha ou beta globine

@@ -1,7 +1,8 @@
-:PROPERTIES:
-:ID:       0ef328ad-22c8-4b16-a525-12d0c5c70d1f
-:END:
-#+title: Thrombopénie
+#+title:      Thrombopénie
+#+date:       [2024-07-22 Mon 22:31]
+#+filetags:   :hémato:
+#+identifier: 20240722T223109
+
 - < 150G/L
 - Périphérique : mégacaryocytes normaux/éleves,
   destruction/consomation/séquestration

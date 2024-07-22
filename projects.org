@@ -21,7 +21,7 @@ On force python 3.11 : ok pour le cache
 ******* WAIT https://github.com/NixOS/nixpkgs/issues/321920
 On a changé le hash à la main dans python-jaxlib mais ce n'est pas une bonne solution
 ******** TODO tensorflow-addons :python:
-SCHEDULED: <2024-07-14 Sun>
+SCHEDULED: <2024-07-27 Sat>
 ********* DONE tensorflow-hub (wheel)
 CLOSED: [2024-07-14 Sun 21:43]
 Bazel pour générer wheel : échoue à télécharger certaines dépendences.
@@ -31,17 +31,17 @@ CLOSED: [2024-07-14 Sun 21:51] SCHEDULED: <2024-07-14 Sun>
 ********* TODO tensorflow-model-optimization
 ********* TODO tf_slim
 ******** TODO tf-models-official :python:
-SCHEDULED: <2024-07-14 Sun>
+SCHEDULED: <2024-07-27 Sat>
 
 ******* TODO tensorflow: Compléter patch upstream en supprimer tous distutils
-SCHEDULED: <2024-07-13 Sat>
+SCHEDULED: <2024-07-27 Sat>
 ******* TODO CUDA
-SCHEDULED: <2024-07-20 Sat>
+SCHEDULED: <2024-07-27 Sat>
 ******* TODO Misc
 ******* TODO Bazel
-SCHEDULED: <2024-07-20 Sat>
+SCHEDULED: <2024-07-27 Sat>
 ******* TODO Clif
-SCHEDULED: <2024-07-20 Sat>
+SCHEDULED: <2024-07-27 Sat>
 ***** DONE [[file:~/code/nixpkgs/pkgs/by-name/ti/tiddit/package.nix::{][Package nix Tiddit]]
 ***** WAIT [[https://github.com/NixOS/nixpkgs/pull/312995][PR]] package nix tiddit
 Rebase + corrections + relancé <2024-06-29 Sat>
@@ -55,7 +55,7 @@ Relancé <2024-06-29 Sat>
 Relancé <2024-06-29 Sat>
 **** WAIT Support pour pull partiel :scidataflow:
 **** TODO Tests pull partiel :scidataflow:
-SCHEDULED: <2024-07-12 Fri>
+SCHEDULED: <2024-07-27 Sat>
 **** DONE PR pull partiel :scidataflow:
 CLOSED: [2024-06-19 Wed 22:02] SCHEDULED: <2024-06-16 Sun>
 **** KILL Assets spliceai GRCh38 :scidataflow:
@@ -131,11 +131,15 @@ CLOSED: [2024-06-27 Thu 22:14] SCHEDULED: <2024-06-27 Thu>
 :CATEGORY: japonais
 :END:
 ** TODO Intermediate Japanese
-SCHEDULED: <2024-07-18 Thu +1d>
+SCHEDULED: <2024-07-22 Mon +1d>
 :PROPERTIES:
 :STYLE:    habit
 :LAST_REPEAT: [2024-06-30 Sun 15:43]
 :END:
++ State "DONE"       from "TODO"           <2024-07-21 Sun 10:01>
++ State "DONE"       from "TODO"           <2024-07-20 Sat 10:01>
++ State "DONE"       from "TODO"           <2024-07-19 Fri 10:01>
++ State "DONE"       from "TODO"           <2024-07-18 Thu 10:01>
 + State "DONE"       from "TODO"           <2024-07-17 Wed 10:01>
 + State "DONE"       from "TODO"           <2024-07-16 Tue 10:01>
 + State "DONE"       from "TODO"           <2024-07-15 Mon 10:01>
@@ -247,7 +251,7 @@ CLOSED: [2024-06-05 Wed 22:23]
 /Entered on/ [2024-06-03 Mon 22:45]
 Ne répond pas mais Oriane dit OK
 *** TODO Monter dossier interCHU Biomnis
-SCHEDULED: <2024-07-12 Fri>
+SCHEDULED: <2024-07-27 Sat>
 /Entered on/ [2024-06-12 Wed 23:02]
 ** DONE Fusionner notes hémato + biochimie en attente
 CLOSED: [2024-06-29 Sat 14:53] SCHEDULED: <2024-06-27 Thu>
@@ -338,9 +342,6 @@ On essaie sans les patches
 CLOSED: [2024-06-19 Wed 22:55] SCHEDULED: <2024-05-25 Sat>
 /Entered on/ [2024-05-25 Sat 11:42]
 
-** TODO Notes bataille de Marathon
-SCHEDULED: <2024-07-21 Sun>
-/Entered on/ [2024-06-16 Sun 10:51]
 * Santé
 :PROPERTIES:
 :CATEGORY: santé

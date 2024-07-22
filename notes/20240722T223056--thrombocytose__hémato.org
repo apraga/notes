@@ -1,7 +1,8 @@
-:PROPERTIES:
-:ID:       4203549d-b850-4096-af1c-35914da13285
-:END:
-#+title: Thrombocytose
+#+title:      Thrombocytose
+#+date:       [2024-07-22 Mon 22:30]
+#+filetags:   :hémato:
+#+identifier: 20240722T223056
+
 * Fausses thrombocytoses
 Séparation GR
 
