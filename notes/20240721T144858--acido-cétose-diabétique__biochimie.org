@@ -1,0 +1,16 @@
+#+title:      Acido-cétose diabétique
+#+date:       [2024-07-21 dim. 14:48]
+#+filetags:   :biochimie:hépato:
+#+identifier: 20240721T144858
+
+TODO: lien avec diabète
+
+- Clinique:
+  - douleurs abdo diffuse, nausée, vomissement
+  - amaigrissement, amyotrophie, asthénie
+  - polyuro-polydipsie, troubles visuels
+- Bio :
+  - hyperglycémie, insulinopénie, déshydratation
+  - Acidose métabolique
+  - cétonémie, cétonurie
+  - diabète connu mais révélateur 10-15%
