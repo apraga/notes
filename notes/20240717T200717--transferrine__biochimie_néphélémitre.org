@@ -4,7 +4,7 @@
 #+identifier: 20240717T200717
 
 Synthétisée par le foie
-Transporte le fer dans le sang
+Lie la majorité du fer circulant sous forme ferrique (Fe3+)
 
 * Variation
 - Diminué en phase inflammatoire aigüe, surchage en fer, IHC

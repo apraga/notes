@@ -1,0 +1,27 @@
+#+title:      Métabolisme du fer
+#+date:       [2024-07-22 Mon 22:51]
+#+filetags:   :biochimie:hémato:
+#+identifier: 20240722T225148
+
+- 2 formes
+  - Fe^3+ : insoluble, lié à des protéines de transport (transferrine)
+  - Fe^2+ : soluble et toxique (mort celullaire, fibrose)
+- Finement régulé
+
+* Alimentation
+- Fer heminique (25% absorption): boudin, foie, agneian, boeuf, cheval carand, poissons, oeuf dur...
+- Fer non heminique (5-10% absorption): soja, légumineuses   épinards, pains, petits pois, haricots verts
+* Homéostase
+#+caption: Cohen-Solal et al 2013
+[[file:images/biochimie/fer-homeostase.png]]
+
+- Apport alimentaire (duodenum)
+- Transfert dans le sang par la [[denote:20240717T200717][transferrine]]
+- entrée dans les cellules via les récepteurs de la transférrine -> dosage possible du [[denote:20240722T230650][Récepteur soluble circulant]]
+- mise en réserve par la [[denote:20240722T230855][Ferritine]]
+- régulation = hepcidine
+* Carence
+ - diminution synthse hémoglobline -> anémie microcytaire hypochrome,
+ - diminution capacito oxidative tissulaire
+ Donc diminution capacité de travail
+Source: cours UNESS

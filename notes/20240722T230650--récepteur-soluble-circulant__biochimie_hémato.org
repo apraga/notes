@@ -1,0 +1,7 @@
+#+title: Récepteur soluble circulant
+#+date:       [2024-07-22 Mon 23:06]
+#+filetags:   :biochimie:hémato:
+#+identifier: 20240722T230650
+
+Rs(Tf)
+Dosaeg immunochimique
