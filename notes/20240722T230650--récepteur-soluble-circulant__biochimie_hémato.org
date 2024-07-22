@@ -1,4 +1,4 @@
-#+title: Récepteur soluble circulant
+#+title: Récepteur soluble à la transférrine
 #+date:       [2024-07-22 Mon 23:06]
 #+filetags:   :biochimie:hémato:
 #+identifier: 20240722T230650

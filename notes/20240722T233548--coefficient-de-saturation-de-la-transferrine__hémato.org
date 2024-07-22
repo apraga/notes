@@ -1,0 +1,13 @@
+#+title: #+title:      Coefficient de saturation de la transferrine
+#+date:       [2024-07-22 Mon 23:35]
+#+filetags:   :hémato:
+#+identifier: 20240722T233548
+
+* Augmentation
+- *surcharge en fer*
+- cytolyse, IHC
+- transfusion
+
+* Diminution
+- carence martiale
+- anémie inflammation/pendant maladie chronique
