@@ -1,0 +1,29 @@
+#+title:      Biochimie
+#+date:       [2024-07-22 Mon 22:34]
+#+filetags:   :biochimie:meta:
+#+identifier: 20240722T223414
+
+* Dosage
+- [[denote:20240721T151506][Calcémie]]
+- [[denote:20240717T200247][Orosomucoïde]]
+- [[denote:20240717T200415][Haptoglobine]]
+- [[denote:20240717T200520][Céruloplasmine]]
+- [[denote:20240717T200717][Transferrine]]
+- [[denote:20240717T201856][Albumine]]
+- [[denote:20240717T202815][α2 macroglobuline]]
+
+* Techniques
+- [[denote:20240718T230719][Immunotypage]]
+- [[denote:20240717T195507][Électrophorèse des protéines]]
+* Maladies
+- [[denote:20240721T162047][Hyper et hypo-uricémies]]
+- [[denote:20240717T195557][Dysgammaglobulinémie monoclonale]]
+- [[denote:20240717T195629][Myélome]]
+- [[denote:20240717T202347][Syndrome inflammatoire aigu biologique]]
+- [[denote:20240717T200108][Maladie de Waldenström]]
+- [[denote:20240721T141834][Pancréatite aigüe]]
+- [[denote:20240721T143415][Cholestase]]
+- [[denote:20240721T144629][Hypokaliémie]]
+- [[denote:20240721T144858][Acido-cétose diabétique]]
+* Domaines
+[[denote:20240721T131524][Examens biologique en hépato-gastroentérologie]]
