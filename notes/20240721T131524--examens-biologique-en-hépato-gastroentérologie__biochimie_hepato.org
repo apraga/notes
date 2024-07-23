@@ -68,7 +68,7 @@
 ** [[denote:20240723T192057][Hyperbilirubinémie]]
 ** [[denote:20240723T192225][Maladie de Biermer]]
 ** [[denote:20240723T192343][Anémie]]
-** [[denote:20240723T192429][Hémochromatose]]
+** [[denote:20240723T192429][Hémochromatose héréditaire]]
 * Modifications pendant la grossesse
 Physologique
 - PAL augmenté (produite par placenta)

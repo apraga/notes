@@ -1,4 +1,0 @@
-#+title:      Déficit en fer
-#+date:       [2024-07-23 Tue 18:38]
-#+filetags:   :hémato:
-#+identifier: 20240723T183857
