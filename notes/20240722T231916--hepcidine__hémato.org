@@ -7,5 +7,7 @@
 - Synthèse hépatique
 - Sensible au fer circulant et stocké
 * Rôle
-- Bloque absorption fer de l'intestin
-- réduit la libération du fer à partir des macrophage, monocytes et entérocyte
+- induit l'internalisation et la dégradation de la [[denote:20240723T185004][ferroportine]]
+- conséquence (voir la fiche [[denote:20240723T185004][ferroportine]])
+  - Bloque absorption fer de l'intestin
+  - réduit la libération du fer à partir des macrophage

@@ -19,7 +19,7 @@
 - Transfert dans le sang par la [[denote:20240717T200717][transferrine]]
 - entrée dans les cellules via les récepteurs de la transférrine -> dosage possible du [[denote:20240722T230650][Récepteur soluble à la transferrine]]
 - mise en réserve par la [[denote:20240722T230855][Ferritine]]
-- régulation = [[denote:20240722T231916][hepcidine]]
+- régulation = seulement au niveau de l'absorption car il n'y a pas de mécanisme d'excrétion ! Voir [[denote:20240722T231916][hepcidine]]
 * Exploration
 | Compartiment | fonctionnel  | transport    | réserve   |
 |--------------+--------------+--------------+-----------|
@@ -43,4 +43,5 @@
 - *Toujours doser transferrine et CST*
 - À jeun si possible et 8h (variation nycthémérale)
 - sérum (chélation du fer par certains anticoagulant)
+ 
 Source: cours UNESS

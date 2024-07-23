@@ -1,0 +1,16 @@
+#+title: Cytolyse
+#+date:       [2024-07-23 Tue 19:16]
+#+filetags:   :biochimie:hémato:
+#+identifier: 20240723T191636
+
+* Algorithme décisionnel
+Arrêt agent hépatotoxique et interrogatoire : médicaments, phytothérapie, alcool, drogues, toxiques ?
+Si non contributif :
+- antiVHC : si positif, ARN et génotype VCH
+- coef saturation > 45%: mutation hémochromatose génétique
+- stéatose
+- AgHBs: si positif : AgHBe, antiHBe et ADN VHB
+- auto-anticorps : si positifs, biopsie
+- céruloplasmie : si positif, examen ophtalmo, cuprurie
+
+ Si non contributif : ARN VHC, sérologie hépatite E, CMV et anticorps anti-transgluatimanes, phénotype α1-antitrypsine

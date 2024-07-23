@@ -1,0 +1,23 @@
+#+title:      Anémie
+#+date:       [2024-07-23 Tue 19:23]
+#+filetags:   :hémato:
+#+identifier: 20240723T192343
+
+* Carence martiale
+VGM < 95fl et
+- ferritine <= 45μg/L
+-  ou ferritine entre 46-99 et (RsTf augmente ou doueux mais moelle osseuse pauvre en fer sur biopsie)
+* Types d’anémies
+signe clinique/bio d’inflammation et - coef saturation < 16% et
+- ferritine < 30μg/L : carence martiale
+- ferritine 30-100
+  - RsTf/log ferritine > 2 : maladie chronique et anémie par carence martiale
+  - > 1 : maladie chronique
+- ferritine > 100: maladie chronique
+* Hyperferritinémie
+- CST élevée (> 45%)
+  - cytolyse (ASAT/ALT) hépatique/musculaire
+  - sinon hémochromatose
+- sinon
+  - CRP augmenté : inflammatoire
+  - sinon : syndrome métabolique, mutation ferroportine, acéruloplasminémie, maladie de Gaucher
