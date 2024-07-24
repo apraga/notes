@@ -1,5 +1,22 @@
-#+title: Auragen
+#+title: Main
+#+COLUMNS: %25ITEM %YEAR %TAGS %TODO
 
+* Général
+** TODO Defining the diverse spectrum of inversions, complex structural variation, and chromothripsis in the morbid human genome
+:PROPERTIES:
+:TITLE:    Defining the diverse spectrum of inversions, complex structural variation, and chromothripsis in the morbid human genome
+:BTYPE:    article
+:CUSTOM_ID: collins2017
+:AUTHOR:   Ryan L. Collins and Harrison Brand and Claire E. Redin and Carrie Hanscom and Caroline Antolik and Matthew R. Stone and Joseph T. Glessner and Tamara Mason and Giulia Pregno and Naghmeh Dorrani and Giorgia Mandrile and Daniela Giachino and Danielle Perrin and Cole Walsh and Michelle Cipicchio and Maura Costello and Alexei Stortchevoi and Joon-Yong An and Benjamin B. Currall and Catarina M. Seabra and Ashok Ragavendran and Lauren Margolin and Julian A. Martinez-Agosto and Diane Lucente and Brynn Levy and Stephan J. Sanders and Ronald J. Wapner and Fabiola Quintero-Rivera and Wigard Kloosterman and Michael E. Talkowski
+:JOURNAL:  Genome Biology
+:YEAR:     2017
+:VOLUME:   18
+:NUMBER:   1
+:PAGES:    36
+:DOI:      10.1186/s13059-017-1158-6
+:URL:      http://dx.doi.org/10.1186/s13059-017-1158-6
+:END:
+Défini des SV complexes avec illustrations ([[https://link.springer.com/article/10.1186/s13059-017-1158-6/figures/2][figure]] )
 * Pseudogene
 :PROPERTIES:
 :CATEGORY: pseudogene
@@ -34,7 +51,8 @@ CLOSED: [2024-06-14 ven. 17:17]
 :NOTE:     Accessed 2024-06-14
 :END:
 
-*** Software
+*** KILL Identification pseudogene: pas le scope
+CLOSED: [2024-07-22 Mon 17:07]
 **** DONE Expressed Pseudogenes in the Transcriptional Landscape of Human Cancers
 CLOSED: [2024-06-10 lun. 16:55]
 :PROPERTIES:
@@ -58,7 +76,7 @@ D'après[cite:@cheetham2019], ne prend en compte que les reads des régions dive
 :PROPERTIES:
 :TITLE:    PΨFinder: a practical tool for the identification and visualization of novel pseudogenes in DNA sequencing data
 :BTYPE:    article
-:CUSTOM_ID: abrahamsson22ppsifinder
+:CUSTOM_ID: abrahamsson2022ppsifinder
 :AUTHOR:   Sanna Abrahamsson and Frida Eiengård and Anna Rohlin and Marcela Dávila López
 :JOURNAL:  BMC Bioinformatics
 :YEAR:     2022
@@ -74,7 +92,7 @@ CLOSED: [2024-06-24 lun. 15:15]
 :PROPERTIES:
 :TITLE:    Pseudofinder: Detection of Pseudogenes in Prokaryotic Genomes
 :BTYPE:    article
-:CUSTOM_ID: syber2022pseudopipe
+:CUSTOM_ID: syber2022pseudofinder
 :AUTHOR:   Mitchell J Syberg-Olsen and Arkadiy I Garber and Patrick J Keeling and John P McCutcheon and Filip Husnik
 :JOURNAL:  Molecular Biology and Evolution
 :YEAR:     2022
@@ -84,6 +102,21 @@ CLOSED: [2024-06-24 lun. 15:15]
 :DOI:      10.1093/molbev/msac153
 :URL:      http://dx.doi.org/10.1093/molbev/msac153
 :END:
+**** DONE Pseudogenes in the ENCODE regions: consensus annotation, analysis of transcription, and evolution
+CLOSED: [2024-07-17 Wed 16:39] SCHEDULED: <2024-07-15 lun.>
+:PROPERTIES:
+:TITLE:    Pseudogenes in the ENCODE regions: consensus annotation, analysis of transcription, and evolution
+:BTYPE:    article
+:CUSTOM_ID: zheng2007pseudogenes
+:AUTHOR:   Zheng, Deyou and Frankish, Adam and Baertsch, Robert and Kapranov, Philipp and Reymond, Alexandre and Choo, Siew Woh and Lu, Yontao and Denoeud, France and Antonarakis, Stylianos E and Snyder, Michael and others
+:JOURNAL:  Genome research
+:VOLUME:   17
+:NUMBER:   6
+:PAGES:    839--851
+:YEAR:     2007
+:PUBLISHER: Cold Spring Harbor Lab
+:END:
+
 **** DONE PseudoPipe: an automated pseudogene identification pipeline
 CLOSED: [2024-06-26 mer. 14:03]
 :PROPERTIES:
@@ -121,7 +154,7 @@ CLOSED: [2024-06-27 jeu. 17:44] SCHEDULED: <2024-06-27 jeu.>
 :PROPERTIES:
 :TITLE:    Retrocopy contributions to the evolution of the human genome
 :BTYPE:    article
-:CUSTOM_ID: Baertsch_2008
+:CUSTOM_ID: baertsch2008retrofinder
 :AUTHOR:   Baertsch, Robert and Diekhans, Mark and Kent, W James and Haussler, David and Brosius, Jürgen
 :JOURNAL:  BMC Genomics
 :YEAR:     2008
@@ -165,8 +198,8 @@ CLOSED: [2024-07-09 mar. 10:05] SCHEDULED: <2024-07-09 mar.>
 :URL:  https://academic.oup.com/bioinformatics/article/37/3/419/5876827?login=false
 :PUBLISHER: Oxford University Press
 :END:
-**** TODO Pseudogenes and Their Genome-Wide Prediction in Plants
-SCHEDULED: <2024-07-09 mar.>
+**** DONE Pseudogenes and Their Genome-Wide Prediction in Plants
+CLOSED: [2024-07-17 mer. 12:08] SCHEDULED: <2024-07-15 lun.>
 :PROPERTIES:
 :TITLE:    Pseudogenes and Their Genome-Wide Prediction in Plants
 :BTYPE:    article
@@ -183,15 +216,111 @@ SCHEDULED: <2024-07-09 mar.>
 :ABSTRACT: Pseudogenes are paralogs generated from ancestral functional genes (parents) during genome evolution, which contain critical defects in their sequences, such as lacking a promoter, having a premature stop codon or frameshift mutations. Generally, pseudogenes are functionless, but recent evidence demonstrates that some of them have potential roles in regulation. The majority of pseudogenes are generated from functional progenitor genes either by gene duplication (duplicated pseudogenes) or retro-transposition (processed pseudogenes). Pseudogenes are primarily identified by comparison to their parent genes. Bioinformatics tools for pseudogene prediction have been developed, among which PseudoPipe, PSF and Shiu’s pipeline are publicly available. We compared these three tools using the well-annotated Arabidopsis thaliana genome and its known 924 pseudogenes as a test data set. PseudoPipe and Shiu’s pipeline identified 80% of A. thaliana pseudogenes, of which 94% were shared, while PSF failed to generate adequate results. A need for improvement of the bioinformatics tools for pseudogene prediction accuracy in plant genomes was thus identified, with the ultimate goal of improving the quality of genome annotation in plants.
 :DOI:      10.3390/ijms17121991
 :END:
+**** DONE Automatic annotation of eukaryotic genes, pseudogenes and promoters
+CLOSED: [2024-07-17 Wed 15:00] SCHEDULED: <2024-07-17 mer.>
+:PROPERTIES:
+:TITLE:    Automatic annotation of eukaryotic genes, pseudogenes and promoters
+:BTYPE:    article
+:CUSTOM_ID: solovyev2006automatic
+:AUTHOR:   Solovyev, Victor and Kosarev, Peter and Seledsov, Igor and Vorobyev, Denis
+:URL:  https://genomebiology.biomedcentral.com/articles/10.1186/gb-2006-7-s1-s10
+:JOURNAL:  Genome biology
+:VOLUME:   7
+:PAGES:    1--12
+:YEAR:     2006
+:URL: https://link.springer.com/article/10.1186/Gb-2006-7-S1-S10
+:PUBLISHER: Springer
+:END:
+**** DONE The GENCODE pseudogene resource
+CLOSED: [2024-07-17 Wed 15:15] SCHEDULED: <2024-07-17 Wed>
+:PROPERTIES:
+:TITLE:    The GENCODE pseudogene resource
+:BTYPE:    article
+:CUSTOM_ID: pei2012gencode
+:AUTHOR:   Pei, Baikang and Sisu, Cristina and Frankish, Adam and Howald, C{\'e}dric and Habegger, Lukas and Mu, Xinmeng Jasmine and Harte, Rachel and Balasubramanian, Suganthi and Tanzer, Andrea and Diekhans, Mark and others
+:JOURNAL:  Genome biology
+:VOLUME:   13
+:PAGES:    1--26
+:YEAR:     2012
+:PUBLISHER: Springer
+:URL:      https://link.springer.com/article/10.1186/gb-2012-13-9-r51
+:END:
+**** DONE Discovery of non-reference processed pseudogenes in the Swedish population
+CLOSED: [2024-07-17 Wed 16:03]
+:PROPERTIES:
+:TITLE:    Discovery of non-reference processed pseudogenes in the Swedish population
+:BTYPE:    article
+:CUSTOM_ID: boer2023processen
+:AUTHOR:   Esmee Ten Berk de Boer and Kristine Bilgrav Saether and Jesper Eisfeldt
+:JOURNAL:  Frontiers in Genetics
+:YEAR:     2023
+:VOLUME:   14
+:NUMBER:   nil
+:PAGES:    nil
+:DOI:      10.3389/fgene.2023.1176626
+:URL:      http://dx.doi.org/10.3389/fgene.2023.1176626
+:END:
+**** DONE Loss to gain: pseudogenes in microorganisms, focusing on eubacteria, and their biological significance
+CLOSED: [2024-07-17 Wed 16:40] SCHEDULED: <2024-07-17 Wed>
+:PROPERTIES:
+:TITLE:    Loss to gain: pseudogenes in microorganisms, focusing on eubacteria, and their biological significance
+:BTYPE:    article
+:CUSTOM_ID: yang24loss
+:AUTHOR:   Yi Yang and Pengzhi Wang and Samir El Qaidi and Philip R. Hardwidge and Jinlin Huang and Guoqiang Zhu
+:JOURNAL:  Applied Microbiology and Biotechnology
+:YEAR:     2024
+:VOLUME:   108
+:NUMBER:   1
+:PAGES:    328
+:DOI:      10.1007/s00253-023-12971-w
+:URL:      http://dx.doi.org/10.1007/s00253-023-12971-w
+:END:
+**** DONE Re-recognition of pseudogenes: From molecular to clinical applications
+CLOSED: [2024-07-17 Wed 17:06]
+:PROPERTIES:
+:TITLE:    Re-recognition of pseudogenes: From molecular to clinical applications
+:BTYPE:    article
+:CUSTOM_ID: chen2020rerecognition
+:AUTHOR:   Xu Chen and Lin Wan and Wei Wang and Wen-Jin Xi and An-Gang Yang and Tao Wang
+:JOURNAL:  Theranostics
+:YEAR:     2020
+:VOLUME:   10
+:NUMBER:   4
+:PAGES:    1479-1499
+:DOI:      10.7150/thno.40659
+:URL:      http://dx.doi.org/10.7150/thno.40659
+:END:
 
-**** TODO Autres
-SCHEDULED: <2024-07-14 dim.>
-- annotation par GENCODE https://genomebiology.biomedcentral.com/articles/10.1186/gb-2012-13-9-r51/figures/1 utilise pseudopipe et retrofinder
-- une étape parmi d'autre : https://github.com/hillerlab/GeneLossPipe
+**** DONE Evolutionary and expression signatures of pseudogenes in Arabidopsis and rice
+CLOSED: [2024-07-17 Wed 17:18] SCHEDULED: <2024-07-17 mer.>
+:PROPERTIES:
+:TITLE:    Evolutionary and expression signatures of pseudogenes in Arabidopsis and rice
+:BTYPE:    article
+:URL:    https://academic.oup.com/plphys/article/151/1/3/6108462
+:CUSTOM_ID: zou2009evolutionary
+:AUTHOR:   Zou, Cheng and Lehti-Shiu, Melissa D and Thibaud-Nissen, Fran{\c{c}}oise and Prakash, Tanmay and Buell, C Robin and Shiu, Shin-Han
+:JOURNAL:  Plant physiology
+:VOLUME:   151
+:NUMBER:   1
+:PAGES:    3--15
+:YEAR:     2009
+:PUBLISHER: American Society of Plant Biologists
+:END:
+**** DONE Identification of Pseudogenes in Brachypodium distachyon Chromosomes
+CLOSED: [2024-07-17 Wed 17:34]
+:PROPERTIES:
+:TITLE:    Identification of Pseudogenes in Brachypodium distachyon Chromosomes
+:BTYPE:    article
+:CUSTOM_ID: camiolo2018identification
+:AUTHOR:   Camiolo, Salvatore and Porceddu, Andrea
+:JOURNAL:  Brachypodium Genomics: Methods and Protocols
+:PAGES:    149--171
+:YEAR:     2018
+:PUBLISHER: Springer
+:END:
 
-- https://github.com/topics/pseudogenes
-**** TODO Structural characterization and duplication modes of pseudogenes in plants
-SCHEDULED: <2024-07-10 mer.>
+**** DONE Structural characterization and duplication modes of pseudogenes in plants
+CLOSED: [2024-07-17 Wed 17:34] SCHEDULED: <2024-07-15 lun.>
 :PROPERTIES:
 :TITLE:    Structural characterization and duplication modes of pseudogenes in plants
 :BTYPE:    article
@@ -203,9 +332,10 @@ SCHEDULED: <2024-07-10 mer.>
 :PAGES:    5292
 :YEAR:     2021
 :PUBLISHER: Nature Publishing Group UK London
+:URL:      https://www.nature.com/articles/s41598-021-84778-6
 :END:
-**** TODO Processed pseudogenes acquired somatically during cancer development
-SCHEDULED: <2024-07-10 mer.>
+**** DONE Processed pseudogenes acquired somatically during cancer development
+CLOSED: [2024-07-17 Wed 17:36] SCHEDULED: <2024-07-15 lun.>
 :PROPERTIES:
 :TITLE:    Processed pseudogenes acquired somatically during cancer development
 :BTYPE:    article
@@ -218,6 +348,41 @@ SCHEDULED: <2024-07-10 mer.>
 :YEAR:     2014
 :PUBLISHER: Nature Publishing Group UK London
 :END:
+
+*** TODO Appel de variant sur pseudogène connu
+**** TODO [#A] Integrating gene annotation with orthology inference at scale
+SCHEDULED: <2024-07-23 Tue>
+:PROPERTIES:
+:TITLE:    Integrating gene annotation with orthology inference at scale
+:BTYPE:    article
+:CUSTOM_ID: Kirilenko_2023
+:VOLUME:   380
+:ISSN:     1095-9203
+:URL:      http://dx.doi.org/10.1126/science.abn3107
+:DOI:      10.1126/science.abn3107
+:NUMBER:   6643
+:JOURNAL:  Science
+:PUBLISHER: American Association for the Advancement of Science (AAAS)
+:AUTHOR:   Kirilenko, Bogdan M. and Munegowda, Chetan and Osipova, Ekaterina and Jebb, David and Sharma, Virag and Blumer, Moritz and Morales, Ariadna E. and Ahmed, Alexis-Walid and Kontopoulos, Dimitrios-Georgios and Hilgers, Leon and Lindblad-Toh, Kerstin and Karlsson, Elinor K. and Hiller, Michael and Andrews, Gregory and Armstrong, Joel C. and Bianchi, Matteo and Birren, Bruce W. and Bredemeyer, Kevin R. and Breit, Ana M. and Christmas, Matthew J. and Clawson, Hiram and Damas, Joana and Di Palma, Federica and Diekhans, Mark and Dong, Michael X. and Eizirik, Eduardo and Fan, Kaili and Fanter, Cornelia and Foley, Nicole M. and Forsberg-Nilsson, Karin and Garcia, Carlos J. and Gatesy, John and Gazal, Steven and Genereux, Diane P. and Goodman, Linda and Grimshaw, Jenna and Halsey, Michaela K. and Harris, Andrew J. and Hickey, Glenn and Hiller, Michael and Hindle, Allyson G. and Hubley, Robert M. and Hughes, Graham M. and Johnson, Jeremy and Juan, David and Kaplow, Irene M. and Karlsson, Elinor K. and Keough, Kathleen C. and Kirilenko, Bogdan and Koepfli, Klaus-Peter and Korstian, Jennifer M. and Kowalczyk, Amanda and Kozyrev, Sergey V. and Lawler, Alyssa J. and Lawless, Colleen and Lehmann, Thomas and Levesque, Danielle L. and Lewin, Harris A. and Li, Xue and Lind, Abigail and Lindblad-Toh, Kerstin and Mackay-Smith, Ava and Marinescu, Voichita D. and Marques-Bonet, Tomas and Mason, Victor C. and Meadows, Jennifer R. S. and Meyer, Wynn K. and Moore, Jill E. and Moreira, Lucas R. and Moreno-Santillan, Diana D. and Morrill, Kathleen M. and Muntané, Gerard and Murphy, William J. and Navarro, Arcadi and Nweeia, Martin and Ortmann, Sylvia and Osmanski, Austin and Paten, Benedict and Paulat, Nicole S. and Pfenning, Andreas R. and Phan, BaDoi N.and Pollard, Katherine S. and Pratt, Henry E. and Ray, David A. and Reilly, Steven K. and Rosen, Jeb R. and Ruf, Irina and Ryan, Louise and Ryder, Oliver A. and Sabeti, Pardis C. and Schäffer, Daniel E. and Serres, Aitor and Shapiro, Beth and Smit, Arian F. A. and Springer, Mark and Srinivasan, Chaitanya and Steiner, Cynthia and Storer, Jessica M. and Sullivan, Kevin A. M. and Sullivan, Patrick F. and Sundström, Elisabeth and Supple, Megan A. and Swofford, Ross and Talbot, Joy-El and Teeling, Emma and Turner-Maier, Jason and Valenzuela, Alejandro and Wagner, Franziska and Wallerman, Ola and Wang, Chao and Wang, Juehan and Weng, Zhiping and Wilder, Aryn P. and Wirthlin, Morgan E. and Xue, James R. and Zhang, Xiaomeng
+:YEAR:     2023
+:MONTH:    apr
+:END:
+**** TODO Systematic analysis of paralogous regions in 41,755 exomes uncovers clinically relevant variation
+SCHEDULED: <2024-07-23 Tue>
+:PROPERTIES:
+:TITLE:    Systematic analysis of paralogous regions in 41,755 exomes uncovers clinically relevant variation
+:BTYPE:    article
+:CUSTOM_ID: steyaert2023systematic
+:AUTHOR:   Wouter Steyaert and Lonneke Haer-Wigman and Rolph Pfundt and Debby Hellebrekers and Marloes Steehouwer and Juliet Hampstead and Elke de Boer and Alexander Stegmann and Helger Yntema and Erik-Jan Kamsteeg and Han Brunner and Alexander Hoischen and Christian Gilissen
+:JOURNAL:  Nature Communications
+:YEAR:     2023
+:VOLUME:   14
+:NUMBER:   1
+:PAGES:    6845
+:DOI:      10.1038/s41467-023-42531-9
+:URL:      http://dx.doi.org/10.1038/s41467-023-42531-9
+:END:
+
 * Facebook
 :PROPERTIES:
 :CATEGORY: facebook
@@ -230,9 +395,9 @@ Méthode
   - [X] attribute disclore
   - [X] completion
 
-A replacer "Utilisation de données HapMap + généalgique + données génotype et phénotype -> retrouve lignage par rapport lignée fondatrice"
-
-** DONE Actionable genotypes and their association with life span in Iceland
+A replacer "Utilisation de données HapMap + généalogique + données génotype et phénotype -> retrouve lignage par rapport lignée fondatrice"
+** Bibliographie générale
+*** DONE Actionable genotypes and their association with life span in Iceland
 CLOSED: [2024-07-12 ven. 15:01]
 :PROPERTIES:
 :TITLE:    Actionable genotypes and their association with life span in Iceland
@@ -247,8 +412,7 @@ CLOSED: [2024-07-12 ven. 15:01]
 :PUBLISHER: Mass Medical Soc
 :END:
 
-
-** DONE Addressing Beacon re-identification attacks: quantification and mitigation of privacy risks :identity_tracing:
+*** DONE Addressing Beacon re-identification attacks: quantification and mitigation of privacy risks :identity_tracing:
 CLOSED: [2024-07-10 mer. 14:56]
 :PROPERTIES:
 :TITLE:    Addressing Beacon re-identification attacks: quantification and mitigation of privacy risks
@@ -263,7 +427,7 @@ CLOSED: [2024-07-10 mer. 14:56]
 :PUBLISHER: Oxford University Press
 :END:
 
-** DONE Addressing the concerns of the lacks family: quantification of kin genomic privacy
+*** DONE Addressing the concerns of the lacks family: quantification of kin genomic privacy
 CLOSED: [2024-07-11 Thu 19:49]
 :PROPERTIES:
 :TITLE:    Addressing the concerns of the lacks family: quantification of kin genomic privacy
@@ -275,7 +439,7 @@ CLOSED: [2024-07-11 Thu 19:49]
 :YEAR:     2013
 :END:
 
-** DONE An Inference Attack on Genomic Data Using Kinship, Complex Correlations, and Phenotype Information
+*** DONE An Inference Attack on Genomic Data Using Kinship, Complex Correlations, and Phenotype Information
 CLOSED: [2024-07-11 Thu 20:17]
 :PROPERTIES:
 :TITLE:    An Inference Attack on Genomic Data Using Kinship, Complex Correlations, and Phenotype Information
@@ -291,7 +455,7 @@ CLOSED: [2024-07-11 Thu 20:17]
 :URL:      http://dx.doi.org/10.1109/TCBB.2017.2709740
 :END:
 
-** DONE Assessing transcriptomic reidentification risks using discriminative sequence models
+*** DONE Assessing transcriptomic reidentification risks using discriminative sequence models
 CLOSED: [2024-07-12 ven. 18:03] SCHEDULED: <2024-07-11 jeu.>
 :PROPERTIES:
 :TITLE:    Assessing transcriptomic reidentification risks using discriminative sequence models
@@ -307,7 +471,7 @@ CLOSED: [2024-07-12 ven. 18:03] SCHEDULED: <2024-07-11 jeu.>
 :URL:      http://dx.doi.org/10.1101/gr.277699.123
 :END:
 Mise à jour des algorithme + coût
-** DONE Bayesian method to predict individual SNP genotypes from gene expression data
+*** DONE Bayesian method to predict individual SNP genotypes from gene expression data
 CLOSED: [2024-07-12 ven. 14:31]
 :PROPERTIES:
 :TITLE:    Bayesian method to predict individual SNP genotypes from gene expression data
@@ -323,7 +487,7 @@ CLOSED: [2024-07-12 ven. 14:31]
 :URL:  https://www.nature.com/articles/ng.2248
 :END:
 
-** KILL Data Sharing Under the General Data Protection Regulation
+*** KILL Data Sharing Under the General Data Protection Regulation
 CLOSED: [2024-07-12 ven. 15:17] SCHEDULED: <2024-07-11 jeu.>
 :PROPERTIES:
 :TITLE:    Data Sharing Under the General Data Protection Regulation
@@ -341,7 +505,7 @@ CLOSED: [2024-07-12 ven. 15:17] SCHEDULED: <2024-07-11 jeu.>
 Trop général, pas d'apport ("il faut harmoziser")
 Mais 2 liens intéressants
 
-** DONE De-anonymizing genomic databases using phenotypic traits
+*** DONE De-anonymizing genomic databases using phenotypic traits
 CLOSED: [2024-07-11 jeu. 11:38] SCHEDULED: <2024-07-11 jeu.>
 :PROPERTIES:
 :TITLE:    De-anonymizing genomic databases using phenotypic traits
@@ -355,7 +519,7 @@ CLOSED: [2024-07-11 jeu. 11:38] SCHEDULED: <2024-07-11 jeu.>
 :YEAR:     2015
 :URL:      https://hal.science/hal-01151960/file/Humbert2015PETS.pdf
 :END:
-** DONE Detection of sharing by descent, long-range phasing and haplotype imputation
+*** DONE Detection of sharing by descent, long-range phasing and haplotype imputation
 CLOSED: [2024-07-11 Thu 21:17]
 :PROPERTIES:
 :TITLE:    Detection of sharing by descent, long-range phasing and haplotype imputation
@@ -371,7 +535,7 @@ CLOSED: [2024-07-11 Thu 21:17]
 :URL:      http://dx.doi.org/10.1038/ng.216
 :END:
 
-** DONE Deterministic identification of specific individuals from GWAS results :attribute_disclosure:
+*** DONE Deterministic identification of specific individuals from GWAS results :attribute_disclosure:
 CLOSED: [2024-07-11 Thu 21:18]
 :PROPERTIES:
 :TITLE:    Deterministic identification of specific individuals from GWAS results
@@ -387,7 +551,7 @@ CLOSED: [2024-07-11 Thu 21:18]
 :URL:      http://dx.doi.org/10.1093/bioinformatics/btv018
 :END:
 
-** DONE [#A] Ensuring privacy and security of genomic data and functionalities
+*** DONE [#A] Ensuring privacy and security of genomic data and functionalities
 CLOSED: [2024-07-11 Thu 21:17]
 :PROPERTIES:
 :TITLE:    Ensuring privacy and security of genomic data and functionalities
@@ -407,7 +571,7 @@ CLOSED: [2024-07-11 Thu 21:17]
 :END:
 Suite d'erlich2014 ?
 
-** DONE Epigenome data release: a participant-centered approach to privacy protection
+*** DONE Epigenome data release: a participant-centered approach to privacy protection
 CLOSED: [2024-07-09 mar. 14:57] SCHEDULED: <2024-07-09 mar.>
 :PROPERTIES:
 :TITLE:    Epigenome data release: a participant-centered approach to privacy protection
@@ -429,7 +593,7 @@ CLOCK: [2024-07-09 mar. 14:33]--[2024-07-09 mar. 14:57] =>  0:24
 - RNA: complexe pour retrouver
 - SNPs visible dans épigénétique mais on peut en masquer une bonne partie
 
-** DONE Estimating the success of re-identifications in incomplete datasets using generative models
+*** DONE Estimating the success of re-identifications in incomplete datasets using generative models
 CLOSED: [2024-07-12 ven. 15:36]
 :PROPERTIES:
 :TITLE:    Estimating the success of re-identifications in incomplete datasets using generative models
@@ -445,13 +609,12 @@ CLOSED: [2024-07-12 ven. 15:36]
 :URL: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6650473/
 :END:
 
-** DONE Ethical implications of epigenetics in the era of personalized medicine
+*** DONE Ethical implications of epigenetics in the era of personalized medicine
 CLOSED: <2024-07-09 mar. 13:46>
-SCHEDULED: <2024-07-09 mar.>
 :PROPERTIES:
 :TITLE:    Ethical implications of epigenetics in the era of personalized medicine
 :BTYPE:    article
-:CUSTOM_ID: santaló22:_ethic
+:CUSTOM_ID: santalo2022ethic
 :AUTHOR:   Josep Santaló and María Berdasco
 :JOURNAL:  Clinical Epigenetics
 :YEAR:     2022
@@ -468,10 +631,7 @@ CLOCK: [2024-07-09 mar. 11:20]--[2024-07-09 mar. 11:26] =>  0:06
 :END:
 Seule partie intéressante : filtrer site SNP et renvoie vers [cite:@dyke2015epigenome]
 
-**
-
-
-** DONE Investigative genetic genealogy: Current methods, knowledge and practice
+*** DONE Investigative genetic genealogy: Current methods, knowledge and practice
 CLOSED: [2024-07-12 ven. 18:11]
 :PROPERTIES:
 :TITLE:    Investigative genetic genealogy: Current methods, knowledge and practice
@@ -486,7 +646,7 @@ CLOSED: [2024-07-12 ven. 18:11]
 :END:
 Revue récente
 
-** KILL Privacy challenges and research opportunities for genomic data sharing
+*** DONE Privacy challenges and research opportunities for genomic data sharing
 CLOSED: [2024-07-12 ven. 18:16]
 :PROPERTIES:
 :TITLE:    Privacy challenges and research opportunities for genomic data sharing
@@ -498,10 +658,10 @@ CLOSED: [2024-07-12 ven. 18:16]
 :NUMBER:   7
 :PAGES:    646--654
 :YEAR:     2020
+:URL:  https://www.nature.com/articles/s41588-020-0651-0
 :PUBLISHER: Nature Publishing Group US New York
 :END:
-Non lu, ne semble pas apporter grand-chose
-** KILL Genetic data are not always personal—disaggregating the identifiability and sensitivity of genetic data
+*** KILL Genetic data are not always personal—disaggregating the identifiability and sensitivity of genetic data
 CLOSED: [2024-07-12 ven. 18:15]
 :PROPERTIES:
 :TITLE:    Genetic data are not always personal—disaggregating the identifiability and sensitivity of genetic data
@@ -516,7 +676,7 @@ CLOSED: [2024-07-12 ven. 18:15]
 :PUBLISHER: Oxford University Press
 :END:
 
-** KILL Identification of anonymous DNA using genealogical triangulation
+*** KILL Identification of anonymous DNA using genealogical triangulation
 CLOSED: [2024-07-12 ven. 18:13]
 :PROPERTIES:
 :TITLE:    Identification of anonymous DNA using genealogical triangulation
@@ -529,12 +689,12 @@ CLOSED: [2024-07-12 ven. 18:13]
 :PUBLISHER: Cold Spring Harbor Laboratory
 :END:
 Pas eu le temps de lire mais juste un algo de plus
-** KILL [#B] https://www.cell.com/ajhg/fulltext/S0002-9297(15)00200-1
+*** KILL [#B] https://www.cell.com/ajhg/fulltext/S0002-9297(15)00200-1
 CLOSED: [2024-07-12 ven. 18:12]
 impact méthylation prédiction IMC
-** KILL [#B] https://www.sciencedirect.com/science/article/pii/S1872497321000132
+*** KILL [#B] https://www.sciencedirect.com/science/article/pii/S1872497321000132
 CLOSED: [2024-07-12 ven. 18:17]
-** DONE Identification of individuals by trait prediction using whole-genome sequencing data
+*** DONE Identification of individuals by trait prediction using whole-genome sequencing data
 CLOSED: [2024-07-11 Thu 21:18] SCHEDULED: <2024-07-11 jeu.>
 :PROPERTIES:
 :TITLE:    Identification of individuals by trait prediction using whole-genome sequencing data
@@ -550,7 +710,7 @@ CLOSED: [2024-07-11 Thu 21:18] SCHEDULED: <2024-07-11 jeu.>
 :URL:   https://www.pnas.org/doi/full/10.1073/pnas.1711125114
 :END:
 
-** KILL Identifying disease-causing mutations with privacy protection
+*** KILL Identifying disease-causing mutations with privacy protection
 CLOSED: [2024-07-12 ven. 18:18] SCHEDULED: <2024-07-11 jeu.>
 :PROPERTIES:
 :TITLE:    Identifying disease-causing mutations with privacy protection
@@ -566,7 +726,7 @@ CLOSED: [2024-07-12 ven. 18:18] SCHEDULED: <2024-07-11 jeu.>
 :URL:      http://dx.doi.org/10.1093/bioinformatics/btaa641
 :END:
 Mitigation, pas le scope
-** DONE Identifying Participants in the Personal Genome Project by Name (A Re-identification Experiment) :identity_tracing:identity_tracing:
+*** DONE Identifying Participants in the Personal Genome Project by Name (A Re-identification Experiment) :identity_tracing:identity_tracing:
 CLOSED: [2024-07-10 mer. 11:16]
 :PROPERTIES:
 :TITLE:    Identifying Participants in the Personal Genome Project by Name (A Re-identification Experiment)
@@ -580,7 +740,7 @@ CLOSED: [2024-07-10 mer. 11:16]
 :URL:      https://arxiv.org/abs/1304.7605
 :END:
 
-** DONE Identifying Personal Genomes by Surname Inference :identity_tracing:
+*** DONE Identifying Personal Genomes by Surname Inference :identity_tracing:
 CLOSED: [2024-07-09 mar. 17:00] SCHEDULED: <2024-07-09 mar.>
 :PROPERTIES:
 :TITLE:    Identifying Personal Genomes by Surname Inference
@@ -596,7 +756,7 @@ CLOSED: [2024-07-09 mar. 17:00] SCHEDULED: <2024-07-09 mar.>
 :URL:      http://dx.doi.org/10.1126/science.1229566
 :END:
 
-** DONE Identity inference of genomic data using long-range familial searches :identity_tracing:
+*** DONE Identity inference of genomic data using long-range familial searches :identity_tracing:
 CLOSED: [2024-07-10 mer. 17:50] SCHEDULED: <2024-07-09 mar.>
 :PROPERTIES:
 :TITLE:    Identity inference of genomic data using long-range familial searches
@@ -612,7 +772,7 @@ CLOSED: [2024-07-10 mer. 17:50] SCHEDULED: <2024-07-09 mar.>
 :URL:      http://dx.doi.org/10.1126/science.aau4832
 :END:
 
-** DONE Inference Attacks and Controls on Genotypes and Phenotypes for Individual Genomic Data
+*** DONE Inference Attacks and Controls on Genotypes and Phenotypes for Individual Genomic Data
 CLOSED: [2024-07-11 Thu 20:29]
 :PROPERTIES:
 :TITLE:    Inference Attacks and Controls on Genotypes and Phenotypes for Individual Genomic Data
@@ -628,7 +788,7 @@ CLOSED: [2024-07-11 Thu 20:29]
 :URL:      http://dx.doi.org/10.1109/TCBB.2018.2810180
 :END:
 
-** DONE Inferential Genotyping of Y Chromosomes in Latter-Day Saints Founders and Comparison to Utah Samples in the HapMap Project :surname_inference:
+*** DONE Inferential Genotyping of Y Chromosomes in Latter-Day Saints Founders and Comparison to Utah Samples in the HapMap Project :surname_inference:
 CLOSED: [2024-07-09 mar. 15:33] SCHEDULED: <2024-07-09 mar.>
 :PROPERTIES:
 :TITLE:    Inferential Genotyping of Y Chromosomes in Latter-Day Saints Founders and Comparison to Utah Samples in the HapMap Project
@@ -647,7 +807,7 @@ CLOSED: [2024-07-09 mar. 15:33] SCHEDULED: <2024-07-09 mar.>
 :PAGES:    251–258
 :END:
 Nom de familles à partir de 30 STR du chrY, voir[cite:@gymrek2013] pour suite
-** DONE Major flaws in “Identification of individuals by trait prediction using whole-genome sequencing data”
+*** DONE Major flaws in “Identification of individuals by trait prediction using whole-genome sequencing data”
 CLOSED: [2024-07-11 jeu. 13:54]
 :PROPERTIES:
 :TITLE:    Major flaws in “Identification of individuals by trait prediction using whole-genome sequencing data”
@@ -661,8 +821,8 @@ CLOSED: [2024-07-11 jeu. 13:54]
 :URL:   https://www.biorxiv.org/content/biorxiv/early/2017/09/07/185330.1.full.pdf
 :END:
 
-** TODO On inferring presence of an individual in a mixture: a Bayesian approach
-SCHEDULED: <2024-07-11 jeu.>
+*** KILL On inferring presence of an individual in a mixture: a Bayesian approach
+CLOSED: [2024-07-15 lun. 11:14] SCHEDULED: <2024-07-11 jeu.>
 :PROPERTIES:
 :TITLE:    On inferring presence of an individual in a mixture: a Bayesian approach
 :BTYPE:    article
@@ -677,7 +837,7 @@ SCHEDULED: <2024-07-11 jeu.>
 :URL:      http://dx.doi.org/10.1093/biostatistics/kxq035
 :END:
 
-** KILL Assessing and managing risk when sharing aggregate genetic variant data
+*** KILL Assessing and managing risk when sharing aggregate genetic variant data
 CLOSED: [2024-07-12 ven. 17:59]
 :PROPERTIES:
 :TITLE:    Assessing and managing risk when sharing aggregate genetic variant data
@@ -693,7 +853,7 @@ CLOSED: [2024-07-12 ven. 17:59]
 :END:
 Rien de plus
 
-** DONE On Jim Watson's APOE status: genetic information is hard to hide
+*** DONE On Jim Watson's APOE status: genetic information is hard to hide
 CLOSED: [2024-07-12 ven. 15:04]
 :PROPERTIES:
 :TITLE:    On Jim Watson's APOE status: genetic information is hard to hide
@@ -708,7 +868,7 @@ CLOSED: [2024-07-12 ven. 15:04]
 :PUBLISHER: Nature Publishing Group
 :END:
 
-** DONE Privacy in pharmacogenetics: An $\{$End-to-End$\}$ case study of personalized warfarin dosing
+*** DONE Privacy in pharmacogenetics: An $\{$End-to-End$\}$ case study of personalized warfarin dosing
 CLOSED: [2024-07-11 jeu. 15:37] SCHEDULED: <2024-07-11 jeu.>
 :PROPERTIES:
 :TITLE:    Privacy in pharmacogenetics: An $\{$End-to-End$\}$ case study of personalized warfarin dosing
@@ -721,7 +881,7 @@ CLOSED: [2024-07-11 jeu. 15:37] SCHEDULED: <2024-07-11 jeu.>
 :URL:   https://www.usenix.org/system/files/conference/usenixsecurity14/sec14-paper-fredrikson-privacy.pdf
 :END:
 
-** DONE [#B] Privacy in the Genomic Era
+*** DONE [#B] Privacy in the Genomic Era
 CLOSED: [2024-07-12 ven. 17:37] SCHEDULED: <2024-07-11 jeu.>
 :PROPERTIES:
 :TITLE:    Privacy in the Genomic Era
@@ -740,7 +900,7 @@ CLOSED: [2024-07-12 ven. 17:37] SCHEDULED: <2024-07-11 jeu.>
 :PAGES:    1–44
 :END:
 2-3 citations en plus des autres
-** DONE Privacy risks from genomic data-sharing beacons :identity_tracing:
+*** DONE Privacy risks from genomic data-sharing beacons :identity_tracing:
 CLOSED: [2024-07-10 mer. 11:50]
 :PROPERTIES:
 :TITLE:    Privacy risks from genomic data-sharing beacons
@@ -755,7 +915,7 @@ CLOSED: [2024-07-10 mer. 11:50]
 :PUBLISHER: Elsevier
 :END:
 
-** DONE Quantifying Interdependent Risks in Genomic Privacy
+*** DONE Quantifying Interdependent Risks in Genomic Privacy
 CLOSED: [2024-07-11 Thu 20:04]
 :PROPERTIES:
 :TITLE:    Quantifying Interdependent Risks in Genomic Privacy
@@ -771,7 +931,7 @@ CLOSED: [2024-07-11 Thu 20:04]
 :URL:      http://dx.doi.org/10.1145/3035538
 :END:
 
-** DONE Re-identification of individuals in genomic data-sharing beacons via allele inference :identity_tracing:
+*** DONE Re-identification of individuals in genomic data-sharing beacons via allele inference :identity_tracing:
 CLOSED: [2024-07-10 mer. 16:37]
 :PROPERTIES:
 :TITLE:    Re-identification of individuals in genomic data-sharing beacons via allele inference
@@ -785,7 +945,7 @@ CLOSED: [2024-07-10 mer. 16:37]
 :YEAR:     2019
 :PUBLISHER: Oxford University Press
 :END:
-** KILL Resolving Individuals Contributing Trace Amounts of DNA to Highly Complex Mixtures Using High-Density SNP Genotyping Microarrays
+*** KILL Resolving Individuals Contributing Trace Amounts of DNA to Highly Complex Mixtures Using High-Density SNP Genotyping Microarrays
 CLOSED: [2024-07-11 Thu 21:19] SCHEDULED: <2024-07-11 jeu.>
 :PROPERTIES:
 :TITLE:    Resolving Individuals Contributing Trace Amounts of DNA to Highly Complex Mixtures Using High-Density SNP Genotyping Microarrays
@@ -801,7 +961,7 @@ CLOSED: [2024-07-11 Thu 21:19] SCHEDULED: <2024-07-11 jeu.>
 :URL:      http://dx.doi.org/10.1371/journal.pgen.1000167
 :END:
 Superseded by
-** DONE Simple demographics often identify people uniquely
+*** DONE Simple demographics often identify people uniquely
 CLOSED: [2024-07-12 ven. 17:25]
 :PROPERTIES:
 :TITLE:    Simple demographics often identify people uniquely
@@ -815,7 +975,7 @@ CLOSED: [2024-07-12 ven. 17:25]
 :YEAR:     2000
 :END:
 
-** DONE [#A] Routes for breaching and protecting genetic privacy :review:
+*** DONE [#A] Routes for breaching and protecting genetic privacy :review:
 CLOSED: [2024-07-09 mar. 16:35] SCHEDULED: <2024-07-09 mar.>
 :PROPERTIES:
 :TITLE:    Routes for breaching and protecting genetic privacy
@@ -832,7 +992,7 @@ CLOSED: [2024-07-09 mar. 16:35] SCHEDULED: <2024-07-09 mar.>
 :END:
 Revue des différentes stratégie + algorithme
 
-** DONE SNPs for a universal individual identification panel
+*** DONE SNPs for a universal individual identification panel
 CLOSED: [2024-07-12 ven. 09:44]
 :PROPERTIES:
 :TITLE:    SNPs for a universal individual identification panel
@@ -844,4 +1004,322 @@ CLOSED: [2024-07-12 ven. 09:44]
 :PAGES:    315--324
 :YEAR:     2010
 :PUBLISHER: Springer
+:END:
+** Décipher
+*** DONE Framework ethique : inutile https://www.deciphergenomics.org/files/pdfs/decipher_ethical_framework.pdf
+CLOSED: [2024-07-15 lun. 16:13]
+*** DONE DECIPHER: database of chromosomal imbalance and phenotype in humans using ensembl resources
+CLOSED: [2024-07-15 lun. 16:03]
+:PROPERTIES:
+:TITLE:    DECIPHER: database of chromosomal imbalance and phenotype in humans using ensembl resources
+:BTYPE:    article
+:CUSTOM_ID: firth2009decipher
+:AUTHOR:   Firth, Helen V and Richards, Shola M and Bevan, A Paul and Clayton, Stephen and Corpas, Manuel and Rajan, Diana and Van Vooren, Steven and Moreau, Yves and Pettett, Roger M and Carter, Nigel P
+:JOURNAL:  The American Journal of Human Genetics
+:VOLUME:   84
+:NUMBER:   4
+:PAGES:    524--533
+:YEAR:     2009
+:PUBLISHER: Elsevier
+:END:
+inutile sur l'aspec réglèmentaire
+*** DONE The GDPR and genomic data
+CLOSED: [2024-07-15 lun. 16:43]
+:PROPERTIES:
+:TITLE:    The GDPR and genomic data
+:CUSTOM_ID: mitchell2018gpdr
+:BTYPE:  article 
+:AUTHOR:  Mitchell, Colin  and Ordish, Johan and Johnson, Emma and Brigden, Tanya  and Hall, Alison
+:YEAR:     2009
+:END:
+** Maladies rares
+*** TODO The risk of re-identification versus the need to identify individuals in rare disease research
+SCHEDULED: <2024-07-23 Tue>
+:PROPERTIES:
+:TITLE:    The risk of re-identification versus the need to identify individuals in rare disease research
+:BTYPE:    article
+:CUSTOM_ID: hansson2016risk
+:AUTHOR:   Hansson, Mats G and Lochm{\"u}ller, Hanns and Riess, Olaf and Schaefer, Franz and Orth, Michael and Rubinstein, Yaffa and Molster, Caron and Dawkins, Hugh and Taruscio, Domenica and Posada, Manuel and others
+:JOURNAL:  European Journal of Human Genetics
+:VOLUME:   24
+:NUMBER:   11
+:PAGES:    1553--1558
+:YEAR:     2016
+:PUBLISHER: Nature Publishing Group
+:END:
+*** Prévalence maladies rare
+**** KILL https://www.nature.com/articles/nrg.2017.116
+CLOSED: [2024-07-18 Thu 14:55]
+Généralité sur processus génétique
+**** Stats
+****** DONE Prevalence and practice for rare diseases in primary care: a national cross-sectional study in the USA
+CLOSED: [2024-07-18 Thu 17:27] SCHEDULED: <2024-07-18 Thu>
+:PROPERTIES:
+:TITLE:    Prevalence and practice for rare diseases in primary care: a national cross-sectional study in the USA
+:BTYPE:    article
+:CUSTOM_ID: Jo_2019
+:VOLUME:   9
+:ISSN:     2044-6055
+:URL:      http://dx.doi.org/10.1136/bmjopen-2018-027248
+:DOI:      10.1136/bmjopen-2018-027248
+:NUMBER:   4
+:JOURNAL:  BMJ Open
+:PUBLISHER: BMJ
+:AUTHOR:   Jo, Ara and Larson, Samantha and Carek, Peter and Peabody, Michael R and Peterson, Lars E and Mainous, Arch G
+:YEAR:     2019
+:MONTH:    apr
+:PAGES:    e027248
+:END:
+****** DONE A Systematic Survey of Loss-of-Function Variants in Human Protein-Coding Genes
+CLOSED: [2024-07-19 Fri 17:27] SCHEDULED: <2024-07-19 Fri>
+:PROPERTIES:
+:TITLE:    A Systematic Survey of Loss-of-Function Variants in Human Protein-Coding Genes
+:BTYPE:    article
+:CUSTOM_ID: macarthur2012systematic
+:AUTHOR:   Daniel G. MacArthur and Suganthi Balasubramanian and Adam Frankish and Ni Huang and James Morris and Klaudia Walter and Luke Jostins and Lukas Habegger and Joseph K. Pickrell and Stephen B. Montgomery and Cornelis A. Albers and Zhengdong D. Zhang and Donald F. Conrad and Gerton Lunter and Hancheng Zheng and Qasim Ayub and Mark A. DePristo and Eric Banks and Min Hu and Robert E. Handsaker and Jeffrey A. Rosenfeld and Menachem Fromer and Mike Jin and Xinmeng Jasmine Mu and Ekta Khurana and Kai Ye and Mike Kay and Gary Ian Saunders and Marie-Marthe Suner and Toby Hunt and If H. A. Barnes and Clara Amid and Denise R. Carvalho-Silva and Alexandra H. Bignell and Catherine Snow and Bryndis Yngvadottir and Suzannah Bumpstead and David N. Cooper and Yali Xue and Irene Gallego Romero and Jun Wang and Yingrui Li and Richard A. Gibbs and Steven A. McCarroll and Emmanouil T. Dermitzakis and Jonathan K. Pritchard and Jeffrey C. Barrett and Jennifer Harrow and Matthew E. Hurles and Mark B. Gerstein and Chris Tyler-Smith and 1000 Genomes Project Consortium
+:JOURNAL:  Science
+:YEAR:     2012
+:VOLUME:   335
+:NUMBER:   6070
+:PAGES:    823-828
+:DOI:      10.1126/science.1215040
+:URL:      http://dx.doi.org/10.1126/science.1215040
+:END:
+
+****** DONE Estimating the number of diseases – the concept of rare, ultra-rare, and hyper-rare
+CLOSED: [2024-07-19 Fri 17:28] SCHEDULED: <2024-07-18 Thu>
+:PROPERTIES:
+:TITLE:    Estimating the number of diseases – the concept of rare, ultra-rare, and hyper-rare
+:BTYPE:    article
+:CUSTOM_ID: smith2022estimating
+:VOLUME:   25
+:ISSN:     2589-0042
+:URL:      http://dx.doi.org/10.1016/j.isci.2022.104698
+:DOI:      10.1016/j.isci.2022.104698
+:NUMBER:   8
+:JOURNAL:  iScience
+:PUBLISHER: Elsevier BV
+:AUTHOR:   Smith, C. I. Edvard and Bergman, Peter and Hagey, Daniel W.
+:YEAR:     2022
+:MONTH:    aug
+:PAGES:    104698
+:END:
+
+****** DONE How many rare diseases are there?
+CLOSED: [2024-07-19 Fri 17:24] SCHEDULED: <2024-07-19 Fri>
+:PROPERTIES:
+:TITLE:    How many rare diseases are there?
+:BTYPE:    article
+:CUSTOM_ID: haendel2019how
+:AUTHOR:   Melissa Haendel and Nicole Vasilevsky and Deepak Unni and Cristian Bologa and Nomi Harris and Heidi Rehm and Ada Hamosh and Gareth Baynam and Tudor Groza and Julie McMurry and Hugh Dawkins and Ana Rath and Courtney Thaxton and Giovanni Bocci and Marcin P. Joachimiak and Sebastian Köhler and Peter N. Robinson and Chris Mungall and Tudor I. Oprea
+:JOURNAL:  Nature Reviews Drug Discovery
+:YEAR:     2019
+:VOLUME:   19
+:NUMBER:   2
+:PAGES:    77-78
+:DOI:      10.1038/d41573-019-00180-y
+:URL:      http://dx.doi.org/10.1038/d41573-019-00180-y
+:END:
+****** KILL Prévalence française revoir avec Julien
+CLOSED: [2024-07-22 Mon 17:05] SCHEDULED: <2024-07-22 Mon>
+****** DONE BNDMR
+CLOSED: [2024-07-19 Fri 15:46]
+BNDMR https://www.bndmr.fr/publications/nombre-de-cas-par-mr/
+
+****** DONE Orphadata: épidémiologie  (XML)
+CLOSED: [2024-07-19 Fri 09:38]
+:PROPERTIES:
+:TITLE:    Epidemiology of Rare Disease
+:BTYPE:   misc
+:CUSTOM_ID: orphadata2024epidemio
+:URL: https://www.orphadata.com/epidemiology/
+:AUTHOR:   Orphanet
+:YEAR:     2024
+:MONTH:    jul
+:END:
+****** DONE The HPO - ORDO ontological module
+CLOSED: [2024-07-19 Fri 14:59]
+:PROPERTIES:
+:TITLE: The HPO - ORDO ontological module
+:BTYPE:   misc
+:CUSTOM_ID: hoomm2024ordo
+:URL: https://www.orphadata.com/hoom/
+:AUTHOR:   Orphanet
+:YEAR:     2024
+:MONTH:    jul
+:END:
+****** DONE Orphadata : fréquence phénotypes associé
+CLOSED: [2024-07-19 Fri 12:19]
+:PROPERTIES:
+:TITLE: Phenotypes Associated with Rare Disorders
+:BTYPE:   misc
+:CUSTOM_ID: orphadata2024phenotype
+:URL: https://www.orphadata.com/phenotypes/
+:AUTHOR:   Orphanet
+:YEAR:     2024
+:MONTH:    jul
+:END:
+****** DONE Orphadata : zygosite, age de début
+CLOSED: [2024-07-19 Fri 12:25]
+:PROPERTIES:
+:TITLE: Natural History of Rare Diseases
+:BTYPE:   misc
+:CUSTOM_ID: orphadata2024natural
+:URL: https://www.orphadata.com/phenotypes/
+:AUTHOR:   Orphanet
+:YEAR:     2024
+:MONTH:    jul
+:END:
+https://www.orphadata.com/natural-history/
+****** DONE Orphanet: prevalence et incidence : biblio
+CLOSED: [2024-07-19 Fri 09:42]
+:PROPERTIES:
+:TITLE: Prevalence and incidence of rare diseases: Bibliographic data
+:BTYPE:   misc
+:CUSTOM_ID: orphanet2023prevalence
+:URL: https://www.orpha.net/pdfs/orphacom/cahiers/docs/GB/Prevalence_of_rare_diseases_by_alphabetical_list.pdf
+:AUTHOR:   Orphanet
+:YEAR:     2023
+:MONTH:    nov
+:END:
+
+****** DONE The burden of rare diseases
+CLOSED: [2024-07-18 Thu 17:34] SCHEDULED: <2024-07-18 Thu>
+:PROPERTIES:
+:TITLE:    The burden of rare diseases
+:BTYPE:    article
+:CUSTOM_ID: ferreira2019burden
+:VOLUME:   179
+:ISSN:     1552-4833
+:URL:      http://dx.doi.org/10.1002/ajmg.a.61124
+:DOI:      10.1002/ajmg.a.61124
+:NUMBER:   6
+:JOURNAL:  American Journal of Medical Genetics Part A
+:PUBLISHER: Wiley
+:AUTHOR:   Ferreira, Carlos R.
+:YEAR:     2019
+:MONTH:    mar
+:PAGES:    885–892
+:END:
+
+****** KILL Frequency-based rare diagnoses as a novel and accessible approach for studying rare diseases in large datasets: a cross-sectional study
+CLOSED: [2024-07-18 Thu 14:45]
+:PROPERTIES:
+:TITLE:    Frequency-based rare diagnoses as a novel and accessible approach for studying rare diseases in large datasets: a cross-sectional study
+:BTYPE:    article
+:CUSTOM_ID: troster2023frequence
+:VOLUME:   23
+:ISSN:     1471-2288
+:URL:      http://dx.doi.org/10.1186/s12874-023-01972-y
+:DOI:      10.1186/s12874-023-01972-y
+:NUMBER:   1
+:JOURNAL:  BMC Medical Research Methodology
+:PUBLISHER: Springer Science and Business Media LLC
+:AUTHOR:   Tröster, Thomas S. and von Wyl, Viktor and Beeler, Patrick E. and Dressel, Holger
+:YEAR:     2023
+:MONTH:    jun
+:END:
+
+****** DONE Estimating cumulative point prevalence of rare diseases: analysis of the Orphanet database
+CLOSED: [2024-07-19 Fri 15:05] SCHEDULED: <2024-07-18 Thu>
+:PROPERTIES:
+:TITLE:    Estimating cumulative point prevalence of rare diseases: analysis of the Orphanet database
+:BTYPE:    article
+:CUSTOM_ID: nguengang2019estimating
+:VOLUME:   28
+:ISSN:     1476-5438
+:URL:      http://dx.doi.org/10.1038/s41431-019-0508-0
+:DOI:      10.1038/s41431-019-0508-0
+:NUMBER:   2
+:JOURNAL:  European Journal of Human Genetics
+:PUBLISHER: Springer Science and Business Media LLC
+:AUTHOR:   Nguengang Wakap, Stéphanie and Lambert, Deborah M. and Olry, Annie and Rodwell, Charlotte and Gueydan, Charlotte and Lanneau, Valérie and Murphy, Daniel and Le Cam, Yann and Rath, Ana
+:YEAR:     2019
+:MONTH:    sep
+:PAGES:    165–173
+:END:
+**** Modèles
+****** DONE Determining the incidence of rare diseases
+CLOSED: [2024-07-18 Thu 17:09] SCHEDULED: <2024-07-18 Thu>
+:PROPERTIES:
+:TITLE:    Determining the incidence of rare diseases
+:BTYPE:    article
+:CUSTOM_ID: bainbridge2020determining
+:VOLUME:   139
+:ISSN:     1432-1203
+:URL:      http://dx.doi.org/10.1007/s00439-020-02135-5
+:DOI:      10.1007/s00439-020-02135-5
+:NUMBER:   5
+:JOURNAL:  Human Genetics
+:PUBLISHER: Springer Science and Business Media LLC
+:AUTHOR:   Bainbridge, Matthew N.
+:YEAR:     2020
+:MONTH:    feb
+:PAGES:    569–574
+:END:
+****** DONE Prevalence estimation for monogenic autosomal recessive diseases using population-based genetic data
+CLOSED: [2024-07-18 Thu 17:15] SCHEDULED: <2024-07-18 Thu>
+:PROPERTIES:
+:TITLE:    Prevalence estimation for monogenic autosomal recessive diseases using population-based genetic data
+:BTYPE:    article
+:CUSTOM_ID: schrodi2015prevalence
+:VOLUME:   134
+:ISSN:     1432-1203
+:URL:      http://dx.doi.org/10.1007/s00439-015-1551-8
+:DOI:      10.1007/s00439-015-1551-8
+:NUMBER:   6
+:JOURNAL:  Human Genetics
+:PUBLISHER: Springer Science and Business Media LLC
+:AUTHOR:   Schrodi, Steven J. and DeBarber, Andrea and He, Max and Ye, Zhan and Peissig, Peggy and Van Wormer, Jeffrey J. and Haws, Robert and Brilliant, Murray H. and Steiner, Robert D.
+:YEAR:     2015
+:MONTH:    apr
+:PAGES:    659–669
+:END:
+****** TODO Statistical methods for assessing the effects of de novo variants on birth defects
+:PROPERTIES:
+:TITLE:    Statistical methods for assessing the effects of de novo variants on birth defects
+:BTYPE:    article
+:CUSTOM_ID: xie2024statistical
+:VOLUME:   18
+:ISSN:     1479-7364
+:URL:      http://dx.doi.org/10.1186/s40246-024-00590-z
+:DOI:      10.1186/s40246-024-00590-z
+:NUMBER:   1
+:JOURNAL:  Human Genomics
+:PUBLISHER: Springer Science and Business Media LLC
+:AUTHOR:   Xie, Yuhan and Wu, Ruoxuan and Li, Hongyu and Dong, Weilai and Zhou, Geyu and Zhao, Hongyu
+:YEAR:     2024
+:MONTH:    mar
+:END:
+****** TODO A framework for the interpretation of de novo mutation in human disease
+:PROPERTIES:
+:TITLE:    A framework for the interpretation of de novo mutation in human disease
+:BTYPE:    article
+:CUSTOM_ID: samocha2014framework
+:AUTHOR:   Kaitlin E Samocha and Elise B Robinson and Stephan J Sanders and Christine Stevens and Aniko Sabo and Lauren M McGrath and Jack A Kosmicki and Karola Rehnström and Swapan Mallick and Andrew Kirby and Dennis P Wall and Daniel G MacArthur and Stacey B Gabriel and Mark DePristo and Shaun M Purcell and Aarno Palotie and Eric Boerwinkle and Joseph D Buxbaum and Edwin H Cook and Richard A Gibbs and Gerard D Schellenberg and James S Sutcliffe and Bernie Devlin and Kathryn Roeder and Benjamin M Neale and Mark J Daly
+:JOURNAL:  Nature Genetics
+:YEAR:     2014
+:VOLUME:   46
+:NUMBER:   9
+:PAGES:    944-950
+:DOI:      10.1038/ng.3050
+:URL:      http://dx.doi.org/10.1038/ng.3050
+:END:
+****** DONE Patterns and rates of exonic de novo mutations in autism spectrum disorders
+CLOSED: [2024-07-22 Mon 10:44]
+:PROPERTIES:
+:TITLE:    Patterns and rates of exonic de novo mutations in autism spectrum disorders
+:BTYPE:    article
+:CUSTOM_ID: neale2012patterns
+:VOLUME:   485
+:ISSN:     1476-4687
+:URL:      http://dx.doi.org/10.1038/nature11011
+:DOI:      10.1038/nature11011
+:NUMBER:   7397
+:JOURNAL:  Nature
+:PUBLISHER: Springer Science and Business Media LLC
+:AUTHOR:   Neale, Benjamin M. and Kou, Yan and Liu, Li and Ma’ayan, Avi and Samocha, Kaitlin E. and Sabo, Aniko and Lin, Chiao-Feng and Stevens, Christine and Wang, Li-San and Makarov, Vladimir and Polak, Paz and Yoon, Seungtai and Maguire, Jared and Crawford, Emily L. and Campbell, Nicholas G. and Geller, Evan T. and Valladares, Otto and Schafer, Chad and Liu, Han and Zhao, Tuo and Cai, Guiqing and Lihm, Jayon and Dannenfelser, Ruth and Jabado, Omar and Peralta, Zuleyma and Nagaswamy, Uma and Muzny, Donna and Reid, Jeffrey G. and Newsham, Irene and Wu, Yuanqing and Lewis, Lora and Han, Yi and Voight, Benjamin F. and Lim, Elaine and Rossin, Elizabeth and Kirby, Andrew and Flannick, Jason and Fromer, Menachem and Shakir, Khalid and Fennell, Tim and Garimella, Kiran and Banks, Eric and Poplin, Ryan and Gabriel, Stacey and DePristo, Mark and Wimbish, Jack R. and Boone, Braden E. and Levy, Shawn E. and Betancur, Catalina and Sunyaev, Shamil and Boerwinkle, Eric and Buxbaum, Joseph D. and Cook Jr, Edwin H. and Devlin, Bernie and Gibbs, Richard A. and Roeder, Kathryn and Schellenberg, Gerard D. and Sutcliffe, James S. and Daly, Mark J.
+:YEAR:     2012
+:MONTH:    apr
+:PAGES:    242–245
 :END:
