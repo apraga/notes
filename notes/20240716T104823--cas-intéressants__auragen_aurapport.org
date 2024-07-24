@@ -1,6 +1,6 @@
 #+title:      Cas intéressants
 #+date:       [2024-07-16 mar. 10:48]
-#+filetags:   :aurapport:
+#+filetags:   :aurapport:auragen:
 #+identifier: 20240716T104823
 
 

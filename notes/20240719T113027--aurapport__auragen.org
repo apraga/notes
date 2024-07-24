@@ -1,6 +1,6 @@
 #+title:      Aurapport
 #+date:       [2024-07-19 Fri 11:30]
-#+filetags:
+#+filetags:    :auragen:
 #+identifier: 20240719T113027
 
 [[denote:20240719T113108][Avertissement]]
