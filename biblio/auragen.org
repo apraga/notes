@@ -1033,7 +1033,7 @@ CLOSED: [2024-07-15 lun. 16:43]
 :YEAR:     2009
 :END:
 ** Maladies rares
-*** TODO The risk of re-identification versus the need to identify individuals in rare disease research
+*** STRT The risk of re-identification versus the need to identify individuals in rare disease research
 SCHEDULED: <2024-07-23 Tue>
 :PROPERTIES:
 :TITLE:    The risk of re-identification versus the need to identify individuals in rare disease research
@@ -1046,6 +1046,7 @@ SCHEDULED: <2024-07-23 Tue>
 :PAGES:    1553--1558
 :YEAR:     2016
 :PUBLISHER: Nature Publishing Group
+:URL:      https://www.nature.com/articles/ejhg201652
 :END:
 *** Prévalence maladies rare
 **** KILL https://www.nature.com/articles/nrg.2017.116

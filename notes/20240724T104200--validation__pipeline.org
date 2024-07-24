@@ -1,0 +1,7 @@
+#+title:      Validation
+#+date:       [2024-07-24 Wed 10:42]
+#+filetags:   :pipeline:auragen:
+#+identifier: 20240724T104200
+
+- SNV hap.py sur données gIAB
+- CNV: truvaria sur  Chaisson. et al., (2019): Multi-platform discovery of haplotype-resolved structural variation in human genomes

@@ -147,78 +147,104 @@ CLOSED: [2024-06-12 mer. 14:17] SCHEDULED: <2024-06-12 mer.>
 :CATEGORY: pseudogene
 :END:
 *** TODO Biblio
+*** TODO Tester en hg19
+SCHEDULED: <2024-07-24 Wed>
 *** TODO Porter script en hg19
   /Entered on/  [2024-05-21 mar. 11:07]
 ** Facebook
 :PROPERTIES:
 :CATEGORY: facebook
 :END:
-** WAIT Contact BM Knopper
+*** WAIT Contact BM Knopper
   /Entered on/  [2024-07-15 lun. 15:37]
-** WAIT Contact Heidi Howard (ESHGH, chaire éthique)
+*** WAIT Contact Heidi Howard (ESHGH, chaire éthique)
   /Entered on/  [2024-07-15 lun. 15:38]
-** DONE Chercher méthodologie decipher
+*** DONE Chercher méthodologie decipher
 CLOSED: [2024-07-16 mar. 09:52] SCHEDULED: <2024-07-16 mar.>
   /Entered on/  [2024-07-15 lun. 15:38]
-** DONE Lire GDPDR
+*** DONE Lire GDPDR
 CLOSED: [2024-07-15 lun. 16:39] SCHEDULED: <2024-07-15 lun.>
   /Entered on/  [2024-07-15 lun. 15:38]
-** DONE Présentation CAD biblio
+*** DONE Présentation CAD biblio
 CLOSED: [2024-07-16 mar. 09:52] SCHEDULED: <2024-07-15 lun. 17:00>
 Entered on [2024-07-15 lun. 15:40]
-** TODO Mise à jour draft1
-SCHEDULED: <2024-07-23 Tue>
+*** DONE Mise à jour draft1
+CLOSED: [2024-07-24 Wed 13:58] SCHEDULED: <2024-07-23 Tue>
 Fusionner notes
 - [[denote:20240722T095640][Monday 22 July 2024 09:56]] surtout
 - [[denote:20240716T172506][Tuesday 16 July 2024 17:25]]
 - [[denote:20240718T153145][Thursday 18 July 2024 15:31]]
 - [[denote:20240719T093836][Friday 19 July 2024 09:38]]
-** TODO Trouver algo de simulation de probab d’un variant (2-3 nucléotides)
-SCHEDULED: <2024-07-23 Tue>
+*** TODO Trouver algo de simulation de probab d’un variant (2-3 nucléotides)
+SCHEDULED: <2024-07-24 Wed>
   /Entered on/  [2024-07-22 Mon 17:17]
+*** TODO Retrouver heatmap Shendure avec score par variant
+SCHEDULED: <2024-07-24 Wed>
+  /Entered on/  [2024-07-24 Wed 12:23]
+*** TODO Exemple de données identifiantes sur forum maladie rare
+SCHEDULED: <2024-07-24 Wed>
+  /Entered on/  [2024-07-24 Wed 14:29]
 ** Case report CHD7 :article:
 :PROPERTIES:
 :CATEGORY: chd7
 :END:
-** DONE Mail Marine pour suivi Nanopore
+*** DONE Mail Marine pour suivi Nanopore
 CLOSED: [2024-06-24 lun. 11:51] SCHEDULED: <2024-06-21 ven.>
   /Entered on/  [2024-06-21 ven. 16:48]
-** DONE Mail Dr Frédérique Bilan CHU Poitiers pour détails MLPA
+*** DONE Mail Dr Frédérique Bilan CHU Poitiers pour détails MLPA
 CLOSED: [2024-06-24 lun. 11:51] SCHEDULED: <2024-06-21 ven.>
   /Entered on/  [2024-06-21 ven. 16:48]
-** DONE Mail Xavier Nanopore
+*** DONE Mail Xavier Nanopore
 CLOSED: [2024-06-24 lun. 14:49] SCHEDULED: <2024-06-24 lun.>
   /Entered on/  [2024-06-24 lun. 14:48]
-** DONE Demande à Pauline si prélèvement possible
+*** DONE Demande à Pauline si prélèvement possible
 CLOSED: [2024-06-24 lun. 15:57] SCHEDULED: <2024-06-24 lun.>
   /Entered on/  [2024-06-24 lun. 14:48]
   Mail envoyé <2024-06-24 lun.>
-** DONE Revoir avec Gaelle pour transfert ADN
+*** DONE Revoir avec Gaelle pour transfert ADN
 CLOSED: [2024-06-25 mar. 12:00] SCHEDULED: <2024-06-25 mar.>
   /Entered on/  [2024-06-25 mar. 10:56]
-** DONE Répondre MLPA
+*** DONE Répondre MLPA
 CLOSED: [2024-06-25 mar. 12:00] SCHEDULED: <2024-06-25 mar.>
   /Entered on/  [2024-06-25 mar. 10:56]
-** WAIT Bon de demande + prescription + consentement (voir avec Pauline)
+*** WAIT Bon de demande + prescription + consentement (voir avec Pauline)
   /Entered on/  [2024-06-25 mar. 13:56]
-** DONE Vérifier absence dup liste CNV non filtré
+*** DONE Vérifier absence dup liste CNV non filtré
 CLOSED: [2024-06-25 mar. 16:05] SCHEDULED: <2024-06-25 mar.>
   /Entered on/  [2024-06-25 mar. 13:57]
   Rien vu sur IGV probant
   Attente quentin
-** DONE Récupérer ADN parents
+*** DONE Récupérer ADN parents
 CLOSED: [2024-07-02 mar. 12:08]
   /Entered on/  [2024-06-25 mar. 13:57]
-** TODO Envoi ADN biomnis (parent + cas index)
+*** TODO Envoi ADN biomnis (parent + cas index)
 SCHEDULED: <2024-08-02 ven.>
   /Entered on/  [2024-06-25 mar. 13:58]
+** ARID4A
+:PROPERTIES:
+:CATEGORY: ARID4A
+:END:
+*** TODO Genematcher ARID4A
+SCHEDULED: <2024-07-24 Wed>
+Julien intéressé pour que cela reste à Grenoble car une de ses équipes travaille sur l’épigénétique.
+4 patients candidats sur auramatcher :
+2 faux sens en 620 et 621
+2 tronquants
+1 autre de novo moins évident à priori
+sur la fonction du domaine tuudor-knot où sont les résidus 620 et 621 et sur l’importance de cette région pour la reconnaissance de marques épigénétiques
+https://europepmc.org/article/MED/22247551
+  /Entered on/  [2024-07-24 Wed 10:37]
+*** WAIT Mail GeneDx: attente relecture julien
+SCHEDULED: <2024-07-25 Thu>
+*** DONE Mail Marjolaine pour accord genematcher
+CLOSED: [2024-07-24 Wed 14:10] SCHEDULED: <2024-07-24 Wed>
 ** Génomes péruvien
 :PROPERTIES:
-:CATEGORY: peru
+:CATEGORY: pérou
 :END:
-** TODO Biblio julien
-SCHEDULED: <2024-07-23 Tue>
-** WAIT Biblio M1
+*** TODO Biblio julien
+SCHEDULED: <2024-07-24 Wed>
+*** WAIT Biblio M1
 * Divers
 ** KILL Compte admin sur DELL
 CLOSED: [2024-07-11 jeu. 10:07]
@@ -227,166 +253,9 @@ CLOSED: [2024-07-11 jeu. 10:07]
     auradmin
     axetrois
 
-
-** DONE Présentation ACRAA CHD7
-CLOSED: [2024-06-19 mer. 11:01] DEADLINE: <2024-06-20 jeu. 14:00>
-  /Entered on/  [2024-06-18 mar. 14:52]
-Compléter diapo avec
-*** Clinique : CHARGE
-*** Clinique : phénotype étendu
-   https://www.ncbi.nlm.nih.gov/books/NBK1117/
--   Colobome oculaire (petit colobome rétinien -> anophtalmie) : 80%
--   Atrésie/ Sténose choanale : 45%
--   Dysfonctionnement / Anomalie des nerfs crâniens :
-    -   I : hyposmie ou anosmie : 90%
-    -   VII : paralysie faciale : 40%
-    -   VIII : surdité neurosensorielle: >95%
-    -   IX/X : succion et déglutition, motilité gastro-intestinale anormale : 60%-80%
--   Malformations de l'oreille : *caractéristique!*
-    -   Auricule : 90%
-    -   Malformations ossiculaires : 80%
-    -   hypoplasie cochléaire : 90%
-    -   *canaux semi-circulaire absent/hypoplasiques* : 94%
--   *Fente labiale* et/ou palatine : 25%-50%
--   Endocrinien :
-    -   Hypogonadisme hypogonadotrope : 50%-70%
-    -   Déficit de croissance : 70%
-    -   Hypothyroïdie : 15%-20%
--   Retard de développement / Déficience intellectuelle : \>90% / 60%
--   *Malformation cardiovasculaire* : 74%
--   Anomalies trachéo-oesophagiennes : 20% (*difficultés respiratoires*, trachéo *laryngomalacie*)
--   Cerveau :
-    -   Hypoplasie du clivus : 95%
-    -   Autres anomalies : 50%
--   Crises épileptiques : 30%
--   Anomalies rénales : 30%
-
-*** CHD7 et phénotype cardiaque
-   - phéno cardiaque à repréciser
-     mettre figure
-     https://onlinelibrary.wiley.com/doi/full/10.1002/ajmg.c.31761
-
-*** CHD7 et phénotype cardiaque
-     Source https://onlinelibrary.wiley.com/doi/full/10.1002/ajmg.c.31761
-
-- Implication des cellules de la crêtes neurale dans le CHARGE. en effet
-  - fréq augmenté des défaut conovventricailaire et "arch vessels"
-  - cellules cretes neptarale rôle : septation of the outflow tract and conal septum and the pharyngeal arches
-- Problème : AVSD surreprésenté (c. crêtes neurole non essentilé dans la formation du "cushion endocardial") -> probablement
-  - Mesoderm lineage-specific ablation (Mesp1) of CHD7 leads to disruption of endocardial cushion formation, which may explain the overrepresentation of AVSD defects in CHARGE syndrome (Payne et al., 2015).
-  - Probablement multiple pathway
-    - overlap avec
-      - 22q11.2) : TBX1 (phéno cardiaque) = synergique CHD7 et TBX1, médiation partielle p53
-    - syndrome kabuki (KTMD2D, KDM6A (mécanisme de remodelage chromatique similaire à CHD7)
-    - rôle chromatine et méthylation
-
-*** CHD7 et bulbles olfactifs
-Source https://onlinelibrary.wiley.com/doi/full/10.1002/ajmg.c.31585
-    - Olfactory testing and/or MRI imaging in individuals with CHARGE with gonadal defects revealed defective olfaction/olfactory bulb development in a significant number of patients (Chalouhi et al., 2005; Pinto et al., 2005). ""
-    - fetus: "studies in a human fetus with CHARGE syndrome has confirmed that the CHARGE fetus showed arhinencephaly (olfactory bulb agenesis) with absence of GnRH neurons in the forebrain (Teixeira et al., 2010). The migrating olfactory and GnRH neurons accumulated in the fronto-nasal region with the formation of bilateral spherical structures consistent with neuromas near the cribriform plate, implicating a significant migratory defect (Teixeira et al., 2010)"
-    - souris "Chd7 deficient mice display smaller olfactory bulbs, reduced number of olfactory sensory neurons, defective senses of smell with loss of odor-evoked electro-olfactogram responses, reduced hypothalamic GnRH neuronal numbers, hypoplastic genitalia, hypogonadotropism, and impaired pubertal timing (Bergman et al., 2010; Layman et al., 2011, 2009).
-    - The GnRH deficiency in CHARGE syndrome, thus results from the olfactogenital pathological sequence, implicating the disruption of olfactory axon migration to the forebrain as the primary cause of the defective migration of GnRH synthesizing cells, which normally migrate along these nerve fibers.
-*** Rôle moléculaire CHD7
-Genereviews :
-- protéine impliquée remodelage de la chromatine dépendante ATP
-- INteraction avec dizaines de gènes et > 10k site mammifère
-- Mécanisme non connu (perte biogénèse ribosomale ?)
-- Régulateur épigénétique
-
-https://onlinelibrary.wiley.com/doi/10.1002/ajmg.c.31592
-
-*** Rôle moléculaire CHD7
-Mécanisme = Perte ou diminution de fonction (Genereviews)
-- 78% allèle null
-- 9% faux-sens
-- 13 anomalie de splice : allèle nul (frameshift) ou hypomorhpe (saut d'exons)
-
-Limites
-- Modèle animal: faux-sens/allèle hypomorphes non testé pour le phénotype
-- quid formes atypiques/légères ?
-*** Variants pathologiques
-Extrait de chd7.org 18 juin 2014
-| Type                | Nombre | Pourcentage |
-|---------------------+--------+-------------|
-| deletion            |      8 |        1.38 |
-| deletion whole gene |     10 |        1.72 |
-| duplication         |      1 |        0.17 |
-| frameshift          |    267 |       45.96 |
-| missense            |     47 |        8.09 |
-| nonsense            |    174 |       29.95 |
-| splice site         |     71 |       12.22 |
-| translocation       |      3 |        0.52 |
-*** Ressources
-https://chd7.org/
-** DONE Présentation CHD7 journée biologiste avec correction charles
-CLOSED: [2024-07-08 lun. 08:42] SCHEDULED: <2024-06-28 ven.> DEADLINE: <2024-07-04 jeu. 13:15>
-  /Entered on/  [2024-06-21 ven. 17:05]
-  Attente retour Charles + véronique
-** DONE Question Jean-François sur stockage
-CLOSED: [2024-06-25 mar. 12:00]
-  /Entered on/  [2024-06-24 lun. 09:49]
-** DONE Pourquoi 2101694 ré-archivé seqone ?
-CLOSED: [2024-07-01 lun. 11:52] SCHEDULED: <2024-06-28 ven.>
-  /Entered on/  [2024-06-28 ven. 15:18]
-** DONE Aider Paul : 2e variant MR-2203140  DISP1 ?
-CLOSED: [2024-07-03 mer. 14:41] SCHEDULED: <2024-07-02 mar.>
-  /Entered on/  [2024-07-02 mar. 11:15]
 ** WAIT Vérifier CR corrigé MR-2304760 Hygen
   /Entered on/  [2024-07-08 lun. 08:40]
   Mail envoyé <2024-07-10 mer.>
-** DONE Vérifier interêt STR multiples non rendus
-CLOSED: [2024-07-08 lun. 10:09] SCHEDULED: <2024-07-08 lun.>
-:LOGBOOK:
-CLOCK: [2024-07-08 lun. 09:53]--[2024-07-08 lun. 10:09] =>  0:16
-:END:
-  /Entered on/  [2024-07-08 lun. 09:03]
-** DONE Question: MR-2400594 variants décochés mais restent de la liste "à envoyer"
-CLOSED: [2024-07-19 Fri 11:21] SCHEDULED: <2024-07-19 Fri>
-  /Entered on/  [2024-07-19 Fri 11:06]
-  Bug ID HGNC, ne devrait pas réarriver
-* Formation
-:PROPERTIES:
-:CATEGORY: formation
-:END:
-** WAIT Améliorations slides bioinfo :bioinfo:
-*** Général
-
-- EBV: bien précisé qu'il est gardé dans le génome et non masqué (faire une liste sur la diapo)
-- [X] contrôle qualité progressif : 20x -> 10x (1.1 et 4.1) représentation trompeuse car on a plus de résultat en 10x qu'en 20x -> corrigé par virginie
-- différence aurapport-curagen-seqone n'est pas du tout claire, notamment rôle de curagenène. Il faudrait rajouter cette figure dans la présentation générale (voir
-[[https://auragen.atlassian.net/wiki/spaces/~7120201ca2598be5ef4936a1110033f28f4fed/overview][Vue d'ensemble du pipeline]]
-
-*** TODO Refaire le point avec Virginie sur commentaires
-SCHEDULED: <2024-09-01 dim.>
-** WAIT Figure curagen
-/Créé le/ [2024-05-16 jeu. 16:22]
-Attendre la v2
-** TODO Vidéos pas-à-pas [[https://app.videas.fr/v/6dbbf878-740f-4e31-9587-76202736c9ae/][IGV]] :faq:
-SCHEDULED: <2024-07-31 mer.>
-  /Entered on/  [2024-05-27 lun. 10:00]
-** TODO [[https://anpgm.fr/media/documents/BP-NGSDiag_001_Interpretation_Variants_v2.pdf][Recos NGS-diag SNV]]
-  /Entered on/  [2024-05-27 lun. 14:18]
-** TODO Compléter FAQ bio : un même variant peut sur plusieurs gènes :faq:
-  /Entered on/  [2024-05-28 mar. 12:02]
-On peut avoir plusieures lignes pour un variant : présenter un cas (découvert sur mais MR-2305018 pas assez propre (VAF=28=))
-Attention: pour clinvar, on utilise la position donc on peut flagger sur le mauvais gènes...
-Mettre à jour https://auragen.atlassian.net/wiki/spaces/~7120201ca2598be5ef4936a1110033f28f4fed/pages/1524695047/Questions
-** TODO Prévoir réunion julien avec [[id:d87c8b18-ea67-4a81-ab7e-20c8fbca0123][Questions pour Julien]]
-  /Entered on/  [2024-06-06 jeu. 16:07]
-* Kalilab
-:PROPERTIES:
-:CATEGORY: kalilab
-:END:
-** DONE SH-REF-02 REV 07 Exigences pou
-CLOSED: [2024-07-03 mer. 14:47] SCHEDULED: <2024-07-03 mer.>
-** DONE NF EN ISO 15189 LBM Exigences
-CLOSED: [2024-07-23 Tue 14:31] SCHEDULED: <2024-07-22 Mon>
-** DONE SH-FORM-43 VDM WGS génétique c
-CLOSED: [2024-06-26 mer. 10:58] SCHEDULED: <2024-06-26 mer.>
-* Auragen
-:PROPERTIES:
-:CATEGORY: auragen
-:END:
 ** Downgrader nom de gène pour OMIM :pipeline:omim:
 **** Notes
 Problème: certains variants ne sont pas flaggés OMIM.
@@ -419,22 +288,41 @@ CLOSED: [2024-06-11 mar. 10:57] SCHEDULED: <2024-06-11 mar.>
 **** DONE Utiliser la date de GENCOD32
 **** DONE Vérifier sur KIF1BP et GBA
 GBA1 -> GBA antérieur
-** DONE Nettoyer tâches finies dans "améliorations" et "questions" :doc:
-CLOSED: [2024-06-11 mar. 10:44] SCHEDULED: <2024-06-11 mar.>
-:LOGBOOK:
-CLOCK: [2024-06-11 mar. 10:42]--[2024-06-11 mar. 10:44] =>  0:02
-:END:
-  /Entered on/  [2024-06-11 mar. 10:26]
-** DONE Mastermind ? :aurapport:
-CLOSED: [2024-06-19 mer. 11:00] SCHEDULED: <2024-06-19 mer.>
-  /Entered on/  [2024-06-11 mar. 10:31]
-  Démo non convaincate à véronique: n'arrivait pas à voir les articles par variant
-  Retesté : ok
-  Limite: impossible de trier par pertinence les articles donc moins intéressant...
 ** TODO Pubmatcher sur variants sans clinvar ni HPO
 SCHEDULED: <2024-07-25 Thu>
   /Entered on/  [2024-06-11 mar. 10:30]
 
+* Formation
+:PROPERTIES:
+:CATEGORY: formation
+:END:
+** WAIT Améliorations slides bioinfo :bioinfo:
+*** Général
+
+- EBV: bien précisé qu'il est gardé dans le génome et non masqué (faire une liste sur la diapo)
+- [X] contrôle qualité progressif : 20x -> 10x (1.1 et 4.1) représentation trompeuse car on a plus de résultat en 10x qu'en 20x -> corrigé par virginie
+- différence aurapport-curagen-seqone n'est pas du tout claire, notamment rôle de curagenène. Il faudrait rajouter cette figure dans la présentation générale (voir
+[[https://auragen.atlassian.net/wiki/spaces/~7120201ca2598be5ef4936a1110033f28f4fed/overview][Vue d'ensemble du pipeline]]
+
+*** TODO Refaire le point avec Virginie sur commentaires
+SCHEDULED: <2024-09-01 dim.>
+** WAIT Figure curagen
+/Créé le/ [2024-05-16 jeu. 16:22]
+Attendre la v2
+** TODO Vidéos pas-à-pas [[https://app.videas.fr/v/6dbbf878-740f-4e31-9587-76202736c9ae/][IGV]] :faq:
+SCHEDULED: <2024-07-31 mer.>
+  /Entered on/  [2024-05-27 lun. 10:00]
+** TODO [[https://anpgm.fr/media/documents/BP-NGSDiag_001_Interpretation_Variants_v2.pdf][Recos NGS-diag SNV]]
+  /Entered on/  [2024-05-27 lun. 14:18]
+** TODO Compléter FAQ bio : un même variant peut sur plusieurs gènes :faq:
+  /Entered on/  [2024-05-28 mar. 12:02]
+On peut avoir plusieures lignes pour un variant : présenter un cas (découvert sur mais MR-2305018 pas assez propre (VAF=28=))
+Attention: pour clinvar, on utilise la position donc on peut flagger sur le mauvais gènes...
+Mettre à jour https://auragen.atlassian.net/wiki/spaces/~7120201ca2598be5ef4936a1110033f28f4fed/pages/1524695047/Questions
+* Kalilab
+:PROPERTIES:
+:CATEGORY: kalilab
+:END:
 * Réunions
 :PROPERTIES:
 :CATEGORY: réunion
@@ -476,11 +364,16 @@ SCHEDULED: <2024-07-25 jeu. 09:00 +2w>
 :LAST_REPEAT: [2024-07-11 jeu. 10:05]
 :END:
 - State "DONE"       from "TODO"       [2024-07-11 jeu. 10:05]
+*** TODO Présentation axe3 absplice
+SCHEDULED: <2024-07-24 Wed> DEADLINE: <2024-07-25 Thu 09:00>
+  /Entered on/  [2024-07-24 Wed 13:59]
 ** Réunion biologistes Auragen :bio:auragen:
 ** DONE Julien
 CLOSED: [2024-07-23 Tue 09:53] SCHEDULED: <2024-07-22 lun. 13:30>
 Entered on [2024-07-16 mar. 09:53]
-** TODO Philippe Jean (heure approx)
+** TODO Julien :facebook:
+SCHEDULED: <2024-07-29 lun. 14:00>
+** TODO Philippe Jean (heure approx) :facebook:
 SCHEDULED: <2024-07-29 lun. 17:00>
 Entered on [2024-07-16 mar. 09:53]
 
@@ -489,7 +382,7 @@ Entered on [2024-07-16 mar. 09:53]
 :CATEGORY: génomes
 :END:
 ** Montpellier :montpellier:
-** TODO RVI MR-2302861 MYH10 vous+, attente seqone
+*** TODO RVI MR-2302861 MYH10 vous+, attente seqone
 BAZB1: compris dans la microdel du sd williams mais rien de plus. Touche épissage ??
 FH = donnée incidente ? (cancer) "Hereditary leiomyomatosis and renal cell cancer is an autosomal dominant tumor predisposition syndrome"
 
@@ -499,7 +392,7 @@ cnv dup chr1 800kb, pas de gène codant
 
 seqone : NOTCH2 chr1:g.120069404C>T : avis Jérémy ?
 DDR2 bof
-** DONE MR-2400087
+*** DONE MR-2400087
 CLOSED: [2024-06-28 ven. 12:11]
 - DYM pas de 2e allele
 - ANO5: tronquant mais pli 0, clinique différente (récessif = dystrophie musculaire, dominant = sd osseux mais pas de pied bot
@@ -510,9 +403,9 @@ hérité de la mère asympto
 - RAI1 mauvaise qualité
 - /NOTCH3/ clinique ne colle pas vraiment (méningocèle) mais 1 patient avec dysplasie valve, sino score bioinfo rouges, gènes nb faux-sens patho
 - del 36kb prenant dernier exon *GPC3*: colle mais récessif, qq del plus petites DGV
-** DONE MR-2303166
+*** DONE MR-2303166
 CLOSED: [2024-06-28 ven. 16:20]
-** DONE MR-2304637 Remplir CR hygen
+*** DONE MR-2304637 Remplir CR hygen
 CLOSED: [2024-07-11 jeu. 10:05] SCHEDULED: <2024-07-11 jeu.>
 :LOGBOOK:
 CLOCK: [2024-07-08 lun. 10:19]--[2024-07-08 lun. 11:04] =>  0:45
@@ -527,9 +420,9 @@ L'étude de la ségrégation de cette variation dans la famille avec l'analyse d
 confirmation de ce résultat sur un second prélèvement indépendant est recommandée.
 
 *Une consultation de génétique est nécessaire pour expliquer ce résultat.*
-** DONE MR-2302630
+*** DONE MR-2302630
 CLOSED: [2024-06-28 ven. 16:20]
-** WAIT MR-2304058
+*** WAIT MR-2304058
   /Entered on/  [2024-06-24 lun. 11:39]
   SRCAP: fréquent cohorte, qq score bioinfo, fin de gène, 71x gnomad, clinvar conflicting
   PKD2 bof sur score,
@@ -551,18 +444,18 @@ CLOSED: [2024-06-28 ven. 16:20]
   - ZBTB10 à genematcher si non fait mais déjà connu et VOUS. Tronquant, de novo non présent gnomad, non OMIM, rien pubmed
   - ADCY10: clinvar patho2x, hypercalciurie, tronquant, gène assez peu connu, qq tronqunt mais pLI 0, héritèr père
   - NAV3 del mais pas très clair (bruit ?)
-*** DONE Auramatcher zbtb10
+**** DONE Auramatcher zbtb10
 CLOSED: [2024-07-19 Fri 16:14]
 1 tronquant de novo
 - MR-2303393: trouble neuroved, TSA. Pas au  mme endroit. Pas dans le seul domaine fonctionnel
-*** WAIT Genematcher ZBT10 attente Jérémie sur dossier toulouse  ːMR-2304058ː
+**** WAIT Genematcher ZBT10 attente Jérémie sur dossier toulouse  ːMR-2304058ː
 SCHEDULED: <2024-07-25 Thu>
 fait.
 Doute sur TND poru notre patient.
 TND et TSɑ sur dossier Toulouse MR-2303393  -> Jérémie va le lire
 Demande avis ʍarjolaine pour la suite si ɡenematcher
 
-** DONE MR-2400693 attente hygen + faire CR
+*** DONE MR-2400693 attente hygen + faire CR
 CLOSED: [2024-07-04 jeu. 11:04] SCHEDULED: <2024-07-04 jeu.>
   /Entered on/  [2024-06-24 lun. 11:50]
 
@@ -590,12 +483,12 @@ Cette variation est considérée comme pathogène (classe 4, critères ACMG: PM2
 La présence de cette variation pathogène hétérozygote peut expliquer le phénotype observé chez la patiente. IL serait souhaitable de réaliser une IRM pour évaluer la presence de neurofibromes plexiformes pouvant expliquer la surdité. Ce résultat doit être confronté au contexte clinique et aux données familiales. La confirmation de ce résultat sur un second prélèvement indépendant est recommandée.
 
 Une consultation de génétique est nécessaire pour expliquer ce résultat.
-** WAIT MR-2301158
-** DONE Auramatcher MYH10 MR-2302861
+*** WAIT MR-2301158
+*** DONE Auramatcher MYH10 MR-2302861
 CLOSED: [2024-07-10 mer. 14:09] SCHEDULED: <2024-07-08 lun.>
   /Entered on/  [2024-07-02 mar. 15:47]
   1 faux-sens de novo poussé Hygen . Reste = non lu ou hérité. Jamais rendu apparement
-** DONE Écrire formule remaniement MR-2402030
+*** DONE Écrire formule remaniement MR-2402030
 CLOSED: [2024-07-08 lun. 15:54] SCHEDULED: <2024-07-08 lun.>
 :LOGBOOK:
 CLOCK: [2024-07-08 lun. 13:56]--[2024-07-08 lun. 15:54] =>  1:58
@@ -614,21 +507,21 @@ Un conseil génétique est souhaitable.
 
 La caractérisation précise de ce variant structurel nécessiterait une technique complémentaire (long-read).
 
-** WAIT MR-2400512
+*** WAIT MR-2400512
   /Entered on/  [2024-07-04 jeu. 11:03]
   COL6A3: gène plutôt tronquant, 2 fois cohorte, 21 gnomAD génome, domaine fonctionnel, score bioinfo mitigés, présent chez père non en mosaïque, VOUS-clinvar. AD ou AR sans 2e allèl  e -> vérif clinique père
-** DONE MR-2401415: négatif poussé hygen
+*** DONE MR-2401415: négatif poussé hygen
 CLOSED: [2024-07-15 lun. 12:15] SCHEDULED: <2024-07-15 lun.>
   /Entered on/  [2024-07-08 lun. 16:52]
   VOUS+ STAG2 site canonique d'épissage seqone
   WNT5A score bionfo non en faveur mais 2x gnomAD, clinique partiellement mais forme dominant plus mild  https://onlinelibrary.wiley.com/doi/10.1002/ajmg.a.61884peu. hérité de la mère
   Deletion qui prend quaisiment tout APOL1 sur gène de néphropathie (pas d'hydropnéphrose associé), non présent DGV
-** WAIT MR-2400560
+*** WAIT MR-2400560
 NPRL3 3x gnomad mais score vert... faux-sens décrit dans la pathologie, colle clinique, clinvar VOUS... -> revoir le père ?
-** WAIT MR-2400334 attente Jérémie
+*** WAIT MR-2400334 attente Jérémie
   /Entered on/  [2024-07-08 lun. 16:53]
 *
-** WAIT MR-2102277
+*** WAIT MR-2102277
   /Entered on/  [2024-07-16 mar. 10:10]
 
   Vérif seqone les récessif
@@ -641,12 +534,12 @@ NPRL3 3x gnomad mais score vert... faux-sens décrit dans la pathologie, colle c
 
  seqone
  VOUS intronique ASH1L chr1:g.155410322_155410323del : gène DI + cryptorchidie
-** WAIT MR-2102278 attente Jérémie
+*** WAIT MR-2102278 attente Jérémie
   /Entered on/  [2024-07-16 mar. 10:10]
   Del RAPGEF2 : artefact ? les soft-clips s’alignent
   VOUS- SOS1 seqone (noonan)
  VOUS- MYH2 seqone (myopathie)
-** TODO MR-2200072: attente seqone
-SCHEDULED: <2024-07-24 Wed>
+*** WAIT MR-2200072: attente Jérémie
   /Entered on/  [2024-07-16 mar. 10:10]
-VOUS biallélique INST11 pour DI : notre tronquant est rapporté en 2023 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10183469/
+- VOUS biallélique INST11 pour DI : notre tronquant est rapporté en 2023 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10183469/
+- tronquant CNOT3 connu LOF pour trouble neurodev mais hérité
