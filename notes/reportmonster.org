@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       6698b607-38bb-47de-a729-e2e5ad69b94f
+:END:
+#+title: Reportmonster
+#+filetags: pipeline
+
+Prend les variants en sortie de Curagen et génère les JSON pour les pousser dans CouchDB
+
+Schéma :
+https://auragen.atlassian.net/wiki/spaces/DDP/pages/1474756616/Compte-rendu+R+union+2024+04+04+-+pousser+CR+vers+Hygen

@@ -1,0 +1,14 @@
+#+title:      Patterns and rates of exonic de novo mutations in autism spectrum disorders
+#+date:       [2024-07-22 Mon 10:41]
+#+filetags:   :bib:facebook:
+#+identifier: 20240722T104147
+#+reference:  neale2012patterns
+
+Ce qui nous intéresse : modèle statistique pour taux de mutation pour tous les trinucléotide dans les régions capturée par exome
+La "mutabilité" est estimé en comparaison avec singe (chimpanzé + babouins) et 1000 genomes projects
+
+Le taux de mutation de l'exome entier est la somme du taux de mutation par base
+
+Méthode : 175 exome en trio
+Pour calculer le taux de mutation, estimation avec le modèle statistique si dessus
+NB: les variant semblent avoir été confirmés en Sanger

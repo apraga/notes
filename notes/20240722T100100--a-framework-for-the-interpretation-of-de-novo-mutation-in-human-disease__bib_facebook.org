@@ -1,0 +1,9 @@
+#+title:      A framework for the interpretation of de novo mutation in human disease
+#+date:       [2024-07-22 Mon 10:01]
+#+filetags:   :bib:facebook:
+#+identifier: 20240722T100100
+#+reference:  samocha2014framework
+
+Modèle statistique pour mutation de novo par gène (amélioration de[cite:@neale2012patterns] ) en exome.
+
+Utilisation pour déterminer les gènes avec pression de sélection (moins de variant qu'attendu)

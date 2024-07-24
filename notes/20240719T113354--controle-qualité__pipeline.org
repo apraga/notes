@@ -1,0 +1,22 @@
+#+title:      Controle qualité
+#+date:       [2024-07-19 Fri 11:33]
+#+filetags:   :pipeline:
+#+identifier: 20240719T113354
+
+- [[id:67a7ed39-62f6-4853-beeb-a4f1449b394e][Identito-vigilance]]
+- Couverture
+  - type : gène, codant (CDS), clinvar patho/likely patho
+  - clinvar patho: liste de ceux mal couverts : comparé à la cohorte pour savoir si défaut récurrent
+  - en ligne http://172.25.219.90:8080/help/mroc/qcfiliere pour 256 patients asympto
+  - pour les gènes, il faut connaître l'indication
+  - visualisation sur tout le gène (seqcover)
+- [[denote:20240719T113852][Qualité des librairies]]
+
+FastQ :
+ - nombre lignes/taille fichiers
+ - paires concordantes
+ - qualité paires de base
+
+En pratique,
+ - 98% cible diag primaire (= gène)
+ - 99% variants clinvar patho 20x

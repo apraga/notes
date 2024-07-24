@@ -1,0 +1,10 @@
+* 2024-05-21
+** 10:38 Réunion Virginie
+- Discussion des projets
+  - [[id:7127fbf3-d95e-4f8c-9a2e-8f886eeeaf52][Projet facebook]]: voir avec julien mais je pars sur biblio seule
+  - [[id:aba69975-9abd-4594-b930-54634e7dac46][Projet mitochondries]]
+  - [[id:b80f3a54-6eb5-4f11-bb37-689bd0746067][Projet pseudogènes]]  -> retenu
+  - [[id:d51e599e-4b82-4061-bf29-43b5ea1ce10c][Variants interprétés]]
+  - attente accès hygen
+  - faire page confluence
+- Curagen v2

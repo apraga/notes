@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       28e01aab-f252-433f-be2c-1491d4deae9b
+:END:
+#+title: Disomie uniparentale
+
+Définition: 2 copies d'un chromosome d'un seul parent
+Cause
+- hétérodisomie = 2 chromosomes différents du même parent sont hérités
+- isodisomie = 1 seule chromosome mais dupliqué d'un parent

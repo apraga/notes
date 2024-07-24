@@ -1,0 +1,23 @@
+#+title:      Contamination
+#+date:       [2024-07-19 Fri 11:34]
+#+filetags:   :pipeline:
+#+identifier: 20240719T113454
+
+Principe: recherche de > 2 allèles
+ - sur 2589 positions
+ - positions polymorphes avec >= 3 allèles en population générale
+ - 10-90% pour chaque allèle
+ - test de fisher + calcul taux contaminant
+
+* Conséquence
+ - SNV:
+ - 5-10% impact possible (zone grise) -> rendu si apparenté, *non rendu si cas index*
+ - > 10% impact -> *non rendu*
+ - CNV : pas d'impact car on utilise la profondeur de couverture
+Causes: ADN extrait ailleur, ADN extrait tissu foetal, anomalie
+préparation librairie
+
+Rendu malgré tout
+ - si dossier urgent avec librairie atypique/défaut de couverture
+ - CNVs longs/ploïdie seuls non interprétatble -> rendu sans CNVs
+ - apparenté avec librairie atypique/défaut de couverture sans impact SNV petits indel et del/dup 50bp-21kb selon critères dans kalilab

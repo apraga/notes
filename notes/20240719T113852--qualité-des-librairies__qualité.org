@@ -1,0 +1,7 @@
+#+title:      Qualité des librairies
+#+date:       [2024-07-19 Fri 11:38]
+#+filetags:   :qualité:
+#+identifier: 20240719T113852
+
+- Fraction génome couvert : reséquencer si "chute" (<98% de la cible diagnostique 20x)
+- "Atypique" si profile de distribution profondeur de séquencage s'écarte de la loi normale -> reséquencer

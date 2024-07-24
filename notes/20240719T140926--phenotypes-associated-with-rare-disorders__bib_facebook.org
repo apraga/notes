@@ -1,0 +1,15 @@
+#+title:      Phenotypes Associated with Rare Disorders
+#+date:       [2024-07-19 Fri 14:09]
+#+filetags:   :bib:facebook:
+#+identifier: 20240719T140926
+#+reference:  orphadata2024phenotype
+
+XML:
+- HPOFrequency: fréquence estimée pour un phénotype dans un contexte clinique donné. 5 groupes (lequels) de fréquence
+  - always present: 100 %
+  - very frequent: 99%-80%
+  - frequent: 79%-30%
+  - occasional: 29%-5%
+  - rare: 4%-1%
+  - excluded : 0%
+- DiagnosticCriteria: pathognomonic ou critère diagnostic

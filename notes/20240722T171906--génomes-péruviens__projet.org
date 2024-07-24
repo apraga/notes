@@ -1,0 +1,10 @@
+#+title:      Génomes péruviens
+#+date:       [2024-07-22 Mon 17:19]
+#+filetags:   :projet:
+#+identifier: 20240722T171906
+
+Contexte: utiliser des génomes de cas et de témoins pour trouver des facteurs de risque de mal chronique des montagnes
+
+Biblio déjà faite par étudiant en M1
+
+Données déjà disponibles (CNV, mito, SNV)

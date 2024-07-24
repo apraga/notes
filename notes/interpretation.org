@@ -1,0 +1,69 @@
+:PROPERTIES:
+:ID:       c2c6328b-1292-454d-81b4-e97ba85b4572
+:END:
+#+title: Interprétation
+#+filetags: auragen interprétation
+* Compterendu
+[[id:50d77448-a9ad-4588-835d-57483dc7a851][Modèle compte-rendu génome]]
+* Classification
+o Concluant : variants patho collant avec clinique
+o Non conclusif : pas de variant patho expliquant la clinique
+o Non-concluant : besoin de faire des examens complémentaires, VOUS, variants hmz retrouvé htz
+* Méthodes
+Principe (pour apprnedre): pourquoi cette ligne est-elle présentée ?
+** SV
+1. récurrence ++.
+   - si fréquent, regarder si élément mobile (track /simple repeat/ dans ucsc +/- BLAT poru voir où s'aline. NB: élément mobile = facteur de risque de SV)
+2. contenu en gène
+
+Qualité : assez de reads et équilibrées, ne pas utiliser la VAF
+NB:
+- "identique" dans la cohorte mais fenêtre 1kb..
+- samplot++ pour visualisation
+- héritage non présenté
+
+*** Notes
+ - aide interprétation : IGV+++
+   - couleur du read = chromosome où est le read partenaire (code couleur fixé, ex: jaune = chr4)
+        -> "view mate in split screen"
+   - attention si intrachromosomique, décocher "view as pairs"
+   - ne pas confondre avec les reads bleus (insert size plus petite qu'attendue = insertion) ou rouge (insertion size plus grande qu'attendue = délétion)
+ - bien regarder diapos 5.6 pour exemples
+ - regarder autres membres
+ - attention au bruit -> il faut des reads soft-clip propres aux 2 positions
+*** Inversion
+ bien regarder le sens des reads. On peut rajouter "color by pair orientation" = colorie les reads qui ne sont pas orienté face-à-face (= normale)
+
+Pour avoir les limites de l'inversion, regarder le "pair as mate"
+*Attention à vérifier l'absence de délétion avec BLAT sur un read !*
+** CNV
+- regarder dans UCSC si codant (non précisé dans aurapport)
+- ne pas utilise la VAF
+- vérifier si "vrai" (profondeur, reads porter) -> attention à la qualité : on n'utilise que les reads avec une qualité suffisante (phred > 10 ?) mais samplot montre tous les reads...
+
+  Attention dup intragénique = perte de fonction
+** TODO SNV
+- vérifier si propre IGV
+- Vérifier dans gnomad
+* Outils :
+- [[id:acd19ba4-71a4-44d9-a054-fc4cca17b377][IGV]]
+- [[id:b71b2e16-0970-4272-ac54-74ca4588487d][Rendre un variant]]
+- Lundi et jeudi matin envoyé à la main dans hygen
+- [[id:d402eb63-2fc9-45d0-b261-f06a1fb10aa1][Entraînement pour interprétation]]
+
+* Vérifications
+- ROH : N. Chatron n'est fait rien...
+- Regarder les QC et ploïdie
+
+* Cas particuliers
+[[id:f6ea0248-d5d3-472e-883c-5e9dc14fe57b][Mosaïcisme]]
+- [[id:cf450d26-ad6a-49cb-83f0-b88c83d0aea9][Données incidentes]]
+
+* Ressources
+- [[https://anpgm.fr/media/documents/BP-NGSDiag_001_Interpretation_Variants_v2.pdf][Recos NGS diag]]
+- [[file:~/Documents/formation_bioinfo/5.6_SV_visualisation.pdf][Illustration IGV des remaniements]]
+- [[id:2839cb56-73c3-4aef-85f1-e9e8d2d553b2][Bandes chromosomiques]]
+** Bases de données
+** CNV
+- DGV : > 50bp chez patients sains
+- dbVar : > 1kbp, clinique s (clinvar), common (100G, gnomaAD, decipher) + long read (GIAB)

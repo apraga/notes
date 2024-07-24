@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       587dc7c4-1dd5-4068-8d24-6e3825f01e66
+:END:
+#+title: Validation
+#+filetags: auragen pipeline
+
+Patients:
+- 8 patients présentant des anomalies chromosomiques d’intérêt, difficiles à détecter (SNV, Indel, CNV, SV) : MR-2000939 ; MR-2200677; MR-2101291; MR-2200594; MR2200900; MR-2200958; MR-2201254; MR-2300886
+- 3 patients avec DIN (DNA integrity number = mesure par électrophorèse de la dégradation de l'ADN) proche du seuil (6) : MR2201356; MR-2203067; MR-2203174(DEX-Dir-015-01_PFMG CRefIX. Recommandation technique DIN métriques qualité 29.06.20)
+- patients de référence
+  - trio GIAB : NA12878 (mère), NA12882 (Fils) et NA12877 (Père)
+  - 3 Cas Index : Famille Han (1000 genome project et GIAB, HG00514 Fille), Famille Yoruba (International HapMap Project, ref NA19240 Fille) et Famille Porto Rico (1000 genome project, ref HG00733 Fille)
+
+- Appel de variant : GIAB
+
+  - SNV/indel sur NA12878 : F1_score >= 99%. On ne compte que les correspondances sur génotype
+  - trio han, yoruba, porto-ricain pour CNV, STR ?
+
+  - CNV: 75 en acpa + patients test (quelques CNV et T21)
+  - Variants structurels :
+    - 11 (patients lyon + grenoble) et 3 transloc
+    - performance : attendu = 92% recall transloc, observé 9/11 (les 2 manquantes sont en centro-télomérique)
+ - variants rendus
+
+Mise a jour clinvar : vérification sur NA12878 avec appel de variants
+
+NB:
+ - précision = probabilité qu'un variant détecté soit vrai (TP/(TP+FP))
+ - recall = probabilité qu'un vrai variant soit détecté (TP/(TP+FN))

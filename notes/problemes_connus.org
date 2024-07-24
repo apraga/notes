@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       cef32d57-e0a3-4b76-afd2-326830576462
+:END:
+#+title: Problèmes connus
+#+filetags:  auragen
+
+[[id:2228958a-bcde-4256-819d-00237877e5e5][Limite appels de variants]]
+[[id:7310f8fa-7518-48f7-bc11-ec14d8e0cbf1][Limites annotation]]
+[[id:f4582bec-9f09-4068-8cd0-65b4fb22413d][Limite rendus]]

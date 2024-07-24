@@ -1,0 +1,13 @@
+#+title:      Améliorations pipeline
+#+date:       [2024-07-19 Fri 11:29]
+#+filetags:
+#+identifier: 20240719T112953
+
+
+- Mitochondrial: non fait
+- Mosaïque : dépend de la VAF
+- Signaler anomalies "SNP-array"like ? Présentation de quelques cas à [[https://docs.google.com/presentation/d/1ZPEYJ0VTpf4CWRdnWCA_YgrIa8FZoUTPQkRMFEzrDhc/edit#slide=id.g2dc6baf89a2_0_2042][Bioinfodiag mai 2024]]
+- Auraweb -> hygen autoamtiquement : cours, fin juillet (voir [[id:f4582bec-9f09-4068-8cd0-65b4fb22413d][Limite rendus]]  )
+- dernière version de mane non utilisé : viendra avec curagen v2
+
+* [[denote:20240719T113027][Aurapport]]

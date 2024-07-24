@@ -1,0 +1,8 @@
+#+title:      SNPs for a universal individual identification panel
+#+date:       [2024-07-17 Wed 14:44]
+#+filetags:   :bib:facebook:
+#+identifier: 20240717T144416
+#+reference:  pakstis2010snps
+
+
+45 SNPs suffisent à identifier un individu parmi 44 populations.

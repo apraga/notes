@@ -1,0 +1,162 @@
+:PROPERTIES:
+:ID:       0a1cc45a-c273-422e-8d4e-a86741fd06c0
+:END:
+#+title: Formation validation de méthodes
+#+date: 2024-06-06
+
+Estelle Bugni
+Société de consulting + biologiste probioqual. Fait aussi de l'éthique
+* Théorie
+** Objectifs
+- différence vérification et validation
+- principes de bases
+- savoir analyser les risques
+- savoir mener un projet + rédiger un dossier (vérif/valid)
+- gérer ajouts et extension portée d'accréditation
+** Définition
+- Vérification : portée A = on utilise le kit non modifié qui a déjà été testé par le fournisseur (= méthode reconnue)
+- Validation = portée B = si on modifie le kit/manière de faire ou si on créé un kit (= on ne peut pas utiliser la méthode reconnue)
+
+- Ex: si on change le tube, il faut démontrer que cela marche mais le principe est de rester en portée A
+
+- Répétabilité = le même échantillon, dans les mêmes conditions (oérateur, réactif, instrument échantillonage). Idéalement 30 mesures
+  - sur toutes les matrices prévues : sang, urine...
+  - écart-type, moyenne, coefficient de variation (ecart type/moyenne)
+- Reproductibilité = fidélité intermédaire = correspond au coefficient de dvariant (= écart type relatif, mesure la dispersion)
+  - même échantillion mais jour, opérateur différent
+  - écart-type, moyenne, coefficient de variation (ecart type/moyenne)
+  - comparaison au CV acceptable défini -> *il faut avoir défini la limite avant* !
+- Justesse = correspond à la moyenne (dispersion peut être importante)
+  - comparaison d'une moyenne à une valeur cible.
+  - CIQ externalisé (on compare à la moyenne des autres). Comparé à un biais acceptable *défini*
+- exactitude = comparaison d'*une seule* valeur -> EEQ. Comparaison à une erreur totale
+** Étapes
+1. définir les besoins = limites acceptable
+2. protocole) = le plus long+++
+3. réaliser les tests
+4. Écrire le dossier
+
+ex: quantification d'ADN
+Objectif montre que la méthode fonctionne /dans les conditions normales du laboratoire/
+** Ce qu'il faut respecter
+- norme NF EN ISO 15189 version 2012 et 2022 (les 2 existent : si écart sur la norme 2022, on compare à la 2012) = européen
+- SH REF 02 = spécifique à la France, par le COFRAC version 7 et 8 (relatiif à la 15189 2012 et 2022 respectivement)
+- SH REF 08 version 6 (version 7 en octobre 2021) définit les /règles sur la portées d'accréditation/
+  - SH INF50 rev 07 = liste des portées
+- GEN RFE rev 09 = définit le logo COFRAC -> il faut mentionner les analysées accréditées
+** Guide techniques
+SH GTA
+ - 01 rev 02 = version "pour les nuls" !
+ - 02 = informatique (bien fait !)
+ - 03 = anapath
+ - *04 = accréditation de vérification/validation*
+ - 05 = biologie de la reproduction
+ - 06 = contrôle qualité
+ - *07 = génétique* (rien de spécifique)
+ - 14 = incertitudes de mesures
+ - 15 = ceux qui appartiennet à des groupements hospitaliers (GHT)
+
+ Matériel et réactifs = à valider (surprise... la nouvelle version ne change rien)
+*** SH GTA 04 rev 02
+- quantitatif = valeur numérique
+- qualitiatif = ce qu'on ne peut pas exprimes quantitativement (positif/négatif, identification)
+
+Étapes
+1. vérification(portée A)/validation (portée B)
+2. déclaration d'aptutide
+3. puis il faut se préparer à passer en routine (formation du personnel, documentation, audit interne...)
+   - Astuce: il faut une "checklist"
+4. la méthode est autorisée à être employée
+   - ajout ou extension (cf ci-dessous)
+
+*** Ajout vs extension
+- Ajout : on peut ajouter des examens sur une "ligne" dans une ligne de portée car on considère qu'on est dans le même cadre. C'est plus simple car il faut "juste" remplir un document
+  - en portée A: ok
+  - attention à la portée B: il faut 2 méthodes déjà en portée B pour ajouter ! (10.3 du SH REF 08: il faut qu'il y ait une virgule...)
+- Sur une autre ligne, il faut une extension et le COFRAC doit venir
+  - note: basculer de A vers B est une extension !
+
+** Protocole
+quantitatif/qualitif : portée A et B identique sur les critère
+
+limite de détection = qualitative
+- exceptionnelement, on veut quantifier ... exemple de la cocaîine (< seuil de mesure)
+limite de quantification = quantitatif
+
+*** Méthode quantitative
+Obligatoire, vérifier sur site
+- répétabilité
+- fidélité intermédiaire
+- justesse/exactitude *obligatoire* ! Comparaison avec autre labo par exemple
+- incertitudevariabilité interopérateur
+
+Biblio pour le reste
+- intervalle de mesure, limite de quantif, linéarité (mais intéressant de vérifier)
+  - le plus simple/efficace pour limite de quantif = dilution jusqu'à coefficient de variation (CV) encore correct
+  - attention au bruit de fond
+- contamination échantillion: dépend du système, analyse de risque
+- robustesse : flou, obligatoire en portée B. A regarder au cas-par-cas. Exemple: mises au frigo/congélateur
+
+*Pas* de limite de détection, pas de sensibilité/spécificité
+**** Incertitude de mesure
+- erreur de décalage + erreur de dispersion
+- cf SH GTA 14 pour les formules
+- sert à savoir si résultat vraiment positif ou négatif (interprétable si zone grise -> refaire dosage)
+*** Limite de quantification
+- Plus petite valeur mesurée avec fiabilité acceptable et incertitude connue
+- ex: multiple dilution
+*** Méthode qualitative
+Idem quantitif sauf que
+- Analyse de risque = le plus important
+- *pas* d'intervalle de mesure, limite de linéairité
+
+Attention limite de linéarité données par le fournissieur peut être faux
+** Notes
+- conserver toutes les données brutes de validation de méthode (durée d'utilisation + 24 mois)
+  - mettre les données brutes dans le dossier de VDM (plus pratique et + utile pour auditeur COFRAC)
+- validation bioinformatique: initiale (résultats = juste) puis au long cours (pas de déviance)
+- respecter ce qui est fait au laboratoire -> sinon écart !
+- vdm avant utilisation sous accréditation (mais on peut utiliser une technique sans être acrédité)
+- si changement sur une technique accréditée, il faut re-valider (ce qui sera évalué sur le prochain audit) avant rendre les résultats patients. Si on passe en portée B, il faut faire venir le COFRAC
+- bien suivre le modèle dans SH FORM43
+  - conclusion par analyse "répond bien au besoin" (qui doit donc être en )
+  - date d'aptitude (validation OK) != date d'utilisation (= utilisé avec logo cofrac)
+- depuis 26 mars 2024 : il faut utiliser un marquage CE.  Si on utilise des méthodes non CE, il faut jutsifier que les méthodes CE existantes ne suffisent pas. En pratique, à l'arrêt car "personne n'y croit"
+** Comparaison de méthode
+Si on remplace une technique/équipement ou 2 techniques/équipements en parallèles (ex: en mirror, en backup, manuel et automatisé)
+- analyse des même échantillions en conditinos de routine sur les 2 techniques
+- nombre d'échantillons définis par le biologiste (>= 30 si ce n'est pas coûteux)
+
+Méthodes :
+- 2 méthodes
+  - variables quantitatif : rangs signés de Wilcoxon
+  - variables ordinal : Start-maxwell
+  - variable binaire : test McNemar, kappa de Cohen
+- > 2 :
+  - variable binaire : Q de Cochran
+  - sinon ANOVA
+
+Notes: ANOVA permet d'évaluer la variabilité interopérateur
+** Contamination inter-échantillons et inter-réactifs
+- inter-échantillion: risque en biologie moléculaire
+  - 3 répétitions par niveau haut et bas puis formule moyenne b1   - moyenne bas 3)/(mohautte haute - moyenne base 3)x100
+    -> non utile en génétique
+  - stabilité pré-analytique : moins important qu'en biochimie
+
+** Comment définir les performances acceptables
+- Présentation non adaptée à la génétique.
+- Pistes : expérience++, kit du fournisseur
+* Cas pratique
+- Étude VDM somatique Auragen "SH-FORM-43 VDM WGS Illumina DNA Prep génétique somatique manuelle 10.03.22". Très complet mais manque l'analyse de risque (faite par processus mais non mentionnée)
+- Qualification extraction d'ADN (Maxwell 48)
+  - répétabilité : 1 échantillion x7 -> justifier le "7x"
+  - comparaison interopérateur
+  - comparaison avec maxwell 16
+  - il faut des critères d'acceptabilité au long cours -> refaire le point une fois par an
+* QCM
+- SH FORM non obligatoire, on peut utiliser un excel
+- Habilitation portée A et B = obligatoir
+- Modif pré-analytique : pas de validation en portée B si pas d'impact !
+- aptitude de méthode (ok pour limites de l'analyse)!= autorisation d'emploi (ok pour logo cofrac)
+- SH REF2 : écart si non respecté
+- SH GTA = guide seul donc pas d'obligation

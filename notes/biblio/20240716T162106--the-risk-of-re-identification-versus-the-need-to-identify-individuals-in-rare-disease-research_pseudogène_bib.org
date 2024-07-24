@@ -1,0 +1,9 @@
+#+title:      The risk of re-identification versus the need to identify individuals in rare disease research
+#+date:       [2024-07-16 mar. 16:21]
+#+filetags:   :bib:
+#+identifier: 20240716T162106
+#+reference:  hansson2016risk
+
+
+Faux espoir pour le côté technique mais utile pour introduire.
+À lire

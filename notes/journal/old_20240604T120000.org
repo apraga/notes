@@ -1,0 +1,89 @@
+* 2024-06-04
+** 10:31 firefox marionnete pour hygen
+echec
+** 13:36 Rest curl
+1. Patient ID dans json
+#+begin_src
+curl 'https://LOL/Module/Mocas_Parcours/ParcoursIntervenant/TableauDeBord' \
+  -H 'accept: application/json, text/javascript, */*; q=0.01' \
+  -H 'accept-language: fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/x-www-form-urlencoded; charset=UTF-8' \
+  -H 'cookie: _ga=GA1.2.1548195567.1715695226; _ga_0WP9H4JY82=GS1.2.1715695226.1.1.1715697725.0.0.0; EasilySession=u02er0wbpzuuhahmx0lvcuua; EasilyIdentity=CD5969169B7CB82B40B04ABB7726FE3030A1E16F649DF55604DE127683C5D0C61FAD0C6D8396338F6D210A66C0A6CEB89CAB0AF942F641FC3C08B77C052FFAD5B6AA342A5804EA39F3BFDCC5EDEBE28D4589EC4CD55F50D9623A98AD619CD24E517AB492E654F728194809CB6DC14DE6E6079E31BD2B7965A17484FE309BA5332DAC14C74D301127B1CF3E2B50F0AA083F52D69ED383A74D8A5EE346F8C0A6F0C4235CE3C1F5919CD42A6B6BF4BF162EE873FFDF34E54C00F0FF0B7E3A4B0817AEE52B543AAFCF20F19F2C1581F64E66; easily.AntiForgeryToken=fJD0CA_YBLgTBPCF7lwXXszkfoB-0ca0k-KNpIT51wSdco1H1Jjh93jmZ3NZIdW51nmM1jzfq723QNifx-dkjNFFydvUXMTDpNNZ7UBfVhO_q8wKznM-9QcJlR382xtY4_mymGpv_oayQrjTbCKn3A2' \
+  -H 'origin: https://LOL' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://LOL/BiologisteGeneticienAURAGEN?X-Correlation-ID=6dd93b9b-9410-47da-8422-124f306bbb7a' \
+  -H 'sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Linux"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36' \
+  -H 'x-easily-xrsf-token: Bg2-Gp2ET1pLYTgkzSgG9-PBr0JtFDNiGHyEdsRB71FpWNYlS9An8vlT6Xo6ZajuXTH_Jqt4w3TF_XqQjVPgHIXhiDYPrGfyZ5ak1f4IWV0lqxZ6E2TL1l4lsOUj951xTQNgJwBedrRcD-Cfjn8FoA2' \
+  -H 'x-requested-with: XMLHttpRequest' \
+  --data-raw 'PageNumber=1&PageSize=50&CodesCR=%5B%22PFAURAG%22%5D&Etat=1&NumeroVenue=MR-2100935&take=50&skip=0&page=1&pageSize=50'
+#+end_src
+
+2. Second ID patient + paramètres dans json "parameters": "patientID|NAA1ADAAMgA=;crCode|TQBvAG4AdABwAGUAbABNAFIA"
+  #+begin_src
+  curl 'https://LOL/Module/Mocas_Parcours/ParcoursIntervenant/GetConteneurOptionsAsync?codeUF=MontpelMR&idPatient=4502' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'cookie: XX
+  -H 'priority: u=1, i' \
+  -H 'referer: https://LOL/BiologisteGeneticienAURAGEN?X-Correlation-ID=6dd93b9b-9410-47da-8422-124f306bbb7a' \
+  -H 'sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Linux"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
+  #+end_src
+3. Jeton domniho dans HTML
+   penDocumentationSuccess.openModuleDominho('https://hygennlb.auragen.fr/dominho/Fiche/CreateOrOpen?jeton-dominho=c9735cd4-ad81-4fcf-9826-43e712e3db49');
+#+begin_src
+curl 'https://hygennlb.auragen.fr/Mocas/PrescriptionsMocas/SuiviPrescription/SuiviPrescription.aspx?PortailHost=Easily&GUID=6a43621e-6303-49e2-8caa-c4fa63d75d7b' \
+  -H 'accept: */*' \
+  -H 'accept-language: fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/x-www-form-urlencoded; charset=UTF-8' \
+  -H 'cookie: _ga=GA1.2.1548195567.1715695226; _ga_0WP9H4JY82=GS1.2.1715695226.1.1.1715697725.0.0.0; ASP.NET_SessionId=52y0btj5sahv20wb1fnihwv2; openSessionMocas=openSessionMocas' \
+  -H 'origin: https://hygennlb.auragen.fr' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://hygennlb.auragen.fr/Mocas/PrescriptionsMocas/SuiviPrescription/SuiviPrescription.aspx?PortailHost=Easily&GUID=6a43621e-6303-49e2-8caa-c4fa63d75d7b' \
+  -H 'sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Linux"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36' \
+  -H 'x-microsoftajax: Delta=true' \
+  -H 'x-requested-with: XMLHttpRequest' \
+  --data-raw '
+#+end_src
+  4. Donne path dans json (mais nécesside "jeton-dominho"):
+    "path": "https://hygennlb.auragen.fr/dominho/Fiche/CreateOrOpen?jeton-dominho=c9735cd4-ad81-4fcf-9826-43e712e3db49&GUID=edf17201-2d01-457a-bb6d-5d8a9efd131b"
+
+  curl 'https://LOL/Container/GenerateLegacyAppPath' \
+  -H 'accept: application/json, text/javascript, */*; q=0.01' \
+  -H 'accept-language: fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/x-www-form-urlencoded; charset=UTF-8' \
+  -H 'cookie: YY
+  -H 'origin: https://LOL' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://LOL/BiologisteGeneticienAURAGEN?X-Correlation-ID=6dd93b9b-9410-47da-8422-124f306bbb7a' \
+  -H 'sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Linux"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36' \
+  -H 'x-correlation-id: c8f6ee18-6179-49f0-be02-0c1bca2909f9' \
+  -H 'x-easily-xrsf-token: Bg2-Gp2ET1pLYTgkzSgG9-PBr0JtFDNiGHyEdsRB71FpWNYlS9An8vlT6Xo6ZajuXTH_Jqt4w3TF_XqQjVPgHIXhiDYPrGfyZ5ak1f4IWV0lqxZ6E2TL1l4lsOUj951xTQNgJwBedrRcD-Cfjn8FoA2' \
+  -H 'x-requested-with: XMLHttpRequest' \
+  --data-raw 'appCode=8&appURL=https%3A%2F%2Fhygennlb.auragen.fr%2Fdominho%2FFiche%2FCreateOrOpen%3Fjeton-dominho%3DYYY'
+** 14:20 dernier essai selenium
+échec

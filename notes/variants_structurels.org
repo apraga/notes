@@ -1,0 +1,65 @@
+:PROPERTIES:
+:ID:       325fe1c2-98c7-4636-8d9f-72135a566bc7
+:END:
+#+title: Variants structurels
+#+filetags: appelvariants auragen
+
+ - principe : au moins 1 lectur3e sur point de cassure avec 2 paires alignable
+ - manta
+ - seuls les points de cassure sont reportés
+ - critères
+   - >= 1 lecture chevauchant SV
+   - qualité variant> 500, PASS
+   - non récurrent (<1% cohorte et population)
+   - pas homozygote chez apparenté
+ - limites : région très répétées (centromérique, télomériques, répétées interstitielles), sans support
+ - Un SV est sur 2 lignes (pour les 2 sens de lecture)
+
+* Types
+On ne cite que les paramètres variant parmi: profondeur, orientation, taille insert et softcli
+** Délétion
+perte de profondeur
+insert trop long
+[[file:~/org/img/deletion.png]]
+** Inversion
+reads dans le même sens
+insert trop longs
+** Insertion intrachromosomique
+orientation inversée
+inserts trop grands
+softclip autour du point d'insertion
+[[../img/insertion-intrachromosomique.png]]
+** insertion intrachromosomique + inversion
+idem insertsion mais orientation read OK
+[[file:~/org/img/insertion-inversion.png]]
+
+rupture de profondeur
+orientation opposée
+taille insert trop court
+softclip de part et d'autre
+[[../img/duplication.png]]
+** duplication + inversion
+idem duplication mais lectures dans le même sens et mélange d'insert trop court et trop long
+[[../img/duplication-inversion.png]]
+** translocation interchromosomique
+RAS, juste la couleur
+[[../img/translocation.png]]
+** insertion interchromosomique équilibrée
+insert trop longs
+
+BCD est inséré entre Q et R
+[[../img/insertion-interchromosomique.png]]
+** insertion interchromosomique + inversion
+Comme inversion mais les reads entre les 2 chromosomes sont dans le même sens !
+[[../img/insertion-interchromosomique-inversion.png]]
+DCB est inséré entre Q et R
+
+** Duplication avec insertion autre chromosome
+Juste rupture de profondeur
+
+BCD est dupliqué et inséré entre Q et R
+[[../img/duplication-intrachromosomique.png]]
+
+* [[id:0f58767c-07ff-401b-977d-15d454a3ab0f][Exemples de variants structurels]]
+* Cas particuliers
+    [[id:8bdb9dba-1270-4c4c-8192-1012e50c2464][Rétrotranscription de transcription de gène / GRIPS]]

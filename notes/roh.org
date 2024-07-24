@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       92f64d28-a582-484b-8181-ea04c13d850d
+:END:
+#+title: ROH
+#+filetags auragen
+
+Runs of homozygosity
+ - attention, on renvoie des RoH et LoH (loss of heterozygotie)
+ - Utile pour voir si consanguinité, disomie uniparentale
+ - limite basse 2Mb
+ - résultat sous forme de tableau. Les courbes brutes semblent utiles mais non rendus car on ne sait pas les interpréter ?

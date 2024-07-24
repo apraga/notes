@@ -1,0 +1,11 @@
+* 2024-05-02
+** 10:00 Auragen
+- [[Amélioration formation auraweb]] ok jusque 2.4
+- [[id:587dc7c4-1dd5-4068-8d24-6e3825f01e66][Validation]]
+- [[Appel de variants]]
+- [[id:67a7ed39-62f6-4853-beeb-a4f1449b394e][Identito-vigilance]]
+- [[id:cc54e449-12a7-41d6-832b-33937255be92][Contrôle qualité]]
+- [[ROH]]
+- ROH = runs of homozygosity. Plusieurs SNP homozygotes -> utilisé pour
+  consanguinité ? facteurs de risque pour certains maladies
+- Listes de gènes d'intrérêt : pour prioriser

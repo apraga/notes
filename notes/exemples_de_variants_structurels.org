@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       0f58767c-07ff-401b-977d-15d454a3ab0f
+:END:
+#+title: Exemples de variants structurels
+
+invdup MR-2203330 rendu chr8:g.( ?_8,231,549)_10,888,653delins11,100,482_(12,035,836_?)inv
+
+inversion paracentrique 18q MR-2402177 30Mb chr18:36,491,658-67,312,508

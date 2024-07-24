@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       e4568e0f-e9e1-4432-9b56-c2cece9d9d11
+:END:
+#+title: Expansionhunter
+#+filetags: auragen appelvariants
+
+- Auragène
+ - 31 loci connus
+ - biblio pour définieur seuils, motifs, marge d'erreur
+
+Principe :
+ - expansion < taille read : nombre de répétion exact -> fiable
+ - expansion ~ taille read : estimé à partir des reads contenant une partie -> confiance modérée (proche seuil patho)
+ - expansion > taille read : estimé à partir des reads contenu dans répétitions -> fiable (>> seuil patho)
+
+validation de méthode
+ - 40 dossiers rétrospectifs avec analyse ciblée demande : 1 expanson patho DMPK -> validé PCR
+ - Rétrospectif: 96.5% dossiers attendus sans STR (2183 dossier en septembre 2022) -> accompagnement pour 3.5%
+ - TCF4 majoritaire
+
+Visu disponible si expansion patho
