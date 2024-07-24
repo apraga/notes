@@ -1,10 +1,9 @@
-:PROPERTIES:
-:ID:       b56743c5-2851-422c-9499-e4af79d1d3e0
-:END:
-#+title: Spectrométrie de masse
-#+filetags: biochimie
+#+title:      Spectrométrie de masse
+#+date:       [2024-07-24 Wed 23:04]
+#+filetags:   :biochimie:
+#+identifier: 20240724T230401
 
-* [[id:be1c72fe-025f-4e5e-8118-e401f2df39f4][Principe]]
+* [[denote:20240724T230432][Principes]]
 * Avantages
 - Nombre d'applications++
 - Détecte/doser de nombreux analytes dans un petit volume
@@ -20,10 +19,10 @@
 - Nécessite un génératerur d'azote
 * Exemples
 ** Bichimie
-- "débrouillage" métabo ( acide animénes, [[id:2241f379-b0e0-4819-b1f7-fcfdd35a09e6][Acycarnitines]] ... )
+- "débrouillage" métabo ( acide animénes, [[denote:20240724T230627][Acylcarnitines]] ..)
 - vitamine D et dérivés
 - stéroïdes
-- 7-déhydrocholestérole ([[id:d32cd79a-d17d-4afa-a6de-d6a31c1bc042][Syndrome Smith-Lemli-Opitz]])
+- 7-déhydrocholestérol: [[denote:20240724T230533][Syndrome de Smith-Lemli-Opitz]]
 - catécholamine, métanéphrines
 - vitamine
 ** Toxicologie, pharmacologie

@@ -1,10 +1,11 @@
-:PROPERTIES:
-:ID:       be1c72fe-025f-4e5e-8118-e401f2df39f4
-:END:
-#+title: Spectrométrie de masse : principes
-#+filetags: biochimie
+#+title:      Spectrométrie de masse : principes
+#+date:       [2024-07-24 Wed 23:04]
+#+filetags:   :biochimie:
+#+identifier: 20240724T230432
 
-Identification de différents composer en fonction de leur masse et charge
+[[file:images/biochimie/spectro-masse.png]]
+
+Identification de différents composants en fonction de leur masse et charge
 * 1. Pré-traitement
 1. Précipitation des protéine: chélation, solvant, acide... puis centrifugation
 2. Extraction des analytiques de la phase aqueuse initiale (dite extraction liquide-liquide car on utilise un autre liiquide)

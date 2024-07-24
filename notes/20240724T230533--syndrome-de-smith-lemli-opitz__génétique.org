@@ -1,8 +1,7 @@
-:PROPERTIES:
-:ID:       d32cd79a-d17d-4afa-a6de-d6a31c1bc042
-:END:
-#+title: Syndrome Smith-Lemli-Opitz
-#+filetags: génétique
+#+title:      Syndrome de Smith-Lemli-Opitz
+#+date:       [2024-07-24 Wed 23:05]
+#+filetags:   :génétique:
+#+identifier: 20240724T230533
 
 - Déficit de l'enzyme 7-dehydrocholesterol-réductase
 * Clinique
