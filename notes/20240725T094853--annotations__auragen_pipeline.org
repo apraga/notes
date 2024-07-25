@@ -1,14 +1,14 @@
-:PROPERTIES:
-:ID:       0b163c10-63c2-44e0-b694-f3749139a3d5
-:END:
-#+title: Annotations
+#+title:      Annotations
+#+date:       [2024-07-25 Thu 09:48]
+#+filetags:   :auragen:pipeline:
+#+identifier: 20240725T094853
+
 VEP
 - toutes annotation
 - ciblées dans rapport de synthèse: impact, mendélien, clinique, structural
 
 Soumis à empreinte sont taggé
 
-$x^2$
 * Intronique profond
 SpliceAI
 - pluginVEP

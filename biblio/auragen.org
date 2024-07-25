@@ -1033,8 +1033,8 @@ CLOSED: [2024-07-15 lun. 16:43]
 :YEAR:     2009
 :END:
 ** Maladies rares
-*** STRT The risk of re-identification versus the need to identify individuals in rare disease research
-SCHEDULED: <2024-07-23 Tue>
+*** DONE The risk of re-identification versus the need to identify individuals in rare disease research
+CLOSED: [2024-07-24 Wed 18:16] SCHEDULED: <2024-07-23 Tue>
 :PROPERTIES:
 :TITLE:    The risk of re-identification versus the need to identify individuals in rare disease research
 :BTYPE:    article
@@ -1239,7 +1239,6 @@ CLOSED: [2024-07-19 Fri 15:05] SCHEDULED: <2024-07-18 Thu>
 :MONTH:    sep
 :PAGES:    165–173
 :END:
-**** Modèles
 ****** DONE Determining the incidence of rare diseases
 CLOSED: [2024-07-18 Thu 17:09] SCHEDULED: <2024-07-18 Thu>
 :PROPERTIES:
@@ -1258,6 +1257,7 @@ CLOSED: [2024-07-18 Thu 17:09] SCHEDULED: <2024-07-18 Thu>
 :MONTH:    feb
 :PAGES:    569–574
 :END:
+**** Modèles
 ****** DONE Prevalence estimation for monogenic autosomal recessive diseases using population-based genetic data
 CLOSED: [2024-07-18 Thu 17:15] SCHEDULED: <2024-07-18 Thu>
 :PROPERTIES:
@@ -1276,7 +1276,7 @@ CLOSED: [2024-07-18 Thu 17:15] SCHEDULED: <2024-07-18 Thu>
 :MONTH:    apr
 :PAGES:    659–669
 :END:
-****** TODO Statistical methods for assessing the effects of de novo variants on birth defects
+****** TODO [#A] Statistical methods for assessing the effects of de novo variants on birth defects
 :PROPERTIES:
 :TITLE:    Statistical methods for assessing the effects of de novo variants on birth defects
 :BTYPE:    article
@@ -1292,22 +1292,9 @@ CLOSED: [2024-07-18 Thu 17:15] SCHEDULED: <2024-07-18 Thu>
 :YEAR:     2024
 :MONTH:    mar
 :END:
-****** TODO A framework for the interpretation of de novo mutation in human disease
-:PROPERTIES:
-:TITLE:    A framework for the interpretation of de novo mutation in human disease
-:BTYPE:    article
-:CUSTOM_ID: samocha2014framework
-:AUTHOR:   Kaitlin E Samocha and Elise B Robinson and Stephan J Sanders and Christine Stevens and Aniko Sabo and Lauren M McGrath and Jack A Kosmicki and Karola Rehnström and Swapan Mallick and Andrew Kirby and Dennis P Wall and Daniel G MacArthur and Stacey B Gabriel and Mark DePristo and Shaun M Purcell and Aarno Palotie and Eric Boerwinkle and Joseph D Buxbaum and Edwin H Cook and Richard A Gibbs and Gerard D Schellenberg and James S Sutcliffe and Bernie Devlin and Kathryn Roeder and Benjamin M Neale and Mark J Daly
-:JOURNAL:  Nature Genetics
-:YEAR:     2014
-:VOLUME:   46
-:NUMBER:   9
-:PAGES:    944-950
-:DOI:      10.1038/ng.3050
-:URL:      http://dx.doi.org/10.1038/ng.3050
-:END:
+***** Selon nucléotide adjacents
 ****** DONE Patterns and rates of exonic de novo mutations in autism spectrum disorders
-CLOSED: [2024-07-22 Mon 10:44]
+CLOSED: [2024-07-25 Thu 16:20]
 :PROPERTIES:
 :TITLE:    Patterns and rates of exonic de novo mutations in autism spectrum disorders
 :BTYPE:    article
@@ -1323,4 +1310,47 @@ CLOSED: [2024-07-22 Mon 10:44]
 :YEAR:     2012
 :MONTH:    apr
 :PAGES:    242–245
+:END:
+****** DONE Most rare missense alleles are deleterious in humans: implications for complex disease and association studies
+CLOSED: [2024-07-25 Thu 15:40]
+:PROPERTIES:
+:TITLE:    Most rare missense alleles are deleterious in humans: implications for complex disease and association studies
+:BTYPE:    article
+:CUSTOM_ID: kryukov2007most
+:AUTHOR:   Kryukov, Gregory V and Pennacchio, Len A and Sunyaev, Shamil R
+:JOURNAL:  The American Journal of Human Genetics
+:VOLUME:   80
+:NUMBER:   4
+:PAGES:    727--739
+:YEAR:     2007
+:PUBLISHER: Elsevier
+:END:
+****** KILL Neighboring-nucleotide effects on the rates of germ-line single-base-pair substitution in human genes
+CLOSED: [2024-07-25 Thu 17:13]
+:PROPERTIES:
+:TITLE:    Neighboring-nucleotide effects on the rates of germ-line single-base-pair substitution in human genes
+:BTYPE:    article
+:CUSTOM_ID: krawczak1998neighboring
+:AUTHOR:   Krawczak, Michael and Ball, Edward V and Cooper, David N
+:JOURNAL:  The American Journal of Human Genetics
+:VOLUME:   63
+:NUMBER:   2
+:PAGES:    474--488
+:YEAR:     1998
+:PUBLISHER: Elsevier
+:END:
+****** DONE A framework for the interpretation of de novo mutation in human disease
+CLOSED: [2024-07-25 Thu 17:49]
+:PROPERTIES:
+:TITLE:    A framework for the interpretation of de novo mutation in human disease
+:BTYPE:    article
+:CUSTOM_ID: samocha2014framework
+:AUTHOR:   Kaitlin E Samocha and Elise B Robinson and Stephan J Sanders and Christine Stevens and Aniko Sabo and Lauren M McGrath and Jack A Kosmicki and Karola Rehnström and Swapan Mallick and Andrew Kirby and Dennis P Wall and Daniel G MacArthur and Stacey B Gabriel and Mark DePristo and Shaun M Purcell and Aarno Palotie and Eric Boerwinkle and Joseph D Buxbaum and Edwin H Cook and Richard A Gibbs and Gerard D Schellenberg and James S Sutcliffe and Bernie Devlin and Kathryn Roeder and Benjamin M Neale and Mark J Daly
+:JOURNAL:  Nature Genetics
+:YEAR:     2014
+:VOLUME:   46
+:NUMBER:   9
+:PAGES:    944-950
+:DOI:      10.1038/ng.3050
+:URL:      http://dx.doi.org/10.1038/ng.3050
 :END:

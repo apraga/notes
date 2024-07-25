@@ -1,0 +1,11 @@
+#+title:      Thursday 25 July 2024 15:51
+#+date:       [2024-07-25 Thu 15:51]
+#+filetags:   :journal:
+#+identifier: 20240725T155128
+
+Biblio facebook sur modèle stat: se base sur le 2 nucléotides adjacent
+- 1er modèle [cite:@kryukov2007most] mais ne donne pas de matrice de mutation
+- [cite:@neale2012patterns] idem et complète avec 1000 Genomes. Ne la donne pas non plus
+- [cite:@samocha2014framework] idem avec des scores d’ajustement. Ne donne que des scores par gènes...
+
+  Reproductibilité pour l’instant compliqué (je veux la matrice !)

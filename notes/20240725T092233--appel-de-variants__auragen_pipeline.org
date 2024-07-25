@@ -1,0 +1,14 @@
+#+title:      Appel de variants
+#+date:       [2024-07-25 Thu 09:22]
+#+filetags:   :auragen:pipeline:
+#+identifier: 20240725T092233
+
+- SNV et petits indel <= 50bp : haplotypecaller
+  - taille des indel : haplotypecaller semble monter jusque 108bp ?
+  - +genotypevcf = appel par groupe après hapolytpecaller
+- [[denote:20240725T092255][Délétion et duplications 50pb-21kb]]
+- [[denote:20240725T092541][Gains et pertes > 21kb]]
+- [[denote:20240725T092901][Variants structurels]]
+
+- STR : [[denote:20240725T093303][ExpansionHunter]]
+[[denote:20240725T092157][Limites appel de variant]]
