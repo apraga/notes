@@ -15,3 +15,6 @@ Répartition du cholestérol (sujet normal à jeun)
 - VLDL: 6-10%
 - LDL 60-65%
 - HDL 25-30%
+* [[denote:20240725T222406][Chylomicrons]]
+* [[denote:20240725T222902][VLDL]]
+* [[denote:20240725T224530][HDL]]

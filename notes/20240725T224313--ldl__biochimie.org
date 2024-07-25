@@ -1,0 +1,12 @@
+#+title:      LDL
+#+date:       [2024-07-25 Thu 22:43]
+#+filetags:   :biochimie:
+#+identifier: 20240725T224313
+
+* Métabolisme
+1. Recyclage du récepteur LDL
+2. Dégradation lysosomale du LDL en cholestérol libre (lui-même estéréifié), AA, Acide gras
+
+  L'expression du récepteur est régulé par
+   - cholestérol libre (inhibé)
+   - PCSK9 (dégrade)
