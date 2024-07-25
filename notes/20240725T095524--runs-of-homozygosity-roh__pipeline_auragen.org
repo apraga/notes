@@ -1,10 +1,8 @@
-:PROPERTIES:
-:ID:       92f64d28-a582-484b-8181-ea04c13d850d
-:END:
-#+title: ROH
-#+filetags auragen
+#+title:      Runs of Homozygosity (ROH)
+#+date:       [2024-07-25 Thu 09:55]
+#+filetags:   :pipeline:auragen:
+#+identifier: 20240725T095524
 
-Runs of homozygosity
  - attention, on renvoie des RoH et LoH (loss of heterozygotie)
  - Utile pour voir si consanguinité, disomie uniparentale
  - limite basse 2Mb

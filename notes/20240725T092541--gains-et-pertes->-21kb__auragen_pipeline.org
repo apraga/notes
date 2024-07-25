@@ -1,17 +1,16 @@
-:PROPERTIES:
-:ID:       6ee24af9-f9fd-4046-8c3a-3b0d077123b3
-:END:
-#+title: Gains et pertes > 21kb
-#+filetags: appelvariants cnv
+#+title:      Gains et pertes > 21kb
+#+date:       [2024-07-25 Thu 09:25]
+#+filetags:   :auragen:pipeline:
+#+identifier: 20240725T092541
 
 CNVator :
-- approche "read depth" = rupture de profondeur (par opposition à Manta [[id:7c2aae7d-c1a3-4ff5-91f4-14888c6fd590][Délétion et duplications 50bp - 21kb]])
+- approche "read depth" = rupture de profondeur (par opposition à Manta [[denote:20240725T092255][Délétion et duplications 50pb-21kb]])
 - Critères
   - 80% lectures sans alignement multiple
   - non récurrente (<1% population et cohorte)
   - absent apparenté à l'état homozygote
 
-[[id:587dc7c4-1dd5-4068-8d24-6e3825f01e66][Validation]] :
+[[denote:20240724T104200][Validation]]
 - 96% RECALL pour pertes 87% gain, T21 vue
 - limites: centromérique,télomérique, sans lecture chevauchantes
 - avantage / ACPA: bornes plus précises, variants plus petites
@@ -32,7 +31,7 @@ Divers
 :PROPERTIES:
 :ID:       64f82f33-24bb-475b-ad85-3303c5a20a8d
 :END:
-- Découverts sur 1 cas + rétrospectif [[id:116b858b-5dd5-4b77-bd67-55fc3b7b76ea][Cas intéressants]]
+- Découverts sur 1 cas + rétrospectif:[[denote:20240716T104823][Cas intéressants]]
 - Quand les délétion est entourée par des régions de faible mappabilité ou petite délétion homozygotes dans del htz
 - Corrigé avec approche manuelle (reproduisant la manière dont elles ont ét détecté)
   1. séléction des zones faibles mappabilité (*exons* profondeur médiane 0 et couverture à 10x de 0%)

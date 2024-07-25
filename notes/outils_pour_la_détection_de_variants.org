@@ -1,9 +1,0 @@
-:PROPERTIES:
-:ID:       30db1b6c-6f95-40db-a363-202b20412d4f
-:END:
-#+title: Outils pour la détection de variants
-
-- région d'homozygotie [[id:92f64d28-a582-484b-8181-ea04c13d850d][ROH]]
-- détection des points de cassure (avec Manta)
-- Estimation ploïdie : profondeur sur chromosome/profondeur génome
-- non signalées si couveture insuffisante/librairie atypiques (avertissement)

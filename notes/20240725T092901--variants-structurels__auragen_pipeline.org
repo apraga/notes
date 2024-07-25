@@ -1,8 +1,7 @@
-:PROPERTIES:
-:ID:       325fe1c2-98c7-4636-8d9f-72135a566bc7
-:END:
-#+title: Variants structurels
-#+filetags: appelvariants auragen
+#+title:      Variants structurels
+#+date:       [2024-07-25 Thu 09:29]
+#+filetags:   :auragen:pipeline:
+#+identifier: 20240725T092901
 
  - principe : au moins 1 lectur3e sur point de cassure avec 2 paires alignable
  - manta
@@ -60,6 +59,6 @@ Juste rupture de profondeur
 BCD est dupliqué et inséré entre Q et R
 [[../img/duplication-intrachromosomique.png]]
 
-* [[id:0f58767c-07ff-401b-977d-15d454a3ab0f][Exemples de variants structurels]]
+* [[denote:20240725T093105][Exemples de variants structurels]]
 * Cas particuliers
-    [[id:8bdb9dba-1270-4c4c-8192-1012e50c2464][Rétrotranscription de transcription de gène / GRIPS]]
+   [[denote:20240725T092957][Rétrotranscription de transcrits (GRIPS)]]

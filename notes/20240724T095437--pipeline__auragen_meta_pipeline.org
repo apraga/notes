@@ -6,10 +6,14 @@
 [[https://auragen.atlassian.net/wiki/spaces/~7120201ca2598be5ef4936a1110033f28f4fed/pages/1532198915/Vue+d+ensemble+du+pipeline][Image]]
 
 Description:
-- [[id:cc54e449-12a7-41d6-832b-33937255be92][Contrôle qualité]] et [[id:117f7970-2579-48e1-b7b0-026b4c9fd0a6][Avertissement]]
-- [[id:ee261ae7-3511-46e0-8c9a-ad4318850104][Appel de variant]]
+- [[denote:20240719T113354][Controle qualité]] et [[denote:20240719T113108][Avertissement]]
+- [[denote:20240725T092233][Appel de variants]]
+
 - Cas particuliers : [[id:30db1b6c-6f95-40db-a363-202b20412d4f][Outils pour la détection de variants]] , [[id:92f64d28-a582-484b-8181-ea04c13d850d][ROH]]
-- [[id:0b163c10-63c2-44e0-b694-f3749139a3d5][Annotations]]
+- [[denote:20240725T095212][Outils pour la détection des variants]]
+- [[denote:20240725T094853][Annotations]]
+
+  TODO
 - [[id:fb97e927-2a25-4733-95a2-c4f520c3c711][Sélection des variants]]
 - [[id:d82ebf38-feca-4409-950f-b208f67fae0d][Priorisation]]
 - [[id:6698b607-38bb-47de-a729-e2e5ad69b94f][Reportmonster]]

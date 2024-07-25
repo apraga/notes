@@ -133,7 +133,7 @@ EXT1 connu (hygen)
 Seqone
 - RBPJ faux sens avec clinique en faveur (retard psychomot et raccourissement doigts), score patho, mais hérité du père.
 *** TODO Vérifier variants non vus avec mon intérprétations
-SCHEDULED: <2024-07-25 Thu>
+SCHEDULED: <2024-07-30 Tue>
 *** WAIT Comprendre nouveaux filtres
   /Entered on/  [2024-05-21 mar. 11:04]
 *** PROJ Présenter les trous de Curagen aux bios
@@ -181,8 +181,8 @@ SCHEDULED: <2024-07-24 Wed>
 *** TODO Retrouver heatmap Shendure avec score par variant
 SCHEDULED: <2024-07-24 Wed>
   /Entered on/  [2024-07-24 Wed 12:23]
-*** TODO Exemple de données identifiantes sur forum maladie rare
-SCHEDULED: <2024-07-24 Wed>
+*** DONE Exemple de données identifiantes sur forum maladie rare
+CLOSED: [2024-07-24 Wed 17:47] SCHEDULED: <2024-07-24 Wed>
   /Entered on/  [2024-07-24 Wed 14:29]
 ** Case report CHD7 :article:
 :PROPERTIES:
@@ -224,8 +224,8 @@ SCHEDULED: <2024-08-02 ven.>
 :PROPERTIES:
 :CATEGORY: ARID4A
 :END:
-*** TODO Genematcher ARID4A
-SCHEDULED: <2024-07-24 Wed>
+*** DONE Genematcher ARID4A
+CLOSED: [2024-07-24 Wed 17:47] SCHEDULED: <2024-07-24 Wed>
 Julien intéressé pour que cela reste à Grenoble car une de ses équipes travaille sur l’épigénétique.
 4 patients candidats sur auramatcher :
 2 faux sens en 620 et 621
@@ -234,8 +234,8 @@ Julien intéressé pour que cela reste à Grenoble car une de ses équipes trava
 sur la fonction du domaine tuudor-knot où sont les résidus 620 et 621 et sur l’importance de cette région pour la reconnaissance de marques épigénétiques
 https://europepmc.org/article/MED/22247551
   /Entered on/  [2024-07-24 Wed 10:37]
-*** WAIT Mail GeneDx: attente relecture julien
-SCHEDULED: <2024-07-25 Thu>
+*** DONE Mail GeneDx: attente relecture julien
+CLOSED: [2024-07-25 Thu 08:57] SCHEDULED: <2024-07-25 Thu>
 *** DONE Mail Marjolaine pour accord genematcher
 CLOSED: [2024-07-24 Wed 14:10] SCHEDULED: <2024-07-24 Wed>
 ** Génomes péruvien
@@ -289,7 +289,7 @@ CLOSED: [2024-06-11 mar. 10:57] SCHEDULED: <2024-06-11 mar.>
 **** DONE Vérifier sur KIF1BP et GBA
 GBA1 -> GBA antérieur
 ** TODO Pubmatcher sur variants sans clinvar ni HPO
-SCHEDULED: <2024-07-25 Thu>
+SCHEDULED: <2024-08-01 Thu>
   /Entered on/  [2024-06-11 mar. 10:30]
 
 * Formation
@@ -330,7 +330,7 @@ Mettre à jour https://auragen.atlassian.net/wiki/spaces/~7120201ca2598be5ef4936
 ** Projet Facebook :facebook:
 ** RVI Montpellier :montpellier:rvi:
 *** TODO RVI
-SCHEDULED: <2024-07-25 Thu 09:30 +7d>
+SCHEDULED: <2024-07-25 Thu 10:00 +7d>
 :PROPERTIES:
 :END:
 *** TODO Clinico-biologique
@@ -364,8 +364,8 @@ SCHEDULED: <2024-07-25 jeu. 09:00 +2w>
 :LAST_REPEAT: [2024-07-11 jeu. 10:05]
 :END:
 - State "DONE"       from "TODO"       [2024-07-11 jeu. 10:05]
-*** TODO Présentation axe3 absplice
-SCHEDULED: <2024-07-24 Wed> DEADLINE: <2024-07-25 Thu 09:00>
+*** DONE Présentation axe3 absplice
+CLOSED: [2024-07-25 Thu 08:57] SCHEDULED: <2024-07-24 Wed> DEADLINE: <2024-07-25 Thu 09:00>
   /Entered on/  [2024-07-24 Wed 13:59]
 ** Réunion biologistes Auragen :bio:auragen:
 ** DONE Julien

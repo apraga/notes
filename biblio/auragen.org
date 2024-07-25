@@ -1033,8 +1033,8 @@ CLOSED: [2024-07-15 lun. 16:43]
 :YEAR:     2009
 :END:
 ** Maladies rares
-*** STRT The risk of re-identification versus the need to identify individuals in rare disease research
-SCHEDULED: <2024-07-23 Tue>
+*** DONE The risk of re-identification versus the need to identify individuals in rare disease research
+CLOSED: [2024-07-24 Wed 18:16] SCHEDULED: <2024-07-23 Tue>
 :PROPERTIES:
 :TITLE:    The risk of re-identification versus the need to identify individuals in rare disease research
 :BTYPE:    article

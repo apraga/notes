@@ -1,0 +1,16 @@
+* Prédiction bioinformatique
+** Épissage
+*** Aberrant splicing prediction across human tissues
+:PROPERTIES:
+:TITLE:    Aberrant splicing prediction across human tissues
+:BTYPE:    article
+:CUSTOM_ID: wagner2023aberrant
+:AUTHOR:   Wagner, Nils and {\c{C}}elik, Muhammed H and H{\"o}lzlwimmer, Florian R and Mertes, Christian and Prokisch, Holger and Y{\'e}pez, Vicente A and Gagneur, Julien
+:JOURNAL:  Nature genetics
+:VOLUME:   55
+:NUMBER:   5
+:PAGES:    861--870
+:YEAR:     2023
+:PUBLISHER: Nature Publishing Group US New York
+:URL:      https://www.nature.com/articles/s41588-023-01373-3
+:END:

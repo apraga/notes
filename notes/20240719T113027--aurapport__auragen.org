@@ -1,3 +1,6 @@
+:PROPERTIES:
+:CUSTOM_ID: h:09677e72-c8bf-4eae-8e7e-d3e0f79407e0
+:END:
 #+title:      Aurapport
 #+date:       [2024-07-19 Fri 11:30]
 #+filetags:    :auragen:

@@ -1,7 +1,7 @@
-#+title:      Délétion et duplications 50bp - 21kb
-#+date:       [2024-07-19 Fri 11:32]
-#+filetags:   :pipeline:manta:cnv
-#+identifier: 20240719T113251
+#+title:      Délétion et duplications 50pb-21kb
+#+date:       [2024-07-25 Thu 09:22]
+#+filetags:   :pipeline:auragen:
+#+identifier: 20240725T092255
 
 Manta :
 - approche "split reads" = lectures chevauchantes (alors que CNVnator utilise des rupture de profondeur[[id:6ee24af9-f9fd-4046-8c3a-3b0d077123b3][Gains et pertes > 21kb]] )
