@@ -1,0 +1,17 @@
+#+title:      Marqueurs cardiaques
+#+date:       [2024-07-25 Thu 23:31]
+#+filetags:   :biochimie:
+#+identifier: 20240725T233149
+
+
+* Cardiomyocytes
+- Très semblable aux tissu musculaire strié
+- Unité contractile : actine, tropomyosine, hétéro-trimère de troponine ICT
+  - troponine : permet d'ancrage de la tropomyosine sur le fimalemnt d'actine
+  - cet ancrage est régulé par le calcium
+- dans le cytoplasme des cardiomyocites, il existe des sous-unités libres des troponine I et T (4-6% des troponines)
+  - si destruction, vont se retrouver dans le sang
+* Fonction endocrine
+- production peptide natriurétique type A par les oreillettes = ANP
+- type B par les ventriculaire = BNP
+  (NB: également sécrété hors du coeur)
