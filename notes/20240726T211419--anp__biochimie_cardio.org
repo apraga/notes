@@ -1,0 +1,11 @@
+#+title:      ANP
+#+date:       [2024-07-26 Fri 21:14]
+#+filetags:   :biochimie:cardio:
+#+identifier: 20240726T211419
+
+= Peptide natriurétique type A
+* Production
+- Par les oreillettes si augmentation de pression dans l'oreillete
+- proANP clivé en ANP active et autres peptides
+- rapidement mobilisable
+- très homologue à [[denote:20240726T211519][BNP]]

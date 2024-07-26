@@ -1,9 +1,0 @@
-:PROPERTIES:
-:ID:       0286b98f-eb1f-41f0-80c5-ecfe06e243da
-:END:
-#+title: Créatine kinase
-#+filetags: biochimie
-
-Marqueur lyse musculaire/cardiaque/cérébrale
-Interférence : B12
-Normes 20-230 UI/L

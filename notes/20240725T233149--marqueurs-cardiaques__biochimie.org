@@ -9,9 +9,35 @@
 - Unité contractile : actine, tropomyosine, hétéro-trimère de troponine ICT
   - troponine : permet d'ancrage de la tropomyosine sur le fimalemnt d'actine
   - cet ancrage est régulé par le calcium
-- dans le cytoplasme des cardiomyocites, il existe des sous-unités libres des troponine I et T (4-6% des troponines)
+- dans le cytoplasme des cardiomyocytes, il existe des sous-unités libres des troponine I et T (4-6% des troponines)
   - si destruction, vont se retrouver dans le sang
 * Fonction endocrine
-- production peptide natriurétique type A par les oreillettes = ANP
-- type B par les ventriculaire = BNP
-  (NB: également sécrété hors du coeur)
+- [[denote:20240726T211519][BNP]]
+- [[denote:20240726T211419][ANP]]
+* Pathologies
+- ischémiques (déséquilirbe apport O_2 et besoin) :
+  1. souffrance transitoire et réversible
+  2. peut évoluer en nécrose tissulaire (irréversible)
+- autres
+Nécrose cardiomyocets : relargage contenu cardiomyocytes dans le sang -> intérêt des biomarqueurs
+** Atteinte myocardiaque
+*** Syndrome coronaire aigu
+- (le plus souvent) obstruction par thrombus endocoronaire après rupture athérome
+- diminution du débit -> ischémie +/- nécrose
+- urgence médicale
+Diagnostic sur clinique et ECG
+- si non contributif, utilisé des biomarqeurs (ou pour confirmer a posteriori ou suivi)
+**** [[denote:20240726T220054][Troponines]]
+Il faut quelques heures...
+**** autres marqueurs
+- [[denote:20240726T221009][Créatines kinases]]
+- [[denote:20240726T221449][Myoglobine]]
+- [[denote:20240726T221814][ASAT]]
+- [[denote:20240726T221937][LDH]]
+
+ [[file:images/biochimie/idm.png]]
+** Insuffisance cardiaque
+- Incapacité pour la pompe cardiaque pour assurer un débit circulatoire suffisant
+- Classification NYHA: (I à IV)
+- Définition : 3 types selon la frajction d'éjection (utilise notamment peptides natriurétiques)
+- Attention aux reco pour le diagnostic: BNP et Nt-pronBNP sont interchangé
