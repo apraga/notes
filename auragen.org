@@ -561,3 +561,6 @@ SCHEDULED: <2024-07-26 Fri>
 Suite à auramatcher pour http://172.25.219.90:8080/aurapport/app/#/main/summary?case=MR-2401008-t
 TNRC6B diag ?
 * Interprétation génomes/Montpellier
+** TODO MR-2401144
+SCHEDULED: <2024-07-29 Mon>
+  /Entered on/  [2024-07-26 Fri 09:48]
