@@ -382,7 +382,33 @@ SCHEDULED: <2024-07-23 Tue>
 :DOI:      10.1038/s41467-023-42531-9
 :URL:      http://dx.doi.org/10.1038/s41467-023-42531-9
 :END:
-
+**** DONE Systematic analysis of dark and camouflaged genes reveals disease-relevant genes hiding in plain sight
+CLOSED: [2024-07-26 Fri 12:12] SCHEDULED: <2024-07-26 Fri>
+:PROPERTIES:
+:TITLE:    Systematic analysis of dark and camouflaged genes reveals disease-relevant genes hiding in plain sight
+:BTYPE:    article
+:CUSTOM_ID: ebbert2019systematic
+:AUTHOR:   Ebbert, Mark TW and Jensen, Tanner D and Jansen-West, Karen and Sens, Jonathon P and Reddy, Joseph S and Ridge, Perry G and Kauwe, John SK and Belzil, Veronique and Pregent, Luc and Carrasquillo, Minerva M and others
+:JOURNAL:  Genome biology
+:VOLUME:   20
+:PAGES:    1--23
+:YEAR:     2019
+:PUBLISHER: Springer
+:URL:      https://link.springer.com/article/10.1186/s13059-019-1707-2
+:END:
+**** KILL Errors in RNA-Seq quantification affect genes of relevance to human disease
+CLOSED: [2024-07-26 Fri 12:09]
+:PROPERTIES:
+:TITLE:    Errors in RNA-Seq quantification affect genes of relevance to human disease
+:BTYPE:    article
+:CUSTOM_ID: robert2015errors
+:AUTHOR:   Robert, Christelle and Watson, Mick
+:JOURNAL:  Genome biology
+:VOLUME:   16
+:PAGES:    1--16
+:YEAR:     2015
+:PUBLISHER: Springer
+:END:
 * Facebook
 :PROPERTIES:
 :CATEGORY: facebook

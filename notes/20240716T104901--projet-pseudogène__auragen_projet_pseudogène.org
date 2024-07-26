@@ -28,6 +28,10 @@ Il faudra utiliser le VCF avant la biglist donc relancer toute l'annotation -> i
 - biblio
 - porter script en hg38
 - test sur NA12878 en attendant accès au cluster
+* Validation
+[cite:@steyaert2023systematic]
+- 20 patients passé en long-read
+-
 * Patient test
 ** MR-2202491:  chr1:155235252A>G  sur /GBA/ : probablement recombinaison avec pseudogène /GBAP1.
 séquence très proche entre les 2 gènes donc alignement difficile.

@@ -147,10 +147,20 @@ CLOSED: [2024-06-12 mer. 14:17] SCHEDULED: <2024-06-12 mer.>
 :CATEGORY: pseudogene
 :END:
 *** TODO Biblio
-*** TODO Tester en hg19
+*** TODO Exécuter code existant en hg19
 SCHEDULED: <2024-07-24 Wed>
-*** TODO Porter script en hg19
+*** TODO Vérifier concordances
+**** TODO GIAB ? [cite:@steyaert2023systematic]
+Non clair, région masquée ?
+- giab [[https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-023-42531-9/MediaObjects/41467_2023_42531_MOESM11_ESM.xlsx][Liste des variants]] disponible
+**** TODO Accès données pacbio : voir avec Julien [cite:@steyaert2023systematic]
+- pacbio maison: accès restreint, à demander
+  - https://ega-archive.org/datasets/EGAD00001009109 6 trio + 1 proband en HiF 30X
+  - https://ega-archive.org/datasets/EGAD00001011305 STRPC1 sur cohorte
+
+*** TODO Porter script en hg38
   /Entered on/  [2024-05-21 mar. 11:07]
+*** TODO Porter python
 ** Facebook
 :PROPERTIES:
 :CATEGORY: facebook
@@ -178,8 +188,8 @@ Fusionner notes
 *** TODO Trouver algo de simulation de probab d’un variant (2-3 nucléotides)
 SCHEDULED: <2024-07-25 Thu>
   /Entered on/  [2024-07-22 Mon 17:17]
-*** TODO Retrouver heatmap Shendure avec score par variant
-SCHEDULED: <2024-07-25 Thu>
+*** KILL Retrouver heatmap Shendure avec score par variant
+CLOSED: [2024-07-26 Fri 09:51] SCHEDULED: <2024-07-25 Thu>
   /Entered on/  [2024-07-24 Wed 12:23]
 *** DONE Exemple de données identifiantes sur forum maladie rare
 CLOSED: [2024-07-24 Wed 17:47] SCHEDULED: <2024-07-24 Wed>
@@ -218,8 +228,11 @@ CLOSED: [2024-06-25 mar. 16:05] SCHEDULED: <2024-06-25 mar.>
 CLOSED: [2024-07-02 mar. 12:08]
   /Entered on/  [2024-06-25 mar. 13:57]
 *** TODO Envoi ADN biomnis (parent + cas index)
-SCHEDULED: <2024-08-02 ven.>
-  /Entered on/  [2024-06-25 mar. 13:58]
+SCHEDULED: <2024-07-31 Wed>
+Discuté avec Pauline [2024-07-26 Fri] : ok pour envoi par Marine la semaine prochaine
+*** DONE Vérifier consentement pour envoi "recherche"
+CLOSED: [2024-07-26 Fri 13:58] SCHEDULED: <2024-07-26 Fri>
+  /Entered on/  [2024-07-26 Fri 13:31]
 ** ARID4A
 :PROPERTIES:
 :CATEGORY: ARID4A
@@ -376,6 +389,14 @@ CLOSED: [2024-07-23 Tue 09:53] SCHEDULED: <2024-07-22 lun. 13:30>
 Entered on [2024-07-16 mar. 09:53]
 ** TODO Julien :facebook:
 SCHEDULED: <2024-07-29 lun. 14:00>
+Facebook
+- présenter résultats sur forum
+- modèle stats (si fini)
+Pseudogène
+- demander accès pacbio ? validation faite sur 6 patient GIAB mais ils ont fait du long read hifi. Il faut passer par une commission
+  - https://ega-archive.org/datasets/EGAD00001009109 6 trio + 1 proband en HiF 30X
+  - https://ega-archive.org/datasets/EGAD00001011305 STRPC1 sur cohorte
+
 ** TODO Philippe Jean (heure approx) :facebook:
 SCHEDULED: <2024-07-29 lun. 17:00>
 Entered on [2024-07-16 mar. 09:53]
@@ -519,8 +540,16 @@ CLOSED: [2024-07-15 lun. 12:15] SCHEDULED: <2024-07-15 lun.>
   VOUS+ STAG2 site canonique d'épissage seqone
   WNT5A score bionfo non en faveur mais 2x gnomAD, clinique partiellement mais forme dominant plus mild  https://onlinelibrary.wiley.com/doi/10.1002/ajmg.a.61884peu. hérité de la mère
   Deletion qui prend quaisiment tout APOL1 sur gène de néphropathie (pas d'hydropnéphrose associé), non présent DGV
-*** WAIT MR-2400560
-NPRL3 3x gnomad mais score vert... faux-sens décrit dans la pathologie, colle clinique, clinvar VOUS... -> revoir le père ?
+*** WAIT MR-2400560: négatif poussé hygen, à transmettre Jérémie
+SCHEDULED: <2024-07-29 Mon>
+4x gnomad, tronquants surtout rapporté (mais pLI 0.19), scores bénin sauf CADD
+Domain fonctionnel
+faux-sens décrit dans la pathologie, colle clinique, clinvar VOUS... -> revoir le père ?
+
+Publi : 11 enfant épilepsie NPRL3 + biblio (88 cas)
+- moléculaire : 75% perte de fonction
+- clinique : "sleep-related hypermotor epilepsy (SHE), frontal lobe epilepsy (FLE), and temporal lobe epilepsy." surtout, majorité IRM normale
+- ici 2 faux-sens conservé Ala134Thr et Val217
 *** WAIT MR-2400334 attente Jérémie
   /Entered on/  [2024-07-08 lun. 16:53]
 *

@@ -1,0 +1,55 @@
+#+title:      Systematic analysis of paralogous regions in 41,755 exomes uncovers clinically relevant variation
+#+date:       [2024-07-26 Fri 09:52]
+#+filetags:   :bib:chameleolyser:pseudogène:
+#+identifier: 20240726T095249
+#+reference:  steyaert2023systematic
+
+Identification SNVV,indel, CNV et "ectopic gene conversion" en exome sur région homologues
+
+* Contexte
+:PROPERTIES:
+:CUSTOM_ID: h:0637a6fa-b137-434c-94d7-b08c4caba476
+:END:
+- région paralogues
+  - 17000 gènes codant ont une séquence fortement identiques à d’autres régions du génome (=paralogue)
+  - origin : duplication/rétro-transcription dans l’évolution
+  - divergence avec accumulation de mutation -> parfois perte de fonction -> paralogue non codant (pseudogene) ou codant mais différente fonction
+- ectopic gene conversion
+  - copie d’une séquence homologue d’ADN (donneur) sur une autre (accepteur). Mécanisme = erreur pendant recombinaison homologue duran ala méoiose
+  - 1% des gènes impliqués maladies héritées
+- problème :
+  1. gene conversion non indentifié en exome/genome
+     - les reads sur la région "acceptrice" sont aligné sur la région "donneuse" -> peu de reads sur la région acceptrice -> pas de SNVs appelé
+     - identifié comme délétion lors de l’appel de CNV
+  2. les régions identiques à 100% auront une qualité d’alignement de 0 (car multiple endroits possibles)
+- Méthodes existantes
+  - CNV: 
+    - utilisation de profondeur sur des nucléotides uniques : inconvénient : génome (pas un problème pour nous...) et ne fonctionne pas pour les gene conversion
+  - *rien pour les SNVs/indel sur paralogue identique*
+  - [cite:@ebbert2019systematic] : caractérisation mais pas de solution concrète d’après les auteurs.
+   
+* Algorithme
+1. extraction des reads (3.5% exomes) affecté par l’homologie de séqueunce
+2. ré-aligné sur génome de référence en masquant les régions homologues
+3. appels de variant
+Pour différence délétion homozygote et ectopic gene conversion
+1. analyse de la couverture dans l’alignement initial :
+   - les reads du site accepteur seront aligné sur le site donner -> pas de reads à cet pas de reads sur le site et 2x sur le donneur
+* Validation
+- Long-read Pacbio sur 20 échantillions
+  - sur 769 SNV/indel non du à une gene conversion -> 678 confirmé
+  - 8 gene conversion homozygotes -> toutes retrouvées
+  - 15 délétion homozygotes -> 13/15 confirmée
+- 5 patients GIAB : NA12878 HG002-5
+  - attention: il faut le meme kit, donc ils n’ont regardé que les SNV/indel ne résultant pas d’un gene
+  - 118SNV/indel non résultat d’un gene conversion -> 98 concordent
+
+** Données disponible
+- pacbio maison: accès restreint, à demander
+  - https://ega-archive.org/datasets/EGAD00001009109 6 trio + 1 proband en HiF 30X
+  - https://ega-archive.org/datasets/EGAD00001011305 STRPC1 sur cohorte
+- giab [[https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-023-42531-9/MediaObjects/41467_2023_42531_MOESM11_ESM.xlsx][Liste des variants]] disponible mais à revoir
+* Résultats autres
+** Comparaison avec autres appels de variants
+- SNV et indel non dépendant gene conversion
+  - GTK et deepvariant
