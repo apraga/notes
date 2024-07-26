@@ -27,3 +27,5 @@
 - [[denote:20240721T144858][Acido-cétose diabétique]]
 * Domaines
 [[denote:20240721T131524][Examens biologique en hépato-gastroentérologie]]
+[[denote:20240725T233149][Marqueurs cardiaques]]
+[[denote:20240726T230440][Dyslipoprotéinémies]]

@@ -41,3 +41,4 @@
   - LDL < 4.1mmol/L (ou 1.6g/L)
   - HDL > 1 mmol/L (ou 0.40g/L)
 - cible : selon FR CV
+* Voir aussi [[denote:20240726T230440][Dyslipoprotéinémies]]

@@ -41,3 +41,6 @@ Il faut quelques heures...
 - Classification NYHA: (I à IV)
 - Définition : 3 types selon la frajction d'éjection (utilise notamment peptides natriurétiques)
 - Attention aux reco pour le diagnostic: BNP et Nt-pronBNP sont interchangé
+- BNP ou NT-proBNP ? Voir [[denote:20240726T211519][BNP]]
+
+* Voir aussi [[denote:20240726T230440][Dyslipoprotéinémies]]
