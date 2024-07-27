@@ -34,14 +34,14 @@ CLOSED: [2024-07-14 Sun 21:51] SCHEDULED: <2024-07-14 Sun>
 SCHEDULED: <2024-07-27 Sat>
 
 ******* TODO tensorflow: Compléter patch upstream en supprimer tous distutils
-SCHEDULED: <2024-07-27 Sat>
+SCHEDULED: <2024-08-03 Sat>
 ******* TODO CUDA
-SCHEDULED: <2024-07-27 Sat>
+SCHEDULED: <2024-08-03 Sat>
 ******* TODO Misc
 ******* TODO Bazel
-SCHEDULED: <2024-07-27 Sat>
+SCHEDULED: <2024-08-03 Sat>
 ******* TODO Clif
-SCHEDULED: <2024-07-27 Sat>
+SCHEDULED: <2024-08-03 Sat>
 ***** DONE [[file:~/code/nixpkgs/pkgs/by-name/ti/tiddit/package.nix::{][Package nix Tiddit]]
 ***** WAIT [[https://github.com/NixOS/nixpkgs/pull/312995][PR]] package nix tiddit
 Rebase + corrections + relancé <2024-06-29 Sat>
@@ -136,6 +136,9 @@ SCHEDULED: <2024-07-24 Wed +1d>
 :STYLE:    habit
 :LAST_REPEAT: [2024-06-30 Sun 15:43]
 :END:
++ State "DONE"       from "TODO"           <2024-07-26 Fri 10:01>
++ State "DONE"       from "TODO"           <2024-07-25 Thu 10:01>
++ State "DONE"       from "TODO"           <2024-07-24 Wed 10:01>
 + State "DONE"       from "TODO"           <2024-07-23 Tue 10:01>
 + State "DONE"       from "TODO"           <2024-07-22 Mon 10:01>
 + State "DONE"       from "TODO"           <2024-07-21 Sun 10:01>
@@ -311,6 +314,9 @@ CLOSED: [2024-06-30 Sun 14:28] SCHEDULED: <2024-06-30 Sun>
 ** TODO Mettre en place prélèvement loyer
 SCHEDULED: <2024-07-30 Tue>
 /Entered on/ [2024-07-02 Tue 22:54]
+** TODO Modus themes nushell
+SCHEDULED: <2024-08-17 Sat>
+  /Entered on/  [2024-07-27 Sat 10:17]
 * Scrap
 ** DONE Aerial spincity
 CLOSED: [2024-05-26 Sun 00:14] SCHEDULED: <2024-05-25 Sat>
