@@ -1,0 +1,34 @@
+#+title:      Hyperthyroïdies
+#+date:       [2024-07-27 Sat 16:24]
+#+filetags:   :endoc:
+#+identifier: 20240727T162427
+
+Hyperfonctionne de la glande
+* Clinique
+- Thyrotoxicose (voir [[denote:20240727T161415::#h:406ad1c0-07b8-4500-8e81-d25f509f7446][Hormones thyroïdiennes::Effets]] pour comprendre)
+  - amaigrissement
+  - tachycardie, tachyarythmie
+  - thermophobile, transpiration abondante
+  - diarrhée, vomissement
+  - tremblement, nervosité,
+  - Faiblesse musculaire
+* Types
+- Maladie de Basedow :
+  - goitre diffus, lisse, ferme
+  - exophtalmie
+  - moxoedime pré-tibial
+- Adénome toxique : 1 nodule thyroïde sans hypertrophire
+- Goître multinodulaire toxique: plusieurs foyers d'hyperplasie
+- Thyroïdite subaigüe : inflammation post-infection virale
+- Amiodarone
+* Bilan
+- *TSH diminuée* (1ere intention)
+  - (T4 et 3 diminuée mais non constant)
+- Basedow: 80% anticoprs anti-RTSH
+- Prise d'hormones thyroïdiennes : thyroglobuline circulante effondrée (mise au repos de la thyroïde)
+- Grossese : β-HCG mime l'effet de la TSH
+- Surcharge iodée : Iodurie augmenté
+- Thyroïdites subaigüe : augmentation VS
+* Traitement
+- Repos, sédatif, β-bloquant
+- Et selon la cause : antithyroïdien de synthèse (12-18mois), ablation thyroïdie, iode radioctif f

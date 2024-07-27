@@ -1,0 +1,16 @@
+#+title:      Dysthyroïdies
+#+date:       [2024-07-27 Sat 16:06]
+#+filetags:   :biochimie:endoc:
+#+identifier: 20240727T160618
+
+* Physiologie
+Thyroïde
+- colloïde : lieu de stockage
+- Cellules folliculaire (autour du colloïde): synthèse thyroglobuline et hormones thyroïdiennes
+- cellules parafolliculaire = synthèse calcitonine
+
+** Synthèse hormones thyroïdiennes
+1. Iode + thyroglobuline (via la TPO = thyropéroxidysae) -> MIT et DIT (mono et di-iodotyrosines)
+2. 2 DIT -> T4
+3. MIT + DIT -> T3 (tri-iodotyronine)
+4. T4,T3 libéré dans le sang

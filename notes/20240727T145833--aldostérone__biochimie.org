@@ -16,6 +16,9 @@
   - canal ENaC dans le tube contourné distale [sodium]
   - pompe Na+/K+-ATPase [sodium + potassium]
 * Dosage
+:PROPERTIES:
+:CUSTOM_ID: h:1f0e63c0-746b-40fb-8cd5-47f5a63f2c71
+:END:
 - sang, urine
 - *très variable dans la journée*
   - urine 24h utile pour "lisser" mais ne donne qu'une partie de la sécrétion (1%, le reste est métabolisé)

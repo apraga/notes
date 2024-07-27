@@ -1,0 +1,69 @@
+#+title:      Hormones thyroïdiennes
+#+date:       [2024-07-27 Sat 16:14]
+#+filetags:   :biochimie:endoc:
+#+identifier: 20240727T161415
+
+- Presque totalement lié aux protéines plasmatique (quasiment pas de fraction libre)
+- Transport par TBG (thyroxine binding globuline), TTR (transthyrétine), albumine
+- T4 -> T3 (forme biologiquemnt active) en périphérie (désiodation)
+- T4 -> reverse t3 (inactive) (désiodation)
+
+* Synthèse
+1. Iode + thyroglobuline (via la TPO = thyropéroxidysae) -> MIT et DIT (mono et di-iodotyrosines)
+2. 2 DIT -> T4
+3. MIT + DIT -> T3 (tri-iodotyronine)
+4. T4,T3 libéré dans le sang
+
+* Mécanisme d'action
+- facteurs de transcription dans les noyaux
+
+* Régulation
+[[file:images/biochimie/hormones-thyroides.png]]
+
+* Effets
+:PROPERTIES:
+:CUSTOM_ID: h:406ad1c0-07b8-4500-8e81-d25f509f7446
+:END:
+** Organes
+- Stimule contraction musculaire
+- Développement osseux
+- Rein : augmente débit sanguin + filtration
+- Connexion neuronale
+- Accélère transit
+- Cœur : augmentation rythme cardiaque et contractilité
+** Métabolisme
+- Cellules : consommation O_2 et thermogenèse
+- Hyperglycémie
+- Augmente lipolyse
+- Catabolise protéines
+* Bilan biologique
+** TSH première intention
+- dosage 3e génération : immunométrique avec détection par chimiluminescence
+- TSH < 0.01mUI/L = thyrotoxicose
+- hyperthyroïde sub-clinique: TSH   0.01-0.1
+** T3 et T4 totale
+- dosage immunologique
+- attention la concentration des protéines porteuse influence dans le même sens celle des hormones thyroïdiennes
+** T3,T4 libres
+- très faible
+- dosage délicat
+** [[denote:20240727T161330][Thyroglobuline]]
+** Anticorps anti-TRSH
+- Intérête : maladie de Basedow (diagnostic, suivi notamment grossesse)
+- 2 types : stimulant l'effet TSH ou bloquant...
+** Anticorps anti-tyropéroxydase (TPO)
+- immunologique compétitive ou non
+- indications: maladies thyroïdiennes auto-immunes (diagnostic, facteur de risque)
+* Technique
+** Référence (lourd++): séparation hormones libres et liées par dialyse/ultrafiltratino
+** Routine
+  - 2 étapes : hormones libres à doser se fixent à des anticorps (fixés eux aussi). Le traceur va se fixer sur les anticorps libres -> signal inversement proportionnel
+  - 1 étape : compétition entre les hormones libres à doser et des hormones analogue -> signal inversement proportionnel élagement
+  - anticorps marqué : C'est toujous un mécanisme de compétition mais les anticorps sont libres et il y a des microparticules avec des analogues.
+[[file:images/biochimie/ac-marqués.png]]
+** Intérférences analytiques
+- héparine (augmente fraction libre par simulation de la lipase)
+- anomalies protéines porteuses
+- auto-anticorps anti-hormones thyroïdiennes
+- anticorps hétérophiles ou FR
+- compétition navec certains médicaments

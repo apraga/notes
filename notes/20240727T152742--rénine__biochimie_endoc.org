@@ -11,6 +11,9 @@
 - inhibé par l'angiotensine II
 Ordre de grandeur: quelques minutes !
 * Dosage
+:PROPERTIES:
+:CUSTOM_ID: h:a5aaba22-cae3-4c4c-aff8-94b65e307103
+:END:
 ** Activité rénine plasmatique = long, difficile
 - méthode historique
 - indirecte (on quantifie angiotensine I par anticorps polyclonaux)

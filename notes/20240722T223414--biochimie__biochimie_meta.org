@@ -28,10 +28,11 @@
 - [[denote:20240717T202347][Syndrome inflammatoire aigu biologique]]
 * Physiologie
 - [[denote:20240727T140017][Foie]]
- [[denote:20240727T144458][Système rénine-angiotensine-aldostérone]]
-* Domaines
+- [[denote:20240727T144458][Système rénine-angiotensine-aldostérone]]
+* Maladies
 - [[denote:20240721T131524][Examens biologique en hépato-gastroentérologie]]
 - [[denote:20240725T233149][Marqueurs cardiaques]]
 - [[denote:20240726T230440][Dyslipoprotéinémies]]
+-
 * Cas cliniques
 - [[file:cas-cliniques/dyslipidémies.pdf][Dyslipidémies]] (bof)
