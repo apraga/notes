@@ -1,9 +1,10 @@
-​#biochimie
+#+title:      Foie
+#+date:       [2024-07-27 Sat 14:00]
+#+filetags:   :biochimie:hépato:
+#+identifier: 20240727T140017
 
-** Physiologie
-:PROPERTIES:
-:CUSTOM_ID: physiologie
-:END:
+
+* Physiologie
 Énergie:
 
 - stocke glucose
@@ -18,7 +19,8 @@ Synthèse majeure partie des protéines sauf immunoglobulines
 - coagulation
 - inflammation (CRP, partie du complément)
 
-Synthèse du cholestéral Épuration : 
+Synthèse du cholestéral
+Épuration : 
 
 - déchet du métabolisme = amoniaque sous forme d'urée (catabolisme
   azotée), bilirubine ,
@@ -28,10 +30,7 @@ Synthèse du cholestéral Épuration : 
   Transforme médicaments, toxique.... par modification (ex: cytochrome
   P450) puis conjugaison
 
-*** Bilirubine
-:PROPERTIES:
-:CUSTOM_ID: bilirubine
-:END:
+** Bilirubine
 Production
 
 - 20% catabolisme dans le foie des autres composants de l'hème ou
@@ -53,43 +52,15 @@ Patho:
   préma) on a alors bilirubine libre non liée à l'albumine
 - bilirubine conjugée dans le plasma -> urines foncées (diag d'ictère)
 
-*** Fonction biliaire
-:PROPERTIES:
-:CUSTOM_ID: fonction-biliaire
-:END:
+** Fonction biliaire
 - élimination métabolite
 - absorption lipides
 
 Patho: sursaturation du cholestérol -> cristaux -> calcul
 
-** Marqueurs
-:PROPERTIES:
-:CUSTOM_ID: marqueurs
-:END:
-*** Cytolyse:
-:PROPERTIES:
-:CUSTOM_ID: cytolyse
-:END:
-- _ALAT_ > 40 U/L = cytosol (foie +/- muscles)
-- _ASAT_ > 35 U/L = cytosol + mitochondrie (foie, muscles, coeurs, rein,
-  pancréas, cerveau)
-
-Attention :
-
-- hémolyse = ininterprétable (aminotransferase globules rouges> plasma )
-- ASAT < ALAT car demi-vie inférieure (sauf alcool chronique car grosses
-  mitochrondrie)
-- Aigü : normalisation en 6 mois
-- seulement souffrance cellulaire et non état fonctionnel du foie
-
-NB: LDH (lyse cellulaire) non spécifique mais très marqué pour métastase
-hépatique NB: peuvent être augménte si stéatose, inlammation modérée,
-obstruction des voie billaire, cirrohse, exercice musculaire violent
-
-*** Synthèse
-:PROPERTIES:
-:CUSTOM_ID: synthèse
-:END:
+* TODO Marqueurs
+** [[denote:20240723T191636][Cytolyse]]
+** Synthèse
 - _Coagulation_ : complexe prothrombinique diminué
   - non spécifique des insuffisance hépatocellulaire (cholestase avec
     défaut absorption vitamine K)
@@ -99,25 +70,16 @@ obstruction des voie billaire, cirrohse, exercice musculaire violent
   - important mais non spécifique de l'IHC (malnutrition, malabsorption,
     rénal)
 
-*** Épuration
-:PROPERTIES:
-:CUSTOM_ID: épuration
-:END:
+** Épuration
 - _Urée_ = diminué si IHC (genèse hépatique)
 - _Ammoniac_ = augmenté si ICH -> suivi des IHC et foie (toxicité
   système nerveux central)
 
-*** Sécrétion bilaire
-:PROPERTIES:
-:CUSTOM_ID: sécrétion-bilaire
-:END:
+** Sécrétion bilaire
 Surtout défaut d'excrétion _bilirubine conjugée_ + augmentation
 bilirubine totale
 
-*** Cholestase
-:PROPERTIES:
-:CUSTOM_ID: cholestase
-:END:
+** Cholestase
 Diminution/arrêt sécrétion biliaire. 3 atteintes :
 
 1. synthèse
@@ -147,25 +109,16 @@ Autres
   - Selles décolorées = cholestase
 - IgM = cirrhose biliaire primitive
 
-*** Inflammation
-:PROPERTIES:
-:CUSTOM_ID: inflammation
-:END:
+** Inflammation
 CRP, vitesse sédimentatino érythrocytaire, électrophorèse ptoténies
 sériques
 
-*** Fibrose hépatique
-:PROPERTIES:
-:CUSTOM_ID: fibrose-hépatique
-:END:
+** Fibrose hépatique
 - ponction biopsie, Fibroscan (non invasif)
 - acide hyaluronique = surtout valeur prédictive négative
 - scores : Fibrotest, Fibromètre, Hépascore
 
-** Interprétation
-:PROPERTIES:
-:CUSTOM_ID: interprétation
-:END:
+* TODO Interprétation
 Augmentation ALAT/ASAT
 
 - aigue > 10N: hépatite virale aigüe A, B, médicaments (IMAO,
@@ -203,33 +156,21 @@ Augmentation ALAT/ASAT
   |                 | - extra-hépatique | lithiase cholédoque, cancer pancréas, pancréatite chronique               |
   |                 |                   | , cholangite sclérosante, sténose/carcinome des voies biliaires           |
 
-** Cirrhose
-:PROPERTIES:
-:CUSTOM_ID: cirrhose
-:END:
+* TODO Cirrhose
 - IHC: TP, facteur V, dosage albumine (ou EPS)
 - inflammatoire : bloc β-γ, augmentation α2 globuline
 - score Child-Pugh (ascite, encéphalopathie, albuminméue, bilirubinémie,
   TP)
 
-** Dépistage carcinome hépatocellulaire
-:PROPERTIES:
-:CUSTOM_ID: dépistage-carcinome-hépatocellulaire
-:END:
+* TODO Dépistage carcinome hépatocellulaire
 αfoetoproténie = suivi et non iagnostic. régérénration des hépatocyttes
 
-** Grossesse
-:PROPERTIES:
-:CUSTOM_ID: grossesse
-:END:
+* TODO Grossesse
 - Physiologique : diminution albuminémie possible, augmenation PAL
 - cholestase gravidique : prurit, augmenation acide biliarie sérique :
   10-40 modéré,, sérève si > 40
   - ALAT = 2-10N >> ictère 10%, bili augmentée et γGt No/augmentée: 30%,
     stéatorrhéie (déficit en vitamine K visible sur TP)
 
-* Reference
-:PROPERTIES:
-:CUSTOM_ID: reference
-:END:
+* Source
 Bonnefont

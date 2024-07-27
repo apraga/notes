@@ -270,6 +270,16 @@ CLOSED: [2024-07-13 Sat 11:36] SCHEDULED: <2024-07-13 Sat>
 ** TODO Se connecter à updtodate depuis CHU Grenoble
 SCHEDULED: <2024-07-28 Sun>
 /Entered on/ [2024-07-18 Thu 22:33]
+** TODO Notes UNESS phase socle :bio:
+SCHEDULED: <2024-07-27 Sat +1d>
+:PROPERTIES:
+:STYLE:    habit
+:END:
+:LOGBOOK:
+CLOCK: [2024-07-27 Sat 15:08]
+CLOCK: [2024-07-27 Sat 14:44]--[2024-07-27 Sat 15:00] =>  0:16
+CLOCK: [2024-07-27 Sat 13:43]--[2024-07-27 Sat 14:15] =>  0:32
+:END:
 * Maison
 :PROPERTIES:
 :CATEGORY: maison

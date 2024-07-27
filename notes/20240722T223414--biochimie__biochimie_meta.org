@@ -4,28 +4,34 @@
 #+identifier: 20240722T223414
 
 * Dosage
-- [[denote:20240721T151506][Calcémie]]
-- [[denote:20240717T200247][Orosomucoïde]]
-- [[denote:20240717T200415][Haptoglobine]]
-- [[denote:20240717T200520][Céruloplasmine]]
-- [[denote:20240717T200717][Transferrine]]
+- [[denote:20240727T135435][ALAT]]
 - [[denote:20240717T201856][Albumine]]
+- [[denote:20240726T221814][ASAT]]
+- [[denote:20240721T151506][Calcémie]]
+- [[denote:20240717T200520][Céruloplasmine]]
+- [[denote:20240717T200415][Haptoglobine]]
+- [[denote:20240717T200247][Orosomucoïde]]
+- [[denote:20240717T200717][Transferrine]]
 - [[denote:20240717T202815][α2 macroglobuline]]
-
 * Techniques
-- [[denote:20240718T230719][Immunotypage]]
 - [[denote:20240717T195507][Électrophorèse des protéines]]
+- [[denote:20240718T230719][Immunotypage]]
 * Maladies
-- [[denote:20240721T162047][Hyper et hypo-uricémies]]
-- [[denote:20240717T195557][Dysgammaglobulinémie monoclonale]]
-- [[denote:20240717T195629][Myélome]]
-- [[denote:20240717T202347][Syndrome inflammatoire aigu biologique]]
-- [[denote:20240717T200108][Maladie de Waldenström]]
-- [[denote:20240721T141834][Pancréatite aigüe]]
-- [[denote:20240721T143415][Cholestase]]
-- [[denote:20240721T144629][Hypokaliémie]]
 - [[denote:20240721T144858][Acido-cétose diabétique]]
+- [[denote:20240721T143415][Cholestase]]
+- [[denote:20240717T195557][Dysgammaglobulinémie monoclonale]]
+- [[denote:20240721T162047][Hyper et hypo-uricémies]]
+- [[denote:20240721T144629][Hypokaliémie]]
+- [[denote:20240717T200108][Maladie de Waldenström]]
+- [[denote:20240717T195629][Myélome]]
+- [[denote:20240721T141834][Pancréatite aigüe]]
+- [[denote:20240717T202347][Syndrome inflammatoire aigu biologique]]
+* Physiologie
+- [[denote:20240727T140017][Foie]]
+ [[denote:20240727T144458][Système rénine-angiotensine-aldostérone]]
 * Domaines
-[[denote:20240721T131524][Examens biologique en hépato-gastroentérologie]]
-[[denote:20240725T233149][Marqueurs cardiaques]]
-[[denote:20240726T230440][Dyslipoprotéinémies]]
+- [[denote:20240721T131524][Examens biologique en hépato-gastroentérologie]]
+- [[denote:20240725T233149][Marqueurs cardiaques]]
+- [[denote:20240726T230440][Dyslipoprotéinémies]]
+* Cas cliniques
+- [[file:cas-cliniques/dyslipidémies.pdf][Dyslipidémies]] (bof)
