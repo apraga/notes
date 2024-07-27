@@ -1,0 +1,42 @@
+#+title:      Créatinine
+#+date:       [2024-07-27 Sat 21:14]
+#+filetags:   :biochimie:néphro:
+#+identifier: 20240727T211412
+
+
+* Production
+- catabolisme de la *créatine du muscle squelettique*
+- peu de varation chez un même sujet
+
+* Élimination
+ - *filtration glomérulaire*
+ - très faible sécrétion tubulaire et élimination digestive
+
+* Variation
+- âge : diminution
+- femme : diminution
+- Noirs : augmentation
+- *masse musculaire*
+  - musculation : augmentation
+  - amputation, myopathie : diminution
+  - maladie chronique, inflammation, neuromusculaire : iminution
+- régime : végération -> diminution, carné -> augmentation
+** Élimination
+- IR: augmentation sécrétion tubulaire + digestive -> diminution
+- médicaments : diminution sécrétion tubulaire -> augmentation
+Pour excrétion dans les urine, la /créatine/ est tansformée en
+créatinine
+
+* Relation DFG-créatinine sérique
+- inversement proportionnelle donc une diminution du DFG se traduit pas une très légère bassie de la créatininie
+* Dosage
+** méthode de Jaffé :
+ - simple
+ - complexe émettant une couleur rouge (lectuer 505nm)
+ - limite :
+   - interférence protéines, glucose, acide ascorbique, céphalosporine, pryvutae...
+   - méthode de correction par rapport à une méthode de référence (facteur constant ?)
+   - sous-estimé si bilirubine (masque)
+** Autrses
+ - méthode enzymatique : plus spécifique, plus cher mais recoHAS 2011
+ - spectrométrie de masse : moins de biais de mesure

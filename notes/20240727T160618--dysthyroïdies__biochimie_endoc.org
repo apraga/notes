@@ -9,8 +9,8 @@ Thyroïde
 - Cellules folliculaire (autour du colloïde): synthèse thyroglobuline et hormones thyroïdiennes
 - cellules parafolliculaire = synthèse calcitonine
 
-** Synthèse hormones thyroïdiennes
-1. Iode + thyroglobuline (via la TPO = thyropéroxidysae) -> MIT et DIT (mono et di-iodotyrosines)
-2. 2 DIT -> T4
-3. MIT + DIT -> T3 (tri-iodotyronine)
-4. T4,T3 libéré dans le sang
+[[denote:20240727T161330][Thyroglobuline]]
+[[denote:20240727T161415][Hormones thyroïdiennes]]
+* Maladies
+- [[denote:20240727T162427][Hyperthyroïdies]]
+- [[denote:20240727T163041][Hypothyroïdies]]

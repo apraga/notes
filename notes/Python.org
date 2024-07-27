@@ -1,12 +1,8 @@
 ​#python
 
 * Démarrer un projet
-:PROPERTIES:
-:CUSTOM_ID: démarrer-un-projet
-:END:
-- [[file:Environnement%20Python%20avec%20nix.md][Nix]] # Charger un
-  script
-
+- [[file:Environnement%20Python%20avec%20nix.md][Nix]]
+*  Charger un script dans le REPL
 #+begin_src python
 exec(open("test.py").read())
 #+end_src
