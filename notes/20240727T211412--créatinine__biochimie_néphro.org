@@ -37,6 +37,6 @@ créatinine
    - interférence protéines, glucose, acide ascorbique, céphalosporine, pryvutae...
    - méthode de correction par rapport à une méthode de référence (facteur constant ?)
    - sous-estimé si bilirubine (masque)
-** Autrses
+** Autres
  - méthode enzymatique : plus spécifique, plus cher mais recoHAS 2011
  - spectrométrie de masse : moins de biais de mesure

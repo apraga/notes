@@ -1,8 +1,0 @@
-:PROPERTIES:
-:ID:       92e0d3e0-ed8f-4285-8629-ec7160adedcc
-:END:
-#+title: CRP
-#+filetags: biochimie néphélémétrie
-
-Synthétisé par le foie. Marqueur non spécifique inflammation
-Norme < 3mg/L

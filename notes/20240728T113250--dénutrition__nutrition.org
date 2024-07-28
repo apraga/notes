@@ -7,6 +7,14 @@ Définition
 - Dénutrition = déficit d'apport, surtout quantitatif, avec bilan énergétique négatif.
 - Malnutrition = déficit qualitatif et quantitatif
 
+HAS
+|                | Dénutrition      | Dénutrition sévère |
+|----------------+------------------+--------------------|
+| Perte de poids | >= 5% en 1 mois  | >= 10% en 1 mois   |
+|                | >= 10% en 6 mois | >= 15% en 6 mois   |
+| IMC            | < 21             | < 18               |
+| Albuminémie    | < 35g/L          |  < 30g/L           |
+
 * Contexte
 - 30-50% patient hospitalisé
 - infection, retard de cicatricatisation
@@ -39,12 +47,7 @@ Signes :
 - hypotension artérielle
 - constipation
 * Mesures
-| Poids | < 2% en 1 semaine       |
-|       | < 5% en 1 mois          |
-|       | < 10% en 6 mois         |
-|-------+-------------------------|
-| IMC   | < 21 dénutrion (HAS)    |
-|       | < 18 dénutrition sévère |
+- Perte de pois, IMC (voir recos HAS)
 Peu utile :
 - pli cutané : peu sensible si dénutrition débutante
 - circonférence musculaire brachiale: idem
@@ -53,7 +56,22 @@ Autre :
 - tour de hanche : répartition gynoïde -> souvent arthrose
 * Biologique
 ** Utile
-- [[denote:20240717T201856][Albumine]] : dénutrition chronique mais peu sensible et peu spécifique
-- [[denote:20240728T135539][Transthyrétine (pré-albumine)]] dénutrition chronique mais peu spécifique
+- [[denote:20240717T201856][Albumine]] : dénutrition chronique, peu sensible et peu spécifique, *fonction inflammation*
+- [[denote:20240728T135539][Transthyrétine (pré-albumine)]] dénutrition aigüe, *fonction inflammation*
 ** Peu utilisé
-- [[denote:20240728T135751][Retinol-binding protein]] : marqueur précoche efficacité soutien nutritionnel
+- [[denote:20240728T135751][Retinol-binding protein]] : transport vitamine A, peu spécifique
+- [[denote:20240717T200717][Transferrine]]
+- IgF1 (somatomédine C) : t1/2 =2-4h, synthèse hépatique, pas spécifique
+- Créatinurie des 24h: bon reflet de la mascule musculaire, non spécifique (voir [[denote:20240727T211412][Créatinine]] )
+- 3-méthylhistidine urinaire (3-MH): acide aminé dans les protéine myofibrillaire non métabolisé ni réutilisé -> coûteux
+- 3-MH/créatinine urinaire ~ muscle dégradé / masse musculaire.
+  - Évite recueil de 24h
+  - hypercatabolisme protéique
+  - arrêt des protéines animales 3 jours avants
+- Bilan azoté: apport en protéines - perte (urinaires, fécales, cutanées, respi). Coûteux
+- [[denote:20240717T200247][Orosomucoïde]]
+* Indices nutritionnels
+- NRI (Nutritional Risk Index) : avant chirurgie programmée
+- GNRI (Geriatric NRI): adapté personne âgée
+- PINI (pronostic inflammatoiry nutritional index): pronostique mortalité. CRPx orosomucoide / albu x prealbu
+- [[denote:20240728T143650][CRP]]

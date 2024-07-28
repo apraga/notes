@@ -12,7 +12,7 @@
     - HDL < 0.77mmol/L
     - doute sur la technique (ex: interéfernec avec TG > 8mmol/L)
   - ApoB: LDL impossible à calculer (TG > 3.9mmol/L) ou doser * Méthodes
-- néphélémitrie ou turbidimétrie
+- néphélémétrie ou turbidimétrie
 - comparables
 - immunologie en milieu liquide
 - après [[denote:20240724T223847][Exploration d'une anomalie lipidique]]

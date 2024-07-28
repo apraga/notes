@@ -3,8 +3,8 @@
 #+filetags:   :biochimie:néphélémetrie:
 #+identifier: 20240717T200415
 
-Protéine plasmatique fixant hémoglobine iextraglobulaire
-Augmenté : phase inflammatoire aigǜe
-Diminuté : hémolyse intravasculaire
-Sensible à la lactescence
-Norme 0.30-2g/L
+- Protéine plasmatique fixant hémoglobine iextraglobulaire
+- Augmenté : phase inflammatoire aigǜe
+- Diminuté : hémolyse intravasculaire
+- Sensible à la lactescence
+- Norme 0.30-2g/L

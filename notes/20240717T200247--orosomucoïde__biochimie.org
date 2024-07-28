@@ -3,10 +3,12 @@
 #+filetags:   :biochimie:néphélémétrie:
 #+identifier: 20240717T200247
 
-(α1 glycoprotéine acide)
-
-glycoprotéine = 40% glucides
-
+- (α1 glycoprotéine acide)
+- glycoprotéine = 40% glucides
+- t1/2 = 2.5 jours
+*Toujours intepréter avec créat*
+- ne pas utiliser si insuffisance rénale
+- corrélé à l'[[denote:20240717T200415][Haptoglobine]]
 * Variations
 - Augmenté :
   - inflammation aigüe : dès le 3-4e jour

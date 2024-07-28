@@ -34,7 +34,7 @@ Attention
   - faux positifs (sang), faux négatif (chaînes légères libres)
   -  résultat 10-20% supérieure turbidimétrie
 * Dosage protéines spécifiques
-- albuminurie : immuno-turbidimétrie ou néphélémitrie
+- albuminurie : immuno-turbidimétrie ou néphélémétrie
 - bas poids moléculaire (α1/β2-microglobuline, RBP), haut poids moléculaire (transferring, IgG): idem
 * Rendu
 en *g/24h* et un ratio rapporté à la *créatinurie* (permet de corriger les variation de concentration urinaire et variabilité intra-individuelle) !
