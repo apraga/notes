@@ -1,0 +1,59 @@
+#+title:      Dénutrition
+#+date:       [2024-07-28 Sun 11:32]
+#+filetags:   :nutrition:
+#+identifier: 20240728T113250
+
+Définition
+- Dénutrition = déficit d'apport, surtout quantitatif, avec bilan énergétique négatif.
+- Malnutrition = déficit qualitatif et quantitatif
+
+* Contexte
+- 30-50% patient hospitalisé
+- infection, retard de cicatricatisation
+- augmente la morbi-mortalité, allongue durée moyenne d'hospitalisation
+- dépistage systématique précoce à faire !
+- objectif : restaurer masse musculaire, améliorer clinique
+* Causes
+| Type     | Catégorie     | Cause                                          |
+|----------+---------------+------------------------------------------------|
+| Exogène  | Apport        | anoxrexie, dysphagie, malabsorption            |
+|----------+---------------+------------------------------------------------|
+| Endogène | Inflammatoire | Infections, cancers, auto-immune, vascularites |
+|          | Fuites        | - Cutanées : escarres, brûlures...             |
+|          |               | - Rénales : néphroses, hémodialyse             |
+|          |               | - Intestinale : entérite                       |
+|          | Synthèse      | - IHC: cirrhose, carcinome                     |
+* Cliniques
+Fonctionnels :
+- Trouble de la mémorisation, concentration
+- asthénie
+- faiblesse musculaire
+- pertes des fonctions sexuelles (homme), aménorrhée secondaire (femme)
+Signes :
+- fonte adipeuse sous-cutanée, musculaire
+- œdème MI/lombes
+- cheveux secs et cassants, ongles striés et cassant, peau sèche
+- hypertrichose lanugineuse du dos
+- pétéchies, acrosyndrome
+- muqueuse : glossite, stomatite, œsophagite
+- hypotension artérielle
+- constipation
+* Mesures
+| Poids | < 2% en 1 semaine       |
+|       | < 5% en 1 mois          |
+|       | < 10% en 6 mois         |
+|-------+-------------------------|
+| IMC   | < 21 dénutrion (HAS)    |
+|       | < 18 dénutrition sévère |
+Peu utile :
+- pli cutané : peu sensible si dénutrition débutante
+- circonférence musculaire brachiale: idem
+Autre :
+- tour de taille : obésité abdominale/androïde -> souvent complications métaboliques
+- tour de hanche : répartition gynoïde -> souvent arthrose
+* Biologique
+** Utile
+- [[denote:20240717T201856][Albumine]] : dénutrition chronique mais peu sensible et peu spécifique
+- [[denote:20240728T135539][Transthyrétine (pré-albumine)]] dénutrition chronique mais peu spécifique
+** Peu utilisé
+- [[denote:20240728T135751][Retinol-binding protein]] : marqueur précoche efficacité soutien nutritionnel

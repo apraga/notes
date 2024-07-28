@@ -1,4 +1,4 @@
-#+title: #+title:      Coefficient de saturation de la transferrine
+#+title: Coefficient de saturation de la transferrine
 #+date:       [2024-07-22 Mon 23:35]
 #+filetags:   :hémato:
 #+identifier: 20240722T233548

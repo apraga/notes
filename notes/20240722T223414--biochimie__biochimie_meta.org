@@ -29,6 +29,7 @@
 - [[denote:20240717T195629][Myélome]]
 - [[denote:20240721T141834][Pancréatite aigüe]]
 - [[denote:20240717T202347][Syndrome inflammatoire aigu biologique]]
+- [[denote:20240728T113217][Marqueurs nutritionnels]]
 * Physiologie
 - [[denote:20240727T140017][Foie]]
 - [[denote:20240727T144458][Système rénine-angiotensine-aldostérone]]
