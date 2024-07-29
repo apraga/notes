@@ -1,0 +1,12 @@
+#+title:      Os
+#+date:       [2024-07-29 Mon 22:21]
+#+filetags:   :biochimie:
+#+identifier: 20240729T222133
+
+Composition
+- matrice organique
+- partie minérale = cristaux d'hydroxyapatite (=phoshpate de calcium) + carbonate de calcium
+  - Ca2+ et PO_4^3+ à la surface des cristiques échangent avec le sang
+
+Minéralisation : reflète dureté os
+Contient 98% du calcium, 85% du phosphate
