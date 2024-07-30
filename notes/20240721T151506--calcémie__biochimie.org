@@ -5,19 +5,19 @@
 
 Norme 2.12-2.52 mmol/L
 
-Calcium extra-cellulaire
-- lié aux proténies
-- complexé
-- libre ou ionisé -> *celui qui est régulé*
+Composition du calcium
+- 40% lié aux protéines plasmatique
+- 15% = fraction libre (calcium ionisé) -> celui qui est régulé
+
 Régulation très fine par la *PTH*
 * Mesure
-** Calcémie ionisé
+** Calcémie ionisé (mesure directe)
 Mesurable par potentiométrie (sang total sur gaz du sang, sérum)
 acidose : interaction plus faible avec les protéines car moins chargées (et inverse si alcalose)
 Pré-anal: attention pas de garrot, centrifugation, mesure rapide
-** Sinon mesure calcium total
+** Calcium total (moins fiable)
 calcémie totale ~ ionisé si pH et protéines normales
-Si hypoprotidémie, correctien la calcémie en fonciton protidémie/albuminémie (Ca_mesure - 0.025(alb-40))
+Si hypoprotidémie, correction la calcémie en fonciton protidémie/albuminémie (Ca_mesure - 0.025(alb-40))
 Sérum/plasma hépariné
 Non impacté par variation aigüe pH mais diminué si acidose chronique (et augmenét si alcalose)
 ** Calciurie
@@ -30,12 +30,18 @@ Valeur:
 - 24h < 0.1mmol/kg/j
 - à jeun : <.40mmol par mmol de créatiniurie
 * Physiopath
+[[file:images/biochimie/calcium.png]]
+** Rôle
+- excitabilité neuromusculaire, contraction musculaire
+- coagulation, fonction enzymatique
+- sécrétion hormonale
+- minéralisation de l'os
 ** Entrée/sortie
 Entrée : digestive, os, cellules
 Sortie: cellules, os, digestiv, rein
 *** Digestif
 10mg/kg/jr minimum soit par passage paracellulaire depuis lumière vers interstitiel (post-prandial) ou transport transcellulaire (jeûne)
-*** Osseux
+*** Osseux (voir [[denote:20240729T222133][Os]] )
 99% du calcium total !
 Masseuse osseuse stablem mais remodelé en permanence (ostéoblaste = formation, ostéoclastes = résorption -> voir système RANK-RANKL)
 Phase inorganique (hydroxyapatite surtout, carbonate) et organie (collage+++, autre)
@@ -44,22 +50,14 @@ Phase inorganique (hydroxyapatite surtout, carbonate) et organie (collage+++, au
 Seulement le calcium non lié aux protiénie (= complexe et libre)
 Réabsorption
 - Surtout tube contourné proximal ("suit" le sodium) mais également branche ascendante henlé (idem) et tube contourné distal (idem)
-** PTH
-PTH synthétisé cellules parathyroïdienne en réponse à diminution calcémie (capteur dans les cellules parthyroïdes), t1/2 6 min
-Attention à la mesure : fragile, demi-vie courte.
-toujours avec calcuméie !
-Prélever avant correction calcémie
-
-Selon les méthodes, ne mesure pas la même chose...
-- 3e génération mesure PTH 1-84
-- 2e génération idem mais en plus 7-84
-Différente si rénal chronique
-
-*** Action: augmente calcium
-- résorption osseuse
-- rein :
-  - réabsorption tubulaire (mais diminue réabsorption phosphate)
-  - augmente 1 α-hydroxylase (1,25OH2D)
+** [[denote:20240729T223246][PTH]] hypercalcémiante
+** PTHR1
+- récepteur couplé aux protéines GαS -> mutation perte de fonction /GNAS/ (codant pour GαS) = résistance PTH (pseudoparathyroïdie)
+- pathologies associées
+  - perte de fonction (HMZ, HTZC): anomalise de formations des membres, MF
+  - gain de fonction: nanise, anomalies de formation des membrees
+  - déficit PTHrp (mutation PTHLH)
+  - sécrétion paranéoplasique PTHrp
 ** Vitamine D
 #+BEGIN_SRC dot :file images/vitamineD.png :exports results
 digraph {
@@ -111,9 +109,11 @@ Variable
 ** Causes
 *** PTH non augmentée (inadaptée) : hypoparathyroïdie
 - acquise: après chirurgie du cou, infiltratio glandies parathyroœdies (Wilson, hémochromatose..), auto-immune, déplétion magnésium...
-- innée : DiGeorge, autosomique dominante (activation CaSR/GNA11)
+- innée :
+  - DiGeorge
+  - mutation gain de fonction CaSR : hypocalcémie autosomique dominante = hypocalcémie PTH normale/basse avec hypercalciurie
 *** Extra-parathyroidienne: résistance PTH
-- pseudohypoparathyroïdies (défaut voie signalisation)
+- pseudohypoparathyroïdies (défaut voie signalisation voir [[PTHR1]] )
 - défaut d'action vitamine D (insuf. rénale, carence vitamine D profonde, rachitisme vitamino-dépendent)
 - accrétion osseuse majeure ("hungry bone syndrome")
 * Hypercalcémie
@@ -122,7 +122,7 @@ Variable selon vitesse, individus
 - digestif: nausée, vomissement...
 - neuro-musculaire: asthénie,hypotonie, confusion,coma
 - cardiaque: bradycardie, BAV, raccoursissement QT
-- rénaux : diabte insipide (néphrogénituqe), perte rénale NaCl
+- rénaux : diabète insipide (néphrogénique), perte rénale NaCl
 ** Mécanisme
 - Sécrétion PTH altérée
 - Augmentation entrée calcium digestive/osseuse
@@ -140,8 +140,9 @@ Dosage
   - augment réabsorption rénale calcium + osseuse + digestive (via calcitriol)
   - NB: phoshate diminuée, ostéocalcime augmenté (remaniement osseaux accéléré)
   - calcitriol augmenté (PTH stimule 1α-hydroxylase)
-- hypercalcémie familiale bénignie
+- hypercalcémie familiale bénigne
   - calciurie basse ou normale !
+  - mutation perte de fonction de CaSR
 
 Hypophosphatémie:
    - origine rénale ou de transfert selon nomogramme de Bijvoati
