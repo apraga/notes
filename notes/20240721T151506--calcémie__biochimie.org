@@ -58,6 +58,7 @@ Réabsorption
   - gain de fonction: nanise, anomalies de formation des membrees
   - déficit PTHrp (mutation PTHLH)
   - sécrétion paranéoplasique PTHrp
+** [[denote:20240730T171112][Phosphate]]
 ** Vitamine D
 #+BEGIN_SRC dot :file images/vitamineD.png :exports results
 digraph {

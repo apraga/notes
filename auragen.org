@@ -165,7 +165,7 @@ GIAB suffit
 *** TODO Porter script en hg38
   /Entered on/  [2024-05-21 mar. 11:07]
 *** TODO En aveugle ?
-SCHEDULED: <2024-07-30 Tue>
+SCHEDULED: <2024-07-31 Wed>
 *** TODO Porter python
 ** Facebook
 :PROPERTIES:
@@ -192,7 +192,7 @@ Fusionner notes
 - [[denote:20240718T153145][Thursday 18 July 2024 15:31]]
 - [[denote:20240719T093836][Friday 19 July 2024 09:38]]
 *** TODO Finir revue de [cite:@xie2024statistical] :stat:
-SCHEDULED: <2024-07-30 Tue>
+SCHEDULED: <2024-07-31 Wed>
   /Entered on/  [2024-07-22 Mon 17:17]
 *** TODO Bien le modèle stats [cite:@samocha2014framework] :stat:
 SCHEDULED: <2024-07-31 Wed>
@@ -273,6 +273,9 @@ CLOSED: [2024-07-24 Wed 14:10] SCHEDULED: <2024-07-24 Wed>
 SCHEDULED: <2024-07-30 Tue>
 Pour proposer de les rendre
   /Entered on/  [2024-07-30 Tue 11:02]
+*** TODO Regarder VAF autres variants (clones hématopoièse)
+SCHEDULED: <2024-07-31 Wed>
+  /Entered on/  [2024-07-30 Tue 17:53]
 ** Génomes péruvien
 :PROPERTIES:
 :CATEGORY: pérou
