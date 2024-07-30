@@ -3,6 +3,10 @@
 #+filetags:   :biochimie:
 #+identifier: 20240721T151506
 
+*Important*
+- évaluer calcémie + phosphatémie + PTH
+- penser à une carence vitaminique si PTH modérément augmentée (même si calcémie normale)
+
 Norme 2.12-2.52 mmol/L
 
 Composition du calcium
@@ -58,33 +62,7 @@ Réabsorption
   - gain de fonction: nanise, anomalies de formation des membrees
   - déficit PTHrp (mutation PTHLH)
   - sécrétion paranéoplasique PTHrp
-** Vitamine D
-#+BEGIN_SRC dot :file images/vitamineD.png :exports results
-digraph {
-node[shape=box];
-UV -> "vitamine D3";
-Alimentation -> "vitamine D3";
-"vitamine D3" -> "25OH vitamine D3";
-"25OH vitamine D3" -> "1,25(OH)2 vitamine d3\n(calcitriol)"[label="1α-hydroxylase rénale"];
-}
-#+END_SRC
-
-#+RESULTS:
-[[file:images/vitamineD.png]]
-
-  Le calcitriol régule négativement 1α-hydroxylase rénale
-  Mais PTH régule positivemeent
-*** Formes
-25 OH D: forme D3 (alimentation/peau) et d2 (alimentation) -> mesure simultanée par méthode immuno
-Calcitriol: mesure difficile
-***  Action: augmente calcium
-Calcitriole
-  - augmente absorption digestive calcium et Phosphate
-  - réabsorption rénale calcium (tubule)
-  - réabsorption osseuse
-  - diminue sécrétion PTH
-  - augmente sécrétion FGF23
-
+** [[denote:20240730T211303][Vitamine D]] hypercalcémiant
 * Hypocalcémie
 #+BEGIN_SRC dot :file images/hypocalcémie.png :exports results
 digraph {
