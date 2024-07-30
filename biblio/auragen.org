@@ -351,7 +351,7 @@ CLOSED: [2024-07-17 Wed 17:36] SCHEDULED: <2024-07-15 lun.>
 
 *** TODO Appel de variant sur pseudogène connu
 **** TODO [#A] Integrating gene annotation with orthology inference at scale
-SCHEDULED: <2024-07-23 Tue>
+SCHEDULED: <2024-07-30 Tue>
 :PROPERTIES:
 :TITLE:    Integrating gene annotation with orthology inference at scale
 :BTYPE:    article
@@ -368,7 +368,7 @@ SCHEDULED: <2024-07-23 Tue>
 :MONTH:    apr
 :END:
 **** TODO Systematic analysis of paralogous regions in 41,755 exomes uncovers clinically relevant variation
-SCHEDULED: <2024-07-23 Tue>
+SCHEDULED: <2024-07-30 Tue>
 :PROPERTIES:
 :TITLE:    Systematic analysis of paralogous regions in 41,755 exomes uncovers clinically relevant variation
 :BTYPE:    article
