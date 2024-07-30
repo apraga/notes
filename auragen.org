@@ -185,9 +185,11 @@ Fusionner notes
 - [[denote:20240716T172506][Tuesday 16 July 2024 17:25]]
 - [[denote:20240718T153145][Thursday 18 July 2024 15:31]]
 - [[denote:20240719T093836][Friday 19 July 2024 09:38]]
-*** TODO Trouver algo de simulation de probab d’un variant (2-3 nucléotides)
-SCHEDULED: <2024-07-25 Thu>
+*** TODO Finir revue de [cite:@xie2024statistical]
+SCHEDULED: <2024-07-29 Mon>
   /Entered on/  [2024-07-22 Mon 17:17]
+*** TODO Bien comprendre [cite:@samocha2014framework]
+SCHEDULED: <2024-07-30 Tue>
 *** KILL Retrouver heatmap Shendure avec score par variant
 CLOSED: [2024-07-26 Fri 09:51] SCHEDULED: <2024-07-25 Thu>
   /Entered on/  [2024-07-24 Wed 12:23]
@@ -349,10 +351,11 @@ SCHEDULED: <2024-08-01 Thu 10:00 +7d>
 :END:
 - State "DONE"       from "TODO"       [2024-07-25 Thu 14:27]
 *** TODO Clinico-biologique
-SCHEDULED: <2024-07-26 Fri 00:00>
+SCHEDULED: <2024-08-02 Fri 00:00 +1w>
 :PROPERTIES:
 :LAST_REPEAT: [2024-07-22 Mon 09:31]
 :END:
+- State "DONE"       from "TODO"       [2024-07-26 Fri 09:35]
 - State "DONE"       from "TODO"       [2024-07-19 Fri 09:31]
 - State "DONE"       from "TODO"       [2024-07-15 lun. 11:14]
 - State "DONE"       from "TODO"       [2024-06-28 ven. 16:15]
@@ -387,8 +390,8 @@ CLOSED: [2024-07-25 Thu 08:57] SCHEDULED: <2024-07-24 Wed> DEADLINE: <2024-07-25
 ** DONE Julien
 CLOSED: [2024-07-23 Tue 09:53] SCHEDULED: <2024-07-22 lun. 13:30>
 Entered on [2024-07-16 mar. 09:53]
-** TODO Julien :facebook:
-SCHEDULED: <2024-07-29 lun. 14:00>
+** DONE Julien :facebook:
+CLOSED: [2024-07-30 Tue 09:11] SCHEDULED: <2024-07-29 lun. 14:00>
 Facebook
 - présenter résultats sur forum
 - modèle stats (si fini)
@@ -397,8 +400,8 @@ Pseudogène
   - https://ega-archive.org/datasets/EGAD00001009109 6 trio + 1 proband en HiF 30X
   - https://ega-archive.org/datasets/EGAD00001011305 STRPC1 sur cohorte
 
-** TODO Philippe Jean (heure approx) :facebook:
-SCHEDULED: <2024-07-29 lun. 17:00>
+** DONE Philippe Jean (heure approx) :facebook:
+CLOSED: [2024-07-30 Tue 09:11] SCHEDULED: <2024-07-29 lun. 17:00>
 Entered on [2024-07-16 mar. 09:53]
 
 * Interprétation génomes
@@ -540,8 +543,8 @@ CLOSED: [2024-07-15 lun. 12:15] SCHEDULED: <2024-07-15 lun.>
   VOUS+ STAG2 site canonique d'épissage seqone
   WNT5A score bionfo non en faveur mais 2x gnomAD, clinique partiellement mais forme dominant plus mild  https://onlinelibrary.wiley.com/doi/10.1002/ajmg.a.61884peu. hérité de la mère
   Deletion qui prend quaisiment tout APOL1 sur gène de néphropathie (pas d'hydropnéphrose associé), non présent DGV
-*** WAIT MR-2400560: négatif poussé hygen, à transmettre Jérémie
-SCHEDULED: <2024-07-29 Mon>
+*** DONE MR-2400560: négatif poussé hygen, à transmettre Jérémie
+CLOSED: [2024-07-30 Tue 09:11] SCHEDULED: <2024-07-29 Mon>
 4x gnomad, tronquants surtout rapporté (mais pLI 0.19), scores bénin sauf CADD
 Domain fonctionnel
 faux-sens décrit dans la pathologie, colle clinique, clinvar VOUS... -> revoir le père ?
@@ -553,8 +556,8 @@ Publi : 11 enfant épilepsie NPRL3 + biblio (88 cas)
 *** WAIT MR-2400334 attente Jérémie
   /Entered on/  [2024-07-08 lun. 16:53]
 *
-*** TODO MR-2102277: poussé, transférer Jérémie
-SCHEDULED: <2024-07-29 Mon>
+*** DONE MR-2102277: poussé, transférer Jérémie
+CLOSED: [2024-07-30 Tue 09:11] SCHEDULED: <2024-07-29 Mon>
   /Entered on/  [2024-07-16 mar. 10:10]
 
   Vérif seqone les récessif
@@ -571,8 +574,8 @@ SCHEDULED: <2024-07-29 Mon>
 **** RVI
 - VSI : 2 LOF homozwygote frameshift PLIN3 et del SLC43A1: 0 auramatcher
 - ASH1L: framshift dans un transcrit non principal -> non
-*** TODO MR-2102278 valider hygen
-SCHEDULED: <2024-07-29 Mon>
+*** DONE MR-2102278 valider hygen
+CLOSED: [2024-07-30 Tue 09:11] SCHEDULED: <2024-07-29 Mon>
   /Entered on/  [2024-07-16 mar. 10:10]
   Del RAPGEF2 : artefact ? les soft-clips s’alignent
   VOUS- SOS1 seqone (noonan)
