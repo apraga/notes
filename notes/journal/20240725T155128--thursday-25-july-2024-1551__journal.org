@@ -3,7 +3,8 @@
 #+filetags:   :journal:
 #+identifier: 20240725T155128
 
-Biblio facebook sur modèle stat: se base sur le 2 nucléotides adjacent
+* Biblio Facebook
+Sur modèle stat: se base sur le 2 nucléotides adjacent
 - 1er modèle [cite:@kryukov2007most] mais ne donne pas de matrice de mutation
 - [cite:@neale2012patterns] idem et complète avec 1000 Genomes. Ne la donne pas non plus
 - [cite:@samocha2014framework] idem avec des scores d’ajustement. Ne donne que des scores par gènes...

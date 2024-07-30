@@ -4,7 +4,9 @@
 #+identifier: 20240726T095249
 #+reference:  steyaert2023systematic
 
-Identification SNVV,indel, CNV et "ectopic gene conversion" en exome sur région homologues
+Identification en exome sur région homologues (3.5%)
+1. SNVV,indel
+2. CNV et "ectopic gene conversion"
 
 * Contexte
 :PROPERTIES:
@@ -15,7 +17,7 @@ Identification SNVV,indel, CNV et "ectopic gene conversion" en exome sur région
   - origin : duplication/rétro-transcription dans l’évolution
   - divergence avec accumulation de mutation -> parfois perte de fonction -> paralogue non codant (pseudogene) ou codant mais différente fonction
 - ectopic gene conversion
-  - copie d’une séquence homologue d’ADN (donneur) sur une autre (accepteur). Mécanisme = erreur pendant recombinaison homologue duran ala méoiose
+  - copie d’une séquence homologue d’ADN (donneur) sur une autre (accepteur). Mécanisme = erreur pendant recombinaison homologue durant la méoise
   - 1% des gènes impliqués maladies héritées
 - problème :
   1. gene conversion non indentifié en exome/genome
@@ -29,15 +31,18 @@ Identification SNVV,indel, CNV et "ectopic gene conversion" en exome sur région
   - [cite:@ebbert2019systematic] : caractérisation mais pas de solution concrète d’après les auteurs.
    
 * Algorithme
+Sur les régions homologues (3.5%), il y a donc l'appel de SNVs (et indel)  d'une part et les CNV/gene conversion
+
 1. extraction des reads (3.5% exomes) affecté par l’homologie de séqueunce
 2. ré-aligné sur génome de référence en masquant les régions homologues
 3. appels de variant
-Pour différence délétion homozygote et ectopic gene conversion
+
+Pour différencier délétion homozygote et ectopic gene conversion
 1. analyse de la couverture dans l’alignement initial :
    - les reads du site accepteur seront aligné sur le site donner -> pas de reads à cet pas de reads sur le site et 2x sur le donneur
 * Validation
-- Long-read Pacbio sur 20 échantillions
-  - sur 769 SNV/indel non du à une gene conversion -> 678 confirmé
+- Long-read Pacbio sur 20 échantillons
+  - sur 769 SNV/indel (non du à une gene conversion) -> 678 confirmé
   - 8 gene conversion homozygotes -> toutes retrouvées
   - 15 délétion homozygotes -> 13/15 confirmée
 - 5 patients GIAB : NA12878 HG002-5
@@ -51,5 +56,8 @@ Pour différence délétion homozygote et ectopic gene conversion
 - giab [[https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-023-42531-9/MediaObjects/41467_2023_42531_MOESM11_ESM.xlsx][Liste des variants]] disponible mais à revoir
 * Résultats autres
 ** Comparaison avec autres appels de variants
-- SNV et indel non dépendant gene conversion
-  - GTK et deepvariant
+- SNV et indel non dépendant gene conversion) vs GTK et Deepvariant
+  - régions avec une qualité d'alignement à 0 (logique)
+    - sensibilité de 0 (logique) vs 43% pour chameleolyzer
+  - région avec aligement unique : sensbilité 86.3% vs 88%  chameleo
+  - délétion homozygotes,

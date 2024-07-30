@@ -4,14 +4,9 @@
 #+identifier: 20240722T104147
 #+reference:  neale2012patterns
 
-Ce qui nous intéresse : modèle statistique pour taux de mutation pour tous les trinucléotide dans les régions capturée par exome
-La "mutabilité" est estimé en comparaison avec singe (chimpanzé + babouins) et 1000 genomes projects
-
-Le taux de mutation de l'exome entier est la somme du taux de mutation par base
-
 Méthode : 175 exome en trio
 
-* Calcul du taux de mutation
+* Calcul du taux de mutation (Supplementary): seulement proba par gène
 Veulent tout l’exome mais ce qui nous intéresse est la probabilité d’une mutation d’une base.
 
 Justification pour utiliser le contexte : GC 50% en exome alors que 4 en génome. Les sites les plus cournats sont C->T sur CpG.
@@ -26,5 +21,9 @@ Pré-requis : la probabilité de chaque permutation de chaque triplet soit une m
   - restreint aux régions intergéniques orthologues (=ancêtre commun) entre humain et chimpanzé
   - toutes les mutations 1000Genomes en supposant que l’allèle du chimpanzé = ancetre et ALT est l’allèle dérivée
   - arrive à un compte pour tous les configurations + matrice
-- la probabilité d’un trinuclétodie = nombre de mutation dans ce contexte / nb occurrence trinuclétodie, le tout pondér par une constante $\lambda$
-- le taux de mutation de ce nucléotide est donc divisé entre les 3 trinuclétodie possibles
+- la probabilité d’un trinucléotide = nombre de mutation dans ce contexte / nb occurrence trinuclétodie, le tout pondér par une constante $\lambda$
+- le taux de mutation de ce nucléotide est donc divisé entre les 3 trinucléotides possibles
+
+* Github
+https://github.com/jamesware/denovolyzeR
+Donnes la table de proba par gène... (Meme dans data-raw)

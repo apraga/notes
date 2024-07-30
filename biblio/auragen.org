@@ -351,7 +351,7 @@ CLOSED: [2024-07-17 Wed 17:36] SCHEDULED: <2024-07-15 lun.>
 
 *** TODO Appel de variant sur pseudogène connu
 **** TODO [#A] Integrating gene annotation with orthology inference at scale
-SCHEDULED: <2024-07-23 Tue>
+SCHEDULED: <2024-07-30 Tue>
 :PROPERTIES:
 :TITLE:    Integrating gene annotation with orthology inference at scale
 :BTYPE:    article
@@ -368,7 +368,7 @@ SCHEDULED: <2024-07-23 Tue>
 :MONTH:    apr
 :END:
 **** TODO Systematic analysis of paralogous regions in 41,755 exomes uncovers clinically relevant variation
-SCHEDULED: <2024-07-23 Tue>
+SCHEDULED: <2024-07-30 Tue>
 :PROPERTIES:
 :TITLE:    Systematic analysis of paralogous regions in 41,755 exomes uncovers clinically relevant variation
 :BTYPE:    article
@@ -1318,6 +1318,7 @@ CLOSED: [2024-07-18 Thu 17:15] SCHEDULED: <2024-07-18 Thu>
 :YEAR:     2024
 :MONTH:    mar
 :END:
+****** TODO https://en.wikipedia.org/wiki/Substitution_matrix
 ***** Selon nucléotide adjacents
 ****** DONE Patterns and rates of exonic de novo mutations in autism spectrum disorders
 CLOSED: [2024-07-25 Thu 16:20]
@@ -1379,4 +1380,74 @@ CLOSED: [2024-07-25 Thu 17:49]
 :PAGES:    944-950
 :DOI:      10.1038/ng.3050
 :URL:      http://dx.doi.org/10.1038/ng.3050
+:END:
+****** TODO Interpreting <i>de novo</i> Variation in Human Disease Using denovolyzeR
+:PROPERTIES:
+:TITLE:    Interpreting <i>de novo</i> Variation in Human Disease Using denovolyzeR
+:BTYPE:    article
+:CUSTOM_ID: ware2015interpreting
+:AUTHOR:   James S. Ware and Kaitlin E. Samocha and Jason Homsy and Mark J. Daly
+:JOURNAL:  Current Protocols in Human Genetics
+:YEAR:     2015
+:VOLUME:   87
+:NUMBER:   1
+:PAGES:    nil
+:DOI:      10.1002/0471142905.hg0725s87
+:URL:      http://dx.doi.org/10.1002/0471142905.hg0725s87
+:END:
+****** TODO Evidence for 28 genetic disorders discovered by combining healthcare and research data
+:PROPERTIES:
+:TITLE:    Evidence for 28 genetic disorders discovered by combining healthcare and research data
+:BTYPE:    article
+:CUSTOM_ID: kaplanis2020evidence
+:AUTHOR:   Joanna Kaplanis and Kaitlin E. Samocha and Laurens Wiel and Zhancheng Zhang and Kevin J. Arvai and Ruth Y. Eberhardt and Giuseppe Gallone and Stefan H. Lelieveld and Hilary C. Martin and Jeremy F. McRae and Patrick J. Short and Rebecca I. Torene and Elke de Boer and Petr Danecek and Eugene J. Gardner and Ni Huang and Jenny Lord and Iñigo Martincorena and Rolph Pfundt and Margot R. F. Reijnders and Alison Yeung and Helger G. Yntema and Silvia Borras and Caroline Clark and John Dean and Zosia Miedzybrodzka and Alison Ross and Stephen Tennant and Tabib Dabir and Deirdre Donnelly and Mervyn Humphreys and Alex Magee and Vivienne McConnell and Shane McKee and Susan McNerlan and Patrick J. Morrison and Gillian Rea and Fiona Stewart and Trevor Cole and Nicola Cooper and Lisa Cooper-Charles and Helen Cox and Lily Islam and Joanna Jarvis and Rebecca Keelagher and Derek Lim and Dominic McMullan and Jenny Morton and Swati Naik and Mary O’Driscoll and Kai-Ren Ong and Deborah Osio and Nicola Ragge and Sarah Turton and Julie Vogt and Denise Williams and Simon Bodek and Alan Donaldson and Alison Hills and Karen Low and Ruth Newbury-Ecob and Andrew M. Norman and Eileen Roberts and Ingrid Scurr and Sarah Smithson and Madeleine Tooley and Steve Abbs and Ruth Armstrong and Carolyn Dunn and Simon Holden and Soo-Mi Park and Joan Paterson and Lucy Raymond and Evan Reid and Richard Sandford and Ingrid Simonic and Marc Tischkowitz and Geoff Woods and Lisa Bradley and Joanne Comerford and Andrew Green and Sally Lynch and Shirley McQuaid and Brendan Mullaney and Jonathan Berg and David Goudie and Eleni Mavrak and Joanne McLean and Catherine McWilliam and Eleanor Reavey and Tara Azam and Elaine Cleary and Andrew Jackson and Wayne Lam and Anne Lampe and David Moore and Mary Porteous and Emma Baple and Júlia Baptista and Carole Brewer and Bruce Castle and Emma Kivuva and Martina Owens and Julia Rankin and Charles Shaw-Smith and Claire Turner and Peter Turnpenny and Carolyn Tysoe and Therese Bradley and Rosemarie Davidson and Carol Gardiner and Shelagh Joss and Esther Kinning and Cheryl Longman and Ruth McGowan and Victoria Murday and Daniela Pilz and Edward Tobias and Margo Whiteford and Nicola Williams and Angela Barnicoat and Emma Clement and Francesca Faravelli and Jane Hurst and Lucy Jenkins and Wendy Jones and V. K. Ajith Kumar and Melissa Lees and Sam Loughlin and Alison Male and Deborah Morrogh and Elisabeth Rosser and Richard Scott and Louise Wilson and Ana Beleza and Charu Deshpande and Frances Flinter and Muriel Holder and Melita Irving and Louise Izatt and Dragana Josifova and Shehla Mohammed and Aneta Molenda and Leema Robert and Wendy Roworth and Deborah Ruddy and Mina Ryten and Shu Yau and Christopher Bennett and Moira Blyth and Jennifer Campbell and Andrea Coates and Angus Dobbie and Sarah Hewitt and Emma Hobson and Eilidh Jackson and Rosalyn Jewell and Alison Kraus and Katrina Prescott and Eamonn Sheridan and Jenny Thomson and Kirsty Bradshaw and Abhijit Dixit and Jacqueline Eason and Rebecca Haines and Rachel Harrison and Stacey Mutch and Ajoy Sarkar and Claire Searle and Nora Shannon and Abid Sharif and Mohnish Suri and Pradeep Vasudevan and Natalie Canham and Ian Ellis and Lynn Greenhalgh and Emma Howard and Victoria Stinton and Andrew Swale and Astrid Weber and Siddharth Banka and Catherine Breen and Tracy Briggs and Emma Burkitt-Wright and Kate Chandler and Jill Clayton-Smith and Dian Donnai and Sofia Douzgou and Lorraine Gaunt and Elizabeth Jones and Bronwyn Kerr and Claire Langley and Kay Metcalfe and Audrey Smith and Ronnie Wright and David Bourn and John Burn and Richard Fisher and Steve Hellens and Alex Henderson and Tara Montgomery and Miranda Splitt and Volker Straub and Michael Wright and Simon Zwolinski and Zoe Allen and Birgitta Bernhard and Angela Brady and Claire Brooks and Louise Busby and Virginia Clowes and Neeti Ghali and Susan Holder and Rita Ibitoye and Emma Wakeling and Edward Blair and Jenny Carmichael and Deirdre Cilliers and Susan Clasper and Richard Gibbons and Usha Kini and Tracy Lester and Andrea Nemeth and Joanna Poulton and Sue Price and Debbie Shears and Helen Stewart and Andrew Wilkie and Shadi Albaba and Duncan Baker and Meena Balasubramanian and Diana Johnson and Michael Parker and Oliver Quarrell and Alison Stewart and Josh Willoughby and Charlene Crosby and Frances Elmslie and Tessa Homfray and Huilin Jin and Nayana Lahiri and Sahar Mansour and Karen Marks and Meriel McEntagart and Anand Saggar and Kate Tatton-Brown and Rachel Butler and Angus Clarke and Sian Corrin and Andrew Fry and Arveen Kamath and Emma McCann and Hood Mugalaasi and Caroline Pottinger and Annie Procter and Julian Sampson and Francis Sansbury and Vinod Varghese and Diana Baralle and Alison Callaway and Emma J. Cassidy and Stacey Daniels and Andrew Douglas and Nicola Foulds and David Hunt and Mira Kharbanda and Katherine Lachlan and Catherine Mercer and Lucy Side and I. Karen Temple and Diana Wellesley and Lisenka E. L. M. Vissers and Jane Juusola and Caroline F. Wright and Han G. Brunner and Helen V. Firth and David R. FitzPatrick and Jeffrey C. Barrett and Matthew E. Hurles and Christian Gilissen and Kyle Retterer and Deciphering Developmental Disorders Study
+:JOURNAL:  Nature
+:YEAR:     2020
+:VOLUME:   586
+:NUMBER:   7831
+:PAGES:    757-762
+:DOI:      10.1038/s41586-020-2832-5
+:URL:      http://dx.doi.org/10.1038/s41586-020-2832-5
+:END:
+****** Integrated Bayesian analysis of rare exonic variants to identify risk genes for schizophrenia and neurodevelopmental disorders
+:PROPERTIES:
+:TITLE:    Integrated Bayesian analysis of rare exonic variants to identify risk genes for schizophrenia and neurodevelopmental disorders
+:BTYPE:    article
+:CUSTOM_ID: nguyen2017integrated
+:AUTHOR:   Hoang T. Nguyen and Julien Bryois and April Kim and Amanda Dobbyn and Laura M. Huckins and Ana B. Munoz-Manchado and Douglas M. Ruderfer and Giulio Genovese and Menachem Fromer and Xinyi Xu and Dalila Pinto and Sten Linnarsson and Matthijs Verhage and August B. Smit and Jens Hjerling-Leffler and Joseph D. Buxbaum and Christina Hultman and Pamela Sklar and Shaun M. Purcell and Kasper Lage and Xin He and Patrick F. Sullivan and Eli A. Stahl
+:JOURNAL:  Genome Medicine
+:YEAR:     2017
+:VOLUME:   9
+:NUMBER:   1
+:PAGES:    114
+:DOI:      10.1186/s13073-017-0497-y
+:URL:      http://dx.doi.org/10.1186/s13073-017-0497-y
+:END:
+****** Integrative modeling of transmitted and <i>de novo</i> variants identifies novel risk genes for congenital heart disease
+:PROPERTIES:
+:TITLE:    Integrative modeling of transmitted and <i>de novo</i> variants identifies novel risk genes for congenital heart disease
+:BTYPE:    article
+:CUSTOM_ID: li2021integrative
+:AUTHOR:   Mo Li and Xue Zeng and Chentian Jin and Sheng Chih Jin and Weilai Dong and Martina Brueckner and Richard Lifton and Qiongshi Lu and Hongyu Zhao
+:JOURNAL:  Quantitative Biology
+:YEAR:     2021
+:VOLUME:   9
+:NUMBER:   2
+:PAGES:    216-227
+:DOI:      10.15302/j-qb-021-0248
+:URL:      http://dx.doi.org/10.15302/J-QB-021-0248
+:END:
+****** Integrated Model of De Novo and Inherited Genetic Variants Yields Greater Power to Identify Risk Genes
+:PROPERTIES:
+:TITLE:    Integrated Model of De Novo and Inherited Genetic Variants Yields Greater Power to Identify Risk Genes
+:BTYPE:    article
+:CUSTOM_ID: he2013integrated
+:AUTHOR:   Xin He and Stephan J. Sanders and Li Liu and Silvia De Rubeis and Elaine T. Lim and James S. Sutcliffe and Gerard D. Schellenberg and Richard A. Gibbs and Mark J. Daly and Joseph D. Buxbaum and Matthew W. State and Bernie Devlin and Kathryn Roeder
+:JOURNAL:  PLoS Genetics
+:YEAR:     2013
+:VOLUME:   9
+:NUMBER:   8
+:PAGES:    e1003671
+:DOI:      10.1371/journal.pgen.1003671
+:URL:      http://dx.doi.org/10.1371/journal.pgen.1003671
 :END:

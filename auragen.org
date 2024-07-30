@@ -3,7 +3,7 @@
 :CATEGORY: excel
 :END:
 *** TODO Écrire tutorial confluence
-SCHEDULED: <2024-07-30 Tue>
+SCHEDULED: <2024-08-02 Fri>
   /Entered on/  [2024-05-21 mar. 11:18]
 *** KILL Vérifier diag RNU42 rendus
 CLOSED: [2024-07-04 jeu. 11:12] SCHEDULED: <2024-07-08 lun.>
@@ -133,7 +133,7 @@ EXT1 connu (hygen)
 Seqone
 - RBPJ faux sens avec clinique en faveur (retard psychomot et raccourissement doigts), score patho, mais hérité du père.
 *** TODO Vérifier variants non vus avec mon intérprétations
-SCHEDULED: <2024-07-30 Tue>
+SCHEDULED: <2024-08-02 Fri>
 *** WAIT Comprendre nouveaux filtres
   /Entered on/  [2024-05-21 mar. 11:04]
 *** PROJ Présenter les trous de Curagen aux bios
@@ -148,18 +148,24 @@ CLOSED: [2024-06-12 mer. 14:17] SCHEDULED: <2024-06-12 mer.>
 :END:
 *** TODO Biblio
 *** TODO Exécuter code existant en hg19
-SCHEDULED: <2024-07-24 Wed>
+SCHEDULED: <2024-07-31 Wed>
+*** Récupérer données de référence
+*** WAIT FastQ sur cluster CHU par Julien
+SCHEDULED: <2024-08-02 Fri>
+  /Entered on/  [2024-07-30 Tue 10:07]
 *** TODO Vérifier concordances
-**** TODO GIAB ? [cite:@steyaert2023systematic]
-Non clair, région masquée ?
+**** TODO GIAB [cite:@steyaert2023systematic]
 - giab [[https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-023-42531-9/MediaObjects/41467_2023_42531_MOESM11_ESM.xlsx][Liste des variants]] disponible
-**** TODO Accès données pacbio : voir avec Julien [cite:@steyaert2023systematic]
+**** KILL Accès données pacbio : voir avec Julien [cite:@steyaert2023systematic]
+CLOSED: [2024-07-30 Tue 16:50]
 - pacbio maison: accès restreint, à demander
   - https://ega-archive.org/datasets/EGAD00001009109 6 trio + 1 proband en HiF 30X
   - https://ega-archive.org/datasets/EGAD00001011305 STRPC1 sur cohorte
-
+GIAB suffit
 *** TODO Porter script en hg38
   /Entered on/  [2024-05-21 mar. 11:07]
+*** TODO En aveugle ?
+SCHEDULED: <2024-07-31 Wed>
 *** TODO Porter python
 ** Facebook
 :PROPERTIES:
@@ -185,9 +191,19 @@ Fusionner notes
 - [[denote:20240716T172506][Tuesday 16 July 2024 17:25]]
 - [[denote:20240718T153145][Thursday 18 July 2024 15:31]]
 - [[denote:20240719T093836][Friday 19 July 2024 09:38]]
-*** TODO Trouver algo de simulation de probab d’un variant (2-3 nucléotides)
-SCHEDULED: <2024-07-25 Thu>
+*** TODO Finir revue de [cite:@xie2024statistical] :stat:
+SCHEDULED: <2024-07-31 Wed>
   /Entered on/  [2024-07-22 Mon 17:17]
+*** TODO Bien le modèle stats [cite:@samocha2014framework] :stat:
+SCHEDULED: <2024-07-31 Wed>
+*** TODO Regarder quand des variants sont indépendants en terme de distance
+SCHEDULED: <2024-08-02 Fri>
+*** TODO Probabilité que des variants proches (probab conditionelle ?)
+SCHEDULED: <2024-08-02 Fri>
+*** TODO Revoir consentement decipher
+SCHEDULED: <2024-08-01 Thu>
+*** TODO Plan détaillé (gdocs) voir [[denote:20240730T094857][Tuesday 30 July 2024 09:48]]
+SCHEDULED: <2024-07-31 Wed>
 *** KILL Retrouver heatmap Shendure avec score par variant
 CLOSED: [2024-07-26 Fri 09:51] SCHEDULED: <2024-07-25 Thu>
   /Entered on/  [2024-07-24 Wed 12:23]
@@ -247,16 +263,25 @@ Julien intéressé pour que cela reste à Grenoble car une de ses équipes trava
 sur la fonction du domaine tuudor-knot où sont les résidus 620 et 621 et sur l’importance de cette région pour la reconnaissance de marques épigénétiques
 https://europepmc.org/article/MED/22247551
   /Entered on/  [2024-07-24 Wed 10:37]
+*** DONE Genematcher : contacter Clementina
+CLOSED: [2024-07-30 Tue 10:34] SCHEDULED: <2024-07-30 Tue>
 *** DONE Mail GeneDx: attente relecture julien
 CLOSED: [2024-07-25 Thu 08:57] SCHEDULED: <2024-07-25 Thu>
 *** DONE Mail Marjolaine pour accord genematcher
 CLOSED: [2024-07-24 Wed 14:10] SCHEDULED: <2024-07-24 Wed>
+*** WAIT Demander à Jérémie de contacter les coordonnateurs
+SCHEDULED: <2024-07-30 Tue>
+Pour proposer de les rendre
+  /Entered on/  [2024-07-30 Tue 11:02]
+*** TODO Regarder VAF autres variants (clones hématopoièse)
+SCHEDULED: <2024-07-31 Wed>
+  /Entered on/  [2024-07-30 Tue 17:53]
 ** Génomes péruvien
 :PROPERTIES:
 :CATEGORY: pérou
 :END:
 *** TODO Biblio julien
-SCHEDULED: <2024-07-24 Wed>
+SCHEDULED: <2024-08-02 Fri>
 *** WAIT Biblio M1
 * Divers
 ** KILL Compte admin sur DELL
@@ -349,10 +374,11 @@ SCHEDULED: <2024-08-01 Thu 10:00 +7d>
 :END:
 - State "DONE"       from "TODO"       [2024-07-25 Thu 14:27]
 *** TODO Clinico-biologique
-SCHEDULED: <2024-07-26 Fri 00:00>
+SCHEDULED: <2024-08-02 Fri 00:00 +1w>
 :PROPERTIES:
 :LAST_REPEAT: [2024-07-22 Mon 09:31]
 :END:
+- State "DONE"       from "TODO"       [2024-07-26 Fri 09:35]
 - State "DONE"       from "TODO"       [2024-07-19 Fri 09:31]
 - State "DONE"       from "TODO"       [2024-07-15 lun. 11:14]
 - State "DONE"       from "TODO"       [2024-06-28 ven. 16:15]
@@ -387,8 +413,8 @@ CLOSED: [2024-07-25 Thu 08:57] SCHEDULED: <2024-07-24 Wed> DEADLINE: <2024-07-25
 ** DONE Julien
 CLOSED: [2024-07-23 Tue 09:53] SCHEDULED: <2024-07-22 lun. 13:30>
 Entered on [2024-07-16 mar. 09:53]
-** TODO Julien :facebook:
-SCHEDULED: <2024-07-29 lun. 14:00>
+** DONE Julien :facebook:
+CLOSED: [2024-07-30 Tue 09:11] SCHEDULED: <2024-07-29 lun. 14:00>
 Facebook
 - présenter résultats sur forum
 - modèle stats (si fini)
@@ -397,8 +423,8 @@ Pseudogène
   - https://ega-archive.org/datasets/EGAD00001009109 6 trio + 1 proband en HiF 30X
   - https://ega-archive.org/datasets/EGAD00001011305 STRPC1 sur cohorte
 
-** TODO Philippe Jean (heure approx) :facebook:
-SCHEDULED: <2024-07-29 lun. 17:00>
+** DONE Philippe Jean (heure approx) :facebook:
+CLOSED: [2024-07-30 Tue 09:11] SCHEDULED: <2024-07-29 lun. 17:00>
 Entered on [2024-07-16 mar. 09:53]
 
 * Interprétation génomes
@@ -540,8 +566,8 @@ CLOSED: [2024-07-15 lun. 12:15] SCHEDULED: <2024-07-15 lun.>
   VOUS+ STAG2 site canonique d'épissage seqone
   WNT5A score bionfo non en faveur mais 2x gnomAD, clinique partiellement mais forme dominant plus mild  https://onlinelibrary.wiley.com/doi/10.1002/ajmg.a.61884peu. hérité de la mère
   Deletion qui prend quaisiment tout APOL1 sur gène de néphropathie (pas d'hydropnéphrose associé), non présent DGV
-*** WAIT MR-2400560: négatif poussé hygen, à transmettre Jérémie
-SCHEDULED: <2024-07-29 Mon>
+*** DONE MR-2400560: négatif poussé hygen, à transmettre Jérémie
+CLOSED: [2024-07-30 Tue 09:11] SCHEDULED: <2024-07-29 Mon>
 4x gnomad, tronquants surtout rapporté (mais pLI 0.19), scores bénin sauf CADD
 Domain fonctionnel
 faux-sens décrit dans la pathologie, colle clinique, clinvar VOUS... -> revoir le père ?
@@ -553,8 +579,8 @@ Publi : 11 enfant épilepsie NPRL3 + biblio (88 cas)
 *** WAIT MR-2400334 attente Jérémie
   /Entered on/  [2024-07-08 lun. 16:53]
 *
-*** TODO MR-2102277: poussé, transférer Jérémie
-SCHEDULED: <2024-07-29 Mon>
+*** DONE MR-2102277: poussé, transférer Jérémie
+CLOSED: [2024-07-30 Tue 09:11] SCHEDULED: <2024-07-29 Mon>
   /Entered on/  [2024-07-16 mar. 10:10]
 
   Vérif seqone les récessif
@@ -571,8 +597,8 @@ SCHEDULED: <2024-07-29 Mon>
 **** RVI
 - VSI : 2 LOF homozwygote frameshift PLIN3 et del SLC43A1: 0 auramatcher
 - ASH1L: framshift dans un transcrit non principal -> non
-*** TODO MR-2102278 valider hygen
-SCHEDULED: <2024-07-29 Mon>
+*** DONE MR-2102278 valider hygen
+CLOSED: [2024-07-30 Tue 09:11] SCHEDULED: <2024-07-29 Mon>
   /Entered on/  [2024-07-16 mar. 10:10]
   Del RAPGEF2 : artefact ? les soft-clips s’alignent
   VOUS- SOS1 seqone (noonan)
@@ -584,12 +610,15 @@ SCHEDULED: <2024-07-29 Mon>
   /Entered on/  [2024-07-16 mar. 10:10]
 - VOUS biallélique INST11 pour DI : notre tronquant est rapporté en 2023 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10183469/
 - tronquant CNOT3 connu LOF pour trouble neurodev mais hérité
-** TODO MR-2300938
-SCHEDULED: <2024-07-26 Fri>
+** WAIT MR-2300938: se rajouter comme interprétateur. Attente Jérémie
+SCHEDULED: <2024-07-30 Tue>
   /Entered on/  [2024-07-25 Thu 11:35]
 Suite à auramatcher pour http://172.25.219.90:8080/aurapport/app/#/main/summary?case=MR-2401008-t
 TNRC6B diag ?
+- clases 4 TNRC6B
+- VOUS Faux-sens BCORL1 (DI + TSA + dysmorpho, sévérité variable). Mitzli : score contrdaction, Grantham intermédaire
+
 * Interprétation génomes/Montpellier
-** TODO MR-2401144
-SCHEDULED: <2024-07-29 Mon>
+** TODO MR-2401144 : SNVs fait
+SCHEDULED: <2024-07-30 Tue>
   /Entered on/  [2024-07-26 Fri 09:48]
