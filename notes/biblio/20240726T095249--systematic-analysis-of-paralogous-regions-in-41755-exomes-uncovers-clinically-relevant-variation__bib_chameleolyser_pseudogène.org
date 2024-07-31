@@ -5,7 +5,7 @@
 #+reference:  steyaert2023systematic
 
 Identification en exome sur région homologues (3.5%)
-1. SNVV,indel
+1. SNV,indel
 2. CNV et "ectopic gene conversion"
 
 * Contexte
@@ -40,6 +40,9 @@ Sur les régions homologues (3.5%), il y a donc l'appel de SNVs (et indel)  d'un
 Pour différencier délétion homozygote et ectopic gene conversion
 1. analyse de la couverture dans l’alignement initial :
    - les reads du site accepteur seront aligné sur le site donner -> pas de reads à cet pas de reads sur le site et 2x sur le donneur
+
+Attention, des SNV/indel hétérozygotes n'ont pas de position bien définie (car paralogues) -> "variants with ambiguous positions"
+
 * Validation
 - Long-read Pacbio sur 20 échantillons
   - sur 769 SNV/indel (non du à une gene conversion) -> 678 confirmé
@@ -60,4 +63,46 @@ Pour différencier délétion homozygote et ectopic gene conversion
   - régions avec une qualité d'alignement à 0 (logique)
     - sensibilité de 0 (logique) vs 43% pour chameleolyzer
   - région avec aligement unique : sensbilité 86.3% vs 88%  chameleo
-  - délétion homozygotes,
+  - délétion homozygotes,: pas assez d'échantillons en long-read pour calculer la spécificité
+    - comparaison à 2 autres outils d'appel de CNV (ExomeDepth et Confier)
+      - 3 deletions et 1 gene conversions uniques dont 1 deletion et la gene conversion retrouvé en long-read
+      - 12 del et 7 conversion retrouvé par  exomedepth  (marqué comme deletion)
+      - 201 deletion homozygotes uniquement retrouvé par exome-depth
+      - précision estimé à 32.5%
+** 30-40% variants "ambigus" (= SNV/indel htz) dans région codante (estimation)
+- 10% sont soit codant soit avec 2 alternatives dont 1 seule et codante
+- 2 approches pour estimer la proportion de VAP codants
+  1. comparaison avec données long-read : 38% des 65 variants (les 10% ci-dessus) sont codants
+  2. utilisation du taux de synonymes, faux-sens et perte de fonction
+     - pipeline d'exome vs chameleolyse r: plus de faux-sens et synonyme dans les régions homologue
+       - hypthèse 1: pas de pression de sélection de variants synonyme -> la moitié sont dans des régions codantes
+       - hypèthes 2 : faux/sense/synome et synonyme/LOF semblable entre exome et homologue
+** SNV/indel: 14 nouveaux diagnostics
+~17k patients sans diagnostic
+- filtre
+  -faux-sens et perte de fonction < 0.5% dans la cohorte
+  - sur gènes d'intéret (selon demande clinicien)
+  - + 1 variant  synonyme de SMN1 (connu pour conduire à une protéine tronquée)
+- 1 071 htz
+  - 7 dans /STRC/ avec délétion multipe-exon -> MPLA et PCR long-range
+    - tous les délétions sont dans /STRC/ (et pas dans son pseudogène)
+    - 4/7 SNV/indel également -> 4 diago
+- 57 hmz (position non ambigue)
+- 21 gene conversion :
+  - 10 diag, autres estimé non causal.
+  - seulement dans 3 gènes : /STRC/, /OTOPA/ /SMN1/
+** délétion homozygotes: 11 diag
+- Filtre :  <= 0.5% dans la cohorte
+- 2 sur OTOA, 9 sur SMN1 (toutes confirmées en MLPA)
+** Différencier délétions homozygotes de gene conversion
+- 58 délétion homozygotes (pipeline maison) confirmées en MLPA
+- Chameleolyser : perte homozygote alèlle /STRC/ mais
+  - 37 = délétion homozygote
+  - 22 = gene conversion homozygote STRCP1 -> STRC
+Pathogénicité identique donc ne sert à rien sur cet exemple
+Les auteurs argument que les gene conversion sont bénignes donc important de faire la différence
+* Méthodes
+1. Parmis les gènes codant, extraction des pseudo-gènes connus
+   1. pour chaque pseudo-gènes annoté par Encode, sélection du gène codant correspondant (en utilisant l'identifiant HGNC /comment ??/)
+   2. alignement entre le gène codant et ses pseuodgene (MAFFT 7.047)
+   3. filtre : seulement une homologie >= 90% avec le pseudogène et avec exactement 1 pseudegen paralogue

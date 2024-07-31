@@ -167,6 +167,9 @@ GIAB suffit
 *** TODO En aveugle ?
 SCHEDULED: <2024-07-31 Wed>
 *** TODO Porter python
+**** DONE Extraction pseudogene gencode
+CLOSED: [2024-07-31 Wed 16:50] SCHEDULED: <2024-07-31 Wed>
+  /Entered on/  [2024-07-31 Wed 16:48]
 ** Facebook
 :PROPERTIES:
 :CATEGORY: facebook
@@ -203,7 +206,7 @@ SCHEDULED: <2024-08-02 Fri>
 *** TODO Revoir consentement decipher
 SCHEDULED: <2024-08-01 Thu>
 *** TODO Plan détaillé (gdocs) voir [[denote:20240730T094857][Tuesday 30 July 2024 09:48]]
-SCHEDULED: <2024-07-31 Wed>
+SCHEDULED: <2024-08-01 Thu>
 *** KILL Retrouver heatmap Shendure avec score par variant
 CLOSED: [2024-07-26 Fri 09:51] SCHEDULED: <2024-07-25 Thu>
   /Entered on/  [2024-07-24 Wed 12:23]
@@ -244,7 +247,7 @@ CLOSED: [2024-06-25 mar. 16:05] SCHEDULED: <2024-06-25 mar.>
 CLOSED: [2024-07-02 mar. 12:08]
   /Entered on/  [2024-06-25 mar. 13:57]
 *** TODO Envoi ADN biomnis (parent + cas index)
-SCHEDULED: <2024-07-31 Wed>
+SCHEDULED: <2024-08-05 Mon>
 Discuté avec Pauline [2024-07-26 Fri] : ok pour envoi par Marine la semaine prochaine
 *** DONE Vérifier consentement pour envoi "recherche"
 CLOSED: [2024-07-26 Fri 13:58] SCHEDULED: <2024-07-26 Fri>
@@ -269,13 +272,17 @@ CLOSED: [2024-07-30 Tue 10:34] SCHEDULED: <2024-07-30 Tue>
 CLOSED: [2024-07-25 Thu 08:57] SCHEDULED: <2024-07-25 Thu>
 *** DONE Mail Marjolaine pour accord genematcher
 CLOSED: [2024-07-24 Wed 14:10] SCHEDULED: <2024-07-24 Wed>
-*** WAIT Demander à Jérémie de contacter les coordonnateurs
-SCHEDULED: <2024-07-30 Tue>
+*** DONE Demander à Jérémie de contacter les coordonnateurs
+CLOSED: [2024-07-31 Wed 10:01] SCHEDULED: <2024-07-30 Tue>
 Pour proposer de les rendre
   /Entered on/  [2024-07-30 Tue 11:02]
 *** TODO Regarder VAF autres variants (clones hématopoièse)
 SCHEDULED: <2024-07-31 Wed>
   /Entered on/  [2024-07-30 Tue 17:53]
+*** WAIT Interpréter autres génomes ?
+Jérémie doit contacter les coordonnateurs
+SCHEDULED: <2024-08-07 Wed>
+  /Entered on/  [2024-07-31 Wed 10:02]
 ** Génomes péruvien
 :PROPERTIES:
 :CATEGORY: pérou
@@ -348,7 +355,7 @@ SCHEDULED: <2024-09-01 dim.>
 /Créé le/ [2024-05-16 jeu. 16:22]
 Attendre la v2
 ** TODO Vidéos pas-à-pas [[https://app.videas.fr/v/6dbbf878-740f-4e31-9587-76202736c9ae/][IGV]] :faq:
-SCHEDULED: <2024-07-31 mer.>
+SCHEDULED: <2024-08-07 Wed>
   /Entered on/  [2024-05-27 lun. 10:00]
 ** TODO [[https://anpgm.fr/media/documents/BP-NGSDiag_001_Interpretation_Variants_v2.pdf][Recos NGS-diag SNV]]
   /Entered on/  [2024-05-27 lun. 14:18]
@@ -611,7 +618,6 @@ CLOSED: [2024-07-30 Tue 09:11] SCHEDULED: <2024-07-29 Mon>
 - VOUS biallélique INST11 pour DI : notre tronquant est rapporté en 2023 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10183469/
 - tronquant CNOT3 connu LOF pour trouble neurodev mais hérité
 ** WAIT MR-2300938: se rajouter comme interprétateur. Attente Jérémie
-SCHEDULED: <2024-07-30 Tue>
   /Entered on/  [2024-07-25 Thu 11:35]
 Suite à auramatcher pour http://172.25.219.90:8080/aurapport/app/#/main/summary?case=MR-2401008-t
 TNRC6B diag ?
@@ -619,6 +625,8 @@ TNRC6B diag ?
 - VOUS Faux-sens BCORL1 (DI + TSA + dysmorpho, sévérité variable). Mitzli : score contrdaction, Grantham intermédaire
 
 * Interprétation génomes/Montpellier
-** TODO MR-2401144 : SNVs fait
-SCHEDULED: <2024-07-30 Tue>
+** WAIT MR-2401144 : rendu négatif, envoyé hygen
+SCHEDULED: <2024-08-01 Thu>
+ETV2 seulementd rapporté dans 1 famille (4 foetus non viable) HTZC
+SNV,CNV, SV rien d’intéressant
   /Entered on/  [2024-07-26 Fri 09:48]
