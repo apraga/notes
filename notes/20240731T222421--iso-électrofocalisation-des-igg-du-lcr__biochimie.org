@@ -1,0 +1,19 @@
+#+title:      Iso-électrofocalisation des IgG du LCR
+#+date:       [2024-07-31 Wed 22:24]
+#+filetags:   :biochimie:
+#+identifier: 20240731T222421
+
+- Montre la synthse intrathécale d'IgG (bandes oligoclonale)
+- Nécessite échantilion sérum /et/ LCR
+- Excellente sensbilité et spécifique
+- Critères diagnostiques SEP
+** Pré-analytique
+- LCR 600μL + sang tube sec
+- centrifugation
+** Analytique
+- Séparation des protéines selon la charge
+- Migration en gel d'agarose
+- Puis immunofixation
+** Interprétation
+[[file:images/biochimie/iso-electrofocalisation.png]]
+* [[denote:20240731T222251][Sclérose en plaque]]

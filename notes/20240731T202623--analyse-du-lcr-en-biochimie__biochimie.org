@@ -3,7 +3,14 @@
 #+filetags:   :biochimie:
 #+identifier: 20240731T202623
 
-[[denote:20240731T202742][Physiologie du LCR]]
+*À retenir*
+- aspect du LCR en premier
+- glycorachie à interpréter en fonction de la glycémie
+- glycorachie/glycémie effonré + hyperlacticorachie -> méningite bactérienne
+- intégrité de la barrière hémato-encéphalique évaluée par le calcu du quotient albumine
+- synthèse intrathécale d'IgG : augmenation index IgG, profil oligoclonale à iso-électrofocalisation
+
+* [[denote:20240731T202742][Physiologie du LCR]]
 
 * Aspect macroscopique++
 [[file:images/biochimie/lcr-aspect.png]]
@@ -46,6 +53,9 @@
 * Mise en évidence d'une synthèse intra-thécale d'immunoglobuline
 * [[denote:20240731T210741][Électrophorèse des protéines du LCR]]
 * Rapport d'albumine, index des IgG
+:PROPERTIES:
+:CUSTOM_ID: h:15c828fa-fb6d-4538-b0cb-8340f9391e3f
+:END:
 ** Albumine
 Intégrité de la barrière hémato-encéphalique évaluée par le quotient d'albumine
 - totalité de l'[[denote:20240717T201856][albumine]] vient du sang donc un quotient augmenté ~ diminution du début
@@ -53,3 +63,16 @@ Intégrité de la barrière hémato-encéphalique évaluée par le quotient d'al
   Orientation
   - inflammation SNC : normal/légèrement augmenté
   - méningites purulentes, encéphalites : augmenté++
+** Ig dans le LCR
+- Augmentation des Ig
+  - synthèse locale (intrathécale) par des plasomcytes dans SNC
+  - diffusion dans le sang -> regarder le quotient IgG LCR/sang
+    k
+*** Index des IgG
+{IgG LCR/sang} / {Alb LCR/sang }
+- < 0.6
+- interprétation selon l'âge
+- augmenté si synthèse intrathécale (ou barrière hémato-encéphalique fortement altérée)
+- attention: ne recherche pas IgA ou IgM
+- normal < 0.6
+* [[denote:20240731T222421][Iso-électrofocalisation des IgG du LCR]]

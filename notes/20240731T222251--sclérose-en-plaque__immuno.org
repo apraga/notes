@@ -1,0 +1,13 @@
+#+title:      Sclérose en plaque
+#+date:       [2024-07-31 Wed 22:22]
+#+filetags:   :immuno:
+#+identifier: 20240731T222251
+
+* Analyse du LCR
+- aspect limpide
+- examen direct : pas d'érythrocytes, leucocytose normale/légèrement augmentée
+- biochimie: protéinorachie légèrement augmenté, glycorachie et lacticorachie normale
+- recherche d'une synthèse intrathécale d'IgG
+  - [[denote:20240731T210741][Électrophorèse des protéines du LCR]]
+  - [[denote:20240731T222421][Iso-électrofocalisation des IgG du LCR]]
+  - [[denote:20240731T202623::#h:15c828fa-fb6d-4538-b0cb-8340f9391e3f][Index des IgG]]  augmenté
