@@ -131,11 +131,12 @@ CLOSED: [2024-06-27 Thu 22:14] SCHEDULED: <2024-06-27 Thu>
 :CATEGORY: japonais
 :END:
 ** TODO Intermediate Japanese
-SCHEDULED: <2024-07-27 Sat +1d>
+SCHEDULED: <2024-07-30 Tue +1d>
 :PROPERTIES:
 :STYLE:    habit
 :LAST_REPEAT: [2024-06-30 Sun 15:43]
 :END:
++ State "DONE"       from "TODO"           <2024-07-29 Mon 10:01>
 + State "DONE"       from "TODO"           <2024-07-27 Sat 10:01>
 + State "DONE"       from "TODO"           <2024-07-26 Fri 10:01>
 + State "DONE"       from "TODO"           <2024-07-25 Thu 10:01>

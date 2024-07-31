@@ -1,0 +1,19 @@
+#+title:      Physiologie du LCR
+#+date:       [2024-07-31 Wed 20:27]
+#+filetags:   :biochimie:
+#+identifier: 20240731T202742
+
+Production : plexus choroïdes + espace sous-arachnoïdien
+Circulation [[file:images/biochimie/lcr-circulation.png]]
+Réabsorption : villosités arachnoïdiennes
+Volume 120-140m/L, renouvellé en continu (500-600mL/jour)
+
+Barrière hémato-encéphalique : régulation fine des échanges sang-SNC
+
+* Fonctions
+- Protection mécanique du SNC
+- diminution masse du SNC
+- transport nutriments, hormones
+- maintien la pression intracrânienne
+- élimination des substances toxiques
+- protection contre les agents infectieux

@@ -1,0 +1,55 @@
+#+title:      Analyse du LCR en biochimie
+#+date:       [2024-07-31 Wed 20:26]
+#+filetags:   :biochimie:
+#+identifier: 20240731T202623
+
+[[denote:20240731T202742][Physiologie du LCR]]
+
+* Aspect macroscopique++
+[[file:images/biochimie/lcr-aspect.png]]
+** Hémorragique
+- Coloration diminue avec dilution, coagulable, surnageant limpide après centri -> traumatique (10%)
+- Coloration reste rouge, incoagulable, surnageant rosé -> hémorragie sous-arachnoïdienne (10%)
+** Xanthochromique: HSH++
+- autres : iode, hyperbilirubinémie importante, rifampicine, hyperprotéinorachie...
+* Protéinorachie
+- /Attention à la différence de concentration entre ventricule et lombaire/
+- 80% d'origine sanguine, 20% d'origine encéphalique
+** Augmenté
+- diminution du débit -> augmente la concentration des protéines d'origine sanguine
+  - production = traitement
+  - circulation = inflammation, tumeur, hernies discales
+  - réabsorption = méningite, polyradiculonévrite...
+- synthèse intrathécale (ex: immunoglobuline)
+** Diminué
+- rare en pratique ! possible HTIC, hydrocéphalie chronique
+- physiologique enfant < 12 ans
+** Dosage
+- turbidimétrique = performances satisfaisante, comparable entre LCR et urines, risque sous-estimation
+- colorimétrique = peu reproductibilté, proténies de faible masse moléculaire mieux reconnue -> attention
+* Glycorachie
+- 2.4-4.4 mmol/L, environ 60-80% glycémie
+- toujours *interpréter avec glycémie*
+** Diminuée
+- glycorachie/glycémie diminué : [[denote:20240731T205020][méningites bactériennes]], fongique, parasitaire
+- augmenté : [[denote:20240731T205116][méningites virales]] , secondaire hypoglycémie
+* Lacticorachie
+:PROPERTIES:
+:CUSTOM_ID: h:dddf16ac-9013-4649-a58f-82be7c3ba966
+:END:
+- 1.1-2:8mmol/L
+- Orientation diagnostique [[denote:20240731T204905][méningites]]
+  - > 3.9 mmol/L : bactérienne
+  - 2.8 - 2.9: tuberculeuse ou fongique
+  - < 2.8 : viral
+- autre : état de mal épileptique, hypoxie, mitochondriopathies, tumeurs cérébrales
+* Mise en évidence d'une synthèse intra-thécale d'immunoglobuline
+* [[denote:20240731T210741][Électrophorèse des protéines du LCR]]
+* Rapport d'albumine, index des IgG
+** Albumine
+Intégrité de la barrière hémato-encéphalique évaluée par le quotient d'albumine
+- totalité de l'[[denote:20240717T201856][albumine]] vient du sang donc un quotient augmenté ~ diminution du début
+
+  Orientation
+  - inflammation SNC : normal/légèrement augmenté
+  - méningites purulentes, encéphalites : augmenté++
