@@ -3,6 +3,13 @@
 #+filetags:   :immuno:
 #+identifier: 20240731T222251
 
+Maladie inflammatoire du SNC (altère barrière hématoencéphalique -> passage dans le sang)
+Troubles moteurs, névrite optique, troubles sensitifs et cognitifs
+Plaques = lésions démyélinisantes de la substance blanche cérébrale ou médullaire -> dissémination dans l'espace et le temps
+1/1 000 habitants
+2:1 femmes
+rare avant 5 ans et après 40 ans
+10% de formes familiales (HLA DR2 et DQW1)
 * Analyse du LCR
 - aspect limpide
 - examen direct : pas d'érythrocytes, leucocytose normale/légèrement augmentée
