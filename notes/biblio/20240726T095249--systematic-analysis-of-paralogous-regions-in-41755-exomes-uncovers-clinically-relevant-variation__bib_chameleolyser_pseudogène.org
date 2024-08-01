@@ -103,6 +103,13 @@ Pathogénicité identique donc ne sert à rien sur cet exemple
 Les auteurs argument que les gene conversion sont bénignes donc important de faire la différence
 * Méthodes
 1. Parmis les gènes codant, extraction des pseudo-gènes connus
-   1. pour chaque pseudo-gènes annoté par Encode, sélection du gène codant correspondant (en utilisant l'identifiant HGNC /comment ??/)
+   1. pour chaque pseudo-gènes annoté par Encode, sélection du gène codant correspondant (en utilisant l'identifiant HGNC /NB: les pseudogene se finissent par P ou P$N avec n entier/)
    2. alignement entre le gène codant et ses pseuodgene (MAFFT 7.047)
    3. filtre : seulement une homologie >= 90% avec le pseudogène et avec exactement 1 pseudegen paralogue
+2. Définition des régions avec leur paralogues
+   1. filtre des régions profondeur < 10
+      1. fusion de ces régions "proches" selon 3 critères : distance < 250bp, 500bp, 5% de la région (/slopping distance/))
+         - pour 5% de la liste, on supprime les régions < 50bp
+      2. pour chaque liste, définition d'un ensemble de région paralogues tels que
+        - toutes les régions d'un ensemble ont un score d'alignement >= 0.9
+         - aucune ne s'alignem avec un score >= 0.9 en dehors de l'ensemble

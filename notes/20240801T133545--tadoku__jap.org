@@ -1,0 +1,7 @@
+#+title:      Tadoku
+#+date:       [2024-08-01 Thu 13:35]
+#+filetags:   :jap:
+#+identifier: 20240801T133545
+
+* DONE https://tadoku.org/japanese/book/41012/
+CLOSED: [2024-08-01 Thu 13:35]

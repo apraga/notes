@@ -660,7 +660,7 @@ CLOCK: [2024-07-09 mar. 11:20]--[2024-07-09 mar. 11:26] =>  0:06
 Seule partie intéressante : filtrer site SNP et renvoie vers [cite:@dyke2015epigenome]
 
 *** DONE Investigative genetic genealogy: Current methods, knowledge and practice
-CLOSED: [2024-07-12 ven. 18:11]
+CLOSED: [2024-08-01 jeu. 15:24]
 :PROPERTIES:
 :TITLE:    Investigative genetic genealogy: Current methods, knowledge and practice
 :BTYPE:    article
@@ -671,8 +671,8 @@ CLOSED: [2024-07-12 ven. 18:11]
 :PAGES:    102474
 :YEAR:     2021
 :PUBLISHER: Elsevier
+:DOI:      10.1016/j.fsigen.2021.102474
 :END:
-Revue récente
 
 *** DONE Privacy challenges and research opportunities for genomic data sharing
 CLOSED: [2024-07-12 ven. 18:16]
@@ -687,6 +687,7 @@ CLOSED: [2024-07-12 ven. 18:16]
 :PAGES:    646--654
 :YEAR:     2020
 :URL:  https://www.nature.com/articles/s41588-020-0651-0
+:DOI: 10.1038/s41588-020-0651-0
 :PUBLISHER: Nature Publishing Group US New York
 :END:
 *** KILL Genetic data are not always personal—disaggregating the identifiability and sensitivity of genetic data
