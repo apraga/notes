@@ -2,3 +2,6 @@
 * WAIT Envoyer renseignement Dr Rio
 SCHEDULED: <2024-08-05 Mon>
   /Entered on/  [2024-07-31 Wed 10:01]
+* TODO Prévoir journée internes avec Virginie
+SCHEDULED: <2024-08-06 mar.>
+  /Entered on/  [2024-08-02 ven. 13:43]

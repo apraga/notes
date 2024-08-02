@@ -3,18 +3,31 @@
 #+filetags:   :immuno:
 #+identifier: 20240731T222251
 
-Maladie inflammatoire du SNC (altère barrière hématoencéphalique -> passage dans le sang)
-Troubles moteurs, névrite optique, troubles sensitifs et cognitifs
-Plaques = lésions démyélinisantes de la substance blanche cérébrale ou médullaire -> dissémination dans l'espace et le temps
-1/1 000 habitants
-2:1 femmes
-rare avant 5 ans et après 40 ans
-10% de formes familiales (HLA DR2 et DQW1)
-* Analyse du LCR
+* Physiopathologiq
+- Maladie inflammatoire du SNC (altère barrière hématoencéphalique -> passage dans le sang)
+- Troubles moteurs, névrite optique, troubles sensitifs et cognitifs
+- Plaques = lésions démyélinisantes de la substance blanche cérébrale ou médullaire -> dissémination dans l'espace et le temps
+- 1/1 000 habitants
+- 2:1 femmes
+- rare avant 5 ans et après 40 ans
+- 10% de formes familiales (HLA DR2 et DQW1)
+* Diagnostic différentiel
+- maladies inflammatoires systématiques (sarcoïdose, Behçet, lupus, Gougerot)
+- infections à tropisme neurologique, artérites cérébrales
+* Diagnostic
+Critères de Mc Donald 2005
+** Analyse du LCR indispensable
 - aspect limpide
 - examen direct : pas d'érythrocytes, leucocytose normale/légèrement augmentée
-- biochimie: protéinorachie légèrement augmenté, glycorachie et lacticorachie normale
+- biochimie:
+  - protéinorachie légèrement augmenté -> exclu si > 1g/L
+  - glycorachie et lacticorachie normale
 - recherche d'une synthèse intrathécale d'IgG
   - [[denote:20240731T210741][Électrophorèse des protéines du LCR]]
-  - [[denote:20240731T222421][Iso-électrofocalisation des IgG du LCR]]
-  - [[denote:20240731T202623::#h:15c828fa-fb6d-4538-b0cb-8340f9391e3f][Index des IgG]]  augmenté
+  - [[denote:20240731T222421][Iso-électrofocalisation des IgG du LCR]] -> bandes oligoclonales (référence, qualitative)
+  - dosage IgG : [[denote:20240731T202623::#h:15c828fa-fb6d-4538-b0cb-8340f9391e3f][Index des IgG]]  > 0.7 augmenté (quantitative, permet orientation rapide du clinicien). Interprétation la plus fiable : diagramme de Reiber
+*** Attention
+Bandes oligoclonales = 95% des patients atteints de SEP mais aussi
+- tumeur SNC
+- infection (Lyme, méningite...)
+- autre inflammation du SNC

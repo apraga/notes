@@ -44,5 +44,6 @@
   | HDL   | > 1 mmol/L  | > 0.40g/L |
   | TG    | < 1.7mmol/L | < 1.5g/L  |
 - cible : selon FR CV
+- [[denote:20240802T160025::#h:7a89950f-6a1f-4acb-a23b-05fed41c4f7e][Grossesse::Lipides]] 
 * Voir aussi [[denote:20240726T230440][Dyslipoprotéinémies]]
 * [[file:cas-cliniques/dyslipidémies.pdf][Cas cliniques]]

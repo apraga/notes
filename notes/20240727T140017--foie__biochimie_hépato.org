@@ -166,7 +166,7 @@ Augmentation ALAT/ASAT
 αfoetoproténie = suivi et non iagnostic. régérénration des hépatocyttes
 
 * TODO Grossesse
-- Physiologique : diminution albuminémie possible, augmenation PAL
+- [[denote:20240802T160025::#h:b14bb1f7-59f5-40ba-aa71-6d4314212d2b][Physiologique]]
 - cholestase gravidique : prurit, augmenation acide biliarie sérique :
   10-40 modéré,, sérève si > 40
   - ALAT = 2-10N >> ictère 10%, bili augmentée et γGt No/augmentée: 30%,

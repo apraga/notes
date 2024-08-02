@@ -288,7 +288,7 @@ SCHEDULED: <2024-08-07 Wed>
 :CATEGORY: pérou
 :END:
 *** TODO Biblio julien
-SCHEDULED: <2024-08-02 Fri>
+SCHEDULED: <2024-08-09 ven.>
 *** WAIT Biblio M1
 * Divers
 ** KILL Compte admin sur DELL
@@ -507,7 +507,7 @@ CLOSED: [2024-07-19 Fri 16:14]
 1 tronquant de novo
 - MR-2303393: trouble neuroved, TSA. Pas au  mme endroit. Pas dans le seul domaine fonctionnel
 **** WAIT Genematcher ZBT10 attente Jérémie sur dossier toulouse  ːMR-2304058ː
-SCHEDULED: <2024-08-02 ven.>
+SCHEDULED: <2024-08-06 mar.>
 fait.
 Doute sur TND poru notre patient.
 TND et TSɑ sur dossier Toulouse MR-2303393  -> Jérémie va le lire
@@ -618,6 +618,9 @@ CLOSED: [2024-07-30 Tue 09:11] SCHEDULED: <2024-07-29 Mon>
   /Entered on/  [2024-07-16 mar. 10:10]
 - VOUS biallélique INST11 pour DI : notre tronquant est rapporté en 2023 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10183469/
 - tronquant CNOT3 connu LOF pour trouble neurodev mais hérité
+*** TODO Vérifier si génome rendus avec Jérémie non validés
+SCHEDULED: <2024-08-05 lun.>
+  /Entered on/  [2024-08-02 ven. 15:17]
 ** WAIT MR-2300938: Attente Jérémie
   /Entered on/  [2024-07-25 Thu 11:35]
 Suite à auramatcher pour http://172.25.219.90:8080/aurapport/app/#/main/summary?case=MR-2401008-t

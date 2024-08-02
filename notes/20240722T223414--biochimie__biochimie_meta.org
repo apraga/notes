@@ -33,6 +33,7 @@
 * Physiologie
 - [[denote:20240727T140017][Foie]]
 - [[denote:20240727T144458][Système rénine-angiotensine-aldostérone]]
+ [[denote:20240802T160025][Grossess]]
 * Maladies
 * Cas cliniques
 - [[file:cas-cliniques/dyslipidémies.pdf][Dyslipidémies]] (bof)
