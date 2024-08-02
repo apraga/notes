@@ -3,7 +3,7 @@
 #+filetags:   :biochimie:cardio:
 #+identifier: 20240726T211519
 
-Peptide natriurétque type B
+Peptide natriurétique type B
 * Production
 - surcharge volémique -> production ventricules du coeur et extra-cardiaque
 - clivage preproBNP -> proBN -> BNP et peptide N-terminal proBNP (= NT-proBNP)
@@ -26,8 +26,9 @@ Cardiomyocite + fibroblaste pour diminuer remodelage myocardique
 - 100 - 500 : zone grise
 
 ** Attention
-Varie selon les co-morbidité (ex: IR), âge
-* BNP ou NT-proBNP pour amalides cardiaque ?
+Varie selon les co-morbidités (ex: IR), âge
+[[denote:20240802T160025::#h:e485bc1e-1ed8-441f-b5d1-08cdc3e1434a][Grossesse::Cardiaque]]
+* BNP ou NT-proBNP pour anomalies cardiaques ?
 - BNP t1/2 plus courte
 - IR augmente surtout le NT-proBNP
 Peu d'arguments pour choisir

@@ -214,6 +214,14 @@ CLOSED: [2024-06-30 Sun 23:47] SCHEDULED: <2024-06-30 Sun>
 ** TODO Notes Aya <2024-07-21 Sun>
 SCHEDULED: <2024-07-22 Mon>
 /Entered on/ [2024-07-22 Mon 22:30]
+** TODO Tadoku
+SCHEDULED: <2024-08-03 Sat +1d>
+:PROPERTIES:
+:LAST_REPEAT: [2024-08-02 Fri 22:30]
+:END:
+- State "DONE"       from "TODO"       [2024-08-02 Fri 22:30]
+- State "DONE"       from "TODO"       [2024-08-01 Thu 22:30]
+  /Entered on/  [2024-08-02 Fri 22:28]
 * Voiture
 :PROPERTIES:
 :CATEGORY: voiture
@@ -272,22 +280,12 @@ CLOSED: [2024-07-13 Sat 11:36] SCHEDULED: <2024-07-13 Sat>
 ** DONE Se connecter à updtodate depuis CHU Grenoble
 CLOSED: [2024-07-29 Mon 22:11] SCHEDULED: <2024-07-28 Sun>
 /Entered on/ [2024-07-18 Thu 22:33]
-** TODO Notes UNESS phase socle :bio:
-SCHEDULED: <2024-07-27 Sat +1d>
-:PROPERTIES:
-:STYLE:    habit
-:END:
-:LOGBOOK:
-CLOCK: [2024-07-27 Sat 15:08]--[2024-07-27 Sat 16:04] =>  0:56
-CLOCK: [2024-07-27 Sat 14:44]--[2024-07-27 Sat 15:00] =>  0:16
-CLOCK: [2024-07-27 Sat 13:43]--[2024-07-27 Sat 14:15] =>  0:32
-:END:
 * Maison
 :PROPERTIES:
 :CATEGORY: maison
 :END:
 ** TODO Contacter RED pour changer adresse sur facture
-SCHEDULED: <2024-07-20 Sat>
+SCHEDULED: <2024-08-17 Sat>
 /Entered on/ [2024-05-19 Sun 13:56]
 ** DONE Payer loyer grenoble
 CLOSED: [2024-06-12 Wed 21:39] SCHEDULED: <2024-06-05 Wed>
@@ -323,8 +321,8 @@ Tenir holoheap au courant
 ** DONE Mise à jour :gentoo:
 CLOSED: [2024-06-30 Sun 14:28] SCHEDULED: <2024-06-30 Sun>
 /Entered on/ [2024-06-30 Sun 12:57]
-** TODO Mettre en place prélèvement loyer
-SCHEDULED: <2024-07-30 Tue>
+** DONE Mettre en place prélèvement loyer
+CLOSED: [2024-08-02 Fri 22:26] SCHEDULED: <2024-07-30 Tue>
 /Entered on/ [2024-07-02 Tue 22:54]
 ** TODO Modus themes nushell
 SCHEDULED: <2024-08-17 Sat>

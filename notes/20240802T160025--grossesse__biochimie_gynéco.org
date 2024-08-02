@@ -36,8 +36,22 @@ augmentation (triglycérides, cholestérol) pour les besoins du fœtus + accumul
 - *pas de modification autre*
 - diminution albuminémie possible
 * Rénal
+- *protéinurie physiologique*
+- augmentation de la filtration glomérulaire, clairance de la créatinine
+- augmentation de la glycosurie
 * Cardiaque
+:PROPERTIES:
+:CUSTOM_ID: h:e485bc1e-1ed8-441f-b5d1-08cdc3e1434a
+:END:
+- diminution [[denote:20240726T211419][ANP]],[[denote:20240726T211519][BNP]]
+- augmentation D-dimères
+- débit cardiaque +40%, vasodilatation artérielle
 * Biochimique
+** Gaz du sang
+- alcalose respiratoire
+- hyperventilation (pCO2 artérielle diminue)
+- excrétion bicarbonate dans les urines pour compenser (donc diminution HCO3-)
+
 * Hématologique
 * Bilan martial
 * Coagulation
