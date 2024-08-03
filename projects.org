@@ -211,8 +211,8 @@ CLOSED: [2024-06-30 Sun 17:17] SCHEDULED: <2024-06-30 Sun>
 ** DONE Notes japonais :gentoo:
 CLOSED: [2024-06-30 Sun 23:47] SCHEDULED: <2024-06-30 Sun>
 /Entered on/ [2024-06-30 Sun 12:57]
-** TODO Notes Aya <2024-07-21 Sun>
-SCHEDULED: <2024-07-22 Mon>
+** DONE Notes Aya <2024-07-21 Sun>
+CLOSED: [2024-08-03 Sat 12:03] SCHEDULED: <2024-07-22 Mon>
 /Entered on/ [2024-07-22 Mon 22:30]
 ** TODO Tadoku
 SCHEDULED: <2024-08-03 Sat +1d>
