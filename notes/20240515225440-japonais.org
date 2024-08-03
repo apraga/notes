@@ -1004,7 +1004,7 @@ lire dialogues leçon 13 (business)
 - 急げば　間に合います si tu te dépêches, tu y sera à temps
 -
 - 蚊　か　moustique
-- 痒い かゆい　qui démange (ex: piqûre de moustique)
+- 痒い (かゆい) qui démange (ex: piqûre de moustique)
 - 石畳 : pavé
 - 治安（ちあん）: ordre public, sécurité
 - 避ける（さける）éviter
@@ -1016,3 +1016,12 @@ lire dialogues leçon 13 (business)
 A ーたら, B au passé : exprime la suprise de l'évènement B
 Ex: 家に帰ったら、母から荷物がとどいていました　（にもつ）
 est arrivé
+* 2024-07-21
+** Vocabulaire
+- カップだと水がに入りません: une tasse ne retiendra pas assez d'eau
+NB: 充分 et 十分 se lisent de la même manière
+- 閉まる(しまる) : fermer
+- エサをあげる: donner de la nourriture pour animaux
+  En kanji 餌 (nourriture pour animaux)
+- 無視する (むし) : ignorer
+-  似る(に) : ressembler
