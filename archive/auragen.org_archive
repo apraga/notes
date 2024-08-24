@@ -1,0 +1,232 @@
+#    -*- mode: org -*-
+
+
+Archived entries from file /home/alexis/org/auragen.org
+
+
+* DONE SH-REF-02 REV 07 Exigences pou
+CLOSED: [2024-07-03 mer. 14:47] SCHEDULED: <2024-07-03 mer.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-07-24 Wed 14:01
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Kalilab
+:ARCHIVE_CATEGORY: kalilab
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE NF EN ISO 15189 LBM Exigences
+CLOSED: [2024-07-23 Tue 14:31] SCHEDULED: <2024-07-22 Mon>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-07-24 Wed 14:01
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Kalilab
+:ARCHIVE_CATEGORY: kalilab
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE SH-FORM-43 VDM WGS génétique c
+CLOSED: [2024-06-26 mer. 10:58] SCHEDULED: <2024-06-26 mer.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-07-24 Wed 14:01
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Kalilab
+:ARCHIVE_CATEGORY: kalilab
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE Présentation ACRAA CHD7
+CLOSED: [2024-06-19 mer. 11:01] DEADLINE: <2024-06-20 jeu. 14:00>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-07-24 Wed 14:02
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Divers
+:ARCHIVE_CATEGORY: auragen
+:ARCHIVE_TODO: DONE
+:END:
+  /Entered on/  [2024-06-18 mar. 14:52]
+Compléter diapo avec
+** Clinique : CHARGE
+** Clinique : phénotype étendu
+   https://www.ncbi.nlm.nih.gov/books/NBK1117/
+-   Colobome oculaire (petit colobome rétinien -> anophtalmie) : 80%
+-   Atrésie/ Sténose choanale : 45%
+-   Dysfonctionnement / Anomalie des nerfs crâniens :
+    -   I : hyposmie ou anosmie : 90%
+    -   VII : paralysie faciale : 40%
+    -   VIII : surdité neurosensorielle: >95%
+    -   IX/X : succion et déglutition, motilité gastro-intestinale anormale : 60%-80%
+-   Malformations de l'oreille : *caractéristique!*
+    -   Auricule : 90%
+    -   Malformations ossiculaires : 80%
+    -   hypoplasie cochléaire : 90%
+    -   *canaux semi-circulaire absent/hypoplasiques* : 94%
+-   *Fente labiale* et/ou palatine : 25%-50%
+-   Endocrinien :
+    -   Hypogonadisme hypogonadotrope : 50%-70%
+    -   Déficit de croissance : 70%
+    -   Hypothyroïdie : 15%-20%
+-   Retard de développement / Déficience intellectuelle : \>90% / 60%
+-   *Malformation cardiovasculaire* : 74%
+-   Anomalies trachéo-oesophagiennes : 20% (*difficultés respiratoires*, trachéo *laryngomalacie*)
+-   Cerveau :
+    -   Hypoplasie du clivus : 95%
+    -   Autres anomalies : 50%
+-   Crises épileptiques : 30%
+-   Anomalies rénales : 30%
+
+** CHD7 et phénotype cardiaque
+   - phéno cardiaque à repréciser
+     mettre figure
+     https://onlinelibrary.wiley.com/doi/full/10.1002/ajmg.c.31761
+
+** CHD7 et phénotype cardiaque
+     Source https://onlinelibrary.wiley.com/doi/full/10.1002/ajmg.c.31761
+
+- Implication des cellules de la crêtes neurale dans le CHARGE. en effet
+  - fréq augmenté des défaut conovventricailaire et "arch vessels"
+  - cellules cretes neptarale rôle : septation of the outflow tract and conal septum and the pharyngeal arches
+- Problème : AVSD surreprésenté (c. crêtes neurole non essentilé dans la formation du "cushion endocardial") -> probablement
+  - Mesoderm lineage-specific ablation (Mesp1) of CHD7 leads to disruption of endocardial cushion formation, which may explain the overrepresentation of AVSD defects in CHARGE syndrome (Payne et al., 2015).
+  - Probablement multiple pathway
+    - overlap avec
+      - 22q11.2) : TBX1 (phéno cardiaque) = synergique CHD7 et TBX1, médiation partielle p53
+    - syndrome kabuki (KTMD2D, KDM6A (mécanisme de remodelage chromatique similaire à CHD7)
+    - rôle chromatine et méthylation
+
+** CHD7 et bulbles olfactifs
+Source https://onlinelibrary.wiley.com/doi/full/10.1002/ajmg.c.31585
+    - Olfactory testing and/or MRI imaging in individuals with CHARGE with gonadal defects revealed defective olfaction/olfactory bulb development in a significant number of patients (Chalouhi et al., 2005; Pinto et al., 2005). ""
+    - fetus: "studies in a human fetus with CHARGE syndrome has confirmed that the CHARGE fetus showed arhinencephaly (olfactory bulb agenesis) with absence of GnRH neurons in the forebrain (Teixeira et al., 2010). The migrating olfactory and GnRH neurons accumulated in the fronto-nasal region with the formation of bilateral spherical structures consistent with neuromas near the cribriform plate, implicating a significant migratory defect (Teixeira et al., 2010)"
+    - souris "Chd7 deficient mice display smaller olfactory bulbs, reduced number of olfactory sensory neurons, defective senses of smell with loss of odor-evoked electro-olfactogram responses, reduced hypothalamic GnRH neuronal numbers, hypoplastic genitalia, hypogonadotropism, and impaired pubertal timing (Bergman et al., 2010; Layman et al., 2011, 2009).
+    - The GnRH deficiency in CHARGE syndrome, thus results from the olfactogenital pathological sequence, implicating the disruption of olfactory axon migration to the forebrain as the primary cause of the defective migration of GnRH synthesizing cells, which normally migrate along these nerve fibers.
+** Rôle moléculaire CHD7
+Genereviews :
+- protéine impliquée remodelage de la chromatine dépendante ATP
+- INteraction avec dizaines de gènes et > 10k site mammifère
+- Mécanisme non connu (perte biogénèse ribosomale ?)
+- Régulateur épigénétique
+
+https://onlinelibrary.wiley.com/doi/10.1002/ajmg.c.31592
+
+** Rôle moléculaire CHD7
+Mécanisme = Perte ou diminution de fonction (Genereviews)
+- 78% allèle null
+- 9% faux-sens
+- 13 anomalie de splice : allèle nul (frameshift) ou hypomorhpe (saut d'exons)
+
+Limites
+- Modèle animal: faux-sens/allèle hypomorphes non testé pour le phénotype
+- quid formes atypiques/légères ?
+** Variants pathologiques
+Extrait de chd7.org 18 juin 2014
+| Type                | Nombre | Pourcentage |
+|---------------------+--------+-------------|
+| deletion            |      8 |        1.38 |
+| deletion whole gene |     10 |        1.72 |
+| duplication         |      1 |        0.17 |
+| frameshift          |    267 |       45.96 |
+| missense            |     47 |        8.09 |
+| nonsense            |    174 |       29.95 |
+| splice site         |     71 |       12.22 |
+| translocation       |      3 |        0.52 |
+** Ressources
+https://chd7.org/
+
+* DONE Présentation CHD7 journée biologiste avec correction charles
+CLOSED: [2024-07-08 lun. 08:42] SCHEDULED: <2024-06-28 ven.> DEADLINE: <2024-07-04 jeu. 13:15>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-07-24 Wed 14:02
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Divers
+:ARCHIVE_CATEGORY: auragen
+:ARCHIVE_TODO: DONE
+:END:
+  /Entered on/  [2024-06-21 ven. 17:05]
+  Attente retour Charles + véronique
+
+* DONE Question Jean-François sur stockage
+CLOSED: [2024-06-25 mar. 12:00]
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-07-24 Wed 14:02
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Divers
+:ARCHIVE_CATEGORY: auragen
+:ARCHIVE_TODO: DONE
+:END:
+  /Entered on/  [2024-06-24 lun. 09:49]
+
+* DONE Pourquoi 2101694 ré-archivé seqone ?
+CLOSED: [2024-07-01 lun. 11:52] SCHEDULED: <2024-06-28 ven.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-07-24 Wed 14:02
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Divers
+:ARCHIVE_CATEGORY: auragen
+:ARCHIVE_TODO: DONE
+:END:
+  /Entered on/  [2024-06-28 ven. 15:18]
+
+* DONE Aider Paul : 2e variant MR-2203140  DISP1 ?
+CLOSED: [2024-07-03 mer. 14:41] SCHEDULED: <2024-07-02 mar.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-07-24 Wed 14:02
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Divers
+:ARCHIVE_CATEGORY: auragen
+:ARCHIVE_TODO: DONE
+:END:
+  /Entered on/  [2024-07-02 mar. 11:15]
+
+* DONE Vérifier interêt STR multiples non rendus
+CLOSED: [2024-07-08 lun. 10:09] SCHEDULED: <2024-07-08 lun.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-07-24 Wed 14:02
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Divers
+:ARCHIVE_CATEGORY: auragen
+:ARCHIVE_TODO: DONE
+:END:
+:LOGBOOK:
+CLOCK: [2024-07-08 lun. 09:53]--[2024-07-08 lun. 10:09] =>  0:16
+:END:
+  /Entered on/  [2024-07-08 lun. 09:03]
+
+* DONE Question: MR-2400594 variants décochés mais restent de la liste "à envoyer"
+CLOSED: [2024-07-19 Fri 11:21] SCHEDULED: <2024-07-19 Fri>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-07-24 Wed 14:02
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Divers
+:ARCHIVE_CATEGORY: auragen
+:ARCHIVE_TODO: DONE
+:END:
+  /Entered on/  [2024-07-19 Fri 11:06]
+  Bug ID HGNC, ne devrait pas réarriver
+
+* DONE Nettoyer tâches finies dans "améliorations" et "questions" :doc:
+CLOSED: [2024-06-11 mar. 10:44] SCHEDULED: <2024-06-11 mar.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-07-24 Wed 14:02
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Divers
+:ARCHIVE_CATEGORY: auragen
+:ARCHIVE_TODO: DONE
+:END:
+:LOGBOOK:
+CLOCK: [2024-06-11 mar. 10:42]--[2024-06-11 mar. 10:44] =>  0:02
+:END:
+  /Entered on/  [2024-06-11 mar. 10:26]
+
+* DONE Mastermind ? :aurapport:
+CLOSED: [2024-06-19 mer. 11:00] SCHEDULED: <2024-06-19 mer.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-07-24 Wed 14:02
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Divers
+:ARCHIVE_CATEGORY: auragen
+:ARCHIVE_TODO: DONE
+:END:
+  /Entered on/  [2024-06-11 mar. 10:31]
+  Démo non convaincate à véronique: n'arrivait pas à voir les articles par variant
+  Retesté : ok
+  Limite: impossible de trier par pertinence les articles donc moins intéressant...

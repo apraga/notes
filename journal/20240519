@@ -1,0 +1,12 @@
+* 2024-05-19
+** 13:27 Structure org-mode
+On séparer les tâches (inbox.org projects.org) des notes (gérée par org-roam dans notes/)
+** 23:43 Package tiddit
+Il manquant propagatedBuildInputs pour avoir fermi2 et ropebwt2 à l'exécution
+*** Test
+  #+begin_src sh
+cd ~/code/bisonex/tests
+tiddit --sv --bam chr22.bam --ref ~/code/human_genome_assets/sequence/GRCH38/GCA_000001405.15_GRCh38_full_analysis_set.fna
+  #+end_src
+  où le bam est extrait depuis un run avec `bamtools split`
+  ATtention à la concordance sur le nom des chromosomes...
