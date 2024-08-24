@@ -8,8 +8,13 @@ Perte de sodium
 Pure si iso-osmolaire (l'eau "suit")
 
 * Étiologie :
-- perte extrarénale : le rein essaye de compenser la perte de sodium  -> oligurie, natriurièse effondrée, urines concentrées
+- perte extrarénale : le rein essaye de compenser la perte de sodium -> oligurie, natriurièse effondrée, urines concentrées
+  - digestive (diarrhèe)
+  - cutanée (brûlures)
 - perte rénale : pas de réponse du rein donc diurièse normale, natriurièse élevée, urines non concentrées
+  - défaut de réabsorption du sodium : hypercalcémie, diurétique, diabète sucré décompensé
+  - malaide du rein : néphropathie intertitielle
+- 3e secteur : péritonires, pancréatites
 
 * Clinique
 - hypotension artérielle
@@ -23,3 +28,6 @@ Protéines totales aumgentées
 Hémoglobine augmentée
 
 Insuffisance rénale fonctionnelle possible
+* Traitement
+perte de sodium (et d'eau car isomolaire) -> apport sel (oral ou
+   IV isotonique)
