@@ -1,0 +1,10 @@
+* 2024-07-07
+** 12:21 Tensorflow
+Compilation ok sur mésocentre, copiée localement avec nix-copy
+PR fait
+Correction du PR: il manquait le hash ! Bizarre que l'on ait réussi à compiler sur le mésocentre
+Pour clu, il essaie de compiler tensorflow mais le patch ne suffit pas
+
+Essaie patch maison qui supprime toutes les réferences à distutils -> idem... Patch non appliqué ?
+PR : nombreux échecs avec le patch
+Upstream: essai patch archlinux
