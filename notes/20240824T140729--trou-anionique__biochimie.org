@@ -3,4 +3,4 @@
 #+filetags:   :biochimie:
 #+identifier: 20240824T140729
 
-Na+ + K+ - Cl- - HCO3-
+Na+ + K+ - Cl- - HCO3- = 16mmol/L +/- 4

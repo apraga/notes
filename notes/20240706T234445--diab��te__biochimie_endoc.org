@@ -62,6 +62,11 @@ antiGAD positif: chercher
 - diabète : >= 1.26g/L à 2 reprise *ou* >= 2g/L
 
 *Seule la glycémie veineuse au labo donne le diag*
+** En cas de découverte
+- insuline ou peptide C (confirme carence insuline)
+- recherche des autoanticorps (antiGAD, anti-insuline, anti ilots de Langerhans) mais non indispensables
+- TSH
+- typage HLA (prédisposition génétique ?)
 * Type 1 et 2
 | 1                                       | 2                            |
 |-----------------------------------------+------------------------------|
