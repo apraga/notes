@@ -1,0 +1,7 @@
+#+title:      Cellules dendritiques
+#+date:       [2024-08-14 Wed 22:10]
+#+filetags:   :hémato:immuno:
+#+identifier: 20240814T221041
+
+- présente antigènes processés en peptides dans les nœuds lymphatiques
+- production de cytokines

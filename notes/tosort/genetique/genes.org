@@ -1,0 +1,25 @@
+#+title: Genes
+
+* RANBP2 : susceptibilité encéphalopatihe
+** Encéphalopathie aigüe nécrosante :
+(Prodrome : infection virale (voies respiratoires supérieures, otitis, gastro))
+Aigüe (+1 à 3 jours) : rapidement coma +/- convulsion, deficit neuro focal
++/- syndromes systémiques
+Transaminases élevées 62% , CIVD 12%
+** Encéphalopathie aigüe nécrosante 1 : mortalité+++, retard de diagnostic
+ATCD perso/familiaux, épisodes récurrents (parfois étiquettées méningite ou autre)
+Transaminases normales, pas de CIVD
+Faux sens RANBP2, mécanismes inconnus
+IRM cérébrale : hyperT2 avec prédilection thalamus et tronc cerebral (overlap avec encéphalites virales…)
+AD, 40% pénétrance
+** Critères de diagnostic mais non spécifiques (cf annexe)
+** Traitement
+Stéroides précoce (orage cytokinique, anti-inflammatoire)
+Oseltamivir pour l’infection (case report seulement)
+Vaccin anti-grippe ?
+Immunothérapie (case report)
+
+* TRIO
+Faux-sens = 2 hotspots
+- microcéphalie si dans spectrine
+- macrocéphalie si GEFD1

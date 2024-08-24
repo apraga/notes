@@ -1,0 +1,9 @@
+#+title:      Déshydratation intracellulaire
+#+date:       [2024-08-23 ven. 19:49]
+#+filetags:   :biochimie:néphro:
+#+identifier: 20240823T194921
+
+Clinique
+- sécheresse de la bouche et de la langue
+
+Bio: hyperosmolarité plasmatieque [[denote:20240804T124423][(Natrémie]])

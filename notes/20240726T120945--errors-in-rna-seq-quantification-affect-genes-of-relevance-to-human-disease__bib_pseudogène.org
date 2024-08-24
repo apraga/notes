@@ -1,0 +1,7 @@
+#+title:      Errors in RNA-Seq quantification affect genes of relevance to human disease
+#+date:       [2024-07-26 Fri 12:09]
+#+filetags:   :bib:pseudogène:
+#+identifier: 20240726T120945
+#+reference:  robert2015errors
+
+Cité par [cite:@ebbert2019systematic]  mais pas de stratégie pour les multi-map en RNAseq, si ce n’est les grouper

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       e5519b58-b8fd-4ae1-9585-aa5223d72431
+:END:
+#+title: Cholestérol HDL
+#+filetags: biochimie
+Interférence : triglycéride > 4.5mmol/L
+Normes 1.04-1.55mmol/L

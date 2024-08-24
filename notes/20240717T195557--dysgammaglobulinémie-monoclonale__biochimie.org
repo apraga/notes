@@ -1,0 +1,34 @@
+#+title:      Dysgammaglobulinémie monoclonale
+#+date:       [2024-07-17 Wed 19:55]
+#+filetags:   :biochimie:hemato:
+#+identifier: 20240717T195557
+
+* Indications
+Suspicion maladie avec Ig monoclonale (non systématique !) :
+- anomile hémogramme
+- tassement/fracture patho
+- hypercalcémie
+- protéinurie significative
+- neuropathie périphérique
+- douleurs osseuses non traumatique
+- IR récente
+- infections répétitions, purupura vasculaire
+, ADP, SMP
+- sd hyperviscoité : en urgence
+* Répartition
+- 55% MGUS
+- 17% myélome multiple
+- 11.5% amylose aL
+- 6% prolifération plasmocyte
+
+- Ig monolonate complète surtout avec 2/3 IgG > IgM (15-2)
+  attention production de chaînes légères libres en plus !
+- chaînes léères libres monoclonase κ ou λ (18-20% des cas de myélome)
+- (rarement) Ig chaîne lourde seule
+* Gravité
+- lié à la prolifération lymphoïde B : lésion osseuse, compression médullaire, infection, hyperC, IR
+- les Ig elle même : amylose (acculumation: rénale : dégradation tubule), activité auto-immune
+
+- [[denote:20240717T195629][Myélome]]
+- [[denote:20240717T195710][Leucémie à plasmocytes]]
+- [[denote:20240717T200108][Maladie de Waldenström]]

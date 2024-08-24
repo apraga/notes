@@ -1,0 +1,57 @@
+#+title:      Anémie
+#+date:       [2024-07-23 Tue 19:23]
+#+filetags:   :hémato:
+#+identifier: 20240723T192343
+
+|              | Inflammatoire | Ferriprive | Mixte    |
+|--------------+---------------+------------+----------|
+| Fer          | -             | -          | -        |
+| CST          | -             | -          | -        |
+| Transferrine | - ou N        | *+*        | -        |
+| Ferritine    | *N ou +*      | -          | - ou N   |
+| RsTF         | *N*           | *+*        | *N ou +* |
+|--------------+---------------+------------+----------|
+| CRP          | +             | N          | +        |
+| Hepcidine    | +             | -          | N ou -   |
+  CRP: augmenté si inflammatoire  ou mixte
+  Hepcidine: dimin
+Fer + Protoporphyrine -> heme + Globine -> hémoglobine
+
+Atteinte
+- fer  = carence martiale, anémie inflammatoire
+- protoporphyrine : anémie sidéroblastique
+- globine : thalassémie
+
+* Types d’anémies
+signe clinique/bio d’inflammation et - coef saturation < 16% et
+- ferritine < 30μg/L : carence martiale
+- ferritine 30-100
+  - RsTf/log ferritine > 2 : maladie chronique et anémie par carence martiale
+  - > 1 : maladie chronique
+- ferritine > 100: maladie chronique
+* [[denote:20240723T201939][Carence martiale]]
+* Anémies inflammatoire
+= celle des maladise chroniques
+** Physiopathologie
+- inhibition EPO
+- diminution érythropoïèse
+- augmente hémophagocytose (donc diminution Fe3-)
+- augmente synthèse hpecdinie
+** Bilan
+-  fsDiminution Fer et CST
+-  transferrine N ou -
+-  ferritine N ou +
+-  fsRsTF N
+
+*Une ferritine N ou + n'exclut pas une carence martiale*
+1. Ferritine
+2. Puis RsTf
+* Anémie mixte
+| Inflammatoire | Ferriprive | Mixte |
+* Hyperferritinémie
+- CST élevée (> 45%)
+  - cytolyse (ASAT/ALT) hépatique/musculaire
+  - sinon hémochromatose
+- sinon
+  - CRP augmenté : inflammatoire
+  - sinon : syndrome métabolique, mutation ferroportine, acéruloplasminémie, maladie de Gaucher

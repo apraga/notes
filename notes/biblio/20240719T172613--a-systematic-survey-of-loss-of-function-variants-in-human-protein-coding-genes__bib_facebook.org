@@ -1,0 +1,11 @@
+#+title:      A Systematic Survey of Loss-of-Function Variants in Human Protein-Coding Genes
+#+date:       [2024-07-19 Fri 17:26]
+#+filetags:   :bib:facebook:
+#+identifier: 20240719T172613
+#+reference:  macarthur2012systematic
+
+Méthode: 185 genomes (100 genomes)
+~ 2900 variant LOF candidats
+Après filtre ~ 1 200
+
+NA1288: en moyenne 97 variant LOF dont 18 homozygotes

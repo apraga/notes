@@ -1,0 +1,63 @@
+#+title:      Cytomégalovirus (CMV)
+#+date:       [2024-08-18 Sun 12:14]
+#+filetags:   :viro:
+#+identifier: 20240818T121442
+
+
+100% afrique, 50% france
+
+- tout organe peut être touché
+- nombreuses stratégies pour échapper au système immunitaire
+- infection latente à vie (ttt antiviral inefficaces)
+- virose opportunistes
+- primo/réactivation = bénigne si immunocompétent
+- sévère chez immunodéprime => surveillance
+- *infection congénitale virale la plus répandue*
+  - si primo chez mère
+  - ou réactivation/infection autre souche
+- diagnostic + surveillance : PCR
+- ttt : valganciclovir
+
+* Définition:
+
+- maladie à CMV = test CMV+ et symptomatique => ttt curatif
+- infection à CMV = test CMV+ et asymptomatique => ttt anticipé
+
+* Stades
+
+** 1. Primoinfection
+symptomatique ou non, disséminaton hématogène
+Immunocompétent
+- asymptoamtique
+- fièvre prolongée + splénomégalie
+- cytolyse hépatique
+- /pas/ d'angine ni ADP
+
+Immunodéprimé
+- forme grave, disséminée
+
+** 2. Latence/persistence : pas de réplication virale et persistance dans
+   les monocytes, macrophages, cellules endotéliales
+** 3. Récurrence : gravité selon status immunitaire : atteinte tissulaire
+   si VIH, transplantation+++ Asymptomatique sinon
+
+* Femme enceinte : Note
+
+- greffe : rique si solide : CMV- recoit CMV+ ou réactivation receveur
+  => primo infection, pneumopathie
+
+- VIH : récurrence CMV (rétinien, digestique, pulmonaire+++)
+
+  Traitement: ganciclovir (ou prodrogue valganciclovir)
+
+Pas de grosse concentration dans le sang (3-4log)
+
+* Diagnostic
+- Primoinfection postnatale : IgM, IgG +/- CMV
+- Foetus : PCR CMV liquide amniotique
+- Congénitale : PCR urine/salive pour distinguer d'une inféction
+  périnalae (sans conséquence mais excrétion virale J21)
+- Surveillance immunodéprimé : VIH+ et lymphocytes T CD4 < 100/mm^{3}
+  - fond d'oeil si positive ! (choriorétinine)
+- atteinte SNC: PCR LCS
+- digestive: biopsie digestive

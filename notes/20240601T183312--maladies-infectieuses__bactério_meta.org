@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       a54652d5-68c8-4668-aed9-50c9d719c207
+:END:
+#+title:      Maladies infectieuses
+#+filetags:   :bactério:meta:
+
+- [[denote:20240515T224540][Angines]]
+- [[denote:20240515T224830][Diarrhées]]
+- [[denote:20240515T224940][Infections cutanées]]
+- [[denote:20240515T225630][Légionelle]]
+- [[denote:20240601T183212][Infections sexuellement transmissibles]]
+- [[denote:20240602T154050][Gastro-entérites]]
+- [[denote:20240602T154150][Infections urinaires]]
+- [[denote:20240608T182804][Endocardites infectieuses]]
+- [[denote:20240731T204905][Méningites]]

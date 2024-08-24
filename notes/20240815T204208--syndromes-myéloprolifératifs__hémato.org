@@ -1,0 +1,13 @@
+:PROPERTIES:
+:CUSTOM_ID: h:2d531db7-3239-4d2b-b87d-6e0d530c7dee
+:END:
+#+title:      Syndromes myéloprolifératifs
+#+date:       [2024-08-15 Thu 20:42]
+#+filetags:   :hémato:
+#+identifier: 20240815T204208
+
+Atteinte de la lignée
+- érythroïde: [[denote:20240722T222950][Polyglobuline de Vaquez]] (augmentation GR et Hb)
+- neutrophile : [[denote:20240815T224958][Leucémie myéloïde chronique]], [[denote:20240815T224412][Leucémie chronique à neutrophiles]]
+- mégacaryocytoplaquettaire : [[denote:20240815T210446][Thrombocytémie essentielle]] (hyperplaquettose)
+- hyperproduction médullaire + fibrose : [[denote:20240815T210617][Myélofibrose primitive]]

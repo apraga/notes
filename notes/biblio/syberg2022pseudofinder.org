@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       bc934e1a-f419-48c3-8c46-37b93a84bc6f
+:ROAM_REFS: @syberg2022pseudofinder
+:END:
+#+title: Syberg-Olsen, Mitchell J and Garber, Arkadiy I and Keeling, Patrick J and McCutcheon, John P and Husnik, Filip :: Pseudofinder: detection of pseudogenes in prokaryotic genomes
+
+Bactéries et archées ici
+Très peu de pseudogène mais il en existe
+
+En générale, annotation
+- manuelle
+- ou script maison
+- pou pipeline (PGAP en 2016, DFAST en 2018) -> utilisép our annotation fonctionnelle
+
+  Outils récents
+  - génome de mammifère (20): le plus récent et Alsve 2020 avec un outil en ligne mais non accesible le <2024-06-24 lun.>
+  - pour les prokaryotic, plusieurs outils : plus récent = PEPPAN (Zhou  2020) mais fait ud pangénoème. Et apparement ils ne sont pas open-source, fait pour du pangénome ou les paramètres ne sont pas modifable
+
+Algorithme: annotation d'un génome en comparaison avec une base de donnée de protéine ou un génome "proche"
+
+Validation:
+- génération aléatoire de pseudogène dans un génome de Shigella flexneri
+- comparaison avec PGAP et DFAST

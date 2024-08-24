@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       82df331a-bf10-4099-aa1b-24b4dd637a74
+:END:
+#+title: Mises à jour
+#+filetags: pipeline
+
+Annotation
+ - fréquences : [[id:0b163c10-63c2-44e0-b694-f3749139a3d5][Annotations]]
+ - vérification de la conformité : clinvar = génome de référence identique, pas de modification du type de variant et des variables (liste des attributs de CLNSIG)
+ - mesure impact : majeur (nouvau variant patho, perte variant patho), warning (variant perdu), mineur
+ - rapport (kalilab ??)
+ - http://genomealerte.univ-grenoble.fr

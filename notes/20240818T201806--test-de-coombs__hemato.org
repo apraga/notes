@@ -1,0 +1,15 @@
+#+title:      Test de Coombs
+#+date:       [2024-08-18 Sun 20:18]
+#+filetags:   :hemato:
+#+identifier: 20240818T201806
+
+* Direct
+** AutoAc chauds
+- IgG
+- 37 °
+- Frottis: sphérocytes, polychromatophilie, érythroblastes
+** AutoAc froids
+- IgM
+- 4°
+- Fausse augmentation VGM
+- Frottis: autoagglutination (rouleaux)

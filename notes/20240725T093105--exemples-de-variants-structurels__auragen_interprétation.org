@@ -1,0 +1,9 @@
+#+title:      Exemples de variants structurels
+#+date:       [2024-07-25 Thu 09:31]
+#+filetags:   :auragen:interprétation:
+#+identifier: 20240725T093105
+
+
+invdup MR-2203330 rendu chr8:g.( ?_8,231,549)_10,888,653delins11,100,482_(12,035,836_?)inv
+
+inversion paracentrique 18q MR-2402177 30Mb chr18:36,491,658-67,312,508

@@ -1,0 +1,42 @@
+:PROPERTIES:
+:ID:       d2732357-0207-4f7e-ada5-223fa4e91b66
+:ROAM_REFS: @erlich2018
+:END:
+#+title: Yaniv Erlich and Tal Shor and Itsik Pe’er and Shai Carmi :: Identity inference of genomic data using long-range familial searches
+
+* Contexte
+test génétique "direct-to-custom": ~700k sondes. Utiliseurs ont leur génotype brut en texte simple.
+Sur différents site (GEDmatch), on peut uploader ce fichier. Notamment pour trouver les parents avec des segments "identity-by-descent"
+- segment identique par rapport à un ancêtre commun sans recombinaison
+Fonctionne  m^ême pour 2e ou 3e cousins.
+Utilisé pour des cold case  (13 cas en 2018 !)
+* Probabilité de trouver un apparenté
+
+Base de 1.28 millions d'individus avec un de ces tests
+- filtre : on garde les apparentés avec 2 segments > 6centimorgant (1centimorgan = 1% de chance de séparation après recombinaison pendant la méioise)
+- filtre: on enlève segment > 700cm (suppression des parents proches)
+Algo
+1. proba que l'individu cible et celui de la base de données soient apparentés
+2. probab que ces 2 individus partagent suffisament de segment IBD pour être détecté par l'algorithme d'appariement
+3. probab de trouvée >= t individus apparisé dans une base de donnée de R personnes
+Résultat:
+- 60% des recherche ont des segments >= 100cM ~ 3e cousin (arrièore-arrière-grand père en commun) ou plus proche
+Marche mieux que l'inréferenc du nom de famille sur l'Y
+- 15% ont >= 300cM (2e cousin ou moins)
+
+Méthode validé sur 30 recerche aléatoire dans GEDmatch: >_100cM dans 76% des cas pour les meilleurs résultats
+
+Avec modèle simplifié, il suffit de couvrir 2% de la population avoir avoir un 2e cousin (mais correspond aux réslutat empiriques)
+* Probabilité de trouver un individu après apparenté
+Filtres
+- < 160km de la position cible : exclu 57% candidats
+- filtre sur l'âge cible +/- 5 ans : exclu 91%
+- filtre sur le sexe cible  : 16 à 17 individus -> ok pour manuel
+* Test sur 1000 genomes
+Parmis les CEU : sélection d'une femme (mari indentifié par inférence sur le nom) ->_génome extrait de 1000genomes, formaté pour ressemblé aux résultat de kit et uploadé GEDMATCHE.
+2 aparents renolvyé probablement 6 à 7 degrées séparations. Relié par un coupe acenstrato -> 1h de travail pour l'identifié.
+Puis recherche des descandant de ce couple qui sont dans le 1000genomes -> 1 jour de travail.
+Identifiaciton cible
+
+* Conclusion
+À partir de 700k SNP, les sites styl GEDmatch permettent de retrouver un individu aux USA de descendance européen

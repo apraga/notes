@@ -1,0 +1,54 @@
+:PROPERTIES:
+:ID:       0edbf593-2192-479a-8cc4-aefd3e991f2a
+:END:
+#+title: Nixpkgs
+#+filetags: #nix
+#+identifier: 20240515T225840
+
+
+https://github.com/NixOS/nixpkgs/blob/master/pkgs/README.md
+
+* Bonnes pratiques
+- Formatteur officiel (en cours d'adoption le 28 mars 2024, https://discourse.nixos.org/t/call-for-testing-nix-formatter/39179/5)
+#+begin_src sh
+nix profile install nixpkgs#nixfmt-rfc-style
+nixfmt package.nix
+#+end_src
+Les nouveaux paquets sont dans pkg/by-name
+- éviter =rec= et utiliser =finalAttrs= plutôt [[https://nixos.org/manual/nixpkgs/unstable/#mkderivation-recursive-attributes][(source)]]
+- mettre =pname= en dur dans =fetchFromGithub= [[https://github.com/nix-community/nixpkgs-lint/issues/21][(source)]]
+- utiliser =hash= plutôt que =sha256=]] [[https://nixos.org/manual/nixpkgs/stable/#fetchurl][(source)]]
+- version = "2.2-unstable-YYYY-MM-DD" s'il n'y a pas de version [[https://github.com/NixOS/nixpkgs/blob/master/pkgs/README.md#package-naming][(source)]]
+
+  Vérifier avec
+  #+begin_src
+nix-shell -p nixpkgs-review --run "nixpkgs-review rev HEAD"
+  #+end_src
+
+* Variables
+- =nativeBuildInput= : si exécuté durant le build (ex: cmake)
+- =buildInputs= : si utilisé à l'exécution ou ajouté dans la sortie (ex: zlib). Attention, il peut falloir ajouter aux 2 !
+** Tests
+Tester dans nixpkgs qu'il compile
+#+begin_src sh
+nix-build -A mypackage
+#+end_src sh
+
+Tester les dépendances
+#+begin_src sh
+nix-shell -p nixpkgs-review --run "nixpkgs-review rev HEAD"
+#+end_src sh
+
+Regarder les variables d'environement :
+
+#+begin_src sh
+env
+#+end_src sh
+
+* [[id:494ea097-edb7-4e5c-b1b7-693e4a5d6df8][Package Python pour nixpkgs]]
+* [[id:56f7a57a-1807-4d72-abb2-6420eab119c5][Débugger un paquet nix]]
+* Astuces
+** Copier une dérivation en ssh
+nix copy --from ssh://meso /nix/store/f3ak3jvb9kxv6jd6r7kjbjr1a59hzyrb-tensorflow-2.13.0-python
+** Problèmes de drivers graphiques
+Utiliser [[https://github.com/nix-community/nixGL][nixGL]] si l'on n'utilise pas nixos.

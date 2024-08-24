@@ -1,0 +1,47 @@
+:PROPERTIES:
+:ID:       6f89f301-1b55-43cb-b3be-bf954bbc079e
+:END:
+#+title: Base de données pour pipeline constit
+#+filetags: bisonex article
+#+identifier: 20240606T231139
+# Solution existantes
+
+* Base de tests (intéressant)
+** Google brain sur AWS
+Une copie des données de Baid2020
+https://genomics-benchmark-datasets.s3.amazonaws.com/README.txt
+#+begin_src
+aws s3 ls s3://genomics-benchmark-datasets/google-brain/fastq/hiseq4000/ --no-sign-request
+                           PRE wes_agilent/
+                           PRE wes_idt/
+                           PRE wes_truseq/
+#+end_src
+** GATK test data sur AWS: non
+https://s3.amazonaws.com/gatk-test-data/gatk-test-data-readme.html
+Quasiment rien en bam
+#+begin_src sh
+❯ aws s3 ls s3://gatk-test-data/exome_bam/1000G_wex_hg38/ --no-sign-request
+2019-03-01 22:33:36    4379640 HG00133.alt_bwamem_GRCh38DH.20150826.GBR.exome.bai
+2019-03-01 22:33:38 13105459770 HG00133.alt_bwamem_GRCh38DH.20150826.GBR.exome.bam
+#+end_src
+
+IL y a NA12878 BAM
+
+* Galaxy: non
+Juste un wrapper autour de SRA https://usegalaxy.org/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fsra_tools%2Fsam_dump%2F3.1.1%2Bgalaxy0&version=latest
+refgénie = gère les version de génomes https://refgenie.databio.org/en/latest/
+
+* Données
+- SRA = dispon sur AWS également https://registry.opendata.aws/ncbi-sra/
+- 1000 génomes sur AWS https://registry.opendata.aws/1000-genomes/
+- broad genomes = (pas les version intermédiaires ?) https://s3.amazonaws.com/broad-references/broad-references-readme.html
+- GIAB https://registry.opendata.aws/giab/
+- 1000 génomes avec dragen https://registry.opendata.aws/ilmn-dragen-1kgp/
+
+
+* Tangente: et Apache parquet ?
+Utile seulement si on a l'infrastructure associée. Pas adapté à mon cas d'usage
+exemple https://www.diva-portal.org/smash/get/diva2:1596566/FULLTEXT01.pdf
+
+AWS : clinvar, 1000 genomes https://github.com/aws-samples/data-lake-as-code/tree/roda?tab=readme-ov-file#readme
+Azure : gnomAD, 1000 genomes https://techcommunity.microsoft.com/t5/healthcare-and-life-sciences/genomic-data-in-parquet-format-on-azure/ba-p/3150554

@@ -1,0 +1,4 @@
+#+title:      Hémoglobinurie paroxystique nocturne
+#+date:       [2024-08-07 mer. 18:12]
+#+filetags:   :hémato:
+#+identifier: 20240807T181237

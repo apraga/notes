@@ -1,0 +1,27 @@
+* 2024-06-14
+** 09:09 Questions Charles
+Ok pour voir interprétation avec chaque bio. M'enverront un mail "à la volée"
+** 11:00 Réunion Jérémie + Lucas
+
+Pb
+- [X] Commentaire non enregistré parfois ? ->utiliser IP
+- envoyer formation SV
+
+Si diag évident, pas besoin de charger seqone
+
+Méthode
+- si diag "À discuter", 2e lecture très rapide par Jérémie. À discuter en RCP f
+- si douteux "2e lecture" pour secnode relecture complète, sera discuté en staff
+- si neg "À interpréter"
+
+*** MR-2201152
+- MECP2 à discuter (classe 3)
+- question lucas : transloc mais hérité
+- DLG3 : VOUS, à discuter
+*** DONE MR-2001133 rien
+*** DONE MR-2303166
+dup chrX:54449198-54460505 Xp11.22 = diag ? FGD1 - sd Aarskgo-scott
+SOX11 ne ségrège pas, IGV moche et on a déjà un diag
+*** MR-2301994
+MLS2 : article + avis à Louis -> VOUS à discuter
+*** KILL MR-2301483

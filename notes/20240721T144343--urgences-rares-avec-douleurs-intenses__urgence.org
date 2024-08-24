@@ -1,0 +1,14 @@
+#+title:      Urgences rares avec douleurs intenses
+#+date:       [2024-07-21 dim. 14:43]
+#+filetags:   :urgence:
+#+identifier: 20240721T144343
+
+- Décompensation diabétique (voir [[denote:20240721T144858][Acido-cétose diabétique]] )
+- Crise thyrotoxique (TSH, T4L)
+- [[denote:20240721T145114][Insuffisance surrénalienne aigüe]]  (iono, cortisol, ACTH)
+- Porphyrie aigüe intermittente
+- Saturnime (plombémie)
+- Drépanocytose
+- Hémoglobinure paroxistique nocturne
+- Vascularites
+- Maladie de Still, Fabry etc

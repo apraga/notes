@@ -1,0 +1,83 @@
+#+title:      Maladies du globule rouge
+#+date:       [2024-08-13 Tue 15:29]
+#+filetags:   :hémato:
+#+identifier: 20240813T152959
+
+* Hémoglobine
+- défaut production : thalassémies
+- défaut qualité : parfois silencieuse, parfois très pathogènes (drépanocytose)
+** Intro
+Structure : chaines de globine (structure en globe) = protéine -> dans une poche vient se mettre l’hème (contient un atome de fer sur lequel se fixe l’oxygène)
+- Hémoglobinopathies = anomalies de globine (chaine protéqiue)
+À différencier des maladies de l’hème (porphyrie)
+
+3 hémoglobines physiologiques
+- 2 chaines α-globine, 2 chaines βglobine chez adulte (HbA)
+- hémoglobine foetale  = 2α, 2γ, qui sera remplacée par HbA (HbF)
+- secondaire = , 2α et 2 δ  (HbA2)
+
+Génétique :
+Au total : 2x{α1 et α2} et 2xβ en temps normal sur les 2 chromosome
+
+Épidémio:
+- 0% en europe du nords, 3% de β-thalassémie en Corse
+- zone de paludisme (avantage relatifs aux porteurs sains hétérozygotes)
+- par type: drépanocytose :Afrique subsaharienne, Inde, α-thalassémie en Asie du Sud-Est, β-thalassémie en Méditerranée, Inde, Asie
+** [[denote:20240722T222651][Thalassémies]]
+** hémoglobine anormales
+substitution acide aminé sur chaine α ou µ|
+1 000 variants sur [[HbVar)
+ex: HbS (drépanocyto), HbC (afrique, non patho)
+Conséquences très variables
+- hyper/hypo affine pour l’oxygène (hyper: Hb garde l’oxygène -> relarge moins l’oxygène mais conséquence fonctionnelle faible, teint rouge)
+- hémoglobine instable, solubilité
+*** Drépanocytose
+Mutation chanie β : Acide glutaminuqe ->valine
+Hémoglobine S
+
+Forme
+- classique = Homozygote
+- hétérozygotie composite : HbS + HbC (même acide aminé) -> drépanocytose atténuée (type SC)
+- hétérozygotie composite : HbS + Hbβ thalassémie = drépanocytose cliniquement + microcytose
+- hétérozygotie composite : HbS + Hbβ thalassémie+ (chaine perstitante d’Hg -> HgA) = drépanocytose cliniquement + microcytose
+**** Clinique
+Augmente la polymérisation + Rigidification du globule rouge
+- thrombus (et adhère anormalement à l’endothélium)
+
+Avant 2 ans :
+- anémie aigùe par emballemet de la rate (séquestration splénique)
+- infection sévère ()
+Peut être prévenu par vaccins et antibio
+
+Crises vaso-occlusive
+- typique = os (mais n’importe quel organes)
+- douleurs intenses ->_antalagique, hospit
+- en général 4/an -> prise en charge palliative
+- sinon, ttt par hydroxyurée (induit expression hémoglobine foetale -> diminue polymérisation ), transfusion, CSH, thérapie génique
+** diagnostic biologique
+Évaluation fraction physiologique des hémoglobine A, A2 et F +/- fraction anormales (chromatographie et électrophorèse))
+- Si anormale : biochomique/moléculaire
+Si syndrome majeur ou couple porteur htz -> séquencage direct (peu de gènes et de petite taille = Sanger suffit)
+** Résumé
+Hétérozygotes
+| β thalassémie       | α-thalassémie | drépanocytose |
+|---------------------+---------------+---------------|
+| HbA                 | HbA           | HbA           |
+| HbA2 élevée         | HbA2 normales | HbA2 normal   |
+| HbF  normale/élevée | HbF normale   | HbF normal    |
+|                     |               | HbS 30-40%    |
+| microcytose         | microcytose   | VGM normal    |
+| polyglobulie        | polyglobulie  | GR normaux    |
+Tableau majeurs
+| β thalassémie | α-thalassémie | drépanocytose    |
+|---------------+---------------+------------------|
+| *Pas HbA*     | * Pas HbA*    | * pas d’HbA*     |
+| HbF           | Pas d’HbF     | HbF et HbS|
+| microcytose   | microcytose   | VGM normal       |
+| polyglobulie  | polyglobulie  | GR normaux       |
+** Dépistage prénatal
+Si 2 parents originires de pays à risques
+* Enzymes
+Déficit G6PD
+* Membran
+Minkowski-Chauffard

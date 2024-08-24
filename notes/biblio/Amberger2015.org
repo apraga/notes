@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       8be729e9-b9a9-4855-b588-59fc04d575a3
+:END:
+#+title: Amberger2015
+
+- Continuité de A. MkKusick Mendelian INheritance in Man
+- publié en ligne 1987
+- source = veille scientifique journaux biomédicaux peer-reviewed (45) + pubmed
+- objectifs: gene-phenotype  avec 2 types d'entrée : gene et phénotype
+- chaque entrée est formattée de la même manière + liexns experten (genome(ensemble), clinique (gene reviews), variant (clinvar)...)
+- identifiants OMIM sont largement utilisé dans la communautié + littérature (6 chiffres: le epremier est 1,2,6 si autosomoqiue, 3 si lié à l'X, 4 si lié à l'Y et 5 si mtochondrial. Astérisque devant el chiffre si gène)
+- gène : éléments régulateurs, gène codnant et autres éléments fonctionnels
+- phénotype(préfixe par # si base moléculaire connue, % si mendelien mais sans base connuée ou rien): maladies monogénique, phénotypes, sensibilité à réaction médicaments, sensibiilté à infection, sensibilité constit à un cancer, syndrome del et duplication
+- gene map et morbid map : seulement les données OMIM avec emplacement cytogénétique publié
+- critère pour
+  - inclusion mutation gene-phénotype : 1ere mutation découverte, fréquence dans la population, phénotype distinctif, signification historique, mécanisme de mutation/pathogénétique inhabituation ou hérité de manière atypique. Plupart causent des maladies mais il y a des SNP
+  - relation gène phénotype
+    - variant chez plusieurs individus non apparenté
+    - ségrège avec le phénotype dans plusieurs familles
+    - de novo dans un nombre sigificatif de famille
+  - "qualifié" (qualified) si 1 famille avec plusieurs variants dans 1 gène et les variants ségrègent avec le phénotype + peuve fonctionnelle (NB: 1 seul patient peut suffir si l'argumentaire est solide)
+#+caption: OMIM Stats (19 décembre 2023)
+| MIM Number Prefix                                           | Autosomal | X Linked | Y Linked | Mitochondrial | Totals |
+| Gene description   *                                        | 16,309    |      769 |       51 |            37 | 17,166 |
+| Gene and phenotype, combined   +                            | 21        |        0 |        0 |             0 | 21     |
+| Phenotype description, molecular basis known   #            | 6,344     |      383 |        5 |            34 | 6,766  |
+| Phenotype description or locus, molecular basis unknown   % | 1,390     |      111 |        4 |             0 | 1,505  |
+| Other, mainly phenotypes with suspected mendelian basis     | 1,640     |      100 |        3 |             0 | 1,743  |
+| Totals                                                      | 25,704    |    1,363 |       63 |            71 | 27,201 |
+

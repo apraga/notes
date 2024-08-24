@@ -1,0 +1,87 @@
+#+title: Oncologie
+
+* Grand concepts
+Mutations /drivers/: joue un rôle dans la transformation maligne
+Mutations /passenger/: reflète simplement l’instabilité tumorale
+Génome tumoral = sélectionné pour échapper au système immunitaire et résister aux chimio -> hétérogénéité génétique de la tumeur
+
+Signature tumorale = altération nucléotidique communes entre les    organes
+
+Plusieurs étapes nécessaire : ex de l’épithélium avec perte d’APC puis hypométhylation de l’ADN ->_adénome (activation K-ras, perte 18q) perte p53 -> carcinome
+
+Monoclonal ou polyclonal (plusieurs amas avec 1 amas à partir d’une cellule)
+
+Sporadique : accumulation d’altérations somatiques dans 1 cellule
+Hérétiaire = altération consitutionnelle (toutes les celluse) -> plusieurs altérations somatique dans une celluse
+
+type de variantsio drivers :
+- activatrice (proto-oncogène) : dominant
+- inactivatrice (récessif) : suppresseur de tumeurs = gate keeeprs (point de controle du cycle cellulaire), care takers (répare ADN)
+
+ Double hit : variation htz constit + variation somatique -> récessif dans la tumeur mais dominant dans la famille
+
+Prédisposition au cancer :
+- âge au diagnostic précoce
+- multifocal, bilatéral
+- cancers multiples
+- apparentés atteints
+
+Exemple indication exome constit :
+- néonat ou cancer "adulte" chez l’enfant
+- cancers primitifs multiples avant 31 ans
+- syndromique
+- tumeurs exceptionnelle de déterminisme génétique non connu
+- agrégatation familiale très suspecte
+
+On retrouve les mḙme variations en somatique et constit  + évènements supplémentaire en tumoral:
+- méthylation promoteur (classique) -> inactive gène
+- réarangement de grande taille avec pert htz
+- chromothripsis
+* Sein/ovaire
+** Indications de consultation
+- K sein < 41 ans
+- K sein triple négatif < 51 ans
+- K sein bilatérale, le premier < 51 ans
+- K sein chez homme, qq soit âge au diagnostic
+- K ovar haut grade
+- K ovaire bas grade < 71 ans
+Famille:
+- > 3 sujet avec K sein/ovaire au 1er degré (2 si transmission paternelle)
+- 2 K sein chez apparentés 1er degré (2e si transmission paternelle) si 1 avant 46 ans (ou 1 avant 51 et l’autre avant 71 ans)
+- K sein et ovaire chez apparenté 1er degré (2e degré passant par homme)
+
+Score d’Eisinger : possible si 3 ou 4, > 5 bonne indication
+- Mutations BRCA1/2 identifiée dans la famille 5
+- Cancer du sein chez une femme < 30ans 4
+- Cancer du sein chez une femme entre 30 et 39 ans 3
+- Cancer du sein chez une femme 40 et 49 ans 2
+- Cancer du sein chez une femme 50 et 70ans 1
+- Cancer du sein chez l’homme 4
+- Cancer de l’ovaire 3
+en additionnent les points pour chaque cas de la mḙme branche
+** Génétique
+15% formes familiales expliquées
+BRCA1 et 2 :
+- 2-4% des cancers du sein
+- risque prostate et pancréas (BRCA2 surtout)
+Risque relatif augmente avec l’histoire familiale
+** Suivi :
+Chercher la mutation chez apparenté : si porteur, IRM annuelle à partir de 30 ans, mastectomie < 40 ans, annexectomie après projet parental à 40 ans
+** Traitement
+inhibiteurs PARP
+* Cancer colorectal
+Syndrome Hereditary Non Polyposis Colorectal Cancer :
+- 4% MSH2, MLH1, MSH6, PMS2, EPCAM
+- colon, rectum, endomètre surtout
+- intestin grḙle, tractur urinaire, estomac, ovaire
+
+  Mutation constit d’un gène MMR  ->_inactivation 2e allèle -> instabilité microsatellite ->_inactivation somatique gènes cible -
+** Suivi
+colon: coloscopie tous les 2 ans à partir de 20 ans
+Gynéco ? écho + biosie endomètre tous les ans à partir de 35ans +/- hysteréctomie après projet
+* Modèle du rétinoblastome
+Mosaïque somatique + germinale : RB uni- ou bi-latéral + récurrence
+Mosaïque somatique : RB uni- ou bi-latéral
+Mosaïque germinale : parents asympto mais transmission à la descendance
+
+Tester mutation somatique puis en constit +/- ségreg si hérité

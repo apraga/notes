@@ -1,0 +1,61 @@
+#+title:      Héparine
+#+date:       [2024-08-12 Mon 10:14]
+#+filetags:   :hémostase:
+#+identifier: 20240812T101412
+
+Pas de surveillance antiXa en préventif !
+
+* Indications
+Compliqué mais en gros : MTEV en prophylaxie et curatif
+- pas d'HNF en curatif prolongé (phase aigüe seule)
+- SCA : tous sauf héparine sodique
+- FA: héparine sodique seule
+* HNF
+- Chaînes longues : action anti Xa et IIa
+- Élimination par le système réticulo-endothélial et le rein
+- t1/2 = 90min
+- variations inter individuelles -> suivi biologique quotidien
+- Risque de TIH
+[[file:images/hemostase/heparine.png]]
+
+Héparinate
+- de Na = IV
+- de Ca = SC (calciparine)
+** Surveillance
+- activité anti-Xa, quotidiennment
+- cible: 0.3-0.7 UI/mL (MTEV) ou 0.3-0.6 (cardio)
+- IV: bras opposé +4 à 6h
+- SC: mi-distance entre 2 injections
+- TCA : non spécifique et sensibilité très variable selon les réactifs
+- *interférence avec AOD* : risque de surestimation antiXa HNF
+- [[denote:20240807T180139::#h:a7933119-8539-4f0b-9363-f00921028762][Thrombopénie induite par l'héparine::Dépistage]]
+* HBPM
+- Effet prédictible : dose fixe, pas de surveillance bio
+- Chaînes courtes: Anti Xa principalement
+- Élimination par le rein
+- t1/2 / 3 à 4h
+- Corrélation avec la fonction rénale
+- Bonne prédictibilité re l'effet
+- Moins de risque de TIH
+** Types (SC)
+- enoxaparine (lovenox)
+- dalteparine
+- nadroparine
+- tinzaparine (innohep)
+pentasaccharide : fondaparinux (Arixtra) (SC)
+** Évaluation de l'accumulation
+- activité anti-Xa
+- si complications hémorragiques, IR, > 75 ans
+- limites: non directement corrélée à l'activité antithrombotique, si surdosage vérifier posologies au cas par cas
+- [[denote:20240807T180139::#h:a7933119-8539-4f0b-9363-f00921028762][Thrombopénie induite par l'héparine::Dépistage]]
+* Danaparoïde sodique (Orgaran) (SC ou IV)
+- Effet prédictible : dose fixe, pas de surveillance bio
+- Pas de TIH
+- t1/2 25h
+- Activité surtout anti-Xa
+- Élimination rénale
+- Contre-indication dose curative : IRC
+* Réversion
+- Sulfate de protamine
+- Hémorragie sévère
+- Attention au choc anaphylactique

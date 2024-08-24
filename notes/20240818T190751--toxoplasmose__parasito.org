@@ -1,0 +1,17 @@
+#+title:      Toxoplasmose
+#+date:       [2024-08-18 Sun 19:07]
+#+filetags:   :parasito:
+#+identifier: 20240818T190751
+
+Immunocompétent
+- asympto
+- asthénie, ADP +/- fièvre
+
+Immunocompétent
+- Lésions cérébrales, oculaires, cardiaques...
+
+* Biologie
+- [[denote:20240818T120431][Syndrome mononucléosique]]
+- Éosinophilie
+- *Sérologie*
+- PCR

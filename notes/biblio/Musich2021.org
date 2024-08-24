@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       1871990d-00da-4c65-a747-8f8b492c2fe4
+:END:
+#+title: Musich2021
+
+Méthodes
+- Alignement sur génome de champignon
+- BWA, Bowtie2, MUMmer4, STAR, HiSAt2
+- Dual Xeon E5-2643 (six cores and 12 threads for each processor) with 512 GB of RAM
+- timed as CPU time (user + system).
+- données RNA-seq
+
+RésultatS
+- Qualité:
+  - taux d'alignement : BWA et bowtie2 = meilleur. MUMmer, STAR intermédiaire
+  - runtime par read : HISAT2 = le plus rapide, intermédiaire = BWA, bowtie2, star
+  - parallisésation: bowtie2 (0.999) et MUMmer4 (0.981= meilleur, bwa correcte avec (0.833), hisat 0.876
+Utile pour scaleup

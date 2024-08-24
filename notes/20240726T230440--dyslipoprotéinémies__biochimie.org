@@ -1,0 +1,20 @@
+#+title:      Dyslipoprotéinémies
+#+date:       [2024-07-26 Fri 23:04]
+#+filetags:   :biochimie:
+#+identifier: 20240726T230440
+
+Surtout hyperlipidémie
+- Mono, poly-génique ou sporadique
+
+* Classification de Frederickson
+| Type         | Électrophorèse      | Sérum      | Triglycérides | Cholestérol total |
+|--------------+---------------------+------------+---------------+-------------------|
+| I            | Chylomicron         | Lactescent | ++            |                   |
+| IIa          | LL                  | clair      |               | ++                |
+| IIb  (mixte) | VLDL,LDL            | opalescent | ++            | ++                |
+| III  (mixte) | IDL (intermédiaire) | opalescent | ++            | ++                |
+| IV           | VLDL                | opalescent | ++            |                   |
+| V            |    CM, VLDL         | lactescent | ++            |                   |
+* [[denote:20240727T094804][Hypercholestéroliméie (IIa)]]
+* [[denote:20240727T094934][Hypertriglycéridémie]]
+* [[denote:20240727T115140][Syndrome métabolique]]

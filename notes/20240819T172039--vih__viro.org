@@ -1,0 +1,80 @@
+#+title:      VIH
+#+date:       [2024-08-19 lun. 17:20]
+#+filetags:   :viro:
+#+identifier: 20240819T172039
+
+
+Patient connu: western blot peut être négatif ! Épidémio: VIH2 = 2%
+primo: objectif
+
+- -2Log à ??
+- < 400/mm^{3}
+- < 50 copies/mL à 6mois
+
+* Diagnostic
+Ac-anti VIH1 et 1 et Agp42
+
+- négatitf: pas d'infection si exposition > 3 semaines
+- positif: western-blot
+  - positif: contrôle 2e prélèvement pour éviter erreur d'identification
+    + Déclaration Obligatoire (quand ??)
+  - négatif/douteux: primo-infection ? Ag p42 et ARN VIH1
+    - négatif = réaction non spécifique en l'absence de traitement ou
+      exposition VIH2
+    - positif = primo-infection probable
+
+confirmation par Western blot: obligatoire pour ne pas passer à côté
+d'une co-infection VIH2 !!
+
+IgG contre
+
+- glycoprotéine transmembranaire (gène /env/): gp160,gp120,gp41
+- capside/matrice/core : p55, p24,p18 (gène /gag/)
+- enzyme virale (p66, gène /pol/)
+- intégrase : p34
+
+-> 2 bandes /env/ et 1 bande /gag/ pour /pol/
+
+- Plutot précoce : glycoprotéine, p55,p24
+- Plutôt tardif : p34
+
+* Bilan initial
+Séro EBV, CMV
+
+* Traitement
+1 ou 2 inhibiteur nucléosidique transcriptase inverse + 1 non nuléo ou 1 intégrase
+
+- 1ere ligne :
+  - dulotegravir + 2 inhibiteur nucléosidique.
+    - Attention: abacavir : contre indiqué HLAB*5701 risque
+      d'hypersensibilité
+  - Sinon efavirenz - 2 INTI
+  - Enfant : raltégravir + 2INTi
+
+Primo:
+
+- objectif = diminuer contagiosité.
+
+- Utiliser traitement avec forte barrière génétique
+
+- Si possible, traitement par ?? pour faire chuter la charge virale
+
+  EI: tenofovir = nephrotoxique, sauf forme alafénamide daru = pb cardio
+  vasculaire
+
+  Note: bithérapie possible dès début. Sinon allègement avec CV
+  indétectable depuis 2 ans
+
+* Résistance
+:PROPERTIES:
+:CUSTOM_ID: résistance
+:END:
+Lamivudine, emtricitabine = mutation M134 V/I
+
+- codong ATG donne soit ATA (I) sout GTA (V): le premier est plus
+  fréquent à cause d'APOBEC
+
+  APOBEC= enzyme qui protège des infection virale : édition ARN C-> U
+  qui rend la réplication quasi-impossible. Le VIH a ViF qui désactive
+  cette enzyme. NB: APOBEC peut éditer le génome intégrer (peu d'effet ?
+  contrairement à EBV)

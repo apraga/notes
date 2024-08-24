@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       d83dec28-0537-46a0-beb0-8f6e09c78f1e
+:END:
+#+title: CA 19-9
+#+filetags: biochimie immuno
+Indication: cancer digestif

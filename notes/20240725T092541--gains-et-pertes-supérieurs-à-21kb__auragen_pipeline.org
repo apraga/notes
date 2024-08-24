@@ -1,0 +1,39 @@
+#+title:      Gains et pertes supérieurs à 21kb
+#+date:       [2024-07-25 Thu 09:25]
+#+filetags:   :auragen:pipeline:
+#+identifier: 20240725T092541
+
+CNVator :
+- approche "read depth" = rupture de profondeur (par opposition à Manta [[denote:20240725T092255][Délétion et duplications 50pb-21kb]])
+- Critères
+  - 80% lectures sans alignement multiple
+  - non récurrente (<1% population et cohorte)
+  - absent apparenté à l'état homozygote
+
+[[denote:20240724T104200][Validation]]
+- 96% RECALL pour pertes 87% gain, T21 vue
+- limites: centromérique,télomérique, sans lecture chevauchantes
+- avantage / ACPA: bornes plus précises, variants plus petites
+- Erreur sur les gonosomes
+  - filtré en aval
+  - calcul de ploïdie "à la main"
+
+visualisation
+- samplot : taille de l'insertion (= distance entre les adaptateurs des reads)
+  - > si augmenté, duplication possilbe.
+  - insert size : illustratio sur diapo 5.6 mais le principe et qu'une délétion aura une grande insert size (car sera "étiré" sur le génome de référence). C'est l'inverse pour une duplication
+
+Divers
+-  moins filtré que SNV (n'utilise pas les parents asympto)
+-  peut signaler un SNV combiné au cNV !
+
+* Délétions homozygotes
+:PROPERTIES:
+:ID:       64f82f33-24bb-475b-ad85-3303c5a20a8d
+:END:
+- Découverts sur 1 cas + rétrospectif:[[denote:20240716T104823][Cas intéressants]]
+- Quand les délétion est entourée par des régions de faible mappabilité ou petite délétion homozygotes dans del htz
+- Corrigé avec approche manuelle (reproduisant la manière dont elles ont ét détecté)
+  1. séléction des zones faibles mappabilité (*exons* profondeur médiane 0 et couverture à 10x de 0%)
+  2. filtre délétions homozygotes > 1% cohorte
+  3. *cas index seul* on retient les délétion homozygotes présentes chez apparentés symptos, absent chez apparenté asympo

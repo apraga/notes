@@ -1,0 +1,15 @@
+#+title:      Cholestérol-HDL
+#+date:       [2024-07-24 Wed 23:18]
+#+filetags:   :biochimie:
+#+identifier: 20240724T231839
+
+
+* Méthodes enzymatique
+- dosage direct
+- plusieurs méthodes mais principe =
+  1. blocage/élimination cholestérol non-HDL
+  2. quantification c-HDL
+
+Limites:
+- pas très juste chez les patient dyslipidémique
+- interférence des triglycéride à partir d'un seuil (variable selon les techniques)

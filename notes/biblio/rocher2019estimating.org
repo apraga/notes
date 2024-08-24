@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       a419af0c-314f-4189-9205-bd76d69ff2d9
+:ROAM_REFS: @rocher2019estimating
+:END:
+#+title: Rocher, Luc and Hendrickx, Julien M and De Montjoye, Yves-Alexandre :: Estimating the success of re-identifications in incomplete datasets using generative models
+
+un modèle entraîné sur des données démographiques anonymisées (rencesement, sondages) permet d'identifier 99.98% des Américains, indépendamment des données génétique. [cite:@rocher2019estimating]

@@ -1,0 +1,48 @@
+#+title: Électrophorèse des protéines sériques
+#+date:       [2024-07-17 Wed 20:10]
+#+filetags:   :biochimie:
+#+identifier: 20240717T201002
+
+* Pré-analytique
+- tube sec (pas d'hépariné ou EDTA ! pour éviter interférence) dédié
+- non hémolysé
+Analytique: technique Biuret = coloration violette pour liasons peptidique Cu++
+
+Attention: protidémie normale n'exclut pas une anomalie
+
+* Technique
+*** Gel d'acarose:
+  1. migration pendant 30min de protéine chargée négativement vers pose +. Milieu alcaloin
+     1. albumine va migre le plus loin (charge totate négative )
+     2. donc ne dépend *pas du poids moléculaire*
+     3. seul IgG et IgM migre version pole négatif
+
+     figure:
+  2. albumine
+     - α1-globuline: anti-trypsine,
+      [[denote:20240717T200247][Orosomucoïde]]
+     - α2-globuline : [[denote:20240717T200415][Haptoglobine]] [[denote:20240717T200520][Céruloplasmine]]
+     - β1 : [[denote:20240717T200717][Transferrine]]
+     - β2 : complément, IgA
+     - γ : IgG, IGM
+     - détermination des intensité -> profil
+*** Capillaire
+- électrocinétique dans un capillaire fin (25μm)
+- rapide rapide, résolution comparable
+- détection optiqiue 200nm
+
+  Ici la migration de fait du + vers le - : la paroi du capillaire est chargée négativement et les ions + du solvant vont formet une couche mobile (sous l'action du champ électrique)
+* Variation patho
+- > 90g/L
+  - Attention aux fausses hypoNa et hypoK si > 100g/L
+  - hémoconcentration (donc faux hyperprot)
+  - inflamation, infection
+  - dysglobulinémie monocloane ?
+- < 90g/L: oedeme
+  - défaut d'apport
+  - défau de synthse (hépatique)
+  - pere excessive (rénale, brûlure, digestive, chir)
+  - hypercatabolisme (Cushing, hyperthyrœiide)
+
+    < 55g/L : vérifier perfusion
+* [[denote:20240717T201253][Interprétation]]

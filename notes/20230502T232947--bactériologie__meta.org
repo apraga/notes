@@ -1,0 +1,12 @@
+#+title: Bactériologie
+#+filetags: :meta:
+
+- [[denote:20240601T183312][Maladies infectieuses]]
+- [[denote:20240515T224550][Antibiotiques]]
+- TODO [[denote:20240612T233431][Bactéries]]
+
+* TODO
+
+Techniques [[Milieux de culture]] [[Hémocultures]]
+[[file:Prélèvements%20bactério.md][Prélèvements bactério]]
+[[file:Spectrométrie%20MALDI-TOF.md][Spectrométrie MALDI-TOF]]

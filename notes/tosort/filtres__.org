@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       923cc8ea-eb7e-424d-989e-062b943d281e
+:END:
+#+title: Filtres
+
+[[https://auragen.atlassian.net/wiki/spaces/~7120201ca2598be5ef4936a1110033f28f4fed/overview][Vue d'ensemble du pipeline]]
+
+#+BEGIN_SRC dot :file images/test-dot.png :exports results
+    digraph TD {
+    F1[label="Filtres primaires\n(big list)"]
+    A2[label="Annotation Curagen\n(tight list)"]
+     F[label="Filtres Curagène"]
+    VEP -> F1
+    F1 -> SeqOne
+    F1 -> A2
+        A2 ->  F -> Rapport
+          }
+
+#+END_SRC
+
+#+RESULTS:
+[[file:images/test-dot.png]]
+
+* Filtres primaires
+- (probablement) patho clinvar
+- ou (AF < 5 % gnomad v3 et (AF < 1% gnomad et < 10% cohorte Auragen)
+
+Attention, on ne filtre plus sur (VAF > 10% et au moins 2 reads avec variation) pour seqone
+* [[id:94038e1b-de4f-48f2-acc4-0ee0e75cf197][Curagen]]
+
+* SNV

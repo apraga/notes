@@ -1,0 +1,7 @@
+#+title:      Frequency-based rare diagnoses as a novel and accessible approach for studying rare diseases in large datasets: a cross-sectional study
+#+date:       [2024-07-18 Thu 14:45]
+#+filetags:   :bib:facebook:
+#+identifier: 20240718T144533
+#+reference:  troster2023frequence
+
+Utilise une définition basée sur al fréquence pour maladie rare (méthode non claire)

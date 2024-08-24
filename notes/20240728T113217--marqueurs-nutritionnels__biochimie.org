@@ -1,0 +1,6 @@
+#+title:      Marqueurs nutritionnels
+#+date:       [2024-07-28 Sun 11:32]
+#+filetags:   :biochimie:
+#+identifier: 20240728T113217
+
+[[denote:20240728T113250][Dénutrition]]

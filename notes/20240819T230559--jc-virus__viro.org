@@ -1,0 +1,12 @@
+#+title:      JC virus
+#+date:       [2024-08-19 Mon 23:05]
+#+filetags:   :viro:
+#+identifier: 20240819T230559
+
+
+Immunodépression : leucoencéphalopathie mulitofocale progressive (LEMP)
+= foyers de démyélinisation -> y penser si VIH avec déficit CD4+
+
+- patients VIH ou immunosuppresseur
+- Pas de traitement
+- évolution généralement fatale

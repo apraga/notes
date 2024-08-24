@@ -1,0 +1,26 @@
+#+title:      Annotations
+#+date:       [2024-07-25 Thu 09:48]
+#+filetags:   :auragen:pipeline:
+#+identifier: 20240725T094853
+
+VEP
+- toutes annotation
+- ciblées dans rapport de synthèse: impact, mendélien, clinique, structural
+
+Soumis à empreinte sont taggé
+
+* Intronique profond
+SpliceAI
+- pluginVEP
+- score 0.2 (consensus interne, < 0.5 seuil dans biblio)
+- spécifique $\ge 98$ mais peu sensible (46.9 tcoute variant)
+- (proablement) patho et bénin
+-> on enlève les stop, frameshift, inframe, dééltion
+CADD :
+- entrainé à partir de variant délétère et comparaison interespèce.
+- annotatino : conservation, épigénétique, fonctionne, contexte (GC, CpG...) Priorisation (SNV et indel < 50)
+- CADD v1.6 > 25 ou spliceai >= 0.2
+
+* Mises à jour
+- OMIM = annuelle
+- clinvar = 6 mois

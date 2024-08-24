@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       03d7f0cf-4383-49df-ae84-5526ce8c304a
+:END:
+#+title:      Biotine
+#+filetags:   :biochimie:
+#+identifier: 20240703T233100
+
+Traitement: déficit grossesses, SEP, maladies métabolique
+
+Interférence dosage immuno (excès/défaut) [si échantillon ajouté avant la formation du complexe avdine-biotine]
+Pas sur Abbot mais sur Roche+++
+Rendre interférence

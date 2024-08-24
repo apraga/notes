@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       705ae28c-4573-45fa-8f03-89b61a79176b
+:ROAM_REFS: @Baertsch_2008
+:END:
+#+title: Baertsch, Robert and Diekhans, Mark and Kent, W James and Haussler, David and Brosius, Jürgen :: Retrocopy contributions to the evolution of the human genome
+
+Code récemment uploadé sur github https://github.com/ComparativeGenomicsToolkit/RetroFinder
+
+Parmis les rétrocopies (ARN messagé épissé dans le génome), étude des rétrogènes (=rétrocopies fonctionnelles)
+
+Méthode :
+- Alignement de tous les ARN messager sur le génome humain
+- score pour la probabilité d'une rétrotransposition récente (nombre d'introns, l'absenc de site d'épissage conservé...)
+  - comparaison avec Vega pour le score
+- filtre >= 5 ESTs et 1 ARNm ou 1 gène dans refseq ou UCSC
+
+Types d'évènement
+1. acquisition d'un exon (inclus dans un transcrit existant)
+2. duplication d'un gène (nécessite le recrutement de région régulatrice)
+3. nouveaux gènes : contribution d'une séquence en dehors du cadre de lecture (UTR, sens oppés)
+
+4. 12k candidats pour gènes dérivés rétropcopies dont 726

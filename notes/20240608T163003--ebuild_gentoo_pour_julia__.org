@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       3dadf68c-7d06-4054-b532-23f7b3686cc4
+:END:
+#+title: Ebuild Gentoo pour Julia
+#+filetags: ​gentoo packaging julia
+#+identifier: 20240608T163003
+
+* Test
+#+begin_src bash
+cd ~/code/julia/test-gentoo-ebuild
+julia --project=.
+include("main.jl")
+#+end_src
+
+ON teste :
+- CSV, DataFramesMeta
+- GLMakie
+- tutorial GTK
+- DiscreteTime

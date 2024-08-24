@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       2228958a-bcde-4256-819d-00237877e5e5
+:END:
+#+title: Limite appels de variants
+#+filetags: auragen appelvariants
+
+* CNV
+Ploïdies : voir [[id:ee261ae7-3511-46e0-8c9a-ad4318850104][Appel de variant]]
+* STR
+STR avec expansion hunter
+- seulement en ciblé
+- estimation du nombre de répétition (peu précis)

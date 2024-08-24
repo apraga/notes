@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       f1bbc829-f5dc-49f8-97b5-0d6ce1d9ef59
+:END:
+#+title: Cryoglobuline
+#+filetags: biochimie
+
+Ig précipitant à moins de 37°
+10 asymptomatiue, sinon clinique vascularite
+3 types: I = monoclonae, II = mono et polyclonale, III = polyclonale
+I = lymphoproliréfative, II = HCV, III = auto-immun, viral chronique
+
+Seul le type III est transitoire

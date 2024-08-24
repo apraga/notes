@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID:       2d3d37d5-c4f1-404f-badc-799842de709d
+:ROAM_REFS: @miller2021sideretro
+:END:
+#+title: Miller, Thiago LA and Orpinelli Rego, Fernanda and Buzzo, José Leonel L and Galante, Pedro AF :: sideRETRO: a pipeline for identifying somatic and polymorphic insertions of processed pseudogenes or retrocopies
+
+Code C https://github.com/galantelab/sideRETRO
+
+Seulement les "unfixed retropcopies" (somatically inserted ou polymorphiques)
+
+Input: bam/sam/cram,génome de référence et transcriptome
+
+* Algorithme
+1. sélections paires mal alignée
+   - soit "discordants" = trop loins, soit sur des chormosomes distent
+   - soit "split read"
+2. retient ceux qui sont dans une région exonique (gène parent) et son "mate" (potentiellement oint d'insertion)
+3. groupe ces reads avec dbscan (clustering) pour trouver le gèn parnet + ponits d'insertion
+
+   Otuput: gène parent, point d'insertion, brin, génotype
+
+
+* Données simulées
+Sur 100 génomes humaines, ~31-45 rétroCNV par génoome avec error
+N'identifie pas ceux dans régions très répétes mais 79/86 des intro, not. régions LINE9SINE
+
+Testé sur 1000 genomes
+- 5 individus avec génomes et exomes différents: 5 candidats -> 3 validés
+  - 20 dans génomes
+  - 6 exomes
+  - retrouve les 3 validés dans la litérature (1 manqué exomes)
+- cohorte de 1000 individuts

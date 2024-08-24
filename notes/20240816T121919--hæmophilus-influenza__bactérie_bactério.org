@@ -1,0 +1,9 @@
+#+title:      Hæmophilus influenza
+#+date:       [2024-08-16 Fri 12:19]
+#+filetags:   :bactérie:bactério:
+#+identifier: 20240816T121919
+
+
+Résistance : regarder penicilline G
+- suspicion beta lactamase, tester par cefinase
+- PLP3 : faire CMI

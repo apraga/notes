@@ -1,0 +1,8 @@
+#+title:      Cycle de l'urée
+#+date:       [2024-08-17 Sat 10:03]
+#+filetags:   :biochimie:
+#+identifier: 20240817T100338
+
+* Fonction
+- Convertit ammoniac (résultant du métabolisme des acides aminés) en urée non toxique pour excrétion dans les urines
+- synthèse d'arginine et d'ornithine

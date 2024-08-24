@@ -1,0 +1,38 @@
+#+title:      Thrombocytose
+#+date:       [2024-07-22 Mon 22:30]
+#+filetags:   :hémato:
+#+identifier: 20240722T223056
+
+* Fausses thrombocytoses
+Séparation GR
+
+- plaquette se faire sur la taille -> éléments de grande taille peuvent
+  être comptées comme plaquettes par excès
+- hématies fragmentées : scitzo, microcytes (brulûres sévères font
+  éclater les GR) -> sysmesx en fluorescence est censé les différencier
+- fragments cytopaslmes de leucocytes (blastes, lymphome)
+- cryoglobuline, cryofibrinogène
+- lipides : hyperlipédmie, prélèvement près d'une perfusion lipides
+  (formation de "micelles" lipidiques perturbant la numération)
+- bactéries, candida
+* Réactionnelle
+:PROPERTIES:
+:CUSTOM_ID: h:83b0d1ec-34fe-4ea4-b0a8-59423cadc7dd
+:END:
+- Carence martiale
+- Splénectomie
+- Chir récente
+- Inflammation
+- Cancer/sd lymphoprolifératif
+- allergies, médicaments
+- [[denote:20240728T135539][Transthyrétine (pré-albumine)]]
+* Persistante
+:PROPERTIES:
+:CUSTOM_ID: h:3b24ab63-9018-4e47-a58f-7f147c7ec59a
+:END:
+1. Frotti sanguin
+   1. dysplase : SF3B1 -> BOM: anémie sidéroblastique, SMD
+   2. sinon BCR-ABL
+      1. oui : [[denote:20240815T224958][Leucémie myéloïde chronique]]
+      2. sinon : JAK2, CALR, MPL -> [[denote:20240815T210446][Thrombocytémie essentielle]] [[denote:20240722T222950][Polyglobuline de Vaquez]],[[denote:20240815T210617][Myélofibrose primitive]]
+* [[denote:20240815T210446][Thrombocytémie essentielle]]

@@ -1,0 +1,37 @@
+:PROPERTIES:
+:ID:       50d77448-a9ad-4588-835d-57483dc7a851
+:END:
+#+title: Modèle compte-rendu génome
+
+* Classe 4
+chrXX(GRCh38):g.YY Gène GGG
+ENST00000305921.7:c.CCC
+p.(PPP), hétérozygote, Hérité de la ?, Probablement pathogène
+
+$MR
+
+Mise en évidence d’une variation probablement pathogène hétérozygote dans le gène $GENE , héritée de $PARENT hétérozygote.
+
+Cette délétion hétérozygote situé dans le dernier exon entraîne un décalage du cadre de lecture, aboutissant probablement à la formation d’un codon stop prématuré. Cette variation est absente des bases de données populationnelles et n’a pas été retrouvée dans les bases de données de patients ni dans la littérature scientifique. Des variants pertes de fonction (LoF) situés dans les 2 derniers exons de ce gène, dont avant et après le nôtre, sont rapportés comme pathogènes (cf PMID: 37385405). Les variations pathogènes dans le gène $GENE sont impliquées dans une forme $CLINIQUE (OMIM ). Le phénotype peut être très atténué, il est souvent associé des $CLINIQUE2 (PMID: 37183572). Cette variation est considérée comme probablement pathogène (classe 4, critères ACMG : PVS1, PM2, PP4).
+
+La présence de cette variation probablement pathogène hétérozygote peut expliquer le phénotype observé chez le patient. Ce résultat doit être confronté au contexte clinique et aux données familiales dans la branche maternelle. La confirmation de ce résultat sur un second prélèvement indépendant est recommandée.
+
+Une consultation de génétique est nécessaire pour expliquer ce résultat.
+* VOUS (exome)
+Conclusion :
+Le séquençage d'exome en trio avec analyse des CNV pour XXXXXX, né le xxxxx, n'a pas permis d'identifier de variant clairement pathogène pouvant expliquer le phénotype de la patiente, dans les limites de la technique utilisée, des filtres appliqués et des connaissances actuelles. Une nouvelle analyse à distance pourra être discutée, en raison de l'évolution continue des connaissances et/ou en cas d’évolution clinique. Un résultat non-conclusif n'exclut pas la possibilité d'une maladie génétique.
+A noter (GRCh38) : présence d'une variation hétérozygote de signification incertaine dans le gène CHD5 héritée de sa mère :
+NM_015557.3:c.2043del p.(Thr683ArgfsTer107) (classe III, critères ACMG : PVS1, PM2)
+Les variations pathogènes dans le gène CHD5 sont impliquées dans le syndrome de Parenti-Mignot, un trouble du neurodéveloppement de transmission autosomique dominante (OMIM #619873).
+Il n'est pas possible, en l'état actuel des connaissances, d'affirmer un lien causal entre la présence de cette variation chez le patient et son phénotype. L'étude de la ségrégation de cette variation dans la famille, une veille bibliographique et la poursuite des investigations pourraient permettre d'affiner l'interprétation et l'implication de cette variation.
+Une consultation de génétique est nécessaire pour expliquer ce résultat.
+* VOUS cis ou trans
+Le séquençage du génome du patient révèle présence de deux variants faux-sens du gène $GENE. On ne peut pas déterminer si ces variants sont situés en trans ou en cis étant donné que seul le patient a été séquencé. Le variant $PROT est rare en population générale
+(gnomadV4: 8 hétérozygotes sur 1.6 millions d'allèles), et plutôt conservé du point de vue évolutif. Les prédictions in silico sont discordantes et
+plutôt en faveur d'un effet délétère (CADD 33). Ce variant est situé à proximité d'un variant rapporté pathogène ($PROT2). Il est considéré
+de signification indéterminée (classe 3 ACMG: PM2 PP3). Le variant PROT3 est également rare en population générale (gnomadV4: 9 hétérozygotes sur 1.6 millions d'allèles), conservé du point de vue évolutif, et prédit délétère in silico. Ce variant est considéré de signification
+indéterminée (classe 3 ACMG: PM2 PP3). Les variations bi-alléliques pathogènes de $GENE sont décrites chez des individus atteints de $MALADIE (PMID XXX). En conclusion on ne peut pas affirmer que les 2
+variants du gène $GENE présents chez le patient soient à l'origine de sa dystrophie rétinienne, mais cela est possible. Nous recommandons la
+réalisation d'un étude de ségrégation familiale (non réalisée par Auragen) afin de déterminer la phase des variants dans un premier temps.
+
+Ce résultat est rendu dans les limites des connaissances actuelles et des techniques utilisées. Il doit être rendu dans le cadre d’un conseil génétique. Le laboratoire AURAGEN ne prend pas en charge la confirmation de ce résultat par une technique alternative.

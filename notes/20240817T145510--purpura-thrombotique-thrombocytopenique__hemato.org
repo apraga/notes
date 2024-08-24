@@ -1,0 +1,4 @@
+#+title:      Purpura thrombotique thrombocytopénique
+#+date:       [2024-08-17 Sat 14:55]
+#+filetags:   :hemato:
+#+identifier: 20240817T145510

@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       aba69975-9abd-4594-b930-54634e7dac46
+:END:
+#+title: Projet mitochondries
+#+filetags: projets
+
+Contexte :
+- proto fonctionnel
+- objectif = seulement une liste de hotspot (ne pas augmenter le nombre de variants dans aurapport)
+- actuellement les bios regardent quelques positions dans le BAM
+
+Conseil de Virginie: "bloqué" pour le moment, ne pas le prendre

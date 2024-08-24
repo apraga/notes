@@ -1,0 +1,11 @@
+#+title: Syndrome inflammatoire aigu biologique
+#+date:       [2024-07-17 Wed 20:23]
+#+filetags:   :biochimie:
+#+identifier: 20240717T202347
+
+* EPS
+- augmentation CRP dès 6eme here
+- augmentation [[denote:20240717T200247][Orosomucoïde]] dès 3-4 jours
+- augmentation β2-globuline (C3)
+- diminution β1-globuline (Trf)
+- diminution albumine selon intensité/chronocité

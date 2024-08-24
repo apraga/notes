@@ -1,0 +1,15 @@
+:PROPERTIES:
+:CUSTOM_ID: h:914d983c-0364-4ad6-934d-219eb64a4cbf
+:END:
+#+title:      ErgoL
+#+date:       [2024-08-14 Wed 09:55]
+#+filetags:   :pc:
+#+identifier: 20240814T095534
+
+* Angle-mod
+Pour Alt,
+On utilise kanata pour échanger les touches
+1. cargo install kanata
+2. https://github.com/jtroo/kanata/blob/main/docs/setup-linux.md
+3. Récupérere la configuration   https://ergol.org/claviers/arsenik/
+4.  pueue add kanata -c ergol/kanata.kbd

@@ -1,0 +1,4 @@
+#+title:      Magnésium
+#+filetags:   :biochimie:
+
+Norme 0.75-1mmol/L

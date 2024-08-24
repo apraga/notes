@@ -1,0 +1,69 @@
+#+title: Td Deficience Intellectuelle
+#+date: <2022-06-30 Thu>
+
+Données additionnelles
+- incidentes = variation patho, sans relation avec indication, découverte fortuite
+  ex: exome DI et prédispotion cancer
+- secondaire = variation patho, sans relation avec indication, recherchée activement,
+
+* Cas clinique - Louka
+Ataxie, retard psychomoteur, hypoplasie cérébelleuse
+NB: recherche CDG pour coté cérébelleux
+
+Suite bilan ? CGH +/- Xfra
+Petite del /DMD/
+** DMD
+lié à Duchenne, Becker (début après 7 ans +/- perte marche 25A, cardiomyopathie, variabilité)
+
+Règle de Monaco : la production de dystrohpie dépend impact cadre de lecture
+- stop, frameshift : DMD
+- en phase : DMB  -> dystrophine
+
+Lié à DI avec rapports mais pas le plus commun
+** Interprétation
+n’explique pas l’hypoplasie cérébelleuse -> donnée incidente
+
+Centre de référence -> évaluation neuromusc, ségrég
+** Suivi
+CPK quasi-normal (pas en faveur Duchenne)
+Hypoplasie cérébelleuse
+PCR multiplex : duplication hmz en phase -> conséquence attendue Becker. N’explique pas la DI
+-> pré-sympto pour le moment
+** Rendu
+Soeur vient et enceinte
+Mutation connue -> résultat rapide -> soeur porteuse et garçon
+
+2 pb : Becker et étiologie de Louka
+Echo de référence/IRM cérébrale à discuter
+
+Prénatal : Amnio et CGH
+* Jeanne
+Diminution, mouvement actif foetal, Préma 25SA
+PC 5eP
+Syndrome pseudo-occlusif. Colostomie, iléostomie, gastrostomie
+Pas de mutation CFTR
+Pas de Hirschrprun sur biopsier rectal
+Gastroped : pseudo-occlusion intestinale chronique
+PC -2DS (~N chez parents). ATCD familiaux 0
+
+CGH del en 16p13 de 2.67Mb = FDR microcéphalie, difficilté dev, épilepsie
+hérité père, petit PC
+
+3 cas littérature sur variation récessive MYH11 avec dysfonction musculaire et hypopéristaltisme
+Ici htz
+
+Exome: 2 variants autre gènes -> mucopolysaccharidos
+Rendu mais n’explique pas clinique
+
+Dosage GAG urine +  alpha-L-iduronidase sur sang (activité enzme)
+
+Ttt : enzymothérapie substitutive et greffe moelle osseuse
+* Indicentalome
+Pas en ciblé (Fish, SANGER, PANEL)
+acpa: oui mais rare
+caryo non
+
+Cancer, maladies cardiaque
+
+Quid des htz pour patho récessive ?
+Cf publi https://pubmed.ncbi.nlm.nih.gov/26582393/

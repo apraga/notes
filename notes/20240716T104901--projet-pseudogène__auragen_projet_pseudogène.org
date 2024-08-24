@@ -1,0 +1,67 @@
+#+title:      Projet pseudogene
+#+date:       [2024-07-16 mar. 10:49]
+#+filetags:   :projet:pseudogene:auragen:
+#+identifier: 20240716T104901
+
+
+Ou régions répétées
+
+* Contexte
+- on couvre 98% (régions codantes) mais les 2% sont vraiment un "trou"
+- sera un des défauts principaux d'auragen après curagen v2
+- proposer une annotation dans la limite de ce qu'on peut faire sur ce genre de région
+- liste de pseudogene connue +++
+
+* Objectif
+:PROPERTIES:
+:CUSTOM_ID: h:5e2833d6-77eb-4b94-b82f-0b8f36472af7
+:END:
+- Porter [[https://github.com/Genome-Bioinformatics-RadboudUMC/Chameleolyser][Chameleolyser]]  [cite:@steyaert2023systematic] en
+  - hg19 -> hg38  [[https://github.com/Genome-Bioinformatics-RadboudUMC/ChameleolyserBEDs][fichiers BEDs]]
+  - +/- recoder en python
+* Réunions
+- [[denote:20240819T145456][lundi 19 août 2024 14:54]]
+* Notes
+[cite:@steyaert2023systematic] définit les régions homologues en fusionnant
+- les gènes codant ayant des pseudogènes
+- les régions bien couvertes avec une qualité d'alignement = 0 en utilisant 250 exomes
+
+Données 1000 genomes 30x https://www.internationalgenome.org/data-portal/data-collection/30x-grch38 = 3200 échantillons
+
+** Problèmes avec [cite:@steyaert2023systematic] :
+- en hg19 et ne donne pas le code pour les générer
+- les filtres après l'appel de variant utilisent la cohorte
+- les régions homologues sont définies avec la cohorte (régions bien couvertes mais avec une mauvaise qualité d'alignement)
+- la détection de délétions ou gène conversion utilise toute la cohorte
+- exome seul (en génome on aura beaucoup de régions intergéniques...)
+* Pistes
+- liftover directement
+- se limiter au pseudogènes ENCODE ?
+* Données fournies
+Supplementary Data 23 : régions où est fait l'appel de variant
+Supplementary Data 24 : régions d'où sont extraites les reads
+Supplementary Data 25 : régions à masquer dans le génome
+Supplementary Data 26 : sous-régions pour délétion et gene conversion
+* [[denote:20240716T104934][Bibliographie pseudogène]]
+* Annotation pseudogene
+** Genecode
+[[https://www.gencodegenes.org/human/][Genecode]] propose une annotation par HAVANA des pseudogene dans l'annotation principale (manuel donc idéal)
+En bonus, les pseudogene prédits par 2 pipeline mais pas dans havannah
+** Pseudogene.org
+Contient en plus l'activité
+* Validation
+** GIAB
+[cite:@steyaert2023systematic]
+
+** Patient test Auragen
+*** MR-24000544 IKBKG chrX g.154560563_154560564del
+*** MR-2202491:  chr1:155235252A>G  sur /GBA/ : probablement recombinaison avec pseudogène /GBAP1.
+séquence très proche entre les 2 gènes donc alignement difficile.
+Plusieurs reads ont donc une mauvaise qualité -> VAF sous-estimée
+*** MR-1900206 ?
+variant sur IKBKG cas index (D. Sanlaville) mais on ne peut conclure sur le status en mosaïque : de novo + pseudogène (IKBKGP), garçon klinefelter
+***  MR-2300984 ? double délétion STRC
+Pseudogène STRCP1
+*** MR-2303627 TUBB2B confirmé à Lyon par technique complémentaire
+Lyon (Louis Januel)
+chr6:g.3225154G>A

@@ -1,0 +1,74 @@
+#+title: TD Cardio
+#+author: Dr Hermida (cardio)
+#+date: <2022-06-30 Thu>
+
+* Cas clinique 1
+** Questions
+Contexte (effort, nuit [canalopathie]), âge, ATCD cardio/extra-cardio, autopsie classique, chocable ?
+
+** Cause morts subituqe
+   - Avant 40A: penser CMH, séquelle myocardite, dysplasie ventricule droit, canalopathies [Brugada, QT long congénital, tachy ventriculaire cholinéregique]
+   - après 40A: penser ischémie
+Brugada: repos, sommeil
+** Pour débuter
+Patiente : examen clinique, arbre, bilan cardio (ECG, echo, Holter, effort)
+Frère décédé : analyse génétique postmortem
+NB: toujours le mḙme bilan
+
+30% mort subite inexpliqué : causes génétique dans moins de 50%
+- QT long
+- dysplasie (peut ne pas ḙtre vu à l’autopsie)
+
+- Brugada
+** ECG
+  V1, V2: sus-ST (Brugada type 2 ?)
+  test provocation à l’Ajmaline (ambulatoire, fait apparaître type 1 de Brugada. Parfois réponse explosive donc peut-ḙtre dangereux)
+
+  ECG post-ajmaline : V1-V2: Brugada -> diagnostic
+** Cause du frère:
+Brugada
+** Bilan génétique ?
+oui
+20-25% causes génétiques retrouvées dans Brugada !
+
+NB: canalopathie : 16 gènes -> si négatif, génome
+cardiomyopathie : 72 gènes
+** Analyse génétique négative
+Ne remet pas en cause le diagnostic
+Conseil à la famille: ECG +/- tet ajmaline pour apparenté 1er degré après 15 ans, écho dès 1 an à renouveller tous les 4-5 ans
+Soeur : suivi cardio seul (car asympto). Si sympto, reveal (moniteur implantable)
+** Projet de grossesse
+DPN non accepté (pas de mutation, discutable pour patho)
+Grossesse non contre-indiqué: risque mal connu mais probablement faible
+50% transmission
+Expression très variable
+* Cas clinique 2
+**  Examens
+Prendre le maximaum d’info
+Récup CR anapath , CR pré-transplantation
+Histoire familiale: mort subite, problème musculaire (syndrome)
+
+Génétique : on peut réorienter vers LMNA = très fréquent, cardiopathie avec "un peu de tout" (ventriculaire, trouble du rythme)
+on peut demander LMNA en urgence en attendant le reste du panel
+
+** Mutation LMNA trouvée
+AD
+** Chez frère
+ttt insuf cardiaque, bilan pré-transplantation à anticiper, discussion DAI
+DAI = important pour laminopathies *en préventif* car TdR fréquents
+
+tronquant -> FR  plus sévère
+** Apparentés
+Bilan cardio à partir de 10 ans
+* Cas clinique 3 (CMH)
+Suspicion Fabry sur , IR, angiokératome, sensation brulure, cardiomyopathie dilatée
+surcharge lysosomale progressive
+liée X
+Dosage enzyme α galactosidase (indication CMH après 30 ans chez les hommes) car déficit
+Étiologie importante pour ttt, et type de mutations également (change le ttt)
+
+Compléter le bilan avec : analyse /GLA/
+Discussion ttt enzymothérapie
+
+Apparentés : test ciblé
+NB: petits signes chez les femmes

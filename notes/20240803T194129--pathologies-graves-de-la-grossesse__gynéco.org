@@ -1,0 +1,47 @@
+#+title:      Pathologies graves de la grossesse
+#+date:       [2024-08-03 Sat 19:41]
+#+filetags:   :gynéco:
+#+identifier: 20240803T194129
+
+* Hémorragie de la délivrance
+- Perte sanguine > 500ml (voie basse) ou 1L (césarienne)
+- Grave : >= 1500mL avec début de CIVD
+- 1ere cause de mortalité maternelle en France
+
+Mécanismes normaux : contraction utérine (section des vaisseaux), rétraction utérine -> tout ce qui les empèche provoque une hémorragie de la délivrance
+** Étiologies
+- 80% atonie utérine : multiparité, chorioamniotite, insertion basse du placenta...
+- 10% diminution rétraction utérine : fibrome utérin, malformation placentaire, rétention placentaire...
+NB: hémorragies de Benckiser : 75-100% mortalité néonatale, dù à la rupture de vaisseaux ombilicaux praevia d'inserion vélamenteuse
+* Infection
+** Conséquences
+- avortement
+- pendant le 1er trimestre : malformation (toxoplasmose, varicelle, rubéole)
+- fœtus : mort in utero, atteinte d'organe (syphilis, CMV, rubéole, varicelle, toxoplasmose)
+- chorio-amniotite
+- infection néonatale (listeria) ou tardive (VIH, VHB..)
+- infection chez la mère
+** Tests biologique de la rupture des membranes
+2 molécules : IGFBP-1 (insulin-like growth factor-binding protein), PAMG-1 (placenta α1-microglobulin)
+* Pré-éclampsie
+| Pré-éclampsie             | Sévère                                   |
+|---------------------------+------------------------------------------|
+| PAs >= 140 ou PAd >= 90   | PAs >= 160 ou PAd >= 110                 |
+|                           | douleurs épigastriques, vomissement      |
+|                           | céphalées persistantes, troubles visuels |
+| protéinurie > 0.5g/L      | > 3.5g/L                                 |
+|                           | oligurie                                 |
+| œdèmes, augmentation ASAT | hémolyse, thrombopénie < 90G, ASAT++     |
+** Physiopathologie
+Ischémie placentaire
+- souffrance fœtale
+- lésion endothéliale
+  - coagulopathie intravasculaire
+  - diminution production vasodilatateur -> HTA
+  - augmentation perméabilité capillaire -> œdème
+** Complications
+- mère : HELLP, éclampsie, IRA, CIVD..
+- fœtus : prématurité, MFIU...
+* Éclampsie
+- crise convulsive généralisèe/perte de conscience
+* [[denote:20240803T212704][HELLP]]

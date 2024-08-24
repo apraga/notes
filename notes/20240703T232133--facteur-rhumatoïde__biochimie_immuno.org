@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       38c45f8a-6855-4984-9b84-5e67165d4b5c
+:END:
+#+title:      Facteur rhumatoïde
+#+filetags:   :biochimie:immuno:
+#+identifier: 20240703T232133
+Facteur rhumatoïde = auto-anticorps Ig M/G/A

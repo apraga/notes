@@ -1,0 +1,19 @@
+#+title:      Hémostase en pré-opératoire
+#+date:       [2024-08-06 Tue 22:34]
+#+filetags:   :hémostase:
+#+identifier: 20240806T223451
+
+Reco SFAR 2011
+- pas en systématique
+- avis spécialisé si anamnèse évocatrice
+- patient non interrogeable :  TP,TCA,num
+- pédia : oui ! (anamnèse peu informative...)
+- examen clinique+++
+
+Scores (questionnaire) : bof (long, prédictif ?)
+
+Si examen clinique oriente vers
+- hémostase primaire : NFS,TCA,fibrinogène, Willebrand
+- coagulation : TP,TCA,fibrinogène puis facteurs selon résultat
+- hémorragie à la chute du cordon ou cérébrale : Willebrand,fibrinogène,VIII,fibrinolyse,fonctions plaquettaire
+  Aucune orientation : num, TP,TCA

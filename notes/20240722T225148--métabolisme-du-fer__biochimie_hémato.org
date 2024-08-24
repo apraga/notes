@@ -1,0 +1,47 @@
+#+title:      Métabolisme du fer
+#+date:       [2024-07-22 Mon 22:51]
+#+filetags:   :biochimie:hémato:
+#+identifier: 20240722T225148
+
+- 2 formes
+  - Fe^3+ : insoluble, lié à des protéines de transport (transferrine)
+  - Fe^2+ : soluble et toxique (mort celullaire, fibrose)
+- Finement régulé
+
+* Alimentation
+- Fer heminique (25% absorption): boudin, foie, agneian, boeuf, cheval carand, poissons, oeuf dur...
+- Fer non heminique (5-10% absorption): soja, légumineuses   épinards, pains, petits pois, haricots verts
+* Homéostase
+#+caption: Cohen-Solal et al 2013
+[[file:images/biochimie/fer-homeostase.png]]
+
+- Apport alimentaire (duodenum)
+- Transfert dans le sang par la [[denote:20240717T200717][transferrine]]
+- entrée dans les cellules via les récepteurs de la transférrine -> dosage possible du [[denote:20240722T230650][Récepteur soluble à la transferrine]]
+- mise en réserve par la [[denote:20240722T230855][Ferritine]]
+- régulation = seulement au niveau de l'absorption car il n'y a pas de mécanisme d'excrétion ! Voir [[denote:20240722T231916][hepcidine]]
+* Exploration
+| Compartiment | fonctionnel  | transport    | réserve   |
+|--------------+--------------+--------------+-----------|
+|              | 60-70%       | 1%           | 30-40%    |
+|              | Fe+2         | Fe3+         | Fe3+      |
+|              | Érythrocytes | transferrine | foie      |
+|--------------+--------------+--------------+-----------|
+|              | Hb           | Transferrine | Ferritine |
+|              |  RsTf        | Fer sérique  |           |
+|              |              | CST          |           |
+* Carence
+ - diminution synthse hémoglobline -> anémie microcytaire hypochrome,
+ - diminution capacito oxidative tissulaire
+ Donc diminution capacité de travail
+* Variation
+- [[denote:20240722T230855][Ferritine]]
+- [[denote:20240722T233032][Fer]]
+- [[denote:20240717T200717][Transferrine]]
+- [[denote:20240722T233548][Coefficient de saturation de la transferrine]]
+* Dosage
+- *Toujours doser transferrine et CST*
+- À jeun si possible et 8h (variation nycthémérale)
+- sérum (chélation du fer par certains anticoagulant)
+ 
+Source: cours UNESS
