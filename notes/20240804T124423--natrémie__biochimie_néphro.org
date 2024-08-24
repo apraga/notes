@@ -4,119 +4,20 @@
 #+identifier: 20240804T124423
 
 
-Pour mesurer la pression osmotique, on utilise le plasma (facilement accessible).
-Une bonne approximation est donnée par la natrémie (90% = sodium + ses contre-ions [bicarbonate, chlore]).
-Attention, la pression osmotique est régulée par le contenu en eau.
+Hydratation intracellulaire = bilan net en eau
+Hydratation extracellulaire = bilan net en sodium
 
-Hyponatrémie ~ pression osmotique faible = excès d'eau
-(attention aux cas où l'approximation n'est pas vraie, cf infra)
+Osmolalité ~ 2x[Na+] + glycémie = 283mOsm d'eau
+A l'équilibre, les osmolalité extra et intra cellulaires sont égales
 
-Sodium ~ volume extracellulaire
-Natrémie ~ contenu en eau
+Une approximation de la pression osomotique est donnée par la natrémie (90% = sodium + ses contre-ions [bicarbonate, chlore]).
 
-* Hyponatrémie
-#+BEGIN_SRC dot :file images/hyponatremie.png :exports results
-digraph {
-node[shape=box];
-"Osmolarité plasmatique" -> { Normale; Élevée; Basse }
-Normale -> "Excès protides\n/triglycérides";
-Élevée -> "Exogène\n(glycérol, mannitol)\nEndogène\n(glucose, urée)"
-Basse[label="Basse (vraie)\nHyperhydratation IC", color=red];
-Basse -> vec -> {vecA; vecN; vecB};
-vecA -> "IR\nIC\nsyndrome néphrotique\nCirrhose" -> tttGlobal;
-vecN -> "SIADH\nPotomanie\nHypthyroïdies\nInsuf. surrénal" -> tttIC;
-vecB -> {"Perte d'eau\net sel" ; "3e secteur";} ;
-"3e secteur" -> tttDEC;
-"Perte d'eau\net sel"-> {urinaire ;gastrointestinale;};
-urinaire -> "Diurétique\nInsuf surrénal\néphropathies" -> tttDEC;
-
-tttGlobal[label="Restriction hydrosodé\nDiurétiques", color=green];
-tttIC[label="Restriction hydrique", color=green];
-tttDEC[label="NaCl", color=green];
-vec[label="Volume\nextracellulaire"];
-vecA[label="Augmenté\n(Hyperhydratation\nglobale)"];
-vecN[label="Normal\n(hyperhydratation\nintracellulaire)"];
-vecB[label="Bas\n(Hyperydratation IC\net déshydratation EC)"];
-}
-#+END_SRC
-
-#+RESULTS:
-[[file:images/hyponatremie.png]]
-
-* Hypernatrémie
-Lié à l'accès à l'eau !
-#+BEGIN_SRC dot :file images/hypernatremie.png :exports results
-digraph {
-node[shape=box];
-vec -> {vecA; vecN; vecB};
-vecA -> "Excès apport NaCl";
-vecN -> "Perte d'eau\n(rénale ou non)" -> "Insensibles\nDiabète inspide";
-vecB -> "Perte d'eau > sel" -> "Digestives\nDiurèes osmotique";
-vec[label="Volume\nextracellulaire"];
-vecA[label="Augmenté\n(Déshydratation IC\nHyperydratation EC"];
-vecN[label="Normal\n(Déshydratation IC)"];
-vecB[label="Bas\n(Déshydratation globale)"];
-}
-#+END_SRC
-
-#+RESULTS:
-[[file:images/hypernatremie.png]]
-
-* TODO v1
-
-L'eau passe librement les membranes pour équilibrer les osmolarités intra- et extracellulaires
-
-Natrémie estime *l'hydratation intracellulaire* ( et non la concentration en NaCl dans l'eau !) car estime l'osmolarité plasmatique
-
-** Définitions
-Osmolarité = concentration de tous les solutions dans 1L d'eau
-Osmolalité = idem pour 1kg d'eau
-Tonicité = concentration des solution /non diffusible/
-** Osmolarité
-Natrémie reflète l'osmolarité (car 50% de celle-ci)
-- l'osmolarité se mesure
-- ou se calcul : 2xNatrémie + glycémie + urée
-Trou osmolaire = osmolarité mesure - calculée
-- augmenté si osmoloe exogène
-
-Tranduscteur: soif et ADH (hormone antidiurétique)
-Effecteurs : apport eau per os (soif) et réabsorption au niveau du canal collecteur (ADH)
-
-*** Non reflété par la natrémie quand
-- accumulation d'osmoles
-  - exogène (glycérol, mannitol, méthanol)
-  - endogène (hyperglycémie, urémie majeure)
-- transfert d'eau intracellulaire -> extracellulaire (fausse hyponatrémie par dilution)
-Osmolariété corrigée pour la glycémie  2xNatrémie + glycémie/3
-
-Attention à l'impédencemétrie indirecte ! La version directe ne pose pas de problème (pas de dilution). Voir [[id:ae6c4672-b071-491d-bfbc-ef1a4ea96e47][Potentiométrie]]
-** Dysnatrémie vraie
-Mécanisme
-
-* TODO v2
-​Osmolalité = $2  × [*N**A*^{+}] + [Gly]  ≈ 285 $ mOsm/kg d'eau
-
-On veut éviter que le sang ne soit trop dilué, ou on contraire pas assez dilué.
-
-Or les mouvements d'eau (entre le secteur intra- et extracellulaire) vont dépendre des concentrations ! Par exemple, il y a surtout du sodium en extra-cellulaire. Donc s'il y est très concentré, l'eau va sortir des cellules pour équilibrer tout ça.
-
-Comme c'est compliqué de calculer la quantité de sodium, on va regarder sa concentration, la natrémie.
-
-** Déshydratation extracellulaire = perte de sodium
-Pure si iso-osmolaire (l'eau "suit")
-
-Étiologie :
-
-- perte extrarénale : bonne réponse du rein donc oligurie, natriurièse
-  effondrée, urines concentrées
-- perte rénale : pas de réponse du rein donc diurièse normale,
-  natriurièse élevée, urines non concentrées
-
+* Sodium ~ volume extracellulaire
+[[denote:20240823T194758][Déshydratation extracellulaire]]
 ** Hyperhydratation extracellulaire = excès de sodium
 Iso-osmolaire (l'eau "suit")
 
-Étiologies : insuffisance cardiaque, cirrhose ascitique, syndrome
-néphrotique surtout
+Étiologies : insuffisance cardiaque, cirrhose ascitique, syndrome néphrotique surtout
 
 ** Déshydratation intracellulaire = perte d'eau
 Donc hyperosmolalité plasmatique avec appel d'eau intra-cellulaire
@@ -181,6 +82,72 @@ On a 3 situations
    - insuffisance cardiaque
    - insuffisance hépatocellulaire
    - insuffisance rénale (mécanisme différent)
+
+Trou osmolaire = osmolarité mesure - calculée
+- augmenté si osmoloe exogène
+
+Tranduscteur: soif et ADH (hormone antidiurétique)
+Effecteurs : apport eau per os (soif) et réabsorption au niveau du canal collecteur (ADH)
+
+** Non reflété par la natrémie quand
+- accumulation d'osmoles
+  - exogène (glycérol, mannitol, méthanol)
+  - endogène (hyperglycémie, urémie majeure)
+- transfert d'eau intracellulaire -> extracellulaire (fausse hyponatrémie par dilution)
+Osmolariété corrigée pour la glycémie  2xNatrémie + glycémie/3
+
+Attention à l'impédencemétrie indirecte ! La version directe ne pose pas de problème (pas de dilution). Voir [[id:ae6c4672-b071-491d-bfbc-ef1a4ea96e47][Potentiométrie]]
+
+* Hyponatrémie (hyperhydratation intracellulaire)
+Excès relatif en eau : l'hypo-osmolalité plasmatique entraine un transfert d'eau vers l'intracellulaire
+
+[[file:images/biochimie/hyponatremie.jpg]]
+
+1. Éliminer des fausses hyponatrémies
+   - mesure (protides, triglycérides) mais ne devrait pas arriver avec la potentiométrie
+   - hyperglycémie++, intox méthanol/mannitol: c'est la substance qui provoque de transfert d'eau mais vers l'extracellulaire
+2. Les reins ont-ils une réponse adaptée ? (dilution des urines)
+   - oui (Uosm < 100): trop d'apport en eau (potomanie) ou pas assez de soluté (tea and toast)
+   - non : voir le compartement extracellulaire (bilan du sodium)
+     - DEC: perte d'eau et de sodium mais la stimulation de l'ADH permet de réabsorber eau (excès relaitf)
+     - normal : sécrétion inappropriée d'ADH
+     - Hyperhydratation globale: les causes sur l'iamge stimulent l'ADH (diminution du volume sanguin effectif par vasodilatation splanchique [cirrhose])
+** Traitement
+- La cause + réduire l'excès d'eau (restriction hydrique)
+- +/- corriger le sodium selon le secteur extracellulaire
+  - DEC : apport NaCl
+  - HEC : restriction sodée + diurétique de l'anse
+
+Attention si chronique à ne pas corriger trop rapidement : *myélinolyse centropontine*
+* Hypernatrémie
+Petre d'eau nette -> hyperosmolalité plasmatique
+En pratique, la soif doit compenser la perte d'eau donc c'est assez rare
+#+BEGIN_SRC dot :file images/hypernatremie.png :exports results
+digraph {
+node[shape=box];
+vec -> {vecA; vecN; vecB};
+vecA -> "Excès apport NaCl";
+vecN -> "Perte d'eau\n(rénale ou non)" -> "Insensibles\nDiabète inspide";
+vecB -> "Perte d'eau > sel" -> "Digestives\nDiurèes osmotique";
+vec[label="Volume\nextracellulaire"];
+vecA[label="Augmenté\n(Déshydratation IC\nHyperydratation EC"];
+vecN[label="Normal\n(Déshydratation IC)"];
+vecB[label="Bas\n(Déshydratation globale)"];
+}
+#+END_SRC
+
+#+RESULTS:
+[[file:images/hypernatremie.png]]
+
+
+* Définitions
+Osmolarité = concentration de tous les solutions dans 1L d'eau
+Osmolalité = idem pour 1kg d'eau
+Tonicité = concentration des solution /non diffusible/
+* Osmolarité
+Natrémie reflète l'osmolarité (car 50% de celle-ci)
+- l'osmolarité se mesure
+- ou se calcul : 2xNatrémie + glycémie + urée ~ 285 mOsm/L
 
 * Traitement
 - HEC: gain de sodium (isoosmolaire) -> éliminer le sel (apport ou

@@ -3,8 +3,8 @@
 #+filetags:   :biochimie:transaminases:
 #+identifier: 20240726T221814
 
+- Foie, myocarde, muscles striés squelettiques -> marqueur de cytolyse
 - Catalyse transfert groupe aminé NH2 sur acides α-cétonique
-- Foie, myocarde, muscles striés squelettiques -> marqueur de cytoles
   aspartate + acide α-cétoglutarique ↔ oxaloacétate + glutamate
   L'ASAT est le point de départ de nombreuses réactions métaboliques (ex: pyrimidine) et le glutamate est impliqué dans le cycle glucose-alanine.
 
