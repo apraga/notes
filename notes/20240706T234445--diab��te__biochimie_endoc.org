@@ -81,6 +81,8 @@ antiGAD positif: chercher
 - type 2 : nb gènes mais utilité incertaines
 * [[denote:20240822T181501][Diabète gestationnel]]
 * [[denote:20240721T144858][Acido-cétose diabétique]]
+* Bio
+[[denote:20240824T152715::#h:62ef7c7a-4163-4bbb-bc63-9217d6eb54f1][Kaliémie::Diabète]]
 * Complications
 Exploration des complications micro-vasculaires
 - rétinopathie: rénitographie/fond d'oeil
