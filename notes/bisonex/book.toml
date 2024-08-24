@@ -1,0 +1,6 @@
+[book]
+authors = ["Alexis Praga"]
+language = "en"
+multilingual = false
+src = "."
+title = "Notes bisonex"

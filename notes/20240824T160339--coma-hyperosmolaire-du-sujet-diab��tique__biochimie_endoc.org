@@ -1,0 +1,13 @@
+#+title:      Coma hyperosmolaire du sujet diabétique
+#+date:       [2024-08-24 Sat 16:03]
+#+filetags:   :biochimie:endoc:
+#+identifier: 20240824T160339
+
+Déshydratation globale et massive
+Surtout DT2
+
+Différence avec coma de l'[[denote:20240721T144858][acido-cétose diabétique]] :
+- pas de corps cétonique (un peu d'insuline est toujours sécrétée donc on évite la cétose)
+- pas d'acidose métabolique (pas d'augmentation de production de corps cétoniques)
+- pas d'hyperkaliémie (même raison et pas d'acidose)
+Revoir [[denote:20240721T144858::#h:aaf41327-f65b-44e3-8b2a-1aa7867e9c08][Acido-cétose diabétique::Physiopathologie]]

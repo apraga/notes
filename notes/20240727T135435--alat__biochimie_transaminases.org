@@ -3,7 +3,7 @@
 #+filetags:   :biochimie:transaminases:
 #+identifier: 20240727T135435
 
-- Localisation: cytosol des cellules hépatiques, (musculaires)
+- Cytosol des cellules hépatiques (musculaires) -> marqueur de cytolyse hépatique
 - Enzyme transférant un groupement amine depuis un acide aminé vers un acide cétonique
 
  alanine + acide α-cétoglutarique ↔ pyruvate + glutamate

@@ -3,7 +3,7 @@
 #+filetags:   :biochimie:hépato:
 #+identifier: 20240721T144858
 
-
+Ne pas confondre avec le[[denote:20240824T160339][Coma hyperosmolaire du sujet diabétique]]
 * Clinique:
 - douleurs abdo diffuse, nausée, vomissement
 - amaigrissement, amyotrophie, asthénie
@@ -17,9 +17,12 @@
 - Acidose métabolique avec [[denote:20240824T140729][Trou anionique]] augmenté par augmentation des corps cétoniques (indosés)
 - cétonémie, cétonurie
 - diabète connu mais révélateur 10-15%
-- hyperkaliémie
+- [[denote:20240824T152715::#h:62ef7c7a-4163-4bbb-bc63-9217d6eb54f1][Kaliémie::Diabète]]
 
 * Physiopathologie
+:PROPERTIES:
+:CUSTOM_ID: h:aaf41327-f65b-44e3-8b2a-1aa7867e9c08
+:END:
 Carence en insuline
 - empèche la pénétration dans les cellules du glucose
   - hyperglycémie chronique
@@ -28,8 +31,11 @@ Carence en insuline
   - le cycle de Krebs est orienté vers la formation de corps cétoniques[fn:1]
     - l'acétone explique l'haleine
     - formation d'acides fort -> acidose métabolique
-
-Voir aussi [[denote:20240706T234445][Diabète]]
+* Traitement
+Insuline IV
+NaCL 9g/L IV (hypovolémie)
+KCl IV (contre-intuitif mais l'apport d'insuline va faire migrer massivement le potassium en intracellulaire donc hypokaliémie)
+* Voir aussi [[denote:20240706T234445][Diabète]]
 
 * Footnotes
 
