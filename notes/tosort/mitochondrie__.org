@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       c970b946-efd4-4ae6-b6b1-cd5705e7a6e0
+:END:
+#+title: Mitochondrie
+#+filetags: bio
+
+- Génère ATP (source d'énergie)
+- Présent dans noyau

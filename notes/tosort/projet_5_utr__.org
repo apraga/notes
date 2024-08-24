@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       16c6a9ae-b32b-4e38-bc14-9220343e976a
+:END:
+#+title: Projet 5'UTR
+
+Géré par Quentin avec MORFEE
+Context: les variants en 5'UTR qui font un codon stop prématuré et entraînent des open reading frames (uORFs) qui sont en compétition avec les proténies, impact possible sur maladies

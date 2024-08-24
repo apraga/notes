@@ -1,0 +1,16 @@
+[[file:performances.md][Performances]]
+[[file:validation.md][Validation]] [[file:insilico.md][Tests in silico]]
+
+* Guix vs nix
+:PROPERTIES:
+:CUSTOM_ID: guix-vs-nix
+:END:
+Guix plus utilisé en HPC (France). Nix plus populaire ?
+
+* Outils de gestion de workflow
+:PROPERTIES:
+:CUSTOM_ID: outils-de-gestion-de-workflow
+:END:
+Nextflow, snakemake, CWL = les plus gros. Mais d'autres tentatives -
+Guix : guixwl mais échec -> ccwl - Haskell : funflow, ngless - Ocaml :
+bistro

@@ -1,0 +1,61 @@
+#+title:      Bibliographie pseudogène
+#+date:       [2024-07-16 mar. 10:49]
+#+filetags:   :projet:pseudogene:meta:auragen:
+#+identifier: 20240716T104934
+
+* TODO
+liste gènes
+- PMS2 and NF1
+
+* Contexte
+- [cite:@cheetham2019] définition pseudogène et la découverte de leurs rôle
+- [cite:@yang24loss] revue de bactérie mais donne les types de pseudogene, algos <3 et base de données
+- [cite:@chen2020rerecognition] idéal pour l'intro (utiliser la conclusion), inutible pour les pipeline (pas de mise à jour)
+- [cite:@blueprint2020] court et accessible
+* État de l'art
+** KILL Découverte de pseudogène : hors du scope !
+CLOSED: [2024-07-23 Tue 15:26]
+À tester
+- [cite:@abrahamsson2022ppsifinder] intéressant, python, récent
+- [cite:@syber2022pseudofinder] bactéries + archées. Comparaison génome-base de données protéines ou autre génome
+- utilisé par gencode (voir [cite:@pei2012gencode]  qui combine curation manuelle (ex-HAVANA) avec pseudopipe et rétrofinder)
+  - [cite:@zhang2006pseudopipe]  vieux, code disponible, utilisé par gencode (voir ci-dessous)
+  - [cite:@baertsch2008retrofinder] code disponible, utilise ARN messageisé par gencode (voir ci-dessous)
+- [cite:@boer2023processen] récent, code disponible, processed seulement
+
+Doute
+- [cite:@miller2021sideretro] sideRETRO code disponible mais seulement les polymorphiques et "somatically inserted" -> pas pour nous ?
+- [cite:@cabanac2023p] à tester ??? seulement validé sur plante et github marqué WIP
+
+Identification
+- détection de perte de gène: à tester ??
+  - https://github.com/hillerlab/GeneLossPipe
+  - remplacé par https://github.com/hillerlab/TOGA (nextflow): annote gène, marque orthologue et processed pseudègen
+   
+Non
+- [cite:@zheng2007pseudogenes] idem [cite:@pei2012gencode] mais avec pseudofinder en plus, qui n'est pas disponible
+- [cite:@solovyev2006automatic] historique, ENCODE, 2006, code payant/non dispo
+- [cite:@zou2009evolutionary] sur les plante, utilise pseudopipe 2006
+- [cite:@mascagni2021structural; @camiolo2018identification]  inspiré de pseudopipe, plante (le premier article utilise les résultats du second)
+- [cite:@cooke2014processed] méthode déjà vue ailleur et c'est du cancer
+** KILL Base de données
+CLOSED: [2024-07-23 Tue 15:26]
+voir [cite:@yang24loss] pour les ref
+- psidR par GENCODE (intégration de plusieurs pipeline)
+- pseudoMap
+- pseudoFam
+- pseudogene
+- pseudoFuN
+- Dreambase
+
+ * Related
+- [cite:@van2006ppfinder] idée intéressante, non maintenu depuis 2006 (?)
+*** KILL Peu utile
+CLOSED: [2024-07-23 Tue 15:26]
+- [cite:@ijms17121991] mini-comparaison de 3 vieux pipeline mais mal écrit et vieux
+- https://github.com/kelkar/Discover_pseudogenes non maintenu > 7 ans,
+- https://github.com/SBCSnicholsLab/pseudogene_quantification Proportion d'ADN vagrand (extra-nucléaire) : pas le scope
+* Méthode
+- Biblio
+- https://github.com/topics/pseudogenes
+- recherche google

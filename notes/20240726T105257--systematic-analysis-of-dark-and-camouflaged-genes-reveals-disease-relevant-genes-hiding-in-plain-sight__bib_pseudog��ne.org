@@ -1,0 +1,22 @@
+#+title:      Systematic analysis of dark and camouflaged genes reveals disease-relevant genes hiding in plain sight
+#+date:       [2024-07-26 Fri 10:52]
+#+filetags:   :bib:pseudogène:
+#+identifier: 20240726T105257
+#+reference:  ebbert2019systematic
+
+Juste lu les méthodes pour "rattraper" variants
+
+Définition
+- dark = nombre insuffisant de reads ou qualité d’alignement insuffisante pour appel de variant
+  -  seuil retenu : <= 5 reads  ou >= 90% ont MAPQ < 10
+- camouflaged : région "dark" à cause de duplication (seuil retenu : simularité de 98% avec BLAT)
+  - condition : similaire >= 98% et dark (>= 90% reads avec MAPQ < 10)
+
+* Rattrapage
+- long-read
+- short-read si aligement >= 2 régions, BWA va aligner au hasard et mettre une qualité à 0. Rattrapage
+  1. extraction des redas des régions "camouflée"
+  2. masquer les régions similaires du génome de référence sauf 1
+  3. ré-aligner
+  4. appel de variant
+Dit s’inspirer de[cite:@robert2015errors] mais ils ne font que grouper les reads mal alignés

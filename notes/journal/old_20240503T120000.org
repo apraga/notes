@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       755b1fa7-4ada-4ab3-80a6-906f6a2aa504
+:END:
+* 204-05-03
+** 11:00 Doc auragène
+ - [[Mises à jour]]
+ - [[id:247f9296-5b37-4060-ab66-6835b9b201f9][Cohorte]]
+ - [[id:587dc7c4-1dd5-4068-8d24-6e3825f01e66][Validation]]
+ - [[id:cc54e449-12a7-41d6-832b-33937255be92][Contrôle qualité]]
+ - [[Problèmes connus]]
+ - [[ROH]]
+ - [[Amélioration formation auraweb]]
+ - [[Cas intéressants]]
+
+Réunion Virginie
+ - [x] Badge
+ - [ ] Accès webmail + proxy: pas avant semaine prochaine, utilise identifiant virginie.bernard et bernard2020
+ - [x] accès slack: a priori non
+ - [ ] Ajout mail liste de diffusion auragen (?): à voir si mail CHU ok
+ - [ ] Kalilab ?
+ - [x] Pont ? a priorio ok
+ - [[Missions interne]]

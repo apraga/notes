@@ -1,0 +1,8 @@
+#+title:      Basophiles et mastocytes
+#+date:       [2024-08-14 Wed 22:47]
+#+filetags:   :hémato:immuno:
+#+identifier: 20240814T224709
+
+- Sécrétion de médiateurs de l'inflammation (histamine, prostaglandines, certaines cytokines)
+- Déclenché quand les IgE se mettent sur les récepteurs à IgE
+- Rôle dans les allergies atopiques : les allergènes se lient aux IgE

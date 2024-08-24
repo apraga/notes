@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       1dff1823-fb97-4ba5-90fc-c982f20fb47b
+:END:
+#+title: LH
+#+filetags: biochimie immuno
+Indication: dysfonction gonade

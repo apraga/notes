@@ -1,0 +1,29 @@
+#+title:      Méningites bactériennes
+#+date:       [2024-07-31 Wed 20:50]
+#+filetags:   :bactério:
+#+identifier: 20240731T205020
+
+
+- Envahissement LCR par bactéries
+- Virale sans encéphalite = habituellement bénin, guérit spontanément
+- Bactérien = pronostic vital engagé à court term +/- séquelle neuro
+- Ttt = ATB IV forte dose
+
+* Physiopathologie
+ - passage dans le sang : depuis
+   - oropharynx (enfant, adulte)
+   - tube digestif (E. coli, strepto agalactiae) (néonat > 72h)
+   -ou via placenta si bactériémie par la mère [Listeria] (néonat)
+ - autres : brèche ostéoméningée, complication infection systémique
+   (borréliose..)
+
+* Clinique
+ - Communautaire = > 39° + syndrome méningé (céphalé, raideur nuque, vomissement, photophobie)
+ - Néonat : non spécifique => PL si fièvre sans cause évidente
+ - Méningoencéphalitue : +signe neuro/psy
+
+* Épidémiologie
+    - enfant, adulte : *Neisseria, Strepto pneumo* +/-- H. influenza,
+      strepto pyogenes, agalactiae, listeria
+    - néonat : *Strepto agalactia*, E.coli,
+    - Autres : Lyme, leptospirose, syphilis, immunodéprimé

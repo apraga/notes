@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       1201f058-5767-47b1-9f25-dd0d606b2676
+:END:
+#+title: Firtina2016
+
+BWA MEM est peusdo-random et si les reads sont mélangés, un read ambigu peut changer d'aligenment !
+  A noter aussi qu'HaplotypeCaller est le plus sensible à ce mélange (1%)..
+

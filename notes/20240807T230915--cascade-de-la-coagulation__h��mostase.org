@@ -1,0 +1,7 @@
+#+title:      Cascade de la coagulation
+#+date:       [2024-08-07 Wed 23:09]
+#+filetags:   :hémostase:
+#+identifier: 20240807T230915
+
+
+[[file:images/hemostase/coagulation.png]]

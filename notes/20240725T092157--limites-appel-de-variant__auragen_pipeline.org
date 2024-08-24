@@ -1,0 +1,11 @@
+#+title:      Limites appel de variant
+#+date:       [2024-07-25 Thu 09:21]
+#+filetags:   :auragen:pipeline:
+#+identifier: 20240725T092157
+
+* CNV
+Ploïdies : voir
+* STR
+STR avec expansionhunter
+- seulement en ciblé
+- estimation du nombre de répétition (peu précis)

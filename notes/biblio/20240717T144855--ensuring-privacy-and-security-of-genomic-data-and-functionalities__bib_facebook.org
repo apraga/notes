@@ -1,0 +1,97 @@
+#+title:      Ensuring privacy and security of genomic data and functionalities
+#+date:       [2024-07-17 Wed 14:48]
+#+filetags:   :bib:facebook:
+#+identifier: 20240717T144855
+#+reference:  yakubu2019
+
+
+Super tableau avec les types d'attaques et les articles
+Figure 1 qui résume bien la classification
+
+Discute cryptographique, techniques pour préserver confidentalité -> non lu
+
+* Attaques
+** Identity tracing attack
+À partir de l'ADN (anonymisé oun no identifié) -> identifie le patient avec des quasi-identifier (age, sexe, nom de famille etc) obtenu depuis réseaux sociaux ou bases ded onnées publique (peoplesmart, findoutthetruth)
+Ex: nom de famille trouvé pour
+- partisan PGP (Sweeney 2013)
+- à partir du chrY [cite:@gymrek2013]
+
+ [cite:@erlich2018] : à partir du génome d'un suspect, on cherche ses apparenté dans des services public de généalogie
+Avec un service qui répond oui/non pour un allèle dans un génome, on peut savoir si un individu est présent dans cette base[cite:@shringarpure2015]
+** Attribute disclosure
+Prédire attributs "sensible" des victimes (phénotype, association maladie, drogue
+ADN connu
+On cherche base de données d'étude génétique ou GWAS
+
+Stastitique aggréges ne cachent pas [cite:@cai2015]
+Si on a le phénotype complet et accès au génotype de pluseurs individus, on peut retrouver le génotype et en déduire une présdisposition alzheimer dans [cite:@humbert2015anonymizing]
+[cite:@lippert2017] Prédiction de caractéres phénotypique (parte 1) et identification basée dessus parmis une pré-selection. Critique violente par [cite:@erlich2017major] : age, sex et ethinicité suffisent à avoir la même précision
+
+Pharmacogénétique: inversion d'un modèle prédisant warfarine pour un undifiviut: on peut avoir la génétique et certains paramètres (age, ethnie, taille, poids)
+** Completion attacks
+Reconstruction de l'information génétique à partir
+- de l'ADN parcellaire de la cible
+- ou de l'ADN de la famille
+  - Possible du fait de la corrélation importante.
+  - Pionnier [cite:@humbert2013addressing]
+  - réciproque : ADN de la famille à partir du cas index [cite:@humbert2017quantifying] (même modèle mais amélioré -- ils ont juste mis à jour l'article)
+
+amélioration [cite:@deznabi2018inference] avec corrélation complexe mais même idée
+Prédiction génotype et phénotype: [cite:@he2020inference]
+
+Enfin, une technique complètemenet différente: utilisation des haplotypes identiques dans la généalogiue (IBD = identical by descent) [cite:@kong2008detection]
+** Tableau
+| Type       | Article                        | Données de la cible              | Données externes                    | Résultat                 | Performance                      | Méthode                     |
+|------------+--------------------------------+----------------------------------+-------------------------------------+--------------------------+----------------------------------+-----------------------------|
+| Identity   | [cite:@sweeney2013]            | démographie [fn:1]               | registre de vote, autre             | Nom et prénom            | 35%                              | Simple comparaison          |
+| tracing    | [cite:@gymrek2013]             | STR du chrY                      | généalogie avec génétique           | Nom de famille           | 12%                              | Score de confiance pondéré  |
+|            | [cite:@shringarpure2015]       | VCF, modèle des AF               | non                                 | Présent dans la base     | puissance 95% [fn:4]             | Likelyhood-ratio test[fn:3] |
+|            |                                | de la pop. cible                 |                                     |                          | (250SNP)                         |                             |
+|            | [cite:@raisaro2017]            | VCF, AF                          | non                                 | Présent dans la base     | puissance 100% [fn:4]            | Likelyhood-ratio test       |
+|            |                                |                                  |                                     |                          | (36SNP)                          |                             |
+|            | [cite:@vonthenen2019]          | VCF                              |                                     | Présent dans la base     | puissance 100% [fn:4]            | Linkage desequilibrium      |
+|            |                                |                                  |                                     |                          | (450 requêtes)                   |                             |
+|            |                                |                                  |                                     | Présent dans la base     | même pour SNP                    | Chaine de Markov            |
+|            |                                |                                  |                                     |                          | filtré MAF < 3%                  |                             |
+|            | [cite:@erlich2018]             | test DTC[fn:5]                   | généalogie avec génétique           | Apparenté  [fn:8]        | 60%                              | Segments ADN hérité         |
+|            |                                | (+/- position, âge, sexe)        |                                     | Individu cible           | 1-2 candidats[fn:6]              |                             |
+|------------+--------------------------------+----------------------------------+-------------------------------------+--------------------------+----------------------------------+-----------------------------|
+| Attribute  | [cite:@cai2015] [fn:13]        | > 25 SNPs                        | statistiques GWAS                   | Individu dans GWAS       | 12-20 personnes [fn:7]           | Data mining                 |
+| disclosure | [cite:@humbert2015anonymizing] | phénotype complet                | corrélation SNP-phénotype           | Prédisposition Alzheimer | 85% (80 individus)               | statistiques                |
+|            |                                |                                  | SNPs de différents individus [fn:9] |                          |                                  |                             |
+|            | [cite:@lippert2017]            |                                  |                                     | Phénotype d'un individu  | moyenne à mauvaise[fn:10]        |                             |
+|            |                                |                                  |                                     | Identification parmi     |                                  |                             |
+|            |                                | génome                           | non                                 | un préselection[fn:11]   | précision 0.45 [fn:12]           | Machine learning            |
+|------------+--------------------------------+----------------------------------+-------------------------------------+--------------------------+----------------------------------+-----------------------------|
+| Completion | [cite:@humbert2013addressing]  | SNP parent, généalogie, MAF SNPs | généalogie                          | SNP cible                | erreur entre 0.05 et 0.2 [fn:14] | Belief propagation          |
+|            |                                | linkage desequilibrium           |                                     |                          |                                  |                             |
+|            | [cite:@humbert2017quantifying] | idem mais >= 1 individus         |                                     | idem mais >1 individu    |                                  |                             |
+|            | [cite:@deznabi2018inference]   | idem mais corrélation            |                                     |                          |                                  |                             |
+|            |                                | plus complexes (à citer ??)      |                                     |                          |                                  |                             |
+|            | [cite:@he2020inference]        | idem mais phénotype prédi        |                                     |                          | erreur 0:4 et 0.5                |                             |
+
+Autre
+[cite:@fredrikson2014privacy] : contrairement à ce qui est mentionné dans la revue, ne regarde que le génotype donc pas intéressant ici
+
+* Footnotes
+[fn:14] selon famille. Préciser incertitude et type de tests ?
+
+[fn:13] je ne mentionne pas les 2 autres études qui utilisent plus de SNPs (2008 et 2009)
+[fn:12] Voir [cite:@erlich2017major]  pour une réfutation
+
+[fn:11] pré-selectionnés sur le phénotype. performance similaire (0.53) pour faire corresponder des phénotype et des génotype
+[fn:10] À préciser ?
+
+[fn:9] retrouve d'abord le génotype
+[fn:8] cousin 3e degré
+
+[fn:7] Ordre de grandeur des GWAS 1400-2000 individus
+[fn:6] En supposant connu: la position +/- 160km, âge +/-5 an et sexe (cas d'usage: recherche policière)
+
+[fn:5] Test en pharmacie avec 700 000 sondes
+[fn:4] Avec 5% de faux positifs
+
+[fn:3] Statistique
+[fn:2] Distribution dite "beta"
+[fn:1] age, sexe, code postal

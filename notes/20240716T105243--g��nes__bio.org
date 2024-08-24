@@ -1,0 +1,12 @@
+#+title:      Gènes
+#+date:       [2024-07-16 mar. 10:52]
+#+filetags:   :meta:
+#+identifier: 20240716T105243
+
+- APOL1 Facteur de risque si haplotype G1/G2 pour néphropathie
+- DPMK (AD) : dystrophie myotonique
+- NPHP1 (AR) : syndrome de Joubert (signe dent molaire, néphoratique cystique, retard dev)
+- STRC (AR) : surdité
+- TANGO2 (AR) : encéphalomyopathie métabolique
+- TCF4 : syndrome Pitt-Hopkins (retard mental, bouche large, dysmorphie, hyperventilation+dyspnée intermittente)
+- NFIX Selon la position en acide aminé : sd de Malan ou Marshall !

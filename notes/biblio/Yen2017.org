@@ -1,0 +1,40 @@
+:PROPERTIES:
+:ID:       79b0174f-dc8b-4b8d-a586-023f86da189f
+:END:
+#+title: Yen2017
+
+#+title: Yen2017
+Vérification de la syntaxe des variants selon HGVS
+* Méthode
+  - 126 variants vérifés manuellement
+  -- 50 clinvar, dbsnp, cosmic, mycancer genome, LOVD, Emory genetics lboratory
+  -- 76 variants générés (mutalizer + variant viewer)
+  -- difficiles à annoter (selon expérience du laboratoire)
+  - Données clinvar (106 110) et COSMIC (2 215 000) 
+  - left-justified (vt-normalize)
+  - snpeff, vep, variant reporter  (et snpeff, vep sur données COSMIC et clinvar)
+  - grch37
+  - snpeff avec NCBI homo sapiens 105, vep avec refseq/ensembl 
+* Vérification de la syntaxe 
+  Même transcrit et même syntax pour codant/protéine (ou "équivalent" si synonyme, ex c.482del et c482delT)
+* Résultats
+** Base de référence
+  - Transcrit différents: 4 pour SNPeff et 5 pour VEP
+  - Variation sur l'annotation proétique surtout (cf figure) mais si on considère les "synonymes", équivalent
+  - discordance sur indel mais insertion ou deletion ~ SNV (sic)
+  - sur 1 variant à un site d'épissage (splice site junction) : le variant est aligné sur la droite (c.1200 ou c:1201 au lieu de de c.1200-1)
+  - 4 variants avec discordance entre transcrit Refseq et séquence génomique (leur argument : refseq est plus "curé") -> VEP et SNPEFF les rendent comme des variants (fauxsense ou deletion)
+  - annotation ok pour substitution à 2 nucléotides
+  - effet prédit (si plusieurs effets, ok si au moins un correspond) : bons résultats (cf figure)
+** Clinvar
+   - très bonne concordance snpeff et vep (mais principalement snv)
+   - plus mauvaise performance = insertion suprennament
+   - souci semble être l'échec du right-shift
+   - très grande variabilité pour syntaxe proétique (16-78% différence)
+   -- majorité = erreur systématique et correctible (ex: substitution au lieu d'indel p.AspAla2625GluPro versus p.Asp2625_Ala2626delins) et une petite partie annotent mal les délétion (ex: pIle55fs au lieu de p.Ile55Ter)
+GluPro for rs267606668
+  - outils globalement bons 
+  - s'ils sont d'accords, a permi de mettre en évidence ererur dans clinvar
+* Conclusion 
+  - outils globalement bons pour SNV mais vérifier les insertion ou délétion manuellement
+  - variabilité mais vep semble meilleur que snpeff

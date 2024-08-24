@@ -1,0 +1,11 @@
+#+title:      Thrombopénie induite par l'héparine
+#+date:       [2024-08-07 mer. 18:01]
+#+filetags:   :hémostase:
+#+identifier: 20240807T180139
+
+* Dépistage
+:PROPERTIES:
+:CUSTOM_ID: h:a7933119-8539-4f0b-9363-f00921028762
+:END:
+Surveillance des plaquettes
+- HNF ou {HBPM en contexte chir ou trauma ou ATCD HNF}

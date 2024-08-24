@@ -1,0 +1,63 @@
+#+title:      Méningites virales
+#+date:       [2024-07-31 Wed 20:51]
+#+filetags:   :viro:
+#+identifier: 20240731T205116
+
+
+- Détection génomique spécifique
+* Diag différentiel
+- bactériennes+++, parasitaire, fongique
+- néoplasique, inflammatoire, dysimmunitaire, toxique
+* Étiologies
+** *Entérovirus= 90% des cas*
+  - été, automne
+  - 70% sont des enfants
+  - tous les types peuvent être respnsable de méningite mais certains types peuvent être associés à des formes sévère
+  - bénignes mais formes graves possible (nouveau-né, immunodéprimé)
+  - diag = RT-PCR entérovirus dans LCS. Si négatif : gorge, selles, aspiration (attention à l'excrétion prolongée..)
+** Parechovirus :
+enfant < 2ans
+  - RT-PCR LCS, sang
+  - traitement sympto
+** HSV2: éruption génitale, ATCD
+  - PCR spécifique CLS
+  - traitement : immunodéprimé +/- immunocompétent
+** VZV : zona, paralysie faciale
+  - PCR spécifique
+  - traitement : immunodéprimé +/- immunocompétent
+** autres:
+  - oreillons (parotidite, vaccins): RT-PCR dans LCS, ttt symptomatique
+  - primo infection VIH (prise de risque): 10% primo-ifection. Diag = séro +/- charge virale
+  - LCMV (rongeur), arbovirus (voyage - West nile)
+
+** Herpétique
+  - *mortelle dans 70%* => urgence thérapeutique
+  - la plus fréquente des encéphalite sporadiques Diagnostic = PCR sur
+    lCS
+
+* Physiopath
+- muqueuses de la fac -> lance ganglion trijumeau. Rarement accès
+  SNC (via muqueuse nasale ?)
+- lésions cérébrales : focales (temporales, uni -> bilatérales)
+- éncéphalite pure -> méningo-encéphalite
+* Clinique
+- Début progressif, fière > 48h
+- Céphalées, nausées vomissement
+- Aphasie, désorientation, conscience
+- Crises convulsives focale -> génralisé
+- Déficit neuro focalisé. *Cherche signe HTIC = contre-indication
+  PL*
+
+* Biologique
+- PL: 5-5000 élément, majoritairement lymphocytaire; glycorachie normale, protéinorache modérément élevée (<1.5g/L)
+- *PCR HSV* si encéphalite + méningite lymphocytaire. La PCR doit pouvoir différencier HSV1 et 2 (2 = exceptionnel sauf nouveau-né)
+  - *PCR peut être négative initialement* : répétér à 48/72h
+- Sérologive : utile chez l'enfant (sang + LCS)
+
+* Autre
+ - EEG = focal (temporal), imagerie = focal (temporal),
+   nécroto-hémorragique
+* Traitement
+  - *Après la PL, sans attendre*: aciclovir IV 15 jours
+  - contrôle par PL : seulement si non amélioration clinique : si
+    PCR positiv, poursuite 7j

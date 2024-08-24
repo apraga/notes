@@ -1,0 +1,12 @@
+* 2024-06-11
+** 10:26 Réunion virginie
+- améliorations : ok, mettre les "traités" en bas de page
+- droit aurapport demandé
+- droits gitlab demandé
+- jeudi 13 11h30: réunion bio nationale pour présenter curagen v2 + améliorations aurapport. À faire : diapos pour MAJ aurapport
+- reprise réunion bioinfo mensuelle : prochaine 20
+- variants manqués :
+  - finir + regarder réponse ("cas intéressants")
+  - regarder sur pubmatcher variants sans clinvar ni HPO
+  - regarder mastermid
+- mise à jour phenogenius: travail de Kevin

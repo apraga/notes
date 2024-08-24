@@ -1,0 +1,31 @@
+:PROPERTIES:
+:CUSTOM_ID: h:09677e72-c8bf-4eae-8e7e-d3e0f79407e0
+:END:
+#+title:      Aurapport
+#+date:       [2024-07-19 Fri 11:30]
+#+filetags:    :auragen:
+#+identifier: 20240719T113027
+
+[[denote:20240719T113108][Avertissement]]
+
+- CQ non conformes
+- jumeaux monozygutes
+
+"i" -> "matériel et méthodes"
+
+"+CN"
+
+Pour chaque gène
+-  classement par rapport à un gène HPO (hpo64 = 64e
+"meilleur gène" pour les termes HPO)
+-  +/- expert = important pour
+préindication
+- > *on voit tous les gènes qq soit l'indication*
+
+Pour un variant : nouvelle fenêtre
+-  signale autre variantion ("+CNV") par
+exemple
+-  résultat sur un transcrit donné
+- > possible de change dans
+"sélection du transcrit" et les annotations sont modifées en conséquent
+[[id:b71b2e16-0970-4272-ac54-74ca4588487d][Rendre un variant]]

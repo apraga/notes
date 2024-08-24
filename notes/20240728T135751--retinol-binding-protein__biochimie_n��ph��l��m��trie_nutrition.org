@@ -1,0 +1,15 @@
+#+title:      Retinol-binding protein
+#+date:       [2024-07-28 Sun 13:57]
+#+filetags:   :biochimie:néphélémétrie:nutrition:
+#+identifier: 20240728T135751
+
+- Synthèse par le foie
+- Catabolisé par le rein
+- 45-70mg/L
+- Transport vitamine A
+- t1/2 = 12h
+- Protéine réactive de la réaction inflammatoire
+- Moins sensible et spécifique que la [[denote:20240728T135539][transthyrétine]]
+- marqueur précoche efficacité soutien nutritionnel
+
+Diminution: malnutrition, pathologies hépatiques

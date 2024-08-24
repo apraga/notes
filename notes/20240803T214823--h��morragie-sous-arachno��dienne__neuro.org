@@ -1,0 +1,19 @@
+#+title:      Hémorragie sous-arachnoïdienne
+#+date:       [2024-08-03 Sat 21:48]
+#+filetags:   :neuro:
+#+identifier: 20240803T214823
+
+Extravasation brutale de sang dans l'espace sous-arachnoïdien (entre arachnoïde et pie-mère)
+
+Population jeune (âge médian 55 ans)
+45-50% de mortalité ! Nombreuses séquelles neuro chez les survivants
+Causes : 80-85% après rupture d'un anévrisme cérébral
+* Clinique
+- céphalée brutale «en coup de tonnerre»
+- +/- signes méningés, trouble de la vigilance
+- +/- OAP, insuffisance cardiaque, HTA
+* Scanner cérébral en urgence
+98% de sensibilité si < 12h
+! Normal n'élimine pas HSA
+* PL si normal
+[[denote:20240803T214705][Recherche de pigments xanthochromiques (HSA)]]

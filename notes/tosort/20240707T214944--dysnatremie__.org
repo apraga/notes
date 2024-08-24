@@ -1,0 +1,84 @@
+:PROPERTIES:
+:ID:       e8a1e9bd-aa5a-4783-a5a8-7be278a8e924
+:END:
+#+title: Dysnatrémie
+#+filetags: biochimie
+#+identifier: 20240707T214944
+
+L'eau passe librement les membranes pour équiliéres les osmolarités intra- et extracellulaire
+
+Natrémie estime *l'hydratation intracellulaire*
+Attention, ne sert pas à mesure la concentration e NaCl dans l'eau. Estime l'osmolarité plasmatique
+
+* Définitions
+Osmolarité = concentration de tous les solutions dans 1L d'eau
+Osmolalité = idem pour 1kg d'eau
+Tonicité = concentration des solution /non diffusible/
+* Osmolarité
+Natrémie reflète l'osmolarité (car 50% de celle-ci)
+- l'osmolarité se mesure
+- ou se calcul : 2xNatrémie + glycémie + urée
+Trou osmolaire = osmolarité mesure - calculée
+- augmenté si osmoloe exogène
+
+Trandusucteur: soif et ADH (hormone antidiurétique)
+Effecteurs : apport eau per os (soif) et réabsorption au niveau du canal collecteur (ADH)
+
+** Non reflété par la natrémie quand
+- accumulation d'osmoles
+  - exogène (glycérol, mannitol, méthanol)
+  - endogène (hyperglycémie, urémie majeure)
+- transfert d'eua intracellulaire -> extracellulaire (fausse hyponatrémie par dilution)
+Osmolariété corrigée pour la glycémie  2xNatrémie + glycémie/3
+
+Attention à l'impédencemétrie indirecte ! La version directe ne pose pas de problème (pas de dilution). Voir [[id:ae6c4672-b071-491d-bfbc-ef1a4ea96e47][Potentiométrie]]
+* Dysnatrémie vraie
+Mécanisme
+
+* Hyponatrémie
+#+BEGIN_SRC dot :file images/hyponatremie.png :exports results
+digraph {
+node[shape=box];
+"Osmolarité plasmatique" -> { Normale; Élevée; Basse }
+Normale -> "Excès protides\n/triglycérides";
+Élevée -> "Exogène\n(glycérol, mannitol)\nEndogène\n(glucose, urée)"
+Basse[label="Basse (vraie)\nHyperhydratation IC", color=red];
+Basse -> vec -> {vecA; vecN; vecB};
+vecA -> "IR\nIC\nsyndrome néphrotique\nCirrhose" -> tttGlobal;
+vecN -> "SIADH\nPotomanie\nHypthyroïdies\nInsuf. surrénal" -> tttIC;
+vecB -> {"Perte d'eau\net sel" ; "3e secteur";} ;
+"3e secteur" -> tttDEC;
+"Perte d'eau\net sel"-> {urinaire ;gastrointestinale;};
+urinaire -> "Diurétique\nInsuf surrénal\néphropathies" -> tttDEC;
+
+tttGlobal[label="Restriction hydrosodé\nDiurétiques", color=green];
+tttIC[label="Restriction hydrique", color=green];
+tttDEC[label="NaCl", color=green];
+vec[label="Volume\nextracellulaire"];
+vecA[label="Augmenté\n(Hyperhydratation\nglobale)"];
+vecN[label="Normal\n(hyperhydratation\nintracellulaire)"];
+vecB[label="Bas\n(Hyperydratation IC\net déshydratation EC)"];
+}
+#+END_SRC
+
+#+RESULTS:
+[[file:images/hyponatremie.png]]
+
+* Hypernatrémie
+Lié à l'accès à l'eau !
+#+BEGIN_SRC dot :file images/hypernatremie.png :exports results
+digraph {
+node[shape=box];
+vec -> {vecA; vecN; vecB};
+vecA -> "Excès apport NaCl";
+vecN -> "Perte d'eau\n(rénale ou non)" -> "Insensibles\nDiabète inspide";
+vecB -> "Perte d'eau > sel" -> "Digestives\nDiurèes osmotique";
+vec[label="Volume\nextracellulaire"];
+vecA[label="Augmenté\n(Déshydratation IC\nHyperydratation EC"];
+vecN[label="Normal\n(Déshydratation IC)"];
+vecB[label="Bas\n(Déshydratation globale)"];
+}
+#+END_SRC
+
+#+RESULTS:
+[[file:images/hypernatremie.png]]

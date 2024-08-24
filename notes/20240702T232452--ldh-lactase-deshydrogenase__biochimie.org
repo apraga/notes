@@ -1,0 +1,11 @@
+#+title:      LDH (lactase déshydrogénase)
+#+filetags:   :biochimie:
+#+identifier: 20240702T232452
+
+Marqueur lyse cellulaire (non spécifique d'un tissu car 5 isonezyme)
+Ubiquitaire, indispensable pour le métabolisme des sucres
+Interférence : hémolyse > 10mg/dL, EDTA, fluorure, Na, oxalate, potassium
+Normes 100-200UI/L
+
+* Variations
+- SCA: augmentation +12-16h avec maximum +30-40h -> aspécifique

@@ -1,0 +1,17 @@
+#+title:      Physiologie de l'hémostase
+#+date:       [2024-08-05 Mon 22:21]
+#+filetags:   :hémostase:
+#+identifier: 20240805T222126
+
+
+- Facteurs dépendant vitamine K: II, VII, IX, X
+- déficit en fibrinogène : le plus souvent acquis mais congénital possible
+* [[denote:20240807T225847][Hémostase normale]]
+* Orientation clinique
+** Hémostase primaire
+- Saignement tissus superficiels
+- Purpura -> thrombopénie, thrombopathie
+- ecchymoses, epistaxis prolongée à répétition, gingivorragie -> [[denote:20240806T213755][Maladie de Willebrand]], thrombopathie
+** Coagulation
+- Saignement tissus profond (muscles, viscènrs, cavité)
+- Hématome volumineux, hémarthroses, ecchymoses étendues -> [[denote:20240808T223159][Hémophilies]], [[denote:20240808T231703][Déficits rares en facteurs de la coagulation]]

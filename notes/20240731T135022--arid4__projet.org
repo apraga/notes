@@ -1,0 +1,13 @@
+#+title:      ARID4
+#+date:       [2024-07-31 Wed 13:50]
+#+filetags:   :projet:
+#+identifier: 20240731T135022
+
+Auramatcher
+| Dossier    | Centre          | Préindication | Rendu | HGVS                                                            | VAF (DP) | Consequence & IMPACT                             | Variant tag |
+|------------+-----------------+---------------+-------+-----------------------------------------------------------------+----------+--------------------------------------------------+-------------|
+| MR-2201650 | CHU Montpellier | IMR0012       | - -   | chr14:g.58365277_58365278del c.3188_3189del p.Gln1063ArgfsTer14 | 54 (24)  | frameshift_variant + HIGH                        | de_novo     |
+| MR-2300355 | CHU Montpellier | IMR0051       | - -   | chr14:g.58364430G>A c.2341G>A p.Glu781Lys                       | 59 (37)  | missense_variant + MODERATE                      | de_novo     |
+| MR-2302791 | CHU Nice        | IMR0005       | - -   | chr14:g.58359140A>T c.1862A>T p.Glu621Val                       | 33 (27)  | missense_variant&splice_pred_moderate + MODERATE | de_novo     |
+| MR-2304839 | CHU Reims       | IMR0052       | - -   | chr14:g.58359136G>T c.1858G>T p.Asp620Tyr                       | 38 (13)  | missense_variant&splice_pred_moderate + MODERATE | de_novo     |
+| MR-2304935 | CHU Marseille   | IMR0001       | - -   | chr14:g.58347679C>A c.1205C>A p.Ser402Ter                       | 59 (34)  | stop_gained&splice_pred_moderate + HIGH          | de_novo     |

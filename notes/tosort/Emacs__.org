@@ -1,0 +1,169 @@
+:PROPERTIES:
+:ID:       7ace5c18-4a57-43bb-8653-1fe0e62e0b30
+:END:
+#+title: Emacs
+#+filetags: emacs éditeur
+
+[[id:d15dea51-9e81-4c33-a1f7-5a589da517f8][Doom emacs]]
+* Configuration
+** Emacs et EDITOR
+EDITOR="emacsclient -c"
+Ne pas utiliser l'option -n
+* Astuces
+** Accent issues when pasting from clipboard (Windows)
+C-x RET x (set-selection-coding-system) and choose utf-16-le
+
+** Jump to and from function definition
+M-. (xref-pop-marker-stack): jump to definition
+M-? (xref-find-references): find all occurences
+M-, (xref-find-definitions): q
+** Override completion
+C-j pour ne pas utiliser le premier résultat
+
+* SSH, FTP, sudo
+=SPC f f= puis
+#+begin_src sh
+/protocol:user@host:/file.txt
+#+end_src
+
+SSh avec alias
+#+begin_src sh
+/ssh:myalias:
+#+end_src
+
+SSH sans alias
+#+begin_src sh
+/ssh:john@myhost:/home/john/
+#+end_src
+
+* Grep + sed
+Chercher et éditer directement le résultats
+1. chercher avec ripgrep =SPC s p=
+2. Mettre le résultat dans un buffer `C-c C-o` (`ivy-occur`)
+3. Editer le buffer avec `i` (`ivy-wgrep-change-to-wgrep`)
+
+* Calc
+Embedded-mode : évalue formule sous le curseur
+
+* Torrents with emacs
+** What works
+Nginx + URL
+
+#+begin_example
+server {
+    listen       8000;
+    server_name  localhost;
+
+    access_log  /var/log/nginx/rtorrent_access.log;
+    error_log  /var/log/nginx/rtorrent_error.log;
+
+    location /RPC2 {
+        root /torrents;
+        # auth_basic &quot;Restricted&quot;;
+        # auth_basic_user_file /etc/nginx/.htpasswd;
+        scgi_pass   127.0.0.1:5000;
+        # scgi_pass   unix:/torrents/rtorrent.sock;
+        include     scgi_params;
+    }
+#+end_example
+
+And for rtorrent
+
+#+begin_example
+network.scgi.open_port = 127.0.0.1:5000
+#+end_example
+
+And in emacs
+
+#+begin_example
+(setq mentor-rtorrent-external-rpc &quot;http://127.0.0.1:8000/RPC2&quot;)
+#+end_example
+
+** More secure : with a socket
+We create a group to be able to write the socket
+
+#+begin_example
+sudo groupadd rtorrent-socket
+sudo gpasswd -a alex rtorrent-socket
+sudo gpasswd -a nginx rtorrent-socket
+sudo chown -R nginx:rtorrent-socket /torrents/
+sudo chmod 775 -R /torrents/
+su - alex # To be able to start
+#+end_example
+
+Rtorrent : hack we need to change both ownership and permissions +
+daemon mode
+
+#+begin_example
+# For use with emacs with the mentor package
+network.scgi.open_local = /torrents/rtorrent.sock
+
+# Change ownership to propergroup
+schedule2 = scgi_permission1, 0, 0, &quot;execute.nothrow=chown,alex:rtorrent-socket,/torrents/rtorrent.sock&quot;
+# Make SCGI socket group-writable and secure
+schedule2 = scgi_permission2, 2, 0, &quot;execute.nothrow=chmod,770,/torrents/rtorrent.sock&quot;
+
+system.daemon.set = true
+#+end_example
+
+Emacs
+
+#+begin_example
+(setq mentor-rtorrent-external-rpc &quot;/torrents/rtorrent.sock&quot;)
+#+end_example
+
+Update : it seems to work without nginx with a socket ??
+
+* [[id:9b1e90c5-4614-40b6-ae6c-5e9c89c4488e][Org-mode]]
+* Langages
+** [[id:2e84138f-7559-4933-8e8b-345c5a03fe8b][Haskell]]
+
+* Divers
+=yas-describe-tables= pour voir les snippets
+
+* Presentation
+** org mode -> beamer
+** org-mode -> reveal.js
+#+begin_example
+REVEAL_TRANS
+,#+OPTIONS: toc:nil
+,#+OPTIONS: reveal_width:2100 reveal_height:1000
+,#+REVEAL_TRANS: nil
+\****** TODO DP 1
+\******  DP1
+\******  homme de 54 ans, tabagique au long cours et hypertendu depuis 12 ans (traitement par inhibiteur calcique), consulte
+\****** n médecin traitant pour un épisode isolé d'hématurie macroscopique totale, sans caillot. Il a pour autre antécédent une
+\****** pendicectomie dans l'enfance. L'hémogramme est le suivant : Hb 10,4 g/dL (VGM 78 µm3), GB 8 G/L, plaquettes 247
+#+end_example
+
+Puis SPC m e v b
+
+* Tramp
+SSH + sudo : /[[ssh:you@remotehost%7Cdoas]]:: ou
+/[[ssh:you@remotehost%7Csudo]]::
+
+Sauvegarder session :
+
+[[https://emacs.stackexchange.com/questions/26560/bookmarking-remote-directories-trampsudo]]
+(add-to-list 'tramp-default-proxies-alist '("\\`mydomain\\'" "\\`root\\'" "/sshx:user@%h:"))
+
+** Difficulté avec projectile
+Il faut les executabs sur la machirne distance (fd et rg) Pour nix, on
+peut éditer le bashrc distant et ajouter
+
+#+begin_src lisp
+(after! tramp
+      (add-to-list 'tramp-remote-path 'tramp-own-remote-path))
+#+end_src
+
+En cas de couleur "intempestive", on peut forcer fd à ne pas utiliser de
+couleurs:
+
+(setq projectile-git-fd-args "-0 -H --color=never --type file --exclude
+.git --strip-cwd-prefix")
+
+Puis vider le cache avec SPC p i
+
+* IRC
+Doom-emacs utilise circe, à démarrer avec ==irc= (et non circe)
+

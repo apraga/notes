@@ -1,0 +1,8 @@
+#+title:      Denote
+#+date:       [2024-08-16 Fri 13:03]
+#+filetags:   :emacs:
+#+identifier: 20240816T130301
+
+* Astuces
+Ajouter une liste de liens correspondant à une regexp
+`denote-add-links`

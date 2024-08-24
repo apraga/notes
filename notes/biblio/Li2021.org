@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       8b820a49-29d5-4a19-86a5-07aef08829dd
+:END:
+#+title: Li2021
+
+Différente GRCh38, GRCH37: 1.5% SNV, 2% indel discondants

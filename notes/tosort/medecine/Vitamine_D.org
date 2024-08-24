@@ -1,0 +1,60 @@
+​#biochimie
+
+** Naissance
+:PROPERTIES:
+:CUSTOM_ID: naissance
+:END:
+2 sources
+
+- synthèse à partir des rayonnements UV sur la peau et d'un stéroïde
+- alimentation (vitamine D2 [végétal] et D3 [animal])
+
+** Vie
+:PROPERTIES:
+:CUSTOM_ID: vie
+:END:
+1. Accumulation dans le foie
+2. première hydroxylation conduit à 25-OH-vitamine D (calcidiol).
+3. Transport via le sang dans le rein puis une seconde hydroxylation
+   rein conduit à 1,25-dihydroxy vitamine D (calcitriol = forme active
+   de la vitamine D)
+
+Le calcidiol est peu controlé mais la seconde est régulée par la PTH et
+phosphatémie :
+
+- augmenté par PTH, hypophosphatémie, hypocalcémie (via PTH)
+- inhibé par hyperphosphatémie, hypercalcémie
+
+[[../images/biochimie/vitaminD.png]]{#vitamine D}
+
+** Mort
+:PROPERTIES:
+:CUSTOM_ID: mort
+:END:
+Dégradation par oxidation/hydroxylation et excrétion dans les
+urines/selles
+
+** Effet
+:PROPERTIES:
+:CUSTOM_ID: effet
+:END:
+Calcitriol:
+
+- stimule l'absorbtion intestinale du calcium et phosphose
+- os: favorise la minéralisation (en augmentant la calcémie)
+- rein : stimule la réabsorption tubulaire du phosphore et calcium
+- diminue PTH
+
+** Indication
+:PROPERTIES:
+:CUSTOM_ID: indication
+:END:
+- 25-hydroxy-D = forme circulante prépondérante. Reflète les réserve ->
+  dosé si possibilité de carenc
+- 1,25-dihydroxy-vitamine D (calcitriol) = ne reflète *pas* les stock :
+  réservé à une anomalie de 1-α hydroxylation
+
+** Dosage
+:PROPERTIES:
+:CUSTOM_ID: dosage
+:END:

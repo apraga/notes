@@ -1,0 +1,82 @@
+#+title:      Dénutrition
+#+date:       [2024-07-28 Sun 11:32]
+#+filetags:   :nutrition:
+#+identifier: 20240728T113250
+
+Définition
+- Dénutrition = déficit d'apport, surtout quantitatif, avec bilan énergétique négatif.
+- Malnutrition = déficit qualitatif et quantitatif
+
+HAS
+|                | Adulte < 70a     |                  | Adulte >= 70 |        |
+|----------------+------------------+------------------+--------------+--------|
+| Dénutrition    | Modérée          | sévère           | Modérée      | Sévère |
+|----------------+------------------+------------------+--------------+--------|
+| Perte de poids | >= 5% en 1 mois  | >= 10% en 1 mois | idem         | idem   |
+|                | >= 10% en 6 mois | >= 15% en 6 mois | idem         | idem   |
+| IMC            | < 21             | < 18             | < 22         | < 20   |
+| Albuminémie    | < 35g/L          | < 30g/L          | NA           | <= 30  |
+
+* Contexte
+- 30-50% patient hospitalisé
+- infection, retard de cicatricatisation
+- augmente la morbi-mortalité, allongue durée moyenne d'hospitalisation
+- dépistage systématique précoce à faire !
+- objectif : restaurer masse musculaire, améliorer clinique
+* Causes
+| Type     | Catégorie     | Cause                                          |
+|----------+---------------+------------------------------------------------|
+| Exogène  | Apport        | anoxrexie, dysphagie, malabsorption            |
+|----------+---------------+------------------------------------------------|
+| Endogène | Inflammatoire | Infections, cancers, auto-immune, vascularites |
+|          | Fuites        | - Cutanées : escarres, brûlures...             |
+|          |               | - Rénales : néphroses, hémodialyse             |
+|          |               | - Intestinale : entérite                       |
+|          | Synthèse      | - IHC: cirrhose, carcinome                     |
+* Cliniques
+Fonctionnels :
+- Trouble de la mémorisation, concentration
+- asthénie
+- faiblesse musculaire
+- pertes des fonctions sexuelles (homme), aménorrhée secondaire (femme)
+Signes :
+- fonte adipeuse sous-cutanée, musculaire
+- œdème MI/lombes
+- cheveux secs et cassants, ongles striés et cassant, peau sèche
+- hypertrichose lanugineuse du dos
+- pétéchies, acrosyndrome
+- muqueuse : glossite, stomatite, œsophagite
+- hypotension artérielle
+- constipation
+* Mesures
+- Perte de pois, IMC (voir recos HAS)
+Peu utile :
+- pli cutané : peu sensible si dénutrition débutante
+- circonférence musculaire brachiale: idem
+Autre :
+- tour de taille : obésité abdominale/androïde -> souvent complications métaboliques
+- tour de hanche : répartition gynoïde -> souvent arthrose
+* Biologique
+** Utile
+- [[denote:20240717T201856][Albumine]] : dénutrition chronique, peu sensible et peu spécifique, *fonction inflammation*
+- [[denote:20240728T135539][Transthyrétine (pré-albumine)]] dénutrition aigüe, *fonction inflammation*
+** Peu utilisé
+- [[denote:20240728T135751][Retinol-binding protein]] : transport vitamine A, peu spécifique
+- [[denote:20240717T200717][Transferrine]]
+- IgF1 (somatomédine C) : t1/2 =2-4h, synthèse hépatique, pas spécifique
+- Créatinurie des 24h: bon reflet de la mascule musculaire, non spécifique (voir [[denote:20240727T211412][Créatinine]] )
+- 3-méthylhistidine urinaire (3-MH): acide aminé dans les protéine myofibrillaire non métabolisé ni réutilisé -> coûteux
+- 3-MH/créatinine urinaire ~ muscle dégradé / masse musculaire.
+  - Évite recueil de 24h
+  - hypercatabolisme protéique
+  - arrêt des protéines animales 3 jours avants
+- Bilan azoté: apport en protéines - perte (urinaires, fécales, cutanées, respi). Coûteux
+- [[denote:20240717T200247][Orosomucoïde]]
+* Indices nutritionnels
+- NRI (Nutritional Risk Index) : avant chirurgie programmée
+- GNRI (Geriatric NRI): adapté personne âgée
+- PINI (pronostic inflammatoiry nutritional index): pronostique mortalité. CRPx orosomucoide / albu x prealbu
+- [[denote:20240728T143650][CRP]]
+* À noter
+La citrulline (produite exclusivement par l'intestin et absente de l'alimentation) = marqueur de la masse intestinale active
+Permet de sevrer la nutrition parentérale (20μmol/L)

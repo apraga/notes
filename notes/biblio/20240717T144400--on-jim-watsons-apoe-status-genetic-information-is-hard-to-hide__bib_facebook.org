@@ -1,0 +1,8 @@
+#+title:      On Jim Watson’s APOE status: genetic information is hard to hide
+#+date:       [2024-07-17 Wed 14:44]
+#+filetags:   :bib:facebook:
+#+identifier: 20240717T144400
+#+reference:  nyholt2009jim
+
+
+Illustration du principe linkage disequilibrium : en utilisant des SNPs autour d'AOPE associés significativement à des SNPs dans le gène ou à un risque d'Alzheimer.

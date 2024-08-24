@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       8afc34d5-392e-40d5-a77c-a3bdfa7ded47
+:ROAM_REFS: @santaló22:_ethic
+:END:
+#+title: Josep Santaló and María Berdasco :: Ethical implications of epigenetics in the era of personalized medicine
+
+Éthique de l'épigénétique
+
+Risque de réidentification d'un échantiollon de doneur
+Avec le séquencage whole-génome bisulfite (pour la méthylation des ilôts), on a l'ADN à la paire de base près
+"absolute data confidentiality and privacy cannot be guaranteed"
+mais mesure pour diminuer risuqe
+1. filtrer l'information qui donne le génotype de manière indirecte
+   -> filtrer CpG ou probles avec SNP communs
+2. On peut rapporter mutitation somatique mais pas germilne (reco de the cancer genome atlsa project [cite:@dyke2015epigenome] ) qui semble plus intéressante
+3. variabilité des marqueurs épigénétique donc monis important (dépend du tissue, de l'âge du patient)
+
+NB: épigénétique contient information sur le comportement de l'individu dans le passé + environnement

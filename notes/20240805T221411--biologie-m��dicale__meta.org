@@ -1,0 +1,10 @@
+#+title:      Biologie médicale
+#+date:       [2024-08-05 Mon 22:14]
+#+filetags:   :meta:
+#+identifier: 20240805T221411
+
+- [[denote:20240722T223414][Biochimie]]
+- [[denote:20240805T221640][Bactériologie]]
+- [[denote:20240805T221701][Virologie]]
+- [[denote:20240805T221719][Hématologie]]
+- [[denote:20240805T221741][Hémostase]]

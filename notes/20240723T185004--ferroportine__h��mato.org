@@ -1,0 +1,9 @@
+#+title:      Ferroportine
+#+date:       [2024-07-23 Tue 18:50]
+#+filetags:   :hémato:
+#+identifier: 20240723T185004
+
+- Seul exporteur de fer en dehors des cellules
+- Permet
+  - absorption intestinale (depuis entérocytes)
+  - recyclage du fer depuis les macrophages

@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       04d568ae-62a3-4fb8-bf31-a2b5801a449a
+:END:
+#+title: VanDerAuwera2013
+
+Exemple d'utilisation de GATK best practive.
+**** Hard-filter
+quand VQSR n'est pas possible. Exemple donné par
+“QD < 2.0 || FS > 60.0 || MQ < 40.0 ||
+HaplotypeScore > 13.0 || MappingQualityRankSum < -12.5 ||
+ReadPosRankSum < -8.

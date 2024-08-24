@@ -1,0 +1,43 @@
+#+title:      Hémolyse
+#+date:       [2024-08-18 Sun 19:58]
+#+filetags:   :hemato:
+#+identifier: 20240818T195853
+
+Physiologique : intra-tissulaire (système réticulo-endothélial)
+Pathologique : intra-tissulaire (rate), intra-vasculaire
+* Démarche
+1. NFS, réticulocytes, [[denote:20240805T175937][Bilirubine]] libre, LDH, [[denote:20240717T200415][Haptoglobine]]
+2.[[denote:20240818T201806][Test de Coombs]] direct
+  - positif : immune -> groupage sanguin, recherche autoanticorps
+  - sinon
+    - autre cause extracorpusculaire
+      - infectieuse -> hémocultures (clostridium, streptocoque, yersiniose), paludisme, virale ([[denote:20240818T121442][Cytomégalovirus (CMV)]],[[denote:20240819T172039][VIH]] , hépatites,[[denote:20240819T172109][Parvovirus B19]])
+      - mécanique (schu)
+    - cause corpusculaire :
+      - héréditaire:
+        - membrane : test de résistance osmotique
+        - hémoglobine : fraction Hb
+        - enzyme : G6PD, PK..
+      - acquise: CMF, myélogramme
+* Classification
+** Chronique
+En pratique, les 2 mécanismes sont souvent imbriqués
+*** Intratissulaire
+Ictère, splénomégalien
+- anémie normochrome normocytaire (parfois macro)
+- hyperréticulocytose
+- hyperbilirubinémie
+- LDH et fer sérique augmentés
+*** Intravasculaire
+Cliniquement : ni ictère, ni splénomégalie en général
+- anémie normocytaire et réticulocytes++
+- *schizocytes*
+- hapglobine effondrée
+- hémosidérinurie
+** Aigüe
+Clinique sévère : choc, urines foncées, IRA...
+- anémie normochrome +/- hyperréticulocytose
+- hyperleucocytose à PNN
+- hapglobine effondrée
+- hémoglobinurie
+- plasma «laqué» (hémoglobinémie)

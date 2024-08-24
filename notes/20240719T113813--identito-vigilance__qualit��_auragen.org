@@ -1,0 +1,18 @@
+#+title:      Identito-vigilance
+#+date:       [2024-07-19 Fri 11:38]
+#+filetags:   :qualité:auragen:
+#+identifier: 20240719T113813
+
+Tests
+ - Genre :
+ - post-extraction (web lat) 58 polymorphismes dont 2 sur chrY
+ - post-séquencage (dry lab) : profondeur chrY/ profondeur chrX
+ - [[denote:20240719T113454][Contamination]]
+ - Similarité entre les patients d'un runs :
+   - 1000 SNPs sur les 22 chromosomes
+   - les cas les plus proches doivent être dans la même famille
+   - 2 représentations : matrice de corrélation, dendogramme
+
+Conséquences
+ - problème d'identitovigilance : non rendu
+ - contamination sans impact : notifié mais rendu

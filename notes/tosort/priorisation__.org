@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       d82ebf38-feca-4409-950f-b208f67fae0d
+:END:
+#+title: Priorisation
+#+filetags: auragen pipeline
+
+- 70% des diag dans les 3 premières ligens
+- 84% dans 10 premières lignes
+- 2% non rendu
+[[id:e82e138d-3ca7-4420-904f-420796975ad5][Limites priorisation]]

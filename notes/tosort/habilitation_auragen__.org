@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       251e0220-bdc5-465d-ae46-70206a35d290
+:END:
+#+title: Habilitation auragen
+#+filetags: formation
+
+- [x] Matinée formation visio
+- [X] QCM après formation visio
+- [X] [[id:ab5f1297-f2f9-48e6-9436-6dea3cb84813][Formation Kaliab]]
+- [ ] Tuteur : Julien

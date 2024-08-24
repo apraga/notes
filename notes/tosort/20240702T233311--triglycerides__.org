@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       f7fa1113-bc2f-4ca2-b99f-eb4a7f4ed346
+:END:
+#+title: Triglycérides
+#+filetags: biochimie
+Interférences : glycérole (excès), vitamine C (défaut)
+Normes 1.70mmol/L

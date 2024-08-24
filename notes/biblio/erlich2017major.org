@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       bebcb77c-4b34-4e13-bc63-2752129b0472
+:ROAM_REFS: @erlich2017major
+:END:
+#+title: Erlich, Yaniv :: Major flaws in “Identification of individuals by trait prediction using whole-genome sequencing data”
+
+Réfutation de [cite:@lippert2017]
+
+Avec age, sexe et ethenie, identification semblable
+
+Limites:
+- la ré-identification utilise surtout l'héritage et le sexe plutôt que des données
+  - ex: taille : la plupart de la taille est due à lau sexe
+- âge est une bonne chose mais il faut séquencer 512 (!) fois un échantiollon pour le prédit
+- non testé sur 1000genomes

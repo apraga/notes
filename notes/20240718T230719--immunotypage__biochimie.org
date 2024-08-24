@@ -1,0 +1,15 @@
+#+title:      Immunotypage
+#+date:       [2024-07-18 Thu 23:07]
+#+filetags:   :biochimie:
+#+identifier: 20240718T230719
+
+
+Quand ?
+- anomalies à l'électrophères des protéines (voir [[denote:20240717T201253][Électrophorèse des protéines sériques : interprétation]] )
+  - α2 augmenté (inflammatoir ? sd néphrotique)
+  - shift α2 (hémolyse)
+  - pic α2 (produit contraste iodé)
+  - β1 isolé (anémie ferriprive) ou dédoublement (pdc ?)
+  - β2 dédoublement en IgA (fibrinogèse)
+  - γ pic monoclonale ?
+- électrophorèse des protéines normal mais suspicion clinique

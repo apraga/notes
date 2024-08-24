@@ -1,0 +1,20 @@
+#+title:      HTA secondaire
+#+date:       [2024-08-21 Wed 21:53]
+#+filetags:   :biochimie:nephro:
+#+identifier: 20240821T215310
+
+​Physiopathologie
+
+- Sténose de l'artère rénale : rein hypoperfusé => activation du système
+  rénine angiotensine => augmentation rénine et par conséquent
+  aldostérone, hypokaliémie
+- Coarctaion de l'aorte : hypoperfusion => activation du système rénine
+  angiotensine
+- Phéochromocytome : tumeur de la médullosurrénale => produit
+  (nor)adrénaline
+- Adénome de Conn : tumeur des surrénale => produit aldostérone =>
+  hypokaliémie et diminution rénine en réaction
+- Syndrome de Cushing : compliqué mais augmentation résistance
+  vasculaire et du débit cardiaque => aldostérone, rénine basse
+- Acromégalie : rétention de sodium, expansion volémique
+- Hyperthyroïdie : augmentation volume sanguin, débit cardiaque

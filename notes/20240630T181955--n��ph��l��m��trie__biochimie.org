@@ -1,0 +1,35 @@
+:PROPERTIES:
+:ID:       7ab8499f-d1bd-4881-ab1c-2e657a680d12
+:END:
+#+title:      Néphélémétrie
+#+filetags:   :biochimie:
+
+* Principe
+** Photométrie
+Mesure de la lumière diffusée
+- latéralement (20°) = néphélémotrie
+- linéairement (trajet du rayon)  : turbidim
+** Anticorps
+Contre l'antigène à doser -> complexe Ac-Ag -> la lumière dans la cuve va diffésué sur les complexes
+Utilisation de microparticules en latex pour augmenter la sensibilité
+** Interférences
+- optique : lactescence parfois mais *pas* hémolyse ni ictère
+- biochimique: Ac hétérophile,s, cryoglobuline, facteur rhumatoïde (dilution)
+- physique : lipoproétien/fibrine (dilutaion/centrifugation)
+- effet crochet : excès d'antigène donc l'anticorps n'arrive pas à le fixer de fa
+  on stable > les complexes se dissocient et le signal chut
+  Courbe de Heidelberger-Kendall
+* Paramètres dosés
+- [[denote:20240717T201856][Albumine]]
+- [[denote:20240717T200520][Céruloplasmine]]
+- [[denote:20240630T185107][Complément C3]]
+- [[denote:20240728T143650][CRP]]
+- [[denote:20240717T200415][Haptoglobine]]
+- [[denote:20240630T232802][Immunoglobuline A]]
+- [[denote:20240630T232344][Immunoglobuline G]]
+- [[denote:20240630T232614][Immunoglobuline M]]
+- [[denote:20240717T200247][Orosomucoïde]]
+- [[denote:20240728T135751][Retinol-binding protein]]
+- [[denote:20240717T200717][Transferrine]]
+- [[denote:20240728T135539][Transthyrétine (pré-albumine)]]
+- [[denote:20240717T202815][α2 macroglobuline]]

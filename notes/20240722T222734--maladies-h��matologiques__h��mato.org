@@ -1,0 +1,66 @@
+#+title:      Maladies hématologiques
+#+date:       [2024-07-22 Mon 22:27]
+#+filetags:   :hémato:
+#+identifier: 20240722T222734
+
+Voir [[denote:20240813T152244][Mécanisme des maladies hématologiques]]
+
+* Néoplasies myéloïdes
+Classification OMS
+- [[denote:20240815T204208][Syndromes myéloprolifératifs]]
+- SMP/SMD
+- [[denote:20240815T211015][Syndromes myélodysplasiques]]
+- Leucémies aigües myéloblastiques
+- myélo+lymphoïdes + hyperéosinophilie + anomalies PDGFRα/β ou FGFR1
+* Autrnes
+[[denote:20240722T222809][Anémie microcytaire]]
+[[denote:20240807T180444][Anémie hémolytique auto-immune]]
+[[denote:20240717T195629][Myélome]]
+[[denote:20240814T171123][Lymphomes]]
+[[denote:20240814T200517][Déficit immunitaire]]
+
+* Lymphocytes
+- Pancytopénie :
+  - périphérique : hypersplénisme, hémodilutation (auto-immun)
+  - central :
+    - moelle riche : carenceB12/folates, syndrome d'activaition
+      macrophagiques, myélodyspasie, envahissement (leucémie, lymphome)
+    - moelle pauvree : aplasie (chimio, parvoris B19, Fanconi),
+      myélofibrose
+- Hyperlymphocytose : enfant = coqueluche, viral. Adulte = LLC,
+  lymphoprolifératif autre
+- Lymphopénie :
+  - iatrogène (immunosuppresseur, lithium, cortico),
+  - viral, VIH
+  - cancer, lymphome, radiothérapie
+  - auto-immun : lupus, sarcoidose
+  - IRC
+- Polynucléose neutrophile
+  - physiologique (grossesse, effort, post-op)
+  - infection bactérienne
+  - inflammation chronique
+  - nécrose tissulaire aigüe
+  - iatrogène : corticoïdes, lithium, splénectomie
+  - hémopathie avec myélémie
+  - tabac
+  - cancer
+- Neutropénie (< 0.5 G/L)
+  - centrale
+    - iatrogène
+    - infection : typhoïde, brucellose, hépatite virale
+    - aplasie, hémopathie malignes
+  - périphérique : hypersplénisme, trouble margination
+- Monocytose (> 1G/L)
+  - réactionnelle : infection, inflammation (cancer..), régénération
+    médullaire
+  - primitive : leucémie myélomonocytaire chronique/juvénile, leucémie
+    aigüe monoblastique
+- Myélémie : > 2%
+  - transitoire : infection grave, hémolyse, régénération (hémorragie,
+    postchimio)
+  - chronique : SMP, métastase médullaire
+
+* [[denote:20240813T152959][Maladies du globule rouge]]
+* Plaquettes
+- [[denote:20240722T223056][Thrombocytose]]  : inflammation, carence martiale, splénectomie/asplénie, post-chir, SMP
+- [[denote:20240722T223109][Thrombopénie]]

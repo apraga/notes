@@ -1,0 +1,21 @@
+#+title:      VLDL
+#+date:       [2024-07-25 Thu 22:29]
+#+filetags:   :biochimie:
+#+identifier: 20240725T222902
+
+* Métabolisme
+** Assemblage (ressemble à [[denote:20240725T222406][chylomicrons]] )
+Dans l'hépatocyte
+- réticulum endoplasmique
+  1. pré-VLDL (pauvre en lipides) à partir d'apoB-100
+  2. fusion gouttelette lipidique
+- golgi : +/- ajout lipides
+*** Sécrétion régulée par
+- inhibée par insuline
+- dépend dysponibilité des TG (qui dépend des acides gras libres circulants, synthèse des lipides) et cholestérol
+** Intravasculaire
+1. hydrolyse des TG
+2. comme les [[denote:20240725T222406][Chylomicrons]] , don de TG au HDL et gain d'esters de cholestérol
+3. transformation en IDL
+4. puis[[denote:20240724T232246][Cholestérol-LDL]] (mais une partie seulement )
+5. endocytose des LDL : 1/3 tissus périphériques, 2/3 foie

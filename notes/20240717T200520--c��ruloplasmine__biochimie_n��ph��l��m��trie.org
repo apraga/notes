@@ -1,0 +1,7 @@
+#+title:      Céruloplasmine
+#+date:       [2024-07-17 Wed 20:05]
+#+filetags:   :biochimie:néphélémétrie:
+#+identifier: 20240717T200520
+
+Diagnostic de la maladie de Wilson (surcharge en cuivre)
+Normes 0.2-0.6g/L

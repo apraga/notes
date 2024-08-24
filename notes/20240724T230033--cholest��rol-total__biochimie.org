@@ -1,0 +1,18 @@
+#+title:      Cholestérol total
+#+date:       [2024-07-24 Wed 23:00]
+#+filetags:   :biochimie:
+#+identifier: 20240724T230033
+
+Chylomicron, VLDL, IDL, LDL, HDL
+
+* Méthode courance : enzymatique
+- coloration par spectrométrie (photo- ou réflectométrie)
+  dans le rouge 512nm
+
+** Interférences
+- sous-estimation par compétition si /substances réductrice/ (acide ascorbique), /hyperbilirubinémie/
+- sous-estimé : hémolyse
+- turbiditié : hypertriglycéridémie
+
+* Méthode de référence
+[[denote:20240724T230401][Spectrométrie de masse]] par dilution isotopique

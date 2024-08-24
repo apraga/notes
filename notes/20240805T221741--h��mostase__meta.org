@@ -1,0 +1,12 @@
+#+title:      Hémostase
+#+date:       [2024-08-05 Mon 22:17]
+#+filetags:   :meta:
+#+identifier: 20240805T221741
+
+[[denote:20240805T222126][Physiologie de l'hémostase]]
+
+[[denote:20240806T213533][Techniques d'hémostase]]
+[[denote:20240806T213659][Maladies de l'hémostase]]
+[[denote:20240806T223451][Hémostase en pré-opératoire]]
+
+[[denote:20240811T235530][Anticoagulants]]

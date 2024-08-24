@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       fb97e927-2a25-4733-95a2-c4f520c3c711
+:END:
+#+title: Sélection des variants
+#+filetags: pipeline
+
+SNV et petites indels
+Combinaison de 3 "briques"
+* Transmission
+- /de novo/ si tag =de_novo= et < 3 occurences gnomAD
+- liée X si sur l'X et homozygote (= hémizygote chez garçon) ou de novo
+- biallélique si
+  - 1 variant de chaque parent ou 1 hérité et 1 de novo sur transcript (tag =biallelic= ou =de_novo_biallelic=)
+  - *et* au moins un variant clinvar patho  ou {impact fort et non intronique}
+- hérité parent atteint si hérité (parent 1 ou 2) et ségrège indiviu atteint (=segregating=)
+- hérité parent asympto si hérité (parent 1 ou 2) et ne ségrège pas indiviu atteint (=not_segregating=)
+* Cible
+Attention, exclusives
+- panel = hpo ou filière
+- ou OMIM
+- ou ni panel in OMIM
+* Impact
+Exclusive
+- fort si clinvar patho ou {impact codant ou sur épissage (HIGH/MODERATE)}
+- faible : impact LOW MODIFIER et non clinvar patho

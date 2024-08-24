@@ -1,0 +1,13 @@
+#+title: Hepcidine
+#+date:       [2024-07-22 Mon 23:19]
+#+filetags:   :hémato:
+#+identifier: 20240722T231916
+
+- Hyposidérémiant
+- Synthèse hépatique
+- Sensible au fer circulant et stocké
+* Rôle
+- induit l'internalisation et la dégradation de la [[denote:20240723T185004][ferroportine]]
+- conséquence (voir la fiche [[denote:20240723T185004][ferroportine]])
+  - Bloque absorption fer de l'intestin
+  - réduit la libération du fer à partir des macrophage

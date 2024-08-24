@@ -1,0 +1,21 @@
+#+title:      Darcs
+#+date:       [2024-08-17 Sat 10:17]
+#+filetags:   :cvs:haskell:
+#+identifier: 20240817T101714
+
+* Hub.darcs.net
+Il faut une clé RSA (ED25519 non reconnu)
+.ssh/config
+
+#+begin_src
+Host hub.darcs.net
+  User alexdarcy
+  ControlMaster no
+  ForwardAgent no
+  ForwardX11 no
+  Ciphers +aes256-cbc
+  MACs +hmac-sha1
+  PubkeyAcceptedKeyTypes ssh-rsa
+  HostKeyAlgorithms=+ssh-rsa
+  IdentityFile ~/.ssh/id_rsa
+#+end_src

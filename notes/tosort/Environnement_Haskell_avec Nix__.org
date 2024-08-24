@@ -1,0 +1,20 @@
+​#nix #haskell # Cabal2nix
+
+Après avoir créé un fichier .cabal, mettre dans `default.nix`
+
+#+begin_src sh
+let
+  pkgs = import <nixpkgs> { }; # pin the channel to ensure reproducibility!
+in
+pkgs.haskellPackages.developPackage {
+  root = ./.;
+}
+#+end_src
+
+L'exécutable est généré par `nix-build`. Pour débugger avec ghci,
+
+#+begin_src sh
+nix-shell
+$ ghci
+ghci:> :l app/Main.hs
+#+end_src

@@ -1,0 +1,10 @@
+#+title:      Structural characterization and duplication modes of pseudogenes in plants
+#+date:       [2024-07-17 Wed 17:20]
+#+filetags:   :bib:pseudogène:
+#+identifier: 20240717T172022
+#+reference:  mascagni2021structural
+
+Plantes. Récent et nature. Code non disponible
+
+Algorithme de [cite:@camiolo2018identification] , inspiré de [cite:@zhang2006pseudopipe]
+

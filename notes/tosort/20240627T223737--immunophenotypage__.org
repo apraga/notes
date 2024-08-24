@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       16842370-5af9-42c1-951a-ce122c900449
+:END:
+#+title: Immunophénotypage
+#+filetags: hémato
+
+Lymphocytes :
+- B = humorales, production anticorps
+- T = médiation cellulaire (2/3 CD4+ et 1/3 CD8+)
+  - CD4+ (auxilliaire) : cytokines, interaction autres cellules
+  - CD8+ : cytotoxique
+- NK : cytotoxique (directe + via anticorps), cytokines
+
+Antigènes de différentiation (CD = cluser de différenciation) :
+- LT : CD3 (CD4 pour axuillaires, CD8 pour cytotox)
+- LB : CD19
+- NK : CD16, CD56 et absence CD3
+
+Technique immunophénotypage lymphocytaire :
+sang (EDTA) + bille + anticorps : incubation -> lyse globule rouge -> cytomètre en flux
+- LT : selection  CD3+ puis CD4 et CD8 (+ et - donc 4 possibilités)
+- LB sélection CD19+
+- NK : sélection CD3- puis sélection CD16+, CD56+

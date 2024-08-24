@@ -1,0 +1,38 @@
+:PROPERTIES:
+:ID:       13d4ff29-4722-4543-9639-2c220fd70768
+:ROAM_REFS: @zhang2006pseudopipe
+:END:
+#+title: Zhang, Zhaolei and Carriero, Nicholas and Zheng, Deyou and Karro, John and Harrison, Paul M and Gerstein, Mark :: PseudoPipe: an automated pseudogene identification pipeline
+
+Code http://pseudogene.org/DOWNLOADS/pipeline_codes/ppipe.tar.gz
+
+Algorithme
+- input: génome (sans région répététée), ensemble des séquences proétiques et coordonées des gènes fonctionnels
+- output: annotation des pseudogène
+
+  1. identification des régions similaire avec une protéine (BLAST)
+     1. suppression des overlap >= 30bp avec gènes fonctionnels
+
+  2. suppression des doublons (segment avec plusieurs résultat du BLAST)
+
+     1. Si mêm protéine, cela est du au fait que BLAST casse des longues séquences homologues en fragments courts
+     2. sinon, cela est du à des protéines/domaine protéique homologues
+
+     Partionnement en résultats disjoints. Parmi ceux-c , on supprime ceux qui sont complètement contenu
+
+  3. Dans un ensemble disjoint, on fusionne les différents résultats BLAST.
+     Puis, parmi les ensembles adjacent qui correspondent à la même protéine, ils appartiennent au même pseudogène en fonction de la distance entre les résultats et la distance à la protéine
+
+     Les trous entre les hits peuvent venir
+     1. de zones non considérées par BLAST (faible complexité ou tédériorée)
+     2. petit ADN inséré
+     3. séuqence intronique dans les pseudogen dupliqué
+     4. éléments répété
+  4. Paternité des pseudogèn :Ê déterminée parmi les proténies paralogues en se basant sur
+     1. similarité des séquence "
+     2. meilleur e-value
+     3. longeur de la proténie (cela suppose que le pseudogene est plus proche du gène parent original)
+
+       Note: alignement amélioraté avec tfasty en considérant la zone d'un pseudo-exon + 3*bp
+
+       Python

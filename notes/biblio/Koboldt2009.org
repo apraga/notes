@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       36419cf6-f6f1-47e8-a1b9-5c2f6cca4213
+:END:
+#+title: Koboldt2009
+
+Fait l'alignement + appel de variant.
+Peu de détails sur l'appel de variant. Le meilleur alignement de chaque read est examiné pour changement. Les variants sur plusieurs reads sont fusionnés.
+Il y a des seuils sur la couverture, qualité, fréquence, nombre de reads définit par défaut.

@@ -1,0 +1,18 @@
+#+title:      Prevalence estimation for monogenic autosomal recessive diseases using population-based genetic data
+#+date:       [2024-07-18 Thu 16:00]
+#+filetags:   :bib:facebook:
+#+identifier: 20240718T160002
+#+reference:  schrodi2015prevalence
+
+Méthode bayésienne pour maladie récessive, voir [cite:@bainbridge2020determining] pour un autre algo plus récente
+
+HardyWeinberg : bof
+
+Proba initiale comme "beta variante" (apparemment assez courant) puis théorme de Bayes
+- paramètres de la distribution beta estimé sur 23k variants clinvar patho
+
+Hypothèses
+- Suppose pénétrance complète
+- pas de consanguinité
+
+Pas lu très en détail

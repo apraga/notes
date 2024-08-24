@@ -1,0 +1,12 @@
+#+title:      Lipase
+#+filetags:   :biochimie:
+#+identifier: 20240702T230440
+
+
+- Enzyme de digestion des lipides
+- pancréatite aigüe: 4à 10 fois normal
+  - augmenté 4 à 8h après souffrance pancréatite aigüe
+    - pic 24 à 48h
+- non spécifique : pancréatite chronique, lithiase pancréatique, cancer pancréas, mucoviscidose, Crohn..., médicaments
+- Interférence EDTA, oxalate, fluorure, citrate
+- Normes 70-400UI/L

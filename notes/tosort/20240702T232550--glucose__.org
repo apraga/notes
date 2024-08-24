@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       48f25a79-0610-4804-b404-8d3aefdb918e
+:END:
+#+title: Glucose
+#+filetags: biochimie
+Interférence urinaire : métronidazole
+Normes
+- sérum 4.07-5.83mmol/L
+- urines < 0.5g/24h
+- LCR 0.4-0.7g/L

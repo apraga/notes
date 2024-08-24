@@ -1,0 +1,10 @@
+#+title:      Neutrophiles
+#+date:       [2024-08-14 Wed 22:38]
+#+filetags:   :hémato:immuno:
+#+identifier: 20240814T223845
+
+- Sont recrutées rapidement sur le site d'une inflammation
+- phagocytose et digestion des microbes
+- production de produits toxiques (/respiratory burst)
+- pièges à bactéries (Neutrophil Extracellular Trap)
+- sécrétion du contenu des granulations -> dégâts aux cellules
