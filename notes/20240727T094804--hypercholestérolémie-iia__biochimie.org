@@ -1,10 +1,12 @@
-#+title:      Hypercholestéroliméie (IIa)
+#+title:      Hypercholestérolémie (IIa)
 #+date:       [2024-07-27 Sat 09:48]
 #+filetags:   :biochimie:
 #+identifier: 20240727T094804
 
+LDL
+La plus fréquente des hypercholestérolémie
 * Épidémio
-- 1/20 population générae (!)
+- 1/20 population générale (!)
 - secondaire :
   - excès d'apport, cholestase,
   -IR, syndrome néphrotique
@@ -17,8 +19,8 @@ Génétique
 - 1/200 voire 1/120: monogénique (AD++, parfois AR)
 * Clinique
 - déficit en récepteurs LDL/ARH-LDLRAP
-  - homozygote: xanthomes cutanées tendiaux, xanthélasma (paupières), arc cornée, LDL > 5g/L
-  - hétérozygote: xanthome tendinux, arc coronée, LDL >= 1.9g/L
+  - homozygote: xanthomes cutanées tendineux, xanthélasma (paupières), arc cornée, LDL > 5g/L
+  - hétérozygote: xanthome tendineux, arc cornéen, LDL >= 1.9g/L
 -  mutation homozygote apoB100: idem hyperCT familiale
 
  [[file:images/biochimie/xanthome.png]]
@@ -47,6 +49,6 @@ Génétique
 En cas d'échec: lipaphérèse, anticorps monoclonaux anti-PCSK9
 * Enfant
 - dépistage 3-9ans (ATCD familiaux, bilan obésité)
-- pas de régim avant 3 ans
+- pas de régime avant 3 ans
 - diététique 1 an puis médicaments si LDLc > 1.5g/L
   - arrêt si transaminases Nx3, CPK X5

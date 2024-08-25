@@ -6,3 +6,5 @@
 * Astuces
 Ajouter une liste de liens correspondant à une regexp
 `denote-add-links`
+
+embark-act (C-;) pour supprimer des fichiers
