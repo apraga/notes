@@ -12,7 +12,7 @@
   angiotensine
 - Phéochromocytome : tumeur de la médullosurrénale => produit
   (nor)adrénaline
-- Adénome de Conn : tumeur des surrénale => produit aldostérone =>
+- [[denote:20240727T151552][Hyperaldostéronisme primaire]]: tumeur des surrénale => produit aldostérone =>
   hypokaliémie et diminution rénine en réaction
 - Syndrome de Cushing : compliqué mais augmentation résistance
   vasculaire et du débit cardiaque => aldostérone, rénine basse

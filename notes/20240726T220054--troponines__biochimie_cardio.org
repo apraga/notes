@@ -17,7 +17,7 @@ Faux positif si facteur rhumatoïde
 - Définition  CV au 99e percentile <_10° et on doit pouvoir mesurer de manière fiable des valeurs < 99e percentile
 - valeur de référence à 14ng/L (au lieu de ng/mL)
 - Permet un diag biologique pour les petites nécrose (SCA ST-)
-- recommadation: dosage T0 et +3h (+/- 3e dosage si négatif)
+- recommendation: dosage T0 et +3h (+/- 3e dosage si négatif)
 - Attention aux nombreux faux positifs (ex: sujet âgé) -> *dynamique* avec +30% en 3h par exemple
 ** Dosage
 - /pas de comparaison possible des troponines T et I chez un même patient/ !!
