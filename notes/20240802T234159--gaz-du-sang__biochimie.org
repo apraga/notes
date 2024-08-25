@@ -3,22 +3,22 @@
 #+filetags:   :biochimie:
 #+identifier: 20240802T234159
 
+Adulte
+|              |  Artériel |   Veineux |
+|--------------+-----------+-----------|
+| pH (mmHg)    | 7.38-7.42 | 7.32-7.38 |
+| pO2 (mmHg)   |    70-100 |           |
+| CO2 (mmHg)   |     35-46 |           |
+| bicarbonates |     23-27 |           |
+
+Pour l'interprétation, formule (Henderson-Hasselbach)
+pH = 6.1 + log_10 [HCO3-]/[0.0307 pCO2]
 
 * pH
-Le pH représente l'activité de l'ion hydrogène, qui reflète l'équilibre
-acide-base dans le sang. Il doit être régulé dans des marges étroites
-car des variations importantes peuvent rapidement avoir des conséquences
-délétères pour le métabolisme cellulaire, notamment sur le plan
-vasculaire.
+Le pH représente l'activité de l'ion hydrogène, qui reflète l'équilibre acide-base dans le sang. Il doit être régulé dans des marges étroites car des variations importantes peuvent rapidement avoir des conséquences délétères pour le métabolisme cellulaire, notamment sur le plan vasculaire.
 
-- Production: nombreuxs métabolismes (acides aminées, protéines...) ou
-  issus de substances toxiques (méthanole, acide oxalique, acide
-  formique)
-- Élimination: principalement par les poumons +/- reins, estomacs
-  (vomissements...), intestin (diarrhée)
-
-Valeurs de référence (adulte) - artériel : 7.38 - 7.42 - veineux :
-7.32 - 7.38
+- Production: nombreuxs métabolismes (acides aminées, protéines...) ou issus de substances toxiques (méthanole, acide oxalique, acide formique)
+- Élimination: principalement par les poumons +/- reins, estomacs (vomissements...), intestin (diarrhée)
 
 * pO2
 Dans les poumons, l'oxygène diffuse au niveau des alvéoles via le sang.
@@ -26,9 +26,6 @@ Il y est combiné à l'hémoglobine des globules rouges et transporté vers
 les cellules dans les artères. Il est ensuite libéré dans les tissus.
 L'oxygène est consommé pour la respiration cellulaires par les
 mitochondries afin de générer de l'énergie sous forme d'ATP
-
-Valeurs de référence (adulte) - pO2 artériel : 70 - 100 mmHg (9.5 - 13.3
-kPa)
 
 * CO2
 Le CO2 transporté dans le sang est sous 2 formes : dissous dans le
@@ -39,8 +36,6 @@ Le CO2 est produit lors du métabolisme cellulaire normal de manière
 continue et libéré dans le sang. Il est ensuite transporté dans les
 poumons, où aura lieu une diffusion des capillaires pulmonaires dans les
 alvéoles. Il sera ensuite expiré.
-
-Valeurs - artériel : 35 - 46 mmHg (4.7 - 6.1 kPa)
 
 * Dyshémoglobine
 Hémogolbine : 4 hèmes dans les α et β-globine. 1 hème contient des atomes de fer

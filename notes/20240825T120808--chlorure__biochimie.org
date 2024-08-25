@@ -1,0 +1,6 @@
+#+title:      Chlorure
+#+date:       [2024-08-25 Sun 12:08]
+#+filetags:   :biochimie:
+#+identifier: 20240825T120808
+
+Norme: 95-105 mmol/L

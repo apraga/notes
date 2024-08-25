@@ -17,9 +17,9 @@ compense la surcharge volémique par
 - augmentation filtration glomérulaire (*diurétique*) et diminue réabsorption H_2O
 - inhibe sécrétion de l'aldostérone (surrénale) et rénine (rein)
 ** Paracrine et autocrine
-Cardiomyocite + fibroblaste pour diminuer remodelage myocardique
+Cardiomyocyte + fibroblaste pour diminuer remodelage myocardique
 * Indication
-- marqueur global de l'insuffisance cardiaque (proportionnele à la gravité de l'insuffisance)
+- marqueur global de l'insuffisance cardiaque (proportionnelle à la gravité de l'insuffisance)
 
 * Valeurs
 - < 100: forte probabilité d'absence d'insuffisance cardiaque
