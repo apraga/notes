@@ -1,0 +1,9 @@
+#+title:      Hypokaliémie
+#+date:       [2024-08-25 Sun 11:48]
+#+filetags:   :biochimie:néphro:
+#+identifier: 20240825T114821
+
+* Hypokaliémie
+- Ralentissement transit, iléus, douleurs abdo, paralysie flasque, polyurie
+- ECG
+- Bio: alcalose métabolique

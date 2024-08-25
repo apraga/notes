@@ -1,0 +1,17 @@
+#+title:      Hyperkaliémie
+#+date:       [2024-08-25 Sun 11:48]
+#+filetags:   :biochimie:néphro:
+#+identifier: 20240825T114847
+
+
+* Diabète
+:PROPERTIES:
+:CUSTOM_ID: h:cda6fc36-b368-49dd-937a-33cbd661129a
+:END:
+L'insuline permet l'entrée du glucose dans les cellules qui sera métabolisé en ATP.
+L'ATP sert à la pompe Na+/K+/ATPase qui permet d'importer 2K+ (en échange de 2 Na+) donc contre le gradient de concentration
+Il permet de maintenir les canaux potassiques fermé
+
+Donc la carence en insuline ouvre les canaux potassiques (et diminue le fonctionnement de la pompe ) -> hyperkaliémie
+
+2e cause : acidose métabolique (sécrétion de proton entre en compétition avec la sécrétion de potassium)

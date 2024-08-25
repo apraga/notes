@@ -101,64 +101,8 @@ Osmolariété corrigée pour la glycémie  2xNatrémie + glycémie/3
 
 Attention à l'impédencemétrie indirecte ! La version directe ne pose pas de problème (pas de dilution). Voir [[id:ae6c4672-b071-491d-bfbc-ef1a4ea96e47][Potentiométrie]]
 
-* Hyponatrémie (hyperhydratation intracellulaire)
-Excès relatif en eau : l'hypo-osmolalité plasmatique entraine un transfert d'eau vers l'intracellulaire
-
-[[file:images/biochimie/hyponatremie.jpg]]
-
-1. Éliminer des fausses hyponatrémies
-   - mesure (protides, triglycérides) mais ne devrait pas arriver avec la potentiométrie
-   - hyperglycémie++, intox méthanol/mannitol: c'est la substance qui provoque de transfert d'eau mais vers l'extracellulaire
-2. Les reins ont-ils une réponse adaptée ? (dilution des urines)
-   - oui (Uosm < 100): trop d'apport en eau (potomanie) ou pas assez de soluté (tea and toast)
-   - non : voir le compartement extracellulaire (bilan du sodium)
-     - DEC: perte d'eau et de sodium mais la stimulation de l'ADH permet de réabsorber eau (excès relaitf)
-     - normal : sécrétion inappropriée d'ADH
-     - Hyperhydratation globale: les causes sur l'iamge stimulent l'ADH (diminution du volume sanguin effectif par vasodilatation splanchique [cirrhose])
-** Traitement
-- La cause + réduire l'excès d'eau (restriction hydrique)
-- +/- corriger le sodium selon le secteur extracellulaire
-  - DEC : apport NaCl
-  - HEC : restriction sodée + diurétique de l'anse
-
-Attention si chronique à ne pas corriger trop rapidement : *myélinolyse centropontine*
-* Hypernatrémie (déshydratation extracellulaire)
-Perte d'eau nette -> hyperosmolalité plasmatique
-En pratique, la soif doit compenser la perte d'eau donc c'est assez rare
-#+BEGIN_SRC dot :file images/hypernatremie.png :exports results
-digraph {
-node[shape=box];
-ADH[label="Pertes rénales\n(défaut ADH)"];
-noADH[label="Indépendant\nADH"];
-vec -> {vecA; vecN; vecB};
-vecB -> "Déficit Na < eau" -> {"Natriurèse\n< 10mmol/L"; "> 20 mmol/L"};
-vecN -> {noADH; ADH};
-ADH -> "Diabète insipide" -> {Central ; Néphrogénique};
-noADH -> "Pas d'accès\n eau"
-vecA -> "Gain Na > eau" -> "Apports\nexcessifs NaCl"
-"Natriurèse\n< 10mmol/L" -> "Pertes cutanées\ndigestives";
-"> 20 mmol/L" -> "Diurèse\n osmotique";
-vec[label="Volume\nextracellulaire"];
-vecA[label="Augmenté\n(Déshydratation IC\nHyperydratation EC"];
-vecN[label="Normal\n(Déshydratation IC)"];
-vecB[label="Bas\n(Déshydratation global)"];
-}
-#+END_SRC
-
-#+RESULTS:
-[[file:images/hypernatremie.png]]
-
-Les pertes d'origine rénales
-- si déshydratation globale, les reins ne cherchent pas à retenir les urines (non concentrées : natriurèse > 20) : diabète sucré, perfusion de mannitol
-- DIC seule : la polyurie est hypotonique (U/P osm <= 1) donc diabète insipide
-  - centrale : peu/pas de sécrétion d'ADH
-  - néphrogénique : rein répond peu/mal
-** Traitement
-La cause
-+ apport d'eau
-  - si DEC et DIC : soluté salé hypotonique (pour amener du sel)
-  - DIC pure : eau de boisson (pas d'eau pure IV car hémolyse)
-  - si HEC: diurétique + eau pure PO (élimini sodim)
+* [[denote:20240825T115156][Hyponatrémie]] (hyperhydratation intracellulaire)
+[[denote:20240825T115241][Hypernatrémie]] (déshydratation extracellulaire)
 * [[denote:20240823T194758][Déshydratation extracellulaire]]
 * [[denote:20240824T205718][Hyperhydratation extracellulaire]]
 * Traitement
