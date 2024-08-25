@@ -3,11 +3,12 @@
 #+filetags:   :biochimie:
 #+identifier: 20240721T151506
 
+Norme 2.12-2.52 mmol/L
+
 *Important*
 - évaluer calcémie + phosphatémie + PTH
 - penser à une carence vitaminique si PTH modérément augmentée (même si calcémie normale)
 
-Norme 2.12-2.52 mmol/L
 
 Composition du calcium
 - 40% lié aux protéines plasmatique

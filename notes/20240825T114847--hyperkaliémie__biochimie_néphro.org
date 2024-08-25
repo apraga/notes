@@ -1,18 +1,12 @@
-#+title:      Kaliémie
-#+date:       [2024-08-24 Sat 15:27]
+#+title:      Hyperkaliémie
+#+date:       [2024-08-25 Sun 11:48]
 #+filetags:   :biochimie:néphro:
-#+identifier: 20240824T152715
+#+identifier: 20240825T114847
 
 
-- Norme 3.5+4.5mmol/L
-* Hypokaliémie
-- Ralentissement transit, iléus, douleurs abdo, paralysie flasque, polyurie
-- ECG
-- Bio: alcalose métabolique
-* Hyperkaliémie
-** Diabète
+* Diabète
 :PROPERTIES:
-:CUSTOM_ID: h:62ef7c7a-4163-4bbb-bc63-9217d6eb54f1
+:CUSTOM_ID: h:cda6fc36-b368-49dd-937a-33cbd661129a
 :END:
 L'insuline permet l'entrée du glucose dans les cellules qui sera métabolisé en ATP.
 L'ATP sert à la pompe Na+/K+/ATPase qui permet d'importer 2K+ (en échange de 2 Na+) donc contre le gradient de concentration

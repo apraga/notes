@@ -17,7 +17,7 @@ Ne pas confondre avec le[[denote:20240824T160339][Coma hyperosmolaire du sujet d
 - Acidose métabolique avec [[denote:20240824T140729][Trou anionique]] augmenté par augmentation des corps cétoniques (indosés)
 - cétonémie, cétonurie
 - diabète connu mais révélateur 10-15%
-- [[denote:20240824T152715::#h:62ef7c7a-4163-4bbb-bc63-9217d6eb54f1][Kaliémie::Diabète]]
+- [[denote:20240825T114847::#h:cda6fc36-b368-49dd-937a-33cbd661129a][Hyperkaliémie::Diabète]]
 
 * Physiopathologie
 :PROPERTIES:

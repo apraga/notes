@@ -1,0 +1,9 @@
+#+title:      Potassium
+#+date:       [2024-08-25 Sun 11:47]
+#+filetags:   :biochimie:néphro:
+#+identifier: 20240825T114757
+
+
+Norme 3.5-4.5mmol/L
+[[denote:20240825T114821][Hypokaliémie]]
+[[denote:20240825T114847][Hyperkaliémie]]
