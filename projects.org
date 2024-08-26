@@ -4,55 +4,6 @@
 :CATEGORY: bisonex
 :END:
 *** Article dependencies (JOSS) :article:deps:
-**** STRT Dépendences Sarek [4/9]
-***** DONE Package nix Dragmp
-***** WAIT PR package nix Dragmap
-Relancé <2024-06-29 Sat>
-***** TODO Package Deepvariant :deepvariant:nix:
-****** Notes
-Souci de cache initial qui nous a poussé à passer à python 3.12 (non dispo en 3.11)
-Sauf que tensorflow n'est pas supporté (dependence de clu, un nouveau paquet)
-Si on veut python3.12, il faut faire fronctionner [[https://github.com/NixOS/nixpkgs/pull/325224/commits/21ce0d2d77a91d757103b691b51c5e932bfede47][ce PR]]
-Patch upstream à corriger
-
-On force python 3.11 : ok pour le cache
-****** Pre-req.sh :deps:
-******* TODO Python
-******* WAIT https://github.com/NixOS/nixpkgs/issues/321920
-On a changé le hash à la main dans python-jaxlib mais ce n'est pas une bonne solution
-******** TODO tensorflow-addons :python:
-SCHEDULED: <2024-07-27 Sat>
-********* DONE tensorflow-hub (wheel)
-CLOSED: [2024-07-14 Sun 21:43]
-Bazel pour générer wheel : échoue à télécharger certaines dépendences.
-********* DONE Mail Gaetan Lepage pour avis buildBazelPackeg
-CLOSED: [2024-07-14 Sun 21:51] SCHEDULED: <2024-07-14 Sun>
-********* WAIT tensorflow-hub (bazel -> wheel)
-********* TODO tensorflow-model-optimization
-********* TODO tf_slim
-******** TODO tf-models-official :python:
-SCHEDULED: <2024-08-28 Wed>
-
-******* DONE tensorflow: Compléter patch upstream en supprimer tous distutils
-CLOSED: [2024-08-21 Wed 21:48] SCHEDULED: <2024-08-21 Wed>
-******* TODO CUDA
-SCHEDULED: <2024-08-31 Sat>
-******* TODO Misc
-******* TODO Bazel
-SCHEDULED: <2024-08-31 Sat>
-******* TODO Clif
-SCHEDULED: <2024-08-31 Sat>
-***** DONE [[file:~/code/nixpkgs/pkgs/by-name/ti/tiddit/package.nix::{][Package nix Tiddit]]
-***** WAIT [[https://github.com/NixOS/nixpkgs/pull/312995][PR]] package nix tiddit
-Rebase + corrections + relancé <2024-06-29 Sat>
-    /Créé le/ [2024-05-16 Thu 22:39]
-
-***** DONE Package nix vep
-***** WAIT PR Package nix vep
-Relancé <2024-06-29 Sat>
-***** DONE Package nix multiqc
-***** WAIT PR Package nix multiqc
-Relancé <2024-06-29 Sat>
 **** WAIT Support pour pull partiel :scidataflow:
 **** TODO Tests pull partiel :scidataflow:
 SCHEDULED: <2024-08-26 Mon>
@@ -94,26 +45,6 @@ CLOSED: [2024-06-09 Sun 23:27] SCHEDULED: <2024-06-09 Sun>
 SCHEDULED: <2025-04-06 Sun>
 https://www.ouvriralascience.fr
 /Entered on/ [2024-06-06 Thu 23:00]
-*** TODO Inscription jcadd 2024
-SCHEDULED: <2024-09-02 Mon>
-/Entered on/ [2024-07-06 Sat 14:51]
-*** TODO Présentation JCADD 2024
-SCHEDULED: <2024-09-25 Wed> DEADLINE: <2024-10-30 Wed>
-/Entered on/ [2024-07-06 Sat 14:52]
-** NF1
-:PROPERTIES:
-:CATEGORY: nf1
-:END:
-*** TODO Re-soumettre article pediatrics
-SCHEDULED: <2024-08-24 Sat> DEADLINE: <2024-06-18 Tue>
-/Entered on/ [2024-05-19 Sun 13:22]
-* Japonais
-:PROPERTIES:
-:CATEGORY: japonais
-:END:
-** TODO Notes Aya
-SCHEDULED: <2024-08-11 Sun>
-  /Entered on/  [2024-08-11 Sun 23:06]
 * Internat
 :PROPERTIES:
 :CATEGORY: interchu
@@ -121,10 +52,6 @@ SCHEDULED: <2024-08-11 Sun>
 ** TODO ETU https://formation.uness.fr/3C/course/view.php?id=7086
 SCHEDULED: <2024-11-08 Fri>
 Entered on [2024-08-08 Thu 22:29]
-* Divers
-:PROPERTIES:
-:CATEGORY: divers
-:END:
 * Nix
 :PROPERTIES:
 :CATEGORY: nix

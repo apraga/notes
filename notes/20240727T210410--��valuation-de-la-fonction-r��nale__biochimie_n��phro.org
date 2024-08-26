@@ -24,7 +24,7 @@ Mesure de la quantité de sang épurée de créatinine)
 - calculée = [créat]_urine * V_urines / [créat]_sang
   Recueil sur 24h
 ** Cockroft = ne plus utiliser
-- Plus précise que la créatinémie car tient compte du poids et âge (une formue par sexe)
+- Plus précise que la créatinémie car tient compte du poids et âge (une formule par sexe)
 - age, *poids*, créatinimie.
 - Mauvaises performances si obèse, > 75 ans.
 
@@ -36,13 +36,18 @@ valeur basse
 - sur IMC bas (maladies du muscle squelettique, régime végétarien, cirrhose hépatique)
 - MDRD: surestime DFG si créatiniméie basse
 - CKD-EPI = plus précis valeurs hautes DFGG (MDRD le sous-estime)
--  formules non utilisable chez l'enfant (formule du Schwartz),
+-  formules non utilisable chez l'enfant (formule de Schwartz),
 - variation aigüe de la fonction rénale
 - cirrhose hépatique décompensée,
 - gabarit hors norme, amyotrophie important, grossese
 
 Dans ce cas, utiliser clairance urinaire sur urines de 24h = créat
 urinaire*débit/créat sanguine
+
+** UxV/P
+U = [créatinine]_urine = valeur sur 24h divisée par la diurèse sur 24h pour avoir μmol/L
+P = [créatinine]_plasma donné
+V = diurèse en mL/24h, à convertir en mL/min en divisan par 24*60
 
 ** Cystatine
 - ne varie pas avec âge, sexe, ethnie ni masse musculaire

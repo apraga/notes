@@ -3,7 +3,8 @@
 #+filetags:   :biochimie:néphro:
 #+identifier: 20240825T114821
 
-* Hypokaliémie
 - Ralentissement transit, iléus, douleurs abdo, paralysie flasque, polyurie
 - ECG
 - Bio: alcalose métabolique
+* Physiopath
+Compensation : sortie du potassium des cellules -> entrée de H+ pour maintenir l'électroneutralité -> alcalose métabolique
