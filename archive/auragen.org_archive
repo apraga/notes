@@ -230,3 +230,428 @@ CLOSED: [2024-06-19 mer. 11:00] SCHEDULED: <2024-06-19 mer.>
   Démo non convaincate à véronique: n'arrivait pas à voir les articles par variant
   Retesté : ok
   Limite: impossible de trier par pertinence les articles donc moins intéressant...
+
+* DONE Rattraper retard
+CLOSED: [2024-07-09 mar. 11:13] SCHEDULED: <2024-07-09 mar.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-08-26 lun. 17:42
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Variants interprétés
+:ARCHIVE_CATEGORY: excel
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE Prototype Couchdb
+CLOSED: [2024-07-02 mar. 11:09] SCHEDULED: <2024-07-02 mar.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-08-26 lun. 17:42
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Variants interprétés
+:ARCHIVE_CATEGORY: excel
+:ARCHIVE_TODO: DONE
+:END:
+  /Entered on/  [2024-07-02 mar. 11:09]
+
+* DONE Script pour vérifier colonnes bien remplies
+CLOSED: [2024-07-15 lun. 11:16] SCHEDULED: <2024-07-15 lun.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-08-26 lun. 17:42
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Variants interprétés
+:ARCHIVE_CATEGORY: excel
+:ARCHIVE_TODO: DONE
+:END:
+  /Entered on/  [2024-07-15 lun. 09:22]
+
+* DONE Rajouter héritabilité + gènes manquant (check-variant/check.py)
+CLOSED: [2024-07-23 Tue 11:15] SCHEDULED: <2024-07-19 ven.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-08-26 lun. 17:42
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Variants interprétés
+:ARCHIVE_CATEGORY: excel
+:ARCHIVE_TODO: DONE
+:END:
+  /Entered on/  [2024-07-15 lun. 09:22]
+
+* DONE Regarder variants non vus "en aveugle" [15/15]
+CLOSED: [2024-06-26 mer. 15:01] SCHEDULED: <2024-06-26 mer.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-08-26 lun. 17:42
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Curagen2
+:ARCHIVE_CATEGORY: curagenv2
+:ARCHIVE_TODO: DONE
+:END:
+:LOGBOOK:
+CLOCK: [2024-06-11 mar. 11:27]--[2024-06-11 mar. 12:38] =>  1:11
+CLOCK: [2024-06-10 lun. 14:37]--[2024-06-10 lun. 15:01] =>  0:24
+CLOCK: [2024-05-27 lun. 16:43]--[2024-05-27 lun. 17:15] =>  0:32
+CLOCK: [2024-05-27 lun. 13:51]--[2024-05-27 lun. 16:00] =>  2:47
+CLOCK: [2024-05-27 lun. 10:47]--[2024-05-27 lun. 11:51] =>  1:04
+:END:
+** DONE MR-2102170 -> pas d'accès seqone
+. 1er variant intronique profond (mais clinique pouvait coller !)
+** DONE MR-2200237 : rien trouvé
+Note: aurapport : le variant  chr12:g.111347618_111347619insAC n'est pas dans IGV ?
+attente seqone
+** DONE MR-2201162 : rien trouvé
+Aurapport
+VOUS- SON
+** DONE MR-2201495 htz composite SPATA5L1 3+ ?
+CLOSED: [2024-06-10 lun. 14:33]
+** DONE MR-2202491 GBA -> pas dans VCF
+** DONE MR-2202512 attente seqone -> pas dans VCF !
+Gène SBDS
+chaque parent htz -> htz composite chez patient
+variant mosaïque VAF18%
+** DONE MR-2201470 LEF1 classe 3 -> plutôt 4 en fait
+CLOSED: [2024-06-10 lun. 14:45]
+publi 2020 https://pubmed.ncbi.nlm.nih.gov/32022899/
+** DONE MR-2203331 RERE ? 3 -> FOXI3 en fait
+CLOSED: [2024-06-10 lun. 14:54]
+** DONE MR-2203418 rien trouvé
+aurapport
+**** ATRX : intronique profond avec spliceai DG 20, pas d'élément régulateur ucsc ?
+**** XRCC4 = récessif sans 2e variant dans seqone.  clinique + clinvar patho mais hérité mère
+seqone
+**** HNRNPU: encéphalopathie épiletique : bof
+** DONE MR-2203508 SRNBP ? pas de score -> oui
+CLOSED: [2024-06-10 lun. 16:44]
+** DONE MR-2203533 seqone échec
+DEADLINE: <2024-07-02 mar.> SCHEDULED: <2024-06-25 mar.>
+:LOGBOOK:
+CLOCK: [2024-07-01 lun. 15:02]--[2024-07-01 lun. 15:03] =>  0:01
+:END:
+** DONE MR-2301965 NSD2
+DEADLINE: <2024-06-28 ven.>
+NSD2 : frameshift pLI 1 clinique colle
+
+framshift INLS3 ? bof
+ok cryptorchidie mais gène plI = 0
+** DONE MR-2303770 idem
+DEADLINE: <2024-07-02 mar.> SCHEDULED: <2024-06-26 mer.>
+POU3F3 VOUS-
+CACNA1E VOUS-
+** DONE MR-2400054 mauvaise qualité reads !
+IKB
+Mais un read avec deletion ok ne s'aligne pas si mal. Avec BLAT:
+149     1   150   150   100.0%  chrX                 -   154643828 154643979    152
+149     1   150   150   100.0%  chrX                 +   154560459 154560610    152
+ 28     3    47   150    83.4%  chrX                 -   130249297 130249341     45
+ 23   110   133   150   100.0%  chr9                 +   134170923 134170948     26
+ 22   106   135   150    69.6%  chr6_GL000251v2_alt  +     1408511   1408533     23   What is chrom_alt?
+ 21    39    61   150    95.7%  chr8                 +    66429131  66429153     23
+ 20    15    34   150   100.0%  chr10                +    72875848  72875867     20
+ 18    31    48   150   100.0%  chr16                +    47049679  47049696     18
+
+** DONE MR-2400402 RBPJ ? g.26415496T>G
+EXT1 connu (hygen)
+Seqone
+- RBPJ faux sens avec clinique en faveur (retard psychomot et raccourissement doigts), score patho, mais hérité du père.
+
+* KILL Vérifier variants non vus avec mon intérprétations
+CLOSED: [2024-08-26 lun. 17:42] SCHEDULED: <2024-08-26 lun.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-08-26 lun. 17:42
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Curagen2
+:ARCHIVE_CATEGORY: curagenv2
+:ARCHIVE_TODO: KILL
+:END:
+
+* DONE Relire newsletter
+CLOSED: [2024-06-12 mer. 14:17] SCHEDULED: <2024-06-12 mer.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-08-26 lun. 17:42
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Curagen2
+:ARCHIVE_CATEGORY: curagenv2
+:ARCHIVE_TODO: DONE
+:END:
+  /Entered on/  [2024-06-12 mer. 14:08]
+
+* DONE Mail Marine pour suivi Nanopore
+CLOSED: [2024-06-24 lun. 11:51] SCHEDULED: <2024-06-21 ven.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-08-26 lun. 17:42
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Projets/Case report CHD7
+:ARCHIVE_CATEGORY: chd7
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: article
+:END:
+  /Entered on/  [2024-06-21 ven. 16:48]
+
+* DONE Mail Dr Frédérique Bilan CHU Poitiers pour détails MLPA
+CLOSED: [2024-06-24 lun. 11:51] SCHEDULED: <2024-06-21 ven.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-08-26 lun. 17:43
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Projets/Case report CHD7
+:ARCHIVE_CATEGORY: chd7
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: article
+:END:
+  /Entered on/  [2024-06-21 ven. 16:48]
+
+* DONE Mail Xavier Nanopore
+CLOSED: [2024-06-24 lun. 14:49] SCHEDULED: <2024-06-24 lun.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-08-26 lun. 17:43
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Projets/Case report CHD7
+:ARCHIVE_CATEGORY: chd7
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: article
+:END:
+  /Entered on/  [2024-06-24 lun. 14:48]
+
+* DONE Demande à Pauline si prélèvement possible
+CLOSED: [2024-06-24 lun. 15:57] SCHEDULED: <2024-06-24 lun.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-08-26 lun. 17:43
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Projets/Case report CHD7
+:ARCHIVE_CATEGORY: chd7
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: article
+:END:
+  /Entered on/  [2024-06-24 lun. 14:48]
+  Mail envoyé <2024-06-24 lun.>
+
+* DONE Revoir avec Gaelle pour transfert ADN
+CLOSED: [2024-06-25 mar. 12:00] SCHEDULED: <2024-06-25 mar.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-08-26 lun. 17:43
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Projets/Case report CHD7
+:ARCHIVE_CATEGORY: chd7
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: article
+:END:
+  /Entered on/  [2024-06-25 mar. 10:56]
+
+* DONE Répondre MLPA
+CLOSED: [2024-06-25 mar. 12:00] SCHEDULED: <2024-06-25 mar.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-08-26 lun. 17:43
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Projets/Case report CHD7
+:ARCHIVE_CATEGORY: chd7
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: article
+:END:
+  /Entered on/  [2024-06-25 mar. 10:56]
+
+* DONE Bon de demande + prescription + consentement (voir avec Pauline)
+CLOSED: [2024-08-26 lun. 17:43]
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-08-26 lun. 17:43
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Projets/Case report CHD7
+:ARCHIVE_CATEGORY: chd7
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: article
+:END:
+  /Entered on/  [2024-06-25 mar. 13:56]
+
+* DONE Vérifier absence dup liste CNV non filtré
+CLOSED: [2024-06-25 mar. 16:05] SCHEDULED: <2024-06-25 mar.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-08-26 lun. 17:43
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Projets/Case report CHD7
+:ARCHIVE_CATEGORY: chd7
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: article
+:END:
+  /Entered on/  [2024-06-25 mar. 13:57]
+  Rien vu sur IGV probant
+  Attente quentin
+
+* DONE Récupérer ADN parents
+CLOSED: [2024-07-02 mar. 12:08]
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-08-26 lun. 17:43
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Projets/Case report CHD7
+:ARCHIVE_CATEGORY: chd7
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: article
+:END:
+  /Entered on/  [2024-06-25 mar. 13:57]
+
+* DONE Envoi ADN biomnis (parent + cas index)
+CLOSED: [2024-08-08 jeu. 14:45] SCHEDULED: <2024-08-07 mer.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-08-26 lun. 17:43
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Projets/Case report CHD7
+:ARCHIVE_CATEGORY: chd7
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: article
+:END:
+Discuté avec Pauline [2024-07-26 Fri] : ok pour envoi par Marine la semaine prochaine
+
+* DONE Vérifier consentement pour envoi "recherche"
+CLOSED: [2024-07-26 Fri 13:58] SCHEDULED: <2024-07-26 Fri>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-08-26 lun. 17:43
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Projets/Case report CHD7
+:ARCHIVE_CATEGORY: chd7
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: article
+:END:
+  /Entered on/  [2024-07-26 Fri 13:31]
+
+* DONE Discussion Julien (Facebook)
+CLOSED: [2024-07-15 lun. 16:39] SCHEDULED: <2024-07-15 lun. 13:30>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-08-26 lun. 17:43
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Divers
+:ARCHIVE_CATEGORY: auragen
+:ARCHIVE_TODO: DONE
+:END:
+  /Entered on/  [2024-07-02 mar. 15:49]
+  Ne pas parler de couchdb, ni des internes de Lyon.
+  faire point Facebook +/- pseudogene
+
+  Interne lyon: 2 à 5 avec présentatino bioinfo virginie + moi le matin et solvathon l'après-midi
+
+* DONE 30 variants
+CLOSED: [2024-08-26 lun. 17:43]
+:PROPERTIES:
+:LAST_REPEAT: [2024-08-19 lun. 14:32]
+:ARCHIVE_TIME: 2024-08-26 lun. 17:43
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Divers
+:ARCHIVE_CATEGORY: auragen
+:ARCHIVE_TODO: DONE
+:END:
+- State "DONE"       from "TODO"       [2024-08-19 lun. 14:32]
+- State "DONE"       from "TODO"       [2024-08-09 ven. 10:33]
+- State "DONE"       from "TODO"       [2024-08-08 jeu. 15:16]
+- State "DONE"       from "TODO"       [2024-08-08 jeu. 09:08]
+- State "DONE"       from "TODO"       [2024-08-07 mer. 15:54]
+
+* DONE Dossiers -t de test Lucas pour test envoi Hygen
+CLOSED: [2024-08-22 jeu. 15:47] SCHEDULED: <2024-08-22 jeu.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-08-26 lun. 17:43
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Divers
+:ARCHIVE_CATEGORY: auragen
+:ARCHIVE_TODO: DONE
+:END:
+  /Entered on/  [2024-08-22 jeu. 10:18]
+- MR-2400696-t en neg + commentaire dup 1q21 PIEV connue
+- MR-2400905-t en neg
+- MR-2400795-t en neg
+
+* KILL Vérifier diag RNU42 rendus
+CLOSED: [2024-07-04 jeu. 11:12] SCHEDULED: <2024-07-08 lun.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-08-26 lun. 17:44
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Variants interprétés
+:ARCHIVE_CATEGORY: excel
+:ARCHIVE_TODO: KILL
+:END:
+  /Entered on/  [2024-05-28 mar. 10:40]
+À voir avec Nicolas, Virginie envoie un mail
+
+* DONE Interpréter dossiers mosaïque avec Lyon
+CLOSED: [2024-08-23 ven. 14:01] SCHEDULED: <2024-08-23 ven.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-08-26 lun. 17:45
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Projets/Disomie uniparentale
+:ARCHIVE_CATEGORY: upd
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE Réfléchir explication du plot
+CLOSED: [2024-08-07 mer. 16:12] SCHEDULED: <2024-08-07 mer.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-08-26 lun. 17:45
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Projets/Disomie uniparentale
+:ARCHIVE_CATEGORY: upd
+:ARCHIVE_TODO: DONE
+:END:
+  /Entered on/  [2024-08-07 mer. 14:32]
+
+* DONE Notes réunion avec Damien demain
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-08-26 lun. 17:45
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Projets/Disomie uniparentale
+:ARCHIVE_CATEGORY: upd
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE réunion avec Damien
+CLOSED: [2024-08-22 jeu. 14:48] SCHEDULED: <2024-08-22 jeu.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-08-26 lun. 17:45
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Projets/Disomie uniparentale
+:ARCHIVE_CATEGORY: upd
+:ARCHIVE_TODO: DONE
+:END:
+  /Entered on/  [2024-08-21 mer. 11:13]
+** Disomies
+Seuils disomie à 20%: ok pour warning par chromosome
+Seuil 40% pour locus d'intérêt pour ne pas manquer de diag sur gènes soumis à empreinte
+2e temps : flag pour CNV sur gènes soumis à empreinte
+
+TODO:
+- tuto Damien/Alexis
+- analyse des locus d'intérêt Virgini
+- Liste locus d'intérêt à envoyer par Lyon
+- lecture 77 dossiers par Lyon
+** Mosaïque
+Pas d'anomalies vues pour Nicolas sur 6000 dossiers (sic). Donc pas de test possible.
+- MR-2102370: trisomie 13 en mosaïque ??
+- MR-2203397: chr1 : ne sort pas. CNV en mosaïqe ? Pas convaincu sur déséquilibre. 2 copies (disomie segmentaire ?)
+-> regarder si FISH
+- MR-2100947: T18 en mosaïque possible -> diag++
+- MR-2200185 : T21 mosaïque, à regarder par Lyon. Fœtus MOC marseille.
+- MR 2203389: T22 mosaïque d'origine maternelle? Plutôt postzygotique avec correction monosomien Perte 22 paternelle en majorité ?
+Violin plot ? Permet de montrer un déséquilibre, mais pas facile à interprét
+Seuil 10^-50 ? Pas de consensus
+
+En résumé, c'est compliqué. Il faut reséquencer et confirmer avant les plot...
+
+TODO:
+- Rajouter les points gris violin plot : Virginie
+- trouver des cas connus en mosaïque à Auragen
+- revoir avec Christine + Julien pour séquencage
+- 24 dossiers à regarder avec Alexis
+
+* DONE Mail Paul pour avis 2 mosaïques
+CLOSED: [2024-08-23 ven. 16:05] SCHEDULED: <2024-08-23 ven.>
+:PROPERTIES:
+:EFFORT:   0:30
+:ARCHIVE_TIME: 2024-08-26 lun. 17:45
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Projets/Disomie uniparentale
+:ARCHIVE_CATEGORY: upd
+:ARCHIVE_TODO: DONE
+:END:
+  /Entered on/  [2024-08-22 jeu. 14:47]
+
+* DONE MR-2000312 : regarder ACPA (mosaïque chr7)
+CLOSED: [2024-08-23 ven. 14:39] SCHEDULED: <2024-08-23 ven.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-08-26 lun. 17:45
+:ARCHIVE_FILE: ~/org/auragen.org
+:ARCHIVE_OLPATH: Projets/Disomie uniparentale
+:ARCHIVE_CATEGORY: upd
+:ARCHIVE_TODO: DONE
+:END:
+  /Entered on/  [2024-08-23 ven. 13:20]
+  Rien pour Gaelle

@@ -370,7 +370,6 @@ CLOSED: [2024-08-06 mar. 10:19] SCHEDULED: <2024-07-30 Tue>
 :MONTH:    apr
 :END:
 **** TODO Systematic analysis of paralogous regions in 41,755 exomes uncovers clinically relevant variation
-SCHEDULED: <2024-08-07 mer.>
 :PROPERTIES:
 :TITLE:    Systematic analysis of paralogous regions in 41,755 exomes uncovers clinically relevant variation
 :BTYPE:    article
