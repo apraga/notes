@@ -3,14 +3,8 @@
 :CATEGORY: excel
 :END:
 *** TODO Écrire tutorial confluence
-SCHEDULED: <2024-08-26 lun.>
+SCHEDULED: <2024-08-29 jeu.>
   /Entered on/  [2024-05-21 mar. 11:18]
-*** KILL Vérifier diag RNU42 rendus
-CLOSED: [2024-07-04 jeu. 11:12] SCHEDULED: <2024-07-08 lun.>
-  /Entered on/  [2024-05-28 mar. 10:40]
-À voir avec Nicolas, Virginie envoie un mail
-** DONE Rattraper retard
-CLOSED: [2024-07-09 mar. 11:13] SCHEDULED: <2024-07-09 mar.>
 ** WAIT 15 variants
 :PROPERTIES:
 :LAST_REPEAT: [2024-07-18 Thu 11:16]
@@ -30,96 +24,14 @@ CLOCK: [2024-07-08 lun. 09:05]--[2024-07-08 lun. 09:41] =>  0:36
 - State "DONE"       from "TODO"       [2024-06-25 mar. 10:55]
 - State "DONE"       from "TODO"       [2024-06-24 lun. 16:57]
   /Entered on/  [2024-06-24 lun. 16:20]
-** DONE Prototype Couchdb
-CLOSED: [2024-07-02 mar. 11:09] SCHEDULED: <2024-07-02 mar.>
-  /Entered on/  [2024-07-02 mar. 11:09]
-** DONE Script pour vérifier colonnes bien remplies
-CLOSED: [2024-07-15 lun. 11:16] SCHEDULED: <2024-07-15 lun.>
-  /Entered on/  [2024-07-15 lun. 09:22]
-** DONE Rajouter héritabilité + gènes manquant (check-variant/check.py)
-CLOSED: [2024-07-23 Tue 11:15] SCHEDULED: <2024-07-19 ven.>
-  /Entered on/  [2024-07-15 lun. 09:22]
 * Curagen2
 :PROPERTIES:
 :CATEGORY: curagenv2
 :END:
-*** DONE Regarder variants non vus "en aveugle" [15/15]
-CLOSED: [2024-06-26 mer. 15:01] SCHEDULED: <2024-06-26 mer.>
-:LOGBOOK:
-CLOCK: [2024-06-11 mar. 11:27]--[2024-06-11 mar. 12:38] =>  1:11
-CLOCK: [2024-06-10 lun. 14:37]--[2024-06-10 lun. 15:01] =>  0:24
-CLOCK: [2024-05-27 lun. 16:43]--[2024-05-27 lun. 17:15] =>  0:32
-CLOCK: [2024-05-27 lun. 13:51]--[2024-05-27 lun. 16:00] =>  2:47
-CLOCK: [2024-05-27 lun. 10:47]--[2024-05-27 lun. 11:51] =>  1:04
-:END:
-**** DONE MR-2102170 -> pas d'accès seqone
-. 1er variant intronique profond (mais clinique pouvait coller !)
-**** DONE MR-2200237 : rien trouvé
-Note: aurapport : le variant  chr12:g.111347618_111347619insAC n'est pas dans IGV ?
-attente seqone
-**** DONE MR-2201162 : rien trouvé
-Aurapport
-VOUS- SON
-**** DONE MR-2201495 htz composite SPATA5L1 3+ ?
-CLOSED: [2024-06-10 lun. 14:33]
-**** DONE MR-2202491 GBA -> pas dans VCF
-**** DONE MR-2202512 attente seqone -> pas dans VCF !
-Gène SBDS
-chaque parent htz -> htz composite chez patient
-variant mosaïque VAF18%
-**** DONE MR-2201470 LEF1 classe 3 -> plutôt 4 en fait
-CLOSED: [2024-06-10 lun. 14:45]
-publi 2020 https://pubmed.ncbi.nlm.nih.gov/32022899/
-**** DONE MR-2203331 RERE ? 3 -> FOXI3 en fait
-CLOSED: [2024-06-10 lun. 14:54]
-**** DONE MR-2203418 rien trouvé
-aurapport
-****** ATRX : intronique profond avec spliceai DG 20, pas d'élément régulateur ucsc ?
-****** XRCC4 = récessif sans 2e variant dans seqone.  clinique + clinvar patho mais hérité mère
-seqone
-****** HNRNPU: encéphalopathie épiletique : bof
-**** DONE MR-2203508 SRNBP ? pas de score -> oui
-CLOSED: [2024-06-10 lun. 16:44]
-**** DONE MR-2203533 seqone échec
-DEADLINE: <2024-07-02 mar.> SCHEDULED: <2024-06-25 mar.>
-:LOGBOOK:
-CLOCK: [2024-07-01 lun. 15:02]--[2024-07-01 lun. 15:03] =>  0:01
-:END:
-**** DONE MR-2301965 NSD2
-DEADLINE: <2024-06-28 ven.>
-NSD2 : frameshift pLI 1 clinique colle
-
-framshift INLS3 ? bof
-ok cryptorchidie mais gène plI = 0
-**** DONE MR-2303770 idem
-DEADLINE: <2024-07-02 mar.> SCHEDULED: <2024-06-26 mer.>
-POU3F3 VOUS-
-CACNA1E VOUS-
-**** DONE MR-2400054 mauvaise qualité reads !
-IKB
-Mais un read avec deletion ok ne s'aligne pas si mal. Avec BLAT:
-149     1   150   150   100.0%  chrX                 -   154643828 154643979    152
-149     1   150   150   100.0%  chrX                 +   154560459 154560610    152
- 28     3    47   150    83.4%  chrX                 -   130249297 130249341     45
- 23   110   133   150   100.0%  chr9                 +   134170923 134170948     26
- 22   106   135   150    69.6%  chr6_GL000251v2_alt  +     1408511   1408533     23   What is chrom_alt?
- 21    39    61   150    95.7%  chr8                 +    66429131  66429153     23
- 20    15    34   150   100.0%  chr10                +    72875848  72875867     20
- 18    31    48   150   100.0%  chr16                +    47049679  47049696     18
-
-**** DONE MR-2400402 RBPJ ? g.26415496T>G
-EXT1 connu (hygen)
-Seqone
-- RBPJ faux sens avec clinique en faveur (retard psychomot et raccourissement doigts), score patho, mais hérité du père.
-*** TODO Vérifier variants non vus avec mon intérprétations
-SCHEDULED: <2024-08-26 lun.>
 *** WAIT Comprendre nouveaux filtres
   /Entered on/  [2024-05-21 mar. 11:04]
 *** PROJ Présenter les trous de Curagen aux bios
   /Entered on/  [2024-05-27 lun. 10:00]
-** DONE Relire newsletter
-CLOSED: [2024-06-12 mer. 14:17] SCHEDULED: <2024-06-12 mer.>
-  /Entered on/  [2024-06-12 mer. 14:08]
 * Projets
 ** Pseudo-gènes (ou régions répétées)
 :PROPERTIES:
@@ -146,7 +58,6 @@ Essai 1 [[denote:20240808T143800][jeudi  8 août 2024 14:38]]
 Version python faite
 Pas de multiple
 *** TODO Vérifier varians manqués sont couverts
-SCHEDULED: <2024-08-23 ven.>
 https://auragen.atlassian.net/wiki/spaces/~7120201ca2598be5ef4936a1110033f28f4fed/pages/1650720771/Projet+pseudog+nes
 [[denote:20240820T160451][mardi 20 août 2024 16:04]]: overlap dans variant call
 
@@ -159,11 +70,8 @@ CLOSED: [2024-08-23 ven. 18:39] SCHEDULED: <2024-08-23 ven.>
 *** DONE Vérifier doublons liftover : zones masquées
 CLOSED: [2024-08-23 ven. 18:39] SCHEDULED: <2024-08-23 ven.>
 *** TODO Vérifier doublons liftover : zones homologues
-SCHEDULED: <2024-08-23 ven.>
 *** TODO Supprimer doublons liftover
-SCHEDULED: <2024-08-23 ven.>
 *** TODO Vérifier absence overlap dans le BED
-SCHEDULED: <2024-08-23 ven.>
 *** TODO Porter script en hg38
   /Entered on/  [2024-05-21 mar. 11:07]
 *** KILL Regarder si on peut utiliser seulement Genecode: pas le temps
@@ -197,16 +105,16 @@ Fusionner notes
 - [[denote:20240718T153145][Thursday 18 July 2024 15:31]]
 - [[denote:20240719T093836][Friday 19 July 2024 09:38]]
 *** TODO Finir revue de [cite:@xie2024statistical] :stat:
-SCHEDULED: <2024-08-26 lun.>
+SCHEDULED: <2024-08-27 mar.>
   /Entered on/  [2024-07-22 Mon 17:17]
 *** TODO Bien le modèle stats [cite:@samocha2014framework] :stat:
-SCHEDULED: <2024-08-26 lun.>
+SCHEDULED: <2024-08-27 mar.>
 *** TODO Regarder quand des variants sont indépendants en terme de distance
-SCHEDULED: <2024-08-26 lun.>
+SCHEDULED: <2024-08-27 mar.>
 *** TODO Probabilité que des variants proches (probab conditionelle ?)
-SCHEDULED: <2024-08-26 lun.>
+SCHEDULED: <2024-08-27 mar.>
 *** TODO Revoir consentement decipher
-SCHEDULED: <2024-08-26 lun.>
+SCHEDULED: <2024-08-27 mar.>
 *** DONE Plan détaillé (gdocs) voir [[denote:20240730T094857][Tuesday 30 July 2024 09:48]]
 CLOSED: [2024-08-05 lun. 09:52] DEADLINE: <2024-08-02 ven.> SCHEDULED: <2024-08-01 Thu>
 *** KILL Retrouver heatmap Shendure avec score par variant
@@ -215,80 +123,6 @@ CLOSED: [2024-07-26 Fri 09:51] SCHEDULED: <2024-07-25 Thu>
 *** DONE Exemple de données identifiantes sur forum maladie rare
 CLOSED: [2024-07-24 Wed 17:47] SCHEDULED: <2024-07-24 Wed>
   /Entered on/  [2024-07-24 Wed 14:29]
-** Case report CHD7 :article:
-:PROPERTIES:
-:CATEGORY: chd7
-:END:
-*** DONE Mail Marine pour suivi Nanopore
-CLOSED: [2024-06-24 lun. 11:51] SCHEDULED: <2024-06-21 ven.>
-  /Entered on/  [2024-06-21 ven. 16:48]
-*** DONE Mail Dr Frédérique Bilan CHU Poitiers pour détails MLPA
-CLOSED: [2024-06-24 lun. 11:51] SCHEDULED: <2024-06-21 ven.>
-  /Entered on/  [2024-06-21 ven. 16:48]
-*** DONE Mail Xavier Nanopore
-CLOSED: [2024-06-24 lun. 14:49] SCHEDULED: <2024-06-24 lun.>
-  /Entered on/  [2024-06-24 lun. 14:48]
-*** DONE Demande à Pauline si prélèvement possible
-CLOSED: [2024-06-24 lun. 15:57] SCHEDULED: <2024-06-24 lun.>
-  /Entered on/  [2024-06-24 lun. 14:48]
-  Mail envoyé <2024-06-24 lun.>
-*** DONE Revoir avec Gaelle pour transfert ADN
-CLOSED: [2024-06-25 mar. 12:00] SCHEDULED: <2024-06-25 mar.>
-  /Entered on/  [2024-06-25 mar. 10:56]
-*** DONE Répondre MLPA
-CLOSED: [2024-06-25 mar. 12:00] SCHEDULED: <2024-06-25 mar.>
-  /Entered on/  [2024-06-25 mar. 10:56]
-*** WAIT Bon de demande + prescription + consentement (voir avec Pauline)
-  /Entered on/  [2024-06-25 mar. 13:56]
-*** DONE Vérifier absence dup liste CNV non filtré
-CLOSED: [2024-06-25 mar. 16:05] SCHEDULED: <2024-06-25 mar.>
-  /Entered on/  [2024-06-25 mar. 13:57]
-  Rien vu sur IGV probant
-  Attente quentin
-*** DONE Récupérer ADN parents
-CLOSED: [2024-07-02 mar. 12:08]
-  /Entered on/  [2024-06-25 mar. 13:57]
-*** DONE Envoi ADN biomnis (parent + cas index)
-CLOSED: [2024-08-08 jeu. 14:45] SCHEDULED: <2024-08-07 mer.>
-Discuté avec Pauline [2024-07-26 Fri] : ok pour envoi par Marine la semaine prochaine
-*** DONE Vérifier consentement pour envoi "recherche"
-CLOSED: [2024-07-26 Fri 13:58] SCHEDULED: <2024-07-26 Fri>
-  /Entered on/  [2024-07-26 Fri 13:31]
-** ARID4A
-:PROPERTIES:
-:CATEGORY: ARID4A
-:END:
-*** DONE Genematcher ARID4A
-CLOSED: [2024-07-24 Wed 17:47] SCHEDULED: <2024-07-24 Wed>
-Julien intéressé pour que cela reste à Grenoble car une de ses équipes travaille sur l’épigénétique.
-4 patients candidats sur auramatcher :
-2 faux sens en 620 et 621
-2 tronquants
-1 autre de novo moins évident à priori
-sur la fonction du domaine tuudor-knot où sont les résidus 620 et 621 et sur l’importance de cette région pour la reconnaissance de marques épigénétiques
-https://europepmc.org/article/MED/22247551
-  /Entered on/  [2024-07-24 Wed 10:37]
-*** DONE Genematcher : contacter Clementina
-CLOSED: [2024-07-30 Tue 10:34] SCHEDULED: <2024-07-30 Tue>
-*** DONE Mail GeneDx: attente relecture julien
-CLOSED: [2024-07-25 Thu 08:57] SCHEDULED: <2024-07-25 Thu>
-*** DONE Mail Marjolaine pour accord genematcher
-CLOSED: [2024-07-24 Wed 14:10] SCHEDULED: <2024-07-24 Wed>
-*** DONE Demander à Jérémie de contacter les coordonnateurs
-CLOSED: [2024-07-31 Wed 10:01] SCHEDULED: <2024-07-30 Tue>
-Pour proposer de les rendre
-  /Entered on/  [2024-07-30 Tue 11:02]
-*** TODO Regarder VAF autres variants (clones hématopoièse)
-SCHEDULED: <2024-08-26 lun.>
-  /Entered on/  [2024-07-30 Tue 17:53]
-*** WAIT Interpréter autres génomes ?
-SCHEDULED: <2024-08-26 lun.>
-Jérémie doit contacter les coordonnateurs
-SCHEDULED: <2024-08-07 Wed>
-  /Entered on/  [2024-07-31 Wed 10:02]
-*** WAIT Envoyer renseignement Dr Rio
-SCHEDULED: <2024-08-26 lun.>
-  /Entered on/  [2024-07-31 Wed 10:01]
 ** Génomes péruvien
 :PROPERTIES:
 :CATEGORY: pérou
@@ -296,25 +130,17 @@ SCHEDULED: <2024-08-26 lun.>
 *** TODO Biblio julien
 SCHEDULED: <2024-08-27 mar.>
 *** WAIT Biblio M1
-** Journée «dry» pour les internes
-:PROPERTIES:
-:CATEGORY: journéedry
-:END:
-*** DONE Mail Claire
-CLOSED: [2024-08-09 ven. 10:49] SCHEDULED: <2024-08-07 mer.>
-  /Entered on/  [2024-08-05 lun. 10:54]
-*** DONE Prévoir journée internes avec Virginie
-CLOSED: [2024-08-05 lun. 11:00] SCHEDULED: <2024-08-06 mar.>
-  /Entered on/  [2024-08-02 ven. 13:43]
-*** TODO Mails internes
-SCHEDULED: <2024-08-23 ven.>
-:PROPERTIES:
-:EFFORT:   0:30
-:END:
 ** Disomie uniparentale
 :PROPERTIES:
 :CATEGORY: upd
 :END:
+*** TODO Mail Benjamin : possible Prader Wili MR-2100884
+SCHEDULED: <2024-09-02 lun.>
+Clinique colle, FISH15q et caryo neg
+Génome rendu négatif
+Mettre Virginie en copie
+http://172.25.219.90:8080/DATA/MR-2100884/manual/cnv_curated/MR-2100884_chr15.jpg
+  /Entered on/  [2024-08-26 lun. 09:50]
 *** Achropuce 2024 :achropuce2024:
 **** DONE Mail Charles
 CLOSED: [2024-08-05 lun. 11:32] SCHEDULED: <2024-08-05 lun.>
@@ -322,7 +148,7 @@ CLOSED: [2024-08-05 lun. 11:32] SCHEDULED: <2024-08-05 lun.>
 CLOSED: [2024-08-05 lun. 16:12] SCHEDULED: <2024-08-05 lun.>
   /Entered on/  [2024-08-05 lun. 12:08]
 **** TODO Refaire le point avec Charles fin août
-SCHEDULED: <2024-08-26 lun.>
+SCHEDULED: <2024-08-29 jeu.>
   /Entered on/  [2024-08-05 lun. 13:46]
 **** HOLD Demander à Jérémie son avis
 :PROPERTIES:
@@ -353,16 +179,10 @@ SCHEDULED: <2024-08-27 mar.>
 
 -  MR-2101698: déjà un diag.
 - MR-2400845  chr14Joli mais clinique peu compatible (RCIU seule ?)
-*** DONE Interpréter dossiers mosaïque avec Lyon
-CLOSED: [2024-08-23 ven. 14:01] SCHEDULED: <2024-08-23 ven.>
-*** DONE Réfléchir explication du plot
-CLOSED: [2024-08-07 mer. 16:12] SCHEDULED: <2024-08-07 mer.>
-  /Entered on/  [2024-08-07 mer. 14:32]
 *** TODO Regarder autres cas pointés par Virgini<2024-08-08 jeu.>e
   /Entered on/  [2024-08-08 jeu. 10:43]
 *** TODO Biblio pour seuil de détection des mosaïque<2024-08-08 jeu.>s
   /Entered on/  [2024-08-08 jeu. 12:19]
-*** DONE Notes réunion avec Damien demain
 *** DONE réunion avec Damien
 CLOSED: [2024-08-22 jeu. 14:48] SCHEDULED: <2024-08-22 jeu.>
   /Entered on/  [2024-08-21 mer. 11:13]
@@ -413,6 +233,12 @@ CLOSED: [2024-08-23 ven. 17:02] SCHEDULED: <2024-08-23 ven.>
 *** DONE MR-2100056 voir avec Tristan (T13 partiell)
 CLOSED: [2024-08-23 ven. 16:46] SCHEDULED: <2024-08-23 ven.>
   /Entered on/  [2024-08-23 ven. 13:22]
+*** DONE Wiame : photos chromosomes
+CLOSED: [2024-08-26 lun. 17:41] SCHEDULED: <2024-08-26 lun. 16:30>
+  /Entered on/  [2024-08-26 lun. 11:15]
+*** TODO Discussion en RVI
+SCHEDULED: <2024-08-26 lun.> DEADLINE: <2024-08-30 ven. 14:30>
+
 * Divers
 ** KILL Compte admin sur DELL
 CLOSED: [2024-07-11 jeu. 10:07]
@@ -460,22 +286,6 @@ GBA1 -> GBA antérieur
 SCHEDULED: <2024-08-27 mar.>
   /Entered on/  [2024-06-11 mar. 10:30]
 
-** DONE Discussion Julien (Facebook)
-CLOSED: [2024-07-15 lun. 16:39] SCHEDULED: <2024-07-15 lun. 13:30>
-  /Entered on/  [2024-07-02 mar. 15:49]
-  Ne pas parler de couchdb, ni des internes de Lyon.
-  faire point Facebook +/- pseudogene
-
-  Interne lyon: 2 à 5 avec présentatino bioinfo virginie + moi le matin et solvathon l'après-midi
-** WAIT 30 variants
-:PROPERTIES:
-:LAST_REPEAT: [2024-08-19 lun. 14:32]
-:END:
-- State "DONE"       from "TODO"       [2024-08-19 lun. 14:32]
-- State "DONE"       from "TODO"       [2024-08-09 ven. 10:33]
-- State "DONE"       from "TODO"       [2024-08-08 jeu. 15:16]
-- State "DONE"       from "TODO"       [2024-08-08 jeu. 09:08]
-- State "DONE"       from "TODO"       [2024-08-07 mer. 15:54]
 ** WAIT Voir avec virginie del(5)(q35.3q35.3)(?177249773_?177257478)dn manqué
 MR-2400262
 Rendu par N. Chatron “à l’oeil” sur la tlinique
@@ -485,12 +295,6 @@ Suggestion de N. Chatron “sauver les CNVs de CNVnator inférieur au seuil mais
 MR-2304498-t
 Mis sur "variants manqué" confluence
   /Entered on/  [2024-07-19 Fri 12:15]
-** DONE Dossiers -t de test Lucas pour test envoi Hygen
-CLOSED: [2024-08-22 jeu. 15:47] SCHEDULED: <2024-08-22 jeu.>
-  /Entered on/  [2024-08-22 jeu. 10:18]
-- MR-2400696-t en neg + commentaire dup 1q21 PIEV connue
-- MR-2400905-t en neg
-- MR-2400795-t en neg
 * Formation
 :PROPERTIES:
 :CATEGORY: formation
@@ -518,10 +322,6 @@ SCHEDULED: <2024-09-05 jeu.>
 On peut avoir plusieures lignes pour un variant : présenter un cas (découvert sur mais MR-2305018 pas assez propre (VAF=28=))
 Attention: pour clinvar, on utilise la position donc on peut flagger sur le mauvais gènes...
 Mettre à jour https://auragen.atlassian.net/wiki/spaces/~7120201ca2598be5ef4936a1110033f28f4fed/pages/1524695047/Questions
-* Kalilab
-:PROPERTIES:
-:CATEGORY: kalilab
-:END:
 * Réunions
 :PROPERTIES:
 :CATEGORY: réunion
@@ -750,6 +550,7 @@ Véronique : manque des points de cassure ??
 NC_000008.11:g.60859596_60862961inv
 NC_000008.11:g.60862561_60863010inv
 NC_000008.11:g.60862564_60866381del
+
 *** DONE MR-2400512 : courrier VOUS ZFP62 à faire
 CLOSED: [2024-08-05 lun. 15:38] SCHEDULED: <2024-08-05 lun.>
   /Entered on/  [2024-07-04 jeu. 11:03]
@@ -816,29 +617,28 @@ CLOSED: [2024-08-09 ven. 17:56] SCHEDULED: <2024-08-09 ven.>
 - MR-2400087 : courrier préparé sur Hygen
 - MR-2401144 : à valider sur hygen
 - MR-2303393 : 2e lecture (beaucoup de bruit j'ai trouvé...), lu suite auramatcher ZBTB10
-** WAIT MR-2300938: Attente Jérémie
+*** WAIT MR-2300938: Attente Jérémie
   /Entered on/  [2024-07-25 Thu 11:35]
 Suite à auramatcher pour http://172.25.219.90:8080/aurapport/app/#/main/summary?case=MR-2401008-t
 TNRC6B diag ?
 - clases 4 TNRC6B
 - VOUS Faux-sens BCORL1 (DI + TSA + dysmorpho, sévérité variable). Mitzli : score contrdaction, Grantham intermédaire
 
-* Interprétation génomes/Montpellier
-** DONE MR-2401144 : rendu négatif, envoyé hygen
+*** DONE MR-2401144 : rendu négatif, envoyé hygen
 CLOSED: [2024-08-01 Thu 09:22] SCHEDULED: <2024-08-01 Thu>
 ETV2 seulementd rapporté dans 1 famille (4 foetus non viable) HTZC
 SNV,CNV, SV rien d’intéressant
   /Entered on/  [2024-07-26 Fri 09:48]
-** WAIT MR-2200036 seqone à lire
+*** WAIT MR-2200036 seqone à lire
 Seqone : 2e variant PMM2, TOR1A -> rien
 Dup du chr19: seul gène de CFC candidat mais clinique ne colle pas
 
   /Entered on/  [2024-08-20 mar. 13:59]
-** TODO MR-2200051
-SCHEDULED: <2024-08-26 lun.>
-  /Entered on/  [2024-08-20 mar. 14:02]
-** TODO [#A] MR-2401702: ARF1 classe 4. Faire CR
+*** TODO MR-2200051
 SCHEDULED: <2024-08-27 mar.>
+  /Entered on/  [2024-08-20 mar. 14:02]
+*** DONE [#A] MR-2401702: ARF1 classe 4. Faire CR
+CLOSED: [2024-08-26 lun. 14:05] SCHEDULED: <2024-08-26 lun.>
 :PROPERTIES:
 :EFFORT:   1:00
 :END:

@@ -12,6 +12,30 @@ Ou régions répétées
 - proposer une annotation dans la limite de ce qu'on peut faire sur ce genre de région
 - liste de pseudogene connue +++
 
+** [cite:@steyaert2023systematic]
+définit les régions homologues en fusionnant
+- les gènes codant ayant des pseudogènes
+- les régions bien couvertes avec une qualité d'alignement = 0 en utilisant 250 exomes
+
+Données 1000 genomes 30x https://www.internationalgenome.org/data-portal/data-collection/30x-grch38 = 3200 échantillons
+
+*** Problèmes
+- en hg19 et ne donne pas le code pour les générer
+- les filtres après l'appel de variant utilisent la cohorte
+- les régions homologues sont définies avec la cohorte (régions bien couvertes mais avec une mauvaise qualité d'alignement)
+- la détection de délétions ou gène conversion utilise toute la cohorte
+- exome seul (en génome on aura beaucoup de régions intergéniques...)
+
+*** Solutions
+Les BED ont déjà été lifté  https://github.com/Ale6prog/Homologous_hg38
+Staevert travaille sur la génération d'une version en hg38
+
+** Annotation pseudogene
+*** Genecode
+[[https://www.gencodegenes.org/human/][Genecode]] propose une annotation par HAVANA des pseudogene dans l'annotation principale (manuel donc idéal)
+En bonus, les pseudogene prédits par 2 pipeline mais pas dans havannah
+*** Pseudogene.org
+Contient en plus l'activité
 * Objectif
 :PROPERTIES:
 :CUSTOM_ID: h:5e2833d6-77eb-4b94-b82f-0b8f36472af7
@@ -21,34 +45,48 @@ Ou régions répétées
   - +/- recoder en python
 * Réunions
 - [[denote:20240819T145456][lundi 19 août 2024 14:54]]
-* Notes
-[cite:@steyaert2023systematic] définit les régions homologues en fusionnant
-- les gènes codant ayant des pseudogènes
-- les régions bien couvertes avec une qualité d'alignement = 0 en utilisant 250 exomes
-
-Données 1000 genomes 30x https://www.internationalgenome.org/data-portal/data-collection/30x-grch38 = 3200 échantillons
-
-** Problèmes avec [cite:@steyaert2023systematic] :
-- en hg19 et ne donne pas le code pour les générer
-- les filtres après l'appel de variant utilisent la cohorte
-- les régions homologues sont définies avec la cohorte (régions bien couvertes mais avec une mauvaise qualité d'alignement)
-- la détection de délétions ou gène conversion utilise toute la cohorte
-- exome seul (en génome on aura beaucoup de régions intergéniques...)
-* Pistes
-- liftover directement
-- se limiter au pseudogènes ENCODE ?
-* Données fournies
-Supplementary Data 23 : régions où est fait l'appel de variant
-Supplementary Data 24 : régions d'où sont extraites les reads
-Supplementary Data 25 : régions à masquer dans le génome
-Supplementary Data 26 : sous-régions pour délétion et gene conversion
 * [[denote:20240716T104934][Bibliographie pseudogène]]
-* Annotation pseudogene
-** Genecode
-[[https://www.gencodegenes.org/human/][Genecode]] propose une annotation par HAVANA des pseudogene dans l'annotation principale (manuel donc idéal)
-En bonus, les pseudogene prédits par 2 pipeline mais pas dans havannah
-** Pseudogene.org
-Contient en plus l'activité
+* BED nécessaire
+Chameleolyser a besoin de
+- d'un génome de référence
+- d'intervalles pour faire l'appel de variants (All.forvarcall.noalt.chr.bed)
+- d'intervalles pour extraire les reads à remapper
+/All.forextraction..noalt.chr.bed";
+- d'intervalles ?? All.homologousexons..noalt.chr.bed";
+
+On prend tous les gènes (pas seulement OMIM morbid) et avec ALT dans le génome
+
+AllSDs.noalt.chr.bed";
+AllToMapOnToOther.chr.txt.gz";
+MappedSDs.chr.txt";
+PosToRegionID.chr.txt.gz : contient une liste de position pour les gènes et les pseudogêe (pas un intervalle...)
+
+HPs.noalt.chr.bed";
+SitesToExclude.noalt.chr.bed";
+CohortAlleleFreq.chr.txt";
+
+* 1. Liftover des BEDs
+** On vérifie l'absence de doublons
+*** DONE All.forvarcall.chr.hg38.bed
+CLOSED: [2024-08-26 lun. 14:28]
+│ chr8 ┆ 21774293 ┆ 21775667 │ intergénique. erreur de lifover. Correspend à SHH en hg19 (liftover inversc) mais qui n'est pas couvert dans les beds de base...
+│ chr10 ┆ 50232583 ┆ 50235133 │ exon 6 et 7 de ASAH2, couvert en hg19 : ok
+│ chr12 ┆ 133040748 ┆ 133042117 │ exon 2 ei 3 ZNF84, couvert en hg19: ok
+│ chrX ┆ 52369399 ┆ 52371278 │ exon 2 et 3 XAGE2, couvert en hg19 : ok
+*** DONE All.forextraction.chr.hg38.bed
+CLOSED: [2024-08-26 lun. 14:28]
+idem forvarcall sans le chr8
+*** All.homologousexons.chr.hg38.bed
+*** DONE All.formasking.chr.hg38.bed
+CLOSED: [2024-08-26 lun. 14:28]
+Pas de doublons
+
+** pas de doublons ni d'overlap.
+On veut que le BED contienne la liste de variants manqués en génome
+
+GABA1 a 2 overlap en hg19 pour l'appel de variants donc on le tolère.
+![Intervalles pour l'appels de variants en hg19 pour
+GABA1]./docs/gaba1_forvarcall.png)
 * Validation
 ** GIAB
 [cite:@steyaert2023systematic]
