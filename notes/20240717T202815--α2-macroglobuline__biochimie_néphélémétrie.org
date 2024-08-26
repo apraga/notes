@@ -5,6 +5,7 @@
 
 Transporte hormones et enzymes
 Inhibe protéine du complément et hémostase, sérien, cysténie... -protéinase
-Augmenté : syndrome néphrotique, cirrhose, diabète
-Diminué : hyperfibironlyse, septicémie, IHC, chiriurgie lourde, pancréatite aigüe
+
+Augmenté : [[denote:20240827T000035][Syndrome néphrotique]], cirrhose, diabète
+Diminué : hyperfibrinolyse, septicémie, IHC, chiriurgie lourde, pancréatite aigüe
 Normes 1.3-3g/L sérum

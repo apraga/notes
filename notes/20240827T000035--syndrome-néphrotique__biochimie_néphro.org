@@ -1,0 +1,20 @@
+#+title:      Syndrome néphrotique
+#+date:       [2024-08-27 Tue 00:00]
+#+filetags:   :biochimie:néphro:
+#+identifier: 20240827T000035
+
+* Physiopath
+1. Perte importante d'albumine dans les urines (anomalie de la membrane basale glomérulaire)
+   - > 1g/24 et > 80% albumine (sélective)
+2. Diminution de l'albumine et donc de protéines plasmatiqus
+3. Diminution de la pression oncotique -> œdèmes ( le liquide va des vaisseaux en interstitiel )
+4. Le corps tente de compenser en produisant de protéines de poids moléculaire > albumine
+   - lipides
+   - [[denote:20240717T202815][α2 macroglobuline]]
+5. Mais la perte de liquide en interstiel -> hypovolémie -> réabsorption de sodium ( et donc d'eau )
+   - au final, c'est une solution isotonique qui est réabsorbée
+   - cela entretient 3.
+À noter la fuite urinaire de facteurs de coagulation (anitithrombine)
+À noter une dylipidémie (diminution de la clairance des VLDL, diminution de l'expression de l'activité lipase (extra)hépatique)
+   
+>

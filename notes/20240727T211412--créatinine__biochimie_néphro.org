@@ -6,7 +6,7 @@
 
 * Production
 - catabolisme de la *créatine du muscle squelettique*
-- peu de varation chez un même sujet
+- peu de variation chez un même sujet
 
 * Élimination
  - *filtration glomérulaire*
@@ -19,13 +19,12 @@
 - *masse musculaire*
   - musculation : augmentation
   - amputation, myopathie : diminution
-  - maladie chronique, inflammation, neuromusculaire : iminution
-- régime : végération -> diminution, carné -> augmentation
+  - maladie chronique, inflammation, neuromusculaire : diminution
+- régime : végétarien -> diminution, carné -> augmentation
 ** Élimination
 - IR: augmentation sécrétion tubulaire + digestive -> diminution
 - médicaments : diminution sécrétion tubulaire -> augmentation
-Pour excrétion dans les urine, la /créatine/ est tansformée en
-créatinine
+Pour excrétion dans les urine, la /créatine/ est transformée en créatinine
 
 * Relation DFG-créatinine sérique
 - inversement proportionnelle donc une diminution du DFG se traduit pas une très légère baisse de la créatinine -> *attention*
