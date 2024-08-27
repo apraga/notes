@@ -22,3 +22,11 @@ Idées :
 - si on a suffisamment de patient, les variants rares vont être "dilués". On s'attend à 50-60 000 génomes
 - on peut avoir une idée du nombre de SNP identifiants (25)
 - et du caractère identifiant des phénotypes (voir la notion d'entropie par [cite:@erlich2014])
+
+* TODO Regarder quand des variants sont indépendants en terme de distance
+* TODO Probabilité que des variants proches (probab conditionelle ?)
+* TODO Revoir consentement decipher
+
+
+* WAIT Contact BM Knopper
+* WAIT Contact Heidi Howard (ESHGH, chaire éthique)

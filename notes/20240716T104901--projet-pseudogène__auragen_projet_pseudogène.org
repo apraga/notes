@@ -88,8 +88,8 @@ GABA1 a 2 overlap en hg19 pour l'appel de variants donc on le tolère.
 ![Intervalles pour l'appels de variants en hg19 pour
 GABA1]./docs/gaba1_forvarcall.png)
 * Validation
-** GIAB
-[cite:@steyaert2023systematic]
+1. NA12878 pour voir le bruit
+2. GIAB [cite:@steyaert2023systematic]
 
 ** Patient test Auragen
 *** MR-24000544 IKBKG chrX g.154560563_154560564del
