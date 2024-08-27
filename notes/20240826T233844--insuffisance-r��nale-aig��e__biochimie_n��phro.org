@@ -9,6 +9,8 @@ Réponse du rein : diminution filtration et augmentation de la réabsorption tub
 - riche en urée
 - pauvre en Na+, riche en K+
 
-Organique : c'est l'inverse
-- [Na+]_urinaire / [K+]_urinaire > 1
-- urée_urinaire/urée_plasm
+| Fonctionnelle                  | Organique |       |
+|--------------------------------+-----------+-------|
+| [Na+]_urinaire / [K+]_urinaire | < 1       | > 1   |
+| urée_urinaire/urée_plasm       | > 100     | < 100 |
+|                                |           |       |

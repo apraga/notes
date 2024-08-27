@@ -1,0 +1,16 @@
+#+title:      Drépanocytose
+#+date:       [2024-08-27 Tue 21:36]
+#+filetags:   :hémato:
+#+identifier: 20240827T213630
+
+Mutation homozygote gène β (Modification codon 6 de l'ARNm)
+Formation d'une hémoglobine anormale (HbS) ( voir [[denote:20240813T152959::#h:f5995274-fe14-4189-a16e-594f841725bf][Maladies du globule rouge::Intro]]  )
+Stress, froid, fièvre: polymérisation -> GR en forme de faucille
+Ils sont
+- plus rigides -> crises vasoocclusives
+- plus fragile -> anémie hémolytique
+
+Attention : elle peut être associée à une β-thalassémie
+- risque plus élevé de [[denote:20240819T180254][déficit en G6PD]]
+
+Hétérozygote = asymptomatiques``

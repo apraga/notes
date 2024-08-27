@@ -16,5 +16,13 @@
    - cela entretient 3.
 À noter la fuite urinaire de facteurs de coagulation (anitithrombine)
 À noter une dylipidémie (diminution de la clairance des VLDL, diminution de l'expression de l'activité lipase (extra)hépatique)
-   
->
+* Diagnostic
+Découle de la physiopath
+- Protéinurie > 3g/24h
+- Protéines sériques < 60g/L avec albuminémie < 30g/L
+
+Confirmation avec[[denote:20240717T201002][électrophorèse des protéines sériques]] (caractère sélectif de l'albumine)
+- soit > 80% albumine
+- soit en majorité d'albumine + autres protéines
+
+Pur : pas d'hématurie, pas d'IR

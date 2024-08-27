@@ -1,0 +1,33 @@
+#+title:      Hypocalcémie
+#+date:       [2024-08-27 Tue 20:37]
+#+filetags:   :biochimie:
+#+identifier: 20240827T203728
+
+
+#+BEGIN_SRC dot :file images/hypocalcémie.png :exports results
+digraph {
+node[shape=box];
+alpha[label = "1α-hydroxylase"]
+Hypocalcémie -> "Augmente PTH" -> { "Résorbtion os"; "Réabsorption rénale"; alpha};
+alpha -> dummy;
+{rank = same; "25(OH)D";dummy;calcitriol}
+"25(OH)D" -> dummy[arrowhead=none];
+dummy -> calcitriol -> "Réabsorption digestive";
+dummy[shape=point;width=0]
+}
+#+END_SRC
+* Clinique
+Variable
+- neuromusculaire : tétanie, paresthéie, main d'accoucher
+- cardiaque : allongement QT, insuffisance cardiaque
+- convulsion, cataractes, calcification intracérébrale
+* Causes
+** PTH non augmentée (inadaptée) : hypoparathyroïdie
+- acquise: après chirurgie du cou, infiltratio glandies parathyroœdies (Wilson, hémochromatose..), auto-immune, déplétion magnésium...
+- innée :
+  - DiGeorge
+  - mutation gain de fonction CaSR : hypocalcémie autosomique dominante = hypocalcémie PTH normale/basse avec hypercalciurie
+** Extra-parathyroidienne: résistance PTH
+- pseudohypoparathyroïdies (défaut voie signalisation voir [[PTHR1]] )
+- défaut d'action vitamine D (insuf. rénale, carence vitamine D profonde, rachitisme vitamino-dépendent)
+- accrétion osseuse majeure ("hungry bone syndrome")
