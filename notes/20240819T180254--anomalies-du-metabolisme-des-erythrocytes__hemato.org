@@ -9,4 +9,4 @@
 * Métabolisme des nucléotides
 - Pyrimidine 5'
 *  Pathway pentose phosphate
-- G6PD
+- G6PD: récessif lié à l'X

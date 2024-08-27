@@ -6,10 +6,13 @@
 Définition : anomalie génétique avec diminution/absence synthèse de
 chaine alpha ou beta globine
 
+β-thalassémie : n'affecte as les chaïnes embryonnaire (δ) ou fœtale (γ) -> début dans la petite enfancie (contrairement à l'α-thalassémie qui est anténatale)
+
 * β-thalassémie
-Défaut production β-globine
+Défaut production β-globine donc de l'hémoglobine dans un GR : microcytose, hypochromie
 - anémie sévère (pas d’hémoglobine)
-- dysérythropoïse : excès α-globine -> mort prématurée
+- dysérythropoïse : excès α-globine qui vont précipiter -> anémie hémolytique arégénérative, hypersplénisme
+
 
 Gène HBB (chr 11). AR donc en général
 - hétérozygote : peu sévère

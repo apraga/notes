@@ -28,6 +28,7 @@
   - TP diminué
   - fibrinogène diminué
   - marqueurs de dégradation de la fibrine (D-dimères...)
+Attention au piège d'un fibrinogène faussement normal: en cas d'inflammation, il serait augmentç....
 * Traitement
 - Étiologie++
 - Éviter les CCP (traces de facteurs vitamineK dépendant)

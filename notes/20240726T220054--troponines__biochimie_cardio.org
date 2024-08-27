@@ -25,3 +25,5 @@ Faux positif si facteur rhumatoïde
   - relarguage non équimolaire
   - cinétique d'élimination non identique
 - aucune troponine ultra-sensible n'est supérieur aux autres
+* IR
+Aumgenté mais constant dans le temps car élimination rénale (surtour la troponine cardiaque)

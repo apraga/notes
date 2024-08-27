@@ -11,11 +11,11 @@ Structure : chaines de globine (structure en globe) = protéine -> dans une poch
 - Hémoglobinopathies = anomalies de globine (chaine protéqiue)
 À différencier des maladies de l’hème (porphyrie)
 
-3 hémoglobines physiologiques
-- 2 chaines α-globine, 2 chaines βglobine chez adulte (HbA)
-- hémoglobine foetale  = 2α, 2γ, qui sera remplacée par HbA (HbF)
-- secondaire = , 2α et 2 δ  (HbA2)
-
+2 chaines globine de type α et  2 chaines de type β
+3 hémoglobines physiologiques chez l'adulte
+- HbA > 95% =  α2 β2
+- HbA_2 < 3.5% = α2 δ2
+- HbF < 1% (fœtale) = α2 γ2
 Génétique :
 Au total : 2x{α1 et α2} et 2xβ en temps normal sur les 2 chromosome
 
