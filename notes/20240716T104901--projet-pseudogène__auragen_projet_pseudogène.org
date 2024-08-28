@@ -4,60 +4,60 @@
 #+identifier: 20240716T104901
 
 
-Ou régions répétées
-
 * Contexte
 - on couvre 98% (régions codantes) mais les 2% sont vraiment un "trou"
 - sera un des défauts principaux d'auragen après curagen v2
 - proposer une annotation dans la limite de ce qu'on peut faire sur ce genre de région
 - liste de pseudogene connue +++
+[[denote:20240828T093200][Annotation pseudogene]]
 
-** [cite:@steyaert2023systematic]
+** État de l'art
+2 articles dont le seul faisable est [cite:@steyaert2023systematic]
+Voir aussi [[denote:20240716T104934][Bibliographie pseudogène]]
+
+*** [cite:@steyaert2023systematic]
+Ce qui est fourni
+- les intervalles nécessaires en hg19  https://github.com/Genome-Bioinformatics-RadboudUMC/ChameleolyserBEDs
+- le code pour l'appel de variant https://github.com/Genome-Bioinformatics-RadboudUMC/Chameleolyser
+Ce qui n'est pas fourni
+- le code pour générer les intervalles
+- l'appel des délétions homozygotes et des copies d'une région à une autre
+Ces 2 points nécessitent l'utilisation d'une cohorte... Le second point est détaillé
+
+Limites de leur approche
+- données d'exome (en génome on aura beaucoup de régions intergéniques...)
+- en hg19
+
+Pour le portage en hg38, un étudiant en master a fait un liftover (sans préciser les paramètres)
+Steyaert travaille sur une vertison «propre» ds code en hg38
+
+* Objectifs du stage
+Faire tourner le code en hg38
+- en convertissant les intervalles en hg38 ou en vérifiant https://github.com/Ale6prog/Homologous_hg38
+- tester sur NA12878
+- vérifier qu'on rattrape bien les cas manqués
+
+* Algorithme
 définit les régions homologues en fusionnant
 - les gènes codant ayant des pseudogènes
 - les régions bien couvertes avec une qualité d'alignement = 0 en utilisant 250 exomes
 
-Données 1000 genomes 30x https://www.internationalgenome.org/data-portal/data-collection/30x-grch38 = 3200 échantillons
-
-*** Problèmes
-- en hg19 et ne donne pas le code pour les générer
-- les filtres après l'appel de variant utilisent la cohorte
-- les régions homologues sont définies avec la cohorte (régions bien couvertes mais avec une mauvaise qualité d'alignement)
-- la détection de délétions ou gène conversion utilise toute la cohorte
-- exome seul (en génome on aura beaucoup de régions intergéniques...)
-
-*** Solutions
-Les BED ont déjà été lifté  https://github.com/Ale6prog/Homologous_hg38
-Staevert travaille sur la génération d'une version en hg38
-
-** Annotation pseudogene
-*** Genecode
-[[https://www.gencodegenes.org/human/][Genecode]] propose une annotation par HAVANA des pseudogene dans l'annotation principale (manuel donc idéal)
-En bonus, les pseudogene prédits par 2 pipeline mais pas dans havannah
-*** Pseudogene.org
-Contient en plus l'activité
-* Objectif
-:PROPERTIES:
-:CUSTOM_ID: h:5e2833d6-77eb-4b94-b82f-0b8f36472af7
-:END:
-- Porter [[https://github.com/Genome-Bioinformatics-RadboudUMC/Chameleolyser][Chameleolyser]]  [cite:@steyaert2023systematic] en
-  - hg19 -> hg38  [[https://github.com/Genome-Bioinformatics-RadboudUMC/ChameleolyserBEDs][fichiers BEDs]]
-  - +/- recoder en python
-* Réunions
+* Réunions :noexport:
 - [[denote:20240819T145456][lundi 19 août 2024 14:54]]
-* [[denote:20240716T104934][Bibliographie pseudogène]]
 * BED nécessaire
-Chameleolyser a besoin de
-- d'un génome de référence
-- d'intervalles pour faire l'appel de variants (All.forvarcall.noalt.chr.bed)
-- d'intervalles pour extraire les reads à remapper
-/All.forextraction..noalt.chr.bed";
-- d'intervalles ?? All.homologousexons..noalt.chr.bed";
-
 On prend tous les gènes (pas seulement OMIM morbid) et avec ALT dans le génome
 
-AllSDs.noalt.chr.bed";
-AllToMapOnToOther.chr.txt.gz";
+Chameleolyser a besoin de
+- d'un génome de référence
+- de régions pour faire l'appel de variants (All.forvarcall.chr.bed) i.e régions homologues (exoniqes)
+- des régions à masquer dans le génome pour l'appel de variants (All.formasking.chr.bed). Parmi les régions utilisées pour l'appel de variant, on en choisit une parmi la liste des régions homologues.
+- de régions pour extraire les reads à remapper (All.forextraction.chr.bed). Elle contient forcément les 2 régions ci-dessus.
+- de régions définissant les exons seuls sur ces régions homologues (All.homologousexons.chr.bed) -> ne semble pas utilisé...
+
+[[file:images/auragen/chameleolyzer-bed.png]]
+Mais aussi
+AllSDs.noalt.chr.bed
+AllToMapOnToOther.chr.txt.gz
 MappedSDs.chr.txt";
 PosToRegionID.chr.txt.gz : contient une liste de position pour les gènes et les pseudogêe (pas un intervalle...)
 
@@ -66,6 +66,10 @@ SitesToExclude.noalt.chr.bed";
 CohortAlleleFreq.chr.txt";
 
 * 1. Liftover des BEDs
+Contrôle
+- absence de doublons avant liftover
+- absence de doublons après liftover
+- toutes les régions à masquer doivent être contenues dans
 ** On vérifie l'absence de doublons
 *** DONE All.forvarcall.chr.hg38.bed
 CLOSED: [2024-08-26 lun. 14:28]
