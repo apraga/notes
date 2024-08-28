@@ -16,13 +16,14 @@
 Voir aussi [[denote:20240716T104934][Bibliographie pseudogène]]
 
 *** [cite:@steyaert2023systematic]
-Ce qui est fourni
+
+Ce qui est fourni est valable en hg19 seulement. On a :
 - les intervalles nécessaires en hg19  https://github.com/Genome-Bioinformatics-RadboudUMC/ChameleolyserBEDs
 - le code pour l'appel de variant https://github.com/Genome-Bioinformatics-RadboudUMC/Chameleolyser
 Ce qui n'est pas fourni
 - le code pour générer les intervalles
 - l'appel des délétions homozygotes et des copies d'une région à une autre
-Ces 2 points nécessitent l'utilisation d'une cohorte... Le second point est détaillé
+Ces 2 points nécessitent l'utilisation d'une cohorte... Le second point est détaillé dans les méthodes de l'article correspondant
 
 Limites de leur approche
 - données d'exome (en génome on aura beaucoup de régions intergéniques...)
@@ -38,10 +39,16 @@ Faire tourner le code en hg38
 - vérifier qu'on rattrape bien les cas manqués
 
 * Algorithme
+** Général
 définit les régions homologues en fusionnant
 - les gènes codant ayant des pseudogènes
 - les régions bien couvertes avec une qualité d'alignement = 0 en utilisant 250 exomes
-
+** Étapes
+(Shell)
+1. Extraction des reads du BAM sur les régions d'intérêt (All.forextraction.chr.bed)
+2. Appel de variant sur ce BAM (gatk + lofreq)
+3. Le BAM de l'étapee 1. est converti en FASTQ
+4. Alignement + appel de variant (gatk + lofreq)
 * Réunions :noexport:
 - [[denote:20240819T145456][lundi 19 août 2024 14:54]]
 * BED nécessaire

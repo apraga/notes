@@ -12,15 +12,16 @@
 - Lancefield : classification selon un composé de la paroi bactérienne (polyoside C) avec mise en évidence de l'antigène par agglutination.
 
 En première approximation :
-
-- α-hémolyse = non-groupable
-  - /pneumoniae/ résistance par chimérisme PLP (acquis)
-  - autres anginosus, mitis, sanguinis, bovis, salivarius, mutans
-- β-hémolyse = groupable. Les plus importants
-  - Groupe A = S. pyogenes.
-  - Groupe B = S. agalactiae
-  - C : /dysagalactia/ (rarement /equi/)
-  - G : /dysgalactia/, /canis/
+** α-hémolyse
+non-groupable
+ - /pneumoniae/ résistance par chimérisme PLP (acquis)
+ - autres anginosus, mitis, sanguinis, bovis, salivarius, mutans
+** β-hémolyse
+  = groupable. Les plus importants
+ - Groupe A = S. pyogenes.
+ - Groupe B = S. agalactiae
+ - C : /dysagalactia/ (rarement /equi/)
+ - G : /dysgalactia/, /canis/
 
 /Note/: certaines sous-espèce de Lancefield peuvente être
 alpha-hémolytique
@@ -47,43 +48,6 @@ D. ampC céphalosporinase (TODO vérifier)
    - détecté céfoxitine
    - oxacillinase
    - sensible β-lactamase
-
-* Streptococcocus pyogenes
-- Cocci gram+ en chaînettes, capsulé, non sporulé, immobile
-- Réservoire pharyngé.
-- Transmission = aérienne, contact plaie infectée, accouchement.
-
-** Facteurs de pathogénicité
-résistance à la phacogytose
-  - protéine M
-  - encapsulation
-
-** Facteurs de virulence
-  - enzyme :hyluronidase, stroplysine O et S (favorisent l'invasion tissulaire)
-  - exotoxine : activation et prolifération d'une sous population lymphocytes T -> cytokine proinflammatoires
-  - Streptolysine = hémolyse β-complète
-  - toxine érythrogène : hypersensibilité retardée à la scarlatine
-
-** Habitat
-- Strictement humaine, surtout pharyngé +/- peau, vagin surtout
-- Pyogène = responsiable d'infections suppurées
-
-** Clinique
- - non invasive = *angine* érythémateuse/érythémato-pultacée, otite moyenne aigüe de l'enfant, scalratine, infection cutanée
- - invasive : cutanée sévère (fasciite nécrosante), septicémie, choc toxique streptococcique
- - complications post-streptococciques (rare) = immunologique :
-   - rhumatisme articulaire, glomérulonéphrite aigüe, érythème noueux
-
-** Diagnostic
-- bactérie exigeante -> gélose sang +/- ANC (inhibe Gram-)
-- β-hémolyse
-- Résistance optochine, sensbile bacitracine
-- Catalase -, oxydase -
-
-** Sensibilité, résistance
-- β-lactamine : sensible
-- macrolide : sauvage sensible, résistance par mécanisme d'efflux,
-  modiifcation cible ARN23S
 
 * Strepto agalactiae
 -Pathogène n.1 des *infections materno-foetales* des pays développement.
