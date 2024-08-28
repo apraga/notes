@@ -1,49 +1,29 @@
 #+title: Diarrhées
 #+filetags: :bactério:viro:
-* Bactéries
-** Clostridium difficile
-- Bacille gram positif à bout carré, spores subterminales
-- Anaérobie strict
-- 1re cause diarrhées associées aux soins
-
-*** Préanaytique
-- seulement si diarrhée et >= 3 ans
-*** Pathologies associée
-- diarrhées : 10% nosocomiale, 10-25% post-antibio
-- colite pseudo-membraneuse 95%
-- complications: mégacôlin toxiuqe, perforation, choc toxique
-- portage *asymptomatique*: 20-70% *nourrissons jusque 3 ans*, adulte <
-  3%
-*** Facteur de virulence
-- *toxines* A, B, adhésien, enzymes, spores
-
-*** Diagnostic
-- diarrhée + toxine selles ou souche toxinogène ou colite pseudo-membraneuse
-
-- référence (fastidieux) = culture toxigénique, test de toxicité en
-  culture
-- glutamate déshydogénase (GDF) par immuno-enzymatique = très bonne VPN => souche toxigène ou non
-- recherche des toxine A et B: PCR (sensible mais peu spécifique) ou immunoenzymatique (spécifique)
-  => *(GDH + ou PCR+) et toxine immuno + = diag*
-
-*** Post-analytique
-- pas de contrôle
-- 6 jours redondance
-
-*** Traitement
-- arrêt antibio si possible, éviter ralentisseur transit, correction hydroélectrique
-- *pas d'antibiogramme* = sensible métronidazole + vanco
-- hygène = *contact*, isolement, lavage *mécanique* des mains, *Javel*.
-  Isolement levé 48h après arrêt des diarrhées
+> 80% sont virales
+* Mécanisme
+** Invasif
+*** Destruction des villosités intestinales = syndrome dysentérique
+Selles nombreuses, afécales, glaireuses, mucopurulenest
+- shigella dysenteriae (toxine) ou non dysentreiea :
+- E. coli entéro-invasif ou entérohémorragique (pour le second : exotoxines [shiga-lik])
+*** Sans destruction (invasion seule) = syndrome gastro-entérique
+- Salmonella
+- [[denote:20240515T224650][Campylobacter]] (entérotoxines)
+- E. coli entéropathogènes
+** Toxine
+- rotavirus
+- staph aureus
+- E. cole entéro-toxinogêes on -agrégant,
+- [[denote:20240828T230503][Clostridium difficile]]
 * Virale
-GEA Adulte : norovirus > rotavirus > adénovirus > astrovirus
+oGEA Adulte : norovirus > rotavirus > adénovirus > astrovirus
 
-*** Rotavirus
+** Rotavirus
 - 1ere cause de gastroentérite aigüe chez l'*enfant* < 5 ans. Touche également adulte (ID, voyageur, contact enfant)
 - Épidémies hivernales 6-24mois
 - pas de vaccin
-
-*** Norovirus
+** Norovirus
 :PROPERTIES:
 :CUSTOM_ID: norovirus-1
 :END:
@@ -57,6 +37,7 @@ GEA Adulte : norovirus > rotavirus > adénovirus > astrovirus
 - précaution contact (gants, SHA, javel), arrêt maladie 48-72H après symptômes
 - vaccin: 6semaine-6mois de vie
 
-*** Autre
+** Autre
+Entérovirus mais il y a d'autres symptômes (angine, méningite)
 - Astrovirus : GEA modérée, tous les âges
 - Adénovirus (40-41) : test rapide/RT-pcr, ttt sympto
