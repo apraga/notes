@@ -1,0 +1,53 @@
+#+title:      Mécanismes de résistance aux antibiotiques
+#+date:       [2024-08-28 mer. 18:45]
+#+filetags:   :bactério:
+#+identifier: 20240828T184535
+
+
+- enzymatique
+- modification de la cible
+- impermeabilité
+- efflux
+
+[[./images/microbiologie/antibio-resistance.png]]
+Résistance naturelle
+- colistine: bactérie gram+
+- vancomycine : bactérie gram -
+- aminoside: anaérobie
+
+* Synthèse paroi
+1. β-lactamase
+   - Les β-lactamine inhibent la synthèse de la paroi bactérienne (peptidoglycane)
+     - se fixent sur les PLP (protéine de liaison des pénicillines)
+     - mécanisme de compétition
+   - toutes les β-lactamines ont un cycle commun (β-lactame)
+   - les β-lactamase vont hydrolyse ce cycle et désactiver les
+     β-lactamines
+
+2. Modification de cible : PLP
+
+   - S. aureus : mutation dans le gène mecA : la PLP mutée (=PLP2a) ne
+     permet plus aux β-lactamine de s'y fixer
+   - Idem pour les PLP mosaïques des pneumocoque
+   - Idem pour les entérocoque (PLP5)
+
+* Synthèse protéine bactérienne
+[[./images/microbiologie/antibio-ribosome.png]]
+
+- aminoside: mauvaise reconnaissance de l'ARN messager (modification de
+  la cible)
+- linezolide : mauvaise position de l'ARNt (apporte les acides aminés)
+  (modification de la cible)
+- macrolides : bloque la formation du peptide ("tunnel") (enzyme)
+
+* Synthèse acide nucléique
+- ADN gyrase va "détordre" la double hélice pour la transcription et
+  traduction
+- quinolones vont empêcher cette action (modification de la cible)
+
+* Notes
+- β-lactamine inefficaces sur les mycoplasme car pas de paroi !
+- glycopeptides inefficaces sur bactérie Gram négatif car elles ont une membrane externe qui ne laisse pas passer les grosses molécules
+- synergie β-lactamine - aminoside sur strepto et entérocoque : destruction de la paroi par les β-lactamine pour que l'aminoside accède au ribosome
+- seules les antibio pénétrant dans les cellules (macrolides, fluoroquinolones, rifampicine, cycline ) sont actives contre les bactéries "intracellulaires " (Chlamydia, Coxiella burnetti,
+  Rickettsia, Legionella pneumophilia, Brucella meltiensi, Bartonella )

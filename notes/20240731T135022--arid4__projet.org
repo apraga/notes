@@ -6,5 +6,11 @@
 Auramatacher: Aucun n’est rendu. Il y a 2 tronquants et 3 faux-sens au total sur Montpeiller,Nice,Reims, Marseille
 Attente du retour coordonnateur (contacté par Jérémie)
 
+| Tronquant | MR-2201650 | CHU Montpellier | IMR0012 (Malfo ) |
+| Faux-sens | MR-2300355 | CHU Montpellier | IMR0051 (TSA)    |
+|           | MR-2302791 | CHU Nice        | IMR0005  (mito)  |
+|           | MR-2304839 | CHU Reims       | IMR0052 (DI)     |
+|           | MR-2304935 | CHU Marseille   | IMR0001 (MOC)    |
+
 Genematcher fait, une cohorte en cours par Radio Francesca Clementina
 Vu avec Julien : on participe pour MR-2201650 (patient de Marjolaine)

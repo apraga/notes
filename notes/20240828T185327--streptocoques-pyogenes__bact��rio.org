@@ -1,0 +1,46 @@
+#+title:      Streptocoques pyogenes
+#+date:       [2024-08-28 mer. 18:53]
+#+filetags:   :bactério:
+#+identifier: 20240828T185327
+
+
+- Cocci gram+ en chaînettes, capsulé, non sporulé, immobile
+- Réservoir pharyngé.
+- Transmission = aérienne, contact plaie infectée, accouchement.
+
+* Facteurs de pathogénicité
+résistance à la phagocytose
+ - protéine M
+ - encapsulation
+
+* Facteurs de virulence
+ - enzyme :hyluronidase, streptolysine O et S (favorisent l'invasion tissulaire)
+ - exotoxine : activation et prolifération d'une sous population lymphocytes T -> cytokine proinflammatoires
+ - Streptolysine = hémolyse β-complète
+ - toxine érythrogène : hypersensibilité retardée à la scarlatine
+
+* Habitat
+- Strictement humaine, surtout pharyngé +/- peau, vagin surtout
+- Pyogène = responsiable d'infections suppurées
+
+* Clinique
+ - non invasive = [[denote:20240515T224540][angine]] érythémateuse/érythémato-pultacée, otite moyenne aigüe de l'enfant, scarlatine, infection cutanée
+ - invasive : cutanée sévère (fasciite nécrosante), septicémie, choc toxique streptococcique
+** Complications post-streptococciques
+:PROPERTIES:
+:CUSTOM_ID: h:06a58fbc-87cd-4517-9dea-5a358f9dc691
+:END:
+Rare = immunologique (analogie protéine M et certaines protéines du soi)
+  - rhumatisme articulaire, glomérulonéphrite aigüe, érythème noueux
+
+
+* Diagnostic
+- bactérie exigeante -> gélose sang +/- ANC (inhibe Gram-)
+- β-hémolyse
+- Résistance optochine, sensible bacitracine
+- Catalase -, oxydase -
+
+* Sensibilité, résistance
+- β-lactamine : sensible
+- macrolide : sauvage sensible, résistance par mécanisme d'efflux,
+  modiifcation cible ARN23S

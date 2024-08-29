@@ -1,0 +1,11 @@
+#+title:      Annotation pseudogene
+#+date:       [2024-08-28 mer. 09:32]
+#+filetags:   :pseudogène:
+#+identifier: 20240828T093200
+
+
+* Genecode
+[[https://www.gencodegenes.org/human/][Genecode]] propose une annotation par HAVANA des pseudogene dans l'annotation principale (manuel donc idéal)
+En bonus, les pseudogene prédits par 2 pipeline mais pas dans havannah
+* Pseudogene.org
+Contient en plus l'activité
