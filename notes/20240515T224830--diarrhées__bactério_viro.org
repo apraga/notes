@@ -1,21 +1,29 @@
 #+title: Diarrhées
 #+filetags: :bactério:viro:
 > 80% sont virales
+Bactéries :  coproculture standard = Salmonella, Shigella, Campylobacter, Yersinia
 * Mécanisme
 ** Invasif
-*** Destruction des villosités intestinales = syndrome dysentérique
-Selles nombreuses, afécales, glaireuses, mucopurulenest
-- shigella dysenteriae (toxine) ou non dysentreiea :
-- E. coli entéro-invasif ou entérohémorragique (pour le second : exotoxines [shiga-lik])
-*** Sans destruction (invasion seule) = syndrome gastro-entérique
-- Salmonella
+*** Destruction des villosités intestinales
+**** syndrome dysentérique
+Selles nombreuses, afécales, glaireuses, mucopurulentes
+- [[denote:20240829T225530][Shigella]] dysenteriae (toxine) ou non dysentreiae :
+- E. coli entéro-invasif
+**** Syndrome hémolytique et urémique
+E. coli entérohémorragique (production de Shiga-like toxines, codées par /stx1/, /stx2/)
+*** Sans destruction (invasion seule)
+**** syndrome gastro-entérique
+- [[denote:20240829T215907][Salmonella spp]]
 - [[denote:20240515T224650][Campylobacter]] (entérotoxines)
 - E. coli entéropathogènes
 ** Toxine
 - rotavirus
-- staph aureus
-- E. cole entéro-toxinogêes on -agrégant,
+- [[denote:20240828T192156][Staphylocoque aureus]]
+-  E. coli entéroagrégant
 - [[denote:20240828T230503][Clostridium difficile]]
+*** Syndrome cholériforme
+- E. coli entéro-toxinogènes
+- Vibrio cholerae (pas de toxines)
 * Virale
 oGEA Adulte : norovirus > rotavirus > adénovirus > astrovirus
 
@@ -33,7 +41,7 @@ oGEA Adulte : norovirus > rotavirus > adénovirus > astrovirus
   - immunodéprimé : risque diarrhée chronique
 - épidémies++ (collectivités)
 - critères de Kaplan = vomissement > 50% sujet, incubation moyenne 1-2 j, durée 12-60h, pas de bactéries à la coproculture
-- diagnostic selle : RT-PCR, 3 à 5 échantillonls. 50% positifs pour conclure
+- diagnostic selle : RT-PCR, 3 à 5 échantillons. 50% positifs pour conclure
 - précaution contact (gants, SHA, javel), arrêt maladie 48-72H après symptômes
 - vaccin: 6semaine-6mois de vie
 

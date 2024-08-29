@@ -1,0 +1,13 @@
+#+title:      Escherichia coli
+#+date:       [2024-08-29 Thu 23:05]
+#+filetags:   :bactérie:bactério:
+#+identifier: 20240829T230553
+
+
+- Bacille gram négatif, mobile, oxydase négative, nitrase-réductase positive
+- Urine : rose sur milieu chromogène (β-glucoronidase positive)
+- Sensbilité naturelles aux antibiotiques actif sur BGN
+- Groupe 1 :
+  - céphalosporinase chromosomique de très bas niveau.
+  - Résistance acquise enzymatique : pénicillinase, β-lactamase à
+    spectre étendues, céphalosporinase de haut niveau, carbapénémase
