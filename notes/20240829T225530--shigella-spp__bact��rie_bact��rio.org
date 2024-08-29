@@ -1,0 +1,27 @@
+#+title:      Shigella spp
+#+date:       [2024-08-29 Thu 22:55]
+#+filetags:   :bactérie:bactério:
+#+identifier: 20240829T225530
+
+Non exigeante, aéro-anaérobie facultative
+Fermente le glucose
+
+TIAC: surtout des[[denote:20240829T215907][Salmonella spp]]
+Mécanisme invasif + production de toxines
+* Clinique
+- diarrhée (syndrome gastroentéritique)
+- dysentérie aigüe: fièvre, douleurs abdo, épreinte, tenesme
+  selles très importantes, glairo-sanglantes, purulentes
+* Diagnostic
+Clinique, confirmé par la coproculture
+Milieu : Hektoen, SS
+MALDI TOF
+* Traitement
+- diarrhée infectieuse aigue = symptom
+  - antipyrétique,
+  - maintien hydro-élecrique
+  - régime sans résidu
+  - ! contre-indication ralentisseur du transite (lopéramique)
+  - antibio si forme grave > 3 ours, ID+++ : FQ/azithromycique
+- bactériémie : FQ/azithromycine,/ceftriaxone
+ Déclaration obligatoire : TIAC

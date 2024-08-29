@@ -25,11 +25,11 @@ Version liqiuide : idem mais on remplace le gaz par un gel e selice pour la phas
 ** 1. Source d'ions: permet de faire passer les analytiques en forme ionées
 Plusieurs émthode
 1. "dur" filament chauffé par un fort courant électrique -> émission d'électron -> leur énergie cinétique va produire des ions
-2. électronébulisation "dource" : courant électrique très emplante -> goutelettes de liquie s trs chargées. Après évalporation, il y aura désorpotion (=relarguage) ions
+2. électronébulisation "dource" : courant électrique très emplante -> goutelettes de liquide très chargées. Après évaporation, il y aura désorption (=relarguage) ions
 3. chimique "douce" par ajout d'un gaz réactif (collision ion-molécules)
-4. photoionization douce : lampe à décharge -> les photons interaisse avec les vapeurs produites par nébulisation
+4. photoionization douce : lampe à décharge -> les photons interagisse avec les vapeurs produites par nébulisation
 5. bombardemet d'ions rapidement (argon)
-6. MALDI: crisalissation pui irradiation par un laser -> désorption des ions. Note: MALDI utile pour molécule polaires peu volatiles (ex: peptides)
+6. MALDI: crisalissation puis irradiation par un laser -> désorption des ions. Note: MALDI utile pour molécule polaires peu volatiles (ex: peptides)
 ** 2. Analyseur : les ions sont séparé en fonction de leur rapport masse/charge
 Types:
 - quadripole  4 électrodes avec un champ particulier qui va les attire vers le potentiel négatif puis les renvoyer vers la barre adjacente. Il existe une équation pour la trajection des ions : les zones de stabilité dépendent du rapport masse/chage
