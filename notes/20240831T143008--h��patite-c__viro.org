@@ -1,0 +1,25 @@
+#+title:      Hépatite C
+#+date:       [2024-08-31 Sat 14:30]
+#+filetags:   :viro:
+#+identifier: 20240831T143008
+
+
+Charge virale: augmente vite et fort mais diminue à 0 sous traitement
+
+- ARN simple brin de polarité positive. capside icosaédrique et
+  enveloppe
+- hépatotrope -> infection aiqüe e chronique
+  - aigüe = généralement asymptomatique et évolue vers chronocitié dans
+    la majorité
+  - chronique : activité nécrotico-inflammatoire et fibrose hépatique
+    (gravité variable)
+- hépatite chronique = 2e cause de cirrose et de carcinome
+  hépatocellulaire après l'alcool. 2500 décès/an
+- curable par traitement antiviral avec diminution/éradication lésions
+  et régression fibrose
+- révolution avec nouveaux traitement sans IFN avec > 95% efficacité
+  (inhibiteur de protéase+++)
+- importance du dépistage
+* Traitement
+2 antiviraux d'action directe (ex: sofosbuvir + veplatasvir)
+

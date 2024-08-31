@@ -1,0 +1,19 @@
+#+title:      Adénovirus
+#+date:       [2024-08-31 Sat 14:21]
+#+filetags:   :viro:
+#+identifier: 20240831T142116
+
+
+- Spectre étendu d'infection aigüe
+- Persistance possible intestin (asymptomatique) -> si immunodépression,
+  sympto
+- très fréquent en population générale : pas de diag virologique !
+- résistant dans l'environnement, transmission souvent manuportée +/-
+  épidémie nosocomiale
+- Diag: PCR
+- Transplanté (receveur CSH en pédia): infection sévère -> suivi des
+  réaction dans les selles
+- test antigénique (gastro-entérite): ne détectent pas toutes les
+  espèces
+- ttt = ténofovir
+- y penser si cystite hémorragique chez greffé rénal
