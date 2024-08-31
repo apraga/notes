@@ -22,30 +22,3 @@ Résistance acquises
 Vert (β-glucosidase +)
 * [[denote:20240829T215907][Salmonella spp]]
 * [[denote:20240829T225530][Shigella spp]]
-    - shigelle: incubation 1-3j, fièvre élevée, selle avec sang, glaire, pus, douleurs abdominales violentes
-
-    - Diagnostic
-
-      - selles +/- sang pour salmonelle (para)typhique
-      - diag moléculaire
-      - culture:
-        - "SS" (salmonelle/shigelle): salmonelle = lactose - et SH2+
-        - Hektoen, Drigalski (BG-) : lactos-, h2s+
-        - pour salmonelle : bouillon d'enrichissement
-      - identification: *salmonelle non différencie d'e. coli*
-        - shigelle = immobile
-        - shigelle = fermentation manitol ( sauf s. dysenteria )
-      - BG-
-
-    - Traitement
-
-      - diarrhée infectieuse aigue = symptom
-        - antipyrétique,
-        - maintien hydro-élecrique
-        - régime sans résidu
-        - ! contre-indication ralentisseur du transite (lopéramique)
-        - +/- antibio si forme grave > 3 ours, ID+++ : FQ/azithromycique
-      - bactériémie : FQ/azithromycine,/ceftriaxone
-
-  Déclaration obligatoire : TIAC, fièvre (para)typhoïde Vaccination en
-  prévention salmonelle typfique

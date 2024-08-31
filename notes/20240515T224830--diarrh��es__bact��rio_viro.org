@@ -12,6 +12,9 @@ Selles nombreuses, afécales, glaireuses, mucopurulentes
 **** Syndrome hémolytique et urémique
 E. coli entérohémorragique (production de Shiga-like toxines, codées par /stx1/, /stx2/)
 *** Sans destruction (invasion seule)
+:PROPERTIES:
+:CUSTOM_ID: h:8a4f2ba7-01e3-4ded-bb70-69d066c11130
+:END:
 **** syndrome gastro-entérique
 - [[denote:20240829T215907][Salmonella spp]]
 - [[denote:20240515T224650][Campylobacter]] (entérotoxines)
