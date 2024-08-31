@@ -1,0 +1,24 @@
+#+title:      Encéphalite
+#+date:       [2024-08-31 Sat 17:58]
+#+filetags:   :bactério:viro:
+#+identifier: 20240831T175811
+
+Voir [[denote:20240731T204905][Méningites]],[[denote:20240831T185757][Myélite]] (méningo-encéphalite possible)
+* Clinique
+Troubles de la conscience, convulsion, troubles du comportement, déficit moteu, aphasie,
+tremblement, crises épileptique
+* Étiologies
+** Bactérienne
+- Tuberculose : méningo-encéphalite rapidement progressive
+- [[denote:20240816T121758][Listeria monocytogenes ]]: rhombencéphalite[fn:1]
+** Virale
+- [[denote:20240831T142847][HSV]] 1 : nécrosante (primo ou réactivation)
+- [[denote:20240831T142847][HSV]] 2 : néonatale
+- rubéole
+- entérovirus : rhomboencéphalite
+- virus grippaux : inflammatoire post-infectieux
+- VIH
+- CMV
+* Footnotes
+
+[fn:1] Ophtalmoplégie, diplopie, ataxie, déficit moteur, troubles de la conscience

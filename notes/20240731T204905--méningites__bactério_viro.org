@@ -3,45 +3,40 @@
 #+filetags:   :bactério:viro:
 #+identifier: 20240731T204905
 
+Voir [[denote:20240831T175811][Encéphalite]],[[denote:20240831T185757][Myélite]]
 * Étiologies
-- [[denote:20240731T205116][virales]] = 90%, entérovirus 70-90%, bénigne, arrêt des traitements
-  antibactériens
-- [[denote:20240731T205020][bactériennes]] : 1300cas/an, selon âge/terrain, grave, diagnostic et traitement *urgent*
+- [[denote:20240731T205116][virales]] = 90%
+  - entérovirus 70-90%, bénigne, arrêt des traitements antibactériens
+  - sans encéphalite = habituellement bénin, guérit spontanément
+- [[denote:20240731T205020][bactériennes]] : diagnostic et traitement *urgent*
+  - pronostic vital engagé à court term +/- séquelle neuro
+  - 1300cas/an, selon âge/terrain
 
+* Clinique
+- Triade : céphalées, vomissements (en jet), raideur méningée («chien de fusil»)
+- syndrome infectieux
+- +/- purpuru fulminans (purpura nécrotique/ecchymotique rapidement progressif)
+  - *C3G* immédiatement
+  - évocateur méningocoque
+- éruption +/-myalgie pour certains entérovirus
+- éruption génitale pour HSV2 (primo)
 * Examens
-- Cytologie :
-  - bactérienne > 500/mm^{3} (rares cas sans pléiocytose en début d'infection)
-  - virale = pléiocytose modérée (500 en moyenne)
-- MGG après centri :
-  - bactérie = majorité de PNN
-  - virus, mycobactérie = majorité mononuclé/lympho
-  - virus, listeria, brucella = mixte (panaché)
-- [[denote:20240731T202623][Biochimie]] (voir notamment [[denote:20240731T202623::#h:dddf16ac-9013-4649-a58f-82be7c3ba966][lacticorachie]] )
-  - bactérie: CRP, PCT élevé, protéinorachie > 1G/L, glycorachie/glycémie < 0.5
-  - virale : protéinorachie normale/modérément élevée, glycorachie/glycémie normale > 0.6 (attention: *absence de pléocytose parfois*)
-- Gélose sang cuit + vitamine sous CO_{2} +/- anaérobie, bouillon d'enrichissement
-- Gram:
-  - Cocci G+ diplocoque/chainette : strepto pneumonia, agalactiae
-  - Cocci G- diplococque : Neisseria meningitidis
-  - Bacille G+ : listeria monocytogenes
-  - Bacille G- : Haemophilus, E.coli, Brucella, salmonella
-    Attention :: culture peut être négative si ne pousse pas sur milieux usuels (Tuberculose) ou décapité ATB
+|       | Normal       | Bactérienne | M. Tuberculosis | Listerea | Viral   |
+|       |              | purulente   |                 |          |         |
+|-------+--------------+-------------+-----------------+----------+---------|
+| Cyto  | 1-2 cellules | > 500       | 100-500         | 100-500  | 100-500 |
+|       |              | PNN         | Lympho          | Mixte    | Lympho  |
+| Glyco | 2/3 glycémie | Hypo        | Hypo            | Hypo     | Normal  |
+| Prot  | 0.15-0.30    | > 1         | < 1             | Hyper    | < 1     |
+|       |              |             |                 |          |         |
 
-- Neisseria meningitidis
-  - Sensibilité diminués pénicilline (PLP) 25 => *CMI péni G, amox, céfotaxime*
-  - Aérobie strict. Fragile. Commensal oropharynx. Humain
-  - C3G IV, *déclaration obligatoire*, *rifampicine cas contact* +/- vaccins
-  - Prévention : vaccin sérogorupe C mais pas pour le B+++. Voyage :
-    A,C,Y,W
+  -[[denote:20240731T202623][Biochimie]] (voir notamment [[denote:20240731T202623::#h:dddf16ac-9013-4649-a58f-82be7c3ba966][lacticorachie]] )
+    - bactérie: CRP, PCT élevé, protéinorachie > 1G/L, glycorachie/glycémie < 0.5
+    - virale : attention: *absence de pléocytose parfois*
+  - Gélose sang cuit + vitamine sous CO_{2} +/- anaérobie, bouillon d'enrichissement
 
-- Streptococcus pneumoniae
-  - Aéro/anaérobie, fragile, commensal oropharynx
-  - Sensibilité diminués pénicilline (PLP) 30-60% => *CMI péni G, amox, céfotaxime*
-  - C3G IV + cortico. Pas de prophylaxie.
-  - Vaccin 13 sérotype
-
-- Néonatal
-  - maternofoetal ou transmission tardive (>72h) par IU/translocation
-    digestive
-  - Amox si strepto agalactia, céfotaxime si E.coli (50%
-    pénicillinase), amox si listéria (résistance céphalo)
+** Autres
+Antigène pneumocoque si contexte
+PCR si culture négative
+Anticorps si suspicion neurosyphilis
+Ag et ED encre de Chine + culture si suspicion cryptocoque
