@@ -1,0 +1,15 @@
+#+title:      Dengue
+#+date:       [2024-08-31 Sat 14:21]
+#+filetags:   :viro:
+#+identifier: 20240831T142154
+
+
+- zone tropicale/substropicale
+- La plus fréquente (flavirius)
+
+* Clinique
+- si arthralgie, possible rash associé
+- TODO:
+
+* traitement
+symptomatique
