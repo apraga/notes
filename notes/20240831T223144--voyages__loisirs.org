@@ -1,17 +1,14 @@
+#+title:      Voyages
+#+date:       [2024-08-31 Sat 22:31]
+#+filetags:   :loisirs:
+#+identifier: 20240831T223144
+
+
 * 2012 Croatie
-:PROPERTIES:
-:CUSTOM_ID: croatie
-:END:
 * 2015 Japon
-:PROPERTIES:
-:CUSTOM_ID: japon
-:END:
 Laure
 
 * 2016 New York
-:PROPERTIES:
-:CUSTOM_ID: new-york
-:END:
 Post-doc puis visite de New-York Restaurant : - New YorkRamen (ROKC) -
 Éthiopien (assibybian) - Soulfood (Jacob restaurant) - Ukrainien
 (velsetska) - Pizza (NY supreme pizza) - Okonomiyaki (otafuku) -
@@ -22,19 +19,10 @@ tacos 1) - Vegan burger (by Chloe) - Bagel (Murray's bagel ) - Caribbean
 Indonesian (Java)
 
 * 2016-12 États-Unis
-:PROPERTIES:
-:CUSTOM_ID: états-unis
-:END:
 - San Francisco 2 December
 - Yosemite 3 December
 - Death Valley 4 December
 - Las Vegas 6 December
 
 * 2020-09 Espagne
-:PROPERTIES:
-:CUSTOM_ID: espagne
-:END:
 * 2023-07 Lac majeur
-:PROPERTIES:
-:CUSTOM_ID: lac-majeur
-:END:
