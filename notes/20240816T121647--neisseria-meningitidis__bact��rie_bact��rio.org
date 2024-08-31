@@ -5,16 +5,19 @@
 
 
 - Diplococque Gram - aérobie.
-- Très gragile. Hautement variable
-- Épidémio :
-  - 2 pics : nourisson < 1 an (système immunitaire immature), ado/jeune
-    adulte (socialisation)
-  - ceinture de la méningite (Afrique sahel + subusaharienne)
+- Aérobie strict. Fragile. Commensal oropharynx. Humain
+- Sensibilité diminués pénicilline (PLP) 25 => *CMI péni G, amox, céfotaxime*
+* Méningite
+- 2 pics : nourisson < 1 an (système immunitaire immature), ado/jeune
+  adulte (socialisation)
+- ceinture de la méningite (Afrique sahel + subusaharienne)
 
+- C3G IV, *déclaration obligatoire*, *rifampicine cas contact* +/- vaccins
+- Prévention : vaccin sérogroupe C mais pas pour le B+++. Voyage :A,C,Y,W
 * Habitat
 :PROPERTIES:
 :CUSTOM_ID: habitat
 :END:
-réservoir 100% humaine. Transmission directement uniquement par
-goutelettes Portage pharyngé, avec rarement invasion (sang +/- LCS) ->
-seulement souches
+réservoir 100% humaine.
+Transmission directement uniquement par goutelettes
+Portage pharyngé, avec rarement invasion (sang +/- LCS) -> seulement souches

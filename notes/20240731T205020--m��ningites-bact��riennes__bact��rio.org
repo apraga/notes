@@ -5,25 +5,43 @@
 
 
 - Envahissement LCR par bactéries
-- Virale sans encéphalite = habituellement bénin, guérit spontanément
-- Bactérien = pronostic vital engagé à court term +/- séquelle neuro
 - Ttt = ATB IV forte dose
 
+* Étiologie
+- [[denote:20240831T173233][Streptococcus pneumoniae]]  : principale cause de méninigite bactérienne purulente
+  - enfant > 3 mois, adultes, personnes âgées surtout
+- [[denote:20240816T121647][Neisseria meningitidis]]  : principale cause de méninigite bactérienne purulente
+  - enfant, adolescent, adulte jeune
+- Streptococcus agalactiae : nouveau-né surtout
+- [[denote:20240816T121919][Hæmophilus influenza]]  : rare, non vacciné ou immunodéprimé
+
+- L
+
+- Autres : Lyme, leptospirose, syphilis, immunodéprimé
+
+* Gram:
+- Cocci G+ diplocoque/chainette : strepto pneumonia, agalactiae
+- Cocci G- diplococque :[[denote:20240816T121647][Neisseria meningitidis]]
+- Bacille G+ : listeria monocytogenes
+- Bacille G- : Haemophilus, E.coli, Brucella, salmonella
+  Attention : culture peut être négative si ne pousse pas sur milieux usuels (Tuberculose) ou décapité ATB
+
+
+- Néonatal
+  - maternofoetal ou transmission tardive (>72h) par IU/translocation
+    digestive
+  - Amox si strepto agalactia, céfotaxime si E.coli (50%
+    pénicillinase), amox si listéria (résistance céphalo)
+
 * Physiopathologie
- - passage dans le sang : depuis
-   - oropharynx (enfant, adulte)
-   - tube digestif (E. coli, strepto agalactiae) (néonat > 72h)
-   -ou via placenta si bactériémie par la mère [Listeria] (néonat)
- - autres : brèche ostéoméningée, complication infection systémique
-   (borréliose..)
+- passage dans le sang : depuis
+  - oropharynx (enfant, adulte)
+  - tube digestif (E. coli, strepto agalactiae) (néonat > 72h)
+  -ou via placenta si bactériémie par la mère [Listeria] (néonat)
+- autres : brèche ostéoméningée, complication infection systémique
+  (borréliose..)
 
 * Clinique
- - Communautaire = > 39° + syndrome méningé (céphalé, raideur nuque, vomissement, photophobie)
- - Néonat : non spécifique => PL si fièvre sans cause évidente
- - Méningoencéphalitue : +signe neuro/psy
-
-* Épidémiologie
-    - enfant, adulte : *Neisseria, Strepto pneumo* +/-- H. influenza,
-      strepto pyogenes, agalactiae, listeria
-    - néonat : *Strepto agalactia*, E.coli,
-    - Autres : Lyme, leptospirose, syphilis, immunodéprimé
+- Communautaire = > 39° + syndrome méningé (céphalé, raideur nuque, vomissement, photophobie)
+- Néonat : non spécifique => PL si fièvre sans cause évidente
+- Méningoencéphalitue : +signe neuro/psy

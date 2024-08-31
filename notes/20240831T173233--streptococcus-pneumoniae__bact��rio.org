@@ -1,0 +1,9 @@
+#+title:      Streptococcus pneumoniae
+#+date:       [2024-08-31 Sat 17:32]
+#+filetags:   :bactério:
+#+identifier: 20240831T173233
+
+- Aéro/anaérobie, fragile, commensal oropharynx
+- Sensibilité diminués pénicilline (PLP) 30-60% => *CMI péni G, amox, céfotaxime*
+- C3G IV + cortico. Pas de prophylaxie.
+- Vaccin 13 sérotype

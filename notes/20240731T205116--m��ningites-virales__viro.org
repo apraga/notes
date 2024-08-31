@@ -9,37 +9,38 @@
 - bactériennes+++, parasitaire, fongique
 - néoplasique, inflammatoire, dysimmunitaire, toxique
 * Étiologies
-** *Entérovirus= 90% des cas*
-  - été, automne
-  - 70% sont des enfants
-  - tous les types peuvent être respnsable de méningite mais certains types peuvent être associés à des formes sévère
-  - bénignes mais formes graves possible (nouveau-né, immunodéprimé)
-  - diag = RT-PCR entérovirus dans LCS. Si négatif : gorge, selles, aspiration (attention à l'excrétion prolongée..)
+** Entérovirus
+- *90% des cas*
+- été, automne
+- 70% sont des enfants
+- tous les types peuvent être responsable de méningite mais certains types peuvent être associés à des formes sévère
+- bénignes mais formes graves possible (nouveau-né, immunodéprimé)
+- diag = RT-PCR entérovirus dans LCS. Si négatif : gorge, selles, aspiration (attention à l'excrétion prolongée..)
 ** Parechovirus :
 enfant < 2ans
-  - RT-PCR LCS, sang
-  - traitement sympto
-** HSV2: éruption génitale, ATCD
-  - PCR spécifique CLS
-  - traitement : immunodéprimé +/- immunocompétent
+- RT-PCR LCS, sang
+- traitement sympto
+** HSV2
+- éruption génitale, ATCD
+- *mortelle dans 70%* => urgence thérapeutique
+- la plus fréquente des encéphalite sporadiques
+- Diagnostic = PCR sur lCS
+- traitement : immunodéprimé +/- immunocompétent
 ** VZV : zona, paralysie faciale
-  - PCR spécifique
-  - traitement : immunodéprimé +/- immunocompétent
+- PCR spécifique
+- traitement : immunodéprimé +/- immunocompétent
+** [[denote:20240819T172039][VIH]]
+- primo: méninigite et ménigo-encéphalite
+- Diag = séro +/- charge virale
 ** autres:
-  - oreillons (parotidite, vaccins): RT-PCR dans LCS, ttt symptomatique
-  - primo infection VIH (prise de risque): 10% primo-ifection. Diag = séro +/- charge virale
-  - LCMV (rongeur), arbovirus (voyage - West nile)
+- oreillons (parotidite, vaccins): RT-PCR dans LCS, ttt symptomatique
+- LCMV (rongeur), arbovirus (voyage - West nile)
 
-** Herpétique
-  - *mortelle dans 70%* => urgence thérapeutique
-  - la plus fréquente des encéphalite sporadiques Diagnostic = PCR sur
-    lCS
 
 * Physiopath
-- muqueuses de la fac -> lance ganglion trijumeau. Rarement accès
-  SNC (via muqueuse nasale ?)
+- muqueuses de la face -> ganglion trijumeau. Rarement accès SNC (via muqueuse nasale ?)
 - lésions cérébrales : focales (temporales, uni -> bilatérales)
-- éncéphalite pure -> méningo-encéphalite
+- encéphalite pure -> méningo-encéphalite
 * Clinique
 - Début progressif, fière > 48h
 - Céphalées, nausées vomissement
@@ -55,9 +56,8 @@ enfant < 2ans
 - Sérologive : utile chez l'enfant (sang + LCS)
 
 * Autre
- - EEG = focal (temporal), imagerie = focal (temporal),
-   nécroto-hémorragique
+- EEG = focal (temporal), imagerie = focal (temporal),
+  nécroto-hémorragique
 * Traitement
-  - *Après la PL, sans attendre*: aciclovir IV 15 jours
-  - contrôle par PL : seulement si non amélioration clinique : si
-    PCR positiv, poursuite 7j
+- *Après la PL, sans attendre*: aciclovir IV 15 jours
+- contrôle par PL : seulement si non amélioration clinique : si PCR positiv, poursuite 7j
