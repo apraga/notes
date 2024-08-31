@@ -15,6 +15,6 @@ Actinobacillus actinomyc, cardiobacterium hominis, capnocytophaga,
 Kingella kingae]
 -  candida = cathéter, toxico
 *  Diagnostic
-critère de duke
+critère de Duke
 pour hémoculture : 2 positive à germe typique ou >2 à germe atypique
 négative dans 5-10% E

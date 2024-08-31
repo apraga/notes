@@ -21,7 +21,7 @@ Voir [[denote:20240831T175811][Encéphalite]],[[denote:20240831T185757][Myélite
 - éruption +/-myalgie pour certains entérovirus
 - éruption génitale pour HSV2 (primo)
 * Examens
-|       | Normal       | Bactérienne | M. Tuberculosis | Listerea | Viral   |
+|       | Normal       | Bactérienne | M. Tuberculosis | Listeria | Viral   |
 |       |              | purulente   |                 |          |         |
 |-------+--------------+-------------+-----------------+----------+---------|
 | Cyto  | 1-2 cellules | > 500       | 100-500         | 100-500  | 100-500 |
