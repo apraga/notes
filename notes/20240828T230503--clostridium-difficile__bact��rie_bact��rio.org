@@ -7,6 +7,7 @@
 - Bacille gram positif à bout carré, spores subterminales
 - Anaérobie strict
 - 1re cause diarrhées associées aux soins
+- Seules les souches toxinogènes produisant les toxines A et B sont pathogènes
 
 * Préanaytique
 - seulement si diarrhée et >= 3 ans
@@ -20,14 +21,13 @@
 * Habitat
 Commensal : tube digestif homme/animaux + environmmement
 * Physiopath
-Normal: fonction «barrière» des bactéres du microbiote
+Normal: fonction «barrière» des bactéries du microbiote
 Antibiotique -> dysbiose intestinale
 Une fois implantées, les souches de C. difficile sécrètent les toxines
-- altération des cytosquelette des cellules épithéliales, distentsion des jonction serrées intercellulaires
+- altération des cytosquelette des cellules épithéliales, distension des jonction serrées intercellulaires
 - réaction inflammatoire
 * Diagnostic
 - diarrhée + toxine selles ou souche toxinogène ou colite pseudo-membraneuse
-NB: Seules les souches toxinogènes produisant les toxines A et B sont pathogènes...
 
 - référence (fastidieux) = culture toxigénique, test de toxicité en culture
 - glutamate déshydogénase (GDH) = présence d'une souche

@@ -9,7 +9,7 @@
 - impermeabilité
 - efflux
 
-[[./images/microbiologie/antibio-resistance.png]]
+[[./images/microbiologie/antibio-resistance.jpg]]
 Résistance naturelle
 - colistine: bactérie gram+
 - vancomycine : bactérie gram -
@@ -21,8 +21,7 @@ Résistance naturelle
      - se fixent sur les PLP (protéine de liaison des pénicillines)
      - mécanisme de compétition
    - toutes les β-lactamines ont un cycle commun (β-lactame)
-   - les β-lactamase vont hydrolyse ce cycle et désactiver les
-     β-lactamines
+   - les β-lactamase vont hydrolyse ce cycle et désactiver les β-lactamines
 
 2. Modification de cible : PLP
 
@@ -32,7 +31,7 @@ Résistance naturelle
    - Idem pour les entérocoque (PLP5)
 
 * Synthèse protéine bactérienne
-[[./images/microbiologie/antibio-ribosome.png]]
+[[./images/microbiologie/antibio-ribosome.jpg]]
 
 - aminoside: mauvaise reconnaissance de l'ARN messager (modification de
   la cible)
@@ -51,3 +50,10 @@ Résistance naturelle
 - synergie β-lactamine - aminoside sur strepto et entérocoque : destruction de la paroi par les β-lactamine pour que l'aminoside accède au ribosome
 - seules les antibio pénétrant dans les cellules (macrolides, fluoroquinolones, rifampicine, cycline ) sont actives contre les bactéries "intracellulaires " (Chlamydia, Coxiella burnetti,
   Rickettsia, Legionella pneumophilia, Brucella meltiensi, Bartonella )
+* Bactéries pouvant produire des β-lactamases
+- [[denote:20240816T121324][Entérobactéries]] : pénicillinase, céphalosporinase, BLSE
+- [[denote:20240612T233531][Pseudomonas aeruginosa]] : céphalosporinase pouvant être hyperproduiite (mutation, BLSE)
+- [[denote:20240816T121919][Hæmophilus influenza]]  : pénicillinase acquise
+- [[denote:20240515T224930][Neisseria gonorrhoeae]]  : idem
+- [[denote:20240515T224650][Campylobacter]]  β-lactamase fréquente
+- staphylocoque
