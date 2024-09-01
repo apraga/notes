@@ -20,4 +20,4 @@ Selon la porte d'entrée
 | ORL            | [[denote:20240831T173233][Streptococcus pneumoniae]], autres [[denote:20240612T233731][streptocoque]]                     |
 |                | anaérobies                                                        |
 |----------------+-------------------------------------------------------------------|
-| Bucco-dentaire |                                                                   |
+| Bucco-dentaire |[[denote:20240612T233731][Streptocoque]] oraux,[[denote:20240901T111102][HACCEK]]                                                            |
