@@ -8,17 +8,17 @@
 - *1ere cause d'IST*
 
 * Clinique
-   - Infection urogénitale basse/haut: *urétrite* (homme), *cervicite* (asympto souvent), endométrie, salpingite
+   - Infection urogénitale basse/haut: *urétrite* (homme), *cervicite* (asympto souvent), endométrite, salpingite
    - lymphogranulomatose vénérienne : régions tropicale, ulcération génitale, adénite inguinale; anorectite HSH
    - opportuniste : rare (grossesse, immunodépression)
 * Résistances
-   - naturelle = amonisode, glycopeptitde
+   - naturelle = aminoside, glycopeptitde
 * Traitement
    - Doxycycline (ou azithromycine pour IST non compliqué)
    - infection génitale haute : doxycycline + autre
-   - *dépister IST*, traiter partener, rapport protégé
+   - *dépister IST*, traiter partenaire, rapport protégé
 *  Diagnostic
   - *Direct* = PCR, Transcription-Mediation-Amplification
-    - remboursé, sensbilité > 95%
-  - Sérologie : biland infertilité, LGV (immunofluorescence, ELISA)
+    - remboursé, sensibilité > 95%
+  - Sérologie : bilan infertilité, LGV (immunofluorescence, ELISA)
   - culture peu sensible, antigène non recommandé, pas de test de sensibilité antibio en routine

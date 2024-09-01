@@ -1,0 +1,12 @@
+#+title:      Sinusite maxilliaire
+#+date:       [2024-09-01 Sun 14:45]
+#+filetags:   :bactério:
+#+identifier: 20240901T144529
+
+Infection bactérienne d'1 ou plus cavité sinusiennes
+Plus fréquentes : maxilliaires
+- douleurs sinusiennes infra-orbitaires augmentant en penchant la tête en avant
+- diag clinique
+- [[denote:20240831T173233][Streptococcus pneumoniae]] et [[denote:20240816T121919][Hæmophilus influenza]]
+
+Ethmoïdales et sphénoïdales plus rares mais plus graves (complications orbitaires ou cérébro-méningées)

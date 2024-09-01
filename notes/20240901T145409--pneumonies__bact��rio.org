@@ -1,0 +1,36 @@
+#+title:      Pneumonies
+#+date:       [2024-09-01 Sun 14:54]
+#+filetags:   :bactério:
+#+identifier: 20240901T145409
+
+* Aigüe communautaire
+Classification
+- alvéolaires : bactéries pyogènes, surtout sphère oropharyngéee qui disséminent
+- interstitielles (atypiques) : bactéries intracellulaires, virus
+
+|               | Alvéolaire/lobaire       | Interstitielle |
+| État général  | altéré                   |                |
+| Début         | brutal                   | progressif     |
+| Frisson       | oui                      | rare           |
+| Fièvre        | 39-40°                   | 38-39°         |
+| Douleur tho   | Oui                      | Rare           |
+| Toux          | productive               | sèche          |
+| Expectoration | purulente                | absente        |
+| Radio         | Opacité homogène         | Interstitielle |
+| Leuco         | > 15G/L                  | < 15G/L        |
+| Origines      | [[denote:20240831T173233][Streptococcus pneumoniae]] | M. pneumoniae  |
+|               | [[denote:20240816T121919][Hæmophilus influenza]]     | C. psittaci,   |
+|               | [[denote:20240515T225630][Légionelle]]               | C. burnetti    |
+|               | autres bactéries         | [[denote:20240515T225630][Légionelle]]     |
+|               |                          | Virus          |
+Fréquent, de gravité variable
+Les plus graves :[[denote:20240831T173233][Streptococcus pneumoniae]],[[denote:20240816T121919][Hæmophilus influenza]] ([[denote:20240828T192156][Staphylocoque aureus]] )
+* Nosocomiales
+Surtout sous ventilation mécanique
+Étiologies
+- < 5 j: [[denote:20240828T192156][Staphylocoque aureus]] ,[[denote:20240816T121919][Hæmophilus influenza]]
+- > 5j : bacilles à gram négatif ([[denote:20240612T233531][Pseudomonas aeruginosa]])
+* Traitement
+- Adulte sain sans signes de gravité : amox
+- facteurs de risque : amox+acide clavulanique ou C3G injectables ou macrolides ou léfofloxacine (actif contre le pneumocoque)
+- si grave : C3G injectable (pneumocoque) + macrolide (légionnelle)
