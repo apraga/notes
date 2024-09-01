@@ -5,16 +5,33 @@
 - Traitement difficile (biofilm)
 
 * Bactéries
--  *Gram positif*
--  staph aureus/coag négative : cutané, cathéter, toxico IV
--  strepto : bucco-dentaire, digestif
--  entérocoque = digestif, urinaire
--  HACCEK = bucco-dentaire
-[Bacille gram neg croissance lente + physio = Haemophilus,
-Actinobacillus actinomyc, cardiobacterium hominis, capnocytophaga,
-Kingella kingae]
--  candida = cathéter, toxico
+- *Gram positif*
+- staph aureus/coag négative : cutané, cathéter, toxico IV
+- strepto : bucco-dentaire, digestif
+- entérocoque = digestif, urinaire
+- [[denote:20240901T111102][HACCEK]]= bucco-dentaire
+- candida = cathéter, toxico
+Voir aussi les autres causes de [[denote:20240901T105739][bactériémie]]
 *  Diagnostic
-critère de Duke
+** critère de Duke 2023
+- Critère microbio ou histologique
+- ou critères clinique:
+  - majeur
+    - hémocultures positives à microorganisme typiques (2 hémoc) ou non typique (3 hémoc)
+    - PCR Coxiella burnetii, Bartonella, Tropheryma
+    - échocardio ou scanner cardiaque
+    - PET scan
+    - chirurgical
+  - mineur
+    - prédisposition
+    - fièvre > 38°
+    - vasculaire (abcès cérébral ou rate notamment)
+    - immuno (nodules d'Osler...)
+    - hémoc positive ne rentrant pas dans les critères majeurs
+    - PET scan
+    - nouveau souffle de régurgitation
+
+
+   
 pour hémoculture : 2 positive à germe typique ou >2 à germe atypique
 négative dans 5-10% E
