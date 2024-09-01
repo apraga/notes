@@ -1,0 +1,35 @@
+#+title:      Infection virales hépatiques
+#+date:       [2024-09-01 Sun 18:31]
+#+filetags:   :viro:
+#+identifier: 20240901T183143
+
+* Phases
+1. incubation (15 - 120 j selon les virus)
+2. Pré-ictérique : asympto ou pseudo-grippal, troubles digestif (3-15j)
+3. Phase d'état
+   - AEG
+   - signes inflammatoires
+   - dysfonctionnement hépatique: ictère, décoloration des selles, urines brunes
+
+* Évolution
+4 possibilité
+1. asympto (majorité)
+2. aigüe puis guérison ou chronique
+3. chronique
+4. fulminante (rare): nécrose hépatique massive -> risque hémorragique majeur -> transplantation hépatique
+
+Lésions hépatiques sont dues à la réaction *inflammatoire* plutôt que cytotoxicité du viruss
+* Causes
+-[[denote:20240831T143036][Hépatite A]]  et[[denote:20240831T143328][Hépatite E]] : surtout oro-fécal, pas d'hépatite chronique[fn:1]
+- [[denote:20240831T143122][Hépatite B]] ,[[denote:20240831T143008][Hépatite C]],[[denote:20240831T143304][Hépatite D]]  : forme chronique
+- virus non hépatotropes : [[denote:20240818T121442][Cytomégalovirus (CMV)]] ,[[denote:20240818T121417][Epstein-Barr virus (EBV)]] ,[[denote:20240831T142847][HSV]] ,[[denote:20240819T172039][VIH]]
+* Tests
+|          | A          | B           | C           | D          | E          |
+|----------+------------+-------------+-------------+------------+------------|
+| Indirect | IgM et IgG | Ac anti HBs | Ac anti HCV | IgM et IgG | IgM et IgG |
+|          |            | et HBc      |             | anti HDV   | ante HEV   |
+| Direct   | ARN        |             | ARN         | ARN        | ARH        |
+* Footnotes
+
+
+[fn:1] Sauf hépatite E chez les immunodéprimés
