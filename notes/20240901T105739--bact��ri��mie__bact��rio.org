@@ -1,0 +1,23 @@
+#+title:      Bactériémie
+#+date:       [2024-09-01 Sun 10:57]
+#+filetags:   :bactério:
+#+identifier: 20240901T105739
+
+Selon la porte d'entrée
+| Urinaire       | [[denote:20240829T230553][Escherichia coli]],[[denote:20240816T121324][Entérobactéries]]                                  |
+|                | [[denote:20240612T233531][Pseudomonas aeruginosa]]                                            |
+|----------------+-------------------------------------------------------------------|
+| Digestive      | [[denote:20240829T230553][Escherichia coli]],[[denote:20240816T121324][Entérobactéries]] dont                             |
+|                | [[denote:20240829T215907][Salmonella typhi]],[[denote:20240515T224650][Campylobacter]]                                    |
+|                | [[denote:20240816T121758][Listeria monocytogenes]] ,[[denote:20240612T233731][Streptocoque digestifs]]                    |
+|                | [[denote:20240816T121538][Entérocoques]]                                                      |
+|----------------+-------------------------------------------------------------------|
+| Pulmonaire     | [[denote:20240831T173233][Streptococcus pneumoniae]], Coxiella burnetti                       |
+|----------------+-------------------------------------------------------------------|
+| Cutané         | [[denote:20240828T192156][Staphylocoque aureus]],[[denote:20240612T233631][Staphylocoques]] coagulase négative (cathéter) |
+|                | [[denote:20240828T185327][Streptocoques pyogenes]]                                            |
+|----------------+-------------------------------------------------------------------|
+| ORL            | [[denote:20240831T173233][Streptococcus pneumoniae]], autres [[denote:20240612T233731][streptocoque]]                     |
+|                | anaérobies                                                        |
+|----------------+-------------------------------------------------------------------|
+| Bucco-dentaire |                                                                   |
