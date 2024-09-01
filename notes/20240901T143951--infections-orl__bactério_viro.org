@@ -1,0 +1,8 @@
+#+title:      Infections ORL
+#+date:       [2024-09-01 Sun 14:39]
+#+filetags:   :bactério:viro:
+#+identifier: 20240901T143951
+
+- Rhino-pharyngite : entérovirus,[[denote:20240831T114640][grippe]]
+- [[denote:20240515T224540][Angines]]
+- [[denote:20240901T144149][Otite moyenne aigüe]]

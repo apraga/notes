@@ -24,7 +24,7 @@ résistance à la phagocytose
 - Pyogène = responsiable d'infections suppurées
 
 * Clinique
- - non invasive = [[denote:20240515T224540][angine]] érythémateuse/érythémato-pultacée, otite moyenne aigüe de l'enfant, scarlatine, infection cutanée
+ - non invasive = [[denote:20240515T224540][angine]] érythémateuse/érythémato-pultacée,[[denote:20240901T144149][Otite moyenne aigüe]] de l'enfant, scarlatine, infection cutanée
  - invasive : cutanée sévère (fasciite nécrosante), septicémie, choc toxique streptococcique
 ** Complications post-streptococciques
 :PROPERTIES:

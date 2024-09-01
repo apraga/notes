@@ -1,0 +1,11 @@
+#+title:      Infections broncho-pulmonaires
+#+date:       [2024-09-01 Sun 14:49]
+#+filetags:   :bactério:viro:
+#+identifier: 20240901T144928
+
+- Bronchite : infection des bronches. Toux+/- fièvre. Virale le plus souvent, diagnostic clinique. Si persiste : coqueluche ?
+- Bronchiolite :  infection des bronchioles. Fréquent chez le jeune enfant, grave chez les nouveaux-nés. VRS
+- [[denote:20240901T145409][Pneumonies]]
+- [[denote:20240831T114640][Grippe]]
+- [[denote:20240515T225630][Légionelle]]
+- [[denote:20240831T232003][Mycobacterium tuberculosis]]

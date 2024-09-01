@@ -1,5 +1,5 @@
-#+title: Légionelle
-#+filetags: :bacterio:bactéries:
+#+title:      Legionella pneumophiliea
+#+filetags:   :bactérie:bactério:
 
 *Déclaration obligatoire !*
 
