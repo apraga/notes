@@ -2,6 +2,8 @@
 #+filetags:   :bactérie:bactério:
 
 *Déclaration obligatoire !*
+Sérogroupe 1 est très impliqué en pathologie humaine
+Intracelluaire
 
 * Physiopathologie
 - Inhalation d'aérosole depuis source hydrotellurique
@@ -23,8 +25,8 @@ Non spécifique mais y penser si
 - pas d'amélioration sous β-lactamine
 
 * Diagnostique
-1. antigénurie: - si positive = confirmé -> culture échantillon respiratoire (viséo épidémio)
-2. sinon : PCR échantillion respiratoir (immunodéprimé++)
+1. antigénurie pour sérogroupe 1: - si positive = confirmé -> culture échantillon respiratoire (viséo épidémio)
+2. sinon : PCR échantillon respiratoire (immunodéprimé++)
 
 Attention: Antigénurie =
 - seulement type 1 (85%) -> PCR si négatif/suspicion
@@ -34,6 +36,6 @@ Culture = croissance lente (3-5 jours), sur BCYE
 
 * Antibiotique
 - macrolide (azithromycine) si peu sévère 7-14 jours
-- sinon FQ ou assoication 2 parmi macrolide, FQ, rifampicine
+- sinon FQ ou association 2 parmi macrolide, FQ, rifampicine
 - pas de résistance décrite !
 

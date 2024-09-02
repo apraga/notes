@@ -12,8 +12,7 @@ Entérobactéries
 - *BLSE* = inhibée par acide clavulanique => *"bouchon de champagne"*
   - synergie C3G/C4G - ticar + acide clavulanique
   - ne touche pas les carbapénèmes
-  - cefoxitine non touchée => permet de différencer d'une
-    céphalosporinase déréprimée (voir tableau)
+  - cefoxitine non touchée => permet de différencier d'une céphalosporinase déréprimée (voir tableau)
 
 |               | Pénicillinase | Pénicillinase déréprimée | Céphalo sporinase | Céphalo. déréprimée | BLSE    | Carba pénémase |
 |---------------+---------------+--------------------------+-------------------+---------------------+---------+----------------|

@@ -85,7 +85,9 @@ Séro EBV, CMV
 CD4+ < 200/mm^3 : cotrimoxazole pour les infections opportunistes. Prioritaires sur le traitement antirétroviral !
 ** Objectif
 T CD4+ > 500/mm^3 et 0 symptômes
-
+- +1 mois : -2 log10 copies par mL
+- +3 mois : < 400 copies/mL
+- +6 mois : indétectable
 Primo:
 - objectif = diminuer contagiosité.
 - Utiliser traitement avec forte barrière génétique
