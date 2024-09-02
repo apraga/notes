@@ -18,3 +18,8 @@ SNP-array :
 -
 - hétérodisomie uniparentale : 1 seule couleur mais avec les 3 bandes
  [[file:images/upd-achropuce.jpg]]
+* Dossiers
+Mosaïque
+MR-2100056 chr13 : pas d'ACPA mais Tristan disponible pour en discuter. SNP-array possible
+https://portail.auragen.fr/DATA/MR-2100056/manual/cnv_curated/MR-2100056_chr13.jpg
+MR-2000312 : Charles relancé
