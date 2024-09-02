@@ -4,10 +4,18 @@
 #+identifier: 20240829T230553
 
 
-- Bacille gram négatif, mobile, oxydase négative, nitrase-réductase positive
+- Bacille gram négatif, non exigeant
+- Mobile, oxydase négative, nitrase-réductase positive
+* Diagnostic
 - Urine : rose sur milieu chromogène (β-glucoronidase positive)
-- Sensbilité naturelles aux antibiotiques actif sur BGN
+- Sensibilité naturelles aux antibiotiques actif sur BGN
+- MALDI-TOF: attention à la confusion avec [[denote:20240829T225530][Shigella spp]] (sérotypage, biomol)
+
+À compléter si besoin par sérotypag, gènes codant pour des facteurs de virulence
+* Épidémio
+- [[denote:20240515T224830][Diarrhées]] ,[[denote:20240602T154150][Infections urinaires]]
+- Communautaire mais principale bactérie associée aux soins
+* Résistance
 - Groupe 1 :
   - céphalosporinase chromosomique de très bas niveau.
-  - Résistance acquise enzymatique : pénicillinase, β-lactamase à
-    spectre étendues, céphalosporinase de haut niveau, carbapénémase
+  - Résistance acquise enzymatique : pénicillinase, β-lactamase à spectre étendue, céphalosporinase de haut niveau, carbapénémase

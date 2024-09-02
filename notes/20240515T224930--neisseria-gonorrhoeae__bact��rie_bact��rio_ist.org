@@ -2,9 +2,11 @@
 ​#+filetags: :bactério:ist:
 
 - Cocci gram négatif
-- *Fragile* sensiblite variation températiure => gélose sang cuit/chocolate supplémenta
+- *Fragile*, sensible variation température => gélose sang cuit/chocolat supplémenté
 - Aérobie stricte mais *enrichi CO_2*
-- Pathogène strict home
+- Pathogène strict hommee
+- Extra ou intracellulaire
+- Diplocoque gram négatif
 
 * Épidémio
 - adulte jeunes 43%
