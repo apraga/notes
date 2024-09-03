@@ -1,0 +1,12 @@
+#+title:      A general framework for estimating the relative pathogenicity of human genetic variants
+#+date:       [2024-09-03 mar. 15:17]
+#+filetags:   :bib:facebook:
+#+identifier: 20240903T151755
+#+reference:  kircher2014general
+
+On s'intéresse au modèle de mutation (voir le supplementary)
+
+Génome de 6 primates : comparaison entre l'ancêtre humain-chimpanzé avec le génome humain aligné (sur l'ancêtre ?)
+Résultat : taux de mutation par bloc de 100kb
+Données disponible ici
+http://cadd.gs.washington.edu/simulator
