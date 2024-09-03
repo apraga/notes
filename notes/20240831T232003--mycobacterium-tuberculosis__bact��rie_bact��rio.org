@@ -40,7 +40,7 @@ Test immuno : intradermo réaction à la tuberculine (IDR), interféron γ  (IGR
 Habituellement sensible mais recherche de résistance indispensable
 * Traitement
 Quadrithérapie pour éviter résistance
-- isoniazied
+- isoniazide
 - rifampicien
 - éthambutol
 - pyrazinamide

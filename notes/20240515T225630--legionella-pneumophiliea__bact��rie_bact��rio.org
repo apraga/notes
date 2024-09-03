@@ -2,8 +2,7 @@
 #+filetags:   :bactérie:bactério:
 
 *Déclaration obligatoire !*
-Sérogroupe 1 est très impliqué en pathologie humaine
-Intracelluaire
+Intracellulaire
 
 * Physiopathologie
 - Inhalation d'aérosole depuis source hydrotellurique
@@ -31,10 +30,12 @@ Non spécifique mais y penser si
 Attention: Antigénurie =
 - seulement type 1 (85%) -> PCR si négatif/suspicion
 - persiste (parfois 1 an !)
+- technique immunochromatographique. Chauffer pour augmenter sensibilité et spécificité
 
 Culture = croissance lente (3-5 jours), sur BCYE
 
 * Antibiotique
+Intracellulaire donc résiste aux β-lactimines (et sécrétion d'une β-lactamase)
 - macrolide (azithromycine) si peu sévère 7-14 jours
 - sinon FQ ou association 2 parmi macrolide, FQ, rifampicine
 - pas de résistance décrite !

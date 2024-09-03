@@ -1,19 +1,30 @@
 #+title:      Pseudomonas aeruginosa
 #+filetags:   :bactérie:bactério:
 
-- Bacille Gram négatif, très mobile
+- Bacille Gram négatif, très mobile (ciliature polaire !)
+- Anaérobie stricte mais non exigeante
 - Origine : environnement++. saprophyte des milieux humides
 - *Opportuniste* : 10% des infections en hospitalisation
   - infection nosocomiale (matériel) ou . 1ere bactérie en réa
   - mucoviscidose: colonisation ou infection bronchopulmonaire chronique
 
-- Facteurs de virulence : exotoxine, exoprotéines, hémolysine
+* Phyisopath
+/La/ bactérie opportuniste par excellence.
+Origine dans l'environnement, peu pathogène
+
+Devient pathogène si sytème immunitaire fragile
+
+- Nombreux facteurs de virulence : exotoxine, exoprotéines, hémolysine
 - Facteur d'adhésion
 - Forte capacité à former des biofilms
 
 - Catalase positif
 - lactose négatif
-
+* Clinique
+- Pneumpathies (réa++)
+-[[denote:20240602T154150][Infections urinaires]]  (sonde)
+- bactériémie (cathéter)
+- infections cutanées (brùlé)
 * Quand réaliser un antibiogramme
 - suspicion responsable d'infection
 - colonisation de patients fragile (ID, intbués)
@@ -25,9 +36,7 @@
 - Oxydase positif (!= entérobactéries) -> test rapide pour différencier les 2
 
 * Résistance
-Naturellement plus résistante que d'autres Bacille gram -
-
-
+Nombreuses résistances naturelles...
 ** Résistance naturelle :
  - amox
  - C1G, C2G, *céfotaxime* (/! utilisé pour mécanisme/), ceftriaxone, *ertapénème*
