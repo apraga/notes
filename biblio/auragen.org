@@ -1286,8 +1286,8 @@ CLOSED: [2024-07-18 Thu 17:09] SCHEDULED: <2024-07-18 Thu>
 :MONTH:    feb
 :PAGES:    569–574
 :END:
-**** Modèles
-****** DONE Prevalence estimation for monogenic autosomal recessive diseases using population-based genetic data
+*** Modèles de mutation
+***** DONE Prevalence estimation for monogenic autosomal recessive diseases using population-based genetic data
 CLOSED: [2024-07-18 Thu 17:15] SCHEDULED: <2024-07-18 Thu>
 :PROPERTIES:
 :TITLE:    Prevalence estimation for monogenic autosomal recessive diseases using population-based genetic data
@@ -1305,7 +1305,7 @@ CLOSED: [2024-07-18 Thu 17:15] SCHEDULED: <2024-07-18 Thu>
 :MONTH:    apr
 :PAGES:    659–669
 :END:
-****** TODO [#A] Statistical methods for assessing the effects of de novo variants on birth defects
+***** TODO [#A] Statistical methods for assessing the effects of de novo variants on birth defects
 :PROPERTIES:
 :TITLE:    Statistical methods for assessing the effects of de novo variants on birth defects
 :BTYPE:    article
@@ -1321,9 +1321,9 @@ CLOSED: [2024-07-18 Thu 17:15] SCHEDULED: <2024-07-18 Thu>
 :YEAR:     2024
 :MONTH:    mar
 :END:
-****** TODO https://en.wikipedia.org/wiki/Substitution_matrix
-***** Selon nucléotide adjacents
-****** DONE Patterns and rates of exonic de novo mutations in autism spectrum disorders
+***** TODO https://en.wikipedia.org/wiki/Substitution_matrix
+**** Selon nucléotide adjacents
+***** DONE Patterns and rates of exonic de novo mutations in autism spectrum disorders
 CLOSED: [2024-07-25 Thu 16:20]
 :PROPERTIES:
 :TITLE:    Patterns and rates of exonic de novo mutations in autism spectrum disorders
@@ -1341,7 +1341,7 @@ CLOSED: [2024-07-25 Thu 16:20]
 :MONTH:    apr
 :PAGES:    242–245
 :END:
-****** DONE Most rare missense alleles are deleterious in humans: implications for complex disease and association studies
+***** DONE Most rare missense alleles are deleterious in humans: implications for complex disease and association studies
 CLOSED: [2024-07-25 Thu 15:40]
 :PROPERTIES:
 :TITLE:    Most rare missense alleles are deleterious in humans: implications for complex disease and association studies
@@ -1355,7 +1355,7 @@ CLOSED: [2024-07-25 Thu 15:40]
 :YEAR:     2007
 :PUBLISHER: Elsevier
 :END:
-****** KILL Neighboring-nucleotide effects on the rates of germ-line single-base-pair substitution in human genes
+***** KILL Neighboring-nucleotide effects on the rates of germ-line single-base-pair substitution in human genes
 CLOSED: [2024-07-25 Thu 17:13]
 :PROPERTIES:
 :TITLE:    Neighboring-nucleotide effects on the rates of germ-line single-base-pair substitution in human genes
@@ -1369,7 +1369,7 @@ CLOSED: [2024-07-25 Thu 17:13]
 :YEAR:     1998
 :PUBLISHER: Elsevier
 :END:
-****** DONE A framework for the interpretation of de novo mutation in human disease
+***** DONE A framework for the interpretation of de novo mutation in human disease
 CLOSED: [2024-07-25 Thu 17:49]
 :PROPERTIES:
 :TITLE:    A framework for the interpretation of de novo mutation in human disease
@@ -1384,7 +1384,7 @@ CLOSED: [2024-07-25 Thu 17:49]
 :DOI:      10.1038/ng.3050
 :URL:      http://dx.doi.org/10.1038/ng.3050
 :END:
-****** TODO Interpreting <i>de novo</i> Variation in Human Disease Using denovolyzeR
+***** TODO Interpreting <i>de novo</i> Variation in Human Disease Using denovolyzeR
 :PROPERTIES:
 :TITLE:    Interpreting <i>de novo</i> Variation in Human Disease Using denovolyzeR
 :BTYPE:    article
@@ -1398,7 +1398,7 @@ CLOSED: [2024-07-25 Thu 17:49]
 :DOI:      10.1002/0471142905.hg0725s87
 :URL:      http://dx.doi.org/10.1002/0471142905.hg0725s87
 :END:
-****** TODO Evidence for 28 genetic disorders discovered by combining healthcare and research data
+***** TODO Evidence for 28 genetic disorders discovered by combining healthcare and research data
 :PROPERTIES:
 :TITLE:    Evidence for 28 genetic disorders discovered by combining healthcare and research data
 :BTYPE:    article
@@ -1412,7 +1412,22 @@ CLOSED: [2024-07-25 Thu 17:49]
 :DOI:      10.1038/s41586-020-2832-5
 :URL:      http://dx.doi.org/10.1038/s41586-020-2832-5
 :END:
-****** Integrated Bayesian analysis of rare exonic variants to identify risk genes for schizophrenia and neurodevelopmental disorders
+***** DONE [#B] A general framework for estimating the relative pathogenicity of human genetic variants
+CLOSED: [2024-09-03 mar. 15:26]
+:PROPERTIES:
+:TITLE:    A general framework for estimating the relative pathogenicity of human genetic variants
+:BTYPE:    article
+:CUSTOM_ID: kircher2014general
+:AUTHOR:   Kircher, Martin and Witten, Daniela M and Jain, Preti and O'roak, Brian J and Cooper, Gregory M and Shendure, Jay
+:JOURNAL:  Nature genetics
+:VOLUME:   46
+:NUMBER:   3
+:PAGES:    310--315
+:YEAR:     2014
+:PUBLISHER: Nature Publishing Group US New York
+:END:
+
+***** Integrated Bayesian analysis of rare exonic variants to identify risk genes for schizophrenia and neurodevelopmental disorders
 :PROPERTIES:
 :TITLE:    Integrated Bayesian analysis of rare exonic variants to identify risk genes for schizophrenia and neurodevelopmental disorders
 :BTYPE:    article
@@ -1426,7 +1441,7 @@ CLOSED: [2024-07-25 Thu 17:49]
 :DOI:      10.1186/s13073-017-0497-y
 :URL:      http://dx.doi.org/10.1186/s13073-017-0497-y
 :END:
-****** Integrative modeling of transmitted and <i>de novo</i> variants identifies novel risk genes for congenital heart disease
+***** Integrative modeling of transmitted and <i>de novo</i> variants identifies novel risk genes for congenital heart disease
 :PROPERTIES:
 :TITLE:    Integrative modeling of transmitted and <i>de novo</i> variants identifies novel risk genes for congenital heart disease
 :BTYPE:    article
@@ -1440,7 +1455,7 @@ CLOSED: [2024-07-25 Thu 17:49]
 :DOI:      10.15302/j-qb-021-0248
 :URL:      http://dx.doi.org/10.15302/J-QB-021-0248
 :END:
-****** Integrated Model of De Novo and Inherited Genetic Variants Yields Greater Power to Identify Risk Genes
+***** Integrated Model of De Novo and Inherited Genetic Variants Yields Greater Power to Identify Risk Genes
 :PROPERTIES:
 :TITLE:    Integrated Model of De Novo and Inherited Genetic Variants Yields Greater Power to Identify Risk Genes
 :BTYPE:    article
