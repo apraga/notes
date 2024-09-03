@@ -1,6 +1,8 @@
-#+title: Syphilis
-#+filetags: :bactério:ist:
-/Treponema pallidum/
+#+title:      Treponema pallidum (syphilis)
+#+filetags:   :bactério:ist:
+
+Spirochète hélicoïdal/spiralé, mobile
+Prend mal la coloration de Gram, ne se cultive pas /in vitro/ !
 * Primaire
 - transmission sexuelle
 - incubation 10-90 non contagieuse
@@ -23,7 +25,7 @@
     - spécifique mais cicatrice sérologique...
 
   - non spécifique (TNT = non tréponémique ou VDRL):
-    - antigène de type phospholipdes (membrane mais aussi mitochrondries) par agglutintation
+    - antigène de type phospholipides (membrane mais aussi mitochondries) par agglutination
     - infection active mais *peu spécifique*
 
     |      | TT+                        | TT -         |

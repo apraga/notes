@@ -7,7 +7,7 @@ Non exigeante, aéro-anaérobie facultative
 Fermente le glucose
 
 TIAC: surtout des[[denote:20240829T215907][Salmonella spp]]
-Mécanisme invasif + production de toxines
+Mécanisme invasif + production de toxines (sérotype 1 produit shiga-toxine)
 * Clinique
 - diarrhée (syndrome gastroentéritique)
 - dysentérie aigüe: fièvre, douleurs abdo, épreinte, tenesme
@@ -17,11 +17,11 @@ Clinique, confirmé par la coproculture
 Milieu : Hektoen, SS
 MALDI TOF
 * Traitement
-- diarrhée infectieuse aigue = symptom
+- [[denote:20240515T224830][Diarrhées]] infectieuse aigue = symptom
   - antipyrétique,
-  - maintien hydro-élecrique
+  - maintien hydro-électrique
   - régime sans résidu
   - ! contre-indication ralentisseur du transite (lopéramique)
-  - antibio si forme grave > 3 ours, ID+++ : FQ/azithromycique
+  - antibio si forme grave > 3 jours, ID+++ : FQ/azithromycique
 - bactériémie : FQ/azithromycine,/ceftriaxone
  Déclaration obligatoire : TIAC

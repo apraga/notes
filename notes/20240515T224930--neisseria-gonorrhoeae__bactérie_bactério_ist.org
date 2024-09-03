@@ -7,6 +7,7 @@
 - Pathogène strict hommee
 - Extra ou intracellulaire
 - Diplocoque gram négatif
+- Urgence médicale
 
 * Épidémio
 - adulte jeunes 43%
@@ -23,8 +24,10 @@
 - fellation non protégée
 
 * Diagnostic
+*Confirmer toute suspicion d'urétrite*: ATBg indispensable
+Prélevement selon la symptomatologie (urinaire, écoulement...)
 - ED:sensible pus uréthral homme sympto
-- culture *> 2j* si symptomatique
+- culture *> 2j* si symptomatique :  technique de référence (ATBg, sérotypage...)
 - *biologie moléculaire*
   - autoprélèvement vaginal, 1er jet urine
   - anal, gorge (PCR plus sensible que la culture)

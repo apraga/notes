@@ -50,6 +50,8 @@ Excrété
   - NB: test d'agglutination pour différencier des staph coag négative théoriquement possible (alternative MALDI TOF)
 
 * Sensibilité et résistance
+/Toujours chercher la sensibilité à la méticilline/
+Si pneumonie nécrosante, rechercher sensibilité aux antibio antitoxiniques (clindamycine, rifampicine, linézolide)
 Résistance fréquente à l'hôpital
 - β-lactamines :
   - phénotype sauvage sensible

@@ -3,7 +3,8 @@
 #+filetags:   :bactérie:bactério:
 #+identifier: 20240829T215907
 
-Bacilles à Gram négatikf mobile (ciliature péritriche)
+
+Bacilles à Gram négatif mobile (ciliature péritriche)
 Non exigeante, anaérobie facultative
 Ferment le glucose
 

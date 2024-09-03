@@ -27,14 +27,27 @@ Voir [[denote:20240831T175811][Encéphalite]],[[denote:20240831T185757][Myélite
 | Cyto  | 1-2 cellules | > 500       | 100-500         | 100-500  | 100-500 |
 |       |              | PNN         | Lympho          | Mixte    | Lympho  |
 | Glyco | 2/3 glycémie | Hypo        | Hypo            | Hypo     | Normal  |
+|       | 2.5-3.5      |             |                 |          |         |
 | Prot  | 0.15-0.30    | > 1         | < 1             | Hyper    | < 1     |
 |       |              |             |                 |          |         |
 
-  -[[denote:20240731T202623][Biochimie]] (voir notamment [[denote:20240731T202623::#h:dddf16ac-9013-4649-a58f-82be7c3ba966][lacticorachie]] )
-    - bactérie: CRP, PCT élevé, protéinorachie > 1G/L, glycorachie/glycémie < 0.5
-    - virale : attention: *absence de pléocytose parfois*
-  - Gélose sang cuit + vitamine sous CO_{2} +/- anaérobie, bouillon d'enrichissement
-
+|           |                      | Bactéries    | Virus                                |
+| [[denote:20240731T202623][Biochimie]] | CRP, PCT             | trés élevée  | N ou peu élevée                      |
+|           | Protéinorachie       | > 1          |                                      |
+|           | Glycorachie/glycémie | < 0.5        |                                      |
+| Cytologie |                      | > 500 c./mm3 |                                      |
+|           | Formule              | PNN          | mixte ou majorité mononuc/lympho     |
+|           |                      |              | (+ mycobactérie, listeria, brucella) |
+|           |                      |              |                                      |
+  (voir notamment [[denote:20240731T202623::#h:dddf16ac-9013-4649-a58f-82be7c3ba966][lacticorachie]] )
+*Bactérienne possible sans pléiocytose (au début)*
+    - Gélose sang cuit + vitamine sous CO_{2} +/- anaérobie, bouillon d'enrichissement
+** Gram
+- Cocci Gram+ diplocoque/chainette : [[denote:20240831T173233][Streptococcus pneumoniae]] Strepto agalactiæ (nouveau-né)
+- Cocce Gram- Diplocoque :[[denote:20240816T121647][Neisseria meningitidis]]
+- Bacille Gram- : [[denote:20240816T121919][Hæmophilus influenza]], [[denote:20240829T230553][Escherichia coli]]
+- Bacille Gram+ : [[denote:20240816T121758][Listeria monocytogenes]]
+-
 ** Autres
 Antigène pneumocoque si contexte
 PCR si culture négative

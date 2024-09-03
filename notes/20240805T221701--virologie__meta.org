@@ -31,10 +31,14 @@ polymérase par le virus+++)
 - non pathogène pour humain
 - potientiel biomarqueur immunitaire chez patients transplantés
 
-** Prévalence
+* Prévalence
 - EBV, HHV6, VZV 95%
 - HSV2 60-80%
 - CMV 50% (plus dans les pays du sud)
 - HSV1 10-50
 - HHV8 < 10
 
+
+* ADN ou ARN ?
+ADN: papillomavirus, HBV, HSV
+ARN: HCV, VIH
