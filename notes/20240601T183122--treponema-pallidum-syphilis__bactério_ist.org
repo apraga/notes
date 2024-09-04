@@ -28,11 +28,13 @@ Prend mal la coloration de Gram, ne se cultive pas /in vitro/ !
     - antigène de type phospholipides (membrane mais aussi mitochondries) par agglutination
     - infection active mais *peu spécifique*
 
-    |      | TT+                        | TT -         |
-    |------+----------------------------+--------------|
-    | TNT+ | active ou récemment traité | faux positif |
-    | TNT- | traité et guérie           | trop précoce |
-
+    |           | TT+                        | TT -         |
+    |-----------+----------------------------+--------------|
+    | VRDL/TNT+ | active ou récemment traité | faux positif |
+    | VRDL/TNT- | traité et guérie           | trop précoce |
+Contrôle 3 semaine si TT négatif ou équivoque ou TT+ mais TNT-
 * Cas particuliers
 - dépistage 1er trimestre de la grosses (dramatique pour le foetus)
 - neurosyphilis : PCR (passage naturel IgG spécifique donc le test classique a peu d'intérêt)
+* Traitement
+Benzathine benzylpenicilline

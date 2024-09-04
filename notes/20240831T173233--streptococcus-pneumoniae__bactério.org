@@ -3,7 +3,26 @@
 #+filetags:   :bactério:
 #+identifier: 20240831T173233
 
-- Aéro/anaérobie, fragile, commensal oropharynx
-- Sensibilité diminués pénicilline (PLP) 30-60% => *CMI péni G, amox, céfotaxime*
+Cocci gram+ immobile
+- Aéro/anaérobie, fragile
+- hémolyse α (partielle), sensible optochine
+  Strictement humain, commensal rhinoropharynx
+* Clinique
+Infections communautaires
+[[denote:20240901T145409][Pneumonies]], [[denote:20240901T143951][Infections ORL]]
+[[denote:20240731T205020][Méningites bactériennes]]
+* Diagnostic
+Bactérie fragile
+Culture (hémocultures++)
+* Résistances
+CMI β-lactamines *indispensable* ( *péni G, amox, céfotaxime*)
+- Sensibilité diminués pénicilline (PLP) 30-60% =>
+* Traitement
+β-lactamines restent la 1ere intention
+Voir
+- [[denote:20240901T144149][Otite moyenne aigüe]]
+- [[denote:20240901T145409::#h:c2ccf78d-f2df-4c9f-b21d-e3346b2ffdf5][Pneumonies::Traitement]]
+ [[denote:20240731T205020][Méningites bactériennes]]
 - C3G IV + cortico. Pas de prophylaxie.
-- Vaccin 13 sérotype chez l'enfant
+* Prévention
+- Vaccin 13 sérotype chez l'enfant obligatoire
