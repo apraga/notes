@@ -7,10 +7,10 @@ Obstruction voies biliaire intra et extrahépatique
 
 - bilirubine totale et conjuguée augmenté++
 - Acides bilaire (sang, urines) augmenté (utile pour cholestase gravidique)
-- PAL augmenté++
-- GGT augmenté
+- [[denote:20240702T230230][Phosphatase alcaline]] augmenté++
+- [[denote:20240702T230347][γGT]] augmenté
 - 5’ nuclétidase augmenté (plus spécifique grossesse, enfance, maladie osseuse)
-- stétorrhée
+- stéatorrhée
 
 * Orientation
 - augmentation PAL: origine plutôt extra-hépatique
