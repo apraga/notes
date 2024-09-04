@@ -1469,3 +1469,67 @@ CLOSED: [2024-09-03 mar. 15:26]
 :DOI:      10.1371/journal.pgen.1003671
 :URL:      http://dx.doi.org/10.1371/journal.pgen.1003671
 :END:
+**** Linkage desequilibrium
+***** DONE The Linkage-Disequilibrium and Recombinational Landscape in Daphnia pulex
+CLOSED: [2024-09-04 mer. 10:39]
+:PROPERTIES:
+:TITLE:    The Linkage-Disequilibrium and Recombinational Landscape in Daphnia pulex
+:BTYPE:    article
+:CUSTOM_ID: lynch2022linkage
+:AUTHOR:   Lynch, Michael and Ye, Zhiqiang and Urban, Lina and Maruki, Takahiro and Wei, Wen
+:JOURNAL:  Genome Biology and Evolution
+:YEAR:     2022
+:EDITOR:   Lohmueller, Kirk
+:VOLUME:   14
+:NUMBER:   11
+:MONTH:    sep
+:ISSN:     1759-6653
+:DOI:      10.1093/gbe/evac145
+:URL:      http://dx.doi.org/10.1093/gbe/evac145
+:PUBLISHER: Oxford University Press (OUP)
+:END:
+***** DONE Selection of genetic instruments in Mendelian randomisation studies of sleep traits
+CLOSED: [2024-09-04 mer. 11:51]
+:PROPERTIES:
+:TITLE:    Selection of genetic instruments in Mendelian randomisation studies of sleep traits
+:BTYPE:    article
+:CUSTOM_ID: paz2023selection
+:AUTHOR:   Valentina Paz and Hassan S. Dashti and Stephen Burgess and Victoria Garfield
+:JOURNAL:  Sleep Medicine
+:YEAR:     2023
+:VOLUME:   112
+:NUMBER:   nil
+:PAGES:    342-351
+:DOI:      10.1016/j.sleep.2023.10.036
+:URL:      http://dx.doi.org/10.1016/j.sleep.2023.10.036
+:END:
+***** DONE Second-generation PLINK: rising to the challenge of larger and richer datasets
+CLOSED: [2024-09-04 mer. 11:53]
+:PROPERTIES:
+:TITLE:    Second-generation PLINK: rising to the challenge of larger and richer datasets
+:BTYPE:    article
+:CUSTOM_ID: chang2015plink
+:AUTHOR:   Christopher C Chang and Carson C Chow and Laurent CAM Tellier and Shashaank Vattikuti and Shaun M Purcell and James J Lee
+:JOURNAL:  GigaScience
+:YEAR:     2015
+:VOLUME:   4
+:NUMBER:   1
+:PAGES:    7
+:DOI:      10.1186/s13742-015-0047-8
+:URL:      http://dx.doi.org/10.1186/s13742-015-0047-8
+:END:
+***** DONE Population-specific long-range linkage disequilibrium in the human genome and its influence on identifying common disease variants
+CLOSED: [2024-09-04 mer. 12:10]
+:PROPERTIES:
+:TITLE:    Population-specific long-range linkage disequilibrium in the human genome and its influence on identifying common disease variants
+:BTYPE:    article
+:CUSTOM_ID: park2019population
+:AUTHOR:   Leeyoung Park
+:JOURNAL:  Scientific Reports
+:YEAR:     2019
+:VOLUME:   9
+:NUMBER:   1
+:PAGES:    11380
+:DOI:      10.1038/s41598-019-47832-y
+:URL:      http://dx.doi.org/10.1038/s41598-019-47832-y
+:END:

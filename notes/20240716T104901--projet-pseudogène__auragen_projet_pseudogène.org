@@ -3,6 +3,7 @@
 #+filetags:   :projet:pseudogene:auragen:
 #+identifier: 20240716T104901
 
+Revoir avec [[denote:20240904T093904][mercredi  4 septembre 2024 09:39]]
 
 * Contexte
 - on couvre 98% (régions codantes) mais les 2% sont vraiment un "trou"

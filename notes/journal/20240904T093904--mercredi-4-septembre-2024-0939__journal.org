@@ -1,0 +1,113 @@
+:PROPERTIES:
+:CUSTOM_ID: h:b015b977-c410-455e-8b24-1557163b531b
+:END:
+#+title:      mercredi  4 septembre 2024 09:39
+#+date:       [2024-09-04 mer. 09:39]
+#+filetags:   :journal:
+#+identifier: 20240904T093904
+#+bibliography: ../../biblio/auragen.bib
+# #+LATEX_CLASS_OPTIONS: [twocolumn]
+#+LATEX_CLASS: scrartcl
+#+options: toc:nil
+#+LaTeX_HEADER: \hypersetup{colorlinks = true, urlcolor = DodgerBlue4, linkcolor = black}
+#+LaTeX_HEADER: \usepackage[x11names]{xcolor}
+* Réunion Julien
+** Facebook
+- Valider le plan [[https://docs.google.com/document/d/1d-4VwSsthX4TFR3_0giiBGux0lyYYcJf-2c3heuSbg0/edit?usp=sharing][sur google drive]]
+- Format : document technique ou publi ? public, langue ?
+- Faut-il un prototype ou c'est une "démonstration" ?
+- Faut-il illustrer chaque catégorie sur un vrai exemple ?
+*** Modèle de mutation
+**** Probabilité de mutation /de novo/
+Plusieurs articles utilisent une matrice de substituion mais ne la donne pas
+- en exome[cite:@samocha2014framework] , probabilité de mutation par gène par type de variant en log10 : "good enough" (modèle simple mais corrigé)
+- une matrice par trinucléotide est [[https://github.com/TNTurnerLab/fitDNM/blob/main/input_data/mutation_rate_by_trinucleotide_matrix.txt][sur github]]
+Alternative : modèle du CADD qui donne un taux de mutation par blocs de 100kb (mais matrice disponible)[cite:@kircher2014general]
+
+Revue de [cite:@xie2024statistical] à finir
+**** TODO Probabilité variants hérité
+**** Quand des variants sont-ils indépendants ?
+Notion de /Linkage desequilibrium/
+***** Définition
+$D_{AB} = p_{AB} - p_A p_B$
+Normalisation : 2 formules
+1. $D' = \frac{D}{D_{max}}$ avec
+$$D_{max}= \begin{cases}
+\min\{p_A p_B,\,(1-p_A)(1-p_B)\} & \text{when } D < 0\\
+\min\{p_A (1-p_B),\,p_B(1-p_A)\} & \text{when } D > 0
+\end{cases}$$
+1. $$r^2=\frac{D^2}{p_A(1-p_A)p_B (1-p_B)}$$
+
+***** Solutions
+1. seuil en dur[cite:@paz2023selection] (étude dans Sleep medecine)
+   - distance > 500kb ou > 10kb
+   - corrélation : $r^2 < 0.01$ ou $0.1$ ou $0.2$ -> mais il faut des fréquences que l'on n'a pas !
+2. Base de données : [[https://ldlink.nih.gov/?tab=home][LDlink]] : limité aux SNPs mais on peut chercher autour d'un SNP avec LDassoc (seulement les SNPs)
+3. Plink [cite:@chang2015plink] permet de définir des blocs d'haplotypes.([[https://www.cog-genomics.org/plink/][logiciel]]). Semble restreint aux SNPs... Logiciel de 2014. Algorithme non publié ?
+
+Soit on fixe une limite en dur mais trouver d'autres articles.
+Il y a le problème des long-range aussi [cite:@park2019population] ...
+Soit on définit des blocs à partir de SNP (2. et 3. ci-dessus)
+**** Probabilité quand les variants sont dépendants ?
+Si on a une mesure de la LD, on peut retrouver $p_{AB}$.
+Proposition : SNP le plus proche
+*** Définition d'un syndrome
+>= 3 symptômes. Voir dans le Gorlin ?
+** Pseudogènes
+*** Résumé
+Ce qui est fourni est valable en hg19 seulement
+- [[https://github.com/Genome-Bioinformatics-RadboudUMC/ChameleolyserBEDs][les intervalles nécessaires en hg19]]
+- [[https://github.com/Genome-Bioinformatics-RadboudUMC/Chameleolyser][le code pour l'appel de variant]]
+Limites de leur approche
+- données d'exome (en génome on aura beaucoup de régions intergéniques...)
+- en hg19
+*** Non faisable sans cohorte
+- regénérer la liste des intervalles (régions homologue + celles avec une qualité d'alignement à 0) et code non fourni
+  - un étudiant en master a fait  [[https://github.com/Ale6prog/Homologous_hg38][un liftover]] (sans préciser les paramètres)
+  - Steyaert travaille sur une vertison «propre» ds code en hg38
+- l'appel des délétions homozygotes et des copies d'une région à une autre et code non fourni
+*** Intervalles
+Chameleolyser a besoin de
+- de régions pour faire l'appel de variants  i.e régions homologues (exoniques)
+- des régions à masquer dans le génome pour l'appel de variants . Parmi les régions utilisées pour l'appel de variant, on en choisit une parmi la liste des régions homologues.
+- de régions pour extraire les reads à remapper . Elle contient forcément les 2 régions ci-dessus.
+- (de régions définissant les exons seuls sur ces régions homologues  -> ne semble pas utilisé...)
+Mais aussi de la différence entre les régions homologues (à vérifier)
+*** Propositions
+Faire tourner le code en hg38
+- on se cantonne aux régions d'exomes
+- on refait le travail (reproductibilité)
+  - lifter les intervalles avec liftover (executable UCSC) en rajoutant des vérifications automatiques (impossible de vérifier à la main)
+    - pas de doublons
+    - les régions pour l'appel de variants + à masquer sont contenues dans les régions définissant les reads à extraire
+  - regénérer les différences entre les intervalles ?
+- tester sur NA12878
+*** Algorithme
+Définit les régions homologues en fusionnant
+- les gènes codant ayant des pseudogènes
+- les régions bien couvertes avec une qualité d'alignement = 0 en utilisant 250 exomes
+1. Extraction des reads du BAM sur les régions d'intérêt
+2. Appel de variant sur ce BAM (gatk + lofreq)
+3. Le BAM de l'étapee 1. est converti en FASTQ
+4. Alignement + appel de variant (gatk + lofreq)
+
+** ARID4 :noexport:
+** Congés :noexport:
+** Post-internat :noexport:
+** Conclusion
+Facebook:
+- scope : Orphanet Journal of Rare Disease
+- mettre des exemples pour chaque situation
+- modèle de mutation
+  - contacter les auteurs (?) pour avoir la matrice de mutation
+  - regarder rapidement pour indel (75% des diags sont des SNV)
+  - lire les articles fondateurs d'Haldane
+  - si on s'ennuie, petite appli web
+- indépendance: ne pas s'embêter et faire un rappel historique Centimorgan puis dire qu'on pourrair calculer les distances mais en pratique inutile
+  - citer bigSNP
+- prévalence de gènes dans la maladie: pas de base de donnée... objectif du CADD
+- on veut un article semblable à a lire : https://ojrd.biomedcentral.com/articles/10.1186/s13023-018-0948-6
+Écrire++
+
+Pseudogène : ok, le but est d'avoir quelque chose à la fin du stage pour exploiter les données après
+ARID4A: ok pour mettre Valentin en contact
