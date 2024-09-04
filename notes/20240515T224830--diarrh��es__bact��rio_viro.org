@@ -10,11 +10,11 @@ Bactéries :  coproculture standard = Salmonella, Shigella, Campylobacter, Yersi
   - virus : [[denote:20240904T230023][Norovirus]],[[denote:20240904T230042][Rotavirus]],[[denote:20240831T142116][Adénovirus]]
   -[[denote:20240828T192156][Staphylocoque aureus]], Bacillus cereus
   - Clostridium perfringens
-  - [[denote:20240829T230553][Escherichia coli]] entéro-toxinogêe et entéro-aggrégatif
+  - [[denote:20240829T230553][Escherichia coli]] entéro-toxinogène et entéro-aggrégatif
   - Vibrio cholerae
 
 ** Syndrome dysentérique
-- Selles nombreuses, afécales, glaireuses, mucopurulentes
+- Selles glairo-sanglantes, fièvre
 - Invasion + destruction des cellules épithéliales + inflammation locale
 - Causes
   - [[denote:20240829T225530][Shigella]] dysenteriae (toxine) ou non dysentreiae :
@@ -36,25 +36,7 @@ Bactéries :  coproculture standard = Salmonella, Shigella, Campylobacter, Yersi
 GEA Adulte : norovirus > rotavirus > adénovirus > astrovirus
 Enfant : rota > norovirus
 
-** Rotavirus
-- 1ere cause de gastroentérite aigüe chez l'*enfant* < 5 ans. Touche également adulte (ID, voyageur, contact enfant)
-- Épidémies hivernales 6-24mois
-- pas de vaccin
-** Norovirus
-:PROPERTIES:
-:CUSTOM_ID: norovirus-1
-:END:
-- 1ere cause de diarrhées virale chez l'*adulte*, 2e cause enfant < 5 ans
-- Clinique:
-  - début brutal, asympto 1/3, durée 12-60h, incubation courte (1-2 jours)
-  - immunodéprimé : risque diarrhée chronique
-- épidémies++ (collectivités)
-- critères de Kaplan = vomissement > 50% sujet, incubation moyenne 1-2 j, durée 12-60h, pas de bactéries à la coproculture
-- diagnostic selle : RT-PCR, 3 à 5 échantillons. 50% positifs pour conclure
-- précaution contact (gants, SHA, javel), arrêt maladie 48-72H après symptômes
-- vaccin: 6semaine-6mois de vie
-
 ** Autre
-Entérovirus mais il y a d'autres symptômes (angine, méningite)
+[[denote:20240905T001255][Entérovirus]] mais il y a d'autres symptômes (angine, méningite)
 - Astrovirus : GEA modérée, tous les âges
 - Adénovirus (40-41) : test rapide/RT-pcr, ttt sympto

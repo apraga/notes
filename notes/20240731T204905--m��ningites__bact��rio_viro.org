@@ -6,7 +6,7 @@
 Voir [[denote:20240831T175811][Encéphalite]],[[denote:20240831T185757][Myélite]]
 * Étiologies
 - [[denote:20240731T205116][virales]] = 90%
-  - entérovirus 70-90%, bénigne, arrêt des traitements antibactériens
+  - [[denote:20240905T001255][Entérovirus]] 70-90%, bénigne, arrêt des traitements antibactériens
   - sans encéphalite = habituellement bénin, guérit spontanément
 - [[denote:20240731T205020][bactériennes]] : diagnostic et traitement *urgent*
   - pronostic vital engagé à court term +/- séquelle neuro

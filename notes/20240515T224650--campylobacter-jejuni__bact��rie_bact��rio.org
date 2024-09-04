@@ -1,4 +1,4 @@
-#+title: Campylobacter jejuni
+#+title: Campylobacter spi
 ​#+filetags: :bactério:
 
 Bacille mobile à Gram négatif, spiralée/incurvée
@@ -6,7 +6,7 @@ Facteurs de virulence : adhésines, toxine CDT
 * Épidémio
 - Répartition mondiale
 - Une des cause les plus fréquentes des diarrhées infectieuses bactériennes communautaires
-- Microbiote digestive de nombreux animaux : /jejuni/ = oisaux, /coli= porc
+- Microbiote digestive de nombreux animaux : /jejuni/ = oiseaux, /coli= porc
 - transmission animale -> homme par *alimentation*
   - jejuni = oiseaux (donc penser à la consommation de volaille)[fn:1]
 - très mobile pour survivre dans le tube digestif

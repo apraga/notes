@@ -15,7 +15,7 @@ tremblement, crises épileptique
 - [[denote:20240831T142847][HSV]] 1 : nécrosante (primo ou réactivation)
 - [[denote:20240831T142847][HSV]] 2 : néonatale
 - rubéole
-- entérovirus : rhomboencéphalite
+- [[denote:20240905T001255][Entérovirus]] : rhomboencéphalite
 - virus grippaux : inflammatoire post-infectieux
 - VIH
 - CMV
