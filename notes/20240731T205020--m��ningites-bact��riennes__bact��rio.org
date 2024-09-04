@@ -45,3 +45,5 @@
 - Communautaire = > 39° + syndrome méningé (céphalé, raideur nuque, vomissement, photophobie)
 - Néonat : non spécifique => PL si fièvre sans cause évidente
 - Méningoencéphalitue : +signe neuro/psy
+* Traitement
+- ED en faveur de pneumocoque ou négatif sans argument pour listériose : C3G en probabiliste

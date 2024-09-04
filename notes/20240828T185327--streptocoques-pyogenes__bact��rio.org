@@ -9,11 +9,12 @@
 - Transmission = aérienne, contact plaie infectée, accouchement.
 
 * Facteurs de pathogénicité
-résistance à la phagocytose
- - protéine M
- - encapsulation
+- résistance à la phagocytose
+  - protéine M
+  - encapsulation
 
 * Facteurs de virulence
+Nombreux facteurs de virulence:
  - enzyme :hyluronidase, streptolysine O et S (favorisent l'invasion tissulaire)
  - exotoxine : activation et prolifération d'une sous population lymphocytes T -> cytokine proinflammatoires
  - Streptolysine = hémolyse β-complète
@@ -36,7 +37,7 @@ Rare = immunologique (analogie protéine M et certaines protéines du soi)
 
 * Diagnostic
 - bactérie exigeante -> gélose sang +/- ANC (inhibe Gram-)
-- β-hémolyse
+- petites et grisâtries avec β-hémolyse
 - Résistance optochine, sensible bacitracine
 - Catalase -, oxydase -
 
@@ -44,3 +45,5 @@ Rare = immunologique (analogie protéine M et certaines protéines du soi)
 - β-lactamine : sensible
 - macrolide : sauvage sensible, résistance par mécanisme d'efflux,
   modiifcation cible ARN23S
+* Traitement
+1ere intention : amox

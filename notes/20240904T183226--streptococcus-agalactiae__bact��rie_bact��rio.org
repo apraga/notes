@@ -1,0 +1,22 @@
+#+title:      Streptococcus agalactiae
+#+date:       [2024-09-04 mer. 18:32]
+#+filetags:   :bactérie:bactério:
+#+identifier: 20240904T183226
+
+Cocci Gram+ immobiles non sporulé
+Exigeant (gélose au sagn)
+β-hémolyse (totale)
+
+* Épidémiologie
+Première cause d'infection materno-fœtale dans les pays industrialisé par contamination pendant l'accouchement voie basse
+- précoce : bactériémie,[[denote:20240901T145409][Pneumonies]]
+- tardive [[denote:20240731T205020][Méningites bactériennes]]
+Incidence élevée chez l'enfant et sujet âgé ([[denote:20240731T205020][Méningites bactériennes]], infections ostéo-articulaires...)
+Portage vaginal 10-30%
+* Résistances
+*Toujours sensibles β-lactamines*
+Acquises : macriolides, tétracyclines
+* Traitement
+Aminopénicilline
+* Dépistage ciblé femme enceinte
+34-38SA sur prélèvement vaginal -> prophylaxie si besoin (cf ttt)

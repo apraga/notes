@@ -31,6 +31,9 @@ Surtout sous ventilation mécanique
 - < 5 j: [[denote:20240828T192156][Staphylocoque aureus]] ,[[denote:20240816T121919][Hæmophilus influenza]]
 - > 5j : bacilles à gram négatif ([[denote:20240612T233531][Pseudomonas aeruginosa]])
 * Traitement
+:PROPERTIES:
+:CUSTOM_ID: h:c2ccf78d-f2df-4c9f-b21d-e3346b2ffdf5
+:END:
 - Adulte sain sans signes de gravité : amox
 - facteurs de risque : amox+acide clavulanique ou C3G injectables ou macrolides ou léfofloxacine (actif contre le pneumocoque)
 - si grave : C3G injectable (pneumocoque) + macrolide (légionnelle)
