@@ -1,0 +1,8 @@
+#+title:      Second-generation PLINK: rising to the challenge of larger and richer datasets
+#+date:       [2024-09-04 mer. 11:53]
+#+filetags:   :bib:facebook:
+#+identifier: 20240904T115323
+#+reference:  chang2015plink
+
+Permet de calculer linkage desequilibrium entre 2 variants
+La doc dit SNP, chatpgt que ça fonctionne avec tout SNV...

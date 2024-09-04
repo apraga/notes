@@ -1,0 +1,7 @@
+#+title:      Population-specific long-range linkage disequilibrium in the human genome and its influence on identifying common disease variants
+#+date:       [2024-09-04 mer. 12:11]
+#+filetags:   :bib:facebook:
+#+identifier: 20240904T121130
+#+reference:  park2019population
+
+Juste pour dire de faire attention au long-range. Non lu

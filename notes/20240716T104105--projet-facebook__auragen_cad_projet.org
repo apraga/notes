@@ -24,38 +24,8 @@ Idées :
 - et du caractère identifiant des phénotypes (voir la notion d'entropie par [cite:@erlich2014])
 
 
-* TODO Regarder quand des variants sont indépendants en terme de distance
-Linkage desequilibrium
-https://academic.oup.com/gbe/article/14/11/evac145/6726537
-#+begin_quote
-Assuming recombination-drift equilibrium, in the absence of gene conversion, the amount of linkage disequilibrium (LD) between sites separated by
- nucleotides is expected to scale like
-⁠, where
- is the effective population size, and
- is the recombination rate per nucleotide site (Walsh and Lynch 2018). Although this model is commonly assumed in a wide array of population-genetic analyses, it is violated in the presence of gene conversion, which magnifies the recombination rate between closely spaced sites, but has no influence on the rate between sites separated by distances exceeding conversion-tract lengths. Moreover, recombination rates can vary among chromosomes if these vary substantially in length, and in some vertebrates recombination events are highly concentrated into relatively small fractions of the genome, so that some gene regions experience much higher rates of both gene conversion and crossing over than others (Auton et al. 2012; Lam and Keeney 2015; Singhal et al. 2015).
-#+end_quote
-
-Attention au long-range
-https://academic.oup.com/gbe/article/14/11/evac145/6726537
-
-Formule ?
-Il faut la fréquene de A, B et AB...
-https://www.sciencedirect.com/topics/neuroscience/linkage-disequilibrium
-
-Base de données :
-https://ldlink.nih.gov/?tab=home
-Plink (logiciel https://www.cog-genomics.org/plink/) permet de définir des blocs d'haplotypes
-https://academic.oup.com/gigascience/article/4/1/s13742-015-0047-8/2707533?login=false
-* TODO Probabilité que des variants proches (probab conditionelle ?)
 * TODO Revoir consentement decipher
-* Modèle pour la probabilité d'une mutation ?
-Plusieurs articles utilisent une matrice de substituion mais ne la donne pas
-- en exome [cite:@samocha214framework], probabilité de mutation par gène par type de variant en log10 : «good enough» (modèle simple mais corrigé)
-
-Trouvé sur Github
-
-Alternative : modèle du CADD qui donne un taux de mutation par blocs de 100kb (mais matrice disponible)[cite:@kircher2014general]
-
-
+A fusionner
+[[denote:20240904T093904][mercredi  4 septembre 2024 09:39]]
 * WAIT Contact BM Knopper
 * WAIT Contact Heidi Howard (ESHGH, chaire éthique)

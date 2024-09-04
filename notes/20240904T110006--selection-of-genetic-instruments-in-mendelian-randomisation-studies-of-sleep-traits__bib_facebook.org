@@ -1,0 +1,11 @@
+#+title:      Selection of genetic instruments in Mendelian randomisation studies of sleep traits
+#+date:       [2024-09-04 mer. 11:00]
+#+filetags:   :bib:facebook:
+#+identifier: 20240904T110006
+#+reference:  paz2023selection
+
+
+- seuil en dur pour linkage desequilibrium
+  - distance > 500kb ou > 10kb
+  - corrélation : $r^2 < 0.01$ ou $0.1$ ou $0.2$
+Ne cite qu'une source, un livre non accessble
