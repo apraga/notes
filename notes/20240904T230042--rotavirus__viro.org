@@ -1,0 +1,8 @@
+#+title:      Rotavirus
+#+date:       [2024-09-04 Wed 23:00]
+#+filetags:   :viro:
+#+identifier: 20240904T230042
+
+- 1ere cause de gastroentérite aigüe chez l'*enfant* < 5 ans. Touche également adulte (ID, voyageur, contact enfant)
+- Épidémies hivernales 6-24mois
+- pas de vaccin
