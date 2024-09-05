@@ -2,7 +2,7 @@
 #+filetags:   :bactérie:bactério:
 
 - Bacille Gram négatif, très mobile (ciliature polaire !)
-- Anaérobie stricte mais non exigeante
+- Aérobie stricte mais non exigeante
 - Origine : environnement++. saprophyte des milieux humides
 - *Opportuniste* : 10% des infections en hospitalisation
   - infection nosocomiale (matériel) ou . 1ere bactérie en réa
@@ -53,7 +53,7 @@ Association de plusieurs mécanisme (synérgie/complémentaire)
  - imperméabilité (porine OpriF)
 
 ** Résistance acquise
-- Surproduction : efflux, β-lactamase AmpC, alétaration porine+++
+- Surproduction : efflux, β-lactamase AmpC, alétaration porine+++ ([[denote:20240905T221827::#h:63c30988-6991-4f5f-aa53-2428981d7c1c][Mécanimes de résistance aux antibiotiques::Impermeabilité]]  )
 - gène codant β-lactamase
 - Attention: certaines souches accumulent des résultats
 - β-lactamase transférable : pénicillinase, BLSE, carbapénémase
