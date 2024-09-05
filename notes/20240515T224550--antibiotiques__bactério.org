@@ -8,7 +8,7 @@
 - synthèse protéines bactérienne : aminoside, macrolides, cyclines
 
 [[./images/microbiologie/antibio-action.png]]
-* [[denote:20240828T184535][Mécanismes de résistance aux antibiotiques]]
+* [[denote:20240905T221827][Mécanimes de résistance aux antibiotiques]]
 * Résumé
 |                    | Péni G/V                   | Péni A                                     | Peni A + inhib βlactamase       | Peni M              |
 |--------------------+----------------------------+--------------------------------------------+---------------------------------+---------------------|
