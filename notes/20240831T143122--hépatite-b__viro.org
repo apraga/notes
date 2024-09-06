@@ -3,14 +3,15 @@
 #+filetags:   :viro:
 #+identifier: 20240831T143122
 
-
-- enveloppé ADn circulaire partiellement bicaténaire et extrêmement compact
+Petit virus à ADN
+* Virus
 - multiplication dans hépatocytes (pénétration via récepteur NTPC) sans effet cytopathique
 - cytolyse lié à la réponse immunitaire
 - toute infection peut promouvoir le développement d'un hépatocarcinome
-- 1ere étpa : formation cccDNA inta-hépatique (persiste à vie !) +/- intégration génome humaine (facultatif)
+- 1ere étap : formation cccDNA inta-hépatique (persiste à vie !) +/- intégration génome humaine (facultatif)
 - multiplication virale via un intermédiaire ARN avec une transcriptase inversée portée par la polymérase virale et responsable de l'émergence de nombreux variants génétique
-- plupart de liquides biologique avec concentation importante
+* Épidémio
+- plupart de liquides biologique avec concentration importante
 - contamination: sexuelle et toxico IV (pays industrialisé), mère-enfant -> enfant (pays ressource limité)
 - complications: asymptomatique - cytolitique sévère voire fulminante
 - persistance > 6 mois : risque hépatite chronique avec évolution possible cirrhose/cancer foie
@@ -18,7 +19,10 @@
   - AgHBs positif : chercher coinfection VHD, sérologie HBe, charge
     virale, atteinte hépatiqiue
 - vaccin VHB = seule prévention possible HVB, HVD, hépatocarcinome
-- traitement : IFN (interféron pégylé), analogue nucléositique mais éliminent rarement AgHBs
+- contamination: sexuelle et toxico IV (pays industrialisé), mère-enfant -> enfant (pays ressource limité)
+* Traitement
+Seulement si chronique
+IFN (interféron pégylé), analogue nucléositique mais éliminent rarement AgHBs
 
 * Notes
 Transmission: percutané, muqueuses, salive, sécrétion vaginale.
