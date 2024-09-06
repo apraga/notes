@@ -1,3 +1,12 @@
+@document.meta
+title: infections-orl
+description: 
+authors: alex
+categories: viro 
+created: 2024-09-07T00:30:34+0100
+updated: 2024-09-07T00:30:34+0100
+version: 1.1.1
+@end
 
 - Rhino-pharyngite :{entérovirus__viro.org}[Entérovirus],{../notes/20240831T114640--grippe__viro.norg}[grippe] 
 - {angines__bactério.norg}[Angines] 
