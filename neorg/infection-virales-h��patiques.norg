@@ -1,0 +1,55 @@
+
+* Phases
+
+~ incubation (15 - 120 j selon les virus) 
+~ Pré-ictérique : asympto ou pseudo-grippal, troubles digestif (3-15j) 
+~ Phase d'état 
+-- AEG 
+-- signes inflammatoires 
+-- dysfonctionnement hépatique: ictère, décoloration des selles, urines brunes 
+
+* Évolution
+
+4 possibilité 
+
+~ asympto (majorité) 
+~ aigüe puis guérison ou chronique 
+~ chronique 
+~ fulminante (rare): nécrose hépatique massive -> risque hémorragique majeur -> transplantation hépatique 
+
+Lésions hépatiques sont dues à la réaction *inflammatoire* plutôt que cytotoxicité du viruss 
+
+* Causes
+
+-{hépatite-a__viro.org}[Hépatite A] et{../notes/20240831T143328--hépatite-e__viro.norg}[Hépatite E] : surtout oro-fécal, pas d'hépatite chronique
+Sauf hépatite E chez les immunodéprimés 
+ 
+
+- {hépatite-b__viro.org}[Hépatite B] ,{../notes/20240831T143008--hépatite-c__viro.org}[Hépatite C],{../notes/20240831T143304--hépatite-d__viro.norg}[Hépatite D] : forme chronique 
+- virus non hépatotropes : {cytomegalovirus-cmv__viro.org}[Cytomégalovirus (CMV)] ,{../notes/20240818T121417--epstein-barr-virus-ebv__adn_viro.org}[Epstein-Barr virus (EBV)] ,{../notes/20240831T142847--herpès-simplex-virus-hsv__viro.org}[HSV] ,{../notes/20240819T172039--vih__viro.norg}[VIH] 
+
+* Tests
+
+: B1 : A
+: C1 : B
+: D1 : C
+: E1 : D
+: F1 : E
++hline2
+#table.head.columns 2-4 0
+: A2 : Indirect
+: B2 : IgM et IgG
+: C2 : Ac anti HBs
+: D2 : Ac anti HCV
+: E2 : IgM et IgG
+: F2 : IgM et IgG
+: C3 : et HBc
+: E3 : anti HDV
+: F3 : ante HEV
+: A4 : Direct
+: B4 : ARN
+: D4 : ARN
+: E4 : ARN
+: F4 : ARH
+
+* Footnotes
