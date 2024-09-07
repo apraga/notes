@@ -7,7 +7,7 @@ categories: [
     bactério
 ]
 created: 2024-09-07T00:30:35+0100
-updated: 2024-09-07T10:21:30+0100
+updated: 2024-09-07T13:43:03+0100
 version: 1.1.1
 @end
 
@@ -34,37 +34,17 @@ Voir {encéphalite.norg}[Myélite]
 
 * Examens
 
-+hline2
-#table.head.columns 1-8 0
-: B1 : Normal
-: C1 : Bactérienne
-: D1 : M. Tuberculosis
-: E1 : Listeria
-: F1 : Viral
-: C2 : purulente
-: A3 : Cyto
-: B3 : 1-2 cellules
-: C3 : > 500
-: D3 : 100-500
-: E3 : 100-500
-: F3 : 100-500
-: C4 : PNN
-: D4 : Lympho
-: E4 : Mixte
-: F4 : Lympho
-: A5 : Glyco
-: B5 : 2/3 glycémie
-: C5 : Hypo
-: D5 : Hypo
-: E5 : Hypo
-: F5 : Normal
-: B6 : 2.5-3.5
-: A7 : Prot
-: B7 : 0.15-0.30
-: C7 : > 1
-: D7 : < 1
-: E7 : Hyper
-: F7 : < 1
+@table
+|       | Normal       | Bactérienne | M. Tuberculosis | Listeria | Viral   |
+|       |              | purulente   |                 |          |         |
+|-------+--------------+-------------+-----------------+----------+---------|
+| Cyto  | 1-2 cellules | > 500       | 100-500         | 100-500  | 100-500 |
+|       |              | PNN         | Lympho          | Mixte    | Lympho  |
+| Glyco | 2/3 glycémie | Hypo        | Hypo            | Hypo     | Normal  |
+|       | 2.5-3.5      |             |                 |          |         |
+| Prot  | 0.15-0.30    | > 1         | < 1             | Hyper    | < 1     |
+|       |              |             |                 |          |         |
+  @end
 
 +hline2
 #table.head.columns 1-8 0
