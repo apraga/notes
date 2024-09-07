@@ -9,6 +9,7 @@ categories: [
 created: 2024-09-07T00:30:32+0100
 updated: 2024-09-07T00:58:28+0100
 version: 1.1.1
+@end
 
 > 80% sont virales
 Bactéries : coproculture standard = Salmonella, Shigella, Campylobacter, Yersinia 
@@ -51,8 +52,7 @@ Enfant : rota > norovirus
 
 ** Autre
 
-{entérovirus.norg}[Entérovirus] mais il y a d'autres symptômes (angine, méningite) 
-
-- Astrovirus : GEA modérée, tous les âges 
-- Adénovirus (40-41) : test rapide/RT-pcr, ttt sympto 
+- {:entérovirus:} mais il y a d'autres symptômes (angine, méningite) 
+- {:$/astrovirus:} : GEA modérée, tous les âges 
+- {:$/adénovirus:} (40-41) : test rapide/RT-pcr, ttt sympto 
 

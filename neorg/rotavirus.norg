@@ -4,8 +4,9 @@ description:
 authors: alex
 categories: viro 
 created: 2024-09-07T00:30:36+0100
-updated: 2024-09-07T00:30:36+0100
+updated: 2024-09-07T18:46:24+0100
 version: 1.1.1
+@end
 
 - 1ere cause de gastroentérite aigüe chez l'*enfant* < 5 ans. 
 - 1ere cause d'infection nosocomiale en pédiatrie
@@ -15,6 +16,7 @@ Touche également adulte (ID, voyageur, contact enfant)
 
 - Petit virus nu, ubiquitaires, tropisme intestinal 
 - Résistants dans l'environnement 
+- Structure: Capside icosahédrique, non enveloppé, ARN double brin 
 
 * Épidémio
 
@@ -24,13 +26,29 @@ Touche également adulte (ID, voyageur, contact enfant)
 
 * Clinique
 
-- 24-48h incubatin 
 - Souvent asymptomatique chez les adultes 
 - FR chez les enfants = déshydratation 
+- variable : asymptomatique - diarrhées malabsorption/sécrétoire 
+- symptomes de 1 à 4 jours. NB: excrétion du virus peut précèder de quelques jours et persister 8-10 jours 
+-- infections asymptomatique habituelle de 1 à 3 mois (immunité maternelle) (NB : immunité secondaire chez adulte) 
+- diarrhée 
+-- aqueuse non glairo-sanglante (parfois explosive), vomissement, douleur abdo, hyperthermie modérée 38° 
+-- intensité = variable 
+-- consistance variable (molle - liquide) 
 
 * Diag
 
 - Selles à la phase aigüe 
 - Détection antigène ou génome 
-- pas de vaccin 
+- Test immo-chromatographique 
+- Test immuno-enzymatique (ELISA) = détection antigène dans les selles (anticorps monoclonaux) 
+- RT-PCR, RT-qPCR 
 
+* Traitement
+- pas de vaccin 
+* Physiopathologie
+
+  Lésions des entérocytes matures de l'intesting grêle (multiplication du virus) : dérégulation puis destruction. 
+  Mécanismes : 
+  ~ sécrétion eau, électrolytique -> diarhée sécrétoire 
+  ~ lyse cellulaire , perturbation des fonctions enzymatique -> diarrhée de malabsorption et osmotique (résidus glucidique dans l'intestin) 

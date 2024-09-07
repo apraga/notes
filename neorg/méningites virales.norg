@@ -1,11 +1,12 @@
 @document.meta
-title: méningites virales
+title: Méningites virales
 description: 
 authors: alex
 categories: viro 
 created: 2024-09-07T00:30:35+0100
-updated: 2024-09-07T00:30:35+0100
+updated: 2024-09-07T18:14:40+0100
 version: 1.1.1
+@end
 
 - Détection génomique spécifique 
 
@@ -45,7 +46,7 @@ enfant < 2ans
 - PCR spécifique 
 - traitement : immunodéprimé +/- immunocompétent 
 
-** {vih.norg}[VIH]
+** {:VIH:}
 
 - primo: méninigite et ménigo-encéphalite 
 - Diag = séro +/- charge virale 

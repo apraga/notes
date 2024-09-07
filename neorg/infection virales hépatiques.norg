@@ -6,6 +6,7 @@ categories: viro
 created: 2024-09-07T00:30:34+0100
 updated: 2024-09-07T00:30:34+0100
 version: 1.1.1
+@end
 
 * Phases
 
@@ -28,36 +29,16 @@ version: 1.1.1
 Lésions hépatiques sont dues à la réaction *inflammatoire* plutôt que cytotoxicité du viruss 
 
 * Causes
-
--{hépatite-a.norg}[Hépatite E] : surtout oro-fécal, pas d'hépatite chronique
-Sauf hépatite E chez les immunodéprimés 
- 
-
-- {hépatite-b.norg}[Hépatite D] : forme chronique 
-- virus non hépatotropes : {cytomegalovirus-cmv.norg}[VIH] 
+  - {:$/hépatite A:} et {:$/hépatite E:} : surtout oro-fécal, pas d'hépatite chronique (sauf hépatite E chez les immunodéprimés )
+  - {:$/hépatite C:} et {:$/hépatite B:} : forme chronique
+  - virus non hépatotropes : {:$/CMV:} {:$/EBV:}  {:$/VIH:} {:$/HSV:}
 
 * Tests
 
-: B1 : A
-: C1 : B
-: D1 : C
-: E1 : D
-: F1 : E
-+hline2
-#table.head.columns 2-4 0
-: A2 : Indirect
-: B2 : IgM et IgG
-: C2 : Ac anti HBs
-: D2 : Ac anti HCV
-: E2 : IgM et IgG
-: F2 : IgM et IgG
-: C3 : et HBc
-: E3 : anti HDV
-: F3 : ante HEV
-: A4 : Direct
-: B4 : ARN
-: D4 : ARN
-: E4 : ARN
-: F4 : ARH
-
-* Footnotes
+@table
+|          | A          | B           | C           | D          | E          |
+|----------+------------+-------------+-------------+------------+------------|
+| Indirect | IgM et IgG | Ac anti HBs | Ac anti HCV | IgM et IgG | IgM et IgG |
+|          |            | et HBc      |             | anti HDV   | ante HEV   |
+| Direct   | ARN        |             | ARN         | ARN        | ARH        |
+  @end

@@ -1,11 +1,12 @@
 @document.meta
-title: herpès simplex virus hsv
+title: Herpès simplex virus 
 description: 
 authors: alex
 categories: viro 
 created: 2024-09-07T00:30:33+0100
 updated: 2024-09-07T00:30:33+0100
 version: 1.1.1
+@end
 
 1 et 2 ADN enveloppé
 Strictement humain
@@ -15,8 +16,8 @@ Herpès génital = 1 et 2
 
 * Clinique
 
-Primo-infectin : souvent asympto
-Gingivostomatiet : primo HSV1. Réactivation = herpès labial
+Primo-infection : souvent asympto
+Gingivostomatite : primo HSV1. Réactivation = herpès labial
 Herpès génital = 1 et 2 
 
 - éruptions vésiculeuses localisées et douloureuses 
@@ -24,7 +25,7 @@ Herpès génital = 1 et 2
 Grave : 
 
 - kérato-conjonctivite 
-- {méningites-virales.norg}[Méningo-encéphalites] 
+  {:$/méningites virales:}[Méningo-encéphalites] 
 
 NN : herpès néonatal
 ID: lésion extensives et atteinte viscérales 
