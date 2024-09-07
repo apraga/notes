@@ -2,9 +2,12 @@
 title: diarrhées
 description: 
 authors: alex
-categories: viro 
+categories: [
+    bactério
+    viro
+]
 created: 2024-09-07T00:30:32+0100
-updated: 2024-09-07T00:30:32+0100
+updated: 2024-09-07T00:58:28+0100
 version: 1.1.1
 @end
 
@@ -12,15 +15,14 @@ version: 1.1.1
 Bactéries : coproculture standard = Salmonella, Shigella, Campylobacter, Yersinia 
 
 * Mécanisme
-
 ** Syndrome cholériforme
 
 - Diarrhée liquidienne sans fièvre 
 - Toxine -> sécrétion d'eau et électrolytes par l'épithélium 
 - Causes 
--- virus : {norovirus__viro.org}[Norovirus],{../notes/20240904T230042--rotavirus__viro.org}[Rotavirus],{../notes/20240831T142116--adénovirus__viro.norg}[Adénovirus] -{staphylocoque-aureus__bactério.norg}[Staphylocoque aureus], Bacillus cereus 
+-- virus : {norovirus.norg}[Staphylocoque aureus], Bacillus cereus 
 -- Clostridium perfringens 
--- {escherichia-coli__bactérie_bactério.norg}[Escherichia coli] entéro-toxinogène et entéro-aggrégatif 
+-- {escherichia-coli.norg}[Escherichia coli] entéro-toxinogène et entéro-aggrégatif 
 -- Vibrio cholerae 
 
 ** Syndrome dysentérique
@@ -28,9 +30,9 @@ Bactéries : coproculture standard = Salmonella, Shigella, Campylobacter, Yersin
 - Selles glairo-sanglantes, fièvre 
 - Invasion + destruction des cellules épithéliales + inflammation locale 
 - Causes 
--- {shigella-spp__bactérie_bactério.norg}[Shigella] dysenteriae (toxine) ou non dysentreiae : 
+-- {shigella-spp.norg}[Shigella] dysenteriae (toxine) ou non dysentreiae : 
 -- E. coli entéro-invasif 
--- coli entérohémorragique (production de Shiga-like toxines, codées par /stx1/, /stx2/) {syndrome-hémolytique-et-urémique__bactério_hémato.norg}[Syndrome hémolytique et urémique] 
+-- coli entérohémorragique (production de Shiga-like toxines, codées par /stx1/, /stx2/) {syndrome-hémolytique-et-urémique.norg}[Syndrome hémolytique et urémique] 
 -- amoebose colique 
 
 ** Syndrome gastro-entérique
@@ -38,8 +40,8 @@ Bactéries : coproculture standard = Salmonella, Shigella, Campylobacter, Yersin
 - Diarrhées aspécifique, vomissements +/- fièvre 
 - Invasion du tissu lymphoïde sous-muqueux /sans/ destruction 
 - Causes : 
--- {campylobacter-jejuni__bactérie_bactério.norg}[Campylobacter spp] 
--- {salmonella-spp__bactérie_bactério.norg}[Salmonella spp] non typhi 
+-- {campylobacter-jejuni.norg}[Campylobacter spp] 
+-- {salmonella-spp.norg}[Salmonella spp] non typhi 
 -- Yersinia spp 
 -- E. coli entéropathogènes 
 
@@ -50,7 +52,7 @@ Enfant : rota > norovirus
 
 ** Autre
 
-{entérovirus__viro.norg}[Entérovirus] mais il y a d'autres symptômes (angine, méningite) 
+{entérovirus.norg}[Entérovirus] mais il y a d'autres symptômes (angine, méningite) 
 
 - Astrovirus : GEA modérée, tous les âges 
 - Adénovirus (40-41) : test rapide/RT-pcr, ttt sympto 

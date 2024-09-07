@@ -2,13 +2,17 @@
 title: encéphalite
 description: 
 authors: alex
-categories: viro 
+categories: [
+viro
+bactério
+] 
 created: 2024-09-07T00:30:32+0100
-updated: 2024-09-07T00:30:32+0100
+updated: 2024-09-07T00:53:04+0100
 version: 1.1.1
 @end
 
-Voir {méningites__bactério_viro.org}[Méningites],{../notes/20240831T185757--myélite__viro.norg}[Myélite] (méningo-encéphalite possible) 
+Voir {méningites.org}[Méningites], {myélite.norg}[Myélite] (méningo-encéphalite possible) 
+{vzv}
 
 * Clinique
 
@@ -20,16 +24,16 @@ tremblement, crises épileptique
 ** Bactérienne
 
 - Tuberculose : méningo-encéphalite rapidement progressive 
-- {listeria-monocytogenes__bactérie_bactério.norg}[Listeria monocytogenes ]: rhombencéphalite
+- {listeria-monocytogenes.norg}[Listeria monocytogenes ]: rhombencéphalite
 Ophtalmoplégie, diplopie, ataxie, déficit moteur, troubles de la conscience 
  
 
 ** Virale
 
-- {herpès-simplex-virus-hsv__viro.norg}[HSV] 1 : nécrosante (primo ou réactivation) 
-- {herpès-simplex-virus-hsv__viro.norg}[HSV] 2 : néonatale 
+- {herpès-simplex-virus-hsv.norg}[HSV] 1 : nécrosante (primo ou réactivation) 
+- {herpès-simplex-virus-hsv.norg}[HSV] 2 : néonatale 
 - rubéole 
-- {entérovirus__viro.norg}[Entérovirus] : rhomboencéphalite 
+- {entérovirus.norg}[Entérovirus] : rhomboencéphalite 
 - virus grippaux : inflammatoire post-infectieux 
 - VIH 
 - CMV 
