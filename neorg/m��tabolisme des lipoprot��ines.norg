@@ -1,0 +1,36 @@
+@document.meta
+title: 20240725T000025--métabolisme-des-lipoprotéines__biochimie
+description: 
+authors: alex
+categories: biochimie 
+created: 2024-09-07T20:13:26+0100
+updated: 2024-09-07T20:13:26+0100
+version: 1.1.1
+@end
+
+
+
+* Structure
+
+- permet le transport en milieu aqueux des lipides qui sont hydrophoble
+.image images/biochimie/lipoprotéines.png
+ 
+
+* Physico-chimique
+
+Apolipoproétinée 
+
+- B48 et B100: 1 seul exemplaire, non échangeable avec autre lipoproténies 
+- autres : plusieurs exemplaire possible àl a surface, échangeable entre lipoproténies 
+
+Répartition du cholestérol (sujet normal à jeun) 
+
+- VLDL: 6-10% 
+- LDL 60-65% 
+- HDL 25-30% 
+
+* {../../notes/20240725T222406--chylomicrons__biochimie.org}[Chylomicrons]
+
+* {../../notes/20240725T222902--vldl__biochimie.org}[VLDL]
+
+* {../../notes/20240725T224530--hdl__biochimie.org}[HDL]

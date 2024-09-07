@@ -1,0 +1,48 @@
+@document.meta
+title: 20240717T201856--albumine__biochimie_néphélémétrie_spectrophotométrie
+description: 
+authors: alex
+categories: [
+biochimie
+néphélémétrie
+] 
+created: 2024-09-07T20:13:21+0100
+updated: 2024-09-07T20:13:21+0100
+version: 1.1.1
+@end
+
+
+
+* Physipathologie
+
+- Synthétisée par le foie 
+- 1er protéine du plasma en quantité 
+- NB: 60% secteur interstitiel, 40% vasculaire (=2/3 protéines circulantes) 
+- Demi-vie 20 jours. 
+- *Non-excrété* par le glomérule (taille et charge négative) 
+- Maintient la pression oncotique (conserve l'eau dans les vaisseaux sanguins) 
+- Transporte : calcium, acide gras, bilirubine, hormones, vitamine, oligoéléments, médicaments 
+- Diminué : insuffisance hépatique, syndrome néphoritue, gastro-entérite, brûlures graves 
+- Marqueur : 
+-- *dénutrition chronique* (mais peu sensible, peu spécifique) 
+-- pronostic de la mortalité du patient âgé hospitalisé 
+- Normes 35-50g/L 
+
+* Dosage
+
+néphélémétrie, spectrométrie 
+
+* Variations
+
+- Augmentation: hémoconcentration, perfusion plasma/albumine 
+- Diminution 
+-- hémodilution 
+-- insuffisance 
+--- appport 
+--- synthèse : IHC, hépatite, inflammation 
+--- pertes : rein (syndrome néphrotique), digestive (gastroentériste exsudative), cutanée (brûlures étendues), chirurgicale 
+-- hypercatabolisme: Cushing, hyperthyroïdes Voir la bisalbuminémie dans les piège de l'{../../notes/20240717T201253--électrophorèse-des-protéines-sériques-interprétation__biochimie.org}[interprétation] 
+
+Dénutrition : peu sensible et peu spécifique
+Interpréter en fonction du *contexte inflammatoire* 
+

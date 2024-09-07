@@ -1,0 +1,153 @@
+@document.meta
+title: 20240804T113219--vitamines__biochimie_nutrition
+description: 
+authors: alex
+categories: [
+biochimie
+nutrition
+]
+created: 2024-09-07T20:13:35+0100
+updated: 2024-09-07T20:13:35+0100
+version: 1.1.1
+@end
+
+
+
+* Définitions
+
+- Nutriments : substance organique ou minérale directement assimilable (pas de dégradation) 
+-- essentiels : synthèse impossible 
+--- Acides aminés : Leucine, isoleucine, valine, phénylalanine, thréonine, tryptophane, lysine, méthionine, histidine 
+--- acides gras : acides linéolique, linolénique 
+--- oligo-éléments, minéraux, certaines vitamines 
+-- semi-essentiels, non essentiels 
+- micronutriment : pas de valeur énergétique, synthèse impossible mais indispensable 
+-- oligoéléments, minéraux, vitamines A, B, C, D, E, K 
+- macronutriment : grande quantité, source d'énergie majeure = glucides, lipides, protéines 
+
+* Minéraux
+
+{../../notes/20240804T120546--oligoéléments__nutrition.org}[Oligoéléments] 
+
+** Macroéléments
+
+éléments chimiques en grande quantité (Na, K, Cl, P, Mg, Ca) 
+
+*** {../../notes/20240721T151506--calcium__biochimie.org}[Calcémie]
+
+*** {../../notes/20240804T124652--sodium__biochimie_nutrition.org}[Sodium]
+
+*** Potassium
+
+Principal cation intracellulaire
+Attention hémolyse et microméthodes 
+
+* Vitamines
+
+«amine nécessaires à la vie» mais il existe des non-amines)
+Organiques (!= oligoéléments), 0 apport énergétique, 0 rôle structural mais apport nécéssaire 
+
+** Métabolisme
+
+- Endogène : PP, D3, K2, B8 9 et 12 
+- alimentation pour les autres 
+-- A : laitiers, jaune, beurre, foie de poisson (précurseurs dans légumes) 
+-- B1: céréales, pain, abats 
+-- B9: légumes 
+-- B12: animal *attention aux végétariens/liens* 
+-- C : fruits 
+-- {../../notes/20240730T211303--vitamine-d__biochimie.org}[Vitamine D] 
+-- E : huiles végétales, poissons gras 
+
+** Absorption
+
+- liposoluble : lié à celles des lipides donc absorption diminuée si malabsorption des lipides 
+- hydrosoluble : jejunum 
+
+** Distribution, élimination
+
+- Liposoluble : transport via (lipo)protéines, élimination urinaire/biliaire -> risque de toxicité ! 
+- Hydrosoluble : élimination urinaire 
+
+** Stockage
+
+- Liposoluble : foie, tissu adipeux 
+- Hydrosoluble: *pas de stockage !!* sauf B12 (stock hépatique pour plusieurs mois) 
+
+Demi-vie
+B2 : demi-vie longue -> dépétion difficile
+B9 : *première carence* car peu de réserves, érythrocytes
+D : 3 semaines
+E : quelques jours/mois selon les tissus 
+
+** Fonctions
+
+- coenzymes 
+- antioxydants 
+- prohormone 
+
++hline2
+#table.head.columns 1-9 0
+: A1 : A
+: B1 : Croissance, vision
+: A2 : B1
+: B2 : métabolismes des glucides, certains acides aminés
+: A3 : B2
+: B3 : Cofacteur d'oxydoréductases
+: A4 : B6
+: B4 : Transamination, métabolisme de certains acides aminés
+: A5 : B9, B12
+: B5 : MET, bases puriques et pyrimidiques, érythropoïèse
+: A6 : C
+: B6 : collagène, globules rouges, absorption du fer
+: A7 : D
+: B7 : phosphocalcique
+: A8 : E
+: B8 : antioxydant, fertilité
+: A9 : K
+: B9 : coagulation, fixation du calcium
+
+** Carences
+
+*** Clinique
+
+- A : ophtalmie (xérophtalmie), déficit immunitaire 
+- D : rachitisme (déformation/retard des os, troubles de la marche, tétanie, ostéomalacie) 
+- E : anémie hémolytique du nouveau-né 
+- K : hémorragies 
+- B1 : béri-béri 
+-- forme sèche : polynévrite, paralysie flasque 
+-- forme humide : cardiaque 
+-- cérébral 
+- B2, B6 : dermite, glossite, photophobie, larmoiement 
+- B3 : pellagre = les 3 «D» Dermite, Diarrhée, Démence 
+- B9, B12 : anémie mégaloblastique, trouble neuropsy, (spina bifida pour B95 
+- C : scorbut = syndrome hémorragique, ichtyose, gingivite 
+
+*** Étiologies
+
+- carence d'apport : végétalien, nutrition artificielle 
+- anti-vitamine : AVK, œuf cru 
+- régime déséquilibré : riche en acides gras saturés, protéine, glucide; éthylisme 
+- atteinte de l'absorption intestinale, chir bariatrique, médicaments 
+- augmentation des besoins (femme enceinte) 
+- maladie neurodégénératives, diabète… 
+
+** Hypervitaminoses
+
+- A : aïgue = céphalée, vomissement; chronique = nausée, vomissement, anorexie 
+
+*tératogène* donc attention chez la femme enceinte 
+
+- C : aggravation hémochromatose, calculs rénaux 
+- D : hypercalcémie, tératogène (déconseillé avant 6e mois de grossess) 
+- E : entérocolite ulcéronécrosante du nouveau-né 
+- B6,9,3 : troubles neuro 
+
+* Dosage
+
+Dans le sang : A,B1,B6,B9,B12,C,D,E (inutile dans les urines)
+-> HPLC, immuno, spectro de masse 
+
+Attention : *dégradation lumière et chaleur* 
+

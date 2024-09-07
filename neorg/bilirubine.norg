@@ -1,0 +1,33 @@
+@document.meta
+title: 20240805T175937--bilirubine__biochimie_spectrophotométrie
+description: 
+authors: alex
+ategories: [
+biochimie
+]/
+created: 2024-09-07T20:13:36+0100
+updated: 2024-09-07T20:13:36+0100
+version: 1.1.1
+@end
+
+
+
+* Physiologie
+
+~ Hème convertie en biliverdine (pigment) 
+-- hémoglobine des érythrocytes (70-90%) 
+-- autres hémoprotéiness (myoglobine, cytochrome P450… et destruction prématurée de jeunes érythrocytes dans la mœlle osseuse) 
+~ Or elle ne peut pas passer le placenta donc elle est réduite en bilirubine non conjuguée (qui peut passer dans la circulation maternelle pour être excrété) 
+~ Transportée dans le plasma avec albumine jusqu'au foie 
+~ Dans le foie : conjugaison en bilirubine conjuguée (monoglucuronide et diglucuronide) (augmente sa solubilité dans l'eau) 
+~ Elle est sécrétée dans le tube digestif 
+-- une petite partie finit dans les selles 
+-- la majeure partie est convertie en urobilinogène qui est 
+--- réabsorbé dans le foie et excrétée dans la bile 
+--- ou éliminée par le rein 
+
+* Mesure
+
+- Conjuguée (= libre ou direct) = dosable directement 
+- Non conjugée (= liée ou indirecte) 
+

@@ -1,0 +1,39 @@
+@document.meta
+title: 20240825T115241--hypernatrémie__biochimie_néphro
+description: 
+authors: alex
+categories: [
+biochimie
+néphro
+] 
+created: 2024-09-07T20:13:39+0100
+updated: 2024-09-07T20:13:39+0100
+version: 1.1.1
+@end
+
+
+
+*déshydratation extracellulaire* 
+
+Perte d'eau nette -> hyperosmolalité plasmatique
+En pratique, la soif doit compenser la perte d'eau donc c'est assez rare 
+
+.image images/hypernatremie.png
+ 
+
+Les pertes d'origine rénales 
+
+- si déshydratation globale, les reins ne cherchent pas à retenir les urines (non concentrées : natriurèse > 20) : diabète sucré, perfusion de mannitol 
+- DIC seule : la polyurie est hypotonique (U/P osm <= 1) donc diabète insipide 
+-- centrale : peu/pas de sécrétion d'ADH 
+-- néphrogénique : rein répond peu/mal 
+
+** Traitement
+
+La cause 
+
+- apport d'eau 
+-- si DEC et DIC : soluté salé hypotonique (pour amener du sel) 
+-- DIC pure : eau de boisson (pas d'eau pure IV car hémolyse) 
+-- si HEC: diurétique + eau pure PO (élimini sodim) 
+

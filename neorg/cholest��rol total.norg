@@ -1,0 +1,33 @@
+@document.meta
+title: 20240724T230033--cholestérol-total__biochimie
+description: 
+authors: alex
+categories: biochimie 
+created: 2024-09-07T20:13:24+0100
+updated: 2024-09-07T20:13:24+0100
+version: 1.1.1
+@end
+
+
+
+Norme < 5.20mmol/L 
+
+Chylomicron, VLDL, IDL, LDL, HDL 
+
+* Mesure
+
+** Méthode courance : enzymatique
+
+- coloration par spectrométrie (photo- ou réflectométrie)
+dans le rouge 512nm 
+
+*** Interférences
+
+- sous-estimation par compétition si /substances réductrice/ (acide ascorbique), /hyperbilirubinémie/ 
+- sous-estimé : hémolyse 
+- turbiditié : hypertriglycéridémie 
+
+** Méthode de référence
+
+{../../notes/20240724T230401--spectrométrie-de-masse__biochimie.org}[Spectrométrie de masse] par dilution isotopique 
+

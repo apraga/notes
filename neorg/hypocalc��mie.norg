@@ -1,0 +1,35 @@
+@document.meta
+title: 20240827T203728--hypocalcémie__biochimie
+description: 
+authors: alex
+categories: biochimie 
+created: 2024-09-07T20:13:40+0100
+updated: 2024-09-07T20:13:40+0100
+version: 1.1.1
+@end
+
+
+
+* Clinique
+
+Variable 
+
+- neuromusculaire : tétanie, paresthéie, main d'accoucher 
+- cardiaque : allongement QT, insuffisance cardiaque 
+- convulsion, cataractes, calcification intracérébrale 
+
+* Causes
+
+** PTH non augmentée (inadaptée) : hypoparathyroïdie
+
+- acquise: après chirurgie du cou, infiltratio glandies parathyroœdies (Wilson, hémochromatose..), auto-immune, déplétion magnésium… 
+- innée : 
+-- DiGeorge 
+-- mutation gain de fonction CaSR : hypocalcémie autosomique dominante = hypocalcémie PTH normale/basse avec hypercalciurie 
+
+** Extra-parathyroidienne: résistance PTH
+
+- pseudohypoparathyroïdies (défaut voie signalisation voir </PTHR1/> ) 
+- défaut d'action vitamine D (insuf. rénale, carence vitamine D profonde, rachitisme vitamino-dépendent) 
+- accrétion osseuse majeure ("hungry bone syndrome") 
+

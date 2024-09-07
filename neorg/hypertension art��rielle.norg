@@ -1,0 +1,27 @@
+@document.meta
+title: 20240825T163917--hypertension-artérielle__biochimie_cardio
+description: 
+authors: alex
+ategories: [
+biochimie
+nutrition
+]/
+created: 2024-09-07T20:13:39+0100
+updated: 2024-09-07T20:13:39+0100
+version: 1.1.1
+@end
+
+
+
+{../../notes/20240821T215310--hta-secondaire__biochimie_nephro.org}[HTA secondaire] 
+
+* Bilan de découverte
+
+- Protéinurie et hématurie 
+- Créatininémie, kaliémie 
+- FR cardiovasc : glycémie, bilan lipiques 
+- Cause rénale ou vasculaire 
+- Hypokaliémie 
+- ECG Si grossesse: protéinurie, TA
+Si lithiase : bilan phosphocalcique {../../notes/20240721T151506--calcium__biochimie.org}[(Calcémie]) 
+

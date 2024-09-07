@@ -1,0 +1,20 @@
+@document.meta
+title: 20240724T230649--β-oxidation-des-acides-gras__biochimie
+description: 
+authors: alex
+categories: biochimie 
+created: 2024-09-07T20:13:25+0100
+updated: 2024-09-07T20:13:25+0100
+version: 1.1.1
+@end
+
+
+
+Acide gras = source d'énergie pour les effort prolongés (libérès plus d'énerge que le glucose).
+Dégradation avec β-exodation. 
+
+~ activation des acides grands dans le cytoplasme -> formation acyl-CoA qui transferse la membrane /externe/ mitochondriale (2ATG consoémé) 
+~ Dans l'espace intermembranes, formation de l'acylcarnitine (acyl sur carnitine). À noter que le groupe acyl sera récupér par le CoA pour reformat un acylCoA et libéré la carnitine 
+~ 4 réactions pour raccourcir les acides grade de 2 carbones = hélice de Lynen.
+À chaque "tour d'hélice" : production 1 molécule acétylOa, réduction de 2 carbones pour l'acylCoAC, productiond de cofacteurs réduits (utilisé dans cycle de Krebs) 
+

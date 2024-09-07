@@ -1,0 +1,31 @@
+@document.meta
+title: 20240727T160618--dysthyroïdies__biochimie_endoc
+description: 
+authors: alex
+ategories: [
+biochimie
+nutrition
+]/
+created: 2024-09-07T20:13:31+0100
+updated: 2024-09-07T20:13:31+0100
+version: 1.1.1
+@end
+
+
+
+* Physiologie
+
+Thyroïde 
+
+- colloïde : lieu de stockage 
+- Cellules folliculaire (autour du colloïde): synthèse thyroglobuline et hormones thyroïdiennes 
+- cellules parafolliculaire = synthèse calcitonine 
+
+{../../notes/20240727T161330--thyroglobuline__biochimie_endoc.org}[Thyroglobuline]
+{../../notes/20240727T161415--hormones-thyroïdiennes__biochimie_endoc.org}[Hormones thyroïdiennes] 
+
+* Maladies
+
+- {../../notes/20240727T162427--hyperthyroïdies__endoc.org}[Hyperthyroïdies] 
+- {../../notes/20240727T163041--hypothyroïdies__biochimie_endoc.org}[Hypothyroïdies] 
+
