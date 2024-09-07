@@ -1,0 +1,65 @@
+@document.meta
+title: hemolyse
+description: 
+authors: alex
+categories: hemato 
+created: 2024-09-07T15:43:08+0100
+updated: 2024-09-07T15:43:08+0100
+version: 1.1.1
+@end
+
+Physiologique : intra-tissulaire (système réticulo-endothélial)
+Pathologique : intra-tissulaire (rate), intra-vasculaire 
+
+* Démarche
+
+~ NFS, réticulocytes, {bilirubine__biochimie_spectrophotométrie.org}[Bilirubine] libre, LDH, {../notes/20240717T200415--haptoglobine__biochimie_néphélémétrie.org}[Haptoglobine] 
+
+2.{test-de-coombs__hemato.org}[Test de Coombs] direct 
+
+- positif : immune -> groupage sanguin, recherche autoanticorps 
+- sinon 
+-- autre cause extracorpusculaire 
+--- infectieuse -> hémocultures (clostridium, streptocoque, yersiniose), paludisme, virale ({cytomegalovirus-cmv__viro.org}[Cytomégalovirus (CMV)],{../notes/20240819T172039--vih__viro.org}[VIH] , hépatites,{../notes/20240819T172109--parvovirus-b19__viro.org}[Parvovirus B19]) 
+--- mécanique (schu) 
+-- cause corpusculaire : 
+--- héréditaire: 
+---- membrane : test de résistance osmotique 
+---- hémoglobine : fraction Hb 
+---- enzyme : G6PD, PK.. 
+--- acquise: CMF, myélogramme 
+
+* Classification
+
+** Chronique
+
+En pratique, les 2 mécanismes sont souvent imbriqués 
+
+*** Intratissulaire
+
+Ictère, splénomégalien 
+
+- anémie normochrome normocytaire (parfois macro) 
+- hyperréticulocytose 
+- hyperbilirubinémie 
+- LDH et fer sérique augmentés 
+
+*** Intravasculaire
+
+Cliniquement : ni ictère, ni splénomégalie en général 
+
+- anémie normocytaire et réticulocytes++ 
+- *schizocytes* 
+- hapglobine effondrée 
+- hémosidérinurie 
+
+** Aigüe
+
+Clinique sévère : choc, urines foncées, IRA… 
+
+- anémie normochrome +/- hyperréticulocytose 
+- hyperleucocytose à PNN 
+- hapglobine effondrée 
+- hémoglobinurie 
+- plasma «laqué» (hémoglobinémie) 
+
