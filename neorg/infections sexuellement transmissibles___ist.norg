@@ -1,0 +1,23 @@
+@document.meta
+title: infections sexuellement transmissibles__bactério_ist
+description: 
+authors: alex
+categories: [
+bactério
+]
+created: 2024-09-07T21:16:58+0100
+updated: 2024-09-07T21:16:58+0100
+version: 1.1.1
+@end
+
+@embed org
+@end
+
+
+- {../../notes/20240601T183012--chlamydia-trachomatis__bactérie_bactério_ist.org}[Chlamydia trachomatis] 
+- {../../notes/20240831T143122--hépatite-b__viro.org}[Hépatite B] 
+- {../../notes/20240608T182904--mycoplasmes__bactérie_bactério_ist.org}[Mycoplasmes] 
+- {../../notes/20240515T224930--neisseria-gonorrhoeae__bactérie_bactério_ist.org}[Neisseria gonorrhoeae] 
+- {../../notes/20240601T183122--treponema-pallidum-syphilis__bactério_ist.org}[Syphilis] 
+- {../../notes/20240819T172039--vih__viro.org}[VIH] 
+

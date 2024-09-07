@@ -1,0 +1,61 @@
+@document.meta
+title: leucémie lymphoïde chronique__hémato
+description: 
+authors: alex
+categories: hémato 
+created: 2024-09-07T21:16:59+0100
+updated: 2024-09-07T21:16:59+0100
+version: 1.1.1
+@end
+
+@embed org
+@end
+
+
+@embed org
+#+identifier: 20240907T155503
+@end
+
+
+Hyperlymphocytose chronique avec lymphoïdes B clonales
+Bon pronostic (> 80% survie à 5 ans)
+Une des hémopathies les plus fréquernes 
+
+
+* Clinique
+
+Découverte le plus souvent fortuite
+Parfois syndrome tumoral (ADP superficielles, HMG,SMG) 
+
+
+* Diagnostic
+
+Hyperlymphocytose sur hémogramme > 5G/G pendant > 3 mois
+Frottis : 
+
+
+- lymphocytes matures monomorphnes 
+- Ombres de Gumprecht (fragilité de la membrane de la cellule) 
+
+
+Immunophénotypage = diag (permet de calcul du score de Matutes)
+/Myélogramme et BOM non nécessaires/ (sauf cytopénes) 
+
+
+{../../notes/20240717T201002--électrophorèse-des-protéines-sériques__biochimie.org}[Électrophorèse des protéines sériques] : hypogamma, pic monoclonal ?
+Bilan d'hémolyse si anémie 
+
+
+* Diag différentiel
+
+Hyperlymphocytose réactionnelle: infection virales, certaines bactérienees
+Lymphocytose monoclonale B, autres hémopatheiles lymphoïdes matures 
+
+
+* Traitement
+
+Caryotype et biomol indispensable avant ttt, ainsi que la classification de Binet
+A. < 3 aires ganglionnaires palpable, Hb > 10 et plaquette > 100G/L
+B. >= 3 aires ganglionnaires palpable, Hb > 10 et plaquette > 100G/L
+C. autre 
+

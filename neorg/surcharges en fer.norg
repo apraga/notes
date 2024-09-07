@@ -1,0 +1,51 @@
+@document.meta
+title: surcharges en fer__hémato
+description: 
+authors: alex
+categories: hémato 
+created: 2024-09-07T21:17:08+0100
+updated: 2024-09-07T21:17:08+0100
+version: 1.1.1
+@end
+
+@embed org
+@end
+
+
+@embed org
+#+identifier: 20240723T183703
+@end
+
+
+* Acquises
+
+Maladies avec surcharge 
+
+
+- dysérythropoiès : {../../notes/20240722T222651--thalassémies__hémato.org}[thalassémies] {denote:20240723T184034}[Myélodysplasies] 
+- Fer IV, *transfusion* 
+
+
+Maladies +/- surcharge 
+
+
+- hépatopathies chroniques : alcool, hépatite C, *NASH* (hépatosidérose dysmétabolique) 
+
+
+* Génétiques
+
+Principe 
+
+
+- Axe hepcidince-{denote:20240723T185004}[ferroportine]: carence ou résistance à l'hepcidine 
+- donc surcharge parenchymateuses (foie, pancreas, coeur…) 
+
+
+{denote:20240723T192429}[Hémochromatose héréditaire] 
+
+
+* Diagnostic
+
+.image images/surcharge-fer.png
+ 
+

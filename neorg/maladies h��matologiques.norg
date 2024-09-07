@@ -1,0 +1,93 @@
+@document.meta
+title: maladies hématologiques__hémato
+description: 
+authors: alex
+categories: hémato 
+created: 2024-09-07T21:17:01+0100
+updated: 2024-09-07T21:17:01+0100
+version: 1.1.1
+@end
+
+@embed org
+@end
+
+
+@embed org
+#+identifier: 20240722T222734
+@end
+
+
+Voir {../../notes/20240813T152244--mécanisme-des-maladies-hématologiques__hémato.org}[Mécanisme des maladies hématologiques] 
+
+
+* Néoplasies myéloïdes
+
+Classification OMS 
+
+
+- {../../notes/20240815T204208--syndromes-myéloprolifératifs__hémato.org}[Syndromes myéloprolifératifs] 
+- SMP/SMD 
+- {../../notes/20240815T211015--syndromes-myélodysplasiques__hémato.org}[Syndromes myélodysplasiques] 
+- Leucémies aigües myéloblastiques 
+- myélo+lymphoïdes + hyperéosinophilie + anomalies PDGFRα/β ou FGFR1 
+
+
+* Autrnes
+
+{../../notes/20240722T222809--anémie-microcytaire__hémato.org}[Anémie microcytaire]
+{../../notes/20240807T180444--anémie-hémolytique-auto-immune__hémato.org}[Anémie hémolytique auto-immune]
+{../../notes/20240717T195629--myélome__biochimie_hémato.org}[Myélome]
+{../../notes/20240814T171123--lymphomes__hémato.org}[Lymphomes]
+{../../notes/20240814T200517--déficit-immunitaire__hémato_immuno.org}[Déficit immunitaire] 
+
+
+* Lymphocytes
+
+- Pancytopénie : 
+-- périphérique : hypersplénisme, hémodilutation (auto-immun) 
+-- central : 
+--- moelle riche : carenceB12/folates, syndrome d'activaition
+macrophagiques, myélodyspasie, envahissement (leucémie, lymphome) 
+--- moelle pauvree : aplasie (chimio, parvoris B19, Fanconi),
+myélofibrose 
+- Hyperlymphocytose : enfant = coqueluche, viral. Adulte = LLC,
+lymphoprolifératif autre 
+- Lymphopénie : 
+-- iatrogène (immunosuppresseur, lithium, cortico), 
+-- viral, VIH 
+-- cancer, lymphome, radiothérapie 
+-- auto-immun : lupus, sarcoidose 
+-- IRC 
+- Polynucléose neutrophile 
+-- physiologique (grossesse, effort, post-op) 
+-- infection bactérienne 
+-- inflammation chronique 
+-- nécrose tissulaire aigüe 
+-- iatrogène : corticoïdes, lithium, splénectomie 
+-- hémopathie avec myélémie 
+-- tabac 
+-- cancer 
+- Neutropénie (< 0.5 G/L) 
+-- centrale 
+--- iatrogène 
+--- infection : typhoïde, brucellose, hépatite virale 
+--- aplasie, hémopathie malignes 
+-- périphérique : hypersplénisme, trouble margination 
+- Monocytose (> 1G/L) 
+-- réactionnelle : infection, inflammation (cancer..), régénération
+médullaire 
+-- primitive : leucémie myélomonocytaire chronique/juvénile, leucémie
+aigüe monoblastique 
+- Myélémie : > 2% 
+-- transitoire : infection grave, hémolyse, régénération (hémorragie,
+postchimio) 
+-- chronique : SMP, métastase médullaire 
+
+
+* {../../notes/20240813T152959--maladies-du-globule-rouge__hémato.org}[Maladies du globule rouge]
+
+* Plaquettes
+
+- {../../notes/20240722T223056--thrombocytose__hémato.org}[Thrombocytose] : inflammation, carence martiale, splénectomie/asplénie, post-chir, SMP 
+- {../../notes/20240722T223109--thrombopénie__hémato.org}[Thrombopénie] 
+

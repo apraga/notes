@@ -1,0 +1,27 @@
+@document.meta
+title: syndromes myéloprolifératifs__hémato
+description: 
+authors: alex
+categories: hémato 
+created: 2024-09-07T21:17:08+0100
+updated: 2024-09-07T21:17:08+0100
+version: 1.1.1
+@end
+
+@embed org
+@end
+
+
+@embed org
+#+identifier: 20240815T204208
+@end
+
+
+Atteinte de la lignée 
+
+
+- érythroïde: {../../notes/20240722T222950--polyglobuline-de-vaquez__hémato.org}[Polyglobuline de Vaquez] (augmentation GR et Hb) 
+- neutrophile : {../../notes/20240815T224958--leucémie-myéloïde-chronique__hémato.org}[Leucémie myéloïde chronique], {../../notes/20240815T224412--leucémie-chronique-à-neutrophiles__hémato.org}[Leucémie chronique à neutrophiles] 
+- mégacaryocytoplaquettaire : {../../notes/20240815T210446--thrombocytémie-essentielle__hémato.org}[Thrombocytémie essentielle] (hyperplaquettose) 
+- hyperproduction médullaire + fibrose : {../../notes/20240815T210617--myélofibrose-primitive__hémato.org}[Myélofibrose primitive] 
+

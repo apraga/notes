@@ -1,0 +1,31 @@
+@document.meta
+title: déficit immunitaire__hémato_immuno
+description: 
+authors: alex
+categories: hémato 
+created: 2024-09-07T21:16:51+0100
+updated: 2024-09-07T21:16:51+0100
+version: 1.1.1
+@end
+
+@embed org
+@end
+
+
+@embed org
+#+identifier: 20240814T200517
+@end
+
+
+* Défaut de signal pré-BCR
+
+BCR: récepteur à l'antigène des lymphocytes B 
+
+
+** Agammaglobulinémie lié à l'X
+
+- Déficit en Bruton Tyrosine Kinase (BTK) 
+- Absence totale de lymphocytes et plasmocytes dans le sang 
+- mœlle : bloqué au stade préB 
+- LT normaux 
+

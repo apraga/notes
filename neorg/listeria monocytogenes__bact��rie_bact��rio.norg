@@ -1,0 +1,71 @@
+@document.meta
+title: listeria monocytogenes__bactérie_bactério
+description: 
+authors: alex
+categories: [
+bactério
+bactérie
+]
+created: 2024-09-07T21:16:59+0100
+updated: 2024-09-07T21:16:59+0100
+version: 1.1.1
+@end
+
+@embed org
+@end
+
+
+@embed org
+#+identifier: 20240816T121758
+@end
+
+
+Résiste à 4° ! ^
+Mobile à 22° mais immobile à 37°
+Bacille à Gram positif non sporulé
+Intracellulaire facultative 
+
+
+* Épidémio
+
+Zoonose
+La seule pathogène pour l'homme parmi toutes les listsria
+Ne résiste pas à la pasteurisation 
+
+
+Transmission : alimentaire, transplacentaire (mère -> fœtus) 
+
+
+* Clinique
+
+- non invasive = gastro 
+- invasive: *bactériémie*, neurolistériose, infection materno-foetale, avec forme néonatale précoce ou > 7j, {../../notes/20240731T205020--méningites-bactériennes__bactério.org}[méningites bactériennes],{../../notes/20240831T175811--encéphalite__bactério_viro.org}[encéphalite] 
+
+
+* Diagnostic
+
+- hémoc, PL surtout + prélèvement périnataux si grossesse et suspicion IMF 
+- non exigeant 
+- β-hémolyse sur gélose au sang 
+
+
+* Résistance
+
+- résistance naturelle *C3G*, fosfomycine, quinolone 
+
+
+* Traitement
+
+- amox + genta 
+
+
+* Résistances
+
+Naturelle aux C3G 
+
+
+* Femme enceinte
+
+- Éviter fromages à pàte molle au lait cru, charcuterie, coquillaes 
+- bien cuire la viande, laver fruits et légumes 
+

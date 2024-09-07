@@ -1,0 +1,25 @@
+@document.meta
+title: neutrophiles__hémato_immuno
+description: 
+authors: alex
+categories: hémato 
+created: 2024-09-07T21:17:04+0100
+updated: 2024-09-07T21:17:04+0100
+version: 1.1.1
+@end
+
+@embed org
+@end
+
+
+@embed org
+#+identifier: 20240814T223845
+@end
+
+
+- Sont recrutées rapidement sur le site d'une inflammation 
+- phagocytose et digestion des microbes 
+- production de produits toxiques (/respiratory burst) 
+- pièges à bactéries (Neutrophil Extracellular Trap) 
+- sécrétion du contenu des granulations -> dégâts aux cellules 
+

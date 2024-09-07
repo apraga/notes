@@ -1,0 +1,23 @@
+@document.meta
+title: cellules nk__hémato_immuno
+description: 
+authors: alex
+categories: hémato 
+created: 2024-09-07T21:16:50+0100
+updated: 2024-09-07T21:16:50+0100
+version: 1.1.1
+@end
+
+@embed org
+@end
+
+
+@embed org
+#+identifier: 20240814T221252
+@end
+
+
+- NK et cellules NK T 
+- défense contre les virus et pathogènes intracellulaires 
+- destruction des cellules qui ne présentent pas les antigènes du Complexe d'HistoCompatibilité I 
+

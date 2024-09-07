@@ -1,0 +1,77 @@
+@document.meta
+title: anémie hémolytique auto immune__hémato
+description: 
+authors: alex
+categories: hémato 
+created: 2024-09-07T21:16:47+0100
+updated: 2024-09-07T21:16:47+0100
+version: 1.1.1
+@end
+
+@embed org
+@end
+
+
+@embed org
+#+identifier: 20240807T180444
+@end
+
+
+* GR
+
+120j Destruction macrophage : hb -> Fer (réuitilsé), globine
+(décomposé AA), hème (bilirbuine non configuée puis fixée almbunie ->
+bili conjugée -> 85% stercobiblinogène) 
+
+
+* Classification
+
+- corpusculaire: membrane (sphérocyytose), Hb, déficit enzymatique (G6PD), hémoglobinurie paroxistique nocturne 
+- extracorpusculaire : mécanique, toxique, infection, auto-immune 
+
+
+Autoimmune : Ac contre Ag GR - plutôt âgé, un peu plus femme - mortalité
+8-15% - mécanisme : fixation du fragment FC sur macrophages tissulaires
+ou activation complément (plutôt intravasc) 
+
+
+* Étiologie
+
+- idiopathique 50% 
+- secondaire : infection (MNI, CMV, parvo, syphilis, turberucoles), traitement, associé autoimmun(lupus, SAPL), associé hémopathie lymphoïde 
+
+
+Selon type auto-ac - chaud : adulte, plutôt intratissulaire, IgG 37% -
+agglu froide : > 50A, intratissulaire ou vasculaire, IgM, plutôt
+chronique , plutôt chronique - froid autre (infectieux) - hémoglobinurie
+paroxistique a frigorie : aîgu, enfant. Attention aux mycoplasme aussi -
+autre (large amplitude thermique) 
+
+
+Intravasculaire : brutal, fièvre, douleur lobmaire, urine "rouge porto",
+ictère Extravasc : progressif, discret (subictère conjonctival) 
+
+
+* Diag
+
+- clinique + bio (anémie normochromoe normocytaire, pas de schizoytes (!= mécanique), sd hémolytique) 
+- IH: Coombs direct : hématies avec Ac déjà fixées + antiglobuline -> agglu 
+- Penser à chercher des IgA si neg 
+- IgG+ : élution (détacher Ac sur hématie et déterminer leur spécifique en TIA) puis Coombs anticiderct (éluta sur 
+
+
+panel connu avec antigolbuline) 
+
+
+- C3+ : agglu froide 
+
+
+* Tttt
+
+- autoanticorps chaud : cortico, folates 
+- froid : MAF: pas d'exposition au froid 
+
+
+NB: *tout positif (panagglu + témoin autologue positif)* -> adsorption
+(soit le plasma du patient sur hématies du donneur, soit sur ses hématies (l'idéal)) 
+
