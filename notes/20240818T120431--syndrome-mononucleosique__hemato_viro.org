@@ -13,14 +13,14 @@
 - frottis : > 50% lymphocytes, *polymorphe* avec >= 10% hyperbasophiles
 * Diagnostic différentiel
 - Aucun !
-- Hyperlymphcytose
+- Hyperlymphocytose
   - petits, matures, monomorphes : coqueluche, LLC
   - immatures, monomorphes : LAL
 * Étiologies
 - Virus du groupe herpès : [[denote:20240818T121417][Epstein-Barr virus (EBV)]],[[denote:20240818T121442][Cytomégalovirus (CMV)]]
 - Parasite :[[denote:20240818T190751][Toxoplasmose]]
 - Autres :
-  - virales (*primo VIH*, fièvres éruptives, hépatite virale)
+  - virales (*primo* [[denote:20240819T172039][VIH]], fièvres éruptives, hépatite virale)
   - paludisme
   - bactéries (rickettsiose, brucellose, listériose)
   - immunoallergique (pénicillines)

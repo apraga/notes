@@ -9,8 +9,10 @@ categories: [
 created: 2024-09-07T00:30:32+0100
 updated: 2024-09-07T10:23:08+0100
 version: 1.1.1
+@end
 
-Voir {méningites}, {myélite} (méningo-encéphalite possible) 
+Voir
+{:$/méningites:} {:$/myélite:} (méningo-encéphalite possible) 
 
 * Clinique
 
@@ -28,12 +30,10 @@ Ophtalmoplégie, diplopie, ataxie, déficit moteur, troubles de la conscience
 
 ** Virale
 
-- {herpès-simplex-virus-hsv.norg}[HSV] 1 : nécrosante (primo ou réactivation) 
-- {herpès-simplex-virus-hsv.norg}[HSV] 2 : néonatale 
+- {:$/HSV:} 1 : nécrosante (primo ou réactivation) 
+- {:$/HSV:} 2 : néonatale 
 - rubéole 
-- {entérovirus} : rhomboencéphalite 
+   - {:entérovirus:} : rhomboencéphalite ( Ophtalmoplégie, diplopie, ataxie, déficit moteur, troubles de la conscience )
 - virus grippaux : inflammatoire post-infectieux 
-- VIH 
-- CMV 
-
-* Footnote
+- {:VIH:}
+- {:CMV:}

@@ -4,11 +4,12 @@ description:
 authors: alex
 categories: viro 
 created: 2024-09-07T00:30:35+0100
-updated: 2024-09-07T00:30:35+0100
+updated: 2024-09-07T18:13:18+0100
 version: 1.1.1
+@end
 
 Virale: 
 
 - poliovirus, entérovirus: paralysie flasque 
-- {herpès-simplex-virus-hsv.norg}[HSV] 2 
+- {:$/HSV:} 2 
 
