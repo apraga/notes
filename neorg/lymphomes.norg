@@ -1,0 +1,24 @@
+@document.meta
+title: lymphomes__hémato
+description: 
+authors: alex
+categories: hémato 
+created: 2024-09-07T21:16:59+0100
+updated: 2024-09-07T21:16:59+0100
+version: 1.1.1
+@end
+
+@embed org
+@end
+
+
+@embed org
+#+identifier: 20240814T171123
+@end
+
+
+.image images/hematologie/lymphomeb.png
+
+.image images/hematologie/lymphomet.png
+ 
+

@@ -1,0 +1,48 @@
+@document.meta
+title: escherichia coli__bactérie_bactério
+description: 
+authors: alex
+categories: [
+bactério
+bactérie
+]
+created: 2024-09-07T21:16:53+0100
+updated: 2024-09-07T21:16:53+0100
+version: 1.1.1
+@end
+
+@embed org
+@end
+
+
+@embed org
+#+identifier: 20240829T230553
+@end
+
+
+- Bacille gram négatif, non exigeant 
+- Mobile, oxydase négative, nitrase-réductase positive 
+
+
+* Diagnostic
+
+- Urine : rose sur milieu chromogène (β-glucoronidase positive) 
+- Sensibilité naturelles aux antibiotiques actif sur BGN 
+- MALDI-TOF: attention à la confusion avec {../../notes/20240829T225530--shigella-spp__bactérie_bactério.org}[Shigella spp] (sérotypage, biomol) 
+
+
+À compléter si besoin par sérotypag, gènes codant pour des facteurs de virulence 
+
+
+* Épidémio
+
+- {../../notes/20240515T224830--diarrhées__bactério_viro.org}[Diarrhées] ,{../../notes/20240602T154150--infections-urinaires__bactério.org}[Infections urinaires] 
+- Communautaire mais principale bactérie associée aux soins 
+
+
+* Résistance
+
+- Groupe 1 : 
+-- céphalosporinase chromosomique de très bas niveau. 
+-- Résistance acquise enzymatique : pénicillinase, β-lactamase à spectre étendue, céphalosporinase de haut niveau, carbapénémase 
+

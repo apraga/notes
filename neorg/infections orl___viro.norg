@@ -1,0 +1,23 @@
+@document.meta
+title: infections orl__bactério_viro
+description: 
+authors: alex
+categories: bactério 
+created: 2024-09-07T21:16:57+0100
+updated: 2024-09-07T21:16:57+0100
+version: 1.1.1
+@end
+
+@embed org
+@end
+
+
+@embed org
+#+identifier: 20240901T143951
+@end
+
+
+- Rhino-pharyngite :{../../notes/20240905T001255--entérovirus__viro.org}[Entérovirus],{../../notes/20240831T114640--grippe__viro.org}[grippe] 
+- {../../notes/20240515T224540--angines__bactério.org}[Angines] 
+- {../../notes/20240901T144149--otite-moyenne-aigüe__bactério.org}[Otite moyenne aigüe] 
+

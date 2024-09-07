@@ -1,0 +1,32 @@
+@document.meta
+title: haccek__bactérie_bactério
+description: 
+authors: alex
+categories: [
+bactério
+bactérie
+]
+created: 2024-09-07T21:16:54+0100
+updated: 2024-09-07T21:16:54+0100
+version: 1.1.1
+@end
+
+@embed org
+@end
+
+
+@embed org
+#+identifier: 20240901T111102
+@end
+
+
+Bacille gram neg croissance lente 
+
+
+- Haemophilus spp. 
+- Actinobacillus spp. 
+- Cardiobacterium spp. 
+- Capnocytophaga spp. 
+- Eikenella corrodens 
+- Kingella spp. 
+

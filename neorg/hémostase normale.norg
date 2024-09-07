@@ -1,0 +1,42 @@
+@document.meta
+title: hémostase normale__hémostase
+description: 
+authors: alex
+categories: hémostase 
+created: 2024-09-07T21:16:56+0100
+updated: 2024-09-07T21:16:56+0100
+version: 1.1.1
+@end
+
+@embed org
+@end
+
+
+@embed org
+#+identifier: 20240807T225847
+@end
+
+
+* 1. Hémostase primaire
+
+Dommage vasculaire -> perte des propriétés antithrombotiques de l'endothelium
+Formation d'un clou plaquettaire (plaquettes + fibrine) 
+
+
+** Activation des plaquettes
+
+~ adhésion au vaisseau sanguin (à l'aide du facteur de Willebrand) 
+~ recrutement et activation d'autres plaquettes (via ADP et thromboxane) 
+~ exposition de site accepteur pour le fibrinogène 
+
+
+Aggrégation de plaquettes 
+
+
+* 2. Coagulation (en parallèle)
+
+Transformation du fibrinogène en fibrine avec prothrombine (=facteur II) (enzyme résultant de {../../notes/20240807T230915--cascade-de-la-coagulation__hémostase.org}[Cascade de la coagulation])
+La stabilisation du réseau de fibrine se fait à l'aide du facteur XIII 
+
+
+* 3.{../../notes/20240809T180912--fibrinolyse__hémostase.org}[Fibrinolyse]

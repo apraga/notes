@@ -1,0 +1,215 @@
+@document.meta
+title: infections urinaires__bactério
+description: 
+authors: alex
+categories: bactério 
+created: 2024-09-07T21:16:58+0100
+updated: 2024-09-07T21:16:58+0100
+version: 1.1.1
+@end
+
+@embed org
+@end
+
+
+* Étiologie
+
+- {../../notes/20240829T230553--escherichia-coli__bactérie_bactério.org}[Escherichia coli] = 50 à 95% (communautaire ou associé au soin) 
+- Staph. saphrophycitus : 5-20% IU communtaire, surtout chez la femme jeune 
+
+
+* Définition
+
+Femme 
+
+
+- IU basse : cystite simple, à risque de complications ou récidivante 
+- PNA si atteinte du parenchyme rénal 
+- colonisation urinaire : bactériurie asymptomatique 
+
+
+Homme: «IU masculine» 
+
+
+* Physiopathologie
+
+- Tractus urinaire stérile, extrémité distale de l'urètre colonisé 
+- Pénétration des bactéries : à partir de l'urètre (ascendant), plus rarement sur sonde, endoscopie, chirurgie 
+- Facteurs prédisposants : calcul (obstactle), hypertrophie prostate, malformation voie urinaire, grossesse, diabète+++ 
+
+
+* Démarche
+
+- cystite simple : bandelette urinaire : leucocyte, nitrite. VPN chez la famme, VPP chez l'homme 
+- sinon: risque de complication, PNA; dépistage pour grossesse, chir ; échec traitement; > 4 épisodes par an -> EBCU (bactérie + antibiogramme) 
+
+
+* Diagnostic
+
+Cystite simple si leuco ou nitrites à la BU 
+
+
+** Préanalytique
+
+- Prélèvement 
+-- Naturel : lavage main + toilette, urine 2eme jet 
+-- jeune enfant : collecteur d'urine +/- cathéter/ponctio sus-pubienne 
+-- Sonde: jamais dans le sac préleveur, recueillir après désinfection sur site dédié. Ne pas envoyer sonde 
+- Conservation: 
+-- tube stérile 2h à température ambiante, 12h cyto, 24h à 4° pour culture 
+-- tube borate: 48h si /bien rempli/ 
+
+
+** BU
+
+- suffit pour les cystites simples 
+- valeur prédictive négative excellente chez la femme 
+- valeur prédictive positive excellente chez l'homme 
+
+
+NB: 
+
+
+- les nitrites mettent en évidence les bactéries qui réduisent les nitrates en nitrites (entérobactéries surtout) 
+- seuil de détection leuco = 10^4^ 
+
+
+** ECBU
+
+- pour les IU autres que les cystites simples 
+- cytologie : manuel/automatique 
+- Gram : non obligatoire, peu sensible mais permet d'identifier une contamination, d'orienter les milieux d'ensemencement 
+- ensemencement : chromogène + /- sélectif pour Gram positif, levures+++. 16-24h à 35°, 48h si croissance lente, discordante. 
+
+
+* Groupes :
+
+** Groupe 1 = pathogène. Seuil = 10^3^
+
+Critères majeurs de pathogénicité (e.g adhésion à l'épithelium urinaire) -> responsable si urine non contaminé, même en petite quantité 
+
+
+- *E. coli* (75%-80% des cystites simples) 
+- *S. saprophyticus* (cystites aigües communautaires chez femme de 15-30ans) 
+- Salmonella spp. 
+- mycobactéries 
+- leptospire 
+
+
+** Groupe 2 = si facteurs. Seuil = 10^3^ homme, 10^4^ femme
+
+Plutôt IU associées aux soins si facteurs anatomiques/iatrogènes 
+
+
+- entérobactéries (Proteus, Klebsiella, Enterobacter, Citrobacter, Morganella, Providencia) 
+- Pseudomonas aeruginosa 
+- Enterococcus 
+- Aerococcus urinae 
+- Staphylococus aureus 
+- Corynebacterium urealyticum 
+
+
+** Groupe 3 = discuté. Seuil 10^5^
+
+Implication discutée. Nécessite bactériurie élevée + 2 échantillons + critères clinique + inflammation 
+
+
+- Gram + : Streptococcus agalactiae, staph à coagulase négative autre de S. saprophyticus 
+- entérocoque avec E. coli 
+- Gram - : Acinetobacter, Oligella urethralis, Stenotrophomonas
+maltophilia, Burkholderia cepacia 
+- Candida 
+
+
+** Groupe 4 = contaminant. Pas de seuil
+
+- lactobacillus (sauf L. delbrueckii) 
+- streptococques alpha-hémolytique 
+- Gardnerella vaginalis 
+- bacilles corynéforme (sauf C. urealyticum et C. seminale) 
+
+
+* Virulence
+
+- Capacité de colonisation + invasion des cellules urothéliale 
+- Biofilm 
+
+
+* Interprétation
+
+
+
+
+
+
+
+: A1 : Dispositif
+: B1 : Clinique
+: C1 : Leucotyurie
+: D1 : Bactéurie
+: E1 : IU
+: F1 : Antibiogramme
++hline2
+#table.head.columns 2-6 0
+: A2 : Non
+: B2 : oui
+: C2 : oui
+: D2 : cf seuils
+: E2 : oui
+: F2 : oui
+: B3 : non
+: C3 : oui/non
+: D3 : >= 10^3^
+: E3 : colonisation
+: F3 : non
+: B4 : oui
+: C4 : non
+: D4 : cf tableau
+: E4 : débutant/neutropénie
+: F4 : oui
+: A5 : Oui
+: B5 : oui
+: C5 : NC
+: D5 : >= 10^5^
+: E5 : oui
+: F5 : oui
+: B6 : non
+: C6 : NC
+: D6 : >= 10^3^
+: E6 : colonisation
+: F6 : non
+
+
+
+- *colonisation* femme *enceinte* avec bactérurie >= 10^5^ groupes 1 à 3* : antibiogramme !! 
+- si invasif : significatif si > seuil 
+
+
+Clinique > biologique (décapité par antibio, croissance lente) 
+
+
+* Uropathogènes emergents
+
+- (Gram+): Aerococcus spp, Actinotignum shaalii, A. omnicolens et L. delbrueckii 
+- chez > 65 ans, < 3 ans et patho urologie (sauf cancer vessie et prostate) -> à chercher dans ce contexte 
+
+
+* Traitements
+
+- Cystite aigüe simple : 1. fosfomycine-trométamol 2. pivmécillinam 
+- Cystite avec risque de complication : 
+-- si on ne peut attendre : 1. nitrofurantoïn 2. fosfomycine-trométamol 
+-- selon ATBg mais 1. amox 
+- Pyélonéphrite 
+-- sans signes de gravité 
+--- sans risque de complication : FQ (ciprofloxaciin/lévofloxacine) 
+--- avec : céfotaxime/ceftriaxone 
+-- avec : céfotaxime/ceftriaxone + amikacine (si ATCD de BLSE: pipé-tazo + amikacine) 
+- Infections masculines : FQ (ciprofloxacine/lévofloxacine) selon ATBg 
+
+
+** Femme enceinte
+
+- Colonisation gravidique : selon ATBg mais 1. amox 
+- Cystite : 1. fosfomycine-trométamol 2. pivmécillinam 
+

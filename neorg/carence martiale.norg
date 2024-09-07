@@ -1,0 +1,78 @@
+@document.meta
+title: carence martiale__hémato
+description: 
+authors: alex
+categories: hémato 
+created: 2024-09-07T21:16:49+0100
+updated: 2024-09-07T21:16:49+0100
+version: 1.1.1
+@end
+
+@embed org
+@end
+
+
+@embed org
+#+identifier: 20240723T201939
+@end
+
+
+VGM < 95fl et 
+
+
+- ferritine <= 45μg/L 
+- ou ferritine entre 46-99 et (RsTf augmente ou doueux mais moelle osseuse pauvre en fer sur biopsie) 
+
+
+* Traitement
+
+cause ++, fer per os en 1ere intention 2-3 mois
+(attention tolérance) 
+
+
+- interrogatoire : ration protéique, hémorragies (digestives, gynéco),
+médicaments 
+- +/- bilan coagulation, exploration digestive/gynéco 
+
+
+* Causes :nombreuse
+
+- physologique : augmentation demande : enfance, croissance rapide adolescence, grossesse (voir {../../notes/20240802T160025--physiologie-de-la-grossesse__biochimie_gynéco.org::#h:4d9fe9fb-47f3-4fad-8fa8-3efec04cb230}[Grossesse::Bilan martial] ) 
+- environnement : apport insuffisance (végétariens, pauvreté) 
+- pathologique 
+-- absorption diminuée (gastrectomie, Crohn…) 
+-- perte chronique 
+--- gastrointestinale (ulcère, cancer intestinale….) 
+--- génitourinaire (métro/ménorragie, hémolyse intravasculaire (hémoglobinurie nocturne paroxisique, AHAI…)) 
+--- saignement systémique (télangiectasie hémorragique, auto-infligée….) 
+-- médicaments (glucocorticoïdes, AINS, IPP) 
+-- génétique 
+-- lié à EPO (traitement ou IRC) 
+
+
+* Clinique
+
+- anémie (asthénie, paleur+++), cutanéo-muquex (fer sert au
+renouvvellement : peau sèche, ongles cassants), /pas/ de fièvre,
+ADP, SMG, purpura 
+- troubles du comportement, retard psychomot, atteinte défense
+immunitaire 
+
+
+* Régulation post-transcriptionelle
+
+ARNm de la ferritine va être limité (diminution capacité de stockage) ou stable avec augmentation de la traduction donc entrée du fer dans la cellule 
+
+
+* Bilan
+
+- Diminution ferritine = marqueur *fiable et précoce*. /Pas de seuil consensuel !/ 
+
+
+Autres = inutiles 
+
+
+- Puis: 
+-- diminution CST, augmentatior RsTf 
+-- augmentation transferrine et diminution du fer 
+

@@ -1,0 +1,25 @@
+@document.meta
+title: 20230502T232947  bactériologie__meta
+description: 
+authors: alex
+categories: 
+created: 2024-09-07T21:16:46+0100
+updated: 2024-09-07T21:16:46+0100
+version: 1.1.1
+@end
+
+@embed org
+@end
+
+
+- {../../notes/20240601T183312--maladies-infectieuses__bactério_meta.org}[Maladies infectieuses] 
+- {../../notes/20240515T224550--antibiotiques__bactério.org}[Antibiotiques] 
+- TODO {../../notes/20240612T233431--bactéries__bactério_meta.org}[Bactéries] 
+
+
+* TODO
+
+Techniques </Milieux de culture/> </Hémocultures/>
+{Prélèvements%20bactério.md}[Prélèvements bactério]
+{Spectrométrie%20MALDI-TOF.md}[Spectrométrie MALDI-TOF] 
+

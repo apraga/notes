@@ -1,0 +1,37 @@
+@document.meta
+title: drépanocytose__hémato
+description: 
+authors: alex
+categories: hémato 
+created: 2024-09-07T21:16:51+0100
+updated: 2024-09-07T21:16:51+0100
+version: 1.1.1
+@end
+
+@embed org
+@end
+
+
+@embed org
+#+identifier: 20240827T213630
+@end
+
+
+Mutation homozygote gène β (Modification codon 6 de l'ARNm)
+Formation d'une hémoglobine anormale (HbS) ( voir {../../notes/20240813T152959--maladies-du-globule-rouge__hémato.org::#h:f5995274-fe14-4189-a16e-594f841725bf}[Maladies du globule rouge::Intro] )
+Stress, froid, fièvre: polymérisation -> GR en forme de faucille
+Ils sont 
+
+
+- plus rigides -> crises vasoocclusives 
+- plus fragile -> anémie hémolytique 
+
+
+Attention : elle peut être associée à une β-thalassémie 
+
+
+- risque plus élevé de {../../notes/20240819T180254--anomalies-du-metabolisme-des-erythrocytes__hemato.org}[déficit en G6PD] 
+
+
+Hétérozygote = asymptomatiques`` 
+

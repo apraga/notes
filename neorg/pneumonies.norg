@@ -1,0 +1,95 @@
+@document.meta
+title: pneumonies__bactério
+description: 
+authors: alex
+categories: bactério 
+created: 2024-09-07T21:17:05+0100
+updated: 2024-09-07T21:17:05+0100
+version: 1.1.1
+@end
+
+@embed org
+@end
+
+
+@embed org
+#+identifier: 20240901T145409
+@end
+
+
+* Aigüe communautaire
+
+Classification 
+
+
+- alvéolaires : bactéries pyogènes, surtout sphère oropharyngéee qui disséminent 
+- interstitielles (atypiques) : bactéries intracellulaires, virus 
+
+
+
+
+
+
++hline2
+#table.head.columns 1-15 0
+: B1 : Alvéolaire/lobaire
+: C1 : Interstitielle
+: A2 : État général
+: B2 : altéré
+: A3 : Début
+: B3 : brutal
+: C3 : progressif
+: A4 : Frisson
+: B4 : oui
+: C4 : rare
+: A5 : Fièvre
+: B5 : 39-40°
+: C5 : 38-39°
+: A6 : Douleur tho
+: B6 : Oui
+: C6 : Rare
+: A7 : Toux
+: B7 : productive
+: C7 : sèche
+: A8 : Expectoration
+: B8 : purulente
+: C8 : absente
+: A9 : Radio
+: B9 : Opacité homogène
+: C9 : Interstitielle
+: A10 : Leuco
+: B10 : > 15G/L
+: C10 : < 15G/L
+: A11 : Origines
+: B11 : {../../notes/20240831T173233--streptococcus-pneumoniae__bactério.org}[Streptococcus pneumoniae]
+: C11 : M. pneumoniae
+: B12 : {../../notes/20240816T121919--hæmophilus-influenza__bactérie_bactério.org}[Hæmophilus influenza]
+: C12 : C. psittaci,
+: B13 : {../../notes/20240515T225630--legionella-pneumophiliea__bactérie_bactério.org}[Légionelle]
+: C13 : C. burnetti
+: B14 : autres bactéries
+: C14 : {../../notes/20240515T225630--legionella-pneumophiliea__bactérie_bactério.org}[Légionelle]
+: C15 : Virus
+
+
+
+Fréquent, de gravité variable
+Les plus graves :{../../notes/20240831T173233--streptococcus-pneumoniae__bactério.org}[Streptococcus pneumoniae],{../../notes/20240816T121919--hæmophilus-influenza__bactérie_bactério.org}[Hæmophilus influenza] ({../../notes/20240828T192156--staphylocoque-aureus__bactério.org}[Staphylocoque aureus] ) 
+
+
+* Nosocomiales
+
+Surtout sous ventilation mécanique
+Étiologies 
+
+
+- < 5 j: {../../notes/20240828T192156--staphylocoque-aureus__bactério.org}[Staphylocoque aureus] ,{../../notes/20240816T121919--hæmophilus-influenza__bactérie_bactério.org}[Hæmophilus influenza] 
+- > 5j : bacilles à gram négatif ({../../notes/20240612T233531--pseudomonas-aeruginosa__bactérie_bactério.org}[Pseudomonas aeruginosa]) 
+
+
+* Traitement
+
+- Adulte sain sans signes de gravité : amox 
+- facteurs de risque : amox+acide clavulanique ou C3G injectables ou macrolides ou léfofloxacine (actif contre le pneumocoque) 
+- si grave : C3G injectable (pneumocoque) + macrolide (légionnelle) 
+

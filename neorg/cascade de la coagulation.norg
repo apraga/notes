@@ -1,0 +1,22 @@
+@document.meta
+title: cascade de la coagulation__hémostase
+description: 
+authors: alex
+categories: hémostase 
+created: 2024-09-07T21:16:49+0100
+updated: 2024-09-07T21:16:49+0100
+version: 1.1.1
+@end
+
+@embed org
+@end
+
+
+@embed org
+#+identifier: 20240807T230915
+@end
+
+
+.image images/hemostase/coagulation.png
+ 
+

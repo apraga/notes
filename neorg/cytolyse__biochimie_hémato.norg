@@ -1,0 +1,52 @@
+@document.meta
+title: cytolyse__biochimie_hémato
+description: 
+authors: alex
+categories: 
+created: 2024-09-07T21:16:51+0100
+updated: 2024-09-07T21:16:51+0100
+version: 1.1.1
+@end
+
+@embed org
+@end
+
+
+@embed org
+#+identifier: 20240723T191636
+@end
+
+
+- {../../notes/20240727T135435--alat__biochimie_transaminases.org}[ALAT] > 40 U/L = cytosol (foie +/- muscles) 
+- {../../notes/20240726T221814--asat__biochimie_transaminases.org}[ASAT] > 35 U/L = cytosol + mitochondrie (foie, muscles, coeurs, rein,
+pancréas, cerveau) 
+
+
+Attention : 
+
+
+- hémolyse = ininterprétable (aminotransferase globules rouges> plasma ) 
+- ASAT < ALAT car demi-vie inférieure (sauf alcool chronique car grosses
+mitochrondrie) 
+- Aigü : normalisation en 6 mois 
+- seulement souffrance cellulaire et non état fonctionnel du foie 
+
+
+NB: LDH (lyse cellulaire) non spécifique mais très marqué pour métastase
+hépatique NB: peuvent être augménte si stéatose, inlammation modérée,
+obstruction des voie billaire, cirrohse, exercice musculaire violent 
+
+
+* Algorithme décisionnel
+
+Arrêt agent hépatotoxique et interrogatoire : médicaments, phytothérapie, alcool, drogues, toxiques ?
+Si non contributif : 
+
+
+- antiVHC : si positif, ARN et génotype VCH 
+- coef saturation > 45%: mutation hémochromatose génétique 
+- stéatose 
+- AgHBs: si positif : AgHBe, antiHBe et ADN VHB 
+- auto-anticorps : si positifs, biopsie 
+- céruloplasmie : si positif, examen ophtalmo, cuprurie Si non contributif : ARN VHC, sérologie hépatite E, CMV et anticorps anti-transgluatimanes, phénotype α1-antitrypsine 
+

@@ -1,0 +1,57 @@
+@document.meta
+title: endocardites infectieuses__bactério
+description: 
+authors: alex
+categories: bactério 
+created: 2024-09-07T21:16:52+0100
+updated: 2024-09-07T21:16:52+0100
+version: 1.1.1
+@end
+
+@embed org
+@end
+
+
+- Rare (5cas/million), grave (20% décès) 
+- Souvent iatrogène 
+- Traitement difficile (biofilm) 
+
+
+* Bactéries
+
+- *Gram positif* 
+- staph aureus/coag négative : cutané, cathéter, toxico IV 
+- strepto : bucco-dentaire, digestif 
+- entérocoque = digestif, urinaire 
+- {../../notes/20240901T111102--haccek__bactérie_bactério.org}[HACCEK]= bucco-dentaire 
+- candida = cathéter, toxico 
+
+
+Voir aussi les autres causes de {../../notes/20240901T105739--bactériémie__bactério.org}[bactériémie] 
+
+
+* Diagnostic
+
+** critère de Duke 2023
+
+- Critère microbio ou histologique 
+- ou critères clinique: 
+-- majeur 
+--- hémocultures positives à microorganisme typiques (2 hémoc) ou non typique (3 hémoc) 
+--- PCR Coxiella burnetii, Bartonella, Tropheryma 
+--- échocardio ou scanner cardiaque 
+--- PET scan 
+--- chirurgical 
+-- mineur 
+--- prédisposition 
+--- fièvre > 38° 
+--- vasculaire (abcès cérébral ou rate notamment) 
+--- immuno (nodules d'Osler…) 
+--- hémoc positive ne rentrant pas dans les critères majeurs 
+--- PET scan 
+--- nouveau souffle de régurgitation 
+
+
+pour hémoculture : 2 positive à germe typique ou >2 à germe atypique
+négative dans 5-10% E 
+
