@@ -1,0 +1,59 @@
+@document.meta
+title: diarrhées
+description: 
+authors: alex
+categories: [
+    bactério
+    viro
+]
+created: 2024-09-07T00:30:32+0100
+updated: 2024-09-07T00:58:28+0100
+version: 1.1.1
+@end
+
+> 80% sont virales
+Bactéries : coproculture standard = Salmonella, Shigella, Campylobacter, Yersinia 
+
+* Mécanisme
+** Syndrome cholériforme
+
+- Diarrhée liquidienne sans fièvre 
+- Toxine -> sécrétion d'eau et électrolytes par l'épithélium 
+- Causes 
+-- virus : {norovirus.norg}[Staphylocoque aureus], Bacillus cereus 
+-- Clostridium perfringens 
+-- {escherichia-coli.norg}[Escherichia coli] entéro-toxinogène et entéro-aggrégatif 
+-- Vibrio cholerae 
+
+** Syndrome dysentérique
+
+- Selles glairo-sanglantes, fièvre 
+- Invasion + destruction des cellules épithéliales + inflammation locale 
+- Causes 
+-- {shigella-spp.norg}[Shigella] dysenteriae (toxine) ou non dysentreiae : 
+-- E. coli entéro-invasif 
+-- coli entérohémorragique (production de Shiga-like toxines, codées par /stx1/, /stx2/) {syndrome-hémolytique-et-urémique.norg}[Syndrome hémolytique et urémique] 
+-- amoebose colique 
+
+** Syndrome gastro-entérique
+
+- Diarrhées aspécifique, vomissements +/- fièvre 
+- Invasion du tissu lymphoïde sous-muqueux /sans/ destruction 
+- Causes : 
+-- {campylobacter-jejuni.norg}[Campylobacter spp] 
+-- {salmonella-spp.norg}[Salmonella spp] non typhi 
+-- Yersinia spp 
+-- E. coli entéropathogènes 
+
+* Virale
+
+GEA Adulte : norovirus > rotavirus > adénovirus > astrovirus
+Enfant : rota > norovirus 
+
+** Autre
+
+{entérovirus.norg}[Entérovirus] mais il y a d'autres symptômes (angine, méningite) 
+
+- Astrovirus : GEA modérée, tous les âges 
+- Adénovirus (40-41) : test rapide/RT-pcr, ttt sympto 
+
