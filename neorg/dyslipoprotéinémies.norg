@@ -1,0 +1,62 @@
+@document.meta
+title: 20240726T230440--dyslipoprotéinémies__biochimie
+description: 
+authors: alex
+categories: biochimie 
+created: 2024-09-07T20:13:29+0100
+updated: 2024-09-07T20:13:29+0100
+version: 1.1.1
+@end
+
+
+
+Surtout hyperlipidémie 
+
+- Mono, poly-génique ou sporadique 
+
+* Classification de Frederickson
+
+Lactescent = chylomicron (grande taille très riche en triglycérides)
+Opalescent VLDL (intermédiaire) 
+
+: A1 : Type
+: B1 : Électrophorèse
+: C1 : Sérum
+: D1 : Triglycérides
+: E1 : Cholestérol total
++hline2
+#table.head.columns 2-7 0
+: A2 : I
+: B2 : Chylomicron
+: C2 : Lactescent
+: D2 : ++
+: A3 : *IIa*
+: B3 : LDL
+: C3 : clair
+: E3 : ++
+: A4 : IIb (mixte)
+: B4 : VLDL,LDL
+: C4 : opalescent
+: D4 : ++
+: E4 : ++
+: A5 : III (mixte)
+: B5 : IDL
+: C5 : opalescent
+: D5 : ++
+: E5 : ++
+: A6 : IV
+: B6 : VLDL
+: C6 : opalescent
+: D6 : ++
+: A7 : V
+: B7 : Chylomicron+VLDL
+:: C7
+lactescent (*) | ++ | |
+(*) Test du crémage pour différencier type I du V : le sous-nageant est limpide (pas de LDL) ou opalescent (LDL)
+::
+
+* {../../notes/20240727T094804--hypercholestérolémie-iia__biochimie.org}[Hypercholestéroliméie (IIa)] le plus fréquent (LDL)
+
+* {../../notes/20240727T094934--hypertriglycéridémie__biochimie.org}[Hypertriglycéridémie]
+
+* {../../notes/20240727T115140--syndrome-métabolique__biochimie.org}[Syndrome métabolique]

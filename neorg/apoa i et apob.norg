@@ -1,0 +1,30 @@
+@document.meta
+title: 20240724T234048--apoa-i-et-apob__biochimie
+description: 
+authors: alex
+categories: biochimie 
+created: 2024-09-07T20:13:26+0100
+updated: 2024-09-07T20:13:26+0100
+version: 1.1.1
+@end
+
+
+
+* Indications
+
+- Maladies génétiques rare 
+- Dyslipidémie complexe : ApoB pour différencier dyslipidémie III d'une mixte ou combinée familiale 
+- si besoin 
+-- ApoA-I : 
+--- HDL < 0.77mmol/L 
+--- doute sur la technique (ex: interéfernec avec TG > 8mmol/L) 
+-- ApoB: LDL impossible à calculer (TG > 3.9mmol/L) ou doser * Méthodes 
+- néphélémétrie ou turbidimétrie 
+- comparables 
+- immunologie en milieu liquide 
+- après {../../notes/20240724T223847--exploration-dune-anomalie-lipidique__biochimie.org}[Exploration d'une anomalie lipidique] 
+
+* Meilleur marquer pronostic ?
+
+Manque d'étude mais intéressant chez diabétique 
+

@@ -1,0 +1,79 @@
+@document.meta
+title: 20240722T225148--métabolisme-du-fer__biochimie_hémato
+description: 
+authors: alex
+categories: biochimie 
+created: 2024-09-07T20:13:23+0100
+updated: 2024-09-07T20:13:23+0100
+version: 1.1.1
+@end
+
+
+
+- 2 formes 
+-- Fe^3^+ : insoluble, lié à des protéines de transport (transferrine) 
+-- Fe^2^+ : soluble et toxique (mort celullaire, fibrose) 
+- Finement régulé 
+
+* Alimentation
+
+- Fer heminique (25% absorption): boudin, foie, agneian, boeuf, cheval carand, poissons, oeuf dur… 
+- Fer non heminique (5-10% absorption): soja, légumineuses épinards, pains, petits pois, haricots verts 
+
+* Homéostase
+|caption Cohen-Solal et al 2013 
+.image images/biochimie/fer-homeostase.png
+|end
+
+- Apport alimentaire (duodenum) 
+- Transfert dans le sang par la {../../notes/20240717T200717--transferrine__biochimie_néphélémétrie.org}[transferrine] 
+- entrée dans les cellules via les récepteurs de la transférrine -> dosage possible du {../../notes/20240722T230650--récepteur-soluble-circulant__biochimie_hémato.org}[Récepteur soluble à la transferrine] 
+- mise en réserve par la {../../notes/20240722T230855--ferritine__hémato.org}[Ferritine] 
+- régulation = seulement au niveau de l'absorption car il n'y a pas de mécanisme d'excrétion ! Voir {../../notes/20240722T231916--hepcidine__hémato.org}[hepcidine] 
+
+* Exploration
+
+: A1 : Compartiment
+: B1 : fonctionnel
+: C1 : transport
+: D1 : réserve
++hline2
+#table.head.columns 2-7 0
+: B2 : 60-70%
+: C2 : 1%
+: D2 : 30-40%
+: B3 : Fe+2
+: C3 : Fe3+
+: D3 : Fe3+
+: B4 : Érythrocytes
+: C4 : transferrine
+: D4 : foie
+: B5 : Hb
+: C5 : Transferrine
+: D5 : Ferritine
+: B6 : RsTf
+: C6 : Fer sérique
+: C7 : CST
+
+* Carence
+
+- diminution synthse hémoglobline -> anémie microcytaire hypochrome, 
+- diminution capacito oxidative tissulaire 
+
+Donc diminution capacité de travail 
+
+* Variation
+
+- {../../notes/20240722T230855--ferritine__hémato.org}[Ferritine] 
+- {../../notes/20240722T233032--fer__hémato.org}[Fer] 
+- {../../notes/20240717T200717--transferrine__biochimie_néphélémétrie.org}[Transferrine] 
+- {../../notes/20240722T233548--coefficient-de-saturation-de-la-transferrine__hémato.org}[Coefficient de saturation de la transferrine] 
+
+* Dosage
+
+- *Toujours doser transferrine et CST* 
+- À jeun si possible et 8h (variation nycthémérale) 
+- sérum (chélation du fer par certains anticoagulant) 
+
+Source: cours UNESS 
+

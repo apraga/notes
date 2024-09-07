@@ -1,0 +1,53 @@
+@document.meta
+title: 20240630T181955--néphélémétrie__biochimie
+description: 
+authors: alex
+categories: [
+biochimie
+néphélémétrie
+] 
+created: 2024-09-07T20:13:13+0100
+updated: 2024-09-07T20:13:13+0100
+version: 1.1.1
+@end
+
+
+* Principe
+
+** Photométrie
+
+Mesure de la lumière diffusée 
+
+- latéralement (20°) = néphélémotrie 
+- linéairement (trajet du rayon) : turbidim 
+
+** Anticorps
+
+Contre l'antigène à doser -> complexe Ac-Ag -> la lumière dans la cuve va diffésué sur les complexes
+Utilisation de microparticules en latex pour augmenter la sensibilité 
+
+** Interférences
+
+- optique : lactescence parfois mais *pas* hémolyse ni ictère 
+- biochimique: Ac hétérophile,s, cryoglobuline, facteur rhumatoïde (dilution) 
+- physique : lipoproétien/fibrine (dilutaion/centrifugation) 
+- effet crochet : excès d'antigène donc l'anticorps n'arrive pas à le fixer de fa
+on stable > les complexes se dissocient et le signal chut
+Courbe de Heidelberger-Kendall 
+
+* Paramètres dosés
+
+- {../../notes/20240717T201856--albumine__biochimie_néphélémétrie_spectrophotométrie.org}[Albumine] 
+- {../../notes/20240717T200520--céruloplasmine__biochimie_néphélémétrie.org}[Céruloplasmine] 
+- {../../notes/20240630T185107--complément-c3__biochimie_néphélémétrie.org}[Complément C3] 
+- {../../notes/20240728T143650--crp__biochimie_néphélémétrie.org}[CRP] 
+- {../../notes/20240717T200415--haptoglobine__biochimie_néphélémétrie.org}[Haptoglobine] 
+- {../../notes/20240630T232802--immunoglobuline-a__biochimie_néphélémétrie.org}[Immunoglobuline A] 
+- {../../notes/20240630T232344--immunoglobuline-g__biochimie_néphélémétrie.org}[Immunoglobuline G] 
+- {../../notes/20240630T232614--immunoglobuline-m__biochimie_néphélémétrie.org}[Immunoglobuline M] 
+- {../../notes/20240717T200247--orosomucoïde__biochimie_néphélémétrie.org}[Orosomucoïde] 
+- {../../notes/20240728T135751--retinol-binding-protein__biochimie_néphélémétrie_nutrition.org}[Retinol-binding protein] 
+- {../../notes/20240717T200717--transferrine__biochimie_néphélémétrie.org}[Transferrine] 
+- {../../notes/20240728T135539--transthyrétine-pré-albumine__biochimie_néphélémétrie_nutrition.org}[Transthyrétine (pré-albumine)] 
+- {../../notes/20240717T202815--α2-macroglobuline__biochimie_néphélémétrie.org}[α2 macroglobuline] 
+

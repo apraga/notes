@@ -1,0 +1,61 @@
+@document.meta
+title: 20240726T211519--bnp__biochimie_cardio
+description: 
+authors: alex
+ategories: [
+biochimie
+nutrition
+]/
+created: 2024-09-07T20:13:28+0100
+updated: 2024-09-07T20:13:28+0100
+version: 1.1.1
+@end
+
+
+
+Peptide natriurétique type B 
+
+* Production
+
+- surcharge volémique -> production ventricules du coeur et extra-cardiaque 
+- clivage preproBNP -> proBN -> BNP et peptide N-terminal proBNP (= NT-proBNP) 
+-- seul le BNP a une activité physiologique connu 
+
+* Effet
+
+** Endocrine
+
+compense la surcharge volémique par 
+
+- vasodilatation périphérique 
+- natriurétique (d'où le nom): diminue l'appétence en sel et besoin H,2O, 
+- augmentation filtration glomérulaire (*diurétique*) et diminue réabsorption H,2O, 
+- inhibe sécrétion de l'aldostérone (surrénale) et rénine (rein) 
+
+** Paracrine et autocrine
+
+Cardiomyocyte + fibroblaste pour diminuer remodelage myocardique 
+
+* Indication
+
+- marqueur global de l'insuffisance cardiaque (proportionnelle à la gravité de l'insuffisance) 
+
+* Valeurs
+
+- < 100: forte probabilité d'absence d'insuffisance cardiaque 
+- 100 - 500 : zone grise 
+
+** Attention
+
+Varie selon les co-morbidités (ex: IR), âge
+{../../notes/20240802T160025--physiologie-de-la-grossesse__biochimie_gynéco.org::#h:e485bc1e-1ed8-441f-b5d1-08cdc3e1434a}[Grossesse::Cardiaque] 
+
+* BNP ou NT-proBNP pour anomalies cardiaques ?
+
+- BNP t1/2 plus courte 
+- IR augmente surtout le NT-proBNP 
+
+Peu d'arguments pour choisir 
+
+Seuil pour VPP et haute avec diag d'insuffisance cardiaque probable (zone "grise" entre les 2) 
+

@@ -1,0 +1,133 @@
+@document.meta
+title: 20240804T124423--natrémie__biochimie_néphro
+description: 
+authors: alex
+categories: [
+biochimie
+néphro
+] 
+created: 2024-09-07T20:13:35+0100
+updated: 2024-09-07T20:13:35+0100
+version: 1.1.1
+@end
+
+
+
+Hydratation intracellulaire = bilan net en eau
+Hydratation extracellulaire = bilan net en sodium 
+
+Osmolalité ~ 2x[Na+] + glycémie = 285mOsm/kg d'eau
+C'est l'osmolalité efficace, une formule plus précise serait :
+2x([Na+] + [K+]) + glycémie + urée 
+
+A l'équilibre, les osmolalité extra et intra cellulaires sont égales 
+
+Une approximation de la pression osomotique est donnée par la natrémie (90% = sodium + ses contre-ions [bicarbonate, chlore]). 
+
+* Sodium ~ volume extracellulaire
+
+{../../notes/20240823T194758--déshydratation-extracellulaire__biochimie_néphro.org}[Déshydratation extracellulaire] 
+
+** Hyperhydratation extracellulaire = excès de sodium
+
+Iso-osmolaire (l'eau "suit") 
+
+Étiologies : insuffisance cardiaque, cirrhose ascitique, syndrome néphrotique surtout 
+
+** Déshydratation intracellulaire = perte d'eau
+
+Donc hyperosmolalité plasmatique avec appel d'eau intra-cellulaire 
+
+Étiologie : 
+
+- hypernatrémie = 
+-- déficit en eau seul (DIC) = 
+--- perte extra-rénale en eau = 
+--- perte rénale en eau = diabète insipide 
+-- déficit en eau > déficit en sodium (DIC + DEC) = 
+--- natriurèse adaptée (basse): sueurs, pertes digestives 
+--- natriurèse inadaptée (normale): diurèse osmotique 
+-- gain eau > gain sodium = apport excessif NaCl 
+- natrémie normale mais soluté osmotiquement actif : mannitole, éthylène
+glycol… -> "trou anionique" entre osmolalité mesurée et calculée 
+
+** Hyperhydratation intracellulaire = excès d'eau
+
+~ Éliminer ****fausse**** hyponatrémie 
+-- hyperprotidémie et hyperlipidémie (dilution) 
+-- hypertonique : hyperglycémie important, méthanol, éthanol 
+~ Hypoosmolaire = hyponatrémie vraie 
+-- osmolalité urinaire diminué : apport augmenté (polydipsie, apport
+faible en solutié) 
+-- osmolalité urinaire augmenté : extracellulaire 
+--- diminué : déficit sodium > déficit eau 
+---- natriurièse adaptée (diminuée) : perte cutanées, digestive, 3e
+secteur 
+---- natriurièse inadaptée (augmentée) : perte rénale : diurétique,
+insuffisance surrénale.. 
+--- normal : excès d'eau : SIADH++, hypothyroïdie, hypocortisolisme 
+--- augmenté : excès d'eau > excès sodium : insuffisance cardiaque,
+cirrhose hépatique, syndrome néphrotique, insuffisance rénale 
+
+Une natrémie basse = augmentation du volume plasmatique ?  Pas
+toujours… 
+
+- si la glycémie est très haute, cela va forcer un déplacement d'eau en
+dehors des cellules. Donc le sodium sera dilué mais ce sera simplement
+un *transfert* ! 
+- s'il y a trop de protéines, la machine qui mesure la natrémie va les
+compter aussi dans le volume. Donc *fausse dilution* 
+
+Sinon oui ! (*vraie hyponatrémie*) Dans ce cas, on réfléchit sur la
+diminution de la concentration du sodium = quantité de sodium / volume.
+On a 3 situations 
+
+~ Augmentation du volume seule : c'est la version facile. Ça peut être
+du à : 
+-- trop de boisson ! 
+-- l'hormonone anti-diurétique qui est sécrétée en excès 
+-- autres 
+~ Le sodium et le volume diminuent mais le sodium diminue nettement
+plus : on a donc des *pertes de sel* 
+-- soit par le rein (diurétique…) 
+-- soit ailleurs (vomissement, diarrhés…) 
+~ Le sodium et le volume augmentent mais le volume augmenet nettement
+plus : pour simplifier, il faut imaginer qu'il y a des oedèmes. L'eau
+s'accumule en interstitiel, donc la pression artérielle diminue. En
+réaction, l'hormnone antidiurétiqe est stimullée pour corriger tout
+ça. D'où *réabsorption de sodium et d'eau* ! 
+-- insuffisance cardiaque 
+-- insuffisance hépatocellulaire 
+-- insuffisance rénale (mécanisme différent) 
+
+Trou osmolaire = osmolarité mesure - calculée 
+
+- augmenté si osmoloe exogène 
+
+Tranduscteur: soif et ADH (hormone antidiurétique)
+Effecteurs : apport eau per os (soif) et réabsorption au niveau du canal collecteur (ADH) 
+
+** Non reflété par la natrémie quand
+
+- accumulation d'osmoles 
+-- exogène (glycérol, mannitol, méthanol) 
+-- endogène (hyperglycémie, urémie majeure) 
+- transfert d'eau intracellulaire -> extracellulaire (fausse hyponatrémie par dilution) 
+
+Osmolariété corrigée pour la glycémie 2xNatrémie + glycémie/3 
+
+Attention à l'impédencemétrie indirecte ! La version directe ne pose pas de problème (pas de dilution). Voir {id:ae6c4672-b071-491d-bfbc-ef1a4ea96e47}[Potentiométrie] 
+
+* {../../notes/20240825T115156--hyponatrémie__biochimie_néphro.org}[Hyponatrémie] (hyperhydratation intracellulaire)
+
+{../../notes/20240825T115241--hypernatrémie__biochimie_néphro.org}[Hypernatrémie] (déshydratation extracellulaire) 
+
+* {../../notes/20240823T194758--déshydratation-extracellulaire__biochimie_néphro.org}[Déshydratation extracellulaire]
+
+* {../../notes/20240824T205718--hyperhydratation-extracellulaire__biochimie_néphro.org}[Hyperhydratation extracellulaire]
+
+* Traitement
+
+- HEC: gain de sodium (isoosmolaire) -> éliminer le sel (apport ou
+diurétique) 
+

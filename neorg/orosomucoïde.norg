@@ -1,0 +1,33 @@
+@document.meta
+title: 20240717T200247--orosomucoïde__biochimie_néphélémétrie
+description: 
+authors: alex
+categories: [
+biochimie
+néphélémétrie
+] 
+created: 2024-09-07T20:13:20+0100
+updated: 2024-09-07T20:13:20+0100
+version: 1.1.1
+@end
+
+
+
+- (α1 glycoprotéine acide) 
+- glycoprotéine = 40% glucides 
+- t1/2 = 2.5 jours 
+
+*Toujours intepréter avec créat* 
+
+- ne pas utiliser si insuffisance rénale 
+- corrélé à l'{../../notes/20240717T200415--haptoglobine__biochimie_néphélémétrie.org}[Haptoglobine] 
+
+* Variations
+
+- Augmenté : 
+-- inflammation aigüe : dès le 3-4e jour 
+-- infection/inflamation chronique, blessures, brûlures, tumeurs, IRC 
+- Diminué : insuffisance hépatique, syndrome néphrotique 
+
+Normes 0.5-1.2g/L 
+
