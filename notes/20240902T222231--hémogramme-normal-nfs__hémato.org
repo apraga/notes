@@ -4,7 +4,7 @@
 #+identifier: 20240902T222231
 
 Formule
-| Leucocytes |4.4-11 G/L |'
+| Leucocytes  | 4.4-11 G/L  |
 | PNN         | 1.5-7.7 G/L |
 | Lymphocytes | 1-4 G/L     |
 | PNE         | < 0.5 G/L   |
