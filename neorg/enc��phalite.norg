@@ -3,16 +3,15 @@ title: encéphalite
 description: 
 authors: alex
 categories: [
-viro
-bactério
-] 
+    viro
+    bactério
+]
 created: 2024-09-07T00:30:32+0100
-updated: 2024-09-07T00:53:04+0100
+updated: 2024-09-07T10:23:08+0100
 version: 1.1.1
 @end
 
-Voir {méningites.org}[Méningites], {myélite.norg}[Myélite] (méningo-encéphalite possible) 
-{vzv}
+Voir {méningites}, {myélite} (méningo-encéphalite possible) 
 
 * Clinique
 
@@ -24,7 +23,7 @@ tremblement, crises épileptique
 ** Bactérienne
 
 - Tuberculose : méningo-encéphalite rapidement progressive 
-- {listeria-monocytogenes.norg}[Listeria monocytogenes ]: rhombencéphalite
+- {listeria-monocytogenes}: rhombencéphalite
 Ophtalmoplégie, diplopie, ataxie, déficit moteur, troubles de la conscience 
  
 
@@ -33,9 +32,9 @@ Ophtalmoplégie, diplopie, ataxie, déficit moteur, troubles de la conscience
 - {herpès-simplex-virus-hsv.norg}[HSV] 1 : nécrosante (primo ou réactivation) 
 - {herpès-simplex-virus-hsv.norg}[HSV] 2 : néonatale 
 - rubéole 
-- {entérovirus.norg}[Entérovirus] : rhomboencéphalite 
+- {entérovirus} : rhomboencéphalite 
 - virus grippaux : inflammatoire post-infectieux 
 - VIH 
 - CMV 
 
-* Footnotes
+* Footnote
