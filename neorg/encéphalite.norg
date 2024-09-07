@@ -1,0 +1,40 @@
+@document.meta
+title: encéphalite
+description: 
+authors: alex
+categories: [
+    viro
+    bactério
+]
+created: 2024-09-07T00:30:32+0100
+updated: 2024-09-07T10:23:08+0100
+version: 1.1.1
+@end
+
+Voir {méningites}, {myélite} (méningo-encéphalite possible) 
+
+* Clinique
+
+Troubles de la conscience, convulsion, troubles du comportement, déficit moteu, aphasie,
+tremblement, crises épileptique 
+
+* Étiologies
+
+** Bactérienne
+
+- Tuberculose : méningo-encéphalite rapidement progressive 
+- {listeria-monocytogenes}: rhombencéphalite
+Ophtalmoplégie, diplopie, ataxie, déficit moteur, troubles de la conscience 
+ 
+
+** Virale
+
+- {herpès-simplex-virus-hsv.norg}[HSV] 1 : nécrosante (primo ou réactivation) 
+- {herpès-simplex-virus-hsv.norg}[HSV] 2 : néonatale 
+- rubéole 
+- {entérovirus} : rhomboencéphalite 
+- virus grippaux : inflammatoire post-infectieux 
+- VIH 
+- CMV 
+
+* Footnote
