@@ -8,19 +8,7 @@ updated: 2024-09-07T21:16:48+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
-@embed org
-@end
-
-
 Selon la porte d'entrée 
-
-
-
-
 
 +hline2
 #table.head.columns 1-12 0
@@ -42,5 +30,4 @@ Selon la porte d'entrée
 : B11 : anaérobies
 : A12 : Bucco-dentaire
 : B12 : {../../notes/20240612T233731--streptocoque__bactérie_bactério.org}[Streptocoque] oraux,{../../notes/20240901T111102--haccek__bactérie_bactério.org}[HACCEK]
-
 

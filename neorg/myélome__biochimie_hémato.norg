@@ -8,14 +8,6 @@ updated: 2024-09-07T21:17:02+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
-@embed org
-@end
-
-
 - prolifération plasmocytaire maligne avec soit une Ig entier soit une chaîne légère libre 
 - Rare chez sujet jeune (âge médian 70ans) 
 - facteur de risque certain : radiations ionisante 
@@ -32,27 +24,21 @@ version: 1.1.1
 - autres: plasmocytome solitairee, leucémie à plasmocytes (pronostic
 sombre) 
 
-
 * Évolution
 
 - prolifération: B puis moelle (MGUS = plasmocytome monoclonale -> myélome = plasmocyte malin) puis sang (leucémie aigüe à plasmocytes) 
 
-
 État prémyélomateux 
-
 
 - MGUS (prémyélomateux): 1% d'évolution par an d'évolution vers MMM 
 - intemédiaire (myélome indodeux): 10% par an 
 - plasmocytome solitaire osseux 
 
-
 ** Marqueurs cytogénétique
 
 transition vers MM, théranotisque 
 
-
 Hyperdiploïdies (55% MM), translocation (14q32.2 mais non spécifique), délétion (del17p) 
-
 
 * Circonstance des découverte
 
@@ -61,7 +47,6 @@ Hyperdiploïdies (55% MM), translocation (14q32.2 mais non spécifique), délét
 - sd anémique (infiltration médullaire) 
 - néphropathie 
 - fortuit 20% ! 
-
 
 * Bilan initial
 
@@ -75,7 +60,6 @@ monoclonale]
 normochromome, normocytaire, arégénératives) 
 - myélogramme [myélome/Waldenström] 
 
-
 ** Complication
 
 - hypercalcémie 
@@ -84,11 +68,9 @@ normochromome, normocytaire, arégénératives)
 - neuropathie périph 
 - maux de tête (hypeviscosité) 
 
-
 ** Génétique
 
 - Caryotype peu rentable -> FISH interphasique++, NGS 
-
 
 * Diagnostic (2014)
 
@@ -100,13 +82,11 @@ normochromome, normocytaire, arégénératives)
 -- chaine légères impliquée/non impliqué >= 100 
 -- > 1 lésion focale IRM 
 
-
 ** MGUS à IgG/A
 
 - plasmocytose médulaire < 10% 
 - et IgG/A < 30g/L 
 - et calcium, créat, hb normaux sans lésion osseuse ni amylose NB: risque de progession maligne basé sur taux Ig (favorible si < 15), type IgG (IG favorable) et κ/λ normal 
-
 
 ** MGUS à chaine légère libre
 
@@ -115,22 +95,17 @@ normochromome, normocytaire, arégénératives)
 - et composant urinaire < 500mg/24 
 - sans IgGmonoclonale (pas de critère CRAB) 
 
-
 ** Myélome indolent
 
 - {plasmocytes médullaires entre 10 et 60% 
 
-
 / +/- composant sérique ou urinaie (IgG/A >= 30g9l ou urinaire >= 500mg/24) 
 
-
 - et sans criètere MM ou amylose 
-
 
 ** Diagnostic
 
 Clinique + bio 
-
 
 - EPS 
 - immunofixation sérique 
@@ -138,11 +113,9 @@ Clinique + bio
 - ELP urines (pour détection chaînes légères libres) 
 - BOM : FISH 
 
-
 * Pronostic et traitement
 
 Initialement 40% à 5 ans mais fortement amélioré avec daratumumab (anticorps monoclonaux anti-CD38) 
-
 
 - myélome multiple = incurable 
 - score ISS 

@@ -8,17 +8,8 @@ updated: 2024-09-07T21:17:00+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
-@embed org
-@end
-
-
 Déficit en facteur Willebrand (vWF)
 impacte *vWF et FVIII* 
-
 
 * Épidémiologie
 
@@ -26,12 +17,10 @@ La plus fréquente des pathologies hémorragiques constitutionnelles
 1% population
 AD, rarement récessive (à différencier de l'{../../notes/20240808T223159--hémophilies__hémostase.org}[Hémophilies] ) 
 
-
 * Fonctions du vWF
 
 - hémostase primaire : adhésion + aggrégation plaquettaire 
 - coagulation : transporte facteur VIII 
-
 
 * Classification
 
@@ -42,12 +31,10 @@ AD, rarement récessive (à différencier de l'{../../notes/20240808T223159--hé
 -- 2B: gain d'interaction avec GPIb 
 ~ déficit complet 
 
-
 * Clinique
 
 - Syndrome hémorragique cutanéo-muqueux (ecchymoses, epistaxishhh) 
 - Hématome/hémarthrose : rare sauf is sévère 
-
 
 * Diagnostic
 
@@ -58,13 +45,11 @@ AD, rarement récessive (à différencier de l'{../../notes/20240808T223159--hé
 - activité anticoagulante FVII : diminuée (sauf type 2N car défaut de liaison) 
 - +/- temps d'occlusion plaquettaire sur PFA = dépistage simple et rapide : /in vitro/ par mesure du temps de passage du sang dans capillaires (collagène + activateur plaquettaire jusqu'à occlusion) -> très sensible aux anomalies du vWF 'sauf trype 2N) 
 
-
 ** Pièges
 
 - diminué si groupe O -> recherche groupe 
 - augmenté si âge, grossesse, stress, exercice physique,
 oestroprogestatif, syndrome inflammatoire, insuffisance hépatique -> CRP et fibrinogène pour écarter syndrome inflammatoire 
-
 
 * Traitement
 

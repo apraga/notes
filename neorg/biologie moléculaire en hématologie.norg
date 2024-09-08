@@ -8,14 +8,6 @@ updated: 2024-09-07T21:16:49+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
-@embed org
-@end
-
-
 * Indication
 
 - Diagnostic 
@@ -30,9 +22,7 @@ version: 1.1.1
 - Pronostic (TP53 pour lymphomes, délétion IKZF1, IGHB pour les LLC) 
 - Maladie résiduelle (transcrit BCR-ABL1) 
 
-
 Le tissu le plus infiltré : 
-
 
 - myélo- et lymphoprolifératif : sang 
 - leucémies aigǜes : moelle 

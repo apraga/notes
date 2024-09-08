@@ -8,16 +8,11 @@ updated: 2024-09-07T21:16:57+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
 * Localisation
 
 - Épiderme = impétigo 
 - derme = furoncle/anthrax (racine du follicule), abcès, phlegmon, dermohypedermite, érysipèle 
 - fasciite nécrosante 
-
 
 * Primaire -> secondaire
 
@@ -25,9 +20,7 @@ version: 1.1.1
 - abcès cutané primaire -> secondaire (panaris) 
 - impetigo primaire -> impétigination 
 
-
 Germes = *Staph aureus*, *Strepto. pyogenes* 
-
 
 * Érysipèle
 
@@ -38,7 +31,6 @@ Germes = *Staph aureus*, *Strepto. pyogenes*
 - Prélèvement: local = inutile, hémoc si forme grave, résistante 
 - traitement *oui*, amox orale ambulatoire, pas d'AINS ni cortico 
 
-
 * Furoncle, anthra, furonculose
 
 - Follicute profonde et nécrosante de tout le follicule pilo-sébacé 
@@ -48,7 +40,6 @@ Germes = *Staph aureus*, *Strepto. pyogenes*
 - Prélèvement si lésion multiple, recherche LPV *inutile* 
 - traitement: pas d'antibio forme simple, ne pas manipuler. Amox -AC si fièvre, > 5cm+++ 
 
-
 * Panaris, onyxis, péri-onyxis staphyloccocique
 
 - Infection aigǜe de la main la plus fréquence (pulpe doig, sous-ungéulaire+++) 
@@ -56,7 +47,6 @@ Germes = *Staph aureus*, *Strepto. pyogenes*
 - Complication: lymphangite, phlegmon des gaines 
 - Prélèvement pendant drainage abcès 
 - traitement: pas d'antibio si inflammation local, *chirurgie* si abcès (douleur intense, pulsatile) 
-
 
 * Impétigo
 

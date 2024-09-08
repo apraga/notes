@@ -8,14 +8,6 @@ updated: 2024-09-07T21:16:55+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
-@embed org
-@end
-
-
 - Anomalie constitutionnelle de la coagulation dû à un déficit en 
 -- facteur VIII = hémophilie A (gène /F8/) 
 -- facteur IX = hémophilie (gène /F9/) 
@@ -23,29 +15,23 @@ version: 1.1.1
 - Lié à l'X mais les femmes peuvent être symptomatiques 
 - Sévére si activité < 1% (modéré entre 1 et 5) 
 
-
 * Clinique
 
 Manifestations hémorragiques spontanées ou provoquées, extériorisé (plaie cutanée) ou non (*hémarthrose*, *hématomes profonds*) 
 
-
 Formes sévères : 
-
 
 - dès l'âge de la marche 
 - hémorragies fréquentes et nombreuses 
 - limitation articulaire, destruction de l'articulation 
 - hémorragies cérébrales 
 
-
 * Diagnostic
 
 Y penser si 
 
-
 - hémorragie inexpliquée chez enfant, anomalie préop 
 - allongement isolé TCA (mais attention à la sensibilité de certaines céphalines) 
-
 
 ** Dosage des facteurs
 
@@ -56,7 +42,6 @@ Y penser si
 - en 2 temps : insensible à l'héparine et ACC, plus reproductible, plus coûteux
 .image images/hemostase/fviii-chromogenique.png
  
-
 
 *** Interprétation
 
@@ -69,7 +54,6 @@ Y penser si
 ~ XI 
 -- normal 60-140% mais diminué à la naissance avec normalisation vers 1 an 
 -- diminué si IHC 
-
 
 * Traitement
 

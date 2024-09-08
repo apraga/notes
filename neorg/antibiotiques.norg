@@ -8,8 +8,6 @@ updated: 2024-09-07T21:16:47+0100
 version: 1.1.1
 @end
 
-
-
 * Cibles
 
 - inhibition synthèse de la paroi bactérienne = β-lactamine, glycopeptides, fosfomycine 
@@ -17,19 +15,12 @@ version: 1.1.1
 - synthène ARN : rifampicine 
 - synthèse protéines bactérienne : aminoside, macrolides, cyclines 
 
-
 .image ./images/microbiologie/antibio-action.png
  
-
 
 * {../../notes/20240905T221827--mécanimes-de-résistance-aux-antibiotiques__bactério.org}[Mécanimes de résistance aux antibiotiques]
 
 * Résumé
-
-
-
-
-
 
 : B1 : Péni G/V
 : C1 : Péni A
@@ -61,14 +52,7 @@ version: 1.1.1
 : C8 : H. influenza, N. gonorrhea
 : C9 : N. mengitidis
 
-
-
 PéniM = oxacilline, cloxacilline PéniA = amox 
-
-
-
-
-
 
 : B1 : C2G
 : C1 : C3G orale (1)
@@ -90,14 +74,7 @@ PéniM = oxacilline, cloxacilline PéniA = amox
 : B6 : Staphylocoque metiR
 : B7 : P. aeruginosa, intracellaire
 
-
-
 (1) limité car mauvais biodisponibilité 
-
-
-
-
-
 
 : B1 : Carbapénème
 : C1 : FQ
@@ -126,16 +103,8 @@ PéniM = oxacilline, cloxacilline PéniA = amox
 : B8 : carbapénémase
 : C8 : SAMR, gonocoque (1)
 
-
-
 (1) Pas de monothérpaie pour P. aeruginosa et Staphylocoque aureus (risque mutants)
 (2) amikacine, gentamicine 
-
-
-
-
-
-
 
 : B1 : Macrolides (1)
 : C1 : Lincosamide (2)
@@ -163,12 +132,9 @@ PéniM = oxacilline, cloxacilline PéniA = amox
 : B7 : staph, pneumocoque, strepo A
 : C7 : staph, strepto
 
-
-
 (1) erythro, azithromycine, clarithromycine
 (2) clindamycine
 (3) vancomycine 
-
 
 * {../../notes/20240828T184411--antibiogramme__bactério.org}[Antibiogramme]
 
@@ -177,7 +143,6 @@ PéniM = oxacilline, cloxacilline PéniA = amox
 Action = bactéricide, concentration dépendant.
 Perturbe la synthèse des protéine (fixation sous unité 30s des ribosomes) 
 
-
 ** Résistances
 
 - naturelle: anaérobie strictes et préférentielle (streptocoques,
@@ -185,15 +150,12 @@ entérocoques) par défaut de pénétration car le système de transport
 nécessite la force produite par les chaînes respiratoire aérobies /NB:
 penicilline + amoniside passe car agit sur la paroi bactérienne/ 
 
-
 * Sulfamide
 
 Bactériostatique (inhibe croissance) mais en synérgie devient
 bactéricide Ex: sulfamethoxazole + trimethoprime (Bactrmie) 
 
-
 Mécanisme : inhibe synthèse microbionne d'acide folique 
-
 
 * Fluoroquinolone
 
@@ -208,11 +170,9 @@ Mécanisme : inhibe synthèse microbionne d'acide folique
 -- 2e génération : infections sévères à bacille Gram négatif 
 -- 3e et 4e génération : sinusite aigüe bactériennes, exacerbation pneumopathie communutaire, infection compliquée peau + tissus mous Résistante : en augmentation chez entérobactéries (E. coli, Klebsiella) 
 
-
 * Métronidazole
 
 Pour anaérobie strictes 
-
 
 * Infection ostéo-articulaires
 

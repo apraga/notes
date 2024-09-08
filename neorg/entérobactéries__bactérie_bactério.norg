@@ -11,16 +11,7 @@ updated: 2024-09-07T21:16:52+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
-@embed org
-@end
-
-
 Groupe selon la résistance *naturelle* β-lactamine 
-
 
 ~ aucune : E. coli, Proteus mirabilis, Salmonella 
 ~ Pénicillinase à bas niveau : Klebsiella (pneumonia, oxytoca),
@@ -30,16 +21,13 @@ Providencia, Citrobacter freundii, /Klebsiella aerogenes/
 ~ Pénicillinase + céphalosporinase : Yersinia enterolitica 
 ~ β-lactamase à spectre étendu (BLSE): Kluyvera 
 
-
 Résistance acquises 
-
 
 * {../../notes/20240829T230553--escherichia-coli__bactérie_bactério.org}[Escherichia coli]
 
 * KES = Klebsiella, ENterobacter, Serratia
 
 Vert (β-glucosidase +) 
-
 
 * {../../notes/20240829T215907--salmonella-spp__bactérie_bactério.org}[Salmonella spp]
 

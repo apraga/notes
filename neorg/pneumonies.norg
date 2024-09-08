@@ -8,26 +8,12 @@ updated: 2024-09-07T21:17:05+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
-@embed org
-@end
-
-
 * Aigüe communautaire
 
 Classification 
 
-
 - alvéolaires : bactéries pyogènes, surtout sphère oropharyngéee qui disséminent 
 - interstitielles (atypiques) : bactéries intracellulaires, virus 
-
-
-
-
-
 
 +hline2
 #table.head.columns 1-15 0
@@ -70,21 +56,16 @@ Classification
 : C14 : {../../notes/20240515T225630--legionella-pneumophiliea__bactérie_bactério.org}[Légionelle]
 : C15 : Virus
 
-
-
 Fréquent, de gravité variable
 Les plus graves :{../../notes/20240831T173233--streptococcus-pneumoniae__bactério.org}[Streptococcus pneumoniae],{../../notes/20240816T121919--hæmophilus-influenza__bactérie_bactério.org}[Hæmophilus influenza] ({../../notes/20240828T192156--staphylocoque-aureus__bactério.org}[Staphylocoque aureus] ) 
-
 
 * Nosocomiales
 
 Surtout sous ventilation mécanique
 Étiologies 
 
-
 - < 5 j: {../../notes/20240828T192156--staphylocoque-aureus__bactério.org}[Staphylocoque aureus] ,{../../notes/20240816T121919--hæmophilus-influenza__bactérie_bactério.org}[Hæmophilus influenza] 
 - > 5j : bacilles à gram négatif ({../../notes/20240612T233531--pseudomonas-aeruginosa__bactérie_bactério.org}[Pseudomonas aeruginosa]) 
-
 
 * Traitement
 

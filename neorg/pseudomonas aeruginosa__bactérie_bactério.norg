@@ -11,10 +11,6 @@ updated: 2024-09-07T21:17:05+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
 - Bacille Gram négatif, très mobile (ciliature polaire !) 
 - Aérobie stricte mais non exigeante 
 - Origine : environnement++. saprophyte des milieux humides 
@@ -22,15 +18,12 @@ version: 1.1.1
 -- infection nosocomiale (matériel) ou . 1ere bactérie en réa 
 -- mucoviscidose: colonisation ou infection bronchopulmonaire chronique 
 
-
 * Phyisopath
 
 /La/ bactérie opportuniste par excellence.
 Origine dans l'environnement, peu pathogène 
 
-
 Devient pathogène si sytème immunitaire fragile 
-
 
 - Nombreux facteurs de virulence : exotoxine, exoprotéines, hémolysine 
 - Facteur d'adhésion 
@@ -38,18 +31,14 @@ Devient pathogène si sytème immunitaire fragile
 - Catalase positif 
 - lactose négatif 
 
-
 * Clinique
 
 - Pneumpathies (réa++) 
 
-
 -{../../notes/20240602T154150--infections-urinaires__bactério.org}[Infections urinaires] (sonde) 
-
 
 - bactériémie (cathéter) 
 - infections cutanées (brùlé) 
-
 
 * Quand réaliser un antibiogramme
 
@@ -57,18 +46,15 @@ Devient pathogène si sytème immunitaire fragile
 - colonisation de patients fragile (ID, intbués) 
 - pulmonaire isolé de patients muco, BPCO, DDB 
 
-
 * Diagnostic
 
 - Pousse 24h à 37% sur milieu non sélectif. 
 - Milieu sélectif : cétrimide 
 - Oxydase positif (!= entérobactéries) -> test rapide pour différencier les 2 
 
-
 * Résistance
 
 Nombreuses résistances naturelles… 
-
 
 ** Résistance naturelle :
 
@@ -80,15 +66,12 @@ Nombreuses résistances naturelles…
 - macrolides 
 - azithromycine 
 
-
 Association de plusieurs mécanisme (synérgie/complémentaire) 
-
 
 - β-lactamase AmpC (large spectre, inductible) 
 - enzyme modificatrice aminoside 
 - effluxs actif (mexAB-OprM, MexXY/OprM) 
 - imperméabilité (porine OpriF) 
-
 
 ** Résistance acquise
 
@@ -97,12 +80,10 @@ Association de plusieurs mécanisme (synérgie/complémentaire)
 - Attention: certaines souches accumulent des résultats 
 - β-lactamase transférable : pénicillinase, BLSE, carbapénémase 
 
-
 ** Quand chercher BLSE ?
 
 - synergie ceftazidime/cefepime et acide clavulanique 
 - synergie ceftazidime/cefepime et impiénoèmeacide clavulanique 
-
 
 * Traitement
 

@@ -8,31 +8,18 @@ updated: 2024-09-07T21:16:47+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
-@embed org
-@end
-
-
 Définition: VGM < 80 fL (adulte), 72fl (enfant). NB: élevé chez l'enfant 
-
 
 NB : la microcytose est habituellemment associée à une anémie mais pas toujours.
 NB: l'anémie microcytaire est habituellement hypochrome (diminution CCMH et TCMH) 
 
-
 Physiopathologie : microcytose = défaut de synthèse de l'hémoglobine donc divisions supplémentaires 
-
 
 Diagnostic initial: hémogramme (nb GR, plaquette, leuco, formule
 sanguine) (réticulocytes inutiles en première intention) - frottis :
 hypochromie, dysérythropoïèes 
 
-
 Causes principales : carence martiale, thalassémie, inflammation 
-
 
 ** 1. {../../notes/20240723T201939--carence-martiale__hémato.org}[Carence martiale]
 
@@ -41,7 +28,6 @@ Causes principales : carence martiale, thalassémie, inflammation
 - Si pas de carence fer : bilan inflammatoire + étude hémoglobine 
 - centrale 
 - diminution synthèse hème par manque de fer 
-
 
 ** 2. {../../notes/20240722T222651--thalassémies__hémato.org}[Thalassémies] (globine)
 
@@ -54,11 +40,9 @@ progéniteur érythroïde)
 l'inflammation en séquestrant le fer pour diminuer le stress oxydant) 
 - traitement = celui de l'inflammation 
 
-
 ** 4. Causes rares
 
 Myélograme et perls, étude génétique: 
-
 
 - anémie sidéroblastiques constit (hème) 
 - génétique rare : acéruloplasminémie, atransférrinémie congénitale,

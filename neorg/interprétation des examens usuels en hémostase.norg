@@ -8,14 +8,6 @@ updated: 2024-09-07T21:16:58+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
-@embed org
-@end
-
-
 * TP, TCA
 
 .image images/hemostase/tp-tca.png
@@ -23,17 +15,14 @@ version: 1.1.1
 .image images/hemostase/tp-diminue.png
  
 
-
 Augmentation isolée TCA sans traitement
 .image images/hemostase/tca-allonge-isole.png
  
-
 
 * Variations physiologiques
 
 - {../../notes/20240802T160025--physiologie-de-la-grossesse__biochimie_gynéco.org::#h:afec2727-f955-4a28-aca2-9bec495f4c4a}[Physiologie de la grossesse::Coagulation] 
 - Nouveau-né : carence en vitamine K (donc doser TP, TCA) 
-
 
 * Facteurs
 
@@ -41,25 +30,20 @@ Augmentation isolée TCA sans traitement
 - IX : 50-150% : diminué avant 3 mois 
 - XI: 60-140% : diminué avec 1 ans, diminué si IHC 
 
-
 * Fibrinogène
 
 ** Déficit
 
 Le plus souvent acquis 
 
-
 - syndrome de consommation 
 
-
 Voir {../../notes/20240808T231703--déficits-rares-en-facteurs-de-la-coagulation__hémostase.org::#h:5dacd457-dd66-44c3-8597-401fb1e5bbd8}[Déficit en fibrinogène congénitaux] 
-
 
 * D-dimère
 
 Produit de dégradation de la fibrine
 Intérêt : 
-
 
 - augmenté si {../../notes/20240807T223543--civd__hémostase.org}[CIVD] 
 - bonne VPN pour thrombose/embolie pulmonaire (<450-550) récente /sans traitement anticoagulant/ 

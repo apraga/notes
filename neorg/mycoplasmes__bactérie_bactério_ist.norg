@@ -11,25 +11,18 @@ updated: 2024-09-07T21:17:02+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
 * Mycoplasmes urogénitaux
 
 4 espèces 
 
-
 - /ureaplasma/ spp = commensal tracture urogénital 
 - /mycoplasma genitalium/ = IST, non commensal 
-
 
 ** Clinique
 
 - Infection urogénitale basse/haut: *urétrite* (homme), *cervicite* (asympto souvent), endométrie, salpingite 
 - lymphogranulomatose vénérienne : régions tropicale, ulcération génitale, adénite inguinale; anorectite HSH 
 - opportuniste : rare (uértrire masculine, salpingite, grossesse, immunodépression) 
-
 
 ** Diagnostic
 
@@ -39,19 +32,16 @@ version: 1.1.1
 - test de résistance macrolie moléculaire : gène codant ARNr23s 
 - pas de culture (fastidien) 
 
-
 *** Myc. hominis, Ureaplasma spp
 
 - *direct*: culture milieu spécifique liqui/gélosé (! pas de gram car pas de paroi) 
 - TAAN : infection génitale haute/extra-génitale 
-
 
 *** Prélèvement
 
 - pas de prélèvement cervico-vaginal pour Ureaplasma et m. hominis ! (commensal) 
 - site stérile; homme=urètre, sperme, urine (1er jet); NN =
 endotrachéal, liquide gastrique 
-
 
 ** Résistances
 
@@ -62,7 +52,6 @@ endotrachéal, liquide gastrique
 -- M. hominis, Ureaplasma: tétracycline (gène /tet/) surtout +/- fluoroquinolones (3%) 
 -- M. genitalium : macrolides++ !traitement de première intention!, fluoroquinolones 
 
-
 ** Traitement
 
 *** Myc. genitalium
@@ -70,7 +59,6 @@ endotrachéal, liquide gastrique
 - non compliqué : azithromycine 
 - sinon : moxifloxacine 
 - *dépister IST*, traiter partener, rapport protégé 
-
 
 *** Myc. hominis, Ureaplasma
 

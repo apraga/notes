@@ -8,18 +8,9 @@ updated: 2024-09-07T21:16:46+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
-@embed org
-@end
-
-
 * Interprétation
 
 Entérobactéries 
-
 
 - Groupe 1: TRI = résistance amox/ticar/pipe + inhibiteur β-lactamase 
 - *Céphalosporinase* = *inhibée oxacilline* 
@@ -27,14 +18,6 @@ Entérobactéries
 -- synergie C3G/C4G - ticar + acide clavulanique 
 -- ne touche pas les carbapénèmes 
 -- cefoxitine non touchée => permet de différencier d'une céphalosporinase déréprimée (voir tableau) 
-
-
-
-
-
-
-
-
 
 : B1 : Pénicillinase
 : C1 : Pénicillinase déréprimée
@@ -96,8 +79,6 @@ Entérobactéries
 : A12 : carbapénème
 : G12 : I/R
 
-
-
 - AMX = amoxicilline 
 - TIC = ticarcilline 
 - PIP = piperacilline 
@@ -107,15 +88,12 @@ Entérobactéries
 - C3G = céfixime (CFM), céfotaxime (CTX), ceftazidime (CAZ) 
 - C4G = céfépime (FEP) 
 
-
 ** MSLB
 
 Résistance à l'érythromicine 
 
-
 - sensible pristinamycine : regarder si induction ("interaction"), si oui, MSLB inductible donc possible sélection de mutant. 
 - résistant pristinamycine : MSLB constitutif 
-
 
 * Piège
 

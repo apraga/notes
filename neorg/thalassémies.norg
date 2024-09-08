@@ -4,170 +4,27 @@ description:
 authors: alex
 categories: hémato 
 created: 2024-09-07T21:17:09+0100
-updated: 2024-09-07T21:17:09+0100
+updated: 2024-09-07T23:01:09+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
+Définition : anomalie génétique avec diminution/absence synthèse de chaine alpha ou beta globine *normale* (à comparer avec {:$/drépanocytose:}
 
-
-@embed org
-@end
-
-
-Définition : anomalie génétique avec diminution/absence synthèse de
-chaine alpha ou beta globine 
-
+* Épidémiologie
+  Bassin méditérannée, Afrique centrale, Asie du Sud-Est
+  AR
+* Physipathologie
+  - Défaut d'association des chaînes de globines -> Défaut de synthèse dans les érythroblases -> microcytose, hypochromie
+  - précipitation des chaînes de globines en excès
+    - hémolyse
+    - avortement intramédullaire -> érythropoïèse inefficace
+  -- Déformation ossues (hyperplasie érythroïde)
+* Diagnostic
+- Hémogramme + frottis
+- Phénotype de l'hémoglobine (chromatographie liquide...)
+- Génotypage
 
 β-thalassémie : n'affecte as les chaïnes embryonnaire (δ) ou fœtale (γ) -> début dans la petite enfancie (contrairement à l'α-thalassémie qui est anténatale) 
 
-
-* β-thalassémie
-
-Défaut production β-globine donc de l'hémoglobine dans un GR : microcytose, hypochromie 
-
-
-- anémie sévère (pas d’hémoglobine) 
-- dysérythropoïse : excès α-globine qui vont précipiter -> anémie hémolytique arégénérative, hypersplénisme 
-
-
-Gène HBB (chr 11). AR donc en général 
-
-
-- hétérozygote : peu sévère 
-- homozygote : le plus souvent sévère (forme mineure) 
-
-
-Avantage sélectif sur paludisme -> méditarrénée, afrique, inde, ase sud-est, /sud de la france/ 
-
-
-** Forme mineure
-
-diag biologique (peu signe clinique), pas de traitement, conseil génétique 
-
-
-- "syndrome thalassémique" /microcytose, hypochromie, pseudo-polyglobulie/ +/- anémie, arégénératif 
-- étude hémoglobine : (chromatographie liquide haute pression, electrophorèse capillaire car faible fraction) : Hb A,2, >= 3.5% (augmentée) 
-
-
-** Forme majeure :
-
-- clinique : 
--- début nourrison/enfant avec diminution Hb foetale : anémie profonde dépendant de la transfusion 
--- HMG, SMG, ictère, infeciton à répétition, retard staturo pondérale 
--- surcharge en fer (transfusion) 
-- diag biologique : *Hb < 7g microcytaire hypochrome + microcytose*,
-hypochrile, anisocytose, po%ikylocytose, erythroblaste 
-- étude Hb /avant/ transfusion : absence HbA avec HbF majoritaire 
--- NB : autre forme ; Hb E, autres variant Hb 
-
-
-** Forme intermédiaire
-
-définition clinique : anémie moins sévère,
-transfusion si nécessaire, complication surtout à la surcharge en fer 
-
-
-Prévention ; dépister les hétérozygots (couples à risque, hémogramme)
-DPN ou DPI possible 
-
-
-** Traitement
-
-- symptomatique : transfusion (selon forme), chélation martiale dans les
-2 cas 
-- curatif : greffe moelle osseuse, thérapie génétique (essai
-thérapeutique) 
-
-
-** Génétiques
-
-AR, surtout mutation ponctuelle, parfois délétion 
-
-
-Génotype : 
-
-
-- β-β normal 
-- β*-β: htz, compensé par allèle sauvage : porteur sain avec "trait thalassémique" (microcytose, hypochromie, augmentation modérée mais constante HbA2 >,3,.2%) 
-- β*-β* hmz (ou htz composite) 
--- NB: thalassémie intermédiaire : mutation non sévère -> synthèse résiduelle de β-globine avec tableau atténué ( anémie mais production résiduelle d’hémoglobine ) 
-
-
-Mutation: 
-
-
-- stop/altération de l’épissage : pas de chaine β ->,thalassémie, majeure 
-- site alternatif d’épissage, mutation promoteur : diminution chaine β -> thalassémie intermédaire (dépendance à la transfusion variable) 
-- faux-sens diminuant l’expression proches sites d’épissage-> altère niveau expressio gènes -> hémoglobine anormale mais niveau inférieur 
--- Hb E en Inde: 
-
-
-* α-thalassémie
-
-- 4 gènes fonctionnels (α2 α1 sur chaque) 
-
-
-Diminution/absence production chaine α 
-
-
-Ubuquitaires mais extrème-orient, asie pour les formes sévères Gènes
-HBA1 et HBA2 
-
-
-** Formes
-
-- 3 gènes fonctionnels : silencieuse 
-- 2 : mineure 
-- 1 ou 0 : sévère : hémoglobinose H et hydrops foetalis resp 
-
-
-** Diag biologique
-
-- silencieuse : microcytose très modérée hypochromie sans anémie,
-ferritine et etude Hb normales 
-- mineuse : pseudo polyglobulie, microcytose, hypochromie +/- anémie,
-etude hémoglobine ormale/HbA2 légèrement diminué 
-
-
-** Formes sévères
-
-Hydrops foetalis : mort in utero/naissance le plus souvent + risque mère
-toxémie gravidique 
-
-
-Génétique : si une allèle avec double deletion : risque hydrops foetalis ! 
-
-
-Hémoglobinose H : 
-
-
-- *hyperhémolyse* (anémie, ictère, SMG) parfois en crises (fièvre
-médic), surcharhe en fer 
-- anémie microcyaires hypochrome +/- thrombopénie avec hémolyse (bili
-libre augmentée, hapto diminuée, LDH augmentée) et surcharge en fer
-(ferritine N ou augmentée) 
-- etude Hb : HbH ou bart, Ae2 diminuée 
-
-
-** Moléculaire
-
-- Surtout délétions, rarement mutation ponctuelle 
-
-
-Délétion 
-
-
-- soit délétion 2 gènes en cis 
-- délétion/fusion : perte de région entre α2 et α1 -> gène hybride fonctionnel 
-
-
-Génotypes 
-
-
-- 4 ou 3 gènes fonctionnel = normal 
-- 2 gènes α (cis ou trans): trait thalassémique (microcytose, hypochromie *mais* HbA2 < 3%) 
-- deletion 2 genès en cis avec deletion/fusion sur l’autre allèle ->,1, seul gènes fonctionne = α-thalassémie (symptomatique, bien toléré, rarement nécessitant une transfusion) 
-- aucun gènes α : mort foetale/périnatale 
-
+* {:$/α-thalassémie:}
+* {:$/β-thalassémie:}

@@ -8,21 +8,11 @@ updated: 2024-09-07T21:17:07+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
-@embed org
-@end
-
-
 Cocci gram+ immobile 
-
 
 - Aéro/anaérobie, fragile 
 - hémolyse α (partielle), sensible optochine
 Strictement humain, commensal rhinoropharynx 
-
 
 * Clinique
 
@@ -30,32 +20,26 @@ Infections communautaires
 {../../notes/20240901T145409--pneumonies__bactério.org}[Pneumonies], {../../notes/20240901T143951--infections-orl__bactério_viro.org}[Infections ORL]
 {../../notes/20240731T205020--méningites-bactériennes__bactério.org}[Méningites bactériennes] 
 
-
 * Diagnostic
 
 Bactérie fragile
 Culture (hémocultures++) 
 
-
 * Résistances
 
 CMI β-lactamines *indispensable* ( *péni G, amox, céfotaxime*) 
 
-
 - Sensibilité diminués pénicilline (PLP) 30-60% => 
-
 
 * Traitement
 
 β-lactamines restent la 1ere intention
 Voir 
 
-
 - {../../notes/20240901T144149--otite-moyenne-aigüe__bactério.org}[Otite moyenne aigüe] 
 - {../../notes/20240901T145409--pneumonies__bactério.org::#h:c2ccf78d-f2df-4c9f-b21d-e3346b2ffdf5}[Pneumonies::Traitement]
 {../../notes/20240731T205020--méningites-bactériennes__bactério.org}[Méningites bactériennes] 
 - C3G IV + cortico. Pas de prophylaxie. 
-
 
 * Prévention
 

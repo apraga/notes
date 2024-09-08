@@ -8,20 +8,10 @@ updated: 2024-09-07T21:17:09+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
-@embed org
-@end
-
-
 Fonctionnement des automates d'hémostase 
-
 
 - Méthode : chronométrique (coagulante), enzymatiques (chromogénique), immuno 
 - Automates : Stago : starmaxo, Sysmex/Siemes: CS 
-
 
 * Méthodes
 
@@ -33,14 +23,12 @@ Fonctionnement des automates d'hémostase
 - Avantages : pas d'interférence optique 
 - Inconvénient : moyenne d'amplitude trop faible 
 
-
 ** Photo-optique
 
 - Technique : détection signal diffracté (néphélémétrie) ou transmis (turbidimétrie) modifié par le caillot 
 - Avantages : voir la formation du caillot 
 - Inconvénients : détecte mal les petits caillots transparents, interférence si lipémie, hémolyse, hyperbilirubinémie -> lecture à 671nm pour minimiser c ou à plusieurs longueurs d'onde 
 - CS5100 : TP,TCA, fibrinogène 
-
 
 ** Enzymatique : Chromogénique
 
@@ -50,7 +38,6 @@ Fonctionnement des automates d'hémostase
 - Inconvénients : interférence lipémie, hémolyse hyperbilirubinémie, réactifs couteux 
 - CS5100 antithrombine, protéine C 
 
-
 ** Immuno à détection photo-optique (immunoturbidimétrie)
 
 - Dosage quantitatif Ddimères, monomèes de fibrine, facteur/inhib coag 
@@ -58,7 +45,6 @@ Fonctionnement des automates d'hémostase
 - Avantages : très sensible et spécfique 
 - Inconvénient : réactif couteux, nb tests disponibles limités 
 - CS5100 : D-dimères 
-
 
 * {../../notes/20240806T224321--pfa__hémostase.org}[PFA]
 
@@ -80,7 +66,6 @@ Fonctionnement des automates d'hémostase
 anticoagulants 
 - modifié par debigatran et rivaroxaban surtout (moins apixaban) 
 
-
 ** TCA
 
 - TCA : mesure temps malade / temps témoin (ref < 1.2) 
@@ -92,10 +77,8 @@ anticoagulants
 -- dépistage lupus anticoagulant 
 - Peu sensible au antiXa, sensible anti IIa 
 
-
 Dosage fibrinogène avec thrombine calcique en excès + inhibiteur
 héparine : mesure du temps et conversion en g/L avec droite d'étalonnage 
-
 
 * Examens de biologie médical délocalisés
 

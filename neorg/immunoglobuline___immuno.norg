@@ -8,20 +8,11 @@ updated: 2024-09-07T21:16:57+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
-@embed org
-@end
-
-
 - membranaire (lymphocytes) ou sécrétées (plasmocytes) 
 - domaine constant (en bleu clair/foncé) : identifie isotopo de la chaîne lourde et légère 
 - domaine variable (en vert): responsable de la reconnaissance de l'antigène 
 - chaîne lourde (bleu foncé + partie variable) : IgM, D, A, G, E 
 - chaîne légère (bleu clair + partie variable) : κ, λ 
-
 
 .image images/hematologie/ig.png
  

@@ -8,28 +8,17 @@ updated: 2024-09-07T21:17:01+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
-@embed org
-@end
-
-
 Voir {../../notes/20240813T152244--mécanisme-des-maladies-hématologiques__hémato.org}[Mécanisme des maladies hématologiques] 
-
 
 * Néoplasies myéloïdes
 
 Classification OMS 
-
 
 - {../../notes/20240815T204208--syndromes-myéloprolifératifs__hémato.org}[Syndromes myéloprolifératifs] 
 - SMP/SMD 
 - {../../notes/20240815T211015--syndromes-myélodysplasiques__hémato.org}[Syndromes myélodysplasiques] 
 - Leucémies aigües myéloblastiques 
 - myélo+lymphoïdes + hyperéosinophilie + anomalies PDGFRα/β ou FGFR1 
-
 
 * Autrnes
 
@@ -38,7 +27,6 @@ Classification OMS
 {../../notes/20240717T195629--myélome__biochimie_hémato.org}[Myélome]
 {../../notes/20240814T171123--lymphomes__hémato.org}[Lymphomes]
 {../../notes/20240814T200517--déficit-immunitaire__hémato_immuno.org}[Déficit immunitaire] 
-
 
 * Lymphocytes
 
@@ -81,7 +69,6 @@ aigüe monoblastique
 -- transitoire : infection grave, hémolyse, régénération (hémorragie,
 postchimio) 
 -- chronique : SMP, métastase médullaire 
-
 
 * {../../notes/20240813T152959--maladies-du-globule-rouge__hémato.org}[Maladies du globule rouge]
 

@@ -8,17 +8,8 @@ updated: 2024-09-07T21:17:03+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
-@embed org
-@end
-
-
 - Envahissement LCR par bactéries 
 - Ttt = ATB IV forte dose 
-
 
 * Étiologie
 
@@ -30,7 +21,6 @@ version: 1.1.1
 - {../../notes/20240816T121919--hæmophilus-influenza__bactérie_bactério.org}[Hæmophilus influenza] : rare, non vacciné ou immunodéprimé 
 - L 
 - Autres : Lyme, leptospirose, syphilis, immunodéprimé 
-
 
 * Gram:
 
@@ -45,7 +35,6 @@ digestive
 -- Amox si strepto agalactia, céfotaxime si E.coli (50%
 pénicillinase), amox si listéria (résistance céphalo) 
 
-
 * Physiopathologie
 
 - passage dans le sang : depuis 
@@ -54,13 +43,11 @@ pénicillinase), amox si listéria (résistance céphalo)
 - autres : brèche ostéoméningée, complication infection systémique
 (borréliose..) 
 
-
 * Clinique
 
 - Communautaire = > 39° + syndrome méningé (céphalé, raideur nuque, vomissement, photophobie) 
 - Néonat : non spécifique => PL si fièvre sans cause évidente 
 - Méningoencéphalitue : +signe neuro/psy 
-
 
 * Traitement
 

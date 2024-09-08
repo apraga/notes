@@ -8,22 +8,12 @@ updated: 2024-09-07T21:16:52+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
-@embed org
-@end
-
-
 Sont exclus :{../../notes/20240808T223159--hémophilies__hémostase.org}[Hémophilies] {../../notes/20240806T213755--maladie-de-willebrand__hémostase.org}[Maladie de Willebrand] 
-
 
 - constit, le plus souvent AR 
 - 3-5% des déficits en coagulation 
 - expression clinique variable 
 - /éliminer un déficit acquis/ 
-
 
 * Déficit en facteur II
 
@@ -32,7 +22,6 @@ Sont exclus :{../../notes/20240808T223159--hémophilies__hémostase.org}[Hémoph
 - Diag : TP diminué, TCA augmenté, dosage FII 
 - TTT : CCP, plasma frais congelé (PFCg) 
 
-
 * Déficit en facteur V
 
 - Normale 15-20% 
@@ -40,19 +29,16 @@ Sont exclus :{../../notes/20240808T223159--hémophilies__hémostase.org}[Hémoph
 - Diag : TP diminué, TCA augmenté, dosage FV 
 - Ttt : PFC, plaquettes 
 
-
 * Déficit combiné en facteur V et VIII
 
 - Hémorragie modérée 
 - Ttt : PFC, concentré FVIII 
-
 
 * Déficit en facteur VII
 
 - < 1-2% : très sévère mais asympto possible… 
 - Diag : TP diminué, TCA normal, dosage FVII 
 - Ttt : concentré FVII, recombinant 
-
 
 * Déficit en facteur X
 
@@ -61,13 +47,11 @@ Sont exclus :{../../notes/20240808T223159--hémophilies__hémostase.org}[Hémoph
 - Diag : TP diminué, TCA augmenté, dosage FX 
 - Ttt : CCP, PFC 
 
-
 * Déficit en facteurs vitamine K dépendants (II, VII, IX, X)
 
 - hémorragies sévères 
 - diag : exclure acquis : carence en vitamine K, malabsorption, médicaments 
 - ttt : vitamine K, PFC, CCP 
-
 
 * Déficit en facteur XI
 
@@ -76,14 +60,12 @@ Sont exclus :{../../notes/20240808T223159--hémophilies__hémostase.org}[Hémoph
 - Diag : TP diminué, TCA augmenté, dosage FXI 
 - Ttt : concentré FXI, PFC, acide tranexamique 
 
-
 * Déficit en facteur XIII
 
 - stabilise la fibrine 
 - corrélé taux FXIII: saignment des tissus mous, fausses couches spontanées 
 - Diag : TP diminué, TCA normaux, dosage FXIII 
 - Ttt : concentré FXIII, recombiné 
-
 
 * Déficit en fibrinogène congénitaux
 

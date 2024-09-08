@@ -8,18 +8,6 @@ updated: 2024-09-07T21:16:48+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
-@embed org
-@end
-
-
-
-
-
-
 : B1 : Inflammatoire
 : C1 : Ferriprive
 : D1 : Mixte
@@ -54,25 +42,19 @@ version: 1.1.1
 : C8 : -
 : D8 : N ou -
 
-
-
 CRP: augmenté si inflammatoire ou mixte
 Hepcidine: dimin
 Fer + Protoporphyrine -> heme + Globine -> hémoglobine 
 
-
 Atteinte 
-
 
 - fer = carence martiale, anémie inflammatoire 
 - protoporphyrine : anémie sidéroblastique 
 - globine : thalassémie 
 
-
 * Types d’anémies
 
 signe clinique/bio d’inflammation et - coef saturation < 16% et 
-
 
 - ferritine < 30μg/L : carence martiale 
 - ferritine 30-100 
@@ -80,13 +62,11 @@ signe clinique/bio d’inflammation et - coef saturation < 16% et
 -- > 1 : maladie chronique 
 - ferritine > 100: maladie chronique 
 
-
 * {../../notes/20240723T201939--carence-martiale__hémato.org}[Carence martiale]
 
 * Anémies inflammatoire
 
 = celle des maladise chroniques 
-
 
 ** Physiopathologie
 
@@ -95,7 +75,6 @@ signe clinique/bio d’inflammation et - coef saturation < 16% et
 - augmente hémophagocytose (donc diminution Fe3-) 
 - augmente synthèse hpecdinie 
 
-
 ** Bilan
 
 - fsDiminution Fer et CST 
@@ -103,27 +82,18 @@ signe clinique/bio d’inflammation et - coef saturation < 16% et
 - ferritine N ou + 
 - fsRsTF N 
 
-
 *Une ferritine N ou + n'exclut pas une carence martiale* 
-
 
 ~ Ferritine 
 ~ Puis RsTf 
 
-
 * Anémie mixte
-
-
-
-
 
 +hline2
 #table.head.columns 1 0
 : A1 : Inflammatoire
 : B1 : Ferriprive
 : C1 : Mixte
-
-
 
 * Hyperferritinémie
 

@@ -8,18 +8,9 @@ updated: 2024-09-07T21:17:09+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
-@embed org
-@end
-
-
 * Fausses thrombocytoses
 
 Éléments de grande taille peuvent être comptées comme plaquettes par excès 
-
 
 - hématies fragmentées : schizo, microcytes (brulûres sévères font éclater les GR) -> sysmesx en fluorescence est censé les différencier 
 - fragments cytoplasmes de leucocytes (blastes, lymphome) 
@@ -27,7 +18,6 @@ version: 1.1.1
 - lipides : hyperlipidémie, prélèvement près d'une perfusion lipides
 (formation de "micelles" lipidiques perturbant la numération) 
 - bactéries, candida 
-
 
 * Réactionnelle
 
@@ -39,7 +29,6 @@ version: 1.1.1
 - allergies, médicaments 
 - {../../notes/20240728T135539--transthyrétine-pré-albumine__biochimie_néphélémétrie_nutrition.org}[Transthyrétine (pré-albumine)] 
 
-
 * Persistante
 
 ~ Frottis sanguin 
@@ -47,6 +36,5 @@ version: 1.1.1
 ~~ sinon BCR-ABL 
 ~~~ oui : {../../notes/20240815T224958--leucémie-myéloïde-chronique__hémato.org}[Leucémie myéloïde chronique] 
 ~~~ sinon : JAK2, CALR, MPL -> {../../notes/20240815T210446--thrombocytémie-essentielle__hémato.org}[Thrombocytémie essentielle] {../../notes/20240722T222950--polyglobuline-de-vaquez__hémato.org}[Polyglobuline de Vaquez],{../../notes/20240815T210617--myélofibrose-primitive__hémato.org}[Myélofibrose primitive] 
-
 
 * {../../notes/20240815T210446--thrombocytémie-essentielle__hémato.org}[Thrombocytémie essentielle]
