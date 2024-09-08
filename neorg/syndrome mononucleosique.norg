@@ -27,8 +27,8 @@ version: 1.1.1
 
 * Étiologies
 
-- Virus du groupe herpès : {epstein-barr-virus-ebv.norg}[Cytomégalovirus (CMV)] 
-- Parasite :{toxoplasmose.norg}[Toxoplasmose] 
+- Virus du groupe herpès : {epstein-barr-virus-ebv..norg:}[Cytomégalovirus (CMV)] 
+- Parasite :{toxoplasmose..norg:}[Toxoplasmose] 
 - Autres : 
 -- virales (*primo VIH*, fièvres éruptives, hépatite virale) 
 -- paludisme 

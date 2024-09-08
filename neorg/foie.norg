@@ -64,7 +64,7 @@ Patho: sursaturation du cholestérol -> cristaux -> calcul
 
 * <TODO> Marqueurs
 
-** {../../notes/20240723T191636--cytolyse__biochimie_hémato.org}[Cytolyse]
+** {:cytolyse__biochimie_hémato.norg:}[Cytolyse]
 
 ** Synthèse
 
@@ -101,8 +101,8 @@ Marqueurs
 - bilirubine : augmentation totale + conjuguée (attention, ictère
 retardé : conjonctive si > 50µmol/L) 
 - enzyme : 
--- {../../notes/20240702T230230--phosphatase_alcalines__.org}[Phosphatase alcaline] 
--- {../../notes/20240702T230347--γgt_gammaglutamyl_transferase__.org}[γGT (gammaglutamyl-transférase)] 
+-- {:phosphatase_alcalines__.norg:}[Phosphatase alcaline] 
+-- {:γgt_gammaglutamyl_transferase__.norg:}[γGT (gammaglutamyl-transférase)] 
 
 Coagulation: Diminution du TP avec facteur V normal 
 
@@ -197,7 +197,7 @@ TP)
 
 * <TODO> Grossesse
 
-- {../../notes/20240802T160025--physiologie-de-la-grossesse__biochimie_gynéco.org::#h:b14bb1f7-59f5-40ba-aa71-6d4314212d2b}[Physiologique] 
+- {:physiologie-de-la-grossesse__biochimie_gynéco.org::#h:b14bb1f7-59f5-40ba-aa71-6d4314212d2b}[Physiologique] 
 - cholestase gravidique : prurit, augmenation acide biliarie sérique :
 10-40 modéré,, sérève si > 40 
 -- ALAT = 2-10N >> ictère 10%, bili augmentée et γGt No/augmentée: 30%,

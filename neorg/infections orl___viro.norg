@@ -8,7 +8,7 @@ updated: 2024-09-07T21:16:57+0100
 version: 1.1.1
 @end
 
-- Rhino-pharyngite :{../../notes/20240905T001255--entérovirus__viro.org}[Entérovirus],{../../notes/20240831T114640--grippe__viro.org}[grippe] 
-- {../../notes/20240515T224540--angines__bactério.org}[Angines] 
-- {../../notes/20240901T144149--otite-moyenne-aigüe__bactério.org}[Otite moyenne aigüe] 
+- Rhino-pharyngite :{:entérovirus__viro.norg:}[Entérovirus],{:grippe__viro.org}[grippe] 
+- {:angines__bactério.norg:}[Angines] 
+- {:otite-moyenne-aigüe__bactério.norg:}[Otite moyenne aigüe] 
 

@@ -4,14 +4,14 @@ description:
 authors: alex
 categories: hémato 
 created: 2024-09-07T15:43:08+0100
-updated: 2024-09-07T15:43:08+0100
+updated: 2024-09-08T20:49:41+0100
 version: 1.1.1
 @end
 @end
 
 * Pathway Embden-Meyerhof
 
-- Déficit en pyruvate kinase 
+  - {:déficit en pyruvate kinase:}
 
 * Métabolisme des nucléotides
 
@@ -19,5 +19,5 @@ version: 1.1.1
 
 * Pathway pentose phosphate
 
-- G6PD: récessif lié à l'X 
+  - {:déficit en G6PD:} récessif lié à l'X 
 

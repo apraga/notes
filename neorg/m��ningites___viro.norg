@@ -8,14 +8,14 @@ updated: 2024-09-07T21:17:03+0100
 version: 1.1.1
 @end
 
-Voir {../../notes/20240831T175811--encéphalite__bactério_viro.org}[Encéphalite],{../../notes/20240831T185757--myélite__viro.org}[Myélite] 
+Voir {:encéphalite__bactério_viro.norg:}[Encéphalite],{:myélite__viro.org}[Myélite] 
 
 * Étiologies
 
-- {../../notes/20240731T205116--méningites-virales__viro.org}[virales] = 90% 
--- {../../notes/20240905T001255--entérovirus__viro.org}[Entérovirus] 70-90%, bénigne, arrêt des traitements antibactériens 
+- {:méningites-virales__viro.norg:}[virales] = 90% 
+-- {:entérovirus__viro.norg:}[Entérovirus] 70-90%, bénigne, arrêt des traitements antibactériens 
 -- sans encéphalite = habituellement bénin, guérit spontanément 
-- {../../notes/20240731T205020--méningites-bactériennes__bactério.org}[bactériennes] : diagnostic et traitement *urgent* 
+- {:méningites-bactériennes__bactério.norg:}[bactériennes] : diagnostic et traitement *urgent* 
 -- pronostic vital engagé à court term +/- séquelle neuro 
 -- 1300cas/an, selon âge/terrain 
 
@@ -67,7 +67,7 @@ Voir {../../notes/20240831T175811--encéphalite__bactério_viro.org}[Encéphalit
 #table.head.columns 1-8 0
 : C1 : Bactéries
 : D1 : Virus
-: A2 : {../../notes/20240731T202623--analyse-du-lcr-en-biochimie__biochimie.org}[Biochimie]
+: A2 : {:analyse-du-lcr-en-biochimie__biochimie.norg:}[Biochimie]
 : B2 : CRP, PCT
 : C2 : trés élevée
 : D2 : N ou peu élevée
@@ -82,17 +82,17 @@ Voir {../../notes/20240831T175811--encéphalite__bactério_viro.org}[Encéphalit
 : D6 : mixte ou majorité mononuc/lympho
 : D7 : (+ mycobactérie, listeria, brucella)
 
-(voir notamment {../../notes/20240731T202623--analyse-du-lcr-en-biochimie__biochimie.org::#h:dddf16ac-9013-4649-a58f-82be7c3ba966}[lacticorachie] )
+(voir notamment {:analyse-du-lcr-en-biochimie__biochimie.org::#h:dddf16ac-9013-4649-a58f-82be7c3ba966}[lacticorachie] )
 *Bactérienne possible sans pléiocytose (au début)* 
 
 - Gélose sang cuit + vitamine sous CO,2, +/- anaérobie, bouillon d'enrichissement 
 
 ** Gram
 
-- Cocci Gram+ diplocoque/chainette : {../../notes/20240831T173233--streptococcus-pneumoniae__bactério.org}[Streptococcus pneumoniae] Strepto agalactiæ (nouveau-né) 
-- Cocce Gram- Diplocoque :{../../notes/20240816T121647--neisseria-meningitidis__bactérie_bactério.org}[Neisseria meningitidis] 
-- Bacille Gram- : {../../notes/20240816T121919--hæmophilus-influenza__bactérie_bactério.org}[Hæmophilus influenza], {../../notes/20240829T230553--escherichia-coli__bactérie_bactério.org}[Escherichia coli] 
-- Bacille Gram+ : {../../notes/20240816T121758--listeria-monocytogenes__bactérie_bactério.org}[Listeria monocytogenes] 
+- Cocci Gram+ diplocoque/chainette : {:streptococcus-pneumoniae__bactério.norg:}[Streptococcus pneumoniae] Strepto agalactiæ (nouveau-né) 
+- Cocce Gram- Diplocoque :{:neisseria-meningitidis__bactérie_bactério.norg:}[Neisseria meningitidis] 
+- Bacille Gram- : {:hæmophilus-influenza__bactérie_bactério.norg:}[Hæmophilus influenza], {:escherichia-coli__bactérie_bactério.org}[Escherichia coli] 
+- Bacille Gram+ : {:listeria-monocytogenes__bactérie_bactério.norg:}[Listeria monocytogenes] 
 - 
 
 ** Autres

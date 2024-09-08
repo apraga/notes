@@ -16,7 +16,7 @@ version: 1.1.1
 --- t(9;22) BCR-ABL1 pour LMC, LAL 
 -- mutation 
 --- JAK2 V617F pour SMP 
---- MYD88 L265P pour {../../notes/20240717T200108--maladie-de-waldenström__biochimie_hémato.org}[Maladie de Waldenström] (90%) 
+--- MYD88 L265P pour {:maladie-de-waldenström__biochimie_hémato.norg:}[Maladie de Waldenström] (90%) 
 --- BRAF V600E pour leucémie à tricholeucocytes 
 - Choix d'un traitement ciblé (fusion BCR-ABL1, PML-RARA) ou contre-indication (TP53 pour LLC) 
 - Pronostic (TP53 pour lymphomes, délétion IKZF1, IGHB pour les LLC) 

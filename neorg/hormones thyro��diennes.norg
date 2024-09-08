@@ -68,11 +68,11 @@ version: 1.1.1
 - très faible 
 - dosage délicat 
 
-** {../../notes/20240727T161330--thyroglobuline__biochimie_endoc.org}[Thyroglobuline]
+** {:thyroglobuline__biochimie_endoc.norg:}[Thyroglobuline]
 
 ** Anticorps anti-TRSH
 
-- Intérête : maladie de Basedow (diagnostic, suivi notamment grossesse, voir {../../notes/20240802T160025--physiologie-de-la-grossesse__biochimie_gynéco.org::#h:a7b4657f-81e4-468b-90f5-89030d22c942}[Grossesse::Endocriniennes] ) 
+- Intérête : maladie de Basedow (diagnostic, suivi notamment grossesse, voir {:physiologie-de-la-grossesse__biochimie_gynéco.org::#h:a7b4657f-81e4-468b-90f5-89030d22c942}[Grossesse::Endocriniennes] ) 
 - 2 types : stimulant l'effet TSH ou bloquant… 
 
 ** Anticorps anti-tyropéroxydase (TPO)

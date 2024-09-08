@@ -10,6 +10,6 @@ version: 1.1.1
 
 Évalue la capacité de détoxification azoté hépatique
 Norme < 32μmol/L
-Voir {../../notes/20240817T100338--cycle-de-lurée__biochimie.org}[Cycle de l'urée]
-Diminué en cas d'IHC (ex {../../notes/20240821T224719--intoxication-au-paracetamol__biochimie.org}[Intoxication au paracétamol] ) 
+Voir {:cycle-de-lurée__biochimie.norg:}[Cycle de l'urée]
+Diminué en cas d'IHC (ex {:intoxication-au-paracetamol__biochimie.norg:}[Intoxication au paracétamol] ) 
 

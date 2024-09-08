@@ -18,10 +18,10 @@ version: 1.1.1
 - staph aureus/coag négative : cutané, cathéter, toxico IV 
 - strepto : bucco-dentaire, digestif 
 - entérocoque = digestif, urinaire 
-- {../../notes/20240901T111102--haccek__bactérie_bactério.org}[HACCEK]= bucco-dentaire 
+- {:haccek__bactérie_bactério.norg:}[HACCEK]= bucco-dentaire 
 - candida = cathéter, toxico 
 
-Voir aussi les autres causes de {../../notes/20240901T105739--bactériémie__bactério.org}[bactériémie] 
+Voir aussi les autres causes de {:bactériémie__bactério.norg:}[bactériémie] 
 
 * Diagnostic
 

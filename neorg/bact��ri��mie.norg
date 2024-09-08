@@ -13,21 +13,21 @@ Selon la porte d'entrée
 +hline2
 #table.head.columns 1-12 0
 : A1 : Urinaire
-: B1 : {../../notes/20240829T230553--escherichia-coli__bactérie_bactério.org}[Escherichia coli],{../../notes/20240816T121324--entérobactéries__bactérie_bactério.org}[Entérobactéries]
-: B2 : {../../notes/20240612T233531--pseudomonas-aeruginosa__bactérie_bactério.org}[Pseudomonas aeruginosa]
+: B1 : {:escherichia-coli__bactérie_bactério.norg:}[Escherichia coli],{:entérobactéries__bactérie_bactério.org}[Entérobactéries]
+: B2 : {:pseudomonas-aeruginosa__bactérie_bactério.norg:}[Pseudomonas aeruginosa]
 : A3 : Digestive
-: B3 : {../../notes/20240829T230553--escherichia-coli__bactérie_bactério.org}[Escherichia coli],{../../notes/20240816T121324--entérobactéries__bactérie_bactério.org}[Entérobactéries] dont
-: B4 : {../../notes/20240829T215907--salmonella-spp__bactérie_bactério.org}[Salmonella typhi],{../../notes/20240515T224650--campylobacter-jejuni__bactérie_bactério.org}[Campylobacter]
-: B5 : {../../notes/20240816T121758--listeria-monocytogenes__bactérie_bactério.org}[Listeria monocytogenes] ,{../../notes/20240612T233731--streptocoque__bactérie_bactério.org}[Streptocoque digestifs]
-: B6 : {../../notes/20240816T121538--entérocoques__bactérie_bactério.org}[Entérocoques]
+: B3 : {:escherichia-coli__bactérie_bactério.norg:}[Escherichia coli],{:entérobactéries__bactérie_bactério.org}[Entérobactéries] dont
+: B4 : {:salmonella-spp__bactérie_bactério.norg:}[Salmonella typhi],{:campylobacter-jejuni__bactérie_bactério.org}[Campylobacter]
+: B5 : {:listeria-monocytogenes__bactérie_bactério.norg:}[Listeria monocytogenes] ,{:streptocoque__bactérie_bactério.org}[Streptocoque digestifs]
+: B6 : {:entérocoques__bactérie_bactério.norg:}[Entérocoques]
 : A7 : Pulmonaire
-: B7 : {../../notes/20240831T173233--streptococcus-pneumoniae__bactério.org}[Streptococcus pneumoniae], Coxiella burnetti
+: B7 : {:streptococcus-pneumoniae__bactério.norg:}[Streptococcus pneumoniae], Coxiella burnetti
 : A8 : Cutané
-: B8 : {../../notes/20240828T192156--staphylocoque-aureus__bactério.org}[Staphylocoque aureus],{../../notes/20240612T233631--staphylocoques__bactérie_bactério.org}[Staphylocoques] coagulase négative (cathéter)
-: B9 : {../../notes/20240828T185327--streptocoques-pyogenes__bactério.org}[Streptocoques pyogenes]
+: B8 : {:staphylocoque-aureus__bactério.norg:}[Staphylocoque aureus],{:staphylocoques__bactérie_bactério.org}[Staphylocoques] coagulase négative (cathéter)
+: B9 : {:streptocoques-pyogenes__bactério.norg:}[Streptocoques pyogenes]
 : A10 : ORL
-: B10 : {../../notes/20240831T173233--streptococcus-pneumoniae__bactério.org}[Streptococcus pneumoniae], autres {../../notes/20240612T233731--streptocoque__bactérie_bactério.org}[streptocoque]
+: B10 : {:streptococcus-pneumoniae__bactério.norg:}[Streptococcus pneumoniae], autres {:streptocoque__bactérie_bactério.org}[streptocoque]
 : B11 : anaérobies
 : A12 : Bucco-dentaire
-: B12 : {../../notes/20240612T233731--streptocoque__bactérie_bactério.org}[Streptocoque] oraux,{../../notes/20240901T111102--haccek__bactérie_bactério.org}[HACCEK]
+: B12 : {:streptocoque__bactérie_bactério.norg:}[Streptocoque] oraux,{:haccek__bactérie_bactério.org}[HACCEK]
 

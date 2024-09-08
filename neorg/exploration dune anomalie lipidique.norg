@@ -10,7 +10,7 @@ version: 1.1.1
 
 * Métabolismes
 
-{../../notes/20240725T000025--métabolisme-des-lipoprotéines__biochimie.org}[Métabolisme des lipoprotéines] 
+{:métabolisme-des-lipoprotéines__biochimie.norg:}[Métabolisme des lipoprotéines] 
 
 * Indication
 
@@ -49,11 +49,11 @@ version: 1.1.1
 
 * Dosage
 
-- {../../notes/20240724T234048--apoa-i-et-apob__biochimie.org}[ApoA-I et ApoB] 
-- {../../notes/20240724T231839--cholestérol-hdl__biochimie.org}[Cholestérol-HDL] 
-- {../../notes/20240724T232246--cholestérol-ldl__biochimie.org}[Cholestérol-LDL] 
-- {../../notes/20240724T230033--cholestérol-total__biochimie.org}[Cholestérol total] 
-- {../../notes/20240724T231208--triglycérides__biochimie.org}[Triglycérides] 
+- {:apoa-i-et-apob__biochimie.norg:}[ApoA-I et ApoB] 
+- {:cholestérol-hdl__biochimie.norg:}[Cholestérol-HDL] 
+- {:cholestérol-ldl__biochimie.norg:}[Cholestérol-LDL] 
+- {:cholestérol-total__biochimie.norg:}[Cholestérol total] 
+- {:triglycérides__biochimie.norg:}[Triglycérides] 
 
 * Valeurs
 
@@ -78,8 +78,8 @@ version: 1.1.1
 : C5 : < 1.5g/L
 
 - cible : selon FR CV 
-- {../../notes/20240802T160025--physiologie-de-la-grossesse__biochimie_gynéco.org::#h:7a89950f-6a1f-4acb-a23b-05fed41c4f7e}[Grossesse::Lipides] 
+- {:physiologie-de-la-grossesse__biochimie_gynéco.org::#h:7a89950f-6a1f-4acb-a23b-05fed41c4f7e}[Grossesse::Lipides] 
 
-* Voir aussi {../../notes/20240726T230440--dyslipoprotéinémies__biochimie.org}[Dyslipoprotéinémies]
+* Voir aussi {:dyslipoprotéinémies__biochimie.norg:}[Dyslipoprotéinémies]
 
 * {cas-cliniques/dyslipidémies.pdf}[Cas cliniques]

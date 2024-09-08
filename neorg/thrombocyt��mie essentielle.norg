@@ -8,8 +8,8 @@ updated: 2024-09-07T21:17:09+0100
 version: 1.1.1
 @end
 
-Attention à la {../../notes/20240722T222950--polyglobuline-de-vaquez__hémato.org}[Polyglobuline de Vaquez] masquée
-Voir ausse{../../notes/20240722T223056--thrombocytose__hémato.org::#h:3b24ab63-9018-4e47-a58f-7f147c7ec59a}[Thrombocytose::Persistante] 
+Attention à la {:polyglobuline-de-vaquez__hémato.norg:}[Polyglobuline de Vaquez] masquée
+Voir ausse{:thrombocytose__hémato.org::#h:3b24ab63-9018-4e47-a58f-7f147c7ec59a}[Thrombocytose::Persistante] 
 
 * Diagnostic (OMS 2016)
 
@@ -17,11 +17,11 @@ Voir ausse{../../notes/20240722T223056--thrombocytose__hémato.org::#h:3b24ab63-
 
 - A1. plaquettes > 450G/L persistante 
 - A2. BOM: prolifération surtout lignée mégacaryocytaire (majorité éléments matures, sans augmentation granulopoïèse ni érythropoïèse) 
-- A3. pas de critères d'autre néoplasie myéloïde {../../notes/20240722T222950--polyglobuline-de-vaquez__hémato.org}[Polyglobuline de Vaquez],{../../notes/20240815T210617--myélofibrose-primitive__hémato.org}[Myélofibrose primitive], {../../notes/20240815T211015--syndromes-myélodysplasiques__hémato.org}[Syndromes myélodysplasiques]) 
+- A3. pas de critères d'autre néoplasie myéloïde {:polyglobuline-de-vaquez__hémato.norg:}[Polyglobuline de Vaquez],{:myélofibrose-primitive__hémato.org}[Myélofibrose primitive], {:syndromes-myélodysplasiques__hémato.org}[Syndromes myélodysplasiques]) 
 - A4. JAK2, CALR ou MPL 
-- B. marqueur de clonalité ou absence de cause de {../../notes/20240722T223056--thrombocytose__hémato.org::#h:83b0d1ec-34fe-4ea4-b0a8-59423cadc7dd}[Thrombocytose::Réactionnelle] 
+- B. marqueur de clonalité ou absence de cause de {:thrombocytose__hémato.org::#h:83b0d1ec-34fe-4ea4-b0a8-59423cadc7dd}[Thrombocytose::Réactionnelle] 
 
-* Moléculaire (idem {../../notes/20240815T210617--myélofibrose-primitive__hémato.org}[Myélofibrose primitive] )
+* Moléculaire (idem {:myélofibrose-primitive__hémato.norg:}[Myélofibrose primitive] )
 
 Suspicion : 
 

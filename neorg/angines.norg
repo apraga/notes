@@ -9,7 +9,7 @@ version: 1.1.1
 @end
 
 - Virale 60-80% 
-- Bactérie: {../../notes/20240828T185327--streptocoques-pyogenes__bactério.org}[Streptocoques pyogenes] surtout (strepto β-hémolytique) 
+- Bactérie: {:streptocoques-pyogenes__bactério.norg:}[Streptocoques pyogenes] surtout (strepto β-hémolytique) 
 - Cause rare : 
 -- angine ulcéro-nécrotique : ED = fusiforme + bactéries spiralées 
 -- pseudomembraneuse (Corynebacteium diphteria: culture gélose enrichie + CNR) 
@@ -32,5 +32,5 @@ Angine érythémateuse/érythématopultacées avec TROD+
 
 * Complications
 
-{../../notes/20240828T185327--streptocoques-pyogenes__bactério.org::#h:06a58fbc-87cd-4517-9dea-5a358f9dc691}[Streptocoques pyogenes::Complications post-streptococciques] 
+{:streptocoques-pyogenes__bactério.org::#h:06a58fbc-87cd-4517-9dea-5a358f9dc691}[Streptocoques pyogenes::Complications post-streptococciques] 
 

@@ -63,10 +63,10 @@ Voir {:encéphalite:} et {:myélite:}:
 
 ** Gram
 
-- Cocci Gram+ diplocoque/chainette : {streptococcus-pneumoniae.norg}[Streptococcus pneumoniae] Strepto agalactiæ (nouveau-né) 
-- Cocce Gram- Diplocoque :{neisseria-meningitidis.norg}[Neisseria meningitidis] 
-- Bacille Gram- : {hæmophilus-influenza.norg}[Escherichia coli] 
-- Bacille Gram+ : {listeria-monocytogenes.norg}[Listeria monocytogenes] 
+- Cocci Gram+ diplocoque/chainette : {streptococcus-pneumoniae..norg:}[Streptococcus pneumoniae] Strepto agalactiæ (nouveau-né) 
+- Cocce Gram- Diplocoque :{neisseria-meningitidis..norg:}[Neisseria meningitidis] 
+- Bacille Gram- : {hæmophilus-influenza..norg:}[Escherichia coli] 
+- Bacille Gram+ : {listeria-monocytogenes..norg:}[Listeria monocytogenes] 
 
 ** Autres
 

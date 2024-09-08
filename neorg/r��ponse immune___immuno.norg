@@ -12,12 +12,12 @@ version: 1.1.1
 
 - système du complément 
 - cellules d'origine myéloïde :
--{../../notes/20240814T220251--macrophages__hémato_immuno.org}[ Macrophages] 
+-{:macrophages__hémato_immuno.norg:}[ Macrophages] 
 -- neutrophiles 
--- {../../notes/20240814T221041--cellules-dendritiques__hémato_immuno.org}[Cellules dendritiques] 
--- {../../notes/20240814T223845--neutrophiles__hémato_immuno.org}[Neutrophiles] {../../notes/20240814T224258--éosinophiles__hémato.org}[Éosinophiles]{../../notes/20240814T224709--basophiles-et-mastocytes__hémato_immuno.org}[Basophiles et mastocytes] 
+-- {:cellules-dendritiques__hémato_immuno.norg:}[Cellules dendritiques] 
+-- {:neutrophiles__hémato_immuno.norg:}[Neutrophiles] {:éosinophiles__hémato.org}[Éosinophiles]{:basophiles-et-mastocytes__hémato_immuno.org}[Basophiles et mastocytes] 
 -- cellules lymphoïdes : 
---- {../../notes/20240814T221252--cellules-nk__hémato_immuno.org}[Cellules NK] 
+--- {:cellules-nk__hémato_immuno.norg:}[Cellules NK] 
 --- T non conventionnels 
 
 * Adaptative
@@ -65,7 +65,7 @@ Ag polysaccharidique -> lymphocytes B de la zone marginale
 - mœlle : majorité de B immatures 
 - sang : majorité de B naïfs, absence de précurseurs B et B immatures 
 
-** {../../notes/20240814T200554--immunoglobuline__hémato_immuno.org}[Immunoglobuline]
+** {:immunoglobuline__hémato_immuno.norg:}[Immunoglobuline]
 
 * Réponse cellulaire
 

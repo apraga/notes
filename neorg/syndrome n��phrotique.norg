@@ -19,7 +19,7 @@ version: 1.1.1
 ~ Diminution de la pression oncotique -> œdèmes ( le liquide va des vaisseaux en interstitiel ) 
 ~ Le corps tente de compenser en produisant de protéines de poids moléculaire > albumine 
 -- lipides 
--- {../../notes/20240717T202815--α2-macroglobuline__biochimie_néphélémétrie.org}[α2 macroglobuline] 
+-- {:α2-macroglobuline__biochimie_néphélémétrie.norg:}[α2 macroglobuline] 
 ~ Mais la perte de liquide en interstiel -> hypovolémie -> réabsorption de sodium ( et donc d'eau ) 
 -- au final, c'est une solution isotonique qui est réabsorbée 
 -- cela entretient 3. 
@@ -34,7 +34,7 @@ Découle de la physiopath
 - Protéinurie > 3g/24h 
 - Protéines sériques < 60g/L avec albuminémie < 30g/L 
 
-Confirmation avec{../../notes/20240717T201002--électrophorèse-des-protéines-sériques__biochimie.org}[électrophorèse des protéines sériques] (caractère sélectif de l'albumine) 
+Confirmation avec{:électrophorèse-des-protéines-sériques__biochimie.norg:}[électrophorèse des protéines sériques] (caractère sélectif de l'albumine) 
 
 - soit > 80% albumine 
 - soit en majorité d'albumine + autres protéines 

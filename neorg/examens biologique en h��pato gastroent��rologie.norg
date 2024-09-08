@@ -92,17 +92,17 @@ version: 1.1.1
 --- anormal : gastrinome, maladie de Ménétrier, gastropathie exsudative 
 --- sinon biopsie duodénale : coeliaque si anormal, si normal examens complémentaire pour éliminer Crohn, néoplasie, MICI 
 
-** {../../notes/20240723T191636--cytolyse__biochimie_hémato.org}[Cytolyse]
+** {:cytolyse__biochimie_hémato.norg:}[Cytolyse]
 
-** {../../notes/20240723T191945--élévation-isolée-des-pal__biochimie.org}[Élévation isolée des PAL]
+** {:élévation-isolée-des-pal__biochimie.norg:}[Élévation isolée des PAL]
 
-** {../../notes/20240723T192057--hyperbilirubinémie__biochimie.org}[Hyperbilirubinémie]
+** {:hyperbilirubinémie__biochimie.norg:}[Hyperbilirubinémie]
 
-** {../../notes/20240723T192225--maladie-de-biermer__biochimie_hémato.org}[Maladie de Biermer]
+** {:maladie-de-biermer__biochimie_hémato.norg:}[Maladie de Biermer]
 
-** {../../notes/20240723T192343--anémie__hémato.org}[Anémie]
+** {:anémie__hémato.norg:}[Anémie]
 
-** {../../notes/20240723T192429--hémochromatose__hémato.org}[Hémochromatose héréditaire]
+** {:hémochromatose__hémato.norg:}[Hémochromatose héréditaire]
 
 * Modifications pendant la grossesse
 
@@ -131,12 +131,12 @@ Anormale:
 
 * Pathologies
 
-{../../notes/20240721T141834--pancréatite-aigüe__biochimie_hepato.org}[Pancréatite aigüe]
+{:pancréatite-aigüe__biochimie_hepato.norg:}[Pancréatite aigüe]
 Grand syndromes 
 
-- {../../notes/20240721T143415--cholestase__biochimie_hepato.org}[Cholestase] 
+- {:cholestase__biochimie_hepato.norg:}[Cholestase] 
 - cytolyse hépatique (mort cellulaire) 
-- {../../notes/20240721T143525--insuffisance-hépato-cellulaire__hepato.org}[Insuffisance hépato-cellulaire] 
+- {:insuffisance-hépato-cellulaire__hepato.norg:}[Insuffisance hépato-cellulaire] 
 - inflammation 
 
 : B1 : Cholestase
@@ -193,8 +193,8 @@ Ulcère hémorragique :
 
 ** Divers
 
-- {../../notes/20240721T144343--urgences-rares-avec-douleurs-intenses__urgence.org}[Urgences rares avec douleurs intenses] 
-- {../../notes/20240721T151506--calcium__biochimie.org}[Calcémie] 
+- {:urgences-rares-avec-douleurs-intenses__urgence.norg:}[Urgences rares avec douleurs intenses] 
+- {:calcium__biochimie.norg:}[Calcémie] 
 - {denote:20240721T144629}[Hypokaliémie] 
 - {denote:20240721T145114}[Insuffisance surrénalienne aigüe] 
 - {denote:20240721T144858}[Acido-cétose diabétique] 

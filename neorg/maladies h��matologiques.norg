@@ -8,25 +8,25 @@ updated: 2024-09-07T21:17:01+0100
 version: 1.1.1
 @end
 
-Voir {../../notes/20240813T152244--mécanisme-des-maladies-hématologiques__hémato.org}[Mécanisme des maladies hématologiques] 
+Voir {:mécanisme-des-maladies-hématologiques__hémato.norg:}[Mécanisme des maladies hématologiques] 
 
 * Néoplasies myéloïdes
 
 Classification OMS 
 
-- {../../notes/20240815T204208--syndromes-myéloprolifératifs__hémato.org}[Syndromes myéloprolifératifs] 
+- {:syndromes-myéloprolifératifs__hémato.norg:}[Syndromes myéloprolifératifs] 
 - SMP/SMD 
-- {../../notes/20240815T211015--syndromes-myélodysplasiques__hémato.org}[Syndromes myélodysplasiques] 
+- {:syndromes-myélodysplasiques__hémato.norg:}[Syndromes myélodysplasiques] 
 - Leucémies aigües myéloblastiques 
 - myélo+lymphoïdes + hyperéosinophilie + anomalies PDGFRα/β ou FGFR1 
 
 * Autrnes
 
-{../../notes/20240722T222809--anémie-microcytaire__hémato.org}[Anémie microcytaire]
-{../../notes/20240807T180444--anémie-hémolytique-auto-immune__hémato.org}[Anémie hémolytique auto-immune]
-{../../notes/20240717T195629--myélome__biochimie_hémato.org}[Myélome]
-{../../notes/20240814T171123--lymphomes__hémato.org}[Lymphomes]
-{../../notes/20240814T200517--déficit-immunitaire__hémato_immuno.org}[Déficit immunitaire] 
+{:anémie-microcytaire__hémato.norg:}[Anémie microcytaire]
+{:anémie-hémolytique-auto-immune__hémato.norg:}[Anémie hémolytique auto-immune]
+{:myélome__biochimie_hémato.norg:}[Myélome]
+{:lymphomes__hémato.norg:}[Lymphomes]
+{:déficit-immunitaire__hémato_immuno.norg:}[Déficit immunitaire] 
 
 * Lymphocytes
 
@@ -70,10 +70,10 @@ aigüe monoblastique
 postchimio) 
 -- chronique : SMP, métastase médullaire 
 
-* {../../notes/20240813T152959--maladies-du-globule-rouge__hémato.org}[Maladies du globule rouge]
+* {:maladies-du-globule-rouge__hémato.norg:}[Maladies du globule rouge]
 
 * Plaquettes
 
-- {../../notes/20240722T223056--thrombocytose__hémato.org}[Thrombocytose] : inflammation, carence martiale, splénectomie/asplénie, post-chir, SMP 
-- {../../notes/20240722T223109--thrombopénie__hémato.org}[Thrombopénie] 
+- {:thrombocytose__hémato.norg:}[Thrombocytose] : inflammation, carence martiale, splénectomie/asplénie, post-chir, SMP 
+- {:thrombopénie__hémato.norg:}[Thrombopénie] 
 

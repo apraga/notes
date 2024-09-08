@@ -28,7 +28,7 @@ version: 1.1.1
 - Pertes excessives: 
 -- diarrhées 
 -- rénales (tubulopathie) 
--- hyperaldostéronémie ({../../notes/20240727T145833--aldostérone__biochimie.org::#h:9ce3b97f-1a85-4452-964f-459809811ca1}[Aldostérone::Action]) 
+-- hyperaldostéronémie ({:aldostérone__biochimie.org::#h:9ce3b97f-1a85-4452-964f-459809811ca1}[Aldostérone::Action]) 
 -- durétiques thiazidiques, de l'anse 
 - Transfert extra- -> intracellulaire : alcalose métabolique
 Sortie du potassium des cellules -> entrée de H+ pour maintenir l'électroneutralité -> alcalose métabolique 
