@@ -4,12 +4,18 @@ description:
 authors: alex
 categories: hémato 
 created: 2024-09-07T21:16:51+0100
-updated: 2024-09-07T21:16:51+0100
+updated: 2024-09-08T22:55:19+0100
 version: 1.1.1
 @end
 
+Maladie génétique la plus fréquente
+
+* Épidémiologie
+  Zones intertropicales
+  Protection / paludisme
+* Physopathologie
 Mutation homozygote gène β (Modification codon 6 de l'ARNm)
-Formation d'une hémoglobine anormale (HbS) ( voir {:maladies-du-globule-rouge__hémato.org::#h:f5995274-fe14-4189-a16e-594f841725bf}[Maladies du globule rouge::Intro] )
+Formation d'une hémoglobine anormale (HbS) ( voir   {:maladies du globule rouge:** Intro}}
 Stress, froid, fièvre: polymérisation -> GR en forme de faucille
 Ils sont 
 
@@ -18,7 +24,33 @@ Ils sont
 
 Attention : elle peut être associée à une β-thalassémie 
 
-- risque plus élevé de {:anomalies-du-metabolisme-des-erythrocytes__hemato.norg:}[déficit en G6PD] 
+- risque plus élevé de {:$/déficit en G6PD:}
 
 Hétérozygote = asymptomatiques`` 
+
+Mutation chanie β : Acide glutaminuqe ->valine
+Hémoglobine S 
+
+* Forme 
+  - Hétérozygote = asympto, hémogramme et frottis normaux
+  - Syndrome majeur : homozygote, HTZc (HbS et HbC ou Hbβ)
+
+
+* Clinique
+  Pas avant 6 mois de vie car l'HbF protège
+  - asthénie (anémie)
+  -  Crises vaso-occlusive 
+  -- typique = os (mais n’importe quel organes) 
+  -- douleurs intenses ->,antalagique,, hospit 
+ 
+  - infection sévère () Peut être prévenu par vaccins et antibio 
+* Biologie
+  - Anémie normocytaire normochrome très régénérative
+  - Frottis : drépano
+  - Hémolyse + syndrome inflammatoie
+  - syndrome thoracique aigü
+* Traitement
+    -- en général 4/an -> prise en charge palliative 
+  -- sinon, ttt par hydroxyurée (induit expression hémoglobine foetale -> diminue polymérisation ), transfusion, CSH, thérapie génique 
+
 
