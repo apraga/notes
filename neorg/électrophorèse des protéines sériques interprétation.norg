@@ -77,17 +77,17 @@ Voir les fiches correspondantes
 .image images/biochimie/eps-iga-monoclonale.png
  
 
-Attention à la {../../notes/20240802T160025--physiologie-de-la-grossesse__biochimie_gynéco.org::#h:1e99b930-f385-4ed1-8d26-5c8bdafd8ab9}[grossesse] 
+Attention à la {:physiologie-de-la-grossesse__biochimie_gynéco.org::#h:1e99b930-f385-4ed1-8d26-5c8bdafd8ab9}[grossesse] 
 
-** {../../notes/20240717T201856--albumine__biochimie_néphélémétrie_spectrophotométrie.org}[Albumine]
+** {:albumine__biochimie_néphélémétrie_spectrophotométrie.norg:}[Albumine]
 
-** α1-globuline (α1-antitrypsine, {../../notes/20240717T200247--orosomucoïde__biochimie_néphélémétrie.org}[Orosomucoïde])
+** α1-globuline (α1-antitrypsine, {:orosomucoïde__biochimie_néphélémétrie.norg:}[Orosomucoïde])
 
-- augmenté = {../../notes/20240717T202347--syndrome-inflammatoire-aigu-biologique__biochimie.org}[Syndrome inflammatoire aigu biologique] 
+- augmenté = {:syndrome-inflammatoire-aigu-biologique__biochimie.norg:}[Syndrome inflammatoire aigu biologique] 
 - diminuté = dénutrition, IHC sévère, fuite protéique, syndrome néphrotique, congénital 
 - NB: dédoublement = variant α1-antitrypsine 
 
-** α2 globuline ({../../notes/20240717T202815--α2-macroglobuline__biochimie_néphélémétrie.org}[α2 macroglobuline], {../../notes/20240717T200415--haptoglobine__biochimie_néphélémétrie.org}[Haptoglobine],{../../notes/20240717T200520--céruloplasmine__biochimie_néphélémétrie.org}[Céruloplasmine])
+** α2 globuline ({:α2-macroglobuline__biochimie_néphélémétrie.norg:}[α2 macroglobuline], {:haptoglobine__biochimie_néphélémétrie.org}[Haptoglobine],{:céruloplasmine__biochimie_néphélémétrie.org}[Céruloplasmine])
 
 - augmenté : syndrome inflammatoire, fibroe hépatique, syndrome néphrotique 
 - diminué : IHC, fuite protéique, dénutrition 
@@ -96,11 +96,11 @@ Attention à la {../../notes/20240802T160025--physiologie-de-la-grossesse__bioch
 ** β1/2 globuline
 
 - augmentation: 
--- voir {../../notes/20240717T200717--transferrine__biochimie_néphélémétrie.org}[Transferrine] 
+-- voir {:transferrine__biochimie_néphélémétrie.norg:}[Transferrine] 
 -- C3: inflammation, cholestase, imprégnation oestrogène 
 -- bloc β-γ : cirrhose éthylique 
 - diminution : 
--- voir {../../notes/20240717T200717--transferrine__biochimie_néphélémétrie.org}[Transferrine] 
+-- voir {:transferrine__biochimie_néphélémétrie.norg:}[Transferrine] 
 -- fuite protéique, dénutrition 
 -- C3 > 60%: déficit congénitale, cirrhose décompensée, hyperconsommation (auto-immune, infection), sérum "vieux" 
 -- IgA : DICV 
@@ -129,7 +129,7 @@ as d'étiologie, auto-anticorps, post-greffe
 
 ic étroit et homogène
 [{file:images/biochimie/eps-monoclonal.png}[file:images/biochimie/eps-monoclonal.png]]]
-auses : {../../notes/20240717T195629--myélome__biochimie_hémato.org}[Myélome], Waldenstrôm (et leur états précédents), LLC 
+auses : {:myélome__biochimie_hémato.norg:}[Myélome], Waldenstrôm (et leur états précédents), LLC 
 
 B: si pic > albumine, refaire de calcul 
 
@@ -151,5 +151,5 @@ Regarder clinique (auto-immun, post-greffe, médicaments pour cancer, infection�
 
 - myélome à chaînes légères libres (18-20%), amylose AL, myélome non sécrétant 
 
-Voir {../../notes/20240718T230719--immunotypage__biochimie.org}[Immunotypage] 
+Voir {:immunotypage__biochimie.norg:}[Immunotypage] 
 

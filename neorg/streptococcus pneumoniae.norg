@@ -17,8 +17,8 @@ Strictement humain, commensal rhinoropharynx
 * Clinique
 
 Infections communautaires
-{../../notes/20240901T145409--pneumonies__bactério.org}[Pneumonies], {../../notes/20240901T143951--infections-orl__bactério_viro.org}[Infections ORL]
-{../../notes/20240731T205020--méningites-bactériennes__bactério.org}[Méningites bactériennes] 
+{:pneumonies__bactério.norg:}[Pneumonies], {:infections-orl__bactério_viro.org}[Infections ORL]
+{:méningites-bactériennes__bactério.norg:}[Méningites bactériennes] 
 
 * Diagnostic
 
@@ -36,9 +36,9 @@ CMI β-lactamines *indispensable* ( *péni G, amox, céfotaxime*)
 β-lactamines restent la 1ere intention
 Voir 
 
-- {../../notes/20240901T144149--otite-moyenne-aigüe__bactério.org}[Otite moyenne aigüe] 
-- {../../notes/20240901T145409--pneumonies__bactério.org::#h:c2ccf78d-f2df-4c9f-b21d-e3346b2ffdf5}[Pneumonies::Traitement]
-{../../notes/20240731T205020--méningites-bactériennes__bactério.org}[Méningites bactériennes] 
+- {:otite-moyenne-aigüe__bactério.norg:}[Otite moyenne aigüe] 
+- {:pneumonies__bactério.org::#h:c2ccf78d-f2df-4c9f-b21d-e3346b2ffdf5}[Pneumonies::Traitement]
+{:méningites-bactériennes__bactério.norg:}[Méningites bactériennes] 
 - C3G IV + cortico. Pas de prophylaxie. 
 
 * Prévention

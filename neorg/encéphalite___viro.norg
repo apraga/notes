@@ -8,7 +8,7 @@ updated: 2024-09-07T21:16:52+0100
 version: 1.1.1
 @end
 
-Voir {../../notes/20240731T204905--méningites__bactério_viro.org}[Méningites],{../../notes/20240831T185757--myélite__viro.org}[Myélite] (méningo-encéphalite possible) 
+Voir {:méningites__bactério_viro.norg:}[Méningites],{:myélite__viro.org}[Myélite] (méningo-encéphalite possible) 
 
 * Clinique
 
@@ -20,16 +20,16 @@ tremblement, crises épileptique
 ** Bactérienne
 
 - Tuberculose : méningo-encéphalite rapidement progressive 
-- {../../notes/20240816T121758--listeria-monocytogenes__bactérie_bactério.org}[Listeria monocytogenes ]: rhombencéphalite
+- {:listeria-monocytogenes__bactérie_bactério.norg:}[Listeria monocytogenes ]: rhombencéphalite
 Ophtalmoplégie, diplopie, ataxie, déficit moteur, troubles de la conscience 
  
 
 ** Virale
 
-- {../../notes/20240831T142847--herpès-simplex-virus-hsv__viro.org}[HSV] 1 : nécrosante (primo ou réactivation) 
-- {../../notes/20240831T142847--herpès-simplex-virus-hsv__viro.org}[HSV] 2 : néonatale 
+- {:herpès-simplex-virus-hsv__viro.norg:}[HSV] 1 : nécrosante (primo ou réactivation) 
+- {:herpès-simplex-virus-hsv__viro.norg:}[HSV] 2 : néonatale 
 - rubéole 
-- {../../notes/20240905T001255--entérovirus__viro.org}[Entérovirus] : rhomboencéphalite 
+- {:entérovirus__viro.norg:}[Entérovirus] : rhomboencéphalite 
 - virus grippaux : inflammatoire post-infectieux 
 - VIH 
 - CMV 

@@ -8,7 +8,7 @@ updated: 2024-09-07T20:13:22+0100
 version: 1.1.1
 @end
 
-Ne pas confondre avec le{../../notes/20240824T160339--coma-hyperosmolaire-du-sujet-diabétique__biochimie_endoc.org}[Coma hyperosmolaire du sujet diabétique] 
+Ne pas confondre avec le{:coma-hyperosmolaire-du-sujet-diabétique__biochimie_endoc.norg:}[Coma hyperosmolaire du sujet diabétique] 
 
 * Clinique:
 
@@ -17,15 +17,15 @@ Ne pas confondre avec le{../../notes/20240824T160339--coma-hyperosmolaire-du-suj
 - polyuro-polydipsie, troubles visuels 
 - acidocétose : haleine «pomme de reinette» 
 - Insuffisance rénale possiblement fonctionnelle 
-- {../../notes/20240823T194921--déshydratation-intracellulaire__biochimie_néphro.org}[Déshydratation intracellulaire] et{../../notes/20240823T194758--déshydratation-extracellulaire__biochimie_néphro.org}[Déshydratation extracellulaire] 
+- {:déshydratation-intracellulaire__biochimie_néphro.norg:}[Déshydratation intracellulaire] et{:déshydratation-extracellulaire__biochimie_néphro.org}[Déshydratation extracellulaire] 
 
 * Bio :
 
 - hyperglycémie, insulinopénie, déshydratation 
-- Acidose métabolique avec {../../notes/20240824T140729--trou-anionique__biochimie.org}[Trou anionique] augmenté par augmentation des corps cétoniques (indosés) 
+- Acidose métabolique avec {:trou-anionique__biochimie.norg:}[Trou anionique] augmenté par augmentation des corps cétoniques (indosés) 
 - cétonémie, cétonurie 
 - diabète connu mais révélateur 10-15% 
-- {../../notes/20240825T114847--hyperkaliémie__biochimie_néphro.org::#h:cda6fc36-b368-49dd-937a-33cbd661129a}[Hyperkaliémie::Diabète] 
+- {:hyperkaliémie__biochimie_néphro.org::#h:cda6fc36-b368-49dd-937a-33cbd661129a}[Hyperkaliémie::Diabète] 
 
 * Physiopathologie
 
@@ -33,8 +33,8 @@ Carence en insuline
 
 - empèche la pénétration dans les cellules du glucose 
 -- hyperglycémie chronique 
---- polyurie osmotique, {../../notes/20240823T194758--déshydratation-extracellulaire__biochimie_néphro.org}[Déshydratation extracellulaire] 
---- augmente l'osmolarité plasmatique, {../../notes/20240823T194921--déshydratation-intracellulaire__biochimie_néphro.org}[Déshydratation intracellulaire] 
+--- polyurie osmotique, {:déshydratation-extracellulaire__biochimie_néphro.norg:}[Déshydratation extracellulaire] 
+--- augmente l'osmolarité plasmatique, {:déshydratation-intracellulaire__biochimie_néphro.norg:}[Déshydratation intracellulaire] 
 -- le cycle de Krebs est orienté vers la formation de corps cétoniques
 Défaut d'entrée d'acétyl-CoA 
  
@@ -47,6 +47,6 @@ Insuline IV
 NaCL 9g/L IV (hypovolémie)
 KCl IV (contre-intuitif mais l'apport d'insuline va faire migrer massivement le potassium en intracellulaire donc hypokaliémie) 
 
-* Voir aussi {../../notes/20240706T234445--diabète__biochimie_endoc.org}[Diabète]
+* Voir aussi {:diabète__biochimie_endoc.norg:}[Diabète]
 
 * Footnotes

@@ -39,14 +39,14 @@ Infection systémique à point de départ digestif
 
 ** Clinique
 
-Gastro-entérite fébrile : {../../notes/20240515T224830--diarrhées__bactério_viro.org::#h:8a4f2ba7-01e3-4ded-bb70-69d066c11130}[envahissement sans destruction de la muqueuse] 
+Gastro-entérite fébrile : {:diarrhées__bactério_viro.org::#h:8a4f2ba7-01e3-4ded-bb70-69d066c11130}[envahissement sans destruction de la muqueuse] 
 
 - +/- syndrome dysentérique 
 
 * Diagnostic
 
 ~ Isolement à partir de coprocultures ou hémocultures 
--- Milieu Hektoen, SS (Salmonella-Shigella) ou chromogène ( voir {../../notes/20240829T225800--milieux-de-culture__bactério.org::#h:e5bf8376-6ab7-43d1-a6ee-97ccbdbc642c}[Milieux de culture] ) 
+-- Milieu Hektoen, SS (Salmonella-Shigella) ou chromogène ( voir {:milieux-de-culture__bactério.org::#h:e5bf8376-6ab7-43d1-a6ee-97ccbdbc642c}[Milieux de culture] ) 
 -- "SS" (salmonelle/shigelle): salmonelle = lactose - et SH2+ 
 -- bouillon d'enrichissement sélectif puis réisolement Hektoen/SS 
 

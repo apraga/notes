@@ -10,7 +10,7 @@ version: 1.1.1
 
 - Enzyme d’hydrolyse de l’amidon 
 - Composition : moitié des isoenzymes P (d'origine pancréatique) et pour moitié des isoenzymes S (d'origine salivaire) dans la circulation. 
-- HAS2009: ne pas doser amylasémie pour le diagnostic de {../../notes/20240721T141834--pancréatite-aigüe__biochimie_hepato.org}[Pancréatite aigüe] 
+- HAS2009: ne pas doser amylasémie pour le diagnostic de {:pancréatite-aigüe__biochimie_hepato.norg:}[Pancréatite aigüe] 
 -- non spécifique pancréatire : obstruction canal pancréatique, cholycistique, Crohn, IR, alcoolsime chronique, médicaments… 
 - Diagnostic parotitide 
 -- présent dans la salive (oreillon, tumeur glande salivaire, parotidite) 

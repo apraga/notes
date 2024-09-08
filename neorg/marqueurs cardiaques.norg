@@ -19,8 +19,8 @@ version: 1.1.1
 
 * Fonction endocrine
 
-- {../../notes/20240726T211519--bnp__biochimie_cardio.org}[BNP] 
-- {../../notes/20240726T211419--anp__biochimie_cardio.org}[ANP] 
+- {:bnp__biochimie_cardio.norg:}[BNP] 
+- {:anp__biochimie_cardio.norg:}[ANP] 
 
 * Pathologies
 
@@ -43,12 +43,12 @@ Diagnostic sur clinique et ECG
 
 - si non contributif, utilisé des biomarqeurs (ou pour confirmer a posteriori ou suivi) 
 
-~ {../../notes/20240726T220054--troponines__biochimie_cardio.org}[Troponines] Il faut quelques heures… 
+~ {:troponines__biochimie_cardio.norg:}[Troponines] Il faut quelques heures… 
 ~ autres marqueurs 
--- {../../notes/20240726T221009--créatines-kinases__biochimie.org}[Créatines kinases] 
--- {../../notes/20240726T221449--myoglobine__biochimie.org}[Myoglobine] 
--- {../../notes/20240726T221814--asat__biochimie_transaminases.org}[ASAT] 
--- {../../notes/20240726T221937--ldh__biochimie.org}[LDH] .image images/biochimie/idm.png
+-- {:créatines-kinases__biochimie.norg:}[Créatines kinases] 
+-- {:myoglobine__biochimie.norg:}[Myoglobine] 
+-- {:asat__biochimie_transaminases.norg:}[ASAT] 
+-- {:ldh__biochimie.norg:}[LDH] .image images/biochimie/idm.png
  
 
 ** Insuffisance cardiaque
@@ -57,6 +57,6 @@ Diagnostic sur clinique et ECG
 - Classification NYHA: (I à IV) 
 - Définition : 3 types selon la frajction d'éjection (utilise notamment peptides natriurétiques) 
 - Attention aux reco pour le diagnostic: BNP et Nt-pronBNP sont interchangé 
-- BNP ou NT-proBNP ? Voir {../../notes/20240726T211519--bnp__biochimie_cardio.org}[BNP] 
+- BNP ou NT-proBNP ? Voir {:bnp__biochimie_cardio.norg:}[BNP] 
 
-* Voir aussi {../../notes/20240726T230440--dyslipoprotéinémies__biochimie.org}[Dyslipoprotéinémies]
+* Voir aussi {:dyslipoprotéinémies__biochimie.norg:}[Dyslipoprotéinémies]

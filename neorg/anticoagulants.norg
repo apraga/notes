@@ -10,7 +10,7 @@ version: 1.1.1
 
 .image images/hemostase/anticoagulants.png
 
-{../../notes/20240806T215355--avk__hémostase.org}[AVK]
-{../../notes/20240812T101412--héparine__hémostase.org}[Héparine]
-{../../notes/20240813T101220--aod__hémostase.org}[AOD] 
+{:avk__hémostase.norg:}[AVK]
+{:héparine__hémostase.norg:}[Héparine]
+{:aod__hémostase.norg:}[AOD] 
 

@@ -22,7 +22,7 @@ Homéostasise hydrosodée + pression artérielle
 - ECA = enzyme de conversion de l'angiotensine 
 - ADH = hormone antidiurétique 
 
-Voir régulation de {../../notes/20240727T152742--rénine__biochimie_endoc.org}[Rénine] 
+Voir régulation de {:rénine__biochimie_endoc.norg:}[Rénine] 
 
 *** 2. Clivage angiotensine I et II
 
@@ -31,7 +31,7 @@ Voir régulation de {../../notes/20240727T152742--rénine__biochimie_endoc.org}[
 --- vasoconstriction 
 ---- cellules musculaires lisses 
 ---- rénal (artérioles afférentes et efferentes) 
---- production {../../notes/20240727T145833--aldostérone__biochimie.org}[aldostérone] 
+--- production {:aldostérone__biochimie.norg:}[aldostérone] 
 --- réabsorption sodium (tubule proximal + distal) 
 --- augmentation soif et sécrétion ADH (antidiurétique) 
 --- stimulation système sympathique -> noradrénaline 
@@ -39,7 +39,7 @@ Voir régulation de {../../notes/20240727T152742--rénine__biochimie_endoc.org}[
 --- sécrétion rénine 
 --- synthèse hépatique angiotensinogène 
 
-*** 3. Synthèse d'{../../notes/20240727T145833--aldostérone__biochimie.org}[aldostérone]
+*** 3. Synthèse d'{:aldostérone__biochimie.norg:}[aldostérone]
 
 ** Plus complexe en pratique
 
@@ -50,7 +50,7 @@ Voir régulation de {../../notes/20240727T152742--rénine__biochimie_endoc.org}[
 
 * Exploration biologique
 
-Indication : {../../notes/20240727T151552--hyperaldostéronisme-primaire__endoc.org}[Hyperaldostéronisme primaire] 
+Indication : {:hyperaldostéronisme-primaire__endoc.norg:}[Hyperaldostéronisme primaire] 
 
 ** Variations
 
@@ -95,15 +95,15 @@ Cf supra pour raison donc
 
 ** Analytique
 
-- {../../notes/20240727T152742--rénine__biochimie_endoc.org::#h:a5aaba22-cae3-4c4c-aff8-94b65e307103}[Rénine::Dosage] 
-- {../../notes/20240727T145833--aldostérone__biochimie.org::#h:1f0e63c0-746b-40fb-8cd5-47f5a63f2c71}[Aldostérone::Dosage] 
+- {:rénine__biochimie_endoc.org::#h:a5aaba22-cae3-4c4c-aff8-94b65e307103}[Rénine::Dosage] 
+- {:aldostérone__biochimie.org::#h:1f0e63c0-746b-40fb-8cd5-47f5a63f2c71}[Aldostérone::Dosage] 
 - EAC: rarement fait (exploration granulomatose) 
 - angiontensinogène : rarement fait 
 
 *** Post-analytique
 
 ~ Aldostérone augmentée 
--- {../../notes/20240727T151552--hyperaldostéronisme-primaire__endoc.org::#h:8a3f6e1a-ba94-46fb-959d-6f3bdb301e80}[Hyperaldostéronisme primaire::Diagnostic] 
+-- {:hyperaldostéronisme-primaire__endoc.org::#h:8a3f6e1a-ba94-46fb-959d-6f3bdb301e80}[Hyperaldostéronisme primaire::Diagnostic] 
 -- Hyperaldostéronisme secondaire : RAR normal (pas de dissociation rénine/aldostérone) 
 --- causes : 
 ---- sténone artérielle rénale (augmente sécrétion rénine) 

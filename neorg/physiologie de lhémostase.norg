@@ -11,7 +11,7 @@ version: 1.1.1
 - Facteurs dépendant vitamine K: II, VII, IX, X 
 - déficit en fibrinogène : le plus souvent acquis mais congénital possible 
 
-* {../../notes/20240807T225847--hémostase-normale__hémostase.org}[Hémostase normale]
+* {:hémostase-normale__hémostase.norg:}[Hémostase normale]
 
 * Orientation clinique
 
@@ -19,10 +19,10 @@ version: 1.1.1
 
 - Saignement tissus superficiels 
 - Purpura -> thrombopénie, thrombopathie 
-- ecchymoses, epistaxis prolongée à répétition, gingivorragie -> {../../notes/20240806T213755--maladie-de-willebrand__hémostase.org}[Maladie de Willebrand], thrombopathie 
+- ecchymoses, epistaxis prolongée à répétition, gingivorragie -> {:maladie-de-willebrand__hémostase.norg:}[Maladie de Willebrand], thrombopathie 
 
 ** Coagulation
 
 - Saignement tissus profond (muscles, viscènrs, cavité) 
-- Hématome volumineux, hémarthroses, ecchymoses étendues -> {../../notes/20240808T223159--hémophilies__hémostase.org}[Hémophilies], {../../notes/20240808T231703--déficits-rares-en-facteurs-de-la-coagulation__hémostase.org}[Déficits rares en facteurs de la coagulation] 
+- Hématome volumineux, hémarthroses, ecchymoses étendues -> {:hémophilies__hémostase.norg:}[Hémophilies], {:déficits-rares-en-facteurs-de-la-coagulation__hémostase.org}[Déficits rares en facteurs de la coagulation] 
 

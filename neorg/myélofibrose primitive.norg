@@ -13,7 +13,7 @@ version: 1.1.1
 Les 3 majeurs et >= 1 mineur 
 
 ~ prolifération mégacaryocytaire avec atypies cellulaires + fibrose réticulinique/collagène grade 2/3 
-~ pas de critères pour {../../notes/20240722T222950--polyglobuline-de-vaquez__hémato.org}[Polyglobuline de Vaquez],{../../notes/20240815T210446--thrombocytémie-essentielle__hémato.org}[Thrombocytémie essentielle], LMC,{../../notes/20240815T211015--syndromes-myélodysplasiques__hémato.org}[Syndromes myélodysplasiques] 
+~ pas de critères pour {:polyglobuline-de-vaquez__hémato.norg:}[Polyglobuline de Vaquez],{:thrombocytémie-essentielle__hémato.org}[Thrombocytémie essentielle], LMC,{:syndromes-myélodysplasiques__hémato.org}[Syndromes myélodysplasiques] 
 ~ mutation JAK2, CALR ou MPL ou autre marqueur clonal ou absence de causes de fibrose secondaire
 Infection, auto-immun, inflammation chronique, hémopathie lymphoïde, cancer avec métastases, toxicité 
  
@@ -28,7 +28,7 @@ Mineurs
 
 NB: l'OMS définit un stade préfibrotique précoce (pas de fibrose ni érythromyélémie) 
 
-* Moléculaire (idem{../../notes/20240815T210446--thrombocytémie-essentielle__hémato.org}[Thrombocytémie essentielle] )
+* Moléculaire (idem{:thrombocytémie-essentielle__hémato.norg:}[Thrombocytémie essentielle] )
 
 Suspicion : 
 

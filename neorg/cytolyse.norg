@@ -8,8 +8,8 @@ updated: 2024-09-07T20:13:23+0100
 version: 1.1.1
 @end
 
-- {../../notes/20240727T135435--alat__biochimie_transaminases.org}[ALAT] > 40 U/L = cytosol (foie +/- muscles) 
-- {../../notes/20240726T221814--asat__biochimie_transaminases.org}[ASAT] > 35 U/L = cytosol + mitochondrie (foie, muscles, coeurs, rein,
+- {:alat__biochimie_transaminases.norg:}[ALAT] > 40 U/L = cytosol (foie +/- muscles) 
+- {:asat__biochimie_transaminases.norg:}[ASAT] > 35 U/L = cytosol + mitochondrie (foie, muscles, coeurs, rein,
 pancréas, cerveau) 
 
 Attention : 

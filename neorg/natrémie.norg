@@ -24,7 +24,7 @@ Une approximation de la pression osomotique est donnée par la natrémie (90% = 
 
 * Sodium ~ volume extracellulaire
 
-{../../notes/20240823T194758--déshydratation-extracellulaire__biochimie_néphro.org}[Déshydratation extracellulaire] 
+{:déshydratation-extracellulaire__biochimie_néphro.norg:}[Déshydratation extracellulaire] 
 
 ** Hyperhydratation extracellulaire = excès de sodium
 
@@ -116,13 +116,13 @@ Osmolariété corrigée pour la glycémie 2xNatrémie + glycémie/3
 
 Attention à l'impédencemétrie indirecte ! La version directe ne pose pas de problème (pas de dilution). Voir {id:ae6c4672-b071-491d-bfbc-ef1a4ea96e47}[Potentiométrie] 
 
-* {../../notes/20240825T115156--hyponatrémie__biochimie_néphro.org}[Hyponatrémie] (hyperhydratation intracellulaire)
+* {:hyponatrémie__biochimie_néphro.norg:}[Hyponatrémie] (hyperhydratation intracellulaire)
 
-{../../notes/20240825T115241--hypernatrémie__biochimie_néphro.org}[Hypernatrémie] (déshydratation extracellulaire) 
+{:hypernatrémie__biochimie_néphro.norg:}[Hypernatrémie] (déshydratation extracellulaire) 
 
-* {../../notes/20240823T194758--déshydratation-extracellulaire__biochimie_néphro.org}[Déshydratation extracellulaire]
+* {:déshydratation-extracellulaire__biochimie_néphro.norg:}[Déshydratation extracellulaire]
 
-* {../../notes/20240824T205718--hyperhydratation-extracellulaire__biochimie_néphro.org}[Hyperhydratation extracellulaire]
+* {:hyperhydratation-extracellulaire__biochimie_néphro.norg:}[Hyperhydratation extracellulaire]
 
 * Traitement
 
