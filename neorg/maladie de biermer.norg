@@ -4,20 +4,26 @@ description:
 authors: alex
 categories: biochimie 
 created: 2024-09-07T20:13:24+0100
-updated: 2024-09-08T15:52:13+0100
+updated: 2024-09-08T16:06:42+0100
 version: 1.1.1
 @end
 
-Évocateur 
+Auto-immune rare avec malabsorption de B12 du à un défaut de sécrétion de facteur intrinsèque
+Voir {:$/anémie par carence en B9 et B12:}
 
-- anémie macrocytaire normochrome 
-- hyposidérémie 
-- neutrophiles hypersegmenté 
-- B12 diminué  (voir {:$/anémie par carence en B9 et B12:})
-- anticorps anti-facteur intrinsèque, anti-cellules pariétales 
+* Clinique
+  Voir  {:$/anémie par carence en B9 et B12:** Clinique}[Carence B9]
+* Diagnostiec
+  -  Hémogramme :
+  -- anémie macrocytaire normochrome 
+  -- hyposidérémie 
+  -- neutrophiles hypersegmenté 
+  - B12 diminué  (voir {:$/anémie par carence en B9 et B12:})
+-- anticorps anti-facteur intrinsèque, anti-cellules pariétales 
 
 2e ligne 
 
 - acide méthylmalonique élevé (carence B12) 
 - homocystémie (élevé mais aussi en cas de carence ne folate) 
-
+* Traitement 
+  B12 à vie
