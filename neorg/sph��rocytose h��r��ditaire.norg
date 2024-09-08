@@ -1,0 +1,28 @@
+@document.meta
+title: sphérocytose héréditaire
+description: 
+authors: alex
+categories: 
+created: 2024-09-08T21:03:32+0100
+updated: 2024-09-08T21:20:22+0100
+version: 1.1.1
+@end
+
+Ou maladie de Minkowski-Chauffard
+AD à 75%, AR dans 25%
+* Physiopatholgoie
+  Défaut qualitatif/quantitatif des protéines impliquées dans l'interaction cytosquelette et membrane du GR
+  -> Anomalie de structure du cytosquelettes des GR
+* Clinique
+  Asymptomatique à hémolyse sévère
+  Triade classique : pâleur, ictère, splénomégalie
+* Biologie
+  - Anémie modérée (normocytaire, normochrome, régénérative)
+  - Frottis:  +/- sphérocytes
+    /Attention: on peut voir des sphérocytes dans les {:$/anémie hémolytique auto immune:} -> test direct à l'antiglobuline négatif
+  - hémolyse
+* Test diagnostiques
+  - éosine 5'-maléimide
+  - hémolyse et fragilité osmotique
+* Traitement
+  Bien toléré cliniquement sinon folates, transfusion
