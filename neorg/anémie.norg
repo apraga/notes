@@ -4,98 +4,39 @@ description:
 authors: alex
 categories: hémato 
 created: 2024-09-07T21:16:48+0100
-updated: 2024-09-07T21:16:48+0100
+updated: 2024-09-08T15:52:26+0100
 version: 1.1.1
 @end
 
-: B1 : Inflammatoire
-: C1 : Ferriprive
-: D1 : Mixte
-+hline2
-#table.head.columns 2-8 0
-: A2 : Fer
-: B2 : -
-: C2 : -
-: D2 : -
-: A3 : CST
-: B3 : -
-: C3 : -
-: D3 : -
-: A4 : Transferrine
-: B4 : - ou N
-: C4 : *+*
-: D4 : -
-: A5 : Ferritine
-: B5 : *N ou +*
-: C5 : -
-: D5 : - ou N
-: A6 : RsTF
-: B6 : *N*
-: C6 : *+*
-: D6 : *N ou +*
-: A7 : CRP
-: B7 : +
-: C7 : N
-: D7 : +
-: A8 : Hepcidine
-: B8 : +
-: C8 : -
-: D8 : N ou -
+* Microcytaire
+  - {:carence martiale:} : atteinte du fer
+  - {:anémie inflammatoire:} : idem
+  - {:thalassémie:} : atteinte de la globine
+  - anémie sidéroblastique : atteinte de protoporphyrine
 
-CRP: augmenté si inflammatoire ou mixte
-Hepcidine: dimin
-Fer + Protoporphyrine -> heme + Globine -> hémoglobine 
-
-Atteinte 
-
-- fer = carence martiale, anémie inflammatoire 
-- protoporphyrine : anémie sidéroblastique 
-- globine : thalassémie 
-
-* Types d’anémies
-
-signe clinique/bio d’inflammation et - coef saturation < 16% et 
-
-- ferritine < 30μg/L : carence martiale 
-- ferritine 30-100 
--- RsTf/log ferritine > 2 : maladie chronique et anémie par carence martiale 
--- > 1 : maladie chronique 
-- ferritine > 100: maladie chronique 
-
-* {../../notes/20240723T201939--carence-martiale__hémato.org}[Carence martiale]
-
-* Anémies inflammatoire
-
-= celle des maladise chroniques 
-
-** Physiopathologie
-
-- inhibition EPO 
-- diminution érythropoïèse 
-- augmente hémophagocytose (donc diminution Fe3-) 
-- augmente synthèse hpecdinie 
-
-** Bilan
-
-- fsDiminution Fer et CST 
-- transferrine N ou - 
-- ferritine N ou + 
-- fsRsTF N 
-
+Pour différencier avec anémie inflammatoire: ferritine et CRP
+{:$/thalassémies:} : ferritine et CRP normale
 *Une ferritine N ou + n'exclut pas une carence martiale* 
 
-~ Ferritine 
-~ Puis RsTf 
+@table
+|              | Inflammatoire | Ferriprive | Mixte  |
+|--------------+---------------+------------+--------|
+| Fer          | -             | -          | -      |
+| CST          | -             | -          | -      |
+| Transferrine | - ou N        | +          | -      |
+| Ferritine    | N ou +        | -          | - ou N |
+| RsTF         | N             | +          | N ou + |
+|--------------+---------------+------------+--------|
+| CRP          | +             | N          | +      |
+| Hepcidine    | +             | -          | N ou - |
+@end
 
-* Anémie mixte
+* Macrocytaire
+** Arégénérative
+   - {:anémie par carence en B9 et B12:}
+   - {:$/syndromes myélodysplasiques:}
 
-+hline2
-#table.head.columns 1 0
-: A1 : Inflammatoire
-: B1 : Ferriprive
-: C1 : Mixte
-
-* Hyperferritinémie
+* Hyperferritinémi
 
 - CST élevée (> 45%) 
 -- cytolyse (ASAT/ALT) hépatique/musculaire 
