@@ -8,20 +8,11 @@ updated: 2024-09-07T21:17:10+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
-@embed org
-@end
-
-
 - < 150G/L 
 - Périphérique : mégacaryocytes normaux/éleves,
 destruction/consomation/séquestration 
 - Central : mégacaryocytes diminuné, congénital/acquis 
 - Myélogramme non obligatoire 
-
 
 * Central
 
@@ -29,14 +20,12 @@ destruction/consomation/séquestration
 alcool, médicament, radiot 
 - envahissement : LA, lymphome, myélome, LLC, LMC, métastases 
 
-
 * Constit (rare)
 
 - nénat, enfance, adulte 
 - dysmorphie, cardiopathi, IR, surdité, cataracte, anomalie osseuse 
 - pas/peu de réponse au traitements 
 - signes hémorragiques inconstants 
-
 
 ** périphérique
 
@@ -58,7 +47,6 @@ SHU, PTT, HELLP (hemolysis, Elevetad liver enzym, Low Platelet )
 transfusion massive, cirrhose, grossesse (dilution) 
 - secondaire 
 
-
 ** PTI
 
 - Enfant : contexte viral, plaquette < 5G, /numération et frottis RAS
@@ -66,21 +54,17 @@ par ailleurs/, pas d'antécédent
 -- myélogramme inutile 
 - Adulte = élimination (myélogramme) 
 
-
 ** Démarche
 
 Confirmer 
-
 
 - < 150G 
 - frottis pour éliminer fausse thrombopénie, sous-estimation (plaquette
 de grande taille) 
 - recherche microcaillot 
 
-
 Cherche schizo (MAT), hyperlympho (viral), neutropénie/anémie (central),
 cellules anormales (blastes) 
-
 
 ** Fausses diminution :
 
@@ -96,7 +80,6 @@ canal optique
 - pé-ana : perfusion, coagulation partielle, tube pas assez rempli (trop
 d'anticoagulant), trop rempli (difficulté d'homogénéisation), trop
 vieux (démarrage de la coagulation) 
-
 
 ** Examens systématiques
 

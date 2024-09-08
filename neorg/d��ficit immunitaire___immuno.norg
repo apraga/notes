@@ -8,18 +8,9 @@ updated: 2024-09-07T21:16:51+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
-@embed org
-@end
-
-
 * Défaut de signal pré-BCR
 
 BCR: récepteur à l'antigène des lymphocytes B 
-
 
 ** Agammaglobulinémie lié à l'X
 

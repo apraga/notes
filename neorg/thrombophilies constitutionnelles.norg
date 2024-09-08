@@ -8,28 +8,17 @@ updated: 2024-09-07T21:17:10+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
-@embed org
-@end
-
-
 Hypercoagulation du à des déficits en inhibiteur de la coagulation 
-
 
 * Analyses
 
 - Dosage tube citraté : antithrombine, protéine C et S 
 - biomol : facteur V leiden, G20210A prothrombine 
 
-
 * Déficit en antithrombine
 
 - Antithrombine = inhibiteur majeur de la thrombine et autres facteurs de coagulation 
 - AD, homozygote non viable 
-
 
 ** Test
 
@@ -37,11 +26,9 @@ Hypercoagulation du à des déficits en inhibiteur de la coagulation
 - 2e intention : test immuno 
 - interprétation : activité diminuée : antigèn et antithrombine progressive pour classer en 3 types 
 
-
 * Déficit en protéine C
 
 - Prot C = inactive VIIIa et Va 
-
 
 ** Tests
 
@@ -49,22 +36,18 @@ Hypercoagulation du à des déficits en inhibiteur de la coagulation
 - 2e intention : immuno 
 - interprétation : activité chronométrique diminuée : antigèn et activité chromogénique pour classer en 3 types 
 
-
 * Déficits en protéine S
 
 Cofacteur protéine C activé donc même principe 
-
 
 ** Tests
 
 - 1ere intention : test fonctionnel avec allongement du temps de coag après ajout protéine C activée 
 - interprétation : activité chronométrique diminuée : antigèn et protéine S totale pour classer en 3 types 
 
-
 * Mutation Facteur V Leiden
 
 mutation du gène pour facteur V -> cause résistance à la protéine C activée 
-
 
 * Mutation du gène de la prothrombine G20210A
 

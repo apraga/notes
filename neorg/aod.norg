@@ -8,45 +8,28 @@ updated: 2024-09-07T21:16:48+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
-@embed org
-@end
-
-
 Rivaroxaban (Xarelto)
 Apixaban (Eliquis)
 Dabigatran 
-
 
 * AMM (rivaroxaban, apixaban)
 
 Indication 
 
-
 - Prévention MTEV: intéressant/AVK (hémorragies sévères équivalentes ou diminuées) 
 - FA : idem 
 - TVP-EP (OK en prévention prolongée également) 
 
-
 Contre-indication : saignements actifs, IR sévère 
-
 
 * Antidote (rivaroxaban, apixaban)
 
 - Andexanet alfa (facteur Xa recombinant muté, non fonctionnel) 
 - étude 2019 : 14% décès à J30 (majorité cardiovasculaire), 10% accidents thromboembolique à J30 
 
-
 * Interférences
 
 ** Bilan de coagulation
-
-
-
-
 
 : A1 : Test
 : B1 : Dabigatran
@@ -74,16 +57,12 @@ Contre-indication : saignements actifs, IR sévère
 : C6 : ↑
 : D6 : ↑
 
-
-
 /Limiter les bilans d'hémostase pour patients sous AOD/
 Si besoin, prélèvement juste avant la prise 
-
 
 ** Bilan de thrombose
 
 Rivaroxaban, apixaban 
-
 
 - surestimation pour test basé sur coagulation : protéine C et S (activité anticoagulante), antithrombine (activité basée sur antiXa) 
 - faux positifs+++ : anticoagulant lupique 
@@ -92,11 +71,9 @@ Rivaroxaban, apixaban
 -- arrêt 72h avant, relais HBPM 
 -- charbon actif : élimine interférence (mais pas de conclusion possible si le test reste positif) 
 
-
 * Mesure de la concentration
 
 Urgence : saignement, antidote, AVC ischémique, chir/geste invasif 
-
 
 - TP, TCA, antiXa HBPM/HNF: facile, rapide mais non spécifique et sensibilité variable selon les réactifs 
 -- *normal : ne permet pas d'exclure taux > 30ng/mL* 

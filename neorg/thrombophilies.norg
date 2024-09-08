@@ -8,40 +8,26 @@ updated: 2024-09-07T21:17:10+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
-@embed org
-@end
-
-
 {../../notes/20240807T175907--thrombophilies-acquises__hémostase.org}[Thrombophilies acquises]
 {../../notes/20240808T193755--thrombophilies-constitutionnelles__hémostase.org}[Thrombophilies constitutionnelles] 
-
 
 * Indications du bilan
 
 Prévention primaire : *femmes en âge de procréer* 
 
-
 ** Symptomatiques
 
 Constit + acquise 
-
 
 - récidive TVP proximale/EP si 1er épisode EP 
 - récidive TVP distale non provoquée si 1er épisode EP < 60 ans 
 - (femmes) TVP proximale ou EP 
 - (hommes) TVP proximale ou EP non provoqué et âge < 60 ans 
 
-
 Acquise : localisation atypiques 
-
 
 ** Asymptomatiques
 
 Constit : apparenté 1er degré pour les causes décrites (HMZ et HTZ pour Leiden et prothrombine) 
-
 
 ** A distance de l'épisode et sans anticoagulant

@@ -8,14 +8,6 @@ updated: 2024-09-07T21:16:52+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
-@embed org
-@end
-
-
 * Initial
 
 ** Obligatoire
@@ -26,12 +18,10 @@ version: 1.1.1
 - {../../notes/20240901T160924--recherche-dagglutinines-irrégulières__hémato.org}[Recherche d'agglutinines irrégulières] 
 - +/- `groupe sanguin si absence de 2 détermination 
 
-
 ** À proposer
 
 - VIH 
 - hépatite C 
-
 
 *** Selon les antécédents
 
@@ -40,7 +30,6 @@ version: 1.1.1
 - ECBU si IU à répétition 
 - électrophorèse ({../../notes/20240827T213630--drépanocytose__hémato.org}[Drépanocytose]…) 
 - TSH 
-
 
 * Pendant la grossesse :
 

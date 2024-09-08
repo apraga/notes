@@ -8,12 +8,7 @@ updated: 2024-09-07T21:16:48+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
 {../../notes/20240816T121426--classification-des-bactéries__bactério.org}[Classification des bactéries] 
-
 
 - {../../notes/20240515T224650--campylobacter-jejuni__bactérie_bactério.org}[Campylobacter] 
 - {../../notes/20240601T183012--chlamydia-trachomatis__bactérie_bactério_ist.org}[Chlamydia trachomatis] 

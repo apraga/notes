@@ -8,13 +8,8 @@ updated: 2024-09-07T21:16:51+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
 > 80% sont virales
 Bactéries : coproculture standard = Salmonella, Shigella, Campylobacter, Yersinia 
-
 
 * Mécanisme
 
@@ -28,7 +23,6 @@ Bactéries : coproculture standard = Salmonella, Shigella, Campylobacter, Yersin
 -- {../../notes/20240829T230553--escherichia-coli__bactérie_bactério.org}[Escherichia coli] entéro-toxinogène et entéro-aggrégatif 
 -- Vibrio cholerae 
 
-
 ** Syndrome dysentérique
 
 - Selles glairo-sanglantes, fièvre 
@@ -38,7 +32,6 @@ Bactéries : coproculture standard = Salmonella, Shigella, Campylobacter, Yersin
 -- E. coli entéro-invasif 
 -- coli entérohémorragique (production de Shiga-like toxines, codées par /stx1/, /stx2/) {../../notes/20240904T235349--syndrome-hémolytique-et-urémique__bactério_hémato.org}[Syndrome hémolytique et urémique] 
 -- amoebose colique 
-
 
 ** Syndrome gastro-entérique
 
@@ -50,17 +43,14 @@ Bactéries : coproculture standard = Salmonella, Shigella, Campylobacter, Yersin
 -- Yersinia spp 
 -- E. coli entéropathogènes 
 
-
 * Virale
 
 GEA Adulte : norovirus > rotavirus > adénovirus > astrovirus
 Enfant : rota > norovirus 
 
-
 ** Autre
 
 {../../notes/20240905T001255--entérovirus__viro.org}[Entérovirus] mais il y a d'autres symptômes (angine, méningite) 
-
 
 - Astrovirus : GEA modérée, tous les âges 
 - Adénovirus (40-41) : test rapide/RT-pcr, ttt sympto 

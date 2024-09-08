@@ -8,10 +8,6 @@ updated: 2024-09-07T21:17:01+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
 - {../../notes/20240515T224540--angines__bactério.org}[Angines] 
 - {../../notes/20240515T224830--diarrhées__bactério_viro.org}[Diarrhées] 
 - {../../notes/20240515T224940--infections-cutanées__bactério.org}[Infections cutanées] 

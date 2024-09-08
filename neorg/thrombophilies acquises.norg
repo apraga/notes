@@ -8,26 +8,15 @@ updated: 2024-09-07T21:17:09+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
-@embed org
-@end
-
-
 * Causes
 
 Hémostase : 
-
 
 - auto-immune :{../../notes/20240807T183601--syndrome-des-anti-phospholipides__hémostase.org}[Syndrome des anti-phospholipides] , (antiprotéine C,S…) 
 - {../../notes/20240807T180139--thrombopénie-induite-par-lhéparine__hémostase.org}[Thrombopénie induite par l'héparine] type II 
 - Excès de facteurs de la coagulation (hors inflammation, surpoids, œstrogènes) 
 
-
 Hématologie 
-
 
 - cytopénies périphériques auto-immunes ({../../notes/20240807T180444--anémie-hémolytique-auto-immune__hémato.org}[Anémie hémolytique auto-immune], PTI ) 
 - splénectomie 

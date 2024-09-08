@@ -8,14 +8,6 @@ updated: 2024-09-07T21:17:06+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
-@embed org
-@end
-
-
 * Innée
 
 - système du complément 
@@ -28,29 +20,24 @@ version: 1.1.1
 --- {../../notes/20240814T221252--cellules-nk__hémato_immuno.org}[Cellules NK] 
 --- T non conventionnels 
 
-
 * Adaptative
 
 - lymphocytes B et plasmocytes 
 - lymphocytes T CD4+ et CD8+ 
-
 
 .image images/hematologie/lymphocytes_b.png
 
 .image images/hematologie/lymphocytes_t.png
  
 
-
 * Organes lymphoïdes
 
 - primaire : mœlle osseuse, thymus 
 - secondaire : ganglions lymphatiques, rate + amygdales, MALT 
 
-
 Un follicule avec une réponse antigénique en cours a 3 zones
 .image images/hematologie/follicules.png
  
-
 
 * Réponse humorale
 
@@ -63,24 +50,20 @@ Les cellules dendritiques folliculaires (CDF) présentent l'antigène.
 Sélection de celles ayant le plus d'affinité en plasmocytes à longue durée de vie
 Les lymphocytes B mémoire à longue durée de vie ont des affinités plus variées 
 
-
 ** Antigène T-indépendant
 
 Ag polysaccharidique -> lymphocytes B de la zone marginale 
-
 
 ** Primaire et secondaire
 
 .image images/hematologie/reponse_primaire.png
  
 
-
 ** Sous-populations B
 
 - 17% de tous les lymphocytes sont dans la mœlle 
 - mœlle : majorité de B immatures 
 - sang : majorité de B naïfs, absence de précurseurs B et B immatures 
-
 
 ** {../../notes/20240814T200554--immunoglobuline__hémato_immuno.org}[Immunoglobuline]
 

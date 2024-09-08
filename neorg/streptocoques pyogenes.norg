@@ -8,18 +8,9 @@ updated: 2024-09-07T21:17:08+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
-@embed org
-@end
-
-
 - Cocci gram+ en chaînettes, capsulé, non sporulé, immobile 
 - Réservoir pharyngé. 
 - Transmission = aérienne, contact plaie infectée, accouchement. 
-
 
 * Facteurs de pathogénicité
 
@@ -27,37 +18,30 @@ version: 1.1.1
 -- protéine M 
 -- encapsulation 
 
-
 * Facteurs de virulence
 
 Nombreux facteurs de virulence: 
-
 
 - enzyme :hyluronidase, streptolysine O et S (favorisent l'invasion tissulaire) 
 - exotoxine : activation et prolifération d'une sous population lymphocytes T -> cytokine proinflammatoires 
 - Streptolysine = hémolyse β-complète 
 - toxine érythrogène : hypersensibilité retardée à la scarlatine 
 
-
 * Habitat
 
 - Strictement humaine, surtout pharyngé +/- peau, vagin surtout 
 - Pyogène = responsiable d'infections suppurées 
-
 
 * Clinique
 
 - non invasive = {../../notes/20240515T224540--angines__bactério.org}[angine] érythémateuse/érythémato-pultacée,{../../notes/20240901T144149--otite-moyenne-aigüe__bactério.org}[Otite moyenne aigüe] de l'enfant, scarlatine, infection cutanée 
 - invasive : cutanée sévère (fasciite nécrosante), septicémie, choc toxique streptococcique 
 
-
 ** Complications post-streptococciques
 
 Rare = immunologique (analogie protéine M et certaines protéines du soi) 
 
-
 - rhumatisme articulaire, glomérulonéphrite aigüe, érythème noueux 
-
 
 * Diagnostic
 
@@ -66,13 +50,11 @@ Rare = immunologique (analogie protéine M et certaines protéines du soi)
 - Résistance optochine, sensible bacitracine 
 - Catalase -, oxydase - 
 
-
 * Sensibilité, résistance
 
 - β-lactamine : sensible 
 - macrolide : sauvage sensible, résistance par mécanisme d'efflux,
 modiifcation cible ARN23S 
-
 
 * Traitement
 

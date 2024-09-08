@@ -11,8 +11,6 @@ updated: 2024-09-07T21:17:04+0100
 version: 1.1.1
 @end
 
-
-
 - Cocci gram négatif 
 - *Fragile*, sensible variation température => gélose sang cuit/chocolat supplémenté 
 - Aérobie stricte mais *enrichi CO,2,* 
@@ -21,13 +19,11 @@ version: 1.1.1
 - Diplocoque gram négatif 
 - Urgence médicale 
 
-
 * Épidémio
 
 - adulte jeunes 43% 
 - homme 2.2x 
 - augmenation HSH 
-
 
 * Pathogénicité
 
@@ -39,12 +35,10 @@ version: 1.1.1
 - pharyngé, anorectal = souvent asympto 
 - fellation non protégée 
 
-
 * Diagnostic
 
 *Confirmer toute suspicion d'urétrite*: ATBg indispensable
 Prélevement selon la symptomatologie (urinaire, écoulement…) 
-
 
 - ED:sensible pus uréthral homme sympto 
 - culture *> 2j* si symptomatique : technique de référence (ATBg, sérotypage…) 
@@ -52,12 +46,10 @@ Prélevement selon la symptomatologie (urinaire, écoulement…)
 -- autoprélèvement vaginal, 1er jet urine 
 -- anal, gorge (PCR plus sensible que la culture) 
 
-
 * Dépistage
 
 - symptomatique: culture + TAAN 
 - asymptomatique: TAAN puis culture si positif 
-
 
 * Antibiotiques
 
@@ -66,7 +58,6 @@ Prélevement selon la symptomatologie (urinaire, écoulement…)
 -- très fréquente : *péni-G*, FQ, tétracycline 
 -- C3G : PLP mosaïque 
 -- vanco = résistance naturelle 
-
 
 * Traitement
 

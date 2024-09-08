@@ -8,25 +8,15 @@ updated: 2024-09-07T21:17:03+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
-@embed org
-@end
-
-
 - 2 formes 
 -- Fe^3^+ : insoluble, lié à des protéines de transport (transferrine) 
 -- Fe^2^+ : soluble et toxique (mort celullaire, fibrose) 
 - Finement régulé 
 
-
 * Alimentation
 
 - Fer heminique (25% absorption): boudin, foie, agneian, boeuf, cheval carand, poissons, oeuf dur… 
 - Fer non heminique (5-10% absorption): soja, légumineuses épinards, pains, petits pois, haricots verts 
-
 
 * Homéostase
 |caption Cohen-Solal et al 2013 
@@ -39,12 +29,7 @@ version: 1.1.1
 - mise en réserve par la {../../notes/20240722T230855--ferritine__hémato.org}[Ferritine] 
 - régulation = seulement au niveau de l'absorption car il n'y a pas de mécanisme d'excrétion ! Voir {../../notes/20240722T231916--hepcidine__hémato.org}[hepcidine] 
 
-
 * Exploration
-
-
-
-
 
 : A1 : Compartiment
 : B1 : fonctionnel
@@ -68,16 +53,12 @@ version: 1.1.1
 : C6 : Fer sérique
 : C7 : CST
 
-
-
 * Carence
 
 - diminution synthse hémoglobline -> anémie microcytaire hypochrome, 
 - diminution capacito oxidative tissulaire 
 
-
 Donc diminution capacité de travail 
-
 
 * Variation
 
@@ -86,13 +67,11 @@ Donc diminution capacité de travail
 - {../../notes/20240717T200717--transferrine__biochimie_néphélémétrie.org}[Transferrine] 
 - {../../notes/20240722T233548--coefficient-de-saturation-de-la-transferrine__hémato.org}[Coefficient de saturation de la transferrine] 
 
-
 * Dosage
 
 - *Toujours doser transferrine et CST* 
 - À jeun si possible et 8h (variation nycthémérale) 
 - sérum (chélation du fer par certains anticoagulant) 
-
 
 Source: cours UNESS 
 

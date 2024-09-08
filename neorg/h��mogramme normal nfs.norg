@@ -8,19 +8,7 @@ updated: 2024-09-07T21:16:55+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
-@embed org
-@end
-
-
 Formule 
-
-
-
-
 
 +hline2
 #table.head.columns 1-5 0
@@ -34,5 +22,4 @@ Formule
 : B4 : < 0.5 G/L
 : A5 : Monocytes
 : B5 : 0.2-0.8 G/L
-
 

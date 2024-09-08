@@ -8,8 +8,6 @@ updated: 2024-09-07T20:13:29+0100
 version: 1.1.1
 @end
 
-
-
 - Cytosol des cellules hépatiques (musculaires) -> marqueur de cytolyse hépatique 
 - Enzyme transférant un groupement amine depuis un acide aminé vers un acide cétonique alanine + acide α-cétoglutarique ↔ pyruvate + glutamate
 Le pyruvate sera utilisé dans la voie glycolytique et le glutamate dans le cycle glucose-alanine. 

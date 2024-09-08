@@ -8,39 +8,23 @@ updated: 2024-09-07T21:16:50+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
-@embed org
-@end
-
-
 - positif si paroi épaisse de peptidoglycane-> coloration persiste 
 - négative si paroi plus fine qui permet à l'éthanol de laver la
 coloration Aérobies 
 
-
 .image ../../images/microbiologie/aerobies.png
  
-
 
 .image ../../images/microbiologie/anaerobies.png
  
 
-
 .image ../../images/microbiologie/autres.png
  
-
 
 * Catalase
 
 oxydoréductase qui intervient dans la résistance à la bactéricidie par
 le peroxyde d'oxygène 
-
-
-
-
 
 : B1 : Catalase +
 : C1 : Catalase -
@@ -56,15 +40,10 @@ le peroxyde d'oxygène
 : B5 : Corynebacterium
 : B6 : Propionobacterium
 
-
-
 * Oxydase
 
 détecte les cytochrome de type c (pigments hémo-protéiques dans la
 plupart des cellules vivante) 
-
-
-
 
 : A1 : Oxydase +
 : B1 : Oxydase -
@@ -85,8 +64,6 @@ plupart des cellules vivante)
 : A13 : Pseudomonas
 : A14 : Vibrio
 
-
-
 * Mobile :
 
 - Monotriche = 1 cil (triche = poil) -> va dans une direction à l'examen
@@ -102,11 +79,9 @@ Vagococcus, Planococcus)
 -- Legionella 
 -- *Entérobactéries* : sauf Shigella, Klebsiella 
 
-
 * Fermentant
 
 BGN: 
-
 
 - non fermentant = environnement (pyo) 
 - fermenant le lactose = entéro (commensal) 

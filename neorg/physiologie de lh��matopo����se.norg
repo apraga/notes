@@ -8,14 +8,6 @@ updated: 2024-09-07T21:17:04+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
-@embed org
-@end
-
-
 * Normal
 
 - Durée de vie 
@@ -24,17 +16,13 @@ version: 1.1.1
 -- polynucléaire 24h 
 - Localisation : sac vitellin (<= 2 mois), foie/rate (<= 7 mois) puis moelle 
 
-
 NB: dans la moelle, mégacaryocyte (normalement non présent dans moelle) 
-
 
 - Différentiation 
 -- Moelle : progéniteur (non identifiable) -> précurseurs (identifiable). 
 -- sang : cellules différenciées dans le sang 
 
-
 Cellules souches hématopoïetique 
-
 
 - CD34+, CD38- 
 - -> progéniteur lymphoide ou myéloide 
@@ -45,10 +33,8 @@ Cellules souches hématopoïetique
 - nombreuses interactions CSH avec micro-environnement ("niche"
 hématopoïètique) 
 
-
 .image images/hematologie/hematopoiese.svg
  
-
 
 ** lignée lymphocytaire:
 
@@ -56,7 +42,6 @@ hématopoïètique)
 - la moelle sert à la différenciation des précurseurs des lymphocytes B 
 - les lymphocytes B matures, après activation avec antigène, se différencient en LB mémoire et en plasmocytes qui produisent les
 anticorps circulants. 
-
 
 * Régulation
 
@@ -73,7 +58,6 @@ anticorps circulants.
 ---- cytokines + tyrosine kinase (interleukines…) 
 -- micro-environnement médullaire 
 
-
 ** Par lignée
 
 - érythropoétine : augmente survie, prolifération, différentiation des précurseurs des globules rouges 
@@ -88,13 +72,11 @@ anticorps circulants.
 -- régulé par les plaquettes sénescentes 
 -- augmenté par inflammation (IL6) 
 
-
 ** Application clinique
 
 - Polyglobulie de Vaquez : activation de JAK2 sans EPO 
 -- activation non régulée des progéniteurs des 3 lignées (érythroïdes, granuleux, mégacaryocytaires) -> SMP 
 - Cytokine dans le traitement des cytopénies 
 - Mobilisation des progéniteurs pour greffe 
-
 
 * {../../notes/20240813T152244--mécanisme-des-maladies-hématologiques__hémato.org}[Mécanisme des maladies hématologiques]

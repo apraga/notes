@@ -11,21 +11,11 @@ updated: 2024-09-07T21:17:06+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
-@embed org
-@end
-
-
 Non exigeante, aéro-anaérobie facultative
 Fermente le glucose 
 
-
 TIAC: surtout des{../../notes/20240829T215907--salmonella-spp__bactérie_bactério.org}[Salmonella spp]
 Mécanisme invasif + production de toxines (sérotype 1 produit shiga-toxine) 
-
 
 * Clinique
 
@@ -33,13 +23,11 @@ Mécanisme invasif + production de toxines (sérotype 1 produit shiga-toxine)
 - dysentérie aigüe: fièvre, douleurs abdo, épreinte, tenesme
 selles très importantes, glairo-sanglantes, purulentes 
 
-
 * Diagnostic
 
 Clinique, confirmé par la coproculture
 Milieu : Hektoen, SS
 MALDI TOF 
-
 
 * Traitement
 

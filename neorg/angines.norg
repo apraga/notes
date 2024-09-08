@@ -8,14 +8,11 @@ updated: 2024-09-07T21:16:46+0100
 version: 1.1.1
 @end
 
-
-
 - Virale 60-80% 
 - Bactérie: {../../notes/20240828T185327--streptocoques-pyogenes__bactério.org}[Streptocoques pyogenes] surtout (strepto β-hémolytique) 
 - Cause rare : 
 -- angine ulcéro-nécrotique : ED = fusiforme + bactéries spiralées 
 -- pseudomembraneuse (Corynebacteium diphteria: culture gélose enrichie + CNR) 
-
 
 * Diagnostic
 
@@ -25,16 +22,13 @@ version: 1.1.1
 -- culture milieu enrichi 48h: β-hémolyse + MALDI TOF 
 -- antibiogramme: sensible β-lactamines 
 
-
 * Traitement
 
 Angine érythémateuse/érythématopultacées avec TROD+ 
 
-
 ~ amoxicilline 
 ~ allergie amox mais céphalosporines OK: cefpodoxime par exemple 
 ~ sinon macrolide /après/ test de résistance 
-
 
 * Complications
 

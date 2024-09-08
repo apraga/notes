@@ -8,17 +8,8 @@ updated: 2024-09-07T21:17:02+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
-@embed org
-@end
-
-
 MLSK (Macrolides-Lincosamide-Streptogramine-Kétolide): modification cible++, efflux, protection ribosomale
 2 phénotypes 
-
 
 - MLSb (inductible) : déméthylation dans l'ARI ribosomique 23s -> résistance à tous les macrolides 
 - menE (constitutif) : gène codant pour une protéine d'effulx de l'antibio hors de la bactérie 

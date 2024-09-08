@@ -10,13 +10,8 @@ updated: 2024-09-07T21:17:10+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
 Spirochète hélicoïdal/spiralé, mobile
 Prend mal la coloration de Gram, ne se cultive pas /in vitro/ ! 
-
 
 * Primaire
 
@@ -24,19 +19,16 @@ Prend mal la coloration de Gram, ne se cultive pas /in vitro/ !
 - incubation 10-90 non contagieuse 
 - *chancre* ulcération en général unique, base indurée, fond propre, non douloureux (organes génitaux, ORL, anal) 
 
-
 * Secondaire
 
 - dans l'année 
 - latente précoce = asymptomatique 
 - symptomatique = secondaire : succession d'éruption cutanées +/- neuro, oculaire mais *grande simulatrice* 
 
-
 * Tertiaire
 
 - latente tardive = asymptomatique 
 - tertaire = tous les organes, grandes diversité 
-
 
 * Diagnostic biologique
 
@@ -51,9 +43,6 @@ Prend mal la coloration de Gram, ne se cultive pas /in vitro/ !
 --- antigène de type phospholipides (membrane mais aussi mitochondries) par agglutination 
 --- infection active mais *peu spécifique* | | TT+ | TT - | 
 
-
-
-
 +hline2
 #table.head.columns 1-2 0
 : A1 : VRDL/TNT+
@@ -63,17 +52,12 @@ Prend mal la coloration de Gram, ne se cultive pas /in vitro/ !
 : B2 : traité et guérie
 : C2 : trop précoce
 
-
-
-
 Contrôle 3 semaine si TT négatif ou équivoque ou TT+ mais TNT- 
-
 
 * Cas particuliers
 
 - dépistage 1er trimestre de la grosses (dramatique pour le foetus) 
 - neurosyphilis : PCR (passage naturel IgG spécifique donc le test classique a peu d'intérêt) 
-
 
 * Traitement
 

@@ -8,26 +8,15 @@ updated: 2024-09-07T21:16:56+0100
 version: 1.1.1
 @end
 
-@embed org
-@end
-
-
-@embed org
-@end
-
-
 Pas de surveillance antiXa en préventif ! 
-
 
 * Indications
 
 Compliqué mais en gros : MTEV en prophylaxie et curatif 
 
-
 - pas d'HNF en curatif prolongé (phase aigüe seule) 
 - SCA : tous sauf héparine sodique 
 - FA: héparine sodique seule 
-
 
 * HNF
 
@@ -37,17 +26,13 @@ Compliqué mais en gros : MTEV en prophylaxie et curatif
 - variations inter individuelles -> suivi biologique quotidien 
 - Risque de TIH 
 
-
 .image images/hemostase/heparine.png
  
 
-
 Héparinate 
-
 
 - de Na = IV 
 - de Ca = SC (calciparine) 
-
 
 ** Surveillance
 
@@ -59,7 +44,6 @@ Héparinate
 - *interférence avec AOD* : risque de surestimation antiXa HNF 
 - {../../notes/20240807T180139--thrombopénie-induite-par-lhéparine__hémostase.org::#h:a7933119-8539-4f0b-9363-f00921028762}[Thrombopénie induite par l'héparine::Dépistage] 
 
-
 * HBPM
 
 - Effet prédictible : dose fixe, pas de surveillance bio 
@@ -70,7 +54,6 @@ Héparinate
 - Bonne prédictibilité re l'effet 
 - Moins de risque de TIH 
 
-
 ** Types (SC)
 
 - enoxaparine (lovenox) 
@@ -78,9 +61,7 @@ Héparinate
 - nadroparine 
 - tinzaparine (innohep) 
 
-
 pentasaccharide : fondaparinux (Arixtra) (SC) 
-
 
 ** Évaluation de l'accumulation
 
@@ -88,7 +69,6 @@ pentasaccharide : fondaparinux (Arixtra) (SC)
 - si complications hémorragiques, IR, > 75 ans 
 - limites: non directement corrélée à l'activité antithrombotique, si surdosage vérifier posologies au cas par cas 
 - {../../notes/20240807T180139--thrombopénie-induite-par-lhéparine__hémostase.org::#h:a7933119-8539-4f0b-9363-f00921028762}[Thrombopénie induite par l'héparine::Dépistage] 
-
 
 * Danaparoïde sodique (Orgaran) (SC ou IV)
 
@@ -98,7 +78,6 @@ pentasaccharide : fondaparinux (Arixtra) (SC)
 - Activité surtout anti-Xa 
 - Élimination rénale 
 - Contre-indication dose curative : IRC 
-
 
 * Réversion
 
