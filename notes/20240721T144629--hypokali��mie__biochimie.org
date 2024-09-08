@@ -1,9 +1,0 @@
-#+title:      Hypokaliémie
-#+date:       [2024-07-21 dim. 14:46]
-#+filetags:   :biochimie:
-#+identifier: 20240721T144629
-
-- Norme 3.5+4.5mmol/L
-- Ralentissement transit, iléus, douleurs abdo, paralysie flasque, polyurie
-- ECG
-- Bio: alcalose métabolique
