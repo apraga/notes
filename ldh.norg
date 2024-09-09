@@ -4,11 +4,14 @@ description:
 authors: alex
 categories: biochimie 
 created: 2024-09-07T20:13:29+0100
-updated: 2024-09-07T20:13:29+0100
+updated: 2024-09-09T22:11:21+0100
 version: 1.1.1
 @end
 
-- Ubiquitaire, indispensable pour le métabolisme des sucres 
+Marqueur lyse cellulaire (non spécifique d'un tissu car 5 isonezyme)
+Ubiquitaire, indispensable pour le métabolisme des sucres
+Interférence : hémolyse > 10mg/dL, EDTA, fluorure, Na, oxalate, potassium
+Normes 100-200UI/L 
 
 * Variations
 
