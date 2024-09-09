@@ -7,7 +7,7 @@ biochimie
 néphro
 ] 
 created: 2024-09-07T20:13:35+0100
-updated: 2024-09-07T20:13:35+0100
+updated: 2024-09-09T23:38:57+0100
 version: 1.1.1
 @end
 
@@ -24,7 +24,7 @@ Une approximation de la pression osomotique est donnée par la natrémie (90% = 
 
 * Sodium ~ volume extracellulaire
 
-{:déshydratation-extracellulaire__biochimie_néphro.norg:}[Déshydratation extracellulaire] 
+{:déshydratation extracellulaire:}[Déshydratation extracellulaire] 
 
 ** Hyperhydratation extracellulaire = excès de sodium
 

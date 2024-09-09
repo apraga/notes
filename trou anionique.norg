@@ -4,9 +4,23 @@ description:
 authors: alex
 categories: biochimie 
 created: 2024-09-07T20:13:37+0100
-updated: 2024-09-07T20:13:37+0100
+updated: 2024-09-10T00:04:06+0100
 version: 1.1.1
 @end
 
 Na+ + K+ - Cl- - HCO3- = 16mmol/L +/- 4 
 
+* Augmentation et diminution
+Le trou anionique permet d'orienter les étiologies d'acidose
+métabolique. La perte en bicarbonates est compensée soit par
+
+- l'augmentation du chlore (TA normal)
+  - accumulation aigüe d'acide : intoxication (chlorure d'ammonium, HCL)
+  - perte de bicarbonate : diarrhées, anastomose urétéro-intestinales,
+    acidose tubulaire proximale
+  - diminution de l'excrétion rénale d'acide : acidose tubulaire distale
+- l'augmentation d'un autre anion indosé (protéines plasmatiques,
+  phosphase, sulfates...) donc TA augmenté > 20mmol/L)
+  - accumulation aigüe d'acide : acidose lactique, acidocétose,
+    intoxication au méthonal, éthylène glycole
+  - diminution de l'excrétion rénale d'acide : insuffisance rénale
