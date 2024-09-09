@@ -4,7 +4,7 @@ description:
 authors: alex
 categories: biochimie 
 created: 2024-09-07T20:13:23+0100
-updated: 2024-09-07T20:13:23+0100
+updated: 2024-09-09T20:57:10+0100
 version: 1.1.1
 @end
 
@@ -33,8 +33,8 @@ Pré-anal: attention pas de garrot, centrifugation, mesure rapide
 ** Calcium total (moins fiable)
 
 calcémie totale ~ ionisé si pH et protéines normales
-Si hypoprotidémie, correction de la calcémie en fonction protidémie/albuminémie
-Ca,mesure, - 0.025(alb-40) 
+*Si hypoprotidémie, correction de la calcémie en fonction protidémie/albuminémie*
+   Ca_mesuré - (alb-40)/4/40
 
 Sérum/plasma hépariné
 Non impacté par variation aigüe pH mais diminué si acidose chronique (et augmenét si alcalose) 
@@ -91,7 +91,7 @@ Réabsorption
 
 - Surtout tube contourné proximal ("suit" le sodium) mais également branche ascendante henlé (idem) et tube contourné distal (idem) 
 
-** {:pth__biochimie.norg:}[PTH] hypercalcémiante
+** {:pth:}[PTH] hypercalcémiante
 
 ** PTHR1
 
@@ -104,9 +104,9 @@ Réabsorption
 
 ** {:vitamine-d__biochimie.norg:}[Vitamine D] hypercalcémiant
 
-* {:hypocalcémie__biochimie.norg:}[Hypocalcémie]
+* {:hypocalcémie:}[Hypocalcémie]
 
-* {:hypercalcémie__biochimie.norg:}[Hypercalcémie]
+* {:hypercalcémie:}[Hypercalcémie]
 
 * Cas clinique: voir cours UNESS
 

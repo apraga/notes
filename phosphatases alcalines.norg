@@ -1,0 +1,14 @@
+@document.meta
+title: phosphatases alcalines
+description: 
+authors: alex
+categories:  biochimie
+created: 2024-09-09T21:01:58+0100
+updated: 2024-09-09T21:02:23+0100
+version: 1.1.1
+@end
+
+marqueur {:cholestase:} hépatique (défaut écoulement biliaire) mais non spécifique
+isoenzyme : foie, os, intestin, placenta
+interférence : annuler si lactescence > 400mg/dL
+norme 45-120 UI/L

@@ -4,22 +4,17 @@ description:
 authors: alex
 categories: hémato 
 created: 2024-09-07T21:16:55+0100
-updated: 2024-09-07T21:16:55+0100
+updated: 2024-09-09T21:15:16+0100
 version: 1.1.1
 @end
 
-Formule 
+* Formule 
 
-+hline2
-#table.head.columns 1-5 0
-: A1 : Leucocytes
-: B1 : 4.4-11 G/L
-: A2 : PNN
-: B2 : 1.5-7.7 G/L
-: A3 : Lymphocytes
-: B3 : 1-4 G/L
-: A4 : PNE
-: B4 : < 0.5 G/L
-: A5 : Monocytes
-: B5 : 0.2-0.8 G/L
-
+@table
+  En g/L
+  | Leucocytes  | 4.4-11  |
+  | PNN         | 1.5-7.7 |
+  | Lymphocytes | 1  -4   |
+  | PNE         | < 0.5   |
+  | Monocytes   | 0.2-0.8 |
+  @end
