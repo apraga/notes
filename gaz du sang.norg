@@ -4,28 +4,23 @@ description:
 authors: alex
 categories: biochimie 
 created: 2024-09-07T20:13:35+0100
-updated: 2024-09-07T20:13:35+0100
+updated: 2024-09-10T00:05:03+0100
 version: 1.1.1
 @end
 
 Adulte 
 
-: B1 : Artériel
-: C1 : Veineux
-+hline2
-#table.head.columns 2-5 0
-: A2 : pH (mmHg)
-: B2 : 7.38-7.42
-: C2 : 7.32-7.38
-: A3 : pO2 (mmHg)
-: B3 : 70-100
-: A4 : CO2 (mmHg)
-: B4 : 35-46
-: A5 : bicarbonates
-: B5 : 23-27
+@table
+|              |  Artériel |   Veineux |
+|--------------+-----------+-----------|
+| pH (mmHg)    | 7.38-7.42 | 7.32-7.38 |
+| pO2 (mmHg)   |    70-100 |           |
+| CO2 (mmHg)   |     35-46 |           |
+| bicarbonates |     23-27 |           |
+@end
 
 Pour l'interprétation, formule (Henderson-Hasselbach)
-pH = 6.1 + log,10, [HCO3-]/[0.0307 pCO2] 
+$pH = 6.1 + log_10 [HCO4-]/[0.0307 pCO2] $
 
 * pH
 
@@ -55,7 +50,7 @@ alvéoles. Il sera ensuite expiré.
 
 * Dyshémoglobine
 
-Hémogolbine : 4 hèmes dans les α et β-globine. 1 hème contient des atomes de fer 
+Hémoglobine : 4 hèmes dans les α et β-globine. 1 hème contient des atomes de fer 
 
 Réaction d'oxydoréduction :
 désoxyhémoglobine + O2 -> oxyhémoglobine (dans les poumons, sino réaction inversie. c.à-d de réduction dans les vaisseux)
