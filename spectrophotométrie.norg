@@ -4,7 +4,7 @@ description:
 authors: alex
 categories: biochimie 
 created: 2024-09-07T20:13:14+0100
-updated: 2024-09-07T20:13:14+0100
+updated: 2024-09-09T21:20:03+0100
 version: 1.1.1
 @end
 
@@ -34,51 +34,51 @@ Vérifié si l'automate rende un valeur = intensité d'interférence
 
 * Dosage colorimétrique en point final
 
-- {id:6a36feab-5f08-4d1d-9e3c-ae09d589daf2}[Albumine] 
-- {id:02953d37-3891-43b1-9e07-cb4681e5e44c}[bilirubine] 
-- {id:e618c88d-3a3a-483a-bb75-30dde2738c01}[Calcium] 
-- {id:97cfbabe-78e8-49e8-8b00-01e47a6f2da9}[Créatinine] 
-- {id:1aa04c29-ad9a-48e0-9392-73a8a5deee65}[Fer] 
-- {id:bec091db-6da1-46ad-8c31-c55e551fbc36}[Magnésium] 
-- {id:bab652dd-fa28-4dba-941d-7e4b32902525}[Phosphore inorganique] 
-- {id:5ca3120e-340e-4228-9d79-8111105208f7}[Protéines sériques totales] 
-- {id:6b2862c8-b11d-44d7-b5a4-abd1272b6e86}[Protéines urinaires/LCR] 
+- {:albumine:} 
+- {:bilirubine:} 
+- {:calcium:} 
+- {:créatinine:} 
+- {:fer:} 
+- {:magnésium:} 
+- {:phosphore inorganique:} 
+- {:protéines sériques totales:} 
+- {:PRotéines urinaires/LCR:} 
 
 * Dosage enzymatique en cinétique
 
 ** Absorbance propre
 
-- {id:0cd6155a-54ba-4718-a639-67944c6b1c47}[Acide urique] 
+- {:Acide urique:} 
 
 ** Clivé par l'enzyme à doser libérant un colorant
 
-- {id:257d79ff-411a-4ba7-83ed-459856b5d7fa}[Phosphatase alcalines] 
-- {id:08f57dfb-caed-4cba-ac90-f0bcffcdb7b4}[γGT (gammaglutamyl-transférase)] 
-- {id:c691319f-47cc-4586-86c6-121dae677abf}[Lipase] 
-- {id:d70072d4-776f-4b80-8df7-0d2526ca269d}[α-Amylase] 
+- {:Phosphatase alcalines:} 
+- {:γgt:} 
+- {:Lipase:} 
+- {:α-Amylase:} 
 
 ** Substrat réagissant avec une enzyme utilisant le cofacteur NADH
 
 Mesure 340nm 
 
-- {id:5e7c2de5-958a-4d37-8796-4f18d45df53b}[Urée] 
-- {id:977fa2d7-2989-4f7a-afa4-6be072722c41}[Ammoniac] 
-- {id:90cbcd7e-9606-47b8-ad0b-2c4d38996b1b}[Transaminases (ASAT, ALAT)] 
-- {id:0286b98f-eb1f-41f0-80c5-ecfe06e243da}[Créatine kinase] 
-- {id:d3c7d1e8-2219-4be5-86e1-34c6dbc77a70}[LDH] 
-- {id:48f25a79-0610-4804-b404-8d3aefdb918e}[Glucose] 
-- {id:714ee729-bccd-4465-88df-04b8824f5098}[Acide lactique] 
-- {id:b29858f9-80d4-409e-b006-ca8c80c3e849}[Bicarbonates] 
-- {id:4e543bc3-7e7e-4f29-a0f2-898f4539b8e5}[Éthanol] 
-- {id:b86a1b39-27b0-43e3-8630-7840234e9c71}[Acides biliaires] 
+- {:Urée:} 
+- {:Ammoniac:} 
+- {:Transaminases (ASAT, ALAT):} 
+- {:Créatine kinase:} 
+- {:LDH:} 
+- {:Glucose:} 
+- {:Acide lactique:} 
+- {:Bicarbonates:} 
+- {:Éthanol:} 
+- {:Acides biliaires:} 
 
 ** Réaction de Trinder
 
 Réaction aboutissant à formation H2O2 qui va catalyse la synthèse d'un olorant
 Interférence: ce qui dégrade le H2O2 (acide ascorbique (vitamine C), dopamine 
 
-- {id:e5519b58-b8fd-4ae1-9585-aa5223d72431}[Cholestérol HDL] 
-- {id:b2e9a998-da30-4b85-8f7d-6af80ce3c059}[Cholestérol total] 
-- {id:3093198d-a9d2-4464-a453-9b6bffb03841}[Cholestérole LDL] 
-- {id:f7fa1113-bc2f-4ca2-b99f-eb4a7f4ed346}[Triglycérides] 
+- {:Cholestérol HDL:} 
+- {:Cholestérol total:} 
+- {:Cholestérole LDL:} 
+- {:Triglycérides:} 
 

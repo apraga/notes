@@ -5,9 +5,9 @@ authors: alex
 ategories: [
 biochimie
 hepato
-]/
+]
 created: 2024-09-07T20:13:22+0100
-updated: 2024-09-07T20:13:22+0100
+updated: 2024-09-09T21:07:28+0100
 version: 1.1.1
 @end
 
@@ -15,8 +15,8 @@ Obstruction voies biliaire intra et extrahépatique
 
 - bilirubine totale et conjuguée augmenté++ 
 - Acides bilaire (sang, urines) augmenté (utile pour cholestase gravidique) 
-- {:phosphatase_alcalines__.norg:}[Phosphatase alcaline] augmenté++ 
-- {:γgt_gammaglutamyl_transferase__.norg:}[γGT] augmenté 
+- {:phosphatase alcalines:} augmenté++ 
+- {:γgt:}[γGT] augmenté 
 - 5’ nuclétidase augmenté (plus spécifique grossesse, enfance, maladie osseuse) 
 - stéatorrhée 
 
@@ -34,7 +34,7 @@ Obstruction voies biliaire intra et extrahépatique
 * Physiopathologie
 
 - sang : principalement bilirubine conjuguée 
-- donc diminution dans l'intestin (voir {:bilirubine__biochimie_spectrophotométrie.org::#h:0580bfa7-cfed-46c3-86ed-bf3589c87896}[Bilirubine::Physiologie]) donc dépigmentation des selles (diminution de stercobilinogène) 
+  - donc diminution dans l'intestin (voir {:bilirubine:* Physiologie}) donc dépigmentation des selles (diminution de stercobilinogène) 
 - et élimination dans les urines de la bilirubine conjuguée -> urines foncées 
 
 Source: La lettre de l’hépato-gastroentérologue 2014 (depuis cours UNESS bio)

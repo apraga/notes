@@ -4,44 +4,23 @@ description:
 authors: alex
 categories: biochimie 
 created: 2024-09-07T20:13:17+0100
-updated: 2024-09-07T20:13:17+0100
+updated: 2024-09-09T21:23:33+0100
 version: 1.1.1
 @end
 
 * Anticorps
 
 Structure en Y avec les extrémités des branches = chaînes lourdes, le reste = chaîne légère 
-
-: A1 : ,Classe,
-: B1 : G
-: C1 : A
-: D1 : M
-: E1 : E
-: F1 : D
-+hline2
-#table.head.columns 2-6 0
-: A2 : Localisation
-: B2 : Sang
-: C2 : Sécrétion
-: D2 : Lymphocytes B
-: E2 : Basophiles
-: F2 : Lymphocytes B
-: C3 : muqueurs
-: E3 : Mastocytes
-: A4 : Rôle
-: B4 : Neutralise
-: C4 : Agglutination
-: D4 : Agglu
-: E4 : Allergie
-: F4 : Active LB
-: B5 : Bactéries , virus
-: C5 : Neutralisation
-: D5 : Voie classique
-: E5 : Neutralisation
-: B6 : toxine
-: C6 : Bactiries, virus
-: D6 : complément
-: E6 : parasite
+@table
+| _Classe      | G                 | A                | M              | E              | D             |
+|--------------+-------------------+------------------+----------------+----------------+---------------|
+| Localisation | Sang              | Sécrétion        | Lymphocytes B  | Basophiles     | Lymphocytes B |
+|              |                   | muqueurs         |                | Mastocytes     |               |
+|--------------+-------------------+------------------+----------------+----------------+---------------|
+| Rôle         | Neutralise        | Agglutination    | Agglu          | Allergie       | Active LB     |
+|              | Bactéries , virus | Neutralisation   | Voie classique | Neutralisation |               |
+|              | toxine            | Bactiries, virus | complément     | parasite       |               |
+  @end
 
 IgG= 75% serum, IgA=15%, IgM = 10%
 Zone vavariation: Isotopie (domaine constant), allotypie (jonction), idiotopie (domaines variables) 
