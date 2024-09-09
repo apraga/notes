@@ -4,11 +4,11 @@ description:
 authors: alex
 categories: hémato 
 created: 2024-09-07T21:16:48+0100
-updated: 2024-09-08T15:52:26+0100
+updated: 2024-09-09T22:10:05+0100
 version: 1.1.1
 @end
-
-* Microcytaire
+* Non régénérative
+  ** Microcytaire
   - {:carence martiale:} : atteinte du fer
   - {:anémie inflammatoire:} : idem
   - {:thalassémie:} : atteinte de la globine
@@ -30,11 +30,23 @@ Pour différencier avec anémie inflammatoire: ferritine et CRP
 | CRP          | +             | N          | +      |
 | Hepcidine    | +             | -          | N ou - |
 @end
-
-* Macrocytaire
-** Arégénérative
+** Normocytaire
+  - inflammation, IR, hépatopathie
+  - hémato
+  --  érythrobastopénie
+  -- aplasie médullaire
+  -- {:$/leucémies aigües:}
+  -- {:$/myélome:}
+  -- {:$/leucémie lymphoïde chronique:} ou {:$/lymphomes:}
+  -- {:$/syndromes myélodysplasiques:}
+** Macrocytaire
    - {:anémie par carence en B9 et B12:}
    - {:$/syndromes myélodysplasiques:}
+   - {:$/hypothyroïdies:}, IR, cirrhouse, alcool
+
+* Régénérative
+  - régénération post-chimio
+  - {:$/hémolyse:}
 
 * Hyperferritinémi
 
