@@ -8,7 +8,7 @@ updated: 2024-09-07T20:13:24+0100
 version: 1.1.1
 @end
 
-* {:spectrométrie-de-masse-principes__biochimie.norg:}[Principes]
+* {:spectrométrie-de-masse-principes.norg:}[Principes]
 
 * Avantages
 
@@ -31,10 +31,10 @@ version: 1.1.1
 
 ** Bichimie
 
-- "débrouillage" métabo ( acide animénes, {:acylcarnitines__biochimie.norg:}[Acylcarnitines] ..) 
+- "débrouillage" métabo ( acide animénes, {:acylcarnitines.norg:}[Acylcarnitines] ..) 
 - vitamine D et dérivés 
 - stéroïdes 
-- 7-déhydrocholestérol: {:syndrome-de-smith-lemli-opitz__génétique.norg:}[Syndrome de Smith-Lemli-Opitz] 
+- 7-déhydrocholestérol: {:syndrome-de-smith-lemli-opitz.norg:}[Syndrome de Smith-Lemli-Opitz] 
 - catécholamine, métanéphrines 
 - vitamine 
 

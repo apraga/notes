@@ -22,7 +22,7 @@ Homéostasise hydrosodée + pression artérielle
 - ECA = enzyme de conversion de l'angiotensine 
 - ADH = hormone antidiurétique 
 
-Voir régulation de {:rénine__biochimie_endoc.norg:}[Rénine] 
+Voir régulation de {:rénine.norg:}[Rénine] 
 
 *** 2. Clivage angiotensine I et II
 
@@ -31,7 +31,7 @@ Voir régulation de {:rénine__biochimie_endoc.norg:}[Rénine]
 --- vasoconstriction 
 ---- cellules musculaires lisses 
 ---- rénal (artérioles afférentes et efferentes) 
---- production {:aldostérone__biochimie.norg:}[aldostérone] 
+--- production {:aldostérone.norg:}[aldostérone] 
 --- réabsorption sodium (tubule proximal + distal) 
 --- augmentation soif et sécrétion ADH (antidiurétique) 
 --- stimulation système sympathique -> noradrénaline 
@@ -39,7 +39,7 @@ Voir régulation de {:rénine__biochimie_endoc.norg:}[Rénine]
 --- sécrétion rénine 
 --- synthèse hépatique angiotensinogène 
 
-*** 3. Synthèse d'{:aldostérone__biochimie.norg:}[aldostérone]
+*** 3. Synthèse d'{:aldostérone.norg:}[aldostérone]
 
 ** Plus complexe en pratique
 
@@ -50,7 +50,7 @@ Voir régulation de {:rénine__biochimie_endoc.norg:}[Rénine]
 
 * Exploration biologique
 
-Indication : {:hyperaldostéronisme-primaire__endoc.norg:}[Hyperaldostéronisme primaire] 
+Indication : {:hyperaldostéronisme-primaire.norg:}[Hyperaldostéronisme primaire] 
 
 ** Variations
 

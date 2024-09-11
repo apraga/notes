@@ -64,7 +64,7 @@ Patho: sursaturation du cholestérol -> cristaux -> calcul
 
 * <TODO> Marqueurs
 
-** {:cytolyse__biochimie_hémato.norg:}[Cytolyse]
+** {:cytolyse.norg:}[Cytolyse]
 
 ** Synthèse
 
@@ -101,8 +101,8 @@ Marqueurs
 - bilirubine : augmentation totale + conjuguée (attention, ictère
 retardé : conjonctive si > 50µmol/L) 
 - enzyme : 
--- {:phosphatase_alcalines__.norg:}[Phosphatase alcaline] 
--- {:γgt_gammaglutamyl_transferase__.norg:}[γGT (gammaglutamyl-transférase)] 
+-- {:phosphatase_alcalines.norg:}[Phosphatase alcaline] 
+-- {:γgt_gammaglutamyl_transferase.norg:}[γGT (gammaglutamyl-transférase)] 
 
 Coagulation: Diminution du TP avec facteur V normal 
 

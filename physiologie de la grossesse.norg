@@ -57,7 +57,7 @@ augmentation (triglycérides, cholestérol) pour les besoins du fœtus + accumul
 
 * Cardiaque
 
-- diminution {:anp__biochimie_cardio.norg:}[ANP],{:bnp__biochimie_cardio.org}[BNP] 
+- diminution {:anp.norg:}[ANP],{:bnp__biochimie_cardio.org}[BNP] 
 - augmentation D-dimères 
 - débit cardiaque +40%, vasodilatation artérielle 
 

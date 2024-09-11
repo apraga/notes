@@ -46,26 +46,26 @@ Classification
 : B10 : > 15G/L
 : C10 : < 15G/L
 : A11 : Origines
-: B11 : {:streptococcus-pneumoniae__bactério.norg:}[Streptococcus pneumoniae]
+: B11 : {:streptococcus-pneumoniae.norg:}[Streptococcus pneumoniae]
 : C11 : M. pneumoniae
-: B12 : {:hæmophilus-influenza__bactérie_bactério.norg:}[Hæmophilus influenza]
+: B12 : {:hæmophilus-influenza.norg:}[Hæmophilus influenza]
 : C12 : C. psittaci,
-: B13 : {:legionella-pneumophiliea__bactérie_bactério.norg:}[Légionelle]
+: B13 : {:legionella-pneumophiliea.norg:}[Légionelle]
 : C13 : C. burnetti
 : B14 : autres bactéries
-: C14 : {:legionella-pneumophiliea__bactérie_bactério.norg:}[Légionelle]
+: C14 : {:legionella-pneumophiliea.norg:}[Légionelle]
 : C15 : Virus
 
 Fréquent, de gravité variable
-Les plus graves :{:streptococcus-pneumoniae__bactério.norg:}[Streptococcus pneumoniae],{:hæmophilus-influenza__bactérie_bactério.org}[Hæmophilus influenza] ({:staphylocoque-aureus__bactério.org}[Staphylocoque aureus] ) 
+Les plus graves :{:streptococcus-pneumoniae.norg:}[Streptococcus pneumoniae],{:hæmophilus-influenza__bactérie_bactério.org}[Hæmophilus influenza] ({:staphylocoque-aureus__bactério.org}[Staphylocoque aureus] ) 
 
 * Nosocomiales
 
 Surtout sous ventilation mécanique
 Étiologies 
 
-- < 5 j: {:staphylocoque-aureus__bactério.norg:}[Staphylocoque aureus] ,{:hæmophilus-influenza__bactérie_bactério.org}[Hæmophilus influenza] 
-- > 5j : bacilles à gram négatif ({:pseudomonas-aeruginosa__bactérie_bactério.norg:}[Pseudomonas aeruginosa]) 
+- < 5 j: {:staphylocoque-aureus.norg:}[Staphylocoque aureus] ,{:hæmophilus-influenza__bactérie_bactério.org}[Hæmophilus influenza] 
+- > 5j : bacilles à gram négatif ({:pseudomonas-aeruginosa.norg:}[Pseudomonas aeruginosa]) 
 
 * Traitement
 

@@ -12,10 +12,10 @@ version: 1.1.1
 
 ** Obligatoire
 
-- {:treponema-pallidum-syphilis__bactério_ist.norg:}[Syphilis] (TPHA-VRDL) 
+- {:treponema-pallidum-syphilis.norg:}[Syphilis] (TPHA-VRDL) 
 - rubéole (sérologie) 
 - toxoplasmose (si immunité non connue) 
-- {:recherche-dagglutinines-irrégulières__hémato.norg:}[Recherche d'agglutinines irrégulières] 
+- {:recherche-dagglutinines-irrégulières.norg:}[Recherche d'agglutinines irrégulières] 
 - +/- `groupe sanguin si absence de 2 détermination 
 
 ** À proposer
@@ -25,10 +25,10 @@ version: 1.1.1
 
 *** Selon les antécédents
 
-- glycémie à jeun pour {:diabète-gestationnel__endoc.norg:}[Diabète gestationnel] 
+- glycémie à jeun pour {:diabète-gestationnel.norg:}[Diabète gestationnel] 
 - NFS si anémie 
 - ECBU si IU à répétition 
-- électrophorèse ({:drépanocytose__hémato.norg:}[Drépanocytose]…) 
+- électrophorèse ({:drépanocytose.norg:}[Drépanocytose]…) 
 - TSH 
 
 * Pendant la grossesse :

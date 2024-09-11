@@ -27,14 +27,14 @@ version: 1.1.1
 - Inflammation 
 - Cancer/sd lymphoprolifératif 
 - allergies, médicaments 
-- {:transthyrétine-pré-albumine__biochimie_néphélémétrie_nutrition.norg:}[Transthyrétine (pré-albumine)] 
+- {:transthyrétine-pré-albumine.norg:}[Transthyrétine (pré-albumine)] 
 
 * Persistante
 
 ~ Frottis sanguin 
 ~~ dysplasies : SF3B1 -> BOM: anémie sidéroblastique, SMD 
 ~~ sinon BCR-ABL 
-~~~ oui : {:leucémie-myéloïde-chronique__hémato.norg:}[Leucémie myéloïde chronique] 
-~~~ sinon : JAK2, CALR, MPL -> {:thrombocytémie-essentielle__hémato.norg:}[Thrombocytémie essentielle] {:polyglobuline-de-vaquez__hémato.org}[Polyglobuline de Vaquez],{:myélofibrose-primitive__hémato.org}[Myélofibrose primitive] 
+~~~ oui : {:leucémie-myéloïde-chronique.norg:}[Leucémie myéloïde chronique] 
+~~~ sinon : JAK2, CALR, MPL -> {:thrombocytémie-essentielle.norg:}[Thrombocytémie essentielle] {:polyglobuline-de-vaquez__hémato.org}[Polyglobuline de Vaquez],{:myélofibrose-primitive__hémato.org}[Myélofibrose primitive] 
 
-* {:thrombocytémie-essentielle__hémato.norg:}[Thrombocytémie essentielle]
+* {:thrombocytémie-essentielle.norg:}[Thrombocytémie essentielle]

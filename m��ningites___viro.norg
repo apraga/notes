@@ -8,14 +8,14 @@ updated: 2024-09-07T21:17:03+0100
 version: 1.1.1
 @end
 
-Voir {:encéphalite__bactério_viro.norg:}[Encéphalite],{:myélite__viro.org}[Myélite] 
+Voir {:encéphalite.norg:}[Encéphalite],{:myélite__viro.org}[Myélite] 
 
 * Étiologies
 
-- {:méningites-virales__viro.norg:}[virales] = 90% 
--- {:entérovirus__viro.norg:}[Entérovirus] 70-90%, bénigne, arrêt des traitements antibactériens 
+- {:méningites-virales.norg:}[virales] = 90% 
+-- {:entérovirus.norg:}[Entérovirus] 70-90%, bénigne, arrêt des traitements antibactériens 
 -- sans encéphalite = habituellement bénin, guérit spontanément 
-- {:méningites-bactériennes__bactério.norg:}[bactériennes] : diagnostic et traitement *urgent* 
+- {:méningites-bactériennes.norg:}[bactériennes] : diagnostic et traitement *urgent* 
 -- pronostic vital engagé à court term +/- séquelle neuro 
 -- 1300cas/an, selon âge/terrain 
 
@@ -67,7 +67,7 @@ Voir {:encéphalite__bactério_viro.norg:}[Encéphalite],{:myélite__viro.org}[M
 #table.head.columns 1-8 0
 : C1 : Bactéries
 : D1 : Virus
-: A2 : {:analyse-du-lcr-en-biochimie__biochimie.norg:}[Biochimie]
+: A2 : {:analyse-du-lcr-en-biochimie.norg:}[Biochimie]
 : B2 : CRP, PCT
 : C2 : trés élevée
 : D2 : N ou peu élevée
@@ -89,10 +89,10 @@ Voir {:encéphalite__bactério_viro.norg:}[Encéphalite],{:myélite__viro.org}[M
 
 ** Gram
 
-- Cocci Gram+ diplocoque/chainette : {:streptococcus-pneumoniae__bactério.norg:}[Streptococcus pneumoniae] Strepto agalactiæ (nouveau-né) 
-- Cocce Gram- Diplocoque :{:neisseria-meningitidis__bactérie_bactério.norg:}[Neisseria meningitidis] 
-- Bacille Gram- : {:hæmophilus-influenza__bactérie_bactério.norg:}[Hæmophilus influenza], {:escherichia-coli__bactérie_bactério.org}[Escherichia coli] 
-- Bacille Gram+ : {:listeria-monocytogenes__bactérie_bactério.norg:}[Listeria monocytogenes] 
+- Cocci Gram+ diplocoque/chainette : {:streptococcus-pneumoniae.norg:}[Streptococcus pneumoniae] Strepto agalactiæ (nouveau-né) 
+- Cocce Gram- Diplocoque :{:neisseria-meningitidis.norg:}[Neisseria meningitidis] 
+- Bacille Gram- : {:hæmophilus-influenza.norg:}[Hæmophilus influenza], {:escherichia-coli__bactérie_bactério.org}[Escherichia coli] 
+- Bacille Gram+ : {:listeria-monocytogenes.norg:}[Listeria monocytogenes] 
 - 
 
 ** Autres

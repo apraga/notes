@@ -10,10 +10,10 @@ updated: 2024-09-07T21:16:58+0100
 version: 1.1.1
 @end
 
-- {:chlamydia-trachomatis__bactérie_bactério_ist.norg:}[Chlamydia trachomatis] 
-- {:hépatite-b__viro.norg:}[Hépatite B] 
-- {:mycoplasmes__bactérie_bactério_ist.norg:}[Mycoplasmes] 
-- {:neisseria-gonorrhoeae__bactérie_bactério_ist.norg:}[Neisseria gonorrhoeae] 
-- {:treponema-pallidum-syphilis__bactério_ist.norg:}[Syphilis] 
-- {:vih__viro.norg:}[VIH] 
+- {:chlamydia-trachomatis.norg:}[Chlamydia trachomatis] 
+- {:hépatite-b.norg:}[Hépatite B] 
+- {:mycoplasmes.norg:}[Mycoplasmes] 
+- {:neisseria-gonorrhoeae.norg:}[Neisseria gonorrhoeae] 
+- {:treponema-pallidum-syphilis.norg:}[Syphilis] 
+- {:vih.norg:}[VIH] 
 

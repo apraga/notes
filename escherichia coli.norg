@@ -18,13 +18,13 @@ version: 1.1.1
 
 - Urine : rose sur milieu chromogène (β-glucoronidase positive) 
 - Sensibilité naturelles aux antibiotiques actif sur BGN 
-- MALDI-TOF: attention à la confusion avec {:shigella-spp__bactérie_bactério.norg:}[Shigella spp] (sérotypage, biomol) 
+- MALDI-TOF: attention à la confusion avec {:shigella-spp.norg:}[Shigella spp] (sérotypage, biomol) 
 
 À compléter si besoin par sérotypag, gènes codant pour des facteurs de virulence 
 
 * Épidémio
 
-- {:diarrhées__bactério_viro.norg:}[Diarrhées] ,{:infections-urinaires__bactério.org}[Infections urinaires] 
+- {:diarrhées.norg:}[Diarrhées] ,{:infections-urinaires__bactério.org}[Infections urinaires] 
 - Communautaire mais principale bactérie associée aux soins 
 
 * Résistance

@@ -8,13 +8,13 @@ updated: 2024-09-07T21:17:01+0100
 version: 1.1.1
 @end
 
-- {:angines__bactério.norg:}[Angines] 
-- {:diarrhées__bactério_viro.norg:}[Diarrhées] 
-- {:infections-cutanées__bactério.norg:}[Infections cutanées] 
-- {:legionella-pneumophiliea__bactérie_bactério.norg:}[Légionelle] 
-- {:infections-sexuellement-transmissibles__bactério_ist.norg:}[Infections sexuellement transmissibles] 
-- {:gastro-entérites__bactério_viro.norg:}[Gastro-entérites] 
-- {:infections-urinaires__bactério.norg:}[Infections urinaires] 
-- {:endocardites-infectieuses__bactério.norg:}[Endocardites infectieuses] 
-- {:méningites__bactério_viro.norg:}[Méningites] 
+- {:angines.norg:}[Angines] 
+- {:diarrhées.norg:}[Diarrhées] 
+- {:infections-cutanées.norg:}[Infections cutanées] 
+- {:legionella-pneumophiliea.norg:}[Légionelle] 
+- {:infections-sexuellement-transmissibles.norg:}[Infections sexuellement transmissibles] 
+- {:gastro-entérites.norg:}[Gastro-entérites] 
+- {:infections-urinaires.norg:}[Infections urinaires] 
+- {:endocardites-infectieuses.norg:}[Endocardites infectieuses] 
+- {:méningites.norg:}[Méningites] 
 

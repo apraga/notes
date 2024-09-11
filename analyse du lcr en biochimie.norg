@@ -16,7 +16,7 @@ version: 1.1.1
 - intégrité de la barrière hémato-encéphalique évaluée par le calcu du quotient albumine 
 - synthèse intrathécale d'IgG : augmenation index IgG, profil oligoclonale à iso-électrofocalisation 
 
-* {:physiologie-du-lcr__biochimie.norg:}[Physiologie du LCR]
+* {:physiologie-du-lcr.norg:}[Physiologie du LCR]
 
 * Aspect macroscopique++
 
@@ -62,13 +62,13 @@ version: 1.1.1
 
 ** Diminuée
 
-- glycorachie/glycémie diminué : {:méningites-bactériennes__bactério.norg:}[méningites bactériennes], fongique, parasitaire 
-- augmenté : {:méningites-virales__viro.norg:}[méningites virales] , secondaire hypoglycémie 
+- glycorachie/glycémie diminué : {:méningites-bactériennes.norg:}[méningites bactériennes], fongique, parasitaire 
+- augmenté : {:méningites-virales.norg:}[méningites virales] , secondaire hypoglycémie 
 
 * Lacticorachie
 
 - 1.1-2:8mmol/L 
-- Orientation diagnostique {:méningites__bactério_viro.norg:}[méningites] 
+- Orientation diagnostique {:méningites.norg:}[méningites] 
 -- > 3.9 mmol/L : bactérienne 
 -- 2.8 - 2.9: tuberculeuse ou fongique 
 -- < 2.8 : viral 
@@ -76,7 +76,7 @@ version: 1.1.1
 
 * Mise en évidence d'une synthèse intra-thécale d'immunoglobuline
 
-* {:électrophorèse-des-protéines-du-lcr__biochimie.norg:}[Électrophorèse des protéines du LCR]
+* {:électrophorèse-des-protéines-du-lcr.norg:}[Électrophorèse des protéines du LCR]
 
 * Rapport d'albumine, index des IgG
 
@@ -84,7 +84,7 @@ version: 1.1.1
 
 Intégrité de la barrière hémato-encéphalique évaluée par le quotient d'albumine 
 
-- totalité de l'{:albumine__biochimie_néphélémétrie_spectrophotométrie.norg:}[albumine] vient du sang donc un quotient augmenté ~ diminution du début Orientation 
+- totalité de l'{:albumine.norg:}[albumine] vient du sang donc un quotient augmenté ~ diminution du début Orientation 
 -- inflammation SNC : normal/légèrement augmenté 
 -- méningites purulentes, encéphalites : augmenté++ 
 
@@ -105,4 +105,4 @@ k
 - attention: ne recherche pas IgA ou IgM 
 - normal < 0.6 
 
-* {:iso-électrofocalisation-des-igg-du-lcr__biochimie.norg:}[Iso-électrofocalisation des IgG du LCR]
+* {:iso-électrofocalisation-des-igg-du-lcr.norg:}[Iso-électrofocalisation des IgG du LCR]

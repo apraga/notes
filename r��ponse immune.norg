@@ -12,12 +12,12 @@ version: 1.1.1
 
 - système du complément 
 - cellules d'origine myéloïde :
--{:macrophages__hémato_immuno.norg:}[ Macrophages] 
+-{:macrophages.norg:}[ Macrophages] 
 -- neutrophiles 
--- {:cellules-dendritiques__hémato_immuno.norg:}[Cellules dendritiques] 
--- {:neutrophiles__hémato_immuno.norg:}[Neutrophiles] {:éosinophiles__hémato.org}[Éosinophiles]{:basophiles-et-mastocytes__hémato_immuno.org}[Basophiles et mastocytes] 
+-- {:cellules-dendritiques.norg:}[Cellules dendritiques] 
+-- {:neutrophiles.norg:}[Neutrophiles] {:éosinophiles__hémato.org}[Éosinophiles]{:basophiles-et-mastocytes__hémato_immuno.org}[Basophiles et mastocytes] 
 -- cellules lymphoïdes : 
---- {:cellules-nk__hémato_immuno.norg:}[Cellules NK] 
+--- {:cellules-nk.norg:}[Cellules NK] 
 --- T non conventionnels 
 
 * Adaptative
@@ -65,7 +65,7 @@ Ag polysaccharidique -> lymphocytes B de la zone marginale
 - mœlle : majorité de B immatures 
 - sang : majorité de B naïfs, absence de précurseurs B et B immatures 
 
-** {:immunoglobuline__hémato_immuno.norg:}[Immunoglobuline]
+** {:immunoglobuline.norg:}[Immunoglobuline]
 
 * Réponse cellulaire
 

@@ -25,15 +25,15 @@ version: 1.1.1
 
 * Minéraux
 
-{:oligoéléments__nutrition.norg:}[Oligoéléments] 
+{:oligoéléments.norg:}[Oligoéléments] 
 
 ** Macroéléments
 
 éléments chimiques en grande quantité (Na, K, Cl, P, Mg, Ca) 
 
-*** {:calcium__biochimie.norg:}[Calcémie]
+*** {:calcium.norg:}[Calcémie]
 
-*** {:sodium__biochimie_nutrition.norg:}[Sodium]
+*** {:sodium.norg:}[Sodium]
 
 *** Potassium
 
@@ -54,7 +54,7 @@ Organiques (!= oligoéléments), 0 apport énergétique, 0 rôle structural mais
 -- B9: légumes 
 -- B12: animal *attention aux végétariens/liens* 
 -- C : fruits 
--- {:vitamine-d__biochimie.norg:}[Vitamine D] 
+-- {:vitamine-d.norg:}[Vitamine D] 
 -- E : huiles végétales, poissons gras 
 
 ** Absorption

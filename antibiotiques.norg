@@ -18,7 +18,7 @@ version: 1.1.1
 .image ./images/microbiologie/antibio-action.png
  
 
-* {:mécanimes-de-résistance-aux-antibiotiques__bactério.norg:}[Mécanimes de résistance aux antibiotiques]
+* {:mécanimes-de-résistance-aux-antibiotiques.norg:}[Mécanimes de résistance aux antibiotiques]
 
 * Résumé
 
@@ -136,7 +136,7 @@ PéniM = oxacilline, cloxacilline PéniA = amox
 (2) clindamycine
 (3) vancomycine 
 
-* {:antibiogramme__bactério.norg:}[Antibiogramme]
+* {:antibiogramme.norg:}[Antibiogramme]
 
 * Aminosides
 
