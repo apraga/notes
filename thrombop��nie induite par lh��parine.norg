@@ -4,13 +4,24 @@ description:
 authors: alex
 categories: hémostase 
 created: 2024-09-07T21:17:10+0100
-updated: 2024-09-07T21:17:10+0100
+updated: 2024-09-11T17:51:47+0100
 version: 1.1.1
 @end
 
-* Dépistage
+* Physiopathologie
+  Activation médiée par les anticorps cotrn de complexe facteur plaquettaire 4 + héparine
+  Impliquant plaquettes, PNN, monocytes, cellules endothéliales
+  -> hypercoagulabilité
+  -> thrombose 30-50%
 
-Surveillance des plaquettes 
-
-- HNF ou {HBPM en contexte chir ou trauma ou ATCD HNF} 
-
+  10x plus de risque sous HNF que HBPM (3% pour HNK)
+* Évocateur 
+  - thrombopénie (pas forcément sévère) ou /chute numération/
+  - score clinique 4T
+* Diagnostic
+  - pas de test si score 4T < 4 
+  - dépistage tests immunologique (anticorps contre FP4)
+  - confimation par test focntionnels
+* Traitement
+  - arrêt héparine
+  - relais danaparoïde sodique/ aragatroban
