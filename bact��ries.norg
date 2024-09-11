@@ -1,0 +1,28 @@
+@document.meta
+title: bactéries
+description: 
+authors: alex
+categories: bactério 
+created: 2024-09-07T21:16:48+0100
+updated: 2024-09-07T21:16:48+0100
+version: 1.1.1
+@end
+
+{:classification-des-bactéries__bactério.norg:}[Classification des bactéries] 
+
+- {:campylobacter-jejuni__bactérie_bactério.norg:}[Campylobacter] 
+- {:chlamydia-trachomatis__bactérie_bactério_ist.norg:}[Chlamydia trachomatis] 
+- {:entérobactéries__bactérie_bactério.norg:}[Entérobactéries] 
+- {:entérocoques__bactérie_bactério.norg:}[Entérocoques] 
+- {:hæmophilus-influenza__bactérie_bactério.norg:}[Hæmophilus influenza] 
+- {:legionella-pneumophiliea__bactérie_bactério.norg:}[Légionelle] 
+- {:listeria-monocytogenes__bactérie_bactério.norg:}[Listeria monocytogenes] 
+- {:méningites-bactériennes__bactério.norg:}[Méningites bactériennes] 
+- {:mycoplasmes__bactérie_bactério_ist.norg:}[Mycoplasmes] 
+- {:neisseria-gonorrhoeae__bactérie_bactério_ist.norg:}[Neisseria gonorrhoeae] 
+- {:neisseria-meningitidis__bactérie_bactério.norg:}[Neisseria meningitidis] 
+- {:proteus__bactérie_bactério.norg:}[Proteus] 
+- {:pseudomonas-aeruginosa__bactérie_bactério.norg:}[Pseudomonas aeruginosa] 
+- {:staphylocoques__bactérie_bactério.norg:}[Staphylocoques] 
+- {:streptocoque__bactérie_bactério.norg:}[Streptocoque] 
+
