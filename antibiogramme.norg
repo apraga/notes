@@ -19,65 +19,21 @@ Entérobactéries
 -- ne touche pas les carbapénèmes 
 -- cefoxitine non touchée => permet de différencier d'une céphalosporinase déréprimée (voir tableau) 
 
-: B1 : Pénicillinase
-: C1 : Pénicillinase déréprimée
-: D1 : Céphalo sporinase
-: E1 : Céphalo. déréprimée
-: F1 : BLSE
-: G1 : Carba pénémase
-+hline2
-#table.head.columns 2-12 0
-: A2 : amoxicilline
-: B2 : R
-: C2 : R
-: D2 : R
-: E2 : R
-: F2 : R
-: G2 : R
-: A3 : ticarcilline
-: B3 : R
-: C3 : R
-: E3 : R
-: F3 : R
-: G3 : R
-: A4 : piperacilline
-: B4 : I/R
-: C4 : R
-: E4 : R
-: F4 : R
-: G4 : R
-: A5 : amox+inhib β
-: C5 : I/R
-: D5 : R
-: E5 : R
-: F5 : *S/I/R*
-: G5 : R
-: A6 : pipe/ticar
-: C6 : I/R
-: E6 : I/R
-: F6 : *S/I/R*
-: G6 : R
-: A7 : + inhib β
-: A8 : C1G
-: C8 : I/R
-: D8 : R
-: E8 : I/R
-: F8 : R
-: G8 : R
-: A9 : C2G
-: D9 : I/R
-: E9 : I/R
-: G9 : I/R
-: A10 : C3G
-: D10 : I/R
-: E10 : I/R
-: F10 : I/R
-: G10 : S (OXA-48)/I/R
-: A11 : C4G
-: F11 : I/R
-: G11 : S (OXA-48)/I/R
-: A12 : carbapénème
-: G12 : I/R
+@table
+|               | Pénicillinase | Pénicillinase déréprimée | Céphalo sporinase | Céphalo. déréprimée | BLSE    | Carba pénémase |
+|---------------+---------------+--------------------------+-------------------+---------------------+---------+----------------|
+| amoxicilline  | R             | R                        | R                 | R                   | R       | R              |
+| ticarcilline  | R             | R                        |                   | R                   | R       | R              |
+| piperacilline | I/R           | R                        |                   | R                   | R       | R              |
+| amox+inhib β  |               | I/R                      | R                 | R                   | *S/I/R* | R              |
+| pipe/ticar    |               | I/R                      |                   | I/R                 | *S/I/R* | R              |
+| + inhib β     |               |                          |                   |                     |         |                |
+| C1G           |               | I/R                      | R                 | I/R                 | R       | R              |
+| C2G           |               |                          | I/R               | I/R                 |         | I/R            |
+| C3G           |               |                          | I/R               | I/R                 | I/R     | S (OXA-48)/I/R |
+| C4G           |               |                          |                   |                     | I/R     | S (OXA-48)/I/R |
+| carbapénème   |               |                          |                   |                     |         | I/R            |
+  @end
 
 - AMX = amoxicilline 
 - TIC = ticarcilline 

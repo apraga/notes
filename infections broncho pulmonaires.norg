@@ -10,8 +10,8 @@ version: 1.1.1
 
 - Bronchite : infection des bronches. Toux+/- fièvre. Virale le plus souvent, diagnostic clinique. Si persiste : coqueluche ? 
 - Bronchiolite : infection des bronchioles. Fréquent chez le jeune enfant, grave chez les nouveaux-nés. VRS 
-- {:pneumonies__bactério.norg:}[Pneumonies] 
-- {:grippe__viro.norg:}[Grippe] 
-- {:legionella-pneumophiliea__bactérie_bactério.norg:}[Légionelle] 
-- {:mycobacterium-tuberculosis__bactérie_bactério.norg:}[Mycobacterium tuberculosis] 
+- {:pneumonies.norg:}[Pneumonies] 
+- {:grippe.norg:}[Grippe] 
+- {:legionella-pneumophiliea.norg:}[Légionelle] 
+- {:mycobacterium-tuberculosis.norg:}[Mycobacterium tuberculosis] 
 

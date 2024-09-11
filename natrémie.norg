@@ -116,13 +116,13 @@ Osmolariété corrigée pour la glycémie 2xNatrémie + glycémie/3
 
 Attention à l'impédencemétrie indirecte ! La version directe ne pose pas de problème (pas de dilution). Voir {id:ae6c4672-b071-491d-bfbc-ef1a4ea96e47}[Potentiométrie] 
 
-* {:hyponatrémie__biochimie_néphro.norg:}[Hyponatrémie] (hyperhydratation intracellulaire)
+* {:hyponatrémie.norg:}[Hyponatrémie] (hyperhydratation intracellulaire)
 
-{:hypernatrémie__biochimie_néphro.norg:}[Hypernatrémie] (déshydratation extracellulaire) 
+{:hypernatrémie.norg:}[Hypernatrémie] (déshydratation extracellulaire) 
 
-* {:déshydratation-extracellulaire__biochimie_néphro.norg:}[Déshydratation extracellulaire]
+* {:déshydratation-extracellulaire.norg:}[Déshydratation extracellulaire]
 
-* {:hyperhydratation-extracellulaire__biochimie_néphro.norg:}[Hyperhydratation extracellulaire]
+* {:hyperhydratation-extracellulaire.norg:}[Hyperhydratation extracellulaire]
 
 * Traitement
 

@@ -24,10 +24,10 @@ version: 1.1.1
 |end
 
 - Apport alimentaire (duodenum) 
-- Transfert dans le sang par la {:transferrine__biochimie_néphélémétrie.norg:}[transferrine] 
-- entrée dans les cellules via les récepteurs de la transférrine -> dosage possible du {:récepteur-soluble-circulant__biochimie_hémato.norg:}[Récepteur soluble à la transferrine] 
-- mise en réserve par la {:ferritine__hémato.norg:}[Ferritine] 
-- régulation = seulement au niveau de l'absorption car il n'y a pas de mécanisme d'excrétion ! Voir {:hepcidine__hémato.norg:}[hepcidine] 
+- Transfert dans le sang par la {:transferrine.norg:}[transferrine] 
+- entrée dans les cellules via les récepteurs de la transférrine -> dosage possible du {:récepteur-soluble-circulant.norg:}[Récepteur soluble à la transferrine] 
+- mise en réserve par la {:ferritine.norg:}[Ferritine] 
+- régulation = seulement au niveau de l'absorption car il n'y a pas de mécanisme d'excrétion ! Voir {:hepcidine.norg:}[hepcidine] 
 
 * Exploration
 
@@ -62,10 +62,10 @@ Donc diminution capacité de travail
 
 * Variation
 
-- {:ferritine__hémato.norg:}[Ferritine] 
-- {:fer__hémato.norg:}[Fer] 
-- {:transferrine__biochimie_néphélémétrie.norg:}[Transferrine] 
-- {:coefficient-de-saturation-de-la-transferrine__hémato.norg:}[Coefficient de saturation de la transferrine] 
+- {:ferritine.norg:}[Ferritine] 
+- {:fer.norg:}[Fer] 
+- {:transferrine.norg:}[Transferrine] 
+- {:coefficient-de-saturation-de-la-transferrine.norg:}[Coefficient de saturation de la transferrine] 
 
 * Dosage
 

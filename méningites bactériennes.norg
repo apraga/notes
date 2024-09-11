@@ -4,7 +4,7 @@ description:
 authors: alex
 categories: bactério 
 created: 2024-09-07T21:17:03+0100
-updated: 2024-09-11T22:31:39+0100
+updated: 2024-09-11T22:40:17+0100
 version: 1.1.1
 @end
 
@@ -19,13 +19,14 @@ version: 1.1.1
 -- enfant, adolescent, adulte jeune 
 - Streptococcus agalactiae : nouveau-né surtout 
 - {:hæmophilus influenza:}[Hæmophilus influenza] : rare, non vacciné ou immunodéprimé 
-  - {:listeria monocytogenes:} : rare, âgé, ID, nouveau-né
+  {:$/listeria monocytogenes.norg:}[listeria monocytogenes] rare, âgé, ID, nouveau-né
+  - {:$/escherichia coli:} : nouveau-né
 - Autres : Lyme, leptospirose, syphilis, immunodéprimé 
 
 * Gram:
 
 - Cocci G+ diplocoque/chainette : strepto pneumonia, agalactiae 
-- Cocci G- diplococque :{:neisseria-meningitidis__bactérie_bactério.norg:}[Neisseria meningitidis] 
+- Cocci G- diplococque :{:neisseria-meningitidis.norg:}[Neisseria meningitidis] 
 - Bacille G+ : listeria monocytogenes 
 - Bacille G- : Haemophilus, E.coli, Brucella, salmonella
 Attention : culture peut être négative si ne pousse pas sur milieux usuels (Tuberculose) ou décapité ATB 

@@ -8,25 +8,25 @@ updated: 2024-09-07T21:17:01+0100
 version: 1.1.1
 @end
 
-Voir {:mécanisme-des-maladies-hématologiques__hémato.norg:}[Mécanisme des maladies hématologiques] 
+Voir {:mécanisme-des-maladies-hématologiques.norg:}[Mécanisme des maladies hématologiques] 
 
 * Néoplasies myéloïdes
 
 Classification OMS 
 
-- {:syndromes-myéloprolifératifs__hémato.norg:}[Syndromes myéloprolifératifs] 
+- {:syndromes-myéloprolifératifs.norg:}[Syndromes myéloprolifératifs] 
 - SMP/SMD 
-- {:syndromes-myélodysplasiques__hémato.norg:}[Syndromes myélodysplasiques] 
+- {:syndromes-myélodysplasiques.norg:}[Syndromes myélodysplasiques] 
 - Leucémies aigües myéloblastiques 
 - myélo+lymphoïdes + hyperéosinophilie + anomalies PDGFRα/β ou FGFR1 
 
 * Autrnes
 
-{:anémie-microcytaire__hémato.norg:}[Anémie microcytaire]
-{:anémie-hémolytique-auto-immune__hémato.norg:}[Anémie hémolytique auto-immune]
-{:myélome__biochimie_hémato.norg:}[Myélome]
-{:lymphomes__hémato.norg:}[Lymphomes]
-{:déficit-immunitaire__hémato_immuno.norg:}[Déficit immunitaire] 
+{:anémie-microcytaire.norg:}[Anémie microcytaire]
+{:anémie-hémolytique-auto-immune.norg:}[Anémie hémolytique auto-immune]
+{:myélome.norg:}[Myélome]
+{:lymphomes.norg:}[Lymphomes]
+{:déficit-immunitaire.norg:}[Déficit immunitaire] 
 
 * Lymphocytes
 
@@ -70,10 +70,10 @@ aigüe monoblastique
 postchimio) 
 -- chronique : SMP, métastase médullaire 
 
-* {:maladies-du-globule-rouge__hémato.norg:}[Maladies du globule rouge]
+* {:maladies-du-globule-rouge.norg:}[Maladies du globule rouge]
 
 * Plaquettes
 
-- {:thrombocytose__hémato.norg:}[Thrombocytose] : inflammation, carence martiale, splénectomie/asplénie, post-chir, SMP 
-- {:thrombopénie__hémato.norg:}[Thrombopénie] 
+- {:thrombocytose.norg:}[Thrombocytose] : inflammation, carence martiale, splénectomie/asplénie, post-chir, SMP 
+- {:thrombopénie.norg:}[Thrombopénie] 
 

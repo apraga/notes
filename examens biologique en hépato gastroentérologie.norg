@@ -92,17 +92,17 @@ version: 1.1.1
 --- anormal : gastrinome, maladie de Ménétrier, gastropathie exsudative 
 --- sinon biopsie duodénale : coeliaque si anormal, si normal examens complémentaire pour éliminer Crohn, néoplasie, MICI 
 
-** {:cytolyse__biochimie_hémato.norg:}[Cytolyse]
+** {:cytolyse.norg:}[Cytolyse]
 
-** {:élévation-isolée-des-pal__biochimie.norg:}[Élévation isolée des PAL]
+** {:élévation-isolée-des-pal.norg:}[Élévation isolée des PAL]
 
-** {:hyperbilirubinémie__biochimie.norg:}[Hyperbilirubinémie]
+** {:hyperbilirubinémie.norg:}[Hyperbilirubinémie]
 
-** {:maladie-de-biermer__biochimie_hémato.norg:}[Maladie de Biermer]
+** {:maladie-de-biermer.norg:}[Maladie de Biermer]
 
-** {:anémie__hémato.norg:}[Anémie]
+** {:anémie.norg:}[Anémie]
 
-** {:hémochromatose__hémato.norg:}[Hémochromatose héréditaire]
+** {:hémochromatose.norg:}[Hémochromatose héréditaire]
 
 * Modifications pendant la grossesse
 
@@ -131,12 +131,12 @@ Anormale:
 
 * Pathologies
 
-{:pancréatite-aigüe__biochimie_hepato.norg:}[Pancréatite aigüe]
+{:pancréatite-aigüe.norg:}[Pancréatite aigüe]
 Grand syndromes 
 
-- {:cholestase__biochimie_hepato.norg:}[Cholestase] 
+- {:cholestase.norg:}[Cholestase] 
 - cytolyse hépatique (mort cellulaire) 
-- {:insuffisance-hépato-cellulaire__hepato.norg:}[Insuffisance hépato-cellulaire] 
+- {:insuffisance-hépato-cellulaire.norg:}[Insuffisance hépato-cellulaire] 
 - inflammation 
 
 : B1 : Cholestase
@@ -193,8 +193,8 @@ Ulcère hémorragique :
 
 ** Divers
 
-- {:urgences-rares-avec-douleurs-intenses__urgence.norg:}[Urgences rares avec douleurs intenses] 
-- {:calcium__biochimie.norg:}[Calcémie] 
+- {:urgences-rares-avec-douleurs-intenses.norg:}[Urgences rares avec douleurs intenses] 
+- {:calcium.norg:}[Calcémie] 
 - {denote:20240721T144629}[Hypokaliémie] 
 - {denote:20240721T145114}[Insuffisance surrénalienne aigüe] 
 - {denote:20240721T144858}[Acido-cétose diabétique] 

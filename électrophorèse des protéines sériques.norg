@@ -27,9 +27,9 @@ Attention: protidémie normale n'exclut pas une anomalie
 ~~ seul IgG et IgM migre version pole négatif figure: 
 ~ albumine 
 -- α1-globuline: anti-trypsine,
-{:orosomucoïde__biochimie_néphélémétrie.norg:}[Orosomucoïde] 
--- α2-globuline : {:haptoglobine__biochimie_néphélémétrie.norg:}[Haptoglobine] {:céruloplasmine__biochimie_néphélémétrie.org}[Céruloplasmine] 
--- β1 : {:transferrine__biochimie_néphélémétrie.norg:}[Transferrine] 
+{:orosomucoïde.norg:}[Orosomucoïde] 
+-- α2-globuline : {:haptoglobine.norg:}[Haptoglobine] {:céruloplasmine__biochimie_néphélémétrie.org}[Céruloplasmine] 
+-- β1 : {:transferrine.norg:}[Transferrine] 
 -- β2 : complément, IgA 
 -- γ : IgG, IGM 
 -- détermination des intensité -> profil 
@@ -53,4 +53,4 @@ Attention: protidémie normale n'exclut pas une anomalie
 -- pere excessive (rénale, brûlure, digestive, chir) 
 -- hypercatabolisme (Cushing, hyperthyrœiide) < 55g/L : vérifier perfusion 
 
-* {:électrophorèse-des-protéines-sériques-interprétation__biochimie.norg:}[Interprétation]
+* {:électrophorèse-des-protéines-sériques-interprétation.norg:}[Interprétation]

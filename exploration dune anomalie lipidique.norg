@@ -10,7 +10,7 @@ version: 1.1.1
 
 * Métabolismes
 
-{:métabolisme-des-lipoprotéines__biochimie.norg:}[Métabolisme des lipoprotéines] 
+{:métabolisme-des-lipoprotéines.norg:}[Métabolisme des lipoprotéines] 
 
 * Indication
 
@@ -49,11 +49,11 @@ version: 1.1.1
 
 * Dosage
 
-- {:apoa-i-et-apob__biochimie.norg:}[ApoA-I et ApoB] 
-- {:cholestérol-hdl__biochimie.norg:}[Cholestérol-HDL] 
-- {:cholestérol-ldl__biochimie.norg:}[Cholestérol-LDL] 
-- {:cholestérol-total__biochimie.norg:}[Cholestérol total] 
-- {:triglycérides__biochimie.norg:}[Triglycérides] 
+- {:apoa-i-et-apob.norg:}[ApoA-I et ApoB] 
+- {:cholestérol-hdl.norg:}[Cholestérol-HDL] 
+- {:cholestérol-ldl.norg:}[Cholestérol-LDL] 
+- {:cholestérol-total.norg:}[Cholestérol total] 
+- {:triglycérides.norg:}[Triglycérides] 
 
 * Valeurs
 
@@ -80,6 +80,6 @@ version: 1.1.1
 - cible : selon FR CV 
 - {:physiologie-de-la-grossesse__biochimie_gynéco.org::#h:7a89950f-6a1f-4acb-a23b-05fed41c4f7e}[Grossesse::Lipides] 
 
-* Voir aussi {:dyslipoprotéinémies__biochimie.norg:}[Dyslipoprotéinémies]
+* Voir aussi {:dyslipoprotéinémies.norg:}[Dyslipoprotéinémies]
 
 * {cas-cliniques/dyslipidémies.pdf}[Cas cliniques]
