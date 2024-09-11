@@ -22,7 +22,7 @@ version: 1.1.1
    - Causes 
    -- virus : {norovirus:}[Norovirus], Bacillus cereus 
    -- Clostridium perfringens 
-   -- {escherichia-coli..norg:}[Escherichia coli] entéro-toxinogène et entéro-aggrégatif 
+   -- {escherichia-coli.norg:}[Escherichia coli] entéro-toxinogène et entéro-aggrégatif 
    -- Vibrio cholerae 
 
 ** Syndrome dysentérique
@@ -30,7 +30,7 @@ version: 1.1.1
    - Selles glairo-sanglantes, fièvre 
    - Invasion + destruction des cellules épithéliales + inflammation locale 
    - Causes 
-   -- {shigella-spp..norg:}[Shigella] dysenteriae (toxine) ou non dysentreiae : 
+   -- {shigella-spp.norg:}[Shigella] dysenteriae (toxine) ou non dysentreiae : 
    -- E. coli entéro-invasif 
    -- E. coli entérohémorragique (production de Shiga-like toxines, codées par /stx1/, /stx2/) {:$/syndrome hémolytique et urémique.norg:}[syndrome hémolytique et urémique]
    -- amoebose colique 
@@ -40,8 +40,8 @@ version: 1.1.1
    - Diarrhées aspécifique, vomissements +/- fièvre 
    - Invasion du tissu lymphoïde sous-muqueux /sans/ destruction 
    - Causes : 
-   -- {campylobacter-jejuni..norg:}[Campylobacter spp] 
-   -- {salmonella-spp..norg:}[Salmonella spp] non typhi 
+   -- {campylobacter-jejuni.norg:}[Campylobacter spp] 
+   -- {salmonella-spp.norg:}[Salmonella spp] non typhi 
    -- Yersinia spp 
    -- E. coli entéropathogènes 
 

@@ -12,6 +12,6 @@ version: 1.1.1
 @end
 
 - Rhino-pharyngite : {:$/entérovirus:} {:$/grippe:}
-- {angines..norg:}[Angines] 
-- {otite-moyenne-aigüe..norg:}[Otite moyenne aigüe] 
+- {angines.norg:}[Angines] 
+- {otite-moyenne-aigüe.norg:}[Otite moyenne aigüe] 
 
