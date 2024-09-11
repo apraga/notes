@@ -4,92 +4,80 @@ description:
 authors: alex
 categories: hémato 
 created: 2024-09-07T21:17:10+0100
-updated: 2024-09-07T21:17:10+0100
+updated: 2024-09-11T19:02:31+0100
 version: 1.1.1
 @end
 
 - < 150G/L 
-- Périphérique : mégacaryocytes normaux/éleves,
-destruction/consomation/séquestration 
+* Causes
+- Périphérique : mégacaryocytes normaux/éleves, destruction/consomation/séquestration 
 - Central : mégacaryocytes diminuné, congénital/acquis 
 - Myélogramme non obligatoire 
 
-* Central
+** Central
 
-- défaut de production (qualitatif/quantitaf): aplasie, carence B9, B12,
-alcool, médicament, radiot 
-- envahissement : LA, lymphome, myélome, LLC, LMC, métastases 
+   - défaut de production (qualitatif/quantitatif): aplasie, carence B9, B12, alcool, médicament, radiot 
+   - envahissement : LA, lymphome, myélome, LLC, LMC, métastases 
 
-* Constit (rare)
+** Constit (rare)
 
-- nénat, enfance, adulte 
-- dysmorphie, cardiopathi, IR, surdité, cataracte, anomalie osseuse 
-- pas/peu de réponse au traitements 
-- signes hémorragiques inconstants 
+   - néonat, enfance, adulte 
+   - dysmorphie, cardiopathi, IR, surdité, cataracte, anomalie osseuse 
+   - pas/peu de réponse au traitements 
+   - signes hémorragiques inconstants 
 
-** périphérique
+** Périphérique
 
-- destructio immuno: 
--- PTI (cf plus loins) 
--- médicaments (vanco, pénicilline+++) 
--- infection : virus (VIH, hépatite B/C, MNI, CMV, dengue), palu,
-sepsis grave 
--- lupus, SAPL 
--- thyroïde (Basedow, Hashimoto) 
--- hémato : Biermer, AHAI, lymphome, lymphoïde chronique 
--- allo-anticoprs (purpura post-transfu, foetal/néotal) 
-- consommation: 
--- CIVD : TPdiminué, TCA augmenté, fibriongne diminué, D-dimère
-augmenté -> choc, obstitqiu, *LAM3* 
--- microangiopathie thrombotique: anémie hémolytique, /schizocyte/ ->
-SHU, PTT, HELLP (hemolysis, Elevetad liver enzym, Low Platelet ) 
-- trouble de la répartition : hypersplénisme (séquestration) ,
-transfusion massive, cirrhose, grossesse (dilution) 
-- secondaire 
+*** destruction
+    - médicaments (vanco, pénicilline+++) 
+    - infection : virus (VIH, hépatite B/C, MNI, CMV, dengue), palu, sepsis grave 
+    - auto-immunité : 
+    -- lupus, SAPL 
+    -- thyroïde (Basedow, Hashimoto) 
+    -- hémato : Biermer, AHAI, lymphome, lymphoïde chronique 
+    -- {:purpura thrombopénique immunologique:}
+    -- allo-anticoprs (purpura post-transfu, foetal/néotal) 
+*** Consommation
+    -- {:CIVD:} -> choc, obstitqiu, *LAM3* 
+    -- {:microangiopathie thrombotique:}
+*** Trouble de la répartition 
+    hypersplénisme (séquestration) ,
+    transfusion massive, cirrhose, grossesse (dilution) 
+    - secondaire 
 
-** PTI
+* Confirmer 
 
-- Enfant : contexte viral, plaquette < 5G, /numération et frottis RAS
-par ailleurs/, pas d'antécédent 
--- myélogramme inutile 
-- Adulte = élimination (myélogramme) 
+    - < 150G 
+    - frottis pour éliminer fausse thrombopénie, sous-estimation (plaquette de grande taille) 
+    - recherche microcaillot 
 
-** Démarche
-
-Confirmer 
-
-- < 150G 
-- frottis pour éliminer fausse thrombopénie, sous-estimation (plaquette
-de grande taille) 
-- recherche microcaillot 
-
-Cherche schizo (MAT), hyperlympho (viral), neutropénie/anémie (central),
-cellules anormales (blastes) 
+    Cherche schizo (MAT), hyperlympho (viral), neutropénie/anémie (central),
+    cellules anormales (blastes) 
 
 ** Fausses diminution :
 
-- agrégabilité 
--- des plaquettes entre elles (surtout EDTA probablement par exposition
-d'un site antigénique normalement caché avex ) -> frottis 
--- des plaquettes autour des neutrophiles (EDTA) : rare, signification
-clinique non connue 
--- agrégats mixtes plaquettes/neutro (EDTA) : rare, /in vitro/ ->
-frottis (extrémités) 
-- Plaquettes géantes ( > seuil les différenciant des GR) -> frottis,
-canal optique 
-- pé-ana : perfusion, coagulation partielle, tube pas assez rempli (trop
-d'anticoagulant), trop rempli (difficulté d'homogénéisation), trop
-vieux (démarrage de la coagulation) 
+    - agrégabilité 
+    -- des plaquettes entre elles (surtout EDTA probablement par exposition
+       d'un site antigénique normalement caché avex ) -> frottis 
+    -- des plaquettes autour des neutrophiles (EDTA) : rare, signification
+    clinique non connue 
+    -- agrégats mixtes plaquettes/neutro (EDTA) : rare, /in vitro/ ->
+    frottis (extrémités) 
+    - Plaquettes géantes ( > seuil les différenciant des GR) -> frottis,
+      canal optique 
+    - pé-ana : perfusion, coagulation partielle, tube pas assez rempli (trop
+    d'anticoagulant), trop rempli (difficulté d'homogénéisation), trop
+    vieux (démarrage de la coagulation) 
 
-** Examens systématiques
+* Examens systématiques
 
-- NFS sur tube citraté si date 
-- frottis 
-- EPS 
-- séro VIH, VHB, VHC 
-- bilan hépatique 
-- anticorps antinucléaire 
-- créatinine, hémature 
-- TP, TCA, fibrinogne 
-- groupe sanguin, RAI si sévère # Hémogramme 
+    - NFS sur tube citraté si date 
+    - frottis 
+    - EPS 
+    - séro VIH, VHB, VHC 
+    - bilan hépatique 
+    - anticorps antinucléaire 
+    - créatinine, hémature 
+    - TP, TCA, fibrinogne 
+    - groupe sanguin, RAI si sévère # Hémogramme 
 

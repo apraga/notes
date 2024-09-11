@@ -4,15 +4,13 @@ description:
 authors: alex
 categories: hémato 
 created: 2024-09-07T15:43:09+0100
-updated: 2024-09-07T15:43:09+0100
+updated: 2024-09-11T19:19:28+0100
 version: 1.1.1
 @end
 @end
 
 anémie hémolytique, /schizocyte/ 
-
-* Étiologie
-  {:$/purpura thrombotique thrombocytopenique:}
-  {:$/syndrome hemolytique et uremique:}
-{hellp__gynéco.norg:}[HELLP] 
+- {:syndrome hémolytique et urémique:}
+- {:purpura thrombotique thrombocytopénique.norg:}
+- {:HELLP:}
 
