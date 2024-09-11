@@ -4,7 +4,7 @@ description:
 authors: alex
 categories: viro 
 created: 2024-09-07T00:30:36+0100
-updated: 2024-09-07T00:30:36+0100
+updated: 2024-09-11T23:10:32+0100
 version: 1.1.1
 @end
 
@@ -43,7 +43,7 @@ HIV2 = rare en France, mais ~100% Afrique de l'Ouest
 ~ Latence 
 ~ SIDA (8 ans) défini par T CD4 + < 200/mm^3^ avec infections opportunistes/cancer 
 -- cryptococcose, pneumocystose, toxoplasmose, CMV, tuberculose 
--- lymphome {epstein-barr-virus-ebv.norg:}[HPV] 
+ - lymphome {:$/EBV:}[EBV]
 
 primo: objectif 
 

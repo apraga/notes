@@ -4,7 +4,7 @@ description:
 authors: alex
 categories: viro 
 created: 2024-09-07T00:30:34+0100
-updated: 2024-09-07T00:30:34+0100
+updated: 2024-09-11T23:32:33+0100
 version: 1.1.1
 @end
 
@@ -30,7 +30,7 @@ Lésions hépatiques sont dues à la réaction *inflammatoire* plutôt que cytot
 
 * Causes
   - {:$/hépatite A:} et {:$/hépatite E:} : surtout oro-fécal, pas d'hépatite chronique (sauf hépatite E chez les immunodéprimés )
-  - {:$/hépatite C:} et {:$/hépatite B:} : forme chronique
+  - {:$/hépatite B:}, {:$/hépatite C:}, {:$/hépatite D:} : contamination percutanée et par muqueuese, forme chronique
   - virus non hépatotropes : {:$/CMV:} {:$/EBV:}  {:$/VIH:} {:$/HSV:}
 
 * Tests
