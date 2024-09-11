@@ -39,11 +39,11 @@ HIV2 = rare en France, mais ~100% Afrique de l'Ouest
 ~ 2 semaine d'incubation 
 ~ Primo : 
 -- asympto/pharyngite + syndrome pseudo-grippal 
--- {syndrome-mononucleosique..norg:}[cytolyse] 
+-- {syndrome-mononucleosique.norg:}[cytolyse] 
 ~ Latence 
 ~ SIDA (8 ans) défini par T CD4 + < 200/mm^3^ avec infections opportunistes/cancer 
 -- cryptococcose, pneumocystose, toxoplasmose, CMV, tuberculose 
--- lymphome {epstein-barr-virus-ebv..norg:}[HPV] 
+-- lymphome {epstein-barr-virus-ebv.norg:}[HPV] 
 
 primo: objectif 
 
@@ -118,7 +118,7 @@ Primo:
 
 - Pré-exposition : PrEP 
 - grossesse : traitement + zidovuline/ténofovit pendant le travait et traitement post-exposition de nouveau-né, /sans allaitement/ 
-- {accident-dexposition-au-sang..norg:}[Accident d'exposition au sang] ou sexuel 
+- {accident-dexposition-au-sang.norg:}[Accident d'exposition au sang] ou sexuel 
 
 ** Notes
 
