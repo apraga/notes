@@ -7,7 +7,7 @@ bactério
 viro
 ]
 created: 2024-09-07T00:30:32+0100
-updated: 2024-09-07T00:58:28+0100
+updated: 2024-09-12T18:24:27+0100
 version: 1.1.1
 @end
 
@@ -30,7 +30,7 @@ version: 1.1.1
    - Selles glairo-sanglantes, fièvre 
    - Invasion + destruction des cellules épithéliales + inflammation locale 
    - Causes 
-   -- {shigella-spp.norg:}[Shigella] dysenteriae (toxine) ou non dysentreiae : 
+   -- {:shigella spp:}[Shigella] dysenteriae (toxine) ou non dysentreiae : 
    -- E. coli entéro-invasif 
    -- E. coli entérohémorragique (production de Shiga-like toxines, codées par /stx1/, /stx2/) {:$/syndrome hémolytique et urémique.norg:}[syndrome hémolytique et urémique]
    -- amoebose colique 

@@ -4,14 +4,15 @@ description:
 authors: alex
 categories: viro 
 created: 2024-09-07T00:30:33+0100
-updated: 2024-09-09T21:12:26+0100
+updated: 2024-09-12T21:55:06+0100
 version: 1.1.1
 @end
 
+*Déclaration obligatoire si infection symptomatique* (Ag Hbs+, IgM anti HBc+)
 * Physipathologie
   - enveloppé ADn circulaire partiellement bicaténaire et extrêmement compact 
   - multiplication dans hépatocytes (pénétration via récepteur NTPC) sans effet cytopathique 
-  - 1ere étpa : formation cccDNA intra-hépatique (persiste à vie !) +/- intégration génome humaine (facultatif) 
+  - 1ere étape : formation cccDNA intra-hépatique (persiste à vie !) +/- intégration génome humaine (facultatif) 
   - multiplication virale via un intermédiaire ARN avec une transcriptase inversée portée par la polymérase virale et responsable de l'émergence de nombreux variants génétique 
 
 * Épidémio
@@ -37,7 +38,7 @@ version: 1.1.1
 
 * Sérologie
 
-  - Ag HBs = antigène de l'enveloppe -> présence du virus 
+  - Ag HBs = antigène de l'enveloppe -> présence du virus -> *IgM antiHb*
   - Ac anti HBs = après Ag HBs -> protecteur si guérison 
   - Ac anti HBc = contact, non protecteur 
   - Ag HBe = en général, réplication virale active. Disparait avant Ag HBs. Séroconversion Ag -> Ac antBHC = résolution ou rémission 

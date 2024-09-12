@@ -4,7 +4,7 @@ description:
 authors: alex
 categories: viro 
 created: 2024-09-07T00:30:36+0100
-updated: 2024-09-07T00:30:36+0100
+updated: 2024-09-12T20:56:58+0100
 version: 1.1.1
 @end
 
@@ -12,47 +12,46 @@ version: 1.1.1
 
 ** Uvéite
 
-HSV chez l'enfant 
+   HSV chez l'enfant 
 
 ** Pneumopathie
 
-Expectoration plus rentable que LAB 
+   Expectoration plus rentable que LAB 
 
 ** Péricardite
 
-cause virales 
+   cause virales 
 
-- *entérovirus* surtout 
-- CMV, EBV, HHV6 
-- +/- parvovirus B19 mais discuté car 75% 
+   - *entérovirus* surtout 
+   - CMV, EBV, HHV6 
+   - +/- parvovirus B19 mais discuté car 75% 
 
 ** Hépatite
 
-Parentérale : B,D,C féco-oral : A, E Bilan séro EBV, CMV *pas* PCR 
+   Parentérale : B,D,C féco-oral : A, E Bilan séro EBV, CMV *pas* PCR 
 
 * Virus
 
-Oncogénicité : si virus pousse pour la phase S (donc pas si apport
-polymérase par le virus+++) 
+  Oncogénicité : si virus pousse pour la phase S (donc pas si apport polymérase par le virus+++) 
 
 ** Anelloviridae (adn)
 
-- virus nu, ADN circulaire simple brin, polarité négative 
-- forte prévalence population générale 
-- nombreux fluides biologiques et tissus 
-- non pathogène pour humain 
-- potientiel biomarqueur immunitaire chez patients transplantés 
+   - virus nu, ADN circulaire simple brin, polarité négative 
+   - forte prévalence population générale 
+   - nombreux fluides biologiques et tissus 
+   - non pathogène pour humain 
+   - potientiel biomarqueur immunitaire chez patients transplantés 
 
 * Prévalence
 
-- EBV, HHV6, VZV 95% 
-- HSV2 60-80% 
-- CMV 50% (plus dans les pays du sud) 
-- HSV1 10-50 
-- HHV8 < 10 
+  - EBV, HHV6, VZV 95% 
+  - HSV2 60-80% 
+  - CMV 50% (plus dans les pays du sud) 
+  - HSV1 10-50 
+  - HHV8 < 10 
 
 * ADN ou ARN ?
 
-ADN: papillomavirus, HBV, HSV
-ARN: HCV, VIH 
+  ADN: papillomavirus, HBV, HSV
+  ARN: HCV, VIH 
 
