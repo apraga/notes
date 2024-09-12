@@ -1,0 +1,35 @@
+@document.meta
+title: rubéole
+description: 
+authors: alex
+categories: viro
+created: 2024-09-11T23:30:09+0100
+updated: 2024-09-11T23:30:31+0100
+version: 1.1.1
+@end
+
+ARN monocaténaires
+Transmission par voie respiratoire (contact direct)
+* Clinique
+  Primo :
+  - asympto (50%)
+  - fièvre modérée
+  - érythème discret : petites macules roses sur le visage puis tronc et membres
+  Congénitale
+  - < 11 SA: 90% infection foetale -> risque de malfo 90% !
+  - diminue entre 24 et 26 SA (25%) mais *risque malfo quasi nul après 20SA*
+  - 100% en fin de grossesse
+* Diagnostic
+** IMF
+   Anticorps spécifique
+   1ere consultation prénatale (si non fait)
+   Si contage
+   - < 10 J : Ig = immunité antérieure. absence IgG: retester 3-4 semaine
+   - apparition IgG : IgM pour savoir si réinfection, vaccination , non spécifique. Avidité IgG parfois nécessaire
+   - > 15J ; IgG, IgM et avidité IgG
+** Congénital
+   : IgM dans le sang fœtal possible mais on préfère RT-PCR
+   NN: IgM
+* Traitement : non
+* Prévention
+  Vaccin

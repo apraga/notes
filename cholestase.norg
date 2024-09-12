@@ -3,11 +3,11 @@ title: cholestase
 description: 
 authors: alex
 categories: [
-biochimie
-hepato
+  biochimie
+  hepato
 ]
 created: 2024-09-07T20:13:22+0100
-updated: 2024-09-09T21:07:28+0100
+updated: 2024-09-12T16:06:37+0100
 version: 1.1.1
 @end
 
@@ -22,21 +22,21 @@ Obstruction voies biliaire intra et extrahépatique
 
 * Orientation
 
-- augmentation PAL: origine plutôt extra-hépatique 
-- augmentation γGT: origine plutôt intra-hépatique 
+  - augmentation PAL est plutôt d'origine plutôt extra-hépatique 
+  - augmentation γGT: origine plutôt intra-hépatique 
 
 * Algorithm décisionnel
 
-- Médicaments ? 
-- Écho abdo: voies biliaire dilatées = extra-hépatique sinon (intra-hépatique) et faire 
--- anticorps anti-mitochondrie, enzyme conversion angiotensine, sérologie virale (VHA, VHB, VHC, VEB, CMV) 
+  - Médicaments ? 
+  - Écho abdo: voies biliaire dilatées = extra-hépatique sinon (intra-hépatique) et faire 
+  -- anticorps anti-mitochondrie, enzyme conversion angiotensine, sérologie virale (VHA, VHB, VHC, VEB, CMV) 
 
 * Physiopathologie
 
-- sang : principalement bilirubine conjuguée 
+  - sang : principalement bilirubine conjuguée 
   - donc diminution dans l'intestin (voir {:bilirubine:* Physiologie}) donc dépigmentation des selles (diminution de stercobilinogène) 
-- et élimination dans les urines de la bilirubine conjuguée -> urines foncées 
+  - et élimination dans les urines de la bilirubine conjuguée -> urines foncées 
 
-Source: La lettre de l’hépato-gastroentérologue 2014 (depuis cours UNESS bio)
-cours UNESS 
+  Source: La lettre de l’hépato-gastroentérologue 2014 (depuis cours UNESS bio)
+  cours UNESS 
 
