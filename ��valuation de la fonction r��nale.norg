@@ -3,11 +3,11 @@ title: évaluation-de-la-fonction-rénale
 description: 
 authors: alex
 categories: [
-biochimie
-néphro
+  biochimie
+  néphro
 ] 
 created: 2024-09-07T20:13:31+0100
-updated: 2024-09-07T20:13:31+0100
+updated: 2024-09-12T16:11:58+0100
 version: 1.1.1
 @end
 
@@ -18,63 +18,63 @@ version: 1.1.1
 
 ** Condition
 
-- Il faut mesurer/estimer la clairance d'un traceur = volume de plasma épuré par unité de temps
-$ V,plasma filtré par 24h, * [traceur],sang, = V,urines par 24h, [traceur],urines, $ 
-- condition pour être un bon marqueur 
--- production constant, non influencée par des paramètres exo- ou endogènes 
--- élimination exclusivement par filtration glomérulaire 
+   - Il faut mesurer/estimer la clairance d'un traceur = volume de plasma épuré par unité de temps
+   $ V_plasma filtré par 24h_ * [traceur]_sang_ = V_urines par 24h_ [traceur]_urines_ $ 
+   - condition pour être un bon marqueur 
+   -- production constant, non influencée par des paramètres exo- ou endogènes 
+   -- élimination exclusivement par filtration glomérulaire 
 
 ** Traceurs
 
-- Endogènes : créatininémie, cystatine C, urée sanguine, β2-microglobuline 
--- formule de Cockroft 
--- estimation ud DFG à partir de la créatiniméie : MDRD, CKD-EPI 
-- Exogène : méthode de référénce = isotopique (chrome51 ETDA..) ou non (inuline) 
+   - Endogènes : créatininémie, cystatine C, urée sanguine, β2-microglobuline 
+   -- formule de Cockroft 
+   -- estimation du DFG à partir de la créatininémie : MDRD, CKD-EPI 
+   - Exogène : méthode de référénce = isotopique (chrome51 ETDA..) ou non (inuline) 
 
 * {:créatinine.norg:}[Créatinine]
 
 ** Clairance de la créatinnine endogène
 
-Mesure de la quantité de sang épurée de créatinine) 
+   Mesure de la quantité de sang épurée de créatinine) 
 
-- calculée = [créat],urine, * V,urines, / [créat],sang,
-Recueil sur 24h 
+   - calculée = [créat]_urine * V_urines / [créat]_sans
+     Recueil sur 24h 
 
 ** Cockroft = ne plus utiliser
 
-- Plus précise que la créatinémie car tient compte du poids et âge (une formule par sexe) 
-- age, *poids*, créatinimie. 
-- Mauvaises performances si obèse, > 75 ans. 
+   - Plus précise que la créatinémie car tient compte du poids et âge (une formule par sexe) 
+   - age, *poids*, créatininésie. 
+   - Mauvaises performances si obèse, > 75 ans. 
 
 ** MDRD (Modification of Diet in Renal Disease) et CKD-EPI
 
-MDRD, CKD-EPI : *sexe*, age, créatininémie, *ethnie*. *pas le poids*
--> CKD-EPI. recommandé par la HAS. Aussi plus précise que MDRD pour
-valeur basse 
+   MDRD, CKD-EPI : *sexe*, age, créatininémie, *ethnie*. *pas le poids*
+   -> CKD-EPI. recommandé par la HAS. Aussi plus précise que MDRD pour
+   valeur basse 
 
 *** Limite des 2 formules
 
-- sur IMC bas (maladies du muscle squelettique, régime végétarien, cirrhose hépatique) 
-- MDRD: surestime DFG si créatiniméie basse 
-- CKD-EPI = plus précis valeurs hautes DFGG (MDRD le sous-estime) 
-- formules non utilisable chez l'enfant (formule de Schwartz), 
-- variation aigüe de la fonction rénale 
-- cirrhose hépatique décompensée, 
-- gabarit hors norme, amyotrophie important, grossese 
+    - sur IMC bas (maladies du muscle squelettique, régime végétarien, cirrhose hépatique) 
+    - MDRD: surestime DFG si créatiniméie basse 
+    - CKD-EPI = plus précis valeurs hautes DFGG (MDRD le sous-estime) 
+    - formules non utilisable chez l'enfant (formule de Schwartz), 
+    - variation aigüe de la fonction rénale 
+    - cirrhose hépatique décompensée, 
+    - gabarit hors norme, amyotrophie important, grossese 
 
-Dans ce cas, utiliser clairance urinaire sur urines de 24h = créat
-urinaire*débit/créat sanguine 
+    Dans ce cas, utiliser clairance urinaire sur urines de 24h = créat
+    urinaire*débit/créat sanguine 
 
 ** UxV/P
 
-U = [créatinine],urine, = valeur sur 24h divisée par la diurèse sur 24h pour avoir μmol/L
-P = [créatinine],plasma, donné
-V = diurèse en mL/24h, à convertir en mL/min en divisan par 24*60 
+   U = [créatinine]_urine = valeur sur 24h divisée par la diurèse sur 24h pour avoir μmol/L
+   P = [créatinine]_plasma donné
+   V = diurèse en mL/24h, à convertir en mL/min en divisan par 24*60 
 
 ** Cystatine
 
-- ne varie pas avec âge, sexe, ethnie ni masse musculaire 
-- intérêt théoriques dans les masses musculaires extrêms 
-- mais pas de supériorité que les formules avec créatininémie 
-- un peu mieux avec créatinémie en plus 
+   - ne varie pas avec âge, sexe, ethnie ni masse musculaire 
+   - intérêt théoriques dans les masses musculaires extrêms 
+   - mais pas de supériorité que les formules avec créatininémie 
+   - un peu mieux avec créatinémie en plus 
 
