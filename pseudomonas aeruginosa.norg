@@ -3,11 +3,11 @@ title: pseudomonas aeruginosa
 description: 
 authors: alex
 categories: [
-bactério
-bactérie
+  bactério
+  bactérie
 ]
 created: 2024-09-07T21:17:05+0100
-updated: 2024-09-07T21:17:05+0100
+updated: 2024-09-12T18:01:45+0100
 version: 1.1.1
 @end
 
@@ -20,80 +20,80 @@ version: 1.1.1
 
 * Phyisopath
 
-/La/ bactérie opportuniste par excellence.
-Origine dans l'environnement, peu pathogène 
+  /La/ bactérie opportuniste par excellence.
+  Origine dans l'environnement, peu pathogène 
 
-Devient pathogène si sytème immunitaire fragile 
+  Devient pathogène si sytème immunitaire fragile 
 
-- Nombreux facteurs de virulence : exotoxine, exoprotéines, hémolysine 
-- Facteur d'adhésion 
-- Forte capacité à former des biofilms 
-- Catalase positif 
-- lactose négatif 
+  - Nombreux facteurs de virulence : exotoxine, exoprotéines, hémolysine 
+  - Facteur d'adhésion 
+  - Forte capacité à former des biofilms 
+  - Catalase positif 
+  - lactose négatif 
 
 * Clinique
 
-- Pneumpathies (réa++) 
+  - Pneumpathies (réa++) 
 
--{:infections-urinaires.norg:}[Infections urinaires] (sonde) 
+  -{:infections-urinaires.norg:}[Infections urinaires] (sonde) 
 
-- bactériémie (cathéter) 
-- infections cutanées (brùlé) 
+  - bactériémie (cathéter) 
+  - infections cutanées (brùlé) 
 
 * Quand réaliser un antibiogramme
 
-- suspicion responsable d'infection 
-- colonisation de patients fragile (ID, intbués) 
-- pulmonaire isolé de patients muco, BPCO, DDB 
+  - suspicion responsable d'infection 
+  - colonisation de patients fragile (ID, intbués) 
+  - pulmonaire isolé de patients muco, BPCO, DDB 
 
 * Diagnostic
 
-- Pousse 24h à 37% sur milieu non sélectif. 
-- Milieu sélectif : cétrimide 
-- Oxydase positif (!= entérobactéries) -> test rapide pour différencier les 2 
+  - Pousse 24h à 37% sur milieu non sélectif. 
+  - Milieu sélectif : cétrimide 
+  - Oxydase positif (!= entérobactéries) -> test rapide pour différencier les 2 
 
 * Résistance
 
-Nombreuses résistances naturelles… 
+  Nombreuses résistances naturelles… 
 
 ** Résistance naturelle :
 
-- amox 
-- C1G, C2G, *céfotaxime* (/! utilisé pour mécanisme/), ceftriaxone, *ertapénème* 
-- anciennes FQ : nofloxacine, péflox, ofloxanie 
-- cotrimoxazole 
-- nitrofurantoine 
-- macrolides 
-- azithromycine 
+   - amox 
+   - C1G, C2G, *céfotaxime* (/! utilisé pour mécanisme/), ceftriaxone, *ertapénème* 
+   - anciennes FQ : nofloxacine, péflox, ofloxacine 
+   - cotrimoxazole 
+   - nitrofurantoine 
+   - macrolides 
+   - azithromycine 
 
-Association de plusieurs mécanisme (synérgie/complémentaire) 
+   Association de plusieurs mécanisme (synérgie/complémentaire) 
 
-- β-lactamase AmpC (large spectre, inductible) 
-- enzyme modificatrice aminoside 
-- effluxs actif (mexAB-OprM, MexXY/OprM) 
-- imperméabilité (porine OpriF) 
+   - β-lactamase AmpC (large spectre, inductible) 
+   - enzyme modificatrice aminoside 
+   - effluxs actif (mexAB-OprM, MexXY/OprM) 
+   - imperméabilité (porine OpriF) 
 
 ** Résistance acquise
 
-- Surproduction : efflux, β-lactamase AmpC, alétaration porine+++ ({:mécanimes-de-résistance-aux-antibiotiques__bactério.org::#h:63c30988-6991-4f5f-aa53-2428981d7c1c}[Mécanimes de résistance aux antibiotiques::Impermeabilité] ) 
-- gène codant β-lactamase 
-- Attention: certaines souches accumulent des résultats 
-- β-lactamase transférable : pénicillinase, BLSE, carbapénémase 
+   - Surproduction : efflux, β-lactamase AmpC, alétaration porine+++ ({:mécanimes-de-résistance-aux-antibiotiques__bactério.org::#h:63c30988-6991-4f5f-aa53-2428981d7c1c}[Mécanimes de résistance aux antibiotiques::Impermeabilité] ) 
+   - gène codant β-lactamase 
+   - Attention: certaines souches accumulent des résultats 
+   - β-lactamase transférable : pénicillinase, BLSE, carbapénémase 
 
 ** Quand chercher BLSE ?
 
-- synergie ceftazidime/cefepime et acide clavulanique 
-- synergie ceftazidime/cefepime et impiénoèmeacide clavulanique 
+   - synergie ceftazidime/cefepime et acide clavulanique 
+   - synergie ceftazidime/cefepime et impiénoèmeacide clavulanique 
 
 * Traitement
 
-- β-lactamine: 
--- ceftazidime +/- avibactame 
--- ticarcilline +/- clavulatane, pipéracilline +/- tazobactame, 
--- céfépime 
--- ceftolozane + tazobactame 
--- imipénème, méropénème 
-- Aminoside 
-- FQ: ciprofloxacine, lévofloxacine 
-- colistine 
+  - β-lactamine: 
+  -- ceftazidime +/- avibactame 
+  -- ticarcilline +/- clavulatane, pipéracilline +/- tazobactame, 
+  -- céfépime 
+  -- ceftolozane + tazobactame 
+  -- imipénème, méropénème 
+  - Aminoside 
+  - FQ: ciprofloxacine, lévofloxacine 
+  - colistine 
 

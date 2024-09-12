@@ -4,7 +4,7 @@ description:
 authors: alex
 categories: viro 
 created: 2024-09-07T00:30:31+0100
-updated: 2024-09-07T18:36:00+0100
+updated: 2024-09-12T21:15:30+0100
 version: 1.1.1
 @end
 
@@ -23,60 +23,60 @@ Virusà ADN enveloppé strictement humain
 
 * Définition:
 
-- maladie à CMV = test CMV+ et symptomatique => ttt curatif 
-- infection à CMV = test CMV+ et asymptomatique => ttt anticipé 
+  - maladie à CMV = test CMV+ et symptomatique => ttt curatif 
+  - infection à CMV = test CMV+ et asymptomatique => ttt anticipé 
 
 * Épidémio
 
-Nombreux modes de transmissoins
-Infection grave possible chez le nouveau-né (transmission materno-fœtale)
-100% afrique, 50% france 
+  Nombreux modes de transmission
+  Infection grave possible chez le nouveau-né (transmission materno-fœtale)
+  100% afrique, 50% france 
 
 * Stades
 
 ** 1. Primoinfection
 
-symptomatique ou non, disséminaton hématogène
-Immunocompétent 
+   symptomatique ou non, disséminaton hématogène
+   Immunocompétent 
 
-- asymptomatique 
-- fièvre prolongée + splénomégalie 
-- cytolyse hépatique 
-- /pas/ d'angine ni ADP 
+   - asymptomatique 
+   - fièvre prolongée + splénomégalie 
+   - cytolyse hépatique 
+   - /pas/ d'angine ni ADP 
 
-Immunodéprimé 
+   Immunodéprimé 
 
-- forme grave, disséminée 
+   - forme grave, disséminée 
 
 ** 2. Latence/persistence
 
-Pas de réplication virale et persistance dans les monocytes, macrophages, cellules endotéliales 
+   Pas de réplication virale et persistance dans les monocytes, macrophages, cellules endotéliales 
 
 ** 3. Récurrence
 
-Gravité selon status immunitaire : atteinte tissulaire si VIH, transplantation+++ Asymptomatique sinon 
+   Gravité selon status immunitaire : atteinte tissulaire si VIH, transplantation+++ Asymptomatique sinon 
 
 * Clinique
 
-- fœtus/nouveau-né : MFIU, RCIU.. 
-- greffe : rique si solide : CMV- recoit CMV+ ou réactivation receveur
-=> primo infection, pneumopathie 
-- VIH : récurrence CMV (rétinien, digestique, pulmonaire+++) Traitement: ganciclovir (ou prodrogue valganciclovir) 
+  - fœtus/nouveau-né : MFIU, RCIU.. 
+  -- surdité mais évolutif (post-natal)
+  - greffe : rique si solide : CMV- recoit CMV+ ou réactivation receveur
+  => primo infection, pneumopathie 
+  - VIH : récurrence CMV (rétinien, digestique, pulmonaire+++) Traitement: ganciclovir (ou prodrogue valganciclovir) 
 
-Pas de grosse concentration dans le sang (3-4log) 
+  Pas de grosse concentration dans le sang (3-4log) 
 
 * Diagnostic
 
-*PCR* 
+  *PCR* 
 
-- Primoinfection postnatale : IgM, IgG +/- CMV 
-- Foetus : PCR CMV liquide amniotique 
-- Congénitale : PCR urine/salive pour distinguer d'une inféction
-périnatale (sans conséquence mais excrétion virale J21) 
-- Surveillance immunodéprimé : VIH+ et lymphocytes T CD4 < 100/mm^3^ 
--- fond d'oeil si positive ! (choriorétinine) 
-- atteinte SNC: PCR LCS 
-- digestive: biopsie digestive 
+  - Primoinfection postnatale : IgM, IgG +/- CMV 
+  - Foetus : PCR CMV liquide amniotique 
+  - Congénitale : PCR urine/salive pour distinguer d'une infection périnatale (sans conséquence mais excrétion virale J21) 
+  - Surveillance immunodéprimé : VIH+ et lymphocytes T CD4 < 100/mm^3^ 
+  -- fond d'oeil si positive ! (choriorétinine) 
+  - atteinte SNC: PCR LCS 
+  - digestive: biopsie digestive 
 
 * ttt
 
@@ -84,6 +84,6 @@ périnatale (sans conséquence mais excrétion virale J21)
 
 * Prévention
 
-Pas de vaccin
-Pas de sérologie systématique chez la femme enceinte 
+  Pas de vaccin
+  Pas de sérologie systématique chez la femme enceinte 
 

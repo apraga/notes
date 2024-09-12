@@ -4,7 +4,7 @@ description:
 authors: alex
 categories: viro 
 created: 2024-09-07T00:30:32+0100
-updated: 2024-09-07T00:30:32+0100
+updated: 2024-09-12T21:19:08+0100
 version: 1.1.1
 @end
 
@@ -19,7 +19,9 @@ Très polymorphes
 
 * Diagnostic
 
-ARN viral 
+  - Pour les formes sévères ou non évidentes
+  - ARN viral donc /RT-PCR/
+  - échantillon selon la symptomatologie
 
 * Traitement
 

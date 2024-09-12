@@ -4,11 +4,11 @@ description:
 authors: alex
 categories: viro
 created: 2024-09-11T23:30:09+0100
-updated: 2024-09-11T23:30:31+0100
+updated: 2024-09-12T22:13:08+0100
 version: 1.1.1
 @end
 
-ARN monocaténaires
+ARN monocaténaires, polarté positive
 Transmission par voie respiratoire (contact direct)
 * Clinique
   Primo :
@@ -16,6 +16,7 @@ Transmission par voie respiratoire (contact direct)
   - fièvre modérée
   - érythème discret : petites macules roses sur le visage puis tronc et membres
   Congénitale
+  - oculaire, auditif, cardiaque, retard psychomoteur
   - < 11 SA: 90% infection foetale -> risque de malfo 90% !
   - diminue entre 24 et 26 SA (25%) mais *risque malfo quasi nul après 20SA*
   - 100% en fin de grossesse
