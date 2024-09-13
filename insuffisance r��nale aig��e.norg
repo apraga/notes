@@ -7,7 +7,7 @@ biochimie
 néphro
 ] 
 created: 2024-09-07T20:13:39+0100
-updated: 2024-09-07T20:13:39+0100
+updated: 2024-09-13T14:05:27+0100
 version: 1.1.1
 @end
 
@@ -18,14 +18,9 @@ Réponse du rein : diminution filtration et augmentation de la réabsorption tub
 - riche en urée 
 - pauvre en Na+, riche en K+ 
 
-: A1 : Fonctionnelle
-: B1 : Organique
-+hline2
-#table.head.columns 2-4 0
-: A2 : [Na+],urinaire, / [K+],urinaire,
-: B2 : < 1
-: C2 : > 1
-: A3 : urée,urinaire,/urée,plasm,
-: B3 : > 100
-: C3 : < 100
-
+@table
+|                                | Fonctionnelle |  Organique      |
+|--------------------------------+-----------    +-------|
+| [Na+]_urinaire / [K+]_urinaire | < 1           | > 1   |
+| urée_urinaire/urée_plasm       | > 100         | < 100 |
+@end
