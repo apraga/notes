@@ -1,0 +1,26 @@
+@document.meta
+title: ARID4A
+description: 
+authors: alexis
+categories: [
+  auragen
+  projet
+]
+created: 2024-09-13T12:02:50+0100
+updated: 2024-09-13T12:20:54+0100
+version: 1.1.1
+@end
+
+Auramatacher: Aucun n’est rendu. Il y a 2 tronquants et 3 faux-sens au total sur Montpellier,Nice,Reims, Marseille
+
+| Tronquant | MR-2201650 | CHU Montpellier | IMR0012 (Malfo ) |
+| Faux-sens | MR-2300355 | CHU Montpellier | IMR0051 (TSA)    |
+|           | MR-2302791 | CHU Nice        | IMR0005  (mito)  |
+|           | MR-2304839 | CHU Reims       | IMR0052 (DI)     |
+|           | MR-2304935 | CHU Marseille   | IMR0001 (MOC)    |
+
+Genematcher fait, une cohorte en cours par Radio Francesca Clementina
+MR-2201650 patient de Valentin Ruault : clinique envoyée
+
+Dossiers non rendu : mails envoyés
+Dossier déjà rendu : mail envoyé (mito)

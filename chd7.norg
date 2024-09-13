@@ -7,7 +7,7 @@ categories: [
 	auragen
 ]
 created: 2024-09-06T16:26:17+0100
-updated: 2024-09-06T18:33:20+0100
+updated: 2024-09-13T12:33:58+0100
 version: 1.1.1
 @end
 
@@ -30,6 +30,18 @@ Hypothèse : grande inversion + petite inversion + délétion
   En fait, l'exon 37 est réinséré avec inversion
   qPCR su
 
+* Brainstormign 2024-09-13
+  La formule du nanopore est complexe pour ls 2e allèle. 2 points non expliqués avec la formule de Xavier
+  - le décalage en MLPA sur l'exon 35 devrait  être plus franc
+  - il semble y avoir une délétion homozygote 
+    Reprendre le schéma du powerpoint "Brainstorming" mais en rajoutant les exons
+    La seconde delins prend un fragment adjacent à l'inv utilisé dans la première inversion.
+
+  Pour le rendu et Achropuce, version simplifiée
+  - allèle 1 = délétion
+  - allèle 2 : inversion exon 35-36 et inversion P2-P4
+  En pratique, ce n'est probablement pas si propre avec des delins d'où probablement les discordances avec notre proposition
+  Figures : nanopore (plus clair), schéma du Remaniement
 * TODO
   Xavier:  Vérifier si un allèle vient d'un parent avec les SNP
 
