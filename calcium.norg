@@ -4,7 +4,7 @@ description:
 authors: alex
 categories: biochimie 
 created: 2024-09-07T20:13:23+0100
-updated: 2024-09-09T20:57:10+0100
+updated: 2024-09-13T14:12:16+0100
 version: 1.1.1
 @end
 
@@ -34,7 +34,7 @@ Pré-anal: attention pas de garrot, centrifugation, mesure rapide
 
 calcémie totale ~ ionisé si pH et protéines normales
 *Si hypoprotidémie, correction de la calcémie en fonction protidémie/albuminémie*
-   Ca_mesuré - (alb-40)/4/40
+   Ca_mesuré - (alb-40)/40
 
 Sérum/plasma hépariné
 Non impacté par variation aigüe pH mais diminué si acidose chronique (et augmenét si alcalose) 

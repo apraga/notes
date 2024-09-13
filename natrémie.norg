@@ -7,7 +7,7 @@ biochimie
 néphro
 ] 
 created: 2024-09-07T20:13:35+0100
-updated: 2024-09-09T23:38:57+0100
+updated: 2024-09-13T14:16:30+0100
 version: 1.1.1
 @end
 
@@ -70,11 +70,8 @@ cirrhose hépatique, syndrome néphrotique, insuffisance rénale
 Une natrémie basse = augmentation du volume plasmatique ?  Pas
 toujours… 
 
-- si la glycémie est très haute, cela va forcer un déplacement d'eau en
-dehors des cellules. Donc le sodium sera dilué mais ce sera simplement
-un *transfert* ! 
-- s'il y a trop de protéines, la machine qui mesure la natrémie va les
-compter aussi dans le volume. Donc *fausse dilution* 
+- si la glycémie est très haute, cela va forcer un déplacement d'eau en dehors des cellules. Donc le sodium sera dilué mais ce sera simplement un *transfert* ! 
+- s'il y a trop de protéines, la machine qui mesure la natrémie va les compter aussi dans le volume. Donc *fausse dilution* 
 
 Sinon oui ! (*vraie hyponatrémie*) Dans ce cas, on réfléchit sur la
 diminution de la concentration du sodium = quantité de sodium / volume.
