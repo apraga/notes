@@ -1,0 +1,511 @@
+
+- title: Shaun the Sheep
+  rating:   4
+  year:     2007
+- title: 12 Angry Men
+  year:   1957
+  rating:   4
+- title: 12 Years a Slave
+  year:   2013
+  rating:   4
+- title: "2001: A Space Odysseys"
+  rating:   4
+  year:     1968
+- title: 47 Ronin
+  year:   2013
+  rating:   3
+- title: A Silent Voice
+  year:   2016
+  rating:   5
+- title: "Alien: Covenant"
+  rating:   4
+  year:     2017
+- title: Aliens
+  year:   1986
+  rating:   4
+- title: All About Eve
+  rating:   4
+  year:     1950
+- title: American Animals
+  year:   2018
+  rating:   4
+- title: Arrival
+  year:   2016
+  rating:   4
+- title: Babel
+  year:   2006
+  rating:   3
+- title: Burning
+  year:   2018
+  rating:   4
+- title: Caché
+  year:   2005
+  rating:   4
+- title: "Captain America: Civil War"
+  year:   2016
+  rating:   3
+- title: City of God
+  rating:   5
+  year:     2002
+- title: Dallas Buyers Club
+  rating:   4
+  year:     2013
+- title: Don't Breathe
+  year:   2016
+  rating:   4
+- title: "Dragon Ball Z: Battle of Gods"
+  year:   2013
+  rating:   3
+- title: Dunkirk
+  year:   2017
+  rating:   4
+- title: Enola Holmes
+  year:   2020
+  rating:   3
+- title: First Blood
+  year:   1982
+  rating:   4
+- title: First Man
+  year:   2018
+  rating:   4
+- title: Green Room
+  year:   2015
+  rating:   4
+- title: High and Low
+  year:   1963
+  rating:   4
+- title: How to Train Your Dragon
+  year:   2010
+  rating:   4
+- title: How to Train Your Dragon 2
+  year:   2014
+  rating:   4
+- title: "How to Train Your Dragon: The Hidden World"
+  year:   2019
+  rating:   4
+- title: Iron Man
+  year:   2008
+  rating:   3
+- title: Iron Man 2
+  year:   2010
+  rating:   3
+- title: Iron Man 3
+  year:   2013
+  rating:   3
+- title: Jodorowsky's Dune
+  rating:   4
+- title: La La Land
+  year:   2016
+  rating:   4
+- title: La pianiste
+  year:   2001
+  rating:   4
+- title: Leave No Trace
+  year:   2018
+  rating:   4
+- title: Les parapluies de Cherbourg
+  rating:   4
+  year:     1964
+- title: Logan
+  year:   2017
+  rating:   4
+- title: Looper
+  year:   2012
+  rating:   4
+- title: Manchester by the Sea
+  year:   2016
+  rating:   4
+- title: "Mission: Impossible - Fallout"
+  year:   2018
+  rating:   4
+- title: "Mission: Impossible - Rogue Nations"
+  year:   2015
+  rating:   4
+- title: Moana
+  year:   2016
+  rating:   4
+- title: Moonlight
+  year:   2016
+  rating:   4
+- title: Mother
+  year:   2009
+  rating:   4
+- title: Mustang
+  year:   2015
+  rating:   4
+- title: Nice Guys
+  year:   2000
+  rating:   4
+- title: No time to die
+  year:   2021
+  rating:   4
+- title: "Planet Earth: A Celebration"
+  year:   2020
+  rating:   4
+- title: Plein Soleil
+  rating:   4
+  year:     1960
+- title: Portrait d'une jeune fille en feu
+  rating:   4
+- title: Ran
+  rating:   4
+- title: Rashomon
+  rating:   4
+- title: Red Beard
+  rating:   4
+- title: Remainder
+  year:   2015
+  rating:   4
+- title: Riders of Justice
+  rating:   4
+- title: Rise of the Planet of the Apes
+  year:   2011
+  rating:   3
+- title: Roma
+  year:   2018
+  rating:   4
+- title: Sanjuro
+  rating:   4
+  year:     1962
+- title: Seven Samurai
+  rating:   4
+  year:     1954
+- title: Shang-Chi and the Legend of the Ten Rings
+  rating:   3
+- title: Snowpiercer
+  rating:   4
+- title: Sorry to Bother You
+  year:   2018
+  rating:   4
+- title: Soul
+  year:   2020
+  rating:   4
+- title: "Spiderman: Far from home"
+  rating:   3
+- title: Spirited Away
+  year:   2001
+  rating:   4
+- title: "Start Wars: The Last of the Skywalker"
+  rating:   3
+- title: Still Walking
+- title: The adventures of robin hood
+  year:   1938
+  rating:   4
+- title: The Death of Stalin
+  year:   2017
+  rating:   4
+- title: The Draughtman's contact
+  rating:   4
+- title: The Endless Trench
+  year:   2019
+  rating:   4
+- title: The GateKeepers
+  rating:   4
+- title: The Handmaiden
+  year:   2016
+  rating:   4
+- title: The Hidden Fortress
+  rating:   4
+- title: The Hunt
+  year:   2012
+  rating:   4
+- title: The Irishman
+  rating:   4
+- title: The Lego Batman Movie
+  rating:   4
+- title: The Lighthouse
+  year:   2019
+  rating:   4
+- title: The Shape of Water
+  year:   2017
+  rating:   4
+- title: The Shining
+  year:   1980
+  rating:   4
+- title: The Throne of Blood
+  rating:   4
+- title: The Witch
+  year:   2015
+  rating:   4
+- title: Three Billboards Outside Ebbing, Missouri
+  year:   2017
+  rating:   4
+- title: Uncut Gems
+  year:   2019
+  rating:   4
+- title: Us
+  rating:   3
+- title: Widows
+  year:   2018
+  rating:   4
+- title: Wonder Woman
+  year:   2017
+  rating:   4
+- title: Yojimbo
+  rating:   4
+- title: Zero Dark Thirty
+  year:   2012
+  rating:   4
+- title: The Northman
+  year:   2021
+  rating:   4
+- title: Poor things
+  year:   2023
+  rating:   4
+- title: "Dungeons & Dragons: Honor Among Thieves"
+- title: "La bataille d'Alger"
+  year:   2023 
+  rating:   4
+- title: 101 Dalmatians
+  year:   1996
+  rating:   3
+- title: 12 Angry Men
+  year:   1957
+  rating:   4
+- title: 12 Years a Slave
+  year:   2013
+  rating:   4
+- title: 47 Ronin
+  year:   2013
+  rating:   3
+- title: A Silent Voice
+  year:   2016
+  rating:   5
+- title: "Alien: Covenant"
+  rating:   4
+- title: Aliens
+  year:   1986
+  rating:   4
+- title: All About Eve
+  rating:   4
+- title: All That Breathes
+  year:   2022
+  rating:   4
+- title: American Animals
+  year:   2018
+  rating:   4
+- title: Arrival
+  year:   2016
+  rating:   4
+- title: Babel
+  year:   2006
+  rating:   3
+- title: Burning
+  year:   2018
+  rating:   4
+- title: Caché
+  year:   2005
+  rating:   4
+- title: "Captain America: Civil War"
+  year:   2016
+  rating:   3
+- title: City of God
+  rating:   5
+- title: Dallas Buyers Club
+  rating:   4
+- title: Don't Breathe
+  year:   2016
+  rating:   4
+- title: Dunkirk
+  year:   2017
+  rating:   4
+- title: Enola Holmes
+  year:   2020
+  rating:   3
+- title: First Blood
+  year:   1982
+  rating:   4
+- title: First Man
+  year:   2018
+  rating:   4
+- title: Glass Onion
+  year:   2022
+  rating:   4
+- title: Green Room
+  year:   2015
+  rating:   4
+- title: High and Low
+  year:   1963
+  rating:   4
+- title: How to Train Your Dragon
+  year:   2010
+  rating:   4
+- title: How to Train Your Dragon 2
+  year:   2014
+  rating:   4
+- title: Huesera The Bone Woman
+  year:   2022
+  rating:   4
+- title: Iron Man
+  year:   2008
+  rating:   3
+- title: Iron Man 2
+  year:   2010
+  rating:   3
+- title: Iron Man 3
+  year:   2013
+  rating:   3
+- title: Jodorowsky's Dune
+  rating:   4
+- title: John Wick
+- title: John Wick - Chapter 2
+  year:   2017
+  rating:   4
+- title: La La Land
+  year:   2016
+  rating:   4
+- title: La pianiste
+  year:   2001
+  rating:   4
+- title: Leave No Trace
+  year:   2018
+  rating:   4
+- title: Les parapluies de Cherbourg
+  rating:   4
+- title: Logan
+  year:   2017
+  rating:   4
+- title: Looper
+  year:   2012
+  rating:   4
+- title: Manchester by the Sea
+  year:   2016
+  rating:   4
+- title: Moana
+  year:   2016
+  rating:   4
+- title: Moonlight
+  year:   2016
+  rating:   4
+- title: Mother
+  year:   2009
+  rating:   4
+- title: Mustang
+  year:   2015
+  rating:   4
+- title: Nice Guys
+  year:   2000
+  rating:   4
+- title: No time to die
+  year:   2021
+  rating:   4
+- title: Plein Soleil
+  rating:   4
+- title: Portrait d'une jeune fille en feu
+  rating:   4
+- title: Poor things
+  year:   2023
+  rating:   4
+- title: Ran
+  rating:   4
+- title: Rashomon
+  rating:   4
+- title: Red Beard
+  rating:   4
+- title: Remainder
+  year:   2015
+  rating:   4
+- title: Repo Man
+  year:   1984
+  rating:   3
+- title: Riders of Justice
+  rating:   4
+- title: Rise of the Planet of the Apes
+  year:   2011
+  rating:   3
+- title: Roma
+  year:   2018
+  rating:   4
+- title: Sanjuro
+  rating:   4
+- title: Seven Samurai
+  rating:   4
+- title: Shang-Chi and the Legend of the Ten Rings
+  rating:   3
+- title: Snowpiercer
+  rating:   4
+- title: Sorry to Bother You
+  year:   2018
+  rating:   4
+- title: Soul
+  year:   2020
+  rating:   4
+- title: Spirited Away
+  year:   2001
+  rating:   4
+- title: Still Walking
+  year:   2008
+  rating:   4
+- title: The Death of Stalin
+  year:   2017
+  rating:   4
+- title: The Draughtman's contact
+  rating:   4
+- title: The Endless Trench
+  year:   2019
+  rating:   4
+- title: The GateKeepers
+  rating:   4
+- title: The Handmaiden
+  year:   2016
+  rating:   4
+- title: The Hidden Fortress
+  rating:   4
+- title: The Hunt
+  year:   2012
+  rating:   4
+- title: The Irishman
+  rating:   4
+- title: The Iron Giant
+  rating:   4
+- title: The Lego Batman Movie
+  rating:   4
+- title: The Lighthouse
+  year:   2019
+  rating:   4
+- title: The Northman
+  year:   2021
+  rating:   4
+- title: The Passion of the Christ
+  year:   2004
+  rating:   4
+- title: The Shape of Water
+  year:   2017
+  rating:   4
+- title: The Shining
+  year:   1980
+  rating:   4
+- title: The Throne of Blood
+  rating:   4
+- title: The Witch
+  year:   2015
+  rating:   4
+- title: The adventures of robin hood
+  year:   1938
+  rating:   4
+- title: Three Billboards Outside Ebbing, Missouri
+  year:   2017
+  rating:   4
+- title: Uncut Gems
+  year:   2019
+  rating:   4
+- title: Us
+  rating:   3
+- title: Vast of the night
+  year: 2021
+  rating:   4
+- title: Widows
+  year:   2018
+  rating:   4
+- title: Wonder Woman
+  year:   2017
+  rating:   4
+- title: Yojimbo
+  rating:   4
+  year:     1961
+- title: Zero Dark Thirty
+  year:   2012
+  rating:   4
+- title: Poor things
+  year:     2023
+  rating:   4
