@@ -4,7 +4,7 @@ description:
 authors: alex
 categories: biochimie 
 created: 2024-09-07T20:13:30+0100
-updated: 2024-09-07T20:13:30+0100
+updated: 2024-09-15T23:05:42+0100
 version: 1.1.1
 @end
 
@@ -139,50 +139,31 @@ hépatobiliaire chronique
 diabote/dyslipidémie,/obésite, alcoolisme (rappport inversé), autres
 médicaments (isoniazide…), autto-immun, surcharge (hméocromatose,
 Wilson) NB: élimiier une nécrose musculaire/myocardique, pancréate NB:
-cherche un risque d'hépatite fulminante : TP, facteur v, ammionémie Bilan enzymatique anormal 
+  cherche un risque d'hépatite fulminante : TP, facteur v, ammionémie 
 
-: A1 : γ GT
-: B1 : PAL
-: C1 : ALAT,ASAT
-: D1 : Interprétation
-: E1 : Étiologies
-+hline2
-#table.head.columns 2-7 0
-: A2 : augmenté
-: B2 : augmenté
-: C2 : augmenté
-: D2 : hépatopathie cytolytique
-: E2 : hépatite virale, alcool, médicaments
-: A3 : augmenté
-: B3 : augmenté
-: C3 : N ou peu augmenté
-: D3 : hépatopathie cholestatique
-: E3 : - médicaments (antidépresseurs),
-: E4 : - biliaire, pancréas, foie
-: A5 : augmenté
-: B5 : N
-: C5 : N
-: E5 : alcool, médicaments inducteurs
-: E6 : enzymatique, stéaotose, sucharge pondérale
-: E7 : +/- hyperthyoroïdies, parasite
+  Bilan enzymatique anormal 
 
-Cholestase : PAL > 1.5N (plutôt extra hépatique), γGT > 3N (plutôt
-intra-hépatique), ALAT, AST < 2N Ictère : augmentation bilirubine 
+@table
+  | γ GT     | PAL      | ALAT,ASAT         | Interprétation             | Étiologies                                 |
+  |----------+----------+-------------------+----------------------------+--------------------------------------------|
+  | augmenté | augmenté | augmenté          | hépatopathie cytolytique   | hépatite virale, alcool, médicaments       |
+  | augmenté | augmenté | N ou peu augmenté | hépatopathie cholestatique | - médicaments (antidépresseurs),           |
+  |          |          |                   |                            | - biliaire, pancréas, foie                 |
+  | augmenté | N        | N                 |                            | alcool, médicaments inducteurs             |
+  |          |          |                   |                            | enzymatique, stéaotose, sucharge pondérale |
+  |          |          |                   |                            | +/- hyperthyoroïdies, parasite             |
+  @end
 
-+hline2
-#table.head.columns 1-6 0
-: A1 : non conjuguée :
-: B1 : - extra-hépatique
-: C1 : hémolyse (nouveau-né, constit, acquis)
-: B2 : - hépatique
-: C2 : : Gilbert, Criggler-Najjar, ictère transitoire du nouveau-né
-: A3 : conjuguée
-: B3 : - intra-hépatique
-: C3 : : médicaments, hépatite virale/parasitaire, autoimmun,
-: C4 : carcinome, cirrhose biliaire primitive, septicémie, cholestase gravidique
-: B5 : - extra-hépatique
-: C5 : lithiase cholédoque, cancer pancréas, pancréatite chronique
-: C6 : , cholangite sclérosante, sténose/carcinome des voies biliaires
+  Cholestase : PAL > 1.5N (plutôt extra hépatique), γGT > 3N (plutôt
+  intra-hépatique), ALAT, AST < 2N Ictère : augmentation bilirubine
+@table
+  | non conjuguée : | - extra-hépatique | hémolyse (nouveau-né, constit, acquis)                                    |
+  |                 | - hépatique       | : Gilbert, Criggler-Najjar, ictère transitoire du nouveau-né              |
+  | conjuguée       | - intra-hépatique | : médicaments, hépatite virale/parasitaire, autoimmun,                    |
+  |                 |                   | carcinome, cirrhose biliaire primitive, septicémie, cholestase gravidique |
+  |                 | - extra-hépatique | lithiase cholédoque, cancer pancréas, pancréatite chronique               |
+  |                 |                   | , cholangite sclérosante, sténose/carcinome des voies biliaires           |
+  @end
 
 * <TODO> Cirrhose
 

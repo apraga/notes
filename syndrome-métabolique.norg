@@ -4,33 +4,22 @@ description:
 authors: alex
 categories: biochimie 
 created: 2024-09-07T20:13:29+0100
-updated: 2024-09-07T20:13:29+0100
+updated: 2024-09-15T22:58:26+0100
 version: 1.1.1
 @end
 
 * Définition
 
-: B1 : Homme
-: C1 : Femme
-+hline2
-#table.head.columns 2-7 0
-: A2 : Abdomen
-: B2 : > 94cm
-: C2 : > 80cm
-: A3 : HDLc
-: B3 : < 40mg/dL
-: C3 : < 50mg/dL
-: A4 : TG
-: B4 : > 150
-: C4 : idem
-: A5 : PA
-: B5 : S > 130
-: C5 : idem
-: B6 : D > 85
-: C6 : idem
-: A7 : Glycémie
-: B7 : > 1g/L ou DT2
-: C7 : idem
+@table
+|          | Homme         | Femme     |
+|----------+---------------+-----------|
+| Abdomen  | > 94cm        | > 80cm    |
+| HDLc     | < 40mg/dL     | < 50mg/dL |
+| TG       | > 150         | idem      |
+| PA       | S > 130       | idem      |
+|          | D > 85        | idem      |
+| Glycémie | > 1g/L ou DT2 | idem      |
+  @end
 
 * Prise en charge
 

@@ -7,7 +7,7 @@ biochimie
 hepato
 ]/
 created: 2024-09-07T20:13:22+0100
-updated: 2024-09-07T20:13:22+0100
+updated: 2024-09-15T23:10:53+0100
 version: 1.1.1
 @end
 
@@ -50,25 +50,18 @@ version: 1.1.1
 - Pancréatite lithiasique vs non lithiasique : pas évident… Plus de leucocyte, plus de LDH et augmentation urée sanguine monis importante pour la liathiasique 
 - Étiologie des ascite selon le gradiant d’albumine sérum-ascite 
 
-: A1 : gradient >= 11g/L
-: B1 : < 11g/L
-+hline2
-#table.head.columns 2-9 0
-: A2 : Hépatite alcoolique
-: B2 : Ascite biliaire
-: A3 : Sd Budd-Chiari
-: B3 : Obstruction intestinale
-: A4 : Ascite cardiaque
-: B4 : Infarctus intestinal
-: A5 : Cirrhose
-: B5 : Syndrome néphrotique
-: A6 : Stéatohapatique aigüe gravidique
-: B6 : Ascite pancréatique
-: A7 : Insuf. hépatique fulminante
-: B7 : Carcinose péritonéale
-: A8 : Métastases hépatiques (massives)
-: B8 : Péritonite tuberculeuse
-: A9 : Thrombose porte
+@table
+  | gradient >= 11g/L                | < 11g/L                 |
+  |----------------------------------+-------------------------|
+  | Hépatite alcoolique              | Ascite biliaire         |
+  | Sd Budd-Chiari                   | Obstruction intestinale |
+  | Ascite cardiaque                 | Infarctus intestinal    |
+  | Cirrhose                         | Syndrome néphrotique    |
+  | Stéatohapatique aigüe gravidique | Ascite pancréatique     |
+  | Insuf. hépatique fulminante      | Carcinose péritonéale   |
+  | Métastases hépatiques (massives) | Péritonite tuberculeuse |
+  | Thrombose porte                  |                         |
+  @end
 
 * Algorithmes décisionnels
 
@@ -139,39 +132,19 @@ Grand syndromes
 - {:insuffisance-hépato-cellulaire.norg:}[Insuffisance hépato-cellulaire] 
 - inflammation 
 
-: B1 : Cholestase
-: C1 : Cytolyse
-: D1 : IHC
-+hline2
-#table.head.columns 2-10 0
-: A2 : bilirubine totale
-: B2 : *++*
-: C2 : +
-: D2 : +
-: A3 : bili conjuguée
-: B3 : *++*
-: C3 : N ou +
-: D3 : N ou +
-: A4 : acides biliaires
-: B4 : *++*
-: C4 : N
-: A5 : PAL
-: B5 : *+*
-: C5 : N ou +
-: A6 : GGT
-: B6 : +
-: C6 : N ou +
-: D6 : N ou +
-: A7 : ASAT,ALAT
-: B7 : +
-: C7 : *++*
-: D7 : N ou +
-: A8 : TP
-: D8 : *-*
-: A9 : Albumine
-: D9 : *–*
-: A10 : Cholestérol
-: D10 : N ou -
+@table
+  |                   | Cholestase | Cytolyse | IHC    |
+  |-------------------+------------+----------+--------|
+  | bilirubine totale | *++*       | +        | +      |
+  | bili conjuguée    | *++*       | N ou +   | N ou + |
+  | acides biliaires  | *++*       | N        |        |
+  | PAL               | *+*        | N ou +   |        |
+  | GGT               | +          | N ou +   | N ou + |
+  | ASAT,ALAT         | +          | *++*     | N ou + |
+  | TP                |            |          | *-*    |
+  | Albumine          |            |          | *--*   |
+  | Cholestérol       |            |          | N ou - |
+  @end
 
 - Hépatite : cytolyse+++, rétention biliarie+ 
 - Cirrhose : IHC+++, inflammation++, cytolyse+ 

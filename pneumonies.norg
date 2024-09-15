@@ -4,7 +4,7 @@ description:
 authors: alex
 categories: bactério 
 created: 2024-09-07T21:17:05+0100
-updated: 2024-09-07T21:17:05+0100
+updated: 2024-09-15T22:53:44+0100
 version: 1.1.1
 @end
 
@@ -15,46 +15,23 @@ Classification
 - alvéolaires : bactéries pyogènes, surtout sphère oropharyngéee qui disséminent 
 - interstitielles (atypiques) : bactéries intracellulaires, virus 
 
-+hline2
-#table.head.columns 1-15 0
-: B1 : Alvéolaire/lobaire
-: C1 : Interstitielle
-: A2 : État général
-: B2 : altéré
-: A3 : Début
-: B3 : brutal
-: C3 : progressif
-: A4 : Frisson
-: B4 : oui
-: C4 : rare
-: A5 : Fièvre
-: B5 : 39-40°
-: C5 : 38-39°
-: A6 : Douleur tho
-: B6 : Oui
-: C6 : Rare
-: A7 : Toux
-: B7 : productive
-: C7 : sèche
-: A8 : Expectoration
-: B8 : purulente
-: C8 : absente
-: A9 : Radio
-: B9 : Opacité homogène
-: C9 : Interstitielle
-: A10 : Leuco
-: B10 : > 15G/L
-: C10 : < 15G/L
-: A11 : Origines
-: B11 : {:streptococcus-pneumoniae.norg:}[Streptococcus pneumoniae]
-: C11 : M. pneumoniae
-: B12 : {:hæmophilus-influenza.norg:}[Hæmophilus influenza]
-: C12 : C. psittaci,
-: B13 : {:legionella-pneumophiliea.norg:}[Légionelle]
-: C13 : C. burnetti
-: B14 : autres bactéries
-: C14 : {:legionella-pneumophiliea.norg:}[Légionelle]
-: C15 : Virus
+@table
+|               | Alvéolaire/lobaire       | Interstitielle |
+| État général  | altéré                   |                |
+| Début         | brutal                   | progressif     |
+| Frisson       | oui                      | rare           |
+| Fièvre        | 39-40°                   | 38-39°         |
+| Douleur tho   | Oui                      | Rare           |
+| Toux          | productive               | sèche          |
+| Expectoration | purulente                | absente        |
+| Radio         | Opacité homogène         | Interstitielle |
+| Leuco         | > 15G/L                  | < 15G/L        |
+| Origines      | [[denote:20240831T173233][Streptococcus pneumoniae]] | M. pneumoniae  |
+|               | [[denote:20240816T121919][Hæmophilus influenza]]     | C. psittaci,   |
+|               | [[denote:20240515T225630][Légionelle]]               | C. burnetti    |
+|               | autres bactéries         | [[denote:20240515T225630][Légionelle]]     |
+|               |                          | Virus          |
+  @end
 
 Fréquent, de gravité variable
 Les plus graves :{:streptococcus-pneumoniae.norg:}[Streptococcus pneumoniae],{:hæmophilus-influenza__bactérie_bactério.org}[Hæmophilus influenza] ({:staphylocoque-aureus__bactério.org}[Staphylocoque aureus] ) 

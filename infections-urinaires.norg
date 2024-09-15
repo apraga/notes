@@ -4,7 +4,7 @@ description:
 authors: alex
 categories: bactério 
 created: 2024-09-07T21:16:58+0100
-updated: 2024-09-07T21:16:58+0100
+updated: 2024-09-15T23:08:21+0100
 version: 1.1.1
 @end
 
@@ -113,42 +113,16 @@ maltophilia, Burkholderia cepacia
 
 * Interprétation
 
-: A1 : Dispositif
-: B1 : Clinique
-: C1 : Leucotyurie
-: D1 : Bactéurie
-: E1 : IU
-: F1 : Antibiogramme
-+hline2
-#table.head.columns 2-6 0
-: A2 : Non
-: B2 : oui
-: C2 : oui
-: D2 : cf seuils
-: E2 : oui
-: F2 : oui
-: B3 : non
-: C3 : oui/non
-: D3 : >= 10^3^
-: E3 : colonisation
-: F3 : non
-: B4 : oui
-: C4 : non
-: D4 : cf tableau
-: E4 : débutant/neutropénie
-: F4 : oui
-: A5 : Oui
-: B5 : oui
-: C5 : NC
-: D5 : >= 10^5^
-: E5 : oui
-: F5 : oui
-: B6 : non
-: C6 : NC
-: D6 : >= 10^3^
-: E6 : colonisation
-: F6 : non
-
+@table
+| Dispositif | Clinique | Leucotyurie | Bactéurie  | IU                   | Antibiogramme |
+|------------+----------+-------------+------------+----------------------+---------------|
+| Non        | oui      | oui         | cf seuils  | oui                  | oui           |
+|            | non      | oui/non     | >= 10^{3}  | colonisation         | non           |
+|            | oui      | non         | cf tableau | débutant/neutropénie | oui           |
+|------------+----------+-------------+------------+----------------------+---------------|
+| Oui        | oui      | NC          | >= 10^{5}  | oui                  | oui           |
+|            | non      | NC          | >= 10^{3}  | colonisation         | non           |
+  @end
 - *colonisation* femme *enceinte* avec bactérurie >= 10^5^ groupes 1 à 3* : antibiogramme !! 
 - si invasif : significatif si > seuil 
 

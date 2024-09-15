@@ -7,7 +7,7 @@ biochimie
 nutrition
 ]
 created: 2024-09-07T20:13:35+0100
-updated: 2024-09-07T20:13:35+0100
+updated: 2024-09-15T22:52:56+0100
 version: 1.1.1
 @end
 
@@ -84,26 +84,17 @@ E : quelques jours/mois selon les tissus
 - antioxydants 
 - prohormone 
 
-+hline2
-#table.head.columns 1-9 0
-: A1 : A
-: B1 : Croissance, vision
-: A2 : B1
-: B2 : métabolismes des glucides, certains acides aminés
-: A3 : B2
-: B3 : Cofacteur d'oxydoréductases
-: A4 : B6
-: B4 : Transamination, métabolisme de certains acides aminés
-: A5 : B9, B12
-: B5 : MET, bases puriques et pyrimidiques, érythropoïèse
-: A6 : C
-: B6 : collagène, globules rouges, absorption du fer
-: A7 : D
-: B7 : phosphocalcique
-: A8 : E
-: B8 : antioxydant, fertilité
-: A9 : K
-: B9 : coagulation, fixation du calcium
+@table
+| A       | Croissance, vision                                    |
+| B1      | métabolismes des glucides, certains acides aminés     |
+| B2      | Cofacteur d'oxydoréductases                           |
+| B6      | Transamination, métabolisme de certains acides aminés |
+| B9, B12 | MET, bases puriques et pyrimidiques, érythropoïèse    |
+| C       | collagène, globules rouges, absorption du fer         |
+| D       | phosphocalcique                                       |
+| E       | antioxydant, fertilité                                |
+| K       | coagulation, fixation du calcium                      |
+   @end
 
 ** Carences
 

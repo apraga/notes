@@ -4,7 +4,7 @@ description:
 authors: alex
 categories: bactério 
 created: 2024-09-07T21:17:01+0100
-updated: 2024-09-12T18:02:45+0100
+updated: 2024-09-15T22:54:47+0100
 version: 1.1.1
 @end
 
@@ -39,22 +39,14 @@ version: 1.1.1
    - une bactérie va d'abord fermenter le glucose (en bas) puis le lactose (en haut). 
    - Donc lactose+ et glucose- n'est pas possible. Passe au jaune si acide. Exemple: 
 
-   : B1 : Bas
-   : C1 : Haut
-   +hline2
-   #table.head.columns 2-5 0
-   : A2 : Shigella
-   : B2 : glucose+ (jaune )
-   : C2 : lactose- (rouge)
-   : A3 : Pyo
-   : B3 : glucose-(rouge)
-   : C3 : lactose-
-   : A4 : Salmonelle
-   : B4 : noir (H2S)
-   : C4 : noir
-   : A5 : E.col
-   : B5 : glucose+
-   : C5 : glucose+
+@table
+|            | Bas               | Haut             |
+|------------+-------------------+------------------|
+| Shigella   | glucose+ (jaune ) | lactose- (rouge) |
+| Pyo        | glucose-(rouge)   | lactose-         |
+| Salmonelle | noir (H2S)        | noir             |
+| E.col      | glucose+          | glucose+         |
+   @end
 
    - VCAT : Neisseria (Vancomycine, Colistine, Amphotéricine,
    Triméthoprime) 

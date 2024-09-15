@@ -4,7 +4,7 @@ description:
 authors: alex
 categories: hémostase 
 created: 2024-09-07T21:16:48+0100
-updated: 2024-09-07T21:16:48+0100
+updated: 2024-09-15T22:59:59+0100
 version: 1.1.1
 @end
 
@@ -31,31 +31,15 @@ Contre-indication : saignements actifs, IR sévère
 
 ** Bilan de coagulation
 
-: A1 : Test
-: B1 : Dabigatran
-: C1 : Rivaroxaban
-: D1 : Apixaban
-+hline2
-#table.head.columns 2-6 0
-: A2 : TP
-: B2 : ↑
-: C2 : ↑
-: D2 : N ou↑
-: A3 : TCA
-: B3 : ↑
-: C3 : ↑
-: D3 : ↑
-: A4 : Fibrinogène
-: B4 : Claus : N
-: C4 : Claus : N
-: D4 : Claus : N
-: B5 : Chromogénique: ↑
-: C5 : Chromogénique: ↑
-: D5 : Chromogénique: ↑
-: A6 : Facteurs
-: B6 : ↑
-: C6 : ↑
-: D6 : ↑
+@table
+| Test        | Dabigatran        | Rivaroxaban       | Apixaban          |
+|-------------+-------------------+-------------------+-------------------|
+| TP          | ↑                | ↑                | N ou↑            |
+| TCA         | ↑                | ↑                | ↑                |
+| Fibrinogène | Claus : N         | Claus : N         | Claus : N         |
+|             | Chromogénique: ↑ | Chromogénique: ↑ | Chromogénique: ↑ |
+| Facteurs    | ↑                | ↑                | ↑                |
+   @end
 
 /Limiter les bilans d'hémostase pour patients sous AOD/
 Si besoin, prélèvement juste avant la prise 

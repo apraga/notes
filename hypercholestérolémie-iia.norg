@@ -4,7 +4,7 @@ description:
 authors: alex
 categories: biochimie 
 created: 2024-09-07T20:13:29+0100
-updated: 2024-09-07T20:13:29+0100
+updated: 2024-09-15T22:59:19+0100
 version: 1.1.1
 @end
 
@@ -43,16 +43,11 @@ Génétique
 ~ Évaluer risque cardiovasculaire (SCORE) si 40-70ans snas HTP sévère ou diabète 
 ~ LDL-c en fonction du risque 
 
-: A1 : Très haut
-: B1 : haut
-: C1 : modéré
-: D1 : bas
-+hline2
-#table.head.columns 2 0
-: A2 : LDL < 0.55
-: B2 : 0.70
-: C2 : < 1
-: D2 : < 1.16
+@table
+    | Très haut  | haut | modéré | bas |
+    |------------+------+--------+-----|
+    | LDL < 0.55 | 0.70 | < 1    | < 1.16 |
+  @end
 
 ESCs 2019
 Prévention primaire si < 75ans 
