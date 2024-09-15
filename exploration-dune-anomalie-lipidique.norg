@@ -4,7 +4,7 @@ description:
 authors: alex
 categories: biochimie 
 created: 2024-09-07T20:13:24+0100
-updated: 2024-09-07T20:13:24+0100
+updated: 2024-09-15T23:09:00+0100
 version: 1.1.1
 @end
 
@@ -59,23 +59,12 @@ version: 1.1.1
 
 - normal sans FR de risque CV 
 
-: A1 : Type
-: B1 : mmol/L
-: C1 : g/L
-+hline2
-#table.head.columns 2-5 0
-: A2 : Total
-: B2 : < 6.2mmol/L
-: C2 : < 2.4g/L
-: A3 : LDL
-: B3 : < 4.1mmol/L
-: C3 : < 1.6g/L
-: A4 : HDL
-: B4 : > 1 mmol/L
-: C4 : > 0.40g/L
-: A5 : TG
-: B5 : < 1.7mmol/L
-: C5 : < 1.5g/L
+  | Type  | mmol/L      | g/L       |
+  |-------+-------------+-----------|
+  | Total | < 6.2mmol/L | < 2.4g/L  |
+  | LDL   | < 4.1mmol/L | < 1.6g/L  |
+  | HDL   | > 1 mmol/L  | > 0.40g/L |
+  | TG    | < 1.7mmol/L | < 1.5g/L  |
 
 - cible : selon FR CV 
 - {:physiologie-de-la-grossesse__biochimie_gynéco.org::#h:7a89950f-6a1f-4acb-a23b-05fed41c4f7e}[Grossesse::Lipides] 

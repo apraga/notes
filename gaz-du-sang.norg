@@ -4,7 +4,7 @@ description:
 authors: alex
 categories: biochimie 
 created: 2024-09-07T20:13:35+0100
-updated: 2024-09-10T00:05:03+0100
+updated: 2024-09-15T23:07:28+0100
 version: 1.1.1
 @end
 
@@ -117,17 +117,14 @@ loi de Beer-lambert donne relation entre absorbance et concentration
 L'absorbance totale est mesure mais les coefficients de contribution de chaque Hb est connue
 Sont rendus 
 
-: B1 : Valeurs (%)
-+hline2
-#table.head.columns 2-5 0
-: A2 : oxyhémoglobine (O2Hb)
-: B2 : 95-98
-: A3 : désoxyhémoglobine (HHb) 0-5
-: B3 : 0-5
-: A4 : carboxyhémoglobine (cCOHb)
-: B4 : < 1.5%
-: A5 : methémoglobine (MetHb)
-: B5 : <1.5
+@table
+|                             | Valeurs (%)  |
+|-----------------------------+---------|
+| oxyhémoglobine (O2Hb)       | 95-98   |
+| désoxyhémoglobine (HHb) 0-5 | 0-5     |
+| carboxyhémoglobine (cCOHb)  | < 1.5%  |
+| methémoglobine (MetHb)      | <1.5    |
+  @end
 
 *Une méthémglobine significative est une urgence*
 Sont *calculé* : fraction oxyHb, sat O2, Hématocrite 

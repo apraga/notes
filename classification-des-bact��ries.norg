@@ -4,7 +4,7 @@ description:
 authors: alex
 categories: bactério 
 created: 2024-09-07T21:16:50+0100
-updated: 2024-09-07T21:16:50+0100
+updated: 2024-09-15T23:03:42+0100
 version: 1.1.1
 @end
 
@@ -26,43 +26,38 @@ coloration Aérobies
 oxydoréductase qui intervient dans la résistance à la bactéricidie par
 le peroxyde d'oxygène 
 
-: B1 : Catalase +
-: C1 : Catalase -
-+hline2
-#table.head.columns 2-6 0
-: B2 : aérobies strictes
-: A3 : Cocci gram+
-: B3 : staph
-: C3 : strepto
-: A4 : Bacille Gram +
-: B4 : Listeria
-: C4 : Lactobacillus
-: B5 : Corynebacterium
-: B6 : Propionobacterium
 
+@table
+|                | Catalase +        | Catalase -    |
+|----------------+-------------------+---------------|
+|                | aérobies strictes |               |
+| Cocci gram+    | staph             | strepto       |
+| Bacille Gram + | Listeria          | Lactobacillus |
+|                | Corynebacterium   |               |
+|                | Propionobacterium |               |
+  @end
 * Oxydase
 
 détecte les cytochrome de type c (pigments hémo-protéiques dans la
 plupart des cellules vivante) 
 
-: A1 : Oxydase +
-: B1 : Oxydase -
-+hline2
-#table.head.columns 2-14 0
-: A2 : Aeromonas
-: A3 : Bordetella
-: A4 : Branhamella
-: A5 : Brucella
-: A6 : Burkholderia
-: A7 : Campylobacter
-: A8 : Flavobacterium
-: A9 : Moraxella
-: A10 : Neisseria
-: B10 : staph
-: A11 : Pasteurella
-: A12 : Plesiomonas
-: A13 : Pseudomonas
-: A14 : Vibrio
+@table
+| Oxydase +      | Oxydase - |
+|----------------+-----------|
+| Aeromonas      |           |
+| Bordetella     |           |
+| Branhamella    |           |
+| Brucella       |           |
+| Burkholderia   |           |
+| Campylobacter  |           |
+| Flavobacterium |           |
+| Moraxella      |           |
+| Neisseria      | staph     |
+| Pasteurella    |           |
+| Plesiomonas    |           |
+| Pseudomonas    |           |
+| Vibrio         |           |
+  @end
 
 * Mobile :
 

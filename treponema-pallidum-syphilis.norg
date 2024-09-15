@@ -6,7 +6,7 @@ categories: [
 bactério
 ]
 created: 2024-09-07T21:17:10+0100
-updated: 2024-09-07T21:17:10+0100
+updated: 2024-09-15T22:55:33+0100
 version: 1.1.1
 @end
 
@@ -43,16 +43,13 @@ Prend mal la coloration de Gram, ne se cultive pas /in vitro/ !
 --- antigène de type phospholipides (membrane mais aussi mitochondries) par agglutination 
 --- infection active mais *peu spécifique* | | TT+ | TT - | 
 
-+hline2
-#table.head.columns 1-2 0
-: A1 : VRDL/TNT+
-: B1 : active ou récemment traité
-: C1 : faux positif
-: A2 : VRDL/TNT-
-: B2 : traité et guérie
-: C2 : trop précoce
-
-Contrôle 3 semaine si TT négatif ou équivoque ou TT+ mais TNT- 
+@table
+    |           | TT+                        | TT -         |
+    |-----------+----------------------------+--------------|
+    | VRDL/TNT+ | active ou récemment traité | faux positif |
+    | VRDL/TNT- | traité et guérie           | trop précoce |
+  @end
+Contrôle 3 semaine si TT négatif ou équivoque ou TT+ mais TNT-
 
 * Cas particuliers
 

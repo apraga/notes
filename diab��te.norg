@@ -7,7 +7,7 @@ biochimie
 nutrition
 ]/
 created: 2024-09-07T20:13:19+0100
-updated: 2024-09-07T20:13:19+0100
+updated: 2024-09-15T23:06:37+0100
 version: 1.1.1
 @end
 
@@ -102,25 +102,20 @@ antiGAD positif: chercher
 
 * Type 1 et 2
 
-: A1 : 1
-: B1 : 2
-+hline2
-#table.head.columns 2-9 0
-: A2 : Début brutal
-: B2 : insidieux
-: A3 : Patient mince
-: B3 : surpoids/obésité
-: A4 : < 35 ans
-: B4 : > 40 ans
-: A5 : Cétose inaugurale
-: B5 : Cétose rare
-: A6 : destruction cellules β par autoimmunité
-: B6 : Résultat insuline
-: B7 : Déficit sécrétion insuline -
-: A8 : Génétique: rares ATCD familiaux
-: B8 : ATCD familiaux fréquence
-: A9 : 50-70% jumeaux homozygotes
-: B9 : 90-100%
+@table
+| 1                                       | 2                            |
+|-----------------------------------------+------------------------------|
+| Début brutal                            | insidieux                    |
+| Patient mince                           | surpoids/obésité             |
+| < 35 ans                                | > 40 ans                     |
+| Cétose inaugurale                       | Cétose rare                  |
+|-----------------------------------------+------------------------------|
+| destruction cellules β par autoimmunité | Résultat insuline            |
+|                                         | Déficit sécrétion insuline - |
+|-----------------------------------------+------------------------------|
+| Génétique: rares ATCD familiaux         | ATCD familiaux fréquence     |
+| 50-70% jumeaux homozygotes              | 90-100%                      |
+  @end
 
 ** Prédisposition génétique
 
