@@ -1,8 +1,0 @@
-#+title:      Integrating gene annotation with orthology inference at scale
-#+date:       [2024-08-06 mar. 10:20]
-#+filetags:   :bib:pseudogène:
-#+identifier: 20240806T102022
-#+reference:  Kirilenko_2023
-
-Détecte orthologues à partir d'un génome de référence, d'un alignement et de gènes annotés.
-Pas le scope du projet ( pour les définitions, voir [[denote:20240806T101328][Séquences homologues]]  )

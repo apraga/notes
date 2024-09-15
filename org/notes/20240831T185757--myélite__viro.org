@@ -1,8 +1,0 @@
-#+title:      Myélite
-#+date:       [2024-08-31 Sat 18:57]
-#+filetags:   :viro:
-#+identifier: 20240831T185757
-
-Virale:
-- poliovirus, entérovirus: paralysie flasque
-- [[denote:20240831T142847][HSV]] 2

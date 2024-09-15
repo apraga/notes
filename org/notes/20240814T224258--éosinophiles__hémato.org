@@ -1,8 +1,0 @@
-#+title:      Éosinophiles
-#+date:       [2024-08-14 Wed 22:42]
-#+filetags:   :hémato:
-#+identifier: 20240814T224258
-
-- Faiblement phagocytaires
-- Très cytotoxiques contre les parasites
-- Sécrétion de protéines détruisant les microorganismes mais aussi les tissus...

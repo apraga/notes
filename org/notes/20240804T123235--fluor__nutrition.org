@@ -1,7 +1,0 @@
-#+title:      Fluor
-#+date:       [2024-08-04 Sun 12:32]
-#+filetags:   :nutrition:
-#+identifier: 20240804T123235
-
-Carence : caries dentaires
-Toxicité : fluorose dentaire/osseuse

@@ -1,9 +1,0 @@
-#+title:      Investigative genetic genealogy: Current methods, knowledge and practice
-#+date:       [2024-08-01 jeu. 15:23]
-#+filetags:   :bib:facebook:
-#+identifier: 20240801T152355
-#+reference:  kling2021investigative
-
-Principe : exploitation de données SNP + généalogique pour identifier des personnel dans un contexte criminel
-
-Non lu

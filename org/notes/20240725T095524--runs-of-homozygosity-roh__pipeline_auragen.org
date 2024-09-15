@@ -1,9 +1,0 @@
-#+title:      Runs of Homozygosity (ROH)
-#+date:       [2024-07-25 Thu 09:55]
-#+filetags:   :pipeline:auragen:
-#+identifier: 20240725T095524
-
- - attention, on renvoie des RoH et LoH (loss of heterozygotie)
- - Utile pour voir si consanguinité, disomie uniparentale
- - limite basse 2Mb
- - résultat sous forme de tableau. Les courbes brutes semblent utiles mais non rendus car on ne sait pas les interpréter ?

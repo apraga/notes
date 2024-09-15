@@ -1,8 +1,0 @@
-#+title: Élévation isolée des PAL
-#+date:       [2024-07-23 Tue 19:19]
-#+filetags:   :biochimie:
-#+identifier: 20240723T191945
-
-* Algorithme
-- GGT: origine osseusse ? Sinon
-- sinon médicaments, anticorps anti-mitochondrie (cirrhose biliaire primitive), EAC (sarcoïdose ?), écho abdo

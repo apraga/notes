@@ -1,6 +1,0 @@
-#+title:      TCMH
-#+date:       [2024-08-27 Tue 22:13]
-#+filetags:   :hémato:
-#+identifier: 20240827T221357
-
-Teneur corpusculaire moyenne en hémoglobine = masse moyenne par hématie

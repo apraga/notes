@@ -1,4 +1,0 @@
-#+title:      Syndrome hémolytique et urémique
-#+date:       [2024-09-04 Wed 23:53]
-#+filetags:   :bactério:hémato:
-#+identifier: 20240904T235349

@@ -1,7 +1,0 @@
-#+title:      Leucémie myéloïde chronique
-#+date:       [2024-08-15 Thu 22:49]
-#+filetags:   :hémato:
-#+identifier: 20240815T224958
-
-* Attention
-Il peut y avoir des mutations de BCR-ABL et JAK2 V617F

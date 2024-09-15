@@ -1,7 +1,0 @@
-#+title:      CCMH
-#+date:       [2024-08-27 Tue 22:12]
-#+filetags:   :hémato:
-#+identifier: 20240827T221227
-
-Concentration corpusculaire moyenne en hémoglobine = concentration moyenne dans le GR
-=  Hb/Ht

@@ -1,6 +1,0 @@
-#+title:      Auradb
-#+date:       [2024-08-09 ven. 14:18]
-#+filetags:   :auragen:
-#+identifier: 20240809T141850
-
-Couch prod aurapport -> auradb-mr -> chercher par ID de gène HGNC

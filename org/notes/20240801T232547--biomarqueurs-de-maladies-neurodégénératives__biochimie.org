@@ -1,4 +1,0 @@
-#+title:      Biomarqueurs de maladies neurodégénératives
-#+date:       [2024-08-01 Thu 23:25]
-#+filetags:   :biochimie:
-#+identifier: 20240801T232547
