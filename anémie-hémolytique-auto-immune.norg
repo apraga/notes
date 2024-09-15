@@ -16,10 +16,10 @@ Mécanisme : fixation du fragment FC sur macrophages tissulaires ou activation c
 
   - idiopathique 50% 
   - secondaire : 
-  - {:$/leucémie lymphoïde chronique:} , {:$/lymphomes non hodgkiniens:}
+  - {:$/leucémie-lymphoïde-chronique:} , {:$/lymphomes-non-hodgkiniens:}
   -- déficit immunitaire congénitaux
   -- maladies auto-immunes (lupus..)
-  -- infection ({:$/parvovirus b19:}, {:$/hépatite A:}, {:hépatite B:}, {:hépatite C:}, {:VIH:}, {:EBV:} 
+  -- infection ({:$/parvovirus-b19:}, {:$/hépatite-a:}, {:hépatite-b:}, {:hépatite-c:}, {:VIH:}, {:EBV:} 
   -- cancer solide
   -- médicaments : antibio, AINS, 
 
@@ -42,7 +42,7 @@ Mécanisme : fixation du fragment FC sur macrophages tissulaires ou activation c
 ** Différentiel
    Autres causes d'anémies {:hémolyse:} :
    - toxique, paludisme, hémolyse mécanique, /allo-anticorps/
-   - {:$/maladies du globule rouge:} , {:$/hémoglobinurie paroxystique nocturne:}
+   - {:$/maladies-du-globule-rouge:} , {:$/hémoglobinurie-paroxystique-nocturne:}
 * Tttt
   - autoanticorps chaud : cortico, folates 
   - froid : MAF: pas d'exposition au froid 

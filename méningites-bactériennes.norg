@@ -13,14 +13,14 @@ version: 1.1.1
 
 * Étiologie
 
-- {:streptococcus pneumoniae:}[Streptococcus pneumoniae] : principale cause de méninigite bactérienne purulente 
+- {:streptococcus-pneumoniae:}[Streptococcus pneumoniae] : principale cause de méninigite bactérienne purulente 
 -- enfant > 3 mois, adultes, personnes âgées surtout 
-- {:neisseria meningitidis:}[Neisseria meningitidis] : principale cause de méninigite bactérienne purulente 
+- {:neisseria-meningitidis:}[Neisseria meningitidis] : principale cause de méninigite bactérienne purulente 
 -- enfant, adolescent, adulte jeune 
 - Streptococcus agalactiae : nouveau-né surtout 
-- {:hæmophilus influenza:}[Hæmophilus influenza] : rare, non vacciné ou immunodéprimé 
-  {:$/listeria monocytogenes.norg:}[listeria monocytogenes] rare, âgé, ID, nouveau-né
-  - {:$/escherichia coli:} : nouveau-né
+- {:hæmophilus-influenza:}[Hæmophilus influenza] : rare, non vacciné ou immunodéprimé 
+  {:$/listeria-monocytogenes.norg:}[listeria monocytogenes] rare, âgé, ID, nouveau-né
+  - {:$/escherichia-coli:} : nouveau-né
 - Autres : Lyme, leptospirose, syphilis, immunodéprimé 
 
 * Gram:

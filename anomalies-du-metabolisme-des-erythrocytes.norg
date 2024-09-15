@@ -11,7 +11,7 @@ version: 1.1.1
 
 * Pathway Embden-Meyerhof
 
-  - {:déficit en pyruvate kinase:}
+  - {:déficit-en-pyruvate-kinase:}
 
 * Métabolisme des nucléotides
 
@@ -19,5 +19,5 @@ version: 1.1.1
 
 * Pathway pentose phosphate
 
-  - {:déficit en G6PD:} récessif lié à l'X 
+  - {:déficit-en-g6pd:} récessif lié à l'X 
 

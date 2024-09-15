@@ -35,11 +35,11 @@ version: 1.1.1
     -- lupus, SAPL 
     -- thyroïde (Basedow, Hashimoto) 
     -- hémato : Biermer, AHAI, lymphome, lymphoïde chronique 
-    -- {:purpura thrombopénique immunologique:}
+    -- {:purpura-thrombopénique-immunologique:}
     -- allo-anticoprs (purpura post-transfu, foetal/néotal) 
 *** Consommation
     -- {:CIVD:} -> choc, obstitqiu, *LAM3* 
-    -- {:microangiopathie thrombotique:}
+    -- {:microangiopathie-thrombotique:}
 *** Trouble de la répartition 
     hypersplénisme (séquestration) ,
     transfusion massive, cirrhose, grossesse (dilution) 

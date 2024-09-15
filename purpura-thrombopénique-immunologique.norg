@@ -25,12 +25,12 @@ version: 1.1.1
 ** 1ere intention
    - hémogramme en éliminant une fausse thrombopénie
    - bilan de coagulation ({:CIVD:} ?)
-   - rénal ({:microangipathe thrombotique:} ?)
+   - rénal ({:microangipathe-thrombotique:} ?)
    - transfusionnel
    - PTI secondaire
    --- sérologies VIH, hépatite B, C, CMV, EBC
    --- auto-immunité
-   --- {:électrophorèse des protéines sériques:}
+   --- {:électrophorèse-des-protéines-sériques:}
 ** Selon le contexte
    - myélogramme non systématique : plutôt adulte (enfant si splénectomie/corticothérapie)
 
