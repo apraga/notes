@@ -24,8 +24,8 @@ Pathologique : intra-tissulaire (rate), intra-vasculaire
 - positif : immune -> groupage sanguin, recherche autoanticorps 
 - sinon 
 -- autre cause extracorpusculaire 
-  --- infectieuse -> hémocultures (clostridium, streptocoque, yersiniose), paludisme, virale ({:$/CMV:} {:$/VIH:} {:$/infection virales hépatiques:} {:$/parvovirus b19:})
-  --- mécanique ({:$/syndrome hemolytique et uremique:}) 
+  --- infectieuse -> hémocultures (clostridium, streptocoque, yersiniose), paludisme, virale ({:$/CMV:} {:$/VIH:} {:$/infection-virales-hépatiques:} {:$/parvovirus-b19:})
+  --- mécanique ({:$/syndrome-hemolytique-et-uremique:}) 
 -- cause corpusculaire : 
 --- héréditaire: 
 ---- membrane : test de résistance osmotique 

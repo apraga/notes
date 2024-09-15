@@ -9,8 +9,8 @@ version: 1.1.1
 @end
 * Non régénérative
   ** Microcytaire
-  - {:carence martiale:} : atteinte du fer
-  - {:anémie inflammatoire:} : idem
+  - {:carence-martiale:} : atteinte du fer
+  - {:anémie-inflammatoire:} : idem
   - {:thalassémie:} : atteinte de la globine
   - anémie sidéroblastique : atteinte de protoporphyrine
 
@@ -35,13 +35,13 @@ Pour différencier avec anémie inflammatoire: ferritine et CRP
   - hémato
   --  érythrobastopénie
   -- aplasie médullaire
-  -- {:$/leucémies aigües:}
+  -- {:$/leucémies-aigües:}
   -- {:$/myélome:}
-  -- {:$/leucémie lymphoïde chronique:} ou {:$/lymphomes:}
-  -- {:$/syndromes myélodysplasiques:}
+  -- {:$/leucémie-lymphoïde-chronique:} ou {:$/lymphomes:}
+  -- {:$/syndromes-myélodysplasiques:}
 ** Macrocytaire
-   - {:anémie par carence en B9 et B12:}
-   - {:$/syndromes myélodysplasiques:}
+   - {:anémie-par-carence-en-b9-et-b12:}
+   - {:$/syndromes-myélodysplasiques:}
    - {:$/hypothyroïdies:}, IR, cirrhouse, alcool
 
 * Régénérative

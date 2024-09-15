@@ -15,7 +15,7 @@ version: 1.1.1
   LAL = 1er cances de l'enfaut
 
 ** Facteurs de risques 
-   - LAM: chimio, agent chimiques, ionsisation, {:$/syndromes myélodysplasiques:} ou prolifératif, T21
+   - LAM: chimio, agent chimiques, ionsisation, {:$/syndromes-myélodysplasiques:} ou prolifératif, T21
    - LAL: toxique, LMC, T21
 * Clinique
   Début le plus souvent brutal:

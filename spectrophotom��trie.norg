@@ -40,19 +40,19 @@ Vérifié si l'automate rende un valeur = intensité d'interférence
 - {:créatinine:} 
 - {:fer:} 
 - {:magnésium:} 
-- {:phosphore inorganique:} 
-- {:protéines sériques totales:} 
+- {:phosphore-inorganique:} 
+- {:protéines-sériques-totales:} 
 - {:PRotéines urinaires/LCR:} 
 
 * Dosage enzymatique en cinétique
 
 ** Absorbance propre
 
-- {:Acide urique:} 
+- {:acide-urique:} 
 
 ** Clivé par l'enzyme à doser libérant un colorant
 
-- {:Phosphatase alcalines:} 
+- {:phosphatase-alcalines:} 
 - {:γgt:} 
 - {:Lipase:} 
 - {:α-Amylase:} 
@@ -63,22 +63,22 @@ Mesure 340nm
 
 - {:Urée:} 
 - {:Ammoniac:} 
-- {:Transaminases (ASAT, ALAT):} 
-- {:Créatine kinase:} 
+- {:transaminases-(asat,-alat):} 
+- {:créatine-kinase:} 
 - {:LDH:} 
 - {:Glucose:} 
-- {:Acide lactique:} 
+- {:acide-lactique:} 
 - {:Bicarbonates:} 
 - {:Éthanol:} 
-- {:Acides biliaires:} 
+- {:acides-biliaires:} 
 
 ** Réaction de Trinder
 
 Réaction aboutissant à formation H2O2 qui va catalyse la synthèse d'un olorant
 Interférence: ce qui dégrade le H2O2 (acide ascorbique (vitamine C), dopamine 
 
-- {:Cholestérol HDL:} 
-- {:Cholestérol total:} 
-- {:Cholestérole LDL:} 
+- {:cholestérol-hdl:} 
+- {:cholestérol-total:} 
+- {:cholestérole-ldl:} 
 - {:Triglycérides:} 
 
