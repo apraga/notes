@@ -1,0 +1,35 @@
+@document.meta
+title: α-amylase-amylase
+description: 
+authors: alex
+categories: biochimie 
+created: 2024-09-07T20:13:16+0100
+updated: 2024-09-07T20:13:16+0100
+version: 1.1.1
+@end
+
+- Enzyme d’hydrolyse de l’amidon 
+- Composition : moitié des isoenzymes P (d'origine pancréatique) et pour moitié des isoenzymes S (d'origine salivaire) dans la circulation. 
+- HAS2009: ne pas doser amylasémie pour le diagnostic de {:pancréatite-aigüe.norg:}[Pancréatite aigüe] 
+-- non spécifique pancréatire : obstruction canal pancréatique, cholycistique, Crohn, IR, alcoolsime chronique, médicaments… 
+- Diagnostic parotitide 
+-- présent dans la salive (oreillon, tumeur glande salivaire, parotidite) 
+- Interférence : protéines > 120g/L, IgG > 50g/L, triglycérides > 30g/L 
+- Normes 20-120 UI/L 
+
+* Variations [cite:@biomnis] [biomnis]
+
+- physiologique : diminué chez le nouveau-né par immaturité pancréatique
+et le jeune enfant jusque 5 ans, parfois augmenté lors de la grossesse
+et chez les personnes âgées, ainsi que chez les sujts d'origine
+africaine ou asiatique 
+- iatrogène : acide valproïque, morphine, agoniste cholinergique,
+diurétiques thiazidique, aspirine, corticostéro\''ides, contraceptifs
+oraux… 
+- pathologique : 
+-- augmenté en cas de pancréatite aigüe 
+-- mais aussi : alcool, pathologies salivaires, oreillons, affections
+du tractus génital féminin, grossesses extr-utérines, certains
+cancers (poumon, prostate, ovaire) 
+-- également : insuffisance rénale, macroamylasémie 
+

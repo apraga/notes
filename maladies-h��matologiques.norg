@@ -1,0 +1,79 @@
+@document.meta
+title: maladies hématologiques
+description: 
+authors: alex
+categories: hémato 
+created: 2024-09-07T21:17:01+0100
+updated: 2024-09-07T21:17:01+0100
+version: 1.1.1
+@end
+
+Voir {:mécanisme-des-maladies-hématologiques.norg:}[Mécanisme des maladies hématologiques] 
+
+* Néoplasies myéloïdes
+
+Classification OMS 
+
+- {:syndromes-myéloprolifératifs.norg:}[Syndromes myéloprolifératifs] 
+- SMP/SMD 
+- {:syndromes-myélodysplasiques.norg:}[Syndromes myélodysplasiques] 
+- Leucémies aigües myéloblastiques 
+- myélo+lymphoïdes + hyperéosinophilie + anomalies PDGFRα/β ou FGFR1 
+
+* Autrnes
+
+{:anémie-microcytaire.norg:}[Anémie microcytaire]
+{:anémie-hémolytique-auto-immune.norg:}[Anémie hémolytique auto-immune]
+{:myélome.norg:}[Myélome]
+{:lymphomes.norg:}[Lymphomes]
+{:déficit-immunitaire.norg:}[Déficit immunitaire] 
+
+* Lymphocytes
+
+- Pancytopénie : 
+-- périphérique : hypersplénisme, hémodilutation (auto-immun) 
+-- central : 
+--- moelle riche : carenceB12/folates, syndrome d'activaition
+macrophagiques, myélodyspasie, envahissement (leucémie, lymphome) 
+--- moelle pauvree : aplasie (chimio, parvoris B19, Fanconi),
+myélofibrose 
+- Hyperlymphocytose : enfant = coqueluche, viral. Adulte = LLC,
+lymphoprolifératif autre 
+- Lymphopénie : 
+-- iatrogène (immunosuppresseur, lithium, cortico), 
+-- viral, VIH 
+-- cancer, lymphome, radiothérapie 
+-- auto-immun : lupus, sarcoidose 
+-- IRC 
+- Polynucléose neutrophile 
+-- physiologique (grossesse, effort, post-op) 
+-- infection bactérienne 
+-- inflammation chronique 
+-- nécrose tissulaire aigüe 
+-- iatrogène : corticoïdes, lithium, splénectomie 
+-- hémopathie avec myélémie 
+-- tabac 
+-- cancer 
+- Neutropénie (< 0.5 G/L) 
+-- centrale 
+--- iatrogène 
+--- infection : typhoïde, brucellose, hépatite virale 
+--- aplasie, hémopathie malignes 
+-- périphérique : hypersplénisme, trouble margination 
+- Monocytose (> 1G/L) 
+-- réactionnelle : infection, inflammation (cancer..), régénération
+médullaire 
+-- primitive : leucémie myélomonocytaire chronique/juvénile, leucémie
+aigüe monoblastique 
+- Myélémie : > 2% 
+-- transitoire : infection grave, hémolyse, régénération (hémorragie,
+postchimio) 
+-- chronique : SMP, métastase médullaire 
+
+* {:maladies-du-globule-rouge.norg:}[Maladies du globule rouge]
+
+* Plaquettes
+
+- {:thrombocytose.norg:}[Thrombocytose] : inflammation, carence martiale, splénectomie/asplénie, post-chir, SMP 
+- {:thrombopénie.norg:}[Thrombopénie] 
+

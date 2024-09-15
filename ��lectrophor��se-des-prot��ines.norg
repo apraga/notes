@@ -1,0 +1,16 @@
+@document.meta
+title: électrophorèse-des-protéines
+description: 
+authors: alex
+categories: biochimie 
+created: 2024-09-07T20:13:19+0100
+updated: 2024-09-07T20:13:19+0100
+version: 1.1.1
+@end
+
+- {:dysgammaglobulinémie-monoclonale.norg:}[Dysgammaglobulinémie monoclonale] 
+- {:électrophorèse-des-protéines-sériques.norg:}[Électrophorèse des protéines sériques] 
+- {:électrophorèse-des-protéines-urinaires.norg:}[Électrophorèse des protéines urinaires] 
+- {:électrophorèse-des-protéines-du-lcr.norg:}[Électrophorèse des protéines du LCR] 
+- {:immunotypage.norg:}[Immunotypage] 
+

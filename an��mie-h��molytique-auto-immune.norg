@@ -1,0 +1,52 @@
+@document.meta
+title: anémie hémolytique auto immune
+description: 
+authors: alex
+categories: hémato 
+created: 2024-09-07T21:16:47+0100
+updated: 2024-09-08T18:08:02+0100
+version: 1.1.1
+@end
+
+Hémolyse, anémie régénérative et autoanticorps contre la membrane du GR
+Peut engager le pronostic vital ou entrer en rémission
+Mécanisme : fixation du fragment FC sur macrophages tissulaires ou activation complément (plutôt intravasc) 
+
+* Étiologie
+
+  - idiopathique 50% 
+  - secondaire : 
+  - {:$/leucémie lymphoïde chronique:} , {:$/lymphomes non hodgkiniens:}
+  -- déficit immunitaire congénitaux
+  -- maladies auto-immunes (lupus..)
+  -- infection ({:$/parvovirus b19:}, {:$/hépatite A:}, {:hépatite B:}, {:hépatite C:}, {:VIH:}, {:EBV:} 
+  -- cancer solide
+  -- médicaments : antibio, AINS, 
+
+* Classification
+  Selon le type d'anticorps
+  - chaud (37°): adulte, plutôt intratissulaire, IgG 37% 
+  - agglu froide (4°): > 50A, intratissulaire ou vasculaire, IgM, plutôt chronique
+
+  Intravasculaire : brutal, fièvre, douleur lobmaire, urine "rouge porto",
+  ictère Extravasc : progressif, discret (subictère conjonctival) 
+
+* Diag
+
+  - clinique + bio (anémie normochromoe normocytaire, pas de schizoytes (!= mécanique), sd hémolytique) 
+  - IH: Coombs direct : hématies avec Ac déjà fixées + antiglobuline -> agglu 
+  - Penser à chercher des IgA si neg 
+  - IgG+ : élution (détacher Ac sur hématie et déterminer leur spécifique en TIA) puis Coombs anticiderct (éluta sur panel connu avec antigolbuline) 
+  - C3+ : agglu froide 
+
+** Différentiel
+   Autres causes d'anémies {:hémolyse:} :
+   - toxique, paludisme, hémolyse mécanique, /allo-anticorps/
+   - {:$/maladies du globule rouge:} , {:$/hémoglobinurie paroxystique nocturne:}
+* Tttt
+  - autoanticorps chaud : cortico, folates 
+  - froid : MAF: pas d'exposition au froid 
+
+  NB: *tout positif (panagglu + témoin autologue positif)* -> adsorption
+  (soit le plasma du patient sur hématies du donneur, soit sur ses hématies (l'idéal)) 
+

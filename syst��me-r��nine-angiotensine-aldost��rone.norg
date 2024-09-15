@@ -1,0 +1,120 @@
+@document.meta
+title: système-rénine-angiotensine-aldostérone
+description: 
+authors: alex
+categories: biochimie 
+created: 2024-09-07T20:13:30+0100
+updated: 2024-09-07T20:13:30+0100
+version: 1.1.1
+@end
+
+Homéostasise hydrosodée + pression artérielle 
+
+* Physiologie
+
+** Cascade traditionnelle
+
+.image images/biochimie/sraa.png
+ 
+
+*** 1. Hydrolyse de l'angiotensinogène par la rénine
+
+- ECA = enzyme de conversion de l'angiotensine 
+- ADH = hormone antidiurétique 
+
+Voir régulation de {:rénine.norg:}[Rénine] 
+
+*** 2. Clivage angiotensine I et II
+
+~ Angiotensine II 
+-- Court terme : maintien pression artérielle et volémie 
+--- vasoconstriction 
+---- cellules musculaires lisses 
+---- rénal (artérioles afférentes et efferentes) 
+--- production {:aldostérone.norg:}[aldostérone] 
+--- réabsorption sodium (tubule proximal + distal) 
+--- augmentation soif et sécrétion ADH (antidiurétique) 
+--- stimulation système sympathique -> noradrénaline 
+-- Rétrocontrôle négatif : 
+--- sécrétion rénine 
+--- synthèse hépatique angiotensinogène 
+
+*** 3. Synthèse d'{:aldostérone.norg:}[aldostérone]
+
+** Plus complexe en pratique
+
+- angiotensine II : 
+-- vasculaire : augmente résistance 
+-- stabilité plaque d'athérome 
+-- rénal : pro-fibrose et protéinurique 
+
+* Exploration biologique
+
+Indication : {:hyperaldostéronisme-primaire.norg:}[Hyperaldostéronisme primaire] 
+
+** Variations
+
+- âge: diminue rénine (et donc aldostérone) 
+- hypokaliémie : diminue production d'aldostérone 
+- homme : rénine et aldostérone augmenté 
+- orthostatisme : augmente rénine et aldostérone 
+- médicaments 
+
+: B1 : Rénine
+: C1 : Aldostérone
+: D1 : Explication
++hline2
+#table.head.columns 2-7 0
+: A2 : diurétique
+: B2 : ++
+: C2 : ++
+: D2 : stimule SRAA
+: A3 : β-bloquant
+: B3 : –
+: D3 : récepteurs adrénergique
+: A4 : IEC
+: B4 : ++
+: D4 : dminiue rétrocontrole neg de l'angiotensine II
+: A5 : inhibiteur rénine
+: B5 : ++
+: C5 : –
+: D5 : activité rénine– mais concentration++
+: A6 : spironolactone
+: B6 : ++
+: C6 : ++
+: D6 : bloque récepteur aldostérone
+
+** Préanalytique
+
+Cf supra pour raison donc 
+
+- corriger hypokaliémie 
+- régime normosodé 
+- arrêt médicaments interférant SRAA 
+- prélèvement +2h après lever (pic lié à l'orthostatisme est 2h) 
+
+** Analytique
+
+- {:rénine__biochimie_endoc.org::#h:a5aaba22-cae3-4c4c-aff8-94b65e307103}[Rénine::Dosage] 
+- {:aldostérone__biochimie.org::#h:1f0e63c0-746b-40fb-8cd5-47f5a63f2c71}[Aldostérone::Dosage] 
+- EAC: rarement fait (exploration granulomatose) 
+- angiontensinogène : rarement fait 
+
+*** Post-analytique
+
+~ Aldostérone augmentée 
+-- {:hyperaldostéronisme-primaire__endoc.org::#h:8a3f6e1a-ba94-46fb-959d-6f3bdb301e80}[Hyperaldostéronisme primaire::Diagnostic] 
+-- Hyperaldostéronisme secondaire : RAR normal (pas de dissociation rénine/aldostérone) 
+--- causes : 
+---- sténone artérielle rénale (augmente sécrétion rénine) 
+---- déshydratation (hypovolémie), HTA maligne, maladie rénale parenchymatique 
+~ Aldostérone diminuée 
+-- rénine diminuée (réponse inappropriée) 
+--- hyperminéralocorticisme sans hyperaldo : activation du récepteur aux minéralocorticoïdes 
+---- par un précurseur : blocs enzymatiques 11-hydroxylase (rare) 
+---- par le cortisol (affinité moindre mais concentration importante) 
+----- hypercorticisme majeur 
+----- défaut dégradation cortisol en cortisone 
+-- rénine augmentée (réponse appropriée): insuffisance surrénae, bloc enzymatique, médicaments (HNF, HBPM) 
+
+* Rin
