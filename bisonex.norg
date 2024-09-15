@@ -1,0 +1,20 @@
+@document.meta
+title: bisonex
+description: 
+authors: alex
+categories:  [
+  bisonex
+  article
+]
+created: 2024-09-16T00:40:58+0100
+updated: 2024-09-16T00:41:10+0100
+version: 1.1.1
+@end
+
+* Articles
+** JOSS
+   "Assets" téléchargeables avec scidataflow
+   Dépendances dans nix 
+   déport github "reproducible-sarek" mais germline seul
+** ??
+   CLI en rust pour valider un pipeline d'exome
