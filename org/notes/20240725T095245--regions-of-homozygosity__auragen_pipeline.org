@@ -1,9 +1,0 @@
-#+title:      Regions of Homozygosity
-#+date:       [2024-07-25 Thu 09:52]
-#+filetags:   :auragen:pipeline:
-#+identifier: 20240725T095245
-
- - attention, on renvoie des RoH et LoH (loss of heterozygotie)
- - Utile pour voir si consanguinité, disomie uniparentale
- - limite basse 2Mb
- - résultat sous forme de tableau. Les courbes brutes semblent utiles mais non rendus car on ne sait pas les interpréter ?

@@ -1,6 +1,0 @@
-#+title:      Éthanol
-#+filetags:   :biochimie:
-#+identifier: 20240702T232812
-
-Indication: intoxication aigüe
-Norme < 0.03g/L

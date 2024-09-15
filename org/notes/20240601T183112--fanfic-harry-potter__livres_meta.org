@@ -1,6 +1,0 @@
-#+title: Fanfic Harry Potter
-
-- [[denote:20240823T215829][Sacrifice Arc]]
-- [[denote:20240823T215830][Harry Potter and the Methods of Rationality]]
-- [[denote:20240823T215831][The Arithmancer]]
-- [[denote:20240824T114520][Benefits Of Old Laws]]

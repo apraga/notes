@@ -1,8 +1,0 @@
-#+title:      LDH
-#+date:       [2024-07-26 Fri 22:19]
-#+filetags:   :biochimie:
-#+identifier: 20240726T221937
-
-- Ubiquitaire, indispensable pour le métabolisme des sucres
-* Variations
-- SCA: augmentation +12-16h avec maximum +30-40h -> aspécifique

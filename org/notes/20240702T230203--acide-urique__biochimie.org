@@ -1,7 +1,0 @@
-#+title: Acide urique
-#+filetags: :biochimie:
-#+identifier: 20240702T230203
-
-dégradation des purines
-interférence (diminution) : xanthine (caféine, théine)
-normes homme 200-450μol/L, femme 150-350μmol/L

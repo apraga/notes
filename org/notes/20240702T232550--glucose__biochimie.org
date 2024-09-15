@@ -1,9 +1,0 @@
-#+title: Glucose
-#+identifier: 20240702T232550
-
-Normes
-- sérum 4.07-5.83mmol/L
-- urines < 0.5g/24h
-- LCR 0.4-0.7g/L
-
-Interférence urinaire : métronidazole

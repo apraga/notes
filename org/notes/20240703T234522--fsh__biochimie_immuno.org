@@ -1,4 +1,0 @@
-#+title:      FSH
-#+filetags:   :biochimie:immuno:
-#+identifier: 20240703T234522
-Indication: fertilité

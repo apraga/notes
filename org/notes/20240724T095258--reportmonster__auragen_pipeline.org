@@ -1,8 +1,0 @@
-#+title:      Reportmonster
-#+date:       [2024-07-24 Wed 09:52]
-#+filetags:   :pipeline:auragen:
-#+identifier: 20240724T095258
-
-Fonctions
-1. générer aurapport (très souvent modifié)
-2. envoyer Hygen (~stable)

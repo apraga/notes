@@ -1,9 +1,0 @@
-#+title:      Anomalies de la membrane érythrocytaire
-#+date:       [2024-08-19 lun. 17:53]
-#+filetags:   :hemato:
-#+identifier: 20240819T175329
-
-* Sphérocytose héréditaire
-* Elliptocytose héréditaire
-* Pyropoikilocytose héréditaire
-* Stomatocytose héréditaire
