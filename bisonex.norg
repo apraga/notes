@@ -7,14 +7,26 @@ categories:  [
   article
 ]
 created: 2024-09-16T00:40:58+0100
-updated: 2024-09-16T00:41:10+0100
+updated: 2024-09-16T21:44:47+0100
 version: 1.1.1
 @end
 
 * Articles
-** JOSS
-   "Assets" téléchargeables avec scidataflow
-   Dépendances dans nix 
-   déport github "reproducible-sarek" mais germline seul
-** ??
-   CLI en rust pour valider un pipeline d'exome
+  Principe: proposer un environnement reproductible autour d'un pipeline lui-même reproductible
+  ~ genome + base de données ("assets")
+  ~ dépendences
+  ~ tests
+** JOSS = 1. et 2.
+   Apport: "reproducible-sarek" = 1 pipeline de référencs que l'on complète par
+   - "Assets" téléchargeables avec scidataflow
+   - Dépendances dans nix : une partie est disponible dans nix mais on complète
+   Limite : constit seul
+   Comment intégrer tout en 1 commande ?
+** PLOS computational biology = 3.
+   Principe :
+   1. téléchargement ou modification de FASTQ
+     - données de références
+   - données synthétiques: à partir d'un patient réel ou 100% simulées
+   2. comparaison des résultats par rapport à une référence (hap.py) avec plots
+   On fournit les dépendences avec nix
+     CLI en rust ou nextflow ?
