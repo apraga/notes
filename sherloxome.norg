@@ -1,0 +1,98 @@
+@document.meta
+title: sherloxome
+description: 
+authors: alex
+categories:  [ 
+  bisonex
+  article 
+]
+created: 2024-09-22T17:15:46+0100
+updated: 2024-09-22T18:06:49+0100
+version: 1.1.1
+@end
+
+* Specs
+
+  Scope : PLOs computational biology 
+  Principe : validation de pipeline d'exome constit avec données 
+  - de patients de référence 
+  + données "de synthèses
+  On propose un "wrapper" qui
+  - installe les dépendances
+  - télécharge les données
+  - génères des fastq
+  - calcule les performances
+  sontraintes : configurable, facile à utiliser, parallélisable sur cluster HPC
+  Apport: pas de solution "tout en un" pour exome constit.
+** Patients de référence
+   - GIAB : 
+   -- données de références
+   --- SNV sur 8 patients de références
+   --- régions difficiles
+   --- X et Y pour SNV HG002
+   -- données brutes : baid2020: tous les patients avec plusieurs séquenceurs et kits
+   - Dipcall (si données brutes exome disponible)
+** Insertion de variants connus 
+  Variants
+  - soit "maison" définis dans un VCF
+  - soit sélection de clinvar
+  Programmes
+  - varben
+  - (bamsurgeons
+** Données de synthèses
+   Même variants qu'au-dessus
+   s Simuscope pour génération
+  - (neat)
+
+* Choix de technologie
+  Il faut pouvoir 
+  A. télécharge les données de manière reproductible
+  B. être facile à installer
+  C. être facile à utiliser 
+  D. pouvoir configurer les différenes stratégies (quel patients, quel algo) 
+  E. lancer plusieurs programmes en lignes de commands sur un cluster
+  F. figure avec les résutats
+  G. visibilité
+  H. maintenable
+
+  Choix possibles
+  ~ rust: 
+  ~~ scidataflow
+  ~~ facile
+  ~~ facile
+  ~~ facile
+  ~~ est faisable avec des scripts (bof) ou (hyperqueue : ok si fonctionne bien sur mésocentre
+  ~~ vega_lite_4 fonctionne de pouvoir être affiché localement (sinon il faut héberger le CSV) et est interactif. Plotly est une option (non testés
+  ~~ le point faible
+  ~~ le point faible
+  ~ julia
+  ~~ datatoolkit.jl est trop lourd en pratique et je préfère l'approche de scidataflow. Datadeps.jl est une alternativs
+  ~~ oui
+  ~~ la CLI n'est pas le point fort de julia..
+  ~~ oui
+  ~~ oui
+  ~~ oui
+  ~~ petite communauté
+  ~~ moyes
+  ~ Nextflow
+  ~~ bof
+  ~~ oui mais un peu lourd avec nf-core
+  ~~ oui mais moins qu'un cli
+  ~~ oui
+  ~~ oui
+  ~~ oui mais pas de HTML avec makie
+  ~~ oui
+  ~ Python seul
+  ~~ bof
+  ~~ bof
+  ~~ oui
+  ~~ oui
+  ~~ oui avec hyperqueue
+  ~~ oui, plotly
+  ~~ oui
+  ~~ ous
+
+  Solution retenue: rust si hyperqueue fonctionne sur mésocentre
+* Rssultats
+  Sarek avec plusieurs aligneurs ete appel de variants
+  Essayer de reproduire les résulats

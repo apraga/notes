@@ -25,3 +25,26 @@ bazel build //tensorflow/tools/pip_package:wheel --repo_env=WHEEL_NAME=tensorflo
 Fichier requirement non trouvé pour python 3.8...
 
 ** Gentoo + clang17
+ERROR: /home/alex/code/tensorflow/tensorflow/tools/pip_package/BUILD:265:9: Action tensorflow/tools/pip_package/wheel_house failed: (Exit 1): build_pip_package_py failed: error executing command (from target //tensorflow/tools/pip_package:wheel) bazel-out/k8-opt-exec-50AE0418/bin/tensorflow/tools/pip_package/build_pip_package_py @bazel-out/k8-opt/bin/tensorflow/tools/pip_package/wheel_house-0.params
+Traceback (most recent call last):
+  File "/home/alex/.cache/bazel/_bazel_alex/b43089709cdb88f3f459426ef0ba5527/execroot/org_tensorflow/bazel-out/k8-opt-exec-50AE0418/bin/tensorflow/tools/pip_package/build_pip_package_py.runfiles/org_tensorflow/tensorflow/tools/pip_package/build_pip_package.py", line 343, in <module>
+    prepare_wheel_srcs(args.headers, args.srcs, args.xla_aot,
+  File "/home/alex/.cache/bazel/_bazel_alex/b43089709cdb88f3f459426ef0ba5527/execroot/org_tensorflow/bazel-out/k8-opt-exec-50AE0418/bin/tensorflow/tools/pip_package/build_pip_package_py.runfiles/org_tensorflow/tensorflow/tools/pip_package/build_pip_package.py", line 197, in prepare_wheel_srcs
+    patch_so(srcs_dir)
+  File "/home/alex/.cache/bazel/_bazel_alex/b43089709cdb88f3f459426ef0ba5527/execroot/org_tensorflow/bazel-out/k8-opt-exec-50AE0418/bin/tensorflow/tools/pip_package/build_pip_package_py.runfiles/org_tensorflow/tensorflow/tools/pip_package/build_pip_package.py", line 242, in patch_so
+    rpath = subprocess.check_output(
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alex/.cache/bazel/_bazel_alex/b43089709cdb88f3f459426ef0ba5527/external/python_x86_64-unknown-linux-gnu/lib/python3.11/subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alex/.cache/bazel/_bazel_alex/b43089709cdb88f3f459426ef0ba5527/external/python_x86_64-unknown-linux-gnu/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alex/.cache/bazel/_bazel_alex/b43089709cdb88f3f459426ef0ba5527/external/python_x86_64-unknown-linux-gnu/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/alex/.cache/bazel/_bazel_alex/b43089709cdb88f3f459426ef0ba5527/external/python_x86_64-unknown-linux-gnu/lib/python3.11/subprocess.py", line 1950, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'patchelf'
+
+   2e essai : vers la fin de la compilationh mange toute la RAM et crash :
+Server terminated abruptly (error code: 14, error message: 'Socket closed', log file: '/home/alex/.cache/bazel/_bazel_alex/b43089709cdb88f3f459426ef0ba5527/server/jvm.out')
