@@ -7,22 +7,14 @@ categories:  [
   article
 ]
 created: 2024-09-16T00:40:58+0100
-updated: 2024-09-16T21:44:47+0100
+updated: 2024-09-22T17:14:55+0100
 version: 1.1.1
 @end
 
 * Articles
-  Principe: proposer un environnement reproductible autour d'un pipeline lui-même reproductible
-  ~ genome + base de données ("assets")
-  ~ dépendences
-  ~ tests
-** JOSS = 1. et 2.
-   Apport: "reproducible-sarek" = 1 pipeline de référencs que l'on complète par
-   - "Assets" téléchargeables avec scidataflow
-   - Dépendances dans nix : une partie est disponible dans nix mais on complète
-   Limite : constit seul
-   Comment intégrer tout en 1 commande ?
-** PLOS computational biology = 3.
+  1.{:$/reproductible-sarek.norg:}[environnement reproductible autour de Sarek]
+
+** PLOs computational biology = 3.
    Principe :
    1. téléchargement ou modification de FASTQ
      - données de références
