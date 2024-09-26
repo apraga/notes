@@ -7,18 +7,10 @@ categories:  [
   article
 ]
 created: 2024-09-16T00:40:58+0100
-updated: 2024-09-22T17:14:55+0100
+updated: 2024-09-22T18:37:37+0100
 version: 1.1.1
 @end
 
 * Articles
   1.{:$/reproductible-sarek.norg:}[environnement reproductible autour de Sarek]
-
-** PLOs computational biology = 3.
-   Principe :
-   1. téléchargement ou modification de FASTQ
-     - données de références
-   - données synthétiques: à partir d'un patient réel ou 100% simulées
-   2. comparaison des résultats par rapport à une référence (hap.py) avec plots
-   On fournit les dépendences avec nix
-     CLI en rust ou nextflow ?
+  2. {:sherloxome:}[validation d'exoms]

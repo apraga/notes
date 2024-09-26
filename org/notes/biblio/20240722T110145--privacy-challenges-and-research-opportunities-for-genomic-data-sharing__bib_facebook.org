@@ -1,9 +1,0 @@
-#+title:      Privacy challenges and research opportunities for genomic data sharing
-#+date:       [2024-07-22 Mon 11:01]
-#+filetags:   :bib:facebook:
-#+identifier: 20240722T110145
-#+reference:  bonomi2020privacy
-
-
-Survolé, pas de nouveauté scientifique
-Quelques figures et tableau utiles

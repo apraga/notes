@@ -1,8 +1,0 @@
-#+title:      Prevalence and incidence of rare diseases: Bibliographic data
-#+date:       [2024-07-19 Fri 09:45]
-#+filetags:   :bib:facebook:
-#+identifier: 20240719T094541
-#+reference:  orphanet2023prevalence
-
-
-Idem [cite:@orphadata2024epidemio] mais moins à jour ?
