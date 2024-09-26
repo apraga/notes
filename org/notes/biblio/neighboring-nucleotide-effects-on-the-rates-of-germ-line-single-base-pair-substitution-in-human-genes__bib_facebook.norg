@@ -1,0 +1,25 @@
+
+@embed org
+#+filetags:   :bib:facebook:
+@end
+
+
+@embed org
+#+identifier: 20240725T162345
+@end
+
+
+@embed org
+#+reference:  krawczak1998neighboring
+@end
+
+
+Algorithme en bref : maximiser la probabilité d’une mutation (?) 
+
+
+- en supposant que la probabilité d’une mutation $x$ et d’une conséquence "phénotypique" $\alpha$ est le produit de la probabilité de la mutation de l’ADN $\mu(x)$ et de l’"observation clinique" L(α) 
+
+
+Le phénotype est simplement la distance de Grantham
+Pas clair comment sont calculées 
+

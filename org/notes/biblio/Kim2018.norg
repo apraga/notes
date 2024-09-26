@@ -1,0 +1,22 @@
+
+Combine 2 appproches 
+
+
+~ algorithme de Freebayes [cite:@garrison2012] [garrison2012] 
+~ réassemblage local (même idée que GATK apparement) 
+
+
+Valeur ajoutées 
+
+
+- filtre "maison" pour enlever le "bruit" du séquenceur ("novel heuristic filter for sequencer phasing noise") 
+- évite le coût d'une "pair Hidden Markov model" avec 
+~~ évite de faire tous les alignements locaux possibles 
+~~ utilise une probabilité maximal locale (comment ?) pour la probabilité "marginale" (qui est le produit de toutes les combinaisons) 
+- score "maison" pour le variant basé sur du machine learning (pour filtre ou priorisitation) 
+-- contient proba du génotype, qualité de l'alignement (root-mean-square), biais de brin, fruction de reads correspondant aux modèle et complexité de l'alignement (compressiblitié, longeur homopolymer 
+-- pré-entrainé sur NA12878 (génome) 
+
+
+> Strelka2’s haplotype model uses an efficient tiered scheme for haplotype discovery, combining the advantages simple model based on input read alignments3 with those of a more complex model using local assembly2,5,6 , with the appropriate method selected according to the properties of each variant locus. 
+

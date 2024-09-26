@@ -1,0 +1,48 @@
+
+@embed org
+#+filetags:   :bib:pseudogène:
+@end
+
+
+@embed org
+#+identifier: 20240717T161021
+@end
+
+
+@embed org
+#+reference:  yang24loss
+@end
+
+
+Revue, axée bactério mais fait le travail 
+
+
+Types de pseudogène (image décente) 
+
+
+- dupliqué ("unprocessed") 
+- rétropseudogene ("processed") 
+- et pour les mamifère : dérivé d'ARN circulaire 
+
+
+Identification 
+
+
+- pseudopipe [cite:@zhang2006pseudopipe] [zhang2006pseudopipe] 
+- pseudofinder [cite:@zhang2006pseudopipe] [zhang2006pseudopipe] 
+- rétrofinder [cite:@baertsch2008retrofinder] [baertsch2008retrofinder] 
+- sideRETRO [cite:@miller2021sideretro] [miller2021sideretro] 
+- psyfinder [cite:@abrahamsson22ppsifinder] [abrahamsson22ppsifinder] 
+- pseudofinder [cite:@syber2022pseudofinder] [syber2022pseudofinder] (2022) 
+
+
+Base de données 
+
+
+- psidR par GENCODE (intégration de plusieurs pipeline) 
+- pseudoMap 
+- pseudoFam 
+- pseudogene 
+- pseudoFuN 
+- Dreambase 
+

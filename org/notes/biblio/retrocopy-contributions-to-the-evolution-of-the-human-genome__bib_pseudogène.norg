@@ -1,0 +1,39 @@
+
+@embed org
+#+filetags:   :bib:pseudogène:
+@end
+
+
+@embed org
+#+identifier: 20240717T134813
+@end
+
+
+@embed org
+#+reference:  baertsch2008retrofinder
+@end
+
+
+Code récemment uploadé sur github {https://github.com/ComparativeGenomicsToolkit/RetroFinder}[https://github.com/ComparativeGenomicsToolkit/RetroFinder] 
+
+
+Parmis les rétrocopies (ARN messagé épissé dans le génome), étude des rétrogènes (=rétrocopies fonctionnelles) 
+
+
+Méthode : 
+
+
+- Alignement de tous les ARN messager sur le génome humain 
+- score pour la probabilité d'une rétrotransposition récente (nombre d'introns, l'absenc de site d'épissage conservé…) 
+-- comparaison avec Vega pour le score 
+- filtre >= 5 ESTs et 1 ARNm ou 1 gène dans refseq ou UCSC 
+
+
+Types d'évènement 
+
+
+~ acquisition d'un exon (inclus dans un transcrit existant) 
+~ duplication d'un gène (nécessite le recrutement de région régulatrice) 
+~ nouveaux gènes : contribution d'une séquence en dehors du cadre de lecture (UTR, sens oppés) 
+~ 12k candidats pour gènes dérivés rétropcopies dont 726 
+

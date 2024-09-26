@@ -1,0 +1,1548 @@
+
+Revue des algorithmes 
+
+
+Notes 
+
+
+Introduction 
+
+
+- Brute-force = non utilisable sur machine modernes (centains millions de read) 
+- Méthode actuelle 
+- Alignement = étape cruciale 
+- 2 possibilité pour un génome : assemblage /de novo/ ou sur un génomne de rééfrence. La première solution n'est pas encore utilisée (génome complexe et reads petite taille, problème non résolu par long read) car trop lente et plus coûteuse 
+
+
+Problèmes 
+
+
+- génome de réference incomplet (reads non aligné/incorrectement) 
+- régions répétées (1 reads peut aligner sur différente région) Ex: BWA mem qui aligne "au hasard" ([cite:@firtina2016] [firtina2016]: si les reads sont mélangés, un read ambigu est aligné à un endroit différent) 
+- Doit tolérer SNV ou variants structuraux 
+- Doit gérer les brins forward et reverse pour éviter d’avoir des génotypes différents (strand bias) 
+
+
+~ Liste complète d'aligner jusque 2020: Table 1 Aligneur gérant l'ADN après 2012
+(W) = wrapper (utilise d'autres outils) 
+~~ Initiale 
+
+
+
+
+
+
+
+
+
+
+
++hline2
+#table.head.columns 1-67 0
+: A1 : Aligner
+: B1 : Paper
+: C1 : publication
+: D1 : Application
+: E1 : Indexing
+: F1 : GP fix
+: G1 : GP Spaced speed
+: H1 : GP seed chaining
+: I1 : Pairwise alignment
+: J1 : Max. read length
+: J2 : tested (bp)
+: A3 : {https://github.com/lh3/bwa}[BWA]
+: B3 : [54]
+: C3 : 2009
+: D3 : DNA
+: E3 : BWT-FM
+: F3 : N
+: G3 : N
+: H3 : N
+: I3 : Semi-Global
+: J3 : 125
+: A4 : {http://bowtie-bio.sourceforge.net/manual.shtml}[Bowtie]
+: B4 : [55]
+: C4 : 2009
+: D4 : DNA
+: E4 : BWT-FM
+: F4 : Y
+: G4 : N
+: H4 : N
+: I4 : HD
+: J4 : 76
+: A5 : {https://sourceforge.net/projects/cloudburst-bio/}[CloudBurst]
+: B5 : [56]
+: C5 : 2009
+: D5 : DNA
+: E5 : Hashing
+: F5 : Y
+: G5 : N
+: H5 : N
+: I5 : Landau-Vishkin
+: J5 : 36
+: A6 : {https://github.com/byucsl/gnumap}[GNUMAP]
+: B6 : [57]
+: C6 : 2009
+: D6 : DNA
+: E6 : Hashing
+: F6 : Y
+: G6 : N
+: H6 : Y
+: I6 : NW
+: J6 : 36
+: A7 : {http://1001genomes.org/software/genomemapper_singleref.html}[GenomeMapper]
+: B7 : [58]
+: C7 : 2009
+: D7 : DNA
+: E7 : Hashing
+: F7 : Y
+: G7 : N
+: H7 : Y
+: I7 : NW
+: J7 : 200
+: A8 : {https://github.com/hugheaves/MOM}[MOM]
+: B8 : [59]
+: C8 : 2009
+: D8 : DNA
+: E8 : Hashing
+: F8 : Y
+: G8 : N
+: H8 : N
+: I8 : HD
+: J8 : 40
+: A9 : {http://pass.cribi.unipd.it/cgi-bin/pass.pl}[PASS]
+: B9 : [60]
+: C9 : 2009
+: D9 : DNA
+: E9 : Hashing
+: F9 : Y
+: G9 : N
+: H9 : Y
+: I9 : NW
+: J9 : 32
+: A10 : {https://code.google.com/archive/p/perm/downloads}[PerM]
+: B10 : [61]
+: C10 : 2009
+: D10 : DNA
+: E10 : Hashing
+: F10 : Y
+: G10 : Y
+: H10 : N
+: I10 : HD
+: J10 : 47
+: A11 : {https://github.com/seqan/seqan/tree/master/apps/razers}[RazerS]
+: B11 : [62]
+: C11 : 2009
+: D11 : DNA
+: E11 : Hashing
+: F11 : Y
+: G11 : Y
+: H11 : Y
+: I11 : Myers Bit Vector
+: J11 : 76
+: A12 : {http://compbio.cs.toronto.edu/shrimp/}[SHRiMP]
+: B12 : [63]
+: C12 : 2009
+: D12 : DNA
+: E12 : Hashing
+: F12 : N
+: G12 : N
+: H12 : N
+: I12 : SW
+: J12 : 35
+: A13 : {https://github.com/ShujiaHuang/SOAPaligner}[SOAP2]
+: B13 : [64]
+: C13 : 2009
+: D13 : DNA
+: E13 : BWT-FM
+: F13 : Y
+: G13 : N
+: H13 : N
+: I13 : SW
+: J13 : 44
+: A14 : {http://www.bcgsc.ca/platform/bioinfo/software/slider}[Slider]
+: B14 : [65]
+: C14 : 2009
+: D14 : DNA
+: E14 : Hashing
+: F14 : Y
+: G14 : N
+: H14 : N
+: I14 : HD
+: J14 : 36
+: A15 : {https://www.bioinf.uni-leipzig.de/Software/segemehl/}[segemehl]
+: B15 : [66]
+: C15 : 2009
+: D15 : DNA
+: E15 : Suffix array
+: F15 : N
+: G15 : N
+: H15 : Y
+: I15 : SW
+: J15 : 35
+: A16 : {https://github.com/lh3/bwa}[BWA-SW]
+: B16 : [54]
+: C16 : 2010
+: D16 : DNA
+: E16 : BWT-FM
+: F16 : N
+: G16 : N
+: H16 : N
+: I16 : SW
+: J16 : 10000
+: A17 : {http://www.irisa.fr/symbiose/projects/gassst/}[GASSST]
+: B17 : [35]
+: C17 : 2010
+: D17 : DNA
+: E17 : Hashing
+: F17 : Y
+: G17 : Y
+: H17 : Y
+: I17 : Semi-Global
+: J17 : 500
+: A18 : {https://github.com/juliangehring/GMAP-GSNAP}[GSNAP]
+: B18 : [37]
+: C18 : 2010
+: D18 : DNA
+: E18 : Hashing
+: F18 : Y
+: G18 : N
+: H18 : Y
+: I18 : Non-DP Heuristic
+: J18 : 100
+: A19 : {https://github.com/rcallahan/smalt}[SMALT]
+: B19 : [69]
+: C19 : 2010
+: D19 : DNA
+: E19 : Hashing
+: F19 : Y
+: G19 : N
+: H19 : Y
+: I19 : SW
+: J19 : 150
+: A20 : {http://www.bcgsc.ca/platform/bioinfo/software/SliderII}[SliderII] (W)
+: B20 : [70]
+: C20 : 2010
+: D20 : DNA
+: E20 : Hashing
+: F20 : Y
+: G20 : N
+: H20 : N
+: I20 : HD
+: J20 : 42
+: A21 : {http://www.vmatch.de/}[VMATCH] (W)
+: B21 : [71]
+: C21 : 2010
+: D21 : DNA
+: E21 : Suffix array
+: F21 : Y
+: G21 : N
+: H21 : Y
+: I21 : SW
+: J21 : N/A
+: A22 : {https://github.com/sfu-compbio/mrsfast}[mrsFAST]
+: B22 : [72]
+: C22 : 2010
+: D22 : DNA
+: E22 : Hashing
+: F22 : Y
+: G22 : N
+: H22 : N
+: I22 : HD
+: J22 : 100
+: A23 : {http://last.cbrc.jp/}[LAST]
+: B23 : [78]
+: C23 : 2011
+: D23 : DNA/BS-Seq/RNA
+: E23 : Suffix array
+: F23 : N
+: G23 : Y
+: H23 : N
+: I23 : SW & NW
+: J23 : 105
+: A24 : {https://dl.acm.org/citation.cfm?id=2147845&dl=ACM&coll=DL}[DynMap]
+: B24 : [79]
+: C24 : 2011
+: D24 : DNA
+: E24 : Hashing
+: F24 : Y
+: G24 : N
+: H24 : N
+: I24 : NW
+: J24 : 52
+: A25 : {http://compbio.cs.toronto.edu/shrimp/}[SHRiMP2]
+: B25 : [80]
+: C25 : 2011
+: D25 : DNA
+: E25 : Hashing
+: F25 : Y
+: G25 : Y
+: H25 : Y
+: I25 : SW
+: J25 : 75
+: A26 : {http://snap.cs.berkeley.edu/}[SNAP]
+: B26 : [81]
+: C26 : 2011
+: D26 : DNA
+: E26 : Hashing
+: F26 : Y
+: G26 : N
+: H26 : N
+: I26 : NW
+: J26 : 10000
+: A27 : {https://www.well.ox.ac.uk/project-stampy}[Stampy]
+: B27 : [82]
+: C27 : 2011
+: D27 : DNA
+: E27 : Hashing
+: F27 : Y
+: G27 : N
+: H27 : N
+: I27 : NW
+: J27 : 4500
+: A28 : {https://github.com/iontorrent/TS/tree/master/Analysis/TMAP}[TMAP]
+: B28 : ?
+: C28 : 2011
+: D28 : DNA
+: E28 : BWT-FM
+: F28 : N
+: G28 : N
+: H28 : Y
+: I28 : SW
+: J28 : N/A
+: A29 : {http://grimmond.imb.uq.edu.au/X-MATE/}[X-Mate]
+: B29 : [83]
+: C29 : 2011
+: D29 : DNA
+: E29 : Hashing
+: F29 : N
+: G29 : N
+: H29 : N
+: I29 : Non-DP Heuristic
+: J29 : 50
+: A30 : {https://github.com/mchaisso/blasr/}[BLASR]
+: B30 : [85]
+: C30 : 2012
+: D30 : DNA
+: E30 : Suffix array
+: F30 : Y
+: G30 : N
+: H30 : Y
+: I30 : NW
+: J30 : 8000
+: A31 : {https://code.google.com/archive/p/batmis/}[Batmis]
+: B31 : [86]
+: C31 : 2012
+: D31 : DNA
+: E31 : BWT-ST
+: F31 : Y
+: G31 : N
+: H31 : N
+: I31 : HD
+: J31 : 100
+: A32 : {http://bowtie-bio.sourceforge.net/bowtie2}[Bowtie2]
+: B32 : [87]
+: C32 : 2012
+: D32 : DNA
+: E32 : BWT-FM
+: F32 : Y
+: G32 : N
+: H32 : Y
+: I32 : SW & NW
+: J32 : 400
+: A33 : {https://github.com/smarco/gem3-mapper}[GEM]
+: B33 : [88]
+: C33 : 2012
+: D33 : DNA
+: E33 : BWT-FM
+: F33 : N
+: G33 : N
+: H33 : Y
+: I33 : SW & NW
+: J33 : 150
+: A34 : {https://github.com/seqan/seqan/tree/master/apps/razers3}[RazerS3]
+: B34 : [89]
+: C34 : 2012
+: D34 : DNA
+: E34 : Hashing
+: F34 : Y
+: G34 : Y
+: H34 : Y
+: I34 : Banded Myers Bit Vector
+: J34 : 800
+: A35 : {https://web.stanford.edu/group/wonglab/seqalto/}[SeqAlto]
+: B35 : [90]
+: C35 : 2012
+: D35 : DNA
+: E35 : Hashing
+: F35 : Y
+: G35 : N
+: H35 : N
+: I35 : NW
+: J35 : 200
+: A36 : {https://github.com/seqan/seqan/blob/master/apps/splazers/README}[SplazerS]
+: B36 : [91]
+: C36 : 2012
+: D36 : DNA
+: E36 : Hashing
+: F36 : Y
+: G36 : N
+: H36 : Y
+: I36 : Banded Myers Bit Vector
+: J36 : 150
+: A37 : {http://pages.cs.wisc.edu/~jignesh/wham/}[WHAM]
+: B37 : [92]
+: C37 : 2012
+: D37 : DNA
+: E37 : Hashing
+: F37 : Y
+: G37 : N
+: H37 : N
+: I37 : NW
+: J37 : 74
+: A38 : {https://github.com/GregoryFaust/yaha}[YAHA]
+: B38 : [93]
+: C38 : 2012
+: D38 : DNA
+: E38 : Hashing
+: F38 : Y
+: G38 : N
+: H38 : Y
+: I38 : SW
+: J38 : 10000
+: A39 : {http://subread.sourceforge.net/}[Subread]
+: B39 : [97]
+: C39 : 2013
+: D39 : DNA/RNA-Seq
+: E39 : Hashing
+: F39 : Y
+: G39 : Y
+: H39 : Y
+: I39 : SW
+: J39 : 202
+: A40 : {https://github.com/lh3/bwa}[BWA-MEM]
+: B40 : [98]
+: C40 : 2013
+: D40 : DNA
+: E40 : BWT-FM
+: F40 : N
+: G40 : N
+: H40 : Y
+: I40 : SW & NW
+: J40 : 650
+: A41 : {http://www.seqan.de/projects/masai}[Masai]
+: B41 : [99]
+: C41 : 2013
+: D41 : DNA
+: E41 : Suffix tree
+: F41 : N
+: G41 : N
+: H41 : Y
+: I41 : Banded Myers Bit Vector
+: J41 : 150
+: A42 : {http://cibiv.github.io/NextGenMap/}[NextGenMap]
+: B42 : [100]
+: C42 : 2013
+: D42 : DNA
+: E42 : Hashing
+: F42 : Y
+: G42 : N
+: H42 : N
+: I42 : SW & NW
+: J42 : 250
+: A43 : {http://www.umsl.edu/~wongch/software.html}[SRmapper]
+: B43 : [101]
+: C43 : 2013
+: D43 : DNA
+: E43 : Hashing
+: F43 : Y
+: G43 : N
+: H43 : N
+: I43 : HD
+: J43 : 100
+: A44 : {https://github.com/BilkentCompGen/mrfast}[mrFAST]
+: B44 : [102]
+: C44 : 2013
+: D44 : DNA
+: E44 : Hashing
+: F44 : Y
+: G44 : N
+: H44 : N
+: I44 : Semi-Global
+: J44 : 180
+: A45 : {http://bwa-pssm.binf.ku.dk/}[BWA-PSSM] (W)
+: B45 : [107]
+: C45 : 2014
+: D45 : DNA
+: E45 : BWT-FM
+: F45 : Y
+: G45 : N
+: H45 : N
+: I45 : SW
+: J45 : 100
+: A46 : {http://cushaw3.sourceforge.net/homepage.htm#latest}[CUSHAW3]
+: B46 : [108]
+: C46 : 2014
+: D46 : DNA
+: E46 : BWT-FM
+: F46 : Y
+: G46 : N
+: H46 : Y
+: I46 : SW & Semi-Global
+: J46 : 100
+: A47 : {https://hobbes.ics.uci.edu/download.shtml}[Hobbes2]
+: B47 : [109]
+: C47 : 2014
+: D47 : DNA
+: E47 : Hashing
+: F47 : Y
+: G47 : N
+: H47 : Y
+: I47 : Banded Myers Bit Vector
+: A48 : {https://github.com/wanpinglee/MOSAIK}[MOSAIK]
+: B48 : [110]
+: C48 : 2014
+: D48 : DNA
+: E48 : Hashing
+: F48 : Y
+: G48 : N
+: H48 : N
+: I48 : SW
+: J48 : 100
+: A49 : {https://github.com/opencb/hpg-aligner}[hpg-Aligner]
+: B49 : [111]
+: C49 : 2014
+: D49 : DNA
+: E49 : Suffix array
+: F49 : N
+: G49 : N
+: H49 : Y
+: I49 : SW
+: J49 : 5000
+: A50 : {https://github.com/sfu-compbio/mrsfast}[mrsFAST-Ultra]
+: B50 : [112]
+: C50 : 2014
+: D50 : DNA
+: E50 : Hashing
+: F50 : Y
+: G50 : N
+: H50 : N
+: I50 : HD
+: J50 : 100
+: A51 : {http://erne.sourceforge.net/}[ERNE2]
+: B51 : [116]
+: C51 : 2016
+: D51 : DNA/BS-Seq
+: E51 : BWT-FM +hashing
+: F51 : Y
+: G51 : N
+: H51 : N
+: I51 : HD
+: J51 : 100
+: A52 : {https://github.com/isovic/graphmap}[GraphMap]
+: B52 : [117]
+: C52 : 2016
+: D52 : DNA
+: E52 : Hashing
+: F52 : Y
+: G52 : Y
+: H52 : Y
+: I52 : Semi-global
+: J52 : 9000
+: A53 : {https://github.com/ruhulsbu/NanoBLASTer}[NanoBLASTer]
+: B53 : [118]
+: C53 : 2016
+: D53 : DNA
+: E53 : Hashing
+: F53 : Y
+: G53 : N
+: H53 : Y
+: I53 : NW
+: J53 : 7040
+: A54 : {https://github.com/lh3/minimap}[minimap]
+: B54 : [119]
+: C54 : 2016
+: D54 : DNA
+: E54 : Hashing
+: F54 : Y
+: G54 : N
+: H54 : N
+: I54 : N/A
+: J54 : 13000
+: A55 : {https://github.com/dfguan/rHAT}[rHAT]
+: B55 : [120]
+: C55 : 2016
+: D55 : DNA
+: E55 : Hashing
+: F55 : Y
+: G55 : N
+: H55 : Y
+: I55 : SW
+: J55 : 8000
+: A56 : {https://github.com/hsinnan75/KART}[KART]
+: B56 : [121]
+: C56 : 2017
+: D56 : DNA
+: E56 : BWT-FM
+: F56 : N
+: G56 : N
+: H56 : Y
+: I56 : NW
+: J56 : 7118
+: A57 : {https://github.com/hitbc/LAMSA}[LAMSA] (W)
+: B57 : [122]
+: C57 : 2017
+: D57 : DNA
+: E57 : BWT-FM + hashing
+: F57 : Y
+: G57 : N
+: H57 : Y
+: I57 : Sparse DP
+: J57 : 1000
+: A58 : {https://github.com/lh3/minimap2}[minimap2]
+: B58 : [124]
+: C58 : 2018
+: D58 : DNA/RNA-Seq
+: E58 : Hashing
+: F58 : Y
+: G58 : N
+: H58 : Y
+: I58 : NW
+: J58 : 11628
+: A59 : {https://gitlab.com/pirovc/dream_yara/}[DREAM-Yara] (W)
+: B59 : [125]
+: C59 : 2018
+: D59 : DNA
+: E59 : BWT-FM
+: F59 : Y
+: G59 : N
+: H59 : N
+: I59 : Banded Myers Bit Vector
+: A60 : {https://github.com/mummer4/mummer}[MUMmer4] (W)
+: B60 : [126]
+: C60 : 2018
+: D60 : DNA
+: E60 : Suffix array
+: F60 : Y
+: G60 : N
+: H60 : Y
+: I60 : SW
+: J60 : 7821
+: A61 : {https://github.com/philres/ngmlr}[NGMLR]
+: B61 : [127]
+: C61 : 2018
+: D61 : DNA
+: E61 : Hashing
+: F61 : Y
+: G61 : N
+: H61 : Y
+: I61 : SW
+: J61 : 50000
+: A62 : {https://github.com/vpc-ccg/lordfast}[lordFAST]
+: B62 : [128]
+: C62 : 2018
+: D62 : DNA
+: E62 : BWT-FM + hashing
+: F62 : N
+: G62 : N
+: H62 : Y
+: I62 : SW & NW
+: J62 : 35489
+: A63 : {https://github.com/lbcb-sci/graphmap2}[GraphMap2]
+: B63 : [130]
+: C63 : 2019
+: D63 : DNA/RNA-Seq
+: E63 : Hashing
+: F63 : Y
+: G63 : Y
+: H63 : Y
+: I63 : Semi-global
+: J63 : 9000
+: A64 : {https://github.com/ncbi/magicblast}[Magic-BLAST]
+: B64 : [131]
+: C64 : 2019
+: D64 : DNA/RNA-Seq
+: E64 : Hashing
+: F64 : Y
+: G64 : N
+: H64 : N
+: I64 : Non-DP Heuristic
+: J64 : 90000
+: A65 : {https://github.com/bwa-mem2/bwa-mem2}[BWA-MEM2]
+: B65 : [132]
+: C65 : 2019
+: D65 : DNA
+: E65 : BWT-FM
+: F65 : N
+: G65 : N
+: H65 : Y
+: I65 : SW
+: J65 : 650
+: A66 : {https://ccb.jhu.edu/software/hisat2/index.shtml}[HISAT2]
+: B66 : [133]
+: C66 : 2019
+: D66 : DNA
+: E66 : BWT-FM
+: F66 : Y
+: G66 : N
+: H66 : N
+: I66 : Non-DP Heuristic
+: J66 : 100
+: A67 : {https://www.dropbox.com/s/3jcu4i240kyu2tc/source%20code%20conLSH_bio.tar.gz?dl=0}[conLSH]
+: B67 : [135]
+: C67 : 2020
+: D67 : DNA
+: E67 : Hashing
+: F67 : Y
+: G67 : N
+: H67 : Y
+: I67 : Sparse DP
+: J67 : 8000
+
+Étapes 
+~~~ Index du génome 
+~~~ Liste endroits possible avec cet index 
+~~~ Pour chaque position possible, calcul de similarité avec le read 
+~~ Avec citations 
+@code julia
+using DataFramesMeta, CSV
+info = CSV.read("biblio-aligner-init.tsv", DataFrame, delim="\t")
+cite = CSV.read("citation-aligner-init.tsv", DataFrame, delim="\t")
+d = innerjoin(info, cite, on = :ID)
+CSV.write("biblio-aligner.tsv", d, delim="\t")
+@end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
++hline2
+#table.head.columns 1-63 0
+: A1 : Link
+: B1 : Aligner
+: C1 : ID
+: D1 : publication
+: E1 : Application
+: F1 : Indexing
+: G1 : GP fix
+: H1 : GP spaced speed
+: I1 : GP seed chaining
+: J1 : Pairwise alignment
+: K1 : Max. read length
+: L1 : Doi
+: M1 : Pubmed
+: A2 : {http://www.irisa.fr/symbiose/projects/gassst/}[http://www.irisa.fr/symbiose/projects/gassst/]
+: B2 : GASSST
+: C2 : 35
+: D2 : 2010
+: E2 : DNA
+: F2 : Hashing
+: G2 : Y
+: H2 : Y
+: I2 : Y
+: J2 : Semi-Global
+: K2 : 500
+: L2 : 10.1093/bioinformatics/btq485
+: M2 : 20739310
+: A3 : {https://github.com/juliangehring/GMAP-GSNAP}[https://github.com/juliangehring/GMAP-GSNAP]
+: B3 : GSNAP
+: C3 : 37
+: D3 : 2010
+: E3 : DNA
+: F3 : Hashing
+: G3 : Y
+: H3 : N
+: I3 : Y
+: J3 : Non-DP Heuristic
+: K3 : 100
+: L3 : 10.1093/bioinformatics/btq057
+: M3 : 20147302
+: A4 : {https://github.com/lh3/bwa}[https://github.com/lh3/bwa]
+: B4 : BWA
+: C4 : 54
+: D4 : 2009
+: E4 : DNA
+: F4 : BWT-FM
+: G4 : N
+: H4 : N
+: I4 : N
+: J4 : Semi-Global
+: K4 : 125
+: L4 : 10.1093/bioinformatics/btp698
+: M4 : 20080505
+: A5 : {https://github.com/lh3/bwa}[https://github.com/lh3/bwa]
+: B5 : BWA-SW
+: C5 : 54
+: D5 : 2010
+: E5 : DNA
+: F5 : BWT-FM
+: G5 : N
+: H5 : N
+: I5 : N
+: J5 : SW
+: K5 : 10000
+: L5 : 10.1093/bioinformatics/btp698
+: M5 : 20080505
+: A6 : {http://bowtie-bio.sourceforge.net/manual.shtml}[http://bowtie-bio.sourceforge.net/manual.shtml]
+: B6 : Bowtie
+: C6 : 55
+: D6 : 2009
+: E6 : DNA
+: F6 : BWT-FM
+: G6 : Y
+: H6 : N
+: I6 : N
+: J6 : HD
+: K6 : 76
+: L6 : 10.1186/gb-2009-10-3-r25
+: M6 : 19261174
+: A7 : {https://sourceforge.net/projects/cloudburst-bio/}[https://sourceforge.net/projects/cloudburst-bio/]
+: B7 : CloudBurst
+: C7 : 56
+: D7 : 2009
+: E7 : DNA
+: F7 : Hashing
+: G7 : Y
+: H7 : N
+: I7 : N
+: J7 : Landau-Vishkin
+: K7 : 36
+: L7 : 10.1093/bioinformatics/btp236
+: M7 : 19357099
+: A8 : {https://github.com/byucsl/gnumap}[https://github.com/byucsl/gnumap]
+: B8 : GNUMAP
+: C8 : 57
+: D8 : 2009
+: E8 : DNA
+: F8 : Hashing
+: G8 : Y
+: H8 : N
+: I8 : Y
+: J8 : NW
+: K8 : 36
+: L8 : 10.1093/bioinformatics/btp614
+: M8 : 19861355
+: A9 : {http://1001genomes.org/software/genomemapper_singleref.html}[http://1001genomes.org/software/genomemapper_singleref.html]
+: B9 : GenomeMapper
+: C9 : 58
+: D9 : 2009
+: E9 : DNA
+: F9 : Hashing
+: G9 : Y
+: H9 : N
+: I9 : Y
+: J9 : NW
+: K9 : 200
+: L9 : 10.1186/gb-2009-10-9-r98
+: M9 : 19761611
+: A10 : {https://github.com/hugheaves/MOM}[https://github.com/hugheaves/MOM]
+: B10 : MOM
+: C10 : 59
+: D10 : 2009
+: E10 : DNA
+: F10 : Hashing
+: G10 : Y
+: H10 : N
+: I10 : N
+: J10 : HD
+: K10 : 40
+: L10 : 10.1093/bioinformatics/btp092
+: M10 : 19228804
+: A11 : {http://pass.cribi.unipd.it/cgi-bin/pass.pl}[http://pass.cribi.unipd.it/cgi-bin/pass.pl]
+: B11 : PASS
+: C11 : 60
+: D11 : 2009
+: E11 : DNA
+: F11 : Hashing
+: G11 : Y
+: H11 : N
+: I11 : Y
+: J11 : NW
+: K11 : 32
+: L11 : 10.1093/bioinformatics/btp087
+: M11 : 19218350
+: A12 : {https://code.google.com/archive/p/perm/downloads}[https://code.google.com/archive/p/perm/downloads]
+: B12 : PerM
+: C12 : 61
+: D12 : 2009
+: E12 : DNA
+: F12 : Hashing
+: G12 : Y
+: H12 : Y
+: I12 : N
+: J12 : HD
+: K12 : 47
+: L12 : 10.1093/bioinformatics/btp486
+: M12 : 19675096
+: A13 : {https://github.com/seqan/seqan/tree/master/apps/razers}[https://github.com/seqan/seqan/tree/master/apps/razers]
+: B13 : RazerS
+: C13 : 62
+: D13 : 2009
+: E13 : DNA
+: F13 : Hashing
+: G13 : Y
+: H13 : Y
+: I13 : Y
+: J13 : Myers Bit Vector
+: K13 : 76
+: L13 : 10.1101/gr.088823.108
+: M13 : 19592482
+: A14 : {http://compbio.cs.toronto.edu/shrimp/}[http://compbio.cs.toronto.edu/shrimp/]
+: B14 : SHRiMP
+: C14 : 63
+: D14 : 2009
+: E14 : DNA
+: F14 : Hashing
+: G14 : N
+: H14 : N
+: I14 : N
+: J14 : SW
+: K14 : 35
+: L14 : 10.1371/journal.pcbi.1000386
+: M14 : 19461883
+: A15 : {https://github.com/ShujiaHuang/SOAPaligner}[https://github.com/ShujiaHuang/SOAPaligner]
+: B15 : SOAP2
+: C15 : 64
+: D15 : 2009
+: E15 : DNA
+: F15 : BWT-FM
+: G15 : Y
+: H15 : N
+: I15 : N
+: J15 : SW
+: K15 : 44
+: L15 : 10.1093/bioinformatics/btp336
+: M15 : 19497933
+: A16 : {http://www.bcgsc.ca/platform/bioinfo/software/slider}[http://www.bcgsc.ca/platform/bioinfo/software/slider]
+: B16 : Slider
+: C16 : 65
+: D16 : 2009
+: E16 : DNA
+: F16 : Hashing
+: G16 : Y
+: H16 : N
+: I16 : N
+: J16 : HD
+: K16 : 36
+: L16 : 10.1093/bioinformatics/btn565
+: M16 : 18974170
+: A17 : {https://www.bioinf.uni-leipzig.de/Software/segemehl/}[https://www.bioinf.uni-leipzig.de/Software/segemehl/]
+: B17 : segemehl
+: C17 : 66
+: D17 : 2009
+: E17 : DNA
+: F17 : Suffix array
+: G17 : N
+: H17 : N
+: I17 : Y
+: J17 : SW
+: K17 : 35
+: L17 : 10.1371/journal.pcbi.1000502
+: M17 : 19750212
+: A18 : {https://github.com/rcallahan/smalt}[https://github.com/rcallahan/smalt]
+: B18 : SMALT
+: C18 : 69
+: D18 : 2010
+: E18 : DNA
+: F18 : Hashing
+: G18 : Y
+: H18 : N
+: I18 : Y
+: J18 : SW
+: K18 : 150
+: A19 : {http://www.bcgsc.ca/platform/bioinfo/software/SliderII}[http://www.bcgsc.ca/platform/bioinfo/software/SliderII]
+: B19 : SliderII (W)
+: C19 : 70
+: D19 : 2010
+: E19 : DNA
+: F19 : Hashing
+: G19 : Y
+: H19 : N
+: I19 : N
+: J19 : HD
+: K19 : 42
+: L19 : 10.1093/bioinformatics/btq092
+: M19 : 20190250
+: A20 : {https://github.com/sfu-compbio/mrsfast}[https://github.com/sfu-compbio/mrsfast]
+: B20 : mrsFAST
+: C20 : 72
+: D20 : 2010
+: E20 : DNA
+: F20 : Hashing
+: G20 : Y
+: H20 : N
+: I20 : N
+: J20 : HD
+: K20 : 100
+: L20 : 10.1038/nmeth0810-576
+: M20 : 20676076
+: A21 : {http://last.cbrc.jp/}[http://last.cbrc.jp/]
+: B21 : LAST
+: C21 : 78
+: D21 : 2011
+: E21 : DNA/BS-Seq/RNA
+: F21 : Suffix array
+: G21 : N
+: H21 : Y
+: I21 : N
+: J21 : SW & NW
+: K21 : 105
+: L21 : 10.1101/gr.113985.110
+: M21 : 21209072
+: A22 : {https://dl.acm.org/citation.cfm?id=2147845&dl=ACM&coll=DL}[https://dl.acm.org/citation.cfm?id=2147845&dl=ACM&coll=DL]
+: B22 : DynMap
+: C22 : 79
+: D22 : 2011
+: E22 : DNA
+: F22 : Hashing
+: G22 : Y
+: H22 : N
+: I22 : N
+: J22 : NW
+: K22 : 52
+: L22 : 10.1145/2147805.2147845
+: A23 : {http://compbio.cs.toronto.edu/shrimp/}[http://compbio.cs.toronto.edu/shrimp/]
+: B23 : SHRiMP2
+: C23 : 80
+: D23 : 2011
+: E23 : DNA
+: F23 : Hashing
+: G23 : Y
+: H23 : Y
+: I23 : Y
+: J23 : SW
+: K23 : 75
+: L23 : 10.1093/bioinformatics/btr046
+: M23 : 21278192
+: A24 : {http://snap.cs.berkeley.edu/}[http://snap.cs.berkeley.edu/]
+: B24 : SNAP
+: C24 : 81
+: D24 : 2011
+: E24 : DNA
+: F24 : Hashing
+: G24 : Y
+: H24 : N
+: I24 : N
+: J24 : NW
+: K24 : 10000
+: A25 : {https://www.well.ox.ac.uk/project-stampy}[https://www.well.ox.ac.uk/project-stampy]
+: B25 : Stampy
+: C25 : 82
+: D25 : 2011
+: E25 : DNA
+: F25 : Hashing
+: G25 : Y
+: H25 : N
+: I25 : N
+: J25 : NW
+: K25 : 4500
+: L25 : 10.1101/gr.111120.110
+: M25 : 20980556
+: A26 : {http://grimmond.imb.uq.edu.au/X-MATE/}[http://grimmond.imb.uq.edu.au/X-MATE/]
+: B26 : X-Mate
+: C26 : 83
+: D26 : 2011
+: E26 : DNA
+: F26 : Hashing
+: G26 : N
+: H26 : N
+: I26 : N
+: J26 : Non-DP Heuristic
+: K26 : 50
+: L26 : 10.1093/bioinformatics/btq698
+: M26 : 21216778
+: A27 : {https://github.com/mchaisso/blasr/}[https://github.com/mchaisso/blasr/]
+: B27 : BLASR
+: C27 : 85
+: D27 : 2012
+: E27 : DNA
+: F27 : Suffix array
+: G27 : Y
+: H27 : N
+: I27 : Y
+: J27 : NW
+: K27 : 8000
+: L27 : 10.1186/1471-2105-13-238
+: A28 : {https://code.google.com/archive/p/batmis/}[https://code.google.com/archive/p/batmis/]
+: B28 : Batmis
+: C28 : 86
+: D28 : 2012
+: E28 : DNA
+: F28 : BWT-ST
+: G28 : Y
+: H28 : N
+: I28 : N
+: J28 : HD
+: K28 : 100
+: L28 : 10.1093/bioinformatics/bts339
+: M28 : 22689389
+: A29 : {http://bowtie-bio.sourceforge.net/bowtie2}[http://bowtie-bio.sourceforge.net/bowtie2]
+: B29 : Bowtie2
+: C29 : 87
+: D29 : 2012
+: E29 : DNA
+: F29 : BWT-FM
+: G29 : Y
+: H29 : N
+: I29 : Y
+: J29 : SW & NW
+: K29 : 400
+: L29 : 10.1038/nmeth.1923
+: M29 : 22388286
+: A30 : {https://github.com/smarco/gem3-mapper}[https://github.com/smarco/gem3-mapper]
+: B30 : GEM
+: C30 : 88
+: D30 : 2012
+: E30 : DNA
+: F30 : BWT-FM
+: G30 : N
+: H30 : N
+: I30 : Y
+: J30 : SW & NW
+: K30 : 150
+: L30 : 10.1038/nmeth.2221
+: M30 : 23103880
+: A31 : {https://github.com/seqan/seqan/tree/master/apps/razers3}[https://github.com/seqan/seqan/tree/master/apps/razers3]
+: B31 : RazerS3
+: C31 : 89
+: D31 : 2012
+: E31 : DNA
+: F31 : Hashing
+: G31 : Y
+: H31 : Y
+: I31 : Y
+: J31 : Banded Myers Bit Vector
+: K31 : 800
+: L31 : 10.1093/bioinformatics/bts505
+: M31 : 22923295
+: A32 : {https://web.stanford.edu/group/wonglab/seqalto/}[https://web.stanford.edu/group/wonglab/seqalto/]
+: B32 : SeqAlto
+: C32 : 90
+: D32 : 2012
+: E32 : DNA
+: F32 : Hashing
+: G32 : Y
+: H32 : N
+: I32 : N
+: J32 : NW
+: K32 : 200
+: L32 : 10.1093/bioinformatics/bts450
+: M32 : 22811546
+: A33 : {https://github.com/seqan/seqan/blob/master/apps/splazers/README}[https://github.com/seqan/seqan/blob/master/apps/splazers/README]
+: B33 : SplazerS
+: C33 : 91
+: D33 : 2012
+: E33 : DNA
+: F33 : Hashing
+: G33 : Y
+: H33 : N
+: I33 : Y
+: J33 : Banded Myers Bit Vector
+: K33 : 150
+: L33 : 10.1093/bioinformatics/bts019
+: M33 : 22238266
+: A34 : {http://pages.cs.wisc.edu/~jignesh/wham/}[http://pages.cs.wisc.edu/~jignesh/wham/]
+: B34 : WHAM
+: C34 : 92
+: D34 : 2012
+: E34 : DNA
+: F34 : Hashing
+: G34 : Y
+: H34 : N
+: I34 : N
+: J34 : NW
+: K34 : 74
+: L34 : 10.1145/1989323.1989370
+: A35 : {https://github.com/GregoryFaust/yaha}[https://github.com/GregoryFaust/yaha]
+: B35 : YAHA
+: C35 : 93
+: D35 : 2012
+: E35 : DNA
+: F35 : Hashing
+: G35 : Y
+: H35 : N
+: I35 : Y
+: J35 : SW
+: K35 : 10000
+: L35 : 10.1093/bioinformatics/bts456
+: M35 : 22829624
+: A36 : {http://subread.sourceforge.net/}[http://subread.sourceforge.net/]
+: B36 : Subread
+: C36 : 97
+: D36 : 2013
+: E36 : DNA/RNA-Seq
+: F36 : Hashing
+: G36 : Y
+: H36 : Y
+: I36 : Y
+: J36 : SW
+: K36 : 202
+: L36 : 10.1093/nar/gkt214
+: M36 : 23558742
+: A37 : {https://github.com/lh3/bwa}[https://github.com/lh3/bwa]
+: B37 : BWA-MEM
+: C37 : 98
+: D37 : 2013
+: E37 : DNA
+: F37 : BWT-FM
+: G37 : N
+: H37 : N
+: I37 : Y
+: J37 : SW & NW
+: K37 : 650
+: A38 : {http://www.seqan.de/projects/masai}[http://www.seqan.de/projects/masai]
+: B38 : Masai
+: C38 : 99
+: D38 : 2013
+: E38 : DNA
+: F38 : Suffix tree
+: G38 : N
+: H38 : N
+: I38 : Y
+: J38 : Banded Myers Bit Vector
+: K38 : 150
+: L38 : 10.1093/nar/gkt005
+: M38 : 23358824
+: A39 : {http://cibiv.github.io/NextGenMap/}[http://cibiv.github.io/NextGenMap/]
+: B39 : NextGenMap
+: C39 : 100
+: D39 : 2013
+: E39 : DNA
+: F39 : Hashing
+: G39 : Y
+: H39 : N
+: I39 : N
+: J39 : SW & NW
+: K39 : 250
+: L39 : 10.1093/bioinformatics/btt468
+: M39 : 23975764
+: A40 : {http://www.umsl.edu/~wongch/software.html}[http://www.umsl.edu/~wongch/software.html]
+: B40 : SRmapper
+: C40 : 101
+: D40 : 2013
+: E40 : DNA
+: F40 : Hashing
+: G40 : Y
+: H40 : N
+: I40 : N
+: J40 : HD
+: K40 : 100
+: L40 : 10.1093/bioinformatics/bts712
+: M40 : 23267171
+: A41 : {https://github.com/BilkentCompGen/mrfast}[https://github.com/BilkentCompGen/mrfast]
+: B41 : mrFAST
+: C41 : 102
+: D41 : 2013
+: E41 : DNA
+: F41 : Hashing
+: G41 : Y
+: H41 : N
+: I41 : N
+: J41 : Semi-Global
+: K41 : 180
+: L41 : 10.1038/ng.437
+: M41 : 19718026
+: A42 : {http://bwa-pssm.binf.ku.dk/}[http://bwa-pssm.binf.ku.dk/]
+: B42 : BWA-PSSM (W)
+: C42 : 107
+: D42 : 2014
+: E42 : DNA
+: F42 : BWT-FM
+: G42 : Y
+: H42 : N
+: I42 : N
+: J42 : SW
+: K42 : 100
+: L42 : 10.1186/1471-2105-15-100
+: A43 : {http://cushaw3.sourceforge.net/homepage.htm#latest}[http://cushaw3.sourceforge.net/homepage.htm#latest]
+: B43 : CUSHAW3
+: C43 : 108
+: D43 : 2014
+: E43 : DNA
+: F43 : BWT-FM
+: G43 : Y
+: H43 : N
+: I43 : Y
+: J43 : SW & Semi-Global
+: K43 : 100
+: L43 : 10.1371/journal.pone.0086869
+: M43 : 24466273
+: A44 : {https://hobbes.ics.uci.edu/download.shtml}[https://hobbes.ics.uci.edu/download.shtml]
+: B44 : Hobbes2
+: C44 : 109
+: D44 : 2014
+: E44 : DNA
+: F44 : Hashing
+: G44 : Y
+: H44 : N
+: I44 : Y
+: J44 : Banded Myers Bit Vector
+: L44 : 10.1186/1471-2105-15-42
+: A45 : {https://github.com/wanpinglee/MOSAIK}[https://github.com/wanpinglee/MOSAIK]
+: B45 : MOSAIK
+: C45 : 110
+: D45 : 2014
+: E45 : DNA
+: F45 : Hashing
+: G45 : Y
+: H45 : N
+: I45 : N
+: J45 : SW
+: K45 : 100
+: L45 : 10.1371/journal.pone.0090581
+: M45 : 24599324
+: A46 : {https://github.com/opencb/hpg-aligner}[https://github.com/opencb/hpg-aligner]
+: B46 : hpg-Aligner
+: C46 : 111
+: D46 : 2014
+: E46 : DNA
+: F46 : Suffix array
+: G46 : N
+: H46 : N
+: I46 : Y
+: J46 : SW
+: K46 : 5000
+: L46 : 10.1093/bioinformatics/btu553
+: M46 : 25143289
+: A47 : {https://github.com/sfu-compbio/mrsfast}[https://github.com/sfu-compbio/mrsfast]
+: B47 : mrsFAST-Ultra
+: C47 : 112
+: D47 : 2014
+: E47 : DNA
+: F47 : Hashing
+: G47 : Y
+: H47 : N
+: I47 : N
+: J47 : HD
+: K47 : 100
+: L47 : 10.1093/nar/gku370
+: M47 : 24810850
+: A48 : {http://erne.sourceforge.net/}[http://erne.sourceforge.net/]
+: B48 : ERNE2
+: C48 : 116
+: D48 : 2016
+: E48 : DNA/BS-Seq
+: F48 : BWT-FM +hashing
+: G48 : Y
+: H48 : N
+: I48 : N
+: J48 : HD
+: K48 : 100
+: L48 : 10.1186/s12859-016-0910-3
+: A49 : {https://github.com/isovic/graphmap}[https://github.com/isovic/graphmap]
+: B49 : GraphMap
+: C49 : 117
+: D49 : 2016
+: E49 : DNA
+: F49 : Hashing
+: G49 : Y
+: H49 : Y
+: I49 : Y
+: J49 : Semi-global
+: K49 : 9000
+: L49 : 10.1038/ncomms11307
+: M49 : 27079541
+: A50 : {https://github.com/ruhulsbu/NanoBLASTer}[https://github.com/ruhulsbu/NanoBLASTer]
+: B50 : NanoBLASTer
+: C50 : 118
+: D50 : 2016
+: E50 : DNA
+: F50 : Hashing
+: G50 : Y
+: H50 : N
+: I50 : Y
+: J50 : NW
+: K50 : 7040
+: L50 : 10.1109/iccabs.2016.7802776
+: A51 : {https://github.com/lh3/minimap}[https://github.com/lh3/minimap]
+: B51 : minimap
+: C51 : 119
+: D51 : 2016
+: E51 : DNA
+: F51 : Hashing
+: G51 : Y
+: H51 : N
+: I51 : N
+: J51 : N/A
+: K51 : 13000
+: L51 : 10.1093/bioinformatics/btw152
+: M51 : 27153593
+: A52 : {https://github.com/dfguan/rHAT}[https://github.com/dfguan/rHAT]
+: B52 : rHAT
+: C52 : 120
+: D52 : 2016
+: E52 : DNA
+: F52 : Hashing
+: G52 : Y
+: H52 : N
+: I52 : Y
+: J52 : SW
+: K52 : 8000
+: L52 : 10.1093/bioinformatics/btv662
+: M52 : 26568628
+: A53 : {https://github.com/hsinnan75/KART}[https://github.com/hsinnan75/KART]
+: B53 : KART
+: C53 : 121
+: D53 : 2017
+: E53 : DNA
+: F53 : BWT-FM
+: G53 : N
+: H53 : N
+: I53 : Y
+: J53 : NW
+: K53 : 7118
+: L53 : 10.1093/bioinformatics/btx189
+: M53 : 28379292
+: A54 : {https://github.com/hitbc/LAMSA}[https://github.com/hitbc/LAMSA]
+: B54 : LAMSA (W)
+: C54 : 122
+: D54 : 2017
+: E54 : DNA
+: F54 : BWT-FM + hashing
+: G54 : Y
+: H54 : N
+: I54 : Y
+: J54 : Sparse DP
+: K54 : 1000
+: L54 : 10.1093/bioinformatics/btw594
+: M54 : 27667793
+: A55 : {https://github.com/lh3/minimap2}[https://github.com/lh3/minimap2]
+: B55 : minimap2
+: C55 : 124
+: D55 : 2018
+: E55 : DNA/RNA-Seq
+: F55 : Hashing
+: G55 : Y
+: H55 : N
+: I55 : Y
+: J55 : NW
+: K55 : 11628
+: L55 : 10.1093/bioinformatics/bty191
+: M55 : 29750242
+: A56 : {https://gitlab.com/pirovc/dream_yara/}[https://gitlab.com/pirovc/dream_yara/]
+: B56 : DREAM-Yara (W)
+: C56 : 125
+: D56 : 2018
+: E56 : DNA
+: F56 : BWT-FM
+: G56 : Y
+: H56 : N
+: I56 : N
+: J56 : Banded Myers Bit Vector
+: L56 : 10.1093/bioinformatics/bty567
+: M56 : 30423080
+: A57 : {https://github.com/mummer4/mummer}[https://github.com/mummer4/mummer]
+: B57 : MUMmer4 (W)
+: C57 : 126
+: D57 : 2018
+: E57 : DNA
+: F57 : Suffix array
+: G57 : Y
+: H57 : N
+: I57 : Y
+: J57 : SW
+: K57 : 7821
+: L57 : 10.1371/journal.pcbi.1005944
+: M57 : 29373581
+: A58 : {https://github.com/philres/ngmlr}[https://github.com/philres/ngmlr]
+: B58 : NGMLR
+: C58 : 127
+: D58 : 2018
+: E58 : DNA
+: F58 : Hashing
+: G58 : Y
+: H58 : N
+: I58 : Y
+: J58 : SW
+: K58 : 50000
+: L58 : 10.1038/s41592-018-0001-7
+: M58 : 29713083
+: A59 : {https://github.com/vpc-ccg/lordfast}[https://github.com/vpc-ccg/lordfast]
+: B59 : lordFAST
+: C59 : 128
+: D59 : 2018
+: E59 : DNA
+: F59 : BWT-FM + hashing
+: G59 : N
+: H59 : N
+: I59 : Y
+: J59 : SW & NW
+: K59 : 35489
+: L59 : 10.1093/bioinformatics/bty544
+: M59 : 30561550
+: A60 : {https://github.com/bwa-mem2/bwa-mem2}[https://github.com/bwa-mem2/bwa-mem2]
+: B60 : BWA-MEM2
+: C60 : 132
+: D60 : 2019
+: E60 : DNA
+: F60 : BWT-FM
+: G60 : N
+: H60 : N
+: I60 : Y
+: J60 : SW
+: K60 : 650
+: L60 : 10.1109/ipdps.2019.00041
+: A61 : {https://ccb.jhu.edu/software/hisat2/index.shtml}[https://ccb.jhu.edu/software/hisat2/index.shtml]
+: B61 : HISAT2
+: C61 : 133
+: D61 : 2019
+: E61 : DNA
+: F61 : BWT-FM
+: G61 : Y
+: H61 : N
+: I61 : N
+: J61 : Non-DP Heuristic
+: K61 : 100
+: L61 : 10.1038/s41587-019-0201-4
+: M61 : 31375807
+: A62 : {https://www.dropbox.com/s/3jcu4i240kyu2tc/source%20code%20conLSH_bio.tar.gz?dl=0}[https://www.dropbox.com/s/3jcu4i240kyu2tc/source%20code%20conLSH_bio.tar.gz?dl=0]
+: B62 : conLSH
+: C62 : 135
+: D62 : 2020
+: E62 : DNA
+: F62 : Hashing
+: G62 : Y
+: H62 : N
+: I62 : Y
+: J62 : Sparse DP
+: K62 : 8000
+: L62 : 10.1016/j.compbiolchem.2020.107206
+: M62 : 32000034
+
+
+~ Index 
+~~ Par hash Pour des séquences courtes (seed), stocke la liste des positions (k-mer). Pour un read, on extrait certains seed et donc la liste de positions. 
+~~ suffix tree Permet de faire des correspondances partielles en groupant les sous-séquences communes. Cf figure 1.b. BWT utilise une approche similaire mais en diminuant le stockage.
+Diminution des performances avec l s erreurs de sequencage ou avec la dissimilarité avec la référence. 
+~~ Comparaison Hash = index de grande taille mais recherche efficace (O(1) !) et coût d'indexage faible.
+Suffix = recherche partielle possible mais recherche lente et coût d'indexage élevé (cf Table 2) 
+~~ Performance 
+--- Run sequential genome 
+--- Pas de différence stastiquement significative entre index et hash pour CPU mais significative pour mémoire (loique) 
+--- BWA-FMT = 3.8 moins de ressources 
+--- BWA, bowtie et bowtie2 proches pour runtime + coût mémoire (cf figure) Popularité : mesure par le nombre de citation de l'article initial : BLAST > BWA,bowtie,bowtie2 
+~~ Endroits possibles On prend quelques seeds et on génère une liste de possibilités (voisinage de chaque seed). Pour des seeds courts, liste trop grande donc heuristiques pour réduire le nombre de candidats. Augmenter la taille des seeds diminue ma sensibilité Majorité utilisent des seeds de taille fixe (autre utilise des suffix car le hash nécessiterait d’être recalculé) 
+~~ Vérification soit dynamique (local ou global) soit non dynamique (distance de Hamming… probablement comparaison indépendamment du contexte). Pour substitution/indel, dynamic. Alignement local quand on ne veut qu’une correspondance partielle (structural variant) -> 38% outil. Comparaison quadratique en temps et en espace malgré années recherche … 
+~~ Note : Long-read
+indexing : les 2 méthodes existent
+Peuvent couper les long read en short read
+Difficulté : plus d’erreur et plus de seed. Solution : calculer moins de seed mais plus représentatives du read Comparaison avec short read
+plus d’erreur
+Moins de reads (throughput)
+Moins d’ambiguïté car read plus longs
+Comparaison : plus facile avec short read car moins d’erreur
+SNP plus facile à détecter avec short read (moins d’erreur) mais variants structurels avec long read 
+~ Autres RNAseq : problème = aligner des reads sur des zones non contigùes (à cause de l'épissage) 
+~ Performances Meilleure que [cite:@donato2021] [donato2021]
+10 génomes 
+

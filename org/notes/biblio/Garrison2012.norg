@@ -1,0 +1,26 @@
+
+Principe 
+
+
+Théorème de Bayes pour détecter des haplotypes à partir des reads.
+Principe: sur un locus donné pour R,1,… R,n,, on calcule la probabilité d'un génotype G à partir d'hypothèse sur la distribution d'alèlle a priori P(G) et sur la qualité de séquencage P(R,1,… R): 
+
+
+P(G|R,1,…) = P(G)P(R_…|G)/P(R,1,..)
+P(R,i,|G,i,) est la probabilité d'un génotype à partir d'un ensebmel de reads. Calculé à partir de la probabilité d'avoir R,i, échantillons à partir de G multilié par les erreurs de séquencage (calculé à partir des scores de qualités) 
+
+
+P(G) est la probabilité d'échantilloner le génotype en étant donné la fréquence de l'allèle, multiplié par la probabilité d'observer cet allèle dans la population (Théorême de Bayes également)
+Le second terme est donné par la loi d'Ewens (correspond à la distribution de probabilité des décompositions d'un entier, voir {https://en.wikipedia.org/wiki/Ewens%27s_sampling_formula}[https://en.wikipedia.org/wiki/Ewens%27s_sampling_formula]) 
+
+
+Implémentation 
+
+
+~ Si les variations sont "assez proches" (moins de n bp selon un seuil défini), combiné dans un seul haplotype 
+~ Définition d'un intervalle.
+On filtre les allèles selon le nombre de reads portant ALT et sur la somme de qualité des pb dans un échantillon. Puis processure itératif : à partir de l'allèle la plus grande, pour tous les alignements qui sont complètement contenus dans l'intervalle on va chercher les haptolypes. On prend le plus grand haplotype la plus grande et l'intervalle est étiré vers la droite pour inclure cet allèle. On réitère jusqu'à ce que la borne à droite ne contienent aucun haplotype passant les critères de qualité 
+~ On applique le principe précedent mais pour calculer la probabilité a postério à uene position, on fait une recherche de gradient sur tous les génotypes (donc plusieurs échantillons). Marginal probability. 
+~ Estimation de la qualité du génotypage définie approxivmativement comme la probabilité d'un polymorphismes 
+~ estimalation de la qualité d'_un_ génotype en somme mais seulement dans un espace restreint 
+

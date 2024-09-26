@@ -1,0 +1,34 @@
+
+@embed org
+#+filetags:   :article:bib:
+@end
+
+
+@embed org
+#+identifier: 20240716T170819
+@end
+
+
+@embed org
+#+reference:  zou2009evolutionary
+@end
+
+
+Idem {denote:20240716T170853}[PseudoPipe: an automated pseudogene identification pipeline] sur principe
+{https://github.com/ShiuLab/PseudogenePipeline}[Code sur github] 
+
+
+Riz et plante (arabidopsis)
+Méthode d'identification : basé sur [cite:@zhang2006pseudopipe] [zhang2006pseudopipe] 
+
+
+~ identification région intergénique similaire à des protéines connues 
+~ régions répétées masqué 
+~ pseudoexons fusionnées en contigs 
+~ fitre sur qualité 
+~ identification des caractérisitque coupant les séqunece proétique 
+~ différence ci rétro- et non-rétro 
+
+
+et stats 
+

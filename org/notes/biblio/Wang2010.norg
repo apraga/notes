@@ -1,0 +1,47 @@
+
+* Annotation
+
+{https://annovar.openbioinformatics.org/en/latest/}[https://annovar.openbioinformatics.org/en/latest/] 
+
+
+- Sur le gène Refseq par défaut (ENSEMBLE, UCSC, GENCODE ou GFF3 "maison") 
+- Basé sur la région: 
+
+
+— régions conservée sur plusieurs espécèse
+— site prédiction de liaison pour facteur de transcription
+— bandes cytogénétique
+— Variants impactant microARN et snoARN (small nucleolar ARN)
+— Variants impactant site d'accroches prédits pour microARN
+— duplications segmentaire
+— variants structurels
+— variants publis dans études GWAS (genome-wide association studies)
+— zones ENCODE
+— variants non codant touchant enhancer, répsesseur, promoteur (prédit par chromHMM par exemple) 
+
+
+- peut annoter variants mitochondrial 
+- génome : hg19,hg38 (humain), souris, vers, mouche, levure + autres 
+- intronique, exonique, intergénique, 5'/3' UTR, épissage, upstream/downstram à 1kb 
+-- si intronique, retourne les 2 gènes les plus proches 
+- Filtres : 
+-- dbSNP, férquence allélique (1000 genomes, exac, gnomad) 
+
+
+— score : 
+
+
+- SIFT, polyphen, lrt, muttaionteaster, mutation assesor, fathmm, metasnv, metalr 
+- CADD, GERP++ 
+
+
+* Méthode
+
+- processus en plusieurs passes 
+- génes "à filtrer" si contiennent variants causant un codon stop mais fréquent (MAF combinée > 1% dans 1000 génomes (par exemple: un variant avec MAF à 0.5 et un autre à 0.8%) 
+
+
+* Test
+
+- 4 exomes avec 4 variants connus sur /MYH3/ 
+

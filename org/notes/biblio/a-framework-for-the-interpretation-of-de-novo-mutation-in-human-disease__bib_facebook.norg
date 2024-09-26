@@ -1,0 +1,49 @@
+
+@embed org
+#+filetags:   :bib:facebook:
+@end
+
+
+@embed org
+#+identifier: 20240722T100100
+@end
+
+
+@embed org
+#+reference:  samocha2014framework
+@end
+
+
+Modèle statistique pour mutation de novo par gène (amélioration de[cite:@neale2012patterns] [neale2012patterns] ) en exome. 
+
+
+Utilisation pour déterminer les gènes avec pression de sélection (moins de variant qu'attendu) 
+
+
+* Modèle de base
+
+À noter que[cite:@krawczak1998neighboring] [krawczak1998neighboring] conseille d’inclure les 5’ et 3’
+Le modèle de base est simple (voir supplementary): seul le contexte (= 1 trinucléotide) compte 
+
+
+~ Pour chaque trinucléotide, on compte le nombre d'occurrence du triplet initial et du triplet muté (la base du milieu) entre un humain et un chimpanzé : XAY -> XBY 
+~ pondération par une constante λ (non donnée) 
+~ la probabilité de mutation d'une base est donc la moyenne des 3 trinucléotides possibles 
+~ probabilité par gène par type de variant en regardant chaque base codante + site consensus d'épissage 
+
+
+* Ajustement
+
+- sur la profondeur: on veut pénaliser les zones mal couvertes 
+-- pour chaque base, on compte les trios avec >= 10x couverture sur cette base. S'il y a une diminution, la probabilité est multiplié par un facteur entre 0.9 et 1 (non clair comment) 
+- sur la divergence avec les singes : pour capture la déviation du taux de mutation 
+-- score de divergence = nombre de sites divergence/site examens pour la région contenant le gène +/-1 MB. Puis modèle linéaire 
+-- score moyen si pas de score de divergence 
+-- sauf que le taux de mutation prédit a été augmenté donc les probabilité ont été ajusté pour lue la somme soit identique après le score 
+- (timing de réplication ADN (si tardif, plus de mutation): utilisation des Z-score de Koren et al. -> retiré car n’apporte pas d’information !) 
+
+
+* Résultat
+
+{https://static-content.springer.com/esm/art%3A10.1038%2Fng.3050/MediaObjects/41588_2014_BFng3050_MOESM12_ESM.xls}[excel avec mutation par gène] : proba mais en log10 
+

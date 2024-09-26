@@ -1,0 +1,30 @@
+
+@embed org
+#+filetags:   :bib:facebook:
+@end
+
+
+@embed org
+#+identifier: 20240717T144433
+@end
+
+
+@embed org
+#+reference:  raisaro2017
+@end
+
+
+Article dans le même principe que [cite:@shringarpure2015] [shringarpure2015]
+Mais ici l'attaquant connait la fréquence allélique du beacon -> puissance plus importante.
+Selon les auteurs, ce n'est pas aberrant car disponible sur des bases de données en ligne (1000 genome, hapmap…)
+Il faut le VCF de la victime 
+
+
+* Résultat
+
+502 échantillons EUR du 1000 genomes 
+
+
+- si l'ancestry est connu, 3 SNPs suffisent pour puissance de 100= et 5% faux positifs 
+- (plus réaliste): seulement férquence allélique connue d'une poplutaion (d'origine potentiellement différente du beaucon): 36SNps suffisent 
+

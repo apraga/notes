@@ -1,0 +1,54 @@
+
+* Description
+
+- SNP, indel, "multiple nucleotide polymorphisms" 
+- annotation sur position (intronic, UTR, upstream, downsstream, site d'épissage, intergénique) 
+- pour gènes non codant, annotation + biotype si information disponible 
+- prédiction par rapport aux gènes codant pour les protéines (synonyme ou non, gain/pert d'un codon start ou stop, frameshift) 
+- différence avec annovar : plus de version du génome, un peu plus rapide 
+
+
+@table 
+
+
+
+
+
++hline2
+#table.head.columns 1-14 0
+: A1 : Warnings
+: B1 : Any warnings or errors.
+: A2 : Gene,ID,
+: B2 : Gene ID (usually ENSEMBL)
+: A3 : Gene,name,
+: B3 : Gene name
+: A4 : Bio,type,
+: B4 : BioType, as reported by ENSEMBL.
+: A5 : Trancript,ID,
+: B5 : Transcript ID (usually ENSEMBL)
+: A6 : Exon,ID,
+: B6 : Exon ID (usually ENSEMBL)
+: A7 : Exon,Rank,
+: B7 : Exon number on a transcript
+: A8 : Effect
+: B8 : Effect of this variant. See details below.
+: A9 : old,AA,/new,AA,
+: B9 : Amino acid change
+: A10 : old,codon,/new,codon,
+: B10 : Codon change
+: A11 : Codon,Num,(CDS)
+: B11 : Codon number in CDS
+: A12 : Codon,degenaracy,
+: B12 : Codon degenaracy
+: A13 : CDS,size,
+: B13 : CDS size in bases
+: A14 : Custom,intervalID,
+: B14 : If any custom interval was used, add the IDs here (may be more than one).
+
+
+
+@end 
+
+
+- Testé sur 356 000 SNPs entre 2 strans de drosophile 
+
