@@ -1,33 +1,19 @@
 
 #+filetags:   :bib:facebook:
-
-
 #+identifier: 20240717T144049
-
-
 #+reference:  gymrek2013
-
-
 Identité de génomes en utilisant une inférence sur le nom de famille avec information publique
 Source. ysearch.org (n'existe plus) et smgf.org (existe encore) 
-
-
 Avec des STR sur de chrX, on a les noms de famille, information géographique, génélaique.
 ~39k nom de fammile unique et 135k entrées en 2013, surtout US. 
-
-
 Test: 911 individus aux noms de famille connu, 34 marqeurs.
 Algorithme pour inférer le nom de famille : ~12% succès
 Avec date de naissance et État, médiane de 12 résultat 
-
-
 STR extrait de données illuminée avec lobSTR.
 Test sur 21 génome d'home dans le 1000Genomes et en Utah -> mauvaise qualité sur Y, 10 génome sélectionné -> 5 identifiés
 Utilisation des odnnées sur corielle, recherche internete, obituiaris, généalogiqe
 ~3-7h pour une personne
 Identification des familles 
-
-
 * Conclusion
 
 Identification de 5 individus par 10 génomes 1000projects CEU (37 marqueurs STR sur Y) 

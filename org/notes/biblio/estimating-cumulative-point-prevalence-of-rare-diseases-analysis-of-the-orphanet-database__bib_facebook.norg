@@ -1,20 +1,10 @@
 
 #+filetags:   :bib:facebook:
-
-
 #+identifier: 20240718T145042
-
-
 #+reference:  nguengang2019estimating
-
-
 Stats avec orphanet, stats plus récente, voir [cite:@orphanet2023prevalence; @orphadata2024phenotype; @hoomm2024ordo; @orphadata2024natural; @orphadata2024epidemio] [orphanet2023prevalence][orphadata2024phenotype][hoomm2024ordo][orphadata2024natural][orphadata2024epidemio] 
-
-
 Indicateurs : nb cas, point prevalence, birth prevalence, lifetime prevalence, annual incidence
 Classe 
-
-
 - < 1/1 million 
 - 1 à 9/1 million 
 - 1 à 9/100k 

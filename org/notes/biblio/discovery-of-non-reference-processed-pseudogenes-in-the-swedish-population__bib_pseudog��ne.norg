@@ -1,37 +1,17 @@
 
 #+filetags:   :bib:pseudogène:
-
-
 #+identifier: 20240717T153851
-
-
 #+reference:  boer2023processen
-
-
 Objectif : nouveaux processed pseudogene à partir de génome 
-
-
 Contexte: déjà fait mais à 5x seulement 
-
-
 Code: Processen {https://github.com/J35P312/Processen}[https://github.com/J35P312/Processen] 
-
-
 Algorithme 
-
-
 - pairs avec reads sur même gène mais exons différent avec taille d'insert plus grande qu'attendue 
 - ces reads sont aligné sur le transcriptome avec Salmon 
 - position : on cherche variants de structure dans le vcf annoté (delly pour appel de variant, VEP) pour annot puis 
 -- insertion si une position est proche du début ou fin du gène parent /et/ autre position sur autre chromosome/l'équivalent de la longeur du gène parent 
 -- site d'insertion fusionnés si <= 500bp 
-
-
 visualation : circos plot (logiciel) 
-
-
 Résultats 
-
-
 - appliqués au génome de 1000genomes + cohorte SweGen : 3 021 processed pseudogene manquant dans GRch38 
 

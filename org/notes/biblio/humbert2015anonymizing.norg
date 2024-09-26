@@ -1,40 +1,20 @@
 
 NB: article pas toujours bien écrit (on se demande plusieurs fois ce qu'ils font) 
-
-
 Principe : attaquant a une liste de SNP et une liste de phénotype de la cible 
-
-
 - génotype : 1000genome, opensnp, hack bdd 
 - phéontype : réseaux sociaux, hack bdd
 Les AF de la population doivent être connus 
-
-
 2 types d'attaque 
-
-
 ~ identification: à partir d'un phénotype d'une cible, identification du génotype par N génotypes 
 ~ perfect matching: si on a les données génomique et phénotypique de n individus, on veut les faire correspondre 
-
-
 Une fois le génotype connu, évaluation de la susceptibilité à Alhzeimer (2 SNPs a priori) 
-
-
 2 modèles 
-
-
 ~ non-supervisé : une correspondante phénotype -SNP est connue (SNPeida) 
 ~ supervisé : idem mais stats sur totue la population (openSNP) 
-
-
 * Résultat
 
 Données OpenSNP 2014 (génomic + phénotype)
 80 participants 
-
-
-
-
 
 : A1 : Cible
 : B1 : Modèle 1
@@ -48,13 +28,7 @@ Données OpenSNP 2014 (génomic + phénotype)
 : B3 : 8%
 : C3 : 16%
 
-
-
 Susceptibilité à Elzheimer: On a l'inaccuracy donc on fait la déduction 
-
-
-
-
 
 : A1 : Cible
 : B1 : Modèle 1
@@ -64,8 +38,6 @@ Susceptibilité à Elzheimer: On a l'inaccuracy donc on fait la déduction
 : A2 : 1
 : B2 : 84%
 : C2 : 95%
-
-
 
 Je ne retiens que les génotype à 80 : c'est le pire cas mais le plus réaliste 
 

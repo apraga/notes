@@ -1,31 +1,15 @@
 
 #+filetags:   :article:bib:
-
-
 #+identifier: 20240716T165859
-
-
 #+reference:  ijms17121991
-
-
 ~ Comparaison de 3 pipeline ici: pseudopipelie shiu et PSF 
-
-
 * Contexte
 
 Image avec 3 catégories 
-
-
 - processed (ou retro): transcrit ARNm puis transcription inverse et intégré dans le génome 
 - duplicated : duplicaiton d'un gène fonctionne + acquisition mutation délétère avec au final perte capacité à code une protéine 
 - unitary (gène accumule mutations) : perte de fonction mais sans duplication 
-
-
 Il faut y ajouter les pseudègen fonctionnels 
-
-
-
-
 : A1 : Processed
 : B1 : Duplicated
 +hline2
@@ -43,39 +27,25 @@ Il faut y ajouter les pseudègen fonctionnels
 : A7 : Souvent plus court
 : B7 : Sovuent plus long
 
-
-
 Humain: 82% des pseudogène du chromosome 22 sont rétrotransposition , plus rare plante (23% pseudogène riz))
 Utile pour étude évolution 
-
-
 ** Prédiction
 
 "Non-fonctionnalité" est difficile à valider et ne fonctionne pas pour tous les gènes.
 Approche prédominante basée sur 
-
-
 ~ l'homologie entre un pseudogène et un vrai gène (parent/fonctionnel) 
 ~ mutation déléteère 
 ~ défaut intros 
-
-
 Difficulté d'obtenir un ensemble de gènes parents 
-
-
 - utilisation de protéines fonctionnels, par ex. à partir d'ENSEMBL 
 - annotation de "qualité" à partir de logiciels (mais peusdo-gene possible). Les auteurs conseillent FGENESH [cite:@solovyev2006automatic] [solovyev2006automatic] 
 - pour enlever les pseuodgène 
 -- utilisation de transcripts (majorité ne le sont pas) avec annotation ARNm 
 -- riz : seul les gènes "de confiance" 
 - 
-
-
 * Bibliographie
 
 NB: erreur de ref pour retrofinder 
-
-
 - ppfinder [cite:@van2006ppfinder] [van2006ppfinder] : ADN codange pour déterminer les gènes parents puis utilisation des parents pour décteurs les locus sans intros 
 - pseudofinder [cite:@zheng2007pseudogenes] [zheng2007pseudogenes] (ne pas confondre avec [cite:@syber2022pseudopipe] [syber2022pseudopipe] ) homologue de gène fonctionnels : classification par analyse BLASTz -> non dispo en ligne ? 
 - rétrofinder [cite:@Baertsch_2008] [Baertsch_2008] : alignement ARNm (Genbank) sur génome (BLASTz), détection de caractéristiques biologisue, pondération heuristique 
@@ -83,8 +53,6 @@ NB: erreur de ref pour retrofinder
 - pseudopipe [cite:@zhang2006pseudopipe] [zhang2006pseudopipe] : à partir de la séquence protéique, on trouve les pseudogène dans les régions intergénique marqué par des repeat. Puis éralignement pour valider 
 - pipeline de shiu (sic) [cite:@zou2009evolutionary] [zou2009evolutionary]: idem pseudopipe 
 - PSF [cite:@solovyev2006automatic] [solovyev2006automatic] idem pseudopipe 
-
-
 * Algorithme (en général)
 
 ~ Détermination d'un ensemble de gène parent: les auteurs ne dient pas comment eux on fait… 
@@ -92,8 +60,6 @@ NB: erreur de ref pour retrofinder
 ~ tBLASTn (filtre read redondants) -> candidats dans régions intergénique en se basant sur homologie 
 ~ alignement des candidats sur parents 
 ~ vérification intron, queue polA 
-
-
 * Comparaison des pipeline
 
 - Arabidospi thaliana 

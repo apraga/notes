@@ -1,16 +1,10 @@
 
 Résultat de GIAB : genome et exome (différent kit de capture) 
-
-
 - gatk4, strelka2, octopus, deepvariant 
 - comparé au gold truth GAB: HG0001, 5,6,7 sur grch37 (car lifté) et 2,3,4 en 38 
 - pour exome : en 37, ont fait l'union des capture et des gènes refseq. EN 38, exons refesq +100bp de chahaque côté 
 - novaseq et hiseq4000 pour exome 
-
-
 Résultat 
-
-
 - genome : 
 -- deepvariant meilleur (priciosn + recall). 
 -- indel : choix de la méthode plus important que couverture 

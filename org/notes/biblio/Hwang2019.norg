@@ -1,11 +1,7 @@
 
 Suite de Hwang 2015 
-
-
 Aligneur + appel de variant mais utile surtout pour appel de variant
 Méthodes 
-
-
 - 70 combinaisons: 7 aligneurs avec 10 appel de variant 
 - 1 génome européen et 1 african 
 - variants de référénces : 
@@ -13,11 +9,7 @@ Méthodes
 -- 1000 genompes pour les 2 
 - distance de Jaccard [fn:2] entre 2 pipeline sur 4 figures (SNP et indel, NA12878 et NA19240 respectivement) 
 -- avec les référence donc 70 +1 ou +3 
-
-
 Résultats 
-
-
 - haplotypecaller est assez groupé (probablement car réaligne localement) 
 - plus de différence entre le type de variant (SNP vs indel) qu'entre les individus 
 - *majorité des variants sont appelé par plupart des pipeline* 
@@ -52,11 +44,7 @@ Résultats
 ---- Le meilleur pipeline solo = gsnap + glfsingle (2 samples) 
 ---- pour indel : bwa mem + haplotypcaller (2 samples) 
 ---- -> certains pipeline exploitent les régions hors "zones de confiance" de GIAB 
-
-
 Conclusion 
-
-
 - *influence appel de variant semble > aligneur* (mais peut être lié aux différentes options) 
 - discordance pour variants rare et nouveau et pour SNP rare 
 -- probable diminution des performances pour population non-européennes (plus de SNP et indel rare) 
@@ -65,11 +53,7 @@ Conclusion
 -- comparaison de vCF = left-normalized seulement (différentes représentation d’un variant complexe non considérée) 
 -- pas el même séquencage pour les 2 patients (profondeur 49 et 72, short-read length 101 vs 250) 
 -- pas d’optimisation des paramètre 
-
-
 *BWA-mem + haplotype caller n’est pas inférieur à une combinaison de pipeline pour la plupart des région*
 Conclusion: méthode solide 
-
-
 Apport: 
 

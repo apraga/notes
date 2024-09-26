@@ -8,8 +8,6 @@
 - peut soumetter : laboratoire clinique, chercheurs, base de données, groupes d'expertes / ceux étabilssant les guideline 
 - agrégation des interprétations 
 - gratuit 
-
-
 |caption Statistique clinvar au 17 décembre 2023 
 +hline2
 #table.head.columns 1-15 0
@@ -42,8 +40,6 @@
 : A14 : Variants affecting overlapping genes
 : B14 : 35523
 |end
-
-
 
 Total submitters 2704 
 

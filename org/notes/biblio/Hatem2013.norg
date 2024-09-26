@@ -1,19 +1,11 @@
 
 Vieil article mais plus exhaustif 
-
-
 Méthodes 
-
-
 - Bowtie, Bowtie2, BWA, SOAP2, MAQ, RMAP, GSNAP, Novoalign, and mrsFAST (mrFAST) 
 - données génomiques de synthèse: wgsim (erreur de distirbution uniforme) et ART (biais illumina) 
 - données RNA-seq 
 - génome de souris ("similair behaviour" que sur le génome humain 
-
-
 Résultat: 
-
-
 - performance = taux de reads alignés 
 - throughput (bp mappé par seconde) 
 - SNP: GSNAP > bowtie2 = bwa 
@@ -22,7 +14,5 @@ Résultat:
 - scalabilité : 
 -- 8 threads : bowtie < bowtie2 > bwa 
 -- 8 coeurs : bowtie = bwa = SOA = FANGS 
-
-
 Conclusion : pas de meilleur aligneur pour toutes les métriques. Bowtie = meilleur throughput. BWA = meilleur pour reads plus long 
 

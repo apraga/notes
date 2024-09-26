@@ -1,22 +1,10 @@
 
 #+filetags:   :bib:pseudogène:
-
-
 #+identifier: 20240717T144330
-
-
 #+reference:  miller2021sideretro
-
-
 Code C {https://github.com/galantelab/sideRETRO}[https://github.com/galantelab/sideRETRO] 
-
-
 Seulement les "unfixed retropcopies" (somatically inserted ou polymorphiques) 
-
-
 Input: bam/sam/cram,génome de référence et transcriptome 
-
-
 * Algorithme
 
 ~ sélections paires mal alignée 
@@ -24,17 +12,11 @@ Input: bam/sam/cram,génome de référence et transcriptome
 -- soit "split read" 
 ~ retient ceux qui sont dans une région exonique (gène parent) et son "mate" (potentiellement oint d'insertion) 
 ~ groupe ces reads avec dbscan (clustering) pour trouver le gèn parnet + ponits d'insertion Otuput: gène parent, point d'insertion, brin, génotype 
-
-
 * Données simulées
 
 Sur 100 génomes humaines, ~31-45 rétroCNV par génoome avec error
 N'identifie pas ceux dans régions très répétes mais 79/86 des intro, not. régions LINE9SINE 
-
-
 Testé sur 1000 genomes 
-
-
 - 5 individus avec génomes et exomes différents: 5 candidats -> 3 validés 
 -- 20 dans génomes 
 -- 6 exomes 

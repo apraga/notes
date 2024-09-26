@@ -1,27 +1,13 @@
 
 #+filetags:   :pseudègene:psf:bib:
-
-
 #+identifier: 20240716T171712
-
-
 #+reference:  solovyev2006automatic
-
-
 Code source : non disponible ? on a une version linux mais en essai et sans PSF ? {https://www.molquest.com/molquest.phtml?topic=downloads}[https://www.molquest.com/molquest.phtml?topic=downloads] 
-
-
 Workshop de prédiction de gène organisé par Encode 
-
-
 - pipeline Fgenesh++ = identifie 91 nucléotide codant (spécificité 90%) 
 - PSF = programme de Softberry pour trouver pseudogène : trouve 90% des pseudogène annoté manuellement 
 - test : référence de 145 pseudègen HAVANA -> 81% retrouvé 
-
-
 Algorithme 
-
-
 ~ détection de gène (ici Fgenesh++) : pour un ensemble de séquence protéine, on sélectionne les meilleurs résultats par protéine mappé -> pargen 
 ~ candidats: pour chaque protéine 
 ~~ alignement > seuil 

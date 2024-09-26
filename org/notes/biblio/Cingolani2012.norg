@@ -6,13 +6,7 @@
 - pour gènes non codant, annotation + biotype si information disponible 
 - prédiction par rapport aux gènes codant pour les protéines (synonyme ou non, gain/pert d'un codon start ou stop, frameshift) 
 - différence avec annovar : plus de version du génome, un peu plus rapide 
-
-
 @table 
-
-
-
-
 
 +hline2
 #table.head.columns 1-14 0
@@ -44,10 +38,6 @@
 : B13 : CDS size in bases
 : A14 : Custom,intervalID,
 : B14 : If any custom interval was used, add the IDs here (may be more than one).
-
-
-
-
 
 - Testé sur 356 000 SNPs entre 2 strans de drosophile 
 

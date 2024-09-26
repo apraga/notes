@@ -1,23 +1,13 @@
 
 Méthode: 
-
-
 - Génome : NA12878 (TruSeq), synthetic diploid (HiSeq) et simulé (NEAT) 
 -- NEAT: 1 version avec mutations aléatoires (moyenne 0.002), 1 version défini à partir du (depuis le "golden truth") 
 - GRCh37 
 - 4 pipeline: bwamem+GATK, bwamem+deepvariant, Dragen+dragen, dragen+Deepvariant 
-
-
 *mais en GRch37* 
-
-
 - 64 coeurs 
 - comparaison avec happy + vcfeval 
-
-
 Résultat 
-
-
 - bonne concordance des pipeline : 
 -- SNV: 91.7-9.6% retrouvés par tous les pipeline et 95.3-99.95% par au moins 2 
 -- indel : 83.5-99.4% 
@@ -25,11 +15,7 @@ Résultat
 - temps d'exécuton: 
 -- dragen >> autres en total (facteur 5 et 30min à 1h30 d'exécution sur HPC) 
 -- pour bwa-mem/gatk ou deepvariant, alignement domine appel de variant. Deepvariant ~ gatk pour appel de variant 
-
-
 Limite: 
-
-
 - résultat différent du fda challenge 
 - GRch37 
 

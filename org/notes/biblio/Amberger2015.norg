@@ -15,8 +15,6 @@
 --- ségrège avec le phénotype dans plusieurs familles 
 --- de novo dans un nombre sigificatif de famille 
 -- "qualifié" (qualified) si 1 famille avec plusieurs variants dans 1 gène et les variants ségrègent avec le phénotype + peuve fonctionnelle (NB: 1 seul patient peut suffir si l'argumentaire est solide) 
-
-
 |caption OMIM Stats (19 décembre 2023) 
 +hline2
 #table.head.columns 1-7 0
@@ -63,5 +61,3 @@
 : E7 : 71
 : F7 : 27,201
 |end
-
-

@@ -1,78 +1,40 @@
 
 #+filetags:   :bib:facebook:
-
-
 #+identifier: 20240717T144855
-
-
 #+reference:  yakubu2019
-
-
 Super tableau avec les types d'attaques et les articles
 Figure 1 qui résume bien la classification 
-
-
 Discute cryptographique, techniques pour préserver confidentalité -> non lu 
-
-
 * Attaques
 
 ** Identity tracing attack
 
 À partir de l'ADN (anonymisé oun no identifié) -> identifie le patient avec des quasi-identifier (age, sexe, nom de famille etc) obtenu depuis réseaux sociaux ou bases ded onnées publique (peoplesmart, findoutthetruth)
 Ex: nom de famille trouvé pour 
-
-
 - partisan PGP (Sweeney 2013) 
 - à partir du chrY [cite:@gymrek2013] [gymrek2013] [cite:@erlich2018] [erlich2018] : à partir du génome d'un suspect, on cherche ses apparenté dans des services public de généalogie 
-
-
 Avec un service qui répond oui/non pour un allèle dans un génome, on peut savoir si un individu est présent dans cette base[cite:@shringarpure2015] [shringarpure2015] 
-
-
 ** Attribute disclosure
 
 Prédire attributs "sensible" des victimes (phénotype, association maladie, drogue
 ADN connu
 On cherche base de données d'étude génétique ou GWAS 
-
-
 Stastitique aggréges ne cachent pas [cite:@cai2015] [cai2015]
 Si on a le phénotype complet et accès au génotype de pluseurs individus, on peut retrouver le génotype et en déduire une présdisposition alzheimer dans [cite:@humbert2015anonymizing] [humbert2015anonymizing]
 [cite:@lippert2017] [lippert2017] Prédiction de caractéres phénotypique (parte 1) et identification basée dessus parmis une pré-selection. Critique violente par [cite:@erlich2017major] [erlich2017major] : age, sex et ethinicité suffisent à avoir la même précision 
-
-
 Pharmacogénétique: inversion d'un modèle prédisant warfarine pour un undifiviut: on peut avoir la génétique et certains paramètres (age, ethnie, taille, poids) 
-
-
 ** Completion attacks
 
 Reconstruction de l'information génétique à partir 
-
-
 - de l'ADN parcellaire de la cible 
 - ou de l'ADN de la famille 
 -- Possible du fait de la corrélation importante. 
 -- Pionnier [cite:@humbert2013addressing] [humbert2013addressing] 
 -- réciproque : ADN de la famille à partir du cas index [cite:@humbert2017quantifying] [humbert2017quantifying] (même modèle mais amélioré – ils ont juste mis à jour l'article) 
-
-
 amélioration [cite:@deznabi2018inference] [deznabi2018inference] avec corrélation complexe mais même idée
 Prédiction génotype et phénotype: [cite:@he2020inference] [he2020inference] 
-
-
 Enfin, une technique complètemenet différente: utilisation des haplotypes identiques dans la généalogiue (IBD = identical by descent) [cite:@kong2008detection] [kong2008detection] 
-
-
 ** Tableau
-
-
-
-
-
-
-
-
 : A1 : Type
 : B1 : Article
 : C1 : Données de la cible
@@ -217,10 +179,6 @@ selon famille. Préciser incertitude et type de tests ?
 : C25 : idem mais phénotype prédi
 : F25 : erreur 0:4 et 0.5
 
-
-
 Autre
 [cite:@fredrikson2014privacy] [fredrikson2014privacy] : contrairement à ce qui est mentionné dans la revue, ne regarde que le génotype donc pas intéressant ici 
-
-
 * Footnotes

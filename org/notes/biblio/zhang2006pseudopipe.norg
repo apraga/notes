@@ -1,10 +1,6 @@
 
 Code {http://pseudogene.org/DOWNLOADS/pipeline_codes/ppipe.tar.gz}[http://pseudogene.org/DOWNLOADS/pipeline_codes/ppipe.tar.gz] 
-
-
 Algorithme 
-
-
 - input: génome (sans région répététée), ensemble des séquences proétiques et coordonées des gènes fonctionnels 
 - output: annotation des pseudogène 
 ~~ identification des régions similaire avec une protéine (BLAST) 

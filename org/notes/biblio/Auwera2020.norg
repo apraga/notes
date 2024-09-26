@@ -1,7 +1,5 @@
 
 Tutorial + présentation des outils. Référence recommandées par GATK 
-
-
 *** <DONE> Best practice
 
 ~ MarkDuplicates Duplicats = 
@@ -20,6 +18,4 @@ Tutorial + présentation des outils. Référence recommandées par GATK
 --- nécessite des positions de SNPs connus pour les exclure (typiquement dbSNP) 
 --- calculé à partir du group de reads, quality score, cycle machine et base + base précédente 
 -- 3. Recalibration 
-
-
 *** Haplotypecaller

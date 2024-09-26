@@ -1,24 +1,14 @@
 
 Important car 
-
-
 - duplications segmentaire peut être confondu avec régions "parente" en shortread 
 - aligmement compliqué (on peut perdre des reads) 
 - faux-positifs (variants du pseudogène aligné par erreur dans le gène parent) 
 - faux-négatif (variants du gène aligné par erreur dans le pseudogene) 
 - amorces Sanger difficiles à dconcevoir 
-
-
 >10k pseudègen (GENCODE). Liste sur ce site {https://blueprintgenetics.com/pseudogene/}[https://blueprintgenetics.com/pseudogene/] 
-
-
 Homology 90-98% OK mais devient difficile> 9-%
 Régions du génoèmes masquéee (not. duplication segmentaire) 
-
-
 Approche blueprint 
-
-
 - kit capture adapté 
 - pipeline maison 
 - seuls les reads avec qualité d' alignement >= 20 sont considéré 

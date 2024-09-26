@@ -1,13 +1,7 @@
 
 Contient algorithme haplotypecaller 
-
-
 Figure: {https://gatk.broadinstitute.org/hc/en-us/articles/360035531412-HaplotypeCaller-in-a-nutshell}[https://gatk.broadinstitute.org/hc/en-us/articles/360035531412-HaplotypeCaller-in-a-nutshell] 
-
-
 Principe : réalignement local 
-
-
 ~ Régions d'intérêt
 À partir de l'alignement, compare à l'allèle de réference (en tenant compte des mismatch, indel, softclib) -> Calcule une "probabilité" pour chaque position (NB: en lissant avec un kernel gaussien).
 Une région est donc un ensemble ed position telles que la probabilité > seuil (0.002 par défaut). NB: utilise des reads qui sont sont à +/-100pb autour de cette région mais qui ne contribuent pas au calcul de probabilité. Taille mi = 50bp, max 300bp (si supérieur, coupée en 2) 
@@ -17,7 +11,5 @@ Une région est donc un ensemble ed position telles que la probabilité > seuil 
 ~ probabilité par read transformée en variant (modèle Bayeson). 
 -- proba d'un génotype * probabilité "brute" d'un génotype / somme de probabilité de tous les génotype pour les allles d'un variant 
 -- proba brutes d'un génotype = calcul sur tous les reads en faisant le produit des probabilité des différentes allèles pour ce génote pour chaque read 
-
-
 NB: plus de détails sur le calcul de probabilité avec un exemple simple {https://eriqande.github.io/eca-bioinf-handbook/variant-calling.html}[https://eriqande.github.io/eca-bioinf-handbook/variant-calling.html] 
 

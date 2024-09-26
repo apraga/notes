@@ -1,20 +1,10 @@
 
 #+filetags:   :bib:facebook:
-
-
 #+identifier: 20240717T144036
-
-
 #+reference:  fredrikson2014privacy
-
-
 Inversion de modèle : à partir d'un modèle prédisant le niveau de warfarine, peut-on retrouver des caractéristique des patient
 Contexte: CYP2C9 et VKORC1 président 54% variabilabté dosage warfarine avec age et taille 
-
-
 Input: 
-
-
 - accès au modèle entraîné (boîte noire) 
 - dosage warfarine de la cible 
 - domaine de dosage 
@@ -22,11 +12,7 @@ Input:
 - et 
 -- phénotype partiel de la cible (âge, ethnie, taille, poids de la cible) 
 -- OU tout le phénotype 
-
-
 Output: prédire un SNP sur CYP2C9 et un SNP sur VKORC1 
-
-
 * Validation
 
 entraîné et validé sur donnée IWPC (coupé en 2)

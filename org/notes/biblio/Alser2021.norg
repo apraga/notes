@@ -1,41 +1,19 @@
 
 Revue des algorithmes 
-
-
 Notes 
-
-
 Introduction 
-
-
 - Brute-force = non utilisable sur machine modernes (centains millions de read) 
 - Méthode actuelle 
 - Alignement = étape cruciale 
 - 2 possibilité pour un génome : assemblage /de novo/ ou sur un génomne de rééfrence. La première solution n'est pas encore utilisée (génome complexe et reads petite taille, problème non résolu par long read) car trop lente et plus coûteuse 
-
-
 Problèmes 
-
-
 - génome de réference incomplet (reads non aligné/incorrectement) 
 - régions répétées (1 reads peut aligner sur différente région) Ex: BWA mem qui aligne "au hasard" ([cite:@firtina2016] [firtina2016]: si les reads sont mélangés, un read ambigu est aligné à un endroit différent) 
 - Doit tolérer SNV ou variants structuraux 
 - Doit gérer les brins forward et reverse pour éviter d’avoir des génotypes différents (strand bias) 
-
-
 ~ Liste complète d'aligner jusque 2020: Table 1 Aligneur gérant l'ADN après 2012
 (W) = wrapper (utilise d'autres outils) 
 ~~ Initiale 
-
-
-
-
-
-
-
-
-
-
 
 +hline2
 #table.head.columns 1-67 0
@@ -710,20 +688,6 @@ info = CSV.read("biblio-aligner-init.tsv", DataFrame, delim="\t")
 cite = CSV.read("citation-aligner-init.tsv", DataFrame, delim="\t")
 d = innerjoin(info, cite, on = :ID)
 CSV.write("biblio-aligner.tsv", d, delim="\t")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 +hline2
 #table.head.columns 1-63 0
@@ -1517,8 +1481,6 @@ CSV.write("biblio-aligner.tsv", d, delim="\t")
 : K62 : 8000
 : L62 : 10.1016/j.compbiolchem.2020.107206
 : M62 : 32000034
-
-
 ~ Index 
 ~~ Par hash Pour des séquences courtes (seed), stocke la liste des positions (k-mer). Pour un read, on extrait certains seed et donc la liste de positions. 
 ~~ suffix tree Permet de faire des correspondances partielles en groupant les sous-séquences communes. Cf figure 1.b. BWT utilise une approche similaire mais en diminuant le stockage.
