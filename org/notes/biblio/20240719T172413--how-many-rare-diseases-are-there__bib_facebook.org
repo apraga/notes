@@ -1,7 +1,0 @@
-#+title:      How many rare diseases are there?
-#+date:       [2024-07-19 Fri 17:24]
-#+filetags:   :bib:facebook:
-#+identifier: 20240719T172413
-#+reference:  haendel2019how
-
-Méthode: compter entités dans Monarch...

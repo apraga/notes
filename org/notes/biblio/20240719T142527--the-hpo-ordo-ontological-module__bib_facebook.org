@@ -1,8 +1,0 @@
-#+title:      The HPO - ORDO ontological module
-#+date:       [2024-07-19 Fri 14:25]
-#+filetags:   :bib:facebook:
-#+identifier: 20240719T142527
-#+reference:  hoomm2024ordo
-
-Doc: https://www.orphadata.com/docs/WhatIsHOOM.pdf
-- FrequencyAssociation = Estimated frequency interval of a phenotypic abnormality in the patient population.

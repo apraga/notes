@@ -1,8 +1,0 @@
-#+title:      Actionable genotypes and their association with life span in Iceland
-#+date:       [2024-07-17 Wed 14:42]
-#+filetags:   :bib:facebook:
-#+identifier: 20240717T144229
-#+reference:  jensson2023actionable
-
-
-Suite après le refus d'inférer le génotype, l'entreprise a continuer à séqunecer plus de génomes et combiner à SNP-array.

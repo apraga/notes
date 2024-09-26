@@ -1,8 +1,0 @@
-#+title:      Bayesian method to predict individual SNP genotypes from gene expression data
-#+date:       [2024-07-17 Wed 14:46]
-#+filetags:   :bib:facebook:
-#+identifier: 20240717T144635
-#+reference:  schadt2012bayesian
-
-
-Identification entre 90 et 98% selon les tissus dans [cite:@schadt2012bayesian] (foie, poumon) à partir d'ARN.
