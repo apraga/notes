@@ -22,9 +22,7 @@ Apport de Platypus (mais vieux…) = combine ces 3 approches
 - filtre sur allèle, biais de brin, qualité alignement, qualité de la paire de base, contexet, probabilité après théorème de Bayess 
 
 
-@embed org
 #+caption: Platypus algorithm [cite:@Rimmer_2014]
-@end
 
 
 [{file:./img/platypus.png}[file:./img/platypus.png]] 

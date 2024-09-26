@@ -1,17 +1,11 @@
 
-@embed org
 #+filetags:   :bib:facebook:
-@end
 
 
-@embed org
 #+identifier: 20240718T145042
-@end
 
 
-@embed org
 #+reference:  nguengang2019estimating
-@end
 
 
 Stats avec orphanet, stats plus récente, voir [cite:@orphanet2023prevalence; @orphadata2024phenotype; @hoomm2024ordo; @orphadata2024natural; @orphadata2024epidemio] [orphanet2023prevalence][orphadata2024phenotype][hoomm2024ordo][orphadata2024natural][orphadata2024epidemio] 

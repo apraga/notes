@@ -1,17 +1,11 @@
 
-@embed org
 #+filetags:   :bib:facebook:
-@end
 
 
-@embed org
 #+identifier: 20240722T100100
-@end
 
 
-@embed org
 #+reference:  samocha2014framework
-@end
 
 
 Modèle statistique pour mutation de novo par gène (amélioration de[cite:@neale2012patterns] [neale2012patterns] ) en exome. 

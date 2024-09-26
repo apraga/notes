@@ -1,17 +1,11 @@
 
-@embed org
 #+filetags:   :bib:facebook:
-@end
 
 
-@embed org
 #+identifier: 20240717T144416
-@end
 
 
-@embed org
 #+reference:  pakstis2010snps
-@end
 
 
 45 SNPs suffisent à identifier un individu parmi 44 populations. 

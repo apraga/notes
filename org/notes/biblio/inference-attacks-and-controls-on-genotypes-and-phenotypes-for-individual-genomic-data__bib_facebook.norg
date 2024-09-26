@@ -1,17 +1,11 @@
 
-@embed org
 #+filetags:   :bib:facebook:
-@end
 
 
-@embed org
 #+identifier: 20240717T144112
-@end
 
 
-@embed org
 #+reference:  he2020inference
-@end
 
 
 Même framework que[cite:@humbert2013addressing] [humbert2013addressing] & co 

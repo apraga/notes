@@ -29,7 +29,6 @@ On utilise git-annex. Il faut
 
 @code bash
 git annex initremote gdrive type=external externaltype=rclone target=gdrive encryption=shared
-@end
 
 
 *** Git LFS
@@ -41,7 +40,6 @@ git annex initremote gdrive type=external externaltype=rclone target=gdrive encr
 
 @code bash
 git annex initremote lfstest type=git-lfs url=git@github.com:apraga/papers.git encryption=none
-@end
 
 
 ** Utilisation
@@ -51,7 +49,6 @@ git-annex init
 git-annex enableremote lfs
 git-annex enableremote gdrive
 git-annex sync --content
-@end
 
 
 Synchronisation: =git annex sync –content= Copier les données depuis un
@@ -61,5 +58,4 @@ remote
 @code bash
 git annex get . --from gdrive
 git annex copy . --to lfs
-@end
 

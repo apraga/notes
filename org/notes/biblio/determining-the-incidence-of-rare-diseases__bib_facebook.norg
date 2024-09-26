@@ -1,17 +1,11 @@
 
-@embed org
 #+filetags:   :bib:facebook:
-@end
 
 
-@embed org
 #+identifier: 20240718T143615
-@end
 
 
-@embed org
 #+reference:  bainbridge2020determining
-@end
 
 
 MAF pour allèles patho dans maladies récessives. Calculable à la main 
@@ -57,7 +51,6 @@ Allèles trop rare pour avoir une MAF d'une base de données publique, voir trop
 ~ allèles sans MAF mais présentes dans la cohorte: la MAF totale est calculée par 
 @code latex
 \frac{m}{c} X
-@end
 où m est la somme de ces MAF, c le nombre total des allèles et X le nombre d'allèles sans MAF mais présentes (à vérifier) 
 -- Si la plupart des allèles ont été observées M ≈ vraie MAF 
 -- sinon, il faut aboslumenet le nombre total des allèles dans la population 

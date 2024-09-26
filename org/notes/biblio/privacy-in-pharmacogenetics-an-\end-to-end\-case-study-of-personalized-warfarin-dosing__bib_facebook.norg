@@ -1,17 +1,11 @@
 
-@embed org
 #+filetags:   :bib:facebook:
-@end
 
 
-@embed org
 #+identifier: 20240717T144036
-@end
 
 
-@embed org
 #+reference:  fredrikson2014privacy
-@end
 
 
 Inversion de modèle : à partir d'un modèle prédisant le niveau de warfarine, peut-on retrouver des caractéristique des patient

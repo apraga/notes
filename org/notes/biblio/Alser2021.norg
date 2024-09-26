@@ -710,7 +710,6 @@ info = CSV.read("biblio-aligner-init.tsv", DataFrame, delim="\t")
 cite = CSV.read("citation-aligner-init.tsv", DataFrame, delim="\t")
 d = innerjoin(info, cite, on = :ID)
 CSV.write("biblio-aligner.tsv", d, delim="\t")
-@end
 
 
 

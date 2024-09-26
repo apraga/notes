@@ -1,17 +1,11 @@
 
-@embed org
 #+filetags:   :bib:facebook:
-@end
 
 
-@embed org
 #+identifier: 20240717T143901
-@end
 
 
-@embed org
 #+reference:  deznabi2018inference
-@end
 
 
 Méthode très proche d'[cite:@humbert2013addressing] [humbert2013addressing] 

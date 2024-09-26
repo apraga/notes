@@ -1,17 +1,11 @@
 
-@embed org
 #+filetags:   :bib:facebook:
-@end
 
 
-@embed org
 #+identifier: 20240717T144433
-@end
 
 
-@embed org
 #+reference:  raisaro2017
-@end
 
 
 Article dans le même principe que [cite:@shringarpure2015] [shringarpure2015]

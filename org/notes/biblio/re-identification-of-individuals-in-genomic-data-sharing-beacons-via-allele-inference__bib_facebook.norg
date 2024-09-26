@@ -1,17 +1,11 @@
 
-@embed org
 #+filetags:   :bib:facebook:
-@end
 
 
-@embed org
 #+identifier: 20240717T144750
-@end
 
 
-@embed org
 #+reference:  vonthenen2019
-@end
 
 
 Amélioration de [cite:@shringarpure2015] [shringarpure2015] et[cite:@raisaro2017] [raisaro2017] : meilleure sélection des SNP et infère les allèles cachée 

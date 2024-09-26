@@ -1,17 +1,11 @@
 
-@embed org
 #+filetags:   :bib:facebook:
-@end
 
 
-@embed org
 #+identifier: 20240719T142046
-@end
 
 
-@embed org
 #+reference:  orphadata2024natural
-@end
 
 
 - AverageAgeOfOnset : 10 groupes = Antenatal, Neonatal, Infancy, Childhood, Adolescence, Adult, Elderly, All ages and No data 

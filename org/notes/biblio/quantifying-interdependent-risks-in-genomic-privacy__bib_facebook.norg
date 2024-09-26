@@ -1,17 +1,11 @@
 
-@embed org
 #+filetags:   :bib:facebook:
-@end
 
 
-@embed org
 #+identifier: 20240717T144215
-@end
 
 
-@embed org
 #+reference:  humbert2017quantifying
-@end
 
 
 Mise à jour de [cite:@humbert2013addressing] [humbert2013addressing] avec 

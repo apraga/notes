@@ -1,17 +1,11 @@
 
-@embed org
 #+filetags:   :article:bib:
-@end
 
 
-@embed org
 #+identifier: 20240716T170853
-@end
 
 
-@embed org
 #+reference:  zhang2006pseudopipe
-@end
 
 
 Code {http://pseudogene.org/DOWNLOADS/pipeline_codes/ppipe.tar.gz}[http://pseudogene.org/DOWNLOADS/pipeline_codes/ppipe.tar.gz] 

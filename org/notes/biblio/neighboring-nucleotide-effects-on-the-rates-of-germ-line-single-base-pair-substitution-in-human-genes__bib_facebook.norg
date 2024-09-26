@@ -1,17 +1,11 @@
 
-@embed org
 #+filetags:   :bib:facebook:
-@end
 
 
-@embed org
 #+identifier: 20240725T162345
-@end
 
 
-@embed org
 #+reference:  krawczak1998neighboring
-@end
 
 
 Algorithme en bref : maximiser la probabilité d’une mutation (?) 

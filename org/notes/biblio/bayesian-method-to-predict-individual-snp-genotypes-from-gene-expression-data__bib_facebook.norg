@@ -1,17 +1,11 @@
 
-@embed org
 #+filetags:   :bib:facebook:
-@end
 
 
-@embed org
 #+identifier: 20240717T144635
-@end
 
 
-@embed org
 #+reference:  schadt2012bayesian
-@end
 
 
 Identification entre 90 et 98% selon les tissus dans [cite:@schadt2012bayesian] [schadt2012bayesian] (foie, poumon) à partir d'ARN. 
