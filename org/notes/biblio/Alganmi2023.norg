@@ -1,7 +1,0 @@
-
-- Exome !! haéplotyypecaller vs dragen 
-- Comparaison en hg19, novaseq6000 
-- n'utilise pas happy mais un outil illumina 
-- bwa-mem2 + dragen gatk comparé à bwa mem + haplotypecaller 
-- Performance variable selon échantillon, mais nouvelle version domine pour l'un des échantillions 
-
