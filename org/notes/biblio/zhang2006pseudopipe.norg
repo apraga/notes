@@ -1,0 +1,25 @@
+
+Code {http://pseudogene.org/DOWNLOADS/pipeline_codes/ppipe.tar.gz}[http://pseudogene.org/DOWNLOADS/pipeline_codes/ppipe.tar.gz] 
+
+
+Algorithme 
+
+
+- input: génome (sans région répététée), ensemble des séquences proétiques et coordonées des gènes fonctionnels 
+- output: annotation des pseudogène 
+~~ identification des régions similaire avec une protéine (BLAST) 
+~~~ suppression des overlap >= 30bp avec gènes fonctionnels 
+~~ suppression des doublons (segment avec plusieurs résultat du BLAST) 
+~~~ Si mêm protéine, cela est du au fait que BLAST casse des longues séquences homologues en fragments courts 
+~~~ sinon, cela est du à des protéines/domaine protéique homologues Partionnement en résultats disjoints. Parmi ceux-c , on supprime ceux qui sont complètement contenu 
+~~ Dans un ensemble disjoint, on fusionne les différents résultats BLAST.
+Puis, parmi les ensembles adjacent qui correspondent à la même protéine, ils appartiennent au même pseudogène en fonction de la distance entre les résultats et la distance à la protéine Les trous entre les hits peuvent venir 
+~~~ de zones non considérées par BLAST (faible complexité ou tédériorée) 
+~~~ petit ADN inséré 
+~~~ séuqence intronique dans les pseudogen dupliqué 
+~~~ éléments répété 
+~~ Paternité des pseudogèn :Ê déterminée parmi les proténies paralogues en se basant sur 
+~~~ similarité des séquence " 
+~~~ meilleur e-value 
+~~~ longeur de la proténie (cela suppose que le pseudogene est plus proche du gène parent original) Note: alignement amélioraté avec tfasty en considérant la zone d'un pseudo-exon + 3*bp Python 
+

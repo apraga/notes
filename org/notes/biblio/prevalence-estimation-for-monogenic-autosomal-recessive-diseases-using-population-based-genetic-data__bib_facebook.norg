@@ -1,0 +1,37 @@
+
+@embed org
+#+filetags:   :bib:facebook:
+@end
+
+
+@embed org
+#+identifier: 20240718T160002
+@end
+
+
+@embed org
+#+reference:  schrodi2015prevalence
+@end
+
+
+Méthode bayésienne pour maladie récessive, voir [cite:@bainbridge2020determining] [bainbridge2020determining] pour un autre algo plus récente 
+
+
+HardyWeinberg : bof 
+
+
+Proba initiale comme "beta variante" (apparemment assez courant) puis théorme de Bayes 
+
+
+- paramètres de la distribution beta estimé sur 23k variants clinvar patho 
+
+
+Hypothèses 
+
+
+- Suppose pénétrance complète 
+- pas de consanguinité 
+
+
+Pas lu très en détail 
+

@@ -1,0 +1,32 @@
+
+* 3 types d'annotations
+
+- gène: 
+
+
+– relation par rapport au gène : variant exoniqe, intronique
+– si exonique, rôle fonctionnel (synonmique, frameshift…) + changement acide aminé 
+
+
+- région: utile pour savoir si un variant est dans une région d'intérêt 
+
+
+– segdup
+– cytogénétique
+– site d'attache pour transcription
+– microARN, snoARN
+– GFF3 
+
+
+* filtre : 1000G, dbsnp, prédicion, ESP6500, exac, clivan, GWAS
+
+* Limites
+
+~ filtre par défaut ("disease model") peut ne pas être appropripadapt 
+~ Parfois trop d'information (ex: 10 scores de pathogénétique) -> score MétaSVM. Recommandation: SIFT + metascore (metaSNVM) + CADD pour variant condant. Pour noncodant (phyloP, CADD) 
+~ pas de nomenclature uniforme 
+
+
+* 
+
+* 

@@ -1,0 +1,24 @@
+
+@embed org
+#+filetags:   :bib:facebook:
+@end
+
+
+@embed org
+#+identifier: 20240722T100549
+@end
+
+
+@embed org
+#+reference:  xie2024statistical
+@end
+
+
+Analyse de variant /de novo/ 
+
+
+~ pipeline classique sur données exomes/génome (alignement + appel de variant *en trio*, puis annotation et filtre). Enfin classification en perte de fonction, damaging missens et autre (ex: annovar) 
+~ calcul du taux de mutation 
+-- [cite:@neale2012patterns] [neale2012patterns] semble utile. Comparaison des trinucléotide / singes et 1000 genomes 
+-- [cite:@samocha2014framework] [samocha2014framework] amélioration du modèle précédent 
+

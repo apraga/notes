@@ -1,0 +1,45 @@
+
+@embed org
+#+filetags:   :bib:facebook:
+@end
+
+
+@embed org
+#+identifier: 20240717T144347
+@end
+
+
+@embed org
+#+reference:  mitchell2018gpdr
+@end
+
+
+chap 08: un paragraphe résume la biblio (rien de neuf) 
+
+
+* Mitigation
+
+Technique (developpé ailleur) 
+
+
+- k-anonymité : aucune entrée n'a une combinaison de quasi-identifier unique -> remis en cause par ERlich 
+- ajout bruit (differential privacy) -> Erlich: trop de bruit pour des GWAS ? 
+
+
+Au lieu de proposer de la donnée, on ne rend que des stats (ex: DataSHIELD) 
+
+
+- les données avec < 5 entrées ne sont pas envoyée directement 
+- risque résiduel mais mécanisme robust
+GA4GH: modèle = Beacon 
+- limite K: permet de savoir si un individu est présent. Le problème est qu'ils sont liés à un maladie Problème : trouver un consensus. 2 approches 
+~~ l'attaquant a beaucoup d'information + compétence technique. Les auteurs considèrent qu'avoir un VCF n'est pas réaliste car non utilisé en clinique… Sont assez poisitfs 
+
+
+"de-identifying data as far as possible, using advanced encryption and shifting to query-based systems rather than releasing data, should go a long way to ensuring that data remain reasonably unidentifiable . Combined with legal and environmental controls on data access and use (discussed below) it is highly likely that many uses of genomic data are capable of being sufficiently protected from re-identification that they fall outside the scope of the GPDR (for at least some of that processing). 
+
+
+Conclusion
+"One is that although they are not inherently identifiable, genome sequences and sub-sets
+of genomic data are potentially highly identifying. As discussed in this report, there is an active field of science assessing the identifiability of genomic data, and how its privacy can be preserved (chapter 8). However, this can be highly technical and it is not easy for those outside the field, including health care professionals, scientists, policymakers and regulators, to make an assessment of the identifiability of genomic data in context." 
+

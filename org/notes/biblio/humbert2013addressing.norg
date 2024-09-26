@@ -1,0 +1,64 @@
+
+* Définitions
+
+Linkage desequilibrium = corrélation entre paries de SNP -> on peut inféreur la position d'un SNP à partir d'autre 
+
+
+Belief propagation : calcule des distributions marginale de variables non observées vs opbséervé 
+
+
+- cette technique utilise un graph bipartite (une partie des noeuds = variables d'intéreête et l'autre les fonction , une arête correspond à un argument d'une fonction)) 
+- permet d'avoir une bonne approximation (le calcul est exponentiel sinon) 
+
+
+* Objectif
+
+Inférer des SNPs d'une cible dans une famille ciblée
+L'attaquant connaît 
+
+
+- les SNP d' >= 1 apparente 
+- la généalogie (réseaux sociaux…) 
+- les lois mendelienne de tranmission des SNPs entre père, mère et fils 
+- les MAF des SNPs 
+- une matrice des linkage disequilibriam entre SNP 
+
+
+* Métrique
+
+- correctness = Distance entre SNP estimé et vrai SNP 
+- incertitude = entropie des probabilite 
+
+
+* 
+
+
+* Résultat
+
+** ADN partiel de 17 apparente CEPH UTA
+
+On utilise 5 enfants sur les 11 (pour être dans la moyenne et cela n'augmente pas la force de l'inférence et peut limiter convergence)
+80k SNP sur chromosome 1
+erreur estimée : 
+
+
+- sans LD: 0.3 pour grand-père, 0.05 pour le père, 0.2 pour fils 
+
+
+Avec 50SNP 
+
+
+- avec LD amélioré: 0.2, 0.05, 0.05 resp 
+
+
+** Famille pour 6 personne (OpenSNP + facebook)
+
+2 individus identivié, 11 et 9 apparentés retrouvés respectivement 
+
+
+Même emsure: 
+
+
+- chr1 Incertitude entre 0.65 et 0.55 
+- 50SNP: incertitude plus éleevé 0.73-0.58 environ 
+

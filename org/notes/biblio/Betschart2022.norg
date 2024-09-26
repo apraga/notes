@@ -1,0 +1,32 @@
+
+- GATK = le plus utilisé 
+- pas le plus performant : deepvariant = precisionFDA en 2016 (préision SNP) et en 2020 Illumina dragen 
+- quid de la vitesse et précision ? 
+- apport : pas de données simulée, test dragen et teste l'aliggnement 
+
+
+Méthode: 
+
+
+- alignement : dragen vs GATK avec BWA mem2 
+- appel de variant : deep variant et dragen contre GATK 
+- HG002 séqunecé 70x et trio x3 
+- 64 coeurs par pipeline 
+
+
+Résultat 
+
+
+- dragen plus rapide (x10 alignement) 
+- chr20-22: meilleur F1 avec dragen en alignemnt (varianlt calling = résultat moins nets) 
+- chr20-22: idem régions compliqué 
+- deletion: GATK pas moins inntéressér selon la proportion 
+
+
+Limite: 
+
+
+- chr20-22 seulement !! 
+- ne reproduit pas les résultat de Hwang et al.15 "who demonstrated an excellent performance of BWA-MEM for mapping/alignment when combined with the GATK Haplotypecaller. " 
+- dragen = illumina, non open source 
+

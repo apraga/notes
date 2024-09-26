@@ -1,0 +1,24 @@
+
+@embed org
+#+filetags:   :bib:pseudogène:
+@end
+
+
+@embed org
+#+identifier: 20240717T173522
+@end
+
+
+@embed org
+#+reference:  cooke2014processed
+@end
+
+
+Utilisé en cancer mais le principe a été vu auilleurs 
+
+
+- reads qui sont exactement sur des sites canoniques d'épissage qui sont aligné sur des exons mais avec une taille d'insert trop grand 
+- ou reads qui sont entre nu pseudogene et son side d'insertion 
+- candidat : >= 3 exons d'un gène dans l'ADN de la tumeur avec >= 2 site canonique d'épissage 
+- élimintation germiline 
+

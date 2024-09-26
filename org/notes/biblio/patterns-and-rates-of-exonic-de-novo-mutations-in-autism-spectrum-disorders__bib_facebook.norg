@@ -1,0 +1,51 @@
+
+@embed org
+#+filetags:   :bib:facebook:
+@end
+
+
+@embed org
+#+identifier: 20240722T104147
+@end
+
+
+@embed org
+#+reference:  neale2012patterns
+@end
+
+
+Méthode : 175 exome en trio 
+
+
+* Calcul du taux de mutation (Supplementary): seulement proba par gène
+
+Veulent tout l’exome mais ce qui nous intéresse est la probabilité d’une mutation d’une base. 
+
+
+Justification pour utiliser le contexte : GC 50% en exome alors que 4 en génome. Les sites les plus cournats sont C->T sur CpG. 
+
+
+Hypothèse : la connaissance des 2 nucléotides adjacent suffit pour estimer la probabilité.
+Pré-requis : la probabilité de chaque permutation de chaque triplet soit une matrice 64x3 car 
+
+
+- 4 nucléotides sur 3 position donc 4^3^ triplets 
+- 3 permutations possibles 
+
+
+** Algorithme
+
+- Une estimation de cette matrice donnée par [cite:@kryukov2007most] [kryukov2007most] en utilisant des différences humain-chimpanzée-babouin. Matrice non disponible dans l’article original ! Et méthode non facilement reproductible… 
+- Une autre estimation est donnée par les auteurs avec donnée 1000Genome 
+-- restreint aux régions intergéniques orthologues (=ancêtre commun) entre humain et chimpanzé 
+-- toutes les mutations 1000Genomes en supposant que l’allèle du chimpanzé = ancetre et ALT est l’allèle dérivée 
+-- arrive à un compte pour tous les configurations + matrice 
+- la probabilité d’un trinucléotide = nombre de mutation dans ce contexte / nb occurrence trinuclétodie, le tout pondér par une constante $\lambda$ 
+- le taux de mutation de ce nucléotide est donc divisé entre les 3 trinucléotides possibles 
+
+
+* Github
+
+{https://github.com/jamesware/denovolyzeR}[https://github.com/jamesware/denovolyzeR]
+Donnes la table de proba par gène… (Meme dans data-raw) 
+

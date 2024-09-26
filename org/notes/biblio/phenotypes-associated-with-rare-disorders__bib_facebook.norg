@@ -1,0 +1,28 @@
+
+@embed org
+#+filetags:   :bib:facebook:
+@end
+
+
+@embed org
+#+identifier: 20240719T140926
+@end
+
+
+@embed org
+#+reference:  orphadata2024phenotype
+@end
+
+
+XML: 
+
+
+- HPOFrequency: fréquence estimée pour un phénotype dans un contexte clinique donné. 5 groupes (lequels) de fréquence 
+-- always present: 100 % 
+-- very frequent: 99%-80% 
+-- frequent: 79%-30% 
+-- occasional: 29%-5% 
+-- rare: 4%-1% 
+-- excluded : 0% 
+- DiagnosticCriteria: pathognomonic ou critère diagnostic 
+

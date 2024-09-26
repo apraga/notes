@@ -1,0 +1,41 @@
+
+@embed org
+#+filetags:   :pseudègene:psf:bib:
+@end
+
+
+@embed org
+#+identifier: 20240716T171712
+@end
+
+
+@embed org
+#+reference:  solovyev2006automatic
+@end
+
+
+Code source : non disponible ? on a une version linux mais en essai et sans PSF ? {https://www.molquest.com/molquest.phtml?topic=downloads}[https://www.molquest.com/molquest.phtml?topic=downloads] 
+
+
+Workshop de prédiction de gène organisé par Encode 
+
+
+- pipeline Fgenesh++ = identifie 91 nucléotide codant (spécificité 90%) 
+- PSF = programme de Softberry pour trouver pseudogène : trouve 90% des pseudogène annoté manuellement 
+- test : référence de 145 pseudègen HAVANA -> 81% retrouvé 
+
+
+Algorithme 
+
+
+~ détection de gène (ici Fgenesh++) : pour un ensemble de séquence protéine, on sélectionne les meilleurs résultats par protéine mappé -> pargen 
+~ candidats: pour chaque protéine 
+~~ alignement > seuil 
+~~ portion siginficative de la séquence poroténie 
+~~ alignement différent du gène parent 
+~~ au moins un évènement parmi : 
+--- atteinte ORF (>= frameshit ou codon stop) 
+--- un seul exon avec site poly-A (site poly-A trop proche d'une extrémité 3' d'un alignement mais l'extrémité de la séquence protéique est alignée sur le dernier acide aminé et un exon couvre 95% séquence protéique) 
+--- perte d'introns (couverture après alignement >= 95% et moins d'exons que dans le parent) 
+--- séquence protéique non conservée (ratio remplacement non-synonyme/synomique > 0.5 (par rappor taux parent, calculé selon un article) 
+

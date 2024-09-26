@@ -1,0 +1,116 @@
+
+Article précédant hwang2019
+Différents pipeline sur données d’exome NA12878 (3 aligneur et 4 appels de variants) 
+
+
+Context : résultat différent pour diffents outils d’appels de variant 
+
+
+Méthodes 
+
+
+- NA1287 sur Hiseq200 (7 données), Hiseq2500 (4 données) et ion proton (1 seul): 
+
+
+
+
+
+
+
+
++hline2
+#table.head.columns 1-13 0
+: A1 : HiSeq2000
+: B1 : SRR1611178
+: C1 : SeqCap EZ Human Exome Lib v3.0
+: D1 : WES
+: E1 : 79.93x
+: A2 : HiSeq2000
+: B2 : SRR1611179
+: C2 : SeqCap EZ Human Exome Lib v3.0
+: D2 : WES
+: E2 : 79.84x
+: A3 : HiSeq2000
+: B3 : SRR292250
+: C3 : SeqCap EZ Exome SeqCap v2
+: D3 : WES
+: E3 : 116.06x
+: A4 : HiSeq2000
+: B4 : SRR515199
+: C4 : SureSelect v4
+: D4 : WES
+: E4 : 298.45x
+: A5 : HiSeq2000
+: B5 : SRR098401
+: C5 : SureSelect v2
+: D5 : WES
+: E5 : 116.84x
+: A6 : HiSeq2500
+: B6 : SRR1611183
+: C6 : SeqCap EZ Human Exome Lib v3.0
+: D6 : WES
+: E6 : 129.94x
+: A7 : HiSeq2500
+: B7 : SRR1611184
+: C7 : SeqCap EZ Human Exome Lib v3.0
+: D7 : WES
+: E7 : 111.90x
+: A8 : HiSeq2000
+: B8 : ERR194147
+: C8 : UCSC Known gene
+: D8 : WGS
+: E8 : 45.68x
+: A9 : HiSeq2000
+: B9 : SRX485062
+: C9 : UCSC Known gene
+: D9 : WGS
+: E9 : 56.60x
+: A10 : HiSeq2500
+: B10 : SRX515284
+: C10 : UCSC Known gene
+: D10 : WGS
+: E10 : 56.87x
+: A11 : HiSeq2500
+: B11 : SRX516752
+: C11 : UCSC Known gene
+: D11 : WGS
+: E11 : 43.61x
+: A12 : IonProton
+: B12 : NA12878,combine,
+: C12 : UCSC Known gene
+: D12 : WGS
+: E12 : 9.87
+
+
+
+- alignement sur GRCh37 
+- vcflib pour normalisation 
+- restriction aux zones de capture pour données d’exomes 
+- comparaison avec GIAB: precision et recall calculé "à la main" (article avant hap.py) 
+- aire sous la courbe precision-recall (!= aire ROC) 
+- 13 pipeline : combinaison 
+-- aligneur : Bwa-mem, bowtie2, novoalign 
+-- appel de variant : haplotypcaller, samtools, freebays, ioproton variant caller 
+
+
+Résultats 
+
+
+- Appel de variant : variabilité suivant les échantillons… 
+- Impact de l’aligneur et appel de variant : appel de variant >> alignement pour SNP et indel (surtout indel): average standard deviation: 3.46e-3 (aligneur) and 4.02e-3 (appel de variant) for SNPs and 0.72e-2 (aligneur) and 7.2e-2 (appel de variant) 
+- illumina: 
+-- SNP : samtools + bwa-mem 
+-- indel : haplotypecaller + n’importe quel aligneur 
+- ion proton : samtools 
+- concordance: metter figure 3
+{https://www.nature.com/articles/srep17875/figures/3}[https://www.nature.com/articles/srep17875/figures/3] 
+-- illumina 92% (intersection des 3 appels): explication possible: différence de version, pipeline 
+-- variabilité sur données 82-97% opevrlap ! 
+- biais: 
+-- ignorer allèle de référence (hétérozygote considéré comme homozygote): 7290/19851 -> freebayes sur illumina 
+-- ignorer allèle alternative (homozygote considéré comme hétérozygote ): 9917/19851 -> haplotypecaller 
+-- autre: 2644 
+-- donc attention aux hétérozygote avec haplotypecaller 
+- Filtre sur la qualité (qualité < 20) peut impacter la performance. HaplotypeCaller ne rende que les > 30 
+- Profondeur n’affecte pas les résultats (significativement) 
+

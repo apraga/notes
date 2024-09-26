@@ -1,0 +1,29 @@
+
+@embed org
+#+filetags:   :bib:pseudogène:
+@end
+
+
+@embed org
+#+identifier: 20240717T173314
+@end
+
+
+@embed org
+#+reference:  camiolo2018identification
+@end
+
+
+Algorithme de [cite:@camiolo2018identification] [camiolo2018identification] , inspiré de [cite:@zhang2006pseudopipe] [zhang2006pseudopipe] 
+
+
+Identification 
+
+
+~ séquence peptidique pour exons codons = utilisé pour recherche tPlantN sur une version "hard masked" du génome de référence 
+~ CDS qui correspondent à > 30% d'une région répétée filtrées 
+~ exon codant + nucléotide des régions adjacente (entre 51 et 53bp) : on sélection les hit avec > 50% d'intetié et e-value < 10-6 
+~ fusion des résultat si < 100bp 
+~ hit overlap > 20% sont groupé et on ne retinent que les meilleures paire pseudègene-requte 
+~ classification dupliqué/processe/ambigue 
+

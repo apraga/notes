@@ -1,0 +1,67 @@
+
+- Continuité de A. MkKusick Mendelian INheritance in Man 
+- publié en ligne 1987 
+- source = veille scientifique journaux biomédicaux peer-reviewed (45) + pubmed 
+- objectifs: gene-phenotype avec 2 types d'entrée : gene et phénotype 
+- chaque entrée est formattée de la même manière + liexns experten (genome(ensemble), clinique (gene reviews), variant (clinvar)…) 
+- identifiants OMIM sont largement utilisé dans la communautié + littérature (6 chiffres: le epremier est 1,2,6 si autosomoqiue, 3 si lié à l'X, 4 si lié à l'Y et 5 si mtochondrial. Astérisque devant el chiffre si gène) 
+- gène : éléments régulateurs, gène codnant et autres éléments fonctionnels 
+- phénotype(préfixe par # si base moléculaire connue, % si mendelien mais sans base connuée ou rien): maladies monogénique, phénotypes, sensibilité à réaction médicaments, sensibiilté à infection, sensibilité constit à un cancer, syndrome del et duplication 
+- gene map et morbid map : seulement les données OMIM avec emplacement cytogénétique publié 
+- critère pour 
+-- inclusion mutation gene-phénotype : 1ere mutation découverte, fréquence dans la population, phénotype distinctif, signification historique, mécanisme de mutation/pathogénétique inhabituation ou hérité de manière atypique. Plupart causent des maladies mais il y a des SNP 
+-- relation gène phénotype 
+--- variant chez plusieurs individus non apparenté 
+--- ségrège avec le phénotype dans plusieurs familles 
+--- de novo dans un nombre sigificatif de famille 
+-- "qualifié" (qualified) si 1 famille avec plusieurs variants dans 1 gène et les variants ségrègent avec le phénotype + peuve fonctionnelle (NB: 1 seul patient peut suffir si l'argumentaire est solide) 
+
+
+|caption OMIM Stats (19 décembre 2023) 
++hline2
+#table.head.columns 1-7 0
+: A1 : MIM Number Prefix
+: B1 : Autosomal
+: C1 : X Linked
+: D1 : Y Linked
+: E1 : Mitochondrial
+: F1 : Totals
+: A2 : Gene description *
+: B2 : 16,309
+: C2 : 769
+: D2 : 51
+: E2 : 37
+: F2 : 17,166
+: A3 : Gene and phenotype, combined +
+: B3 : 21
+: C3 : 0
+: D3 : 0
+: E3 : 0
+: F3 : 21
+: A4 : Phenotype description, molecular basis known #
+: B4 : 6,344
+: C4 : 383
+: D4 : 5
+: E4 : 34
+: F4 : 6,766
+: A5 : Phenotype description or locus, molecular basis unknown %
+: B5 : 1,390
+: C5 : 111
+: D5 : 4
+: E5 : 0
+: F5 : 1,505
+: A6 : Other, mainly phenotypes with suspected mendelian basis
+: B6 : 1,640
+: C6 : 100
+: D6 : 3
+: E6 : 0
+: F6 : 1,743
+: A7 : Totals
+: B7 : 25,704
+: C7 : 1,363
+: D7 : 63
+: E7 : 71
+: F7 : 27,201
+|end
+
+
