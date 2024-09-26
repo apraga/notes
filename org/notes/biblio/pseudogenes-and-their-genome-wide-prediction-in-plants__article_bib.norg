@@ -1,17 +1,11 @@
 
-@embed org
 #+filetags:   :article:bib:
-@end
 
 
-@embed org
 #+identifier: 20240716T165859
-@end
 
 
-@embed org
 #+reference:  ijms17121991
-@end
 
 
 ~ Comparaison de 3 pipeline ici: pseudopipelie shiu et PSF 

@@ -1,17 +1,11 @@
 
-@embed org
 #+filetags:   :bib:facebook:
-@end
 
 
-@embed org
 #+identifier: 20240719T094541
-@end
 
 
-@embed org
 #+reference:  orphanet2023prevalence
-@end
 
 
 Idem [cite:@orphadata2024epidemio] [orphadata2024epidemio] mais moins à jour ? 

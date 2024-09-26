@@ -1,17 +1,11 @@
 
-@embed org
 #+filetags:   :bib:facebook:
-@end
 
 
-@embed org
 #+identifier: 20240719T151048
-@end
 
 
-@embed org
 #+reference:  orphadata2024epidemio
-@end
 
 
 Doc {https://www.orphadata.com/docs/OrphadataFreeAccessProductsDescription.pdf}[https://www.orphadata.com/docs/OrphadataFreeAccessProductsDescription.pdf] 

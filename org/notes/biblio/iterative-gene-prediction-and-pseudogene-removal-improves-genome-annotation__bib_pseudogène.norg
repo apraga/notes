@@ -1,17 +1,11 @@
 
-@embed org
 #+filetags:   :bib:pseudogène:
-@end
 
 
-@embed org
 #+identifier: 20240717T144733
-@end
 
 
-@embed org
 #+reference:  van2006ppfinder
-@end
 
 
 Non maintenu, code source {https://mblab.wustl.edu/software/download/ppfinder.1.tar.gz}[https://mblab.wustl.edu/software/download/ppfinder.1.tar.gz] 

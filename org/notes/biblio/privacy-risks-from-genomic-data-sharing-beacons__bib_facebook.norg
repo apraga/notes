@@ -1,17 +1,11 @@
 
-@embed org
 #+filetags:   :bib:facebook:
-@end
 
 
-@embed org
 #+identifier: 20240717T144648
-@end
 
 
-@embed org
 #+reference:  shringarpure2015
-@end
 
 
 Service web qui répond oui/non à la question "y a-t-il un nuclétotide donnée à une position données".

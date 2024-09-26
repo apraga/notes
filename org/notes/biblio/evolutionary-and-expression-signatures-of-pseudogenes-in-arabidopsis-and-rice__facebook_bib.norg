@@ -1,17 +1,11 @@
 
-@embed org
 #+filetags:   :article:bib:
-@end
 
 
-@embed org
 #+identifier: 20240716T170819
-@end
 
 
-@embed org
 #+reference:  zou2009evolutionary
-@end
 
 
 Idem {denote:20240716T170853}[PseudoPipe: an automated pseudogene identification pipeline] sur principe

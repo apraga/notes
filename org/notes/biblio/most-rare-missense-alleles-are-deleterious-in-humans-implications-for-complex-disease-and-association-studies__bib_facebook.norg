@@ -1,17 +1,11 @@
 
-@embed org
 #+filetags:   :bib:facebook:
-@end
 
 
-@embed org
 #+identifier: 20240725T153619
-@end
 
 
-@embed org
 #+reference:  kryukov2007most
-@end
 
 
 Cité par [cite:@neale2012patterns] [neale2012patterns] pour construction d’une matrice de mutation.

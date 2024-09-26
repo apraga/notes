@@ -1,17 +1,11 @@
 
-@embed org
 #+filetags:   :bib:facebook:
-@end
 
 
-@embed org
 #+identifier: 20240717T144049
-@end
 
 
-@embed org
 #+reference:  gymrek2013
-@end
 
 
 Identité de génomes en utilisant une inférence sur le nom de famille avec information publique

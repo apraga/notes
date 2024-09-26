@@ -1,17 +1,11 @@
 
-@embed org
 #+filetags:   :bib:facebook:
-@end
 
 
-@embed org
 #+identifier: 20240717T144347
-@end
 
 
-@embed org
 #+reference:  mitchell2018gpdr
-@end
 
 
 chap 08: un paragraphe résume la biblio (rien de neuf) 

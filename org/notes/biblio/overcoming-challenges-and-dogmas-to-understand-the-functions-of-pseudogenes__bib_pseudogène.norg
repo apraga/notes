@@ -1,17 +1,11 @@
 
-@embed org
 #+filetags:   :bib:pseudogène:
-@end
 
 
-@embed org
 #+identifier: 20240717T143843
-@end
 
 
-@embed org
 #+reference:  cheetham2019
-@end
 
 
 - pas d'info sur la partie pipeline 
