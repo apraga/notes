@@ -1,16 +1,8 @@
 
 #+filetags:   :bib:
-
-
 #+identifier: 20240716T162106
-
-
 #+reference:  hansson2016risk
-
-
 Technique : peu utile. Mais quelques arguments pour introduire le besoin et la balance bénéfice-risque. 
-
-
 * Besoin
 
 - Pour le diagonstic, il faut une base de données de connaissances, qui nécessite un volume de données clinique et d’échantillons important 
@@ -18,13 +10,9 @@ Technique : peu utile. Mais quelques arguments pour introduire le besoin et la b
 - Not. pour maladie rare (1 seul changement génétique -> 1 phénotype) 
 - La rareté des maladies conduit à une quantité limité de données
 (Le reste est sur l’importance d’indentifier les individus, ce qui ne nous concerne pas) 
-
-
 * Risque
 
 - article de 2011 (El Emam et al) mais sur données de santé : 26-34% 
-
-
 * Balance bénéfice risque
 
 - les patients atteints de maladies sont conscient du risque et nombreux considèrent que l’identification est un risque mineur (errance diagnostic, manqué d’inforamtion sur le pronostic, espérance de vie, absence de traitement) 

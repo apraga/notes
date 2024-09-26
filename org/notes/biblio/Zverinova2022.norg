@@ -4,22 +4,14 @@
 inclusion de zones hypervariables (HMC = histocmopatibility locas), PAR du chrY -> perte de l'aliggenent donc diminution sensibilité
 contigé non placés et non localisité : permet d'éviter le mauvais alignement de ces régions donc diminue les faux positif
 reco : référence "primaire" (chr, mitochondriae, contig non placé et non localisé) 
-
-
 Exome = la plus populaire et la plus rentable (prix proportionnel aux nombre de variants)
 Liste appels de variants 
-
-
 * Alignement
 
 vilégier sensbilité à la spécificité (ex: GATK) 
-
-
 * difficulté : duplicats PCR
 
 reads du même fragment ADN pendant amplification PCR. Solution : pas d'amplification si suffisament de matériel, utilisation de "barcode" (UMI) si peu de materiel. Sinon on marque les reads qui partagent les même coordonnées comment potentientls doublons (mais risque de trop corriger dans les régions dupliquée) ou manquant les vrais doublons (régions répétée) 
-
-
 * Algorithms
 
 |caption Variant caller. Abbreviations: AS, assembly; CNV, copy-number variants; GATK, Genome Analysis ToolKit; MEI, mobile element insertions; RD, read depth; RP, read pairing; SR, split-read; SV, structural variants. 
@@ -102,5 +94,3 @@ reads du même fragment ADN pendant amplification PCR. Solution : pas d'amplific
 : D18 : NUMT
 : E18 : (W. Li et al., 2019)
 |end
-
-

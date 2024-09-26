@@ -1,10 +1,6 @@
 
 Exemple d'utilisation de GATK best practive. 
-
-
 Hard-filter 
-
-
 quand VQSR n'est pas possible. Exemple donné par
 “QD < 2.0 || FS > 60.0 || MQ < 40.0 ||
 HaplotypeScore > 13.0 || MappingQualityRankSum < -12.5 ||

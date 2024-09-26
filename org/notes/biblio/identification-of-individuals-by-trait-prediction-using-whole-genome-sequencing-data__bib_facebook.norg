@@ -1,23 +1,11 @@
 
 #+filetags:   :bib:facebook:
-
-
 #+identifier: 20240717T144259
-
-
 #+reference:  lippert2017
-
-
 Contexte: prédictions couleurs de la peau (4 publi), couleur des eyes (morphologie faciable) 
-
-
 Objectif : 
-
-
 - à partir de données de génomes 
 - préduction morphologie faciale, voix, âge biologie, taille, poids IMC, coleur eyes + pea, sexe 
-
-
 * Méthode
 
 - Génome 30x 1 000 individus san diago (diversité) 
@@ -31,24 +19,16 @@ Objectif :
 - taille, poids, IMC : utilisation de positions associées statistiquement (cf biblio) -> "régularisation stastitique" + ajout composant prinicap génomique + sex. 
 - eyes : 8 SNP
 couleur peau : 11 gène 
-
-
 * Résultats
 
 - visage : assez variable mais basé sur R^2CV^ par pixel (visage) et élément du vecteur -> semble assez bof 
 -- voix = mauvais (et la métrique est discutable 
 - Taille moyen, mauvais pour poids IMC 
 - yeuax, coleur peau correct 
-
-
 ** 1 individus parmi N avec un phénotype, comment le retrouver ?
 
 tous les attributs, pool de 50 (= pire cas): 0.45 précision 
-
-
 ** N génomes peuvent être apparaisé avec N phénotype ?
 
 tous les attributs, pool de 50 (= pire cas): 0.53 précision 
-
-
 ** 10 candidats parmis une cohorte de 100 88%

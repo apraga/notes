@@ -1,13 +1,7 @@
 
 17 aligneurs. Comparaison récente d'aligneurs pour Illumina et Ion torrent. 
-
-
 Notes 
-
-
 Données 
-
-
 - simulées (génomique): 
 -- humain (GRCh38.p13) et souris 
 -- read 50bp et 150bp 
@@ -16,11 +10,7 @@ Données
 - réelles : 4 échantillons 
 -- 1 RNA-seq, 1 genome (rétinine pigmentaire) sur Io torrent 
 -- 1 RNA seq et 1 exome (ostéomyélite) sur illumina hiset 2500 (paired end) 
-
-
 Méthode: 
-
-
 - calcul sur données simulée 
 - sensibilité = reads mappé correctement/reads mappé incorrect (seuil fixé) 
 - scores 
@@ -36,17 +26,9 @@ Méthode:
 - GC biais. Théoriquement chez les humaine, gaussienne autour de 41% 
 - duplicats (préparation échantillion ou 1 cluster amplification) -> les supprimer n'implique pas forcément une augmentation de la précision 
 - 6 coeurs i7 32Gob RAM 
-
-
 Résultat: 
-
-
 - données simulée en paired-end: meilleur = BBMAP, BWA-MEM, Novoalign, DNASTAR, YARA, 
-
-
 Segemehl and TopHat2 
-
-
 - Échantillons : 
 -- accuracy (si chaque read a bien été aligné: comment est-il calculé sur données non simulées TODO ???): novoalign, DNASTAR. 
 -- Meilleur résultat pour exon mapping (nombre d'exons marqué comme tels par kb) = Segemehl 
@@ -56,20 +38,10 @@ Segemehl and TopHat2
 -- délétion : distribution augmentée pour génome sur toute la longueur du read pour tous mapper 
 -- GC: génome : aucun aligner n'a une distribution romale !! (biais de séquencage). Exome= double pic pour bowtie2, bwa, gema, minimap2, star, subrdea 
 -- duplicats : faible pour dna 
-
-
 Performances : dépend de la longeur du reads et du nombre de reads 
-
-
 - mémoire : milimu = tophat2, bwa, bwa-mem, hisat2, bowtie2, GEM < 10Gb 
-
-
 -> utiliser plutôt [cite:@alser2021] [alser2021] pour données brutes (figure trop petite, mauvaise méthodo) 
-
-
 Conclusion 
-
-
 - single-end = moins de redas mappé mais diminué nombre d'alignement multiples 
 - paired-end = plus de reads mappé, meilleur efficacaté, meilleurs reads uniquué mappé (exome) => compromose efficacicé et qualité 
 - magic-blast = aligne le plus de redas mais peu précise. novoalign et dnastar = meilleur qualité. Segemehl et novoalign pour exon. 

@@ -1,10 +1,6 @@
 
 Apport : DeepVariant et Sention non testé 
-
-
 Méthodes 
-
-
 - Alignement : BWA-MEM 
 - Données : 
 -- germline = génome(?) 
@@ -17,18 +13,10 @@ Méthodes
 -- GATK : Germnline (haplotypecaller) + somatique (mutect2) 
 -- Deepvariant : somatique 
 -- neusomatic, varscan2 et strelka2 pour somatique 
-
-
 NB: third generation sequening pour DNAseq (sention) et haplotypecaller (GATK) 
-
-
 - référence : GIAB pour germline, données de synthèse pour somatique (mélange germline) 
 - rtgtool 
-
-
 Résultats (germline) 
-
-
 ~ Next-generation sequencing 
 -- Bonne concordance pour germline: F1 > 0.99 pour SNV et > 0.98 pour indel (cohérent avec biblio) 
 -- Downsampling (2,5,10,15,30x) 

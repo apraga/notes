@@ -1,21 +1,13 @@
 
 Attribute disclosure 
-
-
 Hypothèse : l'étude a publique 
-
-
 - pour chaque génotype, la fréquence et la corrélaction avec maladie (p-value) 
 - une matrice corrélation génotype-génotype 
-
-
 * Méthode = inversion du processus d'aggrégation
 
 ~ matrice de co-occurence (nombre de fois que g1-g2 a été vu) 
 ~ matrice de "preuve" -génotype (ensemble de sous-séquence des génotype = caractéritisque tu génome d'un individu) 
 ~ pour le génotype da la cible, regarde s'il est dans cette matrice 
-
-
 * Résultats
 
 ** Données simulées
@@ -24,8 +16,6 @@ Hypothèse : l'étude a publique
 Simulation de 7 GWAS avec NBS comme contrôle
 14 génotype sur 75 trouvent des motifs unique dans 1% des cas. N'identifie pas les cas de la population de référenc !
 Nombre de cas ré-dentiifé augmente avec le nombre de génotypes 
-
-
 ** données publiée
 
 36 génotype disponible: 12 personnes 

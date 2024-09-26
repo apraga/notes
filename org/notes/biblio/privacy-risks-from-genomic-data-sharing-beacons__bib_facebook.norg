@@ -1,41 +1,21 @@
 
 #+filetags:   :bib:facebook:
-
-
 #+identifier: 20240717T144648
-
-
 #+reference:  shringarpure2015
-
-
 Service web qui répond oui/non à la question "y a-t-il un nuclétotide donnée à une position données".
 Context : GA4GH veut proposer ce service 
-
-
 Peut-on dire si un individu est dans un beacon ? 
-
-
 Hypothèse 
-
-
 - On a un VCF avec les variants (ALT) et génotype à ces positions 
 - On ne connait pas les fréquences alléliques (pour être plus général) mais elles sont modélisées par une distribution Beta 
-
-
 Modèle stat (likelihood-ratio) pour ré-identifier. 
-
-
 * Méthode
 
 - Données simulées: 500k SNP à partir de 1000 individus 
 - 100genomes : 65 individus CEU 
-
-
 * Résultat:
 
 - Données simulée : puissance de 95% pour détecter un individu avec 5k requêtes 
 - données CEU: 250snp : 95% puisson et 5% faux positif 
-
-
 Plus performante si plusieurs popoulation (pas juste CEU) 
 

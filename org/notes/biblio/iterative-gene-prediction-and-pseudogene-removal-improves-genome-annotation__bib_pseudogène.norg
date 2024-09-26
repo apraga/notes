@@ -1,44 +1,26 @@
 
 #+filetags:   :bib:pseudogène:
-
-
 #+identifier: 20240717T144733
-
-
 #+reference:  van2006ppfinder
-
-
 Non maintenu, code source {https://mblab.wustl.edu/software/download/ppfinder.1.tar.gz}[https://mblab.wustl.edu/software/download/ppfinder.1.tar.gz] 
-
-
 Processed seuls
 Utilise N-SCAN pour estimer le gène parent 
-
-
 * Méthode
 
 pour un "modèle de gène", essaie de trouver un gène parent qui aurait donné le pseudogène par rétroposition
 NB: exemple de modèle : exon pseudogene + exon1 + eon2 
-
-
 ** Liste candidats
 
 *** Technique 1: introns
 
 Principe : ceux qui ne sont pas dérivé du pseudogene = match seulement eux-même et gène de la même famille.
 Pseudogène vont matcher sur leur parent 
-
-
 ~ BLASTn du gène sur une base de données (même organisme) 
 ~ on choisit le meilleur transcrit 
 ~ on récupère la séquence du parent potentiel 
 ~ ce parent est aligné 
 ~ si les "trous" dans l'alignement ne correspondent pas introns du gène, c'est potentiellement un pseudogene 
-
-
 Limite: si le segment aligne sur un seul exon. Ou si le parent a un seul exon (mais apparement géré au cas par cas dans le supplementary) 
-
-
 *** Technique 2 : conserved synteny
 
 ~ Pour chaque exon du "gene model", BLASTp sur une base de donnée de protéine 
@@ -49,27 +31,15 @@ Limite: si le segment aligne sur un seul exon. Ou si le parent a un seul exon (m
 -- correspondance avec synteny map UCSC (meilleur alignement de la souris pour tout le génome humain) 
 -- si pas de correspondance dans une région orthologue (= dérivée d'un même ancêtre), pseudogène probable
 Le principe est que les pseudogène vont disparaître avec le temps 
-
-
 Limite : ne gère pas les pseudogène ancestraux 
-
-
 ** Filtres
 
 Faux positifs 
-
-
 - technique 1 : les gènes de la même famille sont différents sont >= 1 introns 
 - technique 2 : se gène prédit appartient à une famille et avec >= 1 exons en dehors des régions de "conserverd synteny" 
-
-
 Vérification: gène parent aligné sur la région génomique autour du candidats
 Les vrai pseudogène ont une longueur moyenne de "trous" (introns potentiels) <= 2*longueur moyenne des segments alignés (exons potentiels) 
-
-
 Ce filtre surprime les "processed pseudogene" 
-
-
 * Tests
 
 - CCDS: on s'attend à avoir 0, en pratieque 0.3% = ce sont des rétrogene fonctionnels (car ils ont des "expressed sequence tags = EST"). Autres = petits introns 

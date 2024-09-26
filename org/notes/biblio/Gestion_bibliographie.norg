@@ -1,22 +1,14 @@
 
 ​#bibliographie 
-
-
 On a initialement utilisé {Bibliographie%20avec%20emacs.md}[emacs avec citar] Avec le changement à helix, on utilise
 {Bibliographie%20avec%20papis.md}[papis] 
-
-
 * Synchronisation des pdfs
 
 On utilise git-annex. Il faut 
-
-
 - git-annex 
 - git-lfs 
 - git-lfs 
 - rclone 
-
-
 ** Configuration
 
 *** Google drive
@@ -25,23 +17,15 @@ On utilise git-annex. Il faut
 - Copy the executable git-annex-remote-rclone here into $PATH
 {https://github.com/DanielDent/git-annex-remote-rclone}[https://github.com/DanielDent/git-annex-remote-rclone] 
 - Add a remote 
-
-
 @code bash
 git annex initremote gdrive type=external externaltype=rclone target=gdrive encryption=shared
-
-
 *** Git LFS
 
 - Create a git repo and set it up for git-lfs (apraga/papers)
 {https://git-lfs.github.com/}[https://git-lfs.github.com/] 
 - Add a remote 
-
-
 @code bash
 git annex initremote lfstest type=git-lfs url=git@github.com:apraga/papers.git encryption=none
-
-
 ** Utilisation
 
 @code bash
@@ -49,12 +33,8 @@ git-annex init
 git-annex enableremote lfs
 git-annex enableremote gdrive
 git-annex sync --content
-
-
 Synchronisation: =git annex sync –content= Copier les données depuis un
 remote 
-
-
 @code bash
 git annex get . --from gdrive
 git annex copy . --to lfs

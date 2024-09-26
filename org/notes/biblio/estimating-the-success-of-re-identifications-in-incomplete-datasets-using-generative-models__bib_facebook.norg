@@ -1,12 +1,6 @@
 
 #+filetags:   :bib:facebook:
-
-
 #+identifier: 20240717T144446
-
-
 #+reference:  rocher2019estimating
-
-
 un modèle entraîné sur des données démographiques anonymisées (rencesement, sondages) permet d'identifier 99.98% des Américains, indépendamment des données génétique. [cite:@rocher2019estimating] [rocher2019estimating] 
 

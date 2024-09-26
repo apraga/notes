@@ -1,17 +1,9 @@
 
 Approches classique: 
-
-
 ~ aligner reads sur référence et examine différences -> sensibe, peu coûteux mais souvent ne se concentre que un 1 type de variant (errours sur indel/large variant), peut échoeur sur régions qui divergent fortement, plutôt pour SNP (cuteux indel) 
 ~ Assemblage sans réference : graph (dit "de Bruijn") et on cherche dans ce graphes des polymorphosimes. Avantage: gère les régions fortement divergentes, fonctionne pour haplotype au niveau local (plutôt qu'un variant), évite alignement. Mais coûteux, moins sensible, limité sur séquence répété (quand reads sont "coupés" in k-remrs) 
-
-
 3.Utilisation d'échantillions apparentés : diminue faux négatif 
-
-
 Apport de Platypus (mais vieux…) = combine ces 3 approches 
-
-
 - assemblage local et génération d'haplotyage 
 -- variants candidats a partir des reads, de l'alignement et de base de données (polymorphismes connus) 
 -- graphe de Bruijn à partir des reads puis extraction des chemin qui commencent et finisshes sur la séquence -> ce sont les allèle alternative candidatet (normalement non affectés par régions répéties, bloucles) 
@@ -20,10 +12,6 @@ Apport de Platypus (mais vieux…) = combine ces 3 approches
 -- alignement selon un model qui utilise des probablités d'indel et SNP à partir des scores de qualité 
 - les haplotypes sont "coupés" en leurs variants et on calcule génotype ed probabilité en utilisant les variants de la région (somme au niveau proba, cf {https://www.quora.com/What-is-marginalization-in-probability}[https://www.quora.com/What-is-marginalization-in-probability] ) 
 - filtre sur allèle, biais de brin, qualité alignement, qualité de la paire de base, contexet, probabilité après théorème de Bayess 
-
-
 #+caption: Platypus algorithm [cite:@Rimmer_2014]
-
-
 [{file:./img/platypus.png}[file:./img/platypus.png]] 
 

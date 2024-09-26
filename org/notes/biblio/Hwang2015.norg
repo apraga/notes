@@ -1,23 +1,9 @@
 
 Article précédant hwang2019
 Différents pipeline sur données d’exome NA12878 (3 aligneur et 4 appels de variants) 
-
-
 Context : résultat différent pour diffents outils d’appels de variant 
-
-
 Méthodes 
-
-
 - NA1287 sur Hiseq200 (7 données), Hiseq2500 (4 données) et ion proton (1 seul): 
-
-
-
-
-
-
-
-
 +hline2
 #table.head.columns 1-13 0
 : A1 : HiSeq2000
@@ -81,8 +67,6 @@ Méthodes
 : D12 : WGS
 : E12 : 9.87
 
-
-
 - alignement sur GRCh37 
 - vcflib pour normalisation 
 - restriction aux zones de capture pour données d’exomes 
@@ -91,11 +75,7 @@ Méthodes
 - 13 pipeline : combinaison 
 -- aligneur : Bwa-mem, bowtie2, novoalign 
 -- appel de variant : haplotypcaller, samtools, freebays, ioproton variant caller 
-
-
 Résultats 
-
-
 - Appel de variant : variabilité suivant les échantillons… 
 - Impact de l’aligneur et appel de variant : appel de variant >> alignement pour SNP et indel (surtout indel): average standard deviation: 3.46e-3 (aligneur) and 4.02e-3 (appel de variant) for SNPs and 0.72e-2 (aligneur) and 7.2e-2 (appel de variant) 
 - illumina: 

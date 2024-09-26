@@ -1,27 +1,15 @@
 
 #+filetags:   :bib:facebook:
-
-
 #+identifier: 20240717T135015
-
-
 #+reference:  Gitschier_2009
-
-
 données: 
-
-
 - données génétiques des échantillons CEU = habitant d'Utha avec ancentre Europe nord et ouest (180) -> donées chromosome Y 
 - familyseach (généalogy) 
 - SMGF (génetoype+ généalogique méthode: détermination de l'haplotype du fondateur (Joseph Smith) en cherchant tous les chromosomes Y (recherche des allèles "à la main"))
 Pas de descendant direct sur SMGF mais de ses frètes et cousins 20/30 haplotype de ChrY correspondent exactementy a >= 1 indivivu SMGF 
 -- dont 3 ancêtre en dehors US 
 -- 17 ont >= matched ancêtre famille fondatrice 
-
-
 40 marker STR -> a priori 17 semble suffir 
-
-
 * Conclusion
 
 30 STR sur chrX pour détecter noms de famille potentier mais pas d'identification à la personne près 

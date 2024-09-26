@@ -1,23 +1,11 @@
 
 #+filetags:   :bib:chameleolyser:pseudogène:
-
-
 #+identifier: 20240726T095249
-
-
 #+reference:  steyaert2023systematic
-
-
 Identification en exome sur région homologues (3.5%) 
-
-
 ~ SNV,indel 
 ~ CNV et "ectopic gene conversion" 
-
-
 Principe : on prend les reads correspondant à des séquences paralogues sont alignés sur un génome de référence où sont masqués *tous les paralogues sauf un* 
-
-
 * Contexte
 
 - région paralogues 
@@ -37,28 +25,16 @@ Principe : on prend les reads correspondant à des séquences paralogues sont al
 --- utilisation de profondeur sur des nucléotides uniques : inconvénient : génome (pas un problème pour nous…) et ne fonctionne pas pour les gene conversion 
 -- *rien pour les SNVs/indel sur paralogue identique* 
 -- [cite:@ebbert2019systematic] [ebbert2019systematic] : caractérisation mais pas de solution concrète d’après les auteurs. 
-
-
 * Algorithme
 
 Sur les régions homologues (3.5%), il y a donc l'appel de SNVs (et indel) d'une part et les CNV/gene conversion 
-
-
 ~ extraction des reads (3.5% exomes) affecté par l’homologie de séqueunce 
 ~ ré-aligné sur génome de référence en masquant les régions homologues 
 ~ appels de variant 
-
-
 Pour différencier délétion homozygote et ectopic gene conversion 
-
-
 ~ analyse de la couverture dans l’alignement initial : 
 -- les reads du site accepteur seront aligné sur le site donner -> pas de reads à cet pas de reads sur le site et 2x sur le donneur 
-
-
 Attention, des SNV/indel hétérozygotes n'ont pas de position bien définie (car paralogues) -> "variants with ambiguous positions" 
-
-
 * Validation
 
 - Long-read Pacbio sur 20 échantillons 
@@ -68,16 +44,12 @@ Attention, des SNV/indel hétérozygotes n'ont pas de position bien définie (ca
 - 5 patients GIAB : NA12878 HG002-5 
 -- attention: il faut le meme kit, donc ils n’ont regardé que les SNV/indel ne résultant pas d’un gene 
 -- 118SNV/indel non résultat d’un gene conversion -> 98 concordent 
-
-
 ** Données disponible
 
 - pacbio maison: accès restreint, à demander 
 -- {https://ega-archive.org/datasets/EGAD00001009109}[https://ega-archive.org/datasets/EGAD00001009109] 6 trio + 1 proband en HiF 30X 
 -- {https://ega-archive.org/datasets/EGAD00001011305}[https://ega-archive.org/datasets/EGAD00001011305] STRPC1 sur cohorte 
 - giab {https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-023-42531-9/MediaObjects/41467_2023_42531_MOESM11_ESM.xlsx}[Liste des variants] disponible mais à revoir 
-
-
 * Résultats autres
 
 ** Comparaison avec autres appels de variants
@@ -92,8 +64,6 @@ Attention, des SNV/indel hétérozygotes n'ont pas de position bien définie (ca
 ---- 12 del et 7 conversion retrouvé par exomedepth (marqué comme deletion) 
 ---- 201 deletion homozygotes uniquement retrouvé par exome-depth 
 ---- précision estimé à 32.5% 
-
-
 ** 30-40% variants "ambigus" (= SNV/indel htz) dans région codante (estimation)
 
 - 10% sont soit codant soit avec 2 alternatives dont 1 seule et codante 
@@ -103,13 +73,9 @@ Attention, des SNV/indel hétérozygotes n'ont pas de position bien définie (ca
 --- pipeline d'exome vs chameleolyse r: plus de faux-sens et synonyme dans les régions homologue 
 ---- hypthèse 1: pas de pression de sélection de variants synonyme -> la moitié sont dans des régions codantes 
 ---- hypèthes 2 : faux/sense/synome et synonyme/LOF semblable entre exome et homologue 
-
-
 ** SNV/indel: 14 nouveaux diagnostics
 
 ~17k patients sans diagnostic 
-
-
 - filtre
 -faux-sens et perte de fonction < 0.5% dans la cohorte 
 -- sur gènes d'intéret (selon demande clinicien) 
@@ -122,42 +88,28 @@ Attention, des SNV/indel hétérozygotes n'ont pas de position bien définie (ca
 - 21 gene conversion : 
 -- 10 diag, autres estimé non causal. 
 -- seulement dans 3 gènes : /STRC/, /OTOPA/ /SMN1/ 
-
-
 ** délétion homozygotes: 11 diag
 
 - Filtre : <= 0.5% dans la cohorte 
 - 2 sur OTOA, 9 sur SMN1 (toutes confirmées en MLPA) 
-
-
 ** Différencier délétions homozygotes de gene conversion
 
 - 58 délétion homozygotes (pipeline maison) confirmées en MLPA 
 - Chameleolyser : perte homozygote alèlle /STRC/ mais 
 -- 37 = délétion homozygote 
 -- 22 = gene conversion homozygote STRCP1 -> STRC 
-
-
 Pathogénicité identique donc ne sert à rien sur cet exemple
 Les auteurs argument que les gene conversion sont bénignes donc important de faire la différence 
-
-
 * Méthodes
 
 ** Identification des régions paralogues
 
 Fusion de 2 régions définissant des régions paralogues
 I. gènes codant ayant des pseudo-gènes 
-
-
 ~ pour chaque pseudo-gènes annoté par Encode, sélection du gène codant correspondant (en utilisant l'identifiant HGNC /NB: les pseudogene se finissent par P ou P$N avec n entier/) 
 ~ alignement entre le gène codant et ses pseuodgene (MAFFT 7.047) 
 ~ filtre : seulement une homologie >= 90% avec le pseudogène et avec exactement 1 pseudegen paralogue 
-
-
 II. régions avec une faible qualité d'alignement (MAPQ < 10) 
-
-
 ~ on enlève les régions mal couvertes (profondeur < 10) 
 ~ fusion de ces régions qui sont fragmentées 
 ~~ 3 versions (ou listes) : distance < 250bp, 500bp, 5% de la région (/slopping distance/)) 
@@ -167,21 +119,15 @@ II. régions avec une faible qualité d'alignement (MAPQ < 10)
 --- aucune ne s'aligne avec un score >= 0.9 en dehors de l'ensemble Pour chaque liste, les ensembles sans recouvrement exonique et avec > 5 éléments 
 ~~ la liste à 500 est fusionnée avec les 2 autres s'il n'y a pas de recouvrement avec les régions déjà fusionnées
 (on fait d'abord 250bp puis 5%) 
-
-
 ** Génération du génome masqué
 
 Pour un ensemble de régions paralogues, on veut toutes les masquer, sauf 1 -> on ne retient que celles qui ont le moins de recouvrement avec une séquence codante 
-
-
 ** Alignment et appel de variants
 
 ~ extraction des reads contenant les régions définies ci-dessus 
 ~ conversion en FASTQ 
 ~ suppression des doublons (picard) 
 ~ appel de variant avec lofreq (car la VAF ne sera pas à 50%). Paramètres : no-default-ﬁlter, use-orphan, no-baq, no-mq, sig = 1 
-
-
 ** Identification des délétions et des conversions
 
 ~ Détections des sous-régions 
@@ -196,20 +142,12 @@ Pour un ensemble de régions paralogues, on veut toutes les masquer, sauf 1 -> o
 Également KDE mais avec un ratio
 R = (nb reads s'alignant de manière unique sur X)/(ceux s'alignant sur X ou Y)
 Filtre : on enlève les échantillons avec < 30 reads, région où nb moyen de reads sur X ou Y < 60, et pics > 10% des échantillons et /altérations ne recouvrant pas un gène codant pour une protéine/ 
-
-
 Donc 
-
-
 - délétion homozygote de X si <= 10 reads sur X et R <= 0.05 
 - gene conversion si percentile maison <= seuil et si nombre de reads s'alignant sur Y > 3/4 (normalisé par le nombre de reads sur tous les paralogues)
 NB : l'idée est de forcer un seuil extrême sur le site donneur s'il y a une couverture très importante sur le site accepteur 
 - sinon délétion de X 
-
-
 Enfin les délétions et conversion sont fusionnées : par gène puis pour les gènes proches 
-
-
 ** Traitement des /shorts variants/
 
 ~ Appel de variant sur l'alignement initial et celui masqué 

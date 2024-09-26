@@ -1,20 +1,12 @@
 
 Données 
-
-
 - 1130 profile du projet PGP -> 579 avec date de naissance, genre et code postal (US) à 5 chiffres 
 - registre de votant, accès à un site de base de données publique 
-
-
 Méthode: intersection entre PGP et ces 2 bases sur code postal, date de naissance et sexe
 À noter que Nom des patients dans le fichier DNA extrait…. ex "enome,ElaineSmithFull629562,.txt." 
-
-
 Résultat: avec la base de données des vote : 130 correspondant unique -> 103 noms
 sur record publique : 156 unique
 donc 241 match cumulé
 -> 84% correspondant (97% si on considère les surnoms) 
-
-
 Soit 35% sur le total 
 

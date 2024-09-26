@@ -1,23 +1,13 @@
 
 Rappel historique génome:
 Différence par rapport aux autres assemblage: longue contig et scaffold, précision importante par base pair, représentation robuste région répétée et degmentally duplicately 
-
-
 - lié aux clones "BAC" (> 150kbp) et avec technique complémentaires (Radiation Hybrid Mapping = chromosome fragmenté par radiation =>_ si 2 marqueurs sont "loins", ils seront probablement sur des fragments différents; étude héritabilité (Genetic Linkage Maps); comparaison de "fingerprint" sur les clones [si similaire, viennent probablement de régions qui se recouvrents] Fingerprint Maps) 
 - cherche à représenter un "pan-génome" avec plusieurs donneurs 
-
-
 GRch37 : 
-
-
 - utilisé par le projet 1000 Genomes project pour représenter la diversité 
 - ajout de scaffold pour locus aletrnatif: représentation alternativ pour régions fortement variable MHC + haplotype divergenge aux locus /MAPT/ et /UGT2D/ tout en conservant la linéairité des chromosomes 
 - aprè 13 patches, mise à jour des coordénes -> GRCh38 
-
-
 GRCh38 = mosaic haplotype : 
-
-
 - réslution de 1000 problèmes (mettre fig 1) 
 - 75mb nouvelle séquence (2.3% total) avec 5Mb supprimé 
 - > 95% séquence totale, 98% séquence non centrmérique 
@@ -33,10 +23,6 @@ En 2023, il est effectivement rendu "conflicting" {https://www.ncbi.nlm.nih.gov/
 -- test 1: alignement (bwa mem) + appel de variant pour NA24143 
 --- 10 emplacement où la profondeur a été améliorée 
 --- 135 emplacements oà la couverture a été "perdue" ! (région paralogue/alléliques) 
-
-
 (NB: paralogue = duplication d'un gène, avec séquence et fonction pouvant différer) 
-
-
 - impact sur aligement: 99.2% alignéen 38 mais 64% reads non mappés le sont. Ceux restant: 23% sont mappés sur les régions alternatives 
 

@@ -1,19 +1,9 @@
 
 #+filetags:   :article:bib:
-
-
 #+identifier: 20240716T170853
-
-
 #+reference:  zhang2006pseudopipe
-
-
 Code {http://pseudogene.org/DOWNLOADS/pipeline_codes/ppipe.tar.gz}[http://pseudogene.org/DOWNLOADS/pipeline_codes/ppipe.tar.gz] 
-
-
 Algorithme 
-
-
 - input: génome (sans région répétée), ensemble des séquences protéiques et coordonnées des gènes fonctionnels 
 - output: annotation des pseudogène 
 ~~ identification des régions similaire avec une protéine (BLAST) 

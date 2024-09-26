@@ -1,23 +1,7 @@
 
 Apport: plusieurs séquencage de NA12878 BGI+ illumina 
-
-
 Méthodes 
-
-
 - NA12878 sur plusieurs séquenceur (exome + genome) 
-
-
-
-
-
-
-
-
-
-
-
-
 +hline2
 #table.head.columns 1-10 0
 : A1 : Sequencing Samples
@@ -111,26 +95,14 @@ Méthodes
 : H10 : 40.71%
 : I10 : 38.93X
 
-
-
 >Q20 = moins de 1% d'erreur. >Q30 = moins de 1‰ 
-
-
 - 1 aligneur (bwa [mem non spécifiqu]) et 3 appel de variant : haplotypcaller, strelka, samtools varscan2 
 - filtering et trimming 
-
-
 Résultat 
-
-
 - qualité : 
 -- exome 95% avec moins de 1% d'erreur et 89% avec moins de 1‰ 
 -- genome 92% et 93% respectivement 
 - profondeur : 
-
-
-
-
 
 +hline2
 #table.head.columns 1-5 0
@@ -151,13 +123,7 @@ Résultat
 : B5 : novaseq
 : C5 : 241
 : D5 : 28.96 (*)
-
-
-
-
 (*) 92.1% > 20x 
-
-
 - Appel de variant 
 -- Exome: 
 --- comparaison entre pipeliness 
@@ -185,7 +151,5 @@ Résultat
 ---- 94.22% SNV détecté par au moins 10 combinaison 
 ---- 90.63% indel détecté par au moins 13 (plus grande divergence, comme pour les exomes) 
 --- temps d'exécution (même méthode et même config): sk2 42-45x plus rapide que GATK et 62-69x que SV (illumina-bgi) 
-
-
 Conclusion: recommande strelka2 
 
