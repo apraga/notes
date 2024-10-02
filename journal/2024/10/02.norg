@@ -1,0 +1,25 @@
+* Réunion Julien
+  Articles :
+  - omique (dupras2021) : 
+Résumé : Framework mais descriptif et non utile en pratique. L'approche corrélation et synergie est 
+intéressantes. À citer
+10 caractéstiques en disant s'il y a un impact possible sur la réidentifcation et sensbilité. Reste assez général
+Microbiome marrant
+  - gt 
+Réidentification selon le type d'attaque :  binaire, proba non calculée
+Mais sépare la proba conditionnelle p(Réidentification | attaque) et intersection (?) p(Réidentification, attaque)
+pas de chiffre malheureusement
+Utile dans notre cas ? on n'a pas la proba de l'attaque..s
+  -  Prince 2018
+     Intéressant pour perspective : biblio sur ressenti des patients et risque
+
+* Réunion Charles Dupras (+ Elise Courciault du CADD)
+  - quels facteurs augmentent le risque ? Peut-on automatiser le calcul ?
+  - sesil ?
+  - quel consentement pour quel risque ?
+  - quid du lien avec les autres BDD qui donnent de la génétique et des identifiants
+
+  Patients font plutôt confiance aux prescripteurs -> consentement élargi (on admet qu'il y aura des risques)
+  **De quoi veut-on se protéger?**
+  Arriver à faire un plot sur le risque
+  TODO: plan détaillé pour Charles dans 2 semaines. OK pour le Framework
