@@ -1,0 +1,39 @@
+@document.meta
+title: purpura thrombopénique immunologique
+description: 
+authors: alexis
+categories: hémato
+created: 2024-09-11T19:03:23+0100
+updated: 2024-09-11T19:57:17+0100
+version: 1.1.1
+@end
+
+{:thrombopénie:} périphérique, isolée, auto-immune
+* Étiologies
+- seul (primaire) 
+-- auto-immun 
+-- infection
+-- vaccination (ROR, grippe)
+-- syndrome lymphoprolifératif
+-- déficit immunitaire congénital
+* Physiopathologie
+  Destruction des plaquettes recouvertes d'autoanticorps par les macrophages, surtout dans la mœlle
+* Clinique
+  Syndrom hémorragie mais inconstant et modéré : hémostase primaire donc cutanéo-muqueux
+
+* Examens
+** 1ere intention
+   - hémogramme en éliminant une fausse thrombopénie
+   - bilan de coagulation ({:CIVD:} ?)
+   - rénal ({:microangipathe-thrombotique:} ?)
+   - transfusionnel
+   - PTI secondaire
+   --- sérologies VIH, hépatite B, C, CMV, EBC
+   --- auto-immunité
+   --- {:électrophorèse-des-protéines-sériques:}
+** Selon le contexte
+   - myélogramme non systématique : plutôt adulte (enfant si splénectomie/corticothérapie)
+
+* Traitement
+  - corticothérapie
+ -- immunoglobulines polyvalentes

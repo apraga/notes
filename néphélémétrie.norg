@@ -1,0 +1,52 @@
+@document.meta
+title: néphélémétrie
+description: 
+authors: alex
+categories: [
+biochimie
+néphélémétrie
+] 
+created: 2024-09-07T20:13:13+0100
+updated: 2024-09-07T20:13:13+0100
+version: 1.1.1
+@end
+
+* Principe
+
+** Photométrie
+
+Mesure de la lumière diffusée 
+
+- latéralement (20°) = néphélémotrie 
+- linéairement (trajet du rayon) : turbidim 
+
+** Anticorps
+
+Contre l'antigène à doser -> complexe Ac-Ag -> la lumière dans la cuve va diffésué sur les complexes
+Utilisation de microparticules en latex pour augmenter la sensibilité 
+
+** Interférences
+
+- optique : lactescence parfois mais *pas* hémolyse ni ictère 
+- biochimique: Ac hétérophile,s, cryoglobuline, facteur rhumatoïde (dilution) 
+- physique : lipoproétien/fibrine (dilutaion/centrifugation) 
+- effet crochet : excès d'antigène donc l'anticorps n'arrive pas à le fixer de fa
+on stable > les complexes se dissocient et le signal chut
+Courbe de Heidelberger-Kendall 
+
+* Paramètres dosés
+
+- {:albumine.norg:}[Albumine] 
+- {:céruloplasmine.norg:}[Céruloplasmine] 
+- {:complément-c3.norg:}[Complément C3] 
+- {:crp.norg:}[CRP] 
+- {:haptoglobine.norg:}[Haptoglobine] 
+- {:immunoglobuline-a.norg:}[Immunoglobuline A] 
+- {:immunoglobuline-g.norg:}[Immunoglobuline G] 
+- {:immunoglobuline-m.norg:}[Immunoglobuline M] 
+- {:orosomucoïde.norg:}[Orosomucoïde] 
+- {:retinol-binding-protein.norg:}[Retinol-binding protein] 
+- {:transferrine.norg:}[Transferrine] 
+- {:transthyrétine-pré-albumine.norg:}[Transthyrétine (pré-albumine)] 
+- {:α2-macroglobuline.norg:}[α2 macroglobuline] 
+

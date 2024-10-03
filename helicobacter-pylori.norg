@@ -1,0 +1,33 @@
+@document.meta
+title: helicobacter pylori
+description: 
+authors: alex
+categories: bactério 
+created: 2024-09-07T21:16:54+0100
+updated: 2024-09-07T21:16:54+0100
+version: 1.1.1
+@end
+
+Gram négatif, spiralée, flagellée
+Plusieurs facteurs de virulence -> 
+
+- survie dans l'acidité gastrique 
+- atteinte des cellules épithéliales 
+- induction de pathologies gastriques Infection chronique -> 
+-- gastrite 
+-- ulcère 
+-- cancer gastrique 
+-- lymphome gastrique du MALT 
+
+* Diagnostic
+
+Invasif : sur biopsie (test urée, anapath, culture)
+Indirect : sérologie
+Culture particulière: milieu enrichi en sang, microaérobiose, atmosphère humide à 37°
+PCR: permet de tester la résistance aux macrolides en plus 
+
+* Traitement
+
+Trithérapien
+20% résistance à la clarithromycine 
+

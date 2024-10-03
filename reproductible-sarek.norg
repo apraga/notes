@@ -1,0 +1,69 @@
+@document.meta
+title: Reproductible sarek
+description: 
+authors: alex
+categories: [ 
+  bisonex
+  article
+]
+created: 2024-09-22T15:26:13+0100
+updated: 2024-09-22T17:17:08+0100
+version: 1.1.1
+@end
+
+* Spec
+  Objectif : environnement reproductible autour de sarek en constit seul
+  1. génomes + bases de données annotation
+  2. logiciels nécessaires
+  Scope: JOSS
+
+* Avancemenss
+** ( ) Bases de données avec scidataflow
+   -- (-) hg38 attente PR
+   --- (-) génomes 
+   --- (-) dbSNP
+   --- (-) clinvar
+   --- (-) CADD
+   --- (-) cache VEP
+   -- ( ) T2T
+   --- ( ) génomes 
+   --- ( ) dbSNP
+   --- ( ) clinvar
+   --- ( ) CADD
+   --- ( ) cache VEP
+** ( ) Paquets Nix
+   "cancelled" si déjà dans Nix
+   - (x) Contrôle qualité
+   -- (_) FastQC 
+   -- (_)  fastp
+   - ( ) Alignement
+   -- (_)  BWA-mem
+   -- (_) BWA-mem2
+   -- (-)  dragmap 
+   -- (_) sentieon BWA-mem (licence)
+   -- (_) GATK MarkDuplicates
+   - (x) Post-alignement
+   -- (_) GATK 
+   -- (_) Sentieon LocusCollector and Sentieon Dedup (licence)
+   - (x) Stats
+   -- (_) samtools stats
+   -- (_) mosdepth
+   - ( ) Appel de variants
+   -- ( ) ASCAT
+   -- ( ) sNVkit
+   -- (_) DeepVariant
+   -- (_) freebayes
+   -- (_) GATK HaplotypeCaller
+   -- (_) Manta
+   -- (_) mpileup
+   -- (_) Sentieon Haplotyper (licence)
+   -- (_) Strelka2 
+   -- (-) TIDDIT
+   -- ( ) cnvkit
+   - ( ) Annotation
+   -- (s) SnpEff
+   -- (-) Ensembl VEP
+   -- ( ) BCFtools annotate
+   - (-) MultiQC
+
+   [Sarek Workflow] 

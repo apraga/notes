@@ -1,0 +1,25 @@
+@document.meta
+title: retinol-binding-protein
+description: 
+authors: alex
+categories: [
+biochimie
+nutrition
+néphélémétrie
+] 
+created: 2024-09-07T20:13:32+0100
+updated: 2024-09-07T20:13:32+0100
+version: 1.1.1
+@end
+
+- Synthèse par le foie 
+- Catabolisé par le rein 
+- 45-70mg/L 
+- Transport vitamine A 
+- t1/2 = 12h 
+- Protéine réactive de la réaction inflammatoire 
+- Moins sensible et spécifique que la {:transthyrétine-pré-albumine.norg:}[transthyrétine] 
+- marqueur précoche efficacité soutien nutritionnel 
+
+Diminution: malnutrition, pathologies hépatiques 
+

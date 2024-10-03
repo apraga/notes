@@ -3,56 +3,56 @@ title: diarrhées
 description: 
 authors: alex
 categories: [
-    bactério
-    viro
+bactério
+viro
 ]
 created: 2024-09-07T00:30:32+0100
-updated: 2024-09-07T00:58:28+0100
+updated: 2024-09-12T18:24:27+0100
 version: 1.1.1
 @end
 
-> 80% sont virales
-Bactéries : coproculture standard = Salmonella, Shigella, Campylobacter, Yersinia 
+- 80% sont virales
+- bactéries : coproculture standard = Salmonella, Shigella, Campylobacter, Yersinia 
 
 * Mécanisme
 ** Syndrome cholériforme
 
-- Diarrhée liquidienne sans fièvre 
-- Toxine -> sécrétion d'eau et électrolytes par l'épithélium 
-- Causes 
--- virus : {norovirus..norg:}[Staphylocoque aureus], Bacillus cereus 
--- Clostridium perfringens 
--- {escherichia-coli..norg:}[Escherichia coli] entéro-toxinogène et entéro-aggrégatif 
--- Vibrio cholerae 
+   - Diarrhée liquidienne sans fièvre 
+   - Toxine -> sécrétion d'eau et électrolytes par l'épithélium 
+   - Causes 
+   -- virus : {norovirus:}[Norovirus], Bacillus cereus 
+   -- Clostridium perfringens 
+   -- {escherichia-coli.norg:}[Escherichia coli] entéro-toxinogène et entéro-aggrégatif 
+   -- Vibrio cholerae 
 
 ** Syndrome dysentérique
 
-- Selles glairo-sanglantes, fièvre 
-- Invasion + destruction des cellules épithéliales + inflammation locale 
-- Causes 
--- {shigella-spp..norg:}[Shigella] dysenteriae (toxine) ou non dysentreiae : 
--- E. coli entéro-invasif 
--- coli entérohémorragique (production de Shiga-like toxines, codées par /stx1/, /stx2/) {syndrome-hémolytique-et-urémique..norg:}[Syndrome hémolytique et urémique] 
--- amoebose colique 
+   - Selles glairo-sanglantes, fièvre 
+   - Invasion + destruction des cellules épithéliales + inflammation locale 
+   - Causes 
+   -- {:shigella-spp:}[Shigella] dysenteriae (toxine) ou non dysentreiae : 
+   -- E. coli entéro-invasif 
+   -- E. coli entérohémorragique (production de Shiga-like toxines, codées par /stx1/, /stx2/) {:$/syndrome-hémolytique-et-urémique.norg:}[syndrome hémolytique et urémique]
+   -- amoebose colique 
 
 ** Syndrome gastro-entérique
 
-- Diarrhées aspécifique, vomissements +/- fièvre 
-- Invasion du tissu lymphoïde sous-muqueux /sans/ destruction 
-- Causes : 
--- {campylobacter-jejuni..norg:}[Campylobacter spp] 
--- {salmonella-spp..norg:}[Salmonella spp] non typhi 
--- Yersinia spp 
--- E. coli entéropathogènes 
+   - Diarrhées aspécifique, vomissements +/- fièvre 
+   - Invasion du tissu lymphoïde sous-muqueux /sans/ destruction 
+   - Causes : 
+   -- {campylobacter-jejuni.norg:}[Campylobacter spp] 
+   -- {salmonella-spp.norg:}[Salmonella spp] non typhi 
+   -- Yersinia spp 
+   -- E. coli entéropathogènes 
 
 * Virale
 
-GEA Adulte : norovirus > rotavirus > adénovirus > astrovirus
-Enfant : rota > norovirus 
+  GEA Adulte : norovirus > rotavirus > adénovirus > astrovirus
+  Enfant : rota > norovirus 
 
 ** Autre
 
-- {:entérovirus:} mais il y a d'autres symptômes (angine, méningite) 
-- {:$/astrovirus:} : GEA modérée, tous les âges 
-- {:$/adénovirus:} (40-41) : test rapide/RT-pcr, ttt sympto 
+   - {:entérovirus:} mais il y a d'autres symptômes (angine, méningite) 
+   - {:$/astrovirus:} : GEA modérée, tous les âges 
+   - {:$/adénovirus:} (40-41) : test rapide/RT-pcr, ttt sympto 
 

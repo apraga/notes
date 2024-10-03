@@ -1,181 +1,129 @@
-@document.meta
+@docusent.meta
 title: antibiotiques
 description: 
 authors: alex
 categories: bactério 
 created: 2024-09-07T21:16:47+0100
-updated: 2024-09-07T21:16:47+0100
+updated: 2024-09-12T17:37:36+0100
 version: 1.1.1
 @end
 
 * Cibles
 
-- inhibition synthèse de la paroi bactérienne = β-lactamine, glycopeptides, fosfomycine 
-- synthèse ADN bactérien : quinolone, sulfamide 
-- synthène ARN : rifampicine 
-- synthèse protéines bactérienne : aminoside, macrolides, cyclines 
+  - inhibition synthèse de la paroi bactérienne = β-lactamine, glycopeptides, fosfomycine 
+  - synthèse ADN bactérien : quinolone, sulfamide 
+  - synthène ARN : rifampicine 
+  - synthèse protéines bactérienne : aminoside, macrolides, cyclines 
 
-.image ./images/microbiologie/antibio-action.png
- 
+  .image ./images/microbiologie/antibio-action.png
 
-* {:mécanimes-de-résistance-aux-antibiotiques__bactério.norg:}[Mécanimes de résistance aux antibiotiques]
+
+* {:mécanimes-de-résistance-aux-antibiotiques.norg:}[Mécanimes de résistance aux antibiotiques]
 
 * Résumé
 
-: B1 : Péni G/V
-: C1 : Péni A
-: D1 : Peni A + inhib βlactamase
-: E1 : Peni M
-+hline2
-#table.head.columns 2-9 0
-: A2 : Utile
-: B2 : Streptocoque
-: C2 : idem + pneumocoque péniS
-: D2 : idem + Staphylocoque metiS
-: E2 : Staphylocoque metiS
-: B3 : Corynebacterium
-: C3 : E. faecalis, Listeria monocytogenes
-: D3 : H. influenza + pénicillinase
-: B4 : Diphteria
-: C4 : Neisseria menigitidis
-: D4 : Enterobactéries + pénicillinase
-: C5 : Entérobactéries groupe 1
-: D5 : BNG anaérobies
-: A6 : Résistance nat
-: B6 : BGN
-: C6 : Entérobactéries groupe 2, 3; P. aeruginosa
-: E6 : BGN
-: A7 : Résistance acquise
-: B7 : Staphylocoque, pneumocoque
-: C7 : Staphylocoque +/- pneumocoque
-: E7 : Staphylocoque metiR
-: C8 : H. influenza, N. gonorrhea
-: C9 : N. mengitidis
+  @table
+  |                    | Péni G/V                   | Péni A                                     | Peni A + inhib βlactamase       | Peni M              |
+  |--------------------+----------------------------+--------------------------------------------+---------------------------------+---------------------|
+  | Utile              | Streptocoque               | idem + pneumocoque péniS                   | idem + Staphylocoque metiS      | Staphylocoque metiS |
+  |                    | Corynebacterium            | E. faecalis, Listeria monocytogenes        | H. influenza + pénicillinase    |                     |
+  |                    | Diphteria                  | Neisseria menigitidis                      | Enterobactéries + pénicillinase |                     |
+  |                    |                            | Entérobactéries groupe 1                   | BNG anaérobies                  |                     |
+  |--------------------+----------------------------+--------------------------------------------+---------------------------------+---------------------|
+  | Résistance nat     | BGN                        | Entérobactéries groupe 2, 3; P. aeruginosa |                                 | BGN                 |
+  |--------------------+----------------------------+--------------------------------------------+---------------------------------+---------------------|
+  | Résistance acquise | Staphylocoque, pneumocoque | Staphylocoque +/- pneumocoque              |                                 | Staphylocoque metiR |
+  |                    |                            | H. influenza, N. gonorrhea                 |                                 |                     |
+  |                    |                            | N. mengitidis                              |                                 |                     |
+  @end
 
-PéniM = oxacilline, cloxacilline PéniA = amox 
+  PéniM = oxacilline, cloxacilline PéniA = amox 
 
-: B1 : C2G
-: C1 : C3G orale (1)
-: D1 : C3G injectable
-+hline2
-#table.head.columns 2-7 0
-: A2 : Utile
-: B2 : Streptocoque, Staphylocoque metS
-: C2 : Streptocoque
-: D2 : Streptocoque (dont pneumocoque)
-: B3 : Entérobactérie groupe 1
-: C3 : entérobactérie 1,2
-: D3 : Neisseria spp, entérobactérie
-: D4 : Haemophilus
-: A5 : Résistance
-: B5 : Listeria, entérocoque
-: C5 : idem
-: D5 : idem
-: B6 : Staphylocoque metiR
-: B7 : P. aeruginosa, intracellaire
+  @table
+  |            | C2G                              | C3G orale (1)      | C3G injectable                  |
+  |------------+----------------------------------+--------------------+---------------------------------|
+  | Utile      | Streptocoque, Staphylocoque metS | Streptocoque       | Streptocoque (dont pneumocoque) |
+  |            | Entérobactérie groupe 1          | entérobactérie 1,2 | Neisseria spp, entérobactérie   |
+  |            |                                  |                    | Haemophilus                     |
+  |------------+----------------------------------+--------------------+---------------------------------|
+  | Résistance | Listeria, entérocoque            | idem               | idem                            |
+  |            | Staphylocoque metiR              |                    |                                 |
+  |            | P. aeruginosa, intracellaire     |                    |                                 |
+  @end
+  (1) limité car mauvais biodisponibilité 
+  @table
+  |                      | Carbapénème                              | FQ                        | Aminoside (2)                      |
+  |----------------------+------------------------------------------+---------------------------+------------------------------------|
+  | Utile                | Entérobactérie, P. aeruginosa            | Entérobactérie            | Staphylocoque metiS                |
+  |                      | Entérocoque, Staphylocoque metiS         | Intracellulaire           | Listeria monocytogenes             |
+  |                      | Anaérobie                                | Staphylocoque metiS       | BGN                                |
+  |                      |                                          | P. aeruginosa : ciproflox | Streptocoque, pneumocoque          |
+  |----------------------+------------------------------------------+---------------------------+------------------------------------|
+  | Résistance naturelle | P. aeruginosa, entérocoque: ertapénème ! | entérocoque, L. monocyt   | strepto, pneumo: *bithérapie amox* |
+  |                      |                                          | anaérobie                 | anaérobie stricte                  |
+  |----------------------+------------------------------------------+---------------------------+------------------------------------|
+  | Résistance acquise   | carbapénémase                            | SAMR, gonocoque (1)       |                                    |
+  @end
+  (1) Pas de monothérapie pour P. aeruginosa et Staphylocoque aureus (risque mutants)
+  (2) amikacine, gentamicine 
 
-(1) limité car mauvais biodisponibilité 
+  @table
+  |                     | Macrolides (1)                | Lincosamide (2)  | Métronidazole                           | Glycopeptide (3)           |
+  |---------------------+-------------------------------+------------------+-----------------------------------------+----------------------------|
+  | Utile               | Intracellulaire, streptocoque | Streptocoques    | Anaérobie (sauf Acineto, cutibacterium) | Streptocoque, pneumocoque  |
+  |                     | Staphylocoque metiS           | Staphylocoque    | Parasite                                | Entérocoque, staphylocoque |
+  |                     |                               |                  |                                         | metiS/metiR                |
+  |                     |                               |                  |                                         | Clostri                    |
+  |---------------------+-------------------------------+------------------+-----------------------------------------+----------------------------|
+  | Résistace naturelle | entérobactérie, P. aeruginosa | BGN, E. faecalis | Autres                                  | BGN                        |
+  |---------------------+-------------------------------+------------------+-----------------------------------------+----------------------------|
+  | résistance acquise  | staph, pneumocoque, strepo A  | staph, strepto   |                                         |                            |
+  @end
 
-: B1 : Carbapénème
-: C1 : FQ
-: D1 : Aminoside (2)
-+hline2
-#table.head.columns 2-8 0
-: A2 : Utile
-: B2 : Entérobactérie, P. aeruginosa
-: C2 : Entérobactérie
-: D2 : Staphylocoque metiS
-: B3 : Entérocoque, Staphylocoque metiS
-: C3 : Intracellulaire
-: D3 : Listeria monocytogenes
-: B4 : Anaérobie
-: C4 : Staphylocoque metiS
-: D4 : BGN
-: C5 : P. aeruginosa : ciproflox
-: D5 : Streptocoque, pneumocoque
-: A6 : Résistance naturelle
-: B6 : P. aeruginosa, entérocoque: ertapénème !
-: C6 : entérocoque, L. monocyt
-: D6 : strepto, pneumo: *bithérapie amox*
-: C7 : anaérobie
-: D7 : anaérobie stricte
-: A8 : Résistance acquise
-: B8 : carbapénémase
-: C8 : SAMR, gonocoque (1)
+  (1) erythro, azithromycine, clarithromycine
+  (2) clindamycine
+  (3) vancomycine 
 
-(1) Pas de monothérpaie pour P. aeruginosa et Staphylocoque aureus (risque mutants)
-(2) amikacine, gentamicine 
-
-: B1 : Macrolides (1)
-: C1 : Lincosamide (2)
-: D1 : Métronidazole
-: E1 : Glycopeptide (3)
-+hline2
-#table.head.columns 2-7 0
-: A2 : Utile
-: B2 : Intracellulaire, streptocoque
-: C2 : Strepocoque
-: D2 : Anaérobie (sauf Acineto, cutibacterium)
-: E2 : Streptocoque, pneumocoque
-: B3 : Staphylocoque metiS
-: C3 : Staphylocoque
-: D3 : Parasite
-: E3 : Entérocoque, staphylocoque
-: E4 : metiS/metiR
-: E5 : Clostri
-: A6 : Résistace naturelle
-: B6 : entérobactérie, P. aeruginosa
-: C6 : BGN, E. faecalis
-: D6 : Autres
-: E6 : BGN
-: A7 : résistance acquise
-: B7 : staph, pneumocoque, strepo A
-: C7 : staph, strepto
-
-(1) erythro, azithromycine, clarithromycine
-(2) clindamycine
-(3) vancomycine 
-
-* {:antibiogramme__bactério.norg:}[Antibiogramme]
+* {:antibiogramme.norg:}[Antibiogramme]
 
 * Aminosides
 
-Action = bactéricide, concentration dépendant.
-Perturbe la synthèse des protéine (fixation sous unité 30s des ribosomes) 
+  Action = bactéricide, concentration dépendant.
+  Perturbe la synthèse des protéine (fixation sous unité 30s des ribosomes) 
 
 ** Résistances
 
-- naturelle: anaérobie strictes et préférentielle (streptocoques,
-entérocoques) par défaut de pénétration car le système de transport
-nécessite la force produite par les chaînes respiratoire aérobies /NB:
-penicilline + amoniside passe car agit sur la paroi bactérienne/ 
+   - naturelle: anaérobie strictes et préférentielle (streptocoques,
+     entérocoques) par défaut de pénétration car le système de transport
+     nécessite la force produite par les chaînes respiratoire aérobies /NB:
+   penicilline + amoniside passe car agit sur la paroi bactérienne/ 
 
 * Sulfamide
 
-Bactériostatique (inhibe croissance) mais en synérgie devient
-bactéricide Ex: sulfamethoxazole + trimethoprime (Bactrmie) 
+  Bactériostatique (inhibe croissance) mais en synérgie devient
+  bactéricide Ex: sulfamethoxazole + trimethoprime (Bactrmie) 
 
-Mécanisme : inhibe synthèse microbionne d'acide folique 
+  Mécanisme : inhibe synthèse microbionne d'acide folique 
 
 * Fluoroquinolone
 
-- 4 générations: initialement répartition extra-cellulaire -> large et homogène (intracellulaire) avec les dernières générations 
-- Élimination rénale et bile 
-- Effets indésriable nombreux : digestif, phototoxique, trouble nerveux, inhibe cytochrme P450 (! interactions) 
-- Contre-indication : déficit G6PD, grossesse 
-- Action : inhibe réplication et transcription ADN 
-- Bactéricide, concentration dépendantes 
-- Indication : 
--- quinolones = cystite aigùe simple non compliquée, récidivantes chez l'adulte 
--- 2e génération : infections sévères à bacille Gram négatif 
--- 3e et 4e génération : sinusite aigüe bactériennes, exacerbation pneumopathie communutaire, infection compliquée peau + tissus mous Résistante : en augmentation chez entérobactéries (E. coli, Klebsiella) 
+  - 4 générations: initialement répartition extra-cellulaire -> large et homogène (intracellulaire) avec les dernières générations 
+  - Élimination rénale et bile 
+  - Effets indésriable nombreux : digestif, phototoxique, trouble nerveux, inhibe cytochrme P450 (! interactions) 
+  - Contre-indication : déficit G6PD, grossesse 
+  - Action : inhibe réplication et transcription ADN 
+  - Bactéricide, concentration dépendantes 
+  - Indication : 
+  -- quinolones = cystite aigùe simple non compliquée, récidivantes chez l'adulte 
+  -- 2e génération : infections sévères à bacille Gram négatif 
+  -- 3e et 4e génération : sinusite aigüe bactériennes, exacerbation pneumopathie communutaire, infection compliquée peau + tissus mous Résistante : en augmentation chez entérobactéries (E. coli, Klebsiella) 
 
 * Métronidazole
 
-Pour anaérobie strictes 
+  Pour anaérobie strictes 
 
 * Infection ostéo-articulaires
 
-- Rifampicine, quinolone pour diffusion 
-- dapto : activité antibiofilm 
+  - Rifampicine, quinolone pour diffusion 
+  - dapto : activité antibiofilm 
 

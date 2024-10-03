@@ -1,0 +1,23 @@
+@document.meta
+title: anomalies du metabolisme des erythrocytes
+description: 
+authors: alex
+categories: hémato 
+created: 2024-09-07T15:43:08+0100
+updated: 2024-09-08T20:49:41+0100
+version: 1.1.1
+@end
+@end
+
+* Pathway Embden-Meyerhof
+
+  - {:déficit-en-pyruvate-kinase:}
+
+* Métabolisme des nucléotides
+
+- Pyrimidine 5' 
+
+* Pathway pentose phosphate
+
+  - {:déficit-en-g6pd:} récessif lié à l'X 
+

@@ -1,0 +1,28 @@
+@document.meta
+title: bactéries
+description: 
+authors: alex
+categories: bactério 
+created: 2024-09-07T21:16:48+0100
+updated: 2024-09-07T21:16:48+0100
+version: 1.1.1
+@end
+
+{:classification-des-bactéries.norg:}[Classification des bactéries] 
+
+- {:campylobacter-jejuni.norg:}[Campylobacter] 
+- {:chlamydia-trachomatis.norg:}[Chlamydia trachomatis] 
+- {:entérobactéries.norg:}[Entérobactéries] 
+- {:entérocoques.norg:}[Entérocoques] 
+- {:hæmophilus-influenza.norg:}[Hæmophilus influenza] 
+- {:legionella-pneumophiliea.norg:}[Légionelle] 
+- {:listeria-monocytogenes.norg:}[Listeria monocytogenes] 
+- {:méningites-bactériennes.norg:}[Méningites bactériennes] 
+- {:mycoplasmes.norg:}[Mycoplasmes] 
+- {:neisseria-gonorrhoeae.norg:}[Neisseria gonorrhoeae] 
+- {:neisseria-meningitidis.norg:}[Neisseria meningitidis] 
+- {:proteus.norg:}[Proteus] 
+- {:pseudomonas-aeruginosa.norg:}[Pseudomonas aeruginosa] 
+- {:staphylocoques.norg:}[Staphylocoques] 
+- {:streptocoque.norg:}[Streptocoque] 
+

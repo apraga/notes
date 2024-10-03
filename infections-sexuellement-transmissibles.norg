@@ -1,0 +1,19 @@
+@document.meta
+title: infections sexuellement transmissibles
+description: 
+authors: alex
+categories: [
+bactério
+]
+created: 2024-09-07T21:16:58+0100
+updated: 2024-09-07T21:16:58+0100
+version: 1.1.1
+@end
+
+- {:chlamydia-trachomatis.norg:}[Chlamydia trachomatis] 
+- {:hépatite-b.norg:}[Hépatite B] 
+- {:mycoplasmes.norg:}[Mycoplasmes] 
+- {:neisseria-gonorrhoeae.norg:}[Neisseria gonorrhoeae] 
+- {:treponema-pallidum-syphilis.norg:}[Syphilis] 
+- {:vih.norg:}[VIH] 
+

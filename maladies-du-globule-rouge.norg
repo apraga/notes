@@ -1,0 +1,87 @@
+@document.meta
+title: maladies du globule rouge
+description: 
+authors: alex
+categories: hémato 
+created: 2024-09-07T21:17:01+0100
+updated: 2024-09-08T22:45:11+0100
+version: 1.1.1
+@end
+
+* Hémoglobine
+
+** Intro
+
+   Structure : chaines de globine (structure en globe) = protéine -> dans une poche vient se mettre l’hème (contient un atome de fer sur lequel se fixe l’oxygène) 
+
+   - Hémoglobinopathies = anomalies de globine (chaine protéqiue) 
+
+   À différencier des maladies de l’hème (porphyrie) 
+
+   2 chaines globine de type α et 2 chaines de type β
+   3 hémoglobines physiologiques chez l'adulte 
+
+   - HbA > 95% = α2 β2 
+   - HbA,2, < 3.5% = α2 δ2 
+   - HbF < 1% (fœtale) = α2 γ2 
+
+   Génétique :
+   Au total : 2x{α1 et α2} et 2xβ en temps normal sur les 2 chromosome 
+
+   Épidémio: 
+
+   - 0% en europe du nords, 3% de β-thalassémie en Corse 
+   - zone de paludisme (avantage relatifs aux porteurs sains hétérozygotes) 
+   - par type: drépanocytose :Afrique subsaharienne, Inde, α-thalassémie en Asie du Sud-Est, β-thalassémie en Méditerranée, Inde, Asie 
+
+** défaut production : {:thalassémies:}
+
+** hémoglobine anormales
+
+   substitution acide aminé sur chaine α ou µ|
+   1 000 variants sur [[HbVar)
+   ex: HbS (drépanocyto), HbC (afrique, non patho)
+   Conséquences très variables 
+
+   - hyper/hypo affine pour l’oxygène (hyper: Hb garde l’oxygène -> relarge moins l’oxygène mais conséquence fonctionnelle faible, teint rouge) 
+   - hémoglobine instable, solubilité 
+
+** {:drépanocytose:} : défaut qualité 
+** diagnostic biologique
+
+   Évaluation fraction physiologique des hémoglobine A, A2 et F +/- fraction anormales (chromatographie et électrophorèse)) 
+
+   - Si anormale : biochomique/moléculaire 
+
+   Si syndrome majeur ou couple porteur htz -> séquencage direct (peu de gènes et de petite taille = Sanger suffit) 
+
+** Résumé
+
+Hétérozygotes 
+@table
+| β thalassémie       | α-thalassémie | drépanocytose |
+|---------------------+---------------+---------------|
+| HbA                 | HbA           | HbA           |
+| HbA2 élevée         | HbA2 normales | HbA2 normal   |
+| HbF  normale/élevée | HbF normale   | HbF normal    |
+|                     |               | HbS 30-40%    |
+| microcytose         | microcytose   | VGM normal    |
+| polyglobulie        | polyglobulie  | GR normaux    |
+@end
+Tableau majeurs
+@table
+| β thalassémie | α-thalassémie | drépanocytose    |
+|---------------+---------------+------------------|
+| *Pas HbA*     | * Pas HbA*    | * pas d’HbA*     |
+| HbF           | Pas d’HbF     | HbF et HbS|
+| microcytose   | microcytose   | VGM normal       |
+| polyglobulie  | polyglobulie  | GR normaux       |
+@end
+
+** Dépistage prénatal
+
+   Si 2 parents originires de pays à risques 
+
+* Enzymes : {:$/déficit-en-g6pd:}
+* {:$/anomalies-de-la-membrane-erythrocytaire:}
+

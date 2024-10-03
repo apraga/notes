@@ -1,0 +1,50 @@
+* tensorflow
+  On essaie de compiler tensorflow pour générer un wheel (cf PR)
+** Gentoo + clang 18 
+  erreur /build: defining a type within '__builtin_offsetof' is a Clang extension/
+** Clang17 binaire
+  On extrait  https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.2/clang+llvm-17.0.2-x86_64-linux-gnu-ubuntu-22.04.tar.xz
+  localement puis
+  bazel build //tensorflow/tools/pip_package:wheel --repo_env=WHEEL_NAME=tensorflow_cpu
+
+/home/alex/code/tensorflow/clang+llvm-17.0.2-x86_64-linux-gnu-ubuntu-22.04/bin/clang-17: /usr/lib64/libtinfo.so.6: no version information available (required by /home/alex/code/tensorflow/clang+llvm-17.0.2-x86_64-linux-gnu-ubuntu-22.04/bin/clang-17)
+clang-17: error: invalid linker name in argument '-fuse-ld=/home/alex/code/tensorflow/clang+llvm-17.0.2-x86_64-linux-gnu-ubuntu-22.04/bin/ld.lld:'
+  Changer le PATH n'aide pas
+** Clang17 avec Nix
+  On essaie avec nix
+  nix profile install nixpkgs#clang_17
+  Non, il manque <array>
+
+  On essaie avec gcc: erreur à la fin avec cc1plus (killed ?)
+
+** Avec l'image docker fournie 
+  docker pull tensorflow/tensorflow:devel 
+  docker run -it -w /tensorflow_src -v $PWD:/mnt -e HOST_PERMS="$(id -u):$(id -g)" \ tensorflow/tensorflow:devel bash
+git pull  # within the container, download the latest source code
+bazel build //tensorflow/tools/pip_package:wheel --repo_env=WHEEL_NAME=tensorflow_cpu --config=opt
+Fichier requirement non trouvé pour python 3.8...
+
+** Gentoo + clang17
+ERROR: /home/alex/code/tensorflow/tensorflow/tools/pip_package/BUILD:265:9: Action tensorflow/tools/pip_package/wheel_house failed: (Exit 1): build_pip_package_py failed: error executing command (from target //tensorflow/tools/pip_package:wheel) bazel-out/k8-opt-exec-50AE0418/bin/tensorflow/tools/pip_package/build_pip_package_py @bazel-out/k8-opt/bin/tensorflow/tools/pip_package/wheel_house-0.params
+Traceback (most recent call last):
+  File "/home/alex/.cache/bazel/_bazel_alex/b43089709cdb88f3f459426ef0ba5527/execroot/org_tensorflow/bazel-out/k8-opt-exec-50AE0418/bin/tensorflow/tools/pip_package/build_pip_package_py.runfiles/org_tensorflow/tensorflow/tools/pip_package/build_pip_package.py", line 343, in <module>
+    prepare_wheel_srcs(args.headers, args.srcs, args.xla_aot,
+  File "/home/alex/.cache/bazel/_bazel_alex/b43089709cdb88f3f459426ef0ba5527/execroot/org_tensorflow/bazel-out/k8-opt-exec-50AE0418/bin/tensorflow/tools/pip_package/build_pip_package_py.runfiles/org_tensorflow/tensorflow/tools/pip_package/build_pip_package.py", line 197, in prepare_wheel_srcs
+    patch_so(srcs_dir)
+  File "/home/alex/.cache/bazel/_bazel_alex/b43089709cdb88f3f459426ef0ba5527/execroot/org_tensorflow/bazel-out/k8-opt-exec-50AE0418/bin/tensorflow/tools/pip_package/build_pip_package_py.runfiles/org_tensorflow/tensorflow/tools/pip_package/build_pip_package.py", line 242, in patch_so
+    rpath = subprocess.check_output(
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alex/.cache/bazel/_bazel_alex/b43089709cdb88f3f459426ef0ba5527/external/python_x86_64-unknown-linux-gnu/lib/python3.11/subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alex/.cache/bazel/_bazel_alex/b43089709cdb88f3f459426ef0ba5527/external/python_x86_64-unknown-linux-gnu/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alex/.cache/bazel/_bazel_alex/b43089709cdb88f3f459426ef0ba5527/external/python_x86_64-unknown-linux-gnu/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/alex/.cache/bazel/_bazel_alex/b43089709cdb88f3f459426ef0ba5527/external/python_x86_64-unknown-linux-gnu/lib/python3.11/subprocess.py", line 1950, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'patchelf'
+
+   2e essai : vers la fin de la compilationh mange toute la RAM et crash :
+Server terminated abruptly (error code: 14, error message: 'Socket closed', log file: '/home/alex/.cache/bazel/_bazel_alex/b43089709cdb88f3f459426ef0ba5527/server/jvm.out')

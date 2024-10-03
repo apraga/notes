@@ -7,7 +7,7 @@ categories: [
     bactério
 ]
 created: 2024-09-07T00:30:35+0100
-updated: 2024-09-07T18:20:27+0100
+updated: 2024-09-11T23:01:34+0100
 version: 1.1.1
 @end
 
@@ -15,10 +15,10 @@ Voir {:encéphalite:} et {:myélite:}:
 
 * Étiologies:
 
-- {:$/méningites virales:}  = 90% 
+- {:$/méningites-virales:}  = 90% 
   - {:$/entérovirus:} 70-90%, bénigne, arrêt des traitements antibactériens 
   - sans encéphalite = habituellement bénin, guérit spontanément 
-- {:méningites bactériennes:} : diagnostic et traitement *urgent* 
+- {:méningites-bactériennes:} : diagnostic et traitement *urgent* 
 -- pronostic vital engagé à court term +/- séquelle neuro 
 -- 1300cas/an, selon âge/terrain 
 
@@ -63,10 +63,10 @@ Voir {:encéphalite:} et {:myélite:}:
 
 ** Gram
 
-- Cocci Gram+ diplocoque/chainette : {streptococcus-pneumoniae..norg:}[Streptococcus pneumoniae] Strepto agalactiæ (nouveau-né) 
-- Cocce Gram- Diplocoque :{neisseria-meningitidis..norg:}[Neisseria meningitidis] 
-- Bacille Gram- : {hæmophilus-influenza..norg:}[Escherichia coli] 
-- Bacille Gram+ : {listeria-monocytogenes..norg:}[Listeria monocytogenes] 
+- Cocci Gram+ diplocoque/chainette : {streptococcus-pneumoniae.norg:}[Streptococcus pneumoniae] Strepto agalactiæ (nouveau-né) 
+- Cocce Gram- Diplocoque :{neisseria-meningitidis.norg:}[Neisseria meningitidis] 
+- Bacille Gram- : {hæmophilus-influenza.norg:}[Escherichia coli] 
+- Bacille Gram+ : {listeria-monocytogenes.norg:}[Listeria monocytogenes] 
 
 ** Autres
 

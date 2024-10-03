@@ -1,0 +1,20 @@
+@document.meta
+title: hémogramme normal nfs
+description: 
+authors: alex
+categories: hémato 
+created: 2024-09-07T21:16:55+0100
+updated: 2024-09-09T21:15:16+0100
+version: 1.1.1
+@end
+
+* Formule 
+
+@table
+  En g/L
+  | Leucocytes  | 4.4-11  |
+  | PNN         | 1.5-7.7 |
+  | Lymphocytes | 1  -4   |
+  | PNE         | < 0.5   |
+  | Monocytes   | 0.2-0.8 |
+  @end

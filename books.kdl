@@ -1,0 +1,352 @@
+book {
+  title "All The Weyrs of Pern"
+  genre "fantasy"
+  serie "pern"
+  author "Anne McCaffrey"
+}
+book {
+  title "Armée romaine sous le Haut-Empire"
+  genre "history" "rome"
+}
+book {
+  title "A tale of two cities"
+  genre "classic"
+}
+book {
+  title "Atlas Shrugged"
+  genre "classic"
+}
+book {
+  title "At the Mountains of Madness"
+  genre "horror"
+  author "H. P. Lovecraft"
+}
+book {
+  title "Belle du seigneur"
+  genre "classic"
+}
+book {
+  title "Candide"
+  genre "classic"
+}
+book {
+  title "Crime and punishment"
+  genre "classic"
+}
+book {
+  title "Croisades et Orient latin - XIe-XIVe siècle"
+  genre "history"
+}
+book {
+  title "Cyrano de bergerac"
+  genre "classic"
+}
+book {
+  title "Death's end"
+  genre "scifi"
+  serie " three-body problem"
+  author "Cixin Liu"
+}
+book {
+  title "Une histoire du monde aux temps modernes"
+  author "J. Delumeau"
+  genre "history:modern:cs"
+}
+book {
+  title "Dragondrums"
+  genre "fantasy"
+  serie "pern"
+  author "Anne McCaffrey"
+}
+book {
+  title "Dragonflight"
+  genre "fantasy"
+  serie "pern"
+  author "Anne McCaffrey"
+}
+book {
+  title "Dragonquest"
+  genre "fantasy"
+  serie "pern"
+  author "Anne McCaffrey"
+}
+book {
+  title "Dragonsinger"
+  genre "fantasy"
+  serie "pern"
+  author "Anne McCaffrey"
+}
+book {
+  title "Dragonsong"
+  genre "fantasy"
+  serie "pern"
+  author "Anne McCaffrey"
+}
+book {
+  title "Dubliners"
+  genre "classic"
+}
+book {
+  title "Oeuvres"
+  author "Duby"
+  genre "classic"
+  collection "la pleiade"
+}
+book {
+  title "Fortress in the Eye of Time"
+  genre "fantasy"
+  author "C. J. Cherryh"
+  serie "fortress"
+}
+book {
+  title "Fortress of Dragons"
+  genre "fantasy"
+  author "C. J. Cherryh"
+  serie "fortress"
+}
+book {
+  title "Fortress of Eagles"
+  genre "fantasy"
+  author "C. J. Cherryh"
+  serie "fortress"
+}
+book {
+  title "Fortress of ice"
+  genre "fantasy"
+  author "C. J. Cherryh"
+  serie "fortress"
+}
+book {
+  title "Fortress of Owls"
+  genre "fantasy"
+  author "C. J. Cherryh"
+  serie "fortress"
+}
+book {
+  title "Foucault's pendulum"
+  genre "classic"
+}
+book {
+  title "Germinal"
+  genre "classic"
+}
+book {
+  title "The story of art"
+  author "Gombrich, E. H. "
+  genre "history:art:cs"
+}
+book {
+  title "Histoire de la chine"
+  author "René Grousset"
+  genre "history"
+}
+book {
+  title "Harry Potter and the Methods of Rationality"
+  genre "fanfic"
+  serie "harry potter"
+}
+book {
+  title "HomèreIliade -- Odyssée"
+  author "Homère"
+  genre "classic"
+  collection "la pleiade"
+}
+book {
+  title "Les Travailleurs de la mer, Notre-Dame de Paris"
+  author "Victor Hugo"
+  genre "classic"
+  collection "la pleiade"
+}
+book {
+  title "I, Claudius"
+  genre "classic"
+}
+book {
+  title "Illusions: The Adventures of a Reluctant Messiah"
+  genre "classic"
+}
+book {
+  title "Jane Eyre"
+  genre "classic"
+}
+book {
+  title "La peste"
+  genre "classic"
+}
+book {
+  title "Le coran"
+  genre "classic"
+  collection "la pleiade"
+}
+book {
+  title " Histoire romaine"
+  author "Le Glay, M., Voisin, J., & Le Bohec, Y.s"
+  genre "history" "rome" 
+}
+book {
+  title "Le Livre du Graas"
+  genre "classic"
+ collection "la pleiade"
+}
+book {
+  title "Le Petit Prince"
+  genre "classic"
+}
+book {
+  title "Les Mille Et Une Nuits"
+  genre "classic"
+  collection "la pleiade"
+}
+book {
+  title "Lolita"
+  genre "classic"
+}
+book {
+  title "Les Olmèques: des origines au mythe"
+  author "Magni, C.s"
+}
+book {
+  title "Oxford history of Ancient Egypt"
+  genre "history"
+}
+book {
+  title "Plutarch's lives"
+  author "Plutariqus"
+  genre "history:antiquity:cs"
+}
+book {
+  title "Histoire"
+  author "Polybe"
+  genre "history:rome"
+}
+book {
+  title "Pride and Prejudice and Zombies"
+  genre "horror"
+  author "Seth Grahame-Smith and Jane Austen"
+}
+book {
+  title "Pride and Prejudice "
+  genre "classic"
+}
+book {
+  title "Sacrifice Arc"
+  genre "fanfic"
+  serie "harry potter"
+}
+book {
+  title "Si c'est un homme"
+  genre "classic"
+}
+book {
+  title "The Arithmancer"
+  genre "fanfic"
+  serie "harry potter"
+}
+book {
+  title "The Black Company 6/6"
+  author "Glenn Cook"
+}
+book {
+  title "The dark forest"
+  genre "scifi"
+  serie " three-body problem"
+  author "Cixin Liu"
+}
+book {
+  title "The fall of the house of usher"
+  genre "classic"
+}
+book {
+  title "The hound of the baskervilles"
+  genre "mystery"
+  serie " Sherlock Holmes"
+}
+book {
+  title "The Lost Apothecary"
+  genre "thriller"
+}
+book {
+  title "The name of the rose"
+  genre "classic"
+}
+book {
+  title "The Skies of Pern"
+  serie "pern"
+  author "Anne McCaffrey"
+}
+book {
+  title "A Song of Ice and Fire 5/5"
+  author "Georges R. R. Martin "
+}
+book {
+  title "Windhaven"
+  author "Georges R. R. Martin "
+}
+book {
+  title "Fire and Blood"
+  author "Georges R. R. Martin "
+}
+book {
+  title "The Color of Magics"
+}
+book {
+  title "The light fantastic"
+}
+book {
+  title "Harry Potter "
+}
+book {
+  title "Lord of the Rings "
+  author "Tolkien"
+}
+book {
+  title "The Silmarillion"
+  author "Tolkien"
+}
+book {
+  title "The hobbit, or, there and back again"
+  author "Tolkien"
+}
+book {
+  title "Dr Norrel and Mr Strange"
+  author "Clarke, S."
+}
+book {
+  title "The three-body problem"
+  genre "scifi"
+  serie " three-body problem"
+  author "Cixin Liu"
+}
+book {
+  title "The Time Machine"
+  genre "scifi"
+  author "H. G. Wells"
+}
+book {
+  title "The War of the Worlds"
+  genre "scifi"
+  author "H. G. Wells"
+}
+book {
+  title "The White Dragon"
+  genre "fantasy"
+  serie "pern"
+  author "Anne McCaffrey"
+}
+book {
+  title "Tite-Live - Histoire romaine "
+  genre "history:rome"
+}
+book {
+  title "Guerre et paix"
+  author "Tolstoi"
+  genre "classic"
+  collection "la pleiade"
+}
+book {
+  title "Une Histoire Du Monde Aux Temps Modernes"
+  genre "history" "modern"
+}
+book {
+  title "Violet Evergarden"
+}

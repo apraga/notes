@@ -7,7 +7,7 @@ categories: [
   hémato 
 ]
 created: 2024-09-07T15:43:08+0100
-updated: 2024-09-08T17:57:40+0100
+updated: 2024-09-09T22:12:22+0100
 version: 1.1.1
 @end
 @end
@@ -17,15 +17,15 @@ Pathologique : intra-tissulaire (rate), intra-vasculaire
 
 * Démarche
 
-~ NFS, réticulocytes, {bilirubine__biochimie_spectrophotométrie.norg:}[Bilirubine] libre, LDH, {../notes/20240717T200415--haptoglobine__biochimie_néphélémétrie.org}[Haptoglobine] 
+~ NFS, réticulocytes, {bilirubine.norg:}[Bilirubine] libre, LDH, {../notes/20240717T200415--haptoglobine__biochimie_néphélémétrie.org}[Haptoglobine] 
 
-2.{test-de-coombs__hemato.norg:}[Test de Coombs] direct 
+2.{test-de-coombs.norg:}[Test de Coombs] direct 
 
 - positif : immune -> groupage sanguin, recherche autoanticorps 
 - sinon 
 -- autre cause extracorpusculaire 
-  --- infectieuse -> hémocultures (clostridium, streptocoque, yersiniose), paludisme, virale ({:$/CMV:} {:$/VIH:} {:$/infection virales hépatiques:} {:$/parvovirus b19:})
---- mécanique (schu) 
+  --- infectieuse -> hémocultures (clostridium, streptocoque, yersiniose), paludisme, virale ({:$/CMV:} {:$/VIH:} {:$/infection-virales-hépatiques:} {:$/parvovirus-b19:})
+  --- mécanique ({:$/syndrome-hemolytique-et-uremique:}) 
 -- cause corpusculaire : 
 --- héréditaire: 
 ---- membrane : test de résistance osmotique 

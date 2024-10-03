@@ -1,0 +1,33 @@
+@document.meta
+title: entérobactéries
+description: 
+authors: alex
+categories: [
+  bactério
+  bactérie
+]
+created: 2024-09-07T21:16:52+0100
+updated: 2024-09-12T17:49:45+0100
+version: 1.1.1
+@end
+
+Groupe selon la résistance *naturelle* β-lactamine 
+
+~ aucune = E. coli, Proteus mirabilis, Salmonella 
+~ Pénicillinase à bas niveau = Klebsiella (pneumonia, oxytoca), Citrobacer koseri, Shigella (!) 
+~ Céphalosporinase à bas niveau = Enterobacter, Serratia, Morganella,
+~ Providencia, Citrobacter freundii, /Klebsiella aerogenes/ 
+~ Pénicillinase + céphalosporinase = Yersinia enterolitica 
+~ β-lactamase à spectre étendu (BLSE)= Kluyvera 
+
+Résistance acquises 
+
+* {:escherichia-coli.norg:}[Escherichia coli]
+
+* KES = Klebsiella, ENterobacter, Serratia
+
+  Vert (β-glucosidase +) 
+
+* {:salmonella-spp.norg:}[Salmonella spp]
+
+* {:shigella-spp.norg:}[Shigella spp]

@@ -4,12 +4,45 @@ description:
 authors: alex
 categories: hémato 
 created: 2024-09-07T21:16:59+0100
-updated: 2024-09-07T21:16:59+0100
+updated: 2024-09-10T23:05:13+0100
 version: 1.1.1
 @end
 
-.image images/hematologie/lymphomeb.png
+Prolifération malignes du système lymphoïde
+- hodgkinien (cellule de Reed-Sternberg)
+- non hodgkinien : B ou T
 
-.image images/hematologie/lymphomet.png
- 
+* Épidémiologie
+  - 1ere cause de cancer chez les ado et jeunes adultes
+  - médiane au diag 55-60 ans
+* Physiopatho
+  Transformation clonale cellulee B, T ou NK
+  Prolifération dans un ganglion -> destruction
+  Dissémination par continuité mais rarement dans le sang ou mœlle
+  FR: 
+  - virus ({:EBV:} et lymphome de Burkitt), bactérie
+  - maladies immunitaires
+* Clinique
+  Asymptomatique -> urgence Clinique
+  - /syndrome tumoral/  ADP++, SMG, HMG, localisations extraganglionnaires
+  - signes généraux
+  - cytopénies, inflammation...
 
+* Diagnostic
+  - cytoponctieon mais certitude sur biopsie par exérèse -> anapath
+* Bilau d'extension
+  - myélogramme, BOM
+  - stade Ann Arbor
+  - hémogramme : cellules lymphomateuses, cytopénies
+  - {:électrophorèse-des-protéines-sériques:}
+  - recherche hypercalcémie
+  - rénal + hépatique
+
+  .image images/hematologie/lymphomeb.png
+
+  .image images/hematologie/lymphomet.png
+
+* Lymphome de Hodgin
+  - ADP sus-claviculaires, cerivcale
+  - hémogramme normal
+  - quasiment jamais d'envahissement de la mœlle osseuse

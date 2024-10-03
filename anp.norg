@@ -2,7 +2,7 @@
 title: anp
 description: 
 authors: alex
-ategories: [
+categories: [
 biochimie
 nutrition
 ]/
@@ -18,7 +18,7 @@ version: 1.1.1
 - Par les oreillettes si augmentation de pression dans l'oreillete 
 - proANP clivé en ANP active et autres peptides 
 - rapidement mobilisable 
-- très homologue à {:bnp__biochimie_cardio.norg:}[BNP] 
+- très homologue à {:bnp.norg:}[BNP] 
 
 * Variations
 
