@@ -1,9 +1,0 @@
-#+title:      Anticoagulants
-#+date:       [2024-08-11 Sun 23:55]
-#+filetags:   :hémostase:
-#+identifier: 20240811T235530
-
-[[file:images/hemostase/anticoagulants.png]]
-[[denote:20240806T215355][AVK]]
-[[denote:20240812T101412][Héparine]]
-[[denote:20240813T101220][AOD]]

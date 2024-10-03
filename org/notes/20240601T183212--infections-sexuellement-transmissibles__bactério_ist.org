@@ -1,9 +1,0 @@
-#+title:      Infections sexuellement transmissibles
-#+filetags:   :bactério:ist:
-
-- [[denote:20240601T183012][Chlamydia trachomatis]]
-- [[denote:20240831T143122][Hépatite B]]
-- [[denote:20240608T182904][Mycoplasmes]]
-- [[denote:20240515T224930][Neisseria gonorrhoeae]]
-- [[denote:20240601T183122][Syphilis]]
-- [[denote:20240819T172039][VIH]]

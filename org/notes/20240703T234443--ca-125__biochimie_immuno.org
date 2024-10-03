@@ -1,7 +1,0 @@
-:PROPERTIES:
-:ID:       d59e007e-2d26-42ef-b349-cade464c37f9
-:END:
-#+title: CA 125
-#+filetags: biochimie immuno
-#+identifier: 20240703T234443
-Indication: cancer overs

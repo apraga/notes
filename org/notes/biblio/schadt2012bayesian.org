@@ -1,7 +1,0 @@
-:PROPERTIES:
-:ID:       abbb5eec-928d-461b-807a-f7c88462517d
-:ROAM_REFS: @schadt2012bayesian
-:END:
-#+title: Schadt, Eric E and Woo, Sangsoon and Hao, Ke :: Bayesian method to predict individual SNP genotypes from gene expression data
-
-Identification entre 90 et 98% selon les tissus dans [cite:@schadt2012bayesian] (foie, poumon) à partir d'ARN.

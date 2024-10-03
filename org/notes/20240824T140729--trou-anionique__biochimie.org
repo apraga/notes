@@ -1,6 +1,0 @@
-#+title:      Trou anionique
-#+date:       [2024-08-24 Sat 14:07]
-#+filetags:   :biochimie:
-#+identifier: 20240824T140729
-
-Na+ + K+ - Cl- - HCO3- = 16mmol/L +/- 4

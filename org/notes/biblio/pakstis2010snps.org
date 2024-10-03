@@ -1,7 +1,0 @@
-:PROPERTIES:
-:ID:       aa0f0370-bec3-4214-b011-e2dfb60d2659
-:ROAM_REFS: @pakstis2010snps
-:END:
-#+title: Pakstis, Andrew J and Speed, William C and Fang, Rixun and Hyland, Fiona CL and Furtado, Manohar R and Kidd, Judith R and Kidd, Kenneth K :: SNPs for a universal individual identification panel
-
-45 SNPs suffisent à identifier un individu parmi 44 populations.

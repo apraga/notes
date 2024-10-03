@@ -1,9 +1,0 @@
-#+title:      Outils pour la détection des variants
-#+date:       [2024-07-25 Thu 09:52]
-#+filetags:   :auragen:pipeline:
-#+identifier: 20240725T095212
-
-- région d'homozygotie [[denote:20240725T095524][Runs of Homozygosity (ROH)]]
-- détection des points de cassure (avec Manta)
-- Estimation ploïdie : profondeur sur chromosome/profondeur génome
-- non signalées si couveture insuffisante/librairie atypiques (avertissement)

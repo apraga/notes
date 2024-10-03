@@ -1,8 +1,0 @@
-#+title:      Otite moyenne aigüe
-#+date:       [2024-09-01 Sun 14:41]
-#+filetags:   :bactério:
-#+identifier: 20240901T144149
-
-- Surinfection bactérienne, souvent après une infection virale ORL (favorise prolifération de bactéries commensales de l'oropharynx comme[[denote:20240816T121919][Hæmophilus influenza]] ,[[denote:20240831T173233][Streptococcus pneumoniae]] )
-- Fièvre, otalgie, tympan bombé
-- Amoxicilline

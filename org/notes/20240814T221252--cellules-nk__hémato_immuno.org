@@ -1,8 +1,0 @@
-#+title:      Cellules NK
-#+date:       [2024-08-14 Wed 22:12]
-#+filetags:   :hémato:immuno:
-#+identifier: 20240814T221252
-
-- NK et cellules NK T
-- défense contre les virus et pathogènes intracellulaires
-- destruction des cellules qui ne présentent pas les antigènes du Complexe d'HistoCompatibilité I

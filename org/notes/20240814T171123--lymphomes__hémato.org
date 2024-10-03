@@ -1,7 +1,0 @@
-#+title:      Lymphomes
-#+date:       [2024-08-14 Wed 17:11]
-#+filetags:   :hémato:
-#+identifier: 20240814T171123
-
-[[file:images/hematologie/lymphomeb.png]]
-[[file:images/hematologie/lymphomet.png]]

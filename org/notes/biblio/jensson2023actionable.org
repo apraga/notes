@@ -1,7 +1,0 @@
-:PROPERTIES:
-:ID:       b9060d04-cbaf-4f45-811c-7dcb41a4d904
-:ROAM_REFS: @jensson2023actionable
-:END:
-#+title: Jensson, Brynjar O and Arnadottir, Gudny A and Katrinardottir, Hildigunnur and Fridriksdottir, Run and Helgason, Hannes and Oddsson, Asmundur and Sveinbjornsson, Gardar and Eggertsson, Hannes P and Halldorsson, Gisli H and Atlason, Bjarni A and others :: Actionable genotypes and their association with life span in Iceland
-
-Suite après le refus d'inférer le génotype, l'entreprise a continuer à séqunecer plus de génomes et combiner à SNP-array.

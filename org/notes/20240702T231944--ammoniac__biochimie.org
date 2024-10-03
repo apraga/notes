@@ -1,8 +1,0 @@
-#+title:      Ammoniac
-#+filetags:   :biochimie:
-#+identifier: 20240702T231944
-
-Évalue la capacité de détoxification azoté hépatique
-Norme < 32μmol/L
-Voir [[denote:20240817T100338][Cycle de l'urée]]
-Diminué en cas d'IHC (ex [[denote:20240821T224719][Intoxication au paracétamol]] )
