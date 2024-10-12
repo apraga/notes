@@ -1,0 +1,74 @@
+workout {
+  date "2024-04-13"
+  note "It has been a long time..."
+  muscle-up {
+    serie  2 1 1 neg 4 
+    serie  2 1 1 neg 4
+    serie  2 1 1 neg 4
+  }
+  pistols {
+    serie 4
+    serie 4
+    serie 4
+  }
+  "tucked planche" {
+    serie 3 2
+    serie 3 3
+    serie 3 3
+  }
+
+  "pushed-up tucked" {
+    series 2  2  3  3 
+    series 2  3  3  3 
+    series 4  3  3 
+  }
+  extension {
+    serie 22
+    serie 22
+    serie 22
+  }
+  compression {
+    serie 10
+    serie 10
+    serie 10
+    note "plus haut que d'habitude"
+  }
+}
+bike {
+  date "2024-05-05" 
+  duration "54min"
+  note "les bons -> parking fort de la batterie et 25min marche parking -> fort"
+}
+workout {
+  date "2024-10-12"
+  muscle-up {
+    serie  1 1 1
+    serie  2 1 1 neg 4
+    serie  3 1
+  }
+  pistols {
+    serie 4
+    serie 4
+    serie 4
+  }
+  "tucked planche" {
+    serie 3 3
+    serie 3 3 1
+    serie 3 3
+  }
+  "pushed-up tucked" {
+    series 2  2  2  2  1
+    series 3  2  2  2  
+    series 3  2  2  2  
+  }
+  extension {
+    serie 22
+    serie 22
+    serie 22
+  }
+  compression {
+    serie 10
+    serie 10
+    serie 10
+  }
+}
