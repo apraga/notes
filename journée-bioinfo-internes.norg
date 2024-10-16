@@ -6,7 +6,7 @@ categories: [
   auragen
 ]
 created: 2024-09-13T18:43:25+0100
-updated: 2024-09-13T18:43:35+0100
+updated: 2024-10-15T09:41:18+0100
 version: 1.1.1
 @end
 
@@ -14,13 +14,21 @@ version: 1.1.1
 Salle de réunion du service réservée le matin.
 Voir avec Alain pour salle de Chissé l'après-midi.
 
-Lucas GAUTHIER (Lyon)
-Clarisse BATTAULT (Lyon)
-miriam essid (Lyon)
-Claire Caillot (vision)
-Marie-Gabrielle Delorme Guinand (Clermont-Ferrand)
-Laury NICOLAS  (Clermont-Ferrand)
-Auriane SALOTTI (Lyon)
+Dossiers
+MR-2200468	
+MR-2200474	
+MR-2200544	
+MR-2102106	
+MR-2200421	
+MR-2200322	
+
+Clarisse BATTAULT (Lyon)  non
+miriam essid (Lyon) ok
+Claire Caillot (vision) ok
+Marie-Gabrielle Delorme Guinand (Clermont-Ferrand) ok
+Laury NICOLAS  (Clermont-Ferrand) ok 
+Auriane SALOTTI (Lyon) : non mais pas dans dans LDAP
+Julie PERNIN-GRANDJEAN (??) : oui
 
 lucas.gauthier01@chu-lyon.fr
 clarisse.battault@chu-lyon.fr
@@ -30,3 +38,4 @@ mgdelormeguinand@chu-clermontferrand.fr
 claire.caillot@chu-lyon.fr
 auriane.salotti@chu-lyon.fr
 WMokkedem@chu-grenoble.fr
+
