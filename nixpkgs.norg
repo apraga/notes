@@ -1,0 +1,6 @@
+* Bonnes pratiques
+- nixfmt
+- commit
+
+  `nix-shell -p nixpkgs-review --run "nixpkgs-review rev HEAD"`
+
