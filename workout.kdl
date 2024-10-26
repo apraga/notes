@@ -146,3 +146,69 @@ workout {
     serie 10
   }
 }
+workout {
+  date "2024-10-20"
+  muscle-up {
+    serie  2 1 1
+    serie  2 2 1
+    serie  2 1
+  }
+  pistols {
+    serie 4
+    serie 4
+    serie 4
+  }
+  "tucked planche" {
+    serie 3 3
+    serie 3 3 1
+    serie 3 3
+  }
+  "pushed-up tucked" {
+    series 2  2  2  2  1
+    series 3  2  2  2  
+    series 3  2  2  2  
+  }
+  extension {
+    serie 22
+    serie 22
+    serie 22
+  }
+  compression {
+    serie 10
+    serie 10
+    serie 10
+  }
+}
+workout {
+  date "2024-10-26"
+  muscle-up {
+    serie  2 1 1 1
+    serie  2 2 
+    serie  2 2
+  }
+  pistols {
+    serie 4
+    serie 4
+    serie 4
+  }
+  "tucked planche" {
+    serie 3 2
+    serie 3 3
+    serie 3 2
+  }
+  "pushed-up tucked" {
+    series 2  2  2  2  1
+    series 3 3 3
+    series 3 3 3
+  }
+  extension {
+    serie 22
+    serie 22
+    serie 22
+  }
+  compression {
+    serie 10
+    serie 10
+    serie 10
+  }
+}
