@@ -1,6 +1,7 @@
-​#nix #r De même que R, il faut packager R avec les librairies
 
-#+begin_src nix
+De même que R, il faut packager R avec les librairies
+
+@code nix
 with (import <nixpkgs> {});
 let
   my-r-packages = rWrapper.override{packages = with rPackages; [
@@ -8,4 +9,4 @@ plotly
   ];};
 in
 my-r-packages
-#+end_src
+@end

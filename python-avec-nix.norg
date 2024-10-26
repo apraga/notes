@@ -1,12 +1,8 @@
-:PROPERTIES:
-:ID:       494ea097-edb7-4e5c-b1b7-693e4a5d6df8
-:END:
-#+title: Package Python pour nixpkgs
-#+filetags: nix nixpkgs python
+
 
 * Modèle
 dans python-modules/MYPACKAGE/default.nix
-#+begin_src nix
+  @code nix
 {
   config,
   lib,
@@ -44,10 +40,10 @@ buildPythonPackage rec {
     wheel
   ];
 }
-#+end_src
+@end
 Puis l'ajouter dans pkgs/top-level/python-packages.nix
 * Forcer la version d'une dépendence
-#+begin_src nix
+  @code nix
 let
   netaddr_0_8_0 = netaddr.overridePythonAttrs (oldAttrs: rec {
     version = "0.8.0";
@@ -59,4 +55,4 @@ let
     };
   });
 in
-#+end_src
+@end
