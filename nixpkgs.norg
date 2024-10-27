@@ -4,3 +4,8 @@
 
   `nix-shell -p nixpkgs-review --run "nixpkgs-review rev HEAD"`
 
+* tester
+  `nix-build -A some-package`
+* A lire Référence
+https://github.com/NixOS/nixpkgs/blob/master/pkgs/README.md
+
