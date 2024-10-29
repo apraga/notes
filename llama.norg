@@ -1,65 +1,107 @@
 * llama-cpp
-  Suivre https://github.com/kaust-generative-ai/local-deployment-llama-cpp
-  On active CUDA
-  @code bash
-./bin/install-miniforge.sh
-./bin/create-conda-env.sh
-./bin/create-conda-env.sh environment-nvidia-gpu.yml
- conda activate /data/home/apraga/local-deployment-llama-cpp/env
-  @end
-  Pour compiler depuis le code source, ./bin/build-llama-cpp-nvidia-gpu.sh ne semble pas fonctionner pas donc à la main:
+** Localement
+   @code bash
+   nix profile install nixpkg#llama
+   wget https://huggingface.co/TheBloke/Llama-2-7B-GGUF/resolve/main/llama-2-7b.Q2_K.gguf?download=true
+   llama-cli -m llama-2-7b.Q2_K.gguf -p "Building a website can be done in 10 simple steps:\nStep 1:" -n 400 -e
+   @end
+** Cluster CHUGA
+   Suivre https://github.com/kaust-generative-ai/local-deployment-llama-cpp
+   On active CUDA
+   @code bash
+   ./bin/install-miniforge.sh
+   @end 
 
-@code bash
-  git clone https://github.com/ggerganov/llama.cpp.git
- cmake -S llama.cpp -B build/lama.cpp  -DCMAKE_INSTALL_PREFIX=env -DCMAKE_INSTALL_RPATH=env/lib -DLLAMA_CURL=ON -DGGML_LLAMAFILE=OFF   -DGGML_CUDA=ON   -DGGML_BLAS=ON    -DGGML_BLAS_VENDOR=OpenBLAS
-  @end
-  Paralléliation
-  Pour compiler en parallèles, créer compile.sh
-  @code
-#!/bin/bash
+   Pour être sûr d'avoir CUDA détecté, on se met sur le noeud GPU en interactif 
+   @code bash
+   srun --nodes=1 --ntasks-per-node=1 --time=03:00:00 --gres=gpu --partition servoz --pty bash -i
+   ./bin/create-conda-env.sh
+   ./bin/create-conda-env.sh environment-nvidia-gpu.yml
+   conda activate /data/home/apraga/local-deployment-llama-cpp/env
+   @end
+   Pour compiler depuis le code source, ./bin/build-llama-cpp-nvidia-gpu.sh ne semble pas fonctionner pas donc à la main. 
+   @code bash
+   git clone https://github.com/ggerganov/llama.cpp.git
+   cd llama.cpp
+   cmake -B build  -DCMAKE_INSTALL_PREFIX=env -DCMAKE_INSTALL_RPATH=env/lib -DLLAMA_CURL=ON -DGGML_LLAMAFILE=OFF   -DGGML_CUDA=ON   -DGGML_BLAS=ON    -DGGML_BLAS_VENDOR=OpenBLAS
+   @end
+   On quitte le noeud de calcul en interactif et on compile avec `compile.sh`
+   @code
 
-#SBATCH --job-name=compile-llamacpp
-#SBATCH --output=compile-llamacpp
-#SBATCH --time=4:00:00                          ## Job Duration
-#SBATCH --ntasks-per-node=12                            ## Number of tasks (analyses) to run
-#SBATCH --nodes=1
-#SBATCH --partition=servoz
+   #!/bin/bash
 
-. /data/home/apraga/.bashrc
-conda activate /data/home/apraga/local-deployment-llama-cpp/env
-cmake --build build/lama.cpp/ --config Release -j 12 --parallel
-  @end
-  Et lancer 
-  @code bash
-  sbatch compile.sh
- cmake --install build/lama.cpp/ --prefix env
-  @end
+   #SBATCH --job-name=compile-llamacpp
+   #SBATCH --output=compile-llamacpp
+   #SBATCH --time=4:00:00                          ## Job Duration
+   #SBATCH --ntasks-per-node=12                            ## Number of tasks (analyses) to run
+   #SBATCH --nodes=1
+   #SBATCH --partition=servoz
+   #SBATCH --gres=gpu
 
-  Mettre https://huggingface.co/TheBloke/Llama-2-7B-GGUF/blob/main/llama-2-7b.Q2_K.gguf sur le cluster avec sshfs
+   . /data/home/apraga/.bashrc
+   conda activate /data/home/apraga/local-deployment-llama-cpp/env
+   cmake --build build/ --config Release -j 12 --parallel
+   @end
+   Et lancer 
+   @code bash
+   sbatch compile.sh
+   @end
 
-srun --nodes=1 --ntasks-per-node=1 --time=03:00:00 --gres=gpu --partition servoz --pty bash -i
-(base) [apraga@HPC-CHU-Node011 ~]$ cd local-deployment-llama-cpp/
-(base) [apraga@HPC-CHU-Node011 local-deployment-llama-cpp]$ conda activate ./env
-(/data/home/apraga/local-deployment-llama-cpp/env) [apraga@HPC-CHU-Node011 local-deployment-llama-cpp]$ llama-cli
-llama-cli -m ../llama-2-7b.Q2_K.gguf -p "Building a website can be done in 10 simple steps:\nStep 1:" -n 400 -e
+   Mettre https://huggingface.co/TheBloke/Llama-2-7B-GGUF/blob/main/llama-2-7b.Q2_K.gguf sur le cluster avec sshfs
+
+   srun --nodes=1 --ntasks-per-node=1 --time=03:00:00 --gres=gpu --partition servoz --pty bash -i
+   (base) [apraga@HPC-CHU-Node011 ~]$ cd local-deployment-llama-cpp/
+   (base) [apraga@HPC-CHU-Node011 local-deployment-llama-cpp]$ conda activate ./env
+   (/data/home/apraga/local-deployment-llama-cpp/env) [apraga@HPC-CHU-Node011 local-deployment-llama-cpp]$ llama-cli
+   llama-cli -m ../llama-2-7b.Q2_K.gguf -p "Building a website can be done in 10 simple steps:\nStep 1:" -n 400 -e
+
+   Problème de driver CUDA 
+
+   Mais la version semble la bonne (10.2)
+
+   $ nvidia-smi
+Wed Oct 30 15:29:48 2024
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 440.95.01    Driver Version: 440.95.01    CUDA Version: 10.2     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla V100-PCIE...  On   | 00000000:E2:00.0 Off |                    0 |
+| N/A   30C    P0    25W / 250W |     12MiB / 32510MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+$ nvcc --version
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2019 NVIDIA Corporation
+Built on Wed_Oct_23_19:24:38_PDT_2019
+Cuda compilation tools, release 10.2, V10.2.89
+
+Mettre 
 * Ancienne version 
 
- Pas moyen de télécharger depuis le cluster...
+  Pas moyen de télécharger depuis le cluster...
 
-On ne suit pas les instructions du README mais yhttps://github.com/meta-llama/llama-recipes/blob/main/recipes/quickstart/Running_Llama3_Anywhere/Running_Llama_on_Mac_Windows_Linux.ipynb
-1. on installe tout localement + téléchargement
-curl -fsSL https://ollama.com/install.sh | sh
-ollama pull llama3.1:70b
+  On ne suit pas les instructions du README mais yhttps://github.com/meta-llama/llama-recipes/blob/main/recipes/quickstart/Running_Llama3_Anywhere/Running_Llama_on_Mac_Windows_Linux.ipynb
+  1. on installe tout localement + téléchargement
+  curl -fsSL https://ollama.com/install.sh | sh
+  ollama pull llama3.1:70b
 
-Sur le cluster, pas de téléchargement possible...
+  Sur le cluster, pas de téléchargement possible...
 
-curl -L https://ollama.com/download/ollama-linux-amd64.tgz -o ollama-linux-amd64.tgz
-scp ollama-linux-amd64.tgz chu:
-ssh chu
-mkdir ollama
-tar -xvf ollama-linux-amd64.tgz -C ollama
- ./ollama/bin/ollama serve
+  curl -L https://ollama.com/download/ollama-linux-amd64.tgz -o ollama-linux-amd64.tgz
+  scp ollama-linux-amd64.tgz chu:
+  ssh chu
+  mkdir ollama
+  tar -xvf ollama-linux-amd64.tgz -C ollama
+  ./ollama/bin/ollama serve
 
-Dans un autre terminal
- ./ollama/bin/ollama -v
-ollama version is 0.3.13
+  Dans un autre terminal
+  ./ollama/bin/ollama -v
+  ollama version is 0.3.13
