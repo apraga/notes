@@ -1,0 +1,3 @@
+@code
+mbsync -a ; notmuch new ; afew -am
+@end
