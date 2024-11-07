@@ -7,10 +7,11 @@ categories:  [
   article
 ]
 created: 2024-09-16T00:40:58+0100
-updated: 2024-09-22T18:37:37+0100
+updated: 2024-11-07T09:36:45+0100
 version: 1.1.1
 @end
 
 * Articles
+  On sépare le travail en 2
   1.{:$/reproductible-sarek.norg:}[environnement reproductible autour de Sarek]
   2. {:sherloxome:}[validation d'exoms]
