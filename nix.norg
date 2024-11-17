@@ -4,12 +4,13 @@ description:
 authors: alex
 categories:  nix
 created: 2024-10-26T22:08:17+0100
-updated: 2024-10-26T22:08:31+0100
+updated: 2024-11-17T18:55:38+0100
 version: 1.1.1
 @end
 
 * Configuration
    - Activer les flakes (experimental) ! Meilleure expérience utilisateur
+
 *  WSL2 changer /nix/store Pour accéder à un lecteur US:, rajouter
     dans /etc/fstabl
 
@@ -118,3 +119,5 @@ l'évalution). Meilleures solution :
    root. Par défaut, le channel de l'utilisateur n'est pas utilisé sauf
    si la configuration utilise <stable>. Le channel par défaut est
    nixpkgs (sinon nixos) !!
+* Nix sans les droits admin ou sudo
+  Avec nix portable, problème de permission...
