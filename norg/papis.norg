@@ -1,7 +1,0 @@
-* Documentation à mettre à jour 
-  - Avec whoosh seulement : papis list "tags:(NOT facebook) https://github.com/papis/papis/issues/907
-  - documentation whoosh : papis open 'f*' https://github.com/papis/papis/issues/909
-  - nushell : ne pas définir SHELL https://github.com/papis/papis/issues/924
-  - update all references papers update --set ref 'New{doc[year]}' --all <QUERY> https://github.com/papis/papis/issues/928
-
-
