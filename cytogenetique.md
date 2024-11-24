@@ -1,4 +1,4 @@
-
++# Cytologie génétique
 * Dup et inv en CGH
   Penser à 
   - duplication en mirroir (ABA) ou en tandem (ABAB) 
@@ -22,4 +22,3 @@ https://onlinelibrary.wiley.com/doi/10.1111/j.1399-0004.2009.01187.x
 
 ## Réunions
 - [acraa](acraa.md)
-
