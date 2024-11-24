@@ -1,5 +1,5 @@
 # mycobacterium tuberculosis
-
+#bactério #bactérie 
 
 
 Déclaration obligatoire anonyme (ARS)

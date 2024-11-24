@@ -1,5 +1,5 @@
 # entérocoques
-
+#bactério #bactérie 
 
 
 Cocci gram+ , anaérobie facultative, ressemblantà des streptocoques 

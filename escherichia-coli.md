@@ -1,5 +1,5 @@
 # escherichia coli
-
+#bactério #bactérie 
 
 
 - Bacille gram négatif, non exigeant 

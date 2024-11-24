@@ -1,5 +1,5 @@
 # phosphore-inorganique
-
+#biochimie 
 
 
 interférences défaut lipides > 30g/L, mannitol, excès phosphate de créatinine, pyruvate de phosphoénol

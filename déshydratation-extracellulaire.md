@@ -1,5 +1,5 @@
 # déshydratation-extracellulaire
-
+#biochimie #néphro 
 
 
 Perte de sodium

@@ -1,5 +1,5 @@
 # hypothyroïdies
-
+#biochimie #nutrition 
 
 
 - Baisse de fonctionne de la glande 

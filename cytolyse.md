@@ -1,5 +1,5 @@
 # cytolyse
-
+#biochimie 
 
 
 - [ALAT](#alatmd) > 40 U/L = cytosol (foie +/- muscles) 

@@ -1,5 +1,5 @@
 # chd7
-
+#article #auragen 
 
 
 Remaniement complexe en génome, non vu en ACPA (trop petit) et manqué en panel CHARGE. Trop petit pour Bionano

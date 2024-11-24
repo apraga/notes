@@ -1,5 +1,5 @@
 # mslk
-
+#bactério 
 
 
 MLSK (Macrolides-Lincosamide-Streptogramine-Kétolide): modification cible++, efflux, protection ribosomale

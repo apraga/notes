@@ -1,5 +1,5 @@
 # γGT (gammaglutamyl-transférase)
-
+#biochimie 
 
 
 Origine hépatique pour l'enzyme circulante (+ pancréas, reins, rate, poumon, prostate).

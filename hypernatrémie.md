@@ -1,5 +1,5 @@
 # hypernatrémie
-
+#biochimie #néphro 
 
 
 **déshydratation extracellulaire** 

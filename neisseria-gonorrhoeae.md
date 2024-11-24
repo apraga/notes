@@ -1,5 +1,5 @@
 # neisseria gonorrhoeae
-
+#bactério #bactérie 
 
 
 - Cocci gram négatif 

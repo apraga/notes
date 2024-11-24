@@ -1,5 +1,5 @@
 # pseudomonas aeruginosa
-
+#bactério #bactérie 
 
 
 - Bacille Gram négatif, très mobile (ciliature polaire !) 

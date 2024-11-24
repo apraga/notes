@@ -1,5 +1,5 @@
 # mycoplasmes
-
+#bactério #bactérie 
 
 
 

@@ -1,5 +1,5 @@
 # purpura thrombopénique immunologique
-
+#hémato 
 
 
 [thrombop%c3%a9nie.md](#thrombopc3a9niemd) périphérique, isolée, auto-immune

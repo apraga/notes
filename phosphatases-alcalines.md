@@ -1,5 +1,5 @@
 # phosphatases alcalines
-
+#biochimie 
 
 
 marqueur [cholestase.md](#cholestasemd) hépatique (défaut écoulement biliaire) mais non spécifique

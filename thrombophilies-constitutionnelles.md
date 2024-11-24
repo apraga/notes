@@ -1,5 +1,5 @@
 # thrombophilies constitutionnelles
-
+#hémostase 
 
 
 Hypercoagulation du à des déficits en inhibiteur de la coagulation 

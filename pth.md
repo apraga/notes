@@ -1,5 +1,5 @@
 # pth
-
+#biochimie 
 
 
 - Synthétisé cellules parathyroïdienne en réponse à diminution calcémie (capteur dans les cellules parthyroïdes) 

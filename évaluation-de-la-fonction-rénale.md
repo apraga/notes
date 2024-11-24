@@ -1,5 +1,5 @@
 # évaluation-de-la-fonction-rénale
-
+#biochimie #néphro 
 
 
 - C'est évaluer le débit de filtration glomérulaire (quantité de plasma filtré par le rein par unité de temps) 

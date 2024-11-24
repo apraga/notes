@@ -1,5 +1,5 @@
 # iso-électrofocalisation-des-igg-du-lcr
-
+#biochimie 
 
 
 - Montre la synthse intrathécale d'IgG (bandes oligoclonale) 

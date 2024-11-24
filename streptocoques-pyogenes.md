@@ -1,5 +1,5 @@
 # streptocoques pyogenes
-
+#bactério 
 
 
 - Cocci gram+ en chaînettes, capsulé, non sporulé, immobile 

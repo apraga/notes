@@ -1,5 +1,5 @@
 # thrombocytémie essentielle
-
+#hémato 
 
 
 Attention à la [polyglobuline-de-vaquez.md](#polyglobuline-de-vaquezmd) masquée

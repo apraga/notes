@@ -1,5 +1,5 @@
 # milieux de culture
-
+#bactério 
 
 
 - Gélose au sang = non sélectif. Pouvoir hémolytique 

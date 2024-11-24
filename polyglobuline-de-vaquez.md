@@ -1,5 +1,5 @@
 # polyglobuline de vaquez
-
+#hémato 
 
 
 Attention à la PV masquée par une [thrombocyt%c3%a9mie-essentielle.md](#thrombocytc3a9mie-essentiellemd) 

@@ -1,5 +1,5 @@
 # transthyrétine-pré-albumine
-
+#biochimie #nutrition #néphélémétrie 
 
 
 - synthèse foie,pancréas, LCR (plexus choroïde) 

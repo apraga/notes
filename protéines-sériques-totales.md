@@ -1,5 +1,5 @@
 # protéines-sériques-totales
-
+#biochimie 
 
 
 Diagpathologie foie, reins, troubles métaobliques/nutritionnels

@@ -1,5 +1,5 @@
 # cellules dendritiques
-
+#hémato 
 
 
 - présente antigènes processés en peptides dans les nœuds lymphatiques 

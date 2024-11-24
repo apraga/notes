@@ -1,5 +1,5 @@
 # shigella spp
-
+#bactério #bactérie 
 
 
 **Déclaration obligatoire si TIAC**

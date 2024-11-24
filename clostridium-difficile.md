@@ -1,5 +1,5 @@
 # clostridium difficile
-
+#bactério #bactérie 
 
 
 - Bacille gram positif à bout carré, spores subterminales 

@@ -1,5 +1,5 @@
 # hormones-thyroïdiennes
-
+#biochimie #nutrition 
 
 
 - Presque totalement lié aux protéines plasmatique (quasiment pas de fraction libre) 

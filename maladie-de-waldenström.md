@@ -1,5 +1,5 @@
 # maladie-de-waldenström
-
+#biochimie 
 
 
 - IgM monoclonale avec prolifération lympho-plasmocytaire > 10% 

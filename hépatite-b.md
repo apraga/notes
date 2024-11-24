@@ -1,5 +1,5 @@
 # hépatite b
-
+#viro 
 
 
 **Déclaration obligatoire si infection symptomatique** (Ag Hbs+, IgM anti HBc+)

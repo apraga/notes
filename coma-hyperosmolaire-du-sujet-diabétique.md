@@ -1,5 +1,5 @@
 # coma-hyperosmolaire-du-sujet-diabétique
-
+#biochimie #nutrition 
 
 
 Déshydratation globale et massive

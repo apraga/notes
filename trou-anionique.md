@@ -1,5 +1,5 @@
 # trou-anionique
-
+#biochimie 
 
 
 Na+ + K+ - Cl- - HCO3- = 16mmol/L +/- 4 

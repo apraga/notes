@@ -1,5 +1,5 @@
 # hyponatrémie
-
+#biochimie #néphro 
 
 
 **hyperhydratation intracellulaire** 

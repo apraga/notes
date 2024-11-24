@@ -1,5 +1,5 @@
 # thalassémies
-
+#hémato 
 
 
 Définitionanomalie génétique avec diminution/absence synthèse de chaine alpha ou beta globine **normale** (à comparer avec [$/dr%c3%a9panocytose.md](#drc3a9panocytosemd)

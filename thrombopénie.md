@@ -1,5 +1,5 @@
 # thrombopénie
-
+#hémato 
 
 
 - < 150G/L 

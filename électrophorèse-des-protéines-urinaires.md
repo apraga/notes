@@ -1,5 +1,5 @@
 # électrophorèse-des-protéines-urinaires
-
+#biochimie 
 
 
 Intérêttypage de la protéinurie -> condition biopsse rénale si atteinte glomérulaire sans cause évidente (diabète…) 

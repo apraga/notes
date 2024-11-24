@@ -1,5 +1,5 @@
 # alat
-
+#biochimie 
 
 
 - Cytosol des cellules hépatiques (musculaires) -> marqueur de cytolyse hépatique 

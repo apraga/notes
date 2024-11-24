@@ -1,5 +1,5 @@
 # parvovirus b19
-
+#viro 
 
 
 - tropisme précurseurs médullaire lignée érythroïde 

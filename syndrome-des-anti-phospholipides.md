@@ -1,5 +1,5 @@
 # syndrome des anti phospholipides
-
+#hémostase 
 
 
 aPL = Ce sont en fait des auto-anticorps anti-glycoprotéines affines pour les phospholipidest ( et non «contre» )

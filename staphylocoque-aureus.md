@@ -1,5 +1,5 @@
 # staphylocoque aureus
-
+#bactério 
 
 
 Cocci Gram+ en amasaérobie +/- anaérobie. Immobiles. non capsulé, non sporulé 

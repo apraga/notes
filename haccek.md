@@ -1,5 +1,5 @@
 # haccek
-
+#bactério #bactérie 
 
 
 Bacille gram neg croissance lente 

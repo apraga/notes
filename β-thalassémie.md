@@ -1,5 +1,5 @@
 # β thalassémie
-
+#hémato 
 
 
 Défaut production β-globine donc de l'hémoglobine dans un GRmicrocytose, hypochromie 

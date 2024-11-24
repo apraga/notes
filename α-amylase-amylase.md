@@ -1,5 +1,5 @@
 # α-amylase-amylase
-
+#biochimie 
 
 
 - Enzyme d’hydrolyse de l’amidon 

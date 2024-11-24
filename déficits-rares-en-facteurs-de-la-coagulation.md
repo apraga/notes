@@ -1,5 +1,5 @@
 # déficits rares en facteurs de la coagulation
-
+#hémostase 
 
 
 Sont exclus :[Hémophilies](#hc3a9mophiliesnorgmd) maladie-de-willebrand__hémostase.org}[Maladie de Willebrand] 

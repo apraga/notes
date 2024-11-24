@@ -1,5 +1,5 @@
 # myélome
-
+#biochimie 
 
 
 - prolifération plasmocytaire maligne avec soit une Ig entier soit une chaîne légère libre 

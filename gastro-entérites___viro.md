@@ -1,5 +1,5 @@
 # gastro entérites
-
+#bactério 
 
 
 Principale complication = déshydratation 

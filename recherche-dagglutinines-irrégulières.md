@@ -1,5 +1,5 @@
 # recherche dagglutinines irrégulières
-
+#hémato 
 
 
 - Allo-anticorps contre autre que antigènes autres que A et B (not.

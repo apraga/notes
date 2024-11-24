@@ -1,5 +1,5 @@
 # sinusite maxilliaire
-
+#bactério 
 
 
 Infection bactérienne d'1 ou plus cavité sinusiennes

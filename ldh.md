@@ -1,5 +1,5 @@
 # ldh
-
+#biochimie 
 
 
 Marqueur lyse cellulaire (non spécifique d'un tissu car 5 isonezyme)

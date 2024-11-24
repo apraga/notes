@@ -1,5 +1,5 @@
 # entérobactéries
-
+#bactério #bactérie 
 
 
 Groupe selon la résistance **naturelle** β-lactamine 

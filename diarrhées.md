@@ -1,5 +1,5 @@
 # diarrhées
-
+#bactério #viro 
 
 
 - 80% sont virales

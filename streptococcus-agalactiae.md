@@ -1,5 +1,5 @@
 # streptococcus agalactiae
-
+#bactério #bactérie 
 
 
 Cocci Gram+ immobiles non sporulé

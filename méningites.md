@@ -1,5 +1,5 @@
 # méningites
-
+#viro #bactério 
 
 
 Voir [enc%c3%a9phalite.md](#encc3a9phalitemd) et [my%c3%a9lite.md](#myc3a9litemd):

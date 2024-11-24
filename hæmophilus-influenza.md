@@ -1,5 +1,5 @@
 # hæmophilus influenza
-
+#bactério #bactérie 
 
 
 Bacille Gram négatif

@@ -1,5 +1,5 @@
 # pancréatite-aigüe
-
+#biochimie #hepato 
 
 
 - Inflammation pancréas 

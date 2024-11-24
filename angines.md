@@ -1,5 +1,5 @@
 # angines
-
+#bactério 
 
 
 - Virale 60-80% 

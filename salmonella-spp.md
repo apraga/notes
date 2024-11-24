@@ -1,5 +1,5 @@
 # salmonella spp
-
+#bactério #bactérie 
 
 
 Bacilles à Gram négatif mobile (ciliature péritriche)

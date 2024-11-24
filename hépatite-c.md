@@ -1,5 +1,5 @@
 # hépatite c
-
+#viro 
 
 
 Charge virale: augmente vite et fort mais diminue à 0 sous traitement 

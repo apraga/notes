@@ -1,5 +1,5 @@
 # vih
-
+#viro 
 
 
 Patient connu: western blot peut être négatif ! Épidémio: VIH2 = 2% 

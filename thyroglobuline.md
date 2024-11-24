@@ -1,5 +1,5 @@
 # thyroglobuline
-
+#biochimie #nutrition 
 
 
 - Faiblement présent dans la circulation générale 

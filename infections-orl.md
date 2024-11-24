@@ -1,5 +1,5 @@
 # infections orl
-
+#viro #bactério 
 
 
 - Rhino-pharyngite[$/ent%c3%a9rovirus.md](#entc3a9rovirusmd) [$/grippe.md](#grippemd)

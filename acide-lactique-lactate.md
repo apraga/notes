@@ -1,5 +1,5 @@
 # acide-lactique-lactate
-
+#biochimie 
 
 
 Évalue état de choc (hypoxie métabolique)

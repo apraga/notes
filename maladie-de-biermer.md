@@ -1,5 +1,5 @@
 # maladie-de-biermer
-
+#biochimie 
 
 
 Auto-immune rare avec malabsorption de B12 du à un défaut de sécrétion de facteur intrinsèque

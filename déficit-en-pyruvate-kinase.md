@@ -1,5 +1,5 @@
 # déficit en pyruvate kinase
-
+#hémato 
 
 
 Très rare

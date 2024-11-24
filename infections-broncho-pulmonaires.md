@@ -1,5 +1,5 @@
 # Infections broncho pulmonaires
-
+#viro #bactério 
 
 
 - Bronchiteinfection des bronches. Toux+/- fièvre. Virale le plus souvent, diagnostic clinique. Si persistecoqueluche ? 

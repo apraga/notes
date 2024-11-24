@@ -1,5 +1,5 @@
 # helicobacter pylori
-
+#bactério 
 
 
 Gram négatif, spiralée, flagellée

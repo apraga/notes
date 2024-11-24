@@ -1,5 +1,5 @@
 # bicarbonates
-
+#biochimie 
 
 
 CO2 + H2O ~~> HCO3~~ + H+

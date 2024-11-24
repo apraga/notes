@@ -1,5 +1,5 @@
 # streptocoque
-
+#bactério #bactérie 
 
 
 - Infections graves = _pyogenes_, _pneumoniae_. 

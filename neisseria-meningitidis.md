@@ -1,5 +1,5 @@
 # neisseria meningitidis
-
+#bactério #bactérie 
 
 
 - Diplocoque Gram - aérobie. 

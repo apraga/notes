@@ -1,5 +1,5 @@
 # encéphalite
-
+#bactério 
 
 
 Voir [Méningites](#mc3a9ningitesnorgmd),: méningo-encéphalite rapidement progressive 

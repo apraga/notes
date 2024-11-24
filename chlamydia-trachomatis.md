@@ -1,5 +1,5 @@
 # chlamydia trachomatis
-
+#bactério #bactérie 
 
 
 - **1ere cause d'IST** 

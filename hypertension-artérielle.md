@@ -1,5 +1,5 @@
 # hypertension-artérielle
-
+#biochimie #nutrition 
 
 
 [HTA secondaire](#hta-secondairenorgmd) 

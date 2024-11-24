@@ -1,5 +1,5 @@
 # streptococcus pneumoniae
-
+#bactério 
 
 
 Cocci gram+ immobile 

@@ -1,5 +1,5 @@
 # déficit en G6PD
-
+#hémato 
 
 
 Enzymopathie la plus fréquente dans le monde

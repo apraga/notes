@@ -1,5 +1,5 @@
 # diabète
-
+#biochimie #nutrition 
 
 
 Suspicion de diabète aux urgences

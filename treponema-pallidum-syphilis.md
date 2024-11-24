@@ -1,5 +1,5 @@
 # treponema pallidum syphilis
-
+#bactério 
 
 
 Spirochète hélicoïdal/spiralé, mobile

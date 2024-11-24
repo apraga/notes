@@ -1,5 +1,5 @@
 # campylobacter jejuni
-
+#bactério #bactérie 
 
 
 Bacille mobile à Gram négatif, spiralée/incurvée

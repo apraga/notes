@@ -1,5 +1,5 @@
 # endocardites infectieuses
-
+#bactério 
 
 
 - Rare (5cas/million), grave (20% décès) 

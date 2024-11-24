@@ -1,5 +1,5 @@
 # potassium
-
+#biochimie #néphro 
 
 
 Norme 3.5-4.5mmol/L

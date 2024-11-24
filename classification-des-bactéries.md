@@ -1,5 +1,5 @@
 # classification des bactéries
-
+#bactério 
 
 
 - positif si paroi épaisse de peptidoglycane-> coloration persiste 
