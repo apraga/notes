@@ -212,3 +212,36 @@ workout {
     serie 10
   }
 }
+workout {
+  date "2024-11-23"
+  muscle-up {
+    serie  1 1 1
+    serie  3 1 1
+    serie  3 1
+  }
+  pistols {
+    serie 4
+    serie 4
+    serie 4
+  }
+  "tucked planche" {
+    serie 3 3
+    serie 3 3
+    serie 3 2
+  }
+  "pushed-up tucked" {
+    series 3 3 3 
+    series 4 3 3
+  }
+  series 4 3 3
+  extension {
+    serie 22
+    serie 22
+    serie 22
+  }
+  compression {
+    serie 10
+    serie 10
+    serie 10
+  }
+}
