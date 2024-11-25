@@ -1,0 +1,51 @@
+@document.meta
+title: acraa
+description: 
+authors: alex
+categories: [ 
+  cyto 
+  réunion 
+]
+created: 2024-11-21T14:39:36+0100
+updated: 2024-11-21T15:41:12+0100
+version: 1.1.1
+@end
+
+* 2024-11-21
+** Faux positifs en FISH prénatal
+   Exemple d'une fausse T18 : sonde sur centromère chr2
+   Très rare mais possible : 
+   - chr18 -> 2 : https://pubmed.ncbi.nlm.nih.gov/19911414/
+   Sonde commericale pour résoudre ce problème ?
+   Lyon fait de la QF-PCR
+
+** Trisomie 22 en mosaïque
+   - tropho direct : homogène
+   -- cultire : mosaïque 1/13
+   - LA: 
+   -- non cultivé : 80/100 fish
+   -- cultivé  : 31 clones de 2 origienes, 46-Y
+   -- ACPA normale
+      Charles : études sur autopsie = tout est possible...
+   Au final: on est embêté...
+** Mosaïque et ACPA
+   Génome non-inférieur à l'ACPA sur CNV non en mosaïque
+   Bonne illustration mosaïque : voir {:$/mosaïque:}
+   ACPA détecte mosaïque > 20%
+** inv dup del
+   2 causes desequilibrées de novo
+   ~ Sauvetage après trisomie (NHEJ) : non disjonction en meiose
+   ~ réparation de délétion (NHEJ) : pré- ou post-zygotique
+   -- chr dicentrique -> réparation
+   --- inv dup del
+   -- ou délétion
+   --- transloc déséquiliréns simples 2 chr diff)sen
+   --- inv déséqulibrès simples
+       Lire article revue inv del dup
+** Gain Xq22.1
+*** Nomenclature ISCN 2024
+    - espaces : jamais sauf 
+    -- entre technique et formule
+    -- entre 2 abréviations non séparées par '.' ou ',' 
+    -- autour de nuc etc
+    - nombre de copies 'x' est en dehors de la parenthèse
