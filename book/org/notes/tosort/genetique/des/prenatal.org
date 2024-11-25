@@ -1,0 +1,137 @@
+#+title: Prenatal
+#+author: Pr Sylvie Odent
+#+date:  <2022-06-28 Tue>
+* DPN
+** DNP chromosomique
+indication cpam:
+- risque prévisible
+  - anomalie chromosomique parentale
+  - ATCD grossese enfant avec anomalie chromosomique ou génique
+  - diag de sexe pour les malaides liée à l’X
+- risque non prévisible
+  ???
+** T21
+  Risque de T21 à la naisance: exponentiel : 0.004 à 38A
+*** Marqueurs (anciens)
+  - 1er tri : PAPPA-A diminué et fβhCGH augmenté
+  - 2er tri : αfoetoprot diminé, fβhCGH augmenté, uE3 (oestriel) diminué, inhibine A augmenté
+! Non obligatoire -> consentement par écrit !
+Limite:
+- précision de la datation grossesse (écho)
+- diabète
+- origine ethnique (ref = caucasien)
+- variation selon poids de la mère
+- géméllité
+*** Écho
+Faisceau d’argument
+- CN augmenté/hygroma ->
+- RCIU/fémur Court
+- malfo cardiaque
+- malfo digestive
+- ...
+*** Marqueurs (nouveaux)
+1er tri = âge maternel + marqueur série + clarté nucale (95% ont une clarté nucale augmenté avec médiane à 3.4 contre ))
+(clarté nucale due à anomalie sytème lymphatique)
+Performance à 21SA:
+taux détection = 90% avec faux positif 5%
+
+1/1000
+Consentement de la femme (non obligatoire pour le conjoint) ->_toujours vérifier le caryo foetal (pas d’IMG sur DPNI)
+Remboursement DNPI: risque [1/51, 1/1000]
+*** ACPA
+appel écho
+CN >_3.5
+RCI < 3ep sans étio
+sd malfo
+«petits signes»
+** Signes d’appel
+ACPA = +3-6% de dia si 1 malfo, +10% si plusieurs anomalies
+exmoe prénat : +6 si 1 anomalie, +20% si anomalies multiples
+NB: revue par Lazier 2021 (Lancet)
+** Exome prénatal
+seulement si peut faire changer d’avis la patiente !!
+Indication:
+- sd polymalfo ou 2 malfo
+- 1 malfo + petit signes écho (RCIU modéré, dysmorphie)
+- anomalie CC
+- anasarque sans étiologie
+*** exemple : malfo cardiaque
+isolé : 11% de diag en exome
+associé : 37%
+
+exome trio prénat Cerba :
+22% diag
+
+NB: à Rennes
+
+* DPNI
+Justification : excès d’amniocentèse, faux positif
+
+ADNF foetal < 10% de l’ADN total dans le plasma total de la mère ("ADN foetallibre circulant")
+-> détermination du sexe (SRY), rhésus D foetal
+
+2 méthodes :
+1. SNV
+2. cartographie fragments ADN
+ex: surreprésentation ADN foetal si aneuploïdie
+
+** Efficacité
+conçu T21 -> le plus sensible (99.1-100%), spécifique 99.7-100%
+Autres : T12 : sensibilité 97-100 (mais plus diag à l’écho)
+T13 : 78.6-100% (mais plus diag à l’écho)
+** Limite
+faux positif 2%
+- T21 dans le trophoblaste uniquement = le plus courant (discordant foeto-placentaire)
+- cancer
+- mosaïque maternelle
+  faux négatif
+faux négatif
+- T21 dans foetus uniquement (discordant foeta-placentaire)
+echecs : fraction foetale basse
+
+NB: carté nucal >= 3.5mm
+** Évolution en cours :
+DPNI pour monogénique (muco, NF1)
+
+** Prélèvement
+*** choriocentèse 10-14SA = biopsie villosité choriale
+placentocentose 15-35SA
+risque FCS 1-1.5%, contamination maternelle, discordant foeto-placentaire
+*** amniocentèse 14-30SA
+cellules amniotique reflète plus le foetus
+Risque FCS plus faible 0.5%
+Seul inconvénient = plus tardif
+
+liquide amniotique : cellules respiratoire, urine, arbre respi...
+*** Ponction de sang foetal = 22-38SA
+Quasiment plus fait
+FCS 1-2%
+** IMG
+Demande du couple et nom du médecin
+Accordé ou refusé par CPDPN agrée : signature par 2 médecins dont 1 exerçant dans le CPDPN
+
+* Diag pré-implantatoire
+Anomalie génétique avant implantation
+
+FIV:
+- surtout hypofertilité avec anomalie chromosomique praentale
+- option pour couple à risque sans trouble reproductif
+
+Embryon de 3 jours ->_analyse sur 1/2 cellules
+- mise à poin technique selon les mutation ou anomalies chromosomique parental
+- Quelques équipes savent faire
+Diag en 12-24h
+Intérêt = transfert embryons sans
+
+25% de réussite
+
+5 centres agrés : Clamart, Montpieller, Strasbourg, Nantes, Grenoble
+Délai de prise en charge : 2 ans
+** Même indication que DPN
+Prescription : travail en amont avant d’envoyer le coupe au niveau local/centre
+
+Contraintes
+- IOP (ttt hormonal)
+- il faut aller dans le centre pour la FIV/DPI
+
+200 enfants/an en France

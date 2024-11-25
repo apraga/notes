@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       ae2809c4-75c3-4c3d-be5f-adcd81900c9f
+:END:
+#+title: Vue d'ensemble du pipeline
+#+filetags: auragen pipeline
+
+[[https://auragen.atlassian.net/wiki/spaces/~7120201ca2598be5ef4936a1110033f28f4fed/pages/1532198915/Vue+d+ensemble+du+pipeline][Image]]
+
+Description:
+- [[id:cc54e449-12a7-41d6-832b-33937255be92][Contrôle qualité]] et [[id:117f7970-2579-48e1-b7b0-026b4c9fd0a6][Avertissement]]
+- [[id:ee261ae7-3511-46e0-8c9a-ad4318850104][Appel de variant]]
+- Cas particuliers : [[id:30db1b6c-6f95-40db-a363-202b20412d4f][Outils pour la détection de variants]] , [[id:92f64d28-a582-484b-8181-ea04c13d850d][ROH]]
+- [[id:0b163c10-63c2-44e0-b694-f3749139a3d5][Annotations]]
+- [[id:fb97e927-2a25-4733-95a2-c4f520c3c711][Sélection des variants]]
+- [[id:d82ebf38-feca-4409-950f-b208f67fae0d][Priorisation]]
+- [[id:6698b607-38bb-47de-a729-e2e5ad69b94f][Reportmonster]]
+- [[id:4b189666-2c75-4a9b-b95a-00343cb223d0][Aurapport]]
+
+[[id:280a19e2-c571-41dd-b339-5fe9723cefbe][Notations]]
+
+Technique
+- [[id:82df331a-bf10-4099-aa1b-24b4dd637a74][Mises à jour]]
+- [[id:587dc7c4-1dd5-4068-8d24-6e3825f01e66][Validation]]
+
+Limites et améliorations
+[[id:cef32d57-e0a3-4b76-afd2-326830576462][Problèmes connus]]
+[[id:8a2278b0-14de-4b46-8770-5f1f9015032f][Améliorations pipeline]]

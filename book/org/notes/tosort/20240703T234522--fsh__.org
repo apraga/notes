@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       e93a2599-8f0f-42aa-81f4-e276917dd322
+:END:
+#+title: FSH
+#+filetags: biochimie immuno
+Indication: fertilité

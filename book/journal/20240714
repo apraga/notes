@@ -1,0 +1,6 @@
+* 2024-07-14
+** 21:23 tensoflow-hub
+Seulemen une "wheel" sur pypi.
+Idéalement, il faudrait utiliser bazel pour générer la wheel mais on a un problème de dépendence.
+K900: suggère de contacter le maintainer.
+En attendant, on utilise wheel

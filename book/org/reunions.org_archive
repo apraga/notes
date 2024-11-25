@@ -1,0 +1,959 @@
+#    -*- mode: org -*-
+
+
+Archived entries from file /home/alexis/org/reunions.org
+
+
+* DONE Regarder génome IOP [4/4]
+SCHEDULED: <2024-05-22 mer.> DEADLINE: <2024-05-24 ven.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-05-29 mer. 13:35
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_OLPATH: RVI
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: rvi
+:END:
+:LOGBOOK:
+CLOCK: [2024-05-22 mer. 14:59]--[2024-05-22 mer. 15:13] =>  0:14
+CLOCK: [2024-05-22 mer. 14:08]--[2024-05-22 mer. 14:10] =>  0:02
+CLOCK: [2024-05-22 mer. 11:35]--[2024-05-22 mer. 13:46] =>  2:11
+:END:
+- [X] MR-2304725 : négatif ?
+  Aurapport
+  - GALT: récessif et variant htz, pas de clinique de galactosémie ? (plutôt à la naissance)
+  - GJB2: non compatible clinique
+  Seqone :
+  - intronique NR5A1 : difficile d'en conclure quelque chose...
+  SV : évènement complexe chr9:138145330 (9q34.3) chr10:79064 (10p15.3)  mais ségrège
+- [X] MR-2101776
+  2 variants MCM8 : un touchant épissage et un tronquant mais gène pLI= 1. Clinique en faveur...
+  Pas grand chose sur decipher
+  SNV: inv 7q touchant RBM28 [[https://omim.org/clinicalSynopsis/table?mimNumber=612079][OMIM]]  mais hérité père asympto
+- [X] MR-2305313 : neg ?
+  - 2 variants HSPG2 écartés sur clinique (gènes récessif)
+- [X] MR-2304151 : neg ?
+  ERCC6 VOUS- ? (seqone) regarder dans decipher
+
+/Créé le/ [2024-05-17 ven. 17:12]
+
+* DONE RVI IOP [[https://univ-grenoble-alpes-fr.zoom.us/j/94124867955?pwd=WGg2ZDRnZU45U29oQUdla2NRaDFJZz09][lien zoom]]
+DEADLINE: <2024-05-24 ven. 08:30>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-05-29 mer. 13:35
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_OLPATH: RVI
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: rvi
+:END:
+/Créé le/ [2024-05-17 ven. 17:13]
+
+* DONE Revoir variants loupé CHD3
+CLOSED: [2024-05-17 ven. 18:01] SCHEDULED: <2024-05-17 ven.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-05-29 mer. 13:35
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_OLPATH: RVI
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: rvi
+:END:
+/Créé le/ [2024-05-17 ven. 18:00]
+
+* DONE Préparer axes 3
+SCHEDULED: <2024-05-29 mer.> DEADLINE: <2024-05-30 jeu.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-03 lun. 10:08
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:END:
+/Créé le/ [2024-05-16 jeu. 17:30]
+- Image vue d'ensemble pipeline
+
+* DONE 22q11
+SCHEDULED: <2024-05-24 ven. 13:00>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-03 lun. 10:08
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:END:
+  /Entered on/  [2024-05-24 ven. 09:51]
+
+* DONE Réunion biologistes Lyon
+SCHEDULED: <2024-05-24 ven. 14:00>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-03 lun. 10:08
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:END:
+  /Entered on/  [2024-05-24 ven. 17:03]
+
+* DONE Réunion Julien interprétation génome
+SCHEDULED: <2024-05-29 mer. 14:00>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-03 lun. 10:08
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:END:
+  /Entered on/  [2024-05-28 mar. 09:33]
+
+* DONE Regarder à nouveau dossiers réunion Jérémie [3/3]
+DEADLINE: <2024-05-31 ven. 17:00>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-03 lun. 10:08
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:END:
+:LOGBOOK:
+CLOCK: [2024-05-29 mer. 11:01]--[2024-05-29 mer. 11:39] =>  0:38
+CLOCK: [2024-05-29 mer. 09:49]--[2024-05-29 mer. 10:15] =>  0:26
+:END:
+  /Entered on/  [2024-05-29 mer. 09:30]
+- [X] MR-2301991 : rien vu expliquant tout le phénotype (juste obésité)
+- [X] MR-2304917 : SLC25A24 convaincant mais jumeau sain porteur donc non (vu avec Julien)
+- [X] MR-2303537
+  OTX2 échappe NMD fin de gène, ok super pour clinique ophtalmo (microphtalmie +  rétinopathie et clinvar patho sur ce phénotype) mais n'explique pas le reste
+ SLC26A5 : htz compositie pour surdité ? sur score bioinfo
+
+* DONE Interprétation avec Wiam
+SCHEDULED: <2024-05-30 jeu. 17:00>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-03 lun. 10:08
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:END:
+  /Entered on/  [2024-05-29 mer. 10:05]
+
+* DONE Interprétation 3 génomes avec Jérémy et Julien
+SCHEDULED: <2024-05-31 ven. 17:00>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-03 lun. 10:08
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:END:
+Entered on [2024-05-29 mer. 17:22]
+
+* DONE Axe 3
+SCHEDULED: <2024-05-30 jeu. 09:00>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-03 lun. 10:08
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:END:
+Entered on [2024-05-30 jeu. 10:19]
+
+* DONE Regarder génome IOP [4/4]
+SCHEDULED: <2024-05-22 mer.> DEADLINE: <2024-05-24 ven.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-06 jeu. 17:37
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_OLPATH: RVI
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: rvi
+:END:
+:LOGBOOK:
+CLOCK: [2024-05-22 mer. 14:59]--[2024-05-22 mer. 15:13] =>  0:14
+CLOCK: [2024-05-22 mer. 14:08]--[2024-05-22 mer. 14:10] =>  0:02
+CLOCK: [2024-05-22 mer. 11:35]--[2024-05-22 mer. 13:46] =>  2:11
+:END:
+- [X] MR-2304725 : négatif ?
+  Aurapport
+  - GALT: récessif et variant htz, pas de clinique de galactosémie ? (plutôt à la naissance)
+  - GJB2: non compatible clinique
+  Seqone :
+  - intronique NR5A1 : difficile d'en conclure quelque chose...
+  SV : évènement complexe chr9:138145330 (9q34.3) chr10:79064 (10p15.3)  mais ségrège
+- [X] MR-2101776
+  2 variants MCM8 : un touchant épissage et un tronquant mais gène pLI= 1. Clinique en faveur...
+  Pas grand chose sur decipher
+  SNV: inv 7q touchant RBM28 [[https://omim.org/clinicalSynopsis/table?mimNumber=612079][OMIM]]  mais hérité père asympto
+- [X] MR-2305313 : neg ?
+  - 2 variants HSPG2 écartés sur clinique (gènes récessif)
+- [X] MR-2304151 : neg ?
+  ERCC6 VOUS- ? (seqone) regarder dans decipher
+
+/Créé le/ [2024-05-17 ven. 17:12]
+
+* DONE RVI IOP [[https://univ-grenoble-alpes-fr.zoom.us/j/94124867955?pwd=WGg2ZDRnZU45U29oQUdla2NRaDFJZz09][lien zoom]]
+DEADLINE: <2024-05-24 ven. 08:30>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-06 jeu. 17:37
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_OLPATH: RVI
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: rvi
+:END:
+/Créé le/ [2024-05-17 ven. 17:13]
+
+* DONE Revoir variants loupé CHD3
+CLOSED: [2024-05-17 ven. 18:01] SCHEDULED: <2024-05-17 ven.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-06 jeu. 17:37
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_OLPATH: RVI
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: rvi
+:END:
+/Créé le/ [2024-05-17 ven. 18:00]
+
+* DONE Diapos clinique [7/7]
+DEADLINE: <2024-05-31 ven. 14:30>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-06 jeu. 17:37
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_OLPATH: RVI
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: rvi
+:END:
+  /Entered on/  [2024-05-28 mar. 09:15]
+    - [X] MR-2401132 à compléter avec CR génétique ? non trouvé
+    - [X] MR-2401482
+    - [X] MR-2401357 manque CR génétique
+    - [X] MR-2400284 discuté 14 juin
+    - [X] MR-2404788 à récupérer sur hygen mais plus d'accès ??
+    - [X] MR-2400248 idem
+    - [X] MR-2400955 idem
+
+
+* DONE Regarder dossiers Jérémie [5/5]
+CLOSED: [2024-06-07 ven. 15:36] SCHEDULED: <2024-06-07 ven. 16:00> DEADLINE: <2024-06-07 ven. 16:00>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-11 mar. 15:27
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:END:
+  /Entered on/  [2024-05-31 ven. 19:21]
+** DONE MR-2001133 rien
+CLOSED: [2024-06-06 jeu. 12:59]
+** DONE MR-2303288 VOUS dup NCKAP1 rendue VOUS
+CLOSED: [2024-06-07 ven. 11:41]
+- VOUS KMT2D : score patho, mélange faux-sens mais hérité du père et la mère a une DI + retard. Kabuki : versions sans dysmorphie typique ni malfo ?
+- VOUS- sur GSPG2 ? Clinique colle mais gène peu connu
+- ARID2: clinique ne colle pas ? DI 7 petite taille + di seule, pas dysmorphie coffin siris
+
+  CNV :
+  - dup PIK3R1 = fausse ?
+
+  - dup NCKAP1 = rapéporté dans la DI mais pert de fonmciton (pHalpo 0.56)
+** DONE MR-2303537 OTX2
+CLOSED: [2024-06-07 ven. 11:57]
+SLC26A5 2 VOUS- (?) pour surdité
+** DONE MR-2301275 rien
+CLOSED: [2024-06-07 ven. 15:06]
+PUF60 : VOUS avec VAF 20%, clinique peu spécifique, score bioinfo peu spécifique, début gène,, peu connu, de novo
+
+KIAA1109: un VOUS mais autre variant non convaincant
+NMNAT1: récessif, 2 clinvarpatho pour amarose de Leber -> pas d'examen ophtalmique
+
+Seqone pdzd7 : clinique ne colle pas
+** DONE MR-2401268 rien
+CLOSED: [2024-06-07 ven. 15:36]
+seqone non fait
+
+* DONE Point Jérémie 5 dossier
+CLOSED: [2024-06-07 ven. 17:37] SCHEDULED: <2024-06-07 ven. 16:00>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-11 mar. 15:27
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:END:
+  /Entered on/  [2024-05-31 ven. 19:21]
+
+* DONE Visio interCHU Biomnis
+CLOSED: [2024-06-07 ven. 11:25] SCHEDULED: <2024-06-07 ven. 10:30>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-11 mar. 15:27
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:END:
+Entered on [2024-06-06 jeu. 10:08]
+
+
+* DONE Lire génomes [4/4]
+DEADLINE: <2024-05-31 ven. 14:30>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-11 mar. 15:27
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_OLPATH: RVI Grenoble
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: grenoble rvi
+:END:
+  /Entered on/  [2024-05-28 mar. 09:16]
+  - [X] MR-2401132 diag loupé ? rien vu mais après discussion avec virgine TPR53K -> revoir
+    clinvar 4 sur acide aminé, clinvar 5 sur l'acide aminé adjacent )
+    Clinique différentes mais manque d'info
+    homozygote hérité de chaque parent
+    - curagenv2
+      - SCN2A : hérité père asympto, non compatible https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9005871/
+      - CACNA1A . hérité mère asympo
+      - DEPDC5
+      - VARS (en fait, VARS1) : clinique compatible mais AR sans 2e hit flagrant (2 intronique profond)
+    - seqone
+      - RANBP2 : VOUS  et clinique non en faveur (pas d'infection ?). En début de gène, faux-sens avec plutôt faux-sens rapportées mais score bioinfo peu en faveur
+  - [X] MR-2401482 rien revoir
+    aurapport : rien
+    seqone : NEK8 récessif sans 2e variant
+  - [X] MR-2401357 : VOUS sur DPP6 forme mild. Clingen : rôle dans neurodev "disputed", milieu de gène
+    - TANC2 VOUS- sur forme mild ? 1% cohorte, légère modification épissage, début de gène
+    - TRAPP9 récessif, bof, faux-sens fin de gène
+    - dup 1mb de 1q41 : bof, 2 gènes récessifs, 3 copies hérité mère clinique peu en faveur. RAB3GAP2 ptriplo 0.44
+  - [X] MR-2400284 VOUS sur DEAF1: qq scores en faveur, milieu de gène
+
+* DONE RVI
+SCHEDULED: <2024-05-31 ven. 14:30>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-11 mar. 15:27
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_OLPATH: RVI Grenoble
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: grenoble rvi
+:END:
+  /Entered on/  [2024-05-28 mar. 09:16]
+
+* DONE Formation VDM
+CLOSED: [2024-06-06 jeu. 16:29] SCHEDULED: <2024-06-06 jeu. 09:00>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-11 mar. 15:27
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:END:
+Entered on [2024-05-29 mer. 11:05]
+
+* DONE Vérifier diapos cliniques complètes :rvi:
+CLOSED: [2024-06-12 mer. 17:14] DEADLINE: <2024-06-14 ven. 14:30>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-24 lun. 11:47
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_OLPATH: RVI Grenoble
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: grenoble
+:END:
+Entered on [2024-06-03 lun. 11:24]
+
+* DONE Lire génomes [9/9]
+CLOSED: [2024-06-14 ven. 16:43] DEADLINE: <2024-06-14 ven. 14:30>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-24 lun. 11:47
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_OLPATH: RVI Grenoble
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: grenoble rvi
+:END:
+Entered on [2024-06-03 lun. 11:21]
+** DONE MR-2304788 déjà rendu
+CLOSED: [2024-06-14 ven. 09:05]
+** DONE MR-2400248 :
+CLOSED: [2024-06-14 ven. 10:17]
+- FRMPD4 : VOUS car faux-sens fin de gène, score bioinfo bénin, peu fréquent gnomad, hémizygote
+- TRIP12 : idem FRMPD4... hérité de la mère
+- KCNN3 : idem que les 2 autres mais qq score bioinfo en faveur (hérité mère)
+- SYNGAP : VOUS- ? faux-sens gène perte de fonction, clinique non en faveur (forme mild ??)
+
+ CNV:
+ - Xq42  RN113A: évènement complexe ? (del + inv ?)
+** DONE MR-2400955 rien
+CLOSED: [2024-06-14 ven. 14:25]
+- RNF2 gène peu connu, score bioinfo peu en faveur, hérité père atteint. VOUS ?
+- SEDT1B bof
+ vérif MAD      D
+
+** DONE MR-2300720 rien
+CLOSED: [2024-06-05 mer. 15:04]
+- DPH1 non clinvar conflicting, les rares patho sont faux-sens mais récessif sans 2e variant
+- FGFR1 non score bioinfo
+- POLR3A non score binfo
+- WDR81 idem
+- KI26A : 2 faux-sens pour maladie récessive mais score non en faveur (1 repêché dans seqone)
+** DONE MR-2400707 suspicion marfan patho FBN1 oc
+CLOSED: [2024-06-05 mer. 11:22]
+** DONE MR-2401534 : 2 VOUS
+CLOSED: [2024-06-05 mer. 11:55]
+- NEK8 non récessif -> regarder seqone: pas de 2e hit
+même faux sens  clinvar patho mais 0 étoile, score bioinfo en faveur
+zone bien conservée
+- HNRNPU VOUS : hérité, atteinte épissage, pli à 1 mais zone LOF gnomad. Clinique correspond partiellement DI+épileptic encéphalotpatie
+  Genereviews
+  - Cardiac abnormalities	30% (Septal defects are the most common)
+  - Renal anomalies	<10%
+  - Hyperventilation & apnea	Rare
+- HK1 VOUS, hérité, gène peu connu, score patho mais n'explique as les malformations
+omim "A few patients had scoliosis, hip dislocation, foot deformities, laryngotracheomalacia (the sibs), and/or mild nonspecific"
+- dup SYT1 non : triplo 0.68 clinique ne colle pas, problème sur les bornes ?, dans la cohorte
+** DONE MR-2401755 : 1 VOUS
+CLOSED: [2024-06-05 mer. 15:50]
+DEAF1 faux-sens patho decipher mais exclu bioinfo
+NIBPL exclut cohorte
+PCNT exclu clinique
+DCHS1 récessif sans second variant
+
+curagen v2: PRKAR1A intronique proche, score bioinfo, acrydysoses -> VOUS
+
+** DONE MR-2401840 class 4 NUS1
+CLOSED: [2024-06-05 mer. 16:21]
+scarb2 AR non 1 seul varant
+NUS1 : de novo, clinique colle, score bioinfo, non vu gnomad. Variant faux-sens déjà rapporté path
+** DONE MR-2401868 rien
+CLOSED: [2024-06-05 mer. 17:02]
+
+
+* DONE RVI
+CLOSED: [2024-06-14 ven. 16:43] SCHEDULED: <2024-06-14 ven. 14:30>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-24 lun. 11:47
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_OLPATH: RVI Grenoble
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: grenoble rvi
+:END:
+Entered on [2024-06-03 lun. 11:21]
+
+* DONE MR-2301514 CFTR htz
+CLOSED: [2024-06-19 mer. 18:05] DEADLINE: <2024-06-21 ven. 14:30>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-24 lun. 11:47
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_OLPATH: RVI Grenoble
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: grenoble rvi
+:END:
+:LOGBOOK:
+CLOCK: [2024-06-18 mar. 10:04]--[2024-06-18 mar. 10:12] =>  0:08
+:END:
+- NIPBL: non vu gnomad, score bioinfo peu en faveur, plutôt tronquant alors que faux-sens, hérité mère asympto, clinique ne colle pas (juste fente)... -> VOUS-
+- CFTR
+- DOCK6 : score bleu, plutôt missense patho decipher mais légère atteinte épissage, récessif -> non
+- DCHS1: valve mitrale, pas el phénotype et non décrit syndrome cimeter
+- FOXC1 vous moins ? qq score bionfo, peu présent gnomad, gène plutôt LOF, clinique ophtalmo + cardio mais pas exactement ça (- Atrial septal defect - Valvular defects - Patent ductus arteriosus)
+
+  CNV
+  - del HNRPNPC, article 2023: trouble neurodvev seul don non
+
+* DONE MR-2401889
+CLOSED: [2024-06-20 jeu. 12:03] SCHEDULED: <2024-06-20 jeu. 10:00> DEADLINE: <2024-06-21 ven. 14:30>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-24 lun. 11:47
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_OLPATH: RVI Grenoble
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: grenoble rvi
+:END:
+- SCN5A 3* UTR et l'autre intronique profond
+- TLR4 non connu, faux-sens fin de gène
+- *CRELD1* clinvar patho pour défaut septum ventriculair (fauxsens). Expliquerait cardio ? Gène peu connu decipher mais plusieurs faux-sens patho. Malaide domainter avec pénétrance imcomplète. Hérité mère. Classe 4? Article (paywall): retard de dev, épilepsie, hypotonie, infection. *ceux avec missens on diminution protinque dimimunée" mais "diminushed ability to induce craniofacial defect" https://pubmed.ncbi.nlm.nih.gov/37947183/
+   baz1b non connu score
+- LRRK1 : anomalie splice mais récessif sans 2e allèle
+
+  CNV
+  - *question* dup 34kb 2p12: touche quelque éléments encode -> on ne fait rien ?
+
+   Seqone
+   - RERE = insertion en phase. trouble neurodev + malfo mais seul cardio pourrait coller à priori. Clinvar benin
+   - HEPHL1 VOUS-  récesif, 2 variant avec bon scores, clini non en faveur, gène peu connu. Régurgitation mitral/tricsuspide pulmonaire colle pas. Mais en cis
+
+* KILL MR-2304879
+CLOSED: [2024-06-21 ven. 14:26] SCHEDULED: <2024-06-20 jeu. 11:00> DEADLINE: <2024-06-21 ven. 14:30>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-24 lun. 11:47
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_OLPATH: RVI Grenoble
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: KILL
+:ARCHIVE_ITAGS: grenoble rvi
+:END:
+- /SYNGAP1/ 3x gnomad, score bioinfo peu en faveur, hérité, rare faux-sens patho decipher, clinique colle (microcéphalie)
+- FBXO11 clinvar bénin
+- KAT5 non présent gnomad, neurobdev, score bionifo bof, gène peu connu faux-sens patho
+- IQSEC1 idem
+
+  seqone non fait
+  cnv, snv rien
+
+* KILL MR-2401943
+CLOSED: [2024-06-21 ven. 16:47] DEADLINE: <2024-06-21 ven. 14:30>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-24 lun. 11:47
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_OLPATH: RVI Grenoble
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: KILL
+:ARCHIVE_ITAGS: grenoble rvi
+:END:
+
+* DONE MR-2402030 inv CHD7
+CLOSED: [2024-06-18 mar. 14:49] DEADLINE: <2024-06-21 ven. 14:30>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-24 lun. 11:47
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_OLPATH: RVI Grenoble
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: grenoble rvi
+:END:
+Vu avec Véronique: diag = inversion CHD7
+- VOUS mosaïque CHD7 retrouvé mais moins intéressant
+
+* KILL MR-2401267
+CLOSED: [2024-06-21 ven. 16:47] DEADLINE: <2024-06-21 ven. 14:30>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-24 lun. 11:47
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_OLPATH: RVI Grenoble
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: KILL
+:ARCHIVE_ITAGS: grenoble rvi
+:END:
+
+* DONE Diapos cliniques
+CLOSED: [2024-06-17 lun. 16:10] DEADLINE: <2024-06-21 ven. 14:30>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-24 lun. 11:47
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_OLPATH: RVI Grenoble
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: grenoble rvi
+:END:
+  /Entered on/  [2024-06-14 ven. 17:43]
+
+* DONE Vérifier Diapos cliniques
+CLOSED: [2024-06-21 ven. 11:45] SCHEDULED: <2024-07-14 dim. 09:00> DEADLINE: <2024-06-21 ven. 14:30>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-24 lun. 11:47
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_OLPATH: RVI Grenoble
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: grenoble rvi
+:END:
+  /Entered on/  [2024-06-14 ven. 17:43]
+
+* DONE Slack Julien pour delinv (?) MR-20231276 chr12:99192348
+CLOSED: [2024-06-11 mar. 15:31] SCHEDULED: <2024-06-11 mar.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-24 lun. 11:47
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_OLPATH: RVI Montpellier
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: montpellier rvi
+:END:
+  /Entered on/  [2024-06-11 mar. 15:16]
+
+* DONE Mail pour se présenter
+CLOSED: [2024-06-12 mer. 14:59] SCHEDULED: <2024-06-12 mer.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-24 lun. 11:47
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_OLPATH: RVI Montpellier
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: montpellier rvi
+:END:
+  /Entered on/  [2024-06-12 mer. 11:15]
+
+* DONE Voir avec Jérémie dossier du 6 juin
+CLOSED: [2024-06-12 mer. 16:03] SCHEDULED: <2024-06-12 mer.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-24 lun. 11:47
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_OLPATH: RVI Montpellier
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: montpellier rvi
+:END:
+  /Entered on/  [2024-06-12 mer. 14:59]
+** DONE MR-2001133 rien: revoir clinique épilepsie ? ségrégation ne colle pas
+CLOSED: [2024-06-12 mer. 15:43]
+Julien : ras de probant, del CSFR2A max VIS, seqone DEPDC5
+
+** DONE MR-2303288 VOUS dup NCKAP1 rendue VOUS: validé
+CLOSED: [2024-06-12 mer. 15:08]
+** DONE MR-2303537 OTX2
+CLOSED: [2024-06-12 mer. 16:02]
+SLC26A5 2 VOUS- (?) pour surdité
+** DONE MR-2301275 discuté, staffé négativ, prélèvement père ?
+CLOSED: [2024-06-12 mer. 16:03]
+** DONE MR-2401268 rien
+CLOSED: [2024-06-07 ven. 15:36]
+
+* DONE 3 génomes Jérémie 2e lecture [3/3]
+CLOSED: [2024-06-14 ven. 14:02] SCHEDULED: <2024-06-13 jeu.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-24 lun. 11:47
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_OLPATH: RVI Montpellier
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: montpellier rvi
+:END:
+  /Entered on/  [2024-06-13 jeu. 10:09]
+** DONE MR-2301276
+CLOSED: [2024-06-14 ven. 12:34]
+rien si ce n'est la delinv (?) ANKSB1 https://www.nature.com/articles/s41467-019-11437-w
+peut coller sur clinique (partiellement) et démonré sur cellulaire
+** KILL MR-2301483
+CLOSED: [2024-06-14 ven. 12:34]
+** KILL MR-2302630 del connue
+CLOSED: [2024-06-14 ven. 12:34]
+
+* DONE Regarder rapidement génomes à discuter [7/7]
+CLOSED: [2024-06-14 ven. 17:35] DEADLINE: <2024-07-12 ven. 11:00>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-24 lun. 11:47
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_OLPATH: RVI Montpellier
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: montpellier rvi
+:END:
+Liens
+** DONE MR-2201152
+CLOSED: [2024-06-13 jeu. 17:27]
+MECP2 pour coller avec DI liée à l'X #30026eer
+IRM, EEG normales
+
+inst1 peu convaincant ?
+DLG3 : VOUS ?
+** DONE MR-2001133 rien
+CLOSED: [2024-06-13 jeu. 17:17]
+rien
+DEPDC5, il n'y a pas de trace d'épilepsie dans les documents sur Hygen. D'après une review récente, c'est plutôt de l'épilepsie focale sans DI ( https://www.sciencedirect.com/science/article/abs/pii/S1525505022001275 ). Veux-tu en discuter en RVI ? Sinon ça parlait de Silver-Russell dans les courriers mais je n'ai rien vu en faveur.  Après, c'est hérité de la mère et c'est le père qui a de l'épilepsi
+** DONE MR-2303537
+CLOSED: [2024-06-13 jeu. 17:17]
+SLC26A5 2 VOUS- (?) pour surdité
+** DONE MR-2301275 déjà staffé ras
+CLOSED: [2024-06-13 jeu. 17:19]
+** DONE MR-2303166
+CLOSED: [2024-06-13 jeu. 17:31]
+dup chrX:54449198-54460505 Xp11.22 = diag ? FGD1 - sd Aarskgo-scott
+SOX1 VOUS ?
+Ccl à discuter avec prescripteur
+** DONE MR-2301994 non fait
+CLOSED: [2024-06-14 ven. 17:35]
+** DONE MR-2401268 non fait
+CLOSED: [2024-06-14 ven. 17:35]
+
+
+* DONE RVI
+CLOSED: [2024-06-14 ven. 16:43] SCHEDULED: <2024-06-14 ven. 14:30>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-24 lun. 11:47
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_OLPATH: RVI Montpellier
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: montpellier rvi
+:END:
+Entered on [2024-06-14 ven. 14:01]
+
+* DONE MR-2302630
+CLOSED: [2024-06-19 mer. 14:44] DEADLINE: <2024-06-19 mer. 16:00>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-24 lun. 11:47
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_OLPATH: RVI Montpellier
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: montpellier rvi
+:END:
+- FLBN non : avec overlap phénotype mais 6/7 probablement bénin dans clinvar, score bioinfo peu en faveur, hérité mère... VOUS dans courrieur ? Plutôt perte de fonction
+- ATP6V1 : explique aplasie ongle, acide amine consèvre , à 6 AA de 2 fauxsense clinvar patho, score bioinfo mitigé, clinvar mitigé, 9 fois gnomad  -> VOUS
+- ACVR1 molécuraiment intéressant mais clinique non
+
+Ccl  à discuter de principe en staff. À signaler dans courrier
+
+* DONE MR-2301158
+CLOSED: [2024-06-19 mer. 17:13] DEADLINE: <2024-06-19 mer. 16:00>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-24 lun. 11:47
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_OLPATH: RVI Montpellier
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: montpellier rvi
+:END:
+SEDT1: 4x gnomad, gène plutôt perte de fonction ?, qq score bioinfo en faveur, retard de dev seul, hérité de la mère. VOUS- ?
+
+seqone : insertion POUF3 frameshift en début de protéine, codon stop prématurée, pli=1, de novo, clinique neurodepv
+revue : https://onlinelibrary.wiley.com/doi/10.1111/cge.14353 pas de clinique qui colle avec le reste -> non retrouvé igv car faux positif
+
+discuter POU3F3 non vu IGV -> faux positif à rendre
+Envoyé vers hygen
+
+* KILL Interprétation avec Jérémie + Julien
+CLOSED: [2024-06-19 mer. 11:00] SCHEDULED: <2024-06-19 mer. 16:00>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-24 lun. 11:47
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_OLPATH: RVI Montpellier
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: KILL
+:ARCHIVE_ITAGS: montpellier rvi
+:END:
+  /Entered on/  [2024-06-18 mar. 09:54]
+
+* DONE MR-2304637
+CLOSED: [2024-06-21 ven. 11:43] DEADLINE: <2024-06-20 jeu. 14:00>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-24 lun. 11:47
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_OLPATH: RVI Montpellier
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: montpellier rvi
+:END:
+  /Entered on/  [2024-06-20 jeu. 11:45]
+  - *KANSL1 VOUS-*, score bénin, hérité mère, faux-sens gene plutôt LOF. On reste en vous dans la classification
+  - FIPBP pas 2 allel
+  - /CRKL/ de novo a prioir, VOUS, cardio seul amis ne colle pas au phénotype (impliqué dans les value atrioventriculaire "targeted deletion of Crk and Crkl impeded the remodeling of endocardial cushions at the atrioventricular canal into the atrioventricular valves."
+https://www.ahajournals.org/doi/full/10.1161/JAHA.123.029683?rfr_dat=cr_pub++0pubmed&url_ver=Z39.88-2003&rfr_id=ori%3Arid%3Acrossref.org
+- /CACNA1A/ faux sens score binfo en faveur, gène plutôt faux-sens patho. Clinique ne colle pas (retard de dev semble constant chez faux-sens selon revue 2021 https://www.sciencedirect.com/science/article/pii/S109836002105142X?via%3Dihub, phénotype cardiaque rare)
+    )
+  a priori de novo
+
+  CNV: dup PRKAR1B phénotype intéressant mais intronique sans promoteur
+  SV: transloc (?) chr8 et 18avec présidspoition autisme mais intronique
+  autre interchromomique pas mais de gène d'intérêt
+
+  Ccl VOUS CACNA1C à discuter
+
+* DONE Diapos décomposition BLAT MR-2402030 : échec conclusion
+CLOSED: [2024-06-21 ven. 13:59] DEADLINE: <2024-06-21 ven. 14:00>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-24 lun. 11:47
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_OLPATH: RVI Montpellier
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: montpellier rvi
+:END:
+  /Entered on/  [2024-06-21 ven. 10:37]
+
+* DONE Vérifier MR-2301158 vers hygen (négatif)
+CLOSED: [2024-06-24 lun. 11:09] SCHEDULED: <2024-06-24 lun. 12:00>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-24 lun. 11:47
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_OLPATH: RVI Montpellier
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: montpellier rvi
+:END:
+  /Entered on/  [2024-06-21 ven. 11:43]
+  Bug lors de l'envoi : message d'erreur, présent couchdb puis non envoyé
+
+* DONE Mettre dans org-mode tous dossiers interprétés
+CLOSED: [2024-07-01 lun. 13:37] SCHEDULED: <2024-06-28 ven.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-07-01 lun. 14:23
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_OLPATH: RVI Montpellier
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: montpellier rvi
+:END:
+  /Entered on/  [2024-06-28 ven. 15:17]
+
+* DONE Prise en main outils d'interprétation
+CLOSED: [2024-06-11 mar. 10:33] SCHEDULED: <2024-06-11 mar. 09:30>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-07-02 mar. 11:44
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:END:
+  /Entered on/  [2024-05-28 mar. 15:25]
+
+* DONE Présentation nushell axe 3
+CLOSED: [2024-06-12 mer. 10:43] DEADLINE: <2024-06-13 jeu. 9h>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-07-02 mar. 11:44
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:END:
+:LOGBOOK:
+CLOCK: [2024-06-12 mer. 16:56]--[2024-06-12 mer. 17:20] =>  0:24
+CLOCK: [2024-06-12 mer. 09:56]--[2024-06-12 mer. 10:43] =>  0:47
+CLOCK: [2024-06-10 lun. 11:55]--[2024-06-10 lun. 12:29] =>  0:34
+:END:
+  /Entered on/  [2024-05-29 mer. 17:53]
+  XML
+  JSON
+  VCF ?
+
+* DONE Bioinformatique
+CLOSED: [2024-06-27 jeu. 14:39] SCHEDULED: <2024-06-27 jeu. 11:00>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-07-02 mar. 11:44
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:END:
+Entered on [2024-06-11 mar. 10:29]
+
+* DONE Réunion Jérémie et Lucas
+CLOSED: [2024-06-14 ven. 13:57] SCHEDULED: <2024-06-14 ven. 11:00>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-07-02 mar. 11:44
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:END:
+Entered on [2024-06-13 jeu. 17:14]
+
+* DONE Amis de la cytogénétique
+CLOSED: [2024-06-21 ven. 10:38] SCHEDULED: <2024-06-20 jeu. 14:00>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-07-02 mar. 11:44
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:END:
+Entered on [2024-06-14 ven. 17:02]
+
+* DONE API hour
+CLOSED: [2024-06-19 mer. 13:49] SCHEDULED: <2024-06-19 mer. 13:00>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-07-02 mar. 11:44
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:END:
+Entered on [2024-06-14 ven. 17:32]
+
+* DONE Véronique pour revoir présentation ACRAA
+CLOSED: [2024-06-19 mer. 18:05] SCHEDULED: <2024-06-19 mer. 16:00>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-07-02 mar. 11:44
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:END:
+Entered on [2024-06-19 mer. 11:01]
+
+* DONE Bioinformatique
+CLOSED: [2024-06-27 jeu. 14:39] SCHEDULED: <2024-06-27 jeu. 11:00>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-07-16 mar. 09:53
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:END:
+Entered on [2024-06-11 mar. 10:29]
+
+* PROJ Visite labo Lyon
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-07-16 mar. 09:53
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: PROJ
+:END:
+  /Entered on/  [2024-06-11 mar. 10:59]
+
+* DONE Réunion Jérémie et Lucas
+CLOSED: [2024-06-14 ven. 13:57] SCHEDULED: <2024-06-14 ven. 11:00>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-07-16 mar. 09:53
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:END:
+Entered on [2024-06-13 jeu. 17:14]
+
+* DONE API Hour Julien Gagneur
+SCHEDULED: <2024-07-03 mer. 13:00>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-07-16 mar. 09:53
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:END:
+Entered on [2024-06-19 mer. 13:48]
+
+* DONE Discussion Charles CHD7
+CLOSED: [2024-07-02 mar. 13:50] SCHEDULED: <2024-07-02 mar. 13:15>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-07-16 mar. 09:53
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:END:
+Entered on [2024-07-02 mar. 11:09]
+
+* DONE Répétition CHD7 Charles + Véroniques
+CLOSED: [2024-07-04 jeu. 16:41] SCHEDULED: <2024-07-04 jeu. 13:15>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-07-16 mar. 09:53
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:END:
+Entered on [2024-07-02 mar. 13:50]
+
+* DONE Curagen v2 et mise à jour Aurapport :bio:
+CLOSED: [2024-06-13 jeu. 16:43] SCHEDULED: <2024-06-13 jeu. 11:30>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-07-16 mar. 09:53
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_OLPATH: Réunion biologistes Auragen
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: auragen
+:END:
+Entered on [2024-06-11 mar. 10:28]
+** DONE [[file:slides/reunion_bio_20240613.org][Slides mise à jour aurapport]]
+CLOSED: [2024-06-12 mer. 12:00] DEADLINE: <2024-06-13 jeu. 11:30> SCHEDULED: <2024-06-11 mar.>
+:LOGBOOK:
+CLOCK: [2024-06-11 mar. 15:58]--[2024-06-11 mar. 18:16] =>  2:18
+:END:
+  /Entered on/  [2024-06-11 mar. 10:28]
+** DONE Capture d'écran mise à jour gnomad et transcript (Maelle)
+CLOSED: [2024-06-12 mer. 10:44] SCHEDULED: <2024-06-11 mar.>
+  /Entered on/  [2024-06-11 mar. 15:16]
+  http://172.25.219.87:8081/aurapport/app/#/variant/snv/14906-chr14_g.50723590G_A?case=MR-2304175  :aurapport:  :montpellier:
+** DONE Exemple de Julien avec dossier mercredid pour variant sans transcrit mane
+CLOSED: [2024-06-12 mer. 16:56] SCHEDULED: <2024-06-11 mar.>
+  /Entered on/  [2024-06-11 mar. 18:15]
+** DONE Compléter IGV
+CLOSED: [2024-06-12 mer. 11:15] SCHEDULED: <2024-06-11 mar.>
+  /Entered on/  [2024-06-11 mar. 18:15]
+** DONE Compléter popup avec annotation de variants
+CLOSED: [2024-06-12 mer. 11:15] SCHEDULED: <2024-06-11 mar.>
+  /Entered on/  [2024-06-11 mar. 18:16]
+
+* DONE Corrections virginie
+CLOSED: [2024-06-12 mer. 14:44] DEADLINE: <2024-06-12 mer. 18:00> SCHEDULED: <2024-06-12 mer.>
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-07-16 mar. 09:53
+:ARCHIVE_FILE: ~/org/reunions.org
+:ARCHIVE_OLPATH: Réunion biologistes Auragen
+:ARCHIVE_CATEGORY: reunions
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: bio auragen
+:END:
+  /Entered on/  [2024-06-12 mer. 12:00]

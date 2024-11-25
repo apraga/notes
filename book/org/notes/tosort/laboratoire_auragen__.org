@@ -1,0 +1,39 @@
+:PROPERTIES:
+:ID:       3cdf446e-e913-41c9-8dd7-0ec53bfa5104
+:END:
+#+title: Laboratoire Auragen
+* Historique
+• Avril 2015 : le Premier Ministre adresse une lettre de mission au Président de l'Alliance
+nationale pour les sciences de la vie et de la santé (Aviesan), afin d'examiner les conditions
+nécessaires à l’utilisation du séquençage à très haut-débit dans la pratique clinique.
+• Juin 2016 : L'Alliance nationale pour les sciences de la vie et de la santé (Aviesan) soumet au
+Premier Ministre, le Plan France Médecine Génomique 2025 (PFMG2025).
+Ce plan, piloté et soutenu par l'Etat, vise à positionner, en l’espace d’une décennie, la France
+dans le peloton de tête des pays engagés dans la médecine génomique.
+• Décembre 2016 : publication de l’appel à projet national
+• Mars 2017 : clôture de l’appel à projet
+• Juillet 2017 : Annonce des deux projets sélectionnés par un jury international et retenus pour
+le déploiement initial du plan:
+o SeqOIA (Sequencing, Omics, Information Analysis) : plateforme génomique de Paris
+Région
+o AURAGEN (Auvergne-Rhône-Alpes-Génomique) : plateforme génomique de la
+Région Auvergne-Rhône-Alpes
+• Janvier 2018 : approbation par le Directeur de l’ARS AuRA de la convention constitutive du
+Groupement de Coopération Sanitaire AURAGEN
+• Décembre 2018 : dépôt de l’autorisation d’activité de soin à l’ARS AuRA
+• Janvier 2019 : dépôt de la déclaration d’ouverture du laboratoire à l’ARS AuRA
+• Avril 2019 : Mise en œuvre de l’activité
+• Juillet 19 : Visite de conformité de l’ARS
+
+* Financement
+Crédi de la DGOS (direction générale de l'offre de soin) indépendaemment les hôpitax
+cotation : spécifique
+* Organisation adminsitrative
+- HCL, CHUGA, CHUSE, CHUCF, CLB, CJP = groupement (GCS) de droite privé
+- consortium Auaragen = universié Lyon 1, Jean Monnet, UGA, Clermont Ferrand, Synergie lyon Cancer, École des mines de Saint-Étienne -> enseignement, formation, évaluation
+
+  Important : le GCS peut être tenu légalement responsable du séquencage.
+* Calcul et stockage
+
+À grenoble, server appartiennet au GCS et mis à disposition.
+Hébergement physique : prestataire agréé hébergeur de donnée de santé.

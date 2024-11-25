@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       d87c8b18-ea67-4a81-ab7e-20c8fbca0123
+:END:
+#+title: Questions pour Julien
+
+* invdup MR-2203330
+rendu chr8:g.( ?_8,231,549)_10,888,653delins11,100,482_(12,035,836_?)inv
+ok pour inversion mais pourquoi dup ? Sur profondeur
+* trans MR-2303620
+variant SELENON
+pourquoi en trans si un /de novo/ et l'autre hérité du père ?
+sont assez proches
+
+* Interprétation
+  - comment interpréter régions LOF gnomAD dans decipher ?
+  - interprétation intronique sans atteinte épissage

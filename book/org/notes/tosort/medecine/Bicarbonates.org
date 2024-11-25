@@ -1,0 +1,82 @@
+​#biochimie # Localisation, rôle physiologique
+
+Les ions bicarbonates sont le tampon extracellulaire le plus important
+pour contrôler le pH sanguin, selon la réaction:
+\(CO_2 + H_2O \leftrightarrow H_2CO_3 \leftrightarrow H^{+} + HCO_3^-\)
+
+* Tissus/organes de production et d'élimination
+:PROPERTIES:
+:CUSTOM_ID: tissusorganes-de-production-et-délimination
+:END:
+Un excès d'ions \(H^+\) va se traduire selon la formule précédente par
+la formation de \(CO_2\) et \(H_2O\).
+
+Au contraire, un excès de base, par exemple \(NaOH\) va aboutir à la
+formation de bicarbonates :
+\(NaOH + H_2CO_3 \leftrightarrow NaHCO_3 + H_2O\)
+
+* Valeurs de référence (adulte)
+:PROPERTIES:
+:CUSTOM_ID: valeurs-de-référence-adulte
+:END:
+22-24mmol/L
+
+* Principe analytique de mesure
+:PROPERTIES:
+:CUSTOM_ID: principe-analytique-de-mesure
+:END:
+On rend le bicarbonate réel, *calculé* à partir de la pCO2 et du pH
+\[HCO3_{act} = 0,0307 \times pCO2 \times 10^{pH(37) - 6.105}\]
+
+*Bicarbonates Roche c503* la mesure se fait par photométrie par méthode
+enzymatique selon la double réaction
+\[PEP + HCO_3^- \rightarrow oxaloacétate + H_2PO_4^-\]
+\[Oxaloacétate + analogue NADH \rightarrow malate + analogue NAD + H^+\]
+
+* Principales interactions analytiques
+:PROPERTIES:
+:CUSTOM_ID: principales-interactions-analytiques
+:END:
+- Dilution si prélèvement sur cathéter
+- Tube EDTA, citrate, fluorure *proscrits*
+
+* Vigilance pré-analytiques et analytiques
+:PROPERTIES:
+:CUSTOM_ID: vigilance-pré-analytiques-et-analytiques
+:END:
+- Absence de caillot ou de bulle
+- Seringue/capillaire hépariné
+- 1mL minimum pour une seringue (si < 0.5, choisir une analyse), 100μL
+  pour un capillaire
+
+* Augmentation et diminution
+:PROPERTIES:
+:CUSTOM_ID: augmentation-et-diminution
+:END:
+L'orientation se fait selon le trou anionique,
+\([Na^+]  - [Cl^- + HCO_3^-]\), qui correspond au anions ou cations
+indosés.
+
+Une acidose métabolique correspond à une diminution du pH due à une
+diminution des bicarbonates
+
+- trou anionique > 16 : excès d'anion indosés due à :
+  - une accumulation aigüe d'acide : acidose lactique, acidocétose
+  - une excrétion rénale d'acide diminuée : insuffisance rénale
+- trou anionique normal :
+  - une accumulation aigüe d'acide : intoxication chlorure d'ammonium
+  - perte de bicarbonante : diarrhée, anastomose urtéré-intestinale,
+    acide tubulaire proxmilae
+  - une excrétion rénale d'acide diminuée : acide tubulaire distale
+    (défaut de productionde \(NH_4^+\) ou défaut de produiction distale
+    d'\(H^+\))
+
+Uen alcalose métabolique est due à :
+
+- une contraction vélomique : extrarénale , perte en sel rénale
+  (diurétique++, syndrome de Bartter), perte en sel d'origine mixte
+  (vomissement, aspiratio+++)
+- une expansion volémique : hyperaldstéronisme primaire, secondaire ou
+  pseudo-hypealdostéronisme
+- post-hypercapnique
+- excès d'apport alcalin

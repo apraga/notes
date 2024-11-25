@@ -1,0 +1,9 @@
+#+title: Td Bioinfo
+
+Deletion visible
+
+* UCSC
+Conservation = important si conservé au travers de l’évolution
+GTex = RNAseq sur plusieurs tissus
+
+Transcrit de référence = ENSEMBL (ENST...), RefSeq (NM... )

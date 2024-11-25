@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       98292470-4cac-4d92-976a-f105192dfd8b
+:END:
+#+title: SNP-array
+
+2 types de plot
+- BAF = "B" allel frequence = allèle alternative (non réference)
+https://cnvkit.readthedocs.io/en/stable/baf.html
+0 ou 0.5 ou 1 pour autosome (cf figure ci-dessous)
+0 0.33 0.66 ou 1 si duplication
+[[./images/copy-number.png]]
+
+- log R ration = log2((R_A + R_B)/Rexpected) où Rexpected = interpolé. Abondance relative du SNP et est corrélé a nombre de copies
+
+  Isodisomie : 1 seule copie donc homozygote
+  Hétérodisomie : 1 copie mais du même parent donc hétérozygote mais "même couleurs"

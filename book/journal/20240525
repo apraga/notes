@@ -1,0 +1,433 @@
+* 2024-05-25
+** 13:30 Aerial spincity
+Step 3 : Réponse du master.json :
+- vidéo : plusieurs format de qualité disponible (différents width et height) et plusieurs segment pour chaque
+- audio : 1 seul format, plusieurs segments
+
+#+begin_src json
+{
+    "clip_id": "f4f7374a-e8fb-4d45-a20b-a00e159df3c7",
+    "base_url": "../",
+    "video": [
+        {
+            "id": "3a1c3cf2",
+            "avg_id": "",
+            "base_url": "3a1c3cf2/chop/",
+            "format": "mp42",
+            "mime_type": "video/mp4",
+            "codecs": "avc1.640020",
+            "bitrate": 522000,
+            "avg_bitrate": 464000,
+            "duration": 61.68,
+            "framerate": 25,
+            "width": 1280,
+            "height": 720,
+            "max_segment_duration": 7,
+            "init_segment": "AAAAHGZ0eXBpc281AAACAGlzbzVpc282bXA0MQAAAyttb292AAAAbG12aGQAAAAAAAAAAAAAAAAAAAPoAAAAAAABAAABAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAACLXRyYWsAAABcdGtoZAAAAAMAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAEAAAAAFAAAAAtAAAAAAACRlZHRzAAAAHGVsc3QAAAAAAAAAAQAAAAAAAAQAAAEAAAAAAaVtZGlhAAAAIG1kaGQAAAAAAAAAAAAAAAAAADIAAAAAAFXEAAAAAAAtaGRscgAAAAAAAAAAdmlkZQAAAAAAAAAAAAAAAFZpZGVvSGFuZGxlcgAAAAFQbWluZgAAABR2bWhkAAAAAQAAAAAAAAAAAAAAJGRpbmYAAAAcZHJlZgAAAAAAAAABAAAADHVybCAAAAABAAABEHN0YmwAAADEc3RzZAAAAAAAAAABAAAAtGF2YzEAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAFAALQAEgAAABIAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAY//8AAAA3YXZjQwFkACD/4QAbZ2QAIKzZgFAFumoCAgKAAAADAIAAABkHjBjNAQAFaOl7LIv9+PgAAAAAE2NvbHJuY2x4AAEAAQABAAAAABRidHJ0AAAAAAAHCQwABwkMAAAAEHN0dHMAAAAAAAAAAAAAABBzdHNjAAAAAAAAAAAAAAAUc3RzegAAAAAAAAAAAAAAAAAAABBzdGNvAAAAAAAAAAAAAAAobXZleAAAACB0cmV4AAAAAAAAAAEAAAABAAAAAAAAAAAAAAAAAAAAYnVkdGEAAABabWV0YQAAAAAAAAAhaGRscgAAAAAAAAAAbWRpcmFwcGwAAAAAAAAAAAAAAAAtaWxzdAAAACWpdG9vAAAAHWRhdGEAAAABAAAAAExhdmY2MC4xNC4xMDA=",
+            "segments": [
+                {
+                    "start": 0,
+                    "end": 6.08,
+                    "url": "segment-1.m4s?r=dXM%3D",
+                    "size": 342561
+                },
+                {
+                    "start": 6.08,
+                    "end": 12.16,
+                    "url": "segment-2.m4s?r=dXM%3D",
+                    "size": 252435
+                },
+                {
+                    "start": 12.16,
+                    "end": 18.24,
+                    "url": "segment-3.m4s?r=dXM%3D",
+                    "size": 282162
+                },
+                {
+                    "start": 18.24,
+                    "end": 24.32,
+                    "url": "segment-4.m4s?r=dXM%3D",
+                    "size": 368524
+                },
+                {
+                    "start": 24.32,
+                    "end": 30.4,
+                    "url": "segment-5.m4s?r=dXM%3D",
+                    "size": 325848
+                },
+                {
+                    "start": 30.4,
+                    "end": 36.48,
+                    "url": "segment-6.m4s?r=dXM%3D",
+                    "size": 356835
+                },
+                {
+                    "start": 36.48,
+                    "end": 42.56,
+                    "url": "segment-7.m4s?r=dXM%3D",
+                    "size": 410271
+                },
+                {
+                    "start": 42.56,
+                    "end": 48.64,
+                    "url": "segment-8.m4s?r=dXM%3D",
+                    "size": 316171
+                },
+                {
+                    "start": 48.64,
+                    "end": 54.72,
+                    "url": "segment-9.m4s?r=dXM%3D",
+                    "size": 434367
+                },
+                {
+                    "start": 54.72,
+                    "end": 61.68,
+                    "url": "segment-10.m4s?r=dXM%3D",
+                    "size": 504195
+                }
+            ]
+        },
+        {
+            "id": "66c64221",
+            "avg_id": "",
+            "base_url": "66c64221/chop/",
+            "format": "mp42",
+            "mime_type": "video/mp4",
+            "codecs": "avc1.64001F",
+            "bitrate": 330000,
+            "avg_bitrate": 288000,
+            "duration": 61.68,
+            "framerate": 25,
+            "width": 960,
+            "height": 540,
+            "max_segment_duration": 7,
+            "init_segment": "AAAAHGZ0eXBpc281AAACAGlzbzVpc282bXA0MQAAAy5tb292AAAAbG12aGQAAAAAAAAAAAAAAAAAAAPoAAAAAAABAAABAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAACMHRyYWsAAABcdGtoZAAAAAMAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAEAAAAADwAAAAhwAAAAAACRlZHRzAAAAHGVsc3QAAAAAAAAAAQAAAAAAAAQAAAEAAAAAAahtZGlhAAAAIG1kaGQAAAAAAAAAAAAAAAAAADIAAAAAAFXEAAAAAAAtaGRscgAAAAAAAAAAdmlkZQAAAAAAAAAAAAAAAFZpZGVvSGFuZGxlcgAAAAFTbWluZgAAABR2bWhkAAAAAQAAAAAAAAAAAAAAJGRpbmYAAAAcZHJlZgAAAAAAAAABAAAADHVybCAAAAABAAABE3N0YmwAAADHc3RzZAAAAAAAAAABAAAAt2F2YzEAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAADwAIcAEgAAABIAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAY//8AAAA6YXZjQwFkAB//4QAdZ2QAH6xWJA8BF+5qDAwMgAAAAwCAAAAZB4wYxMABAAZo6I7LIsD9+PgAAAAAE2NvbHJuY2x4AAYABgAGAAAAABRidHJ0AAAAAAAEV24ABFduAAAAEHN0dHMAAAAAAAAAAAAAABBzdHNjAAAAAAAAAAAAAAAUc3RzegAAAAAAAAAAAAAAAAAAABBzdGNvAAAAAAAAAAAAAAAobXZleAAAACB0cmV4AAAAAAAAAAEAAAABAAAAAAAAAAAAAAAAAAAAYnVkdGEAAABabWV0YQAAAAAAAAAhaGRscgAAAAAAAAAAbWRpcmFwcGwAAAAAAAAAAAAAAAAtaWxzdAAAACWpdG9vAAAAHWRhdGEAAAABAAAAAExhdmY2MC4xNC4xMDA=",
+            "segments": [
+                {
+                    "start": 0,
+                    "end": 6.08,
+                    "url": "segment-1.m4s?r=dXM%3D",
+                    "size": 223095
+                },
+                {
+                    "start": 6.08,
+                    "end": 12.16,
+                    "url": "segment-2.m4s?r=dXM%3D",
+                    "size": 185250
+                },
+                {
+                    "start": 12.16,
+                    "end": 18.24,
+                    "url": "segment-3.m4s?r=dXM%3D",
+                    "size": 196287
+                },
+                {
+                    "start": 18.24,
+                    "end": 24.32,
+                    "url": "segment-4.m4s?r=dXM%3D",
+                    "size": 219609
+                },
+                {
+                    "start": 24.32,
+                    "end": 30.4,
+                    "url": "segment-5.m4s?r=dXM%3D",
+                    "size": 186746
+                },
+                {
+                    "start": 30.4,
+                    "end": 36.48,
+                    "url": "segment-6.m4s?r=dXM%3D",
+                    "size": 193337
+                },
+                {
+                    "start": 36.48,
+                    "end": 42.56,
+                    "url": "segment-7.m4s?r=dXM%3D",
+                    "size": 232346
+                },
+                {
+                    "start": 42.56,
+                    "end": 48.64,
+                    "url": "segment-8.m4s?r=dXM%3D",
+                    "size": 177085
+                },
+                {
+                    "start": 48.64,
+                    "end": 54.72,
+                    "url": "segment-9.m4s?r=dXM%3D",
+                    "size": 275456
+                },
+                {
+                    "start": 54.72,
+                    "end": 61.68,
+                    "url": "segment-10.m4s?r=dXM%3D",
+                    "size": 343015
+                }
+            ]
+        },
+        {
+            "id": "d935b08f",
+            "avg_id": "",
+            "base_url": "d935b08f/chop/",
+            "format": "mp42",
+            "mime_type": "video/mp4",
+            "codecs": "avc1.64001E",
+            "bitrate": 192000,
+            "avg_bitrate": 159000,
+            "duration": 61.68,
+            "framerate": 25,
+            "width": 640,
+            "height": 360,
+            "max_segment_duration": 7,
+            "init_segment": "AAAAHGZ0eXBpc281AAACAGlzbzVpc282bXA0MQAAAy1tb292AAAAbG12aGQAAAAAAAAAAAAAAAAAAAPoAAAAAAABAAABAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAACL3RyYWsAAABcdGtoZAAAAAMAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAEAAAAACgAAAAWgAAAAAACRlZHRzAAAAHGVsc3QAAAAAAAAAAQAAAAAAAAQAAAEAAAAAAadtZGlhAAAAIG1kaGQAAAAAAAAAAAAAAAAAADIAAAAAAFXEAAAAAAAtaGRscgAAAAAAAAAAdmlkZQAAAAAAAAAAAAAAAFZpZGVvSGFuZGxlcgAAAAFSbWluZgAAABR2bWhkAAAAAQAAAAAAAAAAAAAAJGRpbmYAAAAcZHJlZgAAAAAAAAABAAAADHVybCAAAAABAAABEnN0YmwAAADGc3RzZAAAAAAAAAABAAAAtmF2YzEAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAACgAFoAEgAAABIAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAY//8AAAA5YXZjQwFkAB7/4QAdZ2QAHqzZQKAv+WagwMDIAAADAAgAAAMBkHixbLABAAVo6+yyLP34+AAAAAATY29scm5jbHgABgAGAAYAAAAAFGJ0cnQAAAAAAAJepQACXqUAAAAQc3R0cwAAAAAAAAAAAAAAEHN0c2MAAAAAAAAAAAAAABRzdHN6AAAAAAAAAAAAAAAAAAAAEHN0Y28AAAAAAAAAAAAAAChtdmV4AAAAIHRyZXgAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAABidWR0YQAAAFptZXRhAAAAAAAAACFoZGxyAAAAAAAAAABtZGlyYXBwbAAAAAAAAAAAAAAAAC1pbHN0AAAAJal0b28AAAAdZGF0YQAAAAEAAAAATGF2ZjYwLjE0LjEwMA==",
+            "segments": [
+                {
+                    "start": 0,
+                    "end": 6.08,
+                    "url": "segment-1.m4s?r=dXM%3D",
+                    "size": 128004
+                },
+                {
+                    "start": 6.08,
+                    "end": 12.16,
+                    "url": "segment-2.m4s?r=dXM%3D",
+                    "size": 100161
+                },
+                {
+                    "start": 12.16,
+                    "end": 18.24,
+                    "url": "segment-3.m4s?r=dXM%3D",
+                    "size": 106016
+                },
+                {
+                    "start": 18.24,
+                    "end": 24.32,
+                    "url": "segment-4.m4s?r=dXM%3D",
+                    "size": 115763
+                },
+                {
+                    "start": 24.32,
+                    "end": 30.4,
+                    "url": "segment-5.m4s?r=dXM%3D",
+                    "size": 97812
+                },
+                {
+                    "start": 30.4,
+                    "end": 36.48,
+                    "url": "segment-6.m4s?r=dXM%3D",
+                    "size": 103428
+                },
+                {
+                    "start": 36.48,
+                    "end": 42.56,
+                    "url": "segment-7.m4s?r=dXM%3D",
+                    "size": 119141
+                },
+                {
+                    "start": 42.56,
+                    "end": 48.64,
+                    "url": "segment-8.m4s?r=dXM%3D",
+                    "size": 91711
+                },
+                {
+                    "start": 48.64,
+                    "end": 54.72,
+                    "url": "segment-9.m4s?r=dXM%3D",
+                    "size": 156183
+                },
+                {
+                    "start": 54.72,
+                    "end": 61.68,
+                    "url": "segment-10.m4s?r=dXM%3D",
+                    "size": 217687
+                }
+            ]
+        },
+        {
+            "id": "f9e1a649",
+            "avg_id": "",
+            "base_url": "f9e1a649/chop/",
+            "format": "mp42",
+            "mime_type": "video/mp4",
+            "codecs": "avc1.640028",
+            "bitrate": 1659000,
+            "avg_bitrate": 1259000,
+            "duration": 61.68,
+            "framerate": 25,
+            "width": 1920,
+            "height": 1080,
+            "max_segment_duration": 7,
+            "init_segment": "AAAAHGZ0eXBpc281AAACAGlzbzVpc282bXA0MQAAAy1tb292AAAAbG12aGQAAAAAAAAAAAAAAAAAAAPoAAAAAAABAAABAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAACL3RyYWsAAABcdGtoZAAAAAMAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAEAAAAAHgAAABDgAAAAAACRlZHRzAAAAHGVsc3QAAAAAAAAAAQAAAAAAAAQAAAEAAAAAAadtZGlhAAAAIG1kaGQAAAAAAAAAAAAAAAAAADIAAAAAAFXEAAAAAAAtaGRscgAAAAAAAAAAdmlkZQAAAAAAAAAAAAAAAFZpZGVvSGFuZGxlcgAAAAFSbWluZgAAABR2bWhkAAAAAQAAAAAAAAAAAAAAJGRpbmYAAAAcZHJlZgAAAAAAAAABAAAADHVybCAAAAABAAABEnN0YmwAAADGc3RzZAAAAAAAAAABAAAAtmF2YzEAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAHgAQ4AEgAAABIAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAY//8AAAA5YXZjQwFkACj/4QAdZ2QAKKzZgHgCJ+WagICAoAAAAwAgAAAGQeMGM0ABAAVo6Xssi/34+AAAAAATY29scm5jbHgAAQABAAEAAAAAFGJ0cnQAAAAAABMU2QATFNkAAAAQc3R0cwAAAAAAAAAAAAAAEHN0c2MAAAAAAAAAAAAAABRzdHN6AAAAAAAAAAAAAAAAAAAAEHN0Y28AAAAAAAAAAAAAAChtdmV4AAAAIHRyZXgAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAABidWR0YQAAAFptZXRhAAAAAAAAACFoZGxyAAAAAAAAAABtZGlyYXBwbAAAAAAAAAAAAAAAAC1pbHN0AAAAJal0b28AAAAdZGF0YQAAAAEAAAAATGF2ZjYwLjE0LjEwMA==",
+            "segments": [
+                {
+                    "start": 0,
+                    "end": 6.08,
+                    "url": "segment-1.m4s?r=dXM%3D",
+                    "size": 588275
+                },
+                {
+                    "start": 6.08,
+                    "end": 12.16,
+                    "url": "segment-2.m4s?r=dXM%3D",
+                    "size": 379804
+                },
+                {
+                    "start": 12.16,
+                    "end": 18.24,
+                    "url": "segment-3.m4s?r=dXM%3D",
+                    "size": 457445
+                },
+                {
+                    "start": 18.24,
+                    "end": 24.32,
+                    "url": "segment-4.m4s?r=dXM%3D",
+                    "size": 1234896
+                },
+                {
+                    "start": 24.32,
+                    "end": 30.4,
+                    "url": "segment-5.m4s?r=dXM%3D",
+                    "size": 1157323
+                },
+                {
+                    "start": 30.4,
+                    "end": 36.48,
+                    "url": "segment-6.m4s?r=dXM%3D",
+                    "size": 1260831
+                },
+                {
+                    "start": 36.48,
+                    "end": 42.56,
+                    "url": "segment-7.m4s?r=dXM%3D",
+                    "size": 1365076
+                },
+                {
+                    "start": 42.56,
+                    "end": 48.64,
+                    "url": "segment-8.m4s?r=dXM%3D",
+                    "size": 1136642
+                },
+                {
+                    "start": 48.64,
+                    "end": 54.72,
+                    "url": "segment-9.m4s?r=dXM%3D",
+                    "size": 1241404
+                },
+                {
+                    "start": 54.72,
+                    "end": 61.68,
+                    "url": "segment-10.m4s?r=dXM%3D",
+                    "size": 858353
+                }
+            ]
+        }
+    ],
+    "audio": [
+        {
+            "id": "3a1c3cf2",
+            "avg_id": "",
+            "base_url": "../audio/3a1c3cf2/chop/",
+            "format": "mp42",
+            "mime_type": "audio/mp4",
+            "codecs": "mp4a.40.2",
+            "bitrate": 139000,
+            "avg_bitrate": 139000,
+            "duration": 61.696,
+            "channels": 2,
+            "sample_rate": 48000,
+            "max_segment_duration": 7,
+            "init_segment": "AAAAHGZ0eXBpc281AAACAGlzbzVpc282bXA0MQAAAt5tb292AAAAbG12aGQAAAAAAAAAAAAAAAAAAAPoAAAAAAABAAABAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAB4HRyYWsAAABcdGtoZAAAAAMAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAACRlZHRzAAAAHGVsc3QAAAAAAAAAAQAAAAAAAAAAAAEAAAAAAVhtZGlhAAAAIG1kaGQAAAAAAAAAAAAAAAAAALuAAAAAAFXEAAAAAAAtaGRscgAAAAAAAAAAc291bgAAAAAAAAAAAAAAAFNvdW5kSGFuZGxlcgAAAAEDbWluZgAAABBzbWhkAAAAAAAAAAAAAAAkZGluZgAAABxkcmVmAAAAAAAAAAEAAAAMdXJsIAAAAAEAAADHc3RibAAAAHtzdHNkAAAAAAAAAAEAAABrbXA0YQAAAAAAAAABAAAAAAAAAAAAAgAQAAAAALuAAAAAAAAzZXNkcwAAAAADgICAIgABAASAgIAUQBUAAAAAAhczAAIXMwWAgIACEZAGgICAAQIAAAAUYnRydAAAAAAAAhczAAIXMwAAABBzdHRzAAAAAAAAAAAAAAAQc3RzYwAAAAAAAAAAAAAAFHN0c3oAAAAAAAAAAAAAAAAAAAAQc3RjbwAAAAAAAAAAAAAAKG12ZXgAAAAgdHJleAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAGJ1ZHRhAAAAWm1ldGEAAAAAAAAAIWhkbHIAAAAAAAAAAG1kaXJhcHBsAAAAAAAAAAAAAAAALWlsc3QAAAAlqXRvbwAAAB1kYXRhAAAAAQAAAABMYXZmNjAuMTQuMTAw",
+            "segments": [
+                {
+                    "start": 0,
+                    "end": 6.08,
+                    "url": "segment-1.m4s?r=dXM%3D",
+                    "size": 105434
+                },
+                {
+                    "start": 6.08,
+                    "end": 12.16,
+                    "url": "segment-2.m4s?r=dXM%3D",
+                    "size": 105432
+                },
+                {
+                    "start": 12.16,
+                    "end": 18.24,
+                    "url": "segment-3.m4s?r=dXM%3D",
+                    "size": 105428
+                },
+                {
+                    "start": 18.24,
+                    "end": 24.32,
+                    "url": "segment-4.m4s?r=dXM%3D",
+                    "size": 105433
+                },
+                {
+                    "start": 24.32,
+                    "end": 30.4,
+                    "url": "segment-5.m4s?r=dXM%3D",
+                    "size": 105428
+                },
+                {
+                    "start": 30.4,
+                    "end": 36.48,
+                    "url": "segment-6.m4s?r=dXM%3D",
+                    "size": 105428
+                },
+                {
+                    "start": 36.48,
+                    "end": 42.56,
+                    "url": "segment-7.m4s?r=dXM%3D",
+                    "size": 105433
+                },
+                {
+                    "start": 42.56,
+                    "end": 48.64,
+                    "url": "segment-8.m4s?r=dXM%3D",
+                    "size": 105428
+                },
+                {
+                    "start": 48.64,
+                    "end": 54.72,
+                    "url": "segment-9.m4s?r=dXM%3D",
+                    "size": 106167
+                },
+                {
+                    "start": 54.72,
+                    "end": 61.696,
+                    "url": "segment-10.m4s?r=dXM%3D",
+                    "size": 120203
+                }
+            ],
+            "audio_primary": true
+        }
+    ]
+}
+#+end_src
+
+Step 4  requêtes pour chaque segmenet (audio + vido + vidéo ??)
+GET
+https://vod-adaptive-ak.vimeocdn.com/exp=1716640194~acl=%2Ff4f7374a-e8fb-4d45-a20b-a00e159df3c7%2F%2A~hmac=6db962b252f357e7917026efd7cb50a0642b2349b11109e2e767d3a7ad4efe94/f4f7374a-e8fb-4d45-a20b-a00e159df3c7/sep/audio/3a1c3cf2/chop/segment-1.m4s?r=dXM=
+avec comme headers
+- Origin https://player.vimeo.com
+- Referer https://player.vimeo.com/
+
+  Donc la syntaxe pour un fragment est
+        https://vod-adaptive-ak.vimeocdn.com/exp=1716640194~acl=%2F + clip_id  + %2F%2A~hmac=6db962b252f357e7917026efd7cb50a0642b2349b11109e2e767d3a7ad4efe94/ + clip_id + /sep/audio/ +   base_url + / + segment
+avec clip_id, base_url et segment dans le json
+Ce qui n'est pas clair : exp= ? hmac = ?
+On peut les avoir avec l'URL du master.json (qui contient d'ailleurs les dientifiants des différents video)
+
+>>> masterURL
+'https://vod-adaptive-ak.vimeocdn.com/exp=1716654963~acl=%2F080566f2-f1d5-4339-a0a1-a529f0d3ac82%2F%2A~hmac=effc64a71f57c3ad83754e7250e05dee24fd786c42e78efed7c0eb22954d9c38/080566f2-f1d5-4339-a0a1-a529f0d3ac82/sep/video/37b9284e,4957af49,6cb18bda,93cc92d4,9ba8dbe2/master.json?base64_init=1'
+
+Le plus simple: prendre l'URL de master.json jusque "sep/video" inclus et rajouter / + json['video']['id'] + / + segment['url']
+
+https://stackoverflow.com/questions/69574227/how-to-merge-init-mp4-m4s-files
+** 18:34 Aerial spincity
+Comment concaténer les fragments ? Il y a un "init_segment" dans le json et une liste de m4s (video et audio séparé)
+Enregistre un m4s ne le reconnati que comme data
+Dans firefox, il y a 2 video pour le segment1
+Si on enregistre la réponse d'une requête depuis l'inspecteur de firefox, la concaténation avec ffmpeg dit "unknown keyword 4sidx", "invalid data"
+
+Solution: il faut bien écire le init_segment dans le json puis concaténer séparement l'audio et video avec ffmpeg.

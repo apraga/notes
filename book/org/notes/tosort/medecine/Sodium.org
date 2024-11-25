@@ -1,0 +1,48 @@
+​#biochimie # Localisation, rôle physiologique
+
+Cation extracellulaire le plus abondant
+
+* Tissus/organes de production et d'élimination
+:PROPERTIES:
+:CUSTOM_ID: tissusorganes-de-production-et-délimination
+:END:
+Régulé par les rein. Une très faible partie est éléminée par les peau.
+L'aldostérone et l'ADH modifient, via le rein, l'équilibre du sodium
+(réabsorption de sodium et d'eau respectivement)
+
+* Valeurs de référence (adulte)
+:PROPERTIES:
+:CUSTOM_ID: valeurs-de-référence-adulte
+:END:
+135-145mmol/L
+
+* Principe analytique de mesure
+:PROPERTIES:
+:CUSTOM_ID: principe-analytique-de-mesure
+:END:
+Potentiométrie
+
+* Principales interactions analytiques
+:PROPERTIES:
+:CUSTOM_ID: principales-interactions-analytiques
+:END:
+* Vigilance pré-analytiques et analytiques
+:PROPERTIES:
+:CUSTOM_ID: vigilance-pré-analytiques-et-analytiques
+:END:
+- tube approprié (interactions anticoagulants autre)
+
+* Augmentation et diminution
+:PROPERTIES:
+:CUSTOM_ID: augmentation-et-diminution
+:END:
+- Hyponatrémie :
+  - hypertonique : hyperglycémie majeure, intoxication méthanol/éthanol
+  - hypototonique :
+    - osmolalité urinaire diminuée : polydipse
+    - sinon: excès relatif en eau (d'origine rénale ou non), excès d'eau
+      pur (SIADH, hyperthyroïdie, hypocortisolisme), excès d'eau > excès
+      de sodium (insuffisance cardiaque, syndrome néphrotique, cirrhose)
+- Hypernatrémie : déficit en eau > déficit sodium (origine rénale ou non
+  [sueurs, pertes digestives]), déficit en eau (diabète insipide, pertes
+  extra-rénale), gain en sodium > gain eau (apport excessif NaCl)

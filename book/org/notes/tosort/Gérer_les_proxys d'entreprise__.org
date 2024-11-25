@@ -1,0 +1,32 @@
+- Navigateur : ajouter le certificat
+- Mise à jour gentoo , merge
+- yt-dlp
+  =yt-dlp https://www.youtube.com/watch?v=Uqvt985SI0A --legacy-server-connect  --no-check-certificates=
+
+** Git clone
+:PROPERTIES:
+:CUSTOM_ID: git-clone
+:END:
+Pour pouvoir faire des git clone, crééer le fichier suivant pour activer
+"usafe legacy renegociation" (ne marche pas toujours)
+
+#+begin_src ~/.unsafe-ssl-hnfc.cnf
+openssl_conf = openssl_init
+
+[openssl_init]
+ssl_conf = ssl_sect
+
+[ssl_sect]
+system_default = system_default_sect
+
+[system_default_sect]
+Options = UnsafeLegacyRenegotiation
+#+end_src
+
+puis
+
+#+begin_example
+$env.OPENSSL_CONF = /home/alex/.unsafe-ssl-hnfc.cnf
+#+end_example
+
+Note: il y a régulièrement des erreurs de transfert...

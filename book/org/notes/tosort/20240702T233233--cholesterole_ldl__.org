@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       3093198d-a9d2-4464-a453-9b6bffb03841
+:END:
+#+title: Cholestérole LDL
+#+filetags: biochimie
+Interférence :triglycériduqe > 33.9mmol/L, cholestérol > 12.9mmol/L
+Normes 2.6mmol/L

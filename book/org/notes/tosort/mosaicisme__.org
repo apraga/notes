@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       f6ea0248-d5d3-472e-883c-5e9dc14fe57b
+:END:
+#+title: Mosaïcisme
+#+filetags: Auragen
+
+Rapport de synthèse : >= 2 lectures portant variant et VAF 25%
+Profondeur moyenne 40x
+
+* Astuces
+- pas de bias de brin (autant de reads forward que reverse)
+- alignement de qualité: ex MR-2203311: chr10:g.92608457G>T pour artefact (homopolymore, biais de bris, mauvais qualité, présent autres dossiers)
+  - homopolymère dans la région ?
+  - qualité des reads supportant la variation MQ=10
+  - reads soft-clipés (option IGV)
+- variant absent d'autres individus (regarder quelques autres dossiers)
+- on peut aussi regarder les SNPs : les reads doivent porter le SNP et le variant, sinon possible mosaïcisme (voir FAQ mosaïcisme sur FAQ bio)
+
+** CNV
+dans IGV activer "soft clip" et "color by tag" avec MQ10 : permet d'étayer suspcion dup par exemple (on voit les reads coupés)
+* Pièges
+- les reads soft-clipped ne sont pas utilisé pour le calcul de la VAF qui peut donc être sous-estimée
+* Exemples
+- [[http://172.25.219.90:8080/ascute-au/igv/igv-mr.html?caseid=MR-2305121&libtype=WGS&libid=LIB00035430_S23%2CCas%20index%2C37.1%3BLIB00035431_S24%2CP%C3%A8re%2C39.5%3BLIB00035432_S1%2CM%C3%A8re%2C37.8&locus=chrX:20177016][5 reads sur 55]] chez la mère (triplo X)

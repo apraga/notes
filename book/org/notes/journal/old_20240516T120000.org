@@ -1,0 +1,30 @@
+* 2024-05-16
+** 09:00 Réunion interaxes
+- Elise : travail sur contamination FFPE avec Alain -> regarde SNP homozygotes : si htz, probablement contamination
+- Jean-François (DSI) : 70% stockage utilisé, centos non supporté fin juin
+- nouveau séquenceur : fin juin. DRAGEN toujours lancé
+- validation novaseq X à faire fin du mois de mai (arrêt des séquenceurs pour travaux)
+- Visite CADD 27 juin
+** 11:00 Réunion labo
+** Quentin
+- Écart tube EDTA périmé : étude d'impact
+  - comparaison échantillon périmé sur non périmé avec hap.py
+  - NB: si on reséquence un patient, on crée un nouveau numéro mais cela peut être le même ADN extrait (il faut vérifier date extraction et réception) -> à vérifier par christine
+  - NB: il y a "bruit de fond" sur un même patient mais séquencé 2 fois (avec 2 extractions d'ADN) -> comparaison non périmé/non périmé
+  - petit effet sur indel mais test statistique à faire -> /probablement pas d'impact/
+- Ecart délai d'extraction : étude d'impact
+  - comparaison T0 T+7j t+14
+  - ne semble pas impact SNV pour appel variation, impact sur indel ? -> /probablement pas d'impact/
+  - Question Christine: retrouve-t-on les variants rendus ?
+** 11:00 jSlides formation bionfo
+** 6.3
+- 10 : OMIM: morbid ?
+- 10 : panele de gènes HPO = classement et non booléan
+** 14:00 Sauvegarde notes : confluence possible a priori
+token atlassian
+ATATT3xFfGF0Uqo6O7AoYVJP0cyc6yKqaCjeKpDlHW8rAiOJtczR4lbx8kETlGLIR7ZVoNgZDP8KarOmOL8CdIXixao89g20QbKfTkzl8uyIzFu1VxGiqg-NzpAOGF_ZHMK7VjiJs6laRGazxnoci0Bsn-FQVgwPl9FVsQgEWmFGtw1poaeTPNY=107925FC
+** 15:00 Questions
+- à quoi sert vraiment le tag de transcrit biallelique ? identifier les possible hétérozygotie composite ?
+- idem pour les worst impact sur le transcrit
+** 11:00 Réunion Flashi qualité
+Objectif : norme 2022 septembre

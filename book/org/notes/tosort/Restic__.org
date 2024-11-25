@@ -1,0 +1,14 @@
+* Restic vs borg
+:PROPERTIES:
+:CUSTOM_ID: restic-vs-borg
+:END:
+[[https://www.reddit.com/r/BorgBackup/comments/v3bwfg/why_should_i_switch_from_restic_to_borg/][Comparaison]]
+Pas un audito mais le
+[[https://words.filippo.io/restic-cryptography/][créateur de la
+librairie crypto a regardé rapidement]]
+
+Notes :
+
+- restic supporte facilement les remote rclone !
+- borg utilise plus de place
+- borg est plus mature

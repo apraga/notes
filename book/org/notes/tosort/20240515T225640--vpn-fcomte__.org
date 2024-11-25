@@ -1,0 +1,6 @@
+#+filetags: personal
+* Freeze avec cat, less, vim...
+:PROPERTIES:
+:CUSTOM_ID: freeze-avec-cat-less-vim
+:END:
+Changer le MTU avec doas ifconfig XXX mtu 1300

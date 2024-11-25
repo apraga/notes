@@ -1,0 +1,19 @@
+* Tests /in silico/
+:PROPERTIES:
+:CUSTOM_ID: tests-in-silico
+:END:
+** Insertion de variants dans un patient
+:PROPERTIES:
+:CUSTOM_ID: insertion-de-variants-dans-un-patient
+:END:
+- ExomeValidator.jl: Notre version en Julia. OK pour SNV, testé sur
+  variants confirmés en snager
+- [[file:varben.md][Varben]]
+
+** Données simulée
+:PROPERTIES:
+:CUSTOM_ID: données-simulée
+:END:
+- [[file:simuscop][Simuscop]] : On utilise simuscope car gère facilement
+  l'exome (sinon il faut filtrer après la génération de données de
+  génome) et rapide.

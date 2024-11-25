@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       ab5f1297-f2f9-48e6-9436-6dea3cb84813
+:END:
+#+title: Formation Kaliab
+#+date: 2024-05-15
+
+https://kaliliab.auragen.fr
+Norme 2012 actuellement -> MAJ 2022 prévue
+
+fiche de fonction validé par Christine puis par nous. Voir espace personnel -> fonction -> touche "action"
+- responsabilité
+
+Qualification
+- validation + diffusion résultat des examen
+- prestation de conseil
+- participation pilotage post-analytique
+- formation/expérience
+manaquement qualité (formation auragen, engagement confidentialité, attestation formation q)
+
+Fiches qualité -> non conformités, réclamations, évènement indésirables
+Non-conformité : mettre le maximum d'information (relecture par
+Christine Waymel si incomplète)
+
+Ajout action curative : Impact/causes/mesure
+
+Audit : option dans modification
+Revue de processus

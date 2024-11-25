@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       63bd7afa-411c-4b17-ba37-3fd63d34bda6
+:END:
+#+title: Visualisation
+#+filetags: pipeline
+
+* CNV
+- [[id:0638e226-be6b-4612-a107-cf9308110d89][BAF]] : sur 1 million de SNP. Nécessite >= 20 lectures
+- "common" = dbVAR avec le compte représentant ceux >= 1% de chevauchement (et non le nombre à une position donnée !)

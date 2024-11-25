@@ -1,0 +1,12 @@
+* 2024-05-29
+** 14:49 Réunion Julien + Jérémie
+Tutorial pour interpréter SV et CNV voir [[id:c2c6328b-1292-454d-81b4-e97ba85b4572][Interprétation]]
+Groupe slack
+Interpréter 3 génome et les rendre
+Objectif : Jérémie ne fait que ceux de montpellier et seulement les nouveaux (7.1).
+
+Participation au RVI Montpellier : Jérémiée +/- moi
+** 15:49 Réunion Julien
+- Tutorial seqone : voir avec Jérémy ou réunion mensuelle sur les loupés. Mais le mieux est d'utiliser les filtres pré-définis
+- Accès cluster : CHU pour le moment, il faudra monter une demande solide en justifiant le besoin
+- Nouveaux diag récupéré avec curagenv2 + score HEAD: ok pour communiquer avec un petit comité de biologiste (grenoble + lyon)

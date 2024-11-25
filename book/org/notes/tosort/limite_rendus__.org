@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       f4582bec-9f09-4068-8cd0-65b4fb22413d
+:END:
+#+title: Limite rendus
+#+filetags: auragen
+
+Aurapport -> hygen: pushé à la main lundi et jeudi matin. Fin juillet : sera fait automatiquement
+[[id:8a2278b0-14de-4b46-8770-5f1f9015032f][Améliorations pipeline]]

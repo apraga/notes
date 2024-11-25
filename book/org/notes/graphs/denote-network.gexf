@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://gexf.net/1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://gexf.net/1.3 http://gexf.net/1.3/gexf.xsd" version="1.3">
+<meta lastmodifieddate="2024-09-06">
+<creator>Emacs Denote-Explore package</creator>
+<description>A network of Denote files/keywords</description>
+</meta>
+<graph mode="static" defaultedgetype="directed">
+<attributes class="node">
+<attribute id="degree" title="degree" type="integer"/>
+</attributes>
+<nodes>
+<node id="20240717T161021" label="Loss to gain: pseudogenes in microorganisms, focusing on eubacteria, and their biological significance">
+<attvalues>
+<attvalue for="degree" value="0"/>
+</attvalues>
+</node><node id="20230502T232947" label="Bactériologie">
+<attvalues>
+<attvalue for="degree" value="3"/>
+</attvalues>
+</node><node id="20240515T224540" label="Angines">
+<attvalues>
+<attvalue for="degree" value="4"/>
+</attvalues>
+</node><node id="20240515T224550" label="Antibiotiques">
+<attvalues>
+<attvalue for="degree" value="3"/>
+</attvalues>
+</node><node id="20240515T224650" label="Campylobacter spi">
+<attvalues>
+<attvalue for="degree" value="3"/>
+</attvalues>
+</node><node id="20240515T224830" label="Diarrhées">
+<attvalues>
+<attvalue for="degree" value="10"/>
+</attvalues>
+</node><node id="20240515T224930" label="Neisseria gonorrhoeae">
+<attvalues>
+<attvalue for="degree" value="2"/>
+</attvalues>
+</node><node id="20240515T224940" label="Infections cutanées">
+<attvalues>
+<attvalue for="degree" value="1"/>
+</attvalues>
+</node><node id="20240515T225630" label="Legionella pneumophiliea">
+<attvalues>
+<attvalue for="degree" value="4"/>
+</attvalues>
+</node><node id="20240515T225940" label="Proteus">
+<attvalues>
+<attvalue for="degree" value="1"/>
+</attvalues>
+</node><node id="20240601T183012" label="Chlamydia trachomatis">
+<attvalues>
+<attvalue for="degree" value="2"/>
+</attvalues>
+</node><node id="20240601T183122" label="Treponema pallidum (syphilis)">
+<attvalues>
+<attvalue for="degree" value="2"/>
+</attvalues>
+</node><node id="20240601T183212" label="Infections sexuellement transmissibles">
+<attvalues>
+<attvalue for="degree" value="5"/>
+</attvalues>
+</node><node id="20240601T183312" label="Maladies infectieuses">
+<attvalues>
+<attvalue for="degree" value="10"/>
+</attvalues>
+</node><node id="20240602T154050" label="Gastro-entérites">
+<attvalues>
+<attvalue for="degree" value="1"/>
+</attvalues>
+</node><node id="20240602T154150" label="Infections urinaires">
+<attvalues>
+<attvalue for="degree" value="4"/>
+</attvalues>
+</node><node id="20240608T182804" label="Endocardites infectieuses">
+<attvalues>
+<attvalue for="degree" value="3"/>
+</attvalues>
+</node><node id="20240608T182904" label="Mycoplasmes">
+<attvalues>
+<attvalue for="degree" value="2"/>
+</attvalues>
+</node><node id="20240612T233431" label="Bactéries">
+<attvalues>
+<attvalue for="degree" value="17"/>
+</attvalues>
+</node><node id="20240612T233531" label="Pseudomonas aeruginosa">
+<attvalues>
+<attvalue for="degree" value="6"/>
+</attvalues>
+</node><node id="20240612T233631" label="Staphylocoques">
+<attvalues>
+<attvalue for="degree" value="3"/>
+</attvalues>
+</node><node id="20240612T233731" label="Streptocoque">
+<attvalues>
+<attvalue for="degree" value="2"/>
+</attvalues>
+</node><node id="20240731T204905" label="Méningites">
+<attvalues>
+<attvalue for="degree" value="9"/>
+</attvalues>
+</node><node id="20240731T205020" label="Méningites bactériennes">
+<attvalues>
+<attvalue for="degree" value="10"/>
+</attvalues>
+</node><node id="20240816T121324" label="Entérobactéries">
+<attvalues>
+<attvalue for="degree" value="5"/>
+</attvalues>
+</node><node id="20240816T121426" label="Classification des bactéries">
+<attvalues>
+<attvalue for="degree" value="1"/>
+</attvalues>
+</node><node id="20240816T121538" label="Entérocoques">
+<attvalues>
+<attvalue for="degree" value="2"/>
+</attvalues>
+</node><node id="20240816T121647" label="Neisseria meningitidis">
+<attvalues>
+<attvalue for="degree" value="4"/>
+</attvalues>
+</node><node id="20240816T121758" label="Listeria monocytogenes">
+<attvalues>
+<attvalue for="degree" value="6"/>
+</attvalues>
+</node><node id="20240816T121919" label="Hæmophilus influenza">
+<attvalues>
+<attvalue for="degree" value="9"/>
+</attvalues>
+</node><node id="20240828T184411" label="Antibiogramme">
+<attvalues>
+<attvalue for="degree" value="1"/>
+</attvalues>
+</node><node id="20240828T185327" label="Streptocoques pyogenes">
+<attvalues>
+<attvalue for="degree" value="4"/>
+</attvalues>
+</node><node id="20240828T192156" label="Staphylocoque aureus">
+<attvalues>
+<attvalue for="degree" value="5"/>
+</attvalues>
+</node><node id="20240828T230503" label="Clostridium difficile">
+<attvalues>
+<attvalue for="degree" value="0"/>
+</attvalues>
+</node><node id="20240829T215907" label="Salmonella spp">
+<attvalues>
+<attvalue for="degree" value="6"/>
+</attvalues>
+</node><node id="20240829T225530" label="Shigella spp">
+<attvalues>
+<attvalue for="degree" value="5"/>
+</attvalues>
+</node><node id="20240829T225800" label="Milieux de culture">
+<attvalues>
+<attvalue for="degree" value="1"/>
+</attvalues>
+</node><node id="20240829T230553" label="Escherichia coli">
+<attvalues>
+<attvalue for="degree" value="8"/>
+</attvalues>
+</node><node id="20240831T173233" label="Streptococcus pneumoniae">
+<attvalues>
+<attvalue for="degree" value="11"/>
+</attvalues>
+</node><node id="20240831T175811" label="Encéphalite">
+<attvalues>
+<attvalue for="degree" value="4"/>
+</attvalues>
+</node><node id="20240831T232003" label="Mycobacterium tuberculosis">
+<attvalues>
+<attvalue for="degree" value="1"/>
+</attvalues>
+</node><node id="20240901T105739" label="Bactériémie">
+<attvalues>
+<attvalue for="degree" value="14"/>
+</attvalues>
+</node><node id="20240901T111102" label="HACCEK">
+<attvalues>
+<attvalue for="degree" value="2"/>
+</attvalues>
+</node><node id="20240901T143951" label="Infections ORL">
+<attvalues>
+<attvalue for="degree" value="4"/>
+</attvalues>
+</node><node id="20240901T144149" label="Otite moyenne aigüe">
+<attvalues>
+<attvalue for="degree" value="5"/>
+</attvalues>
+</node><node id="20240901T144529" label="Sinusite maxilliaire">
+<attvalues>
+<attvalue for="degree" value="2"/>
+</attvalues>
+</node><node id="20240901T144928" label="Infections broncho-pulmonaires">
+<attvalues>
+<attvalue for="degree" value="3"/>
+</attvalues>
+</node><node id="20240901T145409" label="Pneumonies">
+<attvalues>
+<attvalue for="degree" value="9"/>
+</attvalues>
+</node><node id="20240901T160244" label="Dépistage pendant la grossesse">
+<attvalues>
+<attvalue for="degree" value="1"/>
+</attvalues>
+</node><node id="20240903T230337" label="Helicobacter pylori">
+<attvalues>
+<attvalue for="degree" value="0"/>
+</attvalues>
+</node><node id="20240904T183226" label="Streptococcus agalactiae">
+<attvalues>
+<attvalue for="degree" value="2"/>
+</attvalues>
+</node><node id="20240904T235349" label="Syndrome hémolytique et urémique">
+<attvalues>
+<attvalue for="degree" value="1"/>
+</attvalues>
+</node><node id="20240905T221827" label="Mécanimes de résistance aux antibiotiques">
+<attvalues>
+<attvalue for="degree" value="6"/>
+</attvalues>
+</node><node id="20240905T222613" label="MSLK">
+<attvalues>
+<attvalue for="degree" value="1"/>
+</attvalues>
+</node></nodes>
+<edges>
+<edge source="20230502T232947" target="20240601T183312" weight="1" />
+<edge source="20230502T232947" target="20240515T224550" weight="1" />
+<edge source="20230502T232947" target="20240612T233431" weight="1" />
+<edge source="20240515T224540" target="20240828T185327" weight="2" />
+<edge source="20240515T224550" target="20240905T221827" weight="1" />
+<edge source="20240515T224550" target="20240828T184411" weight="1" />
+<edge source="20240515T224830" target="20240828T192156" weight="1" />
+<edge source="20240515T224830" target="20240829T230553" weight="1" />
+<edge source="20240515T224830" target="20240829T225530" weight="1" />
+<edge source="20240515T224830" target="20240904T235349" weight="1" />
+<edge source="20240515T224830" target="20240515T224650" weight="1" />
+<edge source="20240515T224830" target="20240829T215907" weight="1" />
+<edge source="20240601T183212" target="20240601T183012" weight="1" />
+<edge source="20240601T183212" target="20240608T182904" weight="1" />
+<edge source="20240601T183212" target="20240515T224930" weight="1" />
+<edge source="20240601T183212" target="20240601T183122" weight="1" />
+<edge source="20240601T183312" target="20240515T224540" weight="1" />
+<edge source="20240601T183312" target="20240515T224830" weight="1" />
+<edge source="20240601T183312" target="20240515T224940" weight="1" />
+<edge source="20240601T183312" target="20240515T225630" weight="1" />
+<edge source="20240601T183312" target="20240601T183212" weight="1" />
+<edge source="20240601T183312" target="20240602T154050" weight="1" />
+<edge source="20240601T183312" target="20240602T154150" weight="1" />
+<edge source="20240601T183312" target="20240608T182804" weight="1" />
+<edge source="20240601T183312" target="20240731T204905" weight="1" />
+<edge source="20240602T154150" target="20240829T230553" weight="1" />
+<edge source="20240608T182804" target="20240901T111102" weight="1" />
+<edge source="20240608T182804" target="20240901T105739" weight="1" />
+<edge source="20240612T233431" target="20240816T121426" weight="1" />
+<edge source="20240612T233431" target="20240515T224650" weight="1" />
+<edge source="20240612T233431" target="20240601T183012" weight="1" />
+<edge source="20240612T233431" target="20240816T121324" weight="1" />
+<edge source="20240612T233431" target="20240816T121538" weight="1" />
+<edge source="20240612T233431" target="20240816T121919" weight="1" />
+<edge source="20240612T233431" target="20240515T225630" weight="1" />
+<edge source="20240612T233431" target="20240816T121758" weight="1" />
+<edge source="20240612T233431" target="20240731T205020" weight="1" />
+<edge source="20240612T233431" target="20240608T182904" weight="1" />
+<edge source="20240612T233431" target="20240515T224930" weight="1" />
+<edge source="20240612T233431" target="20240816T121647" weight="1" />
+<edge source="20240612T233431" target="20240515T225940" weight="1" />
+<edge source="20240612T233431" target="20240612T233531" weight="1" />
+<edge source="20240612T233431" target="20240612T233631" weight="1" />
+<edge source="20240612T233431" target="20240612T233731" weight="1" />
+<edge source="20240612T233531" target="20240602T154150" weight="1" />
+<edge source="20240612T233531" target="20240905T221827" weight="1" />
+<edge source="20240612T233631" target="20240828T192156" weight="1" />
+<edge source="20240731T204905" target="20240831T175811" weight="1" />
+<edge source="20240731T204905" target="20240731T205020" weight="1" />
+<edge source="20240731T204905" target="20240831T173233" weight="1" />
+<edge source="20240731T204905" target="20240816T121647" weight="1" />
+<edge source="20240731T204905" target="20240816T121919" weight="1" />
+<edge source="20240731T204905" target="20240829T230553" weight="1" />
+<edge source="20240731T204905" target="20240816T121758" weight="1" />
+<edge source="20240731T205020" target="20240831T173233" weight="1" />
+<edge source="20240731T205020" target="20240816T121647" weight="2" />
+<edge source="20240731T205020" target="20240816T121919" weight="1" />
+<edge source="20240816T121324" target="20240829T230553" weight="1" />
+<edge source="20240816T121324" target="20240829T215907" weight="1" />
+<edge source="20240816T121324" target="20240829T225530" weight="1" />
+<edge source="20240816T121647" target="20240731T205020" weight="1" />
+<edge source="20240816T121758" target="20240731T205020" weight="1" />
+<edge source="20240816T121758" target="20240831T175811" weight="1" />
+<edge source="20240816T121919" target="20240901T143951" weight="1" />
+<edge source="20240816T121919" target="20240901T145409" weight="1" />
+<edge source="20240816T121919" target="20240731T205020" weight="1" />
+<edge source="20240828T185327" target="20240515T224540" weight="1" />
+<edge source="20240828T185327" target="20240901T144149" weight="1" />
+<edge source="20240829T215907" target="20240515T224830" weight="1" />
+<edge source="20240829T215907" target="20240829T225800" weight="1" />
+<edge source="20240829T225530" target="20240829T215907" weight="1" />
+<edge source="20240829T225530" target="20240515T224830" weight="1" />
+<edge source="20240829T230553" target="20240829T225530" weight="1" />
+<edge source="20240829T230553" target="20240515T224830" weight="1" />
+<edge source="20240829T230553" target="20240602T154150" weight="1" />
+<edge source="20240831T173233" target="20240901T145409" weight="2" />
+<edge source="20240831T173233" target="20240901T143951" weight="1" />
+<edge source="20240831T173233" target="20240731T205020" weight="2" />
+<edge source="20240831T173233" target="20240901T144149" weight="1" />
+<edge source="20240831T175811" target="20240731T204905" weight="1" />
+<edge source="20240831T175811" target="20240816T121758" weight="1" />
+<edge source="20240901T105739" target="20240829T230553" weight="2" />
+<edge source="20240901T105739" target="20240816T121324" weight="2" />
+<edge source="20240901T105739" target="20240612T233531" weight="1" />
+<edge source="20240901T105739" target="20240829T215907" weight="1" />
+<edge source="20240901T105739" target="20240515T224650" weight="1" />
+<edge source="20240901T105739" target="20240816T121758" weight="1" />
+<edge source="20240901T105739" target="20240612T233731" weight="3" />
+<edge source="20240901T105739" target="20240816T121538" weight="1" />
+<edge source="20240901T105739" target="20240831T173233" weight="2" />
+<edge source="20240901T105739" target="20240828T192156" weight="1" />
+<edge source="20240901T105739" target="20240612T233631" weight="1" />
+<edge source="20240901T105739" target="20240828T185327" weight="1" />
+<edge source="20240901T105739" target="20240901T111102" weight="1" />
+<edge source="20240901T143951" target="20240515T224540" weight="1" />
+<edge source="20240901T143951" target="20240901T144149" weight="1" />
+<edge source="20240901T144149" target="20240816T121919" weight="1" />
+<edge source="20240901T144149" target="20240831T173233" weight="1" />
+<edge source="20240901T144529" target="20240831T173233" weight="1" />
+<edge source="20240901T144529" target="20240816T121919" weight="1" />
+<edge source="20240901T144928" target="20240901T145409" weight="1" />
+<edge source="20240901T144928" target="20240515T225630" weight="1" />
+<edge source="20240901T144928" target="20240831T232003" weight="1" />
+<edge source="20240901T145409" target="20240831T173233" weight="2" />
+<edge source="20240901T145409" target="20240816T121919" weight="3" />
+<edge source="20240901T145409" target="20240515T225630" weight="2" />
+<edge source="20240901T145409" target="20240828T192156" weight="2" />
+<edge source="20240901T145409" target="20240612T233531" weight="1" />
+<edge source="20240901T160244" target="20240601T183122" weight="1" />
+<edge source="20240904T183226" target="20240901T145409" weight="1" />
+<edge source="20240904T183226" target="20240731T205020" weight="2" />
+<edge source="20240905T221827" target="20240612T233531" weight="1" />
+<edge source="20240905T221827" target="20240828T192156" weight="1" />
+<edge source="20240905T221827" target="20240831T173233" weight="1" />
+<edge source="20240905T221827" target="20240905T222613" weight="1" />
+</edges>
+</graph>
+</gexf>

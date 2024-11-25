@@ -1,0 +1,3 @@
+* 2024-05-14
+** 09:00 Réunion flash
+pathMR = partie automatique du pipeline [[Vue d'ensemble pipeline]]

@@ -1,0 +1,20 @@
+* 2024-05-27
+** 09:59 Discussion virigine
+- Retour FAQ bio -> regarder vidéos Benjamin + retour + MAJ future
+- Regarder à l'aveugle les variants manqué par Curagen v1
+- Présentation commune avec les bios des "trous" de curagen ?
+** 11:02 Étude dossiers manqués
+http://172.25.219.90:8080/aurapport/app/#/main/snv?case=MR-2200237
+dans aurapport : le variant  chr12:g.111347618_111347619insAC n'est pas dans IGV ?
+** 15:13 Réunion virginie demain
+- Accès auraweb ok mais pas aurapport
+- variants IKBKG: mail bio pour discuter décision ? Guilaine Boursier
+  Avec BLAT on est assez confiant. Sur un read avec deletion
+149     1   150   150   100.0%  chrX                 -   154643828 154643979    152
+149     1   150   150   100.0%  chrX                 +   154560459 154560610    152
+ 28     3    47   150    83.4%  chrX                 -   130249297 130249341     45
+ 23   110   133   150   100.0%  chr9                 +   134170923 134170948     26
+ 22   106   135   150    69.6%  chr6_GL000251v2_alt  +     1408511   1408533     23   What is chrom_alt?
+ 21    39    61   150    95.7%  chr8                 +    66429131  66429153     23
+ 20    15    34   150   100.0%  chr10                +    72875848  72875867     20
+ 18    31    48   150   100.0%  chr16                +    47049679  47049696     18

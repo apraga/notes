@@ -1,0 +1,31 @@
+* Réunion Julien fin de stage
+** Stage
+   - Faire retour écrit sur le stage (qq éléments donnés à l'oral mais y réfléchir)
+** Pseudogènes
+   - intervalles pas clair
+   - algorithme simple avec Julien : on masque les régions homologues puis on "nettoye" les variants en utilisant les SDs. Enfin, on utilise la cohorte pour filtrer le bruit
+   OK pour continuer à travailler à distance
+
+   TODO
+   - contacter Steyaert pour dire qu'on a commencé à regarder pour porter en hg38 et sur les gènes
+   -- si déjà travaillé dessus, on lance sur la cohorte un après-midi et on s'arrête là
+   -- sinon discuter collaboration pour comparer nos résultats
+   - NA12878 en hg18 sur des variants (courants) de pseudogènes pour tester et comprendre
+   - lifter fichier SD
+   - 3e temps : passer aux gènes complets
+
+** Facebook
+   OK pour continuer à travailler à distance
+   Pas d'application dans un premier temps mais bien détailler tous les cas avec des exemples
+   Envoyer mi-novembre une version pour le canadien
+** Llama
+   - tester avec un petit modèle
+   - tester en CLI sur PC portable pour voir si c'est lié au cluster 
+   - tester sur mésocentre si besoin
+** Post-internat
+   Recontacter dans 6 mois
+   Assistanat possible, en discussion avec Charles pour possiblement un poste dans Auragen. On aura les idées plus claires dans 1.5 ans dans le plan 2025
+* Réunion Damien disomie
+  - ok pour diffuser dans les RoH avec ceux flaggé + un lien vers les autres si besoin
+  - faire un support de formation 
+  - Damien voudrait revoir les dossiers T2

@@ -1,0 +1,31 @@
+* 2024-05-07
+** 09:00 Formation auragen
+- Impossible d'accéder aux données CNV des dossiers tests
+- cas de virginie : cf slides delhomo
+
+Jumeaux monozygotes : quelle est le taux de similarité ?
+- Revue 2010 https://sci-hub.ru/https://onlinelibrary.wiley.com/doi/epdf/10.1002/ajmg.b.31091 :
+  - phénotypes discordants rapportés
+  - plusieurs cas de discordances génétique sur chromosomique CNVs, rare cas sur SNVs, disomie uniparentale, répétition triplet, mitochondrie, longeur télomère
+    - mécanisme possibles : mutation post-zygotique (mosaïcisme somatique) ,
+épigénétique, inactivation X
+
+Notes
+- [[Génétique biologique#Pseudogène]]
+- [[Génétique biologique#Mitochondrial]]
+
+** 14:00 Réunion virgine
+- samplot/igv : visible depuis PDF pour vieux dossier (lien dans PDf).
+  Remplacer IP par https://portail.auragen.fr/ si besoin
+- mise à jour slides de formation : commentaire dans le document ou sur
+  confluence selon le cas. Tagger virginie si julien propriétaire
+  *Mission : mettre à jour excel dans les cases oranges seul*
+- objectif : s'entraîner sur les cas patho et compléter ce qui est sur
+  hygen mais absent d'aurapport (si retrouvé seqone)
+- mise à jour par virginie avec script puis collé à la main
+- CR positif = variant rendu qq soit classif
+- compléter zygosité, héritabilité Dossiers intéressants à regarder
+- low mappabilité dans excel
+- GBA 2202491 Doc : liste sur conflunce "intérêt pour les internes"
+  Regarder stats par filier
+- avancée du mois = /diag patho/

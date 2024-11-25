@@ -1,0 +1,9 @@
+* 2024-07-13
+** 22:53 Deepvariant et Tensorflow
+Patch upstream de tensorflow ne résout pas tout. On peut soumettre le patch mais le plus simple pour deepvariant est de bloquer python en 3.11 et de compiler sur le mésocentre
+Ce qui bloque est le (nouveau) paquet clu
+
+En fait, tensorflow est bien téléchargé depuis le cache pour clu (testé avec nix-shell .. -A python311.clu)
+On a désactivé 3.12 pour clu
+
+Deepvariant compile sur le mésocentre (mais pas sur notre machine) ! On force 3.11 dans deepvariant auss -> ok

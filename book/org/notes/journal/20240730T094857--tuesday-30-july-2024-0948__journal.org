@@ -1,0 +1,34 @@
+#+title:      Tuesday 30 July 2024 09:48
+#+date:       [2024-07-30 Tue 09:48]
+#+filetags:   :journal:
+#+identifier: 20240730T094857
+
+* Facebook
+** Brainstorming avec Julien <2024-07-29 Mon 14:00>
+- Brouillon fait
+- OK pour la séparation des différents cas
+- Argumentaire v0.1 mais 2 sont incomplets / à revoir
+  -
+  - combinaison de variants rare + phénotype rare : c'est le cas qui craint. Pas de solution pour le moment
+
+** Réunion Philippe Jean <2024-07-29 Mon 17:00>
+"Projet fini", content de la classification.
+Suggestions
+- Intro : utiliser le test de paternité comme accroche ?
+- Bien définir les termes pour la CNIL (génotype, phénotype...)
+- Utiliser les examples pris sur le forum en conclusion (mais anonymisé)
+Associer biostat ? Julien va voir
+** Précision Juliens sur Slack aujourd'hui
+:PROPERTIES:
+:CUSTOM_ID: h:c432fed7-380c-4037-a495-cc0b54e57038
+:END:
+Gestion des variants non présents dans gnomAD
+- variants distants : indépendants et proba  <1e-6 (nombre de personnes dans gnomAD = 800K ) donc unique
+- variants "proches":
+  - comment définir des variants proches ?
+  - comment gérer ? probabilité conditionnelle ?
+Au final, on part sur
+1. un modèle stat pour estimer la probabilité de mutation d'un variant (de novo, à pondérer sur la cohorte ?)
+** À faire
+- Faire un plan à partir du document de Julien
+- Decipher ne montre que des patients vraiment publics ?

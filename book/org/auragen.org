@@ -1,0 +1,40 @@
+* Divers
+** WAIT Vérifier CR corrigé MR-2304760 Hygen
+  /Entered on/  [2024-07-08 lun. 08:40]
+  Mail envoyé <2024-07-10 mer.>
+** WAIT Voir avec virginie del(5)(q35.3q35.3)(?177249773_?177257478)dn manqué
+MR-2400262
+Rendu par N. Chatron “à l’oeil” sur la tlinique
+Suggestion de N. Chatron “sauver les CNVs de CNVnator inférieur au seuil mais qui sont dans des gènes ranké par PhenoGenius. Ou a minima ceux qui touchent de la séquence codante.”
+  /Entered on/  [2024-07-19 Fri 12:13]
+** WAIT Virginie Pourquoi  variant KCNB1 chr20:g.49374327del non rendu v7 et v8  ?
+MR-2304498-t
+Mis sur "variants manqué" confluence
+  /Entered on/  [2024-07-19 Fri 12:15]
+* Formation
+:PROPERTIES:
+:CATEGORY: formation
+:END:
+** WAIT Améliorations slides bioinfo :bioinfo:
+*** Général
+
+- EBV: bien précisé qu'il est gardé dans le génome et non masqué (faire une liste sur la diapo)
+- [X] contrôle qualité progressif : 20x -> 10x (1.1 et 4.1) représentation trompeuse car on a plus de résultat en 10x qu'en 20x -> corrigé par virginie
+- différence aurapport-curagen-seqone n'est pas du tout claire, notamment rôle de curagenène. Il faudrait rajouter cette figure dans la présentation générale (voir
+[[https://auragen.atlassian.net/wiki/spaces/~7120201ca2598be5ef4936a1110033f28f4fed/overview][Vue d'ensemble du pipeline]]
+
+*** TODO Refaire le point avec Virginie sur commentaires
+SCHEDULED: <2024-09-01 dim.>
+** WAIT Figure curagen
+/Créé le/ [2024-05-16 jeu. 16:22]
+Attendre la v2
+** TODO Vidéos pas-à-pas [[https://app.videas.fr/v/6dbbf878-740f-4e31-9587-76202736c9ae/][IGV]] :faq:
+SCHEDULED: <2024-09-05 jeu.>
+  /Entered on/  [2024-05-27 lun. 10:00]
+** TODO [[https://anpgm.fr/media/documents/BP-NGSDiag_001_Interpretation_Variants_v2.pdf][Recos NGS-diag SNV]]
+  /Entered on/  [2024-05-27 lun. 14:18]
+** TODO Compléter FAQ bio : un même variant peut sur plusieurs gènes :faq:
+  /Entered on/  [2024-05-28 mar. 12:02]
+On peut avoir plusieures lignes pour un variant : présenter un cas (découvert sur mais MR-2305018 pas assez propre (VAF=28=))
+Attention: pour clinvar, on utilise la position donc on peut flagger sur le mauvais gènes...
+Mettre à jour https://auragen.atlassian.net/wiki/spaces/~7120201ca2598be5ef4936a1110033f28f4fed/pages/1524695047/Questions

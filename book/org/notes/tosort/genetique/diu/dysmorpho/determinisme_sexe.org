@@ -1,0 +1,64 @@
+#+TITLE: Baset genetiques du determinisme du sexe
+#AUTHOR: Cindy Colson
+#+SUBTITLE: Semanie 3 <2022-05-09 Mon>
+
+#+TITLE:
+
+Multiples gènes avant SRY
+Developpement de la gonade primitive : CBX2, LHX9
+WT1 = gonade et rein.syndrome de DenysDrasch, Frasier, Meacham
+NR5A1 = code SF1 -> différentiation gonade et surrénalde (tissus stéroïdiens)
+corrélation génotype phénotype mais
+** Famille 1 : asplénie chez le père, hypospade banal, pas de problème de fécondité
+-> variabilité phénotypique
+** Famille 2
+
+**Penser SF1 si ménopause précoce avec défault virilisation**
+-> vérifier la rate si anomalie génitale
+* SRY
+SRY -> orientation testicules, sinon ovaire
+- perte de fonction : ?
+- gain de fonction (translocation sur X : cross-over juste au dessus ) -> sujjet XX plus ou moins virilisé
+* DAX1
+réprime SOX1 (voie de signalisation SRY), et NR5A1 FS
+* SOX9
+différentitation cellules Sertoli, AMH
+Aussi exprimé dans cartilage embryonnaire -> dysplasie campomélique
+Anomalie de régulation sur région très en amont
+Si duplication de plus grande taille : anomalie syndromique
+* DMRT1
+* DHH1
+patho récessive
+XY = risque gonadoblalstome
+polyneuropathie car expression dans les cellules de Schwann
+
+WNT4 active DAX1
+- SERKAL si biallélique
+RSPO1 : synergie WNT4
+* Différentiation sexuelle masculine
+Sertoli -> AMH -> disparaitre les canaux de mulleur
+   C de Leydig -> testostérone -> virilise les canaux de Wolff (épididyme..) et transforme en DHT qui va viriliser les organes génitaux externes
+** Anomalies AMH et récepeteur
+AR
+Testicules normaux et fonctionnels mais cryptorchidie (gène la migration testiculaire)
+
+** LH
+XY :
+- type 1 aspect féminin si XY et type 1, sans utérus
+- type 2 : défaut de virilisation de degré variable
+XX aménorrhée primaire
+
+Défaut de synthese du cholesterol : ex du SLO
+*** Anomalie du gène de répteur des androgènes`
+Pas d'acné,
+Risque de gonadoblastome
+
+* Androgene du sujet XX
+Hyperplasie congénitale des surrenaleu
+synthese déviée
+insuffisance surrénalienne
+Ex du ttt : amélioration du l'aspect
+Important pour les futures grossesses : ttt chez la mere par corticothérapie
+
+CCl : tres nombreuses anomalie
+Urgence en neonatal, parfois en pereinatal

@@ -1,0 +1,41 @@
+:PROPERTIES:
+:ID:       f7c58844-2a43-4eaa-89ed-711ec8b8904c
+:END:
+#+title: Fascisme
+#+filetags: historie,politique
+
+Pas de définition consensuelle. Certains historiants remettent en cause le concept même.
+
+* Griffin
+- Définition "universelle" en se basant sur l'idéologie
+- Sorte d'ultranationalisme visant à faire une renaissance au travers d'une mythologie uptopique avec des moyennes révolutionnaires ou populistes
+- Points importants
+  - renaissance nationaliste = thème différenciant fascisme des autres dictatures
+  - quelques soit la manière d'arriver au pouvoir, il faut détruire l'ordre et les instutitions démocratiques existantes
+  - 3 sorties de fascisme après la guerre
+    1. nostalgique (restes des SS)
+    2. mimétique (exclus sociaux adoptant les symboles, ex: skinhead)
+    3. néo-fascisme (innovation intellectuelle extrême droite)
+* Paxton
+- Définition praxéologique (= le fait que le comportement des humains est conscient ??)
+- pas de définition universelle car variabilité trop importante entre les contexte nationaux
+- facteur majeur = ce qui les motive est le conflit (entre les nations, races ou peuples)
+  - objectif principal = lutte constante pour qu'une communauté s'affirme et domine les autres
+  - ce doit être le peuple "juste"
+- l'utopie fascist est basée sur un passé mythologique (Rome, Lebenstram)
+  - donc critique complète du présent
+- c'est un credo plus qu'une idéoogie
+  - ça ne dépend pas d'une vérité : tout ce qui permet au fascite de dominer est vrai
+- basé sur une union mystique entre le chef et la destinée du peule
+  - expérience sensuelle de la politique (se faire submerger par des sentiments partagés, frisson de la domination)
+  - pas de programme ! (changé selon les besoin)
+- c'est un comportement politique
+
+Note: il y a du fascisme aux États-Unis, les thèmes sont différents de l'Eurepe.Ex Klu Klux Klan
+* Roger Eatwell
+Proche Griffin. Il faut 3 thèmese
+1. nation = communauté spirituelle avec loyauté et dévotion totale
+2. "homme nouveau"
+3. authoritarisme mais entre le capitalisme et socialisme
+* Source
+https://www.reddit.com/r/AskHistorians/comments/e57h4n/what_is_fascism/

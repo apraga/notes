@@ -1,0 +1,6 @@
+#+title: Someday
+* Rust
+:PROPERTIES:
+:CATEGORY: rust
+:END:
+** [[https://rust-exercises.com/][100 exercises to learn rust]]

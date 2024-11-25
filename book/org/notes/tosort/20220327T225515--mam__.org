@@ -1,0 +1,2217 @@
+* TODO Script
+:PROPERTIES:
+:CUSTOM_ID: todo-script
+:END:
+** TODO Classiques jaunes
+:PROPERTIES:
+:CUSTOM_ID: todo-classiques-jaunes
+:END:
+Haskell
+
+TODO: - [ ] Scripter rtorrent 1. Shell
+[[https://elektito.com/2016/02/10/rtorrent-xmlrpc/]]
+[[https://github.com/rakshasa/rtorrent/wiki/RPC-Setup-XMLRPC]] XMLrpc
+est dans tools/ si on compile xmlrpc-c 2. WAIT Python
+[[https://pyrocore.readthedocs.io/en/latest/]] Pas besoin de serveur
+web 1. TODO Script d'install ne fonction pas sous freebsd Installer
+coreutils Installer python2 TODO: remplacer md5sum par gmd5sum Changer
+appels à test Utiliser avec bash ...sh python2 3. Haskell - [ ] Passer
+tout en Text
+
+** TODO Cairn
+:PROPERTIES:
+:CUSTOM_ID: todo-cairn
+:END:
+*** TODO Upload automatique ??
+:PROPERTIES:
+:CUSTOM_ID: todo-upload-automatique
+:END:
+*** TODO Translation par batch
+:PROPERTIES:
+:CUSTOM_ID: todo-translation-par-batch
+:END:
+API payante donc on fait un fichier texte contenant toutes les
+descriptions.
+
+=et d̊eviennent \ n et \ r donc il faut les remplacer. Format:=
+
+#+begin_example
+--- test1.json: $description
+--- test2.json: $description
+#+end_example
+
+Haskel
+
+*** Pour info: editer
+:PROPERTIES:
+:CUSTOM_ID: pour-info-editer
+:END:
+GET sur edit.php?id=XXX Puis POST sur takeedit.php
+
+* TODO Upload
+:PROPERTIES:
+:CUSTOM_ID: todo-upload
+:END:
+* TODO Classiques Jaunes (638)
+:PROPERTIES:
+:CUSTOM_ID: todo-classiques-jaunes-638
+:END:
+Attention, limite de téléchargement de PDF par heure
+
+** TODO No author
+:PROPERTIES:
+:CUSTOM_ID: todo-no-author
+:END:
+- [ ]
+  [[https://classiques-garnier.com/dictionnaire-des-philosophes-francais-du-xviie-siecle-volume-i-ii-acteurs-et-reseaux-du-savoir.html%3E][Dictionnaire
+  des philosophes français du xviie siècle. Volume I - II]]
+- [ ]
+  [[https://classiques-garnier.com/tristan-et-yseut-les-tristan-en-vers-1.html%3E][Tristan
+  et Yseut]]
+- [ ]
+  [[https://classiques-garnier.com/dictionnaire-montaigne.html%3E][Dictionnaire
+  Montaigne]]
+- [ ] [[https://classiques-garnier.com/la-nef-des-folles-1.html%3E][La
+  Nef des folles]]
+- [ ]
+  [[https://classiques-garnier.com/dictionnaire-economique-de-l-entrepreneur-1.html%3E][Dictionnaire
+  économique de l'entrepreneur]]
+- [ ]
+  [[https://classiques-garnier.com/le-chevalier-aux-deux-epees-roman-arthurien-anonyme-du-xiiie-siecle-1.html%3E][Le
+  Chevalier aux deux épées]]
+- [ ]
+  [[https://classiques-garnier.com/le-cheval-volant-en-bois.html%3E][Le
+  Cheval volant en bois]]
+- [ ] [[https://classiques-garnier.com/le-coran.html%3E][Le Coran]]
+- [ ]
+  [[https://classiques-garnier.com/les-cent-nouvelles-nouvelles.html%3E][Les
+  Cent Nouvelles nouvelles]]
+- [ ]
+  [[https://classiques-garnier.com/l-art-de-la-conversation-anthologie.html%3E][L'Art
+  de la conversation]]
+- [ ] [[https://classiques-garnier.com/les-evangiles.html%3E][Les
+  Évangiles]]
+- [ ]
+  [[https://classiques-garnier.com/la-fleur-de-la-prose-francaise-depuis-les-origines-jusqu-a-la-fin-du-xvie-siecle-textes-choisis.html%3E][La
+  Fleur de la prose française depuis les origines jusqu'à la fin du XVIe
+  siècle]]
+- [ ]
+  [[https://classiques-garnier.com/la-fleur-de-la-poesie-francaise-depuis-les-origines-jusqu-a-la-fin-du-xve-siecle-textes-choisis.html%3E][La
+  Fleur de la poésie française depuis les origines jusqu'à la fin du XVe
+  siècle]]
+- [ ]
+  [[https://classiques-garnier.com/anthologie-poetique-francaise-du-xvie-siecle-tome-i-poemes-choisis.html%3E][Anthologie
+  poétique française du XVIe siècle. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/anthologie-poetique-francaise-du-xvie-siecle-tome-ii-poemes-choisis.html%3E][Anthologie
+  poétique française du XVIe siècle. Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/chrestomathie-du-moyen-age-morceaux-choisis-d-auteurs-francais.html%3E][Chrestomathie
+  du Moyen Âge]]
+- [X] [[https://classiques-garnier.com/la-chanson-de-roland.html%3E][La
+  Chanson de Roland]]
+- [ ]
+  [[https://classiques-garnier.com/les-satires-francaises-du-xvie-siecle-tome-i.html%3E][Les
+  Satires françaises du XVIe siècle. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/les-satires-francaises-du-xvie-siecle-tome-ii.html%3E][Les
+  Satires françaises du XVIe siècle. Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/les-satires-francaises-du-xviie-siecle-tome-i.html%3E][Les
+  Satires françaises du XVIIe siècle. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/les-satires-francaises-du-xviie-siecle-tome-ii.html%3E][Les
+  Satires françaises du XVIIe siècle. Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/satyre-menippee-de-la-vertu-du-catholicon-d-espagne-et-de-la-tenue-des-estatz-de-paris-mdxciii.html%3E][Satyre
+  Ménippée de la vertu du catholicon d'Espagne et de la tenue des estatz
+  de Paris MDXCIII]]
+- [ ]
+  [[https://classiques-garnier.com/le-theatre-inedit-du-xixe-siecle-tome-i.html%3E][Le
+  Théâtre inédit du XIXe siècle. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/le-theatre-inedit-du-xixe-siecle-tome-ii.html%3E][Le
+  Théâtre inédit du XIXe siècle. Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/theatre-de-la-foire-recueil-de-pieces-representees-aux-foires-saint-germain-et-saint-laurent.html%3E][Théâtre
+  de la foire]]
+- [ ]
+  [[https://classiques-garnier.com/theatre-de-la-revolution.html%3E][Théâtre
+  de la Révolution]]
+- [ ]
+  [[https://classiques-garnier.com/anthologie-poetique-francaise-du-xviie-siecle-tome-i-poemes-choisis.html%3E][Anthologie
+  poétique française du xviie siècle. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/anthologie-poetique-francaise-du-xviie-siecle-tome-ii-poemes-choisis.html%3E][Anthologie
+  poétique française du xviie siècle. Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/anthologie-poetique-francaise-du-xviiie-siecle-poemes-choisis.html%3E][Anthologie
+  poétique française du xviiie siècle]]
+- [ ]
+  [[https://classiques-garnier.com/l-imitation-de-jesus-christ.html%3E][L'Imitation
+  de Jésus-Christ]]
+- [ ]
+  [[https://classiques-garnier.com/les-chefs-d-oeuvre-du-theatre-espagnol-ancien-et-moderne-tome-i-lope-de-vega-tirso-de-molina-augustin-moreto.html%3E][Les
+  Chefs-d'œuvre du théâtre espagnol ancien et moderne. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/les-chefs-d-oeuvre-du-theatre-espagnol-ancien-et-moderne-tome-ii-calderon-alarcon.html%3E][Les
+  Chefs-d'œuvre du théâtre espagnol ancien et moderne. Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/les-mille-et-un-jours-contes-orientaux.html%3E][Les
+  Mille et Un Jours]]
+- [ ]
+  [[https://classiques-garnier.com/chansons-de-geste-roland-aimeri-de-narbonne-et-le-couronnement-de-louis-1.html%3E][Chansons
+  de geste]]
+- [ ]
+  [[https://classiques-garnier.com/recueil-de-farces-soties-et-moralites-du-xve-siecle-1.html%3E][Recueil
+  de farces, soties et moralités du XVe siècle]]
+- [ ]
+  [[https://classiques-garnier.com/tragedies-et-recits-de-martyres-en-france-fin-xvie-debut-xviie-siecle-1.html%3E][Tragédies
+  et récits de martyres en France (fin xvie -- début xviie siècle)]] ##
+  TODO Abbé de Voisenon
+- [ ]
+  [[https://classiques-garnier.com/contes-suivis-des-poesies-fugitives.html%3E][Contes
+  suivis des Poésies fugitives]] ## TODO Adam Mickiewicz
+- [ ] [[https://classiques-garnier.com/pan-tadeusz.html%3E][Pan
+  Tadeusz]] ## TODO Alain-Fournier
+- [ ]
+  [[https://classiques-garnier.com/le-grand-meaulnes-precede-de-miracles-alain-fournier-par-jacques-riviere.html%3E][Le
+  Grand Meaulnes précédé de Miracles, Alain-Fournier par Jacques
+  Rivière]] ## TODO Alain-René Lesage
+- [ ]
+  [[https://classiques-garnier.com/histoire-de-gil-blas-de-santillane-tome-i.html%3E][Histoire
+  de Gil Blas de Santillane. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/histoire-de-gil-blas-de-santillane-tome-ii.html%3E][Histoire
+  de Gil Blas de Santillane. Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/histoire-de-guzman-d-alfarache.html%3E][Histoire
+  de Guzman d'Alfarache]]
+- [ ] [[https://classiques-garnier.com/le-diable-boiteux.html%3E][Le
+  Diable boîteux]]
+- [ ]
+  [[https://classiques-garnier.com/lesage-alain-rene-theatre-turcaret-crispin-rival-de-son-maitre-la-tontine.html%3E][Théâtre]]
+  ​## TODO Alessandro Manzoni
+- [ ]
+  [[https://classiques-garnier.com/les-fiances-tome-i-chapitres-i-xix.html%3E][Les
+  Fiancés. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/les-fiances-tome-ii-chapitres-xx-xxxviii.html%3E][Les
+  Fiancés. Tome II]] ## TODO Alexandre Pouchkine
+- [ ]
+  [[https://classiques-garnier.com/la-dame-de-pique-et-autres-nouvelles.html%3E][La
+  Dame de Pique et autres nouvelles]] ## TODO Alexis Piron
+- [ ]
+  [[https://classiques-garnier.com/piron-alexis-oeuvres-choisies.html%3E][Œuvres
+  choisies]] ## TODO Alfred de Musset
+- [ ] [[https://classiques-garnier.com/contes-5.html%3E][Contes]]
+- [ ]
+  [[https://classiques-garnier.com/musset-alfred-de-premieres-poesies-1829-1835-oeuvres-completes-1.html%3E][Premières
+  Poésies 1829-1835]]
+- [ ]
+  [[https://classiques-garnier.com/musset-alfred-de-la-confession-d-un-enfant-du-siecle-oeuvres-completes-6.html%3E][La
+  Confession d'un enfant du siècle]]
+- [ ]
+  [[https://classiques-garnier.com/musset-alfred-de-comedies-et-proverbes-i-oeuvres-completes-3.html%3E][Comédies
+  et proverbes. I]]
+- [ ]
+  [[https://classiques-garnier.com/musset-alfred-de-comedies-et-proverbes-ii-oeuvres-completes-3.html%3E][Comédies
+  et proverbes. II]]
+- [ ]
+  [[https://classiques-garnier.com/musset-alfred-de-poesies-nouvelles-suivies-des-poesies-complementaires-et-des-poesies-posthumes-oeuvres-completes-2.html%3E][Poésies
+  nouvelles suivies des Poésies complémentaires et des Poésies
+  posthumes]]
+- [ ]
+  [[https://classiques-garnier.com/musset-alfred-de-melanges-de-litterature-et-de-critique-i-oeuvres-completes-7.html%3E][Mélanges
+  de littérature et de critique. I]]
+- [ ]
+  [[https://classiques-garnier.com/musset-alfred-de-melanges-de-litterature-et-de-critique-ii-oeuvres-completes-7.html%3E][Mélanges
+  de littérature et de critique. II]]
+- [ ]
+  [[https://classiques-garnier.com/musset-alfred-de-nouvelles-oeuvres-completes-4.html%3E][Nouvelles]]
+  ​## TODO Alfred de Vigny
+- [ ]
+  [[https://classiques-garnier.com/servitude-et-grandeur-militaires.html%3E][Servitude
+  et grandeur militaires]]
+- [ ]
+  [[https://classiques-garnier.com/stello-suivi-de-daphne.html%3E][Stello
+  suivi de Daphné]]
+- [ ]
+  [[https://classiques-garnier.com/poesies-completes.html%3E][Poésies
+  complètes]]
+- [ ]
+  [[https://classiques-garnier.com/vigny-alfred-de-theatre-complet-en-vers-compositions-d-apres-shakespeare-tome-i-le-more-de-venise-shylock-romeo-et-juliette.html%3E][Théâtre
+  complet en vers (compositions d'après Shakespeare). Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/vigny-alfred-de-theatre-complet-en-prose-tome-ii-la-marechale-d-ancre-quitte-pour-la-peur-chatterton.html%3E][Théâtre
+  complet en prose. Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/cinq-mars-ou-une-conjuration-sous-louis-xiii.html%3E][Cinq-Mars
+  ou une Conjuration sous Louis XIII]] ## TODO Alphonse Daudet
+- [ ]
+  [[https://classiques-garnier.com/tartarin-de-tarascon.html%3E][Tartarin
+  de Tarascon]] ## TODO Alphonse de Lamartine
+- [ ]
+  [[https://classiques-garnier.com/meditations.html%3E][Méditations]]
+- [ ]
+  [[https://classiques-garnier.com/recueillements-poetiques.html%3E][Recueillements
+  poétiques]]
+- [ ]
+  [[https://classiques-garnier.com/graziella-suivie-de-raphael.html%3E][Graziella
+  suivie de Raphaël]]
+- [ ]
+  [[https://classiques-garnier.com/jocelyn-episode-journal-trouve-chez-un-cure-de-village.html%3E][Jocelyn
+  Épisode]]
+- [ ]
+  [[https://classiques-garnier.com/harmonies-poetiques-et-religieuses.html%3E][Harmonies
+  poétiques et religieuses]]
+- [ ]
+  [[https://classiques-garnier.com/histoire-de-la-revolution-de-1848-tome-ii-livres-ix-xv.html%3E][Histoire
+  de la Révolution de 1848. Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/cours-familier-de-litterature-tome-i-extraits.html%3E][Cours
+  familier de littérature. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/cours-familier-de-litterature-tome-ii-extraits.html%3E][Cours
+  familier de littérature. Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/histoire-de-la-revolution-de-1848-tome-i-livres-i-viii.html%3E][Histoire
+  de la Révolution de 1848. Tome I]] ## TODO André Chénier
+- [ ]
+  [[https://classiques-garnier.com/chenier-andre-oeuvres-poetiques-tome-i-bucoliques-epigrammes-poesies-diverses-elegies.html%3E][Œuvres
+  poétiques. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/chenier-andre-oeuvres-poetiques-tome-ii-epitres-poemes-theatre-hymnes-odes-iambes-poesies-diverses.html%3E][Œuvres
+  poétiques. Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/chenier-andre-oeuvres-en-prose-oeuvres-politiques-correspondance-et-pieces-justificatives.html%3E][Œuvres
+  en prose]] ## TODO André Suarès
+- [ ]
+  [[https://classiques-garnier.com/les-premiers-ecrits-documents-et-manuscrits-1.html%3E][Les
+  Premiers Écrits : documents et manuscrits]] ## TODO Ann Radcliffe
+- [ ]
+  [[https://classiques-garnier.com/le-roman-de-la-foret-1.html%3E][Le
+  Roman de la forêt]] ## TODO Anne Cadin
+- [ ]
+  [[https://classiques-garnier.com/le-moment-americain-du-roman-francais-1945-1950-1.html%3E][Le
+  Moment américain du roman français (1945-1950)]] ## TODO Antoine
+  Furetière
+- [ ] [[https://classiques-garnier.com/le-roman-bourgeois.html%3E][Le
+  Roman bourgeois]] ## TODO Antoine Galland
+- [ ]
+  [[https://classiques-garnier.com/les-mille-et-une-nuits-contes-arabes-tome-i.html%3E][Les
+  Mille et Une Nuits Contes arabes. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/les-mille-et-une-nuits-contes-arabes-tome-ii.html%3E][Les
+  Mille et Une Nuits Contes arabes. Tome II]] ## TODO Antoine Hamilton
+- [ ]
+  [[https://classiques-garnier.com/memoires-du-comte-de-gramont.html%3E][Mémoires
+  du comte de Gramont]] ## TODO Antoine de La Sale
+- [ ]
+  [[https://classiques-garnier.com/les-quinze-joyes-de-mariage-1.html%3E][Les
+  Quinze Joyes de mariage]] ## TODO Antonio Rocco
+- [ ]
+  [[https://classiques-garnier.com/amour-est-un-pur-interet-suivi-de-de-la-laideur-1.html%3E][Amour
+  est un pur intérêt suivi de De la laideur]] ## TODO Antonio de Guevara
+- [ ]
+  [[https://classiques-garnier.com/du-mespris-de-la-court-de-la-louange-de-la-vie-rustique-1.html%3E][Du
+  mespris de la court & de la louange de la vie rustique]] ## TODO
+  Arthur de Gobineau
+- [ ]
+  [[https://classiques-garnier.com/le-mouchoir-rouge-et-autres-nouvelles.html%3E][Le
+  Mouchoir rouge et autres nouvelles]]
+- [ ]
+  [[https://classiques-garnier.com/nouvelles-asiatiques.html%3E][Nouvelles
+  asiatiques]] ## TODO Astolphe de Custine
+- [ ] [[https://classiques-garnier.com/la-russie-en-1839.html%3E][La
+  Russie en 1839]] ## TODO Auguste Barthélemy
+- [ ] [[https://classiques-garnier.com/nemesis.html%3E][Némésis]] ##
+  TODO Auguste Brizeux
+- [ ]
+  [[https://classiques-garnier.com/brizeux-auguste-oeuvres-tome-i-marie-telen-arvor-furnez-breiz.html%3E][Œuvres.
+  Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/brizeux-auguste-oeuvres-tome-ii-les-bretons.html%3E][Œuvres.
+  Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/brizeux-auguste-oeuvres-tome-iii-la-fleur-d-or-histoires-poetiques-livres-i-ii.html%3E][Œuvres.
+  Tome III]]
+- [ ]
+  [[https://classiques-garnier.com/brizeux-auguste-oeuvres-tome-iv-histoires-poetiques-livres-iii-vii-poetique-nouvelle-suivies-d-oeuvres-inedites.html%3E][Œuvres.
+  Tome IV]] ## TODO Auguste Comte
+- [ ]
+  [[https://classiques-garnier.com/cours-de-philosophie-positive-tome-i-discours-sur-l-esprit-positif.html%3E][Cours
+  de philosophie positive. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/cours-de-philosophie-positive-tome-ii-discours-sur-l-esprit-positif.html%3E][Cours
+  de philosophie positive. Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/catechisme-positiviste-ou-sommaire-exposition-de-la-religion-universelle.html%3E][Catéchisme
+  positiviste ou sommaire exposition de la religion universelle]] ##
+  TODO Auguste de Villiers de l'Isle-Adam
+- [ ]
+  [[https://classiques-garnier.com/contes-cruels-suivis-des-nouveaux-contes-cruels.html%3E][Contes
+  cruels suivis des Nouveaux Contes cruels]] ## TODO Augustin Thierry
+- [ ]
+  [[https://classiques-garnier.com/thierry-augustin-recits-des-temps-merovingiens-precedes-des-considerations-sur-l-histoire-de-france-i-oeuvres-completes-5.html%3E][Récits
+  des temps mérovingiens précédés des Considérations sur l'histoire de
+  France. I]]
+- [ ]
+  [[https://classiques-garnier.com/thierry-augustin-recits-des-temps-merovingiens-precedes-des-considerations-sur-l-histoire-de-france-ii-oeuvres-completes-5.html%3E][Récits
+  des temps mérovingiens précédés des Considérations sur l'histoire de
+  France. II]]
+- [ ]
+  [[https://classiques-garnier.com/thierry-augustin-lettres-sur-l-histoire-de-france-oeuvres-completes-1.html%3E][Lettres
+  sur l'histoire de France]]
+- [ ]
+  [[https://classiques-garnier.com/thierry-augustin-dix-ans-d-etudes-historiques-oeuvres-completes-2.html%3E][Dix
+  ans d'études historiques]]
+- [ ]
+  [[https://classiques-garnier.com/thierry-augustin-histoire-de-la-conquete-de-l-angleterre-par-les-normands-livres-i-iii-oeuvres-completes-3.html%3E][Histoire
+  de la conquête de l'Angleterre par les Normands. Livres I-III]]
+- [ ]
+  [[https://classiques-garnier.com/thierry-augustin-histoire-de-la-conquete-de-l-angleterre-par-les-normands-livres-iv-vii-oeuvres-completes-3.html%3E][Histoire
+  de la conquête de l'Angleterre par les Normands. Livres IV-VII]]
+- [ ]
+  [[https://classiques-garnier.com/thierry-augustin-histoire-de-la-conquete-de-l-angleterre-par-les-normands-livres-viii-x-oeuvres-completes-3.html%3E][Histoire
+  de la conquête de l'Angleterre par les Normands. Livres VIII-X]]
+- [ ]
+  [[https://classiques-garnier.com/thierry-augustin-histoire-de-la-conquete-de-l-angleterre-par-les-normands-livre-xi-oeuvres-completes-3.html%3E][Histoire
+  de la conquête de l'Angleterre par les Normands. Livre XI]]
+- [ ]
+  [[https://classiques-garnier.com/thierry-augustin-essai-sur-l-histoire-de-la-formation-et-des-progres-du-tiers-etat-oeuvres-completes-4.html%3E][Essai
+  sur l'histoire de la formation et des progrès du Tiers-État]] ## TODO
+  Barbey d'Aurevilly
+- [ ]
+  [[https://classiques-garnier.com/l-ensorcelee-1.html%3E][L'Ensorcelée]]
+  ​## TODO Baruch Spinoza
+- [ ]
+  [[https://classiques-garnier.com/spinoza-baruch-oeuvres-tome-ii-traite-theologico-politique.html%3E][Œuvres.
+  Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/spinoza-baruch-oeuvres-tome-iii-traite-politique-et-lettres.html%3E][Œuvres.
+  Tome III]]
+- [ ]
+  [[https://classiques-garnier.com/spinoza-baruch-oeuvres-tome-i.html%3E][Œuvres.
+  Tome I]] ## TODO Benjamin Constant
+- [ ]
+  [[https://classiques-garnier.com/adolphe-anecdote-trouvee-dans-les-papiers-d-un-inconnu.html%3E][Adolphe]]
+  ​## TODO Benoît Santiano
+- [ ]
+  [[https://classiques-garnier.com/la-monnaie-le-prince-et-le-marchand-une-analyse-economique-des-phenomenes-monetaires-au-moyen-age-1.html%3E][La
+  Monnaie, le Prince et le Marchand]] ## TODO Benvenuto Cellini
+- [ ]
+  [[https://classiques-garnier.com/cellini-benvenuto-oeuvres-completes-tome-ii-memoires-livres-vi-viii-traite-de-l-orfevrerie-et-de-la-sculpture-discours-sur-le-dessin-et-l-architecture.html%3E][Œuvres
+  complètes. Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/cellini-benvenuto-oeuvres-completes-tome-i-memoires-livres-i-v.html%3E][Œuvres
+  complètes. Tome I]] ## TODO Bernard Pingaud
+- [ ]
+  [[https://classiques-garnier.com/l-occupation-des-oisifs-precis-de-litterature-et-textes-critiques-1.html%3E][L'Occupation
+  des oisifs]] ## TODO Bernardin de Saint-Pierre
+- [ ] [[https://classiques-garnier.com/paul-et-virginie-1.html%3E][Paul
+  et Virginie]]
+- [ ] [[https://classiques-garnier.com/paul-et-virginie.html%3E][Paul et
+  Virginie]] ## TODO Blaise Pascal
+- [ ] [[https://classiques-garnier.com/les-provinciales-1.html%3E][Les
+  Provinciales]]
+- [ ]
+  [[https://classiques-garnier.com/pensees-opuscules-et-lettres-1.html%3E][Pensées
+  opuscules et lettres]] ## TODO Bonaventure des Périers
+- [ ]
+  [[https://classiques-garnier.com/contes-ou-nouvelles-recreations-et-joyeux-devis-suivis-du-cymbalum-mundi.html%3E][Contes
+  ou Nouvelles Récréations et joyeux devis suivis du Cymbalum Mundi]] ##
+  TODO Bono Giamboni
+- [ ]
+  [[https://classiques-garnier.com/le-livre-des-vices-et-des-vertus-2.html%3E][Le
+  Livre des vices et des vertus]] ## TODO Brantôme
+- [ ] [[https://classiques-garnier.com/les-dames-galantes.html%3E][Les
+  Dames galantes]]
+- [ ]
+  [[https://classiques-garnier.com/vies-des-dames-illustres-francoises-et-etrangeres.html%3E][Vies
+  des dames illustres, françoises et étrangères]] ## TODO Carolina
+  Armenteros
+- [ ]
+  [[https://classiques-garnier.com/l-idee-francaise-de-l-histoire-joseph-de-maistre-et-sa-posterite-1794-1854-1.html%3E][L'Idée
+  française de l'histoire]] ## TODO Casimir Delavigne
+- [ ]
+  [[https://classiques-garnier.com/delavigne-casimir-oeuvres-completes-tome-iii-poesies.html%3E][Œuvres
+  complètes. Tome III]]
+- [ ]
+  [[https://classiques-garnier.com/delavigne-casimir-oeuvres-completes-tome-i-theatre.html%3E][Œuvres
+  complètes. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/delavigne-casimir-oeuvres-completes-tome-ii-theatre.html%3E][Œuvres
+  complètes. Tome II]] ## TODO Charles Coypeau d' Assoucy
+- [ ]
+  [[https://classiques-garnier.com/aventures-burlesques.html%3E][Aventures
+  burlesques]] ## TODO Charles Dickens
+- [ ]
+  [[https://classiques-garnier.com/les-aventures-d-olivier-twist.html%3E][Les
+  Aventures d'Olivier Twist]] ## TODO Charles Millevoye
+- [ ]
+  [[https://classiques-garnier.com/millevoye-charles-oeuvres.html%3E][Œuvres]]
+  ​## TODO Charles Nodier
+- [ ] [[https://classiques-garnier.com/contes-4.html%3E][Contes]] ##
+  TODO Charles Sorel
+- [ ]
+  [[https://classiques-garnier.com/histoire-comique-de-francion.html%3E][Histoire
+  comique de Francion]] ## TODO Charles-Albert Demoustier
+- [ ]
+  [[https://classiques-garnier.com/lettres-a-emilie-sur-la-mythologie.html%3E][Lettres
+  à Émilie sur la mythologie]] ## TODO Charles-Augustin Sainte-Beuve
+- [X]
+  [[https://classiques-garnier.com/chateaubriand-et-son-groupe-litteraire-sous-l-empire-tome-i-cours-professe-a-liege-en-1848-1849.html%3E][Chateaubriand
+  et son groupe littéraire sous l'Empire. Tome I]]
+- [X] [[https://classiques-garnier.com/volupte.html%3E][Volupté]]
+- [X]
+  [[https://classiques-garnier.com/les-grands-ecrivains-francais-du-moyen-age-villehardouin-joinville-froissart-villon-commynes-charles-d-orleans.html%3E][Les
+  Grands Écrivains français du Moyen Âge]]
+- [X]
+  [[https://classiques-garnier.com/les-grands-ecrivains-francais-du-xvie-siecle-les-prosateurs-marguerite-de-navarre-rabelais-montluc-amyot-pasquier-la-boetie-montaigne-charron-agrippa-d-aubigne.html%3E][Les
+  Grands Écrivains français du XVIe siècle Les prosateurs]]
+- [X]
+  [[https://classiques-garnier.com/les-grands-ecrivains-francais-du-xvie-siecle-les-poetes-ronsard-du-bellay-louise-labe-du-bartas-desportes.html%3E][Les
+  Grands Écrivains français du XVIe siècle Les poètes]]
+- [X]
+  [[https://classiques-garnier.com/les-grands-ecrivains-francais-du-xviie-siecle-ecrivains-et-orateurs-religieux-saint-francois-de-sales-bossuet-flechier-bourdaloue-fenelon-massillon.html%3E][Les
+  Grands Écrivains français du XVIIe siècle Écrivains et orateurs
+  religieux]]
+- [X]
+  [[https://classiques-garnier.com/les-grands-ecrivains-francais-du-xviie-siecle-les-poetes-malherbe-racan-maynard-mathurin-regnier-theophile-de-viau-saint-amant-voiture-la-fontaine-boileau.html%3E][Les
+  Grands Écrivains français du XVIIe siècle Les poètes]]
+- [X]
+  [[https://classiques-garnier.com/les-grands-ecrivains-francais-du-xviie-siecle-memorialistes-epistoliers-romanciers-le-cardinal-de-retz-madame-de-sevigne-madame-de-la-fayette-hamilton-saint-simon.html%3E][Les
+  Grands Écrivains français du XVIIe siècle Mémorialistes, épistoliers,
+  romanciers]]
+- [X]
+  [[https://classiques-garnier.com/les-grands-ecrivains-francais-du-xviiie-siecle-auteurs-dramatiques-et-poetes-beaumarchais-florian-andre-chenier.html%3E][Les
+  Grands Écrivains français du XVIIIe siècle Auteurs dramatiques et
+  poètes]]
+- [ ]
+  [[https://classiques-garnier.com/les-grands-ecrivains-francais-du-xviiie-siecle-philosophes-et-savants-tome-i-fontenelle-montesquieu-buffon-diderot.html%3E][Les
+  Grands Écrivains français du XVIIIe siècle Philosophes et savants.
+  Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/les-grands-ecrivains-francais-du-xviiie-siecle-philosophes-et-savants-tome-ii-jean-jacques-rousseau-bernardin-de-saint-pierre.html%3E][Les
+  Grands Écrivains français du XVIIIe siècle Philosophes et savants.
+  Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/les-grands-ecrivains-francais-du-xviiie-siecle-voltaire-sa-vie-et-sa-correspondance.html%3E][Les
+  Grands Écrivains français du XVIIIe siècle Voltaire]]
+- [ ]
+  [[https://classiques-garnier.com/les-grands-ecrivains-francais-du-xviiie-siecle-romanciers-et-moralistes-lesage-marivaux-l-abbe-prevost-vauvenargues-chamfort-rivarol.html%3E][Les
+  Grands Écrivains français du XVIIIe siècle Romanciers et moralistes]]
+- [X]
+  [[https://classiques-garnier.com/les-grands-ecrivains-francais-du-xixe-siecle-les-poetes-tome-i-lamartine-vigny.html%3E][Les
+  Grands Écrivains français du XIXe siècle Les poètes. Tome I]]
+- [X]
+  [[https://classiques-garnier.com/les-grands-ecrivains-francais-du-xixe-siecle-les-poetes-tome-ii-hugo-musset-theophile-gautier.html%3E][Les
+  Grands Écrivains français du XIXe siècle Les poètes. Tome II]]
+- [X]
+  [[https://classiques-garnier.com/les-grands-ecrivains-francais-du-xixe-siecle-les-poetes-tome-iii-marceline-desbordes-valmore-sainte-beuve-leconte-de-lisle-banville-baudelaire-sully-prudhomme.html%3E][Les
+  Grands Écrivains français du XIXe siècle Les poètes. Tome III]]
+- [ ]
+  [[https://classiques-garnier.com/les-grands-ecrivains-francais-du-xixe-siecle-les-romanciers-tome-i-xavier-de-maistre-benjamin-constant-senancour-stendhal-balzac.html%3E][Les
+  Grands Écrivains français du XIXe siècle Les romanciers. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/les-grands-ecrivains-francais-du-xixe-siecle-les-romanciers-tome-ii-merimee-george-sand-fromentin-flaubert-edmond-et-jules-de-goncourt.html%3E][Les
+  Grands Écrivains français du XIXe siècle Les romanciers. Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/les-grands-ecrivains-francais-du-xixe-siecle-philosophes-et-essayistes-tome-i-joseph-de-maistre-joubert-de-bonald-paul-louis-courier.html%3E][Les
+  Grands Écrivains français du XIXe siècle Philosophes et essayistes.
+  Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/les-grands-ecrivains-francais-du-xixe-siecle-philosophes-et-essayistes-tome-ii-la-mennais-victor-cousin-jouffroy.html%3E][Les
+  Grands Écrivains français du XIXe siècle Philosophes et essayistes.
+  Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/les-grands-ecrivains-francais-du-xixe-siecle-philosophes-et-essayistes-tome-iii-lacordaire-montalembert-louis-veuillot-renan-taine.html%3E][Les
+  Grands Écrivains français du XIXe siècle Philosophes et essayistes.
+  Tome III]]
+- [ ]
+  [[https://classiques-garnier.com/les-grands-ecrivains-francais-du-xixe-siecle-chateaubriand.html%3E][Les
+  Grands Écrivains français du XIXe siècle Chateaubriand]]
+- [ ]
+  [[https://classiques-garnier.com/les-grands-ecrivains-francais-du-xixe-siecle-madame-de-stael.html%3E][Les
+  Grands Écrivains français du XIXe siècle Mme de Stael]]
+- [X]
+  [[https://classiques-garnier.com/chateaubriand-et-son-groupe-litteraire-sous-l-empire-tome-ii-cours-professe-a-liege-en-1848-1849.html%3E][Chateaubriand
+  et son groupe littéraire sous l'Empire. Tome II]]
+- [X]
+  [[https://classiques-garnier.com/pages-choisies-de-port-royal-tome-i.html%3E][Pages
+  choisies de Port-Royal. Tome I]]
+- [X]
+  [[https://classiques-garnier.com/pages-choisies-de-port-royal-tome-ii.html%3E][Pages
+  choisies de Port-Royal. Tome II]]
+- [X]
+  [[https://classiques-garnier.com/causeries-du-lundi-tome-i.html%3E][Causeries
+  du lundi. Tome I]]
+- [X]
+  [[https://classiques-garnier.com/causeries-du-lundi-tome-ii.html%3E][Causeries
+  du lundi. Tome II]]
+- [X]
+  [[https://classiques-garnier.com/causeries-du-lundi-tome-iii.html%3E][Causeries
+  du lundi. Tome III]]
+- [X]
+  [[https://classiques-garnier.com/causeries-du-lundi-tome-iv.html%3E][Causeries
+  du lundi. Tome IV]]
+- [X]
+  [[https://classiques-garnier.com/causeries-du-lundi-tome-ix.html%3E][Causeries
+  du lundi. Tome IX]]
+- [X]
+  [[https://classiques-garnier.com/causeries-du-lundi-tome-v.html%3E][Causeries
+  du lundi. Tome V]]
+- [X]
+  [[https://classiques-garnier.com/causeries-du-lundi-tome-vi.html%3E][Causeries
+  du lundi. Tome VI]]
+- [X]
+  [[https://classiques-garnier.com/causeries-du-lundi-tome-vii.html%3E][Causeries
+  du lundi. Tome VII]]
+- [X]
+  [[https://classiques-garnier.com/causeries-du-lundi-tome-viii.html%3E][Causeries
+  du lundi. Tome VIII]]
+- [X]
+  [[https://classiques-garnier.com/causeries-du-lundi-tome-x.html%3E][Causeries
+  du lundi. Tome X]]
+- [X]
+  [[https://classiques-garnier.com/causeries-du-lundi-tome-xi.html%3E][Causeries
+  du lundi. Tome XI]]
+- [X]
+  [[https://classiques-garnier.com/causeries-du-lundi-tome-xii.html%3E][Causeries
+  du lundi. Tome XII]]
+- [X]
+  [[https://classiques-garnier.com/causeries-du-lundi-tome-xiii.html%3E][Causeries
+  du lundi. Tome XIII]]
+- [X]
+  [[https://classiques-garnier.com/causeries-du-lundi-tome-xiv.html%3E][Causeries
+  du lundi. Tome XIV]]
+- [X]
+  [[https://classiques-garnier.com/causeries-du-lundi-tome-xv.html%3E][Causeries
+  du lundi. Tome XV]]
+- [X]
+  [[https://classiques-garnier.com/causeries-du-lundi-tome-xvi-table-generale-et-analytique.html%3E][Causeries
+  du lundi. Tome XVI]]
+- [X]
+  [[https://classiques-garnier.com/les-grands-ecrivains-francais-du-xviie-siecle-les-poetes-dramatiques-corneille-moliere-racine-regnard.html%3E][Les
+  Grands Écrivains français du XVIIe siècle Les poètes dramatiques]]
+- [X]
+  [[https://classiques-garnier.com/les-grands-ecrivains-francais-du-xviie-siecle-les-philosophes-et-moralistes-descartes-saint-evremond-la-rochefoucault-pascal-la-bruyere-pierre-bayle.html%3E][Les
+  Grands Écrivains français du XVIIe siècle Les philosophes et
+  moralistes]]
+- [ ]
+  [[https://classiques-garnier.com/portraits-de-femmes.html%3E][Portraits
+  de femmes]]
+- [ ]
+  [[https://classiques-garnier.com/portraits-litteraires-tome-i.html%3E][Portraits
+  littéraires. Tome I]]
+- [ ] [Portraits littéraires. Tome
+  II](https://classiques-garnier.com/portraits-litteraires-tome-ii.html>](https://classiques-garnier.com/causeries-du-lundi-tome-xvi-table-generale-et-analytique.html>)
+- [ ]
+  [[https://classiques-garnier.com/portraits-litteraires-tome-iii.html%3E][Portraits
+  littéraires. Tome III]] ## TODO Chevalier de Mouhy
+- [ ]
+  [[https://classiques-garnier.com/la-mouche-ou-les-aventures-de-m-bigand.html%3E][La
+  Mouche ou les Aventures de M. Bigand]] ## DONE Choderlos de Laclos
+- [X]
+  [[https://classiques-garnier.com/les-liaisons-dangereuses.html%3E][Les
+  Liaisons dangereuses]] ## TODO Christie McDonald
+- [ ]
+  [[https://classiques-garnier.com/french-global-une-nouvelle-perspective-sur-l-histoire-litteraire-1.html%3E][French
+  Global]] ## TODO Christophe Martin
+- [ ] []« Éducations négatives
+  »](https://classiques-garnier.com/educations-negatives-fictions-d-experimentation-pedagogique-au-xviiie-siecle.html>)
+  ​## TODO Chrétien de Troyes
+- [ ]
+  [[https://classiques-garnier.com/le-chevalier-de-la-charrette-lancelot-1.html%3E][Le
+  Chevalier de la charrette]] ## TODO Claude Crébillon
+- [ ]
+  [[https://classiques-garnier.com/crebillon-claude-oeuvres-completes-tome-i.html%3E][Œuvres
+  complètes. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/crebillon-claude-oeuvres-completes-tome-ii.html%3E][Œuvres
+  complètes. Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/crebillon-claude-oeuvres-completes-tome-iii.html%3E][Œuvres
+  complètes. Tome III]]
+- [ ]
+  [[https://classiques-garnier.com/crebillon-claude-oeuvres-completes-tome-iv.html%3E][Œuvres
+  complètes. Tome IV]] ## TODO Clément Marot
+- [ ]
+  [[https://classiques-garnier.com/marot-clement-oeuvres-poetiques-completes-tome-i.html%3E][Œuvres
+  poétiques complètes. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/marot-clement-oeuvres-poetiques-completes-tome-ii.html%3E][Œuvres
+  poétiques complètes. Tome II]] ## DONE Condorcet
+- [X]
+  [[https://classiques-garnier.com/ecrits-sur-les-etats-unis-1.html%3E][Écrits
+  sur les États-Unis]] ## DONE Confucius
+- [X]
+  [[https://classiques-garnier.com/doctrine-ou-les-quatre-livres-de-philosophie-morale-et-politique-de-la-chine.html%3E][Doctrine
+  ou les Quatre Livres de philosophie morale et politique de la Chine]]
+  ​## TODO Cyrano de Bergerac
+- [ ]
+  [[https://classiques-garnier.com/cyrano-de-bergerac-oeuvres-diverses.html%3E][Œuvres
+  diverses]]
+- [ ]
+  [[https://classiques-garnier.com/l-autre-monde-ou-les-etats-et-empires-de-la-lune-et-du-soleil.html%3E][L'Autre
+  Monde ou les États et empires de la lune et du soleil]] ## TODO Daniel
+  Defoe
+- [ ] [[https://classiques-garnier.com/robinson-crusoe.html%3E][Robinson
+  Crusoé]] ## TODO Dante Alighieri
+- [ ] [[https://classiques-garnier.com/la-divine-comedie.html%3E][La
+  Divine Comédie]]
+- [ ] [[https://classiques-garnier.com/vie-nouvelle-1.html%3E][Vie
+  nouvelle]] ## TODO David Herbert Lawrence
+- [ ]
+  [[https://classiques-garnier.com/nouvelles-completes-tome-i.html%3E][Nouvelles
+  complètes. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/nouvelles-completes-tome-ii.html%3E][Nouvelles
+  complètes. Tome II]] ## TODO Delphine Nicolas-Pierre
+- [ ]
+  [[https://classiques-garnier.com/simone-de-beauvoir-l-existence-comme-un-roman-1.html%3E][Simone
+  de Beauvoir, l'existence comme un roman]] ## TODO Denis Diderot
+- [ ]
+  [[https://classiques-garnier.com/memoires-pour-catherine-ii.html%3E][Mémoires
+  pour Catherine II]]
+- [ ]
+  [[https://classiques-garnier.com/diderot-denis-oeuvres-philosophiques.html%3E][Œuvres
+  philosophiques]]
+- [ ]
+  [[https://classiques-garnier.com/diderot-denis-oeuvres-esthetiques.html%3E][Œuvres
+  esthétiques]]
+- [ ]
+  [[https://classiques-garnier.com/diderot-denis-oeuvres-politiques.html%3E][Œuvres
+  politiques]]
+- [ ]
+  [[https://classiques-garnier.com/diderot-denis-oeuvres-romanesques.html%3E][Œuvres
+  romanesques]] ## TODO Donald Frame
+- [ ]
+  [[https://classiques-garnier.com/montaigne-une-vie-une-oeuvre.html%3E][Montaigne]]
+  ​## TODO E.T.A. Hoffmann
+- [ ]
+  [[https://classiques-garnier.com/contes-nocturnes-1.html%3E][Contes
+  nocturnes]]
+- [ ]
+  [[https://classiques-garnier.com/contes-recits-et-nouvelles-choisis.html%3E][Contes,
+  récits et nouvelles choisis]] ## TODO Edgar Allan Poe
+- [ ]
+  [[https://classiques-garnier.com/contes-policiers-et-autres-1.html%3E][Contes
+  policiers et autres]]
+- [ ]
+  [[https://classiques-garnier.com/nouvelles-histoires-extraordinaires.html%3E][Nouvelles
+  Histoires extraordinaires]]
+- [ ]
+  [[https://classiques-garnier.com/histoires-extraordinaires.html%3E][Histoires
+  extraordinaires]]
+- [ ]
+  [[https://classiques-garnier.com/histoires-grotesques-et-serieuses-suivies-des-derniers-contes.html%3E][Histoires
+  grotesques et sérieuses suivies des Derniers contes]] ## TODO Edme
+  Boursault
+- [ ]
+  [[https://classiques-garnier.com/boursault-edme-theatre-choisi.html%3E][Théâtre
+  choisi]] ## TODO Elsa de Lavergne
+- [ ]
+  [[https://classiques-garnier.com/la-naissance-du-roman-policier-francais-du-second-empire-a-la-premiere-guerre-mondiale-1.html%3E][La
+  Naissance du roman policier français]] ## TODO Emily Brontë
+- [ ]
+  [[https://classiques-garnier.com/hurlemont-wuthering-heights.html%3E][Hurlemont]]
+  ​## TODO Eugène Fromentin
+- [ ]
+  [[https://classiques-garnier.com/les-maitres-d-autrefois.html%3E][Les
+  Maîtres d'autrefois]]
+- [ ] [[https://classiques-garnier.com/dominique-1.html%3E][Dominique]]
+  ​## TODO Eugène-Melchior de Vogüé
+- [ ] [[https://classiques-garnier.com/le-roman-russe-1.html%3E][Le
+  Roman russe]] ## TODO Fiodor Dostoïevski
+- [ ] [[https://classiques-garnier.com/les-freres-karamazov.html%3E][Les
+  Frères Karamazov]] ## TODO Florence Prudhomme
+- [ ]
+  [[https://classiques-garnier.com/cahiers-de-memoire-kigali-2019-1.html%3E][Cahiers
+  de mémoire, Kigali, 2019]]
+- [ ]
+  [[https://classiques-garnier.com/cahiers-de-memoire-kigali-2014-1.html%3E][Cahiers
+  de mémoire, Kigali, 2014]] ## TODO Florent Carton Dancourt
+- [ ]
+  [[https://classiques-garnier.com/dancourt-florent-carton-theatre-choisi.html%3E][Théâtre
+  choisi]] ## TODO Fontenelle
+- [ ]
+  [[https://classiques-garnier.com/digression-sur-les-anciens-et-les-modernes-et-autres-textes-philosophiques-1.html%3E][Digression
+  sur les Anciens et les Modernes et autres textes philosophiques]]
+- [ ] [[https://classiques-garnier.com/eloges.html%3E][Éloges]] ## TODO
+  Francesco Orlando
+- [ ]
+  [[https://classiques-garnier.com/les-objets-desuets-dans-l-imagination-litteraire-ruines-reliques-raretes-rebuts-lieux-inhabites-et-tresors-caches-1.html%3E][Les
+  Objets désuets dans l'imagination littéraire]] ## TODO Francisco Luís
+  Gomes
+- [ ] [[https://classiques-garnier.com/les-brahmanes-1.html%3E][Les
+  Brahmanes]] ## TODO François Béroalde de Verville
+- [ ]
+  [[https://classiques-garnier.com/le-moyen-de-parvenir-oeuvre-contenant-la-raison-de-tout-ce-qui-a-ete-est-et-sera.html%3E][Le
+  Moyen de parvenir]] ## TODO François Maynard
+- [ ] [[https://classiques-garnier.com/poesies-1646.html%3E][Poésies
+  (1646)]] ## TODO François Pétrarque
+- [ ]
+  [[https://classiques-garnier.com/le-chansonnier-canzoniere.html%3E][Le
+  Chansonnier]]
+- [ ]
+  [[https://classiques-garnier.com/petrarque-francois-oeuvres-amoureuses-sonnets-et-triomphes.html%3E][Œuvres
+  amoureuses]] ## TODO François Rabelais
+- [ ]
+  [[https://classiques-garnier.com/rabelais-francois-oeuvres-completes-tome-ii.html%3E][Œuvres
+  complètes. Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/rabelais-francois-oeuvres-completes-tome-i.html%3E][Œuvres
+  complètes. Tome I]] ## TODO François Vidocq
+- [ ]
+  [[https://classiques-garnier.com/memoires-tome-i-chapitres-i-xxx.html%3E][Mémoires.
+  Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/memoires-tome-ii-chapitres-xxxi-lxxvii.html%3E][Mémoires.
+  Tome II]] ## TODO François Villon
+- [ ]
+  [[https://classiques-garnier.com/villon-francois-oeuvres-1.html%3E][Œuvres]]
+  ​## TODO François de Malherbe
+- [ ] [[https://classiques-garnier.com/poesies-5.html%3E][Poésies]] ##
+  TODO François-René de Chateaubriand
+- [ ]
+  [[https://classiques-garnier.com/atala-suivi-de-rene-et-des-aventures-du-dernier-abencerage.html%3E][Atala
+  suivi de René et des Aventures du dernier Abencérage]]
+- [ ]
+  [[https://classiques-garnier.com/chateaubriand-francois-rene-de-memoires-d-outre-tombe-ii-oeuvres-completes-13.html%3E][Mémoires
+  d'outre-tombe. II]]
+- [ ]
+  [[https://classiques-garnier.com/chateaubriand-francois-rene-de-memoires-d-outre-tombe-iv-oeuvres-completes-13.html%3E][Mémoires
+  d'outre-tombe. IV]]
+- [ ]
+  [[https://classiques-garnier.com/chateaubriand-francois-rene-de-les-martyrs-ou-le-triomphe-de-la-religion-chretienne-oeuvres-completes-4.html%3E][Les
+  Martyrs ou le Triomphe de la religion chrétienne]]
+- [ ]
+  [[https://classiques-garnier.com/chateaubriand-francois-rene-de-genie-du-christianisme-i-oeuvres-completes-2.html%3E][Génie
+  du christianisme. I]]
+- [ ]
+  [[https://classiques-garnier.com/chateaubriand-francois-rene-de-genie-du-christianisme-ii-oeuvres-completes-2.html%3E][Génie
+  du christianisme. II]]
+- [ ]
+  [[https://classiques-garnier.com/chateaubriand-francois-rene-de-genie-du-christianisme-suivi-de-la-defense-du-genie-du-christianisme-iii-oeuvres-completes-2.html%3E][Génie
+  du christianisme suivi de la Défense du génie du christianisme. III]]
+- [ ]
+  [[https://classiques-garnier.com/chateaubriand-francois-rene-de-itineraire-de-paris-a-jerusalem-oeuvres-completes-5.html%3E][Itinéraire
+  de Paris à Jérusalem]]
+- [ ]
+  [[https://classiques-garnier.com/chateaubriand-francois-rene-de-le-paradis-perdu-de-john-milton-oeuvres-completes-11.html%3E][Le
+  Paradis perdu (de John Milton)]]
+- [ ]
+  [[https://classiques-garnier.com/chateaubriand-francois-rene-de-memoires-d-outre-tombe-i-oeuvres-completes-13.html%3E][Mémoires
+  d'outre-tombe. I]]
+- [ ]
+  [[https://classiques-garnier.com/chateaubriand-francois-rene-de-memoires-d-outre-tombe-iii-oeuvres-completes-13.html%3E][Mémoires
+  d'outre-tombe. III]]
+- [ ]
+  [[https://classiques-garnier.com/chateaubriand-francois-rene-de-etudes-historiques-suivies-des-melanges-historiques-oeuvres-completes-9.html%3E][Études
+  historiques suivies des Mélanges historiques]]
+- [ ]
+  [[https://classiques-garnier.com/chateaubriand-francois-rene-de-voyages-en-amerique-en-italie-au-mont-blanc-suivis-des-melanges-litteraires-oeuvres-completes-6.html%3E][Voyages
+  en Amérique, en Italie, au Mont-Blanc suivis des Mélanges
+  littéraires]]
+- [ ]
+  [[https://classiques-garnier.com/chateaubriand-francois-rene-de-histoire-de-france-suivie-des-quatre-stuarts-et-de-la-vie-de-rance-oeuvres-completes-10.html%3E][Histoire
+  de France suivie des Quatre Stuarts et de la Vie de Rancé]]
+- [ ]
+  [[https://classiques-garnier.com/chateaubriand-francois-rene-de-melanges-politiques-suivis-de-polemique-preface-oeuvres-completes-7.html%3E][Mélanges
+  politiques suivis de Polémique (préface)]]
+- [ ]
+  [[https://classiques-garnier.com/chateaubriand-francois-rene-de-congres-de-verone-suivi-de-la-guerre-d-espagne-oeuvres-completes-12.html%3E][Congrés
+  de Vérone suivi de la Guerre d'Espagne]]
+- [ ]
+  [[https://classiques-garnier.com/chateaubriand-francois-rene-de-polemique-suivie-des-opinions-et-discours-politiques-et-de-fragments-divers-oeuvres-completes-8.html%3E][Polémique
+  suivie des Opinions et discours politiques et de fragments divers]]
+- [ ]
+  [[https://classiques-garnier.com/chateaubriand-francois-rene-de-essai-sur-les-revolutions-anciennes-et-modernes-oeuvres-completes-1.html%3E][Essai
+  sur les révolutions anciennes et modernes]] ## TODO Françoise de
+  Graffigny
+- [ ]
+  [[https://classiques-garnier.com/lettres-d-une-peruvienne-1.html%3E][Lettres
+  d'une Péruvienne]] ## TODO Friedrich von Schiller
+- [ ]
+  [[https://classiques-garnier.com/schiller-friedrich-von-oeuvres-dramatiques-tome-i-etude-sur-la-vie-de-schiller-les-brigands-la-conjuration-de-fiesque-et-intrigue-et-amour.html%3E][Œuvres
+  dramatiques. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/schiller-friedrich-von-oeuvres-dramatiques-tome-ii-don-carlos-wallenstein-le-misanthrope-et-semele.html%3E][Œuvres
+  dramatiques. Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/schiller-friedrich-von-oeuvres-dramatiques-suivies-de-plans-et-fragments-tome-iii-marie-stuart-la-pucelle-d-orleans-la-fiancee-de-messine-et-guillaume-tell.html%3E][Œuvres
+  dramatiques suivies de plans et fragments. Tome III]] ## TODO Félicité
+  de Lamennais
+- [ ] [[https://classiques-garnier.com/de-l-art-et-du-beau.html%3E][De
+  l'Art et du Beau]]
+- [ ]
+  [[https://classiques-garnier.com/lamennais-felicite-de-oeuvres-paroles-d-un-croyant-livre-du-peuple-une-voix-de-prison-melanges-du-passe-et-de-l-avenir-du-peuple-de-l-esclavage-moderne.html%3E][Œuvres]]
+- [ ]
+  [[https://classiques-garnier.com/de-la-societe-premiere-et-de-ses-lois-ou-de-la-religion.html%3E][De
+  la Société première et de ses lois ou de la Religion]]
+- [ ]
+  [[https://classiques-garnier.com/affaires-de-rome-des-maux-de-l-eglise-et-de-la-societe.html%3E][Affaires
+  de Rome]]
+- [ ]
+  [[https://classiques-garnier.com/essai-sur-l-indifference-en-matiere-de-religion-tome-i-parties-i-et-ii.html%3E][Essai
+  sur l'indifférence en matière de religion. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/essai-sur-l-indifference-en-matiere-de-religion-tome-ii-parties-iii-et-iv.html%3E][Essai
+  sur l'indifférence en matière de religion. Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/essai-sur-l-indifference-en-matiere-de-religion-tome-iii-partie-iv-suite.html%3E][Essai
+  sur l'indifférence en matière de religion. Tome III]]
+- [ ]
+  [[https://classiques-garnier.com/essai-sur-l-indifference-en-matiere-de-religion-tome-iv-partie-iv-suite-et-fin.html%3E][Essai
+  sur l'indifférence en matière de religion. Tome IV]] ## TODO Fénelon
+- [ ]
+  [[https://classiques-garnier.com/dialogues-sur-l-eloquence.html%3E][Dialogues
+  sur l'éloquence]]
+- [ ]
+  [[https://classiques-garnier.com/lectures-spirituelles-sur-la-vie-interieure.html%3E][Lectures
+  spirituelles sur la vie intérieure]]
+- [ ]
+  [[https://classiques-garnier.com/de-l-existence-de-dieu-et-autres-oeuvres-choisies.html%3E][De
+  l'existence de Dieu et autres œuvres choisies]]
+- [ ]
+  [[https://classiques-garnier.com/les-aventures-de-telemaque.html%3E][Les
+  Aventures de Télémaque]] ## TODO Georg Luck
+- [ ]
+  [[https://classiques-garnier.com/arcana-mundi-magie-et-occulte-dans-les-mondes-grec-et-romain-1.html%3E][Arcana
+  Mundi]] ## TODO George Sand
+- [ ] [[https://classiques-garnier.com/indiana.html%3E][Indiana]]
+- [ ] [[https://classiques-garnier.com/les-maitres-sonneurs.html%3E][Les
+  Maîtres sonneurs]]
+- [ ] [[https://classiques-garnier.com/la-petite-fadette.html%3E][La
+  Petite Fadette]]
+- [ ]
+  [[https://classiques-garnier.com/la-mare-au-diable-suivie-de-francois-le-champi.html%3E][La
+  Mare au diable suivie de François le Champi]] ## TODO Georges Feydeau
+- [ ]
+  [[https://classiques-garnier.com/feydeau-georges-theatre-complet-tome-ii.html%3E][Théâtre
+  complet. Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/feydeau-georges-theatre-complet-tome-iii.html%3E][Théâtre
+  complet. Tome III]]
+- [ ]
+  [[https://classiques-garnier.com/feydeau-georges-theatre-complet-tome-iv.html%3E][Théâtre
+  complet. Tome IV]]
+- [ ]
+  [[https://classiques-garnier.com/feydeau-georges-theatre-complet-tome-i.html%3E][Théâtre
+  complet. Tome I]] ## TODO Gottfried Wilhelm Leibniz
+- [ ]
+  [[https://classiques-garnier.com/leibniz-gottfried-wilhelm-oeuvres-choisies.html%3E][Œuvres
+  choisies]] ## TODO Gregorio Martínez Sierra
+- [ ] [[https://classiques-garnier.com/jardin-ensoleille.html%3E][Jardin
+  ensoleillé]] ## TODO Gustave Flaubert
+- [ ]
+  [[https://classiques-garnier.com/la-tentation-de-saint-antoine.html%3E][La
+  Tentation de saint Antoine]]
+- [ ] [[https://classiques-garnier.com/salammbo.html%3E][Salammbô]]
+- [ ]
+  [[https://classiques-garnier.com/trois-contes-un-coeur-simple-la-legende-de-saint-julien-l-hospitalier-et-herodias.html%3E][Trois
+  Contes]]
+- [ ]
+  [[https://classiques-garnier.com/bouvard-et-pecuchet.html%3E][Bouvard
+  et Pécuchet]]
+- [X]
+  [[https://classiques-garnier.com/madame-bovary-moeurs-de-province.html%3E][Madame
+  Bovary]]
+- [ ]
+  [[https://classiques-garnier.com/l-education-sentimentale-histoire-d-un-jeune-homme.html%3E][L'Éducation
+  sentimentale]] ## TODO Guy de Maupassant
+- [ ]
+  [[https://classiques-garnier.com/le-horla-et-autres-contes-cruels-et-fantastiques.html%3E][Le
+  Horla et autres Contes cruels et fantastiques]]
+- [ ]
+  [[https://classiques-garnier.com/la-parure-et-autres-contes-parisiens.html%3E][La
+  Parure et autres contes parisiens]]
+- [ ]
+  [[https://classiques-garnier.com/boule-de-suif-et-autres-contes-normands.html%3E][Boule
+  de suif et autres contes normands]]
+- [ ] [[https://classiques-garnier.com/bel-ami.html%3E][Bel-Ami]]
+- [ ] [[https://classiques-garnier.com/pierre-et-jean.html%3E][Pierre et
+  Jean]] ## TODO Gédéon Tallemant des Réaux
+- [ ]
+  [[https://classiques-garnier.com/les-historiettes-tome-i.html%3E][Les
+  Historiettes. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/les-historiettes-tome-ii.html%3E][Les
+  Historiettes. Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/les-historiettes-tome-iii.html%3E][Les
+  Historiettes. Tome III]]
+- [ ]
+  [[https://classiques-garnier.com/les-historiettes-tome-iv.html%3E][Les
+  Historiettes. Tome IV]]
+- [ ]
+  [[https://classiques-garnier.com/les-historiettes-tome-v.html%3E][Les
+  Historiettes. Tome V]]
+- [ ]
+  [[https://classiques-garnier.com/les-historiettes-tome-vi.html%3E][Les
+  Historiettes. Tome VI]]
+- [ ]
+  [[https://classiques-garnier.com/les-historiettes-tome-vii.html%3E][Les
+  Historiettes. Tome VII]]
+- [ ]
+  [[https://classiques-garnier.com/les-historiettes-suivies-de-la-table-generale-tome-viii.html%3E][Les
+  Historiettes suivies de la table générale. Tome VIII]] ## TODO Gérard
+  de Nerval
+- [ ]
+  [[https://classiques-garnier.com/les-nuits-d-octobre-suivi-de-contes-et-faceties.html%3E][Les
+  Nuits d'octobre suivi de Contes et Facéties]]
+- [ ] [[https://classiques-garnier.com/les-filles-du-feu.html%3E][Les
+  Filles du feu]]
+- [ ]
+  [[https://classiques-garnier.com/scenes-de-la-vie-orientale-tome-1-les-femmes-du-caire.html%3E][Scènes
+  de la vie orientale. Tome 1]]
+- [ ]
+  [[https://classiques-garnier.com/scenes-de-la-vie-orientale-tome-2-les-femmes-du-liban.html%3E][Scènes
+  de la vie orientale. Tome 2]]
+- [ ]
+  [[https://classiques-garnier.com/aurelia-ou-le-reve-et-la-vie.html%3E][Aurélia
+  ou le Rêve et la Vie]]
+- [ ]
+  [[https://classiques-garnier.com/nerval-gerard-de-oeuvres.html%3E][Œuvres]]
+  ​## TODO Hans Christian Andersen
+- [ ]
+  [[https://classiques-garnier.com/contes-danois-tome-iv.html%3E][Contes
+  danois. Tome IV]]
+- [ ]
+  [[https://classiques-garnier.com/contes-danois-tome-v.html%3E][Contes
+  danois. Tome V]]
+- [ ]
+  [[https://classiques-garnier.com/contes-danois-tome-i.html%3E][Contes
+  danois. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/contes-danois-tome-ii.html%3E][Contes
+  danois. Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/contes-danois-tome-iii.html%3E][Contes
+  danois. Tome III]] ## TODO Harriet Beecher Stowe
+- [ ]
+  [[https://classiques-garnier.com/la-case-de-l-oncle-tom-ou-la-vie-des-negres-en-amerique.html%3E][La
+  Case de l'oncle Tom ou la Vie des nègres en Amérique]] ## TODO
+  Heinrich Heine
+- [ ] [[https://classiques-garnier.com/le-livre-des-chants.html%3E][Le
+  Livre des chants]] ## TODO Henri Beyle, dit Stendhal
+- [ ] [[https://classiques-garnier.com/de-l-amour.html%3E][De l'amour]]
+- [ ]
+  [[https://classiques-garnier.com/la-chartreuse-de-parme.html%3E][La
+  Chartreuse de Parme]]
+- [ ] [[https://classiques-garnier.com/armance.html%3E][Armance]]
+- [ ] [[https://classiques-garnier.com/vie-de-henry-brulard.html%3E][Vie
+  de Henry Brulard]]
+- [ ]
+  [[https://classiques-garnier.com/l-abbesse-de-castro-suivie-de-vittoria-accoramboni-les-cenci-la-duchesse-de-palliano-vanina-vanini-le-coffre-et-le-revenant-le-philtre.html%3E][L'Abbesse
+  de Castro suivie de Vittoria Accoramboni, Les Cenci, La Duchesse de
+  Palliano, Vanina Vanini, Le Coffre et le Revenant, Le Philtre]]
+- [ ]
+  [[https://classiques-garnier.com/le-rouge-et-le-noir-chronique-du-xixe-siecle.html%3E][Le
+  Rouge et le Noir]] ## TODO Henri de Régnier
+- [ ]
+  [[https://classiques-garnier.com/correspondance-1893-1936-1.html%3E][Correspondance
+  (1893-1936)]] ## TODO Henri-Dominique Lacordaire
+- [ ]
+  [[https://classiques-garnier.com/sainte-marie-madeleine.html%3E][Sainte
+  Marie-Madeleine]]
+- [ ]
+  [[https://classiques-garnier.com/vie-de-saint-dominique-precedee-du-memoire-pour-le-retablissement-en-france-de-l-ordre-des-freres-precheurs.html%3E][Vie
+  de saint Dominique précédée du Mémoire pour le rétablissement en
+  France de l'Ordre des Frères prêcheurs]]
+- [ ]
+  [[https://classiques-garnier.com/conferences-de-notre-dame-de-paris-tome-i-annees-1835-1836-et-1843.html%3E][Conférences
+  de Notre-Dame de Paris. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/conferences-de-notre-dame-de-paris-tome-ii-annees-1844-1845.html%3E][Conférences
+  de Notre-Dame de Paris. Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/conferences-de-notre-dame-de-paris-tome-iii-annees-1846-1848.html%3E][Conférences
+  de Notre-Dame de Paris. Tome III]]
+- [ ]
+  [[https://classiques-garnier.com/conferences-de-notre-dame-de-paris-tome-iv-annees-1849-1850.html%3E][Conférences
+  de Notre-Dame de Paris. Tome IV]]
+- [ ]
+  [[https://classiques-garnier.com/conferences-de-notre-dame-de-paris-suivies-des-conferences-de-toulouse-tome-v-annees-1851-1854.html%3E][Conférences
+  de Notre-Dame de Paris suivies des Conférences de Toulouse. Tome V]]
+- [ ]
+  [[https://classiques-garnier.com/notices-et-panegyriques.html%3E][Notices
+  et panégyriques]] ## TODO Henry Fielding
+- [ ]
+  [[https://classiques-garnier.com/histoire-de-tom-jones-ou-l-enfant-trouve-1750.html%3E][Histoire
+  de Tom Jones, ou l'Enfant trouvé (1750)]] ## TODO Henry Murger
+- [ ] [[https://classiques-garnier.com/le-bonhomme-jadis.html%3E][Le
+  Bonhomme Jadis]]
+- [ ]
+  [[https://classiques-garnier.com/le-pays-latin-suivi-des-buveurs-d-eau-et-de-la-scene-du-gouverneur.html%3E][Le
+  Pays latin suivi des Buveurs d'Eau et de La Scène du Gouverneur]]
+- [ ]
+  [[https://classiques-garnier.com/scenes-de-la-vie-de-boheme.html%3E][Scènes
+  de la vie de bohème]] ## TODO Honorat de Bueil de Racan
+- [ ]
+  [[https://classiques-garnier.com/les-bergeries-et-autres-poesies-lyriques.html%3E][Les
+  Bergeries et autres poésies lyriques]] ## TODO Honoré de Balzac
+- [ ]
+  [[https://classiques-garnier.com/histoire-des-treize-ferragus-la-duchesse-de-langeais-la-fille-aux-yeux-d-or.html%3E][Histoire
+  des treize]]
+- [ ]
+  [[https://classiques-garnier.com/l-illustre-gaudissart-suivi-de-la-muse-du-departement.html%3E][L'Illustre
+  Gaudissart suivi de La Muse du département]]
+- [ ] [[https://classiques-garnier.com/les-petits-bourgeois.html%3E][Les
+  Petits Bourgeois]]
+- [ ]
+  [[https://classiques-garnier.com/le-cure-de-tours-suivi-de-pierrette.html%3E][Le
+  Curé de Tours suivi de Pierrette]]
+- [ ] [[https://classiques-garnier.com/la-rabouilleuse.html%3E][La
+  Rabouilleuse]]
+- [ ]
+  [[https://classiques-garnier.com/illusions-perdues.html%3E][Illusions
+  perdues]]
+- [ ] [[https://classiques-garnier.com/le-cousin-pons.html%3E][Le Cousin
+  Pons]]
+- [ ] [[https://classiques-garnier.com/la-cousine-bette.html%3E][La
+  Cousine Bette]]
+- [ ]
+  [[https://classiques-garnier.com/le-colonel-chabert-suivi-de-honorine-et-de-l-interdiction.html%3E][Le
+  Colonel Chabert suivi de Honorine et de L'Interdiction]]
+- [ ]
+  [[https://classiques-garnier.com/la-femme-de-trente-ans.html%3E][La
+  Femme de trente ans]]
+- [ ] [[https://classiques-garnier.com/le-lys-dans-la-vallee.html%3E][Le
+  Lys dans la vallée]]
+- [ ] [[https://classiques-garnier.com/la-peau-de-chagrin.html%3E][La
+  Peau de chagrin]]
+- [ ] [[https://classiques-garnier.com/eugenie-grandet.html%3E][Eugénie
+  Grandet]]
+- [ ] [[https://classiques-garnier.com/le-pere-goriot.html%3E][Le Père
+  Goriot]]
+- [ ] [[https://classiques-garnier.com/beatrix.html%3E][Béatrix]]
+- [ ]
+  [[https://classiques-garnier.com/le-cabinet-des-antiques.html%3E][Le
+  Cabinet des Antiques]]
+- [ ] [[https://classiques-garnier.com/les-chouans.html%3E][Les
+  Chouans]]
+- [ ]
+  [[https://classiques-garnier.com/l-envers-de-l-histoire-contemporaine-suivi-d-un-fragment-inedit-les-precepteurs-en-dieu.html%3E][L'Envers
+  de l'histoire contemporaine suivi d'un fragment inédit Les Précepteurs
+  en Dieu]]
+- [ ]
+  [[https://classiques-garnier.com/le-medecin-de-campagne.html%3E][Le
+  Médecin de campagne]]
+- [ ]
+  [[https://classiques-garnier.com/splendeurs-et-miseres-des-courtisanes.html%3E][Splendeurs
+  et misères des courtisanes]]
+- [ ]
+  [[https://classiques-garnier.com/histoire-de-la-grandeur-et-de-la-decadence-de-cesar-birotteau.html%3E][Histoire
+  de la grandeur et de la décadence de César Birotteau]]
+- [ ]
+  [[https://classiques-garnier.com/la-maison-du-chat-qui-pelote-suivie-du-bal-de-sceaux-et-de-la-vendetta.html%3E][La
+  Maison du chat-qui-pelote suivie du Bal de Sceaux et de La Vendetta]]
+- [ ] [[https://classiques-garnier.com/la-vieille-fille.html%3E][La
+  Vieille Fille]]
+- [ ] [[https://classiques-garnier.com/les-paysans.html%3E][Les
+  Paysans]]
+- [ ] [[https://classiques-garnier.com/ursule-mirouet.html%3E][Ursule
+  Mirouët]] ## TODO Hégésippe Moreau
+- [ ]
+  [[https://classiques-garnier.com/moreau-hegesippe-oeuvres-le-myosotis-et-contes-en-prose.html%3E][Œuvres]]
+  ​## TODO Hélène Vérin
+- [ ]
+  [[https://classiques-garnier.com/entrepreneurs-entreprise-histoire-d-une-idee-1.html%3E][Entrepreneurs,
+  entreprise]] ## TODO Jacob et Wilhelm Grimm
+- [ ] [[https://classiques-garnier.com/contes-3.html%3E][Contes]] ##
+  TODO Jacques Bénigne Bossuet
+- [ ]
+  [[https://classiques-garnier.com/oraisons-funebres-et-panegyriques-tome-ii.html%3E][Oraisons
+  funèbres et panégyriques. Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/oraisons-funebres-et-panegyriques-tome-i.html%3E][Oraisons
+  funèbres et panégyriques. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/de-la-connaissance-de-dieu-et-de-soi-meme.html%3E][De
+  la connaissance de Dieu et de soi-même]]
+- [ ]
+  [[https://classiques-garnier.com/elevations-a-dieu-sur-tous-les-mysteres-de-la-religion-chretienne.html%3E][Élévations
+  à Dieu sur tous les mystères de la religion chrétienne]]
+- [ ] [[https://classiques-garnier.com/sermons-tome-i.html%3E][Sermons.
+  Tome I]]
+- [ ] [[https://classiques-garnier.com/sermons-tome-ii.html%3E][Sermons.
+  Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/sermons-tome-iii.html%3E][Sermons.
+  Tome III]]
+- [ ]
+  [[https://classiques-garnier.com/meditations-sur-l-evangile-tome-i.html%3E][Méditations
+  sur l'Évangile. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/meditations-sur-l-evangile-tome-ii.html%3E][Méditations
+  sur l'Évangile. Tome II]]
+- [ ] [[https://classiques-garnier.com/sermons-tome-iv.html%3E][Sermons.
+  Tome IV]]
+- [ ]
+  [[https://classiques-garnier.com/discours-sur-l-histoire-universelle.html%3E][Discours
+  sur l'histoire universelle]]
+- [ ]
+  [[https://classiques-garnier.com/lectures-spirituelles-pour-la-preparation-au-careme.html%3E][Lectures
+  spirituelles pour la préparation au carême]]
+- [ ]
+  [[https://classiques-garnier.com/histoire-des-variations-des-eglises-protestantes-tome-i-livres-i-ix.html%3E][Histoire
+  des variations des églises protestantes. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/histoire-des-variations-des-eglises-protestantes-tome-ii-livres-x-xv.html%3E][Histoire
+  des variations des églises protestantes. Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/traite-de-la-concupiscence-suivi-des-lettre-maximes-et-reflexions-sur-la-comedie-de-la-logique-et-du-traite-du-libre-arbitre.html%3E][Traité
+  de la concupiscence suivi des Lettre, maximes et réflexions sur la
+  comédie, de La Logique et du Traité du libre arbitre]] ## TODO Jacques
+  Casanova de Seingalt
+- [ ]
+  [[https://classiques-garnier.com/memoires-tome-i.html%3E][Mémoires.
+  Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/memoires-tome-ii.html%3E][Mémoires.
+  Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/memoires-tome-iii.html%3E][Mémoires.
+  Tome III]]
+- [ ]
+  [[https://classiques-garnier.com/memoires-tome-iv.html%3E][Mémoires.
+  Tome IV]]
+- [ ]
+  [[https://classiques-garnier.com/memoires-tome-v.html%3E][Mémoires.
+  Tome V]]
+- [ ]
+  [[https://classiques-garnier.com/memoires-tome-vi.html%3E][Mémoires.
+  Tome VI]]
+- [ ]
+  [[https://classiques-garnier.com/memoires-tome-vii.html%3E][Mémoires.
+  Tome VII]]
+- [ ]
+  [[https://classiques-garnier.com/memoires-tome-viii.html%3E][Mémoires.
+  Tome VIII]] ## TODO Jacques Grévin
+- [ ]
+  [[https://classiques-garnier.com/grevin-jacques-theatre-complet-et-poesies-choisies.html%3E][Théâtre
+  complet et Poésies choisies]] ## TODO Jacques Jasmin
+- [ ]
+  [[https://classiques-garnier.com/las-papilhotos-tome-ii-les-satires-et-les-epitres.html%3E][Las
+  Papilhôtos. Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/las-papilhotos-tome-i-les-poemes-et-les-odes.html%3E][Las
+  Papilhôtos. Tome I]] ## TODO Jacques Ninet
+- [ ]
+  [[https://classiques-garnier.com/taux-d-interet-negatifs-le-trou-noir-du-capitalisme-financier.html%3E][Taux
+  d'intérêt négatifs]] ## TODO Jacques de Voragine
+- [ ] [[https://classiques-garnier.com/la-legende-doree-2.html%3E][La
+  Légende dorée]] ## TODO James Macpherson
+- [ ]
+  [[https://classiques-garnier.com/macpherson-james-oeuvres-d-ossian-1.html%3E][Œuvres
+  d'Ossian]] ## TODO Janina Hescheles Altman
+- [ ]
+  [[https://classiques-garnier.com/les-cahiers-de-janina.html%3E][Les
+  Cahiers de Janina]] ## TODO Jean Anthelme Brillat-Savarin
+- [ ]
+  [[https://classiques-garnier.com/physiologie-du-gout-ou-meditations-de-gastronomie-transcendante.html%3E][Physiologie
+  du goût ou méditations de gastronomie transcendante]] ## TODO Jean
+  Boccace
+- [ ] [[https://classiques-garnier.com/le-decameron.html%3E][Le
+  Décaméron]] ## TODO Jean Racine
+- [ ]
+  [[https://classiques-garnier.com/racine-jean-theatre-complet-1.html%3E][Théâtre
+  complet]] ## TODO Jean Second
+- [ ]
+  [[https://classiques-garnier.com/les-baisers-suivis-de-l-epithalame-des-odes-et-des-elegies.html%3E][Les
+  Baisers suivis de l' Épithalame, des Odes et des Élégies]] ## TODO
+  Jean Vauquelin de la Fresnaye
+- [ ]
+  [[https://classiques-garnier.com/l-art-poetique-texte-conforme-a-l-edition-de-1605.html%3E][L'Art
+  poétique]] ## TODO Jean de Joinville
+- [ ] [[https://classiques-garnier.com/vie-de-saint-louis-1.html%3E][Vie
+  de saint Louis]] ## TODO Jean de La Bruyère
+- [ ]
+  [[https://classiques-garnier.com/les-caracteres-ou-les-moeurs-de-ce-siecle-precedes-des-caracteres-de-theophraste.html%3E][Les
+  Caractères ou les Mœurs de ce siècle précédés des Caractères de
+  Théophraste]] ## TODO Jean de La Fontaine
+- [ ] [[https://classiques-garnier.com/fables-choisies.html%3E][Fables
+  choisies]]
+- [ ]
+  [[https://classiques-garnier.com/contes-et-nouvelles-en-vers.html%3E][Contes
+  et nouvelles en vers]]
+- [ ]
+  [[https://classiques-garnier.com/la-fontaine-jean-de-theatre-oeuvres-completes-3.html%3E][Théâtre]]
+- [ ]
+  [[https://classiques-garnier.com/la-fontaine-jean-de-poemes-et-poesies-diverses-oeuvres-completes-4.html%3E][Poèmes
+  et poésies diverses]]
+- [ ]
+  [[https://classiques-garnier.com/la-fontaine-jean-de-les-amours-de-psyche-suivies-des-opuscules-en-prose-et-des-lettres-oeuvres-completes-5.html%3E][Les
+  Amours de Psyché suivies des Opuscules en prose et des lettres]] ##
+  TODO Jean de Rotrou
+- [ ]
+  [[https://classiques-garnier.com/rotrou-jean-de-theatre-choisi.html%3E][Théâtre
+  choisi]] ## TODO Jean-Baptiste Massillon
+- [ ]
+  [[https://classiques-garnier.com/petit-careme-suivi-de-sermons-divers.html%3E][Petit
+  Carême suivi de sermons divers]]
+- [ ]
+  [[https://classiques-garnier.com/lectures-spirituelles-pour-le-temps-du-careme.html%3E][Lectures
+  spirituelles pour le temps du carême]]
+- [ ]
+  [[https://classiques-garnier.com/oraisons-funebres.html%3E][Oraisons
+  funèbres]] ## TODO Jean-Baptiste-Louis Gresset
+- [ ]
+  [[https://classiques-garnier.com/gresset-jean-baptiste-louis-oeuvres-choisies.html%3E][Œuvres
+  choisies]] ## TODO Jean-Christophe Igalens
+- [ ]
+  [[https://classiques-garnier.com/casanova-l-ecrivain-en-ses-fictions-1.html%3E][Casanova]]
+  ​## TODO Jean-François Collin d'Harleville
+- [ ]
+  [[https://classiques-garnier.com/collin-d-harleville-jean-francois-theatre-suivi-de-poesies-fugitives.html%3E][Théâtre
+  suivi de poésies fugitives]] ## TODO Jean-François Regnard
+- [ ]
+  [[https://classiques-garnier.com/regnard-jean-francois-theatre.html%3E][Théâtre]]
+- [ ]
+  [[https://classiques-garnier.com/regnard-jean-francois-oeuvres-tome-i.html%3E][Œuvres.
+  Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/regnard-jean-francois-oeuvres-tome-ii.html%3E][Œuvres.
+  Tome II]] ## TODO Jean-Jacques Rousseau
+- [ ]
+  [[https://classiques-garnier.com/rousseau-jean-jacques-oeuvres-politiques.html%3E][Œuvres
+  politiques]]
+- [ ]
+  [[https://classiques-garnier.com/rousseau-juge-de-jean-jaques-manuscrit-condillac-avec-les-variantes-ulterieures.html%3E][Rousseau
+  juge de Jean Jaques]]
+- [ ]
+  [[https://classiques-garnier.com/les-reveries-du-promeneur-solitaire-cartes-a-jouer.html%3E][Les
+  Rêveries du promeneur solitaire, cartes à jouer]]
+- [ ]
+  [[https://classiques-garnier.com/les-reveries-du-promeneur-solitaire-edition-augmentee-des-lettres-a-malesherbes.html%3E][Les
+  Rêveries du promeneur solitaire Édition augmentée des Lettres à
+  Malesherbes]]
+- [ ]
+  [[https://classiques-garnier.com/emile-ou-de-l-education.html%3E][Émile
+  ou de l'éducation]]
+- [ ]
+  [[https://classiques-garnier.com/lettre-a-d-alembert-sur-les-spectacles.html%3E][Lettre
+  à d'Alembert sur les spectacles]]
+- [ ]
+  [[https://classiques-garnier.com/julie-ou-la-nouvelle-heloise-1.html%3E][Julie
+  ou la Nouvelle Héloïse]]
+- [ ] [[https://classiques-garnier.com/les-confessions.html%3E][Les
+  Confessions]] ## TODO Jean-Joseph Vadé
+- [ ]
+  [[https://classiques-garnier.com/vade-jean-joseph-oeuvres.html%3E][Œuvres]]
+  ​## TODO Jean-Pierre Camus
+- [ ]
+  [[https://classiques-garnier.com/les-spectacles-d-horreur-1.html%3E][Les
+  Spectacles d'horreur]] ## TODO Jean-Pierre Claris de Florian
+- [ ] [[https://classiques-garnier.com/fables-et-theatre.html%3E][Fables
+  et théâtre]] ## TODO Joachim Du Bellay
+- [ ]
+  [[https://classiques-garnier.com/la-defense-et-illustration-de-la-langue-francaise-suivie-de-la-precellence-du-langage-francois-par-henri-estienne.html%3E][La
+  Défense et Illustration de la langue française suivie De la
+  Précellence du langage françois par Henri Estienne]]
+- [ ]
+  [[https://classiques-garnier.com/du-bellay-joachim-oeuvres-poetiques-tome-i-l-olive-l-anterotique-vers-lyriques-recueil-de-poesie-oeuvre-de-l-invention-de-l-autheur.html%3E][Œuvres
+  poétiques. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/du-bellay-joachim-oeuvres-poetiques-tome-ii-les-antiquitez-le-songe-les-regrets-le-poete-courtisan-divers-jeux-rustiques.html%3E][Œuvres
+  poétiques. Tome II]] ## TODO Joaquim Maria Machado de Assis
+- [ ]
+  [[https://classiques-garnier.com/histoires-diverses.html%3E][Histoires
+  diverses]]
+- [ ]
+  [[https://classiques-garnier.com/memoires-posthumes-de-braz-cubas.html%3E][Mémoires
+  posthumes de Braz Cubas]]
+- [ ] [[https://classiques-garnier.com/quelques-contes.html%3E][Quelques
+  Contes]] ## TODO Johan Ludvig Runeberg
+- [ ]
+  [[https://classiques-garnier.com/runeberg-johan-ludvig-oeuvres-suivies-de-poesies-detachees-le-porte-enseigne-stole-la-veillee-de-noel-hanna-et-le-roi-fialar.html%3E][Œuvres
+  suivies de poésies détachées]] ## TODO Johann Wolfgang von Gœthe
+- [ ]
+  [[https://classiques-garnier.com/faust-suivi-du-second-faust.html%3E][Faust
+  suivi du Second Faust]]
+- [ ]
+  [[https://classiques-garnier.com/werther-suivi-de-hermann-et-dorothee.html%3E][Werther
+  suivi de Hermann et Dorothée]] ## TODO John Gay
+- [ ]
+  [[https://classiques-garnier.com/trivia-et-autres-vues-urbaines-1.html%3E][Trivia
+  et autres vues urbaines]] ## TODO Jonathan Swift
+- [ ]
+  [[https://classiques-garnier.com/voyages-de-gulliver.html%3E][Voyages
+  de Gulliver]] ## TODO Joris-Karl Huysmans
+- [ ] [[https://classiques-garnier.com/a-rebours-1.html%3E][À rebours]]
+  ​## TODO Joseph de Maistre
+- [ ]
+  [[https://classiques-garnier.com/les-soirees-de-saint-petersbourg-ou-entretiens-sur-le-gouvernement-temporel-de-la-providence-tome-i.html%3E][Les
+  Soirées de Saint-Pétersbourg ou Entretiens sur le gouvernement
+  temporel de la providence. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/les-soirees-de-saint-petersbourg-ou-entretiens-sur-le-gouvernement-temporel-de-la-providence-tome-ii.html%3E][Les
+  Soirées de Saint-Pétersbourg ou Entretiens sur le gouvernement
+  temporel de la providence. Tome II]]
+- [ ] [[https://classiques-garnier.com/du-pape.html%3E][Du Pape]] ##
+  TODO Jules Amédée Barbey d'Aurevilly
+- [ ] [[https://classiques-garnier.com/les-diaboliques.html%3E][Les
+  Diaboliques]] ## TODO Jules Michelet
+- [ ] [[https://classiques-garnier.com/pages-litteraires.html%3E][Pages
+  littéraires]]
+- [ ] [[https://classiques-garnier.com/pages-historiques.html%3E][Pages
+  historiques]] ## TODO Julie de Lespinasse
+- [ ] [[https://classiques-garnier.com/lettres-1.html%3E][Lettres]] ##
+  TODO Jérôme Blanc
+- [ ]
+  [[https://classiques-garnier.com/les-pensees-monetaires-dans-l-histoire-l-europe-1517-1776-1.html%3E][Les
+  Pensées monétaires dans l'histoire]] ## TODO La Rochefoucauld
+- [ ]
+  [[https://classiques-garnier.com/maximes-suivies-des-reflexions-diverses.html%3E][Maximes
+  suivies des Réflexions diverses]] ## TODO Laurence Campa
+- [ ]
+  [[https://classiques-garnier.com/poetes-de-la-grande-guerre-experience-combattante-et-activite-poetique-1.html%3E][Poètes
+  de la Grande Guerre]] ## TODO Laurence Sterne
+- [ ]
+  [[https://classiques-garnier.com/voyage-sentimental-1.html%3E][Voyage
+  sentimental]]
+- [ ]
+  [[https://classiques-garnier.com/tristram-shandy-tome-i-chapitres-i-cciv.html%3E][Tristram
+  Shandy. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/tristram-shandy-suivi-du-voyage-sentimental-tome-ii-chapitres-ccv-cccliii.html%3E][Tristram
+  Shandy suivi du Voyage sentimental. Tome II]] ## TODO Le Pogge
+- [ ]
+  [[https://classiques-garnier.com/les-faceties-suivies-de-la-description-des-bains-de-bade-au-xve-siecle-et-du-dialogue-un-vieillard-doit-il-se-marier.html%3E][Les
+  Facéties suivies de la Description des bains de Bade au XVe siècle et
+  du dialogue Un vieillard doit-il se marier ?]] ## TODO Le Tasse
+- [ ] [[https://classiques-garnier.com/la-jerusalem-delivree.html%3E][La
+  Jérusalem délivrée]] ## TODO Lord Byron
+- [ ]
+  [[https://classiques-garnier.com/byron-lord-oeuvres-completes-tome-i.html%3E][Œuvres
+  complètes. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/byron-lord-oeuvres-completes-tome-ii.html%3E][Œuvres
+  complètes. Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/byron-lord-oeuvres-completes-tome-iii.html%3E][Œuvres
+  complètes. Tome III]]
+- [ ]
+  [[https://classiques-garnier.com/byron-lord-oeuvres-completes-tome-iv.html%3E][Œuvres
+  complètes. Tome IV]] ## TODO Louis Bourdaloue
+- [ ] [[https://classiques-garnier.com/sermons-choisis.html%3E][Sermons
+  choisis]]
+- [ ]
+  [[https://classiques-garnier.com/chefs-d-oeuvre-oratoires-suivis-d-opuscules.html%3E][Chefs-d'œuvre
+  oratoires suivis d'opuscules]]
+- [ ]
+  [[https://classiques-garnier.com/lectures-spirituelles-pour-le-temps-de-l-avent.html%3E][Lectures
+  spirituelles pour le temps de l'avent]] ## TODO Louis Petit de
+  Bachaumont
+- [ ]
+  [[https://classiques-garnier.com/memoires-secrets-1762-1771.html%3E][Mémoires
+  secrets (1762-1771)]] ## TODO Louis-Benoît Picard
+- [ ]
+  [[https://classiques-garnier.com/picard-louis-benoit-theatre-tome-i.html%3E][Théâtre.
+  Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/picard-louis-benoit-theatre-tome-ii.html%3E][Théâtre.
+  Tome II]] ## TODO Louise Michel
+- [ ] [[https://classiques-garnier.com/la-chasse-aux-loups-1.html%3E][La
+  Chasse aux loups]] ## TODO Louvet de Couvray
+- [ ]
+  [[https://classiques-garnier.com/les-amours-du-chevalier-de-faublas-tome-i.html%3E][Les
+  Amours du chevalier de Faublas. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/les-amours-du-chevalier-de-faublas-tome-ii.html%3E][Les
+  Amours du chevalier de Faublas. Tome II]] ## TODO Ludovic Tournès
+- [ ]
+  [[https://classiques-garnier.com/sciences-de-l-homme-et-politique-les-fondations-philanthropiques-americaines-en-france-au-xxe-siecle-1.html%3E][Sciences
+  de l'homme et politique]] ## TODO Ludwig Tieck
+- [ ]
+  [[https://classiques-garnier.com/la-barbe-bleue-suivie-des-sept-femmes-de-barbe-bleue.html%3E][La
+  Barbe bleue suivie des Sept Femmes de Barbe-Bleue]] ## TODO Luis de
+  Camoëns
+- [ ] [[https://classiques-garnier.com/les-lusiades.html%3E][Les
+  Lusiades]] ## TODO L' Arioste
+- [ ]
+  [[https://classiques-garnier.com/roland-furieux-tome-i-chants-i-xxiii.html%3E][Roland
+  furieux. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/roland-furieux-tome-ii-chants-xxiv-xlvi.html%3E][Roland
+  furieux. Tome II]] ## TODO Madame de Lafayette
+- [ ]
+  [[https://classiques-garnier.com/romans-et-nouvelles-la-princesse-de-montpensier-zaide-la-princesse-de-cleves-et-la-comtesse-de-tende.html%3E][Romans
+  et nouvelles]] ## TODO Madame de Maintenon
+- [ ]
+  [[https://classiques-garnier.com/proverbes-dramatiques-1.html%3E][Proverbes
+  dramatiques]] ## TODO Madame de Murat
+- [ ]
+  [[https://classiques-garnier.com/journal-pour-mademoiselle-de-menou-1.html%3E][Journal
+  pour Mademoiselle de Menou]] ## TODO Madame de Staël
+- [ ]
+  [[https://classiques-garnier.com/de-la-litterature-consideree-dans-ses-rapports-avec-les-institutions-sociales.html%3E][De
+  la littérature considérée dans ses rapports avec les institutions
+  sociales]]
+- [ ]
+  [[https://classiques-garnier.com/corinne-ou-l-italie.html%3E][Corinne
+  ou l'Italie]]
+- [ ] [[https://classiques-garnier.com/de-l-allemagne-tome-i.html%3E][De
+  l'Allemagne. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/de-l-allemagne-tome-ii.html%3E][De
+  l'Allemagne. Tome II]]
+- [ ] [[https://classiques-garnier.com/delphine.html%3E][Delphine]] ##
+  TODO Madame de Sévigné
+- [ ] [[https://classiques-garnier.com/lettres-choisies.html%3E][Lettres
+  choisies]] ## TODO Manuel Ugarte
+- [ ]
+  [[https://classiques-garnier.com/contes-de-la-pampa-2.html%3E][Contes
+  de la Pampa]]
+- [ ]
+  [[https://classiques-garnier.com/contes-de-la-pampa-1.html%3E][Contes
+  de la Pampa]] ## TODO Marc-Antoine Désaugiers
+- [ ]
+  [[https://classiques-garnier.com/desaugiers-marc-antoine-theatre.html%3E][Théâtre]]
+  ​## TODO Marcel Proust
+- [ ] [[https://classiques-garnier.com/la-prisonniere.html%3E][La
+  Prisonnière]] ## TODO Marceline Desbordes-Valmore
+- [ ] [[https://classiques-garnier.com/poesies-choisies.html%3E][Poésies
+  choisies]] ## TODO Marguerite de Navarre
+- [ ]
+  [[https://classiques-garnier.com/l-heptameron.html%3E][L'Heptaméron]]
+  ​## TODO Marguerite de Valois
+- [ ]
+  [[https://classiques-garnier.com/album-de-poesies-manuscrit-francais-25455-de-la-bnf.html%3E][Album
+  de poésies (Manuscrit français 25455 de la BNF)]] ## TODO Marivaux
+- [ ]
+  [[https://classiques-garnier.com/journaux-et-oeuvres-diverses.html%3E][Journaux
+  et œuvres diverses]]
+- [ ]
+  [[https://classiques-garnier.com/la-vie-de-marianne-ou-les-aventures-de-madame-la-comtesse-de.html%3E][La
+  Vie de Marianne ou les Aventures de Madame la comtesse de ***]]
+- [ ]
+  [[https://classiques-garnier.com/marivaux-theatre-complet-tome-ii.html%3E][Théâtre
+  complet. Tome II]]
+- [ ] [[https://classiques-garnier.com/le-paysan-parvenu.html%3E][Le
+  Paysan parvenu]]
+- [ ]
+  [[https://classiques-garnier.com/marivaux-theatre-complet-tome-i.html%3E][Théâtre
+  complet. Tome I]] ## TODO Marquise de Créquy
+- [ ]
+  [[https://classiques-garnier.com/souvenirs-de-1710-a-1803-tomes-i-et-ii.html%3E][Souvenirs
+  de 1710 à 1803. Tomes I et II]]
+- [ ]
+  [[https://classiques-garnier.com/souvenirs-de-1710-a-1803-tomes-iii-et-iv.html%3E][Souvenirs
+  de 1710 à 1803. Tomes III et IV]]
+- [ ]
+  [[https://classiques-garnier.com/souvenirs-de-1710-a-1803-tomes-v-et-vi.html%3E][Souvenirs
+  de 1710 à 1803. Tomes V et VI]]
+- [ ]
+  [[https://classiques-garnier.com/souvenirs-de-1710-a-1803-tomes-vii-et-viii.html%3E][Souvenirs
+  de 1710 à 1803. Tomes VII et VIII]]
+- [ ]
+  [[https://classiques-garnier.com/souvenirs-de-1710-a-1803-tomes-ix-et-x.html%3E][Souvenirs
+  de 1710 à 1803. Tomes IX et X]] ## TODO Mary Shelley
+- [ ]
+  [[https://classiques-garnier.com/les-aventures-de-perkin-warbeck-1.html%3E][Les
+  Aventures de Perkin Warbeck]] ## TODO Mathurin Régnier
+- [ ]
+  [[https://classiques-garnier.com/regnier-mathurin-oeuvres-completes-satyres-epitres-elegies-poesies-diverses-et-spirituelles.html%3E][Œuvres
+  complètes]] ## TODO Maurice Scève
+- [ ] [[https://classiques-garnier.com/microcosme.html%3E][Microcosme]]
+- [ ]
+  [[https://classiques-garnier.com/sceve-maurice-oeuvres-poetiques-completes-delie-arion-saulsaye-microcosme-poesies-diverses-et-latines.html%3E][Œuvres
+  poétiques complètes]]
+- [ ]
+  [[https://classiques-garnier.com/delie-objet-de-plus-haute-vertu.html%3E][Délie]]
+  ​## TODO Maurice de Guérin
+- [ ]
+  [[https://classiques-garnier.com/guerin-maurice-de-oeuvres-le-cahier-vert-pages-sans-titre-poemes-lettres-a-barbey-d-aurevilly.html%3E][Œuvres]]
+  ​## TODO Michel Lutfalla
+- [ ]
+  [[https://classiques-garnier.com/une-histoire-de-la-dette-publique-en-france-1.html%3E][Une
+  histoire de la dette publique en France]] ## TODO Michel de Montaigne
+- [ ]
+  [[https://classiques-garnier.com/essais-tome-i-livre-i-livre-ii-chapitres-i-xii.html%3E][Essais.
+  Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/essais-tome-ii-livre-ii-chapitres-xiii-a-xxxvii-livre-iii.html%3E][Essais.
+  Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/journal-de-voyage-en-italie-par-la-suisse-et-l-allemagne-en-1580-et-1581.html%3E][Journal
+  de voyage en Italie par la Suisse et l'Allemagne en 1580 et 1581]] ##
+  TODO Michel-Jean Sedaine
+- [ ]
+  [[https://classiques-garnier.com/sedaine-michel-jean-theatre.html%3E][Théâtre]]
+  ​## TODO Miguel de Cervantès
+- [ ]
+  [[https://classiques-garnier.com/don-quichotte-de-la-manche.html%3E][Don
+  Quichotte de la Manche]]
+- [ ]
+  [[https://classiques-garnier.com/les-nouvelles-exemplaires.html%3E][Les
+  Nouvelles exemplaires]] ## TODO Mirabeau
+- [ ] [[https://classiques-garnier.com/lettres-d-amour.html%3E][Lettres
+  d'amour]] ## TODO Molière
+- [ ]
+  [[https://classiques-garnier.com/moliere-oeuvres-completes-tome-i.html%3E][Œuvres
+  complètes. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/moliere-oeuvres-completes-tome-ii.html%3E][Œuvres
+  complètes. Tome II]] ## TODO Montesquieu
+- [ ]
+  [[https://classiques-garnier.com/correspondance-choisie-avec-respect-et-l-amitie-la-plus-tendre-1.html%3E][Correspondance
+  choisie]]
+- [ ]
+  [[https://classiques-garnier.com/considerations-sur-les-causes-de-la-grandeur-des-romains-et-de-leur-decadence.html%3E][Considérations
+  sur les causes de la grandeur des Romains et de leur décadence]]
+- [ ]
+  [[https://classiques-garnier.com/l-esprit-des-lois-tome-i-livres-i-xix.html%3E][L'Esprit
+  des lois. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/l-esprit-des-lois-tome-ii-livres-xx-xxxi.html%3E][L'Esprit
+  des lois. Tome II]]
+- [ ] [[https://classiques-garnier.com/lettres-persanes.html%3E][Lettres
+  persanes]] ## TODO Nathaniel Hawthorne
+- [ ]
+  [[https://classiques-garnier.com/l-elixir-de-vie-1.html%3E][L'Élixir
+  de vie]] ## TODO Nicholas Wiseman
+- [ ]
+  [[https://classiques-garnier.com/fabiola-ou-l-eglise-des-catacombes.html%3E][Fabiola
+  ou l'Église des catacombes]] ## TODO Nicolas Boileau
+- [ ]
+  [[https://classiques-garnier.com/boileau-nicolas-oeuvres.html%3E][Œuvres]]
+  ​## TODO Nicolas Joseph Florent Gilbert
+- [ ]
+  [[https://classiques-garnier.com/gilbert-nicolas-joseph-florent-oeuvres.html%3E][Œuvres]]
+  ​## TODO Nicolas Machiavel
+- [ ]
+  [[https://classiques-garnier.com/le-prince-precede-des-premiers-ecrits-politiques.html%3E][Le
+  Prince précédé des premiers écrits politiques]] ## TODO Nicolas de
+  Malebranche
+- [ ]
+  [[https://classiques-garnier.com/conversations-chretiennes-dans-lesquelles-on-justifie-la-verite-de-la-religion-et-de-la-morale-de-jesus-christ.html%3E][Conversations
+  chrétiennes dans lesquelles on justifie la vérité de la religion et de
+  la morale de Jésus-Christ]]
+- [ ]
+  [[https://classiques-garnier.com/de-la-recherche-de-la-verite-tome-i-livres-i-v.html%3E][De
+  la recherche de la vérité. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/de-la-recherche-de-la-verite-tome-ii-livre-vi.html%3E][De
+  la recherche de la vérité. Tome II]] ## TODO Nikolaï Leskov
+- [ ]
+  [[https://classiques-garnier.com/la-lady-macbeth-de-mtsensk.html%3E][La
+  Lady Macbeth de Mtsensk]] ## TODO Ninon de Lenclos
+- [ ] [[https://classiques-garnier.com/lettres-2.html%3E][Lettres]] ##
+  TODO Noël Du Fail
+- [ ]
+  [[https://classiques-garnier.com/propos-rustiques-suivis-des-baliverneries.html%3E][Propos
+  rustiques suivis des Baliverneries]] ## TODO Olivier Basselin
+- [ ]
+  [[https://classiques-garnier.com/vaux-de-vire-suivis-d-anciennes-chansons-normandes-choisies.html%3E][Vaux-de-Vire
+  suivis d'anciennes chansons normandes choisies]] ## TODO Olivier
+  Goldsmith
+- [ ]
+  [[https://classiques-garnier.com/le-vicaire-de-wakefield.html%3E][Le
+  Vicaire de Wakefield]] ## TODO Patrick Gibert
+- [ ]
+  [[https://classiques-garnier.com/la-modernisation-de-l-etat-une-promesse-trahie-1.html%3E][La
+  Modernisation de l'État]] ## TODO Paul Scarron
+- [ ] [[https://classiques-garnier.com/le-virgile-travesti.html%3E][Le
+  Virgile travesti]]
+- [ ]
+  [[https://classiques-garnier.com/scarron-paul-theatre-complet.html%3E][Théâtre
+  complet]]
+- [ ] [[https://classiques-garnier.com/le-roman-comique-1.html%3E][Le
+  Roman comique]] ## TODO Paul Verlaine
+- [ ]
+  [[https://classiques-garnier.com/verlaine-paul-oeuvres-poetiques.html%3E][Œuvres
+  poétiques]] ## TODO Paul-Louis Courier
+- [ ]
+  [[https://classiques-garnier.com/courier-paul-louis-oeuvres-tome-i-pamphlets-politiques-pamphlets-litteraires-oeuvres-diverses.html%3E][Œuvres.
+  Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/courier-paul-louis-oeuvres-tome-ii-daphnis-et-chloe-lettres-inedites-de-france-et-d-italie.html%3E][Œuvres.
+  Tome II]] ## TODO Percy Bysshe Shelley
+- [ ]
+  [[https://classiques-garnier.com/odes-poemes-et-fragments-lyriques-choisis.html%3E][Odes,
+  Poèmes et fragments lyriques choisis]] ## TODO Philippe Gilles
+- [ ]
+  [[https://classiques-garnier.com/l-actualite-des-textes-fondateurs-adam-smith-karl-marx-et-john-maynard-keynes-1.html%3E][L'Actualité
+  des textes fondateurs]] ## TODO Philippe Néricault Destouches
+- [ ]
+  [[https://classiques-garnier.com/destouches-philippe-nericault-theatre-choisi.html%3E][Théâtre
+  choisi]] ## TODO Philippe Quinault
+- [ ]
+  [[https://classiques-garnier.com/quinault-philippe-theatre-choisi.html%3E][Théâtre
+  choisi]] ## TODO Pierre Abélard
+- [ ]
+  [[https://classiques-garnier.com/lettres-completes-1.html%3E][Lettres
+  complètes]] ## TODO Pierre Commelin
+- [ ]
+  [[https://classiques-garnier.com/mythologie-grecque-et-romaine.html%3E][Mythologie
+  grecque et romaine]] ## TODO Pierre Corneille
+- [ ]
+  [[https://classiques-garnier.com/corneille-pierre-theatre-complet-tome-i.html%3E][Théâtre
+  complet. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/corneille-pierre-theatre-complet-tome-iii.html%3E][Théâtre
+  complet. Tome III]]
+- [ ]
+  [[https://classiques-garnier.com/corneille-pierre-theatre-complet-tome-ii.html%3E][Théâtre
+  complet. Tome II]] ## TODO Pierre Dockès
+- [ ]
+  [[https://classiques-garnier.com/le-capitalisme-et-ses-rythmes-quatre-siecles-en-perspective-tome-i-sous-le-regard-des-geants-1.html%3E][Le
+  Capitalisme et ses rythmes, quatre siècles en perspective. Tome I]] ##
+  TODO Pierre Le Moyne
+- [ ]
+  [[https://classiques-garnier.com/entretiens-et-lettres-poetiques-1.html%3E][Entretiens
+  et lettres poétiques]] ## TODO Pierre de Ronsard
+- [ ]
+  [[https://classiques-garnier.com/poesies-choisies-1.html%3E][Poésies
+  choisies]]
+- [ ]
+  [[https://classiques-garnier.com/ronsard-pierre-de-oeuvres-en-prose-texte-de-1578-suivies-des-appendices-index-et-glossaire-oeuvres-completes-6.html%3E][Œuvres
+  en prose Texte de 1578 suivies des appendices, index et glossaire]]
+- [ ]
+  [[https://classiques-garnier.com/ronsard-pierre-de-les-odes-texte-de-1578-oeuvres-completes-2.html%3E][Les
+  Odes Texte de 1578]]
+- [ ]
+  [[https://classiques-garnier.com/ronsard-pierre-de-les-poemes-texte-de-1578-oeuvres-completes-3.html%3E][Les
+  Poèmes Texte de 1578]]
+- [ ]
+  [[https://classiques-garnier.com/ronsard-pierre-de-les-elegies-eglogues-et-mascarades-texte-de-1578-oeuvres-completes-4.html%3E][Les
+  Élégies, Églogues et Mascarades Texte de 1578]]
+- [ ]
+  [[https://classiques-garnier.com/ronsard-pierre-de-les-hymnes-suivis-des-discours-et-de-la-franciade-texte-de-1578-oeuvres-completes-5.html%3E][Les
+  Hymnes suivis des Discours et de La Franciade Texte de 1578]]
+- [ ]
+  [[https://classiques-garnier.com/ronsard-pierre-de-les-amours-texte-de-1578-tome-ii-oeuvres-completes-1.html%3E][Les
+  Amours Texte de 1578. Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/ronsard-pierre-de-les-amours-texte-de-1578-tome-i-oeuvres-completes-1.html%3E][Les
+  Amours Texte de 1578. Tome I]] ## TODO Pierre-Augustin Caron de
+  Beaumarchais
+- [ ]
+  [[https://classiques-garnier.com/beaumarchais-pierre-augustin-caron-de-theatre-le-barbier-de-seville-le-mariage-de-figaro-la-mere-coupable.html%3E][Théâtre]]
+- [ ]
+  [[https://classiques-garnier.com/memoires-dans-l-affaire-goezman.html%3E][Mémoires
+  dans l'affaire Goëzman]] ## TODO Pierre-Jean de Béranger
+- [ ]
+  [[https://classiques-garnier.com/beranger-pierre-jean-de-ma-biographie-ouvrage-posthume-oeuvres-completes-2.html%3E][Ma
+  biographie Ouvrage posthume]]
+- [ ]
+  [[https://classiques-garnier.com/beranger-pierre-jean-de-chansons-i-oeuvres-completes-1.html%3E][Chansons.
+  I]]
+- [ ]
+  [[https://classiques-garnier.com/beranger-pierre-jean-de-chansons-ii-oeuvres-completes-1.html%3E][Chansons.
+  II]]
+- [ ]
+  [[https://classiques-garnier.com/beranger-pierre-jean-de-chansons-anciennes-et-posthumes-avec-accompagnement-de-piano-oeuvres-completes-3.html%3E][Chansons
+  anciennes et posthumes avec accompagnement de piano]] ## TODO Prosper
+  Jolyot de Crébillon
+- [ ]
+  [[https://classiques-garnier.com/crebillon-prosper-jolyot-de-theatre-complet-tome-i-idomenee-atree-et-thyeste-electre-rhadamisthe-et-zenobie-xerces-1.html%3E][Théâtre
+  complet. Tome I]] ## TODO Prosper Mérimée
+- [ ]
+  [[https://classiques-garnier.com/romans-et-nouvelles-tome-i.html%3E][Romans
+  et nouvelles. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/romans-et-nouvelles-tome-ii.html%3E][Romans
+  et nouvelles. Tome II]]
+- [ ] [[https://classiques-garnier.com/carmen.html%3E][Carmen]]
+- [ ]
+  [[https://classiques-garnier.com/colomba-suivie-de-la-venus-d-ille-et-des-ames-du-purgatoire.html%3E][Colomba
+  suivie de La Vénus d'Ille et des Âmes du purgatoire]]
+- [ ]
+  [[https://classiques-garnier.com/merimee-prosper-theatre-de-clara-gazul-comedienne-espagnole-suivi-de-la-famille-de-carvajal.html%3E][Théâtre
+  de Clara Gazul, comédienne espagnole suivi de La Famille de Carvajal]]
+- [ ]
+  [[https://classiques-garnier.com/chronique-du-regne-de-charles-ix.html%3E][Chronique
+  du règne de Charles IX]] ## TODO Ramón del Valle-Inclán
+- [ ]
+  [[https://classiques-garnier.com/sonates-memoires-du-marquis-de-bradomin-et-autres-textes-inedits-1.html%3E][Sonates]]
+  ​## TODO Remy de Gourmont
+- [ ]
+  [[https://classiques-garnier.com/le-probleme-du-style-questions-d-art-de-litterature-et-de-grammaire-1.html%3E][Le
+  Problème du style]] ## TODO René Descartes
+- [ ]
+  [[https://classiques-garnier.com/descartes-rene-oeuvres-philosophiques-tome-i-1618-1637-1.html%3E][Œuvres
+  philosophiques. Tome I -- 1618-1637]]
+- [ ]
+  [[https://classiques-garnier.com/descartes-rene-oeuvres-philosophiques-tome-ii-1638-1642-1.html%3E][Œuvres
+  philosophiques. Tome II -- 1638-1642]]
+- [ ]
+  [[https://classiques-garnier.com/descartes-rene-oeuvres-philosophiques-tome-iii-1643-1650-1.html%3E][Œuvres
+  philosophiques. Tome III -- 1643-1650]] ## TODO Robert Challe
+- [ ]
+  [[https://classiques-garnier.com/les-illustres-francaises-1.html%3E][Les
+  Illustres Françaises]] ## TODO Robert Garnier
+- [ ]
+  [[https://classiques-garnier.com/hippolyte-1573-la-troade-1579.html%3E][Hippolyte
+  (1573) La Troade (1579)]]
+- [ ]
+  [[https://classiques-garnier.com/bradamante-suivie-des-juifves.html%3E][Bradamante
+  suivie des Juifves]]
+- [ ]
+  [[https://classiques-garnier.com/garnier-robert-oeuvres-completes-tome-i-theatre-et-poesies.html%3E][Œuvres
+  complètes. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/garnier-robert-oeuvres-completes-tome-ii-theatre-et-poesies.html%3E][Œuvres
+  complètes. Tome II]] ## TODO Rodolphe Töpffer
+- [ ]
+  [[https://classiques-garnier.com/premiers-voyages-en-zigzag-ou-excursions-d-un-pensionnat-en-vacances-dans-les-cantons-suisses-et-sur-le-revers-italien-des-alpes-tome-i-vallee-d-aoste-saint-gervais-valais-saint-gothard-schwitz-milan-come-splugen.html%3E][Premiers
+  Voyages en zigzag ou excursions d'un pensionnat en vacances dans les
+  cantons suisses et sur le revers italien des Alpes. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/nouvelles-genevoises.html%3E][Nouvelles
+  genevoises]]
+- [ ] [[https://classiques-garnier.com/le-presbytere.html%3E][Le
+  Presbytère]]
+- [ ] [[https://classiques-garnier.com/rosa-et-gertrude.html%3E][Rosa et
+  Gertrude]]
+- [ ]
+  [[https://classiques-garnier.com/premiers-voyages-en-zigzag-ou-excursions-d-un-pensionnat-en-vacances-dans-les-cantons-suisses-et-sur-le-revers-italien-des-alpes-tome-ii-chamounix-l-oberland-le-rihi-le-tour-du-lac-de-geneve-venise.html%3E][Premiers
+  Voyages en zigzag ou excursions d'un pensionnat en vacances dans les
+  cantons suisses et sur le revers italien des Alpes. Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/nouveaux-voyages-en-zigzag-tome-i-voyage-a-la-grande-chartreuse-et-autour-du-mont-blanc.html%3E][Nouveaux
+  Voyages en zigzag. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/nouveaux-voyages-en-zigzag-tome-ii-voyage-dans-les-vallees-d-herens-de-zermatt-au-grimsel-a-genes-et-a-la-corniche.html%3E][Nouveaux
+  Voyages en zigzag. Tome II]] ## TODO Roger de Bussy-Rabutin
+- [ ]
+  [[https://classiques-garnier.com/histoire-amoureuse-des-gaules-suivie-de-la-france-galante-tome-i.html%3E][Histoire
+  amoureuse des Gaules suivie de La France galante. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/histoire-amoureuse-des-gaules-suivie-de-la-france-galante-suite-tome-ii.html%3E][Histoire
+  amoureuse des Gaules suivie de La France galante (suite). Tome II]] ##
+  TODO Roland Breeur
+- [ ]
+  [[https://classiques-garnier.com/autour-de-la-betise-1.html%3E][Autour
+  de la bêtise]] ## TODO Romain Rolland
+- [ ]
+  [[https://classiques-garnier.com/correspondance-1912-1942-1.html%3E][Correspondance
+  (1912-1942)]] ## TODO Rétif de la Bretonne
+- [ ] [[https://classiques-garnier.com/la-vie-de-mon-pere.html%3E][La
+  Vie de mon père]] ## TODO Saint-Amant
+- [ ]
+  [[https://classiques-garnier.com/saint-amant-oeuvres-poetiques-poemes-raillerie-a-part-pieces-diverses-les-caprices-et-moyse-sauve.html%3E][Œuvres
+  poétiques]] ## TODO Saint-Évremond
+- [ ]
+  [[https://classiques-garnier.com/saint-evremond-oeuvres-choisies.html%3E][Œuvres
+  choisies]] ## TODO Silvio Pellico
+- [ ]
+  [[https://classiques-garnier.com/mes-prisons-suivies-des-devoirs-des-hommes.html%3E][Mes
+  Prisons suivies des Devoirs des hommes]] ## TODO Stéphane Mallarmé
+- [ ]
+  [[https://classiques-garnier.com/mallarme-stephane-oeuvres.html%3E][Œuvres]]
+  ​## TODO Tabarin
+- [ ] [[https://classiques-garnier.com/tabarin-oeuvres.html%3E][Œuvres]]
+  ​## TODO Teodor de Wyzewa
+- [ ]
+  [[https://classiques-garnier.com/valbert-ou-les-recits-d-un-jeune-homme-1.html%3E][Valbert
+  ou les Récits d'un jeune homme]] ## TODO Teofilo Folengo
+- [ ]
+  [[https://classiques-garnier.com/histoire-maccaronique-de-merlin-coccaie-ou-est-traicte-les-ruses-de-cingar-les-tours-de-boccal-les-aventures-de-leonard-les-forces-de-fracasse-les-enchantements-de-gelfore-et-pandrague-les-rencontres-heureuses-de-balde.html%3E][Histoire
+  maccaronique de Merlin Coccaie ou est traicté Les Ruses de Cingar, Les
+  Tours de Boccal, Les Aventures de Léonard, Les Forces de Fracasse, Les
+  Enchantements de Gelfore et Pandrague, Les Rencontres heureuses de
+  Balde]] ## TODO Thomas Corneille
+- [ ]
+  [[https://classiques-garnier.com/corneille-thomas-theatre-choisi.html%3E][Théâtre
+  choisi]] ## TODO Théodore Agrippa d'Aubigné
+- [ ] [[https://classiques-garnier.com/les-tragiques-1.html%3E][Les
+  Tragiques]] ## TODO Théophile Gautier
+- [ ]
+  [[https://classiques-garnier.com/mademoiselle-de-maupin-texte-complet-1835.html%3E][Mademoiselle
+  de Maupin]]
+- [ ]
+  [[https://classiques-garnier.com/le-capitaine-fracasse-texte-complet-1863.html%3E][Le
+  Capitaine Fracasse]]
+- [ ]
+  [[https://classiques-garnier.com/le-roman-de-la-momie-precede-de-trois-contes-antiques-une-nuit-de-cleopatre-le-roi-candaule-arria-marcella.html%3E][Le
+  Roman de la momie précédé de trois contes antiques Une Nuit de
+  Cléopâtre, Le Roi Candaule, Arria Marcella]]
+- [ ]
+  [[https://classiques-garnier.com/emaux-et-camees-texte-definitif-1872-suivi-de-poesies-choisies.html%3E][Émaux
+  et Camées Texte définitif (1872) suivi de Poésies choisies]]
+- [ ]
+  [[https://classiques-garnier.com/souvenirs-romantiques-hugo-nerval-balzac-lamartine-heine-madame-de-girardin-les-cenacles-1830-baudelaire.html%3E][Souvenirs
+  romantiques]]
+- [ ]
+  [[https://classiques-garnier.com/fortunio-et-autres-nouvelles-textes-complets-1833-1849.html%3E][Fortunio
+  et autres nouvelles]]
+- [ ]
+  [[https://classiques-garnier.com/l-oeuvre-fantastique-tome-i-nouvelles-1.html%3E][L'Œuvre
+  fantastique. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/l-oeuvre-fantastique-tome-ii-romans-1.html%3E][L'Œuvre
+  fantastique. Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/gautier-theophile-theatre-de-poche-1.html%3E][Théâtre
+  de poche]] ## TODO Théophile de Viau
+- [ ]
+  [[https://classiques-garnier.com/viau-theophile-de-oeuvres-poetiques-suivies-des-amours-tragiques-de-pyrame-et-thisbe.html%3E][Œuvres
+  poétiques suivies des Amours tragiques de Pyrame et Thisbé]] ## TODO
+  Timothy D. Allman
+- [ ]
+  [[https://classiques-garnier.com/la-floride-coeur-revelateur-des-etats-unis-1.html%3E][La
+  Floride]] ## TODO Toussaint Louverture
+- [ ] [[https://classiques-garnier.com/memoires.html%3E][Mémoires]] ##
+  TODO Tristan L'Hermite
+- [ ]
+  [[https://classiques-garnier.com/les-amours-et-autres-poesies-choisies.html%3E][Les
+  Amours et autres poésies choisies]] ## TODO Victor Hugo
+- [ ] [[https://classiques-garnier.com/les-contemplations.html%3E][Les
+  Contemplations]]
+- [ ]
+  [[https://classiques-garnier.com/la-legende-des-siecles.html%3E][La
+  Légende des siècles]]
+- [ ]
+  [[https://classiques-garnier.com/les-miserables-tome-ii.html%3E][Les
+  Misérables. Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/les-miserables-tome-i.html%3E][Les
+  Misérables. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/notre-dame-de-paris-1482.html%3E][Notre-Dame
+  de Paris 1482]]
+- [ ]
+  [[https://classiques-garnier.com/quatre-vingt-treize.html%3E][Quatre-vingt-treize]]
+- [ ]
+  [[https://classiques-garnier.com/les-feuilles-d-automne-suivies-des-chants-du-crepuscule.html%3E][Les
+  Feuilles d'automne suivies des Chants du crépuscule]]
+- [ ]
+  [[https://classiques-garnier.com/les-voix-interieures-suivies-de-les-rayons-et-les-ombres.html%3E][Les
+  Voix intérieures suivies de Les Rayons et les Ombres]] ## TODO Volney
+- [ ]
+  [[https://classiques-garnier.com/les-ruines-ou-meditation-sur-les-revolutions-des-empires-suivies-de-la-loi-naturelle-et-de-l-histoire-de-samuel.html%3E][Les
+  Ruines ou Méditation sur les révolutions des empires suivies de La Loi
+  naturelle et de l'Histoire de Samuel]] ## TODO William Shakespeare
+- [ ]
+  [[https://classiques-garnier.com/shakespeare-william-theatre-complet-tome-i.html%3E][Théâtre
+  complet. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/shakespeare-william-theatre-complet-tome-ii.html%3E][Théâtre
+  complet. Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/shakespeare-william-theatre-complet-tome-iii.html%3E][Théâtre
+  complet. Tome III]] ## TODO Xavier de Maistre
+- [ ]
+  [[https://classiques-garnier.com/maistre-xavier-de-oeuvres-completes.html%3E][Œuvres
+  complètes]] ## TODO Xénophon
+- [ ]
+  [[https://classiques-garnier.com/helleniques-1.html%3E][Helléniques]]
+- [ ]
+  [[https://classiques-garnier.com/l-anabase-ou-l-expedition-des-dix-mille-1.html%3E][L'Anabase
+  ou l'Expédition des Dix-Mille]] ## TODO cardinal de Retz
+- [ ]
+  [[https://classiques-garnier.com/memoires-precedes-de-la-conjuration-du-comte-de-fiesque-tome-i-1613-1649.html%3E][Mémoires
+  précédés de La Conjuration du comte de Fiesque. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/memoires-tome-ii-1650-1655.html%3E][Mémoires.
+  Tome II]] ## TODO saint Bernard de Clairvaux
+- [ ]
+  [[https://classiques-garnier.com/lectures-spirituelles-sur-la-vie-chretienne.html%3E][Lectures
+  spirituelles sur la vie chrétienne]] ## TODO saint François de Sales
+- [ ]
+  [[https://classiques-garnier.com/introduction-a-la-vie-devote.html%3E][Introduction
+  à la vie dévote]]
+- [ ]
+  [[https://classiques-garnier.com/lettres-choisies-tome-i-lettres-1-131-lettres-i-cxxxi.html%3E][Lettres
+  choisies. Tome I]]
+- [ ]
+  [[https://classiques-garnier.com/lettres-choisies-tome-ii-lettres-132-320-lettres-cxxxii-cccxx.html%3E][Lettres
+  choisies. Tome II]]
+- [ ]
+  [[https://classiques-garnier.com/lectures-spirituelles-sur-la-piete.html%3E][Lectures
+  spirituelles sur la piété]] ## TODO saint Louis de Grenade
+- [ ]
+  [[https://classiques-garnier.com/lectures-spirituelles-sur-les-fetes-de-la-tres-sainte-vierge.html%3E][Lectures
+  spirituelles sur les fêtes de la très sainte Vierge]] ## TODO Émile
+  Zola
+- [ ] [[https://classiques-garnier.com/nana.html%3E][Nana]]
+- [ ] [[https://classiques-garnier.com/germinal.html%3E][Germinal]] ##
+  TODO Éric Thierry
+- [ ]
+  [[https://classiques-garnier.com/la-france-de-henri-iv-en-amerique-du-nord-de-la-creation-de-l-acadie-a-la-fondation-de-quebec-1.html%3E][La
+  France de Henri IV en Amérique du Nord]] ## TODO Étienne Jodelle
+- [ ] [[https://classiques-garnier.com/l-eugene.html%3E][L'Eugène]] ##
+  TODO Évariste de Parny
+- [ ] Œuvres
+
+* KILL Que sais-je (Cairn)
+:PROPERTIES:
+:CUSTOM_ID: kill-que-sais-je-cairn
+:END:
+Déjà disponible
+
+* TODO Cairn
+:PROPERTIES:
+:CUSTOM_ID: todo-cairn-1
+:END:
+** TODO Histoire
+:PROPERTIES:
+:CUSTOM_ID: todo-histoire
+:END:
+Liste ici : 1773 livres
+[[https://www-cairn-info.bases-doc.univ-lorraine.fr/liste-des-ouvrages.php?editeur=&discipline=3]]
+​### TODO [#B] Nouvelle clio as ebook 52 livres
+[[https://www-cairn-info.bases-doc.univ-lorraine.fr/liste-des-ouvrages.php?searchTermAccess=all&editeur=PUF&collection=PUF_NOCLI&discipline=3&orderby=titre]]
+Exemple de requete -> ok jusque
+e-christianisme-de-constantin-a-la-conquete-arabe 1. DONE Récupérer
+HTML 2. DONE Conversion epub 3. TODO Canada et États-Unis depuis 1770 -
+Claude Fohlen 4. TODO Conquête et exploitation des nouveaux mondes -
+Pierre Chaunu 5. TODO Enfance de l'Europe. Aspects économiques et
+sociaux - Robert Fossier 6. TODO Enfance de l'Europe. Aspects
+économiques et sociaux. - Robert Fossier 7. TODO États, sociétés et
+cultures du Monde musulman médiéval - Jean-Claude Garcin 8. TODO
+Expansion européenne et décolonisation - Jean-Louis Miège 9. TODO Guerre
+et société à l'époque moderne - Jean Chagniot 10. TODO Histoire
+d'Angleterre - Bernard Cottret 11. TODO Histoire de l'URSS - Andrea
+Graziosi 12. TODO Histoire de la civilisation romaine - Hervé
+Inglebert 13. TODO Histoire des techniques - Liliane Hilaire-Pérez 14.
+TODO L'Afrique noire, de 1800 à nos jours - Catherine
+Coquery-Vidrovitch 15. TODO L'Amérique latine de l'Indépendance à nos
+jours - François Chevalier 16. TODO L'Asie orientale et méridionale aux
+XIX - Hartmut O. Rotermund 17. TODO L'Égypte et la vallée du Nil. Tome
+2 - Claude Vandersleyen 18. TODO L'Égypte et la vallée du Nil. Tome 3 -
+Frédéric Payraudeau 19. TODO L'Europe celtique à l'âge du Fer - Olivier
+Buchsenschutz 20. TODO L'Europe culturelle et religieuse de 1815 à nos
+jours - Paul Gerbod 21. TODO L'Europe du Nord-Ouest et du Nord - Pierre
+Jeannin 22. TODO L'expansion européenne - Frédéric Mauro 23. TODO
+L'expansion européenne du XIII - Pierre Chaunu 24. TODO L'expansion
+musulmane - Robert Mantran 25. TODO La préhistoire dans le monde - José
+Garanger 26. TODO La protohistoire de l'Europe - Jan Lichardus 27. TODO
+La Russie impériale - Pierre Gonneau 28. TODO Le catholicisme entre
+Luther et Voltaire - Jean Delumeau 29. TODO Le christianisme de
+Constantin à la conquête arabe - Pierre Maraval 30. TODO Le
+christianisme des origines à Constantin - Simon Claude Mimouni 31. TODO
+Le judaïsme ancien du VI - Simon Claude Mimouni 32. TODO Le judaïsme et
+le christianisme antique - André Benoit 33. TODO Le monde byzantin I -
+Cécile Morrisson 34. TODO Le monde byzantin II - Jean-Claude Cheynet 35.
+TODO Le monde byzantin III - Angeliki Laiou 36. TODO Le monde grec aux
+temps classiques. Tome 2 - Pierre Brulé 37. TODO Le monde hellénistique.
+Tome 1 - Claire Préaux 38. TODO Le monde hellénistique. Tome 2 - Claire
+Préaux 39. TODO Le Proche-Orient Asiatique. Tome 1 - Paul Garelli 40.
+TODO Le XIII - Léopold Genicot 41. TODO Les Grecs et la Méditerranée
+orientale - Claude Baurain 42. TODO Les invasions - les vagues
+germaniques - Lucien Musset 43. TODO Les Latins en Orient - Michel
+Balard 44. TODO Les Pays nordiques aux XIXe et XXe siècles -
+Jean-Jacques Fol 45. TODO L'Europe au XVIe siècle - Alain Tallon 46.
+TODO L'Europe de 1815 à nos jours - Georges-Henri Soutou 47. TODO
+Mentalités médiévales - Hervé Martin 48. TODO Mentalités médiévales.
+Tome 2 - Hervé Martin 49. TODO Naissance et affirmation de la Réforme -
+Jean Delumeau 50. TODO Rome et l'intégration de l'Empire - Tome 2 -
+Claude Lepelley 51. TODO Rome et l'intégration de l'Empire (44 av.
+J.-C.-260 ap. J.-C.). Tome 1 - François Jacques 52. TODO Rome et la
+conquête du monde méditerranéen (264-27 av. J.-C.). Tome 1 - Claude
+Nicolet 53. TODO Rome et la conquête du monde méditerranéen (264-27 av.
+J.-C.). Tome 2 - Claude Nicolet 54. TODO Rome et la Méditerranée
+occidentale jusqu'aux guerres puniques - Jacques Heurgon ### TODO [#A]
+Collection U as ebook [2/103] 101 ouvrages
+[[https://www-cairn-info.bases-doc.univ-lorraine.fr/liste-des-ouvrages.php?searchTermAccess=all&editeur=&collection=ARCO_U&discipline=3&orderby=titre&offset=100]] 1.
+DONE Récupérer HTML 2. DONE Générer ebook 3. TODO
+[[https://www.cairn.info/citoyennete-republique-et-democratie-en-france--9782200294045.htm][Citoyenneté,
+République et Démocratie en France]] 4. TODO
+[[https://www.cairn.info/croisades-et-orient-latin--9782200264987.htm][Croisades
+et Orient latin : XIe-XIVe siècle]] 1. DONE Corriger 2. TODO Uploader 3.
+TODO Notes 4. DONE Uploader 5. TODO
+[[https://www.cairn.info/droit-de-conquete-et-droits-des-indiens--9782200293055.htm][Droit
+de conquête et droits des Indiens]] 6. TODO
+[[https://www.cairn.info/eglise-et-societe-en-occident--9782200355876.htm][Église
+et société en Occident]] 7. TODO
+[[https://www.cairn.info/eglise-et-societe-en-occident-xiiie-xve-siecles--9782200267636.htm][Église
+et société en Occident]] 8. TODO
+[[https://www.cairn.info/famille-et-societe-dans-le-monde-grec-et-en-italie--9782200625627.htm][Famille
+et société dans le monde grec et en Italie]] 9. TODO
+[[https://www.cairn.info/film-et-histoire--9782200345570.htm][Film et
+histoire]] 10. TODO
+[[https://www.cairn.info/geohistoire-de-lamondialisation--9782200602949.htm][Géohistoire
+de la mondialisation]] 11. TODO
+[[https://www.cairn.info/histoire-culturelle-de-la-france-au-xixe-siecle--9782200353278.htm][Histoire
+culturelle de la France au XIXe siècle]] 12. TODO
+[[https://www.cairn.info/histoire-de-l-art--9782200622350.htm][Histoire
+de l'art]] 13. TODO
+[[https://www.cairn.info/histoire-de-l-autriche--9782200355906.htm][Histoire
+de l'Autriche]] 14. TODO
+[[https://www.cairn.info/histoire-de-l-espagne-contemporaine--9782200614607.htm][Histoire
+de l'Espagne contemporaine]] 15. TODO
+[[https://www.cairn.info/histoire-de-l-europe-de-l-est--9782200248994.htm][Histoire
+de l'Europe de l'Est]] 16. TODO
+[[https://www.cairn.info/histoire-de-l-italie-depuis-1943-a-nos-jours--9782200262150.htm][Histoire
+de l'Italie depuis 1943 à nos jours]] 17. TODO
+[[https://www.cairn.info/histoire-de-l-oceanie--9782200601300.htm][Histoire
+de l'Océanie]] 18. TODO
+[[https://www.cairn.info/histoire-de-la-globalisation-financiere--9782200355388.htm][Histoire
+de la globalisation financière]] 19. TODO
+[[https://www.cairn.info/histoire-de-la-presse-en-france--9782200613327.htm][Histoire
+de la presse en France]] 20. TODO
+[[https://www.cairn.info/histoire-de-la-republique-populaire-de-chine--9782200614881.htm][Histoire
+de la République Populaire de Chine]] 21. TODO
+[[https://www.cairn.info/histoire-des-bibliotheques--9782200616250.htm][Histoire
+des bibliothèques]] 22. TODO
+[[https://www.cairn.info/histoire-des-etats-unis--9782200618094.htm][Histoire
+des États-Unis]] 23. TODO
+[[https://www.cairn.info/histoire-des-pays-d-islam--9782200618421.htm][Histoire
+des pays d'Islam]] 24. TODO
+[[https://www.cairn.info/histoire-des-sciences-epoque-moderne--9782200345211.htm][Histoire
+des sciences à l'époque moderne]] 25. TODO
+[[https://www.cairn.info/histoire-du-christianisme-en-france--9782200290665.htm][Histoire
+du christianisme en France]] 26. TODO
+[[https://www.cairn.info/histoire-du-livre-en-occident--9782200277512.htm][Histoire
+du livre en Occident]] 27. TODO
+[[https://www.cairn.info/histoire-economique-de-l-afrique-tropicale--9782200602642.htm][Histoire
+économique de l'Afrique tropicale]] 28. TODO
+[[https://www.cairn.info/histoire-politique-de-la-v-e-republique--9782200346935.htm][Histoire
+politique de la Ve République]] 29. TODO
+[[https://www.cairn.info/histoire-romaine--9782200622909.htm][Histoire
+romaine]] 30. TODO
+[[https://www.cairn.info/hommes-et-femmes-d-egypte-ive-siecle-av-n-e--9782200346454.htm][Hommes
+et femmes d'Égypte (IV]] 31. TODO
+[[https://www.cairn.info/imperialisme-et-democratie-a-athenes--9782200269289.htm][Impérialisme
+et démocratie à Athènes]] 32. TODO
+[[https://www.cairn.info/l-afrique-du-20-e-siecle-a-nos-jours--9782200285074.htm][L'Afrique
+du 20e siècle à nos jours]] 33. TODO
+[[https://www.cairn.info/l-allemagne-de-1870-a-nos-jours--9782200285050.htm][L'Allemagne
+de 1870 à nos jours]] 34. TODO
+[[https://www.cairn.info/l-amerique-iberique--9782200625641.htm][L'Amérique
+ibérique]] 35. TODO
+[[https://www.cairn.info/l-anatolie-hellenistique--9782200268329.htm][L'Anatolie
+hellénistique]] 36. TODO
+[[https://www.cairn.info/l-aristocratie-medievale--9782200262938.htm][L'aristocratie
+médiévale]] 37. TODO
+[[https://www.cairn.info/l-armee-romaine--9782200276539.htm][L'armée
+romaine]] 38. TODO
+[[https://www.cairn.info/education-physique-de-1945-a-nos-jours--9782200600686.htm][L'éducation
+physique de 1945 à nos jours]] 39. TODO
+[[https://www.cairn.info/l-egypte-grecque-et-romaine--9782200262884.htm][L'Égypte
+grecque et romaine]] 40. TODO
+[[https://www.cairn.info/l-empire-austro-hongrois--9782200248888.htm][L'Empire
+austro-hongrois]] 41. TODO
+[[https://www.cairn.info/l-europe--9782200601386.htm][L'Europe]] 42.
+TODO
+[[https://www.cairn.info/l-europe-au-19-e-siecle--9782200622565.htm][L'Europe
+au 19]] 43. TODO
+[[https://www.cairn.info/l-europe-centrale-et-orientale--9782200602635.htm][L'Europe
+centrale et orientale]] 44. TODO
+[[https://www.cairn.info/l-heritage-ambigu-de-la-colonisation--9782200281335.htm][L'héritage
+ambigu de la colonisation]] 45. TODO
+[[https://www.cairn.info/l-histoire-immediate--9782200277390.htm][L'histoire
+immédiate]] 46. TODO
+[[https://www.cairn.info/la-construction-de-l-europe--9782200353056.htm][La
+construction de l'Europe]] 47. TODO
+[[https://www.cairn.info/la-culture-materielle-de-la-france--9782200286569.htm][La
+culture matérielle de la France]] 48. TODO
+[[https://www.cairn.info/la-famille-en-france-a-l-epoque-moderne--9782200244170.htm][La
+famille en France à l'époque moderne]] 49. TODO
+[[https://www.cairn.info/la-france-a-l-epoque-moderne--9782200626181.htm][La
+France à l'époque moderne]] 50. TODO
+[[https://www.cairn.info/la-france-au-xix-e-siecle--9782200622596.htm][La
+France au XIX]] 51. TODO
+[[https://www.cairn.info/la-france-et-l-europe-de-napoleon--9782200265335.htm][La
+France et l'Europe de Napoléon]] 52. TODO
+[[https://www.cairn.info/la-grande-bretagne-et-le-monde--9782200244576.htm][La
+Grande-Bretagne et le monde]] 53. TODO
+[[https://www.cairn.info/la-guerre-dans-le-monde-grec--9782200600297.htm][La
+guerre dans le monde grec]] 54. TODO
+[[https://www.cairn.info/la-peninsule-iberique-aux-epoques-romaines--9782200268336.htm][La
+péninsule Ibérique aux époques romaines]] 55. TODO
+[[https://www.cairn.info/la-republique-romaine-et-son-empire--9782200622053.htm][La
+République romaine et son empire]] 56. TODO
+[[https://www.cairn.info/la-revolution-francaise--9782200627690.htm][La
+Révolution française]] 57. TODO
+[[https://www.cairn.info/La-revolution-francaise-et-l-histoire-du-monde--9782200257699.htm][La
+Révolution française et l'histoire du monde]] 58. TODO
+[[https://www.cairn.info/la-societe-du-haut-moyen-age--9782200265779.htm][La
+société du haut Moyen Âge]] 59. TODO
+[[https://www.cairn.info/la-societe-francaise-de-1945-a-nos-jours--9782200613082.htm][La
+société française de 1945 à nos jours]] 60. TODO
+[[https://www.cairn.info/le-christianisme-antique--9782200626914.htm][Le
+christianisme antique]] 61. TODO
+[[https://www.cairn.info/le-christianisme-occidental-au-moyen-age--9782200251871.htm][Le
+christianisme occidental au Moyen Âge]] 62. TODO
+[[https://www.cairn.info/le-maghreb-par-les-textes--9782200627294.htm][Le
+Maghreb par les textes]] 63. TODO
+[[https://www.cairn.info/le-monde-grec-a-l-epoque-classique--9782200614713.htm][Le
+monde grec à l'époque classique]] 64. TODO
+[[https://www.cairn.info/monde-hellenistique--9782200618179.htm][Le
+monde hellénistique]] 65. TODO
+[[https://www.cairn.info/le-reich-allemand--9782200262334.htm][Le Reich
+allemand]] 66. TODO
+[[https://www.cairn.info/saint-empire-1500-1800--9782200617639.htm][Le
+Saint-Empire]] 67. TODO
+[[https://www.cairn.info/le-second-empire--9782200246075.htm][Le Second
+Empire]] 68. TODO
+[[https://www.cairn.info/le-xx-e-siecle--9782200271534.htm][Le XX]] 69.
+TODO
+[[https://www.cairn.info/les-accords-d-evian--9782200249076.htm][Les
+accords d'Evian (1962)]] 70. TODO
+[[https://www.cairn.info/les-annees-1970--9782200623289.htm][Les années
+1970]] 71. TODO
+[[https://www.cairn.info/les-decolonisations-au-xxe-siecle--9782200249458.htm][Les
+décolonisations au XX]] 72. TODO
+[[https://www.cairn.info/les-etats-unis-et-le-monde-au-19e-siecle--9782200266929.htm][Les
+États-Unis et le monde au 19e siècle]] 73. TODO
+[[https://www.cairn.info/les-femmes-dans-la-france-moderne--9782200601584.htm][Les
+femmes dans la France moderne]] 74. TODO
+[[https://www.cairn.info/les-femmes-actrices-histoire-de-france--9782200246549.htm][Les
+femmes, actrices de l'histoire France, de 1789 à nos jours]] 75. TODO
+[[https://www.cairn.info/les-mondes-mediterraneens-au-moyen-age--9782200620288.htm][Les
+mondes méditerranéens au Moyen Âge]] 76. TODO
+[[https://www.cairn.info/les-ouvriers-en-france--9782200277420.htm][Les
+ouvriers en France]] 77. TODO
+[[https://www.cairn.info/les-perses-vus-par-les-grecs--9782200270353.htm][Les
+Perses vus par les Grecs]] 78. TODO
+[[https://www.cairn.info/les-provinces-unies-a-l-epoque-moderne--9782200614515.htm][Les
+Provinces-Unies à l'époque moderne]] 79. TODO
+[[https://www.cairn.info/les-relations-internationales-dans-l-europe-modern--9782200623005.htm][Les
+relations internationales dans l'Europe moderne]] 80. TODO
+[[https://www.cairn.info/les-relations-internationales-depuis-1945--9782200622558.htm][Les
+relations internationales depuis 1945]] 81. TODO
+[[https://www.cairn.info/les-societes-en-guerre--9782200265649.htm][Les
+sociétés en guerre]] 82. TODO
+[[https://www.cairn.info/les-villes-portuaires-maritimes-dans-la-france--9782200278205.htm][Les
+villes portuaires maritimes dans la France moderne]] 83. TODO
+[[https://www.cairn.info/l-affaire-dreyfus--9782200244163.htm][L'affaire
+Dreyfus]] 84. TODO
+[[https://www.cairn.info/l-alimentation-en-europe-a-l-epoque-moderne--9782200244071.htm][L'alimentation
+en Europe à l'époque moderne]] 85. TODO
+[[https://www.cairn.info/l-empire-colonial-francais-de-richelieu-a-napoleon--9782200354909.htm][L'empire
+colonial français de Richelieu à Napoléon]] 86. TODO
+[[https://www.cairn.info/l-enseignement-de-l-histoire-en-france--9782200262754.htm][L'enseignement
+de l'Histoire en France]] 87. TODO
+[[https://www.cairn.info/l-italie-fasciste--9782200614584.htm][L'Italie
+fasciste]] 88. TODO
+[[https://www.cairn.info/manuel-d-archeologie--9782200266769.htm][Manuel
+d'archéologie]] 89. TODO
+[[https://www.cairn.info/manuel-d-archeologie-medievale-et-moderne--9782200281397.htm][Manuel
+d'archéologie médiévale et moderne]] 90. TODO
+[[https://www.cairn.info/manuel-d-histoire-globale--9782200278995.htm][Manuel
+d'histoire globale]] 91. TODO
+[[https://www.cairn.info/naissance-de-litalie-contemporaine--9782200267926.htm][Naissance
+de l'Italie contemporaine]] 92. TODO
+[[https://www.cairn.info/paysans-et-seigneurs-au-moyen-age--9782200618162.htm][Paysans
+et seigneurs au Moyen-Age]] 93. TODO
+[[https://www.cairn.info/petite-histoire-de-la-france--9782200285128.htm][Petite
+histoire de la France]] 94. TODO
+[[https://www.cairn.info/pouvoir-et-religion-en-europe--9782200623463.htm][Pouvoir
+et religion en Europe]] 95. TODO
+[[https://www.cairn.info/pouvoir-royal-et-institutions-dans-la-france-moder--9782200613075.htm][Pouvoir
+royal et institutions dans la France moderne]] 96. TODO
+[[https://www.cairn.info/precis-d-histoire-europeenne--9782200601188.htm][Précis
+d'histoire européenne]] 97. TODO
+[[https://www.cairn.info/revoltes-et-repressions-dans-la-france-moderne--9782200274900.htm][Révoltes
+et répressions dans la France moderne]] 98. TODO
+[[https://www.cairn.info/rome-et-le-monde-provincial--9782200249526.htm][Rome
+et le monde provincial]] 99. TODO
+[[https://www.cairn.info/rome-paysage-urbain-et-ideologie--9782200263843.htm][Rome.
+Paysage urbain et idéologie]] 100. TODO
+[[https://www.cairn.info/royaute-et-ideologie-au-moyen-age--9782200249212.htm][Royauté
+et idéologie au Moyen Âge]] 101. TODO
+[[https://www.cairn.info/sparte--9782200618148.htm][Sparte]] 102. TODO
+[[https://www.cairn.info/un-siecle-d-histoire-culturelle-en-france--9782200286637.htm][Un
+siècle d'histoire culturelle en France]] 103. TODO
+[[https://www.cairn.info/une-histoire-culturelle-des-etats-unis--9782200278588.htm][Une
+histoire culturelle des États-Unis]] # TODO Askhistorians ## TODO
+Goodreads non à jour -> utiliser le wiki Pandoc ou HTML ? v1: seulement
+les liens et "manuel" ? Utiliser pandoc ?

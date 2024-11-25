@@ -1,0 +1,12 @@
+* 2024-06-28
+** 14:32 RVI Montpellier
+- [X] 2305204 TP63 déjà discuté mais rendu classe 4 plutôt que 3
+- [X] 2400087 del GPC3 classe 4
+- [X] 2303264 del ANKRD11 rendu a priori
+- [X] 2400218 dup avec NIPBL rendu
+- [X] 2303166 dup FGD1 classe 4, sd Aarskgog f
+- [ ] 2101694 neg mais à revoir dans seqone
+- [ ] 2393246 del 17pter en mosaïque -> vous
+- [ ] 2302630 variant ATP6V1B2 : clinique collerait mais ne sera pas rendu
+
+Genematcher NPEPPS -> demande faite par Lucas

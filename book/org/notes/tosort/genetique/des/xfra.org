@@ -1,0 +1,109 @@
+#+title: FRMX et ses syndromes
+#+author: Pr Verloes
+#+date:<2022-06-30 Thu>
+
+Historiquement, caryotype dans culture particulière (pauvre acide folique)
+* /FMR1/
+renommé FXMR1
+2 mécanismes :
+- 99%: expansion de triplets CGG  dans al partie non transcrite du 1er exon
+- 1% mutation pontuelle LOF
+
+- Normal= triplets CGG en 5’ entre 6 et 44 , stable,
+- Intermédiaire 45-54 : probabilité d’une expansion de triplet, peu instable
+- pré-mutation 55-200 : devient instable à chaque méiose, allongement surtout, accumulation ARNm dans le noyau -> toxicité
+- mutation complète > 200: 2nd mécanisme = inactivation du gènes (pas de protéine, ->perte de fonction )
+* X fragile
+Forme la plus commune de retard mental monogénique
+Filles : tout est possible
+Garçon : retard modéré (QI 40-60), timidité et hyperkinésie
+Génotype-phénytope
+- hommes :
+  - pré-muté : QI normal,
+  - muté = 99% retard mental, mutation complète non transmise !
+- femmes
+  - mutée : 4/4 trouble apprentissage, 1/10 retard comparable hommes
+  - prémuté: FXTAS rarement, ménopause préma
+Prémuté risque neurodégénératif
+
+!! Pas de passage normal -> muté sur 1 génération !!
+** Clinique chez garçon
+Pas facile en pratique quotidenne
+Surtout
+- grosse tḙte, grande taille
+- macro-orchidie
+- dysmorphie
+  Rarement autre chose : scoliose, prolapsus mitral, dilatation aortique
+  Epilepsie pas très fréquente,pas très sévère
+  Parfois obésité (pouvant ḙtre très sévère -> on a pensé à un "pseudo-Prader-will")
+** Dysmorphie
+Reconnaissable mais pas variment dysmorphique
+- visage allongé
+Y penser surtout sur comportement+++
+** Neurodev
+QI diminue avec le temps
+Petite retard de marche, retard de langage
+trouble du comportement plutôt que psy 75%
+- déficite attentionnel +++
+- "pseudo-autistique": évitement du regard
+- 30% TSA
+* FXTAS
+Majeur :
+- troubles moteurs (interrogatoire: demander si "Parkinson") : tremblement intention, ataxie cérébelleuse
+- IRM cérébrale particulière : leucopathie sous-tentorellie
+- IOP 20%
+  Plus la prématation est large, plus le risque de FXTAS est important
+  Pénétrance augement avec l’âge
+* Diagnostic moléculaire
+cytogénétique abandonné
+Non vu en NGS car séquence de triplet plus longue que amplicon
+
+Classique
+- longeur par PCR
+- Enzyme de restriction (sensible méthylation): différentre entre allèle méthylé et non méthylé
+Défaut : technique particulière, difficulté séparer mutation longue et courte
+
+Nouvelle technique : triplet-primed PCR = plusieurs amorces sur le gène avec PCR standard -> donne longeur standard
+
+NB: long-range pourra peut-ḙtre éviter cette technique
+* DPN
+Méthylatiton allèle grande taille n’apparaît pas à la conception... -> on regarde seulement la longeur de l’expansion
+Peut ḙtre compliqué si taille limite..
+
+Indication difficile
+- fille mutée : on n’est pas dans le cas d’une "particulière gravité"
+
+- si prémuté: peut-ḙtre maladie neurodégénérative à 50 ans...
+
+* Autres malaides à répététion
+Exon : mutation très contrainte -> amplification plus courtesa
+En intronique, peut ḙtre plus grand
+Plupart son neuro
+* Mécanisme
+** Pourquoi expansion ?
+Mécanisme probable
+possibité que l’ADN s’organise en boucle sur lui-meme avec allongement pendant la transcription -> possibilité de réduction ou amplification
+** Pourquoi 2 formes?
+Ssytème de protection : identifie les ARN en forme 3D anormale -> arrḙt transcripton
+Ne fonctionen pas pour prémutié
+** Rôle protéine
+Ubiquitaire
+Synthétisé dans Cytoplasme
+Peut se lier à des ARNm
+2 fonctions
+- rôle de cargo: dans le noyau, se lie à des ARNm, ressort du noyau, décharge ARN près terminaisons synapses
+- en paralèle, empḙche la traduction
+
+
+Synapses glutamate: 2 familles récepteurs
+- classique (flux d’ions)
+  - NMDA
+  - AMPA
+- déclenche activation voie RAS
+  Auto-amplification des récepteurs
+
+  En cas d’Xfra : perturbe équilibre entre les récepteurs
+  - -> neurones deviennent plus résistant aux flux
+  - trop de synpases qui fonctionnent mal
+* Traitement
+Difficile de mesure l’efficacité

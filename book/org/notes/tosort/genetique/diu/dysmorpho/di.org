@@ -1,0 +1,140 @@
+#+TITLE: Di
+#+author: Aurore Curie
+#+date: <2022-05-10 Tue>
+
+(.. non suivi)
+* Gravité
+- sévère = quelque mots : QI entre 20 et 35
+profonde si < 20
+- surhandicap = troubles du comportement, trouble sensoriel, moteur...
+
+
+** Classification actuelle = plus sur le QI !
+Selon comportement adaptatif, besoins de soutien
+- modéré = autonome possible mais plutôt en foyer
+- sévère = soutien pour toutes les activité
+
+Echelle de Vineland
+* Diagnostic
+**4 dimensions à évaluer**
+- motricité globale
+- motricité fine
+- langage
+- socialisation
+
+** Interrogation
+*** ATCD
+  ATCD familaux : retard language, troubles apprentissage, DI, environemment (ethnie, niveau étude, profession)
+  ATCD perso : mode de conception, déroulement grossesse, écho, accouchement (apgar, souffrance foetale), paramètres de naissance, comportemet néonatal
+*** développmente psychomoteur
+- premières inquiétude
+- âge des premières acquisitions : posture, motricite fine, contact sociale, langage
+- progrès ou régression?
+
+***  Alimentation : succion, déglutition, RGO, anorexie
+- Caractères
+- particularités sensorrielle
+- veille-soommeil
+
+  Scolarité : autonomie, diffi
+  Épilepsie
+
+  P, T, PC (parents++) : microcéphalie si < -2DS mais on est particulièrement inquiet si < -3ds. Ou changement rapide
+
+  Bil
+** Examen
+  Comportement spontané : gesticulation globale, caractère symétrique, mimime faciale, regard
+  -> voit, entend ?
+
+  Examen clinique vérifie observation
+  Attention peut être trompeur chez le petit -> revoir
+  Regarder peau (tâches cutanée), souffe cardiaque
+
+** Outils neurodéveloppement
+  Carnet de santé :
+  Échelle de Brunet-Lézine: se faire une mallette (cubes, dinette, de quoi dessiner, apprécier le language)
+
+  Neurodév suit le développement du SNC
+  Motricité spontanée = 8 semaines
+Contrôle sous-cortico-spinal -> cortico-spinal -> moteur, language
+Maturation : moteur, langage et premier et préfrontal en dernier (décision)
+
+** Repères
+- 4 mois tenue tête, 9 mois assis sans appui, 12-18 mois marche, 24 mois court, 3 ans escalier en alternant
+- 6 mois préhension volontaire à distance, 9 mois : pouce-index, permanence de l’objet, 24 mois : tour de 5 cube, reproduit un trait, 3 ans : reproduit un cercle, 4 ans carré
+- 9 mois : redouble syllables, 12 mois premier mots, 18-24 mots de 50 à 200 mots, 24 mois associte 2 mots, 3 ans phrase
+- socialisation : 2 moins soourire réponse, 9 mois peur étranger, pointage avant 18 mois 24 mois : jeu de faire semblant
+** Age du repérage selon le degré
+- sévère profond dès les première semaine
+* Cas clinique
+** Retard postural 14 mois
+Né césarienne urgence mais éveil et APGAR bon
+
+Retard motricité globale, fine et language -> mettre en place stimulation
+* Démarche
+1. signes d’alerte
+2. diag différentiels
+3. diag étiologique
+   70% de diag
+   pourquoi ?
+   - cause
+   - pronostic
+     15-20% cause environment : infection ou toxique ou cause maternelle anténatale, préma, post-natal (méningite, accidente, tumeur, vasculaire, carence)
+     50% cause génétique : chromososique, monosomique
+* Cas clinique
+    microcéphalie + irm anormale -> irm
+    image: lésion kystique, compatible avec CMV
+
+
+* Exemple de causes
+** Willams beuren
+    microdel 7q11 X: joue plein, oedème suspalpébral, bouche large
+    artériopathie (défaut d’élastine), sténose aortique supravalvulaire
+    cognitif: "cocktail party" = petite conversation très superficielle
+
+    difficulté de repérage spatial
+ NB: T21 retard de language mais bonne réprésentation spatiale
+
+** Smith-magenis
+ microdel 17p11.2
+ troubles de comportement : se rentre des corps étrangers dans les orifices (polyembolokoïlomanie)
+ inversioon du cycle nycthéméral
+
+ beta-bloquant peuvent agir la sécrétion de mélatonine le matin
+
+* DI liée à l’X
+ > 150 gènes sur X
+** Xfra
+DI + visage (grand front, oreilles décollées masi compliqué chez les touts petits), macroorchidie (visible après l’adolescence)
+
+Amplification de triplets dans al région promotrice : impact sur la transcript si >
+
+- prémutation : 55-200 = FXTAS, IOP
+- mutatino complète = hyperméthylation, pas de protéine -> X fra
+
+  DI, retard language global et sévère
+  comportsement 80% hyperactif (attention: hypersensible au méthylphénidate), anxiété sociale, évitement du regards
+
+  Ttt : aménagement thérapeutique
+* Syndrome
+**  Sd de Rette
+  dev normal puis régression psychomot (6-18 mois), stabilité (2-10 ans), détériotation
+  stéréotype sur la ligne médiane = caractéristique
+
+  scoliose++, fracture sur ostéoporose
+  regard perçant
+  cassure
+
+  Dépister le QT allongé
+
+
+** IRM : épilepsie, marche > 2 ans, micro/macrocéphalie, examen neuro anormal
+
+** Déficit en transporteur de créatinine
+Spectroscopie = analyse dans un voxel les neurotransmetter
+
+Permet de mettre en évidence un déficit en transporteur de créatinine
+
+Ttt possible si anomalie de la synthèse: créatinie, régime pauvre en Arg et riche Orn
+** NB: DI + dystonie -> recherche mutation ARX (analyse spécifique)
+Sd de Partington = Dystonie des membres sup
