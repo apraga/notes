@@ -1,4 +1,0 @@
-* Patient synthétique
-:PROPERTIES:
-:CUSTOM_ID: patient-synthétique
-:END:

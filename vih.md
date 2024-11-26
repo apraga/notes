@@ -1,13 +1,11 @@
-# vih
+# VIH
 #viro 
 
 
 Patient connu: western blot peut être négatif ! Épidémio: VIH2 = 2% 
 **Déclaration obligatoire**
 
-
 # Structure
-
 
 Virus enveloppé avec dans la capside 2 brins d'ARN mnoncaténaire de polarité+
 Génome
@@ -16,9 +14,7 @@ Génome
 - _env_ idem mais externes 
 - _pol_ ADN polymérase à activité transcriptase inverse, intégrase et protéase 
 
-
 # Tropisme et réplication
-
 
 Cellules CD4+ (lymphocytes T, monocytes-macrophages, cellules dendritiques) 
 
@@ -29,22 +25,21 @@ Cellules CD4+ (lymphocytes T, monocytes-macrophages, cellules dendritiques)
 
 # Transmission
 
-
 Rapports sexuels non protégé, mère-enfant
 HIV2 = rare en France, mais ~100% Afrique de l'Ouest 
 
 
 # Clinique
 
-
 1. 2 semaine d'incubation 
 2. Primo
     - asympto/pharyngite + syndrome pseudo-grippal 
-    - [cytolyse](syndrome-mononucleosique.norg:) 
+    - [cytolyse](cytolyse)
+    - [syndrome mononucleosique](syndrome-mononucleosique)
 1. Latence 
 2. SIDA (8 ans) défini par T CD4 + < 200/mm^3^ avec infections opportunistes/cancer 
     - cryptococcose, pneumocystose, toxoplasmose, CMV, tuberculose 
-- lymphome [EBV](#ebvmd)
+- lymphome [EBV](ebv)
 
 
 # Diagnostic
@@ -67,12 +62,9 @@ d'une co-infection VIH2 !!
 
 ## Notes
 
-
 - Tests rapidesAc anti HIV1,2détecte un contact > 3 mois, à confirmer en labo 
 
-
 ## IgG contre
-
 
 - glycoprotéine transmembranaire (gène _env_): gp160,gp120,gp41 
 - capside/matrice/corep55, p24,p18 (gène _gag_) 
@@ -84,15 +76,11 @@ d'une co-infection VIH2 !!
 - Plutot précoceglycoprotéine, p55,p24 
 - Plutôt tardifp34 
 
-
 # Bilan initial
-
 
 Séro EBV, CMV 
 
-
 # Traitement
-
 
 1 ou 2 inhibiteur nucléosidique transcriptase inverse + [1 non nucléo ou 1 intégrase](#1-non-nucléo-ou-1-intégrase) 
 
@@ -127,11 +115,9 @@ Primo:
 
 - Pré-expositionPrEP 
 - grossessetraitement + zidovuline/ténofovit pendant le travait et traitement post-exposition de nouveau-né, _sans allaitement_ 
-- [Accident d'exposition au sang](accident-dexposition-au-sang.norg:) ou sexuel 
-
+- [accident dexposition au sang](accident-dexposition-au-sang)
 
 ## Notes
-
 
 EI: tenofovir = nephrotoxique, sauf forme alafénamide daru = pb cardio vasculaire 
 
@@ -141,7 +127,6 @@ indétectable depuis 2 ans
 
 # Résistance
 
-
 Lamivudine, emtricitabine = mutation M134 V/I 
 
 - codong ATG donne soit ATA (I) sout GTA (V): le premier est plus
@@ -149,4 +134,3 @@ Lamivudine, emtricitabine = mutation M134 V/I
   qui rend la réplication quasi-impossible. Le VIH a ViF qui désactive
   cette enzyme. NB: APOBEC peut éditer le génome intégrer (peu d'effet ?
   contrairement à EBV) 
-

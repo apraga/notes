@@ -1,4 +1,0 @@
-* Validation
-:PROPERTIES:
-:CUSTOM_ID: validation
-:END:

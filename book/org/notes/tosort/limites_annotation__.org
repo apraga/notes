@@ -1,8 +1,0 @@
-:PROPERTIES:
-:ID:       7310f8fa-7518-48f7-bc11-ec14d8e0cbf1
-:END:
-#+title: Limites annotation
-#+filetags: auragen annotation
-
-- Très vieille version VEP (2019)
-- nom de gènes non à jour donc lien OMIM peut manquer (due à une vieille version VEP)

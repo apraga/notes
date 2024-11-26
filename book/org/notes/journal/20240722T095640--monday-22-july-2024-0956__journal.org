@@ -1,9 +1,0 @@
-#+title:      Monday 22 July 2024 09:56
-#+date:       [2024-07-22 Mon 09:56]
-#+filetags:   :journal:
-#+identifier: 20240722T095640
-
-* Biblio facebook
-[cite:@xie2024statistical] revue de différents outils qui font un "enrichissement" sur gènes de novo.
-On essaie de trouver ceux qui estiment le nombre de variants par gène
- [cite:@samocha2014framework]

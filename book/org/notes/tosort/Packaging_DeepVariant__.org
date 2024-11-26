@@ -1,6 +1,0 @@
-​#nix #bisonex Semble très compliqué. Installable depuis docker ou script
-ubuntu Il faut bazel et tensorflow...
-
-- dépendences :
-  https://github.com/google/deepvariant/blob/r1.6.1/run-prereq.sh
-- puis https://github.com/google/deepvariant/blob/r1.6.1/build-prereq.sh

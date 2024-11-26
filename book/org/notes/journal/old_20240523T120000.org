@@ -1,9 +1,0 @@
-* 2024-05-23
-** 09:50 Bibliographie pseudogene
-[[id:2c8cdbf2-39b5-429b-8dc4-0816129b808e][Bibliographie pseudogene]]
-** 11:04 Notes tutorial excel variants interprétété
-Mises dans [[id:3442b828-1809-44c4-bbb1-54dcfe553869][Tutorial excel variant interprétés]]
-** 13:59 Essai restauration excel "cassé"
-Tri sur "variant(s) diag" casse les 6 000 variants...
-Impossible de revenir en arrière
-Version récupérée par Julien

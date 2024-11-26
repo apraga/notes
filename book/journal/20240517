@@ -1,7 +1,0 @@
-* 2024-05-17
-** 22:38 Gestion des tâches dans org-mode
-GTD ? Essai de la version de Nicolas Rougier (cf boulot) mais en pratique, inutilement compliqué
-Template par défaut de Doom emacs ? Non, adapté à de multiples projets
-KISS : un seul todo.org avec un simple template de capture.
-** 22:39 Journal
-Switch dailies avec org-roam à org-journal: plus facile de se déplacr et ils ne "pollueront" pas le graphe org-roam (souci avec les filtres...)

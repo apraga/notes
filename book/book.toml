@@ -1,6 +1,0 @@
-[book]
-authors = ["Alexis Praga"]
-language = "fr"
-multilingual = true
-src = "."
-title = "Notes"
