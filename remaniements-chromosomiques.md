@@ -8,4 +8,11 @@
 
 
 
+### Délétion 13q31.3 et syndrome de Feingold : microARN
 
+Microcéphalie, *brachydactylie* et *syndactlyie 2e doigt*
+Gène /MYCN/ (oncogène, neuroblastomes): perte de fonction
+Délétions emportant cluster de MIR 17-92 sur 10 cas (chr13) et _GPC5_
+Délétions prenant toujours cluster MIR (Murielle AJMG 2019, Lei AJMG 2021) allant jusqu'à 16Mb
+
+Mal annoté (absent OMIM), Mal couverT CGH -> *regarder GPC5*

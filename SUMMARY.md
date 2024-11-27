@@ -5,3 +5,5 @@
   - [CGH](cgh.md)
   - [Remaniements chromosomiques](remaniements-chromosomiques.md)
 
+- Moléculaire
+  - [pLI](pli.md)

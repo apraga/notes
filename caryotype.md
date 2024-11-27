@@ -1,6 +1,13 @@
-Carcls
 
-# Entrainement
+# Caryotype
+
+1 clone = 
+- >= 2 cellules avec le même chromosome en plus ou la même anomalie de structure
+- ou 3 cellules ayant perdue le même chromosome
+
+Limites : 5Mb
+
+## Classification
 
 ## Les 10 plus grands
 
@@ -22,7 +29,7 @@ Les 3 plus petits:
 - chr21grappe de cerise
 - chr22idem mais très épais
 - chr ygris pale*
-  Puis
+Puis
 - chr13V renversé sous le centromère et 2 pieds foncés
 - chr14clair sous le centromère, 2 bandes noires en q terminal formant un carré
 - chr15bottes
