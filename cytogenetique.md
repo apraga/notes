@@ -1,5 +1,10 @@
-+# Cytologie génétique
-* Dup et inv en CGH
+# Cytologie génétique
+
+## Prénatal
+Villosité choriales : >= 11-12SA
+amnoicytse >= 14-15 SA
+
+- Dup et inv en CGH
   Penser à 
   - duplication en mirroir (ABA) ou en tandem (ABAB) 
   - si intervalle libre, non distal : inversion paracentrique ?
@@ -17,8 +22,6 @@ voir images U:/cyto
 freq 1/20 000
 https://onlinelibrary.wiley.com/doi/10.1111/j.1399-0004.2009.01187.x
   DPN mais peu de chance de récurrence
-* Réunions
-- {:$/acraa:}
 
 ## Réunions
 - [acraa](acraa.md)
