@@ -1,6 +1,0 @@
-* 2024-05-15
-** 09:00 [[Formation Kalilab]]
-** 11:00 Formation
-- CNV: dossiers à regarder : tous retrouvé mais
-  - [ ] [[http://172.25.219.90:8080/DATA/MR-2000903/manual/report/MR-2000903.pdf][MR-2000903]] : petite délétion prenant le début de l'exon 6 [[http://172.25.219.90:8080/ascute-au/igv/igv-mr.html?caseid=MR-2000903&libtype=WGS&libid=LIB00003583_S18,Cas%20index;LIB00003581_S16,M%C3%A8re;LIB00003582_S17,P%C3%A8re&locus=chr1:235470919][IGV]] (vérifié sur Hygen) -> revoir pourquoi rendu
-  - [ ] [[http://172.25.219.90:8080/DATA/MR-2000957/manual/report/MR-2000957.pdf][2000957]] vérifier dans hygen + mise à jour diapos

@@ -1,9 +1,0 @@
-#+TITLE: Avance Staturales
-#+author: Audrey Putoux
-
-Def : taille > +2DS
-
-* Beckwith-Wiedeman
-DD : Simpson-Golabi-Mehel (hernie diaphargmatique, difficultés d’apprentissages)
-
-(...)

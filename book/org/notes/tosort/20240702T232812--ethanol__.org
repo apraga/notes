@@ -1,7 +1,0 @@
-:PROPERTIES:
-:ID:       4e543bc3-7e7e-4f29-a0f2-898f4539b8e5
-:END:
-#+title: Éthanol
-#+filetags: biochimie
-Indication: intoxication aigüe
-Norme < 0.03g/L

@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       1195c13b-032c-4d14-ab3e-e42282f70704
-:END:
-#+title: Gènes
-#+filetags: bio

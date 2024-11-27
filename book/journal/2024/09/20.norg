@@ -1,4 +1,0 @@
-* Tensorflow
-  On limite la RAM avec `-j 1`
-bazel build -j 1 //tensorflow/tools/pip_package:wheel --repo_env=WHEEL_NAME=tensorflow_cpu
-  {https://stackoverflow.com/questions/34382360/decrease-bazel-memory-usage}[SO]

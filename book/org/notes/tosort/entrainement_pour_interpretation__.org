@@ -1,8 +1,0 @@
-:PROPERTIES:
-:ID:       d402eb63-2fc9-45d0-b261-f06a1fb10aa1
-:END:
-#+title: Entraînement pour interprétation
-#+filetags: auragen interpretation formation
-
-- "avancées du mois" dans Aurapport = diag déjà rendu
-- [[id:0128811c-6cba-4142-a1b9-1d54df0d1b1c][Curagen v2]]

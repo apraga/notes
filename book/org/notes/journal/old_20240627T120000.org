@@ -1,9 +1,0 @@
-* 2024-06-27
-** 16:49 Discussion julien CHD7 :chd7:
-1. cas clinique
-2. > X symptômes, forte suspicion clinique CHARGE (et peu diag différentiel)
-3. panel : négatif
-4. donc génome qui retrouve un variant complexe
-5. hypothèses : inv-inv-del en constit (ou somatique)
-6. nanopore prévu (on a de l'ADN, décrire rapidement)
-7. Note sur pourquoi non vu en panel

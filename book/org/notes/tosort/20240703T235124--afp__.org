@@ -1,6 +1,0 @@
-:PROPERTIES:
-:ID:       763dc0db-c8f4-4b29-a9a4-ec096c8e9d81
-:END:
-#+title: AFP
-#+filetags: biochimie immuno
-Indication:: cancers foie, testicules, digestifs, poumons

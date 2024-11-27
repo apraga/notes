@@ -1,8 +1,0 @@
-:PROPERTIES:
-:ID:       b86a1b39-27b0-43e3-8630-7840234e9c71
-:END:
-#+title: Acides biliaires
-#+filetags: biochimie
-Augmént cholesases
-Attention à la toxicité cardiaque foetale au 3e trimestre de la grossesse
-Normes 0-10μmol/L

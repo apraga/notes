@@ -1,8 +1,0 @@
-* 2024-07-11
-** 09:01 Axe 3
-Présentation Absplice
-Contexte : outils récent pour rare "aberrant"
-Apport
-- anomalies "extrêmes" de splice (outlier) depuis au moins 2 tissus d'u1 individus
-- base de données d'annotation de tissué basé sur GTEx (49) avec sites accepteur et donneur
-- modèle à partir dADN +/- données RNAseq si disponible

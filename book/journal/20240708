@@ -1,5 +1,0 @@
-* 2024-07-08
-** 21:03 Deepvariant
-PR échoue : le patch ne semble pas être appliqué. Avis demandé au maintainer sur PR.
-En parallèle, il est en train d'être appliqué upstream
-Pour avancer, on pourrait compiler sur le mésocentre avec python11

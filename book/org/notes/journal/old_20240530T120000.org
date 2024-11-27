@@ -1,4 +1,0 @@
-* 2024-05-30
-** 13:57 réunion labo
-Annule et remplace = n'écrase pas les anciens compte-rendus
-Réanalyse = nouvelle étape dans hygen (même numéro de dossier car correspond à une famille)

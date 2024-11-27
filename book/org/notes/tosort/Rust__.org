@@ -1,9 +1,0 @@
-* Développer un package
-:PROPERTIES:
-:CUSTOM_ID: développer-un-package
-:END:
-** Test
-:PROPERTIES:
-:CUSTOM_ID: test
-:END:
-cargo test cargo clippy cargo test
