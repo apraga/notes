@@ -245,3 +245,10 @@ workout {
     serie 10
   }
 }
+ice-skating {
+    date "2024-11-28"
+    trois
+    "changement arriere"
+    "marche arrière"
+    "cigogne arrière"
+  }
