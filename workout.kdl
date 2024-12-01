@@ -251,4 +251,48 @@ ice-skating {
     "changement arriere"
     "marche arrière"
     "cigogne arrière"
-  }
+}
+
+ice-skating {
+  8 date "2024-11-29"
+    fente
+    sauts
+    croisements
+    notes "Dur sur des nouveaux patins... Impossible de freiner"
+}
+workout {
+    date "2024-11-29"
+    pull-up {
+      serie 1 1 1 1 1 1 1 1 1 1 1 1
+      serie 1 1 1 1 1 1 1 1 1 1 1 1
+      serie 1 1 1 1 1 1 1 1 1 1 1 1
+    }
+    compression {
+      serie 10
+      serie 10
+      serie 10
+    }
+    extension {
+      serie 25
+      serie 25
+      serie 25
+    }
+
+    "tucked planche" {
+      serie 3 3 3 1
+      serie 3 3 3 1
+      serie 3 3 3 
+    }
+    "pushed-up tucked" {
+      series 3 3
+    }
+    notes "Circuit. Haut du corps seul"
+}
+ice-skating {
+    date "2024-12-01"
+    trois
+    "changement arriere"
+    "marche arrière"
+    "cigogne avant"
+    notes "Attention à cheville gauche qui casse par défaut"
+}
