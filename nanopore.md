@@ -64,6 +64,12 @@ skip_quantification = true
 call_variants = true
 }
 ```
+
+Problème : 72Go ne suffit pas pour medaka avec 32Go. Utiliser la queue GPU ne semble pas activer le mode GPU.
+
+39771        nf-NFCORE_NANOSEQ_NANOSEQ_SHORT_VARIANT_CALLING_M+         32        72G   00:14:39   07:48:48 OUT_OF_ME+
+39775        nf-NFCORE_NANOSEQ_NANOSEQ_BEDTOOLS_UCSC_BIGWIG_BE+         24        32G   00:10:41   04:16:24 OUT_OF_ME+
+
 ### Test fournis + singularity (apptainer)
 module load apptainer/1.1.8
 
