@@ -13,26 +13,26 @@ Limites : 5Mb
 
 2 ont q >  2p
 - chr4 = oreilles de mickey
-- chr52 bandes foncées en q
+- chr5 = bandes foncées en q
 
 1 est sub-médian
-- chr2V inversé au début du qcorselet
+- chr2 = inversé au début du corselet
 
 2 sont médians
-- chr1haut-de-forme
-- chr32 bandes noires en p et q quasi symétriques
+- chr1 = haut-de-forme
+- chr3 = 2 bandes noires en p et q quasi symétriques
 
 
 ## Acrocentriques :
 
 Les 3 plus petits:
-- chr21grappe de cerise
-- chr22idem mais très épais
-- chr ygris pale*
+- chr21 = grappe de cerise
+- chr22 = idem mais très épais
+- chr y = gris pale*
 Puis
-- chr13V renversé sous le centromère et 2 pieds foncés
-- chr14clair sous le centromère, 2 bandes noires en q terminal formant un carré
-- chr15bottes
+- chr13 = renversé sous le centromère et 2 pieds foncés
+- chr14 = clair sous le centromère, 2 bandes noires en q terminal formant un carré
+- chr15 = bottes
 
 ## Taille intermédiaire (entre le 15 et le 22)
 

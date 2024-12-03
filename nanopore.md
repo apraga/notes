@@ -64,6 +64,9 @@ skip_quantification = true
 call_variants = true
 }
 ```
+Il faut éditer le VCF à la main après SNIFFLES
+https://github.com/nf-core/nanoseq/issues/276
+
 ### Test fournis + singularity (apptainer)
 module load apptainer/1.1.8
 
