@@ -7,6 +7,9 @@ NB: infomaniak est compattble mais seulement dans la version payante... On ne pe
 
 # Solution retenue :
 
-- rclone sync pour mega
-- client infomaniak 
-  Le dossier de référence est kDrive
+
+- git annex sur seedhost. Fichiers binaires :
+ wget https://dl.kyleam.com/git-annex/git-annex-10.20241202-linux-amd64.tar.gz- rclone sync pour mega
+Et les rajouter dans le PATH
+- mega pour sauvegarde sans pouvoir facilement lire les fichiesr
+- exporttree dans un dossier local synchronisé à la mail par le client infomaniak
