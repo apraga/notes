@@ -9,7 +9,7 @@ Limites : 5Mb
 
 ## Classification
 
-## Les 10 plus grands
+### Les 10 plus grands
 
 2 ont q >  2p
 - chr4 = oreilles de mickey
@@ -22,40 +22,40 @@ Limites : 5Mb
 - chr1 = haut-de-forme
 - chr3 = 2 bandes noires en p et q quasi symétriques
 
-
-## Acrocentriques :
+### Acrocentriques :
 
 Les 3 plus petits:
 - chr21 = grappe de cerise
 - chr22 = idem mais très épais
-- chr y = gris pale*
+- chr y = gris pale
+
 Puis
 - chr13 = renversé sous le centromère et 2 pieds foncés
 - chr14 = clair sous le centromère, 2 bandes noires en q terminal formant un carré
 - chr15 = bottes
+(Autre astuces : chapeau -> bottes -> manteau)
 
-## Taille intermédiaire (entre le 15 et le 22)
+### Taille intermédiaire (entre le 15 et le 22)
 
 3 en forme de croix
-- chr20les plus petits avec p plus clair que q
-- chr 19 et 16les 19 sont plus foncés que les 16
-- chr17les plus grands et foncés
-- chr18: gris pâles
+- chr20 = les plus petits avec p plus clair que q
+- chr 19 et 16 = les 19 sont plus foncés que les 16
+- chr17 = les plus grands et foncés
+- chr18 = gris pâles
 
-## 2 chromosomes avec 2 bandes noires sur q
+### 2 chromosomes avec 2 bandes noires sur q
 
-11 et 12
-- chr12 est plus rectangulaire avec q = 2p
-- chr11la bande noire du q proche du centromère est plus épaisse
+- chr12 = est plus rectangulaire avec q = 2p
+- chr11 = la bande noire du q proche du centromère est plus épaisse
 
-## Les plus grands et médians
+### Les plus grands et médians
 
-- chr61 bandeau noir sur le p
-- chr7abdomen de guêpe sur le q
-- chrX: "diabolo" autour du centromère
+- chr6 = 1 bandeau noir sur le p
+- chr7 = abdomen de guêpe sur le q
+- chrX = "diabolo" autour du centromère
 
-## Ceux qui restent
+### Ceux qui restent
 
-- chr8petits sabots, une bande gris pâle au milieu de q
-- chr10petit collier sous le centromère et 3 bandes noires en q (équidistants)
-- chr9coupelle en q et "cou étiré " en clair en q
+- chr8 = petits sabots, une bande gris pâle au milieu de q
+- chr10 = petit collier sous le centromère et 3 bandes noires en q (équidistants)
+- chr9 = coupelle en q et "cou étiré " en clair en q
