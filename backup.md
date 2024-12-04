@@ -8,8 +8,19 @@ NB: infomaniak est compattble mais seulement dans la version payante... On ne pe
 # Solution retenue :
 
 
-- git annex sur seedhost. Fichiers binaires :
+1. git annex sur seedhost. Fichiers binaires :
  wget https://dl.kyleam.com/git-annex/git-annex-10.20241202-linux-amd64.tar.gz- rclone sync pour mega
 Et les rajouter dans le PATH
-- mega pour sauvegarde sans pouvoir facilement lire les fichiesr
-- exporttree dans un dossier local synchronisé à la mail par le client infomaniak
+On a tout dessus. 
+2. mega et google drive comme "special remote" pour sauvegarde (mais perte des noms de fichier et de l'architecture)
+```
+git annex initremote mega type=external externaltype=rclone-builtin encryption=none rcloneremotename=mega rcloneprefix=git-annex-content rclonelayout=nodir3. 
+```
+3.  exporttree dans un dossier local synchronisé avec Infomaniakà la mail par le client infomaniak
+
+```bash
+git annex initremote myremote type=directory directory=/mnt/myremote \
+    exporttree=yes encryption=none
+git annex export master --to myremote
+```
+4. Les dépôts git sont super importants : sur github, sourcehut et codeberg
