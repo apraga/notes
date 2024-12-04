@@ -5,7 +5,6 @@
   - [CGH](cgh.md)
   - [Caryotype](caryotype.md)
   - [Remaniements chromosomiques](remaniements-chromosomiques.md)
-
 - [Moléculaire](moleculaire.md)
   - [ACMG](classification-acmg.md)
-  - [pLI](pli.md)
+  - [Scores bioinfo](scores-bioinfo.md)

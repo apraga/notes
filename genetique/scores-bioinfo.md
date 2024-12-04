@@ -1,5 +1,7 @@
-# pLI
+# Scores bioinfo
 #moleculaire
+
+## pLI
 
 Problèmes:
 - (à compléter avec la présentation Achropuce 2024)
@@ -15,3 +17,4 @@ Conseille Shet
 Autres, composites : CoNeS, pHI, DosaCNV, pHaplo
 
 NB: taux de mutation dans génome = Samocha 2024
+

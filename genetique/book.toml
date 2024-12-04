@@ -1,6 +1,6 @@
 [book]
 authors = ["Alexis Praga"]
 language = "fr"
-multilingual = true
+multilingual = false
 src = "."
-title = "Notes"
+title = "Génétique"
