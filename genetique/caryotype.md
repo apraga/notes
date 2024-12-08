@@ -1,6 +1,29 @@
 
 # Caryotype
 
+## Indications
+
+Prénatal ( voir [Cytogénétique prénatale](cytogenetique-prenatal.md)): soumis à la législation
+- âge mère >= 38 ans (jour de la ponction)
+- risque > 1/250
+- signes d'appel échographiques
+- ATCD d'enfant avec anomalies chromosomiques
+- caryotype parental avec remaniement
+- diagnostic de sexe (sans génétique moléculaire)
+- contrôle de DPNI
+
+Posnatal : non encadré par la loi. Le plus souvent
+- ambiguïté sexuelle
+- clinique évoquant un syndrome chromosomique conne (trisomie 21, 13, 18, délétions 4p, 5p, Turner, Klinefelter)
+- syndrome polymalformatif ou DI
+- retard/absence de règles, aménorrhée, ménopause précoce 
+- retard de croissance, petite taille
+- infertilité, fausses couches à répétition
+- enquête familiale
+- suspicion d'instabilité chromosomique
+- enquête familiate après DPN
+
+## Réalisation
 1 clone = 
 - >= 2 cellules avec le même chromosome en plus ou la même anomalie de structure
 - ou 3 cellules ayant perdue le même chromosome

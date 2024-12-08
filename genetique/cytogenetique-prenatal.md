@@ -1,11 +1,11 @@
-# Prénatal
+# Cytogénétique prénatale
 #cyto
 
 - Villosité choriales : >= 11-12SA
 - amniocytes >= 14-15 SA
 - sang fœtal > 20SA
 
-Préparation
+## Préparation
 - Villosités choriales : 
   - les cellules trophoblastiques se divisent rapidement, les cellules mésenchymateusees de l'axe des villosité nécessitent une culture plus longue.
   - culture courte (examen direct) et longue

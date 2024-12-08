@@ -18,9 +18,9 @@ git annex initremote mega type=external externaltype=rclone-builtin encryption=n
 ```
 3.  exporttree dans un dossier local synchronisé avec Infomaniakà la mail par le client infomaniak
 
-```bash
-git annex initremote myremote type=directory directory=/mnt/myremote \
-    exporttree=yes encryption=none
-git annex export master --to myremote
-```
 4. Les dépôts git sont super importants : sur github, sourcehut et codeberg
+
+## Configuration
+1. `rclone config`
+2. Installer https://github.com/git-annex-remote-rclone/git-annex-remote-rclone
+3. `git annex initremote gdrive type=external externaltype=rclone target=gdrive prefix=git-annex chunk=50MiB encryption=none rclone_layout=lower`
