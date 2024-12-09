@@ -4,13 +4,11 @@
 ## Indications
 
 Prénatal ( voir [Cytogénétique prénatale](cytogenetique-prenatal.md)): soumis à la législation
-- âge mère >= 38 ans (jour de la ponction)
-- risque > 1/250
+- âge mère >= 38 ans (jour de la ponction), sans autre possibilité de dépistage de T21
+- risque > 1/50 (test combiné, dépistage ADN circulant)
 - signes d'appel échographiques
 - ATCD d'enfant avec anomalies chromosomiques
 - caryotype parental avec remaniement
-- diagnostic de sexe (sans génétique moléculaire)
-- contrôle de DPNI
 
 Posnatal : non encadré par la loi. Le plus souvent
 - ambiguïté sexuelle
@@ -23,6 +21,12 @@ Posnatal : non encadré par la loi. Le plus souvent
 - suspicion d'instabilité chromosomique
 - enquête familiate après DPN
 
+## Prélèvement
+Prénatal
+- Villosité choriales : >= 11-12SA
+- amniocytes >= 14-15 SA
+- sang fœtal > 20SA
+
 ## Réalisation
 1 clone = 
 - >= 2 cellules avec le même chromosome en plus ou la même anomalie de structure
@@ -31,6 +35,8 @@ Posnatal : non encadré par la loi. Le plus souvent
 Limites : 5Mb
 
 ## Classification
+
+[](../images/caryotype.png)
 
 ### Les 10 plus grands
 
