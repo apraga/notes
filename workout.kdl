@@ -254,7 +254,7 @@ ice-skating {
 }
 
 ice-skating {
-  8 date "2024-11-29"
+    date "2024-11-29"
     fente
     sauts
     croisements
@@ -295,4 +295,34 @@ ice-skating {
     "marche arrière"
     "cigogne avant"
     notes "Attention à cheville gauche qui casse par défaut"
+}
+
+workout {
+    date "2024-12-11"
+    muscle-up {
+      serie 1 1 1
+      serie 2 2
+      serie 2 1 1
+    }
+    compression {
+      serie 10
+      serie 10
+      serie 10
+    }
+    extension {
+      serie 25
+      serie 25
+      serie 25
+    }
+
+    "tucked planche" {
+      serie 2 3 3 2
+      serie 3 3 3 2
+      serie 3 3 3 
+    }
+    "pushed-up tucked" {
+      series 3 3
+      series 3 3
+      series 3 3
+    }
 }
