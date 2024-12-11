@@ -8,7 +8,17 @@ Pipelines
 
 Visu ribbon/splithreader (igv marche maintenant)
 
-## nf-core
+## epi2me
+### Test HG003 + singularity
+- Erreur au téléchargement des images parfois, donc on copie l'adresse depuis le message d'erreur et on le télécharge à la main
+- dans leur tutorial, ils partent du [.pod](https://labs.epi2me.io/giab-2023.05/) -> plutôt fastq pour nous 
+- Il faut un BAM en entrés donc `samtools import` [comme recommandé]()https://github.com/epi2me-labs/wf-human-variation/issues/75#issuecomment-1688305466)
+```bash
+
+samtools import -i HG002_ucsc_Jan_2019_Guppy_3.0.fastq.gz -o  HG002_ucsc_Jan_2019_Guppy_3.0.bam    ```
+- Ne prend pas plusieurs échantillons
+
+## nf-core -> appel de variant trop vieux
 ### Test HG002 + pip
 https://s3-us-west-2.amazonaws.com/human-pangenomics/NHGRI_UCSC_panel/HG002/hpp_HG002_NA24385_son_v1/nanopore/HG002_ucsc_Jan_2019_Guppy_3.0.fastq.gz
 "unsheared DNA and LSK109 sequencing chemistry"

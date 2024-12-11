@@ -3,6 +3,7 @@
 - [Cytogénétique](cytogenetique.md)
   - [Nomenclature ISCN](nomenclature-iscn.md)
   - [CGH](cgh.md)
+    - [CNVs récurrents](cnvs-recurrents.md)
   - [Caryotype](caryotype.md)
   - [Remaniements chromosomiques](remaniements-chromosomiques.md)
 - [Moléculaire](moleculaire.md)
