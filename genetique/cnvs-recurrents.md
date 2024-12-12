@@ -7,6 +7,8 @@
 - [2q13](https://genome-euro.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr2%3A108942222%2D114040553&hgsid=347201139_503lMvDOPassd2KTagaMYaxrE2Cf) : délétion = PIEV, duplication = VOUS
 - [3q29](https://genome-euro.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr3%3A193442073%2D198295559&hgsid=347201460_Vv1lz6Fxp74nr20uyeMrDogrswk4) (448kb a minima) : délétion = PIEV, duplication = VOUS
 - 10q11.21q11.23 : taille variable, région critique 1.5Mb : délétion = PIEV, duplication = VOUS
-- 15q11.2 : délétioon PIEV, duplication = bénie
+- 15q11.2 : délétion PIEV, duplication = bénie
+- 13q13.3: 
+
 Source : [Achropuce 2022](https://acpa-achropuce.com/wp-content/uploads/2022/09/20220930-revision-fiches-2022_VF.pdf) 
 
