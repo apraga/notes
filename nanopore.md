@@ -3,25 +3,55 @@
 Base-calling : https://github.com/nanoporetech/dorado (GPU)
 pipeline dédié https://github.com/epi2me-labs/wf-basecalling
 Pipelines
-- nanopore https://github.com/epi2me-labs/wf-human-variation
-- nf-core https://github.com/nf-core/nanoseq -> pas à jour depuis 2 ans
+- [nanopore](https://github.com/epi2me-labs/wf-human-variation) : à partir du uBAM. Recommandé par le développer de Madaka
+- [nf-core](https://github.com/nf-core/nanoseq) -> pas à jour depuis 2 ans, appel de variant échoue par manque de mémoire à 150G...
 
 Visu ribbon/splithreader (igv marche maintenant)
 
+## Données HG002
+- [source](https://s3-us-west-2.amazonaws.com/human-pangenomics/NHGRI_UCSC_panel/HG002/hpp_HG002_NA24385_son_v1/nanopore/HG002_ucsc_Jan_2019_Guppy_3.0.fastq.gz)
+- "Shasta publication protocol (3 LSK109-based sequencing libraries per PromethION flow cell with 3 flow cells per individual),
+with observed N50s (average) ~42 kb and 6x coverage per individual in 100kb+ reads.
+[Source](https://s3-us-west-2.amazonaws.com/human-pangenomics/NHGRI_UCSC_panel/HG002/hpp_HG002_NA24385_son_v1/nanopore/Nanopore_README.txt)
+
 ## epi2me
-### Test HG003 + singularity
+### Test HG002 + singularity
 - Erreur au téléchargement des images parfois, donc on copie l'adresse depuis le message d'erreur et on le télécharge à la main
-- dans leur tutorial, ils partent du [.pod](https://labs.epi2me.io/giab-2023.05/) -> plutôt fastq pour nous 
+- dans leur tutorial, ils partent du [.pod](https://labs.epi2me.io/giab-2023.05/) -> plutôt fastq pour nous
 - Il faut un BAM en entrés donc `samtools import` [comme recommandé]()https://github.com/epi2me-labs/wf-human-variation/issues/75#issuecomment-1688305466)
 ```bash
-
 samtools import -i HG002_ucsc_Jan_2019_Guppy_3.0.fastq.gz -o  HG002_ucsc_Jan_2019_Guppy_3.0.bam    ```
 - Ne prend pas plusieurs échantillons
+-  L'appel de variant nécessite **le modèle du base calling** (Guppy, qui est [deprecated](https://nanoporetech.com/document/Guppy-protocol) )
+  - [liste](https://github.com/nanoporetech/rerio) mais gruppy 3.0 n'est pas listé (probablement trop vieux)
+  - [modèles acceptés](#https://github.com/epi2me-labs/wf-human-variation/blob/42ffefba3fe4010818634478ec8851f1a03ee477/data/clair3_models.tsv#L37)
+  - on choisit guppy	dna_r9.4.1_450bps_hac	r941_prom_sup_g5014 (promethion + guppy, difficie d'en dire plus)
 
-## nf-core -> appel de variant trop vieux
+- Configuration
+```bash
+process {
+    executor = 'slurm'
+    queue = 'smp'
+    // Default parameters for nf-core
+    withName: '.*minimap2.*' {
+     //   queue = 'bigmem'
+        cpus          = 32
+        memory        = 128.GB
+        time          = 32.h
+    }
+}
+
+params {
+  // overried minimap2 cpus as by default it sump ubam_map_threads      +  ubam_sort_threads       +  ubam_bam2fq_threads
+  ubam_map_threads = 32
+  ubam_sort_threads = 32
+  ubam_bam2fq_threads = 32
+  }
+  ```
+
+
+# nf-core -> appel de variant trop vieux
 ### Test HG002 + pip
-https://s3-us-west-2.amazonaws.com/human-pangenomics/NHGRI_UCSC_panel/HG002/hpp_HG002_NA24385_son_v1/nanopore/HG002_ucsc_Jan_2019_Guppy_3.0.fastq.gz
-"unsheared DNA and LSK109 sequencing chemistry"
 
 nf-core/nanoseq avec pip install
 - 7h40 pour alignement sur 24 cœurs
