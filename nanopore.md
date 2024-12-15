@@ -16,6 +16,8 @@ with observed N50s (average) ~42 kb and 6x coverage per individual in 100kb+ rea
 
 ## epi2me
 ### Test HG002 + singularity
+Problème :  squashfs non trouvé... On utilise la dernière version de nextflow et du pipeline
+
 - Erreur au téléchargement des images parfois, donc on copie l'adresse depuis le message d'erreur et on le télécharge à la main
 - dans leur tutorial, ils partent du [.pod](https://labs.epi2me.io/giab-2023.05/) -> plutôt fastq pour nous
 - Il faut un BAM en entrés donc `samtools import` [comme recommandé]()https://github.com/epi2me-labs/wf-human-variation/issues/75#issuecomment-1688305466)
