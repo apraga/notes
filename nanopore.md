@@ -14,9 +14,11 @@ Visu ribbon/splithreader (igv marche maintenant)
 with observed N50s (average) ~42 kb and 6x coverage per individual in 100kb+ reads.
 [Source](https://s3-us-west-2.amazonaws.com/human-pangenomics/NHGRI_UCSC_panel/HG002/hpp_HG002_NA24385_son_v1/nanopore/Nanopore_README.txt)
 
+Variants validés
+- [SV](https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/AshkenazimTrio/HG002_NA24385_son/CMRG_v1.00/GRCh38/StructuralVariant/)
+- [SNV](https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/AshkenazimTrio/HG002_NA24385_son/latest/GRCh38/HG002_GRCh38_1_22_v4.2.1_benchmark.vcf.gz)
 ## epi2me
 ### Test HG002 + singularity
-Problème :  squashfs non trouvé... On utilise la dernière version de nextflow et du pipeline
 
 - Erreur au téléchargement des images parfois, donc on copie l'adresse depuis le message d'erreur et on le télécharge à la main
 - dans leur tutorial, ils partent du [.pod](https://labs.epi2me.io/giab-2023.05/) -> plutôt fastq pour nous
@@ -51,6 +53,13 @@ params {
   }
   ```
 
+### Tests
+Un SV et un SNV de référence : présents dans les VCFs de sortie
+Pour avoir les BAM, `samtools` est très lent...
+```bash
+samtools view   output/HG002.haplotagged.cram -b -o hg002_snv_chr1.bam chr1:827210-827222
+samtools view  output/HG002.haplotagged.cram -b -o hg002_sv_chr2.bam chr2:88729611-88732883
+```
 
 # nf-core -> appel de variant trop vieux
 ### Test HG002 + pip
