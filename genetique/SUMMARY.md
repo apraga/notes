@@ -5,6 +5,7 @@
   - [CGH](cgh.md)
     - [CNVs récurrents](cnvs-recurrents.md)
   - [Caryotype](caryotype.md)
+  - [Technique](techniques-cyto.md)
   - [Remaniements chromosomiques](remaniements-chromosomiques.md)
   - [Mécanismes](mecanisme-cyto.md)
 - [Moléculaire](moleculaire.md)
