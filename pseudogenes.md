@@ -37,11 +37,21 @@ https://pmc.ncbi.nlm.nih.gov/articles/PMC9706577/
 [Source](https://github.com/genome-in-a-bottle/giab_data_indexes?tab=readme-ov-file)
 Illumina 300x en génome 150bp...
 On prend plutôt en exome déjà, au format BAM
-```bash
-wget  ftp://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/HG002_NA24385_son/OsloUniversityHospital_Exome/151002_7001448_0359_AC7F6GANXX_Sample_HG002-EEogPU_v02-KIT-Av5_AGATGTAC_L008.posiSrt.markDup.bam
-## Conversion fastq
 
+```bash
+wget ftp://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/HG002_NA24385_son/OsloUniversityHospital_Exome/151002_7001448_0359_AC7F6GANXX_Sample_HG002-EEogPU_v02-KIT-Av5_AGATGTAC_L008.posiSrt.markDup.bam
+md5sum
+```
+On vérifie le MD5 : c80f0cab24bfaa504393457b8f7191fa
+Conversion fastq
+```bash
 stem=151002_7001448_0359_AC7F6GANXX_Sample_HG002-EEogPU_v02-KIT-Av5_AGATGTAC_L008.posiSrt.markDup
 samtools sort -n "${stem}.bam" -o "${stem}.sorted.bam"
 bedtools bamtofastq -i "${stem}.sorted.bam" -fq HG002-WES-GIAB_1.fastq -fq2 HG002-WES-GIAB_2.fastq
 ```
+Problème sur le BAM généré par markduplicates tronqué, on essaie avec satmools: idem
+```bash
+bam=151002_7001448_0359_AC7F6GANXX_Sample_HG002-EEogPU_v02-KIT-Av5_AGATGTAC_L008.posiSrt.markDup.bam
+samtools collate -u -O $bam |  samtools fastq -1 HG002-WES-GIAB_1.fastq -2 HG002-WES-GIAB_2.fastq -0 /dev/null -s /dev/null -n
+```
+On réessaye avec le script Perl initial
