@@ -18,6 +18,57 @@ Variants validés
 - [SV](https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/AshkenazimTrio/HG002_NA24385_son/CMRG_v1.00/GRCh38/StructuralVariant/)
 - [SNV](https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/AshkenazimTrio/HG002_NA24385_son/latest/GRCh38/HG002_GRCh38_1_22_v4.2.1_benchmark.vcf.gz)
 ## epi2me
+run.slurm
+```bash
+#!/bin/bash -l
+# Fichier submission.SBATCH
+
+#SBATCH --job-name="wf-human-variation"
+#SBATCH --output=%x.%J.out   ## %x=job name, %J=job id
+#SBATCH --error=%x.%J.out
+# walltime (hh:mm::ss) max is 8 days
+#SBATCH -t 100:00:00
+#SBATCH --partition=smp
+#SBATCH -c 1  ## request 16 cores (MAX is 32)
+#SBATCH --mem=12G ## (MAX is 96G)
+#SBATCH --mail-type=END,FAIL   # notify when job end/fail
+
+module load nix/2.11.0
+module load apptainer/1.1.8
+# Otherwise job fails as it cannot write to $HOME/.nextflow
+export NXF_HOME=/Work/Users/apraga/.nextflow
+
+# user.name must be forced (again... our fix does not seem to work in nix)
+nextflow -Duser.name=apraga run epi2me-labs/wf-human-variation --bam HG002_ucsc_Jan_2019_Guppy_3.0.bam --ref /Work/Groups/bisonex/data/fasta/GRCh38-noalt/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna --sample_name 'HG002' --sex XY --snp --sv --cnv --mod --phased -profile singularity -c test.conf -resume  4b79eacf-6b70-4d2a-9cae-9183d6e97a79
+```
+
+test.conf
+``` groovy
+process {
+    executor = 'slurm'
+    queue = 'smp'
+    // Default parameters for nf-core
+    withName: '.*minimap2.*' {
+     //   queue = 'bigmem'
+        cpus          = 32
+        memory        = 128.GB
+        time          = 32.h
+    }
+    // 4GB (default) is not enough
+    withName: '.*get_qual_filter.*' {
+      memory = 18.GB
+    }
+}
+
+params {
+  // overried minimap2 cpus as by default it sump ubam_map_threads      +  ubam_sort_threads    +  ubam_bam2fq_threads
+  ubam_map_threads = 32
+  ubam_sort_threads = 32
+  ubam_bam2fq_threads = 32
+override_basecaller_cfg = "dna_r9.4.1_450bps_hac"
+}
+```
+
 ### Test HG002 + singularity
 
 - Erreur au téléchargement des images parfois, donc on copie l'adresse depuis le message d'erreur et on le télécharge à la main
@@ -30,28 +81,6 @@ samtools import -i HG002_ucsc_Jan_2019_Guppy_3.0.fastq.gz -o  HG002_ucsc_Jan_201
   - [liste](https://github.com/nanoporetech/rerio) mais gruppy 3.0 n'est pas listé (probablement trop vieux)
   - [modèles acceptés](#https://github.com/epi2me-labs/wf-human-variation/blob/42ffefba3fe4010818634478ec8851f1a03ee477/data/clair3_models.tsv#L37)
   - on choisit guppy	dna_r9.4.1_450bps_hac	r941_prom_sup_g5014 (promethion + guppy, difficie d'en dire plus)
-
-- Configuration
-```bash
-process {
-    executor = 'slurm'
-    queue = 'smp'
-    // Default parameters for nf-core
-    withName: '.*minimap2.*' {
-     //   queue = 'bigmem'
-        cpus          = 32
-        memory        = 128.GB
-        time          = 32.h
-    }
-}
-
-params {
-  // overried minimap2 cpus as by default it sump ubam_map_threads      +  ubam_sort_threads       +  ubam_bam2fq_threads
-  ubam_map_threads = 32
-  ubam_sort_threads = 32
-  ubam_bam2fq_threads = 32
-  }
-  ```
 
 ### Tests
 Un SV et un SNV de référence : présents dans les VCFs de sortie
